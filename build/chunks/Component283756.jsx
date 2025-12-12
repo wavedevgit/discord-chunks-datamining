@@ -7,12 +7,12 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk249458 = require("./249458.js"),
   Chunk138599 = require("./138599.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk401731 = require("./401731.js");
+  Chunk856960 = require("./856960.js");
 let d = e => {
   let {
     onPlay: t,
@@ -25,22 +25,22 @@ let d = e => {
   } = e;
   return (0, r.jsx)(s.G.Consumer, {
     children: e => (0, r.jsxs)("div", {
-      className: a()(i, u.wrapper, {
+      className: o()(i, u.wrapper, {
         [u.disableInteractions]: e.disableInteractions
       }),
       children: [f && null == t ? (0, r.jsx)("div", {
         className: u.iconWrapper,
-        children: (0, r.jsx)(o.o1U, {
+        children: (0, r.jsx)(a.o1U, {
           size: "xs",
           color: "currentColor",
           className: u.iconPlay
         })
-      }) : null, null != t ? (0, r.jsx)(o.P3F, {
+      }) : null, null != t ? (0, r.jsx)(a.P3F, {
         onClick: t,
         className: u.iconWrapperActive,
         tabIndex: f ? false : 0,
         "aria-label": c.intl.string(c.t.RscU7I),
-        children: (0, r.jsx)(o.o1U, {
+        children: (0, r.jsx)(a.o1U, {
           size: "xs",
           color: "currentColor",
           className: u.iconPlay

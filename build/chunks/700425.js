@@ -7,12 +7,12 @@ require.d(exports, {
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk996435 = require("./996435.js");
 
 function s(e, t, n) {
   let i = r.useRef(null),
-    a = r.useRef(new Set);
+    o = r.useRef(new Set);
   r.useEffect(() => {
     let e = n.current;
     if (null == e) return;
@@ -28,14 +28,14 @@ function s(e, t, n) {
             isIntersecting: t,
             target: n
           } = e, i = r.get(n);
-          null != i && (t ? a.current.add(i) : a.current.delete(i))
-        }), o.Z.getField("disableSidebarCategoryAutoSelect")) return;
+          null != i && (t ? o.current.add(i) : o.current.delete(i))
+        }), a.Z.getField("disableSidebarCategoryAutoSelect")) return;
       let t = [];
       if (s.forEach(e => {
-          a.current.has(e) && t.push(e)
+          o.current.has(e) && t.push(e)
         }), 0 === t.length) return;
       let n = t[0];
-      o.Z.getField("currentCategoryKey") !== n && o.Z.setState({
+      a.Z.getField("currentCategoryKey") !== n && a.Z.setState({
         currentCategoryKey: n
       })
     }, {
@@ -61,7 +61,7 @@ function l() {
     if (0 === module.length) return;
     let t = module[0];
     if (null == exports) return;
-    let n = a().debounce(() => {
+    let n = o().debounce(() => {
       Chunk996435.Z.setState({
         disableSidebarCategoryAutoSelect: false
       })

@@ -6,33 +6,33 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let a = new Map,
-  o = new Set;
+let o = new Map,
+  a = new Set;
 
 function s(e) {
-  o.add(e.userId)
+  a.add(e.userId)
 }
 
 function l(e) {
-  o.delete(e.userId), a.set(e.userId, e.identities)
+  a.delete(e.userId), o.set(e.userId, e.identities)
 }
 
 function c(e) {
-  o.delete(e.userId)
+  a.delete(e.userId)
 }
 
 function u(e) {
-  let t = a.get(e.user_id);
+  let t = o.get(e.user_id);
   if (null == t) returnfalse;
-  a.set(e.user_id, t.filter(t => t.application_id !== e.application_id))
+  o.set(e.user_id, t.filter(t => t.application_id !== e.application_id))
 }
 class d extends Chunk442837.ZP.Store {
   getUserIdentities(e) {
     var t;
-    return null != (t = a.get(e)) ? t : null
+    return null != (t = o.get(e)) ? t : null
   }
   isFetchingUser(e) {
-    return o.has(e)
+    return a.has(e)
   }
 }
 let f = new d(Chunk570140.Z, {

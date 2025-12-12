@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk709014 = require("./709014.jsx");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -70,8 +70,8 @@ let u = {
   },
   d = e => {
     let t = i.useRef(null),
-      o = i.useRef(e);
-    o.current = e;
+      a = i.useRef(e);
+    a.current = e;
     let l = i.useMemo(() => () => {
         null != t.current && t.current.play(e)
       }, [e]),
@@ -85,10 +85,10 @@ let u = {
         let n = "enable" === e ? "hover_disabled" : "hover_enabled";
         t.current.stopIfPlaying(n)
       }, [e]),
-      p = i.useCallback(e => (0, r.jsx)(a.L, c(s({}, e), {
-        src: () => n.e("59682").then(n.t.bind(n, 126683, 19)),
+      p = i.useCallback(e => (0, r.jsx)(o.L, c(s({}, e), {
+        src: () => n.e("59682").then(n.t.bind(n, 642548, 19)),
         ref: t,
-        initialAnimation: o.current,
+        initialAnimation: a.current,
         markers: u
       })), []);
     return {

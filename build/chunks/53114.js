@@ -144,7 +144,7 @@ class y extends Chunk47770.Z {
     return module
   }
   getCodecUsageStats(e, t) {
-    var n, r, i, a, o, s, l, c, u, d, f, _;
+    var n, r, i, o, a, s, l, c, u, d, f, _;
     let m = this.asymmetricCodecUpdates > this.symmetricCodecUpdates,
       h = new Map;
     if ("sender" === e || "streamer" === e) {
@@ -158,8 +158,8 @@ class y extends Chunk47770.Z {
         codec_h264_encode_duration_sec: null != (n = h.get(p.u7.H264)) ? n : 0,
         codec_h265_encode_duration_sec: null != (r = h.get(p.u7.H265)) ? r : 0,
         codec_vp8_encode_duration_sec: null != (i = h.get(p.u7.VP8)) ? i : 0,
-        codec_vp9_encode_duration_sec: null != (a = h.get(p.u7.VP9)) ? a : 0,
-        codec_av1_encode_duration_sec: null != (o = h.get(p.u7.AV1)) ? o : 0,
+        codec_vp9_encode_duration_sec: null != (o = h.get(p.u7.VP9)) ? o : 0,
+        codec_av1_encode_duration_sec: null != (a = h.get(p.u7.AV1)) ? a : 0,
         codec_unknown_encode_duration_sec: null != (s = h.get(p.u7.UNKNOWN)) ? s : 0
       }
     } {
@@ -186,7 +186,7 @@ class y extends Chunk47770.Z {
   getOutboundStats() {
     let e = [];
     return i().forEach(this.outboundStats, (t, n) => {
-      var r, i, a, o, s;
+      var r, i, o, a, s;
       let l, c = null == (r = this.connection) ? true : r.getStreamParameters();
       c.length > 1 && c.forEach(e => {
         if (parseInt(n) === e.ssrc) {
@@ -204,7 +204,7 @@ class y extends Chunk47770.Z {
         O = t.aggregationDuration / 1e3;
       e.push(g(m({}, this.getStats(t)), {
         target_fps: O > 0 ? Math.round((null != (i = t.targetFrames) ? i : 0) / O) : 0,
-        target_bitrate_network: O > 0 ? Math.round((null != (a = t.targetBytesNetwork) ? a : 0) * 8 / O) : 0,
+        target_bitrate_network: O > 0 ? Math.round((null != (o = t.targetBytesNetwork) ? o : 0) * 8 / O) : 0,
         target_bitrate_network_percentile1: h.count > 0 ? h.percentiles[1] : null,
         target_bitrate_network_percentile5: h.count > 0 ? h.percentiles[5] : null,
         target_bitrate_network_percentile10: h.count > 0 ? h.percentiles[10] : null,
@@ -212,7 +212,7 @@ class y extends Chunk47770.Z {
         target_bitrate_network_percentile50: h.count > 0 ? h.percentiles[50] : null,
         target_bitrate_network_percentile75: h.count > 0 ? h.percentiles[75] : null,
         target_bitrate_network_percentile99: h.count > 0 ? h.percentiles[99] : null,
-        target_bitrate_max: O > 0 ? Math.round((null != (o = t.targetBytesMax) ? o : 0) * 8 / O) : 0,
+        target_bitrate_max: O > 0 ? Math.round((null != (a = t.targetBytesMax) ? a : 0) * 8 / O) : 0,
         outbound_bandwidth_estimate: O > 0 ? Math.round((null != (s = t.outboundBytesAvailable) ? s : 0) * 8 / O) : 0,
         outbound_bandwidth_surplus_percentile1: b.count > 0 ? b.percentiles[1] : null,
         outbound_bandwidth_surplus_percentile5: b.count > 0 ? b.percentiles[5] : null,
@@ -293,13 +293,13 @@ class y extends Chunk47770.Z {
     let n = Number(this.streamStart),
       r = (null != this.streamEnd ? this.streamEnd - n : this.timestampProducer.now() - n) / 1e3,
       i = Math.max(e.aggregationDuration, 0) / 1e3,
-      a = [1, 5, 10, 25, 50, 75],
-      o = [1, 5, 10, 25, 50, 75, 99],
+      o = [1, 5, 10, 25, 50, 75],
+      a = [1, 5, 10, 25, 50, 75, 99],
       s = [1, 5, 10, 25, 50, 75, 99],
       l = [1, 5, 10, 25, 50, 75, 90, 95],
-      c = e.fpsHistogram.getReport(a),
-      u = e.bitrateHistogram.getReport(o),
-      d = e.resolutionHistogram.getReport(a),
+      c = e.fpsHistogram.getReport(o),
+      u = e.bitrateHistogram.getReport(a),
+      d = e.resolutionHistogram.getReport(o),
       f = e.inboundBitrateEstimateHistogram.getReport(s),
       _ = e.localWantHistogram.getReport(l),
       h = e.systemResources.getStats(),
@@ -459,9 +459,9 @@ class y extends Chunk47770.Z {
     })
   }
   receivedStats(e, t, n) {
-    var r, o;
+    var r, a;
     let l = t.transport,
-      u = (0, c.isWeb)() ? 1 : null != (o = null == (r = l.receiverReports) ? true : r.length) ? o : 0,
+      u = (0, c.isWeb)() ? 1 : null != (a = null == (r = l.receiverReports) ? true : r.length) ? a : 0,
       d = new Set,
       f = new Set;
     this.updateSendState({
@@ -479,7 +479,7 @@ class y extends Chunk47770.Z {
           I = this.outboundStats[t];
         null == I && (console.warn("Unknown outbound video stream with SSRC: ".concat(t)), I = new p.nt(this.timestampProducer), this.outboundStats[t] = I), null == I.timeToFirstFrame && (r.framesEncoded > 0 || (null != (i = r.frameRateInput) ? i : 0) > 0) && (I.timeToFirstFrame = Math.max(0, e - I.startTime)), null != g && g >= 0 && this.videoEntropy.addSample(g);
         let T = n.find(e => e.ssrc === t);
-        var i, a, o, c, u, f, _, h, E, b, y, O, v = true;
+        var i, o, a, c, u, f, _, h, E, b, y, O, v = true;
         if (this.connection.context === s.Yn.STREAM) {
           var S = this.connection.getRemoteVideoSinkWants(t);
           (null == S || 0 === S) && (null == T ? true : T.quality) === m && (S = this.connection.getRemoteVideoSinkWants("any")), v = (null != S ? S : 0) > 0
@@ -488,7 +488,7 @@ class y extends Chunk47770.Z {
         if (C !== I.isVideoStopped && I.setVideoStopped(C, p.Mq.SenderStopped), !C) {
           I.appendAndIncrementStats(p.z4.parseOutboundStats(r, e)), I.encoderCodec !== p.u7.UNKNOWN && d.add(I.encoderCodec);
           let t = null == T ? true : T.maxBitrate;
-          I.appendTargetRates(null == T ? true : T.maxFrameRate, null != (o = r.bitrateTarget) ? o : Math.min(null != (a = l.availableOutgoingBitrate) ? a : 0, null != t ? t : 0), t, l.availableOutgoingBitrate), I.averageEncodeTime = null != (c = r.averageEncodeTime) ? c : 0, I.framesDroppedRateLimiter = null != (u = r.framesDroppedRateLimiter) ? u : null, I.framesDroppedEncoderQueue = null != (f = r.framesDroppedEncoderQueue) ? f : null, I.framesDroppedCongestionWindow = null != (_ = r.framesDroppedCongestionWindow) ? _ : null, I.framesDroppedEncoder = null != (h = r.framesDroppedEncoder) ? h : null, this.hqSimulcastStreamEncoded.value = null != (E = r.hqSimulcastStreamEncoded) && E, this.lqSimulcastStreamEncoded.value = null != (b = r.lqSimulcastStreamEncoded) && b, this.bothSimulcastStreamsEncoded.value = this.hqSimulcastStreamEncoded.value && this.lqSimulcastStreamEncoded.value, this.bandwidthLimitedResolution.value = null != (y = r.bandwidthLimitedResolution) && y, this.bandwidthLimitedFramerate.value = null != (O = r.bandwidthLimitedFrameRate) && O
+          I.appendTargetRates(null == T ? true : T.maxFrameRate, null != (a = r.bitrateTarget) ? a : Math.min(null != (o = l.availableOutgoingBitrate) ? o : 0, null != t ? t : 0), t, l.availableOutgoingBitrate), I.averageEncodeTime = null != (c = r.averageEncodeTime) ? c : 0, I.framesDroppedRateLimiter = null != (u = r.framesDroppedRateLimiter) ? u : null, I.framesDroppedEncoderQueue = null != (f = r.framesDroppedEncoderQueue) ? f : null, I.framesDroppedCongestionWindow = null != (_ = r.framesDroppedCongestionWindow) ? _ : null, I.framesDroppedEncoder = null != (h = r.framesDroppedEncoder) ? h : null, this.hqSimulcastStreamEncoded.value = null != (E = r.hqSimulcastStreamEncoded) && E, this.lqSimulcastStreamEncoded.value = null != (b = r.lqSimulcastStreamEncoded) && b, this.bothSimulcastStreamsEncoded.value = this.hqSimulcastStreamEncoded.value && this.lqSimulcastStreamEncoded.value, this.bandwidthLimitedResolution.value = null != (y = r.bandwidthLimitedResolution) && y, this.bandwidthLimitedFramerate.value = null != (O = r.bandwidthLimitedFrameRate) && O
         }
       }
     }), this.paused.value || i().forEach(t.rtp.inbound, (t, n) => {
@@ -499,7 +499,7 @@ class y extends Chunk47770.Z {
         let i = p.z4.parseInboundStats(r, e);
         this.statCollectionPausedUsers.has(n) || (t.appendAndIncrementStats(i), t.appendTransportStats(l)), i.packets > 0 && this.emit("fps-update", n, i.framesCodec, i.timestamp), t.decoderCodec !== p.u7.UNKNOWN && f.add(t.decoderCodec), null == t.timeToFirstFrame && r.framesDecoded > 0 && (t.timeToFirstFrame = e - t.startTime)
       }
-    }), 0 !== d.size && 0 !== f.size && ((0, a.O)(d, f) ? this.symmetricCodecUpdates++ : this.asymmetricCodecUpdates++)
+    }), 0 !== d.size && 0 !== f.size && ((0, o.O)(d, f) ? this.symmetricCodecUpdates++ : this.asymmetricCodecUpdates++)
   }
   updateSystemResourceStats() {
     for (let e in this.outboundStats) this.outboundStats[module].addSystemResources();

@@ -37,11 +37,11 @@ class f extends(r = Chunk473749.Component) {
     var t, n;
     let {
       section: r,
-      page: a,
-      object: o,
+      page: o,
+      object: a,
       objectType: l,
       children: c
-    } = this.props, u = this.mergeLocation(e.location, this.getLocation(a, r, o, l)), d = this.getContext(u, null != (t = this._loadDate) ? t : e.loadDate, null != (n = this._loadId) ? n : e.loadId);
+    } = this.props, u = this.mergeLocation(e.location, this.getLocation(o, r, a, l)), d = this.getContext(u, null != (t = this._loadDate) ? t : e.loadDate, null != (n = this._loadId) ? n : e.loadId);
     return (0, i.jsx)(s.AnalyticsContext.Provider, {
       value: d,
       children: c
@@ -63,7 +63,7 @@ class f extends(r = Chunk473749.Component) {
       location: e,
       loadDate: t,
       loadId: n
-    }))), null != e.loadId ? this._loadId = e.loadId : e.root && (this._loadId = (0, o.Z)())
+    }))), null != e.loadId ? this._loadId = e.loadId : e.root && (this._loadId = (0, a.Z)())
   }
 }
 u(f, "Pages", Chunk981631.ZY5), u(f, "Sections", Chunk981631.jXE), u(f, "Objects", Chunk981631.qAy), u(f, "ObjectTypes", Chunk981631.AnalyticsObjectTypes), u(f, "defaultProps", {

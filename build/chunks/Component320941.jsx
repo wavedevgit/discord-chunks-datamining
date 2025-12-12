@@ -1,7 +1,7 @@
-/** Chunk was on 31800 **/
-/** chunk id: 320941, original params: e,t,a (module,exports,require) **/
+/** Chunk was on 47168 **/
+/** chunk id: 320941, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  n: () => v
+  n: () => S
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,54 +16,54 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk745769 = require("./745769.js");
+  Chunk724683 = require("./724683.js");
 
-function C(e) {
+function f(e) {
   let {
     onClose: t
-  } = e, a = (0, r.jsx)(o.Text, {
+  } = e, r = (0, a.jsx)(o.Text, {
     className: h.description,
     variant: "text-md/normal",
-    children: m.intl.string(m.t.FCsTCk)
+    children: _.intl.string(_.t.FCsTCk)
   });
-  return (0, r.jsx)(b.Z, {
-    type: s.ZP.Types.PREMIUM_ACTIVATED,
-    text: a,
-    buttonText: m.intl.string(m.t.TkTvBz),
+  return (0, a.jsx)(p.Z, {
+    type: d.ZP.Types.PREMIUM_ACTIVATED,
+    text: r,
+    buttonText: _.intl.string(_.t.TkTvBz),
     hideClose: false,
     onClose: t
   })
 }
 
-function S(e) {
+function C(e) {
   let {
     onClose: t
   } = e;
-  return (0, r.jsx)(p.ZP, {
-    planId: f.Xh.PREMIUM_MONTH_TIER_0,
+  return (0, a.jsx)(u.ZP, {
+    planId: b.Xh.PREMIUM_MONTH_TIER_0,
     onClose: t
   })
 }
-let v = e => {
+let S = e => {
   let {
     transitionState: t,
-    onClose: a,
-    premiumType: s
-  } = e, b = s === f.PremiumTypes.TIER_0, p = n.useCallback(() => {
-    c.S.dispatch(u.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), l.Z.isDisplayingWowMomentConfirmation && l.Z.isAnimated ? setTimeout(() => {
-      a()
-    }, i.P) : a()
-  }, [a]);
-  return (0, r.jsxs)(o.Y0X, {
+    onClose: r,
+    premiumType: d
+  } = e, p = d === b.PremiumTypes.TIER_0, u = n.useCallback(() => {
+    l.S.dispatch(m.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), c.Z.isDisplayingWowMomentConfirmation && c.Z.isAnimated ? setTimeout(() => {
+      r()
+    }, i.P) : r()
+  }, [r]);
+  return (0, a.jsxs)(o.Y0X, {
     className: h.root,
     transitionState: t,
     parentComponent: "ResubscribeSuccessStep",
-    children: [(0, r.jsx)(d.Z, {
-      onClose: p,
-      upgradeToPremiumType: s
-    }), (0, r.jsx)(o.hzk, {
-      children: (0, r.jsx)(b ? S : C, {
-        onClose: p
+    children: [(0, a.jsx)(s.Z, {
+      onClose: u,
+      upgradeToPremiumType: d
+    }), (0, a.jsx)(o.hzk, {
+      children: (0, a.jsx)(p ? C : f, {
+        onClose: u
       })
     })]
   })

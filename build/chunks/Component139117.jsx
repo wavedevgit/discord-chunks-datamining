@@ -7,25 +7,25 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk28664 = require("./28664.jsx"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk565138 = require("./565138.jsx"),
-  Chunk826529 = require("./826529.js");
+  Chunk120230 = require("./120230.js");
 
 function p() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk565138.Z.Sizes.SMALLER;
   switch (module) {
     case Chunk565138.Z.Sizes.SMOL:
-      return Chunk826529.size16;
+      return Chunk120230.size16;
     case Chunk565138.Z.Sizes.MINI:
-      return Chunk826529.size20;
+      return Chunk120230.size20;
     case Chunk565138.Z.Sizes.SMALLER:
     default:
-      return Chunk826529.size24
+      return Chunk120230.size24
   }
 }
 
@@ -46,7 +46,7 @@ function m(e) {
     className: t,
     maxGuilds: n,
     guilds: i,
-    onFocus: o,
+    onFocus: a,
     onClick: m,
     size: h = d.Z.Sizes.SMALLER,
     hideOverflowCount: g = false,
@@ -61,9 +61,9 @@ function m(e) {
       O = s()(i).take(n).map((e, t) => {
         let n = e.name,
           i = t === y && !p,
-          o = a()(f.avatar, b, i && f.isLast);
+          a = o()(f.avatar, b, i && f.isLast);
         return E ? (0, r.jsx)("div", {
-          className: o,
+          className: a,
           children: (0, r.jsx)(d.Z, {
             guild: e,
             onClick: m,
@@ -83,8 +83,8 @@ function m(e) {
     if (p) {
       let e = _(h);
       O[O.length - 1] = (0, r.jsx)(c.zx, {
-        className: a()(f.overflow, b),
-        onFocus: o,
+        className: o()(f.overflow, b),
+        onFocus: a,
         onClick: e => null == m ? true : m(e),
         look: c.zx.Looks.BLANK,
         size: c.zx.Sizes.NONE,
@@ -97,7 +97,7 @@ function m(e) {
     return O
   }
   return i.length <= 0 ? null : (0, r.jsx)("div", {
-    className: a()(t, f.avatars),
+    className: o()(t, f.avatars),
     children: y()
   })
 }

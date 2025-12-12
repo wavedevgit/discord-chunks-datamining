@@ -10,7 +10,7 @@ var r, Chunk54381 = require("./54381.js"),
   s = require.n(Chunk120356),
   Chunk846519 = require("./846519.js"),
   Chunk600164 = require("./600164.jsx"),
-  Chunk70309 = require("./70309.js");
+  Chunk243404 = require("./243404.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -48,8 +48,8 @@ function _(e) {
   let {
     time: t,
     padLargestUnit: n
-  } = e, r = Math.floor(t) % 60, i = Math.floor(t / 60) % 60, a = Math.floor(t / 3600);
-  return 0 === a ? n ? "".concat(p(i), ":").concat(p(r)) : "".concat(i, ":").concat(p(r)) : n ? "".concat(p(a), ":").concat(p(i), ":").concat(p(r)) : "".concat(a, ":").concat(p(i), ":").concat(p(r))
+  } = e, r = Math.floor(t) % 60, i = Math.floor(t / 60) % 60, o = Math.floor(t / 3600);
+  return 0 === o ? n ? "".concat(p(i), ":").concat(p(r)) : "".concat(i, ":").concat(p(r)) : n ? "".concat(p(o), ":").concat(p(i), ":").concat(p(r)) : "".concat(o, ":").concat(p(i), ":").concat(p(r))
 }
 class m extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
@@ -68,28 +68,28 @@ class m extends(r = Chunk473749.PureComponent) {
       end: t,
       className: n,
       themed: r,
-      singleLine: a = false
+      singleLine: o = false
     } = this.props, {
-      now: o
+      now: a
     } = this.state, l = (exports - module) / 1e3, d = Math.max(Math.min((Chunk120356 - module) / 1e3, Chunk846519), 0);
     return Chunk473749 ? (0, Chunk54381.jsxs)("div", {
       className: s()(require, {
-        [Chunk70309.themed]: r
-      }, Chunk70309.singleLineContainer),
+        [Chunk243404.themed]: r
+      }, Chunk243404.singleLineContainer),
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk70309.textLeftInSingleLine,
+        className: Chunk243404.textLeftInSingleLine,
         children: _({
           time: d,
           padLargestUnit: true
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk70309.barInSingleLine,
+        className: Chunk243404.barInSingleLine,
         children: (0, Chunk54381.jsx)(f, {
           percentage: d / Chunk846519,
           isSingleLine: true
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk70309.textRight,
+        className: Chunk243404.textRight,
         children: _({
           time: Chunk846519,
           padLargestUnit: true
@@ -97,7 +97,7 @@ class m extends(r = Chunk473749.PureComponent) {
       })]
     }) : (0, Chunk54381.jsxs)("div", {
       className: s()(require, {
-        [Chunk70309.themed]: r
+        [Chunk243404.themed]: r
       }),
       children: [(0, Chunk54381.jsx)(f, {
         percentage: d / Chunk846519,
@@ -105,14 +105,14 @@ class m extends(r = Chunk473749.PureComponent) {
       }), (0, Chunk54381.jsxs)(Chunk600164.Z, {
         children: [(0, Chunk54381.jsx)(Chunk600164.Z.Child, {
           grow: 1,
-          className: Chunk70309.textLeft,
+          className: Chunk243404.textLeft,
           children: _({
             time: d,
             padLargestUnit: false
           })
         }), (0, Chunk54381.jsx)(Chunk600164.Z.Child, {
           grow: 0,
-          className: Chunk70309.textRight,
+          className: Chunk243404.textRight,
           children: _({
             time: Chunk846519,
             padLargestUnit: false

@@ -6,15 +6,15 @@ require.d(exports, {
 }), require("./539854.js");
 var Chunk570140 = require("./570140.js");
 let i = 1e3,
-  a = 100,
-  o = [],
+  o = 100,
+  a = [],
   s = null;
 
 function l() {
-  0 !== o.length && (Chunk570140.Z.dispatch({
+  0 !== a.length && (Chunk570140.Z.dispatch({
     type: "OVERLAY_ADD_LOGS_BATCH",
-    logs: o
-  }), o = [], null != s && (clearTimeout(s), s = null))
+    logs: a
+  }), a = [], null != s && (clearTimeout(s), s = null))
 }
 
 function c() {
@@ -24,5 +24,5 @@ function c() {
 }
 
 function u(e) {
-  o.push(e), o.length >= a ? l() : c()
+  a.push(e), a.length >= o ? l() : c()
 }

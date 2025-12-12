@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 934819, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk620481 = require("./620481.js"),
   Chunk594174 = require("./594174.js"),
   Chunk51144 = require("./51144.js"),
-  Chunk605716 = require("./605716.js");
+  Chunk530146 = require("./530146.js");
 let u = (0, Chunk972959.H)(() => ({
   userIds: [],
   isLoading: false,
@@ -71,11 +71,11 @@ function m() {
         loading: exports,
         disabled: exports
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk605716.detailsList,
+        className: Chunk530146.detailsList,
         children: [null != Chunk972959 && (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
           color: "text-feedback-critical",
-          className: Chunk605716.statusText,
+          className: Chunk530146.statusText,
           children: Chunk972959
         }), require && module.length > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
           children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -85,7 +85,7 @@ function m() {
             variant: "text-md/normal",
             children: "User IDs missing from Worker:"
           }), (0, Chunk54381.jsx)("div", {
-            className: Chunk605716.nestedDetailsList,
+            className: Chunk530146.nestedDetailsList,
             children: h
           })]
         }), require && 0 === module.length && (0, Chunk54381.jsx)(Chunk481060.Text, {

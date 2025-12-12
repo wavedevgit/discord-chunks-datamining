@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk806966 = require("./806966.js"),
   Chunk28546 = require("./28546.js"),
-  Chunk916355 = require("./916355.js");
+  Chunk119597 = require("./119597.js");
 let d = Chunk473749.forwardRef(function(e, t) {
   let {
     store: n,
@@ -21,7 +21,7 @@ let d = Chunk473749.forwardRef(function(e, t) {
     expressionsListRef: _,
     defaultSearchPlaceholder: m,
     emptySearchPlaceholder: h
-  } = e, g = i.useRef(null), [E, b] = (0, c.Iu)(e => [e.searchQuery, e.isSearchSuggestion], a.X), y = n.useStore(e => e.searchPlaceholder), O = n.useStore(e => e.inspectedExpressionPosition, a.X), v = i.useCallback(e => {
+  } = e, g = i.useRef(null), [E, b] = (0, c.Iu)(e => [e.searchQuery, e.isSearchSuggestion], o.X), y = n.useStore(e => e.searchPlaceholder), O = n.useStore(e => e.inspectedExpressionPosition, o.X), v = i.useCallback(e => {
     var t;
     n.setActiveCategoryIndex("" === e ? 0 : l.c), n.setInspectedExpressionPosition(0, 0), n.setSearchPlaceholder(null), (0, c.ql)(e), null == (t = _.current) || t.scrollTo(0)
   }, [_, n]), S = i.useCallback(() => {
@@ -54,7 +54,7 @@ let d = Chunk473749.forwardRef(function(e, t) {
         "aria-haspopup": "grid",
         "aria-controls": p,
         "aria-expanded": true,
-        "aria-activedescendant": (0, o.NE)(p, O.columnIndex, O.rowIndex)
+        "aria-activedescendant": (0, a.NE)(p, O.columnIndex, O.rowIndex)
       }
     })
   })

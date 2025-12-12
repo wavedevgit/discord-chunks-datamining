@@ -19,8 +19,8 @@ var Chunk374481 = require("./374481.jsx"),
   Chunk533159 = require("./533159.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk984710 = require("./984710.js"),
-  Chunk51766 = require("./51766.js");
+  Chunk186812 = require("./186812.js"),
+  Chunk325380 = require("./325380.js");
 
 function b(e) {
   let {
@@ -30,7 +30,7 @@ function b(e) {
     onClose: y,
     children: O,
     footer: v
-  } = e, S = (0, o.e7)([l.Z, c.Z], () => {
+  } = e, S = (0, a.e7)([l.Z, c.Z], () => {
     var e;
     return null != (e = l.Z.getApplication(t)) ? e : c.Z.getApplicationRecord(t)
   }, [t]), {
@@ -42,7 +42,7 @@ function b(e) {
       termsOfServiceUrl: C,
       privacyPolicyUrl: A
     } = S;
-  if ((null == I ? true : I.applicationId) !== t) return (0, r.jsx)(a.Modal, {
+  if ((null == I ? true : I.applicationId) !== t) return (0, r.jsx)(o.Modal, {
     actions: [{
       onClick: y,
       text: h.intl.string(h.t.BddRzS),
@@ -64,11 +64,11 @@ function b(e) {
     alt: "",
     className: g.appIcon
   }) : true;
-  return (0, r.jsxs)(a.IX, {
+  return (0, r.jsxs)(o.IX, {
     onClose: y,
     size: "lg",
     transitionState: b,
-    children: [(0, r.jsx)(a.xBx, {
+    children: [(0, r.jsx)(o.xBx, {
       leading: N,
       title: S.name
     }), (0, r.jsx)(i.Z, {
@@ -76,7 +76,7 @@ function b(e) {
         className: E.bodyInner,
         children: O
       })
-    }), (0, r.jsx)(a.mzw, {
+    }), (0, r.jsx)(o.mzw, {
       children: (0, r.jsxs)("div", {
         className: g.footer,
         children: [null != C || null != A ? (0, r.jsx)(s.Text, {

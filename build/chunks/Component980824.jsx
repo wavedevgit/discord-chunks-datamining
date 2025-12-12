@@ -74,7 +74,7 @@ function P(e) {
 let R = N("safe-polygon");
 
 function w(e, t, n) {
-  if (n && !(0, a.r)(n)) return 0;
+  if (n && !(0, o.r)(n)) return 0;
   if ("number" == typeof e) return e;
   if ("function" == typeof e) {
     let n = e();
@@ -92,7 +92,7 @@ function x(e, t) {
   let {
     open: n,
     onOpenChange: r,
-    dataRef: o,
+    dataRef: a,
     events: l,
     elements: c
   } = e, {
@@ -102,9 +102,9 @@ function x(e, t) {
     mouseOnly: p = false,
     restMs: _ = 0,
     move: m = true
-  } = t, h = A(), g = C(), E = (0, a.II)(f), b = (0, a.II)(d), y = (0, a.II)(n), O = (0, a.II)(_), v = i.useRef(), S = i.useRef(false), I = i.useRef(), T = i.useRef(false), N = i.useRef(true), x = i.useRef(false), L = i.useRef(() => {}), j = i.useRef(false), M = (0, a.iW)(() => {
+  } = t, h = A(), g = C(), E = (0, o.II)(f), b = (0, o.II)(d), y = (0, o.II)(n), O = (0, o.II)(_), v = i.useRef(), S = i.useRef(false), I = i.useRef(), T = i.useRef(false), N = i.useRef(true), x = i.useRef(false), L = i.useRef(() => {}), j = i.useRef(false), M = (0, o.iW)(() => {
     var e;
-    let t = null == (e = o.current.openEvent) ? true : e.type;
+    let t = null == (e = a.current.openEvent) ? true : e.type;
     return (null == t ? true : t.includes("mouse")) && "mousedown" !== t
   });
   i.useEffect(() => {
@@ -124,7 +124,7 @@ function x(e, t) {
     function e(e) {
       M() && r(false, e, "hover")
     }
-    let t = (0, a.Me)(c.floating).documentElement;
+    let t = (0, o.Me)(c.floating).documentElement;
     return t.addEventListener("mouseleave", e), () => {
       t.removeEventListener("mouseleave", e)
     }
@@ -134,29 +134,29 @@ function x(e, t) {
       let i = w(b.current, "close", v.current);
       i && !I.current ? (P(S), S.current = window.setTimeout(() => r(false, e, n), i)) : t && (P(S), r(false, e, n))
     }, [b, r]),
-    U = (0, a.iW)(() => {
+    U = (0, o.iW)(() => {
       L.current(), I.current = true
     }),
-    G = (0, a.iW)(() => {
+    G = (0, o.iW)(() => {
       if (x.current) {
-        let e = (0, a.Me)(c.floating).body;
+        let e = (0, o.Me)(c.floating).body;
         e.style.pointerEvents = "", e.removeAttribute(R), x.current = false
       }
     }),
-    Z = (0, a.iW)(() => !!o.current.openEvent && ["click", "mousedown"].includes(o.current.openEvent.type));
+    Z = (0, o.iW)(() => !!a.current.openEvent && ["click", "mousedown"].includes(a.current.openEvent.type));
   i.useEffect(() => {
     if (u && (0, s.kK)(c.domReference)) {
       let r = c.domReference,
-        a = c.floating;
+        o = c.floating;
       return n && r.addEventListener("mouseleave", i), m && r.addEventListener("mousemove", e, {
         once: true
-      }), r.addEventListener("mouseenter", e), r.addEventListener("mouseleave", t), a && (a.addEventListener("mouseleave", i), a.addEventListener("mouseenter", l), a.addEventListener("mouseleave", d)), () => {
-        n && r.removeEventListener("mouseleave", i), m && r.removeEventListener("mousemove", e), r.removeEventListener("mouseenter", e), r.removeEventListener("mouseleave", t), a && (a.removeEventListener("mouseleave", i), a.removeEventListener("mouseenter", l), a.removeEventListener("mouseleave", d))
+      }), r.addEventListener("mouseenter", e), r.addEventListener("mouseleave", t), o && (o.addEventListener("mouseleave", i), o.addEventListener("mouseenter", l), o.addEventListener("mouseleave", d)), () => {
+        n && r.removeEventListener("mouseleave", i), m && r.removeEventListener("mousemove", e), r.removeEventListener("mouseenter", e), r.removeEventListener("mouseleave", t), o && (o.removeEventListener("mouseleave", i), o.removeEventListener("mouseenter", l), o.removeEventListener("mouseleave", d))
       }
     }
 
     function e(e) {
-      if (P(S), N.current = false, p && !(0, a.r)(v.current) || D(O.current) > 0 && !w(b.current, "open")) return;
+      if (P(S), N.current = false, p && !(0, o.r)(v.current) || D(O.current) > 0 && !w(b.current, "open")) return;
       let t = w(b.current, "open", v.current);
       t ? S.current = window.setTimeout(() => {
         y.current || r(true, e, "hover")
@@ -166,10 +166,10 @@ function x(e, t) {
     function t(e) {
       if (Z()) return void G();
       L.current();
-      let t = (0, a.Me)(c.floating);
-      if (P(T), j.current = false, E.current && o.current.floatingContext) {
+      let t = (0, o.Me)(c.floating);
+      if (P(T), j.current = false, E.current && a.current.floatingContext) {
         n || P(S), I.current = E.current({
-          ...o.current.floatingContext,
+          ...a.current.floatingContext,
           tree: h,
           x: e.clientX,
           y: e.clientY,
@@ -183,12 +183,12 @@ function x(e, t) {
         };
         return
       }
-      "touch" === v.current && (0, a.r3)(c.floating, e.relatedTarget) || k(e)
+      "touch" === v.current && (0, o.r3)(c.floating, e.relatedTarget) || k(e)
     }
 
     function i(e) {
-      !Z() && o.current.floatingContext && (null == E.current || E.current({
-        ...o.current.floatingContext,
+      !Z() && a.current.floatingContext && (null == E.current || E.current({
+        ...a.current.floatingContext,
         tree: h,
         x: e.clientX,
         y: e.clientY,
@@ -205,13 +205,13 @@ function x(e, t) {
     function d(e) {
       Z() || k(e, false)
     }
-  }, [c, u, e, p, m, k, U, G, r, n, y, h, b, E, o, Z, O]), (0, a.Xj)(() => {
+  }, [c, u, e, p, m, k, U, G, r, n, y, h, b, E, a, Z, O]), (0, o.Xj)(() => {
     var e, t;
     if (u && n && null != (e = E.current) && null != (e = e.__options) && e.blockPointerEvents && M()) {
       x.current = true;
       let e = c.floating;
       if ((0, s.kK)(c.domReference) && e) {
-        let n = (0, a.Me)(c.floating).body;
+        let n = (0, o.Me)(c.floating).body;
         n.setAttribute(R, "");
         let r = c.domReference,
           i = null == h || null == (t = h.nodesRef.current.find(e => e.id === g)) || null == (t = t.context) ? true : t.elements.floating;
@@ -220,7 +220,7 @@ function x(e, t) {
         }
       }
     }
-  }, [u, n, g, c, h, E, M]), (0, a.Xj)(() => {
+  }, [u, n, g, c, h, E, M]), (0, o.Xj)(() => {
     n || (v.current = true, j.current = false, U(), G())
   }, [n, U, G]), i.useEffect(() => () => {
     U(), P(S), P(T), G()
@@ -239,7 +239,7 @@ function x(e, t) {
 
         function i() {
           N.current || y.current || r(true, t, "hover")
-        }(!p || (0, a.r)(v.current)) && !n && 0 !== D(O.current) && (j.current && e.movementX ** 2 + e.movementY ** 2 < 2 || (P(T), "touch" === v.current ? i() : (j.current = true, T.current = window.setTimeout(i, D(O.current)))))
+        }(!p || (0, o.r)(v.current)) && !n && 0 !== D(O.current) && (j.current && e.movementX ** 2 + e.movementY ** 2 < 2 || (P(T), "touch" === v.current ? i() : (j.current = true, T.current = window.setTimeout(i, D(O.current)))))
       }
     }
   }, [p, r, n, y, O]);
@@ -292,10 +292,10 @@ let F = new WeakSet,
 
 function W(e, t, n, r) {
   let i = "data-floating-ui-inert",
-    a = r ? "inert" : n ? "aria-hidden" : null,
-    o = Y(t, e),
+    o = r ? "inert" : n ? "aria-hidden" : null,
+    a = Y(t, e),
     s = new Set,
-    l = new Set(o),
+    l = new Set(a),
     c = [];
   B[i] || (B[i] = new WeakMap);
   let u = B[i];
@@ -309,21 +309,21 @@ function W(e, t, n, r) {
       if ("script" !== getNodeName(e))
         if (s.has(e)) f(e);
         else {
-          let t = a ? e.getAttribute(a) : null,
+          let t = o ? e.getAttribute(o) : null,
             n = null !== t && "false" !== t,
-            r = Z(a),
-            o = (r.get(e) || 0) + 1,
+            r = Z(o),
+            a = (r.get(e) || 0) + 1,
             s = (u.get(e) || 0) + 1;
-          r.set(e, o), u.set(e, s), c.push(e), 1 === o && n && F.add(e), 1 === s && e.setAttribute(i, ""), !n && a && e.setAttribute(a, "inert" === a ? "" : "true")
+          r.set(e, a), u.set(e, s), c.push(e), 1 === a && n && F.add(e), 1 === s && e.setAttribute(i, ""), !n && o && e.setAttribute(o, "inert" === o ? "" : "true")
         }
     })
   }
-  return o.forEach(d), f(t), s.clear(), V++, () => {
+  return a.forEach(d), f(t), s.clear(), V++, () => {
     c.forEach(e => {
-      let t = Z(a),
+      let t = Z(o),
         n = (t.get(e) || 0) - 1,
         r = (u.get(e) || 0) - 1;
-      t.set(e, n), u.set(e, r), n || (!F.has(e) && a && e.removeAttribute(a), F.delete(e)), r || e.removeAttribute(i)
+      t.set(e, n), u.set(e, r), n || (!F.has(e) && o && e.removeAttribute(o), F.delete(e)), r || e.removeAttribute(i)
     }), --V || (G.inert = new WeakMap, G["aria-hidden"] = new WeakMap, G.none = new WeakMap, F = new WeakSet, B = {})
   }
 }
@@ -345,7 +345,7 @@ function et() {
     n = document.body.style,
     r = Math.round(document.documentElement.getBoundingClientRect().left) + document.documentElement.scrollLeft ? "paddingLeft" : "paddingRight",
     i = window.innerWidth - document.documentElement.clientWidth,
-    o = require.left ? parseFloat(require.left) : window.scrollX,
+    a = require.left ? parseFloat(require.left) : window.scrollX,
     s = require.top ? parseFloat(require.top) : window.scrollY;
   if (require.overflow = "hidden", require.setProperty(ee, Chunk473749 + "px"), Chunk473749 && (require[r] = Chunk473749 + "px"), exports) {
     var l, c;
@@ -375,11 +375,11 @@ let en = () => {},
       lockScroll: n = false,
       ...r
     } = e;
-    return (0, a.Xj)(() => {
+    return (0, o.Xj)(() => {
       if (n) return 1 == ++$ && (en = et()), () => {
         0 == --$ && en()
       }
-    }, [n]), (0, o.jsx)("div", {
+    }, [n]), (0, a.jsx)("div", {
       ref: t,
       ...r,
       style: {
@@ -398,12 +398,12 @@ let en = () => {},
     mousedown: "onMouseDown",
     click: "onClick"
   },
-  ea = {
+  eo = {
     pointerdown: "onPointerDownCapture",
     mousedown: "onMouseDownCapture",
     click: "onClickCapture"
   },
-  eo = e => {
+  ea = e => {
     var t, n;
     return {
       escapeKey: "boolean" == typeof e ? e : null != (t = null == e ? true : e.escapeKey) && t,
@@ -416,7 +416,7 @@ function es(e, t) {
   let {
     open: n,
     onOpenChange: r,
-    elements: o,
+    elements: a,
     dataRef: l
   } = e, {
     enabled: c = true,
@@ -428,20 +428,20 @@ function es(e, t) {
     ancestorScroll: m = false,
     bubbles: h,
     capture: g
-  } = t, E = A(), b = (0, a.iW)("function" == typeof d ? d : () => false), y = "function" == typeof d ? b : d, O = i.useRef(false), {
+  } = t, E = A(), b = (0, o.iW)("function" == typeof d ? d : () => false), y = "function" == typeof d ? b : d, O = i.useRef(false), {
     escapeKey: v,
     outsidePress: S
-  } = eo(h), {
+  } = ea(h), {
     escapeKey: I,
     outsidePress: T
-  } = eo(g), C = i.useRef(false), P = (0, a.iW)(e => {
+  } = ea(g), C = i.useRef(false), P = (0, o.iW)(e => {
     var t;
     if (!n || !c || !u || "Escape" !== e.key || C.current) return;
     let i = null == (t = l.current.floatingContext) ? true : t.nodeId,
-      o = E ? (0, a.El)(E.nodesRef.current, i) : [];
-    if (!v && (e.stopPropagation(), o.length > 0)) {
+      a = E ? (0, o.El)(E.nodesRef.current, i) : [];
+    if (!v && (e.stopPropagation(), a.length > 0)) {
       let e = true;
-      if (o.forEach(t => {
+      if (a.forEach(t => {
           var n;
           if (null != (n = t.context) && n.open && !t.context.dataRef.current.__escapeKeyBubbles) {
             e = false;
@@ -449,50 +449,50 @@ function es(e, t) {
           }
         }), !e) return
     }
-    r(false, (0, a.MM)(e) ? e.nativeEvent : e, "escape-key")
-  }), R = (0, a.iW)(e => {
+    r(false, (0, o.MM)(e) ? e.nativeEvent : e, "escape-key")
+  }), R = (0, o.iW)(e => {
     var t;
     let n = () => {
       var t;
-      P(e), null == (t = (0, a.U9)(e)) || t.removeEventListener("keydown", n)
+      P(e), null == (t = (0, o.U9)(e)) || t.removeEventListener("keydown", n)
     };
-    null == (t = (0, a.U9)(e)) || t.addEventListener("keydown", n)
-  }), w = (0, a.iW)(e => {
+    null == (t = (0, o.U9)(e)) || t.addEventListener("keydown", n)
+  }), w = (0, o.iW)(e => {
     var t;
     let n = l.current.insideReactTree;
     l.current.insideReactTree = false;
     let i = O.current;
     if (O.current = false, "click" === f && i || n || "function" == typeof y && !y(e)) return;
-    let c = (0, a.U9)(e),
+    let c = (0, o.U9)(e),
       u = "[" + N("inert") + "]",
-      d = (0, a.Me)(o.floating).querySelectorAll(u),
+      d = (0, o.Me)(a.floating).querySelectorAll(u),
       p = (0, s.kK)(c) ? c : null;
     for (; p && !(0, s.Py)(p);) {
       let e = (0, s.Ow)(p);
       if ((0, s.Py)(e) || !(0, s.kK)(e)) break;
       p = e
     }
-    if (d.length && (0, s.kK)(c) && !(0, a.ex)(c) && !(0, a.r3)(c, o.floating) && Array.from(d).every(e => !(0, a.r3)(p, e))) return;
+    if (d.length && (0, s.kK)(c) && !(0, o.ex)(c) && !(0, o.r3)(c, a.floating) && Array.from(d).every(e => !(0, o.r3)(p, e))) return;
     if ((0, s.Re)(c) && L) {
       let t = (0, s.Py)(c),
         n = (0, s.Dx)(c),
         r = /auto|scroll/,
         i = t || r.test(n.overflowX),
-        a = t || r.test(n.overflowY),
-        o = i && c.clientWidth > 0 && c.scrollWidth > c.clientWidth,
-        l = a && c.clientHeight > 0 && c.scrollHeight > c.clientHeight,
+        o = t || r.test(n.overflowY),
+        a = i && c.clientWidth > 0 && c.scrollWidth > c.clientWidth,
+        l = o && c.clientHeight > 0 && c.scrollHeight > c.clientHeight,
         u = "rtl" === n.direction,
         d = l && (u ? e.offsetX <= c.offsetWidth - c.clientWidth : e.offsetX > c.clientWidth),
-        f = o && e.offsetY > c.clientHeight;
+        f = a && e.offsetY > c.clientHeight;
       if (d || f) return
     }
     let _ = null == (t = l.current.floatingContext) ? true : t.nodeId,
-      m = E && (0, a.El)(E.nodesRef.current, _).some(t => {
+      m = E && (0, o.El)(E.nodesRef.current, _).some(t => {
         var n;
-        return (0, a.Pe)(e, null == (n = t.context) ? true : n.elements.floating)
+        return (0, o.Pe)(e, null == (n = t.context) ? true : n.elements.floating)
       });
-    if ((0, a.Pe)(e, o.floating) || (0, a.Pe)(e, o.domReference) || m) return;
-    let h = E ? (0, a.El)(E.nodesRef.current, _) : [];
+    if ((0, o.Pe)(e, a.floating) || (0, o.Pe)(e, a.domReference) || m) return;
+    let h = E ? (0, o.El)(E.nodesRef.current, _) : [];
     if (h.length > 0) {
       let e = true;
       if (h.forEach(t => {
@@ -504,13 +504,13 @@ function es(e, t) {
         }), !e) return
     }
     r(false, e, "outside-press")
-  }), D = (0, a.iW)(e => {
+  }), D = (0, o.iW)(e => {
     var t;
     let n = () => {
       var t;
-      w(e), null == (t = (0, a.U9)(e)) || t.removeEventListener(f, n)
+      w(e), null == (t = (0, o.U9)(e)) || t.removeEventListener(f, n)
     };
-    null == (t = (0, a.U9)(e)) || t.addEventListener(f, n)
+    null == (t = (0, o.U9)(e)) || t.addEventListener(f, n)
   });
   i.useEffect(() => {
     if (!n || !c) return;
@@ -530,10 +530,10 @@ function es(e, t) {
         C.current = false
       }, 5 * !!(0, s.Pf)())
     }
-    let p = (0, a.Me)(o.floating);
+    let p = (0, o.Me)(a.floating);
     u && (p.addEventListener("keydown", I ? R : P, I), p.addEventListener("compositionstart", i), p.addEventListener("compositionend", d)), y && p.addEventListener(f, T ? D : w, T);
     let _ = [];
-    return m && ((0, s.kK)(o.domReference) && (_ = (0, s.Kx)(o.domReference)), (0, s.kK)(o.floating) && (_ = _.concat((0, s.Kx)(o.floating))), !(0, s.kK)(o.reference) && o.reference && o.reference.contextElement && (_ = _.concat((0, s.Kx)(o.reference.contextElement)))), (_ = _.filter(e => {
+    return m && ((0, s.kK)(a.domReference) && (_ = (0, s.Kx)(a.domReference)), (0, s.kK)(a.floating) && (_ = _.concat((0, s.Kx)(a.floating))), !(0, s.kK)(a.reference) && a.reference && a.reference.contextElement && (_ = _.concat((0, s.Kx)(a.reference.contextElement)))), (_ = _.filter(e => {
       var t;
       return e !== (null == (t = p.defaultView) ? true : t.visualViewport)
     })).forEach(e => {
@@ -545,7 +545,7 @@ function es(e, t) {
         e.removeEventListener("scroll", t)
       }), window.clearTimeout(e)
     }
-  }, [l, o, u, y, f, n, r, m, c, v, S, P, I, R, w, T, D]), i.useEffect(() => {
+  }, [l, a, u, y, f, n, r, m, c, v, S, P, I, R, w, T, D]), i.useEffect(() => {
     l.current.insideReactTree = false
   }, [l, y, f]);
   let x = i.useMemo(() => ({
@@ -569,7 +569,7 @@ function es(e, t) {
       onMouseUp() {
         O.current = true
       },
-      [ea[f]]: () => {
+      [eo[f]]: () => {
         l.current.insideReactTree = true
       }
     }), [P, f, l]);
@@ -584,7 +584,7 @@ function el(e) {
     open: t = false,
     onOpenChange: n,
     elements: r
-  } = e, o = v(), s = i.useRef({}), [l] = i.useState(() => S()), c = null != C(), [u, d] = i.useState(r.reference), f = (0, a.iW)((e, t, r) => {
+  } = e, a = v(), s = i.useRef({}), [l] = i.useState(() => S()), c = null != C(), [u, d] = i.useState(r.reference), f = (0, o.iW)((e, t, r) => {
     s.current.openEvent = e ? t : true, l.emit("openchange", {
       open: e,
       event: t,
@@ -604,9 +604,9 @@ function el(e) {
     onOpenChange: f,
     elements: _,
     events: l,
-    floatingId: o,
+    floatingId: a,
     refs: p
-  }), [t, f, _, l, o, p])
+  }), [t, f, _, l, a, p])
 }
 
 function ec(e) {
@@ -620,14 +620,14 @@ function ec(e) {
       floating: null,
       ...e.elements
     }
-  }), r = e.rootContext || n, o = r.elements, [l, u] = i.useState(null), [d, f] = i.useState(null), p = (null == o ? true : o.domReference) || l, _ = i.useRef(null), m = A();
-  (0, a.Xj)(() => {
+  }), r = e.rootContext || n, a = r.elements, [l, u] = i.useState(null), [d, f] = i.useState(null), p = (null == a ? true : a.domReference) || l, _ = i.useRef(null), m = A();
+  (0, o.Xj)(() => {
     p && (_.current = p)
   }, [p]);
   let h = (0, c.YF)({
       ...e,
       elements: {
-        ...o,
+        ...a,
         ...d && {
           reference: d
         }
@@ -661,7 +661,7 @@ function ec(e) {
       elements: y,
       nodeId: t
     }), [h, b, y, t, r]);
-  return (0, a.Xj)(() => {
+  return (0, o.Xj)(() => {
     r.dataRef.current.floatingContext = O;
     let e = null == m ? true : m.nodesRef.current.find(e => e.id === t);
     e && (e.context = O)
@@ -676,34 +676,34 @@ function ec(e) {
 function eu(e, t, n) {
   let r = new Map,
     i = "item" === n,
-    a = e;
+    o = e;
   if (i && e) {
     let {
       [d]: t, [f]: n, ...r
     } = e;
-    a = r
+    o = r
   }
   return {
     ..."floating" === n && {
       tabIndex: false,
       [u]: ""
     },
-    ...a,
+    ...o,
     ...t.map(t => {
       let r = t ? t[n] : null;
       return "function" == typeof r ? e ? r(e) : null : r
     }).concat(e).reduce((e, t) => (t && Object.entries(t).forEach(t => {
-      let [n, a] = t;
+      let [n, o] = t;
       if (!(i && [d, f].includes(n)))
         if (0 === n.indexOf("on")) {
-          if (r.has(n) || r.set(n, []), "function" == typeof a) {
-            var o;
-            null == (o = r.get(n)) || o.push(a), e[n] = function() {
-              for (var e, t = arguments.length, i = Array(t), a = 0; a < t; a++) i[a] = arguments[a];
+          if (r.has(n) || r.set(n, []), "function" == typeof o) {
+            var a;
+            null == (a = r.get(n)) || a.push(o), e[n] = function() {
+              for (var e, t = arguments.length, i = Array(t), o = 0; o < t; o++) i[o] = arguments[o];
               return null == (e = r.get(n)) ? true : e.map(e => e(...i)).find(e => true !== e)
             }
           }
-        } else e[n] = a
+        } else e[n] = o
     }), e), {})
   }
 }
@@ -713,14 +713,14 @@ function ed(e) {
   let t = e.map(e => null == e ? true : e.reference),
     n = e.map(e => null == e ? true : e.floating),
     r = e.map(e => null == e ? true : e.item),
-    a = i.useCallback(t => eu(t, e, "reference"), t),
-    o = i.useCallback(t => eu(t, e, "floating"), n),
+    o = i.useCallback(t => eu(t, e, "reference"), t),
+    a = i.useCallback(t => eu(t, e, "floating"), n),
     s = i.useCallback(t => eu(t, e, "item"), r);
   return i.useMemo(() => ({
-    getReferenceProps: a,
-    getFloatingProps: o,
+    getReferenceProps: o,
+    getFloatingProps: a,
     getItemProps: s
-  }), [a, o, s])
+  }), [o, a, s])
 }
 let ef = "Escape";
 
@@ -758,9 +758,9 @@ function eg(e, t) {
       floating: r
     }
   } = e, {
-    duration: o = 250
-  } = t, s = ("number" == typeof o ? o : o.close) || 0, [c, u] = i.useState("unmounted"), d = eh(n, s);
-  return d || "close" !== c || u("unmounted"), (0, a.Xj)(() => {
+    duration: a = 250
+  } = t, s = ("number" == typeof a ? a : a.close) || 0, [c, u] = i.useState("unmounted"), d = eh(n, s);
+  return d || "close" !== c || u("unmounted"), (0, o.Xj)(() => {
     if (r) {
       if (n) {
         u("initial");
@@ -788,7 +788,7 @@ function eE(e, t) {
       opacity: 0
     },
     open: r,
-    close: o,
+    close: a,
     common: s,
     duration: l = 250
   } = t, c = e.placement, u = c.split("-")[0], d = i.useMemo(() => ({
@@ -802,8 +802,8 @@ function eE(e, t) {
     status: E
   } = eg(e, {
     duration: l
-  }), b = (0, a.II)(n), y = (0, a.II)(r), O = (0, a.II)(o), v = (0, a.II)(s);
-  return (0, a.Xj)(() => {
+  }), b = (0, o.II)(n), y = (0, o.II)(r), O = (0, o.II)(a), v = (0, o.II)(s);
+  return (0, o.Xj)(() => {
     let e = em(b.current, d),
       t = em(O.current, d),
       n = em(v.current, d),
@@ -840,10 +840,10 @@ function eb(e, t, n) {
 }
 
 function ey(e, t) {
-  let [n, r] = e, i = false, a = t.length;
-  for (let e = 0, o = a - 1; e < a; o = e++) {
-    let [a, s] = t[e] || [0, 0], [l, c] = t[o] || [0, 0];
-    s >= r != c >= r && n <= (l - a) * (r - s) / (c - s) + a && (i = !i)
+  let [n, r] = e, i = false, o = t.length;
+  for (let e = 0, a = o - 1; e < o; a = e++) {
+    let [o, s] = t[e] || [0, 0], [l, c] = t[a] || [0, 0];
+    s >= r != c >= r && n <= (l - o) * (r - s) / (c - s) + o && (i = !i)
   }
   return i
 }
@@ -860,21 +860,21 @@ function ev(e) {
     requireIntent: r = true
   } = e, i = {
     current: false
-  }, a = false, o = null, l = null, c = "undefined" != typeof performance ? performance.now() : 0;
+  }, o = false, a = null, l = null, c = "undefined" != typeof performance ? performance.now() : 0;
 
   function u(e, t) {
     let n = performance.now(),
       r = n - c;
-    if (null === o || null === l || 0 === r) return o = e, l = t, c = n, null;
-    let i = e - o,
-      a = t - l,
-      s = Math.sqrt(i * i + a * a) / r;
-    return o = e, l = t, c = n, s
+    if (null === a || null === l || 0 === r) return a = e, l = t, c = n, null;
+    let i = e - a,
+      o = t - l,
+      s = Math.sqrt(i * i + o * o) / r;
+    return a = e, l = t, c = n, s
   }
   let d = e => {
     let {
       x: n,
-      y: o,
+      y: a,
       placement: l,
       elements: c,
       onClose: d,
@@ -885,18 +885,18 @@ function ev(e) {
       function _() {
         P(i), d()
       }
-      if (P(i), !c.domReference || !c.floating || null == l || null == n || null == o) return;
+      if (P(i), !c.domReference || !c.floating || null == l || null == n || null == a) return;
       let {
         clientX: m,
         clientY: h
-      } = e, g = [m, h], E = k(e), b = "mouseleave" === e.type, y = M(c.floating, E), O = M(c.domReference, E), v = c.domReference.getBoundingClientRect(), S = c.floating.getBoundingClientRect(), I = l.split("-")[0], T = n > S.right - S.width / 2, C = o > S.bottom - S.height / 2, A = eO(g, v), N = S.width > v.width, R = S.height > v.height, w = (N ? v : S).left, D = (N ? v : S).right, x = (R ? v : S).top, L = (R ? v : S).bottom;
-      if (y && (a = true, !b)) return;
-      if (O && (a = false), O && !b) {
-        a = true;
+      } = e, g = [m, h], E = k(e), b = "mouseleave" === e.type, y = M(c.floating, E), O = M(c.domReference, E), v = c.domReference.getBoundingClientRect(), S = c.floating.getBoundingClientRect(), I = l.split("-")[0], T = n > S.right - S.width / 2, C = a > S.bottom - S.height / 2, A = eO(g, v), N = S.width > v.width, R = S.height > v.height, w = (N ? v : S).left, D = (N ? v : S).right, x = (R ? v : S).top, L = (R ? v : S).bottom;
+      if (y && (o = true, !b)) return;
+      if (O && (o = false), O && !b) {
+        o = true;
         return
       }
       if (b && (0, s.kK)(e.relatedTarget) && M(c.floating, e.relatedTarget) || p && eb(p.nodesRef.current, f).length) return;
-      if ("top" === I && o >= v.bottom - 1 || "bottom" === I && o <= v.top + 1 || "left" === I && n >= v.right - 1 || "right" === I && n <= v.left + 1) return _();
+      if ("top" === I && a >= v.bottom - 1 || "bottom" === I && a <= v.top + 1 || "left" === I && n >= v.right - 1 || "right" === I && n <= v.left + 1) return _();
       let j = [];
       switch (I) {
         case "top":
@@ -967,13 +967,13 @@ function ev(e) {
         }
       }
       if (!ey([m, h], j)) {
-        if (a && !A) return _();
+        if (o && !A) return _();
         if (!b && r) {
           let t = u(e.clientX, e.clientY),
             n = .1;
           if (null !== t && t < n) return _()
         }
-        ey([m, h], U([n, o])) ? !a && r && (i.current = window.setTimeout(_, 40)) : _()
+        ey([m, h], U([n, a])) ? !o && r && (i.current = window.setTimeout(_, 40)) : _()
       }
     }
   };

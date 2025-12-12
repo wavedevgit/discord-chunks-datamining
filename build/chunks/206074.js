@@ -36,11 +36,11 @@ function E(e) {
     n = null == t ? true : t.id,
     {
       data: i,
-      refetch: a
+      refetch: o
     } = (0, l.IX)(n);
   return r.useEffect(() => {
-    null == n || null == i || null != i.bot || m.has(n) || (a(), m.add(n))
-  }, [n, i, a]), i
+    null == n || null == i || null != i.bot || m.has(n) || (o(), m.add(n))
+  }, [n, i, o]), i
 }
 
 function b(e) {
@@ -76,9 +76,9 @@ function y(e) {
   return r.useMemo(() => {
     if (!i || null == t) return null;
     let e = () => {
-      (0, c.Q3)(a.z.CLOUD_PLAY_NEW_BADGE, {
+      (0, c.Q3)(o.z.CLOUD_PLAY_NEW_BADGE, {
         dismissAction: _.L.TAKE_ACTION
-      }), (0, c.Q3)(a.z.CLOUD_PLAY_POPOVER, {
+      }), (0, c.Q3)(o.z.CLOUD_PLAY_POPOVER, {
         dismissAction: _.L.TAKE_ACTION
       })
     };
@@ -87,7 +87,7 @@ function y(e) {
         source_application_id: t.id,
         launching_application_id: t.id,
         location_stack: n
-      }), (0, o.W)({
+      }), (0, a.W)({
         appId: t.id,
         botId: s.id,
         analyticsLocations: null != n ? n : []
@@ -97,7 +97,7 @@ function y(e) {
         source_application_id: t.id,
         launching_application_id: f,
         location_stack: n
-      }), (0, o.W)({
+      }), (0, a.W)({
         appId: f,
         botId: m,
         analyticsLocations: null != n ? n : []

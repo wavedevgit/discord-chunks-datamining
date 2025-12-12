@@ -15,7 +15,7 @@ var Chunk952265 = require("./952265.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk77353 = require("./77353.js");
+  Chunk880916 = require("./880916.js");
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -67,8 +67,8 @@ function y(e) {
       location_object: b.qAy.NAVIGATION_LINK
     }), (0, s.uL)(b.Z5c.APPLICATION_STORE)
   }
-  let h = f.intl.string(f.t.ewxv3J),
-    j = f.intl.string(f.t.qlsCDB);
+  let h = d.intl.string(d.t.ewxv3J),
+    j = d.intl.string(d.t.qlsCDB);
   return (0, c.Z)({
     location: "StreamUpsellModal"
   }) ? (0, n.jsx)(i.Z, O({
@@ -80,7 +80,7 @@ function y(e) {
     body: j,
     artElement: g,
     artContainerClassName: p.artContainer,
-    type: d.cd.STREAM_QUALITY_UPSELL,
+    type: f.cd.STREAM_QUALITY_UPSELL,
     analyticsLocation: {
       section: b.jXE.STREAM_UPSELL_MODAL,
       object: b.qAy.BUTTON_CTA
@@ -88,7 +88,7 @@ function y(e) {
     analyticsSource: r,
     onClose: t,
     onSubscribeClick: a.Z,
-    secondaryCTA: f.intl.string(f.t.ZnqyZ2),
+    secondaryCTA: d.intl.string(d.t.ZnqyZ2),
     onSecondaryClick: m,
     showEnhancedUpsell: true,
     enableArtBoxShadow: false,

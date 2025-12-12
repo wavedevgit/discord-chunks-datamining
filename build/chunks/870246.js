@@ -10,8 +10,8 @@ var n, Chunk473749 = require("./473749.js"),
   s = ((n = {}).DETAIL = "Boost Perk Shop Details", n.DEACTIVATE = "Boost Perk Shop Disable", n);
 
 function i(e, t, o) {
-  a.useEffect(() => {
-    r.default.track(c.rMx.OPEN_MODAL, {
+  r.useEffect(() => {
+    a.default.track(c.rMx.OPEN_MODAL, {
       type: o,
       sku_id: t.skuId,
       guild_id: e

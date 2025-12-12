@@ -51,7 +51,7 @@ function P(e, t) {
     } = e,
     L = i().sanitizeUrl(e.href);
   if (null == L) {
-    null != t && t.preventDefault(), a.Z.show({
+    null != t && t.preventDefault(), o.Z.show({
       title: A.intl.string(A.t.x87gan),
       body: A.intl.format(A.t["9rqRwl"], {
         url: e.href
@@ -81,8 +81,8 @@ function P(e, t) {
       r = (null == e || null == (F = e.messageReference) ? true : F.guild_id) != null && (null == e ? true : e.webhookId) != null && (null == e ? true : e.hasFlag(C.iLy.IS_CROSSPOST)) && null != M;
     r && (null == e || null == (B = e.messageReference) ? true : B.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, Z = e.messageReference.guild_id) : Z = M;
     let i = (null == t ? true : t.type) === C.d4z.GUILD_ANNOUNCEMENT && (null == n ? true : n.features.has(C.GuildFeatures.COMMUNITY)) === true,
-      a = (null == e ? true : e.hasFlag(C.iLy.EPHEMERAL)) === true;
-    k = null != e && !a && (r || i)
+      o = (null == e ? true : e.hasFlag(C.iLy.EPHEMERAL)) === true;
+    k = null != e && !o && (r || i)
   }
   if (null != x) {
     let e = E.Z.getChannel(x),
@@ -142,7 +142,7 @@ function P(e, t) {
   }));
   if (null != t && t.preventDefault(), z) m.Z.show({
     url: j,
-    trustUrl: o.u,
+    trustUrl: a.u,
     onConfirm: H,
     onCancel: Y,
     isProtocol: true,
@@ -153,7 +153,7 @@ function P(e, t) {
       t = null != e ? e.displayTarget : j;
     m.Z.show({
       url: t,
-      trustUrl: o.o,
+      trustUrl: a.o,
       onConfirm: H,
       onCancel: Y,
       isProtocol: false,

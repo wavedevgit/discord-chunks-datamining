@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk605387 = require("./605387.js"),
   i = require.n(Chunk605387);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -59,6 +59,6 @@ class s {
     return this.originalBuffer
   }
   constructor(e, t) {
-    a(this, "img", true), a(this, "originalBuffer", true), this.img = e, this.originalBuffer = t
+    o(this, "img", true), o(this, "originalBuffer", true), this.img = e, this.originalBuffer = t
   }
 }

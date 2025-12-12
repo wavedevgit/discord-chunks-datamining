@@ -1,7 +1,7 @@
-/** Chunk was on 92504 **/
+/** Chunk was on 69844 **/
 /** chunk id: 691703, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,16 +16,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 let h = "redirect_to_support_server";
 
-function f(e) {
+function g(e) {
   let {
     application: t,
     className: n
   } = e, {
-    onGoToSupportServer: f
+    onGoToSupportServer: g
   } = function(e) {
     let t = (0, d.nu)(),
-      n = (0, i.e7)([o.default], () => o.default.getSessionId()),
-      a = r.useCallback(async () => {
+      n = (0, a.e7)([o.default], () => o.default.getSessionId()),
+      r = i.useCallback(async () => {
         try {
           var t;
           let n = null == e || null == (t = e.guild) ? true : t.id;
@@ -41,31 +41,31 @@ function f(e) {
           }
         } catch (e) {}
       }, [e]);
-    return r.useEffect(() => {
-      let r = new URL(location.href);
-      if (null != e && t && null != n && "true" === r.searchParams.get(h)) {
-        r.searchParams.delete(h);
-        let e = r.pathname + r.search;
-        (0, s.dL)(e), a()
+    return i.useEffect(() => {
+      let i = new URL(location.href);
+      if (null != e && t && null != n && "true" === i.searchParams.get(h)) {
+        i.searchParams.delete(h);
+        let e = i.pathname + i.search;
+        (0, s.dL)(e), r()
       }
-    }, [t, a, n, e]), {
-      onGoToSupportServer: r.useCallback(() => {
+    }, [t, r, n, e]), {
+      onGoToSupportServer: i.useCallback(() => {
         var n;
-        null != (null == e || null == (n = e.guild) ? true : n.id) && (t ? a() : (0, d.rf)({
+        null != (null == e || null == (n = e.guild) ? true : n.id) && (t ? r() : (0, d.rf)({
           [h]: "true"
         }))
-      }, [e, a, t])
+      }, [e, r, t])
     }
   }(t);
-  return null != t.guild && t.guild.features.includes(p.GuildFeatures.DISCOVERABLE) ? (0, a.jsxs)("div", {
+  return null != t.guild && t.guild.features.includes(p.GuildFeatures.DISCOVERABLE) ? (0, r.jsxs)("div", {
     className: n,
-    children: [(0, a.jsx)(l.Heading, {
+    children: [(0, r.jsx)(l.Heading, {
       variant: "heading-sm/semibold",
       color: "text-strong",
       children: m.intl.string(m.t.KJEO27)
-    }), (0, a.jsx)(u.Z, {
+    }), (0, r.jsx)(u.Z, {
       guild: t.guild,
-      onClick: f
+      onClick: g
     })]
   }) : null
 }

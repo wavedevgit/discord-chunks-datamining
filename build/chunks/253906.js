@@ -5,7 +5,7 @@ module.exports = function(e) {
     n = /[a-zA-Z_$][a-zA-Z0-9_$]*/,
     r = t.concat(n, t.concat("(\\.", n, ")*")),
     i = /([*]|[a-zA-Z_$][a-zA-Z0-9_$]*)/,
-    a = {
+    o = {
       className: "rest_arg",
       begin: /[.]{3}/,
       end: n,
@@ -48,7 +48,7 @@ module.exports = function(e) {
         className: "params",
         begin: /\(/,
         end: /\)/,
-        contains: [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, a]
+        contains: [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, e.C_LINE_COMMENT_MODE, e.C_BLOCK_COMMENT_MODE, o]
       }, {
         begin: t.concat(/:\s*/, i)
       }]

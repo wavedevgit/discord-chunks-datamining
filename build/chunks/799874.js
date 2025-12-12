@@ -1,5 +1,0 @@
-/** Chunk was on 97368 **/
-/** chunk id: 799874, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  newBadgeRow: "_46b5e33073fe7f1e-newBadgeRow"
-}

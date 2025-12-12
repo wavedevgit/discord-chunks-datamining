@@ -19,35 +19,35 @@ var Chunk54381 = require("./54381.js"),
   Chunk436585 = require("./436585.jsx"),
   Chunk848118 = require("./848118.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk358035 = require("./358035.js");
+  Chunk216215 = require("./216215.js");
 
 function b(e) {
   var t;
   let {
     handleClose: n
   } = e, {
-    analyticsLocations: l
-  } = (0, d.ZP)(), {
+    analyticsLocations: a
+  } = (0, c.ZP)(), {
     skusById: b,
-    selectedSkuId: j,
-    application: I
+    selectedSkuId: _,
+    application: j
   } = (0, u.JL)(), {
-    isGift: P,
-    giftRecipient: w
-  } = (0, c.wD)();
-  r()(null != j, "Expected selectedSkuId"), r()(null != I, "Expected application");
-  let _ = b[j];
-  return (r()(null != _, "Expected sku"), a.useEffect(() => {
-    P || ((0, h.U)(), n(), (0, p.I)({
-      sku: _,
-      application: I,
-      analyticsLocations: l
+    isGift: I,
+    giftRecipient: P
+  } = (0, d.wD)();
+  r()(null != _, "Expected selectedSkuId"), r()(null != j, "Expected application");
+  let w = b[_];
+  return (r()(null != w, "Expected sku"), l.useEffect(() => {
+    I || ((0, h.U)(), n(), (0, p.I)({
+      sku: w,
+      application: j,
+      analyticsLocations: a
     }))
-  }, [P, _, I, n, l]), P) ? (0, i.jsxs)(f.C3, {
+  }, [I, w, j, n, a]), I) ? (0, i.jsxs)(f.C3, {
     children: [(0, i.jsx)(m.Z, {}), (0, i.jsx)(g.Z, {}), (0, i.jsxs)("div", {
       className: C.confirmation,
       children: [(0, i.jsx)(x.A, {
-        sku: _,
+        sku: w,
         shape: "square",
         containerClassName: C.skuImage
       }), (0, i.jsx)(o.Heading, {
@@ -58,8 +58,8 @@ function b(e) {
         variant: "text-md/normal",
         className: C.confirmationDescription,
         children: v.intl.formatToPlainString(v.t["2VjPTw"], {
-          itemName: _.name,
-          giftRecipient: null != (t = null == w ? true : w.username) ? t : "your recipient"
+          itemName: w.name,
+          giftRecipient: null != (t = null == P ? true : P.username) ? t : "your recipient"
         })
       }), (0, i.jsx)(s.zxk, {
         onClick: n,

@@ -20,7 +20,7 @@ module.exports = {
         l = n.set("focusKey", d).set("focusOffset", 0)
       } else l = n.set("focusOffset", u)
     } else l = n;
-    s = a(t, l = o(l));
+    s = o(t, l = a(l));
     var f = r.removeRange(t, l, "forward");
     return f === t ? e : i.push(e, f, "remove-range")
   },

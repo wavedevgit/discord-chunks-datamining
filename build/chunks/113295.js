@@ -3,7 +3,7 @@
 let Chunk40231 = require("./40231.js"),
   Chunk721919 = require("./721919.js"),
   {
-    ANY: a
+    ANY: o
   } = Chunk721919,
   Chunk889658 = require("./889658.js"),
   Chunk839525 = require("./839525.js"),
@@ -13,7 +13,7 @@ let Chunk40231 = require("./40231.js"),
   Chunk725616 = require("./725616.js");
 module.exports = (e, t, n, f) => {
   let p, _, m, h, g;
-  switch (e = new r(e, f), t = new o(t, f), n) {
+  switch (e = new r(e, f), t = new a(t, f), n) {
     case ">":
       p = l, _ = u, m = c, h = ">", g = ">=";
       break;
@@ -26,11 +26,11 @@ module.exports = (e, t, n, f) => {
   if (s(e, t, f)) returnfalse;
   for (let n = 0; n < t.set.length; ++n) {
     let r = t.set[n],
-      o = null,
+      a = null,
       s = null;
     if (r.forEach(e => {
-        e.semver === a && (e = new i(">=0.0.0")), o = o || e, s = s || e, p(e.semver, o.semver, f) ? o = e : m(e.semver, s.semver, f) && (s = e)
-      }), o.operator === h || o.operator === g || (!s.operator || s.operator === h) && _(e, s.semver) || s.operator === g && m(e, s.semver)) returnfalse
+        e.semver === o && (e = new i(">=0.0.0")), a = a || e, s = s || e, p(e.semver, a.semver, f) ? a = e : m(e.semver, s.semver, f) && (s = e)
+      }), a.operator === h || a.operator === g || (!s.operator || s.operator === h) && _(e, s.semver) || s.operator === g && m(e, s.semver)) returnfalse
   }
   returntrue
 }

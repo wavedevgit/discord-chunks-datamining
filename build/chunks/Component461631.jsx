@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk872269 = require("./872269.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk737343 = require("./737343.js");
+  Chunk747615 = require("./747615.js");
 
 function _(e) {
   let {
@@ -32,12 +32,12 @@ function _(e) {
       (0, u.L$)(d.qb.SOMETHING_WENT_WRONG)
     }
   };
-  return (0, r.jsx)(o.u, {
+  return (0, r.jsx)(a.u, {
     text: f.intl.string(f.t.jTW016),
     children: (0, r.jsx)(s.P3F, {
       onClick: h,
       "aria-label": f.intl.string(f.t.jTW016),
-      className: a()(_, p.clickable),
+      className: o()(_, p.clickable),
       children: (0, r.jsx)(s.XHJ, {
         size: i,
         className: p.icon,

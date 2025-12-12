@@ -32,7 +32,7 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +45,7 @@ function a(e) {
   return e
 }
 
-function o(e, t) {
+function a(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,7 +57,7 @@ function o(e, t) {
 }
 
 function s(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -66,8 +66,8 @@ function l(e, t) {
   if (null == e) return {};
   var n, r, i = c(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -75,8 +75,8 @@ function l(e, t) {
 function c(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -90,7 +90,7 @@ function d(e) {
       {
         buildLayout: n
       } = e,
-      r = s(a({}, l(e, ["buildLayout"])), {
+      r = s(o({}, l(e, ["buildLayout"])), {
         layout: t
       });
     return t.forEach(e => e.parent = r), r
@@ -103,7 +103,7 @@ function f(e) {
 }
 
 function p(e, t, n) {
-  return s(a({}, n), {
+  return s(o({}, n), {
     key: e,
     type: t
   })
@@ -150,7 +150,7 @@ function S(e, t) {
 }
 
 function I(e, t, n) {
-  return s(a({}, n), {
+  return s(o({}, n), {
     key: e,
     type: t
   })

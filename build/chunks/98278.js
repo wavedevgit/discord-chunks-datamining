@@ -18,5 +18,5 @@ let s = () => {
     }
   },
   l = e => {
-    null == e || e(), (0, r.xf)(), (0, i.uL)(o.Z5c.APPLICATION_STORE)
+    null == e || e(), (0, r.xf)(), (0, i.uL)(a.Z5c.APPLICATION_STORE)
   }

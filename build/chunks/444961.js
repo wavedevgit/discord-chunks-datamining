@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 444961, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 }), require("./388685.js");
 var Chunk846519 = require("./846519.js"),
   Chunk570140 = require("./570140.js"),
@@ -17,7 +17,7 @@ var Chunk846519 = require("./846519.js"),
   Chunk981631 = require("./981631.js");
 let h = new Chunk846519.V7,
   m = new Chunk846519.V7;
-class b extends Chunk317770.Z {
+class _ extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("IDLE", this.handleIdleUpdate)
   }
@@ -43,4 +43,4 @@ class b extends Chunk317770.Z {
     }))
   }
 }
-let _ = new b
+let b = new _

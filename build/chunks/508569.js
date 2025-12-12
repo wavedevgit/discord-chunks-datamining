@@ -38,12 +38,12 @@ function b(e, t, n) {
   var r;
   if (null == n) returnfalse;
   let i = e[t],
-    a = e.length - 1,
-    o = t < a ? e[t + 1] : null,
+    o = e.length - 1,
+    a = t < o ? e[t + 1] : null,
     s = null != (r = null == n ? true : n.timeRemaining()) ? r : 0,
     l = null != n && s <= 0,
-    c = i.type === (null == o ? true : o.type),
-    u = t === a;
+    c = i.type === (null == a ? true : a.type),
+    u = t === o;
   return !!l && !c && !u
 }
 class y {
@@ -110,19 +110,19 @@ class y {
     this.scheduler.telemetry.measure(c.aA.COUNT_INITIAL_DISPATCHS_LENGTH, e.length);
     try {
       let s = [];
-      this.socket.connectionState === o.Z.RESUMING && r.ZP.Emitter.pause(150);
+      this.socket.connectionState === a.Z.RESUMING && r.ZP.Emitter.pause(150);
       let l = 0;
       if (r.ZP.Emitter.batched(() => {
           for (let r = 0; r < e.length; r++) {
-            let a = e[r];
-            n = a.type, i = i || m.has(a.type);
-            let o = performance.now();
-            if (this.dispatchOne(a), l = performance.now() - o, E(a.type, l), b(e, r, t)) {
+            let o = e[r];
+            n = o.type, i = i || m.has(o.type);
+            let a = performance.now();
+            if (this.dispatchOne(o), l = performance.now() - a, E(o.type, l), b(e, r, t)) {
               s = e.slice(r + 1), null != t && 0 >= t.timeRemaining() && this.scheduler.telemetry.timeTrack(c.JV.TIME_OVER_DEADLINE, t.timeSinceExpiration);
               break
             }
           }
-          a.Z.flush()
+          o.Z.flush()
         }), i && r.ZP.Emitter.resume(), s.length > 0) return this.scheduler.telemetry.measure(c.aA.COUNT_DISPATCHES_LEFT_AFTER_YIELD, s.length), this.queue.unshift(...s), this.scheduler.requestWorkTimeout(this.flush, true), false
     } catch (e) {
       this.socket.resetSocketOnDispatchError({
@@ -140,15 +140,15 @@ class y {
       compressionAnalytics: c,
       preloadedData: u
     } = e, d = performance.now();
-    if (this.socket.connectionState === o.Z.RESUMING) {
+    if (this.socket.connectionState === a.Z.RESUMING) {
       let e = d - this.resumeAnalytics.lastUpdateTime;
       0 === this.resumeAnalytics.numEvents ? this.resumeAnalytics.initialWaitTime = e : e > this.resumeAnalytics.largestWaitTime && (this.resumeAnalytics.largestWaitTime = e), this.resumeAnalytics.totalWaitTime += e, this.resumeAnalytics.lastUpdateTime = d, this.resumeAnalytics.numEvents += 1
     }
-    if (a.Z.flush(s, i), "READY" === s) {
+    if (o.Z.flush(s, i), "READY" === s) {
       let e = (0, l.vW)(i);
       null == (t = this.getDispatchHandler(s)) || t.dispatch(i, s, u), (0, l.dm)(this.socket, i, d, c, e)
     } else "RESUMED" === s ? (null == (n = this.getDispatchHandler(s)) || n.dispatch(i, s, u), (0, l.uB)(this.resumeAnalytics), this.socket.handleResumeDispatched(), this.resumeAnalytics = (0, l.zH)()) : null == (r = this.getDispatchHandler(s)) || r.dispatch(i, s, u);
-    this.socket.connectionState === o.Z.RESUMING && (this.resumeAnalytics.dispatchTime += performance.now() - d)
+    this.socket.connectionState === a.Z.RESUMING && (this.resumeAnalytics.dispatchTime += performance.now() - d)
   }
   clear() {
     this.paused = false, this.queue.length = 0
@@ -163,8 +163,8 @@ class y {
       let r = this.queue.splice(0, n),
         i = this.dispatchMultiple(r, e);
       i && this.scheduler.telemetry.timeEnd(c.JV.TIME_TO_QUEUE_EMPTY);
-      let a = performance.now() - t;
-      return a > u.TC && !i && f.log("Dispatched ".concat(r.length, " messages in ").concat(a, "ms")), i
+      let o = performance.now() - t;
+      return o > u.TC && !i && f.log("Dispatched ".concat(r.length, " messages in ").concat(o, "ms")), i
     }
   }
 }

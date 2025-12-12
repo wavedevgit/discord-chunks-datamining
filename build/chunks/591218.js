@@ -60,7 +60,7 @@ class d extends Chunk836560.EventEmitter {
     }
   }
   setStream(e) {
-    return null != this.streamId && ((0, o.jC)(this.streamId), this.streamId = null), this.stream = e, e.onaddtrack = e => this.emit("add-video-track", e), e.getVideoTracks().length > 0 && (this.streamId = (0, o.N7)(e)), this.emit("stream", e), this.emit("video", this.getStreamId()), e
+    return null != this.streamId && ((0, a.jC)(this.streamId), this.streamId = null), this.stream = e, e.onaddtrack = e => this.emit("add-video-track", e), e.getVideoTracks().length > 0 && (this.streamId = (0, a.N7)(e)), this.emit("stream", e), this.emit("video", this.getStreamId()), e
   }
   constructor(...e) {
     super(...e), c(this, "stream", new MediaStream), c(this, "sourceId", s.Av), c(this, "streamId", null), c(this, "destroyed", false)

@@ -1,8 +1,8 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 760632, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  M: () => f
+  M: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,51 +11,51 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 let o = "".concat(60),
   c = "".concat(300),
-  d = "".concat(900),
-  u = "".concat(1800),
+  u = "".concat(900),
+  d = "".concat(1800),
   g = "".concat(3600);
 
-function f(e) {
+function m(e) {
   let {
     canManageGuild: t,
     afkTimeout: n,
-    afkChannelId: f,
-    label: m
-  } = e, b = i.useMemo(() => [{
+    afkChannelId: m,
+    label: p
+  } = e, f = i.useMemo(() => [{
     value: o,
-    label: s.intl.formatToPlainString(s.t.iXLF9W, {
+    label: a.intl.formatToPlainString(a.t.iXLF9W, {
       minutes: 1
     })
   }, {
     value: c,
-    label: s.intl.formatToPlainString(s.t.iXLF9W, {
+    label: a.intl.formatToPlainString(a.t.iXLF9W, {
       minutes: 5
     })
   }, {
-    value: d,
-    label: s.intl.formatToPlainString(s.t.iXLF9W, {
+    value: u,
+    label: a.intl.formatToPlainString(a.t.iXLF9W, {
       minutes: 15
     })
   }, {
-    value: u,
-    label: s.intl.formatToPlainString(s.t.iXLF9W, {
+    value: d,
+    label: a.intl.formatToPlainString(a.t.iXLF9W, {
       minutes: 30
     })
   }, {
     value: g,
-    label: s.intl.formatToPlainString(s.t.xCjYxK, {
+    label: a.intl.formatToPlainString(a.t.xCjYxK, {
       hours: 1
     })
-  }], []), p = i.useCallback(e => {
-    a.Z.updateGuild({
+  }], []), h = i.useCallback(e => {
+    s.Z.updateGuild({
       afkTimeout: parseInt(e, 10)
     })
   }, []);
   return (0, r.jsx)(l.y6, {
-    label: m,
+    label: p,
     value: null == n ? null : "".concat(n),
-    options: b,
-    isDisabled: null == f || !t,
-    onChange: p
+    options: f,
+    isDisabled: null == m || !t,
+    onChange: h
   })
 }

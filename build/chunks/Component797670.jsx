@@ -6,11 +6,11 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk601964 = require("./601964.js"),
-  Chunk483832 = require("./483832.js");
+  Chunk519252 = require("./519252.js");
 
 function u(e) {
   let {
@@ -29,8 +29,8 @@ function u(e) {
       width: n
     }) : (0, r.jsx)("div", {
       className: c.textContainer,
-      children: (0, r.jsx)(o.Text, {
-        className: a()({
+      children: (0, r.jsx)(a.Text, {
+        className: o()({
           [c.smallText]: 20 === n
         }),
         color: "text-subtle",

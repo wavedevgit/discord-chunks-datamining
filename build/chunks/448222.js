@@ -1,23 +1,23 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 448222, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk473749 = require("./473749.js"),
   Chunk238343 = require("./238343.jsx"),
   Chunk343334 = require("./343334.js");
 
-function a(e, t) {
+function o(e, t) {
   let {
     isLoading: n,
-    error: a,
-    onToggle: o
+    error: o,
+    onToggle: a
   } = (0, l.Z)(e, t), {
     onActivate: s
-  } = (0, i._C)(e, t), c = r.useCallback(() => o(false), [o]);
+  } = (0, i._C)(e, t), c = r.useCallback(() => a(false), [a]);
   return {
     isLoading: n,
-    error: a,
+    error: o,
     onActivate: s,
     onDeactivate: c,
     onShowDeactivate: r.useCallback(() => {

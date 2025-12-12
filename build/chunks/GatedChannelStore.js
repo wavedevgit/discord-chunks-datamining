@@ -60,13 +60,13 @@ function C(e, t) {
         role: i,
         isPreviewingRoles: n
       })) continue;
-    let a = e.permissionOverwrites[r];
-    if ((0, d.TG)(e, a)) returntrue
+    let o = e.permissionOverwrites[r];
+    if ((0, d.TG)(e, o)) returntrue
   }
   let r = g.Z.getEveryoneRole(t),
     i = !(0, _.Fs)(r, y.Plq.VIEW_CHANNEL),
-    a = (0, d.wB)(e, e.permissionOverwrites[t.id]);
-  if (i && !a) {
+    o = (0, d.wB)(e, e.permissionOverwrites[t.id]);
+  if (i && !o) {
     for (let e of g.Z.getSortedRoles(t.id))
       if (T({
           guildId: t.id,
@@ -81,7 +81,7 @@ function A(e) {
   let t = E.Z.getGuild(e);
   if (null == t) return;
   let n = v[e] = new Set;
-  if (!t.features.has(y.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED) || !(0, c.kT)(e) && !(0, o.Rw)(t)) return;
+  if (!t.features.has(y.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED) || !(0, c.kT)(e) && !(0, a.Rw)(t)) return;
   let r = m.Z.getMutableGuildChannelsForGuild(e);
   for (let e in r) {
     let i = r[e];
@@ -96,9 +96,9 @@ function N(e, t) {
   if (null == r) returnfalse;
   let i = E.Z.getGuild(r.getGuildId());
   if (null == i) returnfalse;
-  let a = n.has(t),
-    o = C(r, i);
-  return a !== o && (o ? n.add(t) : n.delete(t), true)
+  let o = n.has(t),
+    a = C(r, i);
+  return o !== a && (a ? n.add(t) : n.delete(t), true)
 }
 
 function P() {

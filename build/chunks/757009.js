@@ -6,8 +6,8 @@ var Chunk785902 = require("./785902.js"),
   Chunk290677 = require("./290677.js");
 module.exports = function(e, t) {
   return function(n, s) {
-    var l = o(n) ? r : i,
+    var l = a(n) ? r : i,
       c = t ? t() : {};
-    return l(n, e, a(s, 2), c)
+    return l(n, e, o(s, 2), c)
   }
 }

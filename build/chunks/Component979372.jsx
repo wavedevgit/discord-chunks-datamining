@@ -8,20 +8,20 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
-  Chunk554315 = require("./554315.js");
+  a = require.n(Chunk120356),
+  Chunk632065 = require("./632065.js");
 let l = {
     SIZE: {
       default: true,
-      reduced: Chunk554315.sizeReduced
+      reduced: Chunk632065.sizeReduced
     },
     COLOR: {
       default: true,
-      muted: Chunk554315.colorMuted
+      muted: Chunk632065.colorMuted
     },
     WEIGHT: {
       default: true,
-      reduced: Chunk554315.weightReduced
+      reduced: Chunk632065.weightReduced
     }
   },
   c = Chunk473749.createContext({
@@ -39,18 +39,18 @@ function d(e) {
   let {
     children: t,
     size: n,
-    color: a,
+    color: o,
     weight: d
   } = e, f = u(), p = i.useMemo(() => {
     let e = {
         className: true,
         size: null != n ? n : f.size,
-        color: null != a ? a : f.color,
+        color: null != o ? o : f.color,
         weight: null != d ? d : f.weight
       },
-      t = o()(l.SIZE[e.size], l.COLOR[e.color], l.WEIGHT[e.weight]);
-    return "" !== t && (e.className = o()(s.root, t)), e
-  }, [n, a, d, f]);
+      t = a()(l.SIZE[e.size], l.COLOR[e.color], l.WEIGHT[e.weight]);
+    return "" !== t && (e.className = a()(s.root, t)), e
+  }, [n, o, d, f]);
   return (0, r.jsx)(c.Provider, {
     value: p,
     children: t

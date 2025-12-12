@@ -39,7 +39,7 @@ function b() {
     let r = Chunk592125.Z.getChannel(exports),
       i = Chunk979651.Z.getVoiceState(null == r ? true : r.getGuildId(), Chunk314897.default.getId());
     n = Chunk131951.Z.getMode() === Chunk981631.pM4.VOICE_ACTIVITY;
-    let a = (0, Chunk383451.f)({
+    let o = (0, Chunk383451.f)({
       location: "doPTT",
       autoTrackExposure: false
     }).enableLatching && Chunk131951.Z.getModeOptions().pttLatchingEnabled;

@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => $
 }), require("./388685.js");
 var i, Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -43,7 +43,7 @@ let T = {},
   D = {};
 
 function x(e, t, n, i) {
-  return o()(null != r, "Creating RTCConnection without session."), new p.Z({
+  return a()(null != r, "Creating RTCConnection without session."), new p.Z({
     sessionId: r,
     streamKey: e,
     serverId: t,
@@ -73,8 +73,8 @@ function k(e) {
   let {
     streamType: r,
     guildId: i,
-    channelId: a,
-    appContext: o,
+    channelId: o,
+    appContext: a,
     pid: s,
     sourceId: c,
     sourcePid: u,
@@ -84,18 +84,18 @@ function k(e) {
   } = e, h = (0, _.V9)({
     streamType: r,
     guildId: i,
-    channelId: a,
+    channelId: o,
     ownerId: E.default.getId()
   });
   if (T[h] = {
-      appContext: o,
+      appContext: a,
       analyticsLocations: m
     }, l().forEach(D, e => {
       let {
         analyticsContext: t,
         isOwner: n
       } = e;
-      t.setActionContext(o), t.setNativePickerStyleUsed(d), n && t.trackStart()
+      t.setActionContext(a), t.setNativePickerStyleUsed(d), n && t.trackStart()
     }), null == s && (s = u), N[h] = c, A[h] = s, null != s) {
     let e = f.ZP.getGameForPID(s);
     null != e && (C[h] = {
@@ -133,9 +133,9 @@ function G(e) {
     rtcServerId: n,
     rtcChannelId: r,
     region: i,
-    viewerIds: a
-  } = e, o = D[t], s = (0, _.my)(t);
-  if (null == o && null != n) {
+    viewerIds: o
+  } = e, a = D[t], s = (0, _.my)(t);
+  if (null == a && null != n) {
     var l, c;
     null == A[t] && (C[t] = null), null == C[t] && null == N[t] && (C[t] = (0, m.L2)(s, y.Z));
     let e = new p.A({
@@ -143,15 +143,15 @@ function G(e) {
       streamApplication: C[t],
       streamSourceType: X(N[t]),
       actionContext: null == (l = T[t]) ? true : l.appContext,
-      numViewers: null != a ? a.length : 0,
+      numViewers: null != o ? o.length : 0,
       goLiveModalDurationMs: P[t],
       analyticsLocations: null == (c = T[t]) ? true : c.analyticsLocations
     });
-    o = x(t, n, r, e), D[t] = o
+    a = x(t, n, r, e), D[t] = a
   }
   delete R[t], d.Z.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
-    mediaEngineConnectionId: o.getMediaEngineConnectionId()
+    mediaEngineConnectionId: a.getMediaEngineConnectionId()
   })
 }
 
@@ -208,18 +208,18 @@ function W(e) {
     wants: n,
     userId: r,
     guildId: i,
-    channelId: a
-  } = e, o = (0, _.V9)({
+    channelId: o
+  } = e, a = (0, _.V9)({
     streamType: null == i ? S.lo.CALL : S.lo.GUILD,
     guildId: i,
-    channelId: a,
+    channelId: o,
     ownerId: r
   });
-  if (t !== u.Yn.STREAM || null == D[o] || !Object.entries(n).some(e => {
+  if (t !== u.Yn.STREAM || null == D[a] || !Object.entries(n).some(e => {
       let [t, n] = e;
       return "any" !== t && 0 !== n
     })) returnfalse;
-  R[o] = performance.now()
+  R[a] = performance.now()
 }
 
 function K(e) {

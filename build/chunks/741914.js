@@ -52,10 +52,10 @@ let f = i().omit(Chunk428595.Z.RULES, ["codeBlock", "heading"]),
   p = d(c({}, Chunk723454.Z), {
     parse: function(e, t, n) {
       var r;
-      let i = a.Z.parse(e, t, n),
-        o = Math.min(6, (null != (r = n.initialHeaderLevel) ? r : 3) + i.level);
+      let i = o.Z.parse(e, t, n),
+        a = Math.min(6, (null != (r = n.initialHeaderLevel) ? r : 3) + i.level);
       return d(c({}, i), {
-        level: o
+        level: a
       })
     }
   }),

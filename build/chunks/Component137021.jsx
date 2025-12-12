@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk207003 = require("./207003.jsx"),
   Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk925969 = require("./925969.js"),
+  Chunk834505 = require("./834505.js"),
   Chunk621054 = require("./621054.js");
 
 function O(e) {
@@ -30,20 +30,20 @@ function O(e) {
     applicationId: t,
     customId: n,
     linkId: O,
-    message: Z,
-    onClose: E,
-    onCopyLink: L,
-    onShare: T,
-    transitionState: C
-  } = e, [w] = (0, c.Z)([t]), _ = (0, a.e7)([m.default], () => m.default.getCurrentUser()), [k, N] = r.useState(false), [R, M] = r.useState(""), [D, A] = r.useState("");
+    message: _,
+    onClose: Z,
+    onCopyLink: E,
+    onShare: L,
+    transitionState: T
+  } = e, [C] = (0, c.Z)([t]), w = (0, a.e7)([m.default], () => m.default.getCurrentUser()), [k, N] = r.useState(false), [R, M] = r.useState(""), [D, A] = r.useState("");
   r.useEffect(() => {
     A((0, o.H)({
       applicationId: t,
-      referrerId: null == _ ? true : _.id,
+      referrerId: null == w ? true : w.id,
       customId: n,
       linkId: O
     }))
-  }, [t, _, n, O, A]);
+  }, [t, w, n, O, A]);
   let I = r.useRef(0),
     [F, U] = r.useState([]),
     q = F.length,
@@ -61,7 +61,7 @@ function O(e) {
     {
       results: W,
       updateSearchText: V
-    } = (0, b.s)({
+    } = (0, f.s)({
       selectedDestinations: F,
       includeMissingDMs: true
     }),
@@ -83,22 +83,22 @@ function O(e) {
       })
     }, [G]),
     X = r.useCallback(async e => {
-      if (null == w) return;
-      let t = (0, x.P)(Z, w, D);
-      N(true), (await Promise.all(e.map(f.qx))).filter(g.lm).forEach(async e => {
+      if (null == C) return;
+      let t = (0, x.P)(_, C, D);
+      N(true), (await Promise.all(e.map(b.qx))).filter(g.lm).forEach(async e => {
         let n = h.Z.getChannel(e);
         null != n && await u.Z.sendMessage(e, d.ZP.parse(n, t), false, {
           location: j.dy.ACTIVITY_SHARE
         })
       }), (0, i.showToast)((0, i.createToast)(v.intl.formatToPlainString(v.t.jQULqL, {
-        applicationName: w.name
-      }), i.ToastType.SUCCESS)), T(true), E()
-    }, [Z, D, E, T, w]),
+        applicationName: C.name
+      }), i.ToastType.SUCCESS)), L(true), Z()
+    }, [_, D, Z, L, C]),
     B = r.useCallback(() => {
       (0, p.JG)(D, () => {
-        L(), (0, i.showToast)((0, i.createToast)(v.intl.string(v.t.t5VZ88), i.ToastType.SUCCESS))
+        E(), (0, i.showToast)((0, i.createToast)(v.intl.string(v.t.t5VZ88), i.ToastType.SUCCESS))
       })
-    }, [D, L]),
+    }, [D, E]),
     Y = W.length > 0 ? (0, l.jsx)(y.Q, {
       paddingBottom: 8,
       paddingTop: 8,
@@ -119,10 +119,10 @@ function O(e) {
       })]
     });
   return (0, l.jsx)(s.Modal, {
-    transitionState: C,
-    onClose: E,
+    transitionState: T,
+    onClose: Z,
     title: v.intl.string(v.t.r9qKow),
-    subtitle: Z,
+    subtitle: _,
     size: "md",
     input: (0, l.jsx)(i.E1j, {
       ref: z,

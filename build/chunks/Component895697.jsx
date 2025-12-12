@@ -29,8 +29,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk915014 = require("./915014.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk773008 = require("./773008.js"),
-  Chunk155493 = require("./155493.js");
+  Chunk57842 = require("./57842.js"),
+  Chunk116649 = require("./116649.js");
 
 function P(e) {
   let {
@@ -45,10 +45,10 @@ function P(e) {
   } = e, j = c.ZP.getName(null == R ? true : R.id, x, t), M = (0, i.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getUserProfile(t.id)) ? true : e.application
-  }), k = (0, i.e7)([o.Z, s.Z], () => o.Z.getChannel(s.Z.getChannelId())), U = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation), G = (0, d.b)({
+  }), k = (0, i.e7)([a.Z, s.Z], () => a.Z.getChannel(s.Z.getChannelId())), U = (0, i.e7)([l.Z], () => l.Z.hidePersonalInformation), G = (0, d.b)({
     location: "BotUserProfilePopoutBody"
   });
-  return (0, r.jsxs)(a.Ttm, {
+  return (0, r.jsxs)(o.Ttm, {
     fade: true,
     className: N.body,
     children: [(0, r.jsx)(m.Z, {

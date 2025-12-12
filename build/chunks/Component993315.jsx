@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk313789 = require("./313789.js"),
-  Chunk393681 = require("./393681.jsx"),
+  Chunk736752 = require("./736752.jsx"),
   Chunk518596 = require("./518596.jsx"),
   Chunk838436 = require("./838436.jsx"),
   Chunk526761 = require("./526761.js"),
@@ -24,7 +24,7 @@ function f() {
         onClick: () => {
           (0, Chunk518596.openUserSettings)(Chunk313789.n.ACCOUNT_PANEL, {
             section: Chunk981631.oAB.ACCOUNT,
-            subsection: Chunk393681.D.SECURITY,
+            subsection: Chunk736752.D.SECURITY,
             scrollPosition: Chunk526761.KQ.AccountScrollPositions.DISABLE_ACCOUNT
           })
         }

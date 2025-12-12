@@ -58,7 +58,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk524484 = require("./524484.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk858329 = require("./858329.js");
+  Chunk7504 = require("./7504.js");
 let ei = [Chunk354459.fO.ACTIVITY],
   es = Chunk473749.memo(e => {
     var t, l, s, o, c, I, y;
@@ -154,8 +154,8 @@ let ei = [Chunk354459.fO.ACTIVITY],
         null == C || C(Z, e, t, l)
       }, [C, Z]),
       e7 = null,
-      e1 = null,
-      e4 = "";
+      e4 = null,
+      e1 = "";
     switch (Z.type) {
       case $.fO.STREAM:
         e7 = (0, n.jsx)(F.Z, {
@@ -169,14 +169,14 @@ let ei = [Chunk354459.fO.ACTIVITY],
           focused: ef,
           idle: ex,
           controlsBottom: eT
-        }), e1 = (0, n.jsx)(F._, {
+        }), e4 = (0, n.jsx)(F._, {
           participant: Z,
           selected: eu,
           width: ea,
           focused: ef,
           idle: ex,
           premiumIndicator: false
-        }), e4 = el.intl.formatToPlainString(el.t.gHPz3Q, {
+        }), e1 = el.intl.formatToPlainString(el.t.gHPz3Q, {
           streamerName: Z.user.username
         });
         break;
@@ -195,10 +195,10 @@ let ei = [Chunk354459.fO.ACTIVITY],
           ignored: eh,
           noVideoRender: ep || ew,
           pulseSpeakingIndicator: ey
-        }), e1 = (0, n.jsx)(Q.T, {
+        }), e4 = (0, n.jsx)(Q.T, {
           participant: Z,
           channelId: es.id
-        }), e4 = el.intl.formatToPlainString(el.t["iC/x/Q"], {
+        }), e1 = el.intl.formatToPlainString(el.t["iC/x/Q"], {
           username: Z.user.username
         });
         break;
@@ -209,7 +209,7 @@ let ei = [Chunk354459.fO.ACTIVITY],
           selected: eu,
           channel: es,
           width: ea
-        }), e4 = el.intl.formatToPlainString(el.t.YCvOsO, {
+        }), e1 = el.intl.formatToPlainString(el.t.YCvOsO, {
           activityName: null == eV ? true : eV.name
         });
         break;
@@ -256,7 +256,7 @@ let ei = [Chunk354459.fO.ACTIVITY],
             style: G,
             participantUserId: eA,
             children: (0, n.jsxs)(u.kL8, {
-              "aria-label": e4,
+              "aria-label": e1,
               className: en.tileChild,
               onDoubleClick: e$,
               onContextMenu: e => e0(e, Z.type === $.fO.STREAM),
@@ -283,7 +283,7 @@ let ei = [Chunk354459.fO.ACTIVITY],
                 })
               }) : null, e7, ed ? null : (0, n.jsx)("div", {
                 className: en.indicators,
-                children: e1
+                children: e4
               }), eu ? (0, n.jsx)("div", {
                 className: en.selectedScreen,
                 children: (0, n.jsx)(e9, {

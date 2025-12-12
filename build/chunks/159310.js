@@ -1,9 +1,0 @@
-/** Chunk was on 40184 **/
-/** chunk id: 159310, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  root: "c8dbe9074540e86d-root",
-  sprite: "c8dbe9074540e86d-sprite",
-  participant: "c8dbe9074540e86d-participant",
-  transition: "c8dbe9074540e86d-transition",
-  spriteWrapper: "c8dbe9074540e86d-spriteWrapper"
-}

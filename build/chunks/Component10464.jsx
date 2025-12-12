@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
-  Chunk386661 = require("./386661.js");
+  o = require.n(Chunk120356),
+  Chunk677351 = require("./677351.js");
 
 function s(e) {
   let {
@@ -19,13 +19,13 @@ function s(e) {
   if ("stacked" === n) {
     let e = Math.min(t.length, 2);
     return (0, r.jsx)("div", {
-      className: a()(o.thumbnailStackStacked, i, {
-        [o["stacked-1"]]: 1 === e,
-        [o["stacked-2"]]: 2 === e
+      className: o()(a.thumbnailStackStacked, i, {
+        [a["stacked-1"]]: 1 === e,
+        [a["stacked-2"]]: 2 === e
       }),
       children: t.slice(0, 2).map((e, t) => (0, r.jsx)("img", {
         alt: "Clip preview",
-        className: o.thumbnailStacked,
+        className: a.thumbnailStacked,
         src: e,
         "data-index": t
       }, "".concat(e, "-").concat(t)))
@@ -33,15 +33,15 @@ function s(e) {
   }
   let s = Math.min(t.length, 4);
   return (0, r.jsx)("div", {
-    className: a()(o.thumbnailStackGallery, i, {
-      [o["gallery-height-1"]]: 1 === s,
-      [o["gallery-height-2"]]: 2 === s,
-      [o["gallery-height-3"]]: 3 === s,
-      [o["gallery-height-max"]]: s >= 4
+    className: o()(a.thumbnailStackGallery, i, {
+      [a["gallery-height-1"]]: 1 === s,
+      [a["gallery-height-2"]]: 2 === s,
+      [a["gallery-height-3"]]: 3 === s,
+      [a["gallery-height-max"]]: s >= 4
     }),
     children: t.slice(0, 4).map((e, t) => (0, r.jsx)("img", {
       alt: "Clip preview",
-      className: o.thumbnailGallery,
+      className: a.thumbnailGallery,
       src: e,
       "data-index": t
     }, "".concat(e, "-").concat(t))).reverse()

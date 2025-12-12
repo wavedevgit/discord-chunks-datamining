@@ -17,17 +17,17 @@ var Chunk388032 = require("./388032.jsx");
 function l(e) {
   switch (e) {
     case (0, i.Fw)("PRIMARY_400"):
-      return a.q.ACCENT;
+      return o.q.ACCENT;
     case (0, i.Fw)("GREEN_360"):
-      return a.q.GREEN;
+      return o.q.GREEN;
     case (0, i.Fw)("YELLOW_360"):
-      return a.q.YELLOW;
+      return o.q.YELLOW;
     case (0, i.Fw)("ORANGE_345"):
-      return a.q.ORANGE;
+      return o.q.ORANGE;
     case (0, i.Fw)("RED_400"):
-      return a.q.RED;
+      return o.q.RED;
     default:
-      return a.q.NONE
+      return o.q.NONE
   }
 }
 

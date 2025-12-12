@@ -15,7 +15,7 @@ var Chunk763472 = require("./763472.js"),
   Chunk732380 = require("./732380.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk251806 = require("./251806.js");
+  Chunk704543 = require("./704543.js");
 async function p(e) {
   let {
     activity: t,
@@ -25,11 +25,11 @@ async function p(e) {
   try {
     let e = await (0, i.sd)(t, n.id);
     if (e.button_urls.length <= r) return;
-    let a = e.button_urls[r];
-    if ("string" != typeof a) return;
-    let l = s.Z.safeParseWithQuery(a);
+    let o = e.button_urls[r];
+    if ("string" != typeof o) return;
+    let l = s.Z.safeParseWithQuery(o);
     if ((null == l ? true : l.protocol) == null || (null == l ? true : l.hostname) == null) return;
-    (0, o.q)({
+    (0, a.q)({
       href: s.Z.format(l),
       trusted: false
     })
@@ -42,13 +42,13 @@ function _(e) {
     activity: n,
     onAction: i
   } = e, {
-    themeType: o
+    themeType: a
   } = (0, l.z)();
   if ((null == n ? true : n.buttons) == null || n.buttons.length < 1) return null;
-  let s = (0, a.Z)(n);
-  return o === u.l.MODAL_V2 ? (0, r.jsx)("div", {
+  let s = (0, o.Z)(n);
+  return a === u.l.MODAL_V2 ? (0, r.jsx)("div", {
     className: f.customButtons,
-    children: n.buttons.map((e, a) => (0, r.jsx)(c.O1, {
+    children: n.buttons.map((e, o) => (0, r.jsx)(c.O1, {
       text: s ? d.intl.string(d.t.I6JG46) : e,
       onClick: e => {
         e.stopPropagation(), null == i || i({
@@ -56,13 +56,13 @@ function _(e) {
         }), p({
           user: t,
           activity: n,
-          index: a
+          index: o
         })
       }
-    }, a))
+    }, o))
   }) : (0, r.jsx)("div", {
     className: f.customButtons,
-    children: n.buttons.map((e, a) => (0, r.jsx)(c.O1, {
+    children: n.buttons.map((e, o) => (0, r.jsx)(c.O1, {
       text: s ? d.intl.string(d.t.I6JG46) : e,
       fullWidth: true,
       onClick: e => {
@@ -71,9 +71,9 @@ function _(e) {
         }), p({
           user: t,
           activity: n,
-          index: a
+          index: o
         })
       }
-    }, a))
+    }, o))
   })
 }

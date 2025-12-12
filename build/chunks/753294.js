@@ -16,7 +16,7 @@ module.exports = function(e) {
   return n.shouldComponentUpdate = function(e) {
     return this.props.text !== e.text || this.props.editorState.getSelection().getHasFocus() !== e.editorState.getSelection().getHasFocus()
   }, n.render = function() {
-    var e = a({
+    var e = o({
         "public/DraftEditorPlaceholder/root": true,
         "public/DraftEditorPlaceholder/hasFocus": this.props.editorState.getSelection().getHasFocus()
       }),
@@ -26,7 +26,7 @@ module.exports = function(e) {
     return i.createElement("div", {
       className: e
     }, i.createElement("div", {
-      className: a("public/DraftEditorPlaceholder/inner"),
+      className: o("public/DraftEditorPlaceholder/inner"),
       id: this.props.accessibilityID,
       style: t
     }, this.props.text))

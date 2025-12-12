@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,7 +49,7 @@ class f extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return s
   }
 }
-o(f, "displayName", "StageMusicStore"), o(f, "persistKey", "StageMusicStore");
+a(f, "displayName", "StageMusicStore"), a(f, "persistKey", "StageMusicStore");
 let p = new f(Chunk570140.Z, {
   STAGE_MUSIC_MUTE: c,
   STAGE_MUSIC_PLAY: u,

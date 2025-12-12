@@ -13,13 +13,13 @@ var Chunk473749 = require("./473749.js"),
 
 function s() {
   for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-  let [i, a] = Chunk473749.useState(true), [o, s] = Chunk473749.useState(true), l = Chunk473749.useRef(null);
+  let [i, o] = Chunk473749.useState(true), [a, s] = Chunk473749.useState(true), l = Chunk473749.useRef(null);
   return c(l, e => {
     let {
       width: t,
       height: n
     } = e;
-    s(n), a(t)
+    s(n), o(t)
   }, exports), {
     ref: l,
     width: Chunk374470,
@@ -46,9 +46,9 @@ function l() {
 function c(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [],
     i = r.useCallback(n => {
-      var r, i, a, o, s, l;
+      var r, i, o, a, s, l;
       let c = null == n || null == (i = n.borderBoxSize) || null == (r = i[0]) ? true : r.inlineSize,
-        u = null == n || null == (o = n.borderBoxSize) || null == (a = o[0]) ? true : a.blockSize;
+        u = null == n || null == (a = n.borderBoxSize) || null == (o = a[0]) ? true : o.blockSize;
       if (null == c || null == u) {
         let t = e.current;
         if (null != t) {
@@ -61,5 +61,5 @@ function c(e, t) {
         height: u
       })
     }, [e, t]);
-  (0, a.s)(e, i, n)
+  (0, o.s)(e, i, n)
 }

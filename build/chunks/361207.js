@@ -57,17 +57,17 @@ function v(e, t, n) {
   let r = null != n ? n.toString() : null;
   switch (t) {
     case "iOS":
-      return (0, a.ZP)(null != r ? r : "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746", {
+      return (0, o.ZP)(null != r ? r : "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746", {
         utmSource: e,
-        fingerprint: o.default.getFingerprint(),
-        attemptId: (0, a.WS)()
+        fingerprint: a.default.getFingerprint(),
+        attemptId: (0, o.WS)()
       });
     case "Android":
-      return (0, a.ZP)(null != r ? r : "https://play.google.com/store/apps/details", {
+      return (0, o.ZP)(null != r ? r : "https://play.google.com/store/apps/details", {
         utmSource: e,
         id: "com.discord",
-        fingerprint: o.default.getFingerprint(),
-        attemptId: (0, a.WS)()
+        fingerprint: a.default.getFingerprint(),
+        attemptId: (0, o.WS)()
       });
     default:
       return null != r ? r : "https://www.discord.com"

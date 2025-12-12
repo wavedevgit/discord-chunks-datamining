@@ -1,4 +1,4 @@
-/** Chunk was on 93671 **/
+/** Chunk was on 74240 **/
 /** chunk id: 200305, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -30,89 +30,89 @@ var Chunk54381 = require("./54381.js"),
   Chunk592286 = require("./592286.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk161752 = require("./161752.js"),
+  Chunk445609 = require("./445609.js"),
   Chunk419851 = require("./419851.js"),
   Chunk246403 = require("./246403.js");
-let M = e => {
+let w = e => {
     let {
       headerId: t,
       email: n,
       password: l,
       setEmail: i,
-      setPassword: a,
+      setPassword: s,
       emailError: o,
       passwordError: c,
       hasManualFormFields: u,
       isMember: d
     } = e;
     return (0, r.jsxs)("div", {
-      className: R.content,
+      className: E.content,
       children: [(0, r.jsx)("div", {
-        className: R.applicationIconContainer,
+        className: E.applicationIconContainer,
         children: (0, r.jsx)("img", {
-          alt: E.intl.string(E.t.ewGfjv),
-          src: S,
-          className: R.applicationIcon
+          alt: T.intl.string(T.t.ewGfjv),
+          src: R,
+          className: E.applicationIcon
         })
-      }), (0, r.jsx)(s.Heading, {
+      }), (0, r.jsx)(a.Heading, {
         id: t,
         variant: "heading-xl/semibold",
-        className: R.header,
-        children: u && !d ? E.intl.string(E.t.qQYF6z) : E.intl.string(E.t.MhcDLz)
-      }), (0, r.jsx)(s.Text, {
+        className: E.header,
+        children: u && !d ? T.intl.string(T.t.qQYF6z) : T.intl.string(T.t.MhcDLz)
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: E.intl.string(E.t["SPlaR/"])
+        children: T.intl.string(T.t["SPlaR/"])
       }), (0, r.jsx)("hr", {
-        className: R.divider
+        className: E.divider
       }), (0, r.jsx)("div", {
-        className: R.formItem,
-        children: (0, r.jsx)(s.oil, {
-          label: E.intl.string(E.t.dI4d4S),
+        className: E.formItem,
+        children: (0, r.jsx)(a.oil, {
+          label: T.intl.string(T.t.dI4d4S),
           value: n,
           error: o,
           onChange: i,
           autoFocus: true
         })
       }), (0, r.jsx)("div", {
-        className: R.formItem,
-        children: (0, r.jsx)(s.oil, {
-          label: E.intl.string(E.t["CIGa+7"]),
+        className: E.formItem,
+        children: (0, r.jsx)(a.oil, {
+          label: T.intl.string(T.t["CIGa+7"]),
           type: "password",
           value: l,
           error: c,
-          onChange: a
+          onChange: s
         })
       })]
     })
   },
-  _ = e => {
+  M = e => {
     let {
       headerId: t,
       email: n
     } = e;
     return (0, r.jsxs)("div", {
-      className: R.content,
+      className: E.content,
       children: [(0, r.jsx)("img", {
-        alt: E.intl.string(E.t.wNAblz),
-        src: w,
-        className: R.applicationIcon
-      }), (0, r.jsx)(s.Heading, {
+        alt: T.intl.string(T.t.wNAblz),
+        src: S,
+        className: E.applicationIcon
+      }), (0, r.jsx)(a.Heading, {
         id: t,
         variant: "heading-xl/semibold",
-        className: R.header,
-        children: E.intl.format(E.t.v01XgL, {
+        className: E.header,
+        children: T.intl.format(T.t.v01XgL, {
           email: n
         })
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: E.intl.string(E.t["/Hw5ad"])
+        children: T.intl.string(T.t["/Hw5ad"])
       }), (0, r.jsx)("div", {
-        className: R.resendButtonContainer,
-        children: (0, r.jsx)(s.Avr, {
+        className: E.resendButtonContainer,
+        children: (0, r.jsx)(a.Avr, {
           onClick: () => o.Z.verifyResend(),
-          text: E.intl.string(E.t["MLk/mK"])
+          text: T.intl.string(T.t["MLk/mK"])
         })
       })]
     })
@@ -122,17 +122,17 @@ let M = e => {
     let {
       guildId: n,
       formState: l,
-      updateFormState: a,
-      isPreview: s = false,
+      updateFormState: s,
+      isPreview: a = false,
       disableVerification: o = false
     } = e, c = (0, i.e7)([C.Z], () => C.Z.get(n));
     if (null == c) return null;
     let u = null != (t = null != l ? l : null == c ? true : c.formFields) ? t : [],
-      d = s ? F.W : F.r;
+      d = a ? y.W : y.r;
     return (0, r.jsx)(d, {
       guildId: n,
       formFields: u,
-      updateFormFields: a,
+      updateFormFields: s,
       disableVerification: o
     })
   },
@@ -142,24 +142,24 @@ let M = e => {
       headerId: n,
       formState: l,
       updateFormState: i,
-      guildName: a,
+      guildName: s,
       hasManualFormFields: o,
       disableVerification: c,
       isPreview: u = false
     } = e;
     return (0, r.jsxs)("div", {
-      className: R.content,
-      children: [(0, r.jsx)(s.Heading, {
+      className: E.content,
+      children: [(0, r.jsx)(a.Heading, {
         id: n,
         variant: "heading-xxl/normal",
-        className: R.header,
-        children: o ? E.intl.format(E.t.cgX47Z, {
-          guildName: a
-        }) : E.intl.string(E.t.DrEEC8)
-      }), (0, r.jsx)(s.Text, {
+        className: E.header,
+        children: o ? T.intl.format(T.t.cgX47Z, {
+          guildName: s
+        }) : T.intl.string(T.t.DrEEC8)
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: o ? E.intl.string(E.t["3smSPP"]) : E.intl.string(E.t["7D3C5p"])
+        children: o ? T.intl.string(T.t["3smSPP"]) : T.intl.string(T.t["7D3C5p"])
       }), (0, r.jsx)(A, {
         guildId: t,
         formState: l,
@@ -170,112 +170,112 @@ let M = e => {
     })
   },
   Z = e => {
-    var t, n, o, F;
+    var t, n, o, y;
     let {
-      verificationForm: S,
-      headerId: w,
+      verificationForm: R,
+      headerId: S,
       guildId: A,
       onClose: Z,
       onComplete: k,
       isPreview: L = false
-    } = e, B = (0, N.N0)(A, null == S ? true : S.guild, L), {
+    } = e, B = (0, I.N0)(A, null == R ? true : R.guild, L), {
       guildProfile: D,
       fetchGuildProfile: G
-    } = (0, m.u)(A), U = (0, i.e7)([g.ZP, x.default], () => g.ZP.isMember(A, x.default.getId())), [H, J] = l.useState(false);
+    } = (0, m.u)(A), U = (0, i.e7)([p.ZP, h.default], () => p.ZP.isMember(A, h.default.getId())), [H, J] = l.useState(false);
     l.useEffect(() => {
       U && !H && null == D && G().finally(() => J(true))
     }, [G, D, H, U]);
-    let K = null == S ? true : S.formFields.some(e => e.field_type !== O.QJ.TERMS),
-      [V, Q] = l.useState(null != (o = null == S ? true : S.formFields) ? o : []),
+    let K = null == R ? true : R.formFields.some(e => e.field_type !== _.QJ.TERMS),
+      [V, Q] = l.useState(null != (o = null == R ? true : R.formFields) ? o : []),
       [z, W] = l.useState(false),
       [Y, X] = l.useState(null),
       [$, ee] = l.useState(""),
       [et, en] = l.useState(""),
       [er, el] = l.useState(null),
-      [ei, ea] = l.useState(null),
+      [ei, es] = l.useState(null),
       {
-        storeMemberCount: es,
+        storeMemberCount: ea,
         storeOnlineCount: eo
-      } = (0, i.cj)([h.Z], () => ({
-        storeMemberCount: h.Z.getMemberCount(A),
-        storeOnlineCount: h.Z.getOnlineCount(A)
+      } = (0, i.cj)([g.Z], () => ({
+        storeMemberCount: g.Z.getMemberCount(A),
+        storeOnlineCount: g.Z.getOnlineCount(A)
       })),
-      ec = null != eo ? eo : null == S || null == (t = S.guild) ? true : t.approximate_presence_count,
-      eu = null != es ? es : null == S || null == (n = S.guild) ? true : n.approximate_member_count,
+      ec = null != eo ? eo : null == R || null == (t = R.guild) ? true : t.approximate_presence_count,
+      eu = null != ea ? ea : null == R || null == (n = R.guild) ? true : n.approximate_member_count,
       ed = null != K && K;
     l.useEffect(() => {
-      null != S && Q(S.formFields)
-    }, [S]), l.useEffect(() => {
-      null != A && v.default.track(T.rMx.OPEN_MODAL, {
-        type: P.N4,
+      null != R && Q(R.formFields)
+    }, [R]), l.useEffect(() => {
+      null != A && b.default.track(P.rMx.OPEN_MODAL, {
+        type: F.N4,
         guild_id: A
       })
     }, [A]);
-    let em = (0, i.e7)([p.default], () => p.default.getCurrentUser()),
+    let em = (0, i.e7)([v.default], () => v.default.getCurrentUser()),
       {
         currentStep: ef,
-        setCurrentStep: eb
-      } = (0, N.k3)(em);
-    (0, N.lk)(V);
-    let ex = null == em ? true : em.verified,
-      eh = null == em ? true : em.isPhoneVerified(),
+        setCurrentStep: ex
+      } = (0, I.k3)(em);
+    (0, I.lk)(V);
+    let eh = null == em ? true : em.verified,
+      eg = null == em ? true : em.isPhoneVerified(),
       {
-        invalidFormFields: eg,
-        hasInvalidTermsFormField: ep
+        invalidFormFields: ep,
+        hasInvalidTermsFormField: ev
       } = l.useMemo(() => ({
-        invalidFormFields: V.some(e => !(0, I.OA)(e)),
-        hasInvalidTermsFormField: V.some(e => e.field_type === O.QJ.TERMS && !(0, I.OA)(e))
+        invalidFormFields: V.some(e => !(0, O.OA)(e)),
+        hasInvalidTermsFormField: V.some(e => e.field_type === _.QJ.TERMS && !(0, O.OA)(e))
       }), [V]),
-      ev = l.useMemo(() => {
-        if (null == k || eg) returntrue;
+      eb = l.useMemo(() => {
+        if (null == k || ep) returntrue;
         if (ed || (null == em ? true : em.isStaff())) returnfalse;
         switch (null == B ? true : B.verificationLevel) {
-          case T.sFg.VERY_HIGH:
-            return !eh;
-          case T.sFg.LOW:
-          case T.sFg.MEDIUM:
-          case T.sFg.HIGH:
-            return !ex && !eh;
-          case T.sFg.NONE:
+          case P.sFg.VERY_HIGH:
+            return !eg;
+          case P.sFg.LOW:
+          case P.sFg.MEDIUM:
+          case P.sFg.HIGH:
+            return !eh && !eg;
+          case P.sFg.NONE:
           default:
             returnfalse
         }
-      }, [k, eg, ed, em, null == B ? true : B.verificationLevel, eh, ex]),
+      }, [k, ep, ed, em, null == B ? true : B.verificationLevel, eg, eh]),
       ej = (0, i.e7)([u.Z], () => u.Z.useReducedMotion),
       eC = l.useRef(null),
-      eO = function(e) {
+      e_ = function(e) {
         let t = null != e ? j.ZP.getGuildIconURL({
             id: null == e ? true : e.id,
             icon: null == e ? true : e.icon,
             size: 40
           }) : true,
-          n = (0, s.dQu)(s.TVs.colors.BACKGROUND_BASE_LOWER).hex(),
-          r = (0, s.dQu)(s.TVs.colors.BACKGROUND_BASE_LOWEST).hex(),
-          [l, i, a] = (0, d.Cf)(t, n, false);
-        return "linear-gradient(-45deg, ".concat(l, ", ").concat(null != a ? a : r, ")")
+          n = (0, a.dQu)(a.TVs.colors.BACKGROUND_BASE_LOWER).hex(),
+          r = (0, a.dQu)(a.TVs.colors.BACKGROUND_BASE_LOWEST).hex(),
+          [l, i, s] = (0, d.Cf)(t, n, false);
+        return "linear-gradient(-45deg, ".concat(l, ", ").concat(null != s ? s : r, ")")
       }(B),
-      eI = function(e) {
-        let t = (0, s.dQu)(s.TVs.colors.BORDER_SUBTLE).hex();
+      eO = function(e) {
+        let t = (0, a.dQu)(a.TVs.colors.BORDER_SUBTLE).hex();
         return "linear-gradient(-45deg, ".concat(t, ", ").concat(e, ")")
-      }(null != (F = null == D ? true : D.brandColorPrimary) ? F : "");
-    if (null == B) return (0, r.jsx)(s.$jN, {});
-    let eN = async () => {
-      W(true), el(null), ea(null);
+      }(null != (y = null == D ? true : D.brandColorPrimary) ? y : "");
+    if (null == B) return (0, r.jsx)(a.$jN, {});
+    let eI = async () => {
+      W(true), el(null), es(null);
       try {
         await (0, c.S2)({
           email: $,
           password: et
-        }), W(false), eb(N.KJ.EMAIL_CONFIRMATION)
+        }), W(false), ex(I.KJ.EMAIL_CONFIRMATION)
       } catch (n) {
         var e, t;
-        el(null == n || null == (e = n.body) ? true : e.email), ea(null == n || null == (t = n.body) ? true : t.password)
+        el(null == n || null == (e = n.body) ? true : e.email), es(null == n || null == (t = n.body) ? true : t.password)
       } finally {
         W(false)
       }
-    }, ey = async () => {
+    }, eN = async () => {
       var e, t, n, r;
       W(true), X(null);
-      let l = null != em ? g.ZP.getMember(A, em.id) : null;
+      let l = null != em ? p.ZP.getMember(A, em.id) : null;
       if (null != l && !l.isPending) {
         null == Z || Z(true);
         return
@@ -298,7 +298,7 @@ let M = e => {
             })
           }
           return e
-        }({}, null != S ? S : C.t), t = {
+        }({}, null != R ? R : C.t), t = {
           formFields: V
         }, t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -312,49 +312,49 @@ let M = e => {
         }), e))), null == Z || Z(true)
       } catch (t) {
         let e = null == t ? true : t.body;
-        (null == e || null == (n = e.errors) ? true : n.version) != null || (null == e || null == (r = e.errors) ? true : r.form_fields) != null ? X(E.intl.string(E.t.PD09Sl)) : X(null == e ? true : e.message)
+        (null == e || null == (n = e.errors) ? true : n.version) != null || (null == e || null == (r = e.errors) ? true : r.form_fields) != null ? X(T.intl.string(T.t.PD09Sl)) : X(null == e ? true : e.message)
       } finally {
         W(false)
       }
-    }, eF = null != D;
+    }, ey = null != D;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: R.guildSidebar,
+        className: E.guildSidebar,
         children: [(0, r.jsx)("div", {
           style: {
-            background: eF ? eI : eO
+            background: ey ? eO : e_
           },
-          className: R.sidebarGradientOverlay
-        }), eF ? (0, r.jsx)(f.ZP, {
+          className: E.sidebarGradientOverlay
+        }), ey ? (0, r.jsx)(f.ZP, {
           profile: D,
-          className: R.guildProfile,
+          className: E.guildProfile,
           disableCTA: true,
           disableGuildNameClick: true
-        }) : (0, r.jsx)(b.Z, {
-          className: R.guildProfile,
+        }) : (0, r.jsx)(x.Z, {
+          className: E.guildProfile,
           guild: B,
           presenceCount: ec,
           memberCount: eu
         })]
       }), (0, r.jsx)("div", {
-        className: R.modal,
+        className: E.modal,
         children: (0, r.jsxs)("div", {
-          className: R.mainContentWrapper,
+          className: E.mainContentWrapper,
           ref: eC,
-          children: [(0, r.jsx)(y.Z, {
-            className: R.modalContent,
+          children: [(0, r.jsx)(N.Z, {
+            className: E.modalContent,
             containerRef: eC,
             faderSize: 180,
             faderEdgeThreshold: 48,
-            children: (0, r.jsx)(s.qBt, {
-              className: R.sequencer,
-              steps: [N.KJ.CLAIM_ACCOUNT, N.KJ.EMAIL_CONFIRMATION, N.KJ.VERIFICATION_FORM],
+            children: (0, r.jsx)(a.qBt, {
+              className: E.sequencer,
+              steps: [I.KJ.CLAIM_ACCOUNT, I.KJ.EMAIL_CONFIRMATION, I.KJ.VERIFICATION_FORM],
               step: ef,
               children: (() => {
                 switch (ef) {
-                  case N.KJ.CLAIM_ACCOUNT:
-                    return (0, r.jsx)(M, {
-                      headerId: w,
+                  case I.KJ.CLAIM_ACCOUNT:
+                    return (0, r.jsx)(w, {
+                      headerId: S,
                       email: $,
                       password: et,
                       setEmail: ee,
@@ -364,14 +364,14 @@ let M = e => {
                       hasManualFormFields: K,
                       isMember: U
                     });
-                  case N.KJ.EMAIL_CONFIRMATION:
-                    return (0, r.jsx)(_, {
-                      headerId: w,
+                  case I.KJ.EMAIL_CONFIRMATION:
+                    return (0, r.jsx)(M, {
+                      headerId: S,
                       email: $
                     });
-                  case N.KJ.VERIFICATION_FORM:
+                  case I.KJ.VERIFICATION_FORM:
                     return (0, r.jsx)(q, {
-                      headerId: w,
+                      headerId: S,
                       guildId: A,
                       guildName: B.name,
                       formState: V,
@@ -386,61 +386,61 @@ let M = e => {
             })
           }), (() => {
             switch (ef) {
-              case N.KJ.CLAIM_ACCOUNT:
+              case I.KJ.CLAIM_ACCOUNT:
                 return (0, r.jsxs)("div", {
-                  className: R.footer,
+                  className: E.footer,
                   children: [(0, r.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": true,
-                    className: R.submitButton,
-                    children: (0, r.jsx)(s.Button, {
+                    className: E.submitButton,
+                    children: (0, r.jsx)(a.Button, {
                       variant: "primary",
-                      text: E.intl.string(E.t.PDTjLN),
+                      text: T.intl.string(T.t.PDTjLN),
                       type: "submit",
                       loading: z,
-                      onClick: eN,
+                      onClick: eI,
                       disabled: 0 === $.length || 0 === et.length
                     })
-                  }), (0, r.jsx)(s.Text, {
+                  }), (0, r.jsx)(a.Text, {
                     variant: "text-xs/normal",
                     color: "text-default",
-                    children: E.intl.string(E.t["9GPiR6"])
+                    children: T.intl.string(T.t["9GPiR6"])
                   })]
                 });
-              case N.KJ.EMAIL_CONFIRMATION:
+              case I.KJ.EMAIL_CONFIRMATION:
                 return null;
-              case N.KJ.VERIFICATION_FORM:
+              case I.KJ.VERIFICATION_FORM:
                 return (0, r.jsxs)("div", {
-                  className: R.footer,
-                  children: [(0, r.jsx)(a.u, {
+                  className: E.footer,
+                  children: [(0, r.jsx)(s.u, {
                     asContainer: true,
-                    shouldShow: ev && eg && K,
-                    text: ep ? E.intl.string(E.t.PLNbh3) : E.intl.string(E.t.brWmV2),
+                    shouldShow: eb && ep && K,
+                    text: ev ? T.intl.string(T.t.PLNbh3) : T.intl.string(T.t.brWmV2),
                     children: (0, r.jsx)("div", {
                       "data-button-hoisted-classname-wrapper": true,
-                      className: R.submitButton,
-                      children: (0, r.jsx)(s.Button, {
+                      className: E.submitButton,
+                      children: (0, r.jsx)(a.Button, {
                         variant: "active",
-                        text: E.intl.string(E.t.geKm7t),
+                        text: T.intl.string(T.t.geKm7t),
                         type: "submit",
                         loading: z,
-                        onClick: ey,
-                        disabled: ev
+                        onClick: eN,
+                        disabled: eb
                       })
                     })
-                  }), null != Y && (0, r.jsx)(s.Text, {
+                  }), null != Y && (0, r.jsx)(a.Text, {
                     variant: "text-xs/normal",
                     color: "text-feedback-critical",
                     children: Y
                   }), null == Y && K && (0, r.jsxs)("div", {
-                    className: R.disclaimerFooter,
-                    children: [(0, r.jsx)(s.Text, {
+                    className: E.disclaimerFooter,
+                    children: [(0, r.jsx)(a.Text, {
                       color: "text-default",
                       variant: "text-xs/normal",
-                      children: E.intl.string(E.t["+fPCTZ"])
-                    }), (0, r.jsx)(s.Text, {
+                      children: T.intl.string(T.t["+fPCTZ"])
+                    }), (0, r.jsx)(a.Text, {
                       color: "text-default",
                       variant: "text-xs/normal",
-                      children: E.intl.string(E.t.VjgH0c)
+                      children: T.intl.string(T.t.VjgH0c)
                     })]
                   })]
                 })

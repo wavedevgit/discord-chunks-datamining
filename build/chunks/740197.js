@@ -6,14 +6,14 @@ require.d(exports, {
   Hg: () => u,
   PW: () => p,
   S5: () => i,
-  ZA: () => a,
+  ZA: () => o,
   l0: () => f
 }), require("./358797.js"), require("./539854.js");
 var Chunk65154 = require("./65154.js");
 let i = null != navigator.mediaDevices && null != navigator.mediaDevices.enumerateDevices,
-  a = i && "setSinkId" in HTMLAudioElement.prototype;
+  o = i && "setSinkId" in HTMLAudioElement.prototype;
 
-function o(e) {
+function a(e) {
   return {
     id: r.w5,
     type: e,
@@ -23,7 +23,7 @@ function o(e) {
 }
 
 function s() {
-  return [o(Chunk65154.h7.AUDIO_INPUT), o(Chunk65154.h7.AUDIO_OUTPUT), o(Chunk65154.h7.VIDEO_INPUT)]
+  return [a(Chunk65154.h7.AUDIO_INPUT), a(Chunk65154.h7.AUDIO_OUTPUT), a(Chunk65154.h7.VIDEO_INPUT)]
 }
 
 function l(e, t) {
@@ -45,26 +45,26 @@ function c() {
           returnfalse
       }
     }).map(e => {
-      let a;
+      let o;
       switch (e.kind) {
         case r.h7.AUDIO_INPUT:
-          a = t++;
+          o = t++;
           break;
         case r.h7.AUDIO_OUTPUT:
-          a = n++;
+          o = n++;
           break;
         case r.h7.VIDEO_INPUT:
         default:
-          a = i++
+          o = i++
       }
       return {
         id: e.deviceId,
         type: e.kind,
-        index: a,
-        name: null != e.label && "" !== e.label ? e.label : 0 === a ? "Default" : "Device ".concat(a)
+        index: o,
+        name: null != e.label && "" !== e.label ? e.label : 0 === o ? "Default" : "Device ".concat(o)
       }
     })
-  }).then(e => (a || (e = e.filter(e => e.type !== r.h7.AUDIO_OUTPUT)).push(o(r.h7.AUDIO_OUTPUT)), e)).catch(s) : new Promise(e => {
+  }).then(e => (o || (e = e.filter(e => e.type !== r.h7.AUDIO_OUTPUT)).push(a(r.h7.AUDIO_OUTPUT)), e)).catch(s) : new Promise(e => {
     setImmediate(() => e(s()))
   })
 }

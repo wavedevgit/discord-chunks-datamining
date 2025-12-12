@@ -1,7 +1,7 @@
-/** Chunk was on 18831 **/
+/** Chunk was on 37931 **/
 /** chunk id: 621145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => U
+  Z: () => L
 }), require("./997841.js"), require("./388685.js"), require("./457542.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -31,9 +31,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk800530 = require("./800530.js"),
   Chunk981631 = require("./981631.js"),
   Chunk217702 = require("./217702.js"),
-  Chunk887902 = require("./887902.js");
+  Chunk20316 = require("./20316.js");
 
-function N(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -52,7 +52,7 @@ function N(e) {
   return e
 }
 
-function I(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -71,67 +71,67 @@ let k = e => {
     attachments: n
   } = t;
   if (0 === n.length) return null;
-  let a = 1 === n.length;
+  let o = 1 === n.length;
 
-  function s(e, t) {
+  function l(e, t) {
     return (0, u.dn)(e.originalItem, t)
   }
   return (0, i.jsx)("div", {
-    className: L.classificationEvidenceMessageAttachment,
-    children: (0, i.jsx)(E.Z, {
+    className: Z.classificationEvidenceMessageAttachment,
+    children: (0, i.jsx)(y.Z, {
       items: n.map(e => {
         var n;
         return {
           item: {
             uniqueId: e.id,
             originalItem: e,
-            type: (0, m.aw)(e, true),
+            type: (0, f.aw)(e, true),
             downloadUrl: e.proxy_url,
             height: e.height,
             width: e.width,
             spoiler: e.spoiler,
             contentType: e.content_type,
-            srcIsAnimated: (0, l.yE)(null != (n = e.flags) ? n : 0, w.J0y.IS_ANIMATED)
+            srcIsAnimated: (0, a.yE)(null != (n = e.flags) ? n : 0, I.J0y.IS_ANIMATED)
           },
           message: t,
-          mediaLayoutType: S.hV.MOSAIC,
+          mediaLayoutType: T.hV.MOSAIC,
           autoPlayGif: false,
           canRemoveItem: false,
-          isSingleMosaicItem: a,
-          onRemoveItem: o.noop,
+          isSingleMosaicItem: o,
+          onRemoveItem: r.noop,
           renderVideoComponent: t => ((e, t, n) => {
-            let a = T.Sv,
-              l = T.EY;
+            let o = S.Sv,
+              a = S.EY;
             if (null != t.width && null != t.height) {
-              let e = (0, O.Dc)({
+              let e = (0, x.Dc)({
                 width: t.width,
                 height: t.height,
-                maxWidth: T.Sv,
-                maxHeight: T.EY
+                maxWidth: S.Sv,
+                maxHeight: S.EY
               });
-              a = (0, o.clamp)(Math.round(t.width * e), 0, T.Sv), l = (0, o.clamp)(Math.round(t.height * e), 0, T.EY)
+              o = (0, r.clamp)(Math.round(t.width * e), 0, S.Sv), a = (0, r.clamp)(Math.round(t.height * e), 0, S.EY)
             }
             return (0, i.jsx)("div", {
               style: {
-                width: n ? a : "100%",
-                height: n ? l : "100%"
+                width: n ? o : "100%",
+                height: n ? a : "100%"
               },
-              children: (0, i.jsx)(r.ZP, {
+              children: (0, i.jsx)(s.ZP, {
                 className: e.className,
                 forceExternal: false,
                 src: t.url,
-                width: n ? a : "100%",
-                height: n ? l : "100%",
+                width: n ? o : "100%",
+                height: n ? a : "100%",
                 responsive: true,
                 volume: e.volume,
                 autoPlay: false,
                 autoMute: false,
-                type: r.ZP.Types.VIDEO,
+                type: s.ZP.Types.VIDEO,
                 mediaLayoutType: e.mediaLayoutType,
                 fileName: t.filename,
                 fileSize: null == t.size ? true : t.size.toString(),
                 playable: true,
-                renderLinkComponent: b.iT,
+                renderLinkComponent: v.iT,
                 onClick: e.onClick,
                 onPlay: e.onPlay,
                 onEnded: e.onEnded,
@@ -140,17 +140,17 @@ let k = e => {
                 downloadable: false
               })
             })
-          })(t, e, a),
-          renderImageComponent: e => (0, i.jsx)(y.dS, I(N({}, e), {
+          })(t, e, o),
+          renderImageComponent: e => (0, i.jsx)(_.dS, M(A({}, e), {
             hiddenSpoilers: true,
             shouldHideMediaOptions: true,
             shouldLink: false
           })),
-          renderAudioComponent: y.q7,
-          renderPlaintextFilePreview: y.d4,
-          renderGenericFileComponent: y.ZK,
-          renderMosaicItemFooter: y.L9,
-          getObscureReason: s,
+          renderAudioComponent: _.q7,
+          renderPlaintextFilePreview: _.d4,
+          renderGenericFileComponent: _.ZK,
+          renderMosaicItemFooter: _.L9,
+          getObscureReason: l,
           gifFavoriteButton: () => null
         }
       })
@@ -158,24 +158,24 @@ let k = e => {
   })
 };
 
-function U(e) {
+function L(e) {
   var t;
   let {
     flaggedContent: n
-  } = e, o = (0, s.e7)([j.default], () => j.default.getCurrentUser()), [l, r] = a.useState({}), [u, m] = a.useState(true), y = (0, s.e7)([P.Z], () => P.Z.getUsername()), b = n[0], E = ((e, t, n, i) => {
-    let a = e.attachments.map(e => {
-      var n, i, a, o;
-      let l = I(N({}, e), {
-        filename: (0, C.eS)(e),
+  } = e, r = (0, l.e7)([w.default], () => w.default.getCurrentUser()), [a, s] = o.useState({}), [u, f] = o.useState(true), _ = (0, l.e7)([E.Z], () => E.Z.getUsername()), v = n[0], y = ((e, t, n, i) => {
+    let o = e.attachments.map(e => {
+      var n, i, o, r;
+      let a = M(A({}, e), {
+        filename: (0, P.eS)(e),
         size: 0,
         proxy_url: e.url
       });
-      return (0, d.CO)(e.filename) || (0, d.NU)(e.filename) ? I(N({}, l), {
-        width: null != (a = null == (n = t[e.id]) ? true : n.width) ? a : T.Sv,
-        height: null != (o = null == (i = t[e.id]) ? true : i.height) ? o : T.EY
-      }) : l
+      return (0, d.CO)(e.filename) || (0, d.NU)(e.filename) ? M(A({}, a), {
+        width: null != (o = null == (n = t[e.id]) ? true : n.width) ? o : S.Sv,
+        height: null != (r = null == (i = t[e.id]) ? true : i.height) ? r : S.EY
+      }) : a
     });
-    return (0, p.e5)(I(N({}, (0, f.ZP)({
+    return (0, h.e5)(M(A({}, (0, m.ZP)({
       author: null != n ? n : {
         id: "",
         avatar: true,
@@ -184,22 +184,22 @@ function U(e) {
       },
       nonce: e.id,
       content: e.content,
-      type: w.uaV.DEFAULT,
-      channelId: w.lds
+      type: I.uaV.DEFAULT,
+      channelId: I.lds
     })), {
-      timestamp: new Date(A.default.extractTimestamp(e.id)).toISOString(),
-      attachments: a,
-      state: w.yb.SENT
+      timestamp: new Date(j.default.extractTimestamp(e.id)).toISOString(),
+      attachments: o,
+      state: I.yb.SENT
     }))
-  })(b, l, o, y), O = (0, h.ZP)(E), S = (0, v.Z)(E, {
+  })(v, a, r, _), x = (0, p.ZP)(y), T = (0, b.Z)(y, {
     hideSimpleEmbedContent: false,
     allowList: false,
     allowHeading: false,
     allowLinks: false,
     previewLinkTarget: false
   });
-  return (a.useEffect(() => {
-    Promise.all(b.attachments.filter(e => {
+  return (o.useEffect(() => {
+    Promise.all(v.attachments.filter(e => {
       let {
         filename: t
       } = e;
@@ -226,20 +226,20 @@ function U(e) {
         width: 0,
         height: 0
       })
-    }).then(t => r(n => I(N({}, n), {
+    }).then(t => s(n => M(A({}, n), {
       [e.id]: t
-    }))))).finally(() => m(false))
-  }, [b.attachments]), "" === E.content && 0 === E.attachments.length) ? null : (0, i.jsx)("div", {
-    className: L.classificationEvidenceCard,
+    }))))).finally(() => f(false))
+  }, [v.attachments]), "" === y.content && 0 === y.attachments.length) ? null : (0, i.jsx)("div", {
+    className: Z.classificationEvidenceCard,
     children: u ? (0, i.jsx)(c.$jN, {}) : (0, i.jsx)(g.Z, {
       compact: false,
-      childrenHeader: (0, _.Z)({
-        author: I(N({}, o), {
+      childrenHeader: (0, O.Z)({
+        author: M(A({}, r), {
           colorString: "",
           colorStrings: null,
-          nick: null != (t = null == o ? true : o.username) ? t : y
+          nick: null != (t = null == r ? true : r.username) ? t : _
         }),
-        message: E,
+        message: y,
         channel: true,
         guildId: true,
         compact: false,
@@ -249,14 +249,14 @@ function U(e) {
         hideTimestamp: false
       }),
       childrenAccessories: (0, i.jsx)(k, {
-        message: E
+        message: y
       }),
-      childrenMessageContent: (0, x.Z)({
-        message: E
-      }, S.content),
+      childrenMessageContent: (0, C.Z)({
+        message: y
+      }, T.content),
       hasThread: false,
       hasReply: false,
-      author: O
+      author: x
     })
   })
 }

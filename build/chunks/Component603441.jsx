@@ -54,8 +54,8 @@ function f(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function f(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -91,9 +91,9 @@ function _(e) {
       titleTextVariant: "heading-xl/semibold",
       subtitle: _,
       alignCenter: true
-    }), (0, r.jsx)(o.f, {
+    }), (0, r.jsx)(a.f, {
       children: g
-    }), (0, r.jsx)(a.G, {
+    }), (0, r.jsx)(o.G, {
       leading: m,
       actions: h,
       actionsFullWidth: null == m

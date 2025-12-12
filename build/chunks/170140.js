@@ -66,7 +66,7 @@ function v(e, t) {
       let e = s.default.getId();
       return c.ZP.isMember(null == E ? true : E.guildId, e)
     }, [E]),
-    v = (0, i.e7)([a.Z], () => null != E && (null == E ? true : E.channelId) != null && a.Z.isChannelGated(E.guildId, E.channelId), [E]),
+    v = (0, i.e7)([o.Z], () => null != E && (null == E ? true : E.channelId) != null && o.Z.isChannelGated(E.guildId, E.channelId), [E]),
     S = t.hasFlag(g.iLy.IS_CROSSPOST),
     {
       rawMediaPostEmbedData: I,
@@ -81,14 +81,14 @@ function v(e, t) {
         n = u.Z.getGuild(null == E ? true : E.guildId),
         r = l.Z.getChannel(null == E ? true : E.channelId),
         i = f.default.getUser(null == t ? true : t.author_id),
-        a = d.Z.getGuildId(),
-        s = null != r && (0, o.YO)(r);
+        o = d.Z.getGuildId(),
+        s = null != r && (0, a.YO)(r);
       return {
         rawMediaPostEmbedData: t,
         guild: n,
         parentChannel: r,
         user: i,
-        selectedGuildId: a,
+        selectedGuildId: o,
         canAccess: s
       }
     }, [E]),

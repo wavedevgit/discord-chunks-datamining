@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 5200, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Y: () => v
@@ -15,7 +15,7 @@ var i, Chunk54381 = require("./54381.js"),
   Chunk513202 = require("./513202.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk218877 = require("./218877.js");
+  Chunk748788 = require("./748788.js");
 let b = ["embedded_cover"],
   C = {
     tension: 800,
@@ -31,22 +31,22 @@ function v(e) {
     onClick: a,
     aspectRatio: y = 0,
     animatedDivClass: v,
-    commandOrigin: O
+    commandOrigin: _
   } = e, {
-    onActivityItemSelected: x,
-    imageBackground: E,
-    activityAction: j,
-    labelType: S
+    onActivityItemSelected: O,
+    imageBackground: x,
+    activityAction: E,
+    labelType: j
   } = (0, u.ZP)({
     context: n,
     activityItem: i,
     guildId: null != (t = n.channel.getGuildId()) ? t : true,
     locationObject: {},
     onActivityItemSelected: a,
-    embeddedActivitiesManager: f.Z,
+    embeddedActivitiesManager: h.Z,
     assetNames: b,
-    commandOrigin: O
-  }), [_, P] = l.useState(false), I = l.useCallback(() => {
+    commandOrigin: _
+  }), [S, P] = l.useState(false), I = l.useCallback(() => {
     P(true)
   }, [P]), Z = l.useCallback(() => {
     P(false)
@@ -55,11 +55,11 @@ function v(e) {
     children: (0, r.jsx)("div", {
       className: g.badgeContainer,
       children: (0, r.jsx)(p.Z, {
-        labelType: S
+        labelType: j
       })
     })
-  }), [S]), N = l.useMemo(() => {
-    switch (j) {
+  }), [j]), N = l.useMemo(() => {
+    switch (E) {
       case u.JS.JOIN:
         return (0, r.jsx)("div", {
           className: g.activityAction,
@@ -88,9 +88,9 @@ function v(e) {
       default:
         return null
     }
-  }, [j]);
+  }, [E]);
   return (0, r.jsx)(c.P3F, {
-    onClick: x,
+    onClick: O,
     onFocus: I,
     onBlur: Z,
     onMouseEnter: I,
@@ -102,14 +102,14 @@ function v(e) {
         value: 0
       },
       to: {
-        value: +!!_
+        value: +!!S
       },
       children: e => {
         let {
           value: t
         } = e;
         return (0, r.jsx)(c.f6W, {
-          theme: h.BRd.DARK,
+          theme: f.BRd.DARK,
           children: e => (0, r.jsxs)(s.animated.div, {
             className: o()(e, g.activityItem, v, {
               [g.activityItem_13_11]: 0 === y,
@@ -119,7 +119,7 @@ function v(e) {
               transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
             },
             children: [(0, r.jsx)(d.Z, {
-              imageBackground: E,
+              imageBackground: x,
               applicationName: i.application.name,
               imageClassName: g.activitySuggestionImage,
               imageNotFoundClassName: g.brokenImageIconWrapper

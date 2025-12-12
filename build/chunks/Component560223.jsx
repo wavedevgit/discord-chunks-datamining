@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk975298 = require("./975298.js"),
   Chunk594928 = require("./594928.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk391110 = require("./391110.js"),
   Chunk75077 = require("./75077.js"),
   Chunk51636 = require("./51636.jsx"),
-  Chunk877782 = require("./877782.js");
+  Chunk484327 = require("./484327.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -64,16 +64,16 @@ let S = e => {
       showAllPerksButton: t,
       leftAlignHeaders: n,
       title: i,
-      headerClassname: a
-    } = e, o = (0, r.jsx)(s.Heading, {
+      headerClassname: o
+    } = e, a = (0, r.jsx)(s.Heading, {
       variant: "heading-xxl/extrabold",
       color: "text-strong",
-      className: null != a ? a : E.heading,
+      className: null != o ? o : E.heading,
       children: i
     });
-    return null == t ? o : n ? (0, r.jsxs)("div", {
+    return null == t ? a : n ? (0, r.jsxs)("div", {
       className: E.sectionHeader,
-      children: [o, null != t && (0, r.jsx)("div", {
+      children: [a, null != t && (0, r.jsx)("div", {
         className: E.showAllPerksButton,
         children: t
       })]
@@ -81,7 +81,7 @@ let S = e => {
       className: E.container,
       children: (0, r.jsx)("div", {
         className: E.sectionHeaderSeeAll,
-        children: o
+        children: a
       })
     })
   },
@@ -89,7 +89,7 @@ let S = e => {
     let {
       className: t,
       variant: n,
-      noBackground: a = false,
+      noBackground: o = false,
       leftAlignHeaders: b = false,
       showAllPerksButton: O,
       headerClassname: I
@@ -127,7 +127,7 @@ let S = e => {
       k = M.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {
       ref: T,
-      className: o()(E.section, {
+      className: a()(E.section, {
         [E.centerAlignSection]: !b,
         [E.leftAlignSection]: b
       }, t),
@@ -139,7 +139,7 @@ let S = e => {
       }), (0, r.jsx)(s.Text, {
         variant: "text-lg/normal",
         color: "text-strong",
-        className: o()(E.subtitle, {
+        className: a()(E.subtitle, {
           [E.subtitle]: null == O || b,
           [E.subtitleWithButton]: null != O && !b,
           [E.fullWidth]: C || b,
@@ -154,7 +154,7 @@ let S = e => {
       }), (0, r.jsx)("div", {
         className: E.cardContainer,
         children: M.map((e, t) => (0, r.jsx)(g.Z, v(y({}, e), {
-          forceShadow: a
+          forceShadow: o
         }), "".concat(e.name, "_").concat(t)))
       })]
     })

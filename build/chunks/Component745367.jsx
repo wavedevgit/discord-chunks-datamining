@@ -1,5 +1,5 @@
 /** Chunk was on 4419 **/
-/** chunk id: 745367, original params: e,n,t (module,exports,require) **/
+/** chunk id: 745367, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
   default: () => h
 });
@@ -14,25 +14,25 @@ var Chunk481060 = require("./481060.js"),
   Chunk573703 = require("./573703.jsx"),
   Chunk798930 = require("./798930.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk926375 = require("./926375.js");
+  Chunk771831 = require("./771831.js");
 
-function h(e) {
+function h(n) {
   let {
-    transitionState: n,
-    onClose: t,
+    transitionState: t,
+    onClose: e,
     analyticsLocation: h
-  } = e, {
+  } = n, {
     slide: p,
     gotoNext: x,
     gotoError: g,
-    handleWaitingForConnection: f,
-    handleAuthToken: v,
-    expectedCallbackState: _,
+    handleWaitingForConnection: b,
+    handleAuthToken: f,
+    expectedCallbackState: v,
     callbackData: N
   } = (0, r.k)(h, C.ABu.CRUNCHYROLL);
   return (0, o.jsx)(i.Y0X, {
-    className: b.modal,
-    transitionState: n,
+    className: _.modal,
+    transitionState: t,
     disableTrack: true,
     parentComponent: "CrunchyrollLinkModal",
     children: (0, o.jsxs)(i.MyZ, {
@@ -40,27 +40,27 @@ function h(e) {
       width: 408,
       children: [(0, o.jsx)(i.Mi4, {
         id: u.O.LANDING,
-        children: (0, o.jsx)(l.Z, {
+        children: (0, o.jsx)(a.Z, {
           onContinue: x,
-          onClose: t
+          onClose: e
         })
       }), (0, o.jsx)(i.Mi4, {
         id: u.O.PRE_CONNECT,
-        children: (0, o.jsx)(d.Z, {
+        children: (0, o.jsx)(c.Z, {
           isWaitingForConnection: false,
-          onWaitingForConnection: f,
-          onAuthToken: v,
+          onWaitingForConnection: b,
+          onAuthToken: f,
           onError: g,
-          onClose: t
+          onClose: e
         })
       }), (0, o.jsx)(i.Mi4, {
         id: u.O.PRE_CONNECT_WAITING,
-        children: (0, o.jsx)(d.Z, {
+        children: (0, o.jsx)(c.Z, {
           isWaitingForConnection: true,
-          expectedCallbackState: _,
-          onAuthToken: v,
+          expectedCallbackState: v,
+          onAuthToken: f,
           onError: g,
-          onClose: t
+          onClose: e
         })
       }), (0, o.jsx)(i.Mi4, {
         id: u.O.DISCORD_CONSENT,
@@ -68,18 +68,18 @@ function h(e) {
           authToken: N,
           onContinue: x,
           onError: g,
-          onClose: t
+          onClose: e
         })
       }), (0, o.jsx)(i.Mi4, {
         id: u.O.ERROR,
-        children: (0, o.jsx)(a.Z, {
+        children: (0, o.jsx)(l.Z, {
           onContinue: x,
-          onClose: t
+          onClose: e
         })
       }), (0, o.jsx)(i.Mi4, {
         id: u.O.SUCCESS,
-        children: (0, o.jsx)(c.Z, {
-          onClose: t
+        children: (0, o.jsx)(d.Z, {
+          onClose: e
         })
       })]
     })

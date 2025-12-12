@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk405283 = require("./405283.jsx"),
-  Chunk629709 = require("./629709.js");
+  Chunk409738 = require("./409738.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,7 +46,7 @@ function f(e) {
   let {
     story: t,
     controlsLayout: n
-  } = e, a = i.useMemo(() => d(t), [t]), [c, f] = i.useState(a);
+  } = e, o = i.useMemo(() => d(t), [t]), [c, f] = i.useState(o);
   i.useEffect(() => {
     f(d(t))
   }, [t]);
@@ -56,7 +56,7 @@ function f(e) {
     },
     _ = "hidden" !== n && null != t.controls;
   return (0, r.jsxs)("div", {
-    className: o()(l.main, {
+    className: a()(l.main, {
       [l.mainBottomLayout]: "bottom" === n,
       [l.mainRightLayout]: "right" === n
     }),
@@ -67,7 +67,7 @@ function f(e) {
         children: p()
       })
     }), _ && null != t.controls && (0, r.jsx)("div", {
-      className: o()(l.controls, {
+      className: a()(l.controls, {
         [l.controlsBottom]: "bottom" === n,
         [l.controlsRight]: "right" === n
       }),

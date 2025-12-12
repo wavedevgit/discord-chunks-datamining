@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 155647, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  fW: () => c,
+  fW: () => d,
   jc: () => u
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
@@ -10,16 +10,16 @@ var Chunk473749 = require("./473749.js"),
   Chunk218471 = require("./218471.js"),
   Chunk46912 = require("./46912.js"),
   Chunk82554 = require("./82554.js");
-let d = {
+let c = {
   [Chunk82554.zR.SAFETY_DM_SPAM_FILTER]: Chunk568315.Z,
   [Chunk82554.zR.SAFETY_SC_FILTERS_SEXUAL_MEDIA]: Chunk46912.Z,
   [Chunk82554.zR.SAFETY_SC_FILTERS_GRAPHIC_MEDIA]: Chunk218471.Z
 };
 
-function c(e) {
+function d(e) {
   return r.useMemo(() => null != e ? function(e) {
     let t = [];
-    return Object.entries(d).forEach(n => {
+    return Object.entries(c).forEach(n => {
       let [r, l] = n;
       (null == l.eligibleReportSubtypes || l.eligibleReportSubtypes.includes(e)) && t.push(r)
     }), 0 === t.length ? null : t
@@ -28,7 +28,7 @@ function c(e) {
 
 function u(e, t) {
   return r.useMemo(() => e.map(e => (function(e, t) {
-    let n = d[e];
+    let n = c[e];
     return ! function(e, t) {
       let {
         predicate: n,

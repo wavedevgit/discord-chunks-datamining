@@ -4,8 +4,8 @@
 require.d(exports, {
   $P: () => s,
   NZ: () => r,
-  a0: () => a,
-  qO: () => o,
+  a0: () => o,
+  qO: () => a,
   su: () => l,
   xY: () => i
 });
@@ -15,10 +15,10 @@ var r = function(e) {
   i = function(e) {
     return e.NONE_LEGACY = "none", e.GUILD = "guild", e.USER = "user", e
   }({}),
-  a = function(e) {
+  o = function(e) {
     return e.MANUAL = "manual", e.AUTO = "auto", e.AUTO_FALLBACK = "auto_fallback", e
   }({});
-let o = ["2023-10_triggerdebuggingaa", "2023-10_guildaa"];
+let a = ["2023-10_triggerdebuggingaa", "2023-10_guildaa"];
 var s = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.CONNECTION_OPEN = 1] = "CONNECTION_OPEN", e[e.VOICE_CALL = 2] = "VOICE_CALL", e[e.PAYMENT_FLOW_STARTED = 3] = "PAYMENT_FLOW_STARTED", e[e.COLLECTIBLES_SHOP_OPEN = 4] = "COLLECTIBLES_SHOP_OPEN", e[e.OPEN_USER_SETTINGS = 5] = "OPEN_USER_SETTINGS", e[e.OPEN_NITRO = 6] = "OPEN_NITRO", e[e.DM_GDM_LIST_RENDER = 7] = "DM_GDM_LIST_RENDER", e[e.CONNECTION_OPEN_MOBILE = 8] = "CONNECTION_OPEN_MOBILE", e[e.QUEST_HOME_OPEN = 9] = "QUEST_HOME_OPEN", e[e.QUEST_BAR_RENDERED = 10] = "QUEST_BAR_RENDERED", e
   }({}),

@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,13 +47,13 @@ class f extends(r = Chunk442837.ZP.Store) {
     return l
   }
   isLaunchable(e) {
-    return null != l[e] ? l[e] : (l[e] = false, a.Z.dispatch({
+    return null != l[e] ? l[e] : (l[e] = false, o.Z.dispatch({
       type: "CHECK_LAUNCHABLE_GAME",
       gameId: e
     }), false)
   }
 }
-o(f, "displayName", "LaunchableGameStore");
+a(f, "displayName", "LaunchableGameStore");
 let p = new f(Chunk570140.Z, {
   GAME_LAUNCHABLE_UPDATE: c,
   GAME_CLOUD_SYNC_START: u,

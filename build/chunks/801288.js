@@ -2,12 +2,12 @@
 /** chunk id: 801288, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L: () => o
+  L: () => a
 }), require("./804061.js"), require("./704826.js"), require("./35282.js");
 var Chunk503461 = require("./503461.js"),
   Chunk190313 = require("./190313.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,12 +15,12 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o {
+class a {
   get prefix() {
     return this.table.prefix
   }
   withoutLogging() {
-    return new o(this.originalPrefix, this.table.tableId, this.table.database, false)
+    return new a(this.originalPrefix, this.table.tableId, this.table.database, false)
   }
   get(e) {
     return this.table.get([e])
@@ -77,7 +77,7 @@ class o {
     }
   }
   constructor(e, t, n, r = true) {
-    a(this, "originalPrefix", true), a(this, "table", true), this.originalPrefix = e, this.table = new i.i([e], t, n, r)
+    o(this, "originalPrefix", true), o(this, "table", true), this.originalPrefix = e, this.table = new i.i([e], t, n, r)
   }
 }
 class s {
@@ -86,11 +86,11 @@ class s {
   }
   put(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : r.Sn.Replace;
-    return this.transaction.put(o.cell(e, null), t)
+    return this.transaction.put(a.cell(e, null), t)
   }
   putAll(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : r.Sn.Replace;
-    return this.transaction.putAll(e.map(e => o.cell(e, null)), t)
+    return this.transaction.putAll(e.map(e => a.cell(e, null)), t)
   }
   replaceAll(e) {
     this.delete(), this.putAll(e)
@@ -99,6 +99,6 @@ class s {
     return 0 == arguments.length ? this.transaction.delete([]) : this.transaction.delete([e])
   }
   constructor(e) {
-    a(this, "transaction", true), this.transaction = e
+    o(this, "transaction", true), this.transaction = e
   }
 }

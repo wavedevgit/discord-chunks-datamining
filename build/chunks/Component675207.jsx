@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk656649 = require("./656649.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk936502 = require("./936502.js");
+  Chunk130560 = require("./130560.js");
 let S = null != window.opener;
 
 function m() {
@@ -30,22 +30,22 @@ function m() {
     i = (0, Chunk169382.l)(),
     u = Chunk755721.get("code"),
     O = Chunk755721.get("oauth_verifier"),
-    C = null != (e = Chunk755721.get("state")) ? module : "",
+    b = null != (e = Chunk755721.get("state")) ? module : "",
     y = Chunk755721.get("loading"),
     m = null != (t = Chunk755721.get("iss")) ? exports : true,
     {
-      type: R
+      type: w
     } = (0, Chunk828700.UO)(),
-    _ = (0, Chunk656649.vJ)(R),
+    R = (0, Chunk656649.vJ)(w),
     [A, T] = Chunk473749.useState(false),
     [D, x] = Chunk473749.useState(false),
     Z = (0, Chunk733427.Z)(),
     k = null == Chunk536285 ? null != Chunk481060 ? Chunk481060 : "" : Chunk536285;
   Chunk473749.useEffect(() => {
     let e;
-    if (null != Chunk936502) return;
+    if (null != Chunk130560) return;
     for (let t of Chunk755721.keys()) exports.startsWith("openid.") && (null == module && (e = {}), module[exports] = Chunk755721.get(exports));
-    let t = (0, Chunk656649.vJ)(R);
+    let t = (0, Chunk656649.vJ)(w);
     !async function() {
       if (null == exports || !Chunk726542.Z.isSupported(exports)) return;
 
@@ -60,12 +60,12 @@ function m() {
             return
           }
           if ([200, 204].includes(r)) {
-            n.replace(g.Z5c.CONNECTIONS_SUCCESS(t)), S && window.close();
+            n.replace(C.Z5c.CONNECTIONS_SUCCESS(t)), S && window.close();
             return
-          }(null == c ? true : c.code) != null && i.append("error-code", c.code), n.replace("".concat(g.Z5c.CONNECTIONS_ERROR(t), "?").concat(i.toString()))
+          }(null == c ? true : c.code) != null && i.append("error-code", c.code), n.replace("".concat(C.Z5c.CONNECTIONS_ERROR(t), "?").concat(i.toString()))
         }
       }
-      if (await h({
+      if (await _({
           platformType: exports,
           code: k,
           state: Chunk388032,
@@ -73,36 +73,36 @@ function m() {
           iss: m,
           handleCallbackResponse: Chunk54381
         })) return;
-      let c = await j(exports, Chunk388032, k, module, m);
-      0 === Chunk473749 ? T(true) : 1 === Chunk473749 ? require.replace("".concat(Chunk981631.Z5c.CONNECTIONS_ERROR(exports), "?").concat(Chunk755721.toString())) : 3 === Chunk473749 ? Chunk873546.tq ? x(true) : require.replace("".concat(Chunk981631.Z5c.CONNECTIONS_ERROR(exports), "?").concat(Chunk755721.toString())) : w({
+      let c = await h(exports, Chunk388032, k, module, m);
+      0 === Chunk473749 ? T(true) : 1 === Chunk473749 ? require.replace("".concat(Chunk981631.Z5c.CONNECTIONS_ERROR(exports), "?").concat(Chunk755721.toString())) : 3 === Chunk473749 ? Chunk873546.tq ? x(true) : require.replace("".concat(Chunk981631.Z5c.CONNECTIONS_ERROR(exports), "?").concat(Chunk755721.toString())) : j({
         platformType: exports,
         state: Chunk388032,
         handleCallbackResponse: Chunk54381,
         handleCallbackError: e => {
           var r;
-          (null == e || null == (r = e.body) ? true : r.code) != null && i.append("error-code", e.body.code), n.replace("".concat(g.Z5c.CONNECTIONS_ERROR(t), "?").concat(i.toString()))
+          (null == e || null == (r = e.body) ? true : r.code) != null && i.append("error-code", e.body.code), n.replace("".concat(C.Z5c.CONNECTIONS_ERROR(t), "?").concat(i.toString()))
         },
         openidParams: module,
         code: k,
         iss: m
       })
     }()
-  }, [k, require, Chunk936502, R, Chunk755721, Chunk388032, m]), Chunk473749.useEffect(() => {
+  }, [k, require, Chunk130560, w, Chunk755721, Chunk388032, m]), Chunk473749.useEffect(() => {
     let e;
     if (!A) return;
     let t = 0;
     async function r() {
-      if (null == _) return;
+      if (null == R) return;
       let {
         handoff_status: c,
         success_redirect: o
-      } = (await Chunk457330.Z.getHandoffStatus(_, Chunk388032)).body;
+      } = (await Chunk457330.Z.getHandoffStatus(R, Chunk388032)).body;
       if (Chunk473749 === Chunk604039.g.HANDOFF_SUCCESS)
-        if (null == Chunk591759.Z.toURLSafe(Chunk828700)) return require.replace(Chunk981631.Z5c.CONNECTIONS_SUCCESS(_));
+        if (null == Chunk591759.Z.toURLSafe(Chunk828700)) return require.replace(Chunk981631.Z5c.CONNECTIONS_SUCCESS(R));
         else {
           window.location = Chunk828700;
           return
-        } if (Chunk473749 === Chunk604039.g.HANDOFF_ERROR || exports >= 10) return require.replace(Chunk981631.Z5c.CONNECTIONS_ERROR(_));
+        } if (Chunk473749 === Chunk604039.g.HANDOFF_ERROR || exports >= 10) return require.replace(Chunk981631.Z5c.CONNECTIONS_ERROR(R));
       e = setTimeout(() => {
         Z() && (t += 1, Chunk54381())
       }, 1e3)
@@ -110,18 +110,18 @@ function m() {
     return Chunk54381(), () => {
       null != module && clearTimeout(module)
     }
-  }, [Z, require, _, A, Chunk388032]);
+  }, [Z, require, R, A, Chunk388032]);
   let I = Chunk473749.useMemo(() => {
-    if (null != _) return "discord://".concat(Chunk981631.Z5c.CONNECTIONS(_), "/?").concat(Chunk755721.toString())
-  }, [_, Chunk755721]);
-  return null != _ && Chunk726542.Z.isSupported(_) ? D ? (0, Chunk54381.jsx)(E, {
-    platformType: _,
+    if (null != R) return "discord://".concat(Chunk981631.Z5c.CONNECTIONS(R), "/?").concat(Chunk755721.toString())
+  }, [R, Chunk755721]);
+  return null != R && Chunk726542.Z.isSupported(R) ? D ? (0, Chunk54381.jsx)(E, {
+    platformType: R,
     deeplink: I,
     onClick: () => {
       x(false), T(true)
     }
   }) : (0, Chunk54381.jsx)(v, {
-    platformType: _
+    platformType: R
   }) : null
 }
 
@@ -129,11 +129,11 @@ function v(e) {
   let {
     platformType: t
   } = e, n = p.Z.get(t);
-  return (0, r.jsxs)(b.UV, {
+  return (0, r.jsxs)(g.UV, {
     platformType: t,
     children: [(0, r.jsx)("div", {
       className: y.message,
-      children: C.intl.format(C.t.AOKOe7, {
+      children: b.intl.format(b.t.AOKOe7, {
         name: n.name
       })
     }), (0, r.jsx)("div", {
@@ -155,13 +155,13 @@ function E(e) {
     onClick: n,
     platformType: c
   } = e, o = p.Z.get(c);
-  return (0, r.jsx)(b.UV, {
+  return (0, r.jsx)(g.UV, {
     platformType: c,
     children: (0, r.jsxs)("div", {
       className: y.buttonContainer,
       children: [(0, r.jsx)("div", {
         className: y.message,
-        children: C.intl.format(C.t["6ig6i5"], {
+        children: b.intl.format(b.t["6ig6i5"], {
           connectionName: o.name
         })
       }), (0, r.jsx)(u.P3F, {
@@ -171,13 +171,13 @@ function E(e) {
         target: "_self",
         children: (0, r.jsx)(i.zx, {
           className: y.btn,
-          children: C.intl.string(C.t.flvacA)
+          children: b.intl.string(b.t.flvacA)
         })
       })]
     })
   })
 }
-async function h(e) {
+async function _(e) {
   let {
     platformType: t,
     code: n,
@@ -189,7 +189,7 @@ async function h(e) {
   if (l.tq || S) returnfalse;
   try {
     var i, u;
-    let e = await O.default.request(g.Etm.CONNECTIONS_CALLBACK, (i = function(e) {
+    let e = await O.default.request(C.Etm.CONNECTIONS_CALLBACK, (i = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -230,7 +230,7 @@ async function h(e) {
     returnfalse
   }
 }
-async function j(e, t, n, r, c) {
+async function h(e, t, n, r, c) {
   try {
     return await s.Z.sessionHandoff(e, t, n, r, c), 0
   } catch (e) {
@@ -240,7 +240,7 @@ async function j(e, t, n, r, c) {
     return 1
   }
 }
-async function w(e) {
+async function j(e) {
   let {
     platformType: t,
     state: n,

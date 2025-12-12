@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 518311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eh,
+  Z: () => ef,
   l: () => em
 }), require("./642613.js"), require("./415506.js"), require("./539854.js"), require("./388685.js"), require("./35282.js"), require("./49124.js");
 var i, Chunk54381 = require("./54381.js"),
@@ -56,7 +56,7 @@ var i, Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk176260 = require("./176260.js");
+  Chunk918324 = require("./918324.js");
 
 function ei(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -114,7 +114,7 @@ let eo = (0, Chunk313201.hQ)(),
     let {
       channel: n,
       onClose: i
-    } = e, l = null != (t = (0, _.ZP)(n)) ? t : "", a = (0, u.e7)([V.ZP], () => {
+    } = e, l = null != (t = (0, S.ZP)(n)) ? t : "", a = (0, u.e7)([V.ZP], () => {
       var e;
       return null != (e = V.ZP.lastMessageId(n.id)) ? e : n.id
     });
@@ -125,7 +125,7 @@ let eo = (0, Chunk313201.hQ)(),
       children: (0, r.jsxs)("div", {
         className: en.confirmChannelItemContainer,
         children: [(0, r.jsx)(p.qEK, {
-          src: (0, S.x)(n),
+          src: (0, j.x)(n),
           size: p.EFr.SIZE_24,
           "aria-label": l
         }), (0, r.jsx)("span", {
@@ -343,7 +343,7 @@ class eu extends(i = Chunk473749.PureComponent) {
         label: Y.ZP.getName(t)
       })
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk176260.searchBar,
+      className: Chunk918324.searchBar,
       children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
         inputRef: this.searchBarRef,
         autoFocus: true,
@@ -367,14 +367,14 @@ class eu extends(i = Chunk473749.PureComponent) {
       results: t
     } = this.props;
     return this.isNotFriends() || !module ? null : this.isPartyFull() ? (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk176260.popoutContent,
+      className: Chunk918324.popoutContent,
       variant: "text-md/normal",
       color: "text-subtle",
       children: Chunk388032.intl.format(Chunk388032.t.xYr004, {
         number: this.getMaxParticipants()
       })
     }) : 0 === exports.length ? (0, Chunk54381.jsx)("div", {
-      className: Chunk176260.noResults,
+      className: Chunk918324.noResults,
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-muted",
@@ -383,8 +383,8 @@ class eu extends(i = Chunk473749.PureComponent) {
     }) : (0, Chunk54381.jsx)(Chunk481060.aVo, {
       ref: this.scrollerRef,
       sections: [exports.length],
-      className: Chunk176260.scroller,
-      innerClassName: Chunk176260.scrollerInner,
+      className: Chunk918324.scroller,
+      innerClassName: Chunk918324.scrollerInner,
       renderRow: this.renderRow,
       rowHeight: this.getRowHeight,
       renderSection: this.renderSection,
@@ -420,7 +420,7 @@ class eu extends(i = Chunk473749.PureComponent) {
       sectionHeight: 0,
       rowHeight: 32,
       renderRow: () => (0, Chunk54381.jsx)("div", {
-        className: Chunk176260.noResults,
+        className: Chunk918324.noResults,
         children: (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           color: "text-muted",
@@ -430,8 +430,8 @@ class eu extends(i = Chunk473749.PureComponent) {
     } : {
       ref: this.scrollerRef,
       sections: [exports.length],
-      className: Chunk176260.scroller,
-      innerClassName: Chunk176260.scrollerInner,
+      className: Chunk918324.scroller,
+      innerClassName: Chunk918324.scrollerInner,
       renderRow: this.renderRow,
       rowHeight: this.getRowHeight,
       renderSection: this.renderSection,
@@ -551,25 +551,25 @@ class eu extends(i = Chunk473749.PureComponent) {
       actions: null != Chunk392711 ? Chunk392711 : [],
       children: this.renderBody()
     }) : (0, Chunk54381.jsxs)("div", {
-      className: Chunk176260.popout,
+      className: Chunk918324.popout,
       children: [(0, Chunk54381.jsx)(Chunk793030.X6q, {
-        className: Chunk176260.popoutContent,
+        className: Chunk918324.popoutContent,
         variant: "heading-lg/semibold",
         color: "text-strong",
         children: this.getTitle()
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk176260.popoutContent,
+        className: Chunk918324.popoutContent,
         variant: "text-md/normal",
         color: "text-subtle",
         children: this.getSubtitle()
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk176260.popoutContent,
+        className: Chunk918324.popoutContent,
         children: this.renderSearchBar()
       }), this.renderPopoutBody(), null != Chunk473749 && (0, Chunk54381.jsx)("div", {
-        className: Chunk176260.footer,
+        className: Chunk918324.footer,
         children: Chunk473749
       }), null != Chunk392711 && (0, Chunk54381.jsx)("div", {
-        className: Chunk176260.popoutContent,
+        className: Chunk918324.popoutContent,
         children: (0, Chunk54381.jsx)(Chunk793030.hE2, {
           padding: {
             top: 12
@@ -687,7 +687,7 @@ class eu extends(i = Chunk473749.PureComponent) {
     }), ei(this, "handleQueryChange", e => {
       let {
         channel: t
-      } = this.props, n = (0, E.v_)(t);
+      } = this.props, n = (0, x.v_)(t);
       C.Z.search(e, null == t ? true : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
         G.default.track($.rMx.SEARCH_USER_LIST_STARTED, el(er({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
@@ -738,7 +738,7 @@ class eu extends(i = Chunk473749.PureComponent) {
         {
           channel: n
         } = this.props,
-        i = (0, E.v_)(n),
+        i = (0, x.v_)(n),
         r = true;
       1 === e.length && (r = null == m.Z._openCachedDMChannel(e[0])), G.default.track($.rMx.CREATE_DM_USER_LIST_CLICKED, el(er({}, i), {
         is_new_dm: r,
@@ -754,22 +754,22 @@ class eu extends(i = Chunk473749.PureComponent) {
         location: "New Group DM"
       }).then(e => {
         let t = {};
-        "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && m.Z.updateChannel(e, t, x.Z.NEW_GROUP_DM_INVITE_MODAL), G.default.track($.rMx.GDM_EDIT_INTERACTED, {
+        "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && m.Z.updateChannel(e, t, O.Z.NEW_GROUP_DM_INVITE_MODAL), G.default.track($.rMx.GDM_EDIT_INTERACTED, {
           channel_id: e,
           channel_type: $.d4z.GROUP_DM,
-          location: x.Z.NEW_GROUP_DM_INVITE_MODAL,
+          location: O.Z.NEW_GROUP_DM_INVITE_MODAL,
           new_name_set: "" !== this.state.newChannelName,
           new_icon_set: null != this.state.previewIcon
         })
       })
     }), ei(this, "pushToExistingDM", (e, t) => {
       let n = this._searchCounter,
-        i = (0, E.v_)(e),
+        i = (0, x.v_)(e),
         r = U.Z.getChannelId() === e.id;
       m.Z.addRecipients(e.id, t, $.Sbl.ADD_FRIENDS_TO_DM).then(n => {
         if (r) {
-          if (e.isDM() && n !== e.id) return void h.Z.call(n, false, true);
-          h.Z.ring(n, t, "dm_invite")
+          if (e.isDM() && n !== e.id) return void f.Z.call(n, false, true);
+          f.Z.ring(n, t, "dm_invite")
         }
       }), G.default.track($.rMx.CREATE_DM_USER_LIST_CLICKED, el(er({}, i), {
         is_new_dm: true,
@@ -836,9 +836,9 @@ function ed(e) {
     onChange: o
   } = e, {
     analyticsLocations: s
-  } = (0, j.ZP)(x.Z.NEW_GROUP_DM_INVITE_MODAL);
-  if (!(0, I.a)(x.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
-  let c = (0, _.pT)(Array.from(t), H.default, F.Z);
+  } = (0, E.ZP)(O.Z.NEW_GROUP_DM_INVITE_MODAL);
+  if (!(0, I.a)(O.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
+  let c = (0, S.pT)(Array.from(t), H.default, F.Z);
   return (0, r.jsxs)("div", {
     className: en.customizationContainer,
     children: [(0, r.jsx)(Z.B, {
@@ -882,37 +882,37 @@ function ep(e) {
   }, n, i))
 }
 
-function ef(e) {
+function eh(e) {
   let {
     channel: t,
     location: n,
     subscribeToGlobalHotkey: i,
     initialPopoutOpen: a
-  } = e, [o, s] = l.useState(null != a && a), c = (0, I.a)(n), u = "channel-invite-modal-".concat(null == t ? true : t.id), d = (0, p.VXO)(u), f = l.useCallback(() => (0, p.ZDy)(() => Promise.resolve(e => (0, r.jsx)(ep, el(er({}, e), {
+  } = e, [o, s] = l.useState(null != a && a), c = (0, I.a)(n), u = "channel-invite-modal-".concat(null == t ? true : t.id), d = (0, p.VXO)(u), h = l.useCallback(() => (0, p.ZDy)(() => Promise.resolve(e => (0, r.jsx)(ep, el(er({}, e), {
     channel: t,
     inBornThisNamedExperiment: c
   }))), {
     modalKey: u
-  }), [t, u, c]), h = l.useCallback(() => c ? d ? (0, p.Mr3)(u) : f() : s(e => !e), [c, d, u, f, s]);
-  return l.useEffect(() => (i && W.S.subscribe($.CkL.TOGGLE_DM_CREATE, h), () => {
-    W.S.unsubscribe($.CkL.TOGGLE_DM_CREATE, h)
-  }), [i, h, c]), (0, O.ZP)(() => {
+  }), [t, u, c]), f = l.useCallback(() => c ? d ? (0, p.Mr3)(u) : h() : s(e => !e), [c, d, u, h, s]);
+  return l.useEffect(() => (i && W.S.subscribe($.CkL.TOGGLE_DM_CREATE, f), () => {
+    W.S.unsubscribe($.CkL.TOGGLE_DM_CREATE, f)
+  }), [i, f, c]), (0, _.ZP)(() => {
     (0, w._)()
   }), {
-    showModal: f,
+    showModal: h,
     renderPopout: e => (0, r.jsx)(ep, el(er({}, e), {
       onClose: e.closePopout,
       channel: t,
       inBornThisNamedExperiment: c
     })),
-    toggleVisible: h,
+    toggleVisible: f,
     popoutOpen: o,
     setPopoutOpen: s,
     inBornThisNamedExperiment: c
   }
 }
 
-function eh(e) {
+function ef(e) {
   var t, n;
   let {
     channel: i,
@@ -921,24 +921,24 @@ function eh(e) {
     icon: s,
     tooltip: c,
     tooltipPosition: d = "bottom",
-    popoutPosition: f = "bottom",
-    popoutAlign: h = "right",
+    popoutPosition: h = "bottom",
+    popoutAlign: f = "right",
     subscribeToGlobalHotkey: m = false,
     location: g
   } = e, b = l.useRef(null), C = null != s ? s : null == i ? p.kL_ : p.ejJ, {
     showModal: y,
     renderPopout: v,
-    toggleVisible: O,
-    popoutOpen: x,
-    setPopoutOpen: E,
-    inBornThisNamedExperiment: j
-  } = ef({
+    toggleVisible: _,
+    popoutOpen: O,
+    setPopoutOpen: x,
+    inBornThisNamedExperiment: E
+  } = eh({
     initialPopoutOpen: null != i && i.isGroupDM() && 0 === i.recipients.length,
     channel: i,
     location: g,
     subscribeToGlobalHotkey: m
-  }), S = (0, u.e7)([H.default], () => H.default.getUser(null == i ? true : i.getRecipientId()));
-  return null != (t = null == S ? true : S.bot) && t || null != (n = null == S ? true : S.isProvisional) && n ? null : j ? (0, r.jsx)(J.ZP.Icon, {
+  }), j = (0, u.e7)([H.default], () => H.default.getUser(null == i ? true : i.getRecipientId()));
+  return null != (t = null == j ? true : j.bot) && t || null != (n = null == j ? true : j.isProvisional) && n ? null : E ? (0, r.jsx)(J.ZP.Icon, {
     ref: b,
     onClick: y,
     icon: C,
@@ -949,18 +949,18 @@ function eh(e) {
   }) : (0, r.jsx)(p.yRy, {
     targetElementRef: b,
     renderPopout: v,
-    position: f,
-    shouldShow: x,
+    position: h,
+    shouldShow: O,
     nudgeAlignIntoViewport: true,
     autoInvert: true,
-    align: h,
-    onRequestClose: () => E(false),
+    align: f,
+    onRequestClose: () => x(false),
     animation: p.yRy.Animation.NONE,
     ignoreModalClicks: true,
     clickTrap: true,
     children: e => (0, r.jsx)(J.ZP.Icon, el(er({}, e), {
       ref: b,
-      onClick: O,
+      onClick: _,
       icon: C,
       className: o,
       iconClassName: a,
@@ -982,20 +982,20 @@ function em(e) {
   } = e, u = ea(e, ["channel", "popoutPosition", "popoutAlign", "fullWidth", "text", "icon", "subscribeToGlobalHotkey"]);
   let d = l.useRef(null),
     {
-      showModal: f,
-      renderPopout: h,
+      showModal: h,
+      renderPopout: f,
       toggleVisible: m,
       popoutOpen: g,
       setPopoutOpen: b,
       inBornThisNamedExperiment: C
-    } = ef({
+    } = eh({
       initialPopoutOpen: false,
       channel: t,
       location: "PrivateChannelRecipientsInviteTextButton",
       subscribeToGlobalHotkey: c
     });
   return C ? (0, r.jsx)(p.Button, el(er({}, u), {
-    onClick: f,
+    onClick: h,
     variant: "primary",
     buttonRef: d,
     text: o,
@@ -1004,7 +1004,7 @@ function em(e) {
     fullWidth: a
   })) : (0, r.jsx)(p.yRy, {
     targetElementRef: d,
-    renderPopout: h,
+    renderPopout: f,
     position: n,
     shouldShow: g,
     nudgeAlignIntoViewport: true,

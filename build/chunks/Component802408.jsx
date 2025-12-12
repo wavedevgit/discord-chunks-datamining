@@ -20,7 +20,7 @@ function d(e) {
     markAsDismissed: d,
     config: f,
     children: p
-  } = e, _ = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), m = (0, l.ZP)(), h = i.useRef(null), g = i.useRef(null), [E, b] = i.useState(0);
+  } = e, _ = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), m = (0, l.ZP)(), h = i.useRef(null), g = i.useRef(null), [E, b] = i.useState(0);
   i.useEffect(() => {
     let e = () => {
         let e = h.current,
@@ -48,7 +48,7 @@ function d(e) {
     children: [(0, r.jsx)("div", {
       ref: h,
       children: p
-    }), (0, r.jsx)(o.Mb, {
+    }), (0, r.jsx)(a.Mb, {
       targetElementRef: h,
       shouldShow: true,
       position: "top",

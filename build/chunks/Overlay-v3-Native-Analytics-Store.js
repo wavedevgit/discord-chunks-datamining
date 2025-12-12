@@ -72,7 +72,7 @@ function v(e) {
 function S(e) {
   var t, n;
   if (null != y[e]) return;
-  let r = o.ZP.getGameOrTransformedSubgameForPID(e),
+  let r = a.ZP.getGameOrTransformedSubgameForPID(e),
     i = O(e);
   y[e] = {
     overlay_method: null != i ? u.gl[i] : u.gl[u.gl.OutOfProcess],
@@ -100,8 +100,8 @@ function I(e) {
 function T(e, t) {
   var n, r;
   let i = null == (n = y[e]) ? true : n.error,
-    a = null == (r = y[e]) ? true : r.error_description;
-  y[e] = g({}, y[e], t), null != i && (y[e].error = i), null != a && (y[e].error_description = a)
+    o = null == (r = y[e]) ? true : r.error_description;
+  y[e] = g({}, y[e], t), null != i && (y[e].error = i), null != o && (y[e].error_description = o)
 }
 
 function C(e) {
@@ -129,7 +129,7 @@ function P() {
 }
 
 function R(e, t) {
-  let n = o.ZP.getGameOrTransformedSubgameForPID(e);
+  let n = a.ZP.getGameOrTransformedSubgameForPID(e);
   return {
     crash_type: t,
     gameName: null == n ? true : n.name
@@ -162,12 +162,12 @@ function x(e) {
   var t, n;
   let {
     createWindowTriggeringPID: r
-  } = e, i = null != (n = null == (t = I(r)) ? true : t.mounting_started_at) ? n : new Date().getTime(), a = {
+  } = e, i = null != (n = null == (t = I(r)) ? true : t.mounting_started_at) ? n : new Date().getTime(), o = {
     renderer_started: true,
     fullscreen_type: (0, f.hs)(r),
     graphics_info_after: new Date().getTime() - i
   };
-  return T(r, a), true
+  return T(r, o), true
 }
 
 function L(e) {

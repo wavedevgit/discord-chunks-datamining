@@ -1,7 +1,7 @@
-/** Chunk was on 9414 **/
+/** Chunk was on 86736 **/
 /** chunk id: 680298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk911969 = require("./911969.js"),
   Chunk399860 = require("./399860.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk664775 = require("./664775.js");
+  Chunk808978 = require("./808978.js");
 
 function u(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -31,30 +31,30 @@ function u(e) {
   return e
 }
 
-function b(e) {
+function p(e) {
   let {
     applicationIcon: t,
-    applicationName: b,
-    canNavigate: p,
-    command: m,
-    guildId: f
-  } = e, g = r.useMemo(() => {
+    applicationName: p,
+    canNavigate: m,
+    command: b,
+    guildId: g
+  } = e, f = r.useMemo(() => {
     var e;
-    return 0 !== Object.keys(null != (e = m.permissions) ? e : {}).length
-  }, [m.permissions]), h = r.useCallback(() => {
-    null != m && p() && (0, l.ZDy)(async () => {
+    return 0 !== Object.keys(null != (e = b.permissions) ? e : {}).length
+  }, [b.permissions]), h = r.useCallback(() => {
+    null != b && m() && (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("78786").then(n.bind(n, 50474));
       return n => (0, i.jsx)(e, u({
         applicationIcon: t,
-        applicationId: m.applicationId,
-        applicationName: b,
-        command: m,
-        guildId: f
+        applicationId: b.applicationId,
+        applicationName: p,
+        command: b,
+        guildId: g
       }, n))
     })
-  }, [t, b, p, m, f]), x = r.useCallback(e => {
+  }, [t, p, m, b, g]), x = r.useCallback(e => {
     (0, a.jW)(e, async () => {
       let {
         default: e
@@ -62,7 +62,7 @@ function b(e) {
       return t => {
         var n, r;
         return (0, i.jsx)(e, (n = u({}, t), r = r = {
-          id: m.id,
+          id: b.id,
           label: c.intl.string(c.t.oJ1Muw)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
@@ -76,7 +76,7 @@ function b(e) {
         }), n))
       }
     })
-  }, [m]), j = m.type === o.yU.CHAT ? l.SsZ : l.hH0, v = (0, s.gw)(m.type, m.displayName);
+  }, [b]), j = b.type === o.yU.CHAT ? l.SsZ : l.hH0, v = (0, s.gw)(b.type, b.displayName);
   return (0, i.jsxs)(l.P3F, {
     onClick: h,
     className: d.item,
@@ -93,7 +93,7 @@ function b(e) {
       })]
     }), (0, i.jsx)("div", {
       className: d.statusContainer,
-      children: g ? (0, i.jsxs)("div", {
+      children: f ? (0, i.jsxs)("div", {
         className: d.statusLine,
         children: [(0, i.jsx)(l.Text, {
           variant: "text-md/normal",

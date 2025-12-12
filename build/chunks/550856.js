@@ -40,8 +40,8 @@ function E() {
     n = Chunk131951.Z.getInputDevices()[exports],
     r = null != Chunk19780.Z.getChannelId();
   if (null == require) return;
-  let a = null == (e = Chunk19780.Z.getRTCConnection()) ? true : module.getInputDeviceSampleRate(),
-    o = Chunk621413.F.getCurrentConfig({
+  let o = null == (e = Chunk19780.Z.getRTCConnection()) ? true : module.getInputDeviceSampleRate(),
+    a = Chunk621413.F.getCurrentConfig({
       location: "KrispBVCDeviceManager"
     }, {
       autoTrackExposure: false

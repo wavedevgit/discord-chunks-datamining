@@ -14,20 +14,20 @@ var Chunk149765 = require("./149765.js"),
 
 function u(e) {
   let t = e.getGuildId(),
-    n = (0, i.e7)([o.ZP, l.default], () => {
+    n = (0, i.e7)([a.ZP, l.default], () => {
       var e, n;
       let r = l.default.getCurrentUser();
-      return null != (n = null != t && null != r ? null == (e = o.ZP.getMember(t, r.id)) ? true : e.isPending : null) && n
+      return null != (n = null != t && null != r ? null == (e = a.ZP.getMember(t, r.id)) ? true : e.isPending : null) && n
     }),
     {
       messagesDisabled: u
     } = (0, i.cj)([s.Z], () => {
       let t = e.isPrivate(),
         i = s.Z.computePermissions(e),
-        o = r.e$(i, c.Plq.SEND_MESSAGES),
-        l = (0, a.xl)(e);
+        a = r.e$(i, c.Plq.SEND_MESSAGES),
+        l = (0, o.xl)(e);
       return {
-        messagesDisabled: n || !t && !o || l
+        messagesDisabled: n || !t && !a || l
       }
     }, [e, n]);
   return !u

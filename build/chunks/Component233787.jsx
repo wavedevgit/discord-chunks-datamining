@@ -1,12 +1,12 @@
 /** Chunk was on 69417 **/
 /** chunk id: 233787, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  C: () => d
+  C: () => p
 }), require("./539854.js");
 var n, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk307321 = require("./307321.js"),
+  Chunk584649 = require("./584649.js"),
   o = ((n = o || {}).UPGRADE = "UPGRADE", n.CANCEL = "CANCEL", n.UNVERIFIED = "UNVERIFIED", n.UNCLAIMED = "UNCLAIMED", n.GRANDFATHERED = "GRANDFATHERED", n);
 let s = {
     UPGRADE: "imageUpgrade",
@@ -20,9 +20,9 @@ let s = {
         children: n,
         premiumModalType: o,
         primary: u,
-        secondary: d
+        secondary: p
       } = e,
-      p = function(e, t) {
+      b = function(e, t) {
         if (null == e) return {};
         var r, n, i = function(e, t) {
           if (null == e) return {};
@@ -37,18 +37,18 @@ let s = {
         }
         return i
       }(e, ["children", "premiumModalType", "primary", "secondary"]);
-    let b = a.useMemo(() => {
+    let m = a.useMemo(() => {
       let e = [];
-      return null != d && e.push({
+      return null != p && e.push({
         variant: "secondary",
-        text: d.label,
-        onClick: d.onClick
+        text: p.label,
+        onClick: p.onClick
       }), null != u && e.push({
         variant: "primary",
         text: u.label,
         onClick: u.onClick
       }), e
-    }, [u, d]);
+    }, [u, p]);
     return (0, i.jsxs)(c.Modal, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
@@ -66,8 +66,8 @@ let s = {
         })
       }
       return e
-    }({}, p), r = r = {
-      actions: b,
+    }({}, b), r = r = {
+      actions: m,
       children: [(0, i.jsx)("div", {
         className: l[s[o]]
       }), (0, i.jsx)("div", {
@@ -86,4 +86,4 @@ let s = {
     }), t))
   };
 u.Types = o;
-let d = u
+let p = u

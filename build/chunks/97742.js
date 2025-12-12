@@ -10,8 +10,8 @@ var Chunk56135 = require("./56135.js"),
 
 function u(e) {
   if ("string" == typeof e) return e;
-  if (a(e)) return i(e, u) + "";
-  if (o(e)) return c ? c.call(e) : "";
+  if (o(e)) return i(e, u) + "";
+  if (a(e)) return c ? c.call(e) : "";
   var t = e + "";
   return "0" == t && 1 / e == -s ? "-0" : t
 }

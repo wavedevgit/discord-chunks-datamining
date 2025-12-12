@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 335438, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -17,15 +17,15 @@ function o(e) {
     guild: n
   } = e;
   return (0, r.jsxs)(i.C3N, {
-    label: s.intl.string(s.t["Cv6AN/"]),
-    description: s.intl.string(s.t.qxIcrT),
-    children: [(0, r.jsx)(a.W, {
+    label: a.intl.string(a.t["Cv6AN/"]),
+    description: a.intl.string(a.t.qxIcrT),
+    children: [(0, r.jsx)(s.W, {
       canManageGuild: t,
       guild: n
     }), (0, r.jsx)(l.u, {
       layout: "horizontal",
-      label: s.intl.string(s.t.NASFnq),
-      description: s.intl.string(s.t.ZhOdpR),
+      label: a.intl.string(a.t.NASFnq),
+      description: a.intl.string(a.t.ZhOdpR),
       canManageGuild: t,
       guildId: n.id,
       systemChannelId: n.systemChannelId

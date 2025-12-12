@@ -1,8 +1,8 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 489776, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,9 +14,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk65912 = require("./65912.js"),
   Chunk564488 = require("./564488.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk402766 = require("./402766.js");
+  Chunk32490 = require("./32490.js");
 
-function m(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function m(e) {
   return e
 }
 
-function b(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,65 +48,65 @@ function b(e, t) {
   }), e
 }
 
-function p(e) {
+function h(e) {
   let {
     guildId: t,
     triggerType: n
-  } = e, p = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [h] = i.useState(p), [x, j] = i.useState(false), {
-    editingRule: v,
-    createNewEditingRule: O
-  } = (0, d.V)(), {
-    getDefaultRuleName: C
-  } = c.I6[n], y = !(0, o.Vb)(v) && (null == v ? true : v.triggerType) === n, [N, E] = i.useState(y ? v : h), I = (0, s.q_F)({
-    opacity: +!y,
-    pointerEvents: y ? "none" : "all",
-    config: b(m({}, l.config.stiff), {
+  } = e, h = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [x] = i.useState(h), [b, j] = i.useState(false), {
+    editingRule: _,
+    createNewEditingRule: v
+  } = (0, u.V)(), {
+    getDefaultRuleName: O
+  } = c.I6[n], C = !(0, o.Vb)(_) && (null == _ ? true : _.triggerType) === n, [y, N] = i.useState(C ? _ : x), E = (0, a.q_F)({
+    opacity: +!C,
+    pointerEvents: C ? "none" : "all",
+    config: f(p({}, l.config.stiff), {
       clamp: true
     })
-  }), S = (0, s.q_F)({
-    opacity: +!!y,
-    pointerEvents: y ? "all" : "none",
-    config: b(m({}, l.config.stiff), {
+  }), I = (0, a.q_F)({
+    opacity: +!!C,
+    pointerEvents: C ? "all" : "none",
+    config: f(p({}, l.config.stiff), {
       clamp: true
     }),
     onStart: () => {
-      E(y ? v : h)
+      N(C ? _ : x)
     },
     onRest: () => {
-      E(y ? v : h), j(y)
+      N(C ? _ : x), j(C)
     }
   });
-  return null == v || y ? (0, r.jsxs)("div", {
-    className: f.mainRuleContainer,
+  return null == _ || C ? (0, r.jsxs)("div", {
+    className: m.mainRuleContainer,
     style: {
-      height: y ? "auto" : "60px"
+      height: C ? "auto" : "60px"
     },
     children: [(0, r.jsx)(l.animated.div, {
-      className: f.animatedRuleCardContainer,
-      style: S,
-      children: (0, r.jsx)(u.Z, {
-        rule: N,
-        persistEdit: x
+      className: m.animatedRuleCardContainer,
+      style: I,
+      children: (0, r.jsx)(d.Z, {
+        rule: y,
+        persistEdit: b
       })
     }), (0, r.jsx)(l.animated.div, {
-      className: f.animatedNewRuleContainer,
-      style: I,
-      children: (0, r.jsxs)(s.P3F, {
-        className: f.addAnotherRuleCardContainer,
+      className: m.animatedNewRuleContainer,
+      style: E,
+      children: (0, r.jsxs)(a.P3F, {
+        className: m.addAnotherRuleCardContainer,
         onClick: () => {
-          O(t, n)
+          v(t, n)
         },
-        children: [(0, r.jsx)(s.oFk, {
+        children: [(0, r.jsx)(a.oFk, {
           size: "custom",
           width: 20,
           height: 20,
-          color: a.Z.unsafe_rawColors.BLUE_345.css,
-          className: f.plusIcon
-        }), (0, r.jsx)(s.Text, {
+          color: s.Z.unsafe_rawColors.BLUE_345.css,
+          className: m.plusIcon
+        }), (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           color: "text-link",
           children: g.intl.format(g.t.dNjRAf, {
-            ruleName: C()
+            ruleName: O()
           })
         })]
       })

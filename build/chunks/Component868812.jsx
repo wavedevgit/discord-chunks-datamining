@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 868812, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,11 +15,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk127379 = require("./127379.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function f(e) {
   let {
     channel: t,
     themeable: n,
-    whichPopoutIsOpen: h,
+    whichPopoutIsOpen: f,
     setWhichPopoutIsOpen: m
   } = e, {
     parentAnalyticsLocation: g
@@ -27,24 +27,24 @@ function h(e) {
     isHovered: C,
     setIsHovered: y,
     onMouseEnter: v,
-    onMouseLeave: O
+    onMouseLeave: _
   } = (0, c.Z)(200, 300), {
-    Component: x,
-    play: E,
+    Component: O,
+    play: x,
     events: {
-      onMouseEnter: j,
-      onMouseLeave: S
+      onMouseEnter: E,
+      onMouseLeave: j
     }
-  } = (0, l.$)(), _ = r.useCallback(e => {
-    "focus" !== e.type && (v(), j())
-  }, [v, j]), P = r.useCallback(() => {
-    null == h && (O(), S())
-  }, [O, S, h]), I = r.useCallback(() => {
-    (0, s.v)(g, s.d.GIFTING), h === p.D.GIFTING ? (null == m || m(true), O()) : (null != h ? (E(), v()) : E(), null == m || m(p.D.GIFTING))
-  }, [v, O, g, E, m, h]);
+  } = (0, l.$)(), S = r.useCallback(e => {
+    "focus" !== e.type && (v(), E())
+  }, [v, E]), P = r.useCallback(() => {
+    null == f && (_(), j())
+  }, [_, j, f]), I = r.useCallback(() => {
+    (0, s.v)(g, s.d.GIFTING), f === p.D.GIFTING ? (null == m || m(true), _()) : (null != f ? (x(), v()) : x(), null == m || m(p.D.GIFTING))
+  }, [v, _, g, x, m, f]);
   return (0, i.jsx)(a.y, {
     targetElementRef: b,
-    shouldShow: C && (h === p.D.GIFTING || null == h) || h === p.D.GIFTING,
+    shouldShow: C && (f === p.D.GIFTING || null == f) || f === p.D.GIFTING,
     animation: a.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
@@ -62,20 +62,20 @@ function h(e) {
         closePopout: n,
         isHovered: C,
         onMouseEnter: v,
-        onMouseLeave: O
+        onMouseLeave: _
       })
     },
     children: () => (0, i.jsx)(d.d, {
       ref: b,
       isTrayButton: true,
       themeable: n,
-      "aria-label": f.intl.string(f.t.PEjaCx),
-      iconComponent: x,
+      "aria-label": h.intl.string(h.t.PEjaCx),
+      iconComponent: O,
       onClick: I,
-      onMouseEnter: _,
+      onMouseEnter: S,
       onMouseLeave: P,
-      isActive: C || h === p.D.GIFTING,
-      color: C || h === p.D.GIFTING ? "primaryDark" : true
+      isActive: C || f === p.D.GIFTING,
+      color: C || f === p.D.GIFTING ? "primaryDark" : true
     })
   })
 }

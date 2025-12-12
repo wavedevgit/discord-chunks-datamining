@@ -19,7 +19,7 @@ function d(e) {
     applicationId: n,
     analyticsLocations: d
   } = e, [f, p] = i.useState(false), _ = i.useRef(null), m = i.useCallback(async () => {
-    o.default.track(c.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+    a.default.track(c.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
       application_id: n,
       button_action: s._y.OPEN_APP_DM
     }), p(true);
@@ -32,7 +32,7 @@ function d(e) {
     } catch (e) {}
     clearTimeout(_.current), p(false)
   }, [t, n, d]);
-  return (0, r.jsx)(a.Button, {
+  return (0, r.jsx)(o.Button, {
     type: "submit",
     size: "md",
     variant: "secondary",

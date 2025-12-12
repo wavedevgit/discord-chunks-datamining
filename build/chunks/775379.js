@@ -2,7 +2,7 @@
 /** chunk id: 775379, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => a
+  S: () => o
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js");
 
@@ -14,7 +14,7 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class a extends Chunk473749.PureComponent {
+class o extends Chunk473749.PureComponent {
   static getDerivedStateFromError(e) {
     return {
       error: e

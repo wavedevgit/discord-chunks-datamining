@@ -1,8 +1,8 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 195189, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -11,9 +11,9 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk449226 = require("./449226.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk146473 = require("./146473.js");
+  Chunk824804 = require("./824804.js");
 
-function d(e) {
+function u(e) {
   let {
     title: t,
     details: n
@@ -33,10 +33,10 @@ function d(e) {
       }) : n]
     }), (0, r.jsx)(i.u, {
       text: o.intl.string(o.t.NQ4nCp),
-      children: (0, r.jsx)(a.Z, {
+      children: (0, r.jsx)(s.Z, {
         checked: true,
         disabled: true,
-        onChange: s.dG,
+        onChange: a.dG,
         className: c.bringToFront
       })
     })]

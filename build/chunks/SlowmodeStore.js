@@ -37,9 +37,9 @@ function m(e, t, n) {
     rateLimitPerUser: e.rateLimitPerUser,
     cooldownMs: n,
     cooldownEndTimestamp: r,
-    timer: new a.V7
+    timer: new o.V7
   }, _[t][e.id].timer.start(1e3, () => {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "SLOWMODE_SET_COOLDOWN",
       channelId: e.id,
       slowmodeType: t,

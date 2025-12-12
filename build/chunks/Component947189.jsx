@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk302221 = require("./302221.js"),
   Chunk324060 = require("./324060.js"),
   Chunk482617 = require("./482617.js"),
-  Chunk206862 = require("./206862.js");
+  Chunk246530 = require("./246530.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -44,10 +44,10 @@ function E(e) {
   let {
     start: t = 0,
     end: n,
-    alignment: a = "left"
+    alignment: o = "left"
   } = e, _ = (0, i.useRef)(Date.now()), E = (0, i.useRef)(0), b = (0, i.useContext)(d.Q), y = (0, l.dQu)(b.primaryColor).hex(), O = (0, f.Z)(y), v = (0, u.a7)(O), [S, I] = (0, i.useState)(t), T = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
   (0, i.useEffect)(() => {
-    let e = o().throttle(() => {
+    let e = a().throttle(() => {
       let r = Math.min((Date.now() - _.current) / h, 1);
       I(Math.round((n - t) * r + t)), r < 1 && (E.current = requestAnimationFrame(e))
     }, g);
@@ -70,5 +70,5 @@ function E(e) {
     fit: "layout",
     withReducedMotion: "play"
   };
-  return "left" === a ? (0, r.jsx)(l.P9c, m({}, C)) : (0, r.jsx)(l.ljV, m({}, C))
+  return "left" === o ? (0, r.jsx)(l.P9c, m({}, C)) : (0, r.jsx)(l.ljV, m({}, C))
 }

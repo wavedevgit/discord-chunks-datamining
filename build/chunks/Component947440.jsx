@@ -160,7 +160,7 @@ function J(t, e) {
             if (null != t && t.type === M.d4z.GUILD_VOICE) return (0, a.ZDy)(async () => {
               let {
                 default: e
-              } = await Promise.all([i.e("49049"), i.e("7654"), i.e("40283")]).then(i.bind(i, 560114));
+              } = await Promise.all([i.e("49049"), i.e("7654"), i.e("27267")]).then(i.bind(i, 560114));
               return i => {
                 var l, a;
                 return (0, n.jsx)(e, (l = function(t) {

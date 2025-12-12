@@ -37,7 +37,7 @@ let u = () => {
         type: "number",
         value: d.toString(),
         onChange: t => {
-          f((0, a.clamp)(+t, e, n))
+          f((0, o.clamp)(+t, e, n))
         },
         label: "Progress ( ".concat(module, " - ").concat(require, " ) ")
       })

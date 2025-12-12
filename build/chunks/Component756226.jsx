@@ -1,7 +1,7 @@
 /** Chunk was on 66462 **/
-/** chunk id: 756226, original params: e,t,r (module,exports,require) **/
+/** chunk id: 756226, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => O
 }), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -13,9 +13,9 @@ var Chunk793030 = require("./793030.js"),
   Chunk880257 = require("./880257.js"),
   Chunk863552 = require("./863552.jsx"),
   Chunk292352 = require("./292352.js"),
-  Chunk372807 = require("./372807.js"),
+  Chunk435757 = require("./435757.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk956206 = require("./956206.js");
+  Chunk441076 = require("./441076.js");
 let C = {
     [Chunk292352.MY.USER_INTERACTION]: (0, Chunk54381.jsx)(Chunk863552.Z, {
       width: 18,
@@ -58,12 +58,12 @@ let C = {
       height: 22
     })
   },
-  j = e => {
+  j = t => {
     let {
-      header: t,
+      header: e,
       description: r,
       icon: c
-    } = e;
+    } = t;
     return (0, o.jsxs)(n.Kqy, {
       direction: "horizontal",
       className: f.row,
@@ -78,7 +78,7 @@ let C = {
         className: f.rowContent,
         children: [(0, o.jsx)(i.Text, {
           variant: "text-sm/bold",
-          children: t
+          children: e
         }), (0, o.jsx)(i.Text, {
           variant: "text-xs/medium",
           children: r
@@ -86,26 +86,26 @@ let C = {
       })]
     })
   },
-  b = e => {
+  O = t => {
     let {
-      transitionState: t,
+      transitionState: e,
       onClose: r
-    } = e, i = (0, l.PO)("family_center_activity_card"), u = (0, s.o)(p.intl.string(d.default.q3IRal), p.intl.string(d.default.JNLpDZ)), h = (0, a.Z)(), f = (0, c._p)(i);
+    } = t, i = (0, l.PO)("family_center_activity_card"), u = (0, s.o)(p.intl.string(d.default.q3IRal), p.intl.string(d.default.JNLpDZ)), h = (0, a.Z)(), f = (0, c._p)(i);
     return (0, o.jsx)(n.Modal, {
-      transitionState: t,
+      transitionState: e,
       onClose: r,
       actions: [],
       title: u,
       children: (0, o.jsx)(n.Kqy, {
         gap: 8,
         fullWidth: false,
-        children: f.map(e => {
-          let [t, r] = e;
+        children: f.map(t => {
+          let [e, r] = t;
           return (0, o.jsx)(j, {
-            icon: C[t],
+            icon: C[e],
             header: r.tooltipHeader(),
             description: r.tooltipDescription(null != h ? h : true)
-          }, t)
+          }, e)
         })
       })
     })

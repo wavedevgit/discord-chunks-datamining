@@ -77,10 +77,10 @@ function j(e) {
   if (null == n) return null;
   let r = _.Z.getNumRoles(n.id),
     i = c.default.getId(),
-    a = p.ZP.getMember(e, i),
-    o = d.ZP.getChannels(e),
-    s = o[d.sH].length,
-    l = o[d.Zb].length,
+    o = p.ZP.getMember(e, i),
+    a = d.ZP.getChannels(e),
+    s = a[d.sH].length,
+    l = a[d.Zb].length,
     u = T.Z.getVoiceStates(e);
   return {
     guild_id: n.id,
@@ -89,10 +89,10 @@ function j(e) {
     guild_num_text_channels: s,
     guild_num_voice_channels: l,
     guild_num_roles: r,
-    guild_member_num_roles: null != a ? a.roles.length : 0,
+    guild_member_num_roles: null != o ? o.roles.length : 0,
     guild_member_perms: String(null != (t = g.Z.getGuildPermissions(n)) ? t : N.Hn),
     guild_is_vip: n.features.has(R.GuildFeatures.VIP_REGIONS),
-    is_member: null != a,
+    is_member: null != o,
     num_voice_channels_active: L(u)
   }
 }
@@ -119,7 +119,7 @@ function U(e) {
     let t = e => {
       if (null == e) returnfalse;
       let t = e.permissionOverwrites[r];
-      return null != t && a.e$(t.deny, R.Plq.VIEW_CHANNEL)
+      return null != t && o.e$(t.deny, R.Plq.VIEW_CHANNEL)
     };
     n = t(l.Ec.has(e.type) && null != e.parent_id ? u.Z.getChannel(e.parent_id) : e)
   }
@@ -157,9 +157,9 @@ function F(e) {
   if (C.default.isThrottled(e)) return;
   let r = !("location" in t) || t.location !== R.Sbl.GUILD_CREATE_INVITE_SUGGESTION,
     i = "guild_id" in t ? t.guild_id : r ? v.Z.getGuildId() : null,
-    a = "channel_id" in t ? t.channel_id : r ? O.Z.getChannelId(i) : null,
-    o = u.Z.getChannel(a),
-    s = x({}, t, j(Z(o, i)), null != i && null != a && (0, w.AB)(a) ? M(i, a) : U(o));
+    o = "channel_id" in t ? t.channel_id : r ? O.Z.getChannelId(i) : null,
+    a = u.Z.getChannel(o),
+    s = x({}, t, j(Z(a, i)), null != i && null != o && (0, w.AB)(o) ? M(i, o) : U(a));
   C.default.track(e, s, {
     flush: n
   })
@@ -202,7 +202,7 @@ function B(e) {
     guild_preset: (0, s.gs)(S.ZP.resolveGuildUnreadSetting(n), S.ZP.getMessageNotifications(t.guild_id)),
     parent_id: t.parent_id,
     parent_channel_type: t.parentChannelThreadType,
-    has_pending_member_action: (0, o.P)(t.guild_id, e),
+    has_pending_member_action: (0, a.P)(t.guild_id, e),
     can_send_message: g.Z.can(R.Plq.SEND_MESSAGES, t),
     is_app_dm: false
   }

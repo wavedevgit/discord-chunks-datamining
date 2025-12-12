@@ -1,16 +1,16 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 169903, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk473749 = require("./473749.js"),
   Chunk584825 = require("./584825.js"),
   Chunk14263 = require("./14263.js");
 
-function a(e, t) {
+function s(e, t) {
   let n = (0, i.qi)(e),
-    a = (0, l.Z)(e);
+    s = (0, l.Z)(e);
   return r.useMemo(() => n.map(e => {
     var n, r, i;
     let l = null == e ? true : e.role_id;
@@ -34,7 +34,7 @@ function a(e, t) {
     }({}, null != (n = null == t ? true : t.ppgs[e.id]) ? n : {}), i = i = {
       key: e.id,
       subscriptionListing: e,
-      roleMemberCount: null == l || null == a ? true : a[l]
+      roleMemberCount: null == l || null == s ? true : s[l]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -45,5 +45,5 @@ function a(e, t) {
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
     }), r
-  }), [n, null == t ? true : t.ppgs, a])
+  }), [n, null == t ? true : t.ppgs, s])
 }

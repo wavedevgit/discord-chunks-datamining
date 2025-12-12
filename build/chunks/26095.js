@@ -15,7 +15,7 @@ var Chunk165566 = require("./165566.js"),
     propTypes: true,
     type: true
   },
-  a = {
+  o = {
     name: true,
     length: true,
     prototype: true,
@@ -24,7 +24,7 @@ var Chunk165566 = require("./165566.js"),
     arguments: true,
     arity: true
   },
-  o = {
+  a = {
     $$typeof: true,
     render: true,
     defaultProps: true,
@@ -44,7 +44,7 @@ var Chunk165566 = require("./165566.js"),
 function c(e) {
   return r.isMemo(e) ? s : l[e.$$typeof] || i
 }
-l[Chunk165566.ForwardRef] = o, l[Chunk165566.Memo] = s;
+l[Chunk165566.ForwardRef] = a, l[Chunk165566.Memo] = s;
 var u = Object.defineProperty,
   d = Object.getOwnPropertyNames,
   f = Object.getOwnPropertySymbols,
@@ -60,9 +60,9 @@ function h(e, t, n) {
     }
     var i = d(t);
     f && (i = i.concat(f(t)));
-    for (var o = c(e), s = c(t), l = 0; l < i.length; ++l) {
+    for (var a = c(e), s = c(t), l = 0; l < i.length; ++l) {
       var g = i[l];
-      if (!a[g] && !(n && n[g]) && !(s && s[g]) && !(o && o[g])) {
+      if (!o[g] && !(n && n[g]) && !(s && s[g]) && !(a && a[g])) {
         var E = p(t, g);
         try {
           u(e, g, E)

@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => k
 });
 var i, Chunk569048 = require("./569048.js"),
-  o = require.n(Chunk569048),
+  a = require.n(Chunk569048),
   Chunk167006 = require("./167006.js"),
   l = require.n(Chunk167006),
   Chunk989872 = require("./989872.js"),
@@ -67,7 +67,7 @@ function A(e) {
 
 function N(e) {
   var t;
-  b[e.invite.code] = p.Z.createFromServer(e.invite), r = null != (t = o()(l()(u()(Object.values(b), "createdAt")))) ? t : null, v = false
+  b[e.invite.code] = p.Z.createFromServer(e.invite), r = null != (t = a()(l()(u()(Object.values(b), "createdAt")))) ? t : null, v = false
 }
 
 function P() {
@@ -78,7 +78,7 @@ function R(e) {
   var t;
   null != e.invites && e.invites.forEach(e => {
     null != b[e.code] && delete b[e.code]
-  }), r = null != (t = o()(l()(u()(Object.values(b), "createdAt")))) ? t : null, O = false
+  }), r = null != (t = a()(l()(u()(Object.values(b), "createdAt")))) ? t : null, O = false
 }
 
 function w() {
@@ -97,7 +97,7 @@ function L(e) {
   var t;
   b = {}, e.invites.forEach(e => {
     b[e.code] = p.Z.createFromServer(e)
-  }), r = null != (t = o()(l()(u()(Object.values(b), "createdAt")))) ? t : null, y = false
+  }), r = null != (t = a()(l()(u()(Object.values(b), "createdAt")))) ? t : null, y = false
 }
 
 function j(e) {
@@ -109,9 +109,9 @@ class M extends(i = Chunk442837.ZP.Store) {
     let {
       targetType: r,
       targetUserId: i,
-      targetApplicationId: a
+      targetApplicationId: o
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-    return r === _.Iq.STREAM && null != i ? null == (t = g[e]) ? true : t[i] : r === _.Iq.EMBEDDED_APPLICATION && null != a ? null == (n = E[e]) ? true : n[a] : h[e]
+    return r === _.Iq.STREAM && null != i ? null == (t = g[e]) ? true : t[i] : r === _.Iq.EMBEDDED_APPLICATION && null != o ? null == (n = E[e]) ? true : n[o] : h[e]
   }
   getFriendInvite() {
     return r

@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk125631 = require("./125631.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk462408 = require("./462408.js");
+  Chunk184904 = require("./184904.js");
 
 function h(e, t, n) {
   return (0, r.jsxs)("button", {
@@ -44,7 +44,7 @@ function m() {
   let e = Chunk430824.Z.getGuildsArray().filter(e => e.features.has(p.GuildFeatures.HUB));
   return (0, Chunk54381.jsxs)(Chunk473749.Fragment, {
     children: [(0, Chunk54381.jsxs)("header", {
-      className: Chunk462408.header,
+      className: Chunk184904.header,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
@@ -55,7 +55,7 @@ function m() {
         children: Chunk388032.intl.string(Chunk388032.t.DwevPs)
       })]
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk462408.grid,
+      className: Chunk184904.grid,
       children: [module.map(e => h(u.ZP.getGuildIconURL({
         id: e.id,
         icon: e.icon,

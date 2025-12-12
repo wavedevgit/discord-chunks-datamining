@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk365583 = require("./365583.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk616874 = require("./616874.js");
+  Chunk569162 = require("./569162.js");
 
 function O(t) {
   let {
@@ -29,7 +29,7 @@ function O(t) {
     onClose: I,
     onOpenGameSettings: f
   } = t, [x, S] = (0, l.Wu)([o.Z], () => [o.Z.isDeletingEntryHistory, o.Z.deleteOutboxEntryError]);
-  return r.useEffect(() => a.Bt, []), (0, e.jsxs)(s.Modal, {
+  return r.useEffect(() => c.Bt, []), (0, e.jsxs)(s.Modal, {
     title: (0, T.y)(i),
     subtitle: R.intl.format(R.t.KV72oe, {
       settingsHook: (t, n) => {
@@ -37,7 +37,7 @@ function O(t) {
           entry: i,
           onOpenGameSettings: f
         });
-        return (0, e.jsx)(d.Anchor, {
+        return (0, e.jsx)(a.Anchor, {
           onClick: () => {
             null == p || p({
               action: "PRESS_CLEAR_HISTORY_DISCLAIMER"
@@ -60,7 +60,7 @@ function O(t) {
       onClick: () => {
         null == p || p({
           action: "PRESS_CLEAR_HISTORY_BUTTON"
-        }), (0, c.CV)(i, n.id, I)
+        }), (0, d.CV)(i, n.id, I)
       },
       disabled: x,
       variant: "critical-primary",
@@ -70,9 +70,9 @@ function O(t) {
     transitionState: O,
     children: [null != S ? (0, e.jsxs)("div", {
       className: h.error,
-      children: [(0, e.jsx)(d.k$p, {
-        color: d.TVs.colors.STATUS_DANGER
-      }), (0, e.jsx)(d.Text, {
+      children: [(0, e.jsx)(a.k$p, {
+        color: a.TVs.colors.STATUS_DANGER
+      }), (0, e.jsx)(a.Text, {
         variant: "text-sm/medium",
         children: R.intl.string(R.t.FMbL3s)
       })]

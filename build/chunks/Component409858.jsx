@@ -48,7 +48,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk655225 = require("./655225.js"),
+  Chunk269142 = require("./269142.js"),
   Chunk167969 = require("./167969.js"),
   Chunk557256 = require("./557256.js");
 
@@ -91,8 +91,8 @@ let X = e => {
     return r.useEffect(() => {
       var e;
       if (t !== V.wZ8.CONFIRM) return;
-      let i = E.Z.getSoundById(n);
-      (0, T.playGiftSound)(n, null != (e = null == i ? true : i.volume) ? e : 1)
+      let i = T.Z.getSoundById(n);
+      (0, A.playGiftSound)(n, null != (e = null == i ? true : i.volume) ? e : 1)
     }, [t, n]), null
   };
 class et extends Chunk473749.Component {
@@ -279,8 +279,8 @@ class et extends Chunk473749.Component {
       soundId: p,
       isThemeDark: m
     } = this.props, h = Chunk594174.default.getUser(Chunk473749.userId), {
-      isCustomGift: b,
-      isCollectiblesGift: g,
+      isCustomGift: g,
+      isCollectiblesGift: b,
       accepted: y,
       opened: O,
       emojiURL: j
@@ -298,25 +298,25 @@ class et extends Chunk473749.Component {
         "data-migration-pending": true,
         transitionState: Chunk979554,
         size: Chunk481060.CgR.SMALL,
-        className: Chunk655225.modal,
+        className: Chunk269142.modal,
         "aria-labelledby": Chunk120356,
         parentComponent: "GiftCodeModal",
         children: [null != Chunk473749.giftStyle && !Chunk728345 && !Chunk812206 && (0, Chunk54381.jsx)(Chunk981632.Z, {
           defaultAnimationState: this.getDefaultAnimationStatus(),
           idleAnimationState: this.getIdleAnimationStatus(),
           giftStyle: Chunk473749.giftStyle,
-          className: Chunk655225.seasonalGiftIcon
+          className: Chunk269142.seasonalGiftIcon
         }), !Chunk728345 && (0, Chunk54381.jsx)("div", {
-          className: Chunk655225.backSplash
+          className: Chunk269142.backSplash
         }), !Chunk812206 && (0, Chunk54381.jsx)(Chunk481060.olH, {
           "data-migration-pending": true,
           onClick: require,
-          className: Chunk655225.closeButton
+          className: Chunk269142.closeButton
         }), (0, Chunk54381.jsxs)(Chunk481060.hzk, {
           "data-migration-pending": true,
           className: s()({
-            [Chunk655225.content]: !Chunk728345,
-            [Chunk655225.contentCustomGift]: Chunk728345
+            [Chunk269142.content]: !Chunk728345,
+            [Chunk269142.contentCustomGift]: Chunk728345
           }),
           children: [!Chunk812206 && (null == Chunk473749.giftStyle || Chunk728345 && Chunk597688) ? (0, Chunk54381.jsx)(Chunk925329.Z, {
             size: Chunk925329.A.LARGE,
@@ -328,31 +328,31 @@ class et extends Chunk473749.Component {
           }), (0, Chunk54381.jsxs)(Chunk481060.Heading, {
             id: Chunk120356,
             className: s()({
-              [Chunk655225.customGiftHeader]: Chunk728345 && !Chunk597688,
-              [Chunk655225.header]: !Chunk728345 || Chunk597688
+              [Chunk269142.customGiftHeader]: Chunk728345 && !Chunk597688,
+              [Chunk269142.header]: !Chunk728345 || Chunk597688
             }),
             variant: "heading-sm/semibold",
             children: [(0, Chunk54381.jsx)("div", {
               className: s()({
-                [Chunk655225.customGiftHeaderText]: Chunk728345
+                [Chunk269142.customGiftHeaderText]: Chunk728345
               }),
               children: this.firstHeaderText
             }), (0, Chunk54381.jsx)("div", {
               children: this.secondHeaderText
             })]
           }), !(Chunk728345 && !Chunk597688) && (0, Chunk54381.jsx)(Chunk481060.Text, {
-            className: Chunk655225.body,
+            className: Chunk269142.body,
             variant: "text-sm/normal",
             children: this.bodyText
           }), Chunk728345 && !Chunk812206 && null != Chunk473749.giftStyle && !Chunk597688 && !Chunk745510 && (0, Chunk54381.jsx)(Chunk981632.Z, {
             defaultAnimationState: this.getDefaultAnimationStatus(),
             idleAnimationState: this.getIdleAnimationStatus(),
-            className: Chunk655225.giftAnimation,
+            className: Chunk269142.giftAnimation,
             giftStyle: Chunk473749.giftStyle
           }), this.state.opened && !Chunk745510 && Chunk812206 && (0, Chunk54381.jsx)(Chunk551425.Z, {
             giftCode: Chunk473749
           }), Chunk745510 && (0, Chunk54381.jsx)(Chunk481060.Text, {
-            className: Chunk655225.body,
+            className: Chunk269142.body,
             variant: "text-md/normal",
             children: this.errorMessage
           }), Chunk728345 && this.state.opened && !this.state.accepted && !Chunk745510 && null != Chunk533307 && "" !== Chunk533307 && !Chunk313201 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
@@ -363,7 +363,7 @@ class et extends Chunk473749.Component {
                 sender: Chunk51144.ZP.getName(Chunk906732)
               })
             }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-              className: Chunk655225.customMessage,
+              className: Chunk269142.customMessage,
               variant: "text-md/semibold",
               children: Chunk533307
             })]
@@ -426,7 +426,7 @@ class et extends Chunk473749.Component {
         onClose: e,
         libraryApplication: t
       } = this.props;
-      (0, C.uL)(V.Z5c.APPLICATION_LIBRARY, {
+      (0, _.uL)(V.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : true
         }
@@ -439,13 +439,13 @@ class et extends Chunk473749.Component {
 let en = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.Z, Chunk82142.Z, Chunk509545.Z, Chunk607070.Z, Chunk597688.Z], e => {
     let {
       giftCode: t
-    } = e, n = N.Z.get(t.skuId), i = null != n ? g.Z.getApplication(n.applicationId) : null, r = p.Z.useReducedMotion;
+    } = e, n = N.Z.get(t.skuId), i = null != n ? b.Z.getApplication(n.applicationId) : null, r = p.Z.useReducedMotion;
     return {
       sku: n,
       libraryApplication: null != n && (null == t ? true : t.entitlementBranches) != null ? (0, L.z2)(t.entitlementBranches, n, I.Z) : null,
       application: i,
       subscriptionPlan: null != t.subscriptionPlanId ? (0, M.oE)(t.subscriptionPlanId) : null,
-      accepting: _.Z.getIsAccepting(t.code),
+      accepting: E.Z.getIsAccepting(t.code),
       useReducedMotion: r
     }
   })(e => {
@@ -458,10 +458,10 @@ let en = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
       analyticsLocations: o,
       emojiName: c,
       soundId: u
-    } = e, d = null != t && (0, Z.K$)(t);
+    } = e, d = null != t && (0, C.K$)(t);
     return (r.useEffect(() => {
       if (d) {
-        (0, A.L)({
+        (0, Z.L)({
           sku: t,
           giftCode: n,
           channelContext: l,
@@ -498,20 +498,20 @@ let en = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.
         }
         return r
       }(e, ["channelContext", "code", "customGiftMessage", "emojiName", "soundId", "onClose"]);
-    let b = (0, x.Dt)(),
-      g = (0, o.e7)([_.Z], () => _.Z.get(l)),
+    let g = (0, x.Dt)(),
+      b = (0, o.e7)([E.Z], () => E.Z.get(l)),
       y = (0, f.ZP)(),
       {
         analyticsLocations: P
       } = (0, h.ZP)(m.Z.GIFT_CODE_MODAL),
       {
         product: S
-      } = (0, j.T)(null == g ? true : g.skuId, true);
-    return null == g ? null : (0, i.jsx)(en, (t = Q({}, p), n = n = {
+      } = (0, j.T)(null == b ? true : b.skuId, true);
+    return null == b ? null : (0, i.jsx)(en, (t = Q({}, p), n = n = {
       customGiftMessage: s,
       channelContext: r,
-      giftCode: g,
-      headerId: b,
+      giftCode: b,
+      headerId: g,
       emojiName: a,
       soundId: u,
       analyticsLocations: P,

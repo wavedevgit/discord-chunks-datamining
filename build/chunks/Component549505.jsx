@@ -12,7 +12,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk981631 = require("./981631.js"),
   Chunk332325 = require("./332325.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk353697 = require("./353697.js");
+  Chunk688364 = require("./688364.js");
 
 function m(t) {
   let {
@@ -58,7 +58,7 @@ function u(t) {
       color: "currentColor"
     }),
     text: d.intl.format(d.t.wBlJCr, {
-      recentActivityURL: c.Z.getArticleURL(l.BhN.MEMBER_LIST_ACTIVITY_FEED),
+      recentActivityURL: l.Z.getArticleURL(c.BhN.MEMBER_LIST_ACTIVITY_FEED),
       handleActivityPrivacyClick: () => {
         e(), (0, o.Z)(a.Z.ACTIVITY_PRIVACY)
       }

@@ -1,4 +1,4 @@
-/** Chunk was on 92504 **/
+/** Chunk was on 69844 **/
 /** chunk id: 881294, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   nu: () => p,
@@ -16,43 +16,43 @@ var Chunk860911 = require("./860911.js"),
   Chunk981631 = require("./981631.js");
 
 function u(e, t) {
-  var n, a, r;
-  let i = c.z8.getField("sessionId"),
+  var n, r, i;
+  let a = c.z8.getField("sessionId"),
     l = c.z8.getField("guildId"),
     d = null == (n = c.z8.getField("entrypoint")) ? true : n.name,
     u = s.default.getCurrentUser(),
-    p = (a = function(e) {
+    p = (r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          a = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), a.forEach(function(t) {
-          var a;
-          a = n[t], t in e ? Object.defineProperty(e, t, {
-            value: a,
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = a
+          }) : e[t] = r
         })
       }
       return e
-    }({}, t), r = r = {
+    }({}, t), i = i = {
       guild_id: l,
-      directory_session_id: i,
+      directory_session_id: a,
       source: d,
       user_id: null == u ? true : u.id
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, a)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
       return n
-    })(Object(r)).forEach(function(e) {
-      Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(r, e))
-    }), a);
+    })(Object(i)).forEach(function(e) {
+      Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+    }), r);
   return o.default.track(e, p)
 }
 
@@ -64,11 +64,11 @@ function m() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     t = new URL(location.href);
   for (let n in module) {
-    let a = module[require];
+    let r = module[require];
     exports.searchParams.set(require, Chunk860911)
   }
   let n = exports.pathname + exports.search,
-    r = (0, Chunk860911.Ui)(require, false);
+    i = (0, Chunk860911.Ui)(require, false);
   (0, Chunk703656.uL)(Chunk442837)
 }
 

@@ -39,7 +39,7 @@ let g = (0, Chunk473749.createContext)(null),
       slot: e.slot
     }, t, g), {
       locale: c
-    } = (0, o.j)(), u = (0, p.R)({
+    } = (0, a.j)(), u = (0, p.R)({
       ...n,
       locale: c,
       createCalendar: f.Y
@@ -53,7 +53,7 @@ let g = (0, Chunk473749.createContext)(null),
     return h.createElement(r.zt, {
       values: [
         [E, u],
-        [a.r, {
+        [o.r, {
           ...m,
           ref: d
         }],
@@ -70,7 +70,7 @@ let g = (0, Chunk473749.createContext)(null),
     let {
       className: n,
       children: r
-    } = e, o = (0, h.useContext)(E), s = (0, h.useContext)(b), l = null != o ? o : s;
+    } = e, a = (0, h.useContext)(E), s = (0, h.useContext)(b), l = null != a ? a : s;
     return h.createElement(h.Fragment, null, h.createElement(i.Z, {
       ...e,
       ref: t,
@@ -81,19 +81,19 @@ let g = (0, Chunk473749.createContext)(null),
       isDisabled: l.isDisabled
     }, l.segments.map((e, t) => (0, h.cloneElement)(r(e), {
       key: t
-    }))), h.createElement(a.I, null))
+    }))), h.createElement(o.I, null))
   }),
   S = (0, Chunk473749.forwardRef)(function({
     segment: e,
     ...t
   }, n) {
     let i = (0, h.useContext)(E),
-      a = (0, h.useContext)(b),
-      o = null != i ? i : a,
+      o = (0, h.useContext)(b),
+      a = null != i ? i : o,
       s = (0, _.B)(n),
       {
         segmentProps: f
-      } = (0, l.O)(e, o, s),
+      } = (0, l.O)(e, a, s),
       {
         focusProps: p,
         isFocused: g,
@@ -104,15 +104,15 @@ let g = (0, Chunk473749.createContext)(null),
         isHovered: v
       } = (0, u.X)({
         ...t,
-        isDisabled: o.isDisabled || "literal" === e.type
+        isDisabled: a.isDisabled || "literal" === e.type
       }),
       S = (0, r.aX)({
         ...t,
         values: {
           ...e,
-          isReadOnly: o.isReadOnly,
-          isInvalid: o.isInvalid,
-          isDisabled: o.isDisabled,
+          isReadOnly: a.isReadOnly,
+          isInvalid: a.isInvalid,
+          isDisabled: a.isDisabled,
           isHovered: v,
           isFocused: g,
           isFocusVisible: y
@@ -128,9 +128,9 @@ let g = (0, Chunk473749.createContext)(null),
       style: f.style,
       ref: s,
       "data-placeholder": e.isPlaceholder || true,
-      "data-invalid": o.isInvalid || true,
-      "data-readonly": o.isReadOnly || true,
-      "data-disabled": o.isDisabled || true,
+      "data-invalid": a.isInvalid || true,
+      "data-readonly": a.isReadOnly || true,
+      "data-disabled": a.isDisabled || true,
       "data-type": e.type,
       "data-hovered": v || true,
       "data-focused": g || true,

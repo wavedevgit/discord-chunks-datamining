@@ -12,18 +12,18 @@ var Chunk990547 = require("./990547.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk760213 = require("./760213.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk167601 = require("./167601.js");
+  Chunk307847 = require("./307847.js");
 
 function d(e) {
   let {
     onDismiss: t
   } = e;
-  return (0, a.Z)({
+  return (0, l.Z)({
     type: i.ImpressionTypes.MODAL,
     name: i.ImpressionNames.MULTI_ACCOUNT_SWITCH_LANDING
-  }), (0, r.jsxs)(l.ZP, {
+  }), (0, r.jsxs)(a.ZP, {
     className: u.chooseAccountAuthBox,
-    children: [(0, r.jsx)(l.Dx, {
+    children: [(0, r.jsx)(a.Dx, {
       children: c.intl.string(c.t.bVbB63)
     }), (0, r.jsx)(s.Text, {
       className: u.chooseAccountHelpText,

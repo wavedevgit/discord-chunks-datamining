@@ -18,25 +18,25 @@ function s(e) {
     d = n.x + n.width / 2 - s.width / 2,
     f = n.y + n.height / 2 - s.height / 2;
   switch (c) {
-    case o.we:
+    case a.we:
       t = {
         x: d,
         y: n.y - s.height
       };
       break;
-    case o.I:
+    case a.I:
       t = {
         x: d,
         y: n.y + n.height
       };
       break;
-    case o.F2:
+    case a.F2:
       t = {
         x: n.x + n.width,
         y: f
       };
       break;
-    case o.t$:
+    case a.t$:
       t = {
         x: n.x - s.width,
         y: f
@@ -48,14 +48,14 @@ function s(e) {
         y: n.y
       }
   }
-  var p = c ? (0, a.Z)(c) : null;
+  var p = c ? (0, o.Z)(c) : null;
   if (null != p) {
     var _ = "y" === p ? "height" : "width";
     switch (u) {
-      case o.BL:
+      case a.BL:
         t[p] = t[p] - (n[_] / 2 - s[_] / 2);
         break;
-      case o.ut:
+      case a.ut:
         t[p] = t[p] + (n[_] / 2 - s[_] / 2)
     }
   }

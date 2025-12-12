@@ -53,9 +53,9 @@ function d(e) {
   let {
     title: t,
     subtitle: n,
-    confirmText: s = o.intl.string(o.t.BddRzS)
+    confirmText: s = a.intl.string(a.t.BddRzS)
   } = e;
-  return (0, a.h7j)(e => (0, r.jsx)(i.u_l, u(l({}, e), {
+  return (0, o.h7j)(e => (0, r.jsx)(i.u_l, u(l({}, e), {
     title: t,
     subtitle: n,
     actions: [{

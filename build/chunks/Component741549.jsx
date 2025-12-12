@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,12 +23,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk947189 = require("./947189.jsx"),
   Chunk612776 = require("./612776.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk547081 = require("./547081.js"),
+  Chunk862474 = require("./862474.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk554445 = require("./554445.js"),
-  Chunk469095 = require("./469095.js"),
-  Chunk1222 = require("./1222.js"),
-  Chunk976999 = require("./976999.js");
+  Chunk417788 = require("./417788.js"),
+  Chunk763645 = require("./763645.js"),
+  Chunk868981 = require("./868981.js"),
+  Chunk918746 = require("./918746.js");
 
 function N() {
   let e = (0, Chunk473749.useContext)(Chunk324060.Q),
@@ -36,7 +36,7 @@ function N() {
     {
       quests: {
         numOrbs: n,
-        numCompleted: a
+        numCompleted: o
       } = {
         numOrbs: 0,
         numCompleted: 0
@@ -48,33 +48,33 @@ function N() {
       (0, Chunk782568.Z)(Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_LEARN_MORE))
     };
   return (0, Chunk54381.jsxs)(Chunk198358.Z, {
-    className: Chunk469095.container,
+    className: Chunk763645.container,
     children: [(0, Chunk54381.jsx)(Chunk275189.Z, {
-      className: Chunk469095.video,
+      className: Chunk763645.video,
       slide: Chunk612776.yD.QUESTS,
-      videoEntrySrc: Chunk1222.Z,
-      videoLoopSrc: Chunk976999.Z
+      videoEntrySrc: Chunk868981.Z,
+      videoLoopSrc: Chunk918746.Z
     }), (0, Chunk54381.jsxs)("div", {
       children: [(0, Chunk54381.jsxs)("div", {
-        className: o()(Chunk554445.title, {
-          [Chunk469095.emptyState]: N
+        className: a()(Chunk417788.title, {
+          [Chunk763645.emptyState]: N
         }),
         children: [(0, Chunk54381.jsx)(Chunk793030.qDn, {
           size: "refresh_sm",
           color: exports,
-          colorClass: Chunk554445.iconColor,
-          className: Chunk554445.titleIcon
+          colorClass: Chunk417788.iconColor,
+          className: Chunk417788.titleIcon
         }), (0, Chunk54381.jsx)(Chunk391876.Z, {
           variant: "eyebrow",
-          className: Chunk554445.eyebrow,
-          children: N ? Chunk388032.intl.string(Chunk547081.default.QkdNzt) : Chunk388032.intl.string(Chunk547081.default.qsFkSO)
+          className: Chunk417788.eyebrow,
+          children: N ? Chunk388032.intl.string(Chunk862474.default.QkdNzt) : Chunk388032.intl.string(Chunk862474.default.qsFkSO)
         })]
       }), !N && (0, Chunk54381.jsx)(Chunk947189.Z, {
         end: Chunk120356
       }), P && (0, Chunk54381.jsx)(Chunk391876.Z, {
         variant: "heading-xxl/medium",
-        className: Chunk469095.subtitle,
-        children: 0 === Chunk120356 ? Chunk388032.intl.format(Chunk547081.default.UYTBoT, {
+        className: Chunk763645.subtitle,
+        children: 0 === Chunk120356 ? Chunk388032.intl.format(Chunk862474.default.UYTBoT, {
           learnMoreHook: (e, t) => (0, r.jsx)(s.P3F, {
             onClick: R,
             className: T.learnMore,
@@ -84,7 +84,7 @@ function N() {
               children: e
             })
           }, t)
-        }) : Chunk388032.intl.format(Chunk547081.default["gd+Olh"], {
+        }) : Chunk388032.intl.format(Chunk862474.default["gd+Olh"], {
           numOrbs: require,
           orbsHook: (e, t) => (0, r.jsxs)(m.Z, {
             children: [(0, r.jsx)(s.aQr, {

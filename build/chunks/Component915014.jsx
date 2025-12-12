@@ -15,7 +15,7 @@ var Chunk36563 = require("./36563.jsx"),
   Chunk146078 = require("./146078.js"),
   Chunk228168 = require("./228168.js"),
   Chunk268685 = require("./268685.js"),
-  Chunk407518 = require("./407518.js");
+  Chunk99520 = require("./99520.js");
 let _ = 3;
 
 function m(e) {
@@ -27,7 +27,7 @@ function m(e) {
     mutualGuilds: h
   } = (0, l.Z)(t), g = null != m && m.length > 0, E = null != h && h.length > 0, b = g && E ? "text-xs/normal" : "text-sm/normal";
   if (!g && !E) return null;
-  let y = () => g ? (0, r.jsxs)(o.P3F, {
+  let y = () => g ? (0, r.jsxs)(a.P3F, {
       className: p.section,
       onClick: () => null == n ? true : n(d.oh.MUTUAL_FRIENDS),
       children: [(0, r.jsx)(i.Z, {
@@ -42,7 +42,7 @@ function m(e) {
         hideOverflowCount: true,
         disableUsernameTooltip: true,
         "aria-hidden": true
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         className: p.text,
         variant: b,
         color: "interactive-text-default",
@@ -53,10 +53,10 @@ function m(e) {
       "aria-hidden": "true",
       className: p.spacer
     }) : null,
-    v = () => E ? (0, r.jsxs)(o.P3F, {
+    v = () => E ? (0, r.jsxs)(a.P3F, {
       className: p.section,
       onClick: () => null == n ? true : n(d.oh.MUTUAL_GUILDS),
-      children: [!g && (0, r.jsx)(a.Z, {
+      children: [!g && (0, r.jsx)(o.Z, {
         maxGuilds: _,
         guilds: h.map(e => {
           let {
@@ -67,7 +67,7 @@ function m(e) {
         size: s.Z.Sizes.SMOL,
         hideOverflowCount: true,
         disableGuildNameTooltip: true
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         className: p.text,
         variant: b,
         color: "interactive-text-default",

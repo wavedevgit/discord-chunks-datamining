@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 331197, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,12 +25,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk127379 = require("./127379.js"),
   Chunk388032 = require("./388032.jsx");
 
-function j(e) {
+function E(e) {
   let {
     channel: t,
-    themeable: j,
-    whichPopoutIsOpen: S,
-    setWhichPopoutIsOpen: _
+    themeable: E,
+    whichPopoutIsOpen: j,
+    setWhichPopoutIsOpen: S
   } = e, {
     parentAnalyticsLocation: P
   } = (0, u.ZP)(), {
@@ -45,14 +45,14 @@ function j(e) {
     suppress: M
   } = (0, C.Z)(t), R = (0, l.e7)([y.Z], () => y.Z.isDeaf()), L = w || M || R, D = (0, m.sR)({
     isSoundboardButtonDisabled: L
-  }), [k, U] = (0, f.cv)(D), {
+  }), [k, U] = (0, h.cv)(D), {
     analyticsLocations: V
   } = (0, u.ZP)(), {
     isHovered: F,
     setIsHovered: B,
     onMouseEnter: H,
     onMouseLeave: G
-  } = (0, h.Z)(200, 300);
+  } = (0, f.Z)(200, 300);
 
   function z(e) {
     null != A && (0, c.jW)(e, async () => {
@@ -98,19 +98,19 @@ function j(e) {
   }
 
   function W() {
-    (0, d.v)(P, d.d.SOUNDBOARD), S === x.D.SOUNDBOARD ? (null == _ || _(true), G()) : (null != S ? (Z(), H()) : Z(), null == _ || _(x.D.SOUNDBOARD))
+    (0, d.v)(P, d.d.SOUNDBOARD), j === O.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != j ? (Z(), H()) : Z(), null == S || S(O.D.SOUNDBOARD))
   }
   let q = r.useRef(null);
   return (0, i.jsx)(s.y, {
     targetElementRef: q,
-    shouldShow: F && (S === x.D.SOUNDBOARD || null == S) || S === x.D.SOUNDBOARD,
+    shouldShow: F && (j === O.D.SOUNDBOARD || null == j) || j === O.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      B(false), null == _ || _(true)
+      B(false), null == S || S(true)
     },
     renderPopout: e => {
       let {
@@ -133,11 +133,11 @@ function j(e) {
         })
       })
     },
-    children: () => (0, i.jsx)(O.d, {
+    children: () => (0, i.jsx)(_.d, {
       ref: q,
       isTrayButton: true,
-      themeable: j,
-      label: w ? E.intl.string(E.t["Ox4/zU"]) : M ? E.intl.string(E.t["+YBKYI"]) : R ? E.intl.string(E.t.X1lQli) : true,
+      themeable: E,
+      label: w ? x.intl.string(x.t["Ox4/zU"]) : M ? x.intl.string(x.t["+YBKYI"]) : R ? x.intl.string(x.t.X1lQli) : true,
       iconComponent: I,
       disabled: L,
       onContextMenu: z,
@@ -146,10 +146,10 @@ function j(e) {
         H(), T()
       },
       onMouseLeave: () => {
-        null == S && (G(), N())
+        null == j && (G(), N())
       },
-      isActive: F || S === x.D.SOUNDBOARD,
-      color: F || S === x.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: F || j === O.D.SOUNDBOARD,
+      color: F || j === O.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

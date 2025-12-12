@@ -23,7 +23,7 @@ function s(e) {
     description: n,
     value: null != c ? c.variantId : null,
     clearable: null != c,
-    options: (0, a.ak)(s),
-    onChange: e => (0, o.rX)(s.system, l, e)
+    options: (0, o.ak)(s),
+    onChange: e => (0, a.rX)(s.system, l, e)
   })
 }

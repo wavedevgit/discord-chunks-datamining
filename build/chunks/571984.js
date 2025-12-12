@@ -46,7 +46,7 @@ class p extends Chunk147913.Z {
       u.d.getState().isEnabled && t.forEach(e => {
         let t = l.Z.getStreamForUser(e.userId, e.guildId),
           n = l.Z.getActiveStreamForUser(e.userId, e.guildId);
-        null != t && null == n ? (0, a.rn)(t) : null == t && null != n && ((0, a.g)((0, s.V9)(n), false, true), this.findAndWatchStream())
+        null != t && null == n ? (0, o.rn)(t) : null == t && null != n && ((0, o.g)((0, s.V9)(n), false, true), this.findAndWatchStream())
       })
     }, f))
   }

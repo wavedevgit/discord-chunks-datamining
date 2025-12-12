@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 7782, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk60845 = require("./60845.js");
+  Chunk291738 = require("./291738.js");
 let T = e => {
     let {
       userId: t,
@@ -37,7 +37,7 @@ let T = e => {
     } = e, l = (0, s.e7)([y.Z], () => y.Z.getMutualGuilds(t), [t]), a = r.useMemo(() => null != l ? l.slice(0, 3).map((e, t) => {
       let {
         guild: n
-      } = e, r = null != n ? j.ZP.getGuildIconURL({
+      } = e, r = null != n ? E.ZP.getGuildIconURL({
         id: n.id,
         icon: n.icon,
         size: 24
@@ -90,11 +90,11 @@ let T = e => {
       relationshipType: n,
       userId: r,
       showingBanner: l
-    } = e, a = null == (t = E.default.getUser(r)) ? true : t.bot, o = () => {
+    } = e, a = null == (t = x.default.getUser(r)) ? true : t.bot, o = () => {
       u.Z.addRelationship({
         userId: r,
         context: {
-          location: _.ZY5.DM_CHANNEL
+          location: S.ZY5.DM_CHANNEL
         }
       })
     }, s = (0, i.jsx)(c.Button, {
@@ -102,13 +102,13 @@ let T = e => {
       variant: "secondary",
       onClick: () => {
         u.Z.blockUser(r, {
-          location: _.ZY5.DM_CHANNEL
+          location: S.ZY5.DM_CHANNEL
         })
       },
       text: I.intl.string(I.t.l4Emac)
-    }), d = (0, f.n)(r);
+    }), d = (0, h.n)(r);
     switch (n) {
-      case _.OGo.NONE:
+      case S.OGo.NONE:
         return (0, i.jsxs)(i.Fragment, {
           children: [!a && !l && (0, i.jsx)(c.Button, {
             size: "sm",
@@ -117,31 +117,31 @@ let T = e => {
             text: d
           }), s]
         });
-      case _.OGo.FRIEND:
+      case S.OGo.FRIEND:
         return (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(c.Button, {
             size: "sm",
             variant: "secondary",
             onClick: () => {
               u.Z.removeFriend(r, {
-                location: _.ZY5.DM_CHANNEL
+                location: S.ZY5.DM_CHANNEL
               })
             },
             text: I.intl.string(I.t.cvSt1J)
           }), s]
         });
-      case _.OGo.BLOCKED:
+      case S.OGo.BLOCKED:
         return (0, i.jsx)(c.Button, {
           size: "sm",
           variant: "secondary",
           onClick: () => {
             u.Z.unblockUser(r, {
-              location: _.ZY5.DM_CHANNEL
+              location: S.ZY5.DM_CHANNEL
             })
           },
           text: I.intl.string(I.t.XyHpKH)
         });
-      case _.OGo.PENDING_INCOMING:
+      case S.OGo.PENDING_INCOMING:
         return (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(c.Button, {
             size: "sm",
@@ -153,13 +153,13 @@ let T = e => {
             variant: "secondary",
             onClick: () => {
               u.Z.cancelFriendRequest(r, {
-                location: _.ZY5.DM_CHANNEL
+                location: S.ZY5.DM_CHANNEL
               })
             },
             text: I.intl.string(I.t.rQSndv)
           }), s]
         });
-      case _.OGo.PENDING_OUTGOING:
+      case S.OGo.PENDING_OUTGOING:
         return (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(c.Button, {
             size: "sm",
@@ -179,22 +179,22 @@ let T = e => {
     } = e, l = r.useCallback(() => {
       (0, c.showToast)((0, c.createToast)(I.intl.string(I.t.a2j0hv), c.ToastType.FAILURE))
     }, []), a = r.useCallback(() => {
-      C.Z.closeChannelSidebar(O.uZ)
+      C.Z.closeChannelSidebar(_.uZ)
     }, []), o = r.useCallback(() => {
-      C.Z.closeChannelSidebar(O.uZ)
+      C.Z.closeChannelSidebar(_.uZ)
     }, []), {
       acceptMessageRequest: s,
       rejectMessageRequest: u,
       isAcceptLoading: d,
       isRejectLoading: p,
-      isOptimisticAccepted: f,
-      isOptimisticRejected: h
+      isOptimisticAccepted: h,
+      isOptimisticRejected: f
     } = (0, m.m)({
-      user: E.default.getUser(n),
+      user: x.default.getUser(n),
       onError: l,
       onAcceptSuccess: o,
       onRejectSuccess: a
-    }), g = d || p || f || h;
+    }), g = d || p || h || f;
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(c.Button, {
         variant: "primary",
@@ -220,7 +220,7 @@ let T = e => {
       showingBanner: r
     } = e, {
       channelId: l
-    } = (0, g._)(), u = (0, s.e7)([h.Z], () => null != l && h.Z.isSpam(l), [l]), d = (0, s.e7)([x.Z], () => x.Z.getRelationshipType(t), [t]), p = n.id === l, f = !o.tq && !p, m = !!o.tq || p || u, C = u || p ? (0, i.jsxs)("div", {
+    } = (0, g._)(), u = (0, s.e7)([f.Z], () => null != l && f.Z.isSpam(l), [l]), d = (0, s.e7)([O.Z], () => O.Z.getRelationshipType(t), [t]), p = n.id === l, h = !o.tq && !p, m = !!o.tq || p || u, C = u || p ? (0, i.jsxs)("div", {
       className: Z.inline,
       children: [(0, i.jsx)(A, {
         channelId: n.id,
@@ -234,12 +234,12 @@ let T = e => {
         relationshipType: d,
         userId: t,
         showingBanner: r
-      }), !r && (0, i.jsx)(S.Z, {
+      }), !r && (0, i.jsx)(j.Z, {
         otherUserId: t,
         channel: n,
-        navigateAwayOnReportSuccess: f
+        navigateAwayOnReportSuccess: h
       })]
-    }), y = d !== _.OGo.PENDING_INCOMING || u || p ? null : (0, i.jsx)(c.Text, {
+    }), y = d !== S.OGo.PENDING_INCOMING || u || p ? null : (0, i.jsx)(c.Text, {
       color: "text-default",
       variant: "text-sm/normal",
       children: I.intl.string(I.t.c2v5nO)

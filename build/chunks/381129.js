@@ -19,7 +19,7 @@ function d(e, t) {
     var r;
     return null != (r = t.memberCount) ? r : 0
   }
-  return o.ZP.getProps(t.getGuildId(), t.id).groups.forEach(t => {
+  return a.ZP.getProps(t.getGuildId(), t.id).groups.forEach(t => {
     ("@everyone" === e || t.id !== l.Skl.OFFLINE) && (n += t.count)
   }), n
 }
@@ -47,7 +47,7 @@ let p = {
   },
   everyoneMemberCount: d,
   extractEveryoneRole: function(e, t) {
-    for (let n of a.ZP.parsePreprocessor(t, e)) {
+    for (let n of o.ZP.parsePreprocessor(t, e)) {
       let e = f(n);
       if (null != e) return e
     }

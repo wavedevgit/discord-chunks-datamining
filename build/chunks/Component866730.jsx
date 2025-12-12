@@ -1,7 +1,7 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 866730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -12,7 +12,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk713284 = require("./713284.js"),
   Chunk211644 = require("./211644.js"),
   Chunk681619 = require("./681619.jsx"),
-  Chunk135970 = require("./135970.js");
+  Chunk607669 = require("./607669.js");
 let m = e => {
     switch (e) {
       case o.D.DC_DISMISSED:
@@ -45,13 +45,13 @@ let m = e => {
     }
   }];
 
-function f() {
+function x() {
   let e = (0, Chunk442837.e7)([Chunk713284.Z], () => Chunk713284.Z.getDCFEvents()),
     t = (0, Chunk211644.ZP)(e => e.candidates),
     n = (0, Chunk211644.ZP)(e => e.lastWinnerTime),
     r = 0 !== require ? i()(require).fromNow() : "n/a",
-    f = (0, Chunk211644.ZP)(e => e.recentlyShown[0]),
-    x = module.map(e => {
+    x = (0, Chunk211644.ZP)(e => e.recentlyShown[0]),
+    f = module.map(e => {
       let {
         eventType: t,
         dismissibleContent: n
@@ -62,28 +62,28 @@ function f() {
         dismissibleContent: n
       }
     }),
-    b = Array.from(exports.keys()).map(e => ({
+    g = Array.from(exports.keys()).map(e => ({
       key: e.toString(),
       dismissibleContent: e
     }));
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk135970.panelContainer,
+    className: Chunk607669.panelContainer,
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk135970.info,
+      className: Chunk607669.info,
       children: ["Last winner time: ", Chunk913527]
     }), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsxs)("div", {
-      className: Chunk135970.info,
-      children: ["Last winner: ", null != f ? Chunk704215.z[f] : "None"]
+      className: Chunk607669.info,
+      children: ["Last winner: ", null != x ? Chunk704215.z[x] : "None"]
     }), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsx)("div", {
-      className: Chunk135970.candidatesTableContainer,
+      className: Chunk607669.candidatesTableContainer,
       children: (0, Chunk54381.jsx)(Chunk681619.Z, {
-        className: Chunk135970.candidatesTable,
+        className: Chunk607669.candidatesTable,
         columns: h,
-        data: b
+        data: g
       })
     }), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsx)(Chunk681619.Z, {
       columns: p,
-      data: x
+      data: f
     })]
   })
 }

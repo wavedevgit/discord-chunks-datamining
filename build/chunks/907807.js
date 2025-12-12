@@ -17,15 +17,15 @@ module.exports = function(e) {
       })]
     },
     i = /(_[a-z_\d]+)?/,
-    a = /([de][+-]?\d+)?/,
-    o = {
+    o = /([de][+-]?\d+)?/,
+    a = {
       className: "number",
       variants: [{
-        begin: t.concat(/\b\d+/, /\.(\d*)/, a, i)
+        begin: t.concat(/\b\d+/, /\.(\d*)/, o, i)
       }, {
-        begin: t.concat(/\b\d+/, a, i)
+        begin: t.concat(/\b\d+/, o, i)
       }, {
-        begin: t.concat(/\.\d+/, a, i)
+        begin: t.concat(/\.\d+/, o, i)
       }],
       relevance: 0
     },
@@ -53,6 +53,6 @@ module.exports = function(e) {
     }, s, {
       begin: /^C\s*=(?!=)/,
       relevance: 0
-    }, r, o]
+    }, r, a]
   }
 }

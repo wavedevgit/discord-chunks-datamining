@@ -6,7 +6,7 @@ var Chunk805100 = require("./805100.js"),
   Chunk706627 = require("./706627.js"),
   Chunk828091 = require("./828091.js");
 module.exports = function(e, t, n, l) {
-  if (!o(e)) return e;
+  if (!a(e)) return e;
   t = i(t, e);
   for (var c = false, u = t.length, d = u - 1, f = e; null != f && ++c < u;) {
     var p = s(t[c]),
@@ -14,7 +14,7 @@ module.exports = function(e, t, n, l) {
     if ("__proto__" === p || "constructor" === p || "prototype" === p) break;
     if (c != d) {
       var m = f[p];
-      true === (_ = l ? l(m, p, f) : true) && (_ = o(m) ? m : a(t[c + 1]) ? [] : {})
+      true === (_ = l ? l(m, p, f) : true) && (_ = a(m) ? m : o(t[c + 1]) ? [] : {})
     }
     r(f, p, _), f = f[p]
   }

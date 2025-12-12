@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk526429 = require("./526429.js"),
   Chunk128449 = require("./128449.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk831686 = require("./831686.js"),
+  Chunk394843 = require("./394843.js"),
   Chunk882008 = require("./882008.js");
 let g = function(e) {
   let {
@@ -28,7 +28,7 @@ let g = function(e) {
     })
   }, [t]), m = n === u.Hk ? d.intl.string(d.t.Ivw1Is) : d.intl.formatToPlainString(d.t["+1WAFb"], {
     categoryName: g
-  }), b = n === u.Hk ? d.intl.string(d.t.aXvEjd) : d.intl.format(d.t.XLioqn, {
+  }), _ = n === u.Hk ? d.intl.string(d.t.aXvEjd) : d.intl.format(d.t.XLioqn, {
     onClick: h
   });
   return (0, r.jsxs)("div", {
@@ -44,7 +44,7 @@ let g = function(e) {
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      children: b
+      children: _
     })]
   })
 }

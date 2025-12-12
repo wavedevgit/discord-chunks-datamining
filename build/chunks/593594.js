@@ -6,13 +6,13 @@ var r = function(e) {
   i = function(e, t, n, i) {
     if (i && !n) t[i] = r(e[1]);
     else
-      for (var a = 0; a < n.length; a += 1) null != e[a + 1] && (t[n[a]] = r(e[a + 1]))
+      for (var o = 0; o < n.length; o += 1) null != e[o + 1] && (t[n[o]] = r(e[o + 1]))
   },
-  a = function(e, t, n) {
+  o = function(e, t, n) {
     var r = e.name && e.names;
     e.push && !t[e.push] ? t[e.push] = [] : r && !t[e.name] && (t[e.name] = {});
-    var a = e.push ? {} : r ? t[e.name] : t;
-    i(n.match(e.reg), a, e.names, e.name), e.push && t[e.push].push(a)
+    var o = e.push ? {} : r ? t[e.name] : t;
+    i(n.match(e.reg), o, e.names, e.name), e.push && t[e.push].push(o)
   },
   Chunk895829 = require("./895829.js"),
   s = RegExp.prototype.test.bind(/^([a-z])=(.*)/);
@@ -27,9 +27,9 @@ exports.parse = function(e) {
       rtp: [],
       fmtp: []
     }), r = n[n.length - 1]);
-    for (var s = 0; s < (o[t] || []).length; s += 1) {
-      var l = o[t][s];
-      if (l.reg.test(i)) return a(l, r, i)
+    for (var s = 0; s < (a[t] || []).length; s += 1) {
+      var l = a[t][s];
+      if (l.reg.test(i)) return o(l, r, i)
     }
   }), t.media = n, t
 };

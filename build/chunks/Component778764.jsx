@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk755733 = require("./755733.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk689471 = require("./689471.js");
+  Chunk421156 = require("./421156.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,7 +71,7 @@ function P(e, t) {
 function R(e) {
   let {
     transitionState: t,
-    onClose: o,
+    onClose: a,
     ticket: s,
     challenge: c,
     showAccountSettingsButton: u = false,
@@ -79,7 +79,7 @@ function R(e) {
   } = e, O = (0, d.Dt)(), [C, A] = i.useState(I.intl.string(I.t["I/sJtJ"])), [N, P] = i.useState(false), [R, w] = i.useState(h), [D, x] = i.useState(""), [L, j] = i.useState(null), M = async () => {
     let e;
     w(v.x.REGISTER);
-    let t = g.isPlatformEmbedded && b.ZP.supportsFeature(S.eRX.WEBAUTHN) ? b.ZP.webAuthnRegister(c) : a.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
+    let t = g.isPlatformEmbedded && b.ZP.supportsFeature(S.eRX.WEBAUTHN) ? b.ZP.webAuthnRegister(c) : o.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
     try {
       e = await t
     } catch (e) {
@@ -100,7 +100,7 @@ function R(e) {
         variant: "heading-lg/semibold",
         children: [R === v.x.INIT && I.intl.string(I.t.vrOCCk), R === v.x.REGISTER && I.intl.string(I.t.wePEBF), R === v.x.NAME && I.intl.string(I.t["cY/IOu"]), R === v.x.SUCCESS && f.Z.parse(I.intl.string(I.t.FXC7ZC))]
       }), (0, r.jsx)(l.olH, {
-        onClick: o,
+        onClick: a,
         className: T.modalCloseButton
       })]
     }), (0, r.jsxs)(l.MyZ, {
@@ -163,7 +163,7 @@ function R(e) {
         children: (0, r.jsxs)("form", {
           onSubmit: e => {
             e.preventDefault(), y.Sr(C, s, D).then(async () => {
-              u ? w(v.x.SUCCESS) : (await (0, _.Yn)(false), o())
+              u ? w(v.x.SUCCESS) : (await (0, _.Yn)(false), a())
             }).catch(() => {
               j(I.intl.string(I.t.fEptJP)), w(v.x.INIT)
             })
@@ -233,14 +233,14 @@ function R(e) {
               variant: "primary",
               text: I.intl.string(I.t.MubYG8),
               onClick: () => {
-                o(), (0, m.openUserSettings)(p.n.ACCOUNT_PANEL, {
+                a(), (0, m.openUserSettings)(p.n.ACCOUNT_PANEL, {
                   section: S.oAB.ACCOUNT
                 })
               }
             }), (0, r.jsx)(l.Button, {
               variant: "secondary",
               text: I.intl.string(I.t.i4jeWR),
-              onClick: o
+              onClick: a
             })]
           })
         })]
@@ -298,7 +298,7 @@ function D() {
   }, [exports]), Chunk473749.useEffect(() => () => {
     Chunk15980.Z.hasPendingRegisterTrigger() && Chunk365007.vg()
   }, []);
-  let [a, s] = Chunk473749.useState(false), c = Chunk473749.useCallback(() => {
+  let [o, s] = Chunk473749.useState(false), c = Chunk473749.useCallback(() => {
     Chunk755721(true), Chunk365007.startRegisterWebAuthnCredential().then(e => {
       let {
         ticket: t,
@@ -320,7 +320,7 @@ function D() {
     label: Chunk388032.intl.string(Chunk388032.t.y7SXYX),
     description: Chunk388032.intl.string(Chunk388032.t.TMukAN),
     children: [module.length > 0 && (0, Chunk54381.jsx)("div", {
-      className: Chunk689471.credentialList,
+      className: Chunk421156.credentialList,
       children: module.map(L)
     }), (0, Chunk54381.jsx)("div", {
       children: (0, Chunk54381.jsx)(Chunk481060.Button, {

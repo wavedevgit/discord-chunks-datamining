@@ -57,14 +57,14 @@ function m(e) {
     userId: t,
     applicationId: n,
     location: r,
-    confirmStrangerRequest: o = false
+    confirmStrangerRequest: a = false
   } = e;
-  return null != n ? a.Z.acceptGameFriendRequest({
+  return null != n ? o.Z.acceptGameFriendRequest({
     userId: t,
     applicationId: n
   }) : i.Z.acceptFriendRequest({
     userId: t,
-    confirmStrangerRequest: o,
+    confirmStrangerRequest: a,
     context: {
       location: r
     }
@@ -77,8 +77,8 @@ function h(e) {
     applicationId: n,
     location: r,
     onConfirm: i,
-    onCancel: a
-  } = e, u = (0, o.c_)("useFriendRequestActions"), d = (0, s.q)("maybeConfirmFriendRequestAccept"), f = u || d, p = l.Z.isStranger(t);
+    onCancel: o
+  } = e, u = (0, a.c_)("useFriendRequestActions"), d = (0, s.q)("maybeConfirmFriendRequestAccept"), f = u || d, p = l.Z.isStranger(t);
   return null == n && f && false !== p ? p && f ? void(0, c.c)({
     onConfirm: () => {
       m({
@@ -89,7 +89,7 @@ function h(e) {
       }), null == i || i()
     },
     onCancel: () => {
-      null == a || a()
+      null == o || o()
     }
   }) : f ? void m({
     userId: t,
@@ -101,7 +101,7 @@ function h(e) {
       applicationId: n,
       location: r,
       onConfirm: i,
-      onCancel: a
+      onCancel: o
     }) || null == i || i()
   }).catch(e => {
     g(e, {
@@ -109,7 +109,7 @@ function h(e) {
       applicationId: n,
       location: r,
       onConfirm: i,
-      onCancel: a
+      onCancel: o
     })
   }) : true : m({
     userId: t,
@@ -151,7 +151,7 @@ let E = {
       applicationId: n,
       location: r
     } = e;
-    null != n ? a.Z.removeGameFriend({
+    null != n ? o.Z.removeGameFriend({
       userId: t,
       applicationId: n
     }) : i.Z.removeFriend(t, {
@@ -164,7 +164,7 @@ let E = {
       applicationId: n,
       location: r
     } = e;
-    return null != n ? a.Z.cancelGameFriendRequest({
+    return null != n ? o.Z.cancelGameFriendRequest({
       userId: t,
       applicationId: n
     }) : i.Z.cancelFriendRequest(t, {

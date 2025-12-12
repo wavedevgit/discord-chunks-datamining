@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 693900, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   n: () => p,
@@ -36,10 +36,10 @@ function p(e) {
     springConfig: m,
     isExpanded: p
   } = r.useContext(u), h = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), {
-    ref: f,
-    height: x = null
-  } = (0, o.ZP)(), b = null != (t = (0, c.Z)(x)) ? t : null, [{
-    height: g
+    ref: x,
+    height: f = null
+  } = (0, o.ZP)(), g = null != (t = (0, c.Z)(f)) ? t : null, [{
+    height: b
   }, v] = (0, s.q_F)(() => ({
     from: {
       height: 0
@@ -47,20 +47,20 @@ function p(e) {
     config: m
   }));
   return r.useLayoutEffect(() => {
-    null !== x && v({
-      height: x,
-      immediate: !p || h || null === b
+    null !== f && v({
+      height: f,
+      immediate: !p || h || null === g
     })
-  }, [x, v, p, h, b]), (0, a.jsx)(i.animated.div, {
+  }, [f, v, p, h, g]), (0, a.jsx)(i.animated.div, {
     style: {
-      height: null === b ? "auto" : g,
+      height: null === g ? "auto" : b,
       overflow: "hidden"
     },
     children: (0, a.jsx)("div", {
       style: {
         overflow: "hidden"
       },
-      ref: f,
+      ref: x,
       children: n
     })
   })

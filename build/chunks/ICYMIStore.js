@@ -113,20 +113,20 @@ function em(e) {
   if (!j.Z.filterStaffContent()) returntrue;
   if ((0, A._e)(e)) {
     if (e.data.guild_id === P.KF) returntrue;
-    let t = b.Z.getGuild(e.data.guild_id);
+    let t = _.Z.getGuild(e.data.guild_id);
     if (null == t || t.features.has(Z.GuildFeatures.INTERNAL_EMPLOYEE_ONLY)) returnfalse
   }
   returntrue
 }
 
-function eb(e, t, n, r) {
+function e_(e, t, n, r) {
   let i = e.filter(e => e.type !== n);
   return t.forEach((e, t) => {
     (t + 1) * r < i.length ? i.splice((t + 1) * r, 0, e) : i.push(e)
   }), i
 }
 
-function e_() {
+function eb() {
   if (er = er.filter(e => e.type !== P.Ni.RECOMMENDED_GUILDS), ei = ei.filter(e => e.type !== P.Ni.RECOMMENDED_GUILDS), 0 === ea.length) return;
   let e = "recommendedGuilds",
     t = Chunk430824.Z.getGuildsArray().filter(e => e.features.has(Z.GuildFeatures.COMMUNITY)).length >= 5,
@@ -168,7 +168,7 @@ function eO(e) {
     er = e, ei = t
   }
   if (j.Z.onlyShowRecentGeneratedCandidates() || (function() {
-      let e = b.Z.getGuildIds(),
+      let e = _.Z.getGuildIds(),
         t = [];
       for (let r of e) {
         if (null != q[r] && q[r] < 0) continue;
@@ -209,7 +209,7 @@ function eO(e) {
         i = [];
       t.forEach(e => {
         z[e.id] = e, null != x.Z.getReadTimestamp(e.id) ? i.push(e) : r.push(e)
-      }), er = eb(er, r, P.Ni.GUILD_EVENT, 7), ei = eb(ei, i, P.Ni.GUILD_EVENT, 7)
+      }), er = e_(er, r, P.Ni.GUILD_EVENT, 7), ei = e_(ei, i, P.Ni.GUILD_EVENT, 7)
     }(), function() {
       var e, t;
       let n = new Set,
@@ -239,8 +239,8 @@ function eO(e) {
           }
         };
         n.add(e.content.id), z[t.id] = t, null != x.Z.getReadTimestamp(t.id) ? a.push(t) : l.push(t)
-      }), er = eb(er, l, P.Ni.ACTIVITY, 5), ei = eb(ei, a, P.Ni.ACTIVITY, 5)
-    }(), e_()), null != F.load_id && G !== F.load_id) {
+      }), er = e_(er, l, P.Ni.ACTIVITY, 5), ei = e_(ei, a, P.Ni.ACTIVITY, 5)
+    }(), eb()), null != F.load_id && G !== F.load_id) {
     var t;
     T.m.trackFeedLoaded({
       newTrackingProps: F,
@@ -319,7 +319,7 @@ function ej(e) {
 }
 class eP extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(g.default, h.Z, s.Z, u.Z, m.Z, d.ZP, b.Z, j.Z, x.Z, _.Z, E.Z, O.ZP, v.Z, y.ZP), null != e) {
+    if (this.waitFor(g.default, h.Z, s.Z, u.Z, m.Z, d.ZP, _.Z, j.Z, x.Z, b.Z, E.Z, O.ZP, v.Z, y.ZP), null != e) {
       var t, n, r, i, l, a, o;
       (U = null != (t = e.dehydratedItems) ? t : []).forEach(e => {
         z[e.id] = e
@@ -549,7 +549,7 @@ let ex = new eP(Chunk570140.Z, {
           has_mention: false
         }
       });
-      let r = _.Z.getMessage(t.channel_id, t.message.id);
+      let r = b.Z.getMessage(t.channel_id, t.message.id);
       if (null != r) {
         let e = (0, A.IC)(t, n);
         Y[t.message.id] = D(R({}, e), {
@@ -612,7 +612,7 @@ let ex = new eP(Chunk570140.Z, {
     let {
       guilds: t
     } = e;
-    ea = t.map(e => (0, C.PP)(e.guild)), e_()
+    ea = t.map(e => (0, C.PP)(e.guild)), eb()
   },
   ICYMI_CUSTOM_SCORES_UPDATED: function(e) {
     let {

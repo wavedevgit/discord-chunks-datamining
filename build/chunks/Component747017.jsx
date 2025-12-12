@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk833664 = require("./833664.js"),
@@ -23,13 +23,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk122943 = require("./122943.jsx"),
   Chunk556638 = require("./556638.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk175996 = require("./175996.js");
+  Chunk80568 = require("./80568.js");
 
 function S(e) {
   let {
     user: t,
     activities: n,
-    applicationStream: a,
+    applicationStream: o,
     voiceChannel: S,
     textClassName: I,
     iconClassName: T,
@@ -40,7 +40,7 @@ function S(e) {
     hideTooltip: R = false
   } = e;
   (0, u.Z)(null == t ? true : t.id);
-  let w = (null == a ? true : a.discoverable) !== false ? a : null,
+  let w = (null == o ? true : o.discoverable) !== false ? o : null,
     D = (0, f.E)("ActivityStatus", S),
     x = (0, l.e7)([p.default], () => p.default.getId() === (null == t ? true : t.id)),
     L = (0, l.e7)([d.Z], () => D ? x ? d.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === O.IIU.HANG_STATUS) : null : null),
@@ -93,7 +93,7 @@ function S(e) {
         hideTooltip: R
       }) : null
     },
-    G = o()(v.container, {
+    G = a()(v.container, {
       [v.textXs]: "xs" === C,
       [v.textSm]: "sm" === C
     }),
@@ -114,7 +114,7 @@ function S(e) {
     className: G,
     children: [U(), (0, r.jsx)(s.xvT, {
       variant: "text-".concat(C, "/normal"),
-      className: o()(v.truncated, v.dot, I),
+      className: a()(v.truncated, v.dot, I),
       children: y.l
     }), Z(), N && (0, r.jsx)(m.Z, {})]
   })

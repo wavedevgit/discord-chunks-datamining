@@ -37,7 +37,7 @@ let u = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
     let {
       user: t,
       guildId: n,
-      avatarDecorationOverride: o,
+      avatarDecorationOverride: a,
       status: l,
       avatarSize: d = i.EFr.SIZE_120,
       "aria-hidden": f = false,
@@ -48,12 +48,12 @@ let u = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       avatarDecorationSrc: h,
       avatarSrc: g,
       eventHandlers: E
-    } = (0, a.Z)({
+    } = (0, o.Z)({
       userId: t.id,
       guildId: n,
       size: d,
       showPending: true,
-      avatarDecorationOverride: o,
+      avatarDecorationOverride: a,
       animateOnHover: _
     });
     return (0, r.jsx)(u, c({

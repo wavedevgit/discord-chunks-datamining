@@ -8,9 +8,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk625651 = require("./625651.jsx"),
   Chunk905551 = require("./905551.js"),
   Chunk162190 = require("./162190.js"),
-  Chunk160589 = require("./160589.js"),
+  Chunk400580 = require("./400580.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk535684 = require("./535684.js");
+  Chunk924889 = require("./924889.js");
 
 function d(e) {
   var {
@@ -18,21 +18,21 @@ function d(e) {
     gameInstance: n
   } = e, d = function(e, t) {
     if (null == e) return {};
-    var n, r, a = function(e, t) {
+    var n, r, o = function(e, t) {
       if (null == e) return {};
-      var n, r, a = {},
-        o = Object.keys(e);
-      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
-      return a
+      var n, r, o = {},
+        a = Object.keys(e);
+      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+      return o
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+      var a = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
     }
-    return a
+    return o
   }(e, ["guildId", "gameInstance"]);
-  let [f, b] = a.useState(false), [m, p] = a.useState(true), g = (0, c.Z)(n.gameId, "cover");
-  return (0, r.jsx)(o.f, function(e) {
+  let [f, b] = o.useState(false), [m, p] = o.useState(true), g = (0, c.Z)(n.gameId, "cover");
+  return (0, r.jsx)(a.f, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

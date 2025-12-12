@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk140835 = require("./140835.jsx"),
   Chunk246521 = require("./246521.jsx"),
   Chunk442837 = require("./442837.js"),
@@ -33,8 +33,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk689079 = require("./689079.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk589118 = require("./589118.js"),
-  Chunk450941 = require("./450941.js");
+  Chunk202874 = require("./202874.js"),
+  Chunk698342 = require("./698342.js");
 let L = 5,
   j = "placeholder",
   M = [, , , , , ].fill(j);
@@ -42,40 +42,40 @@ let L = 5,
 function k(e) {
   var t, n;
   let {
-    context: a,
-    command: o,
+    context: o,
+    command: a,
     section: l,
     sectionName: c
   } = e, d = i.useCallback(() => {
     let e = O.Z.entrypoint();
     y.y(v.ti.COMMAND), (0, E.Mo)({
-      command: o,
+      command: a,
       location: h.Vh.APP_LAUNCHER_APPLICATION_VIEW,
       sectionName: c
-    }), "channel" === a.type && (p.Po({
-      channelId: a.channel.id,
-      command: o,
+    }), "channel" === o.type && (p.Po({
+      channelId: o.channel.id,
+      command: a,
       section: l,
       location: h.Vh.APP_LAUNCHER_APPLICATION_VIEW,
       sectionName: c,
       source: e,
       commandOrigin: h.bB.APPLICATION_LAUNCHER
     }), b.S.dispatch(P.CkL.FOCUS_CHANNEL_TEXT_AREA, {
-      channelId: a.channel.id
+      channelId: o.channel.id
     }))
-  }, [a, o, l, c]), f = (null != (n = null == (t = o.options) ? true : t.length) ? n : 0) > 0, _ = i.useMemo(() => (0, A.ae)(o.displayDescription, true), [o.displayDescription]), m = i.useMemo(() => (0, r.jsxs)("div", {
+  }, [o, a, l, c]), f = (null != (n = null == (t = a.options) ? true : t.length) ? n : 0) > 0, _ = i.useMemo(() => (0, A.ae)(a.displayDescription, true), [a.displayDescription]), m = i.useMemo(() => (0, r.jsxs)("div", {
     className: x.commandTextContainer,
     children: [(0, r.jsx)(u.Text, {
       variant: "text-sm/semibold",
       color: "text-strong",
-      children: o.displayName
+      children: a.displayName
     }), (0, r.jsx)(u.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
       lineClamp: 1,
       children: _
     })]
-  }), [o.displayName, _]);
+  }), [a.displayName, _]);
   return (0, r.jsxs)(u.P3F, {
     className: x.command,
     onClick: d,
@@ -83,8 +83,8 @@ function k(e) {
       className: x.commandFocusBlock,
       children: m
     }), f ? (0, r.jsx)(s.F, {}) : (0, r.jsx)(G, {
-      context: a,
-      command: o,
+      context: o,
+      command: a,
       sectionName: c
     })]
   })
@@ -105,23 +105,23 @@ function U() {
         height: "auto"
       }
     }), []),
-    a = Chunk473749.useMemo(() => (0, Chunk54381.jsxs)("div", {
-      className: Chunk450941.commandTextContainerPlaceholder,
+    o = Chunk473749.useMemo(() => (0, Chunk54381.jsxs)("div", {
+      className: Chunk698342.commandTextContainerPlaceholder,
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk589118.textPlaceholder,
+        className: Chunk202874.textPlaceholder,
         style: exports,
         children: (0, Chunk54381.jsx)(Chunk481060.Text, {
-          className: Chunk589118.hidden,
+          className: Chunk202874.hidden,
           variant: "text-sm/semibold",
           color: "text-strong",
           lineClamp: 1,
           children: "_"
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk589118.textPlaceholder,
+        className: Chunk202874.textPlaceholder,
         style: require,
         children: (0, Chunk54381.jsx)(Chunk481060.Text, {
-          className: Chunk589118.hidden,
+          className: Chunk202874.hidden,
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
@@ -130,8 +130,8 @@ function U() {
       })]
     }), [exports, require]);
   return (0, Chunk54381.jsx)("div", {
-    className: o()(Chunk450941.command, Chunk589118.loadingAnimation, {
-      [Chunk589118.noAnimation]: module
+    className: a()(Chunk698342.command, Chunk202874.loadingAnimation, {
+      [Chunk202874.noAnimation]: module
     }),
     children: Chunk120356
   })
@@ -141,10 +141,10 @@ function G(e) {
   let {
     context: t,
     command: n,
-    sectionName: a
+    sectionName: o
   } = e;
   (0, _.PL)(true, true), (0, _.em)(t, true, true);
-  let o = (0, S.D)(t),
+  let a = (0, S.D)(t),
     [s, c] = i.useState(false),
     d = i.useCallback(async e => {
       if ("channel" !== t.type) return;
@@ -160,20 +160,20 @@ function G(e) {
           appLauncherContext: {
             entrypoint: r,
             location: h.Vh.APP_LAUNCHER_APPLICATION_VIEW,
-            sectionName: a
+            sectionName: o
           }
         });
         e && (await (0, C.Y$)({
           command: n,
           optionValues: {},
-          context: o,
-          sectionName: a,
+          context: a,
+          sectionName: o,
           commandOrigin: h.bB.APP_LAUNCHER_APPLICATION_VIEW
         }), y.y(v.ti.COMMAND))
       } finally {
         c(false)
       }
-    }, [n, t, a, o]);
+    }, [n, t, o, a]);
   return (0, r.jsx)(u.Button, {
     type: "submit",
     onClick: d,
@@ -194,8 +194,8 @@ function Z(e) {
     context: t,
     commands: n,
     section: i,
-    headerName: a,
-    sectionName: o,
+    headerName: o,
+    sectionName: a,
     children: s
   } = e;
   return 0 === n.length ? null : (0, r.jsxs)(r.Fragment, {
@@ -203,16 +203,16 @@ function Z(e) {
       className: x.commandListHeader,
       children: [(0, r.jsx)(u.Heading, {
         variant: "heading-sm/semibold",
-        children: a
+        children: o
       }), s]
     }), (0, r.jsx)("ul", {
       className: x.commandContainer,
-      "aria-label": a,
+      "aria-label": o,
       children: n.map((e, n) => e === j ? (0, r.jsx)(U, {}, e + n) : (0, r.jsx)(k, {
         context: t,
         command: e,
         section: i,
-        sectionName: o
+        sectionName: a
       }, e.id))
     })]
   })
@@ -222,8 +222,8 @@ function F(e) {
   var t;
   let {
     context: n,
-    application: a,
-    sectionName: o,
+    application: o,
+    sectionName: a,
     installOnDemand: s,
     setHasCommands: l
   } = e, {
@@ -242,21 +242,21 @@ function F(e) {
       includeFrecency: true,
       allowApplicationState: s,
       installOnDemand: s,
-      applicationId: a.id
+      applicationId: o.id
     },
     allowFetch: true
-  }), _ = null != (t = f.find(e => e.id === a.id)) ? t : null, {
+  }), _ = null != (t = f.find(e => e.id === o.id)) ? t : null, {
     sortOrder: h,
     setSortOrder: g,
     commands: E,
     canSort: b
   } = (0, T.Z)({
-    sectionId: a.id,
+    sectionId: o.id,
     commandsByActiveSection: u
   });
   i.useEffect(() => {
-    c(a.id)
-  }, [a.id, c]);
+    c(o.id)
+  }, [o.id, c]);
   let y = (0, I.Z)({
     context: n,
     commands: E,
@@ -271,13 +271,13 @@ function F(e) {
       section: _,
       commands: y,
       headerName: w.intl.string(w.t.acSE0h),
-      sectionName: o
+      sectionName: a
     }), (0, r.jsx)(Z, {
       context: n,
       section: _,
       commands: p ? M : E,
       headerName: w.intl.string(w.t.DUU9L3),
-      sectionName: o,
+      sectionName: a,
       children: b && (0, r.jsx)(N.Z, {
         sortOrder: h,
         onSortOptionClick: g

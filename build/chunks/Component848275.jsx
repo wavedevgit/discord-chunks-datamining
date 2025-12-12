@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk386949 = require("./386949.jsx"),
   Chunk284881 = require("./284881.js"),
-  Chunk197944 = require("./197944.js");
+  Chunk987588 = require("./987588.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -54,7 +54,7 @@ function f(e) {
   let {
     question: t,
     questionId: n,
-    value: o,
+    value: a,
     onValueChange: l
   } = e, {
     selectedChoice: c,
@@ -71,7 +71,7 @@ function f(e) {
       selectedChoice: n,
       textInputs: r
     }
-  })(o), d = e => {
+  })(a), d = e => {
     var r;
     let i = u[e];
     if (null == i || "" === i) return void l(n, e);
@@ -92,7 +92,7 @@ function f(e) {
       className: s.choicesContainer,
       children: Object.entries(t.Choices).map(e => {
         let [t, n] = e;
-        return (0, r.jsx)(a.L, {
+        return (0, r.jsx)(o.L, {
           choiceId: t,
           choice: n,
           isSelected: c === t,
@@ -110,7 +110,7 @@ function p(e) {
   let {
     question: t,
     questionId: n,
-    value: o,
+    value: a,
     onValueChange: l
   } = e, {
     selectedChoices: u,
@@ -131,7 +131,7 @@ function p(e) {
       selectedChoices: n,
       textInputs: r
     }
-  })(o), p = (e, t) => e.map(e => {
+  })(a), p = (e, t) => e.map(e => {
     let n = t[e];
     return null != n && "" !== n ? "".concat(e, ":TEXT:").concat(n) : e
   }).join(","), _ = e => {
@@ -156,7 +156,7 @@ function p(e) {
       className: s.choicesContainer,
       children: Object.entries(t.Choices).map(e => {
         let [t, n] = e;
-        return (0, r.jsx)(a.L, {
+        return (0, r.jsx)(o.L, {
           choiceId: t,
           choice: n,
           isSelected: u.includes(t),
@@ -175,17 +175,17 @@ function _(e) {
     question: t,
     questionId: n,
     value: i,
-    onValueChange: a
+    onValueChange: o
   } = e;
-  return t.Selector === o.E_.SINGLE_ANSWER ? (0, r.jsx)(f, {
+  return t.Selector === a.E_.SINGLE_ANSWER ? (0, r.jsx)(f, {
     question: t,
     questionId: n,
     value: i,
-    onValueChange: a
+    onValueChange: o
   }) : (0, r.jsx)(p, {
     question: t,
     questionId: n,
     value: i,
-    onValueChange: a
+    onValueChange: o
   })
 }

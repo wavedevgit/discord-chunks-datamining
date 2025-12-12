@@ -12,7 +12,7 @@ require.d(exports, {
 var Chunk605387 = require("./605387.js"),
   i = require.n(Chunk605387);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,14 +21,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -76,7 +76,7 @@ let f = (e, t) => ({
     let n = _(e);
     return "PASTE THIS INTO THE DROP JSON:\n\n" + t.map(e => {
       let t = m(e.name);
-      return JSON.stringify(o({
+      return JSON.stringify(a({
         path: "effects/".concat(n, "/").concat(t, ".png"),
         loop: e.loop,
         start: e.start,
@@ -96,9 +96,9 @@ let f = (e, t) => ({
     }), t += "\n]"
   },
   E = e => {
-    let [t, n] = e.split(","), r = atob(n), i = t.split(";")[0], a = new Uint8Array(r.length);
-    for (let e = 0; e < r.length; e++) a[e] = r.charCodeAt(e);
-    return new Blob([a], {
+    let [t, n] = e.split(","), r = atob(n), i = t.split(";")[0], o = new Uint8Array(r.length);
+    for (let e = 0; e < r.length; e++) o[e] = r.charCodeAt(e);
+    return new Blob([o], {
       type: i
     })
   },

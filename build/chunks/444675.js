@@ -2,17 +2,17 @@
 /** chunk id: 444675, original params: e (module,exports,re quire) **/
 var t, n, r, i = module.exports = {};
 
-function a() {
+function o() {
   throw Error("setTimeout has not been defined")
 }
 
-function o() {
+function a() {
   throw Error("clearTimeout has not been defined")
 }
 
 function s(e) {
   if (t === setTimeout) return setTimeout(e, 0);
-  if ((t === a || !t) && setTimeout) return t = setTimeout, setTimeout(e, 0);
+  if ((t === o || !t) && setTimeout) return t = setTimeout, setTimeout(e, 0);
   try {
     return t(e, 0)
   } catch (n) {
@@ -26,7 +26,7 @@ function s(e) {
 
 function l(e) {
   if (n === clearTimeout) return clearTimeout(e);
-  if ((n === o || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
+  if ((n === a || !n) && clearTimeout) return n = clearTimeout, clearTimeout(e);
   try {
     return n(e)
   } catch (t) {
@@ -38,14 +38,14 @@ function l(e) {
   }
 }! function() {
   try {
-    t = "function" == typeof setTimeout ? setTimeout : a
+    t = "function" == typeof setTimeout ? setTimeout : o
   } catch (e) {
-    t = a
+    t = o
   }
   try {
-    n = "function" == typeof clearTimeout ? clearTimeout : o
+    n = "function" == typeof clearTimeout ? clearTimeout : a
   } catch (e) {
-    n = o
+    n = a
   }
 }();
 var c = [],

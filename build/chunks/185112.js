@@ -43,7 +43,7 @@ let f = 10,
       if (null == exports || !Chunk131951.Z.isVideoEnabled()) return null;
       let n = Chunk19780.Z.getLastNonZeroRemoteVideoSinkWantsTime();
       if (null != require && performance.now() - require < p || !module.hasActiveRemoteWants()) return null;
-      let o = (0, Chunk150457.hj)(exports, Chunk314897.default.getId());
+      let a = (0, Chunk150457.hj)(exports, Chunk314897.default.getId());
       return null == Chunk70956 ? null : Chunk70956.short.frameRate < f || Chunk70956.long.frameRate < f ? [d({
         type: Chunk458725.u.CAMERA_SEND_LOW_FPS,
         userId: Chunk314897.default.getId()

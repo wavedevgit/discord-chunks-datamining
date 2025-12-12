@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -30,13 +30,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk435020 = require("./435020.js"),
   Chunk612853 = require("./612853.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk129432 = require("./129432.js");
+  Chunk62868 = require("./62868.js");
 
 function R(e) {
   let {
     premiumSubscription: t,
     setPurchaseState: n,
-    onBack: a,
+    onBack: o,
     onNext: s,
     legalTermsNodeRef: R,
     flashLegalTerms: w,
@@ -68,8 +68,8 @@ function R(e) {
     skuPricePreviewsById: en,
     referralCode: er,
     contextMetadata: ei,
-    invoicePreview: ea,
-    inReverseTrial: eo,
+    invoicePreview: eo,
+    inReverseTrial: ea,
     premiumBrandRefreshBackgroundClassName: es
   } = (0, v.JL)(), {
     isGift: el,
@@ -134,7 +134,7 @@ function R(e) {
       referralCode: er,
       loadId: ei.loadId,
       giftInfoOptions: eg,
-      invoicePreview: ea,
+      invoicePreview: eo,
       orderId: eR
     })
   }, ej = {
@@ -161,7 +161,7 @@ function R(e) {
   return eb ? null : (0, r.jsxs)(u.mzw, {
     "data-migration-pending": true,
     align: f.Z.Align.CENTER,
-    className: o()(es, P.modalFooter),
+    className: a()(es, P.modalFooter),
     children: [(0, r.jsx)(g.Z, {
       legalTermsNodeRef: R,
       invoiceError: D,
@@ -177,12 +177,12 @@ function R(e) {
       makePurchase: eL,
       needsPaymentSource: null == eO && !eN,
       onNext: s,
-      inReverseTrial: eo,
+      inReverseTrial: ea,
       onPaymentSourceAdd: W
     }), (0, r.jsx)(A.Z, {}), eU ? (0, r.jsx)("div", {
       className: P.back,
       children: (0, r.jsx)(m.Z, {
-        onClick: a
+        onClick: o
       })
     }) : null]
   })

@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,7 +43,7 @@ class f extends(r = Chunk442837.ZP.Store) {
     return l
   }
 }
-o(f, "displayName", "AdyenStore");
+a(f, "displayName", "AdyenStore");
 let p = new f(Chunk570140.Z, {
   ADYEN_CREATE_CLIENT_SUCCESS: c,
   ADYEN_TEARDOWN_CLIENT: u,

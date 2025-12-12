@@ -28,12 +28,12 @@ function s(e, t) {
     });
   0 === h.length && (h = m);
   var g = h.reduce(function(t, n) {
-    return t[n] = (0, a.Z)(e, {
+    return t[n] = (0, o.Z)(e, {
       placement: n,
       boundary: l,
       rootBoundary: c,
       padding: u
-    })[(0, o.Z)(n)], t
+    })[(0, a.Z)(n)], t
   }, {});
   return Object.keys(g).sort(function(e, t) {
     return g[e] - g[t]

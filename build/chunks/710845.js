@@ -6,15 +6,15 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk579092 = require("./579092.js"),
   Chunk569611 = require("./569611.js");
-let a = Date.now(),
-  o = a;
+let o = Date.now(),
+  a = o;
 (0, Chunk579092._n)(function(e, t, n) {
   for (var s = arguments.length, l = Array(s > 3 ? s - 3 : 0), c = 3; c < s; c++) l[c - 3] = arguments[c];
   let u = Date.now(),
-    d = ((u - a) / 1e3).toFixed(3),
-    f = ((u - o) / 1e3).toFixed(3),
+    d = ((u - o) / 1e3).toFixed(3),
+    f = ((u - a) / 1e3).toFixed(3),
     p = "Σ:".concat(d, "s, Δ:").concat(f, "s");
-  o = u, i.Hj({
+  a = u, i.Hj({
     name: e,
     timing: p
   }, n, ...l), (0, r.Sm)(e, t, n, ...l)

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk215569 = require("./215569.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk78839 = require("./78839.js"),
   Chunk709054 = require("./709054.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk811337 = require("./811337.js");
+  Chunk542886 = require("./542886.js");
 
 function h(e) {
   let {
@@ -27,7 +27,7 @@ function h(e) {
   return (0, r.jsxs)("div", {
     className: m.content,
     children: [(0, r.jsx)("div", {
-      className: o()(m.image, t)
+      className: a()(m.image, t)
     }), n, (0, r.jsx)(c.W, {
       children: null != i ? (0, r.jsx)(u.oXn, {
         className: m.error,
@@ -67,14 +67,14 @@ function E(e) {
     imageClass: t,
     blurb: n,
     guild: i,
-    warning: a,
-    error: o,
+    warning: o,
+    error: a,
     slotCount: s = 1,
     canceledCount: l = 0
   } = e;
   return (0, r.jsxs)(h, {
     imageClass: t,
-    error: o,
+    error: a,
     children: [(0, r.jsx)(u.Text, {
       variant: "text-md/normal",
       children: n
@@ -84,7 +84,7 @@ function E(e) {
       subscriptionChange: s
     }), (0, r.jsx)(u.Text, {
       variant: "text-md/normal",
-      children: a
+      children: o
     }), l > 0 ? (0, r.jsx)(g, {
       canceledCount: l
     }) : null]
@@ -94,8 +94,8 @@ function E(e) {
 function b(e) {
   var t, n;
   let {
-    imageClass: a,
-    blurb: o,
+    imageClass: o,
+    blurb: a,
     fromGuilds: s,
     toGuild: l,
     error: c,
@@ -103,11 +103,11 @@ function b(e) {
     canceledCount: E = 0
   } = e, b = i.useRef(s), y = null == (t = b.current) ? true : t.length, O = null == (n = b.current) ? true : n.reduce((e, t) => (e.hasOwnProperty(t.id) || (e[t.id] = []), e[t.id].push(t), e), {});
   return (0, r.jsxs)(h, {
-    imageClass: a,
+    imageClass: o,
     error: c,
     children: [(0, r.jsx)(u.Text, {
       variant: "text-md/normal",
-      children: o
+      children: a
     }), (0, r.jsx)(u.Text, {
       variant: "text-xs/bold",
       className: m.transferGuildCardHeader,
@@ -142,8 +142,8 @@ function y(e) {
     confirmation: t,
     confirmationLabel: n,
     isModifyingSubscription: i,
-    onConfirm: a,
-    onCancel: o
+    onConfirm: o,
+    onCancel: a
   } = e;
   return (0, r.jsx)("div", {
     className: m.footer,
@@ -152,13 +152,13 @@ function y(e) {
       children: [(0, r.jsx)(u.Button, {
         variant: "primary",
         text: t,
-        onClick: a,
+        onClick: o,
         loading: i,
         "aria-label": n
       }), (0, r.jsx)(u.Button, {
         variant: "secondary",
         text: _.intl.string(_.t["ETE/oC"]),
-        onClick: o,
+        onClick: a,
         disabled: i
       })]
     })
@@ -184,8 +184,8 @@ let v = e => {
     transitionState: t,
     onClose: n,
     title: i,
-    subtitle: a,
-    imageClass: o,
+    subtitle: o,
+    imageClass: a,
     guild: l,
     warning: c,
     slotCount: u = 1,
@@ -200,16 +200,16 @@ let v = e => {
     onCancel: v,
     error: S
   } = e, I = O(m, h, g, y, v), T = () => f && null != _ ? (0, r.jsx)(b, {
-    imageClass: null != o ? o : "",
-    blurb: a,
+    imageClass: null != a ? a : "",
+    blurb: o,
     fromGuilds: p,
     toGuild: _,
     error: S,
     slotCount: u,
     canceledCount: d
   }) : null != l ? (0, r.jsx)(E, {
-    imageClass: null != o ? o : "",
-    blurb: a,
+    imageClass: null != a ? a : "",
+    blurb: o,
     guild: l,
     warning: c,
     error: S,

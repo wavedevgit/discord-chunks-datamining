@@ -18,7 +18,7 @@ var Chunk392711 = require("./392711.js"),
 function s(e, t) {
   i.Z.dispatch({
     type: "WINDOW_FOCUS",
-    windowId: (0, o.ZY)(e),
+    windowId: (0, a.ZY)(e),
     focused: t
   })
 }
@@ -26,7 +26,7 @@ function s(e, t) {
 function l(e) {
   i.Z.dispatch({
     type: "WINDOW_HIDDEN",
-    windowId: (0, o.ZY)(e)
+    windowId: (0, a.ZY)(e)
   })
 }
 let c = (0, Chunk392711.memoize)(e => (0, r.debounce)((t, n) => {
@@ -39,20 +39,20 @@ let c = (0, Chunk392711.memoize)(e => (0, r.debounce)((t, n) => {
 }, 100));
 
 function u(e) {
-  c((0, o.ZY)(e))(e.innerWidth, e.innerHeight)
+  c((0, a.ZY)(e))(e.innerWidth, e.innerHeight)
 }
 
 function d(e) {
-  let t = (0, o.ZY)(e);
+  let t = (0, a.ZY)(e);
   i.Z.dispatch({
     type: "WINDOW_FULLSCREEN_CHANGE",
     windowId: t,
-    isElementFullscreen: (0, a.rB)(null, e.document)
+    isElementFullscreen: (0, o.rB)(null, e.document)
   })
 }
 
 function f(e) {
-  let t = (0, o.ZY)(e);
+  let t = (0, a.ZY)(e);
   i.Z.dispatch({
     type: "WINDOW_VISIBILITY_CHANGE",
     windowId: t,
@@ -61,12 +61,12 @@ function f(e) {
 }
 
 function p(e) {
-  let t = (0, o.ZY)(e),
+  let t = (0, a.ZY)(e),
     n = e.document;
   i.Z.dispatch({
     type: "WINDOW_INIT",
     windowId: t,
-    isElementFullscreen: (0, a.rB)(null, n),
+    isElementFullscreen: (0, o.rB)(null, n),
     focused: n.hasFocus(),
     width: e.innerWidth,
     height: e.innerHeight,
@@ -77,6 +77,6 @@ function p(e) {
 function _(e) {
   i.Z.dispatch({
     type: "WINDOW_UNLOAD",
-    windowId: (0, o.ZY)(e)
+    windowId: (0, a.ZY)(e)
   })
 }

@@ -15,9 +15,9 @@ var Chunk499254 = require("./499254.js"),
 function u(e) {
   let {
     entry: t
-  } = e, n = (0, a.q)(t.extra.application_id), u = null == n ? true : n.getIconURL(l.Si.LARGE), d = t.extra.activity_name, f = (0, s.Jg)(t) ? c.t.vPg1JT : c.t.rPqqts, p = {
+  } = e, n = (0, o.q)(t.extra.application_id), u = null == n ? true : n.getIconURL(l.Si.LARGE), d = t.extra.activity_name, f = (0, s.Jg)(t) ? c.t.vPg1JT : c.t.rPqqts, p = {
     onClick: () => {
-      r._(i._b.TEXT, o.Ie.NORMAL, {
+      r._(i._b.TEXT, a.Ie.NORMAL, {
         applicationId: t.extra.application_id
       })
     },

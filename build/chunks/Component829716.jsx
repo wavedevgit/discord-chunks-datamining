@@ -65,7 +65,7 @@ let d = "display-name-styles-modal",
     }, {
       modalKey: d,
       onCloseRequest: () => {
-        a.default.track(o.rMx.DISPLAY_NAME_STYLES_CLOSED), (0, i.Mr3)(d)
+        o.default.track(a.rMx.DISPLAY_NAME_STYLES_CLOSED), (0, i.Mr3)(d)
       }
     })
   }

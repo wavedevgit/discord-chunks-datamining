@@ -52,14 +52,14 @@ class u extends(r = Chunk473749.Component) {
     })
   }
   constructor(...e) {
-    super(...e), s(this, "animationRef", a.createRef()), s(this, "animation", true), s(this, "delayTimeout", new o.V7), s(this, "loadAnimation", async () => {
+    super(...e), s(this, "animationRef", o.createRef()), s(this, "animation", true), s(this, "delayTimeout", new a.V7), s(this, "loadAnimation", async () => {
       var e;
       let {
         importData: t,
         loop: r,
         autoplay: i,
-        delay: a,
-        renderer: o,
+        delay: o,
+        renderer: a,
         rendererSettings: s,
         shouldAnimate: c
       } = this.props;
@@ -75,11 +75,11 @@ class u extends(r = Chunk473749.Component) {
       };
       this.animation = d.loadAnimation(l({
         container: this.animationRef.current,
-        renderer: o,
+        renderer: a,
         loop: r,
-        autoplay: i && null == a && c,
+        autoplay: i && null == o && c,
         rendererSettings: s
-      }, f)), null != a ? this.delayTimeout.start(a, () => {
+      }, f)), null != o ? this.delayTimeout.start(o, () => {
         var e;
         null == (e = this.animation) || e.play()
       }) : this.playOrPauseAnimation(), null == (e = this.animation) || e.addEventListener("complete", this.handleComplete)

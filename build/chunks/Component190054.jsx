@@ -11,32 +11,32 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk572004 = require("./572004.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk974730 = require("./974730.js");
+  Chunk198473 = require("./198473.js");
 
 function f(e) {
   var t, r, {
-      chunks: o,
+      chunks: c,
       className: f,
       onCopy: p
     } = e,
     b = function(e, t) {
       if (null == e) return {};
-      var r, n, c = function(e, t) {
+      var r, n, o = function(e, t) {
         if (null == e) return {};
-        var r, n, c = {},
-          o = Object.keys(e);
-        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (c[r] = e[r]);
-        return c
+        var r, n, o = {},
+          c = Object.keys(e);
+        for (n = 0; n < c.length; n++) r = c[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+        return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (c[r] = e[r])
+        var c = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
       }
-      return c
+      return o
     }(e, ["chunks", "className", "onCopy"]);
-  let O = c.useMemo(() => null == o ? true : o.join(" "), [o]),
-    [y, j] = c.useState(false),
-    h = c.useCallback(() => {
+  let O = o.useMemo(() => null == c ? true : c.join(" "), [c]),
+    [y, j] = o.useState(false),
+    h = o.useCallback(() => {
       (0, a.JG)(O, () => {
         j(true), null == p || p()
       })

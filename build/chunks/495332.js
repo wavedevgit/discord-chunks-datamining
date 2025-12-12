@@ -66,8 +66,8 @@ function f(e) {
     inExpressionPicker: y
   } = e, O = i.Wq.useStore(e => e.inspectedExpressionPosition), v = "".concat(l, "-").concat(u), S = f && O.rowIndex === l && O.columnIndex === u;
   switch (t.item.type) {
-    case a.vB.SOUND:
-      return (0, r.createElement)(o.ZP, d(c({}, _(u), n), {
+    case o.vB.SOUND:
+      return (0, r.createElement)(a.ZP, d(c({}, _(u), n), {
         key: v,
         sound: t.item.sound,
         suppressPlaySound: p,
@@ -80,7 +80,7 @@ function f(e) {
         showLockForDisabledSound: b,
         isSoundmoji: true === y
       }));
-    case a.vB.ADD_SOUND:
+    case o.vB.ADD_SOUND:
       return (0, r.createElement)(s.Z, d(c({}, _(u)), {
         key: v,
         guild: t.item.guild,

@@ -5,7 +5,7 @@ let r, i;
 require.d(exports, {
   Z: () => k
 }), require("./388685.js");
-var a, Chunk442837 = require("./442837.js"),
+var o, Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk570140 = require("./570140.js"),
   Chunk266454 = require("./266454.js"),
@@ -99,7 +99,7 @@ let x = () => {
       n = (null == r ? true : r.id) === (null == exports ? true : exports.id);
     null == exports || require || (r = exports)
   };
-class M extends(a = Chunk442837.ZP.PersistedStore) {
+class M extends(o = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     null != e && (r = (null == e ? true : e.gradientPresetId) != null ? S.qt[e.gradientPresetId] : true), this.waitFor(g.Z, u.Z, f.Z, p.ZP, m.Z, E.default), this.syncWith([E.default], x), this.syncWith([u.Z], L)
   }

@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 631937, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -14,33 +14,33 @@ var Chunk473749 = require("./473749.js"),
   Chunk702321 = require("./702321.js"),
   Chunk981631 = require("./981631.js");
 
-function f(e) {
+function h(e) {
   let t = (0, u.Z)(e),
     n = (0, r.e7)([a.default], () => a.default.locale),
-    f = (0, r.e7)([c.Z], () => c.Z.getChangelog(null != t ? t : "", n), [t, n]),
-    h = (0, d.Z)(e),
-    m = i.useRef(h ? Date.now() : null),
+    h = (0, r.e7)([c.Z], () => c.Z.getChangelog(null != t ? t : "", n), [t, n]),
+    f = (0, d.Z)(e),
+    m = i.useRef(f ? Date.now() : null),
     g = (0, r.e7)([o.ZP], () => o.ZP.getUnreadCount(e), [e]),
     b = i.useRef(g);
   i.useEffect(() => {
     b.current = g
   }), i.useEffect(() => {
     m.current = Date.now()
-  }, [h]), i.useEffect(() => {
-    h && null != t && l.Z.fetchChangelog(t, n, true)
-  }, [t, n, h]), i.useEffect(() => {
-    h && null != f && s.default.track(p.rMx.CHANGE_LOG_OPENED, {
-      change_log_id: "".concat(f.date, ":").concat(f.revision),
+  }, [f]), i.useEffect(() => {
+    f && null != t && l.Z.fetchChangelog(t, n, true)
+  }, [t, n, f]), i.useEffect(() => {
+    f && null != h && s.default.track(p.rMx.CHANGE_LOG_OPENED, {
+      change_log_id: "".concat(h.date, ":").concat(h.revision),
       unread_count: b.current
     })
-  }, [h, f]), i.useEffect(() => {
+  }, [f, h]), i.useEffect(() => {
     let e = m.current;
     return () => {
-      h && null != f && null != e && (s.default.track(p.rMx.CHANGE_LOG_CLOSED, {
+      f && null != h && null != e && (s.default.track(p.rMx.CHANGE_LOG_CLOSED, {
         seconds_open: Math.round((Date.now() - e) / 1e3),
-        change_log_id: "".concat(f.date, ":").concat(f.revision),
+        change_log_id: "".concat(h.date, ":").concat(h.revision),
         unread_count: b.current
       }), m.current = 0)
     }
-  }, [h, f])
+  }, [f, h])
 }

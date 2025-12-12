@@ -6,10 +6,10 @@ function r(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
 var Chunk65183 = require("./65183.js"),
-  a = Chunk65183.Map,
-  o = Chunk65183.OrderedSet,
+  o = Chunk65183.Map,
+  a = Chunk65183.OrderedSet,
   s = Chunk65183.Record,
-  l = o(),
+  l = a(),
   c = {
     style: l,
     entity: null
@@ -37,7 +37,7 @@ var Chunk65183 = require("./65183.js"),
       return t.create(r)
     }, t.create = function(e) {
       if (!e) return d;
-      var n = a({
+      var n = o({
           style: l,
           entity: null
         }).merge(e),
@@ -48,7 +48,7 @@ var Chunk65183 = require("./65183.js"),
     }, t
   }(s(c)),
   d = new u,
-  f = a([
-    [a(c), d]
+  f = o([
+    [o(c), d]
   ]);
 u.EMPTY = d, module.exports = u

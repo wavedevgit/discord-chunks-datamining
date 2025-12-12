@@ -1,10 +1,10 @@
-/** Chunk was on 48615 **/
+/** Chunk was on 46931 **/
 /** chunk id: 88315, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P7: () => b,
+  P7: () => m,
   RR: () => p,
   UN: () => u,
-  bg: () => m,
+  bg: () => _,
   hn: () => d,
   np: () => f
 });
@@ -47,11 +47,11 @@ function p(e, t, n) {
   }
 }
 
-function b(e) {
+function m(e) {
   return e.type === c.W.LINE
 }
 
-function m(e, t, n, r) {
+function _(e, t, n, r) {
   var c;
   let u = o.default.getUser(e),
     d = null == u ? true : u.getAvatarURL(null, s.Ks),
@@ -61,9 +61,9 @@ function m(e, t, n, r) {
       g: f[1],
       b: f[2]
     }).toHex()) : r,
-    b = (0, l.Bd)((0, l._i)(p)) > .5 ? n : t;
+    m = (0, l.Bd)((0, l._i)(p)) > .5 ? n : t;
   return {
     fillColor: p,
-    outlineColor: b
+    outlineColor: m
   }
 }

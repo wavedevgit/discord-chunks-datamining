@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk351773 = require("./351773.js"),
   Chunk507808 = require("./507808.js"),
   Chunk790542 = require("./790542.js"),
@@ -17,16 +17,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk82856 = require("./82856.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk461207 = require("./461207.js");
+  Chunk152935 = require("./152935.js");
 let h = {
-    START: Chunk461207.alignLeft,
-    END: Chunk461207.alignRight
+    START: Chunk152935.alignLeft,
+    END: Chunk152935.alignRight
   },
   g = e => {
     let {
       showNotificationBadge: t,
       ctaText: n,
-      ctaOnClick: a,
+      ctaOnClick: o,
       analyticsPage: g,
       linkText: E = _.intl.string(_.t.XRdyjz),
       cardAlignment: b = h.START,
@@ -46,12 +46,12 @@ let h = {
       analyticsPage: g,
       ctaText: n,
       ctaOnClick: () => {
-        P(), a()
+        P(), o()
       },
       linkText: E
-    }), [g, n, E, P, a]);
+    }), [g, n, E, P, o]);
     return (0, r.jsxs)("div", {
-      className: o()(m.container, y, {
+      className: a()(m.container, y, {
         [m.hidden]: C,
         [m.visible]: !C
       }),
@@ -65,7 +65,7 @@ let h = {
         onClick: P,
         showNotificationBadge: t
       }), I && (0, r.jsx)("div", {
-        className: o()(m.cardContainer, b, {
+        className: a()(m.cardContainer, b, {
           [m.hidden]: C,
           [m.visible]: !C
         }),

@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk324805 = require("./324805.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk773969 = require("./773969.js");
+  Chunk378672 = require("./378672.js");
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -85,7 +85,7 @@ function x(e) {
   let {
     nodeRef: c,
     quest: m
-  } = e, _ = (0, d.O5)(), S = (0, s.e7)([p.Z], () => p.Z.isEnrolling(m.id), [m]), [x, A] = i.useState(false), Z = i.useCallback(() => A(true), []), w = i.useCallback(() => A(false), []), {
+  } = e, b = (0, d.O5)(), S = (0, s.e7)([p.Z], () => p.Z.isEnrolling(m.id), [m]), [x, A] = i.useState(false), Z = i.useCallback(() => A(true), []), w = i.useCallback(() => A(false), []), {
     launchInGameActivity: L
   } = (0, h.zB)(m), R = i.useCallback(e => {
     e.stopPropagation()
@@ -94,9 +94,9 @@ function x(e) {
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: d.jZ.ACCEPT_QUEST,
       sourceQuestContent: f.jn.ACTIVITY_PANEL
-    }), (0, b.Rt)(m) && L()
+    }), (0, _.Rt)(m) && L()
   }, [m, L]), M = i.useCallback(() => {
-    null != m && (_({
+    null != m && (b({
       questId: m.id,
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: d.jZ.TRACK_PROGRESS,
@@ -105,8 +105,8 @@ function x(e) {
       fromContent: f.jn.ACTIVITY_PANEL,
       questId: m.id
     }))
-  }, [m, _]), k = i.useCallback(() => {
-    _({
+  }, [m, b]), k = i.useCallback(() => {
+    b({
       questId: m.id,
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: d.jZ.LEARN_MORE,
@@ -115,7 +115,7 @@ function x(e) {
       fromContent: f.jn.ACTIVITY_PANEL,
       questId: m.id
     })
-  }, [m.id, _]), U = (0, O.hf)({
+  }, [m.id, b]), U = (0, O.hf)({
     quest: m,
     questContent: f.jn.ACTIVITY_PANEL,
     sourceQuestContent: f.jn.ACTIVITY_PANEL
@@ -125,7 +125,7 @@ function x(e) {
     location: C.dr.ACTIVITY_PANEL,
     questContent: f.jn.ACTIVITY_PANEL,
     sourceQuestContent: f.jn.ACTIVITY_PANEL
-  }), F = (0, b.Rt)(m), z = (0, g.CR)({
+  }), F = (0, _.Rt)(m), z = (0, g.CR)({
     quest: m
   }), Y = F ? z : T.intl.string(T.t.l7E81v);
   return (0, r.jsxs)("div", {
@@ -225,7 +225,7 @@ function x(e) {
   })
 }
 let A = function(e) {
-  return (0, r.jsx)(_.A, {
+  return (0, r.jsx)(b.A, {
     questOrQuests: e.quest,
     questContent: f.jn.ACTIVITY_PANEL,
     sourceQuestContent: f.jn.ACTIVITY_PANEL,

@@ -57,13 +57,13 @@ function p(e) {
     usernameHook: n,
     onClickPins: c,
     compact: d
-  } = e, p = (0, o.ZP)(t), _ = p.nick, m = n(p), h = () => {
+  } = e, p = (0, a.ZP)(t), _ = p.nick, m = n(p), h = () => {
     if (null == t.messageReference) return;
     let {
       channel_id: e,
       message_id: n
     } = t.messageReference;
-    a.Z.jumpToMessage({
+    o.Z.jumpToMessage({
       channelId: e,
       messageId: n,
       flash: true

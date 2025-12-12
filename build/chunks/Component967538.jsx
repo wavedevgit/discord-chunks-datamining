@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk325767 = require("./325767.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,14 +17,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -51,8 +51,8 @@ function c(e, t) {
   if (null == e) return {};
   var n, r, i = u(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -60,17 +60,17 @@ function c(e, t) {
 function u(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let d = e => {
   var {
     className: t,
     backgroundColor: n,
-    backgroundCircleSize: a
+    backgroundCircleSize: o
   } = e, s = c(e, ["className", "backgroundColor", "backgroundCircleSize"]);
-  return (0, r.jsxs)("svg", l(o({
+  return (0, r.jsxs)("svg", l(a({
     width: "100%",
     height: "100%",
     viewBox: "0 0 100 100",
@@ -79,9 +79,9 @@ let d = e => {
       overflow: "visible"
     },
     xmlns: "http://www.w3.org/2000/svg"
-  }, (0, i.Z)(o({}, s))), {
+  }, (0, i.Z)(a({}, s))), {
     children: [(0, r.jsx)("circle", {
-      r: null != a ? a : "40%",
+      r: null != o ? o : "40%",
       cx: "50%",
       cy: "50%",
       className: n

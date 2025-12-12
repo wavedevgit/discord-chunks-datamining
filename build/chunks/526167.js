@@ -8,7 +8,7 @@ require.d(exports, {
   rO: () => I,
   vu: () => p
 });
-var r, i, a, o, s, l, Chunk525654 = require("./525654.js"),
+var r, i, o, a, s, l, Chunk525654 = require("./525654.js"),
   u = require.n(Chunk525654);
 let d = (null != (r = u().name) ? r : "unknown").toLowerCase(),
   f = "chrome" === d.toLowerCase() ? parseInt(null != (i = u().version) ? i : "", 10) : false;
@@ -16,12 +16,12 @@ let d = (null != (r = u().name) ? r : "unknown").toLowerCase(),
 function p() {
   return f
 }
-let _ = "electron" === d.toLowerCase() ? parseInt(null != (a = u().version) ? a : "", 10) : false;
+let _ = "electron" === d.toLowerCase() ? parseInt(null != (o = u().version) ? o : "", 10) : false;
 
 function m() {
   return _
 }
-let h = "firefox" === d.toLowerCase() ? parseInt(null != (o = u().version) ? o : "", 10) : false;
+let h = "firefox" === d.toLowerCase() ? parseInt(null != (a = u().version) ? a : "", 10) : false;
 
 function g() {
   return h

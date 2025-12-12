@@ -1,4 +1,4 @@
-/** Chunk was on 193 **/
+/** Chunk was on 9456 **/
 /** chunk id: 219664, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk683860 = require("./683860.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
@@ -41,22 +41,22 @@ var Chunk54381 = require("./54381.js"),
   Chunk710352 = require("./710352.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk489549 = require("./489549.js");
+  Chunk740202 = require("./740202.js");
 
 function z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      a = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), a.forEach(function(t) {
-      var a;
-      a = n[t], t in e ? Object.defineProperty(e, t, {
-        value: a,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = a
+      }) : e[t] = r
     })
   }
   return e
@@ -66,8 +66,8 @@ function B(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, a)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -78,20 +78,20 @@ let U = Chunk473749.memo(function(e) {
   let {
     id: t,
     threadId: n,
-    goToThread: r,
-    overrideMedia: i,
-    className: l,
+    goToThread: i,
+    overrideMedia: l,
+    className: a,
     coords: s,
     gridCoords: c,
     gridSectionBoundaries: d,
     observePostVisibilityAnalytics: u
-  } = e, m = (0, o.e7)([T.Z], () => T.Z.getChannel(n));
-  return null == m ? null : (0, a.jsx)(G, {
+  } = e, m = (0, o.e7)([y.Z], () => y.Z.getChannel(n));
+  return null == m ? null : (0, r.jsx)(G, {
     id: t,
     channel: m,
-    goToThread: r,
-    overrideMedia: i,
-    className: l,
+    goToThread: i,
+    overrideMedia: l,
+    className: a,
     coords: s,
     gridCoords: c,
     observePostVisibilityAnalytics: u,
@@ -103,128 +103,128 @@ function G(e) {
   let {
     id: t,
     channel: n,
-    goToThread: i,
+    goToThread: l,
     overrideMedia: u,
     className: m,
-    coords: f,
-    gridCoords: h,
-    gridSectionBoundaries: g,
+    coords: h,
+    gridCoords: g,
+    gridSectionBoundaries: f,
     observePostVisibilityAnalytics: x
-  } = e, b = n.id, p = r.useRef(null), j = (0, o.e7)([y.ZP], () => y.ZP.getCurrentSidebarChannelId(n.parent_id) === n.id), {
+  } = e, p = n.id, b = i.useRef(null), j = (0, o.e7)([C.ZP], () => C.ZP.getCurrentSidebarChannelId(n.parent_id) === n.id), {
     firstMessage: v,
-    loaded: C
-  } = (0, O.cl)(n), {
-    messageCountText: T
-  } = (0, N.nP)(n), {
-    isNew: w,
-    hasUnreads: S
-  } = (0, N.J$)(n), P = r.useRef(null), {
-    handleLeftClick: I,
+    loaded: _
+  } = (0, N.cl)(n), {
+    messageCountText: y
+  } = (0, S.nP)(n), {
+    isNew: T,
+    hasUnreads: w
+  } = (0, S.J$)(n), O = i.useRef(null), {
+    handleLeftClick: P,
     handleRightClick: R
   } = (0, A.Z)({
-    facepileRef: P,
-    goToThread: i,
+    facepileRef: O,
+    goToThread: l,
     channel: n
   });
-  r.useEffect(() => {
-    null == x || x(p.current, b)
-  }, [x, b]);
-  let Z = (0, N.xw)(n, s.z.CREATION_DATE, L.R6.POSTED_DURATION_AGO),
-    F = (0, E.NN)(n),
+  i.useEffect(() => {
+    null == x || x(b.current, p)
+  }, [x, p]);
+  let Z = (0, S.xw)(n, s.z.CREATION_DATE, L.R6.POSTED_DURATION_AGO),
+    F = (0, I.NN)(n),
     B = (0, k.nX)({
       id: t,
-      row: h.row,
-      column: h.column,
-      section: h.section,
-      boundaries: g
+      row: g.row,
+      column: g.column,
+      section: g.section,
+      boundaries: f
     }),
     {
       onFocus: U
     } = B,
     G = function(e, t) {
       if (null == e) return {};
-      var n, a, r = function(e, t) {
+      var n, r, i = function(e, t) {
         if (null == e) return {};
-        var n, a, r = {},
-          i = Object.keys(e);
-        for (a = 0; a < i.length; a++) n = i[a], t.indexOf(n) >= 0 || (r[n] = e[n]);
-        return r
+        var n, r, i = {},
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (a = 0; a < i.length; a++) n = i[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
-      return r
+      return i
     }(B, ["onFocus"]);
-  return (0, a.jsxs)("li", {
-    ref: p,
-    onClick: I,
+  return (0, r.jsxs)("li", {
+    ref: b,
+    onClick: P,
     onFocus: U,
     onContextMenu: R,
-    className: l()(H.container, m, {
+    className: a()(H.container, m, {
       [H.isOpen]: j
     }),
-    style: z({}, f),
-    children: [(0, a.jsx)(d.P3F, z({
-      onClick: I,
+    style: z({}, h),
+    children: [(0, r.jsx)(d.P3F, z({
+      onClick: P,
       focusProps: {
-        ringTarget: p
+        ringTarget: b
       },
       onContextMenu: R,
       "aria-label": D.intl.formatToPlainString(D.t.pgYN6c, {
         title: n.name,
-        count: T
+        count: y
       }),
       className: H.focusTarget
-    }, G)), (0, a.jsxs)("div", {
+    }, G)), (0, r.jsxs)("div", {
       className: H.header,
-      children: [(0, a.jsxs)("div", {
+      children: [(0, r.jsxs)("div", {
         className: H.authorRow,
-        children: [(0, a.jsxs)("div", {
+        children: [(0, r.jsxs)("div", {
           className: H.rowGroup,
-          children: [(0, a.jsx)(M.Z, {
+          children: [(0, r.jsx)(M.Z, {
             channel: n,
             message: v
-          }), (0, a.jsx)(d.Text, {
+          }), (0, r.jsx)(d.Text, {
             variant: "text-xs/normal",
             color: "text-default",
             className: H.postCreationTimestamp,
             children: Z
           })]
-        }), w ? (0, a.jsx)(d.IGR, {
+        }), T ? (0, r.jsx)(d.IGR, {
           className: H.newBadge,
           color: c.Z.unsafe_rawColors.BRAND_260.css,
           text: D.intl.string(D.t.y2b7CA)
         }) : null]
-      }), (0, a.jsx)(d.y5t, {
-        children: (0, a.jsx)(d.Heading, {
+      }), (0, r.jsx)(d.y5t, {
+        children: (0, r.jsx)(d.Heading, {
           variant: "heading-md/extrabold",
           className: H.title,
-          color: S ? "text-strong" : "text-muted",
+          color: w ? "text-strong" : "text-muted",
           style: {
-            width: "".concat(f.width - 2 * _.I8, "px")
+            width: "".concat(h.width - 2 * E.I8, "px")
           },
           children: F
         })
       })]
-    }), (0, a.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: H.postBody,
-      children: (0, a.jsx)(d.Rny, {
-        children: (0, a.jsx)(V, {
+      children: (0, r.jsx)(d.Rny, {
+        children: (0, r.jsx)(V, {
           channel: n,
           firstMessage: v,
-          isFirstMessageLoaded: C,
+          isFirstMessageLoaded: _,
           overrideMedia: u,
-          coords: f
+          coords: h
         })
       })
-    }), (0, a.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: H.footer,
-      children: (0, a.jsx)(d.Rny, {
-        children: (0, a.jsx)(q, {
+      children: (0, r.jsx)(d.Rny, {
+        children: (0, r.jsx)(q, {
           channel: n,
           firstMessage: v,
-          facepileRef: P
+          facepileRef: O
         })
       })
     })]
@@ -235,30 +235,30 @@ function V(e) {
   let {
     channel: t,
     firstMessage: n,
-    isFirstMessageLoaded: r,
-    overrideMedia: i,
-    coords: l
+    isFirstMessageLoaded: i,
+    overrideMedia: l,
+    coords: a
   } = e, {
     isBlocked: s,
     isIgnored: c
-  } = (0, o.cj)([S.Z], () => ({
-    isBlocked: null != n && S.Z.isBlockedForMessage(n),
-    isIgnored: null != n && S.Z.isIgnoredForMessage(n)
+  } = (0, o.cj)([w.Z], () => ({
+    isBlocked: null != n && w.Z.isBlockedForMessage(n),
+    isIgnored: null != n && w.Z.isIgnoredForMessage(n)
   }));
-  return s ? (0, a.jsx)($, {
+  return s ? (0, r.jsx)($, {
     message: D.intl.string(D.t.Lkp2fB),
-    containerWidth: l.width,
+    containerWidth: a.width,
     channel: t
-  }) : c ? (0, a.jsx)($, {
+  }) : c ? (0, r.jsx)($, {
     message: D.intl.string(D.t.yWK7ZM),
-    containerWidth: l.width,
+    containerWidth: a.width,
     channel: t
-  }) : (0, a.jsx)(W, {
+  }) : (0, r.jsx)(W, {
     channel: t,
     firstMessage: n,
-    isFirstMessageLoaded: r,
-    overrideMedia: i,
-    coords: l
+    isFirstMessageLoaded: i,
+    overrideMedia: l,
+    coords: a
   })
 }
 
@@ -266,35 +266,35 @@ function W(e) {
   let {
     channel: t,
     firstMessage: n,
-    isFirstMessageLoaded: r,
-    overrideMedia: i,
-    coords: l
-  } = e, s = (0, o.e7)([T.Z], () => T.Z.getChannel(t.parent_id)), {
+    isFirstMessageLoaded: i,
+    overrideMedia: l,
+    coords: a
+  } = e, s = (0, o.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), {
     firstMedia: c
-  } = (0, N.mX)({
+  } = (0, S.mX)({
     firstMessage: n,
     formatInline: false,
     noStyleAndInteraction: false
   }), {
     hasUnreads: d
-  } = (0, N.J$)(t), u = (0, o.e7)([w.Z], () => w.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = C.QK.useSetting(), f = C.cC.useSetting(), h = (0, p.Z)(f, u), g = (0, P.aU)(n, s, false), x = t.isMediaPost(), [b, j] = (0, _.rI)(l.width - 2 * _.LT, x ? _.Lv.SIXTEEN_BY_NINE : _.Lv.THREE_BY_TWO);
-  return (null == n ? true : n.blocked) || null == (null != i ? i : c) ? (0, a.jsx)(Q, {
+  } = (0, S.J$)(t), u = (0, o.e7)([T.Z], () => T.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = _.QK.useSetting(), h = _.cC.useSetting(), g = (0, b.Z)(h, u), f = (0, O.aU)(n, s, false), x = t.isMediaPost(), [p, j] = (0, E.rI)(a.width - 2 * E.LT, x ? E.Lv.SIXTEEN_BY_NINE : E.Lv.THREE_BY_TWO);
+  return (null == n ? true : n.blocked) || null == (null != l ? l : c) ? (0, r.jsx)(Q, {
     channel: t,
     firstMessage: n,
-    isFirstMessageLoaded: r,
-    containerWidth: l.width,
+    isFirstMessageLoaded: i,
+    containerWidth: a.width,
     hasUnreads: d
-  }) : (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)(Y, {
-      mediaAttachments: g,
-      globalSpoilerRenderSetting: h,
-      containerWidth: b,
+  }) : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(Y, {
+      mediaAttachments: f,
+      globalSpoilerRenderSetting: g,
+      containerWidth: p,
       containerHeight: j,
       canAutoPlay: m,
       shouldMaintainAspectRatio: x
-    }), (0, a.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: H.tagsRow,
-      children: (0, a.jsx)(Z.ZP, {
+      children: (0, r.jsx)(Z.ZP, {
         channel: t,
         tagsClassName: H.tagPill
       })
@@ -306,49 +306,49 @@ function q(e) {
   let {
     channel: t,
     facepileRef: n,
-    firstMessage: r
-  } = e, i = (0, m.Q)(t.id), l = (null == r ? true : r.reactions) != null && r.reactions.length > 0;
-  return (0, a.jsxs)("div", {
+    firstMessage: i
+  } = e, l = (0, m.Q)(t.id), a = (null == i ? true : i.reactions) != null && i.reactions.length > 0;
+  return (0, r.jsxs)("div", {
     className: H.forumPostControls,
-    children: [(0, a.jsxs)("div", {
+    children: [(0, r.jsxs)("div", {
       className: H.controlsGroup,
-      children: [(0, a.jsx)("div", {
+      children: [(0, r.jsx)("div", {
         className: H.messageCountContainer,
-        children: (0, a.jsx)(E.m9, {
+        children: (0, r.jsx)(I.m9, {
           channel: t,
           iconSize: 16,
           showReadState: true
         })
-      }), i.length > 0 ? (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)("span", {
+      }), l.length > 0 ? (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)("span", {
           className: H.bullet,
           children: "•"
-        }), (0, a.jsxs)("div", {
+        }), (0, r.jsxs)("div", {
           className: H.typing,
-          children: [(0, a.jsx)(E.og, {
+          children: [(0, r.jsx)(I.og, {
             channel: t,
-            userIds: i,
+            userIds: l,
             facepileRef: n
-          }), (0, a.jsx)("div", {
+          }), (0, r.jsx)("div", {
             className: H.dots,
-            children: (0, a.jsx)(d.bbz, {
+            children: (0, r.jsx)(d.bbz, {
               themed: true,
               dotRadius: 2
             })
-          }), (0, a.jsx)(u.ZP, {
+          }), (0, r.jsx)(u.ZP, {
             channel: t,
             className: H.typingUsers,
             renderDots: false
           })]
         })]
       }) : null]
-    }), (0, a.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: H.controlsGroup,
-      children: [l || null == r ? null : (0, a.jsx)(E.kZ, {
-        firstMessage: r,
+      children: [a || null == i ? null : (0, r.jsx)(I.kZ, {
+        firstMessage: i,
         channel: t
-      }), null == r ? null : (0, a.jsx)(E.au, {
-        firstMessage: r,
+      }), null == i ? null : (0, r.jsx)(I.au, {
+        firstMessage: i,
         channel: t
       })]
     })]
@@ -356,7 +356,7 @@ function q(e) {
 }
 let K = e => e.preventDefault(),
   X = Chunk473749.memo(function(e) {
-    return (0, a.jsx)(a.Fragment, {
+    return (0, r.jsx)(r.Fragment, {
       children: (0, v.Yi)(B(z({}, e), {
         analyticsSource: "ForumPostMediaPreviewImage"
       }))
@@ -366,86 +366,86 @@ let K = e => e.preventDefault(),
     let {
       mediaAttachments: t,
       globalSpoilerRenderSetting: n,
-      containerWidth: i,
+      containerWidth: l,
       containerHeight: s,
       canAutoPlay: o,
       shouldMaintainAspectRatio: c = false
     } = e, {
       containsVideo: u,
       containsGif: m
-    } = r.useMemo(() => (0, P.cp)(t), [t]), p = r.useMemo(() => t.slice(R.$x, R.GV), [t]), j = (0, R.tu)({
-      numAttachments: p.length,
-      containerWidth: i,
+    } = i.useMemo(() => (0, O.cp)(t), [t]), b = i.useMemo(() => t.slice(R.$x, R.GV), [t]), j = (0, R.tu)({
+      numAttachments: b.length,
+      containerWidth: l,
       containerHeight: s
     }), v = (0, R.S$)({
       imageContainerStyles: j,
-      containerWidth: i,
+      containerWidth: l,
       containerHeight: s
-    }), C = (0, g.kh)(h.n.GUILD), y = r.useMemo(() => p.map((e, t) => {
-      var r;
-      let [i, s] = (0, b.As)(e, !n, C), h = (0, b.MC)(s), g = B(z({}, v[t]), {
+    }), _ = (0, f.kh)(g.n.GUILD), C = i.useMemo(() => b.map((e, t) => {
+      var i;
+      let [l, s] = (0, p.As)(e, !n, _), g = (0, p.MC)(s), f = B(z({}, v[t]), {
         src: e.src,
         width: e.width,
         height: e.height,
-        alt: null != e.alt && i ? h : e.alt,
+        alt: null != e.alt && l ? g : e.alt,
         onClick: K,
         shouldRenderAccessory: !m && !u
-      }), p = (0, x.d$)(e.src) ? "".concat(e.src, "?format=png") : e.src, y = o && !i ? e.src : p;
-      return (0, a.jsxs)("div", {
+      }), b = (0, x.d$)(e.src) ? "".concat(e.src, "?format=png") : e.src, C = o && !l ? e.src : b;
+      return (0, r.jsxs)("div", {
         className: H.bodyMediaFrame,
         style: j[t],
-        children: [c ? (0, a.jsx)(f.Z, B(z({}, g), {
-          src: y,
-          backgroundSrc: p,
-          aspectRatio: g.maxWidth / g.maxHeight,
-          alt: null != (r = g.alt) ? r : "",
-          className: l()(H.mediaPostContainer, {
-            [H.obscured]: i
+        children: [c ? (0, r.jsx)(h.Z, B(z({}, f), {
+          src: C,
+          backgroundSrc: b,
+          aspectRatio: f.maxWidth / f.maxHeight,
+          alt: null != (i = f.alt) ? i : "",
+          className: a()(H.mediaPostContainer, {
+            [H.obscured]: l
           }),
           imageChildClassName: H.mediaPostThumbnail
-        })) : e.src.startsWith("data:") ? (0, a.jsx)(d.Eep, B(z({}, g), {
+        })) : e.src.startsWith("data:") ? (0, r.jsx)(d.Eep, B(z({}, f), {
           className: H.mediaContainer,
-          imageClassName: l()(H.thumbnailOverride, {
-            [H.obscured]: i
+          imageClassName: a()(H.thumbnailOverride, {
+            [H.obscured]: l
           })
-        })) : (0, a.jsx)(X, B(z({}, g), {
-          autoPlay: o && !i,
+        })) : (0, r.jsx)(X, B(z({}, f), {
+          autoPlay: o && !l,
           containerClassName: H.mosaicMediaContainer,
-          imageClassName: l()(H.imageCover, {
-            [H.obscured]: i
+          imageClassName: a()(H.imageCover, {
+            [H.obscured]: l
           }),
           responsive: true
-        })), i && (0, a.jsx)("div", {
+        })), l && (0, r.jsx)("div", {
           className: H.obscuredTagContainer,
-          children: (0, a.jsx)(I.Z, {
+          children: (0, r.jsx)(P.Z, {
             obscureReason: s,
             iconClassname: H.obscuredTag
           })
         })]
       }, e.src)
-    }), [o, m, u, n, j, v, p, c, C]);
-    return (0, a.jsxs)("div", {
+    }), [o, m, u, n, j, v, b, c, _]);
+    return (0, r.jsxs)("div", {
       className: H.bodyMedia,
       style: {
-        width: i,
+        width: l,
         height: s
       },
-      children: [y, (m || u) && (0, a.jsxs)("div", {
+      children: [C, (m || u) && (0, r.jsxs)("div", {
         className: H.mediaIconsRow,
-        children: [u && (0, a.jsx)(d.o1U, {
+        children: [u && (0, r.jsx)(d.o1U, {
           color: "currentColor",
           size: "custom",
           width: 22,
           height: 22,
           className: H.mediaIcon
-        }), m && (0, a.jsx)(d.OUq, {
+        }), m && (0, r.jsx)(d.OUq, {
           size: "custom",
           width: 29,
           height: 29,
           color: "currentColor",
           className: H.mediaIcon
         })]
-      }), t.length > R.Vn && (0, a.jsx)(J, {
+      }), t.length > R.Vn && (0, r.jsx)(J, {
         text: (t.length - R.Vn).toString(),
         icon: d.XBm,
         pillClassName: H.moreImagesPill,
@@ -459,18 +459,18 @@ function J(e) {
   let {
     text: t,
     icon: n,
-    pillClassName: r,
-    iconClassName: i,
-    textClassName: l
+    pillClassName: i,
+    iconClassName: l,
+    textClassName: a
   } = e;
-  return (0, a.jsxs)("div", {
-    className: r,
-    children: [(0, a.jsx)(n, {
-      className: i,
-      color: "currentColor"
-    }), (0, a.jsxs)(d.Text, {
-      variant: "text-xs/medium",
+  return (0, r.jsxs)("div", {
+    className: i,
+    children: [(0, r.jsx)(n, {
       className: l,
+      color: "currentColor"
+    }), (0, r.jsxs)(d.Text, {
+      variant: "text-xs/medium",
+      className: a,
       children: ["+", t]
     })]
   })
@@ -480,44 +480,44 @@ function Q(e) {
   let {
     channel: t,
     firstMessage: n,
-    isFirstMessageLoaded: i,
+    isFirstMessageLoaded: l,
     containerWidth: s,
     hasUnreads: o
-  } = e, c = C.jU.useSetting(), [u, m] = (0, _.rI)(s - 2 * _.LT), {
-    content: f
-  } = (0, N.mX)({
+  } = e, c = _.jU.useSetting(), [u, m] = (0, E.rI)(s - 2 * E.LT), {
+    content: h
+  } = (0, S.mX)({
     firstMessage: n,
     formatInline: false,
     noStyleAndInteraction: true
   }), {
-    shouldRenderTagsRow: h
+    shouldRenderTagsRow: g
   } = (0, Z.DM)({
     channel: t,
     isNew: false
-  }), g = r.useMemo(() => ({
+  }), f = i.useMemo(() => ({
     width: u,
     height: m
   }), [u, m]), x = o ? H.textContentUnread : H.textContentRead;
-  return (0, a.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: H.contentPreview,
-    style: g,
-    children: [(0, a.jsxs)("div", {
+    style: f,
+    children: [(0, r.jsxs)("div", {
       className: H.content,
-      children: [i && null == n && (0, a.jsx)(d.Text, {
+      children: [l && null == n && (0, r.jsx)(d.Text, {
         variant: "text-sm/normal",
         color: o ? "text-default" : "text-muted",
         children: D.intl.string(D.t.mE3KJN)
-      }), i && null != n && (0, a.jsx)(j.ZP, {
+      }), l && null != n && (0, r.jsx)(j.ZP, {
         message: n,
-        content: f,
+        content: h,
         className: x,
         compact: c
       })]
-    }), (0, a.jsx)("div", {
-      className: l()(H.textContentFooter, {
-        [H.noTags]: !h
+    }), (0, r.jsx)("div", {
+      className: a()(H.textContentFooter, {
+        [H.noTags]: !g
       }),
-      children: h ? (0, a.jsx)(Z.ZP, {
+      children: g ? (0, r.jsx)(Z.ZP, {
         channel: t,
         tagsClassName: H.tagPill
       }) : null
@@ -529,33 +529,33 @@ function $(e) {
   let {
     message: t,
     containerWidth: n,
-    channel: i
-  } = e, [s, o] = (0, _.rI)(n - 2 * _.LT), {
+    channel: l
+  } = e, [s, o] = (0, E.rI)(n - 2 * E.LT), {
     shouldRenderTagsRow: c
   } = (0, Z.DM)({
-    channel: i,
+    channel: l,
     isNew: false
-  }), u = r.useMemo(() => ({
+  }), u = i.useMemo(() => ({
     width: s,
     height: o
   }), [s, o]);
-  return (0, a.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: H.contentPreview,
     style: u,
-    children: [(0, a.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: H.content,
-      children: (0, a.jsx)(d.Text, {
+      children: (0, r.jsx)(d.Text, {
         className: H.blockedMessage,
         variant: "text-sm/medium",
         color: "text-muted",
         children: t
       })
-    }), (0, a.jsx)("div", {
-      className: l()(H.textContentFooter, {
+    }), (0, r.jsx)("div", {
+      className: a()(H.textContentFooter, {
         [H.noTags]: !c
       }),
-      children: c ? (0, a.jsx)(Z.ZP, {
-        channel: i,
+      children: c ? (0, r.jsx)(Z.ZP, {
+        channel: l,
         tagsClassName: H.tagPill
       }) : null
     })]

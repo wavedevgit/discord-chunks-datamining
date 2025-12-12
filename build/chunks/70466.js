@@ -15,11 +15,11 @@ let c = e => {
       showTrialCTA: t,
       subscriptionTier: n,
       trialDurationCopy: i,
-      isPersistentCTA: a,
-      shouldShowReferralTrialCopy: o,
+      isPersistentCTA: o,
+      shouldShowReferralTrialCopy: a,
       subscriptionTrial: c
     } = e;
-    return t && o ? l.intl.string(l.t.bXTClc) : t && (n === s.Si.TIER_2 || a) ? (0, r.Rt)({
+    return t && a ? l.intl.string(l.t.bXTClc) : t && (n === s.Si.TIER_2 || o) ? (0, r.Rt)({
       intervalType: null == c ? true : c.interval,
       intervalCount: null == c ? true : c.interval_count
     }) : t ? l.intl.formatToPlainString(l.t.nTmm2v, {
@@ -36,7 +36,7 @@ let c = e => {
       hasActivePromotion: f = false,
       useShorterCTA: p = false,
       isPersistentCTA: _ = false
-    } = e, m = (0, a.N)(), h = null == m ? true : m.subscription_trial, g = (0, i.N)(), E = (0, o.Wp)(g, s.Si.TIER_2) ? s.Si.TIER_2 : true, b = (0, r.a5)({
+    } = e, m = (0, o.N)(), h = null == m ? true : m.subscription_trial, g = (0, i.N)(), E = (0, a.Wp)(g, s.Si.TIER_2) ? s.Si.TIER_2 : true, b = (0, r.a5)({
       intervalType: null == h ? true : h.interval,
       intervalCount: null == h ? true : h.interval_count
     }), y = null != (n = null != d ? d : null == m || null == (t = m.subscription_trial) ? true : t.sku_id) ? n : E, O = null != h && y === h.sku_id, v = (null == m ? true : m.trial_id) === s.a7;

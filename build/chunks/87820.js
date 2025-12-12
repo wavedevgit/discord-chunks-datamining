@@ -2,13 +2,13 @@
 /** chunk id: 87820, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => o
+  r: () => a
 });
 var Chunk473749 = require("./473749.js"),
   Chunk88658 = require("./88658.js"),
   Chunk695346 = require("./695346.js");
 
-function o() {
+function a() {
   let e = Chunk695346.xq.useSetting(),
     t = Chunk473749.useMemo(() => (0, Chunk88658.bL)(module), [module]);
   return exports.mutualGuilds && !exports.all

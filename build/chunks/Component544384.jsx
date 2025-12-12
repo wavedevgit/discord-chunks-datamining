@@ -21,17 +21,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function g(e, t, n) {
-  let r = (0, a.e7)([l.Z], () => null != e ? l.Z.getSelectedParticipantId(e.id) : null),
-    o = (0, a.e7)([f.Z], () => null != r ? f.Z.getActiveStreamForStreamKey(r) : null, [r]),
-    s = (0, a.cj)([p.default], () => n.reduce((e, t) => (e[t.ownerId] = p.default.getUser(t.ownerId), e), {}), [n]);
+  let r = (0, o.e7)([l.Z], () => null != e ? l.Z.getSelectedParticipantId(e.id) : null),
+    a = (0, o.e7)([f.Z], () => null != r ? f.Z.getActiveStreamForStreamKey(r) : null, [r]),
+    s = (0, o.cj)([p.default], () => n.reduce((e, t) => (e[t.ownerId] = p.default.getUser(t.ownerId), e), {}), [n]);
   return i.useMemo(() => {
     if (null == e) return [];
     let r = n.filter(e => e.ownerId !== (null == t ? true : t.id));
-    return 1 === r.length && r[0].ownerId === (null == o ? true : o.ownerId) ? [] : r.map(t => ({
+    return 1 === r.length && r[0].ownerId === (null == a ? true : a.ownerId) ? [] : r.map(t => ({
       stream: t,
       username: _.ZP.getName(e.getGuildId(), e.id, s[t.ownerId])
     }))
-  }, [s, n, e, o, null == t ? true : t.id])
+  }, [s, n, e, a, null == t ? true : t.id])
 }
 
 function E(e) {
@@ -39,7 +39,7 @@ function E(e) {
   let {
     channel: n,
     currentUser: i,
-    activeStreams: a,
+    activeStreams: o,
     hideSelfOptions: l = false,
     showReportOption: f = false,
     handleGoLive: p,
@@ -48,7 +48,7 @@ function E(e) {
     appContext: b = m.IlC.APP,
     disableChangeWindows: y = false,
     onInteraction: O
-  } = e, v = null != (t = a.find(e => e.ownerId === (null == i ? true : i.id))) ? t : null, S = g(n, i, a), I = (0, c.Z)(v, b), T = (0, u.b)({
+  } = e, v = null != (t = o.find(e => e.ownerId === (null == i ? true : i.id))) ? t : null, S = g(n, i, o), I = (0, c.Z)(v, b), T = (0, u.b)({
     disableChangeWindows: y,
     stream: v,
     showReportOption: f,
@@ -58,29 +58,29 @@ function E(e) {
   });
   return (0, r.jsx)(s.Z, {
     section: m.jXE.CONTEXT_MENU,
-    children: (0, r.jsxs)(o.v2r, {
+    children: (0, r.jsxs)(a.v2r, {
       onSelect: E,
       navId: "manage-streams",
       onClose: _,
       onInteraction: O,
       "aria-label": null != v ? h.intl.string(h.t.S5anIc) : h.intl.string(h.t.fjBNo1),
-      children: [(0, r.jsx)(o.kSQ, {
+      children: [(0, r.jsx)(a.kSQ, {
         children: S.map(e => {
           let {
             stream: t,
             username: n
           } = e;
-          return (0, r.jsx)(o.sNh, {
+          return (0, r.jsx)(a.sNh, {
             id: t.ownerId,
             label: h.intl.formatToPlainString(h.t["7rkg+/"], {
               username: n
             }),
-            icon: o.g5r,
+            icon: a.g5r,
             action: () => (0, d.Z)(t)
           }, "manage-stream-menu".concat(t.ownerId))
         })
-      }), l ? null : T, l ? null : (0, r.jsx)(o.kSQ, {
-        children: (0, r.jsx)(o.sNh, {
+      }), l ? null : T, l ? null : (0, r.jsx)(a.kSQ, {
+        children: (0, r.jsx)(a.sNh, {
           id: "more-options",
           label: h.intl.string(h.t.PdRCRg),
           children: I

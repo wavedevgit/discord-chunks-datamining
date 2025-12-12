@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 62072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -38,21 +38,21 @@ let I = function(e, t, n) {
       N = n.metaKey && !(n.altKey || n.ctrlKey || n.shiftKey),
       A = n.shiftKey && !(n.altKey || n.ctrlKey || n.metaKey),
       w = b.Z.getMessage(t, e),
-      M = f.Z.getChannel(t);
+      M = h.Z.getChannel(t);
     if (null == w || null == M) return;
     let R = p.default.getId();
     switch (n.key.toLowerCase()) {
       case "backspace":
-        i && (C.Z.can(P.Plq.MANAGE_MESSAGES, M) || w.canDeleteOwnMessage(R)) && (n.preventDefault(), (0, _.$Z)(M, w, n));
+        i && (C.Z.can(P.Plq.MANAGE_MESSAGES, M) || w.canDeleteOwnMessage(R)) && (n.preventDefault(), (0, S.$Z)(M, w, n));
         break;
       case "c":
-        ((0, O.isMac)() ? N : T) && y.wS && (n.preventDefault(), (0, y.JG)(w.content));
+        ((0, _.isMac)() ? N : T) && y.wS && (n.preventDefault(), (0, y.JG)(w.content));
         break;
       case "e":
-        i && !M.isSystemDM() && (0, E.Z)(w, R) && (n.preventDefault(), (0, _.Hd)(M, w));
+        i && !M.isSystemDM() && (0, x.Z)(w, R) && (n.preventDefault(), (0, S.Hd)(M, w));
         break;
       case "p":
-        (i || A) && (0, j.Z)(w, M) && (n.preventDefault(), (0, _.rY)(M, w, n));
+        (i || A) && (0, E.Z)(w, M) && (n.preventDefault(), (0, S.rY)(M, w, n));
         break;
       case "+":
         (i || A) && function(e) {
@@ -60,7 +60,7 @@ let I = function(e, t, n) {
             n = d.nc.getSetting(),
             {
               disableReactionCreates: i
-            } = (0, S.Z)({
+            } = (0, j.Z)({
               channel: e,
               canChat: t,
               renderReactions: n,
@@ -75,7 +75,7 @@ let I = function(e, t, n) {
         }));
         break;
       case "r":
-        (i || A) && (0, s.o)(M, w) && (n.preventDefault(), (0, _.HH)(M, w, n));
+        (i || A) && (0, s.o)(M, w) && (n.preventDefault(), (0, S.HH)(M, w, n));
         break;
       case "f":
         (i || A) && (0, l.h)(w) && (n.preventDefault(), (0, a.l8)({
@@ -86,15 +86,15 @@ let I = function(e, t, n) {
       case "t":
         if (i && (0, c.ki)(M, w)) n.preventDefault(), (0, u.R6)(M, w, "Message Shortcut");
         else if (w.hasFlag(P.iLy.HAS_THREAD)) {
-          let e = f.Z.getChannel(x.default.castMessageIdAsChannelId(w.id));
+          let e = h.Z.getChannel(O.default.castMessageIdAsChannelId(w.id));
           null != e && (i || A) && (n.preventDefault(), (0, u.ok)(e, A))
         }
         break;
       case "enter":
-        Z && (n.preventDefault(), (0, _.B8)(M, w));
+        Z && (n.preventDefault(), (0, S.B8)(M, w));
         break;
       case "escape":
-        h.Z.isEditing(M.id, w.id) ? r.Z.endEditMessage(M.id) : v.S.dispatch(P.CkL.TEXTAREA_FOCUS)
+        f.Z.isEditing(M.id, w.id) ? r.Z.endEditMessage(M.id) : v.S.dispatch(P.CkL.TEXTAREA_FOCUS)
     }
   }, [e, t])
 }

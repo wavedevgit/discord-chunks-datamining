@@ -30,10 +30,10 @@ var Chunk430901 = require("./430901.js"),
   }),
   _ = function(e, t) {
     if (true === t && (t = false), s.has(e) && !t) return s.get(e);
-    if ((0, a.xj)(e)) return s.set(e, p), p;
+    if ((0, o.xj)(e)) return s.set(e, p), p;
     var n = getComputedStyle(e),
-      r = (0, a.zd)(e) && e.ownerSVGElement && e.getBBox(),
-      o = !u && "border-box" === n.boxSizing,
+      r = (0, o.zd)(e) && e.ownerSVGElement && e.getBBox(),
+      a = !u && "border-box" === n.boxSizing,
       _ = c.test(n.writingMode || ""),
       m = !r && l.test(n.overflowY || ""),
       h = !r && l.test(n.overflowX || ""),
@@ -51,8 +51,8 @@ var Chunk430901 = require("./430901.js"),
       N = O + S,
       P = h ? e.offsetHeight - N - e.clientHeight : 0,
       R = m ? e.offsetWidth - A - e.clientWidth : 0,
-      w = o ? T + A : 0,
-      D = o ? C + N : 0,
+      w = a ? T + A : 0,
+      D = a ? C + N : 0,
       x = r ? r.width : d(n.width) - w - R,
       L = r ? r.height : d(n.height) - D - P,
       j = x + T + R + A,
@@ -67,15 +67,15 @@ var Chunk430901 = require("./430901.js"),
   },
   m = function(e, t, n) {
     var i = _(e, n),
-      a = i.borderBoxSize,
-      o = i.contentBoxSize,
+      o = i.borderBoxSize,
+      a = i.contentBoxSize,
       s = i.devicePixelContentBoxSize;
     switch (t) {
       case r.z.DEVICE_PIXEL_CONTENT_BOX:
         return s;
       case r.z.BORDER_BOX:
-        return a;
+        return o;
       default:
-        return o
+        return a
     }
   }

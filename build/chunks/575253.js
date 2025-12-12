@@ -14,18 +14,18 @@ let s = 1,
   u = 4;
 class d extends Chunk522677.F {
   innerPatternString(e) {
-    return `(?:с)?\\s*(${i.aK})(?:\\s{0,3}(?:по|-|–|до)?\\s{0,3}(${i.aK}))?(?:-|\\/|\\s{0,3}(?:of)?\\s{0,3})(${(0,a.q3)(i._$)})(?:(?:-|\\/|,?\\s{0,3})(${i.H6}(?![^\\s]\\d)))?`
+    return `(?:с)?\\s*(${i.aK})(?:\\s{0,3}(?:по|-|–|до)?\\s{0,3}(${i.aK}))?(?:-|\\/|\\s{0,3}(?:of)?\\s{0,3})(${(0,o.q3)(i._$)})(?:(?:-|\\/|,?\\s{0,3})(${i.H6}(?![^\\s]\\d)))?`
   }
   innerExtract(e, t) {
     let n = e.createParsingResult(t.index, t[0]),
-      a = i._$[t[c].toLowerCase()],
-      o = (0, i.JF)(t[s]);
-    if (o > 31) return t.index = t.index + t[s].length, null;
-    if (n.start.assign("month", a), n.start.assign("day", o), t[u]) {
+      o = i._$[t[c].toLowerCase()],
+      a = (0, i.JF)(t[s]);
+    if (a > 31) return t.index = t.index + t[s].length, null;
+    if (n.start.assign("month", o), n.start.assign("day", a), t[u]) {
       let e = (0, i.SH)(t[u]);
       n.start.assign("year", e)
     } else {
-      let t = (0, r.r)(e.refDate, o, a);
+      let t = (0, r.r)(e.refDate, a, o);
       n.start.imply("year", t)
     }
     if (t[l]) {

@@ -19,7 +19,7 @@ let u = new Set(Object.values(Chunk526761.NB)),
         return d(module) ? module : Chunk526761.NB.USER_PROFILE
       }),
       t = Chunk473749.useCallback(t => {
-        e !== t && (0, o.openUserSettings)(a.n.PROFILE_PANEL, {
+        e !== t && (0, a.openUserSettings)(o.n.PROFILE_PANEL, {
           section: l.oAB.PROFILE_CUSTOMIZATION,
           subsection: t
         })

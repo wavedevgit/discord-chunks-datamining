@@ -2,36 +2,36 @@
 /** chunk id: 743056, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  u: () => a
+  u: () => o
 });
 var Chunk473749 = require("./473749.js"),
   Chunk298213 = require("./298213.js");
 
-function a(e) {
+function o(e) {
   let {
     userId: t,
     applicationId: n,
-    isGameRelationship: a,
-    location: o,
+    isGameRelationship: o,
+    location: a,
     onConfirm: s,
     onCancel: l
   } = e, c = r.useCallback(() => {
     i.Z.cancelFriendRequest({
       userId: t,
-      applicationId: a ? n : null,
-      location: o
+      applicationId: o ? n : null,
+      location: a
     })
-  }, [n, a, o, t]);
+  }, [n, o, a, t]);
   return {
     acceptFriendRequest: r.useCallback(() => {
       i.Z.maybeConfirmFriendRequestAccept({
         userId: t,
-        applicationId: a ? n : null,
-        location: o,
+        applicationId: o ? n : null,
+        location: a,
         onConfirm: s,
         onCancel: l
       })
-    }, [n, a, o, l, s, t]),
+    }, [n, o, a, l, s, t]),
     cancelFriendRequest: c
   }
 }

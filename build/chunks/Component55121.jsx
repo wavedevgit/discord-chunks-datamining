@@ -10,7 +10,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk22928 = require("./22928.jsx"),
   Chunk438926 = require("./438926.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk924422 = require("./924422.js");
+  Chunk475495 = require("./475495.js");
 
 function u(t) {
   let {
@@ -18,41 +18,41 @@ function u(t) {
     application: n,
     primaryCTAButtonProps: l,
     transitionState: u,
-    onClose: f,
-    hasAlreadyLinked: x,
+    onClose: x,
+    hasAlreadyLinked: f,
     canStartAuthorization: _,
     bodyText: m,
     title: g
   } = t;
   return (0, i.jsxs)(a.IX, {
     transitionState: u,
-    onClose: f,
+    onClose: x,
     children: [(0, i.jsx)(o.y, {
       sku: e,
       title: g
     }), (0, i.jsxs)(a.fef, {
       children: [(0, i.jsxs)("div", {
-        className: r.modalBody,
+        className: c.modalBody,
         children: [(0, i.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "text-subtle",
-          className: r.modalBodyText,
+          className: c.modalBodyText,
           children: m
         }), (0, i.jsx)(d, {
-          isConnected: x,
+          isConnected: f,
           application: n
         })]
-      }), !_ && !x && (0, i.jsx)(s.Text, {
+      }), !_ && !f && (0, i.jsx)(s.Text, {
         variant: "text-md/normal",
-        className: r.cannotLinkAccountWarning,
+        className: c.cannotLinkAccountWarning,
         color: "text-feedback-warning",
-        children: c.intl.string(c.t.GDL8wb)
-      }), !x && (0, i.jsx)("div", {
-        className: r.expirationWarningContainer,
+        children: r.intl.string(r.t.GDL8wb)
+      }), !f && (0, i.jsx)("div", {
+        className: c.expirationWarningContainer,
         children: (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-subtle",
-          children: c.intl.formatToPlainString(c.t.TTj7ME, {
+          children: r.intl.formatToPlainString(r.t.TTj7ME, {
             numDays: 14
           })
         })
@@ -70,25 +70,25 @@ function d(t) {
     application: n
   } = t;
   return e ? (0, i.jsx)("div", {
-    className: r.statusContainer,
+    className: c.statusContainer,
     children: (0, i.jsxs)("div", {
-      className: r.statusRow,
+      className: c.statusRow,
       children: [(0, i.jsxs)("div", {
-        className: r.statusLeft,
+        className: c.statusLeft,
         children: [(0, i.jsx)("div", {
-          className: r.statusIcon,
+          className: c.statusIcon,
           children: (0, i.jsx)(a.kmB, {
             size: "xs",
             color: "currentColor"
           })
         }), (0, i.jsx)(s.Text, {
           variant: "text-md/normal",
-          className: r.statusText,
+          className: c.statusText,
           color: "text-subtle",
-          children: c.intl.string(c.t["LV+CXH"])
+          children: r.intl.string(r.t["LV+CXH"])
         })]
       }), (0, i.jsx)("div", {
-        className: r.statusRight,
+        className: c.statusRight,
         children: (0, i.jsx)(l.h, {
           application: n,
           iconSize: 20
@@ -99,7 +99,7 @@ function d(t) {
     type: "warning",
     children: (0, i.jsx)(s.Text, {
       variant: "text-sm/medium",
-      children: c.intl.string(c.t.Plv1Xk)
+      children: r.intl.string(r.t.Plv1Xk)
     })
   })
 }

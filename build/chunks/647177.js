@@ -62,11 +62,11 @@ function m(e) {
 }
 
 function h(e, t, n) {
-  let s = a.Z.getGuildId(),
-    l = a.Z.getChannelId(),
+  let s = o.Z.getGuildId(),
+    l = o.Z.getChannelId(),
     u = i.Z.getChannel(l),
     d = (0, r.kO)(s, l, true);
-  o.default.track(c.rMx.VIDEO_EFFECT_UPDATED, {
+  a.default.track(c.rMx.VIDEO_EFFECT_UPDATED, {
     location: t,
     effect_type: p(e),
     effect_detail: m(e),
@@ -76,14 +76,14 @@ function h(e, t, n) {
     guild_id: s,
     voice_state_count: d.voice_state_count,
     video_stream_count: d.video_stream_count,
-    media_session_id: a.Z.getMediaSessionId(),
-    rtc_connection_id: a.Z.getRTCConnectionId(),
+    media_session_id: o.Z.getMediaSessionId(),
+    rtc_connection_id: o.Z.getRTCConnectionId(),
     is_animated: f(e)
   })
 }
 
 function g(e, t, n) {
-  o.default.track(c.rMx.VIDEO_BACKGROUND_ADDED, {
+  a.default.track(c.rMx.VIDEO_BACKGROUND_ADDED, {
     is_animated: f(e),
     is_video: t,
     is_from_tenor: n
@@ -91,7 +91,7 @@ function g(e, t, n) {
 }
 
 function E(e) {
-  o.default.track(c.rMx.VIDEO_BACKGROUND_DELETED, {
+  a.default.track(c.rMx.VIDEO_BACKGROUND_DELETED, {
     is_animated: f(e)
   })
 }

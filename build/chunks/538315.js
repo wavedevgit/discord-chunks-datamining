@@ -3,16 +3,16 @@
 "use strict";
 var r = Array.prototype.slice,
   Chunk560640 = require("./560640.js"),
-  a = Object.keys,
-  o = a ? function(e) {
-    return a(e)
+  o = Object.keys,
+  a = o ? function(e) {
+    return o(e)
   } : require("./973351.js"),
   s = Object.keys;
-o.shim = function() {
+a.shim = function() {
   return Object.keys ? ! function() {
     var e = Object.keys(arguments);
     return module && module.length === arguments.length
   }(1, 2) && (Object.keys = function(e) {
     return i(e) ? s(r.call(e)) : s(e)
-  }) : Object.keys = o, Object.keys || o
-}, module.exports = o
+  }) : Object.keys = a, Object.keys || a
+}, module.exports = a

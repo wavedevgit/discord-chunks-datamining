@@ -1,7 +1,7 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 736409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => y
+  j: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,27 +18,27 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk324805 = require("./324805.js");
-let y = e => {
+let _ = e => {
   let {
     children: t,
     isForceShowSharingPopout: n,
-    setIsForceShowSharingPopout: y,
-    popoutTargetRef: O
-  } = e, v = function(e) {
+    setIsForceShowSharingPopout: _,
+    popoutTargetRef: y
+  } = e, O = function(e) {
     let {
       isForceShowSharingPopout: t
     } = e, {
       isQuestBarEmpty: n,
       hasLoadedQuestBar: r
     } = (0, c.Ws)({
-      location: m.dr.CONFLICT_CHECKS
-    }), i = u.G6.useSetting(), a = (0, l.e7)([d.Z], () => d.Z.getLayers().includes(g.S9g.USER_SETTINGS)), o = (0, l.e7)([f.Z], () => f.Z.getStatus()), {
+      location: b.dr.CONFLICT_CHECKS
+    }), i = u.G6.useSetting(), o = (0, l.e7)([d.Z], () => d.Z.getLayers().includes(g.S9g.USER_SETTINGS)), a = (0, l.e7)([f.Z], () => f.Z.getStatus()), {
       isOpen: h
     } = (0, s.Z)();
-    if ((n && r || t) && !a && !h && !__OVERLAY__) {
-      if (!i && o === g.Skl.INVISIBLE) return t ? p.NK.ActivityAndStatus : p.NK.ActivityAndStatusNux;
+    if ((n && r || t) && !o && !h && !__OVERLAY__) {
+      if (!i && a === g.Skl.INVISIBLE) return t ? p.NK.ActivityAndStatus : p.NK.ActivityAndStatusNux;
       if (!i) return t ? p.NK.Activity : p.NK.ActivityNux;
-      if (o === g.Skl.INVISIBLE) return t ? p.NK.Status : p.NK.StatusNux
+      if (a === g.Skl.INVISIBLE) return t ? p.NK.Status : p.NK.StatusNux
     }
     return null
   }({
@@ -49,21 +49,21 @@ let y = e => {
       type: "SharingPrivacyPopout"
     })
   }, [n]);
-  let j = n ? [] : [a.z.SHARE_ACTIVITY_COACHMARK_V2];
-  return (0, r.jsx)(o.ZP, {
-    contentTypes: j,
+  let v = n ? [] : [o.z.SHARE_ACTIVITY_COACHMARK_V2];
+  return (0, r.jsx)(a.ZP, {
+    contentTypes: v,
     children: e => {
       let {
         visibleContent: i,
         markAsDismissed: l
-      } = e, o = i === a.z.SHARE_ACTIVITY_COACHMARK_V2 || n;
+      } = e, a = i === o.z.SHARE_ACTIVITY_COACHMARK_V2 || n;
       return (0, r.jsx)(p.I, {
-        showPopout: o,
-        popoutState: v,
+        showPopout: a,
+        popoutState: O,
         handleClose: () => {
-          l(b.L.USER_DISMISS), y(false)
+          l(m.L.USER_DISMISS), _(false)
         },
-        popoutTargetRef: O,
+        popoutTargetRef: y,
         children: t
       })
     }

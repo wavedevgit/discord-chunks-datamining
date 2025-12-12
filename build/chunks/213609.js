@@ -7,7 +7,7 @@ require.d(exports, {
 });
 var Chunk473749 = require("./473749.js"),
   Chunk348327 = require("./348327.js"),
-  a = require.n(Chunk348327),
+  o = require.n(Chunk348327),
   Chunk97613 = require("./97613.js"),
   s = require.n(Chunk97613),
   Chunk990547 = require("./990547.js"),
@@ -69,22 +69,22 @@ function v(e) {
   let r = arguments.length > 1 && true !== arguments[1] && arguments[1],
     {
       name: i,
-      type: a,
-      properties: o
+      type: o,
+      properties: a
     } = e;
   if (e.type === l.ImpressionTypes.MODAL && null == e.name && (0, h.Ez)().some(e => {
       var t;
       return null == (t = e._stackContext) ? true : t.isSlide
     })) return;
   (0, h.Ps)(e);
-  let s = null != (t = null == o ? true : o.guild_id) ? t : p.Z.getGuildId(),
-    c = null != (n = null == o ? true : o.channel_id) ? n : f.Z.getChannelId(s),
+  let s = null != (t = null == a ? true : a.guild_id) ? t : p.Z.getGuildId(),
+    c = null != (n = null == a ? true : a.channel_id) ? n : f.Z.getChannelId(s),
     u = (0, _.expandEventProperties)(E({
-      impression_type: a,
+      impression_type: o,
       location: (0, h.k$)()
-    }, (0, m.hH)(s), (0, m.v_)(d.Z.getChannel(c)), o));
+    }, (0, m.hH)(s), (0, m.v_)(d.Z.getChannel(c)), a));
   if (r) return void(0, h.dT)(null, null);
-  null != i && null != a && ((0, _.debugLogEvent)(i, u), O(i, u)), (0, h.dT)(i, u)
+  null != i && null != o && ((0, _.debugLogEvent)(i, u), O(i, u)), (0, h.dT)(i, u)
 }
 
 function S(e) {
@@ -94,12 +94,12 @@ function S(e) {
     },
     n = arguments.length > 2 ? arguments[2] : true,
     i = r.useRef(true),
-    o = r.useRef(true),
+    a = r.useRef(true),
     l = () => {
-      let r = !a()(i.current, e);
+      let r = !o()(i.current, e);
       r && (i.current = e);
-      let l = !a()(o.current, n);
-      if (l && (o.current = n), !r && !l) return;
+      let l = !o()(a.current, n);
+      if (l && (a.current = n), !r && !l) return;
       let c = y(E({}, e), {
         sequenceId: s()("impression_")
       });

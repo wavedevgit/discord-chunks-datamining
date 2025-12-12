@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk550601 = require("./550601.js");
+  Chunk810516 = require("./810516.js");
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -104,9 +104,9 @@ function j(e) {
     e.contentRect.width < 500 ? Z("display-md") : Z("display-lg")
   }, []), L = (0, d.y)(w, [], {
     fireOnMount: true
-  }), R = (0, c.e7)([b.Z], () => b.Z.quests);
+  }), R = (0, c.e7)([_.Z], () => _.Z.quests);
   return i.useEffect(() => {
-    h.default.track(v.rMx.QUEST_CONTENT_VIEWED, T(S({}, (0, m.mH)(_.jn.QUEST_HOME_TAKEOVER)), {
+    h.default.track(v.rMx.QUEST_CONTENT_VIEWED, T(S({}, (0, m.mH)(b.jn.QUEST_HOME_TAKEOVER)), {
       quest_id: t.campaignId,
       is_targeted: false
     }))
@@ -160,7 +160,7 @@ function j(e) {
                   cta_name: m.jZ.OPEN_GAME_LINK,
                   click_id: (0, o.Z)(),
                   is_targeted: false
-                }, (0, m.mH)(_.jn.QUEST_HOME_TAKEOVER)))
+                }, (0, m.mH)(b.jn.QUEST_HOME_TAKEOVER)))
               },
               size: "md",
               text: t.ctaSponsorUrl.title,
@@ -178,7 +178,7 @@ function j(e) {
                   cta_name: m.jZ.LEARN_MORE,
                   click_id: (0, o.Z)(),
                   is_targeted: false
-                }, (0, m.mH)(_.jn.QUEST_HOME_TAKEOVER)))
+                }, (0, m.mH)(b.jn.QUEST_HOME_TAKEOVER)))
               },
               size: "md",
               text: e.title,
@@ -195,7 +195,7 @@ function j(e) {
 
 function P() {
   return (0, Chunk54381.jsx)("div", {
-    className: a()(Chunk550601.wrapper, Chunk550601.contentWrapper, Chunk550601.contentWrapperLoading),
+    className: a()(Chunk810516.wrapper, Chunk810516.contentWrapper, Chunk810516.contentWrapperLoading),
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   })
 }

@@ -11,9 +11,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk231338 = require("./231338.js");
 
 function s(e, t) {
-  return null == t || null == e.getGuildPermissions(t) ? null : e.can(o.Pl.ADMINISTRATOR, t)
+  return null == t || null == e.getGuildPermissions(t) ? null : e.can(a.Pl.ADMINISTRATOR, t)
 }
 
 function l(e) {
-  return (0, r.e7)([a.Z, i.Z], () => s(a.Z, i.Z.getGuild(e)))
+  return (0, r.e7)([o.Z, i.Z], () => s(o.Z, i.Z.getGuild(e)))
 }

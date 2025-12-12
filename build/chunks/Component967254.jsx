@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk800530 = require("./800530.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk16583 = require("./16583.js");
+  Chunk712243 = require("./712243.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,7 +68,7 @@ let A = e => {
       status: t,
       onClick: n,
       opened: i,
-      count: a
+      count: o
     } = e;
     return (0, r.jsxs)(l.P3F, {
       className: v.header,
@@ -85,9 +85,9 @@ let A = e => {
           variant: "heading-md/semibold",
           color: "text-default",
           children: "active" === t ? O.intl.formatToPlainString(O.t.IeV2oY, {
-            count: a.toString()
+            count: o.toString()
           }) : O.intl.formatToPlainString(O.t.fZAHBT, {
-            count: a.toString()
+            count: o.toString()
           })
         }), (0, r.jsx)(l.Heading, {
           variant: "text-sm/normal",
@@ -105,34 +105,34 @@ let A = e => {
     })
   },
   N = () => (0, Chunk54381.jsxs)("div", {
-    className: Chunk16583.emptyState,
+    className: Chunk712243.emptyState,
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk16583.iconContainer,
+      className: Chunk712243.iconContainer,
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk16583.iconBackground,
+        className: Chunk712243.iconBackground,
         children: (0, Chunk54381.jsx)(Chunk481060.rm8, {
           size: "md",
           color: "currentColor",
-          className: Chunk16583.icon
+          className: Chunk712243.icon
         })
       }), (0, Chunk54381.jsx)(Chunk499033.Z, {
-        className: Chunk16583.stars
+        className: Chunk712243.stars
       })]
     }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-md/bold",
-      className: Chunk16583.emptyStateText,
+      className: Chunk712243.emptyStateText,
       children: Chunk388032.intl.string(Chunk388032.t.reLFaV)
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
-      className: Chunk16583.emptyStateSubtext,
+      className: Chunk712243.emptyStateSubtext,
       children: Chunk388032.intl.string(Chunk388032.t.ERdH1o)
     })]
   }),
   P = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk16583.emptyState,
+    className: Chunk712243.emptyState,
     children: (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
-      className: Chunk16583.emptyStateSubtext,
+      className: Chunk712243.emptyStateSubtext,
       children: Chunk388032.intl.string(Chunk388032.t.RV3AXf)
     })
   }),
@@ -148,18 +148,18 @@ let A = e => {
   },
   w = () => (0, Chunk54381.jsx)(Chunk481060.Text, {
     variant: "text-xs/bold",
-    className: Chunk16583.newBadge,
+    className: Chunk712243.newBadge,
     children: Chunk388032.intl.string(Chunk388032.t.QKMRC4)
   }),
   D = e => {
     let {
       classification: t
     } = e, {
-      id: a,
+      id: o,
       description: s
-    } = t, c = f.default.extractTimestamp(a), u = (0, h.e)(t), d = i.useMemo(() => {
+    } = t, c = f.default.extractTimestamp(o), u = (0, h.e)(t), d = i.useMemo(() => {
       var e, n, i;
-      let a = {
+      let o = {
         description: s,
         descriptionHook: e => (0, r.jsx)(l.Text, {
           tag: "span",
@@ -167,27 +167,27 @@ let A = e => {
           children: e
         })
       };
-      return (0, m.FB)(t) ? (null == t || null == (e = t.guild_metadata) ? true : e.member_type) === p.wO.OWNER ? O.intl.format(O.t.Lb0HVv, C(I({}, a), {
+      return (0, m.FB)(t) ? (null == t || null == (e = t.guild_metadata) ? true : e.member_type) === p.wO.OWNER ? O.intl.format(O.t.Lb0HVv, C(I({}, o), {
         guildName: null == t || null == (n = t.guild_metadata) ? true : n.name
       })) : O.intl.format(O.t.rmpEPD, {
         guildName: null == t || null == (i = t.guild_metadata) ? true : i.name,
-        classification_type: a.description,
-        classificationHook: a.descriptionHook
-      }) : O.intl.format(O.t.QY4g5t, a)
+        classification_type: o.description,
+        classificationHook: o.descriptionHook
+      }) : O.intl.format(O.t.QY4g5t, o)
     }, [t, s]), _ = () => {
       (0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("18831").then(n.bind(n, 41164));
         return t => (0, r.jsx)(e, I({
-          classificationId: a,
+          classificationId: o,
           source: b.s.StandingTab
         }, t))
       })
     };
     return (0, r.jsx)(l.P3F, {
       onClick: _,
-      className: o()(v.itemDetail, {
+      className: a()(v.itemDetail, {
         [v.itemDetailNew]: u
       }),
       children: (0, r.jsxs)("div", {
@@ -199,15 +199,15 @@ let A = e => {
           children: d
         })]
       })
-    }, a)
+    }, o)
   },
   x = e => {
     let {
       status: t,
       classifications: n
-    } = e, [a, o] = i.useState(false), [c, u] = i.useState(3), f = (0, g.P)(), p = (0, s.e7)([_.Z], () => _.Z.getIsDsaEligible()), m = i.useMemo(() => n.slice(0, c), [n, c]);
+    } = e, [o, a] = i.useState(false), [c, u] = i.useState(3), f = (0, g.P)(), p = (0, s.e7)([_.Z], () => _.Z.getIsDsaEligible()), m = i.useMemo(() => n.slice(0, c), [n, c]);
     i.useEffect(() => {
-      a && d.default.track(y.rMx.SAFETY_HUB_ACTION, {
+      o && d.default.track(y.rMx.SAFETY_HUB_ACTION, {
         action: b.n0.ViewViolationsDropdown,
         account_standing: f.state,
         classification_ids: m.map(e => Number(e.id)),
@@ -215,16 +215,16 @@ let A = e => {
         is_violative_content_shown: false,
         is_dsa_eligible: p
       })
-    }, [a, f.state, m, p]);
+    }, [o, f.state, m, p]);
     let h = n.length - m.length > 3 ? 3 : n.length - m.length;
     return (0, r.jsxs)("div", {
       className: v.dropdown,
       children: [(0, r.jsx)(A, {
         status: t,
-        onClick: () => o(e => !e),
-        opened: a,
+        onClick: () => a(e => !e),
+        opened: o,
         count: n.length
-      }), a && (0, r.jsxs)("div", {
+      }), o && (0, r.jsxs)("div", {
         className: v.items,
         children: [(0, r.jsx)(l.njP.Separator, {
           style: {

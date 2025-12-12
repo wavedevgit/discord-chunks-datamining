@@ -16,9 +16,9 @@ Chunk98405({
   })
 }, {
   at: function(e) {
-    var t = s(a(this)),
+    var t = s(o(this)),
       n = t.length,
-      r = o(e),
+      r = a(e),
       i = r >= 0 ? r : n + r;
     return i < 0 || i >= n ? true : c(t, i)
   }

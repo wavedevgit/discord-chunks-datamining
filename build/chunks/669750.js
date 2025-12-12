@@ -39,7 +39,7 @@ class m extends Chunk147913.Z {
         guildId: n
       } = e, {
         enableHangStatus: r,
-        setDefaultStatus: a
+        setDefaultStatus: o
       } = (0, c.gx)({
         guildId: null != n ? n : p.lds,
         location: "HangStatusManager"
@@ -49,7 +49,7 @@ class m extends Chunk147913.Z {
         return
       }
       if (!r || t === this.previousVoiceChannelId || (this.previousVoiceChannelId = t, null == n || null == t)) return;
-      let s = o.Z.getChannel(t);
+      let s = a.Z.getChannel(t);
       if (null == s || s.type !== p.d4z.GUILD_VOICE || !(0, i.wQ)(s, true) || null != u.Z.getCurrentHangStatus()) return;
       let _ = u.Z.getCurrentDefaultStatus();
       if (null != _) {
@@ -59,22 +59,22 @@ class m extends Chunk147913.Z {
             emoji: t
           } = _.customHangStatus;
           if (null != t && !(0, d.K)(t, s)) {
-            a && (0, l.Zx)(f.tN.CHILLING);
+            o && (0, l.Zx)(f.tN.CHILLING);
             return
           }(0, l._s)(e, t)
         } else if (null != _.status) return void(0, l.Zx)(_.status);
         return
       }
-      a && (0, l.Zx)(f.tN.CHILLING)
+      o && (0, l.Zx)(f.tN.CHILLING)
     }), _(this, "handleGuildMemberUpdate", e => {
       let {
         user: t,
         guildId: n
       } = e;
-      if (t.id !== a.default.getId()) return;
+      if (t.id !== o.default.getId()) return;
       let r = s.Z.getCurrentClientVoiceChannelId(n);
       if (null == r || null == u.Z.getCurrentHangStatus()) return;
-      let c = o.Z.getChannel(r);
+      let c = a.Z.getChannel(r);
       (0, i.wQ)(c, true) || (0, l.Sc)()
     }), _(this, "handleDisconnectFromVoiceChannel", () => {
       (0, l.Sc)()

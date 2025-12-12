@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk731994 = require("./731994.js"),
   Chunk629481 = require("./629481.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk994959 = require("./994959.js");
+  Chunk530521 = require("./530521.js");
 let b = (0, Chunk313201.hQ)();
 
 function C(e) {
@@ -28,16 +28,16 @@ function C(e) {
     upload: A,
     progress: a = 0,
     onDeleteAttachment: d
-  } = e, c = r.useCallback(() => {
+  } = e, u = r.useCallback(() => {
     null == d || d(A.id)
-  }, [d, A.id]), u = a >= 1, f = a < 0, g = u || f, m = null != (t = A.filename) ? t : A.id, v = (0, p.kg)(a);
+  }, [d, A.id]), c = a >= 1, g = a < 0, f = c || g, m = null != (t = A.filename) ? t : A.id, v = (0, p.kg)(a);
   return (0, n.jsx)(o.u, {
     asContainer: true,
     text: v,
     children: (0, n.jsxs)("div", {
       className: l()(q.attachedFileCard, {
-        [q.attachedFileCardError]: f,
-        [q.attachedFileCardUploading]: !g
+        [q.attachedFileCardError]: g,
+        [q.attachedFileCardUploading]: !f
       }),
       children: [(0, n.jsx)(s.ZKT, {
         size: "xs",
@@ -48,11 +48,11 @@ function C(e) {
       }), (0, n.jsx)(s.Text, {
         variant: "text-sm/normal",
         children: m
-      }), !g && (0, n.jsx)(s.$jN, {
+      }), !f && (0, n.jsx)(s.$jN, {
         className: q.attachedFileCardSpinner,
         type: s.$jN.Type.SPINNING_CIRCLE
-      }), g && null != d && (0, n.jsx)(s.P3F, {
-        onClick: c,
+      }), f && null != d && (0, n.jsx)(s.P3F, {
+        onClick: u,
         "aria-label": h.intl.formatToPlainString(h.t["1o5hyW"], {
           attachment: m
         }),
@@ -77,13 +77,13 @@ function U(e) {
     canAttachArchives: l,
     addAttachment: i,
     deleteAttachment: o,
-    fileUploadProgresses: u
-  } = (0, g.P)(), p = r.useRef(false);
+    fileUploadProgresses: c
+  } = (0, f.P)(), p = r.useRef(false);
 
   function U(e) {
     try {
       for (let t of e) i({
-        platform: c.ow.WEB,
+        platform: u.ow.WEB,
         file: t,
         origin: "unknown:guild_product_attachment"
       });
@@ -100,7 +100,7 @@ function U(e) {
       description: h.intl.string(h.t.Ecxoxl),
       icons: m.J6,
       onDrop: U
-    }), (0, n.jsxs)(f.Z, {
+    }), (0, n.jsxs)(g.Z, {
       className: q.addFileButtonLook,
       innerClassName: q.addFileButton,
       disabled: !a,
@@ -141,7 +141,7 @@ function U(e) {
           children: (0, n.jsx)(C, {
             upload: e,
             onDeleteAttachment: o,
-            progress: u[e.id]
+            progress: c[e.id]
           })
         }, e.id))
       })]

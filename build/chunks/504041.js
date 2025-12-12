@@ -34,7 +34,7 @@ function E(e, t, n) {
     sensitivity: "base"
   }), {
     direction: S
-  } = (0, _.j)(), I = t.selectionManager.disabledBehavior, T = (0, h.useMemo)(() => E || new(0, a.x)({
+  } = (0, _.j)(), I = t.selectionManager.disabledBehavior, T = (0, h.useMemo)(() => E || new(0, o.x)({
     collection: t.collection,
     disabledKeys: t.disabledKeys,
     disabledBehavior: I,
@@ -64,7 +64,7 @@ function E(e, t, n) {
     }) : true
   }, [P, N, t.collection.columns]), D = (0, c.P)(w);
   return (0, u.r)(() => {
-    w && (0, o.xQ)(w, "assertive", 500)
+    w && (0, a.xQ)(w, "assertive", 500)
   }, [w]), {
     gridProps: (0, d.d)(A, D, {
       "aria-describedby": [D["aria-describedby"], A["aria-describedby"]].filter(Boolean).join(" ")

@@ -8,14 +8,14 @@ require.d(exports, {
   bv: () => u,
   iP: () => i,
   n0: () => c,
-  nc: () => o,
+  nc: () => a,
   wF: () => f,
-  y3: () => a
+  y3: () => o
 });
 var Chunk358085 = require("./358085.js");
 let i = Chunk358085.isPlatformEmbedded && ((0, Chunk358085.isWindows)() || false),
-  a = false;
-var o = function(e) {
+  o = false;
+var a = function(e) {
   return e[e.WELCOME = 0] = "WELCOME", e[e.NEWS = 1] = "NEWS", e[e.GO_LIVE_VOICE = 2] = "GO_LIVE_VOICE", e[e.GO_LIVE_NON_VOICE = 3] = "GO_LIVE_NON_VOICE", e[e.KEYBIND_INDICATORS = 4] = "KEYBIND_INDICATORS", e[e.CONTENT_INVENTORY = 5] = "CONTENT_INVENTORY", e
 }({});
 

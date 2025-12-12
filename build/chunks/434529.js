@@ -10,46 +10,46 @@ function i(e, t) {
   let {
     top: n,
     bottom: i,
-    left: a,
-    right: o
+    left: o,
+    right: a
   } = e;
   return {
     top: null != n ? Math.floor(r(n) * t.height) : true,
-    left: null != a ? Math.floor(r(a) * t.width) : true,
+    left: null != o ? Math.floor(r(o) * t.width) : true,
     bottom: null != i ? Math.floor(r(i) * t.height) : true,
-    right: null != o ? Math.floor(r(o) * t.width) : true
-  }
-}
-
-function a(e, t) {
-  let {
-    width: n,
-    height: i,
-    fixed: a = false
-  } = e;
-  return a ? {
-    width: n,
-    height: i,
-    fixed: a
-  } : {
-    width: "auto" === n ? n : Math.floor(r(n) * t.width),
-    height: "auto" === i ? i : Math.floor(r(i) * t.height),
-    fixed: a
+    right: null != a ? Math.floor(r(a) * t.width) : true
   }
 }
 
 function o(e, t) {
   let {
+    width: n,
+    height: i,
+    fixed: o = false
+  } = e;
+  return o ? {
+    width: n,
+    height: i,
+    fixed: o
+  } : {
+    width: "auto" === n ? n : Math.floor(r(n) * t.width),
+    height: "auto" === i ? i : Math.floor(r(i) * t.height),
+    fixed: o
+  }
+}
+
+function a(e, t) {
+  let {
     top: n,
     bottom: i,
-    left: a,
-    right: o
+    left: o,
+    right: a
   } = e;
   return {
     top: null != n ? r(n / t.height) : true,
-    left: null != a ? r(a / t.width) : true,
+    left: null != o ? r(o / t.width) : true,
     bottom: null != i ? r(i / t.height) : true,
-    right: null != o ? r(o / t.width) : true
+    right: null != a ? r(a / t.width) : true
   }
 }
 
@@ -72,16 +72,16 @@ function s(e, t) {
 
 function l(e, t, n, r, i) {
   let {
-    top: a,
-    bottom: o,
+    top: o,
+    bottom: a,
     left: s,
     right: l
   } = e;
-  if (null == a && null == o ? (a = 0, o = n - i) : null == a && null != o ? a = n - (o + i) : null != a && (o = n - (a + i)), null == s && null == l ? (s = 0, l = t - r) : null == s && null != l ? s = t - (l + r) : null == l && null != s && (l = t - (s + r)), null == a || null == o || null == s || null == l) throw Error("Logically this can never happen based on our if/else statements");
+  if (null == o && null == a ? (o = 0, a = n - i) : null == o && null != a ? o = n - (a + i) : null != o && (a = n - (o + i)), null == s && null == l ? (s = 0, l = t - r) : null == s && null != l ? s = t - (l + r) : null == l && null != s && (l = t - (s + r)), null == o || null == a || null == s || null == l) throw Error("Logically this can never happen based on our if/else statements");
   return {
-    top: a,
+    top: o,
     left: s,
-    bottom: o,
+    bottom: a,
     right: l
   }
 }
@@ -120,9 +120,9 @@ function d(e, t, n) {
   e = i(e, n);
   let {
     width: r,
-    height: o
-  } = a(t, n);
-  return r = "string" == typeof r ? 0 : r, o = "string" == typeof o ? 0 : o, l(e, n.width, n.height, r, o)
+    height: a
+  } = o(t, n);
+  return r = "string" == typeof r ? 0 : r, a = "string" == typeof a ? 0 : a, l(e, n.width, n.height, r, a)
 }
 
 function f(e, t, n) {
@@ -130,7 +130,7 @@ function f(e, t, n) {
     top: r,
     left: i
   } = e, {
-    x: a,
+    x: o,
     y: d
   } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {
     x: 0,
@@ -139,9 +139,9 @@ function f(e, t, n) {
     width: f,
     height: p
   } = t;
-  return [o(c(u(l({
+  return [a(c(u(l({
     top: r + d,
-    left: i + a,
+    left: i + o,
     bottom: true,
     right: true
   }, n.width, n.height, "number" == typeof f ? f : 0, "number" == typeof p ? p : 0))), n), s(t, n)]
@@ -152,7 +152,7 @@ function p(e, t, n) {
     top: r,
     right: i
   } = e, {
-    x: a,
+    x: o,
     y: d
   } = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {
     x: 0,
@@ -161,11 +161,11 @@ function p(e, t, n) {
     width: f,
     height: p
   } = t;
-  return [o(c(u(l({
+  return [a(c(u(l({
     top: r + d,
     left: true,
     bottom: true,
-    right: i - a
+    right: i - o
   }, n.width, n.height, "number" == typeof f ? f : 0, "number" == typeof p ? p : 0))), n), s(t, n)]
 }
 
@@ -184,10 +184,10 @@ require.d(exports, {
   Ox: () => s,
   PY: () => l,
   R: () => c,
-  jL: () => o,
+  jL: () => a,
   o4: () => f,
   ou: () => u,
   uq: () => p,
   vS: () => d,
-  w_: () => a
+  w_: () => o
 }), require("./415506.js")

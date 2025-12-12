@@ -2,10 +2,10 @@
 /** chunk id: 781391, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ag: () => o,
+  Ag: () => a,
   Q_: () => i,
   UD: () => l,
-  hi: () => a,
+  hi: () => o,
   y: () => s
 });
 var Chunk570140 = require("./570140.js");
@@ -17,7 +17,7 @@ function i(e) {
   })
 }
 
-function a(e) {
+function o(e) {
   r.Z.dispatch({
     type: "UNSYNCED_USER_SETTINGS_UPDATE",
     settings: {
@@ -26,7 +26,7 @@ function a(e) {
   })
 }
 
-function o(e) {
+function a(e) {
   r.Z.dispatch({
     type: "UPDATE_THEME_PREFERENCES",
     preferences: e

@@ -1,7 +1,7 @@
-/** Chunk was on 9414 **/
+/** Chunk was on 86736 **/
 /** chunk id: 643886, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => g
+  U: () => f
 }), require("./539854.js"), require("./388685.js"), require("./290780.js");
 var Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
@@ -17,23 +17,23 @@ var Chunk473749 = require("./473749.js"),
   Chunk282923 = require("./282923.js"),
   Chunk981631 = require("./981631.js");
 
-function g(e) {
+function f(e) {
   let t = (0, a.e7)([d.Z], () => d.Z.getGuild(e));
   l()(null != t, "guild must be present to be editing its integration settings");
   let n = (0, a.e7)([u.Z], () => u.Z.getHighestRole(t)),
     r = (0, a.Wu)([s.ZP], () => s.ZP.getMembers(e), [e]),
-    g = (0, a.cj)([b.default], () => b.default.getUsers()),
+    f = (0, a.cj)([p.default], () => p.default.getUsers()),
     j = (0, a.e7)([c.Z], () => c.Z.getSortedRoles(e), [e]),
     v = i.useMemo(() => {
       let e = [];
       for (let n of r) {
-        let i = g[n.userId];
+        let i = f[n.userId];
         if (null == i || i.bot) continue;
-        let r = i.id !== t.ownerId && !p.BT({
-          permission: f.Plq.ADMINISTRATOR,
+        let r = i.id !== t.ownerId && !m.BT({
+          permission: g.Plq.ADMINISTRATOR,
           user: i,
           context: t
-        }) && u.Z.canManageUser(f.Plq.USE_APPLICATION_COMMANDS, i, t);
+        }) && u.Z.canManageUser(g.Plq.USE_APPLICATION_COMMANDS, i, t);
         e.push({
           id: i.id,
           canManage: r,
@@ -42,7 +42,7 @@ function g(e) {
         })
       }
       return e
-    }, [t, r, g]),
+    }, [t, r, f]),
     O = e => {
       var t;
       return e.managed && (null == (t = e.tags) ? true : t.bot_id) != null
@@ -51,7 +51,7 @@ function g(e) {
       let e = [];
       for (let i of j) {
         if (O(i)) continue;
-        let r = !(0, o.Fs)(i, f.Plq.ADMINISTRATOR) && u.Z.isRoleHigher(t, n, i),
+        let r = !(0, o.Fs)(i, g.Plq.ADMINISTRATOR) && u.Z.isRoleHigher(t, n, i),
           l = {
             id: i.id,
             name: i.name,
@@ -61,21 +61,21 @@ function g(e) {
       }
       return e
     }, [j, t, n]),
-    [C, N] = i.useState(""),
-    S = i.useMemo(() => {
+    [_, C] = i.useState(""),
+    N = i.useMemo(() => {
       var t;
-      let n = (t = C).startsWith("@") ? t.substr(1) : t,
-        i = C.startsWith("@") ? y.filter(t => t.id === e) : y;
+      let n = (t = _).startsWith("@") ? t.substr(1) : t,
+        i = _.startsWith("@") ? y.filter(t => t.id === e) : y;
       return {
-        members: (0, m.B)(v, h, n),
-        roles: (0, m.B)(i, x, n)
+        members: (0, b.B)(v, h, n),
+        roles: (0, b.B)(i, x, n)
       }
-    }, [e, v, C, y]);
+    }, [e, v, _, y]);
   return {
-    query: C,
-    results: S,
-    setQuery: N,
-    unfilteredCount: S.members.length + S.roles.length
+    query: _,
+    results: N,
+    setQuery: C,
+    unfilteredCount: N.members.length + N.roles.length
   }
 }
 

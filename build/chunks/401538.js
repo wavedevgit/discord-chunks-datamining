@@ -2,12 +2,12 @@
 /** chunk id: 401538, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => a
+  C: () => o
 });
 var Chunk924557 = require("./924557.js"),
   Chunk597796 = require("./597796.js");
 
-function a() {
+function o() {
   return [{
     type: "voiceChannel",
     name: "ml-audio-classification",

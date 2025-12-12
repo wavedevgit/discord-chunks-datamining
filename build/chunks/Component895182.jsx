@@ -1,7 +1,7 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 895182, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk60482 = require("./60482.js"),
   Chunk430824 = require("./430824.js"),
   Chunk914010 = require("./914010.js"),
-  Chunk510726 = require("./510726.js");
+  Chunk238642 = require("./238642.js");
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -34,7 +34,7 @@ function h(e) {
   return e
 }
 
-function f(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,7 +47,7 @@ function f(e, t) {
   }), e
 }
 
-function x() {
+function f() {
   let e = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     t = (0, Chunk442837.e7)([Chunk430824.Z], () => {
       var t;
@@ -57,55 +57,55 @@ function x() {
       var t;
       return null == (t = Chunk60482.Z.getStateForGuild(module)) ? true : exports.instances
     }),
-    x = Chunk473749.useMemo(() => Object.values(null != require ? require : {})[0], [require]),
-    b = Chunk473749.useCallback(t => {
-      null != x && null != e && o.Z.dispatch({
+    f = Chunk473749.useMemo(() => Object.values(null != require ? require : {})[0], [require]),
+    g = Chunk473749.useCallback(t => {
+      null != f && null != e && o.Z.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
         guildId: e,
-        instance: f(h({}, x), {
+        instance: x(h({}, f), {
           status: t
         })
       })
-    }, [x, module]),
-    g = Chunk473749.useMemo(() => Object.values(Chunk660815.V).map(e => (0, a.jsx)(s.Button, {
+    }, [f, module]),
+    b = Chunk473749.useMemo(() => Object.values(Chunk660815.V).map(e => (0, a.jsx)(s.Button, {
       variant: "primary",
       text: e,
       onClick: () => {
-        b(e)
+        g(e)
       }
-    }, e)), [b]),
+    }, e)), [g]),
     v = Chunk473749.useCallback(() => {
-      null != x && null != module && Chunk570140.Z.dispatch({
+      null != f && null != module && Chunk570140.Z.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
         guildId: module,
-        instance: f(h({}, x), {
+        instance: x(h({}, f), {
           serverIP: true,
           port: true,
           gameServerPanelUrl: true
         })
       })
-    }, [x, module]);
+    }, [f, module]);
   return null == module ? null : (0, Chunk54381.jsxs)(Chunk481060.zJl, {
-    className: Chunk510726.container,
+    className: Chunk238642.container,
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk510726.section,
+      className: Chunk238642.section,
       children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-md/normal",
         children: "Current guild: ".concat(exports)
       })
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk510726.section,
+      className: Chunk238642.section,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
-        children: "Set server state for first server: ".concat(null == x ? true : x.name)
+        children: "Set server state for first server: ".concat(null == f ? true : f.name)
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk510726.buttonContainer,
-        children: g
+        className: Chunk238642.buttonContainer,
+        children: b
       }), (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
         children: "Remove Server Info"
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk510726.buttonContainer,
+        className: Chunk238642.buttonContainer,
         children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Remove IP Address & Game Server Panel URL",

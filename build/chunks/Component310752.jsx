@@ -1,35 +1,35 @@
 /** Chunk was on 93886 **/
 /** chunk id: 310752, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => s
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk731994 = require("./731994.js"),
-  Chunk297747 = require("./297747.js");
-let c = function(e) {
+  Chunk374450 = require("./374450.js");
+let s = function(e) {
   let {
     icons: t,
     className: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: l()(o.icons, n),
+    className: l()(a.icons, n),
     children: [(0, r.jsx)("div", {
-      className: o.wrapOne,
+      className: a.wrapOne,
       children: (0, r.jsx)("div", {
-        className: l()(o.icon, o.one, a.bd[t[0]])
+        className: l()(a.icon, a.one, o.bd[t[0]])
       })
     }), (0, r.jsx)("div", {
-      className: o.wrapThree,
+      className: a.wrapThree,
       children: (0, r.jsx)("div", {
-        className: l()(o.icon, o.three, a.bd[t[2]])
+        className: l()(a.icon, a.three, o.bd[t[2]])
       })
     }), (0, r.jsx)("div", {
-      className: o.wrapTwo,
+      className: a.wrapTwo,
       children: (0, r.jsx)("div", {
-        className: l()(o.icon, o.two, a.bd[t[1]])
+        className: l()(a.icon, a.two, o.bd[t[1]])
       })
     })]
   })

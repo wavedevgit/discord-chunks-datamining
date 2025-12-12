@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js"), require("./415506.js"), require("./49124.js");
 var Chunk836560 = require("./836560.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk710845 = require("./710845.js"),
   Chunk510990 = require("./510990.js"),
   Chunk983544 = require("./983544.js"),
@@ -110,8 +110,8 @@ class g extends Chunk836560.EventEmitter {
   }
   _addAttachmentsToPayload(e, t, n) {
     let r = p({}, e),
-      i = [...a().get(r, t, []), ...n];
-    return a().set(r, t, i)
+      i = [...o().get(r, t, []), ...n];
+    return o().set(r, t, i)
   }
   clearProcessingMessageInterval() {
     null != this.processingMessageChangeInterval && (clearInterval(this.processingMessageChangeInterval), this.processingMessageChangeInterval = true)
@@ -150,17 +150,17 @@ class g extends Chunk836560.EventEmitter {
     }), f(this, "_handleProgress", (e, t, n) => {
       let r = Date.now(),
         i = (0, c.SB)(e, t),
-        a = Math.floor((e - this._loaded) / ((r - this._lastUpdate) / 1e3));
+        o = Math.floor((e - this._loaded) / ((r - this._lastUpdate) / 1e3));
       if (null != n) {
-        var o;
-        null == (o = this._file.items) || o.forEach(e => {
+        var a;
+        null == (a = this._file.items) || a.forEach(e => {
           e.item.progress = n[e.id]
         })
       }
       this._lastUpdate = r, this._loaded = e, this._file = m(p({}, this._file), {
         currentSize: t,
         progress: i,
-        rate: a
+        rate: o
       }), this.emit("progress", this._file)
     }), f(this, "_handleException", e => {
       this._handleError({
@@ -180,7 +180,7 @@ class g extends Chunk836560.EventEmitter {
       this.clearProcessingMessageInterval(), this._aborted || (this._errored = true, h.log("_handleError: ".concat(t, " (").concat(JSON.stringify(n), ") for ").concat(this.id)), this.emit("error", this._file, t, r, n), this.removeAllListeners())
     }), f(this, "_handleComplete", e => {
       this.clearProcessingMessageInterval(), h.log("_handleComplete for ".concat(this.id)), this.emit("complete", this._file, e), this.removeAllListeners()
-    }), this.id = a().uniqueId("Uploader"), this._file = {
+    }), this.id = o().uniqueId("Uploader"), this._file = {
       id: this.id,
       currentSize: 0,
       totalPreCompressionSize: 0,

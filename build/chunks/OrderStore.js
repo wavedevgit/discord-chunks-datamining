@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -70,8 +70,8 @@ class s extends(r = Chunk442837.ZP.Store) {
       ORDER_UPDATE_SUCCESS: e => this.handleOrderUpdateSuccess(e),
       ORDER_UPDATE_FAIL: e => this.handleOrderUpdateFail(e),
       PAYMENT_MODAL_OPEN: e => this.handlePaymentModalOpen(e)
-    }), o(this, "_isCreatingOrder", false), o(this, "_isUpdatingOrder", false), o(this, "_order", null)
+    }), a(this, "_isCreatingOrder", false), a(this, "_isUpdatingOrder", false), a(this, "_order", null)
   }
 }
-o(s, "displayName", "OrderStore");
+a(s, "displayName", "OrderStore");
 let l = new s

@@ -2,7 +2,7 @@
 /** chunk id: 135906, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk871465 = require("./871465.js");
 let i = {
@@ -75,6 +75,6 @@ let i = {
   }
 };
 
-function a(e) {
+function o(e) {
   return i[e]
 }

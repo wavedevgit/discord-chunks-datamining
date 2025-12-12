@@ -6,9 +6,9 @@ Object.defineProperty(exports, "__esModule", {
 }), exports.reactFormatter = exports.DEFAULT_REACT_RICH_TEXT_ELEMENTS = true, exports.formatReact = s, exports.makeReactFormatter = l;
 let Chunk473749 = require("./473749.js"),
   Chunk975439 = require("./975439.js"),
-  a = Chunk473749.createElement;
+  o = Chunk473749.createElement;
 
-function o(e) {
+function a(e) {
   return class extends i.FormatBuilder {
     constructor() {
       super(...arguments), this._nodeKey = 0, this.result = []
@@ -35,27 +35,27 @@ function s(e, t, n) {
 function l(e) {
   return {
     format: s,
-    builder: o(e)
+    builder: a(e)
   }
 }
 exports.DEFAULT_REACT_RICH_TEXT_ELEMENTS = {
-  $b: (e, t) => a("strong", {
+  $b: (e, t) => o("strong", {
     key: t
   }, e),
-  $i: (e, t) => a("em", {
+  $i: (e, t) => o("em", {
     key: t
   }, e),
-  $del: (e, t) => a("del", {
+  $del: (e, t) => o("del", {
     key: t
   }, e),
-  $code: (e, t) => a("code", {
+  $code: (e, t) => o("code", {
     key: t
   }, e),
-  $link: (e, t, [n]) => a("a", {
+  $link: (e, t, [n]) => o("a", {
     href: n,
     key: t
   }, e),
-  $p: (e, t) => a("p", {
+  $p: (e, t) => o("p", {
     key: t
   }, e)
 }, exports.reactFormatter = l(exports.DEFAULT_REACT_RICH_TEXT_ELEMENTS)

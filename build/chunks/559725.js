@@ -35,7 +35,7 @@ async function p() {
       {
         default: r
       } = await Promise.all([require.e("50448"), require.e("23357")]).then(require.bind(require, 175145)),
-      a = await Chunk544891({
+      o = await Chunk544891({
         environment: Chunk981631.Ai1.ADYEN.KEY.startsWith("live_") ? "live" : "test",
         clientKey: Chunk981631.Ai1.ADYEN.KEY,
         analytics: {
@@ -73,7 +73,7 @@ function _(e) {
         type: "ADYEN_CASH_APP_PAY_SUBMIT_SUCCESS",
         data: t
       });
-      else throw (0, a.SQ)("Cash App Pay setup attempt is not valid.")
+      else throw (0, o.SQ)("Cash App Pay setup attempt is not valid.")
     },
     onError: e => {
       let t, n = true;
@@ -84,7 +84,7 @@ function _(e) {
             break;
           case "Something went wrong during customerRequest creation":
             n = false, t = d.intl.string(d.t.TJ8dDB)
-        }(0, a.SQ)(e.message, n, t)
+        }(0, o.SQ)(e.message, n, t)
       }
     }
   }).mount("#".concat(s.F));

@@ -39,12 +39,12 @@ let _ = e => i.useMemo(() => {
       noticeType: n
     } = e, i = _(n), [l, c] = (0, u.Tt)(t, i, d.R.NOTICE_BAR);
     if (null == l) return null;
-    if (l === a.z.NAGBAR_NOTICE_OFFER_EXPIRING) {
+    if (l === o.z.NAGBAR_NOTICE_OFFER_EXPIRING) {
       if (n === f.kVF.PREMIUM_TIER_2_TRIAL_ENDING) return (0, r.jsx)(s.Z, {
         dismissCurrentNotice: () => c(d.L.USER_DISMISS),
         subscriptionTier: p.Si.TIER_2
       });
-      if (n === f.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING) return (0, r.jsx)(o.Z, {
+      if (n === f.kVF.PREMIUM_TIER_2_DISCOUNT_ENDING) return (0, r.jsx)(a.Z, {
         dismissCurrentNotice: () => c(d.L.USER_DISMISS),
         subscriptionTier: p.Si.TIER_2
       })

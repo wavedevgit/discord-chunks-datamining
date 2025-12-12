@@ -1,7 +1,7 @@
 /** Chunk was on 6850 **/
 /** chunk id: 827657, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,9 +10,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk472596 = require("./472596.js"),
   Chunk918192 = require("./918192.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk913997 = require("./913997.js");
+  Chunk904964 = require("./904964.js");
 
-function u(e) {
+function d(e) {
   let {
     searchState: t
   } = e, n = l.useMemo(() => ({
@@ -28,9 +28,9 @@ function u(e) {
     [a.po.SUCCESS_FULL]: null
   }), [])[t];
   return null == n ? null : (0, r.jsxs)("div", {
-    className: d.noResultsContainer,
+    className: u.noResultsContainer,
     children: [(0, r.jsx)("div", {
-      className: d.__invalid_noResultsIconContainer,
+      className: u.__invalid_noResultsIconContainer,
       children: n.icon
     }), (0, r.jsx)(i.Text, {
       variant: "text-md/normal",

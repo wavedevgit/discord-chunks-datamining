@@ -8,7 +8,7 @@ var Chunk147913 = require("./147913.js"),
   Chunk19780 = require("./19780.js"),
   Chunk358221 = require("./358221.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -22,12 +22,12 @@ class s extends Chunk147913.Z {
     if (null != module) {
       var t, n;
       let r = Chunk358221.Z.getSelectedParticipantId(module),
-        o = Chunk358221.Z.getVideoParticipants(module);
-      null == (n = Chunk19780.Z.getRTCConnection()) || require.setSelectedParticipant(null == (t = o.find(e => e.id === r && !e.localVideoDisabled)) ? true : exports.id)
+        a = Chunk358221.Z.getVideoParticipants(module);
+      null == (n = Chunk19780.Z.getRTCConnection()) || require.setSelectedParticipant(null == (t = a.find(e => e.id === r && !e.localVideoDisabled)) ? true : exports.id)
     }
   }
   constructor(...e) {
-    super(...e), o(this, "stores", new Map().set(a.Z, this.handleFocusParticipant))
+    super(...e), a(this, "stores", new Map().set(o.Z, this.handleFocusParticipant))
   }
 }
 let l = new s

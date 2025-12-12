@@ -22,7 +22,7 @@ let p = Chunk473749.forwardRef(function(e, t) {
       onFocus: m,
       autoFocus: h,
       defaultSearchPlaceholder: g
-    } = e, E = i.useRef(null), b = (0, c.Iu)(e => e.searchQuery), [y, O] = l.kJ.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], a.X), v = i.useCallback(e => {
+    } = e, E = i.useRef(null), b = (0, c.Iu)(e => e.searchQuery), [y, O] = l.kJ.useStore(e => [e.inspectedExpressionPosition, e.searchPlaceholder], o.X), v = i.useCallback(e => {
       var t;
       l.kJ.setActiveCategoryIndex("" === e ? 0 : u.c), l.kJ.setInspectedExpressionPosition(0, 0), l.kJ.setSearchPlaceholder(null), (0, c.ql)(e), null == (t = n.current) || t.scrollTo(0)
     }, [n]), S = i.useCallback(() => {
@@ -56,7 +56,7 @@ let p = Chunk473749.forwardRef(function(e, t) {
         "aria-haspopup": "grid",
         "aria-controls": p,
         "aria-expanded": true,
-        "aria-activedescendant": (0, o.NE)(p, y.columnIndex, y.rowIndex)
+        "aria-activedescendant": (0, a.NE)(p, y.columnIndex, y.rowIndex)
       }
     })
   }),

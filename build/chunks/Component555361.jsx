@@ -26,8 +26,8 @@ function s(e) {
     onMarkerRender: h,
     stickToMarkers: g
   } = t, [E] = i.useState(() => s()), b = u(), y = null == d ? true : d(), O = null == f ? true : f();
-  return (0, r.jsx)(o.X, {
-    children: (0, r.jsx)(a.iRW, {
+  return (0, r.jsx)(a.X, {
+    children: (0, r.jsx)(o.iRW, {
       label: b,
       description: y,
       disabled: O,

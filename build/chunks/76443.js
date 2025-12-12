@@ -6,12 +6,12 @@ var Chunk567220 = require("./567220.js"),
   Chunk571785 = require("./571785.js"),
   Chunk550773 = require("./550773.js");
 module.exports = function(e) {
-  var t = o(e, function(e) {
+  var t = a(e, function(e) {
     var t = e.getSelection(),
       n = t.getStartOffset(),
       i = t.getStartKey(),
-      o = e.getCurrentContent().getBlockForKey(i).getText().slice(n);
-    return a(e, r.getForward(o).length || 1)
+      a = e.getCurrentContent().getBlockForKey(i).getText().slice(n);
+    return o(e, r.getForward(a).length || 1)
   }, "forward");
   return t === e.getCurrentContent() ? e : i.push(e, t, "remove-range")
 }

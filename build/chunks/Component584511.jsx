@@ -7,13 +7,13 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk131951 = require("./131951.js"),
   Chunk538870 = require("./538870.js"),
-  Chunk225375 = require("./225375.js");
+  Chunk993103 = require("./993103.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,7 +59,7 @@ function m(e) {
     onClick: I,
     onContextMenu: T,
     className: C
-  } = e, A = (0, o.e7)([c.Z], () => null != t && c.Z.isLocalMute(t)), N = (0, u._)({
+  } = e, A = (0, a.e7)([c.Z], () => null != t && c.Z.isLocalMute(t)), N = (0, u._)({
     isSpeaking: i,
     isLatched: f,
     voiceDb: _
@@ -86,7 +86,7 @@ function m(e) {
       t = (0, r.jsx)("img", {
         src: g,
         alt: " ",
-        className: a()(d.voiceAvatar, O, {
+        className: o()(d.voiceAvatar, O, {
           [d.ringingOutgoing]: b && 0 === y
         })
       });
@@ -102,7 +102,7 @@ function m(e) {
         children: [null == v ? true : v(), t]
       }), w()]
     })
-  }, x = a()(d.wrapper, {
+  }, x = o()(d.wrapper, {
     [d.clickable]: null != I,
     [d.ringingOutgoing]: b && 0 === y,
     [d.ringingIncoming]: b && 1 === y

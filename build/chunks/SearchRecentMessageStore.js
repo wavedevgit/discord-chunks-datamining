@@ -27,14 +27,14 @@ function u(e) {
   } = e;
   if (null == n) returnfalse;
   let i = false,
-    a = [...null != (t = c.get(n)) ? t : []],
-    s = new Set(a);
+    o = [...null != (t = c.get(n)) ? t : []],
+    s = new Set(o);
   return r.forEach(e => {
     e.messages.forEach(e => {
-      let [t] = e, n = (0, o.e5)(t);
-      !s.has(n.author.id) && s.size < l && (s.add(n.author.id), a.push(n.author.id), i = true)
+      let [t] = e, n = (0, a.e5)(t);
+      !s.has(n.author.id) && s.size < l && (s.add(n.author.id), o.push(n.author.id), i = true)
     })
-  }), i && c.set(n, a), i
+  }), i && c.set(n, o), i
 }
 
 function d() {

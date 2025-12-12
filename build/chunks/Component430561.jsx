@@ -13,7 +13,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk620954 = require("./620954.js"),
   Chunk985149 = require("./985149.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk32771 = require("./32771.js");
+  Chunk962967 = require("./962967.js");
 
 function S(e) {
   let {
@@ -53,22 +53,22 @@ let C = (e, t) => Date.now() - e < t;
 
 function A(e, t) {
   let n = i.useRef(null == e ? true : e.showExtrasHintTimestamp),
-    [r, a] = i.useState(false),
-    o = (0, y.Z)(),
+    [r, o] = i.useState(false),
+    a = (0, y.Z)(),
     s = i.useRef(true);
   return i.useEffect(() => {
     let r = null == e ? true : e.showExtrasHintTimestamp;
-    r !== n.current && (n.current = r, a(true), s.current = setTimeout(() => {
-      a(false)
+    r !== n.current && (n.current = r, o(true), s.current = setTimeout(() => {
+      o(false)
     }, t))
   }, [t, null == e ? true : e.showExtrasHintTimestamp]), (0, p.ZP)(() => {
     let n = null == e ? true : e.showExtrasHintTimestamp;
-    return null != n && C(n, t) && (a(true), s.current = setTimeout(() => {
-      a(false)
+    return null != n && C(n, t) && (o(true), s.current = setTimeout(() => {
+      o(false)
     }, t)), () => {
       null != s.current && clearTimeout(s.current)
     }
-  }), r && o
+  }), r && a
 }
 let N = 8e3;
 
@@ -76,12 +76,12 @@ function P(e) {
   let {
     children: t,
     widgetId: n
-  } = e, i = (0, s.e7)([_.Z], () => _.Z.getWidget(n), [n]), a = A(i, N), o = () => (0, E.QR)((0, b.Pb)(), O.t["1XA04X"], O.intl.string(O.t.uZZGzf), {
+  } = e, i = (0, s.e7)([_.Z], () => _.Z.getWidget(n), [n]), o = A(i, N), a = () => (0, E.QR)((0, b.Pb)(), O.t["1XA04X"], O.intl.string(O.t.uZZGzf), {
     useFlexboxLayout: true,
     highlightAdminWarningIfElevated: false,
     keybindClassName: v.keybind
   });
-  return a ? (0, r.jsxs)(r.Fragment, {
+  return o ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(h.Z, {
       className: v.titleWrapperWithHint,
       children: (0, r.jsx)(u.P3F, {
@@ -95,7 +95,7 @@ function P(e) {
         children: (0, r.jsx)(u.Text, {
           variant: "text-xs/semibold",
           color: "text-strong",
-          children: o()
+          children: a()
         })
       })
     }), (0, r.jsx)("div", {
@@ -135,7 +135,7 @@ function w(e) {
   let {
     widgetId: t,
     showAllStreams: n
-  } = e, i = n ? O.intl.string(O.t.q2B3rh) : O.intl.string(O.t.JKGi6o), a = () => {
+  } = e, i = n ? O.intl.string(O.t.q2B3rh) : O.intl.string(O.t.JKGi6o), o = () => {
     (0, d.zG)(t, {
       showAllStreams: !n
     })
@@ -144,8 +144,8 @@ function w(e) {
     text: i,
     "aria-label": i,
     children: (0, r.jsx)(u.P3F, {
-      className: o()(v.button, n && v.active),
-      onClick: a,
+      className: a()(v.button, n && v.active),
+      onClick: o,
       children: (0, r.jsx)(u.pzj, {
         size: "xxs",
         color: n ? l.Z.colors.BACKGROUND_BRAND : l.Z.colors.INTERACTIVE_TEXT_ACTIVE
@@ -158,15 +158,15 @@ function D(e) {
   let {
     id: t,
     pinned: n
-  } = e, i = n ? O.intl.string(O.t.cSu80j) : O.intl.string(O.t.cM8Vnm), a = (0, y.Z)();
+  } = e, i = n ? O.intl.string(O.t.cSu80j) : O.intl.string(O.t.cM8Vnm), o = (0, y.Z)();
   return (0, r.jsx)(c.u, {
     text: i,
     "aria-label": i,
     asContainer: true,
     children: (0, r.jsx)(u.P3F, {
-      className: o()(v.button, n && v.active),
+      className: a()(v.button, n && v.active),
       onClick: () => {
-        a || (0, d.xh)(t)
+        o || (0, d.xh)(t)
       },
       children: (0, r.jsx)(u.k5M, {
         size: "xxs",

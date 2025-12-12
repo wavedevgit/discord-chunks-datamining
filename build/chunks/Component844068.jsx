@@ -8,22 +8,22 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk563132 = require("./563132.jsx"),
-  Chunk856618 = require("./856618.js");
+  Chunk294496 = require("./294496.js");
 
 function s(e) {
   let {
     notificationBlockRef: t
   } = e, {
     selectedPlanNotification: n
-  } = (0, a.JL)();
+  } = (0, o.JL)();
   return null == n ? null : (0, r.jsxs)("div", {
-    className: o.notification,
+    className: a.notification,
     ref: t,
     children: [(0, r.jsx)(i.owK, {
-      className: o.icon,
+      className: a.icon,
       color: "currentColor"
     }), (0, r.jsx)("div", {
-      className: o.text,
+      className: a.text,
       children: n
     })]
   })

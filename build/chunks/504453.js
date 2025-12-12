@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk473749 = require("./473749.js"),
   Chunk688619 = require("./688619.js"),
-  a = require.n(Chunk688619),
+  o = require.n(Chunk688619),
   Chunk522942 = require("./522942.js"),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
@@ -18,10 +18,10 @@ function d(e) {
   let {
     displayNameStyles: n,
     backgroundColor: i
-  } = e, d = (0, s.e7)([l.Z], () => l.Z.desaturateUserColors ? l.Z.saturation : 1), f = null != (t = null == n ? true : n.effectId) ? t : o.m.SOLID, p = (0, u.R)(f);
+  } = e, d = (0, s.e7)([l.Z], () => l.Z.desaturateUserColors ? l.Z.saturation : 1), f = null != (t = null == n ? true : n.effectId) ? t : a.m.SOLID, p = (0, u.R)(f);
   return r.useMemo(() => null == n ? [] : n.colors.map(e => (0, c.wh)({
-    foreground: a()(e),
-    background: f === o.m.TOON ? a()("#333") : a()(i),
+    foreground: o()(e),
+    background: f === a.m.TOON ? o()("#333") : o()(i),
     ratio: p.minContrastRatio,
     saturationFactor: d
   }).hex()), [n, f, p.minContrastRatio, d, i])

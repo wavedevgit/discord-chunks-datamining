@@ -2,14 +2,14 @@
 /** chunk id: 2109, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  YW: () => o,
+  YW: () => a,
   Ys: () => s,
   ZP: () => l
 });
 var Chunk818083 = require("./818083.js"),
   Chunk427164 = require("./427164.js"),
   Chunk987338 = require("./987338.js");
-let o = (0, Chunk427164.le)({
+let a = (0, Chunk427164.le)({
     name: "2025-10-seasonal-gifting-2025",
     kind: "user",
     defaultConfig: {
@@ -40,4 +40,4 @@ let o = (0, Chunk427164.le)({
       }
     }]
   }),
-  l = o
+  l = a

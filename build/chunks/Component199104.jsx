@@ -21,14 +21,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk791359 = require("./791359.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk833047 = require("./833047.js");
+  Chunk708567 = require("./708567.js");
 
 function v(e) {
   let {
     isStandalone: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), i = (0, a.e7)([m.Z], () => m.Z.hasConsented(_.pjP.PERSONALIZATION)) ? [] : [s.z.NOW_PLAYING_CONSENT_CARD], v = g.o.useConfig({
+  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), i = (0, a.e7)([m.Z], () => m.Z.hasConsented(b.pjP.PERSONALIZATION)) ? [] : [s.z.NOW_PLAYING_CONSENT_CARD], v = g.o.useConfig({
     location: "nowplaying"
   }).demureActivityCards, y = g.o.useConfig({
     location: "nowplaying"
@@ -36,7 +36,7 @@ function v(e) {
   return (0, r.jsx)(d.Gt, {
     value: n,
     children: (0, r.jsx)(c.Z, {
-      section: _.jXE.ACTIVE_NOW_COLUMN,
+      section: b.jXE.ACTIVE_NOW_COLUMN,
       children: (0, r.jsx)("aside", {
         className: l()(O.container, {
           [O.refreshActiveNow]: v,
@@ -68,7 +68,7 @@ function v(e) {
                   markAsDismissed: n
                 })
               }
-            }), (0, r.jsx)(b.Z, {})]
+            }), (0, r.jsx)(_.Z, {})]
           })
         })
       })

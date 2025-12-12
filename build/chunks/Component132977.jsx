@@ -14,7 +14,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk755721 = require("./755721.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk104505 = require("./104505.js"),
-  Chunk587425 = require("./587425.js");
+  Chunk929370 = require("./929370.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,8 +59,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -68,20 +68,20 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var b = function(e) {
   return e.DEFAULT = "default", e.SMALL = "small", e
 }({});
 let y = {
-    default: Chunk587425.shineDefault,
-    small: Chunk587425.shineSmall
+    default: Chunk929370.shineDefault,
+    small: Chunk929370.shineSmall
   },
   O = {
-    default: Chunk587425.shineInnerDefault,
-    small: Chunk587425.shineInnerSmall
+    default: Chunk929370.shineInnerDefault,
+    small: Chunk929370.shineInnerSmall
   };
 class v extends(r = Chunk473749.PureComponent) {
   render() {
@@ -91,10 +91,10 @@ class v extends(r = Chunk473749.PureComponent) {
         shineSize: n,
         shinePaused: r
       } = module,
-      a = g(module, ["className", "shineSize", "shinePaused"]);
+      o = g(module, ["className", "shineSize", "shinePaused"]);
     return (0, Chunk54381.jsx)(Chunk748780.Z.div, h(_({}, Chunk473749), {
-      className: s()(Chunk587425.shineContainer, exports, {
-        [Chunk587425.shinePaused]: r
+      className: s()(Chunk929370.shineContainer, exports, {
+        [Chunk929370.shinePaused]: r
       }),
       children: (0, Chunk54381.jsx)(Chunk600164.Z, {
         align: Chunk600164.Z.Align.CENTER,
@@ -115,23 +115,23 @@ let S = e => {
     children: t,
     className: n,
     disabled: r,
-    submitting: o,
+    submitting: a,
     pauseAnimation: l,
     shineSize: u = "default",
     shinePaused: p,
     buttonShineClassName: m,
     onlyShineOnHover: E
   } = e, b = g(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]);
-  let y = a.useRef(null),
+  let y = o.useRef(null),
     O = (0, d.X)(y),
-    S = !r && !o && true !== l && (!E || O);
+    S = !r && !a && true !== l && (!E || O);
   return (0, i.jsxs)(c.zx, h(_({
     "data-migration-pending": true,
     buttonRef: y
   }, b), {
     className: s()(f.shinyButton, n),
     disabled: r,
-    submitting: o,
+    submitting: a,
     children: [t, S ? (0, i.jsx)(v, {
       "data-migration-pending": true,
       shinePaused: p,

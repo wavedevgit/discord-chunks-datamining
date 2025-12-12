@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 315384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk317951 = require("./317951.js"),
   Chunk959546 = require("./959546.js"),
-  Chunk462914 = require("./462914.js");
+  Chunk625299 = require("./625299.js");
 let u = "/users/@me/debug/consumables/",
   m = {
     [Chunk317951.FX]: "HD Streaming Potion",
@@ -20,7 +20,7 @@ let u = "/users/@me/debug/consumables/",
 function p() {
   let e, [t, n] = (0, Chunk473749.useState)([]),
     [p, h] = (0, Chunk473749.useState)(null),
-    [f, x] = (0, Chunk473749.useState)(false);
+    [x, f] = (0, Chunk473749.useState)(false);
   return (0, Chunk473749.useEffect)(() => ((async () => {
     try {
       let e = (await Chunk544891.tn.get(u)).body.entitlements.map(e => c.Z.createFromServer(e));
@@ -31,7 +31,7 @@ function p() {
   })(), () => {
     require([]), h(null)
   }), []), (0, Chunk54381.jsx)("div", {
-    className: Chunk462914.panel,
+    className: Chunk625299.panel,
     children: null != p ? (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       children: p
@@ -41,7 +41,7 @@ function p() {
         children: "Create Entitlements"
       }), (0, Chunk54381.jsx)(Chunk755721.zx, {
         onClick: (e = Chunk317951.D1, async () => {
-          x(true);
+          f(true);
           try {
             let a = await Chunk544891.tn.post({
                 url: u,
@@ -55,17 +55,17 @@ function p() {
           } catch (e) {
             h("Failed to create entitlement")
           } finally {
-            x(false)
+            f(false)
           }
         }),
-        className: Chunk462914.button,
+        className: Chunk625299.button,
         look: Chunk755721.iL.OUTLINED,
         color: Chunk755721.Tt.PRIMARY,
         children: "Create Confetti Entitlement"
-      }), f && (0, Chunk54381.jsx)(Chunk481060.$jN, {})]
+      }), x && (0, Chunk54381.jsx)(Chunk481060.$jN, {})]
     }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsxs)("div", {
-        className: Chunk462914.title,
+        className: Chunk625299.title,
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-lg/bold",
           children: "Existing Entitlements"

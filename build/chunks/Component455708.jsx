@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk149203 = require("./149203.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk277170 = require("./277170.js");
+  Chunk577021 = require("./577021.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -92,14 +92,14 @@ class A extends Chunk473749.PureComponent {
         return (0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           color: exports,
-          className: Chunk277170.searchHeader,
+          className: Chunk577021.searchHeader,
           children: Chunk388032.intl.string(Chunk388032.t.y3LQCG)
         });
       case Chunk981631.wI2.TRENDING_GIFS:
         return (0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           color: exports,
-          className: Chunk277170.searchHeader,
+          className: Chunk577021.searchHeader,
           children: Chunk388032.intl.string(Chunk388032.t.H6zNFz)
         });
       default:
@@ -120,7 +120,7 @@ class A extends Chunk473749.PureComponent {
     } = this.state, t = null;
     return null != module && (t = (0, Chunk54381.jsx)(Chunk481060.P3F, {
       onClick: this.handleClearQuery,
-      className: Chunk277170.backButton,
+      className: Chunk577021.backButton,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["13/7kX"]),
       children: (0, Chunk54381.jsx)(Chunk481060.whL, {
         size: "md",
@@ -137,8 +137,8 @@ class A extends Chunk473749.PureComponent {
       resultItems: t,
       resultQuery: n,
       query: i,
-      favorites: a,
-      searchOffset: o,
+      favorites: o,
+      searchOffset: a,
       searchLimit: s,
       searchTotalResults: l,
       suggestions: c,
@@ -157,7 +157,7 @@ class A extends Chunk473749.PureComponent {
       resultType: Chunk600164,
       resultQuery: require,
       query: Chunk473749,
-      searchOffset: o,
+      searchOffset: a,
       searchLimit: Chunk442837,
       searchTotalResults: Chunk481060,
       suggestions: Chunk570140,
@@ -174,14 +174,14 @@ class A extends Chunk473749.PureComponent {
       id: Chunk149203.vO,
       role: "tabpanel",
       "aria-labelledby": Chunk149203._3,
-      className: o()(Chunk277170.container, module),
+      className: a()(Chunk577021.container, module),
       onClick: C,
       ref: exports,
       children: [(0, Chunk54381.jsx)("div", {
-        className: o()(Chunk277170.header, this.props.headerClassName),
+        className: a()(Chunk577021.header, this.props.headerClassName),
         children: this.renderHeader()
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk277170.content,
+        className: Chunk577021.content,
         children: this.renderContent()
       })]
     })
@@ -236,8 +236,8 @@ let N = Chunk473749.forwardRef((e, t) => {
   }, [e.persistSearch, e.initialQuery]);
   let {
     query: n,
-    resultQuery: a,
-    resultItems: o,
+    resultQuery: o,
+    resultItems: a,
     suggestions: l
   } = (0, s.cj)([p.Z], () => ({
     query: p.Z.getQuery(),
@@ -248,8 +248,8 @@ let N = Chunk473749.forwardRef((e, t) => {
   return (0, r.jsx)(A, T(S({}, e), {
     forwardedRef: t,
     query: u,
-    resultQuery: a,
-    resultItems: o,
+    resultQuery: o,
+    resultItems: a,
     suggestions: l,
     favorites: d,
     searchOffset: 0,

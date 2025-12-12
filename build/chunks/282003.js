@@ -25,14 +25,14 @@ var Chunk365049 = require("./365049.js"),
   g = function(e, t, n) {
     if (e instanceof s) {
       var i = r({}, t),
-        a = r({}, t);
-      for (var o in t) {
-        var l = t[o],
+        o = r({}, t);
+      for (var a in t) {
+        var l = t[a],
           c = l.x,
           u = l.y;
-        true !== c && true !== u && (i[o] = c, a[o] = u)
+        true !== c && true !== u && (i[a] = c, o[a] = u)
       }
-      return y([n(e.x, i), n(e.y, a)], {
+      return y([n(e.x, i), n(e.y, o)], {
         stopTogether: false
       })
     }
@@ -43,7 +43,7 @@ var Chunk365049 = require("./365049.js"),
       start: function(e) {
         var r = t,
           i = n;
-        r.stopTracking(), n.toValue instanceof a ? r.track(new f(r, n.toValue, _, i, e)) : r.animate(new _(i), e)
+        r.stopTracking(), n.toValue instanceof o ? r.track(new f(r, n.toValue, _, i, e)) : r.animate(new _(i), e)
       },
       stop: function() {
         t.stopAnimation()
@@ -74,7 +74,7 @@ var Chunk365049 = require("./365049.js"),
     var n = 0,
       r = {},
       i = !(t && false === t.stopTogether),
-      a = {
+      o = {
         start: function(t) {
           if (n === e.length) {
             t && t({
@@ -82,14 +82,14 @@ var Chunk365049 = require("./365049.js"),
             });
             return
           }
-          e.forEach(function(o, s) {
-            var l = function(o) {
+          e.forEach(function(a, s) {
+            var l = function(a) {
               if (r[s] = true, ++n === e.length) {
-                n = 0, t && t(o);
+                n = 0, t && t(a);
                 return
-              }!o.finished && i && a.stop()
+              }!a.finished && i && o.stop()
             };
-            o ? o.start(l) : l({
+            a ? a.start(l) : l({
               finished: true
             })
           })
@@ -100,10 +100,10 @@ var Chunk365049 = require("./365049.js"),
           })
         }
       };
-    return a
+    return o
   },
   O = function(e) {
-    return E(new o(0), {
+    return E(new a(0), {
       toValue: 0,
       delay: e,
       duration: 0
@@ -116,10 +116,10 @@ var Chunk365049 = require("./365049.js"),
   },
   S = function(e, t) {
     return function() {
-      for (var n = arguments.length, r = Array(n), a = 0; a < n; a++) r[a] = arguments[a];
+      for (var n = arguments.length, r = Array(n), o = 0; o < n; o++) r[o] = arguments[o];
       var s = function e(t, n, r) {
         if ("number" == typeof n) {
-          i(t instanceof o, "Bad mapping of type " + typeof t + " for key " + r + ", event value must map to AnimatedValue"), t.setValue(n);
+          i(t instanceof a, "Bad mapping of type " + typeof t + " for key " + r + ", event value must map to AnimatedValue"), t.setValue(n);
           return
         }
         for (var r in i("object" == typeof t, "Bad mapping of type " + typeof t + " for key " + r), i("object" == typeof n, "Bad event of type " + typeof n + " for key " + r), t) e(t[r], n[r], r)
@@ -150,7 +150,7 @@ module.exports = {
       start: function(e) {
         var r = t,
           i = n;
-        r.stopTracking(), n.toValue instanceof a ? r.track(new f(r, n.toValue, h, i, e)) : r.animate(new h(i), e)
+        r.stopTracking(), n.toValue instanceof o ? r.track(new f(r, n.toValue, h, i, e)) : r.animate(new h(i), e)
       },
       stop: function() {
         t.stopAnimation()

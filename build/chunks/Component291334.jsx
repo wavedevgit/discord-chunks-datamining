@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk985576 = require("./985576.js"),
+  Chunk467842 = require("./467842.js"),
   Chunk699623 = require("./699623.js"),
   Chunk820350 = require("./820350.js");
 
@@ -59,18 +59,18 @@ function y(e) {
         src: b(E)
       }), (0, r.jsxs)("div", {
         className: h.upsellTextContainer,
-        children: [(0, r.jsx)(o.Text, {
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-lg/semibold",
           color: "always-white",
           children: m.intl.string(m.t.dMaDFX)
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "always-white",
           children: m.intl.string(m.t.F7sgFH)
         })]
       }), (0, r.jsx)(u.Z, {
-        size: a.zx.Sizes.LARGE,
-        color: a.zx.Colors.GREEN,
+        size: o.zx.Sizes.LARGE,
+        color: o.zx.Colors.GREEN,
         textOptions: {
           textOverride: f.ZP.isPremium(t) ? m.intl.string(m.t.AfRWI8) : m.intl.string(m.t.nkdUym)
         },

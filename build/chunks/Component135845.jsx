@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk447543 = require("./447543.js"),
@@ -23,11 +23,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk245335 = require("./245335.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk222922 = require("./222922.js");
+  Chunk105341 = require("./105341.js");
 
 function S(e) {
   let t, n, {
-      invite: a,
+      invite: o,
       currentUserId: S,
       guild: I,
       message: T,
@@ -36,36 +36,36 @@ function S(e) {
     } = e,
     N = null == I ? true : I.id,
     P = (0, l.e7)([m.Z], () => m.Z.getGuildId()),
-    R = (0, l.e7)([_.Z], () => null != a && null != a.target_user ? _.Z.getActiveStreamForUser(a.target_user.id, N) : null, [a, N]),
-    w = (0, l.e7)([_.Z], () => null != a && null != a.target_user ? _.Z.getStreamForUser(a.target_user.id, N) : null, [a, N]),
+    R = (0, l.e7)([_.Z], () => null != o && null != o.target_user ? _.Z.getActiveStreamForUser(o.target_user.id, N) : null, [o, N]),
+    w = (0, l.e7)([_.Z], () => null != o && null != o.target_user ? _.Z.getStreamForUser(o.target_user.id, N) : null, [o, N]),
     {
       analyticsLocations: D
     } = (0, d.ZP)(u.Z.INVITE_EMBED),
-    x = null != a && a.target_type === y.Iq.STREAM && null != a.target_user && null != R,
-    L = null != a && null != w && null != a.channel && null != a.guild && w.channelId === a.channel.id && w.guildId === a.guild.id;
-  o()(null != a, "Invite cannot be null");
+    x = null != o && o.target_type === y.Iq.STREAM && null != o.target_user && null != R,
+    L = null != o && null != w && null != o.channel && null != o.guild && w.channelId === o.channel.id && w.guildId === o.guild.id;
+  a()(null != o, "Invite cannot be null");
   let {
     target_type: j,
     target_user: M
-  } = a;
-  o()(j === y.Iq.STREAM && null != M, "invalid streaming invite");
+  } = o;
+  a()(j === y.Iq.STREAM && null != M, "invalid streaming invite");
   let k = S === M.id,
-    U = a.state === b.r2o.ACCEPTING,
+    U = o.state === b.r2o.ACCEPTING,
     G = i.useCallback(() => {
       let e = "noop";
       x ? (C(), e = "transition") : (A(), e = "accept"), (0, c.r$)({
-        invite: a,
+        invite: o,
         action: e,
         inviter_id: T.author.id,
         invite_message_id: T.id
       }, D)
-    }, [a, T, D, x, C, A]),
+    }, [o, T, D, x, C, A]),
     Z = null != I;
   if (null == I) {
-    if (null == a.guild) return (0, r.jsx)(E.Z, {});
-    I = (0, h.Qs)(a.guild)
+    if (null == o.guild) return (0, r.jsx)(E.Z, {});
+    I = (0, h.Qs)(o.guild)
   }
-  let F = null != a.channel ? (0, p.jD)(a.channel) : null,
+  let F = null != o.channel ? (0, p.jD)(o.channel) : null,
     B = g.ZP.getName(M),
     V = "active";
   Z && !L ? n = k ? O.intl.string(O.t.oBLoZJ) : O.intl.formatToPlainString(O.t["0QJmA+"], {

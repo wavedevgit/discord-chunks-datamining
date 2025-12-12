@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => $
 }), require("./388685.js"), require("./642613.js"), require("./583741.js");
 var r, Chunk658722 = require("./658722.js"),
-  a = require.n(Chunk658722),
+  o = require.n(Chunk658722),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk913527 = require("./913527.js"),
@@ -69,12 +69,12 @@ let F = {
   },
   B = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && e.shouldShowInLibrary)),
   V = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && v.Z.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
-  H = (0, Chunk251625.oH)((e, t) => e.filter(e => a()(t.toLowerCase(), e.application.name.toLowerCase()))),
+  H = (0, Chunk251625.oH)((e, t) => e.filter(e => o()(t.toLowerCase(), e.application.name.toLowerCase()))),
   Y = (0, Chunk251625.oH)((e, t, n, r) => {
     let i = F[t];
     if (null == i) return e;
-    let a = [...e].sort(i);
-    return n === D.sHY.DESCENDING ? a.reverse() : a
+    let o = [...e].sort(i);
+    return n === D.sHY.DESCENDING ? o.reverse() : o
   }),
   W = (0, Chunk251625.oH)(e => e.filter(e => null != e.libraryApplication && e.libraryApplication.isHidden()));
 
@@ -94,16 +94,16 @@ function z(e) {
 
 function q(e, t, n, r, i) {
   if (!i && t.has(e.id)) return null;
-  let a = f.Z.getApplication(e.id);
-  if (null == a) return null;
-  let o = K(a, n);
+  let o = f.Z.getApplication(e.id);
+  if (null == o) return null;
+  let a = K(o, n);
   return (t.add(e.id), (0, A.Je)(e) || v.Z.isInstalled(e.id, e.branchId)) ? {
     key: "".concat(e.id, "-").concat(e.branchId),
-    application: a,
+    application: o,
     libraryApplication: e,
-    lastPlayed: o,
+    lastPlayed: a,
     supportsCloudSync: null != e && v.Z.supportsCloudSync(e.id, e.branchId),
-    isNew: Z(e, o),
+    isNew: Z(e, a),
     isLaunching: _.Z.launchingGames.has(e.id),
     isRunning: r.has(e.id),
     isLaunchable: (0, R.t)({
@@ -115,7 +115,7 @@ function q(e, t, n, r, i) {
       branchId: e.branchId
     }),
     isUpdatingFlags: E.Z.isUpdatingFlags(e.id, e.branchId),
-    shouldShowInLibrary: (0, A.d0)(a, e, b.Z),
+    shouldShowInLibrary: (0, A.d0)(o, e, b.Z),
     defaultAction: (0, w.i)(e, v.Z, S.Z)
   } : null
 }
@@ -123,11 +123,11 @@ function q(e, t, n, r, i) {
 function Q(e, t, n, r) {
   let i = null != e ? f.Z.getApplication(e) : null;
   if (null == i || null == e || t.has(e)) return null;
-  let a = K(i, n);
+  let o = K(i, n);
   return t.add(e), {
     key: e,
     application: i,
-    lastPlayed: a,
+    lastPlayed: o,
     supportsCloudSync: false,
     isNew: false,
     isLaunching: _.Z.launchingGames.has(e),
@@ -156,8 +156,8 @@ function X() {
       return null != n ? (t[n.id] = e.lastFocused * I.Z.Millis.SECOND, n.id) : null
     }),
     i = Object.values(Chunk283595.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, true)).filter(Chunk823379.lm),
-    a = [...r.map(r => Q(r, n, t, e)).filter(Chunk823379.lm), ...Chunk658722].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);
-  return U = null != Chunk77498.Z.lastFetched && Chunk283595.Z.fetched, !s().isEqual(a, M) && (M = a, Chunk358085.isPlatformEmbedded && Chunk998502.ZP.setSystemTrayApplications(V(M).map(e => e.application).slice(0, L)), true)
+    o = [...r.map(r => Q(r, n, t, e)).filter(Chunk823379.lm), ...Chunk658722].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? false : 1);
+  return U = null != Chunk77498.Z.lastFetched && Chunk283595.Z.fetched, !s().isEqual(o, M) && (M = o, Chunk358085.isPlatformEmbedded && Chunk998502.ZP.setSystemTrayApplications(V(M).map(e => e.application).slice(0, L)), true)
 }
 class J extends(r = Chunk442837.ZP.Store) {
   initialize() {

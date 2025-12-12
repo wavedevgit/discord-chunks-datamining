@@ -11,7 +11,7 @@ function r(e, t, n) {
   }) : e[t] = n, e
 }
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 }), require("./539854.js");
 class i {
   enqueue(e) {
@@ -27,4 +27,4 @@ class i {
     r(this, "queue", [])
   }
 }
-let a = new i
+let o = new i

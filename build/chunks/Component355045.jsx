@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk622535 = require("./622535.js"),
   Chunk755721 = require("./755721.js"),
@@ -23,12 +23,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk887477 = require("./887477.js");
+  Chunk375646 = require("./375646.js");
 let S = function(e) {
   let {
     closeLayer: t,
     guild: n,
-    onCtaVisibilityChange: a
+    onCtaVisibilityChange: o
   } = e, S = i.useRef(null), I = (0, s.e7)([m.default], () => m.default.getCurrentUser()), T = (0, s.e7)([h.Z], () => h.Z.boostSlots), {
     analyticsLocations: C
   } = (0, d.ZP)(), A = i.useMemo(() => Object.keys(T).filter(e => {
@@ -83,7 +83,7 @@ let S = function(e) {
         className: v.guildBoostCount,
         children: [(0, r.jsx)(u.Ucv, {
           color: N > 0 ? u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK : "currentColor",
-          className: o()(v.guildBoostBadge, {
+          className: a()(v.guildBoostBadge, {
             [v.guildBoostBadgeWithBoosts]: N > 0
           })
         }), (0, r.jsx)(u.Text, {
@@ -104,14 +104,14 @@ let S = function(e) {
       className: v.guildBoostCtas,
       children: [(0, r.jsx)(l.$, {
         innerRef: S,
-        onChange: a,
+        onChange: o,
         threshold: .9,
         children: (0, r.jsx)("div", {
           ref: S,
-          className: o()(v.guildBoostCta, v.guildBoostCtaBoostWrapper),
+          className: a()(v.guildBoostCta, v.guildBoostCtaBoostWrapper),
           children: (0, r.jsx)(E.Z, {
             className: v.guildBoostCtaBoost,
-            innerClassName: o()(v.__invalid_guildBoostCtaContent, v.guildBoostCtaBoostContent),
+            innerClassName: a()(v.__invalid_guildBoostCtaContent, v.guildBoostCtaBoostContent),
             buttonShineClassName: v.guildBoostCtaBoostShine,
             guild: n,
             analyticsLocation: {
@@ -128,8 +128,8 @@ let S = function(e) {
         })
       }), g.ZP.hasFreeBoosts(I) || g.ZP.isPremium(I, y.PremiumTypes.TIER_2) ? (0, r.jsxs)(c.zx, {
         "data-migration-pending": true,
-        className: o()(v.guildBoostCta, v.guildBoostCtaSecondary),
-        innerClassName: o()(v.__invalid_guildBoostCtaContent, v.guildBoostCtaGiftContent),
+        className: a()(v.guildBoostCta, v.guildBoostCtaSecondary),
+        innerClassName: a()(v.__invalid_guildBoostCtaContent, v.guildBoostCtaGiftContent),
         look: c.zx.Looks.OUTLINED,
         color: c.zx.Colors.WHITE,
         onClick: R,
@@ -141,8 +141,8 @@ let S = function(e) {
         }), O.intl.string(O.t["8MYSQw"])]
       }) : (0, r.jsx)(c.zx, {
         "data-migration-pending": true,
-        className: o()(v.guildBoostCta, v.guildBoostCtaSecondary),
-        innerClassName: o()(v.__invalid_guildBoostCtaContent, v.__invalid_guildBoostCtaSubscribeContent),
+        className: a()(v.guildBoostCta, v.guildBoostCtaSecondary),
+        innerClassName: a()(v.__invalid_guildBoostCtaContent, v.__invalid_guildBoostCtaSubscribeContent),
         look: c.zx.Looks.OUTLINED,
         color: c.zx.Colors.WHITE,
         onClick: P,

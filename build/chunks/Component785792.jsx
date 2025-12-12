@@ -8,14 +8,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk764092 = require("./764092.js");
+  Chunk840937 = require("./840937.js");
 
 function a(e) {
   let {
     chunks: t,
     columns: r,
-    className: o
-  } = e, a = c.useMemo(() => ({
+    className: c
+  } = e, a = o.useMemo(() => ({
     "--secure-frames-columns": r
   }), [r]);
   return null == t ? (0, n.jsx)("div", {
@@ -23,7 +23,7 @@ function a(e) {
     children: (0, n.jsx)(i.$jN, {})
   }) : (0, n.jsx)("div", {
     style: a,
-    className: l()(s.code, o),
+    className: l()(s.code, c),
     children: t.map((e, t) => (0, n.jsx)("div", {
       className: l()(s.chunk, {
         [s.divider]: t > r - 1

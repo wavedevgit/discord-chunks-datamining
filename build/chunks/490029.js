@@ -37,7 +37,7 @@ function p(e, t) {
   if (__OVERLAY__) throw new i.Z({
     errorCode: l.lTL.UNKNOWN_ERROR
   }, "called from wrong app context");
-  a.Z.setCommandHandler(l.Etm.OVERLAY, {
+  o.Z.setCommandHandler(l.Etm.OVERLAY, {
     scope: c.cE,
     handler(n) {
       let {
@@ -48,7 +48,7 @@ function p(e, t) {
       }, "Invalid RPC auth token provided");
       e((0, s.H)(r))
     }
-  }), a.Z.setEventHandler(l.zMe.OVERLAY, {
+  }), o.Z.setEventHandler(l.zMe.OVERLAY, {
     scope: c.cE,
     handler(e) {
       let {
@@ -64,13 +64,13 @@ function p(e, t) {
 function _(e) {
   if (__OVERLAY__) return r.default.request(l.Etm.OVERLAY, (0, s.G)(e));
   try {
-    return a.Z.dispatchToSubscriptions(l.zMe.OVERLAY, {}, (0, s.G)(e)), Promise.resolve()
+    return o.Z.dispatchToSubscriptions(l.zMe.OVERLAY, {}, (0, s.G)(e)), Promise.resolve()
   } catch (i) {
     let t = e.type,
       n = [];
     t === l.BmY.DISPATCH && (n = e.payloads.map(e => e.type));
     let r = Error("Error dispatching overlay RPC: ".concat(i.message));
-    throw i.stack && (r.stack = i.stack), o.Z.captureException(r, {
+    throw i.stack && (r.stack = i.stack), a.Z.captureException(r, {
       tags: {
         source: "legacy-overlay"
       },

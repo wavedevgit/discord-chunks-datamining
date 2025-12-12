@@ -42,15 +42,15 @@ function p(e) {
   let t = [],
     n = e.defaultReactionEmoji;
   if ((null == n ? true : n.emojiId) != null) {
-    var r, a;
-    t.push(o.ZP.getEmojiURL({
+    var r, o;
+    t.push(a.ZP.getEmojiURL({
       id: n.emojiId,
-      animated: null != (a = null == (r = i.ZP.getUsableCustomEmojiById(n.emojiId)) ? true : r.animated) && a,
+      animated: null != (o = null == (r = i.ZP.getUsableCustomEmojiById(n.emojiId)) ? true : r.animated) && o,
       size: c.kV.reaction
     }))
   } else(null == n ? true : n.emojiName) != null && t.push(s.ZP.getURL(n.emojiName));
   return e.availableTags.forEach(e => {
-    null != e.emojiId ? t.push(o.ZP.getEmojiURL({
+    null != e.emojiId ? t.push(a.ZP.getEmojiURL({
       id: e.emojiId,
       animated: false,
       size: c.kV.reaction
@@ -63,7 +63,7 @@ class _ extends Chunk147913.Z {
       channelId: t
     } = e;
     if ((0, l.AB)(t)) return;
-    let n = a.Z.getChannel(t);
+    let n = o.Z.getChannel(t);
     null != n && n.isForumLikeChannel() && p(n).forEach(e => {
       null != e && 0 !== e.length && f(e)
     })

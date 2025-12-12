@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk907040 = require("./907040.jsx"),
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk907728 = require("./907728.js");
+  Chunk41356 = require("./41356.js");
 let m = {
     section: Chunk981631.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER,
     openPopoutType: "gift_effect_emoji_picker"
@@ -26,9 +26,9 @@ function g(e) {
   let {
     setEmojiConfetti: t,
     emojiConfetti: n
-  } = e, [a, d] = i.useState(false), f = i.useRef(null), g = (0, u.Z)({
+  } = e, [o, d] = i.useState(false), f = i.useRef(null), g = (0, u.Z)({
     location: "GiftEmoji"
-  }), E = o()(_.text, g && _.refresh), b = e => (0, r.jsxs)("div", {
+  }), E = a()(_.text, g && _.refresh), b = e => (0, r.jsxs)("div", {
     className: _.customGiftContent,
     children: [(0, r.jsxs)("div", {
       className: _.customGiftHeader,
@@ -48,7 +48,7 @@ function g(e) {
   };
   return (0, r.jsx)(l.yRy, {
     targetElementRef: f,
-    shouldShow: a,
+    shouldShow: o,
     position: "bottom",
     align: "left",
     onRequestClose: () => d(false),
@@ -75,7 +75,7 @@ function g(e) {
       })
     },
     children: () => (0, r.jsx)(l.P3F, {
-      className: o()(_.container, g && _.refresh),
+      className: a()(_.container, g && _.refresh),
       onClick: () => d(true),
       innerRef: f,
       children: (null == n ? true : n.name) == null ? (0, r.jsxs)("div", {

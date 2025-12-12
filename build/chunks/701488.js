@@ -18,8 +18,8 @@ require.d(exports, {
   Ws: () => S,
   Zc: () => _,
   cE: () => N,
-  cc: () => a,
-  d: () => o,
+  cc: () => o,
+  d: () => a,
   eB: () => b,
   jT: () => p,
   qm: () => c,
@@ -32,8 +32,8 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk911969 = require("./911969.js"),
   Chunk981631 = require("./981631.js");
-let a = 160,
-  o = /^https?:\/\/(?:www\.)?(twitch\.tv\/(.+)|youtube.com\/watch\?v=)/,
+let o = 160,
+  a = /^https?:\/\/(?:www\.)?(twitch\.tv\/(.+)|youtube.com\/watch\?v=)/,
   s = "438122941302046720",
   l = "1417273808645259344",
   c = "773336526917861400",

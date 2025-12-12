@@ -111,10 +111,10 @@ function G(e) {
     details: i
   } = e;
   w = false;
-  let a = x(r);
-  return null != a && (R[n] = {
+  let o = x(r);
+  return null != o && (R[n] = {
     type: t,
-    baseChannelId: a,
+    baseChannelId: o,
     guildId: n,
     details: i
   }, true)
@@ -135,16 +135,16 @@ function F(e) {
     details: i
   } = e;
   w = false;
-  let a = x(n);
-  if (null == a) returnfalse;
-  let o = {
+  let o = x(n);
+  if (null == o) returnfalse;
+  let a = {
     type: t,
     channelId: r,
     details: i
   };
-  return t === c.tI.VIEW_MOD_REPORT && (o = I(v({}, o), {
+  return t === c.tI.VIEW_MOD_REPORT && (a = I(v({}, a), {
     baseChannelId: n
-  })), P[a] = o, true
+  })), P[o] = a, true
 }
 
 function B(e) {
@@ -232,8 +232,8 @@ function Q(e) {
 class X extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
-      var t, n, r, i, a;
-      C = null != (t = e.isMembersOpen) && t, A = null != (n = e.isSummariesOpen) && n, N = null == (r = e.isProfileOpen) || r, P = null != (i = e.sidebars) ? i : {}, R = null != (a = e.guildSidebars) ? a : {}
+      var t, n, r, i, o;
+      C = null != (t = e.isMembersOpen) && t, A = null != (n = e.isSummariesOpen) && n, N = null == (r = e.isProfileOpen) || r, P = null != (i = e.sidebars) ? i : {}, R = null != (o = e.guildSidebars) ? o : {}
     }
     this.syncWith([l.Z], z), this.syncWith([_.Z], W), this.waitFor(f.Z, s.Z, p.Z, _.Z, l.Z, m.Z, h.Z, g.default)
   }

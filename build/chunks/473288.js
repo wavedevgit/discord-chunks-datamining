@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk147913 = require("./147913.js"),
   Chunk929677 = require("./929677.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,14 +16,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   i.O.refetch(e.user_id)
 }
 class s extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), a(this, "actions", {
-      USER_APPLICATION_IDENTITY_UPDATE: o,
-      USER_APPLICATION_IDENTITY_REMOVE: o
+    super(...e), o(this, "actions", {
+      USER_APPLICATION_IDENTITY_UPDATE: a,
+      USER_APPLICATION_IDENTITY_REMOVE: a
     })
   }
 }

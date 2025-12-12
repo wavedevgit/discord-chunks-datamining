@@ -14,14 +14,14 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
 let f = e => {
-  let t = (0, o.e7)([l.Z], () => l.Z.products);
+  let t = (0, a.e7)([l.Z], () => l.Z.products);
   return (0, r.useCallback)(n => {
     let {
       type: r,
-      skuId: o
-    } = n, l = t.get(o);
+      skuId: a
+    } = n, l = t.get(a);
     s.default.track(u.rMx.PREMIUM_FEATURE_TRY_OUT, {
-      feature_name: (0, i.EQ)(r).with(a.Z.AVATAR_DECORATION, () => d.QP.AVATAR_DECORATION).with(a.Z.PROFILE_EFFECT, () => d.QP.PROFILE_EFFECT).otherwise(() => true),
+      feature_name: (0, i.EQ)(r).with(o.Z.AVATAR_DECORATION, () => d.QP.AVATAR_DECORATION).with(o.Z.PROFILE_EFFECT, () => d.QP.PROFILE_EFFECT).otherwise(() => true),
       feature_tier: (0, c.G1)(l) ? d.h1.FREE : d.h1.PREMIUM_STANDARD,
       feature_selection: null == l ? true : l.name,
       location_stack: e

@@ -3,19 +3,19 @@
 "use strict";
 require.d(exports, {
   Q: () => s,
-  Z: () => o
+  Z: () => a
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk275344 = require("./275344.jsx"),
   Chunk938353 = require("./938353.jsx");
 
-function o(e) {
+function a(e) {
   let {
     channelMessageProps: {
       message: t,
       channel: n,
-      compact: o = false
+      compact: a = false
     },
     hasSpoilerEmbeds: s,
     hasBailedAst: l,
@@ -32,12 +32,12 @@ function o(e) {
   } = e;
   return d ? null : (0, r.jsx)(i.Z, {
     message: t,
-    children: (0, r.jsx)(a.ZP, {
+    children: (0, r.jsx)(o.ZP, {
       className: E,
       isInteracting: u,
       message: t,
       channel: n,
-      compact: o,
+      compact: a,
       hasSpoilerEmbeds: s,
       hasBailedAst: l,
       isMessageSnapshot: f,
@@ -54,15 +54,15 @@ function o(e) {
 function s(e, t, n) {
   let {
     message: i,
-    channel: o,
+    channel: a,
     compact: s = false,
     renderThreadAccessory: l,
     disableReactionCreates: c,
     disableReactionUpdates: u
   } = e;
-  return (0, r.jsx)(a.$p, {
+  return (0, r.jsx)(o.$p, {
     message: i,
-    channel: o,
+    channel: a,
     compact: s,
     hasSpoilerEmbeds: t,
     hasBailedAst: n,

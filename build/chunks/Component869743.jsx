@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk726521 = require("./726521.js"),
   Chunk389052 = require("./389052.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk817864 = require("./817864.js");
+  Chunk978291 = require("./978291.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,16 +58,16 @@ let m = e => {
       selectedGuildId: i,
       selectedChannelId: l,
       children: u = null
-    } = e, d = (0, o.Z)({
+    } = e, d = (0, a.Z)({
       id: t.id,
       label: c.intl.string(c.t["+NP/b2"])
     });
-    return (0, r.jsxs)(a.v2r, {
+    return (0, r.jsxs)(o.v2r, {
       navId: "authorized-app-action-menu",
       onClose: n,
       "aria-label": c.intl.string(c.t.tKobzb),
       onSelect: true,
-      children: [(0, r.jsx)(a.sNh, {
+      children: [(0, r.jsx)(o.sNh, {
         id: "report",
         label: c.intl.string(c.t["+78Pfm"]),
         color: "danger",
@@ -85,14 +85,14 @@ let m = e => {
       appRecord: t,
       botUser: n,
       closePopout: i,
-      selectedGuildId: a,
-      selectedChannelId: o
+      selectedGuildId: o,
+      selectedChannelId: a
     } = e;
     return (0, r.jsx)(m, {
       appRecord: t,
       closePopout: i,
-      selectedGuildId: a,
-      selectedChannelId: o,
+      selectedGuildId: o,
+      selectedChannelId: a,
       children: (0, l.Z)({
         user: n,
         location: "UserSettingsAuthedApps",
@@ -104,9 +104,9 @@ let m = e => {
     let {
       appRecord: t,
       selectedGuildId: n,
-      selectedChannelId: o
+      selectedChannelId: a
     } = e, s = i.useRef(null);
-    return (0, r.jsx)(a.yRy, {
+    return (0, r.jsx)(o.yRy, {
       targetElementRef: s,
       renderPopout: e => {
         let {
@@ -116,25 +116,25 @@ let m = e => {
           appRecord: t,
           closePopout: i,
           selectedGuildId: n,
-          selectedChannelId: o
+          selectedChannelId: a
         }) : (0, r.jsx)(h, {
           appRecord: t,
           botUser: t.bot,
           closePopout: i,
           selectedGuildId: n,
-          selectedChannelId: o
+          selectedChannelId: a
         })
       },
       align: "right",
       position: "bottom",
-      children: e => (0, r.jsx)(a.P3F, _(f({
+      children: e => (0, r.jsx)(o.P3F, _(f({
         innerRef: s,
         className: u.actionMenuButton,
         "aria-label": c.intl.string(c.t["UKOtz+"])
       }, e), {
-        children: (0, r.jsx)(a.xhG, {
+        children: (0, r.jsx)(o.xhG, {
           size: "xs",
-          color: a.TVs.colors.INTERACTIVE_TEXT_DEFAULT
+          color: o.TVs.colors.INTERACTIVE_TEXT_DEFAULT
         })
       }))
     })

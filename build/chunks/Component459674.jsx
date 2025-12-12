@@ -24,7 +24,7 @@ function f() {
       description: Chunk388032.intl.string(Chunk388032.t.YCCMkJ),
       checked: !module,
       onChange: t => {
-        (0, c.Z)("switch_channel_warning_enabled", t, !e), o.ZP.updatedUnsyncedSettings({
+        (0, c.Z)("switch_channel_warning_enabled", t, !e), a.ZP.updatedUnsyncedSettings({
           disableVoiceChannelChangeAlert: !t
         })
       }

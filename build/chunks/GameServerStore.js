@@ -118,8 +118,8 @@ function g(e) {
 
 function E(e, t) {
   return Object.values(t).reduce((e, t) => {
-    var n, r, i, a, o;
-    return e + (null != (o = null == (a = t.sku) || null == (i = a.tenant_metadata) || null == (r = i.guild_monetization) || null == (n = r.game_server) ? true : n.boost_price) ? o : 0)
+    var n, r, i, o, a;
+    return e + (null != (a = null == (o = t.sku) || null == (i = o.tenant_metadata) || null == (r = i.guild_monetization) || null == (n = r.game_server) ? true : n.boost_price) ? a : 0)
   }, 0)
 }
 
@@ -141,7 +141,7 @@ function y(e) {
     guildId: t,
     gameServer: n
   } = e, r = p(t);
-  r.instances[n.id] = (0, o.Z)(n), d = u(l({}, d), {
+  r.instances[n.id] = (0, a.Z)(n), d = u(l({}, d), {
     [t]: l({}, r)
   })
 }

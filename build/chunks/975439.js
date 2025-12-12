@@ -7,15 +7,15 @@ Object.defineProperty(exports, "__esModule", {
 let Chunk927882 = require("./927882.js"),
   Chunk743601 = require("./743601.js");
 
-function a(e) {
+function o(e) {
   return "$" === e[0]
 }
-class o {
+class a {
   constructor(e) {
     this.context = e
   }
 }
-exports.FormatBuilder = o;
+exports.FormatBuilder = a;
 class s extends Error {
   constructor(e, t, n) {
     super(`No value for variable '${e}' was provided for the localized message '${t}'`), this.variableName = e, this.originalMessage = t, this.nodeType = n
@@ -26,7 +26,7 @@ function l(e) {
   var t;
   let {
     builder: n,
-    originalMessage: o,
+    originalMessage: a,
     nodes: u,
     locales: d,
     values: f,
@@ -51,7 +51,7 @@ function l(e) {
       continue
     }
     let b = g[1];
-    if (!(b in f) && !a(b)) throw new s(b, o, E);
+    if (!(b in f) && !o(b)) throw new s(b, a, E);
     let y = f[b];
     switch (E) {
       case i.FormatJsNodeType.Argument:
@@ -72,8 +72,8 @@ function l(e) {
       case i.FormatJsNodeType.Number: {
         let e = g[2],
           i = e in _.number ? _.number[e] : null != e ? (0, r.parseNumberSkeleton)((0, r.parseNumberSkeletonFromString)(e)) : true,
-          a = "number" != typeof y ? y : y * (null != (t = null == i ? true : i.scale) ? t : 1);
-        n.pushLiteralText(p.formatNumber(a, i));
+          o = "number" != typeof y ? y : y * (null != (t = null == i ? true : i.scale) ? t : 1);
+        n.pushLiteralText(p.formatNumber(o, i));
         break
       }
       case i.FormatJsNodeType.Tag: {
@@ -89,7 +89,7 @@ function l(e) {
             currentPluralValue: m,
             keyPrefix: `${h}.${e}`
           }),
-          o = null != r ? c({
+          a = null != r ? c({
             Builder: n.constructor,
             nodes: r,
             locales: d,
@@ -99,7 +99,7 @@ function l(e) {
             currentPluralValue: m,
             keyPrefix: `${h}.${e}-control`
           }) : [];
-        if (a(b)) n.pushRichTextTag(b, i, o);
+        if (o(b)) n.pushRichTextTag(b, i, a);
         else {
           if ("function" != typeof y) throw `expected a function type for a Tag formatting value, ${b}. got ${typeof y}: ${y}`;
           let t = y(i, `${h}.${e}`);
@@ -127,17 +127,17 @@ function l(e) {
         let t = g[2],
           r = g[3],
           i = g[4],
-          a = (() => {
+          o = (() => {
             var e;
             let n = `=${y}`;
             return n in t ? t[n] : null != (e = t[p.getPluralRules({
               type: i
             }).select(y - (null != r ? r : 0))]) ? e : t.other
           })();
-        if (null == a) throw `${y} is not a known option for plural value ${b}. Valid options are ${Object.keys(t).join(", ")}`;
+        if (null == o) throw `${y} is not a known option for plural value ${b}. Valid options are ${Object.keys(t).join(", ")}`;
         l({
           builder: n,
-          nodes: a,
+          nodes: o,
           locales: d,
           dataFormatters: p,
           formatConfig: _,
@@ -156,8 +156,8 @@ function c(e) {
     originalMessage: n,
     nodes: r,
     locales: i,
-    dataFormatters: a,
-    formatConfig: o,
+    dataFormatters: o,
+    formatConfig: a,
     values: s,
     currentPluralValue: c,
     keyPrefix: u
@@ -169,8 +169,8 @@ function c(e) {
     originalMessage: n,
     nodes: r,
     locales: i,
-    dataFormatters: a,
-    formatConfig: o,
+    dataFormatters: o,
+    formatConfig: a,
     values: s,
     currentPluralValue: c,
     keyPrefix: u

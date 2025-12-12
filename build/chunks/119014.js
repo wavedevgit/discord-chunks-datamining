@@ -1,4 +1,4 @@
-/** Chunk was on 92504 **/
+/** Chunk was on 69844 **/
 /** chunk id: 119014, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   i: () => u
@@ -13,9 +13,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js");
 
 function u(e) {
-  let t = (0, r.e7)([l.Z], () => l.Z.getCategories()),
-    n = (0, i.K)(),
-    u = a.useMemo(() => [{
+  let t = (0, i.e7)([l.Z], () => l.Z.getCategories()),
+    n = (0, a.K)(),
+    u = r.useMemo(() => [{
       id: n.id.toString(),
       label: n.name
     }, ...t.map(e => ({
@@ -23,7 +23,7 @@ function u(e) {
       label: e.name
     }))], [t, n]),
     p = (0, o.Xh)(),
-    m = a.useCallback(e => {
+    m = r.useCallback(e => {
       let t = u.find(t => t.id === e);
       null != t && ((0, s.zZ)(d.rMx.APP_DIRECTORY_CATEGORY_CLICKED, {
         category: t.label,

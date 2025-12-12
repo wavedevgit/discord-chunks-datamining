@@ -58,7 +58,7 @@ class d extends Chunk147913.Z {
     for (let [e, t] of this.registrations) {
       let i = false;
       null == exports.isEnabled || exports.isEnabled() ? "application" === exports.type ? i = null == exports.applicationId ? Chunk147913.size > 0 : Chunk147913.has(exports.applicationId) : "voiceChannel" === exports.type && (i = require) : i = false;
-      let a = this.activeHandlers.has(module);
+      let o = this.activeHandlers.has(module);
       Chunk594190 && !Chunk594174 ? await this.startHandler(module, exports) : !Chunk594190 && Chunk594174 && await this.stopHandler(module)
     }
   }

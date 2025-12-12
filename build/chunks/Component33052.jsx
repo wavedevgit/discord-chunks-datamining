@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk347896 = require("./347896.js"),
   Chunk717401 = require("./717401.js"),
   Chunk897942 = require("./897942.jsx"),
-  Chunk383475 = require("./383475.js");
+  Chunk897159 = require("./897159.js");
 
 function f() {
   var e;
@@ -28,10 +28,10 @@ function f() {
       defaultAngle: 180
     });
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk383475.promotionalGiftMessage,
+    className: Chunk897159.promotionalGiftMessage,
     style: null != _ ? _ : m,
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk383475.promotionalTextSection,
+      className: Chunk897159.promotionalTextSection,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/semibold",
         color: "always-white",
@@ -42,7 +42,7 @@ function f() {
         children: p.subheading(require.length)
       })]
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk383475.avatar,
+      className: Chunk897159.avatar,
       children: (0, Chunk54381.jsx)(Chunk897942.Z, {
         maxRewardImageSrc: p.getImageUrl(true, exports),
         claimableRewards: require,

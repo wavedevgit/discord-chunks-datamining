@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk748780 = require("./748780.js"),
   Chunk481060 = require("./481060.js"),
   Chunk324060 = require("./324060.js"),
-  Chunk386403 = require("./386403.js");
+  Chunk49809 = require("./49809.js");
 let u = 400,
   d = Chunk748780.Z.Easing.bezier(.4, 0, 0, 1),
   f = 500;
@@ -19,17 +19,17 @@ function p(e) {
   let {
     playEntryAnimation: t,
     children: n,
-    isLeaving: o,
+    isLeaving: a,
     onRest: p
   } = e, [_, m] = i.useState(false), h = i.useContext(l.Q), g = (0, s.dQu)(h.primaryColor).hex(), E = (0, s.q_F)({
-    from: o ? {
+    from: a ? {
       height: "100%",
       blurHeight: "110%"
     } : {
       height: "0%",
       blurHeight: "0%"
     },
-    to: o ? {
+    to: a ? {
       height: "0%",
       blurHeight: "0%"
     } : {
@@ -43,13 +43,13 @@ function p(e) {
     pause: !t
   }), b = (0, s.q_F)({
     from: {
-      background: o ? "rgba(0, 0, 0, 0.8)" : "rgba(0, 0, 0, 0)"
+      background: a ? "rgba(0, 0, 0, 0.8)" : "rgba(0, 0, 0, 0)"
     },
     to: {
-      background: o ? "rgba(0, 0, 0, 0)" : "rgba(0, 0, 0, 0.8)"
+      background: a ? "rgba(0, 0, 0, 0)" : "rgba(0, 0, 0, 0.8)"
     },
     config: {
-      duration: o ? u : u / 2,
+      duration: a ? u : u / 2,
       easing: d
     },
     onRest: p
@@ -60,19 +60,19 @@ function p(e) {
       m(true)
     }, f);
     return () => clearTimeout(e)
-  }, [t]), (0, r.jsx)(a.animated.div, {
+  }, [t]), (0, r.jsx)(o.animated.div, {
     className: c.wrapper,
     style: {
       background: b.background
     },
     children: t ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.animated.div, {
+      children: [(0, r.jsx)(o.animated.div, {
         className: c.blur,
         style: {
           height: E.blurHeight,
           color: g
         }
-      }), (0, r.jsx)(a.animated.div, {
+      }), (0, r.jsx)(o.animated.div, {
         className: c.introAnimation,
         style: {
           height: E.height

@@ -77,12 +77,12 @@ class I extends Chunk147913.Z {
         r = null != n && f.ZP.countVoiceStatesForChannel(n) >= 2;
       null == n || r || !e || l.Z.isSoundDisabled("call_calling") || u.Z.disableSounds ? v.stop() : v.loop()
     }), O(this, "handleSoundpackUpdate", () => {
-      v.stop(), v = (0, i.uk)("call_calling", a.Z.getSoundpack())
+      v.stop(), v = (0, i.uk)("call_calling", o.Z.getSoundpack())
     }), O(this, "handleRingUpdate", () => {
       var e, t;
       let n = c.Z.getVoiceChannelId(),
         r = null != (t = null == (e = s.Z.getChannel(n)) ? true : e.guild_id) ? t : null,
-        i = o.Z.getCalls().some(e => e.ringing.length > 0 && d.Z.getCurrentClientVoiceChannelId(null) === e.channelId);
+        i = a.Z.getCalls().some(e => e.ringing.length > 0 && d.Z.getCurrentClientVoiceChannelId(null) === e.channelId);
       this._handleRing(i || E(this, S).size > 0, r)
     }), O(this, "handleGuildRingStart", e => {
       let {

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk115130 = require("./115130.js"),
@@ -28,8 +28,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk783685 = require("./783685.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk297705 = require("./297705.js"),
-  Chunk960324 = require("./960324.js");
+  Chunk208733 = require("./208733.js"),
+  Chunk430864 = require("./430864.js");
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,7 +59,7 @@ function x(e) {
   let {
     context: t,
     application: n,
-    videoUrl: a,
+    videoUrl: o,
     imageCoverUrl: l,
     sectionName: u,
     hasCommands: f
@@ -72,18 +72,18 @@ function x(e) {
   i.useEffect(() => {
     m && E(true)
   }, [m]);
-  let b = null != a;
+  let b = null != o;
   return (0, r.jsxs)("div", {
     className: A.container,
     children: [(0, r.jsxs)("div", {
       children: [b ? (0, r.jsxs)("div", {
         className: A.videoContainer,
         children: [g ? (0, r.jsx)(h.Z, {
-          className: o()(A.videoCover, A.video),
+          className: a()(A.videoCover, A.video),
           loop: true,
           muted: true,
           autoPlay: true,
-          src: a,
+          src: o,
           poster: l
         }) : null, (0, r.jsx)("img", {
           className: A.videoCover,
@@ -152,14 +152,14 @@ function j(e) {
   var t;
   let {
     application: n
-  } = e, i = (0, y.BQ)(n) ? n.name : null != (t = (0, y.$d)(n)) ? t : "", a = (0, y.vJ)(n);
+  } = e, i = (0, y.BQ)(n) ? n.name : null != (t = (0, y.$d)(n)) ? t : "", o = (0, y.vJ)(n);
   return (0, r.jsxs)("div", {
     className: A.titleContainer,
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-xl/extrabold",
       lineClamp: 1,
       children: i
-    }), a ? (0, r.jsx)("div", {
+    }), o ? (0, r.jsx)("div", {
       className: A.partnerLabelContainer,
       children: (0, r.jsx)(l.Text, {
         variant: "text-xs/medium",
@@ -216,41 +216,41 @@ function U(e) {
   var t;
   let {
     context: n,
-    application: a,
-    sectionName: o,
+    application: o,
+    sectionName: a,
     hasCommands: s,
     isDeveloperOfThisApp: c
-  } = e, u = (0, _.Fs)(n, a.id), d = (0, m.q)(a.id), h = null == d || null == (t = d.bot) ? true : t.id, g = (0, p.Z)({
+  } = e, u = (0, _.Fs)(n, o.id), d = (0, m.q)(o.id), h = null == d || null == (t = d.bot) ? true : t.id, g = (0, p.Z)({
     context: n,
-    application: a,
+    application: o,
     botUserId: h
   }), {
     analyticsLocations: E
   } = (0, f.ZP)();
   return (i.useEffect(() => {
-    if (!(0, y.BQ)(a) || !(0, y.ye)(a)) return;
+    if (!(0, y.BQ)(o) || !(0, y.ye)(o)) return;
     let e = setTimeout(() => {
       (null == u || null == h) && b.default.track(T.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
-        application_id: a.id,
+        application_id: o.id,
         is_primary_entry_point_command_non_null: null != u,
         is_bot_user_id_non_null: null != h,
         show_try_it_out_button: g
       })
     }, D);
     return () => clearTimeout(e)
-  }, [a, u, h, g]), (0, y.BQ)(a) && (0, y.ye)(a)) ? null != u && null != h ? (0, r.jsxs)(l.ButtonGroup, {
+  }, [o, u, h, g]), (0, y.BQ)(o) && (0, y.ye)(o)) ? null != u && null != h ? (0, r.jsxs)(l.ButtonGroup, {
     fullWidth: true,
     children: [(0, r.jsx)(S.Z, {
       context: n,
-      application: a,
-      sectionName: o,
+      application: o,
+      sectionName: a,
       primaryEntryPointCommand: u
     }), g && null != h ? (0, r.jsx)(I.Z, {
       botUserId: h,
-      applicationId: a.id,
+      applicationId: o.id,
       analyticsLocations: E
     }) : null]
-  }) : c && !s && (0, y.ye)(a) ? (0, r.jsx)(l.Wn, {
+  }) : c && !s && (0, y.ye)(o) ? (0, r.jsx)(l.Wn, {
     className: A.primaryEntryPointWarningMessage,
     messageType: l.QYI.WARNING,
     children: C.intl.format(C.t["s/3hjE"], {})
@@ -260,9 +260,9 @@ function U(e) {
 function G(e) {
   let {
     description: t
-  } = e, [n, a] = i.useState(true);
-  i.useLayoutEffect(() => a(false), []);
-  let o = i.useMemo(() => (0, g.parseBioReact)(t), [t]),
+  } = e, [n, o] = i.useState(true);
+  i.useLayoutEffect(() => o(false), []);
+  let a = i.useMemo(() => (0, g.parseBioReact)(t), [t]),
     {
       ref: s,
       lineHeight: c,
@@ -301,11 +301,11 @@ function G(e) {
         style: {
           maxHeight: m ? true : d.minHeightOverride
         },
-        children: o
+        children: a
       })
     }), null != u && u > w ? (0, r.jsxs)(l.P3F, {
       className: A.expandableDescriptionClickable,
-      onClick: () => a(e => !e),
+      onClick: () => o(e => !e),
       children: [(0, r.jsx)(l.Text, {
         variant: "text-sm/semibold",
         color: "text-brand",
@@ -324,7 +324,7 @@ function G(e) {
 function Z() {
   let e = Chunk473749.useRef(null),
     [t, n] = Chunk473749.useState(null),
-    [r, a] = Chunk473749.useState(null);
+    [r, o] = Chunk473749.useState(null);
   return Chunk473749.useLayoutEffect(() => {
     let t = module.current;
     if (null === exports || 0 === exports.clientHeight) return;

@@ -7,7 +7,7 @@ require.d(exports, {
   yR: () => m
 }), require("./388685.js"), require("./35282.js"), require("./704826.js");
 var Chunk400053 = require("./400053.js"),
-  o = require.n(Chunk400053),
+  a = require.n(Chunk400053),
   Chunk159635 = require("./159635.js"),
   l = require.n(Chunk159635),
   Chunk20970 = require("./20970.js"),
@@ -45,7 +45,7 @@ class f {
     return [t, r]
   }
   constructor(e, t, n) {
-    d(this, "message", true), d(this, "hasMarkdown", true), d(this, "intlMessage", true), this.message = n ? e : e.replace(u.hN, ""), this.hasMarkdown = n, this.intlMessage = new(o())(this.message, t)
+    d(this, "message", true), d(this, "hasMarkdown", true), d(this, "intlMessage", true), this.message = n ? e : e.replace(u.hN, ""), this.hasMarkdown = n, this.intlMessage = new(a())(this.message, t)
   }
 }
 
@@ -53,9 +53,9 @@ function p(e, t) {
   let n = l().parserFor(t(e)),
     r = l().reactFor(l().ruleOutput(e, "react"));
   return (e, t, i) => {
-    let a = !e.includes("\n\n");
-    return a || (e += "\n\n"), r(n(e, {
-      inline: a,
+    let o = !e.includes("\n\n");
+    return o || (e += "\n\n"), r(n(e, {
+      inline: o,
       context: t,
       unsafeContext: i
     }))
@@ -79,6 +79,6 @@ function h(e, t) {
   if (null == e) return "";
   null == r && m(n(281071).Z), e = e.replace(/^\n+|\n+$/g, "");
   let i = u.aT.test(e),
-    a = u.b9.test(e);
-  return i || a ? new f(e, t, a) : e
+    o = u.b9.test(e);
+  return i || o ? new f(e, t, o) : e
 }

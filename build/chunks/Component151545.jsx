@@ -53,19 +53,19 @@ function O(e) {
   } = e, {
     voiceGuild: S,
     voiceChannel: I
-  } = (0, a.cj)([p.Z, _.Z, f.Z], () => {
+  } = (0, o.cj)([p.Z, _.Z, f.Z], () => {
     var e, n;
-    let r = (0, o.Z)(b);
+    let r = (0, a.Z)(b);
     if (!r && (null == b ? true : b.type) !== E.IIU.HANG_STATUS) return {};
     let i = r ? null == (e = _.Z.getVoiceStateForSession(t.id, null == b ? true : b.session_id)) ? true : e.channelId : null == (n = _.Z.getVoiceStateForUser(t.id)) ? true : n.channelId,
-      a = f.Z.getChannel(i);
+      o = f.Z.getChannel(i);
     return {
-      voiceGuild: p.Z.getGuild(null == a ? true : a.getGuildId()),
-      voiceChannel: a
+      voiceGuild: p.Z.getGuild(null == o ? true : o.getGuildId()),
+      voiceChannel: o
     }
   }), T = (0, d.E)("UserProfileActivityCardWrapper", I), C = (null == b ? true : b.type) === E.IIU.HANG_STATUS && T ? I : null;
   (0, c.q)(null == b ? true : b.application_id);
-  let A = (0, a.e7)([l.Z], () => (null == b ? true : b.application_id) != null ? l.Z.getApplication(b.application_id) : (null == b ? true : b.name) != null ? l.Z.getApplicationByName(b.name) : null);
+  let A = (0, o.e7)([l.Z], () => (null == b ? true : b.application_id) != null ? l.Z.getApplication(b.application_id) : (null == b ? true : b.name) != null ? l.Z.getApplicationByName(b.name) : null);
   return (i.useEffect(() => {
     (null == b ? true : b.type) === E.IIU.HANG_STATUS && T && m.default.track(E.rMx.VIEW_HANG_STATUS, y({
       source: "UserProfilePopout",

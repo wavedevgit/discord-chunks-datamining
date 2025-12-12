@@ -2,16 +2,16 @@
 /** chunk id: 598984, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  NR: () => a,
+  NR: () => o,
   Ob: () => l,
   Vx: () => u,
-  ZI: () => o,
+  ZI: () => a,
   m1: () => c,
   uc: () => s
 });
 var Chunk987170 = require("./987170.js"),
   Chunk987338 = require("./987338.js");
-let a = (0, Chunk987170.Z)({
+let o = (0, Chunk987170.Z)({
     kind: "user",
     id: "2024-06_ctp_app_open_vanilla",
     label: "CTP app open - A/A test - Vanilla",
@@ -27,7 +27,7 @@ let a = (0, Chunk987170.Z)({
       }
     }]
   }),
-  o = (0, Chunk987170.Z)({
+  a = (0, Chunk987170.Z)({
     kind: "user",
     id: "2024-06_ctp_app_open_filters",
     label: "CTP app open - A/A test - Filters",

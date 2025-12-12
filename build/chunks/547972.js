@@ -33,14 +33,14 @@ function l(e) {
 
 function c(e) {
   switch (e) {
-    case a.Z.MY_GAMES:
-      return [r.n.REGISTERED_GAMES_PANEL, o.oAB.REGISTERED_GAMES];
-    case a.Z.CLIPS:
-      return [r.n.CLIPS_PANEL, o.oAB.CLIPS];
-    case a.Z.OVERLAY:
-      return [r.n.OVERLAY_PANEL, o.oAB.OVERLAY];
-    case a.Z.ACTIVITY_PRIVACY:
-      return [r.n.ACTIVITY_PRIVACY_PANEL, o.oAB.ACTIVITY_PRIVACY]
+    case o.Z.MY_GAMES:
+      return [r.n.REGISTERED_GAMES_PANEL, a.oAB.REGISTERED_GAMES];
+    case o.Z.CLIPS:
+      return [r.n.CLIPS_PANEL, a.oAB.CLIPS];
+    case o.Z.OVERLAY:
+      return [r.n.OVERLAY_PANEL, a.oAB.OVERLAY];
+    case o.Z.ACTIVITY_PRIVACY:
+      return [r.n.ACTIVITY_PRIVACY_PANEL, a.oAB.ACTIVITY_PRIVACY]
   }
 }
 

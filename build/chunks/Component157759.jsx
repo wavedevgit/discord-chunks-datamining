@@ -21,19 +21,19 @@ let x = e => {
   let {
     application: t,
     reportId: n
-  } = e, [x, h] = l.useState(false), [v, _] = l.useState(false), j = (0, i.e7)([p.Z, u.Z], () => {
+  } = e, [x, h] = l.useState(false), [f, v] = l.useState(false), j = (0, i.e7)([g.Z, u.Z], () => {
     var e;
-    return null == (e = u.Z.getChannel(p.Z.getChannelId())) ? true : e.guild_id
+    return null == (e = u.Z.getChannel(g.Z.getChannelId())) ? true : e.guild_id
   }), [y, O] = l.useState(null);
   l.useEffect(() => {
-    null != y && (h(true), _(true))
+    null != y && (h(true), v(true))
   }, [y]), l.useEffect(() => {
     if (null == j) return;
     let e = false;
     return (async () => {
       let n = null;
       try {
-        n = await (0, d.i)(j)
+        n = await (0, c.i)(j)
       } catch (e) {}
       if (e || null == n) return;
       let r = n.find(e => {
@@ -46,30 +46,30 @@ let x = e => {
     }
   }, [j, t.id]);
   let Z = l.useCallback(() => {
-      _(false), s.ZP.trackWithMetadata(g.rMx.IAR_REMOVE_APP_BUTTON_CLICKED, {
+      v(false), s.ZP.trackWithMetadata(_.rMx.IAR_REMOVE_APP_BUTTON_CLICKED, {
         guild_id: j,
         application_id: t.id,
         report_id: n
       }), null != j && null != y && o.Z.disableIntegration(j, y.id).catch(() => {
         a.Z.show({
-          title: f.intl.string(f.t.wYqMmI),
-          body: f.intl.string(f.t.A4Mnst)
+          title: b.intl.string(b.t.wYqMmI),
+          body: b.intl.string(b.t.A4Mnst)
         })
       })
     }, [t.id, j, y, n]),
-    I = (0, i.e7)([b.Z, m.Z], () => {
+    I = (0, i.e7)([p.Z, m.Z], () => {
       let e = m.Z.getGuild(j);
       if (null == e) returnfalse;
-      let n = b.Z.can(g.Plq.MANAGE_GUILD, e),
-        r = null == t.bot || b.Z.canManageUser(g.Plq.MANAGE_GUILD, t.bot.id, e);
+      let n = p.Z.can(_.Plq.MANAGE_GUILD, e),
+        r = null == t.bot || p.Z.canManageUser(_.Plq.MANAGE_GUILD, t.bot.id, e);
       return n && r
     });
-  return null != t && null != j && x && I ? (0, r.jsx)(c.JZ, {
-    title: f.intl.string(f.t["WV/CsH"]),
-    description: f.intl.string(f.t["FlcC+3"]),
-    buttonText: v ? f.intl.string(f.t.aCJlq4) : f.intl.string(f.t["6I1F3i"]),
-    buttonDisabled: !v,
+  return null != t && null != j && x && I ? (0, r.jsx)(d.JZ, {
+    title: b.intl.string(b.t["WV/CsH"]),
+    description: b.intl.string(b.t["FlcC+3"]),
+    buttonText: f ? b.intl.string(b.t.aCJlq4) : b.intl.string(b.t["6I1F3i"]),
+    buttonDisabled: !f,
     onButtonPress: Z,
-    buttonVariant: v ? "critical-primary" : "secondary"
+    buttonVariant: f ? "critical-primary" : "secondary"
   }) : null
 }

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk168107 = require("./168107.jsx"),
   Chunk480916 = require("./480916.js"),
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk930180 = require("./930180.js"),
   Chunk430104 = require("./430104.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk486550 = require("./486550.js");
+  Chunk250043 = require("./250043.js");
 
 function g(e) {
   if (!e && (0, _.u1)()) return void s.Z.showAgeVerificationGetStartedModal({
@@ -34,23 +34,23 @@ function E(e) {
   var t, n;
   let {
     channelId: i
-  } = e, o = null != (t = (0, p._d)(i)) ? t : 0, s = null != (n = (0, p.K3)(i)) ? n : 0;
-  return o > 0 && s > 0 ? (0, r.jsx)("div", {
+  } = e, a = null != (t = (0, p._d)(i)) ? t : 0, s = null != (n = (0, p.K3)(i)) ? n : 0;
+  return a > 0 && s > 0 ? (0, r.jsx)("div", {
     className: h.blocked,
     children: (0, r.jsx)("div", {
-      className: a()(h.blockedText, h.noIcon),
+      className: o()(h.blockedText, h.noIcon),
       children: m.intl.string(m.t.xlJRfv)
     })
-  }) : o > 0 ? (0, r.jsx)("div", {
+  }) : a > 0 ? (0, r.jsx)("div", {
     className: h.blocked,
     children: (0, r.jsx)("div", {
-      className: a()(h.blockedText, h.noIcon),
+      className: o()(h.blockedText, h.noIcon),
       children: m.intl.string(m.t.WYad9Z)
     })
   }) : s > 0 ? (0, r.jsx)("div", {
     className: h.blocked,
     children: (0, r.jsx)("div", {
-      className: a()(h.blockedText, h.noIcon),
+      className: o()(h.blockedText, h.noIcon),
       children: m.intl.string(m.t.eHq2OF)
     })
   }) : null
@@ -59,13 +59,13 @@ function E(e) {
 function b() {
   let e = (0, Chunk623633.Z)();
   return null == module ? null : (0, Chunk54381.jsxs)(Chunk481060.qXd, {
-    className: Chunk486550.container,
+    className: Chunk250043.container,
     color: Chunk481060.DM8.DEFAULT,
     children: [Chunk388032.intl.string(Chunk388032.t.Ul1RJQ), (0, Chunk54381.jsx)(E, {
       channelId: module.id
     }), (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
       size: "sm",
-      className: Chunk486550.buttonGroup,
+      className: Chunk250043.buttonGroup,
       children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "overlay-primary",
         text: Chunk388032.intl.string(Chunk388032.t.MpO0px),

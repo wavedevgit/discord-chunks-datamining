@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => G
 });
 var r, Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -64,13 +64,13 @@ function C(e) {
   let {
     userSettingsProto: t
   } = e;
-  null != t && (y.proto = t, a()("string" != typeof y.proto, "UserSettingsProto cannot be a string"));
+  null != t && (y.proto = t, o()("string" != typeof y.proto, "UserSettingsProto cannot be a string"));
   let {
     proto: n,
     isDirty: r,
     cleanupFuncs: i
   } = (0, h.xt)(y.proto, m.Z[g.yP.PRELOADED_USER_SETTINGS]);
-  r && R(y), y.proto = n, a()("string" != typeof y.proto, "UserSettingsProto cannot be a string"), y.editInfo.triggeredMigrations = r, y.editInfo.cleanupFuncs = i, y.editInfo.loaded = true, Object.values(v).forEach(e => {
+  r && R(y), y.proto = n, o()("string" != typeof y.proto, "UserSettingsProto cannot be a string"), y.editInfo.triggeredMigrations = r, y.editInfo.cleanupFuncs = i, y.editInfo.loaded = true, Object.values(v).forEach(e => {
     e.lazyLoaded && (e.editInfo.loaded = false, e.editInfo.loading = false)
   }), P()
 }
@@ -102,7 +102,7 @@ function w(e) {
   let {
     userSettingsProto: t
   } = e;
-  y.proto = (0, h.ac)(t), a()("string" != typeof y.proto, "UserSettingsProto cannot be a string")
+  y.proto = (0, h.ac)(t), o()("string" != typeof y.proto, "UserSettingsProto cannot be a string")
 }
 
 function D(e) {
@@ -113,11 +113,11 @@ function D(e) {
     },
     partial: r,
     resetEditInfo: i,
-    local: o
+    local: a
   } = e;
-  S = !o;
+  S = !a;
   let s = v[n];
-  i && R(s), r ? (s.proto = (0, h.re)(s.ProtoClass, s.proto, t), a()("string" != typeof s.proto, "UserSettingsProto cannot be a string")) : (s.proto = t, a()("string" != typeof s.proto, "UserSettingsProto cannot be a string"), s.editInfo.loaded = true, s.editInfo.loading = false)
+  i && R(s), r ? (s.proto = (0, h.re)(s.ProtoClass, s.proto, t), o()("string" != typeof s.proto, "UserSettingsProto cannot be a string")) : (s.proto = t, o()("string" != typeof s.proto, "UserSettingsProto cannot be a string"), s.editInfo.loaded = true, s.editInfo.loading = false)
 }
 
 function x(e) {
@@ -127,7 +127,7 @@ function x(e) {
       changes: n
     }
   } = e;
-  a()(!__OVERLAY__, "this cannot run in the overlay");
+  o()(!__OVERLAY__, "this cannot run in the overlay");
   let r = v[t];
   return r.editInfo = b({}, r.editInfo, n), false
 }
@@ -143,7 +143,7 @@ function j(e) {
   null != e && s().forEach(v, (t, n) => {
     let r = Number(n),
       i = e[r];
-    null != i && M(t, r, i) && (a()("string" != typeof t.proto, "UserSettingsProto cannot be a string"), k(t, r, i))
+    null != i && M(t, r, i) && (o()("string" != typeof t.proto, "UserSettingsProto cannot be a string"), k(t, r, i))
   })
 }
 
@@ -151,23 +151,23 @@ function M(e, t, n) {
   var r;
   let i = null != (r = null == n ? true : n.proto) ? r : "";
   if ("" === i) returntrue;
-  let a = T.readParsedProto(t, i);
-  if (null != a) return e.proto = a, true;
-  let o = (0, h.d5)(e.ProtoClass, i);
-  return null == o ? (I.warn("b64ToProto returned null", {
+  let o = T.readParsedProto(t, i);
+  if (null != o) return e.proto = o, true;
+  let a = (0, h.d5)(e.ProtoClass, i);
+  return null == a ? (I.warn("b64ToProto returned null", {
     type: t,
     b64: i
-  }), false) : (e.proto = o, T.writeParsedProto(t, i, e.proto), true)
+  }), false) : (e.proto = a, T.writeParsedProto(t, i, e.proto), true)
 }
 
 function k(e, t, n) {
   var r;
   let i = null != (r = null == n ? true : n.protoToSave) ? r : null,
-    a = n.offlineEditDataVersion;
-  if (null == i || null == a) return;
-  let o = T.readProtoToSave(t, i, a);
-  if (null != o) {
-    e.editInfo.protoToSave = o, e.editInfo.offlineEditDataVersion = a;
+    o = n.offlineEditDataVersion;
+  if (null == i || null == o) return;
+  let a = T.readProtoToSave(t, i, o);
+  if (null != a) {
+    e.editInfo.protoToSave = a, e.editInfo.offlineEditDataVersion = o;
     return
   }
   let s = (0, h.d5)(e.ProtoClass, i);
@@ -175,7 +175,7 @@ function k(e, t, n) {
     type: t,
     protoToSaveB64: i
   });
-  e.editInfo.protoToSave = s, e.editInfo.offlineEditDataVersion = a, T.writeProtoToSave(t, i, a, e.editInfo.protoToSave)
+  e.editInfo.protoToSave = s, e.editInfo.offlineEditDataVersion = o, T.writeProtoToSave(t, i, o, e.editInfo.protoToSave)
 }
 class U extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -215,12 +215,12 @@ class U extends(r = Chunk442837.ZP.PersistedStore) {
     return null == exports ? null : exports.map(e => {
       var t, n, r;
       let i = null == (t = e.id) ? true : t.value,
-        a = null == (n = e.color) ? true : n.value;
+        o = null == (n = e.color) ? true : n.value;
       return {
         guildIds: e.guildIds,
         folderId: null == i ? true : Number(i),
         folderName: null == (r = e.name) ? true : r.value,
-        folderColor: null == a ? true : Number(a)
+        folderColor: null == o ? true : Number(o)
       }
     })
   }

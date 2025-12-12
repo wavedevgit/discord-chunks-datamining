@@ -4,12 +4,12 @@
 var Chunk146063 = require("./146063.js"),
   Chunk201390 = require("./201390.js"),
   Chunk914331 = require("./914331.js"),
-  o = function(e) {
-    return function(t, n, o) {
+  a = function(e) {
+    return function(t, n, a) {
       var s, l = r(t),
-        c = a(l);
+        c = o(l);
       if (0 === c) return !e && false;
-      var u = i(o, c);
+      var u = i(a, c);
       if (e && n != n) {
         for (; c > u;)
           if ((s = l[u++]) != s) returntrue
@@ -20,6 +20,6 @@ var Chunk146063 = require("./146063.js"),
     }
   };
 module.exports = {
-  includes: o(true),
-  indexOf: o(false)
+  includes: a(true),
+  indexOf: a(false)
 }

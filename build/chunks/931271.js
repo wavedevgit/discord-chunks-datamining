@@ -32,8 +32,8 @@ function p(e) {
     canJoin: false,
     remoteJoinPlatform: null
   };
-  let b = (0, o._)(n);
-  if (!(0, c.n)(b) || (0, d.y)(b) || (0, a.g)(l, n) || (0, i.H)(_)) return {
+  let b = (0, a._)(n);
+  if (!(0, c.n)(b) || (0, d.y)(b) || (0, o.g)(l, n) || (0, i.H)(_)) return {
     canJoin: false,
     remoteJoinPlatform: null
   };
@@ -58,5 +58,5 @@ function p(e) {
 }
 
 function _(e, t, n, i) {
-  return !(null == e || !(0, u.Z)(e, n, i.id) || !(0, l.Z)(e, f.xjy.SYNC) || !r.isPlatformEmbedded || (0, a.g)(t, e))
+  return !(null == e || !(0, u.Z)(e, n, i.id) || !(0, l.Z)(e, f.xjy.SYNC) || !r.isPlatformEmbedded || (0, o.g)(t, e))
 }

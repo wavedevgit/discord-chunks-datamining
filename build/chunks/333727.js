@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 333727, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk278323 = require("./278323.js"),
   Chunk13245 = require("./13245.js"),
@@ -13,27 +13,27 @@ var Chunk278323 = require("./278323.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(e, t, n, f) {
-  if (a.Z.isNotificationDisabled(c.n0.ActivityInvite)) return null;
-  let h = t.username,
-    p = d.intl.format(d.t.VDODnv, {
+function h(e, t, n, h) {
+  if (o.Z.isNotificationDisabled(c.n0.ActivityInvite)) return null;
+  let p = t.username,
+    f = d.intl.format(d.t.VDODnv, {
       username: "",
       game: n.name
     }),
     m = t.getAvatarURL(e.guild_id, 80),
     {
       trackView: g,
-      trackClick: b
+      trackClick: y
     } = (0, s.Rg)(c.n0.ActivityInvite, {
       notif_type: c.n0.ActivityInvite,
       notif_user_id: t.id,
       activity_type: u.mFx.JOIN_REQUEST,
-      activity_name: f.name
+      activity_name: h.name
     });
   return {
     icon: m,
-    title: h,
-    body: p,
+    title: p,
+    body: f,
     confirmText: d.intl.string(d.t["fgP/wX"]),
     cancelText: d.intl.string(d.t["tpXzJ+"]),
     onNotificationShow: () => {
@@ -43,19 +43,19 @@ function f(e, t, n, f) {
       i.Z.sendActivityInvite({
         channelId: e.id,
         type: u.mFx.JOIN,
-        activity: f,
-        location: (0, o._)() ? u.Sbl.LOCKED_OVERLAY : u.Sbl.UNLOCKED_OVERLAY
-      }), b("join"), r.Z.updateNotificationStatus(n)
+        activity: h,
+        location: (0, a._)() ? u.Sbl.LOCKED_OVERLAY : u.Sbl.UNLOCKED_OVERLAY
+      }), y("join"), r.Z.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {
       (0, l.ack)(e.id, {
         section: u.jXE.OVERLAY,
         object: u.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
         objectType: u.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
-      }, true, true), r.Z.updateNotificationStatus(n), b("decline")
+      }, true, true), r.Z.updateNotificationStatus(n), y("decline")
     },
     onDismissClick: () => {
-      b("dismiss")
+      y("dismiss")
     }
   }
 }

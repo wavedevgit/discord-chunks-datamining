@@ -59,7 +59,7 @@ class f extends Chunk81825.Z {
     return this.flags
   }
   hasFlag(e) {
-    return a.yE(this.flags, e)
+    return o.yE(this.flags, e)
   }
   isHidden() {
     return this.hasFlag(Chunk981631.eHb.HIDDEN)

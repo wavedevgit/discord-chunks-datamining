@@ -3,9 +3,9 @@
 "use strict";
 require.d(exports, {
   Fu: () => m,
-  Lu: () => o,
+  Lu: () => a,
   Vd: () => p,
-  WO: () => a,
+  WO: () => o,
   _n: () => f,
   ak: () => s,
   al: () => h,
@@ -17,15 +17,15 @@ require.d(exports, {
 });
 var Chunk911969 = require("./911969.js"),
   Chunk388032 = require("./388032.jsx");
-let a = "True",
-  o = "False",
+let o = "True",
+  a = "False",
   s = [{
-    name: a,
-    displayName: a,
-    value: "true"
-  }, {
     name: o,
     displayName: o,
+    value: "true"
+  }, {
+    name: a,
+    displayName: a,
     value: "false"
   }];
 var l = function(e) {

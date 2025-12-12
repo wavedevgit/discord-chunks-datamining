@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 449226, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk146473 = require("./146473.js");
+  Chunk824804 = require("./824804.js");
 
 function o(e) {
   var t, n;
@@ -17,12 +17,12 @@ function o(e) {
     checked: i,
     onChange: o,
     disabled: c,
-    className: d,
-    tooltipProps: u
+    className: u,
+    tooltipProps: d
   } = e, g = e => {
     e.stopPropagation(), e.preventDefault()
   };
-  return (0, r.jsx)(a.P3F, (t = function(e) {
+  return (0, r.jsx)(s.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -43,9 +43,9 @@ function o(e) {
     onClick: g,
     onMouseDown: g,
     onMouseUp: g,
-    className: l()(s.switch, d)
-  }, u), n = n = {
-    children: (0, r.jsx)(a.rsf, {
+    className: l()(a.switch, u)
+  }, d), n = n = {
+    children: (0, r.jsx)(s.rsf, {
       checked: i,
       onChange: o,
       disabled: c

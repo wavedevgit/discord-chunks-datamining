@@ -7,21 +7,21 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
-  Chunk566081 = require("./566081.js"),
+  Chunk202392 = require("./202392.js"),
   Chunk388032 = require("./388032.jsx");
 
 function l(e, t) {
   let [n, l] = r.useState(false), c = r.useCallback(function() {
     for (var t = arguments.length, n = Array(t), r = 0; r < t; r++) n[r] = arguments[r];
     return l(true), e(...n)
-  }, [e, l]), u = (0, a.Z)(t);
+  }, [e, l]), u = (0, o.Z)(t);
   return r.useEffect(() => {
     if (n && false === u && true === t) {
       l(false);
       let e = () => {
         (0, i.showToast)({
           id: "account-linked-toast",
-          message: s.intl.string(o.default.uG6teD),
+          message: s.intl.string(a.default.uG6teD),
           type: i.ToastType.SUCCESS
         })
       };

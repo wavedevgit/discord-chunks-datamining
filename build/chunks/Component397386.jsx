@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk287880 = require("./287880.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk416094 = require("./416094.js");
+  Chunk873575 = require("./873575.js");
 
 function p(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -23,25 +23,25 @@ function p(e, t, r) {
     writable: true
   }) : e[t] = r, e
 }
-let f = e => {
+let g = e => {
   let {
     image: t,
     label: r,
     text: n,
     children: a
   } = e;
-  return (0, s.jsxs)(c.Z, {
+  return (0, s.jsxs)(o.Z, {
     className: h.spacing,
-    children: [(0, s.jsx)(c.Z, {
+    children: [(0, s.jsx)(o.Z, {
       grow: 0,
       shrink: 0,
       basis: "156px",
-      justify: c.Z.Justify.CENTER,
+      justify: o.Z.Justify.CENTER,
       className: h.image,
       children: t
-    }), (0, s.jsx)(c.Z, {
-      direction: c.Z.Direction.VERTICAL,
-      justify: c.Z.Justify.CENTER,
+    }), (0, s.jsx)(o.Z, {
+      direction: o.Z.Direction.VERTICAL,
+      justify: o.Z.Justify.CENTER,
       children: (0, s.jsxs)("div", {
         children: [(0, s.jsx)(i.Heading, {
           variant: "heading-sm/semibold",
@@ -55,7 +55,7 @@ let f = e => {
     })]
   })
 };
-class g extends Chunk473749.PureComponent {
+class f extends Chunk473749.PureComponent {
   render() {
     var e;
     let {
@@ -64,11 +64,11 @@ class g extends Chunk473749.PureComponent {
     } = this.props, {
       totpSecret: a,
       code: p,
-      isVerifying: g
+      isVerifying: f
     } = this.state, m = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.email, x = (0, Chunk287880.U0)(null != m ? m : "", Chunk816814), b = (0, Chunk54381.jsx)("form", {
       onSubmit: this.handleActivate,
       children: (0, Chunk54381.jsxs)(Chunk600164.Z, {
-        className: Chunk416094.inputContainer,
+        className: Chunk873575.inputContainer,
         align: Chunk600164.Z.Align.START,
         children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
           value: p,
@@ -86,7 +86,7 @@ class g extends Chunk473749.PureComponent {
             variant: "primary",
             text: Chunk388032.intl.string(Chunk388032.t["/a5+YV"]),
             type: "submit",
-            loading: g
+            loading: f
           })
         })]
       })
@@ -94,7 +94,7 @@ class g extends Chunk473749.PureComponent {
     return (0, Chunk54381.jsxs)(Chunk481060.Y0X, {
       transitionState: exports,
       size: Chunk481060.CgR.DYNAMIC,
-      className: Chunk416094.customWidth,
+      className: Chunk873575.customWidth,
       parentComponent: "MFAEnable",
       children: [(0, Chunk54381.jsxs)(Chunk481060.xBx, {
         separator: false,
@@ -106,7 +106,7 @@ class g extends Chunk473749.PureComponent {
             children: Chunk388032.intl.string(Chunk388032.t.cDgKte)
           }), (0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-xs/normal",
-            className: Chunk416094.subHeader,
+            className: Chunk873575.subHeader,
             children: Chunk388032.intl.string(Chunk388032.t["7NGwtH"])
           })]
         }), (0, Chunk54381.jsx)(Chunk600164.Z.Child, {
@@ -116,7 +116,7 @@ class g extends Chunk473749.PureComponent {
           })
         })]
       }), (0, Chunk54381.jsxs)(Chunk481060.hzk, {
-        children: [(0, Chunk54381.jsx)(f, {
+        children: [(0, Chunk54381.jsx)(g, {
           image: (0, Chunk54381.jsx)("img", {
             alt: "",
             src: require("./340061.js"),
@@ -129,29 +129,29 @@ class g extends Chunk473749.PureComponent {
             authyURL: "https://www.authy.com/"
           })
         }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
-          className: Chunk416094.divider
-        }), (0, Chunk54381.jsx)(f, {
+          className: Chunk873575.divider
+        }), (0, Chunk54381.jsx)(g, {
           image: (0, Chunk54381.jsx)(Chunk198993.ZP, {
             text: x
           }),
           label: Chunk388032.intl.string(Chunk388032.t["91InF1"]),
           text: Chunk388032.intl.string(Chunk388032.t.hFeBkl),
           children: (0, Chunk54381.jsxs)("div", {
-            className: Chunk416094.topSpacing,
+            className: Chunk873575.topSpacing,
             children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
               variant: "heading-sm/semibold",
-              className: Chunk416094.headerSpacing,
+              className: Chunk873575.headerSpacing,
               children: Chunk388032.intl.string(Chunk388032.t["76IPwr"])
             }), (0, Chunk54381.jsx)(Chunk481060.Text, {
               variant: "text-md/normal",
-              className: Chunk416094.secret,
+              className: Chunk873575.secret,
               selectable: true,
               children: Chunk816814
             })]
           })
         }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
-          className: Chunk416094.divider
-        }), (0, Chunk54381.jsx)(f, {
+          className: Chunk873575.divider
+        }), (0, Chunk54381.jsx)(g, {
           image: (0, Chunk54381.jsx)("img", {
             alt: "",
             src: require("./308777.js")
@@ -199,4 +199,4 @@ class g extends Chunk473749.PureComponent {
     })
   }
 }
-let m = g
+let m = f

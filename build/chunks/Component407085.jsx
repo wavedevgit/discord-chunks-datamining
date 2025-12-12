@@ -2,12 +2,12 @@
 /** chunk id: 407085, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  W: () => a
+  W: () => o
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk561779 = require("./561779.jsx");
-let a = {
+let o = {
   title: "Slider",
   stories: [{
     id: "slider",
@@ -16,28 +16,28 @@ let a = {
       let {
         minValue: t,
         maxValue: n,
-        initialValue: a,
-        markerCount: o,
+        initialValue: o,
+        markerCount: a,
         stickToMarkers: s,
         disabled: l,
         equidistant: c,
         label: u,
         description: d
-      } = e, f = o > 0 ? Array.from({
-        length: o
-      }, (e, r) => Math.floor(t + r / (o - 1) * (n - t))) : true;
+      } = e, f = a > 0 ? Array.from({
+        length: a
+      }, (e, r) => Math.floor(t + r / (a - 1) * (n - t))) : true;
       return (0, r.jsx)(i.i, {
         label: u,
         description: d,
         layout: "horizontal-responsive",
         minValue: t,
         maxValue: n,
-        initialValue: a,
+        initialValue: o,
         markers: f,
         stickToMarkers: s,
         disabled: l,
         equidistant: c
-      }, o)
+      }, a)
     },
     controls: {
       label: {

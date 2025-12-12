@@ -32,7 +32,7 @@ function d(e) {
     } = e;
     null != t && (n(t), l())
   }, [l, n]);
-  return (0, r.jsx)(a.yRy, {
+  return (0, r.jsx)(o.yRy, {
     shouldShow: s,
     position: d,
     targetElementRef: p,
@@ -42,7 +42,7 @@ function d(e) {
       let {
         closePopout: n
       } = e;
-      return (0, r.jsx)(o.Z, {
+      return (0, r.jsx)(a.Z, {
         analyticsOverride: c,
         channel: t,
         closePopout: n,

@@ -84,14 +84,14 @@ function v(e) {
       n = new Date(e.current_set_start),
       r = new Date(e.current_set_end),
       i = new Date(e.next_set_start),
-      a = new Date(e.next_set_end);
+      o = new Date(e.next_set_end);
     if (t >= n && t < r) return {
       currentSet: e.current_set,
       catalogUpdateTime: r
     };
-    if (t >= i && t < a) return {
+    if (t >= i && t < o) return {
       currentSet: e.next_set,
-      catalogUpdateTime: a
+      catalogUpdateTime: o
     }
   }
   return {
@@ -119,8 +119,8 @@ function T(e) {
   } = e, r = y();
   E.catalogFetchFailed = false, E.models = t.models, E.limitedTimeVoices = t.limited_time_voices;
   let i = {},
-    a = v(E.limitedTimeVoices);
-  if (E.catalogUpdateTime = a.catalogUpdateTime, r)
+    o = v(E.limitedTimeVoices);
+  if (E.catalogUpdateTime = o.catalogUpdateTime, r)
     for (let e of Object.keys(d.x)) i[e] = m(p({}, d.x[e]), {
       id: e,
       modelIds: true,
@@ -129,13 +129,13 @@ function T(e) {
   for (let {
       id: e,
       models: n,
-      available: o
+      available: a
     }
     of t.voices) Object.hasOwn(d.x, e) && (i[e] = m(p({}, d.x[e]), {
     id: e,
     modelIds: n,
-    available: !!r || o,
-    temporarilyAvailable: a.currentSet.includes(e)
+    available: !!r || a,
+    temporarilyAvailable: o.currentSet.includes(e)
   }));
   E.voiceFilters = i, E.sortedVoiceFilters = I(E.voiceFilters), E.catalogLastFetchTime = new Date, null != n && (Object.keys(E.modelState).length > 0 ? E.modelState = n : g.warn("Attempted to replace existing model state with initial model state"))
 }
@@ -261,7 +261,7 @@ function x(e) {
   let {
     timeInSeconds: t
   } = e;
-  S((0, a.Z)(new Date, t))
+  S((0, o.Z)(new Date, t))
 }
 
 function L(e) {

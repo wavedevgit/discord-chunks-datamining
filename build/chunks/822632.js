@@ -6,14 +6,14 @@ require.d(exports, {
   Lj: () => y,
   Nf: () => b,
   Sk: () => m,
-  Wp: () => a,
+  Wp: () => o,
   _f: () => g,
   cs: () => l,
   eN: () => f,
   nZ: () => u,
   nk: () => c,
   o7: () => s,
-  oH: () => o,
+  oH: () => a,
   p4: () => E,
   sq: () => p,
   u0: () => _,
@@ -22,7 +22,7 @@ require.d(exports, {
 var Chunk475516 = require("./475516.js"),
   i = require("./413135.js").Buffer;
 
-function a(e, t, n) {
+function o(e, t, n) {
   try {
     return new DataView(e, t, n)
   } catch (i) {
@@ -30,7 +30,7 @@ function a(e, t, n) {
   }
 }
 
-function o(e, t, n) {
+function a(e, t, n) {
   let r = [];
   for (let i = 0; i < n && t + i < e.byteLength; i++) r.push(e.getUint8(t + i));
   return u(r)
@@ -55,7 +55,7 @@ function l(e, t, n) {
 
 function c(e, t) {
   let n = e.getUint8(t),
-    r = o(e, t + 1, n);
+    r = a(e, t + 1, n);
   return [n, r]
 }
 

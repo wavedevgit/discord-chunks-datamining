@@ -1,7 +1,7 @@
 /** Chunk was on 79764 **/
 /** chunk id: 533202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,90 +15,90 @@ var Chunk54381 = require("./54381.js"),
   Chunk66626 = require("./66626.jsx"),
   Chunk892322 = require("./892322.jsx"),
   Chunk15608 = require("./15608.jsx"),
-  Chunk486527 = require("./486527.js");
+  Chunk75666 = require("./75666.js");
 
-function C(e) {
+function f(e) {
   let {
     directoryChannelId: t,
     transitionState: n,
-    initialSlide: C = g.VX.CHOOSE_GUILD,
+    initialSlide: f = C.VX.CHOOSE_GUILD,
     onClose: j,
     directoryGuildName: p,
     directoryGuildId: b,
     currentCategoryId: h
-  } = e, [L, v] = a.useState(C), [y, Z] = a.useState(null), [O, I] = a.useState(null), [S, T] = a.useState(null), [N, _] = a.useState(null), [E, H] = a.useState(""), [M, G] = a.useState(null != h ? h : g.AR.UNCATEGORIZED), [w, k] = a.useState(false), {
+  } = e, [L, _] = l.useState(f), [v, y] = l.useState(null), [Z, O] = l.useState(null), [I, S] = l.useState(null), [T, N] = l.useState(null), [E, H] = l.useState(""), [M, G] = l.useState(null != h ? h : C.AR.UNCATEGORIZED), [w, k] = l.useState(false), {
     availableGuilds: U,
     addedGuilds: P,
     loading: D
   } = (0, d.Z)(b, t);
-  a.useEffect(() => {
-    v(C)
-  }, [v, C]);
+  l.useEffect(() => {
+    _(f)
+  }, [_, f]);
   let B = async () => {
-    let e = N;
+    let e = T;
     if (!w) {
-      if (null == O || null == y) return;
-      let t = await r.Z.createGuildFromTemplate(O, S, y);
-      _(e = (0, o.R)(t))
+      if (null == Z || null == v) return;
+      let t = await r.Z.createGuildFromTemplate(Z, I, v);
+      N(e = (0, o.R)(t))
     }
-    null != e && (await c.bF(t, e.id, E, M), v(g.VX.CONFIRMATION))
+    null != e && (await c.bF(t, e.id, E, M), _(C.VX.CONFIRMATION))
   }, V = null;
   switch (L) {
-    case g.VX.CHOOSE_GUILD:
+    case C.VX.CHOOSE_GUILD:
       V = (0, i.jsx)(u.Z, {
         directoryChannelId: t,
         directoryGuildName: p,
         onGuildChosen: e => {
-          k(true), v(g.VX.CUSTOMIZE_EXISTING_GUILD), _(e)
+          k(true), _(C.VX.CUSTOMIZE_EXISTING_GUILD), N(e)
         },
         handleChooseCreate: () => {
-          k(false), v(g.VX.GUILD_TEMPLATES)
+          k(false), _(C.VX.GUILD_TEMPLATES)
         },
         availableGuilds: U,
         addedGuilds: P,
         loading: D
       });
       break;
-    case g.VX.GUILD_TEMPLATES:
-      V = (0, i.jsx)(x.Z, {
+    case C.VX.GUILD_TEMPLATES:
+      V = (0, i.jsx)(g.Z, {
         directoryGuildName: p,
         onChooseTemplate: e => {
-          k(false), v(g.VX.CUSTOMIZE_NEW_GUILD), Z(e)
+          k(false), _(C.VX.CUSTOMIZE_NEW_GUILD), y(e)
         },
-        onBack: () => v(g.VX.CHOOSE_GUILD)
+        onBack: () => _(C.VX.CHOOSE_GUILD)
       });
       break;
-    case g.VX.CUSTOMIZE_NEW_GUILD:
+    case C.VX.CUSTOMIZE_NEW_GUILD:
       V = (0, i.jsx)(s.Z, {
         isSlideReady: true,
-        guildTemplate: y,
+        guildTemplate: v,
         onHubGuildInfoSet: (e, t) => {
-          I(e), T(t), v(g.VX.CUSTOMIZE_EXISTING_GUILD)
+          O(e), S(t), _(C.VX.CUSTOMIZE_EXISTING_GUILD)
         },
-        onBack: () => v(g.VX.GUILD_TEMPLATES)
+        onBack: () => _(C.VX.GUILD_TEMPLATES)
       });
       break;
-    case g.VX.CUSTOMIZE_EXISTING_GUILD:
-      V = (0, i.jsx)(f.Z, {
+    case C.VX.CUSTOMIZE_EXISTING_GUILD:
+      V = (0, i.jsx)(m.Z, {
         directoryChannelId: t,
         description: E,
         onDescriptionChange: H,
         categoryId: M,
         onCategoryIdChange: G,
         onSubmit: B,
-        onBack: () => v(w ? g.VX.CHOOSE_GUILD : g.VX.CUSTOMIZE_NEW_GUILD)
+        onBack: () => _(w ? C.VX.CHOOSE_GUILD : C.VX.CUSTOMIZE_NEW_GUILD)
       });
       break;
-    case g.VX.CONFIRMATION:
-      V = (0, i.jsx)(m.Z, {
+    case C.VX.CONFIRMATION:
+      V = (0, i.jsx)(x.Z, {
         directoryGuildName: p,
-        guildToAdd: N,
+        guildToAdd: T,
         isExistingGuildFlow: w,
         onClose: j
       })
   }
   return (0, i.jsx)("div", {
-    children: (0, i.jsx)(l.IX, {
+    children: (0, i.jsx)(a.IX, {
       transitionState: n,
       onClose: j,
       children: V

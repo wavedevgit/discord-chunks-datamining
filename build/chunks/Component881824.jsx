@@ -90,7 +90,7 @@ function g(e, t) {
 function E(e) {}
 
 function b(e) {
-  (0, a.Kh)(e.id)
+  (0, o.Kh)(e.id)
 }
 
 function y(e, t) {
@@ -119,7 +119,7 @@ function O(e, t) {
 }
 
 function v(e) {
-  let t = o.default.getId(),
+  let t = a.default.getId(),
     n = (0, c.Z7)(e),
     r = (0, c.wK)(e);
   return !s.ZP.isModerator(t, e) && (n > 0 || r > 0)

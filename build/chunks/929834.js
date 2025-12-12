@@ -1,9 +1,9 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 929834, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   U2: () => i,
-  jb: () => a
+  jb: () => s
 });
 var Chunk388032 = require("./388032.jsx");
 let i = {
@@ -26,7 +26,7 @@ let i = {
   },
   l = ["en-GB"];
 
-function a() {
+function s() {
   return (0, Chunk388032.getAvailableLocales)().map(e => {
     let t, {
       value: i,

@@ -12,18 +12,18 @@ var Chunk224706 = require("./224706.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u(e, t, n, u, d) {
-  if (a.Z.isNotificationDisabled(s.n0.ActivityInvite) || null == t.activity || null == u.id) return null;
-  let f = t.activity.type,
-    h = d.session_id;
-  if (null == h) return null;
+  if (o.Z.isNotificationDisabled(s.n0.ActivityInvite) || null == t.activity || null == u.id) return null;
+  let h = t.activity.type,
+    p = d.session_id;
+  if (null == p) return null;
   let {
-    icon: p,
+    icon: f,
     title: m,
     body: g
   } = (0, l.Xi)(e, t, n), {
-    trackView: b,
-    trackClick: y
-  } = (0, o.Rg)(s.n0.ActivityInvite, {
+    trackView: y,
+    trackClick: O
+  } = (0, a.Rg)(s.n0.ActivityInvite, {
     notif_type: s.n0.ActivityInvite,
     notif_user_id: n.id,
     message_id: t.id,
@@ -31,29 +31,29 @@ function u(e, t, n, u, d) {
     guild_id: e.guild_id,
     channel_id: e.id,
     channel_type: e.type,
-    activity_type: f,
+    activity_type: h,
     activity_name: d.name
   });
   return {
-    icon: p,
+    icon: f,
     title: m,
     body: g,
     onNotificationShow: () => {
-      b()
+      y()
     },
     confirmText: c.intl.string(c.t.VJlc0S),
-    onConfirmClick: (l, a) => {
-      var o;
+    onConfirmClick: (l, o) => {
+      var a;
       i.Z.join({
         userId: n.id,
-        sessionId: h,
-        applicationId: null != (o = u.altId) ? o : u.id,
+        sessionId: p,
+        applicationId: null != (a = u.altId) ? a : u.id,
         channelId: e.id,
         messageId: t.id
-      }), r.Z.updateNotificationStatus(a), y("join")
+      }), r.Z.updateNotificationStatus(o), O("join")
     },
     onDismissClick: () => {
-      y("dismiss")
+      O("dismiss")
     }
   }
 }

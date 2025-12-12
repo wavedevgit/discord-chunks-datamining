@@ -16,18 +16,18 @@ let s = e => {
     stripePaymentMethod: s
   } = e, {
     card: l
-  } = null != s ? s : {}, c = null != l ? a.ZP.getType(l.brand) : a.ZP.Types.UNKNOWN;
+  } = null != s ? s : {}, c = null != l ? o.ZP.getType(l.brand) : o.ZP.Types.UNKNOWN;
   return (0, r.jsx)("div", {
     className: t,
     children: (0, r.jsx)(i.oil, {
-      label: o.intl.string(o.t["mmDvV+"]),
+      label: a.intl.string(a.t["mmDvV+"]),
       leading: {
         type: "image",
-        src: (0, a.hx)(c)
+        src: (0, o.hx)(c)
       },
-      value: n && null != l ? o.intl.formatToPlainString(o.t.bCynoK, l) : true,
+      value: n && null != l ? a.intl.formatToPlainString(a.t.bCynoK, l) : true,
       readOnly: true,
-      placeholder: o.intl.string(o.t.bWMH78)
+      placeholder: a.intl.string(a.t.bWMH78)
     })
   })
 }

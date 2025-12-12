@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk37113 = require("./37113.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk263753 = require("./263753.js");
+  Chunk556865 = require("./556865.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -74,7 +74,7 @@ function D() {
     t = (0, Chunk341569.z8)(),
     n = (0, Chunk358085.isWindows)(),
     {
-      remindersEnabled: a,
+      remindersEnabled: o,
       clipsLength: N,
       clipsQuality: R
     } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()),
@@ -90,7 +90,7 @@ function D() {
       autoTrackExposure: false
     }),
     k = (0, Chunk924557.PP)();
-  o()(null != x, "Save clip keybind unset"), o()(null != L, "Save screenshot keybind unset");
+  a()(null != x, "Save clip keybind unset"), a()(null != L, "Save screenshot keybind unset");
   let U = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
     G = Chunk473749.useMemo(() => [{
       value: Chunk356659.OT.SECONDS_30,
@@ -216,7 +216,7 @@ function D() {
       description: Chunk388032.intl.string(Chunk388032.t["QyB/jK"]),
       layout: "horizontal",
       children: (0, Chunk54381.jsx)("div", {
-        className: Chunk263753.keyRecorder,
+        className: Chunk556865.keyRecorder,
         children: (0, Chunk54381.jsx)(Chunk825209.Z, {
           defaultValue: x.shortcut,
           onChange: B
@@ -227,7 +227,7 @@ function D() {
       description: Chunk388032.intl.string(Chunk388032.t["5zxkdo"]),
       layout: "horizontal",
       children: (0, Chunk54381.jsx)("div", {
-        className: Chunk263753.keyRecorder,
+        className: Chunk556865.keyRecorder,
         children: (0, Chunk54381.jsx)(Chunk825209.Z, {
           defaultValue: L.shortcut,
           onChange: V

@@ -4,24 +4,24 @@
 var Chunk964339 = require("./964339.js"),
   Chunk65183 = require("./65183.js");
 module.exports = function(e, t, n) {
-  var a = e.getBlockMap(),
-    o = t.getStartKey(),
+  var o = e.getBlockMap(),
+    a = t.getStartKey(),
     s = t.getStartOffset(),
     l = t.getEndKey(),
     c = t.getEndOffset(),
-    u = a.skipUntil(function(e, t) {
-      return t === o
+    u = o.skipUntil(function(e, t) {
+      return t === a
     }).takeUntil(function(e, t) {
       return t === l
     }).toOrderedMap().merge(i.OrderedMap([
-      [l, a.get(l)]
+      [l, o.get(l)]
     ])).map(function(e, t) {
-      var i = t === o ? s : 0,
-        a = t === l ? c : e.getLength();
-      return r(e, i, a, n)
+      var i = t === a ? s : 0,
+        o = t === l ? c : e.getLength();
+      return r(e, i, o, n)
     });
   return e.merge({
-    blockMap: a.merge(u),
+    blockMap: o.merge(u),
     selectionBefore: t,
     selectionAfter: t
   })

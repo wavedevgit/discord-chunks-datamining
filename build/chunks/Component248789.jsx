@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 248789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Y: () => C
@@ -56,29 +56,29 @@ function C(e) {
     senderId: y
   } = e, v = r.useCallback(() => {
     (0, u.T)(t, [C])
-  }, [t, C]), O = (0, a.e7)([c.Z], () => c.Z.isBlocked(y)), x = r.useMemo(() => ({
+  }, [t, C]), _ = (0, a.e7)([c.Z], () => c.Z.isBlocked(y)), O = r.useMemo(() => ({
     channelId: t,
     warningId: C,
     senderId: y,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2
   }), [t, C, y]);
   r.useEffect(() => {
-    (0, p.KQ)(b(g({}, x), {
+    (0, p.KQ)(b(g({}, O), {
       viewName: p.pb.SAFETY_WARNING_BANNER
     })), s.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
-  }, [x]);
-  let E = r.useCallback(e => {
-      (0, p.qc)(b(g({}, x), {
+  }, [O]);
+  let x = r.useCallback(e => {
+      (0, p.qc)(b(g({}, O), {
         cta: e
       }))
-    }, [x]),
-    j = r.useCallback(() => {
+    }, [O]),
+    E = r.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("37031"), n.e("89650"), n.e("98932")]).then(n.bind(n, 611446));
+        } = await Promise.all([n.e("37031"), n.e("89650"), n.e("899")]).then(n.bind(n, 611446));
         return n => {
           let {
             transitionState: r,
@@ -94,15 +94,15 @@ function C(e) {
           })
         }
       }, {
-        modalKey: h.X_
-      }), E(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
-    }, [t, y, C, E]),
+        modalKey: f.X_
+      }), x(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
+    }, [t, y, C, x]),
+    j = r.useCallback(() => {
+      v(), x(p.NM.USER_BANNER_BLOCK_CONFIRM)
+    }, [v, x]),
     S = r.useCallback(() => {
-      v(), E(p.NM.USER_BANNER_BLOCK_CONFIRM)
-    }, [v, E]),
-    _ = r.useCallback(() => {
-      v(), E(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
-    }, [v, E]),
+      v(), x(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
+    }, [v, x]),
     P = r.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
@@ -115,10 +115,10 @@ function C(e) {
           } = n;
           return (0, i.jsx)(e, {
             transitionState: r,
-            onBlock: S,
-            onBlockAndReport: _,
+            onBlock: j,
+            onBlockAndReport: S,
             onCancel: () => {
-              null == l || l(), E(p.NM.USER_BANNER_BLOCK_CANCEL)
+              null == l || l(), x(p.NM.USER_BANNER_BLOCK_CANCEL)
             },
             onClose: l,
             userId: y,
@@ -126,8 +126,8 @@ function C(e) {
           })
         }
       })
-    }, [S, _, y, t, E]);
-  return (0, i.jsx)(f.Q, {
+    }, [j, S, y, t, x]);
+  return (0, i.jsx)(h.Q, {
     channelId: t,
     warningId: C,
     senderId: y,
@@ -138,8 +138,8 @@ function C(e) {
     buttons: [{
       text: m.intl.string(m.t.Qyu4UK),
       variant: "primary",
-      onClick: j
-    }, ...O ? [] : [{
+      onClick: E
+    }, ..._ ? [] : [{
       text: m.intl.string(m.t["7q0bNY"]),
       variant: "secondary",
       onClick: P

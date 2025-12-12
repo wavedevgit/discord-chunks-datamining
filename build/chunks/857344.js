@@ -16,16 +16,16 @@ let s = {
 
 function l(e) {
   var t;
-  let [n, l] = (0, a.useState)(false), {
+  let [n, l] = (0, o.useState)(false), {
     selectionMode: c = "none",
     showSelectionCheckboxes: u,
     showDragButtons: d
-  } = e, f = (0, a.useMemo)(() => ({
+  } = e, f = (0, o.useMemo)(() => ({
     showSelectionCheckboxes: u && "none" !== c,
     showDragButtons: d,
     selectionMode: c,
     columns: []
-  }), [e.children, u, c, d]), p = (0, o.K)(e, (0, a.useCallback)(e => new(0, r.J)(e, null, f), [f]), f), {
+  }), [e.children, u, c, d]), p = (0, a.K)(e, (0, o.useCallback)(e => new(0, r.J)(e, null, f), [f]), f), {
     disabledKeys: _,
     selectionManager: m
   } = (0, i.S)({
@@ -52,7 +52,7 @@ function l(e) {
 }
 
 function c(e, t) {
-  let n = (0, a.useMemo)(() => t ? e.collection.filter(t) : e.collection, [e.collection, t]),
+  let n = (0, o.useMemo)(() => t ? e.collection.filter(t) : e.collection, [e.collection, t]),
     r = e.selectionManager.withCollection(n);
   return {
     ...e,

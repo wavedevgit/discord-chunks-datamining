@@ -49,20 +49,20 @@ function E(e) {
   if (null == n) return null;
   let N = (0, d.P9)(I);
   return t ? N = g.intl.string(g.t.XvBdeT) : C && (N = g.intl.string(g.t["JH1SJ+"])), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.Button, {
+    children: [(0, r.jsx)(a.Button, {
       size: "sm",
       variant: C ? "secondary" : "active",
-      icon: o.hGI,
+      icon: a.hGI,
       text: N,
       disabled: t || C || !S,
       onClick: () => A(false),
       fullWidth: true
-    }), !O || C || b ? null : (0, r.jsx)(a.u, {
+    }), !O || C || b ? null : (0, r.jsx)(o.u, {
       text: g.intl.string(g.t.wCrzut),
-      children: (0, r.jsx)(o.hU, {
+      children: (0, r.jsx)(a.hU, {
         variant: "secondary",
         size: "sm",
-        icon: o.OgY,
+        icon: a.OgY,
         "aria-label": g.intl.string(g.t.wCrzut),
         onClick: () => {
           A(true)

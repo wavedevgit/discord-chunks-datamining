@@ -13,12 +13,12 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk911969 = require("./911969.js"),
   Chunk937615 = require("./937615.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk870206 = require("./870206.js");
+  Chunk704442 = require("./704442.js");
 let f = Chunk473749.createContext({
     isPremiumRebrand: false
   }),
@@ -35,7 +35,7 @@ function _(e) {
       isPremiumRebrand: i
     },
     children: (0, r.jsx)("div", {
-      className: o()(d.table, {
+      className: a()(d.table, {
         [d.premiumRebrand]: i
       }, n),
       children: t
@@ -50,7 +50,7 @@ function m(e) {
   return p() ? (0, r.jsx)(s.Heading, {
     variant: "heading-md/semibold",
     color: "text-strong",
-    className: o()(d.header, d.premiumRebrand),
+    className: a()(d.header, d.premiumRebrand),
     children: t
   }) : (0, r.jsx)("div", {
     className: d.header,
@@ -65,7 +65,7 @@ function h(e) {
     className: i
   } = e;
   return p() ? (0, r.jsxs)("div", {
-    className: o()(d.row, i),
+    className: a()(d.row, i),
     children: [(0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "currentColor",
@@ -77,7 +77,7 @@ function h(e) {
       children: n
     })]
   }) : (0, r.jsxs)("div", {
-    className: o()(d.row, i),
+    className: a()(d.row, i),
     children: [(0, r.jsx)("div", {
       className: d.rowLabel,
       children: t
@@ -93,13 +93,13 @@ function g(e) {
     label: t,
     value: n,
     discounts: i,
-    originalAmount: a,
-    interval: o,
+    originalAmount: o,
+    interval: a,
     currency: f,
     className: p,
     intervalCount: _,
     inTrialPeriod: m
-  } = e, g = e => null != i ? i.find(t => t.type === e) : null, E = g(l.eW.SUBSCRIPTION_PLAN), b = g(l.eW.ENTITLEMENT), y = null != E ? Math.floor(E.amount / a * 100) : null, O = (0, c.T4)(a, f);
+  } = e, g = e => null != i ? i.find(t => t.type === e) : null, E = g(l.eW.SUBSCRIPTION_PLAN), b = g(l.eW.ENTITLEMENT), y = null != E ? Math.floor(E.amount / o * 100) : null, O = (0, c.T4)(o, f);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(h, {
       label: t,
@@ -120,7 +120,7 @@ function g(e) {
       })
     }), null != y ? (0, r.jsxs)("div", {
       className: d.rowDiscountOriginalPrice,
-      children: ["(", null != o && null != _ ? (0, c.og)(O, o, _) : O, ")"]
+      children: ["(", null != a && null != _ ? (0, c.og)(O, a, _) : O, ")"]
     }) : null, null != b ? (0, r.jsx)("div", {
       className: d.entitlementDiscountRow,
       children: u.intl.string(u.t.A7Hpfs)
@@ -135,7 +135,7 @@ function E(e) {
     negativeMarginBottom: i = false
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(d.divider, {
+    className: a()(d.divider, {
       [d.dividerExtended]: t,
       [d.negativeMarginTop]: n,
       [d.negativeMarginBottom]: i
@@ -150,7 +150,7 @@ function b(e) {
     className: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(d.totalRow, i),
+    className: a()(d.totalRow, i),
     children: [(0, r.jsx)("div", {
       className: d.totalLabel,
       children: t
@@ -167,7 +167,7 @@ function y(e) {
     className: n
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(d.finePrint, n),
+    className: a()(d.finePrint, n),
     children: t
   })
 }

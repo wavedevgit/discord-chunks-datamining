@@ -2,11 +2,11 @@
 /** chunk id: 277985, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk302463 = require("./302463.js"),
   Chunk981631 = require("./981631.js");
-class a {
+class o {
   getCreateAttachmentURL(e) {
     return i.ANM.GUILD_PRODUCT_CREATE_ATTACHMENT_UPLOAD(e)
   }

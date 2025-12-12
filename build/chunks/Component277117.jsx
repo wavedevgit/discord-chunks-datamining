@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 91053 **/
 /** chunk id: 277117, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -33,7 +33,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk82600 = require("./82600.js");
+  Chunk892273 = require("./892273.js");
 
 function w(e) {
   let {
@@ -59,7 +59,7 @@ function w(e) {
   });
   return (0, r.jsxs)("div", {
     className: R.body,
-    children: [(0, r.jsx)(O.Z, {
+    children: [(0, r.jsx)(y.Z, {
       userId: t.id
     }), (0, r.jsx)(E.Z, {
       user: t,
@@ -77,24 +77,24 @@ function w(e) {
         onOpenProfile: L
       })
     }), M === P.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(j.Z, {
+      children: (0, r.jsx)(x.Z, {
         user: t,
         channelId: A.id,
         applicationId: k
       })
     }), U.map(e => (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(j.Z, {
+      children: (0, r.jsx)(x.Z, {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
         channelId: A.id
       })
-    }, e.applicationId)), (0, r.jsx)(C.Z, {
+    }, e.applicationId)), (0, r.jsx)(v.Z, {
       user: t,
       className: R.card
     }), t.isProvisional && (0, r.jsx)(S.Z.Overlay, {
       className: R.card,
-      children: (0, r.jsx)(I.Z, {
+      children: (0, r.jsx)(C.Z, {
         heading: N.intl.string(N.t.Iyka0U),
         headingIcon: (0, r.jsx)(i.Mgn, {
           size: "xxs",
@@ -105,17 +105,17 @@ function w(e) {
           userId: t.id
         })
       })
-    }), B ? (0, r.jsx)(_.Z, {
+    }), B ? (0, r.jsx)(I.Z, {
       user: t,
       currentUser: n,
       onOpenUserProfileModal: L
-    }) : (0, r.jsx)(y.Z, {
+    }) : (0, r.jsx)(_.Z, {
       user: t,
       currentUser: n,
       className: R.card
     }), (0, r.jsxs)(S.Z.Overlay, {
       className: R.overlay,
-      children: [!H && (null == w ? true : w.bio) != null && (null == w ? true : w.bio) !== "" && (0, r.jsx)(I.Z, {
+      children: [!H && (null == w ? true : w.bio) != null && (null == w ? true : w.bio) !== "" && (0, r.jsx)(C.Z, {
         heading: N.intl.string(N.t["61W33d"]),
         headingColor: "text-strong",
         children: (0, r.jsx)(b.Z, {
@@ -128,16 +128,16 @@ function w(e) {
         applicationId: F.id,
         commandIds: F.popularApplicationCommandIds,
         channel: A
-      }), G.length > 0 && (0, r.jsx)(I.Z, {
+      }), G.length > 0 && (0, r.jsx)(C.Z, {
         heading: N.intl.string(N.t["Uv/eTx"]),
         headingColor: "text-strong",
-        children: (0, r.jsx)(x.Z, {
+        children: (0, r.jsx)(O.Z, {
           applicationIds: G
         })
-      }), (0, r.jsx)(I.Z, {
+      }), (0, r.jsx)(C.Z, {
         heading: t.bot ? N.intl.string(N.t["A//N4k"]) : N.intl.string(N.t.a6XYD9),
         headingColor: "text-strong",
-        children: (0, r.jsx)(v.Z, {
+        children: (0, r.jsx)(j.Z, {
           userId: t.id
         })
       })]

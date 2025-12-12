@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 185666, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -28,7 +28,7 @@ class h extends Chunk317770.Z {
     u.Z.isOpen() && !(0, i.nfh)(f) && (0, i.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("86872"), n.e("74705")]).then(n.bind(n, 472365));
+      } = await Promise.all([n.e("86872"), n.e("63798")]).then(n.bind(n, 472365));
       return t => (0, r.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -51,8 +51,8 @@ class h extends Chunk317770.Z {
       modalKey: f,
       contextKey: (0, i.VnL)(t),
       onCloseRequest: () => {
-        let e = (0, o.e7)(),
-          t = (0, o._J)();
+        let e = (0, a.e7)(),
+          t = (0, a._J)();
         s.default.track(d.rMx.INVITE_ACCEPT_DISMISSED, {
           invite_code: e,
           guild_id: t

@@ -1,7 +1,7 @@
 /** Chunk was on 6310 **/
 /** chunk id: 706923, original params: e,n,s (module,exports,require) **/
 require.d(exports, {
-  default: () => S
+  default: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,29 +14,29 @@ var Chunk399606 = require("./399606.js"),
   Chunk812545 = require("./812545.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk552593 = require("./552593.js");
+  Chunk625221 = require("./625221.js");
 
-function S(e) {
+function f(e) {
   let {
     channelId: n,
     messageId: s,
-    transitionState: S,
-    onClose: b
-  } = e, h = (0, l.e7)([c.Z], () => c.Z.getChannel(n)), [C, F] = (0, u.Z)(n), _ = null == h ? true : h.guild_id;
+    transitionState: f,
+    onClose: S
+  } = e, h = (0, l.e7)([c.Z], () => c.Z.getChannel(n)), [C, F] = (0, u.Z)(n), m = null == h ? true : h.guild_id;
   return (0, t.jsx)(o.VoidConfirmModal, {
     header: g.intl.string(g.t.aIz1oV),
     confirmText: g.intl.string(g.t["cY+Oob"]),
     cancelText: g.intl.string(g.t["ETE/oC"]),
     confirmButtonColor: i.zx.Colors.BRAND,
     onConfirm: () => a.Z.crosspostMessage(n, s),
-    transitionState: S,
-    onClose: b,
+    transitionState: f,
+    onClose: S,
     children: (0, t.jsx)(o.Text, {
       variant: "text-md/normal",
-      className: f.spacing,
+      className: _.spacing,
       children: F ? (0, t.jsx)(o.$jN, {}) : null != C && null != C.guildsFollowing && C.guildsFollowing > 0 ? (0, t.jsxs)(t.Fragment, {
         children: [(0, t.jsx)(o.Text, {
-          className: f.spacing,
+          className: _.spacing,
           variant: "text-sm/normal",
           children: g.intl.format(g.t.GCGrNP, {
             numGuildsFollowing: C.guildsFollowing
@@ -45,7 +45,7 @@ function S(e) {
           variant: "text-sm/normal",
           children: g.intl.format(g.t.IMhGZz, {
             onClick: () => {
-              null != _ && null != b && (b(), r.Z.open(_, d.pNK.ANALYTICS))
+              null != m && null != S && (S(), r.Z.open(m, d.pNK.ANALYTICS))
             }
           })
         })]

@@ -62,11 +62,11 @@ function b(e, t) {
     mode: n,
     ignoreTrailingEmptyNodes: r,
     preventEmojiSurrogates: i
-  } = null != t ? t : {}, [a, o] = (null == t ? true : t.range) != null ? _.M8.edges(t.range) : [true, true];
+  } = null != t ? t : {}, [o, a] = (null == t ? true : t.range) != null ? _.M8.edges(t.range) : [true, true];
   return y(e, {
     mode: n,
-    start: a,
-    end: o,
+    start: o,
+    end: a,
     ignoreTrailingEmptyNodes: r,
     preventEmojiSurrogates: i
   })
@@ -76,16 +76,16 @@ function y(e, t) {
   var n, r;
   let {
     mode: i,
-    start: a,
-    end: o,
+    start: o,
+    end: a,
     separator: s,
     ignoreEmptyNodes: l,
     ignoreTrailingEmptyNodes: c,
     preventEmojiSurrogates: u
   } = null != t ? t : {}, d = e.length > 0 && !_.LC.isText(e[0]);
   null == s && (s = d ? "\n" : "");
-  let f = null != (n = null == a ? true : a.path[0]) ? n : 0,
-    p = null != (r = null == o ? true : o.path[0]) ? r : e.length - 1;
+  let f = null != (n = null == o ? true : o.path[0]) ? n : 0,
+    p = null != (r = null == a ? true : a.path[0]) ? r : e.length - 1;
   if (c)
     for (let t = p; t >= f; t--) {
       let n = e[t];
@@ -107,18 +107,18 @@ function y(e, t) {
   for (let t = f; t <= p; t++) {
     let n = e[t];
     if (l && _.LC.isText(n) && 0 === n.text.length) continue;
-    let r = null != a && t === f ? {
-        path: a.path.slice(1),
-        offset: a.offset
+    let r = null != o && t === f ? {
+        path: o.path.slice(1),
+        offset: o.offset
       } : true,
       s = O(n, {
         mode: i,
         start: r,
-        end: null != o && t === p ? {
-          path: o.path.slice(1),
-          offset: o.offset
+        end: null != a && t === p ? {
+          path: a.path.slice(1),
+          offset: a.offset
         } : true,
-        allowBlockQuotePrefix: null == a || null == o || !m && (!h || g),
+        allowBlockQuotePrefix: null == o || null == a || !m && (!h || g),
         preventEmojiSurrogates: u
       });
     (!l || s.length > 0) && E.push(s)
@@ -143,8 +143,8 @@ function O(e, t) {
       return y(e.children, t);
     case "blockQuote": {
       let n = y(e.children, t),
-        a = null != r && 1 === r.path.length && 0 === r.path[0] && 0 === r.offset;
-      if (i && (null == r || a)) return "> ".concat(n);
+        o = null != r && 1 === r.path.length && 0 === r.path[0] && 0 === r.offset;
+      if (i && (null == r || o)) return "> ".concat(n);
       return n
     }
     case "emoji": {
@@ -168,7 +168,7 @@ function O(e, t) {
       if ("raw" === n) return t;
       let r = l.Z.getChannel(e.channelId);
       if (null == r) return t;
-      return (0, a.F6)(r, f.default, u.Z, true, true)
+      return (0, o.F6)(r, f.default, u.Z, true, true)
     }
     case "soundboard": {
       let t = "<sound:".concat(e.guildId, ":").concat(e.soundId, ">");
@@ -199,7 +199,7 @@ function O(e, t) {
     case "commandMention":
       return "</".concat(e.commandName, ":").concat(e.commandId, ">");
     case "timestamp":
-      return (0, o.He)(e.parsed.timestamp, e.parsed.format);
+      return (0, a.He)(e.parsed.timestamp, e.parsed.format);
     case "gameMention":
       return "<@$".concat(e.applicationId, ">");
     case "timestampMentionInput": {
@@ -223,8 +223,8 @@ function O(e, t) {
 function v(e, t) {
   var n, r;
   let {
-    start: a,
-    end: o
+    start: o,
+    end: a
   } = null != t ? t : {};
-  return i()(null == a || 0 === a.path.length, "Invalid start provided to serializeText"), i()(null == o || 0 === o.path.length, "Invalid end provided to serializeText"), e.substring(null != (n = null == a ? true : a.offset) ? n : 0, null != (r = null == o ? true : o.offset) ? r : e.length)
+  return i()(null == o || 0 === o.path.length, "Invalid start provided to serializeText"), i()(null == a || 0 === a.path.length, "Invalid end provided to serializeText"), e.substring(null != (n = null == o ? true : o.offset) ? n : 0, null != (r = null == a ? true : a.offset) ? r : e.length)
 }

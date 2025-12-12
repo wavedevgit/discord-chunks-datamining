@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk28664 = require("./28664.jsx"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk441319 = require("./441319.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk787630 = require("./787630.js");
+  Chunk63224 = require("./63224.js");
 let E = () => [Chunk388032.intl.string(Chunk388032.t["EgWTY+"]), Chunk388032.intl.string(Chunk388032.t.umBn5f), Chunk388032.intl.string(Chunk388032.t.dG1wD1), Chunk388032.intl.string(Chunk388032.t.SesI4S), Chunk388032.intl.string(Chunk388032.t.RnMLvl)],
   b = () => {
     var e;
@@ -29,7 +29,7 @@ function y(e) {
   let {
     id: t,
     className: n,
-    onSelect: a,
+    onSelect: o,
     isSelected: s = false,
     tabIndex: l,
     children: p,
@@ -45,10 +45,10 @@ function y(e) {
         "aria-label": E,
         "aria-checked": s,
         tabIndex: null != l ? l : s ? 0 : false,
-        className: o()(g.appIconSelection, {
+        className: a()(g.appIconSelection, {
           [g.selected]: s
         }, n),
-        onClick: s ? m.dG4 : () => null == a ? true : a(t),
+        onClick: s ? m.dG4 : () => null == o ? true : o(t),
         children: p
       }), s && (0, r.jsx)(d.oK, {}), h && (0, r.jsx)("div", {
         className: g.lockedBadgeContainer,
@@ -66,16 +66,16 @@ function O(e) {
     icon: t,
     isSelected: n,
     disabled: i,
-    tabIndex: a,
-    onSelect: o,
+    tabIndex: o,
+    onSelect: a,
     locked: s
   } = e;
   return (0, r.jsx)(y, {
-    onSelect: i ? true : o,
+    onSelect: i ? true : a,
     isSelected: n,
     id: t.id,
     className: i ? g.disabled : true,
-    tabIndex: a,
+    tabIndex: o,
     locked: s,
     children: (0, r.jsx)(p.Z, {
       id: t.id,

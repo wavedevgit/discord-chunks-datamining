@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk131388 = require("./131388.js"),
@@ -25,9 +25,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk696014 = require("./696014.jsx"),
   Chunk847033 = require("./847033.jsx"),
   Chunk544978 = require("./544978.js"),
-  Chunk615327 = require("./615327.jsx"),
+  Chunk893182 = require("./893182.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk332232 = require("./332232.js");
+  Chunk793701 = require("./793701.js");
 
 function C(e) {
   let {
@@ -54,7 +54,7 @@ function A(e) {
   return (0, s.cj)([m.ZP, h.default], () => {
     var t, n;
     let r = h.default.getCurrentUser();
-    o()(null != r, "user cannot be null");
+    a()(null != r, "user cannot be null");
     let i = m.ZP.getMember(e, r.id);
     return {
       nickname: null != (t = null == i ? true : i.nick) ? t : E.ZP.getName(r),
@@ -67,7 +67,7 @@ function N(e) {
   let {
     coverImageAsset: t,
     isPreview: n = false
-  } = e, i = _.QK.useSetting(), a = (0, b.n)() && i, [o, s] = (0, p.Z)(t, a), l = a ? (0, r.jsx)(d.Z, {
+  } = e, i = _.QK.useSetting(), o = (0, b.n)() && i, [a, s] = (0, p.Z)(t, o), l = o ? (0, r.jsx)(d.Z, {
     autoPlay: true,
     loop: true,
     className: T.coverImage,
@@ -80,7 +80,7 @@ function N(e) {
     className: T.coverImage
   });
   return (0, r.jsx)("div", {
-    ref: o,
+    ref: a,
     className: T.coverImageContainer,
     children: null == s || n ? l : (0, r.jsx)("img", {
       src: s,
@@ -93,9 +93,9 @@ function N(e) {
 function P(e) {
   var t, n;
   let {
-    guild: a,
-    subscriptionsSettings: o
-  } = e, s = a.id, {
+    guild: o,
+    subscriptionsSettings: a
+  } = e, s = o.id, {
     nickname: d,
     nickcolor: p
   } = A(s), {
@@ -103,7 +103,7 @@ function P(e) {
     ExpandableTextContainer: m
   } = (0, y.s)(), h = () => (0, S.Z)({
     guildId: s
-  }), g = (null != (n = null == o || null == (t = o.description) ? true : t.trim().length) ? n : 0) > 0, [E, b] = i.useState(1), P = (0, c.Z)("(max-width: 1439px)"), {
+  }), g = (null != (n = null == a || null == (t = a.description) ? true : t.trim().length) ? n : 0) > 0, [E, b] = i.useState(1), P = (0, c.Z)("(max-width: 1439px)"), {
     selectedTab: R,
     isPhantomPreview: w
   } = (0, O.m)(), D = R === v.y.GUILD_PRODUCTS_PREVIEW ? I.intl.string(I.t["LvXy/H"]) : I.intl.string(I.t.XyqKh8), x = e => {
@@ -124,7 +124,7 @@ function P(e) {
       children: (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: null == o ? true : o.description
+        children: null == a ? true : a.description
       })
     }), _ && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.LZC, {
@@ -144,9 +144,9 @@ function P(e) {
       className: T.infoContainer,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(f.Z, {
-          guild: a,
+          guild: o,
           size: f.Z.Sizes.LARGER,
-          iconSrc: null == a.icon || w ? (0, u.b)("server_products/storefront/default-guild-icon.jpg") : true
+          iconSrc: null == o.icon || w ? (0, u.b)("server_products/storefront/default-guild-icon.jpg") : true
         })
       }), (0, r.jsx)(l.LZC, {
         size: 16,
@@ -159,7 +159,7 @@ function P(e) {
             color: "text-strong",
             lineClamp: 2,
             children: w ? I.intl.string(I.t.rtgp7q) : I.intl.formatToPlainString(I.t.NZeik9, {
-              guildName: a.name
+              guildName: o.name
             })
           })
         }), (0, r.jsx)(l.LZC, {
@@ -176,7 +176,7 @@ function P(e) {
         }), j]
       })]
     }), (0, r.jsx)(N, {
-      coverImageAsset: null == o ? true : o.cover_image_asset,
+      coverImageAsset: null == a ? true : a.cover_image_asset,
       isPreview: w
     })]
   })

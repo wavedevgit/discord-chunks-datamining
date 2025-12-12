@@ -1,7 +1,7 @@
 /** Chunk was on 78431 **/
 /** chunk id: 340529, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  z: () => w
+  z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -23,7 +23,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk266222 = require("./266222.js");
+  Chunk754540 = require("./754540.js");
 
 function y(e) {
   let {
@@ -31,45 +31,45 @@ function y(e) {
     title: r,
     body: i,
     selected: l,
-    disabled: c = false,
+    disabled: s = false,
     onClick: a,
     onPreviewDismiss: d,
     isNew: u = false
   } = e;
-  return (0, n.jsxs)(s.kL8, {
-    onClick: c ? true : a,
-    "aria-disabled": c,
+  return (0, n.jsxs)(c.kL8, {
+    onClick: s ? true : a,
+    "aria-disabled": s,
     className: o()(v.tab, {
       [v.selected]: l,
-      [v.tabDisabled]: c,
+      [v.tabDisabled]: s,
       [v.preview]: !l && null != d
     }),
     "aria-label": r,
     children: [(0, n.jsx)("div", {
       className: v.iconContainer,
       children: t
-    }), (0, n.jsx)(s.LZC, {
+    }), (0, n.jsx)(c.LZC, {
       size: 8,
       horizontal: true
     }), (0, n.jsxs)("div", {
-      children: [(0, n.jsx)(s.Text, {
+      children: [(0, n.jsx)(c.Text, {
         variant: "text-sm/semibold",
         color: l ? "always-white" : "text-strong",
         children: r
-      }), (0, n.jsx)(s.Text, {
+      }), (0, n.jsx)(c.Text, {
         variant: "text-xs/normal",
-        color: l ? "always-white" : c ? "text-muted" : "text-strong",
+        color: l ? "always-white" : s ? "text-muted" : "text-strong",
         children: i
       })]
-    }), u && (0, n.jsx)(s.IGR, {
-      color: s.TVs.unsafe_rawColors.BRAND_260.css,
+    }), u && (0, n.jsx)(c.IGR, {
+      color: c.TVs.unsafe_rawColors.BRAND_260.css,
       className: v.newBadge,
       text: m.intl.string(m.t.y2b7CA)
-    }), null != d && (0, n.jsx)(s.P3F, {
+    }), null != d && (0, n.jsx)(c.P3F, {
       className: v.tabPreviewClose,
       onClick: d,
       "aria-label": m.intl.string(m.t.WAI6xu),
-      children: (0, n.jsx)(s.k$p, {
+      children: (0, n.jsx)(c.k$p, {
         size: "xs",
         color: "currentColor"
       })
@@ -77,15 +77,15 @@ function y(e) {
   })
 }
 
-function w(e) {
+function _(e) {
   let {
     guild: t
   } = e, r = (0, C.RF)(t.id, "guild_shop_category_selector"), {
     selectedTab: i,
     setSelectedTab: o,
-    categoryTabs: w,
-    handlePreviewDismiss: P
-  } = (0, p.m)(), _ = "false" === c.K.get(O.Hr, "false"), L = (0, l.e7)([a.Z], () => a.Z.useReducedMotion), S = w.map(e => {
+    categoryTabs: _,
+    handlePreviewDismiss: w
+  } = (0, p.m)(), P = "false" === s.K.get(O.Hr, "false"), L = (0, l.e7)([a.Z], () => a.Z.useReducedMotion), S = _.map(e => {
     switch (e) {
       case f.y.GUILD_PRODUCTS:
         return (0, n.jsx)(y, {
@@ -114,11 +114,11 @@ function w(e) {
         }, e);
       case f.y.GUILD_PRODUCTS_PREVIEW:
         return (0, n.jsx)(y, {
-          icon: _ ? (0, n.jsx)("img", {
+          icon: P ? (0, n.jsx)("img", {
             src: L ? (0, d.b)("server_products/storefront/question-mark.png") : (0, d.b)("server_products/storefront/question-mark.gif"),
             className: v.questionMark,
             alt: ""
-          }) : (0, n.jsx)(s.OgN, {
+          }) : (0, n.jsx)(c.OgN, {
             size: "custom",
             color: "currentColor",
             width: 20,
@@ -128,10 +128,10 @@ function w(e) {
           body: m.intl.string(m.t["827i8I"]),
           selected: i === f.y.GUILD_PRODUCTS_PREVIEW,
           onClick: () => {
-            o(f.y.GUILD_PRODUCTS_PREVIEW), c.K.set(O.Hr, "true")
+            o(f.y.GUILD_PRODUCTS_PREVIEW), s.K.set(O.Hr, "true")
           },
-          onPreviewDismiss: P,
-          isNew: _
+          onPreviewDismiss: w,
+          isNew: P
         }, e);
       default:
         return null
@@ -139,11 +139,11 @@ function w(e) {
   });
   return (0, n.jsxs)("div", {
     className: v.container,
-    children: [(0, n.jsx)(s.Heading, {
+    children: [(0, n.jsx)(c.Heading, {
       variant: "heading-sm/bold",
       className: v.header,
       children: m.intl.string(m.t.GF433I)
-    }), (0, n.jsx)(s.LZC, {
+    }), (0, n.jsx)(c.LZC, {
       size: 12
     }), (0, n.jsxs)("div", {
       className: v.filters,

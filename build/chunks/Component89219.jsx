@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk789407 = require("./789407.js"),
   Chunk967249 = require("./967249.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk927997 = require("./927997.js");
+  Chunk837262 = require("./837262.js");
 
 function d(e) {
   let {
@@ -21,14 +21,14 @@ function d(e) {
     onClickContent: f,
     onView: p,
     guildId: _
-  } = e, m = i.useMemo(() => (0, r.jsx)(a.Text, {
+  } = e, m = i.useMemo(() => (0, r.jsx)(o.Text, {
     variant: "text-xs/medium",
     className: u.description,
     color: "none",
     lineClamp: 1,
     children: c.intl.string(c.t["84qx9r"])
   }), []);
-  return (0, r.jsx)(o.W, {
+  return (0, r.jsx)(a.W, {
     header: d,
     title: t.name,
     iconSrc: s.r9.getWhiteIconURL(),

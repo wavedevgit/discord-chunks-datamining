@@ -2,12 +2,12 @@
 /** chunk id: 935153, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => a
+  V: () => o
 });
 var Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function o(e) {
   switch (e) {
     case r.M7m.DESKTOP:
       return i.intl.string(i.t.aqN8U9);

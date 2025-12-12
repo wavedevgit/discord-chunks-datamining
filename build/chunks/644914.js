@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 644914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   TE: () => y,
@@ -52,8 +52,8 @@ function v(e) {
       }))
     }(e),
     guildPersonalized: function(e) {
-      let t = (0, a.e7)([h.Z], () => h.Z.hasLayers()),
-        n = (0, a.e7)([f.Z], () => f.Z.getGuild(null == e ? true : e.id));
+      let t = (0, a.e7)([f.Z], () => f.Z.hasLayers()),
+        n = (0, a.e7)([h.Z], () => h.Z.getGuild(null == e ? true : e.id));
       return (null == n ? true : n.icon) != null && !t
     }(e),
     guildChannelCreated: (0, a.e7)([d.ZP], () => {

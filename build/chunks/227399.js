@@ -8,17 +8,17 @@ require.d(exports, {
 var Chunk160871 = require("./160871.js"),
   Chunk864406 = require("./864406.js"),
   Chunk473749 = require("./473749.js");
-let o = Chunk473749.createContext(null);
+let a = Chunk473749.createContext(null);
 
 function s(e) {
   let {
     locale: t,
     children: n
-  } = e, i = a.useMemo(() => ({
+  } = e, i = o.useMemo(() => ({
     locale: t,
     direction: (0, r.d)(t) ? "rtl" : "ltr"
   }), [t]);
-  return a.createElement(o.Provider, {
+  return o.createElement(a.Provider, {
     value: i
   }, n)
 }
@@ -27,7 +27,7 @@ function l(e) {
   let {
     children: t
   } = e, n = (0, i.R)();
-  return a.createElement(o.Provider, {
+  return o.createElement(a.Provider, {
     value: n
   }, t)
 }
@@ -37,15 +37,15 @@ function c(e) {
     locale: t,
     children: n
   } = e;
-  return t ? a.createElement(s, {
+  return t ? o.createElement(s, {
     locale: t,
     children: n
-  }) : a.createElement(l, {
+  }) : o.createElement(l, {
     children: n
   })
 }
 
 function u() {
   let e = (0, Chunk864406.R)();
-  return (0, Chunk473749.useContext)(o) || module
+  return (0, Chunk473749.useContext)(a) || module
 }

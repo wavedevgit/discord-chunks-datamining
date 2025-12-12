@@ -8,7 +8,7 @@ var Chunk424218 = require("./424218.js"),
   Chunk186901 = require("./186901.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,14 +26,14 @@ class s {
       case Chunk186901.ff.DISK_LOW:
         let {
           available: t, required: n
-        } = this.context, o = (0, Chunk424218.BU)(exports, {
+        } = this.context, a = (0, Chunk424218.BU)(exports, {
           useKibibytes: true
         }), s = (0, Chunk424218.BU)(require, {
           useKibibytes: true
         });
         return Chunk388032.intl.formatToPlainString(Chunk388032.t["2DR5dl"], {
           required: s,
-          available: o
+          available: a
         });
       case Chunk186901.ff.POST_INSTALL_FAILED:
         let {
@@ -75,6 +75,6 @@ class s {
     }
   }
   constructor(e) {
-    o(this, "raw", true), o(this, "context", true), o(this, "code", true), o(this, "uuid", true), o(this, "applicationId", true), o(this, "branchId", true), this.raw = e, null != e.code && (this.code = e.code), null != e.uuid && (this.uuid = e.uuid), null != e.application_id && (this.applicationId = e.application_id), null != e.branch_id && (this.branchId = e.branch_id), null != e.context ? this.context = e.context : this.context = {}
+    a(this, "raw", true), a(this, "context", true), a(this, "code", true), a(this, "uuid", true), a(this, "applicationId", true), a(this, "branchId", true), this.raw = e, null != e.code && (this.code = e.code), null != e.uuid && (this.uuid = e.uuid), null != e.application_id && (this.applicationId = e.application_id), null != e.branch_id && (this.branchId = e.branch_id), null != e.context ? this.context = e.context : this.context = {}
   }
 }

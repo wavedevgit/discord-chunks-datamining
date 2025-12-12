@@ -15,6 +15,6 @@ let l = e => {
     return (null == (t = e.features) ? true : t.includes(s.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == (n = e.features) ? true : n.includes(s.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL))
   },
   c = e => {
-    let t = a.Z.getRequest(e);
-    null != t && t.applicationStatus !== i.wB.STARTED ? (0, o.uL)(s.Z5c.GUILD_MEMBER_VERIFICATION(e)) : (0, r.hk)(e)
+    let t = o.Z.getRequest(e);
+    null != t && t.applicationStatus !== i.wB.STARTED ? (0, a.uL)(s.Z5c.GUILD_MEMBER_VERIFICATION(e)) : (0, r.hk)(e)
   }

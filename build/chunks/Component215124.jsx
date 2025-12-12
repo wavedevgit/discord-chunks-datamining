@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 215124, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,29 +19,29 @@ function g(e) {
   let {
     guildId: t,
     allPeriods: g
-  } = e, f = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), m = (0, c.qi)(t, {
+  } = e, m = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), p = (0, c.qi)(t, {
     includeSoftDeleted: true
-  }), b = (0, s.ue)(t, {
+  }), f = (0, a.ue)(t, {
     publishedOnly: false
   }), {
-    allowSelfRemoveMonetization: p
-  } = (0, a.gX)(t), h = g.filter(e => {
+    allowSelfRemoveMonetization: h
+  } = (0, s.gX)(t), x = g.filter(e => {
     var t;
     let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
-    return (null == n ? true : n.status) === d.x_.OPEN || (null == n ? true : n.status) === d.x_.PAYOUT_DEFERRED
-  }), x = m.length > 0, j = b.length > 0, v = h.length > 0;
-  return null == f ? null : (0, r.jsxs)("div", {
+    return (null == n ? true : n.status) === u.x_.OPEN || (null == n ? true : n.status) === u.x_.PAYOUT_DEFERRED
+  }), b = p.length > 0, j = f.length > 0, _ = x.length > 0;
+  return null == m ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: u.intl.format(u.t.fvOn6J, {
-        guildName: f.name
+      children: d.intl.format(d.t.fvOn6J, {
+        guildName: m.name
       })
     }), (0, r.jsx)(l.LZC, {
       size: 16
     }), (0, r.jsx)(l.Button, {
       variant: "critical-primary",
-      text: u.intl.string(u.t.FrOFSo),
-      disabled: !p || x || j || v,
+      text: d.intl.string(d.t.FrOFSo),
+      disabled: !h || b || j || _,
       onClick: () => {
         (0, l.ZDy)(async () => {
           let {
@@ -67,7 +67,7 @@ function g(e) {
               }
               return e
             }({}, t), i = i = {
-              guild: f
+              guild: m
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

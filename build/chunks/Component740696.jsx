@@ -1,7 +1,7 @@
 /** Chunk was on 18417 **/
 /** chunk id: 740696, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => h
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,36 +16,36 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk212553 = require("./212553.js");
+  Chunk87612 = require("./87612.js");
 
-function b(t) {
+function h(t) {
   let {
     guildId: e,
-    shouldUpsellCreation: b,
-    transitionState: h,
-    onClose: v
-  } = t, j = (0, s.e7)([l.Z], () => l.Z.getGuild(e), [e]), y = (0, s.e7)([c.Z], () => c.Z.can(u.Plq.MANAGE_CHANNELS, j)), N = [{
+    shouldUpsellCreation: h,
+    transitionState: v,
+    onClose: j
+  } = t, b = (0, s.e7)([l.Z], () => l.Z.getGuild(e), [e]), y = (0, s.e7)([c.Z], () => c.Z.can(u.Plq.MANAGE_CHANNELS, b)), N = [{
     id: 0,
-    name: x.intl.string(x.t.HTA517)
+    name: p.intl.string(p.t.HTA517)
   }, {
     id: 1,
-    name: x.intl.string(x.t["IHjjY/"])
+    name: p.intl.string(p.t["IHjjY/"])
   }, {
     id: 2,
-    name: x.intl.string(x.t.x3drh1)
+    name: p.intl.string(p.t.x3drh1)
   }], [P, S] = i.useState(0), O = [{
-    variant: b ? "secondary" : "primary",
-    text: b ? x.intl.string(x.t.TulDPl) : x.intl.string(x.t["NX+WJN"]),
-    onClick: () => v(f.L.SECONDARY)
+    variant: h ? "secondary" : "primary",
+    text: h ? p.intl.string(p.t.TulDPl) : p.intl.string(p.t["NX+WJN"]),
+    onClick: () => j(x.L.SECONDARY)
   }];
-  return b && O.push({
+  return h && O.push({
     variant: "primary",
-    text: x.intl.string(x.t["1X8SK/"]),
+    text: p.intl.string(p.t["1X8SK/"]),
     onClick: () => {
       (0, o.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("29497"), n.e("59679")]).then(n.bind(n, 241865));
+        } = await Promise.all([n.e("29497"), n.e("53781")]).then(n.bind(n, 241865));
         return n => {
           var i, r;
           return (0, a.jsx)(t, (i = function(t) {
@@ -68,7 +68,7 @@ function b(t) {
           }({}, n), r = r = {
             channelType: u.d4z.GUILD_FORUM,
             guildId: e,
-            prefillChannelName: b ? x.intl.string(x.t["5z1Xat"]) : true
+            prefillChannelName: h ? p.intl.string(p.t["5z1Xat"]) : true
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
             var n = Object.keys(t);
             if (Object.getOwnPropertySymbols) {
@@ -80,36 +80,36 @@ function b(t) {
             Object.defineProperty(i, t, Object.getOwnPropertyDescriptor(r, t))
           }), i))
         }
-      }), v(f.L.PRIMARY)
+      }), j(x.L.PRIMARY)
     }
   }), (0, a.jsxs)(r.IX, {
-    transitionState: h,
+    transitionState: v,
     size: "xxl",
-    onClose: async () => await v(),
+    onClose: async () => await j(),
     children: [(0, a.jsx)(r.xBx, {
-      title: x.intl.string(x.t["6S6WCQ"]),
-      subtitle: x.intl.string(x.t.I2BA8K)
+      title: p.intl.string(p.t["6S6WCQ"]),
+      subtitle: p.intl.string(p.t.I2BA8K)
     }), (0, a.jsxs)(r.fef, {
       children: [(0, a.jsx)(o.njP, {
         selectedItem: P,
         type: "top",
         onItemSelect: t => {
-          S(t), (0, d.ws)({
+          S(t), (0, g.ws)({
             forumDemoId: t
           })
         },
-        className: p.tags,
+        className: f.tags,
         children: N.map((t, e) => (0, a.jsx)(o.njP.Item, {
           id: e,
           children: t.name
         }, e))
-      }), (0, a.jsx)(g.Z, {
+      }), (0, a.jsx)(d.Z, {
         id: P
       })]
     }), y && (0, a.jsx)(r.Go$, {
       leading: (0, a.jsx)(o.Button, {
         variant: "secondary",
-        text: x.intl.string(x.t.hvVgAZ),
+        text: p.intl.string(p.t.hvVgAZ),
         icon: o.Gr1,
         iconPosition: "end",
         role: "link",

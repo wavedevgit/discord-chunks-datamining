@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 598622, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,41 +22,41 @@ let g = e => {
     enabled: true
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: u.intl.string(u.t.QiONL5),
-      details: u.intl.string(u.t.dSRTMB)
+      title: d.intl.string(d.t.QiONL5),
+      details: d.intl.string(d.t.dSRTMB)
     }, "hide-suspicious-dms"),
     enabled: true
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: u.intl.string(u.t["f+8F8F"]),
-      details: u.intl.string(u.t.qChrI2)
+      title: d.intl.string(d.t["f+8F8F"]),
+      details: d.intl.string(d.t.qChrI2)
     }, "filter-unknown-dms"),
     enabled: true
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: u.intl.string(u.t.EkSAHZ)
+      title: d.intl.string(d.t.EkSAHZ)
     }, "outbound-links-warn"),
     enabled: true
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: u.intl.string(u.t["7cAQmj"])
+      title: d.intl.string(d.t["7cAQmj"])
     }, "delete-spam"),
     enabled: true
   }].filter(e => null != e);
   return {
     [i.u.CAPTCHA_AND_RAID_PROTECTION]: [{
-      renderComponent: () => (0, r.jsx)(s.Z, {
+      renderComponent: () => (0, r.jsx)(a.Z, {
         guild: e
       }, "raid-alerts"),
-      enabled: !e.features.has(d.GuildFeatures.RAID_ALERTS_DISABLED)
+      enabled: !e.features.has(u.GuildFeatures.RAID_ALERTS_DISABLED)
     }, {
       renderComponent: () => (0, r.jsx)(o.Z, {
-        title: u.intl.string(u.t.gOkFfI)
+        title: d.intl.string(d.t.gOkFfI)
       }, "captcha-suspicious-joins"),
       enabled: true
     }, {
       renderComponent: () => (0, r.jsx)(o.Z, {
-        title: u.intl.string(u.t.r3esyC)
+        title: d.intl.string(d.t.r3esyC)
       }, "captcha-raid-joins"),
       enabled: true
     }],
@@ -65,12 +65,12 @@ let g = e => {
       renderComponent: () => (0, r.jsx)(l.Z, {
         guild: e
       }, "guild-mfa"),
-      enabled: e.mfaLevel === d.BpS.ELEVATED
+      enabled: e.mfaLevel === u.BpS.ELEVATED
     }, {
-      renderComponent: () => (0, r.jsx)(a.Z, {
+      renderComponent: () => (0, r.jsx)(s.Z, {
         guild: e
       }, "disable-risky-perms"),
-      enabled: 0 === (0, a.R)(e).length
+      enabled: 0 === (0, s.R)(e).length
     }]
   }
 }

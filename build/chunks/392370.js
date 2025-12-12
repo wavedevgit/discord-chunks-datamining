@@ -7,7 +7,7 @@ require.d(exports, {
 }), require("./388685.js"), require("./539854.js"), require("./35282.js"), require("./472816.js"), require("./794429.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk373793 = require("./373793.js"),
   Chunk288385 = require("./288385.js"),
   Chunk442837 = require("./442837.js"),
@@ -31,13 +31,13 @@ function S(e) {
     context: t,
     onlyWithCommands: n,
     includeBuiltIn: i,
-    allowFetch: a = true,
-    includeEmbeddedApps: o,
+    allowFetch: o = true,
+    includeEmbeddedApps: a,
     includeNonEmbeddedApps: s
-  } = e, l = "channel" === t.type ? t.channel : true, u = (0, p.Hs)(l, [c.yU.CHAT]).hasBaseAccessPermissions, d = (0, f.em)(t, u, a), _ = (0, f.PL)(u, a), m = r.useCallback(e => {
+  } = e, l = "channel" === t.type ? t.channel : true, u = (0, p.Hs)(l, [c.yU.CHAT]).hasBaseAccessPermissions, d = (0, f.em)(t, u, o), _ = (0, f.PL)(u, o), m = r.useCallback(e => {
     let t = e.descriptor.application;
-    return null != t && (!!(o && (0, y.ye)(t)) || null != t && s && !(0, y.ye)(t) && (!n || Object.keys(e.commands).length > 0))
-  }, [o, s, n]), h = [], g = new Set;
+    return null != t && (!!(a && (0, y.ye)(t)) || null != t && s && !(0, y.ye)(t) && (!n || Object.keys(e.commands).length > 0))
+  }, [a, s, n]), h = [], g = new Set;
   if (null != d.result)
     for (let e of Object.values(d.result.sections)) {
       let t = e.descriptor.application;
@@ -58,20 +58,20 @@ function I(e) {
   var t, n;
   let {
     context: i,
-    includeBuiltIn: a = true,
-    allowFetch: o = true
-  } = e, s = (0, f.em)(i, true, o), l = (0, f.PL)(true, o);
+    includeBuiltIn: o = true,
+    allowFetch: a = true
+  } = e, s = (0, f.em)(i, true, a), l = (0, f.PL)(true, a);
   return r.useMemo(() => {
-    var e, t, n, r, o;
+    var e, t, n, r, a;
     let c = null != (n = null == (e = s.result) ? true : e.sections) ? n : {},
       u = null != (r = null == (t = l.result) ? true : t.sections) ? r : {},
       d = [...Object.keys(c), ...Object.keys(u).filter(e => !(e in c))];
-    a && d.push(O.bi.BUILT_IN);
+    o && d.push(O.bi.BUILT_IN);
     let p = [],
       _ = {};
     for (let e of d) {
       let t = (0, f.If)(i, e),
-        n = null != (o = t.sectionCommands) ? o : [];
+        n = null != (a = t.sectionCommands) ? a : [];
       p.push(...n), n.forEach(e => {
         null != t.descriptor && (_[e.id] = t.descriptor)
       })
@@ -81,7 +81,7 @@ function I(e) {
       commandSectionMap: _,
       loading: true === s.fetchState.fetching || true === l.fetchState.fetching
     }
-  }, [i, a, s.fetchState.fetching, null == (t = s.result) ? true : t.sections, l.fetchState.fetching, null == (n = l.result) ? true : n.sections])
+  }, [i, o, s.fetchState.fetching, null == (t = s.result) ? true : t.sections, l.fetchState.fetching, null == (n = l.result) ? true : n.sections])
 }
 
 function T(e) {
@@ -90,14 +90,14 @@ function T(e) {
     let {
       context: r,
       userId: i,
-      roleIds: a,
-      isImpersonating: o
+      roleIds: o,
+      isImpersonating: a
     } = t, {
       descriptor: s,
       sectionCommands: l,
       isGuildInstalled: c,
       isUserInstalled: u
-    } = (0, f.If)(e, n.id), d = (null == r ? true : r.guild_id) != null ? _.ML(null == s ? true : s.permissions, r.guild_id, i, a, o) : null, p = (null == r ? true : r.guild_id) != null ? _.ZJ(null == s ? true : s.permissions, r, r.guild_id) : null;
+    } = (0, f.If)(e, n.id), d = (null == r ? true : r.guild_id) != null ? _.ML(null == s ? true : s.permissions, r.guild_id, i, o, a) : null, p = (null == r ? true : r.guild_id) != null ? _.ZJ(null == s ? true : s.permissions, r, r.guild_id) : null;
     return null == l || !(l.length > 0) || l.some(e => _.Ft(e, t, {
       applicationAllowedForUser: d,
       applicationAllowedForChannel: p,
@@ -153,8 +153,8 @@ function x(e) {
   return r => {
     let {
       context: i,
-      userId: a,
-      roleIds: o,
+      userId: o,
+      roleIds: a,
       isImpersonating: s
     } = t;
     if (!(r.applicationId in n)) {
@@ -162,7 +162,7 @@ function x(e) {
         descriptor: t,
         isGuildInstalled: l,
         isUserInstalled: c
-      } = (0, f.If)(e, r.applicationId), u = (null == i ? true : i.guild_id) != null ? _.ML(null == t ? true : t.permissions, i.guild_id, a, o, s) : null, d = (null == i ? true : i.guild_id) != null ? _.ZJ(null == t ? true : t.permissions, i, i.guild_id) : null;
+      } = (0, f.If)(e, r.applicationId), u = (null == i ? true : i.guild_id) != null ? _.ML(null == t ? true : t.permissions, i.guild_id, o, a, s) : null, d = (null == i ? true : i.guild_id) != null ? _.ZJ(null == t ? true : t.permissions, i, i.guild_id) : null;
       n[r.applicationId] = {
         descriptor: t,
         applicationAllowedForUser: u,
@@ -265,7 +265,7 @@ function V(e) {
     context: t,
     query: n,
     commandLimit: i,
-    applicationLimit: o,
+    applicationLimit: a,
     searchesCommands: s = true,
     searchesBots: l = true,
     searchesActivities: c = true
@@ -298,7 +298,7 @@ function V(e) {
   }) : [], [s, d, i, t, n]), g = r.useMemo(() => {
     if (0 === h.length) return [];
     let e = new Map(_.map(e => [e.id, e]));
-    return a().compact(h.map(t => {
+    return o().compact(h.map(t => {
       var n;
       let r = e.get(t.applicationId);
       if (null == r) return null;
@@ -333,12 +333,12 @@ function V(e) {
       }))
     } else l && (e = _);
     return (0, E.N)(e, {
-      limit: o,
+      limit: a,
       filterPredicates: [T(t)],
       bucketPredicates: C(n),
       sortComparers: [w, D]
     })
-  }, [l, c, o, t, n, _, m]), y = g.length > 0, O = b.length > 0, A = !y && !O;
+  }, [l, c, a, t, n, _, m]), y = g.length > 0, O = b.length > 0, A = !y && !O;
   return {
     commandResults: g,
     hasCommandResults: y,
@@ -354,7 +354,7 @@ function H(e) {
     context: t,
     query: n,
     fetches: i = true,
-    pageLimit: a = 1 / 0,
+    pageLimit: o = 1 / 0,
     entrypoint: c
   } = e;
   n.startsWith("".concat(v.GI)) && (n = n.substring(1));
@@ -373,7 +373,7 @@ function H(e) {
         query: n,
         guildId: d,
         page: f,
-        integrationType: o.Y.USER_INSTALL,
+        integrationType: a.Y.USER_INSTALL,
         minUserInstallCommandCount: 1,
         excludeAppsWithCustomInstallUrl: true,
         excludeNonEmbeddedApps: u,
@@ -384,7 +384,7 @@ function H(e) {
         query: n,
         guildId: d,
         page: f,
-        integrationType: o.Y.USER_INSTALL,
+        integrationType: a.Y.USER_INSTALL,
         minUserInstallCommandCount: 1,
         excludeAppsWithCustomInstallUrl: true,
         excludeNonEmbeddedApps: u,
@@ -400,7 +400,7 @@ function H(e) {
       query: n,
       guildId: d,
       page: t + 1,
-      integrationType: o.Y.USER_INSTALL,
+      integrationType: a.Y.USER_INSTALL,
       minUserInstallCommandCount: 1,
       excludeAppsWithCustomInstallUrl: true,
       excludeNonEmbeddedApps: u,
@@ -409,8 +409,8 @@ function H(e) {
     })) ? true : r.results) ? i : []
   }), [m, d, n, f, u]), O = r.useCallback(() => {
     let e = y.length;
-    m === g.M.FETCHED && e === _.current && e > 0 && e < E && e < a && y[e - 1].length > 0 && (_.current++, p(e => e + 1))
-  }, [m, a, y, E]), S = r.useCallback(e => {
+    m === g.M.FETCHED && e === _.current && e > 0 && e < E && e < o && y[e - 1].length > 0 && (_.current++, p(e => e + 1))
+  }, [m, o, y, E]), S = r.useCallback(e => {
     let {
       query: t,
       page: n,
@@ -421,7 +421,7 @@ function H(e) {
       guildId: r,
       options: {
         page: n,
-        integrationType: o.Y.USER_INSTALL,
+        integrationType: a.Y.USER_INSTALL,
         minUserInstallCommandCount: 1,
         excludeAppsWithCustomInstallUrl: true,
         excludeNonEmbeddedApps: u,

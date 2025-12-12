@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,14 +17,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -55,7 +55,7 @@ let c = new(require("./710845.js")).Z("MFAPlayground"),
       component: function(e) {
         let {
           hasPassword: t,
-          hasTotp: a,
+          hasTotp: o,
           hasSms: s,
           hasWebauthn: u,
           hasBackup: d,
@@ -72,7 +72,7 @@ let c = new(require("./710845.js")).Z("MFAPlayground"),
               userVerification: "preferred"
             }
           })
-        }), a && p.push({
+        }), o && p.push({
           type: "totp"
         }), s && p.push({
           type: "sms"
@@ -105,8 +105,8 @@ let c = new(require("./710845.js")).Z("MFAPlayground"),
               (0, i.ZDy)(async () => {
                 let {
                   MFAModal: i
-                } = await Promise.all([n.e("52030"), n.e("3040")]).then(n.bind(n, 124860));
-                return n => (0, r.jsx)(i, l(o({}, n), {
+                } = await Promise.all([n.e("52030"), n.e("45353")]).then(n.bind(n, 124860));
+                return n => (0, r.jsx)(i, l(a({}, n), {
                   finish: t,
                   mfaChallenge: e
                 }))

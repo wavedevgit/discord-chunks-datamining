@@ -18,10 +18,10 @@ let i = function() {
   } : true
 }();
 
-function a(e) {
+function o(e) {
   if (!e) throw Error("BigInt unavailable, see https://github.com/timostamm/protobuf-ts/blob/v1.0.8/MANUAL.md#bigint-support")
 }
-let o = /^-?[0-9]+$/,
+let a = /^-?[0-9]+$/,
   s = 0x100000000;
 class l {
   constructor(e, t) {
@@ -54,10 +54,10 @@ class c extends l {
     } else switch (typeof e) {
       case "string":
         if ("0" == e) return this.ZERO;
-        if (e = e.trim(), !o.test(e)) throw Error("string is no integer");
-        let [t, n, a] = (0, r.IL)(e);
+        if (e = e.trim(), !a.test(e)) throw Error("string is no integer");
+        let [t, n, o] = (0, r.IL)(e);
         if (t) throw Error("signed value");
-        return new c(n, a);
+        return new c(n, o);
       case "number":
         if (0 == e) return this.ZERO;
         if (!Number.isSafeInteger(e)) throw Error("number is no integer");
@@ -70,7 +70,7 @@ class c extends l {
     return i ? this.toBigInt().toString() : (0, Chunk825842.gn)(this.lo, this.hi)
   }
   toBigInt() {
-    return a(i), i.V.setInt32(0, this.lo, true), i.V.setInt32(4, this.hi, true), i.V.getBigUint64(0, true)
+    return o(i), i.V.setInt32(0, this.lo, true), i.V.setInt32(4, this.hi, true), i.V.getBigUint64(0, true)
   }
 }
 c.ZERO = new c(0, 0);
@@ -92,8 +92,8 @@ class u extends l {
     } else switch (typeof e) {
       case "string":
         if ("0" == e) return this.ZERO;
-        if (e = e.trim(), !o.test(e)) throw Error("string is no integer");
-        let [t, n, a] = (0, r.IL)(e), l = new u(n, a);
+        if (e = e.trim(), !a.test(e)) throw Error("string is no integer");
+        let [t, n, o] = (0, r.IL)(e), l = new u(n, o);
         return t ? l.negate() : l;
       case "number":
         if (0 == e) return this.ZERO;
@@ -119,7 +119,7 @@ class u extends l {
     return (0, Chunk825842.gn)(this.lo, this.hi)
   }
   toBigInt() {
-    return a(i), i.V.setInt32(0, this.lo, true), i.V.setInt32(4, this.hi, true), i.V.getBigInt64(0, true)
+    return o(i), i.V.setInt32(0, this.lo, true), i.V.setInt32(4, this.hi, true), i.V.getBigInt64(0, true)
   }
 }
 u.ZERO = new u(0, 0)

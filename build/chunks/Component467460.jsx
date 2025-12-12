@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk774078 = require("./774078.js"),
   Chunk266454 = require("./266454.js"),
   Chunk533246 = require("./533246.js"),
-  Chunk638893 = require("./638893.js"),
+  Chunk197155 = require("./197155.js"),
   Chunk476398 = require("./476398.js");
 let p = e => {
     let {
@@ -48,12 +48,12 @@ let p = e => {
       hours: p,
       minutes: g,
       seconds: h
-    } = (0, s.Z)(Date.parse(t), 1e3), m = c > 0 ? [c, p, g] : p > 0 ? [p, g, h] : [g, h], b = (0, o.zu)(i.z.NITRO_TAB_BADGE_OFFER_REMINDER);
+    } = (0, s.Z)(Date.parse(t), 1e3), m = c > 0 ? [c, p, g] : p > 0 ? [p, g, h] : [g, h], _ = (0, o.zu)(i.z.NITRO_TAB_BADGE_OFFER_REMINDER);
     return (0, r.jsx)(l.u, {
       text: n,
       position: "right",
       children: (0, r.jsxs)("div", {
-        children: [!b && (0, r.jsx)("img", {
+        children: [!_ && (0, r.jsx)("img", {
           src: d,
           alt: "",
           className: u.gradientCircles

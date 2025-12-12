@@ -32,7 +32,7 @@ i(require("./170032.js"), exports), i(require("./446320.js"), exports), i(requir
       let t = e.split(".").join("").toUpperCase();
       return "7Z" === t ? `_${t}` : t
     }))]) {
-    if (!Object.prototype.hasOwnProperty.call(a.FileTypes, e)) throw TypeError(`Type \`${e.toLowerCase()}\` is not supported. Please make sure that \`types\` list conatins only supported files`);
+    if (!Object.prototype.hasOwnProperty.call(o.FileTypes, e)) throw TypeError(`Type \`${e.toLowerCase()}\` is not supported. Please make sure that \`types\` list conatins only supported files`);
     i.push(e)
   }
   if (n && Object.prototype.hasOwnProperty.call(n, "chunkSize") && (null != (r = null == n ? true : n.chunkSize) ? r : 0) <= 0) throw RangeError("chunkSize must be bigger than zero");
@@ -43,16 +43,16 @@ i(require("./170032.js"), exports), i(require("./446320.js"), exports), i(requir
   let l = [],
     c = [];
   for (let e of i) {
-    let t = a.FileTypes.getSignaturesByName(e);
-    l = l.concat(t), a.FILE_TYPES_REQUIRED_ADDITIONAL_CHECK.includes(e.toLowerCase()) && c.push(a.FileTypes.getInfoByName(e))
+    let t = o.FileTypes.getSignaturesByName(e);
+    l = l.concat(t), o.FILE_TYPES_REQUIRED_ADDITIONAL_CHECK.includes(e.toLowerCase()) && c.push(o.FileTypes.getInfoByName(e))
   }
-  let u = (0, o.getFileChunk)(e, (null == n ? true : n.chunkSize) || 64),
-    d = a.FileTypes.detectSignature(u, l);
+  let u = (0, a.getFileChunk)(e, (null == n ? true : n.chunkSize) || 64),
+    d = o.FileTypes.detectSignature(u, l);
   if (!d) returnfalse;
   if (c.length > 0) {
     let e = c.filter(e => e.signatures.includes(d));
     if (e.length > 0) {
-      let t = a.FileTypes.detectTypeByAdditionalCheck(u, e);
+      let t = o.FileTypes.detectTypeByAdditionalCheck(u, e);
       return !!t && i.some(e => e.toLowerCase() === t)
     }
   }

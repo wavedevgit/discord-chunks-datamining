@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk689079 = require("./689079.js"),
-  Chunk143105 = require("./143105.js");
+  Chunk964149 = require("./964149.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -38,8 +38,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -47,16 +47,16 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let p = e => {
   switch (e.id) {
     case s.bi.BUILT_IN:
-      return o.SsZ;
+      return a.SsZ;
     case s.bi.FRECENCY:
-      return o.T39;
+      return a.T39;
     default:
       return
   }
@@ -67,20 +67,20 @@ function _(e) {
     section: t,
     className: n,
     width: i,
-    height: o,
+    height: a,
     padding: s,
     isSelected: c,
     selectable: f = false
   } = e, _ = d(e, ["section", "className", "width", "height", "padding", "isSelected", "selectable"]);
   let m = p(t);
   return (0, r.jsx)("div", {
-    className: a()(l.wrapper, n, {
+    className: o()(l.wrapper, n, {
       [l.selectable]: f,
       [l.selected]: f && c
     }),
     style: {
       width: i,
-      height: o,
+      height: a,
       padding: null != s ? s : 0
     },
     children: null != m ? (0, r.jsx)(m, u({
@@ -88,7 +88,7 @@ function _(e) {
       color: "currentColor",
       size: "custom",
       width: i,
-      height: o
+      height: a
     }, _)) : null
   })
 }

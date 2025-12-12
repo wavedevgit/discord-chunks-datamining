@@ -27,7 +27,7 @@ function m(e) {
   }), m = (0, i.Wu)([c.Z], () => {
     var e;
     return (null == t ? true : t.userId) == null ? [] : null != (e = c.Z.getMutualGuilds(t.userId)) ? e : []
-  }), h = (0, i.Wu)([d.Z], () => (null == t ? true : t.userId) == null ? [] : d.Z.getActivities(t.userId)), g = (0, i.e7)([a.Z], () => (null == t ? true : t.userId) != null ? a.Z.getUserOutbox(t.userId) : null), E = r.useMemo(() => null != m && m.some(e => e.guild.id === _.ON), [m]), b = r.useMemo(() => {
+  }), h = (0, i.Wu)([d.Z], () => (null == t ? true : t.userId) == null ? [] : d.Z.getActivities(t.userId)), g = (0, i.e7)([o.Z], () => (null == t ? true : t.userId) != null ? o.Z.getUserOutbox(t.userId) : null), E = r.useMemo(() => null != m && m.some(e => e.guild.id === _.ON), [m]), b = r.useMemo(() => {
     if ((null == t ? true : t.widgets) == null) returnfalse;
     let e = new Set(null == t ? true : t.widgets.map(e => e instanceof l.zy ? e.games.map(e => e.applicationId) : e instanceof s.q ? e.applicationId : true).filter(f.lm).flat());
     for (let t of _.RI)
@@ -35,7 +35,7 @@ function m(e) {
     returnfalse
   }, [null == t ? true : t.widgets]), y = r.useMemo(() => null != h && h.some(e => null != e.application_id && _.RI.has(e.application_id)), [h]), O = r.useMemo(() => {
     var e;
-    return null != (e = null == g ? true : g.entries.some(e => null != e && (0, o.dX)(e) && _.RI.has(e.extra.application_id))) && e
+    return null != (e = null == g ? true : g.entries.some(e => null != e && (0, a.dX)(e) && _.RI.has(e.extra.application_id))) && e
   }, [g]);
   return {
     isDisplayProfileSocialLayerStorefrontEligible: (null == t ? true : t.application) == null && u && (E || b || y || O),

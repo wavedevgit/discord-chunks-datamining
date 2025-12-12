@@ -38,12 +38,12 @@ function N(e) {
   } = e, {
     invite: P,
     inviteError: R
-  } = (0, a.cj)([h.Z], () => ({
+  } = (0, o.cj)([h.Z], () => ({
     invite: h.Z.getInvite(t),
     inviteError: h.Z.getInviteError(t)
   }), [t]), w = null == P;
   i.useEffect(() => {
-    w && o.ZP.resolveInvite(t)
+    w && a.ZP.resolveInvite(t)
   }, [t, w]);
   let D = null != P ? P : {
       state: A.r2o.RESOLVING,
@@ -52,14 +52,14 @@ function N(e) {
     {
       analyticsLocations: x
     } = (0, l.ZP)(),
-    L = (0, a.e7)([m.Z], () => (null == P ? true : P.guild) != null ? m.Z.getGuild(P.guild.id) : null, [P]),
-    j = (0, a.e7)([_.default], () => _.default.getId()),
-    M = (0, a.e7)([u.ZP], () => {
+    L = (0, o.e7)([m.Z], () => (null == P ? true : P.guild) != null ? m.Z.getGuild(P.guild.id) : null, [P]),
+    j = (0, o.e7)([_.default], () => _.default.getId()),
+    M = (0, o.e7)([u.ZP], () => {
       var e;
       return u.ZP.getGuildScheduledEvent(null == (e = D.guild_scheduled_event) ? true : e.id)
     }, [D]),
     k = () => {
-      null != D.channel && o.ZP.transitionToInviteSync(D)
+      null != D.channel && a.ZP.transitionToInviteSync(D)
     },
     U = () => {
       let e = null == L && (null == P ? true : P.guild) != null ? g.Qs(P.guild) : L;
@@ -67,7 +67,7 @@ function N(e) {
         guild: e,
         isMember: null != L,
         analyticsLocations: x
-      }) === p.e.PROCEED && o.ZP.acceptInviteAndTransitionToInviteChannel({
+      }) === p.e.PROCEED && a.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: t,
         context: N("Invite Button Embed")
       })

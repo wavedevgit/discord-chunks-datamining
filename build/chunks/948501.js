@@ -3,7 +3,7 @@
 let Chunk889658 = require("./889658.js"),
   Chunk721919 = require("./721919.js"),
   {
-    ANY: a
+    ANY: o
   } = Chunk721919,
   Chunk839525 = require("./839525.js"),
   Chunk15496 = require("./15496.js"),
@@ -25,10 +25,10 @@ let Chunk889658 = require("./889658.js"),
   d = (e, t, n) => {
     let r, i, l, d, _, m, h;
     if (e === t) returntrue;
-    if (1 === e.length && e[0].semver === a)
-      if (1 === t.length && t[0].semver === a) returntrue;
+    if (1 === e.length && e[0].semver === o)
+      if (1 === t.length && t[0].semver === o) returntrue;
       else e = n.includePrerelease ? c : u;
-    if (1 === t.length && t[0].semver === a)
+    if (1 === t.length && t[0].semver === o)
       if (n.includePrerelease) returntrue;
       else t = u;
     let g = new Set;
@@ -36,9 +36,9 @@ let Chunk889658 = require("./889658.js"),
     if (g.size > 1) return null;
     if (r && i && ((l = s(r.semver, i.semver, n)) > 0 || 0 === l && (">=" !== r.operator || "<=" !== i.operator))) return null;
     for (let e of g) {
-      if (r && !o(e, String(r), n) || i && !o(e, String(i), n)) return null;
+      if (r && !a(e, String(r), n) || i && !a(e, String(i), n)) return null;
       for (let r of t)
-        if (!o(e, String(r), n)) returnfalse;
+        if (!a(e, String(r), n)) returnfalse;
       returntrue
     }
     let E = !!i && !n.includePrerelease && !!i.semver.prerelease.length && i.semver,
@@ -47,12 +47,12 @@ let Chunk889658 = require("./889658.js"),
       if (h = h || ">" === e.operator || ">=" === e.operator, m = m || "<" === e.operator || "<=" === e.operator, r) {
         if (b && e.semver.prerelease && e.semver.prerelease.length && e.semver.major === b.major && e.semver.minor === b.minor && e.semver.patch === b.patch && (b = false), ">" === e.operator || ">=" === e.operator) {
           if ((d = f(r, e, n)) === e && d !== r) returnfalse
-        } else if (">=" === r.operator && !o(r.semver, String(e), n)) returnfalse
+        } else if (">=" === r.operator && !a(r.semver, String(e), n)) returnfalse
       }
       if (i) {
         if (E && e.semver.prerelease && e.semver.prerelease.length && e.semver.major === E.major && e.semver.minor === E.minor && e.semver.patch === E.patch && (E = false), "<" === e.operator || "<=" === e.operator) {
           if ((_ = p(i, e, n)) === e && _ !== i) returnfalse
-        } else if ("<=" === i.operator && !o(i.semver, String(e), n)) returnfalse
+        } else if ("<=" === i.operator && !a(i.semver, String(e), n)) returnfalse
       }
       if (!e.operator && (i || r) && 0 !== l) returnfalse
     }

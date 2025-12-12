@@ -25,12 +25,12 @@ u && Chunk566817 && Chunk143988 ? Chunk179560(f, function(e) {
   if (Symbol.toStringTag in t && l) {
     var n = l(t),
       r = s(n, Symbol.toStringTag);
-    !r && n && (r = s(l(n), Symbol.toStringTag)), m["$" + e] = a(r.get)
+    !r && n && (r = s(l(n), Symbol.toStringTag)), m["$" + e] = o(r.get)
   }
 }) : Chunk179560(f, function(e) {
   var t = new d[e],
     n = t.slice || t.set;
-  n && (m["$" + e] = a(n))
+  n && (m["$" + e] = o(n))
 });
 var h = function(e) {
     var t = false;

@@ -102,7 +102,7 @@ function X(e) {
 }
 
 function J(e) {
-  var t, n, r, i, a, o, s, l;
+  var t, n, r, i, o, a, s, l;
   let {
     location: u,
     applicationId: d,
@@ -134,14 +134,14 @@ function J(e) {
       userIds: new Set(C),
       participants: _,
       referrerId: null != (i = null == G ? true : G.referrerId) ? i : null == F ? true : F.referrerId,
-      customId: null != (a = null == G ? true : G.customId) ? a : null == F ? true : F.customId,
+      customId: null != (o = null == G ? true : G.customId) ? o : null == F ? true : F.customId,
       proxyTicket: m
     };
   R && null != G && D.set(G.applicationId, A(T({}, G, B), {
-    proxyTicket: null != (o = B.proxyTicket) ? o : G.proxyTicket
+    proxyTicket: null != (a = B.proxyTicket) ? a : G.proxyTicket
   }));
   let V = !j;
-  null != G && u.id === G.location.id && d === G.applicationId && (!R && Array.from(G.userIds).some(e => e === N) || V) ? ee(G) : R && (null == G || G.applicationId !== d || G.location.id !== u.id) && (w === c.default.getSessionId() && ea({
+  null != G && u.id === G.location.id && d === G.applicationId && (!R && Array.from(G.userIds).some(e => e === N) || V) ? ee(G) : R && (null == G || G.applicationId !== d || G.location.id !== u.id) && (w === c.default.getSessionId() && eo({
     applicationId: d,
     launchId: f,
     compositeInstanceId: p,
@@ -174,14 +174,14 @@ function $(e) {
       application_id: n,
       launch_id: r,
       composite_instance_id: i,
-      participants: a
+      participants: o
     } = e;
     J({
       location: t,
       applicationId: n,
       launchId: r,
       compositeInstanceId: i,
-      participants: a.map(e => ({
+      participants: o.map(e => ({
         userId: e.user_id,
         sessionId: e.session_id,
         nonce: e.nonce
@@ -216,9 +216,9 @@ function er(e) {
     channel: r
   } = e, i = null != (t = L.get(r.id)) ? t : [];
   L.set(r.id, []);
-  let a = X(r.guild_id),
-    o = (null != (n = x.get(a)) ? n : []).filter(e => (0, E.p)(e.location) !== r.id);
-  x.set(a, o), i.forEach(e => {
+  let o = X(r.guild_id),
+    a = (null != (n = x.get(o)) ? n : []).filter(e => (0, E.p)(e.location) !== r.id);
+  x.set(o, a), i.forEach(e => {
     M.delete(e.location.id)
   }), j.set(r.id, [])
 }
@@ -229,14 +229,14 @@ function ei(e) {
     launchId: n,
     compositeInstanceId: r,
     location: i,
-    participants: a
-  } = e, o = (0, E.p)(i), s = U.get(k(null != o ? o : null, t));
+    participants: o
+  } = e, a = (0, E.p)(i), s = U.get(k(null != a ? a : null, t));
   J({
     location: i,
     applicationId: t,
     launchId: n,
     compositeInstanceId: r,
-    participants: a.map(e => ({
+    participants: o.map(e => ({
       userId: e.user_id,
       sessionId: e.session_id,
       nonce: e.nonce
@@ -245,11 +245,11 @@ function ei(e) {
   })
 }
 
-function ea(e) {
+function eo(e) {
   var t, n;
   let {
     applicationId: i,
-    launchId: a,
+    launchId: o,
     compositeInstanceId: s,
     location: l,
     participants: _,
@@ -272,7 +272,7 @@ function ea(e) {
     userIds: new Set(_.map(e => e.userId)),
     participants: _,
     connectedSince: Date.now(),
-    launchId: a,
+    launchId: o,
     compositeInstanceId: s,
     location: l,
     referrerId: O,
@@ -287,14 +287,14 @@ function ea(e) {
     participants: _,
     embeddedActivity: x,
     inviterUserId: T
-  }), (0, m.R)() ? (z = v.Ez.ACTIVITY_POPOUT_WINDOW, o.Z.wait(() => {
-    o.Z.dispatch({
+  }), (0, m.R)() ? (z = v.Ez.ACTIVITY_POPOUT_WINDOW, a.Z.wait(() => {
+    a.Z.dispatch({
       type: "ACTIVITY_POPOUT_WINDOW_OPEN"
     })
   })) : z = P !== d.Z.getChannelId() || (0, y.Z)(P) ? v.Ez.PIP : v.Ez.PANEL, K.set(eA(l.id, i), Date.now())
 }
 
-function eo(e) {
+function ea(e) {
   let {
     applicationId: t
   } = e, n = D.get(t);
@@ -356,15 +356,15 @@ function ef(e) {
   } = e, r = (0, b.Z)((0, _.getOS)()), i = t.reduce((e, t) => {
     let i = t.client_platform_config[r];
     if (null == i.label_from || null == i.label_until) return e;
-    let a = {
+    let o = {
         fromDate: i.label_from,
         untilDate: i.label_until
       },
-      o = new Date(i.label_from).getTime(),
+      a = new Date(i.label_from).getTime(),
       l = new Date(i.label_until).getTime();
-    return o > n || l < n || Object.values(s.eR).filter(e => !i.omit_badge_from_surfaces.includes(e)).forEach(t => {
+    return a > n || l < n || Object.values(s.eR).filter(e => !i.omit_badge_from_surfaces.includes(e)).forEach(t => {
       let n = e[t];
-      (null == n || new Date(n.fromDate).getTime() < o) && (e[t] = a)
+      (null == n || new Date(n.fromDate).getTime() < a) && (e[t] = o)
     }), e
   }, {});
   N.dateRangesForSurfaces = i
@@ -392,13 +392,13 @@ function e_(e) {
     componentId: n,
     commandOrigin: r,
     launchParams: i,
-    channelId: a,
-    inviterUserId: o
+    channelId: o,
+    inviterUserId: a
   } = e;
-  U.set(k(a, t), {
+  U.set(k(o, t), {
     isLaunching: true,
     componentId: n,
-    inviterUserId: o,
+    inviterUserId: a,
     launchParams: i
   }), q = r === l.bB.APP_DMS_ENTRY_POINT_COMMAND_BUTTON ? v.MI.NO_CHAT : v.MI.RESIZABLE
 }
@@ -408,8 +408,8 @@ function em(e) {
     applicationId: t,
     channelId: n,
     proxyTicket: r
-  } = e, i = k(n, t), a = U.get(i);
-  null != a && U.set(i, A(T({}, a), {
+  } = e, i = k(n, t), o = U.get(i);
+  null != o && U.set(i, A(T({}, o), {
     proxyTicket: r
   }))
 }
@@ -585,8 +585,8 @@ class eP extends(i = Chunk442837.ZP.PersistedStore) {
       i = null != (t = F.get(r)) ? t : {
         isFetching: false
       },
-      a = Date.now() - (null != (n = null == i ? true : i.lastFetchTimestampMs) ? n : 0) > W;
-    return !(null == i ? true : i.isFetching) && a
+      o = Date.now() - (null != (n = null == i ? true : i.lastFetchTimestampMs) ? n : 0) > W;
+    return !(null == i ? true : i.isFetching) && o
   }
   getOrientationLockStateForApp(e) {
     return B.get(e)
@@ -675,7 +675,7 @@ let eR = new eP(Chunk570140.Z, {
     EMBEDDED_ACTIVITY_LAUNCH_SUCCESS: eE,
     EMBEDDED_ACTIVITY_LAUNCH_FAIL: eb,
     EMBEDDED_ACTIVITY_LAUNCH_CANCEL: ey,
-    EMBEDDED_ACTIVITY_CLOSE: eo,
+    EMBEDDED_ACTIVITY_CLOSE: ea,
     EMBEDDED_ACTIVITY_UPDATE_POPOUT_WINDOW_LAYOUT: es,
     EMBEDDED_ACTIVITY_UPDATE_V2: ei,
     LOCAL_ACTIVITY_UPDATE: el,

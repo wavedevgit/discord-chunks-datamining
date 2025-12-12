@@ -52,8 +52,8 @@ class r {
     for (let t of e) n(t);
     let r = null,
       i = 0,
-      a = 0;
-    for (let [e, t] of this.keyMap) r ? (r.nextKey = e, t.prevKey = r.key) : (this.firstKey = e, t.prevKey = true), "item" === t.type && (t.index = i++), ("section" === t.type || "item" === t.type) && a++, (r = t).nextKey = true;
-    this._size = a, this.lastKey = null != (t = null == r ? true : r.key) ? t : null
+      o = 0;
+    for (let [e, t] of this.keyMap) r ? (r.nextKey = e, t.prevKey = r.key) : (this.firstKey = e, t.prevKey = true), "item" === t.type && (t.index = i++), ("section" === t.type || "item" === t.type) && o++, (r = t).nextKey = true;
+    this._size = o, this.lastKey = null != (t = null == r ? true : r.key) ? t : null
   }
 }

@@ -4,13 +4,13 @@
 require.d(exports, {
   S5: () => l,
   Wk: () => s,
-  rR: () => o,
+  rR: () => a,
   uX: () => c
 });
 var Chunk296009 = require("./296009.js"),
   Chunk812206 = require("./812206.js"),
   Chunk388032 = require("./388032.jsx");
-let o = [Chunk296009.l.APPLICATION, Chunk296009.l.FAVORITE_GAMES, Chunk296009.l.PLAYED_GAMES, Chunk296009.l.CURRENT_GAMES, Chunk296009.l.WANT_TO_PLAY_GAMES],
+let a = [Chunk296009.l.APPLICATION, Chunk296009.l.FAVORITE_GAMES, Chunk296009.l.PLAYED_GAMES, Chunk296009.l.CURRENT_GAMES, Chunk296009.l.WANT_TO_PLAY_GAMES],
   s = {
     [Chunk296009.l.FAVORITE_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.sUQar8),
     [Chunk296009.l.CURRENT_GAMES]: () => Chunk388032.intl.string(Chunk388032.t.SqNnus),

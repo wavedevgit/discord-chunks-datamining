@@ -12,10 +12,10 @@ var Chunk442837 = require("./442837.js"),
 
 function s(e) {
   switch (e) {
-    case a.mX.REDUCED_MOTION:
-      return o.intl.format(o.t["1dT9V4"], {});
-    case a.mX.REDUCED_MOTION_STICKERS:
-      return o.intl.string(o.t["2ExvRu"]);
+    case o.mX.REDUCED_MOTION:
+      return a.intl.format(a.t["1dT9V4"], {});
+    case o.mX.REDUCED_MOTION_STICKERS:
+      return a.intl.string(a.t["2ExvRu"]);
     default:
       return
   }

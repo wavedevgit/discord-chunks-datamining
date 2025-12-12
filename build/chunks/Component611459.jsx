@@ -18,7 +18,7 @@ function l(e) {
     source: l,
     onAction: c
   } = e;
-  return null != t && (0, a.Z)(t, s.xjy.PLAY) && (0, o.Z)(t) ? (0, r.jsx)(i.Z, {
+  return null != t && (0, o.Z)(t, s.xjy.PLAY) && (0, a.Z)(t) ? (0, r.jsx)(i.Z, {
     fullWidth: true,
     activity: t,
     user: n,

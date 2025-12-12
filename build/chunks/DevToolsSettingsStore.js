@@ -44,11 +44,11 @@ let c = 460,
   };
 
 function d(e) {
-  o.Z.isDeveloper && (u = l({}, u, e.settings))
+  a.Z.isDeveloper && (u = l({}, u, e.settings))
 }
 class f extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
-    u = null != e ? e : u, a.Z.actionLogger.persist = o.Z.isDeveloper
+    u = null != e ? e : u, o.Z.actionLogger.persist = a.Z.isDeveloper
   }
   getUserAgnosticState() {
     return u

@@ -3,16 +3,16 @@
 "use strict";
 require.d(exports, {
   A: () => l,
-  O: () => o
+  O: () => a
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk772848 = require("./772848.js"),
-  Chunk83002 = require("./83002.js");
+  Chunk726007 = require("./726007.js");
 
-function o() {
+function a() {
   return (0, Chunk54381.jsx)("svg", {
-    className: Chunk83002.headerWave,
+    className: Chunk726007.headerWave,
     version: "1.1",
     preserveAspectRatio: "none",
     xmlns: "http://www.w3.org/2000/svg",
@@ -33,7 +33,7 @@ let s = (0, Chunk772848.Z)();
 
 function l() {
   return (0, Chunk54381.jsxs)("svg", {
-    className: Chunk83002.bodyWave,
+    className: Chunk726007.bodyWave,
     version: "1.1",
     preserveAspectRatio: "none",
     xmlns: "http://www.w3.org/2000/svg",
@@ -51,13 +51,13 @@ function l() {
       y2: "1689.3361",
       children: [(0, Chunk54381.jsx)("stop", {
         offset: "0",
-        className: Chunk83002.bodyWaveGradientStop1
+        className: Chunk726007.bodyWaveGradientStop1
       }), (0, Chunk54381.jsx)("stop", {
         offset: "0.5",
-        className: Chunk83002.bodyWaveGradientStop2
+        className: Chunk726007.bodyWaveGradientStop2
       }), (0, Chunk54381.jsx)("stop", {
         offset: "1",
-        className: Chunk83002.bodyWaveGradientStop3
+        className: Chunk726007.bodyWaveGradientStop3
       })]
     }), (0, Chunk54381.jsx)("path", {
       style: {

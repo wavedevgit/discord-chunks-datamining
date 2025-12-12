@@ -2,11 +2,11 @@
 /** chunk id: 27955, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T: () => o
+  T: () => a
 });
 var Chunk722733 = require("./722733.js"),
   Chunk751823 = require("./751823.js");
-let a = (0, Chunk722733.Z)({
+let o = (0, Chunk722733.Z)({
   kind: "user",
   name: "2025-11-global-frame-pool-lock",
   defaultConfig: {
@@ -19,7 +19,7 @@ let a = (0, Chunk722733.Z)({
   }
 });
 
-function o(e) {
+function a(e) {
   let {
     location: t,
     disable: n = false
@@ -31,7 +31,7 @@ function o(e) {
     disable: n,
     autoTrackExposure: true
   });
-  return r || n ? a.definition.defaultConfig : a.getConfig({
+  return r || n ? o.definition.defaultConfig : o.getConfig({
     location: t
   })
 }

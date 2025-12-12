@@ -47,14 +47,14 @@ function _(e) {
     id: g,
     username: E,
     bot: b
-  } = t, y = (0, a.e7)([u.default], () => {
+  } = t, y = (0, o.e7)([u.default], () => {
     var e;
     return (null == (e = u.default.getCurrentUser()) ? true : e.id) === g
-  }, [g]), O = (0, l.n)(g), [v, S] = (0, a.Wu)([c.Z], () => [c.Z.isFriend(g), c.Z.isBlocked(g)], [g]), [I, T] = i.useState(false);
+  }, [g]), O = (0, l.n)(g), [v, S] = (0, o.Wu)([c.Z], () => [c.Z.isFriend(g), c.Z.isBlocked(g)], [g]), [I, T] = i.useState(false);
   if (b || y) return null;
 
   function C() {
-    (0, o.ZDy)(async () => {
+    (0, a.ZDy)(async () => {
       let {
         ConfirmModal: e
       } = await Promise.resolve().then(n.bind(n, 793030));
@@ -74,14 +74,14 @@ function _(e) {
         }
       }, t))
     }, {
-      contextKey: null != h ? (0, o.VnL)(h) : true
+      contextKey: null != h ? (0, a.VnL)(h) : true
     })
   }
-  return v ? (0, r.jsx)(o.sNh, {
+  return v ? (0, r.jsx)(a.sNh, {
     id: "remove-friend",
     label: d.intl.string(d.t.cvSt1J),
     action: C
-  }) : (0, r.jsx)(o.sNh, {
+  }) : (0, r.jsx)(a.sNh, {
     id: "add-friend",
     label: I ? d.intl.string(d.t.xMH6vD) : O,
     action: () => {

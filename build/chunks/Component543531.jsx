@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
-  Chunk19102 = require("./19102.js");
+  Chunk602066 = require("./602066.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -40,25 +40,25 @@ let f = "indeterminate";
 function p(e) {
   let t, {
       className: n,
-      percent: a,
+      percent: o,
       size: c = "small",
       foregroundColor: d = s.Z.unsafe_rawColors.BRAND_500.css,
       backgroundColor: p = "var(--interactive-background-active)",
       foregroundGradientColor: _,
       animate: m = true
     } = e,
-    h = null != a ? a : 0;
+    h = null != o ? o : 0;
   return t = null != _ ? {
     background: "linear-gradient(to right, ".concat(_[0], ", ").concat(_[1], ")")
   } : {
     backgroundColor: d
   }, (0, r.jsx)("div", {
-    className: o()(n, l.progress, l[c]),
+    className: a()(n, l.progress, l[c]),
     style: {
       backgroundColor: p
     },
     children: h !== f && "number" == typeof h ? (0, r.jsx)("div", {
-      className: o()(l.progressBar, l[c], {
+      className: a()(l.progressBar, l[c], {
         [l.animating]: m
       }),
       style: u({
@@ -66,12 +66,12 @@ function p(e) {
       }, t)
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: o()(l.indeterminateBar1, l[c], {
+        className: a()(l.indeterminateBar1, l[c], {
           [l.animating]: m
         }),
         style: t
       }), (0, r.jsx)("div", {
-        className: o()(l.indeterminateBar2, l[c], {
+        className: a()(l.indeterminateBar2, l[c], {
           [l.animating]: m
         }),
         style: t

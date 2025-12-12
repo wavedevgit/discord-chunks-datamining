@@ -13,40 +13,40 @@ var Chunk54381 = require("./54381.js"),
   Chunk511540 = require("./511540.js"),
   Chunk828878 = require("./828878.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk881003 = require("./881003.js");
+  Chunk962514 = require("./962514.js");
 
 function p(e) {
   let {
     onUserCodeAccepted: t,
     usePrefilledCode: n
-  } = e, [p, h] = r.useState(() => {
+  } = e, [p, h] = a.useState(() => {
     let {
       user_code: e
     } = o.parse(window.location.search);
     return n && null != e ? e : ""
-  }), x = (0, i.TH)(), g = r.useCallback(() => {
-    (0, c.c$)(x, "user_code_input_unauthorized")
+  }), x = (0, i.TH)(), g = a.useCallback(() => {
+    (0, l.c$)(x, "user_code_input_unauthorized")
   }, [x]), {
-    manualSubmit: b,
-    error: m,
-    submitting: v
-  } = (0, l.c)(p, t, g);
-  return (0, a.jsxs)("div", {
+    manualSubmit: m,
+    error: v,
+    submitting: b
+  } = (0, c.c)(p, t, g);
+  return (0, r.jsxs)("div", {
     className: f.content,
-    children: [(0, a.jsxs)("div", {
+    children: [(0, r.jsxs)("div", {
       className: f.innerContent,
-      children: [(0, a.jsx)(s.Heading, {
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-xl/extrabold",
         className: f.text,
         children: u.intl.string(u.t.KYPNUv)
-      }), (0, a.jsxs)(s.Kqy, {
+      }), (0, r.jsxs)(s.Kqy, {
         gap: 24,
-        children: [(0, a.jsx)(s.Text, {
+        children: [(0, r.jsx)(s.Text, {
           variant: "text-md/medium",
           color: "text-default",
           className: f.text,
           children: u.intl.string(u.t.xRHk7f)
-        }), (0, a.jsx)(s.oil, {
+        }), (0, r.jsx)(s.oil, {
           placeholder: u.intl.formatToPlainString(u.t["0tbz6x"], {
             number: d.A.USER_CODE_LENGTH
           }),
@@ -55,16 +55,16 @@ function p(e) {
           autoFocus: true,
           value: p,
           onChange: h,
-          error: m,
+          error: v,
           fullWidth: true
         })]
       })]
-    }), (0, a.jsx)(s.Button, {
+    }), (0, r.jsx)(s.Button, {
       fullWidth: true,
       variant: "primary",
       text: u.intl.string(u.t["3PatSz"]),
-      onClick: b,
-      loading: v,
+      onClick: m,
+      loading: b,
       disabled: p.length !== d.A.USER_CODE_LENGTH
     })]
   })

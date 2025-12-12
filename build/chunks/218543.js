@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk135273 = require("./135273.js"),
   Chunk586444 = require("./586444.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,14 +16,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -109,7 +109,7 @@ class f {
     return r.Z.mark(this.emoji, "Finish ".concat(this.name), Date.now() - t), this.recordEnd_(), c(), n
   }
   constructor(e, t) {
-    a(this, "emoji", true), a(this, "name", true), a(this, "start_", true), a(this, "startNumImports", true), a(this, "startImportTime", true), a(this, "end_", true), a(this, "endNumImports", true), a(this, "endImportTime", true), this.emoji = e, this.name = t, this.start_ = 0, this.startNumImports = 0, this.startImportTime = 0, this.end_ = 0, this.endNumImports = 0, this.endImportTime = 0
+    o(this, "emoji", true), o(this, "name", true), o(this, "start_", true), o(this, "startNumImports", true), o(this, "startImportTime", true), o(this, "end_", true), o(this, "endNumImports", true), o(this, "endImportTime", true), this.emoji = e, this.name = t, this.start_ = 0, this.startNumImports = 0, this.startImportTime = 0, this.end_ = 0, this.endNumImports = 0, this.endImportTime = 0
   }
 }
 class p {
@@ -138,7 +138,7 @@ class p {
     return d(e, this.time_)
   }
   constructor(e, t, n = false, r = false) {
-    a(this, "emoji", true), a(this, "name", true), a(this, "onlyOnce", true), a(this, "alwaysRecord", true), a(this, "time_", true), a(this, "numImports", true), a(this, "importTime", true), this.emoji = e, this.name = t, this.onlyOnce = n, this.alwaysRecord = r, this.time_ = 0, this.numImports = null, this.importTime = 0
+    o(this, "emoji", true), o(this, "name", true), o(this, "onlyOnce", true), o(this, "alwaysRecord", true), o(this, "time_", true), o(this, "numImports", true), o(this, "importTime", true), this.emoji = e, this.name = t, this.onlyOnce = n, this.alwaysRecord = r, this.time_ = 0, this.numImports = null, this.importTime = 0
   }
 }
 class _ {
@@ -149,12 +149,12 @@ class _ {
     0 === this.time_ && (this.time_ = u())
   }
   constructor() {
-    a(this, "time_", 0)
+    o(this, "time_", 0)
   }
 }
 class m {
   constructor() {
-    a(this, "loadIndex", new f("❗", "Load index.tsx")), a(this, "loadFastConnectNativeModule", new f("\uD83D\uDCBE", "Load fast_connect native module")), a(this, "beginFastConnect", new f("\uD83C\uDF10", "Fast Connect IDENTIFY")), a(this, "loadImports", new f("\uD83C\uDFC3", "Load Imports")), a(this, "init", new f("\uD83C\uDFC3", "Initial Initialization")), a(this, "loadStorage", new f("\uD83D\uDCBE", "Load Storage")), a(this, "parseStorage", new f("\uD83D\uDCBE", "Parse Storage")), a(this, "loadMiniCache", new f("\uD83D\uDCBE", "Load Mini Cache")), a(this, "fetchGuildCache", new f("\uD83D\uDCBE", "Fetch Guild Cache")), a(this, "fetchGuildChannelsCache", new f("\uD83D\uDCBE", "Fetch Initial Guild Channels Cache")), a(this, "loadCachedMessages", new f("\uD83D\uDCBE", "Load Cached Messages")), a(this, "renderApp", new p("\uD83C\uDFA8", "First React Render")), a(this, "renderAppEffect", new p("\uD83C\uDFA8", "First React Render useEffect")), a(this, "firstContentfulPaint", new p("\uD83C\uDFA8", "First Contentful Paint", false, true)), a(this, "renderMessages", new p("\uD83C\uDFA8", "React Render Messages", true)), a(this, "renderMessagesWithCache", new p("\uD83C\uDFA8", "React Render Cached Messages", true)), a(this, "firstRowGenerator", new f("\uD83C\uDFA8", "RowGenerator.generate()")), a(this, "displayMessagesWithCache", new p("\uD83D\uDDA5️", "Display Cached Messages", false, true)), a(this, "firstRenderAfterReadyPayload", new p("\uD83C\uDFA8", "First Render after Ready Payload", true)), a(this, "renderLatestMessages", new p("\uD83C\uDFA8", "React Render Latest Messages")), a(this, "displayLatestMessages", new p("\uD83D\uDDA5️", "Display Latest Messages")), a(this, "initialGuild", new f("\uD83C\uDF10", "Initial Guild")), a(this, "loadLazyCache", new f("\uD83D\uDCBE", "Load Lazy Cache")), a(this, "fetchLazyCache", new f("\uD83D\uDCBE", "Fetch Lazy Cache")), a(this, "parseLazyCache", new f("\uD83D\uDCBE", "Parse Lazy Cache")), a(this, "fetchStaleChannels", new f("\uD83D\uDCBE", "Fetch Stale Channels")), a(this, "deserializeCache", new f("\uD83D\uDCBE", "Deserialize Cache")), a(this, "dispatchLazyCache", new f("\uD83D\uDCBE", "Dispatch Lazy Cache")), a(this, "parseReady", new f("\uD83C\uDF10", "Parse READY")), a(this, "ready", new f("\uD83C\uDF10", "READY")), a(this, "hydrateReady", new f("\uD83C\uDF10", "Hydrate READY")), a(this, "dispatchReady", new f("\uD83C\uDF10", "Dispatch READY")), a(this, "parseReadySupplemental", new f("\uD83C\uDF10", "Parse READY Supplemental")), a(this, "readySupplemental", new f("\uD83C\uDF10", "READY Supplemental")), a(this, "hydrateReadySupplemental", new f("\uD83C\uDF10", "Hydrate READY Supplemental")), a(this, "dispatchReadySupplemental", new f("\uD83C\uDF10", "Dispatch READY Supplemental")), a(this, "fetchMessages", new f("\uD83C\uDF10", "Fetch messages")), a(this, "dispatchMessages", new f("\uD83C\uDF10", "Dispatch messages")), a(this, "imports", {
+    o(this, "loadIndex", new f("❗", "Load index.tsx")), o(this, "loadFastConnectNativeModule", new f("\uD83D\uDCBE", "Load fast_connect native module")), o(this, "beginFastConnect", new f("\uD83C\uDF10", "Fast Connect IDENTIFY")), o(this, "loadImports", new f("\uD83C\uDFC3", "Load Imports")), o(this, "init", new f("\uD83C\uDFC3", "Initial Initialization")), o(this, "loadStorage", new f("\uD83D\uDCBE", "Load Storage")), o(this, "parseStorage", new f("\uD83D\uDCBE", "Parse Storage")), o(this, "loadMiniCache", new f("\uD83D\uDCBE", "Load Mini Cache")), o(this, "fetchGuildCache", new f("\uD83D\uDCBE", "Fetch Guild Cache")), o(this, "fetchGuildChannelsCache", new f("\uD83D\uDCBE", "Fetch Initial Guild Channels Cache")), o(this, "loadCachedMessages", new f("\uD83D\uDCBE", "Load Cached Messages")), o(this, "renderApp", new p("\uD83C\uDFA8", "First React Render")), o(this, "renderAppEffect", new p("\uD83C\uDFA8", "First React Render useEffect")), o(this, "firstContentfulPaint", new p("\uD83C\uDFA8", "First Contentful Paint", false, true)), o(this, "renderMessages", new p("\uD83C\uDFA8", "React Render Messages", true)), o(this, "renderMessagesWithCache", new p("\uD83C\uDFA8", "React Render Cached Messages", true)), o(this, "firstRowGenerator", new f("\uD83C\uDFA8", "RowGenerator.generate()")), o(this, "displayMessagesWithCache", new p("\uD83D\uDDA5️", "Display Cached Messages", false, true)), o(this, "firstRenderAfterReadyPayload", new p("\uD83C\uDFA8", "First Render after Ready Payload", true)), o(this, "renderLatestMessages", new p("\uD83C\uDFA8", "React Render Latest Messages")), o(this, "displayLatestMessages", new p("\uD83D\uDDA5️", "Display Latest Messages")), o(this, "initialGuild", new f("\uD83C\uDF10", "Initial Guild")), o(this, "loadLazyCache", new f("\uD83D\uDCBE", "Load Lazy Cache")), o(this, "fetchLazyCache", new f("\uD83D\uDCBE", "Fetch Lazy Cache")), o(this, "parseLazyCache", new f("\uD83D\uDCBE", "Parse Lazy Cache")), o(this, "fetchStaleChannels", new f("\uD83D\uDCBE", "Fetch Stale Channels")), o(this, "deserializeCache", new f("\uD83D\uDCBE", "Deserialize Cache")), o(this, "dispatchLazyCache", new f("\uD83D\uDCBE", "Dispatch Lazy Cache")), o(this, "parseReady", new f("\uD83C\uDF10", "Parse READY")), o(this, "ready", new f("\uD83C\uDF10", "READY")), o(this, "hydrateReady", new f("\uD83C\uDF10", "Hydrate READY")), o(this, "dispatchReady", new f("\uD83C\uDF10", "Dispatch READY")), o(this, "parseReadySupplemental", new f("\uD83C\uDF10", "Parse READY Supplemental")), o(this, "readySupplemental", new f("\uD83C\uDF10", "READY Supplemental")), o(this, "hydrateReadySupplemental", new f("\uD83C\uDF10", "Hydrate READY Supplemental")), o(this, "dispatchReadySupplemental", new f("\uD83C\uDF10", "Dispatch READY Supplemental")), o(this, "fetchMessages", new f("\uD83C\uDF10", "Fetch messages")), o(this, "dispatchMessages", new f("\uD83C\uDF10", "Dispatch messages")), o(this, "imports", {
       polyfillsEnd: new _,
       sentryEnd: new _,
       appStateChangeStart: new _,
@@ -194,7 +194,7 @@ class h extends m {
   }
   recordMessageRender(e, t, r, i) {
     let {
-      default: a
+      default: o
     } = n(709054);
     if (!this.renderLatestMessages.hasData())
       if (this.renderMessages.record(), t.length > 0 && this.renderMessagesWithCache.record(), r) {
@@ -215,15 +215,15 @@ class h extends m {
           return
         }
         if (e === this.cachedChannelId) {
-          var o;
-          let n = this.cachedMessageIds.sort(a.compare).reverse()[0],
-            r = t.sort(a.compare).reverse()[0];
-          this.messageCacheAgeSeconds = Math.floor((a.extractTimestamp(r) - a.extractTimestamp(n)) / 1e3);
+          var a;
+          let n = this.cachedMessageIds.sort(o.compare).reverse()[0],
+            r = t.sort(o.compare).reverse()[0];
+          this.messageCacheAgeSeconds = Math.floor((o.extractTimestamp(r) - o.extractTimestamp(n)) / 1e3);
           let s = t.filter(e => {
             var t;
             return null == (t = this.cachedMessageIds) ? true : t.includes(e)
           }).length;
-          this.messageCacheCount = null != (o = this.cachedChannelCounts.get(e)) ? o : null, this.messageCacheHavingCount = s, this.messageCacheMissingCount = t.length - s, this.messageRenderFullCount = t.length, this.messageRenderCachedCount = this.cachedMessageIds.length, this.messageRenderHasMoreAfter = i
+          this.messageCacheCount = null != (a = this.cachedChannelCounts.get(e)) ? a : null, this.messageCacheHavingCount = s, this.messageCacheMissingCount = t.length - s, this.messageRenderFullCount = t.length, this.messageRenderCachedCount = this.cachedMessageIds.length, this.messageRenderHasMoreAfter = i
         }
       } else(null == this.cachedChannelId || e === this.cachedChannelId) && (this.cachedChannelId = e, this.cachedMessageIds = t, t.length > 0 && (this.messageCacheMissingReason = null))
   }
@@ -291,20 +291,20 @@ class h extends m {
     }
   }
   serializeWebPerfStartupMetrics(e) {
-    return l(o({}, this.serializeAppStartupMetrics()), {
+    return l(a({}, this.serializeAppStartupMetrics()), {
       was_authenticated: this.wasAuthenticated,
       time_first_render_after_ready_end: this.firstRenderAfterReadyPayload.serialize(e)
     })
   }
   serializeTTITracker(e) {
-    var t, i, a, s, c, u;
+    var t, i, o, s, c, u;
     let d = this.getStartTime(e),
       f = n(392711)(r.Z.logGroups["0"].logs).filter(e => e.log.startsWith("Require ")).map(e => {
         var t;
         return null != (t = e.delta) ? t : 0
       }).sum(),
       p = this.serializeAppStartupMetrics();
-    return l(o({}, this.extraProperties, p), {
+    return l(a({}, this.extraProperties, p), {
       time_load_index_start: this.loadIndex.serializeStart(d),
       time_load_index_end: this.loadIndex.serializeEnd(d),
       time_begin_fast_connect_start: this.beginFastConnect.serializeStart(d),
@@ -418,7 +418,7 @@ class h extends m {
       duration_major_js_imports: this.loadImports.end - this.loadIndex.start + f,
       cache_num_guilds: null == (t = this.cacheInfo) ? true : t.guilds,
       cache_num_private_channels: null == (i = this.cacheInfo) ? true : i.privateChannels,
-      cache_num_basic_channels: null == (a = this.cacheInfo) ? true : a.basicChannels,
+      cache_num_basic_channels: null == (o = this.cacheInfo) ? true : o.basicChannels,
       cache_num_basic_channels_stale: null == (s = this.cacheInfo) ? true : s.basicChannelsStale,
       cache_num_full_channels: null == (c = this.cacheInfo) ? true : c.fullChannels,
       cache_num_full_channel_guilds: null == (u = this.cacheInfo) ? true : u.fullChannelGuilds,
@@ -463,7 +463,7 @@ class h extends m {
     })
   }
   constructor(...e) {
-    super(...e), a(this, "readyProperties", {}), a(this, "didBackgroundApp", false), a(this, "wasEverActive", false), a(this, "wasAuthenticated", false), a(this, "interstitial", null), a(this, "cachedChannelCounts", new Map), a(this, "cachedChannelId", null), a(this, "cachedMessageIds", null), a(this, "messageCacheMissingReason", "never-loaded"), a(this, "messageCacheAgeSeconds", null), a(this, "messageCacheCount", null), a(this, "messageCacheHavingCount", null), a(this, "messageCacheMissingCount", null), a(this, "messageRenderFullCount", null), a(this, "messageRenderCachedCount", null), a(this, "messageRenderHasMoreAfter", null), a(this, "firstAppActiveTime", null), a(this, "cacheInfo", null), a(this, "extraProperties", {})
+    super(...e), o(this, "readyProperties", {}), o(this, "didBackgroundApp", false), o(this, "wasEverActive", false), o(this, "wasAuthenticated", false), o(this, "interstitial", null), o(this, "cachedChannelCounts", new Map), o(this, "cachedChannelId", null), o(this, "cachedMessageIds", null), o(this, "messageCacheMissingReason", "never-loaded"), o(this, "messageCacheAgeSeconds", null), o(this, "messageCacheCount", null), o(this, "messageCacheHavingCount", null), o(this, "messageCacheMissingCount", null), o(this, "messageRenderFullCount", null), o(this, "messageRenderCachedCount", null), o(this, "messageRenderHasMoreAfter", null), o(this, "firstAppActiveTime", null), o(this, "cacheInfo", null), o(this, "extraProperties", {})
   }
 }
 let g = new h

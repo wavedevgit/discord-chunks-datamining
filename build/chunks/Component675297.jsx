@@ -63,7 +63,7 @@ function I(e) {
   } = e, D = (0, i.e7)([u.Z], () => u.Z.getGuild(n), [n]), x = (0, i.e7)([c.Z], () => {
     var e;
     return c.Z.getRole(n, null != (e = null == t ? true : t.role_id) ? e : y.lds)
-  }), L = (0, o.U)(t, S), j = (0, h.C)(t), M = (0, f.SO)(D), {
+  }), L = (0, a.U)(t, S), j = (0, h.C)(t), M = (0, f.SO)(D), {
     shouldHideGuildPurchaseEntryPoints: k
   } = (0, l.uP)(n), U = (0, h.k)(t), G = (0, E.Z)({
     guildId: n,
@@ -109,7 +109,7 @@ function I(e) {
     description: t.description,
     formattedPrice: U,
     role: x,
-    ctaComponent: (0, r.jsx)(a.zxk, v({}, G)),
+    ctaComponent: (0, r.jsx)(o.zxk, v({}, G)),
     productType: j,
     shouldShowFullDescriptionButton: I,
     onShowFullDescription: Z,

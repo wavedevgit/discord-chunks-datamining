@@ -1,7 +1,7 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 120818, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  T: () => y
+  T: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,26 +16,26 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk215218 = require("./215218.js");
+  Chunk46674 = require("./46674.js");
 
-function m(e, t) {
+function b(e, t) {
   return (0, r.jsx)(s.Text, {
     variant: "text-xs/bold",
     color: "text-default",
     children: e
   }, t)
 }
-let y = Chunk473749.memo(function(e) {
+let _ = Chunk473749.memo(function(e) {
   var t, n;
   let {
-    guild: y
-  } = e, O = (0, a.e7)([c.Z], () => c.Z.getNewMemberActions(y.id), [y.id]), v = (0, a.e7)([u.Z], () => u.Z.getCompletedActions(y.id)), j = i.useMemo(() => {
-    if (null == O || null == v) return 0;
+    guild: _
+  } = e, y = (0, o.e7)([c.Z], () => c.Z.getNewMemberActions(_.id), [_.id]), O = (0, o.e7)([u.Z], () => u.Z.getCompletedActions(_.id)), v = i.useMemo(() => {
+    if (null == y || null == O) return 0;
     let e = 0;
-    return O.forEach(t => {
-      null != v[t.channelId] && e++
+    return y.forEach(t => {
+      null != O[t.channelId] && e++
     }), e
-  }, [v, O]), C = null == O ? 0 : O.length, x = (0, l.JA)("progress-bar-".concat(y.id));
+  }, [O, y]), j = null == y ? 0 : y.length, C = (0, l.JA)("progress-bar-".concat(_.id));
   return (0, r.jsxs)("li", {
     children: [(0, r.jsxs)(s.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -54,44 +54,44 @@ let y = Chunk473749.memo(function(e) {
         })
       }
       return e
-    }({}, x), n = n = {
+    }({}, C), n = n = {
       role: "button",
       focusProps: {
         offset: {
           right: 4
         }
       },
-      className: b.progressBarContainer,
+      className: m.progressBarContainer,
       onClick: function() {
-        (0, d.uL)(h.Z5c.CHANNEL(y.id, p.oC.GUILD_HOME))
+        (0, d.uL)(h.Z5c.CHANNEL(_.id, p.oC.GUILD_HOME))
       },
       children: [(0, r.jsxs)("div", {
-        className: b.progressBarText,
+        className: m.progressBarText,
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-sm/bold",
           children: g.intl.string(g.t.SnrR3x)
         }), (0, r.jsxs)("div", {
-          className: b.rightContainer,
+          className: m.rightContainer,
           children: [(0, r.jsx)(s.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
-            className: b.rightText,
+            className: m.rightText,
             children: g.intl.format(g.t.eqZ1lW, {
-              numberHook: m,
-              total: C.toString(),
-              completed: j.toString()
+              numberHook: b,
+              total: j.toString(),
+              completed: v.toString()
             })
           }), (0, r.jsx)(f.Z, {
-            className: b.arrow,
+            className: m.arrow,
             width: 16,
             height: 16,
             direction: f.Z.Directions.RIGHT
           })]
         })]
       }), (0, r.jsx)(s.Exd, {
-        className: b.progressBar,
-        foregroundGradientColor: [o.Z.unsafe_rawColors.GREEN_300.css, o.Z.unsafe_rawColors.GREEN_230.css],
-        percent: j / C * 100 + 3,
+        className: m.progressBar,
+        foregroundGradientColor: [a.Z.unsafe_rawColors.GREEN_300.css, a.Z.unsafe_rawColors.GREEN_230.css],
+        percent: v / j * 100 + 3,
         animate: true
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -105,7 +105,7 @@ let y = Chunk473749.memo(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)), (0, r.jsx)("div", {
       role: "separator",
-      className: b.divider
+      className: m.divider
     })]
   })
 })

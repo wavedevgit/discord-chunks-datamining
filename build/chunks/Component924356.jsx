@@ -26,8 +26,8 @@ function h() {
     g = (0, Chunk81643.Jm)(),
     E = Chunk473749.useMemo(() => (!h || !!g) && !require, [h, require, g]),
     b = Chunk473749.useCallback(e => {
-      if (h && e) return void a.Z.showAgeVerificationGetStartedModal({
-        entryPoint: o.cU.AGE_RESTRICTED_DM_COMMANDS_SETTINGS
+      if (h && e) return void o.Z.showAgeVerificationGetStartedModal({
+        entryPoint: a.cU.AGE_RESTRICTED_DM_COMMANDS_SETTINGS
       });
       u.xM.updateSetting(e)
     }, [h]);

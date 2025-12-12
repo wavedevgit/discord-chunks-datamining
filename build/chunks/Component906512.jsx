@@ -1,13 +1,13 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 906512, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
+  Z: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -19,14 +19,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk190378 = require("./190378.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk77059 = require("./77059.js"),
+  Chunk275657 = require("./275657.js"),
   Chunk438825 = require("./438825.js"),
   Chunk236140 = require("./236140.js"),
   Chunk37069 = require("./37069.js"),
   Chunk518513 = require("./518513.js"),
   Chunk40271 = require("./40271.js");
 
-function N(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function N(e) {
   }
   return e
 }
-let E = [{
+let N = [{
     iconSrc: require("./348986.js"),
     name: "Pokemon GO Paris",
     position: [false, false]
@@ -75,83 +75,83 @@ let E = [{
     faded: true,
     rightAlign: true
   }],
-  I = e => {
+  E = e => {
     let {
       icon: t,
       color: n,
       size: i = 24,
       header: l,
-      body: a
+      body: s
     } = e;
     return (0, r.jsxs)("div", {
-      className: x.featureCard,
+      className: b.featureCard,
       children: [(0, r.jsx)("div", {
-        className: x.featureIcon,
+        className: b.featureIcon,
         children: (0, r.jsx)(t, {
           color: null != n ? n : "currentColor",
           width: i,
           height: i,
           size: "custom"
         })
-      }), (0, r.jsx)(d.Heading, {
+      }), (0, r.jsx)(u.Heading, {
         variant: "heading-md/semibold",
-        className: x.featureHeader,
+        className: b.featureHeader,
         children: l
-      }), (0, r.jsx)(d.Text, {
+      }), (0, r.jsx)(u.Text, {
         color: "text-default",
         variant: "text-sm/normal",
-        children: a
+        children: s
       })]
     })
   },
-  S = e => {
+  I = e => {
     let {
       iconSrc: t,
       name: n,
       position: i,
       faded: l,
-      rightAlign: s,
+      rightAlign: a,
       imageCoordinates: o
     } = e, c = {
-      [s ? "right" : "left"]: o[0] + i[0],
+      [a ? "right" : "left"]: o[0] + i[0],
       top: o[1] + i[1]
     };
     return (0, r.jsxs)("div", {
-      className: a()(x.guildDetails, {
-        [x.faded]: l
+      className: s()(b.guildDetails, {
+        [b.faded]: l
       }),
       style: c,
       children: [(0, r.jsx)("div", {
-        className: x.guildIcon,
+        className: b.guildIcon,
         children: (0, r.jsx)("img", {
           alt: "",
           src: t,
           width: 24,
           height: 24
         })
-      }), (0, r.jsx)(d.Heading, {
+      }), (0, r.jsx)(u.Heading, {
         variant: "heading-deprecated-12/semibold",
         children: n
       })]
     })
   },
-  _ = e => {
+  S = e => {
     let {
       guild: t
-    } = e, [n, l] = i.useState(0), [a, O] = i.useState(0), [C, y] = i.useState(), _ = (0, s.e7)([f.Z], () => f.Z.can(b.Plq.ADMINISTRATOR, t)), T = null == C ? true : C.offsetWidth, P = null == C ? true : C.offsetHeight;
+    } = e, [n, l] = i.useState(0), [s, v] = i.useState(0), [O, C] = i.useState(), S = (0, a.e7)([m.Z], () => m.Z.can(f.Plq.ADMINISTRATOR, t)), T = null == O ? true : O.offsetWidth, P = null == O ? true : O.offsetHeight;
     return i.useEffect(() => {
-      null != T && l(T / 2), null != P && O(P / 2)
-    }, [T, P, l, O]), i.useEffect(() => {
-      (0, u.Kw)(p.v.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
+      null != T && l(T / 2), null != P && v(P / 2)
+    }, [T, P, l, v]), i.useEffect(() => {
+      (0, d.Kw)(h.v.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
     }, []), (0, r.jsxs)("div", {
-      className: x.container,
+      className: b.container,
       children: [(0, r.jsxs)("div", {
-        className: x.banner,
-        ref: e => y(e),
-        children: [E.map(e => {
+        className: b.banner,
+        ref: e => C(e),
+        children: [N.map(e => {
           var t, i;
-          return (0, r.jsx)(S, (t = N({}, e), i = i = {
-            imageCoordinates: [n, a]
+          return (0, r.jsx)(I, (t = y({}, e), i = i = {
+            imageCoordinates: [n, s]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -165,88 +165,88 @@ let E = [{
         }), (0, r.jsx)("img", {
           alt: "",
           src: j,
-          className: x.image,
+          className: b.image,
           width: 256
         }), (0, r.jsx)("img", {
           alt: "",
-          src: v,
-          className: x.sparkles
+          src: _,
+          className: b.sparkles
         })]
-      }), (0, r.jsx)(d.Heading, {
+      }), (0, r.jsx)(u.Heading, {
         variant: "heading-xl/semibold",
-        children: h.intl.string(h.t["M/gBcA"])
-      }), (0, r.jsx)(d.Text, {
+        children: x.intl.string(x.t["M/gBcA"])
+      }), (0, r.jsx)(u.Text, {
         color: "text-default",
         variant: "text-md/normal",
-        className: x.body,
-        children: h.intl.format(h.t["52EgsM"], {
-          helpdeskArticle: m.Z.getArticleURL(b.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
+        className: b.body,
+        children: x.intl.format(x.t["52EgsM"], {
+          helpdeskArticle: p.Z.getArticleURL(f.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
         })
       }), (0, r.jsx)(c.u, {
-        text: _ ? null : h.intl.string(h.t["pjG+T3"]),
-        "aria-label": _ ? true : h.intl.string(h.t["pjG+T3"]),
+        text: S ? null : x.intl.string(x.t["pjG+T3"]),
+        "aria-label": S ? true : x.intl.string(x.t["pjG+T3"]),
         children: (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: x.button,
-          children: (0, r.jsx)(d.Button, {
+          className: b.button,
+          children: (0, r.jsx)(u.Button, {
             variant: "primary",
-            text: h.intl.string(h.t.LhlgY9),
+            text: x.intl.string(x.t.LhlgY9),
             onClick: () => {
               g.Z.open()
             },
-            disabled: !_
+            disabled: !S
           })
         })
       }), (0, r.jsx)("hr", {
-        className: x.separator
-      }), (0, r.jsx)(d.Text, {
+        className: b.separator
+      }), (0, r.jsx)(u.Text, {
         color: "text-default",
         variant: "text-sm/normal",
-        children: h.intl.string(h.t.OzLWLE)
-      }), (0, r.jsx)(d.Text, {
+        children: x.intl.string(x.t.OzLWLE)
+      }), (0, r.jsx)(u.Text, {
         color: "text-default",
-        className: x.body,
+        className: b.body,
         variant: "text-sm/normal",
-        children: h.intl.format(h.t.rjhrqC, {
-          helpdeskArticle: m.Z.getArticleURL(b.BhN.GUILD_COMMUNITY_FEATURE)
+        children: x.intl.format(x.t.rjhrqC, {
+          helpdeskArticle: p.Z.getArticleURL(f.BhN.GUILD_COMMUNITY_FEATURE)
         })
       }), (0, r.jsx)("div", {
-        className: x.features,
+        className: b.features,
         children: [{
-          icon: d.IeX,
+          icon: u.IeX,
           color: o.Z.unsafe_rawColors.GREEN_360.css,
-          header: h.intl.string(h.t.oVQF2y),
-          body: h.intl.format(h.t.A6G7ak, {
+          header: x.intl.string(x.t.oVQF2y),
+          body: x.intl.format(x.t.A6G7ak, {
             featureHook: (e, t) => (0, r.jsx)("strong", {
-              className: x.featuredText,
+              className: b.featuredText,
               children: e
             }, t)
           })
         }, {
-          icon: d.IeX,
+          icon: u.IeX,
           color: o.Z.unsafe_rawColors.PARTNER.css,
-          header: h.intl.string(h.t["0rJl9y"]),
-          body: h.intl.format(h.t.XsCNky, {
+          header: x.intl.string(x.t["0rJl9y"]),
+          body: x.intl.format(x.t.XsCNky, {
             infoHook: () => (0, r.jsx)(c.u, {
-              text: h.intl.string(h.t.kPJlTh),
-              "aria-label": h.intl.string(h.t.kPJlTh),
-              children: (0, r.jsx)(d.d3s, {
+              text: x.intl.string(x.t.kPJlTh),
+              "aria-label": x.intl.string(x.t.kPJlTh),
+              children: (0, r.jsx)(u.d3s, {
                 size: "xs",
                 color: "currentColor",
-                className: x.infoIcon
+                className: b.infoIcon
               })
             }),
             featureHook: (e, t) => (0, r.jsx)("strong", {
-              className: x.featuredText,
+              className: b.featuredText,
               children: e
             }, t)
           })
         }, {
-          icon: d.d3s,
+          icon: u.d3s,
           color: o.Z.unsafe_rawColors.RED_360.css,
-          header: h.intl.string(h.t.W2kLJC),
-          body: h.intl.string(h.t.hyNkHz)
-        }].map((e, t) => (0, r.jsx)(I, N({}, e), t))
+          header: x.intl.string(x.t.W2kLJC),
+          body: x.intl.string(x.t.hyNkHz)
+        }].map((e, t) => (0, r.jsx)(E, y({}, e), t))
       })]
     })
   }

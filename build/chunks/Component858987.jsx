@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk95015 = require("./95015.js"),
   Chunk481060 = require("./481060.js"),
   Chunk115130 = require("./115130.js"),
@@ -66,7 +66,7 @@ function O(e) {
     plan: n,
     premiumSubscription: r,
     productLine: i,
-    isGift: o,
+    isGift: a,
     planGroup: s,
     isPrepaidPaymentSource: l,
     inReverseTrial: c,
@@ -74,9 +74,9 @@ function O(e) {
     hasPaymentSources: p
   } = e;
   if (null === u && p) return h.intl.string(h.t.CpOiEO);
-  if (t === m.GZ.ONE_TIME) return o ? h.intl.string(h.t.ouo4FK) : h.intl.string(h.t.ExD0Ng);
-  if (a()(null != n, "Subscription plan must be selected to render SubscriptionReviewButton"), i === _.POd.BOOST) return h.intl.string(h.t.eUEeCt);
-  if (o) return h.intl.string(h.t.ouo4FK);
+  if (t === m.GZ.ONE_TIME) return a ? h.intl.string(h.t.ouo4FK) : h.intl.string(h.t.ExD0Ng);
+  if (o()(null != n, "Subscription plan must be selected to render SubscriptionReviewButton"), i === _.POd.BOOST) return h.intl.string(h.t.eUEeCt);
+  if (a) return h.intl.string(h.t.ouo4FK);
   if (c) return h.intl.string(h.t.LQVQIq);
   if ((0, d.PV)(n.id)) return l ? h.intl.string(h.t.cRCCJ3) : null != r ? r.isPausedAllowsResumeButNotUpdates ? h.intl.string(h.t.zpi5pg) : (0, f.R4)(r, n.id, s) ? h.intl.string(h.t.IJI7yk) : h.intl.string(h.t.VPuTc5) : (0, d.W_)(null, n);
   return h.intl.string(h.t.YScQSF)
@@ -93,7 +93,7 @@ function S(e) {
   let {
     legalTermsNodeRef: n,
     invoiceError: i,
-    planError: a,
+    planError: o,
     disablePurchase: d,
     flashLegalTerms: f,
     isSubmitting: m,
@@ -129,7 +129,7 @@ function S(e) {
   }), {
     analyticsLocations: Z
   } = (0, c.ZP)();
-  if (null != i || null != a || d) return (0, r.jsx)(s.Button, {
+  if (null != i || null != o || d) return (0, r.jsx)(s.Button, {
     variant: "active",
     text: G,
     disabled: true
@@ -158,7 +158,7 @@ function S(e) {
       disabled: true
     }))
   });
-  if ((0, o.yE)(null != (t = null == w ? true : w.flags) ? t : 0, _.udG.EMBEDDED) && k === l.O.LOADING) return (0, r.jsx)(s.aML, {
+  if ((0, a.yE)(null != (t = null == w ? true : w.flags) ? t : 0, _.udG.EMBEDDED) && k === l.O.LOADING) return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     text: h.intl.string(h.t.cjA5tj),
     children: e => (0, r.jsx)(s.Button, y(E({

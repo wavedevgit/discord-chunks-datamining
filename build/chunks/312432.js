@@ -35,10 +35,10 @@ Chunk65183.List, module.exports = function(e) {
           b = e.get("leaves"),
           y = b.size - 1,
           O = b.map(function(e, n) {
-            var i = o.encode(h, c, n),
+            var i = a.encode(h, c, n),
               u = e.get("start"),
               d = e.get("end");
-            return l.createElement(a, {
+            return l.createElement(o, {
               key: i,
               offsetKey: i,
               block: t,
@@ -65,7 +65,7 @@ Chunk65183.List, module.exports = function(e) {
         }) : O
       }).toArray();
     return l.createElement("div", {
-      "data-offset-key": o.encode(h, 0, 0),
+      "data-offset-key": a.encode(h, 0, 0),
       className: c({
         "public/DraftStyleDefault/block": true,
         "public/DraftStyleDefault/ltr": "LTR" === d,

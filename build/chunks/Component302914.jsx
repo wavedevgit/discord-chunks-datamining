@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk35215 = require("./35215.jsx"),
-  Chunk578362 = require("./578362.js");
+  Chunk879048 = require("./879048.js");
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,7 +58,7 @@ function d(e) {
     onGameSheetOpened: d,
     onGameSheetClosed: f
   } = e;
-  return e => (0, r.jsx)(a.Z, {
+  return e => (0, r.jsx)(o.Z, {
     quest: t,
     sourceQuestContent: n,
     applications: null != s ? s : [],
@@ -74,7 +74,7 @@ function d(e) {
       children: (0, r.jsx)(i.Text, {
         variant: "text-xs/normal",
         color: "text-link",
-        className: o.instructionsLink,
+        className: a.instructionsLink,
         children: e
       })
     }))

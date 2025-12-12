@@ -72,10 +72,10 @@ async function E(e, t) {
 async function b(e) {
   clearTimeout(_);
   let t = 0 !== Object.keys(e).length,
-    n = a.Z.getCollapsedCategories(),
+    n = o.Z.getCollapsedCategories(),
     i = y();
   for (let r in i) {
-    let i = o.Z.getChannel(r);
+    let i = a.Z.getChannel(r);
     null != i && null != i.guild_id && (i.guild_id in e || (e[i.guild_id] = {}), null == e[i.guild_id].channel_overrides && (e[i.guild_id].channel_overrides = {}), e[i.guild_id].channel_overrides[i.id] = f(u({}, e[i.guild_id].channel_overrides[i.id]), {
       collapsed: i.id in n
     }), t = true)

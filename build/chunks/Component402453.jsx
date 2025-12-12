@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk227399 = require("./227399.js");
-let o = {
+let a = {
     i18n: {
       CANCEL: "Cancel",
       BACK: "Back",
@@ -63,11 +63,11 @@ let o = {
     isWindowFocused: true,
     dynamicGraphicComponents: true
   },
-  s = Chunk473749.createContext(o);
+  s = Chunk473749.createContext(a);
 
 function l() {
   let e = Chunk473749.useContext(s);
-  return module === o && console.warn("useManaContext must be used within a ManaContext.Provider"), module
+  return module === a && console.warn("useManaContext must be used within a ManaContext.Provider"), module
 }
 
 function c(e) {
@@ -82,7 +82,7 @@ function u(e) {
   } = e;
   return (0, r.jsx)(s.Provider, {
     value: n,
-    children: (0, r.jsx)(a.b, {
+    children: (0, r.jsx)(o.b, {
       locale: n.locale,
       children: t
     })

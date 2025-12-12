@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 680004, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -59,7 +59,7 @@ function p() {
     emotion: window.__CLIPS_DEBUG__.emotion,
     yell: window.__CLIPS_DEBUG__.yell,
     whisper: window.__CLIPS_DEBUG__.whisper
-  })), [p, h] = Chunk473749.useState(Chunk894694.x0.KILL), [f, x] = Chunk473749.useState(1), [b, g] = Chunk473749.useState(""), [v, j] = Chunk473749.useState(""), y = Chunk473749.useCallback(e => {
+  })), [p, h] = Chunk473749.useState(Chunk894694.x0.KILL), [x, f] = Chunk473749.useState(1), [g, b] = Chunk473749.useState(""), [v, j] = Chunk473749.useState(""), _ = Chunk473749.useCallback(e => {
     let a = !t[e];
     true === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
       emotion: false,
@@ -141,8 +141,8 @@ function p() {
             }]
           }), (0, Chunk54381.jsx)(Chunk199849.y6, {
             label: "Importance",
-            value: f,
-            onChange: x,
+            value: x,
+            onChange: f,
             options: [{
               label: "Low",
               value: 0
@@ -156,8 +156,8 @@ function p() {
           })]
         }), (0, Chunk54381.jsx)(Chunk481060.oil, {
           label: "Title (optional)",
-          value: b,
-          onChange: g,
+          value: g,
+          onChange: b,
           placeholder: "e.g., First Blood"
         }), (0, Chunk54381.jsx)(Chunk481060.oil, {
           label: "Description (optional)",
@@ -170,8 +170,8 @@ function p() {
             Chunk39604.XK({
               type: Chunk894694.Bs.GAME_EVENT,
               eventType: p,
-              importance: f,
-              title: b,
+              importance: x,
+              title: g,
               description: v
             })
           }
@@ -209,22 +209,22 @@ function p() {
           label: "Wake Word Debug",
           description: "Log wake word detection events to console",
           checked: exports.wakeWord,
-          onChange: () => y("wakeWord")
+          onChange: () => _("wakeWord")
         }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Emotion Debug",
           description: "Log emotion classification events to console",
           checked: exports.emotion,
-          onChange: () => y("emotion")
+          onChange: () => _("emotion")
         }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Yell Debug",
           description: "Show yell classification events to console",
           checked: exports.yell,
-          onChange: () => y("yell")
+          onChange: () => _("yell")
         }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Whisper Debug",
           description: "Log whisper transcription events to console",
           checked: exports.whisper,
-          onChange: () => y("whisper")
+          onChange: () => _("whisper")
         })]
       })]
     })

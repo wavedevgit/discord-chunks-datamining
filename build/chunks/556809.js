@@ -56,13 +56,13 @@ let y = null,
   }),
   N = e => {
     try {
-      let t = a.Z.getWindow(p.$J);
+      let t = o.Z.getWindow(p.$J);
       if (null == t || "function" != typeof t.requestAnimationFrame) return y = "OverlayNotAvailable", h(e);
       if (!v) return y = "MainWindowFocused", h(e);
       if (!b(true)) return y = "NoOverlayRendering", h(e);
       let n = null !== f.Z.getFocusedRunningGame(),
-        r = o.Z.isFocused((0, s.ZY)(t));
-      if (o.Z.isFocused() && m.error("Main window is reported as focused when it should not be!"), n || r) {
+        r = a.Z.isFocused((0, s.ZY)(t));
+      if (a.Z.isFocused() && m.error("Main window is reported as focused when it should not be!"), n || r) {
         y = n ? "OverlayGameFocused" : "OverlayWindowFocused";
         let r = t.requestAnimationFrame(t => {
           T(r), e(t)

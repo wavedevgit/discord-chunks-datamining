@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk503461 = require("./503461.js"),
   Chunk218521 = require("./218521.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,7 +17,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e, t) {
+function a(e, t) {
   return 0 === t.length ? e : {
     key: (0, i.m)(t, e.key),
     data: e.data,
@@ -26,7 +26,7 @@ function o(e, t) {
 }
 
 function s(e, t) {
-  return 0 === t.length ? e : e.map(e => o(e, t))
+  return 0 === t.length ? e : e.map(e => a(e, t))
 }
 class l {
   close() {
@@ -51,11 +51,11 @@ class l {
   }
   getRange(e, t, n) {
     let r = (0, i.m)(this.prefix, e),
-      a = (0, i.m)(this.prefix, t);
+      o = (0, i.m)(this.prefix, t);
     return this.database.execute({
       type: "kv.get_range",
       table: this.tableId,
-      range: [r, a],
+      range: [r, o],
       ordering: null == n ? true : n.ordering,
       limit: null == n ? true : n.limit
     }, this.defaultDebugTag)
@@ -97,7 +97,7 @@ class l {
     return this.database.execute({
       type: "kv.put_one",
       table: this.tableId,
-      cell: o(e, this.prefix),
+      cell: a(e, this.prefix),
       overwrite: t === r.Sn.Replace
     }, this.defaultDebugTag)
   }
@@ -170,7 +170,7 @@ class l {
     })
   }
   constructor(e, t, n, r) {
-    a(this, "prefix", true), a(this, "tableId", true), a(this, "database", true), a(this, "defaultDebugTag", true), a(this, "messages", {
+    o(this, "prefix", true), o(this, "tableId", true), o(this, "database", true), o(this, "defaultDebugTag", true), o(this, "messages", {
       getLatest: e => this.database.execute({
         type: "messages.get_latest",
         table: this.tableId,
@@ -188,7 +188,7 @@ class c {
     this.transaction.add({
       type: "kv.put_one",
       table: this.tableId,
-      cell: o(e, this.prefix),
+      cell: a(e, this.prefix),
       overwrite: t === r.Sn.Replace
     })
   }
@@ -234,7 +234,7 @@ class c {
     })
   }
   constructor(e, t, n) {
-    a(this, "prefix", true), a(this, "tableId", true), a(this, "transaction", true), a(this, "messages", {
+    o(this, "prefix", true), o(this, "tableId", true), o(this, "transaction", true), o(this, "messages", {
       trimOrphans: e => {
         if (1 !== this.prefix.length || 1 !== e.length) throw Error("trimOrphans: only one prefix component is supported at this time");
         this.transaction.add({

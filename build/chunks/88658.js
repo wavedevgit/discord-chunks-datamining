@@ -63,23 +63,23 @@ function E(e) {
     destinationPane: t,
     originPane: n,
     source: i,
-    subsection: a,
-    locationStack: o,
+    subsection: o,
+    locationStack: a,
     applicationId: s
   } = e;
   r.ZP.trackWithMetadata(u.rMx.SETTINGS_PANE_VIEWED, {
     settings_type: "user",
     origin_pane: n,
     destination_pane: t,
-    location_stack: o,
+    location_stack: a,
     source: i,
-    subsection: a,
+    subsection: o,
     application_id: s
   })
 }
 
 function b(e) {
-  let t = (0, a.yP)("shakeUserSettings"),
+  let t = (0, o.yP)("shakeUserSettings"),
     n = l.Z.getLayers().at(false) === u.S9g.USER_SETTINGS,
     r = t && !n ? u.CkL.SHAKE_SETTINGS_MODAL : u.CkL.SHAKE_APP;
   c.S.dispatch(r, e)

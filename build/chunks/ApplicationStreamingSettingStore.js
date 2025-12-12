@@ -37,14 +37,14 @@ function _(e) {
     resolution: n,
     frameRate: r,
     soundshareEnabled: i
-  } = e, a = false;
-  return null != t && t !== c && (c = t, a = true), null != n && n !== u && (u = n, a = true), null != r && r !== d && (d = r, a = true), null != i && i !== f && (f = i, a = true), a
+  } = e, o = false;
+  return null != t && t !== c && (c = t, o = true), null != n && n !== u && (u = n, o = true), null != r && r !== d && (d = r, o = true), null != i && i !== f && (f = i, o = true), o
 }
 class m extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n;
-      c = null != (t = e.preset) ? t : o.ApplicationStreamPresets.PRESET_VIDEO, u = e.resolution, d = e.fps, f = null == (n = e.soundshareEnabled) || n
+      c = null != (t = e.preset) ? t : a.ApplicationStreamPresets.PRESET_VIDEO, u = e.resolution, d = e.fps, f = null == (n = e.soundshareEnabled) || n
     }
   }
   getState() {

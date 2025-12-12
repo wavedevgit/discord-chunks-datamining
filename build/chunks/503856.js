@@ -18,11 +18,11 @@ let l = () => {
     let n = Chunk430824.Z.getGuild(exports.getGuildId());
     return null != require && require.features.has(Chunk981631.GuildFeatures.HUB)
   },
-  c = e => (0, r.e7)([o.Z, i.Z, a.Z], () => {
-    let t = o.Z.getVoiceChannelId();
+  c = e => (0, r.e7)([a.Z, i.Z, o.Z], () => {
+    let t = a.Z.getVoiceChannelId();
     if (null == t) returnfalse;
     let n = i.Z.getChannel(t);
     if (null == n) returnfalse;
-    let r = a.Z.getGuild(n.getGuildId());
+    let r = o.Z.getGuild(n.getGuildId());
     return null != r && r.id === e
   })

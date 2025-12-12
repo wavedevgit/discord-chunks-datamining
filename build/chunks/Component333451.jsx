@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk755721 = require("./755721.js"),
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk421077 = require("./421077.js");
+  Chunk22706 = require("./22706.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -108,7 +108,7 @@ function D(e) {
   var t;
   let {
     premiumSubscriptionPlan: n,
-    onClose: a,
+    onClose: o,
     onBack: s,
     onSkip: g,
     onSubscriptionConfirmation: E,
@@ -132,12 +132,12 @@ function D(e) {
       className: C.content,
       children: [(0, r.jsx)(u.olH, {
         "data-migration-pending": true,
-        onClick: a,
+        onClick: o,
         className: C.closeButton
       }), F && (0, r.jsx)(h.dz, {
         className: C.premiumTrialBadge
       }), (0, r.jsx)("div", {
-        className: o()(C.upsellImage, {
+        className: a()(C.upsellImage, {
           [C.upsellImageWithTrialOffer]: F
         })
       }), (0, r.jsx)("div", {
@@ -165,7 +165,7 @@ function D(e) {
           text: null != Z ? T.intl.string(T.t["Gd/XHF"]) : T.intl.string(T.t.p2moip),
           type: "submit",
           onClick: () => {
-            a(), (0, _.Z)({
+            o(), (0, _.Z)({
               initialPlanId: null,
               subscriptionTier: I.Si.TIER_2,
               analyticsLocations: D,

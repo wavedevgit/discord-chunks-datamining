@@ -14,44 +14,44 @@ function i(e) {
   return "undefined" != typeof window && null != window.navigator && e.test((null == (t = window.navigator.userAgentData) ? true : t.platform) || window.navigator.platform)
 }
 
-function a(e) {
+function o(e) {
   let t = null;
   return () => (null == t && (t = e()), t)
 }
 require.d(exports, {
   Dt: () => p,
   Pf: () => d,
-  V5: () => o,
+  V5: () => a,
   ad: () => u,
   gn: () => c,
   i7: () => f,
   vU: () => _,
   zc: () => l
 });
-let o = a(function() {
+let a = o(function() {
     return i(/^Mac/i)
   }),
-  s = a(function() {
+  s = o(function() {
     return i(/^iPhone/i)
   }),
-  l = a(function() {
-    return i(/^iPad/i) || o() && navigator.maxTouchPoints > 1
+  l = o(function() {
+    return i(/^iPad/i) || a() && navigator.maxTouchPoints > 1
   }),
-  c = a(function() {
+  c = o(function() {
     return s() || l()
   }),
-  u = a(function() {
-    return o() || c()
+  u = o(function() {
+    return a() || c()
   }),
-  d = a(function() {
+  d = o(function() {
     return r(/AppleWebKit/i) && !f()
   }),
-  f = a(function() {
+  f = o(function() {
     return r(/Chrome/i)
   }),
-  p = a(function() {
+  p = o(function() {
     return r(/Android/i)
   }),
-  _ = a(function() {
+  _ = o(function() {
     return r(/Firefox/i)
   })

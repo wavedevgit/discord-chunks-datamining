@@ -2,12 +2,12 @@
 /** chunk id: 830960, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  E: () => a,
-  F: () => o
+  E: () => o,
+  F: () => a
 });
 var Chunk692547 = require("./692547.js"),
   Chunk612776 = require("./612776.js");
-let a = {
+let o = {
     [Chunk612776.yD.WELCOME]: {
       primaryColor: Chunk692547.Z.unsafe_rawColors.CHECKPOINT_WELCOME_PRIMARY,
       secondaryColor: Chunk692547.Z.unsafe_rawColors.CHECKPOINT_WELCOME_SECONDARY,
@@ -54,7 +54,7 @@ let a = {
       gradient: [Chunk692547.Z.unsafe_rawColors.CHECKPOINT_END_GRADIENT_START, Chunk692547.Z.unsafe_rawColors.CHECKPOINT_END_GRADIENT_END]
     }
   },
-  o = {
+  a = {
     [Chunk612776._n.ZERO]: {
       primaryColor: Chunk692547.Z.unsafe_rawColors.CHECKPOINT_PERSONA_ZERO_PRIMARY,
       secondaryColor: Chunk692547.Z.unsafe_rawColors.CHECKPOINT_PERSONA_ZERO_SECONDARY,

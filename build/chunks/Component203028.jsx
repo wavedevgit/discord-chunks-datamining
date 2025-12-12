@@ -88,7 +88,7 @@ function O(e) {
       let t = h.dc(v);
       if (null != t) return t;
       switch (v.type) {
-        case _.IIU.PLAYING:
+        case b.IIU.PLAYING:
           if ((0, o.Z)(v)) return {
             subtitle: E.intl.string(E.t.tO8wOx),
             icon: (0, r.jsx)(m.Z.Header.Icon, {
@@ -101,21 +101,21 @@ function O(e) {
               location: f.ZP.Locations.ACTIVITY_FEED_NEW,
               messageProps: I
             }), icon: null != e ? (0, r.jsx)(m.Z.Header.Icon, {
-              src: null != e.getIconURL(b.Z) ? e.getIconURL(b.Z) : n(211827)
+              src: null != e.getIconURL(_.Z) ? e.getIconURL(_.Z) : n(211827)
             }) : null
           };
-        case _.IIU.STREAMING:
+        case b.IIU.STREAMING:
           return {
-            subtitle: E.intl.string(E.t.HyGHj7), icon: null != e && null != e.getIconURL(b.Z) ? (0, r.jsx)(m.Z.Header.Icon, {
-              src: e.getIconURL(b.Z)
+            subtitle: E.intl.string(E.t.HyGHj7), icon: null != e && null != e.getIconURL(_.Z) ? (0, r.jsx)(m.Z.Header.Icon, {
+              src: e.getIconURL(_.Z)
             }) : null
           };
-        case _.IIU.LISTENING:
+        case b.IIU.LISTENING:
           let i;
           return i = (0, s.Z)(v) ? (0, r.jsx)(m.Z.Header.Icon, {
             src: m.Z.Header.Icon.Src.SPOTIFY
-          }) : null != e.getIconURL(b.Z) ? (0, r.jsx)(m.Z.Header.Icon, {
-            src: e.getIconURL(b.Z)
+          }) : null != e.getIconURL(_.Z) ? (0, r.jsx)(m.Z.Header.Icon, {
+            src: e.getIconURL(_.Z)
           }) : (0, r.jsx)(m.Z.Header.Icon, {
             src: n(211827)
           }), {
@@ -124,12 +124,12 @@ function O(e) {
             }),
             icon: i
           };
-        case _.IIU.WATCHING:
+        case b.IIU.WATCHING:
           return {
             subtitle: E.intl.formatToPlainString(E.t.pW3Ip3, {
               name: v.name
-            }), icon: null != e && null != e.getIconURL(b.Z) ? (0, r.jsx)(m.Z.Header.Icon, {
-              src: e.getIconURL(b.Z)
+            }), icon: null != e && null != e.getIconURL(_.Z) ? (0, r.jsx)(m.Z.Header.Icon, {
+              src: e.getIconURL(_.Z)
             }) : null
           };
         default:
@@ -152,7 +152,7 @@ function O(e) {
           let e = h.dc(t);
           if (null != e) return e
         }
-        if (null != t && t.type === _.IIU.LISTENING) return {
+        if (null != t && t.type === b.IIU.LISTENING) return {
           subtitle: E.intl.string(E.t.rmnkz4),
           icon: (0, r.jsx)(m.Z.Header.Icon, {
             src: m.Z.Header.Icon.Src.SPOTIFY
@@ -176,8 +176,8 @@ function O(e) {
           location: f.ZP.Locations.ACTIVITY_FEED_NEW,
           messageProps: I
         }),
-        icon: null != n && null != n.getIconURL(b.Z) ? (0, r.jsx)(m.Z.Header.Icon, {
-          src: n.getIconURL(b.Z)
+        icon: null != n && null != n.getIconURL(_.Z) ? (0, r.jsx)(m.Z.Header.Icon, {
+          src: n.getIconURL(_.Z)
         }) : null
       }
     }

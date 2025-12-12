@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk727916 = require("./727916.js"),
   Chunk894186 = require("./894186.js"),
   Chunk654323 = require("./654323.js");
-let o = RegExp("(?:(午前|午後|A.M.|P.M.|AM|PM))?(?:[\\s,，、]*)(?:([0-9０-９]+|[" + Object.keys(Chunk654323.Wu).join("") + "]+)(?:\\s*)(?:時(?!間)|:|：)(?:\\s*)([0-9０-９]+|半|[" + Object.keys(Chunk654323.Wu).join("") + "]+)?(?:\\s*)(?:分|:|：)?(?:\\s*)([0-9０-９]+|[" + Object.keys(Chunk654323.Wu).join("") + "]+)?(?:\\s*)(?:秒)?)(?:\\s*(A.M.|P.M.|AM?|PM?))?", "i"),
+let a = RegExp("(?:(午前|午後|A.M.|P.M.|AM|PM))?(?:[\\s,，、]*)(?:([0-9０-９]+|[" + Object.keys(Chunk654323.Wu).join("") + "]+)(?:\\s*)(?:時(?!間)|:|：)(?:\\s*)([0-9０-９]+|半|[" + Object.keys(Chunk654323.Wu).join("") + "]+)?(?:\\s*)(?:分|:|：)?(?:\\s*)([0-9０-９]+|[" + Object.keys(Chunk654323.Wu).join("") + "]+)?(?:\\s*)(?:秒)?)(?:\\s*(A.M.|P.M.|AM?|PM?))?", "i"),
   s = RegExp("(?:^\\s*(?:から|\\-|\\–|\\－|\\~|\\〜)\\s*)(?:(午前|午後|A.M.|P.M.|AM|PM))?(?:[\\s,，、]*)(?:([0-9０-９]+|[" + Object.keys(Chunk654323.Wu).join("") + "]+)(?:\\s*)(?:時|:|：)(?:\\s*)([0-9０-９]+|半|[" + Object.keys(Chunk654323.Wu).join("") + "]+)?(?:\\s*)(?:分|:|：)?(?:\\s*)([0-9０-９]+|[" + Object.keys(Chunk654323.Wu).join("") + "]+)?(?:\\s*)(?:秒)?)(?:\\s*(A.M.|P.M.|AM?|PM?))?", "i"),
   l = 1,
   c = 2,
@@ -16,7 +16,7 @@ let o = RegExp("(?:(午前|午後|A.M.|P.M.|AM|PM))?(?:[\\s,，、]*)(?:([0-9０
   f = 5;
 class p extends Chunk727916.Z {
   innerPattern() {
-    return o
+    return a
   }
   innerExtract(e, t) {
     if (t.index > 0 && e.text[t.index - 1].match(/\w/)) return null;
@@ -25,24 +25,24 @@ class p extends Chunk727916.Z {
   }
 }
 
-function _(e, t, n, r, o) {
+function _(e, t, n, r, a) {
   let s = 0,
     l = false,
     c = e.createParsingComponents();
-  if (isNaN(s = parseInt((0, a.dj)(t))) && (s = (0, a.w9)(t)), s > 24) return null;
+  if (isNaN(s = parseInt((0, o.dj)(t))) && (s = (0, o.w9)(t)), s > 24) return null;
   if (n) {
     let e;
-    if ("半" === n ? e = 30 : isNaN(e = parseInt((0, a.dj)(n))) && (e = (0, a.w9)(n)), e >= 60) return null;
+    if ("半" === n ? e = 30 : isNaN(e = parseInt((0, o.dj)(n))) && (e = (0, o.w9)(n)), e >= 60) return null;
     c.assign("minute", e)
   }
   if (r) {
-    let e = parseInt((0, a.dj)(r));
-    if (isNaN(e) && (e = (0, a.w9)(r)), e >= 60) return null;
+    let e = parseInt((0, o.dj)(r));
+    if (isNaN(e) && (e = (0, o.w9)(r)), e >= 60) return null;
     c.assign("second", e)
   }
-  if (o) {
+  if (a) {
     if (s > 12) return null;
-    let e = o;
+    let e = a;
     "午前" === e || "a" === e[0].toLowerCase() ? (l = i.GG.AM, 12 === s && (s = 0)) : ("午後" === e || "p" === e[0].toLowerCase()) && (l = i.GG.PM, 12 != s && (s += 12))
   }
   return c.assign("hour", s), l >= 0 ? c.assign("meridiem", l) : s < 12 ? c.imply("meridiem", i.GG.AM) : c.imply("meridiem", i.GG.PM), c

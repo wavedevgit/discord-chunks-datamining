@@ -20,7 +20,7 @@ function l(e) {
     source: u,
     onAction: d
   } = e;
-  return null != t && (0, a.Z)(t, s.xjy.SYNC) && (0, o.Z)(t) ? (0, r.jsx)(i.Z, {
+  return null != t && (0, o.Z)(t, s.xjy.SYNC) && (0, a.Z)(t) ? (0, r.jsx)(i.Z, {
     size: "sm",
     variant: "secondary",
     user: n,

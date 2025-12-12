@@ -7,10 +7,10 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk402453 = require("./402453.jsx"),
   Chunk777207 = require("./777207.jsx"),
-  Chunk750826 = require("./750826.js");
+  Chunk957618 = require("./957618.js");
 let c = (e, t) => {
   switch (e) {
     case "new":
@@ -38,10 +38,10 @@ function d(e) {
     variant: n = "default"
   } = e, {
     i18n: i
-  } = (0, o.ZF)();
+  } = (0, a.ZF)();
   return (0, r.jsx)(s.x, {
     variant: "eyebrow",
-    className: a()(l.badge, l[n]),
+    className: o()(l.badge, l[n]),
     children: c(t, i)
   })
 }

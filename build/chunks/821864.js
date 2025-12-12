@@ -51,13 +51,13 @@ function u(e, t) {
   })
 }
 async function d(e, t, n) {
-  let a = [];
+  let o = [];
   try {
     let i = await r.tn.get({
       url: s.ANM.APPLICATION_BOT_GUILD_COMMAND_PERMISSIONS(e, t, n),
       rejectWithError: false
     });
-    i.ok && (a = i.body.permissions)
+    i.ok && (o = i.body.permissions)
   } catch (r) {
     if (404 !== r.status) return void i.Z.dispatch({
       type: "INTEGRATION_PERMISSION_SETTINGS_APPLICATION_PERMISSIONS_FETCH_FAILURE",
@@ -71,7 +71,7 @@ async function d(e, t, n) {
     applicationId: e,
     commandId: n,
     guildId: t,
-    permissions: a
+    permissions: o
   })
 }
 
@@ -93,10 +93,10 @@ async function _(e) {
     applicationId: t,
     commandId: n,
     defaultEveryoneValue: r,
-    defaultEverywhereValue: o,
+    defaultEverywhereValue: a,
     guildId: s,
     permissions: l
-  } = e, c = n === t ? m(s, l, r, o) : l, u = await a.dh(t, s, n, c);
+  } = e, c = n === t ? m(s, l, r, a) : l, u = await o.dh(t, s, n, c);
   u.ok && i.Z.dispatch({
     type: "INTEGRATION_PERMISSION_SETTINGS_COMMAND_UPDATE",
     applicationId: t,
@@ -110,7 +110,7 @@ function m(e, t, n, r) {
   if (!n || !r) return t;
   let i = {
     [e]: n,
-    [(0, o.bD)(e)]: r
+    [(0, a.bD)(e)]: r
   };
   return t.filter(e => {
     let t = i[e.id];

@@ -1,7 +1,7 @@
 /** Chunk was on 8895 **/
 /** chunk id: 653079, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
@@ -17,20 +17,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk956748 = require("./956748.jsx"),
   Chunk566697 = require("./566697.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk875292 = require("./875292.js");
-let b = e => {
+  Chunk763740 = require("./763740.js");
+let _ = e => {
   var t, n;
   let {
     user: r,
-    guildId: b,
-    nameplate: f
-  } = e, j = (0, a.cj)([p.Z, u.Z], () => null == b ? p.Z.getAllPending() : u.Z.getAllPending()), {
-    product: y,
-    purchase: P
-  } = (0, c.Z)(null == f ? true : f.skuId), C = (0, d.kd)(y), E = m.ZP.canUseCollectibles(r), O = (0, o.qS)(P), w = (0, o.G1)(y), _ = !E && O, N = null == P || _;
+    guildId: _,
+    nameplate: j
+  } = e, y = (0, s.cj)([p.Z, d.Z], () => null == _ ? p.Z.getAllPending() : d.Z.getAllPending()), {
+    product: P,
+    purchase: b
+  } = (0, c.Z)(null == j ? true : j.skuId), f = (0, u.kd)(P), C = m.ZP.canUseCollectibles(r), E = (0, o.qS)(b), O = (0, o.G1)(P), w = !C && E, N = null == b || w;
   return (0, l.jsxs)("div", {
     className: i()(v.previewBorder, {
-      [v.upsell]: null != f && N
+      [v.upsell]: null != j && N
     }),
     children: [(0, l.jsx)("div", {
       className: v.previewBox,
@@ -62,10 +62,10 @@ let b = e => {
             })
           }
           return e
-        }({}, j), n = n = {
+        }({}, y), n = n = {
           user: r,
-          guildId: b,
-          nameplate: f,
+          guildId: _,
+          nameplate: j,
           isHighlighted: true
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -84,14 +84,14 @@ let b = e => {
           opacity: .9
         })]
       })
-    }), null != f && (0, l.jsxs)("div", {
+    }), null != j && (0, l.jsxs)("div", {
       className: v.previewDescription,
-      children: [(0, l.jsx)(s.Text, {
+      children: [(0, l.jsx)(a.Text, {
         variant: "text-sm/semibold",
-        children: C
-      }), N && (0, l.jsx)(s.Text, {
+        children: f
+      }), N && (0, l.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: _ ? x.intl.string(x.t.nD78oa) : w && E ? x.intl.string(x.t.hmyYK8) : w ? x.intl.string(x.t.JY1i0u) : x.intl.string(x.t.fEGjVQ)
+        children: w ? x.intl.string(x.t.nD78oa) : O && C ? x.intl.string(x.t.hmyYK8) : O ? x.intl.string(x.t.JY1i0u) : x.intl.string(x.t.fEGjVQ)
       })]
     })]
   })

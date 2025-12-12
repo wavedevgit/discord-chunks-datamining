@@ -19,7 +19,7 @@ require.r(exports), require.d(exports, {
   isThrottled: () => K,
   trackMaker: () => q
 }), require("./35282.js"), require("./704826.js"), require("./413496.js"), require("./433524.js"), require("./388685.js");
-var a, Chunk348327 = require("./348327.js"),
+var o, Chunk348327 = require("./348327.js"),
   s = require.n(Chunk348327),
   Chunk512722 = require("./512722.js"),
   c = require.n(Chunk512722),
@@ -84,7 +84,7 @@ if (null != R) {
   let e, t = R.remoteApp.getVersion(),
     n = R.process.platform,
     i = R.os.release,
-    o = R.os.arch,
+    a = R.os.arch,
     s = R.os.appArch,
     l = R.remoteApp.getReleaseChannel(),
     c = (0, Chunk627420.qf)();
@@ -112,7 +112,7 @@ if (null != R) {
       system_locale: c,
       has_client_mods: (0, Chunk903772.e)(),
       client_launch_id: Chunk923452.s
-    }, (null == (a = d().name) ? true : a.toLocaleLowerCase()) === "electron" && (r.browser_user_agent = d().ua || "", r.browser_version = d().version || ""), "linux" === require) {
+    }, (null == (o = d().name) ? true : o.toLocaleLowerCase()) === "electron" && (r.browser_user_agent = d().ua || "", r.browser_version = d().version || ""), "linux" === require) {
     let e = R.crashReporter.getMetadata();
     r.window_manager = module.wm, r.distro = module.distro, r.runtime_environment = module.runtime_environment, r.display_server = module.display_server
   } else "darwin" === require ? r.os_sdk_version = null == i ? true : i.split(".")[0] : "win32" === require && (r.os_sdk_version = null == i ? true : i.split(".")[2])
@@ -250,10 +250,10 @@ function W() {
   let n = {},
     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
   r && (null == require.release_channel || "" === require.release_channel) && (require.release_channel = r.split("-")[0]);
-  let i = parseInt("479384", 10);
+  let i = parseInt("479390", 10);
   isNaN(i) || (require.client_build_number = i);
-  let a = null == R || null == (e = (t = R.remoteApp).getBuildNumber) ? true : module.call(exports);
-  return isNaN(a) || (require.native_build_number = a), require.client_event_source = Y(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require
+  let o = null == R || null == (e = (t = R.remoteApp).getBuildNumber) ? true : module.call(exports);
+  return isNaN(o) || (require.native_build_number = o), require.client_event_source = Y(), require.has_client_mods = (0, Chunk903772.e)(), require.client_launch_id = Chunk923452.s, require
 }
 
 function K(e) {
@@ -274,30 +274,30 @@ let q = e => {
     analyticEventConfigs: t,
     dispatcher: r,
     TRACK_ACTION_NAME: i
-  } = e, a = (0, h.$)(r, i);
+  } = e, o = (0, h.$)(r, i);
   return function(e, r) {
     let i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
     if (null != n.g.isServerRendering && true === n.g.isServerRendering) return Promise.resolve();
-    let o = null != r ? r : {},
+    let a = null != r ? r : {},
       l = t[e];
     if ("function" == typeof l) {
       var u;
-      l = null != (u = l(o)) ? u : null
+      l = null != (u = l(a)) ? u : null
     }
     if (null != l)
       if ("throttlePeriod" in l) {
-        let t = [e, ...l.throttleKeys(o)].join("_");
+        let t = [e, ...l.throttleKeys(a)].join("_");
         if (K(t) || "number" == typeof l.throttlePercent && Math.random() > l.throttlePercent) return Promise.resolve();
         if (l.deduplicate) {
           let e = P[t];
-          if (s()(e, o)) return Promise.resolve();
-          P[t] = o
+          if (s()(e, a)) return Promise.resolve();
+          P[t] = a
         }
         N[t] = Date.now() + l.throttlePeriod
       } else if ("throttlePercent" in l) {
       if (Math.random() > l.throttlePercent) return Promise.resolve()
     } else c()(false, "Unsupported analytics event config: ".concat(l));
-    return a(e, r, i)
+    return o(e, r, i)
   }
 };
 

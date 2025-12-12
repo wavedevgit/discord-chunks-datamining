@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk14846 = require("./14846.js"),
+  Chunk402529 = require("./402529.js"),
   s = function(e) {
     return e.SELECT_PAYMENT_METHOD = "SELECT_PAYMENT_METHOD", e.ADD_NEW_PAYMENT_METHOD = "ADD_NEW_PAYMENT_METHOD", e
   }({});
@@ -21,29 +21,29 @@ function l(e) {
   if (!t) return null;
   switch (t) {
     case "SELECT_PAYMENT_METHOD":
-      n = a.intl.string(a.t.Tdb5qb);
+      n = o.intl.string(o.t.Tdb5qb);
       break;
     case "ADD_NEW_PAYMENT_METHOD":
-      n = a.intl.string(a.t["6d44F5"])
+      n = o.intl.string(o.t["6d44F5"])
   }
   return (0, r.jsxs)("div", {
-    className: o.paymentRestrictionBannerContainer,
+    className: a.paymentRestrictionBannerContainer,
     children: [(0, r.jsxs)("div", {
-      className: o.appsIconContainer,
+      className: a.appsIconContainer,
       children: [(0, r.jsx)(i.jje, {
         size: "md",
         color: "white",
-        className: o.icon
+        className: a.icon
       }), (0, r.jsx)(i.jje, {
         size: "md",
         color: "currentColor",
-        className: o.iconDark
+        className: a.iconDark
       })]
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: n
     }), (0, r.jsx)("div", {
-      className: o.paymentRestrictionBannerBackgroundImage
+      className: a.paymentRestrictionBannerBackgroundImage
     })]
   })
 }

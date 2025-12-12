@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk78839 = require("./78839.js"),
   Chunk74538 = require("./74538.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk65439 = require("./65439.js");
+  Chunk409150 = require("./409150.js");
 async function O(e, t, n, r) {
   let i = (0, E.MY)(e, t);
   await (0, d.bG)(n), await (0, u.Mg)(e, {
@@ -52,9 +52,9 @@ function v(e) {
 
 function S() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk65439.body,
+    className: Chunk409150.body,
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk65439.uncancelImage
+      className: Chunk409150.uncancelImage
     }), (0, Chunk54381.jsx)("div", {
       children: Chunk388032.intl.string(Chunk388032.t.G27uHe)
     })]
@@ -65,7 +65,7 @@ function I(e) {
   let {
     guildBoostSlotId: t,
     transitionState: n,
-    onClose: a
+    onClose: o
   } = e, {
     analyticsLocations: d
   } = (0, m.ZP)(_.Z.GUILD_BOOST_UNCANCELLATION_MODAL);
@@ -80,7 +80,7 @@ function I(e) {
       if (null != y) try {
         A(true), P(null);
         let e = (0, h.g)(y, 1);
-        o()((0, E.uV)(e) <= (0, E.uV)(y.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await O(y, e, t, d), T(2)
+        a()((0, E.uV)(e) <= (0, E.uV)(y.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await O(y, e, t, d), T(2)
       } catch (t) {
         let e = t instanceof f.HF ? t : new f.HF(t, t.code);
         P(b.intl.string(e.code === p.SM.BILLING_PAUSE_INVALID_UPDATE ? b.t.dq4vq7 : b.t["5mlOCW"])), A(false)
@@ -103,7 +103,7 @@ function I(e) {
             variant: "secondary",
             text: b.intl.string(b.t.oEAioF),
             disabled: C,
-            onClick: a
+            onClick: o
           }, {
             variant: "primary",
             text: b.intl.string(b.t.etZP4B),
@@ -114,7 +114,7 @@ function I(e) {
           return [{
             variant: "primary",
             text: b.intl.string(b.t.BddRzS),
-            onClick: a
+            onClick: o
           }];
         default:
           return []
@@ -137,7 +137,7 @@ function I(e) {
     value: d,
     children: (0, r.jsx)(s.Modal, {
       transitionState: n,
-      onClose: async () => await a(),
+      onClose: async () => await o(),
       size: "sm",
       title: w(),
       actions: D(),

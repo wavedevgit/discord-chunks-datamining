@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk518738 = require("./518738.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk5192 = require("./5192.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk740587 = require("./740587.js");
+  Chunk914933 = require("./914933.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -63,7 +63,7 @@ function v(e) {
   let {
     guildId: t,
     role: n,
-    theme: a,
+    theme: o,
     content: E = h.intl.string(h.t["6OSasb"]),
     className: y
   } = e, v = (0, s.e7)([p.default], () => p.default.getCurrentUser()), S = _.ZP.useName(t, null, v), I = (0, c.Kz)(n), T = i.useMemo(() => (0, u.e5)(O(b({}, (0, d.ZP)({
@@ -83,9 +83,9 @@ function v(e) {
     colorStrings: n.colorStrings
   };
   return (0, r.jsx)(l.f6W, {
-    theme: a,
+    theme: o,
     children: e => (0, r.jsx)("div", {
-      className: o()(e, g.container, y),
+      className: a()(e, g.container, y),
       children: (0, r.jsx)(f.Z, {
         hideTimestamp: true,
         author: C,

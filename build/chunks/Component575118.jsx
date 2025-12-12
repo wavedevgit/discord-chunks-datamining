@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk313666 = require("./313666.jsx"),
   Chunk307267 = require("./307267.jsx"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk821541 = require("./821541.jsx"),
   Chunk777207 = require("./777207.jsx"),
   Chunk624653 = require("./624653.js"),
-  Chunk51766 = require("./51766.js");
+  Chunk325380 = require("./325380.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,13 +61,13 @@ function v(e) {
     leading: t,
     trailing: n,
     hasGradient: i,
-    children: a
+    children: o
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [null != t && (0, r.jsx)("div", {
       className: E.headerLeading,
       children: t
-    }), a, (0, r.jsxs)("div", {
+    }), o, (0, r.jsxs)("div", {
       className: E.headerTrailing,
       children: [null != n && n, (0, r.jsx)(O, {
         shouldColorMix: i
@@ -81,14 +81,14 @@ function S(e) {
     leading: t,
     trailing: n,
     hasGradient: i,
-    children: a
+    children: o
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [null != t && (0, r.jsx)("div", {
-      className: o()(E.headerLeading, E.headerLeadingAbsolute),
+      className: a()(E.headerLeading, E.headerLeadingAbsolute),
       children: t
-    }), a, (0, r.jsxs)("div", {
-      className: o()(E.headerTrailing, E.headerTrailingAbsolute),
+    }), o, (0, r.jsxs)("div", {
+      className: a()(E.headerTrailing, E.headerTrailingAbsolute),
       children: [null != n && n, (0, r.jsx)(O, {
         shouldColorMix: i
       })]
@@ -100,7 +100,7 @@ function I(e) {
   let {
     leading: t,
     trailing: n,
-    hasGradient: a,
+    hasGradient: o,
     children: s
   } = e, [l, c] = i.useState(24), [u, d] = i.useState(24), f = i.useRef(null), p = i.useRef(null);
   return i.useLayoutEffect(() => {
@@ -121,7 +121,7 @@ function I(e) {
   }, []), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       ref: f,
-      className: o()(E.headerLeading, E.headerLeadingAbsolute),
+      className: a()(E.headerLeading, E.headerLeadingAbsolute),
       children: t
     }), (0, r.jsx)("div", {
       className: E.headerLeadingSpacer,
@@ -137,9 +137,9 @@ function I(e) {
       }
     }), (0, r.jsxs)("div", {
       ref: p,
-      className: o()(E.headerTrailing, E.headerTrailingAbsolute),
+      className: a()(E.headerTrailing, E.headerTrailingAbsolute),
       children: [null != n && n, (0, r.jsx)(O, {
-        shouldColorMix: a
+        shouldColorMix: o
       })]
     })]
   })
@@ -150,7 +150,7 @@ function T(e) {
     gradientColor: t,
     graphic: n,
     badge: i,
-    title: a,
+    title: o,
     titleTextVariant: s,
     subtitle: l,
     alignCenter: c = false,
@@ -163,7 +163,7 @@ function T(e) {
   } = (0, g.v)(), {
     i18n: R
   } = (0, _.ZF)(), w = null != t, D = (0, f.MW)(n), x = c ? D ? S : I : v, L = null != n && (0, r.jsx)("div", {
-    className: o()(E.headerGraphic, {
+    className: a()(E.headerGraphic, {
       [E.headerGraphicAnimated]: D
     }),
     children: (0, r.jsx)("div", {
@@ -175,9 +175,9 @@ function T(e) {
     id: P,
     variant: null != s ? s : "heading-lg/semibold",
     color: "text-strong",
-    children: a
+    children: o
   }), M = null != n ? L : j, k = (0, r.jsx)("header", {
-    className: o()(E.section, E.header, {
+    className: a()(E.section, E.header, {
       [E.headerCentered]: c
     }),
     children: (0, r.jsxs)(m.K, {
@@ -202,7 +202,7 @@ function T(e) {
         })
       }), (0, r.jsx)(C, {
         badge: i
-      }), null != n && null != a && j, null != l && (0, r.jsx)(A, {
+      }), null != n && null != o && j, null != l && (0, r.jsx)(A, {
         subtitle: l
       })]
     })

@@ -3,30 +3,30 @@
 "use strict";
 require.d(exports, {
   GF: () => s,
-  KX: () => o,
-  j_: () => a,
+  KX: () => a,
+  j_: () => o,
   z$: () => l
 });
 var Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
-  a = function(e) {
+  o = function(e) {
     return e.VIEW = "view", e.PLAY = "play", e.CLOUD_PLAY = "cloud_play", e.JOIN = "join", e.ADD_APP = "add_app", e.JOIN_SERVER = "join_server", e.INVITE = "invite", e.SYNC = "sync", e.CONTENT = "content", e.BANNER = "banner", e.STREAM = "stream", e.CONNECT_ACCOUNT = "connect_account", e
   }({});
 
-function o(e) {
+function a(e) {
   let {
     applicationId: t,
     linkType: n,
-    area: a,
-    referrerId: o,
+    area: o,
+    referrerId: a,
     customId: s,
     isDeadEnd: l
   } = e;
   r.default.track(i.rMx.APP_EMBED_CLICKED, {
     application_id: t,
     link_type: n,
-    area: a,
-    referrer_id: o,
+    area: o,
+    referrer_id: a,
     custom_id: s,
     is_dead_end: l
   })
@@ -36,8 +36,8 @@ function s(e) {
   let {
     appId: t,
     linkType: n,
-    referrerId: a,
-    customId: o,
+    referrerId: o,
+    customId: a,
     guildId: s,
     channelId: l,
     messageId: c
@@ -45,19 +45,19 @@ function s(e) {
   r.default.track(i.rMx.APP_EMBED_VIEWED, {
     application_id: t,
     link_type: n,
-    referrer_id: a,
-    custom_id: o,
+    referrer_id: o,
+    custom_id: a,
     guild_id: s,
     channel_id: l,
     message_id: c
   })
 }
 
-function l(e, t, n, a) {
+function l(e, t, n, o) {
   r.default.track(i.rMx.APP_EMBED_LINK_SENT, {
     application_id: e,
     link_type: t,
     referrer_id: n,
-    custom_id: a
+    custom_id: o
   })
 }

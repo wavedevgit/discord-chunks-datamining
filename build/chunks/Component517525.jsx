@@ -1,4 +1,4 @@
-/** Chunk was on 48615 **/
+/** Chunk was on 46931 **/
 /** chunk id: 517525, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => L
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk740767 = require("./740767.js");
+  Chunk386393 = require("./386393.js");
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -100,7 +100,7 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       } = e,
       {
         analyticsLocations: N
-      } = (0, m.ZP)(),
+      } = (0, _.ZP)(),
       D = null != (0, S.Z)(o);
     try {
       t = (0, y.nG)(A)
@@ -115,9 +115,9 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     let M = t || l,
       {
         location: k
-      } = (0, b.O)(),
-      L = (0, s.e7)([h.default], () => h.default.getCurrentUser()),
-      F = c && !_.ZP.isPremium(L, C.PremiumTypes.TIER_1) && !_.ZP.canStreamQuality(_.ZP.StreamQuality.MID, L),
+      } = (0, m.O)(),
+      L = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
+      F = c && !E.ZP.isPremium(L, C.PremiumTypes.TIER_1) && !E.ZP.canStreamQuality(E.ZP.StreamQuality.MID, L),
       V = i.useCallback(() => {
         F && M && (0, p.ZDy)(async () => {
           let {
@@ -129,7 +129,7 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         })
       }, [F, M, k]);
     if (i.useEffect(() => {
-        !x && M && (E.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+        !x && M && (h.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
           type: C.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: l,
@@ -173,24 +173,24 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       size: c,
       className: s,
       premiumIndicator: u
-    } = e, [d, f] = i.useState(false), b = (0, y.W3)(t), {
-      reducedMotion: m
-    } = i.useContext(p.Sfi), h = n && null != b;
+    } = e, [d, f] = i.useState(false), m = (0, y.W3)(t), {
+      reducedMotion: _
+    } = i.useContext(p.Sfi), b = n && null != m;
     i.useEffect(() => {
       (0, v.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
         dispatchWait: true
       })
     }, [t]);
-    let E = (0, p.Yzy)(h, {
+    let h = (0, p.Yzy)(b, {
         enter: {
-          from: m.enabled ? T : Z,
-          to: m.enabled ? A : R
+          from: _.enabled ? T : Z,
+          to: _.enabled ? A : R
         },
-        leave: m.enabled ? T : Z,
+        leave: _.enabled ? T : Z,
         config: M
       }, "animate-always"),
-      _ = (0, p.q_F)({
-        to: h ? D : N,
+      E = (0, p.q_F)({
+        to: b ? D : N,
         config: M
       }, "animate-always");
     return (e => {
@@ -201,7 +201,7 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       return (0, r.jsxs)("div", j(P({
         className: a()(I.streamQualityIndicator, n)
       }, i), {
-        children: [E((e, n) => n ? (0, r.jsx)(o.animated.div, {
+        children: [h((e, n) => n ? (0, r.jsx)(o.animated.div, {
           style: e,
           children: (0, r.jsx)(k, {
             className: I.liveQualityIndicator,
@@ -212,15 +212,15 @@ let x = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
             didTrackUpsellViewed: d,
             setDidTrackUpsellViewed: f,
             premiumIndicator: u,
-            quality: b
+            quality: m
           })
         }) : null), (0, r.jsx)(o.animated.div, {
-          style: _,
+          style: E,
           className: I.liveIndicator,
           children: (0, r.jsx)(g.ZP, {
             look: g.jZ.RED,
             size: c,
-            shape: h ? p.Dv2.ROUND_RIGHT : p.Dv2.ROUND
+            shape: b ? p.Dv2.ROUND_RIGHT : p.Dv2.ROUND
           })
         })]
       }))

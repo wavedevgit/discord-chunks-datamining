@@ -26,9 +26,9 @@ function s(e) {
     scale: 1,
     opacity: 1
   };
-  return (0, o.Yzy)(t, {
+  return (0, a.Yzy)(t, {
     keys: e => e ? "tooltip" : "empty",
-    config: a.F,
+    config: o.F,
     from: l.enabled ? u : c,
     enter: d,
     leave: l.enabled ? u : c,

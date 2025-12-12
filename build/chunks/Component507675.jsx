@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk600164 = require("./600164.jsx"),
   Chunk112560 = require("./112560.jsx"),
-  Chunk474948 = require("./474948.js");
+  Chunk265251 = require("./265251.js");
 
 function s(e) {
   let {
@@ -19,11 +19,11 @@ function s(e) {
     size: c
   } = e;
   return (0, r.jsxs)(i.Z, {
-    className: o.root,
+    className: a.root,
     justify: i.Z.Justify.CENTER,
     align: i.Z.Align.CENTER,
     direction: i.Z.Direction.VERTICAL,
-    children: [(0, r.jsx)(a.Z, {
+    children: [(0, r.jsx)(o.Z, {
       header: t,
       description: n,
       errorCodeMessage: s,

@@ -40,8 +40,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -49,8 +49,8 @@ function p(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -61,7 +61,7 @@ function m(e) {
   } = e, i = p(e, ["user", "onClick"]);
   return (0, s.q)(t.id), (0, r.jsx)(c.O1, f({
     action: "PRESS_APP_STOREFRONT",
-    icon: a.EOn,
+    icon: o.EOn,
     text: u.intl.string(u.t.V7j5aZ),
     onClick: n,
     variant: "primary"
@@ -78,13 +78,13 @@ function h(e) {
       var e;
       return null == (e = l.Z.getUserProfile(s.id)) ? true : e.application
     }),
-    _ = (0, o.R)(null != (t = null == d ? true : d.id) ? t : "");
+    _ = (0, a.R)(null != (t = null == d ? true : d.id) ? t : "");
   if (null == d || !_) return null;
   let h = () => {
-    (0, a.ZDy)(async () => {
+    (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("77803"), n.e("65672")]).then(n.bind(n, 7225));
+      } = await Promise.all([n.e("77803"), n.e("42124")]).then(n.bind(n, 7225));
       return t => (0, r.jsx)(e, f({
         appId: d.id,
         guildId: c

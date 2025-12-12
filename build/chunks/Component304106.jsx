@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk55935 = require("./55935.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk764451 = require("./764451.js");
+  Chunk529368 = require("./529368.js");
 let p = e => {
     let {
       IconComponent: t,
@@ -73,7 +73,7 @@ class g extends Chunk473749.Component {
         className: exports,
         circle: (0, Chunk54381.jsx)(p, {
           IconComponent: Chunk481060.d$P,
-          className: Chunk764451.earlyAccess
+          className: Chunk529368.earlyAccess
         }),
         smallHeader: Chunk388032.intl.string(Chunk388032.t.HYys0s),
         text: (0, Chunk55935.vc)(module.releaseDate, "LL")
@@ -82,7 +82,7 @@ class g extends Chunk473749.Component {
         className: exports,
         circle: (0, Chunk54381.jsx)(p, {
           IconComponent: Chunk481060.d$P,
-          className: Chunk764451.earlyAccess
+          className: Chunk529368.earlyAccess
         }),
         text: Chunk388032.intl.string(Chunk388032.t.HYys0s)
       });
@@ -96,7 +96,7 @@ class g extends Chunk473749.Component {
       className: exports,
       circle: (0, Chunk54381.jsx)(p, {
         IconComponent: Chunk481060.SrA,
-        className: Chunk764451.premiumCircle
+        className: Chunk529368.premiumCircle
       }),
       text: Chunk388032.intl.string(Chunk388032.t.R9SwVl)
     }) : null

@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 616286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  T: () => j
+  T: () => E
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,15 +23,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(e) {
+function O(e) {
   let t = (0, s.e7)([m.Z], () => !(0, o.isEmpty)(m.Z.getTypingUsers(e)), [e]),
-    n = (0, s.e7)([h.Z], () => h.Z.getVoiceChannelId() === e, [e]),
+    n = (0, s.e7)([f.Z], () => f.Z.getVoiceChannelId() === e, [e]),
     {
       unreadCount: i,
       mentionCount: r
-    } = (0, s.cj)([f.ZP], () => ({
-      unreadCount: f.ZP.getUnreadCount(e),
-      mentionCount: f.ZP.getMentionCount(e)
+    } = (0, s.cj)([h.ZP], () => ({
+      unreadCount: h.ZP.getUnreadCount(e),
+      mentionCount: h.ZP.getMentionCount(e)
     }), [e]);
   return {
     unreadCount: i,
@@ -41,7 +41,7 @@ function x(e) {
   }
 }
 
-function E(e) {
+function x(e) {
   let {
     className: t,
     channelId: n
@@ -50,7 +50,7 @@ function E(e) {
     mentionCount: l,
     isTyping: a,
     voiceChannelIsSelected: o
-  } = x(n);
+  } = O(n);
   return (0, i.jsx)(C.Z, {
     className: t,
     unreadCount: r,
@@ -60,17 +60,17 @@ function E(e) {
   })
 }
 
-function j(e) {
+function E(e) {
   let t;
   var {
     channelId: n,
     className: l,
     showingClassName: o,
-    onClick: f,
-    inPopout: h,
+    onClick: h,
+    inPopout: f,
     showRequestToSpeakSidebar: m,
     toggleRequestToSpeakSidebar: C
-  } = e, j = function(e, t) {
+  } = e, E = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -86,10 +86,10 @@ function j(e) {
     return r
   }(e, ["channelId", "className", "showingClassName", "onClick", "inPopout", "showRequestToSpeakSidebar", "toggleRequestToSpeakSidebar"]);
   let {
-    parentAnalyticsLocation: S
+    parentAnalyticsLocation: j
   } = (0, u.ZP)(), {
-    disabled: _
-  } = j, P = r.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
+    disabled: S
+  } = E, P = r.useRef(null), I = (0, s.e7)([d.Z], () => d.Z.getChatOpen(n), [n]), {
     isShowing: Z,
     unreadCount: T,
     mentionCount: N
@@ -98,7 +98,7 @@ function j(e) {
       unreadCount: t,
       mentionCount: n,
       isTyping: i
-    } = x(e), [l, a] = r.useState(false);
+    } = O(e), [l, a] = r.useState(false);
     return r.useEffect(() => {
       a(t > 0);
       let e = setTimeout(() => {
@@ -113,12 +113,12 @@ function j(e) {
       mentionCount: n
     }
   }(n), A = r.useCallback(() => {
-    (0, p.v)(S, p.d.CHAT, !I), null == f || f(), !I && m && (null == C || C()), c.Z.updateChatOpen(n, !I)
-  }, [n, I, f, m, C, S]), w = r.useCallback(e => {
+    (0, p.v)(j, p.d.CHAT, !I), null == h || h(), !I && m && (null == C || C()), c.Z.updateChatOpen(n, !I)
+  }, [n, I, h, m, C, j]), w = r.useCallback(e => {
     let {
       className: t
     } = e;
-    return (0, i.jsx)(E, {
+    return (0, i.jsx)(x, {
       className: t,
       channelId: n
     })
@@ -128,11 +128,11 @@ function j(e) {
   }, []);
   (0, g.yp)({
     event: v.CkL.FOCUS_CHAT_BUTTON,
-    handler: _ ? null : M
+    handler: S ? null : M
   });
   let [R, L] = r.useState(false), D = r.useCallback(() => {
-    h && L(true)
-  }, [h]);
+    f && L(true)
+  }, [f]);
   (0, g.yp)({
     event: v.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
     handler: D
@@ -144,10 +144,10 @@ function j(e) {
       clearTimeout(e)
     }
   }, [R]);
-  let k = [t = h && _ ? O.intl.string(O.t.DPgc5h) : I ? O.intl.string(O.t.nthdxB) : O.intl.string(O.t["5KxXrK"])];
-  return N > 0 && k.push(O.intl.formatToPlainString(O.t["3l1GOx"], {
+  let k = [t = f && S ? _.intl.string(_.t.DPgc5h) : I ? _.intl.string(_.t.nthdxB) : _.intl.string(_.t["5KxXrK"])];
+  return N > 0 && k.push(_.intl.formatToPlainString(_.t["3l1GOx"], {
     mentionCount: N
-  })), T > 0 && k.push(O.intl.string(O.t.x5zAGZ)), (0, i.jsx)(y.Z, function(e) {
+  })), T > 0 && k.push(_.intl.string(_.t.x5zAGZ)), (0, i.jsx)(y.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -175,5 +175,5 @@ function j(e) {
       [o]: Z
     }),
     forceTooltipOpen: R
-  }, j))
+  }, E))
 }

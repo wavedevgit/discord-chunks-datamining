@@ -1,4 +1,4 @@
-/** Chunk was on 44183 **/
+/** Chunk was on 47863 **/
 /** chunk id: 567126, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Hu: () => X,
@@ -44,7 +44,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk324805 = require("./324805.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk2688 = require("./2688.js");
+  Chunk336606 = require("./336606.js");
 
 function U(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -66,8 +66,8 @@ function U(e) {
 }
 
 function F(e, t, n, r) {
-  let i = (0, C.isWindows)() ? (0, E.Z)(g.ZP, y.Z) : null,
-    l = g.ZP.getRunningGames(),
+  let i = (0, C.isWindows)() ? (0, E.Z)(_.ZP, y.Z) : null,
+    l = _.ZP.getRunningGames(),
     s = null == n ? true : n.split(":")[1],
     o = e.id.split(":")[1];
   if (null != s && s === o) return 0;
@@ -79,7 +79,7 @@ function F(e, t, n, r) {
 }
 
 function H(e, t, n) {
-  let r = (0, b.Z)({
+  let r = (0, v.Z)({
     location: D.dr.STREAM_SOURCE_SELECT
   });
   return i.useMemo(() => {
@@ -106,7 +106,7 @@ function W(e) {
     enableGoLiveCaptureCard: l
   } = O.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = S.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, p] = i.useState(null), [b, j] = i.useState(null), [y, C] = i.useState(null), w = null != y && y.length > 0, [Z, P] = i.useState(c.vA.WINDOW), [E, T] = i.useState(false), A = i.useRef(null), M = i.useRef(new u.Xp), D = (0, d.e7)([g.ZP], () => g.ZP.getRunningGames()), U = H((0, d.e7)([v.Z], () => v.Z.quests), D, b), W = i.useMemo(() => null == b ? null : [...b].sort((e, t) => F(t, null == U ? true : U.source.id) - F(e, null == U ? true : U.source.id)), [U, b]);
+  }), o = b.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, p] = i.useState(null), [v, j] = i.useState(null), [y, C] = i.useState(null), w = null != y && y.length > 0, [Z, P] = i.useState(c.vA.WINDOW), [E, T] = i.useState(false), A = i.useRef(null), M = i.useRef(new u.Xp), D = (0, d.e7)([_.ZP], () => _.ZP.getRunningGames()), U = H((0, d.e7)([x.Z], () => x.Z.quests), D, v), W = i.useMemo(() => null == v ? null : [...v].sort((e, t) => F(t, null == U ? true : U.source.id) - F(e, null == U ? true : U.source.id)), [U, v]);
   i.useEffect(() => {
     let e = M.current;
     return (0, I.t)({
@@ -138,7 +138,7 @@ function W(e) {
     }, []),
     [z, J] = i.useState(true);
   i.useEffect(() => {
-    x.Z.hasPermission(k.Eu.SCREEN_RECORDING, {
+    g.Z.hasPermission(k.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
     }).then(J)
   }, []);
@@ -214,7 +214,7 @@ function W(e) {
         let e = A.current;
         null != e && T(!e.isScrolledToTop())
       },
-      children: [Z === c.vA.WINDOW && null != U && (0, r.jsx)(_.Z, {
+      children: [Z === c.vA.WINDOW && null != U && (0, r.jsx)(S.Z, {
         quest: U.quest
       }), (0, r.jsx)(m.Z, {
         layout: m.Z.Layout.WRAP,
@@ -296,7 +296,7 @@ function J(e) {
   i.useEffect(() => {
     let e = h.current,
       t = () => {
-        let e = Object.entries(S.Z.getVideoDevices()).filter(e => {
+        let e = Object.entries(b.Z.getVideoDevices()).filter(e => {
           let [t, n] = e;
           return !n.disabled
         });
@@ -329,30 +329,30 @@ function J(e) {
         url: ""
       })
     }, [t, c]),
-    g = (0, C.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, M.jR),
-    x = (0, C.isMac)(),
-    v = S.Z.getUseGamescopeCapture(),
-    [b, j] = i.useState(false),
-    _ = i.useCallback(() => {
-      j(!b)
-    }, [b]),
-    y = g ? (0, r.jsx)(V, {
+    _ = (0, C.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, M.jR),
+    g = (0, C.isMac)(),
+    x = b.Z.getUseGamescopeCapture(),
+    [v, j] = i.useState(false),
+    S = i.useCallback(() => {
+      j(!v)
+    }, [v]),
+    y = _ ? (0, r.jsx)(V, {
       onSelect: t
     }) : (0, r.jsxs)("div", {
       className: G.nativePickerTypes,
       children: [(0, r.jsx)(z, {
         onSelect: t,
-        id: v ? "gamescope" : "screen",
+        id: x ? "gamescope" : "screen",
         name: B.intl.string(B.t.R4wpLN),
         text: B.intl.string(B.t.cVUFXY),
         icon: f.pzj
-      }), !v && (0, r.jsx)(z, {
+      }), !x && (0, r.jsx)(z, {
         onSelect: t,
         id: "window",
         name: B.intl.string(B.t["+SLJCh"]),
         text: B.intl.string(B.t.dG2A1E),
         icon: f.GON
-      }), x ? (0, r.jsx)(z, {
+      }), g ? (0, r.jsx)(z, {
         onSelect: t,
         id: "app",
         name: B.intl.string(B.t.ct7AKQ),
@@ -368,9 +368,9 @@ function J(e) {
       color: "interactive-text-default",
       children: B.intl.string(B.t.XyYoFc)
     }), y, 0 === l.length ? null : (0, r.jsxs)("div", {
-      className: s()(G.nativePickerCaptureSection, b ? null : G.nativePickerCollapsed),
+      className: s()(G.nativePickerCaptureSection, v ? null : G.nativePickerCollapsed),
       children: [(0, r.jsxs)(f.P3F, {
-        onClick: _,
+        onClick: S,
         className: G.nativePickerLabel,
         children: [(0, r.jsx)(f.Text, {
           className: G.nativeCaptureDevicesText,
@@ -411,7 +411,7 @@ function X(e) {
     lastPickerError: o
   } = (0, T.Z)(t, n);
   return i.useEffect(() => {
-    S.Z.getUseGamescopeCapture() || ((0, C.isLinux)() || (0, C.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, M.jR) ? (0, Z.T)(l) : (0, Z.t)())
+    b.Z.getUseGamescopeCapture() || ((0, C.isLinux)() || (0, C.isMac)() && a().satisfies(null === p.Z || true === p.Z ? true : p.Z.os.release, M.jR) ? (0, Z.T)(l) : (0, Z.t)())
   }, [l]), s === P.Uc.Error ? (0, r.jsx)(f.Text, {
     className: G.errorMessage,
     variant: "text-md/normal",

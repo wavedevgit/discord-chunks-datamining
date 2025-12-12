@@ -21,7 +21,7 @@ let u = (0, Chunk473749.createContext)(null),
     let {
       dialogProps: f,
       titleProps: p
-    } = (0, o.R)({
+    } = (0, a.R)({
       ...e,
       "aria-labelledby": n
     }, t), _ = (0, c.useContext)(d);
@@ -44,7 +44,7 @@ let u = (0, Chunk473749.createContext)(null),
       slot: e.slot || true
     }, c.createElement(i.zt, {
       values: [
-        [a.ni, {
+        [o.ni, {
           slots: {
             [i.hO]: {},
             title: {

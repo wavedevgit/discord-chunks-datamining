@@ -3,9 +3,9 @@
 "use strict";
 var Chunk98405 = require("./98405.js"),
   Chunk127849 = require("./127849.js"),
-  a = require("./390827.js").set,
+  o = require("./390827.js").set,
   Chunk781638 = require("./781638.js"),
-  s = Chunk127849.setImmediate ? Chunk781638(a, false) : a;
+  s = Chunk127849.setImmediate ? Chunk781638(o, false) : o;
 Chunk98405({
   global: true,
   bind: true,

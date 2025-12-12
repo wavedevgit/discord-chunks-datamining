@@ -1,8 +1,8 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 81509, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => O
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -18,58 +18,58 @@ var Chunk120356 = require("./120356.js"),
   Chunk594278 = require("./594278.jsx"),
   Chunk549631 = require("./549631.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk130194 = require("./130194.js");
+  Chunk980989 = require("./980989.js");
 
-function h(e) {
+function x(e) {
   let {
     subscribers: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: p.guildSubscriberCount,
+    className: h.guildSubscriberCount,
     children: [(0, r.jsx)("div", {
-      className: p.subscriberCountValue,
-      children: (0, r.jsx)(s.Text, {
+      className: h.subscriberCountValue,
+      children: (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "always-white",
         children: t
       })
     }), (0, r.jsxs)("div", {
-      className: p.subscriberCountText,
-      children: [(0, r.jsx)(m.Z, {
-        color: a.Z.colors.WHITE.css
-      }), (0, r.jsx)(s.Text, {
+      className: h.subscriberCountText,
+      children: [(0, r.jsx)(p.Z, {
+        color: s.Z.colors.WHITE.css
+      }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "always-white",
-        children: b.intl.string(b.t["3NNXPW"])
+        children: f.intl.string(f.t["3NNXPW"])
       })]
     })]
   })
 }
 
-function x(e) {
+function b(e) {
   let {
     guildName: t,
     guildIcon: n,
     guildAvatarUrl: i,
     subscriberCount: l
-  } = e, a = (0, u.dangerouslyConstructGuildRecordFromUntypedObject)({
+  } = e, s = (0, d.dangerouslyConstructGuildRecordFromUntypedObject)({
     name: t,
     icon: n
   });
   return (0, r.jsxs)("div", {
-    className: p.guildCardHeader,
-    children: [(0, r.jsx)(d.Z, {
-      className: p.guildCardHeaderAvatar,
+    className: h.guildCardHeader,
+    children: [(0, r.jsx)(u.Z, {
+      className: h.guildCardHeaderAvatar,
       iconSrc: i,
-      guild: a,
-      size: d.Z.Sizes.LARGE
+      guild: s,
+      size: u.Z.Sizes.LARGE
     }), (0, r.jsxs)("div", {
-      className: p.guildCardHeaderTitle,
-      children: [(0, r.jsx)(s.Heading, {
+      className: h.guildCardHeaderTitle,
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
         children: t
-      }), null != l && (0, r.jsx)(h, {
+      }), null != l && (0, r.jsx)(x, {
         subscribers: l
       })]
     })]
@@ -83,139 +83,139 @@ function j(e) {
     quoteAttributionTitle: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: p.guildCardQuote,
-    children: [(0, r.jsx)(s.Text, {
+    className: h.guildCardQuote,
+    children: [(0, r.jsx)(a.Text, {
       variant: "text-lg/normal",
       color: "interactive-text-active",
       children: t
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "interactive-text-active",
-      children: b.intl.format(b.t.m0b6Kj, {
+      children: f.intl.format(f.t.m0b6Kj, {
         attributionName: n,
-        attributionTitle: null != i ? i : b.intl.string(b.t.pclUFJ)
+        attributionTitle: null != i ? i : f.intl.string(f.t.pclUFJ)
       })
     })]
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     emojisToShow: t,
     notShownEmojiCount: n,
     storePageUrl: i
-  } = e, a = null != t && t.length > 0, d = () => {
+  } = e, s = null != t && t.length > 0, u = () => {
     null != i && (0, c.Z)(i)
   };
   return (0, r.jsx)("div", {
-    className: p.guildPremiumEmojis,
-    children: a ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(s.Text, {
+    className: h.guildPremiumEmojis,
+    children: s ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/semibold",
         color: "text-strong",
-        className: p.premiumEmojisTitle,
-        children: b.intl.string(b.t.wg53L8)
+        className: h.premiumEmojisTitle,
+        children: f.intl.string(f.t.wg53L8)
       }), (0, r.jsxs)("div", {
-        className: p.premiumEmojisRow,
+        className: h.premiumEmojisRow,
         children: [(0, r.jsxs)("div", {
-          className: l()(p.emojisContainer, null != n && p.fullEmojisContainer),
+          className: l()(h.emojisContainer, null != n && h.fullEmojisContainer),
           children: [t.map(e => (0, r.jsx)(o.Z, {
-            className: p.emoji,
+            className: h.emoji,
             emojiId: e.id,
             emojiName: e.name,
             animated: e.animated
           }, e.id)), null != n && (0, r.jsx)("div", {
-            className: p.extraEmojiCount,
-            children: (0, r.jsxs)(s.Text, {
+            className: h.extraEmojiCount,
+            children: (0, r.jsxs)(a.Text, {
               variant: "text-md/semibold",
               color: "text-default",
               children: ["+", n]
             })
           })]
         }), (0, r.jsx)("div", {
-          className: p.viewServerButtonContainer,
-          children: (0, r.jsx)(s.Button, {
+          className: h.viewServerButtonContainer,
+          children: (0, r.jsx)(a.Button, {
             variant: "secondary",
             disabled: null == i,
-            onClick: d,
-            text: b.intl.string(b.t.mQ2IGa),
+            onClick: u,
+            text: f.intl.string(f.t.mQ2IGa),
             fullWidth: true
           })
         })]
       })]
     }) : (0, r.jsx)("div", {
-      className: p.viewServerButtonContainer,
-      children: (0, r.jsx)(s.Button, {
+      className: h.viewServerButtonContainer,
+      children: (0, r.jsx)(a.Button, {
         variant: "secondary",
         disabled: null == i,
-        onClick: d,
-        text: b.intl.string(b.t.mQ2IGa),
+        onClick: u,
+        text: f.intl.string(f.t.mQ2IGa),
         fullWidth: true
       })
     })
   })
 }
 
-function O(e) {
+function v(e) {
   let {
     highlightedCreatorGuild: t
   } = e, {
     guild_id: n,
     quote: i,
     quote_attribution: l,
-    quote_attribution_title: a
+    quote_attribution_title: s
   } = t, o = (0, g.Z)(n, 4, 60), {
     isLoading: c,
-    hasAllImperativeDetails: d
+    hasAllImperativeDetails: u
   } = o;
   if (c) return (0, r.jsx)("div", {
-    className: p.guildCard,
-    children: (0, r.jsx)(s.$jN, {})
+    className: h.guildCard,
+    children: (0, r.jsx)(a.$jN, {})
   });
-  if (!d) return null;
+  if (!u) return null;
   let {
-    guildIcon: u,
-    guildName: f,
-    guildAvatarUrl: m,
-    subscriberCount: b,
-    emojisToShow: h,
-    notShownEmojiCount: O,
-    storePageUrl: C
+    guildIcon: d,
+    guildName: m,
+    guildAvatarUrl: p,
+    subscriberCount: f,
+    emojisToShow: x,
+    notShownEmojiCount: v,
+    storePageUrl: O
   } = o.details;
   return (0, r.jsxs)("div", {
-    className: p.guildCard,
-    children: [(0, r.jsx)(x, {
-      guildIcon: u,
-      guildName: f,
-      guildAvatarUrl: m,
-      subscriberCount: b
+    className: h.guildCard,
+    children: [(0, r.jsx)(b, {
+      guildIcon: d,
+      guildName: m,
+      guildAvatarUrl: p,
+      subscriberCount: f
     }), (0, r.jsx)(j, {
       quote: i,
       quoteAttribution: l,
-      quoteAttributionTitle: a
-    }), (0, r.jsx)(v, {
-      emojisToShow: h,
-      notShownEmojiCount: O,
-      storePageUrl: C
+      quoteAttributionTitle: s
+    }), (0, r.jsx)(_, {
+      emojisToShow: x,
+      notShownEmojiCount: v,
+      storePageUrl: O
     })]
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     highlightedCreators: t
   } = e;
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(s.Heading, {
+    children: [(0, r.jsx)(a.Heading, {
       variant: "heading-lg/semibold",
       color: "text-strong",
-      children: b.intl.string(b.t["tJp+QV"])
-    }), (0, r.jsx)(s.LZC, {
+      children: f.intl.string(f.t["tJp+QV"])
+    }), (0, r.jsx)(a.LZC, {
       size: 24
-    }), (0, r.jsx)(f.Z, {
-      carouselClassName: p.creatorGuildCarousel,
+    }), (0, r.jsx)(m.Z, {
+      carouselClassName: h.creatorGuildCarousel,
       items: t,
-      renderItem: e => (0, r.jsx)(O, {
+      renderItem: e => (0, r.jsx)(v, {
         highlightedCreatorGuild: e
       }),
       intervalBetweenAutomaticItemRotations: 7e3

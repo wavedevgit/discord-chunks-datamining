@@ -21,8 +21,8 @@ let l = e => {
         messageReference: l
       } = n;
       if (0 === r.length) return;
-      let c = (0, o.W)(e);
-      (0, a.UY)(r.map(e => e.id));
+      let c = (0, a.W)(e);
+      (0, o.UY)(r.map(e => e.id));
       try {
         await (0, s.e)(r, {
           channelId: c ? e : true,
@@ -30,7 +30,7 @@ let l = e => {
           messageReference: l
         })
       } catch (e) {} finally {
-        (0, a.UY)(null), null == i || i()
+        (0, o.UY)(null), null == i || i()
       }
     }, [e, t])
   }

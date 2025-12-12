@@ -38,10 +38,10 @@ function E(e) {
 function b(e) {
   if (e && null != g) {
     let e = Date.now() - g;
-    o.Z.track(f.rMx.OVERLAY_LOCKED, {
+    a.Z.track(f.rMx.OVERLAY_LOCKED, {
       unlocked_duration: e
     }), g = null
-  } else e || null != g || (g = Date.now(), o.Z.track(f.rMx.OVERLAY_UNLOCKED))
+  } else e || null != g || (g = Date.now(), a.Z.track(f.rMx.OVERLAY_UNLOCKED))
 }
 
 function y(e, t) {

@@ -2,12 +2,12 @@
 /** chunk id: 496158, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D: () => o
+  D: () => a
 });
 var Chunk473749 = require("./473749.js"),
   Chunk430824 = require("./430824.js");
 
-function a(e) {
+function o(e) {
   return "contextless" === e.type ? {
     channel: true,
     guild: true
@@ -17,6 +17,6 @@ function a(e) {
   }
 }
 
-function o(e) {
-  return r.useMemo(() => a(e), [e])
+function a(e) {
+  return r.useMemo(() => o(e), [e])
 }

@@ -3,19 +3,19 @@
 "use strict";
 require.d(exports, {
   D2: () => r,
-  nL: () => a
+  nL: () => o
 });
 let r = 3e3,
   i = {
     EARN: .25,
     SPEND: .3
   },
-  a = (e, t) => {
+  o = (e, t) => {
     let n = e > 0,
       r = t * i[n ? "EARN" : "SPEND"],
-      a = n ? t - r : 0;
+      o = n ? t - r : 0;
     return {
       duration: r,
-      delay: a
+      delay: o
     }
   }

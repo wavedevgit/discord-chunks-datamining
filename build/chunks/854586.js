@@ -25,10 +25,10 @@ function u(e, t, n, i) {
     returntrue
   }
   if (Array.isArray(e) || Array.isArray(t)) returnfalse;
-  let a = Object.keys(e),
-    o = Object.keys(t);
-  if (a.length !== o.length) returnfalse;
-  for (let r of a)
+  let o = Object.keys(e),
+    a = Object.keys(t);
+  if (o.length !== a.length) returnfalse;
+  for (let r of o)
     if (!Object.prototype.hasOwnProperty.call(t, r) || !u(e[r], t[r], n, false)) returnfalse;
   returntrue
 }
@@ -81,12 +81,12 @@ function _(e, t, n) {
         });
         continue
       }
-      let a = n[e];
-      d(i, a) || r.push({
+      let o = n[e];
+      d(i, o) || r.push({
         type: "value-mismatch",
         field: e,
         primaryValue: i,
-        shadowValue: a
+        shadowValue: o
       })
     } if (r.length > 0) return {
     type: "record-mismatch",
@@ -126,7 +126,7 @@ function h(e, t) {
       if (m(e) && m(t)) {
         let n = new Set(Object.keys(e)),
           i = new Set(Object.keys(t));
-        for (let a of Array.from(new Set([...n, ...i])).sort()) n.has(a) ? i.has(a) ? d(e[a], t[a]) || (console.group("Field ".concat(a, " mismatch:")), r(e[a], t[a]), console.groupEnd()) : console.info("Missing field in shadow: ".concat(a, " = "), e[a]) : console.info("Extra field in shadow: ".concat(a, " = "), t[a]);
+        for (let o of Array.from(new Set([...n, ...i])).sort()) n.has(o) ? i.has(o) ? d(e[o], t[o]) || (console.group("Field ".concat(o, " mismatch:")), r(e[o], t[o]), console.groupEnd()) : console.info("Missing field in shadow: ".concat(o, " = "), e[o]) : console.info("Extra field in shadow: ".concat(o, " = "), t[o]);
         return
       }
       console.info("Value mismatch: primary ", e, " shadow ", t)
@@ -139,7 +139,7 @@ function g(e, t, n) {
   if (0 === n.length) return;
   console.groupCollapsed("[".concat(t, "Store:").concat(e, "] Dual-read validation found ").concat(n.length, " error(s)")), console.info("Last Few Actions: ", i.qC());
   let r = [],
-    a = [];
+    o = [];
   n.forEach(e => {
     switch (e.type) {
       case "length-mismatch":
@@ -149,22 +149,22 @@ function g(e, t, n) {
         r.push(e.key);
         break;
       case "extra-record":
-        a.push(e.key);
+        o.push(e.key);
         break;
       case "record-mismatch":
         console.groupCollapsed('Record mismatch for key "'.concat(e.key, '"')), e.mismatches.forEach(e => {
           "field-missing" === e.type ? console.info("Field missing: ".concat(String(e.field))) : (console.groupCollapsed('Field "'.concat(String(e.field), '" value mismatch')), h(e.primaryValue, e.shadowValue), console.groupEnd())
         }), console.groupEnd()
     }
-  }), r.length > 0 && console.info("Missing records in shadow state: ".concat(r.join(", "))), a.length > 0 && console.info("Extra records in shadow state: ".concat(a.join(", "))), console.groupEnd()
+  }), r.length > 0 && console.info("Missing records in shadow state: ".concat(r.join(", "))), o.length > 0 && console.info("Extra records in shadow state: ".concat(o.join(", "))), console.groupEnd()
 }
 let E = new Map;
 
 function b(e, t) {
   var n, r;
   if (0 === t.length) return;
-  let a = i.Z$();
-  if (null == a) return void console.error("Trying to log mismatches, but no last dispatched action found");
+  let o = i.Z$();
+  if (null == o) return void console.error("Trying to log mismatches, but no last dispatched action found");
   let u = null != (n = E.get(e)) ? n : {
     mismatchesReported: 0,
     mismatchesByLastAction: new Map,
@@ -172,12 +172,12 @@ function b(e, t) {
     seenMismatches: new Set
   };
   if (E.set(e, u), u.mismatchesReported >= l) return;
-  let d = null != (r = u.mismatchesByLastAction.get(a)) ? r : 0;
+  let d = null != (r = u.mismatchesByLastAction.get(o)) ? r : 0;
   if (d >= c) return;
   let f = O(u, t);
-  null != f && (u.mismatchesByLastAction.set(a, d + 1), u.mismatchesReported++, o.default.track(s.rMx.LIBDISCORE_KV_DUAL_READ_ERROR, {
+  null != f && (u.mismatchesByLastAction.set(o, d + 1), u.mismatchesReported++, a.default.track(s.rMx.LIBDISCORE_KV_DUAL_READ_ERROR, {
     store_name: e,
-    action_type: a,
+    action_type: o,
     num_missing_keys: f.numMissingKeys,
     num_extra_keys: f.numExtraKeys,
     mismatched_fields: JSON.stringify(f.mismatchedFields)
@@ -194,7 +194,7 @@ function O(e, t) {
     numMissingKeys: 0,
     mismatchedFields: []
   };
-  for (let a of t) switch (a.type) {
+  for (let o of t) switch (o.type) {
     case "extra-record":
       n.numExtraKeys++;
       break;
@@ -202,19 +202,19 @@ function O(e, t) {
       n.numMissingKeys++;
       break;
     case "record-mismatch":
-      if (e.visitedEntries.has(a.primaryRecord)) continue;
-      for (let t of (e.visitedEntries.add(a.primaryRecord), a.mismatches)) {
+      if (e.visitedEntries.has(o.primaryRecord)) continue;
+      for (let t of (e.visitedEntries.add(o.primaryRecord), o.mismatches)) {
         let e = t.field.toString();
         switch (t.type) {
           case "field-missing":
             n.mismatchedFields.push({
               fieldName: e,
-              primaryType: y(a.primaryRecord[t.field]),
+              primaryType: y(o.primaryRecord[t.field]),
               shadowType: "missing"
             });
             break;
           case "value-mismatch":
-            null !== t.primaryValue && null !== t.shadowValue && "object" == typeof t.primaryValue && "object" == typeof t.shadowValue ? Array.isArray(t.primaryValue) && Array.isArray(t.shadowValue) ? o(e, t.primaryValue, t.shadowValue) : i(e, t.primaryValue, t.shadowValue) : r({
+            null !== t.primaryValue && null !== t.shadowValue && "object" == typeof t.primaryValue && "object" == typeof t.shadowValue ? Array.isArray(t.primaryValue) && Array.isArray(t.shadowValue) ? a(e, t.primaryValue, t.shadowValue) : i(e, t.primaryValue, t.shadowValue) : r({
               fieldName: e,
               primaryType: y(t.primaryValue),
               shadowType: y(t.shadowValue)
@@ -234,7 +234,7 @@ function O(e, t) {
   }
 
   function i(e, t, n) {
-    let a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : new Set;
+    let o = arguments.length > 3 && true !== arguments[3] ? arguments[3] : new Set;
     for (let s of Object.keys(t)) {
       let l = "".concat(e, ".").concat(s),
         c = t[s];
@@ -247,7 +247,7 @@ function O(e, t) {
         continue
       }
       let u = n[s];
-      c !== u && ("object" == typeof c && "object" == typeof u ? Array.isArray(c) && Array.isArray(u) ? o(l, c, u) : null == c || null == u || a.has(c) || (a.add(c), i(l, c, u, a)) : r({
+      c !== u && ("object" == typeof c && "object" == typeof u ? Array.isArray(c) && Array.isArray(u) ? a(l, c, u) : null == c || null == u || o.has(c) || (o.add(c), i(l, c, u, o)) : r({
         fieldName: l,
         primaryType: y(c),
         shadowType: y(u)
@@ -255,8 +255,8 @@ function O(e, t) {
     }
   }
 
-  function o(e, t, n) {
-    (0, a.E)(t, n) || r({
+  function a(e, t, n) {
+    (0, o.E)(t, n) || r({
       fieldName: e,
       primaryType: "array",
       shadowType: "array",

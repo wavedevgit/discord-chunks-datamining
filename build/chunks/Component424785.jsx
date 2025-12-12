@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 424785, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Q
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk194983 = require("./194983.jsx"),
   Chunk28664 = require("./28664.jsx"),
@@ -43,8 +43,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk642915 = require("./642915.js"),
-  Chunk257516 = require("./257516.js");
+  Chunk55940 = require("./55940.js"),
+  Chunk556295 = require("./556295.js");
 
 function z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -100,11 +100,11 @@ class Y extends Chunk98597.ZP {
       sortingPosition: t,
       isUserOver: n
     } = this.props;
-    if (require) return Chunk642915.containerUserOver;
+    if (require) return Chunk55940.containerUserOver;
     if (null != exports)
-      if (module > exports) return Chunk642915.containerDragAfter;
-      else return Chunk642915.containerDragBefore;
-    return Chunk642915.containerDefault
+      if (module > exports) return Chunk55940.containerDragAfter;
+      else return Chunk55940.containerDragBefore;
+    return Chunk55940.containerDefault
   }
   renderVoiceUsers() {
     let {
@@ -133,23 +133,23 @@ class Y extends Chunk98597.ZP {
       connected: n,
       locked: i,
       connectChannelDropTarget: l,
-      connectChannelDragSource: o,
+      connectChannelDragSource: a,
       connectUserDropTarget: s,
       connectDragPreview: d,
       canReorderChannel: f,
       canMoveMembers: h,
       stageInstance: p,
-      isSubscriptionGated: b,
-      needSubscriptionToAccess: m,
-      unread: y,
-      resolvedUnreadSetting: O,
-      mentionCount: v,
-      isFavoriteSuggestion: j
+      isSubscriptionGated: m,
+      needSubscriptionToAccess: b,
+      unread: _,
+      resolvedUnreadSetting: y,
+      mentionCount: O,
+      isFavoriteSuggestion: v
     } = this.props, {
-      shouldShowGuildVerificationPopout: C
-    } = this.state, x = this.getVoiceStatesCount(), E = (0, Chunk54381.jsxs)("li", {
-      className: a()(this.getModeClass(), {
-        [Chunk642915.disabled]: this.isDisabled()
+      shouldShowGuildVerificationPopout: j
+    } = this.state, C = this.getVoiceStatesCount(), x = (0, Chunk54381.jsxs)("li", {
+      className: o()(this.getModeClass(), {
+        [Chunk55940.disabled]: this.isDisabled()
       }),
       "data-dnd-name": module.name,
       children: [(0, Chunk54381.jsx)(Chunk481060.yRy, {
@@ -162,9 +162,9 @@ class Y extends Chunk98597.ZP {
           text: this.getTooltipText(),
           children: (0, Chunk54381.jsxs)(Chunk473403.ZP, {
             ref: this.channelItemRef,
-            className: Chunk642915.iconVisibility,
-            iconClassName: a()({
-              [Chunk257516.iconLive]: null != Chunk888651
+            className: Chunk55940.iconVisibility,
+            iconClassName: o()({
+              [Chunk556295.iconLive]: null != Chunk888651
             }),
             channel: module,
             selected: !Chunk922482 && exports,
@@ -195,7 +195,7 @@ class Y extends Chunk98597.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return Chunk146773 && (E = Chunk194983(Chunk427679)), Chunk239091 && (E = Chunk120356(Chunk442837(Chunk427679))), Chunk427679
+    return Chunk146773 && (x = Chunk194983(Chunk427679)), Chunk239091 && (x = Chunk120356(Chunk442837(Chunk427679))), Chunk427679
   }
   constructor(...e) {
     super(...e), z(this, "channelItemRef", i.createRef()), z(this, "state", {
@@ -211,15 +211,15 @@ class Y extends Chunk98597.ZP {
         connected: n,
         unverifiedAccount: r
       } = this.props, i = e.getGuildId();
-      null != i && (0, m.n)(i) && (0, b.hk)(i), r && this.setState({
+      null != i && (0, b.n)(i) && (0, m.hk)(i), r && this.setState({
         shouldShowGuildVerificationPopout: true
-      }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, j.Cq)(e), __OVERLAY__ || (0, v.Kh)(e.id)
+      }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, v.Cq)(e), __OVERLAY__ || (0, O.Kh)(e.id)
     }), z(this, "handleClickChat", () => {
       let {
         channel: e,
         locked: t
       } = this.props;
-      __OVERLAY__ || t || (0, v.Kh)(e.id)
+      __OVERLAY__ || t || (0, O.Kh)(e.id)
     }), z(this, "handleContextMenu", e => {
       let {
         channel: t
@@ -239,8 +239,8 @@ class Y extends Chunk98597.ZP {
       } = this.props, {
         shouldShowGuildVerificationPopout: t
       } = this.state;
-      if (t) return (0, r.jsx)(O.Z, {
-        type: O.R.VOICE,
+      if (t) return (0, r.jsx)(y.Z, {
+        type: y.R.VOICE,
         guildId: e.guild_id,
         closePopout: this.closeGuildVerificationPopout
       });
@@ -255,7 +255,7 @@ class Y extends Chunk98597.ZP {
         asContainer: true,
         text: F.intl.string(F.t.ZXxLQg),
         children: (0, r.jsx)(u.P3F, {
-          className: a()(V.iconItem, n ? V.alwaysShown : null),
+          className: o()(V.iconItem, n ? V.alwaysShown : null),
           onClick: () => {
             d.Z.updateChatOpen(e.id, true), this.handleClickChat()
           },
@@ -289,12 +289,12 @@ function Q(e) {
     channel: n,
     disableSorting: i,
     isFavoriteCategory: l,
-    collapsed: a,
+    collapsed: o,
     voiceStates: s
-  } = e, c = (0, o.cj)([T.ZP], () => ({
+  } = e, c = (0, a.cj)([T.ZP], () => ({
     unread: T.ZP.hasUnread(n.id),
     mentionCount: T.ZP.getMentionCount(n.id)
-  })), u = (0, o.e7)([A.ZP], () => A.ZP.resolveUnreadSetting(n)), d = (0, o.cj)([P.Z, Z.Z, w.Z], () => {
+  })), u = (0, a.e7)([A.ZP], () => A.ZP.resolveUnreadSetting(n)), d = (0, a.cj)([P.Z, Z.Z, w.Z], () => {
     let e = P.Z.getChannel(n.parent_id),
       r = Z.Z.getCheck(n.guild_id);
     return {
@@ -305,29 +305,29 @@ function Q(e) {
       bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), f = (0, o.e7)([_.Z], () => _.Z.isCollapsed(n.parent_id)), h = (0, I.ZP)(n.id), p = (0, o.e7)([E.Z], () => E.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, C.Rk)(n.id, x.pV.AUDIENCE), {
-    isSubscriptionGated: b,
-    needSubscriptionToAccess: m
-  } = (0, y.Z)(n.id), O = (0, o.e7)([A.ZP], () => A.ZP.isFavorite(t.id, n.id)), v = (0, S.xJ)(n.id), j = (0, L.Z)({
+  }), f = (0, a.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), h = (0, S.ZP)(n.id), p = (0, a.e7)([x.Z], () => x.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, C.pV.AUDIENCE), {
+    isSubscriptionGated: m,
+    needSubscriptionToAccess: b
+  } = (0, _.Z)(n.id), y = (0, a.e7)([A.ZP], () => A.ZP.isFavorite(t.id, n.id)), O = (0, E.xJ)(n.id), v = (0, L.Z)({
     channel: n,
     isChannelSelected: false,
-    isChannelCollapsed: a,
+    isChannelCollapsed: o,
     voiceStates: s,
-    isSubscriptionGated: b,
-    needSubscriptionToAccess: m,
-    enableConnectedUserLimit: v || n.userLimit > 0 && n.userLimit < U.xGv
-  }), N = e.connected && null == j;
+    isSubscriptionGated: m,
+    needSubscriptionToAccess: b,
+    enableConnectedUserLimit: O || n.userLimit > 0 && n.userLimit < U.xGv
+  }), N = e.connected && null == v;
   return (0, r.jsx)(q, K(W({
     categoryCollapsed: f,
     connectAction: h,
     numAudience: g,
     stageInstance: p,
-    isSubscriptionGated: b,
-    needSubscriptionToAccess: m
+    isSubscriptionGated: m,
+    needSubscriptionToAccess: b
   }, c, d, e), {
-    isFavoriteSuggestion: l && !O,
+    isFavoriteSuggestion: l && !y,
     forceShowButtons: N,
-    channelInfo: j,
+    channelInfo: v,
     resolvedUnreadSetting: u
   }))
 }

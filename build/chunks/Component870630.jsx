@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk410030 = require("./410030.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk578710 = require("./578710.js"),
+  Chunk513761 = require("./513761.js"),
   Chunk744481 = require("./744481.js"),
   Chunk724641 = require("./724641.js"),
   Chunk184229 = require("./184229.js"),
@@ -30,11 +30,11 @@ let h = function(e) {
       let t = window.getComputedStyle(e),
         r = window.getComputedStyle(e, "::placeholder"),
         i = t.getPropertyValue("font-family"),
-        a = t.getPropertyValue("font-weight");
+        o = t.getPropertyValue("font-weight");
       g({
         base: {
           fontFamily: i,
-          fontWeight: a,
+          fontWeight: o,
           color: t.getPropertyValue("color"),
           fontSize: t.getPropertyValue("font-size"),
           backgroundColor: E,
@@ -47,7 +47,7 @@ let h = function(e) {
       })
     }, [n, E]), e.type) {
     case c.He.PRZELEWY24: {
-      let i = (0, o.wj)(t) ? _ : m,
+      let i = (0, a.wj)(t) ? _ : m,
         {
           onNameChange: l,
           onEmailChange: c,
@@ -77,7 +77,7 @@ let h = function(e) {
             children: [(0, r.jsx)(s.Text, {
               variant: "text-sm/semibold",
               children: u.intl.string(u.t.De3b8t)
-            }), (0, r.jsx)(a.P24BankElement, {
+            }), (0, r.jsx)(o.P24BankElement, {
               options: {
                 value: p,
                 style: h
@@ -100,7 +100,7 @@ let h = function(e) {
         onEPSBankChange: l,
         epsBankValue: c,
         billingAddressInfo: _
-      } = e, m = (0, o.wj)(t) ? f : p;
+      } = e, m = (0, a.wj)(t) ? f : p;
       return (0, r.jsx)("div", {
         className: d.body,
         children: (0, r.jsxs)(s.Kqy, {
@@ -117,7 +117,7 @@ let h = function(e) {
             children: [(0, r.jsx)(s.Text, {
               variant: "text-sm/semibold",
               children: u.intl.string(u.t.dFyV07)
-            }), (0, r.jsx)(a.EpsBankElement, {
+            }), (0, r.jsx)(o.EpsBankElement, {
               options: {
                 value: c,
                 style: h

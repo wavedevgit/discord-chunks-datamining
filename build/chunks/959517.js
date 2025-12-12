@@ -10,18 +10,18 @@ require.d(exports, {
   c8: () => s,
   d$: () => l,
   dy: () => E,
-  fP: () => a,
+  fP: () => o,
   hs: () => g,
   j1: () => p,
   kQ: () => c,
-  pq: () => o,
+  pq: () => a,
   xi: () => m
 });
 var Chunk261470 = require("./261470.js"),
   Chunk70956 = require("./70956.js");
 require("./981631.js");
-let a = [0, 4, 8, 16, 24],
-  o = 16,
+let o = [0, 4, 8, 16, 24],
+  a = 16,
   s = 0,
   l = Object.freeze({
     referencedAvatarProfile: false,

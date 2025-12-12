@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 558324, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -13,16 +13,16 @@ let o = e => {
   var t, n, {
       tags: o,
       tagsLabel: c,
-      value: d,
-      onRemoveTag: u,
+      value: u,
+      onRemoveTag: d,
       onAddTag: g,
-      onAddTagError: f,
-      maxTaxLength: m,
-      maxTags: b,
-      disabled: p,
-      placeholder: h
+      onAddTagError: m,
+      maxTaxLength: p,
+      maxTags: f,
+      disabled: h,
+      placeholder: x
     } = e,
-    x = function(e, t) {
+    b = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -37,26 +37,26 @@ let o = e => {
       }
       return i
     }(e, ["tags", "tagsLabel", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]);
-  let [j, v] = i.useState(null != d ? d : ""), O = i.useCallback(() => {
+  let [j, _] = i.useState(null != u ? u : ""), v = i.useCallback(() => {
     let e = j.trim();
     if (0 !== e.length) {
-      if (null != b && o.length >= b) {
-        null == f || f(s.intl.string(s.t.Xx7XeB));
+      if (null != f && o.length >= f) {
+        null == m || m(a.intl.string(a.t.Xx7XeB));
         return
       }
-      g(e), v("")
+      g(e), _("")
     }
-  }, [j, b, g, f, o.length]), C = i.useCallback(e => {
+  }, [j, f, g, m, o.length]), O = i.useCallback(e => {
     switch (e.key) {
-      case a.vn.BACKSPACE:
-        0 === j.length && o.length > 0 && (e.preventDefault(), e.stopPropagation(), null == u || u(new Set([o[o.length - 1].id])));
+      case s.vn.BACKSPACE:
+        0 === j.length && o.length > 0 && (e.preventDefault(), e.stopPropagation(), null == d || d(new Set([o[o.length - 1].id])));
         break;
-      case a.vn.ENTER:
-      case a.vn.TAB:
-      case a.vn.COMMA:
-        e.preventDefault(), e.stopPropagation(), O()
+      case s.vn.ENTER:
+      case s.vn.TAB:
+      case s.vn.COMMA:
+        e.preventDefault(), e.stopPropagation(), v()
     }
-  }, [O, j.length, u, o]);
+  }, [v, j.length, d, o]);
   return (0, r.jsx)(l.oil, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -79,16 +79,16 @@ let o = e => {
       type: "tags",
       label: c,
       items: o,
-      onRemove: u
+      onRemove: d
     }
-  }, x), n = n = {
+  }, b), n = n = {
     value: j,
-    onKeyDown: C,
-    onChange: v,
-    maxLength: m,
-    disabled: p,
-    onBlur: O,
-    placeholder: h
+    onKeyDown: O,
+    onChange: _,
+    maxLength: p,
+    disabled: h,
+    onBlur: v,
+    placeholder: x
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

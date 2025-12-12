@@ -38,9 +38,9 @@ class d {
     r.default.track(s.rMx.PERMISSIONS_REQUESTED, {
       type: e
     });
-    let a = await t(),
-      l = a === o.NZ.AUTHORIZED || a === o.NZ.LIMITED,
-      c = l ? o.PQ.ACCEPTED : o.PQ.DENIED;
+    let o = await t(),
+      l = o === a.NZ.AUTHORIZED || o === a.NZ.LIMITED,
+      c = l ? a.PQ.ACCEPTED : a.PQ.DENIED;
     return i.Z.setPermission(e, c), !l && n.showAuthorizationError && this.showAlert(e), l
   }
   requestPermission(e, t) {
@@ -53,11 +53,11 @@ class d {
   }
   showAlert(e) {
     let t = {
-      [o.Eu.CAMERA]: "".concat(l.intl.string(l.t["68G7fD"]), ". ").concat(l.intl.string(l.t["5Jvu1R"])),
-      [o.Eu.AUDIO]: "".concat(l.intl.string(l.t.xisTfe), ". ").concat(l.intl.string(l.t["5Jvu1R"])),
-      [o.Eu.PHOTOS]: "".concat(l.intl.string(l.t.jQHU4M), ". ").concat(l.intl.string(l.t["5Jvu1R"])),
-      [o.Eu.INPUT_MONITORING]: "".concat(l.intl.string(l.t.UIBqsS), ". ").concat(l.intl.string(l.t["5Jvu1R"])),
-      [o.Eu.CONTACTS]: "".concat(l.intl.string(l.t.kTtf7o), ". ").concat(l.intl.string(l.t["5Jvu1R"]))
+      [a.Eu.CAMERA]: "".concat(l.intl.string(l.t["68G7fD"]), ". ").concat(l.intl.string(l.t["5Jvu1R"])),
+      [a.Eu.AUDIO]: "".concat(l.intl.string(l.t.xisTfe), ". ").concat(l.intl.string(l.t["5Jvu1R"])),
+      [a.Eu.PHOTOS]: "".concat(l.intl.string(l.t.jQHU4M), ". ").concat(l.intl.string(l.t["5Jvu1R"])),
+      [a.Eu.INPUT_MONITORING]: "".concat(l.intl.string(l.t.UIBqsS), ". ").concat(l.intl.string(l.t["5Jvu1R"])),
+      [a.Eu.CONTACTS]: "".concat(l.intl.string(l.t.kTtf7o), ". ").concat(l.intl.string(l.t["5Jvu1R"]))
     } [e];
     null != t && this.openAlertModal({
       title: l.intl.string(l.t.u1Gxpu),

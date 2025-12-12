@@ -6,9 +6,9 @@ require.d(exports, {
 }), require("./539854.js");
 var Chunk981631 = require("./981631.js");
 let i = [],
-  a = false;
+  o = false;
 
-function o() {
+function a() {
   let e = window.navigator.connection;
   return null == module ? {
     type: Chunk981631.IWh.UNKNOWN,
@@ -20,19 +20,19 @@ function o() {
 }
 
 function s() {
-  if (true === a) return;
+  if (true === o) return;
   let e = window.navigator.connection;
-  null != module && (a = true, module.addEventListener("change", c))
+  null != module && (o = true, module.addEventListener("change", c))
 }
 
 function l() {
-  if (false === a) return;
+  if (false === o) return;
   let e = window.navigator.connection;
-  null != module && 0 === i.length && null != module && (module.removeEventListener("change", c), a = false)
+  null != module && 0 === i.length && null != module && (module.removeEventListener("change", c), o = false)
 }
 
 function c() {
-  let e = o();
+  let e = a();
   i.forEach(t => t(e))
 }
 
@@ -63,7 +63,7 @@ let f = {
   removeChangeCallback(e) {
     d(e)
   },
-  getNetworkInformation: () => Promise.resolve(o()),
+  getNetworkInformation: () => Promise.resolve(a()),
   isOnline() {
     let e = navigator.onLine;
     return true === module || module

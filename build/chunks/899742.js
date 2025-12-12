@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   Vb: () => l,
-  Yz: () => o,
+  Yz: () => a,
   by: () => s,
   is: () => i,
-  lx: () => a
+  lx: () => o
 });
 var Chunk570140 = require("./570140.js");
 
@@ -18,7 +18,7 @@ function i() {
   })
 }
 
-function a(e, t) {
+function o(e, t) {
   r.Z.dispatch({
     type: "BROWSER_HANDOFF_END",
     handoffToken: e,
@@ -26,19 +26,19 @@ function a(e, t) {
   })
 }
 
-function o(e) {
+function a(e) {
   let {
     handoffKey: t,
     handoffToken: n,
     handoffSource: i,
-    timeout: a = 1e4
+    timeout: o = 1e4
   } = e;
   r.Z.dispatch({
     type: "BROWSER_HANDOFF_FROM_APP",
     handoffKey: t,
     handoffToken: n,
     handoffSource: i,
-    timeout: a
+    timeout: o
   })
 }
 

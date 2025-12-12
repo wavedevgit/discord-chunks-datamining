@@ -89,7 +89,7 @@ function A(e) {
   let {
     changelogDate: t
   } = e;
-  b = new Date(t), a.K.set(g, t)
+  b = new Date(t), o.K.set(g, t)
 }
 
 function N() {

@@ -13,8 +13,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk7366 = require("./7366.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk874847 = require("./874847.js"),
-  Chunk344128 = require("./344128.js");
+  Chunk152599 = require("./152599.js"),
+  Chunk860978 = require("./860978.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -42,8 +42,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -51,8 +51,8 @@ function h(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = 2.1,
@@ -60,14 +60,14 @@ let E = 2.1,
     var {
       handleLearnMore: t
     } = e, n = h(e, ["handleLearnMore"]);
-    let _ = (0, i.e7)([a.Z], () => a.Z.getGuildId()),
+    let _ = (0, i.e7)([o.Z], () => o.Z.getGuildId()),
       g = (0, s.iL)({
         guildId: _,
         onClick: () => {
           window.open(l.Z.getArticleURL(u.BhN.NITRO_FAQ), "_blank")
         }
       }),
-      b = (0, o.rO)() ? f.Z : p.Z;
+      b = (0, a.rO)() ? f.Z : p.Z;
     return (0, r.jsx)(c.Z, m({
       gradientColor: "nitro-pink",
       title: d.intl.string(d.t["9C+41g"]),

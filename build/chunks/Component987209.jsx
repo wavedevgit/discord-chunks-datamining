@@ -43,7 +43,7 @@ function y(e) {
     }).catch(e => {
       H(false), W(e), B(true)
     })
-  }, [y, Z, H, B, W]), z = (0, a.Wu)([o.Z], () => o.Z.recommendedGiftSkuIds);
+  }, [y, Z, H, B, W]), z = (0, o.Wu)([a.Z], () => a.Z.recommendedGiftSkuIds);
   return (0, r.jsx)(g.Provider, {
     value: {
       isGift: t,

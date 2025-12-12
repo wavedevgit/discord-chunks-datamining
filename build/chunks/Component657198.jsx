@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk685578 = require("./685578.js"),
   Chunk442837 = require("./442837.js"),
   Chunk911969 = require("./911969.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk436660 = require("./436660.js"),
   Chunk887490 = require("./887490.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk299477 = require("./299477.js");
+  Chunk953782 = require("./953782.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -62,15 +62,15 @@ function O(e, t) {
 function v(e, t, n) {
   let {
     attributes: i,
-    children: a,
-    element: o
+    children: o,
+    element: a
   } = t;
-  switch (o.type) {
+  switch (a.type) {
     case "applicationCommand":
       let s = u.Z.getActiveCommand(n),
         l = 0,
         c = 0;
-      if (null != s && s.id === o.command.id) {
+      if (null != s && s.id === a.command.id) {
         var d;
         let t = p.cu(e);
         for (let e of null != (d = s.options) ? d : []) t.includes(e.name) ? c++ : l++
@@ -87,14 +87,14 @@ function v(e, t, n) {
       return (0, r.jsx)("div", O(b({
         className: g.applicationCommand
       }, i, f), {
-        children: a
+        children: o
       }));
     case "applicationCommandOption":
       return (0, r.jsx)(S, {
         attributes: i,
         channelId: n,
-        element: o,
-        children: a
+        element: a,
+        children: o
       });
     default:
       return null
@@ -103,7 +103,7 @@ function v(e, t, n) {
 let S = e => {
   let t, {
       channelId: n,
-      element: a,
+      element: o,
       attributes: p,
       children: E
     } = e,
@@ -116,26 +116,26 @@ let S = e => {
     } = (0, l.cj)([u.Z], () => {
       var e, t, r;
       return {
-        optionType: null == (e = u.Z.getOption(n, a.optionName)) ? true : e.type,
-        errored: (null == (r = u.Z.getOptionState(n, a.optionName)) || null == (t = r.lastValidationResult) ? true : t.success) !== true
+        optionType: null == (e = u.Z.getOption(n, o.optionName)) ? true : e.type,
+        errored: (null == (r = u.Z.getOptionState(n, o.optionName)) || null == (t = r.lastValidationResult) ? true : t.success) !== true
       }
-    }, [n, a.optionName]),
-    C = (0, l.e7)([f.Z], () => f.Z.getUpload(n, a.optionName, d.d.SlashCommand), [n, a.optionName]),
-    A = a.children[a.children.length - 1],
+    }, [n, o.optionName]),
+    C = (0, l.e7)([f.Z], () => f.Z.getUpload(n, o.optionName, d.d.SlashCommand), [n, o.optionName]),
+    A = o.children[o.children.length - 1],
     N = null != A && m.LC.isText(A) && A.text.endsWith("\n"),
-    P = o()(g.inlineElement, g.optionPill, {
+    P = a()(g.inlineElement, g.optionPill, {
       [g.selectedPill]: v && y,
       [g.erroredPill]: (!v || !y) && T
     }),
     R = i.useCallback(() => {
-      m.bN.isVoid(S, a) || _.Q.selectCommandOption(S, a.optionName, true)
-    }, [S, a]);
+      m.bN.isVoid(S, o) || _.Q.selectCommandOption(S, o.optionName, true)
+    }, [S, o]);
   return t = I === c.jw.ATTACHMENT ? (null == C ? true : C.filename) != null ? (0, r.jsxs)("span", {
-    className: o()(g.optionPillValue, g.attachmentFilename),
+    className: a()(g.optionPillValue, g.attachmentFilename),
     contentEditable: false,
     children: [C.filename, E]
   }) : (0, r.jsxs)("span", {
-    className: o()(g.optionPillValue, g.readonlyPillValue),
+    className: a()(g.optionPillValue, g.readonlyPillValue),
     contentEditable: false,
     children: [h.intl.string(h.t.GRdFni), E]
   }) : (0, r.jsxs)("span", {
@@ -150,7 +150,7 @@ let S = e => {
       className: g.optionPillKey,
       contentEditable: false,
       onClick: R,
-      children: [a.optionDisplayName, "​"]
+      children: [o.optionDisplayName, "​"]
     }), t, (0, r.jsx)("span", {
       contentEditable: false,
       children: "​"

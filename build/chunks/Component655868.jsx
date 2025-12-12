@@ -72,9 +72,9 @@ class f extends Chunk473749.PureComponent {
         onChange: r
       } = this.props, i = this._inputRef;
       if (e === n || null == i || null == n) return;
-      let a = (0, o.M)(e),
+      let o = (0, a.M)(e),
         s = i.selectionStart;
-      a === n && a.length <= 3 && n.includes("/") && !e.includes("/") ? a = a.replace(d, "") : a === n && e.includes("/") && !n.includes("/") && (a += "/"), a.length > e.length && (s += a.length - e.length), this.selectionStart = s, null != r && r(a, t)
+      o === n && o.length <= 3 && n.includes("/") && !e.includes("/") ? o = o.replace(d, "") : o === n && e.includes("/") && !n.includes("/") && (o += "/"), o.length > e.length && (s += o.length - e.length), this.selectionStart = s, null != r && r(o, t)
     })
   }
 }

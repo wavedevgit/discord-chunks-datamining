@@ -1,4 +1,4 @@
-/** Chunk was on 48615 **/
+/** Chunk was on 46931 **/
 /** chunk id: 347147, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -23,8 +23,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk352978 = require("./352978.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk542133 = require("./542133.js"),
-  Chunk116724 = require("./116724.js");
+  Chunk412418 = require("./412418.js"),
+  Chunk174260 = require("./174260.js");
 
 function w(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -64,13 +64,13 @@ let P = {
   j = (0, Chunk392711.debounce)((e, t, n) => {
     let r = null,
       i = null;
-    if (null != n && (0, b.DB)(n)) {
+    if (null != n && (0, m.DB)(n)) {
       var l, a;
-      let e = (0, b.my)(n),
-        t = (0, m.L2)(e, v.Z);
+      let e = (0, m.my)(n),
+        t = (0, _.L2)(e, v.Z);
       r = null != (l = null == t ? true : t.name) ? l : null, i = null != (a = null == t ? true : t.id) ? a : null
     }
-    h.default.track(y.rMx.VIDEO_STREAM_ZOOM_CHANGED, {
+    b.default.track(y.rMx.VIDEO_STREAM_ZOOM_CHANGED, {
       zoom_level: e,
       method: t,
       share_application_name: r,
@@ -87,8 +87,8 @@ let Z = Chunk473749.memo(function(e) {
     minZoom: n = 1,
     maxZoom: l = 5,
     controlsBottom: o = 8,
-    idle: b = false
-  } = e, m = function(e, t) {
+    idle: m = false
+  } = e, _ = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -105,35 +105,35 @@ let Z = Chunk473749.memo(function(e) {
   }(e, ["enableZoom", "minZoom", "maxZoom", "controlsBottom", "idle"]);
   let {
     streamId: v,
-    streamKey: h,
+    streamKey: b,
     onResize: y,
     wrapperClassName: Z,
     videoComponent: R,
     mirror: T,
     paused: A
-  } = m, {
+  } = _, {
     onActive: N,
     onPreventIdle: D,
     onAllowIdle: M
-  } = i.useContext(g.nM), [k, L] = i.useState(false), [F, V] = i.useState(null), [U, z] = i.useState(null), [W, H] = i.useState(0), [B, q] = i.useState(P), [Y, G] = i.useState(null), [K, Q] = i.useState(null), [X, J] = i.useState(false), [$, ee] = i.useState(n), [et, en] = i.useState(false), [er, ei] = i.useState(false), [el, ea] = i.useState(16 / 9), [eo, ec] = i.useState(false), [es, eu] = i.useState(false), ed = i.useRef(new s.V7), ef = i.useRef(new s.V7), ep = i.useRef(new s.V7), eb = i.useRef(new s.V7), em = i.useRef(null), eg = i.useRef(null), ev = i.useRef(null), eh = (0, d.q_F)({
+  } = i.useContext(g.nM), [k, L] = i.useState(false), [F, V] = i.useState(null), [U, z] = i.useState(null), [W, H] = i.useState(0), [B, q] = i.useState(P), [Y, G] = i.useState(null), [K, Q] = i.useState(null), [X, J] = i.useState(false), [$, ee] = i.useState(n), [et, en] = i.useState(false), [er, ei] = i.useState(false), [el, ea] = i.useState(16 / 9), [eo, ec] = i.useState(false), [es, eu] = i.useState(false), ed = i.useRef(new s.V7), ef = i.useRef(new s.V7), ep = i.useRef(new s.V7), em = i.useRef(new s.V7), e_ = i.useRef(null), eg = i.useRef(null), ev = i.useRef(null), eb = (0, d.q_F)({
     value: o,
     config: I(w({}, c.config.stiff), {
       clamp: true
     })
-  }, "animate-always"), eE = $ > n, e_ = i.useCallback(e => {
+  }, "animate-always"), eh = $ > n, eE = i.useCallback(e => {
     e.width > 0 && e.height > 0 && ea(e.width / e.height), null == y || y(e)
   }, [y]), ey = i.useCallback(e => {
-    if (null == em.current) return P;
-    let t = em.current.getBoundingClientRect();
+    if (null == e_.current) return P;
+    let t = e_.current.getBoundingClientRect();
     return {
       x: e.clientX - t.left - t.width / 2,
       y: e.clientY - t.top - t.height / 2
     }
   }, []), eS = i.useCallback((e, t) => {
-    if (null == em.current) return P;
+    if (null == e_.current) return P;
     let n = null != t ? t : $,
-      r = em.current.clientWidth,
-      i = em.current.clientHeight,
+      r = e_.current.clientWidth,
+      i = e_.current.clientHeight,
       l = r * (n - 1) / 2,
       a = i * (n - 1) / 2;
     return {
@@ -142,22 +142,22 @@ let Z = Chunk473749.memo(function(e) {
     }
   }, [$]), eO = i.useCallback((e, t, r) => {
     let i = x(e, n, l);
-    if (null == em.current || null == t || i === $) return;
+    if (null == e_.current || null == t || i === $) return;
     eu(true);
     let a = i / $;
     q(e => eS({
       x: (e.x - t.x) * a + t.x,
       y: (e.y - t.y) * a + t.y
-    }, i)), ee(i), j(i, r, h), eb.current.start(2e3, () => {
+    }, i)), ee(i), j(i, r, b), em.current.start(2e3, () => {
       eu(false)
     })
-  }, [eS, l, n, h, $]), eC = i.useCallback(e => {
-    if (!eE) return;
+  }, [eS, l, n, b, $]), eC = i.useCallback(e => {
+    if (!eh) return;
     e.preventDefault(), e.stopPropagation();
     let t = ey(e);
     L(true), z(t), V(t), H(Date.now()), Q(t), G(B)
-  }, [ey, eE, B]), ew = i.useCallback(e => {
-    if ((t || eE) && N(), !k || !eE || null == K || null == Y) return;
+  }, [ey, eh, B]), ew = i.useCallback(e => {
+    if ((t || eh) && N(), !k || !eh || null == K || null == Y) return;
     e.preventDefault(), e.stopPropagation();
     let n = ey(e),
       r = n.x - K.x,
@@ -166,10 +166,10 @@ let Z = Chunk473749.memo(function(e) {
       x: Y.x + r,
       y: Y.y + i
     })), V(n)
-  }, [eS, K, Y, t, ey, k, eE, N]), eI = i.useCallback(e => {
+  }, [eS, K, Y, t, ey, k, eh, N]), eI = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), L(false), Q(null), G(null)
   }, []), eP = i.useCallback(e => {
-    if (eE && null != U && null != F) {
+    if (eh && null != U && null != F) {
       let {
         x: t,
         y: n
@@ -179,7 +179,7 @@ let Z = Chunk473749.memo(function(e) {
       } = F;
       (Math.sqrt((r - t) ** 2 + (i - n) ** 2) > .01 || Date.now() - W >= 500) && (e.preventDefault(), e.stopPropagation())
     }
-  }, [eE, U, W, F]), ej = i.useCallback(() => {
+  }, [eh, U, W, F]), ej = i.useCallback(() => {
     L(false), Q(null), G(null)
   }, []), ex = i.useCallback(e => {
     t && (en(true), eO($ - e.deltaY / 100, ey(e), "wheel"), N(), ed.current.start(100, () => {
@@ -200,10 +200,10 @@ let Z = Chunk473749.memo(function(e) {
   }, [M]), eD = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation()
   }, []), eM = i.useCallback(e => {
-    if (null == eg.current || null == em.current) return;
+    if (null == eg.current || null == e_.current) return;
     let t = eg.current.getBoundingClientRect(),
-      n = em.current.clientWidth,
-      r = em.current.clientHeight,
+      n = e_.current.clientWidth,
+      r = e_.current.clientHeight,
       i = e.x - t.left,
       l = e.y - t.top,
       a = i / t.width;
@@ -226,12 +226,12 @@ let Z = Chunk473749.memo(function(e) {
   }, []), eV = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation()
   }, []);
-  (0, f.PM)(em, i.useCallback(e => {
+  (0, f.PM)(e_, i.useCallback(e => {
     let {
       width: t,
       height: n
     } = e;
-    if (!eE || null == t || null == n) return;
+    if (!eh || null == t || null == n) return;
     let r = ev.current;
     if (null == r) {
       ev.current = {
@@ -260,11 +260,11 @@ let Z = Chunk473749.memo(function(e) {
     }, ep.current.start(100, () => {
       ec(false)
     }))
-  }, [eS, eE, $]), [eE, $]), (0, p.zq)(() => {
-    ed.current.stop(), ef.current.stop(), ep.current.stop(), eb.current.stop()
+  }, [eS, eh, $]), [eh, $]), (0, p.zq)(() => {
+    ed.current.stop(), ef.current.stop(), ep.current.stop(), em.current.stop()
   }), i.useEffect(() => {
-    null != v && (0, E.N)(v, t && eE ? $ : 1)
-  }, [t, eE, v, $]);
+    null != v && (0, h.N)(v, t && eh ? $ : 1)
+  }, [t, eh, v, $]);
   let eU = i.useMemo(() => {
       let e = eS(B);
       return {
@@ -282,8 +282,8 @@ let Z = Chunk473749.memo(function(e) {
       }
     }, [el]),
     eW = i.useMemo(() => {
-      let e = null != em.current ? em.current.clientWidth : 1,
-        t = null != em.current ? em.current.clientHeight : 1,
+      let e = null != e_.current ? e_.current.clientWidth : 1,
+        t = null != e_.current ? e_.current.clientHeight : 1,
         n = 1 / $,
         r = 1 / $,
         i = .5 - B.x / (e * $),
@@ -297,9 +297,9 @@ let Z = Chunk473749.memo(function(e) {
       }
     }, [k, X, et, er, B, $]);
   return (0, r.jsxs)("div", {
-    ref: em,
+    ref: e_,
     className: a()(C.wrapper, Z, {
-      [C.zoomEnabled]: t && eE,
+      [C.zoomEnabled]: t && eh,
       [C.zoomDragging]: k
     }),
     onMouseDown: eC,
@@ -312,26 +312,26 @@ let Z = Chunk473749.memo(function(e) {
       children: null != v && (0, r.jsx)("div", {
         className: a()(C.videoContainer, C.zoomed),
         style: eU,
-        children: (0, r.jsx)(_.Z, I(w({}, m), {
-          onResize: e_,
+        children: (0, r.jsx)(E.Z, I(w({}, _), {
+          onResize: eE,
           wrapperClassName: true
         }))
       })
     }), t && null != v && (0, r.jsx)(c.animated.div, {
       className: a()(C.zoomControlsContainer, {
-        [C.idle]: b
+        [C.idle]: m
       }),
       style: {
-        bottom: eh.value
+        bottom: eb.value
       },
       children: (0, r.jsxs)("div", {
         className: a()(C.zoomControls, {
-          [C.zoomControlsWithChildren]: es || eE
+          [C.zoomControlsWithChildren]: es || eh
         }),
         onMouseEnter: eA,
         onMouseLeave: eN,
         onClick: eD,
-        children: [(es || eE) && (0, r.jsx)(d.P3F, {
+        children: [(es || eh) && (0, r.jsx)(d.P3F, {
           onClick: eV,
           onMouseEnter: eA,
           onMouseLeave: eN,
@@ -356,7 +356,7 @@ let Z = Chunk473749.memo(function(e) {
           })
         }), (0, r.jsxs)("div", {
           className: C.zoomControlsRow,
-          children: [(es || eE) && (0, r.jsxs)(r.Fragment, {
+          children: [(es || eh) && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(u.u, {
               text: S.intl.string(S.t.M6Cmwy),
               position: "top",

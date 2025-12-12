@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 623249, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => O,
@@ -26,28 +26,28 @@ var Chunk54381 = require("./54381.js"),
   Chunk659302 = require("./659302.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk574508 = require("./574508.js");
+  Chunk301889 = require("./301889.js");
 
 function O(e) {
   var t;
   let {
     quest: n,
     errorHints: i,
-    transitionState: y,
+    transitionState: _,
     onClose: O,
     sourceQuestContent: N
-  } = e, [P, w] = (0, r.useState)(i), I = (0, b.KX)(), k = (0, h.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), A = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), D = (0, C.g2)({
+  } = e, [P, w] = (0, r.useState)(i), I = (0, g.KX)(), k = (0, h.O5)(), R = null == (t = (0, x.WD)()) ? true : t.getId(), A = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), D = (0, y.g2)({
     useReducedMotion: A,
     className: E.colorTransition
-  }), Z = P.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.Bz)(n), M = (0, o.e7)([p.Z], () => p.Z.getState().theme), U = (0, d.wj)(M) ? _.BR.DARK : _.BR.LIGHT, {
+  }), Z = P.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.Bz)(n), M = (0, o.e7)([p.Z], () => p.Z.getState().theme), U = (0, d.wj)(M) ? C.BR.DARK : C.BR.LIGHT, {
     startConsoleQuest: B,
     startingConsoleQuest: F
-  } = (0, b.GI)({
+  } = (0, g.GI)({
     questId: n.id,
     beforeRequest: () => {
       D.startAnimation(), k({
         questId: n.id,
-        questContent: x.jn.CONNECTIONS_MODAL,
+        questContent: f.jn.CONNECTIONS_MODAL,
         questContentCTA: h.jZ.DEFIBRILLATOR,
         sourceQuestContent: N
       })
@@ -57,7 +57,7 @@ function O(e) {
     }
   });
   return (0, a.jsx)(s.Modal, {
-    transitionState: y,
+    transitionState: _,
     onClose: O,
     title: S.intl.string(S.t.W5lmKt),
     subtitle: I.message,
@@ -66,7 +66,7 @@ function O(e) {
       onClick: () => void(O(), (0, v.V$)({
         quest: n
       }, {
-        content: x.jn.CONNECTIONS_MODAL,
+        content: f.jn.CONNECTIONS_MODAL,
         ctaContent: h.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
         impressionId: R,
         sourceQuestContent: N
@@ -125,7 +125,7 @@ function O(e) {
             children: (0, a.jsx)("img", {
               className: E.gameTile,
               alt: n.config.messages.gameTitle,
-              src: (0, g.fh)(n, g.eC.GAME_TILE, U).url
+              src: (0, b.fh)(n, b.eC.GAME_TILE, U).url
             })
           }) : null
         })]
@@ -189,10 +189,10 @@ function N(e) {
       default: t
     } = await Promise.resolve().then(n.bind(n, 623249));
     return function(n) {
-      return (0, a.jsx)(y.A, {
+      return (0, a.jsx)(_.A, {
         overrideVisibility: true,
         questOrQuests: e.quest,
-        questContent: x.jn.CONNECTIONS_MODAL,
+        questContent: f.jn.CONNECTIONS_MODAL,
         sourceQuestContent: e.sourceQuestContent,
         children: () => (0, a.jsx)(t, function(e) {
           for (var t = 1; t < arguments.length; t++) {

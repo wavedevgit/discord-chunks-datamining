@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk231757 = require("./231757.jsx"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk341603 = require("./341603.js");
+  Chunk391475 = require("./391475.js");
 let h = e => {
   let {
     disabled: t = false,
@@ -39,13 +39,13 @@ let h = e => {
     })
   }
   let y = u.Z.get((0, d.rR)(n));
-  return (0, r.jsx)(o.u, {
+  return (0, r.jsx)(a.u, {
     text: y.name,
     children: (0, r.jsx)("div", {
-      className: a()(m.wrapper, i),
+      className: o()(m.wrapper, i),
       children: (0, r.jsx)(l.tEY, {
         children: (0, r.jsx)("button", {
-          className: a()(m.inner, h),
+          className: o()(m.inner, h),
           type: "button",
           disabled: t,
           style: {

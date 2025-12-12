@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 862085, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk556012 = require("./556012.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk239244 = require("./239244.js");
+  Chunk464992 = require("./464992.js");
 
 function o(e) {
   let {
@@ -17,48 +17,48 @@ function o(e) {
     triggerType: n,
     toggled: o,
     onToggleAction: c
-  } = e, d = e => () => c(e), u = (0, l.c)(t.type, t, n);
-  if (null == u) return null;
+  } = e, u = e => () => c(e), d = (0, l.c)(t.type, t, n);
+  if (null == d) return null;
   let {
     headerText: g,
-    descriptionText: f,
-    icon: m
-  } = u;
+    descriptionText: m,
+    icon: p
+  } = d;
   return (0, r.jsxs)("div", {
-    className: s.actionContainer,
+    className: a.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: s.actionIconContainer,
-      children: (0, r.jsx)(m, {
+      className: a.actionIconContainer,
+      children: (0, r.jsx)(p, {
         size: "custom",
         color: "currentColor",
-        className: s.actionIcon
+        className: a.actionIcon
       })
     }), (0, r.jsxs)("div", {
-      className: s.actionTextContainer,
+      className: a.actionTextContainer,
       children: [(0, r.jsx)(i.Heading, {
         variant: "heading-sm/semibold",
         children: g
       }), (0, r.jsx)(i.Text, {
         color: "interactive-text-default",
         variant: "text-xs/medium",
-        children: f
+        children: m
       }), o ? (0, r.jsxs)(i.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
-        children: [a.intl.string(a.t.Oa9oWJ), (0, r.jsx)(i.P3F, {
-          onClick: d(true),
-          className: s.editChannel,
+        children: [s.intl.string(s.t.Oa9oWJ), (0, r.jsx)(i.P3F, {
+          onClick: u(true),
+          className: a.editChannel,
           tag: "span",
           role: "link",
-          children: a.intl.string(a.t.QupmYY)
+          children: s.intl.string(s.t.QupmYY)
         })]
       }) : null]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(i.P3F, {
-        onClick: u.isEditable ? d(false) : true,
+        onClick: d.isEditable ? u(false) : true,
         children: (0, r.jsx)(i.FZ5, {
           checked: o,
-          disabled: !u.isEditable
+          disabled: !d.isEditable
         })
       })
     })]

@@ -56,8 +56,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function m(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let g = [{
@@ -147,14 +147,14 @@ let g = [{
         var {
           selectionMode: t,
           withLeadingAndTrailing: n
-        } = e, a = m(e, ["selectionMode", "withLeadingAndTrailing"]);
-        let [o, s] = i.useState(null), [l, u] = i.useState([]), d = y(n, a.asyncOptions);
-        return "single" === t ? (0, r.jsx)(c.P, _(f({}, a), {
+        } = e, o = m(e, ["selectionMode", "withLeadingAndTrailing"]);
+        let [a, s] = i.useState(null), [l, u] = i.useState([]), d = y(n, o.asyncOptions);
+        return "single" === t ? (0, r.jsx)(c.P, _(f({}, o), {
           selectionMode: t,
           options: d,
           onSelectionChange: s,
-          value: o
-        })) : (0, r.jsx)(c.P, _(f({}, a), {
+          value: a
+        })) : (0, r.jsx)(c.P, _(f({}, o), {
           selectionMode: t,
           options: d,
           onSelectionChange: u,
@@ -282,15 +282,15 @@ let g = [{
         var {
           selectionMode: t,
           withLeadingAndTrailing: n,
-          asyncOptions: a
-        } = e, o = m(e, ["selectionMode", "withLeadingAndTrailing", "asyncOptions"]);
-        let [s, c] = i.useState(null), [u, d] = i.useState([]), p = y(n, a);
-        return "single" === t ? (0, r.jsx)(l.V, _(f({}, o), {
+          asyncOptions: o
+        } = e, a = m(e, ["selectionMode", "withLeadingAndTrailing", "asyncOptions"]);
+        let [s, c] = i.useState(null), [u, d] = i.useState([]), p = y(n, o);
+        return "single" === t ? (0, r.jsx)(l.V, _(f({}, a), {
           selectionMode: t,
           onSelectionChange: c,
           value: s,
           options: p
-        })) : (0, r.jsx)(l.V, _(f({}, o), {
+        })) : (0, r.jsx)(l.V, _(f({}, a), {
           selectionMode: t,
           onSelectionChange: d,
           value: u,
@@ -398,8 +398,8 @@ let g = [{
         var {
           selectionMode: t,
           label: n,
-          hideLabel: a,
-          description: o,
+          hideLabel: o,
+          description: a,
           helperText: l,
           errorMessage: c,
           successMessage: u,
@@ -419,11 +419,11 @@ let g = [{
         }, g), {
           children: [(0, r.jsx)(s.Ct, {
             label: n,
-            hideLabel: a,
+            hideLabel: o,
             placeholder: h,
             required: E,
             disabled: b,
-            description: o,
+            description: a,
             helperText: l,
             errorMessage: c,
             successMessage: u,
@@ -527,13 +527,13 @@ let g = [{
         let {
           selectionMode: t,
           required: n,
-          shouldFocusWrap: o,
+          shouldFocusWrap: a,
           withLeadingAndTrailing: s
         } = e, [l, c] = i.useState(null);
-        return (0, r.jsx)(a.w, {
+        return (0, r.jsx)(o.w, {
           selectionMode: t,
           required: n,
-          shouldFocusWrap: o,
+          shouldFocusWrap: a,
           items: s ? E : g,
           onSelectionChange: c,
           selectedItems: l

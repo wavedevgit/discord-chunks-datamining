@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
   Chunk114101 = require("./114101.jsx"),
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk558741 = require("./558741.js");
+  Chunk553517 = require("./553517.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -54,7 +54,7 @@ function N(e) {
 function P(e) {
   let {
     giftIntentType: t,
-    recipientUser: a,
+    recipientUser: o,
     onMouseEnter: A,
     onMouseLeave: P,
     popoutPosition: R,
@@ -64,12 +64,12 @@ function P(e) {
     innerRef: L
   } = e, j = (0, l.e7)([h.default], () => h.default.getCurrentUser()), {
     analyticsLocations: M
-  } = (0, f.ZP)(), k = (0, l.e7)([y.ZP], () => y.ZP.getFriendAnniversaryYears(a.id)), {
+  } = (0, f.ZP)(), k = (0, l.e7)([y.ZP], () => y.ZP.getFriendAnniversaryYears(o.id)), {
     Component: U
   } = (0, c.V)(), G = (0, m.ao)({
     location: "gift-intent-card",
     isGift: true,
-    giftRecipient: a
+    giftRecipient: o
   });
   i.useEffect(() => {
     (0, p.h)({
@@ -86,14 +86,14 @@ function P(e) {
       numberOfYears: k
     }) : (0, E.Ou)(t),
     B = () => t === v.hX.FRIEND_ANNIVERSARY ? T.intl.formatToPlainString(T.t.W7AF4C, {
-      friendUserName: g.ZP.getName(a)
+      friendUserName: g.ZP.getName(o)
     }) : (0, E.Ou)(t),
     V = () => t === v.hX.FRIEND_ANNIVERSARY ? T.intl.string(T.t.OrwKgi) : (0, E.Ou)(t),
     H = e => {
       e.stopPropagation();
       let n = (0, O.F)(t);
       G ? (0, b.Z)({
-        giftRecipient: a,
+        giftRecipient: o,
         analyticsLocations: M,
         analyticsLocation: n.chat,
         analyticsObject: {
@@ -106,7 +106,7 @@ function P(e) {
       }) : (0, _.Z)({
         isGift: true,
         initialPlanId: null,
-        giftRecipient: a,
+        giftRecipient: o,
         analyticsLocation: n.chat,
         analyticsLocations: M,
         analyticsObject: {
@@ -120,13 +120,13 @@ function P(e) {
     };
   return (0, r.jsx)("div", {
     ref: L,
-    className: o()(C.content, {
+    className: a()(C.content, {
       [C.outerGlow]: x
     }),
     onMouseEnter: A,
     onMouseLeave: P,
     children: (0, r.jsxs)("div", {
-      className: o()(C.innerContent, {
+      className: a()(C.innerContent, {
         [C.innerGlow]: x
       }),
       children: [(0, r.jsxs)("div", {
@@ -135,13 +135,13 @@ function P(e) {
           className: C.avatars,
           children: [(0, r.jsx)(d.Z, {
             className: C.recipientUserAvatar,
-            user: a,
-            "aria-label": a.username,
+            user: o,
+            "aria-label": o.username,
             size: I.EF.SIZE_56
           }), null != j && (0, r.jsx)(d.Z, {
             className: C.currentUserAvatar,
             user: j,
-            "aria-label": a.username,
+            "aria-label": o.username,
             size: I.EF.SIZE_24
           })]
         }), (0, r.jsxs)("div", {
@@ -188,7 +188,7 @@ function P(e) {
           onClick: H
         })]
       }), null != R && (0, r.jsx)("div", {
-        className: o()(C.connector, {
+        className: a()(C.connector, {
           [C.leftPopoutConnector]: "left" === R,
           [C.rightPopoutConnector]: "right" === R
         })

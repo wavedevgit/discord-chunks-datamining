@@ -28,7 +28,7 @@ function u() {
           onClick: c,
           target: "_blank",
           rel: "noreferrer noopener",
-          href: o.D2,
+          href: a.D2,
           children: e
         }, t)
       })

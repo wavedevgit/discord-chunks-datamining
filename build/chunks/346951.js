@@ -15,7 +15,7 @@ function l(e) {
     forceFetch: t
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {
     forceFetch: false
-  }, n = t ? e : e.filter(a.Z.canFetch);
+  }, n = t ? e : e.filter(o.Z.canFetch);
   if (0 === n.length) return;
   i.Z.dispatch({
     type: "DETECTABLE_GAME_SUPPLEMENTAL_FETCH",
@@ -24,7 +24,7 @@ function l(e) {
   let l = async e => {
     try {
       let t = await r.tn.get({
-        url: o.ANM.APPLICATIONS_GAMES_SUPPLEMENTAL,
+        url: a.ANM.APPLICATIONS_GAMES_SUPPLEMENTAL,
         query: {
           application_ids: e
         },

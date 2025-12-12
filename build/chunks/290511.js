@@ -39,8 +39,8 @@ function l(e, t) {
   if (null == e) return {};
   var n, r, i = c(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -48,8 +48,8 @@ function l(e, t) {
 function c(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let u = 100,
@@ -84,10 +84,10 @@ function T(e) {
     } = t,
     r = l(t, ["id"]),
     {
-      id: a
+      id: o
     } = e,
-    o = l(e, ["id"]);
-  return i()(r, o)
+    a = l(e, ["id"]);
+  return i()(r, a)
 }
 
 function C() {
@@ -201,7 +201,7 @@ function j(e) {
 
 function M(e) {
   let t = [];
-  return 0 !== e.connection_type && 1 !== e.connection_type ? t.push("Invalid connection type") : (0 === e.connection_type ? ((0, a.Ew)(e.application_id) && t.push("Application ID is required for application connections"), (0, a.Ew)(e.provider_id) || t.push("Platform ID not allowed for application connections")) : 1 === e.connection_type && ((0, a.Ew)(e.provider_id) ? t.push("Platform ID is required for platform connections") : x.includes(e.provider_id) || t.push("Invalid platform ID"), (0, a.Ew)(e.application_id) || t.push("Application ID not allowed for platform connections")), null != e.description && e.description.length > h && t.push("Description must be ".concat(h, " characters or less"))), t
+  return 0 !== e.connection_type && 1 !== e.connection_type ? t.push("Invalid connection type") : (0 === e.connection_type ? ((0, o.Ew)(e.application_id) && t.push("Application ID is required for application connections"), (0, o.Ew)(e.provider_id) || t.push("Platform ID not allowed for application connections")) : 1 === e.connection_type && ((0, o.Ew)(e.provider_id) ? t.push("Platform ID is required for platform connections") : x.includes(e.provider_id) || t.push("Invalid platform ID"), (0, o.Ew)(e.application_id) || t.push("Application ID not allowed for platform connections")), null != e.description && e.description.length > h && t.push("Description must be ".concat(h, " characters or less"))), t
 }
 
 function k(e) {
@@ -210,8 +210,8 @@ function k(e) {
   for (let [r, i] of e.entries()) {
     let e = M(i);
     t.push(...e.map(e => "Connection ".concat(r + 1, ": ").concat(e)));
-    let a = L(i);
-    n.has(a) && t.push("Duplicate connection configuration"), n.add(a)
+    let o = L(i);
+    n.has(o) && t.push("Duplicate connection configuration"), n.add(o)
   }
   return t
 }

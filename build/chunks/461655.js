@@ -50,7 +50,7 @@ class p extends Chunk81825.Z {
       hasInvoiceURL: e.has_invoice_url,
       hasRefundInvoiceURLs: e.has_refund_invoice_urls,
       premiumRefundDisqualificationReasons: e.premium_refund_disqualification_reasons,
-      entitlements: null != e.entitlements ? e.entitlements.map(e => o.Z.createFromServer(e)) : true
+      entitlements: null != e.entitlements ? e.entitlements.map(e => a.Z.createFromServer(e)) : true
     })
   }
   get isPurchasedViaApple() {

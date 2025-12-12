@@ -122,13 +122,13 @@ function D(e) {
   })
 }
 let x = {
-  waitSubscribed: (e, t) => new Promise((n, r) => w(() => o.Z.isSubscribed(e, t), n, r)),
+  waitSubscribed: (e, t) => new Promise((n, r) => w(() => a.Z.isSubscribed(e, t), n, r)),
   waitConnected(e) {
     return new Promise(w.bind(this, () => l.Z.isConnected(e)))
   },
   isLaunchable: e => R(N(e)).then(e => null != e).catch(() => false),
   launch: e => R(N(e)).then(D),
-  launchDispatchApplication(e, t, n, i, o) {
+  launchDispatchApplication(e, t, n, i, a) {
     let {
       launchOptions: l,
       defaultLaunchOptionId: c,
@@ -139,8 +139,8 @@ let x = {
       shouldPatch: g
     } = e;
     if (null == l || null == c || null == f) throw Error("Couldn't construct launchable for ".concat(e.applicationId));
-    null == o && (o = c);
-    let E = l[o];
+    null == a && (a = c);
+    let E = l[a];
     if (null == E) throw Error("Couldn't construct launchable for ".concat(e.applicationId, ". No launch option."));
     return (0, r.o)([_]).then(e => {
       let t = e[0];
@@ -150,7 +150,7 @@ let x = {
       } = t;
       if (g && n !== h) return Promise.reject(Error("live build id changed"))
     }).then(() => d.Z.runLaunchSetup(p, _)).then(() => {
-      let e = (0, a.Z)(f),
+      let e = (0, o.Z)(f),
         r = {
           DISCORD_INSTANCE_ID: u.Z.getId().toString(),
           DISCORD_ACCESS_TOKEN: null != t ? t : "",
@@ -167,11 +167,11 @@ let x = {
   }) : Promise.resolve(false),
   createShortcuts(e, t, n, r, i) {
     if (null == i || !(0, f.isWindows)()) return Promise.resolve(false);
-    let a = "discord:///library/".concat(r, "/launch"),
-      o = "".concat(i, "\\icon.ico");
+    let o = "discord:///library/".concat(r, "/launch"),
+      a = "".concat(i, "\\icon.ico");
     return A().then(r => {
       var i, s;
-      return null != (s = null == (i = r.createShortcuts) ? true : i.call(r, e, t, n, a, o)) && s
+      return null != (s = null == (i = r.createShortcuts) ? true : i.call(r, e, t, n, o, a)) && s
     })
   },
   isGameLaunchable: e => R(P(e)).then(e => null != e).catch(() => false),

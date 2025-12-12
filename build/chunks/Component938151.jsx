@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk624968 = require("./624968.jsx"),
   Chunk261538 = require("./261538.jsx"),
-  Chunk222065 = require("./222065.js");
+  Chunk152928 = require("./152928.js");
 let d = [{
     label: "xxs",
     value: "xxs"
@@ -86,7 +86,7 @@ let d = [{
           min: 0,
           value: module.toString(),
           onChange: e => {
-            t((0, a.clamp)(+e, 0, 100))
+            t((0, o.clamp)(+e, 0, 100))
           },
           label: "Children Count"
         })]

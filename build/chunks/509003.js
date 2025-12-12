@@ -56,7 +56,7 @@ function u(e, t) {
 }
 
 function d(e) {
-  if (e.distributor === a.GQo.ROBLOX && null != e.sku) {
+  if (e.distributor === o.GQo.ROBLOX && null != e.sku) {
     var t, n;
     return "".concat(e.sku, ":").concat(null != (n = null == (t = e.gameMetadata) ? true : t[i.wF.PLACE_ID]) ? n : "")
   }
@@ -64,13 +64,13 @@ function d(e) {
 }
 
 function f(e) {
-  return e.distributor === a.GQo.ROBLOX && null != e.gameMetadata && null != e.gameMetadata[i.wF.PLACE_ID] ? JSON.stringify({
+  return e.distributor === o.GQo.ROBLOX && null != e.gameMetadata && null != e.gameMetadata[i.wF.PLACE_ID] ? JSON.stringify({
     placeId: e.gameMetadata[i.wF.PLACE_ID]
   }) : null
 }
 
 function p(e) {
-  return e.distributor !== a.GQo.ROBLOX || null == e.gameMetadata || null == e.gameMetadata[i.wF.ROBLOX_TIME_STARTED] || e.id === i.eB || null == e.gameName ? {} : {
+  return e.distributor !== o.GQo.ROBLOX || null == e.gameMetadata || null == e.gameMetadata[i.wF.ROBLOX_TIME_STARTED] || e.id === i.eB || null == e.gameName ? {} : {
     name: e.gameName,
     sync_id: e.gameMetadata[i.wF.ROBLOX_TIME_STARTED]
   }
@@ -78,34 +78,34 @@ function p(e) {
 
 function _(e) {
   var t;
-  return (null == (t = e.metadata) ? true : t.distributor) === a.GQo.ROBLOX && e.application_id !== i.eB
+  return (null == (t = e.metadata) ? true : t.distributor) === o.GQo.ROBLOX && e.application_id !== i.eB
 }
 
 function m(e) {
   if (!_(e)) return e;
   let t = r.m.getConfig({
     location: "transformRobloxSubgameNames"
-  }).alternativeTitle ? o.t.HjVwG3 : o.t.G6BGdx;
+  }).alternativeTitle ? a.t.HjVwG3 : a.t.G6BGdx;
   return u(l({}, e), {
-    name: o.intl.formatToPlainString(t, {
+    name: a.intl.formatToPlainString(t, {
       subgameName: e.name
     })
   })
 }
 
 function h(e) {
-  if (e.type !== a.IIU.PLAYING || !_(e)) return e;
+  if (e.type !== o.IIU.PLAYING || !_(e)) return e;
   let t = Number(e.sync_id),
     n = l({}, e);
-  return n.application_id = i.eB, n.name = a.EOG[a.GQo.ROBLOX], isNaN(t) || (n.timestamps = {
+  return n.application_id = i.eB, n.name = o.EOG[o.GQo.ROBLOX], isNaN(t) || (n.timestamps = {
     start: t
   }), n
 }
 
 function g(e) {
-  return e.distributor === a.GQo.ROBLOX && e.id !== i.eB
+  return e.distributor === o.GQo.ROBLOX && e.id !== i.eB
 }
 
 function E(e) {
-  return e.thirdPartySkus.some(e => e.distributor === a.GQo.ROBLOX)
+  return e.thirdPartySkus.some(e => e.distributor === o.GQo.ROBLOX)
 }

@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk283029 = require("./283029.jsx"),
-  Chunk685814 = require("./685814.js");
+  Chunk681500 = require("./681500.js");
 let l = function(e) {
   let {
     className: t,
@@ -18,12 +18,12 @@ let l = function(e) {
     useReducedMotion: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(s.boostIconContainer, t),
+    className: o()(s.boostIconContainer, t),
     children: [l ? (0, r.jsx)("img", {
-      className: a()(s.boostIcon, s.boostIconCanceled),
+      className: o()(s.boostIcon, s.boostIconCanceled),
       src: n(457026),
       alt: ""
-    }) : (0, r.jsx)(o.Z, {
+    }) : (0, r.jsx)(a.Z, {
       className: s.boostIcon,
       boostInCooldown: i,
       useReducedMotion: c

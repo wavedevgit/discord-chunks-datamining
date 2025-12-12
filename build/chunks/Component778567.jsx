@@ -1,4 +1,4 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 49941 **/
 /** chunk id: 778567, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -12,25 +12,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk732380 = require("./732380.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk333051 = require("./333051.js");
+  Chunk367155 = require("./367155.js");
 let g = Chunk63063.Z.getArticleURL(Chunk981631.BhN.CUSTOM_PROFILES_WISHLIST);
 
 function p(e) {
   let {
     isOwner: t,
     isWishlistPublic: n,
-    onToggleVisibility: c
+    onToggleVisibility: s
   } = e, u = i.useRef(null), {
     analyticsLocations: p
-  } = (0, o.ZP)(l.Z.USER_PROFILE_WISHLIST), b = i.useMemo(() => t ? (0, r.jsxs)(a.kSQ, {
-    children: [(0, r.jsx)(a.m76, {
+  } = (0, o.ZP)(a.Z.USER_PROFILE_WISHLIST), m = i.useMemo(() => t ? (0, r.jsxs)(l.kSQ, {
+    children: [(0, r.jsx)(l.m76, {
       id: "wishlist-privacy-setting",
       label: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-strong",
           children: d.intl.string(d.t.b2nFyA)
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(l.Text, {
           className: f.menuItemDescription,
           variant: "text-xs/medium",
           color: "text-muted",
@@ -38,35 +38,35 @@ function p(e) {
         })]
       }),
       checked: n,
-      action: c
-    }), (0, r.jsx)(a.Clw, {}), (0, r.jsx)(a.sNh, {
+      action: s
+    }), (0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
       id: "wishlist-privacy-setting2",
-      label: (0, r.jsx)(a.Text, {
+      label: (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "text-strong",
         children: d.intl.string(d.t.hvVgAZ)
       }),
-      icon: a.Gr1,
+      icon: l.Gr1,
       action: () => window.open(g)
     })]
-  }) : null, [t, n, c]);
-  return null == b ? null : (0, r.jsx)(o.Gt, {
+  }) : null, [t, n, s]);
+  return null == m ? null : (0, r.jsx)(o.Gt, {
     value: p,
-    children: (0, r.jsx)(a.yRy, {
+    children: (0, r.jsx)(l.yRy, {
       targetElementRef: u,
       renderPopout: e => {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(a.v2r, {
+        return (0, r.jsx)(l.v2r, {
           navId: "wishlist-overflow-menu",
           onSelect: true,
           onClose: t,
           "aria-label": d.intl.string(d.t.GdNkvG),
-          children: b
+          children: m
         })
       },
-      children: e => (0, r.jsx)(s.pt, function(e) {
+      children: e => (0, r.jsx)(c.pt, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -85,7 +85,7 @@ function p(e) {
         return e
       }({
         buttonRef: u,
-        icon: a.xhG,
+        icon: l.xhG,
         tooltipText: d.intl.string(d.t["UKOtz+"]),
         action: "PRESS_OPTIONS"
       }, e))

@@ -16,8 +16,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk766717 = require("./766717.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk669155 = require("./669155.js"),
-  Chunk788015 = require("./788015.js");
+  Chunk239990 = require("./239990.js"),
+  Chunk976218 = require("./976218.js");
 
 function h(e, t, n) {
   (0, c.Z)({
@@ -26,7 +26,7 @@ function h(e, t, n) {
     giftingOrigin: f.Wt.USER_PROFILE_WISHLIST,
     analyticsLocations: n,
     giftRecipient: t,
-    variantsReturnStyle: a.v.VARIANTS_GROUP
+    variantsReturnStyle: o.v.VARIANTS_GROUP
   })
 }
 
@@ -46,8 +46,8 @@ function g(e) {
 function E(e, t) {
   let {
     moreCount: n,
-    profileOwner: a,
-    analyticsLocations: o,
+    profileOwner: o,
+    analyticsLocations: a,
     onViewWishlist: c,
     isSingleCard: f = false,
     wishlistId: m,
@@ -60,7 +60,7 @@ function E(e, t) {
     shouldShow: true
   }, I = () => {
     if (y) return void c();
-    h(e, a, o)
+    h(e, o, a)
   }, T = () => {
     if (b) {
       let t = {
@@ -72,13 +72,13 @@ function E(e, t) {
           product: t,
           isPurchased: false,
           isHighlighted: false,
-          user: a
+          user: o
         })
       })
     }
     return (0, r.jsx)(u.Z, {
       item: e,
-      profileOwner: a,
+      profileOwner: o,
       isHighlighted: false
     })
   }, C = !b && e.collectiblesItem.type === i.Z.PROFILE_EFFECT, A = b || !C;
@@ -99,7 +99,7 @@ function b(e, t) {
   let {
     profileOwner: n,
     analyticsLocations: i,
-    wishlistId: a,
+    wishlistId: o,
     onViewWishlist: s
   } = t, l = null != e.bundleItems && e.bundleItems.length > 0, c = () => {
     h(e, n, i)
@@ -108,24 +108,24 @@ function b(e, t) {
     analyticsLocations: i,
     onViewWishlist: s,
     isSingleCard: true,
-    wishlistId: a,
+    wishlistId: o,
     index: 0
   }), d = l ? p.intl.string(p.t.Zr5tjn) : g(e);
   return (0, r.jsxs)("div", {
     className: m.singleItemContainer,
     children: [u, (0, r.jsxs)("div", {
       className: m.singleItemInfo,
-      children: [(0, r.jsx)(o.P3F, {
+      children: [(0, r.jsx)(a.P3F, {
         onClick: c,
         className: m.singleItemName,
         "aria-label": p.intl.string(p.t.pLPjsb),
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
           lineClamp: 2,
           children: e.skuName
         })
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-default",
         children: d

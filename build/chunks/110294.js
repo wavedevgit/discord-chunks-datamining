@@ -3,24 +3,24 @@
 "use strict";
 require.d(exports, {
   Qk: () => l,
-  Uu: () => a,
+  Uu: () => o,
   pd: () => c
 });
 var Chunk632765 = require("./632765.js"),
   Chunk473749 = require("./473749.js");
-let a = {
+let o = {
   CollectionRoot: ({
     collection: e,
     renderDropIndicator: t
-  }) => o(e, null, t),
+  }) => a(e, null, t),
   CollectionBranch: ({
     collection: e,
     parent: t,
     renderDropIndicator: n
-  }) => o(e, t, n)
+  }) => a(e, t, n)
 };
 
-function o(e, t, n) {
+function a(e, t, n) {
   return (0, r.H)({
     items: t ? e.getChildren(t.key) : e,
     dependencies: [n],
@@ -37,15 +37,15 @@ function o(e, t, n) {
 
 function s(e, t, n) {
   let r = t.key,
-    a = e.getKeyAfter(r),
-    o = null != a ? e.getItem(a) : null;
-  for (; null != o && "item" !== o.type;) o = null != (a = e.getKeyAfter(o.key)) ? e.getItem(a) : null;
+    o = e.getKeyAfter(r),
+    a = null != o ? e.getItem(o) : null;
+  for (; null != a && "item" !== a.type;) a = null != (o = e.getKeyAfter(a.key)) ? e.getItem(o) : null;
   let s = null != t.nextKey ? e.getItem(t.nextKey) : null;
   for (; null != s && "item" !== s.type;) s = null != s.nextKey ? e.getItem(s.nextKey) : null;
   let l = [];
   if (null == s) {
     let r = t;
-    for (; r && (!o || r.parentKey !== o.parentKey && o.level < r.level);) {
+    for (; r && (!a || r.parentKey !== a.parentKey && a.level < r.level);) {
       let t = n({
         type: "item",
         key: r.key,
@@ -58,7 +58,7 @@ function s(e, t, n) {
   }
   return l
 }
-let l = (0, Chunk473749.createContext)(a);
+let l = (0, Chunk473749.createContext)(o);
 
 function c(e) {
   return (0, i.useMemo)(() => null != e ? new Set([e]) : null, [e])

@@ -15,7 +15,7 @@ var Chunk473749 = require("./473749.js"),
 function u(e, t) {
   let n = {};
   for (let [t, r] of Object.entries(e)) n[t] = {
-    system: o.I.APEX,
+    system: a.I.APEX,
     kind: r.unitType === c.Cm.User ? "user" : "guild",
     name: r.name,
     title: r.title,
@@ -27,7 +27,7 @@ function u(e, t) {
     }))
   };
   for (let [e, r] of Object.entries(t)) null == n[e] && (n[e] = {
-    system: o.I.APEX,
+    system: a.I.APEX,
     kind: r.kind,
     name: r.name,
     title: r.name,
@@ -37,7 +37,7 @@ function u(e, t) {
         id: Number(t),
         label: "Variant ".concat(t),
         shortLabel: "Variant ".concat(t),
-        type: a.qK.UNSPECIFIED
+        type: o.qK.UNSPECIFIED
       }
     })
   });
@@ -61,7 +61,7 @@ function f() {
   let e = (0, Chunk442837.e7)([Chunk633289.Z], () => Chunk633289.Z.getExperimentsMetadata()),
     t = (0, Chunk442837.e7)([Chunk633289.Z], () => Chunk633289.Z.getRegisteredExperiments()),
     n = (0, Chunk473749.useMemo)(() => u(module, exports), [module, exports]),
-    o = (0, Chunk442837.e7)([Chunk633289.Z], () => Chunk633289.Z.getClientOverrides());
+    a = (0, Chunk442837.e7)([Chunk633289.Z], () => Chunk633289.Z.getClientOverrides());
   return {
     experiments: require,
     overridesInfo: (0, Chunk473749.useMemo)(() => d(Chunk492435), [Chunk492435])

@@ -17,13 +17,13 @@ function c(e, t) {
     {
       targetUserId: r,
       tileType: i,
-      entrypoint: a
+      entrypoint: o
     } = n;
   return n => u({
     menuItemProps: n,
     menuName: e,
     location: t,
-    entrypoint: null != a ? a : s.A5.CONTEXT_MENU,
+    entrypoint: null != o ? o : s.A5.CONTEXT_MENU,
     targetUserId: r,
     tileType: i
   })
@@ -40,8 +40,8 @@ function u(e) {
     entrypoint: u,
     targetUserId: d,
     tileType: f
-  } = e, p = a.Z.getChannelId(), _ = a.Z.getGuildId(), m = null == (t = i.Z.getChannel(p)) ? true : t.type, h = r.default.getId();
-  o.default.track(l.rMx.CALL_MENU_ITEM_INTERACTED, {
+  } = e, p = o.Z.getChannelId(), _ = o.Z.getGuildId(), m = null == (t = i.Z.getChannel(p)) ? true : t.type, h = r.default.getId();
+  a.default.track(l.rMx.CALL_MENU_ITEM_INTERACTED, {
     location: c,
     menu_name: s,
     menu_item_type: n,

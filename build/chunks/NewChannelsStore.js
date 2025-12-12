@@ -85,7 +85,7 @@ function P(e, t) {
   let n = O[e];
   if (null != n && null != t && n.has(t)) {
     var r;
-    !m.ZP.isOptInEnabled(e) || (null == (r = u.Z.getChannel(t)) ? true : r.isThread()) || null != _.ZP.ackMessageId(t) || a.Z.wait(() => (0, o.ack)(t, {
+    !m.ZP.isOptInEnabled(e) || (null == (r = u.Z.getChannel(t)) ? true : r.isThread()) || null != _.ZP.ackMessageId(t) || o.Z.wait(() => (0, a.ack)(t, {
       object: E.qAy.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED,
       objectType: E.AnalyticsObjectTypes.ACK_AUTOMATIC
     }, true, true, g.default.atPreviousMillisecond(t)))

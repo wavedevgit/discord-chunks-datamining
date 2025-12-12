@@ -75,7 +75,7 @@ class x {
       r = (0, Chunk113544.z5)(),
       i = (0, Chunk113544.QW)();
     if (!(null == require ? true : require.is_campaign_ias_enabled) || !exports || true === Chunk54381 || true === Chunk473749) return null;
-    let a = () => {
+    let o = () => {
         let e = Chunk54381(),
           t = Chunk430824.Z.getGuilds();
         return module.map(e => {
@@ -87,16 +87,16 @@ class x {
             name: r.name
           };
           null !== r.description && (i.description = r.description);
-          let a = null !== r.icon && null != (n = g.ZP.getGuildIconURL({
+          let o = null !== r.icon && null != (n = g.ZP.getGuildIconURL({
             id: r.id,
             icon: r.icon,
             size: 44,
             canAnimate: true
           })) ? n : null;
-          return null !== a && (i.icon_url = a), i
+          return null !== o && (i.icon_url = o), i
         }).filter(e => null !== e)
       },
-      o = Chunk914010.Z.getGuildId(),
+      a = Chunk914010.Z.getGuildId(),
       s = null != Chunk286379 ? Chunk430824.Z.getGuild(Chunk286379) : null,
       l = () => null == Chunk442837 ? [] : Chunk473749().map(e => {
         let t = _.Z.getChannel(e);
@@ -221,13 +221,13 @@ class x {
           sourceQuestContent: this.sourceQuestContent
         })
       }), (0, O.a)("QuestImpressionTracker") && p.Z.increment({
-        name: o.V.QUEST_CONTENT_IMPRESSION,
+        name: a.V.QUEST_CONTENT_IMPRESSION,
         tags: ["quest_content:".concat((0, b._b)(this.questContent))]
       }), this.isRunning = true
     }), T(this, "stop", function() {
       let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
       e && _.beat(true), _.lastBeatTime = true, clearInterval(_.heartbeatTimeoutId), clearTimeout(_.minViewTimeReachedTimeoutId), _.isRunning = false
-    }), this.id = (0, a.Z)(), this.questContent = t, this.questContentPosition = i, this.minViewTimeSeconds = l, this.minViewportPercentage = R, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = n, this.questContentRowIndex = s, this.isQuestEnrollmentBlocked = c, this.sourceQuestContent = f
+    }), this.id = (0, o.Z)(), this.questContent = t, this.questContentPosition = i, this.minViewTimeSeconds = l, this.minViewportPercentage = R, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = r, this.triggeredByStatusChange = n, this.questContentRowIndex = s, this.isQuestEnrollmentBlocked = c, this.sourceQuestContent = f
   }
 }
 let L = (e, t) => {
@@ -255,18 +255,18 @@ function G(e) {
   let {
     visible: t,
     visibleChanged: n,
-    focused: a,
-    reference: o,
+    focused: o,
+    reference: a,
     focusedChanged: c,
     sourceQuestContent: u
   } = e, d = j(e.questOrQuests), f = i.useRef(null), p = (0, s.e7)([y.Z], () => null != y.Z.questEnrollmentBlockedUntil, []);
   return (0, l.ZP)(() => () => {
     null != f.current && f.current.stop()
   }), i.useEffect(() => {
-    let r = a && t,
+    let r = o && t,
       i = (n || c || d) && r,
-      o = (n || c) && !r || d;
-    (i || o) && null != f.current && f.current.stop(), i && (f.current = new x({
+      a = (n || c) && !r || d;
+    (i || a) && null != f.current && f.current.stop(), i && (f.current = new x({
       questOrQuests: e.questOrQuests,
       questContent: e.questContent,
       questContentPosition: e.questContentPosition,
@@ -277,8 +277,8 @@ function G(e) {
       isQuestEnrollmentBlocked: p,
       sourceQuestContent: u
     }), f.current.start())
-  }, [a, t, c, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, d, e.minViewTimeSeconds, p, u]), (0, r.jsx)(M.Provider, {
+  }, [o, t, c, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, d, e.minViewTimeSeconds, p, u]), (0, r.jsx)(M.Provider, {
     value: f,
-    children: e.children(o, f)
+    children: e.children(a, f)
   })
 }

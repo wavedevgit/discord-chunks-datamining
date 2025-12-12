@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk563132 = require("./563132.jsx"),
   Chunk261538 = require("./261538.jsx"),
   Chunk231338 = require("./231338.js"),
-  Chunk611954 = require("./611954.js");
+  Chunk591627 = require("./591627.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,7 +51,7 @@ let f = {
       paymentRequestWallets: u ? ["googlePay", "applePay"] : [],
       paymentSourceTypeRestrictions: n ? [l.He.CARD.valueOf()] : null
     };
-    return (0, r.jsx)(o.PaymentContextProvider, {
+    return (0, r.jsx)(a.PaymentContextProvider, {
       stepConfigs: [],
       skuIDs: [],
       activeSubscription: null,
@@ -63,7 +63,7 @@ let f = {
           className: c.choosePaymentTypeModal,
           children: (0, r.jsx)("div", {
             className: c.choosePaymentTypeContainer,
-            children: (0, r.jsx)(a.Z, d({}, f))
+            children: (0, r.jsx)(o.Z, d({}, f))
           })
         })]
       })

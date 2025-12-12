@@ -3,11 +3,11 @@
 "use strict";
 var Chunk77826 = require("./77826.js"),
   Chunk554148 = require("./554148.js"),
-  a = RangeError;
+  o = RangeError;
 module.exports = function(e) {
   if (true === e) return 0;
   var t = r(e),
     n = i(t);
-  if (t !== n) throw new a("Wrong length or index");
+  if (t !== n) throw new o("Wrong length or index");
   return n
 }

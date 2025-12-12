@@ -15,8 +15,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk703558 = require("./703558.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk108527 = require("./108527.js"),
-  Chunk132648 = require("./132648.js");
+  Chunk231319 = require("./231319.js"),
+  Chunk8542 = require("./8542.js");
 let v = (0, Chunk772848.Z)(),
   h = (0, Chunk131704.createChannelRecord)({
     id: "1",
@@ -54,8 +54,8 @@ function C(e) {
     "aria-labelledby": A,
     className: a,
     id: i,
-    autoFocus: c,
-    maxLength: f,
+    autoFocus: u,
+    maxLength: g,
     onChange: m,
     onSubmit: C,
     showCharacterCount: U = false,
@@ -66,7 +66,7 @@ function C(e) {
     parentModalKey: P,
     label: F,
     errorMessage: y
-  } = e, N = (0, o.Gc0)(), [I, K] = r.useState(() => (0, s.JM)(x)), T = r.useRef(true === c), Z = null != A ? A : null == N ? true : N.titleId, W = null != (t = null == N ? true : N.errorId) ? t : v;
+  } = e, N = (0, o.Gc0)(), [I, K] = r.useState(() => (0, s.JM)(x)), T = r.useRef(true === u), Z = null != A ? A : null == N ? true : N.titleId, W = null != (t = null == N ? true : N.errorId) ? t : v;
 
   function X(e, t, A) {
     m(t), K(A)
@@ -77,9 +77,9 @@ function C(e) {
       alwaysUseLayer: true,
       small: true
     },
-    disableAutoFocus: true !== c,
+    disableAutoFocus: true !== u,
     drafts: {
-      type: u.d.ChannelMessage
+      type: c.d.ChannelMessage
     },
     emojis: {
       button: true
@@ -91,7 +91,7 @@ function C(e) {
       useDisabledStylesOnSubmit: true,
       disableEnterToSubmit: true
     }
-  }), [c]);
+  }), [u]);
   return (0, n.jsx)(o.gNt, {
     label: F,
     errorMessage: y,
@@ -107,7 +107,7 @@ function C(e) {
         "aria-invalid": (null == e ? true : e.errorMessageId) != null,
         className: p.textArea,
         innerClassName: l()(a, p.textAreaInner),
-        maxCharacterCount: f,
+        maxCharacterCount: g,
         onChange: X,
         placeholder: j,
         required: V,
@@ -127,13 +127,13 @@ function C(e) {
         parentModalKey: P,
         emojiPickerCloseOnModalOuterClick: true,
         children: [true === U && (0, n.jsx)(b, {
-          hasError: null != N.error || null != f && x.length > f,
+          hasError: null != N.error || null != g && x.length > g,
           text: x,
-          maxLength: f
-        }), null != f && (0, n.jsx)(o.nn4, {
+          maxLength: g
+        }), null != g && (0, n.jsx)(o.nn4, {
           id: v,
-          children: g.intl.format(g.t["+DFxLc"], {
-            maxLength: f
+          children: f.intl.format(f.t["+DFxLc"], {
+            maxLength: g
           })
         })]
       })

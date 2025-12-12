@@ -2,7 +2,7 @@
 /** chunk id: 358446, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  K: () => p,
+  K: () => f,
   Z: () => g
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
@@ -16,9 +16,9 @@ var Chunk704215 = require("./704215.js"),
   Chunk987650 = require("./987650.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk849356 = require("./849356.js");
+  Chunk74912 = require("./74912.js");
 
-function p() {
+function f() {
   let e = (0, Chunk809357.Z)({
       location: "Overlay",
       options: {
@@ -38,28 +38,28 @@ function g(e) {
   } = e, {
     trackView: n,
     trackClick: r
-  } = (0, o.R)(d.n0.KeybindIndicatorsNotification, {
+  } = (0, l.R)(d.n0.KeybindIndicatorsNotification, {
     notif_type: d.n0.KeybindIndicatorsNotification
   });
   return {
     icon: null,
     body: (0, i.jsxs)("div", {
-      className: h.notificationBody,
+      className: p.notificationBody,
       children: [(0, i.jsx)("div", {
-        className: h.iconContainer,
-        children: (0, i.jsx)(a.S6n, {
+        className: p.iconContainer,
+        children: (0, i.jsx)(s.S6n, {
           size: "custom",
           color: "currentColor",
           height: 28,
           width: 28
         })
-      }), (0, i.jsx)(a.Text, {
+      }), (0, i.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: f.intl.string(f.t.EFRNtK)
+        children: h.intl.string(h.t.EFRNtK)
       })]
     }),
     onDismissClick: (e, n) => {
-      r("dismiss"), t(u.L.DISMISS), s.Z.updateNotificationStatus(n)
+      r("dismiss"), t(u.L.DISMISS), o.Z.updateNotificationStatus(n)
     },
     onNotificationShow: () => {
       t(u.L.AUTO_DISMISS), n()

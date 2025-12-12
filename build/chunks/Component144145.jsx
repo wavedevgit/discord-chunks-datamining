@@ -66,7 +66,7 @@ function P(e) {
   } = e, n = t.length > 1, P = function(e) {
     let {
       currentActivities: t
-    } = e, n = (0, l.e7)([b.Z], () => b.Z.getAccounts().some(e => e.type === c.Z.get(C.ABu.XBOX).type)), i = t.some(e => {
+    } = e, n = (0, l.e7)([_.Z], () => _.Z.getAccounts().some(e => e.type === c.Z.get(C.ABu.XBOX).type)), i = t.some(e => {
       let {
         activity: t
       } = e;
@@ -85,7 +85,7 @@ function P(e) {
     let {
       currentActivities: t
     } = e, n = i.useContext(v.AnalyticsContext);
-    return (0, l.Wu)([f.ZP, E.Z, g.Z, O.Z, _.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
+    return (0, l.Wu)([f.ZP, E.Z, g.Z, O.Z, b.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
       let {
         activity: t,
         game: r
@@ -97,7 +97,7 @@ function P(e) {
           LibraryApplicationStore: E.Z,
           LaunchableGameStore: g.Z,
           DispatchApplicationStore: O.Z,
-          ConnectedAppsStore: _.Z,
+          ConnectedAppsStore: b.Z,
           applicationId: r.id,
           branchId: null != i ? i.branchId : null
         }),

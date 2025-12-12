@@ -1,8 +1,8 @@
-/** Chunk was on 92504 **/
+/** Chunk was on 69844 **/
 /** chunk id: 15470, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y,
-  i: () => v
+  i: () => x
 }), require("./35282.js"), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,9 +15,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk241209 = require("./241209.jsx"),
   Chunk73346 = require("./73346.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk697110 = require("./697110.js");
+  Chunk395155 = require("./395155.js");
 
-function f(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,38 +26,38 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      a = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), a.forEach(function(t) {
-      f(e, t, n[t])
+    }))), r.forEach(function(t) {
+      g(e, t, n[t])
     })
   }
   return e
 }
 
-function b(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, a)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
-  v = b(g({}, Chunk241209.Z.rules), {
-    heading: b(g({}, Chunk241209.Z.rules.heading), {
+let b = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
+  x = _(f({}, Chunk241209.Z.rules), {
+    heading: _(f({}, Chunk241209.Z.rules.heading), {
       react(e, t, n) {
-        let r = "h".concat(Math.min(Math.max(2, e.level + 1), 4));
-        return (0, a.jsx)(d.Z, {
-          tag: r,
+        let i = "h".concat(Math.min(Math.max(2, e.level + 1), 4));
+        return (0, r.jsx)(d.Z, {
+          tag: i,
           children: t(e.content, n)
         }, n.key)
       }
@@ -65,11 +65,11 @@ let x = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
     assetImage: {
       order: 5,
       match(e, t) {
-        let n = e.match(x);
+        let n = e.match(b);
         if (null != n) {
           let e = n[2],
-            a = t.assets.find(t => t.id === e);
-          return null != a && [...n, a, t.applicationId]
+            r = t.assets.find(t => t.id === e);
+          return null != r && [...n, r, t.applicationId]
         }
         returnfalse
       },
@@ -78,9 +78,9 @@ let x = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
         alt: e[1],
         applicationId: e[4]
       }),
-      react: (e, t, n) => (0, a.jsx)("div", {
+      react: (e, t, n) => (0, r.jsx)("div", {
         className: h.assetWrapper,
-        children: (0, a.jsx)("img", {
+        children: (0, r.jsx)("img", {
           alt: e.alt,
           src: (0, p._W)(e.applicationId, e.asset, 800),
           className: h.asset
@@ -88,9 +88,9 @@ let x = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
       }, n.key)
     }
   }),
-  C = o().parserFor(v),
-  j = o().reactFor(o().ruleOutput(v, "react"));
-class _ extends Chunk473749.PureComponent {
+  v = o().parserFor(x),
+  C = o().reactFor(o().ruleOutput(x, "react"));
+class j extends Chunk473749.PureComponent {
   componentDidMount() {
     if (null != this._container) {
       let {
@@ -106,8 +106,8 @@ class _ extends Chunk473749.PureComponent {
       applicationId: e,
       description: t,
       blurb: n,
-      className: r,
-      assets: i
+      className: i,
+      assets: a
     } = this.props, {
       collapsed: s,
       collapsable: o
@@ -116,17 +116,17 @@ class _ extends Chunk473749.PureComponent {
       className: Chunk473749,
       children: [(0, Chunk54381.jsx)("div", {
         className: l()({
-          [Chunk697110.collapsed]: o && Chunk159635
+          [Chunk395155.collapsed]: o && Chunk159635
         }),
         children: (0, Chunk54381.jsxs)("div", {
           ref: this.setContentContainerRef,
           children: [(0, Chunk54381.jsx)("div", {
-            className: Chunk697110.blurb,
+            className: Chunk395155.blurb,
             children: require
           }), (0, Chunk54381.jsx)(Chunk241209.Z, {
-            className: Chunk697110.description,
-            parser: C,
-            output: j,
+            className: Chunk395155.description,
+            parser: v,
+            output: C,
             state: {
               assets: Chunk120356,
               applicationId: module
@@ -135,7 +135,7 @@ class _ extends Chunk473749.PureComponent {
           })]
         })
       }), o ? (0, Chunk54381.jsx)(Chunk755721.zx, {
-        className: Chunk697110.toggleCollapseButton,
+        className: Chunk395155.toggleCollapseButton,
         onClick: this.handleToggleCollapse,
         color: Chunk755721.zx.Colors.PRIMARY,
         children: Chunk159635 ? Chunk388032.intl.string(Chunk388032.t.DxcOXA) : Chunk388032.intl.string(Chunk388032.t.rD6EaA)
@@ -143,16 +143,16 @@ class _ extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "state", {
+    super(...e), g(this, "state", {
       collapsed: true,
       collapsable: true
-    }), f(this, "_container", true), f(this, "handleToggleCollapse", () => {
+    }), g(this, "_container", true), g(this, "handleToggleCollapse", () => {
       this.setState({
         collapsed: !this.state.collapsed
       })
-    }), f(this, "setContentContainerRef", e => {
+    }), g(this, "setContentContainerRef", e => {
       this._container = e
     })
   }
 }
-let y = _
+let y = j

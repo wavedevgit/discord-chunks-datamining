@@ -39,13 +39,13 @@ function d(e) {
     channelId: n,
     sessionId: r,
     trackedFeedItems: i,
-    isForcedFlush: o
+    isForcedFlush: a
   } = e, s = [], l = [];
   for (let e of Object.keys(i)) {
-    let t = i[e].computeSeenTimeDestructive(o);
+    let t = i[e].computeSeenTimeDestructive(a);
     t > 0 && (s.push(e), l.push(t))
   }
-  0 !== s.length && (0, a.qs)({
+  0 !== s.length && (0, o.qs)({
     guildId: t,
     channelId: n,
     sessionId: r,
@@ -75,6 +75,6 @@ class f extends Chunk480739.zQ {
           isForcedFlush: null != e
         };
       return () => d(r)
-    }), this.guildId = e, this.channelId = t, this.sessionId = (0, o.WW)(t)
+    }), this.guildId = e, this.channelId = t, this.sessionId = (0, a.WW)(t)
   }
 }

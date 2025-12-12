@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 821415, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,21 +19,21 @@ var Chunk54381 = require("./54381.js"),
   Chunk607361 = require("./607361.js"),
   Chunk463421 = require("./463421.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk442909 = require("./442909.js"),
+  Chunk946992 = require("./946992.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk67103 = require("./67103.js");
+  Chunk405143 = require("./405143.js");
 
-function x(e) {
+function O(e) {
   let t, {
       activity: n,
       channel: l,
       userId: a
     } = e,
     u = (0, d.IX)(n.application_id).data,
-    [p, f] = r.useState(false),
+    [p, h] = r.useState(false),
     [m, g] = r.useState(0),
-    b = (0, o.e7)([h.Z], () => h.Z.getChannelId() !== l.id);
-  async function x() {
+    b = (0, o.e7)([f.Z], () => f.Z.getChannelId() !== l.id);
+  async function O() {
     g(1);
     try {
       await c.Z.sendActivityInvite({
@@ -53,9 +53,9 @@ function x(e) {
   if (b && (t = v.intl.string(y.default.qRXats)), n.type === C.IIU.PLAYING) {
     let e = null == u ? true : u.getIconURL(46);
     return (0, i.jsxs)("div", {
-      className: O.activityRow,
+      className: _.activityRow,
       children: [(0, i.jsxs)("div", {
-        className: O.activityRowContent,
+        className: _.activityRowContent,
         children: [p || null == e ? (0, i.jsx)(s.IMN, {
           size: "custom",
           width: 46,
@@ -63,7 +63,7 @@ function x(e) {
         }) : (0, i.jsx)("img", {
           src: e,
           alt: n.name,
-          onError: () => f(true)
+          onError: () => h(true)
         }), (0, i.jsxs)("div", {
           children: [(0, i.jsx)(s.Text, {
             variant: "text-sm/medium",
@@ -80,9 +80,9 @@ function x(e) {
         fullWidth: true,
         size: "sm",
         text: 2 === m ? v.intl.string(y.default["8HU1M2"]) : v.intl.string(y.default.DKHhec),
-        onClick: x
+        onClick: O
       }), null != t && (0, i.jsx)(s.Text, {
-        className: O.disabledReason,
+        className: _.disabledReason,
         variant: "text-xs/normal",
         color: "text-muted",
         children: t
@@ -91,16 +91,16 @@ function x(e) {
   }
 }
 
-function E(e) {
+function x(e) {
   let {
     userId: t,
     channel: n
-  } = e, s = (0, o.e7)([m.default], () => m.default.getUser(t)), c = (0, b.Z)(t, n.guild_id), d = (0, g.Z)(t, n.id), h = r.useMemo(() => l.uniqWith(c, (e, t) => {
+  } = e, s = (0, o.e7)([m.default], () => m.default.getUser(t)), c = (0, b.Z)(t, n.guild_id), d = (0, g.Z)(t, n.id), f = r.useMemo(() => l.uniqWith(c, (e, t) => {
     if (e.application_id === t.application_id) returntrue;
-    let n = f.Z.getGameByName(e.name),
-      i = f.Z.getGameByName(t.name);
+    let n = h.Z.getGameByName(e.name),
+      i = h.Z.getGameByName(t.name);
     return null != n && n === i || e.name === t.name
-  }), [c]), C = null == s || !d || 0 === h.length;
+  }), [c]), C = null == s || !d || 0 === f.length;
   return ((0, u.Z)({
     type: a.ImpressionTypes.POPOUT,
     name: a.ImpressionNames.VOICE_USER_ACTIVITY_POPOUT,
@@ -110,10 +110,10 @@ function E(e) {
   }), C) ? null : (0, i.jsx)(p.Z.Provider, {
     value: n.guild_id,
     children: (0, i.jsx)("div", {
-      className: O.root,
+      className: _.root,
       children: (0, i.jsx)("div", {
-        className: O.activityList,
-        children: h.map(e => (0, i.jsx)(x, {
+        className: _.activityList,
+        children: f.map(e => (0, i.jsx)(O, {
           activity: e,
           channel: n,
           userId: t

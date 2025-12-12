@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk755721 = require("./755721.js"),
@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk577832 = require("./577832.js");
+  Chunk131151 = require("./131151.js");
 
 function R(e) {
   let {
@@ -54,8 +54,8 @@ function w(e) {
     isPremiumUser: n,
     onInteraction: i
   } = e, {
-    analyticsLocations: a,
-    newestAnalyticsLocation: o
+    analyticsLocations: o,
+    newestAnalyticsLocation: a
   } = (0, d.ZP)(), {
     trackUserProfileAction: s
   } = (0, y.KZ)();
@@ -104,8 +104,8 @@ function w(e) {
         variant: "secondary",
         onClick: () => {
           (0, f.mK)({
-            analyticsLocations: a,
-            analyticsSource: o
+            analyticsLocations: o,
+            analyticsSource: a
           }), null == i || i()
         }
       })
@@ -117,7 +117,7 @@ function D(e) {
   let {
     isPremiumUser: t,
     onInteraction: n,
-    className: a
+    className: o
   } = e, c = (0, p.Dt)(), {
     themeType: d
   } = (0, O.z)(), f = d === A.l.MODAL, g = (0, m.Nj)(l.z.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), E = (0, s.e7)([b.Z], () => b.Z.getGuildId());
@@ -148,10 +148,10 @@ function D(e) {
       tiny: f
     });
   return f ? (0, r.jsx)("aside", {
-    className: o()(P.upsellContainer, a),
+    className: a()(P.upsellContainer, o),
     "aria-labelledby": c,
     children: (0, r.jsxs)("div", {
-      className: o()(P.upsellContent, P.upsellRowContent),
+      className: a()(P.upsellContent, P.upsellRowContent),
       children: [y, (0, r.jsxs)("div", {
         className: P.upsellRowRight,
         children: [(0, r.jsx)("div", {
@@ -162,10 +162,10 @@ function D(e) {
       })]
     })
   }) : (0, r.jsx)("aside", {
-    className: o()(P.upsellContainer, a),
+    className: a()(P.upsellContainer, o),
     "aria-labelledby": c,
     children: (0, r.jsxs)("div", {
-      className: o()(P.upsellContent, P.upsellDefaultContent),
+      className: a()(P.upsellContent, P.upsellDefaultContent),
       children: [(0, r.jsxs)("div", {
         className: P.upsellHeader,
         children: [y, (0, r.jsx)("div", {

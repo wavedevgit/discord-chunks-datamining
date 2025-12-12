@@ -19,8 +19,8 @@ class f extends Chunk727916.Z {
   }
   innerExtract(e, t) {
     let n, i = t[c],
-      a = t[d],
-      l = i || a;
+      o = t[d],
+      l = i || o;
     l = (l = l || "").toLowerCase();
     let f = null;
     "last" == l || "past" == l ? f = "last" : "next" == l ? f = "next" : "this" == l && (f = "this");
@@ -32,6 +32,6 @@ class f extends Chunk727916.Z {
       let t = e.reference.getDateWithAdjustedTimezone().getDay();
       t == s.OG.SUNDAY || t == s.OG.SATURDAY ? n = "last" == f ? s.OG.FRIDAY : s.OG.MONDAY : (n = t - 1, n = (n = "last" == f ? n - 1 : n + 1) % 5 + 1)
     }
-    return (0, o.Rv)(e.reference, n, f)
+    return (0, a.Rv)(e.reference, n, f)
   }
 }

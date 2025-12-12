@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk570140 = require("./570140.js"),
   Chunk188785 = require("./188785.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,21 +16,21 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
 }
 let s = {
   openNativeAppModal(e, t) {
-    let a = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
+    let o = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
     i.a || (r.Z.dispatch({
       type: "NATIVE_APP_MODAL_OPENING",
       code: e
@@ -38,9 +38,9 @@ let s = {
       let {
         default: r
       } = n;
-      r.request(t, o({
+      r.request(t, a({
         code: e
-      }, a)).then(t => {
+      }, o)).then(t => {
         var n;
         this.nativeModalOpened(null != (n = null == t ? true : t.code) ? n : e)
       }).catch(() => this.nativeModalOpenFailed(e)).then(() => r.disconnect())

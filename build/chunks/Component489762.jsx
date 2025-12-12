@@ -40,7 +40,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk957825 = require("./957825.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk318187 = require("./318187.js"),
+  Chunk473049 = require("./473049.js"),
   Chunk239840 = require("./239840.js");
 
 function F(e, t, n) {
@@ -95,8 +95,8 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
   en = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_PADDING),
   er = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_PREVIEW_MARGIN),
   ei = ee + 2 * en + er,
-  ea = et + 2 * en + er,
-  eo = 20,
+  eo = et + 2 * en + er,
+  ea = 20,
   es = [K, q, Q, X],
   el = [z, q, Q, X],
   ec = 12,
@@ -124,7 +124,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       onSelectSticker: t,
       channel: n,
       currentUser: r
-    } = e, a = (0, u.O)(), o = (0, h.Iu)(e => e.searchQuery);
+    } = e, o = (0, u.O)(), a = (0, h.Iu)(e => e.searchQuery);
     return {
       handleStickerInspect: i.useCallback(e => {
         let {
@@ -140,8 +140,8 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           sticker: s
         } = e;
         if (null == s) return;
-        let l = H(B({}, a.location), {
-          object: "" === o ? M.qAy.STICKER_PICKER_VIEW_ALL : M.qAy.STICKER_SEARCH_VIEW_ALL
+        let l = H(B({}, o.location), {
+          object: "" === a ? M.qAy.STICKER_PICKER_VIEW_ALL : M.qAy.STICKER_SEARCH_VIEW_ALL
         });
         if (null != s && !(0, C.kl)(s, r, n)) {
           let e = (0, w.J8)(s);
@@ -155,14 +155,14 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           })
         }), (0, A.SA)(s.id)));
         t(e)
-      }, [a.location, o, r, n, t])
+      }, [o.location, a, r, n, t])
     }
   },
   e_ = e => {
     let {
       collapsedStickersCategories: t,
       gridWidth: n,
-      onSelectSticker: a,
+      onSelectSticker: o,
       getStickerItemProps: s,
       getStickerRowProps: c,
       gutterWidth: d,
@@ -174,11 +174,11 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       filteredStickers: E,
       ownedStickerPacks: I,
       channel: T
-    } = e, C = (0, u.O)(), A = (0, o.e7)([v.default], () => v.default.getCurrentUser()), {
+    } = e, C = (0, u.O)(), A = (0, a.e7)([v.default], () => v.default.getCurrentUser()), {
       handleStickerInspect: N,
       handleSelect: L
     } = ep({
-      onSelectSticker: a,
+      onSelectSticker: o,
       channel: T,
       currentUser: A
     }), [Z, F] = i.useState(false), B = i.useCallback(e => {
@@ -355,9 +355,9 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       stickersCategories: S,
       stickersGrid: I,
       channel: T
-    } = e, C = i.useRef(false), A = i.useRef(null), [N, R] = m.ZN.useStore(e => [e.activeCategoryIndex, e.inspectedExpressionPosition], a.X), {
+    } = e, C = i.useRef(false), A = i.useRef(null), [N, R] = m.ZN.useStore(e => [e.activeCategoryIndex, e.inspectedExpressionPosition], o.X), {
       analyticsLocations: w
-    } = (0, f.ZP)(d.Z.STICKER_PICKER), D = (0, h.Iu)(e => e.searchQuery), x = (0, o.e7)([P.Z], () => P.Z.getPremiumPacks()), {
+    } = (0, f.ZP)(d.Z.STICKER_PICKER), D = (0, h.Iu)(e => e.searchQuery), x = (0, a.e7)([P.Z], () => P.Z.getPremiumPacks()), {
       renderRow: j,
       renderSection: M,
       renderSectionFooter: k,
@@ -384,7 +384,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       isScrolling: C,
       listRef: A,
       onActiveCategoryIndexChange: m.ZN.setActiveCategoryIndex,
-      scrollOffset: eo,
+      scrollOffset: ea,
       searchQuery: D
     });
     return (0, E.Xs)({
@@ -448,7 +448,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           renderSectionFooter: k,
           rowCount: O,
           rowCountBySection: v,
-          rowHeight: s > Y ? ei : ea,
+          rowHeight: s > Y ? ei : eo,
           sectionHeaderHeight: V,
           sectionFooterHeight: F,
           stickyHeaders: true,

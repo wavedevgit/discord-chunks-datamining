@@ -4,7 +4,7 @@
 require.d(exports, {
   Z: () => f
 }), require("./388685.js"), require("./415506.js");
-var Chunk911340 = require("./911340.js"),
+var Chunk481386 = require("./481386.js"),
   Chunk38618 = require("./38618.js"),
   Chunk905423 = require("./905423.js"),
   Chunk622143 = require("./622143.js"),
@@ -32,20 +32,20 @@ class d {
     if (this.routeChangeCount += 1, this.routeChangeCount < u)
       for (let n of this.rewrites) {
         let i = (0, s.s1)().location.pathname,
-          a = n(e, t);
-        if (null != a) return (0, r.n)({
+          o = n(e, t);
+        if (null != o) return (0, r.n)({
           message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route",
           data: {
-            replacePath: a.path,
+            replacePath: o.path,
             previousPath: i
           }
-        }), (0, s.dL)(a.path, a.state), true
+        }), (0, s.dL)(o.path, o.state), true
       } else throw Error("RouteManager: Something has gone horribly wrong with rewrites");
     returnfalse
   }
   cleanup() {
     var e, t, n, r;
-    null == (e = (t = this).unlistenHistory) || module.call(exports), this.unlistenHistory = true, null == (n = (r = this).unlistenKeyboardChange) || require.call(Chunk911340), this.unlistenKeyboardChange = true, Chunk38618.Z.removeChangeListener(this.handleConnectionChange)
+    null == (e = (t = this).unlistenHistory) || module.call(exports), this.unlistenHistory = true, null == (n = (r = this).unlistenKeyboardChange) || require.call(Chunk481386), this.unlistenKeyboardChange = true, Chunk38618.Z.removeChangeListener(this.handleConnectionChange)
   }
   addRouteChangeListener(e) {
     return null != this.unlistenHistory && e((0, s.s1)().location, "REPLACE"), this.listeners.add(e), () => this.removeRouteChangeListener(e)
@@ -73,8 +73,8 @@ class d {
       this.connected = module, exports && (this.routeChangeCount = 0, this.executeRouteRewrites((0, Chunk703656.s1)().location, "REPLACE"))
     }), c(this, "handleRouteChange", (e, t) => {
       if (this.executeRouteRewrites(e, t)) return;
-      if (!(0, o.r)(e)) return void(0, s.dL)(l.Z5c.ME);
-      let n = a.Z.getState();
+      if (!(0, a.r)(e)) return void(0, s.dL)(l.Z5c.ME);
+      let n = o.Z.getState();
       for (let r of (n.basePath !== e.pathname && n.resetPath(e.pathname), this.listeners)) try {
         r(e, t)
       } catch (e) {

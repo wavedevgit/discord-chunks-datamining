@@ -13,7 +13,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk607802 = require("./607802.js"),
   Chunk579612 = require("./579612.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk129420 = require("./129420.js");
+  Chunk575209 = require("./575209.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,31 +59,31 @@ let g = e => {
     searchFavorites: n,
     showDMQueryText: r
   } = e, {
-    filterCount: o,
+    filterCount: a,
     queryContent: s,
     isQueryEmpty: u
-  } = a.useMemo(() => {
+  } = o.useMemo(() => {
     var e, n, r;
     let i = (0, c.kG)(t),
-      a = (0, c.$G)(i),
-      o = null != (n = (0, c.UP)(a)) ? n : "";
+      o = (0, c.$G)(i),
+      a = null != (n = (0, c.UP)(o)) ? n : "";
     return {
-      filterCount: null != (r = null == (e = a.channel_id) ? true : e.length) ? r : 0,
-      isQueryEmpty: 0 === o.length,
-      queryContent: o
+      filterCount: null != (r = null == (e = o.channel_id) ? true : e.length) ? r : 0,
+      isQueryEmpty: 0 === a.length,
+      queryContent: a
     }
   }, [t]);
   return n ? (0, i.jsx)("div", {
     className: f.queryText,
     children: d.intl.string(d.t["6RVtLA"])
-  }) : r ? o > 0 ? (0, i.jsx)(l.Text, {
+  }) : r ? a > 0 ? (0, i.jsx)(l.Text, {
     variant: "text-sm/medium",
     color: "text-subtle",
     className: f.searchDMQueryText,
     children: u ? d.intl.format(d.t.iV2fth, {
-      filterCount: o
+      filterCount: a
     }) : d.intl.format(d.t["5CTmUk"], {
-      filterCount: o,
+      filterCount: a,
       value: s
     })
   }) : (0, i.jsx)(l.Text, {
@@ -119,8 +119,8 @@ class y extends(r = Chunk473749.PureComponent) {
       query: t,
       navId: n,
       focusedIndex: r,
-      onSelectQuery: a,
-      onSelectSearchEverywhere: o,
+      onSelectQuery: o,
+      onSelectSearchEverywhere: a,
       onHighlightQuery: c,
       hideQuery: u,
       searchFavorites: p,
@@ -135,7 +135,7 @@ class y extends(r = Chunk473749.PureComponent) {
         })
       }, b(n, false, E)), {
         onMouseEnter: c,
-        onClick: a,
+        onClick: o,
         children: [(0, i.jsx)(g, {
           query: t,
           searchFavorites: p,
@@ -155,7 +155,7 @@ class y extends(r = Chunk473749.PureComponent) {
         })
       }, b(n, false, E)), {
         onMouseEnter: c,
-        onClick: o,
+        onClick: a,
         children: [(0, i.jsx)("div", {
           className: f.queryText,
           children: d.intl.string(d.t.FtSUxc)
@@ -177,14 +177,14 @@ class y extends(r = Chunk473749.PureComponent) {
       renderNoResults: n,
       renderInitialState: r,
       renderResult: i,
-      renderCustomResults: a
+      renderCustomResults: o
     } = this.props;
     if (e) return r();
     if (0 === t) return n();
     if (null != i) return Array.from({
       length: t
     }).map((e, t) => i(t));
-    if (null != a) return a();
+    if (null != o) return o();
     throw Error("SearchResultsPopout.renderResults: Flow should never allow this...")
   }
   render() {
@@ -194,7 +194,7 @@ class y extends(r = Chunk473749.PureComponent) {
       navId: n
     } = this.props, r = "" === module.trim();
     return (0, Chunk54381.jsxs)(Chunk481060.u2D, {
-      className: Chunk129420.container,
+      className: Chunk575209.container,
       onMouseDown: E,
       role: "listbox",
       id: require,
@@ -210,10 +210,10 @@ class y extends(r = Chunk473749.PureComponent) {
         channel: t,
         showSearchInSelectedChannel: n,
         focusedIndex: r,
-        onSelectSearchInSelectedChannel: a
+        onSelectSearchInSelectedChannel: o
       } = this.props;
       if (!n || null == t) return null;
-      let o = false === r,
+      let a = false === r,
         s = (0, c.X3)(t),
         p = (0, i.jsx)(u.ZP, {
           channel: t,
@@ -223,9 +223,9 @@ class y extends(r = Chunk473749.PureComponent) {
           channelContainerClassName: f.channelContainer,
           textContainerClassName: f.searchResultNameContainer
         });
-      return (0, i.jsx)(l.P3F, h(_({}, b(e, false, o)), {
+      return (0, i.jsx)(l.P3F, h(_({}, b(e, false, a)), {
         className: f.inChannelOptionContainer,
-        onClick: a,
+        onClick: o,
         children: (0, i.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "interactive-text-default",

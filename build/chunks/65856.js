@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk626135 = require("./626135.js"),
   Chunk70956 = require("./70956.js"),
   Chunk996106 = require("./996106.js"),
@@ -28,7 +28,7 @@ let m = "RPC_STORE_WAIT",
   h = [];
 
 function g(e, t) {
-  return o().isEqual(e, o().pick(t, Object.keys(e)))
+  return a().isEqual(e, a().pick(t, Object.keys(e)))
 }
 
 function E(e) {
@@ -79,8 +79,8 @@ class b {
       }), n(i)
     }).then(e => new Promise(async (n, r) => {
       if (null != e.validation) {
-        let a = await this.getJoi();
-        i()(null != e.validation, "command.validation must not be null"), a.validate(t.args, e.validation(a), {
+        let o = await this.getJoi();
+        i()(null != e.validation, "command.validation must not be null"), o.validate(t.args, e.validation(o), {
           convert: false
         }, t => {
           if (null != t) return void r(new c.Z({
@@ -153,7 +153,7 @@ class b {
     return true !== this.subscriptions.find(n => n.socket.application.id === e && n.evt === t)
   }
   getSubscription(e, t, n) {
-    return this.subscriptions.find(r => r.socket === e && r.evt === t && o().isEqual(r.args, n))
+    return this.subscriptions.find(r => r.socket === e && r.evt === t && a().isEqual(r.args, n))
   }
   addSubscription(e, t, n) {
     let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : null,
@@ -171,10 +171,10 @@ class b {
     }), this.dispatchIsSubscribedUpdate())
   }
   removeSubscription(e, t, n) {
-    o().remove(this.subscriptions, r => r.socket === e && r.evt === t && o().isEqual(r.args, n)), this.dispatchIsSubscribedUpdate()
+    a().remove(this.subscriptions, r => r.socket === e && r.evt === t && a().isEqual(r.args, n)), this.dispatchIsSubscribedUpdate()
   }
   removeSubscriptions(e) {
-    o().remove(this.subscriptions, t => t.socket === e), this.dispatchIsSubscribedUpdate()
+    a().remove(this.subscriptions, t => t.socket === e), this.dispatchIsSubscribedUpdate()
   }
   dispatchToSubscriptions(e, t, n, r) {
     null != r && "" !== r && E(r) || this.subscriptions.forEach(r => {
@@ -190,13 +190,13 @@ class b {
   storeWait(e, t, n) {
     let r = t();
     if (r || 0 === n) return Promise.resolve(r);
-    let i = o().uniqueId(),
-      a = () => this.removeSubscription(e, m, {
+    let i = a().uniqueId(),
+      o = () => this.removeSubscription(e, m, {
         uniqueId: i
       });
-    return new Promise((r, o) => {
+    return new Promise((r, a) => {
       let s = setTimeout(() => {
-        a(), o(Error("timeout"))
+        o(), a(Error("timeout"))
       }, n * l.Z.Millis.SECOND);
       this.addSubscription(e, m, {
         uniqueId: i
@@ -204,7 +204,7 @@ class b {
         let e = t();
         e && (clearTimeout(s), r(e))
       })
-    }).then(e => (a(), e))
+    }).then(e => (o(), e))
   }
   constructor(e) {
     _(this, "getCurrentUser", () => null), _(this, "onConnect", () => {}), _(this, "onDisconnect", () => {}), _(this, "getJoi", true), _(this, "events", {}), _(this, "commands", {}), _(this, "sockets", new Set), _(this, "subscriptions", []), _(this, "isSubscribedListeners", new Set), this.getJoi = e

@@ -96,7 +96,7 @@ function S(e) {
 function I(e, t) {
   return O().then(n => {
     var l;
-    let u = null == (l = o.ZP.getGameForPID(e)) ? true : l.name,
+    let u = null == (l = a.ZP.getGameForPID(e)) ? true : l.name,
       d = s.Z.getGameByName(u),
       f = null;
     return new Promise(s => {
@@ -108,9 +108,9 @@ function I(e, t) {
             error: e
           }, t)), null != f && (clearTimeout(f), f = null), n ? s() : s(e = null != e ? e : "Unknown hook error")
         },
-        _ = o.ZP.getOverlayOptionsForPID(e),
-        h = g(m({}, a.r, _), {
-          elevate: o.ZP.shouldElevateProcessForPID(e)
+        _ = a.ZP.getOverlayOptionsForPID(e),
+        h = g(m({}, o.r, _), {
+          elevate: a.ZP.shouldElevateProcessForPID(e)
         });
       null == h.allowHook || h.allowHook ? (f = setTimeout(() => {
         n.cancelAttachToProcess(e), l("Timed out waiting for hook response", false)

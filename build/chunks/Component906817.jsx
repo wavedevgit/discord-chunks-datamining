@@ -1,9 +1,9 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 906817, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  EM: () => b,
-  WW: () => m,
-  ZP: () => y
+  EM: () => m,
+  WW: () => b,
+  ZP: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,9 +17,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk327530 = require("./327530.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk135445 = require("./135445.js");
+  Chunk776677 = require("./776677.js");
 
-function b(e, t, n, r) {
+function m(e, t, n, r) {
   let i = "compact" === r ? 8 : f.$k;
   if (e === u.wZ) return i;
   if (e === u.wd) return t.features.has(h.GuildFeatures.HUB) ? 0 : i;
@@ -34,7 +34,7 @@ function b(e, t, n, r) {
   return "compact" === r ? 32 : f.Pw
 }
 
-function m(e, t) {
+function b(e, t) {
   switch (e) {
     case u.wZ:
       return "hoisted-spacer";
@@ -53,53 +53,53 @@ function m(e, t) {
     }
   }
 }
-let y = Chunk473749.memo(function(e) {
+let _ = Chunk473749.memo(function(e) {
   let {
     sectionIndex: t,
     guild: n,
-    guildChannels: b,
-    guildChannelsVersion: m,
-    selectedChannelId: y,
-    disableManageChannels: O
+    guildChannels: m,
+    guildChannelsVersion: b,
+    selectedChannelId: _,
+    disableManageChannels: y
   } = e, {
-    isFavoritesPerk: v
-  } = (0, a.z)("ChannelListSection"), j = i.useCallback(() => {
-    let e = b.getCategoryFromSection(b.recentsSectionNumber);
+    isFavoritesPerk: O
+  } = (0, o.z)("ChannelListSection"), v = i.useCallback(() => {
+    let e = m.getCategoryFromSection(m.recentsSectionNumber);
     if (null == e) return;
     let t = null,
       r = e.getShownChannelAndThreadIds();
-    null != y && r.includes(y) && (t = (0, o.KY)(b)), (0, o.Uo)(n.id, r, t)
-  }, [n.id, y, b, m]), {
-    density: C
-  } = (0, l.TCT)(), x = "compact" === C ? 8 : f.$k;
+    null != _ && r.includes(_) && (t = (0, a.KY)(m)), (0, a.Uo)(n.id, r, t)
+  }, [n.id, _, m, b]), {
+    density: j
+  } = (0, l.TCT)(), C = "compact" === j ? 8 : f.$k;
   switch (t) {
     case u.wZ:
       return (0, r.jsx)("div", {
         style: {
-          height: x
+          height: C
         }
       });
     case u.wd:
       if (n.features.has(h.GuildFeatures.HUB)) return null;
       return (0, r.jsx)("div", {
         style: {
-          height: x
+          height: C
         }
       });
     case u.p2:
       return (0, r.jsx)(d.P, {
-        name: v ? p.intl.string(p.t.mlPMCy) : p.intl.string(p.t.k8fFjp)
+        name: O ? p.intl.string(p.t.mlPMCy) : p.intl.string(p.t.k8fFjp)
       });
-    case b.recentsSectionNumber:
+    case m.recentsSectionNumber:
       return (0, r.jsx)(d.P, {
         name: p.intl.string(p.t.gKcrqM),
-        onDismiss: j
+        onDismiss: v
       });
-    case b.voiceChannelsSectionNumber: {
-      var E;
-      let e = b.getCategoryFromSection(b.voiceChannelsSectionNumber);
+    case m.voiceChannelsSectionNumber: {
+      var x;
+      let e = m.getCategoryFromSection(m.voiceChannelsSectionNumber);
       if (null == e || e.isEmpty()) return null;
-      let n = null == (E = b.getChannelFromSectionRow(t, 0)) ? true : E.channel;
+      let n = null == (x = m.getChannelFromSectionRow(t, 0)) ? true : x.channel;
       return (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)("div", {
           className: g.sectionDivider
@@ -110,12 +110,12 @@ let y = Chunk473749.memo(function(e) {
       })
     }
     case u.wF: {
-      let e = b.getNamedCategoryFromSection(t);
+      let e = m.getNamedCategoryFromSection(t);
       if (null == e) return null;
       return (0, r.jsx)(d.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: O,
+        disableManageChannels: y,
         children: (0, r.jsx)(s.Z, {
           inlineSpecs: f.MF,
           arrowAlignment: c.cy.TOP,
@@ -125,12 +125,12 @@ let y = Chunk473749.memo(function(e) {
       })
     }
     default: {
-      let e = b.getNamedCategoryFromSection(t);
+      let e = m.getNamedCategoryFromSection(t);
       if (null == e) return null;
       return (0, r.jsx)(d.ZP, {
         channel: e.record,
         position: e.position,
-        disableManageChannels: O
+        disableManageChannels: y
       })
     }
   }

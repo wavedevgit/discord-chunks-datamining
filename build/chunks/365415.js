@@ -11,5 +11,5 @@ var Chunk442837 = require("./442837.js"),
 let s = (0, Chunk442837.Kb)(Chunk703047.Z, {
   getQueryId: Chunk981631.McO.CUSTOM_ACTIVITY_LINK,
   get: (e, t) => null == e || null == t ? null : i.Z.getOne(e, t),
-  load: (e, t) => (0, a.UD)(e, t)
+  load: (e, t) => (0, o.UD)(e, t)
 })

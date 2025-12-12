@@ -1,5 +1,5 @@
 /** Chunk was on 47435 **/
-/** chunk id: 204387, original params: e,t,a (module,exports,require) **/
+/** chunk id: 204387, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   default: () => p
 }), require("./388685.js");
@@ -11,29 +11,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk626135 = require("./626135.js"),
   Chunk281494 = require("./281494.js"),
   Chunk687555 = require("./687555.jsx"),
-  Chunk596583 = require("./596583.jsx"),
+  Chunk258104 = require("./258104.jsx"),
   Chunk981631 = require("./981631.js");
 let p = e => {
   let t, {
-      transitionState: a,
+      transitionState: r,
       onClose: p,
       sourceAnalyticsLocations: f
     } = e,
-    [h, u] = i.useState(1),
-    [j, m] = i.useState(new Set),
-    [_, g] = i.useState(new Map),
+    [h, u] = a.useState(1),
+    [j, m] = a.useState(new Set),
+    [_, g] = a.useState(new Map),
     {
       analyticsLocations: L
     } = (0, l.ZP)([...f, n.Z.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]);
   switch (h) {
     case 1:
-      t = (0, r.jsx)(C.ZP, {
+      t = (0, i.jsx)(d.ZP, {
         onShare: async e => {
           try {
-            d.default.track(x.rMx.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
+            o.default.track(x.rMx.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
               location_stack: L
             });
-            let t = await (0, o.jy)(e.map(e => e.id));
+            let t = await (0, C.jy)(e.map(e => e.id));
             u(2), m(new Set(e)), g(t)
           } catch (e) {}
         },
@@ -41,7 +41,7 @@ let p = e => {
       });
       break;
     case 2:
-      t = (0, r.jsx)(c.Z, {
+      t = (0, i.jsx)(c.Z, {
         selectedUsers: j,
         trialCreationResult: _,
         onClose: p
@@ -50,9 +50,9 @@ let p = e => {
     default:
       p()
   }
-  return (0, r.jsx)(s.Y0X, {
+  return (0, i.jsx)(s.Y0X, {
     "data-migration-pending": true,
-    transitionState: a,
+    transitionState: r,
     parentComponent: "ReferralProgramShareModal",
     children: t
   })

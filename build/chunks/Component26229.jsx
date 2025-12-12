@@ -10,7 +10,7 @@ let r = require("./473749.js").memo(function(e) {
     layout: t,
     layoutSize: n,
     className: r,
-    renderWidget: a
+    renderWidget: s
   } = e;
   return null != t ? (0, i.jsx)("div", {
     className: r,
@@ -18,6 +18,6 @@ let r = require("./473749.js").memo(function(e) {
       width: n.width,
       height: n.height
     },
-    children: t.widgets.map(e => a(e, n))
+    children: t.widgets.map(e => s(e, n))
   }) : null
 })

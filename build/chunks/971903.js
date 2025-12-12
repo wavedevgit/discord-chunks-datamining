@@ -70,14 +70,14 @@ let y = (0, Chunk473749.createContext)(null),
             next: _
           }
         }],
-        [a.ni, {
+        [o.ni, {
           "aria-hidden": true,
           level: 2,
           children: O
         }],
         [v, d],
         [y, e],
-        [o.j, {
+        [a.j, {
           slots: {
             errorMessage: h
           }
@@ -93,11 +93,11 @@ let y = (0, Chunk473749.createContext)(null),
   T = (0, Chunk473749.createContext)(null),
   C = (0, Chunk473749.forwardRef)(function(e, t) {
     var n, r;
-    let a = (0, b.useContext)(v),
-      o = (0, b.useContext)(S),
+    let o = (0, b.useContext)(v),
+      a = (0, b.useContext)(S),
       s = (0, i.jn)(y),
       l = (0, i.jn)(O),
-      u = null != a ? a : o,
+      u = null != o ? o : a,
       f = u.visibleRange.start;
     e.offset && (f = f.add(e.offset));
     let p = null != (n = null == s ? true : s.firstDayOfWeek) ? n : null == l ? true : l.firstDayOfWeek,
@@ -137,17 +137,17 @@ function A(e, t) {
     style: r,
     className: i
   } = e, {
-    headerProps: a,
-    weekDays: o
+    headerProps: o,
+    weekDays: a
   } = (0, b.useContext)(T), s = (0, E.z)(e, {
     global: true
   });
   return b.createElement("thead", {
-    ...(0, c.d)(s, a),
+    ...(0, c.d)(s, o),
     ref: t,
     style: r,
     className: i || "react-aria-CalendarGridHeader"
-  }, b.createElement("tr", null, o.map((e, t) => b.cloneElement(n(e), {
+  }, b.createElement("tr", null, a.map((e, t) => b.cloneElement(n(e), {
     key: t
   }))))
 }
@@ -158,11 +158,11 @@ function P(e, t) {
     children: n,
     style: r,
     className: i
-  } = e, a = (0, E.z)(e, {
+  } = e, o = (0, E.z)(e, {
     global: true
   });
   return b.createElement("th", {
-    ...a,
+    ...o,
     ref: t,
     style: r,
     className: i || "react-aria-CalendarHeaderCell"
@@ -175,7 +175,7 @@ function w(e, t) {
     children: n,
     style: r,
     className: i
-  } = e, a = (0, b.useContext)(v), o = (0, b.useContext)(S), s = null != a ? a : o, {
+  } = e, o = (0, b.useContext)(v), a = (0, b.useContext)(S), s = null != o ? o : a, {
     startDate: l,
     weeksInMonth: c
   } = (0, b.useContext)(T), u = (0, E.z)(e, {
@@ -200,9 +200,9 @@ let D = (0, Chunk473749.forwardRef)(w),
     ...t
   }, n) {
     var r;
-    let a = (0, b.useContext)(v),
-      o = (0, b.useContext)(S),
-      s = null != a ? a : o,
+    let o = (0, b.useContext)(v),
+      a = (0, b.useContext)(S),
+      s = null != o ? o : a,
       {
         startDate: l
       } = null != (r = (0, b.useContext)(T)) ? r : {

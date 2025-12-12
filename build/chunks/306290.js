@@ -17,10 +17,10 @@ function s(e) {
     ref: l,
     keyboardDelegate: c,
     layoutDelegate: u
-  } = e, d = (0, a.X)({
+  } = e, d = (0, o.X)({
     usage: "search",
     sensitivity: "base"
-  }), f = t.disabledBehavior, p = (0, o.useMemo)(() => c || new(0, i.d)({
+  }), f = t.disabledBehavior, p = (0, a.useMemo)(() => c || new(0, i.d)({
     collection: n,
     disabledKeys: s,
     disabledBehavior: f,

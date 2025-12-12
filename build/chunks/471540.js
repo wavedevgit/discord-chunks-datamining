@@ -10,7 +10,7 @@ var Chunk46015 = require("./46015.js"),
   c = Chunk46015("".slice),
   u = function(e) {
     return function(t, n) {
-      var r, u, d = a(o(t)),
+      var r, u, d = o(a(t)),
         f = i(n),
         p = d.length;
       return f < 0 || f >= p ? e ? "" : true : (r = l(d, f)) < 55296 || r > 56319 || f + 1 === p || (u = l(d, f + 1)) < 56320 || u > 57343 ? e ? s(d, f) : r : e ? c(d, f, f + 2) : (r - 55296 << 10) + (u - 56320) + 65536

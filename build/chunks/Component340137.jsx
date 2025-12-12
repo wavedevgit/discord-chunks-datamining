@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk961040 = require("./961040.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk12816 = require("./12816.js");
+  Chunk445202 = require("./445202.js");
 let C = {
     cozy: 0,
     default: 0,
@@ -47,8 +47,8 @@ function N(e) {
     selectedOverride: s = false,
     popoutProps: o,
     ref: h,
-    focusSectionProps: b
-  } = e, [O, v] = i.useState(false), N = (0, _.D)(), j = s || N, P = s || j, {
+    focusSectionProps: _
+  } = e, [O, v] = i.useState(false), N = (0, b.D)(), j = s || N, P = s || j, {
     backForwardButtons: x,
     titlebarIconSize: A,
     titlebarHoverHighlight: Z
@@ -96,7 +96,7 @@ function N(e) {
         className: a()(I.clickableContainer, {
           [I.withHoverHighlight]: Z
         })
-      }, b, o), n = n = {
+      }, _, o), n = n = {
         onMouseEnter: () => {
           v(true)
         },

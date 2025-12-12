@@ -1,4 +1,4 @@
-/** Chunk was on 3298 **/
+/** Chunk was on 26473 **/
 /** chunk id: 802659, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function l(e, n, t) {
+function a(e, n, t) {
   return n in e ? Object.defineProperty(e, n, {
     value: t,
     enumerable: true,
@@ -31,7 +31,7 @@ class c extends(r = Chunk442837.ZP.Store) {
     return s
   }
 }
-l(c, "displayName", "GameServerRegionStore");
+a(c, "displayName", "GameServerRegionStore");
 let u = new c(Chunk570140.Z, {
   LOGOUT: d,
   GAME_SERVER_REGION_PING_STATE_UPDATE: function(e) {
@@ -47,7 +47,7 @@ let u = new c(Chunk570140.Z, {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
           return Object.getOwnPropertyDescriptor(t, e).enumerable
         }))), r.forEach(function(n) {
-          l(e, n, t[n])
+          a(e, n, t[n])
         })
       }
       return e

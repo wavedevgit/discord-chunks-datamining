@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk246946 = require("./246946.js"),
   Chunk654904 = require("./654904.jsx"),
   Chunk671955 = require("./671955.js"),
-  Chunk155493 = require("./155493.js");
+  Chunk116649 = require("./116649.js");
 
 function _(e) {
   let {
@@ -47,7 +47,7 @@ function _(e) {
   return (0, r.jsxs)("div", {
     className: p.body,
     inert: true,
-    children: [(0, r.jsx)(o.Z, {
+    children: [(0, r.jsx)(a.Z, {
       user: t,
       guildId: null == _ ? true : _.id,
       usernameIcon: w(),
@@ -55,7 +55,7 @@ function _(e) {
       pendingDisplayNameStyles: v,
       pronouns: P,
       isTryItOut: S,
-      tags: (0, r.jsx)(a.Z, {
+      tags: (0, r.jsx)(o.Z, {
         displayProfile: n,
         themeType: f.l.POPOUT,
         pendingLegacyUsernameDisabled: y,

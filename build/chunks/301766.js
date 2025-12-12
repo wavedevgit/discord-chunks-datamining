@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk81825 = require("./81825.js"),
   Chunk474936 = require("./474936.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,7 +17,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o extends Chunk81825.Z {
+class a extends Chunk81825.Z {
   static createFromServer(e) {
     let t = {};
     return null != e.prices && (t = Object.keys(e.prices).reduce((t, n) => {
@@ -33,7 +33,7 @@ class o extends Chunk81825.Z {
           return t[r] = i.map(t => s(t, e.tax_inclusive)), t
         }, {})
       }, t
-    }, {})), new o({
+    }, {})), new a({
       id: e.id,
       name: e.name,
       interval: e.interval,
@@ -83,7 +83,7 @@ class o extends Chunk81825.Z {
     }
   }
   constructor(e) {
-    super(), a(this, "id", true), a(this, "name", true), a(this, "interval", true), a(this, "intervalCount", true), a(this, "taxInclusive", true), a(this, "skuId", true), a(this, "currency", true), a(this, "price", true), a(this, "prices", true), this.id = e.id, this.name = e.name, this.interval = e.interval, this.intervalCount = e.intervalCount, this.taxInclusive = e.taxInclusive, this.skuId = e.skuId, this.currency = e.currency, this.price = e.price, this.prices = e.prices
+    super(), o(this, "id", true), o(this, "name", true), o(this, "interval", true), o(this, "intervalCount", true), o(this, "taxInclusive", true), o(this, "skuId", true), o(this, "currency", true), o(this, "price", true), o(this, "prices", true), this.id = e.id, this.name = e.name, this.interval = e.interval, this.intervalCount = e.intervalCount, this.taxInclusive = e.taxInclusive, this.skuId = e.skuId, this.currency = e.currency, this.price = e.price, this.prices = e.prices
   }
 }
 
@@ -99,4 +99,4 @@ function s(e, t) {
 function l(e) {
   return [i.Xh.NONE_MONTH, i.Xh.NONE_3_MONTH, i.Xh.NONE_6_MONTH, i.Xh.NONE_YEAR].includes(e)
 }
-let c = o
+let c = a

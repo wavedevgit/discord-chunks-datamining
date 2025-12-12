@@ -8,7 +8,7 @@ require.d(exports, {
   P4: () => d,
   Tk: () => g,
   cO: () => f,
-  cj: () => o,
+  cj: () => a,
   qi: () => h,
   qu: () => m,
   sd: () => p
@@ -16,7 +16,7 @@ require.d(exports, {
 var Chunk654861 = require("./654861.js"),
   i = require.n(Chunk654861);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,21 +24,21 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = 14200704e5,
+let a = 14200704e5,
   s = 4095,
   l = 22;
 
 function c(e) {
-  return Math.floor(Number(e) / 2 ** l) + o
+  return Math.floor(Number(e) / 2 ** l) + a
 }
 
 function u(e) {
-  let t = e - o;
+  let t = e - a;
   return t <= 0 ? "0" : i()(t).shiftLeft(l).toString()
 }
 
 function d(e, t) {
-  let n = e - o;
+  let n = e - a;
   return i()(n <= 0 ? 0 : n).shiftLeft(l).add(t.next()).toString()
 }
 
@@ -61,7 +61,7 @@ function m(e, t) {
 function h(e) {
   if (null == e || !/^\d{17,19}$/.test(e)) returnfalse;
   try {
-    return c(e) >= o
+    return c(e) >= a
   } catch (e) {
     returnfalse
   }
@@ -78,6 +78,6 @@ class g {
     this.seq = 0
   }
   constructor() {
-    a(this, "seq", true), this.seq = 0
+    o(this, "seq", true), this.seq = 0
   }
 }

@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk756853 = require("./756853.js");
+  Chunk934422 = require("./934422.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,17 +77,17 @@ function A(e) {
       cancelText: j.intl.string(j.t["ETE/oC"]),
       onConfirm: g
     })
-  }, [g, l, t]), m = (0, s.e7)([b.Z], () => b.Z.supports(N.AN.VIDEO)), _ = t.isProvisional, v = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
+  }, [g, l, t]), m = (0, s.e7)([_.Z], () => _.Z.supports(N.AN.VIDEO)), b = t.isProvisional, v = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
   return (0, r.jsxs)(o.v2r, {
     navId: "friend-row",
     "aria-label": j.intl.string(j.t.liqwPJ),
     onClose: d.Zy,
     onSelect: a,
-    children: [!_ && m ? (0, r.jsx)(o.sNh, {
+    children: [!b && m ? (0, r.jsx)(o.sNh, {
       id: "start-video-call",
       label: j.intl.string(j.t.oCqlGG),
       action: f
-    }) : null, !_ && (0, r.jsx)(o.sNh, {
+    }) : null, !b && (0, r.jsx)(o.sNh, {
       id: "start-voice-call",
       label: j.intl.string(j.t.focH1t),
       action: p
@@ -152,7 +152,7 @@ class Z extends Chunk473749.PureComponent {
             applicationStream: i,
             status: l,
             user: e,
-            userIgnored: _.Z.isIgnored(e.id)
+            userIgnored: b.Z.isIgnored(e.id)
           }),
           hovered: t,
           showAccountIdentifier: !s && !e.isProvisional

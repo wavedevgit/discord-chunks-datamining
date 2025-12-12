@@ -3,10 +3,10 @@
 "use strict";
 var Chunk621049 = require("./621049.js"),
   i = Function.prototype,
-  a = i.call,
-  o = Chunk621049 && i.bind.bind(a, a);
-module.exports = Chunk621049 ? o : function(e) {
+  o = i.call,
+  a = Chunk621049 && i.bind.bind(o, o);
+module.exports = Chunk621049 ? a : function(e) {
   return function() {
-    return a.apply(e, arguments)
+    return o.apply(e, arguments)
   }
 }

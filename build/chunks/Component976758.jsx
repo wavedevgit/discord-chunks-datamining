@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk131951 = require("./131951.js"),
   Chunk36703 = require("./36703.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk819000 = require("./819000.js");
+  Chunk505433 = require("./505433.js");
 
 function f() {
   let {
@@ -26,24 +26,24 @@ function f() {
     outputVolume: Chunk131951.Z.getOutputVolume()
   }));
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk819000.volumes,
+    className: Chunk505433.volumes,
     children: [(0, Chunk54381.jsx)("div", {
-      className: Chunk819000.column,
+      className: Chunk505433.column,
       children: (0, Chunk54381.jsx)(Chunk481060.iRW, {
         label: Chunk388032.intl.string(Chunk388032.t.OX2Bnr),
         initialValue: (0, Chunk36703.P)(exports),
-        asValueChanges: t => o.Z.setInputVolume((0, c.A)(t), {
+        asValueChanges: t => a.Z.setInputVolume((0, c.A)(t), {
           analyticsLocations: e
         })
       })
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk819000.column,
+      className: Chunk505433.column,
       children: (0, Chunk54381.jsx)(Chunk481060.iRW, {
         label: Chunk388032.intl.string(Chunk388032.t.eATD2B),
         initialValue: (0, Chunk36703.P)(require),
         maxValue: 200,
         onValueRender: e => "".concat(e.toFixed(0), "%"),
-        asValueChanges: t => o.Z.setOutputVolume((0, c.A)(t), {
+        asValueChanges: t => a.Z.setOutputVolume((0, c.A)(t), {
           analyticsLocations: e
         })
       })

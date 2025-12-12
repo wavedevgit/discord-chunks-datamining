@@ -16,5 +16,5 @@ function u(e) {
   var t;
   let n = l.Z.getChannelId(e),
     u = null == (t = s.ZP.getDefaultChannel(e)) ? true : t.id;
-  return (n !== c.oC.GUILD_ONBOARDING || r.ZP.shouldShowOnboarding(e)) && (n !== c.oC.GUILD_HOME || (0, i.s)(e)) ? n === c.oC.GAME_SHOP && (0, a.vg)(e, "getChannelIdForGuildTransition") ? n : null == o.Z.getChannel(n) ? u : n : u
+  return (n !== c.oC.GUILD_ONBOARDING || r.ZP.shouldShowOnboarding(e)) && (n !== c.oC.GUILD_HOME || (0, i.s)(e)) ? n === c.oC.GAME_SHOP && (0, o.vg)(e, "getChannelIdForGuildTransition") ? n : null == a.Z.getChannel(n) ? u : n : u
 }

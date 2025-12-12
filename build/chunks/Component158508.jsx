@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk343442 = require("./343442.js");
+  Chunk502980 = require("./502980.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,7 +76,7 @@ function h(e) {
     isIgnored: s.Z.isIgnored(O),
     isBlocked: s.Z.isBlocked(O)
   }), [O]);
-  return v || I ? null : (0, r.jsx)(a.sNh, {
+  return v || I ? null : (0, r.jsx)(o.sNh, {
     id: "ignore",
     color: "default",
     label: S ? u.intl.string(u.t["8wXU9B"]) : (0, r.jsx)("div", {
@@ -84,12 +84,12 @@ function h(e) {
       children: u.intl.string(u.t.ytCpKs)
     }),
     action: S ? () => {
-      null == E || E(), o.Z.unignoreUser(O, null != b ? b : "use-ignore-user-item-web", null != _ ? _ : true)
+      null == E || E(), a.Z.unignoreUser(O, null != b ? b : "use-ignore-user-item-web", null != _ ? _ : true)
     } : () => {
-      (0, a.ZDy)(async () => {
+      (0, o.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("97652"), n.e("66089")]).then(n.bind(n, 240515));
+        } = await Promise.all([n.e("97652"), n.e("13093")]).then(n.bind(n, 240515));
         return n => (0, r.jsx)(e, m(p({}, n), {
           guildId: f,
           channelId: _,
@@ -99,7 +99,7 @@ function h(e) {
           location: b
         }))
       }, {
-        contextKey: (0, a.VnL)(y)
+        contextKey: (0, o.VnL)(y)
       })
     }
   })

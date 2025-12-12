@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
-  Chunk424882 = require("./424882.js");
+  o = require.n(Chunk120356),
+  Chunk967877 = require("./967877.js");
 
 function s(e) {
   let {
     className: t
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(o.divider, t)
+    className: o()(a.divider, t)
   })
 }

@@ -2,7 +2,7 @@
 /** chunk id: 99767, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  B: () => f
+  B: () => g
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk828700 = require("./828700.js"),
@@ -18,46 +18,46 @@ let d = {
     [Chunk215023.AW.NAMEPLATES]: Chunk335818.G.NAMEPLATE,
     [Chunk215023.AW.BUNDLES]: Chunk335818.G.BUNDLE
   },
-  f = e => {
+  g = e => {
     let {
       enabled: t
-    } = (0, o.W)({
+    } = (0, i.W)({
       location: "useShopViewTransition"
     }), {
       setItemTypeFilter: n,
-      reset: a,
-      setCurrentTab: f
-    } = (0, i.S)(), g = r.useMemo(() => e !== c.AW.ORBS || t ? (0, c.RE)(e) ? c.AW.CATALOG : e : c.AW.HOME, [e, t]), [p, b] = r.useState(g), [m, C] = r.useState(c.f7.VISIBLE);
+      reset: o,
+      setCurrentTab: g
+    } = (0, s.S)(), f = r.useMemo(() => e !== c.AW.ORBS || t ? (0, c.RE)(e) ? c.AW.CATALOG : e : c.AW.HOME, [e, t]), [p, m] = r.useState(f), [C, h] = r.useState(c.f7.VISIBLE);
     r.useEffect(() => {
-      f(p)
-    }, [p, f]), r.useEffect(() => {
-      if (b(g), e === c.AW.CATALOG) a();
+      g(p)
+    }, [p, g]), r.useEffect(() => {
+      if (m(f), e === c.AW.CATALOG) o();
       else if ((0, c.RE)(e)) {
         let t = d[e];
-        null != t ? n(t) : a()
+        null != t ? n(t) : o()
       }
-    }, [g, e, n, a]);
+    }, [f, e, n, o]);
     let {
-      clearError: h
-    } = (0, s.a)(), v = (0, l.k6)(), E = r.useCallback(async (e, t) => {
-      if (h(), e === c.AW.CATALOG) a();
+      clearError: _
+    } = (0, a.a)(), b = (0, l.k6)(), v = r.useCallback(async (e, t) => {
+      if (_(), e === c.AW.CATALOG) o();
       else if ((0, c.RE)(e) && e !== p) {
         let t = d[e];
-        null != t ? n(t) : a()
+        null != t ? n(t) : o()
       }
       if (p !== e) {
         if (t) {
           let e;
-          C(c.f7.OUT), await (e = 1.1 * c.lb, new Promise(t => setTimeout(t, e)))
+          h(c.f7.OUT), await (e = 1.1 * c.lb, new Promise(t => setTimeout(t, e)))
         }
-        b([c.AW.HOME, c.AW.ORBS].includes(e) ? e : c.AW.CATALOG), t && C(c.f7.IN), v.push(u.Z5c.COLLECTIBLES_SHOP_WITH_TAB(e), {
+        m([c.AW.HOME, c.AW.ORBS].includes(e) ? e : c.AW.CATALOG), t && h(c.f7.IN), b.push(u.Z5c.COLLECTIBLES_SHOP_WITH_TAB(e), {
           shallow: true
-        }), C(c.f7.VISIBLE)
+        }), h(c.f7.VISIBLE)
       }
-    }, [v, n, a, p, h]);
+    }, [b, n, o, p, _]);
     return {
       selectedTab: p,
-      transitionState: m,
-      transitionToTab: E
+      transitionState: C,
+      transitionToTab: v
     }
   }

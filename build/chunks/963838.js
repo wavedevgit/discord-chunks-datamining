@@ -94,7 +94,7 @@ function F(e, t) {
 }
 
 function B(e) {
-  var t, n, r, i, a, o;
+  var t, n, r, i, o, a;
   if (e.length < 1) return "";
   let s = F(e, "userId"),
     l = F(e, "emojiName"),
@@ -107,8 +107,8 @@ function B(e) {
     secondUsername: null == (i = P.default.getUser(s[1])) ? true : i.username,
     emojiNames: c
   }) : x.intl.formatToPlainString(x.t["/okjv0"], {
-    firstUsername: null == (a = P.default.getUser(s[0])) ? true : a.username,
-    secondUsername: null == (o = P.default.getUser(s[1])) ? true : o.username,
+    firstUsername: null == (o = P.default.getUser(s[0])) ? true : o.username,
+    secondUsername: null == (a = P.default.getUser(s[1])) ? true : a.username,
     count: s.length - 2,
     emojiNames: c
   })

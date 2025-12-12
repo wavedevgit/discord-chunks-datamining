@@ -27,8 +27,8 @@ function f() {
   let h = l().some(Chunk34828.Z.lastDeviceConnected, e => s.Z.isCertified(c.Z.inputDevices[e.displayName]) || s.Z.isCertified(c.Z.outputDevices[e.displayName]));
   if ((exports === Chunk65154.w5 && Chunk34828.Z.lastInputSystemDevice.justChanged || Chunk392711 === Chunk65154.w5 && Chunk34828.Z.lastOutputSystemDevice.justChanged) && !h) return;
   let m = l().first(Object.keys(Chunk34828.Z.lastDeviceConnected)),
-    b = null != m && "" !== m ? Chunk34828.Z.lastDeviceConnected[m] : null;
-  null != b && (Chunk34828.Z.getState().ignoredDevices[b.displayName] || (Chunk34828.Z.initialized && null != m && (Chunk463395.Z.isCertified(Chunk34828.Z.inputDevices[m]) ? e = Chunk463395.Z.getCertifiedDevice(Chunk34828.Z.inputDevices[m]) : Chunk463395.Z.isCertified(Chunk34828.Z.outputDevices[m]) && (e = Chunk463395.Z.getCertifiedDevice(Chunk34828.Z.outputDevices[m]))), (0, Chunk481060.ZDy)(async () => {
+    _ = null != m && "" !== m ? Chunk34828.Z.lastDeviceConnected[m] : null;
+  null != _ && (Chunk34828.Z.getState().ignoredDevices[_.displayName] || (Chunk34828.Z.initialized && null != m && (Chunk463395.Z.isCertified(Chunk34828.Z.inputDevices[m]) ? e = Chunk463395.Z.getCertifiedDevice(Chunk34828.Z.inputDevices[m]) : Chunk463395.Z.isCertified(Chunk34828.Z.outputDevices[m]) && (e = Chunk463395.Z.getCertifiedDevice(Chunk34828.Z.outputDevices[m]))), (0, Chunk481060.ZDy)(async () => {
     let {
       default: t
     } = await require.e("30042").then(require.bind(require, 30575));
@@ -38,7 +38,7 @@ function f() {
         onClose: l
       } = n;
       return (0, r.jsx)(t, {
-        device: b,
+        device: _,
         certifiedDeviceMetadata: e,
         transitionState: i,
         onClose: l

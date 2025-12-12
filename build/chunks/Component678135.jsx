@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk680295 = require("./680295.jsx"),
@@ -25,7 +25,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk357086 = require("./357086.js");
+  Chunk448239 = require("./448239.js");
 
 function I(e) {
   var t, n;
@@ -57,7 +57,7 @@ function I(e) {
     shouldOpenBadgeTooltip: K,
     hideExampleButton: z = false,
     interactive: q = true
-  } = e, Q = (0, c.ZP)(i.id, null == I ? true : I.id), X = (0, o.e7)([_.ZP], () => null != I ? _.ZP.getMember(I.id, i.id) : null), J = (0, m.Ys)({
+  } = e, Q = (0, c.ZP)(i.id, null == I ? true : I.id), X = (0, a.e7)([_.ZP], () => null != I ? _.ZP.getMember(I.id, i.id) : null), J = (0, m.Ys)({
     pendingValue: D,
     userValue: null == i ? true : i.avatarDecoration,
     guildValue: null == X ? true : X.avatarDecoration,
@@ -90,7 +90,7 @@ function I(e) {
     displayProfile: Q,
     themeType: O.l.POPOUT,
     pendingThemeColors: j,
-    className: a()(S.container, Z),
+    className: o()(S.container, Z),
     forceShowPremium: T,
     children: [(0, r.jsxs)("div", {
       className: S.header,

@@ -112,7 +112,7 @@ function y(e) {
     children: t
   } = e, [n, s] = i.useState(false), d = (0, l.bp)(), [p, y] = i.useState(null), {
     confettiCanvas: O
-  } = i.useContext(o.h), v = (0, a.uR)(O, p), S = i.useMemo(() => ({
+  } = i.useContext(a.h), v = (0, o.uR)(O, p), S = i.useMemo(() => ({
     triggerAnimation: () => s(true),
     untriggerAnimation: () => s(false)
   }), []), I = i.useCallback(() => {
@@ -138,7 +138,7 @@ function y(e) {
     return () => clearInterval(e)
   }, [n, I]), d === u.IlC.OVERLAY) ? t : (0, r.jsxs)(c.Rm.Provider, {
     value: S,
-    children: [t, (0, r.jsx)(a.Ji, {
+    children: [t, (0, r.jsx)(o.Ji, {
       ref: y,
       colors: E,
       sprites: b,

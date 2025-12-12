@@ -21,8 +21,8 @@ function h(e) {
     showDot: t,
     notificationItem: n,
     setScrollState: h
-  } = e, [m, b] = r.useState(false), {
-    unreadItems: _,
+  } = e, [m, _] = r.useState(false), {
+    unreadItems: b,
     readItems: E,
     allUnreadItemsHydrated: O
   } = (0, p.Z)(), v = (0, i.e7)([c.Z], () => c.Z.getVersion(), []), y = (0, i.e7)([c.Z], () => !(c.Z.isFirstPageHydrated() && v > 0));
@@ -63,7 +63,7 @@ function h(e) {
       let {
         viewableItems: r
       } = e;
-      if (r.some(e => "end" === e.item.data.kind) && b(true), 0 === r.length) return;
+      if (r.some(e => "end" === e.item.data.kind) && _(true), 0 === r.length) return;
       T(r), (null != (n = null == (t = r[r.length - 1]) ? true : t.index) ? n : 0) > 10 && (null == h || h());
       let i = [];
       r.forEach(e => {
@@ -90,7 +90,7 @@ function h(e) {
         id: e.id,
         type: (0, u.v$)(e)
       })), v)
-    }, [v, b, h]),
+    }, [v, _, h]),
     Z = r.useCallback(e => {
       let {
         viewableItems: t
@@ -195,7 +195,7 @@ function h(e) {
         data: {
           kind: "loading"
         }
-      }) : (_.forEach(t => {
+      }) : (b.forEach(t => {
         (0, d.eO)(t) || e.push(t)
       }), O && e.push({
         id: "end",
@@ -217,7 +217,7 @@ function h(e) {
         data: e,
         stickyHeaderIndices: []
       }
-    }, [y, n, _, O, E, C]);
+    }, [y, n, b, O, E, C]);
   return {
     data: D,
     loading: y,

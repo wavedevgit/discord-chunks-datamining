@@ -63,8 +63,8 @@ module.exports = function(e) {
     var t = this.getCharacterList().get(e);
     return t ? t.getEntity() : null
   }, n.findStyleRanges = function(e, t) {
-    a(this.getCharacterList(), m, e, t)
+    o(this.getCharacterList(), m, e, t)
   }, n.findEntityRanges = function(e, t) {
-    a(this.getCharacterList(), h, e, t)
+    o(this.getCharacterList(), h, e, t)
   }, t
 }(p)

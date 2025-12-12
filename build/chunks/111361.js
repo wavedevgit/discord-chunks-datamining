@@ -2,10 +2,10 @@
 /** chunk id: 111361, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I5: () => o,
+  I5: () => a,
   M5: () => s,
   ZP: () => l,
-  xI: () => a,
+  xI: () => o,
   yd: () => i
 });
 var Chunk474936 = require("./474936.js");
@@ -14,11 +14,11 @@ function i(e, t) {
   return null == t || null != e && r.$e[e] >= r.$e[t]
 }
 
-function a(e, t) {
+function o(e, t) {
   return null == e || r.$e[e] <= r.$e[t]
 }
 
-function o(e, t) {
+function a(e, t) {
   return null != e && null != e.premiumType && i(e.premiumType, t)
 }
 
@@ -27,6 +27,6 @@ function s(e, t) {
 }
 let l = {
   isPremiumAtLeast: i,
-  isPremium: o,
+  isPremium: a,
   isPremiumExactly: s
 }

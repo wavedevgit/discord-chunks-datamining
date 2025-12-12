@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk51596 = require("./51596.js"),
   Chunk823385 = require("./823385.js"),
@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk555612 = require("./555612.js");
+  Chunk107009 = require("./107009.js");
 let g = 1e3;
 
 function E(e) {
@@ -49,29 +49,29 @@ function I(e) {
     windowKey: t,
     showDivider: n
   } = e, i = (0, r.jsx)(s.P3F, {
-    className: o()(h.winButton, h.winButtonClose),
+    className: a()(h.winButton, h.winButtonClose),
     onClick: () => y(t),
     "aria-label": m.intl.string(m.t.ZdNUj2),
     tabIndex: false,
     children: (0, r.jsx)(u.Z, {})
-  }), a = (0, r.jsx)(s.P3F, {
-    className: o()(h.winButton, h.winButtonMinMax),
+  }), o = (0, r.jsx)(s.P3F, {
+    className: a()(h.winButton, h.winButtonMinMax),
     onClick: () => v(t),
     "aria-label": m.intl.string(m.t.G1u0hK),
     tabIndex: false,
     children: (0, r.jsx)(d.Z, {})
   }), l = (0, r.jsx)(s.P3F, {
-    className: o()(h.winButton, h.winButtonMinMax),
+    className: a()(h.winButton, h.winButtonMinMax),
     onClick: () => O(t),
     "aria-label": m.intl.string(m.t.CxOC4U),
     tabIndex: false,
     children: (0, r.jsx)(f.Z, {})
   });
   return (0, r.jsxs)("div", {
-    className: o()(h.winButtons, {
+    className: a()(h.winButtons, {
       [h.winButtonsWithDivider]: n
     }),
-    children: [l, a, i]
+    children: [l, o, i]
   })
 }
 
@@ -79,12 +79,12 @@ function T(e) {
   let {
     leading: t,
     title: n,
-    trailing: a,
+    trailing: o,
     windowKey: s,
     className: l
   } = e, c = (0, p.getPlatform)(), u = i.useCallback(() => v(s), [s]), d = c === p.PlatformTypes.WINDOWS || c === p.PlatformTypes.LINUX;
   return (0, r.jsxs)("div", {
-    className: o()(h.bar, l),
+    className: a()(h.bar, l),
     onDoubleClick: u,
     children: [(0, r.jsx)("div", {
       className: h.leading,
@@ -96,9 +96,9 @@ function T(e) {
     }), (0, r.jsxs)("div", {
       className: h.trailing,
       onDoubleClick: S,
-      children: [a, d && (0, r.jsx)(I, {
+      children: [o, d && (0, r.jsx)(I, {
         windowKey: s,
-        showDivider: null != a
+        showDivider: null != o
       })]
     })]
   })
@@ -108,17 +108,17 @@ function C(e) {
   let {
     fixed: t = false,
     show: n,
-    windowKey: a
+    windowKey: o
   } = e, s = (0, p.getPlatform)(), u = i.useCallback(() => {
     c.Z.isOpen() && (0, l.Cp)()
   }, []), d = i.useCallback(() => {
     let e = c.Z.getLastShowTimestamp();
-    null != e && Date.now() - e < g || v(a)
-  }, [a]), f = s === p.PlatformTypes.WINDOWS;
+    null != e && Date.now() - e < g || v(o)
+  }, [o]), f = s === p.PlatformTypes.WINDOWS;
   if (s === p.PlatformTypes.WEB) return null;
   let _ = f || s === p.PlatformTypes.LINUX;
   return (0, r.jsx)("div", {
-    className: o()(h.bar, h.systemBar, {
+    className: a()(h.bar, h.systemBar, {
       [h.fixed]: t,
       [h.show]: n
     }),
@@ -128,7 +128,7 @@ function C(e) {
       className: h.trailing,
       onDoubleClick: S,
       children: (0, r.jsx)(I, {
-        windowKey: a
+        windowKey: o
       })
     })
   })

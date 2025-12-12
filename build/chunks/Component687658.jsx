@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 687658, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -33,7 +33,7 @@ function h() {
       label: e,
       value: e
     })), []),
-    f = Chunk473749.useMemo(() => Object.values(Chunk981631.oAB).map(e => ({
+    x = Chunk473749.useMemo(() => Object.values(Chunk981631.oAB).map(e => ({
       label: e,
       value: e
     })), []);
@@ -54,7 +54,7 @@ function h() {
       onChange: e => p.setState({
         section: e
       }),
-      options: f,
+      options: x,
       popoutLayerContext: Chunk246992.O$
     }), (0, Chunk54381.jsx)(Chunk481060.oil, {
       label: "Setting Subsection (Legacy)",

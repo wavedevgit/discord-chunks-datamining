@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk383881 = require("./383881.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk990533 = require("./990533.js");
+  Chunk517872 = require("./517872.js");
 let N = function(e) {
   let {
     analyticsLocation: t,
@@ -76,7 +76,7 @@ let N = function(e) {
     }
   }, [U]);
   let Z = (0, f.BU)(n.id, "GuildBoostingMarketing"),
-    F = (0, a.e7)([p.Z], () => p.Z.hasFetchedCatalog(n.id));
+    F = (0, o.e7)([p.Z], () => p.Z.hasFetchedCatalog(n.id));
   return i.useEffect(() => {
     Z && !F && (0, d.ce)(n.id)
   }, [n.id, Z, F]), (0, r.jsxs)(r.Fragment, {
@@ -132,7 +132,7 @@ let N = function(e) {
         }), (0, r.jsx)(I.A, {}), (0, r.jsx)("div", {
           className: A.lowerBodyBackgroundImage
         })]
-      }), (0, r.jsx)(o.$, {
+      }), (0, r.jsx)(a.$, {
         innerRef: L,
         onChange: G,
         children: (0, r.jsx)("div", {

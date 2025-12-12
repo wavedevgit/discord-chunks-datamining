@@ -6,21 +6,21 @@ require.d(exports, {
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk772848 = require("./772848.js");
-let a = new Worker(new URL("/assets/" + require.u("77459"), require.b));
+let o = new Worker(new URL("/assets/" + require.u("77459"), require.b));
 
-function o(e) {
+function a(e) {
   return new Promise(t => {
     let n = (0, i.Z)(),
       r = e => {
         let {
           data: {
             id: i,
-            png: o
+            png: a
           }
         } = e;
-        n === i && (t(o), a.removeEventListener("message", r))
+        n === i && (t(a), o.removeEventListener("message", r))
       };
-    a.addEventListener("message", r), a.postMessage({
+    o.addEventListener("message", r), o.postMessage({
       id: n,
       placeholderData: e
     })
@@ -29,13 +29,13 @@ function o(e) {
 
 function s(e, t, n) {
   let i = n && 1 === t && null != e,
-    [a, s] = r.useState(true);
+    [o, s] = r.useState(true);
   return r.useEffect(() => {
     let t = false;
-    return i && o(e).then(e => {
+    return i && a(e).then(e => {
       t || s(e)
     }), () => {
       t = true
     }
-  }, [e, i]), a
+  }, [e, i]), o
 }

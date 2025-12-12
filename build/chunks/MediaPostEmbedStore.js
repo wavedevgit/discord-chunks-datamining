@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -95,7 +95,7 @@ class E extends(r = Chunk442837.ZP.Store) {
     return d
   }
 }
-o(E, "displayName", "MediaPostEmbedStore");
+a(E, "displayName", "MediaPostEmbedStore");
 let b = new E(Chunk570140.Z, {
   CONNECTION_OPEN: p,
   MEDIA_POST_EMBED_FETCH: _,

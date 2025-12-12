@@ -11,7 +11,7 @@ var Chunk788111 = require("./788111.js"),
   Chunk858970 = require("./858970.jsx"),
   Chunk595145 = require("./595145.jsx");
 
-function s(e) {
+function c(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       l = Object.keys(t);
@@ -50,8 +50,8 @@ function d(e) {
   }(e, ["hideRestrictedProfile"]);
   let {
     user: d
-  } = t, [u, f] = (0, i.Z)(d.id);
-  return u && !n ? (0, l.jsx)(a.Z, s({
-    onHide: f
-  }, t)) : d.isNonUserBot() ? (0, l.jsx)(r.Z, s({}, t)) : d.bot ? (0, l.jsx)(o.Z, s({}, t)) : (0, l.jsx)(c.Z, s({}, t))
+  } = t, [u, m] = (0, i.Z)(d.id);
+  return u && !n ? (0, l.jsx)(s.Z, c({
+    onHide: m
+  }, t)) : d.isNonUserBot() ? (0, l.jsx)(r.Z, c({}, t)) : d.bot ? (0, l.jsx)(o.Z, c({}, t)) : (0, l.jsx)(a.Z, c({}, t))
 }

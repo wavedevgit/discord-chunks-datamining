@@ -79,11 +79,11 @@ let g = (e, t) => {
   };
 
 function b(e, t, n, i) {
-  let a = d.Z.getVoiceChannelId(),
-    s = l.Z.getChannel(a);
-  if (null == t && null != a && null != s) {
+  let o = d.Z.getVoiceChannelId(),
+    s = l.Z.getChannel(o);
+  if (null == t && null != o && null != s) {
     let t = g(s, i);
-    if (e(), o.Z.hasUsedBackgroundInCall) {
+    if (e(), a.Z.hasUsedBackgroundInCall) {
       let e = _({}, t, E());
       r.Z.dispatch({
         type: "VIDEO_BACKGROUND_SHOW_FEEDBACK",

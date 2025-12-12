@@ -6,8 +6,8 @@ require.d(exports, {
 });
 var Chunk866659 = require("./866659.js");
 let i = 2,
-  a = 3,
-  o = 4,
+  o = 3,
+  a = 4,
   s = 25.4,
   l = 10,
   c = 1,
@@ -18,18 +18,18 @@ let i = 2,
 function d(e, t) {
   let n = {},
     i = false,
-    a = f(e, "exif", "FocalLength", t),
-    o = f(e, "exif", "FocalPlaneXResolution", t),
+    o = f(e, "exif", "FocalLength", t),
+    a = f(e, "exif", "FocalPlaneXResolution", t),
     s = f(e, "exif", "FocalPlaneYResolution", t),
     l = f(e, "exif", "FocalPlaneResolutionUnit", t),
     c = f(e, "file", "Image Width", t),
     u = f(e, "file", "Image Height", t),
-    d = f(e, "exif", "FocalLengthIn35mmFilm", t) || p(o, s, l, c, u, a);
+    d = f(e, "exif", "FocalLengthIn35mmFilm", t) || p(a, s, l, c, u, o);
   d && (n.FocalLength35efl = {
     value: d,
     description: r.Z.FocalLengthIn35mmFilm(d)
   }, i = true);
-  let h = _(a, d);
+  let h = _(o, d);
   h && (n.ScaleFactorTo35mmEquivalent = h, i = true);
   let g = m(d);
   if (g && (n.FieldOfView = g, i = true), i) return n
@@ -47,10 +47,10 @@ function p(e, t, n, r, u, d) {
       case i:
         p = s;
         break;
-      case a:
+      case o:
         p = l;
         break;
-      case o:
+      case a:
         p = c;
         break;
       default:

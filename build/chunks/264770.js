@@ -47,11 +47,11 @@ class y extends Chunk147913.Z {
         } = (0, l.lj)("OverlayWidgetPinManager");
         if (n && h.has(t))
           for (let e of Object.keys(f)) {
-            var i, a;
+            var i, o;
             if (g(e)) continue;
-            let t = o.Z.getWidget(e);
+            let t = a.Z.getWidget(e);
             if (null == t || !m.has(t.type)) continue;
-            let n = null != (a = null == (i = o.Z.getWidgetDefaultSettings(t.type)) ? true : i.pinned) ? a : _;
+            let n = null != (o = null == (i = a.Z.getWidgetDefaultSettings(t.type)) ? true : i.pinned) ? o : _;
             t.pinned !== n && (d.verbose("Widget ".concat(t.type, " is ").concat(t.pinned ? "pinned" : "unpinned", ", toggling to ").concat(n ? "pinned" : "unpinned")), (0, r.xh)(e), b(e))
           }
       },
@@ -63,7 +63,7 @@ class y extends Chunk147913.Z {
           enabled: r
         } = (0, l.lj)("OverlayWidgetPinManager");
         if (!r) return;
-        let i = o.Z.getWidget(t);
+        let i = a.Z.getWidget(t);
         null != i && m.has(i.type) && null != n && (n ? E(t) : b(t))
       }
     })

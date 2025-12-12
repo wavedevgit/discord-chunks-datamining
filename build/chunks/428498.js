@@ -1,0 +1,20 @@
+/** Chunk was on web.js **/
+/** chunk id: 428498, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+module.exports = {
+  debugToolsPanel: "debugToolsPanel__50163",
+  header: "header__50163",
+  headerTextContainer: "headerTextContainer__50163",
+  body: "body__50163",
+  footer: "footer__50163",
+  categoryContainer: "categoryContainer__50163",
+  categoryHeader: "categoryHeader__50163",
+  statusRow: "statusRow__50163",
+  statusTextContainer: "statusTextContainer__50163",
+  statusIcon: "statusIcon__50163",
+  calloutBox: "calloutBox__50163",
+  tabBar: "tabBar__50163",
+  tab: "tab__50163",
+  selected: "selected__50163",
+  spinner: "spinner__50163"
+}

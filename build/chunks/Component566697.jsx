@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk359135 = require("./359135.js"),
   Chunk516817 = require("./516817.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk585633 = require("./585633.js"),
+  Chunk63053 = require("./63053.js"),
   Chunk460400 = require("./460400.js"),
   Chunk943549 = require("./943549.js");
 let N = {
@@ -41,7 +41,7 @@ let N = {
     let {
       user: t,
       guildId: n,
-      nameplate: a,
+      nameplate: o,
       nameplateData: P,
       className: R,
       innerClassName: w,
@@ -56,7 +56,7 @@ let N = {
       isPurchased: Z = false,
       skipEffectDisplayName: F = false,
       width: B
-    } = e, V = (0, u.ZP)(), H = (0, l.wj)(V), Y = null != a ? (0, p.E)(a) : P, W = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), K = H ? "#706F74" : "#aaaab2", z = i.useRef(null), q = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), Q = null != t ? (0, b.Ly)({
+    } = e, V = (0, u.ZP)(), H = (0, l.wj)(V), Y = null != o ? (0, p.E)(o) : P, W = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), K = H ? "#706F74" : "#aaaab2", z = i.useRef(null), q = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), Q = null != t ? (0, b.Ly)({
       pendingNickname: M,
       pendingGlobalName: j,
       user: t,
@@ -70,9 +70,9 @@ let N = {
       userId: null == t ? true : t.id,
       guildId: n,
       pendingDisplayNameStyles: U
-    }), ee = i.useMemo(() => null != a ? I.intl.formatToPlainString(I.t.YJig7C, {
-      a11y_text: a.label
-    }) : I.intl.string(I.t.SZeUdR), [a]);
+    }), ee = i.useMemo(() => null != o ? I.intl.formatToPlainString(I.t.YJig7C, {
+      a11y_text: o.label
+    }) : I.intl.string(I.t.SZeUdR), [o]);
     return (0, r.jsx)("div", {
       role: "img",
       "aria-label": ee,
@@ -81,7 +81,7 @@ let N = {
         width: null != B ? "".concat(B, "px") : "100%"
       },
       children: (0, r.jsxs)(c.Rny, {
-        className: o()(R, T.nameplatePreview, {
+        className: a()(R, T.nameplatePreview, {
           [T.nameplatePurchased]: Z && !D,
           [T.xsmall]: "xsmall" === G,
           [T.small]: "small" === G,
@@ -94,10 +94,10 @@ let N = {
           hovered: D,
           placement: v.i.PREVIEW,
           content: L ? true : z
-        }, null == a ? true : a.skuId), (0, r.jsxs)("div", {
+        }, null == o ? true : o.skuId), (0, r.jsxs)("div", {
           className: T.overlayContainer,
           children: [null != t ? (0, r.jsx)("div", {
-            className: o()(T.avatarContainer, !L && T.avatarVisible),
+            className: a()(T.avatarContainer, !L && T.avatarVisible),
             children: (0, r.jsx)(d.Z, {
               ref: z,
               avatar: (0, r.jsx)(f.Z, {
@@ -123,7 +123,7 @@ let N = {
               withDisplayNameStyles: null != $
             })
           }) : null, (0, r.jsxs)("div", {
-            className: o()(T.avatarContainer, L && T.avatarVisible),
+            className: a()(T.avatarContainer, L && T.avatarVisible),
             children: [(0, r.jsx)(c.qEK, {
               src: H ? C : A,
               size: J,

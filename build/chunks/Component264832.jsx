@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk49012 = require("./49012.js"),
-  Chunk502218 = require("./502218.js");
+  Chunk925262 = require("./925262.js");
 
 function s(e) {
   let {
@@ -15,10 +15,10 @@ function s(e) {
     href: n
   } = e;
   return null == n ? t : (0, r.jsx)(i.Anchor, {
-    className: o.link,
+    className: a.link,
     href: n,
     onClick: e => {
-      e.stopPropagation(), a.q({
+      e.stopPropagation(), o.q({
         href: n
       }, e)
     },

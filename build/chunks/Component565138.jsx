@@ -20,7 +20,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk451478 = require("./451478.js"),
   Chunk956664 = require("./956664.js"),
   Chunk153066 = require("./153066.js"),
-  Chunk58776 = require("./58776.js");
+  Chunk965005 = require("./965005.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,8 +65,8 @@ function T(e, t) {
   if (null == e) return {};
   var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -74,8 +74,8 @@ function T(e, t) {
 function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let A = {
@@ -115,7 +115,7 @@ class R extends Chunk473749.PureComponent {
       iconSrc: t
     } = this.props;
     return null != module.icon || null != exports ? null : (0, Chunk54381.jsx)("div", {
-      className: Chunk58776.acronym,
+      className: Chunk965005.acronym,
       children: (0, Chunk601964.gM)(module)
     })
   }
@@ -125,10 +125,10 @@ class R extends Chunk473749.PureComponent {
       guild: t,
       badgeStrokeColor: n,
       badgeTooltipColor: r,
-      badgeTooltipDelay: a
+      badgeTooltipDelay: o
     } = this.props;
     return module ? (0, Chunk54381.jsx)(Chunk372769.Z, {
-      className: Chunk58776.guildIconBadge,
+      className: Chunk965005.guildIconBadge,
       guild: exports,
       badgeStrokeColor: require,
       tooltipColor: r,
@@ -140,8 +140,8 @@ class R extends Chunk473749.PureComponent {
     let n = this.props,
       {
         guild: r,
-        className: a,
-        showBadge: o,
+        className: o,
+        showBadge: a,
         active: l,
         size: c,
         style: u = {},
@@ -163,10 +163,10 @@ class R extends Chunk473749.PureComponent {
       x = null != Chunk372769 ? Chunk481060.P3F : "div",
       L = (0, Chunk601964.gM)(r);
     return (0, Chunk54381.jsxs)(x, I(v({
-      className: s()(Chunk58776.icon, Chunk473749, (0, Chunk153066.l)(Chunk58776, "iconSize", Chunk442837), {
-        [null != (e = (0, Chunk153066.l)(Chunk58776, "iconActive", Chunk442837)) ? module : ""]: Chunk319498,
-        [Chunk58776.iconInactive]: !Chunk319498,
-        [Chunk58776.noIcon]: null == r.icon
+      className: s()(Chunk965005.icon, Chunk473749, (0, Chunk153066.l)(Chunk965005, "iconSize", Chunk442837), {
+        [null != (e = (0, Chunk153066.l)(Chunk965005, "iconActive", Chunk442837)) ? module : ""]: Chunk319498,
+        [Chunk965005.iconInactive]: !Chunk319498,
+        [Chunk965005.noIcon]: null == r.icon
       }),
       "aria-hidden": A,
       style: null == r.icon ? v({
@@ -197,7 +197,7 @@ class R extends Chunk473749.PureComponent {
       guild: t,
       source: n,
       tabIndex: r,
-      "aria-hidden": a
+      "aria-hidden": o
     } = this.props;
     return null != module ? (0, Chunk54381.jsx)(Chunk319498.rU, {
       "aria-hidden": Chunk473749,
@@ -219,11 +219,11 @@ let w = Chunk442837.ZP.connectStores([Chunk451478.Z], e => {
     animate: n,
     iconSrc: r,
     style: i,
-    size: a,
-    iconSize: o,
+    size: o,
+    iconSize: a,
     lossless: s
   } = e;
-  return null == r && (r = t instanceof _.JO ? t.getIconURL(null != o ? o : N[a], n && g.Z.isFocused()) : (0, h.EB)(t, null != o ? o : N[a], n && g.Z.isFocused(), s)), {
+  return null == r && (r = t instanceof _.JO ? t.getIconURL(null != a ? a : N[o], n && g.Z.isFocused()) : (0, h.EB)(t, null != a ? a : N[o], n && g.Z.isFocused(), s)), {
     style: I(v({}, i), {
       backgroundImage: (0, E.rv)(r)
     })

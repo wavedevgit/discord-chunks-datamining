@@ -7,12 +7,12 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk739566 = require("./739566.js"),
   Chunk492593 = require("./492593.jsx"),
   Chunk930282 = require("./930282.jsx"),
   Chunk464891 = require("./464891.jsx"),
-  Chunk935950 = require("./935950.js");
+  Chunk62440 = require("./62440.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,8 +57,8 @@ function m(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -66,8 +66,8 @@ function m(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -82,19 +82,19 @@ function g(e) {
     hideTimestamp: g = false,
     withFooter: E = false
   } = e, b = m(e, ["message", "channel", "content", "className", "compact", "popoutProps", "hideTimestamp", "withFooter"]);
-  let y = (0, o.ZP)(t);
+  let y = (0, a.ZP)(t);
   return (0, r.jsx)("div", {
-    className: a()({
+    className: o()({
       [u.withFooter]: E
     }, u.embedCard, {
       [u.compact]: p
     }, d),
     children: (0, r.jsx)(s.Z, _(f({}, b), {
-      className: a()(u.messageContainer, {
+      className: o()(u.messageContainer, {
         [u.compact]: p
       }),
       childrenMessageContent: (0, r.jsx)(l.ZP, {
-        className: a()(u.__invalid_messageContent, {
+        className: o()(u.__invalid_messageContent, {
           [u.compact]: p
         }),
         message: t,
@@ -108,7 +108,7 @@ function g(e) {
         guildId: null == n ? true : n.guild_id,
         compact: p,
         hideTimestamp: g,
-        className: a()(u.header, {
+        className: o()(u.header, {
           [u.compact]: p
         })
       }, null != h ? h : {})),

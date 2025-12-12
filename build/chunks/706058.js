@@ -2,26 +2,26 @@
 /** chunk id: 706058, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dk: () => o,
+  Dk: () => a,
   Ix: () => s,
-  me: () => a
+  me: () => o
 });
 var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
-async function a(e, t, n, a, o) {
+async function o(e, t, n, o, a) {
   return (await r.tn.post({
     url: i.ANM.STAGE_INSTANCES,
     body: {
       channel_id: e,
       topic: t,
       privacy_level: n,
-      guild_scheduled_event_id: o,
-      send_start_notification: a
+      guild_scheduled_event_id: a,
+      send_start_notification: o
     },
     rejectWithError: false
   })).body
 }
-async function o(e, t, n) {
+async function a(e, t, n) {
   return (await r.tn.patch({
     url: i.ANM.STAGE_INSTANCE(e),
     body: {

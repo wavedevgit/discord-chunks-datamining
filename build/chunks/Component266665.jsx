@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 266665, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk891371 = require("./891371.js"),
   Chunk692992 = require("./692992.js"),
   Chunk442837 = require("./442837.js"),
@@ -30,46 +30,46 @@ var Chunk54381 = require("./54381.js"),
   Chunk203377 = require("./203377.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk911115 = require("./911115.js");
+  Chunk612894 = require("./612894.js");
 let P = "DRAGGABLE_ROLE";
 
 function w(e) {
   var t, i;
   let l, {
       guild: c,
-      role: d,
-      highestRole: f,
-      selectedItem: m,
-      onClick: b,
-      currentPosition: h,
-      onDragStart: v,
-      onDragReset: O,
-      onDragComplete: C,
-      roleStyle: N
+      role: u,
+      highestRole: m,
+      selectedItem: p,
+      onClick: f,
+      currentPosition: x,
+      onDragStart: _,
+      onDragReset: v,
+      onDragComplete: O,
+      roleStyle: y
     } = e,
-    E = (0, y.T)(c, f, d),
-    I = (0, j.fI)(d),
-    _ = null == E && !I,
-    w = (null == (t = d.tags) ? true : t.guild_connections) !== true,
-    Z = (0, x._f)(c.id, d, d.colorStrings),
-    [, R] = (0, s.c)({
+    N = (0, C.T)(c, m, u),
+    E = (0, j.fI)(u),
+    S = null == N && !E,
+    w = (null == (t = u.tags) ? true : t.guild_connections) !== true,
+    Z = (0, b._f)(c.id, u, u.colorStrings),
+    [, R] = (0, a.c)({
       type: P,
-      item: () => (v(d.id), {
-        id: d.id,
-        position: h
+      item: () => (_(u.id), {
+        id: u.id,
+        position: x
       }),
-      canDrag: () => _,
+      canDrag: () => S,
       end: (e, t) => {
         let n = t.getDropResult();
-        if (null == n) return void O();
-        C(n.roleId)
+        if (null == n) return void v();
+        O(n.roleId)
       }
     }),
     [{
       dragSourcePosition: D
     }, A] = (0, o.L)({
       accept: P,
-      canDrop: () => _,
+      canDrop: () => S,
       collect: e => {
         let t = e.getItem();
         return null != t && e.isOver() && e.canDrop() ? {
@@ -79,31 +79,31 @@ function w(e) {
         }
       },
       drop: () => ({
-        roleId: d.id
+        roleId: u.id
       })
     }),
-    L = null != (i = d.colorString) ? i : S.Pbq;
-  return l = w ? (0, r.jsx)(p.Z, {
+    L = null != (i = u.colorString) ? i : I.Pbq;
+  return l = w ? (0, r.jsx)(h.Z, {
     size: 12,
-    color: d.colorString,
+    color: u.colorString,
     className: T.verifiedRoleIcon
-  }) : "dot" === N ? (0, r.jsx)(u.FhE, {
+  }) : "dot" === y ? (0, r.jsx)(d.FhE, {
     color: L,
     colors: Z,
     background: false,
     tooltip: false
-  }) : (0, r.jsx)(u.xko, {
+  }) : (0, r.jsx)(d.xko, {
     color: L,
     colors: Z
-  }), (0, r.jsxs)(u.njP.Item, {
-    className: a()(T.row, {
-      [T.dragBefore]: null !== D && h < D,
-      [T.dragAfter]: null !== D && h > D
+  }), (0, r.jsxs)(d.njP.Item, {
+    className: s()(T.row, {
+      [T.dragBefore]: null !== D && x < D,
+      [T.dragAfter]: null !== D && x > D
     }),
-    id: d.id,
-    selectedItem: m,
+    id: u.id,
+    selectedItem: p,
     itemType: "side",
-    onClick: b,
+    onClick: f,
     onContextMenu: function(e) {
       (0, g.jW)(e, async () => {
         let {
@@ -129,7 +129,7 @@ function w(e) {
             }
             return e
           }({}, t), i = i = {
-            role: d,
+            role: u,
             guild: c
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
@@ -144,19 +144,19 @@ function w(e) {
         }
       })
     },
-    "aria-label": d.name,
+    "aria-label": u.name,
     clickableRef: e => {
       var t;
       R(A(null != (t = null == e ? true : e.ref) ? t : null))
     },
-    children: [l, null != E ? (0, r.jsx)(y.Z, {
+    children: [l, null != N ? (0, r.jsx)(C.Z, {
       className: T.lock,
-      tooltipText: E
-    }) : null, (0, r.jsx)(u.Text, {
+      tooltipText: N
+    }) : null, (0, r.jsx)(d.Text, {
       variant: "text-sm/medium",
-      color: I ? "text-strong" : "interactive-text-active",
+      color: E ? "text-strong" : "interactive-text-active",
       lineClamp: 1,
-      children: d.name
+      children: u.name
     })]
   })
 }
@@ -166,58 +166,58 @@ function Z(e) {
     guild: t,
     currentRoleId: n,
     setCurrentRoleId: l,
-    setSelectedSection: s
-  } = e, o = (0, c.e7)([C.Z], () => C.Z.roles), g = (0, c.e7)([v.Z], () => v.Z.getHighestRole(t)), p = (0, c.e7)([b.Z], () => b.Z.roleStyle), [x, j] = i.useState(o.length), {
-    scrolledToTop: y,
-    handleScroll: S
-  } = (0, E.V)(), {
+    setSelectedSection: a
+  } = e, o = (0, c.e7)([O.Z], () => O.Z.roles), g = (0, c.e7)([_.Z], () => _.Z.getHighestRole(t)), h = (0, c.e7)([f.Z], () => f.Z.roleStyle), [b, j] = i.useState(o.length), {
+    scrolledToTop: C,
+    handleScroll: I
+  } = (0, N.V)(), {
     handleDragStart: P,
     handleDragReset: Z,
     handleDragComplete: R
-  } = (0, N.Z)(o), D = i.useRef(null), A = i.useCallback(e => {
+  } = (0, y.Z)(o), D = i.useRef(null), A = i.useCallback(e => {
     var t, n;
     let r = o.findIndex(t => t.id === e);
     null == (n = D.current) || null == (t = n.getScrollerNode()) || t.scrollTo({
       top: Math.max((r - 2) * 34, 0)
     })
   }, [o]);
-  return (0, m.ZP)(() => {
+  return (0, p.ZP)(() => {
     A(n)
   }), i.useEffect(() => {
-    o.length > x && A(n), o.length !== x && j(o.length)
-  }, [o.length, x, j, A, n]), (0, r.jsx)(h.ZP.Sidebar, {
+    o.length > b && A(n), o.length !== b && j(o.length)
+  }, [o.length, b, j, A, n]), (0, r.jsx)(x.ZP.Sidebar, {
     className: T.sidebar,
     children: (0, r.jsxs)("div", {
       className: T.container,
       children: [(0, r.jsxs)("div", {
-        className: a()(T.titleContainer, {
-          [T.titleElevated]: !y
+        className: s()(T.titleContainer, {
+          [T.titleElevated]: !C
         }),
-        children: [(0, r.jsxs)(u.P3F, {
+        children: [(0, r.jsxs)(d.P3F, {
           className: T.title,
           onClick: () => l(null),
-          children: [(0, r.jsx)(O.Z, {
-            direction: O.Z.Directions.LEFT
-          }), (0, r.jsx)(u.Text, {
+          children: [(0, r.jsx)(v.Z, {
+            direction: v.Z.Directions.LEFT
+          }), (0, r.jsx)(d.Text, {
             className: T.titleText,
             variant: "text-md/semibold",
             color: "none",
-            children: _.intl.string(_.t["13/7kX"])
+            children: S.intl.string(S.t["13/7kX"])
           })]
-        }), (0, r.jsx)(d.u, {
+        }), (0, r.jsx)(u.u, {
           position: "top",
-          "aria-label": _.intl.string(_.t.AbxKtv),
-          __unsupportedReactNodeAsText: (0, r.jsx)(u.Text, {
+          "aria-label": S.intl.string(S.t.AbxKtv),
+          __unsupportedReactNodeAsText: (0, r.jsx)(d.Text, {
             className: T.tooltip,
             variant: "text-sm/normal",
-            children: _.intl.string(_.t.AbxKtv)
+            children: S.intl.string(S.t.AbxKtv)
           }),
-          children: (0, r.jsx)(u.P3F, {
+          children: (0, r.jsx)(d.P3F, {
             className: T.addRole,
             onClick: () => {
-              f.Z.createRole(t.id), s(I.ZI.DISPLAY)
+              m.Z.createRole(t.id), a(E.ZI.DISPLAY)
             },
-            children: (0, r.jsx)(u.qJs, {
+            children: (0, r.jsx)(d.qJs, {
               size: "custom",
               color: "currentColor",
               width: 20,
@@ -225,11 +225,11 @@ function Z(e) {
             })
           })
         })]
-      }), (0, r.jsx)(u.Den, {
+      }), (0, r.jsx)(d.Den, {
         className: T.list,
         ref: D,
-        onScroll: S,
-        children: (0, r.jsx)(u.njP, {
+        onScroll: I,
+        children: (0, r.jsx)(d.njP, {
           selectedItem: n,
           onItemSelect: e => l(e),
           orientation: "vertical",
@@ -243,7 +243,7 @@ function Z(e) {
             onDragStart: P,
             onDragReset: Z,
             onDragComplete: R,
-            roleStyle: p
+            roleStyle: h
           }, e.id))
         })
       })]

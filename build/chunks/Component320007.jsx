@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 320007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,10 +19,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk356659 = require("./356659.js"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e) {
+function b(e) {
   let {
     canShowReminder: t = false,
-    className: _
+    className: b
   } = e, E = (0, f.Z)(u.Z), {
     showClipsHeaderEntrypoint: O
   } = d.NV.useExperiment({
@@ -48,7 +48,7 @@ function _(e) {
     (0, a.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("61342"), n.e("17316")]).then(n.bind(n, 542055));
+      } = await Promise.all([n.e("61342"), n.e("2161")]).then(n.bind(n, 542055));
       return t => (0, r.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -79,10 +79,10 @@ function _(e) {
     }), (0, r.jsx)("div", {
       ref: N,
       children: (0, r.jsx)(s.JO, {
-        className: _,
+        className: b,
         icon: a.AlX,
         showBadge: v,
-        tooltip: b.intl.string(b.t.MXaLEM),
+        tooltip: _.intl.string(_.t.MXaLEM),
         onClick: A
       })
     })]

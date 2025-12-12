@@ -77,19 +77,19 @@ function E(e) {
   let {
     channelId: r,
     sendMessageOptions: i,
-    message: a,
+    message: o,
     optimistic: l
   } = e;
-  if (r !== o.Z.getChannelId()) returnfalse;
+  if (r !== a.Z.getChannelId()) returnfalse;
   if (l) {
     let e = null == i || null == (n = i.activityAction) ? true : n.targetUserId;
-    return null != e && (f[a.id] = e, false)
+    return null != e && (f[o.id] = e, false)
   }
-  if (null == a.nonce || (null == (t = a.activity) ? true : t.type) !== s.mFx.STREAM_REQUEST) returnfalse;
-  let u = f[a.nonce];
+  if (null == o.nonce || (null == (t = o.activity) ? true : t.type) !== s.mFx.STREAM_REQUEST) returnfalse;
+  let u = f[o.nonce];
   if (null == u) returnfalse;
-  delete f[a.nonce], p = d(c({}, p), {
-    [u]: a.id
+  delete f[o.nonce], p = d(c({}, p), {
+    [u]: o.id
   })
 }
 
@@ -98,7 +98,7 @@ function b(e) {
     streamKey: t
   } = e, {
     ownerId: n
-  } = a.my(t);
+  } = o.my(t);
   if (null == p[n]) returnfalse;
   delete p[n]
 }

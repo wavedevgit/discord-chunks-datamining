@@ -8,14 +8,14 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
-  Chunk736271 = require("./736271.js");
+  Chunk21054 = require("./21054.js");
 
 function s(e) {
   let {
     guildId: t,
     user: n,
     className: s
-  } = e, l = (0, i.e7)([a.Z], () => !a.Z.useReducedMotion), c = n.getAvatarURL(t, 56, l), u = (0, r.jsx)("foreignObject", {
+  } = e, l = (0, i.e7)([o.Z], () => !o.Z.useReducedMotion), c = n.getAvatarURL(t, 56, l), u = (0, r.jsx)("foreignObject", {
     x: "30",
     y: "68",
     width: "56",
@@ -23,7 +23,7 @@ function s(e) {
     transform: "skewX(12)",
     children: (0, r.jsx)("img", {
       src: c,
-      className: o.userAvatar,
+      className: a.userAvatar,
       alt: ""
     })
   });
@@ -35,7 +35,7 @@ function s(e) {
       viewBox: "0 0 128 200",
       fill: "none",
       xmlns: "http://www.w3.org/2000/svg",
-      className: o.svg,
+      className: a.svg,
       children: [(0, r.jsx)("path", {
         fillRule: "evenodd",
         clipRule: "evenodd",

@@ -14,9 +14,9 @@ var Chunk476326 = require("./476326.js"),
 
 function l(e, t) {
   let n = i.Ng(i.dg(t));
-  return a.ZP.isPremium(e, o.PremiumTypes.TIER_2) ? s.intl.formatToPlainString(s.t.fxEKdS, {
+  return o.ZP.isPremium(e, a.PremiumTypes.TIER_2) ? s.intl.formatToPlainString(s.t.fxEKdS, {
     maxSize: n
-  }) : a.ZP.isPremium(e, o.PremiumTypes.TIER_1) ? s.intl.formatToPlainString(s.t["Nr+LsZ"], {
+  }) : o.ZP.isPremium(e, a.PremiumTypes.TIER_1) ? s.intl.formatToPlainString(s.t["Nr+LsZ"], {
     maxSize: n
   }) : s.intl.formatToPlainString(s.t.fxEKdS, {
     maxSize: n

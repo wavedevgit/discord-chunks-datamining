@@ -12,13 +12,13 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk99940 = require("./99940.js");
+  Chunk226910 = require("./226910.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -63,8 +63,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -72,24 +72,24 @@ function h(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let E = Object.freeze({
-  DEFAULT: Chunk99940.colorDefault,
-  NEUTRAL: Chunk99940.colorNeutral,
-  BRAND: Chunk99940.colorBrand,
-  WARNING: Chunk99940.colorWarning,
-  DANGER: Chunk99940.colorDanger,
-  INFO: Chunk99940.colorInfo,
-  STREAMER_MODE: Chunk99940.colorStreamerMode,
-  CUSTOM: Chunk99940.colorCustom,
-  SPOTIFY: Chunk99940.colorSpotify,
-  PLAYSTATION: Chunk99940.colorPlayStation,
-  PREMIUM_TIER_0: Chunk99940.colorPremiumTier0,
-  PREMIUM_TIER_1: Chunk99940.colorPremiumTier1,
-  PREMIUM_TIER_2: Chunk99940.colorPremiumTier2
+  DEFAULT: Chunk226910.colorDefault,
+  NEUTRAL: Chunk226910.colorNeutral,
+  BRAND: Chunk226910.colorBrand,
+  WARNING: Chunk226910.colorWarning,
+  DANGER: Chunk226910.colorDanger,
+  INFO: Chunk226910.colorInfo,
+  STREAMER_MODE: Chunk226910.colorStreamerMode,
+  CUSTOM: Chunk226910.colorCustom,
+  SPOTIFY: Chunk226910.colorSpotify,
+  PLAYSTATION: Chunk226910.colorPlayStation,
+  PREMIUM_TIER_0: Chunk226910.colorPremiumTier0,
+  PREMIUM_TIER_1: Chunk226910.colorPremiumTier1,
+  PREMIUM_TIER_2: Chunk226910.colorPremiumTier2
 });
 
 function b(e) {
@@ -97,13 +97,13 @@ function b(e) {
     children: t,
     className: n,
     minor: i = false
-  } = e, o = h(e, ["children", "className", "minor"]);
+  } = e, a = h(e, ["children", "className", "minor"]);
   return (0, r.jsx)(s.tEY, {
     children: (0, r.jsx)("button", m(p({
-      className: a()(d.button, n, {
+      className: o()(d.button, n, {
         [d.buttonMinor]: i
       })
-    }, o), {
+    }, a), {
       children: t
     }))
   })
@@ -146,13 +146,13 @@ function I(e) {
     children: t,
     href: n,
     noticeType: i
-  } = e, a = h(e, ["children", "href", "noticeType"]);
-  return (0, r.jsx)(s.Anchor, m(p({}, a), {
+  } = e, o = h(e, ["children", "href", "noticeType"]);
+  return (0, r.jsx)(s.Anchor, m(p({}, o), {
     className: d.button,
     href: n,
     onClick: e => {
       var t;
-      null == (t = a.onClick) || t.call(a, e), v(i, n)
+      null == (t = o.onClick) || t.call(o, e), v(i, n)
     },
     children: t
   }))
@@ -168,7 +168,7 @@ function T(e) {
     focusProps: {
       offset: 6
     },
-    className: a()(d.closeButton, i),
+    className: o()(d.closeButton, i),
     onClick: () => {
       t(), O(n)
     },
@@ -191,8 +191,8 @@ function C(e) {
   } = e;
   return (0, r.jsx)("div", {
     ref: s,
-    className: a()(d.notice, {
-      [d.isMobile]: o.tq
+    className: o()(d.notice, {
+      [d.isMobile]: a.tq
     }, n, t),
     style: null != i ? i : true,
     children: l

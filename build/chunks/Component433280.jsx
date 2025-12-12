@@ -23,7 +23,7 @@ function m(e) {
     guildId: t,
     markAsDismissed: n,
     targetElementRef: m
-  } = e, b = (0, l.e7)([u.Z, d.default], () => {
+  } = e, _ = (0, l.e7)([u.Z, d.default], () => {
     let e = d.default.getCurrentUser(),
       n = u.Z.getGuild(t);
     return null != n && (0, c.eM)(n, e)
@@ -33,7 +33,7 @@ function m(e) {
     name: i.ImpressionNames.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL,
     properties: {
       guild_id: t,
-      is_owner: b
+      is_owner: _
     }
   }), (0, r.jsx)(a.J2, {
     targetElementRef: m,

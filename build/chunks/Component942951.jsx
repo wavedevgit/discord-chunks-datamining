@@ -64,8 +64,8 @@ function S(e, t) {
   if (null == e) return {};
   var n, r, i = I(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -73,8 +73,8 @@ function S(e, t) {
 function I(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -101,16 +101,16 @@ function C(e) {
     guildId: h
   }), R = (0, p.j)({
     displayNameStyles: P
-  }), w = T(t, n), D = i.useContext(o.d);
+  }), w = T(t, n), D = i.useContext(a.d);
   return (0, E.Z)({
     subscribeToGroupId: g,
     authorId: null == t ? true : t.id,
     shouldSubscribe: I && null != P && null == h
-  }), i.useCallback(e => (i, o) => {
+  }), i.useCallback(e => (i, a) => {
     let l = null == e ? true : e.colorStrings,
       u = N && null != l && null != l.primaryColor && null != l.secondaryColor,
       p = (t, n) => {
-        var o, c, p;
+        var a, c, p;
         if (!I || null == P || null != h) return (0, r.jsx)(s.rz2, v(y({}, null != t ? t : {}), {
           ref: C,
           onContextMenu: w,
@@ -123,12 +123,12 @@ function C(e) {
         }));
         {
           let e = (null == D ? true : D.animate) || (null == n ? true : n.isShown) ? d.F.ANIMATED : d.F.PLAIN;
-          return (0, r.jsx)(a.Anchor, v(y({}, null != t ? t : {}), {
+          return (0, r.jsx)(o.Anchor, v(y({}, null != t ? t : {}), {
             ref: C,
             onContextMenu: w,
             "aria-label": O,
             children: (0, r.jsx)(f.Z, {
-              userName: null != (o = (0, s.qgQ)(i)) ? o : "",
+              userName: null != (a = (0, s.qgQ)(i)) ? a : "",
               displayNameStyles: P,
               effectDisplayType: e,
               shouldUnderlineOnHover: true,
@@ -159,6 +159,6 @@ function C(e) {
           }, r), t)
         }
       }) : p(true, true)
-    }, o)
+    }, a)
   }, [A, t, n, h, g, w, b, O, N, R, null == D ? true : D.animate, P, I])
 }

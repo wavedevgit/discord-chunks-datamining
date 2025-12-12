@@ -1,7 +1,7 @@
 /** Chunk was on 45130 **/
 /** chunk id: 246389, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => b
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,22 +14,22 @@ var Chunk481060 = require("./481060.js"),
   Chunk931617 = require("./931617.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let f = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let b = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   var t;
   let {
     user: n,
     guildId: i,
     onSelect: u,
     analyticsLocations: s,
-    onCloseContextMenu: f,
-    isViewOnly: b
+    onCloseContextMenu: b,
+    isViewOnly: f
   } = e, {
     analyticsLocations: E
-  } = (0, a.ZP)(c.Z.CONTEXT_MENU), g = null != (t = null == s ? true : s[0]) ? t : E[0], O = (0, d.Z)(n.id, i, true, g, b);
+  } = (0, a.ZP)(c.Z.CONTEXT_MENU), g = null != (t = null == s ? true : s[0]) ? t : E[0], O = (0, d.Z)(n.id, i, true, g, f);
   return (0, l.jsx)(r.v2r, {
     navId: "guild-moderation-roles",
     onClose: () => {
-      (0, o.Zy)(), null == f || f()
+      (0, o.Zy)(), null == b || b()
     },
     "aria-label": _.intl.string(_.t.liqwPJ),
     onSelect: u,

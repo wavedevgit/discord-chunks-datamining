@@ -8,7 +8,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk726542 = require("./726542.js"),
   Chunk487576 = require("./487576.js"),
@@ -28,7 +28,7 @@ let _ = {
 function g(e) {
   let {
     forUserProfile: t
-  } = e, n = (0, o.e7)([u.default], () => u.default.getCurrentUser()), r = l.c.useExperiment({
+  } = e, n = (0, a.e7)([u.default], () => u.default.getCurrentUser()), r = l.c.useExperiment({
     location: "f2f7ef_1"
   }, {
     autoTrackExposure: false
@@ -48,7 +48,7 @@ function E() {
       let t = new Set;
       return module.forEach(e => t.add(e.type)), exports
     }, [module]);
-  return Chunk473749.useMemo(() => a().sortBy(Chunk726542.Z.filter(exports), [e => {
+  return Chunk473749.useMemo(() => o().sortBy(Chunk726542.Z.filter(exports), [e => {
     var t;
     return !(m.has(e.type) && Date.now() < (null != (t = m.get(e.type)) ? t : 0) + h)
   }, e => n.has(e.type), e => e.hasMetadata, e => !f.vbS.has(e.type), e => e.name]), [require, exports])
@@ -64,14 +64,14 @@ function b(e) {
     t === p.vn.SHIFT && n(true)
   }
 
-  function a(e) {
+  function o(e) {
     let {
       key: t
     } = e;
     t === p.vn.SHIFT && n(false)
   }
-  return (r.useEffect(() => (window.addEventListener("keydown", i), window.addEventListener("keyup", a), () => {
-    window.removeEventListener("keydown", i), window.removeEventListener("keyup", a)
+  return (r.useEffect(() => (window.addEventListener("keydown", i), window.addEventListener("keyup", o), () => {
+    window.removeEventListener("keydown", i), window.removeEventListener("keyup", o)
   }), []), t && e === f.ABu.TWITTER) ? f.ABu.TWITTER_LEGACY : e
 }
 Chunk981631.ABu.PLAYSTATION, Chunk981631.ABu.XBOX, Chunk981631.ABu.SPOTIFY, Chunk981631.ABu.STEAM, Chunk981631.ABu.TWITCH

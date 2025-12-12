@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 860160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,13 +17,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk697392 = require("./697392.js");
+  Chunk25493 = require("./25493.js");
 
-function _(e) {
+function b(e) {
   var t;
   let {
     item: n
-  } = e, _ = i.useMemo(() => {
+  } = e, b = i.useMemo(() => {
     switch (n.data.kind) {
       case "message":
       case "channelSummary":
@@ -71,12 +71,12 @@ function _(e) {
         return n.timestamp
     }
   }, [n]), I = (0, a.e7)([d.Z], () => d.Z.getChannel(E), [E]), C = null != (t = null == I ? true : I.guild_id) ? t : O, S = (0, a.e7)([p.Z], () => null != C ? p.Z.getGuild(C) : null, [C]), T = (0, a.e7)([f.default], () => null != v ? f.default.getUser(v) : null, [v]);
-  return "unknown" === _ ? null : (0, r.jsx)("div", {
-    className: b.container,
+  return "unknown" === b ? null : (0, r.jsx)("div", {
+    className: _.container,
     children: (0, r.jsxs)("div", {
-      className: b.header,
+      className: _.header,
       children: [(() => {
-        if ("guild" === _ && null != S) return (0, r.jsx)(o.Z, {
+        if ("guild" === b && null != S) return (0, r.jsx)(o.Z, {
           guild: S,
           size: "Medium",
           active: false,
@@ -86,29 +86,29 @@ function _(e) {
           tooltipPosition: "top",
           animate: false
         });
-        if ("user" === _ && null != T) {
+        if ("user" === b && null != T) {
           let e = T.getAvatarURL(true, 50);
           return (0, r.jsx)("img", {
             src: e,
             alt: T.username,
-            className: b.avatar
+            className: _.avatar
           })
         }
         return null
       })(), (0, r.jsxs)("div", {
-        className: b.headerInfo,
+        className: _.headerInfo,
         children: [(0, r.jsx)("div", {
-          className: b.titleRow,
+          className: _.titleRow,
           children: (0, r.jsxs)("div", {
-            className: b.titleLeft,
-            children: ["guild" === _ && null != S ? (0, r.jsx)("div", {
-              className: b.title,
+            className: _.titleLeft,
+            children: ["guild" === b && null != S ? (0, r.jsx)("div", {
+              className: _.title,
               children: S.name
-            }) : "user" === _ && null != T ? (0, r.jsx)("div", {
-              className: b.title,
+            }) : "user" === b && null != T ? (0, r.jsx)("div", {
+              className: _.title,
               children: T.username
             }) : null, (0, r.jsx)("div", {
-              className: b.timestamp,
+              className: _.timestamp,
               children: (0, u.a3)(y)
             })]
           })
@@ -139,38 +139,38 @@ function _(e) {
                 return ""
             }
           })();
-          if ("user" === _) return (0, r.jsx)("div", {
-            className: b.subtitle,
+          if ("user" === b) return (0, r.jsx)("div", {
+            className: _.subtitle,
             children: (0, r.jsx)("span", {
-              className: b.subtitleText,
+              className: _.subtitleText,
               children: e
             })
           });
           if (null != I && null != e) {
             let t = (0, s.KS)(I, S);
             return (0, r.jsxs)("div", {
-              className: b.subtitle,
+              className: _.subtitle,
               children: [(0, r.jsx)("span", {
-                className: b.subtitleText,
+                className: _.subtitleText,
                 children: e
               }), (0, r.jsx)("span", {
-                className: b.subtitleText,
+                className: _.subtitleText,
                 children: m.intl.string(m.t.CHUAYk)
               }), (0, r.jsxs)("span", {
-                className: b.subtitleText,
+                className: _.subtitleText,
                 children: [null != t && (0, r.jsx)(t, {
                   size: "custom",
                   width: 16,
                   height: 16,
-                  className: b.channelIcon
+                  className: _.channelIcon
                 }), I.name]
               })]
             })
           }
           return null != e ? (0, r.jsx)("div", {
-            className: b.subtitle,
+            className: _.subtitle,
             children: (0, r.jsx)("span", {
-              className: b.subtitleText,
+              className: _.subtitleText,
               children: e
             })
           }) : null

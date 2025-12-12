@@ -22,7 +22,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk614277 = require("./614277.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk321412 = require("./321412.js");
+  Chunk323261 = require("./323261.js");
 let O = {
   key: Chunk409813.h8.GIFT_CUSTOMIZATION,
   renderStep: e => (0, i.jsx)(k, function(e) {
@@ -82,7 +82,7 @@ function k(e) {
     giftRecipient: k
   } = (0, m.wD)(), {
     selectedSkuId: P
-  } = (0, b.JL)(), I = (0, l.e7)([d.default], () => d.default.getCurrentUser()), T = (0, l.e7)([f.Z], () => null != P ? f.Z.get(P) : null, [P]), E = (0, s.Z)({}), M = (0, l.e7)([g.Z], () => null != P ? g.Z.getForSKU(P) : null, [P]), Z = (null == M ? true : M.headerBackground) != null && (null == T ? true : T.applicationId) != null ? (0, p._W)(T.applicationId, M.headerBackground, 256) : true, S = async (e, n) => {};
+  } = (0, b.JL)(), I = (0, l.e7)([d.default], () => d.default.getCurrentUser()), T = (0, l.e7)([f.Z], () => null != P ? f.Z.get(P) : null, [P]), E = (0, s.Z)({}), M = (0, l.e7)([g.Z], () => null != P ? g.Z.getForSKU(P) : null, [P]), Z = (null == M ? true : M.headerBackground) != null && (null == T ? true : T.applicationId) != null ? (0, p._W)(T.applicationId, M.headerBackground, 256) : true, _ = async (e, n) => {};
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(y.C3, {
       children: (0, i.jsxs)("div", {
@@ -103,7 +103,7 @@ function k(e) {
           children: [(0, i.jsx)(r.Z, {
             recipients: E,
             selectedSkuId: P,
-            validateSelectedGift: S
+            validateSelectedGift: _
           }), (0, i.jsx)(c.Z, {
             sectionTitle: v.intl.string(v.t.B3miE8),
             onTextChange: e => null == O ? true : O(e),

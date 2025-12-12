@@ -17,9 +17,9 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let m = {
-  call(e, t, n, i, a) {
-    let o = n => {
-      f.default.selectVoiceChannel(e, t), n && this.ring(e), null == a || a(e)
+  call(e, t, n, i, o) {
+    let a = n => {
+      f.default.selectVoiceChannel(e, t), n && this.ring(e), null == o || o(e)
     };
     if (null != i) {
       if (s.Z.isBlocked(i)) return;
@@ -29,7 +29,7 @@ let m = {
         oldFormErrors: true,
         rejectWithError: true
       }).then(e => {
-        o(n && e.body.ringable)
+        a(n && e.body.ringable)
       }, () => {
         c.default.track(p.rMx.OPEN_POPOUT, {
           type: "Not Friend",
@@ -51,12 +51,12 @@ let m = {
           }
         })
       })
-    } else o(n)
+    } else a(n)
   },
   ring(e, t, n) {
-    let s = o.Z.getChannel(e);
+    let s = a.Z.getChannel(e);
     if (null == s) return;
-    let l = (0, a.V)(s),
+    let l = (0, o.V)(s),
       c = p.TPd.CALLABLE.has(s.type);
     if (l) {
       r.tn.post({

@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./704826.js"), require("./35282.js"), require("./388685.js");
 var Chunk623279 = require("./623279.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk374470 = require("./374470.js"),
   Chunk579806 = require("./579806.js"),
   Chunk710845 = require("./710845.js"),
@@ -34,9 +34,9 @@ function g(e) {
   if (null == n || null == n.langtag.language || null == n.langtag.region) return void m.error("".concat(e, " is not a valid locale."));
   let {
     language: i,
-    region: a
+    region: o
   } = n.langtag;
-  return "".concat(i.language.toLowerCase(), "-").concat(a.toUpperCase())
+  return "".concat(i.language.toLowerCase(), "-").concat(o.toUpperCase())
 }
 class E {
   get enabled() {
@@ -86,8 +86,8 @@ class E {
       let i = "".concat(n, "-").concat(this.regionPreference);
       if (false !== e.indexOf(i)) this.setLocale(i);
       else {
-        var a;
-        let e = null != (a = r[n]) ? a : f.Z[t];
+        var o;
+        let e = null != (o = r[n]) ? o : f.Z[t];
         null != e && this.setLocale(e)
       }
     }), h.on("spellcheck-result", (e, t) => {
@@ -95,7 +95,7 @@ class E {
     })
   }
 }
-let b = a().debounce((e, t) => {
+let b = o().debounce((e, t) => {
   let n = O(t);
   null != n && e.detectLanguage(n)
 }, _);
@@ -105,7 +105,7 @@ function y(e) {
 }
 
 function O(e) {
-  return null == e ? null : (0, o.kK)(e, HTMLInputElement) || (0, o.kK)(e, HTMLTextAreaElement) ? e.value : (0, o.kK)(e) && e.hasAttribute("contenteditable") ? e.textContent : true
+  return null == e ? null : (0, a.kK)(e, HTMLInputElement) || (0, a.kK)(e, HTMLTextAreaElement) ? e.value : (0, a.kK)(e) && e.hasAttribute("contenteditable") ? e.textContent : true
 }
 async function v() {
   var e;

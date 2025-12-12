@@ -2,7 +2,7 @@
 /** chunk id: 299407, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  s: () => a
+  s: () => o
 });
 let r = (e, t) => ({
     x: e.x - t.x,
@@ -16,13 +16,13 @@ let r = (e, t) => ({
       y: 0
     } : r(t, n)
   },
-  a = (e, t) => {
+  o = (e, t) => {
     let n = e.getClientOffset();
     if (null === n) return null;
     if (!t.current || !t.current.getBoundingClientRect) return r(n, i(e));
-    let a = t.current.getBoundingClientRect();
+    let o = t.current.getBoundingClientRect();
     return r(n, {
-      x: a.width / 2,
-      y: a.height / 2
+      x: o.width / 2,
+      y: o.height / 2
     })
   }

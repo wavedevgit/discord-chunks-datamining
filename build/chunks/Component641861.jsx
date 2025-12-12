@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 641861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -22,13 +22,13 @@ var Chunk120356 = require("./120356.js"),
   Chunk933557 = require("./933557.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk943856 = require("./943856.js");
+  Chunk115858 = require("./115858.js");
 
-function x(e) {
+function O(e) {
   let {
     recipientUser: t,
     voiceChannel: n
-  } = e, r = (0, C.ZP)(n), s = (0, f.s)(t, "RingToVoiceBanner", n.id), {
+  } = e, r = (0, C.ZP)(n), s = (0, h.s)(t, "RingToVoiceBanner", n.id), {
     userIsInCall: u,
     isUserRinging: m
   } = (0, o.cj)([p.Z], () => {
@@ -37,7 +37,7 @@ function x(e) {
       userIsInCall: null != e,
       isUserRinging: null != e && e.type === y.fO.USER && e.ringing
     }
-  }), x = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), j = null != x ? (0, g.EB)(x, 32, true) : null, S = !s || u && !m;
+  }), O = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), E = null != O ? (0, g.EB)(O, 32, true) : null, j = !s || u && !m;
   return ((0, d.Z)({
     type: a.ImpressionTypes.PAGE,
     name: a.ImpressionNames.RING_TO_GUILD_VC_BANNER_SHOWN,
@@ -46,29 +46,29 @@ function x(e) {
       voice_guild_id: null == n ? true : n.guild_id
     }
   }, {
-    disableTrack: S
-  }, [t.id]), S) ? null : (0, i.jsxs)("div", {
-    className: l()(O.themed, O.chatHeaderBar),
+    disableTrack: j
+  }, [t.id]), j) ? null : (0, i.jsxs)("div", {
+    className: l()(_.themed, _.chatHeaderBar),
     children: [(0, i.jsxs)("div", {
-      className: O.chatHeaderBarInfo,
-      children: [(0, i.jsx)(h.ZP, {
-        className: O.mask,
-        mask: h.QS.SQUIRCLE,
+      className: _.chatHeaderBarInfo,
+      children: [(0, i.jsx)(f.ZP, {
+        className: _.mask,
+        mask: f.QS.SQUIRCLE,
         width: 24,
         height: 24,
-        children: null == j ? (0, i.jsx)("div", {
-          className: l()(O.guildIcon, O.guildIconWithoutImage),
+        children: null == E ? (0, i.jsx)("div", {
+          className: l()(_.guildIcon, _.guildIconWithoutImage),
           children: (0, i.jsx)("div", {
-            className: O.guildAcronym,
-            children: null != x ? (0, g.gM)(x) : null
+            className: _.guildAcronym,
+            children: null != O ? (0, g.gM)(O) : null
           })
         }) : (0, i.jsx)("img", {
-          alt: null == x ? true : x.name,
-          src: j,
-          className: O.guildIcon
+          alt: null == O ? true : O.name,
+          src: E,
+          className: _.guildIcon
         })
       }), (0, i.jsx)(c.Text, {
-        className: O.chatHeaderBarText,
+        className: _.chatHeaderBarText,
         variant: "text-md/medium",
         color: "text-default",
         children: v.intl.format(v.t.f2tNxH, {
@@ -80,7 +80,7 @@ function x(e) {
           }, n.id)
         })
       })]
-    }), (0, i.jsx)(E, {
+    }), (0, i.jsx)(x, {
       channelId: n.id,
       recipientUserId: t.id,
       isUserRinging: m
@@ -88,7 +88,7 @@ function x(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     channelId: t,
     recipientUserId: n,

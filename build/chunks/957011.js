@@ -1,8 +1,8 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 957011, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -13,29 +13,29 @@ var Chunk473749 = require("./473749.js"),
   Chunk53365 = require("./53365.js"),
   Chunk223892 = require("./223892.js");
 
-function u(e, t) {
-  let n = (0, i.e7)([s.Z], () => s.Z.getGuild(e)),
-    [u, g] = r.useState(),
-    [f, m] = r.useState(false),
-    b = (0, d.Ob)(n);
+function d(e, t) {
+  let n = (0, i.e7)([a.Z], () => a.Z.getGuild(e)),
+    [d, g] = r.useState(),
+    [m, p] = r.useState(false),
+    f = (0, u.Ob)(n);
   return {
     canSubmitAcceptance: (0, i.e7)([o.default], () => {
       let e = o.default.getCurrentUser();
-      return null != n && (0, a.eM)(n, e)
+      return null != n && (0, s.eM)(n, e)
     }, [n]),
-    error: u,
-    loading: f,
+    error: d,
+    loading: m,
     submitAcceptTermsRequest: r.useCallback(async () => {
-      if (null != e && (b || null != t)) {
-        m(true), g(true);
+      if (null != e && (f || null != t)) {
+        p(true), g(true);
         try {
           null != t ? await c.wE(e, t) : await c.zo(e)
         } catch (e) {
           g(new l.Z(e))
         } finally {
-          m(false)
+          p(false)
         }
       }
-    }, [e, t, b])
+    }, [e, t, f])
   }
 }

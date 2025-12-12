@@ -12,22 +12,22 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function s(e, t) {
-  let [n] = (0, r.e7)([a.Z], () => [a.Z.getGameRelationshipsForUserByType(e, t), a.Z.getGameRelationshipsVersion()], [t, e], i.Q);
+  let [n] = (0, r.e7)([o.Z], () => [o.Z.getGameRelationshipsForUserByType(e, t), o.Z.getGameRelationshipsVersion()], [t, e], i.Q);
   return n
 }
 
 function l(e) {
-  return s(e, o.OGo.FRIEND)
+  return s(e, a.OGo.FRIEND)
 }
 
 function c(e) {
-  return s(e, o.OGo.PENDING_INCOMING)
+  return s(e, a.OGo.PENDING_INCOMING)
 }
 
 function u(e, t) {
-  let [n] = (0, r.e7)([a.Z], () => {
-    let n = a.Z.getGameRelationshipsForUserByType(e, t),
-      r = a.Z.getGameRelationshipsVersion();
+  let [n] = (0, r.e7)([o.Z], () => {
+    let n = o.Z.getGameRelationshipsForUserByType(e, t),
+      r = o.Z.getGameRelationshipsVersion();
     return [n.length > 0, r]
   }, [t, e], i.Q);
   return n

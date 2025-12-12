@@ -24,10 +24,10 @@ function u(e) {
     displayedWishlistItems: d,
     defaultWishlistId: f,
     title: p
-  } = (0, o.QX)({
+  } = (0, a.QX)({
     user: t,
-    numItems: o.fA,
-    source: a.bd.POPOUT,
+    numItems: a.fA,
+    source: o.bd.POPOUT,
     location: "User Profile Popout"
   });
   return null == d || 0 === d.length ? null : (0, r.jsx)(s.Z, {

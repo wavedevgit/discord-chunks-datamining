@@ -13,11 +13,11 @@ function i(e, t) {
   }
 }
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t && i(e.prototype, t), n && i(e, n), e
 }
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,9 +30,9 @@ require.d(exports, {
 });
 var s = function() {
   function e(t) {
-    r(this, e), o(this, "item", true), o(this, "config", true), this.config = t, this.item = {}, this.initializeExposedProperties()
+    r(this, e), a(this, "item", true), a(this, "config", true), this.config = t, this.item = {}, this.initializeExposedProperties()
   }
-  return a(module, [{
+  return o(module, [{
     key: "initializeExposedProperties",
     value: function() {
       var e = this;

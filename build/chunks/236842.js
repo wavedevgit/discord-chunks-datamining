@@ -8,7 +8,7 @@ var Chunk836560 = require("./836560.js"),
   Chunk579092 = require("./579092.js"),
   Chunk436620 = require("./436620.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -104,22 +104,22 @@ class l extends Chunk836560.EventEmitter {
     }, this.emit("addtrack", e, t))
   }
   constructor(e) {
-    super(), o(this, "bitrate", true), o(this, "pc", true), o(this, "stream", null), o(this, "senders", []), o(this, "negotiating", false), o(this, "_negotiationNeeded", false), o(this, "handlePeerConnectionStateChange", () => {
+    super(), a(this, "bitrate", true), a(this, "pc", true), a(this, "stream", null), a(this, "senders", []), a(this, "negotiating", false), a(this, "_negotiationNeeded", false), a(this, "handlePeerConnectionStateChange", () => {
       let e = this.peerConnectionState;
       s.info("peerConnectionState =>", e), "connecting" === e ? "connected" === this.iceConnectionState ? this.emit(e) : this.emit(this.iceConnectionState) : this.emit(e)
-    }), o(this, "handleIceConnectionStateChange", () => {
+    }), a(this, "handleIceConnectionStateChange", () => {
       let e = this.iceConnectionState;
       s.info("iceConnectionState =>", e), "completed" === e && (e = "connected"), this.emit(e)
-    }), o(this, "handleSignalingStateChange", () => {
+    }), a(this, "handleSignalingStateChange", () => {
       s.info("signalingState => ".concat(this.signalingState, ", negotiation needed: ").concat(this._negotiationNeeded.toString())), "stable" === this.signalingState && (this.negotiating = false, this._negotiationNeeded && this.negotiationNeeded())
-    }), o(this, "handleIceGatheringStateChange", () => {
+    }), a(this, "handleIceGatheringStateChange", () => {
       s.info("iceGatheringState =>", this.iceGatheringState)
-    }), o(this, "handleTrack", e => {
+    }), a(this, "handleTrack", e => {
       this.emitTrack(e.streams[0].id, e.track)
     }), this.bitrate = e;
     let t = this.pc = new RTCPeerConnection({
       sdpSemantics: "plan-b"
     });
-    a.X6 ? (t.onconnectionstatechange = this.handlePeerConnectionStateChange, t.oniceconnectionstatechange = this.handlePeerConnectionStateChange) : t.oniceconnectionstatechange = this.handleIceConnectionStateChange, t.onsignalingstatechange = this.handleSignalingStateChange, t.onicegatheringstatechange = this.handleIceGatheringStateChange, t.ontrack = this.handleTrack.bind(this), s.info("Constructed RTCPeerConnection")
+    o.X6 ? (t.onconnectionstatechange = this.handlePeerConnectionStateChange, t.oniceconnectionstatechange = this.handlePeerConnectionStateChange) : t.oniceconnectionstatechange = this.handleIceConnectionStateChange, t.onsignalingstatechange = this.handleSignalingStateChange, t.onicegatheringstatechange = this.handleIceGatheringStateChange, t.ontrack = this.handleTrack.bind(this), s.info("Constructed RTCPeerConnection")
   }
 }

@@ -109,11 +109,11 @@ function g(e) {
 function E(e, t, n) {
   let {
     toAST: i = false,
-    hideSimpleEmbedContent: a = true,
-    formatInline: o = false,
+    hideSimpleEmbedContent: o = true,
+    formatInline: a = false,
     postProcessor: s,
     contentMessage: l
-  } = n, c = false, u = false, d = e((null != l ? l : t).content, true, h(t, n), (e, n) => (Array.isArray(e) || (e = [e]), e.length >= r.dc - 10 && (u = true), a && (e = N(e, (null != l ? l : t).embeds)), o || (e = S(e, n)), e = b(e), t.embeds.length > 0 && (c = T(e, n)), o && (e = P(e)), null != s && (e = s(e, n)), e));
+  } = n, c = false, u = false, d = e((null != l ? l : t).content, true, h(t, n), (e, n) => (Array.isArray(e) || (e = [e]), e.length >= r.dc - 10 && (u = true), o && (e = N(e, (null != l ? l : t).embeds)), a || (e = S(e, n)), e = b(e), t.embeds.length > 0 && (c = T(e, n)), a && (e = P(e)), null != s && (e = s(e, n)), e));
   return {
     hasSpoilerEmbeds: c,
     content: d,
@@ -132,7 +132,7 @@ function b(e) {
 
 function y(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-  return E(t.formatInline ? a.Z.parseInlineReply : a.Z.parse, e, t)
+  return E(t.formatInline ? o.Z.parseInlineReply : o.Z.parse, e, t)
 }
 
 function O(e, t, n, r) {
@@ -157,7 +157,7 @@ function O(e, t, n, r) {
 }
 
 function v(e, t, n) {
-  return O(a.Z.parseAutoModerationSystemMessage, e, t, n)
+  return O(o.Z.parseAutoModerationSystemMessage, e, t, n)
 }
 
 function S(e, t) {
@@ -192,7 +192,7 @@ function N(e, t) {
   if (1 !== e.length || 1 !== t.length) return e;
   let n = e[0],
     r = t[0];
-  return ("link" === n.type || "attachmentLink" === n.type) && _.has(r.type) && (0, o.dY)(r) ? [] : e
+  return ("link" === n.type || "attachmentLink" === n.type) && _.has(r.type) && (0, a.dY)(r) ? [] : e
 }
 
 function P(e) {

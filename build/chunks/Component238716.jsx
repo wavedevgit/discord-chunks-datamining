@@ -1,7 +1,7 @@
 /** Chunk was on 46161 **/
-/** chunk id: 238716, original params: t,e,n (module,exports,require) **/
+/** chunk id: 238716, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => h
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,39 +13,39 @@ var Chunk54381 = require("./54381.js"),
   Chunk853856 = require("./853856.js"),
   Chunk117984 = require("./117984.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk231009 = require("./231009.js");
+  Chunk589253 = require("./589253.js");
 
-function f(t) {
+function h(t) {
   let {
-    channelId: e,
-    onClose: n,
-    transitionState: f,
-    heading: h,
-    formTitle: m,
+    channelId: n,
+    onClose: e,
+    transitionState: h,
+    heading: m,
+    formTitle: f,
     allowReset: v = false
-  } = t, C = (0, l.e7)([c.Z], () => c.Z.getChannel(e)), k = (0, o.ZP)(C), g = u.Z.getNickname(e), [j, b] = a.useState(null != g ? g : "");
+  } = t, C = (0, a.e7)([c.Z], () => c.Z.getChannel(n)), k = (0, o.ZP)(C), g = u.Z.getNickname(n), [j, b] = l.useState(null != g ? g : "");
 
-  function y(t) {
-    t.preventDefault(), (0, d.UT)(e, j), n()
+  function _(t) {
+    t.preventDefault(), (0, d.UT)(n, j), e()
   }
   return (0, i.jsx)("form", {
-    onSubmit: y,
+    onSubmit: _,
     children: (0, i.jsxs)(s.u_l, {
-      title: h,
+      title: m,
       actions: [{
         text: x.intl.string(x.t["ETE/oC"]),
-        onClick: n,
+        onClick: e,
         variant: "secondary"
       }, {
-        text: h,
-        onClick: y,
+        text: m,
+        onClick: _,
         variant: "primary",
         type: "submit"
       }],
-      onClose: n,
-      transitionState: f,
+      onClose: e,
+      transitionState: h,
       children: [(0, i.jsx)(r.oil, {
-        label: m,
+        label: f,
         value: j,
         onChange: b,
         placeholder: null != k ? k : true,
@@ -56,7 +56,7 @@ function f(t) {
         children: (0, i.jsx)(r.Avr, {
           text: x.intl.string(x.t.aE02Rz),
           onClick: function() {
-            (0, d.UT)(e, null), n()
+            (0, d.UT)(n, null), e()
           },
           textVariant: "text-sm/normal"
         })

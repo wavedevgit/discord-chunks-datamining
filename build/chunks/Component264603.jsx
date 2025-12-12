@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 264603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -24,8 +24,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk881998 = require("./881998.js"),
   Chunk449224 = require("./449224.js"),
   Chunk246992 = require("./246992.js"),
-  Chunk663618 = require("./663618.js"),
-  Chunk17827 = require("./17827.js");
+  Chunk451429 = require("./451429.js"),
+  Chunk441900 = require("./441900.js");
 let O = [{
   label: "Unset",
   value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET
@@ -51,7 +51,7 @@ function T() {
     N = (0, Chunk835473.q)(Chunk120356),
     P = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
       var e, t;
-      return null != (t = null == N || null == (e = N.linkedGames) ? true : module.map(e => x.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
+      return null != (t = null == N || null == (e = N.linkedGames) ? true : module.map(e => f.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
     }),
     w = (0, Chunk524995.F)(N, {
       allowedFlows: [Chunk524995.r.RPC]
@@ -64,7 +64,7 @@ function T() {
       canDeauthorize: R,
       deauthorize: A
     } = function(e) {
-      let t = (0, s.e7)([y.default], () => y.default.getNewestTokenForApplication(e)),
+      let t = (0, s.e7)([_.default], () => _.default.getNewestTokenForApplication(e)),
         n = r.useCallback(() => {
           null != t && u.Z.delete(t.id)
         }, [t]);
@@ -75,9 +75,9 @@ function T() {
     }(null == N ? true : N.id);
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
-    className: l()(Chunk663618.panel, Chunk17827.panel),
+    className: l()(Chunk451429.panel, Chunk441900.panel),
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk17827.container,
+      className: Chunk441900.container,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/normal",
         children: "Settings"
@@ -90,7 +90,7 @@ function T() {
         serialize: e => e.toString()
       })]
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk17827.container,
+      className: Chunk441900.container,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/normal",
         children: "Application"
@@ -113,7 +113,7 @@ function T() {
         }).join(", ") : "N/A"]
       })]
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk17827.container,
+      className: Chunk441900.container,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/normal",
         children: "Authorization"

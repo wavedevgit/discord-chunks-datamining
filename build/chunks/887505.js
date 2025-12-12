@@ -71,7 +71,7 @@ let h = () => {
       loadId: n,
       skuId: r,
       analyticsLocations: i,
-      analyticsSourceLocation: a
+      analyticsSourceLocation: o
     } = t;
     e === c.rMx.PAYMENT_FLOW_CANCELED && s.default.track(c.rMx.PAYMENT_FLOW_CANCELED, p({
       load_id: n,
@@ -81,8 +81,8 @@ let h = () => {
       payment_gateway: d.ht.VIRTUAL_CURRENCY,
       sku_id: r,
       currency: c.pKx.DISCORD_ORB
-    }, null != a && {
-      source: a
+    }, null != o && {
+      source: o
     }, h()))
   },
   E = e => {
@@ -95,7 +95,7 @@ let h = () => {
       activitySessionId: f,
       hasPaymentSources: _,
       contextMetadata: g
-    } = (0, a.JL)(), {
+    } = (0, o.JL)(), {
       loadId: E,
       startTime: b
     } = g, y = (0, r.useMemo)(() => {
@@ -126,7 +126,7 @@ let h = () => {
           continue_session_initial_step: null
         })) : e === c.rMx.PAYMENT_FLOW_LOADED ? s.default.track(c.rMx.PAYMENT_FLOW_LOADED, m(p({}, y), {
           has_saved_payment_source: _,
-          initial_step: o.h8.REVIEW,
+          initial_step: a.h8.REVIEW,
           duration_ms: n
         })) : e === c.rMx.PAYMENT_FLOW_CANCELED ? s.default.track(c.rMx.PAYMENT_FLOW_CANCELED, m(p({}, y), {
           duration_ms: n

@@ -15,20 +15,20 @@ let l = !!("undefined" != typeof window && window.document && window.document.cr
   c = new Map;
 
 function u(e) {
-  let [t, n] = (0, o.useState)(e), a = (0, o.useRef)(null), u = (0, s.gP)(t), d = (0, o.useRef)(null);
+  let [t, n] = (0, a.useState)(e), o = (0, a.useRef)(null), u = (0, s.gP)(t), d = (0, a.useRef)(null);
   if (r && r.register(d, u), l) {
     let e = c.get(u);
-    e && !e.includes(a) ? e.push(a) : c.set(u, [a])
+    e && !e.includes(o) ? e.push(o) : c.set(u, [o])
   }
   return (0, i.b)(() => {
     let e = u;
     return () => {
       r && r.unregister(d), c.delete(e)
     }
-  }, [u]), (0, o.useEffect)(() => {
-    let e = a.current;
+  }, [u]), (0, a.useEffect)(() => {
+    let e = o.current;
     return e && n(e), () => {
-      e && (a.current = null)
+      e && (o.current = null)
     }
   }), u
 }
@@ -43,8 +43,8 @@ function d(e, t) {
 
 function f(e = []) {
   let t = u(),
-    [n, r] = (0, a.p)(t),
-    s = (0, o.useCallback)(() => {
+    [n, r] = (0, o.p)(t),
+    s = (0, a.useCallback)(() => {
       r(function*() {
         yield t, yield document.getElementById(t) ? t : true
       })

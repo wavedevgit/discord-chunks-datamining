@@ -47,7 +47,7 @@ class y extends Chunk147913.Z {
 function O(e) {
   var t;
   let n = null == (t = _.Z.getGuild(e.guild_id)) ? true : t.name;
-  b.fileOnly("received deleted guild entities (id: ".concat(e.guild_id, ", name: ").concat(n, ")")), a.ZP.Emitter.batched(() => {
+  b.fileOnly("received deleted guild entities (id: ".concat(e.guild_id, ", name: ").concat(n, ")")), o.ZP.Emitter.batched(() => {
     null != e.channels && A(e.guild_id, new Set(e.channels)), null != e.roles && N(e.guild_id, new Set(e.roles)), null != e.emojis && P(e.guild_id, new Set(e.emojis)), null != e.stickers && R(e.guild_id, new Set(e.stickers))
   })
 }
@@ -73,11 +73,11 @@ function T(e) {
   var t, n, r;
   let i = null == (t = _.Z.getGuild(e)) ? true : t.name;
   b.fileOnly("requesting deleted guild entities (id: ".concat(e, ", name: ").concat(i, ")"));
-  let a = C(Object.keys(f.Z.getMutableBasicGuildChannelsForGuild(e))),
-    o = C(p.Z.getSortedRoles(e).map(e => e.id)),
+  let o = C(Object.keys(f.Z.getMutableBasicGuildChannelsForGuild(e))),
+    a = C(p.Z.getSortedRoles(e).map(e => e.id)),
     s = C(u.ZP.getGuildEmoji(e).map(e => e.id)),
     l = C(null != (r = null == (n = d.Z.getStickersByGuildId(e)) ? true : n.map(e => e.id)) ? r : []);
-  h.Z.getSocket().getDeletedEntityIdsNotMatchingHash(e, a, o, s, l)
+  h.Z.getSocket().getDeletedEntityIdsNotMatchingHash(e, o, a, s, l)
 }
 
 function C(e) {
@@ -90,7 +90,7 @@ function A(e, t) {
     channelIdsInMemory: n,
     channelIdsFromServer: t
   }), n.forEach(n => {
-    t.has(n) || o.Z.dispatch({
+    t.has(n) || a.Z.dispatch({
       type: "CHANNEL_DELETE",
       channel: {
         guild_id: e,
@@ -103,7 +103,7 @@ function A(e, t) {
 
 function N(e, t) {
   m.default.keys(p.Z.getUnsafeMutableRoles(e)).forEach(n => {
-    t.has(n) || o.Z.dispatch({
+    t.has(n) || a.Z.dispatch({
       type: "GUILD_ROLE_DELETE",
       guildId: e,
       roleId: n
@@ -114,7 +114,7 @@ function N(e, t) {
 function P(e, t) {
   let n = u.ZP.getGuildEmoji(e),
     r = n.filter(e => t.has(e.id));
-  n.length !== r.length && o.Z.dispatch({
+  n.length !== r.length && a.Z.dispatch({
     type: "GUILD_EMOJIS_UPDATE",
     guildId: e,
     emojis: r
@@ -125,7 +125,7 @@ function R(e, t) {
   var n;
   let r = null != (n = d.Z.getStickersByGuildId(e)) ? n : [],
     i = r.filter(e => t.has(e.id));
-  r.length !== i.length && o.Z.dispatch({
+  r.length !== i.length && a.Z.dispatch({
     type: "GUILD_STICKERS_UPDATE",
     guildId: e,
     stickers: i

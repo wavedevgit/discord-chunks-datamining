@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   AK: () => l,
-  EK: () => a,
-  IX: () => o,
+  EK: () => o,
+  IX: () => a,
   SW: () => p,
   SY: () => c,
   Sg: () => d,
@@ -17,10 +17,10 @@ require.d(exports, {
 });
 var Chunk763600 = require("./763600.js"),
   Chunk48541 = require("./48541.js"),
-  a = function(e) {
+  o = function(e) {
     return e.SELECT_GAME = "select-game", e.SERVER_SETTINGS = "server-settings", e
   }({});
-let o = {
+let a = {
     steps: {
       "select-game": {
         onBack: {

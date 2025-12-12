@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk490897 = require("./490897.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk497387 = require("./497387.js");
+  Chunk963354 = require("./963354.js");
 
 function M(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -144,11 +144,11 @@ function D(e) {
     user: t,
     subLabel: n
   } = e, r = A(e, ["user", "subLabel"]);
-  let i = E.ZP.useName(t),
-    a = E.ZP.useUserTag(t, {
+  let i = L.ZP.useName(t),
+    a = L.ZP.useUserTag(t, {
       decoration: "never"
     }),
-    s = (0, u.e7)([w.Z], () => w.Z.getNickname(t.id)),
+    s = (0, u.e7)([_.Z], () => _.Z.getNickname(t.id)),
     o = (0, u.e7)([O.Z], () => O.Z.getStatus(t.id));
   return (0, l.jsx)(I, F(M({}, r), {
     icon: (0, l.jsx)(d.Z, {
@@ -187,11 +187,11 @@ function R(e) {
   } = e, r = A(e, ["channel", "subLabel"]);
   let i = (0, u.e7)([j.Z], () => j.Z.getGuild(null == t ? true : t.guild_id)),
     a = (0, m.ZP)(t),
-    s = (0, u.e7)([y.Z, C.default, w.Z], () => {
+    s = (0, u.e7)([y.Z, w.default, _.Z], () => {
       let e = y.Z.getChannel(t.parent_id);
-      return null == e ? null : (0, m.F6)(e, C.default, w.Z, false)
+      return null == e ? null : (0, m.F6)(e, w.default, _.Z, false)
     }),
-    d = (0, u.e7)([P.ZP], () => P.ZP.lastMessageTimestamp(t.id, T.W.CHANNEL)),
+    d = (0, u.e7)([P.ZP], () => P.ZP.lastMessageTimestamp(t.id, N.W.CHANNEL)),
     b = null == i ? true : i.name;
   if (t.isThread() || t.isForumPost()) {
     let e = t.isForumPost() ? c.Mmi : c.VL1;
@@ -214,7 +214,7 @@ function R(e) {
         }), (0, l.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-subtle",
-          children: (0, Z.Xf)(o()(d))
+          children: (0, C.Xf)(o()(d))
         })]
       }) : null]
     })
@@ -255,15 +255,15 @@ function z(e) {
         id: u.id
       }, d = (0, v.hC)(c), b = null != s ? function(e, t) {
         if (t instanceof x.Sf && (0, x.Km)(t.type)) {
-          if (null != t.rateLimitPerUser && t.rateLimitPerUser > 0 && !(S.Z.can(N.Plq.MANAGE_CHANNELS, t) || S.Z.can(N.Plq.MANAGE_MESSAGES, t))) return {
-            label: _.intl.string(_.t.Icu3bf)
+          if (null != t.rateLimitPerUser && t.rateLimitPerUser > 0 && !(S.Z.can(E.Plq.MANAGE_CHANNELS, t) || S.Z.can(E.Plq.MANAGE_MESSAGES, t))) return {
+            label: T.intl.string(T.t.Icu3bf)
           };
-          if (t.isThread() || t.isForumPost() || !S.Z.can(N.Plq.USE_APPLICATION_COMMANDS, t)) return {
-            label: _.intl.string(_.t.v8MLqz)
+          if (t.isThread() || t.isForumPost() || !S.Z.can(E.Plq.USE_APPLICATION_COMMANDS, t)) return {
+            label: T.intl.string(T.t.v8MLqz)
           };
           let n = (0, v.dL)(t.id);
           if (e.id === n.id) return {
-            label: _.intl.string(_.t.mD4gqe)
+            label: T.intl.string(T.t.mD4gqe)
           }
         }
       }(s, u) : null, m = o.includes(d), p = {
@@ -281,7 +281,7 @@ function z(e) {
         channel: u
       }, p), d) : r === f.h8.TEXT_CHANNEL || r === f.h8.VOICE_CHANNEL ? (0, l.jsx)(R, M({
         channel: u
-      }, p), d) : void(0, L.vE)(r)
+      }, p), d) : void(0, Z.vE)(r)
     })
   }, [a, i, s, t, o])
 }

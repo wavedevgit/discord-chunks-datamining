@@ -1,7 +1,7 @@
 /** Chunk was on 68784 **/
 /** chunk id: 728076, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => b
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./781311.js");
 var Chunk473749 = require("./473749.js"),
   Chunk263568 = require("./263568.js"),
@@ -33,7 +33,7 @@ function m(e) {
   return e
 }
 
-function b(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,27 +46,27 @@ function b(e, t) {
   }), e
 }
 
-function p(e, t, n, p) {
+function b(e, t, n, b) {
   var j, O;
   let y = e.id,
     [v, h] = r.useState(() => {
       var e, t;
-      return null != (t = null == p || null == (e = p.initialAnswers) ? true : e.map(e => m({}, (0, u.Uu)(), e))) ? t : [(0, u.Uu)(), (0, u.Uu)()]
+      return null != (t = null == b || null == (e = b.initialAnswers) ? true : e.map(e => m({}, (0, u.Uu)(), e))) ? t : [(0, u.Uu)(), (0, u.Uu)()]
     }),
-    [P, w] = r.useState(null != (j = null == p ? true : p.initialQuestion) ? j : ""),
+    [P, w] = r.useState(null != (j = null == b ? true : b.initialQuestion) ? j : ""),
     [C, k] = r.useState(false),
-    [x, R] = r.useState(null != (O = null == p ? true : p.initialDuration) ? O : d.lc.ONE_DAY),
+    [x, R] = r.useState(null != (O = null == b ? true : b.initialDuration) ? O : f.lc.ONE_DAY),
     [E, S] = r.useState({}),
-    [D, A] = r.useState(false),
-    I = v.filter(e => (0, u.cS)(e)),
-    N = v.filter(e => (0, u.uY)(e)),
-    _ = P.length > 0 && I.length >= d.gY && 0 === N.length,
+    [_, D] = r.useState(false),
+    A = v.filter(e => (0, u.cS)(e)),
+    I = v.filter(e => (0, u.uY)(e)),
+    N = P.length > 0 && A.length >= f.gY && 0 === I.length,
     [U, {
       error: L,
       loading: T
-    }] = (0, l.Z)(s.Z.createPoll),
-    Z = v.length < d.fw,
-    B = v.length > d.gY,
+    }] = (0, a.Z)(s.Z.createPoll),
+    Z = v.length < f.fw,
+    B = v.length > f.gY,
     K = r.useCallback(e => {
       S(e => {
         let t = m({}, e);
@@ -84,7 +84,7 @@ function p(e, t, n, p) {
         return delete t["answer-".concat(r)], t
       }), h(e => {
         let r = [...e];
-        return r[n] = b(m({}, r[n]), {
+        return r[n] = p(m({}, r[n]), {
           text: t
         }), r
       })
@@ -92,16 +92,16 @@ function p(e, t, n, p) {
     M = r.useCallback((e, t) => {
       h(n => {
         let r = [...n];
-        return r[t] = b(m({}, r[t]), {
+        return r[t] = p(m({}, r[t]), {
           image: e
         }), r
       })
     }, []),
     z = r.useCallback((e, t, n) => {
       var r;
-      let a = v[t],
-        l = null == (r = a.image) ? true : r.mediaAttachmentState;
-      null != l && l.mediaURL !== n && c.P(e, a.localCreationAnswerId, (0, i.Yk)(a.localCreationAnswerId, l.mediaURL))
+      let l = v[t],
+        a = null == (r = l.image) ? true : r.mediaAttachmentState;
+      null != a && a.mediaURL !== n && c.P(e, l.localCreationAnswerId, (0, i.Yk)(l.localCreationAnswerId, a.mediaURL))
     }, [v]),
     H = r.useCallback(async (e, t, n) => {
       let r = v[t].localCreationAnswerId;
@@ -110,8 +110,8 @@ function p(e, t, n, p) {
     }, [v, M, z]),
     W = r.useCallback((e, t, n) => {
       let r = v[t].localCreationAnswerId,
-        a = URL.createObjectURL(n);
-      z(e, t), M(g(a, o._.PREPARING), t), c.fH(e, r, n), M(g(a, o._.READY_TO_UPLOAD), t)
+        l = URL.createObjectURL(n);
+      z(e, t), M(g(l, o._.PREPARING), t), c.fH(e, r, n), M(g(l, o._.READY_TO_UPLOAD), t)
     }, [v, M, z]),
     q = r.useCallback((e, t) => {
       z(y, t), M({
@@ -123,7 +123,7 @@ function p(e, t, n, p) {
     F = r.useCallback(e => {
       h(t => {
         let n = [...t];
-        return n[e] = b(m({}, n[e]), {
+        return n[e] = p(m({}, n[e]), {
           image: true
         }), n
       })
@@ -148,21 +148,21 @@ function p(e, t, n, p) {
   let X = r.useCallback(() => {
       let e = true,
         t = {};
-      return 0 === P.trim().length && (e = false, t.question = f.intl.string(f.t.gPX3oI)), v.filter(e => (0, u.cS)(e)).length < d.gY && (e = false, t["answer-".concat(v[0].localCreationAnswerId)] = f.intl.string(f.t.fYvzEX)), v.forEach(n => {
-        (0, u.uY)(n) && (e = false, t["answer-".concat(n.localCreationAnswerId)] = f.intl.string(f.t["8Qqkc+"]))
-      }), S(t), A(!e), e
+      return 0 === P.trim().length && (e = false, t.question = d.intl.string(d.t.gPX3oI)), v.filter(e => (0, u.cS)(e)).length < f.gY && (e = false, t["answer-".concat(v[0].localCreationAnswerId)] = d.intl.string(d.t.fYvzEX)), v.forEach(n => {
+        (0, u.uY)(n) && (e = false, t["answer-".concat(n.localCreationAnswerId)] = d.intl.string(d.t["8Qqkc+"]))
+      }), S(t), D(!e), e
     }, [v, P]),
     J = r.useCallback(async () => {
       await U({
         channel: e,
         question: P,
-        answers: I,
+        answers: A,
         allowMultiSelect: C,
         duration: x,
-        layout: a.C.DEFAULT,
+        layout: l.C.DEFAULT,
         onClose: t
       })
-    }, [P, I, C, x, U, e, t]),
+    }, [P, A, C, x, U, e, t]),
     Q = r.useCallback(() => {
       !T && X() && J()
     }, [J, T, X]);
@@ -174,7 +174,7 @@ function p(e, t, n, p) {
     setAllowMultiSelect: k,
     duration: x,
     setDuration: R,
-    canPost: _,
+    canPost: N,
     canAddMoreAnswers: Z,
     canRemoveMoreAnswers: B,
     handleQuestionChange: K,
@@ -190,8 +190,8 @@ function p(e, t, n, p) {
     handleSubmitPoll: Q,
     submitting: T,
     createPollError: L,
-    shouldFocusOnInvalidField: D,
-    setShouldFocusOnInvalidField: A
+    shouldFocusOnInvalidField: _,
+    setShouldFocusOnInvalidField: D
   }
 }
 

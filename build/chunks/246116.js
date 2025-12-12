@@ -9,7 +9,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk991261 = require("./991261.js"),
   Chunk213305 = require("./213305.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -51,8 +51,8 @@ function c(e, t) {
 function u(e) {
   var t;
   let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
-    o = r.useContext(a.S),
-    l = null != (t = n.keyboardModeEnabled) ? t : o.keyboardModeEnabled,
+    a = r.useContext(o.S),
+    l = null != (t = n.keyboardModeEnabled) ? t : a.keyboardModeEnabled,
     u = r.useRef(false);
   u.current = !l || true === n.disable;
   let d = r.useMemo(() => {

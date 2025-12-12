@@ -3,8 +3,8 @@
 "use strict";
 var Chunk434431 = require("./434431.js"),
   i = String,
-  a = TypeError;
+  o = TypeError;
 module.exports = function(e) {
   if (r(e)) return e;
-  throw new a(i(e) + " is not an object")
+  throw new o(i(e) + " is not an object")
 }

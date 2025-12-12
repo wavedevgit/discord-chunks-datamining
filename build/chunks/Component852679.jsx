@@ -33,7 +33,7 @@ async function _(e) {
     intent: T
   } = e, C = S ? i.u1M : i.z1l, A = l.Z.getPremiumTypeSubscription();
   if (null != A && A.isPurchasedExternally && null != A.paymentGateway) {
-    null != g && g(), a.Z.show({
+    null != g && g(), o.Z.show({
       title: f.intl.formatToPlainString(f.t["rTk9v/"], {
         paymentGatewayName: d.Vzj[A.paymentGateway]
       }),
@@ -44,7 +44,7 @@ async function _(e) {
     });
     return
   }
-  Promise.all([(0, o.tZ)(), (0, s.Y2)()]);
+  Promise.all([(0, a.tZ)(), (0, s.Y2)()]);
   let N = () => {
     c.default.track(d.rMx.MODAL_DISMISSED, {
       type: d.jXE.PREMIUM_GUILD_PURCHASE_MODAL,
@@ -58,12 +58,12 @@ async function _(e) {
     return n => {
       let {
         transitionState: i,
-        onClose: a
+        onClose: o
       } = n;
       return (0, r.jsx)(e, {
         transitionState: i,
         onClose: e => {
-          a(), null == E || E(e)
+          o(), null == E || E(e)
         },
         analyticsLocations: t,
         analyticsLocation: _,

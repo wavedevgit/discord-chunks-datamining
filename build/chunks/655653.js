@@ -9,8 +9,8 @@ module.exports = function(e) {
     }),
     r = "decltype\\(auto\\)",
     i = "[a-zA-Z_]\\w*::",
-    a = "<[^<>]+>",
-    o = "(" + r + "|" + t.optional(i) + "[a-zA-Z_]\\w*" + t.optional(a) + ")",
+    o = "<[^<>]+>",
+    a = "(" + r + "|" + t.optional(i) + "[a-zA-Z_]\\w*" + t.optional(o) + ")",
     s = {
       className: "type",
       variants: [{
@@ -101,7 +101,7 @@ module.exports = function(e) {
       relevance: 0
     },
     g = {
-      begin: "(" + o + "[\\*&\\s]+)+" + p,
+      begin: "(" + a + "[\\*&\\s]+)+" + p,
       returnBegin: true,
       end: /[{;=]/,
       excludeEnd: true,

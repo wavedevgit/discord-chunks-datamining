@@ -33,16 +33,16 @@ function _(e, t) {
 
 function m(e) {
   let t = (0, u.Z)(e);
-  return (0, r.e7)([o.Z, s.Z, a.Z], () => {
+  return (0, r.e7)([a.Z, s.Z, o.Z], () => {
     if (__OVERLAY__ || e === d.ME || e === d.I_8) returnfalse;
     let n = s.Z.getGuild(e);
-    return !!(null == n ? true : n.features.has(d.GuildFeatures.COMMUNITY)) && (a.Z.isFullServerPreview(e) ? p(n) : (0, i.wC)(e) ? t || _(e, o.Z) : !!(0, c.Z)(n) && (t || _(e, o.Z)))
+    return !!(null == n ? true : n.features.has(d.GuildFeatures.COMMUNITY)) && (o.Z.isFullServerPreview(e) ? p(n) : (0, i.wC)(e) ? t || _(e, a.Z) : !!(0, c.Z)(n) && (t || _(e, a.Z)))
   }, [e, t])
 }
 
 function h(e) {
   let t = s.Z.getGuild(e),
-    n = a.Z.isFullServerPreview(e);
+    n = o.Z.isFullServerPreview(e);
   if (null == t || __OVERLAY__ || e === d.ME || e === d.I_8) returnfalse;
   if (n) return p(t);
   let r = (0, i.wC)(e) && t.features.has(d.GuildFeatures.GUILD_ONBOARDING) && t.features.has(d.GuildFeatures.GUILD_SERVER_GUIDE);

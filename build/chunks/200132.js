@@ -8,7 +8,7 @@
     n = ["nolla", "yhden", "kahden", "kolmen", "nelj\xe4n", "viiden", "kuuden", t[7], t[8], t[9]];
 
   function r(e, t, n, r) {
-    var a = "";
+    var o = "";
     switch (n) {
       case "s":
         return r ? "muutaman sekunnin" : "muutama sekunti";
@@ -17,29 +17,29 @@
       case "m":
         return r ? "minuutin" : "minuutti";
       case "mm":
-        a = r ? "minuutin" : "minuuttia";
+        o = r ? "minuutin" : "minuuttia";
         break;
       case "h":
         return r ? "tunnin" : "tunti";
       case "hh":
-        a = r ? "tunnin" : "tuntia";
+        o = r ? "tunnin" : "tuntia";
         break;
       case "d":
         return r ? "p\xe4iv\xe4n" : "p\xe4iv\xe4";
       case "dd":
-        a = r ? "p\xe4iv\xe4n" : "p\xe4iv\xe4\xe4";
+        o = r ? "p\xe4iv\xe4n" : "p\xe4iv\xe4\xe4";
         break;
       case "M":
         return r ? "kuukauden" : "kuukausi";
       case "MM":
-        a = r ? "kuukauden" : "kuukautta";
+        o = r ? "kuukauden" : "kuukautta";
         break;
       case "y":
         return r ? "vuoden" : "vuosi";
       case "yy":
-        a = r ? "vuoden" : "vuotta"
+        o = r ? "vuoden" : "vuotta"
     }
-    return i(e, r) + " " + a
+    return i(e, r) + " " + o
   }
 
   function i(e, r) {

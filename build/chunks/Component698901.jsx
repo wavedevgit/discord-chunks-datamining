@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 698901, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk536442 = require("./536442.js"),
-  Chunk2968 = require("./2968.js");
+  Chunk983380 = require("./983380.js");
 
 function c(e) {
   let {
@@ -38,7 +38,7 @@ function d() {
   return (0, Chunk54381.jsx)(Chunk481060.C3N, {
     label: "Hotspots",
     description: "All the 'hotspots' in app, and their current status. Use the select menu to override them on or off.",
-    className: Chunk2968.hotspotsSection,
+    className: Chunk983380.hotspotsSection,
     children: (0, Chunk54381.jsx)(Chunk481060.Kqy, {
       gap: 20,
       children: Object.keys(Chunk536442.v6).sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(c, {

@@ -40,7 +40,7 @@ function p() {
   if (null == exports) return;
   let i = Chunk592125.Z.getChannel(exports);
   if (null == Chunk147913) return;
-  let a = null != (e = Chunk147913.videoQualityMode) ? module : Chunk981631.Ucd.AUTO;
+  let o = null != (e = Chunk147913.videoQualityMode) ? module : Chunk981631.Ucd.AUTO;
   require !== Chunk314897 && Chunk570140.Z.dispatch({
     type: "SET_CHANNEL_VIDEO_QUALITY_MODE",
     mode: Chunk314897
@@ -63,7 +63,7 @@ function h(e) {
     voiceStates: t
   } = e;
   t.forEach(e => {
-    a.default.getSessionId() === e.sessionId && _()
+    o.default.getSessionId() === e.sessionId && _()
   })
 }
 class g extends Chunk147913.Z {

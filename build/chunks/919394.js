@@ -72,14 +72,14 @@ let g = (e, t) => h({
           days: t
         })
       })
-    }(0, d.ig)(e) === a.o.GLOBAL && n.push({
+    }(0, d.ig)(e) === o.o.GLOBAL && n.push({
       iconPath: p.Op,
       text: _.intl.string(_.t.kAlUsy)
     });
-    let o = (0, d.dw)(e);
-    if (null != o && n.push({
+    let a = (0, d.dw)(e);
+    if (null != a && n.push({
         iconPath: p.Z,
-        text: (0, d.GE)(o)
+        text: (0, d.GE)(a)
       }), (0, d.V5)(e)) {
       let {
         text: t
@@ -108,7 +108,7 @@ let g = (e, t) => h({
       timestamp: n,
       colors: r,
       description: i,
-      entry: a,
+      entry: o,
       numAvatars: l
     } = t, c = r.map((e, t) => ({
       color: e,
@@ -134,7 +134,7 @@ let g = (e, t) => h({
     }, {
       w: p.Pu,
       h: p.Pu
-    }, 8) === s.vP.Failure && e.drawPath(o.C, {
+    }, 8) === s.vP.Failure && e.drawPath(a.C, {
       x: p.sB,
       y: p.sB
     }, true, 2 + 2 / 3);
@@ -158,7 +158,7 @@ let g = (e, t) => h({
       h: 32,
       w: p.kC
     }, true);
-    let d = E(a, n);
+    let d = E(o, n);
     (0, f.J)({
       canvas: e,
       badges: d,
@@ -172,15 +172,15 @@ let g = (e, t) => h({
       entry: n,
       avatarSrcs: r,
       description: i,
-      timestamp: a,
-      colors: o,
+      timestamp: o,
+      colors: a,
       channelId: c
     } = e, u = n.extra.game_name, d = g(r, t);
     return await (0, l.f)({
       assetsToLoad: d,
       drawImage: e => b(e, {
-        timestamp: a,
-        colors: o,
+        timestamp: o,
+        colors: a,
         description: i,
         entry: n,
         numAvatars: r.length

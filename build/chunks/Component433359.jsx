@@ -1,7 +1,7 @@
-/** Chunk was on 58973 **/
+/** Chunk was on 26196 **/
 /** chunk id: 433359, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  CustomThemesShareModalWrapper: () => O
+  CustomThemesShareModalWrapper: () => y
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,22 +19,22 @@ var Chunk54381 = require("./54381.js"),
   Chunk975919 = require("./975919.jsx"),
   Chunk595830 = require("./595830.js"),
   Chunk981631 = require("./981631.js");
-let O = e => {
+let y = e => {
   let {
     transitionState: t,
     onClose: n
-  } = e, O = (0, a.useRef)((0, g.sf)()).current, {
-    selectedDestinations: C,
-    messageText: j,
-    canSend: _,
+  } = e, y = (0, a.useRef)((0, g.sf)()).current, {
+    selectedDestinations: O,
+    messageText: C,
+    canSend: j,
     setSend: w,
     updateMessage: v,
     updateChannel: S
-  } = (0, o.o)(O), [P, x] = a.useState(false), {
+  } = (0, o.o)(y), [P, x] = a.useState(false), {
     colors: E,
     chassisMixAmount: M,
     gradientAngle: k
-  } = (0, f.Ig)(), I = (0, c.e7)([u.Z], () => u.Z.theme), D = (0, a.useMemo)(() => ({
+  } = (0, b.Ig)(), I = (0, s.e7)([u.Z], () => u.Z.theme), D = (0, a.useMemo)(() => ({
     colors: E.map(e => e.replace("#", "")),
     gradient_angle: k,
     base_mix: M,
@@ -42,7 +42,7 @@ let O = e => {
   }), [E, k, M, I]), T = a.useMemo(() => (0, d.createChannelRecord)({
     id: "1",
     type: l.d.DM
-  }), []), R = a.useMemo(() => (0, s.e5)(function(e) {
+  }), []), R = a.useMemo(() => (0, i.e5)(function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -59,7 +59,7 @@ let O = e => {
       })
     }
     return e
-  }({}, (0, i.ZP)({
+  }({}, (0, c.ZP)({
     channelId: T.id,
     content: ""
   }))), [T]);
@@ -67,15 +67,15 @@ let O = e => {
     v(R), S(T), x(true)
   }, [R, T, v, S]);
   let Z = a.useCallback(async () => {
-    if (!_()) return Promise.reject();
-    await (0, m.O)(C, D, j), b.default.track(y.rMx.CUSTOM_THEME_SHARED, {
-      num_destinations: C.length
+    if (!j()) return Promise.reject();
+    await (0, _.O)(O, D, C), f.default.track(m.rMx.CUSTOM_THEME_SHARED, {
+      num_destinations: O.length
     }), await n()
-  }, [D, C, j, _, n]);
+  }, [D, O, C, j, n]);
   return ((0, a.useEffect)(() => {
     w(Z)
   }, [Z, w]), P) ? (0, r.jsx)(g.fm.Provider, {
-    value: O,
+    value: y,
     children: (0, r.jsx)(h._, {
       transitionState: t,
       onClose: n

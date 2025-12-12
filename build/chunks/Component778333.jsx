@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk51144 = require("./51144.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk222922 = require("./222922.js");
+  Chunk105341 = require("./105341.js");
 
 function y(e) {
   var t;
@@ -28,9 +28,9 @@ function y(e) {
     invite: n,
     message: y,
     getAcceptInviteContext: O
-  } = e, v = (0, o.e7)([p.default], () => p.default.getId()), S = (null == (t = n.inviter) ? true : t.id) === v, I = n.state === g.r2o.ACCEPTING, {
+  } = e, v = (0, a.e7)([p.default], () => p.default.getId()), S = (null == (t = n.inviter) ? true : t.id) === v, I = n.state === g.r2o.ACCEPTING, {
     analyticsLocations: T
-  } = (0, u.ZP)(c.Z.INVITE_EMBED), C = (0, o.e7)([m.Z], () => {
+  } = (0, u.ZP)(c.Z.INVITE_EMBED), C = (0, a.e7)([m.Z], () => {
     var e;
     return null != n.inviter && m.Z.isFriend(null == (e = n.inviter) ? true : e.id)
   }), A = i.useCallback(() => {
@@ -78,7 +78,7 @@ function y(e) {
           onClick: C ? P : true,
           children: L
         })]
-      }), (0, r.jsx)(a.zxk, {
+      }), (0, r.jsx)(o.zxk, {
         onClick: P,
         text: R,
         loading: I,

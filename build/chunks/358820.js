@@ -84,11 +84,11 @@ function R(e) {
       modelId: r,
       fileName: i
     } = e,
-    a = h.Z.getModelState(r),
-    o = P.get(r);
-  if (null != o) return o;
-  if ((null == a ? true : a.status) === g.L.DOWNLOADED) return Promise.resolve();
-  if ((null == a ? true : a.status) === g.L.DOWNLOADING) return Promise.reject(Error("Voice filter model is downloading but not in active downloads map"));
+    o = h.Z.getModelState(r),
+    a = P.get(r);
+  if (null != a) return a;
+  if ((null == o ? true : o.status) === g.L.DOWNLOADED) return Promise.resolve();
+  if ((null == o ? true : o.status) === g.L.DOWNLOADING) return Promise.reject(Error("Voice filter model is downloading but not in active downloads map"));
   s.Z.dispatch(v({
     type: "VOICE_FILTER_DOWNLOAD_STARTED"
   }, e));
@@ -105,13 +105,13 @@ function R(e) {
     }))
   }).then(n => {
     if (n.fetchedFromNetwork) {
-      var i, a;
+      var i, o;
       u.default.track(y.rMx.VOICE_FILTER_DOWNLOAD_ATTEMPTED, {
         active_voice_filter_id: null != (i = c.Z.getActiveVoiceFilter()) ? i : null,
         success: true,
         voice_filter_id: e.voiceFilterId,
         model_id: r,
-        reason: null != (a = null == t ? true : t.reason) ? a : null
+        reason: null != (o = null == t ? true : t.reason) ? o : null
       })
     }
     s.Z.dispatch(I(v({
@@ -184,11 +184,11 @@ async function D(e) {
       rejectWithError: true
     }),
     r = n.text,
-    a = n.body,
-    o = n.headers["x-discord-catalog-signature"];
-  if (null == a.models) throw Error("Voice filters catalog response is empty");
-  if (null == o) throw Error("Voice filters catalog signature is missing");
-  return await e.setCatalog(r, o), a
+    o = n.body,
+    a = n.headers["x-discord-catalog-signature"];
+  if (null == o.models) throw Error("Voice filters catalog response is empty");
+  if (null == a) throw Error("Voice filters catalog signature is missing");
+  return await e.setCatalog(r, a), o
 }
 async function x(e) {
   if (!_.ZP.canCheckVoiceFilterFilesExist()) return;
@@ -206,7 +206,7 @@ async function x(e) {
     status: t ? g.L.DOWNLOADED : g.L.MISSING
   };
   let i = t.map(e => e.fileName);
-  return (0, o.dZ)(i) && await (0, E.A)(i), r
+  return (0, a.dZ)(i) && await (0, E.A)(i), r
 }
 async function L() {
   if (!Chunk709706.Z.isNativeModuleLoaded()) return void T.info("Voice Filter catalog refresh ignored, module not loaded.");

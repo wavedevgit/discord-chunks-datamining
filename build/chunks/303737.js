@@ -27,20 +27,20 @@ i().shim();
 let h = {};
 
 function g(e) {
-  let t = (0, a.e7)([l.Z], () => l.Z.getChannel(e)),
-    n = (0, a.e7)([p.Z], () => p.Z.getChannel(e));
+  let t = (0, o.e7)([l.Z], () => l.Z.getChannel(e)),
+    n = (0, o.e7)([p.Z], () => p.Z.getChannel(e));
   return null != t ? t : n
 }
 
 function E(e, t, n) {
-  let r = (0, a.e7)([u.Z], () => u.Z.getSubscriptionListingsForGuild(e)),
+  let r = (0, o.e7)([u.Z], () => u.Z.getSubscriptionListingsForGuild(e)),
     i = (0, d.n)(t => t.editStateIdsForGroup[e]),
-    o = (0, d.n)(e => e.listings);
+    a = (0, d.n)(e => e.listings);
   if (true === n || true === t) return null;
   let s = r.filter(e => !e.soft_deleted && !e.archived).map(e => e.subscription_plans[0].price),
     l = [];
   true !== i && i.forEach(e => {
-    let t = o[e],
+    let t = a[e],
       n = null == t ? true : t.priceTier;
     null != n && l.push(n)
   });
@@ -79,7 +79,7 @@ function y(e) {
   let t = b(e);
   h[e] = t, t.forEach(e => {
     let t = e.set("flags", m.zZ.IS_ROLE_SUBSCRIPTION_TEMPLATE_PREVIEW_CHANNEL);
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "CHANNEL_CREATE",
       channel: t
     })
@@ -89,7 +89,7 @@ function y(e) {
 function O(e) {
   var t;
   (null != (t = h[e]) ? t : b(e)).forEach(e => {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "CHANNEL_DELETE",
       channel: e
     })
@@ -102,7 +102,7 @@ async function v(e, t) {
     let i = p.Z.getChannel(t.ref_id);
     null != i && (n.push(s.Z.createRoleSubscriptionTemplateChannel(e, i.name, i.type, i.topic)), r.push(i))
   }), 0 !== n.length && (await Promise.allSettled(n)).forEach((n, i) => {
-    let a = r[i].id;
+    let o = r[i].id;
     if ("fulfilled" === n.status) {
       let t = n.value.body,
         r = d.n.getState().editStateIdsForGroup[e],
@@ -111,11 +111,11 @@ async function v(e, t) {
         var n;
         let r = null == (n = i[e]) ? true : n.channelBenefits;
         null == r || r.forEach(e => {
-          e.ref_id === a && (e.ref_id = t.id)
+          e.ref_id === o && (e.ref_id = t.id)
         })
       })
     } else if (null != t) {
-      let e = t.findIndex(e => e.ref_id === a);
+      let e = t.findIndex(e => e.ref_id === o);
       false !== e && (null == t || t.splice(e, 1))
     }
   })
@@ -124,26 +124,26 @@ async function v(e, t) {
 function S(e, t) {
   var n, r;
   let i = d.n.getState().listings[e],
-    a = null == i ? true : i.usedTemplate;
-  if (null == a) return {
-    templateCategory: null,
-    hasChangeFromTemplate: null
-  };
-  let o = p.Z.getTemplateWithCategory(t, a);
+    o = null == i ? true : i.usedTemplate;
   if (null == o) return {
     templateCategory: null,
     hasChangeFromTemplate: null
   };
-  let s = o.listings[0];
+  let a = p.Z.getTemplateWithCategory(t, o);
+  if (null == a) return {
+    templateCategory: null,
+    hasChangeFromTemplate: null
+  };
+  let s = a.listings[0];
   if ((null == i ? true : i.name) !== s.name || (null == i ? true : i.description) !== s.description || (null == i ? true : i.priceTier) !== s.price_tier || (null == i ? true : i.image) !== s.image || (null == i ? true : i.roleColor) !== s.role_color || (null == i || null == (n = i.channelBenefits) ? true : n.length) !== s.channels.length || (null == i || null == (r = i.intangibleBenefits) ? true : r.length) !== s.additional_perks.length) return {
-    templateCategory: o.category,
+    templateCategory: a.category,
     hasChangeFromTemplate: true
   };
   for (let e = 0; e < s.channels.length; e++) {
     let t = i.channelBenefits[e],
       n = s.channels[e];
     if (t.name !== n.name || t.description !== n.description || t.emoji_name !== n.emoji_name) return {
-      templateCategory: o.category,
+      templateCategory: a.category,
       hasChangeFromTemplate: true
     }
   }
@@ -151,12 +151,12 @@ function S(e, t) {
     let t = i.intangibleBenefits[e],
       n = s.additional_perks[e];
     if (t.name !== n.name || t.description !== n.description || t.emoji_name !== n.emoji_name) return {
-      templateCategory: o.category,
+      templateCategory: a.category,
       hasChangeFromTemplate: true
     }
   }
   return {
-    templateCategory: o.category,
+    templateCategory: a.category,
     hasChangeFromTemplate: false
   }
 }

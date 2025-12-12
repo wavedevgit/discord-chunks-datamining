@@ -11,7 +11,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk821982 = require("./821982.js"),
   Chunk594174 = require("./594174.js"),
-  Chunk349792 = require("./349792.js"),
+  Chunk967282 = require("./967282.js"),
   Chunk328756 = require("./328756.js"),
   Chunk131812 = require("./131812.js");
 let f = 1.5,
@@ -23,7 +23,7 @@ function _(e) {
     claimableRewards: n,
     size: _,
     imageScaling: m = f
-  } = e, h = (0, i.e7)([l.default], () => l.default.getCurrentUser()), g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), E = (0, a.dcp)(_), b = {
+  } = e, h = (0, i.e7)([l.default], () => l.default.getCurrentUser()), g = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), E = (0, o.dcp)(_), b = {
     height: E * m
   };
   return n.length > 0 ? (0, r.jsx)("img", {
@@ -32,17 +32,17 @@ function _(e) {
     style: b
   }) : (0, r.jsxs)("div", {
     className: c.container,
-    children: [(1 === n.length || 2 === n.length) && (0, r.jsx)(a.Xo$, {
+    children: [(1 === n.length || 2 === n.length) && (0, r.jsx)(o.Xo$, {
       "aria-label": null == h ? true : h.username,
       size: _,
       className: c.firstPromotionalAvatar,
-      src: 1 === n.length ? null == h ? true : h.getAvatarURL(true, (0, a.dcp)(_), !g) : d,
+      src: 1 === n.length ? null == h ? true : h.getAvatarURL(true, (0, o.dcp)(_), !g) : d,
       avatarDecoration: (0, s.Z)(n[0].assetId, _, !g)
     }), 2 === n.length && (0, r.jsx)("div", {
       style: {
         marginRight: -Math.round(E * p)
       },
-      children: (0, r.jsx)(a.Xo$, {
+      children: (0, r.jsx)(o.Xo$, {
         "aria-label": null == h ? true : h.username,
         size: _,
         src: u,

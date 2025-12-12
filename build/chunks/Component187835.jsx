@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 187835, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -8,10 +8,10 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk603592 = require("./603592.jsx"),
   Chunk388032 = require("./388032.jsx");
-let o = "DOWNLOAD_APPS";
+let a = "DOWNLOAD_APPS";
 
 function s() {
-  let e = (0, Chunk481060.s9z)(e => (0, i.DEQ)(e, o));
+  let e = (0, Chunk481060.s9z)(e => (0, i.DEQ)(e, a));
   return (0, Chunk54381.jsx)(Chunk603592.Z, {
     id: "app-download-button",
     onClick: () => {
@@ -40,7 +40,7 @@ function s() {
           source: "Guilds"
         }, t))
       }, {
-        modalKey: o
+        modalKey: a
       })
     },
     selected: module,

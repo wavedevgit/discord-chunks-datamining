@@ -38,10 +38,10 @@ module.exports = function(e) {
       begin: e.IDENT_RE + "\\\\" + e.IDENT_RE
     }];
   r.contains = i;
-  let a = e.inherit(e.TITLE_MODE, {
+  let o = e.inherit(e.TITLE_MODE, {
       begin: n
     }),
-    o = "(\\(.*\\)\\s*)?\\B[-=]>",
+    a = "(\\(.*\\)\\s*)?\\B[-=]>",
     s = {
       className: "params",
       begin: "\\([^\\(]",
@@ -60,16 +60,16 @@ module.exports = function(e) {
     illegal: /\/\*/,
     contains: i.concat([e.COMMENT("--", "$"), {
       className: "function",
-      begin: "^\\s*" + n + "\\s*=\\s*" + o,
+      begin: "^\\s*" + n + "\\s*=\\s*" + a,
       end: "[-=]>",
       returnBegin: true,
-      contains: [a, s]
+      contains: [o, s]
     }, {
       begin: /[\(,:=]\s*/,
       relevance: 0,
       contains: [{
         className: "function",
-        begin: o,
+        begin: a,
         end: "[-=]>",
         returnBegin: true,
         contains: [s]
@@ -83,8 +83,8 @@ module.exports = function(e) {
         beginKeywords: "extends",
         endsWithParent: true,
         illegal: /[:="\[\]]/,
-        contains: [a]
-      }, a]
+        contains: [o]
+      }, o]
     }, {
       className: "name",
       begin: n + ":",

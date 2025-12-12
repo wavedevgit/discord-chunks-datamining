@@ -51,22 +51,22 @@ function f(e) {
     app: t,
     guildId: s
   } = e;
-  (0, o.q)(t.id);
+  (0, a.q)(t.id);
   let c = i.useCallback(() => {
-    (0, a.ZDy)(async () => {
+    (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("77803"), n.e("65672")]).then(n.bind(n, 7225));
+      } = await Promise.all([n.e("77803"), n.e("42124")]).then(n.bind(n, 7225));
       return n => (0, r.jsx)(e, u({
         appId: t.id,
         guildId: s
       }, n))
     })
   }, [t, s]);
-  return (0, r.jsx)(a.Button, {
+  return (0, r.jsx)(o.Button, {
     size: "sm",
     onClick: c,
-    icon: a.QJP,
+    icon: o.QJP,
     text: l.intl.format(l.t.XDRjs5, {
       appName: t.name
     })

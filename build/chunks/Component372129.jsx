@@ -66,9 +66,9 @@ async function _(e, t) {
       let {
         image: e,
         dataURI: r
-      } = await p(i), a = i.type === c.m.MP4 ? await t(r, i) : await t(r, i, e);
-      null != a && n.push({
-        type: a,
+      } = await p(i), o = i.type === c.m.MP4 ? await t(r, i) : await t(r, i, e);
+      null != o && n.push({
+        type: o,
         filename: i.name
       })
     } catch (e) {
@@ -81,7 +81,7 @@ async function _(e, t) {
   n.length > 0 && m(n)
 }
 let m = e => {
-    (0, a.ZDy)(async () => {
+    (0, o.ZDy)(async () => {
       let {
         default: t
       } = await n.e("68720").then(n.bind(n, 70846));
@@ -106,15 +106,15 @@ let m = e => {
       y && v()
     }, [y]);
     let v = () => {
-        null !== b.current && ((0, a.Mr3)(b.current), b.current = null)
+        null !== b.current && ((0, o.Mr3)(b.current), b.current = null)
       },
       S = async e => {
         null == g || g(true), await _(e, l), O(true), null == g || g(false)
       }, I = async e => {
-        var t, i, o;
-        if (e.stopPropagation(), e.preventDefault(), (null == (t = e.currentTarget) ? true : t.files) == null || (null == (o = e.currentTarget) || null == (i = o.files) ? true : i.length) === 0) return;
+        var t, i, a;
+        if (e.stopPropagation(), e.preventDefault(), (null == (t = e.currentTarget) ? true : t.files) == null || (null == (a = e.currentTarget) || null == (i = a.files) ? true : i.length) === 0) return;
         let s = e.currentTarget.files;
-        b.current = await (0, a.ZDy)(async () => {
+        b.current = await (0, o.ZDy)(async () => {
           let {
             default: e
           } = await n.e("16169").then(n.bind(n, 935333));
@@ -123,7 +123,7 @@ let m = e => {
           }, t))
         })
       };
-    return (0, r.jsx)(o.Z, {
+    return (0, r.jsx)(a.Z, {
       ref: t,
       onChange: I,
       filters: null != h ? h : (0, s.Zj)(),

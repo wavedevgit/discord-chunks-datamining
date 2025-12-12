@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,17 +23,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk4434 = require("./4434.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk965688 = require("./965688.js");
+  Chunk252633 = require("./252633.js");
 let S = e => {
   let {
     guildBoostSlots: t,
     selectedGuild: n,
-    locationSection: a,
+    locationSection: o,
     intent: S,
     transitionState: I,
     onClose: T
   } = e, C = (0, m.vx)(p.Z.boostSlots);
-  o()(null != t || null != n, "Must either provide slots or an initial selected guild"), o()(!(null == t ? true : t.some(e => e.isOnCooldown())), "If slots are provided, they must not be on cooldown");
+  a()(null != t || null != n, "Must either provide slots or an initial selected guild"), a()(!(null == t ? true : t.some(e => e.isOnCooldown())), "If slots are provided, they must not be on cooldown");
   let A = [null == t ? "UNUSED_QUANTITY_SELECT" : null, null == n ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(e => null != e),
     [N, P] = (0, l.Wu)([d.Z], () => [d.Z.isModifyingAppliedBoost, d.Z.applyBoostError]),
     [R, w] = i.useState(A[0]),
@@ -52,10 +52,10 @@ let S = e => {
     }, [M]),
     Z = () => (T("SUCCESS" === R), _.default.track(y.rMx.MODAL_DISMISSED, {
       type: y.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
-      location_section: a
+      location_section: o
     }), Promise.resolve()),
     F = {
-      UNUSED_QUANTITY_SELECT: () => (o()(null != t || 0 !== C.length, "Cannot provide no slots if there are no other available slots"), (0, r.jsx)(s.Modal, {
+      UNUSED_QUANTITY_SELECT: () => (a()(null != t || 0 !== C.length, "Cannot provide no slots if there are no other available slots"), (0, r.jsx)(s.Modal, {
         transitionState: I,
         onClose: Z,
         size: "md",
@@ -105,9 +105,9 @@ let S = e => {
           t = M.length,
           n = U.length,
           i = "CONFIRM" === A[0] ? Z : () => w(A[A.indexOf(R) - 1]),
-          a = async () => {
+          o = async () => {
             if (x(false), null != L && (null == M ? true : M.length) !== 0) {
-              o()(!M.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
+              a()(!M.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
               try {
                 await Promise.all(M.map(e => {
                   let {
@@ -141,7 +141,7 @@ let S = e => {
             }) : O.intl.formatToPlainString(O.t.ZU5x5w, {
               slotCount: t
             }),
-            onClick: a,
+            onClick: o,
             loading: N,
             disabled: N
           }],
@@ -191,9 +191,9 @@ let S = e => {
   i.useEffect(() => {
     _.default.track(y.rMx.OPEN_MODAL, {
       type: y.jXE.PREMIUM_GUILD_SUBSCRIBE_MODAL,
-      location_section: a
+      location_section: o
     })
-  }, [a]);
+  }, [o]);
   let B = F[R];
   return null == B ? null : B()
 }

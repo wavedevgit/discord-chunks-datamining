@@ -2,11 +2,11 @@
 /** chunk id: 812967, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk663993 = require("./663993.js"),
   Chunk65856 = require("./65856.js");
-let a = async () => {
+let o = async () => {
   let {
     default: e
   } = await (0, Chunk663993.wE)({
@@ -14,4 +14,4 @@ let a = async () => {
     webpackId: 826753
   });
   return module
-}, o = new Chunk65856.Z(a)
+}, a = new Chunk65856.Z(o)

@@ -2,12 +2,12 @@
 /** chunk id: 941532, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  i: () => a
+  i: () => o
 });
 var Chunk589414 = require("./589414.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function o(e) {
   let t = (0, r.a)(e);
   if (null != e.privacy_policy_url && null != e.terms_of_service_url) {
     let n = t ? i.t.yVfotv : i.t.rxlyKL;

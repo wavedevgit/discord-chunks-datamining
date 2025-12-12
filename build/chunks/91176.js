@@ -4,12 +4,12 @@ require.d(exports, {
   Z: () => s
 });
 var Chunk913527 = require("./913527.js"),
-  a = require.n(Chunk913527),
+  i = require.n(Chunk913527),
   Chunk749210 = require("./749210.js");
 let s = {
   async setCommunicationDisabledDuration(t, n, e, l, s, r) {
-    let o = null != e ? a()().add(e, "s").toISOString() : null;
-    await i.Z.setCommunicationDisabledUntil({
+    let o = null != e ? i()().add(e, "s").toISOString() : null;
+    await a.Z.setCommunicationDisabledUntil({
       guildId: t,
       userId: n,
       communicationDisabledUntilTimestamp: o,

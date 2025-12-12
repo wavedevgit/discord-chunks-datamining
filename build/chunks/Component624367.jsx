@@ -24,11 +24,11 @@ function f(e) {
     message: _
   } = e, {
     analyticsLocations: m
-  } = (0, a.ZP)(i.Z.ACTIVITY_BOOKMARK), [h] = (0, l.Z)([t]), g = null != h && (0, o.ye)(h), {
+  } = (0, o.ZP)(i.Z.ACTIVITY_BOOKMARK), [h] = (0, l.Z)([t]), g = null != h && (0, a.ye)(h), {
     data: E,
     error: b
   } = (0, c.h)(null == h ? true : h.id, p);
-  return null == h || false === g ? null : null != p && null == b && null != E ? (0, r.jsx)(a.Gt, {
+  return null == h || false === g ? null : null != p && null == b && null != E ? (0, r.jsx)(o.Gt, {
     value: m,
     children: (0, r.jsx)(u.b, {
       application: h,
@@ -37,7 +37,7 @@ function f(e) {
       referrerId: f,
       message: _
     })
-  }) : (0, r.jsx)(a.Gt, {
+  }) : (0, r.jsx)(o.Gt, {
     value: m,
     children: (0, r.jsx)(s.O, {
       app: h,

@@ -53,7 +53,7 @@ let d = e => {
     displayProfile: s,
     location: c
   } = e;
-  null == c && (c = t[t.length - 1]), a.default.track(o.rMx.OPEN_MODAL, {
+  null == c && (c = t[t.length - 1]), o.default.track(a.rMx.OPEN_MODAL, {
     type: "Tiered Tenure Badge Details",
     location_stack: t,
     location: c,

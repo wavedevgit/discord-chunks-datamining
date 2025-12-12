@@ -1,4 +1,4 @@
-/** Chunk was on 93671 **/
+/** Chunk was on 74240 **/
 /** chunk id: 645264, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => j
@@ -18,8 +18,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk200305 = require("./200305.jsx"),
   Chunk592286 = require("./592286.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk161752 = require("./161752.js");
-let v = () => (0, Chunk54381.jsx)(Chunk796027.Z, {
+  Chunk445609 = require("./445609.js");
+let b = () => (0, Chunk54381.jsx)(Chunk796027.Z, {
     submitting: false,
     message: Chunk388032.intl.string(Chunk388032.t["8g514U"]),
     onReset: () => {
@@ -36,42 +36,42 @@ let v = () => (0, Chunk54381.jsx)(Chunk796027.Z, {
     let {
       transitionState: t,
       guildId: n,
-      onClose: s,
+      onClose: a,
       onComplete: c,
-      inviteKey: h,
-      isPreview: g = false
+      inviteKey: g,
+      isPreview: p = false
     } = e, j = (0, f.rb)(e => e.shouldShowWarning), {
       verificationForm: C,
-      hasFetched: O
-    } = (0, b.ng)(n, g, h), I = (0, d.Dt)();
+      hasFetched: _
+    } = (0, x.ng)(n, p, g), O = (0, d.Dt)();
     return (l.useEffect(() => {
-      O && C === m.t && s()
-    }, [O, s, C]), C === m.t) ? null : (0, r.jsxs)(r.Fragment, {
+      _ && C === m.t && a()
+    }, [_, a, C]), C === m.t) ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(i.IX, {
         transitionState: t,
-        "aria-labelledby": I,
+        "aria-labelledby": O,
         size: "xxl",
-        onClose: s,
+        onClose: a,
         children: [(0, r.jsx)("div", {
-          className: p.closeButton,
+          className: v.closeButton,
           children: (0, r.jsx)(o.PZ7, {
-            onClick: () => s(false)
+            onClick: () => a(false)
           })
         }), (0, r.jsx)("div", {
-          className: p.container,
-          children: (0, r.jsx)(x.Z, {
+          className: v.container,
+          children: (0, r.jsx)(h.Z, {
             verificationForm: C,
-            headerId: I,
+            headerId: O,
             guildId: n,
-            onClose: s,
+            onClose: a,
             onComplete: c,
-            isPreview: g
+            isPreview: p
           })
         })]
-      }), (0, r.jsx)(a.W, {
+      }), (0, r.jsx)(s.W, {
         children: true === j && (0, r.jsx)(u.oXn, {
-          className: p.notice,
-          children: (0, r.jsx)(v, {})
+          className: v.notice,
+          children: (0, r.jsx)(b, {})
         })
       })]
     })

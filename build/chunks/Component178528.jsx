@@ -36,7 +36,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk139901 = require("./139901.js");
+  Chunk613322 = require("./613322.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -137,39 +137,39 @@ class M extends Chunk473749.PureComponent {
       {
         onDragStart: r
       } = require,
-      a = function(e, t) {
+      s = function(e, t) {
         if (null == e) return {};
         var n, i, r = function(e, t) {
           if (null == e) return {};
           var n, i, r = {},
-            a = Object.keys(e);
-          for (i = 0; i < a.length; i++) n = a[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+            s = Object.keys(e);
+          for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
           return r
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var a = Object.getOwnPropertySymbols(e);
-          for (i = 0; i < a.length; i++) n = a[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+          var s = Object.getOwnPropertySymbols(e);
+          for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
         }
         return r
       }(require, ["onDragStart"]),
       {
-        guild: s
+        guild: o
       } = Chunk467721,
       {
-        controller: l,
+        controller: a,
         renderBanner: c,
         bannerVisible: d,
         communityInfoVisible: g
       } = this.state,
-      b = (null == Chunk442837 ? true : Chunk442837.id) === Chunk647086._ ? Chunk373274.j : Chunk373274.E;
+      m = (null == Chunk442837 ? true : Chunk442837.id) === Chunk647086._ ? Chunk373274.j : Chunk373274.E;
     return (0, Chunk54381.jsxs)(Chunk711553.Z, {
       header: null != Chunk442837 ? (0, Chunk54381.jsx)(Chunk315174.ZP, {
         guild: Chunk442837,
         controller: Chunk619915,
         renderBanner: Chunk554747,
         bannerVisible: Chunk598056,
-        className: Chunk139901.guildHeader,
-        headerClassName: Chunk139901.guildHeaderInner,
+        className: Chunk613322.guildHeader,
+        headerClassName: Chunk613322.guildHeaderInner,
         onMouseDown: Chunk473749,
         disableBannerAnimation: false,
         communityInfoVisible: Chunk905423,
@@ -179,13 +179,13 @@ class M extends Chunk473749.PureComponent {
           renderPopout: this.renderSettings,
           children: e => (0, i.jsx)(P.ZP.Icon, L({
             ref: this.settingsIconRef,
-            icon: o.ewm,
+            icon: l.ewm,
             label: k.intl.string(k.t["3D5yo/"])
           }, e))
         })
       }) : null,
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk139901.channelList,
+        className: Chunk613322.channelList,
         children: null != Chunk442837 ? (0, Chunk54381.jsx)(Chunk680089, (e = L({}, Chunk467721), t = t = {
           guild: Chunk442837,
           disableManageChannels: true,
@@ -203,7 +203,7 @@ class M extends Chunk473749.PureComponent {
           withBannerPadding: false
         })
       }), null != Chunk442837 && (0, Chunk54381.jsx)("section", {
-        className: Chunk139901.panels,
+        className: Chunk613322.panels,
         "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWK),
         children: (0, Chunk54381.jsx)(Chunk840780.Z, {
           guildId: Chunk442837.id
@@ -213,7 +213,7 @@ class M extends Chunk473749.PureComponent {
   }
   constructor(...e) {
     super(...e), A(this, "settingsIconRef", r.createRef()), A(this, "state", {
-      controller: new a.Controller({
+      controller: new s.Controller({
         value: 1,
         immediate: true
       }),
@@ -233,33 +233,33 @@ function z(e) {
   var t;
   let {
     guildId: n
-  } = e, r = (0, s.e7)([x.Z], () => x.Z.getGuild(n)), a = (0, s.e7)([O.ZP], () => O.ZP.getChannels(n)), o = (0, s.e7)([v.Z], () => v.Z.getCategories(n)), {
+  } = e, r = (0, o.e7)([E.Z], () => E.Z.getGuild(n)), s = (0, o.e7)([b.ZP], () => b.ZP.getChannels(n)), l = (0, o.e7)([v.Z], () => v.Z.getCategories(n)), {
     mutedChannels: d,
     collapseMuted: u
-  } = (0, s.cj)([C.ZP], () => ({
+  } = (0, o.cj)([C.ZP], () => ({
     mutedChannels: C.ZP.getMutedChannels(n),
     collapseMuted: C.ZP.isGuildCollapsed(n)
-  })), f = (0, s.e7)([I.ZP], () => I.ZP.getVoiceStates(n)), h = (0, s.e7)([m.Z], () => m.Z.getCollapsed()), {
-    scrollTo: p
-  } = (0, s.e7)([y.Z], () => y.Z.getGuildDimensions(n)), P = (0, g.Z)(e => {
+  })), h = (0, o.e7)([I.ZP], () => I.ZP.getVoiceStates(n)), p = (0, o.e7)([_.Z], () => _.Z.getCollapsed()), {
+    scrollTo: f
+  } = (0, o.e7)([y.Z], () => y.Z.getGuildDimensions(n)), P = (0, g.Z)(e => {
     let {
       channelId: t
     } = e;
     return t
-  }), w = (0, s.e7)([j.Z], () => j.Z.getVoiceChannelId()), N = (0, s.e7)([S.Z], () => S.Z.getGuildVersion(n)), D = (0, s.e7)([b.Z], () => b.Z.version), k = (0, s.e7)([E.default], () => E.default.getGuildChangeSentinel(n)), R = (0, l.QN)(null == r ? true : r.id), A = (0, c.gM)(null == r ? true : r.id), L = null != (t = null == r ? true : r.features.has(T.GuildFeatures.COMMUNITY)) && t, z = (0, s.e7)([Z.Z], () => Z.Z.getChannelId()), V = (0, s.e7)([_.Z], () => _.Z.desyncedVoiceStatesCount);
+  }), w = (0, o.e7)([j.Z], () => j.Z.getVoiceChannelId()), N = (0, o.e7)([x.Z], () => x.Z.getGuildVersion(n)), D = (0, o.e7)([m.Z], () => m.Z.version), k = (0, o.e7)([O.default], () => O.default.getGuildChangeSentinel(n)), R = (0, a.QN)(null == r ? true : r.id), A = (0, c.gM)(null == r ? true : r.id), L = null != (t = null == r ? true : r.features.has(T.GuildFeatures.COMMUNITY)) && t, z = (0, o.e7)([Z.Z], () => Z.Z.getChannelId()), V = (0, o.e7)([S.Z], () => S.Z.desyncedVoiceStatesCount);
   return (0, i.jsx)(M, {
     guildId: n,
     guild: r,
-    channels: a,
-    categories: o,
+    channels: s,
+    categories: l,
     mutedChannels: d,
-    scrollToChannel: p,
+    scrollToChannel: f,
     selectedChannelId: P,
     selectedVoiceChannelId: w,
-    voiceStates: f,
+    voiceStates: h,
     rtcConnectedChannelId: z,
     rtcDesyncedVoiceStatesCount: V,
-    collapsedChannels: h,
+    collapsedChannels: p,
     collapseMuted: u,
     guildReadStateSentinel: k,
     permissionVersion: N,

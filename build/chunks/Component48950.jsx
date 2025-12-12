@@ -7,23 +7,23 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk486547 = require("./486547.js");
+  Chunk689730 = require("./689730.js");
 let d = Chunk473749.forwardRef(function(e, t) {
   let {
     className: n,
     src: i,
-    unicodeEmoji: a,
+    unicodeEmoji: o,
     name: d,
     size: f = 20,
     enableTooltip: p = true,
     enableHeight: _ = true,
     onClick: m
   } = e;
-  if (null == i && null == a) return null;
+  if (null == i && null == o) return null;
   let h = () => {
     let e = (0, r.jsx)("img", {
       ref: t,
@@ -31,22 +31,22 @@ let d = Chunk473749.forwardRef(function(e, t) {
       "aria-label": c.intl.formatToPlainString(c.t["9+YWrE"], {
         name: d
       }),
-      className: o()(u.roleIcon, n, {
+      className: a()(u.roleIcon, n, {
         [u.clickable]: null != m
       }),
       height: _ ? f : true,
       src: i,
       width: f
     });
-    return (null != a && (e = (0, r.jsx)("img", {
+    return (null != o && (e = (0, r.jsx)("img", {
       ref: t,
       alt: "",
-      "aria-label": a.allNamesString,
-      className: o()(u.roleIcon, n, {
+      "aria-label": o.allNamesString,
+      className: a()(u.roleIcon, n, {
         [u.clickable]: null != m
       }),
       height: _ ? f : true,
-      src: a.url,
+      src: o.url,
       width: f
     })), null == m) ? (0, r.jsx)(l.tEY, {
       offset: {

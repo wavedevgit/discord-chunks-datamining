@@ -2,13 +2,13 @@
 /** chunk id: 574176, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  bN: () => o,
+  bN: () => a,
   gx: () => s,
-  n5: () => a
+  n5: () => o
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "guild",
   id: "2025-07_hang_status",
   label: "Hang Statuses",
@@ -63,12 +63,12 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     guildId: t,
     location: n
   } = e;
-  return a.useExperiment({
+  return o.useExperiment({
     guildId: t,
     location: n
   }, {
@@ -81,7 +81,7 @@ function s(e) {
     guildId: t,
     location: n
   } = e;
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     guildId: t,
     location: n
   }, {

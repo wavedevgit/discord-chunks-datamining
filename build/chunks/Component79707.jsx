@@ -1,4 +1,4 @@
-/** Chunk was on 92504 **/
+/** Chunk was on 69844 **/
 /** chunk id: 79707, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -15,22 +15,22 @@ function l(e) {
     onTabSelect: l,
     onClose: s
   } = e;
-  return (0, a.jsx)(r.v2r, {
+  return (0, r.jsx)(i.v2r, {
     navId: "global-discovery-tabs-overflow-menu",
-    "aria-label": i.intl.string(i.t.riPnr0),
+    "aria-label": a.intl.string(a.t.riPnr0),
     hideScroller: true,
     onClose: s,
     onSelect: s,
-    children: (0, a.jsx)(r.kSQ, {
+    children: (0, r.jsx)(i.kSQ, {
       children: t.map(e => {
         let {
           id: t,
-          label: i
+          label: a
         } = e;
-        return (0, a.jsx)(r.sNh, {
+        return (0, r.jsx)(i.sNh, {
           id: t,
-          label: i,
-          icon: t === n ? r.owK : true,
+          label: a,
+          icon: t === n ? i.owK : true,
           action: () => l(t)
         }, t)
       })

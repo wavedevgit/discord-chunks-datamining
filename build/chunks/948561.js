@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk952639 = require("./952639.js"),
   i = require.n(Chunk952639),
   Chunk605906 = require("./605906.js"),
-  o = require.n(Chunk605906),
+  a = require.n(Chunk605906),
   Chunk286379 = require("./286379.js"),
   Chunk570140 = require("./570140.js"),
   Chunk147913 = require("./147913.js"),
@@ -77,11 +77,11 @@ function U(e, t, n) {
     var r, i;
     let t = null != (r = e.attachments) ? r : [],
       n = null != (i = e.embeds) ? i : [],
-      a = t.filter(e => (0, C.SI)(T._.EXPLICIT, {
+      o = t.filter(e => (0, C.SI)(T._.EXPLICIT, {
         type: v.l.Attachment,
         media: e
       })),
-      o = n.filter(e => (0, C.SI)(T._.EXPLICIT, {
+      a = n.filter(e => (0, C.SI)(T._.EXPLICIT, {
         type: v.l.Embed,
         media: e
       }));
@@ -90,8 +90,8 @@ function U(e, t, n) {
       channelId: e.channel_id,
       numOfAttachments: t.length,
       numOfEmbeds: n.length,
-      numOfExplicitAttachments: a.length,
-      numOfExplicitEmbeds: o.length
+      numOfExplicitAttachments: o.length,
+      numOfExplicitEmbeds: a.length
     })
   }(0, S.OP)(n, t)
 }
@@ -145,17 +145,17 @@ function B(e, t) {
       }, D)
     })
   });
-  let a = n || new Set(i.map(e => e.channel_id)).size > 1;
+  let o = n || new Set(i.map(e => e.channel_id)).size > 1;
   r ? setTimeout(() => {
-    Z(i.filter(e => null != L[j(e)]), a)
-  }, Math.random() * x) : Z(i, a)
+    Z(i.filter(e => null != L[j(e)]), o)
+  }, Math.random() * x) : Z(i, o)
 }
 
 function V(e) {
   let t = {},
     n = {};
   return e.forEach(e => {
-    var r, i, a, o, s, l, c, u, d, f, p, _, m, h, g, E;
+    var r, i, o, a, s, l, c, u, d, f, p, _, m, h, g, E;
     null == t[e.channel_id] && (t[e.channel_id] = {
       numOfAttachments: 0,
       numOfAttachmentsPendingScan: 0,
@@ -181,10 +181,10 @@ function V(e) {
       I = t[e.channel_id];
     I.numOfAttachments += b, I.numOfEmbeds += y, I.numOfAttachmentsPendingScan += O.length, I.numOfEmbedsPendingScan += S.length;
     let A = n[e.id];
-    A.numOfAttachments += b, A.numOfEmbeds += y, A.numOfExplicitAttachments = null != (p = null == (a = e.attachments) ? true : a.filter(e => (0, C.SI)(T._.EXPLICIT, {
+    A.numOfAttachments += b, A.numOfEmbeds += y, A.numOfExplicitAttachments = null != (p = null == (o = e.attachments) ? true : o.filter(e => (0, C.SI)(T._.EXPLICIT, {
       type: v.l.Attachment,
       media: e
-    })).length) ? p : 0, A.numOfExplicitEmbeds = null != (_ = null == (o = e.embeds) ? true : o.filter(e => (0, C.SI)(T._.EXPLICIT, {
+    })).length) ? p : 0, A.numOfExplicitEmbeds = null != (_ = null == (a = e.embeds) ? true : a.filter(e => (0, C.SI)(T._.EXPLICIT, {
       type: v.l.Embed,
       media: e
     })).length) ? _ : 0, A.numOfGoreAttachments = null != (m = null == (s = e.attachments) ? true : s.filter(e => (0, C.SI)(T._.GORE, {
@@ -219,11 +219,11 @@ function H(e) {
       if (null != e && "referenced_message" in e && null != e.referenced_message && (0, y.t)(e.referenced_message) && 0 !== (0, C.rb)(e.referenced_message)) return e.referenced_message
     }).filter(t);
   r.length > 0 && (n = [...n, ...r]);
-  let i = o()(n, (e, t) => e.id === t.id && e.channel_id === t.channel_id),
-    a = i.filter(e => (0, C.MD)(e)),
+  let i = a()(n, (e, t) => e.id === t.id && e.channel_id === t.channel_id),
+    o = i.filter(e => (0, C.MD)(e)),
     s = V(i);
   return {
-    messagesPendingScan: a,
+    messagesPendingScan: o,
     attributesByMessageId: s.messageLookup,
     attributesByChannelId: s.channelLookup
   }
@@ -241,11 +241,11 @@ function Y(e) {
       }
     }).filter(t);
   r.length > 0 && (n = [...n, ...r]);
-  let i = o()(n, (e, t) => e.id === t.id && e.channel_id === t.channel_id),
-    a = i.filter(e => (0, C.MD)(e)),
+  let i = a()(n, (e, t) => e.id === t.id && e.channel_id === t.channel_id),
+    o = i.filter(e => (0, C.MD)(e)),
     s = V(i);
   return {
-    messagesPendingScan: a,
+    messagesPendingScan: o,
     attributesByChannelId: s.channelLookup,
     attributesByMessageId: s.messageLookup
   }
@@ -316,13 +316,13 @@ function K(e) {
 }
 
 function z(e) {
-  var t, n, r, i, a, o;
+  var t, n, r, i, o, a;
   let {
     message: s
   } = e;
   if (null == s.channel_id || null == s.id || (null == (t = s.author) ? true : t.id) === p.default.getId() || null == s.embeds && null == s.attachments && !(0, S.M0)(s) || (null == (n = s.embeds) ? true : n.length) === 0 && (null == (r = s.attachments) ? true : r.length) === 0 && !(0, S.M0)(s)) returnfalse;
   if (!(0, C.MD)(s)) {
-    let e = null != (o = null != (a = h.Z.getMessage(s.channel_id, s.id)) ? a : I.Z.getMessage(s.id, s.channel_id)) ? o : null == (i = f.Z.getMessage(s.channel_id, s.id)) ? true : i.message;
+    let e = null != (a = null != (o = h.Z.getMessage(s.channel_id, s.id)) ? o : I.Z.getMessage(s.id, s.channel_id)) ? a : null == (i = f.Z.getMessage(s.channel_id, s.id)) ? true : i.message;
     null == e || (0, C.MD)((0, u.wi)(e, s)) || k(e, S.Pq.UPDATE)
   }
   let l = g.Z.getChannelId(),
@@ -339,10 +339,10 @@ function q(e) {
   let {
     channelId: r,
     message: i,
-    optimistic: a,
-    isPushNotification: o
+    optimistic: o,
+    isPushNotification: a
   } = e;
-  if (a || o || null == r || (null == (t = i.author) ? true : t.id) === p.default.getId()) returnfalse;
+  if (o || a || null == r || (null == (t = i.author) ? true : t.id) === p.default.getId()) returnfalse;
   let s = g.Z.getChannelId(),
     l = _.ZP.getCurrentSidebarChannelId(s),
     c = r === s || r === l,
@@ -374,7 +374,7 @@ function X(e) {
     let {
       messages: t
     } = e, r = i()(t);
-    n = W(o()(r, (e, t) => e.id === t.id && e.channel_id === t.channel_id)) || n
+    n = W(a()(r, (e, t) => e.id === t.id && e.channel_id === t.channel_id)) || n
   }), n
 }
 
@@ -412,14 +412,14 @@ function et(e) {
   let {
     channelId: t
   } = e;
-  return null != t && ea(t)
+  return null != t && eo(t)
 }
 
 function en(e) {
   let {
     channelId: t
   } = e;
-  return (0, N.U)(), null != t && t === g.Z.getChannelId() && ea(t)
+  return (0, N.U)(), null != t && t === g.Z.getChannelId() && eo(t)
 }
 
 function er(e) {
@@ -429,7 +429,7 @@ function er(e) {
   } = e;
   if (!n || t.type !== R.yP.PRELOADED_USER_SETTINGS) returnfalse;
   let r = g.Z.getChannelId();
-  return null != r && ea(r)
+  return null != r && eo(r)
 }
 
 function ei(e) {
@@ -437,14 +437,14 @@ function ei(e) {
     channelId: t,
     chatOpen: n
   } = e;
-  return !!n && ea(t)
+  return !!n && eo(t)
 }
 
-function ea(e) {
+function eo(e) {
   let t = h.Z.getMessages(e);
   return 0 !== t.length && K(t)
 }
-class eo extends Chunk147913.Z {
+class ea extends Chunk147913.Z {
   constructor(...e) {
     super(...e), w(this, "actions", {
       LOAD_MESSAGES_SUCCESS: Q,
@@ -464,4 +464,4 @@ class eo extends Chunk147913.Z {
     })
   }
 }
-let es = new eo
+let es = new ea

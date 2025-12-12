@@ -7,7 +7,7 @@ require.d(exports, {
   Mf: () => u,
   Or: () => i,
   Wv: () => s,
-  j1: () => a,
+  j1: () => o,
   ko: () => c
 }), require("./35282.js"), require("./473749.js");
 let r = ["gif", "webp", "png", "apng"];
@@ -16,13 +16,13 @@ function i(e) {
   return "type" in e && "image" === e.type && "string" == typeof e.src
 }
 
-function a(e) {
+function o(e) {
   let t = e.toLowerCase().split(".").pop();
   return null != t && r.includes(t)
 }
 
-function o(e) {
-  return !!i(e) && null != e.src && a(e.src)
+function a(e) {
+  return !!i(e) && null != e.src && o(e.src)
 }
 
 function s(e) {
@@ -42,5 +42,5 @@ function u(e) {
 }
 
 function d(e) {
-  return null != e && (o(e) || s(e) || l(e) || c(e))
+  return null != e && (a(e) || s(e) || l(e) || c(e))
 }

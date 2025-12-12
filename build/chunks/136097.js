@@ -7,7 +7,7 @@ require.d(exports, {
 }), require("./388685.js"), require("./642613.js");
 var Chunk473749 = require("./473749.js"),
   Chunk913527 = require("./913527.js"),
-  a = require.n(Chunk913527),
+  o = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk314897 = require("./314897.js"),
   Chunk673096 = require("./673096.js"),
@@ -31,5 +31,5 @@ function u() {
 }
 
 function d(e) {
-  return (Date.now() - e.valueOf()) / 1e3 / 60 / 60 < 1 ? c.intl.string(c.t.TXCmfL) : a()(e).fromNow()
+  return (Date.now() - e.valueOf()) / 1e3 / 60 / 60 < 1 ? c.intl.string(c.t.TXCmfL) : o()(e).fromNow()
 }

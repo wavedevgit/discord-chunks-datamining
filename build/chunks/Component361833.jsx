@@ -21,13 +21,13 @@ function A(t) {
     onBack: d,
     onNext: C,
     transitionState: x
-  } = t, [N, S] = r.useState(""), [f, g] = r.useState(""), [p, m] = r.useState(false), v = (0, i.e7)([o.Z], () => o.Z.getErrors()), h = r.useRef(null);
+  } = t, [N, S] = r.useState(""), [g, p] = r.useState(""), [f, m] = r.useState(false), v = (0, i.e7)([o.Z], () => o.Z.getErrors()), h = r.useRef(null);
   async function y(t) {
     t.preventDefault(), m(true);
     let n = await (0, s.Mn)({
       email: N,
       emailToken: A,
-      password: f
+      password: g
     });
     if (m(false), null == n ? true : n.ok) C(N);
     else {
@@ -58,7 +58,7 @@ function A(t) {
     }, {
       variant: "primary",
       text: u.intl.string(u.t.i4jeWR),
-      loading: p,
+      loading: f,
       onClick: y
     }],
     children: (0, a.jsxs)(l.Kqy, {
@@ -74,8 +74,8 @@ function A(t) {
         label: u.intl.string(u.t.TmdnJ3),
         error: null == v || null == (e = v.password) ? true : e[0],
         type: "password",
-        value: f,
-        onChange: g
+        value: g,
+        onChange: p
       })]
     })
   })

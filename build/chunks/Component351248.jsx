@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 351248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,9 +16,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk451478 = require("./451478.js"),
   Chunk584511 = require("./584511.jsx"),
   Chunk354459 = require("./354459.js"),
-  Chunk159310 = require("./159310.js"),
-  Chunk727829 = require("./727829.js"),
-  Chunk982681 = require("./982681.js");
+  Chunk907894 = require("./907894.js"),
+  Chunk149715 = require("./149715.js"),
+  Chunk162130 = require("./162130.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -36,7 +36,7 @@ let v = {
   EASING_IN: Chunk748780.Z.Easing.inOut(Chunk748780.Z.Easing.back()),
   EASING_OUT: Chunk748780.Z.Easing.quad
 };
-class O extends Chunk473749.PureComponent {
+class _ extends Chunk473749.PureComponent {
   componentDidMount() {
     this.componentDidAppear()
   }
@@ -120,16 +120,16 @@ class O extends Chunk473749.PureComponent {
       theme: e,
       children: t,
       className: n
-    } = this.props, r = (0, Chunk780384.wj)(module), l = a()(Chunk159310.sprite, {
-      [Chunk982681.crossWhite]: Chunk473749,
-      [Chunk982681.crossGrey]: !Chunk473749
+    } = this.props, r = (0, Chunk780384.wj)(module), l = a()(Chunk907894.sprite, {
+      [Chunk162130.crossWhite]: Chunk473749,
+      [Chunk162130.crossGrey]: !Chunk473749
     });
     return (0, Chunk54381.jsxs)(Chunk748780.Z.div, {
       role: "listitem",
-      className: a()(Chunk159310.transition, require),
+      className: a()(Chunk907894.transition, require),
       style: this.getWidthStyle(),
       children: [(0, Chunk54381.jsx)("div", {
-        className: a()(Chunk159310.spriteWrapper, Chunk727829.horizontal, Chunk727829.justifyCenter, Chunk727829.alignCenter),
+        className: a()(Chunk907894.spriteWrapper, Chunk149715.horizontal, Chunk149715.justifyCenter, Chunk149715.alignCenter),
         children: (0, Chunk54381.jsx)(Chunk748780.Z.div, {
           className: Chunk120356,
           style: this.getSpriteStyle()
@@ -145,7 +145,7 @@ class O extends Chunk473749.PureComponent {
   }
 }
 
-function x(e) {
+function O(e) {
   var t;
   let {
     participants: n,
@@ -154,7 +154,7 @@ function x(e) {
     onClick: o,
     width: u,
     guildId: b
-  } = e, C = (0, p.ZP)(), y = (t = n.length, ((0, d.dcp)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), v = (0, s.e7)([f.Z], () => f.Z.isFocused()), x = n.map(e => {
+  } = e, C = (0, p.ZP)(), y = (t = n.length, ((0, d.dcp)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), v = (0, s.e7)([h.Z], () => h.Z.isFocused()), O = n.map(e => {
     var t, n;
     if (e.type !== m.fO.USER) return null;
     let {
@@ -165,7 +165,7 @@ function x(e) {
       latched: u,
       ringing: p
     } = e;
-    return (0, i.jsx)(O, {
+    return (0, i.jsx)(_, {
       className: g.participant,
       width: (0, d.dcp)(y),
       theme: C,
@@ -173,7 +173,7 @@ function x(e) {
         "aria-label": l.username,
         onClick: t => null == o ? true : o(e, t),
         onContextMenu: t => null == r ? true : r(e, t),
-        children: (0, i.jsx)(h.Z, {
+        children: (0, i.jsx)(f.Z, {
           userId: l.id,
           src: l.getAvatarURL(b, (0, d.dcp)(y), s && v),
           size: y,
@@ -191,6 +191,6 @@ function x(e) {
     component: "div",
     role: "list",
     className: a()(g.root, l),
-    children: x
+    children: O
   })
 }

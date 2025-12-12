@@ -2,7 +2,7 @@
 /** chunk id: 252982, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk81825 = require("./81825.js");
 
@@ -15,7 +15,7 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -27,30 +27,30 @@ function a(e) {
   }
   return e
 }
-class o extends Chunk81825.Z {
+class a extends Chunk81825.Z {
   constructor(e) {
     var t, n;
     super(), i(this, "id", true), i(this, "layoutId", true), i(this, "type", true), i(this, "anchor", true), i(this, "size", true), i(this, "minSize", true), i(this, "pinned", true), i(this, "showExtrasHintTimestamp", true), i(this, "zIndex", true), i(this, "opacity", true), i(this, "meta", true), this.id = e.id || "", this.layoutId = e.layoutId || "", this.type = e.type;
     let {
       top: r,
-      left: o,
+      left: a,
       bottom: s,
       right: l
     } = null != (t = e.anchor) ? t : {
       top: 0,
       left: 0
     };
-    "number" == typeof s ? r = true : s = true, "number" == typeof l ? o = true : l = true, this.anchor = {
+    "number" == typeof s ? r = true : s = true, "number" == typeof l ? a = true : l = true, this.anchor = {
       top: r,
-      left: o,
+      left: a,
       bottom: s,
       right: l
-    }, this.size = a({
+    }, this.size = o({
       width: 0,
       height: 0
-    }, e.size), this.minSize = a({
+    }, e.size), this.minSize = o({
       width: true,
       height: true
-    }, e.minSize), this.pinned = !!e.pinned, this.zIndex = e.zIndex || 0, this.opacity = null != (n = e.opacity) ? n : 1, this.meta = a({}, e.meta), null != e.showExtrasHintTimestamp && (this.showExtrasHintTimestamp = e.showExtrasHintTimestamp)
+    }, e.minSize), this.pinned = !!e.pinned, this.zIndex = e.zIndex || 0, this.opacity = null != (n = e.opacity) ? n : 1, this.meta = o({}, e.meta), null != e.showExtrasHintTimestamp && (this.showExtrasHintTimestamp = e.showExtrasHintTimestamp)
   }
 }

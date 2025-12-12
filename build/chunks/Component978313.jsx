@@ -15,21 +15,21 @@ var Chunk54381 = require("./54381.js"),
   Chunk810568 = require("./810568.js"),
   Chunk221370 = require("./221370.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk452379 = require("./452379.js"),
-  Chunk772770 = require("./772770.js");
+  Chunk226788 = require("./226788.js"),
+  Chunk802318 = require("./802318.js");
 
 function v(e) {
   let {
     detectedGame: t,
     trackAction: n
-  } = e, [r, v] = i.useState((null == t ? true : t.summaryLocalized) != null), [h, j] = i.useState(true), [b, I] = i.useState(false), O = i.useRef(null), {
-    width: y,
-    height: P
+  } = e, [r, v] = i.useState((null == t ? true : t.summaryLocalized) != null), [h, j] = i.useState(true), [b, _] = i.useState(false), I = i.useRef(null), {
+    width: O,
+    height: y
   } = (0, u.Z)();
   return (i.useEffect(() => {
-    let e = O.current;
-    null != e && I(e.scrollHeight - e.clientHeight > 1 || !h)
-  }, [O, y, P, h]), null == t.summary) ? null : (0, a.jsxs)("div", {
+    let e = I.current;
+    null != e && _(e.scrollHeight - e.clientHeight > 1 || !h)
+  }, [I, O, y, h]), null == t.summary) ? null : (0, a.jsxs)("div", {
     className: l()(p.column, p.gapMd),
     children: [null != t.summaryLocalized && (0, a.jsxs)("div", {
       className: l()(p.row, p.gapSm),
@@ -39,14 +39,14 @@ function v(e) {
       }), (0, a.jsx)(s.xvT, {
         variant: "text-xs/medium",
         color: "text-default",
-        children: r ? g.intl.format(g.t.aZ2iIp, {
+        children: r ? f.intl.format(f.t.aZ2iIp, {
           onShowOriginal: () => v(false)
-        }) : g.intl.format(g.t["/2ylF4"], {
+        }) : f.intl.format(f.t["/2ylF4"], {
           onShowTranslated: () => v(true)
         })
       })]
     }), (0, a.jsx)(s.xvT, {
-      ref: O,
+      ref: I,
       lineClamp: h ? 8 : true,
       variant: "text-sm/normal",
       children: r ? t.summaryLocalized : t.summary
@@ -57,9 +57,9 @@ function v(e) {
       },
       children: (0, a.jsx)(s.xvT, {
         variant: "text-sm/semibold",
-        children: h ? g.intl.string(g.t.lBeKY2) : g.intl.string(g.t["6MwJo/"])
+        children: h ? f.intl.string(f.t.lBeKY2) : f.intl.string(f.t["6MwJo/"])
       })
-    }), (0, a.jsx)(f.Z, {
+    }), (0, a.jsx)(g.Z, {
       className: x.platforms,
       detectedGame: t
     })]

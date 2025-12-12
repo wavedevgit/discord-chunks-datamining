@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk391110 = require("./391110.js"),
-  Chunk170171 = require("./170171.js");
+  Chunk424373 = require("./424373.js");
 let s = {
     subtitle: {
       onlyShowOnHover: false
     },
     description: {
       onlyShowOnHover: true,
-      className: Chunk170171.cardDescription
+      className: Chunk424373.cardDescription
     },
     descriptionCta: {
       onlyShowOnHover: true
@@ -23,39 +23,39 @@ let s = {
   l = e => {
     let t = !(0, r.e7)([i.Z], () => i.Z.useReducedMotion),
       n = {
-        [a.zW.DEFAULT]: s,
-        [a.zW.REWARD]: {
+        [o.zW.DEFAULT]: s,
+        [o.zW.REWARD]: {
           subtitle: {
             onlyShowOnHover: true,
             textVariant: "text-sm/semibold"
           },
           description: {
             onlyShowOnHover: true,
-            className: o.cardDescriptionTenureReward
+            className: a.cardDescriptionTenureReward
           },
           descriptionCta: {
             onlyShowOnHover: false,
             hideOnHoverComponent: true,
-            className: o.descriptionCTATenureReward
+            className: a.descriptionCTATenureReward
           },
           cardContainer: {
-            className: t ? o.nitroGradientBorderHover : true
+            className: t ? a.nitroGradientBorderHover : true
           }
         },
-        [a.zW.PROMOTION_REDEMPTION]: {
+        [o.zW.PROMOTION_REDEMPTION]: {
           cardContainer: {
-            className: o.nitroGradientBorderHover
+            className: a.nitroGradientBorderHover
           },
           perkImage: {
             disableHoverAnimation: true,
-            className: o.promotionRedemptionImage
+            className: a.promotionRedemptionImage
           }
         },
-        [a.zW.NITRO_GRADIENT_HOVER_BORDER]: {
+        [o.zW.NITRO_GRADIENT_HOVER_BORDER]: {
           cardContainer: {
-            className: o.nitroGradientBorderHover
+            className: a.nitroGradientBorderHover
           }
         }
       };
-    return null != e ? n[e] : n[a.zW.DEFAULT]
+    return null != e ? n[e] : n[o.zW.DEFAULT]
   }

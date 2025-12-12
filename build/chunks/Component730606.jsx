@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk991621 = require("./991621.js"),
   Chunk936141 = require("./936141.js"),
@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk549635 = require("./549635.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk107390 = require("./107390.js");
+  Chunk810348 = require("./810348.js");
 
 function A(e) {
   let {
@@ -37,9 +37,9 @@ function A(e) {
     width: n,
     height: r,
     hasMultiple: i = false,
-    options: a
+    options: o
   } = e, {
-    width: o,
+    width: a,
     height: s
   } = (0, b.p)(i, {
     width: n,
@@ -48,12 +48,12 @@ function A(e) {
   f.ZP.preloadImage({
     src: t,
     dimensions: {
-      maxWidth: o,
+      maxWidth: a,
       maxHeight: s,
       imageWidth: n,
       imageHeight: r
     },
-    options: a
+    options: o
   })
 }
 
@@ -65,7 +65,7 @@ function P(e) {
   let {
     children: t,
     isObscured: n,
-    src: a
+    src: o
   } = e, [s, l] = i.useState(false), u = i.useCallback(() => {
     l(e => !e)
   }, []);
@@ -78,12 +78,12 @@ function P(e) {
       isSingleMosaicItem: true,
       onToggleObscurity: u,
       children: e => (0, r.jsx)("div", {
-        className: o()(C.obscureWrapper, {
+        className: a()(C.obscureWrapper, {
           [C.obscure]: e
         }),
         children: t(e)
       })
-    }, a)
+    }, o)
   }) : (0, r.jsx)(r.Fragment, {
     children: t(false)
   })
@@ -109,10 +109,10 @@ function w(e) {
   let {
     items: t,
     onIndexChange: n,
-    startIndex: a = 0,
+    startIndex: o = 0,
     enabledContentHarmTypeFlags: c = 0,
     shouldHideMediaOptions: d = false
-  } = e, [f, p] = i.useState(a), _ = i.useRef(a), {
+  } = e, [f, p] = i.useState(o), _ = i.useRef(o), {
     zoomed: h,
     setZoomed: A
   } = (0, E.Y)(), R = i.useCallback(e => {
@@ -143,14 +143,14 @@ function w(e) {
           },
           icon: s.j9r,
           tooltip: T.intl.string(T.t.vgfxaA),
-          className: o()(C.navPrev, e)
+          className: a()(C.navPrev, e)
         }), (0, r.jsx)(v.Z, {
           onClick: e => {
             e.stopPropagation(), m.S.dispatch(I.CkL.MODAL_CAROUSEL_NEXT)
           },
           icon: s.d4D,
           tooltip: T.intl.string(T.t.XiOHRX),
-          className: o()(C.navNext, e)
+          className: a()(C.navNext, e)
         })]
       }) : true
     }), (0, r.jsx)(b.Z, {

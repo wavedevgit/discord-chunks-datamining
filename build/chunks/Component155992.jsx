@@ -71,13 +71,13 @@ let T = e => {
       applicationId: r
     } = e, {
       analyticsLocations: l
-    } = (0, p.ZP)(f.Z.PAYMENT_FLOW_TEST_PAGE), c = i.useRef(null), d = i.useRef(null), [_, m] = i.useState(() => (0, a.Z)());
+    } = (0, p.ZP)(f.Z.PAYMENT_FLOW_TEST_PAGE), c = i.useRef(null), d = i.useRef(null), [_, m] = i.useState(() => (0, o.Z)());
     i.useEffect(() => {
-      (c.current !== t || d.current !== n) && (m((0, a.Z)()), c.current = t, d.current = n)
+      (c.current !== t || d.current !== n) && (m((0, o.Z)()), c.current = t, d.current = n)
     }, [t, n]);
     let [h, g] = (0, s.Wu)([b.Z], () => [b.Z.isFetching(t), b.Z.get(t)]);
     return i.useEffect(() => {
-      null != g || h || (0, u.$N)(r, t, o.v.VARIANTS_GROUP).catch(e => {})
+      null != g || h || (0, u.$N)(r, t, a.v.VARIANTS_GROUP).catch(e => {})
     }, [r, t, g, h]), {
       loadId: _,
       analyticsLocations: l,
@@ -124,8 +124,8 @@ let T = e => {
       analyticsLocations: t,
       applicationId: n,
       skuId: i,
-      isGift: a,
-      onClose: o,
+      isGift: o,
+      onClose: a,
       onComplete: s,
       initialPlanId: c,
       purchaseType: u,
@@ -141,22 +141,22 @@ let T = e => {
       purchaseError: null
     }, S) : v({}, S);
     O && (T.disablePurchasesForStorybook = true);
-    let C = "".concat(i, "-").concat(a, "-").concat(f);
+    let C = "".concat(i, "-").concat(o, "-").concat(f);
     return (0, r.jsx)(m.PaymentContextProvider, {
       stepConfigs: d,
       applicationId: n,
       skuIDs: null != i ? [i] : [],
-      isGift: a,
+      isGift: o,
       activeSubscription: null,
       purchaseType: u,
       excludeSubscriptionPlansBySKU: p,
       children: (0, r.jsx)(y.$, I(v({}, T), {
         children: (0, r.jsx)(h.c1, {
           children: (0, r.jsx)(_.KB, {
-            isGift: a,
+            isGift: o,
             children: (0, r.jsx)(g.PaymentModal, {
               transitionState: l.Dvm.ENTERED,
-              onClose: o,
+              onClose: a,
               onComplete: s,
               applicationId: n,
               skuId: i,

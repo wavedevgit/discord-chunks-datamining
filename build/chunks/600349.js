@@ -41,9 +41,9 @@ class h extends Chunk147913.Z {
   handleSoundboardPlayStart(e) {
     var t, n, r;
     if (!(0, d.LI)()) return;
-    let i = o.Z.getSoundById(e.soundId);
+    let i = a.Z.getSoundById(e.soundId);
     if (null == i) return;
-    let s = null == (t = a.Z.getGuildEmojis(i.guildId)) ? true : t[null != (n = i.emojiId) ? n : ""];
+    let s = null == (t = o.Z.getGuildEmojis(i.guildId)) ? true : t[null != (n = i.emojiId) ? n : ""];
     this.process({
       type: u.Bs.SOUNDBOARD,
       playing: true,
@@ -58,9 +58,9 @@ class h extends Chunk147913.Z {
   handleSoundboardPlayEnd(e) {
     var t, n;
     if (!(0, d.LI)()) return;
-    let r = o.Z.getSoundById(e.soundId);
+    let r = a.Z.getSoundById(e.soundId);
     if (null == r) return;
-    let i = null == (t = a.Z.getGuildEmojis(r.guildId)) ? true : t[null != (n = r.emojiId) ? n : ""];
+    let i = null == (t = o.Z.getGuildEmojis(r.guildId)) ? true : t[null != (n = r.emojiId) ? n : ""];
     this.process({
       type: u.Bs.SOUNDBOARD,
       playing: false,

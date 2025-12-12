@@ -5,7 +5,7 @@ var Chunk309987 = require("./309987.js"),
   Chunk44135 = require("./44135.js"),
   Chunk65183 = require("./65183.js");
 Chunk65183.List;
-var o = Chunk65183.Map,
+var a = Chunk65183.Map,
   s = function(e, t, n) {
     if (e) {
       var r = t.get(e);
@@ -25,8 +25,8 @@ var o = Chunk65183.Map,
     var n = [];
     if (!e) return n;
     for (var r = i(e, t); r && t.get(r);) {
-      var a = t.get(r);
-      n.push(r), r = a.getParentKey() ? i(a, t) : null
+      var o = t.get(r);
+      n.push(r), r = o.getParentKey() ? i(o, t) : null
     }
     return n
   },
@@ -96,18 +96,18 @@ var o = Chunk65183.Map,
             })
           })
         }), null == e.get(t.getKey()) && null != e.get(n.getKey()) && n.getParentKey() === t.getKey() && null == n.getPrevSiblingKey()) {
-        var a = t.getPrevSiblingKey();
+        var o = t.getPrevSiblingKey();
         s(n.getKey(), i, function(e) {
           return e.merge({
-            prevSibling: a
+            prevSibling: o
           })
-        }), s(a, i, function(e) {
+        }), s(o, i, function(e) {
           return e.merge({
             nextSibling: n.getKey()
           })
         });
-        var o = a ? e.get(a) : null,
-          f = o ? o.getParentKey() : null;
+        var a = o ? e.get(o) : null,
+          f = a ? a.getParentKey() : null;
         if (t.getChildKeys().forEach(function(e) {
             s(e, i, function(e) {
               return e.merge({
@@ -146,42 +146,42 @@ var o = Chunk65183.Map,
   };
 module.exports = function(e, t) {
   if (t.isCollapsed()) return e;
-  var n, a = e.getBlockMap(),
+  var n, o = e.getBlockMap(),
     s = t.getStartKey(),
     c = t.getStartOffset(),
     u = t.getEndKey(),
     d = t.getEndOffset(),
-    _ = a.get(s),
-    m = a.get(u),
+    _ = o.get(s),
+    m = o.get(u),
     h = _ instanceof r,
     g = [];
   if (h) {
     var E = m.getChildKeys(),
-      b = l(u, a);
-    m.getNextSiblingKey() && (g = g.concat(b)), E.isEmpty() || (g = g.concat(b.concat([u]))), g = g.concat(l(i(m, a), a))
+      b = l(u, o);
+    m.getNextSiblingKey() && (g = g.concat(b)), E.isEmpty() || (g = g.concat(b.concat([u]))), g = g.concat(l(i(m, o), o))
   }
   n = _ === m ? p(_.getCharacterList(), c, d) : _.getCharacterList().slice(0, c).concat(m.getCharacterList().slice(d));
   var y = _.merge({
       text: _.getText().slice(0, c) + m.getText().slice(d),
       characterList: n
     }),
-    O = h && 0 === c && 0 === d && m.getParentKey() === s && null == m.getPrevSiblingKey() ? o([
+    O = h && 0 === c && 0 === d && m.getParentKey() === s && null == m.getPrevSiblingKey() ? a([
       [s, null]
-    ]) : a.toSeq().skipUntil(function(e, t) {
+    ]) : o.toSeq().skipUntil(function(e, t) {
       return t === s
     }).takeUntil(function(e, t) {
       return t === u
     }).filter(function(e, t) {
       return false === g.indexOf(t)
-    }).concat(o([
+    }).concat(a([
       [u, null]
     ])).map(function(e, t) {
       return t === s ? y : null
     }),
-    v = a.merge(O).filter(function(e) {
+    v = o.merge(O).filter(function(e) {
       return !!e
     });
-  return h && _ !== m && (v = f(v, _, m, a)), e.merge({
+  return h && _ !== m && (v = f(v, _, m, o)), e.merge({
     blockMap: v,
     selectionBefore: t,
     selectionAfter: t.merge({

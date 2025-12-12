@@ -1,9 +1,9 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 975464, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   C: () => j,
-  Z: () => v
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk662379 = require("./662379.jsx"),
   Chunk60533 = require("./60533.jsx"),
   Chunk581050 = require("./581050.js"),
-  Chunk14562 = require("./14562.js");
+  Chunk169400 = require("./169400.js");
 
 function j(e) {
   let {
@@ -31,73 +31,73 @@ function j(e) {
       children: t
     } = e;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.izJ, {
-        className: x.sectionDivider
+      children: [(0, r.jsx)(s.izJ, {
+        className: b.sectionDivider
       }), t]
     })
   }, l = (0, r.jsx)(i, {
-    children: (0, r.jsx)(b.Z, {})
-  }, h.q.HOW_IT_WORKS), s = (0, r.jsx)(i, {
     children: (0, r.jsx)(f.Z, {})
-  }, h.q.BENEFITS);
+  }, x.q.HOW_IT_WORKS), a = (0, r.jsx)(i, {
+    children: (0, r.jsx)(m.Z, {})
+  }, x.q.BENEFITS);
   return null != n || (null == t ? true : t.sections) == null ? (0, r.jsxs)(r.Fragment, {
-    children: [l, s]
+    children: [l, a]
   }) : (0, r.jsx)(r.Fragment, {
     children: t.sections.map(e => {
       switch (e.type) {
-        case h.q.HOW_IT_WORKS:
+        case x.q.HOW_IT_WORKS:
           return l;
-        case h.q.BENEFITS:
-          return s;
-        case h.q.OTHER_CREATORS:
+        case x.q.BENEFITS:
+          return a;
+        case x.q.OTHER_CREATORS:
           return (0, r.jsx)(i, {
-            children: (0, r.jsx)(m.Z, {
+            children: (0, r.jsx)(p.Z, {
               highlightedCreators: e.creators
             })
-          }, h.q.OTHER_CREATORS)
+          }, x.q.OTHER_CREATORS)
       }
     })
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     guild: t
-  } = e, n = (0, u.Z)(t), {
-    eligibilityLoading: f,
-    eligibilityError: m,
-    eligibility: b
-  } = n, h = (0, c.j)(b), {
-    isLoading: v,
-    error: O,
-    creatorMonetizationOnboardingMarketing: C
-  } = (0, d.Z)(t.id);
+  } = e, n = (0, d.Z)(t), {
+    eligibilityLoading: m,
+    eligibilityError: p,
+    eligibility: f
+  } = n, x = (0, c.j)(f), {
+    isLoading: _,
+    error: v,
+    creatorMonetizationOnboardingMarketing: O
+  } = (0, u.Z)(t.id);
   return (i.useEffect(() => {
     (0, o.k)(t.id)
-  }, [t.id]), (0, s.Z)({
+  }, [t.id]), (0, a.Z)({
     type: l.ImpressionTypes.PANE,
     name: l.ImpressionNames.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING,
     properties: {
       guild_id: t.id,
       is_owner: n.isGuildOwner,
       is_eligible: n.eligibleForMonetization,
-      ineligible_reasons: h
+      ineligible_reasons: x
     }
   }, {
-    disableTrack: null == t.id || null == b
-  }), f || null == b || v) ? (0, r.jsx)(a.$jN, {}) : b.actionRequired ? (0, r.jsx)(p.Z, {
+    disableTrack: null == t.id || null == f
+  }), m || null == f || _) ? (0, r.jsx)(s.$jN, {}) : f.actionRequired ? (0, r.jsx)(h.Z, {
     guild: t
-  }) : null != m ? (0, r.jsx)(a.M14, {
+  }) : null != p ? (0, r.jsx)(s.M14, {
     type: "critical",
-    children: m.message
+    children: p.message
   }) : (0, r.jsxs)("div", {
-    className: x.container,
+    className: b.container,
     children: [(0, r.jsx)(g.Z, {
       guild: t,
       monetizationEligibility: n
     }), (0, r.jsx)(j, {
-      onboardingMarketing: C,
-      onboardingMarketingError: O
+      onboardingMarketing: O,
+      onboardingMarketingError: v
     })]
   })
 }

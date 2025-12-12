@@ -15,7 +15,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk692547 = require("./692547.js"),
   Chunk780384 = require("./780384.js");
@@ -24,7 +24,7 @@ var Chunk44315 = require("./44315.js"),
   Chunk686546 = require("./686546.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk268685 = require("./268685.js"),
-  Chunk926374 = require("./926374.js");
+  Chunk247483 = require("./247483.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -115,9 +115,9 @@ function T(e) {
     status: n,
     isMobile: r,
     isTyping: i,
-    topOffset: a = 0,
-    leftOffset: o = 0
-  } = e, s = a / E * t, l = o / E * t;
+    topOffset: o = 0,
+    leftOffset: a = 0
+  } = e, s = o / E * t, l = a / E * t;
   if (i) return {
     bgRadius: .5 * t,
     bgY: .25 * t + s,
@@ -186,7 +186,7 @@ function C(e) {
 function A(e, t, n) {
   let {
     bgRadius: i,
-    bgY: a,
+    bgY: o,
     bgX: s,
     bgHeight: l,
     bgWidth: c,
@@ -203,15 +203,15 @@ function A(e, t, n) {
   } = e;
   return (0, r.jsxs)("mask", {
     id: n,
-    children: [(0, r.jsx)(o.animated.rect, {
+    children: [(0, r.jsx)(a.animated.rect, {
       x: s,
-      y: a,
+      y: o,
       width: c,
       height: l,
       rx: i,
       ry: i,
       fill: "white"
-    }), (0, r.jsx)(o.animated.rect, {
+    }), (0, r.jsx)(a.animated.rect, {
       x: u,
       y: d,
       width: f,
@@ -219,14 +219,14 @@ function A(e, t, n) {
       rx: _,
       ry: _,
       fill: "black"
-    }), (0, r.jsx)(o.animated.polygon, {
+    }), (0, r.jsx)(a.animated.polygon, {
       points: C(t),
       fill: "black",
       transform: m,
       style: {
         transformOrigin: h
       }
-    }), (0, r.jsx)(o.animated.circle, {
+    }), (0, r.jsx)(a.animated.circle, {
       fill: "black",
       cx: E,
       cy: g,
@@ -272,13 +272,13 @@ function R(e) {
     status: t,
     isMobile: n = false,
     size: i = E,
-    className: o,
+    className: a,
     style: s,
     color: l
   } = e, c = t === d.Skl.ONLINE && n, f = y(t, l);
   return (0, r.jsx)(u.ZP, g(m({
     mask: N(t, c),
-    className: a()(p.mask, o),
+    className: o()(p.mask, a),
     style: s
   }, P(i, t, c)), {
     children: (0, r.jsx)("div", {

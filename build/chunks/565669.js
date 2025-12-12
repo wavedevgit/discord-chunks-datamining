@@ -2,7 +2,7 @@
 /** chunk id: 565669, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => a
+  H: () => o
 });
 var Chunk87290 = require("./87290.js");
 
@@ -14,9 +14,9 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class a {
+class o {
   static fromServer(e) {
-    return new a(e)
+    return new o(e)
   }
   constructor(e) {
     i(this, "categoryStoreListingId", true), i(this, "name", true), i(this, "unpublishedAt", true), i(this, "bodyText", true), i(this, "bannerTextColor", true), i(this, "bannerUrl", true), i(this, "assetUrl", true), this.type = r.O.CATEGORY, this.categoryStoreListingId = e.category_store_listing_id, this.name = e.name, this.unpublishedAt = null != e.unpublished_at ? new Date(e.unpublished_at) : null, this.bodyText = e.body_text, this.bannerTextColor = e.banner_text_color, this.bannerUrl = e.banner_url, this.assetUrl = e.asset_url

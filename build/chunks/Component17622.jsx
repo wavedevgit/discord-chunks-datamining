@@ -6,11 +6,11 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk119331 = require("./119331.js"),
   Chunk336227 = require("./336227.js"),
-  Chunk287416 = require("./287416.js");
+  Chunk467541 = require("./467541.js");
 
 function d(e) {
   let {
@@ -27,7 +27,7 @@ function d(e) {
         className: l.perkContainer,
         children: [(0, n.jsx)(t, {
           color: "currentColor",
-          className: r()(l.perkIcon, o)
+          className: a()(l.perkIcon, o)
         }), (0, n.jsx)(c.xvT, {
           className: l.perkText,
           color: "text-default",

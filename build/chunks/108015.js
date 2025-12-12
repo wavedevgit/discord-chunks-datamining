@@ -8,7 +8,7 @@ var Chunk154028 = require("./154028.js"),
   s = Chunk751736("species");
 module.exports = function(e) {
   var t = r(e);
-  o && t && !t[s] && i(t, s, {
+  a && t && !t[s] && i(t, s, {
     configurable: true,
     get: function() {
       return this

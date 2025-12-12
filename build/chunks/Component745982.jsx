@@ -10,18 +10,18 @@ var Chunk970683 = require("./970683.js"),
   Chunk850165 = require("./850165.jsx"),
   Chunk134612 = require("./134612.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk72595 = require("./72595.js");
+  Chunk394968 = require("./394968.js");
 
 function d(t) {
   let {} = t, e = (0, o.Nn)();
-  return (0, i.jsx)(s.Z, {
+  return (0, i.jsx)(a.Z, {
     heroImage: (0, i.jsx)(r.pq, {
       alt: c.intl.string(c.t["2mJo21"])
     }),
     header: c.intl.string(c.t.eAbVfS),
     children: (0, i.jsx)("div", {
       className: l.safetyTips,
-      children: (0, i.jsx)(a.Z, {
+      children: (0, i.jsx)(s.Z, {
         tips: e,
         headerText: c.intl.string(c.t["0QSL1C"])
       })

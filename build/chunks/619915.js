@@ -75,7 +75,7 @@ function h(e) {
 
 function g(e, t) {
   let n = e.map(e => e.applicationId),
-    o = (0, a.Z)(n),
+    a = (0, o.Z)(n),
     c = new Set([]);
   for (let t of e)
     for (let e of t.userIds) c.add(e);
@@ -89,31 +89,31 @@ function g(e, t) {
     return u.forEach(e => {
       null != e && n.set(e.id, e)
     }), e.map((e, r) => {
-      let i = o[r],
-        a = [];
-      if (null != a)
+      let i = a[r],
+        o = [];
+      if (null != o)
         for (let r of e.userIds) {
           let e = n.get(r);
           if (null != e && null != t) {
             let n = t(e);
-            null != n && a.push(n)
+            null != n && o.push(n)
           }
         }
       return null == i ? null : {
         embeddedActivity: e,
         application: i,
-        userParticipantAvatarUrls: a
+        userParticipantAvatarUrls: o
       }
     }).filter(l.lm)
-  }, [e, o, u, t])
+  }, [e, a, u, t])
 }
 
 function E(e) {
-  return (0, i.e7)([o.Z], () => {
+  return (0, i.e7)([a.Z], () => {
     let t = new Map;
     return e.forEach(e => {
       var n;
-      let r = o.Z.findActivity(null == e ? true : e.embeddedActivity.userIds.values().next().value, t => {
+      let r = a.Z.findActivity(null == e ? true : e.embeddedActivity.userIds.values().next().value, t => {
         var n;
         return t.application_id === (null == e || null == (n = e.application) ? true : n.id)
       });

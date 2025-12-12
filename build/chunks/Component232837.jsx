@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk110223 = require("./110223.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk520386 = require("./520386.js");
+  Chunk623146 = require("./623146.js");
 
 function C(e) {
   let {
@@ -28,7 +28,7 @@ function C(e) {
     userId: t,
     transitionState: C,
     onClose: k
-  } = e, O = r.useRef(false), v = (0, o.e7)([u.Z], () => u.Z.isBlocked(t)), A = (0, o.e7)([d.Z], () => d.Z.getChannel(n));
+  } = e, O = r.useRef(false), v = (0, o.e7)([d.Z], () => d.Z.isBlocked(t)), A = (0, o.e7)([u.Z], () => u.Z.getChannel(n));
   if ((0, c.zq)(() => {
       O.current || (0, m.nC)(t)
     }), null == _.default.getUser(t)) return null;

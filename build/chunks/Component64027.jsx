@@ -25,7 +25,7 @@ function s(e) {
     size: t,
     fullWidth: p
   }), [t, p]);
-  return (0, r.jsx)(a.K, {
+  return (0, r.jsx)(o.K, {
     direction: n,
     gap: 8,
     justify: s,
@@ -34,7 +34,7 @@ function s(e) {
     padding: c,
     className: u,
     fullWidth: !!_ || p,
-    children: (0, r.jsx)(o.u.Provider, {
+    children: (0, r.jsx)(a.u.Provider, {
       value: m,
       children: d
     })

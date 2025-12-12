@@ -3,7 +3,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", {
   value: true
-}), exports.stringFormatter = exports.StringBuilder = true, exports.formatToPlainString = a;
+}), exports.stringFormatter = exports.StringBuilder = true, exports.formatToPlainString = o;
 let Chunk975439 = require("./975439.js");
 class i extends Chunk975439.FormatBuilder {
   constructor() {
@@ -23,10 +23,10 @@ class i extends Chunk975439.FormatBuilder {
   }
 }
 
-function a(e, t) {
+function o(e, t) {
   return "string" == typeof e ? e : this.bindFormatValues(i, e, t)[0]
 }
 exports.StringBuilder = i, exports.stringFormatter = {
-  format: a,
+  format: o,
   builder: i
 }

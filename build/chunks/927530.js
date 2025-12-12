@@ -11,7 +11,7 @@ var Chunk661822 = require("./661822.js"),
 class s {
   constructor(e, t) {
     let n, r;
-    n = e || new a.s, r = t || new a.s, this._stack = [{
+    n = e || new o.s, r = t || new o.s, this._stack = [{
       scope: n
     }], this._isolationScope = r
   }

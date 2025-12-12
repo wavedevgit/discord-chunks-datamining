@@ -5,11 +5,11 @@ module.exports = function(e, t, n, r) {
   if (true !== i) return !!i;
   if (e === t) returntrue;
   if ("object" != typeof e || !e || "object" != typeof t || !t) returnfalse;
-  var a = Object.keys(e),
-    o = Object.keys(t);
-  if (a.length !== o.length) returnfalse;
-  for (var s = Object.prototype.hasOwnProperty.bind(t), l = 0; l < a.length; l++) {
-    var c = a[l];
+  var o = Object.keys(e),
+    a = Object.keys(t);
+  if (o.length !== a.length) returnfalse;
+  for (var s = Object.prototype.hasOwnProperty.bind(t), l = 0; l < o.length; l++) {
+    var c = o[l];
     if (!s(c)) returnfalse;
     var u = e[c],
       d = t[c];

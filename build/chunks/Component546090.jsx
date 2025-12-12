@@ -7,21 +7,21 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk137427 = require("./137427.js"),
+  Chunk96011 = require("./96011.js"),
   Chunk388032 = require("./388032.jsx");
 let l = e => {
   let {
     onInvite: t,
     disabled: n
   } = e;
-  return (0, r.jsx)(a.P3F, {
+  return (0, r.jsx)(o.P3F, {
     onClick: n ? true : t,
     children: (0, r.jsx)(i.u, {
-      text: s.intl.string(o.default["U/DzKb"]),
+      text: s.intl.string(a.default["U/DzKb"]),
       shouldShow: !n,
-      children: (0, r.jsx)(a.oLu, {
+      children: (0, r.jsx)(o.oLu, {
         size: "sm",
-        color: n ? a.TVs.colors.ICON_SUBTLE : a.TVs.colors.ICON_STRONG
+        color: n ? o.TVs.colors.ICON_SUBTLE : o.TVs.colors.ICON_STRONG
       })
     })
   })

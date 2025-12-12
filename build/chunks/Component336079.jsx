@@ -31,9 +31,9 @@ let f = (0, Chunk473749.createContext)({
       skuId: t,
       loadId: n,
       analyticsLocations: r,
-      onCheckoutSuccess: a,
+      onCheckoutSuccess: o,
       rentalDuration: f
-    } = e, p = (0, o.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
+    } = e, p = (0, a.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
       product: _
     } = (0, s.T)(t), m = (0, i.useMemo)(() => {
       if (null == _) return null;
@@ -57,12 +57,12 @@ let f = (0, Chunk473749.createContext)({
       loadId: n
     }), b = (0, i.useCallback)(e => {
       h(t, n, n => {
-        a({
+        o({
           entitlements: n,
           skuId: t
         }), e()
       }, null != f)
-    }, [t, n, h, a, f]);
+    }, [t, n, h, o, f]);
     return {
       skuId: t,
       loadId: n,
@@ -80,8 +80,8 @@ let f = (0, Chunk473749.createContext)({
       skuId: t,
       loadId: n,
       analyticsSourceLocation: i,
-      analyticsLocations: a,
-      onCheckoutSuccess: o,
+      analyticsLocations: o,
+      onCheckoutSuccess: a,
       rentalDuration: s,
       children: l
     } = e, {
@@ -92,15 +92,15 @@ let f = (0, Chunk473749.createContext)({
     } = p({
       skuId: t,
       loadId: n,
-      analyticsLocations: a,
-      onCheckoutSuccess: o,
+      analyticsLocations: o,
+      onCheckoutSuccess: a,
       rentalDuration: s
     });
     return (0, r.jsx)(f.Provider, {
       value: {
         skuId: t,
         loadId: n,
-        analyticsLocations: null != a ? a : [],
+        analyticsLocations: null != o ? o : [],
         analyticsSourceLocation: i,
         orbProductContext: c,
         onRedeemVirtualCurrency: u,

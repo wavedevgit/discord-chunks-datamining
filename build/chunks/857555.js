@@ -1,4 +1,7 @@
 /** Chunk was on web.js **/
-/** chunk id: 857555, original params: e (module,exports,re quire) **/
+/** chunk id: 857555, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-module.exports = "/assets/02c4ce3075f66d91.svg"
+require.d(exports, {
+  Z: () => r
+});
+let r = "https://cdn.discordapp.com/assets/content/431cff901982be5f61cdad9935b62804bb53d9ed428708f9695bbc77094c6437.riv"

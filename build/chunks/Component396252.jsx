@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk385499 = require("./385499.jsx"),
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk674563 = require("./674563.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk138851 = require("./138851.js");
+  Chunk682392 = require("./682392.js");
 
 function g(e) {
   var t;
@@ -27,7 +27,7 @@ function g(e) {
     compact: i,
     usernameHook: g,
     channel: E
-  } = e, b = (0, o.e7)([c.Z], () => c.Z.getGuild(E.guild_id)), y = (0, u.ZP)(n), O = g(y), {
+  } = e, b = (0, a.e7)([c.Z], () => c.Z.getGuild(E.guild_id)), y = (0, u.ZP)(n), O = g(y), {
     avatarSrc: v,
     eventHandlers: {
       onMouseEnter: S,
@@ -38,7 +38,7 @@ function g(e) {
     onMouseEnter: S,
     onMouseLeave: I,
     children: (0, r.jsx)(p.Z, {
-      className: a()(h.mainContainer, {
+      className: o()(h.mainContainer, {
         [h.compact]: i
       }),
       iconNode: i ? null : (0, r.jsx)(f.S, {
@@ -47,13 +47,13 @@ function g(e) {
       iconContainerClassName: h.iconContainer,
       compact: i,
       children: (0, r.jsxs)("div", {
-        className: a()(h.content, {
+        className: o()(h.content, {
           [h.compact]: i
         }),
         children: [(0, r.jsx)(d.nD, {
           message: n,
           messageClassname: h.spanCorrection,
-          className: a()(h.usernameContainer, h.spanCorrection, {
+          className: o()(h.usernameContainer, h.spanCorrection, {
             [h.compact]: i
           }),
           username: (0, r.jsxs)("div", {
@@ -72,7 +72,7 @@ function g(e) {
           compact: i,
           showTimestamp: true
         }), (0, r.jsx)("div", {
-          className: a()(h.__invalid_messageContent, {
+          className: o()(h.__invalid_messageContent, {
             [h.compact]: i
           }),
           children: m.intl.format(m.t.W0UBI3, {

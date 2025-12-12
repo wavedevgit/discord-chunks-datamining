@@ -35,7 +35,7 @@ function p(e) {
       initialState: {
         applicationId: t
       }
-    }) : (0, a._)(o._b.TEXT, l.Ie.NORMAL, {
+    }) : (0, o._)(a._b.TEXT, l.Ie.NORMAL, {
       applicationId: t
     })
   }

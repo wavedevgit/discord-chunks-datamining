@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk410030 = require("./410030.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk904118 = require("./904118.js"),
+  Chunk388013 = require("./388013.js"),
   Chunk982240 = require("./982240.js"),
   Chunk533854 = require("./533854.js"),
   p = function(e) {
@@ -32,23 +32,23 @@ let _ = e => {
     className: h,
     children: [(0, r.jsx)("img", {
       className: u.__invalid_loadIssueImg,
-      src: (0, a.wj)(_) ? d : f,
+      src: (0, o.wj)(_) ? d : f,
       alt: ""
-    }), (0, r.jsx)(o.Heading, {
+    }), (0, r.jsx)(a.Heading, {
       className: u.heading1,
       variant: "heading-xl/semibold",
       children: c.intl.string(c.t.i5SQ74)
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       className: u.description,
       variant: "text-md/normal",
       children: g
-    }), m && null != p && (0, r.jsx)(o.Text, {
+    }), m && null != p && (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       children: "staff-only debug: " + p
     }), (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: u.reload,
-      children: (0, r.jsx)(o.Button, {
+      children: (0, r.jsx)(a.Button, {
         variant: "primary",
         text: c.intl.string(c.t["+hivLW"]),
         onClick: t

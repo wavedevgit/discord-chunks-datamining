@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk145604 = require("./145604.jsx"),
   Chunk718813 = require("./718813.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk358091 = require("./358091.js");
+  Chunk3484 = require("./3484.js");
 let I = Chunk473749.memo(function() {
   let e = (0, Chunk350810.Z)(),
     t = Chunk473749.useRef(null),
@@ -31,7 +31,7 @@ let I = Chunk473749.memo(function() {
         duration: n,
         intensity: r
       } = e;
-      if (p.Z.useReducedMotion || !b.Z.isFocused()) return;
+      if (p.Z.useReducedMotion || !_.Z.isFocused()) return;
       let {
         current: i
       } = t;
@@ -41,9 +41,9 @@ let I = Chunk473749.memo(function() {
     Chunk585483.S.unsubscribe(Chunk981631.CkL.SHAKE_APP, require)
   }), [require]), (0, Chunk317858.Z)(), (0, Chunk54381.jsxs)(Chunk481060.F0h, {
     ref: exports,
-    className: Chunk358091.app,
+    className: Chunk3484.app,
     children: [(0, Chunk54381.jsx)(Chunk718813.Z, {
-      className: Chunk358091.layers,
+      className: Chunk3484.layers,
       children: (0, Chunk54381.jsx)(Chunk533934.Z, {})
     }), (0, Chunk54381.jsx)(Chunk635395.Z, {}), (0, Chunk54381.jsx)(Chunk512847.Z, {}), (0, Chunk54381.jsx)(Chunk145604.Z, {}), (0, Chunk54381.jsx)(Chunk5560.Z, {}), !module && (0, Chunk54381.jsx)(Chunk481060.c43, {})]
   })

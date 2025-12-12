@@ -48,7 +48,7 @@ class r {
   constructor(e) {
     this.keyMap = new Map, this.keyMap = new Map, this.columnCount = null == e ? true : e.columnCount, this.rows = [];
     let t = r => {
-        var i, a, o, s, l;
+        var i, o, a, s, l;
         let c = this.keyMap.get(r.key);
         e.visitNode && (r = e.visitNode(r)), this.keyMap.set(r.key, r);
         let u = new Set,
@@ -61,7 +61,7 @@ class r {
               break
             }
         }
-        for (let e of r.childNodes) "cell" === e.type && f && (e.colspan = null == (a = e.props) ? true : a.colSpan, e.colSpan = null == (o = e.props) ? true : o.colSpan, e.colIndex = d ? (null != (s = d.colIndex) ? s : d.index) + (null != (l = d.colSpan) ? l : 1) : e.index), "cell" === e.type && null == e.parentKey && (e.parentKey = r.key), u.add(e.key), d ? (d.nextKey = e.key, e.prevKey = d.key) : e.prevKey = null, t(e), d = e;
+        for (let e of r.childNodes) "cell" === e.type && f && (e.colspan = null == (o = e.props) ? true : o.colSpan, e.colSpan = null == (a = e.props) ? true : a.colSpan, e.colIndex = d ? (null != (s = d.colIndex) ? s : d.index) + (null != (l = d.colSpan) ? l : 1) : e.index), "cell" === e.type && null == e.parentKey && (e.parentKey = r.key), u.add(e.key), d ? (d.nextKey = e.key, e.prevKey = d.key) : e.prevKey = null, t(e), d = e;
         if (d && (d.nextKey = null), c)
           for (let e of c.childNodes) u.has(e.key) || n(e)
       },
@@ -70,12 +70,12 @@ class r {
       },
       r = null;
     for (let [n, u] of e.items.entries()) {
-      var i, a, o, s, l, c;
+      var i, o, a, s, l, c;
       let e = {
         ...u,
         level: null != (i = u.level) ? i : 0,
-        key: null != (a = u.key) ? a : "row-" + n,
-        type: null != (o = u.type) ? o : "row",
+        key: null != (o = u.key) ? o : "row-" + n,
+        type: null != (a = u.type) ? a : "row",
         value: null != (s = u.value) ? s : null,
         hasChildNodes: true,
         childNodes: [...u.childNodes],

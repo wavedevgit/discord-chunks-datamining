@@ -37,5 +37,5 @@ var r, Chunk179122 = require("./179122.js"),
   };
 Chunk485073[m] = true, module.exports = Object.create || function(e, t) {
   var n;
-  return null !== e ? (h[p] = i(e), n = new h, h[p] = null, n[m] = e) : n = y(), true === t ? n : a.f(n, t)
+  return null !== e ? (h[p] = i(e), n = new h, h[p] = null, n[m] = e) : n = y(), true === t ? n : o.f(n, t)
 }

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk818083 = require("./818083.js"),
   Chunk427164 = require("./427164.js"),
   Chunk128064 = require("./128064.js");
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-01_default_activity_status",
     label: "Guild activity status defaults",
@@ -55,8 +55,8 @@ let o = (0, Chunk818083.B)({
   }),
   c = e => l.getConfig({
     location: e
-  }).aggregateDefaultEnabled && (0, a.c_)("DefaultGuildActivityExperiment"),
-  u = e => o.getCurrentConfig({
+  }).aggregateDefaultEnabled && (0, o.c_)("DefaultGuildActivityExperiment"),
+  u = e => a.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: false
@@ -66,7 +66,7 @@ let o = (0, Chunk818083.B)({
     autoTrackExposure: false
   }).enabled || c(e),
   d = e => {
-    let t = o.useExperiment({
+    let t = a.useExperiment({
         location: e
       }, {
         autoTrackExposure: false
@@ -79,6 +79,6 @@ let o = (0, Chunk818083.B)({
       r = l.useConfig({
         location: e
       }).aggregateDefaultEnabled,
-      i = (0, a.pY)("DefaultGuildActivityExperiment");
+      i = (0, o.pY)("DefaultGuildActivityExperiment");
     return t || n || r && i
   }

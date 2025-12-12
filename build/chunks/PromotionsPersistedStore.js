@@ -137,7 +137,7 @@ function L() {
 }
 class j extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (p = e), this.waitFor(o.Z), this.syncWith([o.Z], L)
+    null != e && (p = e), this.waitFor(a.Z), this.syncWith([a.Z], L)
   }
   get outboundPromotions() {
     return Object.values(b[Chunk397047.$k.THIRD_PARTY_OUTBOUND])

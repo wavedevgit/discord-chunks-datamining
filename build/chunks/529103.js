@@ -20,7 +20,7 @@ let l = {
     let {
       explicit: t = false
     } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
-    (0, a.s1)().location.pathname !== o.Z5c.FRIENDS && (0, a.uL)(o.Z5c.FRIENDS), s(e), t && (0, i.Z)({
+    (0, o.s1)().location.pathname !== a.Z5c.FRIENDS && (0, o.uL)(a.Z5c.FRIENDS), s(e), t && (0, i.Z)({
       tab_opened: e
     })
   },

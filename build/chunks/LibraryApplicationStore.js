@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => V
 }), require("./388685.js"), require("./997841.js"), require("./358797.js");
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk95015 = require("./95015.js"),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
@@ -109,8 +109,8 @@ function x(e) {
     applicationId: t,
     branchId: n,
     flags: r
-  } = e, i = (0, d.Tu)(t, n), a = Z(t, n);
-  null != a && !a.isHidden() && o.yE(r, p.eHb.HIDDEN) && (C = true), S.add(i)
+  } = e, i = (0, d.Tu)(t, n), o = Z(t, n);
+  null != o && !o.isHidden() && a.yE(r, p.eHb.HIDDEN) && (C = true), S.add(i)
 }
 
 function L(e) {
@@ -196,8 +196,8 @@ class B extends(r = Chunk442837.ZP.Store) {
     if (null != n) {
       var r;
       let i = (0, d.Tu)(e, n),
-        a = null != (r = O[i]) ? r : v[i];
-      if (null != a && (0, d.Je)(a) && (t || !a.isHidden())) return a
+        o = null != (r = O[i]) ? r : v[i];
+      if (null != o && (0, d.Je)(o) && (t || !o.isHidden())) return o
     }
     let i = F();
     for (let n in i)
@@ -216,7 +216,7 @@ class B extends(r = Chunk442837.ZP.Store) {
     return y
   }
   get entitledBranchIds() {
-    return a()(F()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
+    return o()(F()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
   }
   get hasRemovedLibraryApplicationThisSession() {
     return C

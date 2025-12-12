@@ -14,15 +14,15 @@ function i(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 
-function a(e, t) {
+function o(e, t) {
   for (var n = 0; n < t.length; n++) {
     var r = t[n];
     r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
   }
 }
 
-function o(e, t, n) {
-  return t && a(e.prototype, t), n && a(e, n), e
+function a(e, t, n) {
+  return t && o(e.prototype, t), n && o(e, n), e
 }
 
 function s(e, t) {
@@ -93,10 +93,10 @@ var m = function(e) {
   function n() {
     var e;
     i(this, n);
-    for (var r = arguments.length, a = Array(r), o = 0; o < r; o++) a[o] = arguments[o];
-    return _(d(e = t.call.apply(t, [this].concat(a))), "priority", 140), _(d(e), "incompatibleTokens", ["R", "u", "t", "T"]), e
+    for (var r = arguments.length, o = Array(r), a = 0; a < r; a++) o[a] = arguments[a];
+    return _(d(e = t.call.apply(t, [this].concat(o))), "priority", 140), _(d(e), "incompatibleTokens", ["R", "u", "t", "T"]), e
   }
-  return o(n, [{
+  return a(n, [{
     key: "parse",
     value: function(e, t, n) {
       switch (t) {

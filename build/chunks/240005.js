@@ -1,7 +1,0 @@
-/** Chunk was on web.js **/
-/** chunk id: 240005, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-require.d(exports, {
-  Z: () => r
-});
-let r = "https://cdn.discordapp.com/assets/content/ce09db302fba4b6308baf379d0cbd02ee57cbf2503a998192e31df9637cc161e.riv"

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk216701 = require("./216701.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk388778 = require("./388778.js");
+  Chunk530815 = require("./530815.js");
 let I = 60;
 
 function T(e) {
@@ -51,13 +51,13 @@ function C(e) {
   let {
     channelId: n,
     emojiId: i,
-    emojiName: a
-  } = e, o = (0, l.e7)([p.Z], () => p.Z.getChannel(n));
-  if (null == o) return null;
-  let s = null != (t = (0, f.KS)(o)) ? t : c.VL1;
+    emojiName: o
+  } = e, a = (0, l.e7)([p.Z], () => p.Z.getChannel(n));
+  if (null == a) return null;
+  let s = null != (t = (0, f.KS)(a)) ? t : c.VL1;
   return (0, r.jsx)(y.Z, {
     emojiId: i,
-    emojiName: a,
+    emojiName: o,
     size: y.R.MEDIUM,
     defaultComponent: (0, r.jsx)(s, {
       className: S.channelIcon
@@ -66,7 +66,7 @@ function C(e) {
 }
 
 function A(e) {
-  var t, n, a, d;
+  var t, n, o, d;
   let {
     guildId: f,
     channel: p,
@@ -99,7 +99,7 @@ function A(e) {
     null != y && (0, h.gp)(f, y.channelId)
   }, [f, y]);
   return null == m || A && !P ? null : (0, r.jsx)("div", {
-    className: o()(S.container, _),
+    className: a()(S.container, _),
     children: P && null != y ? (0, r.jsx)(s.Z.div, {
       style: {
         marginBottom: D.interpolate({
@@ -108,7 +108,7 @@ function A(e) {
         })
       },
       children: (0, r.jsxs)(c.P3F, {
-        className: o()(S.banner, S.clickable),
+        className: a()(S.banner, S.clickable),
         onClick: x,
         children: [(0, r.jsx)(C, {
           channelId: y.channelId,
@@ -144,7 +144,7 @@ function A(e) {
       },
       children: [(0, r.jsx)(C, {
         channelId: m.channelId,
-        emojiId: null == (a = m.emoji) ? true : a.id,
+        emojiId: null == (o = m.emoji) ? true : o.id,
         emojiName: null == m || null == (d = m.emoji) ? true : d.name
       }), (0, r.jsxs)("div", {
         className: S.text,
@@ -174,14 +174,14 @@ function N(e) {
     guildId: t,
     channel: n,
     className: i
-  } = e, a = (0, b.g)(t), o = (0, l.e7)([_.ZP], () => {
+  } = e, o = (0, b.g)(t), a = (0, l.e7)([_.ZP], () => {
     var e;
     return (null == (e = _.ZP.getSelfMember(t)) ? true : e.isPending) === true
   }), s = (0, E.PE)(t), c = (0, l.e7)([m.Z], () => {
     var e;
     return null == (e = m.Z.getGuild(t)) ? true : e.features.has(O.GuildFeatures.GUILD_SERVER_GUIDE)
   });
-  return s || o || !a || !c ? null : (0, r.jsx)(A, {
+  return s || a || !o || !c ? null : (0, r.jsx)(A, {
     guildId: t,
     channel: n,
     className: i

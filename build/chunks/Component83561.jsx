@@ -13,14 +13,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk426563 = require("./426563.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk978295 = require("./978295.js");
+  Chunk545869 = require("./545869.js");
 let f = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
 function p() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
     [t, n] = Chunk473749.useState(false),
     r = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    o = Chunk473749.useMemo(() => {
+    a = Chunk473749.useMemo(() => {
       let n = exports || !Chunk54381 && !module;
       return (0, Chunk426563.j)(require)
     }, [exports, Chunk54381, module]);
@@ -41,7 +41,7 @@ function _(e) {
     className: d.avatarContainer,
     children: (0, r.jsx)(f, {
       src: t,
-      size: o.EFr.SIZE_40,
+      size: a.EFr.SIZE_40,
       "aria-label": u.intl.string(u.t.hG1StD)
     })
   })

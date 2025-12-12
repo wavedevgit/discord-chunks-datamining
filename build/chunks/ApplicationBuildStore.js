@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => z
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk570140 = require("./570140.js"),
@@ -74,7 +74,7 @@ function M(e, t) {
     let n = S[t],
       r = n.manifestIds,
       i = h.Z.getState(e, t);
-    null != i && i.shouldPatch && (i.buildId !== n.id || !a().isEqual(i.manifestIds, r)) && l.Z.wait(() => {
+    null != i && i.shouldPatch && (i.buildId !== n.id || !o().isEqual(i.manifestIds, r)) && l.Z.wait(() => {
       let i = f.Z.getApplication(e);
       null != i ? (C.delete((0, b.Tu)(e, t)), (0, d.li)(i, t, n.id, r, true)) : C.add((0, b.Tu)(e, t))
     })
@@ -96,19 +96,19 @@ function U(e) {
     build: i
   } = e;
   v.delete(n);
-  let a = i.manifests.map(e => {
+  let o = i.manifests.map(e => {
       let {
         id: t
       } = e;
       return t
     }),
-    o = i.id;
+    a = i.id;
   I.delete(n), S[n] = {
-    id: o,
+    id: a,
     applicationId: t,
     branchId: n,
     locale: r,
-    manifestIds: a
+    manifestIds: o
   }, M(t, n)
 }
 

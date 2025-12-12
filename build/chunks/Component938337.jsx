@@ -37,8 +37,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -46,8 +46,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -58,12 +58,12 @@ function p(e) {
   } = e, c = d(e, ["appId", "skuId"]);
   let {
     analyticsLocations: f
-  } = (0, o.ZP)();
+  } = (0, a.ZP)();
   return i.useEffect(() => {
     s.default.track(l.rMx.VIEW_PREMIUM_APP_EXPANDED_PRODUCT_CARD, {
       application_id: t,
       sku_id: n,
       location_stack: f
     })
-  }, [f, t, n]), (0, r.jsx)(a.u, u({}, c))
+  }, [f, t, n]), (0, r.jsx)(o.u, u({}, c))
 }

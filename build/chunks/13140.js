@@ -15,7 +15,7 @@ require.d(exports, {
 var Chunk921738 = require("./921738.js"),
   i = require.n(Chunk921738),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk714338 = require("./714338.js"),
   Chunk823379 = require("./823379.js"),
   Chunk358085 = require("./358085.js"),
@@ -61,12 +61,12 @@ function m(e, t) {
   }), e
 }
 let h = __OVERLAY__ ? Chunk295907.iC : (0, Chunk358085.isLinux)() ? Chunk295907.Hs : (0, Chunk358085.isMac)() ? Chunk295907.RE : (0, Chunk358085.isWindows)() ? Chunk295907.iC : {},
-  g = o().invert(Chunk295907.Hs);
+  g = a().invert(Chunk295907.Hs);
 g["223"] = "`", Object.freeze(g);
-let E = Object.freeze(o().invert(Chunk295907.RE)),
-  b = o().invert(Chunk295907.iC);
+let E = Object.freeze(a().invert(Chunk295907.RE)),
+  b = a().invert(Chunk295907.iC);
 b["223"] = "`", Object.freeze(b);
-let y = o().invert(null != h ? h : {});
+let y = a().invert(null != h ? h : {});
 
 function O(e) {
   return "+" === e ? "plus" : e
@@ -86,8 +86,8 @@ function S(e, t, n) {
       code: "Backquote",
       keyCode: e
     },
-    a = (0, u.jd)(i);
-  return "\\" === t && "`" === r ? t : null == a ? O(null != r ? r : t) : O(a.key)
+    o = (0, u.jd)(i);
+  return "\\" === t && "`" === r ? t : null == o ? O(null != r ? r : t) : O(o.key)
 }
 
 function I() {
@@ -143,21 +143,21 @@ function P(e) {
   let t, n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : I(),
     r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.Mo.KEYBOARD_KEY;
   if (null == e) return null;
-  let a = r === d.Mo.KEYBOARD_KEY || r === d.Mo.KEYBOARD_MODIFIER_KEY;
+  let o = r === d.Mo.KEYBOARD_KEY || r === d.Mo.KEYBOARD_MODIFIER_KEY;
   switch (true) {
-    case a && n === d.Cg.LINUX:
+    case o && n === d.Cg.LINUX:
       t = d.Hs[e];
       break;
-    case a && n === d.Cg.MACOS:
+    case o && n === d.Cg.MACOS:
       t = d.RE[e];
       break;
-    case a && n === d.Cg.WINDOWS:
+    case o && n === d.Cg.WINDOWS:
       t = "+" === e ? d.iC.plus : d.iC[e];
       break;
-    case a && n === d.Cg.BROWSER:
+    case o && n === d.Cg.BROWSER:
       t = i()(N(e));
       break;
-    case a:
+    case o:
       t = h[e];
       break;
     case r === d.Mo.MOUSE_BUTTON:
@@ -255,8 +255,8 @@ function U(e) {
     r = e.map(e => {
       let [t, n, r] = e, i = "number" == typeof r ? r : I();
       if (t === d.Mo.KEYBOARD_KEY || t === d.Mo.KEYBOARD_MODIFIER_KEY) {
-        var a;
-        return null != (a = C(null != i ? [t, n, i] : [t, n])) ? a : "UNK".concat(n)
+        var o;
+        return null != (o = C(null != i ? [t, n, i] : [t, n])) ? o : "UNK".concat(n)
       }
       return t === d.Mo.MOUSE_BUTTON ? "mouse".concat(n) : t === d.Mo.GAMEPAD_BUTTON ? "gamepad".concat(n) : "dev".concat(t, ",").concat(n)
     }).filter(l.lm);
@@ -266,8 +266,8 @@ function U(e) {
 function G(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   return e.length === t.length && e.every((e, r) => {
-    let [i, a, o] = e, [s, l, c] = t[r];
-    return i === s && a === l && (!n || o === c)
+    let [i, o, a] = e, [s, l, c] = t[r];
+    return i === s && o === l && (!n || a === c)
   })
 }
 

@@ -29,7 +29,7 @@ function g(e) {
       null == n || n();
       break;
     case m.Fw.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION:
-      (0, a.w)();
+      (0, o.w)();
       break;
     case m.Fw.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS:
       r.Z.show({
@@ -68,15 +68,15 @@ async function E(e) {
     channelId: t,
     applicationId: n,
     launchId: r,
-    inputApplication: a,
+    inputApplication: o,
     analyticsLocations: h,
     launchingComponentId: E,
     sectionName: b,
     inviterUserId: y
-  } = e, O = f.ZP.getEmbeddedActivitiesForChannel(t).find(e => e.applicationId === n && (null == r || e.launchId === r)), v = a;
+  } = e, O = f.ZP.getEmbeddedActivitiesForChannel(t).find(e => e.applicationId === n && (null == r || e.launchId === r)), v = o;
   if (null == v) {
     let e = await i.ZP.fetchApplication(n);
-    v = o.ZP.createFromServer(e)
+    v = a.ZP.createFromServer(e)
   }
   if (null == O || null == v) return;
   let S = u.default.getCurrentUser();

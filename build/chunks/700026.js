@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 700026, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   V5: () => c,
@@ -15,7 +15,7 @@ function s(e, t, n) {
     hasDivider: ! function(e, t) {
       if (t === l.wZ) {
         let t = e.getGuildActionSection().getRows();
-        return 1 === t.length && t[0] === a.z.GUILD_PREMIUM_PROGRESS_BAR || e.getGuildActionSection().isEmpty()
+        return 1 === t.length && t[0] === o.z.GUILD_PREMIUM_PROGRESS_BAR || e.getGuildActionSection().isEmpty()
       }
       return 0 === e.getSections(false)[t]
     }(e, n) && (n === l.wZ || !!t && (n === l.p2 || n !== l.wd && (n === e.recentsSectionNumber || (e.voiceChannelsSectionNumber, false)))),
@@ -28,25 +28,25 @@ function c(e) {
     category: t,
     voiceStates: n,
     selectedChannelId: l,
-    selectedVoiceChannelId: a
+    selectedVoiceChannelId: o
   } = e;
   return function(e) {
     let {
       category: t,
       voiceStates: n,
       selectedChannelId: l,
-      selectedVoiceChannelId: a
+      selectedVoiceChannelId: o
     } = e;
     returntrue !== r.Z.isCollapsed(t.record.id) ? [] : t.getChannelRecords().filter(e => {
       var t;
-      if (!i.Z.can(o.Plq.VIEW_CHANNEL, e)) returnfalse;
+      if (!i.Z.can(a.Plq.VIEW_CHANNEL, e)) returnfalse;
       let r = null != (t = n[e.id]) ? t : [];
-      return e.id !== a && e.id !== l && r.length > 0
+      return e.id !== o && e.id !== l && r.length > 0
     })
   }({
     category: t,
     selectedChannelId: l,
-    selectedVoiceChannelId: a,
+    selectedVoiceChannelId: o,
     voiceStates: n
   }).length > 0
 }

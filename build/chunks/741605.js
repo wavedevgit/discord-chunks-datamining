@@ -8,19 +8,19 @@ var Chunk134994 = require("./134994.js"),
   Chunk8170 = require("./8170.js"),
   Chunk492733 = require("./492733.js");
 
-function o(e, t, n, o) {
+function a(e, t, n, a) {
   (0, r.vp)(e);
   let {
     c: s,
     dkLen: l,
     asyncTick: c
-  } = (0, a.U5)({
+  } = (0, o.U5)({
     dkLen: 32,
     asyncTick: 10
-  }, o);
+  }, a);
   if ((0, r.Rx)(s), (0, r.Rx)(l), (0, r.Rx)(c), s < 1) throw Error("PBKDF2: iterations (c) should be >= 1");
-  let u = (0, a.O0)(t),
-    d = (0, a.O0)(n),
+  let u = (0, o.O0)(t),
+    d = (0, o.O0)(n),
     f = new Uint8Array(l),
     p = i.b.create(e, u),
     _ = p._cloneInto().update(d);
@@ -45,9 +45,9 @@ function l(e, t, n, r) {
       DK: u,
       PRF: d,
       PRFSalt: f
-    } = o(e, t, n, r),
+    } = a(e, t, n, r),
     p = new Uint8Array(4),
-    _ = (0, a.GL)(p),
+    _ = (0, o.GL)(p),
     m = new Uint8Array(d.outputLen);
   for (let e = 1, t = 0; t < c; e++, t += d.outputLen) {
     let n = u.subarray(t, t + d.outputLen);

@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 213652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -19,26 +19,26 @@ var Chunk54381 = require("./54381.js"),
   Chunk522651 = require("./522651.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk674463 = require("./674463.js");
+  Chunk591868 = require("./591868.js");
 
 function v(e) {
   let {
     channel: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, o.ZP)(), v = (0, l.e7)([m.Z], () => m.Z.getSelectedParticipant(t.id)), O = (null == v ? true : v.type) === b.fO.STREAM, x = (0, l.e7)([f.Z], () => O ? f.Z.getActiveStreamForStreamKey(v.id) : null), {
-    ignoreSenderPreference: E
+  } = (0, o.ZP)(), v = (0, l.e7)([m.Z], () => m.Z.getSelectedParticipant(t.id)), _ = (null == v ? true : v.type) === b.fO.STREAM, O = (0, l.e7)([h.Z], () => _ ? h.Z.getActiveStreamForStreamKey(v.id) : null), {
+    ignoreSenderPreference: x
   } = d.Z.useExperiment({
     location: "ActionBarClipsButton"
   }, {
     autoTrackExposure: false
   }), {
-    viewerClippingAllowed: j,
-    isAtMaxSavingClipOperations: S
+    viewerClippingAllowed: E,
+    isAtMaxSavingClipOperations: j
   } = (0, l.cj)([s.Z], () => ({
-    viewerClippingAllowed: null != x && (s.Z.isViewerClippingAllowedForUser(x.ownerId) || E),
+    viewerClippingAllowed: null != O && (s.Z.isViewerClippingAllowedForUser(O.ownerId) || x),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), _ = (0, c.z8)(), P = (null == x ? true : x.ownerId) === h.default.getId(), I = !_ || !(P || j) || S || null == v, Z = r.useCallback(e => {
+  })), S = (0, c.z8)(), P = (null == O ? true : O.ownerId) === f.default.getId(), I = !S || !(P || E) || j || null == v, Z = r.useCallback(e => {
     var t, n;
     return (0, i.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -77,7 +77,7 @@ function v(e) {
     },
     disabled: I,
     iconComponent: Z,
-    label: null == x ? C.intl.string(C.t.eg5qtV) : P || j ? _ ? S ? true : C.intl.string(C.t.U4URzP) : C.intl.string(C.t.wSS1yN) : C.intl.string(C.t.aRifJX),
+    label: null == O ? C.intl.string(C.t.eg5qtV) : P || E ? S ? j ? true : C.intl.string(C.t.U4URzP) : C.intl.string(C.t.wSS1yN) : C.intl.string(C.t.aRifJX),
     grow: false
   })
 }

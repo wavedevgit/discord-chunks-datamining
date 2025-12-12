@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk556638 = require("./556638.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk175996 = require("./175996.js");
+  Chunk80568 = require("./80568.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -87,14 +87,14 @@ function k(e) {
     otherActivities: n,
     voiceActivityChannel: r
   } = e, i = [], {
-    descriptiveTextEnabled: a
+    descriptiveTextEnabled: o
   } = (0, y.f)({
     location: "StackedActivityStatus"
   }), {
-    enableTopNavButton: o
+    enableTopNavButton: a
   } = (0, _.Cq)({
     location: "StackedActivityStatus"
-  }), s = (0, p.ZP)(r), l = a || o;
+  }), s = (0, p.ZP)(r), l = o || a;
   return null != t && i.push(j(t)), n.forEach(e => {
     let {
       tooltip: t
@@ -108,11 +108,11 @@ function U(e) {
     textVariant: t,
     className: n,
     hasCustomStatusText: i,
-    totalActivityCount: a
-  } = e, s = a - 1;
+    totalActivityCount: o
+  } = e, s = o - 1;
   return (0, r.jsxs)(l.xvT, {
     variant: t,
-    className: o()(n, R.activityCounter),
+    className: a()(n, R.activityCounter),
     color: i ? "status-positive" : "none",
     children: ["+", s]
   })
@@ -125,7 +125,7 @@ function G(e) {
   } = e;
   return (0, r.jsx)(l.xvT, {
     variant: t,
-    className: o()(R.dot, n),
+    className: a()(R.dot, n),
     children: A.l
   })
 }
@@ -134,7 +134,7 @@ function Z(e) {
   let {
     user: t,
     activities: n,
-    applicationStream: a,
+    applicationStream: o,
     voiceChannel: l,
     textClassName: p,
     iconClassName: _,
@@ -145,7 +145,7 @@ function Z(e) {
     hideTooltip: x = false
   } = e;
   (0, f.Z)(null == t ? true : t.id);
-  let j = (null == a ? true : a.discoverable) !== false ? a : null,
+  let j = (null == o ? true : o.discoverable) !== false ? o : null,
     M = (0, m.Cf)(j),
     Z = (0, g.E)("ActivityStatus", l),
     F = i.useMemo(() => {
@@ -249,25 +249,25 @@ function Z(e) {
       totalActivityCount: X
     }),
     ei = () => 0 === X ? null : J && !W ? x ? (0, r.jsxs)("div", {
-      className: o()(R.activityContainer, $ && R.iconOnly),
+      className: a()(R.activityContainer, $ && R.iconOnly),
       children: [et(), er()]
     }) : (0, r.jsx)(u.aML, {
       "data-migration-pending": true,
-      tooltipContentClassName: o()(R.container, R.activitiesTooltip, R.hasMultipleActivities),
+      tooltipContentClassName: a()(R.container, R.activitiesTooltip, R.hasMultipleActivities),
       delay: A.X,
       text: en(),
       "aria-label": ee,
       children: e => (0, r.jsxs)("div", L(D({
-        className: o()(R.activityContainer, $ && R.iconOnly)
+        className: a()(R.activityContainer, $ && R.iconOnly)
       }, e), {
         children: [et(true), er()]
       }))
     }) : et(),
-    ea = o()(R.container, {
+    eo = a()(R.container, {
       [R.textXs]: "xs" === y,
       [R.textSm]: "sm" === y
     }),
-    eo = () => null == F && null == V ? null : (0, r.jsx)(I.Z, {
+    ea = () => null == F && null == V ? null : (0, r.jsx)(I.Z, {
       customStatusActivity: F,
       textSize: y,
       animateEmoji: O,
@@ -275,16 +275,16 @@ function Z(e) {
       hideTooltip: x,
       textClassName: p,
       iconClassName: _,
-      tooltipClassName: ea,
+      tooltipClassName: eo,
       voiceChannel: l,
       hangStatus: V,
       userId: null == t ? true : t.id
     });
   return (0, r.jsxs)("div", {
-    className: ea,
+    className: eo,
     children: [ei(), (null != F || null != V) && X > 0 && (0, r.jsx)(G, {
       textVariant: "text-".concat(y, "/normal"),
       className: p
-    }), eo(), P && (0, r.jsx)(v.Z, {})]
+    }), ea(), P && (0, r.jsx)(v.Z, {})]
   })
 }

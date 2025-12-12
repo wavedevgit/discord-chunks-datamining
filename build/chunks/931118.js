@@ -2,14 +2,14 @@
 /** chunk id: 931118, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => o,
+  ZP: () => a,
   tE: () => i
 });
 var Chunk722733 = require("./722733.js"),
   i = function(e) {
     return e.CONTROL = "control", e.NAGBAR_REFRESH = "nagbar-refresh", e.OFFER_BADGE = "offer-badge", e.OFFER_COUNTDOWN = "offer-countdown", e.HERO_COUNTDOWN = "hero-countdown", e
   }({});
-let a = (0, Chunk722733.Z)({
+let o = (0, Chunk722733.Z)({
     kind: "user",
     name: "2025-10-offer-reminders-ux-experiment",
     defaultConfig: {
@@ -45,6 +45,6 @@ let a = (0, Chunk722733.Z)({
       }
     }
   }),
-  o = e => a.useConfig({
+  a = e => o.useConfig({
     location: e
   })

@@ -77,22 +77,22 @@ module.exports = function(e) {
     return l.__get(e)
   }, t.createFromBlockArray = function(e, n) {
     var r = Array.isArray(e) ? e : e.contentBlocks,
-      a = i.createFromArray(r),
-      o = a.isEmpty() ? new c : c.createEmpty(a.first().getKey());
+      o = i.createFromArray(r),
+      a = o.isEmpty() ? new c : c.createEmpty(o.first().getKey());
     return new t({
-      blockMap: a,
+      blockMap: o,
       entityMap: n || l,
-      selectionBefore: o,
-      selectionAfter: o
+      selectionBefore: a,
+      selectionAfter: a
     })
   }, t.createFromText = function(e) {
     var n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : /\r\n?|\n/g,
       r = e.split(n).map(function(e) {
-        return e = p(e), new(d("draft_tree_data_support") ? s : o)({
+        return e = p(e), new(d("draft_tree_data_support") ? s : a)({
           key: u(),
           text: e,
           type: "unstyled",
-          characterList: _(h(a.EMPTY, e.length))
+          characterList: _(h(o.EMPTY, e.length))
         })
       });
     return t.createFromBlockArray(r)

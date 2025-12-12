@@ -14,7 +14,7 @@ function s(e) {
     i.ZP.addConditionalChangeListener(() => {
       var n;
       let s = i.ZP.getSelfMember(e);
-      return !(0, r.yE)(null != (n = null == s ? true : s.flags) ? n : 0, o.q.COMPLETED_ONBOARDING) || (a.Z.finishOnboarding(e), t(), false)
+      return !(0, r.yE)(null != (n = null == s ? true : s.flags) ? n : 0, a.q.COMPLETED_ONBOARDING) || (o.Z.finishOnboarding(e), t(), false)
     })
   })
 }

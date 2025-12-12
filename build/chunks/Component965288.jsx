@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 91053 **/
 /** chunk id: 965288, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N,
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk5192 = require("./5192.js"),
   Chunk590415 = require("./590415.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk510786 = require("./510786.js");
+  Chunk383519 = require("./383519.js");
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -69,21 +69,21 @@ let Z = Chunk473749.memo(function(e) {
       isIgnored: s
     } = e;
     return (0, r.jsxs)("div", {
-      className: _.textContainer,
+      className: I.textContainer,
       children: [a ? (0, r.jsx)(p.t6m, {
         size: "lg",
-        className: _.blockedIcon,
+        className: I.blockedIcon,
         color: u.Z.unsafe_rawColors.RED_400.css
       }) : null, s ? (0, r.jsx)(p.kZF, {
         size: "lg",
-        className: _.blockedIcon
+        className: I.blockedIcon
       }) : null, (0, r.jsx)(p.Text, {
-        className: _.text,
+        className: I.text,
         variant: "text-sm/normal",
         color: "text-strong",
-        children: v.ZP.getName(t, n, i)
+        children: j.ZP.getName(t, n, i)
       }), l ? (0, r.jsx)(p.Ucv, {
-        className: _.boost,
+        className: I.boost,
         color: u.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
       }) : null]
     })
@@ -100,22 +100,22 @@ let Z = Chunk473749.memo(function(e) {
       blocked: c,
       ignored: d,
       rtsState: u
-    } = n, h = u === C.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, f = u === C.xO.REQUESTED_TO_SPEAK || h;
+    } = n, h = u === v.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, f = u === v.xO.REQUESTED_TO_SPEAK || h;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: _.avatarContainer,
+        className: I.avatarContainer,
         children: [f && (0, r.jsx)(p.V9, {
           size: "md",
           color: "currentColor",
-          className: a()(_.icon, {
-            [_.invited]: h
+          className: a()(I.icon, {
+            [I.invited]: h
           })
         }), (0, r.jsx)("img", {
           src: null != (t = o.getAvatarURL(l.guild_id, 56, false)) ? t : true,
           alt: o.username,
           "aria-label": o.username,
-          className: a()(_.avatar, {
-            [_.faded]: c || d
+          className: a()(I.avatar, {
+            [I.faded]: c || d
           })
         })]
       }), (0, r.jsx)(Z, {
@@ -129,7 +129,7 @@ let Z = Chunk473749.memo(function(e) {
     })
   }),
   T = () => (0, Chunk54381.jsx)("div", {
-    className: Chunk510786.tileBaseContainer
+    className: Chunk383519.tileBaseContainer
   }),
   N = Chunk473749.memo(function(e) {
     let {
@@ -138,43 +138,43 @@ let Z = Chunk473749.memo(function(e) {
     } = e, {
       user: s,
       blocked: u
-    } = t, v = l.getGuildId(), C = x.default.getId(), {
+    } = t, j = l.getGuildId(), v = O.default.getId(), {
       newestAnalyticsLocation: Z
-    } = (0, g.ZP)(f.Z.AUDIENCE_TILE), T = (0, y.bp)(), N = (0, d.e7)([j.ZP], () => {
+    } = (0, g.ZP)(f.Z.AUDIENCE_TILE), T = (0, _.bp)(), N = (0, d.e7)([x.ZP], () => {
       var e;
-      return null != v && (null == (e = j.ZP.getMember(v, s.id)) ? true : e.premiumSince) != null
-    }, [v, s.id]), R = i.useRef(null);
-    o()(null != v, "Channel cannot be guildless");
+      return null != j && (null == (e = x.ZP.getMember(j, s.id)) ? true : e.premiumSince) != null
+    }, [j, s.id]), R = i.useRef(null);
+    o()(null != j, "Channel cannot be guildless");
     let w = i.useCallback(e => {
       (0, m.h)({
         type: c.ImpressionTypes.MENU,
         name: c.ImpressionNames.CALL_TILE_CONTEXT_MENU,
         properties: {
           location: "AudienceTile",
-          is_tile_owner: s.id === C,
-          tile_type: I.TH.USER
+          is_tile_owner: s.id === v,
+          tile_type: C.TH.USER
         }
       }), (0, h.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("9393")]).then(n.bind(n, 757387));
+        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
         return t => (0, r.jsx)(e, E(S({}, t), {
           user: s,
-          guildId: v,
+          guildId: j,
           channel: l,
           showMediaItems: true,
           showStageChannelItems: true,
           showChatItems: false,
           onInteraction: (0, b.u)("GuildChannelUserContextMenu", Z, {
             targetUserId: s.id,
-            tileType: I.TH.USER
+            tileType: C.TH.USER
           })
         }))
       }, {
         context: T
       })
-    }, [s, C, T, v, l, Z]);
-    return (0, r.jsx)(O.Z, {
+    }, [s, v, T, j, l, Z]);
+    return (0, r.jsx)(y.Z, {
       targetElementRef: R,
       user: s,
       guildId: l.guild_id,
@@ -182,15 +182,15 @@ let Z = Chunk473749.memo(function(e) {
       clickTrap: true,
       children: e => (0, r.jsx)(p.P3F, E(S({
         innerRef: R,
-        className: a()(_.tileContainer, {
-          [_.singleIcon]: N || u,
-          [_.doubleIcon]: N && u
+        className: a()(I.tileContainer, {
+          [I.singleIcon]: N || u,
+          [I.doubleIcon]: N && u
         }),
         onContextMenu: w
       }, e), {
         children: (0, r.jsx)(P, {
           participant: t,
-          guildId: v,
+          guildId: j,
           channel: l,
           isPremium: N
         })

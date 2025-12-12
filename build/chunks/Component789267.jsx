@@ -24,32 +24,32 @@ function l(e) {
     usernameHook: d,
     onClickJoinCall: f
   } = e, p = (0, i.ZP)(t), _ = p.nick, m = d(p), h = s(t);
-  return c ? (0, r.jsx)(a.Z, {
+  return c ? (0, r.jsx)(o.Z, {
     icon: n(154239),
     timestamp: t.timestamp,
     compact: l,
-    children: null != h ? o.intl.format(o.t.AcqBmO, {
+    children: null != h ? a.intl.format(a.t.AcqBmO, {
       username: _,
       usernameHook: m,
       callDuration: h
-    }) : o.intl.format(o.t["43phHx"], {
+    }) : a.intl.format(a.t["43phHx"], {
       username: _,
       usernameHook: m
     })
-  }) : (0, r.jsxs)(a.Z, {
+  }) : (0, r.jsxs)(o.Z, {
     icon: n(344163),
     timestamp: t.timestamp,
     compact: l,
-    children: [null != h ? o.intl.format(o.t["7TeC1P"], {
+    children: [null != h ? a.intl.format(a.t["7TeC1P"], {
       username: _,
       usernameHook: m,
       callDuration: h
-    }) : o.intl.format(o.t.LuB5RD, {
+    }) : a.intl.format(a.t.LuB5RD, {
       username: _,
       usernameHook: m
-    }), u ? (0, r.jsx)(a.Z.Action, {
+    }), u ? (0, r.jsx)(o.Z.Action, {
       onClick: f,
-      children: o.intl.string(o.t.oa9mvZ)
+      children: a.intl.string(a.t.oa9mvZ)
     }) : null]
   })
 }

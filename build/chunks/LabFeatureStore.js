@@ -32,7 +32,7 @@ class u extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     }
   }
   initialize(e) {
-    for (var t in o.Z) {
+    for (var t in a.Z) {
       var n, r;
       l[t] = null != (r = null == e || null == (n = e.toggleStates) ? true : n[t]) && r
     }

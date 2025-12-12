@@ -18,9 +18,9 @@ function d(e) {
     initialPlanId: n,
     guildId: d,
     setAnalyticsData: m,
-    handleClose: f
+    handleClose: p
   } = e, {
-    blockedPayments: p,
+    blockedPayments: f,
     setStep: b,
     hasFetchedSubscriptions: h,
     hasFetchedSubscriptionPlans: g,
@@ -42,7 +42,7 @@ function d(e) {
   }, [d, C]), r.useEffect(() => {
     y(n);
     let e = null != n ? a.Z.get(n) : null;
-    P || p || (m(t => {
+    P || f || (m(t => {
       var n, i;
       let r = null != e ? (0, o.aS)(e.id, false, S, O) : true;
       return n = function(e) {
@@ -78,7 +78,7 @@ function d(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
       }), n
     }), null != e && (v(null == e ? true : e.skuId), b(t)))
-  }, [p, n, S, P, O, j, m, y, v, b, t]), P) ? (0, i.jsx)(u.Z, {}) : p ? (0, i.jsx)(l.Vq, {
-    onClose: f
+  }, [f, n, S, P, O, j, m, y, v, b, t]), P) ? (0, i.jsx)(u.Z, {}) : f ? (0, i.jsx)(l.Vq, {
+    onClose: p
   }) : null
 }

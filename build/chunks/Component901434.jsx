@@ -1,7 +1,7 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 91053 **/
 /** chunk id: 901434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,61 +19,61 @@ var Chunk54381 = require("./54381.js"),
   Chunk501655 = require("./501655.js"),
   Chunk504185 = require("./504185.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk951840 = require("./951840.js");
-let x = (e, t) => g.ZP.getName(e.getGuildId(), e.id, t.user),
-  j = function(e) {
+  Chunk427538 = require("./427538.js");
+let O = (e, t) => g.ZP.getName(e.getGuildId(), e.id, t.user),
+  x = function(e) {
     let {
       participants: t,
       channel: n,
       hasConnectPermission: g
-    } = e, j = (0, u.J)(n.guild_id), v = i.useCallback(() => {
-      j ? (0, d.hk)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, j]), C = t.filter(e => e.type === m.Ui.VOICE), I = 4 === C.length ? 2 : 3, _ = (0, l.Wu)([o.Z], () => C.map(e => o.Z.getParticipant(n.id, e.id)).filter(f.lm), [n.id, C]);
+    } = e, x = (0, u.J)(n.guild_id), j = i.useCallback(() => {
+      x ? (0, d.hk)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
+    }, [n.id, n.guild_id, x]), v = t.filter(e => e.type === m.Ui.VOICE), C = 4 === v.length ? 2 : 3, I = (0, l.Wu)([o.Z], () => v.map(e => o.Z.getParticipant(n.id, e.id)).filter(f.lm), [n.id, v]);
     return (0, r.jsxs)("div", {
-      className: O.container,
+      className: y.container,
       children: [(0, r.jsx)(h.Z, {}), (0, r.jsx)("div", {
-        className: O.tiles,
+        className: y.tiles,
         style: {
-          maxWidth: 168 * I
+          maxWidth: 168 * C
         },
-        children: _.slice(0, 5).map(e => (0, r.jsx)(p.ZP, {
+        children: I.slice(0, 5).map(e => (0, r.jsx)(p.ZP, {
           participant: e,
           channel: n,
-          className: O.tile,
+          className: y.tile,
           inCall: true,
           noVideoRender: true,
           popoutType: c.P.NO_POPOUT,
           width: 48
         }, e.id))
       }), (0, r.jsx)(a.Heading, {
-        className: O.channelName,
+        className: y.channelName,
         variant: "heading-xxl/normal",
         children: n.name
       }), (0, r.jsx)("div", {
-        className: O.participantsRow,
+        className: y.participantsRow,
         children: (0, r.jsx)(a.Text, {
           tag: "div",
           color: "text-default",
           variant: "heading-lg/normal",
-          children: 0 === C.length ? y.intl.string(y.t.FUVhyC) : 1 === C.length ? y.intl.formatToPlainString(y.t.EQwZlN, {
-            a: x(n, C[0])
-          }) : 2 === C.length ? y.intl.formatToPlainString(y.t.zBcKoA, {
-            a: x(n, C[0]),
-            b: x(n, C[1])
-          }) : C.length > 2 ? y.intl.formatToPlainString(y.t["3AqFaG"], {
-            a: x(n, C[0]),
-            b: x(n, C[1]),
-            n: C.length - 2
+          children: 0 === v.length ? _.intl.string(_.t.FUVhyC) : 1 === v.length ? _.intl.formatToPlainString(_.t.EQwZlN, {
+            a: O(n, v[0])
+          }) : 2 === v.length ? _.intl.formatToPlainString(_.t.zBcKoA, {
+            a: O(n, v[0]),
+            b: O(n, v[1])
+          }) : v.length > 2 ? _.intl.formatToPlainString(_.t["3AqFaG"], {
+            a: O(n, v[0]),
+            b: O(n, v[1]),
+            n: v.length - 2
           }) : true
         })
       }), (0, r.jsxs)("div", {
-        className: O.buttonContainer,
+        className: y.buttonContainer,
         children: [(0, r.jsx)("div", {
-          className: O.joinButton,
+          className: y.joinButton,
           children: (0, r.jsx)(a.Button, {
             variant: "overlay-primary",
-            text: g ? y.intl.string(y.t["7vb2cc"]) : y.intl.string(y.t.TVBCKZ),
-            onClick: v,
+            text: g ? _.intl.string(_.t["7vb2cc"]) : _.intl.string(_.t.TVBCKZ),
+            onClick: j,
             disabled: !g
           })
         }), (0, r.jsx)(b.e, {

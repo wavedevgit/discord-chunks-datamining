@@ -48,7 +48,7 @@ let f = Object.freeze({
   }),
   p = function(e, t, n) {
     let l = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 0,
-      c = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
+      c = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
       u = (0, i.e7)([s.Z], () => s.Z.getScrollPosition());
     (0, r.useEffect)(() => {
       let r = e.current;
@@ -56,7 +56,7 @@ let f = Object.freeze({
         let e = requestAnimationFrame(() => {
           r.scrollIntoView(d({
             behavior: c ? "auto" : "smooth"
-          }, n)), a.Z.clearScrollPosition(f[t])
+          }, n)), o.Z.clearScrollPosition(f[t])
         });
         return () => cancelAnimationFrame(e)
       }, l)

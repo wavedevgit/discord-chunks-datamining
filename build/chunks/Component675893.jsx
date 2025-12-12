@@ -46,19 +46,19 @@ function g(e) {
     onOpenUserProfileModal: m
   } = e, g = i.useMemo(() => n.filter(e => e instanceof s.q), [n]), {
     analyticsLocations: E
-  } = (0, a.ZP)(), {
+  } = (0, o.ZP)(), {
     trackUserProfileAction: b
-  } = (0, o.KZ)(), y = (0, c.d)(t.id, g), O = i.useCallback(() => {
+  } = (0, a.KZ)(), y = (0, c.d)(t.id, g), O = i.useCallback(() => {
     null == m || m({
       section: p.oh.WIDGETS
     })
   }, [m]), v = i.useCallback(e => {
     let t = false,
       i = [];
-    for (let a of n) a instanceof s.q ? null != y[a.applicationId] && i.push((0, r.jsx)(d.Z, h({
-      previewData: y[a.applicationId],
+    for (let o of n) o instanceof s.q ? null != y[o.applicationId] && i.push((0, r.jsx)(d.Z, h({
+      previewData: y[o.applicationId],
       onClick: O
-    }, e), "application-widget-".concat(a.applicationId))) : a instanceof l.zy && !t && (i.push((0, r.jsx)(f.Z, h({
+    }, e), "application-widget-".concat(o.applicationId))) : o instanceof l.zy && !t && (i.push((0, r.jsx)(f.Z, h({
       widgets: n,
       onClick: O
     }, e), "collection-breadcrumb")), t = true);

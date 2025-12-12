@@ -8,7 +8,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
-  Chunk192231 = require("./192231.js");
+  Chunk754921 = require("./754921.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,20 +65,20 @@ class d extends(r = Chunk473749.PureComponent) {
     let {
       children: n,
       mirror: r,
-      paused: o,
+      paused: a,
       component: s
     } = this.props;
     if (null == e) {
       if (null == n) return null;
-      let e = a.Children.only(n);
-      return a.cloneElement(e, u({
+      let e = o.Children.only(n);
+      return o.cloneElement(e, u({
         style: {
           display: t && !r ? true : "none"
         }
       }, e.props))
     }
     return (0, i.jsx)(s, {
-      paused: o,
+      paused: a,
       className: l.media,
       streamId: e,
       onReady: t ? null : this.handleReady
@@ -90,8 +90,8 @@ class d extends(r = Chunk473749.PureComponent) {
       className: t
     } = this.props;
     return (0, Chunk54381.jsxs)("div", {
-      className: s()(Chunk192231.video, exports, {
-        [Chunk192231.mirror]: module
+      className: s()(Chunk754921.video, exports, {
+        [Chunk754921.mirror]: module
       }),
       onDoubleClick: this.handleDoubleClick,
       onContextMenu: this.handleContextMenu,

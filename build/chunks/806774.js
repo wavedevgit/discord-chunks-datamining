@@ -1,17 +1,16 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 2262 **/
 /** chunk id: 806774, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  M: () => i
+  M: () => r
 });
 var Chunk570140 = require("./570140.js");
 
-function i(e) {
+function r(e) {
   let {
     emojiId: t,
     userImage: n
   } = e;
-  r.Z.dispatch({
+  l.Z.dispatch({
     type: "EMOJI_CACHE_RAW_EMOJI_ASSET",
     emojiId: t,
     userImage: n

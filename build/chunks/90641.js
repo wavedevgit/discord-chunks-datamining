@@ -32,7 +32,7 @@ async function h(e, t) {
       await (0, d.om)(f.GB), null == t || t()
     } catch (t) {
       var n;
-      let e = new o.Hx(t);
+      let e = new a.Hx(t);
       r.Z.dispatch({
         type: "SECURE_FRAMES_SETTINGS_UPDATE",
         persistentCodesEnabled: false
@@ -60,7 +60,7 @@ let g = {
       confirmText: _.intl.string(_.t.aTuFYT),
       onConfirm: async () => {
         await h(e, () => {
-          a.default.disconnect(), a.default.selectVoiceChannel(t)
+          o.default.disconnect(), o.default.selectVoiceChannel(t)
         })
       }
     }) : await h(e)

@@ -4,7 +4,7 @@
 var Chunk98405 = require("./98405.js"),
   Chunk46015 = require("./46015.js"),
   Chunk88996 = require("./88996.js"),
-  o = Chunk46015([].reverse),
+  a = Chunk46015([].reverse),
   s = [1, 2];
 Chunk98405({
   target: "Array",
@@ -12,6 +12,6 @@ Chunk98405({
   forced: String(s) === String(s.reverse())
 }, {
   reverse: function() {
-    return Chunk88996(this) && (this.length = this.length), o(this)
+    return Chunk88996(this) && (this.length = this.length), a(this)
   }
 })

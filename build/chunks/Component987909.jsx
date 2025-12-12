@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk709054 = require("./709054.js"),
   Chunk838440 = require("./838440.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk888022 = require("./888022.js");
+  Chunk463116 = require("./463116.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,15 +66,15 @@ function S(e) {
     message: n,
     currentUser: r
   } = e;
-  return (0, a.e7)([f.Z, d.ZP], () => {
+  return (0, o.e7)([f.Z, d.ZP], () => {
     var e;
     let i = t.guild_id;
     if (null == r || null == i) returnfalse;
-    let a = (0, u.xl)(t),
-      o = f.Z.can(g.Plq.SEND_MESSAGES, t),
+    let o = (0, u.xl)(t),
+      a = f.Z.can(g.Plq.SEND_MESSAGES, t),
       s = null == (e = d.ZP.getMember(i, r.id)) ? true : e.isPending,
       l = n.author.bot;
-    return o && !a && !s && !l
+    return a && !o && !s && !l
   })
 }
 
@@ -116,7 +116,7 @@ function A(e) {
   let {
     currentUser: t,
     channel: n,
-    message: a,
+    message: o,
     buttonLabels: s,
     stickers: u,
     event: d,
@@ -124,12 +124,12 @@ function A(e) {
   } = e, p = i.useMemo(() => I({
     assets: u,
     currentUser: t,
-    message: a
-  }), [u, t, a]), _ = i.useMemo(() => I({
+    message: o
+  }), [u, t, o]), _ = i.useMemo(() => I({
     assets: s,
     currentUser: t,
-    message: a
-  }), [s, t, a]), m = i.useCallback(async () => {
+    message: o
+  }), [s, t, o]), m = i.useCallback(async () => {
     let {
       valid: e
     } = await (0, h.v)({
@@ -139,15 +139,15 @@ function A(e) {
     });
     e && (T({
       channel: n,
-      message: a,
+      message: o,
       sticker: p
     }), C({
       sticker: p,
       event: d,
       eventProperties: f
     }))
-  }, [n, a, p, d, f]);
-  return (0, r.jsx)(o.zxk, {
+  }, [n, o, p, d, f]);
+  return (0, r.jsx)(a.zxk, {
     icon: {
       type: "sticker",
       asset: p,
@@ -164,8 +164,8 @@ function N(e) {
     channel: t,
     message: n,
     buttonLabels: i,
-    stickers: a,
-    event: o,
+    stickers: o,
+    event: a,
     eventProperties: s
   } = e, l = p.default.getCurrentUser(), c = S({
     channel: t,
@@ -179,8 +179,8 @@ function N(e) {
       channel: t,
       message: n,
       buttonLabels: i,
-      stickers: a,
-      event: o,
+      stickers: o,
+      event: a,
       eventProperties: s
     })
   }) : null

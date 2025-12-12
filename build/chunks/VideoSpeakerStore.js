@@ -5,7 +5,7 @@ let r, i;
 require.d(exports, {
   Z: () => S
 }), require("./388685.js");
-var a, Chunk392711 = require("./392711.js"),
+var o, Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -30,26 +30,26 @@ function E() {
   let e, t = !(arguments.length > 0) || true === arguments[0] || arguments[0];
   if (null == r) e = null;
   else {
-    var n, a, o, l, c;
+    var n, o, a, l, c;
     null != (e = Chunk358221.Z.getSelectedParticipantId(r)) && Chunk358221.Z.isParticipantPoppedOut(r, module) && (e = null);
     let t = Chunk199902.Z.getLastActiveStream(),
       g = null != module ? Chunk358221.Z.getParticipant(r, module) : null;
     if ((null == g ? true : g.type) !== Chunk354459.fO.ACTIVITY && ((null == g ? true : g.type) !== Chunk354459.fO.USER || (null == (n = g.voiceState) ? true : require.selfVideo)) || (e = null), null != exports && null == module) {
-      let n = null == (a = Chunk358221.Z.getParticipant(r, (0, Chunk569545.V9)(exports))) ? true : a.id;
+      let n = null == (o = Chunk358221.Z.getParticipant(r, (0, Chunk569545.V9)(exports))) ? true : o.id;
       null == require || Chunk358221.Z.isParticipantPoppedOut(r, require) || (e = require)
     }
     if (null == module) {
       let t = Chunk314897.default.getId(),
         n = s()(Chunk358221.Z.getVideoParticipants(r)).filter(e => e.type === h.fO.USER && e.user.id !== t && !_.Z.isLocalVideoDisabled(e.user.id) && !u.Z.isParticipantPoppedOut(r, e.id)),
-        a = require.map(e => e.user.id),
+        o = require.map(e => e.user.id),
         d = Date.now();
-      null == (e = null == (o = require.map(e => [e.user.id, m.Z.getSpeakingDuration(e.user.id, d)]).filter(e => {
+      null == (e = null == (a = require.map(e => [e.user.id, m.Z.getSpeakingDuration(e.user.id, d)]).filter(e => {
         let [t, n] = e;
         return 0 !== n
       }).maxBy(e => {
         let [t, n] = e;
         return -n
-      })) ? true : Chunk392711[0]) && (e = null != i && a.has(i) ? i : null == (c = require.first()) || null == (l = Chunk570140.user) ? true : Chunk442837.id)
+      })) ? true : Chunk392711[0]) && (e = null != i && o.has(i) ? i : null == (c = require.first()) || null == (l = Chunk570140.user) ? true : Chunk442837.id)
     }
   }
   i !== module && (i = module, exports && v.emitChange())
@@ -59,7 +59,7 @@ let b = s().debounce(E, 300);
 function y() {
   return b(), false
 }
-class O extends(a = Chunk442837.ZP.Store) {
+class O extends(o = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk358221.Z, Chunk314897.default, Chunk606304.Z, Chunk199902.Z, Chunk131951.Z), this.syncWith([Chunk358221.Z, Chunk199902.Z], y)
   }

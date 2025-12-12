@@ -10,11 +10,11 @@ var Chunk227399 = require("./227399.js"),
   Chunk473749 = require("./473749.js");
 
 function s(e) {
-  e = (0, a.v)(null != e ? e : {}, l);
+  e = (0, o.v)(null != e ? e : {}, l);
   let {
     locale: t
   } = (0, r.j)();
-  return (0, o.useMemo)(() => new(0, i.C)(t, e), [t, e])
+  return (0, a.useMemo)(() => new(0, i.C)(t, e), [t, e])
 }
 
 function l(e, t) {

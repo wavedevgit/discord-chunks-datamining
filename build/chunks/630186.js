@@ -3,17 +3,17 @@
 "use strict";
 require.d(exports, {
   Z: () => s,
-  _: () => o
+  _: () => a
 });
 var Chunk726542 = require("./726542.js"),
   Chunk973616 = require("./973616.js"),
   Chunk388032 = require("./388032.jsx");
-let o = "twitch:";
+let a = "twitch:";
 class s extends Chunk973616.ZP {
   getIconURL() {
     return Chunk726542.Z.get("twitch").icon.lightPNG
   }
   constructor(e) {
-    super(e), this.id = "".concat(o).concat(e.url), this.name = a.intl.string(a.t.JIPtgq)
+    super(e), this.id = "".concat(a).concat(e.url), this.name = o.intl.string(o.t.JIPtgq)
   }
 }

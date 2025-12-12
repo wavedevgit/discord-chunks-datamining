@@ -1,7 +1,7 @@
-/** Chunk was on 85668 **/
-/** chunk id: 528477, original params: t,e,a (module,exports,require) **/
+/** Chunk was on 88499 **/
+/** chunk id: 528477, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  n: () => v
+  n: () => O
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,119 +22,119 @@ var Chunk54381 = require("./54381.js"),
   Chunk773275 = require("./773275.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk498264 = require("./498264.js"),
+  Chunk36385 = require("./36385.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk817438 = require("./817438.js"),
+  Chunk742098 = require("./742098.js"),
   Chunk932889 = require("./932889.js");
-let v = t => {
+let O = e => {
   let {
-    onClose: e
-  } = t, a = (0, u.m)(), {
-    installationStatus: v,
-    perkAvailableToUser: k,
-    isSupportedPrivateBrowsingPerkPlatform: A,
-    isWeb: j,
-    connectionStatus: S
-  } = (0, h.xf)(), {
-    enabled: M
-  } = I.H.useConfig({
+    onClose: t
+  } = e, n = (0, u.m)(), {
+    installationStatus: O,
+    perkAvailableToUser: T,
+    isSupportedPrivateBrowsingPerkPlatform: N,
+    isWeb: P,
+    connectionStatus: w
+  } = (0, v.xf)(), {
+    enabled: I
+  } = g.H.useConfig({
     location: "private_browsing_perk_settings_page"
-  }), R = (0, r.useCallback)(() => {
-    (0, o.Z)(g.Z5c.NITRO_HOME), e()
-  }, [e]), D = (0, r.useCallback)(() => {
-    (0, m.openUserSettings)(_.n.PRIVATE_BROWSING_PANEL, {
-      section: g.oAB.PRIVATE_BROWSING
+  }), k = (0, r.useCallback)(() => {
+    (0, c.Z)(j.Z5c.NITRO_HOME), t()
+  }, [t]), R = (0, r.useCallback)(() => {
+    (0, p.openUserSettings)(m.n.PRIVATE_BROWSING_PANEL, {
+      section: j.oAB.PRIVATE_BROWSING
     })
-  }, []), O = [f.Ij.CONNECTED].includes(S), K = A && M && ![f._n.ZERO_TRUST, f._n.ERROR].includes(v) && !j && (!a || k), P = (0, r.useMemo)(() => {
-    switch (S) {
+  }, []), A = [f.Ij.CONNECTED].includes(w), D = N && I && ![f._n.ZERO_TRUST, f._n.ERROR].includes(O) && !P && (!n || T), Z = (0, r.useMemo)(() => {
+    switch (w) {
       case f.Ij.CONNECTED:
-        return T.intl.string(N.default.FBu3XJ);
+        return C.intl.string(y.default.FBu3XJ);
       case f.Ij.INITIALIZING:
-        return T.intl.string(N.default["00vkCU"]);
+        return C.intl.string(y.default["00vkCU"]);
       default:
-        return T.intl.string(N.default["A70/wR"])
+        return C.intl.string(y.default["A70/wR"])
     }
-  }, [S]), B = (0, r.useMemo)(() => {
-    if (!k) return T.intl.string(N.default.KN6HOb);
-    switch (v) {
+  }, [w]), L = (0, r.useMemo)(() => {
+    if (!T) return C.intl.string(y.default.KN6HOb);
+    switch (O) {
       case f._n.INSTALLED:
       case f._n.EXISTING_INSTALLATION:
-        return P;
+        return Z;
       default:
-        return T.intl.string(N.default.KN6HOb)
+        return C.intl.string(y.default.KN6HOb)
     }
-  }, [v, k, P]), U = (0, r.useMemo)(() => {
-    if (!k) return (0, n.jsx)(i.xvT, {
+  }, [O, T, Z]), M = (0, r.useMemo)(() => {
+    if (!T) return (0, a.jsx)(i.xvT, {
       variant: "text-sm/normal",
       color: "text-subtle",
-      children: T.intl.format(N.default["0UfKTY"], {
-        helpdeskArticle: C.w
+      children: C.intl.format(y.default["0UfKTY"], {
+        helpdeskArticle: x.w
       })
     });
-    switch (v) {
+    switch (O) {
       case f._n.INSTALLED:
       case f._n.EXISTING_INSTALLATION:
-        return (0, n.jsx)(i.xvT, {
+        return (0, a.jsx)(i.xvT, {
           variant: "text-sm/normal",
           color: "text-subtle",
-          children: O ? T.intl.format(N.default.zwW10o, {
+          children: A ? C.intl.format(y.default.zwW10o, {
             onClick: () => {
-              (0, l.j)(g.rMx.NITRO_PRIVACY_UPSELL_PERKS_CLICKED, {}), R()
+              (0, l.j)(j.rMx.NITRO_PRIVACY_UPSELL_PERKS_CLICKED, {}), k()
             }
-          }) : T.intl.format(N.default.D4hu0v, {
+          }) : C.intl.format(y.default.D4hu0v, {
             onClick: () => {
-              (0, l.j)(g.rMx.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), D()
+              (0, l.j)(j.rMx.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), R()
             }
           })
         });
       default:
-        return (0, n.jsx)(i.xvT, {
+        return (0, a.jsx)(i.xvT, {
           variant: "text-sm/normal",
           color: "text-subtle",
-          children: T.intl.format(N.default.D4hu0v, {
+          children: C.intl.format(y.default.D4hu0v, {
             onClick: () => {
-              (0, l.j)(g.rMx.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), D()
+              (0, l.j)(j.rMx.NITRO_PRIVACY_UPSELL_SETTINGS_CLICKED, {}), R()
             }
           })
         })
     }
-  }, [v, k, O, D, R]), {
-    analyticsLocations: w
-  } = (0, c.ZP)(s.Z.MASKED_LINK);
+  }, [O, T, A, R, k]), {
+    analyticsLocations: U
+  } = (0, o.ZP)(s.Z.MASKED_LINK);
   return ((0, r.useEffect)(() => {
-    K && x.default.track(g.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: E.cd.PRIVACY_PERK_EXIT_MODAL,
-      location_stack: w
+    D && h.default.track(j.rMx.PREMIUM_UPSELL_VIEWED, {
+      type: _.cd.PRIVACY_PERK_EXIT_MODAL,
+      location_stack: U
     })
-  }, [w, K]), K) ? (0, n.jsxs)("div", {
-    className: b.container,
-    children: [(0, n.jsx)(p.v, {
-      className: b.betaBadge
-    }), (0, n.jsxs)("div", {
-      className: b.contentContainer,
-      children: [k && (0, n.jsx)(i.$1m, {
-        className: b.imageWrapper,
+  }, [U, D]), D) ? (0, a.jsxs)("div", {
+    className: S.container,
+    children: [(0, a.jsx)(b.v, {
+      className: S.betaBadge
+    }), (0, a.jsxs)("div", {
+      className: S.contentContainer,
+      children: [T && (0, a.jsx)(i.$1m, {
+        className: S.imageWrapper,
         offsetBottom: false,
         color: "nitro-pink",
-        children: (0, n.jsx)("div", {
-          className: b.imageContainer,
-          children: (0, n.jsx)("img", {
-            src: L,
-            className: b.graphicContainer,
+        children: (0, a.jsx)("div", {
+          className: S.imageContainer,
+          children: (0, a.jsx)("img", {
+            src: E,
+            className: S.graphicContainer,
             alt: "Private Browsing Perk"
           })
         })
-      }), (0, n.jsxs)("div", {
-        className: b.details,
-        children: [(0, n.jsx)(i.X6q, {
+      }), (0, a.jsxs)("div", {
+        className: S.details,
+        children: [(0, a.jsx)(i.X6q, {
           variant: "heading-md/semibold",
-          children: B
-        }), U]
-      }), !k && (0, n.jsx)("div", {
-        className: b.ctaContainer,
-        children: (0, n.jsx)(d.Z, {
-          buttonTextOverride: T.intl.string(T.t["8x0jKT"]),
-          subscriptionTier: E.Si.TIER_2,
+          children: L
+        }), M]
+      }), !T && (0, a.jsx)("div", {
+        className: S.ctaContainer,
+        children: (0, a.jsx)(d.Z, {
+          buttonTextOverride: C.intl.string(C.t["8x0jKT"]),
+          subscriptionTier: _.Si.TIER_2,
           size: "sm",
           premiumModalAnalyticsLocation: {
             page: s.Z.MASKED_LINK

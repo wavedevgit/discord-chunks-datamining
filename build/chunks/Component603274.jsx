@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 603274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -8,7 +8,7 @@ require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk317381 = require("./317381.js"),
@@ -24,14 +24,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk853856 = require("./853856.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk998081 = require("./998081.js"),
-  Chunk66776 = require("./66776.js");
+  Chunk132789 = require("./132789.js"),
+  Chunk78480 = require("./78480.js");
 
-function S(e, t) {
+function E(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
-    className: x.row,
+    className: C.row,
     children: [(0, r.jsx)(e, {
-      className: x.activityIcon,
+      className: C.activityIcon,
       color: "currentColor"
     }), (0, r.jsx)(d.ZP, {
       guildId: true,
@@ -41,30 +41,30 @@ function S(e, t) {
   })
 }
 
-function I() {
+function S() {
   let e = (0, Chunk442837.Wu)([Chunk853856.Z, Chunk592125.Z], () => Chunk709054.default.keys(Chunk853856.Z.getFavoriteChannels()).map(e => g.Z.getChannel(e)).filter(Chunk823379.lm)),
     t = module.map(e => e.id),
-    n = module.filter(e => e.type === j.d4z.GUILD_VOICE),
-    i = module.filter(e => e.type === j.d4z.GUILD_STAGE_VOICE).map(e => e.id),
-    l = (0, Chunk442837.Wu)([Chunk938475.ZP], () => o().flatMap(require, e => m.ZP.getVoiceStatesForChannel(e).map(e => {
+    n = module.filter(e => e.type === v.d4z.GUILD_VOICE),
+    i = module.filter(e => e.type === v.d4z.GUILD_STAGE_VOICE).map(e => e.id),
+    l = (0, Chunk442837.Wu)([Chunk938475.ZP], () => a().flatMap(require, e => b.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
       } = e;
       return t
     })), [require]),
-    a = (0, Chunk442837.Wu)([Chunk565799.Z], () => o().flatMap(Chunk120356, e => f.Z.getMutableParticipants(e, h.pV.SPEAKER).filter(e => e.type === h.Ui.VOICE).map(e => {
+    o = (0, Chunk442837.Wu)([Chunk565799.Z], () => a().flatMap(Chunk120356, e => f.Z.getMutableParticipants(e, h.pV.SPEAKER).filter(e => e.type === h.Ui.VOICE).map(e => {
       let {
         user: t
       } = e;
       return t
     }))),
-    C = (0, Chunk442837.e7)([Chunk565799.Z], () => {
+    j = (0, Chunk442837.e7)([Chunk565799.Z], () => {
       let e = 0;
       for (let t of Chunk120356) e += Chunk565799.Z.getParticipantCount(exports, Chunk501655.pV.AUDIENCE);
       return module
     }),
-    E = (0, Chunk442837.Wu)([Chunk199902.Z], () => Chunk199902.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [exports]),
-    I = (0, Chunk442837.Wu)([Chunk317381.ZP], () => {
+    x = (0, Chunk442837.Wu)([Chunk199902.Z], () => Chunk199902.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [exports]),
+    S = (0, Chunk442837.Wu)([Chunk317381.ZP], () => {
       let e = Chunk317381.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
       for (let l of exports) {
@@ -73,48 +73,48 @@ function I() {
       }
       return require
     }, [exports]),
-    _ = (0, Chunk442837.Wu)([Chunk594174.default], () => I.map(e => b.default.getUser(e)), [I]),
-    P = (0, Chunk442837.Wu)([Chunk594174.default], () => Chunk66776.map(e => b.default.getUser(e)), [Chunk66776]),
-    N = S(Chunk481060.gj8, l.filter(e => !E.includes(e.id) && !I.includes(e.id))),
+    I = (0, Chunk442837.Wu)([Chunk594174.default], () => S.map(e => m.default.getUser(e)), [S]),
+    P = (0, Chunk442837.Wu)([Chunk594174.default], () => Chunk78480.map(e => m.default.getUser(e)), [Chunk78480]),
+    N = E(Chunk481060.gj8, l.filter(e => !x.includes(e.id) && !S.includes(e.id))),
     Z = 0 === Chunk392711.length ? null : (0, Chunk54381.jsxs)("div", {
-      className: Chunk998081.row,
+      className: Chunk132789.row,
       children: [(0, Chunk54381.jsx)(Chunk481060.ewx, {
         size: "lg",
         color: "currentColor",
-        className: Chunk998081.activityIcon
+        className: Chunk132789.activityIcon
       }), (0, Chunk54381.jsx)(Chunk884338.ZP, {
         guildId: true,
         users: Chunk392711,
         max: 3
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk998081.stageListenerPill,
+        className: Chunk132789.stageListenerPill,
         children: [(0, Chunk54381.jsx)(Chunk481060.VWR, {
           size: "xs",
           color: "currentColor"
         }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-          className: Chunk998081.stageListenerCount,
+          className: Chunk132789.stageListenerCount,
           color: "text-default",
           variant: "text-xs/medium",
           children: Chunk388032
         })]
       })]
     }),
-    w = S(Chunk481060.hGI, P.filter(e => null != e && !I.includes(e.id))),
-    T = S(Chunk481060.nG3, _);
+    w = E(Chunk481060.hGI, P.filter(e => null != e && !S.includes(e.id))),
+    T = E(Chunk481060.nG3, I);
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [Z, N, w, T]
   })
 }
 
-function _() {
+function I() {
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsx)("div", {
-      className: l()(Chunk998081.row, Chunk998081.rowGuildName),
+      className: l()(Chunk132789.row, Chunk132789.rowGuildName),
       children: (0, Chunk54381.jsx)("span", {
-        className: l()(Chunk998081.guildNameText, Chunk998081.guildNameTextLimitedSize),
+        className: l()(Chunk132789.guildNameText, Chunk132789.guildNameTextLimitedSize),
         children: Chunk388032.intl.string(Chunk388032.t.wMWyci)
       })
-    }), (0, Chunk54381.jsx)(I, {})]
+    }), (0, Chunk54381.jsx)(S, {})]
   })
 }
 
@@ -129,9 +129,9 @@ function P(e) {
     hideOnClick: true,
     spacing: 12,
     position: "right",
-    text: (0, r.jsx)(_, {}),
+    text: (0, r.jsx)(I, {}),
     "aria-label": t,
-    tooltipClassName: E.listItemTooltip,
+    tooltipClassName: x.listItemTooltip,
     onTooltipShow: n,
     children: e => {
       var t, n;

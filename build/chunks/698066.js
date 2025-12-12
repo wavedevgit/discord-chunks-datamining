@@ -1,22 +1,22 @@
-/** Chunk was on 74783 **/
+/** Chunk was on 74732 **/
 /** chunk id: 698066, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => i
 });
 var Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e) {
+function i(e) {
   let {
     problem: t,
     stream: n,
-    feedback: a,
-    streamApplication: i,
-    analyticsData: o,
-    location: c,
-    rating: s = null,
-    category: d,
-    variant: u
+    feedback: i,
+    streamApplication: o,
+    analyticsData: a,
+    location: s,
+    rating: c = null,
+    category: u,
+    variant: b
   } = e;
   r.default.track(l.rMx.STREAM_REPORT_PROBLEM, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -37,15 +37,15 @@ function a(e) {
     return e
   }({
     reason: t,
-    category: d,
-    reason_variant: u,
+    category: u,
+    reason_variant: b,
     streamer_user_id: n.ownerId,
     stream_channel_id: n.channelId,
     guild_id: n.guildId,
-    application_id: null != i ? i.id : null,
-    application_name: null != i ? i.name : null,
-    location: c,
-    rating: s,
-    feedback: a
-  }, o))
+    application_id: null != o ? o.id : null,
+    application_name: null != o ? o.name : null,
+    location: s,
+    rating: c,
+    feedback: i
+  }, a))
 }

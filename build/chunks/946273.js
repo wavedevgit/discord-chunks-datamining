@@ -24,9 +24,9 @@ function p(e, t, n) {
   let {
     maxDaysOld: r,
     minDaysOld: i = 0
-  } = t, s = o.Z.getGuild(e), l = null == s ? true : s.joinedAt;
+  } = t, s = a.Z.getGuild(e), l = null == s ? true : s.joinedAt;
   if (null != n) {
-    let t = a.ZP.getMember(e, n);
+    let t = o.ZP.getMember(e, n);
     l = (null == t ? true : t.joinedAt) == null ? null : new Date(t.joinedAt)
   }
   if (null == l) returnfalse;
@@ -46,12 +46,12 @@ function m(e) {
   return Date.now() - n < 864e5 * t
 }
 let h = (e, t) => {
-  let n = (0, i.e7)([a.ZP], () => {
+  let n = (0, i.e7)([o.ZP], () => {
       var n, i;
-      return (0, r.yE)(null != (i = null == (n = a.ZP.getMember(e, t)) ? true : n.flags) ? i : 0, u.q.DID_REJOIN)
+      return (0, r.yE)(null != (i = null == (n = o.ZP.getMember(e, t)) ? true : n.flags) ? i : 0, u.q.DID_REJOIN)
     }),
-    s = (0, i.e7)([o.Z], () => {
-      let t = o.Z.getGuild(e);
+    s = (0, i.e7)([a.Z], () => {
+      let t = a.Z.getGuild(e);
       return null != t && m(t)
     }),
     c = (0, i.e7)([l.default], () => {

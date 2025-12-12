@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk31775 = require("./31775.js"),
-  o = require.n(Chunk31775);
+  a = require.n(Chunk31775);
 require("./711739.js");
 var Chunk159635 = require("./159635.js"),
   l = require.n(Chunk159635),
@@ -56,7 +56,7 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = new(o())({
+let E = new(a())({
   max: 50
 });
 
@@ -66,11 +66,11 @@ function b(e) {
   if (null != n) return n;
   let r = (0, p.yx)(e),
     i = (0, p.zq)(r),
-    a = {
+    o = {
       whitespaceSanitized: r,
       fullySanitized: i
     };
-  return E.set(t, a), a
+  return E.set(t, o), o
 }
 let y = ["http:", "https:", "discord:", "tel:", "sms:", "mailto:"],
   O = [Chunk172244.b.TEXT, Chunk172244.b.UNDERLINE, Chunk172244.b.STRONG, Chunk172244.b.ITALICS, Chunk172244.b.STRIKETHROUGH, Chunk172244.b.INLINE_CODE, Chunk172244.b.SPOILER, Chunk172244.b.LINE_BREAK, Chunk172244.b.TIMESTAMP],
@@ -149,10 +149,10 @@ function P(e) {
     if (("http:" === r || "https:" === r) && (null == n.hostname || 0 === n.hostname.length)) throw Error("no hostname");
     let i = (0, p.MO)(n);
     n.username = "", n.password = "";
-    let a = (0, p.MO)(n);
+    let o = (0, p.MO)(n);
     return {
       target: i,
-      displayTarget: a
+      displayTarget: o
     }
   } catch (e) {
     return null
@@ -161,22 +161,22 @@ function P(e) {
 let R = g(m({}, l().defaultRules.link), {
   match: (e, t, n) => t.allowLinks ? l().defaultRules.link.match(e, t, n) : null,
   parse(e, t, n) {
-    let [r, a, o, s] = e, u = () => ({
+    let [r, o, a, s] = e, u = () => ({
       type: f.b.TEXT,
       content: r
     });
-    if (N(o)) return u();
-    let d = b(o),
-      p = b(a),
+    if (N(a)) return u();
+    let d = b(a),
+      p = b(o),
       _ = b(null != s ? s : ""),
       h = d.whitespaceSanitized,
       E = p.fullySanitized,
       y = _.fullySanitized,
       R = E.trim();
     if (0 === h.trim().length || 0 === R.length) return u();
-    let w = P(l().unescapeUrl(o)),
+    let w = P(l().unescapeUrl(a)),
       D = null == w,
-      x = (0, c.ZP)(a).length > 0 || (0, c.ZP)(s).length > 0;
+      x = (0, c.ZP)(o).length > 0 || (0, c.ZP)(s).length > 0;
     if (D || x) return u();
     let L = g(m({}, n), {
         allowEscape: false,

@@ -62,15 +62,15 @@ function g(e, t) {
   let {
     kind: r,
     dateString: i,
-    timeString: a
+    timeString: o
   } = (0, u.k)(t);
   return "today" === r ? f.intl.formatToPlainString(f.t["r50t/S"], {
     statusLabel: n,
-    timeString: a
+    timeString: o
   }) : f.intl.formatToPlainString(f.t["J+GJHv"], {
     statusLabel: n,
     dateString: i,
-    timeString: a
+    timeString: o
   })
 }
 async function E(e) {
@@ -83,19 +83,19 @@ async function E(e) {
   } = e;
   null == n && (n = s.Z.getStatus());
   let p = null != u ? "".concat(Date.now() + u) : "0";
-  await o.hW.updateAsync("status", e => {
+  await a.hW.updateAsync("status", e => {
     e.status = i.Gm.create({
       value: t
     }), e.statusExpiresAtMs = p, e.statusCreatedAtMs = n === t && null != e.statusCreatedAtMs ? e.statusCreatedAtMs : i.wA.create({
       value: "".concat(Date.now())
     })
-  }, o.fy.INFREQUENT_USER_ACTION);
+  }, a.fy.INFREQUENT_USER_ACTION);
   let m = g(t, p);
   if (r.uv.announce(m), f) return;
   let E = _({
     next_status: t,
     prev_status: n
-  }, a.Z.getGlobalStats());
+  }, o.Z.getGlobalStats());
   null != u && (E = h(_({}, E), {
     expire_duration_minutes: null != u ? u / 6e4 : null
   })), null != c && (E = _({}, E, c)), l.default.track(d.rMx.USER_STATUS_UPDATED, E)

@@ -10,38 +10,38 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk713938 = require("./713938.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk406096 = require("./406096.js"),
-  Chunk140606 = require("./140606.js"),
-  Chunk833600 = require("./833600.js");
+  Chunk359059 = require("./359059.js"),
+  Chunk942605 = require("./942605.js"),
+  Chunk534345 = require("./534345.js");
 let f = e => {
   let {
     onComplete: t,
     data: n
-  } = e, f = (0, r.useId)(), p = null, h = null, x = n.scopes.some(e => (0, s.sg)(e));
-  return n.clientId === o.t.PLAYSTATION_APPLICATION_ID || n.clientId === o.t.PLAYSTATION_STAGING_APPLICATION_ID ? p = d.Z : x && (p = u.Z), null != n.twoWayLinkCode ? h = c.intl.string(c.t.QhATl2) : x && (h = c.intl.string(c.t.vBPvK3)), (0, a.jsxs)("div", {
-    className: l.content,
-    children: [null != p ? (0, a.jsx)("img", {
+  } = e, f = (0, a.useId)(), p = null, h = null, x = n.scopes.some(e => (0, s.sg)(e));
+  return n.clientId === o.t.PLAYSTATION_APPLICATION_ID || n.clientId === o.t.PLAYSTATION_STAGING_APPLICATION_ID ? p = d.Z : x && (p = u.Z), null != n.twoWayLinkCode ? h = l.intl.string(l.t.QhATl2) : x && (h = l.intl.string(l.t.vBPvK3)), (0, r.jsxs)("div", {
+    className: c.content,
+    children: [null != p ? (0, r.jsx)("img", {
       src: p,
-      className: l.artwork,
+      className: c.artwork,
       alt: "",
       "aria-labelledby": f
-    }) : null, (0, a.jsxs)("div", {
-      className: l.innerContent,
-      children: [(0, a.jsx)(i.Heading, {
+    }) : null, (0, r.jsxs)("div", {
+      className: c.innerContent,
+      children: [(0, r.jsx)(i.Heading, {
         variant: "heading-xl/extrabold",
         id: f,
-        children: c.intl.string(c.t.qDtJmD)
-      }), null != h ? (0, a.jsx)(i.Text, {
+        children: l.intl.string(l.t.qDtJmD)
+      }), null != h ? (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "text-default",
         children: h
       }) : null]
-    }), (0, a.jsx)("div", {
+    }), (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: l.footerButton,
-      children: (0, a.jsx)(i.Button, {
+      className: c.footerButton,
+      children: (0, r.jsx)(i.Button, {
         variant: "primary",
-        text: c.intl.string(c.t.i4jeWR),
+        text: l.intl.string(l.t.i4jeWR),
         onClick: t
       })
     })]

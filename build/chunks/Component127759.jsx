@@ -77,7 +77,7 @@ let h = [{
         useStripeElements: t
       } = e, {
         analyticsLocations: n
-      } = (0, s.ZP)(o.Z.PAYMENT_FLOW_TEST_PAGE), l = i.useMemo(() => (0, a.Z)(), []), c = i.useCallback(() => {}, []);
+      } = (0, s.ZP)(a.Z.PAYMENT_FLOW_TEST_PAGE), l = i.useMemo(() => (0, o.Z)(), []), c = i.useCallback(() => {}, []);
       return (0, r.jsx)(u.Vy, {
         stepConfigs: h,
         analyticsLocations: n,

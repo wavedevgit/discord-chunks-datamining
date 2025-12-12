@@ -14,13 +14,13 @@ let r = (0, require("./663042.js").U)(e => ({
         utmSourceCurrent: n,
         utmMediumCurrent: r,
         utmCampaignCurrent: i,
-        utmContentCurrent: a
+        utmContentCurrent: o
       } = t;
       return e({
         utmSourceCurrent: n,
         utmMediumCurrent: r,
         utmCampaignCurrent: i,
-        utmContentCurrent: a
+        utmContentCurrent: o
       })
     },
     getUtmCurrentContext: () => r.getState()

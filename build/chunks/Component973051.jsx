@@ -1,7 +1,7 @@
-/** Chunk was on 6841 **/
+/** Chunk was on 37709 **/
 /** chunk id: 973051, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,9 +14,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk613438 = require("./613438.js");
+  Chunk802179 = require("./802179.js");
 
-function b(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function b(e) {
   return e
 }
 
-function g(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,27 +48,27 @@ function g(e, t) {
   }), e
 }
 
-function h(e) {
+function x(e) {
   var t;
   let {
     guild: n,
-    prompts: h,
-    completeOnboarding: x,
-    setCurrentStep: v,
-    disableTracking: O,
-    previousPromptIndex: j
-  } = e, _ = i.useRef(null), y = (0, o.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [N, P] = i.useState(null != (t = null == y ? true : y.response) && t), C = (0, o.e7)([c.Z], () => c.Z.get(n.id)), E = i.useRef(null), D = i.useRef(null), I = i.useCallback(async () => {
+    prompts: x,
+    completeOnboarding: _,
+    setCurrentStep: b,
+    disableTracking: v,
+    previousPromptIndex: O
+  } = e, j = i.useRef(null), y = (0, o.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [N, P] = i.useState(null != (t = null == y ? true : y.response) && t), C = (0, o.e7)([c.Z], () => c.Z.get(n.id)), E = i.useRef(null), D = i.useRef(null), I = i.useCallback(async () => {
     if (null != C && null != y) {
       try {
-        await s.ZP.submitVerificationForm(n.id, g(b({}, C), {
-          formFields: [g(b({}, y), {
+        await a.ZP.submitVerificationForm(n.id, h(g({}, C), {
+          formFields: [h(g({}, y), {
             response: N
           })]
         }))
       } catch (e) {}
-      x()
+      _()
     }
-  }, [n.id, C, y, N, x]);
+  }, [n.id, C, y, N, _]);
 
   function Z(e) {
     let [t] = e;
@@ -85,32 +85,32 @@ function h(e) {
       null != t && null != t.lastElementChild && e.unobserve(t.lastElementChild)
     }
   }, [D, E]), null == y) ? null : (0, r.jsx)("div", {
-    className: m.prompt,
+    className: f.prompt,
     children: (0, r.jsxs)("div", {
-      className: m.promptContent,
+      className: f.promptContent,
       ref: E,
-      children: [(0, r.jsxs)(a.h21, {
-        className: m.scrollerContent,
-        ref: _,
-        children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsxs)(l.h21, {
+        className: f.scrollerContent,
+        ref: j,
+        children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
-          children: f.intl.string(f.t["b1JC+l"])
-        }), (0, r.jsx)(a.Heading, {
+          children: m.intl.string(m.t["b1JC+l"])
+        }), (0, r.jsx)(l.Heading, {
           variant: "heading-xl/semibold",
-          children: f.intl.string(f.t.prJqwT)
+          children: m.intl.string(m.t.prJqwT)
         }), (0, r.jsx)("div", {
-          className: m.termsFieldBody,
+          className: f.termsFieldBody,
           ref: D,
           children: y.values.map((e, t) => (0, r.jsxs)("div", {
-            className: m.termsRow,
-            children: [(0, r.jsx)(a.Text, {
+            className: f.termsRow,
+            children: [(0, r.jsx)(l.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
               children: "".concat(t + 1, ".")
-            }), (0, r.jsx)(a.Text, {
+            }), (0, r.jsx)(l.Text, {
               variant: "text-sm/normal",
-              className: m.termsRowContent,
+              className: f.termsRowContent,
               children: d.Z.parseGuildVerificationFormRule(e, true, {
                 channelId: n.rulesChannelId
               })
@@ -118,42 +118,42 @@ function h(e) {
           }, "term-".concat(t)))
         })]
       }), (0, r.jsx)("div", {
-        className: m.overlay
+        className: f.overlay
       }), (0, r.jsxs)("div", {
-        className: m.navButtons,
+        className: f.navButtons,
         children: [(0, r.jsx)("div", {
-          className: m.leftButtons,
-          children: false !== j && "cover" !== j && (0, r.jsx)(a.Button, {
+          className: f.leftButtons,
+          children: false !== O && "cover" !== O && (0, r.jsx)(l.Button, {
             variant: "secondary",
             size: "md",
-            text: f.intl.string(f.t["13/7kX"]),
+            text: m.intl.string(m.t["13/7kX"]),
             onClick: () => {
-              !O && (u.default.track(p.rMx.GUILD_ONBOARDING_STEP_COMPLETED, g(b({}, (0, l.hH)(n.id)), {
+              !v && (u.default.track(p.rMx.GUILD_ONBOARDING_STEP_COMPLETED, h(g({}, (0, s.hH)(n.id)), {
                 step: false,
                 skipped: false,
                 back: true,
                 options_selected: 0,
                 in_onboarding: true,
                 is_final_step: false
-              })), "number" == typeof j && j >= 0 && u.default.track(p.rMx.GUILD_ONBOARDING_STEP_VIEWED, g(b({}, (0, l.hH)(n.id)), {
-                step: j,
-                required: h[j].required
-              }))), v(j)
+              })), "number" == typeof O && O >= 0 && u.default.track(p.rMx.GUILD_ONBOARDING_STEP_VIEWED, h(g({}, (0, s.hH)(n.id)), {
+                step: O,
+                required: x[O].required
+              }))), b(O)
             },
-            icon: a.j9r,
+            icon: l.j9r,
             iconPosition: "start"
           })
         }), (0, r.jsxs)("div", {
-          className: m.rightButtons,
-          children: [(0, r.jsx)(a.Text, {
-            className: m.helpText,
+          className: f.rightButtons,
+          children: [(0, r.jsx)(l.Text, {
+            className: f.helpText,
             variant: "text-xs/normal",
             color: "text-muted",
-            children: N ? f.intl.string(f.t.arAe3I) : f.intl.string(f.t.D0CVAc)
-          }), (0, r.jsx)(a.Button, {
+            children: N ? m.intl.string(m.t.arAe3I) : m.intl.string(m.t.D0CVAc)
+          }), (0, r.jsx)(l.Button, {
             variant: "primary",
             size: "md",
-            text: "".concat(f.intl.string(f.t["8SuVoE"]), " \uD83C\uDF89"),
+            text: "".concat(m.intl.string(m.t["8SuVoE"]), " \uD83C\uDF89"),
             onClick: I,
             disabled: !N
           })]

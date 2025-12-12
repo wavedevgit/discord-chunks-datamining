@@ -5,19 +5,19 @@ require.d(exports, {
   Ih: () => l,
   MO: () => c,
   V0: () => u,
-  aQ: () => a,
+  aQ: () => o,
   al: () => s,
   n0: () => Chunk561535.n,
   og: () => i,
   u3: () => Chunk561535.u,
-  z: () => o
+  z: () => a
 });
 var Chunk561535 = require("./561535.js"),
   i = function(e) {
     return e.PNG = "png", e.APNG = "png", e.LOTTIE = "json", e.WEBP = "webp", e.GIF = "gif", e
   }({});
-let a = e => e !== r.u.PNG,
-  o = e => e !== r.n.STANDARD;
+let o = e => e !== r.u.PNG,
+  a = e => e !== r.n.STANDARD;
 var s = function(e) {
     return e[e.STICKER = 0] = "STICKER", e[e.CREATE_STICKER = 1] = "CREATE_STICKER", e
   }({}),

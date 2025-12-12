@@ -27,15 +27,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx");
 
 function I(e) {
-  if (e === a._.WEEK) return S.t.SjOZfm
+  if (e === o._.WEEK) return S.t.SjOZfm
 }
 let T = (e, t, n, r) => {
     let i = I(r),
-      a = f.ZP.getName(t.guild_id, t.id, n),
-      o = e.extra.artist.name;
+      o = f.ZP.getName(t.guild_id, t.id, n),
+      a = e.extra.artist.name;
     return S.intl.formatToMarkdownString(i, {
-      artist: o,
-      userName: a
+      artist: a,
+      userName: o
     }).replaceAll("*", "")
   },
   C = (e, t) => S.intl.formatToPlainString(S.t.Osmpr9, {
@@ -46,7 +46,7 @@ let T = (e, t, n, r) => {
     let {
       channel: t,
       entry: n,
-      onReaction: a,
+      onReaction: o,
       onVoiceChannelPreview: f
     } = e, {
       parent_title: I,
@@ -86,7 +86,7 @@ let T = (e, t, n, r) => {
         onClickThumbnail: M,
         channel: t,
         entry: n,
-        headerIcons: A === o.p.SPOTIFY ? (0, r.jsx)(y.Z, {
+        headerIcons: A === a.p.SPOTIFY ? (0, r.jsx)(y.Z, {
           onClick: j,
           Icon: u.Z,
           "aria-label": S.intl.string(S.t["0ZB/XE"])
@@ -102,7 +102,7 @@ let T = (e, t, n, r) => {
         })
       }), (0, r.jsx)(b.St, {
         children: (0, r.jsx)(b.WT, {
-          onReaction: a,
+          onReaction: o,
           onVoiceChannelPreview: f,
           user: R,
           channel: t,

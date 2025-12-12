@@ -66,29 +66,29 @@ function O(e, t) {
 }
 async function v(e, t, n) {
   if (null == u.Z.get(t)) {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SKU_FETCH_START",
       skuId: t
     });
     try {
       let i = d.Z.inTestModeForApplication(e) || c.Z.inDevModeForApplication(e),
-        o = {
+        a = {
           url: i ? g.ANM.STORE_SKU(t) : g.ANM.STORE_PUBLISHED_LISTINGS_SKU(t),
           rejectWithError: false
         };
-      n === r.v.VARIANTS_GROUP && (o.query = {
+      n === r.v.VARIANTS_GROUP && (a.query = {
         variants_return_style: n
       });
-      let s = await (0, m.Kb)(o);
-      a.Z.dispatch({
+      let s = await (0, m.Kb)(a);
+      o.Z.dispatch({
         type: "SKU_FETCH_SUCCESS",
         sku: i ? s.body : s.body.sku
-      }), i || a.Z.dispatch({
+      }), i || o.Z.dispatch({
         type: "STORE_LISTING_FETCH_SUCCESS",
         storeListing: s.body
       })
     } catch (e) {
-      throw a.Z.dispatch({
+      throw o.Z.dispatch({
         type: "SKU_FETCH_FAIL",
         skuId: t
       }), new l.Z("Failed to fetch SKU ".concat(t))
@@ -102,7 +102,7 @@ async function S(e) {
     url: g.ANM.APPLICATION_SKUS(e),
     rejectWithError: false
   })).body;
-  return a.Z.dispatch({
+  return o.Z.dispatch({
     type: "SKUS_FETCH_SUCCESS",
     skus: n
   }), n
@@ -112,7 +112,7 @@ async function I(e, t, n, r) {
     payment_source_id: n,
     gift: null == r ? true : r.isGift
   };
-  (d.Z.inTestModeForApplication(e) || c.Z.inDevModeForApplication(e)) && (l.test_mode = true), a.Z.dispatch({
+  (d.Z.inTestModeForApplication(e) || c.Z.inDevModeForApplication(e)) && (l.test_mode = true), o.Z.dispatch({
     type: "SKU_PURCHASE_PREVIEW_FETCH",
     skuId: t
   });
@@ -122,18 +122,18 @@ async function I(e, t, n, r) {
       query: l,
       oldFormErrors: true,
       rejectWithError: false
-    }), a.Z.dispatch({
+    }), o.Z.dispatch({
       type: "SKU_PURCHASE_PREVIEW_FETCH_SUCCESS",
       skuId: t,
       paymentSourceId: n,
       price: i.body
     })
   } catch (n) {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SKU_PURCHASE_PREVIEW_FETCH_FAILURE",
       skuId: t
     });
-    let e = n instanceof o.HF ? n : new o.HF(n);
+    let e = n instanceof a.HF ? n : new a.HF(n);
     if (e.code === s.SM.BILLING_BUNDLE_ALREADY_PURCHASED || e.code === s.SM.BILLING_BUNDLE_PARTIALLY_OWNED || e.code === s.SM.INVALID_BILLING_ADDRESS) throw e
   }
   return i
@@ -142,11 +142,11 @@ let T = {
   isGift: false
 };
 async function C(e, t, n, r, s) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "ORDER_CREATE_START"
   });
   try {
-    let o = {
+    let a = {
       order_line_items: [{
         sku_id: e,
         quantity: 1,
@@ -159,7 +159,7 @@ async function C(e, t, n, r, s) {
         request_gateway_country_code: n
       }
     };
-    r && (o.gifting_facet = {
+    r && (a.gifting_facet = {
       is_gift: true,
       gift_customization: {
         recipient_id: s.recipient_id,
@@ -173,19 +173,19 @@ async function C(e, t, n, r, s) {
     });
     let l = (await i.tn.post({
         url: g.ANM.ORDER_CREATE,
-        body: o,
+        body: a,
         rejectWithError: false
       })).body,
       c = l.id;
-    return a.Z.dispatch({
+    return o.Z.dispatch({
       type: "ORDER_CREATE_SUCCESS",
       orderId: c,
       order: l
     }), c
   } catch (e) {
-    throw a.Z.dispatch({
+    throw o.Z.dispatch({
       type: "ORDER_CREATE_FAIL"
-    }), new o.HF("Failed to create order: ".concat(e))
+    }), new a.HF("Failed to create order: ".concat(e))
   }
 }
 async function A(e, t, n) {
@@ -201,8 +201,8 @@ async function A(e, t, n) {
     countryCode: I,
     orderId: C
   } = b({}, T, n);
-  a.Z.wait(() => {
-    a.Z.dispatch({
+  o.Z.wait(() => {
+    o.Z.dispatch({
       type: "SKU_PURCHASE_START",
       applicationId: e,
       skuId: t
@@ -235,7 +235,7 @@ async function A(e, t, n) {
       oldFormErrors: true,
       rejectWithError: false
     });
-    return a.Z.dispatch({
+    return o.Z.dispatch({
       type: "SKU_PURCHASE_SUCCESS",
       skuId: t,
       libraryApplications: null != n.body.library_applications ? n.body.library_applications.filter(p.lm) : [],
@@ -247,12 +247,12 @@ async function A(e, t, n) {
       redirectConfirmation: false
     })
   } catch (i) {
-    let n = i instanceof o.HF ? i : new o.HF(i);
-    if ((n.code === s.SM.CONFIRMATION_REQUIRED || n.code === s.SM.AUTHENTICATION_REQUIRED) && a.Z.dispatch({
+    let n = i instanceof a.HF ? i : new a.HF(i);
+    if ((n.code === s.SM.CONFIRMATION_REQUIRED || n.code === s.SM.AUTHENTICATION_REQUIRED) && o.Z.dispatch({
         type: "SKU_PURCHASE_AWAIT_CONFIRMATION",
         skuId: t,
         isGift: E
-      }), a.Z.dispatch({
+      }), o.Z.dispatch({
         type: "SKU_PURCHASE_FAIL",
         applicationId: e,
         skuId: t,

@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 339144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => D,
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk144269 = require("./144269.jsx"),
   Chunk704215 = require("./704215.js"),
   Chunk907862 = require("./907862.js"),
@@ -34,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk538700 = require("./538700.js");
+  Chunk258628 = require("./258628.js");
 
 function R(e, t, n) {
   if (null == e) returnfalse;
@@ -47,9 +47,9 @@ function R(e, t, n) {
 }
 let D = Chunk473749.memo(function(e) {
     var t, l;
-    let o, s, h, O, {
-        stream: E,
-        canGoLive: S,
+    let a, s, h, y, {
+        stream: x,
+        canGoLive: E,
         guildId: w,
         isStreaming: D,
         channel: k,
@@ -69,7 +69,7 @@ let D = Chunk473749.memo(function(e) {
       } = e,
       {
         showRefreshedGoLiveModal: J
-      } = (0, j.a)({
+      } = (0, v.a)({
         location: "Activity Panel",
         autoTrackExposure: false
       }),
@@ -77,42 +77,42 @@ let D = Chunk473749.memo(function(e) {
         parentAnalyticsLocation: $,
         analyticsLocations: ee
       } = (0, g.ZP)(),
-      et = (0, x.Z)(H, "rtc-activity-panel"),
+      et = (0, C.Z)(H, "rtc-activity-panel"),
       en = R(H, V, B),
       er = i.useCallback(() => {
         var e;
-        a()(null != V, "Received null activity"), P.default.track(Z.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
+        o()(null != V, "Received null activity"), P.default.track(Z.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
           action_type: "invite_to_game",
           game_id: null != (e = null == U ? true : U.id) ? e : null,
           application_id: V.application_id
-        }), (0, m.v)($, m.d.INVITE), P.default.track(Z.rMx.OPEN_MODAL, {
+        }), (0, b.v)($, b.d.INVITE), P.default.track(Z.rMx.OPEN_MODAL, {
           type: "Send Join Invite",
           application_id: V.application_id,
           location: z.location
         }), (0, d.h7)(V, false)
       }, [V, z, $, U]),
       ei = i.useCallback((e, t) => () => {
-        (0, m.v)($, m.d.LEAVE_ACTIVITY), p.Z.leaveActivity({
+        (0, b.v)($, b.d.LEAVE_ACTIVITY), p.Z.leaveActivity({
           location: t,
           applicationId: e,
           showFeedback: true
         })
       }, [$]),
       el = i.useCallback(e => () => {
-        (0, m.v)($, m.d.LEAVE_ACTIVITY), v.Z.stopFrame({
+        (0, b.v)($, b.d.LEAVE_ACTIVITY), O.Z.stopFrame({
           applicationId: e
         })
       }, [$]),
-      ea = i.useCallback(() => {
-        (0, C.Z)(E)
-      }, [E]),
       eo = i.useCallback(() => {
-        let e = null != k && (0, I.vd)(k.type) ? k : null,
+        (0, j.Z)(x)
+      }, [x]),
+      ea = i.useCallback(() => {
+        let e = null != k && (0, S.vd)(k.type) ? k : null,
           t = null != e ? e.getGuildId() : w;
         (0, u.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("4093"), n.e("44183"), n.e("50442")]).then(n.bind(n, 60594));
+          } = await Promise.all([n.e("4093"), n.e("47863"), n.e("50442")]).then(n.bind(n, 60594));
           return n => {
             var i, l;
             return (0, r.jsx)(e, (i = function(e) {
@@ -134,7 +134,7 @@ let D = Chunk473749.memo(function(e) {
               return e
             }({}, n), l = l = {
               sourcePID: null == U ? true : U.pid,
-              selectSource: !!J && null != _.Z.getVoiceChannelId(),
+              selectSource: !!J && null != I.Z.getVoiceChannelId(),
               guildId: t,
               analyticsLocation: Z.Sbl.ACTIVITY_PANEL
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
@@ -161,17 +161,17 @@ let D = Chunk473749.memo(function(e) {
         guildId: et,
         applicationId: H.id
       }),
-      ef = (null != U || null == B || (0, f.R)()) && (D || S) ? (D ? (o = false, s = () => {
-        ea(), (0, m.v)($, m.d.STREAM, false)
-      }, h = u.g5r, O = T.intl.string(T.t.S5anIc)) : G ? (o = false, s = () => {
-        eo(), (0, m.v)($, m.d.STREAM, true)
-      }, h = u.hGI, O = null != U ? T.intl.formatToPlainString(T.t.AB5gTy, {
+      ef = (null != U || null == B || (0, f.R)()) && (D || E) ? (D ? (a = false, s = () => {
+        eo(), (0, b.v)($, b.d.STREAM, false)
+      }, h = u.g5r, y = T.intl.string(T.t.S5anIc)) : G ? (a = false, s = () => {
+        ea(), (0, b.v)($, b.d.STREAM, true)
+      }, h = u.hGI, y = null != U ? T.intl.formatToPlainString(T.t.AB5gTy, {
         game: U.name
-      }) : T.intl.string(T.t.FeUKeA)) : (o = true, s = null, h = u.hGI, O = null != k && (0, I.vd)(k.type) ? T.intl.string(T.t.uQn9B8) : null != w ? T.intl.string(T.t.fBXEoJ) : T.intl.string(T.t.n3feNG)), (0, r.jsx)("div", {
+      }) : T.intl.string(T.t.FeUKeA)) : (a = true, s = null, h = u.hGI, y = null != k && (0, S.vd)(k.type) ? T.intl.string(T.t.uQn9B8) : null != w ? T.intl.string(T.t.fBXEoJ) : T.intl.string(T.t.n3feNG)), (0, r.jsx)("div", {
         className: A.panelButtonContainer,
         children: (0, r.jsx)(N.Z, {
-          tooltipText: O,
-          disabled: o,
+          tooltipText: y,
+          disabled: a,
           onClick: s,
           icon: h
         })
@@ -192,20 +192,20 @@ let D = Chunk473749.memo(function(e) {
         onClick: el(F.applicationId),
         icon: u.PBZ
       }),
-      eb = null == E ? null : (0, r.jsx)(y.Z, {}),
-      em = !q || Q ? null : (0, r.jsx)(M, {
+      em = null == x ? null : (0, r.jsx)(_.Z, {}),
+      eb = !q || Q ? null : (0, r.jsx)(M, {
         runningGame: U,
         startAuthorization: () => {
           Y({
             analyticsLocations: ee
-          }) === b.r.RPC && (eu(true), null != es.current && clearTimeout(es.current), es.current = setTimeout(() => {
+          }) === m.r.RPC && (eu(true), null != es.current && clearTimeout(es.current), es.current = setTimeout(() => {
             eu(false)
           }, 9e4))
         },
         connectionApp: X,
         ref: K
       }),
-      ey = !q || Q ? null : (0, r.jsx)(c.J2, {
+      e_ = !q || Q ? null : (0, r.jsx)(c.J2, {
         title: T.intl.string(T.t.ULvRFd),
         body: T.intl.string(T.t["HJJDr+"]),
         targetElementRef: K,
@@ -219,9 +219,9 @@ let D = Chunk473749.memo(function(e) {
           eu(false), null != es.current && (clearTimeout(es.current), es.current = null)
         }
       });
-    return null == ef && null == eh && null == ep && null == eg && null == em && null == ed ? null : (0, r.jsxs)("div", {
+    return null == ef && null == eh && null == ep && null == eg && null == eb && null == ed ? null : (0, r.jsxs)("div", {
       className: A.actions,
-      children: [null != (t = null != ed ? ed : em) ? t : eh, ef, null != (l = null != ep ? ep : eg) ? l : eb, ey]
+      children: [null != (t = null != ed ? ed : eb) ? t : eh, ef, null != (l = null != ep ? ep : eg) ? l : em, e_]
     })
   }),
   M = Chunk473749.forwardRef(function(e, t) {
@@ -240,7 +240,7 @@ let D = Chunk473749.memo(function(e) {
           application_id: null != (t = null == l ? true : l.id) ? t : null
         }), i()
       },
-      icon: o.u,
+      icon: a.u,
       tooltipText: T.intl.string(T.t.sbdnpw)
     })
   });
@@ -255,21 +255,21 @@ function L(e) {
       application_id: t
     })
   }, [t]);
-  let [a, o] = (0, O.US)([s.z.GAME_SHOP_RTC_POPOVER], w.R.ACCOUNT_NAME_ZONE, true), c = i.useCallback(() => {
-    (0, E.eagerNavigateToSocialLayerStorefront)({
+  let [o, a] = (0, y.US)([s.z.GAME_SHOP_RTC_POPOVER], w.R.ACCOUNT_NAME_ZONE, true), c = i.useCallback(() => {
+    (0, x.eagerNavigateToSocialLayerStorefront)({
       guildId: n
     })
   }, [n]), d = i.useCallback(() => {
-    (0, E.default)({
+    (0, x.default)({
       guildId: n
-    }), o(w.L.USER_DISMISS)
-  }, [n, o]), f = i.useCallback(() => {
+    }), a(w.L.USER_DISMISS)
+  }, [n, a]), f = i.useCallback(() => {
     P.default.track(Z.rMx.RTC_GAME_SHOP_BUTTON_CLICKED, {
       application_id: t
     }), d()
   }, [t, d]), h = i.useCallback(() => {
-    o(w.L.USER_DISMISS)
-  }, [o]);
+    a(w.L.USER_DISMISS)
+  }, [a]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(N.Z, {
       tooltipText: T.intl.string(T.t.vyaWs7),
@@ -277,7 +277,7 @@ function L(e) {
       onMouseDown: c,
       icon: u.EOn,
       ref: l
-    }), a === s.z.GAME_SHOP_RTC_POPOVER ? (0, r.jsx)(S.Z, {
+    }), o === s.z.GAME_SHOP_RTC_POPOVER ? (0, r.jsx)(E.Z, {
       onActionClick: d,
       onRequestClose: h,
       targetElementRef: l,

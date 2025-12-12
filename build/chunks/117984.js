@@ -3,11 +3,11 @@
 require.d(exports, {
   CM: () => C,
   UT: () => v,
-  _Z: () => A,
+  _Z: () => E,
   kj: () => f,
   oC: () => h,
   s3: () => I,
-  uA: () => E,
+  uA: () => _,
   xh: () => p
 }), require("./388685.js");
 var Chunk524437 = require("./524437.js"),
@@ -93,13 +93,13 @@ function I(e) {
   }, i.fy.FREQUENT_USER_ACTION)
 }
 
-function E(e, n) {
+function _(e, n) {
   i.hW.updateAsync("favorites", t => {
     t.favoriteChannels[e].parentId = null != n ? n : "0"
   }, i.fy.FREQUENT_USER_ACTION)
 }
 
-function A() {
+function E() {
   Chunk675478.hW.updateAsync("favorites", e => {
     e.muted = !e.muted
   }, Chunk675478.fy.INFREQUENT_USER_ACTION)

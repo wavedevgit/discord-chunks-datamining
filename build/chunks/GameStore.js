@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => F,
   m: () => D
 }), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js");
-var i, a, Chunk442837 = require("./442837.js"),
+var i, o, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js"),
   Chunk911969 = require("./911969.js"),
@@ -42,7 +42,7 @@ let b = "GameStoreReportedGames",
   w = [];
 
 function D(e) {
-  var t, n, r, i, a, o, s, l, c, u;
+  var t, n, r, i, o, a, s, l, c, u;
   return {
     id: e.id,
     name: e.name,
@@ -50,8 +50,8 @@ function D(e) {
     overlay: null != (n = e.overlay) && n,
     overlayWarn: null != (r = e.overlay_warn) && r,
     overlayCompatibilityHook: null != (i = e.overlay_compatibility_hook) && i,
-    hook: null == (a = e.hook) || a,
-    aliases: null != (o = e.aliases) ? o : [],
+    hook: null == (o = e.hook) || o,
+    aliases: null != (a = e.aliases) ? a : [],
     supportsOutOfProcessOverlay: p.ZP.supportsOutOfProcessOverlay(e.overlay_methods),
     themes: null != (s = e.themes) ? s : [],
     icon: null != (l = e.icon_hash) ? l : true,
@@ -117,7 +117,7 @@ function G(e) {
   } = e;
   R = t.map(e => e.toLowerCase()), w = n.map(e => RegExp(e, "i")), P = Date.now()
 }
-class Z extends(a = Chunk442837.ZP.PersistedStore) {
+class Z extends(o = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
     null != e && (null != e.detectableGamesEtag && (C = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => L(e)))
@@ -193,14 +193,14 @@ class Z extends(a = Chunk442837.ZP.PersistedStore) {
     let r;
     if (null == e.exePath) return null;
     let i = e.exePath.split("/").pop(),
-      a = e.exePath.split("/").slice(false).join("/");
+      o = e.exePath.split("/").slice(false).join("/");
     if (null != e.name) {
       if (null != (r = this.getGameByName(e.name)) && null != r.executables) {
         let e = r.executables.map(e => e.name);
-        if (e.includes(i) || e.includes(a)) return r
+        if (e.includes(i) || e.includes(o)) return r
       } else if (null != r) return null
     }
-    return null != (n = null != (t = this.getGameByExecutable(i)) ? t : this.getGameByExecutable(a)) ? n : r
+    return null != (n = null != (t = this.getGameByExecutable(i)) ? t : this.getGameByExecutable(o)) ? n : r
   }
   shouldBlock(e) {
     return !!(null != e.exePath && (null != R.find(t => e.exePath.includes(t)) || w.some(t => t.test(e.exePath)))) || false

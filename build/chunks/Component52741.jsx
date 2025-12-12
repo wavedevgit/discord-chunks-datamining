@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   s = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
@@ -22,19 +22,19 @@ var Chunk120356 = require("./120356.js"),
   Chunk504865 = require("./504865.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk113991 = require("./113991.js");
+  Chunk560230 = require("./560230.js");
 
 function O(e) {
   var t;
   let {
     defaultPriceString: n,
     subscriptionPlan: i,
-    discountOffer: a
-  } = e, o = (0, h.Aq)(i);
+    discountOffer: o
+  } = e, a = (0, h.Aq)(i);
   return (0, r.jsx)(r.Fragment, {
     children: b.intl.format(b.t.sJTwHQ, {
-      numMonths: null != (t = a.discount.user_usage_limit) ? t : E.rt,
-      discountedPrice: o,
+      numMonths: null != (t = o.discount.user_usage_limit) ? t : E.rt,
+      discountedPrice: a,
       regularPrice: n
     })
   })
@@ -45,7 +45,7 @@ function v(e) {
     isGift: t,
     premiumTier: n,
     offerTierMatchesCard: i,
-    offerType: o,
+    offerType: a,
     showYearlyPrice: h,
     priceOptions: v,
     textVariant: S,
@@ -62,7 +62,7 @@ function v(e) {
       n = f.ZP.formatPriceString(f.ZP.getDefaultPrice(t.id), t.interval),
       i = () => {
         var t, r, i;
-        return o === E.C.PREMIUM_TRIAL ? b.intl.format(b.t["2CGBri"], {
+        return a === E.C.PREMIUM_TRIAL ? b.intl.format(b.t["2CGBri"], {
           remainingTime: e,
           price: n
         }) : R.planIdFromItems === E.Xh.PREMIUM_YEAR_TIER_2 ? b.intl.format(b.t["+qqh6g"], {
@@ -77,18 +77,18 @@ function v(e) {
     return (0, r.jsx)(c.Heading, {
       variant: N,
       color: P,
-      className: a()(y.trialHeader, A),
+      className: o()(y.trialHeader, A),
       children: i()
     })
   }
   if (!T && !t && i) {
     let e = f.ZP.formatPriceString(f.ZP.getDefaultPrice(n === E.PremiumTypes.TIER_0 ? E.Xh.PREMIUM_MONTH_TIER_0 : E.Xh.PREMIUM_MONTH_TIER_2), E.rV.MONTH);
-    if (o === E.C.PREMIUM_TRIAL) {
+    if (a === E.C.PREMIUM_TRIAL) {
       var G, Z, F, B;
       return (0, r.jsx)(c.Heading, {
         variant: N,
         color: P,
-        className: a()(y.trialHeader, A),
+        className: o()(y.trialHeader, A),
         children: b.intl.format(b.t["9vyovu"], {
           planName: (0, f.MF)(null != (Z = E.IW[null != (G = null == U ? true : U.sku_id) ? G : E.Si.NONE]) ? Z : E.Xh.PREMIUM_MONTH_TIER_2),
           duration: (0, f.if)({
@@ -103,7 +103,7 @@ function v(e) {
     if (null != k) return (0, r.jsx)(c.Heading, {
       variant: N,
       color: P,
-      className: a()(y.trialHeader, A),
+      className: o()(y.trialHeader, A),
       children: (0, r.jsx)(O, {
         defaultPriceString: e,
         subscriptionPlan: E.Xh.PREMIUM_MONTH_TIER_2,

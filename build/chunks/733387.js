@@ -8,7 +8,7 @@ require.d(exports, {
   Me: () => _,
   Pe: () => f,
   U9: () => d,
-  Xf: () => o,
+  Xf: () => a,
   Xj: () => b,
   ex: () => p,
   iW: () => v,
@@ -18,7 +18,7 @@ require.d(exports, {
 var r, Chunk274676 = require("./274676.js"),
   Chunk473749 = require("./473749.js");
 
-function o() {
+function a() {
   let e = navigator.userAgentData;
   return null != module && module.platform ? module.platform : navigator.platform
 }
@@ -97,7 +97,7 @@ var E = function() {},
   b = "undefined" != typeof document ? Chunk473749.useLayoutEffect : E;
 
 function y(e) {
-  let t = a.useRef(e);
+  let t = o.useRef(e);
   return b(() => {
     t.current = e
   }), t
@@ -107,10 +107,10 @@ let O = {
 }.useInsertionEffect || (e => e());
 
 function v(e) {
-  let t = a.useRef(() => {});
+  let t = o.useRef(() => {});
   return O(() => {
     t.current = e
-  }), a.useCallback(function() {
+  }), o.useCallback(function() {
     for (var e = arguments.length, n = Array(e), r = 0; r < e; r++) n[r] = arguments[r];
     return null == t.current ? true : t.current(...n)
   }, [])

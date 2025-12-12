@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk150039 = require("./150039.js"),
   Chunk993413 = require("./993413.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk510366 = require("./510366.js");
+  Chunk526265 = require("./526265.js");
 
 function f(e) {
   let {
@@ -21,7 +21,7 @@ function f(e) {
     titleIcon: f
   } = e, {
     analyticsLocations: p
-  } = (0, o.ZP)(), _ = null != n, {
+  } = (0, a.ZP)(), _ = null != n, {
     userNameplate: m,
     guildNameplate: h,
     pendingNameplate: g,
@@ -40,12 +40,12 @@ function f(e) {
     errors: E,
     children: (0, r.jsxs)("div", {
       className: d.section,
-      children: [(0, r.jsx)(a.Button, {
+      children: [(0, r.jsx)(o.Button, {
         variant: "primary",
         size: "sm",
         text: u.intl.string(u.t.BwdeM1),
         onClick: y
-      }), b && (0, r.jsx)(a.Button, {
+      }), b && (0, r.jsx)(o.Button, {
         variant: "secondary",
         size: "sm",
         text: _ ? u.intl.string(u.t.CHf9iJ) : u.intl.string(u.t["9zwziY"]),

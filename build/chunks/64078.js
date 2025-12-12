@@ -57,7 +57,7 @@ function f(e) {
     type: "POGGERMODE_SETTINGS_UPDATE",
     settings: e
   });
-  let t = c({}, a.Z.getState(), e);
+  let t = c({}, o.Z.getState(), e);
   (0, s.Z)(t)
 }
 
@@ -78,8 +78,8 @@ function _(e) {
 
 function m(e, t) {
   var n;
-  let a = i.default.getId(),
-    s = o.ZP.getUserCombo(a, e);
+  let o = i.default.getId(),
+    s = a.ZP.getUserCombo(o, e);
   null != s && r.Z.dispatch({
     type: "POGGERMODE_UPDATE_MESSAGE_COMBO",
     comboMessage: {
@@ -93,7 +93,7 @@ function m(e, t) {
   r.Z.dispatch({
     type: "POGGERMODE_UPDATE_COMBO",
     channelId: e,
-    userId: a,
+    userId: o,
     multiplier: l,
     value: 0
   })

@@ -11,7 +11,7 @@ var Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk75424 = require("./75424.js"),
+  Chunk978774 = require("./978774.js"),
   Chunk982404 = require("./982404.js"),
   Chunk299156 = require("./299156.js");
 let f = function(e) {
@@ -36,7 +36,7 @@ let f = function(e) {
           className: c.churnFooterIcon
         }), (0, r.jsxs)("div", {
           className: c.churnFooterContentBodyInner,
-          children: [(0, r.jsx)(o.Text, {
+          children: [(0, r.jsx)(a.Text, {
             variant: "text-md/medium",
             className: c.churnFooterCopy,
             children: l.intl.format(l.t["2gem05"], {
@@ -45,23 +45,23 @@ let f = function(e) {
             })
           }), (0, r.jsxs)("div", {
             className: c.churnFooterCTAs,
-            children: [(0, r.jsxs)(o.gtL, {
+            children: [(0, r.jsxs)(a.gtL, {
               "data-migration-pending": true,
               className: c.churnFooterClaimCTA,
               innerClassName: c.churnFooterClaimCTAInner,
-              look: a.iL.OUTLINED,
-              color: a.Tt.CUSTOM,
+              look: o.iL.OUTLINED,
+              color: o.Tt.CUSTOM,
               onClick: () => null == n ? true : n(),
-              children: [(0, r.jsx)(o.SrA, {
+              children: [(0, r.jsx)(a.SrA, {
                 size: "xs",
                 color: "currentColor",
                 className: c.churnFooterClaimIcon
-              }), (0, r.jsx)(o.Text, {
+              }), (0, r.jsx)(a.Text, {
                 variant: "text-sm/semibold",
                 className: c.churnFooterClaimCopy,
                 children: l.intl.string(l.t.zrCzVB)
               })]
-            }), (0, r.jsx)(o.Button, {
+            }), (0, r.jsx)(a.Button, {
               variant: "primary",
               text: l.intl.string(l.t["3PatSz"]),
               onClick: () => null == f ? true : f()

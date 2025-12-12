@@ -14,7 +14,7 @@ var Chunk388032 = require("./388032.jsx");
 let s = "United States";
 
 function l(e) {
-  let t = a.Z.find(t => t.name === e);
+  let t = o.Z.find(t => t.name === e);
   if (null != t) return {
     name: t.name,
     code: t.phoneCountryCode,
@@ -23,7 +23,7 @@ function l(e) {
 }
 
 function c(e) {
-  let t = a.Z.find(t => t.alpha2 === e);
+  let t = o.Z.find(t => t.alpha2 === e);
   if (null != t) return {
     name: t.name,
     code: t.phoneCountryCode,

@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 818186, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -14,7 +14,7 @@ var Chunk692547 = require("./692547.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk426153 = require("./426153.js");
+  Chunk658235 = require("./658235.js");
 
 function p(e) {
   let {
@@ -23,20 +23,20 @@ function p(e) {
   return (0, r.jsx)(l.u, {
     asContainer: true,
     text: f.intl.string(f.t["lMR96+"]),
-    children: (0, r.jsxs)(a.P3F, {
+    children: (0, r.jsxs)(o.P3F, {
       "aria-label": "".concat(f.intl.string(f.t["lMR96+"]), ", ").concat(n),
       className: h.friendRequestsButton,
       onClick: () => {
         u.default.track(d.rMx.NOTIFICATION_CENTER_ACTION, {
           action_type: s.ud.FRIEND_REQUESTS_BUTTON_CLICK
-        }), o.Z.transitionToSection(d.pJs.PENDING, {
+        }), a.Z.transitionToSection(d.pJs.PENDING, {
           explicit: true
         }), t()
       },
-      children: [(0, r.jsx)(a.iFz, {
+      children: [(0, r.jsx)(o.iFz, {
         size: "xs",
         color: "currentColor"
-      }), (0, r.jsx)(a.mAB, {
+      }), (0, r.jsx)(o.mAB, {
         count: n,
         color: i.Z.colors.BACKGROUND_ACCENT.css
       })]

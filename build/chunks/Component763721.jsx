@@ -54,8 +54,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -63,8 +63,8 @@ function p(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let m = [{
@@ -99,7 +99,7 @@ let m = [{
         var {
           leading: t,
           trailing: n
-        } = e, a = p(e, ["leading", "trailing"]);
+        } = e, o = p(e, ["leading", "trailing"]);
         let [c, d] = i.useState(""), _ = (0, s.U)("UserSettingsDesignSystems"), [h, g] = i.useState(m), E = i.useCallback(e => {
           g(h.filter(t => !e.has(t.id)))
         }, [h]);
@@ -112,7 +112,7 @@ let m = [{
               };
             case "icon":
               return {
-                icon: o.lOy, onClick: l.dG, "aria-label": "At"
+                icon: a.lOy, onClick: l.dG, "aria-label": "At"
               };
             case "text":
               return "https://discord.gg/";
@@ -124,21 +124,21 @@ let m = [{
         function y(e) {
           if (_)
             if ("icon" === e) return {
-              icon: o.qJs,
+              icon: a.qJs,
               onClick: l.dG,
               "aria-label": "At"
             };
             else return
         }
-        return (0, r.jsxs)(o.Kqy, {
+        return (0, r.jsxs)(a.Kqy, {
           gap: 16,
-          children: [(0, r.jsx)(o.oil, f(u({}, a), {
+          children: [(0, r.jsx)(a.oil, f(u({}, o), {
             value: c,
             onChange: d,
             leading: b(t),
             trailing: y(n),
             maxLength: 500
-          })), "tags" === t ? (0, r.jsx)(o.Button, {
+          })), "tags" === t ? (0, r.jsx)(a.Button, {
             text: "Reset Tags",
             size: "sm",
             variant: "secondary",
@@ -261,7 +261,7 @@ let m = [{
       name: "SearchBar",
       component: function(e) {
         let [t, n] = i.useState("");
-        return (0, r.jsx)(o.E1j, f(u({}, e), {
+        return (0, r.jsx)(a.E1j, f(u({}, e), {
           query: t,
           onChange: n,
           onClear: e.clearable ? () => n("") : true
@@ -302,7 +302,7 @@ let m = [{
       id: "text-area",
       component: function(e) {
         let [t, n] = i.useState("");
-        return (0, r.jsx)(o.Kx8, f(u({}, e), {
+        return (0, r.jsx)(a.Kx8, f(u({}, e), {
           value: t,
           onChange: n
         }))
@@ -400,54 +400,54 @@ let m = [{
           showCharacterCount: b,
           successMessage: E
         };
-        return (0, r.jsxs)(o.Kqy, {
+        return (0, r.jsxs)(a.Kqy, {
           gap: 24,
-          children: [(0, r.jsxs)(a.C3N, {
+          children: [(0, r.jsxs)(o.C3N, {
             label: "Text Input",
-            children: [(0, r.jsx)(o.oil, u({}, y)), (0, r.jsx)(o.oil, f(u({}, y), {
+            children: [(0, r.jsx)(a.oil, u({}, y)), (0, r.jsx)(a.oil, f(u({}, y), {
               clearable: true
-            })), (0, r.jsx)(o.oil, f(u({}, y), {
+            })), (0, r.jsx)(a.oil, f(u({}, y), {
               leading: {
-                icon: o.lOy,
+                icon: a.lOy,
                 onClick: l.dG,
                 "aria-label": "At"
               }
-            })), (0, r.jsx)(o.oil, f(u({}, y), {
-              leading: o.lOy
-            })), (0, r.jsx)(o.oil, f(u({}, y), {
+            })), (0, r.jsx)(a.oil, f(u({}, y), {
+              leading: a.lOy
+            })), (0, r.jsx)(a.oil, f(u({}, y), {
               leading: "https://discord.gg/"
-            })), (0, r.jsx)(o.oil, f(u({}, y), {
+            })), (0, r.jsx)(a.oil, f(u({}, y), {
               trailing: {
-                icon: o.lOy,
+                icon: a.lOy,
                 onClick: l.dG,
                 "aria-label": "At"
               }
-            })), (0, r.jsx)(o.oil, f(u({}, y), {
-              trailing: o.lOy
-            })), (0, r.jsx)(o.oil, f(u({}, y), {
+            })), (0, r.jsx)(a.oil, f(u({}, y), {
+              trailing: a.lOy
+            })), (0, r.jsx)(a.oil, f(u({}, y), {
               leading: {
                 type: "tags",
                 label: "Tags",
                 items: m.slice(0, 3)
               }
             }))]
-          }), (0, r.jsx)(a.izJ, {}), (0, r.jsxs)(a.C3N, {
+          }), (0, r.jsx)(o.izJ, {}), (0, r.jsxs)(o.C3N, {
             label: "Search Bar",
-            children: [(0, r.jsx)(o.E1j, {
+            children: [(0, r.jsx)(a.E1j, {
               query: _,
               onChange: l.dG,
               disabled: d,
               placeholder: p
-            }), (0, r.jsx)(o.E1j, {
+            }), (0, r.jsx)(a.E1j, {
               query: _,
               onChange: l.dG,
               size: "sm",
               disabled: d,
               placeholder: p
             })]
-          }), (0, r.jsx)(a.izJ, {}), (0, r.jsx)(a.C3N, {
+          }), (0, r.jsx)(o.izJ, {}), (0, r.jsx)(o.C3N, {
             label: "Text Area",
-            children: (0, r.jsx)(o.Kx8, u({}, y))
+            children: (0, r.jsx)(a.Kx8, u({}, y))
           })]
         })
       },

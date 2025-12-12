@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 659679, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -11,49 +11,49 @@ var Chunk793030 = require("./793030.js"),
   Chunk318713 = require("./318713.jsx"),
   Chunk665957 = require("./665957.js"),
   Chunk884902 = require("./884902.js"),
-  Chunk44542 = require("./44542.js"),
+  Chunk5238 = require("./5238.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk676229 = require("./676229.js");
+  Chunk238937 = require("./238937.js");
 
-function p(e) {
+function f(e) {
   let {
     boost: t
   } = e, {
     timestamp: n,
-    username: p,
+    username: f,
     roleColor: m,
     roleColorStrings: g
-  } = (0, s._)(t), v = (0, c.X7)(t.guildId, t.userId, null != g ? g : null);
+  } = (0, s._)(t), v = (0, u.X7)(t.guildId, t.userId, null != g ? g : null);
   return (0, r.jsxs)("div", {
-    className: f.systemMessageContainer,
+    className: p.systemMessageContainer,
     children: [(0, r.jsx)(o.Ucv, {
-      className: f.icon,
+      className: p.icon,
       color: "currentColor",
       size: "sm"
     }), (0, r.jsx)("span", {
-      className: f.boostMessage,
+      className: p.boostMessage,
       children: (0, r.jsxs)(i.xvT, {
         tag: "span",
         variant: "text-md/medium",
         lineClamp: 1,
         children: [(0, r.jsx)(l.u, {
-          text: p,
+          text: f,
           shouldShow: true,
           asContainer: true,
           delay: 1e3,
           children: (0, r.jsx)(o.PUh, {
-            className: f.boostMessageUser,
+            className: p.boostMessageUser,
             variant: "text-md/semibold",
-            name: p,
+            name: f,
             colorString: null != m ? m : null,
             colorStrings: v
           })
-        }), d.intl.string(u.default.plwH8d)]
+        }), d.intl.string(c.default.plwH8d)]
       })
     }), (0, r.jsx)(a.Z, {
       timestamp: n,
       timestampFormat: "L",
-      className: f.timestamp
+      className: p.timestamp
     })]
   })
 }

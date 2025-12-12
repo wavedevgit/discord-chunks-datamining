@@ -25,7 +25,7 @@ Chunk98405({
 }, {
   unshift: function(e) {
     var t = i(this),
-      n = a(t),
+      n = o(t),
       r = arguments.length;
     if (r) {
       l(n + r);
@@ -35,6 +35,6 @@ Chunk98405({
       }
       for (var d = 0; d < r; d++) t[d] = arguments[d]
     }
-    return o(t, n + r)
+    return a(t, n + r)
   }
 })

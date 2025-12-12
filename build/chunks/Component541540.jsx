@@ -73,7 +73,7 @@ class b extends Chunk473749.Component {
       codeInput: t,
       submitting: n,
       hasError: i,
-      isPromoCode: a
+      isPromoCode: o
     } = this.state;
     return (0, Chunk54381.jsx)(Chunk481060.C3N, {
       label: Chunk388032.intl.string(Chunk388032.t["il+VCo"]),

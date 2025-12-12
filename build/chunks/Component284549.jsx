@@ -21,7 +21,7 @@ let C = t => {
   let {
     transitionState: e,
     onClose: i
-  } = t, C = (0, a.e7)([c.Z], () => c.Z.getErrors()), v = (0, a.e7)([c.Z], () => c.Z.getFormState()), y = (0, a.e7)([m.default], () => m.default.getCurrentUser()), x = (0, a.e7)([u.Z], () => u.Z.getAction()), b = !p.Z.isEmailReverification(x), [j, R] = s.useState(true), _ = v === g.QZA.SUBMITTING;
+  } = t, C = (0, a.e7)([c.Z], () => c.Z.getErrors()), v = (0, a.e7)([c.Z], () => c.Z.getFormState()), y = (0, a.e7)([m.default], () => m.default.getCurrentUser()), _ = (0, a.e7)([u.Z], () => u.Z.getAction()), x = !p.Z.isEmailReverification(_), [b, j] = s.useState(true), R = v === g.QZA.SUBMITTING;
 
   function E(t) {
     var e, i;
@@ -34,11 +34,11 @@ let C = t => {
     email: null == y ? true : y.email,
     emailError: I,
     passwordError: P,
-    submitting: _,
-    canResend: j && !_ && (null == y ? true : y.email) != null && 0 === I.length && 0 === P.length,
-    canChange: b,
+    submitting: R,
+    canResend: b && !R && (null == y ? true : y.email) != null && 0 === I.length && 0 === P.length,
+    canChange: x,
     onChangeEmailClick: function() {
-      R(false)
+      j(false)
     },
     onVerify: function(t, e) {
       (0, o.Mn)({
@@ -49,7 +49,7 @@ let C = t => {
           var e;
           (null == t || null == (e = t.body) ? true : e.username) != null ? (0, d.P)() : 0 === P.length && 0 === I.length && (0, l.showToast)((0, l.createToast)(f.intl.string(f.t.R0RpRX), l.ToastType.FAILURE))
         }
-      }), R(true)
+      }), j(true)
     },
     onResend: function() {
       r.Z.verifyResend()

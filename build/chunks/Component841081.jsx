@@ -1,7 +1,7 @@
-/** Chunk was on 3472 **/
+/** Chunk was on 12693 **/
 /** chunk id: 841081, original params: i,e,t (module,exports,require) **/
 require.d(exports, {
-  default: () => g
+  default: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,28 +13,28 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk19809 = require("./19809.js");
+  Chunk926845 = require("./926845.js");
 
-function f(i) {
+function g(i) {
   let {
     giftRecipient: e,
     onClose: t,
-    transitionState: a,
-    analyticsLocations: f,
-    analyticsLocation: g,
-    analyticsObject: p,
+    transitionState: l,
+    analyticsLocations: g,
+    analyticsLocation: p,
+    analyticsObject: f,
     giftMessage: I
   } = i, {
-    priceOptions: b
-  } = (0, l.JL)(), j = s.useCallback(i => {
+    priceOptions: _
+  } = (0, a.JL)(), j = s.useCallback(i => {
     (0, o.Z)({
       isGift: true,
       giftRecipient: e,
       subscriptionTier: i,
       giftingOrigin: d.Wt.DM_CHANNEL,
-      analyticsLocations: null != f ? f : [],
-      analyticsLocation: g,
-      analyticsObject: null != p ? p : {
+      analyticsLocations: null != g ? g : [],
+      analyticsLocation: p,
+      analyticsObject: null != f ? f : {
         page: u.ZY5.DM_CHANNEL,
         section: u.jXE.CHANNEL_TEXT_AREA,
         object: u.qAy.BUTTON_ICON,
@@ -42,9 +42,9 @@ function f(i) {
       },
       giftMessage: I
     }), t()
-  }, [e, f, g, p, I, t]);
+  }, [e, g, p, f, I, t]);
   return (0, n.jsxs)(r.Y0X, {
-    transitionState: a,
+    transitionState: l,
     size: r.CgR.DYNAMIC,
     className: h.modalContainer,
     parentComponent: "GiftOptionSelectModal",
@@ -69,14 +69,14 @@ function f(i) {
       children: (0, n.jsx)(c.Z, {
         onSelectSku: j,
         giftRecipient: e,
-        priceOptions: b,
+        priceOptions: _,
         onWishlistItemClick: t
       })
     })]
   })
 }
 
-function g(i) {
+function p(i) {
   let {
     giftRecipient: e,
     onClose: t,
@@ -86,16 +86,16 @@ function g(i) {
     analyticsObject: c,
     giftMessage: u
   } = i;
-  return (0, n.jsx)(l.PaymentContextProvider, {
+  return (0, n.jsx)(a.PaymentContextProvider, {
     activeSubscription: null,
     stepConfigs: [],
     skuIDs: d.nS,
     isGift: true,
-    children: (0, n.jsx)(a.KB, {
+    children: (0, n.jsx)(l.KB, {
       isGift: true,
       giftRecipient: e,
       giftingOrigin: d.Wt.DM_CHANNEL,
-      children: (0, n.jsx)(f, {
+      children: (0, n.jsx)(g, {
         giftRecipient: e,
         onClose: t,
         transitionState: s,

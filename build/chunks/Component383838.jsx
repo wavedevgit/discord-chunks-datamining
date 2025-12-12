@@ -7,12 +7,12 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk49800 = require("./49800.jsx"),
   Chunk600164 = require("./600164.jsx"),
   Chunk534542 = require("./534542.jsx"),
   Chunk512983 = require("./512983.jsx"),
-  Chunk842538 = require("./842538.js");
+  Chunk636094 = require("./636094.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -40,8 +40,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = _(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -49,8 +49,8 @@ function p(e, t) {
 function _(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 Chunk49800.Z.Types;
@@ -58,7 +58,7 @@ let m = "right";
 
 function h(e) {
   let t, n, {
-      type: i = o.Z.Types.DANGER,
+      type: i = a.Z.Types.DANGER,
       imageData: d,
       button: _,
       className: h,
@@ -78,13 +78,13 @@ function h(e) {
       shrink: 0,
       children: (0, r.jsx)("img", f({
         alt: "",
-        className: a()(u.icon, g)
+        className: o()(u.icon, g)
       }, n))
     }), e === m && (v = s.Z.Direction.HORIZONTAL_REVERSE)
   } else null != _ && (n = _);
   let S = true;
-  return i === o.Z.Types.PRIMARY && (S = false), (0, r.jsx)(o.Z, {
-    className: a()(u.formNotice, h),
+  return i === a.Z.Types.PRIMARY && (S = false), (0, r.jsx)(a.Z, {
+    className: o()(u.formNotice, h),
     type: i,
     style: y,
     children: (0, r.jsxs)(s.Z, {
@@ -92,12 +92,12 @@ function h(e) {
       align: O,
       children: [t, (0, r.jsxs)(s.Z.Child, {
         children: [null != E && "" !== E ? (0, r.jsx)(c.v, {
-          className: a()(u.formNoticeTitle, {
+          className: o()(u.formNoticeTitle, {
             [u.whiteText]: S
           }),
           children: E
         }) : null, (0, r.jsx)(l.R, {
-          className: a()(u.formNoticeBody, {
+          className: o()(u.formNoticeBody, {
             [u.whiteText]: S
           }),
           children: b

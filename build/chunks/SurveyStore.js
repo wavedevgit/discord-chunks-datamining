@@ -6,7 +6,7 @@ require.d(exports, {
   ZP: () => X
 }), require("./388685.js");
 var r, Chunk913527 = require("./913527.js"),
-  a = require.n(Chunk913527),
+  o = require.n(Chunk913527),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
@@ -101,12 +101,12 @@ function k(e) {
   for (let e of t)
     if (!x.has(e)) returnfalse;
   let i = t.includes("guild_size_all"),
-    a = true;
+    o = true;
   for (let s of p.Z.getGuildsArray()) {
     if (i || t.includes("guild_size")) {
       let e = f.Z.getMemberCount(s.id);
       if (null == e || null != n[0] && e < n[0] || null != n[1] && e > n[1]) {
-        a = false;
+        o = false;
         continue
       }
     }
@@ -115,7 +115,7 @@ function k(e) {
       if (0 === r.length) continue;
       let e = false;
       for (let t of r) try {
-        let n = o.vB(t);
+        let n = a.vB(t);
         if (_.Z.can(n, s)) {
           e = true;
           break
@@ -132,7 +132,7 @@ function k(e) {
       p = null != d && d === s.id;
     if ((!t.includes("is_viewing") || p) && !i) returntrue
   }
-  return !!i && !!a
+  return !!i && !!o
 }
 
 function U(e) {
@@ -141,7 +141,7 @@ function U(e) {
 
 function G(e) {
   let t = l.K.get(g.z7k);
-  return null == t || a()().diff(t, "day") < e
+  return null == t || o()().diff(t, "day") < e
 }
 
 function Z(e) {
@@ -152,10 +152,10 @@ function Z(e) {
   N = false, S.lastFetched = Date.now(), n && (S.lastActionTriggered = Date.now()), null == S.hiddenSurveys && (S.hiddenSurveys = {});
   let r = null != t,
     i = r && null == S.hiddenSurveys[t.key],
-    a = r && M(t);
+    o = r && M(t);
   G(w);
-  let o = false;
-  A = i && a && !o ? t : null
+  let a = false;
+  A = i && o && !a ? t : null
 }
 
 function F(e) {

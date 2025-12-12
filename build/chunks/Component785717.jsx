@@ -38,13 +38,13 @@ let u = Chunk473749.createContext(null),
     let {
       value: t,
       children: n,
-      openedAt: a,
+      openedAt: o,
       fetchStartedAt: l,
       fetchEndedAt: d,
       isLoaded: f = false
     } = e, {
       analyticsLocations: p
-    } = (0, o.ZP)(), _ = i.useRef(true), m = {
+    } = (0, a.ZP)(), _ = i.useRef(true), m = {
       analyticsLocations: p,
       value: t
     }, h = i.useRef(m);
@@ -52,7 +52,7 @@ let u = Chunk473749.createContext(null),
       h.current = m
     }), i.useEffect(() => {
       let e = Date.now();
-      if (null == _.current && null != a && (_.current = e - a), !f) return;
+      if (null == _.current && null != o && (_.current = e - o), !f) return;
       let {
         analyticsLocations: t,
         value: n
@@ -63,9 +63,9 @@ let u = Chunk473749.createContext(null),
       }, n)), (0, s.RV)(c({
         profileUi: "USER_PROFILE",
         timeToInteractiveMs: _.current,
-        timeToLoadMs: null != a ? e - a : true,
+        timeToLoadMs: null != o ? e - o : true,
         timeToFetchMs: null != l && null != d ? d - l : true,
-        viewStartedAt: a,
+        viewStartedAt: o,
         fetchStartedAt: l,
         analyticsLocations: t
       }, n))
@@ -79,7 +79,7 @@ let u = Chunk473749.createContext(null),
     let {
       layout: n,
       userId: r,
-      guildId: o,
+      guildId: a,
       channelId: s,
       messageId: l,
       roleId: c,
@@ -87,16 +87,16 @@ let u = Chunk473749.createContext(null),
       showGuildProfile: f = true
     } = e, p = null == (t = i.useContext(u)) ? true : t.sessionId;
     return i.useMemo(() => ({
-      sessionId: (0, a.Z)(),
+      sessionId: (0, o.Z)(),
       sourceSessionId: null != d ? d : p,
       layout: n,
       userId: r,
-      guildId: o,
+      guildId: a,
       channelId: s,
       messageId: l,
       roleId: c,
       showGuildProfile: f
-    }), [p, n, r, o, s, l, c, d, f])
+    }), [p, n, r, a, s, l, c, d, f])
   },
   p = () => {
     let e = Chunk473749.useContext(u),

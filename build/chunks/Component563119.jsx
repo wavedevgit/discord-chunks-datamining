@@ -60,7 +60,7 @@ let b = "game_console_alert_modal",
   y = "game_console_ptt_alert_modal",
   O = {
     maybeShowPTTAlert(e) {
-      if (c.Z.getMode() !== p.pM4.PUSH_TO_TALK || (0, l.zu)(a.z.CONSOLE_PTT_DISABLE_ALERT)) return Promise.resolve();
+      if (c.Z.getMode() !== p.pM4.PUSH_TO_TALK || (0, l.zu)(o.z.CONSOLE_PTT_DISABLE_ALERT)) return Promise.resolve();
       let t = {
         [p.ABu.XBOX]: _.intl.string(_.t.bVZ7vy),
         [p.ABu.PLAYSTATION]: _.intl.string(_.t["6iqUsf"]),
@@ -68,7 +68,7 @@ let b = "game_console_alert_modal",
       } [e];
       return null == t ? Promise.resolve() : new Promise(e => {
         let n = () => {
-            (0, l.Q3)(a.z.CONSOLE_PTT_DISABLE_ALERT), e()
+            (0, l.Q3)(o.z.CONSOLE_PTT_DISABLE_ALERT), e()
           },
           s = e => (0, r.jsx)(i.Modal, E(h({}, e), {
             title: t,
@@ -78,7 +78,7 @@ let b = "game_console_alert_modal",
               onClick: n
             }]
           }));
-        (0, o.hasModalOpen)(y) ? (0, o.updateModal)(y, e => s(e)) : (0, o.openModalLazy)(async () => e => s(e), {
+        (0, a.hasModalOpen)(y) ? (0, a.updateModal)(y, e => s(e)) : (0, a.openModalLazy)(async () => e => s(e), {
           modalKey: y
         })
       })
@@ -87,12 +87,12 @@ let b = "game_console_alert_modal",
       let {
         title: t,
         body: n,
-        errorCodeMessage: a,
+        errorCodeMessage: o,
         reconnectPlatformType: l
       } = e, c = (0, r.jsx)(d.t, {
         body: n,
-        errorCodeMessage: a,
-        dismissCallback: () => (0, o.closeModal)(b)
+        errorCodeMessage: o,
+        dismissCallback: () => (0, a.closeModal)(b)
       });
 
       function m() {
@@ -112,7 +112,7 @@ let b = "game_console_alert_modal",
         }],
         children: c
       }));
-      (0, o.hasModalOpen)(b) ? (0, o.updateModal)(b, e => g(e)) : (0, o.openModalLazy)(async () => e => g(e), {
+      (0, a.hasModalOpen)(b) ? (0, a.updateModal)(b, e => g(e)) : (0, a.openModalLazy)(async () => e => g(e), {
         modalKey: b
       })
     }

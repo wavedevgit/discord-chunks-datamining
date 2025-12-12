@@ -1,8 +1,8 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 566476, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -12,41 +12,41 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk385499 = require("./385499.jsx"),
   Chunk246946 = require("./246946.js"),
-  Chunk761382 = require("./761382.js");
+  Chunk147721 = require("./147721.js");
 
-function u(e) {
+function d(e) {
   let {
     className: t,
     avatarURL: n,
     name: i,
-    bot: u,
+    bot: d,
     verifiedBot: g,
-    userTag: f
-  } = e, m = (0, a.e7)([c.Z], () => c.Z.hidePersonalInformation);
+    userTag: m
+  } = e, p = (0, s.e7)([c.Z], () => c.Z.hidePersonalInformation);
   return (0, r.jsxs)("div", {
-    className: l()(d.container, t),
-    children: [(0, r.jsx)(s.qEK, {
-      className: d.avatar,
+    className: l()(u.container, t),
+    children: [(0, r.jsx)(a.qEK, {
+      className: u.avatar,
       src: n,
-      size: s.EFr.SIZE_24,
+      size: a.EFr.SIZE_24,
       "aria-label": i
     }), (0, r.jsxs)("div", {
-      className: d.textContainer,
-      children: [(0, r.jsx)(s.Text, {
+      className: u.textContainer,
+      children: [(0, r.jsx)(a.Text, {
         tag: "span",
-        className: d.name,
+        className: u.name,
         color: "text-strong",
         variant: "text-sm/semibold",
         children: i
-      }), u ? (0, r.jsx)(o.Z, {
-        className: d.botTag,
+      }), d ? (0, r.jsx)(o.Z, {
+        className: u.botTag,
         verified: g
-      }) : null, m ? null : (0, r.jsx)(s.Text, {
+      }) : null, p ? null : (0, r.jsx)(a.Text, {
         tag: "span",
         color: "interactive-text-default",
-        className: d.userTag,
+        className: u.userTag,
         variant: "text-sm/normal",
-        children: f
+        children: m
       })]
     })]
   })

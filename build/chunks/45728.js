@@ -39,19 +39,19 @@ class i {
     return u() && (this.resolvedHourCycle || (this.resolvedHourCycle = d(module.locale, this.options)), module.hourCycle = this.resolvedHourCycle, module.hour12 = "h11" === this.resolvedHourCycle || "h12" === this.resolvedHourCycle), "ethiopic-amete-alem" === module.calendar && (module.calendar = "ethioaa"), module
   }
   constructor(e, t = {}) {
-    this.formatter = o(e, t), this.options = t
+    this.formatter = a(e, t), this.options = t
   }
 }
-let a = {
+let o = {
   true: {
     ja: "h11"
   },
   false: {}
 };
 
-function o(e, t = {}) {
+function a(e, t = {}) {
   if ("boolean" == typeof t.hour12 && l()) {
-    let n = a[String((t = {
+    let n = o[String((t = {
         ...t
       }).hour12)][e.split("-")[0]],
       r = t.hour12 ? "h12" : "h23";
@@ -82,7 +82,7 @@ function u() {
 function d(e, t) {
   if (!t.timeStyle && !t.hour) return;
   e = e.replace(/(-u-)?-nu-[a-zA-Z0-9]+/, "");
-  let n = o(e += (e.includes("-u-") ? "" : "-u") + "-nu-latn", {
+  let n = a(e += (e.includes("-u-") ? "" : "-u") + "-nu-latn", {
       ...t,
       timeZone: true
     }),

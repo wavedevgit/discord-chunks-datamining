@@ -44,7 +44,7 @@ function p(e, t) {
     M = !j && (A || L);
   if (!j && !M) return Promise.resolve();
   let k = null != v ? null == N ? true : N.profileEffect : null == C ? true : C.profileEffect;
-  null != k && (0, o.lW)(k.skuId), null != t && (0, a.vM)(t);
+  null != k && (0, a.lW)(k.skuId), null != t && (0, o.vM)(t);
   let U = {
     type: h,
     withMutualGuilds: g,

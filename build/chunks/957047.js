@@ -6,12 +6,12 @@ require.d(exports, {
 });
 var Chunk610388 = require("./610388.js");
 let i = {
-  read: a
+  read: o
 };
 
-function a(e, t) {
+function o(e, t) {
   return {
-    "Image Width": o(e, t),
+    "Image Width": a(e, t),
     "Image Height": s(e, t),
     "Bit Depth": l(e, t),
     "Color Type": c(e, t),
@@ -21,7 +21,7 @@ function a(e, t) {
   }
 }
 
-function o(e, t) {
+function a(e, t) {
   if (t + 0 + 4 > e.byteLength) return;
   let n = r.Z.getLongAt(e, t);
   return {
@@ -60,10 +60,10 @@ function c(e, t) {
       6: "RGB with Alpha"
     };
   if (t + 9 + 1 > e.byteLength) return;
-  let a = r.Z.getByteAt(e, t + n);
+  let o = r.Z.getByteAt(e, t + n);
   return {
-    value: a,
-    description: i[a] || "Unknown"
+    value: o,
+    description: i[o] || "Unknown"
   }
 }
 
@@ -94,9 +94,9 @@ function f(e, t) {
       1: "Adam7 Interlace"
     };
   if (t + 12 + 1 > e.byteLength) return;
-  let a = r.Z.getByteAt(e, t + n);
+  let o = r.Z.getByteAt(e, t + n);
   return {
-    value: a,
-    description: i[a] || "Unknown"
+    value: o,
+    description: i[o] || "Unknown"
   }
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 901492, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => o
+  default: () => a
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -9,11 +9,11 @@ var Chunk793030 = require("./793030.js"),
   Chunk933557 = require("./933557.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o(e) {
+function a(e) {
   var {
     channel: t,
     category: n
-  } = e, o = function(e, t) {
+  } = e, a = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -48,11 +48,11 @@ function o(e) {
     }
     return e
   }({
-    title: a.intl.string(a.t.YWMtRe),
-    subtitle: a.intl.format(a.t["iKW+jY"], {
+    title: o.intl.string(o.t.YWMtRe),
+    subtitle: o.intl.format(o.t["iKW+jY"], {
       channelName: s,
       categoryName: c
     }),
-    confirmText: a.intl.string(a.t.eW8Gy4)
-  }, o))
+    confirmText: o.intl.string(o.t.eW8Gy4)
+  }, a))
 }

@@ -10,18 +10,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk483444 = require("./483444.jsx"),
   Chunk787528 = require("./787528.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk139180 = require("./139180.js");
+  Chunk854826 = require("./854826.js");
 let u = e => {
   let {
     profileBadge: t,
     tenureBadge: n
   } = e, u = (0, s.J)(n.id);
-  return (0, r.jsxs)(a.Z, {
+  return (0, r.jsxs)(o.Z, {
     assetComponent: (0, r.jsx)("img", {
       src: u,
       alt: ""
     }),
-    tooltipWordmarkComponent: (0, r.jsx)(o.Z, {
+    tooltipWordmarkComponent: (0, r.jsx)(a.Z, {
       width: 56,
       className: c.tooltipWordmark
     }),

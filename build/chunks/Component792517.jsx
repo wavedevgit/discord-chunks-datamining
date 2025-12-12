@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk314897 = require("./314897.js"),
   Chunk112560 = require("./112560.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk470276 = require("./470276.js");
+  Chunk866752 = require("./866752.js");
 let h = 175,
   g = 195,
   Chunk978538 = require("./978538.js");
@@ -32,14 +32,14 @@ function b(e) {
     defaultWatchMultipleStreams: O
   } = (0, u.P)({
     location: "StreamHidden"
-  }), v = (0, o.e7)([d.Z, f.default], () => d.Z.getAllActiveStreams().some(e => {
+  }), v = (0, a.e7)([d.Z, f.default], () => d.Z.getAllActiveStreams().some(e => {
     let {
       ownerId: t
     } = e;
     return t !== f.default.getId()
   }));
   return (0, r.jsx)("div", {
-    className: a()(m.content, m.streamHidden),
+    className: o()(m.content, m.streamHidden),
     children: (0, r.jsx)(p.Z, {
       className: m.streamHiddenEmptyState,
       artURL: E,
@@ -48,7 +48,7 @@ function b(e) {
       size: (0, p.L)(n),
       header: y ? null : _.intl.string(_.t.epU4Ec),
       description: b ? null : (0, r.jsxs)("div", {
-        className: a()(m.streamHiddenCTA, {
+        className: o()(m.streamHiddenCTA, {
           [m.largePaddingTop]: !y
         }),
         children: [(0, r.jsx)("div", {
@@ -59,7 +59,7 @@ function b(e) {
             text: n < h ? _.intl.string(_.t.I6JG46) : _.intl.string(_.t["7Xq/nV"])
           })
         }), v && !O ? (0, r.jsx)("div", {
-          className: a()(m.cta, m.addCta),
+          className: o()(m.cta, m.addCta),
           children: (0, r.jsx)(s.u, {
             text: _.intl.string(_.t.wCrzut),
             children: (0, r.jsx)(l.hU, {

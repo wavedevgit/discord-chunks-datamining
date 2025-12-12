@@ -58,7 +58,7 @@ async function _(e, t) {
       });
       return
     }
-    return 429 === n.status ? (h.push(429), g(n.body.retry_after * o.Z.Millis.SECOND)) : (h.push(null != (r = n.status) ? r : d), b({
+    return 429 === n.status ? (h.push(429), g(n.body.retry_after * a.Z.Millis.SECOND)) : (h.push(null != (r = n.status) ? r : d), b({
       error: true
     }), i.Z.dispatch({
       type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE",
@@ -67,9 +67,9 @@ async function _(e, t) {
   }), b = r => {
     let {
       error: i
-    } = r, o = performance.now() - s;
-    a.default.track(l.rMx.APPLICATION_COMMAND_PERFORMANCE, {
-      duration_ms: o,
+    } = r, a = performance.now() - s;
+    o.default.track(l.rMx.APPLICATION_COMMAND_PERFORMANCE, {
+      duration_ms: a,
       error: i,
       aborted: t.signal.aborted,
       include_applications: true,

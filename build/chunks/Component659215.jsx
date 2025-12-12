@@ -16,7 +16,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk116411 = require("./116411.js"),
+  Chunk819620 = require("./819620.js"),
   Chunk784370 = require("./784370.js");
 
 function m(e, t, n) {
@@ -45,8 +45,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -54,8 +54,8 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -67,7 +67,7 @@ function b(e) {
     E = g(e, ["onClose", "analyticsSource"]);
   let b = f.intl.format(f.t["JmbS+T"], {
       onClick: () => {
-        (0, o.openUserSettings)(a.n.NITRO_PANEL, {
+        (0, a.openUserSettings)(o.n.NITRO_PANEL, {
           section: d.oAB.PREMIUM
         }), i()
       }

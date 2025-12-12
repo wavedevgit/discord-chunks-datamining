@@ -15,23 +15,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk103918 = require("./103918.js");
+  Chunk264815 = require("./264815.js");
 let g = Object.values(Chunk987650.wF).map(e => 100 * e),
-  b = (0, Chunk313201.hQ)();
-class m extends Chunk473749.PureComponent {
+  m = (0, Chunk313201.hQ)();
+class _ extends Chunk473749.PureComponent {
   handleUpdateBackgroundOpacity(e) {
-    o.Z.setTextWidgetOpacity((0, d.Z)(e / 100)), o.Z.track(f.rMx.OVERLAY_SETTINGS_UPDATED, {
+    l.Z.setTextWidgetOpacity((0, d.Z)(e / 100)), l.Z.track(h.rMx.OVERLAY_SETTINGS_UPDATED, {
       text_opacity_slider: e
     })
   }
   handlePreviewBackgroundOpacity(e) {
-    o.Z.setTextWidgetOpacity((0, d.Z)(e / 100))
+    l.Z.setTextWidgetOpacity((0, d.Z)(e / 100))
   }
   render() {
     return (0, Chunk54381.jsx)("div", {
-      className: Chunk103918.container,
+      className: Chunk264815.container,
       children: (0, Chunk54381.jsx)("div", {
-        className: Chunk103918.sliderContainer,
+        className: Chunk264815.sliderContainer,
         children: (0, Chunk54381.jsx)(Chunk481060.iRW, {
           label: Chunk388032.intl.string(Chunk388032.t.OVovCb),
           mini: true,
@@ -46,7 +46,7 @@ class m extends Chunk473749.PureComponent {
           onMarkerRender: Chunk981631.dG4,
           equidistant: true,
           stickToMarkers: true,
-          "aria-labelledby": b
+          "aria-labelledby": m
         })
       })
     })
@@ -65,4 +65,4 @@ class m extends Chunk473749.PureComponent {
 }
 let y = Chunk442837.ZP.connectStores([Chunk237997.default], () => ({
   opacity: Chunk237997.default.getTextWidgetOpacity()
-}))(m)
+}))(_)

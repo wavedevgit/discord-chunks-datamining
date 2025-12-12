@@ -1,4 +1,4 @@
-/** Chunk was on 91968 **/
+/** Chunk was on 88569 **/
 /** chunk id: 854014, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y: () => p
@@ -6,24 +6,24 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk28682 = require("./28682.js"),
   Chunk996435 = require("./996435.js"),
   Chunk950941 = require("./950941.jsx"),
   Chunk721611 = require("./721611.jsx"),
-  Chunk732306 = require("./732306.js");
+  Chunk873395 = require("./873395.js");
 
 function y(e) {
   var t, n;
   let {
     tag: o,
-    onClick: a,
-    active: l,
+    onClick: i,
+    active: a,
     node: s,
     visibleContent: u,
-    panelKey: d,
+    panelKey: f,
     listItemProps: y,
     children: p
   } = e, {
@@ -33,8 +33,8 @@ function y(e) {
     useTitle: j
   } = s, v = null == j ? true : j();
   return (0, r.jsxs)(o, {
-    "data-settings-sidebar-item": d,
-    className: b.itemContainer,
+    "data-settings-sidebar-item": f,
+    className: d.itemContainer,
     children: [(0, r.jsxs)(c.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -53,27 +53,27 @@ function y(e) {
       }
       return e
     }({}, y), n = n = {
-      className: i()(b.item, {
-        [b.active]: l
+      className: l()(d.item, {
+        [d.active]: a
       }),
-      onClick: a,
+      onClick: i,
       children: [null != O ? (0, r.jsx)(O, {}) : (0, r.jsxs)("div", {
-        className: b.itemContent,
+        className: d.itemContent,
         children: [(0, r.jsx)(g, {
           color: "currentColor",
           size: "refresh_sm",
-          className: b.icon
+          className: d.icon
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "currentColor",
           children: v
         })]
       }), null != m && (0, r.jsx)("div", {
-        className: b.itemContent,
-        children: (0, r.jsx)(f.W, {
+        className: d.itemContent,
+        children: (0, r.jsx)(b.W, {
           trailing: m,
           visibleContent: u,
-          isSelected: l
+          isSelected: a
         })
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -93,32 +93,32 @@ function p(e) {
   let {
     node: t,
     visibleContent: n,
-    hoisted: a = false
-  } = e, i = o.useMemo(() => t.layout[0], [t]), c = u.Z.useField("currentPanelKey"), f = null != c && c === (null == i ? true : i.key), b = null != i ? () => u.Z.setState({
-    requestedTargetKey: i.key,
+    hoisted: i = false
+  } = e, l = o.useMemo(() => t.layout[0], [t]), c = u.Z.useField("currentPanelKey"), b = null != c && c === (null == l ? true : l.key), d = null != l ? () => u.Z.setState({
+    requestedTargetKey: l.key,
     showNavigationMobile: false
   }) : t.onClick, p = o.useMemo(() => {
-    if (!f || null == i || !(0, s.iU)(i.layout)) return null;
-    let e = i.layout.filter(e => null != e.useTitle || null != e.useSubnavLabel);
-    return e.length > 1 ? (0, r.jsx)(d.Z, {
+    if (!b || null == l || !(0, s.iU)(l.layout)) return null;
+    let e = l.layout.filter(e => null != e.useTitle || null != e.useSubnavLabel);
+    return e.length > 1 ? (0, r.jsx)(f.Z, {
       categories: e
     }) : null
-  }, [f, i]), g = a ? "li" : "div";
-  return a ? (0, r.jsx)(y, {
+  }, [b, l]), g = i ? "li" : "div";
+  return i ? (0, r.jsx)(y, {
     tag: g,
-    panelKey: null == i ? true : i.key,
-    onClick: b,
-    active: f,
+    panelKey: null == l ? true : l.key,
+    onClick: d,
+    active: b,
     node: t,
     visibleContent: n,
     children: p
-  }) : (0, r.jsx)(l.mh, {
+  }) : (0, r.jsx)(a.mh, {
     id: t.key,
     children: e => (0, r.jsx)(y, {
       tag: g,
-      panelKey: null == i ? true : i.key,
-      onClick: b,
-      active: f,
+      panelKey: null == l ? true : l.key,
+      onClick: d,
+      active: b,
       node: t,
       visibleContent: n,
       listItemProps: e,

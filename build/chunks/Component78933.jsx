@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 78933, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eo
@@ -59,8 +59,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk787224 = require("./787224.js"),
-  Chunk155493 = require("./155493.js");
+  Chunk54482 = require("./54482.js"),
+  Chunk116649 = require("./116649.js");
 
 function es(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -91,47 +91,47 @@ function eo(e) {
     guildId: eu,
     guildProfileEnabled: em
   } = e, ep = __OVERLAY__, eh = (0, S.ZP)(t.id, eu), {
-    analyticsLocations: ef
-  } = (0, m.ZP)(u.Z.USER_PROFILE_ACCOUNT_POPOUT), ex = (0, y.ZB)({
+    analyticsLocations: ex
+  } = (0, m.ZP)(u.Z.USER_PROFILE_ACCOUNT_POPOUT), ef = (0, _.ZB)({
     layout: "ACCOUNT_POPOUT",
     userId: t.id,
     guildId: eu
   }), {
-    ref: eb,
-    height: eg
+    ref: eg,
+    height: eb
   } = (0, d.ZP)(), {
     isHoveringOrFocusing: ev,
     isHovering: ej
-  } = (0, p.Z)(eb);
+  } = (0, p.Z)(eg);
   r.useEffect(() => {
-    null == eo || eo(eb.current)
-  }, [eb, eo]), r.useEffect(() => (z.Z.setState({
+    null == eo || eo(eg.current)
+  }, [eg, eo]), r.useEffect(() => (z.Z.setState({
     isOpen: true
   }), () => z.Z.setState({
     isOpen: false
   })), []);
-  let ey = (0, s.e7)([F.Z], () => F.Z.getStatus(t.id)),
-    eC = B.Cr.useSetting(),
-    e_ = (0, $.F)(eC),
+  let e_ = (0, s.e7)([F.Z], () => F.Z.getStatus(t.id)),
+    ey = B.Cr.useSetting(),
+    eC = (0, $.F)(ey),
     eS = (0, s.e7)([G.Z], () => G.Z.hidePersonalInformation),
-    eE = (0, b.p)(),
+    eE = (0, g.p)(),
     eO = B.Sb.useSetting(),
-    eT = (0, $.I)(ey),
+    eT = (0, $.I)(e_),
     eN = (0, K.g)(n),
     eP = (0, v.Z)({
-      analyticsLocations: ef
+      analyticsLocations: ex
     }),
     ew = (0, W.I5)(t),
     eI = (0, h.p)({
       location: "UserProfileAccountPopout"
     }),
-    ek = (0, _.b)({
+    ek = (0, C.b)({
       location: "UserProfileAccountPopout"
     }),
     eR = r.useRef(null),
     eA = r.useRef(null),
     eD = r.useRef((0, z.Z)(e => e.shouldRenderTenureLevelUp)),
-    eZ = r.useMemo(() => (0, f.Z)(), []),
+    eZ = r.useMemo(() => (0, x.Z)(), []),
     [eL, eM] = r.useState(true);
   r.useEffect(() => {
     setTimeout(() => {
@@ -141,15 +141,15 @@ function eo(e) {
   let eU = e => {
       null == n || n(), (0, O.openUserProfileModal)(es({
         customStatusPrompt: eZ,
-        sourceAnalyticsLocations: ef
-      }, ex, e))
+        sourceAnalyticsLocations: ex
+      }, ef, e))
     },
     eB = (0, E.Z)({
       location: "UserProfileAccountPopout"
     }),
     eF = (null == eh ? true : eh.widgets) != null && eh.widgets.length > 0,
     eG = eF ? [] : [o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
-    [eV, eH] = (0, x.US)(eG),
+    [eV, eH] = (0, f.US)(eG),
     eW = eV === o.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
     ez = r.useCallback(() => {
       eH(en.L.USER_DISMISS), n()
@@ -158,27 +158,27 @@ function eo(e) {
       em && null != eu || (eP(), ez())
     }, [eP, ez, em, eu]),
     eK = em && null != eu,
-    eY = (0, q.K)(eu, ef, eW, n, ez),
-    eQ = (0, C.k)({
+    eY = (0, q.K)(eu, ex, eW, n, ez),
+    eQ = (0, y.k)({
       location: "UserProfileAccountPopout"
     });
   return (0, a.jsx)(m.Gt, {
-    value: ef,
-    children: (0, a.jsx)(y.Mt, {
-      value: ex,
+    value: ex,
+    children: (0, a.jsx)(_.Mt, {
+      value: ef,
       openedAt: ed,
       fetchStartedAt: null == eh ? true : eh.fetchStartedAt,
       fetchEndedAt: null == eh ? true : eh.fetchEndedAt,
       isLoaded: null == eh ? true : eh.isLoaded,
       children: (0, a.jsxs)(c.VqE, {
-        ref: eb,
+        ref: eg,
         "aria-label": t.username,
         className: ei.popoutContainer,
         "data-layer": "base",
         children: [(0, a.jsx)(J.Z, {
           displayProfile: eh,
           handleOpenUserProfileModal: eU,
-          height: eg
+          height: eb
         }), (0, a.jsxs)(D.Z, {
           className: ei.themeContainer,
           user: t,
@@ -275,12 +275,12 @@ function eo(e) {
                   }), (0, a.jsx)(Q.V4, {
                     action: "PRESS_SET_STATUS",
                     label: (0, a.jsx)(X.Z, {}),
-                    sublabel: null != e_ && e_,
+                    sublabel: null != eC && eC,
                     icon: () => (0, a.jsx)(c.qbd, {
-                      status: ey,
+                      status: e_,
                       size: 12
                     }),
-                    trailing: (eE || ey === et.Skl.DND) && (0, a.jsx)(c.owu, {
+                    trailing: (eE || e_ === et.Skl.DND) && (0, a.jsx)(c.owu, {
                       size: "xxs"
                     }),
                     renderSubmenu: i.tq ? true : e => {
@@ -383,7 +383,7 @@ function eo(e) {
         }), !eK && eQ ? (0, a.jsx)(Y.Z, {
           targetElementRef: eA,
           onClose: n
-        }) : null, (0, a.jsx)(g.Z, {})]
+        }) : null, (0, a.jsx)(b.Z, {})]
       })
     })
   })

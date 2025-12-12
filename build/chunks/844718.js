@@ -24,7 +24,7 @@ function i(e) {
   return e
 }
 
-function a(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -35,8 +35,8 @@ function a(e, t) {
   return n
 }
 
-function o(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
+function a(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -63,7 +63,7 @@ let s = (0, require("./427164.js").le)({
     } = e, n = s.getConfig({
       location: t
     });
-    return o(i({}, n), {
+    return a(i({}, n), {
       isNoopTreatment: 1 === n.variation
     })
   }

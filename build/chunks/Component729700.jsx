@@ -22,7 +22,7 @@ let g = e => {
     onClick: h
   } = e, {
     analyticsLocations: m
-  } = (0, c.ZP)(o.Z.HOME_PAGE_SHOP_TAB), b = (0, s.ZP)(), _ = (0, a.wj)(b) ? t.assetDark : t.assetLight, E = i.useRef(g);
+  } = (0, c.ZP)(o.Z.HOME_PAGE_SHOP_TAB), _ = (0, s.ZP)(), b = (0, a.wj)(_) ? t.assetDark : t.assetLight, E = i.useRef(g);
   return E.current = g, i.useEffect(() => () => {
     var e;
     null == (e = E.current) || e.call(E)
@@ -38,7 +38,7 @@ let g = e => {
     body: t.body(),
     graphic: {
       type: "image",
-      src: _
+      src: b
     },
     actions: [{
       text: f.intl.string(f.t.fYfGgK),

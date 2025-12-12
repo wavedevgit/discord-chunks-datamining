@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk294218 = require("./294218.jsx"),
   Chunk592125 = require("./592125.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk745807 = require("./745807.js");
+  Chunk374815 = require("./374815.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,15 +55,15 @@ class T extends Chunk473749.PureComponent {
       searchOffset: n,
       index: l,
       totalResults: i
-    } = this.props, s = Chunk592125.Z.getChannel(module.channel_id);
+    } = this.props, a = Chunk592125.Z.getChannel(module.channel_id);
     if (null == Chunk239091) return null;
     let d = "search-result-".concat(module.id);
     return (0, Chunk54381.jsx)(Chunk481060.tEY, {
       ringTarget: this.hitRef,
-      ringClassName: Chunk745807.__invalid_searchResultFocusRing,
+      ringClassName: Chunk374815.__invalid_searchResultFocusRing,
       offset: 4,
       children: (0, Chunk54381.jsxs)("li", A(_({
-        className: Chunk745807.container
+        className: Chunk374815.container
       }, exports), {
         "aria-posinset": 1 + require + Chunk473749,
         "aria-setsize": Chunk374470,
@@ -72,13 +72,13 @@ class T extends Chunk473749.PureComponent {
           tabIndex: false,
           onClick: this.handleMessageClick,
           innerRef: this.containerRef,
-          className: Chunk745807.searchResult,
+          className: Chunk374815.searchResult,
           focusProps: {
             enabled: false
           },
           children: (0, Chunk54381.jsx)("div", {
             ref: this.hitRef,
-            className: Chunk745807.message,
+            className: Chunk374815.message,
             children: (0, Chunk54381.jsx)(Chunk294218.Z, {
               id: d,
               message: module,
@@ -90,10 +90,10 @@ class T extends Chunk473749.PureComponent {
             })
           }, module.id)
         }), (0, Chunk54381.jsx)("div", {
-          className: Chunk745807.buttonsContainer,
+          className: Chunk374815.buttonsContainer,
           "aria-hidden": true,
           children: (0, Chunk54381.jsx)(Chunk481060.P3F, {
-            className: Chunk745807.button,
+            className: Chunk374815.button,
             onClick: this.jumpTo,
             children: Chunk388032.intl.string(Chunk388032.t.k5WiPf)
           })
@@ -104,10 +104,10 @@ class T extends Chunk473749.PureComponent {
   constructor(...e) {
     super(...e), d(this, "containerRef", l.createRef()), d(this, "hitRef", l.createRef()), d(this, "handleContextMenu", (e, t) => {
       let l = u.Z.getChannel(t.channel_id);
-      null != l && (e.stopPropagation(), (0, s.jW)(e, async () => {
+      null != l && (e.stopPropagation(), (0, a.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("38342"), n.e("26503"), n.e("72804")]).then(n.bind(n, 858341));
+        } = await Promise.all([n.e("38342"), n.e("26503"), n.e("41413")]).then(n.bind(n, 858341));
         return n => (0, r.jsx)(e, A(_({}, n), {
           message: t,
           channel: l

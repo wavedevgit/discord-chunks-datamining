@@ -33,15 +33,15 @@ function O(e) {
     guild: T,
     channel: C,
     isMember: A
-  } = (0, a.cj)([g.ZP, _.Z, f.Z, p.ZP, m.default], () => {
+  } = (0, o.cj)([g.ZP, _.Z, f.Z, p.ZP, m.default], () => {
     var e, t;
     let r = null != (t = g.ZP.getGuildScheduledEvent(O)) ? t : true,
       i = _.Z.getGuild(n),
-      a = f.Z.getChannel(null == r ? true : r.channel_id);
+      o = f.Z.getChannel(null == r ? true : r.channel_id);
     return {
       guildScheduledEvent: r,
       guild: i,
-      channel: a,
+      channel: o,
       isMember: p.ZP.isMember(n, null == (e = m.default.getCurrentUser()) ? true : e.id)
     }
   }, [n, O]), N = () => {
@@ -51,7 +51,7 @@ function O(e) {
         analyticsLocations: S
       }) === u.e.PROCEED) {
       if ((0, c.n)(n)) return void(0, l.hk)(n);
-      o.Z.joinGuild(n, {
+      a.Z.joinGuild(n, {
         source: y.vtS.GUILD_EVENT_EMBED
       }).catch(() => {})
     }

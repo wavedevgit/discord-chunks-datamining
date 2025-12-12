@@ -13,20 +13,20 @@ function i() {
   }).apply(this, arguments)
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
 }
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -70,15 +70,15 @@ module.exports = function(e) {
     if (t.getDirectionMap() !== n.getDirectionMap() || t.getSelection().getHasFocus() !== n.getSelection().getHasFocus()) returntrue;
     var r = n.getNativelyRenderedContent(),
       i = t.isInCompositionMode(),
-      a = n.isInCompositionMode();
-    if (t === n || null !== r && n.getCurrentContent() === r || i && a) returnfalse;
-    var o = t.getCurrentContent(),
+      o = n.isInCompositionMode();
+    if (t === n || null !== r && n.getCurrentContent() === r || i && o) returnfalse;
+    var a = t.getCurrentContent(),
       s = n.getCurrentContent(),
       l = t.getDecorator(),
       c = n.getDecorator();
-    return i !== a || o !== s || l !== c || n.mustForceSelection()
+    return i !== o || a !== s || l !== c || n.mustForceSelection()
   }, n.render = function() {
-    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, o = e.customStyleMap, s = e.customStyleFn, d = e.editorState, m = e.editorKey, h = e.preventScroll, g = e.textDirectionality, E = d.getCurrentContent(), b = d.getSelection(), y = d.mustForceSelection(), O = d.getDecorator(), v = p(d.getDirectionMap()), S = E.getBlocksAsArray(), I = [], T = null, C = null, A = 0; A < S.length; A++) {
+    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, a = e.customStyleMap, s = e.customStyleFn, d = e.editorState, m = e.editorKey, h = e.preventScroll, g = e.textDirectionality, E = d.getCurrentContent(), b = d.getSelection(), y = d.mustForceSelection(), O = d.getDecorator(), v = p(d.getDirectionMap()), S = E.getBlocksAsArray(), I = [], T = null, C = null, A = 0; A < S.length; A++) {
       var N = S[A],
         P = N.getKey(),
         R = N.getType(),
@@ -94,7 +94,7 @@ module.exports = function(e) {
           block: N,
           blockProps: x,
           blockStyleFn: r,
-          customStyleMap: o,
+          customStyleMap: a,
           customStyleFn: s,
           decorator: O,
           direction: j,
@@ -121,7 +121,7 @@ module.exports = function(e) {
           "data-offset-key": M,
           key: P
         };
-      true !== L && (Y = a({}, Y, {
+      true !== L && (Y = o({}, Y, {
         contentEditable: L,
         suppressContentEditableWarning: true
       }));

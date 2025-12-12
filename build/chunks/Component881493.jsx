@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk74538 = require("./74538.js"),
   Chunk937615 = require("./937615.js"),
@@ -15,13 +15,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk42818 = require("./42818.jsx"),
   Chunk594135 = require("./594135.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk870206 = require("./870206.js");
+  Chunk704442 = require("./704442.js");
 let m = () => {
   let {
     transitionState: e,
     planId: t,
     renewalInvoice: n,
-    onClose: a,
+    onClose: o,
     handleCancellation: m,
     renewalInvoiceDetails: h,
     fullPrice: g,
@@ -69,8 +69,8 @@ let m = () => {
     onClose: async () => Chunk120356(),
     children: [(0, Chunk54381.jsxs)(Chunk811334.aO, {
       isPremiumRebrand: true,
-      className: o()({
-        [Chunk870206.hasError]: O
+      className: a()({
+        [Chunk704442.hasError]: O
       }),
       children: [(0, Chunk54381.jsx)(Chunk811334.Z9, {
         children: Chunk388032.intl.string(Chunk388032.t.iqhIp4)
@@ -79,7 +79,7 @@ let m = () => {
           planName: Chunk74538.ZP.getDisplayName("".concat(exports))
         }),
         value: "".concat(A),
-        className: Chunk870206.canceled
+        className: Chunk704442.canceled
       }), (0, Chunk54381.jsx)(Chunk811334.UN, {}), (0, Chunk54381.jsx)(Chunk42818.nd, {
         premiumSubscription: E,
         renewalInvoice: require,

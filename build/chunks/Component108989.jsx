@@ -67,14 +67,14 @@ function u(e) {
     sprites: d = a,
     spriteColors: p = s,
     confettiConfig: f
-  } = e, [g, h] = i.useState(null), [m, b] = i.useState(null), _ = (0, l.uR)(m, g), E = i.useMemo(() => new l.qA({
+  } = e, [g, h] = i.useState(null), [m, _] = i.useState(null), b = (0, l.uR)(m, g), E = i.useMemo(() => new l.qA({
     wind: u
   }), [u]), O = i.useCallback(() => {
     var e, t;
     let n = null == m ? true : m.getCanvas();
     if (null == n) return;
     let r = n.getBoundingClientRect();
-    _.createConfetti((e = function(e) {
+    b.createConfetti((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -113,13 +113,13 @@ function u(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [_, m, f]);
+  }, [b, m, f]);
   return i.useEffect(() => {
     let e = n ? setInterval(O, o) : null;
     return () => clearInterval(e)
   }, [n, O]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.O_, {
-      ref: b,
+      ref: _,
       className: t,
       environment: E
     }), (0, r.jsx)(l.Ji, {

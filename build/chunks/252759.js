@@ -2,8 +2,8 @@
 /** chunk id: 252759, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => a,
-  a: () => o
+  A: () => o,
+  a: () => a
 });
 var Chunk75834 = require("./75834.js");
 
@@ -15,10 +15,10 @@ function i(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var a = function(e) {
+var o = function(e) {
   return e.STREAM = "stream", e.PAUSE = "pause", e.STOP = "stop", e
 }({});
-class o {
+class a {
   onStreamBegin(e, t, n) {
     let i = (0, r.e)(e, t);
     this.sound = n, null == i || null == i.windowHandle ? this.callback({

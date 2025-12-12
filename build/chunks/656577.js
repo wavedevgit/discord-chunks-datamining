@@ -61,20 +61,20 @@ let d = {
     let {
       setting: t,
       isDm: n = false,
-      isFriend: o = false
+      isFriend: a = false
     } = e;
     if (null != t && t !== r.Q4.UNSET_EXPLICIT_CONTENT_REDACTION) return t;
     let l = s.default.getCurrentUser(),
-      c = (0, a.U)("resolveExplicitContentSettingWithDefaults");
+      c = (0, o.U)("resolveExplicitContentSettingWithDefaults");
     return (0, i.c_)("resolveExplicitContentSettingWithDefaults") || c ? E({
       isDm: n,
-      isFriend: o
+      isFriend: a
     }) : (null == l ? true : l.nsfwAllowed) === false ? g({
       isDm: n,
-      isFriend: o
+      isFriend: a
     }) : h({
       isDm: n,
-      isFriend: o
+      isFriend: a
     })
   },
   h = e => {
@@ -83,7 +83,7 @@ let d = {
       isFriend: n = false
     } = e;
     if (!t) return r.Q4.SHOW;
-    let i = o.UP.getSetting();
+    let i = a.UP.getSetting();
     return n ? d[i] : f[i]
   },
   g = e => {
@@ -92,7 +92,7 @@ let d = {
       isFriend: n = false
     } = e;
     if (!t) return r.Q4.BLUR;
-    let i = o.UP.getSetting();
+    let i = a.UP.getSetting();
     return n ? p[i] : _[i]
   },
   E = e => {
@@ -103,7 +103,7 @@ let d = {
     return t && !n ? r.Q4.BLOCK : r.Q4.BLUR
   },
   b = e => {
-    let t = null != e ? e : o.Sh.getSetting();
+    let t = null != e ? e : a.Sh.getSetting();
     return {
       explicitContentGuilds: m({
         setting: null == t ? true : t.explicitContentGuilds
@@ -121,5 +121,5 @@ let d = {
   },
   y = e => {
     let t = b();
-    o.Sh.updateSetting(u({}, t, e))
+    a.Sh.updateSetting(u({}, t, e))
   }

@@ -5,7 +5,7 @@ let r, i;
 require.d(exports, {
   Z: () => Q
 }), require("./415506.js"), require("./388685.js");
-var a, Chunk442837 = require("./442837.js"),
+var o, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk437263 = require("./437263.js"),
   Chunk764976 = require("./764976.js"),
@@ -51,19 +51,19 @@ let E = [],
 function N(e, t) {
   if (null == i) throw Error("Creating RTCConnection without session.");
   let r = f.default.getId(),
-    a = new(n(861687)).Z({
+    o = new(n(861687)).Z({
       userId: r,
       sessionId: i,
       guildId: e,
       channelId: t,
       joinVoiceId: A
     });
-  return a.on(l.z.State, (e, t, n) => {
+  return o.on(l.z.State, (e, t, n) => {
     s.Z.wait(() => s.Z.dispatch(g({
       type: "RTC_CONNECTION_STATE",
       state: e
     }, t, n)))
-  }), a.on(l.z.Video, (e, t, n, r, i) => {
+  }), o.on(l.z.Video, (e, t, n, r, i) => {
     s.Z.wait(() => s.Z.dispatch({
       type: "RTC_CONNECTION_VIDEO",
       guildId: e,
@@ -72,59 +72,59 @@ function N(e, t) {
       streamId: r,
       rtcServerId: i,
       context: m.Yn.DEFAULT,
-      mediaEngineConnectionId: a.getMediaEngineConnectionId()
+      mediaEngineConnectionId: o.getMediaEngineConnectionId()
     }))
-  }), a.on(l.z.Ping, (e, t) => {
+  }), o.on(l.z.Ping, (e, t) => {
     s.Z.wait(() => s.Z.dispatch({
       type: "RTC_CONNECTION_PING",
       pings: e,
       quality: t
     }))
-  }), a.on(l.z.OutboundLossRate, e => {
+  }), o.on(l.z.OutboundLossRate, e => {
     s.Z.wait(() => s.Z.dispatch({
       type: "RTC_CONNECTION_LOSS_RATE",
       lossRate: e
     }))
-  }), a.on(l.z.Speaking, (e, t) => {
+  }), o.on(l.z.Speaking, (e, t) => {
     null == v || v.setSpeaking(e, t)
-  }), a.on(l.z.Flags, (e, t) => {
+  }), o.on(l.z.Flags, (e, t) => {
     s.Z.wait(() => {
       s.Z.dispatch({
         type: "RTC_CONNECTION_FLAGS",
         flags: t,
         userId: e,
-        guildId: a.guildId,
-        channelId: a.channelId,
-        context: a.context
+        guildId: o.guildId,
+        channelId: o.channelId,
+        context: o.context
       })
     })
-  }), a.on(l.z.UsersMerged, (e, t) => {
+  }), o.on(l.z.UsersMerged, (e, t) => {
     s.Z.dispatch({
       type: "RTC_CONNECTION_USERS_MERGED",
       userIds: e,
       context: t
     })
-  }), a.on(l.z.ClientConnect, e => {
+  }), o.on(l.z.ClientConnect, e => {
     s.Z.wait(() => {
       s.Z.dispatch({
         type: "RTC_CONNECTION_CLIENT_CONNECT",
         userIds: e,
-        guildId: a.guildId,
-        channelId: a.channelId,
-        context: a.context
+        guildId: o.guildId,
+        channelId: o.channelId,
+        context: o.context
       })
     })
-  }), a.on(l.z.ClientDisconnect, e => {
+  }), o.on(l.z.ClientDisconnect, e => {
     s.Z.wait(() => {
       s.Z.dispatch({
         type: "RTC_CONNECTION_CLIENT_DISCONNECT",
         userId: e,
-        guildId: a.guildId,
-        channelId: a.channelId,
-        context: a.context
+        guildId: o.guildId,
+        channelId: o.channelId,
+        context: o.context
       })
     })
-  }), a.on(l.z.Platform, (e, t, n) => {
+  }), o.on(l.z.Platform, (e, t, n) => {
     s.Z.wait(() => {
       s.Z.dispatch({
         type: "RTC_CONNECTION_PLATFORM",
@@ -133,20 +133,20 @@ function N(e, t) {
         channelId: n
       })
     })
-  }), a.on(l.z.SecureFramesUpdate, () => {
+  }), o.on(l.z.SecureFramesUpdate, () => {
     s.Z.wait(() => {
       s.Z.dispatch({
         type: "RTC_CONNECTION_SECURE_FRAMES_UPDATE"
       })
     })
-  }), a.on(l.z.RosterMapUpdate, e => {
+  }), o.on(l.z.RosterMapUpdate, e => {
     s.Z.wait(() => {
       s.Z.dispatch({
         type: "RTC_CONNECTION_ROSTER_MAP_UPDATE",
         userIds: e
       })
     })
-  }), v = new c.Z(f.default.getId(), t), y = null, S = false, I = false, a
+  }), v = new c.Z(f.default.getId(), t), y = null, S = false, I = false, o
 }
 
 function P() {
@@ -179,12 +179,12 @@ function D(e) {
     voiceStates: t
   } = e;
   return t.reduce((e, t) => {
-    var n, a, o;
+    var n, o, a;
     if (null == v || v.updateVoiceStates(t.userId, t.channelId), S = S || (null != (n = null == v ? true : v.getStats().max_voice_state_count) ? n : 0) > 1, f.default.getId() !== t.userId) return e;
-    if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? P() : (r.setNextChannelId(t.channelId), C = true, A = null, r.clearJoinVoiceId()) : (t.guildId !== r.guildId && null == t.channelId || P(), null != t.channelId && (b = null, O = null, r = N(t.guildId, t.channelId), S = (null != (a = null == v ? true : v.getStats().max_voice_state_count) ? a : 0) > 1)) : t.guildId === r.guildId && ((null == u.default.getAwaitingRemoteSessionInfo() || null == u.default.getRemoteSessionId()) && (b = r.channelId), P());
+    if (null != r) t.sessionId === i ? null != t.guildId && t.guildId === r.guildId || null == t.guildId && t.channelId === r.channelId ? null == t.channelId ? P() : (r.setNextChannelId(t.channelId), C = true, A = null, r.clearJoinVoiceId()) : (t.guildId !== r.guildId && null == t.channelId || P(), null != t.channelId && (b = null, O = null, r = N(t.guildId, t.channelId), S = (null != (o = null == v ? true : v.getStats().max_voice_state_count) ? o : 0) > 1)) : t.guildId === r.guildId && ((null == u.default.getAwaitingRemoteSessionInfo() || null == u.default.getRemoteSessionId()) && (b = r.channelId), P());
     else {
       if (t.sessionId !== i || null == t.channelId) return e;
-      b = null, O = null, r = N(t.guildId, t.channelId), S = (null != (o = null == v ? true : v.getStats().max_voice_state_count) ? o : 0) > 1
+      b = null, O = null, r = N(t.guildId, t.channelId), S = (null != (a = null == v ? true : v.getStats().max_voice_state_count) ? a : 0) > 1
     }
     returntrue
   }, false)
@@ -284,7 +284,7 @@ function K(e) {
   } = e;
   null == r || r.setVideoSize(t, n, i)
 }
-class z extends(a = Chunk442837.ZP.Store) {
+class z extends(o = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk258609.default, Chunk938475.ZP), (0, Chunk338336.r)(this.getRTCConnectionId, this.getMediaSessionId)
   }

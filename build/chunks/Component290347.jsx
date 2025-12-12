@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk641635 = require("./641635.js");
+  Chunk188784 = require("./188784.js");
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -126,7 +126,7 @@ function Z(e) {
   } = e, {
     onClose: V,
     transitionState: F
-  } = x, z = (0, b.Dt)(), Y = U.length % 2 == 0, W = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), [q, K] = i.useState(Date.now()), [Q, J] = i.useState(0), [X, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(q), el = i.useRef(Q), ea = i.useRef(X), es = i.useRef(ee), eo = i.useRef(en), [ec, eu] = i.useState(P), ed = i.useRef(false);
+  } = x, z = (0, _.Dt)(), Y = U.length % 2 == 0, W = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), [q, K] = i.useState(Date.now()), [Q, J] = i.useState(0), [X, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(q), el = i.useRef(Q), ea = i.useRef(X), es = i.useRef(ee), eo = i.useRef(en), [ec, eu] = i.useState(P), ed = i.useRef(false);
 
   function ep() {
     let e = Date.now(),
@@ -212,7 +212,7 @@ function Z(e) {
       }), null == L ? true : L(), (0, r.jsxs)(p.hzk, {
         "data-migration-pending": true,
         className: T.content,
-        children: ["video" === Z.type ? (0, r.jsx)(_.Z, {
+        children: ["video" === Z.type ? (0, r.jsx)(b.Z, {
           className: a()(T.video, w),
           autoPlay: !W,
           loop: true,

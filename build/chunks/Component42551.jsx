@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk954955 = require("./954955.js"),
   s = require.n(Chunk954955),
   Chunk498607 = require("./498607.js"),
-  d = require.n(Chunk498607),
+  u = require.n(Chunk498607),
   Chunk399606 = require("./399606.js"),
   Chunk333200 = require("./333200.jsx"),
   Chunk563115 = require("./563115.jsx"),
@@ -24,7 +24,7 @@ let j = new Set;
 function x(e) {
   let {
     guildId: t
-  } = e, n = (0, b.BG)(t), i = (0, u.e7)([f.Z], () => f.Z.getSearchStateByGuildId(t), [t], d()), [a, c] = l.useState(i.selectedRoleIds), x = (0, m.h)(t, j, true), v = l.useCallback(e => {
+  } = e, n = (0, b.BG)(t), i = (0, d.e7)([f.Z], () => f.Z.getSearchStateByGuildId(t), [t], u()), [a, c] = l.useState(i.selectedRoleIds), x = (0, m.h)(t, j, true), v = l.useCallback(e => {
     (0, p.Dr)(t, {
       selectedRoleIds: e
     }), n(e)
@@ -44,7 +44,7 @@ function x(e) {
         guildId: t
       }, n.id)
     }
-  }, [t]), w = l.useCallback((e, t) => {
+  }, [t]), _ = l.useCallback((e, t) => {
     let n = new Map(x.map(e => [e.record.id, e]));
     return e.filter(e => {
       let r = n.get(e.value);
@@ -63,7 +63,7 @@ function x(e) {
     onSelectionChange: O,
     options: x,
     formatOption: H,
-    customMatchSorter: w,
+    customMatchSorter: _,
     selectionMode: "multiple",
     autoFocus: true,
     closeOnSelect: false,

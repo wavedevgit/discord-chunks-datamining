@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk39127 = require("./39127.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk353368 = require("./353368.js"),
-  Chunk325208 = require("./325208.js");
+  Chunk472470 = require("./472470.js");
 let _ = 50;
 
 function m(e) {
@@ -43,9 +43,9 @@ let h = Chunk473749.forwardRef(function(e, t) {
         }),
         r = null != n.emojiId,
         i = f.q.PREMIUM,
-        s = (0, a.random)(c.Jw[i].length, false),
+        s = (0, o.random)(c.Jw[i].length, false),
         l = {
-          id: (0, o.Z)(),
+          id: (0, a.Z)(),
           animationId: s,
           animationType: i,
           shouldResize: r,

@@ -2,13 +2,13 @@
 /** chunk id: 590617, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => o
+  H: () => a
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk563132 = require("./563132.jsx"),
   Chunk614277 = require("./614277.jsx");
-let o = e => {
+let a = e => {
   let {
     children: t,
     stepConfigs: n
@@ -17,9 +17,9 @@ let o = e => {
     stepConfigs: n,
     skuIDs: [],
     activeSubscription: null,
-    children: [(0, r.jsx)(a.C3, {
+    children: [(0, r.jsx)(o.C3, {
       children: t
-    }), (0, r.jsx)(a.ZP, {
+    }), (0, r.jsx)(o.ZP, {
       header: null,
       isLargeModal: false,
       isDynamicModal: true

@@ -1,7 +1,7 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 441248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  k: () => m
+  k: () => b
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,9 +16,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk168524 = require("./168524.js"),
   Chunk115530 = require("./115530.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk867751 = require("./867751.js");
+  Chunk48733 = require("./48733.js");
 
-function b(e) {
+function m(e) {
   let {
     name: t,
     applicationId: n
@@ -28,7 +28,7 @@ function b(e) {
     source: d.m1.RtcPanel,
     trackEntryPointImpression: true
   });
-  return (0, r.jsx)(a.P3F, {
+  return (0, r.jsx)(o.P3F, {
     onClick: i,
     className: l()(null != i && g.clickableGameName),
     children: (0, r.jsx)(h.Z, {
@@ -38,7 +38,7 @@ function b(e) {
   })
 }
 
-function m(e) {
+function b(e) {
   let {
     isStreaming: t,
     application: n,
@@ -47,8 +47,8 @@ function m(e) {
     isForceShowSharingPopout: d,
     setIsForceShowSharingPopout: f,
     ref: h,
-    popoutTargetRef: m
-  } = e, y = null != n ? n.name : null != i ? i.name : p.intl.string(p.t["UQMV/E"]);
+    popoutTargetRef: b
+  } = e, _ = null != n ? n.name : null != i ? i.name : p.intl.string(p.t["UQMV/E"]);
   return (0, c.V)(), (0, r.jsxs)("div", {
     className: g.gameWrapper,
     children: [(0, r.jsxs)("div", {
@@ -58,21 +58,21 @@ function m(e) {
         game: n,
         pid: null == i ? true : i.pid,
         ref: h
-      }), t ? (0, r.jsx)(a.Odl, {
+      }), t ? (0, r.jsx)(o.Odl, {
         size: "md",
         color: "currentColor",
         className: g.liveBadge
       }) : null]
     }), (0, r.jsx)(s.j, {
-      popoutTargetRef: m,
+      popoutTargetRef: b,
       isForceShowSharingPopout: d,
       setIsForceShowSharingPopout: f,
       children: (0, r.jsxs)("div", {
         className: g.info,
-        children: [null != y ? (0, r.jsx)(b, {
-          name: y,
+        children: [null != _ ? (0, r.jsx)(m, {
+          name: _,
           applicationId: null == n ? true : n.id
-        }) : null, (0, r.jsx)(o.V, {
+        }) : null, (0, r.jsx)(a.V, {
           onClick: l
         })]
       })

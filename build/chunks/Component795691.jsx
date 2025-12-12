@@ -1,8 +1,8 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 795691, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 }), require("./388685.js"), require("./457542.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,28 +10,28 @@ var Chunk54381 = require("./54381.js"),
   Chunk279881 = require("./279881.js"),
   Chunk383124 = require("./383124.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk772201 = require("./772201.js");
+  Chunk661656 = require("./661656.js");
 
-function d(e) {
+function u(e) {
   let {
     guildId: t,
     selectedGameApplicationIds: n,
-    onUpdateGames: d,
-    disabled: u
+    onUpdateGames: u,
+    disabled: d
   } = e, {
     topGames: g,
-    tryFetchTopGames: f
-  } = (0, a.I)(), m = g.get(t), [b, p] = i.useState(false);
+    tryFetchTopGames: m
+  } = (0, s.I)(), p = g.get(t), [f, h] = i.useState(false);
   i.useEffect(() => {
-    p(true), f(t).finally(() => {
-      p(false)
+    h(true), m(t).finally(() => {
+      h(false)
     })
-  }, [t, f]);
-  let h = i.useMemo(() => null == m ? [] : Object.keys(m).filter(e => !n.includes(e)).sort((e, t) => m[t].score - m[e].score), [m, n]),
-    x = i.useCallback(e => {
-      n.includes(e) ? d(n.filter(t => t !== e)) : d([...n, e])
-    }, [d, n]);
-  return b && null == m ? (0, r.jsx)(l.$jN, {}) : null == h || 0 === h.length ? null : (0, r.jsxs)(r.Fragment, {
+  }, [t, m]);
+  let x = i.useMemo(() => null == p ? [] : Object.keys(p).filter(e => !n.includes(e)).sort((e, t) => p[t].score - p[e].score), [p, n]),
+    b = i.useCallback(e => {
+      n.includes(e) ? u(n.filter(t => t !== e)) : u([...n, e])
+    }, [u, n]);
+  return f && null == p ? (0, r.jsx)(l.$jN, {}) : null == x || 0 === x.length ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: c.separator
     }), (0, r.jsxs)("div", {
@@ -42,11 +42,11 @@ function d(e) {
         children: o.intl.string(o.t.bFGpua)
       }), (0, r.jsx)("div", {
         className: c.gamesList,
-        children: h.map(e => (0, r.jsx)(s.Z, {
+        children: x.map(e => (0, r.jsx)(a.Z, {
           applicationId: e,
           selected: false,
-          onClick: x,
-          disabled: u
+          onClick: b,
+          disabled: d
         }, e))
       })]
     })]

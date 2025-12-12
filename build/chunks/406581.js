@@ -25,7 +25,7 @@ function _(e) {
     collection: t,
     document: n
   } = E(e.createCollection);
-  return c.createElement(c.Fragment, null, c.createElement(o._G, null, c.createElement(p.Provider, {
+  return c.createElement(c.Fragment, null, c.createElement(a._G, null, c.createElement(p.Provider, {
     value: n
   }, e.content)), c.createElement(m, {
     render: e.children,
@@ -44,8 +44,8 @@ function h(e, t, n) {
   let r = (0, u.Av)(),
     i = (0, c.useRef)(r);
   i.current = r;
-  let a = (0, c.useCallback)(() => i.current ? n() : t(), [t, n]);
-  return (0, d.useSyncExternalStore)(e, a)
+  let o = (0, c.useCallback)(() => i.current ? n() : t(), [t, n]);
+  return (0, d.useSyncExternalStore)(e, o)
 }
 let g = "function" == typeof Chunk473749.useSyncExternalStore ? Chunk473749.useSyncExternalStore : h;
 
@@ -66,20 +66,20 @@ function y(e) {
   return (t = class extends r.S3 {}).type = e, t
 }
 
-function O(e, t, n, r, i, a) {
+function O(e, t, n, r, i, o) {
   "string" == typeof e && (e = y(e));
-  let o = (0, c.useCallback)(i => {
-      null == i || i.setProps(t, n, e, r, a)
-    }, [t, n, r, a, e]),
+  let a = (0, c.useCallback)(i => {
+      null == i || i.setProps(t, n, e, r, o)
+    }, [t, n, r, o, e]),
     s = (0, c.useContext)(b);
   if (s) {
-    let o = s.ownerDocument.nodesByProps.get(t);
-    return o || ((o = s.ownerDocument.createElement(e.type)).setProps(t, n, e, r, a), s.appendChild(o), s.ownerDocument.updateCollection(), s.ownerDocument.nodesByProps.set(t, o)), i ? c.createElement(b.Provider, {
-      value: o
+    let a = s.ownerDocument.nodesByProps.get(t);
+    return a || ((a = s.ownerDocument.createElement(e.type)).setProps(t, n, e, r, o), s.appendChild(a), s.ownerDocument.updateCollection(), s.ownerDocument.nodesByProps.set(t, a)), i ? c.createElement(b.Provider, {
+      value: a
     }, i) : null
   }
   return c.createElement(e.type, {
-    ref: o
+    ref: a
   }, i)
 }
 
@@ -88,13 +88,13 @@ function v(e, t) {
       node: e
     }) => t(e.props, e.props.ref, e),
     r = (0, c.forwardRef)((r, i) => {
-      let a = (0, c.useContext)(l.RG);
+      let o = (0, c.useContext)(l.RG);
       if (!(0, c.useContext)(f)) {
         if (t.length >= 3) throw Error(t.name + " cannot be rendered outside a collection.");
         return t(r, i)
       }
       return O(e, r, i, "children" in r ? r.children : null, null, e => c.createElement(l.RG.Provider, {
-        value: a
+        value: o
       }, c.createElement(n, {
         node: e
       })))
@@ -107,17 +107,17 @@ function S(e, t, n = I) {
       node: e
     }) => t(e.props, e.props.ref, e),
     i = (0, c.forwardRef)((t, i) => {
-      var a;
-      let o = n(t);
-      return null != (a = O(e, t, i, null, o, e => c.createElement(r, {
+      var o;
+      let a = n(t);
+      return null != (o = O(e, t, i, null, a, e => c.createElement(r, {
         node: e
-      }))) ? a : c.createElement(c.Fragment, null)
+      }))) ? o : c.createElement(c.Fragment, null)
     });
   return i.displayName = t.name, i
 }
 
 function I(e) {
-  return (0, a.H)({
+  return (0, o.H)({
     ...e,
     addIdAndValue: true
   })

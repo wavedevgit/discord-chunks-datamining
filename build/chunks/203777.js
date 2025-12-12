@@ -14,5 +14,5 @@ async function s(e, t, n) {
     activity: l,
     user: c
   } = e;
-  (0, o.Z)(s) && null != l && null != l.sync_id && (await (0, i.KV)(), r.hY(l, c.id), (0, a.Z)(t, c, l, n))
+  (0, a.Z)(s) && null != l && null != l.sync_id && (await (0, i.KV)(), r.hY(l, c.id), (0, o.Z)(t, c, l, n))
 }

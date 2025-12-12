@@ -3,9 +3,9 @@
 "use strict";
 var Chunk166691 = require("./166691.js"),
   i = Chunk166691("Object.prototype.toString"),
-  a = require("./738146.js")(),
+  o = require("./738146.js")(),
   Chunk190337 = require("./190337.js");
-if (a) {
+if (o) {
   var s = Chunk166691("Symbol.prototype.toString"),
     l = Chunk190337(/^Symbol\(.*\)$/),
     c = function(e) {

@@ -37,9 +37,9 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
   R = (e, t, n) => {
     let r = N.t["bES+y2"],
       i = E.ZP.getName(t.guild_id, t.id, n),
-      a = e.extra.activity_name;
+      o = e.extra.activity_name;
     return N.intl.formatToMarkdownString(r, {
-      gameName: a,
+      gameName: o,
       userName: i
     }).replaceAll("*", "")
   },
@@ -49,8 +49,8 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
       channel: n,
       users: r,
       countOthers: i
-    } = e, a = N.t["7j/5mg"];
-    return N.intl.formatToMarkdownString(a, {
+    } = e, o = N.t["7j/5mg"];
+    return N.intl.formatToMarkdownString(o, {
       gameName: t.extra.activity_name,
       user1: E.ZP.getName(null == n ? true : n.guild_id, null == n ? true : n.id, r[0]),
       user2: E.ZP.getName(null == n ? true : n.guild_id, null == n ? true : n.id, r[1]),
@@ -77,7 +77,7 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
     } = (0, C.n)(n), {
       primaryColor: G,
       secondaryColor: Z
-    } = (0, S.Z)(null == L ? true : L.src), F = (0, a.e7)([h.default], () => h.default.locale), {
+    } = (0, S.Z)(null == L ? true : L.src), F = (0, o.e7)([h.default], () => h.default.locale), {
       displayParticipants: B,
       participant1: V,
       participant2: H,
@@ -133,23 +133,23 @@ let P = (e, t) => N.intl.formatToPlainString(N.t.tAwI1k, {
         user: j,
         variant: "primary",
         size: "md",
-        icon: o.YVR
+        icon: a.YVR
       }) : null,
-      ee = null == q ? null : (0, r.jsx)(o.Button, {
+      ee = null == q ? null : (0, r.jsx)(a.Button, {
         variant: "primary",
         size: "md",
         fullWidth: true,
         onClick: q,
         text: N.intl.string(N.t["jaYS/h"]),
-        icon: o.v3n
+        icon: a.v3n
       }),
-      et = null != ee || x ? null : (0, r.jsx)(o.Button, {
+      et = null != ee || x ? null : (0, r.jsx)(a.Button, {
         variant: "primary",
         size: "md",
         fullWidth: true,
         onClick: W,
         text: N.intl.string(N.t.GDWYR8),
-        icon: o.jje
+        icon: a.jje
       }),
       en = [ee, J && !x ? $ : et].filter(g.lm);
     return (0, r.jsxs)(T.yR, {

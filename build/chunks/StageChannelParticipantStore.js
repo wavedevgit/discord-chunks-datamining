@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => en
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk348327 = require("./348327.js"),
-  a = require.n(Chunk348327),
+  o = require.n(Chunk348327),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -194,7 +194,7 @@ function J(e) {
   } = e, n = t.reduce((e, t) => {
     if (!t.isGuildStageVoice() || !N.has(t.guild_id)) return e;
     let n = A.get(t.id);
-    return null == n || a()(t.permissionOverwrites, n.permissionOverwrites) || (e.push(t.id), A.set(t.id, t)), e
+    return null == n || o()(t.permissionOverwrites, n.permissionOverwrites) || (e.push(t.id), A.set(t.id, t)), e
   }, []);
   return k(e => e.rebuild(), n), n.length > 0
 }

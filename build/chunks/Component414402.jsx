@@ -21,12 +21,12 @@ function d(e) {
     onAction: d
   } = e, {
     themeType: f
-  } = (0, o.z)(), p = f === c.l.MODAL_V2;
+  } = (0, a.z)(), p = f === c.l.MODAL_V2;
   if (!(0, i.Z)(n, l.xjy.INSTANCE)) return null;
   let _ = e => {
     e.stopPropagation(), null == d || d({
       action: "PRESS_NOTIFY_BUTTON"
-    }), new a.Z("UserActivityActions").log("notify", t.id, n)
+    }), new o.Z("UserActivityActions").log("notify", t.id, n)
   };
   return (0, r.jsx)(s.O1, {
     text: u.intl.string(u.t.vwl1PK),

@@ -29,8 +29,8 @@ function g(e, t) {
 function E(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
   return new Promise(async i => {
-    let a = c.Z.getChannel(t);
-    if (null != a) return b(a, n), i(a);
+    let o = c.Z.getChannel(t);
+    if (null != o) return b(o, n), i(o);
     await (0, s.O)([e]), await r.Z.joinGuild(e, {
       lurker: true
     }), u.Z.addConditionalChangeListener(() => {
@@ -45,7 +45,7 @@ function b(e) {
     n = f.Z.getVoiceChannelId();
   if (!t && !g(e, n) || (_.Z.initialize(), i.default.selectVoiceChannel(e.id), (n = f.Z.getVoiceChannelId()) !== e.id)) returnfalse;
   let r = l.Z.getAllApplicationStreamsForChannel(e.id);
-  return r.length > 0 && (0, a.rn)(r[0], {
+  return r.length > 0 && (0, o.rn)(r[0], {
     noFocus: false
   }), true
 }
@@ -55,7 +55,7 @@ function y(e) {
     n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     i = f.Z.getVoiceChannelId();
-  !(!r && i !== e.id && (0, o._)(e) && p.Gy(e, () => y(e, t, n, true))) && b(e, t) && O(e, i)
+  !(!r && i !== e.id && (0, a._)(e) && p.Gy(e, () => y(e, t, n, true))) && b(e, t) && O(e, i)
 }
 
 function O(e, t) {

@@ -1,8 +1,8 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 404270, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,19 +19,19 @@ var Chunk120356 = require("./120356.js"),
   Chunk937615 = require("./937615.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk897065 = require("./897065.js");
-let x = e => {
+  Chunk723116 = require("./723116.js");
+let b = e => {
   var t;
   let {
     className: n
-  } = e, i = (0, a.e7)([c.default], () => c.default.getCurrentUser()), x = (0, a.e7)([o.default], () => o.default.locale), j = (0, a.e7)([u.Z], () => u.Z.getPremiumTypeSubscription()), v = (0, a.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : true), O = null != (t = (0, a.e7)([d.Z], () => null != v ? d.Z.getForSkuAndInterval((0, f.Wz)(b.Si.GUILD), v.interval, v.intervalCount) : true)) ? t : b.GP[b.Xh.PREMIUM_MONTH_GUILD];
+  } = e, i = (0, s.e7)([c.default], () => c.default.getCurrentUser()), b = (0, s.e7)([o.default], () => o.default.locale), j = (0, s.e7)([d.Z], () => d.Z.getPremiumTypeSubscription()), _ = (0, s.e7)([u.Z], () => null != j ? u.Z.get(j.planId) : true), v = null != (t = (0, s.e7)([u.Z], () => null != _ ? u.Z.getForSkuAndInterval((0, m.Wz)(f.Si.GUILD), _.interval, _.intervalCount) : true)) ? t : f.GP[f.Xh.PREMIUM_MONTH_GUILD];
   return (0, r.jsxs)("div", {
-    className: l()(h.wrapper, n),
-    children: [(0, r.jsx)(s.Heading, {
-      className: h.heading,
+    className: l()(x.wrapper, n),
+    children: [(0, r.jsx)(a.Heading, {
+      className: x.heading,
       variant: "heading-xl/semibold",
-      children: p.intl.string(p.t["3x1PFE"])
-    }), (0, r.jsx)(s.Text, {
+      children: h.intl.string(h.t["3x1PFE"])
+    }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       children: function(e) {
         let {
@@ -39,34 +39,34 @@ let x = e => {
           locale: n,
           guildBoostingPlanId: i,
           interval: l,
-          intervalCount: a
-        } = e, s = f.ZP.getDefaultPrice(i, f.ZP.isPremium(t)), o = f.ZP.getDefaultPrice(i, false), c = (0, m.og)((0, m.T4)(s.amount, s.currency), l, a), d = (0, m.og)((0, m.T4)(o.amount, o.currency), l, a);
-        return f.ZP.isPremium(t, b.PremiumTypes.TIER_2) ? p.intl.format(p.t.N3Icb2, {
+          intervalCount: s
+        } = e, a = m.ZP.getDefaultPrice(i, m.ZP.isPremium(t)), o = m.ZP.getDefaultPrice(i, false), c = (0, p.og)((0, p.T4)(a.amount, a.currency), l, s), u = (0, p.og)((0, p.T4)(o.amount, o.currency), l, s);
+        return m.ZP.isPremium(t, f.PremiumTypes.TIER_2) ? h.intl.format(h.t.N3Icb2, {
           price: c,
-          originalPrice: d,
+          originalPrice: u,
           originalPriceHook: (e, t) => (0, r.jsx)("span", {
-            className: h.originalPrice,
+            className: x.originalPrice,
             children: e
           }, t),
-          freeSubscriptionCount: b.cb,
-          discountPercent: (0, g.T3)(n, b.Rr / 100)
-        }) : f.ZP.isPremium(t, b.PremiumTypes.TIER_1) ? p.intl.format(p.t.nQLVBF, {
+          freeSubscriptionCount: f.cb,
+          discountPercent: (0, g.T3)(n, f.Rr / 100)
+        }) : m.ZP.isPremium(t, f.PremiumTypes.TIER_1) ? h.intl.format(h.t.nQLVBF, {
           price: c,
-          originalPrice: d,
+          originalPrice: u,
           originalPriceHook: (e, t) => (0, r.jsx)("span", {
-            className: h.originalPrice,
+            className: x.originalPrice,
             children: e
           }, t),
-          discountPercent: (0, g.T3)(n, b.Rr / 100)
-        }) : p.intl.format(p.t.Mmf63F, {
+          discountPercent: (0, g.T3)(n, f.Rr / 100)
+        }) : h.intl.format(h.t.Mmf63F, {
           price: c
         })
       }({
         currentUser: i,
-        locale: x,
-        guildBoostingPlanId: O.id,
-        interval: O.interval,
-        intervalCount: O.intervalCount
+        locale: b,
+        guildBoostingPlanId: v.id,
+        interval: v.interval,
+        intervalCount: v.intervalCount
       })
     })]
   })

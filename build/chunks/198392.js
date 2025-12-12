@@ -4,7 +4,7 @@
 var Chunk8235 = require("./8235.js"),
   Chunk392919 = require("./392919.js"),
   Chunk304611 = require("./304611.js"),
-  o = RegExp("\r\n", "g"),
+  a = RegExp("\r\n", "g"),
   s = "\n",
   l = {
     "text/rtf": 1,
@@ -25,7 +25,7 @@ module.exports = function() {
     })
   }, exports.getText = function() {
     var e;
-    return this.data.getData && (this.types.length ? false != this.types.indexOf("text/plain") && (e = this.data.getData("text/plain")) : e = this.data.getData("Text")), module ? module.replace(o, s) : null
+    return this.data.getData && (this.types.length ? false != this.types.indexOf("text/plain") && (e = this.data.getData("text/plain")) : e = this.data.getData("Text")), module ? module.replace(a, s) : null
   }, exports.getHTML = function() {
     if (this.data.getData) {
       if (!this.types.length) return this.data.getData("Text");

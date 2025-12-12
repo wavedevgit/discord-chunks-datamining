@@ -55,7 +55,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
             url: n
           }
         } = e;
-        (0, _.bu)(t.transport);
+        (0, b.bu)(t.transport);
         let r = s.ZP.getCurrentEmbeddedActivity();
         try {
           var i, c;
@@ -66,9 +66,9 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
             g.Z.focus(e, true)
           }
           let p = d.Z.getApplication(null == (i = t.application) ? true : i.id),
-            b = (0, u.p)(null == r ? true : r.location),
-            _ = (null == p ? true : p.id) !== true ? T.get(p.id) : true;
-          if (true !== _ && _.trustedUntilEpochMs >= Date.now() && _.trustedHosts.has(e.host)) return (0, l.Z)(s), f.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+            _ = (0, u.p)(null == r ? true : r.location),
+            b = (null == p ? true : p.id) !== true ? T.get(p.id) : true;
+          if (true !== b && b.trustedUntilEpochMs >= Date.now() && b.trustedHosts.has(e.host)) return (0, l.Z)(s), f.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
             application_id: null == (c = t.application) ? true : c.id,
             url: s,
             opened: true
@@ -100,10 +100,10 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
             }
           }, true, true, (0, o.z)({
             application: p,
-            channelId: b
+            channelId: _
           })))
         } catch (e) {
-          throw new b.Z({
+          throw new _.Z({
             errorCode: v.lTL.INVALID_COMMAND
           }, "Invalid URL: ".concat(n))
         }
@@ -118,9 +118,9 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
         let {
           socket: t
         } = e;
-        (0, _.bu)(t.transport);
-        let r = (0, _._f)(t.application);
-        if (!C.has(r)) throw new b.Z({
+        (0, b.bu)(t.transport);
+        let r = (0, b._f)(t.application);
+        if (!C.has(r)) throw new _.Z({
           errorCode: v.lTL.UNAUTHORIZED_FOR_APPLICATION
         }, "Command not available for this application");
         {
@@ -147,12 +147,12 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
             link_id: a
           }
         } = e;
-        (0, _.bu)(n.transport);
-        let s = (0, _._f)(n.application);
-        if (null == s) throw new b.Z({
+        (0, b.bu)(n.transport);
+        let s = (0, b._f)(n.application);
+        if (null == s) throw new _.Z({
           errorCode: v.lTL.INVALID_COMMAND
         }, "No application.");
-        if (!(0, r.yE)(null != (t = n.application.flags) ? t : 0, v.udG.EMBEDDED)) throw new b.Z({
+        if (!(0, r.yE)(null != (t = n.application.flags) ? t : 0, v.udG.EMBEDDED)) throw new _.Z({
           errorCode: v.lTL.INVALID_COMMAND
         }, "This application cannot access this API");
         return new Promise(e => {

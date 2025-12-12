@@ -26,15 +26,15 @@ let g = 9437184,
 
 function v(e) {
   switch (e.code) {
-    case a.cz.GENERAL:
+    case o.cz.GENERAL:
       return s.Nk.UploadErrorGeneral;
-    case a.cz.NO_FILE:
+    case o.cz.NO_FILE:
       return s.Nk.UploadErrorNoFile;
-    case a.cz.PROGRESS:
+    case o.cz.PROGRESS:
       return s.Nk.UploadErrorProgress;
-    case a.cz.UPLOAD:
+    case o.cz.UPLOAD:
       return s.Nk.UploadErrorUpload;
-    case a.cz.READ:
+    case o.cz.READ:
       return s.Nk.UploadErrorRead;
     default:
       return
@@ -42,10 +42,10 @@ function v(e) {
 }
 async function S(e, t) {
   try {
-    await I(e), await (0, o.u)(E, t)
+    await I(e), await (0, a.u)(E, t)
   } catch (t) {
     let e;
-    throw t instanceof a.n0 && (e = v(t)), (0, s.kr)({
+    throw t instanceof o.n0 && (e = v(t)), (0, s.kr)({
       type: s.u.DEBUG_LOG_UPLOAD_FAILED,
       underlyingError: e,
       errorMessage: t.message
@@ -54,21 +54,21 @@ async function S(e, t) {
 }
 async function I(e) {
   try {
-    let n, a, o, s;
+    let n, o, a, s;
     try {
       n = u.Pz()
     } catch (e) {
       n = "Logs failed: ".concat(e)
     }
     try {
-      a = (null == y ? true : y.getSystemLog) != null ? await new Promise(e => y.getSystemLog(e)) : ""
+      o = (null == y ? true : y.getSystemLog) != null ? await new Promise(e => y.getSystemLog(e)) : ""
     } catch (e) {
-      a = "System Logs failed ".concat(e)
+      o = "System Logs failed ".concat(e)
     }
     try {
-      o = await (0, p.Z)().then(e => (0, m.Z)(e, true))
+      a = await (0, p.Z)().then(e => (0, m.Z)(e, true))
     } catch (e) {
-      o = "Push logs failed: ".concat(e)
+      a = "Push logs failed: ".concat(e)
     }
     try {
       var t;
@@ -76,13 +76,13 @@ async function I(e) {
     } catch (e) {
       s = "LibDiscore logs failed: ".concat(e)
     }
-    let d = n.length + a.length + o.length + s.length;
+    let d = n.length + o.length + a.length + s.length;
     if (d > g) {
       let e = 1 - g / d;
-      n = n.slice(n.length - Math.floor(n.length * e)), a = a.slice(a.length - Math.floor(a.length * e)), o = o.slice(o.length - Math.floor(o.length * e)), s = s.slice(s.length - Math.floor(s.length * e))
+      n = n.slice(n.length - Math.floor(n.length * e)), o = o.slice(o.length - Math.floor(o.length * e)), a = a.slice(a.length - Math.floor(a.length * e)), s = s.slice(s.length - Math.floor(s.length * e))
     }
     let E = (null == O ? true : O.AppOpenedTimestamp) != null ? O.AppOpenedTimestamp : null,
-      b = "\n    ".concat((0, _.Z)(E), "\n\n    ").concat((0, l.EA)(), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, f.Z)(), true, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(c.Z.getDebugInfo(), true, 2), "\n\n    Logs:\n    ").concat(n, "\n\n    System logs:\n    ").concat(a, "\n\n    LibDiscore logs:\n    ").concat(s, "\n\n    Push Notifications:\n    ").concat(o, "\n    ");
+      b = "\n    ".concat((0, _.Z)(E), "\n\n    ").concat((0, l.EA)(), "\n\n    Metadata:\n    ").concat(JSON.stringify((0, f.Z)(), true, 2), "\n\n    ChannelStore:\n    ").concat(JSON.stringify(c.Z.getDebugInfo(), true, 2), "\n\n    Logs:\n    ").concat(n, "\n\n    System logs:\n    ").concat(o, "\n\n    LibDiscore logs:\n    ").concat(s, "\n\n    Push Notifications:\n    ").concat(a, "\n    ");
     u.ZH();
     let v = h.ANM.DEBUG_LOG(e, "discord_app_logs");
     await r.tn.post({

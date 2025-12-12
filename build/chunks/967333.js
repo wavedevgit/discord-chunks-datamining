@@ -3,12 +3,12 @@
 "use strict";
 var Chunk751736 = require("./751736.js"),
   Chunk713411 = require("./713411.js"),
-  a = require("./117895.js").f,
-  o = Chunk751736("unscopables"),
+  o = require("./117895.js").f,
+  a = Chunk751736("unscopables"),
   s = Array.prototype;
-true === s[o] && a(s, o, {
+true === s[a] && o(s, a, {
   configurable: true,
   value: Chunk713411(null)
 }), module.exports = function(e) {
-  s[o][e] = true
+  s[a][e] = true
 }

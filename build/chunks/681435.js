@@ -20,7 +20,7 @@ let g = () => {
     n = !(0, Chunk481060.$sL)(),
     [g, h] = (0, Chunk243778.XR)(require ? Chunk704215.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == exports ? true : exports.version) ? module : 0, true, true),
     m = (0, Chunk794324.mB)(exports),
-    b = null != g ? ((e, t) => {
+    _ = null != g ? ((e, t) => {
       var n, r, i, a, s, o, c, u;
       if ((null == t ? true : t.type) === l.Z.COACHTIP || e.hasPreviewAssets) {
         let i = null != t ? {
@@ -87,11 +87,11 @@ let g = () => {
       }
       return null
     })(m, exports) : null,
-    _ = Chunk473749.useCallback(() => {
-      null != b && h(Chunk921944.L.AUTO)
-    }, [b, h]);
+    b = Chunk473749.useCallback(() => {
+      null != _ && h(Chunk921944.L.AUTO)
+    }, [_, h]);
   return {
-    shopButtonDisplayOptions: b,
-    dismissShopButtonDC: _
+    shopButtonDisplayOptions: _,
+    dismissShopButtonDC: b
   }
 }

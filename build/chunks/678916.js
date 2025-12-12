@@ -24,7 +24,7 @@ function i(e) {
   return e
 }
 
-function a(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -35,8 +35,8 @@ function a(e, t) {
   return n
 }
 
-function o(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
+function a(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -56,7 +56,7 @@ var s = function(e) {
     return e[e.OPTION_1 = 0] = "OPTION_1", e[e.OPTION_2 = 1] = "OPTION_2", e[e.OPTION_3 = 2] = "OPTION_3", e[e.OPTION_4 = 3] = "OPTION_4", e[e.OPTION_7 = 7] = "OPTION_7", e[e.OPTION_8 = 8] = "OPTION_8", e[e.OPTION_9 = 9] = "OPTION_9", e[e.OPTION_10 = 10] = "OPTION_10", e
   }({});
 let c = [7, 8, 9, 10],
-  u = [7, 8, 9, 10, 0, 1, 2, 3].reduce((e, t, n) => o(i({}, e), {
+  u = [7, 8, 9, 10, 0, 1, 2, 3].reduce((e, t, n) => a(i({}, e), {
     [t]: n
   }), {}),
   d = "blur",

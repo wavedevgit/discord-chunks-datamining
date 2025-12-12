@@ -36,9 +36,9 @@ let u = {
     let {
       voiceChannelId: t,
       voiceState: n
-    } = e, l = r.Z.getChannel(t), u = (null == l ? true : l.isGuildStageVoice()) && (null == n ? true : n.suppress), d = a.Z.getMediaSessionId();
+    } = e, l = r.Z.getChannel(t), u = (null == l ? true : l.isGuildStageVoice()) && (null == n ? true : n.suppress), d = o.Z.getMediaSessionId();
     if (null != l && null != d && false === i.Z.getInputDetected() && !u && !i.Z.isSelfMute()) return [c({
-      type: o.u.NO_AUDIO_INPUT_DETECTED
+      type: a.u.NO_AUDIO_INPUT_DETECTED
     }, (0, s.Y9)())]
   },
   makeErrorContextKey: e => "".concat(e.mediaSessionId, ":").concat(e.audioInputDeviceName)

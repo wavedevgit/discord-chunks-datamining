@@ -7,24 +7,24 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk28531 = require("./28531.jsx"),
   Chunk819758 = require("./819758.jsx"),
   Chunk149203 = require("./149203.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk508941 = require("./508941.js");
+  Chunk191581 = require("./191581.js");
 let f = e => {
     let {
       emojiSubCategory: t
     } = e;
     return (0, r.jsxs)("div", {
-      className: a()(d.badgeLabel, t === c.t0.TOP_GUILD_EMOJI ? d.topGuildEmojiBadge : d.newlyAddedBadge),
+      className: o()(d.badgeLabel, t === c.t0.TOP_GUILD_EMOJI ? d.topGuildEmojiBadge : d.newlyAddedBadge),
       children: [t === c.t0.TOP_GUILD_EMOJI ? (0, r.jsx)(s.Z, {
         foreground: d.newlyAddedBadgeIcon
       }) : (0, r.jsx)(l.Z, {
         foreground: d.newlyAddedBadgeIcon
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/semibold",
         color: "always-white",
         children: t === c.t0.TOP_GUILD_EMOJI ? u.intl.string(u.t.TR2B4T) : u.intl.string(u.t["1aZ4V6"])
@@ -42,17 +42,17 @@ let f = e => {
       emojiSubCategory: _ = c.t0.NONE
     } = e;
     return (0, r.jsxs)("div", {
-      className: a()(d.inspector, t),
+      className: o()(d.inspector, t),
       children: [(0, r.jsx)("div", {
         className: d.graphicPrimary,
         "aria-hidden": true,
         children: n
       }), (0, r.jsxs)("div", {
         className: d.textWrapper,
-        children: [(0, r.jsxs)(o.Text, {
+        children: [(0, r.jsxs)(a.Text, {
           className: d.titlePrimary,
           variant: "text-md/semibold",
-          children: [p ? (0, r.jsx)(o.r7p, {
+          children: [p ? (0, r.jsx)(a.r7p, {
             size: "custom",
             color: "currentColor",
             "aria-label": p ? u.intl.formatToPlainString(u.t["+fdUkf"], {
@@ -62,7 +62,7 @@ let f = e => {
             height: 15,
             className: d.favorite
           }) : null, s]
-        }), null != l && (0, r.jsx)(o.Text, {
+        }), null != l && (0, r.jsx)(a.Text, {
           className: d.titleSecondary,
           variant: "text-xs/normal",
           children: l

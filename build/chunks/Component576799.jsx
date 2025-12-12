@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk123145 = require("./123145.jsx"),
   Chunk699516 = require("./699516.js"),
   Chunk217702 = require("./217702.js"),
-  Chunk549578 = require("./549578.js");
+  Chunk724913 = require("./724913.js");
 
 function p(e) {
   let {
@@ -22,13 +22,13 @@ function p(e) {
   } = e, {
     isBlocked: l,
     isIgnored: d
-  } = (0, a.cj)([u.Z], () => ({
+  } = (0, o.cj)([u.Z], () => ({
     isBlocked: u.Z.isBlockedForMessage(t),
     isIgnored: u.Z.isIgnoredForMessage(t)
   }), [t]), p = i.useMemo(() => ({
     [n.guild_id]: [t.author.id]
   }), [n.guild_id, t.author.id]);
-  (0, o.$)(p, "ThreadMessageAccessoryMessage");
+  (0, a.$)(p, "ThreadMessageAccessoryMessage");
   let m = i.useMemo(() => null != t.content && "" !== t.content ? (0, s.ZP)(t, {
     formatInline: true
   }).content : null, [t]);
@@ -51,8 +51,8 @@ function p(e) {
 
 function _(e, t, n, i) {
   let {
-    contentPlaceholder: a,
-    renderedContent: o,
+    contentPlaceholder: o,
+    renderedContent: a,
     leadingIcon: s,
     trailingIcon: c
   } = (0, l.f)(e, t, n, i, f.threadMessageAccessoryContent, {
@@ -61,9 +61,9 @@ function _(e, t, n, i) {
     iconSize: d.WW
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [s, null != o ? o : (0, r.jsx)("span", {
+    children: [s, null != a ? a : (0, r.jsx)("span", {
       className: f.threadMessageAccessoryPlaceholder,
-      children: a
+      children: o
     }), c]
   })
 }

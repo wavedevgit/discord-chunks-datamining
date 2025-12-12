@@ -7,21 +7,21 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk352624 = require("./352624.js");
+  Chunk243964 = require("./243964.js");
 let l = e => {
   let {
     className: t,
     onDismiss: n,
     "aria-label": i
   } = e;
-  return (0, r.jsx)(o.P3F, {
+  return (0, r.jsx)(a.P3F, {
     role: "button",
     onClick: n,
-    className: a()(s.dismissButton, t),
+    className: o()(s.dismissButton, t),
     "aria-label": i,
-    children: (0, r.jsx)(o.Dio, {
+    children: (0, r.jsx)(a.Dio, {
       size: "xs",
       color: "currentColor",
       colorClass: s.dismissIcon

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk447543 = require("./447543.js"),
@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk358595 = require("./358595.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk642438 = require("./642438.js");
+  Chunk492681 = require("./492681.js");
 let I = 292,
   T = 36,
   C = 48;
@@ -33,7 +33,7 @@ function A(e) {
   let {
     invite: t,
     isMemberOfGuild: n,
-    message: a,
+    message: o,
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d
   } = e, f = i.useRef(null), [_, h] = i.useState(true), [A, P] = i.useState(false), R = t.state === O.r2o.ACCEPTING, w = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
@@ -56,7 +56,7 @@ function A(e) {
       } : {}
     }, [_, A, w]);
   return null == D ? (0, r.jsx)(y.Z, {}) : (0, r.jsxs)(l.kL8, {
-    className: o()(S.guildInviteContainer, {
+    className: a()(S.guildInviteContainer, {
       [S.clickable]: A && _
     }),
     onClick: x,
@@ -88,13 +88,13 @@ function A(e) {
         text: v.intl.string(v.t.xdCLeM)
       })
     }) : null, (0, r.jsxs)("div", {
-      className: o()(S.footer, {
+      className: a()(S.footer, {
         [S.floatingFooter]: A
       }),
       children: [A && _ ? (0, r.jsx)("div", {
         className: S.gradient
       }) : null, (0, r.jsx)("div", {
-        className: o()(S.footerContent, {
+        className: a()(S.footerContent, {
           [S.collapsedFooterContent]: A && _
         }),
         children: (0, r.jsx)("div", {
@@ -103,7 +103,7 @@ function A(e) {
             invite: t,
             profile: D,
             isMemberOfGuild: n,
-            message: a,
+            message: o,
             submitting: R,
             onTransitionToInviteChannel: c,
             onAcceptInstantInvite: d
@@ -118,8 +118,8 @@ function N(e) {
   let {
     invite: t,
     profile: n,
-    isMemberOfGuild: a,
-    message: o,
+    isMemberOfGuild: o,
+    message: a,
     submitting: s,
     onTransitionToInviteChannel: l,
     onAcceptInstantInvite: u
@@ -129,14 +129,14 @@ function N(e) {
   } = (0, _.ZP)(n, _.F3.INVITE, t.code), {
     analyticsLocations: g
   } = (0, f.ZP)(d.Z.INVITE_EMBED), E = i.useCallback(() => {
-    let e = a ? "transition" : "accept";
+    let e = o ? "transition" : "accept";
     (0, c.r$)({
       invite: t,
       action: e,
-      inviter_id: o.author.id,
-      invite_message_id: o.id
+      inviter_id: a.author.id,
+      invite_message_id: a.id
     }, g)
-  }, [t, o, g, a]);
+  }, [t, a, g, o]);
   return null == m ? null : (0, r.jsx)(h.o, {
     guildId: p,
     ctaType: m,

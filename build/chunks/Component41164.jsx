@@ -9,10 +9,10 @@ var Chunk481060 = require("./481060.js"),
   Chunk313789 = require("./313789.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk181211 = require("./181211.js"),
-  Chunk885528 = require("./885528.jsx"),
+  Chunk188879 = require("./188879.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk726985 = require("./726985.js"),
-  Chunk200630 = require("./200630.js");
+  Chunk22860 = require("./22860.js");
 let p = e => {
   let {
     transitionState: t,
@@ -21,7 +21,7 @@ let p = e => {
     source: m
   } = e, f = (0, s.Z)(), h = () => {
     n(), (0, l.openUserSettings)(o.n.ACCOUNT_PANEL, {
-      section: r.oAB.ACCOUNT,
+      section: c.oAB.ACCOUNT,
       subsection: d.s6.PRIVACY_AND_SAFETY_STANDING
     })
   };
@@ -40,7 +40,7 @@ let p = e => {
     }), (0, i.jsx)(a.hzk, {
       "data-migration-pending": true,
       className: u.modalContent,
-      children: f ? (0, i.jsx)(a.$jN, {}) : (0, i.jsx)(c.Z, {
+      children: f ? (0, i.jsx)(a.$jN, {}) : (0, i.jsx)(r.Z, {
         classificationId: p,
         source: m,
         onError: h,

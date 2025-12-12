@@ -9,7 +9,7 @@ var Chunk81825 = require("./81825.js"),
   Chunk981631 = require("./981631.js"),
   Chunk324805 = require("./324805.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,7 +21,7 @@ var s = function(e) {
   return e.SHOP = "SHOP", e.SHOP_ORBS_TAB = "SHOP_ORBS_TAB", e.NITRO_HOME = "NITRO_HOME", e.QUEST_HOME = "QUEST_HOME", e.QUEST_ORBS = "QUEST_ORBS", e.APPS_HOME = "APPS_HOME", e.SETTINGS = "SETTINGS", e.PLAYGROUND = "PLAYGROUND", e
 }(s || {});
 class l extends Chunk81825.Z {
-  static fromType(e, t, n, r, o) {
+  static fromType(e, t, n, r, a) {
     switch (e) {
       case "SHOP":
         return new l({
@@ -55,7 +55,7 @@ class l extends Chunk81825.Z {
           type: "PLAYGROUND",
           label: n,
           collectionId: r,
-          IconComponent: o
+          IconComponent: a
         });
       case "SHOP_ORBS_TAB":
         return new l({
@@ -64,7 +64,7 @@ class l extends Chunk81825.Z {
         });
       case "QUEST_ORBS":
         return new l({
-          path: "".concat(i.Z5c.QUEST_HOME_V2, "?filter=").concat(a.UP.VIRTUAL_CURRENCY),
+          path: "".concat(i.Z5c.QUEST_HOME_V2, "?filter=").concat(o.UP.VIRTUAL_CURRENCY),
           type: "QUEST_ORBS"
         });
       default:
@@ -72,6 +72,6 @@ class l extends Chunk81825.Z {
     }
   }
   constructor(e) {
-    super(), o(this, "id", true), o(this, "path", true), o(this, "type", true), o(this, "label", true), o(this, "collectionId", true), o(this, "IconComponent", true), this.id = null != e.collectionId ? "".concat(e.type, "_").concat(e.collectionId) : e.type, this.path = e.path, this.type = e.type, this.label = e.label, this.collectionId = e.collectionId, this.IconComponent = e.IconComponent
+    super(), a(this, "id", true), a(this, "path", true), a(this, "type", true), a(this, "label", true), a(this, "collectionId", true), a(this, "IconComponent", true), this.id = null != e.collectionId ? "".concat(e.type, "_").concat(e.collectionId) : e.type, this.path = e.path, this.type = e.type, this.label = e.label, this.collectionId = e.collectionId, this.IconComponent = e.IconComponent
   }
 }

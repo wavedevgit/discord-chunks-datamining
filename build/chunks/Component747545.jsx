@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk209739 = require("./209739.js"),
-  o = require.n(Chunk209739),
+  a = require.n(Chunk209739),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk481060 = require("./481060.js"),
@@ -27,13 +27,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk986752 = require("./986752.js");
+  Chunk612232 = require("./612232.js");
 let C = ">=10.0.22000",
   A = /\{65E8773D-8F56-11D0-A3B9-00A0C9223196\}/i,
   N = "{E5323777-F976-4f5b-9B55-B94699C46E44}";
 
 function P() {
-  return !!(0, Chunk358085.isWindows)() && !!Chunk358085.isPlatformEmbedded && o().satisfies(Chunk579806.Z.os.release, C)
+  return !!(0, Chunk358085.isWindows)() && !!Chunk358085.isPlatformEmbedded && a().satisfies(Chunk579806.Z.os.release, C)
 }
 
 function R(e) {
@@ -48,7 +48,7 @@ function w() {
       exports(true)
     }) : (module.stop(), exports(false)), () => module.stop()
   }, [require]), module) ? (0, Chunk54381.jsx)("div", {
-    className: Chunk986752.filterLoadingIndicator,
+    className: Chunk612232.filterLoadingIndicator,
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   }) : null
 }
@@ -58,8 +58,8 @@ function D(e) {
     hideDeviceSelector: t = false,
     hideDeviceHeader: n = false,
     hideCameraSettingsLink: i = false,
-    onLearnMore: a,
-    selectedBackgroundOption: o,
+    onLearnMore: o,
+    selectedBackgroundOption: a,
     onSelectBackgroundOption: l,
     renderCamera: d,
     hidePreviewToggle: y = false,
@@ -107,8 +107,8 @@ function D(e) {
       setting: v.s6.VOICE_AND_VIDEO_VIDEO_BACKGROUND,
       children: (0, r.jsx)(g.Z, {
         className: T.spacingTop24,
-        onLearnMore: a,
-        selectedBackgroundOption: o,
+        onLearnMore: o,
+        selectedBackgroundOption: a,
         onSelectBackgroundOption: l,
         currentDeviceId: N
       })

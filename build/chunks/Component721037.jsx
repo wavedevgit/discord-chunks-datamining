@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk918559 = require("./918559.js"),
   Chunk354459 = require("./354459.js"),
   Chunk408491 = require("./408491.js"),
-  Chunk684692 = require("./684692.js");
+  Chunk639965 = require("./639965.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,8 +60,8 @@ class k extends Chunk473749.PureComponent {
       pipWindows: t,
       pipWidth: n,
       maxX: i,
-      maxY: a,
-      theme: o,
+      maxY: o,
+      theme: a,
       dockedRect: s,
       appContext: l,
       roundCorners: c,
@@ -89,20 +89,20 @@ class k extends Chunk473749.PureComponent {
         resizeConfig: j,
         getDockedRectPositionY: Chunk917107
       }), (0, Chunk54381.jsx)(Chunk522501.mK, {
-        className: Chunk442917 ? Chunk684692.belowSidebar : true
+        className: Chunk442917 ? Chunk639965.belowSidebar : true
       })]
     })
   }
   constructor(...e) {
     super(...e), x(this, "handleWindowMove", (e, t) => {
-      o.Ao(e, t)
+      a.Ao(e, t)
     }), x(this, "handleWindowResize", e => {
-      o.d7(e, R.cL.VIDEO)
+      a.d7(e, R.cL.VIDEO)
     })
   }
 }
 let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478.Z, Chunk210887.Z, Chunk592125.Z, Chunk944486.Z, Chunk366050.Z, Chunk358221.Z, Chunk740492.ZP, Chunk591472.Z], e => {
-  var t, n, r, i, a, o, d;
+  var t, n, r, i, o, a, d;
   let m, {
       popoutWindowKey: h,
       popoutWindowHasTitleBar: g = false
@@ -132,7 +132,7 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     }) ? e - (0, p.Y7)({
       isPopoutWindow: B
     }) : e;
-  m = null != x && D || B && j || B && null != Z ? null : B || !v || j || null != Z ? null != x && U ? null != (n = I.Z.pipActivityWindow) ? n : I.Z.pipVideoWindow : null != Z && F ? null != (i = null != (r = I.Z.pipFrameWindow) ? r : I.Z.pipVideoWindow) ? i : I.Z.pipActivityWindow : null != (o = null != (a = I.Z.pipVideoWindow) ? a : I.Z.pipActivityWindow) ? o : I.Z.pipFrameWindow : null;
+  m = null != x && D || B && j || B && null != Z ? null : B || !v || j || null != Z ? null != x && U ? null != (n = I.Z.pipActivityWindow) ? n : I.Z.pipVideoWindow : null != Z && F ? null != (i = null != (r = I.Z.pipFrameWindow) ? r : I.Z.pipVideoWindow) ? i : I.Z.pipActivityWindow : null != (a = null != (o = I.Z.pipVideoWindow) ? o : I.Z.pipActivityWindow) ? a : I.Z.pipFrameWindow : null;
   let z = Array.from(I.Z.pipWindows.values()),
     q = I.Z.pipWidth(R.cL.VIDEO),
     Q = z.find(e => e.component === N.NYg.VIDEO),
@@ -144,12 +144,12 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     en = null != ee && f.Z.getChatOpen(ee),
     er = U || G,
     ei = er && null != x && (0, l.q)(x.applicationId),
-    ea = !er && null != m && et && en;
+    eo = !er && null != m && et && en;
   return {
     selectedPIPWindow: m,
     pipWindows: 0 === J.length ? M : J,
     pipWidth: q,
-    maxX: Y.width - (ea ? $ : 0),
+    maxX: Y.width - (eo ? $ : 0),
     maxY: Y.height,
     theme: y.Z.theme,
     dockedRect: I.Z.getDockedRect(null != (d = null == m ? true : m.id) ? d : ""),

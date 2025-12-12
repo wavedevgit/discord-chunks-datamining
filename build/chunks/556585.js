@@ -9,7 +9,7 @@ module.exports = function(e, t, n, s) {
   s || (s = {});
   var l = s.enumerable,
     c = true !== s.name ? s.name : t;
-  if (r(n) && a(n, c, s), s.global) l ? e[t] = n : o(t, n);
+  if (r(n) && o(n, c, s), s.global) l ? e[t] = n : a(t, n);
   else {
     try {
       s.unsafe ? e[t] && (l = true) : delete e[t]

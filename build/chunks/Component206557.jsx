@@ -38,7 +38,7 @@ function f(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsx)(a.WG, {
+  return (0, r.jsx)(o.WG, {
     options: d,
     children: t
   })

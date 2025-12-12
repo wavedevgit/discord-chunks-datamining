@@ -18,20 +18,20 @@ function c(e) {
 function u(e, t) {
   let {
     getRowText: n = e => {
-      var n, r, i, a;
-      return null != (a = null == (n = (r = t.collection).getTextValue) ? true : n.call(r, e)) ? a : null == (i = t.collection.getItem(e)) ? true : i.textValue
+      var n, r, i, o;
+      return null != (o = null == (n = (r = t.collection).getTextValue) ? true : n.call(r, e)) ? o : null == (i = t.collection.getItem(e)) ? true : i.textValue
     }
-  } = e, u = (0, s.q)(c(r.Z), "@react-aria/grid"), f = t.selectionManager.rawSelection, p = (0, l.useRef)(f), _ = (0, a.i)(() => {
+  } = e, u = (0, s.q)(c(r.Z), "@react-aria/grid"), f = t.selectionManager.rawSelection, p = (0, l.useRef)(f), _ = (0, o.i)(() => {
     var e;
     if (!t.selectionManager.isFocused || f === p.current) {
       p.current = f;
       return
     }
     let r = d(f, p.current),
-      a = d(p.current, f),
-      o = "replace" === t.selectionManager.selectionBehavior,
+      o = d(p.current, f),
+      a = "replace" === t.selectionManager.selectionBehavior,
       s = [];
-    if (1 === t.selectionManager.selectedKeys.size && o) {
+    if (1 === t.selectionManager.selectedKeys.size && a) {
       let e = t.selectionManager.selectedKeys.keys().next().value;
       if (null != e && t.collection.getItem(e)) {
         let t = n(e);
@@ -39,7 +39,7 @@ function u(e, t) {
           item: t
         }))
       }
-    } else if (1 === r.size && 0 === a.size) {
+    } else if (1 === r.size && 0 === o.size) {
       let e = r.keys().next().value;
       if (null != e) {
         let t = n(e);
@@ -47,8 +47,8 @@ function u(e, t) {
           item: t
         }))
       }
-    } else if (1 === a.size && 0 === r.size) {
-      let e = a.keys().next().value;
+    } else if (1 === o.size && 0 === r.size) {
+      let e = o.keys().next().value;
       if (null != e && t.collection.getItem(e)) {
         let t = n(e);
         t && s.push(u.format("deselectedItem", {
@@ -60,7 +60,7 @@ function u(e, t) {
       count: f.size
     })), s.length > 0 && (0, i.xQ)(s.join(" ")), p.current = f
   });
-  (0, o.r)(() => {
+  (0, a.r)(() => {
     if (t.selectionManager.isFocused) _();
     else {
       let e = requestAnimationFrame(_);

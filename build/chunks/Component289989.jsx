@@ -1,7 +1,7 @@
-/** Chunk was on 44183 **/
+/** Chunk was on 47863 **/
 /** chunk id: 289989, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -21,9 +21,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk70722 = require("./70722.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk504618 = require("./504618.js");
+  Chunk341338 = require("./341338.js");
 
-function _(e) {
+function S(e) {
   let {
     id: t,
     text: n,
@@ -52,44 +52,44 @@ function _(e) {
   })
 }
 
-function S(e) {
+function b(e) {
   let {
     onSourceSelect: t
   } = e;
-  (0, p.UB)(), (0, h.Z)(t, v.Vq);
+  (0, p.UB)(), (0, h.Z)(t, x.Vq);
   let [{
     nativeSourceType: n
-  }, i] = (0, g.E_)(), l = (0, f.isMac)() && o().satisfies(null === d.Z || true === d.Z ? true : d.Z.os.release, x.jR), s = u.Z.getUseGamescopeCapture(), S = s ? "gamescope" : "screen";
+  }, i] = (0, _.E_)(), l = (0, f.isMac)() && o().satisfies(null === d.Z || true === d.Z ? true : d.Z.os.release, g.jR), s = u.Z.getUseGamescopeCapture(), b = s ? "gamescope" : "screen";
   return (0, r.jsxs)("div", {
     className: j.root,
     children: [(0, r.jsx)(a.X6q, {
       className: j.header,
       variant: "heading-lg/semibold",
       color: "text-default",
-      children: b.intl.string(b.t.XyYoFc)
+      children: v.intl.string(v.t.XyYoFc)
     }), l ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.xvT, {
         className: j.body,
         variant: "text-sm/medium",
         color: "text-subtle",
-        children: b.intl.format(b.t.sbbPhW, {
-          buttonName: b.intl.string(b.t.FiBjwU)
+        children: v.intl.format(v.t.sbbPhW, {
+          buttonName: v.intl.string(v.t.FiBjwU)
         })
       }), (0, r.jsx)(m.Z, {})]
     }) : (0, r.jsxs)("div", {
       className: j.sourceTypeButtons,
-      children: [(0, r.jsx)(_, {
-        selected: n === S,
+      children: [(0, r.jsx)(S, {
+        selected: n === b,
         onClick: () => {
           i({
             type: "set_native_source_type",
-            sourceType: S
+            sourceType: b
           })
         },
         id: "screen",
-        text: b.intl.string(b.t.cVUFXY),
+        text: v.intl.string(v.t.cVUFXY),
         icon: c.pzj
-      }), !s && (0, r.jsx)(_, {
+      }), !s && (0, r.jsx)(S, {
         selected: "window" === n,
         onClick: () => {
           i({
@@ -98,7 +98,7 @@ function S(e) {
           })
         },
         id: "window",
-        text: b.intl.string(b.t.dG2A1E),
+        text: v.intl.string(v.t.dG2A1E),
         icon: c.GON
       })]
     })]

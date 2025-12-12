@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk865427 = require("./865427.js"),
   Chunk820254 = require("./820254.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk187794 = require("./187794.js");
+  Chunk36398 = require("./36398.js");
 let h = "isHideDevBanner",
   m = () => {
     var e;
@@ -26,27 +26,27 @@ let h = "isHideDevBanner",
     let m = () => {
         Chunk433517.K.set(h, true), require(true)
       },
-      b = () => (0, Chunk54381.jsx)(Chunk481060.P3F, {
+      _ = () => (0, Chunk54381.jsx)(Chunk481060.P3F, {
         onClick: m,
-        className: Chunk187794.closeButton,
+        className: Chunk36398.closeButton,
         "aria-label": Chunk388032.intl.string(Chunk388032.t.WAI6xu),
         children: (0, Chunk54381.jsx)(Chunk481060.Dio, {
           size: "md",
           color: "currentColor",
-          className: Chunk187794.closeIcon
+          className: Chunk36398.closeIcon
         })
       });
     return null != Chunk120356 ? (0, Chunk54381.jsxs)("div", {
-      className: a()(Chunk187794.devBanner, Chunk187794.buildOverride),
+      className: a()(Chunk36398.devBanner, Chunk36398.buildOverride),
       children: [(0, Chunk54381.jsx)(Chunk820254.Z, {
-        className: Chunk187794.icon
-      }), Chunk388032.intl.string(Chunk388032.t.Wj3LW4), (0, Chunk54381.jsx)(b, {})]
+        className: Chunk36398.icon
+      }), Chunk388032.intl.string(Chunk388032.t.Wj3LW4), (0, Chunk54381.jsx)(_, {})]
     }) : "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, Chunk54381.jsxs)("div", {
-      className: a()(Chunk187794.devBanner, Chunk187794.staging),
+      className: a()(Chunk36398.devBanner, Chunk36398.staging),
       children: [(0, Chunk54381.jsx)(Chunk820254.Z, {
-        className: Chunk187794.icon
+        className: Chunk36398.icon
       }), Chunk388032.intl.format(Chunk388032.t.uyrfYF, {
-        buildNumber: "479384"
-      }), (0, Chunk54381.jsx)(b, {})]
+        buildNumber: "479390"
+      }), (0, Chunk54381.jsx)(_, {})]
     }) : null
   }

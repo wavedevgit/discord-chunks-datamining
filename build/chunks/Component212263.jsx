@@ -69,7 +69,7 @@ let I = e => {
       analyticsLocation: T,
       containerContext: C
     } = e,
-    A = (0, a.e7)([f.Z], () => f.Z.theme) === h.BRd.LIGHT ? "light" : "dark",
+    A = (0, o.e7)([f.Z], () => f.Z.theme) === h.BRd.LIGHT ? "light" : "dark",
     N = "https://cdn.discordapp.com/assets/premium/roadblocks/emoji_".concat(A, ".png"),
     P = (0, c.Iu)(e => e.searchQuery),
     {
@@ -80,9 +80,9 @@ let I = e => {
     D = null != w && w.animated,
     x = null != w && !p.ZP.isInternalEmojiForGuildId(w, null == y ? true : y.getGuildId()),
     L = null != w ? h.qAy.EMOJI : h.qAy.EMOJI_PICKER_FLOATING_UPSELL,
-    j = (0, a.e7)([u.Z], () => u.Z.hasFetched);
+    j = (0, o.e7)([u.Z], () => u.Z.hasFetched);
   return i.useEffect(() => {
-    j || o.MH()
+    j || a.MH()
   }, [j]), (0, r.jsx)(d.Z, {
     containerContext: C,
     image: {

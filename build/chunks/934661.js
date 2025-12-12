@@ -10,9 +10,9 @@ var Chunk633605 = require("./633605.js"),
   Chunk951516 = require("./951516.js");
 
 function s(e, t) {
-  (0, o.Z)(1, arguments);
+  (0, a.Z)(1, arguments);
   var n, s, l, c, u, d, f, p, _ = (0, r.j)(),
-    m = (0, a.Z)(null != (n = null != (s = null != (l = null != (c = null == t ? true : t.weekStartsOn) ? c : null == t || null == (u = t.locale) || null == (d = u.options) ? true : d.weekStartsOn) ? l : _.weekStartsOn) ? s : null == (f = _.locale) || null == (p = f.options) ? true : p.weekStartsOn) ? n : 0);
+    m = (0, o.Z)(null != (n = null != (s = null != (l = null != (c = null == t ? true : t.weekStartsOn) ? c : null == t || null == (u = t.locale) || null == (d = u.options) ? true : d.weekStartsOn) ? l : _.weekStartsOn) ? s : null == (f = _.locale) || null == (p = f.options) ? true : p.weekStartsOn) ? n : 0);
   if (!(m >= 0 && m <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
   var h = (0, i.default)(e),
     g = h.getDay(),

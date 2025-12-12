@@ -1,4 +1,4 @@
-/** Chunk was on 48615 **/
+/** Chunk was on 46931 **/
 /** chunk id: 462061, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => M,
@@ -34,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk858329 = require("./858329.js");
+  Chunk7504 = require("./7504.js");
 let N = Chunk481060.EFr.SIZE_80,
   D = Chunk481060.EFr.SIZE_40;
 
@@ -76,15 +76,15 @@ function k(e) {
     user: H,
     streamId: B,
     speaking: q
-  } = t, Y = H.id === W, G = (0, P.ZP)(t), K = (0, o.e7)([w.Z], () => w.Z.isFocused()), Q = (0, o.e7)([E.Z], () => E.Z.getWindowFocused(Z.KJ3.CHANNEL_CALL_POPOUT)), X = (0, o.e7)([C.Z], () => null != H.id && C.Z.isLocalVideoDisabled(H.id, (0, p.Z)(t.type)), [H.id, t.type]), J = (0, o.e7)([O.ZP], () => O.ZP.isGuestOrLurker(n.guild_id, H.id)), $ = I.ZP.getName(n.getGuildId(), n.id, H) + (J ? " ".concat(T.intl.string(T.t["pFO/Ph"])) : ""), ee = q && (Q || K), et = c < 124 ? D : N, {
+  } = t, Y = H.id === W, G = (0, P.ZP)(t), K = (0, o.e7)([w.Z], () => w.Z.isFocused()), Q = (0, o.e7)([h.Z], () => h.Z.getWindowFocused(Z.KJ3.CHANNEL_CALL_POPOUT)), X = (0, o.e7)([C.Z], () => null != H.id && C.Z.isLocalVideoDisabled(H.id, (0, p.Z)(t.type)), [H.id, t.type]), J = (0, o.e7)([O.ZP], () => O.ZP.isGuestOrLurker(n.guild_id, H.id)), $ = I.ZP.getName(n.getGuildId(), n.id, H) + (J ? " ".concat(T.intl.string(T.t["pFO/Ph"])) : ""), ee = q && (Q || K), et = c < 124 ? D : N, {
     avatarSrc: en,
     avatarDecorationSrc: er
-  } = (0, _.Z)({
+  } = (0, E.Z)({
     userId: H.id,
     guildId: n.guild_id,
     size: et,
     animateOnHover: !ee
-  }), ei = (0, o.e7)([f.Z], () => f.Z.getSelectedParticipant(n.id)), el = (0, g.Z)(R.Yn.DEFAULT, t.user.id), ea = (0, m.Z)(t.user.id), eo = {
+  }), ei = (0, o.e7)([f.Z], () => f.Z.getSelectedParticipant(n.id)), el = (0, g.Z)(R.Yn.DEFAULT, t.user.id), ea = (0, _.Z)(t.user.id), eo = {
     channel: n,
     selectedParticipant: ei,
     user: H
@@ -103,9 +103,9 @@ function k(e) {
     userId: t.id,
     width: c,
     selected: s
-  }) : (0, r.jsx)(h.Z, {
+  }) : (0, r.jsx)(b.Z, {
     onResize: M,
-    wrapperClassName: y !== b.P.CALL_TILE ? A.videoWrapper : true,
+    wrapperClassName: y !== m.P.CALL_TILE ? A.videoWrapper : true,
     className: A.content,
     mirror: Y,
     streamId: B,

@@ -1,28 +1,28 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 256569, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 }), require("./388685.js"), require("./358797.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk110924 = require("./110924.js"),
   Chunk347469 = require("./347469.js"),
   Chunk853276 = require("./853276.jsx"),
   Chunk596390 = require("./596390.js"),
   Chunk870472 = require("./870472.js"),
-  Chunk420974 = require("./420974.js");
+  Chunk961010 = require("./961010.js");
 
-function m(e) {
+function p(e) {
   let {
     resizableNode: t,
     onResize: n,
     onResizeEnd: i
   } = e, l = (0, c.Z)({
-    minDimension: u.tq,
+    minDimension: d.tq,
     resizableDomNodeRef: t,
     onElementResize: n,
     onElementResizeEnd: i,
@@ -31,34 +31,34 @@ function m(e) {
   });
   return (0, r.jsx)("div", {
     onMouseDown: l,
-    className: f.resizeHandle
+    className: m.resizeHandle
   })
 }
-let b = Chunk473749.forwardRef(function(e, t) {
+let f = Chunk473749.forwardRef(function(e, t) {
   let {
     children: n,
     onFocus: l,
-    onBlur: a,
+    onBlur: s,
     onClick: o
-  } = e, c = i.useRef(null), [d, g] = i.useState(u.tq);
-  return (0, r.jsxs)(s.P3F, {
-    className: f.textArea,
+  } = e, c = i.useRef(null), [u, g] = i.useState(d.tq);
+  return (0, r.jsxs)(a.P3F, {
+    className: m.textArea,
     onFocus: l,
-    onBlur: a,
+    onBlur: s,
     onClick: o,
     innerRef: c,
     ignoreKeyPress: true,
     style: {
-      minHeight: d
+      minHeight: u
     },
-    children: [(0, r.jsx)(s.Den, {
-      className: f.innerScroller,
+    children: [(0, r.jsx)(a.Den, {
+      className: m.innerScroller,
       style: {
-        minHeight: d - 2
+        minHeight: u - 2
       },
       ref: t,
       children: n
-    }), (0, r.jsx)(m, {
+    }), (0, r.jsx)(p, {
       resizableNode: c,
       onResize: g,
       onResizeEnd: e => {
@@ -68,30 +68,30 @@ let b = Chunk473749.forwardRef(function(e, t) {
   })
 });
 
-function p(e) {
+function h(e) {
   var t;
   let {
     initialValue: n,
     onChangeTags: l,
     onChangeNewTagValue: c,
-    tagErrors: u = {},
-    placeholder: m,
-    className: p,
-    maxTags: h
-  } = e, x = i.useRef(null), j = i.useRef(null), v = i.useRef(null), O = (0, g.V)(n), {
-    handlePasteEvent: C,
-    handleInputChange: y,
-    handleKeyDown: N,
-    handleContainerKeyUp: E,
-    handleRemoveTag: I,
-    handleTagChangeEvent: S,
-    handleSelectTag: _,
+    tagErrors: d = {},
+    placeholder: p,
+    className: h,
+    maxTags: x
+  } = e, b = i.useRef(null), j = i.useRef(null), _ = i.useRef(null), v = (0, g.V)(n), {
+    handlePasteEvent: O,
+    handleInputChange: C,
+    handleKeyDown: y,
+    handleContainerKeyUp: N,
+    handleRemoveTag: E,
+    handleTagChangeEvent: I,
+    handleSelectTag: S,
     handleUnselectTag: T,
     handleResetTagSelections: P,
     handleInputBlurEvent: w
-  } = (0, g.Q)(O, {
-    scrollerRef: v,
-    mainInputRef: x,
+  } = (0, g.Q)(v, {
+    scrollerRef: _,
+    mainInputRef: b,
     mainContainerRef: j
   }), {
     state: {
@@ -100,9 +100,9 @@ function p(e) {
       selections: D,
       isSelecting: A
     }
-  } = O, L = (0, o.Z)(R), [k, G] = i.useState(false), M = i.useCallback(() => {
+  } = v, L = (0, o.Z)(R), [k, G] = i.useState(false), M = i.useCallback(() => {
     var e;
-    G(false), P(), null == (e = x.current) || e.focus({
+    G(false), P(), null == (e = b.current) || e.focus({
       preventScroll: true
     })
   }, [P]);
@@ -119,50 +119,50 @@ function p(e) {
       if (t) {
         var n;
         let t = D.includes(R[e]);
-        null == (n = x.current) || n.focus(), t ? T(e) : (_(e), setImmediate(() => {
+        null == (n = b.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
           var e;
-          null == (e = x.current) || e.blur(), setTimeout(() => {
+          null == (e = b.current) || e.blur(), setTimeout(() => {
             var e;
             return null == (e = j.current) ? true : e.focus()
           }, 16)
         }))
       } else T(e, true), G(true)
-    }, [_, T, D, R]);
+    }, [S, T, D, R]);
   return (0, r.jsxs)("div", {
-    className: a()(f.mainContainer, p),
+    className: s()(m.mainContainer, h),
     ref: j,
     tabIndex: 0,
-    onKeyUp: E,
-    children: [(0, r.jsxs)(b, {
-      ref: v,
+    onKeyUp: N,
+    children: [(0, r.jsxs)(f, {
+      ref: _,
       onClick: M,
-      children: [R.map((e, t) => (0, r.jsx)(d.Z, {
+      children: [R.map((e, t) => (0, r.jsx)(u.Z, {
         value: e,
-        onChange: S(t),
+        onChange: I(t),
         onBlur: U,
         onFocus: B(t),
-        onRemove: () => I(t),
+        onRemove: () => E(t),
         isSelected: D.includes(e),
         isSelecting: A,
-        error: u[e],
+        error: d[e],
         forceShowErrorTooltip: !k && t === R.length - 1
       }, t)), (0, r.jsx)("input", {
-        className: a()(f.mainTextInput, {
-          [f.isEditingOtherNodes]: k
+        className: s()(m.mainTextInput, {
+          [m.isEditingOtherNodes]: k
         }),
-        ref: x,
-        onChange: y,
-        onKeyDownCapture: N,
-        onPaste: C,
+        ref: b,
+        onChange: C,
+        onKeyDownCapture: y,
+        onPaste: O,
         onBlur: w,
-        placeholder: 0 === R.length ? m : true,
+        placeholder: 0 === R.length ? p : true,
         value: Z
       })]
-    }), null != h && (0, r.jsxs)(s.Text, {
+    }), null != x && (0, r.jsxs)(a.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      className: f.maxTags,
-      children: [null != (t = null == R ? true : R.length) ? t : 0, "/", h]
+      className: m.maxTags,
+      children: [null != (t = null == R ? true : R.length) ? t : 0, "/", x]
     })]
   })
 }

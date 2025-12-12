@@ -11,7 +11,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk150677 = require("./150677.js"),
   Chunk213305 = require("./213305.js"),
   Chunk402453 = require("./402453.jsx"),
-  Chunk200981 = require("./200981.js");
+  Chunk7034 = require("./7034.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,8 +56,8 @@ function h(e, t) {
   if (null == e) return {};
   var n, r, i = g(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function h(e, t) {
 function g(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 class E extends(r = Chunk473749.PureComponent) {
@@ -76,8 +76,8 @@ class E extends(r = Chunk473749.PureComponent) {
       nextScene: t,
       pauseWhileUnfocused: r,
       pause: i,
-      isWindowFocused: a,
-      useReducedMotion: o,
+      isWindowFocused: o,
+      useReducedMotion: a,
       rendererSettings: s
     } = this.props, [l, {
       default: c
@@ -98,12 +98,12 @@ class E extends(r = Chunk473749.PureComponent) {
     var t, n, r;
     let {
       nextScene: i,
-      pauseWhileUnfocused: a,
-      pause: o,
+      pauseWhileUnfocused: o,
+      pause: a,
       isWindowFocused: s,
       useReducedMotion: l
     } = this.props;
-    i !== this.currentScene && this.shouldForcePlayAfter() && !o && this.playScene(i), null != this.animation && (a && !e.isWindowFocused && s && !l && true !== o ? this.animation.play() : (l || a && e.isWindowFocused && !s) && this.animation.pause()), !e.pause && o ? null == (t = this.animation) || t.pause() : !e.pause || o || l || null == (n = this.animation) || n.play(), e.nextScene !== i && o && (this.playScene(i), null == (r = this.animation) || r.pause())
+    i !== this.currentScene && this.shouldForcePlayAfter() && !a && this.playScene(i), null != this.animation && (o && !e.isWindowFocused && s && !l && true !== a ? this.animation.play() : (l || o && e.isWindowFocused && !s) && this.animation.pause()), !e.pause && a ? null == (t = this.animation) || t.pause() : !e.pause || a || l || null == (n = this.animation) || n.play(), e.nextScene !== i && a && (this.playScene(i), null == (r = this.animation) || r.pause())
   }
   shouldForcePlayAfter() {
     let {
@@ -117,16 +117,16 @@ class E extends(r = Chunk473749.PureComponent) {
       onScenePlay: t,
       sceneSegments: n,
       useReducedMotion: r
-    } = this.props, i = n[e], a = n[this.currentScene];
-    if (null != this.animation && (e === this.currentScene || i.BEG !== a.BEG || i.END !== a.END) && this.animation.playSegments([i.BEG, i.END], true), this.currentScene = e, null != t && t(this.currentScene), r) {
-      var o;
-      null == (o = this.animation) || o.pause()
+    } = this.props, i = n[e], o = n[this.currentScene];
+    if (null != this.animation && (e === this.currentScene || i.BEG !== o.BEG || i.END !== o.END) && this.animation.playSegments([i.BEG, i.END], true), this.currentScene = e, null != t && t(this.currentScene), r) {
+      var a;
+      null == (a = this.animation) || a.pause()
     }
   }
   render() {
     return (0, Chunk54381.jsx)("div", {
       ref: this.handleSetRef,
-      className: s()(this.props.className, Chunk200981.wrapper)
+      className: s()(this.props.className, Chunk7034.wrapper)
     })
   }
   constructor(...e) {
@@ -164,12 +164,12 @@ let b = e => {
       componentRef: n,
       ignoreReducedMotion: r = false
     } = e,
-    o = h(e, ["componentRef", "ignoreReducedMotion"]);
+    a = h(e, ["componentRef", "ignoreReducedMotion"]);
   let {
     isWindowFocused: s
   } = (0, u.ZF)(), d = (0, l.C)(), {
     reducedMotion: f
-  } = a.useContext(c.S), _ = f.enabled && !r, g = m(p({}, o), {
+  } = o.useContext(c.S), _ = f.enabled && !r, g = m(p({}, a), {
     isWindowFocused: null != (t = null == s ? true : s()) ? t : d,
     useReducedMotion: _
   });

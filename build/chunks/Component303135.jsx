@@ -35,7 +35,7 @@ function u(e) {
         color: "text-link",
         children: c.intl.string(c.t["5Q9+/L"])
       }, "edit-group-button-".concat(t.id)),
-      onEditGroup: () => (0, o.B)(t.channel_id, a.Z.GROUP_DM_SYSTEM_MESSAGE_ICON)
+      onEditGroup: () => (0, a.B)(t.channel_id, o.Z.GROUP_DM_SYSTEM_MESSAGE_ICON)
     })
   })
 }

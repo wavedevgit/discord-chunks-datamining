@@ -43,7 +43,7 @@ function c(e) {
 
 function u(e) {
   var t;
-  return null == (t = a.Z.getChannel(e)) ? true : t.guild_id
+  return null == (t = o.Z.getChannel(e)) ? true : t.guild_id
 }
 
 function d(e) {
@@ -75,12 +75,12 @@ function p(e) {
   let {
     channelId: t,
     userId: n,
-    analyticsLocation: a
+    analyticsLocation: o
   } = e;
   r.ZP.trackWithMetadata(s.rMx.E2EE_USER_VERIFIED, c({
     channel_id: t,
     guild_id: u(t),
-    location: a
+    location: o
   }, (0, i.QN)({
     userId: n
   })))
@@ -90,14 +90,14 @@ function _(e) {
   let {
     channelId: t,
     userId: n,
-    keyVersion: a,
-    reason: o
+    keyVersion: o,
+    reason: a
   } = e;
   r.ZP.trackWithMetadata(s.rMx.E2EE_USER_VERIFICATION_FAILED, c({
     channel_id: t,
     guild_id: u(t),
-    failure_reason: o,
-    key_version: "".concat(a)
+    failure_reason: a,
+    key_version: "".concat(o)
   }, (0, i.QN)({
     userId: n
   })))
@@ -145,7 +145,7 @@ function b() {
 }
 
 function y(e) {
-  o.default.track(s.rMx.E2EE_PUBLIC_KEY_MISMATCH, {
+  a.default.track(s.rMx.E2EE_PUBLIC_KEY_MISMATCH, {
     key_version: "".concat(e)
   })
 }

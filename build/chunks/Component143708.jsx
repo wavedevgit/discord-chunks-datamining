@@ -18,7 +18,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk51144 = require("./51144.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk222922 = require("./222922.js");
+  Chunk105341 = require("./105341.js");
 
 function g(e) {
   let t, n, g, {
@@ -26,10 +26,10 @@ function g(e) {
       banned: b,
       channelId: y
     } = e,
-    O = (0, a.e7)([c.default], () => c.default.getId()),
+    O = (0, o.e7)([c.default], () => c.default.getId()),
     v = p.ZP.useName(E),
     S = O === E.id,
-    I = (0, a.e7)([u.Z, d.Z], () => {
+    I = (0, o.e7)([u.Z, d.Z], () => {
       let e = u.Z.getChannel(y);
       if (null == e) returnfalse;
       if (e.isPrivate()) returntrue;
@@ -50,7 +50,7 @@ function g(e) {
     f.S.dispatchToLastSubscribed(_.CkL.INSERT_TEXT, {
       plainText: t,
       rawText: n
-    }), null != y && o.Z.startTyping(y)
+    }), null != y && a.Z.startTyping(y)
   }
   return S ? (t = m.intl.string(m.t["F/OLvL"]), g = m.intl.string(m.t.C89OLE)) : (g = m.intl.string(m.t.YVub5y), b ? t = m.intl.string(m.t["57nBty"]) : null != v && I ? (t = m.intl.formatToPlainString(m.t["9Akp1s"], {
     username: v

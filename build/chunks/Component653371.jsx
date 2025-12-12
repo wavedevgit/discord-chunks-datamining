@@ -1,7 +1,7 @@
 /** Chunk was on 87626 **/
 /** chunk id: 653371, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  a: () => g
+  a: () => A
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,9 +17,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk436620 = require("./436620.js"),
   Chunk431138 = require("./431138.js"),
   Chunk330711 = require("./330711.js"),
-  Chunk784912 = require("./784912.js");
+  Chunk89004 = require("./89004.js");
 
-function b(e, t, a) {
+function k(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
     value: a,
     enumerable: true,
@@ -27,8 +27,8 @@ function b(e, t, a) {
     writable: true
   }) : e[t] = a, e
 }
-let k = Chunk231338.j_.MAIN_NAVIGATION_MENU;
-class g extends Chunk473749.PureComponent {
+let g = Chunk231338.j_.MAIN_NAVIGATION_MENU;
+class A extends Chunk473749.PureComponent {
   componentDidMount() {
     this.setState({
       isAppCompatible: Chunk436620.KO
@@ -44,14 +44,14 @@ class g extends Chunk473749.PureComponent {
       avoidRouter: i
     } = this.props;
     return (0, Chunk54381.jsxs)("header", {
-      className: l()(Chunk784912.header, module),
+      className: l()(Chunk89004.header, module),
       children: [(0, Chunk54381.jsxs)("nav", {
-        className: Chunk784912.headerInner,
+        className: Chunk89004.headerInner,
         children: [(0, Chunk54381.jsxs)("div", {
-          className: Chunk784912.headerLogo,
+          className: Chunk89004.headerLogo,
           children: [(0, Chunk54381.jsx)(Chunk120356, {
             tag: "div",
-            eventName: k,
+            eventName: g,
             data: {
               linkClicked: "logo"
             },
@@ -62,19 +62,19 @@ class g extends Chunk473749.PureComponent {
               children: (0, Chunk54381.jsx)(Chunk787907.O, {})
             })
           }), null != exports ? (0, Chunk54381.jsx)("a", {
-            className: Chunk784912.skipToContent,
+            className: Chunk89004.skipToContent,
             href: "#".concat(exports),
             children: require
           }) : null]
         }), (0, Chunk54381.jsx)("ul", {
-          className: Chunk784912.headerNav,
+          className: Chunk89004.headerNav,
           children: (0, Chunk54381.jsx)(Chunk34211.o, {
             avoidRouter: Chunk771950,
             TrackClick: Chunk120356,
-            styles: Chunk784912
+            styles: Chunk89004
           })
         }), (0, Chunk54381.jsxs)("ul", {
-          className: Chunk784912.headerNavRight,
+          className: Chunk89004.headerNavRight,
           children: [this.renderSocialMediaNav(), (0, Chunk54381.jsx)(Chunk643103.p, {
             onChange: Chunk473749
           })]
@@ -86,9 +86,9 @@ class g extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), b(this, "state", {
+    super(...e), k(this, "state", {
       isAppCompatible: true
-    }), b(this, "getAppButton", () => {
+    }), k(this, "getAppButton", () => {
       let {
         token: e,
         TrackClick: t,
@@ -96,10 +96,10 @@ class g extends Chunk473749.PureComponent {
       } = this.props, {
         isAppCompatible: r
       } = this.state, s = (0, o.Ui)(a), l = h.Z.Messages.NAVIGATION_LOGIN;
-      return null != e && (s = m.$w.ME, l = h.Z.Messages.NAVIGATION_OPEN), r ? (0, n.jsx)("li", {
+      return null != e && (s = N.$w.ME, l = h.Z.Messages.NAVIGATION_OPEN), r ? (0, n.jsx)("li", {
         className: I.listItemInactive,
         children: (0, n.jsx)(t, {
-          eventName: k,
+          eventName: g,
           className: I.appButton,
           data: {
             linkClicked: e ? "open" : "login",
@@ -109,28 +109,28 @@ class g extends Chunk473749.PureComponent {
           children: l
         })
       }, "app-button") : null
-    }), b(this, "renderSocialMediaNav", () => {
+    }), k(this, "renderSocialMediaNav", () => {
       let {
         TrackClick: e
       } = this.props, t = [{
-        route: (0, i.L)(m.RK.TWITTER),
+        route: (0, i.L)(N.RK.TWITTER),
         linkClicked: "twitter",
         alt: "Discord's Twitter",
         img: p.r.ASSET_SOCIAL_TWITTER
       }, {
-        route: m.fK.FACEBOOK_URL,
+        route: N.fK.FACEBOOK_URL,
         linkClicked: "facebook",
         alt: "Discord's Facebook",
         img: p.r.ASSET_SOCIAL_FACEBOOK
       }, {
-        route: m.fK.INSTAGRAM_URL,
+        route: N.fK.INSTAGRAM_URL,
         linkClicked: "instagram",
         alt: "Discord's Instagram",
         img: p.r.ASSET_SOCIAL_INSTAGRAM
       }].map(t => (0, n.jsx)("li", {
         className: l()(I.listItemInactive, I.listItemSocialMedia),
         children: (0, n.jsx)(e, {
-          eventName: k,
+          eventName: g,
           className: I.rightNavLink,
           data: {
             linkClicked: t.linkClicked

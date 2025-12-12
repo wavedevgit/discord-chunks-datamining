@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 712114, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,13 +12,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk39604 = require("./39604.js"),
   Chunk176127 = require("./176127.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk288048 = require("./288048.js");
+  Chunk945202 = require("./945202.js");
 
-function f(e) {
+function h(e) {
   let {
     onOpenClips: t,
     lastClipsSession: n,
-    closePopout: f
+    closePopout: h
   } = e;
   return (r.useEffect(() => () => {
     (0, c.eL)()
@@ -54,7 +54,7 @@ function f(e) {
           variant: "secondary",
           text: d.intl.string(d.t["7r5Z19"]),
           onClick: function() {
-            (0, s.Kw)(s.v6.CLIPS_CHANNEL_ATTACH_REMINDER), f()
+            (0, s.Kw)(s.v6.CLIPS_CHANNEL_ATTACH_REMINDER), h()
           }
         }), (0, i.jsx)(a.Button, {
           variant: "primary",

@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk614277 = require("./614277.jsx"),
   Chunk514749 = require("./514749.jsx"),
   Chunk81088 = require("./81088.jsx"),
-  Chunk689926 = require("./689926.js");
+  Chunk933240 = require("./933240.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -39,17 +39,17 @@ let f = e => (0, r.jsx)(p, d({}, e)),
       unifiedStepProps: t
     } = e, {
       leftColumnComponent: n,
-      rightColumnComponent: a,
+      rightColumnComponent: o,
       primaryCTAButtonProps: s,
       onBackClick: u
     } = t;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.C3, {
+      children: [(0, r.jsx)(a.C3, {
         children: (0, r.jsxs)("div", {
           className: c.stepBody,
-          children: [n, a]
+          children: [n, o]
         })
-      }), (0, r.jsx)(o.O3, {
+      }), (0, r.jsx)(a.O3, {
         children: (0, r.jsx)(l.Ds, {
           onBackClick: u,
           primaryCTAButtonProps: s,

@@ -37,7 +37,7 @@ function d(e) {
 }
 
 function f(e) {
-  return (0, o.dX)(e) ? c.intl.string(c.t["4f8iut"]) : (0, o.y0)(e) ? c.intl.string(c.t.yX2hNy) : (0, o.kq)(e) ? c.intl.string(c.t.oSs8eg) : c.intl.string(c.t.bK9GT1)
+  return (0, a.dX)(e) ? c.intl.string(c.t["4f8iut"]) : (0, a.y0)(e) ? c.intl.string(c.t.yX2hNy) : (0, a.kq)(e) ? c.intl.string(c.t.oSs8eg) : c.intl.string(c.t.bK9GT1)
 }
 
 function p(e) {
@@ -47,9 +47,9 @@ function p(e) {
     display: u,
     onAction: p
   } = e, _ = (0, l.Z)(), m = (0, i.e7)([s.default], () => s.default.getCurrentUser());
-  if (t.id !== (null == m ? true : m.id) || "recent" !== u || !(0, o.Rh)(c)) return null;
+  if (t.id !== (null == m ? true : m.id) || "recent" !== u || !(0, a.Rh)(c)) return null;
   let h = () => {
-    (0, a.ZDy)(async () => {
+    (0, o.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("62880"), n.e("26545")]).then(n.bind(n, 81596));
@@ -61,7 +61,7 @@ function p(e) {
       }, n))
     })
   };
-  return (0, r.jsx)(a.sNh, {
+  return (0, r.jsx)(o.sNh, {
     id: "delete-entry-history",
     label: f(c),
     action: () => {

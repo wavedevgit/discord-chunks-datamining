@@ -4,10 +4,10 @@
 var Chunk127849 = require("./127849.js"),
   Chunk621523 = require("./621523.js"),
   Chunk547514 = require("./547514.js"),
-  o = require("./840475.js").NATIVE_ARRAY_BUFFER_VIEWS,
+  a = require("./840475.js").NATIVE_ARRAY_BUFFER_VIEWS,
   s = Chunk127849.ArrayBuffer,
   l = Chunk127849.Int8Array;
-module.exports = !o || !Chunk621523(function() {
+module.exports = !a || !Chunk621523(function() {
   l(1)
 }) || !Chunk621523(function() {
   new l(false)

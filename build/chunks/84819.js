@@ -1,9 +1,31 @@
-/** Chunk was on 40184 **/
-/** chunk id: 84819, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  container: "_040f07d21e1fb0d6-container",
-  isHeader: "_040f07d21e1fb0d6-isHeader",
-  isReply: "_040f07d21e1fb0d6-isReply",
-  emojiTooltipText: "_040f07d21e1fb0d6-emojiTooltipText",
-  emoji: "_040f07d21e1fb0d6-emoji"
+/** Chunk was on 82821 **/
+/** chunk id: 84819, original params: e,r,t (module,exports,require) **/
+"use strict";
+require("./864733.js")(exports, "__esModule", {
+  value: true
+}), exports.default = true, exports.default = {
+  abstract: false,
+  accessibleNameRequired: false,
+  baseConcepts: [],
+  childrenPresentational: false,
+  nameFrom: ["author"],
+  prohibitedProps: [],
+  props: {},
+  relatedConcepts: [{
+    concept: {
+      name: "Device Independence Delivery Unit"
+    }
+  }, {
+    concept: {
+      name: "body"
+    },
+    module: "HTML"
+  }],
+  requireContextRole: [],
+  requiredContextRole: [],
+  requiredOwnedElements: [],
+  requiredProps: {},
+  superClass: [
+    ["roletype", "structure"]
+  ]
 }

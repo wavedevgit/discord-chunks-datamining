@@ -1,11 +1,11 @@
-/** Chunk was on 97476 **/
+/** Chunk was on 98878 **/
 /** chunk id: 7697, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => p
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  r = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk699682 = require("./699682.js"),
   Chunk70956 = require("./70956.js"),
@@ -14,35 +14,35 @@ var Chunk473749 = require("./473749.js"),
   Chunk924301 = require("./924301.js"),
   Chunk854698 = require("./854698.js");
 
-function f(e, n, t) {
-  let i = (0, l.e7)([u.ZP], () => u.ZP.getGuildScheduledEvent(e)),
-    f = (0, o.Z)(t),
-    [p, h] = a.useState(null != t && null != i ? (0, b.PJ)(4, (0, b.Ho)(t), new Date(i.scheduled_start_time)) : []);
-  a.useEffect(() => {
-    if (null == f || null == t || null == i || r().isEqual(f, t)) return;
-    let e = (0, b.Ho)(t);
-    h((0, b.PJ)(p.length, e, new Date(i.scheduled_start_time)))
-  }, [t, p.length, i, f]), a.useEffect(() => {
+function p(e, n, t) {
+  let r = (0, l.e7)([u.ZP], () => u.ZP.getGuildScheduledEvent(e)),
+    p = (0, o.Z)(t),
+    [f, m] = i.useState(null != t && null != r ? (0, _.PJ)(4, (0, _.Ho)(t), new Date(r.scheduled_start_time)) : []);
+  i.useEffect(() => {
+    if (null == p || null == t || null == r || a().isEqual(p, t)) return;
+    let e = (0, _.Ho)(t);
+    m((0, _.PJ)(f.length, e, new Date(r.scheduled_start_time)))
+  }, [t, f.length, r, p]), i.useEffect(() => {
     if (null == n) return;
-    let t = p.map(e => d.default.fromTimestamp(Math.floor(e.getTime() / c.Z.Millis.SECOND) * c.Z.Millis.SECOND));
-    s.Z.getGuildEventUserCounts(n, e, t)
-  }, [e, n, p]);
-  let v = a.useMemo(() => {
-    if (null == t || 0 === p.length || (null == i ? true : i.scheduled_start_time) == null) returnfalse;
+    let t = f.map(e => s.default.fromTimestamp(Math.floor(e.getTime() / c.Z.Millis.SECOND) * c.Z.Millis.SECOND));
+    d.Z.getGuildEventUserCounts(n, e, t)
+  }, [e, n, f]);
+  let v = i.useMemo(() => {
+    if (null == t || 0 === f.length || (null == r ? true : r.scheduled_start_time) == null) returnfalse;
     let e = new Date;
-    e.setFullYear(e.getFullYear() + b.hn);
-    let n = p[p.length - 1],
-      a = (0, b.Ho)(t).after(n);
-    return null != a && a <= e
-  }, [t, p, null == i ? true : i.scheduled_start_time]);
+    e.setFullYear(e.getFullYear() + _.hn);
+    let n = f[f.length - 1],
+      i = (0, _.Ho)(t).after(n);
+    return null != i && i <= e
+  }, [t, f, null == r ? true : r.scheduled_start_time]);
   return {
-    recurrenceStartTimes: p,
+    recurrenceStartTimes: f,
     canViewMoreRecurrences: v,
     updateRecurrenceStartTimes: () => {
-      if (null == t || null == i) return;
-      let e = (0, b.Ho)(t),
-        n = p[p.length - 1];
-      h([...p, ...(0, b.PJ)(4, e, n, true)])
+      if (null == t || null == r) return;
+      let e = (0, _.Ho)(t),
+        n = f[f.length - 1];
+      m([...f, ...(0, _.PJ)(4, e, n, true)])
     }
   }
 }

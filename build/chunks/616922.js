@@ -4,7 +4,7 @@
 require.d(exports, {
   C7: () => m,
   Hw: () => u,
-  M5: () => o,
+  M5: () => a,
   Ps: () => c,
   SD: () => f,
   ai: () => l,
@@ -15,7 +15,7 @@ require.d(exports, {
 var Chunk726542 = require("./726542.js"),
   Chunk358085 = require("./358085.js"),
   Chunk981631 = require("./981631.js");
-let o = "spotify",
+let a = "spotify",
   s = "spotify:",
   l = Chunk726542.Z.get(Chunk981631.ABu.SPOTIFY).name;
 
@@ -50,7 +50,7 @@ let f = ["open.spotify.com", "www.spotify.com"],
     PLAYER_OPEN: function(e, t) {
       let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
         r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "desktop";
-      return "".concat(o, ":").concat(encodeURIComponent(e), ":").concat(encodeURIComponent(t)).concat(n ? _(r) : "")
+      return "".concat(a, ":").concat(encodeURIComponent(e), ":").concat(encodeURIComponent(t)).concat(n ? _(r) : "")
     },
     PREMIUM_SITE: "https://www.spotify.com/premium/".concat(_("desktop")),
     INSTALL_ATTRIBUTION: e => "https://app.adjust.com/bdyga9?campaign=".concat(e),

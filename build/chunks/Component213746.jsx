@@ -1,7 +1,7 @@
-/** Chunk was on 92504 **/
+/** Chunk was on 69844 **/
 /** chunk id: 213746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => j
 }), require("./35282.js"), require("./997841.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,36 +20,36 @@ var Chunk54381 = require("./54381.js"),
   Chunk979007 = require("./979007.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk156870 = require("./156870.js");
+  Chunk154494 = require("./154494.js");
 
-function j(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      a = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), a.forEach(function(t) {
-      var a;
-      a = n[t], t in e ? Object.defineProperty(e, t, {
-        value: a,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = a
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function _(e) {
+function j(e) {
   let {
     application: t
   } = e;
-  return (0, a.jsxs)("div", {
-    className: C.storeContainer,
-    children: [(0, a.jsx)(y, {
+  return (0, r.jsxs)("div", {
+    className: v.storeContainer,
+    children: [(0, r.jsx)(y, {
       application: t
-    }), (0, a.jsx)(S, {
+    }), (0, r.jsx)(S, {
       application: t
     })]
   })
@@ -60,45 +60,45 @@ function y(e) {
     application: t
   } = e, {
     subscriptions: n,
-    otps: r
+    otps: i
   } = (0, d.q)(t.id);
-  return (0, a.jsxs)("div", {
-    className: C.storeContainer,
-    children: [n.length > 0 && (0, a.jsxs)("div", {
-      className: C.productSection,
-      children: [(0, a.jsx)(p.r, {
+  return (0, r.jsxs)("div", {
+    className: v.storeContainer,
+    children: [n.length > 0 && (0, r.jsxs)("div", {
+      className: v.productSection,
+      children: [(0, r.jsx)(p.r, {
         subscriptions: n,
         color: "text-strong"
-      }), (0, a.jsx)("div", {
-        className: C.products,
+      }), (0, r.jsx)("div", {
+        className: v.products,
         children: n.map(e => {
           let n = (0, m.KW)(e.skuFlags) ? "user" : "guild";
-          return (0, a.jsx)(u.zz, {
+          return (0, r.jsx)(u.zz, {
             appId: t.id,
             listing: e,
             subscriptionType: n,
-            onDetails: () => (0, g.Gp)(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
+            onDetails: () => (0, f.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
           }, e.id)
         })
       })]
-    }), r.length > 0 && (0, a.jsxs)("div", {
-      className: C.productSection,
-      children: [(0, a.jsx)(i.X6q, {
+    }), i.length > 0 && (0, r.jsxs)("div", {
+      className: v.productSection,
+      children: [(0, r.jsx)(a.X6q, {
         variant: "heading-lg/semibold",
         color: "text-strong",
-        children: v.intl.string(v.t.yUGTs8)
-      }), (0, a.jsx)("div", {
-        className: C.products,
-        children: r.map(e => (0, a.jsx)(u.hd, {
+        children: x.intl.string(x.t.yUGTs8)
+      }), (0, r.jsx)("div", {
+        className: v.products,
+        children: i.map(e => (0, r.jsx)(u.hd, {
           skuId: e.skuId,
           appId: t.id,
-          onDetails: () => (0, g.Gp)(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
+          onDetails: () => (0, f.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.id, e.skuId))
         }, e.id))
       })]
-    }), (0, a.jsx)(c.Z, {
-      path: x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId"),
+    }), (0, r.jsx)(c.Z, {
+      path: b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(":applicationId", ":skuId"),
       exact: true,
-      render: e => (0, a.jsx)(I, j({}, e))
+      render: e => (0, r.jsx)(I, C({}, e))
     })]
   })
 }
@@ -108,49 +108,49 @@ function I(e) {
     match: {
       params: {
         applicationId: t,
-        skuId: i
+        skuId: a
       }
     }
-  } = e, o = (0, l.e7)([h.Z], () => h.Z.get(i), [i]), c = (0, l.e7)([h.Z], () => null != i ? h.Z.getParentSKU(i) : true, [i]), d = r.useId(), u = r.useCallback(() => (0, g.Gp)(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, b.GlobalDiscoveryAppsSections.STORE)), [t]);
-  return r.useLayoutEffect(() => {
+  } = e, o = (0, l.e7)([h.Z], () => h.Z.get(a), [a]), c = (0, l.e7)([h.Z], () => null != a ? h.Z.getParentSKU(a) : true, [a]), d = i.useId(), u = i.useCallback(() => (0, f.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, _.GlobalDiscoveryAppsSections.STORE)), [t]);
+  return i.useLayoutEffect(() => {
     var e;
     switch (null == o ? true : o.type) {
-      case x.epS.CONSUMABLE:
-      case x.epS.DURABLE:
+      case b.epS.CONSUMABLE:
+      case b.epS.DURABLE:
         return void(0, s.ZDy)(async () => {
           let {
             ItemDetailsModal: e
           } = await Promise.resolve().then(n.bind(n, 147496));
-          return n => (0, a.jsx)(e, j({
+          return n => (0, r.jsx)(e, C({
             appId: t,
-            skuId: i
+            skuId: a
           }, n))
         }, {
           modalKey: d,
           onCloseCallback: () => {
-            P() || (0, g.Gp)(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, b.GlobalDiscoveryAppsSections.STORE))
+            P() || (0, f.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, _.GlobalDiscoveryAppsSections.STORE))
           }
         });
-      case x.epS.SUBSCRIPTION:
+      case b.epS.SUBSCRIPTION:
         if ((null == c ? true : c.flags) == null) return;
         return e = (0, m.KW)(c.flags) ? "user" : "guild", void(0, s.ZDy)(async () => {
           let {
-            SubscriptionDetailsModal: r
+            SubscriptionDetailsModal: i
           } = await Promise.resolve().then(n.bind(n, 519896));
-          return n => (0, a.jsx)(r, j({
+          return n => (0, r.jsx)(i, C({
             appId: t,
             subscriptionType: e,
-            skuId: i,
+            skuId: a,
             guildId: true
           }, n))
         }, {
           modalKey: d,
           onCloseCallback: () => {
-            P() || (0, g.Gp)(x.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, b.GlobalDiscoveryAppsSections.STORE))
+            P() || (0, f.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, _.GlobalDiscoveryAppsSections.STORE))
           }
         })
     }
-  }, [t, d, u, null == c ? true : c.flags, null == o ? true : o.flags, null == o ? true : o.type, i]), r.useLayoutEffect(() => () => {
+  }, [t, d, u, null == c ? true : c.flags, null == o ? true : o.flags, null == o ? true : o.type, a]), i.useLayoutEffect(() => () => {
     (0, s.Mr3)(d)
   }, [d]), null
 }
@@ -158,24 +158,24 @@ function I(e) {
 function S(e) {
   let {
     application: t
-  } = e, n = (0, f.nu)(), r = t.terms_of_service_url, l = t.privacy_policy_url;
-  if (null == r && null == l) return null;
-  let s = (e, t) => (0, a.jsx)(o.Z, {
+  } = e, n = (0, g.nu)(), i = t.terms_of_service_url, l = t.privacy_policy_url;
+  if (null == i && null == l) return null;
+  let s = (e, t) => (0, r.jsx)(o.Z, {
     href: t,
     trusted: !n,
     children: e
   });
-  return (0, a.jsx)("div", {
-    className: C.legalContainer,
-    children: (0, a.jsx)(i.xvT, {
+  return (0, r.jsx)("div", {
+    className: v.legalContainer,
+    children: (0, r.jsx)(a.xvT, {
       color: "text-strong",
       variant: "text-sm/normal",
-      children: null != r && null != l ? v.intl.format(v.t.nylPOT, {
-        termsHook: e => s(e, r),
+      children: null != i && null != l ? x.intl.format(x.t.nylPOT, {
+        termsHook: e => s(e, i),
         privacyHook: e => s(e, l)
-      }) : null != r ? v.intl.format(v.t["0cPyDz"], {
-        termsHook: e => s(e, r)
-      }) : null != l ? v.intl.format(v.t["loYGC/"], {
+      }) : null != i ? x.intl.format(x.t["0cPyDz"], {
+        termsHook: e => s(e, i)
+      }) : null != l ? x.intl.format(x.t["loYGC/"], {
         privacyHook: e => s(e, l)
       }) : null
     })

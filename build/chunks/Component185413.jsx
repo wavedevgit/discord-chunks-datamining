@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 185413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => E
+  default: () => x
 }), require("./388685.js"), require("./953529.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,9 +20,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk71080 = require("./71080.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk828494 = require("./828494.js");
+  Chunk257803 = require("./257803.js");
 
-function O(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -41,7 +41,7 @@ function O(e) {
   return e
 }
 
-function x(e, t) {
+function O(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -57,41 +57,41 @@ function x(e, t) {
   return r
 }
 
-function E(e) {
+function x(e) {
   var {
     channelId: t
-  } = e, n = x(e, ["channelId"]);
+  } = e, n = O(e, ["channelId"]);
   let l = (0, a.e7)([d.Z], () => d.Z.getChannel(t), [t]),
     o = (0, a.e7)([p.Z], () => p.Z.getGuild(null == l ? true : l.getGuildId()));
   return (r.useEffect(() => {
-    f.default.track(C.rMx.OPEN_MODAL, {
+    h.default.track(C.rMx.OPEN_MODAL, {
       type: "Grant Channel Access"
     })
-  }, []), null == l || null == o) ? null : (0, i.jsx)(j, O({
+  }, []), null == l || null == o) ? null : (0, i.jsx)(E, _({
     guild: o,
     channel: l
   }, n))
 }
 
-function j(e) {
+function E(e) {
   var t, n, {
       guild: a,
       channel: d,
       onClose: p,
-      newChannel: f,
+      newChannel: h,
       inSettings: C
     } = e,
-    E = x(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
-  let [j, S] = r.useState(""), [_, P] = r.useState({}), [I, Z] = r.useState(false), [T, N] = r.useState(null), A = r.useRef(null), {
+    x = O(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
+  let [E, j] = r.useState(""), [S, P] = r.useState({}), [I, Z] = r.useState(false), [T, N] = r.useState(null), A = r.useRef(null), {
     roles: w,
     members: M,
     getRichTag: R
-  } = (0, g.Q)(a, d, d.accessPermissions, j), L = m.Z.useSections({
+  } = (0, g.Q)(a, d, d.accessPermissions, E), L = m.Z.useSections({
     roles: w,
     members: M
-  }), D = f && 0 === Object.keys(_).length;
+  }), D = h && 0 === Object.keys(S).length;
   async function k() {
-    if (null == d || 0 === Object.keys(_).length) return void p();
+    if (null == d || 0 === Object.keys(S).length) return void p();
     Z(true);
     try {
       await
@@ -101,9 +101,9 @@ function j(e) {
           let {
             row: n
           } = t;
-          null != n.id && "" !== n.id && (n.rowType === b.aC.ROLE ? i.push((0, h.rX)(n.id, e.type)) : n.rowType === b.aC.MEMBER && i.push((0, h.jZ)(n.id, e.type)))
+          null != n.id && "" !== n.id && (n.rowType === b.aC.ROLE ? i.push((0, f.rX)(n.id, e.type)) : n.rowType === b.aC.MEMBER && i.push((0, f.jZ)(n.id, e.type)))
         }), (0, s.hw)(e.id, i, n)
-      }(d, _, C), p(), Z(false)
+      }(d, S, C), p(), Z(false)
     } catch (t) {
       let e = new c.Hx(t);
       Z(false), N(e)
@@ -112,14 +112,14 @@ function j(e) {
   let U = (0, u.zi)(d.type) ? o.W4G : o.gjC;
   return (0, i.jsx)(m.Z.Provider, {
     listRef: A,
-    query: j,
-    setQuery: S,
-    pendingAdditions: _,
+    query: E,
+    setQuery: j,
+    pendingAdditions: S,
     setPendingAdditions: P,
     roles: w,
     members: M,
     getRichTag: R,
-    children: (0, i.jsx)(l.Modal, (t = O({}, E), n = n = {
+    children: (0, i.jsx)(l.Modal, (t = _({}, x), n = n = {
       title: y.intl.string(y.t.dMJ3Y6),
       onClose: p,
       input: (0, i.jsxs)("div", {

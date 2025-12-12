@@ -83,16 +83,16 @@ async function S(e, t) {
         var T;
         let e = await (0, h.rO)(r),
           i = null != (T = r.name) ? T : (0, g.yl)(f.default.extractTimestamp(r.id)),
-          a = (0, m.Z)(i);
+          o = (0, m.Z)(i);
         if (r.type === _.NJ.CLIP || r.type === _.NJ.VOICE_CLIP) {
-          let i = "".concat("" !== a ? a : "clip", ".mp4");
+          let i = "".concat("" !== o ? o : "clip", ".mp4");
           t.push(new File([e], i, {
             type: "video/mp4"
           })), n.push({
             clip: r
           })
         } else if (r.type === _.NJ.SCREENSHOT) {
-          let r = "".concat("" !== a ? a : "screenshot", ".jpeg");
+          let r = "".concat("" !== o ? o : "screenshot", ".jpeg");
           t.push(new File([e], r, {
             type: "image/jpeg"
           })), n.push({})
@@ -112,16 +112,16 @@ async function S(e, t) {
     } catch (e) {
       throw g.jF.error(e), e
     }
-  } else(0, a.ZDy)(async () => {
+  } else(0, o.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("36653"), n.e("33648"), n.e("26213")]).then(n.bind(n, 502801));
+    } = await Promise.all([n.e("36653"), n.e("33648"), n.e("25881")]).then(n.bind(n, 502801));
     return n => (0, r.jsx)(t, v(y({}, n), {
       clips: e,
       analyticsLocations: O
     }))
   }, {
     stackingBehavior: "stack",
-    modalKey: o.so
+    modalKey: a.so
   })
 }

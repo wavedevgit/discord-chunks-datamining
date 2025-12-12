@@ -88,19 +88,19 @@ function D(e) {
 }
 
 function x(e, t) {
-  var n, r, i, a;
-  let o = g.T.getConfig({
+  var n, r, i, o;
+  let a = g.T.getConfig({
       location: "quest_analytics"
     }),
     l = E.E.getConfig({
       location: "quest_analytics"
     });
-  return !t && l.use_user_session_for_earned ? null != (i = null == (r = (0, s.Ai)()) ? true : r.uuid) ? i : null : o.use_ad_session_id ? e : null != (a = null == (n = (0, s.Ai)()) ? true : n.uuid) ? a : null
+  return !t && l.use_user_session_for_earned ? null != (i = null == (r = (0, s.Ai)()) ? true : r.uuid) ? i : null : a.use_ad_session_id ? e : null != (o = null == (n = (0, s.Ai)()) ? true : n.uuid) ? o : null
 }
 
 function L(e, t, n) {
   var r;
-  let i = (0, o.Gy)(n).uuid;
+  let i = (0, a.Gy)(n).uuid;
   return C({
     quest_id: e.id,
     quest_type: (0, v.BI)(e.config),
@@ -127,13 +127,13 @@ function M(e) {
     event: n,
     properties: r,
     trackGuildAndChannelMetadata: i,
-    shouldExtendSession: a = false,
-    sourceQuestContent: o
+    shouldExtendSession: o = false,
+    sourceQuestContent: a
   } = e, s = m.Z.quests.get(t);
   if (null == s || (0, b.X)({
       location: S.dr.QUEST_PREVIEW_TOOL
     }) && d.Z.getLayers().includes(I.S9g.USER_SETTINGS)) return;
-  let c = C({}, L(s, o, a), r);
+  let c = C({}, L(s, a, o), r);
   if (u.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", n, c), s.preview) return;
   let p = R.has(n);
   if (i) return l.ZP.trackWithMetadata(n, c, p);
@@ -149,16 +149,16 @@ async function U(e) {
     questId: t,
     questContent: n,
     questContentCTA: r,
-    questContentPosition: o,
+    questContentPosition: a,
     questContentRowIndex: s,
     impressionId: l,
     trackGuildAndChannelMetadata: u = false,
     sourceQuestContent: d
-  } = e, f = m.Z.getQuest(t), _ = await (0, a.S)(w(n)), h = (0, y.jY)(n), g = (0, y.R_)(n);
+  } = e, f = m.Z.getQuest(t), _ = await (0, o.S)(w(n)), h = (0, y.jY)(n), g = (0, y.R_)(n);
   M({
     questId: t,
     event: I.rMx.QUEST_CONTENT_CLICKED,
-    properties: N(C({}, j(n, o, s), (0, c.Z)()), {
+    properties: N(C({}, j(n, a, s), (0, c.Z)()), {
       cta_name: r,
       quest_status: null != f ? D(f) : null,
       impression_id: l,
@@ -180,16 +180,16 @@ function G(e) {
     sourceQuestContent: n,
     questId: r,
     mode: i,
-    prevMode: a
-  } = e, o = j(t);
+    prevMode: o
+  } = e, a = j(t);
   M({
     questId: r,
     event: I.rMx.QUEST_BAR_MODE_CHANGED,
     properties: {
-      content_id: o.content_id,
-      content_name: o.content_name,
+      content_id: a.content_id,
+      content_name: a.content_name,
       mode: i,
-      previous_mode: a
+      previous_mode: o
     },
     sourceQuestContent: n
   })
@@ -212,18 +212,18 @@ function F() {
     let {
       questId: n,
       questContent: r,
-      questContentCTA: o,
+      questContentCTA: a,
       questContentPosition: s,
       questContentRowIndex: l,
       trackGuildAndChannelMetadata: u = false,
       sourceQuestContent: d
     } = t, f = m.Z.getQuest(n), _ = (0, y.jY)(r), h = (0, y.R_)(r);
-    (0, a.S)(w(r)).then(t => {
+    (0, o.S)(w(r)).then(t => {
       e({
         questId: n,
         event: I.rMx.QUEST_CONTENT_CLICKED,
         properties: N(C({}, j(r, s, l), (0, c.Z)()), {
-          cta_name: o,
+          cta_name: a,
           quest_status: null != f ? D(f) : null,
           click_id: (0, i.Z)(),
           apple_advertising_id: null != t && (0, p.isIOS)() ? t.advertisingId : null,

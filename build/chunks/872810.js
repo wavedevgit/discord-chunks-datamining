@@ -101,8 +101,8 @@ function x(e, t) {
     channelId: i
   } = e;
   if (null != r && D(r, i)) return;
-  let a = (0, u.V9)(e),
-    o = (null == t ? true : t.forceMultiple) || _.Z.getAllActiveStreamsForChannel(i).filter(e => {
+  let o = (0, u.V9)(e),
+    a = (null == t ? true : t.forceMultiple) || _.Z.getAllActiveStreamsForChannel(i).filter(e => {
       let {
         ownerId: t
       } = e;
@@ -110,9 +110,9 @@ function x(e, t) {
     }).length >= P;
   s.Z.dispatch({
     type: "STREAM_WATCH",
-    streamKey: a,
-    allowMultiple: o || n
-  }), o || null != t && t.noFocus || I.Z.selectParticipant(e.channelId, a)
+    streamKey: o,
+    allowMultiple: a || n
+  }), a || null != t && t.noFocus || I.Z.selectParticipant(e.channelId, o)
 }
 
 function L(e, t) {
@@ -131,8 +131,8 @@ function j(e, t) {
   if (null != n && D(n, r)) return;
   x(e, t);
   let i = f.Z.getWindowOpen(T.KJ3.CHANNEL_CALL_POPOUT),
-    a = E.Z.getVoiceChannelId();
-  i && a === r || (0, d.Z)(e)
+    o = E.Z.getVoiceChannelId();
+  i && o === r || (0, d.Z)(e)
 }
 
 function M(e) {
@@ -166,7 +166,7 @@ async function U(e, t, n) {
     streamKey: r
   });
   try {
-    let e = await o.tn.get({
+    let e = await a.tn.get({
       url: T.ANM.STREAM_PREVIEW(r),
       query: {
         version: Date.now()
@@ -194,7 +194,7 @@ async function G(e) {
       url: T.ANM.STREAM_NOTIFY(e),
       oldFormErrors: true,
       trackedActionData: {
-        event: a.NetworkActionNames.STREAM_NOTIFY
+        event: o.NetworkActionNames.STREAM_NOTIFY
       },
       rejectWithError: true
     })
@@ -208,7 +208,7 @@ function Z(e) {
 }
 
 function F(e, t) {
-  o.tn.patch({
+  a.tn.patch({
     url: T.ANM.STREAM(e),
     body: {
       region: t

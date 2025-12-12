@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => A
 });
 var r, Chunk348327 = require("./348327.js"),
-  a = require.n(Chunk348327),
+  o = require.n(Chunk348327),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk592125 = require("./592125.js"),
@@ -32,7 +32,7 @@ function y(e, t, n) {
 let O = null;
 
 function v() {
-  var e, t, n, r, i, a, o;
+  var e, t, n, r, i, o, a;
   let s = Chunk944486.Z.getVoiceChannelId();
   if (null == Chunk570140) return null;
   let u = Chunk427679.Z.getStageInstanceByChannel(Chunk570140);
@@ -53,10 +53,10 @@ function v() {
     name: null != (i = null != (r = Chunk19780.topic) ? r : y.topic) ? Chunk348327 : y.name,
     type: (0, Chunk368442.xJ)(y.id) ? Chunk981631.IIU.WATCHING : Chunk981631.IIU.LISTENING,
     timestamps: {
-      start: null != (a = null == I || null == (n = I.timestamps) ? true : require.start) ? a : new Date().getTime()
+      start: null != (o = null == I || null == (n = I.timestamps) ? true : require.start) ? o : new Date().getTime()
     },
     assets: {
-      small_image: null != (o = v.icon) ? Chunk442837 : true,
+      small_image: null != (a = v.icon) ? Chunk442837 : true,
       small_text: v.name
     },
     party: {
@@ -68,7 +68,7 @@ function v() {
 
 function S() {
   let e = v();
-  return !a()(module, O) && (O = module, true)
+  return !o()(module, O) && (O = module, true)
 }
 
 function I(e) {
@@ -84,8 +84,8 @@ function T(e) {
   var t, n, r;
   let {
     state: i
-  } = e, a = null != (r = null == O || null == (n = O.party) || null == (t = n.size) ? true : t[1]) ? r : 0;
-  return i === b.hes.RTC_CONNECTED && !(a > 0) && S()
+  } = e, o = null != (r = null == O || null == (n = O.party) || null == (t = n.size) ? true : t[1]) ? r : 0;
+  return i === b.hes.RTC_CONNECTED && !(o > 0) && S()
 }
 class C extends(r = Chunk442837.ZP.Store) {
   initialize() {

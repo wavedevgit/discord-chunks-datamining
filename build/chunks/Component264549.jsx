@@ -1,18 +1,18 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 264549, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 }), require("./539854.js"), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk714338 = require("./714338.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk895996 = require("./895996.js");
+  Chunk24445 = require("./24445.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -23,9 +23,9 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 let p = () => (0, Chunk54381.jsxs)("div", {
-  className: Chunk895996.symbol,
+  className: Chunk24445.symbol,
   children: [(0, Chunk54381.jsx)("div", {
-    className: Chunk895996.symbolBackground
+    className: Chunk24445.symbolBackground
   }), (0, Chunk54381.jsx)("img", {
     alt: "",
     src: require("./977706.js")
@@ -49,28 +49,28 @@ class g extends Chunk473749.PureComponent {
   }
   renderPrimary() {
     return (0, Chunk54381.jsxs)("div", {
-      className: Chunk895996.primaryExplosion,
+      className: Chunk24445.primaryExplosion,
       children: [(0, Chunk54381.jsx)("img", {
         alt: "",
-        className: Chunk895996.circleInner,
+        className: Chunk24445.circleInner,
         src: require("./273226.js"),
         width: 70,
         height: 69
       }), (0, Chunk54381.jsx)("img", {
         alt: "",
-        className: Chunk895996.circleOuter,
+        className: Chunk24445.circleOuter,
         src: require("./922026.js"),
         width: 96,
         height: 95
       }), (0, Chunk54381.jsx)("img", {
         alt: "",
-        className: Chunk895996.linesSecondary,
+        className: Chunk24445.linesSecondary,
         src: require("./827926.js"),
         width: 183,
         height: 104
       }), (0, Chunk54381.jsx)("img", {
         alt: "",
-        className: Chunk895996.linesMain,
+        className: Chunk24445.linesMain,
         src: require("./873180.js"),
         width: 69,
         height: 180
@@ -118,10 +118,10 @@ class g extends Chunk473749.PureComponent {
       offsetY: n,
       animating: i,
       scale: l
-    } = this.state, o = [this.renderPrimary()];
+    } = this.state, a = [this.renderPrimary()];
     return module && Chunk392711.push(this.renderSecondary(exports, require)), (0, Chunk54381.jsx)("div", {
-      className: a()(Chunk895996.container, {
-        [Chunk895996.animate]: Chunk473749
+      className: o()(Chunk24445.container, {
+        [Chunk24445.animate]: Chunk473749
       }),
       style: {
         top: this.props.top,
@@ -143,7 +143,7 @@ class g extends Chunk473749.PureComponent {
     })
   }
 }
-class b extends Chunk473749.PureComponent {
+class m extends Chunk473749.PureComponent {
   componentDidMount() {
     this.setTimeout(() => {
       this.setState({
@@ -158,8 +158,8 @@ class b extends Chunk473749.PureComponent {
   }
   render() {
     return (0, Chunk54381.jsx)("div", {
-      className: a()(Chunk895996.ragingDemon, {
-        [Chunk895996.visible]: this.state.visible
+      className: o()(Chunk24445.ragingDemon, {
+        [Chunk24445.visible]: this.state.visible
       }),
       children: this.children
     })
@@ -201,4 +201,4 @@ class b extends Chunk473749.PureComponent {
     })
   }
 }
-let m = b
+let b = m

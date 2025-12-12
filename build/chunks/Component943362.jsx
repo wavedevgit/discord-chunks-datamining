@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk782568 = require("./782568.js"),
@@ -16,8 +16,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk198620 = require("./198620.js"),
   Chunk746878 = require("./746878.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk115926 = require("./115926.js"),
-  Chunk396831 = require("./396831.js");
+  Chunk330746 = require("./330746.js"),
+  Chunk861537 = require("./861537.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -63,7 +63,7 @@ function y(e) {
     react(t, i, h) {
       let E = h.noStyleAndInteraction ? true : async n => {
         let r = await (0, d.B_)(t.attachmentUrl);
-        e.shouldStopPropagation && (null == n || n.stopPropagation()), c.Z.trackLinkClicked(r), e.shouldCloseDefaultModals && (0, o.pTH)(), (0, l.Z)(r)
+        e.shouldStopPropagation && (null == n || n.stopPropagation()), c.Z.trackLinkClicked(r), e.shouldCloseDefaultModals && (0, a.pTH)(), (0, l.Z)(r)
       }, y = h.noStyleAndInteraction ? p.dG4 : e => {
         (0, s.jW)(e, async () => {
           let {
@@ -81,9 +81,9 @@ function y(e) {
         onClick: E,
         onContextMenu: y,
         className: "attachmentLink",
-        children: [(0, r.jsx)(o.Ujz, {
+        children: [(0, r.jsx)(a.Ujz, {
           size: "xs",
-          className: a()(m.icon, _.icon),
+          className: o()(m.icon, _.icon),
           color: "currentColor"
         }), (0, f.S)(t, i, h)]
       }, h.key)

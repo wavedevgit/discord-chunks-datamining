@@ -8,7 +8,7 @@ var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
   Chunk81825 = require("./81825.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -69,6 +69,6 @@ class u extends Chunk81825.Z {
     return this.code
   }
   constructor(e) {
-    super(), o(this, "code", true), o(this, "temporary", true), o(this, "revoked", true), o(this, "uses", true), o(this, "maxUses", true), o(this, "maxAge", true), o(this, "createdAt", true), o(this, "channel", true), o(this, "guild", true), o(this, "inviter", true), o(this, "targetType", true), o(this, "targetUser", true), o(this, "targetApplication", true), o(this, "type", true), o(this, "flags", true), o(this, "roles", true), this.code = e.code || "", this.temporary = e.temporary || false, this.revoked = e.revoked || false, this.uses = e.uses || 0, this.maxUses = e.maxUses || 0, this.maxAge = e.maxAge || 0, this.createdAt = e.createdAt || new Date, this.channel = e.channel, this.guild = e.guild, this.inviter = e.inviter || null, this.targetType = e.targetType || null, this.targetUser = e.targetUser || null, this.targetApplication = e.targetApplication || null, this.type = e.type || null, this.flags = e.flags || 0, this.roles = e.roles || []
+    super(), a(this, "code", true), a(this, "temporary", true), a(this, "revoked", true), a(this, "uses", true), a(this, "maxUses", true), a(this, "maxAge", true), a(this, "createdAt", true), a(this, "channel", true), a(this, "guild", true), a(this, "inviter", true), a(this, "targetType", true), a(this, "targetUser", true), a(this, "targetApplication", true), a(this, "type", true), a(this, "flags", true), a(this, "roles", true), this.code = e.code || "", this.temporary = e.temporary || false, this.revoked = e.revoked || false, this.uses = e.uses || 0, this.maxUses = e.maxUses || 0, this.maxAge = e.maxAge || 0, this.createdAt = e.createdAt || new Date, this.channel = e.channel, this.guild = e.guild, this.inviter = e.inviter || null, this.targetType = e.targetType || null, this.targetUser = e.targetUser || null, this.targetApplication = e.targetApplication || null, this.type = e.type || null, this.flags = e.flags || 0, this.roles = e.roles || []
   }
 }

@@ -14,13 +14,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk456235 = require("./456235.js");
+  Chunk430355 = require("./430355.js");
 class p extends Chunk473749.Component {
   shouldScrollToTop(e) {
     let {
       location: t
     } = e;
-    return t.pathname.startsWith(N.Z5c.APPLICATION_STORE_LISTING_SKU("")) || t.pathname.startsWith(N.Z5c.APPLICATION_STORE_LISTING_APPLICATION(""))
+    return t.pathname.startsWith(_.Z5c.APPLICATION_STORE_LISTING_SKU("")) || t.pathname.startsWith(_.Z5c.APPLICATION_STORE_LISTING_APPLICATION(""))
   }
   render() {
     let {
@@ -38,18 +38,18 @@ class p extends Chunk473749.Component {
           locale: o,
           authRedirectTo: e.pathname,
           track: u.default.track,
-          className: f.marketingHeader,
+          className: m.marketingHeader,
           onChangeLocale: this.handleHeaderLocaleChange,
-          mobileClassName: f.marketingHeader,
-          openNavAriaLabel: m.intl.string(m.t.Fs9k3K),
-          hideNavAriaLabel: m.intl.string(m.t.AbfyHI),
-          skipToContentLabel: m.intl.string(m.t["18gavA"])
+          mobileClassName: m.marketingHeader,
+          openNavAriaLabel: N.intl.string(N.t.Fs9k3K),
+          hideNavAriaLabel: N.intl.string(N.t.AbfyHI),
+          skipToContentLabel: N.intl.string(N.t["18gavA"])
         }), a(t, i), (0, n.jsx)(s.$, {
           locale: o,
           authRedirectTo: e.pathname,
           avoidRouter: true,
           track: u.default.track,
-          className: f.marketingFooter
+          className: m.marketingFooter
         })]
       })
     })

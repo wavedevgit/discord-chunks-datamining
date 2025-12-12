@@ -18,7 +18,7 @@ let d = new WeakMap;
 function f(e, t, n) {
   let {
     direction: f
-  } = (0, u.j)(), p = e.keyboardDelegate || new(0, o.d)({
+  } = (0, u.j)(), p = e.keyboardDelegate || new(0, a.d)({
     collection: t.collection,
     ref: n,
     orientation: "horizontal",
@@ -52,7 +52,7 @@ function f(e, t, n) {
   }, [t.collection.size, b, n]), d.set(t, {
     onRemove: e.onRemove
   }), {
-    gridProps: (0, a.d)(E, v, {
+    gridProps: (0, o.d)(E, v, {
       role: t.collection.size ? "grid" : "group",
       "aria-atomic": false,
       "aria-relevant": "additions",

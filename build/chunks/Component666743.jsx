@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk314897 = require("./314897.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -50,10 +50,10 @@ function c(e, t) {
 function u(e) {
   return class extends i.Component {
     componentDidMount() {
-      a.default.addChangeListener(this.onStoreChange)
+      o.default.addChangeListener(this.onStoreChange)
     }
     componentWillUnmount() {
-      a.default.removeChangeListener(this.onStoreChange)
+      o.default.removeChangeListener(this.onStoreChange)
     }
     render() {
       return (0, r.jsx)(e, c(s({}, this.props), {
@@ -61,11 +61,11 @@ function u(e) {
       }))
     }
     constructor(...e) {
-      super(...e), o(this, "state", {
-        isAuthenticated: a.default.isAuthenticated()
-      }), o(this, "onStoreChange", () => {
+      super(...e), a(this, "state", {
+        isAuthenticated: o.default.isAuthenticated()
+      }), a(this, "onStoreChange", () => {
         this.setState({
-          isAuthenticated: a.default.isAuthenticated()
+          isAuthenticated: o.default.isAuthenticated()
         })
       })
     }

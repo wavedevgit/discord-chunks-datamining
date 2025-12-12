@@ -64,11 +64,11 @@ let g = {
   },
   E = {
     key: Chunk409813.h8.ADD_PAYMENT_STEPS,
-    renderStep: e => (0, r.jsx)(o.J, h(_({}, e), {
-      breadcrumbSteps: [a.h8.ADD_PAYMENT_STEPS, a.h8.REVIEW, a.h8.CONFIRM],
+    renderStep: e => (0, r.jsx)(a.J, h(_({}, e), {
+      breadcrumbSteps: [o.h8.ADD_PAYMENT_STEPS, o.h8.REVIEW, o.h8.CONFIRM],
       onReturn: () => {
-        0 === Object.keys(i.Z.paymentSources).length ? e.handleClose() : e.handleStepChange(a.h8.REVIEW, {
-          trackedFromStep: a.h8.ADD_PAYMENT_STEPS
+        0 === Object.keys(i.Z.paymentSources).length ? e.handleClose() : e.handleStepChange(o.h8.REVIEW, {
+          trackedFromStep: o.h8.ADD_PAYMENT_STEPS
         })
       }
     })),

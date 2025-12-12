@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   a: () => i,
-  w: () => a
+  w: () => o
 });
 var Chunk231338 = require("./231338.js");
 
@@ -11,7 +11,7 @@ function i(e) {
   return e === r.BR.LIGHT
 }
 
-function a(e) {
+function o(e) {
   switch (e) {
     case r.BR.DARK:
     case r.BR.MIDNIGHT:

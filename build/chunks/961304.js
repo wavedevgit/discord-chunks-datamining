@@ -50,14 +50,14 @@ class d extends Chunk47770.Z {
         c.warn("Output#Failed to setup speaking indicator: ".concat(e))
       }
     }
-    return "video" === e.kind && (null != this.videoStreamId && (0, o.jC)(this.videoStreamId), this.stream.getVideoTracks().forEach(t => {
+    return "video" === e.kind && (null != this.videoStreamId && (0, a.jC)(this.videoStreamId), this.stream.getVideoTracks().forEach(t => {
       e !== t && (t.discordIsTearingDown = true, this.stream.removeTrack(t))
-    }), this.videoStreamId = (0, o.N7)(this.stream), this.emit("video", this.videoStreamId)), "audio" === e.kind && this.stream.getAudioTracks().forEach(t => {
+    }), this.videoStreamId = (0, a.N7)(this.stream), this.emit("video", this.videoStreamId)), "audio" === e.kind && this.stream.getAudioTracks().forEach(t => {
       e !== t && (t.discordIsTearingDown = true, this.stream.removeTrack(t))
     }), this.stream.getTracks().length
   }
   removeTrack(e) {
-    return this.stream.removeTrack(e), "video" === e.kind && (null != this.videoStreamId && (0, o.jC)(this.videoStreamId), this.emit("video", null)), this.stream.getTracks().length
+    return this.stream.removeTrack(e), "video" === e.kind && (null != this.videoStreamId && (0, a.jC)(this.videoStreamId), this.emit("video", null)), this.stream.getTracks().length
   }
   setSinkId(e) {
     this.sinkId = e, this.updateAudioElement()

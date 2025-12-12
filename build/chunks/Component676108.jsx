@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk28546 = require("./28546.js"),
   Chunk872635 = require("./872635.jsx"),
   Chunk185923 = require("./185923.js"),
-  Chunk138157 = require("./138157.js");
+  Chunk436349 = require("./436349.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -100,17 +100,17 @@ function h(e) {
         iconClassName: d.staticIcon,
         dividerClassName: d.staticDivider
       })
-    }), (0, r.jsx)(a.yRy, {
+    }), (0, r.jsx)(o.yRy, {
       targetElementRef: g,
       renderPopout: b,
       position: "bottom",
-      animation: a.yRy.Animation.NONE,
+      animation: o.yRy.Animation.NONE,
       align: "left",
       children: (e, t) => {
         let {
           isShown: n
         } = t;
-        return (0, r.jsx)(o.Z, m(p({}, e), {
+        return (0, r.jsx)(a.Z, m(p({}, e), {
           ref: g,
           active: n,
           className: d.emojiButton,

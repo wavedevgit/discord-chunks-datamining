@@ -105,17 +105,17 @@ let m = "__DEBUG_PROFILE_EFFECTS_STORE",
           src: e(t.base64)
         })),
         i = t.config.stillFrames,
-        a = null != i ? f({}, i) : {};
-      for (let t in a) {
-        let n = a[t];
-        null != n && (a[t] = _(f({}, n), {
+        o = null != i ? f({}, i) : {};
+      for (let t in o) {
+        let n = o[t];
+        null != n && (o[t] = _(f({}, n), {
           src: e(n.base64)
         }))
       }
       return _(f({}, t), {
         config: _(f({}, t.config), {
           effects: r,
-          stillFrames: a
+          stillFrames: o
         })
       })
     }, [t])

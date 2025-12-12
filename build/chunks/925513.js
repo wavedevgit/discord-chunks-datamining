@@ -45,8 +45,8 @@ let f = e => {
     } = e;
     if (null != t && t !== i.Q4.UNSET_EXPLICIT_CONTENT_REDACTION) return t;
     let s = l.default.getCurrentUser(),
-      c = (0, o.U)("resolveExplicitContentSettingWithDefaults");
-    return (0, a.c_)("resolveExplicitContentSettingWithDefaults") || c ? p({
+      c = (0, a.U)("resolveExplicitContentSettingWithDefaults");
+    return (0, o.c_)("resolveExplicitContentSettingWithDefaults") || c ? p({
       isDm: n,
       isFriend: r
     }) : (null == s ? true : s.nsfwAllowed) === false ? m({

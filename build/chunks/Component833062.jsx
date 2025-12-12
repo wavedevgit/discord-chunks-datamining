@@ -2,21 +2,21 @@
 /** chunk id: 833062, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk54381 = require("./54381.js"),
   Chunk925329 = require("./925329.jsx"),
-  Chunk365606 = require("./365606.js");
+  Chunk436083 = require("./436083.js");
 
-function o(e) {
+function a(e) {
   let {
     application: t,
     useComma: n = false
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.applicationNameWrapper,
+    className: o.applicationNameWrapper,
     children: [(0, r.jsx)(i.Z, {
-      className: a.applicationIcon,
+      className: o.applicationIcon,
       game: t,
       size: i.A.XSMALL
     }), (0, r.jsx)("strong", {

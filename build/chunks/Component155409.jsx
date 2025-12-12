@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 155409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -21,7 +21,7 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -33,7 +33,7 @@ function f(e) {
   }
   return e
 }
-class h extends(i = Chunk473749.Component) {
+class f extends(i = Chunk473749.Component) {
   componentDidMount() {
     let {
       visible: e,
@@ -105,7 +105,7 @@ class h extends(i = Chunk473749.Component) {
       autoInvert: s
     } = this.props, c = Chunk10401.Z.getData()[exports];
     return null != module && null != Chunk451478 ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [require, i && (0, Chunk54381.jsx)(Chunk5560.V, f({
+      children: [require, i && (0, Chunk54381.jsx)(Chunk5560.V, h({
         autoInvert: Chunk260300,
         position: Chunk442837,
         tutorialId: exports,
@@ -121,7 +121,7 @@ function m(e) {
   let {
     tutorialId: i
   } = e, l = (0, o.e7)([d.Z], () => d.Z.shouldShow(i), [i]), a = (0, o.e7)([c.Z], () => c.Z.isFocused()), s = (0, o.e7)([c.Z], () => c.Z.windowSize(), []);
-  return (0, r.jsx)(h, (t = f({}, e), n = n = {
+  return (0, r.jsx)(f, (t = h({}, e), n = n = {
     visible: l,
     windowFocused: a,
     windowSize: s
@@ -136,7 +136,7 @@ function m(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t))
 }
-p(h, "defaultProps", {
+p(f, "defaultProps", {
   position: "top",
   offsetX: 0,
   offsetY: 0,

@@ -13,11 +13,11 @@ function i(e, t) {
   }
 }
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t && i(e.prototype, t), n && i(e, n), e
 }
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,12 +30,12 @@ require.d(exports, {
 });
 var s = function() {
   function e(t, n) {
-    r(this, e), o(this, "xs", true), o(this, "ys", true), o(this, "c1s", true), o(this, "c2s", true), o(this, "c3s", true);
-    for (var i, a, s, l = t.length, c = [], u = 0; u < l; u++) c.push(u);
+    r(this, e), a(this, "xs", true), a(this, "ys", true), a(this, "c1s", true), a(this, "c2s", true), a(this, "c3s", true);
+    for (var i, o, s, l = t.length, c = [], u = 0; u < l; u++) c.push(u);
     c.sort(function(e, n) {
       return t[e] < t[n] ? false : 1
     });
-    for (var d = [], f = [], p = [], _ = 0; _ < l - 1; _++) i = t[_ + 1] - t[_], a = n[_ + 1] - n[_], f.push(i), d.push(a), p.push(a / i);
+    for (var d = [], f = [], p = [], _ = 0; _ < l - 1; _++) i = t[_ + 1] - t[_], o = n[_ + 1] - n[_], f.push(i), d.push(o), p.push(o / i);
     for (var m = [p[0]], h = 0; h < f.length - 1; h++) {
       var g = p[h],
         E = p[h + 1];
@@ -57,17 +57,17 @@ var s = function() {
     }
     this.xs = t, this.ys = n, this.c1s = m, this.c2s = O, this.c3s = v
   }
-  return a(module, [{
+  return o(module, [{
     key: "interpolate",
     value: function(e) {
       var t, n = this.xs,
         r = this.ys,
         i = this.c1s,
-        a = this.c2s,
-        o = this.c3s,
+        o = this.c2s,
+        a = this.c3s,
         s = n.length - 1;
       if (e === n[s]) return r[s];
-      for (var l = 0, c = o.length - 1; l <= c;) {
+      for (var l = 0, c = a.length - 1; l <= c;) {
         var u = n[t = Math.floor(.5 * (l + c))];
         if (u < e) l = t + 1;
         else {
@@ -77,7 +77,7 @@ var s = function() {
       }
       var d = e - n[s = Math.max(0, c)],
         f = d * d;
-      return r[s] + i[s] * d + a[s] * f + o[s] * d * f
+      return r[s] + i[s] * d + o[s] * f + a[s] * d * f
     }
   }]), module
 }()

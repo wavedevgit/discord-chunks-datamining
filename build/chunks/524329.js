@@ -2,16 +2,16 @@
 /** chunk id: 524329, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Es: () => E,
-  RM: () => s,
+  RM: () => a,
   VP: () => c,
   Xb: () => o,
   sm: () => u,
-  y0: () => a
+  y0: () => s
 }), require("./953529.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
-let a = function(e) {
+let s = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     l.Z.dispatch({
       type: "WELCOME_SCREEN_VIEW",
@@ -19,7 +19,7 @@ let a = function(e) {
       isLurking: t
     })
   },
-  s = async e => {
+  a = async e => {
     l.Z.dispatch({
       type: "WELCOME_SCREEN_FETCH_START"
     });

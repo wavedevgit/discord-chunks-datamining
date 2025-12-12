@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,8 +44,8 @@ function f(e) {
     added: r
   } = e, i = l[t];
   if (null == i || null == i[n]) returnfalse;
-  let a = Object.keys(r).length;
-  i[n] += a
+  let o = Object.keys(r).length;
+  i[n] += o
 }
 
 function p(e) {
@@ -90,7 +90,7 @@ class g extends(r = Chunk442837.ZP.Store) {
     return null == t || Date.now() - t > s
   }
 }
-o(g, "displayName", "GuildRoleMemberCountStore");
+a(g, "displayName", "GuildRoleMemberCountStore");
 let E = new g(Chunk570140.Z, {
   GUILD_ROLE_MEMBER_COUNT_FETCH_SUCCESS: u,
   GUILD_ROLE_MEMBER_COUNT_UPDATE: d,

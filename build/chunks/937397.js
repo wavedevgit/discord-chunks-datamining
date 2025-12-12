@@ -3,19 +3,19 @@
 "use strict";
 require.d(exports, {
   _: () => s,
-  n: () => o
+  n: () => a
 });
 var Chunk595707 = require("./595707.js"),
   Chunk176159 = require("./176159.js"),
   Chunk473749 = require("./473749.js");
-let o = (0, Chunk473749.createContext)({}),
+let a = (0, Chunk473749.createContext)({}),
   s = (0, Chunk176159.qW)(function(e, t) {
-    [e, t] = (0, r.pE)(e, t, o);
+    [e, t] = (0, r.pE)(e, t, a);
     let {
       elementType: n = "label",
       ...i
     } = e;
-    return a.createElement(n, {
+    return o.createElement(n, {
       className: "react-aria-Label",
       ...i,
       ref: t

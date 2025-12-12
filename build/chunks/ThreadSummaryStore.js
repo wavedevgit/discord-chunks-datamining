@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,10 +36,10 @@ class d extends(r = Chunk442837.ZP.Store) {
     return s
   }
   constructor(...e) {
-    super(...e), o(this, "summaryInProgress", false)
+    super(...e), a(this, "summaryInProgress", false)
   }
 }
-o(d, "displayName", "ThreadSummaryStore");
+a(d, "displayName", "ThreadSummaryStore");
 let f = new d(Chunk570140.Z, {
   SUMMARIZE_THREAD_START: c,
   SUMMARIZE_THREAD_SUCCESS: u,

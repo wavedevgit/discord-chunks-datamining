@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk223356 = require("./223356.js"),
   Chunk225452 = require("./225452.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk294698 = require("./294698.js");
+  Chunk176059 = require("./176059.js");
 
 function k(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -68,7 +68,7 @@ function T(e) {
         return "Linux"
     }
     return ""
-  }((0, w.getOS)())), [er, ea] = r.useState(""), [el, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(""), [em, ef] = r.useState(false), [ep, ev] = r.useState(false), [eh, eg] = r.useState(false), [ex, eb] = r.useState(null);
+  }((0, S.getOS)())), [er, el] = r.useState(""), [ea, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(""), [em, ep] = r.useState(false), [ev, ef] = r.useState(false), [eh, eg] = r.useState(false), [ex, eb] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -78,29 +78,29 @@ function T(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "9d5dce9fdaa98bea6fd92fe92ff869e4b9244a2a" !== e.body.hash) {
-        let e = new Date("1765550981396"),
+      if (null != e.body && "68db2d1410284f2ac2d6d64a668d639645cb7063" !== e.body.hash) {
+        let e = new Date("1765551551324"),
           t = new Date,
-          n = (0, S.TD)(t, e);
+          n = (0, O.TD)(t, e);
         n.hours > 6 && eb(n.hours)
       }
     })
   }, []);
-  let ey = (0, l.e7)([j.default], () => {
+  let ey = (0, a.e7)([j.default], () => {
       let e = j.default.getCurrentUser();
       return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
     }),
-    ej = (0, l.e7)([p.C], () => {
+    ej = (0, a.e7)([v.C], () => {
       var e;
-      return null == (e = p.C.getCurrentBuildOverride().overrides) ? true : e.discord_web
+      return null == (e = v.C.getCurrentBuildOverride().overrides) ? true : e.discord_web
     }),
     {
-      overridesInfo: eO
+      overridesInfo: e_
     } = (0, y.sI)(),
     {
-      overridesInfo: eS
+      overridesInfo: eO
     } = (0, b.Qb)(),
-    ew = Object.entries(k({}, eO, eS)).map(e => {
+    eS = Object.entries(k({}, e_, eO)).map(e => {
       let [t, {
         variantId: n
       }] = e;
@@ -109,44 +109,44 @@ function T(e) {
         variantId: n
       }
     });
-  async function eP() {
+  async function ew() {
     var e, t;
-    if (eg(false), "" === Z || "" === B || null == H) return void ef(true);
-    let r = null == X || null == (e = X.features) ? true : e.find(e => (0, P.pD)(e) === K);
-    ev(true), ef(false);
-    let a = (0, _.D)(U.map(e => {
+    if (eg(false), "" === Z || "" === B || null == H) return void ep(true);
+    let r = null == X || null == (e = X.features) ? true : e.find(e => (0, w.pD)(e) === K);
+    ef(true), ep(false);
+    let l = (0, P.D)(U.map(e => {
         let {
           item: t
         } = e;
         return t
       })),
-      l = await (0, P.ZD)({
+      a = await (0, w.ZD)({
         name: Z,
         description: B,
         priority: H,
         feature: r,
         url: z,
         buildOverride: null != (t = null == ej ? true : ej.id) ? t : null,
-        experimentOverrides: ew
+        experimentOverrides: eS
       }, true === Q ? {
         overridePlatformInformation: Q,
         device: ee,
         operatingSystem: en,
         operatingSystemVersion: er,
-        clientVersion: el,
+        clientVersion: ea,
         clientBuildNumber: es,
         locale: ec
       } : {
         overridePlatformInformation: Q
-      }, a).catch(() => eg(true));
-    ev(false), null != l && l.ok ? (ey && window.open(l.body.permalink_url, "_blank"), A(), (0, d.ZDy)(async () => {
+      }, l).catch(() => eg(true));
+    ef(false), null != a && a.ok ? (ey && window.open(a.body.permalink_url, "_blank"), A(), (0, d.ZDy)(async () => {
       let {
         default: e
       } = await n.e("64648").then(n.bind(n, 81155));
       return t => {
         var n, r;
         return (0, i.jsx)(e, (n = k({}, t), r = r = {
-          asanaTask: l.body
+          asanaTask: a.body
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -162,7 +162,7 @@ function T(e) {
   }
   return r.useEffect(() => {
     async function e() {
-      F(await (0, P.WG)())
+      F(await (0, w.WG)())
     }
     ey && e()
   }, [ey]), r.useEffect(() => {
@@ -185,10 +185,10 @@ function T(e) {
       true !== r && Y(e => e.some(e => {
         var t;
         return e.filename === r.name && (null == (t = e.item.file) ? true : t.size) === r.size
-      }) ? e : [...e, new f.ZP({
-        id: (0, a.Z)(),
+      }) ? e : [...e, new p.ZP({
+        id: (0, l.Z)(),
         file: r,
-        platform: f.ow.WEB,
+        platform: p.ow.WEB,
         origin: "clipboard"
       })])
     };
@@ -208,8 +208,8 @@ function T(e) {
     }, {
       variant: "primary",
       text: ey ? "Submit and Open Report" : "Submit Report",
-      loading: ep,
-      onClick: eP,
+      loading: ev,
+      onClick: ew,
       autoFocus: false
     }],
     onClose: A,
@@ -240,14 +240,14 @@ function T(e) {
             variant: "text-sm/normal",
             children: C.intl.string(C.t.x18RUs)
           })]
-        }), ey && Object.keys(ew).length > 0 && (0, i.jsxs)(d.M14, {
+        }), ey && Object.keys(eS).length > 0 && (0, i.jsxs)(d.M14, {
           type: "critical",
           children: [(0, i.jsx)(d.Heading, {
             variant: "heading-md/medium",
             children: "You have the following experiments overridden:"
           }), (0, i.jsx)(d.Text, {
             variant: "text-sm/normal",
-            children: ew.map(e => (0, i.jsxs)("div", {
+            children: eS.map(e => (0, i.jsxs)("div", {
               children: [e.experimentId, " (variant ", e.variantId, ")"]
             }, e.experimentId))
           })]
@@ -286,7 +286,7 @@ function T(e) {
                 children: [(0, i.jsx)("img", {
                   alt: "",
                   className: E.formPriorityImage,
-                  src: (0, O.gT)({
+                  src: (0, _.gT)({
                     id: t.emoji,
                     animated: true,
                     size: 48
@@ -306,7 +306,7 @@ function T(e) {
             })
           })(e),
           onChange: q,
-          options: (0, P.Tj)().map(e => ({
+          options: (0, w.Tj)().map(e => ({
             priority: e,
             value: e.value,
             label: e.title
@@ -318,11 +318,11 @@ function T(e) {
         }), ey && (0, i.jsx)(s.d, {
           label: C.intl.string(C.t["77VVd8"]),
           value: K,
-          options: null != (I = null == X || null == (L = X.features) || null == (T = L.filter(e => "" !== (0, P.pD)(e))) || null == (t = T.map(e => {
+          options: null != (I = null == X || null == (L = X.features) || null == (T = L.filter(e => "" !== (0, w.pD)(e))) || null == (t = T.map(e => {
             var t;
             return {
               label: null != (t = e.name) ? t : "",
-              value: (0, P.pD)(e)
+              value: (0, w.pD)(e)
             }
           })) ? true : t.sort((e, t) => e.label.localeCompare(t.label))) ? I : [],
           isDisabled: null == X,
@@ -353,11 +353,11 @@ function T(e) {
             label: C.intl.string(C.t.rEtxdg),
             placeholder: "Operating System Version",
             value: er,
-            onChange: e => ea(e)
+            onChange: e => el(e)
           }), (0, i.jsx)(d.oil, {
             label: C.intl.string(C.t["wy1M/t"]),
             placeholder: "Client Version",
-            value: el,
+            value: ea,
             onChange: e => eo(e)
           }), (0, i.jsx)(d.oil, {
             label: C.intl.string(C.t.f7kbVu),
@@ -384,10 +384,10 @@ function T(e) {
             ref: M,
             onChange: e => {
               var t, n;
-              (null == (n = e.currentTarget) || null == (t = n.files) ? true : t[0]) != null && Y([...U, ...Array.from(e.currentTarget.files).map(e => new f.ZP({
-                id: (0, a.Z)(),
+              (null == (n = e.currentTarget) || null == (t = n.files) ? true : t[0]) != null && Y([...U, ...Array.from(e.currentTarget.files).map(e => new p.ZP({
+                id: (0, l.Z)(),
                 file: e,
-                platform: f.ow.WEB,
+                platform: p.ow.WEB,
                 origin: "file_picker"
               }))])
             },
@@ -407,7 +407,7 @@ function T(e) {
                 }), (0, i.jsx)("div", {
                   className: E.removeAttachment,
                   children: (0, i.jsx)(x.ZP, {
-                    children: (0, i.jsx)(v.Z, {
+                    children: (0, i.jsx)(f.Z, {
                       tooltip: C.intl.string(C.t.vN7REz),
                       onClick: () => {
                         var t;

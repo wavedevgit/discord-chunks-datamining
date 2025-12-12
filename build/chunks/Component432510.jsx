@@ -46,20 +46,20 @@ function d(e, t) {
 
 function h(e, t) {
   let h = h => {
-    let f = async () => {
+    let g = async () => {
       await (0, o.yL)(e, h)
-    }, g = async t => await (0, o.RV)(e, h, t), m = n => {
+    }, m = async t => await (0, o.RV)(e, h, t), p = n => {
       let r = null == n ? true : n.token;
-      e === a.BM.MESSAGE ? (0, l.eE)(r, t) : e === a.BM.USER ? (0, l.JM)(r, t) : e === a.BM.GUILD ? (0, l.FO)(r, t) : e === a.BM.MEDIA_TAKEDOWN && (0, l.XY)(r, t)
+      e === l.BM.MESSAGE ? (0, a.eE)(r, t) : e === l.BM.USER ? (0, a.JM)(r, t) : e === l.BM.GUILD ? (0, a.FO)(r, t) : e === l.BM.MEDIA_TAKEDOWN && (0, a.XY)(r, t)
     };
-    f(), (0, s.ZDy)(async () => {
+    g(), (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("56499").then(n.bind(n, 433570));
       return t => (0, r.jsx)(e, d(u({}, t), {
-        onFormSubmit: g,
-        onResend: f,
-        onSuccess: m,
+        onFormSubmit: m,
+        onResend: g,
+        onSuccess: p,
         headerText: c.intl.string(c.t.H3Q7U8),
         confirmButtonText: c.intl.string(c.t["13ofGu"]),
         impression: {
@@ -79,7 +79,7 @@ function h(e, t) {
         onSuccess: h,
         headerText: c.intl.string(c.t.ZLRYGU),
         confirmButtonText: c.intl.string(c.t.PDTjLN),
-        helperText: e === a.BM.MEDIA_TAKEDOWN ? c.intl.string(c.t.jt3z8f) : true
+        helperText: e === l.BM.MEDIA_TAKEDOWN ? c.intl.string(c.t.jt3z8f) : true
       }))
     }, {
       onCloseCallback: t

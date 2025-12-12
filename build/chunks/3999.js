@@ -17,13 +17,13 @@ class u extends Chunk727916.Z {
   }
   innerExtract(e, t) {
     let n = t[l].toLowerCase(),
-      a = (0, r.RA)(t[c]);
+      o = (0, r.RA)(t[c]);
     switch (n) {
       case "vorig":
       case "afgelopen":
       case "-":
-        a = (0, o.de)(a)
+        o = (0, a.de)(o)
     }
-    return i.L.createRelativeFromReference(e.reference, a)
+    return i.L.createRelativeFromReference(e.reference, o)
   }
 }

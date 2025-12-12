@@ -1,7 +1,7 @@
-/** Chunk was on 92504 **/
+/** Chunk was on 69844 **/
 /** chunk id: 24746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 }), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,97 +13,97 @@ var Chunk54381 = require("./54381.js"),
   Chunk241209 = require("./241209.jsx"),
   Chunk547563 = require("./547563.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk300449 = require("./300449.js");
+  Chunk412850 = require("./412850.js");
 let h = o().parserFor(Chunk547563.Z),
-  f = o().reactFor(o().ruleOutput(Chunk547563.Z, "react"));
+  g = o().reactFor(o().ruleOutput(Chunk547563.Z, "react"));
 
-function g(e) {
+function f(e) {
   let {
     description: t,
     supportsMarkdown: n
-  } = e, [i, s] = r.useState(false), o = r.useRef(null);
-  r.useEffect(() => {
+  } = e, [a, s] = i.useState(false), o = i.useRef(null);
+  i.useEffect(() => {
     if (null == o.current) return;
     let e = new ResizeObserver(() => {
-      var e, t, n, a;
-      s((null != (n = null == (e = o.current) ? true : e.scrollHeight) ? n : 0) - (null != (a = null == (t = o.current) ? true : t.clientHeight) ? a : 0) > 1)
+      var e, t, n, r;
+      s((null != (n = null == (e = o.current) ? true : e.scrollHeight) ? n : 0) - (null != (r = null == (t = o.current) ? true : t.clientHeight) ? r : 0) > 1)
     });
     return e.observe(o.current), () => e.disconnect()
   }, []);
-  let [u, p] = r.useState(false), g = r.useCallback(() => {
+  let [u, p] = i.useState(false), f = i.useCallback(() => {
     p(e => !e)
   }, []);
-  return (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)("div", {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)("div", {
       ref: o,
       className: l()({
         [m.descriptionClamp]: !u,
         [m.descriptionClampSafari]: !u && "Safari" === platform.name
       }),
-      children: n ? (0, a.jsx)(d.Z, {
+      children: n ? (0, r.jsx)(d.Z, {
         className: m.detailedDescription,
         parser: h,
-        output: f,
+        output: g,
         state: {
           allowLinks: true
         },
         children: t
-      }) : (0, a.jsx)(c.Text, {
+      }) : (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
         color: "text-default",
         children: t
       })
-    }), i || u ? (0, a.jsx)(b, {
+    }), a || u ? (0, r.jsx)(_, {
       isShowingMore: u,
-      onToggle: g
+      onToggle: f
     }) : null]
   })
 }
 
-function b(e) {
+function _(e) {
   let {
     onToggle: t,
     isShowingMore: n
-  } = e, i = r.useMemo(() => (0, a.jsxs)("div", {
+  } = e, a = i.useMemo(() => (0, r.jsxs)("div", {
     className: m.showMoreContent,
-    children: [(0, a.jsx)(c.Text, {
+    children: [(0, r.jsx)(c.Text, {
       variant: "text-md/semibold",
       color: "interactive-text-default",
       children: n ? p.intl.string(p.t["vtfc4+"]) : p.intl.string(p.t.ZDRyuq)
-    }), n ? (0, a.jsx)(c.u04, {
+    }), n ? (0, r.jsx)(c.u04, {
       size: "md",
       color: "currentColor",
       className: m.showMoreButtonIcon
-    }) : (0, a.jsx)(c.CJ0, {
+    }) : (0, r.jsx)(c.CJ0, {
       size: "md",
       color: "currentColor",
       className: m.showMoreButtonIcon
     })]
   }), [n]);
-  return (0, a.jsxs)(c.P3F, {
+  return (0, r.jsxs)(c.P3F, {
     className: m.showMoreButton,
     onClick: t,
-    children: [(0, a.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: m.divider
-    }), i, (0, a.jsx)("div", {
+    }), a, (0, r.jsx)("div", {
       className: m.divider
     })]
   })
 }
-let x = function(e) {
+let b = function(e) {
   var t, n;
   let {
-    application: i
-  } = e, l = null == (t = i.directory_entry) ? true : t.detailed_description, s = null == (n = i.directory_entry) ? true : n.short_description, o = r.useMemo(() => null != l && l.length > 0 ? (0, a.jsx)(g, {
+    application: a
+  } = e, l = null == (t = a.directory_entry) ? true : t.detailed_description, s = null == (n = a.directory_entry) ? true : n.short_description, o = i.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(f, {
     description: l,
     supportsMarkdown: true
-  }) : null != s && s.length > 0 ? (0, a.jsx)(g, {
+  }) : null != s && s.length > 0 ? (0, r.jsx)(f, {
     description: s,
     supportsMarkdown: false
   }) : null, [l, s]);
-  return null == o ? null : (0, a.jsxs)("div", {
+  return null == o ? null : (0, r.jsxs)("div", {
     className: m.overviewContainer,
-    children: [(0, a.jsx)(c.Heading, {
+    children: [(0, r.jsx)(c.Heading, {
       variant: "heading-lg/semibold",
       color: "text-strong",
       children: p.intl.string(p.t.txraKS)

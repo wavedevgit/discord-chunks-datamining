@@ -1,9 +1,9 @@
-/** Chunk was on 48899 **/
+/** Chunk was on 87262 **/
 /** chunk id: 812613, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  NF: () => b,
-  Zk: () => f,
-  bb: () => u,
+  NF: () => g,
+  Zk: () => d,
+  bb: () => f,
   kV: () => p
 }), require("./415506.js"), require("./644351.js"), require("./146733.js"), require("./539854.js"), require("./17294.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./410992.js");
 var Chunk512722 = require("./512722.js"),
@@ -12,21 +12,21 @@ var Chunk512722 = require("./512722.js"),
   Chunk70956 = require("./70956.js"),
   Chunk208049 = require("./208049.js"),
   Chunk419202 = require("./419202.js");
-let d = null;
+let u = null;
 try {
   let e = (0, Chunk304809.N)();
   if (null == module) throw Error("Failed to create media audio context");
-  d = new AudioContext({
+  u = new AudioContext({
     sampleRate: Math.min(module.sampleRate, 48e3)
   })
 } catch (e) {}
-async function s(e) {
-  if (null == d) throw Error("Failed to create audio context");
+async function c(e) {
+  if (null == u) throw Error("Failed to create audio context");
   let n = await e.arrayBuffer();
   if (!(n instanceof ArrayBuffer)) throw Error("Unexpected file type");
-  return d.decodeAudioData(n)
+  return u.decodeAudioData(n)
 }
-async function f(e) {
+async function d(e) {
   var n;
   let t = await (n = n => {
     n.readAsDataURL(e)
@@ -40,7 +40,7 @@ async function f(e) {
   if ("string" != typeof t) throw Error("Unexpected file type");
   return t
 }
-async function u(e) {
+async function f(e) {
   let {
     readPromise: n,
     guildId: t,
@@ -104,7 +104,7 @@ async function h(e) {
     codec: "opus",
     sampleRate: e.sampleRate,
     numberOfChannels: e.numberOfChannels
-  }), o.encode(a), await o.flush(), new Blob([(0, c.Z)(n, {
+  }), o.encode(a), await o.flush(), new Blob([(0, s.Z)(n, {
     channelCount: e.numberOfChannels,
     inputSampleRate: e.sampleRate,
     outputGain: 0,
@@ -122,28 +122,28 @@ async function p(e, n) {
       sampleRate: r,
       numberOfChannels: o,
       duration: l
-    } = e, c = l * i.Z.Millis.SECOND, s = Math.min(a, c);
-    if (0 === t && s === c) return e;
-    if (null == d) throw Error("Failed to create audio context");
-    let f = Math.floor(t / c * e.length),
-      u = Math.floor(s / c * e.length),
-      h = d.createBuffer(o, u - f, r);
+    } = e, s = l * i.Z.Millis.SECOND, c = Math.min(a, s);
+    if (0 === t && c === s) return e;
+    if (null == u) throw Error("Failed to create audio context");
+    let d = Math.floor(t / s * e.length),
+      f = Math.floor(c / s * e.length),
+      h = u.createBuffer(o, f - d, r);
     for (let n = 0; n < o; n++) {
       let t = h.getChannelData(n),
         a = e.getChannelData(n),
         r = 0;
-      for (let e = f; e <= u; e++) t[r] = a[e], r++
+      for (let e = d; e <= f; e++) t[r] = a[e], r++
     }
     return h
-  }(await s(e), n);
+  }(await c(e), n);
   return new File([await h(t)], "sound.ogg", {
     type: "audio/ogg"
   })
 }
-async function b(e) {
+async function g(e) {
   let n = new File([e], "audio.mp4", {
       type: e.type
     }),
-    t = await s(n);
+    t = await c(n);
   return await h(t)
 }

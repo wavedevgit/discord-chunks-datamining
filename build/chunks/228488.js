@@ -2,7 +2,7 @@
 /** chunk id: 228488, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dj: () => o,
+  Dj: () => a,
   NO: () => c,
   Pr: () => s,
   fn: () => i,
@@ -13,14 +13,14 @@ var Chunk710845 = require("./710845.js");
 
 function i() {
   for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
-  return exports.find(e => null != e && a(e))
-}
-
-function a(e) {
-  return null != e.requestFullscreen || null != e.webkitRequestFullscreen || e.webkitSupportsFullscreen || null != e.mozRequestFullScreen || null != e.msRequestFullscreen
+  return exports.find(e => null != e && o(e))
 }
 
 function o(e) {
+  return null != e.requestFullscreen || null != e.webkitRequestFullscreen || e.webkitSupportsFullscreen || null != e.mozRequestFullScreen || null != e.msRequestFullscreen
+}
+
+function a(e) {
   "function" == typeof e.requestFullscreen ? e.requestFullscreen() : "function" == typeof e.webkitRequestFullscreen ? e.webkitRequestFullscreen() : "function" == typeof e.webkitEnterFullscreen ? e.webkitEnterFullscreen() : "function" == typeof e.mozRequestFullScreen ? e.mozRequestFullScreen() : "function" == typeof e.msRequestFullscreen ? e.msRequestFullscreen() : new r.Z("FullScreenUtils").warn("Fullscreen API is not supported.")
 }
 

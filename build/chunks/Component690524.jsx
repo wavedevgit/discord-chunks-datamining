@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk78839 = require("./78839.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk570810 = require("./570810.js");
+  Chunk616926 = require("./616926.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -106,11 +106,11 @@ let M = {
         isSubmitting: $,
         responseMessage: ee,
         redeemVirtualCurrency: et
-      } = (0, Chunk43747.f)(), [en, er] = Chunk473749.useState(Chunk981631.lds), [ei, ea] = Chunk473749.useState(""), [eo, es] = Chunk473749.useState(Chunk981631.lds);
+      } = (0, Chunk43747.f)(), [en, er] = Chunk473749.useState(Chunk981631.lds), [ei, eo] = Chunk473749.useState(""), [ea, es] = Chunk473749.useState(Chunk981631.lds);
       return (0, Chunk54381.jsx)(Chunk906732.Gt, {
         value: Y,
         children: (0, Chunk54381.jsx)(Chunk481060.zJl, {
-          className: Chunk570810.scroller,
+          className: Chunk616926.scroller,
           children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
             direction: "vertical",
             gap: 24,
@@ -256,7 +256,7 @@ let M = {
               }, e), {
                 disabled: B,
                 onClick: () => {
-                  window.open(N.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + a.stringify(D({}, Z)))
+                  window.open(N.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + o.stringify(D({}, Z)))
                 }
               }))
             }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsxs)(Chunk481060.C3N, {
@@ -269,12 +269,12 @@ let M = {
                   variant: "text-sm/normal",
                   children: "Virtual Currency Balance:"
                 }), X ? (0, Chunk54381.jsx)("div", {
-                  className: Chunk570810.loader,
+                  className: Chunk616926.loader,
                   children: (0, Chunk54381.jsx)(Chunk481060.$jN, {
                     type: Chunk481060.RAz.SPINNING_CIRCLE
                   })
                 }) : (0, Chunk54381.jsxs)("div", {
-                  className: Chunk570810.balanceWidgetPillContainer,
+                  className: Chunk616926.balanceWidgetPillContainer,
                   children: [null !== J && (0, Chunk54381.jsxs)(Chunk481060.Text, {
                     variant: "text-sm/normal",
                     children: ["Error fetching Virtual Currency Balance: ", J.message]
@@ -357,19 +357,19 @@ let M = {
                     hideLabel: true,
                     placeholder: "Application Id",
                     value: ei,
-                    onChange: ea
+                    onChange: eo
                   }), (0, Chunk54381.jsx)(Chunk481060.oil, {
                     label: "SKU ID",
                     hideLabel: true,
                     placeholder: "SKU ID",
-                    value: eo,
+                    value: ea,
                     onChange: e => es(e)
                   }), (0, Chunk54381.jsx)(Chunk481060.Button, {
                     variant: "primary",
                     text: "Open Standard Payment Modal for SKU",
                     onClick: () => (0, Chunk87484.Z)({
                       applicationId: ei,
-                      skuId: eo,
+                      skuId: ea,
                       analyticsLocations: Y
                     })
                   })]

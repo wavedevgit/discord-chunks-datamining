@@ -19,7 +19,7 @@ var Chunk473749 = require("./473749.js"),
 
 function f(e, t, n, d) {
   let f = e.guildId === c.X8,
-    p = (0, a.e7)([o.default], () => s.ZP.canUseSoundboardEverywhere(o.default.getCurrentUser())),
+    p = (0, o.e7)([a.default], () => s.ZP.canUseSoundboardEverywhere(a.default.getCurrentUser())),
     _ = (0, l.V2)({
       location: "useSoundmojiGuildInfoData"
     }),

@@ -2,8 +2,8 @@
 /** chunk id: 164946, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ED: () => a,
-  Jo: () => o,
+  ED: () => o,
+  Jo: () => a,
   g9: () => i,
   jE: () => s
 }), require("./953529.js");
@@ -18,7 +18,7 @@ function i(e) {
   return t
 }
 
-function a(e) {
+function o(e) {
   let t = {};
   if (true !== e.pendingGlobalName && (t.globalName = e.pendingGlobalName), true !== e.pendingNameplate && (t.nameplate = e.pendingNameplate), true !== e.pendingAvatar) {
     let {
@@ -29,7 +29,7 @@ function a(e) {
   return true !== e.pendingAvatarDecoration && (t.avatarDecoration = e.pendingAvatarDecoration), true !== e.pendingDisplayNameStyles && (t.displayNameStyles = e.pendingDisplayNameStyles), t
 }
 
-function o(e) {
+function a(e) {
   let t = {};
   if (true !== e.pendingAvatar) {
     let {

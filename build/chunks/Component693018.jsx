@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk176354 = require("./176354.js"),
   Chunk830960 = require("./830960.js"),
   Chunk612776 = require("./612776.js"),
-  Chunk905796 = require("./905796.js");
+  Chunk148550 = require("./148550.js");
 let _ = 256,
   m = 512,
   h = 70,
@@ -75,22 +75,22 @@ function L(e, t, n, r, s) {
     i.bindBuffer(i.ARRAY_BUFFER, b), w(i);
     let y = i.createBuffer();
     i.bindBuffer(i.ARRAY_BUFFER, y), D(i);
-    let O = a.c$(60),
+    let O = o.c$(60),
       v = () => {
         if (null == i || null == e) return;
         i.viewport(0, 0, i.canvas.width, i.canvas.height), i.enable(i.CULL_FACE), i.enable(i.DEPTH_TEST);
-        let t = a.c$(r.current),
-          l = a.c$(s.current);
+        let t = o.c$(r.current),
+          l = o.c$(s.current);
         i.clear(i.COLOR_BUFFER_BIT | i.DEPTH_BUFFER_BIT), i.useProgram(d), i.enableVertexAttribArray(f), i.bindBuffer(i.ARRAY_BUFFER, b), i.vertexAttribPointer(f, 3, i.FLOAT, false, 0, 0), i.enableVertexAttribArray(p), i.bindBuffer(i.ARRAY_BUFFER, y), i.vertexAttribPointer(p, 2, i.FLOAT, false, 0, 0);
         let c = e.clientWidth / e.clientHeight,
-          u = o.G3(o.Ue(), O, c, 1, 2e3),
-          h = o.zB(o.Ue(), S, T, I),
-          E = o.Jp(o.Ue(), u, h),
-          C = o.Ue();
-        o.lM(C, C, t), o.uD(C, C, l);
-        let A = o.Jp(o.Ue(), E, C),
-          N = o.Ue();
-        o.U_(N, C), o.p4(N, N), i.uniformMatrix4fv(g, false, N), i.uniformMatrix4fv(_, false, A), i.uniform1i(m, 0), i.drawArrays(i.TRIANGLES, 0, 36), n = requestAnimationFrame(v)
+          u = a.G3(a.Ue(), O, c, 1, 2e3),
+          h = a.zB(a.Ue(), S, T, I),
+          E = a.Jp(a.Ue(), u, h),
+          C = a.Ue();
+        a.lM(C, C, t), a.uD(C, C, l);
+        let A = a.Jp(a.Ue(), E, C),
+          N = a.Ue();
+        a.U_(N, C), a.p4(N, N), i.uniformMatrix4fv(g, false, N), i.uniformMatrix4fv(_, false, A), i.uniform1i(m, 0), i.drawArrays(i.TRIANGLES, 0, 36), n = requestAnimationFrame(v)
       };
     return n = requestAnimationFrame(v), () => cancelAnimationFrame(n)
   }, [r, s, e, t])
@@ -99,12 +99,12 @@ function L(e, t, n, r, s) {
 function j(e) {
   let {
     emoji: t
-  } = e, [n, a] = i.useState(null), [o, S] = i.useState(null), I = i.useRef(new Image), [T, C] = i.useState(null), [A, N] = i.useState(false), P = i.useRef(0), R = i.useRef(0), w = d.E[f.yD.EMOJIS], D = (0, l.dQu)(w.primaryColor).hex(), x = i.useRef(E), j = i.useRef(b), M = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), k = M ? 0 : h, U = M ? 0 : g, G = i.useRef(k), Z = i.useRef(U), F = i.useRef(false), B = i.useRef(0), V = i.useRef(0);
-  L(n, o, T, x, j);
+  } = e, [n, o] = i.useState(null), [a, S] = i.useState(null), I = i.useRef(new Image), [T, C] = i.useState(null), [A, N] = i.useState(false), P = i.useRef(0), R = i.useRef(0), w = d.E[f.yD.EMOJIS], D = (0, l.dQu)(w.primaryColor).hex(), x = i.useRef(E), j = i.useRef(b), M = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), k = M ? 0 : h, U = M ? 0 : g, G = i.useRef(k), Z = i.useRef(U), F = i.useRef(false), B = i.useRef(0), V = i.useRef(0);
+  L(n, a, T, x, j);
   let H = i.useCallback(() => {
-    let e = null == o ? true : o.getContext("2d");
-    null != o && null != e && (e.fillStyle = "black", e.fillRect(0, 0, o.width, o.height), e.drawImage(I.current, 0, 0, o.width, o.height), e.fillStyle = D, e.fillRect(0, 0, o.width, v), e.fillRect(0, 0, v, o.height), e.fillRect(0, o.height - v, o.width, v), e.fillRect(o.width - v, 0, v, o.height), C(t), N(true))
-  }, [t, I, D, o]);
+    let e = null == a ? true : a.getContext("2d");
+    null != a && null != e && (e.fillStyle = "black", e.fillRect(0, 0, a.width, a.height), e.drawImage(I.current, 0, 0, a.width, a.height), e.fillStyle = D, e.fillRect(0, 0, a.width, v), e.fillRect(0, 0, v, a.height), e.fillRect(0, a.height - v, a.width, v), e.fillRect(a.width - v, 0, v, a.height), C(t), N(true))
+  }, [t, I, D, a]);
   i.useEffect(() => {
     C(null), I.current.crossOrigin = "anonymous", I.current.src = (0, u.qc)(t, _), I.current.onload = H, I.current.complete && H()
   }, [t, H, I]), i.useEffect(() => {
@@ -142,7 +142,7 @@ function j(e) {
   }), [W, K]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("canvas", {
       className: A ? p.visibleCanvas : p.invisible,
-      ref: a,
+      ref: o,
       height: m,
       width: m,
       onMouseDown: Y

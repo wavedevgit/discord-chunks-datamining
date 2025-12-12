@@ -57,9 +57,9 @@ var Chunk365702 = require("./365702.js"),
   S = function(e, t) {
     var n = e.text,
       i = e.entityRanges,
-      a = e.inlineStyleRanges,
-      o = i || [];
-    return d(p(n, a || []), f(n, o.filter(function(e) {
+      o = e.inlineStyleRanges,
+      a = i || [];
+    return d(p(n, o || []), f(n, a.filter(function(e) {
       return t.hasOwnProperty(e.key)
     }).map(function(e) {
       return r({}, e, {
@@ -81,12 +81,12 @@ var Chunk365702 = require("./365702.js"),
     return e.concat(i.reverse())
   },
   C = function(e, t) {
-    return e.map(I).reduce(function(n, i, a) {
+    return e.map(I).reduce(function(n, i, o) {
       Array.isArray(i.children) || g(false);
       var s = i.children.map(I),
-        l = new o(r({}, v(i, t), {
-          prevSibling: 0 === a ? null : e[a - 1].key,
-          nextSibling: a === e.length - 1 ? null : e[a + 1].key,
+        l = new a(r({}, v(i, t), {
+          prevSibling: 0 === o ? null : e[o - 1].key,
+          nextSibling: o === e.length - 1 ? null : e[o + 1].key,
           children: b(s.map(function(e) {
             return e.key
           }))
@@ -103,7 +103,7 @@ var Chunk365702 = require("./365702.js"),
           break
         }
         var m = u.children.map(I),
-          h = new o(r({}, v(u, t), {
+          h = new a(r({}, v(u, t), {
             parent: d.getKey(),
             children: b(m.map(function(e) {
               return e.key
@@ -118,7 +118,7 @@ var Chunk365702 = require("./365702.js"),
   },
   A = function(e, t) {
     return O(e.map(function(e) {
-      var n = new a(v(e, t));
+      var n = new o(v(e, t));
       return [n.getKey(), n]
     }))
   },
@@ -135,9 +135,9 @@ var Chunk365702 = require("./365702.js"),
     return Object.keys(t).forEach(function(e) {
       var r = t[e],
         i = r.type,
-        a = r.mutability,
-        o = r.data;
-      n[e] = l.__create(i, a, o || {})
+        o = r.mutability,
+        a = r.data;
+      n[e] = l.__create(i, o, a || {})
     }), n
   };
 module.exports = function(e) {

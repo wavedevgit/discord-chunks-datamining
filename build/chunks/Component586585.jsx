@@ -15,7 +15,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk563132 = require("./563132.jsx"),
   Chunk612853 = require("./612853.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk849195 = require("./849195.js");
+  Chunk42207 = require("./42207.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -63,7 +63,7 @@ let E = e => {
       primaryIcon: t,
       primaryCTA: n,
       primaryType: i,
-      primaryText: a,
+      primaryText: o,
       primaryDisabled: s,
       primarySubmitting: l,
       onPrimary: c
@@ -76,11 +76,11 @@ let E = e => {
         className: f.primaryIcon
       }),
       loading: l,
-      text: a
+      text: o
     };
-    return 2 === n ? (0, r.jsx)(o.zxk, _({
+    return 2 === n ? (0, r.jsx)(a.zxk, _({
       variant: "expressive"
-    }, u)) : (0, r.jsx)(o.zxk, h(_({}, u), {
+    }, u)) : (0, r.jsx)(a.zxk, h(_({}, u), {
       variant: 0 === n ? "primary" : "active"
     }))
   },
@@ -109,14 +109,14 @@ let E = e => {
         primarySubmitting: O,
         onPrimary: v
       };
-      return null != b ? (0, r.jsx)(a.u, {
+      return null != b ? (0, r.jsx)(o.u, {
         text: b,
         asContainer: true,
         children: (0, r.jsx)(E, _({}, e))
       }) : (0, r.jsx)(E, h(_({}, e), {
         onPrimary: v
       }))
-    }, T = () => null == t ? null : (0, r.jsx)(o.Avr, {
+    }, T = () => null == t ? null : (0, r.jsx)(a.Avr, {
       text: null != n ? n : d.intl.string(d.t["13/7kX"]),
       onClick: t,
       variant: "secondary"

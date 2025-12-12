@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk894186 = require("./894186.js"),
   Chunk727916 = require("./727916.js"),
   Chunk424046 = require("./424046.js");
-let o = 1,
+let a = 1,
   s = 2;
 class l extends Chunk727916.Z {
   innerPattern() {
@@ -16,7 +16,7 @@ class l extends Chunk727916.Z {
   innerExtract(e, t) {
     let n = e.refDate,
       i = e.createParsingComponents();
-    switch ("deze" === t[o] && (i.assign("day", e.refDate.getDate()), i.assign("month", e.refDate.getMonth() + 1), i.assign("year", e.refDate.getFullYear())), t[s].toLowerCase()) {
+    switch ("deze" === t[a] && (i.assign("day", e.refDate.getDate()), i.assign("month", e.refDate.getMonth() + 1), i.assign("year", e.refDate.getFullYear())), t[s].toLowerCase()) {
       case "namiddag":
       case "'s namiddags":
         i.imply("meridiem", r.GG.PM), i.imply("hour", 15);
@@ -27,7 +27,7 @@ class l extends Chunk727916.Z {
         break;
       case "middernacht":
         let l = new Date(n.getTime());
-        l.setDate(l.getDate() + 1), (0, a.cz)(i, l), (0, a.hO)(i, l), i.imply("hour", 0), i.imply("minute", 0), i.imply("second", 0);
+        l.setDate(l.getDate() + 1), (0, o.cz)(i, l), (0, o.hO)(i, l), i.imply("hour", 0), i.imply("minute", 0), i.imply("second", 0);
         break;
       case "ochtend":
       case "'s ochtends":

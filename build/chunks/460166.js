@@ -20,10 +20,10 @@ class l extends Error {
 function c(e, t, n) {
   let r = {};
   if ("string" == typeof e) return f(r, e, n), r;
-  let [i, a] = u(e, t), o = f(r, i, n);
-  if (a) {
-    let i = f(r, a, n);
-    o || i || (delete r._raw, f(r, d(e, t), n))
+  let [i, o] = u(e, t), a = f(r, i, n);
+  if (o) {
+    let i = f(r, o, n);
+    a || i || (delete r._raw, f(r, d(e, t), n))
   }
   return r
 }
@@ -38,9 +38,9 @@ function d(e, t) {
   let n = new Uint8Array(t.reduce((e, t) => e + t.length, 0)),
     r = 0;
   for (let i = 0; i < t.length; i++) {
-    let a = t[i],
-      o = e.buffer.slice(a.dataOffset, a.dataOffset + a.length);
-    n.set(new Uint8Array(o), r), r += a.length
+    let o = t[i],
+      a = e.buffer.slice(o.dataOffset, o.dataOffset + o.length);
+    n.set(new Uint8Array(a), r), r += o.length
   }
   return new DataView(n.buffer)
 }
@@ -49,18 +49,18 @@ function f(e, t, n) {
   try {
     let {
       doc: i,
-      raw: a
+      raw: o
     } = p(t, n);
-    e._raw = (e._raw || "") + a;
-    let o = h(i);
-    return (0, r.wB)(e, T(g(o, true))), true
+    e._raw = (e._raw || "") + o;
+    let a = h(i);
+    return (0, r.wB)(e, T(g(a, true))), true
   } catch (e) {
     returnfalse
   }
 }
 
 function p(e, t) {
-  let n = a.Z.get(t);
+  let n = o.Z.get(t);
   if (!n) throw console.warn("Warning: DOMParser is not available. It is needed to be able to parse XMP tags."), Error();
   let i = "string" == typeof e ? e : (0, r.oH)(e, 0, e.byteLength);
   return {
@@ -80,7 +80,7 @@ function m(e, t, n = false) {
     if (r.length > 0) throw new l(r[0].textContent);
     return n
   } catch (r) {
-    if ("ParseError" === r.name && (0, o.U)(r) && !n) return m(e, (0, o.v)(t), true);
+    if ("ParseError" === r.name && (0, a.U)(r) && !n) return m(e, (0, a.v)(t), true);
     throw r
   }
 }

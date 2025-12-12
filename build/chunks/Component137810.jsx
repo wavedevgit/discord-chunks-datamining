@@ -19,7 +19,7 @@ var Chunk481060 = require("./481060.js"),
 function p(e) {
   let {
     analyticsLocations: t
-  } = (0, a.ZP)();
+  } = (0, o.ZP)();
   return (0, r.jsx)(i.sNh, {
     id: "video-settings",
     label: f.intl.string(f.t.LKzQSF),
@@ -29,7 +29,7 @@ function p(e) {
         section: u.oAB.VOICE,
         subsection: d.gP,
         analyticsLocations: t
-      }), (0, o.i)(e, e === u.IlC.POPOUT)
+      }), (0, a.i)(e, e === u.IlC.POPOUT)
     },
     icon: i.ewm
   })

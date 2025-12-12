@@ -10,18 +10,18 @@ var Chunk481060 = require("./481060.js"),
   Chunk739566 = require("./739566.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk882409 = require("./882409.js");
+  Chunk519824 = require("./519824.js");
 
 function c(e) {
   let {
     message: t,
     compact: n,
     usernameHook: c
-  } = e, u = (0, a.ZP)(t), d = c(u), f = s.intl.format(s.t["dKW5C+"], {
+  } = e, u = (0, o.ZP)(t), d = c(u), f = s.intl.format(s.t["dKW5C+"], {
     username: u.nick,
     usernameHook: d
   });
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     className: l.stageSystemMessage,
     iconNode: (0, r.jsx)(i.Lrb, {
       size: "md",

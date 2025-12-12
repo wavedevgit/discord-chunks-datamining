@@ -3,13 +3,13 @@
 "use strict";
 require.d(exports, {
   A: () => s,
-  S: () => o
+  S: () => a
 });
 var Chunk663993 = require("./663993.js"),
   Chunk618541 = require("./618541.js"),
   Chunk981631 = require("./981631.js");
 
-function o() {
+function a() {
   return (0, Chunk663993.wE)({
     createPromise: () => require.e("85468").then(require.t.bind(require, 91438, 23)),
     webpackId: 91438
@@ -23,13 +23,13 @@ function o() {
 
 function s() {
   let e = Chunk618541.Z.getClient();
-  return null == module ? o().then(e => e.client.create({
-    authorization: a.Ai1.BRAINTREE.KEY
+  return null == module ? a().then(e => e.client.create({
+    authorization: o.Ai1.BRAINTREE.KEY
   }).then(e => l(e)).catch(() => null)) : l(module)
 }
 
 function l(e) {
-  return o().then(t => t.dataCollector.create({
+  return a().then(t => t.dataCollector.create({
     client: e
   }).then(e => e.deviceData).catch(() => null))
 }

@@ -13,12 +13,12 @@ function i() {
   }).apply(this, arguments)
 }
 
-function a(e) {
+function o(e) {
   if (true === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
   return e
 }
 
-function o(e, t) {
+function a(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
 
@@ -51,9 +51,9 @@ var Chunk175469 = require("./175469.js"),
 module.exports = function(e) {
   function t() {
     for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-    return s(a(t = e.call.apply(e, [this].concat(r)) || this), "_node", true), t
+    return s(o(t = e.call.apply(e, [this].concat(r)) || this), "_node", true), t
   }
-  o(t, e);
+  a(t, e);
   var n = t.prototype;
   return n.shouldComponentUpdate = function(e) {
     return this.props.block !== e.block || this.props.tree !== e.tree || this.props.direction !== e.direction || S(e.selection, e.block.getKey()) && e.forceSelection
@@ -65,11 +65,11 @@ module.exports = function(e) {
         var r = this._node;
         if (null != r) {
           var i = f.getScrollParent(r),
-            a = g(i);
+            o = g(i);
           if (i === window) {
-            var o = h(r);
-            (e = o.y + o.height - E().height) > 0 && window.scrollTo(a.x, a.y + e + v)
-          } else y(r) || b(false), (e = r.offsetHeight + r.offsetTop - (i.offsetTop + i.offsetHeight + a.y)) > 0 && d.setTop(i, d.getTop(i) + e + v)
+            var a = h(r);
+            (e = a.y + a.height - E().height) > 0 && window.scrollTo(o.x, o.y + e + v)
+          } else y(r) || b(false), (e = r.offsetHeight + r.offsetTop - (i.offsetTop + i.offsetHeight + o.y)) > 0 && d.setTop(i, d.getTop(i) + e + v)
         }
       }
     }
@@ -78,8 +78,8 @@ module.exports = function(e) {
       t = this.props.block,
       n = t.getKey(),
       r = t.getText(),
-      a = this.props.tree.size - 1,
-      o = S(this.props.selection, n);
+      o = this.props.tree.size - 1,
+      a = S(this.props.selection, n);
     return this.props.tree.map(function(s, d) {
       var f = s.get("leaves");
       if (0 === f.size) return null;
@@ -93,13 +93,13 @@ module.exports = function(e) {
             offsetKey: f,
             block: t,
             start: p,
-            selection: o ? e.props.selection : null,
+            selection: a ? e.props.selection : null,
             forceSelection: e.props.forceSelection,
             text: r.slice(p, _),
             styleSet: t.getInlineStyleAt(p),
             customStyleMap: e.props.customStyleMap,
             customStyleFn: e.props.customStyleFn,
-            isLast: d === a && s === m
+            isLast: d === o && s === m
           })
         }).toArray(),
         g = s.get("decoratorKey");

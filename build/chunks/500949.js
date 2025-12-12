@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 500949, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $R: () => q,
@@ -228,22 +228,22 @@ function er(e) {
     outputSpace: o,
     space: o,
     progression: e => e ** s
-  }), f = (0, D.w6)(u, c, {
+  }), x = (0, D.w6)(u, c, {
     steps: p,
     outputSpace: o,
     space: o,
     progression: e => e ** s
-  }), x = [];
+  }), f = [];
   for (let e = 0; e < m; e++) {
     let t = h(e / m);
-    x.push(t)
+    f.push(t)
   }
-  x.push(c);
+  f.push(c);
   for (let e = 1; e < p; e++) {
-    let t = f(1 - e / p);
-    x.push(t)
+    let t = x(1 - e / p);
+    f.push(t)
   }
-  return Object.fromEntries(x.map((e, n) => ["".concat(t, "-").concat(n), e]))
+  return Object.fromEntries(f.map((e, n) => ["".concat(t, "-").concat(n), e]))
 }
 
 function ei(e, t, n) {

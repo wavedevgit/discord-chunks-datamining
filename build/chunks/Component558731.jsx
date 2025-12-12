@@ -23,13 +23,13 @@ function s(e) {
     let e = d();
     e instanceof Promise && (p(true), e.finally(() => p(false)))
   }, [d]), m = s(), h = null == l ? true : l(), g = n(), E = null == c ? true : c(), b = null == u ? true : u();
-  return (0, r.jsx)(o.X, {
-    children: (0, r.jsx)(a.gNt, {
+  return (0, r.jsx)(a.X, {
+    children: (0, r.jsx)(o.gNt, {
       label: m,
       description: h,
       disabled: b,
       layout: "horizontal",
-      children: (0, r.jsx)(a.Button, {
+      children: (0, r.jsx)(o.Button, {
         onClick: _,
         text: g,
         variant: E,

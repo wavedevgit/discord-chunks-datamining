@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   _j: () => i,
-  jG: () => o,
-  v6: () => a
+  jG: () => a,
+  v6: () => o
 });
 var Chunk570140 = require("./570140.js");
 
@@ -15,7 +15,7 @@ function i(e) {
   })
 }
 
-function a(e) {
+function o(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
   return r.Z.dispatch({
     type: "VOICE_FILTER_REQUEST_SWITCH",
@@ -24,7 +24,7 @@ function a(e) {
   })
 }
 
-function o() {
+function a() {
   Chunk570140.Z.dispatch({
     type: "VOICE_FILTER_PREFETCH"
   })

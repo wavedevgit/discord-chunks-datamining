@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 473121, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => d
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,17 +9,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk454585 = require("./454585.js"),
   Chunk273744 = require("./273744.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk316515 = require("./316515.js");
-let c = e => {
+  Chunk204800 = require("./204800.js");
+let d = e => {
   let {
     node: {
       header: t,
       subheader: n,
-      button: c
+      button: d
     },
     isModeratorReport: u,
     isTidaReport: m = false
-  } = e, b = (null == c ? true : c.type) === "submit", p = l.useMemo(() => {
+  } = e, p = (null == d ? true : d.type) === "submit", g = l.useMemo(() => {
     var e, t;
     return a.Z.reactParserFor((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -52,7 +52,7 @@ let c = e => {
     }), e))
   }, []);
   return (0, r.jsxs)("div", {
-    className: d.headerContainer,
+    className: c.headerContainer,
     children: [null != t && "" !== t ? (0, r.jsx)(i.Heading, {
       variant: "heading-xl/semibold",
       color: "text-strong",
@@ -60,8 +60,8 @@ let c = e => {
     }) : null, null != n && "" !== t ? (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      children: p(n)
-    }) : null, b && !u && !m && (0, r.jsx)(i.Text, {
+      children: g(n)
+    }) : null, p && !u && !m && (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: o.intl.format(o.t.Q0tSKT, {})
     })]

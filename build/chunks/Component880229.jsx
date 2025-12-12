@@ -33,7 +33,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk686807 = require("./686807.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk903907 = require("./903907.js");
+  Chunk161270 = require("./161270.js");
 let z = (0, Chunk313201.hQ)(),
   E = (0, Chunk313201.hQ)(),
   O = (0, Chunk624138.Mg)(Chunk477690.Z.IMPORT_BENEFITS_MODAL_ROLE_ICON_SIZE);
@@ -44,7 +44,7 @@ function P(e) {
     emojiId: n,
     emojiName: l,
     className: r
-  } = e, o = (0, c.e7)([g.ZP], () => null != n ? g.ZP.getCustomEmojiById(n) : true);
+  } = e, o = (0, a.e7)([f.ZP], () => null != n ? f.ZP.getCustomEmojiById(n) : true);
   return (0, i.jsx)(u.Z, {
     emojiId: n,
     emojiName: l,
@@ -60,10 +60,10 @@ function R(e) {
     checked: l,
     disabled: r = false,
     onChange: s
-  } = e, c = l || r;
+  } = e, a = l || r;
   return (0, i.jsxs)("label", {
     className: o()(M.row, {
-      [M.checked]: c,
+      [M.checked]: a,
       [M.disabled]: r
     }),
     children: [(0, i.jsx)("div", {
@@ -77,7 +77,7 @@ function R(e) {
       children: [(0, i.jsx)(m.tEY, {
         children: (0, i.jsx)("input", {
           type: "checkbox",
-          checked: c,
+          checked: a,
           disabled: r,
           className: M.checkboxInput,
           onChange: function(e) {
@@ -105,7 +105,7 @@ function L(e) {
     dupeBenefits: r,
     selectedBenefits: o,
     onToggleBenefit: s
-  } = e, c = l.every(e => o.has(e));
+  } = e, a = l.every(e => o.has(e));
   return l.length > 0 ? (0, i.jsxs)("div", {
     className: M.section,
     children: [(0, i.jsx)(m.Heading, {
@@ -120,7 +120,7 @@ function L(e) {
           color: "currentColor",
           className: M.rowIcon
         }),
-        checked: c,
+        checked: a,
         onChange: function(e) {
           for (let t of l) r.has(t) || s(t, e)
         },
@@ -161,9 +161,9 @@ function D(e) {
     fromSubscriptionListing: n,
     existingChannelBenefits: r,
     existingIntangibleBenefits: o,
-    onSubmit: c,
+    onSubmit: a,
     onClose: d
-  } = e, u = n.role_benefits.benefits, [x, h] = l.useState(() => new Set(u)), f = l.useMemo(() => u.filter(k.rC), [u]), g = (0, T.Z)(f), j = l.useMemo(() => u.filter(k.lL), [u]), b = l.useMemo(() => new Set(g.filter(e => r.some(t => t.ref_id === e.ref_id))), [g, r]), p = l.useMemo(() => new Set(j.filter(e => o.some(t => (0, a.Z)(e, t)))), [o, j]);
+  } = e, u = n.role_benefits.benefits, [x, h] = l.useState(() => new Set(u)), g = l.useMemo(() => u.filter(k.rC), [u]), f = (0, T.Z)(g), j = l.useMemo(() => u.filter(k.lL), [u]), p = l.useMemo(() => new Set(f.filter(e => r.some(t => t.ref_id === e.ref_id))), [f, r]), _ = l.useMemo(() => new Set(j.filter(e => o.some(t => (0, c.Z)(e, t)))), [o, j]);
 
   function v(e, t) {
     h(n => {
@@ -172,13 +172,13 @@ function D(e) {
     })
   }
 
-  function C(e) {
+  function b(e) {
     e.preventDefault();
     let t = u.filter(e => x.has(e));
-    c(t.filter(k.rC).filter(e => !b.has(e)), t.filter(k.lL).filter(e => !p.has(e))), d()
+    a(t.filter(k.rC).filter(e => !p.has(e)), t.filter(k.lL).filter(e => !_.has(e))), d()
   }
   return (0, i.jsx)("form", {
-    onSubmit: C,
+    onSubmit: b,
     children: (0, i.jsxs)(s.Modal, {
       transitionState: t,
       onClose: d,
@@ -193,23 +193,23 @@ function D(e) {
         variant: "primary",
         text: B.intl.string(B.t["27a21y"]),
         disabled: 0 === x.size,
-        onClick: C
+        onClick: b
       }],
-      children: [0 === g.length && 0 === j.length && (0, i.jsx)(m.Text, {
+      children: [0 === f.length && 0 === j.length && (0, i.jsx)(m.Text, {
         variant: "text-md/normal",
         children: B.intl.string(B.t["I+16xv"])
       }), (0, i.jsx)(L, {
         title: B.intl.string(B.t.S2kKzP),
         selectAllText: B.intl.string(B.t["5Q/fLO"]),
-        benefits: g,
-        dupeBenefits: b,
+        benefits: f,
+        dupeBenefits: p,
         selectedBenefits: x,
         onToggleBenefit: v
       }), (0, i.jsx)(L, {
         title: B.intl.string(B.t.RdwKw7),
         selectAllText: B.intl.string(B.t.aJPLVE),
         benefits: j,
-        dupeBenefits: p,
+        dupeBenefits: _,
         selectedBenefits: x,
         onToggleBenefit: v
       })]
@@ -234,7 +234,7 @@ function H(e) {
     onClick: o,
     children: [(0, i.jsx)("div", {
       className: M.rowIconWrapper,
-      children: null != s ? (0, i.jsx)(b.Z, function(e) {
+      children: null != s ? (0, i.jsx)(p.Z, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -285,17 +285,17 @@ function F(e) {
   let {
     guild: t,
     onSelect: n
-  } = e, r = (0, c.e7)([w.Z], () => w.Z.getSortedRoles(t.id)), o = (0, c.e7)([C.Z], () => C.Z.getCategories(t.id)), s = l.useMemo(() => o._categories.flatMap(e => o[e.channel.id].filter(e => {
+  } = e, r = (0, a.e7)([C.Z], () => C.Z.getSortedRoles(t.id)), o = (0, a.e7)([b.Z], () => b.Z.getCategories(t.id)), s = l.useMemo(() => o._categories.flatMap(e => o[e.channel.id].filter(e => {
     let {
       channel: t
     } = e;
-    return p.zS.has(t.type)
+    return _.zS.has(t.type)
   }).map(e => {
     let {
       channel: t
     } = e;
     return t
-  })), [o]), a = l.useMemo(() => r.flatMap(e => {
+  })), [o]), c = l.useMemo(() => r.flatMap(e => {
     var t;
     if ((0, v.fI)(e) || (null == (t = e.tags) ? true : t.subscription_listing_id) != null || (0, v._N)(e, Z.TC2)) return [];
     let n = (0, S.Z)(s, e).length;
@@ -304,9 +304,9 @@ function F(e) {
       channelCount: n
     } : []
   }), [r, s]);
-  return a.length > 0 ? (0, i.jsx)("div", {
+  return c.length > 0 ? (0, i.jsx)("div", {
     className: M.list,
-    children: a.map(e => (0, i.jsx)(H, {
+    children: c.map(e => (0, i.jsx)(H, {
       guildId: t.id,
       role: e.role,
       channelCount: e.channelCount,
@@ -323,7 +323,7 @@ function G(e) {
     onClose: t,
     guildId: n,
     onSelect: l
-  } = e, r = (0, c.e7)([_.Z], () => _.Z.getGuild(n));
+  } = e, r = (0, a.e7)([w.Z], () => w.Z.getGuild(n));
   return null == r ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(m.xBx, {
       "data-migration-pending": true,
@@ -354,16 +354,16 @@ function W(e) {
     role: r,
     onCancel: o,
     onImport: s
-  } = e, c = l.useRef(r);
-  null != r && (c.current = r);
-  let a = null != r ? r : c.current,
+  } = e, a = l.useRef(r);
+  null != r && (a.current = r);
+  let c = null != r ? r : a.current,
     d = (0, x.Z)(() => {
-      let e = C.Z.getCategories(n);
+      let e = b.Z.getCategories(n);
       return e._categories.flatMap(t => e[t.channel.id].filter(e => {
         let {
           channel: t
         } = e;
-        return p.zS.has(t.type)
+        return _.zS.has(t.type)
       }).map(e => {
         let {
           channel: t
@@ -371,18 +371,18 @@ function W(e) {
         return t
       }))
     }),
-    u = l.useMemo(() => (0, S.Z)(d, a), [d, a]),
-    [f, g] = l.useState(() => new Set(u.map(e => e.id)));
+    u = l.useMemo(() => (0, S.Z)(d, c), [d, c]),
+    [g, f] = l.useState(() => new Set(u.map(e => e.id)));
 
   function j(e, t) {
-    g(n => {
+    f(n => {
       let i = new Set(n);
       return t ? i.add(e) : i.delete(e), i
     })
   }
   return (0, i.jsxs)("form", {
     onSubmit: function(e) {
-      e.preventDefault(), s(u.map(e => e.id).filter(e => f.has(e))), t()
+      e.preventDefault(), s(u.map(e => e.id).filter(e => g.has(e))), t()
     },
     className: M.slideForm,
     children: [(0, i.jsxs)(m.xBx, {
@@ -391,7 +391,7 @@ function W(e) {
         id: E,
         variant: "heading-md/semibold",
         children: B.intl.format(B.t.iuPodG, {
-          roleName: a.name
+          roleName: c.name
         })
       }), (0, i.jsx)(m.olH, {
         "data-migration-pending": true,
@@ -408,7 +408,7 @@ function W(e) {
             size: "md",
             color: "currentColor"
           }),
-          checked: f.size === u.length,
+          checked: g.size === u.length,
           onChange: function(e) {
             for (let t of u) j(t.id, e)
           },
@@ -433,7 +433,7 @@ function W(e) {
                 height: "100%"
               })
             }),
-            checked: f.has(e.id),
+            checked: g.has(e.id),
             onChange: t => j(e.id, t),
             children: (0, i.jsx)(m.Text, {
               color: "text-strong",
@@ -468,7 +468,7 @@ function A(e) {
     guildId: n,
     onClose: r,
     onImport: o
-  } = e, [s, c] = l.useState();
+  } = e, [s, a] = l.useState();
   return (0, i.jsx)(m.Y0X, {
     "data-migration-pending": true,
     transitionState: t,
@@ -483,7 +483,7 @@ function A(e) {
         children: (0, i.jsx)(G, {
           onClose: r,
           guildId: n,
-          onSelect: c
+          onSelect: a
         })
       }), (0, i.jsx)(m.Mi4, {
         id: 1,
@@ -491,7 +491,7 @@ function A(e) {
           onClose: r,
           guildId: n,
           role: s,
-          onCancel: () => c(true),
+          onCancel: () => a(true),
           onImport: o
         })
       })]

@@ -1,7 +1,7 @@
 /** Chunk was on 69208 **/
-/** chunk id: 490166, original params: e,t,n (module,exports,require) **/
+/** chunk id: 490166, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => h
 }), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,42 +11,42 @@ var Chunk54381 = require("./54381.js"),
   Chunk13140 = require("./13140.js"),
   Chunk487029 = require("./487029.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk362961 = require("./362961.js");
+  Chunk71661 = require("./71661.js");
 
-function b(e) {
+function h(t) {
   let {
-    guildId: t,
-    channel: b,
-    keybind: h,
-    transitionState: y,
+    guildId: e,
+    channel: h,
+    keybind: y,
+    transitionState: b,
     onClose: k
-  } = e, p = a.useCallback(async () => {
-    (0, o.Kw)(o.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL), await k()
-  }, [k]), f = a.useCallback(async () => {
-    await p(), (0, c.ZDy)(async () => {
+  } = t, p = r.useCallback(async () => {
+    (0, s.Kw)(s.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL), await k()
+  }, [k]), f = r.useCallback(async () => {
+    await p(), (0, o.ZDy)(async () => {
       let {
-        default: e
+        default: t
       } = await n.e("58120").then(n.bind(n, 355453));
-      return t => (0, i.jsx)(e, function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
+      return e => (0, i.jsx)(t, function(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {},
             i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+            return Object.getOwnPropertyDescriptor(n, t).enumerable
+          }))), i.forEach(function(e) {
             var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
+            i = n[e], e in t ? Object.defineProperty(t, e, {
               value: i,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = i
+            }) : t[e] = i
           })
         }
-        return e
-      }({}, t))
+        return t
+      }({}, e))
     })
-  }, [p]), j = a.useMemo(() => [{
+  }, [p]), j = r.useMemo(() => [{
     variant: "secondary",
     text: d.intl.string(d.t.TJ0N99),
     onClick: f
@@ -55,34 +55,34 @@ function b(e) {
     onClick: p,
     variant: "primary"
   }], [f, p]);
-  return (0, i.jsxs)(r.Modal, {
+  return (0, i.jsxs)(a.Modal, {
     onClose: p,
     actions: j,
-    transitionState: y,
+    transitionState: b,
     title: d.intl.string(d.t.yJeV51),
-    children: [(0, i.jsx)(c.Text, {
+    children: [(0, i.jsx)(o.Text, {
       variant: "text-md/normal",
       children: d.intl.format(d.t.fq3Swz, {
-        keybind: (0, s.BB)(h.shortcut, true).split(" + "),
-        keybindHook: (e, t) => (0, i.jsx)("span", {
+        keybind: (0, c.BB)(y.shortcut, true).split(" + "),
+        keybindHook: (t, e) => (0, i.jsx)("span", {
           className: u.keybindHintKeys,
-          children: (0, i.jsx)(c.M2$, {
+          children: (0, i.jsx)(o.M2$, {
             className: u.keybindShortcut,
-            shortcut: (0, s.BB)(h.shortcut, false)
+            shortcut: (0, c.BB)(y.shortcut, false)
           })
-        }, t),
-        openSettingsHook: (e, t) => (0, i.jsx)(c.Anchor, {
+        }, e),
+        openSettingsHook: (t, e) => (0, i.jsx)(o.Anchor, {
           onClick: f,
-          children: e
-        }, t)
+          children: t
+        }, e)
       })
     }), (0, i.jsx)("div", {
       className: u.soundWheel,
       children: (0, i.jsx)(l.Z, {
         width: 372,
         height: 316,
-        guildId: t,
-        channel: b,
+        guildId: e,
+        channel: h,
         interactive: false,
         keepOpen: true,
         onClose: () => {},

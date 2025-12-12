@@ -10,7 +10,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk935369 = require("./935369.js"),
   Chunk53365 = require("./53365.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk69901 = require("./69901.js"),
+  Chunk65618 = require("./65618.js"),
   Chunk490962 = require("./490962.js");
 
 function u(t) {
@@ -19,10 +19,10 @@ function u(t) {
     body: s
   } = t;
   return (0, r.jsxs)("div", {
-    className: o.bulletItem,
+    className: c.bulletItem,
     children: [(0, r.jsx)("img", {
       alt: "",
-      className: o.bulletImage,
+      className: c.bulletImage,
       src: d
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(n.Text, {
@@ -44,7 +44,7 @@ function x(t) {
   let {
     guildId: e,
     demonetized: s,
-    transitionState: o,
+    transitionState: c,
     onClose: d
   } = t, [x, {
     loading: m,
@@ -57,18 +57,18 @@ function x(t) {
   };
   return (0, r.jsx)(l.Modal, {
     size: "md",
-    transitionState: o,
+    transitionState: c,
     actions: [{
       variant: "secondary",
       onClick: d,
-      text: c.intl.string(c.t.Jj8nUC)
+      text: o.intl.string(o.t.Jj8nUC)
     }, {
       variant: "primary",
       loading: m,
       onClick: p,
-      text: c.intl.string(c.t["pC/ozD"])
+      text: o.intl.string(o.t["pC/ozD"])
     }],
-    title: c.intl.string(c.t.TP4GSt),
+    title: o.intl.string(o.t.TP4GSt),
     onClose: d,
     preview: (0, r.jsxs)(r.Fragment, {
       children: [null == h ? null : (0, r.jsxs)(n.Text, {
@@ -78,22 +78,22 @@ function x(t) {
       }), (0, r.jsx)(n.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: c.intl.format(c.t["+oNl6x"], {
+        children: o.intl.format(o.t["+oNl6x"], {
           termsURL: "https://support.discord.com/hc/en-us/articles/5330075836311-Creator-Pilot-Terms"
         })
       })]
     }),
-    subtitle: c.intl.format(c.t.c0IsON, {
+    subtitle: o.intl.format(o.t.c0IsON, {
       termsURL: "https://support.discord.com/hc/en-us/articles/5330075836311-Creator-Pilot-Terms"
     }),
     children: (0, r.jsxs)(n.Kqy, {
       gap: 16,
       children: [(0, r.jsx)(u, {
-        header: c.intl.string(c.t.UzDaWD),
-        body: c.intl.string(c.t.IDk8Fz)
+        header: o.intl.string(o.t.UzDaWD),
+        body: o.intl.string(o.t.IDk8Fz)
       }), (0, r.jsx)(u, {
-        header: c.intl.string(c.t["36/RiT"]),
-        body: c.intl.string(c.t.CBzNtr)
+        header: o.intl.string(o.t["36/RiT"]),
+        body: o.intl.string(o.t.CBzNtr)
       })]
     })
   })

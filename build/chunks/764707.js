@@ -36,10 +36,10 @@ let u = 50,
   f = (e, t) => {
     let n = e.toRgb(),
       r = t.toRgb(),
-      [a, o, l] = (0, s.J2)([n.r, n.g, n.b], [r.r, r.g, r.b], u);
+      [o, a, l] = (0, s.J2)([n.r, n.g, n.b], [r.r, r.g, r.b], u);
     return i()({
-      r: a,
-      g: o,
+      r: o,
+      g: a,
       b: l
     })
   },
@@ -72,16 +72,16 @@ let u = 50,
     let {
       h: n,
       s: r,
-      l: a
+      l: o
     } = e.toHsl();
     return i()({
       h: n,
       s: r * t,
-      l: a
+      l: o
     })
   },
   h = e => t => {
-    let n = (0, a.e7)([o.Z], () => o.Z.saturation);
+    let n = (0, o.e7)([a.Z], () => a.Z.saturation);
     if (null == t) return {};
     let r = {
       backgroundColors: p(e, t.backgroundColors),

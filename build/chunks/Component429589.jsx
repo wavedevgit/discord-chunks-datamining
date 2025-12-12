@@ -36,8 +36,8 @@ function c(e, t) {
   if (null == e) return {};
   var n, r, i = u(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -45,8 +45,8 @@ function c(e, t) {
 function u(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -60,7 +60,7 @@ function d(e) {
     variant: f = "secondary",
     size: p = "sm"
   } = e, _ = c(e, ["activity", "embeddedActivity", "user", "onAction", "location", "variant", "size"]);
-  let m = (0, o.e)({
+  let m = (0, a.e)({
     activity: null != t ? t : true,
     embeddedActivity: n,
     user: s,
@@ -77,7 +77,7 @@ function d(e) {
   } = m;
   return (0, r.jsx)(i.u, {
     text: b,
-    children: (0, r.jsx)(a.Button, l({
+    children: (0, r.jsx)(o.Button, l({
       variant: f,
       size: p,
       text: E,

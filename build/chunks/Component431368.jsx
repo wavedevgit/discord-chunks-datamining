@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 431368, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -14,13 +14,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e, t) {
-  let [n, d, p] = (0, o.Z)(e, t), f = (0, r.e7)([a.ZP], () => a.ZP.disableHideSelfStreamAndVideoConfirmationAlert);
+  let [n, d, p] = (0, o.Z)(e, t), h = (0, r.e7)([a.ZP], () => a.ZP.disableHideSelfStreamAndVideoConfirmationAlert);
   return n ? (0, i.jsx)(l.S89, {
     id: "self-stream-hide",
     label: u.intl.string(u.t.aol7iW),
     checked: !d,
     action: () => {
-      if (f || d) return p(!d);
+      if (h || d) return p(!d);
       (0, l.h7j)(e => {
         var t, n;
         return (0, i.jsx)(s.Z, (t = function(e) {

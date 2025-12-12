@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 62764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => H
@@ -38,16 +38,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk228392 = require("./228392.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk162085 = require("./162085.js"),
-  Chunk519576 = require("./519576.js"),
-  Chunk860302 = require("./860302.js"),
-  Chunk414103 = require("./414103.js");
+  Chunk964721 = require("./964721.js"),
+  Chunk319720 = require("./319720.js"),
+  Chunk127947 = require("./127947.js"),
+  Chunk577650 = require("./577650.js");
 
 function B(e) {
   let {
     channel: t
-  } = e, l = t.isArchivedThread(), a = (0, j.P0)(t), [o, c] = r.useState(false), d = () => {
-    c(true), E.Z.resolveFlag(t.id).then(() => {
+  } = e, l = t.isArchivedThread(), a = (0, E.P0)(t), [o, c] = r.useState(false), d = () => {
+    c(true), x.Z.resolveFlag(t.id).then(() => {
       c(false)
     })
   };
@@ -56,7 +56,7 @@ function B(e) {
     variant: "secondary",
     text: l ? D.intl.string(k.default["2Y4vkk"]) : D.intl.string(k.default.YIbR4r),
     onClick: () => {
-      true === s.K.get(_.F) ? d() : (0, u.ZDy)(async () => {
+      true === s.K.get(S.F) ? d() : (0, u.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 5101));
@@ -86,9 +86,9 @@ function H(e) {
     isLastItem: l = false,
     parentChannelId: s
   } = e, {
-    ref: E,
-    width: j
-  } = (0, f.ZP)(), [_, k] = r.useState(3), [H, G] = r.useState(!n), [z, W] = (0, h.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
+    ref: x,
+    width: E
+  } = (0, h.ZP)(), [S, k] = r.useState(3), [H, G] = r.useState(!n), [z, W] = (0, f.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
     firstMessage: K
   } = (0, M.cl)(q), Y = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
     disableReactionUpdates: X,
@@ -96,7 +96,7 @@ function H(e) {
     isLurking: Q,
     isGuest: $,
     isPendingMember: ee
-  } = (0, C.Z)(q), et = (0, S.nw)(q), en = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), ei = (0, w.Bs)(en), er = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), el = r.useCallback(e => {
+  } = (0, C.Z)(q), et = (0, j.nw)(q), en = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), ei = (0, w.Bs)(en), er = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), el = r.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -105,7 +105,7 @@ function H(e) {
     }
   }, [n]);
   r.useLayoutEffect(() => {
-    let e = E.current;
+    let e = x.current;
     if (null == e || !n) return;
     let t = new IntersectionObserver(el, {
       threshold: 1
@@ -116,8 +116,8 @@ function H(e) {
   });
   let [ea, eo] = r.useState(true);
   if (r.useEffect(() => {
-      null != j && (k(Math.floor((j - 280) / 58)), eo(false))
-    }, [j]), null == q || null == K) return null;
+      null != E && (k(Math.floor((E - 280) / 58)), eo(false))
+    }, [E]), null == q || null == K) return null;
   let es = K.reactions.length > 0,
     ec = () => {
       (0, R.B)({
@@ -133,7 +133,7 @@ function H(e) {
       className: a()(U.container, {
         [U.header]: H
       }),
-      ref: E,
+      ref: x,
       children: [et ? (0, i.jsx)("div", {
         className: U.reportedMessageActions,
         children: (0, i.jsx)(P.Z, {
@@ -146,7 +146,7 @@ function H(e) {
         }),
         children: [!es && !J && null != ei && (0, i.jsx)("div", {
           className: V.reactions,
-          children: (0, i.jsx)(x.le, {
+          children: (0, i.jsx)(O.le, {
             message: K,
             readOnly: false,
             useChatFontScaling: false,
@@ -162,7 +162,7 @@ function H(e) {
             me_burst: false,
             emojiSize: "reaction"
           })
-        }), (0, i.jsx)(O.Z, {
+        }), (0, i.jsx)(_.Z, {
           message: K,
           channel: q,
           disableReactionCreates: true,
@@ -170,7 +170,7 @@ function H(e) {
           isLurking: Q,
           isGuest: $,
           isPendingMember: ee,
-          maxReactions: _,
+          maxReactions: S,
           className: U.reactions,
           useChatFontScaling: false,
           isForumToolbar: true,

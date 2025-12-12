@@ -36,10 +36,10 @@ function j(e) {
     } = (0, d.JL)(),
     k = (0, l.Z)(g.i),
     {
-      createMultipleConfettiAt: w
+      createMultipleConfettiAt: _
     } = r.useContext(o.h),
-    Z = null != (t = null == N ? true : N.name) ? t : "",
-    _ = () => {
+    w = null != (t = null == N ? true : N.name) ? t : "",
+    Z = () => {
       O(), null == C || C()
     },
     A = P === m.h8.CONFIRM,
@@ -49,41 +49,41 @@ function j(e) {
     }) : null;
   return y ? k ? j = (0, i.jsx)(u.h, {
     title: x.intl.format(x.t.ea6tZr, {
-      tierName: Z
+      tierName: w
     }),
     subtitle: null != E && E.benefits.length > 0 ? x.intl.formatToPlainString(x.t.HNepft, {
       benefits: I
     }) : null,
-    onConfirm: _,
+    onConfirm: Z,
     confirmCta: x.intl.string(x.t.nlkywz)
   }) : (j = null != E && null != T ? (0, i.jsx)(c.Oc, {
     icon: E.thumbnail,
     storeListingBenefits: E.benefits,
     application: T,
     title: x.intl.format(x.t["Q+qktS"], {
-      tier: Z
+      tier: w
     }),
     subtitle: x.intl.string(x.t.ECKxXU),
     description: D ? x.intl.format(x.t["MAtQk/"], {
       applicationName: null == T ? true : T.name
     }) : x.intl.format(x.t.vHkMF4, {
-      tier: Z
+      tier: w
     })
-  }) : (0, i.jsx)(p.Z, {}), v = (0, i.jsx)(f.Z, {
-    onPrimary: _,
-    primaryCTA: f.g.CONTINUE,
+  }) : (0, i.jsx)(f.Z, {}), v = (0, i.jsx)(p.Z, {
+    onPrimary: Z,
+    primaryCTA: p.g.CONTINUE,
     primaryText: x.intl.string(x.t["JtWl+a"])
   })) : j = k ? (0, i.jsx)(u.m, {
-    tierName: Z,
-    onConfirm: _,
+    tierName: w,
+    onConfirm: Z,
     subscription: S
   }) : (0, i.jsx)(c.xe, {
-    tierName: Z,
-    onConfirm: _,
+    tierName: w,
+    onConfirm: Z,
     subscription: S
   }), r.useEffect(() => {
-    a.Z.useReducedMotion && A && w(window.innerWidth / 2, window.innerHeight / 2)
-  }, [w, A]), (0, i.jsxs)(i.Fragment, {
+    a.Z.useReducedMotion && A && _(window.innerWidth / 2, window.innerHeight / 2)
+  }, [_, A]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(b.C3, {
       children: [(0, i.jsx)(h.Z, {}), j]
     }), null != v && (0, i.jsx)(b.O3, {

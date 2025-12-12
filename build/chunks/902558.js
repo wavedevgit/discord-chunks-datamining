@@ -52,17 +52,17 @@ function _(e) {
 }
 
 function m(e) {
-  let t = e.userId === o.default.getId(),
+  let t = e.userId === a.default.getId(),
     n = null != e.streamId,
-    a = null;
+    o = null;
   switch (e.context) {
     case i.Yn.DEFAULT:
-      a = t ? r.X4.IsSendingVideo : r.X4.IsReceivingVideo;
+      o = t ? r.X4.IsSendingVideo : r.X4.IsReceivingVideo;
       break;
     case i.Yn.STREAM:
-      a = t ? r.X4.IsSendingStream : r.X4.IsReceivingStream
+      o = t ? r.X4.IsSendingStream : r.X4.IsReceivingStream
   }
-  s.ZP.setCrashInformation(a, +!!n)
+  s.ZP.setCrashInformation(o, +!!n)
 }
 class h extends Chunk147913.Z {
   constructor(...e) {

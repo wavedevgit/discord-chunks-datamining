@@ -45,10 +45,10 @@ function _(e) {
 function m(e, t) {
   let n = [];
   return n.push({
-    type: o.MO.STICKER_NAME,
+    type: a.MO.STICKER_NAME,
     value: e.name.trim().toLocaleLowerCase()
   }), null != t && n.push({
-    type: o.MO.PACK_NAME,
+    type: a.MO.PACK_NAME,
     value: t.name
   }), n
 }

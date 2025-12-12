@@ -17,12 +17,12 @@ function i(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 
-function a(e, t) {
+function o(e, t) {
   if (!e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
   return t && ("object" == typeof t || "function" == typeof t) ? t : e
 }
 
-function o(e, t) {
+function a(e, t) {
   if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
   e.prototype = Object.create(t && t.prototype, {
     constructor: {
@@ -36,10 +36,10 @@ function o(e, t) {
 module.exports = function(e) {
   function t() {
     i(this, t);
-    var e = a(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
+    var e = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
     return e._children = [], e
   }
-  return o(t, e), r(t, [{
+  return a(t, e), r(t, [{
     key: "__addChild",
     value: function(e) {
       0 === this._children.length && this.__attach(), this._children.push(e)

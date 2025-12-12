@@ -14,7 +14,7 @@ var Chunk915009 = require("./915009.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk372807 = require("./372807.js");
+  Chunk435757 = require("./435757.js");
 
 function p() {
   let e = Chunk695346.JT.useSetting(),
@@ -28,9 +28,9 @@ function p() {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUESTS_PRIVACY_CONTROLS)
       }),
       value: !module,
-      onChange: e => o.JT.updateSetting(!e),
+      onChange: e => a.JT.updateSetting(!e),
       disabled: exports || require,
-      tooltipText: require ? Chunk388032.intl.string(Chunk372807.default["6Af/cw"]) : true
+      tooltipText: require ? Chunk388032.intl.string(Chunk435757.default["6Af/cw"]) : true
     })
   })
 }

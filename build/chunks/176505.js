@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   $x: () => c,
-  AB: () => a,
+  AB: () => o,
   EC: () => f,
   HY: () => d,
   ME: () => s,
-  Qk: () => o,
+  Qk: () => a,
   Vg: () => i,
   Z7: () => u,
   oC: () => r,
@@ -18,11 +18,11 @@ var r = function(e) {
 }({});
 let i = new Set(Object.values(r));
 
-function a(e) {
+function o(e) {
   return i.has(e)
 }
 
-function o(e, t) {
+function a(e, t) {
   return "".concat(e, "-").concat(t)
 }
 

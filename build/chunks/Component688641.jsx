@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 688641, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk761589 = require("./761589.js");
+  Chunk367390 = require("./367390.js");
 
 function d(e) {
   let {
@@ -19,8 +19,8 @@ function d(e) {
     icon: l,
     title: d,
     description: p,
-    userCount: f,
-    onClick: h,
+    userCount: h,
+    onClick: f,
     highlight: m,
     onDismiss: g
   } = e, b = r.useCallback(e => {
@@ -30,7 +30,7 @@ function d(e) {
     className: a()(u.container, t, null != m && {
       [u.pulse]: m
     }),
-    onClick: h,
+    onClick: f,
     children: [(0, i.jsx)("div", {
       className: a()(u.icon, n),
       children: l
@@ -45,7 +45,7 @@ function d(e) {
         color: "text-strong",
         className: u.inline,
         children: p
-      }), null != f && f > 0 ? (0, i.jsxs)(i.Fragment, {
+      }), null != h && h > 0 ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-strong",
@@ -56,7 +56,7 @@ function d(e) {
           color: "text-strong",
           className: u.inline,
           children: c.intl.format(c.t.NywdIj, {
-            count: f
+            count: h
           })
         })]
       }) : null]

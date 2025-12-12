@@ -24,8 +24,8 @@ let f = {};
 class p {
   static ensure(e, t, n) {
     var r, i;
-    let a = "".concat(e, ":").concat(t.name, ":").concat(null != (r = t.id) ? r : "", ":").concat(n);
-    return f[a] = null != (i = f[a]) ? i : new p
+    let o = "".concat(e, ":").concat(t.name, ":").concat(null != (r = t.id) ? r : "", ":").concat(n);
+    return f[o] = null != (i = f[o]) ? i : new p
   }
   constructor() {
     d(this, "users", true), d(this, "fetched", true), this.fetched = false, this.users = new Map
@@ -42,12 +42,12 @@ function m(e) {
     messageId: n,
     userId: r,
     emoji: i,
-    reactionType: a
-  } = e, o = p.ensure(n, i, a);
+    reactionType: o
+  } = e, a = p.ensure(n, i, o);
   if ("MESSAGE_REACTION_ADD" === t) {
     let e = u.default.getUser(r);
-    null != e && o.users.set(r, e)
-  } else o.users.delete(r)
+    null != e && a.users.set(r, e)
+  } else a.users.delete(r)
 }
 
 function h(e) {
@@ -56,28 +56,28 @@ function h(e) {
     users: n,
     emoji: r,
     reactionType: i
-  } = e, a = p.ensure(t, r, i);
-  n.forEach(e => a.users.set(e.id, new l.Z(e)))
+  } = e, o = p.ensure(t, r, i);
+  n.forEach(e => o.users.set(e.id, new l.Z(e)))
 }
 class g extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk41776.Z, Chunk594174.default)
   }
   getReactions(e, t, n, r, i) {
-    let a = p.ensure(t, n, i);
-    if (!a.fetched) {
+    let o = p.ensure(t, n, i);
+    if (!o.fetched) {
       let l = c.Z.getChannel(e),
         u = null != l ? l.getGuildId() : null;
-      if (null != u && o.Z.isLurking(u)) return;
+      if (null != u && a.Z.isLurking(u)) return;
       s.U0({
         channelId: e,
         messageId: t,
         emoji: n,
         limit: r,
         type: i
-      }), a.fetched = true
+      }), o.fetched = true
     }
-    return a.users
+    return o.users
   }
 }
 d(g, "displayName", "MessageReactionsStore");

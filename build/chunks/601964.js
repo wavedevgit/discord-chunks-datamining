@@ -64,7 +64,7 @@ let c = "Guild",
 function f(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = arguments.length > 3 && true !== arguments[3] && arguments[3];
-  return a.ZP.getGuildIconURL({
+  return o.ZP.getGuildIconURL({
     id: e.id,
     size: t,
     icon: e.icon,
@@ -91,7 +91,7 @@ function h(e) {
 }
 
 function g(e) {
-  return o.default.castGuildIdAsEveryoneGuildRoleId(e.id)
+  return a.default.castGuildIdAsEveryoneGuildRoleId(e.id)
 }
 
 function E(e, t) {

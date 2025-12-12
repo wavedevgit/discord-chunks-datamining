@@ -10,7 +10,7 @@ var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
   Chunk55935 = require("./55935.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,7 +44,7 @@ class y {
     return this._index[t.unix()]
   }
   _createLabel(e) {
-    return (0, a.vc)(e.locale(i().locale()), this.labelFormat)
+    return (0, o.vc)(e.locale(i().locale()), this.labelFormat)
   }
   _generateTimeOptions() {
     this.options = [], this._index = {};
@@ -105,7 +105,7 @@ class y {
     intervalInMinutes: e = h,
     labelFormat: t = g
   } = {}) {
-    if (o(this, "intervalInMinutes", true), o(this, "labelFormat", true), o(this, "options", []), o(this, "_index", {}), e <= 0) throw Error("intervalInMinutes should be positive number, got ".concat(e));
+    if (a(this, "intervalInMinutes", true), a(this, "labelFormat", true), a(this, "options", []), a(this, "_index", {}), e <= 0) throw Error("intervalInMinutes should be positive number, got ".concat(e));
     this.intervalInMinutes = e, this.labelFormat = t, this._generateTimeOptions()
   }
 }

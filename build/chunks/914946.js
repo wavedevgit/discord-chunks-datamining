@@ -134,7 +134,7 @@ function V(e) {
   let t = p.Z.parseToAST(e.content, true, {
       channelId: e.channel_id
     }).map(U),
-    n = b.Z.getChannel(e.channel_id),
+    n = _.Z.getChannel(e.channel_id),
     r = null != e.author ? new m.Z(e.author) : true,
     i = null != e.author ? (0, f.ij)(r, n) : true;
   return {
@@ -219,7 +219,7 @@ function W(e) {
 }
 
 function q(e, t, n) {
-  let r = _.Z.getGuild(e.getGuildId());
+  let r = b.Z.getGuild(e.getGuildId());
   return (null != r ? r.application_id : e.getApplicationId()) === t || n.indexOf(a.x.MESSAGES_READ) > false
 }
 

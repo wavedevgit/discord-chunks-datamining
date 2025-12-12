@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk952265 = require("./952265.js"),
   Chunk481060 = require("./481060.js"),
@@ -48,11 +48,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk987650 = require("./987650.js"),
   Chunk757744 = require("./757744.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk784686 = require("./784686.js");
+  Chunk977594 = require("./977594.js");
 let K = !Chunk358085.isPlatformEmbedded && false,
   X = K ? (0, Chunk54381.jsx)(Chunk70097.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
-    className: Chunk784686.videoDev,
+    className: Chunk977594.videoDev,
     autoPlay: true,
     loop: true,
     muted: true
@@ -107,9 +107,9 @@ let $ = Chunk473749.memo(function(e) {
       keybind: t,
       onClick: n,
       locked: r
-    } = e, l = (0, w.T_)(h.Z.OVERLAY);
+    } = e, l = (0, w.T_)(p.Z.OVERLAY);
     return (0, i.jsx)(c.P3F, {
-      className: a()(Q.overlayBackground, {
+      className: o()(Q.overlayBackground, {
         [Q.overlayActive]: !r,
         [Q.overlayLocked]: r
       }),
@@ -125,7 +125,7 @@ let $ = Chunk473749.memo(function(e) {
       children: r ? null : (0, i.jsxs)(D.Z, {
         className: Q.topRightContainer,
         children: [l ? (0, i.jsx)(P.Z, {
-          onClick: () => (0, U.N)(h.Z.OVERLAY, Y.IlC.OVERLAY),
+          onClick: () => (0, U.N)(p.Z.OVERLAY, Y.IlC.OVERLAY),
           IconComponent: c.U65
         }) : null, (0, i.jsx)(P.Z, {
           keybind: t,
@@ -155,42 +155,42 @@ function et() {
 
 function en(e) {
   let t = z.Z.isInputLocked(M.Z.getTargetPID());
-  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? C.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? I.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: true
-  }) : "keydown" === e.type.toLowerCase() && C.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  }) : "keydown" === e.type.toLowerCase() && I.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: false
   }))
 }
 
 function ei() {
   return (0, Chunk442837.e7)([Chunk338949.Z], () => Chunk338949.Z.hasRenderDebugMode(Chunk837268.GO.WindowContainer)) ? (0, Chunk54381.jsx)("div", {
-    className: Chunk784686.windowContainerDebug
+    className: Chunk977594.windowContainerDebug
   }) : null
 }
 
 function er(e) {
   let {
     isEmbeddedActivity: t
-  } = e, n = (0, F.Z)(), l = (0, o.e7)([M.Z], () => M.Z.getTargetPID()), {
+  } = e, n = (0, F.Z)(), l = (0, a.e7)([M.Z], () => M.Z.getTargetPID()), {
     locked: u,
     focused: m,
-    incompatibleApp: j,
+    incompatibleApp: C,
     hasZeroSizeDimension: N,
     keybind: P
-  } = (0, o.cj)([M.Z, x.default, I.Z, S.ZP, z.Z], () => {
-    let e = I.Z.windowSize((0, Z.ZY)(n)),
-      t = S.ZP.getOverlayKeybind();
+  } = (0, a.cj)([M.Z, S.default, x.Z, _.ZP, z.Z], () => {
+    let e = x.Z.windowSize((0, Z.ZY)(n)),
+      t = _.ZP.getOverlayKeybind();
     return {
       locked: z.Z.isInputLocked(l),
       focused: M.Z.isFocused(l),
-      incompatibleApp: x.default.incompatibleApp,
+      incompatibleApp: S.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
-      keybind: null != t ? (0, _.BB)(t.shortcut, true) : "???"
+      keybind: null != t ? (0, j.BB)(t.shortcut, true) : "???"
     }
   }, [n, l]), {
     analyticsLocations: D
-  } = (0, p.ZP)(h.Z.OVERLAY);
-  (0, f.ZP)(() => {
+  } = (0, f.ZP)(p.Z.OVERLAY);
+  (0, h.ZP)(() => {
     (0, w.F3)()
   }),
   function(e, t) {
@@ -212,49 +212,49 @@ function er(e) {
     n.removeEventListener("keydown", en), n.removeEventListener("keyup", en)
   });
   let V = r.useRef(null);
-  return (0, f.ZP)(() => {
+  return (0, h.ZP)(() => {
     let e = (0, W.pL)(),
-      t = E.Z.getVoiceChannelId(),
-      n = y.Z.getChannel(t),
-      i = null != n ? O.Z.getGuild(n.guild_id) : null,
-      r = null != b.Z.getCurrentUserActiveStream(),
+      t = b.Z.getVoiceChannelId(),
+      n = O.Z.getChannel(t),
+      i = null != n ? v.Z.getGuild(n.guild_id) : null,
+      r = null != y.Z.getCurrentUserActiveStream(),
       l = null != t,
-      a = (0, g.Z)(v.Z) && !r && null != e,
-      o = l && null != i && null != t,
+      o = (0, g.Z)(E.Z) && !r && null != e,
+      a = l && null != i && null != t,
       s = M.Z.getTargetPID();
     if (R.default.hasChangedRenderMode(s)) return;
     let c = L.Z.isNotificationDisabled(H.n0.WelcomeNudge),
       u = L.Z.isNotificationDisabled(H.n0.GoLiveNudge),
-      f = L.Z.isNotificationDisabled(H.n0.ActivityInvite),
-      h = [];
-    !c && (h.push({
+      h = L.Z.isNotificationDisabled(H.n0.ActivityInvite),
+      p = [];
+    !c && (p.push({
       type: H.nc.WELCOME
-    }), !u && (a && o ? h.push({
+    }), !u && (o && a ? p.push({
       type: H.nc.GO_LIVE_VOICE,
       game: e,
       voiceChannelId: t,
       voiceGuild: i
-    }) : a && h.push({
+    }) : o && p.push({
       type: H.nc.GO_LIVE_NON_VOICE,
       game: e
-    })), f || h.push({
+    })), h || p.push({
       type: H.nc.CONTENT_INVENTORY,
       entries: []
     })), null != V.current && clearTimeout(V.current), V.current = setTimeout(() => {
-      d.Z.overlayMounted(...h)
+      d.Z.overlayMounted(...p)
     }, 1e3)
-  }), (0, f.zq)(() => {
+  }), (0, h.zq)(() => {
     null != V.current && (clearTimeout(V.current), V.current = null)
   }), r.useEffect(() => {
-    if (C.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+    if (I.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: true
       }), u) return (0, s.closeAllModalsInContext)(c.u1M), n.addEventListener("contextmenu", J, false), () => {
       n.removeEventListener("contextmenu", J, false)
     };
     n.removeEventListener("contextmenu", J, false)
-  }, [u, n]), (0, i.jsx)(p.Gt, {
+  }, [u, n]), (0, i.jsx)(f.Gt, {
     value: D,
-    children: N || j ? null : (0, i.jsxs)("div", {
+    children: N || C ? null : (0, i.jsxs)("div", {
       id: "overlay-container",
       className: Q.overlay,
       children: [!t && X, (0, i.jsx)($, {
@@ -262,7 +262,7 @@ function er(e) {
         keybind: P,
         onClick: et
       }), (0, i.jsx)(k.Z, {
-        className: a()({
+        className: o()({
           [Q.layoutLocked]: u,
           [Q.layoutUnlocked]: !u
         })

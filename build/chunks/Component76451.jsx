@@ -1,14 +1,14 @@
-/** Chunk was on 193 **/
+/** Chunk was on 9456 **/
 /** chunk id: 76451, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => I,
-  _: () => O
+  Z: () => P,
+  _: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk467721 = require("./467721.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -24,33 +24,33 @@ var Chunk54381 = require("./54381.js"),
   Chunk127654 = require("./127654.js"),
   Chunk228392 = require("./228392.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk736897 = require("./736897.js");
-let T = {
+  Chunk104010 = require("./104010.js");
+let y = {
     scale: .95,
     opacity: 0
+  },
+  T = {
+    scale: 1,
+    opacity: 1
   },
   w = {
     scale: 1,
     opacity: 1
   },
   S = {
-    scale: 1,
-    opacity: 1
-  },
-  N = {
     tension: 2400,
     friction: 52
   };
 
-function O(e) {
+function N(e) {
   let {
     channelId: t,
     onClick: n,
-    onClose: i,
+    onClose: l,
     onMouseEnter: s
-  } = e, u = r.useRef(null), m = (0, o.e7)([g.Z], () => g.Z.getChannel(t), [t]);
-  return l()(null != m, "Forum Channel is null"), (0, a.jsxs)(c.P3F, {
-    className: y.uploadInput,
+  } = e, u = i.useRef(null), m = (0, o.e7)([f.Z], () => f.Z.getChannel(t), [t]);
+  return a()(null != m, "Forum Channel is null"), (0, r.jsxs)(c.P3F, {
+    className: C.uploadInput,
     onMouseEnter: s,
     onClick: () => {
       (0, v.N3)({
@@ -65,101 +65,101 @@ function O(e) {
         })
       }
     },
-    children: [(0, a.jsx)(d.Z, {
-      className: y.fileInput,
+    children: [(0, r.jsx)(d.Z, {
+      className: C.fileInput,
       ref: u,
       onChange: e => {
-        null == i || i(), (0, j.d)(e.currentTarget.files, m, x.d.FirstThreadMessage, {
+        null == l || l(), (0, j.d)(e.currentTarget.files, m, x.d.FirstThreadMessage, {
           requireConfirm: true,
           origin: "file_picker"
-        }), p.S.dispatch(C.CkL.TEXTAREA_FOCUS), e.currentTarget.value = null
+        }), b.S.dispatch(_.CkL.TEXTAREA_FOCUS), e.currentTarget.value = null
       },
       multiple: m.rateLimitPerUser <= 0,
       tabIndex: false,
       "aria-hidden": true
-    }), (0, a.jsx)(c.FmF, {
+    }), (0, r.jsx)(c.FmF, {
       size: "custom",
       color: "currentColor",
       width: 28,
       height: 28,
-      className: y.uploadIcon
+      className: C.uploadIcon
     })]
   })
 }
 
-function P(e) {
+function O(e) {
   let {
     channelId: t,
     closePopout: n
-  } = e, [i, l] = r.useState(false), {
+  } = e, [l, a] = i.useState(false), {
     reducedMotion: d
-  } = r.useContext(c.Sfi), g = (0, c.q_F)({
-    from: d.enabled ? w : T,
-    to: S,
-    config: N
-  }, "animate-always"), x = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), p = (0, o.e7)([b.Z], () => b.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type));
-  return (0, a.jsx)(s.animated.div, {
-    className: y.popoutContainer,
+  } = i.useContext(c.Sfi), f = (0, c.q_F)({
+    from: d.enabled ? T : y,
+    to: w,
+    config: S
+  }, "animate-always"), x = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), b = (0, o.e7)([p.Z], () => p.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type));
+  return (0, r.jsx)(s.animated.div, {
+    className: C.popoutContainer,
     onMouseLeave: () => {
-      i || n()
+      l || n()
     },
-    style: g,
-    children: (0, a.jsxs)(c.zJl, {
+    style: f,
+    children: (0, r.jsxs)(c.zJl, {
       orientation: "horizontal",
-      className: y.popout,
+      className: C.popout,
       paddingFix: false,
       fade: true,
-      children: [(0, a.jsx)(O, {
+      children: [(0, r.jsx)(N, {
         channelId: t,
         onClick: () => {
-          l(true)
+          a(true)
         },
         onClose: () => {
-          l(false), n()
+          a(false), n()
         }
-      }), (0, a.jsx)("div", {
-        className: y.uploads,
-        children: p.map(e => (0, a.jsx)(h.Z, {
+      }), (0, r.jsx)("div", {
+        className: C.uploads,
+        children: b.map(e => (0, r.jsx)(g.Z, {
           channelId: t,
           draftType: m.Ie.CREATE_FORUM_POST.drafts.type,
           upload: e,
           keyboardModeEnabled: x,
           hideFileName: true,
-          size: f.q.SMALL
+          size: h.q.SMALL
         }, e.id))
       })]
     })
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     channelId: t
-  } = e, [n, i] = r.useState(false), l = (0, o.e7)([b.Z], () => b.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type)), s = l.length, c = s > 0;
-  r.useEffect(() => {
-    n && !c && i(false)
+  } = e, [n, l] = i.useState(false), a = (0, o.e7)([p.Z], () => p.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type)), s = a.length, c = s > 0;
+  i.useEffect(() => {
+    n && !c && l(false)
   }, [n, c]);
   let d = () => {
-    c && i(true)
+    c && l(true)
   };
-  return (0, a.jsxs)("div", {
-    className: y.container,
-    children: [c ? (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(h.r, {
-        upload: l[0],
-        size: f.q.SMALL,
+  return (0, r.jsxs)("div", {
+    className: C.container,
+    children: [c ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(g.r, {
+        upload: a[0],
+        size: h.q.SMALL,
         onMouseEnter: d
-      }), !n && (0, a.jsx)("div", {
-        className: y.badge,
+      }), !n && (0, r.jsx)("div", {
+        className: C.badge,
         children: s
       })]
-    }) : (0, a.jsx)(O, {
+    }) : (0, r.jsx)(N, {
       onMouseEnter: d,
       channelId: t
-    }), n && (0, a.jsx)(P, {
+    }), n && (0, r.jsx)(O, {
       channelId: t,
       closePopout: () => {
-        i(false)
+        l(false)
       }
     })]
   })

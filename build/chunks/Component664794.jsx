@@ -72,9 +72,9 @@ function O(e) {
   } = (0, p.KZ)(), {
     analyticsLocations: O,
     newestAnalyticsLocation: v
-  } = (0, s.ZP)(o.Z.USER_PROFILE_OVERFLOW_MENU), S = {
+  } = (0, s.ZP)(a.Z.USER_PROFILE_OVERFLOW_MENU), S = {
     action: m.yM.PRESS_OPTIONS,
-    icon: a.xhG,
+    icon: o.xhG,
     tooltipText: h.intl.string(h.t["UKOtz+"]),
     "aria-label": h.intl.string(h.t["UKOtz+"])
   }, I = (0, d.Z)({
@@ -153,18 +153,18 @@ function O(e) {
   ];
   return N.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(s.Gt, {
     value: O,
-    children: (0, r.jsx)(a.yRy, {
+    children: (0, r.jsx)(o.yRy, {
       targetElementRef: g,
       renderPopout: e => {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(a.v2r, {
+        return (0, r.jsx)(o.v2r, {
           navId: "user-profile-overflow-menu",
           onSelect: true,
           onClose: t,
           "aria-label": h.intl.string(h.t.AXIHpV),
-          children: N.map((e, t) => (0, r.jsx)(a.kSQ, {
+          children: N.map((e, t) => (0, r.jsx)(o.kSQ, {
             children: e.map(e => e)
           }, t))
         })

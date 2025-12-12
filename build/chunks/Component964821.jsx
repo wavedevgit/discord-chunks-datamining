@@ -1,13 +1,13 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 964821, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -18,37 +18,37 @@ var Chunk54381 = require("./54381.js"),
   Chunk190007 = require("./190007.js"),
   Chunk290511 = require("./290511.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk767757 = require("./767757.js");
+  Chunk784547 = require("./784547.js");
 
-function x(e) {
+function b(e) {
   let {
     connection: t,
     index: l,
-    onDragStart: x,
+    onDragStart: b,
     onDragReset: j,
-    onDragComplete: v,
-    draggingId: O
-  } = e, C = (0, d.ZP)(), {
-    drag: y,
-    drop: N,
-    dragSourcePosition: E,
-    setIsDraggable: I
-  } = (0, f.Z)({
+    onDragComplete: _,
+    draggingId: v
+  } = e, O = (0, u.ZP)(), {
+    drag: C,
+    drop: y,
+    dragSourcePosition: N,
+    setIsDraggable: E
+  } = (0, m.Z)({
     type: "ONBOARDING_CONNECTION_CARD",
     index: l,
     optionId: t.id,
-    onDragStart: () => x(t.id),
-    onDragComplete: e => v(e),
+    onDragStart: () => b(t.id),
+    onDragComplete: e => _(e),
     onDragReset: () => j()
-  }), S = i.useCallback(() => {
-    (0, m.xI)(l)
-  }, [l]), _ = i.useCallback(() => {
+  }), I = i.useCallback(() => {
+    (0, p.xI)(l)
+  }, [l]), S = i.useCallback(() => {
     (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("11798").then(n.bind(n, 8656));
       return n => {
-        var i, a;
+        var i, s;
         return (0, r.jsx)(e, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -66,30 +66,30 @@ function x(e) {
             })
           }
           return e
-        }({}, n), a = a = {
+        }({}, n), s = s = {
           connection: t,
           index: l
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(s)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
         }), i))
       }
     })
-  }, [t, l]), T = t.connection_type === b.zz.APPLICATION, P = t.application_id, w = (0, s.e7)([g.Z], () => T && null != P ? g.Z.getApplication(P) : null, [T, P]), Z = i.useMemo(() => (function(e, t, n) {
+  }, [t, l]), T = t.connection_type === f.zz.APPLICATION, P = t.application_id, w = (0, a.e7)([g.Z], () => T && null != P ? g.Z.getApplication(P) : null, [T, P]), Z = i.useMemo(() => (function(e, t, n) {
     var r, i, l;
-    if (e.connection_type === b.zz.APPLICATION && null != e.application_id) {
+    if (e.connection_type === f.zz.APPLICATION && null != e.application_id) {
       if (null != n) return {
         name: n.name,
         icon: null != (r = n.getIconURL(128)) ? r : null
       }
     } else if (null != e.provider_id) {
-      let n = u.Z.get(e.provider_id);
+      let n = d.Z.get(e.provider_id);
       return null != n ? {
         name: n.name,
         icon: "light" === t ? null == (i = n.icon) ? true : i.lightPNG : null == (l = n.icon) ? true : l.darkPNG
@@ -99,30 +99,30 @@ function x(e) {
       }
     }
     return {
-      name: p.intl.string(p.t.kFlgsx),
+      name: h.intl.string(h.t.kFlgsx),
       icon: null
     }
-  })(t, C, w), [t, C, w]);
+  })(t, O, w), [t, O, w]);
   return (0, r.jsxs)("div", {
-    className: a()(h.card, {
-      [h.dropIndicatorBefore]: null != E && l < E,
-      [h.dropIndicatorAfter]: null != E && l > E
+    className: s()(x.card, {
+      [x.dropIndicatorBefore]: null != N && l < N,
+      [x.dropIndicatorAfter]: null != N && l > N
     }),
-    onMouseEnter: () => I(true),
-    onMouseLeave: () => I(false),
+    onMouseEnter: () => E(true),
+    onMouseLeave: () => E(false),
     ref: e => {
-      y(N(e))
+      C(y(e))
     },
     children: [(0, r.jsx)("div", {
-      className: h.dragHandle,
+      className: x.dragHandle,
       children: (0, r.jsx)(c.Vni, {
         size: "sm",
         color: "currentColor"
       })
     }), (0, r.jsxs)("div", {
-      className: h.leftContent,
+      className: x.leftContent,
       children: [(0, r.jsx)("div", {
-        className: h.icon,
+        className: x.icon,
         children: null != Z.icon ? (0, r.jsx)("img", {
           src: Z.icon,
           alt: "",
@@ -135,7 +135,7 @@ function x(e) {
           color: "currentColor"
         })
       }), (0, r.jsxs)("div", {
-        className: h.textContent,
+        className: x.textContent,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "text-strong",
@@ -143,28 +143,28 @@ function x(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: null != t.description && t.description.length > 0 ? t.description : p.intl.string(p.t["4nNtsP"])
+          children: null != t.description && t.description.length > 0 ? t.description : h.intl.string(h.t["4nNtsP"])
         })]
       })]
     }), (0, r.jsxs)("div", {
-      className: h.actions,
+      className: x.actions,
       children: [(0, r.jsx)(o.u, {
-        text: p.intl.string(p.t.bt75uw),
+        text: h.intl.string(h.t.bt75uw),
         children: (0, r.jsx)(c.P3F, {
-          className: h.editButton,
-          onClick: _,
-          "aria-label": p.intl.string(p.t.bt75uw),
+          className: x.editButton,
+          onClick: S,
+          "aria-label": h.intl.string(h.t.bt75uw),
           children: (0, r.jsx)(c.vdY, {
             size: "xs",
             color: "currentColor"
           })
         })
       }), (0, r.jsx)(o.u, {
-        text: p.intl.string(p.t.N86XcP),
+        text: h.intl.string(h.t.N86XcP),
         children: (0, r.jsx)(c.P3F, {
-          className: h.removeButton,
-          onClick: S,
-          "aria-label": p.intl.string(p.t.N86XcP),
+          className: x.removeButton,
+          onClick: I,
+          "aria-label": h.intl.string(h.t.N86XcP),
           children: (0, r.jsx)(c.XHJ, {
             size: "xs",
             color: "currentColor"

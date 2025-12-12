@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 340295, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -15,13 +15,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk546247 = require("./546247.jsx"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk951840 = require("./951840.js");
+  Chunk427538 = require("./427538.js");
 let g = function(e) {
   let {
     participants: t,
     channel: n,
     hasConnectPermission: g
-  } = e, b = t.filter(f.Io), C = (0, c.J)(n.guild_id), y = r.useCallback(() => {
+  } = e, b = t.filter(h.Io), C = (0, c.J)(n.guild_id), y = r.useCallback(() => {
     C ? (0, s.hk)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
   }, [n.id, n.guild_id, C]), v = 4 === b.length ? 2 : 3;
   return (0, i.jsxs)("div", {
@@ -49,12 +49,12 @@ let g = function(e) {
       children: (0, i.jsx)(l.Text, {
         color: "text-default",
         variant: "text-sm/normal",
-        children: 0 === b.length ? h.intl.string(h.t.zSqdrS) : 1 === b.length ? h.intl.formatToPlainString(h.t.BUyJIG, {
+        children: 0 === b.length ? f.intl.string(f.t.zSqdrS) : 1 === b.length ? f.intl.formatToPlainString(f.t.BUyJIG, {
           a: (0, u.Z)(n, b[0])
-        }) : 2 === b.length ? h.intl.formatToPlainString(h.t["dcyZf/"], {
+        }) : 2 === b.length ? f.intl.formatToPlainString(f.t["dcyZf/"], {
           a: (0, u.Z)(n, b[0]),
           b: (0, u.Z)(n, b[1])
-        }) : b.length > 2 ? h.intl.formatToPlainString(h.t["44/Obu"], {
+        }) : b.length > 2 ? f.intl.formatToPlainString(f.t["44/Obu"], {
           a: (0, u.Z)(n, b[0]),
           b: (0, u.Z)(n, b[1]),
           n: b.length - 2
@@ -64,7 +64,7 @@ let g = function(e) {
       className: m.joinButton,
       children: (0, i.jsx)(l.Button, {
         variant: "overlay-primary",
-        text: g ? h.intl.string(h.t["96ANUN"]) : h.intl.string(h.t.TVBCKZ),
+        text: g ? f.intl.string(f.t["96ANUN"]) : f.intl.string(f.t.TVBCKZ),
         onClick: y,
         disabled: !g
       })

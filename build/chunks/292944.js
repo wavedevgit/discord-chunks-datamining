@@ -6,9 +6,9 @@ require.d(exports, {
 });
 var Chunk894186 = require("./894186.js"),
   Chunk715870 = require("./715870.js");
-let a = /今日|きょう|本日|ほんじつ|昨日|きのう|明日|あした|今夜|こんや|今夕|こんゆう|今晩|こんばん|今朝|けさ/i;
+let o = /今日|きょう|本日|ほんじつ|昨日|きのう|明日|あした|今夜|こんや|今夕|こんゆう|今晩|こんばん|今朝|けさ/i;
 
-function o(e) {
+function a(e) {
   switch (e) {
     case "きょう":
       return "今日";
@@ -32,11 +32,11 @@ function o(e) {
 }
 class s {
   pattern() {
-    return a
+    return o
   }
   extract(e, t) {
-    let n = o(t[0]),
-      a = e.createParsingComponents();
+    let n = a(t[0]),
+      o = e.createParsingComponents();
     switch (n) {
       case "昨日":
         return i.Cv(e.reference);
@@ -46,8 +46,8 @@ class s {
       case "今日":
         return i.Lg(e.reference)
     }
-    "今夜" == n || "今夕" == n || "今晩" == n ? (a.imply("hour", 22), a.assign("meridiem", r.GG.PM)) : n.match("今朝") && (a.imply("hour", 6), a.assign("meridiem", r.GG.AM));
+    "今夜" == n || "今夕" == n || "今晩" == n ? (o.imply("hour", 22), o.assign("meridiem", r.GG.PM)) : n.match("今朝") && (o.imply("hour", 6), o.assign("meridiem", r.GG.AM));
     let s = e.refDate;
-    return a.assign("day", s.getDate()), a.assign("month", s.getMonth() + 1), a.assign("year", s.getFullYear()), a
+    return o.assign("day", s.getDate()), o.assign("month", s.getMonth() + 1), o.assign("year", s.getFullYear()), o
   }
 }

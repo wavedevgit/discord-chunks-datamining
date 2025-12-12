@@ -8,13 +8,13 @@ var Chunk473749 = require("./473749.js");
 let i = function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 5,
     [t, n] = Chunk473749.useState(false),
-    [i, a] = Chunk473749.useState(0),
-    [o, s] = Chunk473749.useState(false),
+    [i, o] = Chunk473749.useState(0),
+    [a, s] = Chunk473749.useState(false),
     [l, c] = Chunk473749.useState(0);
   return Chunk473749.useEffect(() => {
     i >= module && (s(true), c(Math.floor(i / module)));
     let t = setTimeout(() => {
-      a(0)
+      o(0)
     }, 1e3);
     return () => clearTimeout(exports)
   }, [i, module]), Chunk473749.useEffect(() => {
@@ -24,7 +24,7 @@ let i = function() {
       }, 1e3);
       return () => clearTimeout(module)
     }
-    a(e => e + 1)
+    o(e => e + 1)
   }, [exports]), {
     onHover: () => {
       require(true)
@@ -32,7 +32,7 @@ let i = function() {
     onUnhover: () => {
       require(false)
     },
-    isEasterEggTriggered: o,
+    isEasterEggTriggered: a,
     easterEggLevel: l
   }
 }

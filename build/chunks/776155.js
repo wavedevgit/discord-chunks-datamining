@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 776155, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -8,13 +8,13 @@ var Chunk473749 = require("./473749.js"),
   Chunk295141 = require("./295141.js");
 
 function l(e) {
-  let [t, n] = r.useState(true), [l, a] = r.useState(), [s, o] = r.useState(), c = r.useCallback(async e => {
-    n(true), a(true);
+  let [t, n] = r.useState(true), [l, s] = r.useState(), [a, o] = r.useState(), c = r.useCallback(async e => {
+    n(true), s(true);
     try {
       let t = await i.HT(e);
       o(t)
     } catch (e) {
-      a(e)
+      s(e)
     } finally {
       n(false)
     }
@@ -24,6 +24,6 @@ function l(e) {
   }, [e, c]), {
     isLoading: t,
     error: l,
-    highlightedCreatorDetails: s
+    highlightedCreatorDetails: a
   }
 }

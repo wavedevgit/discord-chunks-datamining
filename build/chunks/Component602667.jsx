@@ -51,11 +51,11 @@ function p(e, t) {
   }), e
 }
 let _ = e => {
-    let [t, n] = i.useState(false), r = null != e ? e : t, o = r !== (0, s.Z)(r);
+    let [t, n] = i.useState(false), r = null != e ? e : t, a = r !== (0, s.Z)(r);
     return {
       visible: r,
-      visibleChanged: o,
-      reference: (0, a.O)(e => n(e), c.PI)
+      visibleChanged: a,
+      reference: (0, o.O)(e => n(e), c.PI)
     }
   },
   m = () => {
@@ -73,14 +73,14 @@ let _ = e => {
       focusedChanged: n
     } = m(), {
       visible: i,
-      visibleChanged: a,
-      reference: o
+      visibleChanged: o,
+      reference: a
     } = _(e.overrideVisibility);
     return (0, r.jsx)(c.ui, p(d({}, e), {
       focused: t,
       focusedChanged: n,
       visible: i,
-      visibleChanged: a,
-      reference: o
+      visibleChanged: o,
+      reference: a
     }), (0, c.B5)(e.questOrQuests, e.questContent))
   })

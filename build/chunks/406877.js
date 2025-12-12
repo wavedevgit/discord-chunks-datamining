@@ -21,14 +21,14 @@ function c(e, t) {
         try {
           let {
             url: r
-          } = await o.gs({
+          } = await a.gs({
             guildId: e,
             productId: t,
             attachmentId: n
           });
           await s.L(r)
         } catch (t) {
-          let e = t instanceof a.Hx ? t.getAnyErrorMessage() : true;
+          let e = t instanceof o.Hx ? t.getAnyErrorMessage() : true;
           i.Z.show({
             title: l.intl.string(l.t.R0RpRX),
             body: null != e ? e : l.intl.string(l.t.eAn6z2)

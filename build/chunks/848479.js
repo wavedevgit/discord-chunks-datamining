@@ -28,7 +28,7 @@ class c extends Chunk77450.h {
       return Math.ceil(e / 1024)
     }(null == (t = performance.memory) ? true : exports.usedJSHeapSize) == null && l.error("usedJSHeapSize is not available."), setInterval(() => {
       var e, t, r;
-      let a = null != (t = null == (e = performance.memory) ? true : module.usedJSHeapSize) ? exports : 0;
+      let o = null != (t = null == (e = performance.memory) ? true : module.usedJSHeapSize) ? exports : 0;
       require({
         memoryUsageKB: null != (r = this.lastMemoryUsageKB) ? Chunk579806 : 0,
         usedJSHeapSizeKB: Chunk710845(Chunk77450)
@@ -99,7 +99,7 @@ class c extends Chunk77450.h {
   }
   enablePerfMemoryHooks(e) {
     try {
-      return o.ZP.enablePerfMemoryHooks(e)
+      return a.ZP.enablePerfMemoryHooks(e)
     } catch (e) {
       return null
     }
@@ -120,7 +120,7 @@ class c extends Chunk77450.h {
   }
   getPerfAttributedMemoryCallstacks(e) {
     try {
-      return o.ZP.getPerfAttributedMemoryCallstacks(e)
+      return a.ZP.getPerfAttributedMemoryCallstacks(e)
     } catch (e) {
       return null
     }

@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 17699, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -24,9 +24,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk740903 = require("./740903.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk678286 = require("./678286.js");
+  Chunk40175 = require("./40175.js");
 
-function N(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,20 +35,20 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class S extends Chunk473749.PureComponent {
+class I extends Chunk473749.PureComponent {
   render() {
     var e;
     let {
@@ -68,16 +68,16 @@ class S extends Chunk473749.PureComponent {
       guild: n
     } = this.props;
     return (0, Chunk54381.jsxs)(Chunk481060.P3F, {
-      className: Chunk678286.bannedUser,
+      className: Chunk40175.bannedUser,
       onClick: this.handleShowModal,
       onContextMenu: this.handleContextMenu,
       children: [(0, Chunk54381.jsx)(Chunk481060.qEK, {
         src: exports.getAvatarURL(null == require ? true : require.id, 40),
         "aria-label": exports.username,
         size: Chunk481060.EFr.SIZE_40,
-        className: Chunk678286.bannedUserAvatar
+        className: Chunk40175.bannedUserAvatar
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk678286.username,
+        className: Chunk40175.username,
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
           color: "text-strong",
@@ -91,7 +91,7 @@ class S extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), N(this, "handleShowModal", () => {
+    super(...e), y(this, "handleShowModal", () => {
       let {
         guild: e,
         user: t,
@@ -101,54 +101,54 @@ class S extends Chunk473749.PureComponent {
         let {
           default: l
         } = await n.e("61697").then(n.bind(n, 355160));
-        return n => (0, r.jsx)(l, I(E({}, n), {
+        return n => (0, r.jsx)(l, E(N({}, n), {
           guild: e,
           user: t,
           ban: i
         }))
       })
-    }), N(this, "handleContextMenu", e => {
+    }), y(this, "handleContextMenu", e => {
       (0, c.jW)(e, async () => {
         let {
           default: e
         } = await n.e("23835").then(n.bind(n, 768079));
-        return t => (0, r.jsx)(e, I(E({}, t), {
+        return t => (0, r.jsx)(e, E(N({}, t), {
           user: this.props.user
         }))
       })
     })
   }
 }
-let _ = Chunk473749.forwardRef(function(e, t) {
+let S = Chunk473749.forwardRef(function(e, t) {
   let {
     guild: n,
     sortedBans: l,
-    bans: a
-  } = e, s = i.useCallback(e => {
+    bans: s
+  } = e, a = i.useCallback(e => {
     var t;
-    if (null == a && 0 === e) return 60;
+    if (null == s && 0 === e) return 60;
     let n = l[e],
-      r = null == a ? true : a.get(null != (t = null == n ? true : n.id) ? t : "");
+      r = null == s ? true : s.get(null != (t = null == n ? true : n.id) ? t : "");
     return 60 * (null != n && null != r)
-  }, [a, l]), c = i.useCallback(e => {
+  }, [s, l]), c = i.useCallback(e => {
     var t;
-    if (null == a && 0 === e) return (0, r.jsx)(o.$jN, {
-      className: y.spinner,
+    if (null == s && 0 === e) return (0, r.jsx)(o.$jN, {
+      className: C.spinner,
       type: o.$jN.Type.SPINNING_CIRCLE
     }, "spinner");
     let i = l[e],
-      s = null == a ? true : a.get(null != (t = null == i ? true : i.id) ? t : "");
-    if (null != i && null != s) return (0, r.jsx)(S, {
+      a = null == s ? true : s.get(null != (t = null == i ? true : i.id) ? t : "");
+    if (null != i && null != a) return (0, r.jsx)(I, {
       user: i,
-      ban: s,
+      ban: a,
       guild: n
     }, i.id)
-  }, [a, n, l]);
-  return (0, r.jsx)(f.Z, {
+  }, [s, n, l]);
+  return (0, r.jsx)(m.Z, {
     role: "listbox",
     listPadding: [8, 8, 8, 8],
     rowCount: l.length,
-    rowHeight: s,
+    rowHeight: a,
     renderRow: c,
     ref: t
   })
@@ -158,58 +158,58 @@ function T(e) {
   let {
     guildId: t,
     storedSearchQuery: n
-  } = e, [l, a] = i.useState(null != n ? n : ""), [s, c] = i.useState(false), u = i.useCallback(() => {
-    h.Z.setSection(O.pNK.SAFETY), (0, j.K)(v.u.DM_AND_SPAM_PROTECTION)
+  } = e, [l, s] = i.useState(null != n ? n : ""), [a, c] = i.useState(false), d = i.useCallback(() => {
+    x.Z.setSection(v.pNK.SAFETY), (0, j.K)(_.u.DM_AND_SPAM_PROTECTION)
   }, []), g = i.useCallback(e => {
-    a(e), 0 === e.trim().length && h.Z.setSearchQuery(e)
-  }, []), f = i.useCallback(() => {
-    a(""), h.Z.setSearchQuery("")
-  }, []), b = i.useCallback(async () => {
+    s(e), 0 === e.trim().length && x.Z.setSearchQuery(e)
+  }, []), m = i.useCallback(() => {
+    s(""), x.Z.setSearchQuery("")
+  }, []), f = i.useCallback(async () => {
     if (0 === l.trim().length) {
-      h.Z.setSearchQuery(l), c(false);
+      x.Z.setSearchQuery(l), c(false);
       return
     }
-    if (!s) try {
+    if (!a) try {
       c(true);
-      let [e, n] = (0, m.C)(l), r = e[0];
-      h.Z.setSearchQuery(l), await d.Z.searchGuildBans(t, r, n), c(false)
+      let [e, n] = (0, p.C)(l), r = e[0];
+      x.Z.setSearchQuery(l), await u.Z.searchGuildBans(t, r, n), c(false)
     } catch (e) {
       c(false)
     }
-  }, [t, s, l]), p = i.useCallback(e => {
-    "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), b())
-  }, [b]);
+  }, [t, a, l]), h = i.useCallback(e => {
+    "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), f())
+  }, [f]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-lg/semibold",
-      children: C.intl.string(C.t["7OY0gJ"])
+      children: O.intl.string(O.t["7OY0gJ"])
     }), (0, r.jsx)("div", {
-      className: y.settingsHeader,
+      className: C.settingsHeader,
       children: (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
-        className: y.description,
-        children: C.intl.format(C.t.JcZ36i, {
-          onModerationClick: u
+        className: C.description,
+        children: O.intl.format(O.t.JcZ36i, {
+          onModerationClick: d
         })
       })
     }), (0, r.jsxs)("div", {
-      className: y.bansSearchContainer,
+      className: C.bansSearchContainer,
       children: [(0, r.jsx)(o.E1j, {
         query: null != l ? l : "",
-        placeholder: C.intl.string(C.t.MiqUmf),
-        "aria-label": C.intl.string(C.t.MiqUmf),
+        placeholder: O.intl.string(O.t.MiqUmf),
+        "aria-label": O.intl.string(O.t.MiqUmf),
         onChange: g,
-        onKeyDown: p,
-        onClear: f
+        onKeyDown: h,
+        onClear: m
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: y.searchButton,
+        className: C.searchButton,
         children: (0, r.jsx)(o.Button, {
           variant: "primary",
-          text: C.intl.string(C.t["5h0QOP"]),
-          onClick: b,
-          disabled: s,
-          loading: s
+          text: O.intl.string(O.t["5h0QOP"]),
+          onClick: f,
+          disabled: a,
+          loading: a
         })
       })]
     })]
@@ -220,37 +220,37 @@ function P() {
   var e, t;
   let {
     guild: c,
-    searchQuery: f
-  } = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps(), [], Chunk392711.isEqual), h = null != Chunk218867 && Chunk218867.trim().length > 0, j = (0, Chunk110924.Z)(Chunk434404), v = Chunk434404 !== Chunk84613, [N] = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getBans(), [], Chunk136015.Q), S = null != (e = null == N ? true : N.size) ? module : 0, P = (0, Chunk410030.ZP)(), w = null != (t = null == Chunk239091 ? true : Chunk239091.id) ? exports : Chunk981631.lds, Z = Chunk473749.useRef(null), R = Chunk473749.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
+    searchQuery: m
+  } = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getProps(), [], Chunk392711.isEqual), x = null != Chunk218867 && Chunk218867.trim().length > 0, j = (0, Chunk110924.Z)(Chunk434404), _ = Chunk434404 !== Chunk84613, [y] = (0, Chunk399606.e7)([Chunk999382.Z], () => Chunk999382.Z.getBans(), [], Chunk136015.Q), I = null != (e = null == y ? true : y.size) ? module : 0, P = (0, Chunk410030.ZP)(), w = null != (t = null == Chunk239091 ? true : Chunk239091.id) ? exports : Chunk981631.lds, Z = Chunk473749.useRef(null), R = Chunk473749.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
     if (null == t || 0 === e.trim().length) returnfalse;
     let [
       [n], r
-    ] = (0, m.C)(e);
+    ] = (0, p.C)(e);
     return !!r.includes(t.id) || null != n && !!(t.username.toLowerCase().includes(n.toLowerCase()) || null != t.globalName && t.globalName.toLowerCase().includes(n.toLowerCase()))
   }, []), D = Chunk473749.useCallback((e, t, n) => {
     if (null == e || 0 === n) return [];
     let r = [];
     for (let n of e.keys()) {
-      let e = b.default.getUser(n);
+      let e = f.default.getUser(n);
       null != e && R(t)(e) && r.push(e)
     }
     return r
-  }, [R]), A = Chunk473749.useMemo(() => D(N, Chunk218867, S), [N, D, Chunk218867, S]), L = null != N, k = A.length % 1e3 == 0 && A.length > 0 && L, G = 0 === A.length, [M, U] = Chunk473749.useState({
+  }, [R]), A = Chunk473749.useMemo(() => D(y, Chunk218867, I), [y, D, Chunk218867, I]), L = null != y, k = A.length % 1e3 == 0 && A.length > 0 && L, G = 0 === A.length, [M, U] = Chunk473749.useState({
     currentPage: 1,
     pageSize: 100
   });
   Chunk473749.useEffect(() => {
-    Chunk740903 && 1 !== M.currentPage && U(e => I(E({}, e), {
+    Chunk740903 && 1 !== M.currentPage && U(e => E(N({}, e), {
       currentPage: 1
     }))
   }, [Chunk740903, M.currentPage]);
   let B = Chunk473749.useCallback(e => {
-      d.Z.fetchGuildBansBatch(w, 1e3, e)
+      u.Z.fetchGuildBansBatch(w, 1e3, e)
     }, [w]),
-    F = Chunk473749.useMemo(() => a().chunk(A, M.pageSize), [M.pageSize, A]),
+    F = Chunk473749.useMemo(() => s().chunk(A, M.pageSize), [M.pageSize, A]),
     H = Chunk473749.useCallback(e => {
       var t, n, r;
-      null == (t = Z.current) || t.scrollToSectionTop(0), (e + 1) * M.pageSize > A.length && k && !h && (W.current = null != (r = null == (n = A[A.length - 1]) ? true : n.id) ? r : null, B(W.current)), (null != F[e - 1] || k) && U(t => I(E({}, t), {
+      null == (t = Z.current) || t.scrollToSectionTop(0), (e + 1) * M.pageSize > A.length && k && !x && (W.current = null != (r = null == (n = A[A.length - 1]) ? true : n.id) ? r : null, B(W.current)), (null != F[e - 1] || k) && U(t => E(N({}, t), {
         currentPage: e
       }))
     }, [M.pageSize, A, k, F, B, Chunk434404]),
@@ -263,20 +263,20 @@ function P() {
     return null != (e = F[M.currentPage - 1]) ? module : []
   }, [F, M.currentPage]);
   return null == Chunk239091 ? null : (0, Chunk54381.jsxs)("div", {
-    className: Chunk678286.container,
+    className: Chunk40175.container,
     children: [(0, Chunk54381.jsx)(T, {
       guildId: w,
       storedSearchQuery: Chunk218867
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk678286.scrollerContainer,
-      children: [!G && (0, Chunk54381.jsx)(_, {
+      className: Chunk40175.scrollerContainer,
+      children: [!G && (0, Chunk54381.jsx)(S, {
         guild: Chunk239091,
-        bans: N,
+        bans: y,
         sortedBans: z,
         ref: Z
       }), !k && G && (0, Chunk54381.jsxs)(Chunk481060.ubH, {
         theme: P,
-        className: Chunk678286.emptyState,
+        className: Chunk40175.emptyState,
         children: [(0, Chunk54381.jsx)(Chunk481060.oxh, {
           darkSrc: require("./532747.js"),
           lightSrc: require("./433466.js"),
@@ -292,7 +292,7 @@ function P() {
       })]
     }), (0, Chunk54381.jsx)("div", {
       children: (0, Chunk54381.jsx)(Chunk481060.DsT, {
-        className: Chunk678286.paginationInput,
+        className: Chunk40175.paginationInput,
         totalCount: A.length + (k ? M.pageSize : 0),
         pageSize: M.pageSize,
         currentPage: M.currentPage,

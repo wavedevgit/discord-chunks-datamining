@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk55160 = require("./55160.js"),
   Chunk532772 = require("./532772.jsx"),
   Chunk681715 = require("./681715.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk443603 = require("./443603.jsx"),
   Chunk957825 = require("./957825.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk72775 = require("./72775.js");
+  Chunk564355 = require("./564355.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,24 +61,24 @@ function y(e, t) {
 function O(e, t) {
   let {
     disabled: n,
-    type: a,
+    type: o,
     channel: g
-  } = e, [b, O, v, S] = (0, d.Iu)(e => [e.activeView, e.pickerId, e.activeChannelId, e.activeViewType], s.X), I = false, T = b === _.X1.STICKER && S === a && v === g.id, C = false, A = i.useCallback(() => {
-    (0, d.RO)(_.X1.STICKER, a, g.id)
-  }, [a, g.id]), {
+  } = e, [b, O, v, S] = (0, d.Iu)(e => [e.activeView, e.pickerId, e.activeChannelId, e.activeViewType], s.X), I = false, T = b === _.X1.STICKER && S === o && v === g.id, C = false, A = i.useCallback(() => {
+    (0, d.RO)(_.X1.STICKER, o, g.id)
+  }, [o, g.id]), {
     Component: N,
     events: P,
     play: R
   } = (0, l.z)(), w = (0, f.v)(u.U);
   return n ? null : (0, r.jsx)("div", {
-    className: o()(_.CT, h.buttonContainer),
+    className: a()(_.CT, h.buttonContainer),
     ref: t,
     children: (0, r.jsx)(c.u, {
       shouldShow: null != w,
       text: m.intl.string(m.t.oOJ7KU),
       keyboardShortcut: w,
       children: (0, r.jsx)(p.Z, y(E({
-        className: o()(h.button, h.stickerButton)
+        className: a()(h.button, h.stickerButton)
       }, P), {
         onClick: () => {
           A(), R()

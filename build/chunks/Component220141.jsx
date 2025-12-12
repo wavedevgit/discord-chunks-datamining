@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 220141, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -12,14 +12,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk247397 = require("./247397.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk560075 = require("./560075.js");
+  Chunk285932 = require("./285932.js");
 
 function p(e) {
   var t, n, {
       handleOpenUserProfileModal: p,
       markAsDismissed: h
     } = e,
-    f = function(e, t) {
+    x = function(e, t) {
       if (null == e) return {};
       var n, a, r = function(e, t) {
         if (null == e) return {};
@@ -35,12 +35,12 @@ function p(e) {
       return r
     }(e, ["handleOpenUserProfileModal", "markAsDismissed"]);
   let {
-    trackUserProfileEditAction: x
-  } = (0, l.KZ)(), b = c.rR.filter(e => s.Ki.includes(e)), g = r.useCallback(() => {
-    h(d.L.TAKE_ACTION), x({
+    trackUserProfileEditAction: f
+  } = (0, l.KZ)(), g = c.rR.filter(e => s.Ki.includes(e)), b = r.useCallback(() => {
+    h(d.L.TAKE_ACTION), f({
       action: "PRESS_ADD_WIDGET"
     }), p()
-  }, [p, h, x]);
+  }, [p, h, f]);
   return (0, a.jsx)(i.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -62,15 +62,15 @@ function p(e) {
     heading: u.intl.string(u.t["oqalC+"]),
     subheading: u.intl.string(u.t.O9SQ1c),
     markAsDismissed: h
-  }, f), n = n = {
+  }, x), n = n = {
     children: (0, a.jsx)("ul", {
       "aria-label": u.intl.string(u.t["+EIBSA"]),
       className: m.options,
-      children: b.map(e => (0, a.jsx)(o.Z, {
+      children: g.map(e => (0, a.jsx)(o.Z, {
         widgetType: e,
         size: "medium",
-        onAddWidget: g,
-        trackUserProfileEditAction: x
+        onAddWidget: b,
+        trackUserProfileEditAction: f
       }, e))
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

@@ -18,29 +18,29 @@ let l = "#ffffff",
       saturationFactor: s = 1
     } = e;
     if (null == r || r.length < 1) return null;
-    let u = (0, o.YD)(r),
-      d = a.Z.parseString(u);
+    let u = (0, a.YD)(r),
+      d = o.Z.parseString(u);
     if (null == d) return null;
-    let f = (0, o.AZ)(d.red, d.blue, d.green),
-      p = null != (t = (0, o.wh)({
-        foreground: i()((0, o.j)(d, .6, true).toHexString()),
+    let f = (0, a.AZ)(d.red, d.blue, d.green),
+      p = null != (t = (0, a.wh)({
+        foreground: i()((0, a.j)(d, .6, true).toHexString()),
         background: i()(l),
         ratio: 3,
         saturationFactor: s
       })) ? t : d,
-      _ = null != (n = (0, o.wh)({
-        foreground: i()((0, o.j)(d, .6, false).toHexString()),
+      _ = null != (n = (0, a.wh)({
+        foreground: i()((0, a.j)(d, .6, false).toHexString()),
         background: i()(c),
         ratio: 5,
         saturationFactor: s
       })) ? n : d,
-      m = (0, o.wh)({
+      m = (0, a.wh)({
         foreground: i()(u),
         background: i()(l),
         ratio: 7,
         saturationFactor: s
       }),
-      h = (0, o.wh)({
+      h = (0, a.wh)({
         foreground: i()(u),
         background: i()(c),
         ratio: 7,
@@ -49,7 +49,7 @@ let l = "#ffffff",
     return {
       LIGHT: {
         accentColor: null == m ? true : m.hex(),
-        backgroundColor: (0, o.xj)({
+        backgroundColor: (0, a.xj)({
           colorRGB: p,
           saturationFactor: s
         }),
@@ -58,7 +58,7 @@ let l = "#ffffff",
       },
       DARK: {
         accentColor: null == h ? true : h.hex(),
-        backgroundColor: (0, o.xj)({
+        backgroundColor: (0, a.xj)({
           colorRGB: _,
           saturationFactor: s
         }),
@@ -88,11 +88,11 @@ let l = "#ffffff",
         colors: e,
         saturationFactor: t
       }),
-      a = n ? null == i ? true : i.DARK : null == i ? true : i.LIGHT;
+      o = n ? null == i ? true : i.DARK : null == i ? true : i.LIGHT;
     return {
-      backgroundColor: null == a ? true : a.backgroundColor,
-      accentColor: null == a ? true : a.accentColor,
-      highlightColor: null == a ? true : a.highlightColor,
-      opacity: null != (r = null == a ? true : a.opacity) ? r : .15
+      backgroundColor: null == o ? true : o.backgroundColor,
+      accentColor: null == o ? true : o.accentColor,
+      highlightColor: null == o ? true : o.highlightColor,
+      opacity: null != (r = null == o ? true : o.opacity) ? r : .15
     }
   }

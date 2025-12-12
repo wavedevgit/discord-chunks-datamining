@@ -22,7 +22,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk474936 = require("./474936.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk424199 = require("./424199.js");
+  Chunk262381 = require("./262381.js");
 
 function O(e) {
   return e === g.PremiumTypes.TIER_2 ? b.intl.string(b.t.jqO5Qn) : null == e ? b.intl.string(b.t.f2qjw5) : b.intl.string(b.t.SblICW)
@@ -65,7 +65,7 @@ function v(e) {
         variant: "heading-sm/bold",
         children: b.intl.string(b.t.dTbAxx)
       })]
-    }), (0, r.jsx)(a.x, {
+    }), (0, r.jsx)(o.x, {
       variant: "text-sm/normal",
       children: S
     }), I ? (0, r.jsx)(s.Button, {
@@ -81,7 +81,7 @@ function v(e) {
         section: m.jXE.SOUNDBOARD_SOUND_PICKER,
         object: m.qAy.BUTTON_CTA
       },
-      color: o.zx.Colors.GREEN,
+      color: a.zx.Colors.GREEN,
       onSubscribeModalClose: () => null == n ? true : n(h.L.PRIMARY)
     })]
   })

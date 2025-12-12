@@ -67,12 +67,12 @@ function A(e) {
   let {
     subscriptions: t,
     lastLazyPerkSync: n
-  } = e, r = {}, i = {}, a = [], o = [], u = l.default.getId();
+  } = e, r = {}, i = {}, o = [], a = [], u = l.default.getId();
   t.forEach(e => {
     if (e.user_id !== u) return;
     let t = s.Q.createFromServer(e);
-    r[t.id] = t, U(t) && (i[t.id] = t, t.type === c.NYc.GUILD && t.status !== c.O0b.ENDED && a.push(t), t.type === c.NYc.APPLICATION && t.status !== c.O0b.ENDED && o.push(t))
-  }), m = r, h = i, E = a, b = o, C = n
+    r[t.id] = t, U(t) && (i[t.id] = t, t.type === c.NYc.GUILD && t.status !== c.O0b.ENDED && o.push(t), t.type === c.NYc.APPLICATION && t.status !== c.O0b.ENDED && a.push(t))
+  }), m = r, h = i, E = o, b = a, C = n
 }
 
 function N(e) {
@@ -190,7 +190,7 @@ class Z extends(r = Chunk442837.ZP.Store) {
   }
   getPremiumSubscription() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-    return G(Chunk981631.NYc.PREMIUM, e => !(0, o.Q0)(e.planId), module)
+    return G(Chunk981631.NYc.PREMIUM, e => !(0, a.Q0)(e.planId), module)
   }
   getPremiumTypeSubscription() {
     let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];

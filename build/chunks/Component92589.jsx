@@ -2,7 +2,7 @@
 /** chunk id: 92589, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -12,7 +12,7 @@ var Chunk907331 = require("./907331.js"),
   Chunk794324 = require("./794324.js"),
   Chunk859788 = require("./859788.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk984623 = require("./984623.js");
+  Chunk449177 = require("./449177.js");
 
 function d(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -32,47 +32,47 @@ function d(e) {
   }
   return e
 }
-let f = e => {
+let g = e => {
   let {
     immersiveBannerBlock: t,
     onVisibilityChange: n
-  } = e, f = (0, l.O)(e => {
+  } = e, g = (0, l.O)(e => {
     null == n || n(e)
   }, .33, null != n), {
-    bannerUrl: g,
+    bannerUrl: f,
     bannerAnimatedUrl: p
-  } = (0, i._M)(t), b = null != t.textColor ? {
+  } = (0, s._M)(t), m = null != t.textColor ? {
     color: t.textColor
-  } : true, m = null != t.body && "" !== t.body, C = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
+  } : true, C = null != t.body && "" !== t.body, h = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
   return (0, r.jsxs)("div", {
-    ref: f,
+    ref: g,
     className: u.immersiveBannerBlock,
     children: [(0, r.jsx)("div", {
       className: u.banner,
-      children: null != g && (0, r.jsx)(s.Z, {
-        bannerStatic: g,
+      children: null != f && (0, r.jsx)(a.Z, {
+        bannerStatic: f,
         bannerAnimated: p
       })
     }), (0, r.jsx)("div", {
       className: u.immersiveBannerContent,
       children: (0, r.jsxs)("div", {
         className: u.immersiveBannerTextContainer,
-        children: [null != t.endTime ? (0, r.jsx)(o.R, {
+        children: [null != t.endTime ? (0, r.jsx)(i.R, {
           endDate: t.endTime,
           size: "lg"
-        }) : null, (0, r.jsx)(a.Heading, {
+        }) : null, (0, r.jsx)(o.Heading, {
           variant: "heading-xxl/bold",
           className: u.title,
           color: "text-strong",
-          style: d({}, b),
+          style: d({}, m),
           children: t.title
-        }), m || C ? (0, r.jsxs)(a.Text, {
+        }), C || h ? (0, r.jsxs)(o.Text, {
           variant: "text-md/medium",
-          style: d({}, b),
-          children: [m && t.body, m && C && " ", C && (0, r.jsx)(a.Anchor, {
+          style: d({}, m),
+          children: [C && t.body, C && h && " ", h && (0, r.jsx)(o.Anchor, {
             href: t.helpCenterUrl,
             className: u.learnMoreLink,
-            style: d({}, b),
+            style: d({}, m),
             children: c.intl.string(c.t.O7ADgv)
           })]
         }) : null]

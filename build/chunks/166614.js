@@ -11,13 +11,13 @@ var Chunk442837 = require("./442837.js"),
 
 function s(e, t) {
   var n, s;
-  let c = null != (n = i.ZP.useName(e)) ? n : "",
-    d = null != (s = (0, l.e7)([o.Z, a.Z, r.ZP], () => {
+  let c = null != (n = a.ZP.useName(e)) ? n : "",
+    d = null != (s = (0, l.e7)([o.Z, i.Z, r.ZP], () => {
       if (null != t) {
         var n;
         return null != (n = o.Z.getPendingNickname()) ? n : r.ZP.getNick(t, null == e ? true : e.id)
       }
-      return a.Z.getPendingGlobalName()
+      return i.Z.getPendingGlobalName()
     }, [t, e])) ? s : c;
   return null != d ? d : c
 }

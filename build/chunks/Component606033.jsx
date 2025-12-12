@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 606033, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 }), require("./388685.js"), require("./290780.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,9 +17,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk6809 = require("./6809.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk9976 = require("./9976.js");
-let _ = function(e) {
-  var t, n, _;
+  Chunk982538 = require("./982538.js");
+let b = function(e) {
+  var t, n, b;
   let {
     questId: E,
     setQuestId: O,
@@ -69,14 +69,14 @@ let _ = function(e) {
     (0, c.Ew)(e) || null == O || O(e)
   }, [O]);
   return (0, r.jsxs)("div", {
-    className: b.controlBar,
+    className: _.controlBar,
     children: [(0, r.jsx)("div", {
       children: (0, r.jsx)("div", {
-        className: b.questSelectorContainer,
+        className: _.questSelectorContainer,
         children: (0, r.jsxs)("div", {
-          className: b.questSelectorWrapper,
+          className: _.questSelectorWrapper,
           children: [(0, r.jsx)(g.Z, {}), (0, r.jsxs)("div", {
-            className: b.questInput,
+            className: _.questInput,
             children: [(0, r.jsx)(a.d, {
               "aria-label": "Quest ID",
               options: A,
@@ -92,7 +92,7 @@ let _ = function(e) {
                   value: t.trim()
                 }] : n
               }
-            }, "".concat(E, "-").concat(null != (_ = null == v || null == (n = v.config) || null == (t = n.messages) ? true : t.questName) ? _ : "")), (0, r.jsx)(s.hU, {
+            }, "".concat(E, "-").concat(null != (b = null == v || null == (n = v.config) || null == (t = n.messages) ? true : t.questName) ? b : "")), (0, r.jsx)(s.hU, {
               onClick: y,
               "aria-label": m.intl.string(m.t.wzzjk9),
               icon: s.DuK,
@@ -102,9 +102,9 @@ let _ = function(e) {
         })
       })
     }), null != E && null != v && (0, r.jsx)("div", {
-      className: b.controlsSection,
+      className: _.controlsSection,
       children: (0, r.jsxs)(s.ButtonGroup, {
-        className: b.controlButtons,
+        className: _.controlButtons,
         children: [(0, r.jsx)(s.Button, {
           onClick: Z,
           disabled: I,
@@ -130,9 +130,9 @@ let _ = function(e) {
           position: "bottom",
           align: "center",
           renderPopout: () => (0, r.jsx)("div", {
-            className: b.sharePopover,
+            className: _.sharePopover,
             children: (0, r.jsx)("div", {
-              className: b.copyInput,
+              className: _.copyInput,
               children: (0, r.jsx)(o.Z, {
                 value: h.$w.QUEST_PREVIEW_TOOL_2(E),
                 text: m.intl.string(m.t.WqhZss)

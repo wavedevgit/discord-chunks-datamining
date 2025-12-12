@@ -1,7 +1,7 @@
 /** Chunk was on 85342 **/
 /** chunk id: 544508, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => N
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,17 +22,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk801461 = require("./801461.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk991119 = require("./991119.js"),
+  Chunk631936 = require("./631936.js"),
   Chunk733469 = require("./733469.js");
-let v = Chunk473749.forwardRef(function(e, t) {
+let N = Chunk473749.forwardRef(function(e, t) {
   let {
     user: n,
     error: a,
-    formValues: v,
-    displayProfile: T,
-    onChangeFormValue: I,
-    onFocusDisplayName: j,
-    onFocusUsername: _,
+    formValues: N,
+    displayProfile: v,
+    onChangeFormValue: T,
+    onFocusDisplayName: I,
+    onFocusUsername: j,
     editState: P,
     footerNotice: C,
     usernameSuggestionLoading: A,
@@ -40,7 +40,7 @@ let v = Chunk473749.forwardRef(function(e, t) {
   } = e, {
     username: M,
     globalName: L
-  } = v, w = i.useRef(null), D = i.useRef(null), k = i.useMemo(() => n.merge({
+  } = N, w = i.useRef(null), D = i.useRef(null), k = i.useMemo(() => n.merge({
     discriminator: "0000"
   }), [n]), [Z, U] = (0, u.q_F)(() => ({
     opacity: 0,
@@ -68,8 +68,8 @@ let v = Chunk473749.forwardRef(function(e, t) {
   let G = (0, l.e7)([d.Z], () => d.Z.useReducedMotion),
     {
       createMultipleConfettiAt: W
-    } = i.useContext(f.h),
-    F = null == T ? true : T.getLegacyUsername();
+    } = i.useContext(m.h),
+    F = null == v ? true : v.getLegacyUsername();
   return i.useEffect(() => {
     !G && P === y.Wq.PREVIEW && n.username.includes(y.nA) && (W(window.innerWidth / 2 + 150, 0, {
       velocity: {
@@ -97,22 +97,22 @@ let v = Chunk473749.forwardRef(function(e, t) {
       }
     }, 15))
   }, [W, P, n, G]), (0, r.jsxs)("div", {
-    className: o()(x.userCardContainer, {
-      [x.shinyCard]: P === y.Wq.PREVIEW
+    className: o()(_.userCardContainer, {
+      [_.shinyCard]: P === y.Wq.PREVIEW
     }),
     children: [(0, r.jsxs)("div", {
-      className: x.profileCard,
-      children: [(0, r.jsx)(g.Z, {
+      className: _.profileCard,
+      children: [(0, r.jsx)(f.Z, {
         user: k,
-        displayProfile: T,
+        displayProfile: v,
         themeType: S.l.SIDEBAR
-      }), (0, r.jsx)(m.Z, {
+      }), (0, r.jsx)(g.Z, {
         user: k,
-        displayProfile: T,
+        displayProfile: v,
         themeType: S.l.SIDEBAR,
-        className: x.avatar
+        className: _.avatar
       }), P === y.Wq.PREVIEW && null != F && (0, r.jsx)("div", {
-        className: x.legacyUsernameBadgeContainer,
+        className: _.legacyUsernameBadgeContainer,
         children: (0, r.jsx)(c.u, {
           position: "top",
           text: b.intl.formatToPlainString(b.t.bhrgkA, {
@@ -121,9 +121,9 @@ let v = Chunk473749.forwardRef(function(e, t) {
           spacing: 12,
           children: (0, r.jsx)(u.Anchor, {
             children: (0, r.jsx)("img", {
-              className: x.legacyUsernameBadge,
+              className: _.legacyUsernameBadge,
               alt: "",
-              src: N
+              src: x
             })
           })
         })
@@ -133,7 +133,7 @@ let v = Chunk473749.forwardRef(function(e, t) {
         opacity: Z.opacity,
         y: Z.y
       },
-      className: x.inputContainer,
+      className: _.inputContainer,
       children: [(0, r.jsxs)(u.Kqy, {
         gap: 16,
         children: [P === y.Wq.EDIT_DISPLAY_NAME && (0, r.jsx)(u.oil, {
@@ -141,10 +141,10 @@ let v = Chunk473749.forwardRef(function(e, t) {
           value: null != L ? L : "",
           placeholder: E.ZP.getName(n),
           maxLength: y.hy,
-          onChange: e => I({
+          onChange: e => T({
             globalName: e
           }),
-          onFocus: j,
+          onFocus: I,
           inputRef: D
         }), (P === y.Wq.EDIT_USERNAME || P === y.Wq.SUGGESTION) && (0, r.jsx)(u.oil, {
           label: b.intl.string(b.t.IEpCBQ),
@@ -152,14 +152,14 @@ let v = Chunk473749.forwardRef(function(e, t) {
           value: null != M ? M : "",
           placeholder: n.username,
           maxLength: y.hy,
-          onChange: e => I({
+          onChange: e => T({
             username: e.replace("@", "")
           }),
-          onFocus: _,
+          onFocus: j,
           inputRef: w
         })]
       }), (0, r.jsx)("div", {
-        className: x.messageContainer,
+        className: _.messageContainer,
         children: (() => {
           if (null != a) return (0, r.jsx)(h.Z, {
             type: "error",
@@ -182,7 +182,7 @@ let v = Chunk473749.forwardRef(function(e, t) {
         })()
       })]
     }), P === y.Wq.PREVIEW && (0, r.jsxs)("div", {
-      className: x.userCard,
+      className: _.userCard,
       children: [(0, r.jsx)(u.Heading, {
         color: "text-strong",
         variant: "heading-xl/bold",
@@ -192,7 +192,7 @@ let v = Chunk473749.forwardRef(function(e, t) {
         variant: "heading-lg/medium",
         children: n.username
       }), (0, r.jsx)(u.Text, {
-        className: x.memberText,
+        className: _.memberText,
         color: "text-muted",
         variant: "text-sm/medium",
         children: b.intl.format(b.t["9rfonh"], {

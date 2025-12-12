@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk550385 = require("./550385.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk852750 = require("./852750.js");
+  Chunk223399 = require("./223399.js");
 let v = function(e) {
   let {
     mobile: t
@@ -30,8 +30,8 @@ let v = function(e) {
     activePanel: T,
     metadata: C
   } = (0, E.oq)(), A = [];
-  !n && null == T && (S && !v && A.push(a.z.CLIENT_THEMES_COACHMARK), I && A.push(a.z.CUSTOM_THEME_COACHMARK));
-  let [N, P] = (0, _.US)(A, y.R.SIDEBAR, true), R = N === a.z.CLIENT_THEMES_COACHMARK, w = N === a.z.CUSTOM_THEME_COACHMARK;
+  !n && null == T && (S && !v && A.push(o.z.CLIENT_THEMES_COACHMARK), I && A.push(o.z.CUSTOM_THEME_COACHMARK));
+  let [N, P] = (0, _.US)(A, y.R.SIDEBAR, true), R = N === o.z.CLIENT_THEMES_COACHMARK, w = N === o.z.CUSTOM_THEME_COACHMARK;
   if ((0, d.HA)(I, N), n) return null;
   let D = T === E.wh.CLIENT_THEMES || R,
     x = T === E.wh.APP_ICON,
@@ -41,13 +41,13 @@ let v = function(e) {
   let M = () => (0, r.jsxs)(r.Fragment, {
     children: [D && (0, r.jsx)(u.Z, {
       markAsDismissed: R ? P : () => {
-        (0, p.Q3)(a.z.CLIENT_THEMES_COACHMARK, {
+        (0, p.Q3)(o.z.CLIENT_THEMES_COACHMARK, {
           dismissAction: y.L.INDIRECT_ACTION,
           forceTrack: true
         })
       },
       showClientThemesCoachmark: R
-    }), x && (0, r.jsx)(o.Z, {
+    }), x && (0, r.jsx)(a.Z, {
       isCoachmark: false,
       markAsDismissed: P
     }), L && (0, r.jsx)(f.Z, {

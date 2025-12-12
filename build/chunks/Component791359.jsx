@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk324805 = require("./324805.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk121748 = require("./121748.js");
+  Chunk559909 = require("./559909.js");
 let w = 15 * Chunk70956.Z.Millis.MINUTE,
   L = (0, Chunk525296.Z)(function(e) {
     let {
@@ -52,7 +52,7 @@ let w = 15 * Chunk70956.Z.Millis.MINUTE,
       applicationStreams: g,
       currentActivities: h,
       voiceChannels: m
-    } = t, b = f.length, _ = g.length, E = h.length, O = m.length > 0, y = p.o.useConfig({
+    } = t, _ = f.length, b = g.length, E = h.length, O = m.length > 0, y = p.o.useConfig({
       location: "itemcard"
     }).demureActivityCards, I = i.useCallback(() => {
       let e = h.filter(e => {
@@ -60,13 +60,13 @@ let w = 15 * Chunk70956.Z.Millis.MINUTE,
         return (null == (t = e.game) ? true : t.name) != null && (0, v.isGameApplicationType)(null == (n = e.game) ? true : n.type)
       }).map(e => e.game.name);
       v.default.track(P.rMx.NOW_PLAYING_CARD_HOVERED, {
-        num_users: b,
-        num_streams: _,
+        num_users: _,
+        num_streams: b,
         num_activities: E,
         in_voice_channel: O,
         games_detected: e
       })
-    }, [b, _, E, O, h]), j = i.useMemo(() => o()(I, w), [I]);
+    }, [_, b, E, O, h]), j = i.useMemo(() => o()(I, w), [I]);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: s,
       position: "left",
@@ -158,8 +158,8 @@ function D() {
       });
       return exports
     }, [module, Chunk954955, o]),
-    b = null;
-  return exports ? b = module.length > 0 ? module.map(e => {
+    _ = null;
+  return exports ? _ = module.length > 0 ? module.map(e => {
     let {
       party: t
     } = e;
@@ -168,19 +168,19 @@ function D() {
       quest: p.get(t.id)
     }, t.id)
   }) : (0, Chunk54381.jsxs)("div", {
-    className: Chunk121748.emptyCard,
+    className: Chunk559909.emptyCard,
     children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
       variant: "heading-md/semibold",
-      className: Chunk121748.emptyHeader,
+      className: Chunk559909.emptyHeader,
       children: Chunk388032.intl.string(Chunk388032.t["ngJ/5u"])
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       color: "none",
-      className: Chunk121748.emptyText,
+      className: Chunk559909.emptyText,
       variant: "text-sm/normal",
       children: Chunk388032.intl.string(Chunk388032.t["99ZWxQ"])
     })]
   }) : (0, Chunk54381.jsx)("div", {
-    className: Chunk121748.emptyCard,
+    className: Chunk559909.emptyCard,
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   })
 }

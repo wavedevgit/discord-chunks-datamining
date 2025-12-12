@@ -31,14 +31,14 @@ function f() {
       label: Chunk388032.intl.string(Chunk388032.t["/jwMtn"]),
       description: Chunk388032.intl.string(Chunk388032.t.zlA23F),
       checked: module,
-      onChange: e => o.Z.setSidechainCompression(e, {
+      onChange: e => a.Z.setSidechainCompression(e, {
         analyticsLocations: n
       })
     }), (0, Chunk54381.jsx)(Chunk481060.iRW, {
       label: Chunk388032.intl.string(Chunk388032.t.fhEzfj),
       initialValue: exports,
       minValue: 1,
-      onValueChange: e => o.Z.setSidechainCompressionStrength(e, {
+      onValueChange: e => a.Z.setSidechainCompressionStrength(e, {
         analyticsLocations: n
       })
     })]

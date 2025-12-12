@@ -10,13 +10,13 @@ require("./473749.js");
 var Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk405086 = require("./405086.js");
+  Chunk803635 = require("./803635.js");
 
 function l(e) {
   let {
     label: t,
     backgroundColor: n = i.Z.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT.css,
-    icon: o,
+    icon: a,
     iconColor: l
   } = e;
   return (0, r.jsxs)("div", {
@@ -24,12 +24,12 @@ function l(e) {
     style: {
       backgroundColor: n
     },
-    children: [(0, r.jsx)(a.Text, {
+    children: [(0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "always-white",
       className: s.__invalid_badgeText,
       children: t
-    }), (0, r.jsx)(o, {
+    }), (0, r.jsx)(a, {
       className: s.badgeIcon,
       color: null != l ? l : "currentColor",
       "aria-hidden": true

@@ -9,7 +9,7 @@ require.d(exports, {
 }), require("./953529.js");
 var Chunk836560 = require("./836560.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk772848 = require("./772848.js"),
   Chunk403182 = require("./403182.js"),
   Chunk861990 = require("./861990.js");
@@ -47,7 +47,7 @@ class p extends Chunk836560.EventEmitter {
         overrideType: e.mimeType
       });
       this.filename = t.filename, this.isImage = t.isImage, this.isVideo = t.isVideo, this.mimeType = t.type, this.origin = e.origin, this.durationSecs = e.durationSecs, this.waveform = e.waveform
-    } else this.id = null != (r = e.id) ? r : a().uniqueId("upload"), this.classification = s.f3(e.file), this.isImage = "image" === this.classification, this.isVideo = "video" === this.classification, this.filename = e.file.name, this.mimeType = e.file.type, this.origin = e.origin;
-    this.isThumbnail = e.isThumbnail, this.clip = e.clip, this.uniqueId = (0, o.Z)(), this.showLargeMessageDialog = t, this.spoiler = false, this.description = null
+    } else this.id = null != (r = e.id) ? r : o().uniqueId("upload"), this.classification = s.f3(e.file), this.isImage = "image" === this.classification, this.isVideo = "video" === this.classification, this.filename = e.file.name, this.mimeType = e.file.type, this.origin = e.origin;
+    this.isThumbnail = e.isThumbnail, this.clip = e.clip, this.uniqueId = (0, a.Z)(), this.showLargeMessageDialog = t, this.spoiler = false, this.description = null
   }
 }

@@ -36,7 +36,7 @@ class p extends Chunk147913.Z {
     if (t.type !== d.d4z.GROUP_DM) return;
     let n = t.originChannelId,
       r = c.Z.getChannelId(d.kod);
-    null == u.Z.getGuildId() && null != n && n === r && (0, o.uL)(d.Z5c.CHANNEL(d.ME, t.id)), null != n && n === c.Z.getVoiceChannelId() && i.default.selectVoiceChannel(t.id, l.Z.isVideoEnabled())
+    null == u.Z.getGuildId() && null != n && n === r && (0, a.uL)(d.Z5c.CHANNEL(d.ME, t.id)), null != n && n === c.Z.getVoiceChannelId() && i.default.selectVoiceChannel(t.id, l.Z.isVideoEnabled())
   }
   handleLogout() {
     Chunk570140.Z.dispatch({

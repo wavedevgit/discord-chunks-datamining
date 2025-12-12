@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 648501, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -23,13 +23,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk790901 = require("./790901.js"),
   Chunk714794 = require("./714794.js"),
   Chunk355363 = require("./355363.js"),
-  Chunk687352 = require("./687352.jsx"),
+  Chunk259404 = require("./259404.jsx"),
   Chunk876548 = require("./876548.jsx"),
   Chunk25601 = require("./25601.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk490897 = require("./490897.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk884874 = require("./884874.js");
+  Chunk885525 = require("./885525.js");
 
 function N(e) {
   var t;
@@ -45,53 +45,53 @@ function N(e) {
     isNewChannel: M,
     muted: L,
     resolvedUnreadSetting: k
-  } = e, G = (0, i.e7)([b.ZP], () => b.ZP.getMentionCount(n.id)), U = (0, i.e7)([b.ZP], () => b.ZP.getIsMentionLowImportance(n.id)), B = (0, o.ZP)(n), F = (0, i.e7)([g.Z], () => !g.Z.can(S.Plq.CONNECT, n)), V = (0, s.P)(n), H = (0, i.e7)([m.Z], () => m.Z.hasVideo(n.id)), z = (0, f.PK)(n.id) && n.isGuildStageVoice(), W = (0, j.ZP)({
+  } = e, G = (0, i.e7)([m.ZP], () => m.ZP.getMentionCount(n.id)), U = (0, i.e7)([m.ZP], () => m.ZP.getIsMentionLowImportance(n.id)), B = (0, a.ZP)(n), F = (0, i.e7)([g.Z], () => !g.Z.can(E.Plq.CONNECT, n)), V = (0, s.P)(n), H = (0, i.e7)([b.Z], () => b.Z.hasVideo(n.id)), z = (0, f.PK)(n.id) && n.isGuildStageVoice(), W = (0, v.ZP)({
     channel: n,
     locked: F,
     video: (H || z) && null == V,
     selected: N
   }), K = (0, i.e7)([h.Z], () => h.Z.getNewThreadCount(n.guild_id, n.id)), Y = (0, u.n2)(n.guild_id, n.id), q = (0, i.e7)([p.Z], () => {
     var e, t;
-    return null != (t = null == (e = p.Z.getGuild(n.guild_id)) ? true : e.features.has(S.GuildFeatures.COMMUNITY)) && t
+    return null != (t = null == (e = p.Z.getGuild(n.guild_id)) ? true : e.features.has(E.GuildFeatures.COMMUNITY)) && t
   });
-  if ((0, v.Z)(G)) return (0, r.jsx)(E.Z, {
+  if ((0, O.Z)(G)) return (0, r.jsx)(x.Z, {
     mentionsCount: G,
     isMentionLowImportance: U
   });
   if ((0, d.O)(R)) return (0, r.jsx)(d.Z, {
     locked: D
   });
-  if (M) return (0, r.jsx)(a.IGR, {
-    text: _.intl.string(_.t.y2b7CA),
+  if (M) return (0, r.jsx)(o.IGR, {
+    text: I.intl.string(I.t.y2b7CA),
     color: l.Z.unsafe_rawColors.BRAND_260.css,
     className: P.newChannel
   });
-  if (!L && k === I.i.ALL_MESSAGES && n.isForumLikeChannel() && null != K && K > 0) return (0, r.jsx)(a.Text, {
+  if (!L && k === S.i.ALL_MESSAGES && n.isForumLikeChannel() && null != K && K > 0) return (0, r.jsx)(o.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
-    children: _.intl.format(_.t.GkAbqY, {
-      count: (0, a.NGo)(K)
+    children: I.intl.format(I.t.GkAbqY, {
+      count: (0, o.NGo)(K)
     })
   });
-  if (!L && n.isForumLikeChannel() && null != Y && Y > 0) return (0, r.jsx)(a.Text, {
+  if (!L && n.isForumLikeChannel() && null != Y && Y > 0) return (0, r.jsx)(o.Text, {
     variant: "text-xs/semibold",
     color: "text-muted",
-    children: (0, a.NGo)(Y)
+    children: (0, o.NGo)(Y)
   });
   let Q = null != (t = null == w ? true : w.length) ? t : 0;
-  return null != T && T && W ? (0, r.jsx)(x.Z, {
+  return null != T && T && W ? (0, r.jsx)(C.Z, {
     userCount: Q,
     video: H || z,
     channel: n
-  }) : Z && (0, y.a)(w) && q ? (0, r.jsx)(a.IGR, {
-    text: _.intl.string(_.t.dI3q4h),
+  }) : Z && (0, _.a)(w) && q ? (0, r.jsx)(o.IGR, {
+    text: I.intl.string(I.t.dI3q4h),
     color: l.Z.unsafe_rawColors.RED_400.css
   }) : null != V ? (0, r.jsx)(c.x3, {
     textColor: "text-feedback-positive",
     entry: {
       start: V
     }
-  }) : null != A && A && (0, O.u)(B) ? (0, r.jsx)(C.Z, {
+  }) : null != A && A && (0, y.u)(B) ? (0, r.jsx)(j.Z, {
     embeddedApps: B,
     muted: L
   }) : null

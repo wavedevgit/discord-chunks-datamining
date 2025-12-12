@@ -1,18 +1,18 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 18998, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 }), require("./583741.js"), require("./388685.js"), require("./539854.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk954955 = require("./954955.js"),
   c = require.n(Chunk954955),
   Chunk748780 = require("./748780.js"),
   Chunk902704 = require("./902704.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk491455 = require("./491455.js");
+  Chunk247060 = require("./247060.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -35,11 +35,11 @@ function g(e) {
   }
   return e
 }
-let b = {
+let m = {
   friction: 10,
   tension: 300
 };
-class m extends Chunk473749.Component {
+class b extends Chunk473749.Component {
   shouldComponentUpdate(e, t) {
     return !(0, d.Z)(this.props, e, ["animate"]) || !(0, d.Z)(this.state, t)
   }
@@ -68,7 +68,7 @@ class m extends Chunk473749.Component {
     this._timeout = setTimeout(() => {
       Chunk748780.Z.spring(module, g({
         toValue: 0
-      }, b)).start()
+      }, m)).start()
     }, 100)
   }
   animateOut() {
@@ -78,7 +78,7 @@ class m extends Chunk473749.Component {
     if (null != this._timeout && clearTimeout(this._timeout), !this.props.animate) return void module.setValue(1);
     Chunk748780.Z.spring(module, g({
       toValue: 1
-    }, b)).start()
+    }, m)).start()
   }
   render() {
     let {
@@ -88,14 +88,14 @@ class m extends Chunk473749.Component {
       onClick: r
     } = this.props;
     return (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-      className: o()(Chunk491455.bar, module, {
-        [Chunk491455.hidden]: require
+      className: a()(Chunk247060.bar, module, {
+        [Chunk247060.hidden]: require
       }),
       onClick: r,
       style: this.getAnimatedStyle(),
       "aria-hidden": require,
       children: (0, Chunk54381.jsx)("span", {
-        className: Chunk491455.text,
+        className: Chunk247060.text,
         children: exports
       })
     })
@@ -122,7 +122,7 @@ class m extends Chunk473749.Component {
     }
   }
 }
-class y extends(r = Chunk473749.PureComponent) {
+class _ extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     this.calculateState()
   }
@@ -140,7 +140,7 @@ class y extends(r = Chunk473749.PureComponent) {
       textMention: n,
       textUnread: r,
       reverse: l,
-      className: a,
+      className: o,
       barClassName: s,
       hide: c,
       animate: u
@@ -149,9 +149,9 @@ class y extends(r = Chunk473749.PureComponent) {
     } = this.context;
     return (0, Chunk54381.jsx)("div", {
       className: null != Chunk120356 ? Chunk120356 : true,
-      children: (0, Chunk54381.jsx)(m, {
+      children: (0, Chunk54381.jsx)(b, {
         hide: true === c || null == module && null == exports,
-        className: o()(Chunk954955, null != exports ? Chunk491455.mention : Chunk491455.unread),
+        className: a()(Chunk954955, null != exports ? Chunk247060.mention : Chunk247060.unread),
         text: null != exports ? require : r,
         reverse: Chunk473749,
         animate: Chunk748780 && !Chunk902704.enabled,
@@ -171,13 +171,13 @@ class y extends(r = Chunk473749.PureComponent) {
         isUnread: r,
         isMentioned: i,
         reverse: l,
-        onCalculate: a
-      } = this.props, o = null, s = null, c = [];
+        onCalculate: o
+      } = this.props, a = null, s = null, c = [];
       e.forEach(e => {
         "string" == typeof e ? c.push(e) : "object" == typeof e && null != e.folderId ? null != t && t.has(e.folderId) ? (c.push("folder:".concat(e.folderId)), e.guildIds.forEach(e => c.push(e))) : c.push(e.guildIds) : c.push(e.guildIds[0])
       });
       let u = e => {
-          null == o && i(e, l, c) && (o = e), null == s && r(e, l, c) && (s = e)
+          null == a && i(e, l, c) && (a = e), null == s && r(e, l, c) && (s = e)
         },
         d = l ? c.length - 1 : 0,
         f = c[d];
@@ -198,8 +198,8 @@ class y extends(r = Chunk473749.PureComponent) {
         }
         d += l ? false : 1, f = c[d]
       }
-      null != a && a(o, s, l), this.setState({
-        mention: o,
+      null != o && o(a, s, l), this.setState({
+        mention: a,
         unread: s
       })
     }, 200)), p(this, "handleClick", e => {
@@ -214,10 +214,10 @@ class y extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-p(y, "contextType", Chunk481060.Sfi), p(y, "defaultProps", {
-  className: Chunk491455.container,
+p(_, "contextType", Chunk481060.Sfi), p(_, "defaultProps", {
+  className: Chunk247060.container,
   reverse: false,
   hide: false,
   animate: true
 });
-let O = y
+let y = _

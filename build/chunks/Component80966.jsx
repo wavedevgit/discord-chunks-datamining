@@ -55,8 +55,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function _(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 class h extends Chunk473749.Component {
@@ -117,7 +117,7 @@ class h extends Chunk473749.Component {
         let {
           src: i,
           size: {
-            width: o,
+            width: a,
             height: c
           }
         } = e, d = !(h <= l.N_j && g <= l.XKF || h <= l.XKF && g <= l.N_j);
@@ -127,7 +127,7 @@ class h extends Chunk473749.Component {
           forceExternal: d,
           src: t,
           poster: i,
-          width: o,
+          width: a,
           height: c,
           responsive: S,
           volume: y,
@@ -136,7 +136,7 @@ class h extends Chunk473749.Component {
           type: s.ZP.Types.VIDEO,
           mediaLayoutType: I,
           fileName: m,
-          fileSize: null == n ? true : (0, a.Ng)(n),
+          fileSize: null == n ? true : (0, o.Ng)(n),
           fileSizeBytes: null == n ? true : n,
           playable: E,
           renderLinkComponent: A,

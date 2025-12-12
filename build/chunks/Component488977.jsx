@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk95015 = require("./95015.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk314734 = require("./314734.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk437773 = require("./437773.js");
+  Chunk820607 = require("./820607.js");
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -74,40 +74,40 @@ function x(e, t) {
 function L(e) {
   var t;
   let {
-    application: a,
+    application: o,
     context: R,
     className: D,
     sectionName: L
-  } = e, j = i.useRef(null), M = (0, l.e7)([S.Z], () => S.Z.entrypoint()), k = (0, I.L1)(a), U = (0, _.Eb)(k), G = (0, f.R)(a.id), Z = (0, l.e7)([E.Z], () => {
+  } = e, j = i.useRef(null), M = (0, l.e7)([S.Z], () => S.Z.entrypoint()), k = (0, I.L1)(o), U = (0, _.Eb)(k), G = (0, f.R)(o.id), Z = (0, l.e7)([E.Z], () => {
     var e;
     return null != (e = E.Z.getGuildId()) ? e : true
   }, []), F = {
     location: d.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU,
-    application_id: a.id,
+    application_id: o.id,
     section_name: L,
     source: S.Z.lastShownEntrypoint()
   }, B = b.default.getCurrentUser(), V = (0, m.Z)({
-    id: a.id,
+    id: o.id,
     label: N.intl.string(N.t["+NP/b2"])
   }), H = (0, T.P)({
-    application: a
-  }), Y = (0, s.yE)(null != (t = a.flags) ? t : 0, A.udG.EMBEDDED), W = "channel" === R.type ? R.channel : true;
+    application: o
+  }), Y = (0, s.yE)(null != (t = o.flags) ? t : 0, A.udG.EMBEDDED), W = "channel" === R.type ? R.channel : true;
   return (0, r.jsxs)("div", {
     className: P.container,
     children: [(0, r.jsx)(c.P3F, {
       onClick: () => {
         let e = Y ? (0, p.H)({
-          applicationId: a.id,
+          applicationId: o.id,
           referrerId: null == B ? true : B.id
         }) : (0, p.J)(w({
-          id: a.id
+          id: o.id
         }, k));
         (0, O.JG)(e, () => (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["L/PwZf"]), c.ToastType.SUCCESS))), y.default.track(A.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
-          application_id: a.id,
+          application_id: o.id,
           source: M
         })
       },
-      className: o()(P.clickable, D),
+      className: a()(P.clickable, D),
       "aria-label": N.intl.string(N.t.WqhZss),
       children: (0, r.jsx)(c.xPt, {
         size: "sm",
@@ -133,11 +133,11 @@ function L(e) {
                 (0, c.ZDy)(async () => {
                   let {
                     default: e
-                  } = await Promise.all([n.e("77803"), n.e("65672")]).then(n.bind(n, 7225));
+                  } = await Promise.all([n.e("77803"), n.e("42124")]).then(n.bind(n, 7225));
                   return t => (0, r.jsx)(e, {
                     transitionState: t.transitionState,
                     onClose: t.onClose,
-                    appId: a.id,
+                    appId: o.id,
                     guildId: Z
                   })
                 })
@@ -156,14 +156,14 @@ function L(e) {
                   source: "app_launcher_app_details"
                 }))
               }
-            }) : null, a instanceof g.ZP ? (0, r.jsx)(c.sNh, {
+            }) : null, o instanceof g.ZP ? (0, r.jsx)(c.sNh, {
               id: "report-app",
               color: "danger",
               label: N.intl.string(N.t.jhJzez),
               action: () => {
                 var e;
                 (0, h.uu)({
-                  application: a,
+                  application: o,
                   entrypoint: "app_launcher",
                   contextualGuildId: null != (e = null == W ? true : W.getGuildId()) ? e : true,
                   contextualChannelId: null == W ? true : W.id
@@ -181,7 +181,7 @@ function L(e) {
         innerRef: j
       }, e), {
         onClick: e.onClick,
-        className: o()(P.clickable, D),
+        className: a()(P.clickable, D),
         "aria-label": N.intl.string(N.t["UKOtz+"]),
         children: (0, r.jsx)(c.xhG, {
           size: "sm",

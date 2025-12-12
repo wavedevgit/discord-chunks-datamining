@@ -2,7 +2,7 @@
 /** chunk id: 200623, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  default: () => C
+  default: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk927923 = require("./927923.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk337016 = require("./337016.js");
+  Chunk5511 = require("./5511.js");
 
 function g(e) {
   let {
@@ -29,12 +29,12 @@ function g(e) {
     className: h.cardRow,
     children: [(0, n.jsx)("div", {
       className: h.stepNumberContainer,
-      children: (0, n.jsx)(o.Text, {
+      children: (0, n.jsx)(c.Text, {
         variant: "text-sm/semibold",
         className: h.stepNumber,
         children: t
       })
-    }), (0, n.jsx)(o.Text, {
+    }), (0, n.jsx)(c.Text, {
       variant: "text-sm/normal",
       color: "text-strong",
       className: h.instructions,
@@ -43,29 +43,29 @@ function g(e) {
   })
 }
 
-function C(e) {
+function _(e) {
   let {
     channel: t,
     transitionState: r,
-    onClose: C
-  } = e, O = (0, a.e7)([u.default], () => null != u.default.getRemoteSessionId()), v = (0, f.Z)(t, {
+    onClose: _
+  } = e, C = (0, i.e7)([u.default], () => null != u.default.getRemoteSessionId()), O = (0, f.Z)(t, {
     forQRCode: true
   });
   return s.useEffect(() => {
-    O && C()
-  }, [O, C]), s.useEffect(() => {
+    C && _()
+  }, [C, _]), s.useEffect(() => {
     (0, p.Z)(t.id, m.YE.XBOX)
-  }, [t.id]), (0, n.jsx)(c.Modal, {
+  }, [t.id]), (0, n.jsx)(o.Modal, {
     title: b.intl.string(b.t["f+Aijq"]),
     subtitle: b.intl.string(b.t.mYFmDY),
     actions: [],
-    onClose: C,
+    onClose: _,
     transitionState: r,
     children: (0, n.jsxs)("div", {
       className: h.card,
       children: [(0, n.jsxs)("div", {
         className: h.cardText,
-        children: [(0, n.jsxs)(o.Text, {
+        children: [(0, n.jsxs)(c.Text, {
           variant: "text-lg/semibold",
           color: "text-strong",
           className: h.cardRow,
@@ -78,18 +78,18 @@ function C(e) {
         }), (0, n.jsx)(g, {
           step: 2,
           instructions: b.intl.string(b.t.IWuXjC)
-        }), (0, n.jsx)(o.Text, {
+        }), (0, n.jsx)(c.Text, {
           variant: "text-sm/medium",
-          children: (0, n.jsx)(o.Anchor, {
+          children: (0, n.jsx)(c.Anchor, {
             className: h.learnMore,
             href: d.Z.getArticleURL(x.BhN.XBOX_CONNECTION),
             children: b.intl.string(b.t.hvVgAZ)
           })
         })]
-      }), (0, n.jsx)(i.ZP, {
+      }), (0, n.jsx)(a.ZP, {
         className: h.qrCode,
         size: 120,
-        text: v
+        text: O
       })]
     })
   })

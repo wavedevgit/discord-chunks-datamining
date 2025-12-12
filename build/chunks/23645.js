@@ -25,7 +25,7 @@ class l extends Chunk473749.Component {
     return "function" == typeof module && (e = module()), module
   }
   downloadNative(e, t) {
-    a.Z.fileManager.saveWithDialog(e, t)
+    o.Z.fileManager.saveWithDialog(e, t)
   }
   downloadHtml5(e, t) {
     let n = new Blob([e], {
@@ -49,7 +49,7 @@ class l extends Chunk473749.Component {
           fileName: n,
           onDownload: r
         } = this.props;
-      o.isPlatformEmbedded ? this.downloadNative(t, n) : this.downloadHtml5(t, n), null == r || r()
+      a.isPlatformEmbedded ? this.downloadNative(t, n) : this.downloadHtml5(t, n), null == r || r()
     })
   }
 }

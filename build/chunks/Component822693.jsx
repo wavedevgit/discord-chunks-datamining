@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 822693, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -18,20 +18,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk800223 = require("./800223.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let h = "NO_CHANNEL",
-  x = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.CREATE_INSTANT_INVITE);
+let x = "NO_CHANNEL",
+  b = Chunk149765.$e(Chunk981631.Plq.VIEW_CHANNEL, Chunk981631.Plq.CREATE_INSTANT_INVITE);
 
 function j(e) {
   let {
     label: t,
     description: n,
     guildId: l,
-    widgetEnabled: b,
+    widgetEnabled: f,
     widgetChannelId: j,
-    className: v,
-    enableLocalUpdate: O
-  } = e, C = (0, a.e7)([c.ZP], () => c.ZP.getChannels(l)), y = i.useMemo(() => {
-    let e = [...C[c.sH], ...C[c.Zb]].filter(e => {
+    className: _,
+    enableLocalUpdate: v
+  } = e, O = (0, s.e7)([c.ZP], () => c.ZP.getChannels(l)), C = i.useMemo(() => {
+    let e = [...O[c.sH], ...O[c.Zb]].filter(e => {
       let {
         channel: t
       } = e;
@@ -40,29 +40,29 @@ function j(e) {
       let {
         channel: t
       } = e;
-      return t.id === j || d.Z.can(x, t)
+      return t.id === j || u.Z.can(b, t)
     }).map(e => {
       let {
         channel: t
       } = e;
       return {
         value: t.id,
-        label: (0, o.F6)(t, g.default, u.Z, true)
+        label: (0, o.F6)(t, g.default, d.Z, true)
       }
     });
     return e.unshift({
-      value: h,
-      label: p.intl.string(p.t.u197b7)
+      value: x,
+      label: h.intl.string(h.t.u197b7)
     }), e
-  }, [C, l, j]), N = i.useCallback(e => {
-    O ? (0, m.c)(l, b, e !== h ? e : null) : f.Z.updateEmbed(l, b, e !== h ? e : null)
-  }, [l, b, O]);
-  return (0, r.jsx)(s.y6, {
+  }, [O, l, j]), y = i.useCallback(e => {
+    v ? (0, p.c)(l, f, e !== x ? e : null) : m.Z.updateEmbed(l, f, e !== x ? e : null)
+  }, [l, f, v]);
+  return (0, r.jsx)(a.y6, {
     label: t,
     description: n,
-    options: y,
+    options: C,
     value: j,
-    onChange: N,
-    className: v
+    onChange: y,
+    className: _
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 156012, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -45,10 +45,10 @@ let c = false,
   d = new Set,
   p = {};
 
-function f() {
+function h() {
   p = {}
 }
-class h extends(i = Chunk442837.ZP.Store) {
+class f extends(i = Chunk442837.ZP.Store) {
   getMessagesPendingDeletion() {
     return d
   }
@@ -62,8 +62,8 @@ class h extends(i = Chunk442837.ZP.Store) {
     return c
   }
 }
-a(h, "displayName", "scheduledMessageStore");
-let m = new h(Chunk570140.Z, {
+a(f, "displayName", "scheduledMessageStore");
+let m = new f(Chunk570140.Z, {
   SCHEDULED_MESSAGES_CREATE_SUCCESS: function(e) {
     let {
       channelId: t,
@@ -135,6 +135,6 @@ let m = new h(Chunk570140.Z, {
     } = e;
     p = o({}, p), delete p[t]
   },
-  LOGOUT: f,
-  CONNECTION_OPEN: f
+  LOGOUT: h,
+  CONNECTION_OPEN: h
 })

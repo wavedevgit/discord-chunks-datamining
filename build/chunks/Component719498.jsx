@@ -1,7 +1,7 @@
 /** Chunk was on 30019 **/
 /** chunk id: 719498, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => u
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,14 +11,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk925329 = require("./925329.jsx"),
   Chunk296023 = require("./296023.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk167550 = require("./167550.js");
-let p = e => {
+  Chunk463488 = require("./463488.js");
+let u = e => {
   let {
     channel: t,
-    application: p,
-    onClose: u,
+    application: u,
+    onClose: b,
     transitionState: m
-  } = e, j = (0, l.w)(t), x = a.useCallback(() => (u(), (0, c.ZDy)(async () => {
+  } = e, j = (0, l.w)(t), x = a.useCallback(() => (b(), (0, c.ZDy)(async () => {
     let {
       default: e
     } = await r.e("31907").then(r.bind(r, 366854));
@@ -43,7 +43,7 @@ let p = e => {
         return e
       }({}, r), i = i = {
         channelId: t.id,
-        application: p
+        application: u
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -55,15 +55,15 @@ let p = e => {
         Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
       }), a))
     }
-  })), [p, t.id, u]), O = (0, o.ZP)(t, true);
+  })), [u, t.id, b]), O = (0, o.ZP)(t, true);
   return (0, n.jsx)(i.Modal, {
     transitionState: m,
     "aria-label": d.intl.string(d.t.OJknhi),
-    onClose: u,
+    onClose: b,
     title: d.intl.string(d.t.OJknhi),
     actions: [{
       text: d.intl.string(d.t["ETE/oC"]),
-      onClick: u,
+      onClick: b,
       variant: "secondary"
     }, {
       text: d.intl.string(d.t.LLWaxQ),
@@ -71,18 +71,18 @@ let p = e => {
       variant: "critical-primary"
     }],
     children: (0, n.jsxs)("div", {
-      className: b.content,
+      className: p.content,
       children: [(0, n.jsx)(s.Z, {
-        game: p,
+        game: u,
         size: s.A.XLARGE
       }), (0, n.jsxs)("div", {
-        className: b.metadata,
+        className: p.metadata,
         children: [(0, n.jsxs)("div", {
-          className: b.metadataHeader,
+          className: p.metadataHeader,
           children: [(0, n.jsx)(c.Text, {
             variant: "text-md/semibold",
             color: "text-strong",
-            children: p.name
+            children: u.name
           }), (0, n.jsx)(c.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
@@ -92,7 +92,7 @@ let p = e => {
           })]
         }), null != j && (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)("div", {
-            className: b.divider
+            className: p.divider
           }), (0, n.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "text-muted",

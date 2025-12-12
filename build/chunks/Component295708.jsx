@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 295708, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -15,12 +15,12 @@ function c(e) {
   let {
     rule: t,
     onChangeRule: n
-  } = e, [c, d] = i.useState(t.name);
+  } = e, [c, u] = i.useState(t.name);
   return (0, r.jsx)(l.oil, {
     label: o.intl.string(o.t.WVAHxF),
     onChange: e => {
       var r, i;
-      d(e), n((r = function(e) {
+      u(e), n((r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -52,10 +52,10 @@ function c(e) {
     },
     onClick: e => e.stopPropagation(),
     onKeyDown: e => {
-      e.which === s.yXg.SPACE && e.stopPropagation()
+      e.which === a.yXg.SPACE && e.stopPropagation()
     },
     placeholder: o.intl.string(o.t["5AO43K"]),
-    maxLength: a.OU,
+    maxLength: s.OU,
     value: c
   })
 }

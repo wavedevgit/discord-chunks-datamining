@@ -1,8 +1,8 @@
-/** Chunk was on 193 **/
+/** Chunk was on 9456 **/
 /** chunk id: 895932, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,107 +14,107 @@ var Chunk313361 = require("./313361.js"),
   Chunk109434 = require("./109434.js"),
   Chunk228392 = require("./228392.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk162085 = require("./162085.js"),
-  Chunk956058 = require("./956058.js");
+  Chunk964721 = require("./964721.js"),
+  Chunk377741 = require("./377741.js");
 
-function h(e) {
+function g(e) {
   let {
     channel: t,
     closePopout: n
   } = e, {
-    sortOrder: h,
-    layoutType: g,
+    sortOrder: g,
+    layoutType: f,
     tagSetting: x
   } = (0, c.H)(t.id), {
-    showResolvedFlags: b,
-    setShowResolvedFlags: p
-  } = (0, o.N)(t.id), j = (0, c.v)(), v = t.isMediaChannel(), C = e => {
+    showResolvedFlags: p,
+    setShowResolvedFlags: b
+  } = (0, o.N)(t.id), j = (0, c.v)(), v = t.isMediaChannel(), _ = e => {
     (0, d.KR)({
       guildId: t.guild_id,
       channelId: t.id,
       sortOrder: e
     }), j.getState().setSortOrder(t.id, e), n()
-  }, y = e => {
+  }, C = e => {
     (0, d.Do)({
       guildId: t.guild_id,
       channelId: t.id,
       forumLayout: e
     }), j.getState().setLayoutType(t.id, e), n()
-  }, T = e => {
+  }, y = e => {
     j.getState().setTagSetting(t.id, e), n()
-  }, w = null != t.availableTags && t.availableTags.length > 0;
-  return (0, a.jsx)("div", {
-    className: f.container,
-    children: (0, a.jsxs)(s.v2r, {
+  }, T = null != t.availableTags && t.availableTags.length > 0;
+  return (0, r.jsx)("div", {
+    className: h.container,
+    children: (0, r.jsxs)(s.v2r, {
       navId: "sort-and-view",
       "aria-label": v ? u.intl.string(u.t["kQN/bi"]) : u.intl.string(u.t.DJzbkL),
       hideScroller: true,
       onClose: n,
       onSelect: n,
-      children: [(0, a.jsxs)(s.kSQ, {
+      children: [(0, r.jsxs)(s.kSQ, {
         label: u.intl.string(u.t.f8wNDl),
-        children: [(0, a.jsx)(s.k5B, {
+        children: [(0, r.jsx)(s.k5B, {
           id: "sort-by-recent-activity",
           group: "sort-by",
           label: u.intl.string(u.t.jOPmcI),
-          action: () => C(l.z.LATEST_ACTIVITY),
-          checked: h === l.z.LATEST_ACTIVITY
-        }), (0, a.jsx)(s.k5B, {
+          action: () => _(a.z.LATEST_ACTIVITY),
+          checked: g === a.z.LATEST_ACTIVITY
+        }), (0, r.jsx)(s.k5B, {
           id: "sort-by-date-posted",
           group: "sort-by",
           label: u.intl.string(u.t.UIltXd),
-          action: () => C(l.z.CREATION_DATE),
-          checked: h === l.z.CREATION_DATE
+          action: () => _(a.z.CREATION_DATE),
+          checked: g === a.z.CREATION_DATE
         })]
-      }), t.isModeratorReportChannel() && (0, a.jsx)(s.kSQ, {
+      }), t.isModeratorReportChannel() && (0, r.jsx)(s.kSQ, {
         label: u.intl.string(m.default.PsM2b4),
-        children: (0, a.jsx)(s.S89, {
+        children: (0, r.jsx)(s.S89, {
           id: "resolved-flags-none",
           label: u.intl.string(u.t.XJuakA),
-          action: () => p(!b),
-          checked: b
+          action: () => b(!p),
+          checked: p
         })
-      }), t.isMediaChannel() || t.isModeratorReportChannel() ? null : (0, a.jsxs)(s.kSQ, {
+      }), t.isMediaChannel() || t.isModeratorReportChannel() ? null : (0, r.jsxs)(s.kSQ, {
         label: u.intl.string(u.t.mFMDSq),
-        children: [(0, a.jsx)(s.k5B, {
+        children: [(0, r.jsx)(s.k5B, {
           id: "view-as-list",
           group: "view-as",
           label: u.intl.string(u.t["NJFr+g"]),
-          action: () => y(r.X.LIST),
-          checked: g === r.X.LIST
-        }), (0, a.jsx)(s.k5B, {
+          action: () => C(i.X.LIST),
+          checked: f === i.X.LIST
+        }), (0, r.jsx)(s.k5B, {
           id: "view-as-grid",
           group: "view-as",
           label: u.intl.string(u.t.wKeggb),
-          action: () => y(r.X.GRID),
-          checked: g === r.X.GRID
+          action: () => C(i.X.GRID),
+          checked: f === i.X.GRID
         })]
-      }), w ? (0, a.jsxs)(s.kSQ, {
+      }), T ? (0, r.jsxs)(s.kSQ, {
         label: u.intl.string(u.t.Paxaug),
-        children: [(0, a.jsx)(s.k5B, {
+        children: [(0, r.jsx)(s.k5B, {
           id: "match-some",
           group: "tag-setting",
           label: u.intl.string(u.t.rQ0ctQ),
-          action: () => T(i.z.MATCH_SOME),
-          checked: x === i.z.MATCH_SOME
-        }), (0, a.jsx)(s.k5B, {
+          action: () => y(l.z.MATCH_SOME),
+          checked: x === l.z.MATCH_SOME
+        }), (0, r.jsx)(s.k5B, {
           id: "match-all",
           group: "tag-setting",
           label: u.intl.string(u.t.FCXUu0),
-          action: () => T(i.z.MATCH_ALL),
-          checked: x === i.z.MATCH_ALL
+          action: () => y(l.z.MATCH_ALL),
+          checked: x === l.z.MATCH_ALL
         })]
-      }) : null, (0, a.jsx)(s.kSQ, {
-        children: (0, a.jsx)(s.sNh, {
+      }) : null, (0, r.jsx)(s.kSQ, {
+        children: (0, r.jsx)(s.sNh, {
           id: "reset-all",
-          className: f.clearText,
-          label: (0, a.jsx)(s.Text, {
+          className: h.clearText,
+          label: (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "none",
             children: u.intl.string(u.t["3b//lO"])
           }),
           action: () => {
-            C(t.getDefaultSortOrder()), y(t.getDefaultLayout()), T(t.getDefaultTagSetting())
+            _(t.getDefaultSortOrder()), C(t.getDefaultLayout()), y(t.getDefaultTagSetting())
           }
         })
       })]

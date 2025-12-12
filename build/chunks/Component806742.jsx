@@ -1,13 +1,13 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 806742, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -18,19 +18,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk969632 = require("./969632.js"),
   Chunk535907 = require("./535907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk551952 = require("./551952.js");
-let x = function(e) {
+  Chunk197530 = require("./197530.js");
+let b = function(e) {
   let {
     guildId: t
-  } = e, l = (0, s.cj)([m.Z], () => {
+  } = e, l = (0, a.cj)([p.Z], () => {
     var e;
-    return null != (e = m.Z.getSettings().welcomeMessage) ? e : b.z
-  }), x = i.useCallback(() => (0, c.ZDy)(async () => {
+    return null != (e = p.Z.getSettings().welcomeMessage) ? e : f.z
+  }), b = i.useCallback(() => (0, c.ZDy)(async () => {
     let {
       default: e
     } = await n.e("36371").then(n.bind(n, 893626));
     return n => {
-      var i, a;
+      var i, s;
       return (0, r.jsx)(e, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -48,45 +48,45 @@ let x = function(e) {
           })
         }
         return e
-      }({}, n), a = a = {
+      }({}, n), s = s = {
         guildId: t,
         welcomeMessage: l,
-        onSave: e => (0, f._N)(e)
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        onSave: e => (0, m._N)(e)
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+      })(Object(s)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
       }), i))
     }
-  }), [t, l]), j = (0, s.e7)([g.default], () => g.default.getId());
-  return (0, d.pw)(l) ? (0, r.jsx)(c.Button, {
+  }), [t, l]), j = (0, a.e7)([g.default], () => g.default.getId());
+  return (0, u.pw)(l) ? (0, r.jsx)(c.Button, {
     variant: "primary",
     size: "sm",
-    text: p.intl.string(p.t["9Z+aEP"]),
-    onClick: x
+    text: h.intl.string(h.t["9Z+aEP"]),
+    onClick: b
   }) : (0, r.jsxs)(c.P3F, {
-    className: h.editWelcomeSection,
-    onClick: x,
-    children: [(0, r.jsx)(u.Z, {
+    className: x.editWelcomeSection,
+    onClick: b,
+    children: [(0, r.jsx)(d.Z, {
       guildId: t,
       welcomeMessage: {
         authorIds: l.authorIds.length > 0 ? l.authorIds : [j],
         message: l.message
       }
     }), (0, r.jsx)(o.u, {
-      text: p.intl.string(p.t.bt75uw),
+      text: h.intl.string(h.t.bt75uw),
       children: (0, r.jsxs)("div", {
-        className: a()(h.actionItemEditButton, h.editWelcomeButton),
+        className: s()(x.actionItemEditButton, x.editWelcomeButton),
         children: [(0, r.jsx)(c.vdY, {
           size: "md",
           color: "currentColor"
         }), (0, r.jsx)(c.nn4, {
-          children: p.intl.string(p.t.bt75uw)
+          children: h.intl.string(h.t.bt75uw)
         })]
       })
     })]

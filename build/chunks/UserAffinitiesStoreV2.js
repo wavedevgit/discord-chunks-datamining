@@ -41,7 +41,7 @@ let u = .5,
   _ = c({}, p);
 
 function m() {
-  d = new Map(_.userAffinities.filter(e => !o.Z.isBlockedOrIgnored(e.otherUserId)).map(e => [e.otherUserId, e]))
+  d = new Map(_.userAffinities.filter(e => !a.Z.isBlockedOrIgnored(e.otherUserId)).map(e => [e.otherUserId, e]))
 }
 
 function h() {
@@ -65,11 +65,11 @@ function b() {
 }
 class y extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(o.Z), null != e) {
+    if (this.waitFor(a.Z), null != e) {
       var t;
       _.userAffinities = e.userAffinities, _.userFlags = null != (t = e.userFlags) ? t : {}, _.lastFetched = e.lastFetched, m()
     }
-    this.syncWith([o.Z], m)
+    this.syncWith([a.Z], m)
   }
   shouldFetch() {
     if (!f) return Date.now() - _.lastFetched > Chunk496232.K
@@ -87,8 +87,8 @@ class y extends(r = Chunk442837.ZP.PersistedStore) {
     return _.userFlags
   }
   compare(e, t) {
-    var n, r, i, a;
-    return (null != (i = null == (n = d.get(t)) ? true : n.communicationProbability) ? i : 0) - (null != (a = null == (r = d.get(e)) ? true : r.communicationProbability) ? a : 0)
+    var n, r, i, o;
+    return (null != (i = null == (n = d.get(t)) ? true : n.communicationProbability) ? i : 0) - (null != (o = null == (r = d.get(e)) ? true : r.communicationProbability) ? o : 0)
   }
   getUserAffinity(e) {
     return d.get(e)

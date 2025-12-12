@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk104894 = require("./104894.js");
+  Chunk162925 = require("./162925.js");
 let b = 1e3,
   y = e => {
     let t, {
@@ -52,7 +52,7 @@ let b = 1e3,
     return i.useEffect(() => {
       let e = setTimeout(() => {
         var e;
-        P || (R(true), (0, o.r5)(A.loadId), (0, u.ko)({
+        P || (R(true), (0, a.r5)(A.loadId), (0, u.ko)({
           planId: null != (e = null == y ? true : y.id) ? e : h.Xh.PREMIUM_MONTH_TIER_2,
           isGift: N,
           loadId: A.loadId,
@@ -61,13 +61,13 @@ let b = 1e3,
       }, b);
       return () => clearTimeout(e)
     }, [y, N, A, c, R, P, t]), i.useEffect(() => {
-      null !== T && (h.YQ.includes(T) && ((0, s.GZ)(T), (0, o.jg)()), v(T)), null !== C && O(C), I === A.loadId && S === _.Y.DONE && l()
+      null !== T && (h.YQ.includes(T) && ((0, s.GZ)(T), (0, a.jg)()), v(T)), null !== C && O(C), I === A.loadId && S === _.Y.DONE && l()
     }, [v, O, S, I, T, C, A, l]), (0, r.jsxs)("div", {
       className: E.body,
-      children: [(0, r.jsx)(a.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-xl/bold",
         children: g.intl.string(g.t.C4HYfy)
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
         className: E.description,
         children: g.intl.string(g.t.xfG7Jp)
@@ -80,7 +80,7 @@ let b = 1e3,
       onBackClick: n
     } = e;
     return (0, r.jsx)("div", {
-      children: (0, r.jsxs)(a.mzw, {
+      children: (0, r.jsxs)(o.mzw, {
         justify: l.Z.Justify.BETWEEN,
         align: l.Z.Align.CENTER,
         "data-migration-pending": true,

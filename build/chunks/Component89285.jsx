@@ -8,23 +8,23 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk158859 = require("./158859.js");
+  Chunk488463 = require("./488463.js");
 
 function s(e) {
   let {
     name: t,
     onRetry: n
-  } = e, s = null != t ? t : a.intl.string(a.t["11pdXZ"]);
+  } = e, s = null != t ? t : o.intl.string(o.t["11pdXZ"]);
   return (0, r.jsx)("div", {
-    className: o.container,
+    className: a.container,
     children: (0, r.jsxs)("div", {
-      className: o.headingContainer,
+      className: a.headingContainer,
       children: [(0, r.jsx)(i.Heading, {
         variant: "heading-lg/medium",
         color: "text-strong",
         children: s
       }), (0, r.jsxs)(i.P3F, {
-        className: o.error,
+        className: a.error,
         onClick: n,
         children: [(0, r.jsx)(i.Mgn, {
           size: "sm",
@@ -32,7 +32,7 @@ function s(e) {
         }), (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "text-feedback-warning",
-          children: a.intl.string(a.t.tmGHjc)
+          children: o.intl.string(o.t.tmGHjc)
         })]
       })]
     })

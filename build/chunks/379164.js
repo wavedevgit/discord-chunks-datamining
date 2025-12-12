@@ -1,7 +1,7 @@
-/** Chunk was on 92977 **/
-/** chunk id: 379164, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 64722 **/
+/** chunk id: 379164, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => f
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk447543 = require("./447543.js"),
@@ -12,48 +12,48 @@ var Chunk570140 = require("./570140.js"),
   Chunk782605 = require("./782605.js"),
   Chunk88658 = require("./88658.js"),
   Chunk981631 = require("./981631.js");
-let u = {
+let f = {
   acceptInvite(e) {
-    let t = a.ZP.getInviteContext("Desktop Invite Modal", e),
-      i = (0, l.y)(),
-      c = (0, l.h6)(),
-      f = (0, l.U1)();
-    a.ZP.acceptInvite({
+    let t = i.ZP.getInviteContext("Desktop Invite Modal", e),
+      n = (0, o.y)(),
+      s = (0, o.h6)(),
+      d = (0, o.U1)();
+    i.ZP.acceptInvite({
       inviteKey: e.code,
       context: t,
       callback: e => {
-        null == e || null == e.guild || null == e.channel || __OVERLAY__ || a.ZP.transitionToInvite(e)
+        null == e || null == e.guild || null == e.channel || __OVERLAY__ || i.ZP.transitionToInvite(e)
       }
     }).then(() => {
       if (null != e.guild) {
-        if (c) {
-          if (o.h2.getSetting().includes(e.guild.id)) {
-            let t = new Set((0, d.YK)());
-            t.delete(e.guild.id), o.h2.updateSetting(Array.from(t))
+        if (s) {
+          if (a.h2.getSetting().includes(e.guild.id)) {
+            let t = new Set((0, u.YK)());
+            t.delete(e.guild.id), a.h2.updateSetting(Array.from(t))
           }
         } else {
           var t;
-          let i = new Set((0, d.YK)());
-          i.add(null == (t = e.guild) ? true : t.id), o.h2.updateSetting(Array.from(i))
+          let n = new Set((0, u.YK)());
+          n.add(null == (t = e.guild) ? true : t.id), a.h2.updateSetting(Array.from(n))
         }
-        if (f) {
-          if (o.SE.getSetting().includes(e.guild.id)) {
-            let t = new Set((0, d._o)());
-            t.delete(e.guild.id), o.SE.updateSetting(Array.from(t))
+        if (d) {
+          if (a.SE.getSetting().includes(e.guild.id)) {
+            let t = new Set((0, u._o)());
+            t.delete(e.guild.id), a.SE.updateSetting(Array.from(t))
           }
         } else {
-          let t = new Set((0, d._o)());
-          t.add(e.guild.id), o.SE.updateSetting(Array.from(t))
+          let t = new Set((0, u._o)());
+          t.add(e.guild.id), a.SE.updateSetting(Array.from(t))
         }
-        null != i && i.length > 0 && (0, r.iq)(e.guild.id, {
-          nick: i
+        null != n && n.length > 0 && (0, l.iq)(e.guild.id, {
+          nick: n
         })
       }
       this.close()
     }, e => {
-      n.Z.dispatch({
+      r.Z.dispatch({
         type: "INVITE_MODAL_ERROR",
-        message: (0, p.O)(e.code)
+        message: (0, c.O)(e.code)
       })
     })
   },
@@ -61,10 +61,10 @@ let u = {
     let e = (0, Chunk978986.e7)(),
       t = (0, Chunk978986._J)();
     if ((0, Chunk978986.NQ)()) {
-      let i = (0, Chunk978986.y)(),
-        n = (0, Chunk978986.h6)(),
-        a = (0, Chunk978986.U1)(),
-        r = (0, Chunk978986.aP)();
+      let n = (0, Chunk978986.y)(),
+        r = (0, Chunk978986.h6)(),
+        i = (0, Chunk978986.U1)(),
+        l = (0, Chunk978986.aP)();
       Chunk626135.default.track(Chunk981631.rMx.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
         invite_code: module,
         guild_id: exports,

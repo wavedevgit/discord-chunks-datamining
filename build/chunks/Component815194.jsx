@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk595373 = require("./595373.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk318120 = require("./318120.js");
+  Chunk53179 = require("./53179.js");
 let I = (0, Chunk509613.ON)(Chunk313789.n.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["pS+K2L"]), Chunk388032.intl.string(Chunk388032.t.nuFtHH)],
   usePredicate: Chunk595373.J,
@@ -36,7 +36,7 @@ let I = (0, Chunk509613.ON)(Chunk313789.n.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
       description: exports,
       layout: "horizontal-responsive",
       children: (0, Chunk54381.jsx)("div", {
-        className: Chunk318120.keybindContainer,
+        className: Chunk53179.keybindContainer,
         children: (0, Chunk54381.jsx)(Chunk825209.Z, {
           defaultValue: module,
           onChange: t => u.Z.setMode(T.pM4.PUSH_TO_TALK, {

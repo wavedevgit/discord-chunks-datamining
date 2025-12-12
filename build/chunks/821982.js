@@ -2,11 +2,11 @@
 /** chunk id: 821982, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk768581 = require("./768581.js"),
   Chunk1585 = require("./1585.jsx");
-let a = (e, t, n) => (0, r.NZ)({
+let o = (e, t, n) => (0, r.NZ)({
   avatarDecoration: {
     asset: e
   },

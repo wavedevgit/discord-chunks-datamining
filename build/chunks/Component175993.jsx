@@ -7,18 +7,18 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
   Chunk970013 = require("./970013.js"),
-  Chunk992406 = require("./992406.js");
+  Chunk465061 = require("./465061.js");
 
 function s(e) {
   let {
     notice: t
   } = e, {
     noticeType: n,
-    useText: a
-  } = t, o = a();
+    useText: o
+  } = t, a = o();
   return (0, r.jsx)(i.M14, {
     type: n,
-    children: o
+    children: a
   })
 }
 
@@ -36,11 +36,11 @@ function c(e) {
     notice: t
   } = e;
   switch (t.type) {
-    case a.v.INLINE_NOTICE:
+    case o.v.INLINE_NOTICE:
       return (0, r.jsx)(s, {
         notice: t
       });
-    case a.v.STRONGLY_DISCOURAGED_CUSTOM:
+    case o.v.STRONGLY_DISCOURAGED_CUSTOM:
       return (0, r.jsx)(l, {
         notice: t
       })
@@ -52,7 +52,7 @@ function u(e) {
     notice: t
   } = e;
   return (0, r.jsx)("div", {
-    className: o.notice,
+    className: a.notice,
     children: (0, r.jsx)(c, {
       notice: t
     })

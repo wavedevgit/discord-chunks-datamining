@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 506648, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk39377 = require("./39377.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk322349 = require("./322349.js");
+  Chunk126373 = require("./126373.js");
 let h = [{
     feature: Chunk981631.Qa3.SINGLE_PLAYER,
     getText: () => Chunk388032.intl.string(Chunk388032.t["V+/FjO"]),
@@ -104,7 +104,7 @@ let h = [{
       })]
     })
   };
-class b extends Chunk473749.PureComponent {
+class _ extends Chunk473749.PureComponent {
   render() {
     let {
       sku: e
@@ -127,11 +127,11 @@ class b extends Chunk473749.PureComponent {
       }, t)
     });
     return 0 === exports.length ? null : (0, Chunk54381.jsxs)("div", {
-      className: Chunk322349.features,
+      className: Chunk126373.features,
       children: [(0, Chunk54381.jsx)(Chunk770146.Z, {
         children: Chunk388032.intl.string(Chunk388032.t.XXENra)
       }), exports]
     })
   }
 }
-let _ = b
+let b = _

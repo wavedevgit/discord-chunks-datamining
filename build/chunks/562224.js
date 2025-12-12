@@ -72,16 +72,16 @@ function A(e) {
   if (C(e)) return {
     pid: e.pid
   };
-  let n = (0, b.Z)(true, e, a.ZP.getRunningGames()),
+  let n = (0, b.Z)(true, e, o.ZP.getRunningGames()),
     i = !(0, _.isWindows)() || null == n || (null == e ? true : e.id.startsWith(r.vA.CAMERA)),
-    o = null != n ? n.pid : null;
-  return i || null == o ? (null == o && (null == (t = e.id) ? true : t.startsWith("prepicked:")) && (o = E.ZP.getLastPickedContentPID()), {
+    a = null != n ? n.pid : null;
+  return i || null == a ? (null == a && (null == (t = e.id) ? true : t.startsWith("prepicked:")) && (a = E.ZP.getLastPickedContentPID()), {
     sourceId: e.id,
     sourceName: e.name,
     sourceIcon: e.icon,
-    sourcePid: o
+    sourcePid: a
   }) : {
-    pid: o
+    pid: a
   }
 }
 async function N(e, t) {
@@ -93,8 +93,8 @@ async function N(e, t) {
     x = null == (n = u.Z.getGuild(D)) ? true : n.premiumTier;
   if (null == P || null == w || null == R) return [false, "no user or channel"];
   let L = null;
-  if (null == (L = "number" == typeof e ? a.ZP.getGameForPID(e) : e)) return [false, "no source"];
-  if (!d.Z.getUseSystemScreensharePicker() && !await o.Z.hasPermission(O.Eu.SCREEN_RECORDING, {
+  if (null == (L = "number" == typeof e ? o.ZP.getGameForPID(e) : e)) return [false, "no source"];
+  if (!d.Z.getUseSystemScreensharePicker() && !await a.Z.hasPermission(O.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
     })) return [false, "no permission"];
   let {

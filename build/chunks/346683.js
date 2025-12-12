@@ -2,12 +2,12 @@
 /** chunk id: 346683, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Q: () => a
+  Q: () => o
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk542094 = require("./542094.js");
 
-function a(e) {
+function o(e) {
   let [t, n] = r.useState(e);
   return r.useLayoutEffect(() => {
     if (e === i.JS.LEAVE) {

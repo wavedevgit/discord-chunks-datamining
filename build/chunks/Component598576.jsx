@@ -2,7 +2,7 @@
 /** chunk id: 598576, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  default: () => f
+  default: () => b
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,24 +15,24 @@ var Chunk481060 = require("./481060.js"),
   Chunk319392 = require("./319392.jsx"),
   Chunk798930 = require("./798930.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk926375 = require("./926375.js");
+  Chunk771831 = require("./771831.js");
 
-function f(e) {
+function b(e) {
   let {
     transitionState: t,
     onClose: n,
-    analyticsLocation: f
+    analyticsLocation: b
   } = e, {
     slide: x,
     gotoNext: g,
     gotoError: h,
     handleWaitingForConnection: C,
-    handleAuthToken: m,
-    expectedCallbackState: v,
-    callbackData: O
-  } = (0, i.k)(f, p.ABu.XBOX);
+    handleAuthToken: _,
+    expectedCallbackState: m,
+    callbackData: v
+  } = (0, i.k)(b, p.ABu.XBOX);
   return (0, o.jsx)(r.Y0X, {
-    className: b.modal,
+    className: f.modal,
     transitionState: t,
     disableTrack: true,
     parentComponent: "XboxLinkModal",
@@ -50,7 +50,7 @@ function f(e) {
         children: (0, o.jsx)(l.Z, {
           isWaitingForConnection: false,
           onWaitingForConnection: C,
-          onAuthToken: m,
+          onAuthToken: _,
           onError: h,
           onClose: n
         })
@@ -58,15 +58,15 @@ function f(e) {
         id: u.O.PRE_CONNECT_WAITING,
         children: (0, o.jsx)(l.Z, {
           isWaitingForConnection: true,
-          expectedCallbackState: v,
-          onAuthToken: m,
+          expectedCallbackState: m,
+          onAuthToken: _,
           onError: h,
           onClose: n
         })
       }), (0, o.jsx)(r.Mi4, {
         id: u.O.DISCORD_CONSENT,
         children: (0, o.jsx)(s.Z, {
-          authToken: O,
+          authToken: v,
           onContinue: g,
           onError: h,
           onClose: n

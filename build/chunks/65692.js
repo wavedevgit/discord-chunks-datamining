@@ -29,10 +29,10 @@ function g(e) {
         O(new Uint8Array(e))
       })
     } else O(await (0, o.Il)(d.Xj, new Uint8Array(t), e, new Uint8Array(n), r))
-  }, [O]), T = n.useRef(null);
+  }, [O]), _ = n.useRef(null);
   return n.useEffect(() => {
-    null != b && null != m && null == T.current && (p(true), T.current = setTimeout(() => S(r, m, t, b), 0));
-    let e = T.current;
+    null != b && null != m && null == _.current && (p(true), _.current = setTimeout(() => S(r, m, t, b), 0));
+    let e = _.current;
     return () => {
       null != e && clearTimeout(e)
     }

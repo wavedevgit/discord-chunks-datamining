@@ -55,7 +55,7 @@ let d = [{
             options: d,
             placeholder: n,
             isDisabled: t
-          }), (0, r.jsx)(o.o, {
+          }), (0, r.jsx)(a.o, {
             placeholder: n,
             disabled: t
           }), (0, r.jsx)(l.d, {
@@ -64,7 +64,7 @@ let d = [{
             options: d,
             placeholder: n,
             isDisabled: t
-          }), (0, r.jsx)(a.W, {
+          }), (0, r.jsx)(o.W, {
             onSelect: m,
             value: _,
             disabled: t

@@ -10,14 +10,14 @@ var Chunk970661 = require("./970661.js"),
     }
   }();
 i || Object.prototype.__defineGetter__;
-var a = i ? Object.defineProperty : function(e, t, n) {
+var o = i ? Object.defineProperty : function(e, t, n) {
     "get" in n && e.__defineGetter__ ? e.__defineGetter__(t, n.get) : (!r.hop.call(e, t) || "value" in n) && (e[t] = n.value)
   },
-  o = Object.create || function(e, t) {
+  a = Object.create || function(e, t) {
     var n, i;
 
-    function o() {}
-    for (i in o.prototype = e, n = new o, t) r.hop.call(t, i) && a(n, i, t[i]);
+    function a() {}
+    for (i in a.prototype = e, n = new a, t) r.hop.call(t, i) && o(n, i, t[i]);
     return n
   };
-exports.defineProperty = a, exports.objCreate = o
+exports.defineProperty = o, exports.objCreate = a

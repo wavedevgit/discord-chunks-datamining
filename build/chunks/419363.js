@@ -4,13 +4,13 @@
 require.d(exports, {
   M9: () => s,
   Zh: () => i,
-  e6: () => a,
-  iq: () => o
+  e6: () => o,
+  iq: () => a
 }), require("./704826.js"), require("./35282.js");
 var Chunk441729 = require("./441729.js");
 let i = null != window.speechSynthesis;
 
-function a(e, t) {
+function o(e, t) {
   let n = e.replace(/(https?:\/\/[^\s]+)/g, e => {
     let t = e.match(/^https?:\/\/(?:www\.)?([^/?#]+)(?:[/?#]|$)/i);
     return null != t ? t[1] : ""
@@ -20,7 +20,7 @@ function a(e, t) {
   return i.rate = r.Z.speechRate, i
 }
 
-function o(e, t) {
+function a(e, t) {
   i && (e.voice = t, speechSynthesis.speak(e))
 }
 

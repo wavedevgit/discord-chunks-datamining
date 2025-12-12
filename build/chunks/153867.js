@@ -72,14 +72,14 @@ function E(e) {
     theme: r,
     useSystemTheme: i
   } = e, s = arguments.length > 1 && true !== arguments[1] ? arguments[1] : f.fy.INFREQUENT_USER_ACTION, u = "system" === r ? _.KW.ON : _.KW.OFF, d = null != i ? i : u;
-  if (o.Z.dispatch({
+  if (a.Z.dispatch({
       type: "UNSYNCED_USER_SETTINGS_UPDATE",
       settings: {
         useSystemTheme: d
       }
-    }), null == t && "system" !== r && (0, a.wj)(r) && (0, c.Ag)({
+    }), null == t && "system" !== r && (0, o.wj)(r) && (0, c.Ag)({
       [_.zd.DARK]: r
-    }), o.Z.dispatch({
+    }), a.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         appearance: {
@@ -101,19 +101,19 @@ function E(e) {
 }
 let b = {
   overrideLocale(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "USER_SETTINGS_LOCALE_OVERRIDE",
       locale: e
     })
   },
   updatedUnsyncedSettings(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "UNSYNCED_USER_SETTINGS_UPDATE",
       settings: e
     })
   },
   setShouldSyncTextSettings(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         text: {
@@ -133,7 +133,7 @@ let b = {
   },
   setShouldSyncAppearanceSettings(e) {
     var t;
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         appearance: {
@@ -150,7 +150,7 @@ let b = {
     })
   },
   applySettingsOverride(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "USER_SETTINGS_OVERRIDE_APPLY",
       settings: e
     })
@@ -168,7 +168,7 @@ let b = {
     })
   }, f.fy.INFREQUENT_USER_ACTION),
   updateTheme(e) {
-    o.Z.dispatch({
+    a.Z.dispatch({
       type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE",
       changes: {
         appearance: {

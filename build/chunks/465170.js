@@ -100,16 +100,16 @@ module.exports = t, t.Node = i, t.create = t, t.prototype.removeNode = function(
   var r = new t;
   if (n < e || n < 0) return r;
   e < 0 && (e = 0), n > this.length && (n = this.length);
-  for (var i = 0, a = this.head; null !== a && i < e; i++) a = a.next;
-  for (; null !== a && i < n; i++, a = a.next) r.push(a.value);
+  for (var i = 0, o = this.head; null !== o && i < e; i++) o = o.next;
+  for (; null !== o && i < n; i++, o = o.next) r.push(o.value);
   return r
 }, t.prototype.sliceReverse = function(e, n) {
   (n = n || this.length) < 0 && (n += this.length), (e = e || 0) < 0 && (e += this.length);
   var r = new t;
   if (n < e || n < 0) return r;
   e < 0 && (e = 0), n > this.length && (n = this.length);
-  for (var i = this.length, a = this.tail; null !== a && i > n; i--) a = a.prev;
-  for (; null !== a && i > e; i--, a = a.prev) r.push(a.value);
+  for (var i = this.length, o = this.tail; null !== o && i > n; i--) o = o.prev;
+  for (; null !== o && i > e; i--, o = o.prev) r.push(o.value);
   return r
 }, t.prototype.reverse = function() {
   for (var e = this.head, t = this.tail, n = module; null !== n; n = n.prev) {

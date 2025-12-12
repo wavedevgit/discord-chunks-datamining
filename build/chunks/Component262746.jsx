@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 262746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk496675 = require("./496675.js"),
   Chunk993706 = require("./993706.js"),
   Chunk796263 = require("./796263.jsx"),
-  Chunk162085 = require("./162085.js"),
+  Chunk964721 = require("./964721.js"),
   Chunk388032 = require("./388032.jsx");
 
 function g(e) {
@@ -22,14 +22,14 @@ function g(e) {
     channel: t,
     user: g,
     guild: b
-  } = e, C = (0, l.e7)([p.Z], () => null != g && p.Z.isUserBanned(g.id)), y = null != g && null == C, [v, O] = r.useState(y), x = (0, l.e7)([d.Z], () => null != g && null != b && (0, u.lD)(g, b, [d.Z]));
+  } = e, C = (0, l.e7)([p.Z], () => null != g && p.Z.isUserBanned(g.id)), y = null != g && null == C, [v, _] = r.useState(y), O = (0, l.e7)([d.Z], () => null != g && null != b && (0, u.lD)(g, b, [d.Z]));
   if ((0, c.ZP)(() => {
-      y && s.Z.searchGuildBans(t.guild_id, true, [null == g ? true : g.id]).finally(() => O(false))
-    }), !x) return null;
-  let E = true === C ? m.intl.string(h.default.dpfwQ1) : m.intl.string(h.default.ASv23S),
-    j = "ban-user-".concat(null == g ? true : g.id);
-  return (0, i.jsx)(f.Z, {
-    text: E,
+      y && s.Z.searchGuildBans(t.guild_id, true, [null == g ? true : g.id]).finally(() => _(false))
+    }), !O) return null;
+  let x = true === C ? m.intl.string(f.default.dpfwQ1) : m.intl.string(f.default.ASv23S),
+    E = "ban-user-".concat(null == g ? true : g.id);
+  return (0, i.jsx)(h.Z, {
+    text: x,
     icon: o.pgN,
     onClick: () => {
       null != g && (0, o.ZDy)(async () => {
@@ -75,5 +75,5 @@ function g(e) {
     disabled: true === C || v,
     submitting: v,
     color: a.zx.Colors.RED
-  }, j)
+  }, E)
 }

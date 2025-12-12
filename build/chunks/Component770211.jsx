@@ -53,8 +53,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -62,8 +62,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let p = e => {
@@ -75,10 +75,10 @@ let p = e => {
       colorClass: _ = ""
     } = e,
     m = d(e, ["size", "width", "height", "color", "colorClass"]);
-  let h = (0, o.m)(s),
+  let h = (0, a.m)(s),
     g = null != (t = null == h ? true : h.width) ? t : c,
     E = null != (n = null == h ? true : h.height) ? n : f;
-  return (0, r.jsx)("svg", u(l({}, (0, a.Z)(m)), {
+  return (0, r.jsx)("svg", u(l({}, (0, o.Z)(m)), {
     xmlns: "http://www.w3.org/2000/svg",
     width: g,
     height: E,

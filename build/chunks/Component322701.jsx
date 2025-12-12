@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk535881 = require("./535881.js");
+  Chunk983703 = require("./983703.js");
 let f = function(e) {
   let {
     rows: t,
@@ -21,19 +21,19 @@ let f = function(e) {
     hasSearchQuery: g,
     sectionFilter: h,
     footer: m,
-    renderSectionFooter: b
-  } = e, _ = (0, s.e7)([u.Z], () => u.Z.keyboardModeEnabled), E = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), O = (0, l.ZP)({
+    renderSectionFooter: _
+  } = e, b = (0, s.e7)([u.Z], () => u.Z.keyboardModeEnabled), E = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), O = (0, l.ZP)({
     id: "people",
-    isEnabled: _,
+    isEnabled: b,
     async scrollToStart() {},
     async scrollToEnd() {}
   }), v = h !== d.pJs.ONLINE && h !== d.pJs.ALL, y = E || g || v, I = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
-    children: [f(t), e.map(n), null == b ? true : b(t)]
+    children: [f(t), e.map(n), null == _ ? true : _(t)]
   }, t) : (0, r.jsxs)(o.W, {
     transitionAppear: false,
     component: "div",
-    children: [f(t), e.map(n), null == b ? true : b(t)]
-  }, t)), [n, f, b, t, y]);
+    children: [f(t), e.map(n), null == _ ? true : _(t)]
+  }, t)), [n, f, _, t, y]);
   return (0, r.jsx)(a.bG, {
     navigator: O,
     children: (0, r.jsx)(a.SJ, {

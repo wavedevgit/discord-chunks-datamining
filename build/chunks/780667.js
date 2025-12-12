@@ -2,20 +2,20 @@
 /** chunk id: 780667, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K: () => a
+  K: () => o
 });
 var Chunk591830 = require("./591830.js"),
   Chunk473749 = require("./473749.js");
 
-function a(e, t, n) {
-  let a = (0, i.useMemo)(() => new(0, r.y), []),
+function o(e, t, n) {
+  let o = (0, i.useMemo)(() => new(0, r.y), []),
     {
-      children: o,
+      children: a,
       items: s,
       collection: l
     } = e;
-  return (0, i.useMemo)(() => l || t(a.build({
-    children: o,
+  return (0, i.useMemo)(() => l || t(o.build({
+    children: a,
     items: s
-  }, n)), [a, o, s, l, n, t])
+  }, n)), [o, a, s, l, n, t])
 }

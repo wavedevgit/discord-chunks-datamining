@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var r, i, Chunk473749 = require("./473749.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,9 +24,9 @@ let l = (0, require("./112724.jsx").Z)((i = class extends(r = Chunk473749.Compon
       width: n,
       desiredItemWidth: r,
       maxColumns: i
-    } = e, a = s(n, r, i);
-    return a !== t.columns ? {
-      columns: a
+    } = e, o = s(n, r, i);
+    return o !== t.columns ? {
+      columns: o
     } : null
   }
   render() {
@@ -40,10 +40,10 @@ let l = (0, require("./112724.jsx").Z)((i = class extends(r = Chunk473749.Compon
     return require(r, module, exports)
   }
   constructor(...e) {
-    super(...e), o(this, "state", {
+    super(...e), a(this, "state", {
       columns: s(this.props.width, this.props.desiredItemWidth, this.props.maxColumns)
     })
   }
-}, o(i, "defaultProps", {
+}, a(i, "defaultProps", {
   desiredItemWidth: 200
 }), i))

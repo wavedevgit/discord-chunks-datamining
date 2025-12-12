@@ -8,10 +8,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk823379 = require("./823379.js");
-let o = Chunk473749.createContext(true);
+let a = Chunk473749.createContext(true);
 
 function s() {
-  let e = Chunk473749.useContext(o);
+  let e = Chunk473749.useContext(a);
   if (null == module) throw Error("No PollFocusContextProvider found");
   return module
 }
@@ -20,14 +20,14 @@ function l(e) {
   let {
     children: t,
     actionButtonRef: n,
-    pollAnswerRef: a,
+    pollAnswerRef: o,
     manageFocusOnAction: s
   } = e, l = i.useMemo(() => ({
     actionButtonRef: n,
-    pollAnswerRef: a,
+    pollAnswerRef: o,
     manageFocusOnAction: s
-  }), [n, a, s]);
-  return (0, r.jsx)(o.Provider, {
+  }), [n, o, s]);
+  return (0, r.jsx)(a.Provider, {
     value: l,
     children: t
   })
@@ -36,20 +36,20 @@ function l(e) {
 function c(e) {
   let {
     children: t
-  } = e, [n, o] = i.useState(), s = i.useRef(null), c = i.useRef(null), u = e => {
+  } = e, [n, a] = i.useState(), s = i.useRef(null), c = i.useRef(null), u = e => {
     switch (e) {
       case "submit":
       case "cancel":
-        o("ACTION_BUTTON");
+        a("ACTION_BUTTON");
         break;
       case "remove":
       case "showVotes":
-        o("POLL_ANSWERS");
+        a("POLL_ANSWERS");
         break;
       case "showVoterDetails":
         break;
       default:
-        (0, a.vE)(e)
+        (0, o.vE)(e)
     }
   };
   return i.useEffect(() => {

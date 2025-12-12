@@ -3,9 +3,9 @@
 e = require.nmd(module);
 var Chunk325237 = require("./325237.js"),
   i = exports && !exports.nodeType && exports,
-  a = i && module && !module.nodeType && module,
-  o = a && a.exports === i ? Chunk325237.Buffer : true,
-  s = o ? o.allocUnsafe : true;
+  o = i && module && !module.nodeType && module,
+  a = o && o.exports === i ? Chunk325237.Buffer : true,
+  s = a ? a.allocUnsafe : true;
 
 function l(e, t) {
   if (t) return e.slice();

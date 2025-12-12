@@ -1,9 +1,9 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 771027, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Tu: () => g,
   UM: () => m,
-  j1: () => h
+  j1: () => f
 }), require("./388685.js"), require("./387201.js"), require("./642613.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -17,7 +17,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk406463 = require("./406463.js"),
   Chunk78332 = require("./78332.js");
 
-function h(e) {
+function f(e) {
   let {
     channel: t
   } = e, n = (0, r.e7)([o.Z], () => o.Z.getUserAffinitiesMap(), []), l = null == t ? true : t.guild_id, a = new Set((0, r.e7)([u.ZP], () => null == t ? [] : u.ZP.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), p = (0, r.Wu)([s.ZP, c.default], () => s.ZP.getMembers(l).map(e => c.default.getUser(e.userId)).filter(d.lm).filter(e => !a.has(e.id)), [l, a]);
@@ -39,7 +39,7 @@ function m(e) {
     autoTrackExposure: false,
     guildId: e.guild_id,
     location: "VoiceInviteSuggestionsUtils"
-  }), n = (0, r.e7)([f.Z], () => f.Z.getShouldShowPopover(e.id), [e.id]);
+  }), n = (0, r.e7)([h.Z], () => h.Z.getShouldShowPopover(e.id), [e.id]);
   return {
     shouldShow: t && n,
     dismiss: i.useCallback(() => {

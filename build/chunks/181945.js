@@ -40,10 +40,10 @@ function _(e, t, n) {
     }), r.push({
       channelId: d.default.cast(e),
       readStateType: p.W.GUILD_ONBOARDING_QUESTION,
-      messageId: o.Z.ackIdForGuild(e)
+      messageId: a.Z.ackIdForGuild(e)
     })
   }), u.default.track(f.rMx.MARK_AS_READ, {
     source: t,
     type: "guild"
-  }), (0, a.y5)(r, n)
+  }), (0, o.y5)(r, n)
 }

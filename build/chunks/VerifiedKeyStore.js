@@ -30,7 +30,7 @@ function d(e) {
     userId: t,
     key: n
   } = e, r = u(t), i = new Uint8Array(n);
-  r[(0, a.MK)(i)] = Date.now()
+  r[(0, o.MK)(i)] = Date.now()
 }
 
 function f(e) {
@@ -40,8 +40,8 @@ function f(e) {
   } = e, r = c[t];
   if (null == r) returnfalse;
   let i = delete r[n],
-    a = false;
-  return 0 === Object.keys(r).length && (delete c[t], a = true), i || a
+    o = false;
+  return 0 === Object.keys(r).length && (delete c[t], o = true), i || o
 }
 
 function p(e) {
@@ -62,7 +62,7 @@ class _ extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getKeyTrustedAt(e, t) {
     var n;
-    let r = (0, a.MK)(t);
+    let r = (0, o.MK)(t);
     return null == (n = c[e]) ? true : n[r]
   }
   isKeyVerified(e, t) {

@@ -1,7 +1,7 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 82697 **/
 /** chunk id: 99843, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  j: () => y
+  j: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,42 +16,42 @@ var Chunk54381 = require("./54381.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk408215 = require("./408215.js");
-let m = e => {
+  Chunk782196 = require("./782196.js");
+let g = e => {
     let {
       channel: t
     } = e;
     return (0, f.m$)({
       channelId: t.id
-    }) ? (0, r.jsx)(l.u, {
-      text: g.intl.string(g.t.QyZ4Td),
+    }) ? (0, r.jsx)(o.u, {
+      text: h.intl.string(h.t.QyZ4Td),
       children: (0, r.jsx)(a.tQf, {
         size: "xs",
-        "aria-label": g.intl.string(g.t.VHXh8a),
+        "aria-label": h.intl.string(h.t.VHXh8a),
         color: a.TVs.colors.INTERACTIVE_TEXT_DEFAULT
       })
     }) : null
   },
-  y = Chunk473749.memo(function(e) {
+  j = Chunk473749.memo(function(e) {
     let {
       channel: t
     } = e, i = t.id, f = (0, c.ZP)(t);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.u, {
+      children: [(0, r.jsx)(o.u, {
         asContainer: true,
-        text: g.intl.string(g.t["5Q9+/L"]),
+        text: h.intl.string(h.t["5Q9+/L"]),
         position: "bottom",
         children: (0, r.jsxs)(a.P3F, {
-          className: b.hoverableContainer,
+          className: m.hoverableContainer,
           onClick: () => {
             (0, d.B)(i, s.Z.HEADER_BAR)
           },
-          onContextMenu: e => (0, o.jW)(e, () => Promise.all([n.e("79695"), n.e("25421"), n.e("38357")]).then(n.bind(n, 354741)).then(e => {
+          onContextMenu: e => (0, l.jW)(e, () => Promise.all([n.e("79695"), n.e("25421"), n.e("38357")]).then(n.bind(n, 354741)).then(e => {
             let {
               default: n
             } = e;
             return e => {
-              var i, l;
+              var i, o;
               return (0, r.jsx)(n, (i = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
@@ -69,18 +69,18 @@ let m = e => {
                   })
                 }
                 return e
-              }({}, e), l = l = {
+              }({}, e), o = o = {
                 channel: t,
                 selected: true
-              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                   var r = Object.getOwnPropertySymbols(e);
                   n.push.apply(n, r)
                 }
                 return n
-              })(Object(l)).forEach(function(e) {
-                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+              })(Object(o)).forEach(function(e) {
+                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
               }), i))
             }
           }), {
@@ -88,15 +88,15 @@ let m = e => {
           }),
           onDoubleClick: e => e.stopPropagation(),
           onMouseEnter: () => {
-            h.default.track(p.rMx.GDM_EDIT_INTERACTED, {
+            b.default.track(p.rMx.GDM_EDIT_INTERACTED, {
               channel_id: t.id,
               action: "entry_point_hovered",
               location: s.Z.HEADER_BAR
             })
           },
-          "aria-label": g.intl.string(g.t["5Q9+/L"]),
+          "aria-label": h.intl.string(h.t["5Q9+/L"]),
           children: [(0, r.jsx)(u.Z, {
-            className: b.gdmIcon,
+            className: m.gdmIcon,
             "aria-hidden": true,
             channel: t,
             size: a.EFr.SIZE_20,
@@ -106,12 +106,12 @@ let m = e => {
             color: "text-strong",
             children: null != f ? f : ""
           }), (0, r.jsx)(a.vdY, {
-            className: b.editIcon,
+            className: m.editIcon,
             size: "xs",
             color: "currentColor"
           })]
         })
-      }), (0, r.jsx)(m, {
+      }), (0, r.jsx)(g, {
         channel: t
       })]
     })

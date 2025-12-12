@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 176038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _Y: () => T,
@@ -25,8 +25,8 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js"),
   Chunk469115 = require("./469115.js"),
   Chunk959517 = require("./959517.js");
-let C = [Chunk981631.BRd.DARK, Chunk981631.BRd.LIGHT, Chunk981631.BRd.DARKER, Chunk981631.BRd.MIDNIGHT],
-  _ = [Chunk524437.Pi.COMPACT, Chunk524437.Pi.COZY, Chunk524437.Pi.DEFAULT];
+let y = [Chunk981631.BRd.DARK, Chunk981631.BRd.LIGHT, Chunk981631.BRd.DARKER, Chunk981631.BRd.MIDNIGHT],
+  C = [Chunk524437.Pi.COMPACT, Chunk524437.Pi.COZY, Chunk524437.Pi.DEFAULT];
 
 function S(e) {
   return e[Math.floor(Math.random() * e.length)]
@@ -52,7 +52,7 @@ async function E() {
         customUserThemeSettings: true
       }, Chunk675478.fy.INFREQUENT_USER_ACTION)
     } else {
-      let e = S(C);
+      let e = S(y);
       await Chunk153867.ZI({
         theme: module,
         backgroundGradientPresetId: true,
@@ -88,7 +88,7 @@ function T() {
     (0, Chunk857595.oL)(module);
     let t = S(Chunk959517.fP);
     (0, Chunk857595.ZZ)(exports);
-    let n = S(_);
+    let n = S(C);
     Chunk695346.YC.updateSetting(require)
   } catch (e) {}
 }
@@ -96,24 +96,24 @@ function T() {
 function N() {
   Chunk473749.useEffect(() => {
     var e, t, n, a, r;
-    let g = Chunk594174.default.getCurrentUser(),
+    let b = Chunk594174.default.getCurrentUser(),
       v = Chunk695346.L1.getSetting(),
       j = Chunk1870.Z.purchases,
-      y = (0, Chunk884697.Ad)(Chunk469115),
-      C = (0, Chunk884697.jT)(Chunk469115),
-      _ = Chunk210887.Z.theme,
+      _ = (0, Chunk884697.Ad)(Chunk469115),
+      y = (0, Chunk884697.jT)(Chunk469115),
+      C = Chunk210887.Z.theme,
       S = Chunk981631.backgroundGradientPresetId,
       E = null == Chunk74538 || null == (e = Chunk74538.avatarDecoration) ? true : module.skuId,
       O = null == Chunk74538 || null == (n = Chunk74538.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
       T = null != E && null != (a = Chunk959517.find(e => e.skuId === E)) ? Chunk473749 : null,
-      N = null != O && null != (r = C.find(e => e.skuId === O)) ? Chunk524437 : null,
+      N = null != O && null != (r = y.find(e => e.skuId === O)) ? Chunk524437 : null,
       P = Chunk607070.Z.fontSize,
       w = Chunk607070.Z.messageGroupSpacing,
       I = Chunk695346.YC.getSetting();
     return () => {
       try {
         Chunk153867.ZI({
-          theme: _,
+          theme: C,
           backgroundGradientPresetId: null != S ? S : true,
           customUserThemeSettings: true
         }, Chunk675478.fy.INFREQUENT_USER_ACTION), (0, Chunk150039.PO)(T), (0, Chunk150039.Wh)(N);

@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 175281, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   s = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
@@ -24,9 +24,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk264549 = require("./264549.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk107388 = require("./107388.js");
+  Chunk870525 = require("./870525.js");
 
-function S(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,22 +34,22 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let I = {
+let S = {
   UP: u().throttle(() => (0, Chunk460181.GN)("ddr-up"), 100),
   DOWN: u().throttle(() => (0, Chunk460181.GN)("ddr-down"), 100),
   LEFT: u().throttle(() => (0, Chunk460181.GN)("ddr-left"), 100),
   RIGHT: u().throttle(() => (0, Chunk460181.GN)("ddr-right"), 100)
 };
 
-function _(e) {
+function I(e) {
   switch (e.keyCode) {
-    case C.yXg.ARROW_UP:
+    case j.yXg.ARROW_UP:
       return "UP";
-    case C.yXg.ARROW_DOWN:
+    case j.yXg.ARROW_DOWN:
       return "DOWN";
-    case C.yXg.ARROW_LEFT:
+    case j.yXg.ARROW_LEFT:
       return "LEFT";
-    case C.yXg.ARROW_RIGHT:
+    case j.yXg.ARROW_RIGHT:
       return "RIGHT";
     default:
       return null
@@ -62,8 +62,8 @@ function N(e) {
     showBackdrop: t
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(E.backdrop, {
-      [E.show]: t
+    className: o()(x.backdrop, {
+      [x.show]: t
     })
   })
 }
@@ -71,35 +71,35 @@ function N(e) {
 function Z() {
   let e = Chunk473749.useMemo(() => u()((0, Chunk612226.Rv)()).groupBy(e => e.group).value(), []);
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk107388.keyboardShortcutList,
+    className: Chunk870525.keyboardShortcutList,
     children: P.map(t => {
       let n = e[t],
         i = (0, g.UD)(t),
         l = (0, g.U6)(t);
       return (0, r.jsxs)("div", {
-        className: E.keyboardShortcutSection,
+        className: x.keyboardShortcutSection,
         children: [(0, r.jsxs)("div", {
           children: [(0, r.jsx)(p.Heading, {
             variant: "heading-lg/semibold",
             children: i
           }), null != l && (0, r.jsx)(p.Text, {
-            className: E.keybindGroupDescription,
+            className: x.keybindGroupDescription,
             variant: "text-sm/normal",
             children: l
           })]
         }), (0, r.jsx)("div", {
-          className: E.keyboardShortcutListGroup,
+          className: x.keyboardShortcutListGroup,
           children: n.map((e, t) => {
             var n;
             return (null == (n = e.predicate) ? true : n.call(e)) === false ? null : (0, r.jsxs)("div", {
-              className: E.keybindGroup,
+              className: x.keybindGroup,
               children: [(0, r.jsx)(p.Text, {
                 variant: "text-sm/normal",
                 children: e.description
               }), (0, r.jsx)("div", {
                 className: "keybind-shortcuts",
                 children: e.binds.map(e => (0, r.jsx)(p.M2$, {
-                  className: E.keybindKey,
+                  className: x.keybindKey,
                   shortcut: e
                 }, e))
               })]
@@ -133,40 +133,40 @@ class w extends Chunk473749.PureComponent {
       RIGHT: i
     } = this.state;
     return (0, Chunk54381.jsxs)(Chunk748780.Z.div, {
-      className: Chunk107388.keyboardShortcutsModal,
+      className: Chunk870525.keyboardShortcutsModal,
       style: this.getStyles(),
       children: [(0, Chunk54381.jsxs)(Chunk481060.H, {
-        className: Chunk107388.modalTitle,
+        className: Chunk870525.modalTitle,
         children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk107388.content,
+          className: Chunk870525.content,
           children: Chunk388032.intl.string(Chunk388032.t["1BdUtx"])
         }), (0, Chunk54381.jsx)(Chunk481060.M2$, {
           shortcut: "mod+/"
         })]
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk107388.modalSubtitle,
+        className: Chunk870525.modalSubtitle,
         children: Chunk388032.intl.string(Chunk388032.t["2t19lU"])
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk107388.ddrArrows,
+        className: Chunk870525.ddrArrows,
         children: [(0, Chunk54381.jsx)(T, {
           arrow: "LEFT",
           isActive: require,
-          className: Chunk107388.left,
+          className: Chunk870525.left,
           children: "left"
         }), (0, Chunk54381.jsx)(T, {
           arrow: "DOWN",
           isActive: exports,
-          className: Chunk107388.down,
+          className: Chunk870525.down,
           children: "down"
         }), (0, Chunk54381.jsx)(T, {
           arrow: "UP",
           isActive: module,
-          className: Chunk107388.up,
+          className: Chunk870525.up,
           children: "up"
         }), (0, Chunk54381.jsx)(T, {
           arrow: "RIGHT",
           isActive: Chunk473749,
-          className: Chunk107388.right,
+          className: Chunk870525.right,
           children: "right"
         })]
       }), (0, Chunk54381.jsx)(Chunk481060.yWw, {
@@ -179,7 +179,7 @@ class w extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), S(this, "state", {
+    super(...e), E(this, "state", {
       UP: false,
       DOWN: false,
       LEFT: false,
@@ -188,31 +188,31 @@ class w extends Chunk473749.PureComponent {
       scaleX: new d.Z.Value(1),
       scaleY: new d.Z.Value(0),
       animating: false
-    }), S(this, "scrollerRef", i.createRef()), S(this, "lastInputedKeys", []), S(this, "scrollPageUp", () => {
+    }), E(this, "scrollerRef", i.createRef()), E(this, "lastInputedKeys", []), E(this, "scrollPageUp", () => {
       let e = this.scrollerRef.current;
       s()(null != e, "Scroller is pagedUp when not mounted"), e.scrollPageUp({
         animate: true
       })
-    }), S(this, "scrollPageDown", () => {
+    }), E(this, "scrollPageDown", () => {
       let e = this.scrollerRef.current;
       s()(null != e, "Scroller is pagedDown when not mounted"), e.scrollPageDown({
         animate: true
       })
-    }), S(this, "arrowUp", e => {
+    }), E(this, "arrowUp", e => {
       let {
         direction: t
       } = e;
       this.setState({
         [t]: false
       })
-    }), S(this, "arrowDown", e => {
+    }), E(this, "arrowDown", e => {
       let {
         direction: t
       } = e;
-      I[t](), this.setState({
+      S[t](), this.setState({
         [t]: true
       })
-    }), S(this, "componentWillLeave", e => {
+    }), E(this, "componentWillLeave", e => {
       this.setState({
         animating: true
       }), this.state.opacity.setValue(1), this.state.scaleX.setValue(.5), this.state.scaleY.setValue(1), d.Z.sequence([d.Z.timing(this.state.opacity, {
@@ -220,9 +220,9 @@ class w extends Chunk473749.PureComponent {
         duration: 800,
         easing: d.Z.Easing.cubic
       })]).start(e)
-    }), S(this, "toggleOpacity", () => {
+    }), E(this, "toggleOpacity", () => {
       1 === this.state.opacity._value ? this.state.opacity.setValue(0) : this.state.opacity.setValue(1)
-    }), S(this, "getStyles", () => ({
+    }), E(this, "getStyles", () => ({
       opacity: this.state.opacity.interpolate({
         inputRange: [0, 1],
         outputRange: [0, 1]
@@ -238,19 +238,19 @@ class w extends Chunk473749.PureComponent {
           outputRange: [0, 1]
         })
       }]
-    })), S(this, "handleKeyDown", e => {
-      if (this.lastInputedKeys.push(e.keyCode), this.lastInputedKeys = this.lastInputedKeys.slice(false), this.lastInputedKeys[0] === C.yXg.H && this.lastInputedKeys[1] === C.yXg.H && this.lastInputedKeys[2] === C.yXg.ARROW_RIGHT && this.lastInputedKeys[3] === C.yXg.N && this.lastInputedKeys[4] === C.yXg.K && this.props.activateRagingDemon(), this.props.keyboardModeEnabled) return;
-      let t = _(e);
+    })), E(this, "handleKeyDown", e => {
+      if (this.lastInputedKeys.push(e.keyCode), this.lastInputedKeys = this.lastInputedKeys.slice(false), this.lastInputedKeys[0] === j.yXg.H && this.lastInputedKeys[1] === j.yXg.H && this.lastInputedKeys[2] === j.yXg.ARROW_RIGHT && this.lastInputedKeys[3] === j.yXg.N && this.lastInputedKeys[4] === j.yXg.K && this.props.activateRagingDemon(), this.props.keyboardModeEnabled) return;
+      let t = I(e);
       null !== t && (e.stopPropagation(), e.preventDefault(), this.arrowDown({
         direction: t
       }))
-    }), S(this, "handleKeyUp", e => {
+    }), E(this, "handleKeyUp", e => {
       if (this.props.keyboardModeEnabled) return;
-      let t = _(e);
+      let t = I(e);
       null !== t && (e.stopPropagation(), e.preventDefault(), this.arrowUp({
         direction: t
       }))
-    }), S(this, "onArrowClick", e => {
+    }), E(this, "onArrowClick", e => {
       this.arrowDown({
         direction: e
       })
@@ -263,9 +263,9 @@ function T(e) {
     isActive: t,
     arrow: n,
     className: l,
-    children: o
+    children: a
   } = e, [s, c] = i.useState(t), u = i.useCallback(() => {
-    I[n](), c(true)
+    S[n](), c(true)
   }, [n]);
   return i.useEffect(() => {
     if (s) {
@@ -274,10 +274,10 @@ function T(e) {
     }
   }, [s]), (0, r.jsx)(p.P3F, {
     onClick: u,
-    className: a()(E.arrow, l, {
-      [E.active]: t || s
+    className: o()(x.arrow, l, {
+      [x.active]: t || s
     }),
-    children: o
+    children: a
   })
 }
 
@@ -285,27 +285,27 @@ function A(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, [l, o] = i.useState(false), [s, c] = i.useState(false), u = i.useMemo(() => __OVERLAY__ ? (0, b.Zg)() : (0, g.Rv)(), []), {
+  } = e, [l, a] = i.useState(false), [s, c] = i.useState(false), u = i.useMemo(() => __OVERLAY__ ? (0, m.Zg)() : (0, g.Rv)(), []), {
     keyboardModeEnabled: d,
-    useReducedMotion: O
-  } = (0, f.cj)([y.Z], () => ({
-    keyboardModeEnabled: y.Z.keyboardModeEnabled,
-    useReducedMotion: y.Z.useReducedMotion
+    useReducedMotion: y
+  } = (0, f.cj)([_.Z], () => ({
+    keyboardModeEnabled: _.Z.keyboardModeEnabled,
+    useReducedMotion: _.Z.useReducedMotion
   }));
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(N, {
       showBackdrop: s
     }), (0, r.jsx)(p.Y0X, {
-      className: a()(E.noBackground, {
-        [E.noShadow]: l
+      className: o()(x.noBackground, {
+        [x.noShadow]: l
       }),
       size: p.CgR.DYNAMIC,
-      "aria-label": x.intl.string(x.t.T9DA2K),
+      "aria-label": C.intl.string(C.t.T9DA2K),
       transitionState: t,
       parentComponent: "KeyboardShortcutsModal",
       children: (0, r.jsx)(h.W, {
         component: "div",
-        children: l ? (0, r.jsx)(j.Z, {
+        children: l ? (0, r.jsx)(v.Z, {
           handleDemonClose: function() {
             c(false), setTimeout(n, 500)
           }
@@ -313,7 +313,7 @@ function A(e) {
           content: u,
           keyboardModeEnabled: d,
           activateRagingDemon: function() {
-            O || (m.Z.disable(), o(true), c(true))
+            y || (b.Z.disable(), a(true), c(true))
           }
         }, "modal")
       })

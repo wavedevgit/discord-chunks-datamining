@@ -21,15 +21,15 @@ let u = new Set([Chunk657707.GsA.name, Chunk657707.iWm.name, Chunk657707.FLu.nam
     var t, n;
     let {
       className: i,
-      hangStatusActivity: a,
+      hangStatusActivity: o,
       size: f,
       animate: p = true,
       fallbackVariant: _ = "twemoji",
       userId: m
-    } = e, h = (0, l.F)(m, null == a ? true : a.state), g = (0, s.tV)(m, a, _);
-    if ((h[0] === c.tN.CUSTOM || (null == g ? true : g.emoji) != null) && null != a) {
-      let e = null != (t = null == g ? true : g.emoji) ? t : a.emoji;
-      return null != e ? (0, r.jsx)(o.Z, {
+    } = e, h = (0, l.F)(m, null == o ? true : o.state), g = (0, s.tV)(m, o, _);
+    if ((h[0] === c.tN.CUSTOM || (null == g ? true : g.emoji) != null) && null != o) {
+      let e = null != (t = null == g ? true : g.emoji) ? t : o.emoji;
+      return null != e ? (0, r.jsx)(a.Z, {
         emoji: e,
         className: i,
         hideTooltip: true,

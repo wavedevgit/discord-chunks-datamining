@@ -64,12 +64,12 @@ function g(e, t, n) {
   var l, c, d, p, h;
   if (Math.random() > m) return;
   let g = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
-    E = (0, a.d)();
+    E = (0, o.d)();
   s.default.track(u.rMx.QUEST_DECISION_ROUNDTRIP, _(f(_(f({}, (0, i.Z)()), {
     endpoint: e.endpoint,
     was_successful: e.wasSuccessful,
     api_latency_ms: g,
-    mobile_network_type: o.Z.getType()
+    mobile_network_type: a.Z.getType()
   }), null != E && {
     mobile_signal_strength_level: E
   }), {
@@ -91,18 +91,18 @@ class E {
       } = c.Z.getConfig({
         location: "recordQuestRequestAttempt"
       }),
-      a = i && null != r && null != (n = l.Z.questAdDecisionByPlacement.get(r)) ? n : null,
-      o = {
+      o = i && null != r && null != (n = l.Z.questAdDecisionByPlacement.get(r)) ? n : null,
+      a = {
         initialSendTimestamp: Date.now(),
         endpoint: e,
         apiResponseTimestamp: null,
         wasSuccessful: false,
         callerSource: t,
         adRequestId: null,
-        previousAdDecision: a,
+        previousAdDecision: o,
         placement: r
       };
-    this.pendingRequests.set(e, o), setTimeout(() => {
+    this.pendingRequests.set(e, a), setTimeout(() => {
       let t = this.pendingRequests.get(e);
       null != t && (g(t, "timeout", null), this.pendingRequests.delete(e))
     }, 3e4)
@@ -112,26 +112,26 @@ class E {
       wasSuccessful: n,
       adRequestId: r = null,
       currentQuestId: i = null,
-      currentFetchedAt: a = null
-    } = t, o = this.pendingRequests.get(e);
-    if (null != o) {
+      currentFetchedAt: o = null
+    } = t, a = this.pendingRequests.get(e);
+    if (null != a) {
       let t, s, {
         enableNewRequestBehavior: l
       } = c.Z.getConfig({
         location: "recordQuestRequestApiResponse"
       });
       if (l) {
-        let e = null !== a ? {
+        let e = null !== o ? {
           questId: i,
-          fetchedAt: a,
+          fetchedAt: o,
           ttlMillis: 0,
           adDecisionData: null != r ? {
             decision_id: r
           } : true
         } : null;
-        t = h(o.previousAdDecision, e), s = a
+        t = h(a.previousAdDecision, e), s = o
       } else t = "legacy", s = null;
-      g(_(f({}, o), {
+      g(_(f({}, a), {
         apiResponseTimestamp: Date.now(),
         wasSuccessful: n,
         adRequestId: r

@@ -16,18 +16,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk795338 = require("./795338.jsx"),
   Chunk880419 = require("./880419.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk599374 = require("./599374.js");
+  Chunk397321 = require("./397321.js");
 
 function m(e) {
   let {
     canUseBoosts: t,
     guildId: r,
     powerup: a
-  } = e, [m, x] = o.useState(false), g = (0, c.ZP)(r, a), O = (0, u.P)(a, g, false), C = (0, c.UP)(g), {
+  } = e, [m, x] = o.useState(false), g = (0, d.ZP)(r, a), O = (0, u.P)(a, g, false), C = (0, d.UP)(g), {
     disabled: h
   } = (0, l.Z)(r, a, C), {
     onActivate: y
-  } = (0, d.Z)(r, a), P = !t || h, k = C && !P, w = (0, n.jsxs)(n.Fragment, {
+  } = (0, c.Z)(r, a), P = !t || h, k = C && !P, w = (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)("div", {
       className: i()(j.perkCardImage, {
         [j.active]: C
@@ -61,14 +61,14 @@ function m(e) {
             }), (0, n.jsx)(s.Text, {
               variant: "text-sm/medium",
               color: "text-subtle",
-              children: v.intl.formatToPlainString(v.t.t2Wbo1, {
+              children: b.intl.formatToPlainString(b.t.t2Wbo1, {
                 required: a.cost,
                 decorator: ""
               })
             })]
           })]
         })]
-      }), k && (0, n.jsx)(b.Z, {
+      }), k && (0, n.jsx)(v.Z, {
         compact: true,
         iconSize: "md",
         guildId: r,

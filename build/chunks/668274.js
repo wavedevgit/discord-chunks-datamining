@@ -8,11 +8,11 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 async function s(e) {
   let n = await r.tn.get({
-    url: i.ANM.STORE_EULA(e),
+    url: a.ANM.STORE_EULA(e),
     oldFormErrors: true,
     rejectWithError: false
   });
-  a.Z.dispatch({
+  i.Z.dispatch({
     type: "EULA_FETCH_SUCCESS",
     eula: n.body
   })

@@ -2,12 +2,12 @@
 /** chunk id: 957115, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Bi: () => f,
-  Ez: () => g,
-  NX: () => p,
+  Ez: () => p,
+  NX: () => E,
   Uv: () => O,
-  Z1: () => m,
-  hP: () => _,
-  w9: () => E
+  Z1: () => _,
+  hP: () => g,
+  w9: () => m
 }), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
@@ -15,7 +15,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk626135 = require("./626135.js"),
   Chunk531578 = require("./531578.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk801485 = require("./801485.js"),
+  Chunk5315 = require("./5315.js"),
   Chunk388032 = require("./388032.jsx");
 
 function c(e) {
@@ -64,7 +64,7 @@ function O(e) {
     feedbackType: t,
     location: n
   } = e;
-  r.default.track(d.rMx.USER_SETTINGS_IN_APP_FEEDBACK_OPTED_OUT, {
+  r.default.track(s.rMx.USER_SETTINGS_IN_APP_FEEDBACK_OPTED_OUT, {
     feedback_type: o.nw[t],
     opted_out_until: o.uf
   }), i.A2.updateSetting(e => b(c({}, e), {
@@ -102,228 +102,228 @@ function v(e) {
   })
 }
 
-function m() {
+function _() {
   return v([{
     variant: Chunk531578.$7.SELF,
     value: Chunk531578.T_.COULD_NOT_CONNECT,
-    label: Chunk388032.intl.string(Chunk801485.default.gMHKDJ)
+    label: Chunk388032.intl.string(Chunk5315.default.gMHKDJ)
   }, {
     value: Chunk531578.T_.HIGH_TTC,
     variant: Chunk531578.$7.SELF,
-    label: Chunk388032.intl.string(Chunk801485.default.y06Ayn)
+    label: Chunk388032.intl.string(Chunk5315.default.y06Ayn)
   }, {
     value: Chunk531578.T_.HIGH_LATENCY,
     variant: Chunk531578.$7.SELF,
-    label: Chunk388032.intl.string(Chunk801485.default.y5k8Jq)
+    label: Chunk388032.intl.string(Chunk5315.default.y5k8Jq)
   }, {
     value: Chunk531578.T_.ROBOT_VOICE,
     variant: Chunk531578.$7.SOMEONE,
-    label: Chunk388032.intl.string(Chunk801485.default.f2914v)
+    label: Chunk388032.intl.string(Chunk5315.default.f2914v)
   }, {
     value: Chunk531578.T_.DESYNC,
     variant: Chunk531578.$7.UNSPECIFIED,
-    label: Chunk388032.intl.string(Chunk801485.default["zk+QL1"])
+    label: Chunk388032.intl.string(Chunk5315.default["zk+QL1"])
   }, {
     value: Chunk531578.T_.CUTTING,
     variant: Chunk531578.$7.SOMEONE,
-    label: Chunk388032.intl.string(Chunk801485.default.K5vYQA)
+    label: Chunk388032.intl.string(Chunk5315.default.K5vYQA)
   }])
 }
 
-function E(e) {
+function m(e) {
   let {
     isMobile: t
   } = e;
   return v([{
     value: o.b9.NO_AUDIO,
     variant: o.$7.SELF,
-    label: u.intl.string(s.default["GWypH+"])
+    label: d.intl.string(u.default["GWypH+"])
   }, {
     value: o.b9.NO_AUDIO,
     variant: o.$7.OTHERS,
-    label: u.intl.string(s.default.ftSvQ0)
+    label: d.intl.string(u.default.ftSvQ0)
   }, {
     value: o.b9.LOW_QUALITY_AUDIO,
     variant: o.$7.OTHERS,
-    label: u.intl.string(s.default["1DnNRO"])
+    label: d.intl.string(u.default["1DnNRO"])
   }, {
     value: o.b9.ROBOT_VOICE,
     variant: o.$7.SOMEONE,
-    label: u.intl.string(s.default.yGe0BL)
+    label: d.intl.string(u.default.yGe0BL)
   }, {
     value: o.b9.ECHO,
     variant: o.$7.OTHERS,
-    label: u.intl.string(s.default.Q5Dsaz)
+    label: d.intl.string(u.default.Q5Dsaz)
   }, {
     value: o.b9.TOO_QUIET_OR_LOUD,
     variant: o.$7.SOMEONE,
-    label: u.intl.string(s.default["1o77I3"])
+    label: d.intl.string(u.default["1o77I3"])
   }, {
     value: o.b9.CUTTING,
     variant: o.$7.SOMEONE,
-    label: u.intl.string(s.default.RK9DUi)
+    label: d.intl.string(u.default.RK9DUi)
   }, {
     value: o.b9.DELAYED,
     variant: o.$7.UNSPECIFIED,
-    label: u.intl.string(s.default.RGRgmM)
+    label: d.intl.string(u.default.RGRgmM)
   }, {
     value: o.b9.BACKGROUND_NOISE,
     variant: o.$7.SOMEONE,
-    label: u.intl.string(s.default["anHk1/"])
+    label: d.intl.string(u.default["anHk1/"])
   }, {
     value: o.b9.UNABLE_TO_FIND_DEVICE,
     variant: o.$7.SELF,
-    label: u.intl.string(s.default["05VSjm"])
+    label: d.intl.string(u.default["05VSjm"])
   }, {
     value: o.b9.COMPLAINTS,
     variant: o.$7.OTHERS,
-    label: u.intl.string(s.default.kbbtwi)
+    label: d.intl.string(u.default.kbbtwi)
   }, {
     value: o.b9.TROUBLE_WITH_SPEAKERPHONE,
     variant: o.$7.SELF,
-    label: u.intl.string(s.default["4qlGrO"]),
+    label: d.intl.string(u.default["4qlGrO"]),
     disabled: !t
   }, {
     value: o.b9.NO_GAME_AUDIO,
     variant: o.$7.SELF,
-    label: u.intl.string(s.default["2IG95D"])
+    label: d.intl.string(u.default["2IG95D"])
   }])
 }
 
-function p() {
+function E() {
   return v([{
     value: Chunk531578.ct.NO_VIDEO,
     variant: Chunk531578.$7.SELF,
-    label: Chunk388032.intl.string(Chunk801485.default["Bh+02d"])
+    label: Chunk388032.intl.string(Chunk5315.default["Bh+02d"])
   }, {
     value: Chunk531578.ct.NO_VIDEO,
     variant: Chunk531578.$7.SOMEONE,
-    label: Chunk388032.intl.string(Chunk801485.default["R+wqwU"])
+    label: Chunk388032.intl.string(Chunk5315.default["R+wqwU"])
   }, {
     value: Chunk531578.ct.FREEZING_OR_HITCHING,
     variant: Chunk531578.$7.SOMEONE,
-    label: Chunk388032.intl.string(Chunk801485.default["8I/GUL"])
+    label: Chunk388032.intl.string(Chunk5315.default["8I/GUL"])
   }, {
     value: Chunk531578.ct.BLURRY_OR_PIXELATED,
     variant: Chunk531578.$7.SOMEONE,
-    label: Chunk388032.intl.string(Chunk801485.default.k7Idoz)
+    label: Chunk388032.intl.string(Chunk5315.default.k7Idoz)
   }, {
     value: Chunk531578.ct.UNABLE_TO_ENABLE_DEVICE,
     variant: Chunk531578.$7.SELF,
-    label: Chunk388032.intl.string(Chunk801485.default.QbC6La)
+    label: Chunk388032.intl.string(Chunk5315.default.QbC6La)
   }, {
     value: Chunk531578.ct.DESYNC,
     variant: Chunk531578.$7.UNSPECIFIED,
-    label: Chunk388032.intl.string(Chunk801485.default.vRDE5O)
+    label: Chunk388032.intl.string(Chunk5315.default.vRDE5O)
   }])
 }
 
-function g(e) {
+function p(e) {
   let {
     isStreamer: t
   } = e;
   return v([{
     value: o.MJ.COULD_NOT_LOAD,
     variant: o.$7.SELF,
-    label: u.intl.string(s.default["w+kiDF"]),
+    label: d.intl.string(u.default["w+kiDF"]),
     disabled: !t
   }, {
     value: o.MJ.BLACK_SCREEN,
     variant: o.$7.SELF,
-    label: u.intl.string(s.default.RRZZZb),
+    label: d.intl.string(u.default.RRZZZb),
     disabled: !t
   }, {
     value: o.MJ.FREEZING_OR_HITCHING,
     variant: o.$7.SELF,
-    label: u.intl.string(s.default["3PKSkd"]),
+    label: d.intl.string(u.default["3PKSkd"]),
     disabled: !t
   }, {
     value: o.MJ.LAG,
     variant: o.$7.SELF,
-    label: u.intl.string(s.default.iMxexK),
+    label: d.intl.string(u.default.iMxexK),
     disabled: !t
   }, {
     value: o.MJ.BLURRY_OR_PIXELATED,
     variant: o.$7.SELF,
-    label: u.intl.string(s.default["8ceyQy"]),
+    label: d.intl.string(u.default["8ceyQy"]),
     disabled: !t
   }, {
     value: o.MJ.NO_AUDIO,
     variant: o.$7.SELF,
-    label: u.intl.string(s.default.HaZSC3),
+    label: d.intl.string(u.default.HaZSC3),
     disabled: !t
   }, {
     value: o.MJ.BAD_AUDIO,
     variant: o.$7.SELF,
-    label: u.intl.string(s.default["zIC+8Y"]),
+    label: d.intl.string(u.default["zIC+8Y"]),
     disabled: !t
   }, {
     value: o.MJ.STOPPED_UNEXPECTEDLY,
     variant: o.$7.SELF,
-    label: u.intl.string(s.default["/nlKuG"]),
+    label: d.intl.string(u.default["/nlKuG"]),
     disabled: !t
   }, {
     value: o.MJ.DESYNC,
     variant: o.$7.SELF,
-    label: u.intl.string(s.default.JS6akP),
+    label: d.intl.string(u.default.JS6akP),
     disabled: !t
   }, {
     value: o.MJ.NO_GAME_AUDIO,
     variant: o.$7.SELF,
-    label: u.intl.string(s.default.TaIrh5),
+    label: d.intl.string(u.default.TaIrh5),
     disabled: !t
   }, {
     value: o.MJ.COULD_NOT_LOAD,
     variant: o.$7.SOMEONE,
-    label: u.intl.string(s.default.jU9Zs8),
+    label: d.intl.string(u.default.jU9Zs8),
     disabled: t
   }, {
     value: o.MJ.BLACK_SCREEN,
     variant: o.$7.SOMEONE,
-    label: u.intl.string(s.default.aml28x),
+    label: d.intl.string(u.default.aml28x),
     disabled: t
   }, {
     value: o.MJ.FREEZING_OR_HITCHING,
     variant: o.$7.SOMEONE,
-    label: u.intl.string(s.default.V3EeCH),
+    label: d.intl.string(u.default.V3EeCH),
     disabled: t
   }, {
     value: o.MJ.LAG,
     variant: o.$7.SOMEONE,
-    label: u.intl.string(s.default.hi1Y39),
+    label: d.intl.string(u.default.hi1Y39),
     disabled: t
   }, {
     value: o.MJ.BLURRY_OR_PIXELATED,
     variant: o.$7.SOMEONE,
-    label: u.intl.string(s.default.qdBn3L),
+    label: d.intl.string(u.default.qdBn3L),
     disabled: t
   }, {
     value: o.MJ.NO_AUDIO,
     variant: o.$7.SOMEONE,
-    label: u.intl.string(s.default.DOOlop),
+    label: d.intl.string(u.default.DOOlop),
     disabled: t
   }, {
     value: o.MJ.BAD_AUDIO,
     variant: o.$7.SOMEONE,
-    label: u.intl.string(s.default.k7bdGE),
+    label: d.intl.string(u.default.k7bdGE),
     disabled: t
   }, {
     value: o.MJ.STOPPED_UNEXPECTEDLY,
     variant: o.$7.SOMEONE,
-    label: u.intl.string(s.default.jPD998),
+    label: d.intl.string(u.default.jPD998),
     disabled: t
   }, {
     value: o.MJ.DESYNC,
     variant: o.$7.SOMEONE,
-    label: u.intl.string(s.default.JfAvQp),
+    label: d.intl.string(u.default.JfAvQp),
     disabled: t
   }])
 }
 
-function _() {
+function g() {
   return v([{
     value: Chunk531578.s_.TOXIC_OR_INAPPROPRIATE,
     variant: Chunk531578.$7.OTHERS,
-    label: Chunk388032.intl.string(Chunk801485.default.PLBRzF)
+    label: Chunk388032.intl.string(Chunk5315.default.PLBRzF)
   }])
 }

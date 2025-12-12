@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk215569 = require("./215569.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk507675 = require("./507675.jsx"),
   Chunk273716 = require("./273716.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk290953 = require("./290953.js");
+  Chunk186880 = require("./186880.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -48,8 +48,8 @@ function y(e, t) {
   if (null == e) return {};
   var n, r, i = O(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -57,8 +57,8 @@ function y(e, t) {
 function O(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -67,11 +67,11 @@ function v(e) {
     title: t,
     onJumpToChannel: n,
     onHide: i,
-    idle: a,
+    idle: o,
     preventIdleComponent: s
-  } = e, c = (0, o.e7)([f.Z], () => f.Z.getChannelId()), d = null != c ? (0, r.jsx)(p.Z, {
+  } = e, c = (0, a.e7)([f.Z], () => f.Z.getChannelId()), d = null != c ? (0, r.jsx)(p.Z, {
     voiceChannelId: c,
-    idle: a
+    idle: o
   }) : null, {
     enabled: _
   } = u.Z.useExperiment({
@@ -107,7 +107,7 @@ function S(e) {
     children: t,
     idle: n,
     onJumpToChannel: i,
-    onHide: o,
+    onHide: a,
     backgroundKey: l,
     onActive: u,
     onForceIdle: f,
@@ -123,7 +123,7 @@ function S(e) {
     onMouseMove: u,
     onMouseDown: u,
     onMouseLeave: f,
-    className: a()(g.pictureInPictureVideo, {
+    className: o()(g.pictureInPictureVideo, {
       [g.idle]: n
     }, O),
     onDoubleClick: i,
@@ -135,13 +135,13 @@ function S(e) {
     }), null != h ? (0, r.jsx)(_.Z, b({
       size: "small"
     }, h)) : null, !E && (0, r.jsxs)("div", {
-      className: a()(g.videoControls, I, "theme-dark"),
+      className: o()(g.videoControls, I, "theme-dark"),
       children: [(0, r.jsx)("div", {
         className: g.topControls,
         children: (0, r.jsx)(v, b({
           idle: n,
           onJumpToChannel: i,
-          onHide: o
+          onHide: a
         }, T))
       }), (0, r.jsxs)("div", {
         className: g.bottomControls,

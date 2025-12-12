@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk780384 = require("./780384.js"),
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk682947 = require("./682947.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk903442 = require("./903442.js");
+  Chunk73704 = require("./73704.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,8 +71,8 @@ function R(e, t) {
   if (null == e) return {};
   var n, r, i = w(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -80,8 +80,8 @@ function R(e, t) {
 function w(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let D = {
@@ -143,7 +143,7 @@ function x(e) {
   return (0, r.jsxs)("div", {
     className: T.tooltipPremiumFooterContainer,
     children: [(0, r.jsxs)("div", {
-      className: o()(T.tooltipPremiumFooterSegment, T.tooltipPremiumFooterTierSegment),
+      className: a()(T.tooltipPremiumFooterSegment, T.tooltipPremiumFooterTierSegment),
       children: [(0, r.jsx)(E.Z, {
         width: 18,
         height: 18,
@@ -172,8 +172,8 @@ function L(e) {
     guildTraits: n
   } = e, {
     tooltipTitle: i,
-    tooltipSubtitle: a,
-    tooltipDescription: o
+    tooltipSubtitle: o,
+    tooltipDescription: a
   } = (0, v.G)(t, n.visibility);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -182,14 +182,14 @@ function L(e) {
         color: "interactive-text-active",
         variant: "text-xs/bold",
         children: i
-      }), null != a ? (0, r.jsx)(u.Text, {
-        color: "text-muted",
-        variant: "text-xs/medium",
-        children: a
-      }) : null, null != o ? (0, r.jsx)(u.Text, {
+      }), null != o ? (0, r.jsx)(u.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
         children: o
+      }) : null, null != a ? (0, r.jsx)(u.Text, {
+        color: "text-muted",
+        variant: "text-xs/medium",
+        children: a
       }) : null]
     }), n.premium ? (0, r.jsx)(x, {
       guildTraits: n
@@ -199,8 +199,8 @@ function L(e) {
 
 function j(e) {
   let t, n;
-  var a, {
-    guild: o,
+  var o, {
+    guild: a,
     tooltipColor: l = u.aML.Colors.BRAND,
     tooltipPosition: d,
     className: g,
@@ -211,24 +211,24 @@ function j(e) {
     disableBoostClick: C,
     "aria-label": N = false
   } = e;
-  let w = null != (a = R(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]).size) ? a : 18,
+  let w = null != (o = R(e, ["guild", "tooltipColor", "tooltipPosition", "className", "flowerStarClassName", "iconClassName", "badgeStrokeColor", "badgeColor", "disableBoostClick", "aria-label"]).size) ? o : 18,
     x = (0, s.e7)([h.default, m.ZP], () => {
       let e = h.default.getCurrentUser();
-      return m.ZP.isMember(null == o ? true : o.id, null == e ? true : e.id)
+      return m.ZP.isMember(null == a ? true : a.id, null == e ? true : e.id)
     }),
     j = (0, s.e7)([_.Z], () => _.Z.theme),
-    M = (0, O.XX)(o),
+    M = (0, O.XX)(a),
     k = (0, y.i)(M),
     U = i.useMemo(() => M.premium && x && !C, [C, M.premium, x]),
     G = i.useCallback(e => {
       U && (e.stopPropagation(), e.preventDefault(), (0, f.f)({
-        guildId: o.id,
+        guildId: a.id,
         location: {
           section: S.jXE.GUILD_HEADER,
           object: S.qAy.BOOST_GEM_ICON
         }
       }))
-    }, [U, o.id]);
+    }, [U, a.id]);
   if (k === y.Q.NONE) return null;
   let {
     IconComponent: Z,

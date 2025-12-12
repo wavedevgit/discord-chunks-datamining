@@ -1,7 +1,7 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 713388, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => x
 }), require("./642613.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk920952 = require("./920952.js"),
   Chunk206412 = require("./206412.jsx"),
   Chunk617810 = require("./617810.js"),
-  Chunk478152 = require("./478152.js");
+  Chunk211339 = require("./211339.js");
 
 function m(e) {
   var t;
@@ -58,7 +58,7 @@ function p(e) {
 }
 let h = Chunk473749.createContext(null);
 
-function f() {
+function x() {
   let [e, t] = Chunk473749.useState(false), {
     legacySettingDirectory: n
   } = (0, Chunk617810.q)(), {
@@ -78,7 +78,7 @@ function f() {
     }), (0, Chunk54381.jsx)(h.Provider, {
       value: require,
       children: (0, Chunk54381.jsxs)("div", {
-        className: Chunk478152.tree,
+        className: Chunk211339.tree,
         children: [module && (0, Chunk54381.jsx)(m, {
           setting: "root",
           depth: 1

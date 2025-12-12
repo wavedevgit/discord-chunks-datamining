@@ -15,34 +15,34 @@ class s extends Chunk495852.C {
       header: "",
       body: ""
     };
-    return globalThis.Object.defineProperty(t, a.C, {
+    return globalThis.Object.defineProperty(t, o.C, {
       enumerable: false,
       value: this
     }), true !== e && (0, i.l)(this, t, e), t
   }
   internalBinaryRead(e, t, n, i) {
-    let a = null != i ? i : this.create(),
-      o = e.pos + t;
-    for (; e.pos < o;) {
+    let o = null != i ? i : this.create(),
+      a = e.pos + t;
+    for (; e.pos < a;) {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          a.assetUrl = e.string();
+          o.assetUrl = e.string();
           break;
         case 2:
-          a.header = e.string();
+          o.header = e.string();
           break;
         case 3:
-          a.body = e.string();
+          o.body = e.string();
           break;
         default:
-          let o = n.readUnknownField;
-          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let a = n.readUnknownField;
+          if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
           let s = e.skip(i);
-          false !== o && (true === o ? r.z.onRead : o)(this.typeName, a, t, i, s)
+          false !== a && (true === a ? r.z.onRead : a)(this.typeName, o, t, i, s)
       }
     }
-    return a
+    return o
   }
   internalBinaryWrite(e, t, n) {
     "" !== e.assetUrl && t.tag(1, r.TD.LengthDelimited).string(e.assetUrl), "" !== e.header && t.tag(2, r.TD.LengthDelimited).string(e.header), "" !== e.body && t.tag(3, r.TD.LengthDelimited).string(e.body);

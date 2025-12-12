@@ -2,24 +2,24 @@
 /** chunk id: 295790, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk901461 = require("./901461.js"),
   Chunk815387 = require("./815387.jsx");
 
-function o(e) {
+function a(e) {
   let {
     message: t,
     channel: n,
-    compact: o,
+    compact: a,
     disableInteraction: s
   } = e;
-  return (0, i.Z)(t) ? (0, r.jsx)(a.Z, {
+  return (0, i.Z)(t) ? (0, r.jsx)(o.Z, {
     message: t,
     channel: n,
-    compact: o,
+    compact: a,
     disableInteraction: s
   }) : null
 }

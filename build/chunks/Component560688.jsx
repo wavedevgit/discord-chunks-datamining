@@ -51,7 +51,7 @@ function d(e, t) {
 }
 
 function f(e) {
-  a.Z.supports(o.AN.VIDEO) ? (0, i.ZDy)(async () => {
+  o.Z.supports(a.AN.VIDEO) ? (0, i.ZDy)(async () => {
     let {
       default: t
     } = await n.e("67753").then(n.bind(n, 873809));
@@ -65,7 +65,7 @@ function f(e) {
     let {
       default: t
     } = await n.e("67753").then(n.bind(n, 873809));
-    return a => (0, r.jsx)(t, d(c({}, a), {
+    return o => (0, r.jsx)(t, d(c({}, o), {
       header: s.intl.string(s.t.XLw6FF),
       body: s.intl.string(s.t.wVjKGi),
       confirmText: s.intl.string(s.t["BK8LK+"]),

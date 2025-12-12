@@ -3,9 +3,9 @@
 "use strict";
 require.r(exports), require.d(exports, {
   useCallback: () => l,
-  useCallbackOne: () => o,
+  useCallbackOne: () => a,
   useMemo: () => s,
-  useMemoOne: () => a
+  useMemoOne: () => o
 });
 var Chunk473749 = require("./473749.js");
 
@@ -16,28 +16,28 @@ function i(e, t) {
   returntrue
 }
 
-function a(e, t) {
+function o(e, t) {
   var n = (0, r.useState)(function() {
       return {
         inputs: t,
         result: e()
       }
     })[0],
-    a = (0, r.useRef)(true),
-    o = (0, r.useRef)(n),
-    s = a.current || t && o.current.inputs && i(t, o.current.inputs) ? o.current : {
+    o = (0, r.useRef)(true),
+    a = (0, r.useRef)(n),
+    s = o.current || t && a.current.inputs && i(t, a.current.inputs) ? a.current : {
       inputs: t,
       result: e()
     };
   return (0, r.useEffect)(function() {
-    a.current = false, o.current = s
+    o.current = false, a.current = s
   }, [s]), s.result
 }
 
-function o(e, t) {
-  return a(function() {
+function a(e, t) {
+  return o(function() {
     return e
   }, t)
 }
-var s = a,
-  l = o
+var s = o,
+  l = a

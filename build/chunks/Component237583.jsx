@@ -10,8 +10,8 @@ var r, Chunk54381 = require("./54381.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk598077 = require("./598077.js"),
-  Chunk959246 = require("./959246.js"),
-  Chunk518800 = require("./518800.js");
+  Chunk322991 = require("./322991.js"),
+  Chunk103126 = require("./103126.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -35,25 +35,25 @@ class _ extends(r = Chunk473749.PureComponent) {
       max: t,
       renderUser: n = this.defaultRenderUser,
       renderMoreUsers: r
-    } = this.props, i = [], a = module.length === exports ? module.length : exports - 1, o = 0;
+    } = this.props, i = [], o = module.length === exports ? module.length : exports - 1, a = 0;
     for (; Chunk120356 < Chunk473749 && Chunk120356 < module.length;) {
       let t = Chunk120356 === module.length - 1;
-      Chunk54381.push(require(module[Chunk120356] || null, exports ? null : Chunk959246.avatarMasked, "user-".concat(Chunk120356), exports)), Chunk120356++
+      Chunk54381.push(require(module[Chunk120356] || null, exports ? null : Chunk322991.avatarMasked, "user-".concat(Chunk120356), exports)), Chunk120356++
     }
     if (Chunk120356 < module.length) {
       let t = Math.min(module.length - Chunk120356, 99);
-      Chunk54381.push(r("+".concat(exports), Chunk959246.moreUsers, "more-users", exports))
+      Chunk54381.push(r("+".concat(exports), Chunk322991.moreUsers, "more-users", exports))
     }
     return Chunk54381
   }
   renderIcon() {
     return this.props.icon ? (0, Chunk54381.jsx)("div", {
-      className: Chunk959246.iconContainer,
+      className: Chunk322991.iconContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.gj8, {
         size: "xs",
         color: "currentColor",
-        colorClass: Chunk959246.foreground,
-        className: Chunk959246.icon
+        colorClass: Chunk322991.foreground,
+        className: Chunk322991.icon
       })
     }) : null
   }
@@ -62,7 +62,7 @@ class _ extends(r = Chunk473749.PureComponent) {
       className: e
     } = this.props;
     return (0, Chunk54381.jsxs)("div", {
-      className: s()(module, Chunk959246.container),
+      className: s()(module, Chunk322991.container),
       ref: e => {
         this._ref = e
       },
@@ -72,19 +72,19 @@ class _ extends(r = Chunk473749.PureComponent) {
   constructor(...e) {
     super(...e), f(this, "_ref", true), f(this, "defaultRenderUser", (e, t, n, r) => {
       let {
-        onClick: a,
-        size: o,
+        onClick: o,
+        size: a,
         guildId: f
       } = this.props, p = e instanceof c.Z ? e : null != e ? e.user : null;
       return null == p ? (0, i.jsx)("div", {
         className: s()(u.emptyUser, t)
       }, n) : (0, i.jsx)(l.qEK, {
         tabIndex: 0,
-        src: p.getAvatarURL(f, (0, l.dcp)(o)),
-        size: o,
+        src: p.getAvatarURL(f, (0, l.dcp)(a)),
+        size: a,
         "aria-label": p.username,
         className: s()(t, d.cursorPointer, u.avatarSize),
-        onClick: e => null != a ? a(e, p, this._ref) : null
+        onClick: e => null != o ? o(e, p, this._ref) : null
       }, p.id)
     })
   }

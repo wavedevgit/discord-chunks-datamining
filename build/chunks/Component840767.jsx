@@ -11,13 +11,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js");
 
 function l(e) {
-  a.default.track(s.rMx.CHECKPOINT_STARTED, {
+  o.default.track(s.rMx.CHECKPOINT_STARTED, {
     source: e
   }), (0, i.q4)(e => {
     let {
       closeLayer: t
     } = e;
-    return (0, r.jsx)(o.Z, {
+    return (0, r.jsx)(a.Z, {
       onClose: t
     })
   }, {

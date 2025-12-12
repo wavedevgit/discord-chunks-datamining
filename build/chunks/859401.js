@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,17 +15,17 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = [];
+let a = [];
 class s {
   static create() {
     let e = new s;
-    return o.push(module), module.record
+    return a.push(module), module.record
   }
   getTotalBytes() {
     return i().sum(Object.values(this.bytes))
   }
   constructor() {
-    a(this, "bytes", {}), a(this, "record", e => {
+    o(this, "bytes", {}), o(this, "record", e => {
       if (null != e) {
         for (let t in e.rtp.inbound)
           for (let n of e.rtp.inbound[t]) {

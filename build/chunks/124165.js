@@ -43,10 +43,10 @@ function p(e) {
     onRsvp: f
   } = e, p = i.ZP.getGuildScheduledEvent(t);
   if (null == p) return;
-  let _ = (0, a.c)(n, t),
+  let _ = (0, o.c)(n, t),
     {
       startTime: m
-    } = (0, o.Kq)(p, n),
+    } = (0, a.Kq)(p, n),
     h = (null == p ? true : p.scheduled_start_time) != null ? (0, s.lh)(_, m, new Date(null == p ? true : p.scheduled_start_time)) : null,
     g = null != h && l.$I.has(h) ? null : null != n ? n : (0, s.DK)(p),
     E = u(p.id),

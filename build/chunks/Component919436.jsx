@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => L
@@ -29,7 +29,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk674552 = require("./674552.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk729074 = require("./729074.js");
+  Chunk514483 = require("./514483.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -89,7 +89,7 @@ class M extends(r = Chunk473749.PureComponent) {
       controller: t
     } = this.state;
     e(), t.update({
-      immediate: !j.Z.isFocused(),
+      immediate: !v.Z.isFocused(),
       height: 1,
       opacity: 1,
       scale: 1,
@@ -117,7 +117,7 @@ class M extends(r = Chunk473749.PureComponent) {
     this.setState({
       animating: true
     }, () => t.update({
-      immediate: !j.Z.isFocused(),
+      immediate: !v.Z.isFocused(),
       height: 0,
       opacity: 0,
       scale: 0,
@@ -156,7 +156,7 @@ class M extends(r = Chunk473749.PureComponent) {
       selected: n,
       badge: r,
       audio: l,
-      video: o,
+      video: a,
       stream: s,
       isCurrentUserInThisDMCall: u,
       unread: d,
@@ -164,8 +164,8 @@ class M extends(r = Chunk473749.PureComponent) {
       statusIndicatorsEnabled: h
     } = this.props, {
       hovered: g,
-      animating: b
-    } = this.state, m = module.isMultiUserDM() && null == module.icon, y = () => (0, Chunk54381.jsx)(Chunk481060.LYs, T({
+      animating: m
+    } = this.state, b = module.isMultiUserDM() && null == module.icon, _ = () => (0, Chunk54381.jsx)(Chunk481060.LYs, T({
       to: Chunk981631.Z5c.CHANNEL(Chunk981631.ME, module.id),
       onMouseEnter: () => this.setState({
         hovered: true
@@ -187,7 +187,7 @@ class M extends(r = Chunk473749.PureComponent) {
         facepileSizeOverride: Chunk481060.EFr.SIZE_32,
         "aria-hidden": true
       }) : true
-    }, Chunk43267)), O = (0, Chunk54381.jsx)(Chunk481060.aRk, {
+    }, Chunk43267)), y = (0, Chunk54381.jsx)(Chunk481060.aRk, {
       rounded: true,
       selected: false,
       lowerBadge: r > 0 ? (0, Chunk674552.Ne)(r, true, true) : null,
@@ -201,7 +201,7 @@ class M extends(r = Chunk473749.PureComponent) {
         width: (0, Chunk481060.OVM)(r)
       },
       children: Chunk944486()
-    }), v = Chunk933557 ? (0, Chunk54381.jsx)(Chunk455172.Z, {
+    }), O = Chunk933557 ? (0, Chunk54381.jsx)(Chunk455172.Z, {
       channel: module,
       children: Chunk594174
     }) : (0, Chunk54381.jsx)(Chunk662146.Z, {
@@ -216,7 +216,7 @@ class M extends(r = Chunk473749.PureComponent) {
           hovered: !Chunk19780 && Chunk199902,
           selected: !Chunk19780 && require,
           unread: !Chunk19780 && Chunk358221,
-          className: Chunk729074.pill
+          className: Chunk514483.pill
         }), Chunk938475]
       })
     })
@@ -225,7 +225,7 @@ class M extends(r = Chunk473749.PureComponent) {
     super(...e), w(this, "state", {
       hovered: false,
       animating: true,
-      controller: new a.Controller({
+      controller: new o.Controller({
         scale: 0,
         height: 0,
         opacity: 0,
@@ -234,11 +234,11 @@ class M extends(r = Chunk473749.PureComponent) {
     }), w(this, "handleContextMenu", e => {
       let {
         channel: t
-      } = this.props, r = t.type === P.d4z.DM ? O.default.getUser(t.getRecipientId()) : null;
+      } = this.props, r = t.type === P.d4z.DM ? y.default.getUser(t.getRecipientId()) : null;
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("93896")]).then(n.bind(n, 131404));
+        } = await Promise.all([n.e("79695"), n.e("66165"), n.e("56826"), n.e("31899")]).then(n.bind(n, 131404));
         return n => (0, i.jsx)(e, A(T({}, n), {
           channel: t,
           user: r
@@ -264,35 +264,35 @@ w(M, "defaultProps", {
 let L = Chunk473749.forwardRef(function(e, t) {
   let n = e.channel.id,
     r = (0, h.ZP)(e.channel),
-    l = (0, o.Ie)(n, 2),
-    a = (0, s.e7)([b.Z], () => b.Z.getChannelId(), []),
+    l = (0, a.Ie)(n, 2),
+    o = (0, s.e7)([m.Z], () => m.Z.getChannelId(), []),
     u = (0, s.e7)([d.Z], () => d.Z.getMode(n), [n]),
     f = (0, s.e7)([g.Z], () => g.Z.getAllApplicationStreamsForChannel(n).length > 0),
-    p = (0, s.e7)([v.ZP], () => v.ZP.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
-    O = (0, s.e7)([y.Z], () => y.Z.getChannelId(), []),
-    j = (0, s.e7)([m.ZP], () => m.ZP.getMentionCount(n), [n]),
+    p = (0, s.e7)([O.ZP], () => O.ZP.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
+    y = (0, s.e7)([_.Z], () => _.Z.getChannelId(), []),
+    v = (0, s.e7)([b.ZP], () => b.ZP.getMentionCount(n), [n]),
     {
-      enabled: x
-    } = (0, C.p)({
+      enabled: C
+    } = (0, j.p)({
       location: "DirectMessage"
     }),
-    E = a === n,
-    S = false,
-    I = false;
-  (E || x && p) && (S = u === P.WtW.VOICE, I = u === P.WtW.VIDEO);
-  let _ = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
+    x = o === n,
+    E = false,
+    S = false;
+  (x || C && p) && (E = u === P.WtW.VOICE, S = u === P.WtW.VIDEO);
+  let I = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
   return (0, i.jsx)(M, A(T({}, e), {
     ref: t,
     channelName: r,
-    unread: j > 0,
-    selected: O === n,
-    badge: j,
-    audio: S,
-    video: I,
+    unread: v > 0,
+    selected: y === n,
+    badge: v,
+    audio: E,
+    video: S,
     stream: f,
-    isCurrentUserInThisDMCall: E,
-    size: _,
+    isCurrentUserInThisDMCall: x,
+    size: I,
     treeItemProps: l,
-    statusIndicatorsEnabled: x
+    statusIndicatorsEnabled: C
   }))
 })

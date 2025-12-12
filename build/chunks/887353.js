@@ -1,0 +1,19 @@
+/** Chunk was on 45620 **/
+/** chunk id: 887353, original params: e,t,n (module,exports,require) **/
+"use strict";
+module.exports = {
+  shopViewWrapper: "shopViewWrapper__6db1d",
+  visible: "visible__6db1d",
+  out: "out__6db1d",
+  in: "in__6db1d",
+  fadeIn: "fadeIn__6db1d",
+  categoryWrapper: "categoryWrapper__6db1d",
+  cardsContainer: "cardsContainer__6db1d",
+  shop: "shop__6db1d",
+  easterEggAnimation: "easterEggAnimation__6db1d",
+  easterEggAnimationReverse: "easterEggAnimationReverse__6db1d",
+  categories: "categories__6db1d",
+  products: "products__6db1d",
+  paginationContainer: "paginationContainer__6db1d",
+  bannerContainer: "bannerContainer__6db1d"
+}

@@ -9,9 +9,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk345898 = require("./345898.jsx"),
-  Chunk186382 = require("./186382.js");
+  Chunk812331 = require("./812331.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -52,8 +52,8 @@ function d(e, t) {
   }), e
 }
 let f = 660,
-  p = e => (0, r.jsx)(o.Z, d(c({}, e), {
-    className: a()(e.className, {
+  p = e => (0, r.jsx)(a.Z, d(c({}, e), {
+    className: o()(e.className, {
       [s.embedVertical]: !e.isHorizontal,
       [s.embedHorizontal]: e.isHorizontal
     })
@@ -62,13 +62,13 @@ let f = 660,
     let {
       isHorizontal: t
     } = e, n = () => (0, r.jsx)("div", {
-      className: a()(s.loadingImage, {
+      className: o()(s.loadingImage, {
         [s.loadingImageHorizontal]: t
       })
     }), i = () => (0, r.jsx)("div", {
       className: s.loadingDescription,
       children: (0, r.jsx)("div", {
-        className: a()(s.loadingBackgroundWrapper, {
+        className: o()(s.loadingBackgroundWrapper, {
           [s.loadingBackgroundWrapperHorizontal]: t
         }),
         children: (0, r.jsx)("div", {

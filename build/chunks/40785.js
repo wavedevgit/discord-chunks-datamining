@@ -27,12 +27,12 @@ class u {
       let t = true,
         r = n.offset || 0,
         i = 0;
-      for (let a = 0; a < n.sequence.length; a++) {
-        if (n.skippedBytes && n.skippedBytes.includes(a)) {
+      for (let o = 0; o < n.sequence.length; o++) {
+        if (n.skippedBytes && n.skippedBytes.includes(o)) {
           i++;
           continue
         }
-        if (e[r + a] !== n.sequence[a - i]) {
+        if (e[r + o] !== n.sequence[o - i]) {
           t = false;
           break
         }
@@ -54,13 +54,13 @@ class u {
       let t = 0,
         r = true,
         i = n.offset || 0,
-        a = (null == n ? true : n.skippedBytes) ? n.sequence.length + n.skippedBytes.length : n.sequence.length;
-      for (let o = 0; o < a; o++) {
-        if (n.skippedBytes && n.skippedBytes.includes(o)) {
+        o = (null == n ? true : n.skippedBytes) ? n.sequence.length + n.skippedBytes.length : n.sequence.length;
+      for (let a = 0; a < o; a++) {
+        if (n.skippedBytes && n.skippedBytes.includes(a)) {
           t++;
           continue
         }
-        if (e[i + o] !== n.sequence[o - t]) {
+        if (e[i + a] !== n.sequence[a - t]) {
           r = false;
           break
         }

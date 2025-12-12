@@ -2,11 +2,11 @@
 /** chunk id: 991896, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk570140 = require("./570140.js"),
   Chunk607802 = require("./607802.js");
-let a = {
+let o = {
   addSearchHistoryItem: function(e, t) {
     let n = (0, i.BX)(e);
     null != n && r.Z.dispatch({
@@ -61,14 +61,14 @@ let a = {
       id: t
     })
   },
-  updateSearchResultsQuery: function(e, t, n, a) {
-    let o = (0, i.Tm)(e);
+  updateSearchResultsQuery: function(e, t, n, o) {
+    let a = (0, i.Tm)(e);
     r.Z.dispatch({
       type: "SEARCH_RESULTS_QUERY_UPDATE",
-      id: o,
+      id: a,
       queryString: t,
       query: n,
-      offset: a
+      offset: o
     })
   },
   updateSearchMode: function(e, t) {

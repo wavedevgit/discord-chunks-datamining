@@ -13,7 +13,7 @@ var Chunk507604 = require("./507604.js"),
   f = "configurable",
   p = "writable";
 exports.f = Chunk507604 ? Chunk282108 ? function(e, t, n) {
-  if (o(e), t = s(t), o(n), "function" == typeof e && "prototype" === t && "value" in n && p in n && !n[p]) {
+  if (a(e), t = s(t), a(n), "function" == typeof e && "prototype" === t && "value" in n && p in n && !n[p]) {
     var r = u(e, t);
     r && r[p] && (e[t] = n.value, n = {
       configurable: f in n ? n[f] : r[f],
@@ -23,7 +23,7 @@ exports.f = Chunk507604 ? Chunk282108 ? function(e, t, n) {
   }
   return c(e, t, n)
 } : c : function(e, t, n) {
-  if (o(e), t = s(t), o(n), i) try {
+  if (a(e), t = s(t), a(n), i) try {
     return c(e, t, n)
   } catch (e) {}
   if ("get" in n || "set" in n) throw new l("Accessors not supported");

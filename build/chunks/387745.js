@@ -71,7 +71,7 @@ function y(e, t) {
     sourceQuestContent: t.sourceQuestContent,
     questContentCTA: t.ctaContent,
     impressionId: t.impressionId
-  }), (0, o.Z)({
+  }), (0, a.Z)({
     platformType: n,
     location: t.ctaContent
   })
@@ -97,7 +97,7 @@ function S(e, t) {
     questContentPosition: t.position,
     impressionId: t.impressionId,
     sourceQuestContent: t.sourceQuestContent
-  }), l.S.dispatch(_.CkL.QUEST_GAME_LINK_OPENED), (0, a.Z)(n)
+  }), l.S.dispatch(_.CkL.QUEST_GAME_LINK_OPENED), (0, o.Z)(n)
 }
 
 function I() {
@@ -137,12 +137,12 @@ function C(e, t) {
     sourceQuestContent: t.sourceQuestContent
   });
   let r = g(n);
-  if (1 === r.length) return (0, o.Z)({
+  if (1 === r.length) return (0, a.Z)({
     platformType: r.at(0)
   });
   i.Z.dispatch({
     type: "CONNECTIONS_GRID_MODAL_SHOW",
-    onComplete: e => (0, o.Z)({
+    onComplete: e => (0, a.Z)({
       platformType: e
     }),
     includedPlatformTypes: new Set(r)

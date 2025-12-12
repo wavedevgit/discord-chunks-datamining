@@ -47,19 +47,19 @@ class c extends Chunk58406.g {
       title: t,
       body: n,
       onConfirm: i,
-      cancelText: a,
-      confirmText: o
+      cancelText: o,
+      confirmText: a
     } = e;
     r.Z.show({
       title: t,
       body: n,
       onConfirm: i,
-      cancelText: a,
-      confirmText: o
+      cancelText: o,
+      confirmText: a
     })
   }
   constructor(...e) {
-    super(...e), l(this, "nativeUtils", a.ZP.getDiscordUtils()), l(this, "platformAlwaysPermits", (0, i.isLinux)() || (0, i.isWindows)())
+    super(...e), l(this, "nativeUtils", o.ZP.getDiscordUtils()), l(this, "platformAlwaysPermits", (0, i.isLinux)() || (0, i.isWindows)())
   }
 }
 l(c, "requestTypeLookup", {

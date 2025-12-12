@@ -1,4 +1,4 @@
-/** Chunk was on 92504 **/
+/** Chunk was on 69844 **/
 /** chunk id: 571737, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -12,30 +12,30 @@ var Chunk54381 = require("./54381.js"),
   Chunk956965 = require("./956965.jsx"),
   Chunk548514 = require("./548514.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk360259 = require("./360259.js");
+  Chunk348908 = require("./348908.js");
 let m = function(e) {
   let {
     application: t,
     onButtonsVisibilityChange: n
-  } = e, m = r.useRef(null), h = r.useMemo(() => o.ZP.getApplicationIconURL({
+  } = e, m = i.useRef(null), h = i.useMemo(() => o.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     size: 96
-  }), [t]), f = r.useMemo(() => {
+  }), [t]), g = i.useMemo(() => {
     let e = [];
     return (0, s.vJ)(t) && e.push(u.intl.string(u.t.LO4f0P)), (0, s.Cb)(t) && (0 !== e.length && e.push("•"), e.push(u.intl.string(u.t["8z5B2U"]))), (0, s.Hu)(t) && (0 !== e.length && e.push("•"), e.push(u.intl.string(u.t["5khEk8"]))), e
   }, [t]);
-  return (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)(c.Z, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(c.Z, {
       application: t,
       bannerType: "detail",
       iconURL: h
-    }), (0, a.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: p.avatarContainer,
       style: {
         height: 52
       },
-      children: (0, a.jsx)("img", {
+      children: (0, r.jsx)("img", {
         src: h,
         alt: "",
         className: p.avatar,
@@ -46,29 +46,29 @@ let m = function(e) {
           marginLeft: 28
         }
       })
-    }), (0, a.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: p.infoContainer,
-      children: [(0, a.jsxs)("div", {
+      children: [(0, r.jsxs)("div", {
         className: p.metadataContainer,
-        children: [(0, a.jsx)(l.Heading, {
+        children: [(0, r.jsx)(l.Heading, {
           variant: "heading-xxl/bold",
           color: "text-strong",
           lineClamp: 1,
           children: t.name
-        }), (0, a.jsx)("div", {
+        }), (0, r.jsx)("div", {
           className: p.disclosuresContainer,
-          children: f.map((e, t) => (0, a.jsx)(l.Text, {
+          children: g.map((e, t) => (0, r.jsx)(l.Text, {
             className: p.disclosuresText,
             variant: "text-xs/normal",
             color: "text-muted",
             children: e
           }, t))
         })]
-      }), (0, a.jsx)(i.$, {
+      }), (0, r.jsx)(a.$, {
         innerRef: m,
         onChange: n,
         active: true,
-        children: (0, a.jsx)(d.Z, {
+        children: (0, r.jsx)(d.Z, {
           ref: m,
           application: t,
           size: "md"

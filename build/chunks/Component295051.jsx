@@ -1,9 +1,9 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 295051, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  hH: () => f,
-  xl: () => m,
+  hH: () => m,
+  xl: () => p,
   zA: () => g
 });
 var Chunk54381 = require("./54381.js"),
@@ -13,33 +13,33 @@ var Chunk54381 = require("./54381.js"),
   Chunk821458 = require("./821458.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk30513 = require("./30513.js"),
-  Chunk736303 = require("./736303.js");
+  Chunk829930 = require("./829930.js");
 
-function u(e) {
+function d(e) {
   let {
     guild: t,
     guildFeature: n,
     analyticsSection: o,
     analyticsObject: c,
-    getPerks: u,
+    getPerks: d,
     targetPremiumGuildTier: g
   } = e, {
-    analyticsLocations: f
-  } = (0, l.ZP)(), m = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, s.E6)({
+    analyticsLocations: m
+  } = (0, l.ZP)(), p = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), (0, a.E6)({
       guild: t,
-      analyticsLocations: f,
+      analyticsLocations: m,
       analyticsSection: o,
       analyticsObject: c,
-      perks: u(),
+      perks: d(),
       targetPremiumGuildTier: g
     })
-  }, [f, c, o, t, u, g]);
-  return (0, r.jsx)(a.Z, {
+  }, [m, c, o, t, d, g]);
+  return (0, r.jsx)(s.Z, {
     guild: t,
     guildFeature: n,
-    className: d.guildFeatureAvailabilityIndicator,
-    onClick: m
+    className: u.guildFeatureAvailabilityIndicator,
+    onClick: p
   })
 }
 
@@ -47,7 +47,7 @@ function g(e) {
   let {
     guild: t
   } = e;
-  return (0, r.jsx)(u, {
+  return (0, r.jsx)(d, {
     guild: t,
     guildFeature: o.GuildFeatures.BANNER,
     analyticsSection: o.jXE.GUILD_BANNER,
@@ -56,11 +56,11 @@ function g(e) {
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     guild: t
   } = e;
-  return (0, r.jsx)(u, {
+  return (0, r.jsx)(d, {
     guild: t,
     guildFeature: o.GuildFeatures.INVITE_SPLASH,
     analyticsSection: o.jXE.GUILD_INVITE_BACKGROUND,
@@ -69,11 +69,11 @@ function f(e) {
   })
 }
 
-function m(e) {
+function p(e) {
   let {
     guild: t
   } = e;
-  return (0, r.jsx)(u, {
+  return (0, r.jsx)(d, {
     guild: t,
     guildFeature: o.GuildFeatures.VANITY_URL,
     analyticsSection: o.jXE.GUILD_SETTINGS_VANITY_URL,

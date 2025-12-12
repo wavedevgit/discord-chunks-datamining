@@ -3,8 +3,8 @@
 ! function(n, r) {
   "use strict";
   var i = "",
-    a = "?",
-    o = "function",
+    o = "?",
+    a = "function",
     s = "undefined",
     l = "object",
     c = "string",
@@ -66,12 +66,12 @@
       if (typeof e === c) return e = e.replace(/^\s\s*/, i), typeof t === s ? e : e.substring(0, S)
     },
     J = function(e, t) {
-      for (var n, i, a, s, c, u, d = 0; d < t.length && !c;) {
+      for (var n, i, o, s, c, u, d = 0; d < t.length && !c;) {
         var f = t[d],
           p = t[d + 1];
         for (n = i = 0; n < f.length && !c && f[n];)
           if (c = f[n++].exec(e))
-            for (a = 0; a < p.length; a++) u = c[++i], typeof(s = p[a]) === l && s.length > 0 ? 2 === s.length ? typeof s[1] == o ? this[s[0]] = s[1].call(this, u) : this[s[0]] = s[1] : 3 === s.length ? typeof s[1] !== o || s[1].exec && s[1].test ? this[s[0]] = u ? u.replace(s[1], s[2]) : true : this[s[0]] = u ? s[1].call(this, u, s[2]) : r : 4 === s.length && (this[s[0]] = u ? s[3].call(this, u.replace(s[1], s[2])) : r) : this[s] = u || r;
+            for (o = 0; o < p.length; o++) u = c[++i], typeof(s = p[o]) === l && s.length > 0 ? 2 === s.length ? typeof s[1] == a ? this[s[0]] = s[1].call(this, u) : this[s[0]] = s[1] : 3 === s.length ? typeof s[1] !== a || s[1].exec && s[1].test ? this[s[0]] = u ? u.replace(s[1], s[2]) : true : this[s[0]] = u ? s[1].call(this, u, s[2]) : r : 4 === s.length && (this[s[0]] = u ? s[3].call(this, u.replace(s[1], s[2])) : r) : this[s] = u || r;
         d += 2
       }
     },
@@ -79,8 +79,8 @@
       for (var n in t)
         if (typeof t[n] === l && t[n].length > 0) {
           for (var i = 0; i < t[n].length; i++)
-            if (z(t[n][i], e)) return n === a ? r : n
-        } else if (z(t[n], e)) return n === a ? r : n;
+            if (z(t[n][i], e)) return n === o ? r : n
+        } else if (z(t[n], e)) return n === o ? r : n;
       return t.hasOwnProperty("*") ? t["*"] : e
     },
     ee = {
@@ -738,20 +738,20 @@
     },
     en = function(e, t) {
       if (typeof e === l && (t = e, e = r), !(this instanceof en)) return new en(e, t).getResult();
-      var a = typeof n !== s && n.navigator ? n.navigator : r,
-        g = e || (a && a.userAgent ? a.userAgent : i),
-        y = a && a.userAgentData ? a.userAgentData : r,
+      var o = typeof n !== s && n.navigator ? n.navigator : r,
+        g = e || (o && o.userAgent ? o.userAgent : i),
+        y = o && o.userAgentData ? o.userAgentData : r,
         O = t ? W(et, t) : et,
-        v = a && a.userAgent == g;
+        v = o && o.userAgent == g;
       return this.getBrowser = function() {
         var e = {};
-        return e[f] = r, e[m] = r, J.call(e, g, O.browser), e[u] = Q(e[m]), v && a && a.brave && typeof a.brave.isBrave == o && (e[f] = "Brave"), e
+        return e[f] = r, e[m] = r, J.call(e, g, O.browser), e[u] = Q(e[m]), v && o && o.brave && typeof o.brave.isBrave == a && (e[f] = "Brave"), e
       }, this.getCPU = function() {
         var e = {};
         return e[h] = r, J.call(e, g, O.cpu), e
       }, this.getDevice = function() {
         var e = {};
-        return e[_] = r, e[d] = r, e[p] = r, J.call(e, g, O.device), v && !e[p] && y && y.mobile && (e[p] = E), v && "Macintosh" == e[d] && a && typeof a.standalone !== s && a.maxTouchPoints && a.maxTouchPoints > 2 && (e[d] = "iPad", e[p] = b), e
+        return e[_] = r, e[d] = r, e[p] = r, J.call(e, g, O.device), v && !e[p] && y && y.mobile && (e[p] = E), v && "Macintosh" == e[d] && o && typeof o.standalone !== s && o.maxTouchPoints && o.maxTouchPoints > 2 && (e[d] = "iPad", e[p] = b), e
       }, this.getEngine = function() {
         var e = {};
         return e[f] = r, e[m] = r, J.call(e, g, O.engine), e
@@ -773,7 +773,7 @@
         return g = typeof e === c && e.length > S ? X(e, S) : e, this
       }, this.setUA(g), this
     };
-  en.VERSION = "0.7.40", en.BROWSER = K([f, m, u]), en.CPU = K([h]), en.DEVICE = K([d, _, p, g, E, y, b, O, v]), en.ENGINE = en.OS = K([f, m]), typeof t !== s ? ("object" !== s && e.exports && (t = e.exports = en), t.UAParser = en) : typeof define === o && define.amd ? define(function() {
+  en.VERSION = "0.7.40", en.BROWSER = K([f, m, u]), en.CPU = K([h]), en.DEVICE = K([d, _, p, g, E, y, b, O, v]), en.ENGINE = en.OS = K([f, m]), typeof t !== s ? ("object" !== s && e.exports && (t = e.exports = en), t.UAParser = en) : typeof define === a && define.amd ? define(function() {
     return en
   }) : typeof n !== s && (n.UAParser = en);
   var er = typeof n !== s && (n.jQuery || n.Zepto);

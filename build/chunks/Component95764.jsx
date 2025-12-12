@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 95764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -24,17 +24,17 @@ function b(e) {
     onClick: n
   } = e, b = (0, o.bp)(), C = (0, m.qY)(t), y = (0, l.e7)([d.Z], () => d.Z.getChannel(t), [t]), {
     canManageGuildEvent: v
-  } = (0, s.XJ)(y), O = v(C), x = r.useRef(null);
+  } = (0, s.XJ)(y), _ = v(C), O = r.useRef(null);
   if (null == C) return null;
-  let E = () => {
-      if (null != y && (0, h.Z)(y)) return void(0, p.lC)(y, b);
+  let x = () => {
+      if (null != y && (0, f.Z)(y)) return void(0, p.lC)(y, b);
       n()
     },
-    j = () => {
-      f.Z.endEvent(C.id, C.guild_id)
+    E = () => {
+      h.Z.endEvent(C.id, C.guild_id)
     };
-  return O ? (0, i.jsx)(a.yRy, {
-    targetElementRef: x,
+  return _ ? (0, i.jsx)(a.yRy, {
+    targetElementRef: O,
     renderPopout: e => {
       let {
         closePopout: t
@@ -48,7 +48,7 @@ function b(e) {
           children: (0, i.jsx)(a.sNh, {
             id: "end-voice-event",
             color: "danger",
-            action: j,
+            action: E,
             label: g.intl.string(g.t.qaYzPA),
             icon: a.k$p
           })
@@ -63,9 +63,9 @@ function b(e) {
         onClick: t
       } = e;
       return (0, i.jsx)(u.Z, {
-        buttonRef: x,
+        buttonRef: O,
         label: g.intl.string(g.t["6vrfgt"]),
-        onClick: E,
+        onClick: x,
         onPopoutClick: t
       })
     }

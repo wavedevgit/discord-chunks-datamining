@@ -25,7 +25,7 @@ function f(e) {
     case "coptic":
       return new(0, i.Y0);
     case "hebrew":
-      return new(0, o.H);
+      return new(0, a.H);
     case "indian":
       return new(0, s.t);
     case "islamic-civil":
@@ -41,6 +41,6 @@ function f(e) {
     case "roc":
       return new(0, d.t);
     default:
-      return new(0, a.IQ)
+      return new(0, o.IQ)
   }
 }

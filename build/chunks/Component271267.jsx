@@ -1,9 +1,9 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 271267, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
   Q: () => g,
-  Z: () => p
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,10 +11,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk957011 = require("./957011.js"),
   Chunk756066 = require("./756066.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk684734 = require("./684734.js"),
+  Chunk52726 = require("./52726.js"),
   Chunk270395 = require("./270395.js");
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,12 +34,12 @@ function u(e) {
 }
 let g = "role_subscriptions_eligibility_modal";
 
-function f(e) {
+function m(e) {
   let {
     guild: t,
     eligibility: i,
-    eligibilityLoading: a,
-    eligibilityError: s,
+    eligibilityLoading: s,
+    eligibilityError: a,
     refreshEligibility: c
   } = e;
   return (0, r.jsx)(l.Button, {
@@ -51,10 +51,10 @@ function f(e) {
         } = await n.e("21863").then(n.bind(n, 466501));
         return n => {
           var l, o;
-          return (0, r.jsx)(e, (l = u({}, n), o = o = {
+          return (0, r.jsx)(e, (l = d({}, n), o = o = {
             eligibility: i,
-            eligibilityLoading: a,
-            eligibilityError: s,
+            eligibilityLoading: s,
+            eligibilityError: a,
             refreshEligibility: c,
             guildId: t.id
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
@@ -78,29 +78,29 @@ function f(e) {
   })
 }
 
-function m(e) {
+function p(e) {
   let {
     guild: t,
     checkboxText: n
   } = e, {
-    canSubmitAcceptance: s,
+    canSubmitAcceptance: a,
     error: c,
-    loading: d,
-    submitAcceptTermsRequest: u
-  } = (0, a.Z)(t.id), [g, f] = i.useState(false);
+    loading: u,
+    submitAcceptTermsRequest: d
+  } = (0, s.Z)(t.id), [g, m] = i.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.Checkbox, {
       onChange: function() {
-        f(e => !e)
+        m(e => !e)
       },
       checked: g,
       label: n
     }), (0, r.jsx)(l.LZC, {
       size: 24
     }), (0, r.jsx)(l.Button, {
-      disabled: !g || !s,
-      onClick: u,
-      loading: d,
+      disabled: !g || !a,
+      onClick: d,
+      loading: u,
       variant: "expressive",
       text: o.intl.string(o.t.NL5ZNS)
     }), null != c && (0, r.jsxs)(r.Fragment, {
@@ -114,32 +114,32 @@ function m(e) {
   })
 }
 
-function b(e) {
+function f(e) {
   let {
     guild: t,
     monetizationEligibility: n
   } = e, {
     eligibilityLoading: i,
     eligibilityError: l,
-    refreshEligibility: a,
+    refreshEligibility: s,
     eligibility: o,
     eligibleForMonetization: c,
-    acceptTermsCheckboxText: d,
+    acceptTermsCheckboxText: u,
     wasRejectedInV1: g
   } = n;
-  return c ? g ? (0, r.jsx)(s.Z, u({}, n)) : (0, r.jsx)(m, {
+  return c ? g ? (0, r.jsx)(a.Z, d({}, n)) : (0, r.jsx)(p, {
     guild: t,
-    checkboxText: d
-  }) : (0, r.jsx)(f, {
+    checkboxText: u
+  }) : (0, r.jsx)(m, {
     guild: t,
     eligibility: o,
     eligibilityLoading: i,
     eligibilityError: l,
-    refreshEligibility: a
+    refreshEligibility: s
   })
 }
 
-function p(e) {
+function h(e) {
   let {
     guild: t,
     monetizationEligibility: n
@@ -148,7 +148,7 @@ function p(e) {
     className: c.ctaContainer,
     children: [(0, r.jsx)("img", {
       className: c.heroBanner,
-      src: d,
+      src: u,
       alt: o.intl.string(o.t.Af4klP)
     }), (0, r.jsxs)("div", {
       className: c.ctaContent,
@@ -164,7 +164,7 @@ function p(e) {
         children: o.intl.string(o.t["41wkMc"])
       }), (0, r.jsx)(l.LZC, {
         size: 24
-      }), (0, r.jsx)(b, {
+      }), (0, r.jsx)(f, {
         guild: t,
         monetizationEligibility: n
       })]

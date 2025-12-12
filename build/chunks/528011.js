@@ -26,8 +26,8 @@ function g(e) {
     n = m.Z.getIncidentsByGuild();
   for (let i of f.default.keys(n).map(e => s.Z.getGuild(e))) {
     if (null == i) continue;
-    let a = n[i.id];
-    if (!(null == a || !(0, _.i9)(a) && !(0, _.ur)(a) || (0, _.ur)(a) && i.id !== e) && r.Db(d.uB({
+    let o = n[i.id];
+    if (!(null == o || !(0, _.i9)(o) && !(0, _.ur)(o) || (0, _.ur)(o) && i.id !== e) && r.Db(d.uB({
         user: t,
         context: i,
         checkElevated: false
@@ -44,11 +44,11 @@ function E(e) {
       return null != n && r.Db(n, h.cv)
     }),
     n = (0, i.e7)([m.Z], () => null != e ? m.Z.getGuildIncident(e) : null),
-    a = null != n && (0, _.ur)(n);
+    o = null != n && (0, _.ur)(n);
   return {
     shouldShowIncidentActions: t,
     incidentData: n,
-    isUnderLockdown: a
+    isUnderLockdown: o
   }
 }
 
@@ -65,7 +65,7 @@ function b() {
 }
 
 function y(e) {
-  let t = (0, o.gj)("useShowAntiRaidInGuildNotifSettings"),
+  let t = (0, a.gj)("useShowAntiRaidInGuildNotifSettings"),
     n = (0, i.e7)([l.Z, s.Z], () => {
       let t = s.Z.getGuild(e);
       return (0, p.al)(t, l.Z)

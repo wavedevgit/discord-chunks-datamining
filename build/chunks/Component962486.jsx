@@ -7,13 +7,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk322665 = require("./322665.jsx"),
-  Chunk17845 = require("./17845.jsx"),
+  Chunk484474 = require("./484474.jsx"),
   Chunk374939 = require("./374939.jsx"),
   Chunk283293 = require("./283293.jsx"),
   Chunk726115 = require("./726115.js"),
   Chunk294330 = require("./294330.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk423337 = require("./423337.js");
+  Chunk663448 = require("./663448.js");
 let g = {
   page: Chunk981631.ZY5.GUILD_DISCOVERY,
   object: Chunk981631.qAy.CARD,
@@ -27,8 +27,8 @@ function h(e) {
     loading: p,
     onScroll: h,
     onGuildCardClick: m,
-    onGuildCardSeen: b
-  } = e, _ = (0, u.Mf)(t), E = (0, u.a$)(t), O = (0, u.QW)(t), v = (0, u.lg)(t), y = i.useMemo(() => {
+    onGuildCardSeen: _
+  } = e, b = (0, u.Mf)(t), E = (0, u.a$)(t), O = (0, u.QW)(t), v = (0, u.lg)(t), y = i.useMemo(() => {
     let e = p ? 30 : n.length,
       t = [];
     for (let a = 0; a < e; a++) {
@@ -37,15 +37,15 @@ function h(e) {
         guildId: null != (i = n[a]) ? i : null,
         index: a,
         onClick: e => m(e, a, v, g),
-        onView: e => b(e, v)
+        onView: e => _(e, v)
       }, null != (l = n[a]) ? l : a))
     }
     return t
-  }, [v, n, p, m, b]);
+  }, [v, n, p, m, _]);
   return (0, r.jsxs)(c.Z, {
     onScroll: h,
     children: [(0, r.jsx)(s.Z, {
-      title: _,
+      title: b,
       description: E,
       children: (0, r.jsx)(a.Z, {})
     }), (0, r.jsxs)(o.Z, {

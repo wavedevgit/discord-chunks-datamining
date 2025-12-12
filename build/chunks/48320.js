@@ -18,11 +18,11 @@ class u extends Chunk344368.F {
   innerExtract(e, t) {
     let n = t[l].toLocaleLowerCase(),
       i = r.LN[n],
-      o = t[s],
+      a = t[s],
       u = t[c],
-      d = o || u;
+      d = a || u;
     d = (d = d || "").toLocaleLowerCase();
     let f = null;
-    return "минулого" == d || "минулий" == d || "попередній" == d || "попереднього" == d ? f = "last" : "наступного" == d || "наступний" == d ? f = "next" : ("цей" == d || "цього" == d || "цьому" == d) && (f = "this"), (0, a.Rv)(e.reference, i, f)
+    return "минулого" == d || "минулий" == d || "попередній" == d || "попереднього" == d ? f = "last" : "наступного" == d || "наступний" == d ? f = "next" : ("цей" == d || "цього" == d || "цьому" == d) && (f = "this"), (0, o.Rv)(e.reference, i, f)
   }
 }

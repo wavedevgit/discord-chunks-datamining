@@ -1,7 +1,7 @@
 /** Chunk was on 21971 **/
 /** chunk id: 201049, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => y
+  default: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,20 +18,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk185923 = require("./185923.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk833257 = require("./833257.js");
+  Chunk851458 = require("./851458.js");
 
-function y(e) {
+function f(e) {
   var n;
   let {
     transitionState: t,
-    onClose: y,
+    onClose: f,
     channelId: h,
     guildId: C,
     tag: O
   } = e, k = l.useRef(null), x = null != O, [P, N] = l.useState(null != (n = null == O ? true : O.name) ? n : ""), [w, Z] = l.useState(null != O ? {
     id: O.emojiId,
     name: O.emojiName
-  } : null), [B, E] = l.useState(null == O ? true : O.moderated), I = (0, a.e7)([m.ZP], () => (null == w ? true : w.id) != null ? m.ZP.getUsableCustomEmojiById(w.id) : null), S = (null == O ? true : O.name) !== P || (null == O ? true : O.emojiId) !== (null == w ? true : w.id) || (null == O ? true : O.emojiName) !== (null == w ? true : w.name) || B !== (null == O ? true : O.moderated), D = () => {
+  } : null), [B, E] = l.useState(null == O ? true : O.moderated), I = (0, a.e7)([m.ZP], () => (null == w ? true : w.id) != null ? m.ZP.getUsableCustomEmojiById(w.id) : null), S = (null == O ? true : O.name) !== P || (null == O ? true : O.emojiId) !== (null == w ? true : w.id) || (null == O ? true : O.emojiName) !== (null == w ? true : w.name) || B !== (null == O ? true : O.moderated), _ = () => {
     if (null != P && S) {
       if (x) {
         p.Z.updateForumTag({
@@ -40,7 +40,7 @@ function y(e) {
           emojiId: null == w ? true : w.id,
           emojiName: null == w ? true : w.name,
           moderated: B
-        }, h), y();
+        }, h), f();
         return
       }
       p.Z.createForumTag({
@@ -48,49 +48,49 @@ function y(e) {
         emojiId: null == w ? true : w.id,
         emojiName: null == w ? true : w.name,
         moderated: B
-      }, h), y()
+      }, h), f()
     }
-  }, T = l.useCallback(e => N(e), []), R = l.useRef(null);
+  }, D = l.useCallback(e => N(e), []), T = l.useRef(null);
   return (0, c.ZP)(() => {
-    null != R.current && R.current.focus()
+    null != T.current && T.current.focus()
   }), (0, i.jsxs)(o.Modal, {
-    title: x ? g.intl.string(g.t.zeVg5d) : g.intl.string(g.t["/jubeD"]),
-    subtitle: g.intl.string(g.t["3v8kZH"]),
+    title: x ? b.intl.string(b.t.zeVg5d) : b.intl.string(b.t["/jubeD"]),
+    subtitle: b.intl.string(b.t["3v8kZH"]),
     transitionState: t,
-    onClose: y,
+    onClose: f,
     actions: [{
       variant: "secondary",
-      text: g.intl.string(g.t["ETE/oC"]),
+      text: b.intl.string(b.t["ETE/oC"]),
       onClick: () => {
-        y()
+        f()
       }
     }, {
       variant: "primary",
-      text: g.intl.string(g.t["R3BPH+"]),
-      onClick: D,
+      text: b.intl.string(b.t["R3BPH+"]),
+      onClick: _,
       disabled: 0 === P.length || !S,
       autoFocus: true
     }],
     actionBarInput: x ? (0, i.jsx)(r.Button, {
       variant: "critical-secondary",
-      text: g.intl.string(g.t.huYSMr),
+      text: b.intl.string(b.t.huYSMr),
       onClick: () => {
-        x && (p.Z.deleteForumTag(h, O.id), y())
+        x && (p.Z.deleteForumTag(h, O.id), f())
       }
     }) : true,
     children: [(0, i.jsx)("div", {
-      className: f.inputContainer,
+      className: y.inputContainer,
       children: (0, i.jsx)(r.oil, {
-        inputRef: R,
+        inputRef: T,
         maxLength: 20,
         value: P,
-        placeholder: g.intl.string(g.t["5vpeb4"]),
-        onChange: T,
+        placeholder: b.intl.string(b.t["5vpeb4"]),
+        onChange: D,
         autoFocus: true,
         leading: {
           type: "emoji",
           button: (0, i.jsx)("div", {
-            className: f.emojiButtonContainer,
+            className: y.emojiButtonContainer,
             children: (0, i.jsx)(r.yRy, {
               targetElementRef: k,
               renderPopout: e => {
@@ -114,7 +114,7 @@ function y(e) {
                     }), i && n()
                   },
                   pickerIntention: v.Hz.COMMUNITY_CONTENT,
-                  onNavigateAway: y,
+                  onNavigateAway: f,
                   channel: t
                 })
               },
@@ -150,10 +150,10 @@ function y(e) {
                     null == (t = e.onClick) || t.call(e, n)
                   },
                   active: o,
-                  className: f.emojiButton,
+                  className: y.emojiButton,
                   tabIndex: 0,
                   renderButtonContents: null != w && (null != w.id || null != w.name) ? () => (0, i.jsx)(u.Z, {
-                    className: f.emoji,
+                    className: y.emoji,
                     emojiId: w.id,
                     emojiName: w.name,
                     animated: !!(null == I ? true : I.animated)
@@ -173,14 +173,14 @@ function y(e) {
           })
         },
         onKeyDown: e => {
-          e.key === b.vn.ENTER && P.length > 0 && (P.length > 0 && D(), e.preventDefault())
+          e.key === g.vn.ENTER && P.length > 0 && (P.length > 0 && _(), e.preventDefault())
         },
         trailing: P.length > 0 || null != w ? {
           icon: r.k$p,
           onClick: () => {
             N(""), Z(null)
           },
-          "aria-label": g.intl.string(g.t.o8lsHe)
+          "aria-label": b.intl.string(b.t.o8lsHe)
         } : true
       })
     }), (0, i.jsx)(r.LZC, {
@@ -188,7 +188,7 @@ function y(e) {
     }), (0, i.jsx)(r.Checkbox, {
       checked: null != B && B,
       onChange: e => E(e || (null == O ? true : O.moderated) == null && true),
-      label: g.intl.string(g.t["rMH+rt"]),
+      label: b.intl.string(b.t["rMH+rt"]),
       labelType: "secondary"
     })]
   })

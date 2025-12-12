@@ -19,8 +19,8 @@ class c {
     return l.ANM.MESSAGE_DELETE_UPLOAD(e)
   }
   getMaxFileSize(e) {
-    let t = a.Z.getBasicChannel(e);
-    return o.dg(null == t ? true : t.guild_id)
+    let t = o.Z.getBasicChannel(e);
+    return a.dg(null == t ? true : t.guild_id)
   }
   getMaxAttachmentsCount() {
     return Chunk981631.dN1

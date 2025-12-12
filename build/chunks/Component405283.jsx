@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk463208 = require("./463208.jsx"),
   Chunk199849 = require("./199849.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk629709 = require("./629709.js");
+  Chunk409738 = require("./409738.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,7 +69,7 @@ function p(e) {
         let [l, c] = e, u = null != (t = n[l]) ? t : c.defaultValue;
         return (0, r.jsxs)(i.gNt, {
           label: "boolean" === c.type ? true : c.label,
-          children: ["select" === c.type && null != c.options && (0, r.jsx)(o.y6, {
+          children: ["select" === c.type && null != c.options && (0, r.jsx)(a.y6, {
             value: u,
             onChange: e => d(l, e),
             options: c.options
@@ -77,10 +77,10 @@ function p(e) {
             checked: u,
             onChange: e => d(l, e),
             label: c.label
-          }), "text" === c.type && (0, r.jsx)(a.o, {
+          }), "text" === c.type && (0, r.jsx)(o.o, {
             value: u,
             onChange: e => d(l, e)
-          }), "number" === c.type && (0, r.jsx)(a.o, {
+          }), "number" === c.type && (0, r.jsx)(o.o, {
             type: "number",
             value: String(u),
             min: c.minValue,

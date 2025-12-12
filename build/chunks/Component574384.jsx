@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk668339 = require("./668339.jsx"),
   Chunk489863 = require("./489863.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk829478 = require("./829478.js");
+  Chunk990199 = require("./990199.js");
 let d = 5;
 
 function f(e) {
@@ -40,11 +40,11 @@ function f(e) {
   }));
   return (0, r.jsxs)("div", {
     className: u.selectorGroup,
-    children: [(0, r.jsx)(a.X6q, {
+    children: [(0, r.jsx)(o.X6q, {
       variant: "heading-deprecated-12/semibold",
       className: u.sectionLabel,
       children: c.intl.string(c.t["8qKd+J"])
-    }), null != _ && "" !== _ ? (0, r.jsx)(o.x, {
+    }), null != _ && "" !== _ ? (0, r.jsx)(a.x, {
       variant: "text-xs/normal",
       color: "text-feedback-critical",
       children: _
@@ -55,15 +55,15 @@ function f(e) {
       placeholder: c.intl.string(c.t["Re/64R"]),
       options: E,
       value: f,
-      renderOptionLabel: e => (0, r.jsx)(o.x, {
+      renderOptionLabel: e => (0, r.jsx)(a.x, {
         variant: "text-md/normal",
         children: e.label
       }),
-      renderOptionValue: e => (0, r.jsx)(o.x, {
+      renderOptionValue: e => (0, r.jsx)(a.x, {
         variant: "text-md/normal",
         children: e[0].label
       })
-    }), (0, r.jsx)(o.x, {
+    }), (0, r.jsx)(a.x, {
       variant: "text-xs/normal",
       color: "text-default",
       className: u.label,

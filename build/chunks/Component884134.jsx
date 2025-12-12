@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk454399 = require("./454399.jsx"),
@@ -40,19 +40,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk990551 = require("./990551.js"),
+  Chunk939101 = require("./939101.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk23766 = require("./23766.js");
+  Chunk882741 = require("./882741.js");
 let B = 0,
   V = 5e3;
 
 function H(e) {
-  let [t, n] = i.useState(0), [r, a] = i.useState(false), o = i.useRef(e);
+  let [t, n] = i.useState(0), [r, o] = i.useState(false), a = i.useRef(e);
   return i.useEffect(() => {
-    e === o.current || r || n(e => e + 1), o.current = e, a(false)
+    e === a.current || r || n(e => e + 1), a.current = e, o(false)
   }, [e, r]), {
     key: t,
-    handleInternalChange: i.useCallback(e => (a(true), e), [])
+    handleInternalChange: i.useCallback(e => (o(true), e), [])
   }
 }
 
@@ -73,17 +73,17 @@ function Y(e) {
 
 function W() {
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk23766.headerContainer,
+    className: Chunk882741.headerContainer,
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/bold",
-      children: Chunk388032.intl.string(Chunk990551.default.AsmU85)
+      children: Chunk388032.intl.string(Chunk939101.default.AsmU85)
     }), (0, Chunk54381.jsx)(Chunk28664.u, {
       text: Chunk388032.intl.string(Chunk388032.t["5AFxuK"]),
       children: (0, Chunk54381.jsx)(Chunk481060.SrA, {
         size: "custom",
         height: 20,
         width: 20,
-        colorClass: Chunk23766.nitroIcon
+        colorClass: Chunk882741.nitroIcon
       })
     }), (0, Chunk54381.jsx)(Y, {})]
   })
@@ -141,7 +141,7 @@ function Q(e) {
     gradientAngle: t,
     setGradientAngle: n
   } = e, {
-    key: a,
+    key: o,
     handleInternalChange: s
   } = H(t), [l, c] = i.useState("".concat(Math.round(t), "\xb0"));
   i.useEffect(() => {
@@ -156,7 +156,7 @@ function Q(e) {
     c("".concat(i, "\xb0")), (0, D.Ac)(), n(i)
   };
   return (0, r.jsxs)("div", {
-    className: o()(F.sliderContainer, F.gradientDirectionSliderContainer),
+    className: a()(F.sliderContainer, F.gradientDirectionSliderContainer),
     children: [(0, r.jsxs)("div", {
       className: F.controlLabelContainer,
       children: [(0, r.jsx)(f.Text, {
@@ -196,7 +196,7 @@ function Q(e) {
         },
         onValueRender: () => null,
         keyboardStep: 1
-      }, a)]
+      }, o)]
     })]
   })
 }
@@ -206,8 +206,8 @@ function X(e) {
     chassisMixAmount: t,
     setChassisMixAmount: n
   } = e, {
-    key: a,
-    handleInternalChange: o
+    key: o,
+    handleInternalChange: a
   } = H(t), [s, l] = i.useState("".concat(Math.round(t), "%"));
   i.useEffect(() => {
     l("".concat(Math.round(t), "%"))
@@ -240,11 +240,11 @@ function X(e) {
       minValue: 0,
       maxValue: 100,
       onValueChange: e => {
-        (0, D.z3)(), o(e), n(e)
+        (0, D.z3)(), a(e), n(e)
       },
       onValueRender: () => null,
       keyboardStep: 1
-    }, a)]
+    }, o)]
   })
 }
 
@@ -252,7 +252,7 @@ function J(e) {
   let {
     isCoachmark: t,
     isMobile: n
-  } = e, [a, o] = i.useState(false), s = i.useRef(false), [l, u] = i.useState(false), p = i.useRef(null), _ = i.useRef(null), m = i.useCallback(() => {
+  } = e, [o, a] = i.useState(false), s = i.useRef(false), [l, u] = i.useState(false), p = i.useRef(null), _ = i.useRef(null), m = i.useCallback(() => {
     var e;
     (0, D.Om)();
     let t = (0, A.C)();
@@ -264,7 +264,7 @@ function J(e) {
   }, []);
   i.useEffect(() => {
     if (t) return s.current = false, p.current = setTimeout(() => {
-      s.current || o(true)
+      s.current || a(true)
     }, V), () => {
       null != p.current && clearTimeout(p.current)
     }
@@ -273,9 +273,9 @@ function J(e) {
       s.current = true
     }, []),
     g = i.useCallback(() => {
-      o(false)
+      a(false)
     }, []),
-    E = a && !l,
+    E = o && !l,
     b = () => (0, r.jsx)(d.zxk, {
       buttonRef: _,
       variant: "secondary",
@@ -303,7 +303,7 @@ function J(e) {
     body: Z.intl.string(G.default["6pabtR"]),
     position: "left",
     asset: E ? (0, r.jsx)(f.kBK, {}) : true,
-    forceOpen: a,
+    forceOpen: o,
     onTooltipShow: h,
     onTooltipHide: g,
     targetElementRef: _,
@@ -358,15 +358,15 @@ function et(e) {
   let {
     onSaveTheme: n,
     canApply: i,
-    metadata: a
+    metadata: o
   } = e, s = (0, y.m)(U.PremiumTypes.TIER_2), c = (null == (t = (0, g.oq)().metadata) ? true : t.from) === g.tE.SHARE_MESSAGE;
   (0, D.hf)(s, m.Z.CUSTOM_THEMES_EDITOR);
   let u = () => {
-      (0, D.Vb)(), (0, E.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == a ? true : a.from) === g.tE.SETTING ? ((0, I.openUserSettings)(S.n.APPEARANCE_PANEL, {
+      (0, D.Vb)(), (0, E.Q3)(l.z.CUSTOM_THEME_COACHMARK), (null == o ? true : o.from) === g.tE.SETTING ? ((0, I.openUserSettings)(S.n.APPEARANCE_PANEL, {
         section: M.oAB.APPEARANCE
-      }), (0, g.Ll)()) : (null == a ? true : a.from) === g.tE.CLIENT_THEMES_EDITOR ? (0, g.XO)(g.wh.CLIENT_THEMES) : (0, g.Ll)()
+      }), (0, g.Ll)()) : (null == o ? true : o.from) === g.tE.CLIENT_THEMES_EDITOR ? (0, g.XO)(g.wh.CLIENT_THEMES) : (0, g.Ll)()
     },
-    f = o()(F.footerContainer, {
+    f = a()(F.footerContainer, {
       [F.footerContainerNonPremium]: !s
     });
   return (0, r.jsx)("div", {
@@ -405,8 +405,8 @@ function en(e) {
   var t;
   let {
     metadata: n,
-    markAsDismissed: a,
-    isCoachmark: o,
+    markAsDismissed: o,
+    isCoachmark: a,
     isMobile: c
   } = e, u = R.Mc.useExperiment({
     location: "ClientThemeColorPickerTools"
@@ -430,14 +430,14 @@ function en(e) {
         gradientAngle: L,
         baseMix: A
       }
-    }), (0, D.u7)(T, A, L, Y, z), null == a || a(k.L.TAKE_ACTION), W || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
+    }), (0, D.u7)(T, A, L, Y, z), null == o || o(k.L.TAKE_ACTION), W || (0, E.Q3)(l.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), (0, g.Ll)(), (0, O.UD)()
   }, en = () => {
     y(N._m.RESET_BUTTON), (0, D.uf)()
   }, er = T.length > 0;
   return (i.useEffect(() => () => {
     I.current || y(N._m.EDITOR_CLOSE)
   }, [y]), (0, _.ZP)(() => {
-    if (!o) {
+    if (!a) {
       var e;
       let t = (null != (e = null == T ? true : T.length) ? e : 0) > 0,
         n = null != q;
@@ -454,8 +454,8 @@ function en(e) {
       children: (0, r.jsxs)("div", {
         className: F.editorBody,
         children: [(0, r.jsx)(K, {
-          markAsDismissed: a,
-          isCoachmark: o
+          markAsDismissed: o,
+          isCoachmark: a
         }), (0, r.jsxs)("div", {
           className: F.section,
           children: [(0, r.jsx)(f.Text, {
@@ -495,7 +495,7 @@ function en(e) {
         }), (0, r.jsxs)("div", {
           className: F.resetButton,
           children: [(0, r.jsx)(J, {
-            isCoachmark: o,
+            isCoachmark: a,
             isMobile: c
           }), (0, r.jsx)(d.zxk, {
             variant: "secondary",
@@ -506,7 +506,7 @@ function en(e) {
           })]
         })]
       })
-    }), o ? (0, r.jsx)(ee, {
+    }), a ? (0, r.jsx)(ee, {
       onSaveTheme: $,
       canApply: er
     }) : (0, r.jsx)(et, {

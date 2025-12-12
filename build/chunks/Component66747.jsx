@@ -47,7 +47,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk176505 = require("./176505.js"),
   Chunk50493 = require("./50493.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk983266 = require("./983266.js");
+  Chunk490225 = require("./490225.js");
 let Q = Chunk473749.memo(function(e) {
     let {
       member: t
@@ -60,7 +60,7 @@ let Q = Chunk473749.memo(function(e) {
           size: "custom",
           width: 20,
           height: 20,
-          color: u.Z.colors.TEXT_MUTED.css
+          color: d.Z.colors.TEXT_MUTED.css
         })
       }), n && (0, r.jsx)(C.u, {
         "aria-label": z.intl.string(z.t["xfJP+u"]),
@@ -78,14 +78,14 @@ let Q = Chunk473749.memo(function(e) {
           size: "custom",
           width: 20,
           height: 20,
-          color: u.Z.colors.TEXT_FEEDBACK_CRITICAL.css
+          color: d.Z.colors.TEXT_FEEDBACK_CRITICAL.css
         })
       }), (0, O.He)(t.userId) && (0, r.jsx)(C.u, {
         text: z.intl.string(z.t.PK9FQ2),
-        children: (0, r.jsx)(N.Z, {
+        children: (0, r.jsx)(D.Z, {
           width: 20,
           height: 20,
-          color: u.Z.colors.TEXT_FEEDBACK_CRITICAL.css
+          color: d.Z.colors.TEXT_FEEDBACK_CRITICAL.css
         })
       }), (0, g.EY)(t) && (0, r.jsx)(C.u, {
         text: z.intl.string(z.t.qOVbaX),
@@ -93,7 +93,7 @@ let Q = Chunk473749.memo(function(e) {
           size: "custom",
           width: 20,
           height: 20,
-          color: u.Z.colors.TEXT_MUTED.css
+          color: d.Z.colors.TEXT_MUTED.css
         })
       })]
     })
@@ -102,7 +102,7 @@ let Q = Chunk473749.memo(function(e) {
     let {
       member: t,
       highestRole: n
-    } = e, i = (0, d.e7)([S.Z], () => S.Z.getGuild(t.guildId), [t.guildId]), a = t.roles.length - 1, s = l.useMemo(() => new Intl.NumberFormat(z.intl.currentLocale).format(a), [a]), c = (0, U.vN)(t), u = (0, U.vN)(t, true), b = (0, d.e7)([Z.Z], () => Z.Z.can(B.Plq.MANAGE_ROLES, i), [i]);
+    } = e, i = (0, u.e7)([w.Z], () => w.Z.getGuild(t.guildId), [t.guildId]), a = t.roles.length - 1, s = l.useMemo(() => new Intl.NumberFormat(z.intl.currentLocale).format(a), [a]), c = (0, U.vN)(t), d = (0, U.vN)(t, true), b = (0, u.e7)([S.Z], () => S.Z.can(B.Plq.MANAGE_ROLES, i), [i]);
     return null == i ? null : (0, r.jsxs)("div", {
       className: Y.roleContainer,
       children: [null != n && (0, r.jsx)(F.Z, {
@@ -111,7 +111,7 @@ let Q = Chunk473749.memo(function(e) {
         guildId: t.guildId
       }), a > 0 && (0, r.jsx)(m.P3F, {
         className: Y.otherRoles,
-        onClick: e => u(e),
+        onClick: e => d(e),
         children: (0, r.jsx)(C.u, {
           text: z.intl.string(z.t.DY6n4q),
           children: (0, r.jsxs)(m.Text, {
@@ -255,19 +255,19 @@ let $ = Chunk473749.memo(function(e) {
       highestRole: i,
       isHoldingAdvancedInfoKey: a,
       onOpenModerationMenu: s,
-      onOpenMemberView: u,
+      onOpenMemberView: d,
       compact: b,
       hasModViewPanelAccess: f
-    } = e, p = (0, d.e7)([Z.Z, S.Z], () => Z.Z.can(B.Plq.MANAGE_GUILD, S.Z.getGuild(t.guildId)), [t.guildId]), {
+    } = e, p = (0, u.e7)([S.Z, w.Z], () => S.Z.can(B.Plq.MANAGE_GUILD, w.Z.getGuild(t.guildId)), [t.guildId]), {
       selectedUserIds: h,
       addUsers: g,
       removeUser: j
-    } = (0, A.Z)(t.guildId), x = (0, M.xC)(t.guildId), v = (0, M.hB)(t.guildId, x, t.userId), y = (0, d.e7)([E.Z], () => {
+    } = (0, A.Z)(t.guildId), x = (0, M.xC)(t.guildId), v = (0, M.hB)(t.guildId, x, t.userId), y = (0, u.e7)([E.Z], () => {
       var e;
       return null != (e = E.Z.getSearchStateByGuildId(t.guildId).selectedSort) ? e : V.d$.ORDER_BY_UNSPECIFIED
     }, [t.guildId], c()), O = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != t && v && (h.has(t.userId) ? j(t.userId) : g([t.userId]))
-    }, [g, v, t, j, h]), H = y === V.d$.ORDER_BY_GUILD_JOINED_AT_ASC, w = y === V.d$.ORDER_BY_USER_ID_ASC || y === V.d$.ORDER_BY_USER_ID_DESC;
+    }, [g, v, t, j, h]), H = y === V.d$.ORDER_BY_GUILD_JOINED_AT_ASC, _ = y === V.d$.ORDER_BY_USER_ID_ASC || y === V.d$.ORDER_BY_USER_ID_DESC;
     return (0, r.jsxs)(r.Fragment, {
       children: [x && (0, r.jsx)("td", {
         children: (0, r.jsx)("div", {
@@ -309,7 +309,7 @@ let $ = Chunk473749.memo(function(e) {
         children: (0, r.jsx)($, {
           showLongDate: a,
           member: t,
-          isSortedBy: w
+          isSortedBy: _
         })
       }), p && (0, r.jsx)("td", {
         className: o()(Y.smallCol, {
@@ -344,9 +344,9 @@ let $ = Chunk473749.memo(function(e) {
             asContainer: true,
             text: f ? z.intl.string(z.t.nHfkf4) : z.intl.string(z.t.uTre2y),
             children: (0, r.jsx)(m.P3F, {
-              onClick: u,
+              onClick: d,
               className: Y.button,
-              children: f ? (0, r.jsx)(_.Z, {
+              children: f ? (0, r.jsx)(N.Z, {
                 width: et,
                 height: et
               }) : (0, r.jsx)(m.tBG, {
@@ -382,35 +382,35 @@ let $ = Chunk473749.memo(function(e) {
       guildId: n,
       style: i,
       rowSelected: s,
-      isLoading: u = false,
+      isLoading: d = false,
       isHoldingAdvancedInfoKey: C = false,
       compact: m = false
     } = e, {
       analyticsLocations: b
-    } = (0, p.ZP)(), f = (0, d.e7)([w.ZP], () => w.ZP.getGuildSidebarState(n), [n]), h = (null == f ? true : f.details.userId) === t, g = (0, d.e7)([E.Z], () => E.Z.getEnhancedMember(n, t), [n, t]), j = (0, U.zq)(g), y = (0, d.e7)([D.default], () => D.default.getUser(t), [t]), O = (0, v.m)(n), H = (0, U.RN)(null != g ? g : true), S = l.useCallback(e => {
+    } = (0, p.ZP)(), f = (0, u.e7)([_.ZP], () => _.ZP.getGuildSidebarState(n), [n]), h = (null == f ? true : f.details.userId) === t, g = (0, u.e7)([E.Z], () => E.Z.getEnhancedMember(n, t), [n, t]), j = (0, U.zq)(g), y = (0, u.e7)([Z.default], () => Z.default.getUser(t), [t]), O = (0, v.m)(n), H = (0, U.RN)(null != g ? g : true), w = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), H(e)
-    }, [H]), Z = l.useCallback(e => {
+    }, [H]), S = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != g && (0, U.RE)(g, b)
-    }, [g, b]), N = l.useCallback(e => {
+    }, [g, b]), D = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != g && (O ? (0, x.r)(g.guildId, g.userId, q.oC.MEMBER_SAFETY, {
         modViewPanel: G.k.INFO
       }) : (0, U.RE)(g, b))
-    }, [g, b, O]), _ = l.useCallback((e, t) => c()((0, a.omit)(e, en), (0, a.omit)(t, en)), []);
+    }, [g, b, O]), N = l.useCallback((e, t) => c()((0, a.omit)(e, en), (0, a.omit)(t, en)), []);
     return null == g ? null : (0, r.jsx)(T.Z, {
       role: "row",
       value: g,
       style: i,
-      className: o()(Y.roundedRow, Y.memberRowContainer, s && Y.selected, h && Y.memberSelected, u && Y.loading),
-      equalityFn: _,
-      onClick: Z,
-      onContextMenu: S,
+      className: o()(Y.roundedRow, Y.memberRowContainer, s && Y.selected, h && Y.memberSelected, d && Y.loading),
+      equalityFn: N,
+      onClick: S,
+      onContextMenu: w,
       children: (0, r.jsx)(ee, {
         member: g,
         user: y,
         highestRole: j,
         isHoldingAdvancedInfoKey: C,
-        onOpenModerationMenu: S,
-        onOpenMemberView: N,
+        onOpenModerationMenu: w,
+        onOpenMemberView: D,
         compact: m,
         hasModViewPanelAccess: O
       })

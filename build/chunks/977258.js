@@ -16,6 +16,6 @@ function l(e) {
 }
 
 function c(e, t) {
-  let n = l(a.Z.getChannel(t));
-  return i.Z.isChannelGated(e, t) || o.Uu(n, a.Z.getChannel(t))
+  let n = l(o.Z.getChannel(t));
+  return i.Z.isChannelGated(e, t) || a.Uu(n, o.Z.getChannel(t))
 }

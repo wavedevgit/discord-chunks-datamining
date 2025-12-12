@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 900902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,18 +20,18 @@ let p = Chunk473749.memo(function(e) {
       groupId: a,
       isGroupStart: s,
       usernameProfile: p,
-      avatarProfile: f,
-      setPopout: h,
+      avatarProfile: h,
+      setPopout: f,
       author: m,
       repliedMessage: g,
       roleIcon: b
-    } = e, C = (0, u.wq)(t.author.id, n.id), y = (0, u.XO)(t, n, p, h), v = (0, u.R9)(f, h), O = r.useCallback(() => {
-      h({
+    } = e, C = (0, u.wq)(t.author.id, n.id), y = (0, u.XO)(t, n, p, f), v = (0, u.R9)(h, f), _ = r.useCallback(() => {
+      f({
         usernameProfile: false,
         avatarProfile: false,
         referencedUsernameProfile: false
       })
-    }, [h]);
+    }, [f]);
     return (0, i.jsx)(o.ZP, {
       guildId: n.guild_id,
       message: t,
@@ -42,18 +42,18 @@ let p = Chunk473749.memo(function(e) {
       subscribeToGroupId: a,
       showTimestampOnHover: !s && l && t.type !== d.uaV.REPLY,
       renderPopout: c.Z,
-      showAvatarPopout: f,
+      showAvatarPopout: h,
       showUsernamePopout: p,
       onClickAvatar: v,
       onClickUsername: y,
       onContextMenu: C,
-      onPopoutRequestClose: O,
+      onPopoutRequestClose: _,
       roleIcon: b
     })
   }),
-  f = Chunk473749.memo(Chunk318713.Z);
+  h = Chunk473749.memo(Chunk318713.Z);
 
-function h(e) {
+function f(e) {
   let {
     messageProps: t,
     setPopout: n,
@@ -64,7 +64,7 @@ function h(e) {
     roleIcon: u
   } = e, {
     message: d,
-    compact: h,
+    compact: f,
     channel: m,
     groupId: g
   } = t, {
@@ -73,10 +73,10 @@ function h(e) {
   } = r;
   if ((0, l.Z)(d)) return null;
   let y = d.id === g;
-  return y || h || null != o ? (0, i.jsx)(p, {
+  return y || f || null != o ? (0, i.jsx)(p, {
     message: d,
     channel: m,
-    compact: h,
+    compact: f,
     subscribeToGroupId: g,
     isGroupStart: y,
     groupId: g,
@@ -86,7 +86,7 @@ function h(e) {
     author: s,
     repliedMessage: c,
     roleIcon: u
-  }) : (0, i.jsx)(f, {
+  }) : (0, i.jsx)(h, {
     compact: true,
     timestamp: d.timestamp,
     isInline: false,

@@ -35,13 +35,13 @@ class f extends Chunk317770.Z {
         m = d.ZP.canUseAnimatedAvatar(g);
       if (m || "image/gif" !== n.type) return void h(t);
       if (null == g) return;
-      let b = (0, o.SD)({
+      let _ = (0, o.SD)({
         userId: g.id,
         image: t
       });
       if (!m) return void(0, s.s)({
         uploadType: p.pC.AVATAR,
-        imageSrc: b,
+        imageSrc: _,
         analyticsSource: l
       })
     })(e) : e.uploadType === p.pC.BANNER ? (e => {

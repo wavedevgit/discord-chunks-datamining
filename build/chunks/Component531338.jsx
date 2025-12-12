@@ -13,12 +13,12 @@ var Chunk755721 = require("./755721.js"),
   Chunk787025 = require("./787025.jsx"),
   Chunk656649 = require("./656649.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk467591 = require("./467591.js");
+  Chunk736902 = require("./736902.js");
 let v = (0, Chunk77987.e)(function(e) {
   let {
     match: t
-  } = e, o = t.params.type, c = i.Z.get(o);
-  if (null == c) return (0, n.jsx)(s.G, {
+  } = e, o = t.params.type, s = i.Z.get(o);
+  if (null == s) return (0, n.jsx)(c.G, {
     children: (0, n.jsx)(a.Text, {
       className: f.error,
       variant: "text-md/normal",
@@ -40,24 +40,24 @@ let v = (0, Chunk77987.e)(function(e) {
       });
     window.location = a.url
   }
-  return (0, n.jsx)(s.G, {
+  return (0, n.jsx)(c.G, {
     wrapperClassName: f.wrapper,
     children: (0, n.jsxs)("div", {
       className: f.root,
       children: [(0, n.jsx)(d.KJ, {
         className: f.logos,
-        platform: c
+        platform: s
       }), (0, n.jsx)(a.Heading, {
         variant: "text-lg/bold",
         className: f.header,
         children: u.intl.format(u.t.Pw4vee, {
-          provider: c.name
+          provider: s.name
         })
       }), (0, n.jsx)(a.Text, {
         variant: "text-md/normal",
         className: f.body,
         children: u.intl.format(u.t.rHlSVB, {
-          provider: c.name
+          provider: s.name
         })
       }), (0, n.jsx)(r.zx, {
         size: r.zx.Sizes.LARGE,

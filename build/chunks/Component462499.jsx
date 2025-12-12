@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk969632 = require("./969632.js"),
   Chunk580357 = require("./580357.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk609442 = require("./609442.js");
+  Chunk353441 = require("./353441.js");
 
 function f(n, e, l, a) {
   return {
@@ -39,36 +39,36 @@ function b(n) {
     transitionState: i,
     onClose: b,
     resourceChannel: N,
-    guildId: Z,
-    onSave: G,
-    onDelete: S,
-    onIconUpload: y
-  } = n, [P, U] = t.useState(null != (e = null == N ? true : N.title) ? e : ""), [H, K] = t.useState(null != (l = null == N ? true : N.description) ? l : ""), [L, M] = t.useState(function(n) {
+    guildId: _,
+    onSave: Z,
+    onDelete: G,
+    onIconUpload: S
+  } = n, [y, P] = t.useState(null != (e = null == N ? true : N.title) ? e : ""), [U, H] = t.useState(null != (l = null == N ? true : N.description) ? l : ""), [K, L] = t.useState(function(n) {
     if (null == n) return null;
     let e = g.Z.getChannel(n.channelId);
     return null == e ? null : {
       value: e.id,
       label: e.name
     }
-  }(N)), R = (0, o.e7)([C.Z], () => {
+  }(N)), M = (0, o.e7)([C.Z], () => {
     var n;
     return null == (n = C.Z.getResourceChannel(null == N ? true : N.channelId)) ? true : n.icon
-  }), E = (0, o.Wu)([C.Z], () => {
+  }), R = (0, o.Wu)([C.Z], () => {
     var n, e;
     return (null != (e = null == (n = C.Z.getSettings()) ? true : n.resourceChannels) ? e : []).map(n => n.channelId)
-  }), T = P.length < m.n || null == L, w = t.useCallback(() => {
-    null == L || P.length <= 0 || (G(f(L, P, H, R)), b())
-  }, [G, b, P, L, R, H]), z = t.useCallback(() => {
-    null == S || S(), b()
-  }, [S, b]), B = t.useCallback(n => {
-    M(n)
-  }, [M]), O = t.useCallback(n => Promise.resolve(x.ZP.getSelectableChannels(Z).filter(e => (0, m.k3)(e.channel) && !E.includes(e.channel.id) && r()(n, e.channel.name)).map(n => ({
+  }), E = y.length < m.n || null == K, T = t.useCallback(() => {
+    null == K || y.length <= 0 || (Z(f(K, y, U, M)), b())
+  }, [Z, b, y, K, M, U]), w = t.useCallback(() => {
+    null == G || G(), b()
+  }, [G, b]), z = t.useCallback(n => {
+    L(n)
+  }, [L]), B = t.useCallback(n => Promise.resolve(x.ZP.getSelectableChannels(_).filter(e => (0, m.k3)(e.channel) && !R.includes(e.channel.id) && r()(n, e.channel.name)).map(n => ({
     value: n.channel.id,
     label: n.channel.name
-  }))), [Z, E]), X = t.useCallback(n => {
-    if (null == n || null == Z) return null;
+  }))), [_, R]), O = t.useCallback(n => {
+    if (null == n || null == _) return null;
     let e = g.Z.getChannel(n.value),
-      l = p.Z.getGuild(Z);
+      l = p.Z.getGuild(_);
     if (null == e || null == l) return null;
     let t = (0, d.KS)(e, l);
     return null == t ? null : (0, a.jsx)(t, {
@@ -76,21 +76,21 @@ function b(n) {
       color: "currentColor",
       className: I.channelIcon
     })
-  }, [Z]), _ = t.useCallback(n => {
-    null != y && null != L && y(f(L, P, H), n)
-  }, [L, P, y, H]), D = t.useCallback(() => null == R || null == L ? null : v.ZP.getResourceChannelIconURL({
-    channelId: L.value,
-    icon: R
-  }), [L, R]), F = t.useMemo(() => [{
+  }, [_]), X = t.useCallback(n => {
+    null != S && null != K && S(f(K, y, U), n)
+  }, [K, y, S, U]), D = t.useCallback(() => null == M || null == K ? null : v.ZP.getResourceChannelIconURL({
+    channelId: K.value,
+    icon: M
+  }), [K, M]), F = t.useMemo(() => [{
     variant: "secondary",
     text: k.intl.string(k.t["ETE/oC"]),
     onClick: b
   }, {
     variant: "primary",
     text: k.intl.string(k.t["R3BPH+"]),
-    onClick: w,
-    disabled: T
-  }], [w, T, b]);
+    onClick: T,
+    disabled: E
+  }], [T, E, b]);
   return (0, a.jsxs)(s.Modal, {
     title: k.intl.string(k.t.SNMXYt),
     transitionState: i,
@@ -98,7 +98,7 @@ function b(n) {
     actions: F,
     actionBarInput: null != N ? (0, a.jsx)(c.Avr, {
       text: k.intl.string(k.t.N86XcP),
-      onClick: z,
+      onClick: w,
       variant: "critical"
     }) : true,
     children: [(0, a.jsxs)("div", {
@@ -108,10 +108,10 @@ function b(n) {
         color: "text-strong",
         children: [k.intl.string(k.t.nPa4Ju), (0, a.jsx)(j.Z, {})]
       }), (0, a.jsx)(u.d, {
-        value: L,
-        renderOptionPrefix: X,
-        options: O,
-        onChange: B
+        value: K,
+        renderOptionPrefix: O,
+        options: B,
+        onChange: z
       }), (0, a.jsx)(c.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
@@ -126,8 +126,8 @@ function b(n) {
         color: "text-strong",
         children: [k.intl.string(k.t["lFy+aW"]), (0, a.jsx)(j.Z, {})]
       }), (0, a.jsx)(c.oil, {
-        value: P,
-        onChange: U,
+        value: y,
+        onChange: P,
         placeholder: k.intl.string(k.t.XKUimI),
         maxLength: m.am
       })]
@@ -140,8 +140,8 @@ function b(n) {
         color: "text-strong",
         children: k.intl.string(k.t.CnkilH)
       }), (0, a.jsx)(c.Kx8, {
-        value: H,
-        onChange: K,
+        value: U,
+        onChange: H,
         placeholder: k.intl.string(k.t.na0V4E),
         maxLength: m.Vu
       })]
@@ -163,16 +163,16 @@ function b(n) {
         children: (0, a.jsx)(h.Z, {
           className: I.uploader,
           imageClassName: I.uploadImage,
-          image: R,
+          image: M,
           makeURL: D,
           icon: (0, a.jsx)(c.rG2, {
             size: "md",
             color: "currentColor"
           }),
           hideSize: true,
-          onChange: _,
+          onChange: X,
           iconClassName: I.uploadImageIcon,
-          showIcon: null == R
+          showIcon: null == M
         })
       })]
     })]

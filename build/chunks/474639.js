@@ -43,19 +43,19 @@ class C extends Chunk147913.Z {
       streamKey: i
     } = e;
     if (!(0, g.w2)() || n !== S.hes.RTC_CONNECTED) return;
-    let a = u.default.getId();
+    let o = u.default.getId();
     if (t === r.Yn.DEFAULT) {
-      this.applyUserVoiceRecording(a), this.applyUserSoundboardRecording(a);
+      this.applyUserVoiceRecording(o), this.applyUserSoundboardRecording(o);
       return
     }
     if (t === r.Yn.STREAM && null != i) {
       let {
         ownerId: e
       } = (0, s.my)(i);
-      if (e !== a) return;
+      if (e !== o) return;
       let t = p.Z.getRTCConnection(i);
       if (null == t) return;
-      this.applyStreamRecording(a, t)
+      this.applyStreamRecording(o, t)
     }
   }
   handleRTCUsersUpdate(e) {
@@ -117,16 +117,16 @@ class C extends Chunk147913.Z {
       userId: t,
       context: n,
       channelId: i,
-      guildId: a
+      guildId: o
     } = e;
     if (n !== r.Yn.STREAM || !(0, y.Z)(d.Z)) return;
-    let o = p.Z.getRTCConnection(s.V9({
-      streamType: null != a ? I.lo.GUILD : I.lo.CALL,
+    let a = p.Z.getRTCConnection(s.V9({
+      streamType: null != o ? I.lo.GUILD : I.lo.CALL,
       ownerId: t,
       channelId: i,
-      guildId: a
+      guildId: o
     }));
-    null != o && this.applyStreamRecording(t, o)
+    null != a && this.applyStreamRecording(t, a)
   }
   async classifyHardwareAndTrack() {
     try {
@@ -171,7 +171,7 @@ class C extends Chunk147913.Z {
         n = e.some(e => v.nU.test(e));
       return t ? b.xH.MEETS_AUTO_ENABLE : n ? b.xH.MEETS_MINIMUM : b.xH.BELOW_MINIMUM
     }
-    return (0, h.isMac)() ? "arm64" === o.Z.remoteApp.getAppArch() ? b.xH.MEETS_AUTO_ENABLE : b.xH.MEETS_MINIMUM : b.xH.UNKNOWN
+    return (0, h.isMac)() ? "arm64" === a.Z.remoteApp.getAppArch() ? b.xH.MEETS_AUTO_ENABLE : b.xH.MEETS_MINIMUM : b.xH.UNKNOWN
   }
   applyUserVoiceRecording(e) {
     if (!(0, y.Z)(d.Z)) return;

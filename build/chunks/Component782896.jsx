@@ -1,7 +1,7 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 782896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => b
+  c: () => m
 }), require("./388685.js"), require("./290780.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,17 +11,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk430824 = require("./430824.js"),
   Chunk914010 = require("./914010.js"),
   Chunk797670 = require("./797670.jsx"),
-  Chunk512929 = require("./512929.js"),
+  Chunk254681 = require("./254681.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk956778 = require("./956778.js");
+  Chunk906530 = require("./906530.js");
 
 function p(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsx)(o.ZP, {
+  return (0, r.jsx)(a.ZP, {
     className: h.facepileItemContainer,
-    mask: o.ZP.Masks.SQUIRCLE,
+    mask: a.ZP.Masks.SQUIRCLE,
     width: 25,
     height: 25,
     children: t
@@ -42,12 +42,12 @@ function g(e) {
           guild: e,
           size: 20
         })
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         className: h.guildIconItemText,
         variant: "text-xs/medium",
         children: e.name
       })]
-    }, e.id)), n > 0 && (0, r.jsx)(a.Text, {
+    }, e.id)), n > 0 && (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-subtle",
       children: f.intl.format(d.default.bAzBIf, {
@@ -57,19 +57,19 @@ function g(e) {
   })
 }
 
-function b(e) {
+function m(e) {
   let {
     guildIds: t
-  } = e, n = (0, l.e7)([c.Z], () => c.Z.getGuildId()), o = (0, l.Wu)([s.Z], () => t.map(e => s.Z.getGuild(e)), [t]), b = (0, i.useMemo)(() => o.filter(e => null != e), [o]), {
-    visibleGuilds: m,
-    numTruncated: y,
-    visibleGuildsTooltip: O,
-    numTruncatedTooltipGuilds: v
+  } = e, n = (0, l.e7)([c.Z], () => c.Z.getGuildId()), a = (0, l.Wu)([s.Z], () => t.map(e => s.Z.getGuild(e)), [t]), m = (0, i.useMemo)(() => a.filter(e => null != e), [a]), {
+    visibleGuilds: b,
+    numTruncated: _,
+    visibleGuildsTooltip: y,
+    numTruncatedTooltipGuilds: O
   } = (0, i.useMemo)(() => {
-    let e = [...b];
+    let e = [...m];
     if (null != n) {
-      let t = b.findIndex(e => e.id === n);
-      false !== t && (e.splice(t, 1), e.unshift(b[t]))
+      let t = m.findIndex(e => e.id === n);
+      false !== t && (e.splice(t, 1), e.unshift(m[t]))
     }
     return 4 === e.length ? {
       visibleGuilds: e,
@@ -82,27 +82,27 @@ function b(e) {
       visibleGuildsTooltip: e.slice(0, 15),
       numTruncatedTooltipGuilds: e.length - 15
     }
-  }, [b, n]);
-  return (0, r.jsx)(a.jSM, {
+  }, [m, n]);
+  return (0, r.jsx)(o.jSM, {
     "aria-label": f.intl.string(d.default.TG0QsS),
     text: (0, r.jsx)(g, {
-      guilds: O,
-      numTruncated: v
+      guilds: y,
+      numTruncated: O
     }),
     position: "top",
     children: (0, r.jsxs)("div", {
       className: h.facepile,
-      children: [m.map(e => (0, r.jsx)(p, {
+      children: [b.map(e => (0, r.jsx)(p, {
         children: (0, r.jsx)(u.V, {
           guild: e,
           size: 20
         })
-      }, e.id)), y > 0 && (0, r.jsx)(p, {
-        children: (0, r.jsxs)(a.Text, {
+      }, e.id)), _ > 0 && (0, r.jsx)(p, {
+        children: (0, r.jsxs)(o.Text, {
           className: h.textItem,
           color: "text-subtle",
           variant: "text-xxs/semibold",
-          children: ["+", y]
+          children: ["+", _]
         })
       })]
     })

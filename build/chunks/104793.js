@@ -57,8 +57,8 @@ function g(e, t, n) {
   }
   if (e.applicationId === _.bi.BUILT_IN) return 0;
   let x = null != l ? (0, p.ny)(l) : true;
-  if (null == x || o.e$(v, m.Plq.ADMINISTRATOR) || R && (null == (r = e.integration_types) ? true : r.includes(a.Y.USER_INSTALL))) return 0;
-  if (!C && P && (null == e.integration_types || e.integration_types.includes(a.Y.GUILD_INSTALL))) return 5;
+  if (null == x || a.e$(v, m.Plq.ADMINISTRATOR) || R && (null == (r = e.integration_types) ? true : r.includes(o.Y.USER_INSTALL))) return 0;
+  if (!C && P && (null == e.integration_types || e.integration_types.includes(o.Y.GUILD_INSTALL))) return 5;
   if (l instanceof c.Sf) {
     i()(true !== N, "missing applicationAllowedForChannel");
     let t = y(e.permissions, l, x);
@@ -67,7 +67,7 @@ function g(e, t, n) {
   let L = O(e.permissions, x, S, I, T);
   if (E(L)) return 0;
   if (b(L) || b(A)) return 7;
-  if (null != e.defaultMemberPermissions && !(!o.fS(e.defaultMemberPermissions, f.BO) && o.e$(v, e.defaultMemberPermissions))) return 7;
+  if (null != e.defaultMemberPermissions && !(!a.fS(e.defaultMemberPermissions, f.BO) && a.e$(v, e.defaultMemberPermissions))) return 7;
   return 0
 }
 
@@ -86,10 +86,10 @@ function y(e, t, n) {
     var i;
     r = null != (i = t.parent_id) ? i : t.id
   }
-  let a = e[(0, l.rE)(r, d.Kw.CHANNEL)];
-  if (null != a) return a.permission;
-  let o = e[(0, l.rE)((0, f.bD)(n), d.Kw.CHANNEL)];
-  return null != o ? o.permission : null
+  let o = e[(0, l.rE)(r, d.Kw.CHANNEL)];
+  if (null != o) return o.permission;
+  let a = e[(0, l.rE)((0, f.bD)(n), d.Kw.CHANNEL)];
+  return null != a ? a.permission : null
 }
 
 function O(e, t, n, r, i) {
@@ -98,15 +98,15 @@ function O(e, t, n, r, i) {
     let t = e[(0, l.rE)(n, d.Kw.USER)];
     if (null != t) return t.permission
   }
-  let a = false;
+  let o = false;
   for (let t of r) {
     let n = e[(0, l.rE)(t, d.Kw.ROLE)];
     if (null != n) {
       if (n.permission) returntrue;
-      a = true
+      o = true
     }
   }
-  if (a) returnfalse;
-  let o = null != t ? e[(0, l.rE)(t, d.Kw.ROLE)] : null;
-  return null != o ? o.permission : null
+  if (o) returnfalse;
+  let a = null != t ? e[(0, l.rE)(t, d.Kw.ROLE)] : null;
+  return null != a ? a.permission : null
 }

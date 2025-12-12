@@ -30,17 +30,17 @@ var Chunk54381 = require("./54381.js"),
 
 function I(e, t, n, r, i) {
   if (null == e) return;
-  let a = () => {
-    let a = m.Z.getChannel(e);
-    if (null == a) return;
+  let o = () => {
+    let o = m.Z.getChannel(e);
+    if (null == o) return;
     let {
-      command: o,
+      command: a,
       application: s
     } = u.Xq({
-      channel: a,
+      channel: o,
       type: "channel"
     }, n, i);
-    if (null != o && o.untranslatedName === t) {
+    if (null != a && a.untranslatedName === t) {
       var l, f;
       b.S.dispatch(y.CkL.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
@@ -58,38 +58,38 @@ function I(e, t, n, r, i) {
         section: null
       }), c.Po({
         channelId: e,
-        command: o,
+        command: a,
         section: t,
         location: r
       })
     }
   };
-  "" !== h.Z.getDraft(e, h.d.ChannelMessage) ? (0, o.Z)({
+  "" !== h.Z.getDraft(e, h.d.ChannelMessage) ? (0, a.Z)({
     title: S.intl.string(S.t.pe26Cj),
     subtitle: S.intl.string(S.t["+awCIy"]),
     confirmText: S.intl.string(S.t.VkKicb),
-    onConfirm: () => a(),
+    onConfirm: () => o(),
     onCloseCallback: () => {
       b.S.dispatch(y.CkL.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
       })
     }
-  }) : a()
+  }) : o()
 }
 
 function T(e) {
   var t;
   let {
     node: n,
-    stateKey: o,
+    stateKey: a,
     children: s
-  } = e, l = (0, a.e7)([m.Z, E.Z], () => {
+  } = e, l = (0, o.e7)([m.Z, E.Z], () => {
     var e;
     return m.Z.getChannel(null != (e = n.channelId) ? e : E.Z.getChannelId())
   }, [n.channelId]), {
     hasSendMessagePerm: c,
     hasUseAppCommandsPerm: h
-  } = (0, a.cj)([g.Z], () => ({
+  } = (0, o.cj)([g.Z], () => ({
     hasSendMessagePerm: g.Z.can(y.Plq.SEND_MESSAGES, l),
     hasUseAppCommandsPerm: g.Z.can(y.Plq.USE_APPLICATION_COMMANDS, l)
   })), b = true !== l ? {
@@ -112,7 +112,7 @@ function T(e) {
     role: "link",
     onClick: A,
     children: [v.GI, s]
-  }, o) : (0, r.jsxs)("span", {
+  }, a) : (0, r.jsxs)("span", {
     children: [v.GI, s]
   })
 }
@@ -122,10 +122,10 @@ function C(e) {
     commandId: t,
     commandName: n,
     commandDescription: i,
-    applicationId: o,
+    applicationId: a,
     onClick: c
-  } = e, u = (0, a.e7)([E.Z], () => E.Z.getChannelId()), f = e => {
-    null == e || e.stopPropagation(), I(u, n, t, d.Vh.POPULAR_COMMANDS, o), null == c || c(t)
+  } = e, u = (0, o.e7)([E.Z], () => E.Z.getChannelId()), f = e => {
+    null == e || e.stopPropagation(), I(u, n, t, d.Vh.POPULAR_COMMANDS, a), null == c || c(t)
   };
   return (0, r.jsx)(s.u, {
     text: i,

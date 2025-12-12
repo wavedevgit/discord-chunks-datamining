@@ -17,16 +17,16 @@ function l(e) {
   } = e, {
     voiceState: l,
     voiceChannel: c
-  } = (0, a.Z)({
+  } = (0, o.Z)({
     userId: t,
     guildId: n
   }), u = null == c ? true : c.id;
   return {
     voiceState: l,
     voiceChannel: c,
-    voiceActivity: (0, r.e7)([o.Z, s.Z], () => {
+    voiceActivity: (0, r.e7)([a.Z, s.Z], () => {
       if (null == t || null == u) return;
-      let e = o.Z.findActivity(t, e => {
+      let e = a.Z.findActivity(t, e => {
         if (!(0, i.Z)(e)) returnfalse;
         let n = s.Z.getVoiceStateForSession(t, e.session_id);
         return (null == n ? true : n.channelId) === u

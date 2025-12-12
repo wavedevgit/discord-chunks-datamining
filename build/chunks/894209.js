@@ -4,17 +4,17 @@
 require.d(exports, {
   H6: () => d,
   IX: () => u,
-  LN: () => a,
+  LN: () => o,
   RA: () => h,
   SH: () => f,
-  _$: () => o,
+  _$: () => a,
   km: () => m,
   pS: () => l,
   zC: () => c
 });
 var Chunk800911 = require("./800911.js"),
   Chunk140081 = require("./140081.js");
-let a = {
+let o = {
     sonntag: 0,
     so: 0,
     montag: 1,
@@ -30,7 +30,7 @@ let a = {
     samstag: 6,
     sa: 6
   },
-  o = {
+  a = {
     januar: 1,
     jänner: 1,
     janner: 1,

@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk752657 = require("./752657.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk418283 = require("./418283.js"),
+  Chunk749085 = require("./749085.js"),
   u = function(e) {
     return e[e.TOO_BIG = 0] = "TOO_BIG", e[e.RATE_LIMIT = 1] = "RATE_LIMIT", e[e.TOO_MANY_EMOJI = 2] = "TOO_MANY_EMOJI", e[e.TOO_MANY_ANIMATED_EMOJI = 3] = "TOO_MANY_ANIMATED_EMOJI", e[e.WRONG_TYPE = 4] = "WRONG_TYPE", e[e.RESIZE_GIF = 5] = "RESIZE_GIF", e
   }({});
@@ -28,13 +28,13 @@ let d = e => {
     tooltip: _
   } = {
     0: {
-      icon: o.gm1,
+      icon: a.gm1,
       description: l.intl.string(l.t.YbdEFK),
       color: i.Z.unsafe_rawColors.RED_400.css,
       tooltip: l.intl.string(l.t.PanA4J)
     },
     4: {
-      icon: o.LB9,
+      icon: a.LB9,
       description: l.intl.string(l.t["01Papm"]),
       color: i.Z.unsafe_rawColors.RED_400.css,
       tooltip: l.intl.string(l.t.PanA4J)
@@ -46,19 +46,19 @@ let d = e => {
       tooltip: l.intl.string(l.t.PanA4J)
     },
     1: {
-      icon: o.EmW,
+      icon: a.EmW,
       description: l.intl.string(l.t["4rjikl"]),
       color: i.Z.unsafe_rawColors.ORANGE_345.css,
       tooltip: l.intl.string(l.t.dq9aTi)
     },
     2: {
-      icon: o.d3s,
+      icon: a.d3s,
       description: l.intl.string(l.t["5VmbbF"]),
       color: i.Z.unsafe_rawColors.RED_400.css,
       tooltip: l.intl.string(l.t.PanA4J)
     },
     3: {
-      icon: o.d3s,
+      icon: a.d3s,
       description: l.intl.string(l.t.rjFOZ2),
       color: i.Z.unsafe_rawColors.RED_400.css,
       tooltip: l.intl.string(l.t.PanA4J)
@@ -71,20 +71,20 @@ let d = e => {
       color: i.Z.unsafe_rawColors.PRIMARY_300.css
     }), (0, r.jsxs)("div", {
       className: c.fileInfo,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         className: c.fileName,
         children: u
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-subtle",
         children: f
       })]
-    }), (0, r.jsx)(a.u, {
+    }), (0, r.jsx)(o.u, {
       asContainer: true,
       position: "right",
       text: _,
-      children: (0, r.jsx)(o.Mgn, {
+      children: (0, r.jsx)(a.Mgn, {
         size: "custom",
         width: 20,
         height: 20,

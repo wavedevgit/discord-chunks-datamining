@@ -21,11 +21,11 @@ async function m(e) {
   let r = null == (t = i().os) ? true : t.family;
   if ("Android" === r || "iOS" === r) {
     let t = null != (n = u.default.getFingerprint()) ? n : u.default.getId(),
-      r = (0, o.WS)();
+      r = (0, a.WS)();
     if (null == t && u.default.isAuthenticated()) try {
       await (0, l.k)(), t = u.default.getId()
     } catch (e) {}
-    return (0, o.ZP)((0, a.Gk)(), {
+    return (0, a.ZP)((0, o.Gk)(), {
       utmSource: e,
       fingerprint: t,
       attemptId: r
@@ -35,7 +35,7 @@ async function m(e) {
 }
 async function h(e) {
   let t = await m(e),
-    n = (0, o.zS)(t);
+    n = (0, a.zS)(t);
   null != n && f.default.track(_.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, s.K)(n.fingerprint),
     attempt_id: n.attemptId,

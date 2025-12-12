@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk911969 = require("./911969.js"),
   Chunk254711 = require("./254711.js"),
   Chunk213459 = require("./213459.js"),
@@ -24,7 +24,7 @@ function f(e) {
   } = c.wi({
     context: n,
     filters: {
-      commandTypes: [o.yU.CHAT, o.yU.PRIMARY_ENTRY_POINT]
+      commandTypes: [a.yU.CHAT, a.yU.PRIMARY_ENTRY_POINT]
     },
     options: {
       placeholderCount: 0,
@@ -48,7 +48,7 @@ function f(e) {
     }).filter(e => !(e.id in s.Tm) && m.has(e.id))
   }, [null == (t = f.result) ? true : t.sections, m]), g = (0, u.h)(h);
   return {
-    appsInThisServer: r.useMemo(() => a().compact(g.map(e => {
+    appsInThisServer: r.useMemo(() => o().compact(g.map(e => {
       let {
         application: t
       } = e;

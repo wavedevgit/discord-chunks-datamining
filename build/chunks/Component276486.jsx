@@ -1,4 +1,4 @@
-/** Chunk was on 93671 **/
+/** Chunk was on 74240 **/
 /** chunk id: 276486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   l: () => d,
@@ -12,11 +12,11 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk489813 = require("./489813.jsx"),
   Chunk815660 = require("./815660.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk888327 = require("./888327.js");
+  Chunk624463 = require("./624463.js");
 
 function d() {
   return (0, Chunk54381.jsx)(Chunk489813.PU, {
-    className: Chunk888327.editableRequirementContainer,
+    className: Chunk624463.editableRequirementContainer,
     icon: Chunk481060.AtH,
     text: Chunk388032.intl.string(Chunk388032.t.woMjLV),
     footnote: Chunk388032.intl.string(Chunk388032.t["jMh+TY"]),
@@ -38,7 +38,7 @@ function m(e) {
   let {
     isUserVerified: t
   } = e, l = t ? c.intl.string(c.t.WWzQta) : c.intl.string(c.t.woMjLV);
-  return (0, r.jsx)(s.PU, {
+  return (0, r.jsx)(a.PU, {
     className: u.editableRequirementContainer,
     icon: i.AtH,
     text: l,
@@ -71,7 +71,7 @@ function m(e) {
             }
             return e
           }({
-            reason: a.L.GUILD_PHONE_REQUIRED
+            reason: s.L.GUILD_PHONE_REQUIRED
           }, t))
         }, {
           modalKey: o.M

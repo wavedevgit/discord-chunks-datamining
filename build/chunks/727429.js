@@ -16,5 +16,5 @@ function s(e) {
 }
 
 function l(e) {
-  return i.Z.getGuildId() !== o.I_8 ? e.getGuildId() : a.Z.isFavorite(e.id) || e.isThread() && a.Z.isFavorite(e.parent_id) ? o.I_8 : e.getGuildId()
+  return i.Z.getGuildId() !== a.I_8 ? e.getGuildId() : o.Z.isFavorite(e.id) || e.isThread() && o.Z.isFavorite(e.parent_id) ? a.I_8 : e.getGuildId()
 }

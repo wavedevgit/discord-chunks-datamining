@@ -10,8 +10,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk991346 = require("./991346.js");
 
 function s(e, t) {
-  let n = (0, o.Gj)(t),
-    s = a.Z.useField("query"),
+  let n = (0, a.Gj)(t),
+    s = o.Z.useField("query"),
     l = (0, r.e7)([i.Z], () => i.Z.getSubsection()),
     c = e.filter(e => null == e.predicate || e.predicate());
   if (null != n && n.size > 0) {

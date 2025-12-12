@@ -1,21 +1,21 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 730671, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
   Chunk236413 = require("./236413.js"),
   Chunk422303 = require("./422303.js");
 
-function s(e) {
+function a(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [],
     n = arguments.length > 2 ? arguments[2] : true,
-    [s, o] = r.useState((0, a.se)(t)),
+    [a, o] = r.useState((0, s.se)(t)),
     {
       errorMessage: c,
-      handleValidateKeywords: d
+      handleValidateKeywords: u
     } = function(e) {
       let [t, n] = r.useState(null);
       return {
@@ -32,15 +32,15 @@ function s(e) {
         }), [e])
       }
     }(n),
-    u = r.useCallback(e => 0 !== e.length && (0, a.kU)(e) ? (0, a.se)((0, a.Ac)(e)) : e, []);
+    d = r.useCallback(e => 0 !== e.length && (0, s.kU)(e) ? (0, s.se)((0, s.Ac)(e)) : e, []);
   return {
-    value: s,
+    value: a,
     errorMessage: c,
     onChange: r.useCallback(t => {
       let n = t.currentTarget.value;
-      "insertFromPaste" === t.nativeEvent.inputType && (n = u(n));
-      let r = (0, a.Ac)(n);
-      o(n), e(r), d(r)
-    }, [d, u, e])
+      "insertFromPaste" === t.nativeEvent.inputType && (n = d(n));
+      let r = (0, s.Ac)(n);
+      o(n), e(r), u(r)
+    }, [u, d, e])
   }
 }

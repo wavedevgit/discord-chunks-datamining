@@ -3,7 +3,7 @@
 "use strict";
 
 function r(e, t) {
-  var n, r, i, a, o, s;
+  var n, r, i, o, a, s;
   let {
     Operator: l,
     QuestionID: c,
@@ -32,9 +32,9 @@ function r(e, t) {
     case "GreaterThanOrEqualTo":
       return Number(p) >= Number(null != (i = null != f ? f : d) ? i : 0);
     case "LessThanOrEqualTo":
-      return Number(p) <= Number(null != (a = null != f ? f : d) ? a : 0);
+      return Number(p) <= Number(null != (o = null != f ? f : d) ? o : 0);
     case "Contains":
-      return p.includes(null != (o = null != f ? f : d) ? o : "");
+      return p.includes(null != (a = null != f ? f : d) ? a : "");
     case "DoesNotContain":
       return !p.includes(null != (s = null != f ? f : d) ? s : "");
     default:
@@ -48,15 +48,15 @@ function i(e, t) {
   if (0 === n.length) returntrue;
   let i = r(n[0], t);
   for (let e = 1; e < n.length; e++) {
-    var a, o;
+    var o, a;
     let s = n[e],
       l = r(s, t);
-    i = "Or" === (null != (o = null != (a = s.Conjuction) ? a : s.Conjunction) ? o : "And") ? i || l : i && l
+    i = "Or" === (null != (a = null != (o = s.Conjuction) ? o : s.Conjunction) ? a : "And") ? i || l : i && l
   }
   return i
 }
 
-function a(e, t) {
+function o(e, t) {
   if (null == e.DisplayLogic) returntrue;
   let {
     DisplayLogic: n
@@ -70,14 +70,14 @@ function a(e, t) {
     } returnfalse
 }
 
-function o(e, t) {
+function a(e, t) {
   if (null == e.SkipLogic || 0 === e.SkipLogic.length) return null;
   for (let i of e.SkipLogic) {
     var n, r;
     let {
       QuestionID: e,
-      Condition: a,
-      Value: o,
+      Condition: o,
+      Value: a,
       SkipToDestination: s,
       ChoiceLocator: l
     } = i, c = t[e];
@@ -85,7 +85,7 @@ function o(e, t) {
     let u = null == l ? true : l.match(/SelectableChoice\/(\d+)/),
       d = null == u ? true : u[1],
       f = false;
-    switch (a) {
+    switch (o) {
       case "Selected":
         f = null != d && c.split(",").includes(d);
         break;
@@ -93,28 +93,28 @@ function o(e, t) {
         f = null != d && !c.split(",").includes(d);
         break;
       case "EqualTo":
-        f = c === (null == o ? true : o.toString());
+        f = c === (null == a ? true : a.toString());
         break;
       case "NotEqualTo":
-        f = c !== (null == o ? true : o.toString());
+        f = c !== (null == a ? true : a.toString());
         break;
       case "GreaterThan":
-        f = Number(c) > Number(null != o ? o : 0);
+        f = Number(c) > Number(null != a ? a : 0);
         break;
       case "LessThan":
-        f = Number(c) < Number(null != o ? o : 0);
+        f = Number(c) < Number(null != a ? a : 0);
         break;
       case "GreaterThanOrEqualTo":
-        f = Number(c) >= Number(null != o ? o : 0);
+        f = Number(c) >= Number(null != a ? a : 0);
         break;
       case "LessThanOrEqualTo":
-        f = Number(c) <= Number(null != o ? o : 0);
+        f = Number(c) <= Number(null != a ? a : 0);
         break;
       case "Contains":
-        f = c.includes(null != (n = null == o ? true : o.toString()) ? n : "");
+        f = c.includes(null != (n = null == a ? true : a.toString()) ? n : "");
         break;
       case "DoesNotContain":
-        f = !c.includes(null != (r = null == o ? true : o.toString()) ? r : "")
+        f = !c.includes(null != (r = null == a ? true : a.toString()) ? r : "")
     }
     if (f) {
       if ("ENDOFSURVEY" === (null == s ? true : s.trim().toUpperCase())) return "ENDOFSURVEY";
@@ -160,10 +160,10 @@ function u(e, t) {
     blockId: n,
     pageIndex: r,
     responses: i
-  } = t, o = e.Blocks[n];
-  if (null == o) return [];
-  let s = l(o);
-  return r >= s.length ? [] : s[r].filter(t => a(e.Questions[t], i))
+  } = t, a = e.Blocks[n];
+  if (null == a) return [];
+  let s = l(a);
+  return r >= s.length ? [] : s[r].filter(t => o(e.Questions[t], i))
 }
 
 function d(e, t) {
@@ -171,7 +171,7 @@ function d(e, t) {
     blockId: n,
     pageIndex: r,
     responses: i
-  } = t, a = s(e), c = e.Blocks[n];
+  } = t, o = s(e), c = e.Blocks[n];
   if (null == c) return {
     blockId: null,
     pageIndex: 0,
@@ -186,7 +186,7 @@ function d(e, t) {
       if (null != e.Questions[n] && null != i[n]) {
         let t = c.BlockElements.find(e => e.QuestionID === n);
         if (null != t) {
-          let n = o(t, i);
+          let n = a(t, i);
           if ("ENDOFSURVEY" === n) return {
             blockId: null,
             pageIndex: 0,
@@ -194,7 +194,7 @@ function d(e, t) {
             isComplete: true
           };
           if (null != n)
-            for (let t of a) {
+            for (let t of o) {
               let r = l(e.Blocks[t]);
               for (let e = 0; e < r.length; e++)
                 if (r[e].includes(n)) return {
@@ -213,9 +213,9 @@ function d(e, t) {
     questionIds: u[r + 1],
     isComplete: false
   };
-  let f = a.indexOf(n);
-  for (let t = f + 1; t < a.length; t++) {
-    let n = a[t],
+  let f = o.indexOf(n);
+  for (let t = f + 1; t < o.length; t++) {
+    let n = o[t],
       r = l(e.Blocks[n]);
     if (r.length > 0 && r[0].length > 0) return {
       blockId: n,

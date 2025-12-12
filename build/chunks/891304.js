@@ -24,10 +24,10 @@ function c(e, t, n) {
 
 function u(e) {
   if (!(0, i.x3)()) return;
-  if (a.default.track(l.rMx.APP_BACK_FORWARD_NAVIGATED, {
+  if (o.default.track(l.rMx.APP_BACK_FORWARD_NAVIGATED, {
       nav_direction: false,
       nav_trigger: e
-    }), !(0, o.v)({
+    }), !(0, a.v)({
       location: e
     })) return void(0, i.op)();
   let t = s.Z.backDestination;
@@ -38,10 +38,10 @@ function u(e) {
 
 function d(e) {
   if (!(0, i.x3)()) return;
-  if (a.default.track(l.rMx.APP_BACK_FORWARD_NAVIGATED, {
+  if (o.default.track(l.rMx.APP_BACK_FORWARD_NAVIGATED, {
       nav_direction: 1,
       nav_trigger: e
-    }), !(0, o.v)({
+    }), !(0, a.v)({
       location: e
     })) return void(0, i.eH)();
   let t = s.Z.forwardDestination;

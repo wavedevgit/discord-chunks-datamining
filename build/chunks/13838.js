@@ -198,11 +198,11 @@ let w = {
         prevState: t,
         dispatch: n
       } = e, r = {
-        state: (0, v.zy)(b.Z.getState()),
-        hostname: b.Z.getHostname(),
-        pings: b.Z.getPings(),
-        average_ping: b.Z.getAveragePing(),
-        last_ping: b.Z.getLastPing()
+        state: (0, v.zy)(_.Z.getState()),
+        hostname: _.Z.getHostname(),
+        pings: _.Z.getPings(),
+        average_ping: _.Z.getAveragePing(),
+        last_ping: _.Z.getLastPing()
       };
       return i().isEqual(r, t) || n(r), r
     }
@@ -332,7 +332,7 @@ let w = {
         prevState: t,
         dispatch: n
       } = e, r = {
-        currentUser: _.default.getCurrentUser()
+        currentUser: b.default.getCurrentUser()
       };
       return null == r.currentUser || null != t && (0, s.Z)(r, t) || n((0, T.Z)(r.currentUser)), r
     }

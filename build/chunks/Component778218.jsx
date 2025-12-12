@@ -29,7 +29,7 @@ let c = {
       }, []), h = i.useCallback(() => {
         p(e => !e)
       }, []);
-      return (0, r.jsxs)(o.Kqy, {
+      return (0, r.jsxs)(a.Kqy, {
         direction: "vertical",
         gap: "md",
         children: [(0, r.jsx)(l.Checkbox, {
@@ -40,11 +40,11 @@ let c = {
           description: null != n || "" === n ? n : true,
           value: "checkbox-value",
           labelType: u,
-          leadingIcon: d ? a.d3s : true
-        }), (0, r.jsxs)(o.xvT, {
+          leadingIcon: d ? o.d3s : true
+        }), (0, r.jsxs)(a.xvT, {
           variant: "text-sm/normal",
           children: ["Current state: ", f ? "Checked" : "Unchecked"]
-        }), (0, r.jsxs)(o.Kqy, {
+        }), (0, r.jsxs)(a.Kqy, {
           direction: "horizontal",
           gap: "sm",
           children: [(0, r.jsx)(s.zxk, {

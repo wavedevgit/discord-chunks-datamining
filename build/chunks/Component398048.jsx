@@ -1,4 +1,4 @@
-/** Chunk was on 24783 **/
+/** Chunk was on 40283 **/
 /** chunk id: 398048, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -12,17 +12,17 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u(e, t) {
-  let u = (0, i.e7)([c.Z], () => c.Z.can(o.Plq.MANAGE_CHANNELS, e), [e]);
-  return __OVERLAY__ || !u ? null : (0, r.jsx)(l.sNh, {
+  let u = (0, c.e7)([l.Z], () => l.Z.can(o.Plq.MANAGE_CHANNELS, e), [e]);
+  return __OVERLAY__ || !u ? null : (0, r.jsx)(i.sNh, {
     id: "clone-channel",
     label: a.intl.string(a.t.dEaPc4),
-    action: () => (0, l.ZDy)(async () => {
+    action: () => (0, i.ZDy)(async () => {
       let {
-        default: i
-      } = await Promise.all([n.e("33285"), n.e("29497"), n.e("12333")]).then(n.bind(n, 241865));
+        default: c
+      } = await Promise.all([n.e("33285"), n.e("29497"), n.e("26861")]).then(n.bind(n, 241865));
       return n => {
-        var l, c;
-        return (0, r.jsx)(i, (l = function(e) {
+        var i, l;
+        return (0, r.jsx)(c, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -39,21 +39,21 @@ function u(e, t) {
             })
           }
           return e
-        }({}, n), c = c = {
+        }({}, n), l = l = {
           channelType: e.type,
           guildId: t.id,
           categoryId: e.parent_id,
           cloneChannelId: e.id
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(c)).forEach(function(e) {
-          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(c, e))
-        }), l))
+        })(Object(l)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+        }), i))
       }
     })
   })

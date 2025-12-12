@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 /** chunk id: 117240, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a;
+let r, i, o;
 require.d(exports, {
   Z: () => P
 });
-var o, Chunk772848 = require("./772848.js"),
+var a, Chunk772848 = require("./772848.js"),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk846519 = require("./846519.js"),
@@ -56,13 +56,13 @@ function T(e) {
 }
 
 function C(e) {
-  a = new p.Z(e.user)
+  o = new p.Z(e.user)
 }
 
 function A() {
   v()
 }
-class N extends(o = Chunk442837.ZP.Store) {
+class N extends(a = Chunk442837.ZP.Store) {
   initialize() {
     false !== Chunk433517.K.get(E) && (b = Chunk358085.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
   }
@@ -70,7 +70,7 @@ class N extends(o = Chunk442837.ZP.Store) {
     return !Chunk374023.s.isDisallowPopupsSet() && b
   }
   get user() {
-    return a
+    return o
   }
   get key() {
     return i

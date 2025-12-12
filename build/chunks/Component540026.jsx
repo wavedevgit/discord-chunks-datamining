@@ -9,7 +9,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
-  Chunk192350 = require("./192350.js");
+  Chunk49434 = require("./49434.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -88,11 +88,11 @@ class m extends(r = Chunk473749.Component) {
     if (null == n) return 0;
     let {
       left: i,
-      width: a,
-      bottom: o,
+      width: o,
+      bottom: a,
       height: s
     } = n.getBoundingClientRect();
-    return Math.min(1, Math.max(0, r === p.VOLUME ? (o - t) / s : (e - i) / a))
+    return Math.min(1, Math.max(0, r === p.VOLUME ? (a - t) / s : (e - i) / o))
   }
   render() {
     let {
@@ -101,21 +101,21 @@ class m extends(r = Chunk473749.Component) {
       className: n,
       sliderClassName: r
     } = this.props, {
-      dragging: a,
-      previewWidth: o,
+      dragging: o,
+      previewWidth: a,
       animatedProgress: u
     } = this.state, d = Chunk473749 ? u : Chunk120356;
     return (0, Chunk54381.jsx)("div", {
-      className: s()(require, exports === p.VOLUME ? Chunk192350.vertical : Chunk192350.horizontal),
+      className: s()(require, exports === p.VOLUME ? Chunk49434.vertical : Chunk49434.horizontal),
       children: (0, Chunk54381.jsx)("div", {
-        className: s()(r, Chunk473749 ? Chunk192350.mediaBarInteractionDragging : Chunk192350.mediaBarInteraction, exports === p.VOLUME ? Chunk192350.mediaBarInteractionVolume : null),
+        className: s()(r, Chunk473749 ? Chunk49434.mediaBarInteractionDragging : Chunk49434.mediaBarInteraction, exports === p.VOLUME ? Chunk49434.mediaBarInteractionVolume : null),
         onMouseDown: this.handleDragStart,
         onMouseMove: this.handleMouseMove,
         ref: e => {
           this.wrapper = e
         },
         children: (0, Chunk54381.jsxs)("div", {
-          className: s()(Chunk192350.mediaBarWrapper, exports === p.VOLUME ? Chunk192350.mediaBarWrapperVolume : null),
+          className: s()(Chunk49434.mediaBarWrapper, exports === p.VOLUME ? Chunk49434.mediaBarWrapperVolume : null),
           children: [null != module ? module.map((e, t) => {
             let [n, r] = e;
             return (0, i.jsx)("div", {
@@ -126,7 +126,7 @@ class m extends(r = Chunk473749.Component) {
               }
             }, t)
           }) : null, exports === p.DURATION ? (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-            className: Chunk192350.mediaBarPreview,
+            className: Chunk49434.mediaBarPreview,
             style: {
               width: Chunk120356.interpolate({
                 inputRange: [0, 1],
@@ -134,7 +134,7 @@ class m extends(r = Chunk473749.Component) {
               })
             }
           }) : null, (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-            className: Chunk192350.mediaBarProgress,
+            className: Chunk49434.mediaBarProgress,
             style: {
               width: u.interpolate({
                 inputRange: [0, 1],
@@ -142,11 +142,11 @@ class m extends(r = Chunk473749.Component) {
               })
             },
             children: (0, Chunk54381.jsx)("span", {
-              className: Chunk192350.mediaBarGrabber
+              className: Chunk49434.mediaBarGrabber
             })
           }), exports === p.DURATION ? (0, Chunk54381.jsx)(Chunk748780.Z.div, {
             ref: this.setBubbleRef,
-            className: Chunk192350.bubble,
+            className: Chunk49434.bubble,
             style: {
               left: d.interpolate({
                 inputRange: [0, 1],
@@ -216,8 +216,8 @@ class m extends(r = Chunk473749.Component) {
         type: r,
         currentWindow: i
       } = this.props, {
-        clientX: a,
-        clientY: o
+        clientX: o,
+        clientY: a
       } = e;
       if (e.preventDefault(), null == this.wrapper) return;
       let {
@@ -229,7 +229,7 @@ class m extends(r = Chunk473749.Component) {
         offsetLeft: s,
         offsetWidth: l
       }, () => {
-        t(r), n(this.calculatePercentage(a, o), r), i.removeEventListener("mouseup", this.handleDragEnd, false), i.removeEventListener("mousemove", this.handleDragMove, false), i.addEventListener("mouseup", this.handleDragEnd, false), i.addEventListener("mousemove", this.handleDragMove, false)
+        t(r), n(this.calculatePercentage(o, a), r), i.removeEventListener("mouseup", this.handleDragEnd, false), i.removeEventListener("mousemove", this.handleDragMove, false), i.addEventListener("mouseup", this.handleDragEnd, false), i.addEventListener("mousemove", this.handleDragMove, false)
       })
     }), u(this, "handleDragEnd", () => {
       let {

@@ -104,7 +104,7 @@ let S = e => {
     var e;
     null == (e = O.current) || e.updatePosition()
   }), (0, d.Z)({
-    type: a.ImpressionTypes.MENU,
+    type: o.ImpressionTypes.MENU,
     name: E,
     properties: b
   });
@@ -115,13 +115,13 @@ let S = e => {
     N = i.useCallback(() => {
       C.dispatch(g.CkL.POPOUT_HIDE)
     }, [C]);
-  return (0, l.E)("ContextMenu") ? (0, r.jsx)(o.pS, {
+  return (0, l.E)("ContextMenu") ? (0, r.jsx)(a.pS, {
     open: true,
     onOpenChange: e => {
       e ? A() : (N(), v(), I.current())
     },
     overrideTargetRect: _,
-    placement: (0, o.a_)(null != m ? m : "right", null != h ? h : "top"),
+    placement: (0, a.a_)(null != m ? m : "right", null != h ? h : "top"),
     blockPointerEvents: !y,
     renderLayer: e => {
       let {
@@ -184,8 +184,8 @@ class I extends Chunk473749.PureComponent {
     var e, t, n;
     let {
       appContext: i,
-      target: a,
-      isOpen: o,
+      target: o,
+      isOpen: a,
       theme: s,
       config: l,
       rect: c,
@@ -210,7 +210,7 @@ class I extends Chunk473749.PureComponent {
           theme: s,
           onHeightUpdate: t,
           config: l,
-          target: a,
+          target: o,
           context: i
         })
       }
@@ -243,8 +243,8 @@ function T() {
     contextMenu: Chunk574254.Z.getContextMenu(),
     version: Chunk574254.Z.version,
     isOpen: Chunk574254.Z.isOpen()
-  })), a = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), {
-    appContext: o,
+  })), o = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), {
+    appContext: a,
     renderWindow: l
   } = Chunk473749.useContext(Chunk728285.ZP);
   return (0, Chunk54381.jsx)(I, O(b({

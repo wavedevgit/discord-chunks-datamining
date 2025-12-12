@@ -18,7 +18,7 @@ function f(e) {
   let [t, n] = r.useState(false), [f, p] = r.useState(false), _ = s.default.cast(e), {
     joinRequest: m,
     guild: h
-  } = (0, i.cj)([c.Z, u.Z, a.Z, o.Z], () => {
+  } = (0, i.cj)([c.Z, u.Z, o.Z, a.Z], () => {
     var e;
     let t = c.Z.getRequest(_);
     if (null == t) return {
@@ -26,10 +26,10 @@ function f(e) {
       isModmin: false,
       guild: null
     };
-    let n = null != (e = a.Z.getGuild(t.guildId)) ? e : u.Z.getJoinRequestGuild(t.guildId);
+    let n = null != (e = o.Z.getGuild(t.guildId)) ? e : u.Z.getJoinRequestGuild(t.guildId);
     return {
       joinRequest: t,
-      isModmin: null != n && o.Z.can(d.Plq.KICK_MEMBERS, n),
+      isModmin: null != n && a.Z.can(d.Plq.KICK_MEMBERS, n),
       guild: n
     }
   });

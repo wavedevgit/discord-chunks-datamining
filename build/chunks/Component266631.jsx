@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk159691 = require("./159691.js"),
   Chunk275388 = require("./275388.jsx"),
-  Chunk570810 = require("./570810.js");
+  Chunk616926 = require("./616926.js");
 let s = e => {
-    (0, a.qA)({
+    (0, o.qA)({
       skuId: e,
       onCheckoutSuccess: e => {
         let {
@@ -34,7 +34,7 @@ let s = e => {
           skuId: t
         } = e;
         return (0, r.jsx)("div", {
-          className: o.verticalContainer,
+          className: a.verticalContainer,
           children: (0, r.jsx)(i.zxk, {
             onClick: () => {
               s(t)

@@ -47,14 +47,14 @@ function A(e) {
     platformType: T.ABu.XBOX,
     icon: () => (0, r.jsx)(m.Z, {}),
     onAction: N
-  }) : (0, o.Z)(A) ? (0, r.jsx)(O.Z, {
+  }) : (0, a.Z)(A) ? (0, r.jsx)(O.Z, {
     platformType: T.ABu.PLAYSTATION,
     icon: () => (0, r.jsx)(_.Z, {}),
     onAction: N
   }) : (0, l.Z)(A) ? (0, r.jsx)(S.Z, {
     activity: A,
     onAction: N
-  }) : (0, i.Z)(A, T.xjy.JOIN) || (0, a.Z)(A) ? (0, r.jsx)(b.Z, {
+  }) : (0, i.Z)(A, T.xjy.JOIN) || (0, o.Z)(A) ? (0, r.jsx)(b.Z, {
     user: n,
     activity: A,
     onAction: N,

@@ -31,7 +31,7 @@ function d(e) {
     errorMessage: t,
     errorCode: n
   } = e;
-  l[o.K3D.SOUND] = {
+  l[a.K3D.SOUND] = {
     errorMessage: t,
     errorCode: n
   }

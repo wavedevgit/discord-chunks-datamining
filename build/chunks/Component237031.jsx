@@ -64,12 +64,12 @@ let d = "collectibles shop product details modal",
     if (t.isCategoryReward) {
       let {
         isPurchased: e
-      } = (0, o.U)(a.Z, t);
+      } = (0, a.U)(o.Z, t);
       if (!e) return
     }(0, i.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("5410"), n.e("8087")]).then(n.bind(n, 702370));
+      } = await Promise.all([n.e("5410"), n.e("86111")]).then(n.bind(n, 702370));
       return n => (0, r.jsx)(e, u(l({}, n), {
         product: t,
         category: s,

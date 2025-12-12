@@ -57,7 +57,7 @@ class m extends(r = Chunk442837.ZP.PersistedStore) {
   hasHotspot(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       n = !t && u[e];
-    return !(s.a || o.s.isDisallowPopupsSet()) && (n || !c.has(e))
+    return !(s.a || a.s.isDisallowPopupsSet()) && (n || !c.has(e))
   }
   hasHiddenHotspot(e) {
     return c.has(e)

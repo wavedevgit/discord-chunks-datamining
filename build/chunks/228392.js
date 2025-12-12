@@ -84,8 +84,8 @@ function E(e) {
     guildId: t,
     channelId: n,
     sessionId: i,
-    postIds: a,
-    additionalTimes: o
+    postIds: o,
+    additionalTimes: a
   } = e;
   r.ZP.trackWithMetadata(p.rMx.FORUM_CHANNEL_SEEN_BATCH, g(m({}, (0, f.xl)({
     channelId: n,
@@ -93,8 +93,8 @@ function E(e) {
   })), {
     guild_id: t,
     channel_id: n,
-    post_ids: a,
-    additional_seen_time_millis: o
+    post_ids: o,
+    additional_seen_time_millis: a
   }))
 }
 
@@ -131,8 +131,8 @@ function O(e) {
     guildId: t,
     channelId: n,
     tagId: i,
-    filterTagIds: a,
-    added: o,
+    filterTagIds: o,
+    added: a,
     location: s
   } = e;
   r.ZP.trackWithMetadata(p.rMx.FORUM_CHANNEL_TAG_FILTER_CLICKED, g(m({}, (0, f.xl)({
@@ -141,8 +141,8 @@ function O(e) {
     guild_id: t,
     channel_id: n,
     tag_id: i,
-    filter_tag_ids: a,
-    added: o,
+    filter_tag_ids: o,
+    added: a,
     location: s
   }))
 }
@@ -174,18 +174,18 @@ function S(e) {
 }
 
 function I(e) {
-  var t, n, i, a;
+  var t, n, i, o;
   let {
     guildId: l,
     channelId: c
-  } = e, u = o.Z.getChannel(c);
+  } = e, u = a.Z.getChannel(c);
   if (null == u) return;
   let d = s.Z.getThreadSettings(c),
     _ = null == (t = u.template) ? true : t.trim(),
     h = s.Z.getDraft(c, s.d.FirstThreadMessage),
     E = null == h || 0 === h.length || (null == h ? true : h.trim()) === _,
     b = (null == d ? true : d.appliedTags) == null || (null == d || null == (n = d.appliedTags) ? true : n.size) === 0,
-    y = (null == d ? true : d.name) == null || (null == d || null == (a = d.name) || null == (i = a.trim()) ? true : i.length) === 0;
+    y = (null == d ? true : d.name) == null || (null == d || null == (o = d.name) || null == (i = o.trim()) ? true : i.length) === 0;
   E && b && y || r.ZP.trackWithMetadata(p.rMx.FORUM_CHANNEL_NEW_POST_DRAFT_CREATED, g(m({}, (0, f.xl)({
     channelId: c
   })), {
@@ -216,7 +216,7 @@ function C(e) {
     postId: i
   } = e;
 
-  function a() {
+  function o() {
     r.ZP.trackWithMetadata(p.rMx.FORUM_CHANNEL_POST_CREATED, g(m({}, (0, f.n4)({
       channelId: i
     })), {
@@ -224,7 +224,7 @@ function C(e) {
       channel_id: n
     }))
   }
-  u.Z.isLoading(i) ? u.Z.addConditionalChangeListener(() => !!u.Z.isLoading(i) || (a(), false)) : a()
+  u.Z.isLoading(i) ? u.Z.addConditionalChangeListener(() => !!u.Z.isLoading(i) || (o(), false)) : o()
 }
 
 function A(e) {
@@ -245,18 +245,18 @@ function N(e) {
     guildId: t,
     channelId: n,
     numArchivedThreads: i,
-    hasMoreThreads: a,
+    hasMoreThreads: o,
     filterTagIds: s,
     sortOrder: c
   } = e;
-  l.default.track(p.rMx.FORUM_CHANNEL_MORE_POSTS_LOADED, g(m({}, (0, r.hH)(t), (0, r.v_)(o.Z.getChannel(n)), (0, f.xl)({
+  l.default.track(p.rMx.FORUM_CHANNEL_MORE_POSTS_LOADED, g(m({}, (0, r.hH)(t), (0, r.v_)(a.Z.getChannel(n)), (0, f.xl)({
     channelId: n
   })), {
     guild_id: t,
     channel_id: n,
     num_archived_threads: i,
     num_active_threads: (0, f.bE)(t, n),
-    has_more_threads: a,
+    has_more_threads: o,
     filter_tag_ids: s,
     sort_order: c
   }))
@@ -267,7 +267,7 @@ function P(e) {
     guildId: t,
     channelId: n,
     postId: i,
-    location: a
+    location: o
   } = e;
   r.ZP.trackWithMetadata(p.rMx.FORUM_CHANNEL_POST_CLICKED, g(m({}, (0, f.n4)({
     channelId: i
@@ -275,7 +275,7 @@ function P(e) {
     guild_id: t,
     channel_id: n,
     is_search_result: null != d.Z.getSearchResults(n),
-    location: a
+    location: o
   }))
 }
 
@@ -379,7 +379,7 @@ function Z(e) {
   r.ZP.trackWithMetadata(p.rMx.CHANNEL_OPENED, g(m({}, (0, r.hH)(e.guild_id), (0, r.v_)(e), (0, i.K)(e, true), (0, r.$H)(e.id)), {
     channel_view: "Split View",
     platform: (0, c.getPlatform)()
-  })), (0, a.a)(p.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+  })), (0, o.a)(p.rMx.CHANNEL_OPENED_CLICKSTREAM, {
     channelId: e.id
   })
 }
@@ -398,7 +398,7 @@ function B(e) {
     guildId: t,
     channelId: n
   } = e;
-  r.ZP.trackWithMetadata(p.rMx.THREAD_CREATION_STARTED, g(m({}, (0, i.K)(o.Z.getChannel(n))), {
+  r.ZP.trackWithMetadata(p.rMx.THREAD_CREATION_STARTED, g(m({}, (0, i.K)(a.Z.getChannel(n))), {
     channel_id: n,
     guild_id: t
   }))

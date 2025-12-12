@@ -30,7 +30,7 @@ function _(e) {
     selectedSkuId: y
   } = (0, c.JL)(), {
     isGift: O
-  } = (0, l.wD)(), [v, S] = i.useState(true), [I, T] = (0, a.Wu)([s.Z], () => [s.Z.isFetchingCategories, s.Z.error]);
+  } = (0, l.wD)(), [v, S] = i.useState(true), [I, T] = (0, o.Wu)([s.Z], () => [s.Z.isFetchingCategories, s.Z.error]);
   return (i.useEffect(() => {
     let e = null != E;
     m && g && e && S(I)
@@ -38,7 +38,7 @@ function _(e) {
     if (v || _ || null == y) return;
     let e = b[y];
     return O && ((null == e ? true : e.productLine) === p.POd.COLLECTIBLES || (null == e ? true : e.productLine) === p.POd.APPLICATION || (null == e ? true : e.productLine) === p.POd.SOCIAL_LAYER_GAME_ITEM) ? void t(u.h8.GIFT_CUSTOMIZATION) : 0 === Object.keys(h).length ? void t(u.h8.ADD_PAYMENT_STEPS) : void t(u.h8.REVIEW)
-  }, [v, _, t, h, O, b, y]), v) ? (0, r.jsx)(f.Z, {}) : _ ? (0, r.jsx)(o.Vq, {
+  }, [v, _, t, h, O, b, y]), v) ? (0, r.jsx)(f.Z, {}) : _ ? (0, r.jsx)(a.Vq, {
     onClose: n
   }) : null != T ? (0, r.jsx)(d.Z, {
     onClose: n

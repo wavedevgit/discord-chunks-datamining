@@ -2,9 +2,9 @@
 /** chunk id: 929991, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  FL: () => a,
+  FL: () => o,
   a8: () => i,
-  rS: () => o
+  rS: () => a
 });
 var Chunk570140 = require("./570140.js");
 
@@ -17,7 +17,7 @@ function i(e, t, n) {
   })
 }
 
-function a(e, t, n) {
+function o(e, t, n) {
   r.Z.dispatch({
     type: "ANALYTICS_FEED_ITEM_UNSEEN",
     id: e,
@@ -26,7 +26,7 @@ function a(e, t, n) {
   })
 }
 
-function o(e, t) {
+function a(e, t) {
   r.Z.dispatch({
     type: "ANALYTICS_FEED_FLUSH",
     id: e,

@@ -2,12 +2,12 @@
 /** chunk id: 953528, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  QH: () => i,
-  pj: () => a
+  QH: () => s,
+  pj: () => o
 });
 var r, Chunk427164 = require("./427164.js"),
-  a = ((r = {}).NO_BADGE = "no_badge", r.FIRST_BLOCK_ONLY = "first_block_only", r.RIGHT_BLOCK_ONLY = "right_block_only", r.BOTH_BLOCKS = "both_blocks", r);
-let o = (0, Chunk427164.le)({
+  o = ((r = {}).NO_BADGE = "no_badge", r.FIRST_BLOCK_ONLY = "first_block_only", r.RIGHT_BLOCK_ONLY = "right_block_only", r.BOTH_BLOCKS = "both_blocks", r);
+let i = (0, Chunk427164.le)({
     name: "2025-10-collectibles-featured-block-new-badge",
     kind: "user",
     defaultConfig: {
@@ -28,6 +28,6 @@ let o = (0, Chunk427164.le)({
       }
     }
   }),
-  i = e => o.useConfig({
+  s = e => i.useConfig({
     location: e
   }).variant

@@ -9,26 +9,26 @@ let r = 5;
 function i(e, t, n) {
   let {
     onChange: i
-  } = e, a = false, o = false;
+  } = e, o = false, a = false;
   return e.onChange = () => {
-    if (a) {
-      o = true;
+    if (o) {
+      a = true;
       return
     }
-    a = true;
+    o = true;
     try {
       let e = 0;
       do {
-        if (o = false, e++ >= r) break;
+        if (a = false, e++ >= r) break;
         null == t || t();
         try {
           i()
         } finally {
           null == n || n()
         }
-      } while (o)
+      } while (a)
     } finally {
-      a = false
+      o = false
     }
   }, e
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 587243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => g,
+  F: () => b,
   I: () => v
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
@@ -16,8 +16,8 @@ var Chunk481060 = require("./481060.js"),
   Chunk246133 = require("./246133.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk787224 = require("./787224.js");
-let f = [{
+  Chunk54482 = require("./54482.js");
+let x = [{
     duration: 15 * Chunk70956.Z.Millis.MINUTE,
     label: () => Chunk388032.intl.string(Chunk388032.t["8ot6gv"])
   }, {
@@ -36,15 +36,15 @@ let f = [{
     duration: true,
     label: () => Chunk388032.intl.string(Chunk388032.t["46dqJY"])
   }],
-  x = "forever";
+  f = "forever";
 
-function b(e) {
+function g(e) {
   let {
     status: t,
     currentStatus: n,
     description: i
   } = e, l = t !== m.Skl.ONLINE, s = (0, a.jsx)(a.Fragment, {
-    children: f.map(e => {
+    children: x.map(e => {
       let {
         duration: i,
         label: l
@@ -58,7 +58,7 @@ function b(e) {
           durationMillis: i
         }),
         dontCloseOnAction: true
-      }, null != i ? i : x)
+      }, null != i ? i : f)
     })
   });
   return (0, a.jsx)(r.sNh, {
@@ -97,7 +97,7 @@ function b(e) {
   })
 }
 
-function g(e) {
+function b(e) {
   if (null == e || "0" === e) return;
   let {
     kind: t,
@@ -121,7 +121,7 @@ function v(e) {
     c = s.fv.useSetting(),
     d = e === m.Skl.DND,
     u = n => {
-      let a = g(t);
+      let a = b(t);
       if (e === n && null != a) return a;
       switch (n) {
         case m.Skl.DND:
@@ -133,7 +133,7 @@ function v(e) {
       }
     },
     v = (0, a.jsx)(a.Fragment, {
-      children: f.map(t => {
+      children: x.map(t => {
         let {
           duration: n,
           label: l
@@ -145,30 +145,30 @@ function v(e) {
             (0, i.oW)(true, n)
           },
           dontCloseOnAction: true
-        }, null != n ? n : x)
+        }, null != n ? n : f)
       })
     }),
-    j = b({
+    j = g({
       status: m.Skl.ONLINE,
       currentStatus: e
     }),
-    y = b({
+    _ = g({
       status: m.Skl.IDLE,
       currentStatus: e,
       description: u(m.Skl.IDLE)
     }),
-    C = b({
+    y = g({
       status: m.Skl.DND,
       currentStatus: e,
       description: u(m.Skl.DND)
     }),
-    _ = b({
+    C = g({
       status: m.Skl.INVISIBLE,
       currentStatus: e,
       description: u(m.Skl.INVISIBLE)
     });
   return (0, a.jsxs)(a.Fragment, {
-    children: [j, (0, a.jsx)(r.Clw, {}, "menu-separator-statuses"), y, C, _, o || n ? (0, a.jsxs)(a.Fragment, {
+    children: [j, (0, a.jsx)(r.Clw, {}, "menu-separator-statuses"), _, y, C, o || n ? (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(r.Clw, {}, "menu-separator-statuses"), (0, a.jsx)(r.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",

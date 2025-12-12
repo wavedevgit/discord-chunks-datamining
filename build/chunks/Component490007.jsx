@@ -1,7 +1,7 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 490007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,8 +11,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk488922 = require("./488922.jsx"),
   Chunk595925 = require("./595925.jsx"),
-  Chunk663618 = require("./663618.js"),
-  Chunk13408 = require("./13408.js");
+  Chunk451429 = require("./451429.js"),
+  Chunk226800 = require("./226800.js");
 let p = [{
     id: "virtual-currency",
     name: "Virtual Current (Orb) Components"
@@ -25,12 +25,12 @@ let p = [{
     nitro: Chunk488922.X
   };
 
-function f() {
+function x() {
   let [e, t] = Chunk473749.useState("virtual-currency"), n = Chunk473749.useMemo(() => h[module], [module]);
   return (0, Chunk54381.jsxs)("div", {
-    className: l()(Chunk663618.panel, Chunk13408.container),
+    className: l()(Chunk451429.panel, Chunk226800.container),
     children: [(0, Chunk54381.jsx)(Chunk481060.njP, {
-      className: Chunk13408.tabBar,
+      className: Chunk226800.tabBar,
       selectedItem: module,
       onItemSelect: exports,
       look: "brand",
@@ -42,7 +42,7 @@ function f() {
       }, e.id))
     }), (0, Chunk54381.jsx)(Chunk793030.w0Z, {
       children: (0, Chunk54381.jsx)("div", {
-        className: Chunk13408.content,
+        className: Chunk226800.content,
         children: (0, Chunk54381.jsx)(require, {})
       })
     })]

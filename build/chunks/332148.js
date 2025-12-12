@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 332148, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -17,17 +17,17 @@ let d = {
         id: n,
         name: i
       } = e;
-      await a.Z.unarchiveThreadIfNecessary(e.id), r.tn.put({
+      await o.Z.unarchiveThreadIfNecessary(e.id), r.tn.put({
         url: c.ANM.PIN(n, t),
         rejectWithError: true
       }).catch(t => {
         let n = new l.Hx(t),
           r = n.code,
-          a = u.intl.string(u.t.j2d6Km),
-          o = u.intl.string(u.t.fEptJP);
+          o = u.intl.string(u.t.j2d6Km),
+          a = u.intl.string(u.t.fEptJP);
         if (null != r) switch (r) {
           case c.evJ.TOO_MANY_PINS_IN_CHANNEL:
-            a = u.intl.string(u.t.HI88Q3), o = e.isPrivate() ? u.intl.formatToPlainString(u.t.Q89oQU, {
+            o = u.intl.string(u.t.HI88Q3), a = e.isPrivate() ? u.intl.formatToPlainString(u.t.Q89oQU, {
               maxPins: c.tG9
             }) : u.intl.formatToPlainString(u.t.NnO1S5, {
               maxPins: c.tG9,
@@ -35,33 +35,33 @@ let d = {
             });
             break;
           case c.evJ.INVALID_ACCESS:
-            a = u.intl.string(u.t["25gfQX"]), o = u.intl.string(u.t.QNnTwN);
+            o = u.intl.string(u.t["25gfQX"]), a = u.intl.string(u.t.QNnTwN);
             break;
           case c.evJ.INVALID_PIN_MESSAGE_CHANNEL:
-            a = u.intl.string(u.t["Q5G6+m"]), o = u.intl.string(u.t["5hgPfC"]);
+            o = u.intl.string(u.t["Q5G6+m"]), a = u.intl.string(u.t["5hgPfC"]);
             break;
           case c.evJ.INVALID_THREAD_ARCHIVE_STATE:
-            a = u.intl.string(u.t.fu6Lbl), o = u.intl.string(u.t.FmrcZM);
+            o = u.intl.string(u.t.fu6Lbl), a = u.intl.string(u.t.FmrcZM);
             break;
           case c.evJ.INVALID_ACTION_SYSTEM_MESSAGE:
-            a = u.intl.string(u.t["zV0/FC"]), o = u.intl.string(u.t.C4a7xI);
+            o = u.intl.string(u.t["zV0/FC"]), a = u.intl.string(u.t.C4a7xI);
             break;
           case c.evJ.UNKNOWN_MESSAGE:
-            a = u.intl.string(u.t.fkqPro), o = u.intl.string(u.t.H6fRIg);
+            o = u.intl.string(u.t.fkqPro), a = u.intl.string(u.t.H6fRIg);
             break;
           default:
             var d;
-            a = u.intl.string(u.t.HI88Q3), o = null != (d = n.getAnyErrorMessage()) ? d : u.intl.string(u.t.fEptJP)
+            o = u.intl.string(u.t.HI88Q3), a = null != (d = n.getAnyErrorMessage()) ? d : u.intl.string(u.t.fEptJP)
         }
         s.Z.show({
-          title: a,
-          body: o,
+          title: o,
+          body: a,
           confirmText: u.intl.string(u.t.BddRzS)
         })
       })
     },
     async unpinMessage(e, t) {
-      await a.Z.unarchiveThreadIfNecessary(e.id), r.tn.del({
+      await o.Z.unarchiveThreadIfNecessary(e.id), r.tn.del({
         url: c.ANM.PIN(e.id, t),
         oldFormErrors: true,
         rejectWithError: true
@@ -81,26 +81,26 @@ let d = {
     },
     fetchPins(e, t) {
       var n, l;
-      let a = null != (n = null == t ? true : t.reset) && n,
+      let o = null != (n = null == t ? true : t.reset) && n,
         s = null != (l = null == t ? true : t.limit) ? l : 25,
         u = null == t ? true : t.before;
-      (a || function(e, t) {
-        let n = o.Z.getPins(e);
+      (o || function(e, t) {
+        let n = a.Z.getPins(e);
         if (null == n) returntrue;
         switch (n.state) {
-          case o.M.FAILED:
+          case a.M.FAILED:
             returntrue;
-          case o.M.LOADING:
-          case o.M.LOADED_FINISHED:
+          case a.M.LOADING:
+          case a.M.LOADED_FINISHED:
             returnfalse;
-          case o.M.LOADED_HAS_MORE:
+          case a.M.LOADED_HAS_MORE:
             if (null == t) return 0 === n.items.length;
             return n.items.at(false).pinnedAt === t
         }
       }(e, u)) && (i.Z.dispatch({
         type: "LOAD_PINNED_MESSAGES",
         channelId: e,
-        reset: a
+        reset: o
       }), r.tn.get({
         url: c.ANM.PINS(e),
         query: {

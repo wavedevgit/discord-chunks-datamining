@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -17,14 +17,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk51144 = require("./51144.js"),
   Chunk894017 = require("./894017.js"),
   Chunk79874 = require("./79874.js"),
-  Chunk315416 = require("./315416.js"),
+  Chunk376108 = require("./376108.js"),
   Chunk236373 = require("./236373.js"),
   Chunk854698 = require("./854698.js"),
   Chunk391174 = require("./391174.jsx"),
   Chunk95291 = require("./95291.jsx"),
   Chunk390966 = require("./390966.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk58349 = require("./58349.js");
+  Chunk396934 = require("./396934.js");
 
 function O(e) {
   let {
@@ -35,7 +35,7 @@ function O(e) {
     guildEvent: g,
     eventPreview: O,
     recurrenceId: v
-  } = e, S = (0, p.Z)(i, g.id, v), I = null != g ? g : O, T = (0, o.e7)([c.ZP], () => c.ZP.getNick(i, null == n ? true : n.id), [i, n]);
+  } = e, S = (0, p.Z)(i, g.id, v), I = null != g ? g : O, T = (0, a.e7)([c.ZP], () => c.ZP.getNick(i, null == n ? true : n.id), [i, n]);
   v = null == I || null != v ? v : (0, m.DK)(I);
   let {
     startTime: C
@@ -47,7 +47,7 @@ function O(e) {
     recurrence_rule: w
   } = I;
   return (0, r.jsxs)("div", {
-    className: a()(y.statusContainer, t),
+    className: o()(y.statusContainer, t),
     children: [(0, r.jsx)(E.z, {
       startTime: C.toISOString(),
       status: null != N ? N : R,
@@ -93,17 +93,17 @@ function v(e) {
     headerVariant: t = "heading-lg/medium",
     descriptionClassName: n,
     name: i,
-    description: o,
+    description: a,
     truncate: s,
     guildId: c,
     imageSource: u
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()({
+    className: o()({
       [y.withThumbnail]: null != u
     }),
     children: [(0, r.jsxs)("div", {
-      className: a()({
+      className: o()({
         [y.descriptionWithThumbnail]: null != u
       }),
       children: [(0, r.jsx)(l.Heading, {
@@ -111,9 +111,9 @@ function v(e) {
         selectable: true,
         className: y.eventName,
         children: i
-      }), null != o && (0, r.jsx)(h.Z, {
-        description: o,
-        className: a()(n, y.description),
+      }), null != a && (0, r.jsx)(h.Z, {
+        description: a,
+        className: o()(n, y.description),
         truncate: s,
         guildId: c
       })]
@@ -132,8 +132,8 @@ function S(e) {
     headerVariant: t,
     descriptionClassName: n,
     creator: i,
-    name: a,
-    description: o,
+    name: o,
+    description: a,
     imageSource: s,
     truncate: l,
     guildId: c,
@@ -159,8 +159,8 @@ function S(e) {
       eventPreview: f,
       recurrenceId: p
     }), (0, r.jsx)(v, {
-      name: a,
-      description: o,
+      name: o,
+      description: a,
       headerVariant: t,
       descriptionClassName: n,
       truncate: l,

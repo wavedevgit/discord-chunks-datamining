@@ -1,7 +1,7 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 602147, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,24 +16,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk128449 = require("./128449.js"),
   Chunk324805 = require("./324805.js"),
   Chunk388032 = require("./388032.jsx");
-let b = Chunk473749.forwardRef(function(e, t) {
+let m = Chunk473749.forwardRef(function(e, t) {
   let {
     selected: n,
-    onClick: b,
-    questId: m,
-    className: y
-  } = e, O = i.useCallback(() => {
-    (0, o.k5)({
+    onClick: m,
+    questId: b,
+    className: _
+  } = e, y = i.useCallback(() => {
+    (0, a.k5)({
       source: f.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
     });
-    let e = true !== m ? f.GlobalDiscoveryTab.QUESTS : s.Z.getField("selectedTab");
+    let e = true !== b ? f.GlobalDiscoveryTab.QUESTS : s.Z.getField("selectedTab");
     switch (e) {
       case f.GlobalDiscoveryTab.QUESTS:
         return (0, c.transitionToGlobalDiscovery)({
           tab: f.GlobalDiscoveryTab.QUESTS,
           location: p.dr.DISCOVERY_COMPASS,
           questContent: l.j.DISCOVERY_COMPASS,
-          questId: m
+          questId: b
         });
       case f.GlobalDiscoveryTab.SERVERS:
         return (0, c.transitionToGlobalDiscovery)({
@@ -55,16 +55,16 @@ let b = Chunk473749.forwardRef(function(e, t) {
           tab: e
         })
     }
-  }, [m]);
+  }, [b]);
   return (0, r.jsx)(d.Z, {
     id: "guild-discover-button",
     ref: t,
-    className: y,
+    className: _,
     onClick: () => {
-      O(), true !== b && b()
+      y(), true !== m && m()
     },
     selected: n,
     tooltip: g.intl.string(g.t["4nEZLk"]),
-    icon: a.Jmo
+    icon: o.Jmo
   })
 })

@@ -43,7 +43,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk968437 = require("./968437.js"),
   Chunk665906 = require("./665906.js"),
   Chunk456077 = require("./456077.js"),
-  Chunk266535 = require("./266535.jsx"),
+  Chunk747212 = require("./747212.jsx"),
   Chunk210887 = require("./210887.js"),
   Chunk131704 = require("./131704.js"),
   Chunk601964 = require("./601964.js"),
@@ -67,8 +67,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk710352 = require("./710352.js"),
   Chunk124368 = require("./124368.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk338915 = require("./338915.js"),
-  Chunk478411 = require("./478411.js");
+  Chunk257294 = require("./257294.js"),
+  Chunk197571 = require("./197571.js");
 
 function eg(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -200,7 +200,7 @@ function eS(e) {
     let {
       closePopout: l
     } = e;
-    return (0, i.jsx)(R.Z, {
+    return (0, i.jsx)(I.Z, {
       channel: n,
       guildId: r,
       pickerIntention: es.Hz.CHANNEL_NAME,
@@ -211,7 +211,7 @@ function eS(e) {
           emoji: n,
           willClose: i
         } = e;
-        null != n && n.type === L.B.UNICODE && t(n.surrogates), i && l()
+        null != n && n.type === R.B.UNICODE && t(n.surrogates), i && l()
       },
       showOnlyUnicode: true,
       analyticsOverride: ey
@@ -227,7 +227,7 @@ function eS(e) {
       let {
         isShown: n
       } = t;
-      return (0, i.jsx)(I.Z, ef(em({}, e), {
+      return (0, i.jsx)(P.Z, ef(em({}, e), {
         ref: a,
         active: n,
         className: eu.emojiButton,
@@ -284,14 +284,14 @@ class eN extends Chunk473749.PureComponent {
         guild: Z,
         isForumPost: N,
         isOwner: T,
-        showAdvancedSlowModeSetting: P
+        showAdvancedSlowModeSetting: _
       } = this.props,
-      I = H.Ec.has(e.type),
-      R = e.isForumLikeChannel(),
-      L = R && (null == (n = e.availableTags) ? true : n.every(e => e.moderated)),
-      A = (null == (l = X.default.getCurrentUser()) ? true : l.isStaff()) === true,
+      P = H.Ec.has(e.type),
+      I = e.isForumLikeChannel(),
+      R = I && (null == (n = e.availableTags) ? true : n.every(e => e.moderated)),
+      M = (null == (l = X.default.getCurrentUser()) ? true : l.isStaff()) === true,
       B = H.TK.has(e.type) ? (0, i.jsx)(b.gNt, {
-        label: R ? ed.intl.string(ed.t.yR6HwZ) : ed.intl.string(ed.t.X8jMDh),
+        label: I ? ed.intl.string(ed.t.yR6HwZ) : ed.intl.string(ed.t.X8jMDh),
         children: (0, i.jsx)(E.ZP, {
           className: a()(eu.topicContainer, {
             [eu.disabled]: !x
@@ -300,13 +300,13 @@ class eN extends Chunk473749.PureComponent {
             [eu.disabled]: !x
           }),
           characterCountClassName: eu.topicCharacterCount,
-          maxCharacterCount: R ? ea.Z7 : ea.$x,
+          maxCharacterCount: I ? ea.Z7 : ea.$x,
           onChange: this.handleChangeRichTopic,
           placeholder: ed.intl.string(ed.t["71fbmh"]),
           channel: ej,
           textValue: this.state.textTopicValue,
           richValue: this.state.richTopicValue,
-          type: R ? S.Ie.FORUM_CHANNEL_GUIDELINES : S.Ie.CHANNEL_TOPIC,
+          type: I ? S.Ie.FORUM_CHANNEL_GUIDELINES : S.Ie.CHANNEL_TOPIC,
           onFocus: () => {
             this.setState({
               topicFocused: true
@@ -325,10 +325,10 @@ class eN extends Chunk473749.PureComponent {
           showValueWhenDisabled: true
         })
       }) : null,
-      U = R && A ? (0, i.jsx)(b.Kx8, {
+      U = I && M ? (0, i.jsx)(b.Kx8, {
         label: ed.intl.string(ed.t.qk2jdY),
         placeholder: ed.intl.string(ed.t.DDjD1H),
-        value: M.ZP.translateSurrogatesToInlineEmoji(null != (s = e.template) ? s : ""),
+        value: L.ZP.translateSurrogatesToInlineEmoji(null != (s = e.template) ? s : ""),
         onChange: this.handleChangeTemplate,
         error: this.getError("template"),
         maxLength: eo.Vb,
@@ -342,11 +342,11 @@ class eN extends Chunk473749.PureComponent {
           description: ed.intl.string(ed.t["/oQQ3y"]),
           errorMessage: this.getError("available_tags"),
           id: ep,
-          children: (0, i.jsx)(_.Z, {
+          children: (0, i.jsx)(A.Z, {
             channel: e
           })
         }), (0, i.jsx)(b.Checkbox, {
-          disabled: !x || L,
+          disabled: !x || R,
           checked: e.hasFlag(ea.zZ.REQUIRE_TAG),
           onChange: e => this.handleRequireTagChanged(e),
           label: ed.intl.string(ed.t["9g2Zyv"])
@@ -440,12 +440,12 @@ class eN extends Chunk473749.PureComponent {
         value: e.getDefaultTagSetting(),
         onChange: this.handleChangeDefaultTagSetting
       }) : null,
-      J = I ? y : x,
+      J = P ? y : x,
       Q = null == (r = w.Z.getCurrentConfig({
         guildId: e.guild_id,
         location: "ChannelSettingsOverview"
       })) ? true : r.enabled,
-      K = true === P ? (0, i.jsx)(en.Z, {
+      K = true === _ ? (0, i.jsx)(en.Z, {
         label: ed.intl.string(ed.t.tTHx98),
         helperText: this.getSlowmodeHelpText(Q),
         channel: e,
@@ -463,7 +463,7 @@ class eN extends Chunk473749.PureComponent {
         "aria-labelledby": eb,
         "aria-describedby": ex
       }),
-      $ = H.X_.has(e.type) ? R ? (0, i.jsxs)(i.Fragment, {
+      $ = H.X_.has(e.type) ? I ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(b.izJ, {}), (0, i.jsxs)(b.C3N, {
           label: ed.intl.string(ed.t.O1c02q),
           children: [K, (0, i.jsx)(b.iRW, {
@@ -481,7 +481,7 @@ class eN extends Chunk473749.PureComponent {
           })]
         }), (0, i.jsx)(b.izJ, {})]
       }) : K : null,
-      et = I && null != e.threadMetadata ? (0, i.jsx)(v.Z, {
+      et = P && null != e.threadMetadata ? (0, i.jsx)(v.Z, {
         page: er.ZY5.CHANNEL_SETTINGS,
         children: (0, i.jsx)(G.Z, {
           isDisabled: !C,
@@ -553,7 +553,7 @@ class eN extends Chunk473749.PureComponent {
         onChange: this.handleShowMediaOptionsToggled,
         disabled: !x
       }) : null;
-    e.type === er.d4z.GUILD_CATEGORY ? (p = ed.intl.string(ed.t.OCAkGP), m = "category-name") : e.isForumPost() ? (p = ed.intl.string(ed.t.uyVrTN), m = "post-title") : I ? (p = ed.intl.string(ed.t.j3XWjD), m = "thread-name") : (p = ed.intl.string(ed.t.PVbHDl), m = "channel-name");
+    e.type === er.d4z.GUILD_CATEGORY ? (p = ed.intl.string(ed.t.OCAkGP), m = "category-name") : e.isForumPost() ? (p = ed.intl.string(ed.t.uyVrTN), m = "post-title") : P ? (p = ed.intl.string(ed.t.j3XWjD), m = "thread-name") : (p = ed.intl.string(ed.t.PVbHDl), m = "channel-name");
     let eN = T ? j : x;
     return (0, i.jsxs)(b.Kqy, {
       gap: 24,
@@ -734,7 +734,7 @@ class eN extends Chunk473749.PureComponent {
       } = e, {
         channel: n
       } = this.props;
-      return (0, i.jsx)(R.Z, {
+      return (0, i.jsx)(I.Z, {
         guildId: null == n ? true : n.guild_id,
         closePopout: t,
         onSelectEmoji: e => {
@@ -797,7 +797,7 @@ class eN extends Chunk473749.PureComponent {
       }, 0)
     }), eg(this, "handleChangeTopic", e => {
       (0, x.pW)({
-        topic: M.ZP.translateInlineEmojiToSurrogates(e)
+        topic: L.ZP.translateInlineEmojiToSurrogates(e)
       })
     }), eg(this, "handleChangeRichTopic", (e, t, n) => {
       this.setState({
@@ -806,7 +806,7 @@ class eN extends Chunk473749.PureComponent {
       }), this.handleChangeTopic(t)
     }), eg(this, "handleChangeTemplate", e => {
       (0, x.pW)({
-        template: M.ZP.translateInlineEmojiToSurrogates(e)
+        template: L.ZP.translateInlineEmojiToSurrogates(e)
       })
     }), eg(this, "handleChangeDefaultReactionEmoji", e => {
       let t = null == e ? null : (null == e ? true : e.id) != null ? {

@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk117791 = require("./117791.jsx"),
   Chunk664134 = require("./664134.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk146187 = require("./146187.js");
+  Chunk648685 = require("./648685.js");
 let u = e => Object.values(e).sort((e, t) => e.order - t.order),
   d = e => {
     let {
@@ -24,7 +24,7 @@ let u = e => Object.values(e).sort((e, t) => e.order - t.order),
       [s.h.PLANS]: l.intl.string(l.t.wyNMnm),
       [s.h.COMPARE]: l.intl.string(l.t.pwD7If)
     }, f = u(t);
-    return (0, r.jsx)(a.Z, {
+    return (0, r.jsx)(o.Z, {
       className: c.navBar,
       transparent: true,
       children: (0, r.jsxs)("div", {
@@ -38,21 +38,21 @@ let u = e => Object.values(e).sort((e, t) => e.order - t.order),
             className: c.navBarSectionContent,
             children: f.map(e => {
               let t = n === e.id,
-                a = d[e.id];
+                o = d[e.id];
               return (0, r.jsxs)(i.P3F, {
                 className: c.sectionClickable,
                 onClick: e.scrollToSection,
                 children: [(0, r.jsx)(i.Text, {
                   variant: "text-sm/medium",
                   color: "text-strong",
-                  children: a
+                  children: o
                 }), t && (0, r.jsx)("div", {
                   className: c.sectionUnderline
                 })]
-              }, a)
+              }, o)
             })
           })]
-        }), (0, r.jsx)(o.Z, {
+        }), (0, r.jsx)(a.Z, {
           size: "sm",
           variant: "overlay-secondary"
         })]

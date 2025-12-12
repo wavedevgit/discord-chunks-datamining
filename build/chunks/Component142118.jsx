@@ -33,11 +33,11 @@ function u(e) {
       style: {
         height: 1
       }
-    }), (0, r.jsxs)(a.Kqy, {
+    }), (0, r.jsxs)(o.Kqy, {
       gap: 16,
       children: [null != h && (0, r.jsx)(c.Z, {
         notice: h
-      }), d.map(e => (0, r.jsx)(o.Z, {
+      }), d.map(e => (0, r.jsx)(a.Z, {
         node: e
       }, e.key))]
     })]

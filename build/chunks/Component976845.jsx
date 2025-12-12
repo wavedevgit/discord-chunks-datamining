@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk934248 = require("./934248.jsx"),
   Chunk780384 = require("./780384.js"),
   Chunk410030 = require("./410030.js"),
-  Chunk663261 = require("./663261.js");
+  Chunk647917 = require("./647917.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,8 +55,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -64,8 +64,8 @@ function _(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let h = {
@@ -78,12 +78,12 @@ let h = {
       currentAnimationType: t,
       animationTypeRef: n,
       onSetAnimationDurationMS: r,
-      play: a,
-      getDuration: o
-    } = e, s = o(), l = null != s ? 1e3 * s : g;
+      play: o,
+      getDuration: a
+    } = e, s = a(), l = null != s ? 1e3 * s : g;
     (0, i.useEffect)(() => {
-      null !== t && t !== n.current && (n.current = t, a())
-    }, [t, a, n]), (0, i.useEffect)(() => {
+      null !== t && t !== n.current && (n.current = t, o())
+    }, [t, o, n]), (0, i.useEffect)(() => {
       r(l)
     }, [r, l])
   },
@@ -91,13 +91,13 @@ let h = {
     var {
       currentAnimationType: t
     } = e, n = _(e, ["currentAnimationType"]);
-    let i = (0, o.D)(null != t ? t : "earn"),
+    let i = (0, a.D)(null != t ? t : "earn"),
       {
-        Component: a
+        Component: o
       } = i;
     return E(d({
       currentAnimationType: t
-    }, n, _(i, ["Component"]))), (0, r.jsx)(a, p(d({}, h), {
+    }, n, _(i, ["Component"]))), (0, r.jsx)(o, p(d({}, h), {
       size: "custom",
       className: c.orbsLottie,
       useLottieDefaultColors: true
@@ -107,13 +107,13 @@ let h = {
     var {
       currentAnimationType: t
     } = e, n = _(e, ["currentAnimationType"]);
-    let i = (0, a.v)(null != t ? t : "earn"),
+    let i = (0, o.v)(null != t ? t : "earn"),
       {
-        Component: o
+        Component: a
       } = i;
     return E(d({
       currentAnimationType: t
-    }, n, _(i, ["Component"]))), (0, r.jsx)(o, p(d({}, h), {
+    }, n, _(i, ["Component"]))), (0, r.jsx)(a, p(d({}, h), {
       size: "custom",
       className: c.orbsLottie,
       useLottieDefaultColors: true

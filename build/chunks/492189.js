@@ -79,7 +79,7 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
   getOwnPropertyDescriptor: et,
   defineProperty: en
 }), module.exports = function(e, t, n) {
-  var o = e.match(/\d+/)[0] / 8,
+  var a = e.match(/\d+/)[0] / 8,
     l = e + (n ? "Clamped" : "") + "Array",
     c = "get" + e,
     d = "set" + e,
@@ -89,11 +89,11 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
     y = {},
     v = function(e, t) {
       var n = M(e);
-      return n.view[c](t * o + n.byteOffset, true)
+      return n.view[c](t * a + n.byteOffset, true)
     },
     I = function(e, t, r) {
       var i = M(e);
-      i.view[d](t * o + i.byteOffset, n ? g(r) : r, true)
+      i.view[d](t * a + i.byteOffset, n ? g(r) : r, true)
     },
     R = function(e, t) {
       G(e, t, {
@@ -108,7 +108,7 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
     };
   Y ? s && (E = t(function(e, t, n, r) {
     return u(e, b), j(function() {
-      return O(t) ? $(t) ? true !== r ? new p(t, h(n, o), r) : true !== n ? new p(t, h(n, o)) : new p(t) : q(t) ? x(E, t) : a(A, E, t) : new p(m(t))
+      return O(t) ? $(t) ? true !== r ? new p(t, h(n, a), r) : true !== n ? new p(t, h(n, a)) : new p(t) : q(t) ? x(E, t) : o(A, E, t) : new p(m(t))
     }(), e, E)
   }), T && T(E, K), N(C(p), function(e) {
     e in E || f(E, e, p[e])
@@ -118,15 +118,15 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
       d = 0;
     if (O(t))
       if ($(t)) {
-        i = t, d = h(n, o);
+        i = t, d = h(n, a);
         var f = t.byteLength;
         if (true === r) {
-          if (f % o || (s = f - d) < 0) throw new F(X)
-        } else if ((s = _(r) * o) + d > f) throw new F(X);
-        l = s / o
+          if (f % a || (s = f - d) < 0) throw new F(X)
+        } else if ((s = _(r) * a) + d > f) throw new F(X);
+        l = s / a
       } else if (q(t)) return x(E, t);
-    else return a(A, E, t);
-    else i = new B(s = (l = m(t)) * o);
+    else return o(A, E, t);
+    else i = new B(s = (l = m(t)) * a);
     for (k(e, {
         buffer: i,
         byteOffset: d,
@@ -141,5 +141,5 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
     constructor: true,
     forced: w,
     sham: !Y
-  }, y), Q in E || f(E, Q, o), Q in b || f(b, Q, o), P(l)
+  }, y), Q in E || f(E, Q, a), Q in b || f(b, Q, a), P(l)
 }) : module.exports = function() {}

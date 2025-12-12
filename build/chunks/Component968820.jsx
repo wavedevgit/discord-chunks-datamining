@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 968820, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -13,36 +13,36 @@ var Chunk481060 = require("./481060.js"),
   Chunk685389 = require("./685389.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk574094 = require("./574094.js");
+  Chunk49792 = require("./49792.js");
 
 function g(e) {
   let {
     children: t,
     revenue: n,
     revenueTrend: g,
-    summaryMetricLabel: f,
-    summaryMetricValue: m,
-    summaryMetricTrend: b,
-    summaryMetricTrendIsPercent: p
+    summaryMetricLabel: m,
+    summaryMetricValue: p,
+    summaryMetricTrend: f,
+    summaryMetricTrendIsPercent: h
   } = e;
   return (0, r.jsx)(i.C3N, {
-    label: d.intl.string(d.t.ofmOzb),
+    label: u.intl.string(u.t.ofmOzb),
     children: (0, r.jsxs)("div", {
-      className: u.paymentInfoGroup,
+      className: d.paymentInfoGroup,
       children: [(0, r.jsxs)(o.H, {
-        children: [(0, r.jsx)(s.Z, {
-          label: d.intl.string(d.t.iY1jW3),
-          value: (0, a.T4)(null != n ? n : 0, c.pKx.USD),
+        children: [(0, r.jsx)(a.Z, {
+          label: u.intl.string(u.t.iY1jW3),
+          value: (0, s.T4)(null != n ? n : 0, c.pKx.USD),
           additionalContent: (0, r.jsx)(l.H, {
             value: g,
             isPercent: true
           })
-        }), (0, r.jsx)(s.Z, {
-          label: f,
-          value: m,
+        }), (0, r.jsx)(a.Z, {
+          label: m,
+          value: p,
           additionalContent: (0, r.jsx)(l.H, {
-            value: b,
-            isPercent: p
+            value: f,
+            isPercent: h
           })
         })]
       }), t]

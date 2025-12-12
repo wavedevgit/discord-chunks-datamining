@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk16150 = require("./16150.js");
+  Chunk569943 = require("./569943.js");
 let l = e => {
   let {
     renderTitle: t,
@@ -20,17 +20,17 @@ let l = e => {
     isHorizontal: u = false
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(s.tile, {
+    className: o()(s.tile, {
       [s.tileHorizontal]: u
     }, c),
     children: [(0, r.jsx)("div", {
-      className: a()(s.media, {
+      className: o()(s.media, {
         [s.mediaHorizontal]: u
       }),
       children: null == l ? true : l()
     }), (0, r.jsxs)("div", {
       className: s.description,
-      children: [(0, r.jsx)(o.H, {
+      children: [(0, r.jsx)(a.H, {
         className: s.title,
         children: null == t ? true : t()
       }), (0, r.jsx)("div", {

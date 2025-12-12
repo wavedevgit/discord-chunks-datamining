@@ -34,7 +34,7 @@ function _(e) {
     applicationId: t,
     layout: n
   } = e;
-  u.set(t, o.Z.createFromServer(n)), d.delete(t)
+  u.set(t, a.Z.createFromServer(n)), d.delete(t)
 }
 
 function m(e) {

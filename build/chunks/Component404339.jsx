@@ -17,7 +17,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk110223 = require("./110223.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk729861 = require("./729861.js");
+  Chunk405842 = require("./405842.js");
 
 function x(e) {
   let {
@@ -44,7 +44,7 @@ function x(e) {
         channelId: t,
         blockedUsers: n,
         ignoredUsers: r
-      } = e, l = o.Z.getChannel(t), c = n.length > 0, d = r.length > 0, u = [{
+      } = e, l = o.Z.getChannel(t), d = n.length > 0, c = r.length > 0, u = [{
         icon: (0, i.jsx)("div", {
           className: N.icon,
           children: (0, i.jsx)(s.aNP, {})
@@ -52,7 +52,7 @@ function x(e) {
         text: g.intl.string(g.t["7jN3FC"]),
         className: N.row
       }];
-      if (c && d) {
+      if (d && c) {
         let e = [...n, ...r],
           o = e.slice(0, 2).map(e => e.id);
         u.unshift({
@@ -67,8 +67,8 @@ function x(e) {
           className: N.row
         })
       } else {
-        let e = c ? n.slice(0, 2).map(e => e.id) : r.slice(0, 2).map(e => e.id),
-          s = c ? n.length : r.length;
+        let e = d ? n.slice(0, 2).map(e => e.id) : r.slice(0, 2).map(e => e.id),
+          s = d ? n.length : r.length;
         u.unshift({
           icon: (0, i.jsx)("div", {
             className: N.icon,
@@ -85,21 +85,21 @@ function x(e) {
       ignoredUsers: A
     }),
     onDismissAndStay: () => {
-      E(), p(), (0, d.dI)(new Set([...n, ...x])), c.default.track(_.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
-        action: f.q.CLICK_TO_JOIN,
+      E(), p(), (0, c.dI)(new Set([...n, ...x])), d.default.track(f.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
+        action: _.q.CLICK_TO_JOIN,
         channel_id: t,
         blocked_user_ids: Array.from(n),
         ignored_user_ids: Array.from(x),
-        warning_surface: f.fz.PRE_JOIN_MODAL
+        warning_surface: _.fz.PRE_JOIN_MODAL
       })
     },
     onDismissAndLeave: () => {
-      p(), c.default.track(_.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
-        action: f.q.CLICK_TO_LEAVE,
+      p(), d.default.track(f.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
+        action: _.q.CLICK_TO_LEAVE,
         channel_id: t,
         blocked_user_ids: Array.from(n),
         ignored_user_ids: Array.from(x),
-        warning_surface: f.fz.PRE_JOIN_MODAL
+        warning_surface: _.fz.PRE_JOIN_MODAL
       })
     },
     leaveButtonText: g.intl.string(g.t.rOXspL),
@@ -111,7 +111,7 @@ function x(e) {
       impressionProperties: {
         channel_id: t,
         blocked_user_ids: Array.from(n),
-        warning_surface: f.fz.PRE_JOIN_MODAL
+        warning_surface: _.fz.PRE_JOIN_MODAL
       }
     }
   })

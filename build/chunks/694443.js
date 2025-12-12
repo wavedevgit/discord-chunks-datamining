@@ -5,9 +5,9 @@ var Chunk384404 = require("./384404.js");
 module.exports = function(e, t, n) {
   var i = r.undo(t);
   if ("spellcheck-change" === t.getLastChangeType()) {
-    var a = i.getCurrentContent();
+    var o = i.getCurrentContent();
     n(r.set(i, {
-      nativelyRenderedContent: a
+      nativelyRenderedContent: o
     }));
     return
   }

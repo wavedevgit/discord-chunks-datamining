@@ -8,8 +8,8 @@ var Chunk717029 = require("./717029.js"),
   Chunk25487 = require("./25487.js"),
   Chunk846042 = require("./846042.js");
 
-function o(e) {
-  return (o = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+function a(e) {
+  return (a = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
     return typeof e
   } : function(e) {
     return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
@@ -57,7 +57,7 @@ function f(e) {
 }
 
 function p(e, t) {
-  return t && ("object" === o(t) || "function" == typeof t) ? t : _(e)
+  return t && ("object" === a(t) || "function" == typeof t) ? t : _(e)
 }
 
 function _(e) {
@@ -96,7 +96,7 @@ var E = function(e) {
   function n() {
     var e;
     s(this, n);
-    for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
+    for (var r = arguments.length, i = Array(r), o = 0; o < r; o++) i[o] = arguments[o];
     return g(_(e = t.call.apply(t, [this].concat(i))), "priority", 10), g(_(e), "incompatibleTokens", ["t", "T", "X"]), e
   }
   return c(n, [{
@@ -104,15 +104,15 @@ var E = function(e) {
     value: function(e, t) {
       switch (t) {
         case "x":
-          return (0, a.DA)(i.s.basicOptionalMinutes, e);
+          return (0, o.DA)(i.s.basicOptionalMinutes, e);
         case "xx":
-          return (0, a.DA)(i.s.basic, e);
+          return (0, o.DA)(i.s.basic, e);
         case "xxxx":
-          return (0, a.DA)(i.s.basicOptionalSeconds, e);
+          return (0, o.DA)(i.s.basicOptionalSeconds, e);
         case "xxxxx":
-          return (0, a.DA)(i.s.extendedOptionalSeconds, e);
+          return (0, o.DA)(i.s.extendedOptionalSeconds, e);
         default:
-          return (0, a.DA)(i.s.extended, e)
+          return (0, o.DA)(i.s.extended, e)
       }
     }
   }, {

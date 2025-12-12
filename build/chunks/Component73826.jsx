@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 73826, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -14,15 +14,15 @@ var Chunk120356 = require("./120356.js"),
   Chunk617889 = require("./617889.js"),
   Chunk324805 = require("./324805.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk964907 = require("./964907.js");
+  Chunk905952 = require("./905952.js");
 let h = e => {
   let {
     quest: t,
     expansionSpring: n,
     isFullyExpanded: r,
     partnerBranding: h,
-    useReducedMotion: f
-  } = e, x = (0, d.qe)().label, b = x ? false : 6;
+    useReducedMotion: x
+  } = e, f = (0, d.qe)().label, g = f ? false : 6;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(l.animated.div, {
       className: p.rewardTileContainer,
@@ -44,7 +44,7 @@ let h = e => {
         quest: t,
         questContent: o.jn.QUEST_BAR_V2,
         location: u.dr.QUESTS_BAR,
-        autoplay: r && !f,
+        autoplay: r && !x,
         sourceQuestContent: o.jn.QUEST_BAR_V2,
         style: {
           width: 48,
@@ -55,7 +55,7 @@ let h = e => {
       })
     }), (0, a.jsxs)(l.animated.div, {
       className: i()(p.rewardHighlightLogoCTA, {
-        [p.rewardHighlightLogoCTALabel]: x
+        [p.rewardHighlightLogoCTALabel]: f
       }),
       style: {
         transform: (0, l.to)([n.to({
@@ -63,22 +63,22 @@ let h = e => {
           output: [0, false]
         }), n.to({
           range: [0, 1],
-          output: [0, b]
+          output: [0, g]
         })], (e, t) => "translate(".concat(e, "px, ").concat(t, "px)"))
       },
       children: [(0, a.jsx)("div", {
         className: i()({
-          [p.partnerBranding]: !x
+          [p.partnerBranding]: !f
         }),
         children: h
       }), (0, a.jsx)(l.animated.div, {
         className: i()(p.rewardHighlightCTA, {
-          [p.rewardHighlightCTALabel]: x
+          [p.rewardHighlightCTALabel]: f
         }),
         style: {
           opacity: n.to({
             range: [0, 1],
-            output: [x ? 1 : .7, 0]
+            output: [f ? 1 : .7, 0]
           })
         },
         children: (0, a.jsx)(s.Text, {

@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 868807, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => h
+  a: () => f
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   r = require.n(Chunk392711),
@@ -13,9 +13,9 @@ var Chunk392711 = require("./392711.js"),
   Chunk748902 = require("./748902.js"),
   Chunk981631 = require("./981631.js");
 let p = new Set,
-  f = null;
+  h = null;
 
-function h(e) {
+function f(e) {
   var t;
   let {
     id: n
@@ -36,7 +36,7 @@ function h(e) {
     }
     return t
   }, [n]), o = (0, l.e7)([u.Z], () => u.Z.shouldLoadMessageRequestPreview(n), [n]);
-  return !i && null == r && o && (t = n, p.add(t), null == f && (f = setTimeout(m, 0))), {
+  return !i && null == r && o && (t = n, p.add(t), null == h && (h = setTimeout(m, 0))), {
     loaded: i,
     error: a,
     message: r
@@ -46,7 +46,7 @@ async function m() {
   try {
     for (; !r().isEmpty(p);) await g()
   } finally {
-    f = null
+    h = null
   }
 }
 async function g() {

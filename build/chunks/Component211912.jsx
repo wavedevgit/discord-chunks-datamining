@@ -1,5 +1,5 @@
 /** Chunk was on 21854 **/
-/** chunk id: 211912, original params: e,t,a (module,exports,require) **/
+/** chunk id: 211912, original params: e,t,s (module,exports,require) **/
 require.d(exports, {
   default: () => b
 });
@@ -18,20 +18,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk383749 = require("./383749.js"),
+  Chunk487373 = require("./487373.js"),
   Chunk867709 = require("./867709.js"),
   Chunk157443 = require("./157443.js");
 
 function b(e) {
   let {
     transitionState: t,
-    returnRef: a,
+    returnRef: s,
     onClose: r
   } = e;
   n.useEffect(() => {
     u.default.track(f.rMx.OPEN_MODAL, {
       type: "Social Layer Storefront Announcement Modal"
-    }), (0, d.bj)(c.z.GAME_SHOP_ANNOUNCEMENT_MODAL, {
+    }), (0, d.bj)(o.z.GAME_SHOP_ANNOUNCEMENT_MODAL, {
       dismissAction: h.L.AUTO_DISMISS
     })
   }, []);
@@ -45,79 +45,79 @@ function b(e) {
         guildId: (0, x.ac)()
       }), r()
     }, [r]);
-  return (0, s.jsx)(o.f6W, {
+  return (0, a.jsx)(c.f6W, {
     theme: g.BR.DARK,
-    children: e => (0, s.jsx)(l.Y0X, {
+    children: e => (0, a.jsx)(l.Y0X, {
       transitionState: t,
       parentComponent: "SocialLayerStorefrontAnnouncementModal",
       size: l.CgR.DYNAMIC,
       className: i()(e, p.modal),
-      returnRef: a,
-      children: (0, s.jsxs)(l.hzk, {
+      returnRef: s,
+      children: (0, a.jsxs)(l.hzk, {
         className: p.content,
-        children: [(0, s.jsx)("div", {
+        children: [(0, a.jsx)("div", {
           className: p.closeButton,
-          children: (0, s.jsx)(l.olH, {
+          children: (0, a.jsx)(l.olH, {
             onClick: r
           })
-        }), (0, s.jsx)("div", {
+        }), (0, a.jsx)("div", {
           className: p.artwork
-        }), (0, s.jsx)(o.X6q, {
+        }), (0, a.jsx)(c.X6q, {
           variant: "display-md",
           color: "text-strong",
           children: j.intl.string(j.t.to0E8U)
-        }), (0, s.jsx)(o.X6q, {
+        }), (0, a.jsx)(c.X6q, {
           variant: "display-md",
           color: "text-strong",
           children: j.intl.string(j.t.BKEkBd)
-        }), (0, s.jsx)(o.X6q, {
+        }), (0, a.jsx)(c.X6q, {
           variant: "heading-md/medium",
           color: "text-muted",
           children: j.intl.string(j.t.SiXpR2)
-        }), (0, s.jsxs)("div", {
+        }), (0, a.jsxs)("div", {
           className: p.features,
-          children: [(0, s.jsxs)("div", {
+          children: [(0, a.jsxs)("div", {
             className: p.feature,
-            children: [(0, s.jsx)("div", {
+            children: [(0, a.jsx)("div", {
               className: p.featureIcon,
-              children: (0, s.jsx)("img", {
+              children: (0, a.jsx)("img", {
                 src: N,
                 alt: ""
               })
-            }), (0, s.jsxs)("div", {
+            }), (0, a.jsxs)("div", {
               className: p.featureCopy,
-              children: [(0, s.jsx)(o.X6q, {
+              children: [(0, a.jsx)(c.X6q, {
                 variant: "heading-md/semibold",
                 color: "text-strong",
                 children: j.intl.string(j.t["5hRbeH"])
-              }), (0, s.jsx)(o.xvT, {
+              }), (0, a.jsx)(c.xvT, {
                 variant: "text-sm/medium",
                 color: "text-muted",
                 children: j.intl.string(j.t["72sDuh"])
               })]
             })]
-          }), (0, s.jsxs)("div", {
+          }), (0, a.jsxs)("div", {
             className: p.feature,
-            children: [(0, s.jsx)("div", {
+            children: [(0, a.jsx)("div", {
               className: p.featureIcon,
-              children: (0, s.jsx)("img", {
+              children: (0, a.jsx)("img", {
                 src: v,
                 alt: ""
               })
-            }), (0, s.jsxs)("div", {
+            }), (0, a.jsxs)("div", {
               className: p.featureCopy,
-              children: [(0, s.jsx)(o.X6q, {
+              children: [(0, a.jsx)(c.X6q, {
                 variant: "heading-md/semibold",
                 color: "text-strong",
                 children: j.intl.string(j.t.MO4ASw)
-              }), (0, s.jsx)(o.xvT, {
+              }), (0, a.jsx)(c.xvT, {
                 variant: "text-sm/medium",
                 color: "text-muted",
                 children: j.intl.string(j.t.o4i2Wx)
               })]
             })]
           })]
-        }), (0, s.jsx)(o.zxk, {
+        }), (0, a.jsx)(c.zxk, {
           variant: "primary",
           text: j.intl.string(j.t.CekBHq),
           onClick: k,

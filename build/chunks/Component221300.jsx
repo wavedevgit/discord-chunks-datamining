@@ -12,7 +12,7 @@ var Chunk979554 = require("./979554.js"),
   Chunk566697 = require("./566697.jsx"),
   Chunk876917 = require("./876917.jsx"),
   Chunk688192 = require("./688192.jsx"),
-  Chunk889588 = require("./889588.js");
+  Chunk232644 = require("./232644.js");
 let d = 136,
   f = 200;
 
@@ -37,12 +37,12 @@ function p(e) {
     case i.Z.AVATAR_DECORATION:
       return (0, r.jsx)("div", {
         className: u.avatarDecorationPreview,
-        children: (0, r.jsx)(o.R, {
+        children: (0, r.jsx)(a.R, {
           item: m,
           user: n,
           isHighlighted: p,
           isPurchased: false,
-          avatarSize: a.EFr.SIZE_80
+          avatarSize: o.EFr.SIZE_80
         })
       });
     case i.Z.NAMEPLATE:

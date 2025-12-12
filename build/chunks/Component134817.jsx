@@ -1,7 +1,7 @@
 /** Chunk was on 29393 **/
 /** chunk id: 134817, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => d
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
   Chunk388032 = require("./388032.jsx");
-class m extends Chunk473749.Component {
+class p extends Chunk473749.Component {
   render() {
     let {
       user: e,
@@ -35,9 +35,9 @@ class m extends Chunk473749.Component {
     })
   }
 }
-let p = Chunk442837.ZP.connectStores([Chunk594174.default], () => {
+let d = Chunk442837.ZP.connectStores([Chunk594174.default], () => {
   let e = Chunk594174.default.getCurrentUser();
   return l()(null != module, "PremiumRequiredModal: user cannot be null"), {
     user: module
   }
-})(m)
+})(p)

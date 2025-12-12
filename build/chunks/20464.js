@@ -3,7 +3,7 @@
 "use strict";
 var Chunk840475 = require("./840475.js"),
   i = require("./1266.js").findLast,
-  a = Chunk840475.aTypedArray;
+  o = Chunk840475.aTypedArray;
 (0, Chunk840475.exportTypedArrayMethod)("findLast", function(e) {
-  return i(a(this), e, arguments.length > 1 ? arguments[1] : true)
+  return i(o(this), e, arguments.length > 1 ? arguments[1] : true)
 })

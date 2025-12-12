@@ -9,7 +9,7 @@ var Chunk147913 = require("./147913.js"),
 require("./987170.js");
 var Chunk998502 = require("./998502.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -49,7 +49,7 @@ function f() {
 }
 class p extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), o(this, "actions", {
+    super(...e), a(this, "actions", {
       POST_CONNECTION_OPEN: async () => {
         try {
           var e, t, n, r;

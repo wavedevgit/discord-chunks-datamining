@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 890977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   b: () => y
@@ -13,7 +13,7 @@ var i, r, Chunk54381 = require("./54381.js"),
   Chunk607070 = require("./607070.js"),
   Chunk484334 = require("./484334.js"),
   Chunk158877 = require("./158877.js"),
-  Chunk459140 = require("./459140.js");
+  Chunk505723 = require("./505723.js");
 
 function g(e) {
   let t = (0, d.e7)([p.Z], () => p.Z.useReducedMotion),
@@ -37,7 +37,7 @@ function b(e) {
     className: t
   } = e;
   return (0, l.jsx)("div", {
-    ref: g(i || (i = n.t(f, 2))),
+    ref: g(i || (i = n.t(h, 2))),
     className: s()(m.glow, t)
   })
 }
@@ -47,7 +47,7 @@ function C(e) {
     className: t
   } = e;
   return (0, l.jsx)("div", {
-    ref: g(r || (r = n.t(h, 2))),
+    ref: g(r || (r = n.t(f, 2))),
     className: s()(m.trinkets, t)
   })
 }

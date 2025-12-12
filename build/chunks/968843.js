@@ -97,9 +97,9 @@ function q() {
     },
     [t, n] = Chunk473749.useState(false),
     i = (0, Chunk442837.Wu)([Chunk616022.Z], () => [...Chunk616022.Z.quests.values()]),
-    a = (0, Chunk442837.Wu)([Chunk616022.Z], () => [...Chunk616022.Z.excludedQuests.values()]),
+    o = (0, Chunk442837.Wu)([Chunk616022.Z], () => [...Chunk616022.Z.excludedQuests.values()]),
     {
-      isFetchingCurrentQuests: o,
+      isFetchingCurrentQuests: a,
       lastFetchedCurrentQuests: s
     } = (0, Chunk442837.cj)([Chunk616022.Z], () => ({
       isFetchingCurrentQuests: Chunk616022.Z.isFetchingCurrentQuests,
@@ -130,14 +130,14 @@ function q() {
 }
 
 function Q(e, t, n) {
-  var r, i, a, o, s, l;
+  var r, i, o, a, s, l;
   let c = e.id === V.wF,
     u = t.id === V.wF,
     d = c && (null == (r = e.userStatus) ? true : r.completedAt) == null;
   if (d !== (u && (null == (i = t.userStatus) ? true : i.completedAt) == null)) return d ? K : z;
   let f = !(0, M.zi)(e),
-    p = (null == (a = e.userStatus) ? true : a.claimedAt) != null,
-    _ = (null == (o = t.userStatus) ? true : o.claimedAt) != null,
+    p = (null == (o = e.userStatus) ? true : o.claimedAt) != null,
+    _ = (null == (a = t.userStatus) ? true : a.claimedAt) != null,
     m = (null == (s = e.userStatus) ? true : s.enrolledAt) != null,
     h = (null == (l = t.userStatus) ? true : l.enrolledAt) != null,
     {
@@ -150,8 +150,8 @@ function Q(e, t, n) {
   if (f) {
     let {
       takeover: r
-    } = n, i = null != r && (0, F.P9)(r, e.id), a = null != r && (0, F.P9)(r, t.id);
-    return i !== a && (i || a) ? i ? K : z : g && O !== v && (O || v) ? O ? z : K : p !== _ ? p ? z : K : m !== h ? m ? K : z : eu(e.config.expiresAt, t.config.expiresAt, 1)
+    } = n, i = null != r && (0, F.P9)(r, e.id), o = null != r && (0, F.P9)(r, t.id);
+    return i !== o && (i || o) ? i ? K : z : g && O !== v && (O || v) ? O ? z : K : p !== _ ? p ? z : K : m !== h ? m ? K : z : eu(e.config.expiresAt, t.config.expiresAt, 1)
   }
   return p !== _ ? p ? K : z : m !== h ? m ? K : z : eu(e.config.expiresAt, t.config.expiresAt, 0)
 }
@@ -162,9 +162,9 @@ function X(e, t, n) {
 
 function J(e, t, n) {
   var r, i;
-  let a = null == (r = e.userStatus) ? true : r.enrolledAt,
-    o = null == (i = t.userStatus) ? true : i.enrolledAt;
-  return null == a && null == o ? eu(e.config.expiresAt, t.config.expiresAt, 0) : null != a && null == o ? K : null == a && null != o ? z : eu(a, o, 0)
+  let o = null == (r = e.userStatus) ? true : r.enrolledAt,
+    a = null == (i = t.userStatus) ? true : i.enrolledAt;
+  return null == o && null == a ? eu(e.config.expiresAt, t.config.expiresAt, 0) : null != o && null == a ? K : null == o && null != a ? z : eu(o, a, 0)
 }
 
 function $(e, t, n) {
@@ -229,17 +229,17 @@ function ei(e) {
   }
 }
 
-function ea(e, t, n) {
+function eo(e, t, n) {
   let r = ei(t);
   return 0 === n.length || n.some(t => r(e, t.filter))
 }
 
-function eo(e, t) {
+function ea(e, t) {
   if (0 === t.length) return e;
   let n = (0, i.groupBy)(t, "group");
   return e.filter(e => Object.entries(n).every(t => {
     let [n, r] = t;
-    return ea(e, n, r)
+    return eo(e, n, r)
   }))
 }
 
@@ -256,9 +256,9 @@ function ec(e) {
       sortMethod: n,
       filters: r
     } = t,
-    i = null == r || 0 === r.length ? e : eo(e, r),
-    a = ee(et(n), es());
-  return i.sort(a)
+    i = null == r || 0 === r.length ? e : ea(e, r),
+    o = ee(et(n), es());
+  return i.sort(o)
 }
 
 function eu(e, t, n) {
@@ -269,13 +269,13 @@ function eu(e, t, n) {
 function ed(e, t) {
   let n = r.useRef([]),
     i = r.useRef(t.sortMethod),
-    a = r.useRef(t.filters),
-    o = r.useRef(0);
+    o = r.useRef(t.filters),
+    a = r.useRef(0);
   return r.useMemo(() => {
     if (0 === e.length) return [];
-    if (n.current.length > 0 && o.current === e.length && i.current === t.sortMethod && a.current === t.filters) return n.current;
+    if (n.current.length > 0 && a.current === e.length && i.current === t.sortMethod && o.current === t.filters) return n.current;
     let r = ec(e, t).map(e => e.id);
-    return n.current = r, i.current = t.sortMethod, a.current = t.filters, o.current = e.length, r
+    return n.current = r, i.current = t.sortMethod, o.current = t.filters, a.current = e.length, r
   }, [e, t])
 }
 
@@ -311,25 +311,25 @@ function em(e) {
       quests: n,
       excludedQuests: r,
       isFetchingCurrentQuests: i,
-      hasFetched: a
+      hasFetched: o
     } = q({
       fetchPolicy: "cache-and-network",
       callerSource: "use_filtered_quests"
     }),
-    o = new Map(n.map(e => [e.id, e])),
+    a = new Map(n.map(e => [e.id, e])),
     s = ed(n, t),
     l = ef(n),
     c = [],
     u = [];
   for (let t of c = "all" === e ? s : l) {
-    let e = o.get(t);
+    let e = a.get(t);
     null != e && u.push(e)
   }
   return {
     quests: u,
     excludedQuests: r,
     isFetchingCurrentQuests: i,
-    hasFetched: a
+    hasFetched: o
   }
 }
 
@@ -359,13 +359,13 @@ function eb(e, t, n) {
       var e;
       return null != (e = m.Z.getChannel(null == t ? true : t.channelId)) ? e : null
     }),
-    a = (0, c.e7)([N.Z], () => null != N.Z.questEnrollmentBlockedUntil, []),
-    o = (0, c.e7)([g.default], () => {
+    o = (0, c.e7)([N.Z], () => null != N.Z.questEnrollmentBlockedUntil, []),
+    a = (0, c.e7)([g.default], () => {
       var e;
       return null == (e = g.default.getCurrentUser()) ? true : e.id
     }) === n,
     s = (0, c.e7)([N.Z], () => null != e && N.Z.isQuestExpired(e.id), [e]);
-  if (null == e || a || s || o) returnfalse;
+  if (null == e || o || s || a) returnfalse;
   let l = (null == (r = e.userStatus) ? true : r.claimedAt) != null,
     u = (0, F.Rc)(t, i);
   return !l || !!u
@@ -388,7 +388,7 @@ function ev(e) {
 }
 
 function eS(e) {
-  let t = (0, c.e7)([N.Z], () => N.Z.getOptimisticProgress(e.id, o.X.WATCH_VIDEO));
+  let t = (0, c.e7)([N.Z], () => N.Z.getOptimisticProgress(e.id, a.X.WATCH_VIDEO));
   return r.useMemo(() => (0, B.BM)(e), [e, t])
 }
 
@@ -402,18 +402,18 @@ let eT = 1,
   eC = e => {
     let t = r.useCallback(() => (0, Z.il)(e), [e]),
       [n, i] = r.useState(t()),
-      a = r.useCallback(() => i(t()), [t]),
-      o = eI(e);
+      o = r.useCallback(() => i(t()), [t]),
+      a = eI(e);
     return r.useEffect(() => {
       var t, n, r;
-      if ((null == (t = e.userStatus) ? true : t.enrolledAt) == null || (null == (n = e.userStatus) ? true : n.completedAt) != null || (null == (r = e.userStatus) ? true : r.claimedAt) != null || !o) return void a();
+      if ((null == (t = e.userStatus) ? true : t.enrolledAt) == null || (null == (n = e.userStatus) ? true : n.completedAt) != null || (null == (r = e.userStatus) ? true : r.claimedAt) != null || !a) return void o();
       let i = window.setInterval(() => {
-        a()
+        o()
       }, b.Z.Millis.SECOND * eT);
       return () => {
-        clearInterval(i), a()
+        clearInterval(i), o()
       }
-    }, [e, o, a]), n
+    }, [e, a, o]), n
   };
 
 function eA(e) {
@@ -426,21 +426,21 @@ let eN = e => {
     sourceQuestContent: r
   } = e, i = ej({
     quest: t
-  }), a = (0, A.WD)();
+  }), o = (0, A.WD)();
   return () => {
     i ? (0, U.gI)({
       quest: t
     }, {
       content: n,
       ctaContent: C.jZ.CONNECT_CONSOLE_LINK,
-      impressionId: null == a ? true : a.getId(),
+      impressionId: null == o ? true : o.getId(),
       sourceQuestContent: r
     }) : (0, U.V$)({
       quest: t
     }, {
       content: n,
       ctaContent: C.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
-      impressionId: null == a ? true : a.getId(),
+      impressionId: null == o ? true : o.getId(),
       sourceQuestContent: r
     })
   }
@@ -465,7 +465,7 @@ function eP() {
         continue
       }
       let e = null != exports.userStatus.claimedAt,
-        a = (0, Chunk862657.zE)(exports.userStatus, Chunk49436.jn.GIFT_INVENTORY_SETTINGS_BADGE);
+        o = (0, Chunk862657.zE)(exports.userStatus, Chunk49436.jn.GIFT_INVENTORY_SETTINGS_BADGE);
       if (!module && !Chunk278074) {
         Chunk473749.push(exports);
         continue
@@ -517,7 +517,7 @@ function ex() {
   })), {
     xboxAccounts: n,
     playstationAccounts: i,
-    xboxAndPlaystationAccounts: a
+    xboxAndPlaystationAccounts: o
   } = Chunk473749.useMemo(() => {
     let e = exports.filter(e => false === e.revoked),
       n = module.filter(e => e.type === H.ABu.XBOX),
@@ -541,8 +541,8 @@ let eL = e => {
       questId: t,
       preview: n,
       beforeRequest: i,
-      afterRequest: a
-    } = e, [o, l] = r.useState([]), [u, d] = r.useState(false), f = (0, c.e7)([h.Z], () => h.Z.getAccounts());
+      afterRequest: o
+    } = e, [a, l] = r.useState([]), [u, d] = r.useState(false), f = (0, c.e7)([h.Z], () => h.Z.getAccounts());
     return r.useEffect(() => {
       l(e => e.filter(e => e.type !== s.K.EXPIRED_CREDENTIAL))
     }, [f]), {
@@ -554,11 +554,11 @@ let eL = e => {
           e = await (0, T.CS)(t, n), l(e.errorHints)
         } finally {
           var r;
-          d(false), null == a || a(null != (r = null == e ? true : e.errorHints) ? r : [])
+          d(false), null == o || o(null != (r = null == e ? true : e.errorHints) ? r : [])
         }
-      }, [u, i, a, n, t]),
+      }, [u, i, o, n, t]),
       startingConsoleQuest: u,
-      errorHints: o
+      errorHints: a
     }
   },
   ej = e => {
@@ -573,7 +573,7 @@ let eL = e => {
     let {
       xboxAccounts: e,
       playstationAccounts: t
-    } = ex(), n = module.length > 0, r = exports.length > 0, i = require && !Chunk473749 || !require && Chunk473749, a = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_PLAYSTATION), o = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_XBOX), s = Chunk388032.intl.format(Chunk388032.t.beN4DG, {
+    } = ex(), n = module.length > 0, r = exports.length > 0, i = require && !Chunk473749 || !require && Chunk473749, o = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_PLAYSTATION), a = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_XBOX), s = Chunk388032.intl.format(Chunk388032.t.beN4DG, {
       psHelpdeskArticle: Chunk278074,
       xboxHelpdeskArticle: Chunk754700
     }), l = Chunk388032.intl.format(Chunk388032.t.HVS7nh, {
@@ -592,10 +592,10 @@ var ek = function(e) {
 function eU(e) {
   var t, n, r;
   let i = (null == (t = e.userStatus) ? true : t.enrolledAt) != null,
-    a = (null == (n = e.userStatus) ? true : n.completedAt) != null,
-    o = (null == (r = e.userStatus) ? true : r.claimedAt) != null,
+    o = (null == (n = e.userStatus) ? true : n.completedAt) != null,
+    a = (null == (r = e.userStatus) ? true : r.claimedAt) != null,
     s = eC(e).percentComplete > 0;
-  return o ? 4 : a ? 3 : s && i ? 2 : 1 * !!i
+  return a ? 4 : o ? 3 : s && i ? 2 : 1 * !!i
 }
 
 function eG(e) {
@@ -605,14 +605,14 @@ function eG(e) {
     } = eC(e),
     r = eA(e),
     i = null != r ? r.percentComplete : n,
-    a = 100 * i,
-    o = null != r ? "".concat(null == r ? true : r.progress, "/").concat(null == r ? true : r.target) : (0, v.T3)(t, i, {
+    o = 100 * i,
+    a = null != r ? "".concat(null == r ? true : r.progress, "/").concat(null == r ? true : r.target) : (0, v.T3)(t, i, {
       roundingMode: "floor"
     });
   return {
     completedRatio: i,
-    percentComplete: a,
-    completedRatioDisplay: o
+    percentComplete: o,
+    completedRatioDisplay: a
   }
 }
 
@@ -621,30 +621,30 @@ function eZ(e) {
 }
 
 function eF(e, t) {
-  let [n, i] = eZ(e.id), s = r.useMemo(() => (0, U.yH)(e), [e]), l = s.includes(V.cd.DESKTOP), c = s.includes(V.cd.CONSOLE), u = eO(e), d = ev(e), f = r.useMemo(() => (0, a.EQ)(t).with({
+  let [n, i] = eZ(e.id), s = r.useMemo(() => (0, U.yH)(e), [e]), l = s.includes(V.cd.DESKTOP), c = s.includes(V.cd.CONSOLE), u = eO(e), d = ev(e), f = r.useMemo(() => (0, o.EQ)(t).with({
     percentComplete: 0
   }, () => null).with({
-    taskType: o.X.PLAY_ON_DESKTOP
+    taskType: a.X.PLAY_ON_DESKTOP
   }, () => V.cd.DESKTOP).with({
-    taskType: o.X.PLAY_ON_DESKTOP_V2
+    taskType: a.X.PLAY_ON_DESKTOP_V2
   }, () => V.cd.DESKTOP).with({
-    taskType: o.X.PLAY_ACTIVITY
+    taskType: a.X.PLAY_ACTIVITY
   }, () => V.cd.DESKTOP).with({
-    taskType: o.X.WATCH_VIDEO
+    taskType: a.X.WATCH_VIDEO
   }, () => V.cd.DESKTOP).with({
-    taskType: o.X.WATCH_VIDEO_ON_MOBILE
+    taskType: a.X.WATCH_VIDEO_ON_MOBILE
   }, () => V.cd.DESKTOP).with({
-    taskType: o.X.STREAM_ON_DESKTOP
+    taskType: a.X.STREAM_ON_DESKTOP
   }, () => V.cd.DESKTOP).with({
-    taskType: o.X.PLAY_ON_XBOX
+    taskType: a.X.PLAY_ON_XBOX
   }, () => V.cd.CONSOLE).with({
-    taskType: o.X.PLAY_ON_PLAYSTATION
+    taskType: a.X.PLAY_ON_PLAYSTATION
   }, () => V.cd.CONSOLE).with({
-    taskType: o.X.ACHIEVEMENT_IN_GAME
+    taskType: a.X.ACHIEVEMENT_IN_GAME
   }, () => V.cd.DESKTOP).with({
-    taskType: o.X.ACHIEVEMENT_IN_ACTIVITY
+    taskType: a.X.ACHIEVEMENT_IN_ACTIVITY
   }, () => V.cd.DESKTOP).exhaustive(), [t]), p = u ? V.cd.DESKTOP : d ? V.cd.CONSOLE : null;
-  return [r.useMemo(() => (0, a.EQ)({
+  return [r.useMemo(() => (0, o.EQ)({
     lastPlatformProgress: f,
     currentProgressingPlatform: p,
     selectedPlatform: n
@@ -677,16 +677,16 @@ function eB(e) {
   var t, n;
   let r = eA(e),
     i = eC(e),
-    [a] = eF(e, i),
+    [o] = eF(e, i),
     s = eE(e),
     l = (null == (t = e.userStatus) ? true : t.enrolledAt) != null,
     c = (null == (n = e.userStatus) ? true : n.completedAt) != null,
     u = null == r,
-    d = o.T.DESKTOP.has(i.taskType) && i.percentComplete > 0,
+    d = a.T.DESKTOP.has(i.taskType) && i.percentComplete > 0,
     f = 0 === i.percentComplete,
-    p = l && !c && !s && u && (d || f && a === P.LI.DESKTOP),
+    p = l && !c && !s && u && (d || f && o === P.LI.DESKTOP),
     _ = (0, S.isWeb)() && p && !(0, U.Gd)(e),
-    m = (0, S.isMac)() && i.taskType === o.X.STREAM_ON_DESKTOP && p,
+    m = (0, S.isMac)() && i.taskType === a.X.STREAM_ON_DESKTOP && p,
     h = [];
   return m && h.push(W.intl.string(W.t.MFGxFM)), _ && h.push(W.intl.string(W.t.BV6xDm)), h
 }
@@ -701,27 +701,27 @@ function eH(e) {
     mode: t,
     questContent: n,
     sourceQuestContent: i,
-    questId: a
-  } = e, o = r.useRef(null);
+    questId: o
+  } = e, a = r.useRef(null);
   r.useEffect(() => {
-    null != a && o.current !== t && ((0, C.Ic)({
+    null != o && a.current !== t && ((0, C.Ic)({
       mode: t,
-      prevMode: o.current,
+      prevMode: a.current,
       questContent: n,
-      questId: a,
+      questId: o,
       sourceQuestContent: i
-    }), o.current = t)
-  }, [a, n, t, i]), r.useEffect(() => {
-    if (null != a) return () => {
+    }), a.current = t)
+  }, [o, n, t, i]), r.useEffect(() => {
+    if (null != o) return () => {
       (0, C.Ic)({
         mode: null,
-        prevMode: o.current,
+        prevMode: a.current,
         questContent: n,
-        questId: a,
+        questId: o,
         sourceQuestContent: i
       })
     }
-  }, [a, n, i])
+  }, [o, n, i])
 }
 
 function eY(e, t) {
@@ -739,9 +739,9 @@ function eW(e) {
     n = (0, G.Kr)(e),
     r = (0, G.FX)(e),
     i = (0, G._p)(e),
-    a = (0, G.f$)(e),
-    o = (0, c.e7)([g.default], () => g.default.getCurrentUser()),
-    s = (0, I.I5)(o, Y.PremiumTypes.TIER_2);
+    o = (0, G.f$)(e),
+    a = (0, c.e7)([g.default], () => g.default.getCurrentUser()),
+    s = (0, I.I5)(a, Y.PremiumTypes.TIER_2);
   if (null == n) return W.intl.formatToPlainString(W.t.l9uXL8, {
     decorationName: t
   });
@@ -763,7 +763,7 @@ function eW(e) {
     p = s ? l : d,
     _ = s ? u : f,
     m = i ? p : _;
-  return a ? m : W.intl.formatToPlainString(W.t.tTlItm, {
+  return o ? m : W.intl.formatToPlainString(W.t.tTlItm, {
     duration: n,
     decorationName: t
   })
@@ -790,8 +790,8 @@ let ez = () => (0, Chunk442837.Wu)([Chunk616022.Z], () => [...Chunk616022.Z.ques
     let n = (null == e ? true : e.userStatus) != null && (0, M.zE)(e.userStatus, P.jn.ACTIVITY_PANEL),
       r = eE(null != e ? e : null),
       i = (null == e || null == (t = e.userStatus) ? true : t.claimedAt) != null,
-      a = (0, c.e7)([N.Z], () => null != N.Z.questEnrollmentBlockedUntil, []);
-    return !n && !r && !i && !a
+      o = (0, c.e7)([N.Z], () => null != N.Z.questEnrollmentBlockedUntil, []);
+    return !n && !r && !i && !o
   },
   eX = () => {
     let e = (0, Chunk442837.Wu)([Chunk616022.Z], () => [...Chunk616022.Z.quests.values()]);
@@ -820,20 +820,20 @@ function e0(e) {
     selectedSortMethod: t,
     selectedFilters: n,
     numQuestsVisible: i
-  } = e, a = r.useRef(null), o = r.useRef(null);
+  } = e, o = r.useRef(null), a = r.useRef(null);
   r.useEffect(() => {
     E.default.track(H.rMx.QUEST_HOME_SORT_METHOD_CHANGED, {
       sort_method: t,
-      previous_sort_method: a.current
-    }), a.current = t
+      previous_sort_method: o.current
+    }), o.current = t
   }, [t]), r.useEffect(() => {
     var e;
     let t = n.map(e => e.filter);
     E.default.track(H.rMx.QUEST_HOME_FILTERS_CHANGED, {
       filters: t,
-      previous_filters: null != (e = o.current) ? e : [],
+      previous_filters: null != (e = a.current) ? e : [],
       num_quests_visible: i
-    }), o.current = t
+    }), a.current = t
   }, [n, i])
 }
 let e1 = e => {
@@ -846,8 +846,8 @@ let e1 = e => {
   },
   e3 = (e, t) => {
     var n, r, i;
-    let a = (null == (n = e.userStatus) ? true : n.completedAt) != null;
-    return (null == (r = e.userStatus) ? true : r.enrolledAt) != null && !a && Date.now() - new Date(null == (i = e.userStatus) ? true : i.enrolledAt).getTime() > t
+    let o = (null == (n = e.userStatus) ? true : n.completedAt) != null;
+    return (null == (r = e.userStatus) ? true : r.enrolledAt) != null && !o && Date.now() - new Date(null == (i = e.userStatus) ? true : i.enrolledAt).getTime() > t
   };
 
 function e2() {
@@ -855,7 +855,7 @@ function e2() {
     enabled: e
   } = Chunk937797.n0.useConfig({
     location: Chunk324805.dr.QUEST_HOME_DESKTOP
-  }), [t, n] = Chunk473749.useState(module), [i, a] = Chunk473749.useState(module), [o, s] = Chunk473749.useState(false), [l, u] = Chunk473749.useState(false), {
+  }), [t, n] = Chunk473749.useState(module), [i, o] = Chunk473749.useState(module), [a, s] = Chunk473749.useState(false), [l, u] = Chunk473749.useState(false), {
     isFetching: d,
     takeoverConfig: f
   } = (0, Chunk442837.cj)([Chunk616022.Z], () => ({

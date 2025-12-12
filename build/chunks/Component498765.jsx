@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
-  Chunk876043 = require("./876043.js");
+  o = require.n(Chunk120356),
+  Chunk803052 = require("./803052.js");
 let s = e => {
   let {
     lifted: t = false
@@ -20,8 +20,8 @@ let s = e => {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
     preserveAspectRatio: "none",
-    className: a()(o.root, {
-      [o.lifted]: t
+    className: o()(a.root, {
+      [a.lifted]: t
     }),
     children: [(0, r.jsx)("path", {
       d: "M1175.02 650.847C567.943 650.847 449.538 793 0 793V0H2338V529.841C1912.54 529.841 1705.84 650.847 1175.02 650.847Z",
@@ -35,19 +35,19 @@ let s = e => {
         y2: "975.136",
         gradientUnits: "userSpaceOnUse",
         children: [(0, r.jsx)("stop", {
-          className: o.stop1
+          className: a.stop1
         }), (0, r.jsx)("stop", {
           offset: "0.339235",
-          className: o.stop2
+          className: a.stop2
         }), (0, r.jsx)("stop", {
           offset: "0.492065",
-          className: o.stop3
+          className: a.stop3
         }), (0, r.jsx)("stop", {
           offset: "0.823236",
-          className: o.stop4
+          className: a.stop4
         }), (0, r.jsx)("stop", {
           offset: "0.899558",
-          className: o.stop5
+          className: a.stop5
         })]
       })
     })]

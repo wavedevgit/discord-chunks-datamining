@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 738672, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => d
@@ -18,21 +18,21 @@ function d(e) {
     dismissed: n,
     onDismiss: d,
     renderComponent: p,
-    nudgeAlignIntoViewport: f = false,
-    skipForceHide: h = false
-  } = e, m = r.useContext(c.h9), [g, b] = r.useState(""), [C, y] = r.useState(false), v = (0, l.e7)([s.ZP], () => s.ZP.callHeaderHeight), O = r.useRef(null), x = r.useRef(0);
+    nudgeAlignIntoViewport: h = false,
+    skipForceHide: f = false
+  } = e, m = r.useContext(c.h9), [g, b] = r.useState(""), [C, y] = r.useState(false), v = (0, l.e7)([s.ZP], () => s.ZP.callHeaderHeight), _ = r.useRef(null), O = r.useRef(0);
   r.useEffect(() => {
     let e = t.current;
     if (null != e) return e.addEventListener("click", d), () => e.removeEventListener("click", d)
   }), r.useEffect(() => {
-    if (!h) {
+    if (!f) {
       var e, t;
-      b(String(x.current)), y(true !== v && v < (null != (t = null == (e = O.current) ? true : e.clientHeight) ? t : 300) + 24), x.current += 1
+      b(String(O.current)), y(true !== v && v < (null != (t = null == (e = _.current) ? true : e.clientHeight) ? t : 300) + 24), O.current += 1
     }
-  }, [v, O, h]);
+  }, [v, _, f]);
   let {
-    preventIdle: E,
-    allowIdle: j
+    preventIdle: x,
+    allowIdle: E
   } = (0, u.Y)("popup");
   return (null == t ? true : t.current) == null ? null : (0, i.jsx)(o.ZP, {
     children: (0, i.jsx)(a.jRF, {
@@ -41,13 +41,13 @@ function d(e) {
       align: "center",
       spacing: 0,
       positionKey: g,
-      nudgeAlignIntoViewport: f,
+      nudgeAlignIntoViewport: h,
       children: () => (0, i.jsx)("div", {
-        ref: O,
-        onMouseOver: E,
-        onFocus: E,
-        onBlur: j,
-        onMouseLeave: j,
+        ref: _,
+        onMouseOver: x,
+        onFocus: x,
+        onBlur: E,
+        onMouseLeave: E,
         children: p({
           hidden: C || m || n,
           onDismiss: d

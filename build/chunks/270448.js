@@ -13,7 +13,7 @@ function i() {
   }).apply(this, arguments)
 }
 
-function a(e, t) {
+function o(e, t) {
   e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
 }
 var Chunk127854 = require("./127854.js"),
@@ -24,7 +24,7 @@ module.exports = function(e) {
   function t() {
     return e.apply(this, arguments) || this
   }
-  a(t, e);
+  o(t, e);
   var n = t.prototype;
   return n.shouldComponentUpdate = function(e) {
     var t = this.props.editorState,
@@ -32,15 +32,15 @@ module.exports = function(e) {
     if (t.getDirectionMap() !== n.getDirectionMap() || t.getSelection().getHasFocus() !== n.getSelection().getHasFocus()) returntrue;
     var r = n.getNativelyRenderedContent(),
       i = t.isInCompositionMode(),
-      a = n.isInCompositionMode();
-    if (t === n || null !== r && n.getCurrentContent() === r || i && a) returnfalse;
-    var o = t.getCurrentContent(),
+      o = n.isInCompositionMode();
+    if (t === n || null !== r && n.getCurrentContent() === r || i && o) returnfalse;
+    var a = t.getCurrentContent(),
       s = n.getCurrentContent(),
       l = t.getDecorator(),
       c = n.getDecorator();
-    return i !== a || o !== s || l !== c || n.mustForceSelection()
+    return i !== o || a !== s || l !== c || n.mustForceSelection()
   }, n.render = function() {
-    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, a = e.customStyleMap, u = e.customStyleFn, d = e.editorState, f = e.editorKey, p = e.textDirectionality, _ = d.getCurrentContent(), m = d.getSelection(), h = d.mustForceSelection(), g = d.getDecorator(), E = c(d.getDirectionMap()), b = _.getBlocksAsArray()[0], y = [], O = b; O;) {
+    for (var e = this.props, t = e.blockRenderMap, n = e.blockRendererFn, r = e.blockStyleFn, o = e.customStyleMap, u = e.customStyleFn, d = e.editorState, f = e.editorKey, p = e.textDirectionality, _ = d.getCurrentContent(), m = d.getSelection(), h = d.mustForceSelection(), g = d.getDecorator(), E = c(d.getDirectionMap()), b = _.getBlocksAsArray()[0], y = [], O = b; O;) {
       var v = O.getKey(),
         S = {
           blockRenderMap: t,
@@ -48,7 +48,7 @@ module.exports = function(e) {
           blockStyleFn: r,
           contentState: _,
           customStyleFn: u,
-          customStyleMap: a,
+          customStyleMap: o,
           decorator: g,
           editorKey: f,
           editorState: d,
@@ -60,7 +60,7 @@ module.exports = function(e) {
         },
         I = (t.get(O.getType()) || t.get("unstyled")).wrapper;
       y.push({
-        block: l.createElement(o, i({
+        block: l.createElement(a, i({
           key: v
         }, S)),
         wrapperTemplate: I,

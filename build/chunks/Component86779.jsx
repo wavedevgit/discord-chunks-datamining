@@ -21,14 +21,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk970648 = require("./970648.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk646030 = require("./646030.js");
-let b = "mweb_handoff_nonce",
-  j = "mweb_handoff_nonce_expiration",
+  Chunk78224 = require("./78224.js");
+let j = "mweb_handoff_nonce",
+  b = "mweb_handoff_nonce_expiration",
   I = +Chunk70956.Z.Millis.MINUTE,
   N = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
   y = new Set(["deep_link_failed"]),
   S = () => {
-    Chunk433517.K.remove(b), Chunk433517.K.remove(j)
+    Chunk433517.K.remove(j), Chunk433517.K.remove(b)
   },
   C = () => {
     let e = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getFingerprint()),
@@ -36,7 +36,7 @@ let b = "mweb_handoff_nonce",
         fingerprint: t,
         handoff_token: n
       } = (0, Chunk593473.parse)(window.location.search),
-      p = Array.isArray(exports) ? exports.length > 1 ? exports[0] : null : exports,
+      f = Array.isArray(exports) ? exports.length > 1 ? exports[0] : null : exports,
       C = null != Chunk70956 ? Chunk70956 : null !== module ? module : true;
     Chunk473749.useEffect(() => {
       null !== Chunk70956 && module !== Chunk70956 && Chunk570140.Z.dispatch({
@@ -45,16 +45,16 @@ let b = "mweb_handoff_nonce",
       })
     }, [Chunk70956, module]);
     let [O, T] = Chunk473749.useState(null), A = Chunk473749.useCallback(e => {
-      T(e), m.default.track(_.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
+      T(e), p.default.track(x.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
         reason: e,
-        fingerprint: (0, a.K)(C)
+        fingerprint: (0, l.K)(C)
       }, {
         fingerprint: C
       })
-    }, [T, C]), Z = Chunk433517.K.get(b);
+    }, [T, C]), Z = Chunk433517.K.get(j);
     if ("null" === require && null === O && A("deep_link_failed"), null != require && "null" !== require && null == Z && null === O && A("nonce_missing"), Chunk473749.useEffect(() => {
         if (null != Z) {
-          let e = Chunk433517.K.get(j);
+          let e = Chunk433517.K.get(b);
           (null == module || Date.now() >= module) && (A("nonce_expired"), S())
         }
       }, [Z, A]), Chunk473749.useEffect(() => {
@@ -65,7 +65,7 @@ let b = "mweb_handoff_nonce",
             handoff_token: require
           },
           rejectWithError: true
-        }).then(e => f.Z.loginToken(e.body.token, false)).then(() => {
+        }).then(e => g.Z.loginToken(e.body.token, false)).then(() => {
           Chunk626135.default.track(Chunk981631.rMx.LOGIN_SUCCESSFUL, {
             source: Chunk981631.uRl.MOBILE_WEB_HANDOFF,
             is_new_user: false,
@@ -84,14 +84,14 @@ let b = "mweb_handoff_nonce",
       children: [Chunk388032.intl.string(Chunk388032.t.uJ1JsY), (0, Chunk54381.jsx)("br", {}), Chunk388032.intl.string(Chunk388032.t.GHVWAs)]
     }) : y.has(O) ? Chunk388032.intl.string(Chunk388032.t.EPt55r) : N.has(O) ? Chunk388032.intl.string(Chunk388032.t.g87kTp) : true;
     return null != O && y.has(O) ? (0, Chunk54381.jsx)("div", {
-      className: Chunk646030.errorContainer,
+      className: Chunk78224.errorContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         color: "interactive-text-default",
         variant: "text-sm/semibold",
         children: P
       })
     }) : (0, Chunk54381.jsxs)("div", {
-      className: Chunk646030.container,
+      className: Chunk78224.container,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/semibold",
         children: P
@@ -99,7 +99,7 @@ let b = "mweb_handoff_nonce",
         color: Chunk755721.zx.Colors.BRAND_INVERTED,
         onClick: () => {
           let e = Chunk970648.Z.generateNonce();
-          Chunk433517.K.set(b, module), Chunk433517.K.set(j, Date.now() + I);
+          Chunk433517.K.set(j, module), Chunk433517.K.set(b, Date.now() + I);
           let t = new URL(Chunk981631.x0X),
             n = new URLSearchParams(window.location.search);
           require.delete("fingerprint"), require.delete("handoff_token");
@@ -114,7 +114,7 @@ let b = "mweb_handoff_nonce",
           }), window.location.href = exports.toString()
         },
         children: (0, Chunk54381.jsx)(Chunk481060.Text, {
-          className: Chunk646030.buttonText,
+          className: Chunk78224.buttonText,
           variant: "text-sm/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.NcC759)
         })

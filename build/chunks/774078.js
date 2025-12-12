@@ -13,11 +13,11 @@ function s(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1e3,
     n = arguments.length > 2 ? arguments[2] : true,
     s = arguments.length > 3 && true !== arguments[3] && arguments[3],
-    l = (0, a.TD)(Date.now(), e),
+    l = (0, o.TD)(Date.now(), e),
     c = (0, i.Z)(),
     u = (0, r.useCallback)(() => {
-      let t = (0, a.TD)(Date.now(), e);
+      let t = (0, o.TD)(Date.now(), e);
       0 === t.days && 0 === t.hours && 0 === t.minutes && 0 === t.seconds || s || (c(), null == n || n())
     }, [e, s, c, n]);
-  return (0, o.Z)(u, s ? null : t), l
+  return (0, a.Z)(u, s ? null : t), l
 }

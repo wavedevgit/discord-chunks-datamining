@@ -7,26 +7,26 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
   Chunk889989 = require("./889989.jsx"),
-  Chunk373191 = require("./373191.js");
+  Chunk617374 = require("./617374.js");
 
 function u(e) {
   let t, {
     applicationId: n,
     storeListingBenefits: i,
-    skuBenefits: a,
-    className: o
+    skuBenefits: o,
+    className: a
   } = e;
   return null != i ? t = i.map(e => (0, r.jsx)(f, {
     applicationId: n,
     benefit: e,
-    className: o
-  }, e.id)) : null != a && (t = a.map((e, t) => (0, r.jsx)(d, {
+    className: a
+  }, e.id)) : null != o && (t = o.map((e, t) => (0, r.jsx)(d, {
     benefit: e,
-    className: o
+    className: a
   }, t))), t
 }
 
@@ -40,9 +40,9 @@ function d(e) {
     nameTextColor: d = "text-strong"
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(c.container, n),
+    className: o()(c.container, n),
     children: [null != t.emoji && (0, r.jsx)("div", {
-      className: a()(c.emojiContainer, i),
+      className: o()(c.emojiContainer, i),
       children: (0, r.jsx)(s.Z, {
         emojiId: t.emoji.id,
         emojiName: t.emoji.name,
@@ -50,12 +50,12 @@ function d(e) {
       })
     }), (0, r.jsxs)("div", {
       className: c.infoContainer,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(a.Text, {
         variant: u,
         color: d,
         className: c.name,
         children: t.name
-      }), l && (0, r.jsx)(o.Text, {
+      }), l && (0, r.jsx)(a.Text, {
         color: "interactive-text-default",
         variant: "text-sm/normal",
         children: t.description
@@ -75,18 +75,18 @@ function f(e) {
     nameTextColor: f = "text-strong"
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(c.container, i),
+    className: o()(c.container, i),
     children: [(0, r.jsx)("div", {
-      className: a()(c.emojiContainer, s),
+      className: o()(c.emojiContainer, s),
       children: (0, l.n)(t, n.icon)
     }), (0, r.jsxs)("div", {
       className: c.infoContainer,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(a.Text, {
         variant: d,
         color: f,
         className: c.name,
         children: n.name
-      }), u && (0, r.jsx)(o.Text, {
+      }), u && (0, r.jsx)(a.Text, {
         color: "interactive-text-default",
         variant: "text-sm/normal",
         children: n.description

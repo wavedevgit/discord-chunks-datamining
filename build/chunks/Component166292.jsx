@@ -7,15 +7,15 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk36361 = require("./36361.jsx"),
-  Chunk673843 = require("./673843.js");
+  Chunk696638 = require("./696638.js");
 
 function s(e) {
   let {
     node: t
   } = e;
   return (0, r.jsx)("div", {
-    className: o.split,
-    children: t.layout.map(e => (0, r.jsx)(a.Z, {
+    className: a.split,
+    children: t.layout.map(e => (0, r.jsx)(o.Z, {
       node: e
     }, e.key))
   })

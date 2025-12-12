@@ -5,7 +5,7 @@ var Chunk492476 = require("./492476.js"),
   Chunk381538 = require("./381538.js"),
   Chunk26018 = require("./26018.js");
 
-function o(e) {
+function a(e) {
   switch (e.arrayFormat) {
     case "index":
       return function(t, n, r) {
@@ -78,14 +78,14 @@ exports.extract = function(e) {
   return "string" == typeof e && (e = e.trim().replace(/^(\?|#|&)/, "")) ? (e.split("&").forEach(function(e) {
     var t = e.replace(/\+/g, " ").split("="),
       i = t.shift(),
-      o = t.length > 0 ? t.join("=") : true;
-    o = true === o ? null : a(o), n(a(i), o, r)
+      a = t.length > 0 ? t.join("=") : true;
+    a = true === a ? null : o(a), n(o(i), a, r)
   }), Object.keys(r).sort().reduce(function(e, t) {
     var n = r[t];
     return n && "object" == typeof n && !Array.isArray(n) ? e[t] = c(n) : e[t] = n, e
   }, Object.create(null))) : r
 }, exports.stringify = function(e, t) {
-  var n = o(t = i({
+  var n = a(t = i({
     encode: true,
     strict: true,
     arrayFormat: "none"
@@ -95,10 +95,10 @@ exports.extract = function(e) {
     if (true === i) return "";
     if (null === i) return l(r, t);
     if (Array.isArray(i)) {
-      var a = [];
+      var o = [];
       return i.slice().forEach(function(e) {
-        true !== e && a.push(n(r, e, a.length))
-      }), a.join("&")
+        true !== e && o.push(n(r, e, o.length))
+      }), o.join("&")
     }
     return l(r, t) + "=" + l(i, t)
   }).filter(function(e) {

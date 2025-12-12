@@ -1,8 +1,8 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 769998, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,66 +16,66 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk590433 = require("./590433.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk239244 = require("./239244.js");
+  Chunk464992 = require("./464992.js");
 
-function b(e) {
+function f(e) {
   var t;
   let {
     action: n,
-    triggerType: b,
-    guildId: p,
-    toggled: h,
-    onToggleAction: x
-  } = e, j = e => () => x(e), v = (0, c.c)(n.type, n, b), O = null == (t = n.metadata) ? true : t.durationSeconds, C = null != O ? (0, g.getFriendlyDurationString)(O) : null, y = (0, i.e7)([o.Z, s.Z], () => o.Z.can(u.Plq.MODERATE_MEMBERS, s.Z.getGuild(p)), [p]);
-  if (null == v) return null;
+    triggerType: f,
+    guildId: h,
+    toggled: x,
+    onToggleAction: b
+  } = e, j = e => () => b(e), _ = (0, c.c)(n.type, n, f), v = null == (t = n.metadata) ? true : t.durationSeconds, O = null != v ? (0, g.getFriendlyDurationString)(v) : null, C = (0, i.e7)([o.Z, a.Z], () => o.Z.can(d.Plq.MODERATE_MEMBERS, a.Z.getGuild(h)), [h]);
+  if (null == _) return null;
   let {
-    headerText: N,
-    descriptionText: E,
-    icon: I
-  } = v;
+    headerText: y,
+    descriptionText: N,
+    icon: E
+  } = _;
   return (0, r.jsxs)("div", {
-    className: m.actionContainer,
+    className: p.actionContainer,
     children: [(0, r.jsx)("div", {
-      className: m.actionIconContainer,
-      children: (0, r.jsx)(I, {
+      className: p.actionIconContainer,
+      children: (0, r.jsx)(E, {
         size: "md",
         color: "currentColor",
-        className: m.actionIcon
+        className: p.actionIcon
       })
     }), (0, r.jsxs)("div", {
-      className: m.actionTextContainer,
-      children: [(0, r.jsx)(a.Heading, {
+      className: p.actionTextContainer,
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-sm/semibold",
+        children: y
+      }), (0, r.jsx)(s.Text, {
+        color: "interactive-text-default",
+        variant: "text-xs/medium",
         children: N
-      }), (0, r.jsx)(a.Text, {
+      }), x && (0, r.jsxs)(s.Text, {
         color: "interactive-text-default",
         variant: "text-xs/medium",
-        children: E
-      }), h && (0, r.jsxs)(a.Text, {
-        color: "interactive-text-default",
-        variant: "text-xs/medium",
-        children: [null === C ? null : b === d.fX.MENTION_SPAM ? f.intl.format(f.t.i3lsKD, {
-          friendlyDurationString: C
-        }) : f.intl.format(f.t.mvHxze, {
-          friendlyDurationString: C
-        }), y && (0, r.jsx)(a.P3F, {
+        children: [null === O ? null : f === u.fX.MENTION_SPAM ? m.intl.format(m.t.i3lsKD, {
+          friendlyDurationString: O
+        }) : m.intl.format(m.t.mvHxze, {
+          friendlyDurationString: O
+        }), C && (0, r.jsx)(s.P3F, {
           onClick: j(true),
-          className: m.editChannel,
+          className: p.editChannel,
           tag: "span",
           role: "link",
-          children: f.intl.string(f.t["0B95RJ"])
+          children: m.intl.string(m.t["0B95RJ"])
         })]
       })]
     }), (0, r.jsx)(l.u, {
-      text: f.intl.format(f.t.wx6Vb9, {}),
-      "aria-label": f.intl.formatToMarkdownString(f.t.wx6Vb9, {}),
-      shouldShow: !y,
+      text: m.intl.format(m.t.wx6Vb9, {}),
+      "aria-label": m.intl.formatToMarkdownString(m.t.wx6Vb9, {}),
+      shouldShow: !C,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(a.P3F, {
-          onClick: y ? j(false) : true,
-          children: (0, r.jsx)(a.FZ5, {
-            checked: h,
-            disabled: !y
+        children: (0, r.jsx)(s.P3F, {
+          onClick: C ? j(false) : true,
+          children: (0, r.jsx)(s.FZ5, {
+            checked: x,
+            disabled: !C
           })
         })
       })

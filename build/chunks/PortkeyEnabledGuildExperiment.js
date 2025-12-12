@@ -2,7 +2,7 @@
 /** chunk id: 755458, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  BU: () => a,
+  BU: () => o,
   u7: () => r,
   v$: () => i
 });
@@ -31,7 +31,7 @@ function i(e, t) {
   }).enabled
 }
 
-function a(e, t) {
+function o(e, t) {
   return r.useExperiment({
     guildId: e,
     location: t

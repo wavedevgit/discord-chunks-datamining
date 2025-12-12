@@ -25,8 +25,8 @@ function g(e, t, n) {
 }
 let h = 10 * Chunk70956.Z.Millis.SECOND,
   m = new Map,
-  b = new Set,
-  _ = (e, t, n) => {
+  _ = new Set,
+  b = (e, t, n) => {
     n([u.Z.CLOSE, t], e)
   };
 class E extends Chunk836560.EventEmitter {
@@ -70,7 +70,7 @@ class E extends Chunk836560.EventEmitter {
       let {
         id: t
       } = e;
-      b.add(t), this.handshakeFailureTimeoutId = setTimeout(() => {
+      _.add(t), this.handshakeFailureTimeoutId = setTimeout(() => {
         Array.from(i.ZP.getSelfEmbeddedActivities().entries()).forEach(e => {
           let [t, n] = e;
           a.default.track(f.rMx.ACTIVITY_HANDSHAKE_TIMED_OUT, {
@@ -86,7 +86,7 @@ class E extends Chunk836560.EventEmitter {
       let {
         id: n
       } = e;
-      b.delete(n);
+      _.delete(n);
       let [r, i] = null != (t = Array.from(m.entries()).find(e => {
         let [t, r] = e;
         return r.frameId === n
@@ -104,7 +104,7 @@ class E extends Chunk836560.EventEmitter {
         null != r ? this.disconnectSocket(r, {
           code: e.code,
           message: e.message
-        }, true) : _(t, {
+        }, true) : b(t, {
           code: e.code,
           message: e.message
         }, n)
@@ -141,7 +141,7 @@ class E extends Chunk836560.EventEmitter {
         }, e.message)
       }
       let s = t.frame_id;
-      if (!b.has(s)) throw this.logger.error("Unrecognized frame ID ".concat(s)), new c.Z({
+      if (!_.has(s)) throw this.logger.error("Unrecognized frame ID ".concat(s)), new c.Z({
         closeCode: f.$VG.CLOSE_UNSUPPORTED
       }, "Unrecognized frame ID ".concat(s));
       null != t.sdk_version && a.default.track(f.rMx.ACTIVITY_HANDSHAKE, {
@@ -156,7 +156,7 @@ class E extends Chunk836560.EventEmitter {
           frameId: s,
           version: Number(t.v),
           logger: this.logger,
-          postClose: _,
+          postClose: b,
           encoding: null != (o = t.encoding) ? o : "json"
         })
       } catch (e) {
@@ -164,10 +164,10 @@ class E extends Chunk836560.EventEmitter {
       }
       this.logger.info("Socket Opened: ".concat(i.id));
       try {
-        if (await this.validateSocketClient(i, e, t.client_id), !b.has(s)) throw this.logger.error("Frame ID ".concat(s, " no longer exists")), new c.Z({
+        if (await this.validateSocketClient(i, e, t.client_id), !_.has(s)) throw this.logger.error("Frame ID ".concat(s, " no longer exists")), new c.Z({
           closeCode: f.$VG.CLOSE_UNSUPPORTED
         }, "Unrecognized frame ID ".concat(s));
-        m.set(e, i), b.delete(s), i.authorization.scopes.push(p.b_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
+        m.set(e, i), _.delete(s), i.authorization.scopes.push(p.b_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
       } catch (e) {
         throw this.logger.info("Socket Closed: ".concat(i.id, ", ").concat(e.message)), e
       }

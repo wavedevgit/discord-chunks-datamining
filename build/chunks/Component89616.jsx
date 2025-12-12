@@ -1,5 +1,5 @@
 /** Chunk was on 804 **/
-/** chunk id: 89616, original params: e,t,n (module,exports,require) **/
+/** chunk id: 89616, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   default: () => o
 }), require("./388685.js");
@@ -8,31 +8,31 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk365007 = require("./365007.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk676641 = require("./676641.js");
+  Chunk463373 = require("./463373.js");
 
-function o(e) {
+function o(t) {
   let {
-    transitionState: t,
+    transitionState: e,
     onClose: n,
     credential: o
-  } = e, [d, u] = s.useState(false), [f, h] = s.useState(""), [b, m] = s.useState(true), x = s.useRef(null);
-  async function p(e) {
-    e.preventDefault(), u(true);
+  } = t, [d, u] = s.useState(false), [h, m] = s.useState(""), [x, p] = s.useState(true), f = s.useRef(null);
+  async function g(t) {
+    t.preventDefault(), u(true);
     try {
-      await (0, i.WQ)(o.id, f), n()
-    } catch (e) {
-      m(e.message)
+      await (0, i.WQ)(o.id, h), n()
+    } catch (t) {
+      p(t.message)
     } finally {
       u(false)
     }
   }
   return s.useEffect(() => {
-    if (t === l.Dvm.ENTERED) {
-      var e;
-      null == (e = x.current) || e.focus()
+    if (e === l.Dvm.ENTERED) {
+      var t;
+      null == (t = f.current) || t.focus()
     }
-  }, [t]), (0, a.jsxs)(l.Y0X, {
-    transitionState: t,
+  }, [e]), (0, a.jsxs)(l.Y0X, {
+    transitionState: e,
     parentComponent: "EditCredentialModal",
     children: [(0, a.jsxs)(l.xBx, {
       separator: false,
@@ -47,21 +47,21 @@ function o(e) {
         className: c.modalCloseButton
       })]
     }), (0, a.jsxs)("form", {
-      onSubmit: p,
+      onSubmit: g,
       children: [(0, a.jsx)(l.hzk, {
         className: c.content,
         children: (0, a.jsx)(l.oil, {
           label: r.intl.string(r.t["7yEgJY"]),
-          inputRef: x,
+          inputRef: f,
           "aria-label": r.intl.string(r.t["7yEgJY"]),
           placeholder: o.name,
-          value: f,
+          value: h,
           minLength: 1,
           maxLength: 32,
-          onChange: h,
+          onChange: m,
           autoFocus: true,
           required: true,
-          error: b
+          error: x
         })
       }), (0, a.jsxs)(l.mzw, {
         children: [(0, a.jsx)(l.Button, {
@@ -69,7 +69,7 @@ function o(e) {
           text: r.intl.string(r.t.i4jeWR),
           type: "submit",
           loading: d,
-          disabled: 0 === f.length || f.length > 32
+          disabled: 0 === h.length || h.length > 32
         }), (0, a.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: c.cancel,

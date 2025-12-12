@@ -77,11 +77,11 @@ function m(e) {
     children: t,
     spring: n,
     className: i,
-    style: o
+    style: a
   } = e;
-  return (0, r.jsx)(a.animated.div, {
+  return (0, r.jsx)(o.animated.div, {
     className: i,
-    style: l({}, n, o),
+    style: l({}, n, a),
     children: t
   })
 }
@@ -91,7 +91,7 @@ function h() {
     [t, n] = (0, Chunk473749.useState)([]),
     r = exports.map((e, n) => t.length <= 1 ? -c : Math.max(0, p(n / (t.length - 1) * d, u) - c));
   (0, Chunk467721.useChain)(exports, Chunk54381);
-  let o = (0, Chunk473749.useCallback)(t => {
+  let a = (0, Chunk473749.useCallback)(t => {
     e.current.add(t)
   }, []);
   (0, Chunk473749.useEffect)(() => {

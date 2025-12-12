@@ -12,20 +12,20 @@ var Chunk755721 = require("./755721.js"),
   Chunk391110 = require("./391110.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk548768 = require("./548768.js");
+  Chunk677599 = require("./677599.js");
 let d = e => {
   let {
     setIsAllPerksVisible: t,
     previousComponent: n
   } = e;
-  return (0, r.jsx)(a.gtL, {
+  return (0, r.jsx)(o.gtL, {
     "data-migration-pending": true,
     color: i.Tt.CUSTOM,
     onlyShineOnHover: true,
-    shineSize: a.rHe.SMALL,
+    shineSize: o.rHe.SMALL,
     className: u.seeAllPerksButton,
     onClick: () => {
-      t(true), o.default.track(l.rMx.NITRO_HOME_NAVIGATION, {
+      t(true), a.default.track(l.rMx.NITRO_HOME_NAVIGATION, {
         current_component: n,
         next_component: s.MQ.SEE_ALL,
         interaction_component: "See All Button"
@@ -33,7 +33,7 @@ let d = e => {
     },
     children: (0, r.jsxs)("div", {
       className: u.seeAllPerksButtonContent,
-      children: [c.intl.string(c.t["37C26f"]), (0, r.jsx)(a.Fbu, {
+      children: [c.intl.string(c.t["37C26f"]), (0, r.jsx)(o.Fbu, {
         color: "currentColor"
       })]
     })

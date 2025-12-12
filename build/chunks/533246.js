@@ -15,20 +15,20 @@ let s = 1e3;
 
 function l(e, t) {
   switch (e) {
-    case a.Si.TIER_0:
-      return t.days > 0 ? o.intl.formatToPlainString(o.t.sP5OqC, {
+    case o.Si.TIER_0:
+      return t.days > 0 ? a.intl.formatToPlainString(a.t.sP5OqC, {
         days: t.days
-      }) : t.hours > 0 ? o.intl.formatToPlainString(o.t["7Lhfu7"], {
+      }) : t.hours > 0 ? a.intl.formatToPlainString(a.t["7Lhfu7"], {
         hours: t.hours
-      }) : o.intl.formatToPlainString(o.t.coDiS0, {
+      }) : a.intl.formatToPlainString(a.t.coDiS0, {
         minutes: Math.max(t.minutes, 1)
       });
-    case a.Si.TIER_2:
-      return t.days > 0 ? o.intl.formatToPlainString(o.t["4prs5b"], {
+    case o.Si.TIER_2:
+      return t.days > 0 ? a.intl.formatToPlainString(a.t["4prs5b"], {
         days: t.days
-      }) : t.hours > 0 ? o.intl.formatToPlainString(o.t.OD5nIR, {
+      }) : t.hours > 0 ? a.intl.formatToPlainString(a.t.OD5nIR, {
         hours: t.hours
-      }) : o.intl.formatToPlainString(o.t.rvyXjD, {
+      }) : a.intl.formatToPlainString(a.t.rvyXjD, {
         minutes: Math.max(t.minutes, 1)
       });
     default:
@@ -39,8 +39,8 @@ let c = e => {
   var t;
   let n = e.expires_at,
     i = (0, r.Z)(null != n ? Date.parse(n) : 0, s),
-    a = null == e || null == (t = e.subscription_trial) ? true : t.sku_id;
-  return null == n || null == a ? null : l(a, i)
+    o = null == e || null == (t = e.subscription_trial) ? true : t.sku_id;
+  return null == n || null == o ? null : l(o, i)
 };
 
 function u(e, t) {
@@ -49,13 +49,13 @@ function u(e, t) {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0
   }).format(t / 100);
-  return e.days > 0 ? o.intl.formatToPlainString(o.t["7mw8CZ"], {
+  return e.days > 0 ? a.intl.formatToPlainString(a.t["7mw8CZ"], {
     days: e.days,
     discountPercentage: n
-  }) : e.hours > 0 ? o.intl.formatToPlainString(o.t["0hYT6o"], {
+  }) : e.hours > 0 ? a.intl.formatToPlainString(a.t["0hYT6o"], {
     hours: e.hours,
     discountPercentage: n
-  }) : o.intl.formatToPlainString(o.t["2rh7rw"], {
+  }) : a.intl.formatToPlainString(a.t["2rh7rw"], {
     minutes: Math.max(e.minutes, 1),
     discountPercentage: n
   })

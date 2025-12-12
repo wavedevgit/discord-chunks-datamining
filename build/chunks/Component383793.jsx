@@ -1,8 +1,8 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 383793, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  z: () => N
+  z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,19 +22,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk30513 = require("./30513.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk269181 = require("./269181.js");
+  Chunk856521 = require("./856521.js");
 
-function C(e) {
+function O(e) {
   let {
     originalVanityURLCode: t
   } = e;
   if (null != t && t.length > 0) {
     let e = (0, c.Z)(t);
-    return (0, r.jsx)(a.Text, {
+    return (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "text-subtle",
-      className: O.vanityInfo,
-      children: v.intl.format(v.t["1qTOvn"], {
+      className: v.vanityInfo,
+      children: _.intl.format(_.t["1qTOvn"], {
         urlText: e,
         urlValue: e
       })
@@ -43,84 +43,84 @@ function C(e) {
   return null
 }
 
-function y(e) {
+function C(e) {
   let {
     guild: t,
     vanityURLCode: n,
     vanityURLUses: l,
-    originalVanityURLCode: s,
+    originalVanityURLCode: a,
     errorDetails: o
-  } = e, c = (null == t ? true : t.features.has(x.GuildFeatures.VANITY_URL)) === true, d = i.useCallback(() => {
-    (0, f.Gy)("")
-  }, []), u = i.useCallback(e => {
-    (0, f.Gy)(e)
+  } = e, c = (null == t ? true : t.features.has(b.GuildFeatures.VANITY_URL)) === true, u = i.useCallback(() => {
+    (0, m.Gy)("")
+  }, []), d = i.useCallback(e => {
+    (0, m.Gy)(e)
   }, []);
-  if (null == n) return (0, r.jsx)(a.$jN, {});
-  let g = null != o ? (0, m.i)(o.code) : null;
-  return (0, r.jsxs)(a.Zbd, {
+  if (null == n) return (0, r.jsx)(s.$jN, {});
+  let g = null != o ? (0, p.i)(o.code) : null;
+  return (0, r.jsxs)(s.Zbd, {
     editable: true,
-    className: O.editVanityUrlCard,
+    className: v.editVanityUrlCard,
     children: [(0, r.jsxs)("div", {
-      className: O.formTitleField,
-      children: [(0, r.jsx)(a.Heading, {
+      className: v.formTitleField,
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-sm/semibold",
         color: "text-default",
-        children: v.intl.string(v.t["6oJyq5"])
-      }), n.length > 0 ? (0, r.jsx)(a.Text, {
+        children: _.intl.string(_.t["6oJyq5"])
+      }), n.length > 0 ? (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",
-        children: v.intl.format(v.t.MVWOUY, {
+        children: _.intl.format(_.t.MVWOUY, {
           uses: l
         })
       }) : null]
-    }), (0, r.jsx)(h.Z, {
+    }), (0, r.jsx)(x.Z, {
       value: n,
-      onChange: u,
+      onChange: d,
       error: g,
       disabled: !c
-    }), null != s && s.length > 0 ? (0, r.jsx)("div", {
-      className: O.removeVanityUrlButton,
-      children: (0, r.jsx)(a.Button, {
+    }), null != a && a.length > 0 ? (0, r.jsx)("div", {
+      className: v.removeVanityUrlButton,
+      children: (0, r.jsx)(s.Button, {
         variant: "critical-secondary",
-        onClick: d,
-        text: v.intl.string(v.t["3ggb6K"])
+        onClick: u,
+        text: _.intl.string(_.t["3ggb6K"])
       })
     }) : null]
   })
 }
 
-function N(e) {
+function y(e) {
   let {
     guild: t,
     vanityURLCode: n,
-    vanityURLUses: a,
+    vanityURLUses: s,
     originalVanityURLCode: c,
-    errorDetails: f
+    errorDetails: m
   } = e, {
-    analyticsLocations: h
-  } = (0, o.ZP)(), v = (0, d.g1)(t.id, "GuildSettingsBoostPerks"), N = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), v ? (g.Z.close(), (0, u.Z)(t.id, s.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, p.E6)({
+    analyticsLocations: x
+  } = (0, o.ZP)(), _ = (0, u.g1)(t.id, "GuildSettingsBoostPerks"), y = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), _ ? (g.Z.close(), (0, d.Z)(t.id, a.Z.GUILD_POWERUPS_GUILD_SETTINGS_VANITY_URL, l.A$)) : (0, h.E6)({
       guild: t,
-      analyticsLocations: h,
-      analyticsSection: x.jXE.GUILD_SETTINGS_VANITY_URL,
-      analyticsObject: x.qAy.BUTTON_CTA,
+      analyticsLocations: x,
+      analyticsSection: b.jXE.GUILD_SETTINGS_VANITY_URL,
+      analyticsObject: b.qAy.BUTTON_CTA,
       perks: (0, j.WW)(),
-      targetPremiumGuildTier: x.Eu4.TIER_3
+      targetPremiumGuildTier: b.Eu4.TIER_3
     })
-  }, [h, t, v]);
+  }, [x, t, _]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, m.p)(t) ? (0, r.jsx)(y, {
+    children: [(0, p.p)(t) ? (0, r.jsx)(C, {
       guild: t,
       vanityURLCode: n,
-      vanityURLUses: a,
+      vanityURLUses: s,
       originalVanityURLCode: c,
-      errorDetails: f
+      errorDetails: m
     }) : (0, r.jsx)("div", {
-      className: O.upsellButton,
-      children: (0, r.jsx)(b.v, {
-        onClick: N
+      className: v.upsellButton,
+      children: (0, r.jsx)(f.v, {
+        onClick: y
       })
-    }), (0, r.jsx)(C, {
+    }), (0, r.jsx)(O, {
       originalVanityURLCode: c
     })]
   })

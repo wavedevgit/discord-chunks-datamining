@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 675547, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -20,12 +20,12 @@ function d(e) {
     location: t
   }), [p] = (0, i.e7)([l.Z], () => null != n ? [l.Z.getParticipants(n), l.Z.getParticipantsVersion(n)] : [
     [], 0
-  ], [n], r.Lc), f = (0, i.e7)([o.Z], () => {
+  ], [n], r.Lc), h = (0, i.e7)([o.Z], () => {
     for (let e of p)
       if ((0, u.Io)(e) || (0, u._5)(e)) {
         for (let t of o.Z.getActivities(e.user.id))
           if (null != t.application_id && c.RI.has(t.application_id)) returntrue
       } returnfalse
-  }, [p]), h = (0, i.e7)([a.ZP], () => a.ZP.getRunningGames().some(e => null != e.id && c.RI.has(e.id) && a.ZP.isDetectionEnabled(e)));
-  return d && (h || f)
+  }, [p]), f = (0, i.e7)([a.ZP], () => a.ZP.getRunningGames().some(e => null != e.id && c.RI.has(e.id) && a.ZP.isDetectionEnabled(e)));
+  return d && (f || h)
 }

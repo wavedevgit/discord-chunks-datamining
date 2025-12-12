@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -17,14 +17,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk635921 = require("./635921.jsx"),
   Chunk869783 = require("./869783.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk886496 = require("./886496.js"),
-  Chunk438743 = require("./438743.js"),
-  Chunk32763 = require("./32763.js"),
-  Chunk111658 = require("./111658.js");
+  Chunk264502 = require("./264502.js"),
+  Chunk839526 = require("./839526.js"),
+  Chunk4046 = require("./4046.js"),
+  Chunk423741 = require("./423741.js");
 let y = (e, t) => {
     let {
       className: n,
-      isFooterVisible: a,
+      isFooterVisible: o,
       isDarkMode: y,
       isReducedMotion: O,
       subscriptionTier: v
@@ -32,12 +32,12 @@ let y = (e, t) => {
       analyticsLocations: S
     } = (0, c.ZP)(l.Z.PREMIUM_MARKETING_FOOTER_CTA), I = (0, f.Nx)(), T = (0, d.rO)(), C = i.useRef(null), [A, N] = i.useState(false);
     return i.useEffect(() => {
-      !a || O || A || null == C.current || C.current.play()
-    }, [a, O, A]), (0, r.jsx)(c.Gt, {
+      !o || O || A || null == C.current || C.current.play()
+    }, [o, O, A]), (0, r.jsx)(c.Gt, {
       value: S,
       children: (0, r.jsxs)("div", {
         ref: t,
-        className: o()(h.container, n),
+        className: a()(h.container, n),
         children: [(0, r.jsx)(s.Heading, {
           className: h.footerHeader,
           variant: "display-md",

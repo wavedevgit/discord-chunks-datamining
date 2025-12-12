@@ -13,7 +13,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk658114 = require("./658114.jsx"),
   Chunk514749 = require("./514749.jsx"),
   Chunk81088 = require("./81088.jsx"),
-  Chunk175977 = require("./175977.js");
+  Chunk671930 = require("./671930.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -42,7 +42,7 @@ let _ = e => (0, r.jsx)(m, p({}, e)),
       unifiedStepProps: t
     } = e, {
       isStepLoading: n,
-      reviewBodyContent: a,
+      reviewBodyContent: o,
       reviewBodyLegalContent: c,
       errorMessage: f,
       warningMessage: p,
@@ -54,7 +54,7 @@ let _ = e => (0, r.jsx)(m, p({}, e)),
         type: i.$jN.Type.WANDERING_CUBES
       })
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.Z, {}), (0, r.jsxs)(s.C3, {
+      children: [(0, r.jsx)(a.Z, {}), (0, r.jsxs)(s.C3, {
         children: [(0, r.jsxs)(i.Kqy, {
           direction: "vertical",
           gap: 8,
@@ -65,7 +65,7 @@ let _ = e => (0, r.jsx)(m, p({}, e)),
           }) : null]
         }), (0, r.jsxs)("div", {
           className: d.stepBody,
-          children: [a, c]
+          children: [o, c]
         })]
       }), (0, r.jsx)(s.O3, {
         children: (0, r.jsx)(u.Ds, {

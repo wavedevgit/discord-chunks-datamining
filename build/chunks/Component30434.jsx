@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk55160 = require("./55160.js"),
   Chunk607070 = require("./607070.js"),
   Chunk996435 = require("./996435.js"),
-  Chunk63224 = require("./63224.js");
+  Chunk135443 = require("./135443.js");
 
 function c(e) {
   let {
@@ -27,7 +27,7 @@ function c(e) {
     }, e => {
       d(), null != e && e.targetKey === t.key && null == e.targetAccordionKey && (u.current = requestAnimationFrame(() => {
         var t, n;
-        let r = e.animateScroll && !o.Z.useReducedMotion,
+        let r = e.animateScroll && !a.Z.useReducedMotion,
           i = null != (n = e.scrollBlock) ? n : "start";
         null == (t = c.current) || t.scrollIntoView({
           behavior: r ? "smooth" : "auto",
@@ -37,7 +37,7 @@ function c(e) {
         })
       }))
     }, {
-      equalityFn: a.X,
+      equalityFn: o.X,
       fireImmediately: true
     });
     return () => {

@@ -23,7 +23,7 @@ function m(e) {
   let {
     children: t,
     contain: n,
-    restoreFocus: o,
+    restoreFocus: a,
     autoFocus: s
   } = e, l = (0, d.useRef)(null), c = (0, d.useRef)(null), u = (0, d.useRef)([]), {
     parentNode: m
@@ -49,8 +49,8 @@ function m(e) {
     return u.current = n, () => {
       for (let e of n) e.removeEventListener(p, r)
     }
-  }, [t]), P(u, o, n), y(u, n), w(u, o, n), N(u, s), (0, d.useEffect)(() => {
-    let e = (0, i.vY)((0, a.r3)(u.current ? u.current[0] : true)),
+  }, [t]), P(u, a, n), y(u, n), w(u, a, n), N(u, s), (0, d.useEffect)(() => {
+    let e = (0, i.vY)((0, o.r3)(u.current ? u.current[0] : true)),
       t = null;
     if (v(e, u.current)) {
       for (let n of U.traverse()) n.scopeRef && v(e, n.scopeRef.current) && (t = n);
@@ -85,12 +85,12 @@ function h(e) {
       var n;
       let r = e.current,
         {
-          from: o,
+          from: a,
           tabbable: s,
           wrap: l,
           accept: c
         } = t,
-        u = o || (0, i.vY)((0, a.r3)(null != (n = r[0]) ? n : true)),
+        u = a || (0, i.vY)((0, o.r3)(null != (n = r[0]) ? n : true)),
         d = r[0].previousElementSibling,
         f = x(g(r), {
           tabbable: s,
@@ -104,12 +104,12 @@ function h(e) {
       var n;
       let r = e.current,
         {
-          from: o,
+          from: a,
           tabbable: s,
           wrap: l,
           accept: c
         } = t,
-        u = o || (0, i.vY)((0, a.r3)(null != (n = r[0]) ? n : true)),
+        u = a || (0, i.vY)((0, o.r3)(null != (n = r[0]) ? n : true)),
         d = r[r.length - 1].nextElementSibling,
         f = x(g(r), {
           tabbable: s,
@@ -125,13 +125,13 @@ function h(e) {
           tabbable: r,
           accept: i
         } = t,
-        a = x(g(n), {
+        o = x(g(n), {
           tabbable: r,
           accept: i
         }, n);
-      a.currentNode = n[0].previousElementSibling;
-      let o = a.nextNode();
-      return o && T(o, true), o
+      o.currentNode = n[0].previousElementSibling;
+      let a = o.nextNode();
+      return a && T(a, true), a
     },
     focusLast(t = {}) {
       let n = e.current,
@@ -139,13 +139,13 @@ function h(e) {
           tabbable: r,
           accept: i
         } = t,
-        a = x(g(n), {
+        o = x(g(n), {
           tabbable: r,
           accept: i
         }, n);
-      a.currentNode = n[n.length - 1].nextElementSibling;
-      let o = a.previousNode();
-      return o && T(o, true), o
+      o.currentNode = n[n.length - 1].nextElementSibling;
+      let a = o.previousNode();
+      return a && T(a, true), a
     }
   }
 }
@@ -170,7 +170,7 @@ function b(e) {
     var n, r;
     let i = null == (r = e.form) || null == (n = r.elements) ? true : n.namedItem(e.name);
     t = [...null != i ? i : []]
-  } else t = [...(0, a.r3)(e).querySelectorAll(`input[type="radio"][name="${CSS.escape(e.name)}"]`)].filter(e => !e.form);
+  } else t = [...(0, o.r3)(e).querySelectorAll(`input[type="radio"][name="${CSS.escape(e.name)}"]`)].filter(e => !e.form);
   return !!t && !t.some(e => e.checked)
 }
 
@@ -183,19 +183,19 @@ function y(e, t) {
       s.current && (cancelAnimationFrame(s.current), s.current = true);
       return
     }
-    let l = (0, a.r3)(r ? r[0] : true),
+    let l = (0, o.r3)(r ? r[0] : true),
       u = t => {
         if ("Tab" !== t.key || t.altKey || t.ctrlKey || t.metaKey || !E(e) || t.isComposing) return;
         let n = (0, i.vY)(l),
           r = e.current;
         if (!r || !v(n, r)) return;
-        let a = x(g(r), {
+        let o = x(g(r), {
           tabbable: true
         }, r);
         if (!n) return;
-        a.currentNode = n;
-        let o = t.shiftKey ? a.previousNode() : a.nextNode();
-        o || (a.currentNode = t.shiftKey ? r[r.length - 1].nextElementSibling : r[0].previousElementSibling, o = t.shiftKey ? a.previousNode() : a.nextNode()), t.preventDefault(), o && T(o, true)
+        o.currentNode = n;
+        let a = t.shiftKey ? o.previousNode() : o.nextNode();
+        a || (o.currentNode = t.shiftKey ? r[r.length - 1].nextElementSibling : r[0].previousElementSibling, a = t.shiftKey ? o.previousNode() : o.nextNode()), t.preventDefault(), a && T(a, true)
       },
       d = t => {
         (!_ || I(_, e)) && v((0, i.NI)(t), e.current) ? (_ = e, n.current = (0, i.NI)(t)) : E(e) && !S((0, i.NI)(t), e) ? n.current ? n.current.focus() : _ && _.current && A(_.current) : E(e) && (n.current = (0, i.NI)(t))
@@ -203,9 +203,9 @@ function y(e, t) {
       f = t => {
         s.current && cancelAnimationFrame(s.current), s.current = requestAnimationFrame(() => {
           let r = (0, c.Jz)(),
-            a = ("virtual" === r || null === r) && (0, o.Dt)() && (0, o.i7)(),
+            o = ("virtual" === r || null === r) && (0, a.Dt)() && (0, a.i7)(),
             s = (0, i.vY)(l);
-          if (!a && s && E(e) && !S(s, e)) {
+          if (!o && s && E(e) && !S(s, e)) {
             _ = e;
             let r = (0, i.NI)(t);
             if (r && r.isConnected) {
@@ -268,10 +268,10 @@ function C(e, t = true) {
       tabbable: t
     }, e);
   i.currentNode = n;
-  let a = i.nextNode();
-  return t && !a && ((i = x(r = g(e), {
+  let o = i.nextNode();
+  return t && !o && ((i = x(r = g(e), {
     tabbable: false
-  }, e)).currentNode = n, a = i.nextNode()), a
+  }, e)).currentNode = n, o = i.nextNode()), o
 }
 
 function A(e, t = true) {
@@ -283,7 +283,7 @@ function N(e, t) {
   (0, d.useEffect)(() => {
     if (n.current) {
       _ = e;
-      let t = (0, a.r3)(e.current ? e.current[0] : true);
+      let t = (0, o.r3)(e.current ? e.current[0] : true);
       !v((0, i.vY)(t), _.current) && e.current && A(e.current)
     }
     n.current = false
@@ -294,13 +294,13 @@ function P(e, t, n) {
   (0, r.b)(() => {
     if (t || n) return;
     let r = e.current,
-      o = (0, a.r3)(r ? r[0] : true),
+      a = (0, o.r3)(r ? r[0] : true),
       s = t => {
         let n = (0, i.NI)(t);
         v(n, e.current) ? _ = e : O(n) || (_ = null)
       };
-    return o.addEventListener("focusin", s, false), null == r || r.forEach(e => e.addEventListener("focusin", s, false)), () => {
-      o.removeEventListener("focusin", s, false), null == r || r.forEach(e => e.removeEventListener("focusin", s, false))
+    return a.addEventListener("focusin", s, false), null == r || r.forEach(e => e.addEventListener("focusin", s, false)), () => {
+      a.removeEventListener("focusin", s, false), null == r || r.forEach(e => e.removeEventListener("focusin", s, false))
     }
   }, [e, t, n])
 }
@@ -315,19 +315,19 @@ function R(e) {
 }
 
 function w(e, t, n) {
-  let o = (0, d.useRef)("undefined" != typeof document ? (0, i.vY)((0, a.r3)(e.current ? e.current[0] : true)) : null);
+  let a = (0, d.useRef)("undefined" != typeof document ? (0, i.vY)((0, o.r3)(e.current ? e.current[0] : true)) : null);
   (0, r.b)(() => {
     let r = e.current,
-      o = (0, a.r3)(r ? r[0] : true);
+      a = (0, o.r3)(r ? r[0] : true);
     if (!t || n) return;
     let s = () => {
-      (!_ || I(_, e)) && v((0, i.vY)(o), e.current) && (_ = e)
+      (!_ || I(_, e)) && v((0, i.vY)(a), e.current) && (_ = e)
     };
-    return o.addEventListener("focusin", s, false), null == r || r.forEach(e => e.addEventListener("focusin", s, false)), () => {
-      o.removeEventListener("focusin", s, false), null == r || r.forEach(e => e.removeEventListener("focusin", s, false))
+    return a.addEventListener("focusin", s, false), null == r || r.forEach(e => e.addEventListener("focusin", s, false)), () => {
+      a.removeEventListener("focusin", s, false), null == r || r.forEach(e => e.removeEventListener("focusin", s, false))
     }
   }, [e, n]), (0, r.b)(() => {
-    let r = (0, a.r3)(e.current ? e.current[0] : true);
+    let r = (0, o.r3)(e.current ? e.current[0] : true);
     if (!t) return;
     let i = t => {
       if ("Tab" !== t.key || t.altKey || t.ctrlKey || t.metaKey || !E(e) || t.isComposing) return;
@@ -335,16 +335,16 @@ function w(e, t, n) {
       if (!S(n, e) || !R(e)) return;
       let i = U.getTreeNode(e);
       if (!i) return;
-      let a = i.nodeToRestore,
-        o = x(r.body, {
+      let o = i.nodeToRestore,
+        a = x(r.body, {
           tabbable: true
         });
-      o.currentNode = n;
-      let s = t.shiftKey ? o.previousNode() : o.nextNode();
-      if (a && a.isConnected && a !== r.body || (a = true, i.nodeToRestore = true), (!s || !S(s, e)) && a) {
-        o.currentNode = a;
-        do s = t.shiftKey ? o.previousNode() : o.nextNode(); while (S(s, e));
-        t.preventDefault(), t.stopPropagation(), s ? T(s, true) : O(a) ? T(a, true) : n.blur()
+      a.currentNode = n;
+      let s = t.shiftKey ? a.previousNode() : a.nextNode();
+      if (o && o.isConnected && o !== r.body || (o = true, i.nodeToRestore = true), (!s || !S(s, e)) && o) {
+        a.currentNode = o;
+        do s = t.shiftKey ? a.previousNode() : a.nextNode(); while (S(s, e));
+        t.preventDefault(), t.stopPropagation(), s ? T(s, true) : O(o) ? T(o, true) : n.blur()
       }
     };
     return n || r.addEventListener("keydown", i, true), () => {
@@ -352,15 +352,15 @@ function w(e, t, n) {
     }
   }, [e, t, n]), (0, r.b)(() => {
     var n;
-    let r = (0, a.r3)(e.current ? e.current[0] : true);
+    let r = (0, o.r3)(e.current ? e.current[0] : true);
     if (!t) return;
     let s = U.getTreeNode(e);
-    if (s) return s.nodeToRestore = null != (n = o.current) ? n : true, () => {
+    if (s) return s.nodeToRestore = null != (n = a.current) ? n : true, () => {
       let n = U.getTreeNode(e);
       if (!n) return;
-      let a = n.nodeToRestore,
-        o = (0, i.vY)(r);
-      if (t && a && (o && S(o, e) || o === r.body && R(e))) {
+      let o = n.nodeToRestore,
+        a = (0, i.vY)(r);
+      if (t && o && (a && S(a, e) || a === r.body && R(e))) {
         let t = U.clone();
         requestAnimationFrame(() => {
           if (r.activeElement === r.body) {
@@ -390,8 +390,8 @@ function D(e) {
 function x(e, t, n) {
   let r = (null == t ? true : t.tabbable) ? s.W : s.E,
     i = (null == e ? true : e.nodeType) === Node.ELEMENT_NODE ? e : null,
-    o = (0, a.r3)(i),
-    c = (0, l.A)(o, e || o, NodeFilter.SHOW_ELEMENT, {
+    a = (0, o.r3)(i),
+    c = (0, l.A)(a, e || a, NodeFilter.SHOW_ELEMENT, {
       acceptNode(e) {
         var i;
         return (null == t || null == (i = t.from) ? true : i.contains(e)) || (null == t ? true : t.tabbable) && "INPUT" === e.tagName && "radio" === e.getAttribute("type") && (!b(e) || "INPUT" === c.currentNode.tagName && "radio" === c.currentNode.type && c.currentNode.name === e.name) ? NodeFilter.FILTER_REJECT : r(e) && (!n || v(e, n)) && (!(null == t ? true : t.accept) || t.accept(e)) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP
@@ -406,11 +406,11 @@ function L(e, t = {}) {
       let r = e.current;
       if (!r) return null;
       let {
-        from: o,
+        from: a,
         tabbable: s = t.tabbable,
         wrap: l = t.wrap,
         accept: c = t.accept
-      } = n, u = o || (0, i.vY)((0, a.r3)(r)), d = x(r, {
+      } = n, u = a || (0, i.vY)((0, o.r3)(r)), d = x(r, {
         tabbable: s,
         accept: c
       });
@@ -422,11 +422,11 @@ function L(e, t = {}) {
       let r = e.current;
       if (!r) return null;
       let {
-        from: o,
+        from: a,
         tabbable: s = t.tabbable,
         wrap: l = t.wrap,
         accept: c = t.accept
-      } = n, u = o || (0, i.vY)((0, a.r3)(r)), d = x(r, {
+      } = n, u = a || (0, i.vY)((0, o.r3)(r)), d = x(r, {
         tabbable: s,
         accept: c
       });
@@ -449,24 +449,24 @@ function L(e, t = {}) {
       if (!r) return null;
       let {
         tabbable: i = t.tabbable,
-        accept: a = t.accept
-      } = n, o = x(r, {
+        accept: o = t.accept
+      } = n, a = x(r, {
         tabbable: i,
-        accept: a
+        accept: o
       }).nextNode();
-      return o && T(o, true), o
+      return a && T(a, true), a
     },
     focusLast(n = t) {
       let r = e.current;
       if (!r) return null;
       let {
         tabbable: i = t.tabbable,
-        accept: a = t.accept
-      } = n, o = j(x(r, {
+        accept: o = t.accept
+      } = n, a = j(x(r, {
         tabbable: i,
-        accept: a
+        accept: o
       }));
-      return o && T(o, true), null != o ? o : null
+      return a && T(a, true), null != a ? a : null
     }
   }
 }

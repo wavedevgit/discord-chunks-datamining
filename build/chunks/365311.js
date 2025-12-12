@@ -26,8 +26,8 @@ function f(e) {
   if (__OVERLAY__) return;
   let t = s.default.getCurrentUser();
   if (null == t) return;
-  let n = o.Z.getChannelId(),
-    r = a.Z.getDMFromUserId(l.I);
+  let n = a.Z.getChannelId(),
+    r = o.Z.getDMFromUserId(l.I);
   if (!t.hasUrgentMessages() || r === n) return p({
     channelId: n
   });
@@ -37,7 +37,7 @@ function f(e) {
 function p(e) {
   let {
     channelId: t
-  } = e, n = s.default.getCurrentUser(), i = t === a.Z.getDMFromUserId(l.I);
+  } = e, n = s.default.getCurrentUser(), i = t === o.Z.getDMFromUserId(l.I);
   null != n && n.hasUrgentMessages() && i && (d = false, r.mB(c.xW$.HAS_UNREAD_URGENT_MESSAGES, false))
 }
 class _ extends Chunk147913.Z {

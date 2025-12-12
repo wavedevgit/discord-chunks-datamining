@@ -28,9 +28,9 @@ function d(e) {
   } = e, r = n.id;
   if (null == r || null == t) return;
   let i = s.Z.getConnectedFrame();
-  (null == i ? true : i.applicationId) === r && (o.Z.stopFrame({
+  (null == i ? true : i.applicationId) === r && (a.Z.stopFrame({
     applicationId: r
-  }), t.code !== l.$VG.CLOSE_NORMAL && (a.default.track(l.rMx.ACTIVITY_CLOSED_RPC_ERROR, {
+  }), t.code !== l.$VG.CLOSE_NORMAL && (o.default.track(l.rMx.ACTIVITY_CLOSED_RPC_ERROR, {
     rpc_close_code: t.code,
     rpc_message: t.message,
     application_id: r

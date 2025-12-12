@@ -86,7 +86,7 @@ class E extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     _ = null != e && "object" == typeof e.hashes ? e : {
       hashes: {}
-    }, this.waitFor(o.Z)
+    }, this.waitFor(a.Z)
   }
   getState() {
     return _

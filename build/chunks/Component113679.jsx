@@ -1,8 +1,8 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 113679, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,37 +13,37 @@ var Chunk54381 = require("./54381.js"),
   Chunk140031 = require("./140031.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk822809 = require("./822809.js");
+  Chunk49465 = require("./49465.js");
 
-function f(e) {
+function m(e) {
   let {
     guild: t
-  } = e, n = i.useId(), f = (0, l.e7)([o.Z], () => null != t && o.Z.can(d.Plq.MANAGE_GUILD, t), [t]), m = t.features.has(d.GuildFeatures.COMMUNITY), [b, p] = i.useState(t.features.has(d.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), h = i.useCallback(async e => {
-    p(e), await (0, s.fp)(t, e)
+  } = e, n = i.useId(), m = (0, l.e7)([o.Z], () => null != t && o.Z.can(u.Plq.MANAGE_GUILD, t), [t]), p = t.features.has(u.GuildFeatures.COMMUNITY), [f, h] = i.useState(t.features.has(u.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), x = i.useCallback(async e => {
+    h(e), await (0, a.fp)(t, e)
   }, [t]);
-  return m ? null : (0, r.jsxs)("div", {
+  return p ? null : (0, r.jsxs)("div", {
     className: g.bannerContainer,
     children: [(0, r.jsx)(c.Z, {
       width: 64,
       height: 64
     }), (0, r.jsxs)("div", {
       className: g.headingContainer,
-      children: [(0, r.jsx)(a.Heading, {
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
         color: "always-white",
-        children: u.intl.string(u.t.jDarmy)
-      }), (0, r.jsx)(a.Text, {
+        children: d.intl.string(d.t.jDarmy)
+      }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: u.intl.string(u.t["/ee7yK"])
+        children: d.intl.string(d.t["/ee7yK"])
       })]
     }), (0, r.jsx)("div", {
       className: g.buttonContainer,
-      children: (0, r.jsx)(a.rsf, {
+      children: (0, r.jsx)(s.rsf, {
         id: n,
-        checked: b,
-        onChange: h,
-        disabled: !f
+        checked: f,
+        onChange: x,
+        disabled: !m
       })
     })]
   })

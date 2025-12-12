@@ -6,12 +6,12 @@ require.d(exports, {
   xJ: () => u
 });
 var r, Chunk358085 = require("./358085.js");
-let a = false,
-  o = null,
+let o = false,
+  a = null,
   s = null,
   l = null,
   c = null;
 
 function u() {
-  return a ? s : (0, Chunk358085.isAndroid)() ? o : l
+  return o ? s : (0, Chunk358085.isAndroid)() ? a : l
 }

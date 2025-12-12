@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk881998 = require("./881998.js"),
   Chunk709054 = require("./709054.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk501859 = require("./501859.js"),
+  Chunk719706 = require("./719706.js"),
   Chunk970952 = require("./970952.js");
 let x = e => {
   var t, n;
@@ -23,35 +23,35 @@ let x = e => {
     entry: x
   } = e, {
     name: h
-  } = x, v = (0, i.e7)([m.default], () => m.default.getNewestTokenForApplication(x.id)), _ = null != (n = x.getIconURL(40)) ? n : f, j = (0, c.Z)({
+  } = x, f = (0, i.e7)([m.default], () => m.default.getNewestTokenForApplication(x.id)), v = null != (n = x.getIconURL(40)) ? n : b, j = (0, d.Z)({
     application: x
   }), y = l.useRef(false);
   l.useEffect(() => {
     y.current || (o.Z.fetch(), y.current = true)
   }, []);
-  let O = null != v ? b.default.extractTimestamp(v.id) : true;
+  let O = null != f ? p.default.extractTimestamp(f.id) : true;
   return (0, r.jsxs)("div", {
-    className: g.container,
+    className: _.container,
     children: [(0, r.jsx)(s.Heading, {
-      className: g.header,
+      className: _.header,
       variant: "heading-sm/semibold",
-      children: p.intl.string(p.t["aYfK/w"])
+      children: g.intl.string(g.t["aYfK/w"])
     }), (0, r.jsx)("div", {
-      className: g.appContainer,
+      className: _.appContainer,
       children: (0, r.jsxs)("div", {
-        className: g.appInfo,
-        children: [(0, r.jsx)(d.ZP, {
-          mask: d.ZP.Masks.AVATAR_DEFAULT,
+        className: _.appInfo,
+        children: [(0, r.jsx)(c.ZP, {
+          mask: c.ZP.Masks.AVATAR_DEFAULT,
           width: 40,
           height: 40,
-          className: g.appIconMask,
+          className: _.appIconMask,
           children: (0, r.jsx)("img", {
-            src: _,
+            src: v,
             alt: "",
-            className: g.appIcon
+            className: _.appIcon
           })
         }), (0, r.jsxs)("div", {
-          className: g.textContainer,
+          className: _.textContainer,
           children: [(0, r.jsx)(s.Text, {
             color: "text-strong",
             variant: "text-md/medium",
@@ -62,7 +62,7 @@ let x = e => {
               variant: "text-md/normal",
               children: (0, u.Z)(j.length)
             }), (0, r.jsx)(a.Z, {
-              className: g.guildStack,
+              className: _.guildStack,
               guilds: j,
               maxGuilds: 6
             })]
@@ -74,7 +74,7 @@ let x = e => {
             }), null != O && (0, r.jsx)(s.Text, {
               color: "text-default",
               variant: "text-md/normal",
-              children: p.intl.formatToPlainString(p.t.C9rUO8, {
+              children: g.intl.formatToPlainString(g.t.C9rUO8, {
                 authorizedAt: O
               })
             })]

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk987209 = require("./987209.jsx"),
@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk96848 = require("./96848.jsx"),
   Chunk703926 = require("./703926.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk940909 = require("./940909.js");
+  Chunk611344 = require("./611344.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,8 +65,8 @@ function I(e, t) {
   if (null == e) return {};
   var n, r, i = T(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -74,15 +74,15 @@ function I(e, t) {
 function T(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let C = e => {
   let {
     isShopGift: t,
     className: n,
-    optionsContainerClassName: a
+    optionsContainerClassName: o
   } = e, {
     giftRecipient: y,
     selectedGiftStyle: v,
@@ -102,7 +102,7 @@ let C = e => {
   };
   return (0, r.jsxs)("div", {
     children: [U && (0, r.jsxs)("div", {
-      className: o()(b.giftMainAnimation, n),
+      className: a()(b.giftMainAnimation, n),
       children: [null != v ? (0, r.jsx)(m.Z, {
         giftStyle: v,
         defaultAnimationState: f.SR.ACTION,
@@ -112,7 +112,7 @@ let C = e => {
       }) : (0, r.jsx)(l.$jN, {
         className: b.spinner
       }), k && (0, r.jsxs)("div", {
-        className: o()(b.soundEmojiContainer, Z && b.refresh),
+        className: a()(b.soundEmojiContainer, Z && b.refresh),
         children: [(0, r.jsx)(u.Z, {
           sound: A,
           onSelect: F
@@ -127,7 +127,7 @@ let C = e => {
         var t;
         e.target === e.currentTarget && (null == (t = D.current) || t.focus())
       },
-      className: o()(b.giftBoxOptionContainer, a),
+      className: a()(b.giftBoxOptionContainer, o),
       "aria-label": E.intl.string(E.t.v54NrN),
       ref: L
     }, j), {

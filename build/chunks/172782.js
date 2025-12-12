@@ -9,23 +9,23 @@ let a = e => {
   let {
     subscriptionId: t,
     searchQuery: n
-  } = e, [a, s] = r.useState([]), [i, o] = r.useState(0), [c, u] = r.useState(false), [p, f] = r.useState(false), h = async e => {
-    if (!c && null != e) try {
-      u(true), f(false);
+  } = e, [a, s] = r.useState([]), [i, o] = r.useState(0), [u, c] = r.useState(false), [p, h] = r.useState(false), d = async e => {
+    if (!u && null != e) try {
+      c(true), h(false);
       let r = await (0, l.MT)(t, e, n);
       s(t => 0 === e ? r.users : [...t, ...r.users]), o(r.nextIndex)
     } catch (e) {
-      f(true)
+      h(true)
     } finally {
-      u(false)
+      c(false)
     }
   };
   return (0, r.useEffect)(() => {
-    o(0), h(0)
+    o(0), d(0)
   }, [t, n]), {
     eligibleUsers: a,
-    isFetching: c,
+    isFetching: u,
     hasError: p,
-    getNextRows: () => h(i)
+    getNextRows: () => d(i)
   }
 }

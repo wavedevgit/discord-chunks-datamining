@@ -1,7 +1,7 @@
 /** Chunk was on 70871 **/
 /** chunk id: 225525, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => u
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,17 +9,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk841183 = require("./841183.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk628241 = require("./628241.js");
+  Chunk323964 = require("./323964.js");
 
-function f(t) {
+function u(t) {
   var e, r, {
-      avatarId: f,
-      storageHash: u,
+      avatarId: u,
+      storageHash: f,
       avatarDescription: b,
       onConfirmDelete: p,
-      onClose: d
+      onClose: y
     } = t,
-    y = function(t, e) {
+    d = function(t, e) {
       if (null == t) return {};
       var r, n, a = function(t, e) {
         if (null == t) return {};
@@ -38,8 +38,8 @@ function f(t) {
     avatarSrc: j,
     eventHandlers: g
   } = (0, c.Z)({
-    avatarId: f,
-    storageHash: u,
+    avatarId: u,
+    storageHash: f,
     size: i.EFr.SIZE_120
   }), {
     onMouseEnter: m,
@@ -51,8 +51,8 @@ function f(t) {
     } catch (t) {} finally {
       v(false)
     }
-    d()
-  }, [p, d]);
+    y()
+  }, [p, y]);
   return (0, n.jsx)(o.u_l, (e = function(t) {
     for (var e = 1; e < arguments.length; e++) {
       var r = null != arguments[e] ? arguments[e] : {},
@@ -77,7 +77,7 @@ function f(t) {
     actions: [{
       text: s.intl.string(s.t["ETE/oC"]),
       variant: "secondary",
-      onClick: d,
+      onClick: y,
       disabled: O
     }, {
       text: s.intl.string(s.t.Lh0uyy),
@@ -85,8 +85,8 @@ function f(t) {
       onClick: x,
       loading: O
     }],
-    onClose: d
-  }, y), r = r = {
+    onClose: y
+  }, d), r = r = {
     children: (0, n.jsxs)("div", {
       className: l.modalContent,
       children: [(0, n.jsx)("div", {

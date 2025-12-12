@@ -7,19 +7,19 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js");
 
 function i(e, t, n) {
-  let [i, a] = (0, r.useState)(e || t), o = (0, r.useRef)(true !== e), s = true !== e;
+  let [i, o] = (0, r.useState)(e || t), a = (0, r.useRef)(true !== e), s = true !== e;
   (0, r.useEffect)(() => {
-    o.current, o.current = s
+    a.current, a.current = s
   }, [s]);
   let l = s ? e : i,
     c = (0, r.useCallback)((e, ...t) => {
       let r = (e, ...t) => {
         n && !Object.is(l, e) && n(e, ...t), s || (l = e)
       };
-      "function" == typeof e ? a((n, ...i) => {
-        let a = e(s ? l : n, ...i);
-        return (r(a, ...t), s) ? n : a
-      }) : (s || a(e), r(e, ...t))
+      "function" == typeof e ? o((n, ...i) => {
+        let o = e(s ? l : n, ...i);
+        return (r(o, ...t), s) ? n : o
+      }) : (s || o(e), r(e, ...t))
     }, [s, l, n]);
   return [l, c]
 }

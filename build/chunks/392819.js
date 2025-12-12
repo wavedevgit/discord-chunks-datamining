@@ -20,6 +20,6 @@ function s(e) {
     let {
       setAnimate: e
     } = l;
-    return a.S.subscribeKeyed(o.LPv.ANIMATE_CHAT_AVATAR, "".concat(n, ":").concat(s), e), () => void a.S.unsubscribeKeyed(o.LPv.ANIMATE_CHAT_AVATAR, "".concat(n, ":").concat(s), e)
+    return o.S.subscribeKeyed(a.LPv.ANIMATE_CHAT_AVATAR, "".concat(n, ":").concat(s), e), () => void o.S.unsubscribeKeyed(a.LPv.ANIMATE_CHAT_AVATAR, "".concat(n, ":").concat(s), e)
   }, [t, s, n, l])
 }

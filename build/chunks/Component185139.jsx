@@ -21,14 +21,14 @@ var Chunk122289 = require("./122289.js"),
   Chunk70956 = require("./70956.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk178772 = require("./178772.js");
+  Chunk987954 = require("./987954.js");
 let y = new Set([Chunk409813.h8.SKU_SELECT, Chunk409813.h8.AWAITING_AUTHENTICATION, Chunk409813.h8.AWAITING_PURCHASE_TOKEN_AUTH, Chunk409813.h8.CONFIRM]);
 
 function O(e) {
   let {
     steps: t,
     currentStep: n,
-    body: o,
+    body: a,
     overrideKey: O,
     paymentError: v,
     header: S,
@@ -62,7 +62,7 @@ function O(e) {
     }
   }, [k]);
   let G = t.includes(_.h8.PAYMENT_TYPE) ? _.h8.PAYMENT_TYPE : _.h8.ADD_PAYMENT_STEPS;
-  return (0, r.jsxs)(a.Elements, {
+  return (0, r.jsxs)(o.Elements, {
     options: g.OBo,
     stripe: k,
     children: [S, (0, r.jsxs)("div", {
@@ -105,7 +105,7 @@ function O(e) {
           children: (0, r.jsx)(c.h21, {
             onScroll: D,
             className: s()(b.scroller, x),
-            children: o
+            children: a
           })
         })]
       })]

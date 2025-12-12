@@ -15,7 +15,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk430824 = require("./430824.js"),
   Chunk709054 = require("./709054.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk864715 = require("./864715.js");
+  Chunk131806 = require("./131806.js");
 
 function x(e) {
   let {
@@ -23,17 +23,17 @@ function x(e) {
     guildId: t,
     textClassName: x,
     tooltipDelay: h
-  } = e, b = (0, i.e7)([s.default], () => s.default.locale), v = (0, i.e7)([u.Z], () => null != t ? u.Z.getGuild(t) : null), j = (0, i.e7)([d.ZP], () => null != t ? d.ZP.getMember(t, n) : null), g = (0, a.FI)(f.default.extractTimestamp(n), b), I = (0, a.FI)(null == j ? true : j.joinedAt, b);
-  return null == v || null == j ? (0, l.jsx)(r.Text, {
+  } = e, v = (0, i.e7)([c.default], () => c.default.locale), j = (0, i.e7)([u.Z], () => null != t ? u.Z.getGuild(t) : null), g = (0, i.e7)([d.ZP], () => null != t ? d.ZP.getMember(t, n) : null), b = (0, s.FI)(m.default.extractTimestamp(n), v), I = (0, s.FI)(null == g ? true : g.joinedAt, v);
+  return null == j || null == g ? (0, l.jsx)(r.Text, {
     variant: "text-sm/normal",
     className: x,
-    children: g
+    children: b
   }) : (0, l.jsxs)("div", {
     className: p.memberSinceWrapper,
     children: [(0, l.jsxs)("div", {
       className: p.memberSince,
       children: [(0, l.jsx)(o.u, {
-        text: m.intl.string(m.t.uvGmCx),
+        text: f.intl.string(f.t.uvGmCx),
         delay: h,
         children: (0, l.jsx)(r.gw7, {
           size: "custom",
@@ -45,18 +45,18 @@ function x(e) {
       }), (0, l.jsx)(r.Text, {
         variant: "text-sm/normal",
         className: x,
-        children: g
+        children: b
       })]
     }), (0, l.jsx)("div", {
       className: p.divider
     }), (0, l.jsxs)("div", {
       className: p.memberSince,
       children: [(0, l.jsx)(o.u, {
-        text: v.name,
+        text: j.name,
         delay: h,
-        children: (0, l.jsx)(c.Z, {
-          guild: v,
-          size: c.Z.Sizes.SMOL,
+        children: (0, l.jsx)(a.Z, {
+          guild: j,
+          size: a.Z.Sizes.SMOL,
           className: p.guildIcon
         })
       }), (0, l.jsx)(r.Text, {

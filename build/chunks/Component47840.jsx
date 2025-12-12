@@ -11,7 +11,7 @@ var Chunk467721 = require("./467721.js"),
   Chunk117791 = require("./117791.jsx"),
   Chunk638212 = require("./638212.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk515249 = require("./515249.js");
+  Chunk957833 = require("./957833.js");
 let u = 120,
   d = 12,
   f = function(e) {
@@ -19,7 +19,7 @@ let u = 120,
       isVisible: t,
       subscriptionTier: n,
       isEligibleForBogoPromotion: f
-    } = e, p = (0, a.q_F)({
+    } = e, p = (0, o.q_F)({
       transform: t ? "translateY(-100%)" : "translateY(0%)",
       opacity: +!!t,
       config: {
@@ -41,7 +41,7 @@ let u = 120,
           hasActivePromotion: !!f,
           isPersistentCTA: true,
           premiumModalAnalyticsLocation: _
-        }), (0, r.jsx)(o.Z, {
+        }), (0, r.jsx)(a.Z, {
           variant: "secondary",
           size: "md"
         })]

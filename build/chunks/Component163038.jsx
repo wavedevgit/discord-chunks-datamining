@@ -40,28 +40,28 @@ var Chunk54381 = require("./54381.js"),
   Chunk22665 = require("./22665.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js"),
-  Chunk239276 = require("./239276.js");
+  Chunk953278 = require("./953278.js");
 
 function Z(e) {
   let {
     message: t,
     snapshot: n,
     index: u
-  } = e, f = i.useMemo(() => new d.r(t, n, u), [t, n, u]), _ = (0, o.e7)([N.Z, L.default, D.Z, w.Z, R.Z, p.Z], () => f.getForwardInfo(N.Z, L.default, D.Z, w.Z, R.Z, p.Z).footerInfo, [f], s.Z), m = i.useCallback(() => {
+  } = e, f = i.useMemo(() => new d.r(t, n, u), [t, n, u]), _ = (0, a.e7)([N.Z, L.default, D.Z, w.Z, R.Z, p.Z], () => f.getForwardInfo(N.Z, L.default, D.Z, w.Z, R.Z, p.Z).footerInfo, [f], s.Z), m = i.useCallback(() => {
     var e, n;
     let r = N.Z.getChannel(t.channel_id),
       i = R.Z.getGuild(null == r ? true : r.guild_id),
-      a = null == (e = t.messageReference) ? true : e.channel_id,
-      o = x.Z.getCurrentlySelectedChannelId(),
+      o = null == (e = t.messageReference) ? true : e.channel_id,
+      a = x.Z.getCurrentlySelectedChannelId(),
       s = A.ZP.getCurrentSidebarChannelId(null == (n = t.messageReference) ? true : n.channel_id),
-      l = o === a && s === (null == r ? true : r.id);
-    null == r || null == i || l || null == a || (T.Z.openModReportAsSidebar({
+      l = a === o && s === (null == r ? true : r.id);
+    null == r || null == i || l || null == o || (T.Z.openModReportAsSidebar({
       channelId: r.id,
-      baseChannelId: a,
+      baseChannelId: o,
       guildId: r.guild_id
-    }), (0, I.Kh)(a), j.default.track(k.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+    }), (0, I.Kh)(o), j.default.track(k.rMx.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
       moderator_report_id: t.channel_id,
-      destination_channel_id: a,
+      destination_channel_id: o,
       destination_message_id: t.id
     }))
   }, [t]);
@@ -73,7 +73,7 @@ function Z(e) {
       className: G.originIcon,
       src: _.originIconUrl,
       alt: ""
-    }) : null, (0, r.jsx)(a.xvT, {
+    }) : null, (0, r.jsx)(o.xvT, {
       className: G.footerText,
       variant: "text-sm/medium",
       color: "none",
@@ -90,19 +90,19 @@ function F(e, t) {
     popouts: n,
     setPopout: r
   } = (0, O.Z)(e.id, U.d$), {
-    usernameProfile: a,
-    avatarProfile: o
-  } = n, s = (0, y.XO)(e, t, a, r);
+    usernameProfile: o,
+    avatarProfile: a
+  } = n, s = (0, y.XO)(e, t, o, r);
   return {
     onClickUsername: s,
-    onClickAvatar: (0, y.R9)(o, r),
+    onClickAvatar: (0, y.R9)(a, r),
     onPopoutRequestClose: i.useCallback(() => r({
       usernameProfile: false,
       avatarProfile: false,
       referencedUsernameProfile: false
     }), [r]),
-    showUsernamePopout: a,
-    showAvatarPopout: o
+    showUsernamePopout: o,
+    showAvatarPopout: a
   }
 }
 
@@ -111,8 +111,8 @@ function B(e) {
     mergedMessageRecord: t,
     content: n,
     channel: i,
-    reportingUserId: a,
-    reportedTimestamp: o
+    reportingUserId: o,
+    reportedTimestamp: a
   } = e, s = (0, m.JZ)(t.author, i), {
     onClickUsername: l,
     onClickAvatar: c,
@@ -122,11 +122,11 @@ function B(e) {
   } = F(t, i);
   return (0, r.jsx)(h.Z, {
     childrenExecutedCommand: (0, r.jsx)(M.Z, {
-      reportingUserId: a,
+      reportingUserId: o,
       guildId: i.guild_id,
       channel: i,
       messageId: t.id,
-      reportedTimestamp: o,
+      reportedTimestamp: a,
       compact: false
     }),
     childrenHeader: (0, r.jsx)(E.ZP, {
@@ -157,7 +157,7 @@ function B(e) {
 }
 
 function V(e) {
-  var t, n, a;
+  var t, n, o;
   let {
     message: s,
     snapshot: l,
@@ -177,8 +177,8 @@ function V(e) {
     h = C.RS.useSetting(),
     g = C.NA.useSetting(),
     E = h && g,
-    b = (0, o.e7)([P.Z], () => P.Z.isDeveloper),
-    y = (0, _.A)((null != (a = m.editedTimestamp) ? a : m.timestamp).valueOf()),
+    b = (0, a.e7)([P.Z], () => P.Z.isDeveloper),
+    y = (0, _.A)((null != (o = m.editedTimestamp) ? o : m.timestamp).valueOf()),
     {
       content: O,
       hasSpoilerEmbeds: I,
@@ -193,7 +193,7 @@ function V(e) {
       allowDevLinks: b,
       previewLinkTarget: true
     }),
-    A = (0, o.e7)([N.Z], () => N.Z.getChannel(s.channel_id));
+    A = (0, a.e7)([N.Z], () => N.Z.getChannel(s.channel_id));
   return null == A ? null : (0, r.jsx)("div", {
     className: G.container,
     children: (0, r.jsxs)("div", {

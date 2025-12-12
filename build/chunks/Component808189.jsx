@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk535322 = require("./535322.jsx"),
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk132748 = require("./132748.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk118180 = require("./118180.js");
+  Chunk808705 = require("./808705.js");
 let g = function(e) {
   let {
     guild: t
@@ -29,11 +29,11 @@ let g = function(e) {
       className: h.tierCard,
       children: [e.tier === _.Eu4.TIER_3 && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: a()(h.tierCardBorderHighlight, h.tierCardBorderHighlightTopRight)
+          className: o()(h.tierCardBorderHighlight, h.tierCardBorderHighlightTopRight)
         }), (0, r.jsx)("div", {
-          className: a()(h.tierCardBorderHighlight, h.tierCardBorderHighlightBottomLeft)
+          className: o()(h.tierCardBorderHighlight, h.tierCardBorderHighlightBottomLeft)
         }), (0, r.jsxs)("div", {
-          className: a()(h.tierCardSparkleHighlight, h.tierCardSparkleHighlightTopRight),
+          className: o()(h.tierCardSparkleHighlight, h.tierCardSparkleHighlightTopRight),
           children: [(0, r.jsx)(u.Z, {
             className: h.tierCardSparkle1
           }), (0, r.jsx)(u.Z, {
@@ -42,7 +42,7 @@ let g = function(e) {
             className: h.tierCardSparkle3
           })]
         }), (0, r.jsx)("div", {
-          className: a()(h.tierCardSparkleHighlight, h.tierCardSparkleHighlightBottomLeft),
+          className: o()(h.tierCardSparkleHighlight, h.tierCardSparkleHighlightBottomLeft),
           children: (0, r.jsx)(u.Z, {
             className: h.tierCardSparkle1
           })
@@ -82,7 +82,7 @@ let g = function(e) {
               color: "always-white",
               children: [(0, r.jsx)(n, {
                 className: h.tierCardListIcon,
-                color: o.Z.colors.WHITE
+                color: a.Z.colors.WHITE
               }), e.getCopy()]
             }), e.isNew ? (0, r.jsx)(l.Z, {
               className: h.tierCardNewFeatureBadge,

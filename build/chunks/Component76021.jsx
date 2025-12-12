@@ -59,7 +59,7 @@ function g(e, t, p) {
   if (d.isPlatformEmbedded)(0, i.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("38697"), n.e("4093"), n.e("44183"), n.e("59416")]).then(n.bind(n, 60594));
+    } = await Promise.all([n.e("38697"), n.e("4093"), n.e("47863"), n.e("59416")]).then(n.bind(n, 60594));
     return n => {
       var i;
       return (0, r.jsx)(t, h(_({}, n), {
@@ -72,20 +72,20 @@ function g(e, t, p) {
   else {
     var m;
     let n = s.Z.getChannel(t),
-      r = (0, o.Z)(f.ApplicationStreamPresets.PRESET_CUSTOM, f.ApplicationStreamResolutions.RESOLUTION_1080, f.ApplicationStreamFPS.FPS_30, u.default.getCurrentUser(), null == (m = l.Z.getGuild(e)) ? true : m.premiumTier, n) ? {
+      r = (0, a.Z)(f.ApplicationStreamPresets.PRESET_CUSTOM, f.ApplicationStreamResolutions.RESOLUTION_1080, f.ApplicationStreamFPS.FPS_30, u.default.getCurrentUser(), null == (m = l.Z.getGuild(e)) ? true : m.premiumTier, n) ? {
         width: 1920,
         height: 1080
       } : {
         width: 1280,
         height: 720
       };
-    (0, a.Rc)({
+    (0, o.Rc)({
       preset: f.ApplicationStreamPresets.PRESET_CUSTOM,
       resolution: r.height,
       frameRate: f.ApplicationStreamFPS.FPS_30,
       soundshareEnabled: true
     }), c.Z.getMediaEngine().getDesktopSource(r, true).then(n => {
-      (0, a.WH)(e, t, {
+      (0, o.WH)(e, t, {
         pid: null,
         sourceId: n,
         sourceName: null,

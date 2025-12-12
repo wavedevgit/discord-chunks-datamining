@@ -40,10 +40,10 @@ function _() {
   return Chunk358085.isPlatformEmbedded
 }
 async function m() {
-  var e, t, n, r, a, o, s, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, C, A, N, P, R, w, D, x, L, j, M, k;
+  var e, t, n, r, o, a, s, c, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T, C, A, N, P, R, w, D, x, L, j, M, k;
   let U = Chunk848479.Z.getMemoryUsageElectronProcessTypeDetails();
   if (null == U) return null;
-  let G = [null != (y = null == (e = U.unknown) ? true : module.wss_priv_kb) ? y : false, null != (O = null == (t = U.main) ? true : exports.wss_priv_kb) ? O : false, null != (v = null == (n = U.renderer) ? true : require.wss_priv_kb) ? v : false, null != (S = null == (r = U.gpu) ? true : Chunk147913.wss_priv_kb) ? S : false, null != (I = null == (a = U.crashpad) ? true : Chunk626135.wss_priv_kb) ? I : false, null != (T = null == (o = U.utility) ? true : Chunk70956.wss_priv_kb) ? T : false],
+  let G = [null != (y = null == (e = U.unknown) ? true : module.wss_priv_kb) ? y : false, null != (O = null == (t = U.main) ? true : exports.wss_priv_kb) ? O : false, null != (v = null == (n = U.renderer) ? true : require.wss_priv_kb) ? v : false, null != (S = null == (r = U.gpu) ? true : Chunk147913.wss_priv_kb) ? S : false, null != (I = null == (o = U.crashpad) ? true : Chunk626135.wss_priv_kb) ? I : false, null != (T = null == (a = U.utility) ? true : Chunk70956.wss_priv_kb) ? T : false],
     Z = {
       electron_process_memory_private: G,
       electron_process_memory_private_and_shared: [null != (C = null == (s = U.unknown) ? true : Chunk358085.wss_kb) ? C : false, null != (A = null == (c = U.main) ? true : Chunk998502.wss_kb) ? A : false, null != (N = null == (u = U.renderer) ? true : Chunk981631.wss_kb) ? N : false, null != (P = null == (d = U.gpu) ? true : d.wss_kb) ? P : false, null != (R = null == (f = U.crashpad) ? true : f.wss_kb) ? R : false, null != (w = null == (p = U.utility) ? true : p.wss_kb) ? w : false],
@@ -76,8 +76,8 @@ async function g() {
   } catch (e) {
     return Chunk704806
   }
-  let a = [],
-    o = [],
+  let o = [],
+    a = [],
     l = await Chunk147913.getMemoryUsageBlob(),
     u = new Set;
   for (let r of null != (n = null == Chunk848479 || null == (t = Chunk848479[0]) || null == (e = exports.data) ? true : module.gpus) ? require : [])

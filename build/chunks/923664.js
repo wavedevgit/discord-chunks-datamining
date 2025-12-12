@@ -14,12 +14,12 @@ var Chunk442837 = require("./442837.js"),
 function l(e, t, n) {
   if (n.can(s.Plq.BYPASS_SLOWMODE, e)) returntrue;
   switch (t) {
-    case a.S.SendMessage:
+    case o.S.SendMessage:
       return n.can(s.Plq.MANAGE_CHANNELS, e) || n.can(s.Plq.MANAGE_MESSAGES, e);
-    case a.S.CreateThread:
+    case o.S.CreateThread:
       return n.can(s.Plq.MANAGE_THREADS, e);
     default:
-      (0, o.vE)(t)
+      (0, a.vE)(t)
   }
 }
 

@@ -17,11 +17,11 @@ var Chunk95015 = require("./95015.js"),
 function u(e, t) {
   var n;
   let r = (0, l.Z)(e),
-    a = (0, i.e7)([o.Z], () => o.Z.getNewMemberActions(e), [e]),
+    o = (0, i.e7)([a.Z], () => a.Z.getNewMemberActions(e), [e]),
     c = (0, i.e7)([s.Z], () => s.Z.getCompletedActions(e));
   if (!r) return {};
-  let u = null != (n = null == a ? true : a.findIndex(e => e.channelId === t.id)) ? n : 0,
-    d = u >= 0 && null != a ? a[u] : null,
+  let u = null != (n = null == o ? true : o.findIndex(e => e.channelId === t.id)) ? n : 0,
+    d = u >= 0 && null != o ? o[u] : null,
     f = null != d && (null == c ? true : c[d.channelId]) === true;
   return {
     channelAction: d,
@@ -30,13 +30,13 @@ function u(e, t) {
 }
 
 function d(e, t) {
-  let n = (0, i.e7)([o.Z], () => o.Z.getNewMemberActions(e)),
+  let n = (0, i.e7)([a.Z], () => a.Z.getNewMemberActions(e)),
     r = (0, i.e7)([s.Z], () => s.Z.getCompletedActions(e));
   return null == n ? true : n.find(e => (null == r ? true : r[e.channelId]) !== true && e.channelId !== t)
 }
 
 function f(e) {
   var t;
-  let n = (0, i.e7)([a.ZP], () => a.ZP.getSelfMember(e));
+  let n = (0, i.e7)([o.ZP], () => o.ZP.getSelfMember(e));
   return (0, r.yE)(null != (t = null == n ? true : n.flags) ? t : 0, c.q.COMPLETED_HOME_ACTIONS)
 }

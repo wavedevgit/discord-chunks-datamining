@@ -59,7 +59,7 @@ function y() {
 }
 
 function O(e) {
-  (0, a.lW)({
+  (0, o.lW)({
     type: l.BmY.LOG_MESSAGES,
     pid: g(),
     token: y(),
@@ -68,7 +68,7 @@ function O(e) {
 }
 
 function v(e) {
-  return !o.isPlatformEmbedded || e.width >= f.width && e.height >= f.height
+  return !a.isPlatformEmbedded || e.width >= f.width && e.height >= f.height
 }
 
 function S(e) {

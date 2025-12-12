@@ -30,7 +30,7 @@
     return n(t[i], e, r)
   }
 
-  function a(e, t) {
+  function o(e, t) {
     return t ? "dažas sekundes" : "dažām sekundēm"
   }
   return e.defineLocale("lv", {
@@ -59,7 +59,7 @@
     relativeTime: {
       future: "pēc %s",
       past: "pirms %s",
-      s: a,
+      s: o,
       ss: r,
       m: i,
       mm: r,

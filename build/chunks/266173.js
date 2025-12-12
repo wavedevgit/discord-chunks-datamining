@@ -108,7 +108,7 @@ class P {
     }), m(this, "overrideDefaultWidgetPinned", async (e, t) => {
       if (__OVERLAY__) return;
       let n = l.Z.getWidgetConfig(e);
-      null != n && (null == this._defaultWidgetPinned[e] && (this._defaultWidgetPinned[e] = n.defaultSettings.pinned), await (0, a.K4)(e, {
+      null != n && (null == this._defaultWidgetPinned[e] && (this._defaultWidgetPinned[e] = n.defaultSettings.pinned), await (0, o.K4)(e, {
         defaultSettings: E(h({}, n.defaultSettings), {
           pinned: t
         })
@@ -118,7 +118,7 @@ class P {
       let t = l.Z.getWidgetConfig(e);
       if (null == t || null == this._defaultWidgetPinned[e]) return;
       let n = this._defaultWidgetPinned[e];
-      await (0, a.K4)(e, {
+      await (0, o.K4)(e, {
         defaultSettings: E(h({}, t.defaultSettings), {
           pinned: n
         })
@@ -142,7 +142,7 @@ class R {
       this.updateWidgetPinned(e, n)
     }), m(this, "unpinWidget", async e => {
       let t = A(e);
-      null != t && (this.initializeWidget(e), __OVERLAY__ || await this._config.overrideDefaultWidgetPinned(e, O), await (0, a.xh)(t.id, {
+      null != t && (this.initializeWidget(e), __OVERLAY__ || await this._config.overrideDefaultWidgetPinned(e, O), await (0, o.xh)(t.id, {
         forcedPinnedState: O,
         shouldTrack: v
       }))
@@ -151,8 +151,8 @@ class R {
       let n = this._storage.getWidgetSetting(e),
         r = this._config.getDefaultWidgetPinned(e),
         i = null != (t = null == n ? true : n.pinned) ? t : r,
-        o = A(e);
-      null != o && (e === _.Odu.VOICE && (i = true), __OVERLAY__ || await this._config.restoreDefaultWidgetPinned(e), null != i && await (0, a.xh)(o.id, {
+        a = A(e);
+      null != a && (e === _.Odu.VOICE && (i = true), __OVERLAY__ || await this._config.restoreDefaultWidgetPinned(e), null != i && await (0, o.xh)(a.id, {
         forcedPinnedState: i,
         shouldTrack: v
       }))
@@ -165,12 +165,12 @@ class R {
       let t = f.Z.isNotificationDisabledBySetting(e);
       this.updateNotificationSetting(e, t)
     }), m(this, "disableNotification", async e => {
-      this.initializeNotification(e), await o.Z.setNotificationDisabledSetting(e, S, v)
+      this.initializeNotification(e), await a.Z.setNotificationDisabledSetting(e, S, v)
     }), m(this, "restoreNotification", async e => {
       var t;
       let n = this._storage.getNotificationSetting(e),
         r = null != (t = null == n ? true : n.disabled) && t;
-      null != r && await o.Z.setNotificationDisabledSetting(e, r, v)
+      null != r && await a.Z.setNotificationDisabledSetting(e, r, v)
     }), this._config.initializeAllDefaultWidgetConfigs()
   }
 }
@@ -190,10 +190,10 @@ class L extends Chunk147913.Z {
         voiceWidgetDefaultUnpinned: t,
         videoWidgetDefaultUnpinned: n,
         unlockedOnlyDefaultOverlay: r
-      } = (0, d.Sy)("".concat(__OVERLAY__ ? "LegacyOverlay" : "MainApp", "_ExperimentManager_WidgetSettings"), e), i = new Set, a = new Set, o = t || r, s = n || r;
-      return o ? (i.add(_.Odu.VOICE_V3), i.add(_.Odu.VOICE)) : (a.add(_.Odu.VOICE_V3), a.add(_.Odu.VOICE)), s ? i.add(_.Odu.VIDEO) : a.add(_.Odu.VIDEO), {
+      } = (0, d.Sy)("".concat(__OVERLAY__ ? "LegacyOverlay" : "MainApp", "_ExperimentManager_WidgetSettings"), e), i = new Set, o = new Set, a = t || r, s = n || r;
+      return a ? (i.add(_.Odu.VOICE_V3), i.add(_.Odu.VOICE)) : (o.add(_.Odu.VOICE_V3), o.add(_.Odu.VOICE)), s ? i.add(_.Odu.VIDEO) : o.add(_.Odu.VIDEO), {
         widgetsToOverride: i,
-        widgetsToRestore: a
+        widgetsToRestore: o
       }
     }), m(this, "processWidgetExperiment", async function() {
       let t = arguments.length > 0 && true !== arguments[0] && arguments[0],
@@ -213,11 +213,11 @@ class L extends Chunk147913.Z {
         notificationsDefaultOff: t,
         disableWelcomeNotification: n,
         unlockedOnlyDefaultOverlay: r
-      } = (0, d.Sy)("".concat(__OVERLAY__ ? "LegacyOverlay" : "MainApp", "_ExperimentManager_NotificationSettings"), e), i = new Set, a = new Set;
-      for (let e of w()) r ? i.add(e) : n ? D.has(e) ? i.add(e) : a.add(e) : t && e !== u.i.WELCOME_GENERAL ? i.add(e) : a.add(e);
+      } = (0, d.Sy)("".concat(__OVERLAY__ ? "LegacyOverlay" : "MainApp", "_ExperimentManager_NotificationSettings"), e), i = new Set, o = new Set;
+      for (let e of w()) r ? i.add(e) : n ? D.has(e) ? i.add(e) : o.add(e) : t && e !== u.i.WELCOME_GENERAL ? i.add(e) : o.add(e);
       return {
         notificationsToOverride: i,
-        notificationsToRestore: a
+        notificationsToRestore: o
       }
     }), m(this, "processNotificationExperiment", async e => {
       if (__OVERLAY__) return;

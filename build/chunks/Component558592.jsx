@@ -1,5 +1,5 @@
 /** Chunk was on 84735 **/
-/** chunk id: 558592, original params: e,r,a (module,exports,require) **/
+/** chunk id: 558592, original params: r,e,a (module,exports,require) **/
 require.r(exports), require.d(exports, {
   BadgeImageWithProgressCircle: () => l,
   default: () => d
@@ -10,20 +10,20 @@ var Chunk925477 = require("./925477.js"),
   Chunk793030 = require("./793030.js"),
   Chunk410030 = require("./410030.js"),
   Chunk457082 = require("./457082.jsx"),
-  Chunk164300 = require("./164300.js");
-let l = e => {
+  Chunk768917 = require("./768917.js");
+let l = r => {
     let {
-      src: r,
+      src: e,
       alt: a,
       progressCircleText: l,
       progressCirclePercent: d,
       progressCircleUrgency: g
-    } = e, u = (0, t.ZP)();
+    } = r, u = (0, t.ZP)();
     return (0, c.jsxs)("div", {
       className: i.badgeImageContainer,
       children: [(0, c.jsx)("img", {
         alt: a,
-        src: r,
+        src: e,
         className: i.badgeImage
       }), null != l && null != d && null != g && (0, c.jsx)("div", {
         className: i.progressCircleContainer,

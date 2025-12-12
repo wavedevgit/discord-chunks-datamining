@@ -1,4 +1,4 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 49941 **/
 /** chunk id: 750312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk313201 = require("./313201.js"),
@@ -19,36 +19,36 @@ var Chunk54381 = require("./54381.js"),
   Chunk840367 = require("./840367.jsx"),
   Chunk34335 = require("./34335.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk391122 = require("./391122.js");
+  Chunk415734 = require("./415734.js");
 
 function v(e) {
   let {
     index: t,
     widget: n,
-    additionalManageWidgetMenuItems: a,
+    additionalManageWidgetMenuItems: l,
     children: o
-  } = e, c = i.useRef(null), u = i.useRef(null), {
+  } = e, s = i.useRef(null), u = i.useRef(null), {
     registerManageWidgetButtonRef: d,
     manageFocusOnReorder: g
   } = (0, h.j)();
   i.useLayoutEffect(() => {
     let e = d(n.type);
-    return e(c.current), () => e(null)
+    return e(s.current), () => e(null)
   }, [d, n.type]);
-  let m = i.useMemo(() => {
+  let b = i.useMemo(() => {
       var e;
-      return null != (e = n.id) ? e : (0, s.hQ)()
+      return null != (e = n.id) ? e : (0, c.hQ)()
     }, [n.id]),
     {
       isDragging: v,
       dragSourcePosition: j
     } = (0, p.Y9)({
-      dragRef: c,
+      dragRef: s,
       dropRef: u,
       index: t,
       listType: "WIDGETS",
       itemType: "WIDGET",
-      itemId: m,
+      itemId: b,
       itemPreviewProps: {
         widget: n
       },
@@ -57,22 +57,22 @@ function v(e) {
     }),
     x = null != j,
     P = x && t < j,
-    I = x && t > j;
+    _ = x && t > j;
   return (0, r.jsxs)("div", {
     ref: u,
-    className: l()(O.dragAndDropTarget, {
+    className: a()(O.dragAndDropTarget, {
       [O.dropIndicatorBefore]: P,
-      [O.dropIndicatorAfter]: I,
+      [O.dropIndicatorAfter]: _,
       [O.isDragging]: v
     }),
     "aria-label": y.intl.formatToPlainString(y.t.YLczh4, {
       positionNumber: t + 1
     }),
-    children: [(0, r.jsx)(b.Z, {
-      buttonRef: c,
+    children: [(0, r.jsx)(m.Z, {
+      buttonRef: s,
       widget: n,
       className: O.dragHandleButton,
-      additionalMenuItems: a
+      additionalMenuItems: l
     }), o]
   })
 }
@@ -82,39 +82,39 @@ function j(e) {
     userId: t,
     widget: n,
     children: i,
-    disableInteraction: a,
+    disableInteraction: l,
     className: f,
     index: p,
-    trailingContent: b,
+    trailingContent: m,
     headerTitle: h,
     headerSubtitle: y,
     headerActionButtons: j,
     headerClassName: x,
     additionalManageWidgetMenuItems: P
-  } = e, I = (0, s.Dt)(), w = (0, c.e7)([u.default], () => u.default.getId() === t), {
-    trackUserProfileAction: S
-  } = (0, d.KZ)(), E = (0, g.Z)({
+  } = e, _ = (0, c.Dt)(), I = (0, s.e7)([u.default], () => u.default.getId() === t), {
+    trackUserProfileAction: w
+  } = (0, d.KZ)(), S = (0, g.Z)({
     widget: n,
-    onAction: S
-  }), _ = w && null != p && !a, T = () => (0, r.jsxs)("div", {
-    className: l()(O.container, f),
-    children: [(0, r.jsx)(m.Z, {
+    onAction: w
+  }), E = I && null != p && !l, T = () => (0, r.jsxs)("div", {
+    className: a()(O.container, f),
+    children: [(0, r.jsx)(b.Z, {
       userId: t,
-      headingId: I,
+      headingId: _,
       title: h,
       subtitle: y,
       actionButtons: j,
       widget: n,
-      disableInteraction: a,
+      disableInteraction: l,
       className: x
     }), (0, r.jsxs)(o.y5t, {
-      children: [i, b]
+      children: [i, m]
     })]
   });
   return (0, r.jsx)("section", {
-    ref: E,
-    "aria-labelledby": I,
-    children: _ ? (0, r.jsx)(v, {
+    ref: S,
+    "aria-labelledby": _,
+    children: E ? (0, r.jsx)(v, {
       index: null != p ? p : 0,
       widget: n,
       additionalManageWidgetMenuItems: P,

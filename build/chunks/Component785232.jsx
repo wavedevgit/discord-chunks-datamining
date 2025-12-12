@@ -15,8 +15,8 @@ function l(e, t) {
   if (null == e) return {};
   var n, r, i = c(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -24,8 +24,8 @@ function l(e, t) {
 function c(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let u = function(e) {
@@ -36,12 +36,12 @@ let u = function(e) {
     isTyping: u,
     className: d
   } = e, f = l(e, ["recipients", "size", "status", "isTyping", "className"]);
-  let p = a.ny6[n],
+  let p = o.ny6[n],
     _ = (0, i.Wu)([s.default], () => t.slice(0, 2).map(e => {
       let t = s.default.getUser(e);
       if (null != t) return t.getAvatarURL(true, p.size, false)
     }), [t, p.size]);
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     "aria-label": f["aria-label"],
     "aria-hidden": f["aria-hidden"],
     backSrc: _[0],

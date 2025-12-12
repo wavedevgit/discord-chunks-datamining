@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk86040 = require("./86040.jsx"),
   Chunk51499 = require("./51499.jsx"),
   Chunk614277 = require("./614277.jsx"),
-  Chunk902786 = require("./902786.js");
+  Chunk418651 = require("./418651.js");
 
 function u() {
   let [e, t] = Chunk473749.useState(false), n = async () => {
@@ -19,7 +19,7 @@ function u() {
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsx)(Chunk51499.Z, {}), (0, Chunk54381.jsx)(Chunk614277.C3, {
       children: (0, Chunk54381.jsx)(Chunk86040.C, {
-        className: Chunk902786.body,
+        className: Chunk418651.body,
         isEmailResent: module,
         resendEmail: require
       })

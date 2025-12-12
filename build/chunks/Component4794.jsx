@@ -7,13 +7,13 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk55160 = require("./55160.js"),
   Chunk996435 = require("./996435.js"),
   Chunk36361 = require("./36361.jsx"),
   Chunk530171 = require("./530171.jsx"),
   Chunk774642 = require("./774642.js"),
-  Chunk816902 = require("./816902.js");
+  Chunk445642 = require("./445642.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,7 +59,7 @@ function g(e) {
     node: t
   } = e, {
     useTitle: n,
-    layout: a,
+    layout: o,
     useCollapsedSubtitle: p
   } = t, [m, g] = i.useState(false), [E, b] = i.useState(true);
   i.useEffect(() => l.Z.subscribe(e => {
@@ -96,7 +96,7 @@ function g(e) {
       "--custom-base-setting-wrapper-horizontal-padding": "".concat(d.q, "px"),
       "--custom-base-setting-wrapper-vertical-padding": "".concat(d.G, "px")
     },
-    className: o()({
+    className: a()({
       [f.open]: m
     }),
     children: (0, r.jsx)(u.I, {
@@ -106,7 +106,7 @@ function g(e) {
       onExpandedChange: g,
       onExpandedChangeComplete: v,
       animate: E,
-      children: a.map(e => (0, r.jsx)(c.Z, {
+      children: o.map(e => (0, r.jsx)(c.Z, {
         node: e
       }, e.key))
     })

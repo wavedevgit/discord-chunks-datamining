@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk960048 = require("./960048.js");
-let o = {},
+let a = {},
   s = () => ({
     data: null,
     status: "not_loaded"
@@ -15,7 +15,7 @@ let o = {},
 
 function l(e) {
   var t, n, r;
-  return null != (r = (t = o)[n = e]) ? r : t[n] = s()
+  return null != (r = (t = a)[n = e]) ? r : t[n] = s()
 }
 
 function c(e) {
@@ -54,7 +54,7 @@ function p(e) {
   let {
     error: t
   } = e;
-  a.Z.captureException(t)
+  o.Z.captureException(t)
 }
 
 function _(e) {
@@ -69,7 +69,7 @@ function m(e) {
   let {
     error: t
   } = e;
-  a.Z.captureException(t)
+  o.Z.captureException(t)
 }
 
 function h(e) {
@@ -83,7 +83,7 @@ function g(e) {
   let {
     error: t
   } = e;
-  a.Z.captureException(t)
+  o.Z.captureException(t)
 }
 
 function E(e) {
@@ -107,7 +107,7 @@ function y(e) {
     wishlistId: t,
     error: n
   } = e;
-  l(t).updatedAt = true, a.Z.captureException(n)
+  l(t).updatedAt = true, o.Z.captureException(n)
 }
 
 function O(e) {
@@ -115,13 +115,13 @@ function O(e) {
   let {
     recipientId: r,
     skuId: i
-  } = e, a = n(621853).Z.getFirstWishlistId(r);
-  null != a && null != o[a] && (null == (t = o[a].data) ? true : t.hasSkuId(i)) && (o[a].updatedAt = true)
+  } = e, o = n(621853).Z.getFirstWishlistId(r);
+  null != o && null != a[o] && (null == (t = a[o].data) ? true : t.hasSkuId(i)) && (a[o].updatedAt = true)
 }
 class v extends Chunk442837.ZP.Store {
   get(e) {
     var t;
-    return null != (t = o[e]) ? t : s()
+    return null != (t = a[e]) ? t : s()
   }
   getWishlist(e) {
     return this.get(e).data

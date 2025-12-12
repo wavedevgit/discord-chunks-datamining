@@ -16,10 +16,10 @@ function s(e) {
       children: r,
       className: s,
       innerClassName: d,
-      onChange: c,
-      "aria-label": u,
-      "aria-describedby": f,
-      filters: g,
+      onChange: u,
+      "aria-label": c,
+      "aria-describedby": g,
+      filters: f,
       multiple: p = false,
       disabled: m = false,
       submitting: v = false
@@ -79,11 +79,11 @@ function s(e) {
         children: r
       }), (0, n.jsx)(o.Z, {
         tabIndex: 0,
-        onChange: c,
-        filters: g,
+        onChange: u,
+        filters: f,
         multiple: p,
-        "aria-label": u,
-        "aria-describedby": f,
+        "aria-label": c,
+        "aria-describedby": g,
         disabled: m
       })]
     })

@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk716557 = require("./716557.js");
+  Chunk279737 = require("./279737.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -52,8 +52,8 @@ function u(e, t) {
   if (null == e) return {};
   var n, r, i = d(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -61,22 +61,22 @@ function u(e, t) {
 function d(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let f = {
-    UP: Chunk716557.directionUp,
-    RIGHT: Chunk716557.directionRight,
-    DOWN: Chunk716557.directionDown,
-    LEFT: Chunk716557.directionLeft
+    UP: Chunk279737.directionUp,
+    RIGHT: Chunk279737.directionRight,
+    DOWN: Chunk279737.directionDown,
+    LEFT: Chunk279737.directionLeft
   },
   p = e => {
     var {
       direction: t = f.DOWN,
       width: n = 24,
-      height: a = 24,
-      color: o = "currentColor",
+      height: o = 24,
+      color: a = "currentColor",
       className: l,
       foreground: d,
       expanded: p
@@ -93,8 +93,8 @@ let f = {
       className: l,
       size: "custom",
       width: n,
-      height: a,
-      color: null != o ? o : "currentColor",
+      height: o,
+      color: null != a ? a : "currentColor",
       colorClass: d
     }))
   };

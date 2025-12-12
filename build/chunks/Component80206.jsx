@@ -10,7 +10,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388905 = require("./388905.jsx"),
-  Chunk253623 = require("./253623.js");
+  Chunk294707 = require("./294707.js");
 
 function c(e) {
   let {
@@ -21,7 +21,7 @@ function c(e) {
     onButtonClick: d,
     loading: h
   } = e;
-  return (0, r.jsx)(l.ZP, {
+  return (0, r.jsx)(a.ZP, {
     className: o.container,
     children: (0, r.jsxs)(i.Kqy, {
       align: "center",
@@ -38,8 +38,8 @@ function c(e) {
             justify: "center",
             className: o.image,
             children: u
-          }), h && (0, r.jsx)(a.$jN, {
-            type: a.$jN.Type.SPINNING_CIRCLE
+          }), h && (0, r.jsx)(l.$jN, {
+            type: l.$jN.Type.SPINNING_CIRCLE
           }), (0, r.jsx)(i.X6q, {
             variant: "heading-xl/semibold",
             color: "text-strong",

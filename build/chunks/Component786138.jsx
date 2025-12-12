@@ -34,7 +34,7 @@ function y(e) {
   } = e, {
     desktopSourceId: A,
     lastPickedContent: N
-  } = (0, a.cj)([c.ZP, f.Z], () => {
+  } = (0, o.cj)([c.ZP, f.Z], () => {
     var e;
     let {
       desktopSource: t
@@ -43,7 +43,7 @@ function y(e) {
       desktopSourceId: null == t ? true : t.id,
       lastPickedContent: n
     }
-  }), P = (0, a.e7)([d.Z], () => d.Z.getState().soundshareEnabled), R = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), w = (0, a.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), D = (0, a.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), x = (0, m.Z)(O, C), L = (0, _.Z)(O, C, g.Vq), j = null != A && w && (!A.startsWith("screen") || D), M = (0, a.e7)([f.Z], () => f.Z.getUseSystemScreensharePicker() && (0, p.isLinux)()), k = i.useCallback(() => {
+  }), P = (0, o.e7)([d.Z], () => d.Z.getState().soundshareEnabled), R = f.Z.supports(E.AN.DESKTOP_CAPTURE_APPLICATIONS), w = (0, o.e7)([f.Z], () => f.Z.supports(E.AN.SOUNDSHARE)), D = (0, o.e7)([f.Z], () => f.Z.supportsScreenSoundshare()), x = (0, m.Z)(O, C), L = (0, _.Z)(O, C, g.Vq), j = null != A && w && (!A.startsWith("screen") || D), M = (0, o.e7)([f.Z], () => f.Z.getUseSystemScreensharePicker() && (0, p.isLinux)()), k = i.useCallback(() => {
     (null == A ? true : A.startsWith("prepicked:")) ? f.Z.getMediaEngine().eachConnection(e => {
       e.context === E.Yn.STREAM && e.presentDesktopSourcePicker("window")
     }): v()
@@ -70,34 +70,34 @@ function y(e) {
       soundshareEnabled: !P
     }), s.Z.setGoLiveSource(r)
   }, [A, P]);
-  if (null == O) return (0, r.jsx)(o.sNh, {
+  if (null == O) return (0, r.jsx)(a.sNh, {
     id: "share-your-screen",
     label: b.intl.string(b.t.fjBNo1),
-    icon: o.hGI,
+    icon: a.hGI,
     action: v
   });
-  let V = p.isPlatformEmbedded ? (0, r.jsx)(o.sNh, {
+  let V = p.isPlatformEmbedded ? (0, r.jsx)(a.sNh, {
       id: "stream-settings",
       label: b.intl.string(b.t.ytAD9d),
       children: x
     }) : null,
-    H = j ? (0, r.jsx)(o.S89, {
+    H = j ? (0, r.jsx)(a.S89, {
       id: "stream-settings-audio-enable",
       label: T ? b.intl.string(b.t.af2Tw1) : b.intl.string(b.t.ZJEHt7),
       checked: P,
       action: B
     }) : null,
-    Y = !R || I || M ? null : (0, r.jsx)(o.sNh, {
+    Y = !R || I || M ? null : (0, r.jsx)(a.sNh, {
       id: "change-windows",
       label: F,
-      icon: o.hGI,
+      icon: a.hGI,
       action: k
     }),
-    W = (0, r.jsx)(o.sNh, {
+    W = (0, r.jsx)(a.sNh, {
       id: "stop-streaming",
       color: "danger",
       label: b.intl.string(b.t.S5anIc),
-      icon: o.g5r,
+      icon: a.g5r,
       action: () => (0, u.Z)(O)
     });
   return T ? (0, r.jsxs)(r.Fragment, {

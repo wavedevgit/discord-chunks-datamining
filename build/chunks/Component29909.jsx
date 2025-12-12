@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk68405 = require("./68405.js"),
@@ -15,12 +15,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk120031 = require("./120031.js");
+  Chunk796016 = require("./796016.js");
 let m = Chunk473749.memo(function(e) {
   let {
     width: t,
     height: n,
-    src: a,
+    src: o,
     url: m,
     format: h,
     className: g
@@ -35,7 +35,7 @@ let m = Chunk473749.memo(function(e) {
   let S = e => {
     e.preventDefault(), e.stopPropagation(), b(true), y ? (0, c.PF)(m) : ((0, c.uL)({
       url: m,
-      src: a,
+      src: o,
       width: t,
       height: n,
       format: h
@@ -45,7 +45,7 @@ let m = Chunk473749.memo(function(e) {
     text: O,
     children: (0, r.jsx)(l.kL8, {
       "aria-label": O,
-      className: o()(g, _.gifFavoriteButton, {
+      className: a()(g, _.gifFavoriteButton, {
         [_.selected]: y,
         [_.showPulse]: E
       }),

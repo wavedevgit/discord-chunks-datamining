@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,7 +41,7 @@ class u extends(r = Chunk442837.ZP.PersistedStore) {
     }
   }
 }
-o(u, "displayName", "NewUserStore"), o(u, "persistKey", "nuf");
+a(u, "displayName", "NewUserStore"), a(u, "persistKey", "nuf");
 let d = new u(Chunk570140.Z, {
     NUF_NEW_USER: c,
     NUF_COMPLETE: l

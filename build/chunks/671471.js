@@ -9,8 +9,8 @@ module.exports = function(e) {
     }),
     r = "decltype\\(auto\\)",
     i = "[a-zA-Z_]\\w*::",
-    a = "<[^<>]+>",
-    o = "(?!struct)(" + r + "|" + t.optional(i) + "[a-zA-Z_]\\w*" + t.optional(a) + ")",
+    o = "<[^<>]+>",
+    a = "(?!struct)(" + r + "|" + t.optional(i) + "[a-zA-Z_]\\w*" + t.optional(o) + ")",
     s = {
       className: "type",
       begin: "\\b[a-z\\d_]*_t\\b"
@@ -103,7 +103,7 @@ module.exports = function(e) {
     },
     E = {
       className: "function",
-      begin: "(" + o + "[\\*&\\s]+)+" + p,
+      begin: "(" + a + "[\\*&\\s]+)+" + p,
       returnBegin: true,
       end: /[{;=]/,
       excludeEnd: true,

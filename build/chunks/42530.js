@@ -6,13 +6,13 @@ require.d(exports, {
   Ql: () => r,
   YD: () => i,
   i$: () => s,
-  nO: () => o,
-  u9: () => a
+  nO: () => a,
+  u9: () => o
 });
 let r = [],
   i = [0],
-  a = [0, 0],
-  o = {
+  o = [0, 0],
+  a = {
     path: [0, 0],
     offset: 0
   },

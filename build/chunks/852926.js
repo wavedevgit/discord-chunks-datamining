@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 852926, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  GC: () => b,
+  GC: () => _,
   _X: () => m,
   br: () => f,
   em: () => h,
@@ -55,7 +55,7 @@ let h = async (e, t, n) => {
       name: null != (t = (0, s.H9)(e)) ? t : "unknown"
     }
   })), t
-}), b = e => (0, c.FJ)(e, e => {
+}), _ = e => (0, c.FJ)(e, e => {
   let t = "";
   return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = (0, s.BB)(e.modeOptions.shortcut)), t
 })

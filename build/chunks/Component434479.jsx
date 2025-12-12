@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 434479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => p
@@ -10,9 +10,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk589440 = require("./589440.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk879917 = require("./879917.js"),
-  Chunk642915 = require("./642915.js"),
-  Chunk323453 = require("./323453.js");
+  Chunk780462 = require("./780462.js"),
+  Chunk55940 = require("./55940.js"),
+  Chunk509612 = require("./509612.js");
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -52,14 +52,14 @@ function p(e) {
       className: i,
       innerClassName: p,
       renderIcon: g,
-      text: b,
-      selected: m,
-      trailing: y,
-      background: O,
-      showUnread: v = false,
-      ref: j
+      text: m,
+      selected: b,
+      trailing: _,
+      background: y,
+      showUnread: O = false,
+      ref: v
     } = e,
-    C = function(e, t) {
+    j = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -74,17 +74,17 @@ function p(e) {
       }
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]);
-  let x = (0, a.JA)(n),
-    E = null != (t = (0, o.q)(b)) ? t : "";
+  let C = (0, o.JA)(n),
+    x = null != (t = (0, a.q)(m)) ? t : "";
   return (0, r.jsx)("li", {
-    ref: j,
-    children: (0, r.jsxs)(s.kL8, h(f({}, C), {
-      buttonProps: h(f({}, x), {
+    ref: v,
+    children: (0, r.jsxs)(s.kL8, h(f({}, j), {
+      buttonProps: h(f({}, C), {
         id: n,
         role: "button"
       }),
       tag: "div",
-      "aria-label": E,
+      "aria-label": x,
       focusProps: {
         offset: {
           top: 1,
@@ -92,13 +92,13 @@ function p(e) {
           right: 4
         }
       },
-      onContextMenu: null != C.onContextMenu ? C.onContextMenu : e => {
+      onContextMenu: null != j.onContextMenu ? j.onContextMenu : e => {
         e.stopPropagation()
       },
       className: l()(u.containerDefault, d.wrapper, {
-        [d.modeSelected]: m
+        [d.modeSelected]: b
       }, i),
-      children: [O, v ? (0, r.jsx)("div", {
+      children: [y, O ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
         className: l()([d.link, d.basicChannelRowLink, p]),
@@ -110,8 +110,8 @@ function p(e) {
           }), (0, r.jsx)("div", {
             className: d.name,
             "aria-hidden": true,
-            children: b
-          }), y]
+            children: m
+          }), _]
         })
       })]
     }))

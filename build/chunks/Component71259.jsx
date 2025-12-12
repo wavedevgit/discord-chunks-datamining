@@ -1,7 +1,7 @@
-/** Chunk was on 6841 **/
+/** Chunk was on 37709 **/
 /** chunk id: 71259, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => j
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,9 +19,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk290511 = require("./290511.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk935954 = require("./935954.js");
+  Chunk362791 = require("./362791.js");
 
-function O(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function O(e) {
   return e
 }
 
-function j(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,24 +53,24 @@ function j(e, t) {
   }), e
 }
 
-function _(e) {
+function j(e) {
   let {
     guildId: t,
     onComplete: n,
-    isLastStep: _,
+    isLastStep: j,
     disableTracking: y
   } = e, N = i.useRef(false), {
     onboardingConnections: P,
     isLoading: C
-  } = (0, o.cj)([f.Z], () => ({
-    onboardingConnections: f.Z.getConnections(t),
-    isLoading: f.Z.isLoading()
+  } = (0, o.cj)([m.Z], () => ({
+    onboardingConnections: m.Z.getConnections(t),
+    isLoading: m.Z.isLoading()
   })), E = (0, o.e7)([c.default, d.Z], () => P.some(e => {
-    if (e.connection_type === g.zz.APPLICATION && null != e.application_id) {
+    if (e.connection_type === h.zz.APPLICATION && null != e.application_id) {
       let t = c.default.getNewestTokenForApplication(e.application_id);
       return c.default.getFetchStateForApplication(e.application_id) === c.FetchState.FETCHED && null != t
     }
-    if (e.connection_type === g.zz.PROVIDER_CONNECTED_ACCOUNT && null != e.provider_id) {
+    if (e.connection_type === h.zz.PROVIDER_CONNECTED_ACCOUNT && null != e.provider_id) {
       let t = d.Z.getAccount(null, e.provider_id);
       return null != t && !t.revoked
     }
@@ -78,9 +78,9 @@ function _(e) {
   }), [P]);
   i.useEffect(() => {
     if (y || C || 0 === P.length || N.current) return;
-    let e = (0, m.OZ)(P),
-      n = (0, m.N4)(P);
-    u.default.track(h.rMx.GUILD_ONBOARDING_STEP_VIEWED, j(O({}, (0, s.hH)(t)), {
+    let e = (0, f.OZ)(P),
+      n = (0, f.N4)(P);
+    u.default.track(x.rMx.GUILD_ONBOARDING_STEP_VIEWED, O(v({}, (0, a.hH)(t)), {
       step: p.Xx,
       required: false,
       provider_connections_connected: e.connected,
@@ -91,15 +91,15 @@ function _(e) {
   }, [t, C, P, y]);
   let D = i.useCallback(() => {
     if (!y) {
-      let e = (0, m.OZ)(P),
-        n = (0, m.N4)(P);
-      u.default.track(h.rMx.GUILD_ONBOARDING_STEP_COMPLETED, j(O({}, (0, s.hH)(t)), {
+      let e = (0, f.OZ)(P),
+        n = (0, f.N4)(P);
+      u.default.track(x.rMx.GUILD_ONBOARDING_STEP_COMPLETED, O(v({}, (0, a.hH)(t)), {
         step: p.Xx,
         skipped: !E,
         back: false,
         options_selected: 0,
         in_onboarding: true,
-        is_final_step: _,
+        is_final_step: j,
         provider_connections_connected: e.connected,
         provider_connections_not_connected: e.notConnected,
         application_connections_connected: n.connected,
@@ -107,58 +107,58 @@ function _(e) {
       }))
     }
     n()
-  }, [n, y, t, P, E, _]);
+  }, [n, y, t, P, E, j]);
   return C ? (0, r.jsxs)("div", {
-    className: v.loadingContainer,
-    children: [(0, r.jsx)(a.$jN, {}), (0, r.jsx)(a.Text, {
+    className: b.loadingContainer,
+    children: [(0, r.jsx)(l.$jN, {}), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "text-muted",
-      children: x.intl.string(x.t.ZTNur7)
+      children: _.intl.string(_.t.ZTNur7)
     })]
   }) : (0, r.jsx)("div", {
-    className: v.container,
+    className: b.container,
     children: (0, r.jsxs)("div", {
-      className: v.content,
+      className: b.content,
       children: [(0, r.jsxs)("div", {
-        className: v.scrollerContent,
+        className: b.scrollerContent,
         children: [(0, r.jsxs)("div", {
-          className: v.header,
+          className: b.header,
           children: [(0, r.jsx)("div", {
-            className: v.headerTitle,
-            children: (0, r.jsx)(a.Heading, {
+            className: b.headerTitle,
+            children: (0, r.jsx)(l.Heading, {
               variant: "heading-xl/semibold",
-              children: x.intl.string(x.t.eDVMrA)
+              children: _.intl.string(_.t.eDVMrA)
             })
           }), (0, r.jsx)("div", {
-            className: v.headerDescription,
-            children: (0, r.jsx)(a.Text, {
+            className: b.headerDescription,
+            children: (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
               color: "text-muted",
-              children: x.intl.string(x.t.BozOXu)
+              children: _.intl.string(_.t.BozOXu)
             })
           })]
         }), (0, r.jsx)("div", {
-          className: v.connectionsListScroller,
+          className: b.connectionsListScroller,
           children: (0, r.jsx)("div", {
-            className: v.connectionsList,
-            children: P.map((e, n) => (0, r.jsx)(b.Z, {
+            className: b.connectionsList,
+            children: P.map((e, n) => (0, r.jsx)(g.Z, {
               connection: e,
               guildId: t,
-              location: l.Z.GUILD_ONBOARDING
+              location: s.Z.GUILD_ONBOARDING
             }, n))
           })
         })]
       }), (0, r.jsx)("div", {
-        className: v.footer,
+        className: b.footer,
         children: (0, r.jsxs)("div", {
-          className: v.actions,
+          className: b.actions,
           children: [(0, r.jsx)("div", {}), (0, r.jsx)("div", {
-            className: v.primaryActions,
-            children: (0, r.jsx)(a.Button, {
+            className: b.primaryActions,
+            children: (0, r.jsx)(l.Button, {
               variant: E ? "primary" : "secondary",
               onClick: D,
-              text: E ? _ ? "".concat(x.intl.string(x.t["8SuVoE"]), " \uD83C\uDF89") : x.intl.string(x.t.PDTjLN) : x.intl.string(x.t["5Wxrcd"]),
-              icon: _ ? true : a.d4D,
+              text: E ? j ? "".concat(_.intl.string(_.t["8SuVoE"]), " \uD83C\uDF89") : _.intl.string(_.t.PDTjLN) : _.intl.string(_.t["5Wxrcd"]),
+              icon: j ? true : l.d4D,
               iconPosition: "end"
             })
           })]

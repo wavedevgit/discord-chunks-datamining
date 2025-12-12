@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 608949, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -24,7 +24,7 @@ class f extends(r = Chunk442837.ZP.PersistedStore) {
     return d
   }
   initialize(e) {
-    this.waitFor(o.Z, s.Z, a.Z), null != e && (d = e)
+    this.waitFor(a.Z, s.Z, o.Z), null != e && (d = e)
   }
   getNotificationStateForGuild(e) {
     return d[e]
@@ -39,7 +39,7 @@ let h = new f(Chunk570140.Z, {
     var t, n, r, i, l, f, h, p;
     let {
       guildId: g
-    } = e, b = null != (r = null == (t = a.Z.getGuild(g)) ? true : t.premiumSubscriberCount) ? r : 0, m = s.Z.getStateForGuild(g), y = o.Z.getStateForGuild(g), O = (0, c.h)([...Object.values(null != (i = null == m ? true : m.unlockedPowerups) ? i : {}), ...Object.values(null != (l = null == y ? true : y.entitlements) ? l : {})]);
+    } = e, m = null != (r = null == (t = o.Z.getGuild(g)) ? true : t.premiumSubscriberCount) ? r : 0, b = s.Z.getStateForGuild(g), _ = a.Z.getStateForGuild(g), y = (0, c.h)([...Object.values(null != (i = null == b ? true : b.unlockedPowerups) ? i : {}), ...Object.values(null != (l = null == _ ? true : _.entitlements) ? l : {})]);
     h = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -53,8 +53,8 @@ let h = new f(Chunk570140.Z, {
       return e
     }({}, d), p = p = {
       [g]: {
-        lastSeenWarningNotification: new Date(null != (f = null == (n = O[O.length - 1]) ? true : n.ends_at) ? f : Date.now()).getTime(),
-        lastBoostCount: b
+        lastSeenWarningNotification: new Date(null != (f = null == (n = y[y.length - 1]) ? true : n.ends_at) ? f : Date.now()).getTime(),
+        lastBoostCount: m
       }
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(h, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
       var n = Object.keys(e);

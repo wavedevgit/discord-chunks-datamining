@@ -207,7 +207,7 @@ class g extends Chunk836560.EventEmitter {
     return this.props.focused && null == this.props.expressionPickerView && (e > 0 || t || n.showEmpty)
   }
   selectResult(e, t, n) {
-    var r, i, o;
+    var r, i, a;
     if (!this.state.isVisible) returnfalse;
     let {
       type: s,
@@ -227,7 +227,7 @@ class g extends Chunk836560.EventEmitter {
       tabOrEnter: n,
       queryText: null == (r = this.state.query) ? true : r.queryText
     });
-    return null != p && (0, a.Qt)(s, null != (o = p.type) ? o : null, this.props.channel, p.metadata), true
+    return null != p && (0, o.Qt)(s, null != (a = p.type) ? a : null, this.props.channel, p.metadata), true
   }
   setState(e) {
     for (let t in e)

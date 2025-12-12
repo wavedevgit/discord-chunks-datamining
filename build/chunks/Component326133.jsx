@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk606992 = require("./606992.js"),
   Chunk51062 = require("./51062.js"),
   Chunk918559 = require("./918559.js"),
-  Chunk109137 = require("./109137.js");
+  Chunk671982 = require("./671982.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,8 +69,8 @@ function N(e, t) {
   if (null == e) return {};
   var n, r, i = P(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -78,8 +78,8 @@ function N(e, t) {
 function P(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let R = 490,
@@ -88,7 +88,7 @@ let R = 490,
   x = 200,
   L = 120,
   j = Chunk473749.forwardRef(function(e, t) {
-    var n, a, I, C, P, j, M, k, U;
+    var n, o, I, C, P, j, M, k, U;
     let {
       channel: G,
       type: Z,
@@ -117,7 +117,7 @@ let R = 490,
     if (i.useEffect(() => {
         var e, t;
         B(z.isVisible, null != (t = null == (e = z.query) ? true : e.type) ? t : null)
-      }, [B, z.isVisible, null == (a = z.query) ? true : a.type]), !z.isVisible || null == z.query || true === $) return null;
+      }, [B, z.isVisible, null == (o = z.query) ? true : o.type]), !z.isVisible || null == z.query || true === $) return null;
     let en = null != (P = z.query.typeInfo.renderResults({
       results: z.query.results,
       selectedIndex: z.selectedIndex,
@@ -138,12 +138,12 @@ let R = 490,
       },
       ei = R;
     null != $ && (ei = (null == (j = Z.autocomplete) ? true : j.small) ? x : (null == (M = z.query) ? true : M.type) === b.eq.EMOJIS_AND_STICKERS ? w : D);
-    let ea = Math.max(F, null != (k = null == V || null == (C = V.current) ? true : C.clientHeight) ? k : 0),
-      eo = Math.min(.5 * window.innerHeight, ea);
-    ei = Math.min(window.innerHeight - L - eo - (null != H ? H : 0), ei);
+    let eo = Math.max(F, null != (k = null == V || null == (C = V.current) ? true : C.clientHeight) ? k : 0),
+      ea = Math.min(.5 * window.innerHeight, eo);
+    ei = Math.min(window.innerHeight - L - ea - (null != H ? H : 0), ei);
     let es = (0, r.jsx)(p.ZP, {
       id: Y,
-      className: o()(S.autocomplete, er),
+      className: a()(S.autocomplete, er),
       innerClassName: S.autocompleteInner,
       onMouseDown: e => e.preventDefault(),
       children: (0, r.jsx)(s.bG, {

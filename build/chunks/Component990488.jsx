@@ -1,4 +1,4 @@
-/** Chunk was on 93671 **/
+/** Chunk was on 74240 **/
 /** chunk id: 990488, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => j,
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk707592 = require("./707592.jsx"),
   Chunk981631 = require("./981631.js");
 
-function g(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function g(e) {
   return e
 }
 
-function p(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,17 +51,17 @@ function p(e, t) {
   }), e
 }
 
-function v(e) {
+function b(e) {
   let {
     guildId: t,
     formFields: n,
     updateFormFields: l
-  } = e, s = (0, i.e7)([a.Z], () => {
+  } = e, a = (0, i.e7)([s.Z], () => {
     var e;
-    return null == (e = a.Z.getGuild(t)) ? true : e.rulesChannelId
+    return null == (e = s.Z.getGuild(t)) ? true : e.rulesChannelId
   }), c = (e, t) => {
     let r = n[e];
-    l([...n.slice(0, e), p(g({}, r), {
+    l([...n.slice(0, e), v(p({}, r), {
       response: t
     }), ...n.slice(e + 1)])
   };
@@ -69,18 +69,18 @@ function v(e) {
     children: n.map((e, t) => ((e, t) => {
       switch (e.field_type) {
         case o.QJ.TERMS:
-          return (0, r.jsx)(b.dd, {
-            channelId: s,
+          return (0, r.jsx)(x.dd, {
+            channelId: a,
             formField: e,
             onChange: e => ((e, t) => {
               let r = n[e];
-              l([...n.slice(0, e), p(g({}, r), {
+              l([...n.slice(0, e), v(p({}, r), {
                 response: t
               }), ...n.slice(e + 1)])
             })(t, e)
           }, t);
         case o.QJ.TEXT_INPUT:
-          return (0, r.jsx)(x.zY, {
+          return (0, r.jsx)(h.zY, {
             formField: e,
             autofocus: 0 === t,
             onChange: e => c(t, e)
@@ -98,7 +98,7 @@ function v(e) {
               let {
                 value: r
               } = t, i = n[e];
-              l([...n.slice(0, e), p(g({}, i), {
+              l([...n.slice(0, e), v(p({}, i), {
                 response: r
               }), ...n.slice(e + 1)])
             })(t, e)
@@ -112,18 +112,18 @@ function j(e) {
   let t, {
       guildId: n,
       formFields: l,
-      updateFormFields: a,
+      updateFormFields: s,
       disableVerification: o
     } = e,
-    d = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
+    d = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
     m = (0, c.i)({
       guildId: n
     });
-  return (t = m === h.sFg.NONE ? null : m === h.sFg.VERY_HIGH ? f.l : u.b, null == d) ? null : (0, r.jsxs)(r.Fragment, {
-    children: [!o && null != t && (0, r.jsx)(t, {}), (0, r.jsx)(v, {
+  return (t = m === g.sFg.NONE ? null : m === g.sFg.VERY_HIGH ? f.l : u.b, null == d) ? null : (0, r.jsxs)(r.Fragment, {
+    children: [!o && null != t && (0, r.jsx)(t, {}), (0, r.jsx)(b, {
       guildId: n,
       formFields: l,
-      updateFormFields: a
+      updateFormFields: s
     })]
   })
 }
@@ -131,25 +131,25 @@ function j(e) {
 function C(e) {
   let t, {
       guildId: n,
-      formFields: a,
+      formFields: s,
       updateFormFields: o,
       disableVerification: d
     } = e,
-    m = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
-    b = (0, c.i)({
+    m = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
+    x = (0, c.i)({
       guildId: n
     }),
-    x = (null == m ? true : m.isPhoneVerified()) || (null == m ? true : m.isStaff()),
-    g = (null == m ? true : m.verified) || x,
-    p = false;
-  b === h.sFg.NONE ? (p = true, t = null) : b === h.sFg.VERY_HIGH ? (p = null != x && x, t = f.v) : (p = null != g && g, t = u.B);
-  let j = l.useRef(p);
+    h = (null == m ? true : m.isPhoneVerified()) || (null == m ? true : m.isStaff()),
+    p = (null == m ? true : m.verified) || h,
+    v = false;
+  x === g.sFg.NONE ? (v = true, t = null) : x === g.sFg.VERY_HIGH ? (v = null != h && h, t = f.v) : (v = null != p && p, t = u.B);
+  let j = l.useRef(v);
   return null == m ? null : (0, r.jsxs)(r.Fragment, {
     children: [!d && !j.current && null != t && (0, r.jsx)(t, {
-      isUserVerified: p
-    }), (0, r.jsx)(v, {
+      isUserVerified: v
+    }), (0, r.jsx)(b, {
       guildId: n,
-      formFields: a,
+      formFields: s,
       updateFormFields: o
     })]
   })

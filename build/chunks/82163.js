@@ -6,21 +6,21 @@ require.d(exports, {
 });
 var Chunk720479 = require("./720479.js"),
   Chunk274738 = require("./274738.js");
-let a = 1911;
+let o = 1911;
 
-function o(e) {
-  return "minguo" === e.era ? e.year + a : 1 - e.year + a
+function a(e) {
+  return "minguo" === e.era ? e.year + o : 1 - e.year + o
 }
 
 function s(e) {
-  let t = e - a;
+  let t = e - o;
   return t > 0 ? ["minguo", t] : ["before_minguo", 1 - t]
 }
 class l extends Chunk274738.IQ {
   fromJulianDay(e) {
     let t = super.fromJulianDay(e),
-      [n, a] = s((0, i.J4)(t.era, t.year));
-    return new(0, r.aw)(this, n, a, t.month, t.day)
+      [n, o] = s((0, i.J4)(t.era, t.year));
+    return new(0, r.aw)(this, n, o, t.month, t.day)
   }
   toJulianDay(e) {
     return super.toJulianDay(c(e))
@@ -29,7 +29,7 @@ class l extends Chunk274738.IQ {
     return ["before_minguo", "minguo"]
   }
   balanceDate(e) {
-    let [t, n] = s(o(e));
+    let [t, n] = s(a(e));
     e.era = t, e.year = n
   }
   isInverseEra(e) {
@@ -39,7 +39,7 @@ class l extends Chunk274738.IQ {
     return super.getDaysInMonth(c(e))
   }
   getYearsInEra(e) {
-    return "before_minguo" === e.era ? 9999 : 9999 - a
+    return "before_minguo" === e.era ? 9999 : 9999 - o
   }
   constructor(...e) {
     super(...e), this.identifier = "roc"
@@ -47,6 +47,6 @@ class l extends Chunk274738.IQ {
 }
 
 function c(e) {
-  let [t, n] = (0, i.JD)(o(e));
+  let [t, n] = (0, i.JD)(a(e));
   return new(0, r.aw)(t, n, e.month, e.day)
 }

@@ -5,9 +5,9 @@ var Chunk444675 = require("./444675.js"),
   Chunk670575 = require("./670575.js"),
   Chunk165593 = require("./165593.js");
 if (require("./738146.js")() || require("./247131.js")()) {
-  var o = Symbol.iterator;
+  var a = Symbol.iterator;
   module.exports = function(e) {
-    return null != e && true !== e[o] ? e[o]() : i(e) ? Array.prototype[o].call(e) : true
+    return null != e && true !== e[a] ? e[a]() : i(e) ? Array.prototype[a].call(e) : true
   }
 } else {
   var Chunk189612 = require("./189612.js"),
@@ -66,7 +66,7 @@ if (require("./738146.js")() || require("./247131.js")()) {
       C = Chunk887937("Set.prototype.@@iterator", true) || Chunk887937("Set.prototype._es6-shim iterator_", true),
       A = function(e) {
         if (b(e)) {
-          if (S) return a(S(e));
+          if (S) return o(S(e));
           if (T) return T(e);
           if (O) {
             var t = [];
@@ -76,7 +76,7 @@ if (require("./738146.js")() || require("./247131.js")()) {
           }
         }
         if (y(e)) {
-          if (I) return a(I(e));
+          if (I) return o(I(e));
           if (C) return C(e);
           if (v) {
             var n = [];

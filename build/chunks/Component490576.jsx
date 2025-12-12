@@ -1,12 +1,12 @@
 /** Chunk was on 53162 **/
 /** chunk id: 490576, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => b
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -14,13 +14,13 @@ var Chunk512722 = require("./512722.js"),
   Chunk598952 = require("./598952.jsx"),
   Chunk596211 = require("./596211.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk914721 = require("./914721.js");
+  Chunk819994 = require("./819994.js");
 
-function b(t) {
+function p(t) {
   let {
     attachment: e,
     guildId: n,
-    productId: a
+    productId: o
   } = t;
   return (0, r.jsxs)("li", {
     className: m.attachmentRow,
@@ -31,21 +31,21 @@ function b(t) {
       icon: l._8t,
       text: true,
       guildId: n,
-      productId: a,
+      productId: o,
       attachmentId: e.id
     })]
   })
 }
 
-function p(t) {
+function b(t) {
   var e;
   let {
     guildId: n,
-    productId: a,
+    productId: o,
     onClose: l,
     transitionState: u
-  } = t, f = (0, i.e7)([s.Z], () => s.Z.getGuildProduct(a));
-  o()(null != f, "guildProductListing cannot be null");
+  } = t, f = (0, i.e7)([s.Z], () => s.Z.getGuildProduct(o));
+  a()(null != f, "guildProductListing cannot be null");
   let m = null != (e = f.attachments) ? e : [];
   return (0, r.jsx)(c.Modal, {
     size: "md",
@@ -58,7 +58,7 @@ function p(t) {
     actions: [],
     onClose: l,
     children: (0, r.jsx)("ul", {
-      children: m.map(t => (0, r.jsx)(b, {
+      children: m.map(t => (0, r.jsx)(p, {
         guildId: n,
         productId: f.id,
         attachment: t

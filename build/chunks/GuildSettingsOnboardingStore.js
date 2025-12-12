@@ -1,8 +1,8 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 359191, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => y
 }), require("./388685.js");
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -19,17 +19,17 @@ var r, i, Chunk442837 = require("./442837.js"),
   Chunk142961 = require("./142961.js"),
   Chunk981631 = require("./981631.js");
 let j = new Set,
-  v = Chunk84658.PG.LANDING,
-  O = null;
+  _ = Chunk84658.PG.LANDING,
+  v = null;
 
-function C(e) {
+function O(e) {
   let {
     subsection: t
   } = e;
-  if (c.Z.getGuildId() === O) returnfalse;
-  v = t === x.KsC.SERVER_GUIDE ? p.PG.HOME_SETTINGS : p.PG.LANDING, O = c.Z.getGuildId()
+  if (c.Z.getGuildId() === v) returnfalse;
+  _ = t === b.KsC.SERVER_GUIDE ? h.PG.HOME_SETTINGS : h.PG.LANDING, v = c.Z.getGuildId()
 }
-class y extends(r = Chunk442837.ZP.Store) {
+class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk45966.Z, Chunk889369.Z, Chunk208665.Z, Chunk969632.Z, Chunk926958.Z, Chunk392885.Z, Chunk999382.Z), this.syncWith([Chunk45966.Z, Chunk889369.Z, Chunk208665.Z, Chunk969632.Z, Chunk926958.Z, Chunk392885.Z], () => true)
   }
@@ -37,51 +37,51 @@ class y extends(r = Chunk442837.ZP.Store) {
     return j.has(e)
   }
   getCurrentPage() {
-    return v
+    return _
   }
   hasChanges() {
-    if (null == O) returnfalse;
-    let e = Chunk45966.Z.isAdvancedMode(O);
-    if (v === Chunk84658.PG.DEFAULT_CHANNELS)
+    if (null == v) returnfalse;
+    let e = Chunk45966.Z.isAdvancedMode(v);
+    if (_ === Chunk84658.PG.DEFAULT_CHANNELS)
       if (module) return Chunk889369.Z.hasChanges() || Chunk208665.Z.hasChanges();
       else return Chunk889369.Z.hasChanges();
-    return v === Chunk84658.PG.CUSTOMIZATION_QUESTIONS ? Chunk208665.Z.hasChanges() || Chunk926958.Z.hasChanges() : v === Chunk84658.PG.HOME_SETTINGS ? Chunk969632.Z.hasChanges() : v === Chunk84658.PG.CONNECTIONS && Chunk926958.Z.hasChanges()
+    return _ === Chunk84658.PG.CUSTOMIZATION_QUESTIONS ? Chunk208665.Z.hasChanges() || Chunk926958.Z.hasChanges() : _ === Chunk84658.PG.HOME_SETTINGS ? Chunk969632.Z.hasChanges() : _ === Chunk84658.PG.CONNECTIONS && Chunk926958.Z.hasChanges()
   }
   hasConfiguredAnythingForCurrentStep() {
-    if (null == O) returnfalse;
-    if (v === Chunk84658.PG.SAFETY_CHECK) returntrue;
-    if (v === Chunk84658.PG.DEFAULT_CHANNELS) return Chunk889369.Z.editedDefaultChannelIds.size > 0;
-    if (v === Chunk84658.PG.CUSTOMIZATION_QUESTIONS) return Chunk208665.Z.editedOnboardingPrompts.length > 0 || Chunk926958.Z.getEditedConnections().length > 0;
-    if (v === Chunk84658.PG.HOME_SETTINGS) return !(0, Chunk734893.av)(Chunk969632.Z.getSettings());
-    if (v === Chunk84658.PG.CONNECTIONS) return Chunk926958.Z.getEditedConnections().length > 0;
+    if (null == v) returnfalse;
+    if (_ === Chunk84658.PG.SAFETY_CHECK) returntrue;
+    if (_ === Chunk84658.PG.DEFAULT_CHANNELS) return Chunk889369.Z.editedDefaultChannelIds.size > 0;
+    if (_ === Chunk84658.PG.CUSTOMIZATION_QUESTIONS) return Chunk208665.Z.editedOnboardingPrompts.length > 0 || Chunk926958.Z.getEditedConnections().length > 0;
+    if (_ === Chunk84658.PG.HOME_SETTINGS) return !(0, Chunk734893.av)(Chunk969632.Z.getSettings());
+    if (_ === Chunk84658.PG.CONNECTIONS) return Chunk926958.Z.getEditedConnections().length > 0;
     returnfalse
   }
   hasErrors() {
-    return v === Chunk84658.PG.CUSTOMIZATION_QUESTIONS && null != Chunk208665.Z.errors.find(e => null != e)
+    return _ === Chunk84658.PG.CUSTOMIZATION_QUESTIONS && null != Chunk208665.Z.errors.find(e => null != e)
   }
   showNotice() {
-    if (null == O) returnfalse;
-    if ((0, Chunk142961.C)(O)) return this.hasChanges();
+    if (null == v) returnfalse;
+    if ((0, Chunk142961.C)(v)) return this.hasChanges();
     let e = Chunk392885.Z.getCurrentPage();
-    return (v !== Chunk84658.PG.SAFETY_CHECK || module === Chunk740903.u.OVERVIEW) && null != v && v !== Chunk84658.PG.LANDING
+    return (_ !== Chunk84658.PG.SAFETY_CHECK || module === Chunk740903.u.OVERVIEW) && null != _ && _ !== Chunk84658.PG.LANDING
   }
   canCloseEarly() {
-    return null == O || !this.hasErrors() && (!(0, Chunk142961.C)(O) || !this.hasChanges())
+    return null == v || !this.hasErrors() && (!(0, Chunk142961.C)(v) || !this.hasChanges())
   }
-}(i = "displayName") in y ? Object.defineProperty(y, i, {
+}(i = "displayName") in C ? Object.defineProperty(C, i, {
   value: "GuildSettingsOnboardingStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : y[i] = "GuildSettingsOnboardingStore";
-let N = new y(Chunk570140.Z, {
-  GUILD_SETTINGS_INIT: C,
-  GUILD_SETTINGS_SET_SECTION: C,
+}) : C[i] = "GuildSettingsOnboardingStore";
+let y = new C(Chunk570140.Z, {
+  GUILD_SETTINGS_INIT: O,
+  GUILD_SETTINGS_SET_SECTION: O,
   GUILD_SETTINGS_ONBOARDING_STEP: function(e) {
     let {
       step: t
     } = e;
-    v = t
+    _ = t
   },
   GUILD_SETTINGS_ONBOARDING_EDUCATION_UPSELL_DISMISSED: function(e) {
     let {

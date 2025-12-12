@@ -4,9 +4,9 @@
 
 function r(e, t) {
   if (e.score === t.score) {
-    var n, r, i, a, o, s;
-    let l = null != (a = null != (i = e.sortable) ? i : null == (n = e.comparator) ? true : n.toLocaleLowerCase()) ? a : "",
-      c = null != (s = null != (o = e.sortable) ? o : null == (r = t.comparator) ? true : r.toLocaleLowerCase()) ? s : "";
+    var n, r, i, o, a, s;
+    let l = null != (o = null != (i = e.sortable) ? i : null == (n = e.comparator) ? true : n.toLocaleLowerCase()) ? o : "",
+      c = null != (s = null != (a = e.sortable) ? a : null == (r = t.comparator) ? true : r.toLocaleLowerCase()) ? s : "";
     if (l < c) return false;
     if (l > c) return 1
   }

@@ -2,13 +2,13 @@
 /** chunk id: 539746, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J$: () => a,
-  _J: () => o,
+  J$: () => o,
+  _J: () => a,
   xG: () => s
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2024-06_game_profile_experiment",
   label: "Enables the Game Profile",
@@ -25,11 +25,11 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     {
       enabled: n
-    } = a.getCurrentConfig({
+    } = o.getCurrentConfig({
       location: e
     }, {
       autoTrackExposure: t
@@ -41,7 +41,7 @@ function s(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     {
       enabled: n
-    } = a.useExperiment({
+    } = o.useExperiment({
       location: e
     }, {
       autoTrackExposure: t

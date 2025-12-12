@@ -24,7 +24,7 @@ function i(e) {
   return e
 }
 
-function a(e, t) {
+function o(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -35,8 +35,8 @@ function a(e, t) {
   return n
 }
 
-function o(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
+function a(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -48,8 +48,8 @@ let s = (0, require("./663042.js").U)((e, t) => ({
   displayedQuestions: {},
   setResponse: (t, n, r) => {
     e(e => ({
-      responses: o(i({}, e.responses), {
-        [t]: o(i({}, e.responses[t]), {
+      responses: a(i({}, e.responses), {
+        [t]: a(i({}, e.responses[t]), {
           [n]: r
         })
       })
@@ -73,10 +73,10 @@ let s = (0, require("./663042.js").U)((e, t) => ({
   trackDisplayedQuestions: (t, n) => {
     e(e => {
       var r;
-      let a = new Set(null != (r = e.displayedQuestions[t]) ? r : new Set);
-      return n.forEach(e => a.add(e)), {
-        displayedQuestions: o(i({}, e.displayedQuestions), {
-          [t]: a
+      let o = new Set(null != (r = e.displayedQuestions[t]) ? r : new Set);
+      return n.forEach(e => o.add(e)), {
+        displayedQuestions: a(i({}, e.displayedQuestions), {
+          [t]: o
         })
       }
     })

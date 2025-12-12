@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 698877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => s
@@ -17,8 +17,8 @@ function s(e) {
     isSelfStream: u,
     centerButton: d,
     onMouseEnter: p,
-    onMouseLeave: f,
-    renderNUXHighlight: h,
+    onMouseLeave: h,
+    renderNUXHighlight: f,
     buttonRef: m
   } = e, g = function(e, t) {
     if (null == e) return {};
@@ -66,12 +66,12 @@ function s(e) {
     disabled: !s,
     iconComponent: C,
     isActive: c,
-    color: (h ? n = "premiumGradient" : c && (n = "green"), n),
+    color: (f ? n = "premiumGradient" : c && (n = "green"), n),
     onMouseEnter: e => {
       null == p || p(e), y.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == f || f(e), y.onMouseLeave()
+      null == h || h(e), y.onMouseLeave()
     }
   }, g))
 }

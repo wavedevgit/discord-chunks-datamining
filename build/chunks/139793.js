@@ -13,7 +13,7 @@ function s(e) {
   let {
     userId: t,
     onAction: n
-  } = e, [s, l] = (0, r.useState)(false), c = (0, a.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t)), u = (0, r.useCallback)(e => {
+  } = e, [s, l] = (0, r.useState)(false), c = (0, o.e7)([a.Z], () => a.Z.isFetchingUserOutbox(t)), u = (0, r.useCallback)(e => {
     e && (n({
       action: "VIEW_ACTIVITY_CARD"
     }), l(true))

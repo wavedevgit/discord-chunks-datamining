@@ -34,7 +34,7 @@ class f extends Chunk317770.Z {
         voiceStates: t
       } = e;
       t.forEach(e => {
-        if (null == e.channelId || e.userId !== o.default.getId() || (this.terminate(), r.K.get(u.$z, false))) return;
+        if (null == e.channelId || e.userId !== a.default.getId() || (this.terminate(), r.K.get(u.$z, false))) return;
         let t = s.Z.getVoiceChannelId();
         null != t && e.channelId === t && c.ZP.isAudienceMember(e.userId, t) && (r.K.set(u.$z, true), l.$(t))
       })

@@ -7,7 +7,7 @@ require.d(exports, {
 }), require("./539854.js"), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk224706 = require("./224706.js"),
@@ -30,7 +30,7 @@ class f {
     let e = [];
     this._pending.forEach(t => {
       this._fetched.add(t), e.push(t)
-    }), this._pending.clear(), a().chunk(module, d).forEach(e => {
+    }), this._pending.clear(), o().chunk(module, d).forEach(e => {
       l.Z.getDetectableGamesSupplemental(e)
     })
   }
@@ -52,7 +52,7 @@ function m(e, t) {
     width: t.coverImageWidth,
     height: t.coverImageHeight
   } : true, [t]);
-  return (0, o.cj)([c.Z], () => null == e ? {
+  return (0, a.cj)([c.Z], () => null == e ? {
     isFetching: false,
     localizedName: true,
     themes: true,

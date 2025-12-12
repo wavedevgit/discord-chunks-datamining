@@ -1,7 +1,7 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 311352, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => x
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,9 +21,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk39604 = require("./39604.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk238168 = require("./238168.js");
+  Chunk611372 = require("./611372.js");
 
-function C(e) {
+function j(e) {
   (0, s.jW)(e, async () => {
     let {
       default: e
@@ -48,13 +48,13 @@ function C(e) {
     }({}, t))
   })
 }
-let x = e => {
+let C = e => {
     let {
       keybindString: t,
       children: n,
       targetElementRef: i
     } = e;
-    return (0, r.jsx)(o.yRy, {
+    return (0, r.jsx)(a.yRy, {
       targetElementRef: i,
       shouldShow: false,
       position: "top",
@@ -64,32 +64,32 @@ let x = e => {
           closePopout: n
         } = e;
         return (0, r.jsx)(d.Z, {
-          dismissibleContent: a.z.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK,
+          dismissibleContent: o.z.CLIPS_ONBOARDING_CLIP_BUTTON_COACHMARK,
           shouldUseHorizontalButtons: true,
           inlineArt: true,
-          artClassName: j.clipsEducationArt,
+          artClassName: v.clipsEducationArt,
           position: "top",
           header: (0, r.jsx)("div", {
-            className: j.header,
-            children: v.intl.format(v.t["o+srEw"], {
+            className: v.header,
+            children: O.intl.format(O.t["o+srEw"], {
               keybind: t,
               keybindHook: () => (0, r.jsx)("span", {
-                className: j.keybindHintKeys,
-                children: (0, r.jsx)(o.M2$, {
-                  className: j.keybindShortcut,
+                className: v.keybindHintKeys,
+                children: (0, r.jsx)(a.M2$, {
+                  className: v.keybindShortcut,
                   shortcut: t
                 })
               })
             })
           }),
-          headerClassName: j.clipsEducationHeader,
-          body: (0, r.jsx)(o.Text, {
+          headerClassName: v.clipsEducationHeader,
+          body: (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "always-white",
-            className: j.bodyText,
-            children: v.intl.format(v.t.DWeRm1, {
+            className: v.bodyText,
+            children: O.intl.format(O.t.DWeRm1, {
               keybindHook: () => (0, r.jsx)("div", {
-                className: j.keyCombo,
+                className: v.keyCombo,
                 children: t
               }),
               keybind: t
@@ -103,19 +103,19 @@ let x = e => {
       children: () => n
     })
   },
-  E = () => {
+  x = () => {
     let e = Chunk473749.useRef(null),
       {
         parentAnalyticsLocation: t
       } = (0, Chunk906732.ZP)(),
       n = (0, Chunk399606.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
-      a = (0, Chunk341569.z8)(),
+      o = (0, Chunk341569.z8)(),
       s = (0, Chunk399606.e7)([Chunk435064.Z], () => Chunk435064.Z.getIsAtMaxSaveClipOperations()),
       d = (0, Chunk399606.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP));
     if (!Chunk704215 || null == Chunk765585 || require) return null;
-    let j = Chunk13140.BB(Chunk765585.shortcut, true);
-    return (0, Chunk54381.jsx)(x, {
-      keybindString: Chunk238168,
+    let v = Chunk13140.BB(Chunk765585.shortcut, true);
+    return (0, Chunk54381.jsx)(C, {
+      keybindString: Chunk611372,
       targetElementRef: module,
       children: (0, Chunk54381.jsx)(Chunk870569.Z, {
         ref: module,
@@ -126,7 +126,7 @@ let x = e => {
         onClick: () => {
           (0, Chunk39604.br)(), (0, Chunk522651.v)(exports, Chunk522651.d.CLIP)
         },
-        onContextMenu: C,
+        onContextMenu: j,
         icon: Chunk481060.AlX
       })
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 37772, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk262777 = require("./262777.js"),
@@ -37,8 +37,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk884193 = require("./884193.js"),
-  Chunk548498 = require("./548498.js");
+  Chunk378661 = require("./378661.js"),
+  Chunk360514 = require("./360514.js");
 
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -85,8 +85,8 @@ let B = Chunk473749.memo(function e(t) {
       treatSpam: W
     } = t,
     K = D.OBS.has(s.type) ? s.messageReference : true,
-    Y = (0, o.e7)([h.Z], () => h.Z.getMessageByReference(K)),
-    q = (0, o.e7)([g.Z], () => s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === h.Y.LOADED ? g.Z.getChannel(Y.message.channel_id) : null),
+    Y = (0, a.e7)([h.Z], () => h.Z.getMessageByReference(K)),
+    q = (0, a.e7)([g.Z], () => s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === h.Y.LOADED ? g.Z.getChannel(Y.message.channel_id) : null),
     Q = p.x4.useSetting(),
     X = p.RS.useSetting(),
     J = p.NA.useSetting(),
@@ -95,20 +95,20 @@ let B = Chunk473749.memo(function e(t) {
     et = (0, d.Z)(null == l ? true : l.id),
     {
       disableReactionCreates: en
-    } = (0, x.Z)(l),
+    } = (0, C.Z)(l),
     {
       content: er,
       hasSpoilerEmbeds: ei,
       hasBailedAst: el
-    } = (0, _.Z)(s, {
+    } = (0, I.Z)(s, {
       hideSimpleEmbedContent: X && J,
       allowList: ee,
       allowHeading: ee,
       allowLinks: true,
       previewLinkTarget: true
     }),
-    ea = (0, C.ZP)(s),
-    eo = (0, o.e7)([g.Z], () => s.hasFlag(D.iLy.HAS_THREAD) && g.Z.getChannel(m.default.castMessageIdAsChannelId(s.id))),
+    eo = (0, j.ZP)(s),
+    ea = (0, a.e7)([g.Z], () => s.hasFlag(D.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(s.id))),
     es = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === h.Y.LOADED && null != q,
     ec = !es && true === i,
     eu = (0, P.Z)({
@@ -117,31 +117,31 @@ let B = Chunk473749.memo(function e(t) {
       enabled: ec
     }),
     ed = (0, c.v)(s),
-    ef = (0, y.ro)(s.id, s.channel_id),
+    ef = (0, _.ro)(s.id, s.channel_id),
     eh = (0, f.Z)(s),
-    ep = (0, S.iG)(s);
+    ep = (0, E.iG)(s);
   return es ? (0, r.jsx)(e, U(G({}, t), {
     message: Y.message,
     channel: q,
     hasThread: false
-  })) : (b.Z.isBlockedForMessage(s) ? i = M.t["+FcYM/"] : b.Z.isIgnoredForMessage(s) ? i = M.t["VFWjc+"] : (0, v.DQ)(s) && W && (i = M.t.xfkfTK), true !== i) ? (0, r.jsx)(F, {
+  })) : (m.Z.isBlockedForMessage(s) ? i = M.t["+FcYM/"] : m.Z.isIgnoredForMessage(s) ? i = M.t["VFWjc+"] : (0, O.DQ)(s) && W && (i = M.t.xfkfTK), true !== i) ? (0, r.jsx)(F, {
     className: L,
     compact: R,
     count: 1,
     collapsedReason: i
-  }) : (0, r.jsx)(E.Z, {
+  }) : (0, r.jsx)(x.Z, {
     compact: R,
-    className: a()(L, {
-      [k.ephemeral]: (0, O.Pv)(s),
+    className: o()(L, {
+      [k.ephemeral]: (0, y.Pv)(s),
       [k.disableInteraction]: H,
       [k.groupStart]: t.isGroupStart
     }),
     childrenRepliedMessage: (0, A.Z)(s, l, K, Y, R),
     childrenHeader: (0, Z.Z)(U(G({}, t), {
-      author: ea,
+      author: eo,
       guildId: l.guild_id
     })),
-    childrenAccessories: (0, r.jsx)(I.BB, {
+    childrenAccessories: (0, r.jsx)(S.BB, {
       channel: l,
       message: s,
       hasSpoilerEmbeds: ei,
@@ -170,11 +170,11 @@ let B = Chunk473749.memo(function e(t) {
     childrenSystemMessage: (0, w.Z)(t),
     onContextMenu: B,
     onClick: V,
-    hasThread: false !== z && null != eo && s.hasFlag(D.iLy.HAS_THREAD),
+    hasThread: false !== z && null != ea && s.hasFlag(D.iLy.HAS_THREAD),
     hasReply: s.type === D.uaV.REPLY,
-    isSystemMessage: (0, j.Z)(s),
+    isSystemMessage: (0, v.Z)(s),
     messageRef: eu,
-    author: ea,
+    author: eo,
     "aria-labelledby": ep,
     "aria-roledescription": M.intl.string(M.t.BAB0yK)
   })
@@ -187,7 +187,7 @@ function F(e) {
     compact: i,
     collapsedReason: l
   } = e;
-  return (0, r.jsx)(E.Z, {
+  return (0, r.jsx)(x.Z, {
     className: t,
     compact: i,
     role: "group",

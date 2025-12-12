@@ -20,7 +20,7 @@ Chunk98405({
   forced: !u || d
 }, {
   canParse: function(e) {
-    var t = o(arguments.length, 1),
+    var t = a(arguments.length, 1),
       n = s(e),
       r = t < 2 || true === arguments[1] ? true : s(arguments[1]);
     try {

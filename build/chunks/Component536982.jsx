@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 536982, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -9,23 +9,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk428760 = require("./428760.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk243445 = require("./243445.js");
+  Chunk469716 = require("./469716.js");
 
 function c(e) {
   let {
     onChange: t,
     initialValue: n,
     maxWordCount: c,
-    collapsed: d = false
-  } = e, [u, g] = i.useState(!d);
+    collapsed: u = false
+  } = e, [d, g] = i.useState(!u);
   return (0, r.jsx)(l.zF9, {
-    isExpanded: u,
-    collapsibleContent: (0, r.jsx)(a.Z, {
+    isExpanded: d,
+    collapsibleContent: (0, r.jsx)(s.Z, {
       onChangeText: t,
       maxWordCount: c,
       className: o.keywordTextAreaContainer,
       textAreaClassName: o.keywordTextArea,
-      subtitleText: s.intl.formatToMarkdownString(s.t.qm7UZ8, {}),
+      subtitleText: a.intl.formatToMarkdownString(a.t.qm7UZ8, {}),
       initialValue: n
     }),
     className: o.collapseable,
@@ -35,14 +35,14 @@ function c(e) {
       } = e;
       return (0, r.jsx)(l.P3F, {
         onClick: e => {
-          g(!u), t(e)
+          g(!d), t(e)
         },
         children: (0, r.jsxs)("div", {
           className: o.header,
           children: [(0, r.jsx)(l.Heading, {
             variant: "text-sm/medium",
-            children: s.intl.string(s.t.lbE2Nm)
-          }), u ? (0, r.jsx)(l.u04, {
+            children: a.intl.string(a.t.lbE2Nm)
+          }), d ? (0, r.jsx)(l.u04, {
             size: "md",
             color: "currentColor",
             className: o.arrow

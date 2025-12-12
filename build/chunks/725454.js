@@ -404,12 +404,12 @@ var t = {
   n = Object.keys(t).join("|"),
   r = RegExp(n, "g"),
   i = RegExp(n, ""),
-  a = function(e) {
+  o = function(e) {
     return e.replace(r, function(e) {
       return t[e]
     })
   },
-  o = function(e) {
+  a = function(e) {
     return !!e.match(i)
   };
-module.exports = a, module.exports.has = o, module.exports.remove = a
+module.exports = o, module.exports.has = a, module.exports.remove = o

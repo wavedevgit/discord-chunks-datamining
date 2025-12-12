@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 355363, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => l
@@ -11,7 +11,7 @@ function l(e) {
     channel: t,
     locked: n,
     video: l,
-    selected: a
+    selected: o
   } = e;
   return function(e) {
     let {
@@ -19,11 +19,11 @@ function l(e) {
       video: n,
       considerMaxStageVoiceUserLimit: l = true
     } = e, {
-      limit: a
-    } = (0, r.Z)(t), o = false;
-    return (t.userLimit > 0 && (o = t.userLimit), n && a > 0 && (o = o > 0 ? Math.min(o, a) : a), l && o === i.xGv) ? 0 : o
+      limit: o
+    } = (0, r.Z)(t), a = false;
+    return (t.userLimit > 0 && (a = t.userLimit), n && o > 0 && (a = a > 0 ? Math.min(a, o) : o), l && a === i.xGv) ? 0 : a
   }({
     channel: t,
     video: l
-  }) > 0 && !n && !a
+  }) > 0 && !n && !o
 }

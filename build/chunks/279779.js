@@ -39,7 +39,7 @@ function O(e) {
     username: "0" !== e.discriminator ? "".concat(e.username, "#").concat(e.discriminator) : e.username,
     nicknames: {}
   };
-  return null != g.ZP.getGlobalName(e) && (r.globalName = e.globalName), e.bot && (r.isBot = true), e instanceof c.Z ? r.isProvisional = e.isProvisional : "flags" in e ? r.isProvisional = o.yE(null != (t = e.flags) ? t : 0, E.xW$.PROVISIONAL_ACCOUNT) : r.isProvisional = false, f.Z.isFriend(e.id) && (r.isFriend = true, r.friendNickname = f.Z.getNickname(e.id)), e instanceof c.Z ? r.isStaff = e.isStaff() : "flags" in e ? r.isStaff = o.yE(null != (n = e.flags) ? n : 0, E.xW$.STAFF) : r.isStaff = false, r
+  return null != g.ZP.getGlobalName(e) && (r.globalName = e.globalName), e.bot && (r.isBot = true), e instanceof c.Z ? r.isProvisional = e.isProvisional : "flags" in e ? r.isProvisional = a.yE(null != (t = e.flags) ? t : 0, E.xW$.PROVISIONAL_ACCOUNT) : r.isProvisional = false, f.Z.isFriend(e.id) && (r.isFriend = true, r.friendNickname = f.Z.getNickname(e.id)), e instanceof c.Z ? r.isStaff = e.isStaff() : "flags" in e ? r.isStaff = a.yE(null != (n = e.flags) ? n : 0, E.xW$.STAFF) : r.isStaff = false, r
 }
 
 function v(e, t, n) {
@@ -71,15 +71,15 @@ function T(e) {
   let {
     message: n,
     nicknameContextId: r
-  } = e, i = u.Z.getChannel(n.channel_id), a = null != r ? r : (null == i ? true : i.isPrivate()) === true ? null == i ? true : i.id : null == i ? true : i.getGuildId(), o = [];
+  } = e, i = u.Z.getChannel(n.channel_id), o = null != r ? r : (null == i ? true : i.isPrivate()) === true ? null == i ? true : i.id : null == i ? true : i.getGuildId(), a = [];
   if (null != n.author) {
     let e = O(n.author);
-    null != e && (o.push(e), null != a && v(e, a))
+    null != e && (a.push(e), null != o && v(e, o))
   }
   return null == (t = n.mentions) || t.forEach(e => {
     let t = O(e);
-    null != t && (o.push(t), null != a && v(t, a))
-  }), o
+    null != t && (a.push(t), null != o && v(t, o))
+  }), a
 }
 class C {
   setLimit(e) {
@@ -106,14 +106,14 @@ class C {
       filters: n,
       blacklist: r,
       boosters: i,
-      boosterFallback: a
+      boosterFallback: o
     } = e;
     this._nextQuery = {
       query: t,
       filters: n,
       blacklist: r,
       boosters: null != i ? i : {},
-      boosterFallback: null != a ? a : 1,
+      boosterFallback: null != o ? o : 1,
       limit: this._limit
     }, this._setNextQuery()
   }
@@ -128,7 +128,7 @@ class C {
     b(this, "_worker", true), b(this, "_uuid", true), b(this, "_callback", true), b(this, "_limit", true), b(this, "_currentQuery", true), b(this, "_nextQuery", true), b(this, "_subscribed", true), b(this, "handleMessages", e => {
       let t = e.data;
       null != t && "USER_RESULTS" === t.type && t.uuid === this._uuid && (false !== this._currentQuery && this._callback(t.payload), null != this._currentQuery && (this._currentQuery = null), this._setNextQuery())
-    }), this._worker = e, this._uuid = (0, a.Z)(), this._callback = t, this._limit = n, this._currentQuery = null, this._nextQuery = null, this._subscribed = false, this.subscribe()
+    }), this._worker = e, this._uuid = (0, o.Z)(), this._callback = t, this._limit = n, this._currentQuery = null, this._nextQuery = null, this._subscribed = false, this.subscribe()
   }
 }
 class A extends Chunk147913.Z {
@@ -184,11 +184,11 @@ class A extends Chunk147913.Z {
       _worker: e
     } = this;
     return null == module ? Promise.resolve(null) : new Promise(t => {
-      let n = (0, a.Z)(),
+      let n = (0, o.Z)(),
         r = i => {
-          let a = i.data;
-          if (null != a && "DEBUG_STATE" === a.type && a.uuid === n) try {
-            t(a.payload)
+          let o = i.data;
+          if (null != o && "DEBUG_STATE" === o.type && o.uuid === n) try {
+            t(o.payload)
           } finally {
             e.removeEventListener("message", r, false)
           }
@@ -243,10 +243,10 @@ class A extends Chunk147913.Z {
         let r = d.ZP.getMutableAllGuildsAndMembers();
         for (let e in r)
           for (let t in r[e]) {
-            var i, a;
-            let o = n[t],
-              s = null != (a = null == (i = r[e][t]) ? true : i.nick) ? a : g.ZP.getGlobalName(o);
-            null != o && v(o, e, s)
+            var i, o;
+            let a = n[t],
+              s = null != (o = null == (i = r[e][t]) ? true : i.nick) ? o : g.ZP.getGlobalName(a);
+            null != a && v(a, e, s)
           }
         this.updateUsers(Object.values(n), "connection_open")
       }, 3e3)
@@ -282,8 +282,8 @@ class A extends Chunk147913.Z {
         if (null != t)
           for (let n of h.default.keys(t)) {
             let i = r.get(n),
-              a = t[n];
-            null != i && null != a && null != a.nick && (v(i, e, a.nick), r.set(n, i))
+              o = t[n];
+            null != i && null != o && null != o.nick && (v(i, e, o.nick), r.set(n, i))
           }
       }
       this.updateUsers(Array.from(r.values()), "overlay_initialize"), r.clear()
@@ -373,7 +373,7 @@ class A extends Chunk147913.Z {
         let {
           first_message: n,
           most_recent_message: i,
-          owner: a
+          owner: o
         } = e;
         null != n && T({
           message: n,
@@ -381,7 +381,7 @@ class A extends Chunk147913.Z {
         }).forEach(e => r.push(e)), null != i && T({
           message: i,
           nicknameContextId: t
-        }).forEach(e => r.push(e)), null != a && I([a], t).forEach(e => r.push(e))
+        }).forEach(e => r.push(e)), null != o && I([o], t).forEach(e => r.push(e))
       }), this.updateUsers(r, "load_forum_posts")
     }), b(this, "_handleLoadMessagesSuccess", e => {
       let {
@@ -424,18 +424,18 @@ class A extends Chunk147913.Z {
         firstMessages: n,
         mostRecentMessages: r,
         owners: i
-      } = e, a = [];
+      } = e, o = [];
       null == n || n.forEach(e => {
         T({
           message: e,
           nicknameContextId: t
-        }).forEach(e => a.push(e))
+        }).forEach(e => o.push(e))
       }), null == r || r.forEach(e => {
         T({
           message: e,
           nicknameContextId: t
-        }).forEach(e => a.push(e))
-      }), null != i && I(i, t).forEach(e => a.push(e)), this.updateUsers(a, "load_threads_success")
+        }).forEach(e => o.push(e))
+      }), null != i && I(i, t).forEach(e => o.push(e)), this.updateUsers(o, "load_threads_success")
     }), b(this, "_handleMessageCreateOrUpdate", e => {
       let t = T({
         message: e.message
@@ -450,8 +450,8 @@ class A extends Chunk147913.Z {
         let {
           user: n,
           member: i
-        } = e, a = O(n);
-        null != a && (v(a, t, null == i ? true : i.nick), r.push(a))
+        } = e, o = O(n);
+        null != o && (v(o, t, null == i ? true : i.nick), r.push(o))
       }), this.updateUsers(r, "guild_scheduled_event_users_fetch_success")
     })
   }

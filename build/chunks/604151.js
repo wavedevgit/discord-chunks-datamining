@@ -68,14 +68,14 @@ let O = function(e, t) {
         } = await n.e("86465").then(n.bind(n, 997308));
         return t => e(t)
       });
-      if (!(0, o.Z)(S, m.Z)) return
+      if (!(0, a.Z)(S, m.Z)) return
     }
     b && (0, u.eH)(), (0, d.Z)(C, e, O, b)
   }
 
   function C() {
     let n = (0, r.Z)();
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "VOICE_CHANNEL_SELECT",
       guildId: t,
       channelId: e,

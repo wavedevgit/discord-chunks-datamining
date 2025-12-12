@@ -4,10 +4,10 @@
   "use strict";
   var n, r = Object.prototype,
     i = r.hasOwnProperty,
-    a = "function" == typeof Symbol ? Symbol : {},
-    o = a.iterator || "@@iterator",
-    s = a.asyncIterator || "@@asyncIterator",
-    l = a.toStringTag || "@@toStringTag",
+    o = "function" == typeof Symbol ? Symbol : {},
+    a = o.iterator || "@@iterator",
+    s = o.asyncIterator || "@@asyncIterator",
+    l = o.toStringTag || "@@toStringTag",
     c = true,
     u = t.regeneratorRuntime;
   if (u) {
@@ -45,12 +45,12 @@
 
   function y() {}
   var O = {};
-  O[o] = function() {
+  O[a] = function() {
     return this
   };
   var v = Object.getPrototypeOf,
     S = v && v(v(D([])));
-  S && S !== r && i.call(S, o) && (O = S);
+  S && S !== r && i.call(S, a) && (O = S);
   var I = y.prototype = E.prototype = Object.create(O);
 
   function T(e) {
@@ -64,20 +64,20 @@
   function C(e) {
     var t;
 
-    function n(t, r, a, o) {
+    function n(t, r, o, a) {
       var s = f(e[t], e, r);
-      if ("throw" === s.type) o(s.arg);
+      if ("throw" === s.type) a(s.arg);
       else {
         var l = s.arg,
           c = l.value;
         return c && "object" == typeof c && i.call(c, "__await") ? Promise.resolve(c.__await).then(function(e) {
-          n("next", e, a, o)
+          n("next", e, o, a)
         }, function(e) {
-          n("throw", e, a, o)
+          n("throw", e, o, a)
         }) : Promise.resolve(c).then(function(e) {
-          l.value = e, a(l)
+          l.value = e, o(l)
         }, function(e) {
-          return n("throw", e, a, o)
+          return n("throw", e, o, a)
         })
       }
     }
@@ -95,16 +95,16 @@
 
   function A(e, t, n) {
     var r = p;
-    return function(i, a) {
+    return function(i, o) {
       if (r === m) throw Error("Generator is already running");
       if (r === h) {
-        if ("throw" === i) throw a;
+        if ("throw" === i) throw o;
         return x()
       }
-      for (n.method = i, n.arg = a;;) {
-        var o = n.delegate;
-        if (o) {
-          var s = N(o, n);
+      for (n.method = i, n.arg = o;;) {
+        var a = n.delegate;
+        if (a) {
+          var s = N(a, n);
           if (s) {
             if (s === g) continue;
             return s
@@ -140,8 +140,8 @@
     }
     var i = f(r, e.iterator, t.arg);
     if ("throw" === i.type) return t.method = "throw", t.arg = i.arg, t.delegate = null, g;
-    var a = i.arg;
-    return a ? a.done ? (t[e.resultName] = a.value, t.next = e.nextLoc, "return" !== t.method && (t.method = "next", t.arg = n), t.delegate = null, g) : a : (t.method = "throw", t.arg = TypeError("iterator result is not an object"), t.delegate = null, g)
+    var o = i.arg;
+    return o ? o.done ? (t[e.resultName] = o.value, t.next = e.nextLoc, "return" !== t.method && (t.method = "next", t.arg = n), t.delegate = null, g) : o : (t.method = "throw", t.arg = TypeError("iterator result is not an object"), t.delegate = null, g)
   }
 
   function P(e) {
@@ -164,17 +164,17 @@
 
   function D(e) {
     if (e) {
-      var t = e[o];
+      var t = e[a];
       if (t) return t.call(e);
       if ("function" == typeof e.next) return e;
       if (!isNaN(e.length)) {
         var r = false,
-          a = function t() {
+          o = function t() {
             for (; ++r < e.length;)
               if (i.call(e, r)) return t.value = e[r], t.done = false, t;
             return t.value = n, t.done = true, t
           };
-        return a.next = a
+        return o.next = o
       }
     }
     return {
@@ -204,7 +204,7 @@
     return u.isGeneratorFunction(t) ? i : i.next().then(function(e) {
       return e.done ? e.value : i.next()
     })
-  }, T(I), I[l] = "Generator", I[o] = function() {
+  }, T(I), I[l] = "Generator", I[a] = function() {
     return this
   }, I.toString = function() {
     return "[object Generator]"
@@ -238,20 +238,20 @@
       function r(r, i) {
         return s.type = "throw", s.arg = e, t.next = r, i && (t.method = "next", t.arg = n), !!i
       }
-      for (var a = this.tryEntries.length - 1; a >= 0; --a) {
-        var o = this.tryEntries[a],
-          s = o.completion;
-        if ("root" === o.tryLoc) return r("end");
-        if (o.tryLoc <= this.prev) {
-          var l = i.call(o, "catchLoc"),
-            c = i.call(o, "finallyLoc");
+      for (var o = this.tryEntries.length - 1; o >= 0; --o) {
+        var a = this.tryEntries[o],
+          s = a.completion;
+        if ("root" === a.tryLoc) return r("end");
+        if (a.tryLoc <= this.prev) {
+          var l = i.call(a, "catchLoc"),
+            c = i.call(a, "finallyLoc");
           if (l && c) {
-            if (this.prev < o.catchLoc) return r(o.catchLoc, true);
-            else if (this.prev < o.finallyLoc) return r(o.finallyLoc)
+            if (this.prev < a.catchLoc) return r(a.catchLoc, true);
+            else if (this.prev < a.finallyLoc) return r(a.finallyLoc)
           } else if (l) {
-            if (this.prev < o.catchLoc) return r(o.catchLoc, true)
+            if (this.prev < a.catchLoc) return r(a.catchLoc, true)
           } else if (c) {
-            if (this.prev < o.finallyLoc) return r(o.finallyLoc)
+            if (this.prev < a.finallyLoc) return r(a.finallyLoc)
           } else throw Error("try statement without catch or finally")
         }
       }
@@ -260,13 +260,13 @@
       for (var n = this.tryEntries.length - 1; n >= 0; --n) {
         var r = this.tryEntries[n];
         if (r.tryLoc <= this.prev && i.call(r, "finallyLoc") && this.prev < r.finallyLoc) {
-          var a = r;
+          var o = r;
           break
         }
       }
-      a && ("break" === e || "continue" === e) && a.tryLoc <= t && t <= a.finallyLoc && (a = null);
-      var o = a ? a.completion : {};
-      return (o.type = e, o.arg = t, a) ? (this.method = "next", this.next = a.finallyLoc, g) : this.complete(o)
+      o && ("break" === e || "continue" === e) && o.tryLoc <= t && t <= o.finallyLoc && (o = null);
+      var a = o ? o.completion : {};
+      return (a.type = e, a.arg = t, o) ? (this.method = "next", this.next = o.finallyLoc, g) : this.complete(a)
     },
     complete: function(e, t) {
       if ("throw" === e.type) throw e.arg;

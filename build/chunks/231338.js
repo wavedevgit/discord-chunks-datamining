@@ -4,7 +4,7 @@
 require.d(exports, {
   $R: () => l,
   $V: () => Q,
-  $w: () => eo,
+  $w: () => ea,
   Ai: () => b,
   Al: () => Chunk290926.Al,
   B1: () => J,
@@ -69,7 +69,7 @@ require.d(exports, {
 var Chunk290926 = require("./290926.js"),
   Chunk149765 = require("./149765.js"),
   Chunk860911 = require("./860911.js");
-let o = location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT,
+let a = location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT,
   s = location.protocol + "//discord.gg",
   l = "discord.com",
   c = "support.discord.com",
@@ -310,30 +310,30 @@ let X = 250,
     })
   }),
   ei = Object.freeze({
-    WELCOME: "".concat(o, "/welcome/"),
-    ME: "".concat(o, "/channels/@me"),
-    SETTINGS: (e, t) => "".concat(o, "/settings/").concat(e).concat(t ? "/".concat(t) : ""),
-    CONNECTION: e => "".concat(o, "/connections/").concat(e),
-    CHANGELOGS: "".concat(o, "/settings/changelogs"),
-    LOGIN: "".concat(o, "/login"),
-    LOGIN_WITH_REDIRECT: e => "".concat(o, "/login?redirect_to=").concat(e),
-    REGISTER: "".concat(o, "/register"),
-    REGISTER_WITH_REDIRECT: e => "".concat(o, "/register?redirect_to=").concat(e),
-    CREATE_GUILD: "".concat(o, "/guilds/create"),
+    WELCOME: "".concat(a, "/welcome/"),
+    ME: "".concat(a, "/channels/@me"),
+    SETTINGS: (e, t) => "".concat(a, "/settings/").concat(e).concat(t ? "/".concat(t) : ""),
+    CONNECTION: e => "".concat(a, "/connections/").concat(e),
+    CHANGELOGS: "".concat(a, "/settings/changelogs"),
+    LOGIN: "".concat(a, "/login"),
+    LOGIN_WITH_REDIRECT: e => "".concat(a, "/login?redirect_to=").concat(e),
+    REGISTER: "".concat(a, "/register"),
+    REGISTER_WITH_REDIRECT: e => "".concat(a, "/register?redirect_to=").concat(e),
+    CREATE_GUILD: "".concat(a, "/guilds/create"),
     VANITY_INVITE: e => "".concat(s, "/").concat(e),
-    HYPESQUAD_ONLINE: "".concat(o, "/settings/hypesquad-online"),
-    BROWSE_NITRO_TITLES: "".concat(o, "/store/browse?type=nitro"),
-    SKU_DETAILS: (e, t) => "".concat(o, "/store/skus/").concat(e).concat(null != t ? "?store_listing_id=".concat(t) : ""),
+    HYPESQUAD_ONLINE: "".concat(a, "/settings/hypesquad-online"),
+    BROWSE_NITRO_TITLES: "".concat(a, "/store/browse?type=nitro"),
+    SKU_DETAILS: (e, t) => "".concat(a, "/store/skus/").concat(e).concat(null != t ? "?store_listing_id=".concat(t) : ""),
     MESSAGE: (e, t, n) => "/channels/".concat(e, "/").concat(t, "/").concat(n),
     CHANNEL: (e, t) => "/channels/".concat(e, "/").concat(t),
-    REPORT: "".concat(o, "/report"),
-    QUEST_PREVIEW_TOOL_2: e => "".concat(o, "/quest-preview/").concat(e)
+    REPORT: "".concat(a, "/report"),
+    QUEST_PREVIEW_TOOL_2: e => "".concat(a, "/quest-preview/").concat(e)
   });
-var ea = function(e) {
+var eo = function(e) {
   return e.INDEX = "/", e.INDEX_WORD = "/index", e.INDEX_BUCKET = "/index/:bucketId", e.CHANGELOGS = "/changelogs/:date", e.COMMUNITY = "/community", e.COMPANY = "/company", e.COMPANY_INFORMATION = "/company-information", e.CREATORS = "/creators", e.DOWNLOADS = "/downloads", e.DOWNLOAD = "/download", e.GAMING = "/gaming", e.PRIVACY = "/privacy", e.TOS = "/tos", e.TERMS = "/terms", e.STORE_TERMS = "/store-terms", e.ACKNOWLEDGEMENTS = "/acknowledgements", e.LICENSES = "/licenses", e.PARTNERS = "/partners", e.HYPESQUAD = "/hypesquad", e.HYPESQUAD_RIOT = "/hypesquad-riot", e.BRANDING = "/branding", e.ERROR_404 = "/404", e.JOBS = "/jobs", e.JOB = "/jobs/:jobId", e.STREAMKIT = "/streamkit", e.SECURITY = "/security", e.NITRO = "/nitro", e.DISCOVER = "/servers", e.QUESTS = "/ads/quests", e.GUIDELINES = "/guidelines", e.RICH_PRESENCE = "/rich-presence", e.VERIFICATION = "/verification", e.OPEN_SOURCE = "/open-source", e.WARFRAME = "/warframe", e.REMOTE_AUTH = "/ra/:remoteAuthFingerprint", e.SAFETY_LANDING = "/safetycenter", e.SAFETY_ARTICLE_ROOT = "/safety", e.SAFETY_ARTICLE = "/safety/:article", e.NEWSROOM = "/newsroom", e.INSPIRATION = "/inspiration", e.MOD_ACADEMY_LANDING = "/moderation", e.MOD_ACADEMY_EXAM = "/moderation/exam", e.MOD_ACADEMY_ARTICLE = "/moderation/:article", e.BLOG = "/blog", e.BUILD = "/build", e.DEVELOPERS = "/developers", e.APP_DIRECTORY = "/application-directory", e.REFRESH_INDEX = "/new", e.REFRESH_INDEX_WORD = "/new/index", e.REFRESH_COMPANY = "/new/company", e.REFRESH_DOWNLOAD = "/new/download", e.REFRESH_PRIVACY = "/new/privacy", e.REFRESH_TERMS = "/new/terms", e.REFRESH_ACKNOWLEDGEMENTS = "/new/acknowledgements", e.REFRESH_LICENSES = "/new/licenses", e.REFRESH_BRANDING = "/new/branding", e.REFRESH_JOBS = "/new/jobs", e.REFRESH_JOB = "/new/jobs/:jobId", e.REFRESH_STREAMKIT = "/new/streamkit", e.REFRESH_NITRO = "/new/nitro", e.REFRESH_GUIDELINES = "/new/guidelines", e.REFRESH_SAFETY_LANDING = "/new/safety", e.REFRESH_SAFETY_ARTICLE = "/new/safety/:article", e.COLLEGE = "/college", e.LEAGUE_CLUBS = "/league-communities", e.DISCORD_RECRUITING_SCAMS = "/discord-recruitment-scams", e.DEV_NEWSLETTER_SIGNUP = "/dev-newsletter", e.LEGACY_DEV_NEWSLETTER = "/newsletter", e.LEGAL_ARCHIVE = "/archive/", e.TERMS_MAY_2020 = "/archive/terms/may-2020", e.PRIVACY_JUNE_2020 = "/archive/privacy/june-2020", e.GUIDELINES_MAY_2020 = "/archive/guidelines/may-2020", e.FALL_RELEASE_2023 = "/fallrelease", e.MOBILE_REDESIGN_2023 = "/mobile", e.REFRESH_XBOX_OFFER = "/new/discord-xbox-offer-2019", e.REFRESH_WHY_DISCORD = "/why-discord-is-different", e.WHY_DISCORD = "/why-discord", e.XBOX_OFFER = "/discord-xbox-offer-2020", e.COLLEGE_BRUINS = "/bruins", e.COLLEGE_ANTEATERS = "/anteaters", e.COLLEGE_GAUCHOS = "/gauchos", e.COLLEGE_BEARS = "/bears", e.COLLEGE_SLUGS = "/slugs", e.BACK_TO_SCHOOL_GIVEAWAY_INSTAGRAM = "/terms/back-to-school-2020/instagram", e.BACK_TO_SCHOOL_GIVEAWAY_TWITTER = "/terms/back-to-school-2020/twitter", e.SNOWSGIVING_GIVEAWAY_INSTAGRAM = "/terms/snowsgiving-2020/instagram", e.SNOWSGIVING_GIVEAWAY_TWITTER = "/terms/snowsgiving-2020/twitter", e
-}(ea || {});
-let eo = (0, Chunk860911.Ft)(ei),
-  es = (0, Chunk860911.Ft)(ea),
+}(eo || {});
+let ea = (0, Chunk860911.Ft)(ei),
+  es = (0, Chunk860911.Ft)(eo),
   el = Object.freeze({
     FACEBOOK_URL: "https://www.facebook.com/discord/",
     INSTAGRAM_URL: "https://www.instagram.com/discord/",

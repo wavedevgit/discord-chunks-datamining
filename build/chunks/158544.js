@@ -5,9 +5,9 @@ var Chunk620267 = require("./620267.js"),
 module.exports = function(e, t, n) {
   return t = i(true === t ? e.length - 1 : t, 0),
     function() {
-      for (var a = arguments, o = false, s = i(a.length - t, 0), l = Array(s); ++o < s;) l[o] = a[t + o];
-      o = false;
-      for (var c = Array(t + 1); ++o < t;) c[o] = a[o];
+      for (var o = arguments, a = false, s = i(o.length - t, 0), l = Array(s); ++a < s;) l[a] = o[t + a];
+      a = false;
+      for (var c = Array(t + 1); ++a < t;) c[a] = o[a];
       return c[t] = n(l), r(e, this, c)
     }
 }

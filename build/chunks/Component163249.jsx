@@ -1,13 +1,13 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 163249, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk749210 = require("./749210.js"),
   Chunk493544 = require("./493544.jsx"),
@@ -15,57 +15,57 @@ var Chunk54381 = require("./54381.js"),
   Chunk714939 = require("./714939.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk500591 = require("./500591.js");
+  Chunk203552 = require("./203552.js");
 
-function b(e) {
+function f(e) {
   let {
     color: t,
     children: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: m.roleTag,
-    children: [(0, r.jsx)(s.xko, {
-      className: m.roleDot,
+    className: p.roleTag,
+    children: [(0, r.jsx)(a.xko, {
+      className: p.roleDot,
       color: t,
       colors: null
     }), (0, r.jsx)("span", {
-      className: m.roleText,
+      className: p.roleText,
       children: n
     })]
   })
 }
 
-function p(e) {
+function h(e) {
   let {
     guild: t,
     display: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(m.banner, t.backgroundClass, {
-      [m.bannerOut]: !n
+    className: s()(p.banner, t.backgroundClass, {
+      [p.bannerOut]: !n
     }),
     children: [(0, r.jsx)("div", {
-      className: m.roles,
+      className: p.roles,
       children: t.roles.map((e, t) => (0, r.jsx)("div", {
-        className: m.rolesRow,
-        children: e.map(e => (0, r.jsx)(b, {
+        className: p.rolesRow,
+        children: e.map(e => (0, r.jsx)(f, {
           color: e.color,
           children: e.name
         }, e.name))
       }, t))
     }), (0, r.jsx)("div", {
-      className: m.profileCard,
+      className: p.profileCard,
       children: (0, r.jsxs)("div", {
-        className: m.avatarContainer,
-        children: [(0, r.jsx)(s.qEK, {
-          size: s.EFr.SIZE_56,
+        className: p.avatarContainer,
+        children: [(0, r.jsx)(a.qEK, {
+          size: a.EFr.SIZE_56,
           "aria-hidden": true,
           status: g.Skl.ONLINE,
           src: t.avatar
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(a.Text, {
           color: "text-strong",
           variant: "text-md/bold",
-          className: m.avatarName,
+          className: p.avatarName,
           children: t.username
         })]
       })
@@ -73,9 +73,9 @@ function p(e) {
   })
 }
 
-function h() {
+function x() {
   let e = Chunk473749.useMemo(() => [{
-      backgroundClass: Chunk500591.bannerClubs,
+      backgroundClass: Chunk203552.bannerClubs,
       username: "Wumpus#0000",
       avatar: require("./91055.js"),
       roles: [
@@ -101,7 +101,7 @@ function h() {
         }]
       ]
     }, {
-      backgroundClass: Chunk500591.bannerGaming,
+      backgroundClass: Chunk203552.bannerGaming,
       username: "Graggle#0000",
       avatar: require("./507003.js"),
       roles: [
@@ -127,7 +127,7 @@ function h() {
         }]
       ]
     }, {
-      backgroundClass: Chunk500591.bannerHobbies,
+      backgroundClass: Chunk203552.bannerHobbies,
       username: "Mallow#0000",
       avatar: require("./552557.js"),
       roles: [
@@ -154,64 +154,64 @@ function h() {
       ]
     }], []),
     [t, l] = Chunk473749.useState(0),
-    a = Chunk473749.useRef(module);
+    s = Chunk473749.useRef(module);
   return Chunk473749.useEffect(() => {
-    a.current = module
+    s.current = module
   }), Chunk473749.useEffect(() => {
     if (Chunk607070.Z.useReducedMotion) return;
-    let e = setTimeout(() => Chunk120356((exports + 1) % a.current.length), 6332);
+    let e = setTimeout(() => Chunk120356((exports + 1) % s.current.length), 6332);
     return () => clearTimeout(module)
   }, [exports]), (0, Chunk54381.jsx)("div", {
-    className: Chunk500591.bannerContainer,
+    className: Chunk203552.bannerContainer,
     "aria-hidden": true,
-    children: module.map((e, n) => (0, r.jsx)(p, {
+    children: module.map((e, n) => (0, r.jsx)(h, {
       guild: e,
       display: n === t
     }, n))
   })
 }
 
-function x(e) {
+function b(e) {
   let {
     guild: t,
     everyoneRole: n,
     setEditRoleId: l
-  } = e, [a, d] = i.useState(false), g = async () => {
-    d(true), await o.Z.createRole(t.id), d(false)
-  }, b = i.useCallback(() => {
+  } = e, [s, u] = i.useState(false), g = async () => {
+    u(true), await o.Z.createRole(t.id), u(false)
+  }, f = i.useCallback(() => {
     l(n.id)
   }, [l, n.id]);
   return (0, r.jsx)(c.NM, {
     children: (0, r.jsxs)("div", {
-      className: m.section,
-      children: [(0, r.jsx)(s.Heading, {
+      className: p.section,
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
-        children: f.intl.string(f.t["LPJmL/"])
+        children: m.intl.string(m.t["LPJmL/"])
       }), (0, r.jsxs)("div", {
-        className: m.container,
-        children: [(0, r.jsx)(h, {}), (0, r.jsx)(s.Heading, {
+        className: p.container,
+        children: [(0, r.jsx)(x, {}), (0, r.jsx)(a.Heading, {
           variant: "heading-xl/semibold",
-          children: f.intl.string(f.t.ALlnbi)
-        }), (0, r.jsx)(s.Text, {
+          children: m.intl.string(m.t.ALlnbi)
+        }), (0, r.jsx)(a.Text, {
           color: "text-default",
           variant: "text-md/normal",
-          className: m.introBody,
-          children: f.intl.string(f.t["1ydhVp"])
+          className: p.introBody,
+          children: m.intl.string(m.t["1ydhVp"])
         }), (0, r.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: m.button,
-          children: (0, r.jsx)(s.Button, {
+          className: p.button,
+          children: (0, r.jsx)(a.Button, {
             variant: "primary",
-            text: f.intl.string(f.t.JZZjQK),
+            text: m.intl.string(m.t.JZZjQK),
             onClick: g,
-            loading: a
+            loading: s
           })
         })]
-      }), (0, r.jsx)(s.izJ, {
-        className: m.divider
-      }), (0, r.jsx)(u.Z, {
+      }), (0, r.jsx)(a.izJ, {
+        className: p.divider
+      }), (0, r.jsx)(d.Z, {
         role: n,
-        onClick: b
+        onClick: f
       })]
     })
   })

@@ -1,7 +1,7 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 367207, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 }), require("./415506.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -19,7 +19,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk937579 = require("./937579.js"),
   Chunk522558 = require("./522558.js");
 
-function m(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,20 +28,20 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function O(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class v extends Chunk317770.Z {
+class O extends Chunk317770.Z {
   _initialize() {
     __OVERLAY__ ? Chunk570140.Z.subscribe("PREMIUM_PAYMENT_MODAL_OPEN", this._handlePremiumPaymentModalOpen) : (Chunk570140.Z.subscribe("PREMIUM_PAYMENT_MODAL_CLOSE", this._handlePremiumPaymentModalClose), Chunk570140.Z.subscribe("MESSAGE_LENGTH_UPSELL", this.handleMessageLengthUpsell), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchPremiumOffer), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchCheckoutRecovery), Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this._maybeFetchUserAffinities))
   }
@@ -69,7 +69,7 @@ class v extends Chunk317770.Z {
       let {
         default: e
       } = await n.e("33184").then(n.bind(n, 465836));
-      return n => (0, r.jsx)(e, y({
+      return n => (0, r.jsx)(e, _({
         channel: t,
         content: l
       }, n))
@@ -78,7 +78,7 @@ class v extends Chunk317770.Z {
   openPremiumPaymentModalInApp(e) {
     if (__OVERLAY__) throw Error("Should not use this function from the overlay, use ModalAPI.openModal instead");
     return new Promise((t, n) => {
-      (0, s.Z)(O(y({}, e), {
+      (0, s.Z)(y(_({}, e), {
         onClose: e => {
           e ? t() : n()
         }
@@ -93,8 +93,8 @@ class v extends Chunk317770.Z {
       followupSKUInfo: r,
       analyticsObject: i
     } = null != e ? e : {};
-    return new Promise((e, a) => {
-      this._premiumPaymentModalCloseResolve = e, this._premiumPaymentModalCloseReject = a, l.Z.dispatch({
+    return new Promise((e, o) => {
+      this._premiumPaymentModalCloseResolve = e, this._premiumPaymentModalCloseReject = o, l.Z.dispatch({
         type: "PREMIUM_PAYMENT_MODAL_OPEN",
         initialPlanId: t,
         subscriptionTier: n,
@@ -104,7 +104,7 @@ class v extends Chunk317770.Z {
     })
   }
   constructor(...e) {
-    super(...e), m(this, "_premiumPaymentModalCloseResolve", null), m(this, "_premiumPaymentModalCloseReject", null), m(this, "_maybeFetchPremiumOffer", async () => {
+    super(...e), b(this, "_premiumPaymentModalCloseResolve", null), b(this, "_premiumPaymentModalCloseReject", null), b(this, "_maybeFetchPremiumOffer", async () => {
       let e = u.default.getCurrentUser();
       if (null != e && e.verified) {
         let t = (d.Z.canFractionalPremiumUserUseOffer() || !(0, f.I5)(e)) && !d.Z.isFetchingOffer();
@@ -113,19 +113,19 @@ class v extends Chunk317770.Z {
       l.Z.dispatch({
         type: "PREMIUM_MARKETING_DATA_READY"
       })
-    }), m(this, "_maybeFetchCheckoutRecovery", async () => {
+    }), b(this, "_maybeFetchCheckoutRecovery", async () => {
       let e = u.default.getCurrentUser();
       null != e && e.verified && !(0, f.I5)(e) && p.Z.shouldFetchCheckoutRecovery() && await (0, h.o)()
-    }), m(this, "_maybeFetchUserAffinities", () => {
+    }), b(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
-      } = b.w.getConfig({
+      } = m.w.getConfig({
         location: "PremiumManager"
       });
       e && (0, c._)()
-    }), m(this, "_handlePremiumPaymentModalOpen", e => {
-      (0, s.Z)(O(y({}, e), {
-        analyticsLocations: [o.Z.OVERLAY],
+    }), b(this, "_handlePremiumPaymentModalOpen", e => {
+      (0, s.Z)(y(_({}, e), {
+        analyticsLocations: [a.Z.OVERLAY],
         onClose: e => {
           l.Z.dispatch({
             type: "PREMIUM_PAYMENT_MODAL_CLOSE",
@@ -133,7 +133,7 @@ class v extends Chunk317770.Z {
           })
         }
       }))
-    }), m(this, "_handlePremiumPaymentModalClose", e => {
+    }), b(this, "_handlePremiumPaymentModalClose", e => {
       let {
         didSucceed: t
       } = e;
@@ -141,4 +141,4 @@ class v extends Chunk317770.Z {
     })
   }
 }
-let j = new v
+let v = new O

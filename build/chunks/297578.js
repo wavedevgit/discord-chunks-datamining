@@ -41,8 +41,8 @@ var Chunk117242 = require("./117242.js"),
     }
   },
   f = function(e, t, n, i) {
-    if (e instanceof a) return void n.push(d(e, t));
-    e instanceof o || u(false);
+    if (e instanceof o) return void n.push(d(e, t));
+    e instanceof a || u(false);
     var s = e.getParentKey(),
       l = i[e.getKey()] = r({}, d(e, t), {
         children: []
@@ -54,15 +54,15 @@ var Chunk117242 = require("./117242.js"),
     var n = t.entityMap,
       r = [],
       i = {},
-      a = {},
-      o = 0;
+      o = {},
+      a = 0;
     return e.getBlockMap().forEach(function(e) {
       e.findEntityRanges(function(e) {
         return null !== e.getEntity()
       }, function(t) {
         var r = e.getEntityAt(t),
           i = s.stringify(r);
-        !a[i] && (a[i] = r, n[i] = "".concat(o), o++)
+        !o[i] && (o[i] = r, n[i] = "".concat(a), a++)
       }), f(e, n, r, i)
     }), {
       blocks: r,

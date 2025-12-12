@@ -1,4 +1,4 @@
-/** Chunk was on 73248 **/
+/** Chunk was on 76212 **/
 /** chunk id: 846632, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => h
@@ -17,8 +17,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk731722 = require("./731722.js"),
   Chunk446094 = require("./446094.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk735703 = require("./735703.js"),
-  Chunk52140 = require("./52140.js");
+  Chunk921072 = require("./921072.js"),
+  Chunk265227 = require("./265227.js");
 
 function h(e) {
   var t, n, r, h, {
@@ -39,18 +39,18 @@ function h(e) {
       }
       return r
     }(e, ["guildId"]);
-  let y = (0, o.e7)([b.Z], () => b.Z.getGuild(j)),
-    O = (0, o.e7)([u.default], () => {
+  let _ = (0, o.e7)([u.Z], () => u.Z.getGuild(j)),
+    y = (0, o.e7)([g.default], () => {
       var e;
-      let t = null == (e = u.default.getCurrentUser()) ? true : e.primaryGuild;
+      let t = null == (e = g.default.getCurrentUser()) ? true : e.primaryGuild;
       return (null == t ? true : t.identityGuildId) === j && (null == t ? true : t.identityEnabled) === true
     }, [j]),
     {
-      isAdopting: x,
-      onAdoptTag: w,
-      onEditProfile: P
-    } = (0, g.Z)(j, v.onClose);
-  if (null != y && (0, f.up)(y) && (0, f.jq)(y)) return (0, a.jsxs)(d.Y0X, (t = function(e) {
+      isAdopting: O,
+      onAdoptTag: x,
+      onEditProfile: w
+    } = (0, b.Z)(j, v.onClose);
+  if (null != _ && (0, f.up)(_) && (0, f.jq)(_)) return (0, a.jsxs)(d.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         a = Object.keys(n);
@@ -90,42 +90,42 @@ function h(e) {
               variant: "text-md/normal",
               children: p.intl.string(m.default.kHxfDw)
             })]
-          }), (0, a.jsx)(s.Z, {
+          }), (0, a.jsx)(c.Z, {
             className: C.guildRow,
-            guildId: y.id,
-            guildName: y.name,
-            guildIcon: y.icon,
+            guildId: _.id,
+            guildName: _.name,
+            guildIcon: _.icon,
             guildIconSize: 32,
-            guildTag: y.profile.tag,
-            guildBadge: null != (r = y.profile.badge) ? r : ""
+            guildTag: _.profile.tag,
+            guildBadge: null != (r = _.profile.badge) ? r : ""
           }), (0, a.jsxs)("div", {
             className: C.buttonContainer,
             children: [(0, a.jsx)(l.u, {
               text: p.intl.string(m.default.WlENZt),
-              shouldShow: O,
+              shouldShow: y,
               children: (0, a.jsx)(d.Button, {
                 variant: "primary",
                 text: p.intl.string(p.t.jwEaiX),
                 fullWidth: true,
-                onClick: w,
-                loading: x,
-                disabled: O
+                onClick: x,
+                loading: O,
+                disabled: y
               })
             }), (0, a.jsx)(d.Button, {
               variant: "secondary",
               text: p.intl.string(p.t.s5vZlQ),
               fullWidth: true,
-              onClick: P
+              onClick: w
             })]
           })]
         })
       }), (0, a.jsx)("div", {
         className: i()(C.modalContentChild, C.right),
-        children: (0, a.jsx)(c.Z, {
+        children: (0, a.jsx)(s.Z, {
           className: C.rightContent,
-          guildId: y.id,
-          tag: y.profile.tag,
-          badge: null != (h = y.profile.badge) ? h : ""
+          guildId: _.id,
+          tag: _.profile.tag,
+          badge: null != (h = _.profile.badge) ? h : ""
         })
       })]
     }), (0, a.jsx)(d.olH, {

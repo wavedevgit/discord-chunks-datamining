@@ -11,18 +11,18 @@ try {
   i = null
 }
 if (Chunk265518 && r) {
-  var a = {},
-    o = {};
-  Chunk265518(o, "length", {
+  var o = {},
+    a = {};
+  Chunk265518(a, "length", {
     "[[Get]]": function() {
-      throw a
+      throw o
     },
     "[[Enumerable]]": true
   }), module.exports = function(e) {
     try {
-      r(e, o)
+      r(e, a)
     } catch (e) {
-      return e === a
+      return e === o
     }
   }
 } else module.exports = function(e) {

@@ -70,7 +70,7 @@ function m(e, t, n) {
     },
     shouldSelectOnPressUp: I
   });
-  let D = (0, o.j)({
+  let D = (0, a.j)({
       selectionManager: T,
       hasItemActions: !!(O || v)
     }),
@@ -98,7 +98,7 @@ function m(e, t, n) {
     }, t.isKeyboardNavigationDisabled ? j : R, 0 === t.collection.size && {
       tabIndex: M ? false : 0
     } || true, D);
-  return m && (k["aria-rowcount"] = t.collection.size, k["aria-colcount"] = t.collection.columnCount), (0, a.B)({
+  return m && (k["aria-rowcount"] = t.collection.size, k["aria-colcount"] = t.collection.columnCount), (0, o.B)({
     getRowText: y
   }, t), {
     gridProps: k

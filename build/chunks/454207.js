@@ -1,23 +1,4 @@
 /** Chunk was on web.js **/
-/** chunk id: 454207, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 454207, original params: e (module,exports,re quire) **/
 "use strict";
-require.d(exports, {
-  aF: () => o,
-  s3: () => s
-});
-var Chunk805666 = require("./805666.js"),
-  Chunk732418 = require("./732418.js");
-
-function a() {
-  let e = (0, Chunk732418.c)();
-  return (0, Chunk805666.G)(module).getCurrentScope()
-}
-
-function o() {
-  let e = (0, Chunk732418.c)();
-  return (0, Chunk805666.G)(module).getIsolationScope()
-}
-
-function s() {
-  return a().getClient()
-}
+module.exports = "/assets/d341ef291be7c84a.svg"

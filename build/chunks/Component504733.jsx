@@ -11,14 +11,14 @@ var Chunk481060 = require("./481060.js"),
   Chunk942951 = require("./942951.jsx"),
   Chunk834129 = require("./834129.jsx"),
   Chunk981791 = require("./981791.js"),
-  Chunk805078 = require("./805078.js");
+  Chunk583535 = require("./583535.js");
 
 function u(e) {
   let {
     message: t,
     channel: n,
     compact: u
-  } = e, d = (0, a.ZP)(t), f = t.application, p = (0, o.l)({
+  } = e, d = (0, o.ZP)(t), f = t.application, p = (0, a.l)({
     user: t.author,
     channelId: n.id,
     guildId: n.guild_id,

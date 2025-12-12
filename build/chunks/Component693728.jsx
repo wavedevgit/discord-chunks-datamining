@@ -10,7 +10,7 @@ var r, Chunk54381 = require("./54381.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
-  Chunk173680 = require("./173680.js");
+  Chunk433409 = require("./433409.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -24,8 +24,8 @@ var f = function(e) {
   return e.SINGLE_AVATAR = "1", e.MULTIPLE_AVATAR = "2", e
 }(f || {});
 let p = {
-  [Chunk481060.EFr.SIZE_32]: Chunk173680.avatarSmall,
-  [Chunk481060.EFr.SIZE_40]: Chunk173680.avatarLarge
+  [Chunk481060.EFr.SIZE_32]: Chunk433409.avatarSmall,
+  [Chunk481060.EFr.SIZE_40]: Chunk433409.avatarLarge
 };
 class _ extends(r = Chunk473749.Component) {
   render() {
@@ -34,32 +34,32 @@ class _ extends(r = Chunk473749.Component) {
       avatarSize: t,
       className: n,
       childrenClassName: r,
-      doNotAnimate: a
+      doNotAnimate: o
     } = this.props;
     return "2" === module ? (0, Chunk54381.jsxs)("div", {
-      className: s()(Chunk173680.multiplePlaceholder, Chunk173680.multiplePlaceholderAnimated, require),
+      className: s()(Chunk433409.multiplePlaceholder, Chunk433409.multiplePlaceholderAnimated, require),
       children: [(0, Chunk54381.jsxs)(Chunk600164.Z, {
         children: [(0, Chunk54381.jsx)("div", {
-          className: s()(Chunk173680.placeholderAvatar, p[exports], Chunk173680.avatarMasked)
+          className: s()(Chunk433409.placeholderAvatar, p[exports], Chunk433409.avatarMasked)
         }), (0, Chunk54381.jsx)("div", {
-          className: s()(Chunk173680.placeholderAvatar, p[exports], Chunk173680.avatarMasked)
+          className: s()(Chunk433409.placeholderAvatar, p[exports], Chunk433409.avatarMasked)
         }), (0, Chunk54381.jsx)("div", {
-          className: s()(Chunk173680.placeholderAvatar, p[exports])
+          className: s()(Chunk433409.placeholderAvatar, p[exports])
         })]
       }), (0, Chunk54381.jsx)(Chunk600164.Z, {
         grow: 1,
-        className: Chunk173680.mulitplePlaceholderUsername,
+        className: Chunk433409.mulitplePlaceholderUsername,
         style: {
           maxWidth: this.placeholderMaxWidth
         }
       })]
     }) : (0, Chunk54381.jsxs)(Chunk600164.Z, {
-      className: s()(Chunk173680.placeholder, !Chunk473749 && Chunk173680.placeholderAnimated, require),
+      className: s()(Chunk433409.placeholder, !Chunk473749 && Chunk433409.placeholderAnimated, require),
       children: [(0, Chunk54381.jsx)("div", {
-        className: s()(Chunk173680.placeholderAvatar, p[exports], r)
+        className: s()(Chunk433409.placeholderAvatar, p[exports], r)
       }), (0, Chunk54381.jsx)(Chunk600164.Z, {
         grow: 1,
-        className: s()(Chunk173680.placeholderUsername, r),
+        className: s()(Chunk433409.placeholderUsername, r),
         style: {
           maxWidth: this.placeholderMaxWidth
         }

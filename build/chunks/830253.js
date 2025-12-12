@@ -27,7 +27,7 @@ function h(e, t) {
       audioRef: g
     } = i.useContext(l.Z),
     [E, b] = i.useState(false),
-    y = (0, a.e7)([d.Z], () => d.Z.isPlayingSound(e.soundId), [e]);
+    y = (0, o.e7)([d.Z], () => d.Z.isPlayingSound(e.soundId), [e]);
   return {
     playSoundboardSound: i.useCallback(n => {
       null != g.current && g.current.pause(), null != t && (0, f.GN)(e, t, n)
@@ -38,7 +38,7 @@ function h(e, t) {
         r = new(await (0, s.Z)(t));
       if (r.src = t, null != g.current && g.current.pause(), u.isPlatformEmbedded && h === m.w.VOICE) {
         var i;
-        null == (i = r.setSinkId) || i.call(r, o.voiceSinkId)
+        null == (i = r.setSinkId) || i.call(r, a.voiceSinkId)
       }
       g.current = r, r.currentTime = 0, r.volume = (0, _.Z)(e.volume, n), r.play(), b(true), r.addEventListener("pause", () => b(false), {
         once: true

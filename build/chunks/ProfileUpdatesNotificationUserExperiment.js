@@ -2,7 +2,7 @@
 /** chunk id: 925734, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  F4: () => a,
+  F4: () => o,
   oW: () => i
 });
 let r = (0, require("./818083.js").B)({
@@ -35,7 +35,7 @@ function i(e) {
   })
 }
 
-function a(e) {
+function o(e) {
   return r.getCurrentConfig({
     location: e
   }, {

@@ -21,13 +21,13 @@ var Chunk592125 = require("./592125.js"),
   Chunk981631 = require("./981631.js");
 
 function p(e, t, n) {
-  var i, a;
-  let o = null == n ? true : n.permissionOverwrites[e];
+  var i, o;
+  let a = null == n ? true : n.permissionOverwrites[e];
   return {
     id: e,
     type: t,
-    deny: null != (i = null == o ? true : o.deny) ? i : c.Hn,
-    allow: r.Od(null != (a = null == o ? true : o.allow) ? a : c.Hn, u.yP)
+    deny: null != (i = null == a ? true : a.deny) ? i : c.Hn,
+    allow: r.Od(null != (o = null == a ? true : a.allow) ? o : c.Hn, u.yP)
   }
 }
 
@@ -40,17 +40,17 @@ function _(e) {
 }
 
 function m(e) {
-  return (0, i.e7)([l.Z, s.Z, o.Z], () => {
-    let t = o.Z.getChannel(e),
+  return (0, i.e7)([l.Z, s.Z, a.Z], () => {
+    let t = a.Z.getChannel(e),
       n = s.Z.getGuild(null == t ? true : t.getGuildId());
     return !!(l.Z.can(f.Plq.ADMINISTRATOR, n) || l.Z.can(f.Plq.MANAGE_ROLES, t, true, true, true) || l.Z.can(u.N, t))
   }, [e])
 }
 
 function h(e) {
-  return (0, i.e7)([o.Z, l.Z], () => null != e && l.Z.can(f.Plq.MUTE_MEMBERS, o.Z.getChannel(e)), [e])
+  return (0, i.e7)([a.Z, l.Z], () => null != e && l.Z.can(f.Plq.MUTE_MEMBERS, a.Z.getChannel(e)), [e])
 }
 
 function g(e) {
-  return null != e && !!e.isGuildStageVoice() && !!a.Z.isLurking(e.guild_id) && !!d.Z.isPublic(e.id) && l.Z.can(u.gl, e)
+  return null != e && !!e.isGuildStageVoice() && !!o.Z.isLurking(e.guild_id) && !!d.Z.isPublic(e.id) && l.Z.can(u.gl, e)
 }

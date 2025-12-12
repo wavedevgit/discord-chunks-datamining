@@ -8,7 +8,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -60,7 +60,7 @@ class _ extends(r = Chunk442837.ZP.Store) {
     return null == (n = s.get(e)) ? true : n.get(t)
   }
 }
-o(_, "displayName", "CreatorMonetizationStore");
+a(_, "displayName", "CreatorMonetizationStore");
 let m = new _(Chunk570140.Z, {
   CONNECTION_OPEN: u,
   CREATOR_MONETIZATION_PRICE_TIERS_FETCH: d,

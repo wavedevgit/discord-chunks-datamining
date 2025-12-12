@@ -14,7 +14,7 @@ require.d(exports, {
   ZB: () => d,
   b9: () => O,
   g_: () => f,
-  iq: () => o,
+  iq: () => a,
   pG: () => b,
   sr: () => m,
   z5: () => h
@@ -22,10 +22,10 @@ require.d(exports, {
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
-async function o(e, t) {
+async function a(e, t) {
   var n;
   let {
-    nick: o,
+    nick: a,
     avatar: s,
     avatarDescription: l,
     avatarId: c,
@@ -38,7 +38,7 @@ async function o(e, t) {
     type: "GUILD_IDENTITY_SETTINGS_SUBMIT"
   });
   let p = {
-    nick: o,
+    nick: a,
     avatar: s,
     avatar_description: l,
     avatar_id: c,
@@ -54,7 +54,7 @@ async function o(e, t) {
   };
   try {
     let t = await r.tn.patch({
-        url: a.ANM.SET_GUILD_MEMBER(e),
+        url: o.ANM.SET_GUILD_MEMBER(e),
         body: p,
         oldFormErrors: true,
         rejectWithError: false

@@ -18,18 +18,18 @@ let p = {
   selectMode: Chunk590921.W7.TAB_ONLY,
   stores: [Chunk271383.ZP],
   matches(e, t, n, r, i) {
-    var o;
+    var a;
     let {
       enabled: u
     } = (0, s.kB)("MentionSuggestionAutocompletes", {
       autoTrackExposure: true
     });
-    return !(!u || e.isDM()) && !!c.HV.getSetting() && !!(null == (o = i.chatInputType.autocomplete) ? true : o.mentionSuggestions) && i.mentions.user !== d.h3.DENY && null != i.currentFullWord && !(i.currentFullWord.length < l.Q) && null == a.Z.getActiveCommand(e.id) && true
+    return !(!u || e.isDM()) && !!c.HV.getSetting() && !!(null == (a = i.chatInputType.autocomplete) ? true : a.mentionSuggestions) && i.mentions.user !== d.h3.DENY && null != i.currentFullWord && !(i.currentFullWord.length < l.Q) && null == o.Z.getActiveCommand(e.id) && true
   },
   queryResults(e, t, n, r) {
     var i;
-    let a = n.length;
-    return (0, l.r)(e, null != (i = r.currentFullWord) ? i : "", a, {
+    let o = n.length;
+    return (0, l.r)(e, null != (i = r.currentFullWord) ? i : "", o, {
       isIdle: r.isEditorIdle,
       currentAutocompleteType: r.currentAutocompleteType
     })
@@ -40,7 +40,7 @@ let p = {
         suggestions: t
       },
       selectedIndex: n,
-      channel: a,
+      channel: o,
       options: l,
       onHover: c,
       onClick: u
@@ -48,8 +48,8 @@ let p = {
       suggestionDesign: d
     } = (0, s.kB)("MentionSuggestionAutocompletes", {
       autoTrackExposure: false
-    }), f = t.map((e, t) => (0, r.jsx)(o.ZP.UserSuggestion, {
-      guildId: a.guild_id,
+    }), f = t.map((e, t) => (0, r.jsx)(a.ZP.UserSuggestion, {
+      guildId: o.guild_id,
       onClick: u,
       onHover: c,
       selected: n === t,
@@ -75,10 +75,10 @@ let p = {
         }
       },
       index: i,
-      options: a,
-      channel: o
+      options: o,
+      channel: a
     } = e, s = t[i];
-    return null != s && a.insertText(n + (0, f.BL)(s.user, o, a.hidePersonalInformation) + r, n + (0, f.m1)(s.user) + r, {
+    return null != s && o.insertText(n + (0, f.BL)(s.user, a, o.hidePersonalInformation) + r, n + (0, f.m1)(s.user) + r, {
       replaceFullWord: true
     }), {
       type: d.z2.MENTION

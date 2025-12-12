@@ -39,8 +39,8 @@ let c = {
       } = await n.e("76323").then(n.bind(n, 298237));
       return t => (0, r.jsx)(e, l({}, t))
     }, {
-      modalKey: a.$$,
-      onCloseRequest: o.dG,
+      modalKey: o.$$,
+      onCloseRequest: a.dG,
       onCloseCallback: e
     })
   },

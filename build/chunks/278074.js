@@ -7,49 +7,49 @@ require.d(exports, {
 });
 let r = Symbol.for("@ts-pattern/matcher"),
   i = Symbol.for("@ts-pattern/isVariadic"),
-  a = "@ts-pattern/anonymous-select-key",
-  o = e => !!(e && "object" == typeof e),
+  o = "@ts-pattern/anonymous-select-key",
+  a = e => !!(e && "object" == typeof e),
   s = e => e && !!e[r],
   l = (e, t, n) => {
     if (s(e)) {
       let {
         matched: i,
-        selections: a
+        selections: o
       } = e[r]().match(t);
-      return i && a && Object.keys(a).forEach(e => n(e, a[e])), i
+      return i && o && Object.keys(o).forEach(e => n(e, o[e])), i
     }
-    if (o(e)) {
-      if (!o(t)) returnfalse;
+    if (a(e)) {
+      if (!a(t)) returnfalse;
       if (Array.isArray(e)) {
         if (!Array.isArray(t)) returnfalse;
         let r = [],
-          a = [],
-          o = [];
+          o = [],
+          a = [];
         for (let t of e.keys()) {
           let n = e[t];
-          s(n) && n[i] ? o.push(n) : o.length ? a.push(n) : r.push(n)
+          s(n) && n[i] ? a.push(n) : a.length ? o.push(n) : r.push(n)
         }
-        if (o.length) {
-          if (o.length > 1) throw Error("Pattern error: Using `...P.array(...)` several times in a single pattern is not allowed.");
-          if (t.length < r.length + a.length) returnfalse;
+        if (a.length) {
+          if (a.length > 1) throw Error("Pattern error: Using `...P.array(...)` several times in a single pattern is not allowed.");
+          if (t.length < r.length + o.length) returnfalse;
           let e = t.slice(0, r.length),
-            i = 0 === a.length ? [] : t.slice(-a.length),
-            s = t.slice(r.length, 0 === a.length ? 1 / 0 : -a.length);
-          return r.every((t, r) => l(t, e[r], n)) && a.every((e, t) => l(e, i[t], n)) && (0 === o.length || l(o[0], s, n))
+            i = 0 === o.length ? [] : t.slice(-o.length),
+            s = t.slice(r.length, 0 === o.length ? 1 / 0 : -o.length);
+          return r.every((t, r) => l(t, e[r], n)) && o.every((e, t) => l(e, i[t], n)) && (0 === a.length || l(a[0], s, n))
         }
         return e.length === t.length && e.every((e, r) => l(e, t[r], n))
       }
       return Object.keys(e).every(i => {
-        var a;
-        let o = e[i];
-        return (i in t || s(a = o) && "optional" === a[r]().matcherType) && l(o, t[i], n)
+        var o;
+        let a = e[i];
+        return (i in t || s(o = a) && "optional" === o[r]().matcherType) && l(a, t[i], n)
       })
     }
     return Object.is(t, e)
   },
   c = e => {
     var t, n, i;
-    return o(e) ? s(e) ? null != (t = null == (n = (i = e[r]()).getSelectionKeys) ? true : n.call(i)) ? t : [] : Array.isArray(e) ? u(e, c) : u(Object.values(e), c) : []
+    return a(e) ? s(e) ? null != (t = null == (n = (i = e[r]()).getSelectionKeys) ? true : n.call(i)) ? t : [] : Array.isArray(e) ? u(e, c) : u(Object.values(e), c) : []
   },
   u = (e, t) => e.reduce((e, n) => e.concat(t(n)), []);
 
@@ -175,7 +175,7 @@ function y(...e) {
     [r]: () => ({
       match: e => {
         let r = {
-          [null != t ? t : a]: e
+          [null != t ? t : o]: e
         };
         return {
           matched: true === n || l(n, e, (e, t) => {
@@ -184,7 +184,7 @@ function y(...e) {
           selections: r
         }
       },
-      getSelectionKeys: () => [null != t ? t : a].concat(true === n ? [] : c(n))
+      getSelectionKeys: () => [null != t ? t : o].concat(true === n ? [] : c(n))
     })
   })
 }
@@ -360,11 +360,11 @@ var X = {
             matched: true
           };
           if (1 === e.length) throw Error(`\`P.map\` wasn't given enough arguments. Expected (key, value), received ${null==(n=e[0])?true:n.toString()}`);
-          let [a, o] = e;
+          let [o, a] = e;
           return {
             matched: h(t, (e, t) => {
-              let n = l(a, t, i),
-                r = l(o, e, i);
+              let n = l(o, t, i),
+                r = l(a, e, i);
               return n && r
             }),
             selections: r
@@ -441,13 +441,13 @@ class ee {
       r = [e[0]];
     3 === e.length && "function" == typeof e[1] ? (r.push(e[0]), t = e[1]) : e.length > 2 && r.push(...e.slice(1, e.length - 1));
     let i = false,
-      o = {},
+      a = {},
       s = (e, t) => {
-        i = true, o[e] = t
+        i = true, a[e] = t
       },
       c = r.some(e => l(e, this.input, s)) && (!t || t(this.input)) ? {
         matched: true,
-        value: n(i ? a in o ? o[a] : o : this.input, this.input)
+        value: n(i ? o in a ? a[o] : a : this.input, this.input)
       } : J;
     return new ee(this.input, c)
   }

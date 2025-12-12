@@ -63,7 +63,7 @@ function p(e) {
     let [s, c] = i.useState({
       width: 0,
       height: 0
-    }), p = (0, o.Z)(e => {
+    }), p = (0, a.Z)(e => {
       if (null != e) {
         let {
           width: t,
@@ -74,9 +74,9 @@ function p(e) {
           height: n
         })
       }
-    }), _ = (0, o.Z)(e => {
+    }), _ = (0, a.Z)(e => {
       p(e.contentRect)
-    }), m = (0, a.y)(_);
+    }), m = (0, o.y)(_);
     return i.useImperativeHandle(n, () => ({
       triggerResize: () => {
         var e;

@@ -8,22 +8,22 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk95687 = require("./95687.js"),
-  Chunk723564 = require("./723564.js");
+  Chunk252073 = require("./252073.js"),
+  Chunk531599 = require("./531599.js");
 
 function u() {
   return (0, Chunk54381.jsxs)("div", {
-    className: a()(Chunk95687.upsellFooter, Chunk95687.reverseTrialUpsellContainer),
+    className: o()(Chunk252073.upsellFooter, Chunk252073.reverseTrialUpsellContainer),
     children: [(0, Chunk54381.jsx)("img", {
-      src: Chunk723564.Z,
+      src: Chunk531599.Z,
       alt: "reverse trial unlock",
-      className: Chunk95687.unlockIcon
+      className: Chunk252073.unlockIcon
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
-      className: Chunk95687.upsellText,
+      className: Chunk252073.upsellText,
       children: Chunk388032.intl.format(Chunk388032.t.f5VHKm, {})
     })]
   })
@@ -36,7 +36,7 @@ function d(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: l.upsellFooter,
-    children: [(0, r.jsx)(o.SrA, {
+    children: [(0, r.jsx)(a.SrA, {
       size: "md",
       className: l.upsellFooterIcon,
       color: n

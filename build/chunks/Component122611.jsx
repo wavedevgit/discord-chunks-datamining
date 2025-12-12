@@ -102,7 +102,7 @@ let P = e => {
   } = e;
   switch ((0, I.Z)(t)) {
     case I.R.ENABLE_PUBLIC_GUILD:
-      return (0, r.jsx)(b.Z, {
+      return (0, r.jsx)(_.Z, {
         guild: t
       });
     case I.R.MAX_MEMBER_COUNT:
@@ -130,7 +130,7 @@ let P = e => {
         guild: t
       })
   }
-  return _.s.isDisallowPopupsSet() ? null : (0, r.jsx)(j, {
+  return b.s.isDisallowPopupsSet() ? null : (0, r.jsx)(j, {
     guild: e.guild
   })
 }

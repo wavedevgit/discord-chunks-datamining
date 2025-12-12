@@ -14,22 +14,22 @@ function s(e) {
     guildId: t,
     code: n
   } = e;
-  if (n === a.evJ.ENTITY_TOO_LARGE) {
+  if (n === o.evJ.ENTITY_TOO_LARGE) {
     let e = (0, i.dg)(t);
     return r.Z.show({
-      title: o.intl.string(o.t["/tGlcj"]),
-      body: o.intl.formatToPlainString(o.t.fxEKdS, {
+      title: a.intl.string(a.t["/tGlcj"]),
+      body: a.intl.formatToPlainString(a.t.fxEKdS, {
         maxSize: (0, i.Ng)(e)
       })
     }), true
   }
-  return n === a.evJ.TOO_MANY_ATTACHMENTS ? (r.Z.show({
-    title: o.intl.string(o.t.wOr6hB),
-    body: o.intl.formatToPlainString(o.t["qqyp/e"], {
-      limit: a.dN1
+  return n === o.evJ.TOO_MANY_ATTACHMENTS ? (r.Z.show({
+    title: a.intl.string(a.t.wOr6hB),
+    body: a.intl.formatToPlainString(a.t["qqyp/e"], {
+      limit: o.dN1
     })
-  }), true) : (n === a.evJ.ENTITY_EMPTY && r.Z.show({
-    title: o.intl.string(o.t.B3vFdU),
-    body: o.intl.string(o.t["9ZpT2C"])
+  }), true) : (n === o.evJ.ENTITY_EMPTY && r.Z.show({
+    title: a.intl.string(a.t.B3vFdU),
+    body: a.intl.string(a.t["9ZpT2C"])
   }), false)
 }

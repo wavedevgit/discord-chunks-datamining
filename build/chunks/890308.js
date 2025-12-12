@@ -3,9 +3,9 @@
 e = require.nmd(module),
   function(r) {
     var i = t && !t.nodeType && t,
-      a = e && !e.nodeType && e,
-      o = "object" == typeof n.g && n.g;
-    (o.global === o || o.window === o || o.self === o) && (r = o);
+      o = e && !e.nodeType && e,
+      a = "object" == typeof n.g && n.g;
+    (a.global === a || a.window === a || a.self === a) && (r = a);
     var s, l, c = 0x7fffffff,
       u = 36,
       d = 1,
@@ -43,7 +43,7 @@ e = require.nmd(module),
     }
 
     function N(e) {
-      for (var t, n, r = [], i = 0, a = e.length; i < a;)(t = e.charCodeAt(i++)) >= 55296 && t <= 56319 && i < a ? (64512 & (n = e.charCodeAt(i++))) == 56320 ? r.push(((1023 & t) << 10) + (1023 & n) + 65536) : (r.push(t), i--) : r.push(t);
+      for (var t, n, r = [], i = 0, o = e.length; i < o;)(t = e.charCodeAt(i++)) >= 55296 && t <= 56319 && i < o ? (64512 & (n = e.charCodeAt(i++))) == 56320 ? r.push(((1023 & t) << 10) + (1023 & n) + 65536) : (r.push(t), i--) : r.push(t);
       return r
     }
 
@@ -69,28 +69,28 @@ e = require.nmd(module),
     }
 
     function x(e) {
-      var t, n, r, i, a, o, s, l, p, _, E = [],
+      var t, n, r, i, o, a, s, l, p, _, E = [],
         b = e.length,
         y = 0,
         O = h,
         v = m;
       for ((n = e.lastIndexOf(g)) < 0 && (n = 0), r = 0; r < n; ++r) e.charCodeAt(r) >= 128 && T("not-basic"), E.push(e.charCodeAt(r));
       for (i = n > 0 ? n + 1 : 0; i < b;) {
-        for (a = y, o = 1, s = u; i >= b && T("invalid-input"), ((l = R(e.charCodeAt(i++))) >= u || l > S((c - y) / o)) && T("overflow"), y += l * o, !(l < (p = s <= v ? d : s >= v + f ? f : s - v)); s += u) o > S(c / (_ = u - p)) && T("overflow"), o *= _;
-        v = D(y - a, t = E.length + 1, 0 == a), S(y / t) > c - O && T("overflow"), O += S(y / t), y %= t, E.splice(y++, 0, O)
+        for (o = y, a = 1, s = u; i >= b && T("invalid-input"), ((l = R(e.charCodeAt(i++))) >= u || l > S((c - y) / a)) && T("overflow"), y += l * a, !(l < (p = s <= v ? d : s >= v + f ? f : s - v)); s += u) a > S(c / (_ = u - p)) && T("overflow"), a *= _;
+        v = D(y - o, t = E.length + 1, 0 == o), S(y / t) > c - O && T("overflow"), O += S(y / t), y %= t, E.splice(y++, 0, O)
       }
       return P(E)
     }
 
     function L(e) {
-      var t, n, r, i, a, o, s, l, p, _, E, b, y, O, v, C = [];
-      for (o = 0, b = (e = N(e)).length, t = h, n = 0, a = m; o < b; ++o)(E = e[o]) < 128 && C.push(I(E));
+      var t, n, r, i, o, a, s, l, p, _, E, b, y, O, v, C = [];
+      for (a = 0, b = (e = N(e)).length, t = h, n = 0, o = m; a < b; ++a)(E = e[a]) < 128 && C.push(I(E));
       for (r = i = C.length, i && C.push(g); r < b;) {
-        for (s = c, o = 0; o < b; ++o)(E = e[o]) >= t && E < s && (s = E);
-        for (s - t > S((c - n) / (y = r + 1)) && T("overflow"), n += (s - t) * y, t = s, o = 0; o < b; ++o)
-          if ((E = e[o]) < t && ++n > c && T("overflow"), E == t) {
-            for (l = n, p = u; !(l < (_ = p <= a ? d : p >= a + f ? f : p - a)); p += u) v = l - _, O = u - _, C.push(I(w(_ + v % O, 0))), l = S(v / O);
-            C.push(I(w(l, 0))), a = D(n, y, r == i), n = 0, ++r
+        for (s = c, a = 0; a < b; ++a)(E = e[a]) >= t && E < s && (s = E);
+        for (s - t > S((c - n) / (y = r + 1)) && T("overflow"), n += (s - t) * y, t = s, a = 0; a < b; ++a)
+          if ((E = e[a]) < t && ++n > c && T("overflow"), E == t) {
+            for (l = n, p = u; !(l < (_ = p <= o ? d : p >= o + f ? f : p - o)); p += u) v = l - _, O = u - _, C.push(I(w(_ + v % O, 0))), l = S(v / O);
+            C.push(I(w(l, 0))), o = D(n, y, r == i), n = 0, ++r
           }++ n, ++t
       }
       return C.join("")
@@ -120,8 +120,8 @@ e = require.nmd(module),
       }, "function" == typeof define && "object" == typeof define.amd && define.amd) define("punycode", function() {
       return s
     });
-    else if (i && a)
-      if (e.exports == i) a.exports = s;
+    else if (i && o)
+      if (e.exports == i) o.exports = s;
       else
         for (l in s) s.hasOwnProperty(l) && (i[l] = s[l]);
     else r.punycode = s

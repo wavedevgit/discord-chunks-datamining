@@ -34,25 +34,25 @@ var Chunk636881 = require("./636881.js"),
     return !!/./ [b] && "" === /./ [b]("a", "$0")
   }();
 Chunk518187("replace", function(e, t, n) {
-  var a = N ? "$" : "$0";
+  var o = N ? "$" : "$0";
   return [function(e, n) {
     var r = _(this),
-      a = u(e) ? true : h(e, b);
-    return a ? i(a, e, r, n) : i(t, p(r), e, n)
+      o = u(e) ? true : h(e, b);
+    return o ? i(o, e, r, n) : i(t, p(r), e, n)
   }, function(e, i) {
-    var o = l(this),
+    var a = l(this),
       s = p(e);
-    if ("string" == typeof i && false === I(i, a) && false === I(i, "$<")) {
-      var u = n(t, o, s, i);
+    if ("string" == typeof i && false === I(i, o) && false === I(i, "$<")) {
+      var u = n(t, a, s, i);
       if (u.done) return u.value
     }
     var _ = c(i);
     _ || (i = p(i));
-    var h = o.global;
-    h && (R = o.unicode, o.lastIndex = 0);
-    for (var b = []; null !== (D = E(o, s)) && (S(b, D), h);) {
+    var h = a.global;
+    h && (R = a.unicode, a.lastIndex = 0);
+    for (var b = []; null !== (D = E(a, s)) && (S(b, D), h);) {
       ;
-      "" === p(D[0]) && (o.lastIndex = m(s, f(o.lastIndex), R))
+      "" === p(D[0]) && (a.lastIndex = m(s, f(a.lastIndex), R))
     }
     for (var A = "", N = 0, P = 0; P < b.length; P++) {
       for (var R, w, D = b[P], x = p(D[0]), L = y(O(d(D.index), s.length), 0), j = [], M = 1; M < D.length; M++) S(j, C(D[M]));

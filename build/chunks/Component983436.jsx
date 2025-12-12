@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk222922 = require("./222922.js");
+  Chunk105341 = require("./105341.js");
 
 function h(e) {
   let {
@@ -32,7 +32,7 @@ function h(e) {
       link_channel_type: n.type,
       guild_id: g,
       channel_id: E
-    }), (0, s.K)(t.id, n.id), o.default.selectVoiceChannel(n.id)
+    }), (0, s.K)(t.id, n.id), a.default.selectVoiceChannel(n.id)
   }, [h, t, n, g, E]), y = (0, r.jsx)(c.Z.Channel, {
     channel: n
   });
@@ -60,7 +60,7 @@ function h(e) {
         })]
       }), (0, r.jsx)("div", {
         className: m.buttonContainer,
-        children: (0, r.jsx)(a.zxk, {
+        children: (0, r.jsx)(o.zxk, {
           fullWidth: true,
           onClick: b,
           variant: "active",

@@ -16,8 +16,8 @@ function s(e) {
     isGuildProfile: s = false,
     avatarAssetOrigin: l = r.q.NEW_ASSET
   } = e;
-  i.default.track(o.rMx.USER_AVATAR_UPDATED, {
-    animated: (0, a.xR)(t),
+  i.default.track(a.rMx.USER_AVATAR_UPDATED, {
+    animated: (0, o.xR)(t),
     is_guild_profile: s,
     recent_avatar_id: l === r.q.ARCHIVED_ASSET ? Number(n) : true,
     is_edited_recent_avatar: l === r.q.EDITED_ARCHIVED_ASSET

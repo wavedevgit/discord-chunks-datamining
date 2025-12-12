@@ -57,7 +57,7 @@ let d = () => {
   }), []), n = (0, Chunk442837.Wu)([Chunk115130.Z], () => Chunk115130.Z.getDeveloperShelfItems(), []);
   return Chunk473749.useMemo(() => module ? require.map(e => ({
     application: e,
-    activity: u(l({}, o.wT, e.embeddedActivityConfig), {
+    activity: u(l({}, a.wT, e.embeddedActivityConfig), {
       application_id: e.id
     })
   })).sort((e, n) => {

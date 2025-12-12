@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk328456 = require("./328456.js"),
   Chunk619899 = require("./619899.js"),
   Chunk616066 = require("./616066.jsx"),
-  Chunk235809 = require("./235809.js"),
+  Chunk881937 = require("./881937.js"),
   Chunk63243 = require("./63243.js"),
   Chunk244488 = require("./244488.js");
 let E = Chunk473749.memo(function(e) {
@@ -24,7 +24,7 @@ let E = Chunk473749.memo(function(e) {
     product: t,
     isPurchased: n,
     isHighlighted: i,
-    user: a,
+    user: o,
     forCollectedModal: E
   } = e, {
     firstProfileEffect: b,
@@ -32,7 +32,7 @@ let E = Chunk473749.memo(function(e) {
     firstNameplate: O
   } = (0, f.Rj)(t), v = (0, p.O1)(y), S = (0, c.ZP)(), I = (0, s.ap)(S), T = null != O && null != y && null != b, C = T ? l.EFr.SIZE_72 : l.EFr.SIZE_80, A = I ? g : h;
   return (0, r.jsxs)("div", {
-    className: o()(m.container, {
+    className: a()(m.container, {
       [m.twoItemBundle]: !T,
       [m.threeItemBundle]: T
     }),
@@ -49,7 +49,7 @@ let E = Chunk473749.memo(function(e) {
     }), T && (0, r.jsx)("div", {
       className: m.nameplatePreview,
       children: (0, r.jsx)(u.Z, {
-        user: a,
+        user: o,
         nameplate: O,
         isHighlighted: i,
         isPurchased: n,
@@ -60,7 +60,7 @@ let E = Chunk473749.memo(function(e) {
       className: m.avatarDecorationPreview,
       children: (0, r.jsx)(_.R, {
         item: v,
-        user: a,
+        user: o,
         avatarSize: C,
         isPurchased: n,
         isHighlighted: i,

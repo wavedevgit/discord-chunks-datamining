@@ -2,12 +2,12 @@
 /** chunk id: 2719, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => eo
+  Z: () => ea
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   l = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -47,7 +47,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk815660 = require("./815660.js"),
   Chunk801461 = require("./801461.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk54497 = require("./54497.js");
+  Chunk378846 = require("./378846.js");
 
 function K(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -96,11 +96,11 @@ function J() {
 }
 
 function $(e) {
-  var t, a;
+  var t, o;
   let {
     className: s,
     user: l
-  } = e, c = i.useRef(null), p = (0, v.o9)(), _ = (0, S.b)(), m = (0, y.gS)(), h = null != (a = null == m || null == (t = m.nick) ? true : t[0]) ? a : null, [g, E] = i.useState(false);
+  } = e, c = i.useRef(null), p = (0, v.o9)(), _ = (0, S.b)(), m = (0, y.gS)(), h = null != (o = null == m || null == (t = m.nick) ? true : t[0]) ? o : null, [g, E] = i.useState(false);
   i.useEffect(() => {
     E(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [l.username]);
@@ -108,7 +108,7 @@ function $(e) {
     O = p && !l.hasUniqueUsername() && !l.hasVerifiedEmailOrPhone() || b,
     I = O ? Y.intl.string(Y.t["7Ngnyr"]) : true;
   return (0, r.jsxs)("div", {
-    className: o()(W.field, s),
+    className: a()(W.field, s),
     children: [(0, r.jsx)("div", {
       className: W.constrainedRow,
       children: (0, r.jsxs)("div", {
@@ -191,13 +191,13 @@ function $(e) {
 function ee(e) {
   var t, n;
   let {
-    user: a,
+    user: o,
     className: s
-  } = e, l = (0, y.gS)(), c = null != (n = null == l || null == (t = l.nick) ? true : t[0]) ? n : null, p = j.ZP.getGlobalName(a), _ = i.useRef(null), [m, h] = i.useState(false);
+  } = e, l = (0, y.gS)(), c = null != (n = null == l || null == (t = l.nick) ? true : t[0]) ? n : null, p = j.ZP.getGlobalName(o), _ = i.useRef(null), [m, h] = i.useState(false);
   return i.useEffect(() => {
     h(null != _.current && _.current.scrollWidth > _.current.clientWidth)
   }, [p]), (0, r.jsxs)("div", {
-    className: o()(W.field, s),
+    className: a()(W.field, s),
     children: [(0, r.jsx)("div", {
       className: W.constrainedRow,
       children: (0, r.jsxs)("div", {
@@ -247,15 +247,15 @@ function et(e) {
   let {
     text: t,
     censor: n,
-    revealLabel: a,
-    hideLabel: o
+    revealLabel: o,
+    hideLabel: a
   } = e, [s, l] = i.useState(false), c = s ? t : n(t);
   return (0, r.jsxs)("div", {
     className: W.textRevealer,
     children: [c, (0, r.jsx)(f.Avr, {
       variant: "primary",
       textVariant: "text-sm/medium",
-      "aria-label": s ? o : a,
+      "aria-label": s ? a : o,
       onClick: () => l(!s),
       text: s ? Y.intl.string(Y.t.fgq1gs) : Y.intl.string(Y.t.dcztdU)
     })]
@@ -265,10 +265,10 @@ function et(e) {
 function en(e) {
   let t, {
     className: i,
-    user: a
+    user: o
   } = e;
-  if (a.isClaimed())
-    if (null == a.email) t = {
+  if (o.isClaimed())
+    if (null == o.email) t = {
       buttonText: Y.intl.string(Y.t.OYkgVk),
       buttonAriaLabel: Y.intl.string(Y.t["pvBD+W"]),
       valueMessage: Y.intl.string(Y.t["8SfTN/"]),
@@ -282,7 +282,7 @@ function en(e) {
     else {
       let {
         email: e
-      } = a;
+      } = o;
       t = {
         buttonText: Y.intl.string(Y.t.bt75uw),
         buttonAriaLabel: Y.intl.string(Y.t["8peUT0"]),
@@ -307,7 +307,7 @@ function en(e) {
     handleClick: () => g.Z.openClaimAccountModal()
   };
   return (0, r.jsxs)("div", {
-    className: o()(W.field, i),
+    className: a()(W.field, i),
     children: [(0, r.jsx)("div", {
       className: W.constrainedRow,
       children: (0, r.jsxs)("div", {
@@ -341,13 +341,13 @@ function en(e) {
 function er(e) {
   let t, {
     className: i,
-    user: a
+    user: o
   } = e;
-  if (!a.isClaimed()) return null;
+  if (!o.isClaimed()) return null;
   let {
     phone: s,
     email: l
-  } = a, c = null != s, u = null != l;
+  } = o, c = null != s, u = null != l;
 
   function d() {
     (0, f.ZDy)(async () => {
@@ -365,7 +365,7 @@ function er(e) {
   function p() {
     (0, f.h7j)(e => (0, r.jsx)(w.default, Q(z({}, e), {
       title: Y.intl.string(Y.t["3CTiKi"]),
-      children: a.hasFlag(B.xW$.MFA_SMS) ? Y.intl.string(Y.t.jrhJyo) : true,
+      children: o.hasFlag(B.xW$.MFA_SMS) ? Y.intl.string(Y.t.jrhJyo) : true,
       actionText: Y.intl.string(Y.t.N86XcP),
       handleSubmit: e => O.Z.removePhone(e, O.L.USER_SETTINGS_UPDATE)
     })))
@@ -376,7 +376,7 @@ function er(e) {
     revealLabel: Y.intl.string(Y.t.eY3xlT),
     hideLabel: Y.intl.string(Y.t["jllbv+"])
   }) : Y.intl.string(Y.t.I5kDqj), (0, r.jsxs)("div", {
-    className: o()(W.field, i),
+    className: a()(W.field, i),
     children: [(0, r.jsx)("div", {
       className: W.constrainedRow,
       children: (0, r.jsxs)("div", {
@@ -396,7 +396,7 @@ function er(e) {
     }), (0, r.jsxs)("div", {
       className: W.fieldButtonList,
       children: [c && u ? (0, r.jsx)("div", {
-        className: o()(W.fieldButton, W.removeButton),
+        className: a()(W.fieldButton, W.removeButton),
         children: (0, r.jsx)(f.Avr, {
           textVariant: "text-sm/medium",
           variant: "secondary",
@@ -425,9 +425,9 @@ function ei(e) {
   } = e, n = (0, E.Z)({
     id: t.id,
     label: Y.intl.string(Y.t["/AXYnE"])
-  }), a = k.Sb.useSetting(), o = i.useRef(null);
-  return a && L.wS ? (0, r.jsx)(f.yRy, {
-    targetElementRef: o,
+  }), o = k.Sb.useSetting(), a = i.useRef(null);
+  return o && L.wS ? (0, r.jsx)(f.yRy, {
+    targetElementRef: a,
     renderPopout: e => {
       let {
         closePopout: t
@@ -441,7 +441,7 @@ function ei(e) {
       })
     },
     children: e => (0, r.jsx)(f.P3F, Q(z({}, e), {
-      innerRef: o,
+      innerRef: a,
       className: W.overflowMenuButton,
       "aria-label": Y.intl.string(Y.t.DEoVWZ),
       children: (0, r.jsx)(f.xhG, {
@@ -453,12 +453,12 @@ function ei(e) {
   }) : null
 }
 
-function ea(e) {
+function eo(e) {
   let {
     className: t
-  } = e, n = (0, h.l6)(), a = (0, h.Jm)(), s = !n || a, l = i.useMemo(() => n ? a ? Y.intl.string(Y.t.sK0dmH) : Y.intl.string(Y.t.XxRj7f) : Y.intl.string(Y.t.UX0Ode), [n, a]);
+  } = e, n = (0, h.l6)(), o = (0, h.Jm)(), s = !n || o, l = i.useMemo(() => n ? o ? Y.intl.string(Y.t.sK0dmH) : Y.intl.string(Y.t.XxRj7f) : Y.intl.string(Y.t.UX0Ode), [n, o]);
   return (0, r.jsxs)("div", {
-    className: o()(W.field, t),
+    className: a()(W.field, t),
     children: [(0, r.jsx)("div", {
       className: W.constrainedRow,
       children: (0, r.jsxs)("div", {
@@ -481,8 +481,8 @@ function ea(e) {
       children: (0, r.jsx)(f.Button, {
         variant: "secondary",
         size: "sm",
-        text: a ? Y.intl.string(Y.t.KPGVWl) : Y.intl.string(Y.t.yNGjyK),
-        "aria-label": a ? Y.intl.string(Y.t.KPGVWl) : Y.intl.string(Y.t.yNGjyK),
+        text: o ? Y.intl.string(Y.t.KPGVWl) : Y.intl.string(Y.t.yNGjyK),
+        "aria-label": o ? Y.intl.string(Y.t.KPGVWl) : Y.intl.string(Y.t.yNGjyK),
         onClick: () => _.Z.showAgeVerificationGetStartedModal({
           entryPoint: m.cU.ACCOUNT_AGE_GROUP
         })
@@ -491,7 +491,7 @@ function ea(e) {
   })
 }
 
-function eo() {
+function ea() {
   var e;
   let t = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
@@ -499,9 +499,9 @@ function eo() {
     }),
     n = (0, Chunk687158.ZP)(exports.id),
     i = (0, Chunk485341.Z)(require),
-    a = Chunk695346.co.useSetting(),
-    o = (0, Chunk442837.e7)([Chunk25990.Z], () => Chunk25990.Z.getErrors()),
-    s = null == o || null == (e = o.avatar) ? true : module[0],
+    o = Chunk695346.co.useSetting(),
+    a = (0, Chunk442837.e7)([Chunk25990.Z], () => Chunk25990.Z.getErrors()),
+    s = null == a || null == (e = a.avatar) ? true : module[0],
     {
       avatarSrc: u,
       avatarDecorationSrc: d
@@ -511,7 +511,7 @@ function eo() {
     }),
     _ = (0, Chunk438976.Z)();
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk54497.accountProfileCard,
+    className: Chunk378846.accountProfileCard,
     children: [(0, Chunk54381.jsx)(Chunk867176.b, {
       user: exports,
       displayProfile: require,
@@ -522,9 +522,9 @@ function eo() {
       bannerHeight: 100,
       themePadding: 0
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk54497.userInfo,
+      className: Chunk378846.userInfo,
       children: [(0, Chunk54381.jsx)(X, {
-        className: Chunk54497.avatar,
+        className: Chunk378846.avatar,
         src: Chunk692547,
         avatarDecoration: Chunk28664,
         status: Chunk120356,
@@ -532,19 +532,19 @@ function eo() {
         "aria-label": exports.username
       }), (0, Chunk54381.jsxs)("div", {
         children: [(0, Chunk54381.jsxs)("div", {
-          className: Chunk54497.profileCardUsernameRow,
+          className: Chunk378846.profileCardUsernameRow,
           children: [(0, Chunk54381.jsx)(Chunk129861.Z, {
             user: exports,
-            className: Chunk54497.userTag,
-            discriminatorClass: Chunk54497.discriminator,
+            className: Chunk378846.userTag,
+            discriminatorClass: Chunk378846.discriminator,
             displayNameStylesType: Chunk821795.F.STATIC
           }), (0, Chunk54381.jsx)(ei, {
             user: exports
           })]
         }), (0, Chunk54381.jsx)(Chunk184325.Z, {
           badges: Chunk473749,
-          className: Chunk54497.badgeList,
-          badgeClassName: Chunk54497.badge
+          className: Chunk378846.badgeList,
+          badgeClassName: Chunk378846.badge
         })]
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
@@ -553,18 +553,18 @@ function eo() {
         onClick: J
       })]
     }), (0, Chunk54381.jsxs)("div", {
-      className: Chunk54497.background,
+      className: Chunk378846.background,
       children: [null != Chunk512722 ? (0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk54497.avatarError,
+        className: Chunk378846.avatarError,
         variant: "text-xs/normal",
         color: "text-feedback-critical",
         children: Chunk512722
       }) : null, (0, Chunk54381.jsxs)("div", {
-        className: Chunk54497.fieldList,
+        className: Chunk378846.fieldList,
         children: [(0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_DISPLAY_NAME,
           children: (0, Chunk54381.jsx)(ee, {
-            className: Chunk54497.fieldSpacerBottom,
+            className: Chunk378846.fieldSpacerBottom,
             user: exports
           })
         }), (0, Chunk54381.jsx)(Chunk921801.F, {
@@ -575,19 +575,19 @@ function eo() {
         }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_EMAIL,
           children: (0, Chunk54381.jsx)(en, {
-            className: Chunk54497.fieldSpacer,
+            className: Chunk378846.fieldSpacer,
             user: exports
           })
         }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_PHONE_NUMBER,
           children: (0, Chunk54381.jsx)(er, {
-            className: Chunk54497.fieldSpacer,
+            className: Chunk378846.fieldSpacer,
             user: exports
           })
         }), (0, Chunk54381.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_AGE_GROUP,
-          children: (0, Chunk54381.jsx)(ea, {
-            className: Chunk54497.fieldSpacer
+          children: (0, Chunk54381.jsx)(eo, {
+            className: Chunk378846.fieldSpacer
           })
         })]
       })]

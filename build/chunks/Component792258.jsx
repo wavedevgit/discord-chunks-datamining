@@ -8,16 +8,16 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk372769 = require("./372769.jsx"),
   Chunk914788 = require("./914788.js"),
   Chunk322192 = require("./322192.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk372807 = require("./372807.js"),
+  Chunk435757 = require("./435757.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk343900 = require("./343900.js");
+  Chunk641947 = require("./641947.js");
 let h = [18, 18, 16, 16, 14, 12, 10];
 
 function g(e) {
@@ -29,14 +29,14 @@ let E = Chunk473749.memo(e => {
     guildId: t,
     className: n,
     customSubtext: i
-  } = e, a = (0, s.e7)([u.Z], () => u.Z.getGuild(t));
-  if (true === a) return null;
-  let h = a.features.has(f.GuildFeatures.VERIFIED) || a.features.has(f.GuildFeatures.PARTNERED),
+  } = e, o = (0, s.e7)([u.Z], () => u.Z.getGuild(t));
+  if (true === o) return null;
+  let h = o.features.has(f.GuildFeatures.VERIFIED) || o.features.has(f.GuildFeatures.PARTNERED),
     {
       name: g
-    } = a;
+    } = o;
   return (0, r.jsxs)("div", {
-    className: o()(m.container, n),
+    className: a()(m.container, n),
     children: [(0, r.jsx)(d.Z, {
       guildId: t
     }), (0, r.jsxs)("div", {
@@ -44,7 +44,7 @@ let E = Chunk473749.memo(e => {
       children: [(0, r.jsxs)("div", {
         className: m.header,
         children: [h ? (0, r.jsx)(c.Z, {
-          guild: a,
+          guild: o,
           tooltipPosition: "bottom",
           tooltipColor: l.aML.Colors.PRIMARY,
           className: m.guildBadge
@@ -55,8 +55,8 @@ let E = Chunk473749.memo(e => {
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "text-subtle",
-        children: null != i ? i : true !== a.approximateMemberCount ? _.intl.format(p.default["5JmNgg"], {
-          members: a.approximateMemberCount
+        children: null != i ? i : true !== o.approximateMemberCount ? _.intl.format(p.default["5JmNgg"], {
+          members: o.approximateMemberCount
         }) : null
       })]
     })]

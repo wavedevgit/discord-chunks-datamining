@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk290953 = require("./290953.js");
+  Chunk186880 = require("./186880.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,19 +66,19 @@ function I(e) {
     closePopout: t,
     idle: n,
     pipWindows: i,
-    voiceChannelId: o,
+    voiceChannelId: a,
     onSelect: m
   } = e;
   n && t();
-  let b = (0, a.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()),
-    y = (0, a.e7)([_.Z], () => _.Z.pipWindow),
-    O = (0, a.e7)([f.Z], () => f.Z.getSelectedParticipant(o)),
-    v = (0, a.e7)([f.Z], () => f.Z.getStreamParticipants(o));
+  let b = (0, o.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()),
+    y = (0, o.e7)([_.Z], () => _.Z.pipWindow),
+    O = (0, o.e7)([f.Z], () => f.Z.getSelectedParticipant(a)),
+    v = (0, o.e7)([f.Z], () => f.Z.getStreamParticipants(a));
 
   function S(e) {
     (null == y ? true : y.id) !== e.pipWindow.id && (0, c.k3)(e.pipWindow.id);
     let t = e.participant;
-    null != t && t.type !== g.fO.ACTIVITY && l.Z.selectParticipant(o, t.id)
+    null != t && t.type !== g.fO.ACTIVITY && l.Z.selectParticipant(a, t.id)
   }
 
   function I(e) {
@@ -112,13 +112,13 @@ function I(e) {
     var t;
     let n = e.pipWindow.id,
       i = null == (t = e.participant) ? true : t.id,
-      a = I(e),
-      o = "".concat(n).concat(null != i ? i : "");
+      o = I(e),
+      a = "".concat(n).concat(null != i ? i : "");
     return (0, r.jsx)(s.sNh, {
-      id: o,
-      label: a,
+      id: a,
+      label: o,
       action: () => S(e)
-    }, o)
+    }, a)
   }
   return (0, r.jsx)(s.v2r, {
     navId: "pip-menu",
@@ -132,7 +132,7 @@ let T = function(e) {
   let {
     voiceChannelId: t,
     idle: n
-  } = e, l = i.useRef(null), c = Array.from((0, a.e7)([_.Z], () => _.Z.pipWindows).values()).filter(e => e.component !== h.NYg.ACTIVITY), u = (0, a.Wu)([p.Z], () => p.Z.getAllActiveStreamsForChannel(t)).filter(e => {
+  } = e, l = i.useRef(null), c = Array.from((0, o.e7)([_.Z], () => _.Z.pipWindows).values()).filter(e => e.component !== h.NYg.ACTIVITY), u = (0, o.Wu)([p.Z], () => p.Z.getAllActiveStreamsForChannel(t)).filter(e => {
     var n;
     return e.ownerId !== (null == (n = m.default.getCurrentUser()) ? true : n.id) && e.channelId === t
   }), d = 1 === c.length && c[0].component === h.NYg.ACTIVITY || 0 === u.length, f = 1 === c.length && u.length <= 1;
@@ -150,7 +150,7 @@ let T = function(e) {
       innerRef: l,
       children: (0, r.jsx)(s.Huf, {
         size: "md",
-        color: o.Z.unsafe_rawColors.WHITE_500.css
+        color: a.Z.unsafe_rawColors.WHITE_500.css
       })
     }))
   })

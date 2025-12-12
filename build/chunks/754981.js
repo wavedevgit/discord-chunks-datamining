@@ -29,7 +29,7 @@ module.exports = function() {
   function e(e) {
     var t = this;
     r(this, "observer", true), r(this, "container", true), r(this, "mutations", true), r(this, "onCharData", true), this.container = e, this.mutations = u();
-    var n = o(e);
+    var n = a(e);
     n.MutationObserver && !f ? this.observer = new n.MutationObserver(function(e) {
       return t.registerMutations(e)
     }) : this.onCharData = function(e) {
@@ -63,7 +63,7 @@ module.exports = function() {
   }, exports.registerMutation = function(e) {
     var t = this.getMutationTextContent(e);
     if (null != t) {
-      var n = c(a(e.target));
+      var n = c(o(e.target));
       this.mutations = this.mutations.set(n, t)
     }
   }, module

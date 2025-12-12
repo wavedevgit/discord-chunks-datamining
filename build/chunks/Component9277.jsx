@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk55160 = require("./55160.js"),
   Chunk442837 = require("./442837.js"),
   Chunk114101 = require("./114101.jsx"),
@@ -22,12 +22,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk957825 = require("./957825.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk72775 = require("./72775.js");
+  Chunk564355 = require("./564355.js");
 
 function v(e, t) {
   let {
     disabled: n,
-    type: a,
+    type: o,
     channel: v
   } = e, [S, I] = i.useState(false), T = (0, l.e7)([p.Z], () => {
     var e, t;
@@ -42,17 +42,17 @@ function v(e, t) {
     handler: w
   });
   let D = i.useCallback(() => {
-      (0, f.RO)(b.X1.GIF, a, v.id)
-    }, [a, v.id]),
+      (0, f.RO)(b.X1.GIF, o, v.id)
+    }, [o, v.id]),
     {
       Component: x,
       events: L,
       play: j
     } = (0, c.V)(),
     M = (0, m.v)(d.O),
-    k = a === h.Ie.NORMAL ? M : true;
+    k = o === h.Ie.NORMAL ? M : true;
   if (n) return null;
-  let U = C === b.X1.GIF && A === a && P === v.id;
+  let U = C === b.X1.GIF && A === o && P === v.id;
   return (0, r.jsx)(u.u, {
     keyboardShortcut: T ? true : k,
     text: y.intl.string(T ? y.t.mE2e8A : y.t.nffuyb),
@@ -60,7 +60,7 @@ function v(e, t) {
     forceOpen: T,
     children: (0, r.jsx)("div", {
       ref: t,
-      className: o()(b.CT, O.buttonContainer),
+      className: a()(b.CT, O.buttonContainer),
       children: (0, r.jsx)(g.Z, {
         className: O.button,
         onMouseEnter: L.onMouseEnter,

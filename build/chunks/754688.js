@@ -14,7 +14,7 @@ var Chunk592125 = require("./592125.js"),
   Chunk496675 = require("./496675.js"),
   Chunk226951 = require("./226951.js"),
   Chunk981631 = require("./981631.js");
-let l = Array.from(require("./176505.js").Vg).map(e => o.Z.escape(e)).join("|"),
+let l = Array.from(require("./176505.js").Vg).map(e => a.Z.escape(e)).join("|"),
   c = new RegExp("^/channels/(\\d+|".concat(Chunk981631.ME, ")(?:/)?(\\d+|").concat(l, ")?")),
   u = new RegExp("^/channels/(\\d+|".concat(Chunk981631.ME, ")(?:/)(\\d+|").concat(l, ")(?:/)(\\d+)")),
   d = RegExp("^/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)"),
@@ -46,9 +46,9 @@ function h(e) {
       channelId: null != (i = r[2]) ? i : true
     }
   }
-  let a = e.match(f);
-  return null != a && a.length > 1 ? {
-    guildId: a[1]
+  let o = e.match(f);
+  return null != o && o.length > 1 ? {
+    guildId: o[1]
   } : null
 }
 
@@ -63,7 +63,7 @@ function g(e) {
 }
 
 function E(e) {
-  return !!e.isPrivate() || a.Z.can(s.Plq.VIEW_CHANNEL, e)
+  return !!e.isPrivate() || o.Z.can(s.Plq.VIEW_CHANNEL, e)
 }
 
 function b(e) {
@@ -73,6 +73,6 @@ function b(e) {
   } = e;
   if (null == i.Z.getGuild(t) && t !== s.ME) returnfalse;
   if (null == n) returntrue;
-  let a = r.Z.getChannel(n);
-  return null != a && E(a)
+  let o = r.Z.getChannel(n);
+  return null != o && E(o)
 }

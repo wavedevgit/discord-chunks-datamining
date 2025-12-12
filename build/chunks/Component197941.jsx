@@ -52,7 +52,7 @@ let E = {
       }) : (0, l.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("4093"), n.e("44183")]).then(n.bind(n, 60594));
+        } = await Promise.all([n.e("4093"), n.e("47863")]).then(n.bind(n, 60594));
         return t => {
           var n, i;
           return (0, r.jsx)(e, (n = function(e) {
@@ -74,7 +74,7 @@ let E = {
             return e
           }({}, t), i = i = {
             guildId: p.guild_id,
-            analyticsLocation: _.Sbl.ACTIVITY_RPC
+            analyticsLocation: b.Sbl.ACTIVITY_RPC
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

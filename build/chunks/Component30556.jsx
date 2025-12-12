@@ -1,7 +1,7 @@
 /** Chunk was on 93979 **/
 /** chunk id: 30556, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  H: () => m,
+  H: () => f,
   v: () => p
 });
 var Chunk54381 = require("./54381.js"),
@@ -47,7 +47,7 @@ function u(e, n) {
   return i
 }
 
-function f(e) {
+function m(e) {
   let {
     userId: n,
     onClose: t
@@ -57,24 +57,24 @@ function f(e) {
     }), null == t || t(), (0, o.pTH)()
   }, [n, t]);
   return {
-    action: c.yM.SEND_MESSAGE,
+    action: a.yM.SEND_MESSAGE,
     icon: o.kBi,
     onClick: l,
-    text: s.intl.string(s.t.zROXEV)
+    text: c.intl.string(c.t.zROXEV)
   }
 }
 
-function m(e) {
+function f(e) {
   var {
     userId: n,
     onClose: t,
     variant: i = "primary"
   } = e, o = u(e, ["userId", "onClose", "variant"]);
-  let r = f({
+  let r = m({
     userId: n,
     onClose: t
   });
-  return (0, l.jsx)(a.O1, d({
+  return (0, l.jsx)(s.O1, d({
     variant: i
   }, r, o))
 }
@@ -85,17 +85,17 @@ function p(e) {
     onClose: t,
     variant: i = "primary"
   } = e, o = u(e, ["userId", "onClose", "variant"]);
-  let r = f({
+  let r = m({
       userId: n,
       onClose: t
     }),
     {
-      text: c
+      text: a
     } = r,
-    s = u(r, ["text"]);
-  return (0, l.jsx)(a.pt, d({
-    tooltipText: c,
-    "aria-label": c,
+    c = u(r, ["text"]);
+  return (0, l.jsx)(s.pt, d({
+    tooltipText: a,
+    "aria-label": a,
     variant: i
-  }, s, o))
+  }, c, o))
 }

@@ -41,7 +41,7 @@ function c(e) {
 
 function u(e) {
   let t;
-  throw Error(t = e.status >= 500 && e.status <= 599 ? o.intl.string(o.t.cvJdtg) : null != e && null != e.body && null != e.body.message ? e.body.message : o.intl.string(o.t.cvJdtg))
+  throw Error(t = e.status >= 500 && e.status <= 599 ? a.intl.string(a.t.cvJdtg) : null != e && null != e.body && null != e.body.message ? e.body.message : a.intl.string(a.t.cvJdtg))
 }
 
 function d() {
@@ -54,7 +54,7 @@ function d() {
 
 function f(e, t) {
   return r.tn.post({
-    url: a.ANM.SETTINGS_CONSENT,
+    url: o.ANM.SETTINGS_CONSENT,
     body: {
       grant: e,
       revoke: t

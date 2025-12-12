@@ -123,11 +123,11 @@ class m extends Chunk442837.yh {
           }
         };
       for (let i in e) {
-        let a = e[i],
-          o = e => {
-            if (t = false, a(e, r), !t) returnfalse
+        let o = e[i],
+          a = e => {
+            if (t = false, o(e, r), !t) returnfalse
           };
-        n[i] = o
+        n[i] = a
       }
     }
     super(s.Z, n), d(this, "shadowState", null), d(this, "mode", true), d(this, "state", {

@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 91053 **/
 /** chunk id: 271172, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk622822 = require("./622822.js"),
   Chunk986035 = require("./986035.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk698194 = require("./698194.js");
+  Chunk244006 = require("./244006.js");
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -58,13 +58,13 @@ function m(e) {
     return i
   }(s, ["modalType"]), b = i.useCallback(() => {
     null != l && o.Z.nsfwReturnToSafety(l.id)
-  }, [l]), y = i.useCallback(() => {
+  }, [l]), _ = i.useCallback(() => {
     null != l && o.Z.nsfwAgree(l.id)
-  }, [l]), O = i.useCallback(() => {
+  }, [l]), y = i.useCallback(() => {
     c.Z.showAgeVerificationGetStartedModal({
       entryPoint: d.cU.NSFW_GUILD
     })
-  }, []), x = (t = g({}, m), n = n = {
+  }, []), O = (t = g({}, m), n = n = {
     guildId: null == l ? true : l.id,
     channelId: a,
     disagreement: h.intl.string(h.t["/g10LC"])
@@ -82,16 +82,16 @@ function m(e) {
     case d.it.NSFW_CHANNEL_AGE_VERIFY:
     case d.it.GUILD_LARGE_SERVER:
       return (0, r.jsx)(p.Z, g({
-        onAgree: O,
-        onDisagree: b,
-        modalType: f
-      }, x));
-    default:
-      return (0, r.jsx)(p.Z, g({
         onAgree: y,
         onDisagree: b,
         modalType: f
-      }, x))
+      }, O));
+    default:
+      return (0, r.jsx)(p.Z, g({
+        onAgree: _,
+        onDisagree: b,
+        modalType: f
+      }, O))
   }
 }
 let b = function(e) {

@@ -65,8 +65,8 @@ class d extends(r = Chunk473749.Component) {
   componentDidUpdate(e, t) {
     let {
       props: n
-    } = this, r = (e, t) => !e.disable && !(t.hovered && e.pauseOnHover), i = r(n, this.state), a = r(e, t);
-    i && !a || e.interval !== n.interval ? this.startTimer() : !i && a && this.stopTimer()
+    } = this, r = (e, t) => !e.disable && !(t.hovered && e.pauseOnHover), i = r(n, this.state), o = r(e, t);
+    i && !o || e.interval !== n.interval ? this.startTimer() : !i && o && this.stopTimer()
   }
   startTimer() {
     let {
@@ -98,7 +98,7 @@ class d extends(r = Chunk473749.Component) {
     }))
   }
   constructor(...e) {
-    super(...e), s(this, "timer", new o.Xp), s(this, "state", {
+    super(...e), s(this, "timer", new a.Xp), s(this, "state", {
       hovered: false
     }), s(this, "handlePause", () => {
       this.state.hovered || this.setState({

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -31,8 +31,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk218977 = require("./218977.js"),
-  Chunk746838 = require("./746838.js");
+  Chunk269143 = require("./269143.js"),
+  Chunk295234 = require("./295234.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -125,7 +125,7 @@ class U extends Chunk473749.Component {
     let e = this.currentUser.id !== this.trialOffer.user_id || (0, Chunk74538.I5)(this.currentUser) || !this.currentUser.verified || (0, Chunk786397.B)(this.trialOffer),
       t = this.renderExpirationDate();
     return (0, Chunk54381.jsxs)("div", {
-      className: Chunk218977.buttonContainer,
+      className: Chunk269143.buttonContainer,
       children: [(0, Chunk54381.jsx)("div", {
         children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
@@ -143,7 +143,7 @@ class U extends Chunk473749.Component {
           }
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk218977.metadata,
+        className: Chunk269143.metadata,
         children: exports
       })]
     })
@@ -154,17 +154,17 @@ class U extends Chunk473749.Component {
       trialEndsAt: t
     } = this.props;
     if (true !== module.redeemed_at && !this.isSender && null !== exports) return Chunk388032.intl.formatToPlainString(Chunk388032.t.nP0ivR, {
-      date: (0, Chunk55935.vc)(o()(exports), "LL")
+      date: (0, Chunk55935.vc)(a()(exports), "LL")
     });
     if (this.recipientHasNitro || true === module.expires_at) return null;
-    let n = o()(module.expires_at);
+    let n = a()(module.expires_at);
     return this.offerExpired ? Chunk388032.intl.formatToPlainString(Chunk388032.t.PuSHfU, {
-      date: (0, Chunk55935.vc)(o()(require), "LL")
+      date: (0, Chunk55935.vc)(a()(require), "LL")
     }) : (0, Chunk93237.F6)(require.valueOf())
   }
   renderMedia() {
     return (0, Chunk54381.jsx)("div", {
-      className: Chunk218977.referral
+      className: Chunk269143.referral
     })
   }
   render() {
@@ -223,45 +223,45 @@ class U extends Chunk473749.Component {
         text: Chunk388032.intl.string(Chunk388032.t.Lm2nFc)
       }),
       i = this.isSender ? require : exports,
-      a = (0, Chunk54381.jsx)(Chunk481060.Eep, {
-        src: Chunk746838.Z,
+      o = (0, Chunk54381.jsx)(Chunk481060.Eep, {
+        src: Chunk295234.Z,
         height: 84,
         width: 144,
-        className: Chunk218977.imgDMEmbedXP
+        className: Chunk269143.imgDMEmbedXP
       }),
       {
-        headerText: o,
+        headerText: a,
         bodyText: s
       } = module();
     return (0, Chunk54381.jsxs)(Chunk834129.Z, {
-      className: Chunk218977.systemMessageContainerDMEmbedXP,
+      className: Chunk269143.systemMessageContainerDMEmbedXP,
       iconNode: (0, Chunk54381.jsx)(Chunk481060.SrA, {
         size: "md",
         color: "currentColor"
       }),
-      iconContainerClassName: Chunk218977.systemMessageContainerIcon,
+      iconContainerClassName: Chunk269143.systemMessageContainerIcon,
       compact: this.compact,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "text-strong",
         children: this.getSystemMessageHeader()
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk218977.containerDMEmbedXP,
+        className: Chunk269143.containerDMEmbedXP,
         children: [Chunk913527, (0, Chunk54381.jsxs)("div", {
-          className: Chunk218977.contentDMEmbedXP,
+          className: Chunk269143.contentDMEmbedXP,
           children: [(0, Chunk54381.jsxs)("div", {
-            className: Chunk218977.contentTextDMEmbedXP,
+            className: Chunk269143.contentTextDMEmbedXP,
             children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
               variant: "heading-md/semibold",
               color: "text-strong",
-              children: o
+              children: a
             }), (0, Chunk54381.jsx)(Chunk481060.Text, {
               variant: "text-md/medium",
               color: "text-subtle",
               children: Chunk873546
             })]
           }), (0, Chunk54381.jsx)("div", {
-            className: Chunk218977.buttonContainerDMEmbedXP,
+            className: Chunk269143.buttonContainerDMEmbedXP,
             children: Chunk473749
           })]
         })]
@@ -279,23 +279,23 @@ function G(e) {
     canRenderReferralEmbed: n,
     compact: i
   } = e, {
-    trialOffer: a,
-    isResolving: o,
+    trialOffer: o,
+    isResolving: a,
     referralsSent: c
   } = (0, l.cj)([O.Z], () => ({
     trialOffer: n ? O.Z.getRelevantUserTrialOffer(t) : null,
     isResolving: !!n && O.Z.isResolving(t),
     referralsSent: O.Z.getRecipientStatus()
-  }), [n, t]), p = m.default.getCurrentUser(), _ = (0, l.e7)([m.default], () => null != a && (0, y.I5)(true !== p && a.user_id === p.id ? p : m.default.getUser(a.user_id))), g = (0, l.e7)([h.Z], () => {
+  }), [n, t]), p = m.default.getCurrentUser(), _ = (0, l.e7)([m.default], () => null != o && (0, y.I5)(true !== p && o.user_id === p.id ? p : m.default.getUser(o.user_id))), g = (0, l.e7)([h.Z], () => {
     var e;
     return _ ? null == (e = h.Z.getPremiumTypeSubscription()) ? true : e.trialEndsAt : null
   }), {
     analyticsLocations: E
   } = (0, f.ZP)(d.Z.SHARE_NITRO_EMBED);
-  return o ? (0, r.jsx)(u.OR, {
+  return a ? (0, r.jsx)(u.OR, {
     isHorizontal: !s.tq
-  }) : n && null != a && true !== p ? (0, r.jsx)(U, {
-    trialOffer: a,
+  }) : n && null != o && true !== p ? (0, r.jsx)(U, {
+    trialOffer: o,
     referralsSent: c,
     currentUser: p,
     recipientHasNitro: _,

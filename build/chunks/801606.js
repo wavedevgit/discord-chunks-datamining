@@ -29,7 +29,7 @@ function l(e, t) {
 function c(e, t, n, c) {
   var u, d, f, p;
   let _ = l(c, n);
-  if (null != _) return (0, i.o3)(_, null != (d = _.guild_id) ? d : o.X8);
-  let m = a.Z.getMessage(e, t);
-  if (null != m && null != (_ = (null == m || null == (u = m.messageReference) ? true : u.type) === r.U.FORWARD ? s(null != (f = null == m ? true : m.messageSnapshots) ? f : [], n) : l(null == m ? true : m.soundboardSounds, n))) return (0, i.o3)(_, null != (p = _.guild_id) ? p : o.X8)
+  if (null != _) return (0, i.o3)(_, null != (d = _.guild_id) ? d : a.X8);
+  let m = o.Z.getMessage(e, t);
+  if (null != m && null != (_ = (null == m || null == (u = m.messageReference) ? true : u.type) === r.U.FORWARD ? s(null != (f = null == m ? true : m.messageSnapshots) ? f : [], n) : l(null == m ? true : m.soundboardSounds, n))) return (0, i.o3)(_, null != (p = _.guild_id) ? p : a.X8)
 }

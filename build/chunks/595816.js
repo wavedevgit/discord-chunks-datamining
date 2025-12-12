@@ -67,7 +67,7 @@ function p(e) {
     location: t
   } = e, {
     isInHoldout: n
-  } = o.L.getCurrentConfig({
+  } = a.L.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: true
@@ -81,7 +81,7 @@ function _(e) {
   let {
     location: t
   } = e;
-  return (0, r.e7)([a.Z], () => p({
+  return (0, r.e7)([o.Z], () => p({
     location: t
   }))
 }

@@ -9,7 +9,7 @@ var Chunk547545 = require("./547545.js"),
   Chunk444591 = require("./444591.js"),
   Chunk53566 = require("./53566.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -99,23 +99,23 @@ class p {
     null != e && c(e), null == (t = this._navigator) || t.disconnect(), this._previewer.clear(), this.monitor.isDragging() && this.actions.endDrag(), this.setDndMode(false)
   }
   constructor(e, t, n) {
-    o(this, "manager", true), o(this, "actions", true), o(this, "monitor", true), o(this, "context", true), o(this, "options", true), o(this, "sourceNodes", true), o(this, "sourcePreviewNodes", true), o(this, "sourcePreviewNodeOptions", true), o(this, "targetNodes", true), o(this, "_navigator", true), o(this, "_previewer", true), o(this, "_announcer", true), o(this, "_handlingFirstEvent", false), o(this, "handleGlobalKeyDown", e => {
+    a(this, "manager", true), a(this, "actions", true), a(this, "monitor", true), a(this, "context", true), a(this, "options", true), a(this, "sourceNodes", true), a(this, "sourcePreviewNodes", true), a(this, "sourcePreviewNodeOptions", true), a(this, "targetNodes", true), a(this, "_navigator", true), a(this, "_previewer", true), a(this, "_announcer", true), a(this, "_handlingFirstEvent", false), a(this, "handleGlobalKeyDown", e => {
       this.monitor.isDragging() && u(e, l) && (this.endDrag(e), this._announcer.announceCancel())
-    }), o(this, "getSourceClientOffset", e => f(this.sourceNodes.get(e))), o(this, "handleDragStart", (e, t) => {
+    }), a(this, "getSourceClientOffset", e => f(this.sourceNodes.get(e))), a(this, "handleDragStart", (e, t) => {
       var n;
       if (!d(t, this._handlingFirstEvent) || (this._handlingFirstEvent = false, !this.monitor.canDragSource(e))) return;
       if (this.monitor.isDragging()) return void this.actions.publishDragSource();
       c(t);
       let r = this.sourceNodes.get(e);
-      null != r && (this._navigator = new a.n(r, this.targetNodes, this.manager, this._previewer, this._announcer), this._previewer.createDragPreview(null != (n = this.sourcePreviewNodes.get(e)) ? n : r), this.actions.beginDrag([e], {
+      null != r && (this._navigator = new o.n(r, this.targetNodes, this.manager, this._previewer, this._announcer), this._previewer.createDragPreview(null != (n = this.sourcePreviewNodes.get(e)) ? n : r), this.actions.beginDrag([e], {
         clientOffset: this.getSourceClientOffset(e),
         getSourceClientOffset: this.getSourceClientOffset,
         publishSource: false
       }), this._previewer.render(this.monitor), this.setDndMode(true), this._announcer.announceDrag(r, e))
-    }), o(this, "handleDrop", e => {
+    }), a(this, "handleDrop", e => {
       u(e, s) && (this.actions.drop(), this.endDrag(e), this._announcer.announceDrop())
     }), this.manager = e, this.actions = e.getActions(), this.monitor = e.getMonitor(), this.context = t, this.options = n, this.sourceNodes = new Map, this.sourcePreviewNodes = new Map, this.sourcePreviewNodeOptions = new Map, this.targetNodes = new Map, this._previewer = new i.Z(t.document), this._announcer = new r.Z(null == n ? true : n.announcer)
   }
 }
-o(p, "isSetUp", true);
+a(p, "isSetUp", true);
 let _ = (e, t, n) => new p(e, t, n)

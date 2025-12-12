@@ -1,7 +1,7 @@
 /** Chunk was on 58121 **/
 /** chunk id: 163, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -13,26 +13,26 @@ var Chunk473749 = require("./473749.js"),
   Chunk724213 = require("./724213.js"),
   Chunk981631 = require("./981631.js");
 
-function b(e) {
-  l.Z.dispatch({
+function p(e) {
+  i.Z.dispatch({
     type: "CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES",
     guildId: e
   })
 }
 
-function p(e) {
-  let t = (0, r.e7)([c.ZP], () => c.ZP.getPendingChannelUpdates(e));
-  return a.useEffect(() => (b(e), () => b(e)), [e]), a.useEffect(() => {
-    null != t && (0, d.C1)(e, t)
+function h(e) {
+  let t = (0, l.e7)([s.ZP], () => s.ZP.getPendingChannelUpdates(e));
+  return r.useEffect(() => (p(e), () => p(e)), [e]), r.useEffect(() => {
+    null != t && (0, c.C1)(e, t)
   }, [e, t]), {
-    onChannelClick: a.useCallback((e, t, n) => {
-      let a = c.ZP.isChannelOptedIn(e, t),
-        r = t === n;
-      !a && o.Z.isCollapsed(n) && null != n && (0, i.mJ)(n), (0, s.hi)(e) ? r ? (0, s.rz)(e, {
+    onChannelClick: r.useCallback((e, t, n) => {
+      let r = s.ZP.isChannelOptedIn(e, t),
+        l = t === n;
+      !r && o.Z.isCollapsed(n) && null != n && (0, a.mJ)(n), (0, d.hi)(e) ? l ? (0, d.rz)(e, {
         include: new Set([t])
-      }) : (0, s.rz)(e, {
+      }) : (0, d.rz)(e, {
         exclude: new Set([t])
-      }) : (0, d.k$)(e, t, !a, {
+      }) : (0, c.k$)(e, t, !r, {
         section: u.jXE.CHANNEL_BROWSER
       })
     }, [])

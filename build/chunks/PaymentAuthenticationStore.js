@@ -71,7 +71,7 @@ function O(e) {
     var r;
     let e = null;
     (null == (r = t.metadata) ? true : r.billing_error_code) === l.SM.BILLING_INSUFFICIENT_FUNDS && (e = l.SM.BILLING_INSUFFICIENT_FUNDS), h = new l.ZP(f.intl.string(f.t.khEaRI), e)
-  } else h = null, a.Z.wait(o.fw), a.Z.wait(s.pB)
+  } else h = null, o.Z.wait(a.fw), o.Z.wait(s.pB)
 }
 class v extends(r = Chunk442837.ZP.Store) {
   get isAwaitingAuthentication() {

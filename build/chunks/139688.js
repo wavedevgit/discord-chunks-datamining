@@ -7,12 +7,12 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk339085 = require("./339085.js");
-let o = /^<(a?):(\w+):(\d+)>/;
+let a = /^<(a?):(\w+):(\d+)>/;
 
 function s(e) {
   let t = r.useMemo(() => {
     var t;
-    return null == (t = o.exec(e)) ? true : t[3]
+    return null == (t = a.exec(e)) ? true : t[3]
   }, [e]);
-  return (0, i.e7)([a.ZP], () => null == t ? null : a.ZP.getCustomEmojiById(t))
+  return (0, i.e7)([o.ZP], () => null == t ? null : o.ZP.getCustomEmojiById(t))
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 737243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,59 +13,59 @@ var Chunk54381 = require("./54381.js"),
   Chunk697451 = require("./697451.jsx"),
   Chunk348238 = require("./348238.jsx"),
   Chunk614584 = require("./614584.jsx");
-let f = Chunk473749.memo(function(e) {
+let h = Chunk473749.memo(function(e) {
   var t, n;
   let {
-    message: f,
-    channel: h,
+    message: h,
+    channel: f,
     compact: m = false,
     interactionUsernameProfile: g,
     interactionAvatarProfile: b,
     interactionData: C,
     referencedUsernameProfile: y,
     referencedAvatarProfile: v,
-    setPopout: O
+    setPopout: _
   } = e, {
-    isInteractionUserBlocked: x,
-    isInteractionUserIgnored: E
+    isInteractionUserBlocked: O,
+    isInteractionUserIgnored: x
   } = (0, l.cj)([c.Z], () => ({
-    isInteractionUserBlocked: c.Z.isBlockedForMessage(f),
-    isInteractionUserIgnored: c.Z.isIgnoredForMessage(f)
-  }), [f]), j = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == f ? true : f.messageReference)), S = (0, d.wq)(null == (t = f.interaction) ? true : t.user.id, h.id), _ = (0, d.Nk)(f.interaction, h, g, O), P = (0, d.NU)(b, O), I = (0, o.t0)(f), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, T = (0, d.wq)(Z, h.id), N = (0, d.JC)(Z, h, y, O), A = (0, d.rY)(v, O), w = (0, d.Xn)(C, O), M = r.useCallback(() => {
-    O({
+    isInteractionUserBlocked: c.Z.isBlockedForMessage(h),
+    isInteractionUserIgnored: c.Z.isIgnoredForMessage(h)
+  }), [h]), E = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), j = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, _), P = (0, d.NU)(b, _), I = (0, o.t0)(h), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, T = (0, d.wq)(Z, f.id), N = (0, d.JC)(Z, f, y, _), A = (0, d.rY)(v, _), w = (0, d.Xn)(C, _), M = r.useCallback(() => {
+    _({
       interactionUsernameProfile: false,
       interactionAvatarProfile: false,
       interactionData: false,
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [O]), R = r.useCallback(() => (0, p.Z)({
-    message: f,
-    channel: h,
+  }, [_]), R = r.useCallback(() => (0, p.Z)({
+    message: h,
+    channel: f,
     compact: m,
-    setPopout: O,
+    setPopout: _,
     referencedAvatarProfile: v,
     referencedUsernameProfile: y,
-    replyReference: f.messageReference,
-    replyMessage: j,
+    replyReference: h.messageReference,
+    replyMessage: E,
     isReplySpineClickable: false,
     showReplySpine: false
-  }), [h, m, f, v, j, y, O]);
+  }), [f, m, h, v, E, y, _]);
   return (0, i.jsx)(u.Z, {
-    message: f,
-    channel: h,
+    message: h,
+    channel: f,
     compact: m,
-    isInteractionUserBlocked: x,
-    isInteractionUserIgnored: E,
+    isInteractionUserBlocked: O,
+    isInteractionUserIgnored: x,
     showAvatarPopout: b,
     showUsernamePopout: g,
     showDataPopout: C,
     showTargetAvatarPopout: v,
     showTargetUsernamePopout: y,
     onClickAvatar: P,
-    onClickUsername: _,
+    onClickUsername: S,
     onClickCommand: w,
-    onUserContextMenu: S,
+    onUserContextMenu: j,
     onClickTargetAvatar: A,
     onClickTargetUsername: N,
     onTargetUserContextMenu: T,
@@ -74,13 +74,13 @@ let f = Chunk473749.memo(function(e) {
   })
 });
 
-function h(e, t, n) {
+function f(e, t, n) {
   let {
     message: r,
     channel: l,
     compact: a
   } = e;
-  return null != r.interaction && "" !== r.interaction.displayName ? (0, i.jsx)(f, function(e) {
+  return null != r.interaction && "" !== r.interaction.displayName ? (0, i.jsx)(h, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);

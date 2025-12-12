@@ -23,10 +23,10 @@ function c(e, t, n) {
 function u(e) {
   var t, n;
   let {
-    guild: a
+    guild: o
   } = e.invite, c = null != (n = e.invite.flags) ? n : 0;
-  if (null != a && (null == a || null == (t = a.features) ? true : t.includes(l.GuildFeatures.HUB))) return void o.Z.onOpenHubInvite(e.invite);
-  !((0, i.yE)(c, r.$.IS_GUEST_INVITE) || (0, i.yE)(c, r.$.IS_APPLICATION_BYPASS)) && null != a && (0, s.u)(a) && (0, s._)(a.id)
+  if (null != o && (null == o || null == (t = o.features) ? true : t.includes(l.GuildFeatures.HUB))) return void a.Z.onOpenHubInvite(e.invite);
+  !((0, i.yE)(c, r.$.IS_GUEST_INVITE) || (0, i.yE)(c, r.$.IS_APPLICATION_BYPASS)) && null != o && (0, s.u)(o) && (0, s._)(o.id)
 }
 class d extends Chunk147913.Z {
   constructor(...e) {

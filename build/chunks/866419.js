@@ -32,13 +32,13 @@ var m = function(e) {
 }({});
 
 function h(e) {
-  return (0, a.wj)(e) ? p.BR.DARK : p.BR.LIGHT
+  return (0, o.wj)(e) ? p.BR.DARK : p.BR.LIGHT
 }
 
 function g(e) {
   let t = l.L1.getSetting(),
     n = null != t.backgroundGradientPresetId && t.backgroundGradientPresetId in f.qt && f.qt[t.backgroundGradientPresetId].theme !== e;
-  (0, o.y)(e), n && (0, u.kj)()
+  (0, a.y)(e), n && (0, u.kj)()
 }
 
 function E() {
@@ -48,13 +48,13 @@ function E() {
       resetColors: n,
       resetGradientAngle: r,
       resetChassisMixAmount: i,
-      resetBaseTheme: a
+      resetBaseTheme: o
     } = O(t, e);
     c.Ig.getState().setAll({
       colors: n,
       gradientAngle: r,
       chassisMixAmount: i
-    }), "reset_button" === t ? g(h(null != a ? a : s.Z.theme)) : (0, o.UD)();
+    }), "reset_button" === t ? g(h(null != o ? o : s.Z.theme)) : (0, a.UD)();
     let d = l.L1.getSetting().backgroundGradientPresetId;
     null != d && (0, u.zO)(d)
   }, [module])
@@ -70,14 +70,14 @@ function y(e, t, n) {
 }
 
 function O(e, t) {
-  var n, r, i, a;
-  let o = l.L1.getSetting().customUserThemeSettings,
+  var n, r, i, o;
+  let a = l.L1.getSetting().customUserThemeSettings,
     s = d.Z.getSavedCustomTheme(),
     u = "reset_button" === e ? [c.Dp] : [],
     f = 0,
     p = c.BH,
     _ = t;
-  return (null == o ? true : o.colors) != null ? (u = o.colors, f = null != (n = o.gradientAngle) ? n : 0, p = null != (r = o.baseMix) ? r : c.BH) : "reset_button" === e && null != s && (u = s.colors, f = null != (i = s.gradient_angle) ? i : 0, p = null != (a = s.base_mix) ? a : c.BH, _ = s.base_theme), {
+  return (null == a ? true : a.colors) != null ? (u = a.colors, f = null != (n = a.gradientAngle) ? n : 0, p = null != (r = a.baseMix) ? r : c.BH) : "reset_button" === e && null != s && (u = s.colors, f = null != (i = s.gradient_angle) ? i : 0, p = null != (o = s.base_mix) ? o : c.BH, _ = s.base_theme), {
     resetColors: u,
     resetGradientAngle: f,
     resetChassisMixAmount: p,
@@ -90,7 +90,7 @@ function v() {
     colors: e,
     chassisMixAmount: t,
     gradientAngle: n
-  } = (0, Chunk233398.Ig)(), a = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), [o] = Chunk473749.useState(() => Chunk210887.Z.theme), {
+  } = (0, Chunk233398.Ig)(), o = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), [a] = Chunk473749.useState(() => Chunk210887.Z.theme), {
     resetColors: l,
     resetGradientAngle: u,
     resetChassisMixAmount: d,

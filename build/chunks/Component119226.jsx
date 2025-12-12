@@ -22,7 +22,7 @@ var Chunk278074 = require("./278074.js"),
   Chunk987209 = require("./987209.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk154965 = require("./154965.js"),
+  Chunk610868 = require("./610868.js"),
   Chunk241822 = require("./241822.js");
 
 function v(e, t, n) {
@@ -71,18 +71,18 @@ function A(e) {
   } = e, {
     avatarDecorationSrc: n,
     eventHandlers: i,
-    avatarPlaceholderSrc: a
+    avatarPlaceholderSrc: o
   } = (0, l.Z)({
     avatarDecorationOverride: t,
-    size: (0, s.y9)(o.EFr.SIZE_152)
+    size: (0, s.y9)(a.EFr.SIZE_152)
   });
   return (0, r.jsx)("div", {
     className: y.giftMainAnimationWrapper,
     children: (0, r.jsx)(C, T(S({}, i), {
       avatarDecoration: n,
-      src: a,
+      src: o,
       className: y.avatar,
-      size: o.EFr.SIZE_152,
+      size: a.EFr.SIZE_152,
       "aria-label": b.intl.string(b.t.lqaIxI)
     }))
   })
@@ -126,26 +126,26 @@ let R = e => {
   } = e, {
     selectedGiftStyle: n
   } = (0, g.wD)(), {
-    product: o
-  } = (0, c.T)(null == t ? true : t.id), s = null == o ? true : o.items[0];
-  if ((null == o ? true : o.type) === a.Z.BUNDLE) return (0, r.jsx)("div", {
+    product: a
+  } = (0, c.T)(null == t ? true : t.id), s = null == a ? true : a.items[0];
+  if ((null == a ? true : a.type) === o.Z.BUNDLE) return (0, r.jsx)("div", {
     className: y.bundlePreviewWrapper,
     children: (0, r.jsx)(u.d, {
-      product: o,
+      product: a,
       isPurchased: false,
       isHighlighted: false
     })
   });
   let l = (0, i.EQ)(s).with({
-    type: a.Z.AVATAR_DECORATION
+    type: o.Z.AVATAR_DECORATION
   }, e => (0, r.jsx)(A, {
     avatarDecoration: e
   })).with({
-    type: a.Z.PROFILE_EFFECT
+    type: o.Z.PROFILE_EFFECT
   }, e => (0, r.jsx)(N, {
     skuId: e.skuId
   })).with({
-    type: a.Z.NAMEPLATE
+    type: o.Z.NAMEPLATE
   }, e => (0, r.jsx)(P, {
     nameplate: e
   })).otherwise(() => null);

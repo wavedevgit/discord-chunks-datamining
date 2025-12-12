@@ -2,7 +2,7 @@
 /** chunk id: 763941, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  IT: () => a,
+  IT: () => o,
   Pc: () => l
 });
 let r = (0, require("./427164.js").le)({
@@ -34,6 +34,6 @@ let r = (0, require("./427164.js").le)({
   l = e => r.useConfig({
     location: e
   }).enabled,
-  a = e => r.useConfig({
+  o = e => r.useConfig({
     location: e
   }).rentalDuration

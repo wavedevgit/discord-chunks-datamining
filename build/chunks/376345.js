@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk688619 = require("./688619.js"),
   i = require.n(Chunk688619),
   Chunk402903 = require("./402903.js"),
-  o = require.n(Chunk402903),
+  a = require.n(Chunk402903),
   Chunk707427 = require("./707427.js"),
   Chunk8800 = require("./8800.js"),
   Chunk949180 = require("./949180.js"),
@@ -37,11 +37,11 @@ function y(e) {
 }
 let O = {
   themes: _,
-  colors: o()(m, (e, t) => ({
+  colors: a()(m, (e, t) => ({
     [b]: t
   })),
   unsafe_rawColors: h,
-  shadows: o()(g, e => {
+  shadows: a()(g, e => {
     function t(t) {
       return {
         resolve: (n, r) => t(e[n].nativeStyles, r)
@@ -61,24 +61,24 @@ let O = {
     isSemanticColor: e => "object" == typeof e && null !== e && b in e,
     getSemanticColorName: e => e[b],
     resolveSemanticColor(e, t, n) {
-      var r, a;
+      var r, o;
       e = y(e);
-      let o = m[t[b]],
+      let a = m[t[b]],
         {
           category: s
-        } = o,
-        l = o[e],
+        } = a,
+        l = a[e],
         c = h[l.raw],
         u = l.opacity;
-      if ((null == n ? true : n.gradient) != null && "gradient" in o) {
-        let e = o.gradient[null == n ? true : n.gradient.theme];
+      if ((null == n ? true : n.gradient) != null && "gradient" in a) {
+        let e = a.gradient[null == n ? true : n.gradient.theme];
         if (null != e) {
           let t = i()(e.color in h ? h[e.color] : null == n ? true : n.gradient.colors[e.color]);
           "saturation" in e && (t = t.set("hsl.s", e.saturation)), "lightness" in e && (t = t.set("hsl.l", e.lightness)), c = t.hex(), u = "opacity" in e ? e.opacity : 1
         }
       }
       let d = null != (r = null == n ? true : n.contrast) ? r : 1,
-        f = null != (a = null == n ? true : n.saturation) ? a : 1;
+        f = null != (o = null == n ? true : n.saturation) ? o : 1;
       return (f < 1 && (c = (0, p.dO)(c, s, f)), 1 !== d && (c = (0, p.pq)(c, s, e, d)), 1 === u) ? c : i()(c).alpha(u).hex()
     },
     adjustColorSaturation: (e, t, n) => (0, p.dO)(e, n, t),

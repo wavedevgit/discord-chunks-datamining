@@ -27,10 +27,10 @@ function m(e) {
     onClose: g
   } = e, E = (0, i.e7)([f.Z], () => null != f.Z.getAccount(null, p.ABu.CRUNCHYROLL));
   if (!(0, s.Z)(t) && !(0, c.gr)(n)) return null;
-  if (!E) return (0, r.jsx)(a.sNh, {
+  if (!E) return (0, r.jsx)(o.sNh, {
     id: "connect-crunchyroll",
     label: _.intl.formatToPlainString(_.t.XWSHTb, {
-      platform: o.Z.get(p.ABu.CRUNCHYROLL).name
+      platform: a.Z.get(p.ABu.CRUNCHYROLL).name
     }),
     action: () => {
       null == h || h({
@@ -42,7 +42,7 @@ function m(e) {
   });
   if ("recent" !== m || !(0, c.gr)(n)) return null;
   let b = n.extra.url;
-  return null == b || "" === b ? null : (0, r.jsx)(a.sNh, {
+  return null == b || "" === b ? null : (0, r.jsx)(o.sNh, {
     id: "watch-on-crunchyroll",
     label: _.intl.string(_.t.OpxQVH),
     action: () => {

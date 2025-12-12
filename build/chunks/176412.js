@@ -9,7 +9,7 @@ require.d(exports, {
 });
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk25209 = require("./25209.js"),
   Chunk2052 = require("./2052.js"),
@@ -68,7 +68,7 @@ let C = function(e, t) {
       content: m.Z.RULES.commandMention.parse(e, t, n).content
     })
   }),
-  A = a().pick((0, Chunk364458.Z)([Chunk428595.Z.RULES, {
+  A = o().pick((0, Chunk364458.Z)([Chunk428595.Z.RULES, {
     commandMention: C
   }, (0, Chunk691424.Z)({
     enableBuildOverrides: false,
@@ -81,7 +81,7 @@ function P(e) {
     context: t,
     application: n,
     location: i,
-    sectionName: a,
+    sectionName: o,
     commandName: s,
     autoDismissOnClick: _ = true,
     launchingComponentId: m,
@@ -92,7 +92,7 @@ function P(e) {
     context: t,
     applicationId: n.id,
     fetchesApplication: g
-  }), A = (0, O.Q)(C), N = (0, o.e7)([b.Z], () => b.Z.entrypoint()), P = r.useMemo(() => {
+  }), A = (0, O.Q)(C), N = (0, a.e7)([b.Z], () => b.Z.entrypoint()), P = r.useMemo(() => {
     var e, r, i;
     if ("channel" !== t.type) return null != (i = null == (e = n.bot) ? true : e.id) ? i : null == (r = (0, f.If)(t, n.id).descriptor) ? true : r.botId
   }, [t, n.id, n.bot]), R = (0, c.w1)({
@@ -108,14 +108,14 @@ function P(e) {
       _ && E.y(y.ti.ACTIVITY), (0, d.yw)(v.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
         location: i,
         application_id: t,
-        section_name: a,
+        section_name: o,
         action: A,
         source: N
       })
     },
     launchingComponentId: m,
     commandOrigin: p.bB.APPLICATION_LAUNCHER,
-    sectionName: a,
+    sectionName: o,
     source: N,
     fetchesApplication: g,
     onConfirmActivityLaunchChecksAlertOpen: I
@@ -130,7 +130,7 @@ function P(e) {
 
 function R(e, t) {
   let n = b.Z.entrypoint(),
-    a = r.useMemo(() => (0, i.debounce)((e, t) => {
+    o = r.useMemo(() => (0, i.debounce)((e, t) => {
       (0, d.yw)(v.rMx.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
         type: e,
         source: t
@@ -140,8 +140,8 @@ function R(e, t) {
       trailing: true
     }), []);
   r.useEffect(() => {
-    null != e && a(e, n)
-  }, [e, t, n, a])
+    null != e && o(e, n)
+  }, [e, t, n, o])
 }
 
 function w(e) {

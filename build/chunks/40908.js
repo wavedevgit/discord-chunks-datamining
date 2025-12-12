@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js"),
   Chunk304445 = require("./304445.js"),
   Chunk997383 = require("./997383.js");
-let o = [],
+let a = [],
   s = "";
 
 function l(e) {
@@ -16,13 +16,13 @@ function l(e) {
     autocompleterResultTypes: n,
     autocompleterOptions: l,
     autocompleterBeforeCreateSearchContext: c
-  } = e, [u, d] = r.useState(s), [f, p] = r.useState(o), _ = r.useCallback((e, t) => {
-    "" === (t = t.trim()).trim() ? p(o) : p(e)
+  } = e, [u, d] = r.useState(s), [f, p] = r.useState(a), _ = r.useCallback((e, t) => {
+    "" === (t = t.trim()).trim() ? p(a) : p(e)
   }, []);
   r.useEffect(() => i.Z.addRouteChangeListener(() => {
     d(s)
   }), []);
-  let [m] = r.useState(() => new a.Z(_, n, true, l));
+  let [m] = r.useState(() => new o.Z(_, n, true, l));
   return r.useEffect(() => {
     t ? (null == c || c(m), m.createSearchContext()) : (m.clean(), d(s))
   }, [t, m, c]), {

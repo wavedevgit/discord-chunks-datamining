@@ -23,7 +23,7 @@ class c extends Chunk147913.Z {
     let {
       channel: t
     } = e;
-    (0, a.tr)(t) && (await (0, a.mM)(o.y), (0, i.Z)(s.Z5c.CHANNEL(null, t.id)))
+    (0, o.tr)(t) && (await (0, o.mM)(a.y), (0, i.Z)(s.Z5c.CHANNEL(null, t.id)))
   }
   constructor(...e) {
     super(...e), l(this, "actions", {

@@ -21,40 +21,40 @@ class l extends Chunk495852.C {
       imageLink: "",
       imageLinkLightTheme: ""
     };
-    return globalThis.Object.defineProperty(t, a.C, {
+    return globalThis.Object.defineProperty(t, o.C, {
       enumerable: false,
       value: this
     }), true !== e && (0, i.l)(this, t, e), t
   }
   internalBinaryRead(e, t, n, i) {
-    let a = null != i ? i : this.create(),
-      o = e.pos + t;
-    for (; e.pos < o;) {
+    let o = null != i ? i : this.create(),
+      a = e.pos + t;
+    for (; e.pos < a;) {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          a.header = e.string();
+          o.header = e.string();
           break;
         case 2:
-          a.pill = e.string();
+          o.pill = e.string();
           break;
         case 3:
-          a.body = e.string();
+          o.body = e.string();
           break;
         case 4:
-          a.imageLink = e.string();
+          o.imageLink = e.string();
           break;
         case 5:
-          a.imageLinkLightTheme = e.string();
+          o.imageLinkLightTheme = e.string();
           break;
         default:
-          let o = n.readUnknownField;
-          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let a = n.readUnknownField;
+          if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
           let s = e.skip(i);
-          false !== o && (true === o ? r.z.onRead : o)(this.typeName, a, t, i, s)
+          false !== a && (true === a ? r.z.onRead : a)(this.typeName, o, t, i, s)
       }
     }
-    return a
+    return o
   }
   internalBinaryWrite(e, t, n) {
     "" !== e.header && t.tag(1, r.TD.LengthDelimited).string(e.header), "" !== e.pill && t.tag(2, r.TD.LengthDelimited).string(e.pill), "" !== e.body && t.tag(3, r.TD.LengthDelimited).string(e.body), "" !== e.imageLink && t.tag(4, r.TD.LengthDelimited).string(e.imageLink), "" !== e.imageLinkLightTheme && t.tag(5, r.TD.LengthDelimited).string(e.imageLinkLightTheme);
@@ -97,31 +97,31 @@ class u extends Chunk495852.C {
       copy: "",
       buttonAction: 0
     };
-    return globalThis.Object.defineProperty(t, a.C, {
+    return globalThis.Object.defineProperty(t, o.C, {
       enumerable: false,
       value: this
     }), true !== e && (0, i.l)(this, t, e), t
   }
   internalBinaryRead(e, t, n, i) {
-    let a = null != i ? i : this.create(),
-      o = e.pos + t;
-    for (; e.pos < o;) {
+    let o = null != i ? i : this.create(),
+      a = e.pos + t;
+    for (; e.pos < a;) {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          a.copy = e.string();
+          o.copy = e.string();
           break;
         case 2:
-          a.buttonAction = e.int32();
+          o.buttonAction = e.int32();
           break;
         default:
-          let o = n.readUnknownField;
-          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let a = n.readUnknownField;
+          if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
           let s = e.skip(i);
-          false !== o && (true === o ? r.z.onRead : o)(this.typeName, a, t, i, s)
+          false !== a && (true === a ? r.z.onRead : a)(this.typeName, o, t, i, s)
       }
     }
-    return a
+    return o
   }
   internalBinaryWrite(e, t, n) {
     "" !== e.copy && t.tag(1, r.TD.LengthDelimited).string(e.copy), 0 !== e.buttonAction && t.tag(2, r.TD.Varint).int32(e.buttonAction);
@@ -150,91 +150,91 @@ class f extends Chunk495852.C {
       heroArtLocalizedVideoLinksLightTheme: {},
       heroArtVideoSubtitleLinks: {}
     };
-    return globalThis.Object.defineProperty(t, a.C, {
+    return globalThis.Object.defineProperty(t, o.C, {
       enumerable: false,
       value: this
     }), true !== e && (0, i.l)(this, t, e), t
   }
   internalBinaryRead(e, t, n, i) {
-    let a = null != i ? i : this.create(),
-      o = e.pos + t;
-    for (; e.pos < o;) {
+    let o = null != i ? i : this.create(),
+      a = e.pos + t;
+    for (; e.pos < a;) {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          this.binaryReadMap1(a.heroArtLocalizedVideoLinksDarkTheme, e, n);
+          this.binaryReadMap1(o.heroArtLocalizedVideoLinksDarkTheme, e, n);
           break;
         case 2:
-          this.binaryReadMap2(a.heroArtLocalizedVideoLinksLightTheme, e, n);
+          this.binaryReadMap2(o.heroArtLocalizedVideoLinksLightTheme, e, n);
           break;
         case 3:
-          this.binaryReadMap3(a.heroArtVideoSubtitleLinks, e, n);
+          this.binaryReadMap3(o.heroArtVideoSubtitleLinks, e, n);
           break;
         default:
-          let o = n.readUnknownField;
-          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let a = n.readUnknownField;
+          if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
           let s = e.skip(i);
-          false !== o && (true === o ? r.z.onRead : o)(this.typeName, a, t, i, s)
+          false !== a && (true === a ? r.z.onRead : a)(this.typeName, o, t, i, s)
       }
     }
-    return a
+    return o
   }
   binaryReadMap1(e, t, n) {
     let r = t.uint32(),
       i = t.pos + r,
-      a, o;
+      o, a;
     for (; t.pos < i;) {
       let [e, n] = t.tag();
       switch (e) {
         case 1:
-          a = t.string();
+          o = t.string();
           break;
         case 2:
-          o = t.string();
+          a = t.string();
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.premium_marketing.v1.Variant1Storage.hero_art_localized_video_links_dark_theme")
       }
     }
-    e[null != a ? a : ""] = null != o ? o : ""
+    e[null != o ? o : ""] = null != a ? a : ""
   }
   binaryReadMap2(e, t, n) {
     let r = t.uint32(),
       i = t.pos + r,
-      a, o;
+      o, a;
     for (; t.pos < i;) {
       let [e, n] = t.tag();
       switch (e) {
         case 1:
-          a = t.string();
+          o = t.string();
           break;
         case 2:
-          o = t.string();
+          a = t.string();
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.premium_marketing.v1.Variant1Storage.hero_art_localized_video_links_light_theme")
       }
     }
-    e[null != a ? a : ""] = null != o ? o : ""
+    e[null != o ? o : ""] = null != a ? a : ""
   }
   binaryReadMap3(e, t, n) {
     let r = t.uint32(),
       i = t.pos + r,
-      a, o;
+      o, a;
     for (; t.pos < i;) {
       let [e, n] = t.tag();
       switch (e) {
         case 1:
-          a = t.string();
+          o = t.string();
           break;
         case 2:
-          o = t.string();
+          a = t.string();
           break;
         default:
           throw new globalThis.Error("unknown map entry field for field discord_protos.premium_marketing.v1.Variant1Storage.hero_art_video_subtitle_links")
       }
     }
-    e[null != a ? a : ""] = null != o ? o : ""
+    e[null != o ? o : ""] = null != a ? a : ""
   }
   internalBinaryWrite(e, t, n) {
     for (let n of Object.keys(e.heroArtLocalizedVideoLinksDarkTheme)) t.tag(1, r.TD.LengthDelimited).fork().tag(1, r.TD.LengthDelimited).string(n).tag(2, r.TD.LengthDelimited).string(e.heroArtLocalizedVideoLinksDarkTheme[n]).join();
@@ -282,34 +282,34 @@ class _ extends Chunk495852.C {
       locale: "",
       isDefault: false
     };
-    return globalThis.Object.defineProperty(t, a.C, {
+    return globalThis.Object.defineProperty(t, o.C, {
       enumerable: false,
       value: this
     }), true !== e && (0, i.l)(this, t, e), t
   }
   internalBinaryRead(e, t, n, i) {
-    let a = null != i ? i : this.create(),
-      o = e.pos + t;
-    for (; e.pos < o;) {
+    let o = null != i ? i : this.create(),
+      a = e.pos + t;
+    for (; e.pos < a;) {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          a.link = e.string();
+          o.link = e.string();
           break;
         case 2:
-          a.locale = e.string();
+          o.locale = e.string();
           break;
         case 3:
-          a.isDefault = e.bool();
+          o.isDefault = e.bool();
           break;
         default:
-          let o = n.readUnknownField;
-          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let a = n.readUnknownField;
+          if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
           let s = e.skip(i);
-          false !== o && (true === o ? r.z.onRead : o)(this.typeName, a, t, i, s)
+          false !== a && (true === a ? r.z.onRead : a)(this.typeName, o, t, i, s)
       }
     }
-    return a
+    return o
   }
   internalBinaryWrite(e, t, n) {
     "" !== e.link && t.tag(1, r.TD.LengthDelimited).string(e.link), "" !== e.locale && t.tag(2, r.TD.LengthDelimited).string(e.locale), false !== e.isDefault && t.tag(3, r.TD.Varint).bool(e.isDefault);
@@ -352,67 +352,67 @@ class h extends Chunk495852.C {
       body: "",
       heroArtVideoSubtitles: []
     };
-    return globalThis.Object.defineProperty(t, a.C, {
+    return globalThis.Object.defineProperty(t, o.C, {
       enumerable: false,
       value: this
     }), true !== e && (0, i.l)(this, t, e), t
   }
   internalBinaryRead(e, t, n, i) {
-    let a = null != i ? i : this.create(),
-      o = e.pos + t;
-    for (; e.pos < o;) {
+    let o = null != i ? i : this.create(),
+      a = e.pos + t;
+    for (; e.pos < a;) {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          a.header = e.string();
+          o.header = e.string();
           break;
         case 2:
-          a.subheader = e.string();
+          o.subheader = e.string();
           break;
         case 3:
-          a.videoLink = e.string();
+          o.videoLink = e.string();
           break;
         case 4:
-          a.helpArticleId = e.string();
+          o.helpArticleId = e.string();
           break;
         case 5:
-          a.featureCards.push(c.internalBinaryRead(e, e.uint32(), n));
+          o.featureCards.push(c.internalBinaryRead(e, e.uint32(), n));
           break;
         case 6:
-          a.button = d.internalBinaryRead(e, e.uint32(), n, a.button);
+          o.button = d.internalBinaryRead(e, e.uint32(), n, o.button);
           break;
         case 7:
-          a.dismissKey = e.string();
+          o.dismissKey = e.string();
           break;
         case 8:
-          a.heroArtVideoLinkLightTheme = e.string();
+          o.heroArtVideoLinkLightTheme = e.string();
           break;
         case 9:
-          a.heroArtImageLinkDarkTheme = e.string();
+          o.heroArtImageLinkDarkTheme = e.string();
           break;
         case 10:
-          a.heroArtImageLinkLightTheme = e.string();
+          o.heroArtImageLinkLightTheme = e.string();
           break;
         case 11:
-          a.modalTopPill = e.string();
+          o.modalTopPill = e.string();
           break;
         case 12:
-          a.body = e.string();
+          o.body = e.string();
           break;
         case 13:
-          a.heroArtVideoSubtitles.push(m.internalBinaryRead(e, e.uint32(), n));
+          o.heroArtVideoSubtitles.push(m.internalBinaryRead(e, e.uint32(), n));
           break;
         case 14:
-          a.storage = p.internalBinaryRead(e, e.uint32(), n, a.storage);
+          o.storage = p.internalBinaryRead(e, e.uint32(), n, o.storage);
           break;
         default:
-          let o = n.readUnknownField;
-          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let a = n.readUnknownField;
+          if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
           let s = e.skip(i);
-          false !== o && (true === o ? r.z.onRead : o)(this.typeName, a, t, i, s)
+          false !== a && (true === a ? r.z.onRead : a)(this.typeName, o, t, i, s)
       }
     }
-    return a
+    return o
   }
   internalBinaryWrite(e, t, n) {
     "" !== e.header && t.tag(1, r.TD.LengthDelimited).string(e.header), "" !== e.subheader && t.tag(2, r.TD.LengthDelimited).string(e.subheader), "" !== e.videoLink && t.tag(3, r.TD.LengthDelimited).string(e.videoLink), "" !== e.helpArticleId && t.tag(4, r.TD.LengthDelimited).string(e.helpArticleId);

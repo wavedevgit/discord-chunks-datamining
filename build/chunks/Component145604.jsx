@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk581567 = require("./581567.js"),
   Chunk594190 = require("./594190.js"),
   Chunk38618 = require("./38618.js"),
-  Chunk501640 = require("./501640.js"),
+  Chunk489745 = require("./489745.js"),
   Chunk924301 = require("./924301.js"),
   Chunk734307 = require("./734307.js"),
   Chunk355298 = require("./355298.js"),
@@ -86,8 +86,8 @@ async function ee(e) {
     voiceChannelId: g,
     voiceChannelType: h,
     voiceChannelBitrate: m,
-    voiceChannelGuildId: b
-  } = e, _ = await (0, x.hj)(a.pid), {
+    voiceChannelGuildId: _
+  } = e, b = await (0, x.hj)(a.pid), {
     gameName: E,
     gameId: y,
     exe: I,
@@ -106,7 +106,7 @@ async function ee(e) {
     is_overlay_enabled: P,
     is_overlay_game_enabled: T,
     is_overlay_game_source: Z,
-    fullscreen_type: null != _ ? u.Jx[_] : u.Jx.UNKNOWN.toString(),
+    fullscreen_type: null != b ? u.Jx[b] : u.Jx.UNKNOWN.toString(),
     hardware_display_count: null != (i = await (null === d.Z || true === d.Z || null == (n = d.Z.hardware) || null == (t = n.getDisplayCount) ? true : t.call(n))) ? i : null,
     overlay_method: null != (l = j.gl[p]) ? l : __OVERLAY__ ? j.gl[j.gl.Hook] : null,
     activity_status_enabled: w.G6.getSetting(),
@@ -117,7 +117,7 @@ async function ee(e) {
     voice_channel_id: g,
     voice_channel_type: h,
     voice_channel_bitrate: m,
-    voice_channel_guild_id: b,
+    voice_channel_guild_id: _,
     distributor_game_id: a.sku,
     hidden_by_distributor: a.hidden,
     game_metadata: (0, A.sD)(a)
@@ -158,7 +158,7 @@ class et extends Chunk473749.PureComponent {
         media_session_id: null == a ? true : a.mediaSessionId,
         stage_instance_id: null == i ? true : i.id,
         guild_scheduled_event_id: null == l ? true : l.id
-      }, (0, f.kO)(e.voiceChannelGuildId, e.voiceChannelId, e.videoEnabled), null == a || null == (t = a.voiceStateAnalytics) ? true : t.getStats(), _.Z.getSelectedParticipantStats(e.voiceChannelId)))
+      }, (0, f.kO)(e.voiceChannelGuildId, e.voiceChannelId, e.videoEnabled), null == a || null == (t = a.voiceStateAnalytics) ? true : t.getStats(), b.Z.getSelectedParticipantStats(e.voiceChannelId)))
     }
     if (e.voiceChannelId !== u && null != u) {
       let e = v.ZP.getCurrentGameForAnalytics(),
@@ -192,13 +192,13 @@ class et extends Chunk473749.PureComponent {
         gameId: e
       } = (0, O.G8)(I), t = true !== e ? R.Z.getDetectableGame(e) : null, s = v.ZP.getOverrideForGame(I), o = M.Z.getGuildIds(), f = w.SE.getSetting(), h = o.filter(e => !f.includes(e)).slice(0, 200), m = null;
       m = null != s ? "custom_override" : null != t ? "verified_game" : "launcher";
-      let b = P.default.getTrackedGameByPid(I.pid),
-        _ = (0, v.b6)(I),
+      let _ = P.default.getTrackedGameByPid(I.pid),
+        b = (0, v.b6)(I),
         y = {
-          enabledOOP: null != (n = null == b ? true : b.oopEnabled) ? n : _.enabledOOP,
-          enabledLegacy: null != (r = null == b ? true : b.legacyEnabled) ? r : _.enabledLegacy,
-          overlayMethod: null != (i = null == b ? true : b.overlayMethod) ? i : _.overlayMethod,
-          source: null != (l = null == b ? true : b.source) ? l : _.source,
+          enabledOOP: null != (n = null == _ ? true : _.oopEnabled) ? n : b.enabledOOP,
+          enabledLegacy: null != (r = null == _ ? true : _.legacyEnabled) ? r : b.enabledLegacy,
+          overlayMethod: null != (i = null == _ ? true : _.overlayMethod) ? i : b.overlayMethod,
+          source: null != (l = null == _ ? true : _.source) ? l : b.source,
           reason: "ChatAutoAnalytics"
         },
         C = null != (a = P.default.getOverlayMethod(I.pid)) ? a : y.overlayMethod;
@@ -224,7 +224,7 @@ class et extends Chunk473749.PureComponent {
       let e = "none",
         t = [y ? "screen" : null, m ? "camera" : null].filter(Q.lm),
         n = null;
-      y ? (e = "screen", n = (0, b.t)()) : m && (e = "camera"), K.default.track(J.rMx.VIDEO_INPUT_TOGGLED, $({
+      y ? (e = "screen", n = (0, _.t)()) : m && (e = "camera"), K.default.track(J.rMx.VIDEO_INPUT_TOGGLED, $({
         video_input_type: e,
         video_toggle_source: __OVERLAY__ ? "overlay" : "app",
         enabled_inputs: t,
@@ -266,10 +266,10 @@ class et extends Chunk473749.PureComponent {
 }
 
 function en() {
-  let [e, t] = (0, Chunk442837.Wu)([Chunk944486.Z], () => [Chunk944486.Z.getVoiceChannelId(), Chunk944486.Z.getChannelId()], []), n = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(exports), [exports]), l = (0, Chunk442837.e7)([Chunk358221.Z], () => (null == require ? true : require.id) != null && Chunk358221.Z.getChatOpen(require.id), [require]), a = null == require ? true : require.nsfw, s = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(module), [module]), c = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId(), []), u = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(Chunk224706), [Chunk224706]), d = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser(), []), b = (0, Chunk442837.e7)([Chunk271383.ZP], () => {
+  let [e, t] = (0, Chunk442837.Wu)([Chunk944486.Z], () => [Chunk944486.Z.getVoiceChannelId(), Chunk944486.Z.getChannelId()], []), n = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(exports), [exports]), l = (0, Chunk442837.e7)([Chunk358221.Z], () => (null == require ? true : require.id) != null && Chunk358221.Z.getChatOpen(require.id), [require]), a = null == require ? true : require.nsfw, s = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(module), [module]), c = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId(), []), u = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(Chunk224706), [Chunk224706]), d = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser(), []), _ = (0, Chunk442837.e7)([Chunk271383.ZP], () => {
     var e, t;
     return null != Chunk579806 && null != Chunk224706 && null != (t = null == (e = Chunk271383.ZP.getMember(Chunk224706, Chunk579806.id)) ? true : module.isPending) && exports
-  }, [Chunk579806, Chunk224706]), E = (0, Chunk442837.e7)([Chunk974042.ZP], () => Chunk974042.ZP.getState().section, []), O = (0, Chunk442837.e7)([Chunk774343.Z], () => Chunk774343.Z.getHomeLink(), []), C = (0, Chunk442837.e7)([Chunk38618.Z], () => Chunk38618.Z.isConnected(), []), [N, j] = (0, Chunk442837.Wu)([Chunk131951.Z], () => [Chunk131951.Z.isVideoEnabled(), Chunk131951.Z.isScreenSharing()], []), P = (0, Chunk442837.e7)([Chunk885110.Z], () => Chunk885110.Z.getPrimaryActivity(), []), x = (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.getCurrentGameForAnalytics(), []), A = (0, Chunk501640.Z)(Chunk224706), Z = (0, Chunk442837.e7)([Chunk355298.Z], () => Chunk355298.Z.getMessageRequestsCount(), []), w = {
+  }, [Chunk579806, Chunk224706]), E = (0, Chunk442837.e7)([Chunk974042.ZP], () => Chunk974042.ZP.getState().section, []), O = (0, Chunk442837.e7)([Chunk774343.Z], () => Chunk774343.Z.getHomeLink(), []), C = (0, Chunk442837.e7)([Chunk38618.Z], () => Chunk38618.Z.isConnected(), []), [N, j] = (0, Chunk442837.Wu)([Chunk131951.Z], () => [Chunk131951.Z.isVideoEnabled(), Chunk131951.Z.isScreenSharing()], []), P = (0, Chunk442837.e7)([Chunk885110.Z], () => Chunk885110.Z.getPrimaryActivity(), []), x = (0, Chunk442837.e7)([Chunk594190.ZP], () => Chunk594190.ZP.getCurrentGameForAnalytics(), []), A = (0, Chunk489745.Z)(Chunk224706), Z = (0, Chunk442837.e7)([Chunk355298.Z], () => Chunk355298.Z.getMessageRequestsCount(), []), w = {
     selectedChannelId: exports,
     isNSFWChannel: a,
     selectedGuildId: Chunk224706,

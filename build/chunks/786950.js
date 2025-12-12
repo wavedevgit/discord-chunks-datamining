@@ -6,9 +6,9 @@ var Chunk815329 = require("./815329.js"),
   Chunk614775 = require("./614775.js"),
   Chunk951575 = require("./951575.js");
 module.exports = function(e, t, n) {
-  if (!o(e)) throw new r("Assertion failed: Type(O) is not Object");
+  if (!a(e)) throw new r("Assertion failed: Type(O) is not Object");
   if (!i(t)) throw new r("Assertion failed: P is not a Property Key");
-  return a(e, t, {
+  return o(e, t, {
     "[[Configurable]]": true,
     "[[Enumerable]]": true,
     "[[Value]]": n,

@@ -30,24 +30,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk773491 = require("./773491.js");
+  Chunk803414 = require("./803414.js");
 let T = e => {
     let {
       locale: r
     } = e;
     return (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(y.Z, {
+      children: [(0, n.jsx)(P.Z, {
         icon: a.SlE,
         iconClassName: I.iconColorPurple,
         description: v.intl.string(v.t.uAfKTe)
-      }), (0, n.jsx)(y.Z, {
+      }), (0, n.jsx)(P.Z, {
         icon: a.$zw,
         iconClassName: I.iconColorPink,
         description: v.intl.formatToPlainString(v.t.sWnv5M, {
           numGuildSubscriptions: k.cb,
           discountPercent: (0, C.T3)(r, k.Rr / 100)
         })
-      }), (0, n.jsx)(y.Z, {
+      }), (0, n.jsx)(P.Z, {
         icon: a.EO4,
         iconClassName: I.iconColorYellow,
         description: v.intl.string(v.t.pqHIf7)
@@ -61,18 +61,18 @@ let T = e => {
       isLoading: i,
       price: c,
       onClose: u
-    } = e, f = (0, s.e7)([x.default], () => x.default.locale), p = null != r || null != o;
+    } = e, p = (0, s.e7)([y.default], () => y.default.locale), f = null != r || null != o;
     return (0, n.jsxs)("div", {
       className: I.wrapper,
       children: [(0, n.jsx)(a.olH, {
         "data-migration-pending": true,
         onClick: u,
         className: I.closeButton
-      }), p && (0, n.jsx)(h.dz, {
+      }), f && (0, n.jsx)(b.dz, {
         className: I.premiumTrialBadge
       }), (0, n.jsx)("img", {
         className: l()(I.heroImage, {
-          [I.heroImageWithTrialOffer]: p
+          [I.heroImageWithTrialOffer]: f
         }),
         src: t(178632),
         alt: ""
@@ -88,7 +88,7 @@ let T = e => {
         }), (0, n.jsx)("div", {
           className: I.perks,
           children: (0, n.jsx)(T, {
-            locale: f
+            locale: p
           })
         })]
       })]
@@ -110,7 +110,7 @@ let T = e => {
         size: "sm",
         text: v.intl.string(v.t.cpT0Cq),
         onClick: o
-      }), (0, n.jsx)(b.Z, {
+      }), (0, n.jsx)(O.Z, {
         textOptions: {
           textOverride: null != r || null != t ? v.intl.string(v.t["Gd/XHF"]) : true
         },
@@ -145,16 +145,16 @@ function M(e) {
       return o
     }(e, ["onClose"]);
   let c = (0, d.V)(),
-    b = (0, s.e7)([_.Z], () => _.Z.hasFetchedPaymentSources),
-    h = c && b,
-    y = (0, O.N)(),
-    x = (0, g.N)();
+    O = (0, s.e7)([x.Z], () => x.Z.hasFetchedPaymentSources),
+    b = c && O,
+    P = (0, _.N)(),
+    y = (0, g.N)();
   o.useEffect(() => {
     u.Z.wait(() => {
-      (0, f.tZ)(), (0, p.Y2)(null, null, E.JjL.DISCOVERY)
+      (0, p.tZ)(), (0, f.Y2)(null, null, E.JjL.DISCOVERY)
     })
   }, []);
-  let C = h ? S.ZP.getDefaultPrice(k.Xh.PREMIUM_MONTH_TIER_2) : null;
+  let C = b ? S.ZP.getDefaultPrice(k.Xh.PREMIUM_MONTH_TIER_2) : null;
   return (0, n.jsx)(m.PaymentContextProvider, {
     activeSubscription: null,
     stepConfigs: [],
@@ -181,18 +181,18 @@ function M(e) {
     }, l), t = t = {
       "aria-labelledby": "sticker-pack-premium-upsell-modal-header",
       parentComponent: "StickerPackPremiumUpsellModal",
-      children: (0, n.jsx)(P.Z, {
+      children: (0, n.jsx)(h.Z, {
         hideBreadcrumbs: true,
         body: (0, n.jsx)(N, {
-          trialOffer: y,
-          discountOffer: x,
-          isLoading: !h,
+          trialOffer: P,
+          discountOffer: y,
+          isLoading: !b,
           price: C,
           onClose: i
         }),
         footer: (0, n.jsx)(L, {
-          trialOffer: y,
-          discountOffer: x,
+          trialOffer: P,
+          discountOffer: y,
           onClose: i
         }),
         steps: [j.h8.PREMIUM_UPSELL],

@@ -56,7 +56,7 @@ function E(e) {
 function b(e) {
   let {
     userGuildSettings: t
-  } = e, n = new Set(t.map(e => e.guild_id).filter(o.lm));
+  } = e, n = new Set(t.map(e => e.guild_id).filter(a.lm));
   for (let e in f) {
     let t = s.Z.getChannel(e);
     null != t && null != t.guild_id && n.has(t.guild_id) && delete f[t.id]

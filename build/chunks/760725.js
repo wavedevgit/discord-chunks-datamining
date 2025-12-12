@@ -3,8 +3,8 @@
 "use strict";
 var Chunk751736 = require("./751736.js"),
   Chunk933121 = require("./933121.js"),
-  a = Chunk751736("iterator"),
-  o = Array.prototype;
+  o = Chunk751736("iterator"),
+  a = Array.prototype;
 module.exports = function(e) {
-  return true !== e && (i.Array === e || o[a] === e)
+  return true !== e && (i.Array === e || a[o] === e)
 }

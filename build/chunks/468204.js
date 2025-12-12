@@ -14,16 +14,16 @@ function l(e) {
   var t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : true,
     n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
     i = arguments.length > 3 && true !== arguments[3] && arguments[3],
-    a = c(i),
-    l = new o.S(a, new s.V(a)),
-    u = new r.f(a, l),
+    o = c(i),
+    l = new a.S(o, new s.V(o)),
+    u = new r.f(o, l),
     d = e(u, t, n);
   return u.receiveBackend(d), u
 }
 
 function c(e) {
   var t = "undefined" != typeof window && window.__REDUX_DEVTOOLS_EXTENSION__;
-  return (0, i.MT)(a.u, e && t && t({
+  return (0, i.MT)(o.u, e && t && t({
     name: "dnd-core",
     instanceId: "dnd-core"
   }))

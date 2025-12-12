@@ -1,9 +1,0 @@
-/** Chunk was on 41700 **/
-/** chunk id: 995148, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  container: "_9aed46c13a1e115c-container",
-  micIcon: "_9aed46c13a1e115c-micIcon",
-  downIcon: "_9aed46c13a1e115c-downIcon",
-  upIcon: "_9aed46c13a1e115c-upIcon",
-  text: "_9aed46c13a1e115c-text"
-}

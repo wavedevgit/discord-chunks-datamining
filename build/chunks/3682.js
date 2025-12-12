@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   $V: () => r,
-  jR: () => o,
+  jR: () => a,
   o: () => i,
-  z3: () => a
+  z3: () => o
 });
 let r = 3,
   i = .5,
-  a = 1,
-  o = 2.5
+  o = 1,
+  a = 2.5

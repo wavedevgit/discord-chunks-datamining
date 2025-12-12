@@ -23,7 +23,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk763296 = require("./763296.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk258482 = require("./258482.js");
+  Chunk638527 = require("./638527.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,7 +57,7 @@ function I(e) {
       emojiId: t.emojiId,
       emojiName: t.emojiName,
       className: O.emoji
-    }) : (0, r.jsx)(o.XBm, {
+    }) : (0, r.jsx)(a.XBm, {
       size: "md",
       color: "currentColor",
       className: O.emoji
@@ -71,39 +71,39 @@ function I(e) {
     isFavorite: T
   });
   let R = () => {
-      v(), (0, o.ZDy)(async () => {
+      v(), (0, a.ZDy)(async () => {
         let {
           default: e
         } = await n.e("58120").then(n.bind(n, 355453));
         return t => (0, r.jsx)(e, S({}, t))
       })
     },
-    w = (0, c.zu)(a.z.SOUNDBOARD_KEYBIND_TIP),
-    D = () => (0, c.Q3)(a.z.SOUNDBOARD_KEYBIND_TIP),
+    w = (0, c.zu)(o.z.SOUNDBOARD_KEYBIND_TIP),
+    D = () => (0, c.Q3)(o.z.SOUNDBOARD_KEYBIND_TIP),
     x = null != P && (0, h.isWindows)() && !w ? y.intl.format(y.t.udMTth, {
       keybind: (0, g.BB)(P.shortcut, true),
-      openSettingsHook: (e, t) => (0, r.jsx)(o.Anchor, {
+      openSettingsHook: (e, t) => (0, r.jsx)(a.Anchor, {
         onClick: R,
         children: e
       }, t)
     }) : null;
   return null == x ? null : (0, r.jsxs)("div", {
     className: O.keybindHint,
-    children: [(0, r.jsx)(o.Mgn, {
+    children: [(0, r.jsx)(a.Mgn, {
       size: "custom",
       width: 20,
       height: 20,
       color: "currentColor",
       className: O.warningIcon
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-default",
       className: O.keybindHintText,
       children: x
-    }), (0, r.jsx)(o.P3F, {
+    }), (0, r.jsx)(a.P3F, {
       className: O.closeButton,
       onClick: D,
-      children: (0, r.jsx)(o.Dio, {
+      children: (0, r.jsx)(a.Dio, {
         size: "xs",
         color: "currentColor"
       })

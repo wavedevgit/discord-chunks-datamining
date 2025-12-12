@@ -36,9 +36,9 @@ let v = new Chunk710845.Z("AgeVerificationManager");
 function S(e) {
   var t, n, i;
   let {
-    channelId: a,
-    message: o
-  } = e, s = _.Z.getMessage(a, o.id);
+    channelId: o,
+    message: a
+  } = e, s = _.Z.getMessage(o, a.id);
   if ((null == s || null == (n = s.embeds) || null == (t = n[0]) ? true : t.type) === r.h.AGE_VERIFICATION_SYSTEM_NOTIFICATION) {
     let e = null == (i = s.embeds[0].fields) ? true : i.find(e => e.rawName === E.g0.CONTENT_TYPE);
     (null == e ? true : e.rawValue) === E.L0.ERROR ? (u.Z.showFailedToast(y.wQ.TIGGER_PAWTECT_ERROR), (0, g.zi)(g.o6.ERROR)) : (null == e ? true : e.rawValue) === E.L0.VERIFIED_ADULT ? (u.Z.showSuccessToast(y.wQ.TIGGER_PAWTECT_VERIFIED), (0, g.zi)(g.o6.VERIFIED_ADULT)) : (null == e ? true : e.rawValue) === E.L0.VERIFIED_TEEN && (u.Z.showSuccessToast(y.wQ.TIGGER_PAWTECT_VERIFIED), (0, g.zi)(g.o6.VERIFIED_TEEN))
@@ -65,7 +65,7 @@ class C extends Chunk147913.Z {
       var t;
       let {
         user: n
-      } = e, r = null != (t = (0, h.transformUser)(n).ageVerificationStatus) ? t : null, i = this._previousAgeVerificationStatus !== r && r === a.F$.VERIFIED_ADULT, o = (0, f.U)("age-verification-manager"), l = i && ((0, d.c_)("age-verification-manager") || o);
+      } = e, r = null != (t = (0, h.transformUser)(n).ageVerificationStatus) ? t : null, i = this._previousAgeVerificationStatus !== r && r === o.F$.VERIFIED_ADULT, a = (0, f.U)("age-verification-manager"), l = i && ((0, d.c_)("age-verification-manager") || a);
       try {
         if (l) {
           let e = m.Z.getChannelId(),

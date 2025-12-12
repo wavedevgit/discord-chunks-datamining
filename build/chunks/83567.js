@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 83567, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk457330 = require("./457330.js"),
@@ -17,7 +17,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk701488 = require("./701488.js"),
   Chunk231338 = require("./231338.js");
 let m = new Set([Chunk701488.Fu, Chunk701488.JT]),
-  b = {
+  _ = {
     [Chunk231338.Et.GET_PROVIDER_ACCESS_TOKEN]: {
       scope: {
         [Chunk186901.Gp.ANY]: [Chunk186901.wE]

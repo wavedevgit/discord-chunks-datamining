@@ -1,7 +1,7 @@
-/** Chunk was on 9414 **/
+/** Chunk was on 86736 **/
 /** chunk id: 936726, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => w
 }), require("./35282.js"), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,54 +26,54 @@ var Chunk54381 = require("./54381.js"),
   Chunk486199 = require("./486199.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk191607 = require("./191607.js");
+  Chunk632256 = require("./632256.js");
 
-function w(e, t) {
+function I(e, t) {
   return null != t && /^data:/.test(t) ? t : (0, j.ov)({
     id: e.id,
     avatar: t,
-    discriminator: N.fo$
+    discriminator: C.fo$
   })
 }
 
-function E(e) {
+function w(e) {
   let {
     id: t,
     webhook: n,
     editedWebhook: l,
     channelOptions: j,
-    isExpanded: E,
-    isNew: P,
-    errors: T,
-    onToggleExpand: Z
-  } = e, [_, k] = r.useState(false), [A] = r.useState(new s.V7);
+    isExpanded: w,
+    isNew: E,
+    errors: P,
+    onToggleExpand: T
+  } = e, [Z, k] = r.useState(false), [A] = r.useState(new s.V7);
   r.useEffect(() => () => A.stop(), [A]);
-  let D = r.useMemo(() => w(n, n.avatar), [n]),
+  let D = r.useMemo(() => I(n, n.avatar), [n]),
     R = r.useCallback(() => {
-      let e = "".concat((0, o.K0)(false)).concat(N.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
+      let e = "".concat((0, o.K0)(false)).concat(C.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, v.JG)(e)
     }, [n]),
     L = r.useCallback(() => {
       (0, d.Z)({
-        title: S.intl.formatToPlainString(S.t.QVFjHh, {
+        title: N.intl.formatToPlainString(N.t.QVFjHh, {
           name: n.name
         }),
-        subtitle: S.intl.format(S.t["rIWe+5"], {
+        subtitle: N.intl.format(N.t["rIWe+5"], {
           name: n.name
         }),
-        confirmText: S.intl.string(S.t["W+K1Fs"]),
-        cancelText: S.intl.string(S.t.xNhj0O),
+        confirmText: N.intl.string(N.t["W+K1Fs"]),
+        cancelText: N.intl.string(N.t.xNhj0O),
         onConfirm: () => {
-          m.Z.delete(n.guild_id, n.id).catch(e => {
+          b.Z.delete(n.guild_id, n.id).catch(e => {
             let {
               status: t
             } = e;
-            429 === t ? b.Z.show({
-              title: S.intl.string(S.t.N5riYn),
-              body: S.intl.string(S.t.eAxcCc)
-            }) : b.Z.show({
-              title: S.intl.string(S.t.N5riYn),
-              body: S.intl.string(S.t["/4TwKf"])
+            429 === t ? p.Z.show({
+              title: N.intl.string(N.t.N5riYn),
+              body: N.intl.string(N.t.eAxcCc)
+            }) : p.Z.show({
+              title: N.intl.string(N.t.N5riYn),
+              body: N.intl.string(N.t["/4TwKf"])
             })
           })
         }
@@ -82,7 +82,7 @@ function E(e) {
     M = [];
   null != n.user ? M.push({
     icon: u.T39,
-    text: S.intl.formatToPlainString(S.t["7EcUbr"], {
+    text: N.intl.formatToPlainString(N.t["7EcUbr"], {
       user: (e => {
         if (null == e) return null;
         let t = new h.Z(e);
@@ -92,78 +92,78 @@ function E(e) {
     })
   }) : M.push({
     icon: u.T39,
-    text: S.intl.formatToPlainString(S.t["7mv59O"], {
+    text: N.intl.formatToPlainString(N.t["7mv59O"], {
       timestamp: O.default.extractTimestamp(n.id)
     })
   });
   let U = null;
-  return E && null != l && (U = (0, i.jsxs)("div", {
-    className: I.body,
+  return w && null != l && (U = (0, i.jsxs)("div", {
+    className: S.body,
     children: [(0, i.jsx)(u.izJ, {
-      className: I.topDivider
-    }), (0, i.jsxs)(f.Z, {
-      children: [(0, i.jsx)(f.Z.Child, {
+      className: S.topDivider
+    }), (0, i.jsxs)(g.Z, {
+      children: [(0, i.jsx)(g.Z.Child, {
         shrink: 1,
         grow: 0,
-        children: (0, i.jsxs)(f.Z, {
-          className: I.avatarWrapper,
-          direction: f.Z.Direction.VERTICAL,
-          children: [(0, i.jsx)(g.Z, {
+        children: (0, i.jsxs)(g.Z, {
+          className: S.avatarWrapper,
+          direction: g.Z.Direction.VERTICAL,
+          children: [(0, i.jsx)(f.Z, {
             image: l.avatar,
             onChange: e => {
-              p.Z.updateWebhook({
+              m.Z.updateWebhook({
                 avatar: e
               })
             },
-            makeURL: e => w(n, e),
-            imageClassName: I.avatarUploaderInner,
+            makeURL: e => I(n, e),
+            imageClassName: S.avatarUploaderInner,
             showIcon: true
-          }), null != T.avatar && "" !== T.avatar ? (0, i.jsx)(u.Text, {
+          }), null != P.avatar && "" !== P.avatar ? (0, i.jsx)(u.Text, {
             color: "text-feedback-critical",
             variant: "text-sm/normal",
-            children: T.avatar
+            children: P.avatar
           }) : null]
         })
-      }), (0, i.jsxs)(f.Z, {
-        direction: f.Z.Direction.VERTICAL,
-        children: [(0, i.jsxs)(f.Z, {
-          children: [(0, i.jsx)(f.Z.Child, {
+      }), (0, i.jsxs)(g.Z, {
+        direction: g.Z.Direction.VERTICAL,
+        children: [(0, i.jsxs)(g.Z, {
+          children: [(0, i.jsx)(g.Z.Child, {
             wrap: true,
             basis: "50%",
             children: (0, i.jsx)(u.oil, {
-              label: S.intl.string(S.t.ukdxuo),
+              label: N.intl.string(N.t.ukdxuo),
               value: l.name,
               onChange: e => {
-                p.Z.updateWebhook({
+                m.Z.updateWebhook({
                   name: e
                 })
               },
               maxLength: 80,
-              error: T.name
+              error: P.name
             })
-          }), (0, i.jsx)(f.Z.Child, {
+          }), (0, i.jsx)(g.Z.Child, {
             basis: "50%",
             children: (0, i.jsx)("div", {
               children: (0, i.jsx)(c.d, {
-                label: S.intl.string(S.t.GK18KJ),
+                label: N.intl.string(N.t.GK18KJ),
                 value: l.channel_id,
                 options: j,
                 onChange: e => {
-                  p.Z.updateWebhook({
+                  m.Z.updateWebhook({
                     channelId: e
                   })
                 },
-                placeholder: S.intl.string(S.t.r2ptsz)
+                placeholder: N.intl.string(N.t.r2ptsz)
               })
             })
           })]
         }), (0, i.jsx)(u.izJ, {
-          className: I.bottomDivider
-        }), (0, i.jsxs)(f.Z, {
+          className: S.bottomDivider
+        }), (0, i.jsxs)(g.Z, {
           children: [(0, i.jsx)(u.aML, {
             "data-migration-pending": true,
-            text: S.intl.string(S.t.wwdb3g),
-            forceOpen: _,
+            text: N.intl.string(N.t.wwdb3g),
+            forceOpen: Z,
             color: u.r6K.GREEN,
             disableTooltipPointerEvents: true,
             children: e => {
@@ -191,7 +191,7 @@ function E(e) {
                 }(e, ["onClick", "onMouseEnter", "onMouseLeave", "onBlur", "onFocus"]);
               return (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": true,
-                className: I.copyButton,
+                className: S.copyButton,
                 children: (0, i.jsx)(u.Button, (t = function(e) {
                   for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
@@ -212,11 +212,11 @@ function E(e) {
                 }({
                   variant: "secondary",
                   size: "sm",
-                  text: S.intl.string(S.t.Ae9rUW)
+                  text: N.intl.string(N.t.Ae9rUW)
                 }, d), r = r = {
                   "aria-label": "",
                   onClick: () => {
-                    null == l || l(), k(true), u.uvj.announce(S.intl.string(S.t.wwdb3g)), A.start(1e3, () => k(false)), R()
+                    null == l || l(), k(true), u.uvj.announce(N.intl.string(N.t.wwdb3g)), A.start(1e3, () => k(false)), R()
                   },
                   disabled: null == n.token || "" === n.token
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
@@ -234,7 +234,7 @@ function E(e) {
           }), (0, i.jsx)(u.Button, {
             variant: "critical-secondary",
             size: "sm",
-            text: S.intl.string(S.t.jVrUnC),
+            text: N.intl.string(N.t.jVrUnC),
             onClick: L
           })]
         })]
@@ -243,22 +243,22 @@ function E(e) {
   })), (0, i.jsx)(u.Zbd, {
     editable: true,
     id: t,
-    className: a()(I.card, P ? I.pulse : null),
-    children: (0, i.jsxs)(f.Z, {
-      direction: f.Z.Direction.VERTICAL,
+    className: a()(S.card, E ? S.pulse : null),
+    children: (0, i.jsxs)(g.Z, {
+      direction: g.Z.Direction.VERTICAL,
       children: [(0, i.jsx)(u.P3F, {
-        className: I.header,
-        "aria-expanded": E,
-        onClick: Z,
-        children: (0, i.jsxs)(f.Z, {
-          align: f.Z.Align.CENTER,
-          children: [(0, i.jsx)(C.Z, {
+        className: S.header,
+        "aria-expanded": w,
+        onClick: T,
+        children: (0, i.jsxs)(g.Z, {
+          align: g.Z.Align.CENTER,
+          children: [(0, i.jsx)(_.Z, {
             name: n.name,
             imageSrc: D,
             details: M
           }), (0, i.jsx)(x.Z, {
-            className: I.expandIcon,
-            expanded: E,
+            className: S.expandIcon,
+            expanded: w,
             "aria-hidden": true
           })]
         })

@@ -23,8 +23,8 @@ module.exports = function(e) {
   for (var _ = r(n, f), g = 0; g < f;) {
     var E = d(g);
     if (s(n, E)) {
-      var b = i(e, t, [o(n, E), g, n]);
-      a(_, E, b)
+      var b = i(e, t, [a(n, E), g, n]);
+      o(_, E, b)
     }
     g += 1
   }

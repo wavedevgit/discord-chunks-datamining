@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 371286, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk313201 = require("./313201.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk312529 = require("./312529.js");
+  Chunk18845 = require("./18845.js");
 
 function u(e) {
   let {
@@ -19,7 +19,7 @@ function u(e) {
     subheading: u,
     children: m,
     height: p
-  } = e, h = (0, s.Dt)(), f = r.useRef(null), x = (0, l.q_F)({
+  } = e, h = (0, s.Dt)(), x = r.useRef(null), f = (0, l.q_F)({
     from: {
       transform: "translate3d(-110%, 0, 0)",
       height: p
@@ -34,19 +34,19 @@ function u(e) {
       damping: 15
     },
     onRest: () => {
-      null != f.current && f.current.focus()
+      null != x.current && x.current.focus()
     }
   });
   return (0, a.jsx)(i.animated.div, {
     className: d.container,
-    style: x,
+    style: f,
     children: (0, a.jsxs)("aside", {
       "aria-labelledby": h,
       className: d.content,
       children: [(0, a.jsxs)("div", {
         className: d.headerRow,
         children: [(0, a.jsx)(l.P3F, {
-          innerRef: f,
+          innerRef: x,
           "aria-label": c.intl.string(c.t.WAI6xu),
           className: d.closeButton,
           onClick: () => {

@@ -7,14 +7,14 @@ require.d(exports, {
   NQ: () => E,
   fe: () => L
 }), require("./388685.js");
-var r, i, a, o, Chunk54381 = require("./54381.js"),
+var r, i, o, a, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   u = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk748780 = require("./748780.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk115164 = require("./115164.js");
+  Chunk298185 = require("./298185.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,16 +76,16 @@ class E extends(r = Chunk473749.PureComponent) {
       onScenePlay: n,
       onSceneComplete: r,
       pause: i,
-      pauseWhileUnfocused: a
+      pauseWhileUnfocused: o
     } = this.props;
     return (0, Chunk54381.jsx)(Chunk481060.kci, {
-      className: u()(Chunk115164.sequencedAnimation, module),
+      className: u()(Chunk298185.sequencedAnimation, module),
       importData: this.importDefault,
       nextScene: i ? "idle" : exports,
       sceneSegments: g,
       onScenePlay: require,
       onSceneComplete: r,
-      pauseWhileUnfocused: a,
+      pauseWhileUnfocused: o,
       pause: i
     })
   }
@@ -143,16 +143,16 @@ class O extends(i = Chunk473749.PureComponent) {
       onScenePlay: n,
       onSceneComplete: r,
       pause: i,
-      pauseWhileUnfocused: a
+      pauseWhileUnfocused: o
     } = this.props;
     return (0, Chunk54381.jsx)(Chunk481060.kci, {
-      className: u()(Chunk115164.sequencedAnimation, module),
+      className: u()(Chunk298185.sequencedAnimation, module),
       importData: this.importDefault,
       nextScene: i ? "idle" : exports,
       sceneSegments: y,
       onScenePlay: require,
       onSceneComplete: r,
-      pauseWhileUnfocused: a,
+      pauseWhileUnfocused: o,
       pause: i
     })
   }
@@ -216,7 +216,7 @@ class I extends Chunk473749.PureComponent {
       className: e
     } = this.props;
     return (0, Chunk54381.jsxs)("div", {
-      className: Chunk115164.panningAnimation,
+      className: Chunk298185.panningAnimation,
       children: [(0, Chunk54381.jsx)(Chunk748780.Z.div, {
         className: module,
         style: this.getStyle(false)
@@ -249,7 +249,7 @@ let T = Object.freeze({
     }
   }),
   C = 1.2;
-class A extends(a = Chunk473749.PureComponent) {
+class A extends(o = Chunk473749.PureComponent) {
   static getNextScene(e) {
     switch (e) {
       case A.Scenes.IDLE_ENTRY:
@@ -316,24 +316,24 @@ class A extends(a = Chunk473749.PureComponent) {
       onSceneComplete: r
     } = this.props;
     return (0, Chunk54381.jsxs)("div", {
-      className: u()(Chunk115164.tier2Animation, module),
+      className: u()(Chunk298185.tier2Animation, module),
       children: [require ? (0, Chunk54381.jsxs)("div", {
-        className: Chunk115164.panningAnimation,
+        className: Chunk298185.panningAnimation,
         children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk115164.tier2Background
+          className: Chunk298185.tier2Background
         }), (0, Chunk54381.jsx)("div", {
-          className: Chunk115164.tier2Foreground
+          className: Chunk298185.tier2Foreground
         })]
       }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(I, {
-          className: Chunk115164.tier2Background,
+          className: Chunk298185.tier2Background,
           animation: this.backgroundAnimation
         }), (0, Chunk54381.jsx)(I, {
-          className: Chunk115164.tier2Foreground,
+          className: Chunk298185.tier2Foreground,
           animation: this.foregroundAnimation
         })]
       }), (0, Chunk54381.jsx)(Chunk481060.kci, {
-        className: Chunk115164.sequencedAnimation,
+        className: Chunk298185.sequencedAnimation,
         importData: this.importData,
         nextScene: require ? "idle_loop" : exports,
         sceneSegments: S,
@@ -460,22 +460,22 @@ function x(e) {
   let {
     animate: t
   } = e, [n, r] = l.useState(0), i = (0, p.bYB)(w.length, w.map((e, i) => {
-    let a = i > 0 ? D.DELAY_STAGGER * i + Math.random() * (D.DELAY_MAX - D.DELAY_MIN) + D.DELAY_MIN : 0,
-      o = Math.random() * (D.SIZE_MAX - D.SIZE_MIN) + D.SIZE_MIN;
+    let o = i > 0 ? D.DELAY_STAGGER * i + Math.random() * (D.DELAY_MAX - D.DELAY_MIN) + D.DELAY_MIN : 0,
+      a = Math.random() * (D.SIZE_MAX - D.SIZE_MIN) + D.SIZE_MIN;
     return {
       from: {
         scale: D.SCALE_INITIAL,
         rotate: D.ROTATE_INITIAL,
         top: e.top,
         left: e.left,
-        width: o,
-        height: o
+        width: a,
+        height: a
       },
       to: async e => {
         t ? (await e({
           scale: D.SCALE_MIDDLE,
           rotate: D.ROTATE_MIDDLE,
-          delay: a,
+          delay: o,
           config: {
             duration: D.DURATION_MIDDLE,
             easing: D.EASING_MIDDLE
@@ -514,7 +514,7 @@ function x(e) {
     })
   })
 }
-class L extends(o = Chunk473749.PureComponent) {
+class L extends(a = Chunk473749.PureComponent) {
   static getNextScene(e) {
     switch (e) {
       case "entry":
@@ -540,18 +540,18 @@ class L extends(o = Chunk473749.PureComponent) {
       pause: n,
       onScenePlay: r,
       onSceneComplete: i,
-      pauseWhileUnfocused: a
+      pauseWhileUnfocused: o
     } = this.props;
     return (0, Chunk54381.jsxs)("div", {
-      className: u()(Chunk115164.guildWrapper, module),
+      className: u()(Chunk298185.guildWrapper, module),
       children: [(0, Chunk54381.jsx)(Chunk481060.kci, {
-        className: Chunk115164.guildBackground,
+        className: Chunk298185.guildBackground,
         importData: this.importData,
         nextScene: require ? "idle" : exports,
         sceneSegments: P,
         onScenePlay: r,
         onSceneComplete: i,
-        pauseWhileUnfocused: a,
+        pauseWhileUnfocused: o,
         pause: require
       }), (0, Chunk54381.jsx)(x, {
         animate: !require && "stars" === exports

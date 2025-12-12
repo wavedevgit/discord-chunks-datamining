@@ -8,16 +8,16 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk391876 = require("./391876.jsx"),
-  Chunk383542 = require("./383542.js");
+  Chunk831880 = require("./831880.js");
 let c = 400;
 
 function u(e) {
   let {
     className: t,
     textClassName: n,
-    text: a,
+    text: o,
     variant: u,
     delay: d
   } = e, f = (0, i.useRef)(0), p = (0, i.useRef)(0), [_, m] = (0, i.useState)("");
@@ -25,18 +25,18 @@ function u(e) {
     let e = () => {
       let t = Date.now() - f.current,
         n = Math.max(Math.min(t / c, 1), 0);
-      m(a.substring(0, Math.floor(n * a.length))), t < c && (p.current = window.requestAnimationFrame(e))
+      m(o.substring(0, Math.floor(n * o.length))), t < c && (p.current = window.requestAnimationFrame(e))
     };
     return f.current = Date.now() + (null != d ? d : 0), p.current = window.requestAnimationFrame(e), () => cancelAnimationFrame(p.current)
-  }, [d, a]), (0, r.jsxs)("div", {
-    className: o()(t, l.container),
+  }, [d, o]), (0, r.jsxs)("div", {
+    className: a()(t, l.container),
     children: [(0, r.jsx)(s.Z, {
       "aria-hidden": true,
-      className: o()(l.hiddenText, n),
+      className: a()(l.hiddenText, n),
       variant: u,
-      children: a
+      children: o
     }), (0, r.jsx)(s.Z, {
-      className: o()(l.animatedText, n),
+      className: a()(l.animatedText, n),
       variant: u,
       children: _
     })]

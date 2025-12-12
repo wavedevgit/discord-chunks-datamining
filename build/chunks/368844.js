@@ -51,13 +51,13 @@ function v(e) {
   var t, n;
   let r = arguments.length > 1 && true !== arguments[1] ? arguments[1] : u.x4.getSetting();
   if (!r) return [];
-  let a = (null == e || null == (t = e.messageSnapshots[0]) ? true : t.moderatorReport) != null ? null == e || null == (n = e.messageSnapshots[0]) ? true : n.message.attachments : null == e ? true : e.attachments;
-  return null == e || null == a ? [] : a.filter(y).map((e, t) => {
+  let o = (null == e || null == (t = e.messageSnapshots[0]) ? true : t.moderatorReport) != null ? null == e || null == (n = e.messageSnapshots[0]) ? true : n.message.attachments : null == e ? true : e.attachments;
+  return null == e || null == o ? [] : o.filter(y).map((e, t) => {
     var n;
     let {
       proxy_url: r,
-      url: a,
-      description: o,
+      url: o,
+      description: a,
       spoiler: s,
       flags: c,
       width: u,
@@ -68,7 +68,7 @@ function v(e) {
     if (null == u || null == d) return null;
     let _ = (0, l.NU)(f),
       m = null != e.flags && (0, i.yE)(e.flags, g.J0y.IS_THUMBNAIL),
-      E = null != r ? r : a;
+      E = null != r ? r : o;
     if (_) {
       let e = h.Z.toURLSafe(r);
       if (null == e) return null;
@@ -82,7 +82,7 @@ function v(e) {
       spoiler: null != s && s,
       flags: c,
       contentScanVersion: p,
-      alt: o,
+      alt: a,
       isVideo: _,
       isThumbnail: m,
       attachmentId: e.id,
@@ -98,24 +98,24 @@ function S(e) {
 
 function I(e, t) {
   var n, r;
-  let a = u.RS.useSetting(),
-    o = u.NA.useSetting();
+  let o = u.RS.useSetting(),
+    a = u.NA.useSetting();
   if (null == e) return [];
   let s = (null == (n = e.messageSnapshots[0]) ? true : n.moderatorReport) != null ? null == (r = e.messageSnapshots[0]) ? true : r.message.embeds : e.embeds;
-  return a && o && null != s ? s.map((e, n) => {
+  return o && a && null != s ? s.map((e, n) => {
     var r;
-    let a = null != (r = e.image) ? r : e.thumbnail;
-    if (null == a && null != e.images && (a = e.images[0]), null != a && null != a.url) {
+    let o = null != (r = e.image) ? r : e.thumbnail;
+    if (null == o && null != e.images && (o = e.images[0]), null != o && null != o.url) {
       let {
         height: r,
-        proxyURL: o,
+        proxyURL: a,
         url: s,
         width: c,
         flags: u
-      } = a, d = null != o && (0, l.cb)(o);
+      } = o, d = null != a && (0, l.cb)(a);
       return {
         type: "embed",
-        src: null != o && "" !== o ? o : s,
+        src: null != a && "" !== a ? a : s,
         height: r,
         width: c,
         spoiler: t,
@@ -133,12 +133,12 @@ function T(e) {
   let t = u.RS.useSetting();
   if (null == e) return [];
   let n = e.components;
-  return t && null != n ? Array.from((0, o.kS)(n).values()).flatMap(e => {
+  return t && null != n ? Array.from((0, a.kS)(n).values()).flatMap(e => {
     switch (e.type) {
-      case a.re.THUMBNAIL:
+      case o.re.THUMBNAIL:
         var t;
         return C(e.media, null != (t = e.spoiler) && t);
-      case a.re.MEDIA_GALLERY:
+      case o.re.MEDIA_GALLERY:
         return e.items.map(e => {
           var t;
           return C(e.media, null != (t = e.spoiler) && t)
@@ -149,18 +149,18 @@ function T(e) {
 }
 
 function C(e, t) {
-  var n, r, a;
-  let o = (0, s.hg)(e);
-  return "INVALID" === o ? null : {
+  var n, r, o;
+  let a = (0, s.hg)(e);
+  return "INVALID" === a ? null : {
     type: "component",
     src: e.proxyUrl,
     height: null != (r = e.height) ? r : 0,
-    width: null != (a = e.width) ? a : 0,
+    width: null != (o = e.width) ? o : 0,
     spoiler: t,
     contentScanVersion: null == (n = e.contentScanMetadata) ? true : n.version,
     flags: 0,
     srcIsAnimated: (0, i.yE)(e.flags, s.hR.IS_ANIMATED),
-    isVideo: "VIDEO" === o,
+    isVideo: "VIDEO" === a,
     mediaIndex: 0,
     srcUnfurledMediaItem: e
   }
@@ -186,10 +186,10 @@ function N(e, t) {
 
 function P(e, t) {
   var n, r, i;
-  let a = S(e),
-    o = I(e, t),
+  let o = S(e),
+    a = I(e, t),
     s = T(e);
-  return null != (i = null != (r = null != (n = a[0]) ? n : o[0]) ? r : s[0]) ? i : null
+  return null != (i = null != (r = null != (n = o[0]) ? n : a[0]) ? r : s[0]) ? i : null
 }
 
 function R(e, t) {

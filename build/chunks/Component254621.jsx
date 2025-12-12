@@ -25,8 +25,8 @@ let E = () => {
       setInstallationStatus: t,
       setConnectionStatus: n,
       finishSetup: r,
-      getWarpInstallationStatus: a,
-      connect: o,
+      getWarpInstallationStatus: o,
+      connect: a,
       installTimeout: E
     } = (0, Chunk773275.xf)(), {
       status: b
@@ -62,7 +62,7 @@ let E = () => {
       y > 10 && (exports(Chunk5900._n.ERROR), O(0))
     }, [y, exports]), (0, Chunk473749.useEffect)(() => {
       module === Chunk5900._n.READY_FOR_LICENSE && Chunk54381().then(e => {
-        e && t(p._n.INSTALLED), o()
+        e && t(p._n.INSTALLED), a()
       }).catch(e => {
         u.Z.captureException(e, {
           tags: {

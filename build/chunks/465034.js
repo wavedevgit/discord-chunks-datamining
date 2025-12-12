@@ -8,7 +8,7 @@ var Chunk507604 = require("./507604.js"),
   Chunk146063 = require("./146063.js"),
   Chunk673451 = require("./673451.js");
 exports.f = Chunk507604 && !Chunk282108 ? Object.defineProperties : function(e, t) {
-  o(e);
-  for (var n, r = s(t), i = l(t), c = i.length, u = 0; c > u;) a.f(e, n = i[u++], r[n]);
+  a(e);
+  for (var n, r = s(t), i = l(t), c = i.length, u = 0; c > u;) o.f(e, n = i[u++], r[n]);
   return e
 }

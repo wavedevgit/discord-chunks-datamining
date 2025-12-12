@@ -17,22 +17,22 @@ function u(e) {
   let {
     invite: u,
     trackClick: m,
-    closeModal: f
-  } = e, g = i.useCallback(() => {
+    closeModal: g
+  } = e, f = i.useCallback(() => {
     (null == u ? true : u.guild) != null && (0, o.eagerNavigateToSocialLayerStorefront)({
       guildId: u.guild.id
     })
   }, [u]), p = i.useCallback(() => {
     (null == u ? true : u.guild) != null && ((0, o.default)({
       invite: u
-    }), f(), m(s.as.GameShop))
-  }, [f, u, m]);
+    }), g(), m(s.as.GameShop))
+  }, [g, u, m]);
   return new Set(null == u || null == (t = u.guild) ? true : t.features).has(c.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, a.jsx)(r.zxk, {
     variant: "primary",
     text: (null == u || null == (n = u.guild) ? true : n.id) === (0, l.ac)() ? d.intl.string(d.t.WTXyEQ) : d.intl.string(d.t.v8UpgE),
     icon: r.EOn,
     onClick: p,
-    onMouseDown: g,
+    onMouseDown: f,
     fullWidth: true
   }) : null
 }

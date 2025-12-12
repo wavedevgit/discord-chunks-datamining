@@ -33,32 +33,32 @@ function f(e) {
     onHoverChange: n,
     onHoverEnd: l,
     isDisabled: c
-  } = e, [u, f] = (0, o.useState)(false), p = (0, o.useRef)({
+  } = e, [u, f] = (0, a.useState)(false), p = (0, a.useRef)({
     isHovered: false,
     ignoreEmulatedMouseEvents: false,
     pointerType: "",
     target: null
   }).current;
-  (0, o.useEffect)(d, []);
+  (0, a.useEffect)(d, []);
   let {
     addGlobalListener: _,
     removeAllGlobalListeners: m
   } = (0, r.x)(), {
     hoverProps: h,
     triggerHoverEnd: g
-  } = (0, o.useMemo)(() => {
-    let e = (e, o) => {
-        if (p.pointerType = o, c || "touch" === o || p.isHovered || !e.currentTarget.contains(e.target)) return;
+  } = (0, a.useMemo)(() => {
+    let e = (e, a) => {
+        if (p.pointerType = a, c || "touch" === a || p.isHovered || !e.currentTarget.contains(e.target)) return;
         p.isHovered = true;
         let s = e.currentTarget;
         p.target = s, _((0, i.r3)(e.target), "pointerover", e => {
-          p.isHovered && p.target && !(0, a.bE)(p.target, e.target) && r(e, e.pointerType)
+          p.isHovered && p.target && !(0, o.bE)(p.target, e.target) && r(e, e.pointerType)
         }, {
           capture: true
         }), t && t({
           type: "hoverstart",
           target: s,
-          pointerType: o
+          pointerType: a
         }), n && n(true), f(true)
       },
       r = (e, t) => {
@@ -69,17 +69,17 @@ function f(e) {
           pointerType: t
         }), n && n(false), f(false))
       },
-      o = {};
-    return "undefined" != typeof PointerEvent && (o.onPointerEnter = t => {
+      a = {};
+    return "undefined" != typeof PointerEvent && (a.onPointerEnter = t => {
       s && "mouse" === t.pointerType || e(t, t.pointerType)
-    }, o.onPointerLeave = e => {
+    }, a.onPointerLeave = e => {
       !c && e.currentTarget.contains(e.target) && r(e, e.pointerType)
     }), {
-      hoverProps: o,
+      hoverProps: a,
       triggerHoverEnd: r
     }
   }, [t, n, l, c, p, _, m]);
-  return (0, o.useEffect)(() => {
+  return (0, a.useEffect)(() => {
     c && g({
       currentTarget: p.target
     }, p.pointerType)

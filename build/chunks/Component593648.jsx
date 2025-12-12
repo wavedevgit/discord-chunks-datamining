@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
   Chunk433517 = require("./433517.js"),
@@ -48,7 +48,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk468788 = require("./468788.js"),
   Chunk490897 = require("./490897.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk710836 = require("./710836.js");
+  Chunk888681 = require("./888681.js");
 
 function z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -101,16 +101,16 @@ function $(e) {
     label: t,
     enabled: n,
     disabled: i,
-    onPreview: a,
-    onChange: o
+    onPreview: o,
+    onChange: a
   } = e;
   return (0, r.jsx)(d.rsf, {
     label: t,
     checked: n,
-    onChange: o,
+    onChange: a,
     disabled: i,
     description: W.intl.format(W.t.OOiGCM, {
-      onClick: a
+      onClick: o
     })
   })
 }
@@ -119,16 +119,16 @@ function ee(e) {
   let {
     disabledSounds: t,
     disableAllSounds: n,
-    notifyMessagesInSelectedChannel: a
-  } = e, o = i.useRef(null), s = (0, O.p)(), l = i.useCallback((e, t) => {
-    t.stopPropagation(), t.preventDefault(), null != o.current && o.current.stop(), o.current = (0, N.GN)(e)
+    notifyMessagesInSelectedChannel: o
+  } = e, a = i.useRef(null), s = (0, O.p)(), l = i.useCallback((e, t) => {
+    t.stopPropagation(), t.preventDefault(), null != a.current && a.current.stop(), a.current = (0, N.GN)(e)
   }, []), c = i.useCallback((e, n) => {
     let r = t.filter(t => t !== e);
     n || r.push(e), f.default.setDisabledSounds(r)
   }, [t]);
   i.useEffect(() => () => {
     var e;
-    null == (e = o.current) || e.stop()
+    null == (e = a.current) || e.stop()
   });
   let u = [{
       label: W.intl.string(W.t.pz71xC),
@@ -213,7 +213,7 @@ function ee(e) {
         children: [p ? (0, r.jsx)(y.Z, {}) : null, (0, r.jsx)(d.rsf, {
           label: W.intl.string(W.t.lF5GGe),
           description: W.intl.string(W.t["7oXUim"]),
-          checked: a && !n,
+          checked: o && !n,
           onChange: f.default.setNotifyMessagesInSelectedChannel,
           disabled: n
         }), (0, r.jsx)(d.rsf, {
@@ -223,24 +223,24 @@ function ee(e) {
           onChange: f.default.toggleDisableAllSounds
         }), u.map((e, i) => {
           let {
-            label: a,
-            sound: o,
+            label: o,
+            sound: a,
             focusModeDisabled: s
           } = e;
           return (0, r.jsxs)(d.Kqy, {
             children: [i > 0 && (0, r.jsx)(d.izJ, {
               gap: 8
             }), (0, r.jsx)($, {
-              label: a,
+              label: o,
               disabled: n || true === s,
-              onChange: e => c(o, e),
-              onPreview: e => l(o, e),
-              enabled: !n && !t.includes(o) && true !== s
-            }, o), s ? (0, r.jsx)(d.Wn, {
+              onChange: e => c(a, e),
+              onPreview: e => l(a, e),
+              enabled: !n && !t.includes(a) && true !== s
+            }, a), s ? (0, r.jsx)(d.Wn, {
               messageType: d.QYI.WARNING,
               children: W.intl.string(W.t.cIRG0s)
             }) : null]
-          }, o)
+          }, a)
         })]
       })
     })
@@ -250,7 +250,7 @@ function ee(e) {
 function et() {
   let e = (0, Chunk442837.e7)([Chunk487419.Z], () => Chunk487419.Z.getGuildAlertSettings()),
     [t, n] = Chunk473749.useState(null),
-    a = Chunk709054.default.keys(module).map(t => {
+    o = Chunk709054.default.keys(module).map(t => {
       let n = e[t];
       return {
         label: n.guildName,
@@ -314,13 +314,13 @@ class en extends Chunk473749.PureComponent {
       afkTimeout: t,
       disableUnreadBadge: n,
       taskbarFlash: i,
-      disabledSounds: a,
+      disabledSounds: o,
       disableAllSounds: s,
       notifyMessagesInSelectedChannel: l,
       focusMode: c
     } = this.props, f = Chunk45640.Z.getCurrentConfig({
       location: "Messages"
-    }).enabled || 0 === exports ? 0 : 1, p = o().range(Chunk292556, 11).map(e => ({
+    }).enabled || 0 === exports ? 0 : 1, p = a().range(Chunk292556, 11).map(e => ({
       value: 60 * e,
       label: 0 === e ? W.intl.string(W.t["0QN7cZ"]) : W.intl.formatToPlainString(W.t.iXLF9W, {
         minutes: e
@@ -355,7 +355,7 @@ class en extends Chunk473749.PureComponent {
             checked: Chunk473749,
             onChange: this.handleToggleShowFlash
           })
-        }), (0, Chunk54381.jsx)(ea, {}), (0, Chunk54381.jsx)(ed, {}), (0, Chunk54381.jsx)(ef, {}), (0, Chunk54381.jsx)(ep, {}), (0, Chunk54381.jsx)(e_, {}), (0, Chunk54381.jsx)(em, {}), (0, Chunk54381.jsx)(eu, {}), (0, Chunk54381.jsxs)(Chunk921801.F, {
+        }), (0, Chunk54381.jsx)(eo, {}), (0, Chunk54381.jsx)(ed, {}), (0, Chunk54381.jsx)(ef, {}), (0, Chunk54381.jsx)(ep, {}), (0, Chunk54381.jsx)(e_, {}), (0, Chunk54381.jsx)(em, {}), (0, Chunk54381.jsx)(eu, {}), (0, Chunk54381.jsxs)(Chunk921801.F, {
           setting: Chunk726985.s6.NOTIFICATIONS_PUSH_INACTIVE_TIMEOUT,
           children: [(0, Chunk54381.jsx)(Chunk199849.y6, {
             label: Chunk388032.intl.string(Chunk388032.t.TTvjd9),
@@ -444,11 +444,11 @@ function ei() {
   }) : null
 }
 
-function ea() {
+function eo() {
   let [e, t] = Chunk473749.useState(false), n = (0, Chunk442837.e7)([Chunk594174.default], () => {
     var e;
     return null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isStaff()
-  }), a = (0, Chunk442837.e7)([Chunk9156.ZP], () => Chunk9156.ZP.useNewNotifications);
+  }), o = (0, Chunk442837.e7)([Chunk9156.ZP], () => Chunk9156.ZP.useNewNotifications);
   return Chunk392711 || require ? (0, Chunk54381.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_UNREAD_SETTINGS,
     children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
@@ -456,11 +456,11 @@ function ea() {
       description: "Turns off the new unread setting that allows you to pick which channels are most important in a server.",
       checked: Chunk392711,
       disabled: module,
-      onChange: () => Chunk392711 ? es(exports) : eo(exports)
+      onChange: () => Chunk392711 ? es(exports) : ea(exports)
     })
   }) : null
 }
-async function eo(e) {
+async function ea(e) {
   e(true), await p.Z.setAccountFlag(H.c.USE_NEW_NOTIFICATIONS, true), e(false)
 }
 async function es(e) {
@@ -580,8 +580,8 @@ function e_() {
   return (0, Chunk54381.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.NOTIFICATIONS_GAME_UPDATE,
     children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk710836.default["3TO4/r"]),
-      description: Chunk388032.intl.string(Chunk710836.default.diGDe0),
+      label: Chunk388032.intl.string(Chunk888681.default["3TO4/r"]),
+      description: Chunk388032.intl.string(Chunk888681.default.diGDe0),
       checked: module,
       onChange: Chunk820942.c
     })

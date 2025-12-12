@@ -51,15 +51,15 @@ function P() {
 }
 
 function R(e, t, n) {
-  let r, i, a;
+  let r, i, o;
   if (null == n) return {};
-  let o = e.clone();
-  o.subtract(1, n.periodType);
+  let a = e.clone();
+  a.subtract(1, n.periodType);
   let s = t.clone();
-  return s.add(1, n.periodType), t.isSame(e, n.periodType) ? (a = T.intl.string(n.currentName), t.isSameOrBefore(e) && (i = T.intl.string(n.nextName))) : t.isSame(o, n.periodType) && (a = T.intl.string(n.previousName), i = T.intl.string(n.currentName)), null != i && (r = s.unix().toString()), {
+  return s.add(1, n.periodType), t.isSame(e, n.periodType) ? (o = T.intl.string(n.currentName), t.isSameOrBefore(e) && (i = T.intl.string(n.nextName))) : t.isSame(a, n.periodType) && (o = T.intl.string(n.previousName), i = T.intl.string(n.currentName)), null != i && (r = s.unix().toString()), {
     adjustedTimestamp: r,
     adjustedDescription: i,
-    unadjustedDescription: a
+    unadjustedDescription: o
   }
 }
 let w = {
@@ -68,27 +68,27 @@ let w = {
   queryResults(e, t, n) {
     var r;
     let i = b()(),
-      a = P(),
-      [o] = null != (r = null == a ? true : a.parse(n, i.toDate())) ? r : [true],
-      s = (null == o ? true : o.start) != null && (null == o ? true : o.end) == null && o.text === n,
-      l = s ? b()(o.start.date()) : b()(n, N, true),
+      o = P(),
+      [a] = null != (r = null == o ? true : o.parse(n, i.toDate())) ? r : [true],
+      s = (null == a ? true : a.start) != null && (null == a ? true : a.end) == null && a.text === n,
+      l = s ? b()(a.start.date()) : b()(n, N, true),
       c = [],
       {
         format: u
       } = l.creationData();
     if ("string" != typeof u && (u = true), "" !== n || l.isValid() || (l = i, u = "YYYYMMDDHHmmss"), l.isValid() && (s || null != u)) {
       let e;
-      if (s && !o.start.isCertain("hour")) {
+      if (s && !a.start.isCertain("hour")) {
         let e = 9e5,
           t = Math.round(l.valueOf() / e) * e;
         l = b()(t)
       }
-      let t = s ? o.start.isCertain("weekday") : null == u ? true : u.includes("d"),
-        n = s ? o.start.isCertain("day") || o.start.isCertain("month") || o.start.isCertain("year") : null == u ? true : u.includes("D"),
-        r = s ? o.start.isCertain("year") : null == u ? true : u.includes("Y"),
-        a = s ? o.start.isCertain("second") : null == u ? true : u.includes("s"),
+      let t = s ? a.start.isCertain("weekday") : null == u ? true : u.includes("d"),
+        n = s ? a.start.isCertain("day") || a.start.isCertain("month") || a.start.isCertain("year") : null == u ? true : u.includes("D"),
+        r = s ? a.start.isCertain("year") : null == u ? true : u.includes("Y"),
+        o = s ? a.start.isCertain("second") : null == u ? true : u.includes("s"),
         d = l.unix().toString(),
-        f = a ? "S" : "s";
+        f = o ? "S" : "s";
       n || t ? t && !n ? e = {
         periodType: "week",
         previousName: T.t["4uTwgO"],
@@ -102,7 +102,7 @@ let w = {
       }) : (c.push({
         mention: {
           timestamp: d,
-          format: a ? "T" : "t"
+          format: o ? "T" : "t"
         },
         description: T.intl.string(T.t.yHv4oJ)
       }), c.push({}), e = {
@@ -172,30 +172,30 @@ let w = {
         mentions: t
       },
       selectedIndex: n,
-      query: a,
-      onHover: o,
+      query: o,
+      onHover: a,
       onClick: s
     } = e, l = t.map((e, t) => {
       let {
         mention: i,
-        description: a
+        description: o
       } = e;
       if (true === i) return (0, r.jsx)(y.ZP.Divider, {}, "divider-".concat(t));
       let l = (0, O.tC)(i);
       return null == l ? null : (0, r.jsx)(y.ZP.Timestamp, {
         onClick: s,
-        onHover: o,
+        onHover: a,
         selected: n === t,
         index: t,
         timestamp: l,
-        description: a
+        description: o
       }, "timestamp-".concat(t))
     }), c = T.t.I4nJDb, u = T.intl.string(T.t.pUP8UM);
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, S.gm)({
         titleWithQuery: c,
         titleWithoutQuery: u,
-        query: a,
+        query: o,
         getQuery: e => "".concat(e)
       }), l]
     }, "timestamp_formats")
@@ -207,14 +207,14 @@ let w = {
         mentions: r
       },
       index: i,
-      options: a
+      options: o
     } = e, {
-      mention: o
+      mention: a
     } = null != (n = r[i]) ? n : {};
-    if (null == o) return null;
-    let s = (0, O.He)(o.timestamp, o.format),
-      l = null == (t = (0, O.tC)(o)) ? true : t.formatted;
-    return null == l ? null : (a.replaceInlineInput("timestampMentionInput", l, s), {
+    if (null == a) return null;
+    let s = (0, O.He)(a.timestamp, a.format),
+      l = null == (t = (0, O.tC)(a)) ? true : t.formatted;
+    return null == l ? null : (o.replaceInlineInput("timestampMentionInput", l, s), {
       type: I.z2.TIMESTAMP
     })
   }

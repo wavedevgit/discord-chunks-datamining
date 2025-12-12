@@ -1,4 +1,4 @@
-/** Chunk was on 92504 **/
+/** Chunk was on 69844 **/
 /** chunk id: 215453, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk49012 = require("./49012.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk21371 = require("./21371.js");
+  Chunk74380 = require("./74380.js");
 let p = Chunk63063.Z.getArticleURL(Chunk981631.BhN.BOT_DATA_ACCESS);
 
 function m(e) {
@@ -24,50 +24,50 @@ function m(e) {
     hasIntents: m
   } = (0, l.w)({
     flags: null == t ? true : t.flags
-  }), f = r.useCallback(() => {
+  }), g = i.useCallback(() => {
     null != t.privacy_policy_url && (0, o.q)({
       href: t.privacy_policy_url
     })
   }, [t.privacy_policy_url]);
-  return (0, a.jsxs)("div", {
+  return (0, r.jsxs)("div", {
     className: u.sectionContainer,
-    children: [(0, a.jsx)(i.Heading, {
+    children: [(0, r.jsx)(a.Heading, {
       variant: "heading-lg/semibold",
       color: "text-strong",
       children: d.intl.string(d.t.QzDgMq)
-    }), (0, a.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: u.contentContainer,
-      children: [m && (0, a.jsxs)("ul", {
+      children: [m && (0, r.jsxs)("ul", {
         className: u.intentsList,
-        children: [(0, a.jsx)(i.Heading, {
+        children: [(0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           color: "text-default",
           children: d.intl.string(d.t.U6KH5S)
-        }), n && (0, a.jsx)(h, {
-          icon: i.kBi,
+        }), n && (0, r.jsx)(h, {
+          icon: a.kBi,
           heading: d.intl.string(d.t.gJpBO2),
           body: d.intl.string(d.t["L+QVbh"])
-        }), s && (0, a.jsx)(h, {
-          icon: i.z65,
+        }), s && (0, r.jsx)(h, {
+          icon: a.z65,
           heading: d.intl.string(d.t["jo0oj/"]),
           body: d.intl.string(d.t.Dm0jqx)
-        }), c && (0, a.jsx)(h, {
-          icon: i.BFJ,
+        }), c && (0, r.jsx)(h, {
+          icon: a.BFJ,
           heading: d.intl.string(d.t.QZql7O),
           body: d.intl.string(d.t["ez/N/R"])
         })]
-      }), (0, a.jsx)(i.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "text-default",
         children: d.intl.format(d.t.b6nqk0, {
           helpCenterUrl: p
         })
-      }), null != t.privacy_policy_url && (0, a.jsx)(i.Text, {
+      }), null != t.privacy_policy_url && (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "text-default",
         className: u.privacyPolicy,
         children: d.intl.format(d.t.agYVY5, {
-          onClick: f
+          onClick: g
         })
       })]
     })]
@@ -78,23 +78,23 @@ function h(e) {
   let {
     icon: t,
     heading: n,
-    body: r
+    body: i
   } = e;
-  return (0, a.jsxs)("li", {
+  return (0, r.jsxs)("li", {
     className: u.intentContainer,
-    children: [(0, a.jsx)(t, {
+    children: [(0, r.jsx)(t, {
       color: "currentColor",
       size: "md"
-    }), (0, a.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: u.intentTextContainer,
-      children: [(0, a.jsx)(i.Heading, {
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-md/semibold",
         color: "text-default",
         children: n
-      }), (0, a.jsx)(i.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        children: r
+        children: i
       })]
     })]
   })

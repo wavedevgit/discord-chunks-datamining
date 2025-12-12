@@ -2,34 +2,34 @@
 /** chunk id: 656795, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk650886 = require("./650886.js");
 
-function a(e) {
+function o(e) {
   let {
     disabled: t,
     deviceId: n,
-    width: a,
-    height: o
+    width: o,
+    height: a
   } = e;
   return t ? (0, r.jsx)("div", {
     className: "media-engine-video",
     style: {
-      width: a,
-      height: o
+      width: o,
+      height: a
     }
   }) : (0, r.jsx)(i.Z, {
     streamId: n,
     style: {
-      width: a,
-      height: o
+      width: o,
+      height: a
     }
   })
 }
-a.defaultProps = {
+o.defaultProps = {
   disabled: false,
   width: 320,
   height: 180

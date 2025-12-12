@@ -2,14 +2,14 @@
 /** chunk id: 197256, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk727916 = require("./727916.js"),
   Chunk715870 = require("./715870.js");
-let a = /(?:this)?\s{0,3}(morning|afternoon|evening|night|midnight|midday|noon)(?=\W|$)/i;
-class o extends Chunk727916.Z {
+let o = /(?:this)?\s{0,3}(morning|afternoon|evening|night|midnight|midday|noon)(?=\W|$)/i;
+class a extends Chunk727916.Z {
   innerPattern() {
-    return a
+    return o
   }
   innerExtract(e, t) {
     let n = null;

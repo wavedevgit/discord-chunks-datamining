@@ -57,7 +57,7 @@ function m(e) {
   let {
     application: t,
     fullWidth: n = false,
-    size: d = a.zx.Sizes.LARGE,
+    size: d = o.zx.Sizes.LARGE,
     color: p,
     customDisabledColor: m,
     hideNotLaunchable: h,
@@ -77,7 +77,7 @@ function m(e) {
     className: b,
     hover: O,
     innerClassName: v
-  }, I = (0, i.e7)([o.Z], () => o.Z.getActiveLibraryApplication(t.id)), T = null != I ? I.sku.id : null, C = null != T ? T : t.primarySkuId, A = (0, i.e7)([s.Z], () => null != C && !s.Z.didFetchingSkuFail(C));
+  }, I = (0, i.e7)([a.Z], () => a.Z.getActiveLibraryApplication(t.id)), T = null != I ? I.sku.id : null, C = null != T ? T : t.primarySkuId, A = (0, i.e7)([s.Z], () => null != C && !s.Z.didFetchingSkuFail(C));
   return null != I && (0, l.Je)(I) ? (0, r.jsx)(u.Z, _(f({}, S), {
     libraryApplication: I,
     source: y

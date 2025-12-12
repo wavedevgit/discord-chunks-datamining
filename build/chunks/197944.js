@@ -1,8 +1,0 @@
-/** Chunk was on web.js **/
-/** chunk id: 197944, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-module.exports = {
-  container: "b5a371a294fa8a63-container",
-  choicesContainer: "b5a371a294fa8a63-choicesContainer",
-  noChoices: "b5a371a294fa8a63-noChoices"
-}

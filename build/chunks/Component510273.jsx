@@ -7,12 +7,12 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk955204 = require("./955204.js"),
   Chunk818765 = require("./818765.js"),
   Chunk674680 = require("./674680.jsx"),
-  Chunk854161 = require("./854161.js");
+  Chunk229450 = require("./229450.js");
 let f = e => {
     let {
       color: t
@@ -71,7 +71,7 @@ function _(e) {
     achievement: t,
     unlocked: n
   } = e, {
-    name: a,
+    name: o,
     description: _,
     rarity: m,
     hideDescriptionUntilUnlock: h,
@@ -93,7 +93,7 @@ function _(e) {
     },
     O = b ? s.P3F : "div";
   return (0, r.jsxs)(O, {
-    className: o()(d.container, b && d.actionable),
+    className: a()(d.container, b && d.actionable),
     onClick: y,
     children: [(0, r.jsx)("div", {
       className: d.iconContainer,
@@ -107,7 +107,7 @@ function _(e) {
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/semibold",
         color: "text-strong",
-        children: a()
+        children: o()
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "text-default",

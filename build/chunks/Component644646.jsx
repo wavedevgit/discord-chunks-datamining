@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk374470 = require("./374470.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk352084 = require("./352084.jsx"),
   Chunk110560 = require("./110560.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk998008 = require("./998008.js");
+  Chunk858191 = require("./858191.js");
 
 function S(e) {
   let {
@@ -44,7 +44,7 @@ function S(e) {
 let I = function(e) {
   let t, {
       className: n,
-      quest: a,
+      quest: o,
       autoplay: _ = true,
       learnMoreStyle: I = null,
       learnMoreFontSize: T,
@@ -57,24 +57,24 @@ let I = function(e) {
     w = (0, p.O5)(),
     D = (0, l.e7)([f.Z], () => f.Z.isFocused()),
     x = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
-    L = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD), [a]),
-    j = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD_IMAGE), [a]),
+    L = i.useMemo(() => (0, m.fh)(o, m.eC.REWARD), [o]),
+    j = i.useMemo(() => (0, m.fh)(o, m.eC.REWARD_IMAGE), [o]),
     M = i.useCallback(t => {
       var n;
       (0, s.kK)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), w({
-        questId: a.id,
+        questId: o.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
         questContentCTA: p.jZ.REWARD_LEARN_MORE,
         sourceQuestContent: C
       }), (0, y.navigateToQuestHome)({
         fromContent: e.questContent,
-        questId: a.id
+        questId: o.id
       }), null == (n = e.onClick) || n.call(e, t)
-    }, [w, a.id, e, C]),
+    }, [w, o.id, e, C]),
     k = i.useRef(null),
     U = i.useRef(_),
-    G = (0, h.Bg)(a.config);
+    G = (0, h.Bg)(o.config);
   return i.useEffect(() => {
     if (null != k.current) {
       if (!L.isAnimated || x) {
@@ -100,7 +100,7 @@ let I = function(e) {
     videoAsset: {
       asset: L,
       assetId: "QuestRewardTile_rewardTileAnimated",
-      className: o()(v.questRewardTileAsset, v.questRewardTileAssetLazyVideo)
+      className: a()(v.questRewardTileAsset, v.questRewardTileAssetLazyVideo)
     },
     onLoadComplete: e.onLoadComplete
   }) : L.isAnimated ? (0, r.jsx)(g.Fl, {
@@ -128,17 +128,17 @@ let I = function(e) {
     id: "QuestRewardTile_rewardTileStatic",
     children: t => (0, r.jsx)("img", {
       ref: t,
-      alt: (0, h.w8)(a.config),
-      className: o()(v.questRewardTileAsset, v.questRewardTileAssetStatic),
+      alt: (0, h.w8)(o.config),
+      className: a()(v.questRewardTileAsset, v.questRewardTileAssetStatic),
       src: L.url,
       onLoad: e.onLoadComplete
     })
   }), null == I ? (0, r.jsx)("div", {
-    className: o()(v.questRewardTile, n),
+    className: a()(v.questRewardTile, n),
     style: N,
     children: t
   }) : (0, r.jsxs)(c.P3F, {
-    className: o()(v.questRewardTileInteractive, v.questRewardTile, v.rewardHighlight, n),
+    className: a()(v.questRewardTileInteractive, v.questRewardTile, v.rewardHighlight, n),
     onClick: M,
     style: N,
     children: [t, P && !x && (0, r.jsx)(S, {

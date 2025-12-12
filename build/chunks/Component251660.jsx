@@ -6,31 +6,31 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk700582 = require("./700582.jsx"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk397767 = require("./397767.js");
+  Chunk695681 = require("./695681.js");
 let d = e => {
   let {
     className: t,
     giftRecipient: n
   } = e;
   return null == n ? null : (0, r.jsx)("div", {
-    className: a()(u.content, t),
-    children: (0, r.jsx)(o.gNt, {
+    className: o()(u.content, t),
+    children: (0, r.jsx)(a.gNt, {
       label: c.intl.string(c.t.xFn72s),
       children: (0, r.jsxs)("div", {
         className: u.giftRecipientInfo,
         children: [(0, r.jsx)(s.Z, {
           user: n,
-          size: o.EFr.SIZE_44
-        }), (0, r.jsx)(o.Text, {
+          size: a.EFr.SIZE_44
+        }), (0, r.jsx)(a.Text, {
           className: u.giftRecipientName,
           variant: "text-md/normal",
           children: l.ZP.getName(n)
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           className: u.giftRecipientTag,
           variant: "text-md/normal",
           children: l.ZP.getUserTag(n)

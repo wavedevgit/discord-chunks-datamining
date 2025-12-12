@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk617015 = require("./617015.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk535881 = require("./535881.js");
+  Chunk983703 = require("./983703.js");
 let g = function(e) {
   let {
     rows: t,
@@ -21,7 +21,7 @@ let g = function(e) {
     renderSection: g,
     footer: h,
     sectionFilter: m
-  } = e, b = e => {
+  } = e, _ = e => {
     let {
       section: r,
       row: i
@@ -29,7 +29,7 @@ let g = function(e) {
     if (null == l || null == i) return null;
     let a = l[i];
     return null == a ? null : n(a)
-  }, _ = i.useCallback((e, n) => {
+  }, b = i.useCallback((e, n) => {
     var r;
     let i = null == (r = t[e]) ? true : r[n];
     return m === d.pJs.ALL && (null == i ? true : i.giftIntentType) === p.hX.FRIEND_ANNIVERSARY ? u.fJ : u.NV
@@ -109,8 +109,8 @@ let g = function(e) {
               var n;
               v.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
             },
-            renderRow: b,
-            rowHeight: _,
+            renderRow: _,
+            rowHeight: b,
             renderSection: E,
             sectionHeight: u.aS,
             sections: T,

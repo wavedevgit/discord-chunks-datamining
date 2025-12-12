@@ -11,7 +11,7 @@ var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk392711 = require("./392711.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,7 +27,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -82,10 +82,10 @@ class f {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
     this._pluckNode(e);
     let r = null != t.parentId ? this.nodes[t.parentId] : this.root,
-      a = r.children.indexOf(t);
-    i()("folder" !== e.type || "folder" !== r.type, "[GUILDS TREE] Tried moving a folder (".concat(e.id, ") inside of another folder (").concat(r.id, ")")), i()(a >= 0, "[GUILDS TREE] target node (".concat(t.id, ") did not exist within its specified parent (").concat(t.parentId, ")"));
-    let o = +!!n;
-    return r.children = [...r.children], r.children.splice(a + o, 0, e), e.parentId = r.id, this.version++, this
+      o = r.children.indexOf(t);
+    i()("folder" !== e.type || "folder" !== r.type, "[GUILDS TREE] Tried moving a folder (".concat(e.id, ") inside of another folder (").concat(r.id, ")")), i()(o >= 0, "[GUILDS TREE] target node (".concat(t.id, ") did not exist within its specified parent (").concat(t.parentId, ")"));
+    let a = +!!n;
+    return r.children = [...r.children], r.children.splice(o + a, 0, e), e.parentId = r.id, this.version++, this
   }
   moveInto(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
@@ -108,7 +108,7 @@ class f {
     return i()(r >= 0, "[GUILDS TREE] existing node (".concat(e.id, ") did not exist within its specified parent (").concat(e.parentId, ")")), n.children = [...n.children], n.children.splice(r, 1, t), t.parentId = n.id, e.parentId = true, delete this.nodes[e.id], this.nodes[t.id] = t, this.version++, this
   }
   cloneNode(e) {
-    return (0, a.clone)(e)
+    return (0, o.clone)(e)
   }
   convertToFolder(e) {
     let t = d();
@@ -146,7 +146,7 @@ class f {
     i()(null != n, "[GUILDS TREE] source node (".concat(e.id, ") had a parent id (").concat(e.parentId, ") which contains no children")), t.children = n.filter(t => t !== e), e.parentId = true, this.version++
   }
   constructor() {
-    o(this, "root", true), o(this, "nodes", true), o(this, "version", true), this.root = {
+    a(this, "root", true), a(this, "nodes", true), a(this, "version", true), this.root = {
       type: "root",
       children: []
     }, this.nodes = {}, this.version = 0
@@ -164,14 +164,14 @@ function p(e, t) {
 }
 
 function _(e, t, n) {
-  var r, i, a;
+  var r, i, o;
   return {
     type: "folder",
     id: e.folderId,
     parentId: t,
     name: null != (r = e.folderName) ? r : true,
     color: null != (i = e.folderColor) ? i : true,
-    expanded: null != n ? n : null != (a = e.expanded) && a,
+    expanded: null != n ? n : null != (o = e.expanded) && o,
     children: []
   }
 }

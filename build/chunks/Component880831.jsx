@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 880831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T,
@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk823379 = require("./823379.js"),
   Chunk981631 = require("./981631.js"),
   Chunk217702 = require("./217702.js"),
-  Chunk445303 = require("./445303.js");
+  Chunk89019 = require("./89019.js");
 let I = 10 * Chunk70956.Z.Millis.SECOND;
 
 function Z(e) {
@@ -38,26 +38,26 @@ function Z(e) {
   } = e, {
     isBlocked: l,
     isIgnored: o
-  } = (0, c.cj)([O.Z], () => ({
-    isBlocked: O.Z.isBlockedForMessage(n),
-    isIgnored: O.Z.isIgnoredForMessage(n)
-  }), [n]), s = (0, g.Uj)(n), d = r.useContext(h.Z), [v, E] = r.useState(false), j = r.useCallback(e => {
-    "A" !== e.target.nodeName && (p.Z.updateChatOpen(n.channel_id, true), f.Z.jumpToMessage({
+  } = (0, c.cj)([_.Z], () => ({
+    isBlocked: _.Z.isBlockedForMessage(n),
+    isIgnored: _.Z.isIgnoredForMessage(n)
+  }), [n]), s = (0, g.Uj)(n), d = r.useContext(f.Z), [v, x] = r.useState(false), E = r.useCallback(e => {
+    "A" !== e.target.nodeName && (p.Z.updateChatOpen(n.channel_id, true), h.Z.jumpToMessage({
       channelId: n.channel_id,
       messageId: n.id,
       flash: true
     }))
-  }, [n.channel_id, n.id]), S = null != n.content && "" !== n.content ? (0, m.ZP)(n, {
+  }, [n.channel_id, n.id]), j = null != n.content && "" !== n.content ? (0, m.ZP)(n, {
     isInteracting: v
   }).content : null, {
     contentPlaceholder: I,
     renderedContent: Z,
     trailingIcon: T,
     leadingIcon: N
-  } = (0, b.f)(n, S, l, o, P.messageContent, {
+  } = (0, b.f)(n, j, l, o, P.messageContent, {
     trailingIconClass: P.messageContentTrailingIcon,
     leadingIconClass: P.messageContentLeadingIcon,
-    iconSize: _.WW
+    iconSize: S.WW
   }), A = (0, C.cv)(n), w = A.length > 0 ? A.map(e => (0, i.jsx)(y.Z, {
     className: P.sticker,
     size: 128,
@@ -67,12 +67,12 @@ function Z(e) {
   return (0, i.jsxs)(u.P3F, {
     className: P.toast,
     onMouseEnter: () => {
-      E(true)
+      x(true)
     },
     onMouseLeave: () => {
-      E(false)
+      x(false)
     },
-    onClick: j,
+    onClick: E,
     children: [(0, i.jsxs)("div", {
       className: a()(P.messageContentWrapper, {
         [P.mentioned]: n.mentioned
@@ -82,7 +82,7 @@ function Z(e) {
       }), null != w ? null : T]
     }), (0, i.jsx)("img", {
       alt: "",
-      src: (null == s ? true : s.guildMemberAvatar) != null && null != d ? (0, x.JM)({
+      src: (null == s ? true : s.guildMemberAvatar) != null && null != d ? (0, O.JM)({
         guildId: d,
         userId: n.author.id,
         avatar: s.guildMemberAvatar
@@ -97,8 +97,8 @@ function T(e) {
     channelId: t,
     className: n
   } = e, [l, p] = r.useState(false), {
-    toastsHidden: f,
-    toastMessages: h
+    toastsHidden: h,
+    toastMessages: f
   } = function(e) {
     var t;
     let {
@@ -106,7 +106,7 @@ function T(e) {
       isFrozen: i,
       count: l,
       lingerMs: a
-    } = e, [o, s] = r.useState([]), [u, p] = r.useState(false), f = r.useRef(null), h = r.useRef(true), m = r.useCallback(() => {
+    } = e, [o, s] = r.useState([]), [u, p] = r.useState(false), h = r.useRef(null), f = r.useRef(true), m = r.useCallback(() => {
       s([]), p(true)
     }, []);
     r.useEffect(() => {
@@ -116,23 +116,23 @@ function T(e) {
           message: i,
           optimistic: r
         } = e;
-        t !== n || i.type === S.uaV.STAGE_START || i.type === S.uaV.STAGE_END || i.type === S.uaV.STAGE_TOPIC || i.type === S.uaV.STAGE_SPEAKER || i.type === S.uaV.STAGE_RAISE_HAND || r || (clearTimeout(h.current), h.current = setTimeout(m, a), s(e => [...e, i.id]))
+        t !== n || i.type === j.uaV.STAGE_START || i.type === j.uaV.STAGE_END || i.type === j.uaV.STAGE_TOPIC || i.type === j.uaV.STAGE_SPEAKER || i.type === j.uaV.STAGE_RAISE_HAND || r || (clearTimeout(f.current), f.current = setTimeout(m, a), s(e => [...e, i.id]))
       }
       return d.Z.subscribe("MESSAGE_CREATE", e), () => {
         d.Z.unsubscribe("MESSAGE_CREATE", e)
       }
     }, [n, m, l, a]), r.useEffect(() => () => {
-      clearTimeout(h.current)
+      clearTimeout(f.current)
     }, []), r.useEffect(() => {
       o.length > 3 && s(e => {
         let t = e.length - 3;
         return [...e.slice(t)]
       })
-    }, [o]), i && null == f.current ? f.current = o : i || null == f.current || (f.current = null);
-    let g = null != (t = f.current) ? t : o;
+    }, [o]), i && null == h.current ? h.current = o : i || null == h.current || (h.current = null);
+    let g = null != (t = h.current) ? t : o;
     return {
       toastsHidden: u,
-      toastMessages: (0, c.Wu)([v.Z], () => g.map(e => v.Z.getMessage(n, e)), [n, g]).filter(j.lm)
+      toastMessages: (0, c.Wu)([v.Z], () => g.map(e => v.Z.getMessage(n, e)), [n, g]).filter(E.lm)
     }
   }({
     channelId: t,
@@ -147,18 +147,18 @@ function T(e) {
   }), r.useLayoutEffect(() => {
     let e = {},
       t = 0;
-    for (let i of h) {
+    for (let i of f) {
       var n;
       let r = null != (n = m.current[i.id]) ? n : 0;
       e[i.id] = t, t += r + 8
     }(0, o.isEqual)(e, y.current) || b(e)
-  }, [h]);
-  let O = h.map(e => ({
+  }, [f]);
+  let _ = f.map(e => ({
       message: e,
       height: m.current[e.id],
       y: g[e.id]
     })),
-    x = (0, u.Yzy)(O, {
+    O = (0, u.Yzy)(_, {
       keys: e => e.message.id,
       from: () => ({
         opacity: 0
@@ -187,13 +187,13 @@ function T(e) {
         } = e;
         return {
           opacity: 0,
-          translateY: f ? n : -(null != t ? t : 0) - 8,
+          translateY: h ? n : -(null != t ? t : 0) - 8,
           pointerEvents: "none"
         }
       }
     });
   return (0, i.jsx)(u.f6W, {
-    theme: S.BRd.DARK,
+    theme: j.BRd.DARK,
     children: e => (0, i.jsx)("div", {
       className: a()(n, e),
       onMouseEnter: () => {
@@ -202,7 +202,7 @@ function T(e) {
       onMouseLeave: () => {
         p(false)
       },
-      children: x((e, t) => (0, i.jsx)(s.animated.div, {
+      children: O((e, t) => (0, i.jsx)(s.animated.div, {
         ref: e => C(t.message.id, null != e ? e.offsetHeight : null),
         className: P.toastWrapper,
         style: e,

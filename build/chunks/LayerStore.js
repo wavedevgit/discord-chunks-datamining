@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,7 +41,7 @@ class d extends(r = Chunk442837.ZP.Store) {
     return s
   }
 }
-o(d, "displayName", "LayerStore");
+a(d, "displayName", "LayerStore");
 let f = new d(Chunk570140.Z, {
   LAYER_PUSH: l,
   LAYER_POP: c,

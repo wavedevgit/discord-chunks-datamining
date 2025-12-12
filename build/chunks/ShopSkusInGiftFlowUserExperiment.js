@@ -2,15 +2,15 @@
 /** chunk id: 109213, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G: () => o,
-  u: () => a
+  G: () => a,
+  u: () => o
 });
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js"),
-  a = function(e) {
+  o = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.POPULAR = 1] = "POPULAR", e[e.RECENT = 2] = "RECENT", e
   }({});
-let o = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   kind: "user",
   id: "2024-10_shop_skus_in_gift_flow",
   label: "Gift Collectibles in DM",

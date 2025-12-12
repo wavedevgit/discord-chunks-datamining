@@ -16,10 +16,10 @@ var Chunk54381 = require("./54381.js"),
 let f = e => {
   let {
     entrypoint: t
-  } = e, n = (0, s.N)(), f = (0, o.N)(), p = (0, l.HI)({
+  } = e, n = (0, s.N)(), f = (0, a.N)(), p = (0, l.HI)({
     trialOffer: n
   }), _ = (0, l.eW)();
   return (i.useEffect(() => {
-    true === p && (0, l.p9)(), true === _ && (0, l.ZL)(), (null != n || null != f) && (0, a.ab)(n, f)
+    true === p && (0, l.p9)(), true === _ && (0, l.ZL)(), (null != n || null != f) && (0, o.ab)(n, f)
   }, [n, f, p, _]), t === d.EZ.UserSettings) ? (0, r.jsx)(u.Z, {}) : t === d.EZ.ApplicationStoreHome ? (0, r.jsx)(c.Z, {}) : null
 }

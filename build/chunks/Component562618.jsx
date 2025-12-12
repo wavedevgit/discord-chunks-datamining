@@ -6,11 +6,11 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk313666 = require("./313666.jsx"),
   Chunk756715 = require("./756715.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk770966 = require("./770966.js");
+  Chunk254477 = require("./254477.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -39,15 +39,15 @@ function f(e) {
   let {
     title: n,
     body: i,
-    badge: o,
+    badge: a,
     className: u,
     textLink: d
   } = e, f = null == (t = null == d ? true : d.external) || t;
   return (0, r.jsxs)("div", {
-    className: a()(c.header, u),
+    className: o()(c.header, u),
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(p, {
-        badge: o
+        badge: a
       }), (0, r.jsx)(l.Heading, {
         variant: "heading-md/semibold",
         className: c.title,
@@ -74,10 +74,10 @@ function p(e) {
     badge: t
   } = e;
   if (null == t) return null;
-  let n = (0, o.R)(t);
+  let n = (0, a.R)(t);
   return (0, r.jsx)("div", {
     className: c.badgeContainer,
-    children: (0, r.jsx)(o.C, d({}, n))
+    children: (0, r.jsx)(a.C, d({}, n))
   })
 }
 

@@ -1,4 +1,4 @@
-/** Chunk was on 92504 **/
+/** Chunk was on 69844 **/
 /** chunk id: 133743, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Gp: () => u,
@@ -23,9 +23,9 @@ let s = () => {
     let {
       categoryId: t
     } = e, n = {
-      previousView: (0, i.Xh)()
+      previousView: (0, a.Xh)()
     };
-    (0, a.uL)(l.Z5c.GLOBAL_DISCOVERY_APPS_CATEGORY(t), {
+    (0, r.uL)(l.Z5c.GLOBAL_DISCOVERY_APPS_CATEGORY(t), {
       state: n
     })
   },
@@ -33,9 +33,9 @@ let s = () => {
     let {
       applicationId: t
     } = e, n = {
-      previousView: (0, i.Xh)()
+      previousView: (0, a.Xh)()
     };
-    (0, a.uL)(l.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(t), {
+    (0, r.uL)(l.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(t), {
       state: n
     })
   },
@@ -57,6 +57,6 @@ let s = () => {
       location: {
         state: t
       }
-    } = (0, a.s1)();
-    (0, a.dL)(e, t)
+    } = (0, r.s1)();
+    (0, r.dL)(e, t)
   }

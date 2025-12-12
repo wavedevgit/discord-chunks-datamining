@@ -10,7 +10,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk824203 = require("./824203.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk294721 = require("./294721.js");
+  Chunk342526 = require("./342526.js");
 
 function c(e) {
   var t;
@@ -22,7 +22,7 @@ function c(e) {
     f = null == (t = c.interactionMetadata) ? true : t.ephemerality_reason,
     p = () => u(c, true);
   if (null != f) {
-    let e = (0, a.i)(f);
+    let e = (0, o.i)(f);
     n = (0, r.jsx)("div", {
       className: l.userAppsBetaContent,
       children: s.intl.format(s.t.wx1tLQ, {
@@ -30,7 +30,7 @@ function c(e) {
         reason: e
       })
     })
-  } else n = c.type === o.uaV.STAGE_RAISE_HAND ? s.intl.format(s.t["qDAX++"], {
+  } else n = c.type === a.uaV.STAGE_RAISE_HAND ? s.intl.format(s.t["qDAX++"], {
     handleDelete: p
   }) : s.intl.format(s.t.uX3ecL, {
     count: 1,

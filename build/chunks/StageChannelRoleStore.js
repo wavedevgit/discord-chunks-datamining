@@ -5,7 +5,7 @@ require.d(exports, {
   ZP: () => M
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk592125 = require("./592125.js"),
@@ -52,10 +52,10 @@ function S(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = l.Z.getChannel(t),
     i = null == r ? true : r.getGuildId(),
-    a = d.Z.getGuild(i);
-  return null != a && null != r && r.isGuildStageVoice() ? {
+    o = d.Z.getGuild(i);
+  return null != o && null != r && r.isGuildStageVoice() ? {
     speaker: O(e, t),
-    moderator: n ? v(e, a, r) : null
+    moderator: n ? v(e, o, r) : null
   } : y
 }
 
@@ -113,7 +113,7 @@ function w(e) {
   let {
     voiceStates: t
   } = e;
-  return !a().isEmpty(b) && t.reduce((e, t) => {
+  return !o().isEmpty(b) && t.reduce((e, t) => {
     let {
       userId: n,
       channelId: r
@@ -158,10 +158,10 @@ class j extends(r = Chunk442837.ZP.Store) {
     var n, r;
     let i = arguments.length > 2 && true !== arguments[2] && arguments[2];
     if (null == e || null == t || e === (null == (n = f.default.getCurrentUser()) ? true : n.id) && (0, g.NE)()) return y;
-    let a = null == (r = b[t]) ? true : r[e];
-    if (null != a)
-      if (i && null == a.moderator) return I(e, t, true);
-      else return a;
+    let o = null == (r = b[t]) ? true : r[e];
+    if (null != o)
+      if (i && null == o.moderator) return I(e, t, true);
+      else return o;
     return I(e, t, i)
   }
 }

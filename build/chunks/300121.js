@@ -4,7 +4,7 @@
 require.r(exports);
 var Chunk540379 = require("./540379.js"),
   i = {};
-for (var a in Chunk540379) "default" !== a && (i[a] = (function(e) {
+for (var o in Chunk540379) "default" !== o && (i[o] = (function(e) {
   return r[e]
-}).bind(0, a));
+}).bind(0, o));
 require.d(exports, i)

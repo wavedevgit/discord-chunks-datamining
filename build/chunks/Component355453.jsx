@@ -1,5 +1,5 @@
 /** Chunk was on 58120 **/
-/** chunk id: 355453, original params: e,t,n (module,exports,require) **/
+/** chunk id: 355453, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   default: () => y
 }), require("./388685.js");
@@ -16,14 +16,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk710111 = require("./710111.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk784677 = require("./784677.js");
+  Chunk687213 = require("./687213.js");
 
-function y(e) {
-  var t;
+function y(t) {
+  var e;
   let {
     transitionState: n,
     onClose: y
-  } = e, m = (0, o.e7)([u.ZP], () => u.ZP.getKeybindForAction(f.kg4.SOUNDBOARD_HOLD)), [h, j] = i.useState(null != (t = null == m ? true : m.shortcut) ? t : []), x = i.useCallback(() => {
+  } = t, m = (0, o.e7)([b.ZP], () => b.ZP.getKeybindForAction(f.kg4.SOUNDBOARD_HOLD)), [h, j] = i.useState(null != (e = null == m ? true : m.shortcut) ? e : []), x = i.useCallback(() => {
     if (0 === h.length) return null != m && s.Z.deleteKeybind(m.id), y();
     if (null == m) s.Z.addKeybind({
       action: f.kg4.SOUNDBOARD_HOLD,
@@ -32,41 +32,41 @@ function y(e) {
       params: {}
     });
     else {
-      var e, t;
-      s.Z.setKeybind((e = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
+      var t, e;
+      s.Z.setKeybind((t = function(t) {
+        for (var e = 1; e < arguments.length; e++) {
+          var n = null != arguments[e] ? arguments[e] : {},
             r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+            return Object.getOwnPropertyDescriptor(n, t).enumerable
+          }))), r.forEach(function(e) {
             var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
+            r = n[e], e in t ? Object.defineProperty(t, e, {
               value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = r
+            }) : t[e] = r
           })
         }
-        return e
-      }({}, m), t = t = {
+        return t
+      }({}, m), e = e = {
         shortcut: h
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-        var n = Object.keys(e);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
+        var n = Object.keys(t);
         if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
+          var r = Object.getOwnPropertySymbols(t);
           n.push.apply(n, r)
         }
         return n
-      })(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-      }), e))
+      })(Object(e)).forEach(function(n) {
+        Object.defineProperty(t, n, Object.getOwnPropertyDescriptor(e, n))
+      }), t))
     }
     y()
   }, [m, y, h]);
-  i.useEffect(() => (d.Z.disable(), () => {
-    d.Z.enable()
+  i.useEffect(() => (u.Z.disable(), () => {
+    u.Z.enable()
   }), []);
   let v = i.useMemo(() => [{
     text: g.intl.string(g.t["ETE/oC"]),
@@ -109,7 +109,7 @@ function y(e) {
       onChange: j
     }), (0, r.jsx)(c.Anchor, {
       className: O.resetButton,
-      onClick: () => j((0, b.Kd)(p.D_)),
+      onClick: () => j((0, d.Kd)(p.D_)),
       children: g.intl.string(g.t["s7+2rQ"])
     })]
   })

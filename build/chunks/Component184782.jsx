@@ -28,23 +28,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk145598 = require("./145598.js");
+  Chunk557401 = require("./557401.js");
 let k = e => {
     var n;
     let {
       channelData: i,
       onClose: l,
       trackOptionClick: t
-    } = e, c = (0, o.e7)([x.Z], () => x.Z.getChannel(i.channel_id)), u = (0, o.e7)([g.Z], () => null != c && g.Z.can(v.Pl.VIEW_CHANNEL, c)), p = (0, o.e7)([m.ZP], () => null != i.emoji_id ? m.ZP.getCustomEmojiById(i.emoji_id) : null, [i.emoji_id]), _ = null != i.emoji_name ? h.ZP.getByName(h.ZP.convertSurrogateToName(i.emoji_name, false)) : null, N = null != (n = (0, r.KS)(c)) ? n : s.VL1;
-    return null != c && u ? (0, a.jsxs)(s.P3F, {
+    } = e, d = (0, o.e7)([x.Z], () => x.Z.getChannel(i.channel_id)), u = (0, o.e7)([g.Z], () => null != d && g.Z.can(v.Pl.VIEW_CHANNEL, d)), h = (0, o.e7)([m.ZP], () => null != i.emoji_id ? m.ZP.getCustomEmojiById(i.emoji_id) : null, [i.emoji_id]), p = null != i.emoji_name ? _.ZP.getByName(_.ZP.convertSurrogateToName(i.emoji_name, false)) : null, N = null != (n = (0, c.KS)(d)) ? n : s.VL1;
+    return null != d && u ? (0, a.jsxs)(s.P3F, {
       className: S.optionContainer,
       onClick: () => {
-        t(), l(), (0, j.XU)(c.guild_id, c.id)
+        t(), l(), (0, j.XU)(d.guild_id, d.id)
       },
-      children: [null != p || null != _ ? (0, a.jsx)(d.Z, {
-        emojiName: null != i.emoji_id ? null == p ? true : p.name : i.emoji_name,
-        animated: null != p && p.animated,
-        emojiId: null == p ? true : p.id,
+      children: [null != h || null != p ? (0, a.jsx)(r.Z, {
+        emojiName: null != i.emoji_id ? null == h ? true : h.name : i.emoji_name,
+        animated: null != h && h.animated,
+        emojiId: null == h ? true : h.id,
         autoplay: true,
         className: S.optionEmoji
       }) : (0, a.jsx)(N, {
@@ -63,7 +63,7 @@ let k = e => {
             size: "xxs",
             color: "currentColor"
           }), (0, a.jsx)("span", {
-            children: c.name
+            children: d.name
           })]
         })]
       }), (0, a.jsx)(C.Z, {
@@ -76,30 +76,30 @@ let k = e => {
     var n;
     let {
       onClose: i,
-      transitionState: d,
-      guildId: r,
+      transitionState: r,
+      guildId: c,
       isPreview: m
-    } = e, h = (0, o.e7)([N.Z], () => N.Z.getGuild(r)), {
+    } = e, _ = (0, o.e7)([N.Z], () => N.Z.getGuild(c)), {
       welcomeScreen: j,
       fetching: x,
       hasError: g
     } = (0, o.cj)([E.Z], () => ({
-      welcomeScreen: E.Z.get(r),
+      welcomeScreen: E.Z.get(c),
       fetching: E.Z.isFetching(),
       hasError: E.Z.hasError()
     })), C = (0, u.Dt)();
     l.useEffect(() => {
-      null == j && (0, f.RM)(r)
-    }, [r, j]), l.useEffect(() => {
+      null == j && (0, f.RM)(c)
+    }, [c, j]), l.useEffect(() => {
       false === x && true === g && null == j && i()
     }, [x, g, i, j]), l.useEffect(() => {
       j === E.a && false === x && i()
     }, [i, j, x]), l.useEffect(() => {
       true !== m && b.default.track(I.rMx.OPEN_MODAL, {
         type: Z._,
-        guild_id: r
+        guild_id: c
       })
-    }, [r, m]);
+    }, [c, m]);
     let v = l.useCallback(e => {
       var n;
       if (null == j || true === m) return;
@@ -110,15 +110,15 @@ let k = e => {
         i.push(e.description), a.push(e.channel_id), null != e.emoji_id && (l = true)
       }), b.default.track(I.rMx.GUILD_WELCOME_SCREEN_OPTION_SELECTED, {
         index: e,
-        guild_id: r,
+        guild_id: c,
         options: i,
         options_channel_ids: a,
         guild_description: j.description,
         has_custom_emojis: l
       })
-    }, [r, m, j]);
-    return null == h ? null : null == j ? (0, a.jsx)(t.Modal, {
-      transitionState: d,
+    }, [c, m, j]);
+    return null == _ ? null : null == j ? (0, a.jsx)(t.Modal, {
+      transitionState: r,
       "aria-label": T.intl.string(T.t.ZTNur7),
       title: T.intl.string(T.t.ZTNur7),
       onClose: () => Promise.resolve(i()),
@@ -127,7 +127,7 @@ let k = e => {
         type: s.$jN.Type.SPINNING_CIRCLE
       })
     }) : (0, a.jsx)(t.Modal, {
-      transitionState: d,
+      transitionState: r,
       "aria-labelledby": C,
       actions: [{
         text: T.intl.string(T.t.jizr82),
@@ -138,14 +138,14 @@ let k = e => {
       onClose: () => Promise.resolve(i()),
       children: (0, a.jsxs)("div", {
         className: S.modalContent,
-        children: [(0, a.jsx)(c.ZP, {
-          mask: c.ZP.Masks.SQUIRCLE,
+        children: [(0, a.jsx)(d.ZP, {
+          mask: d.ZP.Masks.SQUIRCLE,
           width: 64,
           height: 64,
           className: S.guildIcon,
-          children: (0, a.jsx)(p.Z, {
-            size: p.Z.Sizes.LARGER,
-            guild: h,
+          children: (0, a.jsx)(h.Z, {
+            size: h.Z.Sizes.LARGER,
+            guild: _,
             active: true,
             animate: true,
             tabIndex: false
@@ -155,10 +155,10 @@ let k = e => {
           className: S.header,
           id: C,
           children: T.intl.format(T.t["0aydCN"], {
-            guildName: h.name,
+            guildName: _.name,
             guildNameHook: (e, n) => (0, a.jsxs)("span", {
-              children: [(0, a.jsx)(_.Z, {
-                guild: h,
+              children: [(0, a.jsx)(p.Z, {
+                guild: _,
                 className: S.headerGuildBadge,
                 flowerStarClassName: S.flowerStar,
                 tooltipColor: s.aML.Colors.PRIMARY

@@ -1,7 +1,7 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 49941 **/
 /** chunk id: 311044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,31 +15,31 @@ var Chunk54381 = require("./54381.js"),
   Chunk252417 = require("./252417.jsx"),
   Chunk264481 = require("./264481.jsx"),
   Chunk661462 = require("./661462.jsx"),
-  Chunk98420 = require("./98420.js");
+  Chunk443680 = require("./443680.js");
 
-function m(e) {
+function b(e) {
   let {
     user: t,
     guildId: n,
-    channelId: m,
+    channelId: b,
     onClose: h
   } = e, {
     analyticsLocations: y
-  } = (0, l.ZP)(), {
+  } = (0, a.ZP)(), {
     context: O,
     trackUserProfileAction: v
-  } = (0, c.KZ)(), {
+  } = (0, s.KZ)(), {
     mutualFriends: j,
     mutualFriendsCount: x
-  } = (0, s.Z)(t), P = (0, a.Z)();
+  } = (0, c.Z)(t), P = (0, l.Z)();
   return i.useEffect(() => {
     (0, u.Z)(t.id, P)
   }, [t.id, P]), (0, r.jsx)(p.F, {
-    className: b.scroller,
+    className: m.scroller,
     children: null == j ? Array.from({
       length: null != x ? x : 10
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: b.friendsLoadingItem,
+      className: m.friendsLoadingItem,
       children: [(0, r.jsx)(o.ZT, {
         width: 40,
         opacity: .08
@@ -51,13 +51,13 @@ function m(e) {
       let {
         key: t,
         user: i,
-        status: a
+        status: l
       } = e;
       return (0, r.jsx)(f.Z, {
         user: i,
-        status: a,
+        status: l,
         guildId: n,
-        channelId: m,
+        channelId: b,
         onSelect: () => {
           var e, t;
           null == h || h(), v({

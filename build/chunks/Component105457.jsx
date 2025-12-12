@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 105457, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -13,8 +13,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk868691 = require("./868691.js"),
-  Chunk960324 = require("./960324.js");
+  Chunk960296 = require("./960296.js"),
+  Chunk430864 = require("./430864.js");
 
 function m(e) {
   let {
@@ -48,13 +48,13 @@ function m(e) {
       type: C
     }, (0, s.v_)(b)))
   }, [C, b]);
-  let O = r.useCallback(() => {
+  let _ = r.useCallback(() => {
       null == m || m(), t()
     }, [m, t]),
-    x = r.useCallback(() => {
+    O = r.useCallback(() => {
       null == g || g(), t()
     }, [g, t]),
-    E = r.useRef(null);
+    x = r.useRef(null);
   return r.useEffect(() => {
     let e, t = c.Z.theme,
       i = false;
@@ -62,8 +62,8 @@ function m(e) {
       let [{
         default: r
       }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, a.wj)(t) ? v.dark() : v.light()]);
-      i || null == E.current || (e = r.loadAnimation({
-        container: E.current,
+      i || null == x.current || (e = r.loadAnimation({
+        container: x.current,
         renderer: "svg",
         loop: true,
         autoplay: true,
@@ -75,63 +75,63 @@ function m(e) {
   }, [v]), (0, i.jsx)(o.VqE, {
     "aria-labelledby": "content-warning-popout-label",
     children: (0, i.jsxs)("form", {
-      className: f.contentWarningPopout,
-      onSubmit: O,
+      className: h.contentWarningPopout,
+      onSubmit: _,
       children: [(0, i.jsxs)("div", {
-        className: f.body,
+        className: h.body,
         children: [null != v && (0, i.jsx)("div", {
-          className: f.animation,
-          ref: E
+          className: h.animation,
+          ref: x
         }), (0, i.jsxs)("div", {
-          className: f.content,
+          className: h.content,
           children: [(0, i.jsx)("div", {
-            className: f.header,
+            className: h.header,
             children: p.intl.string(p.t.mY3Y38)
           }), (0, i.jsx)(o.Text, {
             id: "content-warning-popout-label",
-            className: h.markup,
+            className: f.markup,
             variant: "text-sm/normal",
             children: y.body
           }), (0, i.jsxs)("div", {
-            className: f.buttonWrapper,
+            className: h.buttonWrapper,
             children: [(0, i.jsxs)("div", {
-              className: f.buttonContainer,
+              className: h.buttonContainer,
               children: [(0, i.jsx)("div", {
-                className: f.button,
+                className: h.button,
                 children: (0, i.jsx)(o.Button, {
                   variant: "secondary",
-                  onClick: x,
+                  onClick: O,
                   text: p.intl.string(p.t.fsBWmS)
                 })
               }), (0, i.jsx)(o.Text, {
                 variant: "text-xs/normal",
-                className: f.buttonHint,
+                className: h.buttonHint,
                 children: p.intl.format(p.t["0LzVPZ"], {})
               })]
             }), (0, i.jsxs)("div", {
-              className: f.buttonContainer,
+              className: h.buttonContainer,
               children: [(0, i.jsx)("div", {
-                className: f.button,
+                className: h.button,
                 children: (0, i.jsx)(o.Button, {
                   variant: "primary",
-                  onClick: O,
+                  onClick: _,
                   text: p.intl.string(p.t.KJnHq3),
                   autoFocus: true
                 })
               }), (0, i.jsx)(o.Text, {
                 variant: "text-xs/normal",
-                className: f.buttonHint,
+                className: h.buttonHint,
                 children: p.intl.format(p.t.khjqdH, {})
               })]
             })]
           })]
         })]
       }), null != y.footer && "" !== y.footer ? (0, i.jsxs)("div", {
-        className: f.footer,
+        className: h.footer,
         children: [(0, i.jsx)(o.d3s, {
           size: "xs",
           color: l.Z.unsafe_rawColors.PRIMARY_400.css,
-          className: f.icon
+          className: h.icon
         }), (0, i.jsx)(o.Text, {
           variant: "text-sm/normal",
           children: y.footer

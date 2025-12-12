@@ -4,9 +4,9 @@
 var Chunk65183 = require("./65183.js"),
   Chunk357415 = require("./357415.js"),
   Chunk581079 = require("./581079.js"),
-  o = Chunk65183.Repeat;
+  a = Chunk65183.Repeat;
 module.exports = function(e, t, n, r) {
-  t.isCollapsed() || a(false);
+  t.isCollapsed() || o(false);
   var s = null;
   if (null != n && (s = n.length), null == s || 0 === s) return e;
   var l = e.getBlockMap(),
@@ -16,7 +16,7 @@ module.exports = function(e, t, n, r) {
     f = d.getText(),
     p = d.merge({
       text: f.slice(0, u) + n + f.slice(u, d.getLength()),
-      characterList: i(d.getCharacterList(), o(r, s).toList(), u)
+      characterList: i(d.getCharacterList(), a(r, s).toList(), u)
     }),
     _ = u + s;
   return e.merge({

@@ -56,17 +56,17 @@ function m(e, t) {
 function h(e) {
   return ({
     [u.h7.AUDIO_INPUT]: {
-      setDevice: o.Z.setInputDevice,
+      setDevice: a.Z.setInputDevice,
       getLabel: () => d.intl.string(d.t.ElbIXN),
       getLocation: e => "".concat(e, ".useInputDeviceMenuItems")
     },
     [u.h7.AUDIO_OUTPUT]: {
-      setDevice: o.Z.setOutputDevice,
+      setDevice: a.Z.setOutputDevice,
       getLabel: () => d.intl.string(d.t["6Ww0iH"]),
       getLocation: e => "".concat(e, ".useOutputDeviceMenuItems")
     },
     [u.h7.VIDEO_INPUT]: {
-      setDevice: o.Z.setVideoDevice,
+      setDevice: a.Z.setVideoDevice,
       getLabel: () => d.intl.string(d.t.F122Gz),
       getLocation: e => "".concat(e, ".useVideoDeviceMenuItems")
     }
@@ -77,7 +77,7 @@ function g(e) {
   let {
     deviceType: t,
     analyticsLocations: n,
-    asSubmenu: o = false,
+    asSubmenu: a = false,
     onDeviceSelect: u,
     showAllDevices: f = false,
     selectedDeviceId: _,
@@ -95,30 +95,30 @@ function g(e) {
     name: R
   } = (0, l.p6)(t), w = null != _ ? _ : P, D = N.map(e => {
     let i, {
-        id: o,
+        id: a,
         disabled: s,
         name: c
       } = e,
       d = c,
       f = (0, l.rX)(c);
-    return null != f && (d = f.prefix, i = f.subName), (0, r.jsx)(a.k5B, p({
-      id: "".concat(t, "-").concat(o),
+    return null != f && (d = f.prefix, i = f.subName), (0, r.jsx)(o.k5B, p({
+      id: "".concat(t, "-").concat(a),
       group: "".concat(t, "-devices"),
       disabled: s,
       label: d,
-      subtext: null != i && (0, r.jsx)(a.Text, {
+      subtext: null != i && (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
         children: i
       }),
-      checked: o === w,
+      checked: a === w,
       action: () => {
         var e;
-        (null == (e = null == u ? true : u(o)) || e) && y(o, {
+        (null == (e = null == u ? true : u(a)) || e) && y(a, {
           analyticsLocations: n
         })
       }
-    }, null == b ? true : b(o)), "".concat(t, "-").concat(o))
-  }), x = (0, r.jsx)(a.sNh, {
+    }, null == b ? true : b(a)), "".concat(t, "-").concat(a))
+  }), x = (0, r.jsx)(o.sNh, {
     id: "SHOW_MORE",
     label: d.intl.string(d.t.E99UMh),
     dontCloseOnAction: true,
@@ -132,13 +132,13 @@ function g(e) {
       })
     }
   }), L = !S && (null == A ? true : A.length) > 0;
-  return o ? (0, r.jsxs)(a.sNh, m(p({
+  return a ? (0, r.jsxs)(o.sNh, m(p({
     id: "".concat(t, "-devices"),
     label: O(),
     subtext: R
   }, E), {
     children: [D, L && x]
-  })) : (0, r.jsxs)(a.kSQ, m(p({
+  })) : (0, r.jsxs)(o.kSQ, m(p({
     label: O()
   }, g), {
     children: [D, L && x]

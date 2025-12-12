@@ -9,13 +9,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk324060 = require("./324060.js"),
-  Chunk766158 = require("./766158.js");
+  Chunk415842 = require("./415842.js");
 
 function c(e) {
   let {
     children: t
-  } = e, n = (0, i.useContext)(s.Q), c = (0, o.dQu)(n.primaryColor).hex();
-  return (0, r.jsx)(a.xvT, {
+  } = e, n = (0, i.useContext)(s.Q), c = (0, a.dQu)(n.primaryColor).hex();
+  return (0, r.jsx)(o.xvT, {
     variant: "heading-xxl/medium",
     color: "none",
     className: l.text,

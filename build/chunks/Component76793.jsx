@@ -19,7 +19,7 @@ var Chunk892001 = require("./892001.js"),
   Chunk594174 = require("./594174.js"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk771722 = require("./771722.js");
+  Chunk147111 = require("./147111.js");
 
 function g(e) {
   let {
@@ -27,7 +27,7 @@ function g(e) {
     count: n
   } = e, {
     analyticsLocations: d
-  } = (0, c.ZP)(), g = (0, a.e7)([p.default], () => p.default.getUser(t)), E = _.ZP.getFormattedName(g), b = i.useCallback(() => {
+  } = (0, c.ZP)(), g = (0, o.e7)([p.default], () => p.default.getUser(t)), E = _.ZP.getFormattedName(g), b = i.useCallback(() => {
     (0, u.Zn)(t)
   }, [t]), y = i.useCallback(() => (0, f.openUserProfileModal)({
     userId: t,
@@ -40,28 +40,28 @@ function g(e) {
     children: [null != g && (0, r.jsx)(l.Z, {
       className: h.avatar,
       user: g,
-      size: o.EFr.SIZE_40
+      size: a.EFr.SIZE_40
     }), (0, r.jsxs)("div", {
       className: h.text,
-      children: [(0, r.jsx)(o.P3F, {
+      children: [(0, r.jsx)(a.P3F, {
         className: h.username,
         onClick: y,
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           color: "interactive-text-active",
           children: E
         })
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-md/medium",
         color: "text-default",
         children: m.intl.format(m.t["/MBjYF"], {
           count: n
         })
       })]
-    }), (0, r.jsx)(o.P3F, {
+    }), (0, r.jsx)(a.P3F, {
       onClick: b,
       className: h.sectionIconContainer,
-      children: (0, r.jsx)(o.XHJ, {
+      children: (0, r.jsx)(a.XHJ, {
         size: "xs"
       })
     })]
@@ -72,32 +72,32 @@ function E(e) {
   let {
     className: t,
     userId: n,
-    verification: a,
+    verification: o,
     index: s
-  } = e, l = (0, u.bo)(a.timestamp), c = i.useCallback(() => {
-    (0, u.ZU)(n, a.verifiedKey)
-  }, [a.verifiedKey, n]);
+  } = e, l = (0, u.bo)(o.timestamp), c = i.useCallback(() => {
+    (0, u.ZU)(n, o.verifiedKey)
+  }, [o.verifiedKey, n]);
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsxs)("div", {
       className: h.text,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/semibold",
         color: "interactive-text-active",
         children: m.intl.format(m.t.N4qBBO, {
           index: s + 1
         })
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-default",
         children: l
       })]
-    }), (0, r.jsx)(o.P3F, {
+    }), (0, r.jsx)(a.P3F, {
       className: h.icon,
       onClick: c,
-      children: (0, r.jsx)(o.Dio, {
+      children: (0, r.jsx)(a.Dio, {
         size: "md",
-        color: o.TVs.colors.INTERACTIVE_TEXT_DEFAULT
+        color: a.TVs.colors.INTERACTIVE_TEXT_DEFAULT
       })
     })]
   })
@@ -111,16 +111,16 @@ function b(e) {
     children: [(0, r.jsx)(g, {
       userId: t,
       count: n.length
-    }), n.map((e, a) => (0, r.jsxs)(i.Fragment, {
+    }), n.map((e, o) => (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(E, {
         className: h.row,
         userId: t,
-        index: a,
+        index: o,
         verification: e
-      }), a !== n.length - 1 && (0, r.jsx)("div", {
+      }), o !== n.length - 1 && (0, r.jsx)("div", {
         className: h.divider
       })]
-    }, "".concat(a, "-").concat(e.timestamp)))]
+    }, "".concat(o, "-").concat(e.timestamp)))]
   })
 }
-require("./478411.js")
+require("./197571.js")

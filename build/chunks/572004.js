@@ -19,6 +19,6 @@ async function d(e, t, n) {
   try {
     l ? s.ZP.copy(e) : await window.navigator.clipboard.writeText(e), null == t || t()
   } catch (e) {
-    null == n || n(e), o.Z.captureException(e)
+    null == n || n(e), a.Z.captureException(e)
   }
 }

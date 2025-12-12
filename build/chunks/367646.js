@@ -57,7 +57,7 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 var _ = function() {
-  function e(t, n, o) {
+  function e(t, n, a) {
     var l = this;
     u(this, e), p(this, "options", true), p(this, "actions", true), p(this, "monitor", true), p(this, "registry", true), p(this, "enterLeaveCounter", true), p(this, "sourcePreviewNodes", new Map), p(this, "sourcePreviewNodeOptions", new Map), p(this, "sourceNodes", new Map), p(this, "sourceNodeOptions", new Map), p(this, "dragStartSourceIds", null), p(this, "dropTargetIds", []), p(this, "dragEnterTargetIds", []), p(this, "currentNativeSource", null), p(this, "currentNativeHandle", null), p(this, "currentDragSourceNode", null), p(this, "altKeyPressed", false), p(this, "mouseMoveTimeoutTimer", null), p(this, "asyncEndDragFrameId", null), p(this, "dragOverTargetIds", null), p(this, "getSourceClientOffset", function(e) {
       var t = l.sourceNodes.get(e);
@@ -82,7 +82,7 @@ var _ = function() {
           clientOffset: n
         });
         var r = e.dataTransfer,
-          o = (0, a.w)(r);
+          a = (0, o.w)(r);
         if (l.monitor.isDragging()) {
           if (r && "function" == typeof r.setDragImage) {
             var s = l.monitor.getSourceId(),
@@ -112,7 +112,7 @@ var _ = function() {
           l.setCurrentDragSourceNode(e.target), l.getCurrentSourcePreviewNodeOptions().captureDraggingState ? l.actions.publishDragSource() : setTimeout(function() {
             return l.actions.publishDragSource()
           }, 0)
-        } else if (o) l.beginDragNativeItem(o);
+        } else if (a) l.beginDragNativeItem(a);
         else {
           if (r && !r.types && (e.target && !e.target.hasAttribute || !e.target.hasAttribute("draggable"))) return;
           e.preventDefault()
@@ -123,7 +123,7 @@ var _ = function() {
     }), p(this, "handleTopDragEnterCapture", function(e) {
       if (l.dragEnterTargetIds = [], !(!l.enterLeaveCounter.enter(e.target) || l.monitor.isDragging())) {
         var t = e.dataTransfer,
-          n = (0, a.w)(t);
+          n = (0, o.w)(t);
         n && l.beginDragNativeItem(n, t)
       }
     }), p(this, "handleTopDragEnter", function(e) {
@@ -158,7 +158,7 @@ var _ = function() {
       if (l.dropTargetIds = [], l.isDraggingNativeItem()) {
         var t;
         e.preventDefault(), null == (t = l.currentNativeSource) || t.loadDataTransfer(e.dataTransfer)
-      } else(0, a.w)(e.dataTransfer) && e.preventDefault();
+      } else(0, o.w)(e.dataTransfer) && e.preventDefault();
       l.enterLeaveCounter.reset()
     }), p(this, "handleTopDrop", function(e) {
       var t = l.dropTargetIds;
@@ -170,7 +170,7 @@ var _ = function() {
     }), p(this, "handleSelectStart", function(e) {
       var t = e.target;
       "function" == typeof t.dragDrop && ("INPUT" === t.tagName || "SELECT" === t.tagName || "TEXTAREA" === t.tagName || t.isContentEditable || (e.preventDefault(), t.dragDrop()))
-    }), this.options = new s.r(n, o), this.actions = t.getActions(), this.monitor = t.getMonitor(), this.registry = t.getRegistry(), this.enterLeaveCounter = new r.e(this.isNodeInDocument)
+    }), this.options = new s.r(n, a), this.actions = t.getActions(), this.monitor = t.getMonitor(), this.registry = t.getRegistry(), this.enterLeaveCounter = new r.e(this.isNodeInDocument)
   }
   return f(module, [{
     key: "profile",
@@ -234,12 +234,12 @@ var _ = function() {
       var i = function(t) {
           return r.handleDragStart(t, e)
         },
-        a = function(e) {
+        o = function(e) {
           return r.handleSelectStart(e)
         };
-      return t.setAttribute("draggable", "true"), t.addEventListener("dragstart", i), t.addEventListener("selectstart", a),
+      return t.setAttribute("draggable", "true"), t.addEventListener("dragstart", i), t.addEventListener("selectstart", o),
         function() {
-          r.sourceNodes.delete(e), r.sourceNodeOptions.delete(e), t.removeEventListener("dragstart", i), t.removeEventListener("selectstart", a), t.setAttribute("draggable", "false")
+          r.sourceNodes.delete(e), r.sourceNodeOptions.delete(e), t.removeEventListener("dragstart", i), t.removeEventListener("selectstart", o), t.setAttribute("draggable", "false")
         }
     }
   }, {
@@ -252,12 +252,12 @@ var _ = function() {
         i = function(t) {
           return n.handleDragOver(t, e)
         },
-        a = function(t) {
+        o = function(t) {
           return n.handleDrop(t, e)
         };
-      return t.addEventListener("dragenter", r), t.addEventListener("dragover", i), t.addEventListener("drop", a),
+      return t.addEventListener("dragenter", r), t.addEventListener("dragover", i), t.addEventListener("drop", o),
         function() {
-          t.removeEventListener("dragenter", r), t.removeEventListener("dragover", i), t.removeEventListener("drop", a)
+          t.removeEventListener("dragenter", r), t.removeEventListener("dragover", i), t.removeEventListener("drop", o)
         }
     }
   }, {
@@ -299,13 +299,13 @@ var _ = function() {
     value: function() {
       var e = this.monitor.getItemType();
       return Object.keys(Chunk778882).some(function(t) {
-        return o[t] === e
+        return a[t] === e
       })
     }
   }, {
     key: "beginDragNativeItem",
     value: function(e, t) {
-      this.clearCurrentDragSourceNode(), this.currentNativeSource = (0, a.f)(e, t), this.currentNativeHandle = this.registry.addSource(e, this.currentNativeSource), this.actions.beginDrag([this.currentNativeHandle])
+      this.clearCurrentDragSourceNode(), this.currentNativeSource = (0, o.f)(e, t), this.currentNativeHandle = this.registry.addSource(e, this.currentNativeSource), this.actions.beginDrag([this.currentNativeHandle])
     }
   }, {
     key: "setCurrentDragSourceNode",

@@ -1,25 +1,25 @@
 /** Chunk was on 64767 **/
 /** chunk id: 754887, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => c
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk639777 = require("./639777.js"),
   Chunk507155 = require("./507155.jsx"),
-  Chunk340236 = require("./340236.js");
+  Chunk726527 = require("./726527.js");
 
-function d(e) {
+function c(e) {
   var t, r, {
-      guildId: d,
-      title: c,
+      guildId: c,
+      title: d,
       description: u,
       powerups: p,
       footerInfoText: f,
-      footerAction: b
+      footerAction: v
     } = e,
-    v = function(e, t) {
+    b = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -34,7 +34,7 @@ function d(e) {
       }
       return o
     }(e, ["guildId", "title", "description", "powerups", "footerInfoText", "footerAction"]);
-  let j = (0, i.Z)(d),
+  let j = (0, i.Z)(c),
     m = null != f && f.length > 0 ? (0, n.jsx)("div", {
       className: l.footerInfoContainer,
       children: (0, n.jsx)(a.Text, {
@@ -60,15 +60,15 @@ function d(e) {
     }
     return e
   }({
-    title: c,
+    title: d,
     subtitle: u,
     actionBarInput: m,
-    actions: null != b ? [b] : []
-  }, v), r = r = {
+    actions: null != v ? [v] : []
+  }, b), r = r = {
     children: (0, n.jsx)("div", {
       className: l.perkCardsContainer,
       children: p.map(e => (0, n.jsx)(s.Z, {
-        guildId: d,
+        guildId: c,
         powerup: e,
         canUseBoosts: null != j && j
       }, e.skuId))

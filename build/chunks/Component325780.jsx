@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk483566 = require("./483566.jsx"),
   Chunk573830 = require("./573830.jsx");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -51,8 +51,8 @@ function u(e, t) {
   if (null == e) return {};
   var n, r, i = d(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -60,8 +60,8 @@ function u(e, t) {
 function d(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -69,18 +69,18 @@ function f(e) {
   var {
     checked: t,
     disabled: n,
-    id: o,
+    id: a,
     onChange: l,
     focusProps: d,
     hasIcon: f = false
   } = e, p = u(e, ["checked", "disabled", "id", "onChange", "focusProps", "hasIcon"]);
   return (0, r.jsx)(i.g, c(s({}, p), {
-    id: o,
+    id: a,
     disabled: n,
     layout: "horizontal",
     interactiveLabel: true,
     auxiliaryContentPosition: "under-label",
-    children: e => (0, r.jsx)(a.J, {
+    children: e => (0, r.jsx)(o.J, {
       focusProps: d,
       id: e.controlId,
       checked: t,

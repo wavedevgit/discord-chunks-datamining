@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 415104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk439826 = require("./439826.jsx"),
   Chunk43779 = require("./43779.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk645455 = require("./645455.js");
+  Chunk88036 = require("./88036.js");
 
 function v(e) {
   var t, n;
@@ -28,31 +28,31 @@ function v(e) {
     questContent: u,
     contentPosition: v,
     rowIndex: j,
-    impressionRef: y,
-    sourceQuestContent: C
-  } = e, [_, S] = r.useState(false), [E, O] = r.useState([]), T = (0, c.qb)(i), N = r.useMemo(() => (0, d.q8)(i), [i]), P = (0, s._F)(), w = r.useCallback(() => {
+    impressionRef: _,
+    sourceQuestContent: y
+  } = e, [C, S] = r.useState(false), [E, O] = r.useState([]), T = (0, c.qb)(i), N = r.useMemo(() => (0, d.q8)(i), [i]), P = (0, s._F)(), w = r.useCallback(() => {
     S(true), P({
       questId: i.id,
-      event: b.rMx.QUEST_HOVER,
+      event: g.rMx.QUEST_HOVER,
       properties: {
         content_id: u,
         content_name: (0, s._b)(u),
         content_position: v
       },
-      sourceQuestContent: C
+      sourceQuestContent: y
     }), N && (0, m.loadVideoQuestModal)()
-  }, [P, i.id, u, N, C, v]), I = r.useCallback(() => {
+  }, [P, i.id, u, N, y, v]), I = r.useCallback(() => {
     S(false), P({
       questId: i.id,
-      event: b.rMx.QUEST_HOVER_OFF,
+      event: g.rMx.QUEST_HOVER_OFF,
       properties: {
         content_id: u,
         content_name: (0, s._b)(u),
         content_position: v
       },
-      sourceQuestContent: C
+      sourceQuestContent: y
     })
-  }, [P, i.id, u, C, v]), k = r.useContext(h.t), {
+  }, [P, i.id, u, y, v]), k = r.useContext(h.t), {
     visibilityElementRef: R,
     almostVisibleInViewport: A
   } = function(e) {
@@ -71,29 +71,29 @@ function v(e) {
   return (0, a.jsxs)("div", {
     id: "quest-tile-".concat(i.id),
     ref: e => {
-      y.current = e, R.current = e
+      _.current = e, R.current = e
     },
-    className: l()(g.container, o),
+    className: l()(b.container, o),
     onMouseEnter: w,
     onMouseLeave: I,
     onFocus: w,
     onBlur: I,
-    children: [(0, a.jsx)(f.Z, {
+    children: [(0, a.jsx)(x.Z, {
       quest: i,
-      isHovering: _,
+      isHovering: C,
       errorHints: E,
       warningHints: T,
       isVisibleInViewport: A,
-      sourceQuestContent: C
-    }), (0, a.jsx)(x.Z, {
+      sourceQuestContent: y
+    }), (0, a.jsx)(f.Z, {
       quest: i,
       questContent: u,
-      isHovering: _,
+      isHovering: C,
       contentPosition: v,
       rowIndex: j,
       onReceiveErrorHints: O,
       isVisibleInViewport: A,
-      sourceQuestContent: C
+      sourceQuestContent: y
     })]
   })
 }

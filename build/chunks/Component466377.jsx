@@ -14,7 +14,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk990547 = require("./990547.js"),
   Chunk748780 = require("./748780.js"),
@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk602091 = require("./602091.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk797720 = require("./797720.js");
+  Chunk818033 = require("./818033.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,8 +73,8 @@ function T(e, t) {
   if (null == e) return {};
   var n, r, i = C(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -82,17 +82,17 @@ function T(e, t) {
 function C(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var A = function(e) {
   return e.SMALL = "small", e.MEDIUM = "medium", e.LARGE = "large", e.DYNAMIC = "dynamic", e
 }({});
 let N = Object.freeze({
-  small: Chunk797720.small,
-  medium: Chunk797720.medium,
-  large: Chunk797720.large,
+  small: Chunk818033.small,
+  medium: Chunk818033.medium,
+  large: Chunk818033.large,
   dynamic: null
 });
 var P = function(e) {
@@ -102,7 +102,7 @@ var P = function(e) {
 function R(e) {
   var t, {
       transitionState: n,
-      children: a,
+      children: o,
       size: u = "small",
       role: f = "dialog",
       className: _,
@@ -147,7 +147,7 @@ function R(e) {
       "aria-labelledby": L ? true : U.headerId
     }, P), {
       children: (0, r.jsx)(s.animated.div, {
-        className: o()(_, y.root, N[u], {
+        className: a()(_, y.root, N[u], {
           [y.fullscreenOnMobile]: h,
           [y.rootWithShadow]: !b
         }),
@@ -155,7 +155,7 @@ function R(e) {
         style: D,
         children: (0, r.jsx)(d.JcV, {
           containerRef: x,
-          children: a
+          children: o
         })
       })
     }))
@@ -163,7 +163,7 @@ function R(e) {
 }
 
 function w(e) {
-  var t, n, a, s, l;
+  var t, n, o, s, l;
   let {
     headerId: c,
     headerIdIsManaged: u
@@ -173,9 +173,9 @@ function w(e) {
     shrink: 0,
     direction: null != (t = e.direction) ? t : h.Z.Direction.HORIZONTAL,
     justify: null != (n = e.justify) ? n : h.Z.Justify.START,
-    align: null != (a = e.align) ? a : h.Z.Align.CENTER,
+    align: null != (o = e.align) ? o : h.Z.Align.CENTER,
     wrap: null != (s = e.wrap) ? s : h.Z.Wrap.NO_WRAP,
-    className: o()(y.header, e.className, {
+    className: a()(y.header, e.className, {
       [y.separator]: null == (l = e.separator) || l
     }),
     id: u ? true : c,
@@ -199,11 +199,11 @@ function x(e) {
     className: t,
     children: n,
     scrollerRef: i,
-    scrollbarType: a
-  } = e, s = T(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = D(a);
+    scrollbarType: o
+  } = e, s = T(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = D(o);
   return (0, r.jsx)(l, I(v({
     "data-migration-pending": true,
-    className: o()(y.content, t),
+    className: a()(y.content, t),
     ref: i
   }, s), {
     children: (0, r.jsx)(_.y5t, {
@@ -213,15 +213,15 @@ function x(e) {
 }
 
 function L(e) {
-  var t, n, i, a, s;
+  var t, n, i, o, s;
   return (0, r.jsx)(h.Z, {
     grow: 0,
     shrink: 0,
     direction: null != (t = e.direction) ? t : h.Z.Direction.HORIZONTAL_REVERSE,
     justify: null != (n = e.justify) ? n : h.Z.Justify.START,
     align: null != (i = e.align) ? i : h.Z.Align.STRETCH,
-    wrap: null != (a = e.wrap) ? a : h.Z.Wrap.NO_WRAP,
-    className: o()(y.footer, e.className, {
+    wrap: null != (o = e.wrap) ? o : h.Z.Wrap.NO_WRAP,
+    className: a()(y.footer, e.className, {
       [y.footerSeparator]: null == (s = e.separator) || s
     }),
     children: (0, r.jsx)(_.y5t, {
@@ -238,17 +238,17 @@ function j(e) {
     look: f.zx.Looks.BLANK,
     size: f.zx.Sizes.NONE,
     onClick: e.onClick,
-    innerClassName: o()(e.innerClassName, {
+    innerClassName: a()(e.innerClassName, {
       [y.closeWithCircleBackground]: e.withCircleBackground
     }),
-    className: o()(e.className, {
+    className: a()(e.className, {
       [y.hideOnFullscreen]: e.hideOnFullscreen,
       [y.close]: !e.withCircleBackground
     }),
     children: (0, r.jsx)(u.D, {
       size: "md",
       color: "currentColor",
-      className: o()(e.innerClassName, y.closeIcon)
+      className: a()(e.innerClassName, y.closeIcon)
     })
   })
 }

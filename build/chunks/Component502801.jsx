@@ -1,4 +1,4 @@
-/** Chunk was on 26213 **/
+/** Chunk was on 25881 **/
 /** chunk id: 502801, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => E
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  c = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk952265 = require("./952265.js"),
   Chunk481060 = require("./481060.js"),
   Chunk904245 = require("./904245.js"),
@@ -31,29 +31,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk655428 = require("./655428.js");
+  Chunk698755 = require("./698755.js");
 
 function R(e) {
   var t;
   let {
     clips: n
-  } = e, r = n[0], i = r.thumbnail, l = null;
-  return "" !== i && (l = (0, a.jsx)("div", {
-    className: c()(L.attachmentPreview, L.attachmentPreviewVideo),
-    children: (0, a.jsx)(b.ZP, {
+  } = e, r = n[0], i = r.thumbnail, o = null;
+  return "" !== i && (o = (0, a.jsx)("div", {
+    className: l()(L.attachmentPreview, L.attachmentPreviewVideo),
+    children: (0, a.jsx)(p.ZP, {
       className: L.thumbnail,
       src: i,
       width: 56,
       height: 56
     })
-  }), n.length > 1 && (l = (0, a.jsxs)("div", {
+  }), n.length > 1 && (o = (0, a.jsxs)("div", {
     className: L.attachmentPreviewOverflow,
-    children: [(0, a.jsx)(d.ZP, {
-      mask: d.ZP.Masks.FORWARD_ATTACHMENT_PILE_OVERFLOW,
+    children: [(0, a.jsx)(u.ZP, {
+      mask: u.ZP.Masks.FORWARD_ATTACHMENT_PILE_OVERFLOW,
       width: 56,
       height: 56,
-      children: l
-    }), (0, a.jsxs)(o.Text, {
+      children: o
+    }), (0, a.jsxs)(c.Text, {
       className: L.overflowCount,
       variant: "text-xs/semibold",
       color: "text-default",
@@ -65,11 +65,11 @@ function R(e) {
       className: L.contentWrapper,
       children: (0, a.jsxs)("div", {
         className: L.attachmentRow,
-        children: [(0, a.jsx)(o.g8d, {
+        children: [(0, a.jsx)(c.g8d, {
           size: "custom",
           width: 20,
-          color: o.TVs.colors.TEXT_MUTED
-        }), (0, a.jsx)(o.Text, {
+          color: c.TVs.colors.TEXT_MUTED
+        }), (0, a.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "text-muted",
           children: 1 === n.length ? null != (t = r.name) ? t : k.intl.string(k.t.Cyxddp) : k.intl.formatToPlainString(k.t.SJ6pPX, {
@@ -77,17 +77,17 @@ function R(e) {
           })
         })]
       })
-    }), l]
+    }), o]
   })
 }
 
 function E(e) {
   var t, n, {
       clips: i,
-      analyticsLocations: c,
-      onClose: d
+      analyticsLocations: l,
+      onClose: u
     } = e,
-    b = function(e, t) {
+    p = function(e, t) {
       if (null == e) return {};
       var n, a, r = function(e, t) {
         if (null == e) return {};
@@ -106,71 +106,71 @@ function E(e) {
       let {
         withMessage: a,
         transitionToDestination: r,
-        closeAfterSend: u
+        closeAfterSend: d
       } = t;
       n(true);
       try {
         let t = [],
-          m = [];
+          b = [];
         for (let e of i) {
-          var b;
+          var p;
           let n = await (0, x.rO)(e),
-            a = null != (b = e.name) ? b : (0, T.yl)(v.default.extractTimestamp(e.id)),
+            a = null != (p = e.name) ? p : (0, T.yl)(v.default.extractTimestamp(e.id)),
             r = (0, j.Z)(a);
           if (e.type === P.NJ.CLIP || e.type === P.NJ.VOICE_CLIP) {
             let a = "".concat("" !== r ? r : "clip", ".mp4");
             t.push(new File([n], a, {
               type: "video/mp4"
-            })), m.push({
+            })), b.push({
               clip: e
             })
           } else if (e.type === P.NJ.SCREENSHOT) {
             let e = "".concat("" !== r ? r : "screenshot", ".jpeg");
             t.push(new File([n], e, {
               type: "image/jpeg"
-            })), m.push({})
+            })), b.push({})
           }
         }
-        let L = (await Promise.all(e.map(h.qx))).filter(_.lm).filter(e => (0, I.W)(e));
+        let L = (await Promise.all(e.map(f.qx))).filter(g.lm).filter(e => (0, I.W)(e));
         if (0 === L.length) {
-          (0, o.showToast)((0, o.createToast)(k.intl.string(k.t.iufib1), o.ToastType.FAILURE)), n(false);
+          (0, c.showToast)((0, c.createToast)(k.intl.string(k.t.iufib1), c.ToastType.FAILURE)), n(false);
           return
         }
-        for (let e of (u && d(), L)) {
-          let n = w.Z.getChannel(e);
+        for (let e of (d && u(), L)) {
+          let n = m.Z.getChannel(e);
           if (null != n) {
-            for (let e of ((0, O.d)(t, n, y.d.ChannelMessage, {
-                filesMetadata: m,
+            for (let e of ((0, O.d)(t, n, w.d.ChannelMessage, {
+                filesMetadata: b,
                 origin: "unknown:clip_share",
                 requireConfirm: false
-              }), i)) g.default.track(C.rMx.CLIP_SHARED, {
-              location_stack: c,
+              }), i)) y.default.track(C.rMx.CLIP_SHARED, {
+              location_stack: l,
               guild_id: n.guild_id,
               channel_id: n.id,
               channel_type: n.type,
               application_id: e.applicationId,
               clip_id: e.id
             });
-            null != a && "" !== a.trim() && await s.Z.sendMessage(n.id, p.ZP.parse(n, a), false, {
+            null != a && "" !== a.trim() && await s.Z.sendMessage(n.id, h.ZP.parse(n, a), false, {
               location: S.dy.FORWARDING
             })
           }
         }
-        r && 1 === L.length && ((0, f.Kh)(L[0], {
+        r && 1 === L.length && ((0, _.Kh)(L[0], {
           openTextInVoiceIfVoiceChannel: true
-        }), l.closeAllModals())
+        }), o.closeAllModals())
       } catch (e) {
-        (0, o.showToast)((0, o.createToast)(k.intl.string(k.t.iufib1), o.ToastType.FAILURE))
+        (0, c.showToast)((0, c.createToast)(k.intl.string(k.t.iufib1), c.ToastType.FAILURE))
       } finally {
         n(false)
       }
-    }, [i, c, d]),
+    }, [i, l, u]),
     E = r.useCallback(e => {
-      if (e instanceof m.Sf && !(0, I.W)(e.id)) return {
+      if (e instanceof b.Sf && !(0, I.W)(e.id)) return {
         label: k.intl.string(k.t.iufib1)
       }
     }, []);
-  return (0, a.jsx)(u.ForwardModal, (t = function(e) {
+  return (0, a.jsx)(d.ForwardModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         a = Object.keys(n);
@@ -187,8 +187,8 @@ function E(e) {
       })
     }
     return e
-  }({}, b), n = n = {
-    onClose: d,
+  }({}, p), n = n = {
+    onClose: u,
     customTitle: k.intl.string(k.t.I8lglT),
     customSubtitle: k.intl.string(k.t.Ey7mOU),
     customPreview: (0, a.jsx)(R, {

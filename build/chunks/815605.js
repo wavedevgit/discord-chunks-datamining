@@ -18,22 +18,22 @@ let c = 7.5,
   f = (0, Chunk392711.memoize)((e, t, n, r) => new Promise(e => {
     let i = new Image;
     i.src = t, i.crossOrigin = "Anonymous", i.onload = () => {
-      let t = d * (0, a.x_)(),
-        o = JSON.stringify(n);
-      if (null != r && (o = (0, l.s4)(o, (0, s.oo)(r))), i.width === t && i.height === t || 0 === i.width && 0 === i.height) e(JSON.parse(o));
+      let t = d * (0, o.x_)(),
+        a = JSON.stringify(n);
+      if (null != r && (a = (0, l.s4)(a, (0, s.oo)(r))), i.width === t && i.height === t || 0 === i.width && 0 === i.height) e(JSON.parse(a));
       else {
         let t = u / i.width * i.height;
-        e(JSON.parse(o = (o = o.replace(/"w":128,"h":128/, '"w":128,"h":'.concat(t))).replace(/"a":{"a":0,"k":\[64,64/, '"a":{"a":0,"k":[64,'.concat(t / 2))))
+        e(JSON.parse(a = (a = a.replace(/"w":128,"h":128/, '"w":128,"h":'.concat(t))).replace(/"a":{"a":0,"k":\[64,64/, '"a":{"a":0,"k":[64,'.concat(t / 2))))
       }
     }
   }));
 
 function p(e, t, n, r) {
   let {
-    emojiSize: a,
+    emojiSize: o,
     key: s,
     messageId: l
-  } = null != r ? r : {}, c = null != a ? 2 * a : true, u = (0, o._r)(e, c);
+  } = null != r ? r : {}, c = null != o ? 2 * o : true, u = (0, a._r)(e, c);
   return {
     channelId: n,
     messageId: l,

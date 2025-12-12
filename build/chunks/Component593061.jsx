@@ -12,10 +12,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk354351 = require("./354351.js");
+  Chunk982710 = require("./982710.js");
 async function f(e) {
   try {
-    return (await a.tn.get({
+    return (await o.tn.get({
       url: l.ANM.BILLING_INVOICE_BREAKDOWN,
       query: {
         payment_id: e
@@ -31,10 +31,10 @@ async function f(e) {
 function p(e) {
   let {
     payment: t
-  } = e, [n, a] = i.useState(null), [l, p] = i.useState(null), _ = async e => {
+  } = e, [n, o] = i.useState(null), [l, p] = i.useState(null), _ = async e => {
     try {
       let n = await f(t.id);
-      a(n);
+      o(n);
       let r = e ? n.refundInvoiceLinks[0] : n.invoiceLink;
       window.open(r, "_blank"), p(null)
     } catch (e) {
@@ -51,33 +51,33 @@ function p(e) {
     E = null == n ? true : n.refundInvoiceLinks;
   return t.hasInvoiceURL && null == n ? (0, r.jsxs)("div", {
     className: d.downloadInvoice,
-    children: [(0, r.jsx)(o.Anchor, {
+    children: [(0, r.jsx)(a.Anchor, {
       onClick: () => _(false),
       children: u.intl.formatToPlainString(u.t.R0xzCN, {})
-    }), t.hasRefundInvoiceURLs ? (0, r.jsx)(o.Anchor, {
+    }), t.hasRefundInvoiceURLs ? (0, r.jsx)(a.Anchor, {
       className: d.downloadRefundInvoice,
       onClick: () => _(true),
       children: u.intl.formatToPlainString(u.t["3x6NGw"], {})
-    }) : null, null != l && "" !== l && (0, r.jsx)(o.M14, {
+    }) : null, null != l && "" !== l && (0, r.jsx)(a.M14, {
       type: "critical",
       children: l
     })]
   }) : t.hasInvoiceURL && null != n ? (0, r.jsxs)("div", {
     className: d.downloadInvoice,
-    children: [(0, r.jsx)(o.Anchor, {
+    children: [(0, r.jsx)(a.Anchor, {
       href: g,
       children: u.intl.formatToPlainString(u.t.R0xzCN, {})
-    }), null != E ? E.map((e, t) => (0, r.jsx)(o.Anchor, {
+    }), null != E ? E.map((e, t) => (0, r.jsx)(a.Anchor, {
       className: d.downloadRefundInvoice,
       href: e,
       children: u.intl.formatToPlainString(u.t["3x6NGw"], {})
-    }, t)) : null, null != l && "" !== l && (0, r.jsx)(o.M14, {
+    }, t)) : null, null != l && "" !== l && (0, r.jsx)(a.M14, {
       type: "critical",
       children: l
     })]
   }) : h ? (0, r.jsx)("div", {
     className: d.downloadInvoice,
-    children: (0, r.jsx)(o.Anchor, {
+    children: (0, r.jsx)(a.Anchor, {
       onClick: () => {
         m(t, t.paymentSource)
       },

@@ -19,12 +19,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk779139 = require("./779139.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk417601 = require("./417601.js");
+  Chunk628800 = require("./628800.js");
 let b = e => {
     let {
       channel: t,
       message: n
-    } = e, a = (0, m.y6)(n.id), c = i.useCallback(() => {
+    } = e, o = (0, m.y6)(n.id), c = i.useCallback(() => {
       (0, _.v)({
         type: s.Ie.FORM,
         content: "",
@@ -33,15 +33,15 @@ let b = e => {
         let {
           valid: r
         } = e;
-        r && (0, m.TZ)(t, n, a.id)
+        r && (0, m.TZ)(t, n, o.id)
       })
-    }, [t, n, a]);
+    }, [t, n, o]);
     return (0, r.jsx)("div", {
       className: E.welcomeCTA,
-      children: (0, r.jsx)(o.zxk, {
+      children: (0, r.jsx)(a.zxk, {
         icon: {
           type: "sticker",
-          asset: a,
+          asset: o,
           component: l.Z
         },
         text: g.intl.string(g.t["7Tj6HT"]),
@@ -54,18 +54,18 @@ let b = e => {
     let {
       message: t,
       channel: n
-    } = e, i = n.getGuildId(), o = (0, a.e7)([p.default, f.Z, d.Z, u.ZP], () => {
+    } = e, i = n.getGuildId(), a = (0, o.e7)([p.default, f.Z, d.Z, u.ZP], () => {
       var e;
       let r = p.default.getCurrentUser(),
-        a = (0, c.xl)(n),
-        o = f.Z.can(h.Plq.SEND_MESSAGES, n),
+        o = (0, c.xl)(n),
+        a = f.Z.can(h.Plq.SEND_MESSAGES, n),
         s = null != i && null != r && (null == (e = u.ZP.getMember(i, r.id)) ? true : e.isPending),
         l = t.author.bot,
         _ = d.Z.getGuild(i),
         m = null != _ && (_.systemChannelFlags & h.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
-      return o && !a && !s && !l && m
+      return a && !o && !s && !l && m
     });
-    return null != i && o ? (0, r.jsx)(b, {
+    return null != i && a ? (0, r.jsx)(b, {
       message: t,
       channel: n
     }) : null

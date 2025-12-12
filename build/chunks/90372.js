@@ -1,4 +1,4 @@
-/** Chunk was on 193 **/
+/** Chunk was on 9456 **/
 /** chunk id: 90372, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -13,8 +13,8 @@ let s = {
     let {
       guildId: t,
       channelId: n
-    } = e, s = a.useRef(null), o = (0, i.UU)(), c = !r.Z.isFocused(o);
-    return a.useLayoutEffect(() => (null == s.current && (s.current = new l.ZP({
+    } = e, s = r.useRef(null), o = (0, l.UU)(), c = !i.Z.isFocused(o);
+    return r.useLayoutEffect(() => (null == s.current && (s.current = new a.ZP({
       guildId: t,
       channelId: n,
       isPaused: c,

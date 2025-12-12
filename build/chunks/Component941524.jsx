@@ -1,37 +1,37 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 941524, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk654814 = require("./654814.jsx"),
+var Chunk512508 = require("./512508.jsx"),
   Chunk706371 = require("./706371.jsx"),
   Chunk563115 = require("./563115.jsx");
 
-function s(e) {
+function a(e) {
   let {
     guildId: t,
     selectedChannelIds: n,
-    selectedRoleIds: s,
+    selectedRoleIds: a,
     onChange: o,
     placeholder: c,
-    disableEveryoneRole: d,
-    includeRoleRestrictedPrivateChannels: u = false,
+    disableEveryoneRole: u,
+    includeRoleRestrictedPrivateChannels: d = false,
     includeStageVoiceChannels: g = false,
-    helperText: f,
-    className: m
-  } = e, b = (0, l.r)(t, n, u, g), p = (0, a.h)(t, s, d);
+    helperText: m,
+    className: p
+  } = e, f = (0, l.r)(t, n, d, g), h = (0, s.h)(t, a, u);
   return (0, r.jsx)(i.ZP, {
-    channelRows: b,
-    roleRows: p,
+    channelRows: f,
+    roleRows: h,
     guildId: t,
     selectedChannelIds: n,
-    selectedRoleIds: s,
+    selectedRoleIds: a,
     onChange: o,
     placeholder: c,
-    helperText: f,
-    className: m
+    helperText: m,
+    className: p
   })
 }

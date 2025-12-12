@@ -51,7 +51,7 @@ d.push(class extends f {
   }
   close() {}
   constructor(e) {
-    super(e), s(this, "_decoder", null), s(this, "_stream", true), this._gatewayEncoding.wantsString() ? this._decoder = new TextDecoder("utf-8") : this._decoder = null, this._stream = (0, o.G)()
+    super(e), s(this, "_decoder", null), s(this, "_stream", true), this._gatewayEncoding.wantsString() ? this._decoder = new TextDecoder("utf-8") : this._decoder = null, this._stream = (0, a.G)()
   }
 }), d.push(class extends f {
   static canUse() {
@@ -80,21 +80,21 @@ d.push(class extends f {
     if (null == i) return void new r.Z("GatewayCompressionHandler").error("flush end happened on closed compression adapter");
     if (e !== n.Z_OK) throw Error("zlib error, ".concat(e, ", ").concat(i.strm.msg));
     let {
-      chunks: a
-    } = i, o = a.length;
-    if (this._gatewayEncoding.wantsString()) t = o > 1 ? a.join("") : a[0];
-    else if (o > 1) {
+      chunks: o
+    } = i, a = o.length;
+    if (this._gatewayEncoding.wantsString()) t = a > 1 ? o.join("") : o[0];
+    else if (a > 1) {
       let e = 0;
-      for (let t = 0; t < o; t++) e += a[t].length;
+      for (let t = 0; t < a; t++) e += o[t].length;
       let n = new Uint8Array(e),
         r = 0;
-      for (let e = 0; e < o; e++) {
-        let t = a[e];
+      for (let e = 0; e < a; e++) {
+        let t = o[e];
         n.set(t, r), r += t.length
       }
       t = n
-    } else t = a[0];
-    a.length = 0, null != this._onDataReady && this._onDataReady(t)
+    } else t = o[0];
+    o.length = 0, null != this._onDataReady && this._onDataReady(t)
   }
   constructor(e) {
     super(e), s(this, "_inflate", true), s(this, "_pako", n(457854)), s(this, "_usesZstd", false), s(this, "_zstdDecoder", null), s(this, "_zstdStream", null), this._inflate = new this._pako.Inflate({
@@ -128,7 +128,7 @@ d.push(class extends f {
     returnfalse
   }
   bindWebSocket(e) {
-    this.close(), this._socketId = e._socketId, (0, o.N)() ? (0, i.isAndroid)() ? null == c || c.enableZstdStreamSupport(this._socketId) : l.DCDCompressionManager.enableZstdStreamSupport(this._socketId, 0) : (0, i.isAndroid)() ? null == c || c.enableZlibStreamSupport(this._socketId) : l.DCDCompressionManager.enableZlibStreamSupport(this._socketId)
+    this.close(), this._socketId = e._socketId, (0, a.N)() ? (0, i.isAndroid)() ? null == c || c.enableZstdStreamSupport(this._socketId) : l.DCDCompressionManager.enableZstdStreamSupport(this._socketId, 0) : (0, i.isAndroid)() ? null == c || c.enableZlibStreamSupport(this._socketId) : l.DCDCompressionManager.enableZlibStreamSupport(this._socketId)
   }
   getAlgorithm() {
     return (0, Chunk988348.N)() ? "zstd-stream" : "zlib-stream"
@@ -166,7 +166,7 @@ class p extends f {
 }
 
 function _(e) {
-  if (a.s.isDiscordGatewayPlaintextSet()) return new p(e);
+  if (o.s.isDiscordGatewayPlaintextSet()) return new p(e);
   for (var t of d)
     if (t.canUse()) return new t(e);
   return new p(e)

@@ -7,28 +7,28 @@ require.d(exports, {
 var Chunk727916 = require("./727916.js"),
   Chunk894186 = require("./894186.js"),
   Chunk424046 = require("./424046.js");
-let o = 1,
+let a = 1,
   s = 2;
 class l extends Chunk727916.Z {
   innerPattern(e) {
     return /(gisteren|morgen|van)(ochtend|middag|namiddag|avond|nacht)(?=\W|$)/i
   }
   innerExtract(e, t) {
-    let n = t[o].toLowerCase(),
+    let n = t[a].toLowerCase(),
       r = t[s].toLowerCase(),
       l = e.createParsingComponents(),
       c = e.refDate;
     switch (n) {
       case "gisteren":
         let u = new Date(c.getTime());
-        u.setDate(u.getDate() - 1), (0, a.cz)(l, u);
+        u.setDate(u.getDate() - 1), (0, o.cz)(l, u);
         break;
       case "van":
-        (0, a.cz)(l, c);
+        (0, o.cz)(l, c);
         break;
       case "morgen":
         let d = new Date(c.getTime());
-        d.setDate(d.getDate() + 1), (0, a.cz)(l, d), (0, a.hO)(l, d)
+        d.setDate(d.getDate() + 1), (0, o.cz)(l, d), (0, o.hO)(l, d)
     }
     switch (r) {
       case "ochtend":

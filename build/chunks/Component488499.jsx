@@ -1,4 +1,4 @@
-/** Chunk was on 76543 **/
+/** Chunk was on 72891 **/
 /** chunk id: 488499, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -14,16 +14,16 @@ function l(e) {
     type: t,
     analyticsPage: n,
     analyticsSection: l,
-    isGIF: s,
-    banner: c
+    isGIF: c,
+    banner: s
   } = e;
-  return [a.pC.BANNER, a.pC.AVATAR].includes(t) && s ? (0, o.jsx)(r.Z, {
+  return [r.pC.BANNER, r.pC.AVATAR].includes(t) && c ? (0, i.jsx)(o.Z, {
     analyticsSection: l,
     type: t
-  }) : t === a.pC.GUILD_BANNER ? (0, o.jsx)(i.Z, {
+  }) : t === r.pC.GUILD_BANNER ? (0, i.jsx)(a.Z, {
     analyticsSection: l,
     analyticsPage: n,
-    isGIF: s,
-    banner: c
+    isGIF: c,
+    banner: s
   }) : null
 }

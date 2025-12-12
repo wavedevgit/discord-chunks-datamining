@@ -15,8 +15,8 @@ function s(e) {
     message: t,
     channel: n,
     compact: s
-  } = e, l = (0, i.e7)([a.Z], () => null != t.interaction && a.Z.isBlocked(t.interaction.user.id), [t.interaction]);
-  return (0, r.jsx)(o.Z, {
+  } = e, l = (0, i.e7)([o.Z], () => null != t.interaction && o.Z.isBlocked(t.interaction.user.id), [t.interaction]);
+  return (0, r.jsx)(a.Z, {
     message: t,
     channel: n,
     compact: s,

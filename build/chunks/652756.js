@@ -3,15 +3,15 @@
 "use strict";
 require.d(exports, {
   K5: () => s,
-  g2: () => o,
+  g2: () => a,
   rK: () => u
 });
 var Chunk868635 = require("./868635.js"),
   Chunk816383 = require("./816383.js"),
-  a = 1;
+  o = 1;
 
-function o(e) {
-  var t = e.nodeType === a ? e : e.parentElement;
+function a(e) {
+  var t = e.nodeType === o ? e : e.parentElement;
   if (!t) return null;
   var n = t.getBoundingClientRect(),
     r = n.top;
@@ -34,25 +34,25 @@ function l(e) {
 }
 
 function c(e, t, n, i) {
-  var a = e ? t.width : n,
-    o = e ? t.height : i;
-  return (0, r.G)() && e && (o /= window.devicePixelRatio, a /= window.devicePixelRatio), {
-    dragPreviewWidth: a,
-    dragPreviewHeight: o
+  var o = e ? t.width : n,
+    a = e ? t.height : i;
+  return (0, r.G)() && e && (a /= window.devicePixelRatio, o /= window.devicePixelRatio), {
+    dragPreviewWidth: o,
+    dragPreviewHeight: a
   }
 }
 
-function u(e, t, n, a, s) {
+function u(e, t, n, o, s) {
   var u = l(t),
-    d = o(u ? e : t),
+    d = a(u ? e : t),
     f = {
       x: n.x - d.x,
       y: n.y - d.y
     },
     p = e.offsetWidth,
     _ = e.offsetHeight,
-    m = a.anchorX,
-    h = a.anchorY,
+    m = o.anchorX,
+    h = o.anchorY,
     g = c(u, t, p, _),
     E = g.dragPreviewWidth,
     b = g.dragPreviewHeight,

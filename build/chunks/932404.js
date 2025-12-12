@@ -18,7 +18,7 @@ require.d(exports, {
   k0: () => p,
   nV: () => b,
   pH: () => _,
-  rI: () => o,
+  rI: () => a,
   ry: () => l,
   sG: () => m,
   uD: () => C,
@@ -29,7 +29,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk145597 = require("./145597.js"),
   Chunk307149 = require("./307149.js");
 
-function o(e, t) {
+function a(e, t) {
   return r.Z.dispatch({
     type: "OVERLAY_SET_LIMITED_INTERACTION_OVERRIDE",
     applicationId: e,
@@ -131,14 +131,14 @@ function b(e, t) {
 function y(e, t, n) {
   let {
     crashType: i,
-    isCrashedDisabled: a
+    isCrashedDisabled: o
   } = n;
   return r.Z.dispatch({
     type: "OVERLAY_CRASHED",
     pid: e,
     error: t,
     crashType: i,
-    isCrashedDisabled: a
+    isCrashedDisabled: o
   })
 }
 
@@ -147,8 +147,8 @@ function O(e) {
     pid: t,
     name: n,
     type: i,
-    data: o,
-    logType: s = a.l6.Info
+    data: a,
+    logType: s = o.l6.Info
   } = e;
   return r.Z.dispatch({
     type: "OVERLAY_ADD_DEBUG_BREADCRUMB",
@@ -156,7 +156,7 @@ function O(e) {
       pid: t,
       type: i,
       name: n,
-      data: o,
+      data: a,
       logType: s
     }
   })
@@ -166,7 +166,7 @@ function v(e, t, n, r) {
   return O({
     pid: e,
     name: t,
-    type: a.C7.Flux,
+    type: o.C7.Flux,
     data: n,
     logType: r
   })
@@ -176,7 +176,7 @@ function S(e, t, n, r) {
   return O({
     pid: e,
     name: t,
-    type: a.C7.OOPModule,
+    type: o.C7.OOPModule,
     data: n,
     logType: r
   })

@@ -24,13 +24,13 @@ class d extends Chunk147913.Z {
   handleTrackStateChanged(e) {
     s.Z.getConfig({
       location: "tracking-manager"
-    }).enabled && (e.newState === o.mM.INITIALIZING && u.set(e.pid, (0, r.Z)()), (0, a.Q)(l.rMx.OVERLAY_STATE_CHANGED, {
+    }).enabled && (e.newState === a.mM.INITIALIZING && u.set(e.pid, (0, r.Z)()), (0, o.Q)(l.rMx.OVERLAY_STATE_CHANGED, {
       new_state: e.newState,
       old_state: e.oldState,
       pid: e.pid,
       init_session_id: u.get(e.pid),
       reason: e.reason
-    }), (e.newState === o.mM.OVERLAY_RENDERING || e.newState === o.mM.OVERLAY_DISABLED || e.newState === o.mM.OVERLAY_CRASHED_DISABLED || e.newState === o.mM.OVERLAY_TEARING_DOWN) && u.delete(e.pid))
+    }), (e.newState === a.mM.OVERLAY_RENDERING || e.newState === a.mM.OVERLAY_DISABLED || e.newState === a.mM.OVERLAY_CRASHED_DISABLED || e.newState === a.mM.OVERLAY_TEARING_DOWN) && u.delete(e.pid))
   }
   handleRunningGamesChange(e) {
     for (let t of e.removed) u.delete(t.pid)

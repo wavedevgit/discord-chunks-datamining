@@ -34,7 +34,7 @@ function f(e, t, n) {
 }
 
 function p(e) {
-  return (0, r.e7)([o.default, a.Z], () => null != e && e.isMultiUserDM() ? f(e, o.default, a.Z) : null)
+  return (0, r.e7)([a.default, o.Z], () => null != e && e.isMultiUserDM() ? f(e, a.default, o.Z) : null)
 }
 
 function _(e, t, n) {
@@ -42,12 +42,12 @@ function _(e, t, n) {
     i = arguments.length > 4 && true !== arguments[4] && arguments[4];
   switch (e.type) {
     case c.d4z.DM:
-      var a;
-      let [o] = e.recipients.map(t.getUser).filter(s.lm);
-      if (null == o) return "???";
-      if (o.isProvisional && null != o.globalName) return o.globalName;
-      let u = n.getNickname(o.id),
-        d = null != (a = null != u ? u : l.ZP.getName(o)) ? a : "???";
+      var o;
+      let [a] = e.recipients.map(t.getUser).filter(s.lm);
+      if (null == a) return "???";
+      if (a.isProvisional && null != a.globalName) return a.globalName;
+      let u = n.getNickname(a.id),
+        d = null != (o = null != u ? u : l.ZP.getName(a)) ? o : "???";
       return r ? "@".concat(d) : d;
     case c.d4z.GROUP_DM:
       if ("" !== e.name) return e.name;
@@ -82,5 +82,5 @@ function h(e) {
 
 function g(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return (0, r.e7)([o.default, i.Z, a.Z], () => null == e ? null : _(e, o.default, a.Z, t))
+  return (0, r.e7)([a.default, i.Z, o.Z], () => null == e ? null : _(e, a.default, o.Z, t))
 }

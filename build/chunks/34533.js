@@ -6,7 +6,7 @@ var Chunk815329 = require("./815329.js"),
   Chunk951575 = require("./951575.js"),
   Chunk163567 = require("./163567.js");
 module.exports = function(e, t, n) {
-  if (!a(e)) throw new r("Assertion failed: Type(O) is not Object");
-  if (!o(t)) throw new r("Assertion failed: P is not a Property Key");
+  if (!o(e)) throw new r("Assertion failed: Type(O) is not Object");
+  if (!a(t)) throw new r("Assertion failed: P is not a Property Key");
   if (!i(e, t, n)) throw new r("unable to create data property")
 }

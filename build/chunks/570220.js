@@ -7,7 +7,7 @@ require.d(exports, {
 }), require("./415506.js");
 var Chunk473749 = require("./473749.js"),
   Chunk836560 = require("./836560.js");
-class a extends Chunk836560.EventEmitter {
+class o extends Chunk836560.EventEmitter {
   on() {
     return this
   }
@@ -24,9 +24,9 @@ class a extends Chunk836560.EventEmitter {
     returnfalse
   }
 }
-let o = Chunk473749.createContext(new a),
+let a = Chunk473749.createContext(new o),
   {
     Provider: s,
     Consumer: l
-  } = o,
-  c = o
+  } = a,
+  c = a

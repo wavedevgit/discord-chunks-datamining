@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk79766 = require("./79766.js"),
   Chunk481060 = require("./481060.js"),
   Chunk213609 = require("./213609.js"),
-  Chunk138911 = require("./138911.js");
+  Chunk839683 = require("./839683.js");
 let c = e => {
   let {
     componentId: t,
@@ -19,7 +19,7 @@ let c = e => {
     type: i.ImpressionTypes.VIEW,
     name: i.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
     properties: {
-      component_type: a.I.PAYMENT_MODAL_BANNER,
+      component_type: o.I.PAYMENT_MODAL_BANNER,
       component_id: t
     }
   }), (0, r.jsx)("div", {
@@ -27,12 +27,12 @@ let c = e => {
     children: (0, r.jsxs)("div", {
       className: l.content,
       children: [(0, r.jsx)("div", {
-        children: (0, r.jsx)(o.Eep, {
+        children: (0, r.jsx)(a.Eep, {
           src: n.assetUrl,
           width: 48,
           height: 48
         })
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-strong",
         children: n.body

@@ -1,32 +1,32 @@
-/** Chunk was on 73791 **/
-/** chunk id: 311047, original params: e,n,a (module,exports,require) **/
+/** Chunk was on 8551 **/
+/** chunk id: 311047, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => i
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk792089 = require("./792089.js");
-let i = e => {
+  Chunk915578 = require("./915578.js");
+let _ = e => {
   let {
     title: n,
-    subtitle: a,
-    icon: i
+    subtitle: t,
+    icon: _
   } = e;
-  return (0, t.jsxs)("div", {
-    className: o.wrapper,
-    children: [null != i && (0, t.jsx)(i, {
+  return (0, a.jsxs)("div", {
+    className: i.wrapper,
+    children: [null != _ && (0, a.jsx)(_, {
       size: "xs",
       color: "currentColor",
-      className: o.icon
-    }), (0, t.jsx)(d.Text, {
+      className: i.icon
+    }), (0, a.jsx)(o.Text, {
       variant: "text-md/normal",
-      className: o.title,
+      className: i.title,
       children: n
-    }), null != a && "" !== a ? (0, t.jsx)(d.Text, {
+    }), null != t && "" !== t ? (0, a.jsx)(o.Text, {
       variant: "text-xs/semibold",
-      className: o.subtitle,
-      children: a
+      className: i.subtitle,
+      children: t
     }) : null]
   })
 }

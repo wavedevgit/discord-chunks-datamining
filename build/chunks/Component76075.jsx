@@ -1,7 +1,7 @@
 /** Chunk was on 3378 **/
 /** chunk id: 76075, original params: n,t,e (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,50 +16,50 @@ var Chunk54381 = require("./54381.js"),
   Chunk937111 = require("./937111.js"),
   Chunk702286 = require("./702286.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk871612 = require("./871612.js");
-let h = function(n) {
+  Chunk394121 = require("./394121.js");
+let _ = function(n) {
   let {
     guildId: t,
     transitionState: e,
-    onClose: h
-  } = n, x = (0, l.e7)([m.Z], () => m.Z.getRequest(t), [t]), C = (0, l.e7)([c.Z], () => c.Z.getGuild(t), [t]), R = (0, l.e7)([s.default], () => {
+    onClose: _
+  } = n, h = (0, a.e7)([p.Z], () => p.Z.getRequest(t), [t]), x = (0, a.e7)([u.Z], () => u.Z.getGuild(t), [t]), C = (0, a.e7)([c.default], () => {
     var n;
-    return null == (n = s.default.getCurrentUser()) ? true : n.id
-  }), k = (0, l.e7)([r.ZP], () => null != R ? r.ZP.getMember(t, R) : null, [R, t]), Z = a.useCallback(() => {
-    h(), null == k && (0, p.Z)()
-  }, [k, h]), j = a.useCallback(async () => {
-    if (null == k ? true : k.isPending) {
+    return null == (n = c.default.getCurrentUser()) ? true : n.id
+  }), R = (0, a.e7)([s.ZP], () => null != C ? s.ZP.getMember(t, C) : null, [C, t]), k = o.useCallback(() => {
+    _(), null == R && (0, f.Z)()
+  }, [R, _]), Z = o.useCallback(async () => {
+    if (null == R ? true : R.isPending) {
       try {
-        await u.Z.removeGuildJoinRequest(t)
+        await d.Z.removeGuildJoinRequest(t)
       } catch (n) {
         throw n
       }
-      h(), (0, f.hk)(t)
-    } else u.Z.resetGuildJoinRequest(t)
-  }, [t, null == k ? true : k.isPending, h]), b = a.useMemo(() => [{
+      _(), (0, m.hk)(t)
+    } else d.Z.resetGuildJoinRequest(t)
+  }, [t, null == R ? true : R.isPending, _]), j = o.useMemo(() => [{
     text: g.intl.string(g.t.I1LYVk),
     variant: "secondary",
-    onClick: j
+    onClick: Z
   }, {
     text: g.intl.string(g.t.BddRzS),
     variant: "critical-primary",
-    onClick: Z
-  }], [j, Z]);
-  return (0, i.jsx)(o.Modal, {
+    onClick: k
+  }], [Z, k]);
+  return (0, i.jsx)(l.Modal, {
     transitionState: e,
-    onClose: h,
-    title: (null == C ? true : C.name) != null ? g.intl.formatToPlainString(g.t["P+/gzA"], {
-      guildName: C.name
+    onClose: _,
+    title: (null == x ? true : x.name) != null ? g.intl.formatToPlainString(g.t["P+/gzA"], {
+      guildName: x.name
     }) : g.intl.string(g.t.gBPcuP),
-    actions: b,
-    children: (null == x ? true : x.rejectionReason) != null && (null == x ? true : x.rejectionReason) !== "" ? (0, i.jsxs)(d.Text, {
+    actions: j,
+    children: (null == h ? true : h.rejectionReason) != null && (null == h ? true : h.rejectionReason) !== "" ? (0, i.jsxs)(r.Text, {
       variant: "text-md/medium",
       color: "text-default",
       children: [(0, i.jsx)("span", {
         className: v.rejectionReasonLabel,
         children: g.intl.string(g.t.cf1psW)
       }), (0, i.jsx)("span", {
-        children: null == x ? true : x.rejectionReason
+        children: null == h ? true : h.rejectionReason
       })]
     }) : null
   })

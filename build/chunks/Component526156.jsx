@@ -8,16 +8,16 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk230711 = require("./230711.js"),
   Chunk528084 = require("./528084.js"),
-  Chunk964694 = require("./964694.js");
+  Chunk9352 = require("./9352.js");
 let d = e => {
     let {
       tabs: t,
       panelClassName: n,
-      tabsClassName: a,
+      tabsClassName: o,
       defaultTab: l,
       onTabChange: c,
       orientation: d = "horizontal"
@@ -34,20 +34,20 @@ let d = e => {
         _(null != (n = t.find(t => t.setting === e)) ? n : t[0]), null == c || c(e)
       };
     return (0, r.jsxs)("div", {
-      className: o()(u.tabbedSettingsContainer, {
+      className: a()(u.tabbedSettingsContainer, {
         [u.vertical]: "vertical" === d
       }),
       children: [(0, r.jsx)(s.njP, {
-        className: o()(u.tabBar, {
+        className: a()(u.tabBar, {
           [u.vertical]: "vertical" === d
-        }, a),
+        }, o),
         selectedItem: p.setting,
         onItemSelect: h,
         orientation: d,
         type: "vertical" === d ? "side" : "top",
         look: "brand",
         children: t.map(e => (0, r.jsx)(s.njP.Item, {
-          className: o()(u.tab, {
+          className: a()(u.tab, {
             [u.vertical]: "vertical" === d,
             [u.selected]: e.setting === p.setting
           }),
@@ -58,7 +58,7 @@ let d = e => {
       }), (0, r.jsx)(s.njP.Panel, {
         id: p.setting,
         "aria-labelledby": p.title,
-        className: o()(u.tabBarPanel, n, {
+        className: a()(u.tabBarPanel, n, {
           [u.vertical]: "vertical" === d
         }),
         children: m(p)
@@ -70,15 +70,15 @@ let d = e => {
     let {
       tabs: n,
       settingsSection: i,
-      parentSetting: a,
-      panelClassName: o,
+      parentSetting: o,
+      panelClassName: a,
       defaultTabIndex: s,
       onTabChange: u,
       orientation: f = "horizontal"
     } = e, {
       viewableTabs: p,
       filteredTab: _
-    } = (0, c.a)(n, a), m = null != s ? n[s] : null, h = null != (t = null != m ? m : _) ? t : p[0], g = e => {
+    } = (0, c.a)(n, o), m = null != s ? n[s] : null, h = null != (t = null != m ? m : _) ? t : p[0], g = e => {
       l.Z.setSection(i, e), null == u || u(e)
     };
     return (0, r.jsx)(d, {
@@ -86,6 +86,6 @@ let d = e => {
       orientation: f,
       defaultTab: h,
       onTabChange: g,
-      panelClassName: o
+      panelClassName: a
     })
   }

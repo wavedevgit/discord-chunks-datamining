@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk874141 = require("./874141.js"),
   i = require.n(Chunk874141),
   Chunk565925 = require("./565925.js"),
-  o = require.n(Chunk565925),
+  a = require.n(Chunk565925),
   Chunk839548 = require("./839548.js"),
   Chunk46973 = require("./46973.js"),
   Chunk886848 = require("./886848.js"),
@@ -99,8 +99,8 @@ class E extends Chunk839548.Z {
     if (null != t.capture && null != t.capture.width && null != t.capture.height && null != e.remoteSinkWantsPixelCount && 0 !== e.remoteSinkWantsPixelCount && 0 !== t.capture.height) {
       let r = t.capture.width / t.capture.height,
         i = Math.sqrt(e.remoteSinkWantsPixelCount * r),
-        a = t.capture.width / i;
-      n = a < 1 ? true : a
+        o = t.capture.width / i;
+      n = o < 1 ? true : o
     }
     this.logger.verbose("BaseWebRTCConnection.updateVideoQuality: resolutionScaleFactor: ".concat(n, ", ") + "encodingVideoWidth: ".concat(e.encodingVideoWidth, ", remoteSinkWantsMaxFramerate: ").concat(e.remoteSinkWantsMaxFramerate, ", ") + "encodingVideoMaxBitRate: ".concat(e.encodingVideoMaxBitRate, ", localWant: ").concat(this.getLocalWant())), this.setVideoEncoderParameters([{
       parameter: 1,
@@ -113,17 +113,17 @@ class E extends Chunk839548.Z {
       value: e.remoteSinkWantsMaxFramerate
     }]);
     let i = e.encodingVideoWidth,
-      a = e.encodingVideoHeight;
-    if (null != i && null != a)
+      o = e.encodingVideoHeight;
+    if (null != i && null != o)
       for (let e of r.getTracks()) {
-        var o, s;
+        var a, s;
         let t = e.getConstraints(),
-          n = null == (o = t.width) ? true : o.max,
+          n = null == (a = t.width) ? true : a.max,
           r = null == (s = t.height) ? true : s.max;
-        (n !== i || r !== a) && (this.logger.info("BaseWebRTCConnection.updateVideoQuality: old: ".concat(n, " x ").concat(r, ", new: ").concat(i, " x ").concat(a)), t.width = {
+        (n !== i || r !== o) && (this.logger.info("BaseWebRTCConnection.updateVideoQuality: old: ".concat(n, " x ").concat(r, ", new: ").concat(i, " x ").concat(o)), t.width = {
           max: i
         }, t.height = {
-          max: a
+          max: o
         }, e.applyConstraints(t))
       }
   }
@@ -153,7 +153,7 @@ class E extends Chunk839548.Z {
       for (let t of this.videoStreamParameters) {
         let r = e.findIndex(e => e.rid === t.rid);
         if (false === r) return void n(Error("Invalid rid"));
-        o()(this.videoStreamParameters[r], e[r]) || (this.videoStreamParameters[r] = h({}, e[r]))
+        a()(this.videoStreamParameters[r], e[r]) || (this.videoStreamParameters[r] = h({}, e[r]))
       }
       t()
     })
@@ -235,11 +235,11 @@ class E extends Chunk839548.Z {
     var t;
     super(e.context, e.userId), t = this, m(this, "input", true), m(this, "silenced", false), m(this, "interacted", false), m(this, "outputVolume", p.Qx), m(this, "sinkId", p.w5), m(this, "lastPingTime", 0), m(this, "outputs", {}), m(this, "webrtcStats", new d.r), m(this, "silenceThreshold", false), m(this, "canHavePriority", new Set), m(this, "prioritySpeakers", new Set), m(this, "audioContext", true), m(this, "setEchoCancellation", e => this.input.setEchoCancellation(e)), m(this, "setNoiseSuppression", e => this.input.setNoiseSuppression(e)), m(this, "setNoiseCancellation", e => this.input.setNoiseCancellation(e)), m(this, "getNoiseCancellation", () => this.input.getNoiseCancellation()), m(this, "setAutomaticGainControl", e => this.input.setAutomaticGainControl(e)), m(this, "setAudioSource", e => this.input.setAudioSource(e)), m(this, "setVideoSource", e => this.input.setVideoSource(e)), m(this, "setDesktopInput", e => {
       if (null != e) {
-        var t, n, r, i, a, o, s;
+        var t, n, r, i, o, a, s;
         let l = e.stream.getVideoTracks()[0].getConstraints(),
           c = {
-            width: "number" == typeof l.width ? l.width : null != (a = null == (t = l.width) ? true : t.ideal) ? a : null == (n = l.width) ? true : n.max,
-            height: "number" == typeof l.height ? l.height : null != (o = null == (r = l.height) ? true : r.ideal) ? o : null == (i = l.height) ? true : i.max
+            width: "number" == typeof l.width ? l.width : null != (o = null == (t = l.width) ? true : t.ideal) ? o : null == (n = l.width) ? true : n.max,
+            height: "number" == typeof l.height ? l.height : null != (a = null == (r = l.height) ? true : r.ideal) ? a : null == (i = l.height) ? true : i.max
           },
           u = (null != (s = null == c ? true : c.height) ? s : 0) > 720 ? p.yf : p.YE;
         this.videoQualityManager.setGoliveQuality({

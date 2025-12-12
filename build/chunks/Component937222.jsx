@@ -1,8 +1,8 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 937222, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  F: () => m
+  F: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,51 +16,51 @@ var Chunk54381 = require("./54381.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function p(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: m
+    buttonClassName: p
   } = e, {
-    analyticsLocations: b
-  } = (0, a.ZP)(), p = t.features.has(c.GuildFeatures.BANNER), h = i.useCallback(e => {
+    analyticsLocations: f
+  } = (0, s.ZP)(), h = t.features.has(c.GuildFeatures.BANNER), x = i.useCallback(e => {
     let {
       imageUri: n,
       file: r
     } = e;
-    (0, o.f4)(t, b, n, r)
-  }, [b, t]), x = i.useCallback(e => {
+    (0, o.f4)(t, f, n, r)
+  }, [f, t]), b = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, o.E6)({
       guild: t,
-      analyticsLocations: b,
+      analyticsLocations: f,
       analyticsSection: c.jXE.GUILD_BANNER,
       analyticsObject: c.qAy.BUTTON_CTA,
-      perks: (0, d.XO)()
+      perks: (0, u.XO)()
     })
-  }, [b, t]), j = i.useCallback(() => {
+  }, [f, t]), j = i.useCallback(() => {
     (0, o.mw)({
-      uploadType: u.pC.GUILD_BANNER,
+      uploadType: d.pC.GUILD_BANNER,
       maxFileSizeBytes: g.B,
-      onComplete: h,
+      onComplete: x,
       analyticsLocation: {
         page: c.ZY5.GUILD_SETTINGS,
         section: c.jXE.GUILD_BANNER
       },
-      analyticsLocations: b
+      analyticsLocations: f
     })
-  }, [b, h]);
-  return p ? (0, r.jsx)("div", {
-    className: m,
+  }, [f, x]);
+  return h ? (0, r.jsx)("div", {
+    className: p,
     children: (0, r.jsx)(l.zxk, {
-      disabled: !(p && n),
+      disabled: !(h && n),
       variant: "primary",
-      text: f.intl.string(f.t.yG2pUi),
+      text: m.intl.string(m.t.yG2pUi),
       onClick: j
     })
   }) : (0, r.jsx)("div", {
-    className: m,
-    children: (0, r.jsx)(s.v, {
-      onClick: x
+    className: p,
+    children: (0, r.jsx)(a.v, {
+      onClick: b
     })
   })
 }

@@ -21,7 +21,7 @@ async function l(e) {
   });
   try {
     let e = await (0, i.a_)(t),
-      n = a.ZP.getCurrentEmbeddedActivity();
+      n = o.ZP.getCurrentEmbeddedActivity();
     null != n && (0, i.mW)({
       location: n.location,
       applicationId: n.applicationId,
@@ -33,7 +33,7 @@ async function l(e) {
     })
   } catch (i) {
     let e = (0, s.Z)(),
-      n = await (0, o.k)(i, t);
+      n = await (0, a.k)(i, t);
     throw e.showLaunchErrorModal(n.message), r.Z.dispatch({
       type: "FRAME_LAUNCH_FAIL",
       applicationId: t,

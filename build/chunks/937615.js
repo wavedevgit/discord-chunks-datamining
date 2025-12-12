@@ -17,10 +17,10 @@ var Chunk221513 = require("./221513.js"),
 let c = Object.freeze(["en-CA", "en-AU", "en-NZ"]);
 
 function u(e, t, n) {
-  var o;
+  var a;
   let s = null != n ? n : {},
-    l = null != (o = null == n ? true : n.localeOverride) ? o : i.default.locale;
-  "en-US" === l && c.includes(i.default.systemLocale) && (s.currencyDisplay = "code"), "en-US" === l && (0, a.isWindows)() && "en-GB" === i.default.systemLocale && (s.currencyDisplay = "code");
+    l = null != (a = null == n ? true : n.localeOverride) ? a : i.default.locale;
+  "en-US" === l && c.includes(i.default.systemLocale) && (s.currencyDisplay = "code"), "en-US" === l && (0, o.isWindows)() && "en-GB" === i.default.systemLocale && (s.currencyDisplay = "code");
   let {
     maximumFractionDigits: u,
     minimumFractionDigits: d
@@ -51,7 +51,7 @@ function f(e, t) {
 
 function p(e) {
   let t = "interval_count" in e ? e.interval_count : e.intervalCount,
-    n = (0, o.aS)(e.id);
+    n = (0, a.aS)(e.id);
   return d(u(n.amount, n.currency), e.interval, t)
 }
 

@@ -24,8 +24,8 @@ function l(e, t = 3, n = 102400) {
   return p(r) > n ? l(e, t - 1, n) : r
 }
 
-function c(e, t, n = Infinity, r = Infinity, o = (0, i.i)()) {
-  let [s, l] = o;
+function c(e, t, n = Infinity, r = Infinity, a = (0, i.i)()) {
+  let [s, l] = a;
   if (null == t || ["number", "boolean", "string"].includes(typeof t) && !Number.isNaN(t)) return t;
   let d = u(e, t);
   if (!d.startsWith("[object ")) return d;
@@ -36,11 +36,11 @@ function c(e, t, n = Infinity, r = Infinity, o = (0, i.i)()) {
   let p = t;
   if (p && "function" == typeof p.toJSON) try {
     let e = p.toJSON();
-    return c("", e, f - 1, r, o)
+    return c("", e, f - 1, r, a)
   } catch (e) {}
   let _ = Array.isArray(t) ? [] : {},
     m = 0,
-    h = (0, a.Sh)(t);
+    h = (0, o.Sh)(t);
   for (let e in h) {
     if (!Object.prototype.hasOwnProperty.call(h, e)) continue;
     if (m >= r) {
@@ -48,7 +48,7 @@ function c(e, t, n = Infinity, r = Infinity, o = (0, i.i)()) {
       break
     }
     let t = h[e];
-    _[e] = c(e, t, f - 1, r, o), m++
+    _[e] = c(e, t, f - 1, r, a), m++
   }
   return l(t), _
 }
@@ -63,7 +63,7 @@ function u(e, t) {
     if ((0, r.y1)(t)) return "[VueViewModel]";
     if ((0, r.Cy)(t)) return "[SyntheticEvent]";
     if ("number" == typeof t && t != t) return "[NaN]";
-    if ("function" == typeof t) return `[Function: ${(0,o.$P)(t)}]`;
+    if ("function" == typeof t) return `[Function: ${(0,a.$P)(t)}]`;
     if ("symbol" == typeof t) return `[${String(t)}]`;
     if ("bigint" == typeof t) return `[BigInt: ${String(t)}]`;
     let n = d(t);

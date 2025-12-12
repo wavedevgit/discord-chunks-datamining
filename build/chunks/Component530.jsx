@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk129861 = require("./129861.jsx"),
@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk172751 = require("./172751.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk367701 = require("./367701.js");
+  Chunk954677 = require("./954677.js");
 
 function E(e) {
   let {
@@ -48,7 +48,7 @@ function E(e) {
     pendingDisplayNameStyles: O
   }), x = null != D;
   return (0, r.jsxs)("div", {
-    className: a()(g.container, {
+    className: o()(g.container, {
       [g.bot]: null != w
     }, S),
     children: [(0, r.jsxs)("div", {
@@ -77,7 +77,7 @@ function E(e) {
         children: y
       })]
     }), (0, r.jsxs)("div", {
-      className: a()(g.tags, {
+      className: o()(g.tags, {
         [g.pronouns]: R,
         [g.bot]: null != w
       }),
@@ -86,7 +86,7 @@ function E(e) {
         usernameIcon: i,
         forceUsername: true,
         forcePomelo: T,
-        className: a()(g.userTag, I),
+        className: o()(g.userTag, I),
         usernameClass: g.userTagUsername,
         discriminatorClass: g.userTagDiscriminator,
         hideBotTag: true
@@ -94,12 +94,12 @@ function E(e) {
         children: [(0, r.jsx)("div", {
           "aria-hidden": "true",
           className: g.dotSpacer
-        }), (0, r.jsx)(o.u, {
+        }), (0, r.jsx)(a.u, {
           asContainer: true,
           text: h.intl.string(h.t.GI2A8C),
           delay: m.vB,
           children: (0, r.jsx)(s.Text, {
-            className: a()(g.pronounsText, I),
+            className: o()(g.pronounsText, I),
             variant: "text-sm/medium",
             color: "text-strong",
             children: v

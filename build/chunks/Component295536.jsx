@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 295536, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => f
+  d: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,16 +12,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk314897 = require("./314897.js"),
   Chunk906605 = require("./906605.js"),
   Chunk748855 = require("./748855.jsx"),
-  Chunk849191 = require("./849191.js");
+  Chunk972526 = require("./972526.js");
 
-function f(e) {
+function h(e) {
   var t;
   let {
     guildId: n,
-    onSetActivityStatus: f
-  } = e, h = (0, l.e7)([c.default], () => c.default.getId()), m = (0, s.Z)(h, n)[0], g = null != (t = (0, a.IX)(null == m ? true : m.application_id).data) ? t : true, b = r.useCallback(() => {
-    null != g && ((0, u.XE)(g.id, true), f())
-  }, [g, f]);
+    onSetActivityStatus: h
+  } = e, f = (0, l.e7)([c.default], () => c.default.getId()), m = (0, s.Z)(f, n)[0], g = null != (t = (0, a.IX)(null == m ? true : m.application_id).data) ? t : true, b = r.useCallback(() => {
+    null != g && ((0, u.XE)(g.id, true), h())
+  }, [g, h]);
   return null == g ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(d.L, {
       label: g.name,

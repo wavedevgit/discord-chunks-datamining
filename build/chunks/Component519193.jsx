@@ -1,7 +1,7 @@
 /** Chunk was on 21021 **/
 /** chunk id: 519193, original params: t,a,n (module,exports,require) **/
 require.d(exports, {
-  SocialLayerStorefrontItemClaimedSuccessfullyModal: () => T
+  SocialLayerStorefrontItemClaimedSuccessfullyModal: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,38 +20,38 @@ var Chunk54381 = require("./54381.js"),
   Chunk582113 = require("./582113.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk370296 = require("./370296.js");
+  Chunk786081 = require("./786081.js");
 
-function T(t) {
+function g(t) {
   let {
     transitionState: a,
     onClose: n,
-    sku: T,
-    application: g,
-    analyticsLocations: j
-  } = t, L = (0, _.a)(g), {
-    fetched: A,
+    sku: g,
+    application: j,
+    analyticsLocations: L
+  } = t, A = (0, p.a)(j), {
+    fetched: b,
     hasAlreadyLinked: v,
     canStartAuthorization: N,
     startAuthorization: S
-  } = (0, u.F)(g), y = (0, f.I)(g), {
+  } = (0, u.F)(j), y = (0, _.I)(j), {
     analyticsLocations: E
-  } = (0, o.ZP)(null != j ? j : [], r.Z.SOCIAL_LAYER_CLAIM_PURCHASED_ITEM_MODAL), I = !A || null == L, R = e.useRef({
+  } = (0, o.ZP)(null != L ? L : [], c.Z.SOCIAL_LAYER_CLAIM_PURCHASED_ITEM_MODAL), I = !b || null == A, R = e.useRef({
     analyticsLocations: E,
-    skuId: T.id,
-    applicationId: g.id,
-    isLaunchable: L,
+    skuId: g.id,
+    applicationId: j.id,
+    isLaunchable: A,
     isApplicationConnected: y,
     canStartAuthorization: N
   });
   e.useEffect(() => {
-    R.current.isLaunchable = L, R.current.isApplicationConnected = y, R.current.canStartAuthorization = N
-  }, [L, y, N]), (0, l.ZP)(() => {
+    R.current.isLaunchable = A, R.current.isApplicationConnected = y, R.current.canStartAuthorization = N
+  }, [A, y, N]), (0, r.ZP)(() => {
     d.default.track(h.rMx.OPEN_MODAL, {
       location_stack: E,
       type: C.ng,
-      sku_id: T.id,
-      application_id: g.id
+      sku_id: g.id,
+      application_id: j.id
     })
   }), e.useEffect(() => {
     if (I) return;
@@ -93,10 +93,10 @@ function T(t) {
       d.default.track(h.rMx.SLAYER_STOREFRONT_GAME_LAUNCH_CLICKED, {
         location_stack: t,
         sku_id: a,
-        application_id: g.id,
+        application_id: j.id,
         is_gift: false
-      }), x.Z.launchGame(g.id)
-    }, [g.id]),
+      }), x.Z.launchGame(j.id)
+    }, [j.id]),
     B = e.useCallback(() => {
       let {
         analyticsLocations: t,
@@ -118,11 +118,11 @@ function T(t) {
     transitionState: a,
     onClose: n,
     children: (0, i.jsx)(s.fef, {
-      children: (0, i.jsx)(c.$jN, {})
+      children: (0, i.jsx)(l.$jN, {})
     })
   });
   if (v) {
-    let t = L && !y ? {
+    let t = A && !y ? {
       variant: "primary",
       text: k.intl.string(k.t["s+J8Dl"]),
       onClick: O,
@@ -135,16 +135,16 @@ function T(t) {
     return (0, i.jsxs)(s.IX, {
       transitionState: a,
       onClose: n,
-      children: [(0, i.jsx)(m.y, {
-        sku: T,
+      children: [(0, i.jsx)(f.y, {
+        sku: g,
         title: k.intl.string(k.t["5glWta"])
       }), (0, i.jsx)(s.fef, {
-        children: (0, i.jsx)(c.Text, {
+        children: (0, i.jsx)(l.Text, {
           variant: "text-md/normal",
-          className: b.modalBodyText,
+          className: T.modalBodyText,
           children: k.intl.formatToPlainString(k.t.W2znvX, {
-            skuName: T.name,
-            applicationName: g.name
+            skuName: g.name,
+            applicationName: j.name
           })
         })
       }), (0, i.jsx)(s.Go$, {
@@ -160,16 +160,16 @@ function T(t) {
       icon: s.uIJ,
       disabled: !N
     };
-    return (0, i.jsx)(p.M, {
-      sku: T,
-      application: g,
+    return (0, i.jsx)(m.M, {
+      sku: g,
+      application: j,
       transitionState: a,
       onClose: n,
       hasAlreadyLinked: v,
       canStartAuthorization: N,
       primaryCTAButtonProps: t,
       bodyText: k.intl.formatToPlainString(k.t.Qmkje8, {
-        applicationName: g.name
+        applicationName: j.name
       }),
       title: k.intl.string(k.t.GPAtvf)
     })

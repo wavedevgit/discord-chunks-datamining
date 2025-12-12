@@ -2,7 +2,7 @@
 /** chunk id: 253355, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -14,29 +14,29 @@ var Chunk399606 = require("./399606.js"),
   Chunk813083 = require("./813083.jsx"),
   Chunk794324 = require("./794324.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk986517 = require("./986517.js");
+  Chunk638758 = require("./638758.js");
 
-function g(e) {
+function f(e) {
   let {
     category: t
-  } = e, n = (0, l.e7)([a.Z], () => a.Z.useReducedMotion), s = (0, l.e7)([i.Z], () => i.Z.isFocused()), {
-    catalogBannerStatic: g,
+  } = e, n = (0, l.e7)([o.Z], () => o.Z.useReducedMotion), a = (0, l.e7)([s.Z], () => s.Z.isFocused()), {
+    catalogBannerStatic: f,
     catalogBannerAnimated: p
   } = (0, u.Oi)(t);
   return (0, r.jsxs)("div", {
-    className: f.catalogBanner,
+    className: g.catalogBanner,
     children: [(0, r.jsx)("img", {
-      className: f.catalogBannerImage,
-      src: g,
+      className: g.catalogBannerImage,
+      src: f,
       alt: t.name
-    }), null != p && !n && s && (0, r.jsx)(o.Z, {
+    }), null != p && !n && a && (0, r.jsx)(i.Z, {
       src: p,
-      className: f.animationAsset,
+      className: g.animationAsset,
       autoPlay: true,
       loop: true
     }), (0, r.jsx)(c.Z, {
       category: t,
-      className: f.limitedTimeBadge,
+      className: g.limitedTimeBadge,
       daysRemainingText: d.t["8gsP5M"]
     })]
   })

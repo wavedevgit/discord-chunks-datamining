@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk684256 = require("./684256.jsx"),
   Chunk314734 = require("./314734.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk778376 = require("./778376.js");
+  Chunk487303 = require("./487303.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -68,26 +68,26 @@ let O = {
 function S(e, t) {
   let {
     context: n,
-    entrypoint: a,
+    entrypoint: o,
     initHistory: u
   } = e, {
     analyticsLocations: d
-  } = (0, l.ZP)(o.Z.APP_LAUNCHER);
+  } = (0, l.ZP)(a.Z.APP_LAUNCHER);
   return i.useEffect(() => {
     (0, s.yw)(m.rMx.APPLICATION_COMMAND_TOP_OF_FUNNEL, {
-      source: a,
+      source: o,
       location: "app_launcher"
     })
-  }, [a]), i.useEffect(() => {
+  }, [o]), i.useEffect(() => {
     let e = Date.now();
     return () => {
       (0, s.yw)(m.rMx.APP_LAUNCHER_CLOSED, {
         reason: c.Z.closeReason(),
         time_spent: Date.now() - e,
-        source: a
+        source: o
       })
     }
-  }, [a]), (0, r.jsx)("div", {
+  }, [o]), (0, r.jsx)("div", {
     className: h.drawerSizingWrapper,
     ref: t,
     style: O,
@@ -99,7 +99,7 @@ function S(e, t) {
           initHistory: u,
           children: (0, r.jsx)(C, {
             context: n,
-            entrypoint: a
+            entrypoint: o
           })
         })
       })
@@ -112,22 +112,22 @@ function T(e) {
   let {
     initHistory: t,
     children: n
-  } = e, [a, o] = i.useState(null != t ? t : [{
+  } = e, [o, a] = i.useState(null != t ? t : [{
     type: u.gc.HOME
-  }]), [s, l] = i.useState({}), c = a[a.length - 1], [d, f] = i.useState(false), p = i.useCallback(e => {
-    o(t => [...t, e])
+  }]), [s, l] = i.useState({}), c = o[o.length - 1], [d, f] = i.useState(false), p = i.useCallback(e => {
+    a(t => [...t, e])
   }, []), _ = i.useCallback(() => {
     let e = null;
-    o(t => t.length <= 1 ? t : (e = t[t.length - 1], t.slice(0, false))), l(t => null == e ? t : y(E({}, t), {
+    a(t => t.length <= 1 ? t : (e = t[t.length - 1], t.slice(0, false))), l(t => null == e ? t : y(E({}, t), {
       [e.type]: e
     }))
   }, []), m = i.useCallback(e => {
     var t;
-    return null != (t = a.findLast(t => t.type === e)) ? t : s[e]
-  }, [a, s]);
+    return null != (t = o.findLast(t => t.type === e)) ? t : s[e]
+  }, [o, s]);
   return (0, r.jsx)(u.uX.Provider, {
     value: {
-      history: a,
+      history: o,
       discard: s,
       currentView: c,
       pushHistory: p,
@@ -144,10 +144,10 @@ function C(e) {
   let {
     context: t,
     entrypoint: n
-  } = e, [o, s] = i.useState(""), {
+  } = e, [a, s] = i.useState(""), {
     setScroller: l,
     isCloseToBottom: c
-  } = A(o), {
+  } = A(a), {
     currentView: m,
     getMostRecentHistoryItemByType: g,
     setSlideReady: E
@@ -161,11 +161,11 @@ function C(e) {
   if (null == m) return null;
   let y = g(u.gc.LIST),
     O = g(u.gc.APPLICATION);
-  return (0, r.jsxs)(a.MyZ, {
+  return (0, r.jsxs)(o.MyZ, {
     activeSlide: m.type,
     width: _.Gy,
     onSlideReady: b,
-    children: [(0, r.jsx)(a.Mi4, {
+    children: [(0, r.jsx)(o.Mi4, {
       id: u.gc.HOME,
       children: (0, r.jsx)("div", {
         className: h.slideContent,
@@ -175,11 +175,11 @@ function C(e) {
           setScroller: l,
           context: t,
           entrypoint: n,
-          searchQuery: o,
+          searchQuery: a,
           setSearchQuery: s
         })
       })
-    }), (0, r.jsx)(a.Mi4, {
+    }), (0, r.jsx)(o.Mi4, {
       id: u.gc.LIST,
       children: (0, r.jsx)("div", {
         className: h.slideContent,
@@ -194,7 +194,7 @@ function C(e) {
           sectionOverallPosition: y.sectionOverallPosition
         })
       })
-    }), (0, r.jsx)(a.Mi4, {
+    }), (0, r.jsx)(o.Mi4, {
       id: u.gc.APPLICATION,
       children: (0, r.jsx)("div", {
         className: h.slideContent,
@@ -210,16 +210,16 @@ function C(e) {
 }
 
 function A(e) {
-  let [t, n] = i.useState(null), [r, a] = i.useState(false), o = i.useRef(0);
+  let [t, n] = i.useState(null), [r, o] = i.useState(false), a = i.useRef(0);
   return i.useEffect(() => {
     null == t || t.scrollTo(0, 0)
   }, [t, e]), i.useEffect(() => {
-    if (null != t) return t.scrollTo(0, o.current), t.addEventListener("scroll", e), () => {
+    if (null != t) return t.scrollTo(0, a.current), t.addEventListener("scroll", e), () => {
       t.removeEventListener("scroll", e, false)
     };
 
     function e() {
-      null != t && (o.current = t.scrollTop, a(t.scrollHeight - (t.scrollTop + t.clientHeight) < .5 * _.K7))
+      null != t && (a.current = t.scrollTop, o(t.scrollHeight - (t.scrollTop + t.clientHeight) < .5 * _.K7))
     }
   }, [t]), {
     setScroller: n,

@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk430824 = require("./430824.js"),
   Chunk313550 = require("./313550.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk389146 = require("./389146.js");
+  Chunk406671 = require("./406671.js");
 let f = e => {
   let {
     onClose: t,
@@ -25,14 +25,14 @@ let f = e => {
   });
   return (0, r.jsxs)("div", {
     className: d.confirmationContainer,
-    children: [(0, r.jsx)(o.Heading, {
+    children: [(0, r.jsx)(a.Heading, {
       className: d.confirmationHeader,
       variant: "heading-lg/extrabold",
       children: u.intl.format(u.t.I5dYFs, {
         serverName: null == p ? true : p.name,
         tierName: n.name
       })
-    }), !_.isEmpty() && (0, r.jsx)(o.Text, {
+    }), !_.isEmpty() && (0, r.jsx)(a.Text, {
       className: d.confirmationSubtitle,
       variant: "text-sm/normal",
       color: "text-default",
@@ -41,12 +41,12 @@ let f = e => {
       })
     }), (0, r.jsxs)("div", {
       className: d.actions,
-      children: [(0, r.jsx)(a.zxk, {
+      children: [(0, r.jsx)(o.zxk, {
         variant: "primary",
         text: u.intl.string(u.t.WWvswD),
         fullWidth: true,
         onClick: () => (0, s.Z)("role_sub_mweb_success_modal")
-      }), (0, r.jsx)(a.zxk, {
+      }), (0, r.jsx)(o.zxk, {
         variant: "secondary",
         text: u.intl.string(u.t.y84Dhr),
         fullWidth: true,

@@ -35,7 +35,7 @@ function u(e) {
 
 function d(e) {
   let [t, n] = i.useState(false);
-  return (0, r.jsx)(a.Modal, u({
+  return (0, r.jsx)(o.Modal, u({
     size: "md",
     title: l.intl.string(l.t["zQ1+Jw"]),
     subtitle: l.intl.string(l.t.K1gWXn),
@@ -46,7 +46,7 @@ function d(e) {
       },
       variant: "primary"
     }],
-    actionBarInput: (0, r.jsx)(a.XZJ, {
+    actionBarInput: (0, r.jsx)(o.XZJ, {
       checked: t,
       onChange: e => n(e),
       label: l.intl.string(l.t.XAiAgD),

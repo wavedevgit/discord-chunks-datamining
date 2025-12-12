@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk913527 = require("./913527.js"),
-  o = require.n(Chunk913527),
+  a = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -19,8 +19,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk297867 = require("./297867.js"),
-  Chunk478411 = require("./478411.js");
+  Chunk422622 = require("./422622.js"),
+  Chunk197571 = require("./197571.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,7 +60,7 @@ class v extends Chunk473749.PureComponent {
           children: g.intl.string(g.t.gflHO6)
         }), (0, r.jsx)("div", {
           className: E.timestamp,
-          children: o()(t).calendar()
+          children: a()(t).calendar()
         })]
       })]
     })
@@ -74,10 +74,10 @@ class v extends Chunk473749.PureComponent {
         children: [(0, Chunk54381.jsx)(Chunk600164.Z, {
           justify: Chunk600164.Z.Justify.CENTER,
           children: (0, Chunk54381.jsx)("div", {
-            className: Chunk297867.errorArt
+            className: Chunk422622.errorArt
           })
         }), (0, Chunk54381.jsx)("div", {
-          className: Chunk297867.description,
+          className: Chunk422622.description,
           children: Chunk388032.intl.format(Chunk388032.t.RAaWyc, {
             applicationName: module.name
           })
@@ -86,8 +86,8 @@ class v extends Chunk473749.PureComponent {
         children: (0, Chunk54381.jsxs)(Chunk600164.Z, {
           justify: Chunk600164.Z.Justify.BETWEEN,
           children: [(0, Chunk54381.jsx)(Chunk755721.zx, {
-            className: Chunk297867.linkButton,
-            size: Chunk297867.linkButtonSize,
+            className: Chunk422622.linkButton,
+            size: Chunk422622.linkButtonSize,
             look: Chunk755721.zx.Looks.LINK,
             color: Chunk755721.zx.Colors.PRIMARY,
             onClick: this.onClose,
@@ -97,7 +97,7 @@ class v extends Chunk473749.PureComponent {
             justify: Chunk600164.Z.Justify.END,
             children: [(0, Chunk54381.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
-              className: Chunk297867.retryButton,
+              className: Chunk422622.retryButton,
               children: (0, Chunk54381.jsx)(Chunk481060.Button, {
                 variant: "secondary",
                 text: Chunk388032.intl.string(Chunk388032.t["5911Lb"]),
@@ -120,24 +120,24 @@ class v extends Chunk473749.PureComponent {
     } = this.props;
     if (exports.type !== Chunk981631.TzF.CONFLICT) throw Error("Cannot render conflict for non conflict type");
     return (0, Chunk54381.jsxs)(Chunk481060.hzk, {
-      className: Chunk478411.marginBottom20,
+      className: Chunk197571.marginBottom20,
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk297867.description,
+        className: Chunk422622.description,
         children: Chunk388032.intl.format(Chunk388032.t.eyXUP6, {
           applicationName: module.name
         })
-      }), this.renderConflictButton(Chunk388032.intl.string(Chunk388032.t.AQUmkr), exports.remote.timestamp, Chunk297867.conflictDownloadArt, this.handleChooseDownload), (0, Chunk54381.jsxs)(Chunk600164.Z, {
-        className: Chunk297867.choiceWrapper,
+      }), this.renderConflictButton(Chunk388032.intl.string(Chunk388032.t.AQUmkr), exports.remote.timestamp, Chunk422622.conflictDownloadArt, this.handleChooseDownload), (0, Chunk54381.jsxs)(Chunk600164.Z, {
+        className: Chunk422622.choiceWrapper,
         align: Chunk600164.Z.Align.CENTER,
         children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk297867.choiceLine
+          className: Chunk422622.choiceLine
         }), (0, Chunk54381.jsx)("div", {
-          className: Chunk297867.choiceTitle,
+          className: Chunk422622.choiceTitle,
           children: Chunk388032.intl.string(Chunk388032.t.WUsA2D)
         }), (0, Chunk54381.jsx)("div", {
-          className: Chunk297867.choiceLine
+          className: Chunk422622.choiceLine
         })]
-      }), this.renderConflictButton(Chunk388032.intl.string(Chunk388032.t.AXVwsw), exports.next.timestamp, Chunk297867.conflictUploadArt, this.handleChooseUpload)]
+      }), this.renderConflictButton(Chunk388032.intl.string(Chunk388032.t.AXVwsw), exports.next.timestamp, Chunk422622.conflictUploadArt, this.handleChooseUpload)]
     })
   }
   render() {
@@ -147,17 +147,17 @@ class v extends Chunk473749.PureComponent {
     } = this.props, n = module.type === Chunk981631.TzF.CONFLICT ? Chunk388032.intl.string(Chunk388032.t.oNbO1f) : Chunk388032.intl.string(Chunk388032.t.as4Tgg);
     return (0, Chunk54381.jsxs)(Chunk481060.Y0X, {
       transitionState: exports,
-      className: Chunk297867.modal,
+      className: Chunk422622.modal,
       "aria-label": require,
       parentComponent: "CloudSyncResolutionModal",
       children: [(0, Chunk54381.jsxs)(Chunk481060.xBx, {
         separator: false,
         children: [(0, Chunk54381.jsx)(Chunk481060.olH, {
-          className: Chunk297867.closeButton,
+          className: Chunk422622.closeButton,
           onClick: this.onClose
         }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
-          className: Chunk478411.marginReset,
+          className: Chunk197571.marginReset,
           children: require
         })]
       }), module.type === Chunk981631.TzF.CONFLICT ? this.renderConflict() : this.renderError()]
@@ -206,14 +206,14 @@ async function I(e, t, n) {
   let i = f.Z.getApplication(e);
   if (null == i) return;
   let {
-    cloudSync: a = true,
-    cloudSyncForceHash: o = null,
+    cloudSync: o = true,
+    cloudSyncForceHash: a = null,
     analyticsParams: s
   } = n;
-  if (a && null != t) {
+  if (o && null != t) {
     let e = t.branchId;
     try {
-      await u.Z(t.id, e, o)
+      await u.Z(t.id, e, a)
     } catch (n) {
       (0, c.h7j)(n => (0, r.jsx)(S, O({
         libraryApplication: t,

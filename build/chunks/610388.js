@@ -2,7 +2,7 @@
 /** chunk id: 610388, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk553890 = require("./553890.js");
 let i = {
@@ -16,7 +16,7 @@ let i = {
     10: 8,
     13: 4
   },
-  a = {
+  o = {
     BYTE: 1,
     ASCII: 2,
     SHORT: 3,
@@ -27,7 +27,7 @@ let i = {
     SRATIONAL: 10,
     IFD: 13
   },
-  o = {
+  a = {
     getAsciiValue: s,
     getByteAt: l,
     getAsciiAt: c,
@@ -39,7 +39,7 @@ let i = {
     getSrationalAt: m,
     getIfdPointerAt: h,
     typeSizes: i,
-    tagTypes: a,
+    tagTypes: o,
     getTypeSize: g
   };
 
@@ -84,6 +84,6 @@ function h(e, t, n) {
 }
 
 function g(e) {
-  if (true === a[e]) throw Error("No such type found.");
-  return i[a[e]]
+  if (true === o[e]) throw Error("No such type found.");
+  return i[o[e]]
 }

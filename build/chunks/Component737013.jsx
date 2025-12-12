@@ -12,7 +12,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk314897 = require("./314897.js"),
   Chunk131951 = require("./131951.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk926908 = require("./926908.js");
+  Chunk725227 = require("./725227.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -54,7 +54,7 @@ function _(e, t) {
 }
 
 function m(e, t) {
-  let d = (0, a.vRw)(),
+  let d = (0, o.vRw)(),
     {
       videoEnabled: p,
       hasVideoDevice: m
@@ -63,10 +63,10 @@ function m(e, t) {
       hasVideoDevice: l.Z.isVideoAvailable()
     })),
     h = (0, i.e7)([s.default], () => s.default.getId() === e),
-    g = (0, o.Z)();
+    g = (0, a.Z)();
 
   function E() {
-    (0, a.ZDy)(async () => {
+    (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("91018").then(n.bind(n, 601572));
@@ -75,16 +75,16 @@ function m(e, t) {
       }))
     }, {
       modalKey: "camera-preview",
-      contextKey: null != t ? (0, a.VnL)(t) : d
+      contextKey: null != t ? (0, o.VnL)(t) : d
     })
   }
-  return (!p || g) && h && m ? (0, r.jsx)(a.sNh, {
+  return (!p || g) && h && m ? (0, r.jsx)(o.sNh, {
     id: "change-video-background",
     label: (0, r.jsx)("div", {
       className: u.item,
       children: p ? c.intl.string(c.t.mZKxHb) : c.intl.string(c.t["vkV93/"])
     }),
     action: E,
-    icon: p ? a.yMH : a.tEF
+    icon: p ? o.yMH : o.tEF
   }) : null
 }

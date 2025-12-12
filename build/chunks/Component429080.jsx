@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 429080, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,12 +15,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk898444 = require("./898444.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk683103 = require("./683103.js"),
-  Chunk647053 = require("./647053.js");
-let b = function(e) {
+  Chunk818923 = require("./818923.js"),
+  Chunk746882 = require("./746882.js");
+let _ = function(e) {
   let {
     quest: t
-  } = e, [n, l] = i.useState(false), b = i.useRef(null), _ = (0, s.e7)([u.default], () => u.default.getCurrentUser()), E = d.ZP.useName(_), O = (0, c.Z)(null == _ ? true : _.id), v = i.useCallback(e => {
+  } = e, [n, l] = i.useState(false), _ = i.useRef(null), b = (0, s.e7)([u.default], () => u.default.getCurrentUser()), E = d.ZP.useName(b), O = (0, c.Z)(null == b ? true : b.id), v = i.useCallback(e => {
     var n, i;
     return (0, r.jsx)(p.Z, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -42,7 +42,7 @@ let b = function(e) {
     }({
       name: E,
       quest: t,
-      memberListItemRef: b,
+      memberListItemRef: _,
       applicationStream: O
     }, e), i = i = {
       closePopout: () => {
@@ -73,7 +73,7 @@ let b = function(e) {
       }), (0, r.jsx)("div", {
         className: m.memberListContainer,
         children: (0, r.jsx)(o.yRy, {
-          targetElementRef: b,
+          targetElementRef: _,
           renderPopout: v,
           position: "bottom",
           shouldShow: n,
@@ -85,7 +85,7 @@ let b = function(e) {
           fixed: true,
           scrollBehavior: "close",
           children: () => (0, r.jsx)("div", {
-            ref: b,
+            ref: _,
             className: a()(m.minimalMemberItem, {
               [m.selected]: n
             }),
@@ -96,9 +96,9 @@ let b = function(e) {
                 className: m.memberItemContent,
                 children: [(0, r.jsx)(o.qEK, {
                   size: o.EFr.SIZE_32,
-                  src: null == _ ? true : _.getAvatarURL(true, 32),
+                  src: null == b ? true : b.getAvatarURL(true, 32),
                   status: f.Skl.ONLINE,
-                  "aria-label": null == _ ? true : _.username
+                  "aria-label": null == b ? true : b.username
                 }), (0, r.jsxs)("div", {
                   className: m.memberInfo,
                   children: [(0, r.jsx)(o.Text, {

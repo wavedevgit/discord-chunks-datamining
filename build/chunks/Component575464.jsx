@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 575464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk158776 = require("./158776.js"),
   Chunk51144 = require("./51144.js"),
-  Chunk828377 = require("./828377.js");
+  Chunk469407 = require("./469407.js");
 
 function m(e) {
   var t, n;
@@ -27,12 +27,12 @@ function m(e) {
     selected: C,
     checked: y,
     disabled: v = false,
-    inlineUsername: O = true,
-    onClick: x,
-    onMouseEnter: E,
-    "aria-setsize": j,
-    "aria-posinset": S
-  } = e, _ = (0, o.e7)([p.Z], () => p.Z.getStatus(r.id)), P = (0, a.JA)(String(r.id));
+    inlineUsername: _ = true,
+    onClick: O,
+    onMouseEnter: x,
+    "aria-setsize": E,
+    "aria-posinset": j
+  } = e, S = (0, o.e7)([p.Z], () => p.Z.getStatus(r.id)), P = (0, a.JA)(String(r.id));
   return (0, i.jsx)(s.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -52,50 +52,50 @@ function m(e) {
     return e
   }({
     id: "user-row-".concat(m),
-    className: l()(h.friendWrapper, {
-      [h.disabled]: v
+    className: l()(f.friendWrapper, {
+      [f.disabled]: v
     }),
     onClick: () => {
-      null != x && x(r.id)
+      null != O && O(r.id)
     },
     onMouseEnter: () => {
-      null != E && E(m)
+      null != x && x(m)
     }
   }, P), n = n = {
     role: "option",
     "aria-selected": y,
     "aria-disabled": v,
-    "aria-setsize": j,
-    "aria-posinset": S,
+    "aria-setsize": E,
+    "aria-posinset": j,
     children: (0, i.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,
-      className: l()(h.friend, {
-        [h.friendSelected]: C,
-        [h.twoRows]: !O
+      className: l()(f.friend, {
+        [f.friendSelected]: C,
+        [f.twoRows]: !_
       }),
       children: [(0, i.jsx)(u.Z, {
         user: r,
-        status: _,
-        className: h.avatar
+        status: S,
+        className: f.avatar
       }), (0, i.jsxs)(d.Z, {
-        className: h.match,
+        className: f.match,
         align: d.Z.Align.BASELINE,
-        direction: O ? d.Z.Direction.HORIZONTAL : d.Z.Direction.VERTICAL,
+        direction: _ ? d.Z.Direction.HORIZONTAL : d.Z.Direction.VERTICAL,
         children: [(0, i.jsx)(s.Text, {
           tag: "strong",
-          className: h.nickname,
+          className: f.nickname,
           "aria-hidden": true,
           variant: "text-md/medium",
-          children: null != b && b === r.tag ? f.ZP.getName(r) : null != b && "" !== b ? b : f.ZP.getName(r)
+          children: null != b && b === r.tag ? h.ZP.getName(r) : null != b && "" !== b ? b : h.ZP.getName(r)
         }), (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
           children: (0, i.jsx)(c.Z, {
             user: r,
             hideDiscriminator: g,
-            className: h.discordTag,
-            usernameClass: h.__invalid_weightMedium,
-            discriminatorClass: h.__invalid_weightMedium,
+            className: f.discordTag,
+            usernameClass: f.__invalid_weightMedium,
+            discriminatorClass: f.__invalid_weightMedium,
             forceUsername: true
           })
         })]

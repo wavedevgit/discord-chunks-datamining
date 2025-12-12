@@ -19,8 +19,8 @@ function u(e) {
     onAction: n
   } = e, {
     themeType: u
-  } = (0, o.z)(), d = u === l.l.MODAL_V2, f = (0, i.Z)(t);
-  if (!(0, a.Z)(t) || null == f) return null;
+  } = (0, a.z)(), d = u === l.l.MODAL_V2, f = (0, i.Z)(t);
+  if (!(0, o.Z)(t) || null == f) return null;
   let p = e => (e.stopPropagation(), null == n || n({
     action: "PRESS_WATCH_BUTTON"
   }), window.open(f));

@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk239381 = require("./239381.js");
+  Chunk582602 = require("./582602.js");
 
 function E(e) {
   let t = "__CLIP_METADATA__",
@@ -41,10 +41,10 @@ function b(e) {
   let {
     message: t,
     compact: n
-  } = e, b = t.channel_id, y = (0, o.e7)([f.Z], () => null != t.messageReference ? f.Z.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
+  } = e, b = t.channel_id, y = (0, a.e7)([f.Z], () => null != t.messageReference ? f.Z.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
     clipId: O,
     remoteTriggerClipId: v
-  } = i.useMemo(() => null != y ? E(y.content) : {}, [y]), S = (0, o.e7)([c.Z], () => c.Z.getMatchingGroupClip(O, v)), I = (0, o.e7)([c.Z], () => null != S && null != b && c.Z.wasClipSharedInChannel(S.id, b)), {
+  } = i.useMemo(() => null != y ? E(y.content) : {}, [y]), S = (0, a.e7)([c.Z], () => c.Z.getMatchingGroupClip(O, v)), I = (0, a.e7)([c.Z], () => null != S && null != b && c.Z.wasClipSharedInChannel(S.id, b)), {
     onShareClick: T
   } = (0, d.Z)(b), C = i.useCallback(() => {
     var e;
@@ -59,7 +59,7 @@ function b(e) {
   if (null == y || null == O && null == v || null == S || I) return null;
   let A = y.attachments.find(e => {
       var t;
-      return (0, a.yE)(null != (t = e.flags) ? t : 0, m.J0y.IS_CLIP)
+      return (0, o.yE)(null != (t = e.flags) ? t : 0, m.J0y.IS_CLIP)
     }),
     N = null;
   if ((null == A ? true : A.proxy_url) != null) {

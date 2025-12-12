@@ -8,14 +8,14 @@ require.d(exports, {
 var Chunk688619 = require("./688619.js"),
   i = require.n(Chunk688619);
 
-function a(e, t, n) {
-  let [r, i] = e, [a, o] = t, s = (r + i) / 2, l = s;
-  return n === s ? l : n < s ? a + (n - r) / (s - r) * (l - a) : l + (n - s) / (i - s) * (o - l)
+function o(e, t, n) {
+  let [r, i] = e, [o, a] = t, s = (r + i) / 2, l = s;
+  return n === s ? l : n < s ? o + (n - r) / (s - r) * (l - o) : l + (n - s) / (i - s) * (a - l)
 }
 
-function o(e, t, n) {
-  let [r, i] = e, [a, o] = t;
-  return a + (n - r) / (i - r) * (o - a)
+function a(e, t, n) {
+  let [r, i] = e, [o, a] = t;
+  return o + (n - r) / (i - r) * (a - o)
 }
 let s = [0, 2];
 
@@ -23,7 +23,7 @@ function l(e, t, n) {
   let r = i()(e);
   if ("background" !== t) return r.set("hsl.s", "*".concat(n)).hex();
   {
-    let e = o([0, 1], [.25, 1], n);
+    let e = a([0, 1], [.25, 1], n);
     return r.set("hsl.s", "*".concat(e)).hex()
   }
 }
@@ -36,9 +36,9 @@ function p(e, t, n, r) {
   switch (t) {
     case "background":
     case "border":
-      return i()(e).set("hsl.l", "*".concat(a(s, "light" === n ? u : c, r))).hex();
+      return i()(e).set("hsl.l", "*".concat(o(s, "light" === n ? u : c, r))).hex();
     case "text":
-      return i()(e).set("hsl.l", "*".concat(a(s, "light" === n ? f : d, r))).hex();
+      return i()(e).set("hsl.l", "*".concat(o(s, "light" === n ? f : d, r))).hex();
     default:
       return e
   }

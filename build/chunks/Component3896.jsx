@@ -1,26 +1,26 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 3896, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk456935 = require("./456935.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk146473 = require("./146473.js");
+  Chunk824804 = require("./824804.js");
 
-function f(e) {
+function m(e) {
   let {
     guild: t
-  } = e, l = t.verificationLevel, f = i.useMemo(() => (0, o.I9)(l), [l]);
-  return (0, r.jsxs)(s.P3F, {
-    onClick: () => (0, s.ZDy)(async () => {
+  } = e, l = t.verificationLevel, m = i.useMemo(() => (0, o.I9)(l), [l]);
+  return (0, r.jsxs)(a.P3F, {
+    onClick: () => (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("72458").then(n.bind(n, 694278));
@@ -58,34 +58,34 @@ function f(e) {
         }), i))
       }
     }),
-    className: a()(g.simpleItemWrapper, g.clickable),
+    className: s()(g.simpleItemWrapper, g.clickable),
     children: [(0, r.jsxs)("div", {
       className: g.itemContent,
-      children: [(0, r.jsx)(s.Heading, {
+      children: [(0, r.jsx)(a.Heading, {
         variant: "text-md/semibold",
         color: "text-strong",
-        children: u.intl.string(u.t.DpRdYK)
-      }), (0, r.jsx)(s.Text, {
+        children: d.intl.string(d.t.DpRdYK)
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: u.intl.string(u.t.mA17eD)
+        children: d.intl.string(d.t.mA17eD)
       }), (0, r.jsx)("div", {
         className: g.__invalid_pillRow,
-        children: (0, r.jsxs)(s.Text, {
+        children: (0, r.jsxs)(a.Text, {
           variant: "text-xs/medium",
           color: "interactive-text-default",
           className: g.valuePill,
-          children: [l === d.sFg.VERY_HIGH ? (0, r.jsx)(s.AtH, {
+          children: [l === u.sFg.VERY_HIGH ? (0, r.jsx)(a.AtH, {
             size: "custom",
             color: "currentColor",
             width: 16,
             height: 16
-          }) : (0, r.jsx)(s._XJ, {
+          }) : (0, r.jsx)(a._XJ, {
             size: "custom",
             color: "currentColor",
             width: 16,
             height: 16
-          }), f]
+          }), m]
         })
       })]
     }), (0, r.jsx)(c.Z, {

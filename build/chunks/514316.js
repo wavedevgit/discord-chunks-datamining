@@ -8,14 +8,14 @@ let Chunk89555 = require("./89555.js"),
   Chunk975439 = require("./975439.js"),
   Chunk160317 = require("./160317.js");
 exports.DEFAULT_LOCALE = "en-US";
-class o {
+class a {
   constructor({
     initialLocale: e = t.DEFAULT_LOCALE,
     defaultLocale: n = t.DEFAULT_LOCALE,
     formatConfig: i = r.DEFAULT_FORMAT_CONFIG,
-    forceLookupMatcher: o = false
+    forceLookupMatcher: a = false
   }) {
-    this.onLocaleChange = e => (this._localeSubscriptions.add(e), () => this._localeSubscriptions.delete(e)), this.currentLocale = e, this.defaultLocale = n, this.formatConfig = i, this._forceLookupMatcher = o, this.data = (0, a.makeDataFormatters)([this.currentLocale, this.defaultLocale], this.formatConfig, this._forceLookupMatcher), this._localeSubscriptions = new Set
+    this.onLocaleChange = e => (this._localeSubscriptions.add(e), () => this._localeSubscriptions.delete(e)), this.currentLocale = e, this.defaultLocale = n, this.formatConfig = i, this._forceLookupMatcher = a, this.data = (0, o.makeDataFormatters)([this.currentLocale, this.defaultLocale], this.formatConfig, this._forceLookupMatcher), this._localeSubscriptions = new Set
   }
   withFormatters(e) {
     for (let [t, n] of Object.entries(e)) this[t] = this.makeFormatFunction(n);
@@ -29,7 +29,7 @@ class o {
     return (e, r) => null == e ? null : n(e(this.currentLocale), r, t)
   }
   setLocale(e) {
-    this.currentLocale = e, this.data = (0, a.makeDataFormatters)([this.currentLocale, this.defaultLocale], this.formatConfig, this._forceLookupMatcher), this.emitLocaleChange(e)
+    this.currentLocale = e, this.data = (0, o.makeDataFormatters)([this.currentLocale, this.defaultLocale], this.formatConfig, this._forceLookupMatcher), this.emitLocaleChange(e)
   }
   emitLocaleChange(e) {
     for (let t of this._localeSubscriptions) t(e)
@@ -54,4 +54,4 @@ class o {
     })
   }
 }
-exports.IntlManager = o
+exports.IntlManager = a

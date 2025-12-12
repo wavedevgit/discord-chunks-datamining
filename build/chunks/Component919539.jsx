@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk736530 = require("./736530.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk372807 = require("./372807.js");
+  Chunk435757 = require("./435757.js");
 
 function A(e) {
   let {
@@ -50,7 +50,7 @@ function A(e) {
   }
 
   function j(e, t) {
-    if (!e && (0, p.S)()) return void o.Z.showAgeVerificationGetStartedModal({
+    if (!e && (0, p.S)()) return void a.Z.showAgeVerificationGetStartedModal({
       entryPoint: s.cU.MESSAGE_REQUESTS_SETTINGS
     });
     t ? x(e) : M(!e)
@@ -68,7 +68,7 @@ function A(e) {
       body: T.intl.string(T.t.Ry2z74),
       confirmText: T.intl.string(T.t.gm1Vej),
       cancelText: T.intl.string(T.t.p89ACt),
-      confirmButtonColor: a.zx.Colors.BRAND,
+      confirmButtonColor: o.zx.Colors.BRAND,
       onConfirm: n,
       onCancel: t
     })

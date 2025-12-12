@@ -17,10 +17,10 @@ let c = 30 * Chunk70956.Z.Millis.SECOND,
 async function d(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = s.Z.getStorefrontData(e),
-    a = (null == n ? true : n.state) === "loading",
+    o = (null == n ? true : n.state) === "loading",
     d = (null == n ? true : n.state) === "error" && (null == n ? true : n.fetchedAt) != null && Date.now() - n.fetchedAt < c,
     f = (null == n ? true : n.state) === "fetched" && (null == n ? true : n.fetchedAt) != null && Date.now() - n.fetchedAt < u;
-  if (!a && !d && !f) try {
+  if (!o && !d && !f) try {
     var p;
     i.Z.dispatch({
       type: "SOCIAL_LAYER_STOREFRONT_LOAD",
@@ -34,7 +34,7 @@ async function d(e) {
     i.Z.dispatch({
       type: "SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS",
       guildId: e,
-      storefront: (0, o.Uc)(t.body)
+      storefront: (0, a.Uc)(t.body)
     }), i.Z.dispatch({
       type: "STORE_LISTINGS_FETCH_SUCCESS",
       storeListings: null != (p = t.body.store_listings) ? p : []
@@ -61,7 +61,7 @@ async function f(e, t) {
     i.Z.dispatch({
       type: "SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS",
       guildId: e,
-      storefront: (0, o.Uc)({
+      storefront: (0, a.Uc)({
         application_id: n.body.store_listing.sku.application_id,
         title: "",
         logo_asset_id: true,

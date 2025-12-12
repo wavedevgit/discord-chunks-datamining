@@ -1,4 +1,4 @@
-/** Chunk was on 9414 **/
+/** Chunk was on 86736 **/
 /** chunk id: 491302, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk486199 = require("./486199.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk546151 = require("./546151.js");
+  Chunk941678 = require("./941678.js");
 
 function x(e) {
   let {
@@ -29,35 +29,35 @@ function x(e) {
     onToggleExpand: O
   } = e, y = r.useMemo(() => {
     var e;
-    return null != (e = t.avatar) && /^data:/.test(e) ? e : (0, p.ov)({
+    return null != (e = t.avatar) && /^data:/.test(e) ? e : (0, m.ov)({
       id: t.id,
       avatar: e,
-      discriminator: f.fo$
+      discriminator: g.fo$
     })
-  }, [t]), C = r.useCallback(() => {
+  }, [t]), _ = r.useCallback(() => {
     (0, o.Z)({
-      title: g.intl.formatToPlainString(g.t.gBKqZ0, {
+      title: f.intl.formatToPlainString(f.t.gBKqZ0, {
         name: t.name
       }),
-      subtitle: g.intl.string(g.t.zO9jrD),
-      confirmText: g.intl.string(g.t.CMy0Cj),
+      subtitle: f.intl.string(f.t.zO9jrD),
+      confirmText: f.intl.string(f.t.CMy0Cj),
       onConfirm: () => {
         u.Z.delete(t.guild_id, t.id).catch(() => {
           c.Z.show({
-            title: g.intl.string(g.t.LpbaFV),
-            body: g.intl.string(g.t["/4TwKf"])
+            title: f.intl.string(f.t.LpbaFV),
+            body: f.intl.string(f.t["/4TwKf"])
           })
         })
       }
     })
-  }, [t.guild_id, t.id, t.name]), N = [];
-  null != t.source_channel && null != t.source_guild && (N.push({
+  }, [t.guild_id, t.id, t.name]), C = [];
+  null != t.source_channel && null != t.source_guild && (C.push({
     icon: s.MqZ,
     text: t.source_channel.name
-  }), N.push({
+  }), C.push({
     text: (0, i.jsx)("span", {
       className: h.guildSource,
-      children: g.intl.format(g.t["H/jJ6R"], {
+      children: f.intl.format(f.t["H/jJ6R"], {
         guildHook: () => (0, i.jsx)("span", {
           className: h.sourceName,
           children: t.source_guild.name
@@ -65,8 +65,8 @@ function x(e) {
       })
     }, "guild-source")
   }));
-  let S = null;
-  return j && null != n && (S = (0, i.jsxs)("div", {
+  let N = null;
+  return j && null != n && (N = (0, i.jsxs)("div", {
     className: h.body,
     children: [(0, i.jsx)(s.izJ, {
       className: h.topDivider
@@ -76,7 +76,7 @@ function x(e) {
         direction: "horizontal",
         gap: 16,
         children: [(0, i.jsx)(s.oil, {
-          label: g.intl.string(g.t.I1o5gV),
+          label: f.intl.string(f.t.I1o5gV),
           value: n.name,
           onChange: e => {
             d.Z.updateWebhook({
@@ -86,7 +86,7 @@ function x(e) {
           maxLength: 80,
           error: v.name
         }), (0, i.jsx)(a.y6, {
-          label: g.intl.string(g.t["4TuWfc"]),
+          label: f.intl.string(f.t["4TuWfc"]),
           value: n.channel_id,
           options: x,
           onChange: e => {
@@ -98,10 +98,10 @@ function x(e) {
       }), (0, i.jsx)(s.izJ, {
         className: h.bottomDivider
       }), (0, i.jsx)(l.Avr, {
-        onClick: C,
+        onClick: _,
         size: "sm",
         variant: "critical",
-        text: g.intl.string(g.t.CMy0Cj)
+        text: f.intl.string(f.t.CMy0Cj)
       })]
     })]
   })), (0, i.jsx)(s.Zbd, {
@@ -116,17 +116,17 @@ function x(e) {
           direction: "horizontal",
           justify: "space-between",
           align: "center",
-          children: [(0, i.jsx)(m.Z, {
+          children: [(0, i.jsx)(b.Z, {
             name: t.name,
             imageSrc: y,
-            details: N
-          }), (0, i.jsx)(b.Z, {
+            details: C
+          }), (0, i.jsx)(p.Z, {
             className: h.expandIcon,
             expanded: j,
             "aria-hidden": true
           })]
         })
-      }), S]
+      }), N]
     })
   })
 }

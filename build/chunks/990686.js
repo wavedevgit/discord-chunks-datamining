@@ -1,14 +1,14 @@
-/** Chunk was on 93671 **/
+/** Chunk was on 74240 **/
 /** chunk id: 990686, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  i: () => s
+  i: () => a
 });
 var Chunk442837 = require("./442837.js"),
   Chunk430824 = require("./430824.js"),
   Chunk944163 = require("./944163.js"),
   Chunk981631 = require("./981631.js");
 
-function s(e) {
+function a(e) {
   let {
     guildId: t
   } = e;
@@ -16,9 +16,9 @@ function s(e) {
     var e;
     let n = i.Z.get(t),
       r = null == n ? true : n.guild,
-      s = l.Z.getGuild(t),
-      o = null == s ? true : s.verificationLevel,
+      a = l.Z.getGuild(t),
+      o = null == a ? true : a.verificationLevel,
       c = null == r ? true : r.verification_level;
-    return null != (e = null != o ? o : c) ? e : a.sFg.NONE
+    return null != (e = null != o ? o : c) ? e : s.sFg.NONE
   }, [t])
 }

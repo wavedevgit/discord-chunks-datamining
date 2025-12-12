@@ -8,7 +8,7 @@ var Chunk147913 = require("./147913.js"),
   Chunk648358 = require("./648358.js"),
   Chunk865066 = require("./865066.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ class s extends Chunk147913.Z {
     (0, Chunk865066.wt)()
   }
   constructor(...e) {
-    super(...e), o(this, "actions", {
+    super(...e), a(this, "actions", {
       POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
       LOGOUT: this.handleLogout
     })

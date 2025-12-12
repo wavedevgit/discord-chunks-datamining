@@ -12,13 +12,13 @@ var Chunk467721 = require("./467721.js"),
   Chunk565138 = require("./565138.jsx"),
   Chunk678558 = require("./678558.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk895917 = require("./895917.js");
+  Chunk256215 = require("./256215.js");
 let d = function(e) {
   let {
     closeLayer: t,
     guild: n,
     isVisible: d
-  } = e, f = (0, o.q_F)({
+  } = e, f = (0, a.q_F)({
     transform: d ? "translateY(-100%)" : "translateY(0%)",
     opacity: +!!d,
     config: {
@@ -37,7 +37,7 @@ let d = function(e) {
           className: u.guildIcon,
           guild: n,
           size: s.Z.Sizes.LARGER
-        }), (0, r.jsx)(o.Heading, {
+        }), (0, r.jsx)(a.Heading, {
           className: u.guildName,
           variant: "text-lg/bold",
           children: n.name
@@ -53,7 +53,7 @@ let d = function(e) {
         },
         closeLayer: t,
         pauseAnimation: !d,
-        size: a.zx.Sizes.LARGE
+        size: o.zx.Sizes.LARGE
       })]
     })
   })

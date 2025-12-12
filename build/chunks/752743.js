@@ -3,10 +3,10 @@
 "use strict";
 var Chunk745872 = require("./745872.js"),
   i = Chunk745872("%Object.preventExtensions%", true),
-  a = Chunk745872("%Object.isExtensible%", true),
+  o = Chunk745872("%Object.isExtensible%", true),
   Chunk983281 = require("./983281.js");
 module.exports = i ? function(e) {
-  return !o(e) && a(e)
+  return !a(e) && o(e)
 } : function(e) {
-  return !o(e)
+  return !a(e)
 }

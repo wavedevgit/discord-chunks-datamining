@@ -32,7 +32,7 @@ let m = e => {
       activeStep: b
     } = e, {
       analyticsLocations: y
-    } = (0, o.ZP)(a.Z.USER_SETTINGS), [O, v] = i.useState(h(b));
+    } = (0, a.ZP)(o.Z.USER_SETTINGS), [O, v] = i.useState(h(b));
     return (0, i.useEffect)(() => {
       v(h(b))
     }, [b]), (0, r.jsx)(d.CancellationContext.Provider, {

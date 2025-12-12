@@ -58,8 +58,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -67,8 +67,8 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let b = "https://support.discord.com/hc/en-us";
@@ -102,11 +102,11 @@ function O(e) {
   let {
     subscriptions: t,
     updateHeader: n
-  } = e, [a, p] = i.useState({
+  } = e, [o, p] = i.useState({
     route: u.j.HOME
   }), {
     route: m
-  } = a, E = () => {
+  } = o, E = () => {
     p({
       route: u.j.HOME
     })
@@ -153,11 +153,11 @@ function O(e) {
     case u.j.SWITCH_APP_PLANS:
       let {
         route: T
-      } = a, C = g(a, ["route"]);
+      } = o, C = g(o, ["route"]);
       return (0, r.jsx)(d.Z, h(_({}, C), {
         navigateToHome: E
       }));
     default:
-      (0, o.vE)(m)
+      (0, a.vE)(m)
   }
 }

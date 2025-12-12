@@ -8,7 +8,7 @@ var Chunk474936 = require("./474936.js"),
   Chunk535396 = require("./535396.js"),
   Chunk185923 = require("./185923.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -48,10 +48,10 @@ function c(e, t) {
 }
 
 function u(e, t) {
-  var n, o, l, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T;
+  var n, a, l, u, d, f, p, _, m, h, g, E, b, y, O, v, S, I, T;
   let C = null == (n = t.powerup_metadata) ? true : n.category_type;
   if (null == C) return;
-  let A = null == (o = t.sku) ? true : o.powerup_metadata;
+  let A = null == (a = t.sku) ? true : a.powerup_metadata;
   if (null == A) return;
   let N = {
     title: t.summary,
@@ -66,18 +66,18 @@ function u(e, t) {
     case i.Us.LEVEL: {
       let n = null == (f = t.sku.powerup_metadata) ? true : f.guild_features;
       if (null == n) return;
-      let o = a.xD + n.additional_emoji_slots,
+      let a = o.xD + n.additional_emoji_slots,
         l = r.XB + n.additional_sound_slots,
         u = r.QF + n.additional_sticker_slots,
         d = t.sku.dependent_sku_id;
       for (; null != d;) {
         let t = e.find(e => d === e.sku.id);
-        o += null != (v = null == t || null == (m = t.sku) || null == (_ = m.powerup_metadata) || null == (p = _.guild_features) ? true : p.additional_emoji_slots) ? v : 0, l += null != (S = null == t || null == (E = t.sku) || null == (g = E.powerup_metadata) || null == (h = g.guild_features) ? true : h.additional_sound_slots) ? S : 0, u += null != (I = null == t || null == (O = t.sku) || null == (y = O.powerup_metadata) || null == (b = y.guild_features) ? true : b.additional_sticker_slots) ? I : 0, d = null == t ? true : t.sku.dependent_sku_id
+        a += null != (v = null == t || null == (m = t.sku) || null == (_ = m.powerup_metadata) || null == (p = _.guild_features) ? true : p.additional_emoji_slots) ? v : 0, l += null != (S = null == t || null == (E = t.sku) || null == (g = E.powerup_metadata) || null == (h = g.guild_features) ? true : h.additional_sound_slots) ? S : 0, u += null != (I = null == t || null == (O = t.sku) || null == (y = O.powerup_metadata) || null == (b = y.guild_features) ? true : b.additional_sticker_slots) ? I : 0, d = null == t ? true : t.sku.dependent_sku_id
       }
       return s({
         type: i.Us.LEVEL,
         features: c(s({}, n), {
-          total_emoji_slots: o,
+          total_emoji_slots: a,
           total_sound_slots: l,
           total_sticker_slots: u
         })

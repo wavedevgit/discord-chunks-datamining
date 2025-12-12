@@ -14,13 +14,13 @@ class s extends Chunk522677.F {
   }
   innerExtract(e, t) {
     let n = t[1].toLowerCase(),
-      a = (0, r.RA)(t[2]);
+      o = (0, r.RA)(t[2]);
     switch (n) {
       case "последние":
       case "прошлые":
       case "-":
-        a = (0, o.de)(a)
+        o = (0, a.de)(o)
     }
-    return i.L.createRelativeFromReference(e.reference, a)
+    return i.L.createRelativeFromReference(e.reference, o)
   }
 }

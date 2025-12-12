@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
@@ -35,7 +35,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk728386 = require("./728386.jsx"),
   Chunk763679 = require("./763679.jsx"),
   Chunk957825 = require("./957825.js"),
-  Chunk72775 = require("./72775.js");
+  Chunk564355 = require("./564355.js");
 
 function j(e) {
   let {
@@ -53,7 +53,7 @@ function j(e) {
 }
 
 function M(e) {
-  var t, n, i, a, E, b, y, N, P;
+  var t, n, i, o, E, b, y, N, P;
   let {
     type: M,
     disabled: U,
@@ -82,7 +82,7 @@ function M(e) {
   }), X = (0, h.Iu)(e => e.lastActiveView), J = (null == (t = M.gifs) ? true : t.button) != null && (null == (n = M.stickers) ? true : n.button) != null && null != X ? X : x.X1.EMOJI, $ = [], ee = !G.isDM() || true === G.recipients || G.recipients.length > 1, et = (0, c.e7)([O.default], () => ee ? null : O.default.getUser(G.recipients[0])), en = (0, f.R)({
     channel: G,
     chatInputType: M
-  }), er = (0, g.Nt)() && (null == (i = M.confetti) ? true : i.button) != null, ei = (null == (a = M.submit) ? true : a.button) != null && ((null == (E = M.submit) ? true : E.ignorePreference) || V);
+  }), er = (0, g.Nt)() && (null == (i = M.confetti) ? true : i.button) != null, ei = (null == (o = M.submit) ? true : o.button) != null && ((null == (E = M.submit) ? true : E.ignorePreference) || V);
   if (!l.tq && ((null == (y = M.gifts) ? true : y.button) != null && null == Y && !K && (null == et || v.ZP.isPremiumEligible(et)) && $.push({
       key: "gift",
       node: (0, r.jsx)(j, {
@@ -146,12 +146,12 @@ function M(e) {
       disabled: U || H
     }, "submit")
   });
-  let ea = (0, s.chain)($).filter(e => null != z[e.key]).sortBy(e => z[e.key]).map(e => e.node).value();
-  return 0 === ea.length ? null : (0, r.jsx)("div", {
-    className: o()(L.buttons, {
+  let eo = (0, s.chain)($).filter(e => null != z[e.key]).sortBy(e => z[e.key]).map(e => e.node).value();
+  return 0 === eo.length ? null : (0, r.jsx)("div", {
+    className: a()(L.buttons, {
       [L.reducedGap]: Q
     }),
-    children: ea
+    children: eo
   })
 }
 

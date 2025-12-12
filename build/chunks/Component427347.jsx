@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 427347, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -19,7 +19,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk240095 = require("./240095.js");
+  Chunk972663 = require("./972663.js");
 
 function v(e) {
   let {
@@ -30,49 +30,49 @@ function v(e) {
     (0, s.Q3)(t, {
       dismissAction: e
     })
-  }, y = () => {
+  }, _ = () => {
     let e = (0, d.KV)("HolidayCoachmark");
     (0, u.openUserSettings)(e ? c.n.NOTIFICATIONS_PANEL : c.n.LEGACY_NOTIFICATIONS_SETTINGS_PANEL, {
-      section: f.oAB.NOTIFICATIONS,
+      section: x.oAB.NOTIFICATIONS,
       analyticsLocations: v
-    }), j(x.L.TAKE_ACTION)
+    }), j(f.L.TAKE_ACTION)
   };
   return n && !m ? (0, a.jsx)(o.ZP, {
     children: (0, a.jsxs)("div", {
-      className: g.wrapper,
+      className: b.wrapper,
       children: [(0, a.jsxs)("div", {
-        className: g.backgroundWrapper,
+        className: b.backgroundWrapper,
         children: [(0, a.jsx)(h.Z, {
-          className: g.backgroundImage,
+          className: b.backgroundImage,
           pageMultiplier: 5
         }), (0, a.jsx)("div", {
-          className: g.backgroundOverlay
+          className: b.backgroundOverlay
         })]
       }), (0, a.jsx)("div", {
-        className: g.heroImage
+        className: b.heroImage
       }), (0, a.jsxs)("div", {
-        className: g.content,
+        className: b.content,
         children: [(0, a.jsxs)("div", {
           children: [(0, a.jsx)(r.Heading, {
             variant: "heading-md/bold",
             color: true,
-            className: g.specialText,
-            children: b.intl.string(b.t.zUhr3D)
+            className: b.specialText,
+            children: g.intl.string(g.t.zUhr3D)
           }), (0, a.jsx)(r.Text, {
             variant: "text-xs/normal",
             color: "always-white",
-            children: b.intl.format(b.t.Xw2XUT, {
+            children: g.intl.format(g.t.Xw2XUT, {
               settingsHook: (e, t) => (0, a.jsx)(r.P3F, {
                 tag: "span",
-                className: g.specialTextLink,
-                onClick: y,
+                className: b.specialTextLink,
+                onClick: _,
                 children: e
               }, t)
             })
           })]
         }), (0, a.jsx)(r.P3F, {
-          className: g.closeClickable,
-          onClick: () => j(x.L.USER_DISMISS),
+          className: b.closeClickable,
+          onClick: () => j(f.L.USER_DISMISS),
           children: (0, a.jsx)(r.Dio, {
             color: "currentColor",
             size: "xs"

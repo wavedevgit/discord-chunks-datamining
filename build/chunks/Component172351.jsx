@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk678738 = require("./678738.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk870277 = require("./870277.js");
+  Chunk555013 = require("./555013.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -62,7 +62,7 @@ function g(e) {
       let {
         type: t
       } = e;
-      return t === a.jw.SUB_COMMAND || t === a.jw.SUB_COMMAND_GROUP
+      return t === o.jw.SUB_COMMAND || t === o.jw.SUB_COMMAND_GROUP
     })) == null
   }), [O]);
   if (null == v || 0 === v.length) return null;
@@ -73,7 +73,7 @@ function g(e) {
       application_id: t,
       command_id: e,
       guild_id: m
-    }, (0, o.JS)(g.id)))
+    }, (0, a.JS)(g.id)))
   };
   return (0, r.jsx)(d.Z, {
     heading: p.intl.string(p.t["0hKkS+"]),

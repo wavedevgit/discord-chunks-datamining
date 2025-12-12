@@ -12,15 +12,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk304696 = require("./304696.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk838462 = require("./838462.js");
+  Chunk923132 = require("./923132.js");
 
 function x(t) {
   let {
     transitionState: e,
     onClose: i,
     questContent: x,
-    quest: f
-  } = t, T = (t => {
+    quest: T
+  } = t, h = (t => {
     switch (t) {
       case l.jn.QUEST_BAR:
       case l.jn.QUEST_BAR_V2:
@@ -36,15 +36,15 @@ function x(t) {
       default:
         return
     }
-  })(x), h = n.useMemo(() => {
+  })(x), p = n.useMemo(() => {
     var t;
     return (0, o.Fs)({
-      isTargetedDisclosure: null != T,
-      gamePublisher: f.config.messages.gamePublisher,
-      gameTitle: f.config.messages.gameTitle,
-      cosponsorName: null == (t = f.config.cosponsorMetadata) ? true : t.name
+      isTargetedDisclosure: null != h,
+      gamePublisher: T.config.messages.gamePublisher,
+      gameTitle: T.config.messages.gameTitle,
+      cosponsorName: null == (t = T.config.cosponsorMetadata) ? true : t.name
     })
-  }, [f, T]);
+  }, [T, h]);
   return (0, s.jsxs)(r.Modal, {
     size: "sm",
     transitionState: e,
@@ -58,9 +58,9 @@ function x(t) {
       variant: "text-sm/medium",
       color: "text-default",
       className: m.upperBodyText,
-      children: h
+      children: p
     }), (0, s.jsx)(g, {
-      targetedTraits: T
+      targetedTraits: h
     }), (0, s.jsx)(a.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
@@ -84,13 +84,13 @@ function g(t) {
     } = e;
     return (0, s.jsxs)("ul", {
       className: m.targetList,
-      children: [t && (0, s.jsx)(f, {
+      children: [t && (0, s.jsx)(T, {
         icon: a.enf,
         children: d.intl.string(d.t.xQSdPv)
-      }), i && (0, s.jsx)(f, {
+      }), i && (0, s.jsx)(T, {
         icon: a.tBG,
         children: d.intl.string(d.t.mYt7hQ)
-      }), n && (0, s.jsx)(f, {
+      }), n && (0, s.jsx)(T, {
         icon: a.iWm,
         children: d.intl.string(d.t.XAsWxQ)
       })]
@@ -98,7 +98,7 @@ function g(t) {
   }
 }
 
-function f(t) {
+function T(t) {
   let {
     icon: e,
     children: i

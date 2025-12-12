@@ -29,7 +29,7 @@ else if (O.has(s().layout)) {
   });
   v = t => {
     try {
-      (0, b.PR)(t), e.badge(false === t ? "•" : t)
+      (0, _.PR)(t), e.badge(false === t ? "•" : t)
     } catch (e) {}
   }
 }

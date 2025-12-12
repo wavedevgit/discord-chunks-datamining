@@ -19,7 +19,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function _(e) {
-  (0, d.isMac)() && e ? (0, a.Z)({
+  (0, d.isMac)() && e ? (0, o.Z)({
     title: p.intl.string(p.t["9jf31O"]),
     subtitle: p.intl.string(p.t.uBd6JW),
     variant: "primary",
@@ -35,7 +35,7 @@ function m() {
     videoHook: e,
     experimentalSoundshare: t,
     supportsExperimentalSoundshare: n,
-    supportsHookSoundshare: a,
+    supportsHookSoundshare: o,
     useSystemScreensharePicker: l
   } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
     videoHook: Chunk131951.Z.getVideoHook(),

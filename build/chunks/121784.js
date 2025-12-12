@@ -11,8 +11,8 @@ var Chunk351196 = require("./351196.js"),
 (0, Chunk840475.exportTypedArrayMethod)("with", {
   with: function(e, t) {
     var n = l(this),
-      i = o(e),
-      u = a(n) ? s(t) : +t;
+      i = a(e),
+      u = o(n) ? s(t) : +t;
     return r(n, c(n), i, u)
   }
 }.with, ! function() {

@@ -22,12 +22,12 @@ let _ = Chunk473749.forwardRef(function(e, t) {
     transitionState: m,
     reason: h,
     layerContext: g
-  } = e, E = (0, a.e7)([u.default], () => u.default.getCurrentUser()), b = (0, a.e7)([c.Z], () => c.Z.getAction()), [y, O] = i.useState(null), [v, S] = i.useState(null), [I, T] = i.useState(null), [C, A] = i.useState(false), N = i.useCallback(async e => {
+  } = e, E = (0, o.e7)([u.default], () => u.default.getCurrentUser()), b = (0, o.e7)([c.Z], () => c.Z.getAction()), [y, O] = i.useState(null), [v, S] = i.useState(null), [I, T] = i.useState(null), [C, A] = i.useState(false), N = i.useCallback(async e => {
     A(true);
     try {
       d.Z.isPhoneReverification(E, b) ? await s.Z.beginReverifyPhone(e, h) : await s.Z.beginAddPhone(e, h), T(null), O(e)
     } catch (e) {
-      T(new o.Z(e))
+      T(new a.Z(e))
     }
     A(false)
   }, [E, h, b]), P = i.useCallback(async e => {
@@ -39,7 +39,7 @@ let _ = Chunk473749.forwardRef(function(e, t) {
         } = await s.Z.verifyPhone(y, e);
         T(null), S(t)
       } catch (e) {
-        T(new o.Z(e))
+        T(new a.Z(e))
       }
       A(false)
     }

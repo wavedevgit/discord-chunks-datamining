@@ -37,8 +37,8 @@ function u(e, t) {
   if (null == e) return {};
   var n, r, i = d(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -46,8 +46,8 @@ function u(e, t) {
 function d(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -67,13 +67,13 @@ function f(e) {
     loading: E,
     disabled: b,
     onClick: y
-  } = (0, s.Fe)(t, n, f, o.ZP.getNickname(d, l, n)), O = () => {
+  } = (0, s.Fe)(t, n, f, a.ZP.getNickname(d, l, n)), O = () => {
     null == m || m(), y()
   };
   return (0, r.jsx)(i.u, {
     text: g,
-    children: (0, r.jsx)(a.hU, c({
-      icon: a.iOO,
+    children: (0, r.jsx)(o.hU, c({
+      icon: o.iOO,
       size: p,
       variant: _,
       onClick: O,

@@ -13,8 +13,8 @@ var Chunk924301 = require("./924301.js"),
   Chunk131704 = require("./131704.js"),
   Chunk245335 = require("./245335.js");
 
-function o(e) {
-  return e.type === a.wx.GROUP_DM || null != e.channel && (0, i.bc)(e.channel.type)
+function a(e) {
+  return e.type === o.wx.GROUP_DM || null != e.channel && (0, i.bc)(e.channel.type)
 }
 
 function s(e) {
@@ -23,21 +23,21 @@ function s(e) {
 }
 
 function l(e) {
-  return e.target_type === a.Iq.ROLE_SUBSCRIPTIONS_PURCHASE
+  return e.target_type === o.Iq.ROLE_SUBSCRIPTIONS_PURCHASE
 }
 
 function c(e) {
-  return e.target_type === a.Iq.STREAM && null != e.target_user
+  return e.target_type === o.Iq.STREAM && null != e.target_user
 }
 
 function u(e) {
-  return e.type === a.wx.FRIEND || null == e.guild && null != e.inviter
+  return e.type === o.wx.FRIEND || null == e.guild && null != e.inviter
 }
 
 function d(e) {
-  return e.target_type === a.Iq.EMBEDDED_APPLICATION
+  return e.target_type === o.Iq.EMBEDDED_APPLICATION
 }
 
 function f(e) {
-  return "number" == typeof e.type ? e.type : o(e) ? a.wx.GROUP_DM : u(e) ? a.wx.FRIEND : a.wx.GUILD
+  return "number" == typeof e.type ? e.type : a(e) ? o.wx.GROUP_DM : u(e) ? o.wx.FRIEND : o.wx.GUILD
 }

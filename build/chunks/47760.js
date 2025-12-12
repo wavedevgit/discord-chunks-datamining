@@ -2,14 +2,14 @@
 /** chunk id: 47760, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  VK: () => a,
-  e: () => o
+  VK: () => o,
+  e: () => a
 });
 var Chunk900089 = require("./900089.js"),
   Chunk874893 = require("./874893.js");
 require("./231338.js");
 
-function a(e) {
+function o(e) {
   let {
     angle: t,
     colors: n
@@ -24,4 +24,4 @@ function a(e) {
     }), " ").concat(n, "%")
   }).join(", "), ")")
 }
-let o = e => i.yW[e]
+let a = e => i.yW[e]

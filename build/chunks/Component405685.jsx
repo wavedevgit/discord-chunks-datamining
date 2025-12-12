@@ -20,7 +20,7 @@ function d(e) {
     referralTrialOfferId: n
   } = e, {
     isGift: d
-  } = (0, c.wD)(), f = (0, a.N)(n), p = (0, o.H)(i.I.PAYMENT_MODAL_BANNER);
+  } = (0, c.wD)(), f = (0, o.N)(n), p = (0, a.H)(i.I.PAYMENT_MODAL_BANNER);
   return d || t !== u.Si.TIER_2 ? null : null != p && "paymentModalBanner" === p.properties.properties.oneofKind ? (0, r.jsx)(s.h, {
     componentId: p.id,
     promotionBannerMarketingComponentFields: p.properties.properties.paymentModalBanner

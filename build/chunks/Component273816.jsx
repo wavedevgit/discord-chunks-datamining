@@ -1,12 +1,12 @@
 /** Chunk was on 50751 **/
 /** chunk id: 273816, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -17,48 +17,48 @@ var Chunk54381 = require("./54381.js"),
   Chunk333031 = require("./333031.jsx"),
   Chunk76623 = require("./76623.js"),
   Chunk501787 = require("./501787.js"),
-  Chunk596385 = require("./596385.js");
+  Chunk533449 = require("./533449.js");
 
-function y(e) {
+function O(e) {
   let {
     locked: t,
     pinned: n,
     anchorLeft: l
-  } = e, y = (0, o.e7)([f.Z], () => f.Z.getSocket()), O = (0, o.e7)([m.Z], () => m.Z.isGPUBoosted());
+  } = e, O = (0, a.e7)([h.Z], () => h.Z.getSocket()), v = (0, a.e7)([m.Z], () => m.Z.isGPUBoosted());
   (0, d.nU)();
-  let v = (0, o.e7)([h.Z], () => h.Z.getWindow(g.$J)),
-    [E, S] = (0, d.m8)(y),
+  let E = (0, a.e7)([p.Z], () => p.Z.getWindow(g.$J)),
+    [b, _] = (0, d.m8)(O),
     {
-      currentFPS: x,
-      averageFrameTime: I,
-      timeSinceLastDrop: C,
-      onResetFrameData: j,
-      droppedFramesRef: _,
+      currentFPS: S,
+      averageFrameTime: x,
+      timeSinceLastDrop: I,
+      onResetFrameData: C,
+      droppedFramesRef: j,
       renderedFrameCount: Z,
       bufferFramecountRef: N,
       frameCheckerEffect: w
-    } = (0, d.d6)(true, E, true),
-    [T, P, A] = (0, d.ZF)(y),
-    [k, D] = (0, d.Y5)(T, w, v),
-    R = performance.now() - S.current < d.MC,
-    L = P(I, N.current);
+    } = (0, d.d6)(true, b, true),
+    [T, P, A] = (0, d.ZF)(O),
+    [k, D] = (0, d.Y5)(T, w, E),
+    R = performance.now() - _.current < d.MC,
+    L = P(x, N.current);
   (0, u.ZP)(() => (k(), () => {
     D()
   }));
   let M = r.useCallback(() => {
-      j(), A(), k()
-    }, [j, A, k]),
+      C(), A(), k()
+    }, [C, A, k]),
     [z, V] = r.useState(true),
     [U, W] = r.useState(true),
     [G, F] = r.useState(true),
     [H, B] = r.useState(true),
     [Y, Q] = r.useState(true);
   return t && !n ? null : (0, i.jsxs)("div", {
-    className: a()(b.panelGroup, !l && b.rightAligned),
+    className: o()(y.panelGroup, !l && y.rightAligned),
     children: [(z || !t) && (0, i.jsxs)("div", {
-      className: b.measurement,
+      className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
-        className: b.measurementCheckbox,
+        className: y.measurementCheckbox,
         children: (0, i.jsx)(c.rsf, {
           checked: z,
           onChange: e => V(e)
@@ -66,18 +66,18 @@ function y(e) {
       }), (0, i.jsxs)(c.Text, {
         variant: "text-md/normal",
         color: "text-subtle",
-        className: b.measurementText,
+        className: y.measurementText,
         children: ["FPS:", " ", (0, i.jsx)(c.Text, {
           tag: "span",
           variant: "code",
-          color: x < 30 ? "text-feedback-critical" : x < 45 ? "text-feedback-warning" : "text-strong",
-          children: x.toFixed(2)
+          color: S < 30 ? "text-feedback-critical" : S < 45 ? "text-feedback-warning" : "text-strong",
+          children: S.toFixed(2)
         })]
       })]
     }), (U || !t) && (0, i.jsxs)("div", {
-      className: b.measurement,
+      className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
-        className: b.measurementCheckbox,
+        className: y.measurementCheckbox,
         children: (0, i.jsx)(c.rsf, {
           checked: U,
           onChange: e => W(e)
@@ -85,18 +85,18 @@ function y(e) {
       }), (0, i.jsxs)(c.Text, {
         variant: "text-md/normal",
         color: "text-subtle",
-        className: b.measurementText,
+        className: y.measurementText,
         children: ["Frame Times:", " ", (0, i.jsxs)(c.Text, {
           tag: "span",
           variant: "code",
-          color: I > 1.1 * d.tO ? "text-feedback-warning" : "text-strong",
-          children: [I.toFixed(2), "ms"]
+          color: x > 1.1 * d.tO ? "text-feedback-warning" : "text-strong",
+          children: [x.toFixed(2), "ms"]
         })]
       })]
     }), (G || !t) && (0, i.jsxs)("div", {
-      className: b.measurement,
+      className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
-        className: b.measurementCheckbox,
+        className: y.measurementCheckbox,
         children: (0, i.jsx)(c.rsf, {
           checked: G,
           onChange: e => F(e)
@@ -104,24 +104,24 @@ function y(e) {
       }), (0, i.jsxs)(c.Text, {
         variant: "text-md/normal",
         color: "text-subtle",
-        className: b.measurementText,
+        className: y.measurementText,
         children: ["Dropped Frames:", " ", (0, i.jsx)(c.Text, {
           tag: "span",
           variant: "code",
-          color: C < 2 ? "text-feedback-critical" : C < 5 ? "text-feedback-warning" : "text-strong",
-          children: _.current
+          color: I < 2 ? "text-feedback-critical" : I < 5 ? "text-feedback-warning" : "text-strong",
+          children: j.current
         }), (0, i.jsxs)(c.Text, {
           tag: "span",
           variant: "code",
           color: "text-subtle",
-          className: b.secondaryInfoText,
-          children: ["(", (_.current / Z.current * 100).toFixed(3), "%)"]
+          className: y.secondaryInfoText,
+          children: ["(", (j.current / Z.current * 100).toFixed(3), "%)"]
         })]
       })]
     }), (H || !t) && (0, i.jsxs)("div", {
-      className: b.measurement,
+      className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
-        className: b.measurementCheckbox,
+        className: y.measurementCheckbox,
         children: (0, i.jsx)(c.rsf, {
           checked: H,
           onChange: e => B(e)
@@ -129,7 +129,7 @@ function y(e) {
       }), (0, i.jsxs)(c.Text, {
         variant: "text-md/normal",
         color: "text-subtle",
-        className: b.measurementText,
+        className: y.measurementText,
         children: ["Rendered Frames:", " ", (0, i.jsx)(c.Text, {
           tag: "span",
           variant: "code",
@@ -138,9 +138,9 @@ function y(e) {
         })]
       })]
     }), (Y || !t) && (0, i.jsxs)("div", {
-      className: b.measurement,
+      className: y.measurement,
       children: [!t && (0, i.jsx)("div", {
-        className: b.measurementCheckbox,
+        className: y.measurementCheckbox,
         children: (0, i.jsx)(c.rsf, {
           checked: Y,
           onChange: e => Q(e)
@@ -152,7 +152,7 @@ function y(e) {
           children: (0, i.jsxs)(c.Text, {
             variant: "text-md/normal",
             color: "text-subtle",
-            className: b.measurementText,
+            className: y.measurementText,
             children: ["Idle Frame Delta:", " ", (0, i.jsxs)(c.Text, {
               tag: "span",
               variant: "code",
@@ -173,14 +173,14 @@ function y(e) {
           children: "(Main App Backgrounded)"
         })
       })
-    }), O && (0, i.jsx)(c.Text, {
+    }), v && (0, i.jsx)(c.Text, {
       tag: "span",
       variant: "code",
       color: "text-feedback-positive",
       children: "(Using GPU Priority - Realtime)"
     }), !t && (0, i.jsx)("div", {
-      className: b.bottomPanelButton,
-      children: (0, i.jsx)(p.Z, {
+      className: y.bottomPanelButton,
+      children: (0, i.jsx)(f.Z, {
         children: (0, i.jsx)(c.Button, {
           variant: "primary",
           text: "Reset Frame Data",

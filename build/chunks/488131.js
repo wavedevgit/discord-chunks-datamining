@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk570140 = require("./570140.js"),
   Chunk430742 = require("./430742.js"),
   Chunk367907 = require("./367907.js"),
@@ -33,7 +33,7 @@ var Chunk512722 = require("./512722.js"),
 function T(e, t, n) {
   if (!(0, p.WF)(e.id)) return void(0, d.V)();
   f.UI.dispatch(S.CkL.POPOUT_CLOSE);
-  let r = !o().isEmpty(y.Z.getVoiceStatesForChannel(e.id));
+  let r = !a().isEmpty(y.Z.getVoiceStatesForChannel(e.id));
   if (t || !h.vF.getSetting() || __OVERLAY__ || r) {
     s.Z.dispatch({
       type: "SIDEBAR_CLOSE",
@@ -44,8 +44,8 @@ function T(e, t, n) {
     return
   }
   i()(null != e.parent_id, "all threads must have parents");
-  let a = e.getGuildId();
-  if (null != a && null != g.ZP.getGuildSidebarState(a)) {
+  let o = e.getGuildId();
+  if (null != o && null != g.ZP.getGuildSidebarState(o)) {
     s.Z.dispatch({
       type: "SIDEBAR_CLOSE",
       baseChannelId: e.parent_id

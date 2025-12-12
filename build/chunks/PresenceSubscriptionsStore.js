@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 360787, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -14,20 +14,20 @@ function d(e, t) {
   return "".concat(e, ":").concat(t)
 }
 let p = {},
-  f = {},
-  h = new Chunk846519.sW(3e3, function() {
+  h = {},
+  f = new Chunk846519.sW(3e3, function() {
     let e = [];
-    for (let [t, n] of Object.entries(f)) module.push(require), p[exports] = require, delete f[exports];
+    for (let [t, n] of Object.entries(h)) module.push(require), p[exports] = require, delete h[exports];
     0 !== module.length && Chunk278323.Z.subscribeActivities(module)
   });
 
 function m(e) {
   let t = d(e.applicationId, e.partyId);
-  return t in p || t in f
+  return t in p || t in h
 }
 
 function g() {
-  p = {}, f = {}
+  p = {}, h = {}
 }
 class b extends(i = Chunk442837.ZP.Store) {
   initialize() {
@@ -50,7 +50,7 @@ let C = new b(Chunk570140.Z, {
       let e = false,
         t = Date.now();
       for (let [n, i] of Object.entries(p)) i.expiresAt < t && (delete p[n], e = true);
-      for (let [n, i] of Object.entries(f)) i.expiresAt < t && (delete f[n], e = true);
+      for (let [n, i] of Object.entries(h)) i.expiresAt < t && (delete h[n], e = true);
       return e
     }(), {
       userId: i,
@@ -63,18 +63,18 @@ let C = new b(Chunk570140.Z, {
     if (m(t) || s + u.$y < Date.now()) return n;
     let c = d(r, l),
       g = u.$y + Date.now();
-    return f[c] = {
+    return h[c] = {
       userId: i,
       applicationId: r,
       partyId: l,
       messageId: a,
       channelId: o,
       expiresAt: g
-    }, h.delay(), true
+    }, f.delay(), true
   },
   CONNECTION_OPEN: g,
   CONNECTION_RESUMED: g,
   LOGOUT: function() {
-    p = {}, f = {}
+    p = {}, h = {}
   }
 })

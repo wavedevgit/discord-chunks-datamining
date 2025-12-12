@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   $F: () => p,
-  Bt: () => a,
+  Bt: () => o,
   Gp: () => _,
   hQ: () => u,
-  kT: () => o,
+  kT: () => a,
   s1: () => s,
   ss: () => d,
   sy: () => c,
@@ -15,7 +15,7 @@ require.d(exports, {
 var Chunk644542 = require("./644542.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e) {
+function o(e) {
   let {
     enableRoleSubscriptionsForGuild: t
   } = r.Xv.useExperiment({
@@ -33,7 +33,7 @@ function a(e) {
   return null != e && t && n
 }
 
-function o(e) {
+function a(e) {
   let {
     enableRoleSubscriptionsForGuild: t
   } = r.Xv.getCurrentConfig({

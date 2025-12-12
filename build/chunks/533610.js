@@ -9,6 +9,6 @@ var Chunk580983 = require("./580983.js"),
   l = TypeError;
 module.exports = function(e, t) {
   var n = arguments.length < 2 ? s(e) : t;
-  if (i(n)) return a(r(n, e));
-  throw new l(o(e) + " is not iterable")
+  if (i(n)) return o(r(n, e));
+  throw new l(a(e) + " is not iterable")
 }

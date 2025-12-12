@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 817608, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,14 +14,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk436355 = require("./436355.jsx"),
   Chunk214110 = require("./214110.jsx");
 
-function f(e) {
+function h(e) {
   let {
     channel: t,
     message: n,
-    snapshot: f
+    snapshot: h
   } = e, {
-    moderatorReport: h
-  } = f, m = null == h ? true : h.reported_user_id, g = (0, l.e7)([o.default], () => null != m ? o.default.getUser(m) : null), b = (0, l.e7)([a.Z], () => a.Z.getGuild(t.guild_id));
+    moderatorReport: f
+  } = h, m = null == f ? true : f.reported_user_id, g = (0, l.e7)([o.default], () => null != m ? o.default.getUser(m) : null), b = (0, l.e7)([a.Z], () => a.Z.getGuild(t.guild_id));
   (0, s.Cv)(n);
   let C = (0, c.Z)({
       channel: t,
@@ -50,13 +50,13 @@ function f(e) {
   }) : null
 }
 
-function h(e) {
+function f(e) {
   let {
     message: t,
     channel: n
   } = e;
   return (0, i.jsx)(i.Fragment, {
-    children: t.messageSnapshots.map((e, r) => (0, i.jsx)(f, {
+    children: t.messageSnapshots.map((e, r) => (0, i.jsx)(h, {
       channel: n,
       message: t,
       snapshot: e

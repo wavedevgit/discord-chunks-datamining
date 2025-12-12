@@ -20,7 +20,7 @@ require.d(exports, {
 }), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./388685.js");
 var Chunk250683 = require("./250683.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk913527 = require("./913527.js"),
   s = require.n(Chunk913527),
   Chunk544891 = require("./544891.js"),
@@ -157,7 +157,7 @@ function M(e) {
 }
 async function k(e) {
   let t = d.default.getStaticAuthSessionId();
-  return a()(null != t, "[getCurrentUserPublicKey] session id should not be null"), await f.Z.getMLSSigningKey(t, e)
+  return o()(null != t, "[getCurrentUserPublicKey] session id should not be null"), await f.Z.getMLSSigningKey(t, e)
 }
 
 function U(e) {
@@ -219,14 +219,14 @@ function H(e, t) {
   if (!n.isUserConnected(e)) returnfalse;
   let i = n.getSecureFramesRosterMapEntry(e);
   if (null == i) returnfalse;
-  let a = new Uint8Array(i);
+  let o = new Uint8Array(i);
   for (let t of r.getAllActiveStreamKeys()) {
     if (!r.isUserConnected(t, e)) continue;
     let n = _.Z.getSecureFramesRosterMapEntry(t, e);
     if (null == n) returntrue;
     let i = new Uint8Array(n);
-    for (let e = 0; e < a.length; e++)
-      if (a[e] !== i[e]) returntrue
+    for (let e = 0; e < o.length; e++)
+      if (o[e] !== i[e]) returntrue
   }
   returnfalse
 }

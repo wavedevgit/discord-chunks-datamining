@@ -7,7 +7,7 @@ require.d(exports, {
 }), require("./388685.js"), require("./642613.js"), require("./35282.js"), require("./415506.js");
 var Chunk836560 = require("./836560.js"),
   Chunk400053 = require("./400053.js"),
-  a = require.n(Chunk400053),
+  o = require.n(Chunk400053),
   Chunk142494 = require("./142494.js");
 
 function s(e, t, n) {
@@ -18,7 +18,7 @@ function s(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-require.g.IntlMessageFormat = a(), require("./770801.js"), require("./177486.js"), require("./144062.js"), require("./750854.js"), require("./198823.js"), require("./551576.js"), require("./682422.js"), require("./760388.js"), require("./725589.js"), require("./338770.js"), require("./99783.js"), require("./740635.js"), require("./523332.js"), require("./307163.js"), require("./636681.js"), require("./209012.js"), require("./651811.js"), require("./740191.js"), require("./407837.js"), require("./372097.js"), require("./894996.js"), require("./829028.js"), require("./750879.js"), require("./952874.js"), require("./185851.js"), require("./962066.js"), require("./519708.js"), require("./180583.js"), delete require.g.IntlMessageFormat, "undefined" == typeof Intl && require("./211604.js");
+require.g.IntlMessageFormat = o(), require("./770801.js"), require("./177486.js"), require("./144062.js"), require("./750854.js"), require("./198823.js"), require("./551576.js"), require("./682422.js"), require("./760388.js"), require("./725589.js"), require("./338770.js"), require("./99783.js"), require("./740635.js"), require("./523332.js"), require("./307163.js"), require("./636681.js"), require("./209012.js"), require("./651811.js"), require("./740191.js"), require("./407837.js"), require("./372097.js"), require("./894996.js"), require("./829028.js"), require("./750879.js"), require("./952874.js"), require("./185851.js"), require("./962066.js"), require("./519708.js"), require("./180583.js"), delete require.g.IntlMessageFormat, "undefined" == typeof Intl && require("./211604.js");
 let l = "en-US";
 
 function c() {
@@ -85,7 +85,7 @@ class p extends Chunk836560.EventEmitter {
     this._chosenLocale = e, this.loadPromise = this._loadMessagesForLocale(e), this.emit("locale", this._chosenLocale, t)
   }
   setUpdateRules(e) {
-    (0, o.yR)(e)
+    (0, a.yR)(e)
   }
   getLanguages() {
     return this._languages
@@ -137,8 +137,8 @@ class p extends Chunk836560.EventEmitter {
         return t
       });
     if (Chunk400053.includes(Chunk836560)) return Chunk836560;
-    let a = Chunk836560.split("-");
-    return Chunk400053.includes(a[0]) ? a[0] : "zh" === a[0] && a.length > 1 && "Hant" === a[1] ? null != (t = Chunk400053.find(e => "zh-TW" === e)) ? exports : l : null != (n = Chunk400053.find(e => e.split("-")[0] === a[0])) ? require : l
+    let o = Chunk836560.split("-");
+    return Chunk400053.includes(o[0]) ? o[0] : "zh" === o[0] && o.length > 1 && "Hant" === o[1] ? null != (t = Chunk400053.find(e => "zh-TW" === e)) ? exports : l : null != (n = Chunk400053.find(e => e.split("-")[0] === o[0])) ? require : l
   }
   _loadMessagesForLocale(e) {
     let t = this._fetchMessages(e);
@@ -177,17 +177,17 @@ class p extends Chunk836560.EventEmitter {
       let {
         messages: r,
         defaultMessages: i,
-        locale: a
+        locale: o
       } = e, s = r[t] || i[t];
       if ("object" == typeof s) return n({
         messages: s,
         defaultMessages: i[t],
-        locale: a
+        locale: o
       });
       try {
-        return (0, o.FC)(s, a)
+        return (0, a.FC)(s, o)
       } catch (e) {
-        if (console.warn("Failed parsing intl key '".concat(String(t), "' in locale '").concat(a, "' defaulting to English"), e), "string" == typeof(s = i[t])) return (0, o.FC)(s, a)
+        if (console.warn("Failed parsing intl key '".concat(String(t), "' in locale '").concat(o, "' defaulting to English"), e), "string" == typeof(s = i[t])) return (0, a.FC)(s, o)
       }
       return ""
     }), s(this, "_handleNewListener", e => {

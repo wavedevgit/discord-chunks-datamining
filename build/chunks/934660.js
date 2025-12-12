@@ -3,16 +3,16 @@
 "use strict";
 var Chunk166691 = require("./166691.js"),
   i = Chunk166691("String.prototype.valueOf"),
-  a = function(e) {
+  o = function(e) {
     try {
       return i(e), true
     } catch (e) {
       returnfalse
     }
   },
-  o = Chunk166691("Object.prototype.toString"),
+  a = Chunk166691("Object.prototype.toString"),
   s = "[object String]",
   l = require("./195653.js")();
 module.exports = function(e) {
-  return "string" == typeof e || !!e && "object" == typeof e && (l ? a(e) : o(e) === s)
+  return "string" == typeof e || !!e && "object" == typeof e && (l ? o(e) : a(e) === s)
 }

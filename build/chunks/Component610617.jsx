@@ -1,7 +1,7 @@
 /** Chunk was on 95257 **/
 /** chunk id: 610617, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => A
+  default: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,9 +18,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk593214 = require("./593214.js"),
   Chunk378337 = require("./378337.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk566192 = require("./566192.js");
+  Chunk345986 = require("./345986.js");
 
-function A(e) {
+function E(e) {
   let {
     transitionState: n,
     onClose: t,
@@ -42,7 +42,7 @@ function A(e) {
       onChange: e => C(e),
       label: I.intl.string(I.t.UwOLJO)
     }),
-    children: (0, a.jsx)(m, {
+    children: (0, a.jsx)(A, {
       guildId: u,
       hideMutedChannels: v,
       parentId: l
@@ -50,7 +50,7 @@ function A(e) {
   })
 }
 
-function m(e) {
+function A(e) {
   let {
     guildId: n,
     hideMutedChannels: t,
@@ -63,7 +63,7 @@ function m(e) {
     })
   }, [n]), (0, a.jsx)("div", {
     ref: s,
-    children: c.map(e => e.type === l.d.GUILD_CATEGORY ? (0, a.jsx)(_, {
+    children: c.map(e => e.type === l.d.GUILD_CATEGORY ? (0, a.jsx)(m, {
       name: e.name
     }, e.id) : (0, a.jsx)(R, {
       channel: e,
@@ -73,12 +73,12 @@ function m(e) {
   })
 }
 
-function _(e) {
+function m(e) {
   let {
     name: n
   } = e;
   return (0, a.jsx)(d.Text, {
-    className: E.categoryRow,
+    className: _.categoryRow,
     variant: "eyebrow",
     color: "interactive-text-default",
     children: n
@@ -94,13 +94,13 @@ function R(e) {
   if ((0, o.e7)([h.ZP], () => h.ZP.isChannelMuted(n.guild_id, n.id)) && t) return null;
   let r = (0, c.KS)(n);
   return (0, a.jsxs)("div", {
-    className: E.channelRow,
+    className: _.channelRow,
     children: [(0, a.jsxs)("div", {
-      className: E.channelName,
+      className: _.channelName,
       children: [null != r && (0, a.jsx)("div", {
-        className: E.channelIconContainer,
+        className: _.channelIconContainer,
         children: (0, a.jsx)(r, {
-          className: E.channelIcon,
+          className: _.channelIcon,
           size: "custom",
           color: "currentColor",
           height: 20,

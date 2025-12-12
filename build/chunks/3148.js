@@ -20,16 +20,16 @@ function u(e) {
     username: n,
     avatar: r,
     discriminator: i,
-    bot: a,
-    globalName: o
+    bot: o,
+    globalName: a
   } = e;
   return {
     id: t,
     username: n,
     avatar: r,
     discriminator: i,
-    bot: a,
-    global_name: o
+    bot: o,
+    global_name: a
   }
 }
 
@@ -51,10 +51,10 @@ function d(e) {
     state: O
   } = e, v = [];
   if (d === c.uaV.REPLY && (i()(null != f, "Replies must have a message reference"), null == p || p.replied_user)) {
-    let e = a.Z.getMessageByReference(f);
-    (null == e ? true : e.state) === a.Y.LOADED && v.push(u(e.message.author))
+    let e = o.Z.getMessageByReference(f);
+    (null == e ? true : e.state) === o.Y.LOADED && v.push(u(e.message.author))
   }
-  return null == _ && (_ = s.default.getCurrentUser()), _ instanceof o.Z && (_ = u(_)), i()(null != _, "createMessage: author cannot be undefined"), {
+  return null == _ && (_ = s.default.getCurrentUser()), _ instanceof a.Z && (_ = u(_)), i()(null != _, "createMessage: author cannot be undefined"), {
     id: null != h ? h : (0, l.r)(),
     type: d,
     content: n,
@@ -87,7 +87,7 @@ function f(e) {
     channelId: n,
     content: r,
     embeds: i,
-    loggingName: a
+    loggingName: o
   } = e;
   return {
     id: null != t ? t : (0, l.r)(),
@@ -112,6 +112,6 @@ function f(e) {
     timestamp: new Date().toISOString(),
     state: c.yb.SENT,
     tts: false,
-    loggingName: a
+    loggingName: o
   }
 }

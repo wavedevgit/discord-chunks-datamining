@@ -5,20 +5,20 @@ require.d(exports, {
   N4: () => p,
   Pn: () => _,
   RS: () => f,
-  X2: () => o,
+  X2: () => a,
   XN: () => l,
   au: () => u,
   fn: () => s,
   hZ: () => i,
   mb: () => c,
-  nx: () => a,
+  nx: () => o,
   tL: () => d
 }), require("./388685.js");
 var Chunk246364 = require("./246364.js");
 Chunk246364.QJ.VERIFICATION, Chunk246364.QJ.TERMS;
 let i = new Set([Chunk246364.QJ.MULTIPLE_CHOICE, Chunk246364.QJ.TEXT_INPUT, Chunk246364.QJ.PARAGRAPH]),
-  a = 5,
-  o = 16,
+  o = 5,
+  a = 16,
   s = 300,
   l = 300,
   c = 8,

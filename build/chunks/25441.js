@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   N: () => i,
-  h: () => a
+  h: () => o
 }), require("./388685.js");
 let r = new Map;
 
@@ -12,7 +12,7 @@ function i(e, t) {
   return null == n && (n = new Set, r.set(e, n)), n.add(t), () => null == n ? true : n.delete(t)
 }
 
-function a(e, t, n) {
+function o(e, t, n) {
   let i = r.get(e);
   if (null != i)
     for (let e of i) e(t, n)

@@ -1,5 +1,5 @@
-/** Chunk was on 85668 **/
-/** chunk id: 988158, original params: t,e,a (module,exports,require) **/
+/** Chunk was on 88499 **/
+/** chunk id: 988158, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   X: () => l,
   h: () => i
@@ -7,46 +7,46 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js"),
   Chunk902676 = require("./902676.js");
 
-function i(t) {
+function i(e) {
   let {
-    protocol: e,
-    hostname: a
-  } = n.useMemo(() => ({
-    protocol: (0, r.E)(t),
-    hostname: (0, r.F)(t)
-  }), [t]), i = "//" === t.substr(e.length, 2) ? "//" : "", l = "".concat(e).concat(i).concat(a);
+    protocol: t,
+    hostname: n
+  } = a.useMemo(() => ({
+    protocol: (0, r.E)(e),
+    hostname: (0, r.F)(e)
+  }), [e]), i = "//" === e.substr(t.length, 2) ? "//" : "", l = "".concat(t).concat(i).concat(n);
   return {
-    protocol: e,
+    protocol: t,
     authorityPrefix: i,
-    hostname: a,
-    theRestOfTheUrl: t.replace(l, "")
+    hostname: n,
+    theRestOfTheUrl: e.replace(l, "")
   }
 }
 
-function l(t) {
+function l(e) {
   let {
-    url: e,
-    trustUrl: a,
+    url: t,
+    trustUrl: n,
     onConfirm: r,
     onCancel: l,
     onClose: s
-  } = t, [c, o] = n.useState(false), {
+  } = e, [o, c] = a.useState(false), {
     protocol: d,
     authorityPrefix: u,
-    hostname: _,
-    theRestOfTheUrl: m
-  } = i(e), x = n.useCallback(() => {
-    c && a(e), null == s || s(), r()
-  }, [e, c, a, r, s]);
+    hostname: m,
+    theRestOfTheUrl: p
+  } = i(t), h = a.useCallback(() => {
+    o && n(t), null == s || s(), r()
+  }, [t, o, n, r, s]);
   return {
     protocol: d,
     authorityPrefix: u,
-    hostname: _,
-    theRestOfTheUrl: m,
-    shouldTrustUrl: c,
-    setShouldTrustUrl: o,
-    handleConfirm: x,
-    handleCancel: n.useCallback(() => {
+    hostname: m,
+    theRestOfTheUrl: p,
+    shouldTrustUrl: o,
+    setShouldTrustUrl: c,
+    handleConfirm: h,
+    handleCancel: a.useCallback(() => {
       null == s || s(), l()
     }, [l, s])
   }

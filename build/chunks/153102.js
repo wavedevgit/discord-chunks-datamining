@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk579092 = require("./579092.js"),
   Chunk625306 = require("./625306.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,7 +15,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = new Chunk579092.Yd("Flux"),
+let a = new Chunk579092.Yd("Flux"),
   s = 100,
   l = e => e();
 class c {
@@ -51,11 +51,11 @@ class c {
           t = new Set,
           n = new Set;
         for (; this.changedStores.size > 0;) {
-          if (++module > 100) throw o.error("LastFewActions", Chunk625306.qC()), Error("change emit loop detected, aborting");
+          if (++module > 100) throw a.error("LastFewActions", Chunk625306.qC()), Error("change emit loop detected, aborting");
           this.emitNonReactOnce(exports, require)
         }
         for (; this.reactChangedStores.size > 0;) {
-          if (++module > 100) throw o.error("LastFewActions", Chunk625306.qC()), Error("react change emit loop detected, aborting");
+          if (++module > 100) throw a.error("LastFewActions", Chunk625306.qC()), Error("react change emit loop detected, aborting");
           this.emitReactOnce()
         }
       } finally {
@@ -86,8 +86,8 @@ class c {
         !e.has(r) && (e.add(r), false === r() || t.has(i) || (t.add(i), this.markChanged(i)))
       })
     });
-    let a = Date.now();
-    a - n > s && o.verbose("Slow batch emitChanges took ".concat(a - n, "ms recentActions:"), i.qC())
+    let o = Date.now();
+    o - n > s && a.verbose("Slow batch emitChanges took ".concat(o - n, "ms recentActions:"), i.qC())
   }
   emitReactOnce() {
     let e = Date.now(),
@@ -96,10 +96,10 @@ class c {
       e._reactChangeCallbacks.invokeAll(), this.reactChangedStores.delete(e)
     });
     let n = Date.now();
-    require - module > s && o.verbose("Slow batch emitReactChanges took ".concat(require - module, "ms recentActions:"), Chunk625306.qC())
+    require - module > s && a.verbose("Slow batch emitReactChanges took ".concat(require - module, "ms recentActions:"), Chunk625306.qC())
   }
   constructor() {
-    a(this, "changedStores", new Set), a(this, "reactChangedStores", new Set), a(this, "changeSentinel", 0), a(this, "isBatchEmitting", false), a(this, "isDispatching", false), a(this, "isPaused", false), a(this, "pauseTimer", null)
+    o(this, "changedStores", new Set), o(this, "reactChangedStores", new Set), o(this, "changeSentinel", 0), o(this, "isBatchEmitting", false), o(this, "isDispatching", false), o(this, "isPaused", false), o(this, "pauseTimer", null)
   }
 }
 let u = new c

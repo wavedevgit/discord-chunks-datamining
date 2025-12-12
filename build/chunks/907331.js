@@ -8,25 +8,25 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js"),
   Chunk872175 = require("./872175.js"),
   Chunk963307 = require("./963307.js");
-let o = {};
+let a = {};
 
 function s(e, t) {
   let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     s = (0, r.useRef)(null),
-    l = (0, i.Z)(null != t ? t : o),
+    l = (0, i.Z)(null != t ? t : a),
     c = (0, r.useRef)(null);
   return (0, r.useLayoutEffect)(() => {
     if (!n) return;
-    null == c.current && (c.current = (0, a.c)(l.current));
+    null == c.current && (c.current = (0, o.c)(l.current));
     let t = s.current,
       r = c.current;
-    null != t && null != r && (0, a.YP)(r, t, e)
+    null != t && null != r && (0, o.YP)(r, t, e)
   }, [n, e, l]), (0, r.useEffect)(() => {
     if (!n) return;
     let e = s.current,
       t = c.current;
     if (null != e && null != t) return () => {
-      (0, a.UC)(t, e)
+      (0, o.UC)(t, e)
     }
   }, [n, t]), s
 }
@@ -46,9 +46,9 @@ function c(e) {
 function u(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
     n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-    a = (0, i.Z)(t => {
+    o = (0, i.Z)(t => {
       e(t.isIntersecting)
     }),
-    o = (0, r.useMemo)(() => c(t), [t]);
-  return s(a.current, o, n)
+    a = (0, r.useMemo)(() => c(t), [t]);
+  return s(o.current, a, n)
 }

@@ -12,11 +12,11 @@ var Chunk468194 = require("./468194.js"),
   Chunk601964 = require("./601964.js"),
   Chunk914788 = require("./914788.js"),
   Chunk792258 = require("./792258.jsx"),
-  Chunk374766 = require("./374766.js");
+  Chunk517382 = require("./517382.js");
 let d = e => {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([l.Z], () => l.Z.getGuild(t));
+  } = e, n = (0, o.e7)([l.Z], () => l.Z.getGuild(t));
   if (true === n) return null;
   let {
     name: d
@@ -31,9 +31,9 @@ let d = e => {
         className: u.guildAvatar,
         "aria-hidden": true,
         children: p
-      }) : null, null != f ? (0, r.jsx)(o.qEK, {
+      }) : null, null != f ? (0, r.jsx)(a.qEK, {
         src: f,
-        size: o.EFr.SIZE_40,
+        size: a.EFr.SIZE_40,
         "aria-hidden": true
       }) : null]
     })

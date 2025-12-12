@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk616066 = require("./616066.jsx"),
   Chunk396728 = require("./396728.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk252728 = require("./252728.js");
+  Chunk632939 = require("./632939.js");
 let j = e => {
   let t, n, {
       skuId: i,

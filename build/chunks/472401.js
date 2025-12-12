@@ -8,7 +8,7 @@ var Chunk134432 = require("./134432.js"),
   Chunk768581 = require("./768581.js"),
   Chunk981631 = require("./981631.js");
 let {
-  API_ENDPOINT: o,
+  API_ENDPOINT: a,
   CDN_HOST: s
 } = window.GLOBAL_ENV;
 
@@ -20,5 +20,5 @@ function l(e) {
   } = e, c = new URLSearchParams({
     size: (0, r.oO)(l * (0, r.x_)()).toString()
   }).toString(), u = i.$k ? "webp" : "png";
-  return null != s ? "https://".concat(s, "/app-assets/application-directory/collection-items/").concat(t, "/").concat(n, ".").concat(u, "?").concat(c) : "".concat(location.protocol).concat(o).concat(a.ANM.APPLICATION_DIRECTORY_COLLECTION_ITEM_IMAGE(t, n, u), "?").concat(c)
+  return null != s ? "https://".concat(s, "/app-assets/application-directory/collection-items/").concat(t, "/").concat(n, ".").concat(u, "?").concat(c) : "".concat(location.protocol).concat(a).concat(o.ANM.APPLICATION_DIRECTORY_COLLECTION_ITEM_IMAGE(t, n, u), "?").concat(c)
 }

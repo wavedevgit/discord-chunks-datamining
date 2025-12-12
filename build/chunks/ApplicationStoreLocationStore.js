@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,7 +23,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -56,7 +56,7 @@ class f extends(r = Chunk442837.ZP.Store) {
     throw Error("Should not reset the store this way outside of a test environment")
   }
 }
-o(f, "displayName", "ApplicationStoreLocationStore");
+a(f, "displayName", "ApplicationStoreLocationStore");
 let p = new f(Chunk570140.Z, {
   APPLICATION_STORE_LOCATION_CHANGE: c,
   APPLICATION_STORE_RESET_NAVIGATION: u

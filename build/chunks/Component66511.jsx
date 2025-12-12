@@ -57,25 +57,25 @@ let _ = () => {
     })
   },
   m = e => {
-    a.default.track(c.rMx.OPEN_MODAL, {
+    o.default.track(c.rMx.OPEN_MODAL, {
       type: l.N4,
       guild_id: e
     })
   },
   h = {
-    openMemberVerificationModal(e, t, a) {
+    openMemberVerificationModal(e, t, o) {
       if (__OVERLAY__) return;
       m(e);
       let c = async t => {
-        await o.ZP.submitVerificationForm(e, t)
+        await a.ZP.submitVerificationForm(e, t)
       };
       (0, i.openModalLazy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("44686"), n.e("93671")]).then(n.bind(n, 645264));
+        } = await Promise.all([n.e("44686"), n.e("74240")]).then(n.bind(n, 645264));
         return n => (0, r.jsx)(t, p(d({}, n), {
           guildId: e,
-          inviteKey: a,
+          inviteKey: o,
           onComplete: c,
           onClose: async function() {
             let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
@@ -101,7 +101,7 @@ let _ = () => {
       (0, i.openModalLazy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("44686"), n.e("93671")]).then(n.bind(n, 645264));
+        } = await Promise.all([n.e("44686"), n.e("74240")]).then(n.bind(n, 645264));
         return n => (0, r.jsx)(t, p(d({}, n), {
           guildId: e,
           isPreview: true

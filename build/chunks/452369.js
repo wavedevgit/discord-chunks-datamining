@@ -29,7 +29,7 @@ function f() {
 function p(e) {
   let {
     relationship: t
-  } = e, n = o.Z.getVoiceStateForUser(t.id);
+  } = e, n = a.Z.getVoiceStateForUser(t.id);
   return null != n && null != n.channelId && m(n.channelId, t.id)
 }
 
@@ -50,10 +50,10 @@ function m(e, t) {
   let n = false,
     r = false,
     i = new Set(l[e]),
-    o = a.Z.isBlocked(t);
-  o && !i.has(t) ? (i.add(t), r = true, n = true) : o || (n = i.delete(t)), 0 === i.size && n ? delete l[e] : n && (l[e] = i);
+    a = o.Z.isBlocked(t);
+  a && !i.has(t) ? (i.add(t), r = true, n = true) : a || (n = i.delete(t)), 0 === i.size && n ? delete l[e] : n && (l[e] = i);
   let u = new Set(c[e]),
-    d = a.Z.isIgnored(t);
+    d = o.Z.isIgnored(t);
   return d && !u.has(t) ? (u.add(t), r = true, n = true) : d || (n = u.delete(t)), 0 === u.size && n ? delete c[e] : n && (c[e] = u), r && s.ZP.handleBlockedOrIgnoredUserVoiceChannelJoin(e, t), n
 }
 class h extends Chunk442837.ZP.Store {

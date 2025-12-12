@@ -7,7 +7,7 @@ require.d(exports, {
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -115,8 +115,8 @@ class s extends(r = Chunk442837.ZP.Store) {
       VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY: e => {
         this.setBalancePillOverlay(e.balancePillOverlay)
       }
-    }), o(this, "_entitlements", null), o(this, "_redeemingSkuId", null), o(this, "_isRedeemingVirtualCurrency", false), o(this, "_redeemVirtualCurrencyError", null), o(this, "_balance", null), o(this, "_fetchBalanceError", null), o(this, "_isFetchingBalance", false), o(this, "_onboardingModalOpenedPrior", false), o(this, "_balancePillOverlay", false)
+    }), a(this, "_entitlements", null), a(this, "_redeemingSkuId", null), a(this, "_isRedeemingVirtualCurrency", false), a(this, "_redeemVirtualCurrencyError", null), a(this, "_balance", null), a(this, "_fetchBalanceError", null), a(this, "_isFetchingBalance", false), a(this, "_onboardingModalOpenedPrior", false), a(this, "_balancePillOverlay", false)
   }
 }
-o(s, "displayName", "VirtualCurrencyStore");
+a(s, "displayName", "VirtualCurrencyStore");
 let l = new s

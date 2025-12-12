@@ -7,17 +7,17 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk318713 = require("./318713.jsx"),
-  Chunk274507 = require("./274507.js");
+  Chunk686487 = require("./686487.js");
 
 function c(e) {
   let {
     icon: t,
     iconNode: n,
     timestamp: i,
-    timestampFormat: o,
+    timestampFormat: a,
     className: c,
     children: u,
     contentClassName: d,
@@ -28,29 +28,29 @@ function c(e) {
     additionalContent: h
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(c, {
+    className: o()(c, {
       [l.container]: true,
       [l.compact]: m,
       [l.cozy]: !m
     }),
     children: [null != n && (0, r.jsx)("div", {
-      className: a()(l.iconContainer, p),
+      className: o()(l.iconContainer, p),
       children: n
     }), null != t && (0, r.jsx)("div", {
       className: l.iconContainer,
       children: (0, r.jsx)("div", {
         "data-accessibility": "desaturate",
-        className: a()(l.icon, l.iconSize, f),
+        className: o()(l.icon, l.iconSize, f),
         style: {
           backgroundImage: "url('".concat(t, "')")
         }
       })
     }), (0, r.jsxs)("div", {
-      className: a()(d, l.content),
+      className: o()(d, l.content),
       children: [(0, r.jsxs)("div", {
         children: [u, null != i && (0, r.jsx)(s.Z, {
           timestamp: i,
-          timestampFormat: o,
+          timestampFormat: a,
           className: _
         })]
       }), h]
@@ -64,7 +64,7 @@ c.Action = e => {
   } = e;
   return (0, r.jsxs)("span", {
     className: l.action,
-    children: ["—", (0, r.jsx)(o.Anchor, {
+    children: ["—", (0, r.jsx)(a.Anchor, {
       onClick: t,
       className: l.actionAnchor,
       children: n

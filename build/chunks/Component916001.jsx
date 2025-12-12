@@ -9,14 +9,14 @@ require("./473749.js");
 var Chunk866442 = require("./866442.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk813600 = require("./813600.js");
+  Chunk229928 = require("./229928.js");
 
 function l(e) {
   let {
     locked: t,
     role: n,
     textVariant: l = "text-xs/medium"
-  } = e, c = (0, a.dQu)(a.TVs.colors.INTERACTIVE_TEXT_DEFAULT).hex();
+  } = e, c = (0, o.dQu)(o.TVs.colors.INTERACTIVE_TEXT_DEFAULT).hex();
   return (0, r.jsx)("div", {
     className: s.roleTagContainer,
     children: (0, r.jsxs)("div", {
@@ -26,20 +26,20 @@ function l(e) {
         style: {
           backgroundColor: (0, i.Rf)(n.color)
         }
-      }), (0, r.jsx)(a.LZC, {
+      }), (0, r.jsx)(o.LZC, {
         size: 8,
         horizontal: true
-      }), (0, r.jsxs)(a.Text, {
+      }), (0, r.jsxs)(o.Text, {
         variant: l,
         color: "text-default",
-        children: [(0, r.jsx)(a.nn4, {
-          children: o.intl.string(o.t.RnyseL)
+        children: [(0, r.jsx)(o.nn4, {
+          children: a.intl.string(a.t.RnyseL)
         }), n.name]
       }), true === t && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(a.LZC, {
+        children: [(0, r.jsx)(o.LZC, {
           size: 8,
           horizontal: true
-        }), (0, r.jsx)(a.mBM, {
+        }), (0, r.jsx)(o.mBM, {
           size: "md",
           color: c
         })]

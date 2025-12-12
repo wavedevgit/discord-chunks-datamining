@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,7 +25,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -51,7 +51,7 @@ let u = {
   show(e) {
     let {
       title: t,
-      body: o,
+      body: a,
       confirmText: l,
       confirmVariant: u = "primary",
       cancelText: d,
@@ -73,7 +73,7 @@ let u = {
           },
           variant: "secondary"
         }), i.push({
-          text: null != l ? l : a.intl.string(a.t.BddRzS),
+          text: null != l ? l : o.intl.string(o.t.BddRzS),
           onClick: async () => {
             null == f || f(), await n.onClose()
           },
@@ -81,7 +81,7 @@ let u = {
         }), (0, r.jsx)(e, c(s({}, n), {
           size: "sm",
           title: t,
-          subtitle: o,
+          subtitle: a,
           actions: i
         }))
       }
@@ -97,7 +97,7 @@ let u = {
         onConfirm() {
           t(true)
         },
-        cancelText: a.intl.string(a.t["ETE/oC"]),
+        cancelText: o.intl.string(o.t["ETE/oC"]),
         onCancel() {
           t(false)
         }

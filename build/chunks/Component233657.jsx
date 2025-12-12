@@ -1,7 +1,7 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 233657, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,9 +16,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk434479 = require("./434479.jsx"),
   Chunk490897 = require("./490897.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk323453 = require("./323453.js");
+  Chunk509612 = require("./509612.js");
 
-function b(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function b(e) {
   return e
 }
 
-function m(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,56 +50,56 @@ function m(e, t) {
   }), e
 }
 
-function y(e) {
+function _(e) {
   let {
     guild: t,
-    selected: y
+    selected: _
   } = e, {
-    hasUnread: O,
-    mentionCount: v
+    hasUnread: y,
+    mentionCount: O
   } = (0, i.cj)([u.ZP], () => ({
     hasUnread: u.ZP.hasUnread(t.id, h.W.GUILD_EVENT),
     mentionCount: u.ZP.getMentionCount(t.id, h.W.GUILD_EVENT)
-  }), [t.id]), j = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
-  async function C() {
-    await (0, a.ZDy)(async () => {
+  }), [t.id]), v = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
+  async function j() {
+    await (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("4096"), n.e("56236"), n.e("54987")]).then(n.bind(n, 17671));
-      return n => (0, r.jsx)(e, m(b({}, n), {
+      } = await Promise.all([n.e("4096"), n.e("56236"), n.e("25688")]).then(n.bind(n, 17671));
+      return n => (0, r.jsx)(e, b(m({}, n), {
         guildId: t.id
       }))
     }), (0, s.Q3)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
-  let x = (0, c.ZP)(t.id),
-    E = x.length > 0 ? p.intl.formatToPlainString(p.t.IBdqSu, {
-      number: x.length
+  let C = (0, c.ZP)(t.id),
+    x = C.length > 0 ? p.intl.formatToPlainString(p.t.IBdqSu, {
+      number: C.length
     }) : p.intl.string(p.t.tlopTM);
   return (0, r.jsx)(f.m, {
     id: "upcoming-events-".concat(t.id),
-    renderIcon: e => (0, r.jsx)(a.Que, {
+    renderIcon: e => (0, r.jsx)(o.Que, {
       size: "md",
       color: "currentColor",
       className: e
     }),
-    text: E,
-    selected: y,
-    onClick: C,
+    text: x,
+    selected: _,
+    onClick: j,
     onContextMenu: e => {
-      (0, o.jW)(e, async () => {
+      (0, a.jW)(e, async () => {
         let {
           default: e
         } = await n.e("95307").then(n.bind(n, 867757));
-        return n => (0, r.jsx)(e, m(b({}, n), {
+        return n => (0, r.jsx)(e, b(m({}, n), {
           guildId: t.id
         }))
       })
     },
-    showUnread: O && !j,
-    trailing: !j && v > 0 ? (0, r.jsx)(a.mAB, {
+    showUnread: y && !v,
+    trailing: !v && O > 0 ? (0, r.jsx)(o.mAB, {
       className: g.numberBadge,
       disableColor: true,
-      count: v
+      count: O
     }) : null
   })
 }

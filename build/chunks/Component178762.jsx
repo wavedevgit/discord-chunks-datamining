@@ -11,7 +11,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk91192 = require("./91192.jsx"),
   Chunk876215 = require("./876215.js"),
   Chunk442837 = require("./442837.js"),
@@ -80,8 +80,8 @@ function j(e, t) {
   if (null == e) return {};
   var n, r, i = M(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -89,8 +89,8 @@ function j(e, t) {
 function M(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let k = 72,
@@ -137,11 +137,11 @@ let Z = e => {
         entry: n,
         targetElementRef: i
       } = e,
-      a = j(e, ["entry", "targetElementRef"]);
+      o = j(e, ["entry", "targetElementRef"]);
     return n.content_type === l.s.PLAYED_GAME ? (0, r.jsx)(y.Z, {
       entry: n,
       targetElementRef: i,
-      isFirstApplicationOccurrence: null != (t = a.isFirstApplicationOccurrence) && t
+      isFirstApplicationOccurrence: null != (t = o.isFirstApplicationOccurrence) && t
     }) : null
   },
   B = e => {
@@ -200,14 +200,14 @@ let Z = e => {
   H = Chunk473749.createContext(true),
   Y = e => {
     var t, {
-        index: a,
+        index: o,
         ref: l
       } = e,
       p = j(e, ["index", "ref"]);
     let h = i.useRef(null),
       [g, E] = i.useState("default"),
       [b, y] = i.useState(false),
-      O = (0, s.JA)("".concat(a)),
+      O = (0, s.JA)("".concat(o)),
       v = null == (t = _.default.getCurrentUser()) ? true : t.isStaff(),
       {
         isRich: S,
@@ -247,7 +247,7 @@ let Z = e => {
         let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
         (0, m.L)(e, D({}, T, t))
       }, [T]),
-      Y = i.useMemo(() => o().throttle(e => {
+      Y = i.useMemo(() => a().throttle(e => {
         (0, m.L)(R.xP.CARD_POPOUT_OPEN, e)
       }, U, {
         leading: true,

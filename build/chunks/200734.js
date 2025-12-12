@@ -24,7 +24,7 @@ function c(e) {
   if (!n) return t;
   var r = n[1],
     i = n[2];
-  return r && (t.tzid = r), t.dtstart = (0, o.gE)(i), t
+  return r && (t.tzid = r), t.dtstart = (0, a.gE)(i), t
 }
 
 function u(e) {
@@ -47,9 +47,9 @@ function d(e) {
   var t = c(e.replace(/^RRULE:/i, ""));
   return e.replace(/^(?:RRULE|EXRULE):/i, "").split(";").forEach(function(n) {
     var r = n.split("="),
-      a = r[0],
+      o = r[0],
       l = r[1];
-    switch (a.toUpperCase()) {
+    switch (o.toUpperCase()) {
       case "FREQ":
         t.freq = i.D[l.toUpperCase()];
         break;
@@ -67,7 +67,7 @@ function d(e) {
       case "BYMINUTE":
       case "BYSECOND":
         var u = f(l);
-        t[a.toLowerCase()] = u;
+        t[o.toLowerCase()] = u;
         break;
       case "BYWEEKDAY":
       case "BYDAY":
@@ -79,13 +79,13 @@ function d(e) {
         t.tzid = d.tzid, t.dtstart = d.dtstart;
         break;
       case "UNTIL":
-        t.until = (0, o.gE)(l);
+        t.until = (0, a.gE)(l);
         break;
       case "BYEASTER":
         t.byeaster = Number(l);
         break;
       default:
-        throw Error("Unknown RRULE property '" + a + "'")
+        throw Error("Unknown RRULE property '" + o + "'")
     }
   }), t
 }
@@ -106,6 +106,6 @@ function _(e) {
     var n = Number(t[1]),
       r = t[2],
       i = s.hn[r].weekday;
-    return new a.O(i, n)
+    return new o.O(i, n)
   })
 }

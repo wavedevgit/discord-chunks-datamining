@@ -27,13 +27,13 @@ let d = () => {
       n = arguments.length > 2 && true !== arguments[2] && arguments[2],
       i = arguments.length > 3 ? arguments[3] : true;
     if (!d()) return;
-    let o = null == e.id,
+    let a = null == e.id,
       {
         shouldPlay: l,
         failureReason: c
       } = _(n);
-    a.default.track(u.rMx.CONFETTI_POTION_TRIGGERED, {
-      emoji_type: o ? s.aK.Unicode : s.aK.UserCreated,
+    o.default.track(u.rMx.CONFETTI_POTION_TRIGGERED, {
+      emoji_type: a ? s.aK.Unicode : s.aK.UserCreated,
       will_play: l,
       failure_reason: c,
       location: i
@@ -49,7 +49,7 @@ let d = () => {
     }, {
       autoTrackExposure: false
     }).canSeeConfetti;
-    return o.Z.confettiMode || t ? n ? i.Z.useReducedMotion ? {
+    return a.Z.confettiMode || t ? n ? i.Z.useReducedMotion ? {
       shouldPlay: false,
       failureReason: s.U0.ReducedMotion
     } : null == (0, c.Eq)(e) ? {
@@ -72,7 +72,7 @@ let d = () => {
     }, {
       autoTrackExposure: false
     }).canSeeConfetti;
-    return o.Z.confettiMode || e ? t ? i.Z.useReducedMotion ? {
+    return a.Z.confettiMode || e ? t ? i.Z.useReducedMotion ? {
       shouldPlay: false,
       failureReason: s.U0.ReducedMotion
     } : {
@@ -95,7 +95,7 @@ let d = () => {
         h: 0
       },
       i = arguments.length > 2 && true !== arguments[2] && arguments[2],
-      o = arguments.length > 3 ? arguments[3] : true;
+      a = arguments.length > 3 ? arguments[3] : true;
     if (!d()) return;
     let l = (0, c.Eq)(e),
       f = (null == l || null == (t = l.emoji) ? true : t[0].id) == null,
@@ -103,11 +103,11 @@ let d = () => {
         shouldPlay: _,
         failureReason: m
       } = p(e, i);
-    a.default.track(u.rMx.CONFETTI_POTION_TRIGGERED, {
+    o.default.track(u.rMx.CONFETTI_POTION_TRIGGERED, {
       emoji_type: f ? s.aK.Unicode : s.aK.UserCreated,
       will_play: _,
       failure_reason: m,
-      location: o
+      location: a
     }), _ && null != l && l.emoji.forEach(e => {
       r.Z.dispatch({
         type: "POTIONS_TRIGGER_MESSAGE_CONFETTI",

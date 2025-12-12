@@ -1,14 +1,14 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 764163, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  DI: () => I,
-  x3: () => E
+  DI: () => E,
+  x3: () => N
 }), require("./388685.js"), require("./953529.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  s = require.n(Chunk512722),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -22,9 +22,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk691886 = require("./691886.jsx"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk640414 = require("./640414.js");
+  Chunk803931 = require("./803931.js");
 
-function O(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function O(e) {
   return e
 }
 
-function C(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,18 +56,18 @@ function C(e, t) {
   }), e
 }
 
-function y(e) {
+function C(e) {
   let {
     guildId: t,
     emojiData: n,
     onSelectEmoji: l
-  } = e, a = i.useRef(null), s = (0, o.e7)([m.ZP], () => null != n.id ? m.ZP.getCustomEmojiById(n.id) : true), u = (0, o.e7)([p.ZP], () => p.ZP.getDefaultChannel(t)), h = i.useCallback(e => {
+  } = e, s = i.useRef(null), a = (0, o.e7)([p.ZP], () => null != n.id ? p.ZP.getCustomEmojiById(n.id) : true), d = (0, o.e7)([h.ZP], () => h.ZP.getDefaultChannel(t)), x = i.useCallback(e => {
     let {
       closePopout: t
     } = e;
-    return (0, r.jsx)(f.Z, {
-      pickerIntention: x.Hz.GUILD_ROLE_BENEFIT_EMOJI,
-      channel: u,
+    return (0, r.jsx)(m.Z, {
+      pickerIntention: b.Hz.GUILD_ROLE_BENEFIT_EMOJI,
+      channel: d,
       closePopout: t,
       onNavigateAway: t,
       onSelectEmoji: e => {
@@ -84,106 +84,106 @@ function y(e) {
         }), r && t()
       }
     })
-  }, [l, u]), j = i.useMemo(() => null == s && null == n.name ? null : function() {
-    return (0, r.jsx)(d.Z, {
-      className: v.emoji,
+  }, [l, d]), j = i.useMemo(() => null == a && null == n.name ? null : function() {
+    return (0, r.jsx)(u.Z, {
+      className: _.emoji,
       emojiId: n.id,
       emojiName: n.name,
-      animated: null == s ? true : s.animated
+      animated: null == a ? true : a.animated
     })
-  }, [n, s]), y = "";
-  return null != s ? y = ":".concat(s.name, ":") : null != n.name && (y = b.ZP.convertSurrogateToName(n.name)), (0, r.jsx)(c.yRy, {
-    targetElementRef: a,
+  }, [n, a]), C = "";
+  return null != a ? C = ":".concat(a.name, ":") : null != n.name && (C = f.ZP.convertSurrogateToName(n.name)), (0, r.jsx)(c.yRy, {
+    targetElementRef: s,
     animation: c.yRy.Animation.NONE,
     position: "top",
-    renderPopout: h,
+    renderPopout: x,
     children: (e, t) => {
       let {
         isShown: n
       } = t;
-      return (0, r.jsxs)("div", C(O({
-        ref: a,
-        className: v.emojiInputContainer
+      return (0, r.jsxs)("div", O(v({
+        ref: s,
+        className: _.emojiInputContainer
       }, e), {
         children: [(0, r.jsx)(g.Z, {
-          className: v.emojiButton,
+          className: _.emojiButton,
           active: n,
           tabIndex: 0,
           renderButtonContents: j
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/normal",
-          className: v.emojiText,
-          children: y
+          className: _.emojiText,
+          children: C
         })]
       }))
     }
   })
 }
 
-function N(e) {
+function y(e) {
   var t;
   let {
     guildId: n,
     initialData: l,
-    benefitTypeInput: a,
+    benefitTypeInput: s,
     descriptionPlaceholder: o,
-    canSubmit: d,
+    canSubmit: u,
     onSave: g,
-    onDelete: f,
-    transitionState: m,
-    onClose: b
-  } = e, p = (0, u.Dt)(), [h, x] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [v, O] = i.useState(() => ({
+    onDelete: m,
+    transitionState: p,
+    onClose: f
+  } = e, h = (0, d.Dt)(), [x, b] = i.useState(null != (t = null == l ? true : l.description) ? t : ""), [_, v] = i.useState(() => ({
     id: null == l ? true : l.emoji_id,
     name: null == l ? true : l.emoji_name
-  })), C = d && "" !== h && (null != v.id || null != v.name);
+  })), O = u && "" !== x && (null != _.id || null != _.name);
 
-  function N(e) {
-    e.preventDefault(), C && (g({
-      description: h,
-      emojiId: v.id,
-      emojiName: v.name
-    }), b())
+  function y(e) {
+    e.preventDefault(), O && (g({
+      description: x,
+      emojiId: _.id,
+      emojiName: _.name
+    }), f())
   }
-  let E = [{
+  let N = [{
     text: j.intl.string(j.t["ETE/oC"]),
     variant: "secondary",
-    onClick: b
+    onClick: f
   }];
-  return null != f && E.push({
+  return null != m && N.push({
     text: j.intl.string(j.t.oyYWHE),
     variant: "critical-secondary",
     onClick: () => {
-      f(), b()
+      m(), f()
     },
     icon: c.XHJ
-  }), E.push({
+  }), N.push({
     text: null == l ? j.intl.string(j.t.OYkgVk) : j.intl.string(j.t["R3BPH+"]),
     variant: "primary",
-    onClick: N,
-    disabled: !C
+    onClick: y,
+    disabled: !O
   }), (0, r.jsx)("form", {
-    onSubmit: N,
-    children: (0, r.jsx)(s.Modal, {
-      transitionState: m,
-      onClose: b,
+    onSubmit: y,
+    children: (0, r.jsx)(a.Modal, {
+      transitionState: p,
+      onClose: f,
       title: j.intl.string(j.t["2qf9EI"]),
-      actions: E,
+      actions: N,
       children: (0, r.jsxs)(c.Kqy, {
         gap: "md",
-        children: [a, (0, r.jsx)(c.Kx8, {
+        children: [s, (0, r.jsx)(c.Kx8, {
           label: j.intl.string(j.t["1Ts7QP"]),
           placeholder: o,
-          value: h,
+          value: x,
           rows: 1,
           autosize: true,
-          onChange: x,
-          "aria-labelledby": p
-        }), (0, r.jsx)(s.gNt, {
+          onChange: b,
+          "aria-labelledby": h
+        }), (0, r.jsx)(a.gNt, {
           label: j.intl.string(j.t.sMOuuS),
-          children: (0, r.jsx)(y, {
+          children: (0, r.jsx)(C, {
             guildId: n,
-            emojiData: v,
-            onSelectEmoji: O
+            emojiData: _,
+            onSelectEmoji: v
           })
         })]
       })
@@ -191,81 +191,81 @@ function N(e) {
   })
 }
 
-function E(e) {
+function N(e) {
   let {
     guildId: t,
     omitChannelIds: n,
     initialData: l,
-    onSave: s,
+    onSave: a,
     onDelete: o,
-    transitionState: d,
+    transitionState: u,
     onClose: g
-  } = e, [f, m] = i.useState(null == l ? true : l.ref_id), b = (0, u.Dt)(), p = (0, r.jsxs)(c.Kqy, {
+  } = e, [m, p] = i.useState(null == l ? true : l.ref_id), f = (0, d.Dt)(), h = (0, r.jsxs)(c.Kqy, {
     gap: 16,
     children: [(0, r.jsx)(c.Wn, {
       messageType: c.QYI.WARNING,
       children: j.intl.string(j.t.xunxCo)
-    }), (0, r.jsx)(h.Z, {
+    }), (0, r.jsx)(x.Z, {
       label: j.intl.string(j.t.GK18KJ),
       guildId: t,
-      value: f,
+      value: m,
       initialChannelId: null == l ? true : l.ref_id,
       omitChannelIds: n,
       onChange: function(e) {
-        m(e)
+        p(e)
       },
-      "aria-labelledby": b
+      "aria-labelledby": f
     })]
   });
-  return (0, r.jsx)(N, {
+  return (0, r.jsx)(y, {
     guildId: t,
     initialData: l,
-    benefitTypeInput: p,
+    benefitTypeInput: h,
     descriptionPlaceholder: j.intl.string(j.t.J8O1Lp),
-    canSubmit: null != f,
+    canSubmit: null != m,
     onSave: function(e) {
-      a()(null != f, "Cannot submit null channel"), s(C(O({}, e), {
-        channelId: f
+      s()(null != m, "Cannot submit null channel"), a(O(v({}, e), {
+        channelId: m
       }))
     },
-    transitionState: d,
+    transitionState: u,
     onClose: g,
     onDelete: o
   })
 }
 
-function I(e) {
+function E(e) {
   var t;
   let {
     initialData: n,
     onSave: l,
-    transitionState: s,
+    transitionState: a,
     onClose: o,
-    onDelete: d,
+    onDelete: u,
     guildId: g
-  } = e, [f, m] = i.useState(null != (t = null == n ? true : n.name) ? t : ""), b = (0, u.Dt)(), p = (0, r.jsx)(c.Kx8, {
+  } = e, [m, p] = i.useState(null != (t = null == n ? true : n.name) ? t : ""), f = (0, d.Dt)(), h = (0, r.jsx)(c.Kx8, {
     label: j.intl.string(j.t.NPOJrU),
     placeholder: j.intl.string(j.t.NPOJrU),
-    value: f,
+    value: m,
     rows: 1,
     onChange: function(e) {
-      m(e)
+      p(e)
     },
-    "aria-labelledby": b
+    "aria-labelledby": f
   });
-  return (0, r.jsx)(N, {
+  return (0, r.jsx)(y, {
     guildId: g,
     initialData: n,
-    benefitTypeInput: p,
+    benefitTypeInput: h,
     descriptionPlaceholder: j.intl.string(j.t.ucP4Tt),
-    canSubmit: "" !== f,
+    canSubmit: "" !== m,
     onSave: function(e) {
-      a()("" !== f, "Cannot submit empty name"), l(C(O({}, e), {
-        name: f
+      s()("" !== m, "Cannot submit empty name"), l(O(v({}, e), {
+        name: m
       }))
     },
-    transitionState: s,
+    transitionState: a,
     onClose: o,
-    onDelete: d
+    onDelete: u
   })
 }

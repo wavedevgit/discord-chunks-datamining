@@ -6,36 +6,36 @@ require.d(exports, {
 });
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let a = {
+let o = {
   fetched: false,
   affinities: []
 };
 
-function o(e) {
+function a(e) {
   let {} = e;
-  a.fetched = true
+  o.fetched = true
 }
 
 function s(e) {
   let {
     res: t
   } = e;
-  a.affinities = t
+  o.affinities = t
 }
 
 function l() {
-  a.fetched = false, a.affinities = []
+  o.fetched = false, o.affinities = []
 }
 class c extends Chunk442837.ZP.Store {
   get hasFetched() {
-    return a.fetched
+    return o.fetched
   }
   get affinities() {
-    return a.affinities
+    return o.affinities
   }
 }
 let u = new c(Chunk570140.Z, {
-  BILLING_NITRO_AFFINITY_FETCHED: o,
+  BILLING_NITRO_AFFINITY_FETCHED: a,
   BILLING_NITRO_AFFINITY_FETCH_SUCCEEDED: s,
   LOGOUT: l
 })

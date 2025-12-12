@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  a = require.n(Chunk512722),
   Chunk742280 = require("./742280.js"),
   Chunk95015 = require("./95015.js"),
   Chunk399606 = require("./399606.js"),
@@ -38,7 +38,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk982204 = require("./982204.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk472810 = require("./472810.js");
+  Chunk416439 = require("./416439.js");
 
 function U(e) {
   let {
@@ -62,7 +62,7 @@ function G(e) {
   let {
     hasLegalTermsFlash: t,
     legalTermsNodeRef: n,
-    onPaymentSourceChange: a,
+    onPaymentSourceChange: o,
     handlePaymentSourceAdd: E
   } = e, {
     application: G,
@@ -87,18 +87,18 @@ function G(e) {
     hasAlreadyLinked: er
   } = (0, g.F)(G), {
     defaultPaymentSourceId: ei,
-    hasFetchedPaymentSources: ea
+    hasFetchedPaymentSources: eo
   } = (0, c.cj)([I.Z], () => ({
     defaultPaymentSourceId: I.Z.defaultPaymentSourceId,
     hasFetchedPaymentSources: I.Z.hasFetchedPaymentSources
   }));
-  o()(null != W, "Expected selectedSkuId");
-  let eo = H[W],
-    es = null == eo ? true : eo.eligiblePaymentGateways,
+  a()(null != W, "Expected selectedSkuId");
+  let ea = H[W],
+    es = null == ea ? true : ea.eligiblePaymentGateways,
     el = Y[W],
     ec = null != B ? B : T.c,
     eu = null != el ? el[ec] : null;
-  o()(null != eo, "SKU must exist and be fetched."), o()(null != G, "Application must exist.");
+  a()(null != ea, "SKU must exist and be fetched."), a()(null != G, "Application must exist.");
   let ed = (0, c.e7)([h.Z, C.Z], () => C.Z.inTestModeForApplication(G.id) || h.Z.inDevModeForApplication(G.id), [G.id]),
     ef = (0, c.e7)([v.Z], () => v.Z.enabled),
     ep = s.M.EEA_COUNTRIES.has(S.Z.ipCountryCodeWithFallback),
@@ -106,16 +106,16 @@ function G(e) {
     em = (0, D.m)(F, B),
     eh = null != em ? em.type : null;
   i.useEffect(() => {
-    ea && B === ei && ei !== T.c && null == eu && (0, d.x2)(eo.applicationId, eo.id, ei, {
+    eo && B === ei && ei !== T.c && null == eu && (0, d.x2)(ea.applicationId, ea.id, ei, {
       isGift: $
     }).then(() => {
       X(null)
     }).catch(e => {
       X(e)
     })
-  }, [ei, ea, B, eo.applicationId, eo.id, eu, X, $]);
+  }, [ei, eo, B, ea.applicationId, ea.id, eu, X, $]);
   let eg = null != es && es.length > 0 && (B === T.c || null === eh) && J ? y.w.SELECT_PAYMENT_METHOD : true,
-    eE = eo.productLine === j.POd.SOCIAL_LAYER_GAME_ITEM,
+    eE = ea.productLine === j.POd.SOCIAL_LAYER_GAME_ITEM,
     eb = et && !eE;
   return (0, r.jsxs)("div", {
     className: k.stepBody,
@@ -135,30 +135,30 @@ function G(e) {
       children: M.intl.string(M.t.tAmECt)
     }, "DEV_SHELF_ERROR") : null, (0, r.jsx)(U, {
       application: G,
-      sku: eo,
+      sku: ea,
       isEmbeddedIAP: K
     }), eb && (0, r.jsx)(x.Z, {
-      sku: eo
+      sku: ea
     }), null != ee ? (0, r.jsx)(O.s, {
       giftRecipient: ee
     }) : null, (0, r.jsx)(u.gNt, {
       label: $ ? M.intl.string(M.t.PEjaCx) : M.intl.string(M.t.sail9P),
       children: null != eu ? (0, r.jsx)(L.B, {
-        sku: eo,
+        sku: ea,
         skuPricePreview: eu,
         application: G
       }) : null == q ? (0, r.jsx)(u.$jN, {
         type: u.$jN.Type.WANDERING_CUBES,
         className: k.invoiceSpinner
       }) : (0, r.jsx)(L.E, {
-        sku: eo,
+        sku: ea,
         value: ""
       })
     }), (0, r.jsx)(_.ZP, {
       label: M.intl.string(M.t["mmDvV+"]),
       paymentSources: Object.values(F),
       selectedPaymentSourceId: B,
-      onChange: a,
+      onChange: o,
       onPaymentSourceAdd: E,
       hidePersonalInformation: ef,
       paymentGatewayRestrictions: es
@@ -178,7 +178,7 @@ function G(e) {
           paymentSourceType: eh,
           isEmbeddedIAP: K,
           purchaseType: z,
-          productLine: eo.productLine,
+          productLine: ea.productLine,
           isGift: $,
           applicationName: G.name,
           hasAlreadyLinked: !en || er

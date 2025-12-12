@@ -31,14 +31,14 @@ async function u(e, t) {
     branchId: t
   });
   try {
-    if ((n = await a.j(e, t, i)).type === o.QCD.CONFLICT) throw r.Z.dispatch({
+    if ((n = await o.j(e, t, i)).type === a.QCD.CONFLICT) throw r.Z.dispatch({
       type: "GAME_CLOUD_SYNC_CONFLICT",
       applicationId: e,
       branchId: t,
       next: n.next,
       remote: n.remote
     }), new c("Conflict in cloud sync.");
-    (n.type === o.QCD.PULL || n.type === o.QCD.PUSH) && l.info("Sync complete", n)
+    (n.type === a.QCD.PULL || n.type === a.QCD.PUSH) && l.info("Sync complete", n)
   } catch (n) {
     if (n instanceof c) throw n;
     throw r.Z.dispatch({

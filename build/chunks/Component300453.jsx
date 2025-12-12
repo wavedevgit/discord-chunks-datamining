@@ -1,19 +1,19 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 300453, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk687817 = require("./687817.js");
+  Chunk601374 = require("./601374.js");
 
-function a(e) {
+function s(e) {
   let {
     step: t,
     header: n,
-    children: a
+    children: s
   } = e;
   return (0, r.jsxs)("div", {
     className: l.triggerContainer,
@@ -36,9 +36,9 @@ function a(e) {
           variant: "text-sm/normal",
           children: n
         })
-      }), null != a && (0, r.jsx)("div", {
+      }), null != s && (0, r.jsx)("div", {
         className: l.triggerSettingsContainer,
-        children: a
+        children: s
       })]
     })]
   })

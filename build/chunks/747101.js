@@ -1,9 +1,9 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 49941 **/
 /** chunk id: 747101, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  kN: () => s,
+  kN: () => c,
   kO: () => o,
-  qU: () => c
+  qU: () => s
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -11,24 +11,24 @@ var Chunk473749 = require("./473749.js"),
   Chunk669764 = require("./669764.js");
 
 function o(e) {
-  return (0, i.e7)([l.Z], () => l.Z.isFetching(e))
+  return (0, i.e7)([a.Z], () => a.Z.isFetching(e))
 }
 
-function c(e) {
+function s(e) {
   r.useEffect(() => {
     if (e.length > 0) {
-      let t = e.filter(e => l.Z.canFetch(e));
-      t.length > 0 && a.Z.getDetectableGamesSupplemental(t)
+      let t = e.filter(e => a.Z.canFetch(e));
+      t.length > 0 && l.Z.getDetectableGamesSupplemental(t)
     }
   }, [e])
 }
 
-function s(e) {
-  let [t, n] = (0, i.Wu)([l.Z], () => [l.Z.numNoDataAvailable(), l.Z.numSupplementalGames()]);
+function c(e) {
+  let [t, n] = (0, i.Wu)([a.Z], () => [a.Z.numNoDataAvailable(), a.Z.numSupplementalGames()]);
   return r.useMemo(() => {
     let t = {};
     return e.forEach(e => {
-      t[e] = l.Z.getGame(e)
+      t[e] = a.Z.getGame(e)
     }), t
   }, [e, t, n])
 }

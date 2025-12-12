@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk473749 = require("./473749.js"),
   Chunk979590 = require("./979590.js"),
-  a = require.n(Chunk979590),
+  o = require.n(Chunk979590),
   Chunk866442 = require("./866442.js"),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js");
@@ -17,7 +17,7 @@ let c = e => {
       h: n,
       s: r,
       l: i
-    } = a()((0, o.Rf)(e)).toHsl(), s = a()({
+    } = o()((0, a.Rf)(e)).toHsl(), s = o()({
       h: n,
       s: r * t,
       l: i

@@ -16,12 +16,12 @@ let s = 250,
       tooltipDelay: n = s
     } = e;
     return (0, r.jsx)(i.u, {
-      text: o.intl.string(o.t["JCFN/y"]),
+      text: a.intl.string(a.t["JCFN/y"]),
       delay: n,
-      children: (0, r.jsx)(a.hU, {
-        "aria-label": o.intl.string(o.t["JCFN/y"]),
+      children: (0, r.jsx)(o.hU, {
+        "aria-label": a.intl.string(a.t["JCFN/y"]),
         variant: "primary",
-        icon: a.OgN,
+        icon: o.OgN,
         size: "md",
         onClick: t
       })

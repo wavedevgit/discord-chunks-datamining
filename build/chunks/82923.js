@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 82923, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./388685.js");
 var r, i, Chunk748780 = require("./748780.js");
 
-function a(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,14 +15,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function s(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      s(e, t, n[t])
     })
   }
   return e
@@ -39,7 +39,7 @@ class o {
     this.animation.stop()
   }
   constructor(e) {
-    a(this, "animation", true), this.animation = e
+    s(this, "animation", true), this.animation = e
   }
 }
 class c {
@@ -53,10 +53,10 @@ class c {
     this._map(e => e.stop())
   }
   constructor(e) {
-    a(this, "animations", true), this.animations = e
+    s(this, "animations", true), this.animations = e
   }
 }
-class d {
+class u {
   async start() {
     for (let e of (this.stopped = false, this.animations)) {
       if (this.stopped) return;
@@ -67,25 +67,25 @@ class d {
     this.stopped = true, this.animations.map(e => e.stop())
   }
   constructor(e) {
-    a(this, "animations", true), a(this, "stopped", false), this.animations = e
+    s(this, "animations", true), s(this, "stopped", false), this.animations = e
   }
 }
 
-function u(e, t, n) {
-  return new o(n(e, s({}, t)))
+function d(e, t, n) {
+  return new o(n(e, a({}, t)))
 }
-let g = (r = s({}, Chunk748780.Z), i = i = {
+let g = (r = a({}, Chunk748780.Z), i = i = {
   timing: function(e, t) {
-    return u(e, t, l.Z.timing)
+    return d(e, t, l.Z.timing)
   },
   spring: function(e, t) {
-    return u(e, t, l.Z.spring)
+    return d(e, t, l.Z.spring)
   },
   parallel: function(e) {
     return new c(e)
   },
   sequence: function(e) {
-    return new d(e)
+    return new u(e)
   }
 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
   var n = Object.keys(e);

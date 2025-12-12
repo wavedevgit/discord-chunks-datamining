@@ -1,7 +1,7 @@
 /** Chunk was on 86948 **/
 /** chunk id: 154122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => d
+  J: () => f
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -12,23 +12,23 @@ var Chunk120356 = require("./120356.js"),
   Chunk518950 = require("./518950.js"),
   Chunk342386 = require("./342386.js"),
   Chunk51144 = require("./51144.js"),
-  Chunk137427 = require("./137427.js"),
+  Chunk96011 = require("./96011.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk116741 = require("./116741.js");
-let d = e => {
+  Chunk456577 = require("./456577.js");
+let f = e => {
   let {
     recipient: t,
     isSuccess: n,
     onClose: l
   } = e, {
-    avatarSrc: d,
+    avatarSrc: f,
     eventHandlers: g
   } = (0, o.Z)({
     userId: null == t ? true : t.id,
     size: s.EFr.SIZE_56
-  }), b = u.ZP.getName(t), m = !n;
+  }), b = c.ZP.getName(t), m = !n;
   return (0, r.jsxs)("div", {
-    className: h.row,
+    className: d.row,
     children: [(0, r.jsx)(s.qEK, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -48,38 +48,38 @@ let d = e => {
       return e
     }({
       imageClassName: a()({
-        [h.erroredAvatar]: m
+        [d.erroredAvatar]: m
       }),
-      src: d,
+      src: f,
       "aria-label": b,
       size: s.EFr.SIZE_32
     }, g)), m ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.Text, {
-        className: h.error,
+        className: d.error,
         variant: "text-md/medium",
         color: "text-strong",
         children: b
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/medium",
-        className: h.error,
+        className: d.error,
         color: "text-strong",
-        children: f.intl.format(p.default["Y/oMwY"], {
+        children: h.intl.format(p.default["Y/oMwY"], {
           userName: b
         })
       })]
     }) : (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
-      className: h.displayName,
+      className: d.displayName,
       color: "text-strong",
       children: b
     }), (0, r.jsx)(s.Button, {
       variant: "secondary",
       size: "sm",
-      text: f.intl.string(f.t["g33r/P"]),
+      text: h.intl.string(h.t["g33r/P"]),
       icon: s.kBi,
       onClick: () => {
         var e;
-        return e = t.id, void((0, c.default)(), i.Z.openPrivateChannel({
+        return e = t.id, void((0, u.default)(), i.Z.openPrivateChannel({
           recipientIds: e
         }), l())
       }

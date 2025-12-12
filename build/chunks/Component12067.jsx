@@ -24,7 +24,7 @@ var Chunk95015 = require("./95015.js"),
 function E(e) {
   let {
     message: t
-  } = (0, h.CJ)(), n = (0, a.e7)([_.Z], () => _.Z.getChannel(null == t ? true : t.channel_id)), {
+  } = (0, h.CJ)(), n = (0, o.e7)([_.Z], () => _.Z.getChannel(null == t ? true : t.channel_id)), {
     shouldHideMediaOptions: E,
     enabledContentHarmTypeFlags: b,
     gifAutoPlay: y,
@@ -51,7 +51,7 @@ function E(e) {
   }
   let A = e.items.map((e, n) => {
     let r = e.media,
-      a = (e, t, n) => {},
+      o = (e, t, n) => {},
       s = null == v ? true : v(r),
       l = {
         message: t,
@@ -64,7 +64,7 @@ function E(e) {
           width: r.width,
           spoiler: e.spoiler,
           contentType: r.contentType,
-          srcIsAnimated: (0, i.yE)(r.flags, o.hR.IS_ANIMATED)
+          srcIsAnimated: (0, i.yE)(r.flags, a.hR.IS_ANIMATED)
         },
         onContextMenu: s,
         autoPlayGif: y,
@@ -77,7 +77,7 @@ function E(e) {
         renderGenericFileComponent: g.dG4,
         renderMosaicItemFooter: g.dG4,
         gifFavoriteButton: O(r),
-        onPlay: a,
+        onPlay: o,
         canRemoveItem: false,
         onRemoveItem: g.dG4
       },

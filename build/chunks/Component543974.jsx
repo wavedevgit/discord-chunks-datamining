@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk254238 = require("./254238.js"),
   Chunk258609 = require("./258609.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk497330 = require("./497330.js"),
+  Chunk163589 = require("./163589.js"),
   Chunk505913 = require("./505913.js");
 let j = (0, Chunk16030.G)(Chunk961842.Z);
 
@@ -51,7 +51,7 @@ function m(e) {
 
 function y() {
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk497330.emptyArt,
+    className: Chunk163589.emptyArt,
     children: (0, Chunk54381.jsx)("img", {
       src: Chunk505913,
       width: "189",

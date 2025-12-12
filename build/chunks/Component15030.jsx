@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 15030, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk975464 = require("./975464.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk674563 = require("./674563.js"),
-  Chunk970964 = require("./970964.js");
+  Chunk423887 = require("./423887.js");
 
 function j() {
   let e, t = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
@@ -27,31 +27,31 @@ function j() {
       application: n,
       loading: j
     } = (0, Chunk725803.Z)(null == exports ? true : exports.id, Chunk674563.wW.GUILD_ROLE_SUBSCRIPTIONS),
-    v = Chunk473749.useRef(null),
-    O = (0, Chunk614342.Z)(null != exports ? exports : true);
+    _ = Chunk473749.useRef(null),
+    v = (0, Chunk614342.Z)(null != exports ? exports : true);
   Chunk473749.useEffect(() => {
     null != exports && (0, Chunk303737.sO)(exports) && (0, Chunk266454.Q3)(Chunk704215.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
   }, [exports]);
-  let C = (null == exports ? true : exports.features.has(Chunk981631.GuildFeatures.CREATOR_MONETIZABLE)) === false && (null == exports ? true : exports.features.has(Chunk981631.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) === false;
-  return e = null == exports || j ? (0, Chunk54381.jsx)(Chunk481060.$jN, {}) : null != O ? (0, Chunk54381.jsx)(Chunk500395.Z, {
+  let O = (null == exports ? true : exports.features.has(Chunk981631.GuildFeatures.CREATOR_MONETIZABLE)) === false && (null == exports ? true : exports.features.has(Chunk981631.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) === false;
+  return e = null == exports || j ? (0, Chunk54381.jsx)(Chunk481060.$jN, {}) : null != v ? (0, Chunk54381.jsx)(Chunk500395.Z, {
     guild: exports,
-    config: O
-  }) : C ? (0, Chunk54381.jsx)(Chunk975464.Z, {
+    config: v
+  }) : O ? (0, Chunk54381.jsx)(Chunk975464.Z, {
     guild: exports
   }) : (0, Chunk54381.jsx)(Chunk618748.Z, {
     guild: exports,
     application: require
   }), (0, Chunk54381.jsx)("div", {
-    className: Chunk970964.settingsColumn,
+    className: Chunk423887.settingsColumn,
     children: (0, Chunk54381.jsx)("div", {
-      className: Chunk970964.settingsContainer,
+      className: Chunk423887.settingsContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.w0Z, {
-        className: Chunk970964.settingsScroller,
+        className: Chunk423887.settingsScroller,
         children: (0, Chunk54381.jsx)("main", {
-          ref: v,
-          className: Chunk970964.settingsContent,
+          ref: _,
+          className: Chunk423887.settingsContent,
           children: (0, Chunk54381.jsx)(Chunk481060.JcV, {
-            containerRef: v,
+            containerRef: _,
             children: module
           })
         })

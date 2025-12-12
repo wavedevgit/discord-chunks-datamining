@@ -60,7 +60,7 @@ function A() {
 }
 
 function N(e) {
-  (0, f.Y)("DesktopNativeUtils") ? (o.K.set(C, e), m.ZP.setEnableHardwareAcceleration(true)) : m.ZP.setEnableHardwareAcceleration(e)
+  (0, f.Y)("DesktopNativeUtils") ? (a.K.set(C, e), m.ZP.setEnableHardwareAcceleration(true)) : m.ZP.setEnableHardwareAcceleration(e)
 }
 
 function P() {
@@ -90,7 +90,7 @@ function R() {
   let e = Chunk695346.bm.useSetting(),
     t = Chunk695346.Sb.useSetting(),
     n = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId),
-    o = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain),
+    a = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain),
     s = Chunk473749.useCallback(e => {
       g.bm.updateSetting(!e)
     }, []),

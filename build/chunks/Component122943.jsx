@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk201895 = require("./201895.js"),
@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk532657 = require("./532657.jsx"),
   Chunk556638 = require("./556638.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk175996 = require("./175996.js");
+  Chunk80568 = require("./80568.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,7 +65,7 @@ function I(e) {
   let {
     channel: t,
     textVariant: n,
-    textClassName: a,
+    textClassName: o,
     iconClassName: f,
     hideText: h = false,
     hideTooltip: y = false,
@@ -87,7 +87,7 @@ function I(e) {
     size: "custom",
     color: T,
     channel: t,
-    className: o()(b.icon, f)
+    className: a()(b.icon, f)
   }) : (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     text: C,
@@ -100,13 +100,13 @@ function I(e) {
       size: "custom",
       color: T,
       channel: t,
-      className: o()(b.icon, f)
+      className: a()(b.icon, f)
     }))
   }), x = () => N ? C : A ? E.intl.string(E.t["9FaEzi"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCN) : E.intl.string(E.t.msxteM);
   return (0, r.jsxs)(r.Fragment, {
     children: [D(), !h && (0, r.jsxs)(m.Z, {
       variant: n,
-      className: a,
+      className: o,
       canTruncate: v,
       hideTooltip: y,
       children: [x(), P && null != C && " (".concat(C, ")")]
@@ -119,7 +119,7 @@ function T(e) {
     channel: t,
     textVariant: n,
     textClassName: i,
-    iconClassName: a,
+    iconClassName: o,
     hideText: l = false,
     hideTooltip: c = false,
     canTruncate: f = true,
@@ -134,7 +134,7 @@ function T(e) {
       size: "custom",
       color: m,
       channel: t,
-      className: o()(b.icon, a)
+      className: a()(b.icon, o)
     }),
     text: I,
     tooltipText: c ? true : S,

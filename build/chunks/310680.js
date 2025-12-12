@@ -10,5 +10,5 @@ var Chunk660027 = require("./660027.js"),
   Chunk882159 = require("./882159.js");
 
 function s(e) {
-  return ["html", "body", "#document"].indexOf((0, a.Z)(e)) >= 0 ? e.ownerDocument.body : (0, o.Re)(e) && (0, i.Z)(e) ? e : s((0, r.Z)(e))
+  return ["html", "body", "#document"].indexOf((0, o.Z)(e)) >= 0 ? e.ownerDocument.body : (0, a.Re)(e) && (0, i.Z)(e) ? e : s((0, r.Z)(e))
 }

@@ -30,7 +30,7 @@ async function d(e) {
   let h = l.Z.getApplication(f);
   if (null == h) {
     let e = await (0, s.UM)(f);
-    h = o.ZP.createFromServer(e)
+    h = a.ZP.createFromServer(e)
   }
   let g = r.Y.USER_INSTALL,
     E = null == h || null == (d = h.integrationTypesConfig) || null == (n = d[g]) || null == (t = n.oauth2InstallParams) ? true : t.scopes;
@@ -40,7 +40,7 @@ async function d(e) {
     section_name: m.sectionName,
     source: m.entrypoint
   }), new Promise(e => {
-    (0, a.openOAuth2Modal)({
+    (0, o.openOAuth2Modal)({
       clientId: f,
       integrationType: g,
       scopes: E,

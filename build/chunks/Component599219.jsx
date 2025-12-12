@@ -1,4 +1,4 @@
-/** Chunk was on 24028 **/
+/** Chunk was on 91848 **/
 /** chunk id: 599219, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => S
@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk834891 = require("./834891.js"),
   Chunk675999 = require("./675999.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk22742 = require("./22742.js");
+  Chunk751629 = require("./751629.js");
 
 function F(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -65,7 +65,7 @@ function D(e, t) {
 }
 
 function S(e) {
-  let t = (0, f.Dt)(),
+  let t = (0, _.Dt)(),
     {
       onSlideChange: n
     } = e,
@@ -88,7 +88,7 @@ function S(e) {
       onClose: S
     } = s,
     [L, w] = o.useState(false),
-    M = (0, r.e7)([h.default], () => h.default.getCurrentUser()),
+    M = (0, r.e7)([b.default], () => b.default.getCurrentUser()),
     k = null != M && null == M.nsfwAllowed,
     [P, U] = o.useState(k ? O.F.AGE_GATE : O.F.CHOOSE_TEMPLATE),
     [R, B] = o.useState(null);
@@ -103,7 +103,7 @@ function S(e) {
   }, [z, U]), {
     content: q,
     footer: X
-  } = (0, p.v)({
+  } = (0, f.v)({
     hasFooter: false,
     onBack: () => {
       z(null), U(O.F.CHOOSE_TEMPLATE)
@@ -129,7 +129,7 @@ function S(e) {
   }), {
     content: ee,
     footer: et
-  } = (0, b.F)({
+  } = (0, p.F)({
     createdGuildId: Z,
     hasFooter: false,
     onChannelPromptCompleted: () => {
@@ -163,7 +163,7 @@ function S(e) {
   let {
     ref: es,
     width: el
-  } = (0, d.ZP)();
+  } = (0, u.ZP)();
   if (L) return (0, a.jsx)(c.Y0X, D(F({}, s), {
     size: c.CgR.MEDIUM,
     className: l()(G.modal, G.completed),
@@ -215,7 +215,7 @@ function S(e) {
               impressionProperties: ei,
               children: (0, a.jsx)("div", {
                 className: l()(G.container, G.shortFooter),
-                children: (0, a.jsx)(_.Z, {
+                children: (0, a.jsx)(h.Z, {
                   className: G.templates,
                   onChooseTemplate: K,
                   isNewUser: true
@@ -259,7 +259,7 @@ function S(e) {
           onClick: S,
           className: G.closeButton
         }) : null, P === O.F.CHOOSE_TEMPLATE ? (0, a.jsx)(c.mzw, {
-          justify: u.Z.Justify.BETWEEN,
+          justify: d.Z.Justify.BETWEEN,
           className: l()(G.footer, G.join),
           children: (0, a.jsx)(c.Anchor, {
             className: G.joinCTA,
@@ -273,7 +273,7 @@ function S(e) {
             })
           })
         }) : null, null != eo ? (0, a.jsx)(c.mzw, {
-          justify: u.Z.Justify.BETWEEN,
+          justify: d.Z.Justify.BETWEEN,
           className: G.footer,
           children: eo
         }) : null]

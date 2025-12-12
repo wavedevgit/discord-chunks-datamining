@@ -20,7 +20,7 @@ var Chunk512722 = require("./512722.js"),
 let f = async (e, t) => {
   if (null == t) throw Error("giftCode must be defined");
   if (null == e) throw Error("Recipient must be defined");
-  let n = await a.Z.openPrivateChannel({
+  let n = await o.Z.openPrivateChannel({
       recipientIds: e.id
     }).then(e => {
       let t = l.Z.getChannel(e);
@@ -28,7 +28,7 @@ let f = async (e, t) => {
       return t
     }),
     r = (0, c.Nz)(t);
-  return o.Z.sendMessage(n.id, s.ZP.parse(n, r), true, {
+  return a.Z.sendMessage(n.id, s.ZP.parse(n, r), true, {
     isGiftLinkSentOnBehalfOfUser: true,
     location: u.dy.GIFTING
   })

@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk667932 = require("./667932.js");
+  Chunk820954 = require("./820954.js");
 let p = function(t) {
   let {
     guildId: i,
@@ -21,38 +21,38 @@ let p = function(t) {
     onClose: p,
     transitionState: E,
     onConfirm: k
-  } = t, T = a.useCallback(t => {
+  } = t, T = c.useCallback(t => {
     p(), k(t)
-  }, [p, k]), f = a.useCallback(() => {
-    p(), l.Z.close(), (0, s.uL)(d.Z5c.CHANNEL(i, u.oC.MEMBER_SAFETY))
+  }, [p, k]), f = c.useCallback(() => {
+    p(), l.Z.close(), (0, s.uL)(u.Z5c.CHANNEL(i, x.oC.MEMBER_SAFETY))
   }, [i, p]), h = n > 200, b = [{
-    text: x.intl.string(x.t["ETE/oC"]),
+    text: d.intl.string(d.t["ETE/oC"]),
     onClick: p,
     variant: "secondary"
   }, {
-    text: x.intl.string(x.t.Gfg0rT),
+    text: d.intl.string(d.t.Gfg0rT),
     onClick: () => T(o.wB.REJECTED),
     variant: "critical-primary"
   }];
   return h || b.push({
-    text: x.intl.string(x.t.VWqCvL),
+    text: d.intl.string(d.t.VWqCvL),
     onClick: () => T(o.wB.APPROVED),
     variant: "primary"
-  }), (0, e.jsx)(c.Modal, {
-    title: x.intl.formatToPlainString(x.t.chV4Jb, {
+  }), (0, a.jsx)(r.Modal, {
+    title: d.intl.formatToPlainString(d.t.chV4Jb, {
       count: n
     }),
     onClose: p,
-    subtitle: h ? x.intl.string(x.t.EPoNRs) : x.intl.string(x.t["8+nq/G"]),
+    subtitle: h ? d.intl.string(d.t.EPoNRs) : d.intl.string(d.t["8+nq/G"]),
     transitionState: E,
     actions: b,
-    children: (0, e.jsx)(r.P3F, {
+    children: (0, a.jsx)(e.P3F, {
       className: C.actionText,
       onClick: f,
-      children: (0, e.jsx)(r.Text, {
+      children: (0, a.jsx)(e.Text, {
         variant: "text-md/normal",
         color: "text-link",
-        children: x.intl.string(x.t.szESVF)
+        children: d.intl.string(d.t.szESVF)
       })
     })
   })

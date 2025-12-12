@@ -45,9 +45,9 @@ function v(e) {
     {
       direction: M
     } = (0, O.j)(),
-    k = (0, a.tv)(),
+    k = (0, o.tv)(),
     U = e => {
-      var t, i, a, l, c, u, d, f, p, _, h, E, b;
+      var t, i, o, l, c, u, d, f, p, _, h, E, b;
       if (e.altKey && "Tab" === e.key && e.preventDefault(), !(null == (t = S.current) ? true : t.contains(e.target))) return;
       let y = (t, i) => {
         if (null != t) {
@@ -55,9 +55,9 @@ function v(e) {
             (0, g.flushSync)(() => {
               n.setFocusedKey(t, i)
             });
-            let a = (0, r.D0)(S, t),
-              o = n.getItemProps(t);
-            a && k.open(a, e, o.href, o.routerOptions);
+            let o = (0, r.D0)(S, t),
+              a = n.getItemProps(t);
+            o && k.open(o, e, a.href, a.routerOptions);
             return
           }
           n.setFocusedKey(t, i), n.isLink(t) && "override" === j || (e.shiftKey && "multiple" === n.selectionMode ? n.extendSelection(t) : P && !(0, r.FJ)(e) && n.replaceSelection(t))
@@ -66,7 +66,7 @@ function v(e) {
       switch (e.key) {
         case "ArrowDown":
           if (v.getKeyBelow) {
-            let t = null != n.focusedKey ? null == (i = v.getKeyBelow) ? true : i.call(v, n.focusedKey) : null == (a = v.getFirstKey) ? true : a.call(v);
+            let t = null != n.focusedKey ? null == (i = v.getKeyBelow) ? true : i.call(v, n.focusedKey) : null == (o = v.getFirstKey) ? true : o.call(v);
             null == t && T && (t = null == (l = v.getFirstKey) ? true : l.call(v, n.focusedKey)), null != t && (e.preventDefault(), y(t))
           }
           break;
@@ -92,16 +92,16 @@ function v(e) {
           if (v.getFirstKey) {
             if (null === n.focusedKey && e.shiftKey) return;
             e.preventDefault();
-            let t = v.getFirstKey(n.focusedKey, (0, o.y)(e));
-            n.setFocusedKey(t), null != t && ((0, o.y)(e) && e.shiftKey && "multiple" === n.selectionMode ? n.extendSelection(t) : P && n.replaceSelection(t))
+            let t = v.getFirstKey(n.focusedKey, (0, a.y)(e));
+            n.setFocusedKey(t), null != t && ((0, a.y)(e) && e.shiftKey && "multiple" === n.selectionMode ? n.extendSelection(t) : P && n.replaceSelection(t))
           }
           break;
         case "End":
           if (v.getLastKey) {
             if (null === n.focusedKey && e.shiftKey) return;
             e.preventDefault();
-            let t = v.getLastKey(n.focusedKey, (0, o.y)(e));
-            n.setFocusedKey(t), null != t && ((0, o.y)(e) && e.shiftKey && "multiple" === n.selectionMode ? n.extendSelection(t) : P && n.replaceSelection(t))
+            let t = v.getLastKey(n.focusedKey, (0, a.y)(e));
+            n.setFocusedKey(t), null != t && ((0, a.y)(e) && e.shiftKey && "multiple" === n.selectionMode ? n.extendSelection(t) : P && n.replaceSelection(t))
           }
           break;
         case "PageDown":
@@ -117,7 +117,7 @@ function v(e) {
           }
           break;
         case "a":
-          (0, o.y)(e) && "multiple" === n.selectionMode && true !== A && (e.preventDefault(), n.selectAll());
+          (0, a.y)(e) && "multiple" === n.selectionMode && true !== A && (e.preventDefault(), n.selectAll());
           break;
         case "Escape":
           "clearSelection" !== N || C || 0 === n.selectedKeys.size || (e.stopPropagation(), e.preventDefault(), n.clearSelection());
@@ -152,12 +152,12 @@ function v(e) {
       }
       if (e.currentTarget.contains(e.target)) {
         if (n.setFocused(true), null == n.focusedKey) {
-          var t, i, a, o;
+          var t, i, o, a;
           let r = e => {
               null != e && (n.setFocusedKey(e), P && !n.isSelected(e) && n.replaceSelection(e))
             },
             s = e.relatedTarget;
-          s && e.currentTarget.compareDocumentPosition(s) & Node.DOCUMENT_POSITION_FOLLOWING ? r(null != (a = n.lastSelectedKey) ? a : null == (t = v.getLastKey) ? true : t.call(v)) : r(null != (o = n.firstSelectedKey) ? o : null == (i = v.getFirstKey) ? true : i.call(v))
+          s && e.currentTarget.compareDocumentPosition(s) & Node.DOCUMENT_POSITION_FOLLOWING ? r(null != (o = n.lastSelectedKey) ? o : null == (t = v.getLastKey) ? true : t.call(v)) : r(null != (a = n.firstSelectedKey) ? a : null == (i = v.getFirstKey) ? true : i.call(v))
         } else !x && L.current && (L.current.scrollTop = G.current.top, L.current.scrollLeft = G.current.left);
         if (null != n.focusedKey && L.current) {
           let e = (0, r.D0)(S, n.focusedKey);
@@ -202,17 +202,17 @@ function v(e) {
   (0, E.useEffect)(() => {
     if (Y.current) {
       var e, t, r, i;
-      let a = null;
-      "first" === I && (a = null != (r = null == (e = v.getFirstKey) ? true : e.call(v)) ? r : null), "last" === I && (a = null != (i = null == (t = v.getLastKey) ? true : t.call(v)) ? i : null);
-      let o = n.selectedKeys;
-      if (o.size) {
-        for (let e of o)
+      let o = null;
+      "first" === I && (o = null != (r = null == (e = v.getFirstKey) ? true : e.call(v)) ? r : null), "last" === I && (o = null != (i = null == (t = v.getLastKey) ? true : t.call(v)) ? i : null);
+      let a = n.selectedKeys;
+      if (a.size) {
+        for (let e of a)
           if (n.canSelectItem(e)) {
-            a = e;
+            o = e;
             break
           }
       }
-      n.setFocused(true), n.setFocusedKey(a), null == a && !w && S.current && (0, y.e)(S.current), n.collection.size > 0 && (Y.current = false, W.current = true)
+      n.setFocused(true), n.setFocusedKey(o), null == o && !w && S.current && (0, y.e)(S.current), n.collection.size > 0 && (Y.current = false, W.current = true)
     }
   });
   let K = (0, E.useRef)(n.focusedKey),

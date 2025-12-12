@@ -1,7 +1,7 @@
 /** Chunk was on 57650 **/
 /** chunk id: 677012, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => v
+  default: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,29 +16,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk293979 = require("./293979.js"),
   Chunk674563 = require("./674563.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk802690 = require("./802690.js");
+  Chunk409574 = require("./409574.js");
 let m = (0, Chunk624138.Mg)(Chunk477690.Z.INTERACTION_IFRAME_MODAL_MODAL_MIN_WIDTH),
   g = (0, Chunk624138.Mg)(Chunk477690.Z.INTERACTION_IFRAME_MODAL_MODAL_MAX_WIDTH),
   j = (0, Chunk624138.Mg)(Chunk477690.Z.INTERACTION_IFRAME_MODAL_MODAL_MARGIN),
   w = (0, Chunk624138.Mg)(Chunk477690.Z.INTERACTION_IFRAME_MODAL_MODAL_HEADER_HEIGHT);
 
-function v(e) {
+function _(e) {
   var t, n, o;
   let {
-    title: f,
-    onClose: v
+    title: p,
+    onClose: _
   } = e, {
-    applicationIconURL: x,
-    applicationName: y,
-    queryParams: I,
-    iframeUrl: M
-  } = (0, b.b8)(e), {
-    width: N,
-    height: A
-  } = (0, d.Z)(), _ = a.useMemo(() => {
-    let e = Math.min((A - w - 2 * j) * 16 / 9, g);
-    return Math.max(m, Math.min(N - 2 * j, e))
-  }, [N, A]);
+    applicationIconURL: v,
+    applicationName: x,
+    queryParams: y,
+    iframeUrl: I
+  } = (0, f.b8)(e), {
+    width: M,
+    height: N
+  } = (0, d.Z)(), A = a.useMemo(() => {
+    let e = Math.min((N - w - 2 * j) * 16 / 9, g);
+    return Math.max(m, Math.min(M - 2 * j, e))
+  }, [M, N]);
   return (0, r.jsx)(c.Y0X, (n = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -63,35 +63,35 @@ function v(e) {
     "data-migration-pending": true,
     children: (0, r.jsxs)("div", {
       style: {
-        width: _
+        width: A
       },
       children: [(0, r.jsxs)(c.xBx, {
         separator: false,
         className: h.modalHeader,
         "data-migration-pending": true,
         children: [(0, r.jsx)(c.qEK, {
-          src: x,
+          src: v,
           size: c.EFr.SIZE_32,
-          "aria-label": y,
+          "aria-label": x,
           className: h.applicationIcon
         }), (0, r.jsxs)("div", {
           className: h.flexRow,
           children: [(0, r.jsxs)("div", {
             children: [(0, r.jsx)(c.Heading, {
               variant: "heading-sm/bold",
-              children: y
+              children: x
             }), (0, r.jsx)(c.Text, {
               variant: "text-xs/medium",
               color: "interactive-text-default",
-              children: f
+              children: p
             })]
           }), (0, r.jsx)(l.Z, {
-            type: p.Hb.BOT,
+            type: b.Hb.BOT,
             className: h.botTag,
             verified: null == (t = e.application.bot) ? true : t.verified
           })]
         }), (0, r.jsx)(i.zx, {
-          onClick: v,
+          onClick: _,
           innerClassName: h.closeButton,
           className: h.closeButtonContainer,
           look: i.zx.Looks.BLANK,
@@ -107,10 +107,10 @@ function v(e) {
       }), (0, r.jsx)(u.Z, {
         aspectRatio: 16 / 9,
         children: (0, r.jsx)(s.J, {
-          url: M,
+          url: I,
           shouldRefocus: true,
           className: h.iframe,
-          queryParams: I
+          queryParams: y
         })
       })]
     })

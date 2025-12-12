@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk94692 = require("./94692.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk368317 = require("./368317.js");
+  Chunk912278 = require("./912278.js");
 
 function S(t, e, s) {
   return e in t ? Object.defineProperty(t, e, {
@@ -91,7 +91,7 @@ class N extends Chunk473749.Component {
       "aria-label": Chunk388032.intl.string(Chunk388032.t.PphjtJ),
       parentComponent: "ApplicationInstallationModal",
       children: [null != Chunk570140 ? (0, Chunk54381.jsx)("div", {
-        className: Chunk368317.splash,
+        className: Chunk912278.splash,
         style: {
           backgroundImage: "url(".concat(Chunk570140, ")")
         }
@@ -115,21 +115,21 @@ class N extends Chunk473749.Component {
           children: [(0, Chunk54381.jsx)(Chunk925329.Z, {
             game: module,
             size: Chunk925329.A.MEDIUM,
-            className: Chunk368317.gameIcon
+            className: Chunk912278.gameIcon
           }), (0, Chunk54381.jsx)("div", {
-            className: Chunk368317.gameName,
+            className: Chunk912278.gameName,
             children: null != module && module.name
           }), null != exports ? (0, Chunk54381.jsx)("div", {
-            className: Chunk368317.installSize,
+            className: Chunk912278.installSize,
             children: (0, Chunk424218.BU)(exports, {
               useKibibytes: true
             })
           }) : null]
         }), (0, Chunk54381.jsx)("div", {
-          className: Chunk368317.divider
+          className: Chunk912278.divider
         }), (0, Chunk54381.jsx)(Chunk94692.Z, {
           autoFocus: true,
-          className: Chunk368317.selector,
+          className: Chunk912278.selector,
           value: Chunk473749,
           requiredDiskKB: exports,
           onChange: this.handleChangePath
@@ -138,7 +138,7 @@ class N extends Chunk473749.Component {
           applicationName: module.name,
           disabled: Chunk442837,
           onChange: this.handlePurchaseTermsChange,
-          className: Chunk368317.terms
+          className: Chunk912278.terms
         })]
       }), (0, Chunk54381.jsx)(Chunk481060.mzw, {
         children: this.renderButton()
@@ -170,7 +170,7 @@ class N extends Chunk473749.Component {
         manifestIds: e,
         installationPath: this.state.selectedInstallationPath,
         analyticsLocation: n
-      }), (0, m.uL)(Z.Z5c.APPLICATION_LIBRARY), this.close()
+      }), (0, g.uL)(C.Z5c.APPLICATION_LIBRARY), this.close()
     }), S(this, "handleInstall", () => {
       let {
         application: t,
@@ -193,13 +193,13 @@ let E = Chunk442837.ZP.connectStores([Chunk173747.Z, Chunk391690.Z, Chunk850840.
   let {
     applicationId: e,
     branchId: s
-  } = t, l = g.Z.getTargetBuildId(e, s);
+  } = t, l = f.Z.getTargetBuildId(e, s);
   return {
     application: p.Z.getApplication(e),
-    defaultInstallationPath: A.Z.defaultInstallationPath,
+    defaultInstallationPath: _.Z.defaultInstallationPath,
     buildId: l,
-    manifestIds: g.Z.getTargetManifests(e, s),
-    buildSizeKB: null != l ? g.Z.getBuildSize(l) : null,
+    manifestIds: f.Z.getTargetManifests(e, s),
+    buildSizeKB: null != l ? f.Z.getBuildSize(l) : null,
     hasPreviouslyAcceptedStoreTerms: P.Z.hasAcceptedStoreTerms
   }
 })(N)

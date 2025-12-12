@@ -2,19 +2,19 @@
 /** chunk id: 939900, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => l
+  Z: () => a
 }), require("./35282.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk3570 = require("./3570.js"),
   Chunk685311 = require("./685311.jsx"),
   Chunk186901 = require("./186901.js");
-let l = function(e) {
+let a = function(e) {
   let {
     match: t,
     location: n
-  } = e, l = async e => {
-    await (0, i.s)(a.jE.GAME_SHOP, {
+  } = e, a = async e => {
+    await (0, i.s)(l.jE.GAME_SHOP, {
       guildId: e.params.guildId,
       pageIndex: e.params.pageIndex,
       skuId: e.params.skuId,
@@ -24,6 +24,6 @@ let l = function(e) {
   return (0, r.jsx)(s.Z, {
     match: t,
     location: n,
-    attemptDeepLink: l
+    attemptDeepLink: a
   })
 }

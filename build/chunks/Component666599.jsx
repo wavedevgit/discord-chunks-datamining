@@ -10,13 +10,13 @@ var Chunk467721 = require("./467721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk601558 = require("./601558.js");
-let o = e => {
+  Chunk943192 = require("./943192.js");
+let c = e => {
     let {
       currentNumber: r,
       thresholdNumber: a,
       currentLabel: l,
-      isPercent: o = false
+      isPercent: c = false
     } = e, m = null != a ? Math.floor(r / a * 100) : 0, x = d.intl.formatToPlainString(d.t.YMor7k, {
       count: r
     }), h = null != a ? d.intl.formatToPlainString(d.t.YMor7k, {
@@ -24,9 +24,9 @@ let o = e => {
     }) : "--", g = (0, i.dQu)(n.Z.unsafe_rawColors.RED_400).hex(), u = (0, i.dQu)(n.Z.unsafe_rawColors.YELLOW_300).hex();
     return (0, t.jsxs)(t.Fragment, {
       children: [(0, t.jsxs)("div", {
-        className: c.progressWrapper,
+        className: o.progressWrapper,
         children: [(0, t.jsx)("div", {
-          className: c.progressBackground
+          className: o.progressBackground
         }), (0, t.jsx)(i.AMe, {
           from: {
             width: 0
@@ -46,7 +46,7 @@ let o = e => {
               width: r
             } = e;
             return (0, t.jsx)(s.animated.div, {
-              className: c.progressBar,
+              className: o.progressBar,
               style: {
                 width: r.interpolate(e => "".concat(e, "%")),
                 backgroundColor: r.interpolate(e => e < 33 ? g : u)
@@ -55,13 +55,13 @@ let o = e => {
           }
         })]
       }), (0, t.jsxs)("div", {
-        className: c.labelWrapper,
+        className: o.labelWrapper,
         children: [(0, t.jsxs)("div", {
-          className: c.__invalid_current,
+          className: o.__invalid_current,
           children: [(0, t.jsx)(i.Text, {
             variant: "text-md/semibold",
             color: m < 33 ? "text-feedback-critical" : "text-feedback-warning",
-            children: o ? "".concat(x, "%") : x
+            children: c ? "".concat(x, "%") : x
           }), (0, t.jsxs)(i.Text, {
             "aria-describedby": "health-score-details-score-explain",
             variant: "text-xs/normal",
@@ -72,10 +72,10 @@ let o = e => {
             })]
           })]
         }), (0, t.jsxs)("div", {
-          className: c.requirement,
+          className: o.requirement,
           children: [(0, t.jsx)(i.Text, {
             variant: "text-sm/semibold",
-            children: o ? "".concat(h, "%") : h
+            children: c ? "".concat(h, "%") : h
           }), (0, t.jsx)(i.Text, {
             "aria-describedby": "health-score-details-requirement-explain",
             variant: "text-xs/normal",
@@ -99,50 +99,50 @@ let o = e => {
         healthScore: p
       } = n,
       {
-        avg_nonnew_participators: j,
-        avg_nonnew_communicators: f,
-        perc_ret_w1_intentful: b
+        avg_nonnew_participators: _,
+        avg_nonnew_communicators: j,
+        perc_ret_w1_intentful: f
       } = p;
-    if (!u && null != j && j < 40 && (a = (0, t.jsxs)("div", {
-        className: c.failingBlock,
+    if (!u && null != _ && _ < 40 && (a = (0, t.jsxs)("div", {
+        className: o.failingBlock,
         children: [(0, t.jsx)(i.Heading, {
-          className: c.marginAfter,
+          className: o.marginAfter,
           variant: "heading-md/semibold",
           children: d.intl.string(d.t.sEzDIR)
         }), (0, t.jsx)(i.Text, {
           variant: "text-sm/normal",
           children: d.intl.string(d.t.zNp3Kg)
-        }), (0, t.jsx)(o, {
-          currentNumber: j,
+        }), (0, t.jsx)(c, {
+          currentNumber: _,
           thresholdNumber: 40,
           currentLabel: d.intl.string(d.t.BtTX9L)
         })]
-      })), !u && null != f && f < 20 && (s = (0, t.jsxs)("div", {
-        className: c.failingBlock,
+      })), !u && null != j && j < 20 && (s = (0, t.jsxs)("div", {
+        className: o.failingBlock,
         children: [(0, t.jsx)(i.Heading, {
-          className: c.marginAfter,
+          className: o.marginAfter,
           variant: "heading-md/semibold",
           children: d.intl.string(d.t.fWQTbv)
         }), (0, t.jsx)(i.Text, {
           variant: "text-sm/normal",
           children: d.intl.string(d.t.Tl8MR6)
-        }), (0, t.jsx)(o, {
-          currentNumber: f,
+        }), (0, t.jsx)(c, {
+          currentNumber: j,
           thresholdNumber: 20,
           currentLabel: d.intl.string(d.t.PFQI7l)
         })]
-      })), !g && null != b) {
-      let e = Math.floor(100 * b);
+      })), !g && null != f) {
+      let e = Math.floor(100 * f);
       r = (0, t.jsxs)("div", {
-        className: c.failingBlock,
+        className: o.failingBlock,
         children: [(0, t.jsx)(i.Heading, {
-          className: c.marginAfter,
+          className: o.marginAfter,
           variant: "heading-md/semibold",
           children: d.intl.string(d.t.YF6x21)
         }), (0, t.jsx)(i.Text, {
           variant: "text-sm/normal",
           children: d.intl.format(d.t.kMBzFj, {})
-        }), (0, t.jsx)(o, {
+        }), (0, t.jsx)(c, {
           currentNumber: e,
           thresholdNumber: 10,
           currentLabel: d.intl.string(d.t.WpwyIi),
@@ -153,26 +153,26 @@ let o = e => {
     return (0, t.jsxs)(i.Y0X, {
       transitionState: m,
       size: i.CgR.MEDIUM,
-      className: c.__invalid_modal,
+      className: o.__invalid_modal,
       "aria-labelledby": h,
       parentComponent: "HealthScoreDetailsModal",
       children: [(0, t.jsxs)(i.hzk, {
-        className: c.content,
+        className: o.content,
         children: [(0, t.jsx)(i.Heading, {
           variant: "heading-xl/semibold",
-          className: c.modalHeader,
+          className: o.modalHeader,
           id: h,
           children: d.intl.string(d.t["+GHxPy"])
         }), (0, t.jsx)(i.Text, {
-          className: c.marginAfter,
+          className: o.marginAfter,
           variant: "text-sm/normal",
           children: d.intl.string(d.t.QOs3XA)
         }), (0, t.jsx)("div", {
-          className: c.separator
+          className: o.separator
         }), a, s, r, (0, t.jsx)("div", {
-          className: c.separator
+          className: o.separator
         }), (0, t.jsxs)(i.Text, {
-          className: c.marginAfter,
+          className: o.marginAfter,
           color: "text-default",
           id: "health-score-details-score-explain",
           variant: "text-sm/normal",
@@ -183,7 +183,7 @@ let o = e => {
         })]
       }), (0, t.jsx)(i.olH, {
         onClick: x,
-        className: c.closeButton
+        className: o.closeButton
       })]
     })
   }

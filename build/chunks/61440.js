@@ -12,14 +12,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk324243 = require("./324243.js");
+  Chunk486730 = require("./486730.js");
 let T = (0, Chunk509613.qs)(Chunk313789.n.DISPLAY_NAME_STYLES, {
-  useTitle: () => Chunk388032.intl.string(Chunk324243.default["2gFUEw"]),
+  useTitle: () => Chunk388032.intl.string(Chunk486730.default["2gFUEw"]),
   useSubtitle: () => {
     let {
       analyticsLocations: t
     } = (0, Chunk906732.ZP)();
-    return Chunk388032.intl.format(Chunk324243.default.L8U56h, {
+    return Chunk388032.intl.format(Chunk486730.default.L8U56h, {
       onClickOpenModal() {
         (0, Chunk829716.I)({
           analyticsLocations: module

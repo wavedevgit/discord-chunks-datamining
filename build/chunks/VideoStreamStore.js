@@ -60,18 +60,18 @@ function g(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : null,
     r = _[e];
   if (null == r) return;
-  let i = r[null != t ? t : o.kod];
+  let i = r[null != t ? t : a.kod];
   if (null != i) {
     for (let t of Object.values(s.Yn))(n === t || null == n) && (delete i[t], delete m[h(null != n ? n : t, e)]);
-    _[e][null != t ? t : o.kod] = i
+    _[e][null != t ? t : a.kod] = i
   }
 }
 
 function E(e, t, n, r) {
   var i;
   e in _ || (_[e] = {});
-  let a = null != (i = _[e][null != t ? t : o.kod]) ? i : {};
-  _[e][null != t ? t : o.kod] = d(c({}, a), {
+  let o = null != (i = _[e][null != t ? t : a.kod]) ? i : {};
+  _[e][null != t ? t : a.kod] = d(c({}, o), {
     [r]: {
       streamId: n
     }
@@ -113,14 +113,14 @@ function v(e) {
     let {
       userId: r,
       sessionId: i,
-      channelId: a,
+      channelId: o,
       guildId: s
     } = t;
-    if (null == a && r === f)
+    if (null == o && r === f)
       if (i !== p) return e;
       else _ = {}, m = {};
     else {
-      if (null != a || (null == (n = _[r]) ? true : n[null != s ? s : o.kod]) == null) return e;
+      if (null != o || (null == (n = _[r]) ? true : n[null != s ? s : a.kod]) == null) return e;
       g(r, s)
     }
     returntrue
@@ -153,13 +153,13 @@ function I(e) {
 class T extends(r = Chunk442837.ZP.Store) {
   getStreamId(e, t) {
     var n, r, i;
-    let a = arguments.length > 2 && true !== arguments[2] ? arguments[2] : s.Yn.DEFAULT;
-    return null == (i = _[e]) || null == (r = i[null != t ? t : o.kod]) || null == (n = r[a]) ? true : n.streamId
+    let o = arguments.length > 2 && true !== arguments[2] ? arguments[2] : s.Yn.DEFAULT;
+    return null == (i = _[e]) || null == (r = i[null != t ? t : a.kod]) || null == (n = r[o]) ? true : n.streamId
   }
   getUserStreamData(e, t) {
     var n, r;
     let i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : s.Yn.DEFAULT;
-    return null == (r = _[e]) || null == (n = r[null != t ? t : o.kod]) ? true : n[i]
+    return null == (r = _[e]) || null == (n = r[null != t ? t : a.kod]) ? true : n[i]
   }
   getTimedoutVideos() {
     return m

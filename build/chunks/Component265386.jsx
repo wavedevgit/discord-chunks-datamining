@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk287734 = require("./287734.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk788858 = require("./788858.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk251806 = require("./251806.js");
+  Chunk704543 = require("./704543.js");
 
 function b(e) {
   let {
@@ -27,7 +27,7 @@ function b(e) {
     guild: n,
     onAction: i,
     onClose: b
-  } = e, y = (0, c.ZP)(t), O = (0, o.e7)([p.Z], () => t.isPrivate() || p.Z.can(h.Pl.CONNECT, t)), v = () => {
+  } = e, y = (0, c.ZP)(t), O = (0, a.e7)([p.Z], () => t.isPrivate() || p.Z.can(h.Pl.CONNECT, t)), v = () => {
     if (!O) return y;
     let e = e => {
       e.stopPropagation(), t.isGuildStageVoice() ? (0, f.Cq)(t) : (l.default.selectVoiceChannel(t.id), (0, u.Kh)(t.id)), null == i || i({
@@ -35,7 +35,7 @@ function b(e) {
       }), null == b || b()
     };
     return (0, r.jsx)(s.P3F, {
-      className: a()(E.clickableText, E.inline),
+      className: o()(E.clickableText, E.inline),
       onClick: e,
       children: y
     })

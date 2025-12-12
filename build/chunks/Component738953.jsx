@@ -37,7 +37,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk161572 = require("./161572.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk155493 = require("./155493.js");
+  Chunk116649 = require("./116649.js");
 
 function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -103,7 +103,7 @@ function F(e) {
     channelId: F,
     messageId: B,
     roleId: V
-  }), $ = (0, o.e7)([h.Z], () => null != G ? h.Z.getGuild(G) : null), ee = i.useMemo(() => null != G ? {
+  }), $ = (0, a.e7)([h.Z], () => null != G ? h.Z.getGuild(G) : null), ee = i.useMemo(() => null != G ? {
     [G]: [n.id]
   } : {}, [G, n.id]);
   (0, l.$)(ee, "UserProfilePopout");
@@ -113,9 +113,9 @@ function F(e) {
       isHoveringOrFocusing: er,
       isHovering: ei
     } = (0, f.Z)(et),
-    ea = (0, O.$m)(),
-    eo = (0, s.q_F)({
-      opacity: +(null != ea.interactionType),
+    eo = (0, O.$m)(),
+    ea = (0, s.q_F)({
+      opacity: +(null != eo.interactionType),
       config: {
         duration: 150
       }
@@ -160,7 +160,7 @@ function F(e) {
       fetchEndedAt: null == en ? true : en.fetchEndedAt,
       isLoaded: null == en ? true : en.isLoaded,
       children: (0, r.jsx)(O.NJ, {
-        value: ea,
+        value: eo,
         children: (0, r.jsxs)(ep, {
           ref: et,
           "aria-labelledby": e_,
@@ -175,12 +175,12 @@ function F(e) {
             user: n,
             displayProfile: en,
             themeType: L.l.POPOUT,
-            children: [null != ea.interactionType && (0, r.jsx)(a.animated.div, {
-              style: eo,
+            children: [null != eo.interactionType && (0, r.jsx)(o.animated.div, {
+              style: ea,
               className: M.backdrop
             }), (0, r.jsxs)(A.Z, {
               children: [(0, r.jsx)(P.Z, {
-                shouldShowTooltip: null === ea.interactionType,
+                shouldShowTooltip: null === eo.interactionType,
                 user: n,
                 guildId: G,
                 channelId: F,
@@ -227,7 +227,7 @@ function F(e) {
               currentUser: k,
               displayProfile: en,
               guild: $,
-              isHoveringOrFocusing: null == ea.interactionType && er,
+              isHoveringOrFocusing: null == eo.interactionType && er,
               onOpenProfile: K ? true : ed,
               channelId: F,
               onClose: Y

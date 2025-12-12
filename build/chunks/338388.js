@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk960048 = require("./960048.js"),
   Chunk837268 = require("./837268.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,14 +17,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -51,8 +51,8 @@ function c() {
   var e;
   let t = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null,
     n = arguments.length > 1 ? arguments[1] : true;
-  return l(o({}, require), {
-    tags: o({
+  return l(a({}, require), {
+    tags: a({
       source: __OVERLAY__ ? "overlay" : "legacy-overlay",
       overlayMethod: "".concat(null == exports ? null : Chunk837268.gl[null != exports ? exports : Chunk837268.gl.Disabled])
     }, null != (e = null == require ? true : require.tags) ? module : {})

@@ -25,14 +25,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk912152 = require("./912152.jsx"),
   Chunk615603 = require("./615603.jsx"),
   Chunk474936 = require("./474936.js"),
-  Chunk718212 = require("./718212.js");
+  Chunk28616 = require("./28616.js");
 
 function T(e) {
   let {
     premiumSubscription: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.boostSlots), T = i.useMemo(() => Object.values(n), [n]), C = (0, a.e7)([_.default], () => _.default.getCurrentUser()), A = h.ZP.isPremium(C, S.PremiumTypes.TIER_2), N = (0, a.e7)([f.Z], () => f.Z.affinities), P = (0, a.e7)([p.ZP], () => p.ZP.getFlattenedGuildIds()), R = N.length > 0 || P.length > 0, w = T.length > 0, D = i.useMemo(() => T.filter(e => null != e.premiumGuildSubscription), [T]), x = D.length > 0, L = T.length > D.length, j = (0, a.e7)([d.Z], () => d.Z.getCurrentUserAppliedBoosts()), {
+  } = e, n = (0, o.e7)([m.Z], () => m.Z.boostSlots), T = i.useMemo(() => Object.values(n), [n]), C = (0, o.e7)([_.default], () => _.default.getCurrentUser()), A = h.ZP.isPremium(C, S.PremiumTypes.TIER_2), N = (0, o.e7)([f.Z], () => f.Z.affinities), P = (0, o.e7)([p.ZP], () => p.ZP.getFlattenedGuildIds()), R = N.length > 0 || P.length > 0, w = T.length > 0, D = i.useMemo(() => T.filter(e => null != e.premiumGuildSubscription), [T]), x = D.length > 0, L = T.length > D.length, j = (0, o.e7)([d.Z], () => d.Z.getCurrentUserAppliedBoosts()), {
     fractionalState: M
-  } = (0, o.Z)({
+  } = (0, a.Z)({
     forceFetch: true
   }), k = (null == t ? true : t.isPausedOrPausePending) === true && M === S.a$.NONE, U = (null == t ? true : t.isPausedOrPausePending) !== true && M === S.a$.NONE, G = A && M === S.a$.FP_SUB_PAUSED;
   return (0, r.jsxs)("div", {

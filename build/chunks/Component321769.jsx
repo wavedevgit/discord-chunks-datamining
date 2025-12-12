@@ -20,7 +20,7 @@ let c = {
         selectionMode: t,
         removeable: n,
         layout: c
-      } = e, u = (0, o.e7)([l.default], () => l.default.getCurrentUser()), d = i.useMemo(() => {
+      } = e, u = (0, a.e7)([l.default], () => l.default.getCurrentUser()), d = i.useMemo(() => {
         var e;
         return [{
           id: "strength",
@@ -48,7 +48,7 @@ let c = {
         p(f.filter(t => !e.has(t.id)))
       }, [f]), m = i.useCallback(() => {
         p(d)
-      }, [d]), h = (0, r.jsx)(a.QSK, {
+      }, [d]), h = (0, r.jsx)(o.QSK, {
         label: "Categories",
         selectionMode: t,
         layout: c,

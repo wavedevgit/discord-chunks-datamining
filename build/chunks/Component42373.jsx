@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk159691 = require("./159691.js"),
   Chunk780384 = require("./780384.js"),
@@ -20,8 +20,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk572995 = require("./572995.js"),
   Chunk981631 = require("./981631.js"),
   Chunk869783 = require("./869783.js"),
-  Chunk291049 = require("./291049.js"),
-  Chunk538654 = require("./538654.js");
+  Chunk642650 = require("./642650.js"),
+  Chunk595475 = require("./595475.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -99,11 +99,11 @@ let C = e => {
       descriptionCta: t,
       onClick: n,
       debouncedOnClickAnalytics: i,
-      enablePremiumBrandRefreshDesign: a
+      enablePremiumBrandRefreshDesign: o
     } = e, s = (0, f.ZP)(), d = (0, c.wj)(s), p = d ? u.Tt.WHITE : u.Tt.BRAND, _ = () => {
       i(), n()
     };
-    return a ? (0, r.jsx)("div", {
+    return o ? (0, r.jsx)("div", {
       className: y.bentoBoxButton,
       children: (0, r.jsx)(l.zxk, {
         variant: "secondary",
@@ -114,7 +114,7 @@ let C = e => {
       "data-migration-pending": true,
       look: u.iL.OUTLINED,
       color: p,
-      className: o()(b.bentoBoxButton, d ? b.bentoBoxButtonWhite : b.bentoBoxButtonBrand),
+      className: a()(b.bentoBoxButton, d ? b.bentoBoxButtonWhite : b.bentoBoxButtonBrand),
       onClick: _,
       children: t
     })
@@ -122,7 +122,7 @@ let C = e => {
   A = e => {
     let t, {
         name: n,
-        title: a,
+        title: o,
         description: l,
         descriptionCta: c,
         previewImage: u,
@@ -154,7 +154,7 @@ let C = e => {
       Z = D ? y : b;
     t = D ? w === h.y$.LARGE ? "heading-xxl/bold" : "heading-xl/bold" : w === h.y$.SMALL ? "heading-xl/extrabold" : "heading-xxl/extrabold";
     let F = () => (0, r.jsxs)("div", {
-        className: o()(Z.textBox, Z["".concat(w)]),
+        className: a()(Z.textBox, Z["".concat(w)]),
         children: [(0, r.jsxs)("div", {
           children: [null != R && (0, r.jsx)("div", {
             className: Z.badge,
@@ -166,8 +166,8 @@ let C = e => {
           }), (0, r.jsx)(d.Heading, {
             variant: t,
             color: "text-strong",
-            className: o()(Z.header, !D && Z["".concat(w)]),
-            children: a
+            className: a()(Z.header, !D && Z["".concat(w)]),
+            children: o
           })]
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/medium",
@@ -182,14 +182,14 @@ let C = e => {
         })]
       }),
       B = () => (0, r.jsx)("div", {
-        className: o()(Z.boxArtContainer, Z["".concat(w)]),
+        className: a()(Z.boxArtContainer, Z["".concat(w)]),
         children: (0, r.jsx)(p.Z, {
           playsInline: true,
           preload: O ? "auto" : "none",
           muted: true,
           poster: u,
           loop: true,
-          className: o()(Z.boxVideo, {
+          className: a()(Z.boxVideo, {
             [A]: null != A
           }),
           ref: L,
@@ -206,7 +206,7 @@ let C = e => {
         children: [(0, r.jsx)(B, {}), (0, r.jsx)(F, {})]
       }),
       Y = {
-        className: o()(D ? y.backgroundColor : M, Z.boxContainer, Z["".concat(w)], D && y.gradientBackground),
+        className: a()(D ? y.backgroundColor : M, Z.boxContainer, Z["".concat(w)], D && y.gradientBackground),
         onMouseEnter: U,
         onFocus: U,
         onBlur: G,

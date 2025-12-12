@@ -7,7 +7,7 @@ require.d(exports, {
 });
 var Chunk818083 = require("./818083.js"),
   Chunk847903 = require("./847903.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
     kind: "user",
     id: "2022-03_block_russian_purchases",
     label: "Block purchases based on country",
@@ -22,7 +22,7 @@ let a = (0, Chunk818083.B)({
       }
     }]
   }),
-  o = (0, Chunk818083.B)({
+  a = (0, Chunk818083.B)({
     kind: "user",
     id: "2022-03_block_russian_purchases_desktop",
     label: "Block purchases based on country (desktop specific flags)",
@@ -41,13 +41,13 @@ let a = (0, Chunk818083.B)({
 function s() {
   let {
     paymentsBlocked: e
-  } = a.useExperiment({
+  } = o.useExperiment({
     location: "c519a9_1"
   }, {
     autoTrackExposure: false
   }), {
     checkPaymentSource: t
-  } = o.useExperiment({
+  } = a.useExperiment({
     location: "c519a9_2"
   }, {
     autoTrackExposure: false
@@ -56,4 +56,4 @@ function s() {
   } = (0, Chunk847903.Z)();
   return module || exports && "RU" === require
 }
-let l = a
+let l = o

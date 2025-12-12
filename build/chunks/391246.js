@@ -74,21 +74,21 @@ var Chunk127849 = require("./127849.js"),
   },
   et = function(e, t, n, r) {
     var i = L(e),
-      a = m(n),
-      o = !!r;
-    if (a + t > i.byteLength) throw new V(D);
+      o = m(n),
+      a = !!r;
+    if (o + t > i.byteLength) throw new V(D);
     var s = i.bytes,
-      l = a + i.byteOffset,
+      l = o + i.byteOffset,
       c = O(s, l, l + t);
-    return o ? c : Y(c)
+    return a ? c : Y(c)
   },
-  en = function(e, t, n, r, i, a) {
-    var o = L(e),
+  en = function(e, t, n, r, i, o) {
+    var a = L(e),
       s = m(n),
       l = r(+i),
-      c = !!a;
-    if (s + t > o.byteLength) throw new V(D);
-    for (var u = o.bytes, d = s + o.byteOffset, f = 0; f < t; f++) u[d + f] = l[c ? f : t - f - 1]
+      c = !!o;
+    if (s + t > a.byteLength) throw new V(D);
+    for (var u = a.bytes, d = s + a.byteOffset, f = 0; f < t; f++) u[d + f] = l[c ? f : t - f - 1]
   };
 if (Chunk848120) {
   var er = C && M.name !== N;
@@ -102,13 +102,13 @@ if (Chunk848120) {
     return f(this, U), v(new M(m(e)), this, k)
   })[R] = U, U.constructor = k, Chunk190289(k, M)) : er && A && Chunk436207(M, "name", N), Chunk769827 && Chunk961050(Z) !== F && Chunk769827(Z, F);
   var ei = new G(new k(2)),
-    ea = Chunk46015(Z.setInt8);
+    eo = Chunk46015(Z.setInt8);
   ei.setInt8(0, 0x80000000), ei.setInt8(1, 0x80000001), (ei.getInt8(0) || !ei.getInt8(1)) && Chunk477732(Z, {
     setInt8: function(e, t) {
-      ea(this, e, t << 24 >> 24)
+      eo(this, e, t << 24 >> 24)
     },
     setUint8: function(e, t) {
-      ea(this, e, t << 24 >> 24)
+      eo(this, e, t << 24 >> 24)
     }
   }, {
     unsafe: true
@@ -120,21 +120,21 @@ if (Chunk848120) {
     type: N,
     bytes: H(B(t), 0),
     byteLength: t
-  }), a || (this.byteLength = t, this.detached = false)
+  }), o || (this.byteLength = t, this.detached = false)
 })[R], Z = (G = function(e, t, n) {
   f(this, Z), f(e, U);
   var r = x(e),
     i = r.byteLength,
-    o = p(t);
-  if (o < 0 || o > i) throw new V("Wrong offset");
-  if (n = true === n ? i - o : _(n), o + n > i) throw new V(w);
+    a = p(t);
+  if (a < 0 || a > i) throw new V("Wrong offset");
+  if (n = true === n ? i - a : _(n), a + n > i) throw new V(w);
   j(this, {
     type: P,
     buffer: e,
     byteLength: n,
-    byteOffset: o,
+    byteOffset: a,
     bytes: r.bytes
-  }), a || (this.buffer = e, this.byteLength = n, this.byteOffset = o)
+  }), o || (this.buffer = e, this.byteLength = n, this.byteOffset = a)
 })[R], Chunk507604 && (ee(k, "byteLength", x), ee(G, "buffer", L), ee(G, "byteLength", L), ee(G, "byteOffset", L)), Chunk477732(Z, {
   getInt8: function(e) {
     return et(this, 1, e)[0] << 24 >> 24

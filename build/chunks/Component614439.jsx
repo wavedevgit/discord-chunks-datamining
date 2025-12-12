@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 614439, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk873029 = require("./873029.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk141905 = require("./141905.js");
+  Chunk133190 = require("./133190.js");
 let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
   w = () => {
     let {
@@ -70,7 +70,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
   Z = () => {
     var e;
     let t = Chunk473749.useRef(null),
-      s = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
+      a = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
       [w, Z] = Chunk473749.useState(false);
     Chunk473749.useEffect(() => {
       w || null == Chunk796027 || ((0, Chunk456268.le)(), (0, Chunk456268.aC)(Chunk796027.id), (0, Chunk456268.i3)(Chunk796027.id), Z(true))
@@ -90,9 +90,9 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
               try {
                 var t, n, r, i;
                 let l = new URL(e).hostname.split(".");
-                if (3 === l.length && "bandcamp" === l[1].toLowerCase()) return I.z.bandcamp.presentation;
-                let a = null != (n = null == (t = l.shift()) ? true : t.toLowerCase()) ? n : "";
-                if ("www" === a && (a = null != (i = null == (r = l.shift()) ? true : r.toLowerCase()) ? i : ""), a in I.z) return I.z[a].presentation;
+                if (3 === l.length && "bandcamp" === l[1].toLowerCase()) return E.z.bandcamp.presentation;
+                let s = null != (n = null == (t = l.shift()) ? true : t.toLowerCase()) ? n : "";
+                if ("www" === s && (s = null != (i = null == (r = l.shift()) ? true : r.toLowerCase()) ? i : ""), s in E.z) return E.z[s].presentation;
                 return null
               } catch (e) {
                 return null
@@ -106,14 +106,14 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
     let z = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk796027 ? Chunk999382.Z.getErrors() : null);
     if (null == Chunk796027 || null == A) return null;
     let V = e => {
-        O.Z.updateGuild({
+        v.Z.updateGuild({
           discoverySplash: e
         })
       },
       K = e => {
         let t = () => {
-          (0, m.W1)(s.id, e), e ? (0, m.Vv)({
-            guildId: s.id,
+          (0, p.W1)(a.id, e), e ? (0, p.Vv)({
+            guildId: a.id,
             primaryCategoryId: A.primaryCategoryId,
             keywords: A.keywords,
             emojiDiscoverabilityEnabled: A.emojiDiscoverabilityEnabled,
@@ -123,8 +123,8 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             reasonsToJoin: A.reasonsToJoin,
             socialLinks: A.socialLinks,
             about: A.about
-          }) : (0, m.Vv)({
-            guildId: s.id,
+          }) : (0, p.Vv)({
+            guildId: a.id,
             primaryCategoryId: A.primaryCategoryId,
             keywords: A.keywords,
             emojiDiscoverabilityEnabled: A.emojiDiscoverabilityEnabled,
@@ -134,13 +134,13 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             reasonsToJoin: A.reasonsToJoin,
             socialLinks: A.socialLinks,
             about: A.about
-          }), O.Z.saveGuild(s.id, {
-            discoverySplash: s.discoverySplash,
-            description: s.description
+          }), v.Z.saveGuild(a.id, {
+            discoverySplash: a.discoverySplash,
+            description: a.description
           })
         };
         if (e) return void t();
-        null != s.vanityURLCode ? n.e("95999").then(n.bind(n, 976540)).then(e => {
+        null != a.vanityURLCode ? n.e("95999").then(n.bind(n, 976540)).then(e => {
           e.default.open(t)
         }) : t()
       },
@@ -178,28 +178,28 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         n[e] = t, F(n)
       };
     return (0, Chunk54381.jsx)("div", {
-      className: Chunk141905.settingsColumn,
+      className: Chunk133190.settingsColumn,
       children: (0, Chunk54381.jsx)("div", {
-        className: Chunk141905.settingsContainer,
+        className: Chunk133190.settingsContainer,
         children: (0, Chunk54381.jsx)(Chunk481060.w0Z, {
-          className: Chunk141905.settingsScroller,
+          className: Chunk133190.settingsScroller,
           children: (0, Chunk54381.jsx)("main", {
             ref: exports,
-            className: Chunk141905.settingsContent,
+            className: Chunk133190.settingsContent,
             children: (0, Chunk54381.jsx)(Chunk481060.JcV, {
               containerRef: exports,
               children: (0, Chunk54381.jsxs)("div", {
-                className: Chunk141905.container,
+                className: Chunk133190.container,
                 children: [(0, Chunk54381.jsxs)("div", {
-                  className: Chunk141905.mainContent,
+                  className: Chunk133190.mainContent,
                   children: [(0, Chunk54381.jsxs)(Chunk481060.Heading, {
                     variant: "heading-lg/semibold",
                     children: [Chunk388032.intl.string(Chunk388032.t.kGlQGF), (0, Chunk54381.jsx)(Chunk688465.Z, {
-                      className: Chunk141905.betaTag
+                      className: Chunk133190.betaTag
                     })]
                   }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
                     variant: "text-sm/normal",
-                    className: Chunk141905.tabMainDescription,
+                    className: Chunk133190.tabMainDescription,
                     children: [Chunk388032.intl.format(Chunk388032.t["+ScrMf"], {
                       discordURL: window.GLOBAL_ENV.MARKETING_ENDPOINT
                     }), " ", Chunk388032.intl.format(Chunk388032.t.T6WtKw, {
@@ -239,7 +239,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           disabled: !R
                         }), (null == z ? true : z.category) != null ? (0, Chunk54381.jsx)(Chunk481060.Text, {
                           color: "text-feedback-critical",
-                          className: Chunk141905.error,
+                          className: Chunk133190.error,
                           variant: "text-sm/normal",
                           children: z.category
                         }) : null]
@@ -255,14 +255,14 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           children: [(0, Chunk54381.jsx)(Chunk208567.Z, {
                             image: Chunk796027.discoverySplash,
                             makeURL: e => j.ZP.getGuildDiscoverySplashURL({
-                              id: s.id,
+                              id: a.id,
                               splash: e,
-                              size: 512 * (0, b.x_)()
+                              size: 512 * (0, f.x_)()
                             }),
                             disabled: !R,
                             onChange: V,
                             hint: Chunk388032.intl.string(Chunk388032.t.uPvxqJ),
-                            imageClassName: Chunk141905.imageUploaderInnerSquare,
+                            imageClassName: Chunk133190.imageUploaderInnerSquare,
                             hideSize: true
                           }), (0, Chunk54381.jsxs)(Chunk755721.zx, {
                             size: Chunk755721.zx.Sizes.SMALL,
@@ -281,7 +281,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       placeholder: Chunk388032.intl.string(Chunk388032.t.rFa9Ui),
                       onChange: e => {
                         var t;
-                        O.Z.updateGuild({
+                        v.Z.updateGuild({
                           description: null != (t = null == e ? true : e.replaceAll("\n", "")) ? t : ""
                         })
                       },
@@ -313,7 +313,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       value: A.about,
                       placeholder: Chunk388032.intl.string(Chunk388032.t.TduTbs),
                       onChange: e => {
-                        (0, m.mA)(s.id, e)
+                        (0, p.mA)(a.id, e)
                       },
                       minLength: 300,
                       maxLength: 2400,
@@ -325,7 +325,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       errorMessage: (null == z ? true : z.social_links) != null ? z.social_links : true,
                       children: [A.socialLinks.map((e, t) => {
                         let n = H[t],
-                          i = Object.values(I.z).find(e => e.presentation === n),
+                          i = Object.values(E.z).find(e => e.presentation === n),
                           l = null != i ? "".concat(i.baseUrl) : true;
                         return (0, r.jsxs)("div", {
                           className: T.socialLinksContainer,
@@ -336,7 +336,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           children: [(0, r.jsx)(o.y6, {
                             className: A.isPublished ? T.socialLinksDropdownMax : T.socialLinksDropdownMin,
                             options: (e => {
-                              let t = Object.entries(I.z).filter(e => !H.includes(e[1].presentation)).map(e => ({
+                              let t = Object.entries(E.z).filter(e => !H.includes(e[1].presentation)).map(e => ({
                                 label: e[1].presentation,
                                 value: e[0]
                               }));
@@ -345,31 +345,31 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                 value: e
                               })
                             })(H[t]),
-                            placeholder: _.intl.string(_.t.xSALIK),
+                            placeholder: S.intl.string(S.t.xSALIK),
                             value: H[t],
                             onChange: e => ((e, t) => {
                               let n = [...A.socialLinks],
                                 r = [...H],
                                 i = [...k];
-                              r[t] = e, n[t] = I.z[e].baseUrl, i[t] = true, G(i), W(r), U(i.every(e => true === e)), (0, m.t$)(s.id, n)
+                              r[t] = e, n[t] = E.z[e].baseUrl, i[t] = true, G(i), W(r), U(i.every(e => true === e)), (0, p.t$)(a.id, n)
                             })(e, t),
                             isDisabled: !R
-                          }), (0, r.jsx)(d.oil, {
+                          }), (0, r.jsx)(u.oil, {
                             value: e.replace(null != l ? l : "", ""),
                             onChange: e => ((e, t) => {
                               let n = [...A.socialLinks],
                                 r = n[t],
                                 i = e;
-                              0 === r.length && i.length > 1 && false === RegExp("^https?:").test(i) && (i = "https://" + i), /\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) || (n[t] = i, (0, m.t$)(s.id, n))
+                              0 === r.length && i.length > 1 && false === RegExp("^https?:").test(i) && (i = "https://" + i), /\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) || (n[t] = i, (0, p.t$)(a.id, n))
                             })("".concat(l).concat(e), t),
-                            placeholder: null != l ? true : _.intl.string(_.t.Q6o4pJ),
+                            placeholder: null != l ? true : S.intl.string(S.t.Q6o4pJ),
                             maxLength: 150,
                             disabled: !R || null == H[t],
                             fullWidth: true,
                             leading: l,
                             trailing: R ? {
-                              icon: d.XHJ,
-                              "aria-label": _.intl.string(_.t.N86XcP),
+                              icon: u.XHJ,
+                              "aria-label": S.intl.string(S.t.N86XcP),
                               onClick: () => (e => {
                                 let t = [...B];
                                 t.splice(e, 1), F(t);
@@ -378,7 +378,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                                 let r = [...H];
                                 r.splice(e, 1), W(r);
                                 let i = [...A.socialLinks];
-                                i.splice(e, 1), (0, m.t$)(s.id, i)
+                                i.splice(e, 1), (0, p.t$)(a.id, i)
                               })(t)
                             } : true
                           })]
@@ -418,7 +418,7 @@ let P = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     }) : null]
                   })]
                 }), !A.isPublished && (0, Chunk54381.jsx)("div", {
-                  className: Chunk141905.checklist,
+                  className: Chunk133190.checklist,
                   children: (0, Chunk54381.jsx)(Chunk970061.Z, {
                     title: Chunk388032.intl.string(Chunk388032.t["2kCyn/"]),
                     children: q,

@@ -15,13 +15,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk442550 = require("./442550.jsx"),
   Chunk297781 = require("./297781.jsx"),
   Chunk443487 = require("./443487.jsx"),
-  Chunk925002 = require("./925002.js");
+  Chunk451419 = require("./451419.js");
 let p = [Chunk297781.XF];
 
 function _(e) {
   var t, n, r, i;
-  let s = (0, a.e7)([l.Z], () => l.Z.getMatchingActivity(e)),
-    c = (0, a.e7)([o.default], () => o.default.getUser(e.author_id));
+  let s = (0, o.e7)([l.Z], () => l.Z.getMatchingActivity(e)),
+    c = (0, o.e7)([a.default], () => a.default.getUser(e.author_id));
   if (null == s || null == c) return {};
   let u = e.extra.entries[0],
     d = null != (r = null != (n = s.state) ? n : null == (t = u.media.artists[0]) ? true : t.name) ? r : u.media.title,
@@ -40,16 +40,16 @@ function m(e) {
     entry: t,
     channel: n,
     selected: i,
-    hovered: a
+    hovered: o
   } = e, {
-    activity: o,
+    activity: a,
     artist: l
   } = _(t), {
     largeImage: m
   } = (0, s.rv)({
     entry: t
   });
-  return null == o ? (0, r.jsx)(d.cA, {}) : (0, r.jsxs)(d.Zb, {
+  return null == a ? (0, r.jsx)(d.cA, {}) : (0, r.jsxs)(d.Zb, {
     selected: i,
     children: [(0, r.jsxs)(d.e$, {
       children: [(0, r.jsx)(d.F9, {
@@ -62,7 +62,7 @@ function m(e) {
         location: u.Gt.CARD,
         children: p.map((e, n) => (0, r.jsx)(e, {
           entry: t,
-          hovered: a
+          hovered: o
         }, n))
       })]
     }), (0, r.jsx)(c.f, {

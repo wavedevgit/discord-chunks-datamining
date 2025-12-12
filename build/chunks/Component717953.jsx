@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk657707 = require("./657707.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -19,13 +19,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk36982 = require("./36982.js"),
   Chunk583901 = require("./583901.jsx"),
   Chunk576157 = require("./576157.js"),
-  Chunk990551 = require("./990551.js"),
+  Chunk939101 = require("./939101.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk485492 = require("./485492.js");
+  Chunk279457 = require("./279457.js");
 
 function O() {
   return (0, Chunk54381.jsxs)("svg", {
-    className: Chunk485492.newRing,
+    className: Chunk279457.newRing,
     width: "68",
     height: "68",
     viewBox: "0 0 68 68",
@@ -62,15 +62,15 @@ function v(e) {
   let {
     isDisabled: t,
     onSelect: n
-  } = e, a = (0, l.e7)([_.Z], () => {
+  } = e, o = (0, l.e7)([_.Z], () => {
     var e, t;
     return null == (t = _.Z.settings.appearance) || null == (e = t.clientThemeSettings) ? true : e.customUserThemeSettings
   }), {
     shouldShowNewBadge: v,
     markNewBadgeAsDismissed: S
-  } = (0, g.w)(), I = (0, p.Nj)(c.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), T = (0, f.ZP)(), C = (0, d.wjy)(T) ? y.darkOverlay : y.lightOverlay, A = null != a && null != a.colors && a.colors.length > 0, N = (0, l.e7)([m.Z], () => m.Z.getSavedCustomTheme()), P = A, R = A || null != N, w = i.useMemo(() => {
+  } = (0, g.w)(), I = (0, p.Nj)(c.z.CUSTOM_THEME_ENTRYPOINT_GRADIENT), T = (0, f.ZP)(), C = (0, d.wjy)(T) ? y.darkOverlay : y.lightOverlay, A = null != o && null != o.colors && o.colors.length > 0, N = (0, l.e7)([m.Z], () => m.Z.getSavedCustomTheme()), P = A, R = A || null != N, w = i.useMemo(() => {
     let e, t;
-    if (A) e = a.colors, t = a.gradientAngle;
+    if (A) e = o.colors, t = o.gradientAngle;
     else {
       if (null === N) return;
       e = N.colors, t = N.gradient_angle
@@ -79,7 +79,7 @@ function v(e) {
     return e.length > 1 && (n = "linear-gradient(".concat(t, "deg, ").concat(e.join(", "), ")")), {
       background: "var(--background-gradient), ".concat(n)
     }
-  }, [A, a, N]), D = R ? u.Z.unsafe_rawColors.WHITE_500.css : true, x = i.useCallback(() => {
+  }, [A, o, N]), D = R ? u.Z.unsafe_rawColors.WHITE_500.css : true, x = i.useCallback(() => {
     v && S(), null == n || n()
   }, [v, S, n]);
   return (0, r.jsxs)("div", {
@@ -89,7 +89,7 @@ function v(e) {
       isSelected: false,
       showSelectionCircle: P,
       name: b.intl.string(E.default.KSBBpC),
-      className: o()(y.container, R && C, t && y.disabled),
+      className: a()(y.container, R && C, t && y.disabled),
       showBadge: false,
       showLockedBadge: false,
       style: w,

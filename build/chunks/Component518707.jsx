@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk70097 = require("./70097.jsx"),
   Chunk55373 = require("./55373.jsx"),
-  Chunk929039 = require("./929039.js"),
-  Chunk412892 = require("./412892.js"),
-  Chunk581662 = require("./581662.js");
+  Chunk323053 = require("./323053.js"),
+  Chunk530347 = require("./530347.js"),
+  Chunk334937 = require("./334937.js");
 let c = e => {
   let {
     supportHEVCAlpha: t,
@@ -27,26 +27,26 @@ let c = e => {
     })
   }) : (0, r.jsx)("div", {
     className: u,
-    children: (0, r.jsx)(a.ZP, {
+    children: (0, r.jsx)(o.ZP, {
       scaleAnimationData: {
         startScale: .9,
         endScale: 1,
-        duration: a.SR
+        duration: o.SR
       },
       yAxisAnimationData: {
         range: 20,
-        duration: a.b5,
-        path: a.js.SINE
+        duration: o.b5,
+        path: o.js.SINE
       },
       parallaxAnimationData: {
-        pathDirection: a.eo.UP,
+        pathDirection: o.eo.UP,
         range: 200,
         containerVisibilityPercentage: c,
         changeOpacity: false
       },
       animateXAxisWiggle: true,
       children: t ? (0, r.jsx)("img", {
-        src: o.Z,
+        src: a.Z,
         alt: "",
         className: d
       }) : (0, r.jsx)(i.Z, {

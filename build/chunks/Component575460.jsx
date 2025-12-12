@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk528027 = require("./528027.jsx"),
   Chunk686807 = require("./686807.jsx"),
   Chunk113318 = require("./113318.js"),
-  Chunk893243 = require("./893243.js");
+  Chunk490944 = require("./490944.js");
 
 function u(e) {
   let {
@@ -20,7 +20,7 @@ function u(e) {
     onClick: u
   } = e, d = (0, l.Z)(n, t.ref_id), f = () => {
     null == d || d.navigateToChannel(), u()
-  }, p = (0, r.jsx)(o.Z, {
+  }, p = (0, r.jsx)(a.Z, {
     guildId: n,
     emojiId: t.emoji_id,
     emojiName: t.emoji_name
@@ -45,8 +45,8 @@ function u(e) {
         variant: "text-sm/normal",
         children: t.description
       })]
-    }), (0, r.jsx)(a.Z, {
-      direction: a.Z.Directions.RIGHT,
+    }), (0, r.jsx)(o.Z, {
+      direction: o.Z.Directions.RIGHT,
       className: c.caret
     })]
   })

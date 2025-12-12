@@ -18,15 +18,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk736530 = require("./736530.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk512929 = require("./512929.js");
+  Chunk254681 = require("./254681.js");
 
 function E(e) {
   let {
     ingress: t,
     guildId: n
   } = e, l = s.SE.useSetting().includes(n), f = i.useCallback(e => {
-    let r = (0, o._o)();
-    e ? r.delete(n) : r.add(n), s.SE.updateSetting([...r]), a.default.track(m.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+    let r = (0, a._o)();
+    e ? r.delete(n) : r.add(n), s.SE.updateSetting([...r]), o.default.track(m.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: d.Y.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
       ingress: t,
       guild_id: n

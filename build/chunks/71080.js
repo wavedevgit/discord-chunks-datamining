@@ -104,7 +104,7 @@ function p(e, t, c) {
             return l.t.LG9VAi;
           case s.d4z.GUILD_ANNOUNCEMENT:
             return l.intl.format(l.t.WFwfSD, {
-              articleURL: o.Z.getArticleURL(s.BhN.ANNOUNCEMENT_CHANNELS)
+              articleURL: a.Z.getArticleURL(s.BhN.ANNOUNCEMENT_CHANNELS)
             });
           case s.d4z.GUILD_VOICE:
             return i.Z.getTextInVoiceSendMessageChannelPermissionText(null == c ? true : c.sendMessagesDisabled);
@@ -161,7 +161,7 @@ function p(e, t, c) {
             return l.t["5R9nYh"];
           case s.d4z.GUILD_ANNOUNCEMENT:
             return l.intl.format(l.t.XRxOo0, {
-              articleURL: o.Z.getArticleURL(s.BhN.ANNOUNCEMENT_CHANNELS)
+              articleURL: a.Z.getArticleURL(s.BhN.ANNOUNCEMENT_CHANNELS)
             });
           default:
             return l.t["SeA+G9"]
@@ -318,17 +318,17 @@ function p(e, t, c) {
         switch (u) {
           case s.d4z.GUILD_CATEGORY:
             return l.intl.format(l.t["0kBp/0"], {
-              helpCenterArticle: o.Z.getArticleURL(s.BhN.SOUNDBOARD)
+              helpCenterArticle: a.Z.getArticleURL(s.BhN.SOUNDBOARD)
             });
           case s.d4z.GUILD_TEXT:
           case s.d4z.GUILD_FORUM:
           case s.d4z.GUILD_MEDIA:
             return l.intl.format(l.t["6eYqU1"], {
-              helpCenterArticle: o.Z.getArticleURL(s.BhN.SOUNDBOARD)
+              helpCenterArticle: a.Z.getArticleURL(s.BhN.SOUNDBOARD)
             });
           default:
             return l.intl.format(l.t.GEi6Ym, {
-              helpCenterArticle: o.Z.getArticleURL(s.BhN.SOUNDBOARD)
+              helpCenterArticle: a.Z.getArticleURL(s.BhN.SOUNDBOARD)
             })
         }
       })(),
@@ -367,7 +367,7 @@ function p(e, t, c) {
               let {
                 openUserSettings: e
               } = n(518596);
-              e(a.n.KEYBINDS_PANEL, {
+              e(o.n.KEYBINDS_PANEL, {
                 section: s.oAB.KEYBINDS
               })
             }

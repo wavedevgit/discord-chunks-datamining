@@ -36,7 +36,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk959088 = require("./959088.js");
+  Chunk677372 = require("./677372.js");
 
 function M(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -118,10 +118,10 @@ let G = e => {
       children: d
     } = e, f = U(e, ["selected", "locationState", "icon", "onClick", "collectibleShopTab", "onMouseEnter", "onMouseLeave", "children"]);
     let h = (0, s.JA)("shop"),
-      m = b.Z.HOME_PAGE_SHOP_TAB,
+      m = _.Z.HOME_PAGE_SHOP_TAB,
       {
         analyticsLocations: E
-      } = (0, _.ZP)(m),
+      } = (0, b.ZP)(m),
       [O, v] = i.useState(false),
       y = i.useCallback(() => {
         true !== a && a(), true !== o && (0, C.mK)({
@@ -190,7 +190,7 @@ let G = e => {
   },
   Y = e => {
     let t, n;
-    var l, s, c, u, f, g, b, _, E, O, v, y, {
+    var l, s, c, u, f, g, _, b, E, O, v, y, {
         displayOptions: C
       } = e,
       T = U(e, ["displayOptions"]);
@@ -206,7 +206,7 @@ let G = e => {
         location: "CollectiblesShopButton"
       }),
       q = W.useNewHoverStyle ? D.marketingButtonBackgroundNew : D.marketingButtonBackground;
-    x ? Y ? (t = null == (l = C.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (c = C.entrypointBackgroundStyle) || null == (s = c.hovered) ? true : s.dark) : (t = null == (u = C.entryPointBackgroundAssets) ? true : u.srcLightHovered, n = null == (g = C.entrypointBackgroundStyle) || null == (f = g.hovered) ? true : f.light) : Y ? (t = null == (b = C.entryPointBackgroundAssets) ? true : b.srcDark, n = null == (E = C.entrypointBackgroundStyle) || null == (_ = E.resting) ? true : _.dark) : (t = null == (O = C.entryPointBackgroundAssets) ? true : O.srcLight, n = null == (y = C.entrypointBackgroundStyle) || null == (v = y.resting) ? true : v.light);
+    x ? Y ? (t = null == (l = C.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (c = C.entrypointBackgroundStyle) || null == (s = c.hovered) ? true : s.dark) : (t = null == (u = C.entryPointBackgroundAssets) ? true : u.srcLightHovered, n = null == (g = C.entrypointBackgroundStyle) || null == (f = g.hovered) ? true : f.light) : Y ? (t = null == (_ = C.entryPointBackgroundAssets) ? true : _.srcDark, n = null == (E = C.entrypointBackgroundStyle) || null == (b = E.resting) ? true : b.dark) : (t = null == (O = C.entryPointBackgroundAssets) ? true : O.srcLight, n = null == (y = C.entrypointBackgroundStyle) || null == (v = y.resting) ? true : v.light);
     let K = i.useCallback(e => {
         C.assetIds.length > 0 && P(e => (e + 1) % C.assetIds.length), A(true);
         let t = () => {
@@ -300,10 +300,10 @@ let G = e => {
       [p, f] = i.useState(false),
       g = (0, h.ZP)(),
       m = (0, d.wj)(g),
-      b = (0, S.p)({
+      _ = (0, S.p)({
         location: "CollectiblesShopButton"
       }),
-      _ = b.useNewHoverStyle ? D.marketingButtonBackgroundNew : D.marketingButtonBackground,
+      b = _.useNewHoverStyle ? D.marketingButtonBackgroundNew : D.marketingButtonBackground,
       E = l.entryPointBackgroundAssets,
       O = l.entrypointBackgroundStyle,
       v = m ? null == E ? true : E.srcDarkHovered : null == E ? true : E.srcLightHovered,
@@ -311,20 +311,20 @@ let G = e => {
     return i.useEffect(() => {
       if (null == v || "" === v) return void f(false);
       let e = () => {
-        f(b.useNewHoverStyle && z(u))
+        f(_.useNewHoverStyle && z(u))
       };
       e();
       let t = requestAnimationFrame(e);
       return () => {
         cancelAnimationFrame(t)
       }
-    }, [v, b.useNewHoverStyle]), (0, r.jsxs)(r.Fragment, {
+    }, [v, _.useNewHoverStyle]), (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(H, k(M({}, o), {
         onClick: () => s(L.L.TAKE_ACTION),
         listItemRef: c,
         children: [(0, r.jsx)("div", {
           ref: u,
-          className: _,
+          className: b,
           style: null != y ? {
             background: y
           } : true,

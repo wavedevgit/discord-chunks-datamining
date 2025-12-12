@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk794295 = require("./794295.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk883383 = require("./883383.js");
+  Chunk94209 = require("./94209.js");
 
 function s(e) {
   let {
@@ -16,16 +16,16 @@ function s(e) {
     privacyPolicyUrl: n
   } = e;
   return null == t && null == n ? null : (0, r.jsxs)("span", {
-    className: o.text,
+    className: a.text,
     children: [null != t && (0, r.jsx)(i.Z, {
       href: t,
-      children: a.intl.string(a.t["8S0kcM"])
+      children: o.intl.string(o.t["8S0kcM"])
     }), null != t && null != n && (0, r.jsx)("span", {
       "aria-disabled": "true",
       children: "•"
     }), null != n && (0, r.jsx)(i.Z, {
       href: n,
-      children: a.intl.string(a.t.ZpyeCm)
+      children: o.intl.string(o.t.ZpyeCm)
     })]
   })
 }

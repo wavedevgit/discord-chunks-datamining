@@ -98,7 +98,7 @@ let h = {
     let {
       title: t,
       body: n,
-      showGraphic: a,
+      showGraphic: o,
       showActions: f,
       badgeId: _,
       showProgress: g,
@@ -123,7 +123,7 @@ let h = {
       let e = u.vK[A];
       return (d.intl.string(d.t.lG6a5x) + " " + d.intl.string(e.nameUnformatted)).toLocaleUpperCase()
     }, [A]), R = i.useMemo(() => {
-      if (!a || null == N) return;
+      if (!o || null == N) return;
       let e = g ? {
         progressCircleText: E,
         progressCirclePercent: b,
@@ -131,14 +131,14 @@ let h = {
       } : {};
       return {
         type: "dynamic",
-        component: o.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE,
+        component: a.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE,
         aspectRatio: "6/4",
         props: p({
           src: N,
           alt: P
         }, e)
       }
-    }, [a, N, P, g, E, b, y]), w = {
+    }, [o, N, P, g, E, b, y]), w = {
       title: t,
       body: n,
       graphic: R,

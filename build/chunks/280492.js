@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   iN: () => i,
-  oV: () => a
+  oV: () => o
 });
 var Chunk846027 = require("./846027.js");
 let i = {
@@ -14,7 +14,7 @@ let i = {
       location: "Default Keybind"
     }), false)
   },
-  a = {
+  o = {
     binds: ["mod+shift+d"],
     comboKeysBindGlobal: true,
     action: () => (Chunk846027.Z.toggleSelfDeaf({

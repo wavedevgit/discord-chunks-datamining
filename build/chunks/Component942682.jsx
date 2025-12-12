@@ -10,19 +10,19 @@ require("./473749.js");
 var Chunk330711 = require("./330711.js"),
   Chunk793030 = require("./793030.js"),
   Chunk692547 = require("./692547.js"),
-  Chunk931632 = require("./931632.js");
+  Chunk243059 = require("./243059.js");
 
 function l(e) {
   let {
     type: t
   } = e;
   return (0, r.jsx)(c, {
-    icon: "user" === t ? (0, r.jsx)(a.tBG, {
+    icon: "user" === t ? (0, r.jsx)(o.tBG, {
       size: "xxs",
-      color: o.Z.colors.INTERACTIVE_TEXT_DEFAULT
-    }) : (0, r.jsx)(a.QTo, {
+      color: a.Z.colors.INTERACTIVE_TEXT_DEFAULT
+    }) : (0, r.jsx)(o.QTo, {
       size: "xxs",
-      color: o.Z.colors.INTERACTIVE_TEXT_DEFAULT
+      color: a.Z.colors.INTERACTIVE_TEXT_DEFAULT
     }),
     text: "user" === t ? i.Z.Messages.STOREFRONT_USER_SUBSCRIPTION : i.Z.Messages.STOREFRONT_SERVER_SUBSCRIPTION
   })
@@ -35,7 +35,7 @@ function c(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: s.container,
-    children: [t, (0, r.jsx)(a.xvT, {
+    children: [t, (0, r.jsx)(o.xvT, {
       color: "text-strong",
       variant: "text-sm/medium",
       children: n

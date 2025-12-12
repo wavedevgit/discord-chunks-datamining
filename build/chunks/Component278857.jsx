@@ -7,17 +7,17 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk502762 = require("./502762.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk285608 = require("./285608.js");
+  Chunk588472 = require("./588472.js");
 
 function d(e) {
   let {
     renderCards: t,
     heading: n,
-    onExpand: a
+    onExpand: o
   } = e, d = i.useId(), f = i.useMemo(() => t({
     className: u.card
   }), [t]), [p] = f;
@@ -30,7 +30,7 @@ function d(e) {
         children: n
       })
     }), (0, r.jsxs)("ul", {
-      className: o()(u.cardsList, f.length > 1 && u.hasMultipleCards),
+      className: a()(u.cardsList, f.length > 1 && u.hasMultipleCards),
       "aria-labelledby": null != n ? d : true,
       tabIndex: false,
       children: [(0, r.jsx)("li", {
@@ -39,7 +39,7 @@ function d(e) {
       }), f.length > 1 && (0, r.jsx)(s.P3F, {
         tag: "li",
         className: u.backgroundCardContainer,
-        onClick: a,
+        onClick: o,
         "aria-label": c.intl.string(c.t["OBCR+p"]),
         children: (0, r.jsx)(l.Z.Overlay, {
           className: u.backgroundCard,

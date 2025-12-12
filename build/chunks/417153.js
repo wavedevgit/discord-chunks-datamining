@@ -10,7 +10,7 @@ var Chunk663042 = require("./663042.js"),
   Chunk731965 = require("./731965.js"),
   Chunk981631 = require("./981631.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -55,14 +55,14 @@ let u = (0, Chunk663042.U)(() => ({
 
 function d(e) {
   var t, n;
-  let r = null != (n = null == (t = e.options) ? true : t.appContext) ? n : a.IlC.APP;
+  let r = null != (n = null == (t = e.options) ? true : t.appContext) ? n : o.IlC.APP;
   (0, i.j)(() => {
     u.setState(t => {
       if (t.currentToastMap.has(r)) {
         var n;
         let i = new Map(t.queuedToastsMap),
-          a = null != (n = i.get(r)) ? n : [];
-        return i.set(r, [...a, e]), c(s({}, t), {
+          o = null != (n = i.get(r)) ? n : [];
+        return i.set(r, [...o, e]), c(s({}, t), {
           queuedToastsMap: i
         })
       } {
@@ -87,12 +87,12 @@ function f() {
         })
       }
       let i = new Map(t.currentToastMap),
-        a = new Map(t.queuedToastsMap),
-        o = null != (r = a.get(e)) ? r : [],
-        l = o[0];
-      return i.set(e, l), a.set(e, o.slice(1)), c(s({}, t), {
+        o = new Map(t.queuedToastsMap),
+        a = null != (r = o.get(e)) ? r : [],
+        l = a[0];
+      return i.set(e, l), o.set(e, a.slice(1)), c(s({}, t), {
         currentToastMap: i,
-        queuedToastsMap: a
+        queuedToastsMap: o
       })
     })
   })

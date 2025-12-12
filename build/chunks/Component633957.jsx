@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk846519 = require("./846519.js"),
   Chunk481060 = require("./481060.js"),
@@ -40,10 +40,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk701488 = require("./701488.js"),
   Chunk967249 = require("./967249.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk891332 = require("./891332.js");
+  Chunk853392 = require("./853392.js");
 
 function Z(e) {
-  var t, n, a;
+  var t, n, o;
   let l, {
       application: d,
       channelId: S,
@@ -95,7 +95,7 @@ function Z(e) {
     }),
     er = i.useId(),
     ei = null != z && z.isLaunching && z.componentId === er,
-    ea = async () => {
+    eo = async () => {
       P.default.track(j.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: d.id,
         channel_id: S,
@@ -116,7 +116,7 @@ function Z(e) {
         analyticsLocations: Z,
         componentId: er
       })
-    }, eo = en.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), es = (0, v.G)($, () => {
+    }, ea = en.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), es = (0, v.G)($, () => {
       P.default.track(j.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: d.id,
         channel_id: S,
@@ -130,7 +130,7 @@ function Z(e) {
     });
   en.disabled && (l = en.tooltip);
   let ec = Q.length,
-    eu = null != (a = null == X || null == (n = X.timestamps) ? true : n.start) ? a : null == X ? true : X.created_at,
+    eu = null != (o = null == X || null == (n = X.timestamps) ? true : n.start) ? o : null == X ? true : X.created_at,
     ed = (0, y.r)({
       activity: X,
       activityUsersCount: ec
@@ -138,7 +138,7 @@ function Z(e) {
     ef = [{
       label: en.text,
       trackingArea: O.j_.PLAY,
-      onClick: ea,
+      onClick: eo,
       disabled: en.disabled,
       disabledReason: l,
       submitting: ei
@@ -152,7 +152,7 @@ function Z(e) {
       children: et ? (0, r.jsx)(c.Text, {
         variant: "text-xs/medium",
         color: "none",
-        children: eo
+        children: ea
       }) : (0, r.jsxs)(r.Fragment, {
         children: [null != J && (0, r.jsxs)("div", {
           className: G.activityPresenceDetailsContainer,
@@ -172,7 +172,7 @@ function Z(e) {
               })
             })]
           }), (0, r.jsxs)("div", {
-            className: o()(G.activityPresenceDetailsItemContainer, G.truncatesText),
+            className: a()(G.activityPresenceDetailsItemContainer, G.truncatesText),
             children: [(0, r.jsx)("div", {
               children: (0, r.jsx)(c.hH0, {
                 size: "xxs",
@@ -207,7 +207,7 @@ function Z(e) {
 let F = Chunk473749.memo(e => {
   let {
     start: t
-  } = e, [n, r] = i.useState(0), a = (0, x.n)(), o = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === a || o;
+  } = e, [n, r] = i.useState(0), o = (0, x.n)(), a = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), c = false === o || a;
   return i.useEffect(() => {
     let e = new l.Xp;
     return e.start(c ? 15 * w.Z.Millis.SECOND : w.Z.Millis.SECOND, () => {

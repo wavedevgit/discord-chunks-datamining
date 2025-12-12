@@ -7,11 +7,11 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk314734 = require("./314734.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk759507 = require("./759507.js");
+  Chunk515188 = require("./515188.js");
 
 function u(e) {
   let {
@@ -22,22 +22,22 @@ function u(e) {
     n(e), i()
   };
   return (0, r.jsx)("div", {
-    className: a()(s.Jh, c.container),
-    children: (0, r.jsx)(o.v2r, {
+    className: o()(s.Jh, c.container),
+    children: (0, r.jsx)(a.v2r, {
       navId: "command-list-sort",
       "aria-label": l.intl.string(l.t.Ugo9ud),
       hideScroller: true,
       onClose: i,
       onSelect: i,
-      children: (0, r.jsxs)(o.kSQ, {
+      children: (0, r.jsxs)(a.kSQ, {
         label: l.intl.string(l.t.yeYaHf),
-        children: [(0, r.jsx)(o.k5B, {
+        children: [(0, r.jsx)(a.k5B, {
           id: "sort-by-popular",
           group: "sort-by",
           label: l.intl.string(l.t.SzxiqK),
           action: () => u(s.bS.POPULAR),
           checked: t === s.bS.POPULAR
-        }), (0, r.jsx)(o.k5B, {
+        }), (0, r.jsx)(a.k5B, {
           id: "sort-by-alphabetical",
           group: "sort-by",
           label: l.intl.string(l.t.m8xsti),

@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 455172, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk317381 = require("./317381.js"),
@@ -22,18 +22,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk938475 = require("./938475.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk998081 = require("./998081.js"),
-  Chunk66776 = require("./66776.js");
+  Chunk132789 = require("./132789.js"),
+  Chunk78480 = require("./78480.js");
 
-function E(e) {
+function x(e) {
   let {
     icon: t,
     users: n
   } = e;
   return 0 === n.length ? null : (0, r.jsxs)("div", {
-    className: C.row,
+    className: j.row,
     children: [(0, r.jsx)(t, {
-      className: C.activityIcon,
+      className: j.activityIcon,
       color: "currentColor"
     }), (0, r.jsx)(u.ZP, {
       users: n,
@@ -42,7 +42,7 @@ function E(e) {
   })
 }
 
-function S(e) {
+function E(e) {
   let {
     muteConfig: t,
     className: n
@@ -51,14 +51,14 @@ function S(e) {
     variant: "text-xs/normal",
     color: "text-muted",
     className: n,
-    children: j.intl.string(j.t.fpKdS1)
+    children: v.intl.string(v.t.fpKdS1)
   }) : (0, r.jsx)(h.Z, {
     muteConfig: t,
     className: n
   })
 }
 
-function I(e) {
+function S(e) {
   let {
     channel: t
   } = e, n = t.id, {
@@ -67,20 +67,20 @@ function I(e) {
     voiceUsers: f
   } = function(e) {
     let t = e.id,
-      n = (0, o.Wu)([m.Z], () => m.Z.getBlockedOrIgnoredIDs()),
-      r = (0, o.e7)([p.Z], () => p.Z.getUserAffinitiesMap(), []),
-      l = (0, o.Wu)([c.ZP, O.default], () => c.ZP.getEmbeddedActivitiesForChannel(t).flatMap(e => Array.from(e.userIds)).map(e => O.default.getUser(e)), [t]),
-      a = i.useMemo(() => (0, d.dq)(l, n), [l, n]),
-      s = i.useMemo(() => (0, g.C)(a, r, "DirectMessageTooltip - activityUsers"), [a, r]),
-      u = (0, o.Wu)([b.Z, O.default], () => {
-        let e = b.Z.getAllApplicationStreamsForChannel(t).map(e => e.ownerId).map(e => O.default.getUser(e));
+      n = (0, a.Wu)([b.Z], () => b.Z.getBlockedOrIgnoredIDs()),
+      r = (0, a.e7)([p.Z], () => p.Z.getUserAffinitiesMap(), []),
+      l = (0, a.Wu)([c.ZP, y.default], () => c.ZP.getEmbeddedActivitiesForChannel(t).flatMap(e => Array.from(e.userIds)).map(e => y.default.getUser(e)), [t]),
+      o = i.useMemo(() => (0, d.dq)(l, n), [l, n]),
+      s = i.useMemo(() => (0, g.C)(o, r, "DirectMessageTooltip - activityUsers"), [o, r]),
+      u = (0, a.Wu)([m.Z, y.default], () => {
+        let e = m.Z.getAllApplicationStreamsForChannel(t).map(e => e.ownerId).map(e => y.default.getUser(e));
         return (0, d.dq)(e, n)
       }, [t, n]),
       f = i.useMemo(() => (0, d.dq)(u, n), [u, n]),
       h = i.useMemo(() => (0, g.C)(f, r, "DirectMessageTooltip - activityUsers"), [f, r]),
-      y = i.useMemo(() => h.filter(e => !s.some(t => t.id === e.id)), [h, s]),
-      j = (0, o.Wu)([v.ZP], () => {
-        let t = v.ZP.getVoiceStatesForChannel(e).map(e => {
+      _ = i.useMemo(() => h.filter(e => !s.some(t => t.id === e.id)), [h, s]),
+      v = (0, a.Wu)([O.ZP], () => {
+        let t = O.ZP.getVoiceStatesForChannel(e).map(e => {
           let {
             user: t
           } = e;
@@ -88,51 +88,51 @@ function I(e) {
         });
         return (0, d.dq)(t, n)
       }, [e, n]),
-      C = i.useMemo(() => (0, d.dq)(j, n), [j, n]),
-      x = i.useMemo(() => (0, g.C)(C, r, "DirectMessageTooltip - voiceUsers"), [C, r]);
+      j = i.useMemo(() => (0, d.dq)(v, n), [v, n]),
+      C = i.useMemo(() => (0, g.C)(j, r, "DirectMessageTooltip - voiceUsers"), [j, r]);
     return {
-      voiceUsers: i.useMemo(() => x.filter(e => !s.some(t => t.id === e.id) && !h.some(t => t.id === e.id)), [x, s, h]),
-      streamUsers: y,
+      voiceUsers: i.useMemo(() => C.filter(e => !s.some(t => t.id === e.id) && !h.some(t => t.id === e.id)), [C, s, h]),
+      streamUsers: _,
       activityUsers: s
     }
-  }(t), h = (0, r.jsx)(E, {
+  }(t), h = (0, r.jsx)(x, {
     icon: s.gj8,
     users: f
-  }), j = (0, r.jsx)(E, {
+  }), v = (0, r.jsx)(x, {
     icon: s.hGI,
     users: u
-  }), x = (0, r.jsx)(E, {
+  }), C = (0, r.jsx)(x, {
     icon: s.nG3,
     users: l
   }), {
-    isMuted: I,
-    muteConfig: _
-  } = (0, o.cj)([y.ZP], () => ({
-    isMuted: y.ZP.isChannelMuted(null, n),
-    muteConfig: y.ZP.getChannelMuteConfig(null, n)
+    isMuted: S,
+    muteConfig: I
+  } = (0, a.cj)([_.ZP], () => ({
+    isMuted: _.ZP.isChannelMuted(null, n),
+    muteConfig: _.ZP.getChannelMuteConfig(null, n)
   }), [n]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [h, j, x, I ? (0, r.jsx)(S, {
-      muteConfig: _,
-      className: a()(C.muteText, {
-        [C.muteTextWithActivity]: null != h || null != j
+    children: [h, v, C, S ? (0, r.jsx)(E, {
+      muteConfig: I,
+      className: o()(j.muteText, {
+        [j.muteTextWithActivity]: null != h || null != v
       })
     }) : null]
   })
 }
 
-function _(e) {
+function I(e) {
   let {
     channel: t
   } = e, n = (0, f.ZP)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: a()(C.row, C.rowGuildName),
+      className: o()(j.row, j.rowGuildName),
       children: (0, r.jsx)("span", {
-        className: a()(C.guildNameText, C.guildNameTextLimitedSize),
+        className: o()(j.guildNameText, j.guildNameTextLimitedSize),
         children: n
       })
-    }), (0, r.jsx)(I, {
+    }), (0, r.jsx)(S, {
       channel: t
     })]
   })
@@ -148,18 +148,18 @@ function P(e) {
     hideOnClick: true,
     spacing: 12,
     position: "right",
-    text: (0, r.jsx)(_, {
+    text: (0, r.jsx)(I, {
       channel: t
     }),
     "aria-label": null != i && i,
-    tooltipClassName: x.listItemTooltip,
-    tooltipContentClassName: x.listItemTooltipContent,
+    tooltipClassName: C.listItemTooltip,
+    tooltipContentClassName: C.listItemTooltipContent,
     children: e => {
       var t, i, {
           onFocus: l,
-          onBlur: a
+          onBlur: o
         } = e,
-        o = function(e, t) {
+        a = function(e, t) {
           if (null == e) return {};
           var n, r, i = function(e, t) {
             if (null == e) return {};
@@ -193,8 +193,8 @@ function P(e) {
         return e
       }({
         onFocus: l,
-        onBlur: a
-      }, o), i = i = {
+        onBlur: o
+      }, a), i = i = {
         children: n
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);

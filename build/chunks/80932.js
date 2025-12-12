@@ -30,7 +30,7 @@ var Chunk392711 = require("./392711.js"),
 
 function y(e) {
   p.hW.updateAsync("textAndImages", t => {
-    t.diversitySurrogate = o.Gm.create(), t.diversitySurrogate.value = e
+    t.diversitySurrogate = a.Gm.create(), t.diversitySurrogate.value = e
   }, E.fy.FREQUENT_USER_ACTION)
 }
 
@@ -38,7 +38,7 @@ function O(e) {
   s.Z.dispatch({
     type: "EMOJI_FETCH",
     guildId: e
-  }), a.tn.get({
+  }), o.tn.get({
     url: g.ANM.GUILD_EMOJIS(e),
     oldFormErrors: true,
     rejectWithError: true
@@ -58,12 +58,12 @@ function v(e) {
     image: n,
     name: r,
     roles: i,
-    analyticsLocation: o
+    analyticsLocation: a
   } = e;
   return s.Z.dispatch({
     type: "EMOJI_UPLOAD_START",
     guildId: t
-  }), a.tn.post({
+  }), o.tn.post({
     url: g.ANM.GUILD_EMOJIS(t),
     body: {
       image: n,
@@ -71,7 +71,7 @@ function v(e) {
       roles: i
     },
     context: {
-      client_event_source: null == o ? true : o.page
+      client_event_source: null == a ? true : a.page
     },
     oldFormErrors: true,
     rejectWithError: false
@@ -89,7 +89,7 @@ function S(e, t, n) {
     type: "EMOJI_DELETE",
     guildId: e,
     emojiId: t
-  }), a.tn.del({
+  }), o.tn.del({
     url: g.ANM.GUILD_EMOJI(e, t),
     body: null != n ? {
       replaced_by: n
@@ -106,7 +106,7 @@ async function I(e) {
     roles: i
   } = e;
   try {
-    return await a.tn.patch({
+    return await o.tn.patch({
       url: g.ANM.GUILD_EMOJI(t, n),
       body: {
         name: r,

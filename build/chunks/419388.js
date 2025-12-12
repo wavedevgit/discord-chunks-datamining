@@ -1,7 +1,7 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 419388, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => j
+  ZP: () => E
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
@@ -30,7 +30,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function _(e) {
   var t, n;
   if (null == e.jumpTargetId || !e.ready) return null;
   let {
@@ -52,12 +52,12 @@ function O(e) {
     o = null != (n = l[a + (Math.abs(r) > 0 ? r : 1)]) ? n : l[a - 1];
   return null != o ? o : null
 }
-let x = {
+let O = {
   scrollTop: 0,
   scrollHeight: 0,
   offsetHeight: 0
 };
-class E {
+class x {
   isReady() {
     return this.props.messages.ready
   }
@@ -133,7 +133,7 @@ class E {
     }
     if (null != e.messages.jumpTargetId) {
       if (this.isLoading()) return;
-      let n = O(e.messages);
+      let n = _(e.messages);
       if (null == n || this.isJumping() || e.messages.jumpSequenceId === t.jumpSequenceId) {
         if (this.isJumping()) return void(null != n ? this.scrollToMessage(n, true) : this.jumping = false)
       } else {
@@ -292,7 +292,7 @@ class E {
   }
   getScrollerState() {
     var e, t;
-    return null != (t = null == (e = this.ref.current) ? true : module.getScrollerState()) ? exports : x
+    return null != (t = null == (e = this.ref.current) ? true : module.getScrollerState()) ? exports : O
   }
   isHeightChange(e, t) {
     return e !== this.offsetHeightCache || t !== this.scrollHeightCache
@@ -350,7 +350,7 @@ class E {
       hasUnreads: t
     } = this.props;
     if (null != module.jumpTargetId) {
-      let n = O(module);
+      let n = _(module);
       if (null == require) return;
       let i = this.getElementFromMessageId(require);
       (0, Chunk374470.kK)(Chunk473749) ? this.scrollTo(this.getOffsetOrientationFromNode(Chunk473749, "middle", exports ? this.newMessageBarBuffer() : Chunk959517.kQ), true): this.scrollToNewMessages(true, "middle")
@@ -382,7 +382,7 @@ class E {
       initialScrollTop: e
     } = this;
     this.initialScrollTop = true;
-    let t = O(this.props.messages);
+    let t = _(this.props.messages);
     null != exports ? this.scrollToMessage(exports, false) : this.props.hasUnreads && this.props.channel.type !== Chunk981631.d4z.GUILD_VOICE && this.props.channel.type !== Chunk981631.d4z.GUILD_STAGE_VOICE ? this.scrollToNewMessages() : null != module ? this.scrollTo(module + this.props.placeholderHeight, false, this.handleScroll) : this.setScrollToBottom()
   }
   scrollTo(e) {
@@ -509,7 +509,7 @@ class E {
   }
   constructor(e) {
     var t, n, r = this;
-    if (v(this, "props", true), v(this, "ref", i.createRef()), v(this, "automaticAnchor", null), v(this, "messageFetchAnchor", null), v(this, "focusAnchor", null), v(this, "loading", true), v(this, "jumping", false), v(this, "pinned", true), v(this, "dragging", false), v(this, "isAtBottom", false), v(this, "prevScrollTop", null), v(this, "anchorTimeout", null), v(this, "initialScrollTop", null), v(this, "acking", false), v(this, "scrollCounter", 0), v(this, "offsetHeightCache", 0), v(this, "scrollHeightCache", 0), v(this, "scrollTopCache", false), v(this, "_bottomAnchor", null), v(this, "_automaticAnchorCallbacks", []), v(this, "_scrollCompleteCallbacks", []), v(this, "updateVisibleMessagesDebounced", l().debounce(f.JR, 300)), v(this, "handleScroll", e => {
+    if (v(this, "props", true), v(this, "ref", i.createRef()), v(this, "automaticAnchor", null), v(this, "messageFetchAnchor", null), v(this, "focusAnchor", null), v(this, "loading", true), v(this, "jumping", false), v(this, "pinned", true), v(this, "dragging", false), v(this, "isAtBottom", false), v(this, "prevScrollTop", null), v(this, "anchorTimeout", null), v(this, "initialScrollTop", null), v(this, "acking", false), v(this, "scrollCounter", 0), v(this, "offsetHeightCache", 0), v(this, "scrollHeightCache", 0), v(this, "scrollTopCache", false), v(this, "_bottomAnchor", null), v(this, "_automaticAnchorCallbacks", []), v(this, "_scrollCompleteCallbacks", []), v(this, "updateVisibleMessagesDebounced", l().debounce(h.JR, 300)), v(this, "handleScroll", e => {
         var t;
         if (!this.isInitialized()) return;
         let n = this.getScrollerState(),
@@ -560,13 +560,13 @@ class E {
         })
       }), v(this, "updateStoreDimensionsDebounced", l().debounce(this.updateStoreDimensions, 200)), this.props = e, this.loading = e.messages.loadingMore, null != e.messages.jumpTargetId) this.pinned = false;
     else {
-      let i = h.Z.isAtBottom(e.channel.id);
-      this.pinned = null == i || i, this.initialScrollTop = i ? null : null != (n = null == (t = h.Z.getChannelDimensions(e.channel.id)) ? true : t.scrollTop) ? n : null
+      let i = f.Z.isAtBottom(e.channel.id);
+      this.pinned = null == i || i, this.initialScrollTop = i ? null : null != (n = null == (t = f.Z.getChannelDimensions(e.channel.id)) ? true : t.scrollTop) ? n : null
     }
   }
 }
 
-function j(e) {
+function E(e) {
   let {
     messages: t,
     channel: n,
@@ -579,8 +579,8 @@ function j(e) {
     handleScrollFromBottom: u,
     additionalMessagePadding: p = 0
   } = e, {
-    windowId: f
-  } = i.useContext(d.ZP), [h] = i.useState(() => new E({
+    windowId: h
+  } = i.useContext(d.ZP), [f] = i.useState(() => new x({
     messages: t,
     channel: n,
     compact: r,
@@ -588,12 +588,12 @@ function j(e) {
     focusId: a,
     placeholderHeight: o,
     canLoadMore: s,
-    windowId: f,
+    windowId: h,
     handleScrollToBottom: c,
     handleScrollFromBottom: u,
     additionalMessagePadding: p
   }));
-  return h.getSnapshotBeforeUpdate(a), i.useLayoutEffect(() => h.mergePropsAndUpdate({
+  return f.getSnapshotBeforeUpdate(a), i.useLayoutEffect(() => f.mergePropsAndUpdate({
     messages: t,
     channel: n,
     compact: r,
@@ -601,9 +601,9 @@ function j(e) {
     focusId: a,
     placeholderHeight: o,
     canLoadMore: s,
-    windowId: f,
+    windowId: h,
     handleScrollToBottom: c,
     handleScrollFromBottom: u,
     additionalMessagePadding: p
-  })), i.useLayoutEffect(() => () => h.cleanup(), [h]), h
+  })), i.useLayoutEffect(() => () => f.cleanup(), [f]), f
 }

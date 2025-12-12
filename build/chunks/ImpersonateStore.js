@@ -89,14 +89,14 @@ function v(e) {
     overrides: r
   } = e;
   if (null == n || null == E[n]) returnfalse;
-  let a = E[n];
-  if (null == a || a.type !== d.z.NEW_MEMBER) returnfalse;
-  let o = null != (t = a.optInChannels) ? t : new Set;
+  let o = E[n];
+  if (null == o || o.type !== d.z.NEW_MEMBER) returnfalse;
+  let a = null != (t = o.optInChannels) ? t : new Set;
   return u.default.keys(r).forEach(e => {
     var t;
     let n = r[e];
-    i.yE(null != (t = n.flags) ? t : 0, p.ic.OPT_IN_ENABLED) ? o.add(e) : o.delete(e)
-  }), a.optInChannels = o, true
+    i.yE(null != (t = n.flags) ? t : 0, p.ic.OPT_IN_ENABLED) ? a.add(e) : a.delete(e)
+  }), o.optInChannels = a, true
 }
 
 function S(e) {
@@ -105,13 +105,13 @@ function S(e) {
     guildId: n,
     optionId: r,
     selected: i,
-    removedOptionIds: a
+    removedOptionIds: o
   } = e;
   if (null == n || null == E[n]) returnfalse;
-  let o = E[n];
-  if (null == o || o.type !== d.z.NEW_MEMBER) returnfalse;
-  let s = null != (t = o.onboardingResponses) ? t : new Set;
-  return null != a && a.length > 0 && a.forEach(e => s.delete(e)), i ? s.add(r) : s.delete(r), o.onboardingResponses = s, true
+  let a = E[n];
+  if (null == a || a.type !== d.z.NEW_MEMBER) returnfalse;
+  let s = null != (t = a.onboardingResponses) ? t : new Set;
+  return null != o && o.length > 0 && o.forEach(e => s.delete(e)), i ? s.add(r) : s.delete(r), a.onboardingResponses = s, true
 }
 
 function I(e) {

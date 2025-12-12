@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk624138 = require("./624138.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk570810 = require("./570810.js");
+  Chunk616926 = require("./616926.js");
 let u = {
   title: "Balance Widget",
   stories: [{
@@ -20,12 +20,12 @@ let u = {
       let {
         ctaText: t,
         linkText: n,
-        linkPreText: a
+        linkPreText: o
       } = e;
       return (0, r.jsx)(i.L, {
-        ctaText: (0, o.Ew)(t) ? l.intl.string(l.t.H57f41) : t,
-        linkText: (0, o.Ew)(n) ? l.intl.string(l.t["7f4H7D"]) : n,
-        linkPreText: (0, o.Ew)(a) ? true : a,
+        ctaText: (0, a.Ew)(t) ? l.intl.string(l.t.H57f41) : t,
+        linkText: (0, a.Ew)(n) ? l.intl.string(l.t["7f4H7D"]) : n,
+        linkPreText: (0, a.Ew)(o) ? true : o,
         ctaOnClick: s.dG4
       })
     },
@@ -58,13 +58,13 @@ let u = {
       } = e;
       return (0, r.jsx)("div", {
         className: c.balanceWidgetMenuContainer,
-        children: (0, r.jsx)(a.V9, {
+        children: (0, r.jsx)(o.V9, {
           className: c.balanceWidgetMenu,
-          ctaText: (0, o.Ew)(t) ? l.intl.string(l.t["J+vlIR"]) : t,
+          ctaText: (0, a.Ew)(t) ? l.intl.string(l.t["J+vlIR"]) : t,
           ctaOnClick: s.dG4,
           showNotificationBadge: i,
           cardAlignment: u,
-          linkText: (0, o.Ew)(n) ? l.intl.string(l.t.XRdyjz) : n
+          linkText: (0, a.Ew)(n) ? l.intl.string(l.t.XRdyjz) : n
         })
       })
     },

@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => b
 });
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js"),
@@ -44,7 +44,7 @@ function g(e) {
 class E extends(r = Chunk442837.ZP.Store) {
   initialize() {
     let e = Chunk433517.K.get(d);
-    null != module && a().forEach(module, (e, t) => {
+    null != module && o().forEach(module, (e, t) => {
       e.forEach(e => {
         "audioinput" === e.type && e.hardwareMute && (e.hardwareMute = false)
       }), h(t, e)
@@ -61,7 +61,7 @@ class E extends(r = Chunk442837.ZP.Store) {
     return null != n ? "".concat(n.vendor.name, " ").concat(n.model.name) : t
   }
   getCertifiedDeviceByType(e) {
-    return a().find(p, t => t.type === e)
+    return o().find(p, t => t.type === e)
   }
   isHardwareMute(e) {
     return m(e, false, e => e.type === c.h7.AUDIO_INPUT && e.hardwareMute)

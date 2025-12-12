@@ -9,20 +9,20 @@ var Chunk473749 = require("./473749.js");
 function i() {
   let e = (0, Chunk473749.useRef)(new Map),
     t = (0, Chunk473749.useCallback)((t, n, r, i) => {
-      let a = (null == i ? true : i.once) ? (...t) => {
+      let o = (null == i ? true : i.once) ? (...t) => {
         e.current.delete(r), r(...t)
       } : r;
       e.current.set(r, {
         type: n,
         eventTarget: t,
-        fn: a,
+        fn: o,
         options: i
-      }), t.addEventListener(n, a, i)
+      }), t.addEventListener(n, o, i)
     }, []),
     n = (0, Chunk473749.useCallback)((t, n, r, i) => {
-      var a;
-      let o = (null == (a = e.current.get(r)) ? true : a.fn) || r;
-      t.removeEventListener(n, o, i), e.current.delete(r)
+      var o;
+      let a = (null == (o = e.current.get(r)) ? true : o.fn) || r;
+      t.removeEventListener(n, a, i), e.current.delete(r)
     }, []),
     i = (0, Chunk473749.useCallback)(() => {
       module.current.forEach((e, t) => {

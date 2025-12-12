@@ -17,7 +17,7 @@ function l(e) {
     onClose: n
   } = e, {
     refreshCategories: l
-  } = (0, a.Z)(), c = async () => {
+  } = (0, o.Z)(), c = async () => {
     await n()
   };
   return (0, r.jsx)(i.Modal, {
@@ -26,9 +26,9 @@ function l(e) {
     size: "sm",
     title: s.intl.string(s.t["p8+qtU"]),
     actions: [],
-    children: (0, r.jsx)(o.Z, {
+    children: (0, r.jsx)(a.Z, {
       onRetry: l,
-      errorOrigin: o.i.GIFT_MODAL
+      errorOrigin: a.i.GIFT_MODAL
     })
   })
 }

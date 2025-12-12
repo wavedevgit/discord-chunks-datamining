@@ -131,7 +131,7 @@ function A() {
 function N(e) {
   let t = e.id,
     n = (0, f.v)(e),
-    r = o.Z.getChannelId();
+    r = a.Z.getChannelId();
   n && t === r && T.recordChannel(t), n || T.deleteChannel(t)
 }
 

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk315263 = require("./315263.js"),
   Chunk100527 = require("./100527.js"),
@@ -38,7 +38,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk681642 = require("./681642.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk112287 = require("./112287.js");
+  Chunk517793 = require("./517793.js");
 
 function U(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -96,7 +96,7 @@ function V(e) {
   var t;
   let {
     badges: n,
-    className: a,
+    className: o,
     badgeClassName: h,
     displayProfile: v,
     onClose: U,
@@ -109,14 +109,14 @@ function V(e) {
     trackUserProfileAction: K
   } = (0, A.KZ)(), z = S.default.getCurrentUser(), q = (0, T.yd)(null == z ? true : z.premiumType, L.PremiumTypes.TIER_2), Q = (0, R.Of)(null != (t = null == z ? true : z.id) ? t : null), X = (0, P.Z)(Q).some(e => e.id === O.l.ORB_PROFILE_BADGE), J = (0, _.c)(z, "UserProfileBadgeList"), $ = (0, p.T)("UserProfileBadgeList");
   return (0, r.jsx)("div", {
-    className: o()(k.container, a),
+    className: a()(k.container, o),
     "aria-label": M.intl.string(M.t.VWV0y5),
     role: "group",
     children: n.map((e, t) => {
       var n;
       let i = e.id === O.l.ORB_PROFILE_BADGE,
-        a = (0, C.fv)(e.id),
-        u = null != a || e.id === j.a,
+        o = (0, C.fv)(e.id),
+        u = null != o || e.id === j.a,
         p = (null == v ? true : v.userId) === (null == z ? true : z.id),
         S = t => {
           if (K({
@@ -168,20 +168,20 @@ function V(e) {
             analyticsLocations: Y
           }, W))
         },
-        A = true !== a && e.id !== j.a,
+        A = true !== o && e.id !== j.a,
         R = p && J && A,
         Q = (0, r.jsx)("img", {
           alt: " ",
           "aria-hidden": true,
           src: null != (n = e.iconSrc) ? n : (0, w.Ej)(e.icon),
-          className: o()(k.badge, h)
+          className: a()(k.badge, h)
         }),
         ee = {
           onClick: S,
           onMouseEnter: T,
           href: e.link,
           style: {
-            filter: V && null != a ? "drop-shadow(0 0 5px ".concat(a.glowColor, ")") : true
+            filter: V && null != o ? "drop-shadow(0 0 5px ".concat(o.glowColor, ")") : true
           }
         };
       if (R) {
@@ -211,15 +211,15 @@ function V(e) {
               analyticsLocations: Y
             })
           },
-          a = $ && !q,
-          o = a ? [{
+          o = $ && !q,
+          a = o ? [{
             text: M.intl.string(M.t.pj0XBN),
             variant: "expressive",
             icon: s.SrA,
             iconPosition: "start",
             onClick: i
           }] : true,
-          l = a ? 262 : 220;
+          l = o ? 262 : 220;
         return (0, r.jsx)("div", {
           "aria-label": e.description,
           children: (0, r.jsx)(m.Z, {
@@ -228,7 +228,7 @@ function V(e) {
             mode: "tooltip",
             tooltipDelay: w.vB,
             body: e.description,
-            actions: o,
+            actions: a,
             onShow: () => {
               I.default.track(D.rMx.TOOLTIP_VIEWED, {
                 type: "tiered_tenure_badge_profile_" + (p ? "self" : "other")
@@ -244,7 +244,7 @@ function V(e) {
         })),
         en = B({
           badge: e,
-          tieredTenureBadge: u && e.id !== j.a ? a : true,
+          tieredTenureBadge: u && e.id !== j.a ? o : true,
           currentUserOwnsOrbBadge: X
         });
       return (0, r.jsx)(s.jSM, {

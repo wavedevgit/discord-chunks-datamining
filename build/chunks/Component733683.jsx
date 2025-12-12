@@ -1,14 +1,14 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 733683, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => I,
-  x: () => v
+  Z: () => E,
+  x: () => _
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk772848 = require("./772848.js"),
   Chunk374470 = require("./374470.js"),
@@ -17,9 +17,9 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk624138 = require("./624138.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk44542 = require("./44542.js"),
+  Chunk5238 = require("./5238.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk788555 = require("./788555.js");
+  Chunk31441 = require("./31441.js");
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -29,23 +29,23 @@ function j(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let v = false,
-  O = (0, Chunk624138.Mg)(Chunk477690.Z.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH),
-  C = (0, Chunk624138.Mg)(Chunk477690.Z.PREMIUM_GUILD_PROGRESS_BAR_TIER_MARKER_SIZE),
-  y = {
+let _ = false,
+  v = (0, Chunk624138.Mg)(Chunk477690.Z.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH),
+  O = (0, Chunk624138.Mg)(Chunk477690.Z.PREMIUM_GUILD_PROGRESS_BAR_TIER_MARKER_SIZE),
+  C = {
     tension: 140,
     friction: 30
   },
-  N = {
+  y = {
     tension: 800,
     friction: 20
   };
-class E extends(r = Chunk473749.Component) {
+class N extends(r = Chunk473749.Component) {
   getTotalHeight() {
     let {
       tiers: e
     } = this.props;
-    return module[module.length - 1].y + C / 2
+    return module[module.length - 1].y + O / 2
   }
   getProgressHeight(e) {
     let t, {
@@ -62,9 +62,9 @@ class E extends(r = Chunk473749.Component) {
     }
     if (null == t) return i.y;
     let l = t.y - i.y,
-      a = t.numRequired - i.numRequired,
-      s = r - i.numRequired;
-    return i.y + s / a * l
+      s = t.numRequired - i.numRequired,
+      a = r - i.numRequired;
+    return i.y + a / s * l
   }
   getCurrentTierIndex() {
     let {
@@ -92,22 +92,22 @@ class E extends(r = Chunk473749.Component) {
     } = this.state;
     if (!require || null == this.foregroundTooltipElementRef.current) return null;
     let l = exports[this.getCurrentTierIndex() + 1],
-      a = null != Chunk473749 ? Chunk473749.numRequired : null,
-      s = null != Chunk120356 ? Chunk120356 - module : null;
+      s = null != Chunk473749 ? Chunk473749.numRequired : null,
+      a = null != Chunk120356 ? Chunk120356 - module : null;
     return (0, Chunk54381.jsxs)(Chunk481060.gqK, {
       "data-migration-pending": true,
       targetElementRef: this.foregroundTooltipElementRef,
       position: "right",
       color: Chunk481060.aML.Colors.PRIMARY,
-      tooltipClassName: Chunk788555.foregroundTooltip,
+      tooltipClassName: Chunk31441.foregroundTooltip,
       children: [(0, Chunk54381.jsx)("div", {
         children: Chunk388032.intl.format(Chunk388032.t.gDsyB9, {
           numSubscriptions: module
         })
-      }), null != s && s > 0 && null != Chunk473749 ? (0, Chunk54381.jsx)("div", {
-        className: Chunk788555.tooltipMuted,
+      }), null != a && a > 0 && null != Chunk473749 ? (0, Chunk54381.jsx)("div", {
+        className: Chunk31441.tooltipMuted,
         children: Chunk388032.intl.format(Chunk388032.t["2U9MDp"], {
-          number: s,
+          number: a,
           tier: Chunk473749.name
         })
       }) : null]
@@ -117,16 +117,16 @@ class E extends(r = Chunk473749.Component) {
     let {
       progress: t
     } = this.props;
-    if (null == e.name || e.key === b.Eu4.NONE) return null;
+    if (null == e.name || e.key === f.Eu4.NONE) return null;
     let n = Math.min(t, e.numRequired);
     return this.getTierDisabled(e) ? {
       title: null,
-      body: h.intl.formatToPlainString(p.default["9CtPjt"], {
+      body: x.intl.formatToPlainString(h.default["9CtPjt"], {
         perk: e.name
       })
     } : {
       title: e.name,
-      body: h.intl.format(h.t.AkLa6n, {
+      body: x.intl.format(x.t.AkLa6n, {
         subscribers: n,
         numRequired: e.numRequired
       })
@@ -135,44 +135,44 @@ class E extends(r = Chunk473749.Component) {
   renderTierMarker(e, t, n) {
     let r, {
         progress: l,
-        tiers: a
+        tiers: s
       } = this.props,
-      s = a[n],
+      a = s[n],
       c = l >= e.numRequired,
-      d = null != s && e.key === s.key,
-      g = e.key === a[0].key,
-      m = this.getTierDisabled(e);
-    r = g ? x.tierFirst : m ? x.tierInProgress : d ? x.tierCurrent : c ? x.tierAccomplished : x.tierInProgress;
-    let b = e.y - (g ? 0 : C / 2),
-      p = this.state.tierMarkerActive >= t,
-      h = !g && d && p,
+      u = null != a && e.key === a.key,
+      g = e.key === s[0].key,
+      p = this.getTierDisabled(e);
+    r = g ? b.tierFirst : p ? b.tierInProgress : u ? b.tierCurrent : c ? b.tierAccomplished : b.tierInProgress;
+    let f = e.y - (g ? 0 : O / 2),
+      h = this.state.tierMarkerActive >= t,
+      x = !g && u && h,
       j = this.getTierMarkerTooltipText(e);
-    return (0, i.jsx)(f.AMe, {
+    return (0, i.jsx)(m.AMe, {
       from: {
         scale: 1
       },
       to: {
-        scale: h ? 1.625 : 1
+        scale: x ? 1.625 : 1
       },
-      config: N,
+      config: y,
       children: t => {
-        var n, l, a;
-        return (0, i.jsx)(u.i_, {
+        var n, l, s;
+        return (0, i.jsx)(d.i_, {
           body: null != (n = null == j ? true : j.body) ? n : "",
           title: null != (l = null == j ? true : j.title) ? l : true,
           shouldShow: null != j,
           position: "right",
-          "aria-label": null != (a = e.name) ? a : "",
+          "aria-label": null != (s = e.name) ? s : "",
           children: (0, i.jsx)(o.animated.div, {
             className: r,
             style: {
-              top: b,
+              top: f,
               transform: t.scale.interpolate(e => "scale(".concat(e, ")"))
             },
-            children: h && (0, i.jsx)(f.dz2, {
+            children: x && (0, i.jsx)(m.dz2, {
               size: "md",
               color: "currentColor",
-              className: x.currentTierIcon
+              className: b.currentTierIcon
             })
           })
         })
@@ -188,13 +188,13 @@ class E extends(r = Chunk473749.Component) {
       children: [(0, i.jsx)("rect", {
         x: "0",
         y: "0",
-        width: O,
+        width: v,
         height: e,
         fill: "white"
       }), t.map(e => (0, i.jsx)("circle", {
-        cx: O / 2,
+        cx: v / 2,
         cy: e.y,
-        r: O / 2,
+        r: v / 2,
         fill: "black"
       }, e.key))]
     })
@@ -208,22 +208,22 @@ class E extends(r = Chunk473749.Component) {
     return (0, i.jsxs)("g", {
       mask: "url(#".concat(this.tierMarkerMaskId, ")"),
       children: [(0, i.jsx)("rect", {
-        className: x.background,
+        className: b.background,
         height: e,
         fill: "currentColor"
-      }), (0, i.jsx)(f.AMe, {
+      }), (0, i.jsx)(m.AMe, {
         from: {
           height: 0
         },
         to: {
           height: n
         },
-        config: y,
+        config: C,
         delay: r ? 0 : this.props.initialAnimationDelay,
         onChange: this.handleForegroundFrame,
         onRest: r ? true : this.handleFinishedInitialAnimation,
         children: e => (0, i.jsx)(o.animated.rect, {
-          className: x.foreground,
+          className: b.foreground,
           height: e.height.interpolate(e => Math.max(0, e)),
           onMouseEnter: this.handleForegroundMouseEnter,
           onMouseLeave: this.handleForegroundMouseLeave,
@@ -239,13 +239,13 @@ class E extends(r = Chunk473749.Component) {
       tiers: t
     } = this.props, n = this.getCurrentTierIndex(), r = this.getTotalHeight();
     return (0, Chunk54381.jsxs)("div", {
-      className: s()(module, Chunk788555.progressBar),
+      className: a()(module, Chunk31441.progressBar),
       style: {
         height: r
       },
       children: [(0, Chunk54381.jsxs)("svg", {
-        viewBox: "0 0 ".concat(O, " ").concat(r),
-        width: O,
+        viewBox: "0 0 ".concat(v, " ").concat(r),
+        width: v,
         height: r,
         children: [this.renderProgressMask(r), this.renderProgressBar(r, require)]
       }), (0, Chunk54381.jsx)("div", {
@@ -253,7 +253,7 @@ class E extends(r = Chunk473749.Component) {
         style: {
           top: this.state.foregroundTooltipY
         },
-        className: Chunk788555.foregroundTooltipPosition
+        className: Chunk31441.foregroundTooltipPosition
       }), exports.map((e, t) => this.renderTierMarker(e, t, n)), this.renderForegroundTooltip()]
     })
   }
@@ -268,7 +268,7 @@ class E extends(r = Chunk473749.Component) {
         showForegroundTooltip: true
       }), this.handleForegroundMouseMove(e)
     }), j(this, "handleForegroundMouseMove", e => {
-      if (!(0, d.kK)(e.target)) return;
+      if (!(0, u.kK)(e.target)) return;
       let t = e.target.getBoundingClientRect(),
         n = e.clientY - t.top;
       n !== this.state.foregroundTooltipY && this.setState({
@@ -289,12 +289,12 @@ class E extends(r = Chunk473749.Component) {
         tierMarkerActive: l
       } = this.state;
       for (let e = n.length - 1; e > 0; e--) {
-        let a = n[e],
-          s = l === e;
-        if (t + 20 >= a.y && r >= a.numRequired) {
-          s || (this.setState({
+        let s = n[e],
+          a = l === e;
+        if (t + 20 >= s.y && r >= s.numRequired) {
+          a || (this.setState({
             tierMarkerActive: e
-          }), null != i && i(a));
+          }), null != i && i(s));
           return
         }
       }
@@ -305,7 +305,7 @@ class E extends(r = Chunk473749.Component) {
     })
   }
 }
-j(E, "defaultProps", {
+j(N, "defaultProps", {
   initialAnimationDelay: 0
 });
-let I = E
+let E = N

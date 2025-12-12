@@ -1,14 +1,14 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 946443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   QP: () => N,
-  ZP: () => I,
+  ZP: () => S,
   h6: () => P
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk525654 = require("./525654.js"),
   s = require.n(Chunk525654),
   Chunk91192 = require("./91192.jsx"),
@@ -27,16 +27,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk809780 = require("./809780.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk97916 = require("./97916.js");
+  Chunk915087 = require("./915087.js");
 
-function I(e) {
-  var t, n, l, o, O, I, P;
+function S(e) {
+  var t, n, l, a, y, S, P;
   let {
     onJump: N,
     showTutorial: Z,
     setSeenTutorial: w,
     closePopout: T
-  } = e, A = i.useRef(null), [R, D] = (0, C.ZP)(A), {
+  } = e, A = i.useRef(null), [R, D] = (0, j.ZP)(A), {
     loadState: M,
     channels: L
   } = R, {
@@ -52,47 +52,47 @@ function I(e) {
       current: i
     } = t;
     if (null == i || null == r) return;
-    let a = null == (e = i.getScrollerNode()) ? true : e.children;
-    if (null == a) return;
-    let o = a[r];
+    let o = null == (e = i.getScrollerNode()) ? true : e.children;
     if (null == o) return;
+    let a = o[r];
+    if (null == a) return;
     let {
       scrollTop: s,
       offsetHeight: c
     } = i.getScrollerState();
-    (o.offsetTop < s || o.offsetTop > s + c) && i.scrollTo({
-      to: o.offsetTop
+    (a.offsetTop < s || a.offsetTop > s + c) && i.scrollTo({
+      to: a.offsetTop
     })
-  }), o = R, O = D, i.useEffect(() => {
+  }), a = R, y = D, i.useEffect(() => {
     let e = () => {
-      let e = o.channels.find(e => !e.collapsed);
-      null != e && O.markChannelRead(e)
+      let e = a.channels.find(e => !e.collapsed);
+      null != e && y.markChannelRead(e)
     };
-    return m.S.subscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
-      m.S.unsubscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
+    return b.S.subscribe(C.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
+      b.S.unsubscribe(C.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
-  }, [O, o.channels]), I = D, i.useEffect(() => {
+  }, [y, a.channels]), S = D, i.useEffect(() => {
     let e = e => {
-      ((0, y.isMac)() || (0, y.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && I.undoMarkChannelRead()
+      ((0, _.isMac)() || (0, _.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && S.undoMarkChannelRead()
     };
     return document.addEventListener("keydown", e), () => {
       document.removeEventListener("keydown", e)
     }
-  }, [I]), i.useEffect(() => {
-    b.default.track(x.rMx.OPEN_POPOUT, {
+  }, [S]), i.useEffect(() => {
+    m.default.track(C.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
   }, []), i.useEffect(() => (f.Z.subscribe("CONNECTION_OPEN", T), () => {
     f.Z.unsubscribe("CONNECTION_OPEN", T)
-  }), [T]), (0, h.ZP)(() => (m.S.subscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
-    m.S.unsubscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
+  }), [T]), (0, h.ZP)(() => (b.S.subscribe(C.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
+    b.S.unsubscribe(C.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
   }));
   let U = (0, g.Z)("unreads", A);
   if (0 === L.length) {
-    return (0, r.jsx)(v.Z, {
+    return (0, r.jsx)(O.Z, {
       Icon: d.xx7,
-      header: E.intl.string(E.t["6XMM+D"]),
-      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? E.intl.string(E.t.w9uDOW) : E.intl.string(E.t.BiUJC6)
+      header: x.intl.string(x.t["6XMM+D"]),
+      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? x.intl.string(x.t.w9uDOW) : x.intl.string(x.t.BiUJC6)
     })
   }
   return (0, r.jsx)(c.bG, {
@@ -140,12 +140,12 @@ function I(e) {
             A.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           }
         }, l), n = n = {
-          onScroll: M === C.jd.Done ? true : k,
-          className: a()(S.scroller, "group-spacing-".concat(G)),
-          children: [Z ? (0, r.jsx)(_, {
+          onScroll: M === j.jd.Done ? true : k,
+          className: o()(E.scroller, "group-spacing-".concat(G)),
+          children: [Z ? (0, r.jsx)(I, {
             setSeenTutorial: w
-          }) : null, (0, j.Z)(L, D, N), M === C.jd.Done ? null : (0, r.jsx)(d.$jN, {
-            className: S.spinner
+          }) : null, (0, v.Z)(L, D, N), M === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
+            className: E.spinner
           })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
@@ -162,34 +162,34 @@ function I(e) {
   })
 }
 
-function _(e) {
+function I(e) {
   let {
     setSeenTutorial: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: S.tutorial,
+    className: E.tutorial,
     children: [(0, r.jsx)("div", {
-      className: S.tutorialIcon,
+      className: E.tutorialIcon,
       children: (0, r.jsx)(d.xx7, {
         size: "md",
         color: "currentColor"
       })
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(d.Heading, {
-        className: S.__invalid_tutorialHeader,
+        className: E.__invalid_tutorialHeader,
         variant: "heading-md/semibold",
-        children: E.intl.string(E.t.vZPktJ)
+        children: x.intl.string(x.t.vZPktJ)
       }), (0, r.jsx)(d.Text, {
         color: "text-default",
         variant: "text-sm/normal",
-        children: E.intl.string(E.t.vWkIII)
+        children: x.intl.string(x.t.vWkIII)
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: S.tutorialButton,
+        className: E.tutorialButton,
         children: (0, r.jsx)(d.Button, {
           variant: "primary",
           size: "sm",
-          text: E.intl.string(E.t["+IrDzN"]),
+          text: x.intl.string(x.t["+IrDzN"]),
           onClick: t
         })
       })]

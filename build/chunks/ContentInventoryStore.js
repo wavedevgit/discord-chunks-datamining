@@ -94,8 +94,8 @@ class y extends(i = Chunk442837.ZP.Store) {
       feedId: r
     } = e, i = this.getFeed(r);
     if (null == i || null == t) return;
-    let a = i.entries.reduce((e, t) => t.content.author_id === n ? [...e, t.content] : [...e], []);
-    return (0, s.vu)(a, t)
+    let o = i.entries.reduce((e, t) => t.content.author_id === n ? [...e, t.content] : [...e], []);
+    return (0, s.vu)(o, t)
   }
 }
 l(y, "displayName", "ContentInventoryStore");

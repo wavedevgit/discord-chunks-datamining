@@ -9,8 +9,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk454585 = require("./454585.js"),
   Chunk273744 = require("./273744.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk647889 = require("./647889.js"),
-  Chunk478411 = require("./478411.js");
+  Chunk124252 = require("./124252.js"),
+  Chunk197571 = require("./197571.js");
 let u = e => {
     let {
       data: {
@@ -18,11 +18,11 @@ let u = e => {
         subtitle: n,
         placeholder: u,
         rows: m,
-        character_limit: b,
-        pattern: p
+        character_limit: p,
+        pattern: g
       },
-      onChange: g,
-      initialText: f,
+      onChange: _,
+      initialText: b,
       isRequired: x
     } = e, h = l.useMemo(() => {
       var e, t;
@@ -55,49 +55,49 @@ let u = e => {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e))
-    }, []), [v, _] = l.useState(""), [j, y] = l.useState(null);
+    }, []), [f, v] = l.useState(""), [j, y] = l.useState(null);
     l.useEffect(() => {
       var e;
-      _(null != (e = null == f ? true : f.value) ? e : "")
-    }, [f]);
+      v(null != (e = null == b ? true : b.value) ? e : "")
+    }, [b]);
     let O = l.useCallback(e => {
-      let t = null != p ? new RegExp(p) : null;
-      null == t || t.test(e) ? null != e && (y(null), _(e), g({
+      let t = null != g ? new RegExp(g) : null;
+      null == t || t.test(e) ? null != e && (y(null), v(e), _({
         value: e,
         isValid: true
-      })) : (y(o.intl.string(o.t["24xrGb"])), g({
+      })) : (y(o.intl.string(o.t["24xrGb"])), _({
         value: e,
         isValid: false
       }))
-    }, [g, p]);
+    }, [_, g]);
     return (0, r.jsxs)("div", {
-      className: c.marginBottom8,
+      className: d.marginBottom8,
       children: [null != t && (0, r.jsx)("div", {
-        className: c.marginBottom8,
+        className: d.marginBottom8,
         children: (0, r.jsxs)(i.Text, {
           variant: "text-sm/bold",
           children: [t, x && (0, r.jsx)("span", {
-            className: d.required,
+            className: c.required,
             children: "*"
           })]
         })
       }), 1 === m ? (0, r.jsx)(i.oil, {
-        maxLength: b,
+        maxLength: p,
         onChange: O,
-        value: v,
+        value: f,
         error: j,
         placeholder: u,
         autoFocus: true
       }) : (0, r.jsx)(i.Kx8, {
-        maxLength: b,
+        maxLength: p,
         onChange: O,
-        value: v,
+        value: f,
         error: j,
         rows: m,
         placeholder: u,
         autoFocus: true
       }), null != n && (0, r.jsx)("div", {
-        className: c.marginTop4,
+        className: d.marginTop4,
         children: (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
           children: h(n)

@@ -20,8 +20,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk326730 = require("./326730.js"),
-  Chunk960324 = require("./960324.js");
+  Chunk161414 = require("./161414.js"),
+  Chunk430864 = require("./430864.js");
 let y = Chunk473749.memo(function(e) {
   let {
     channel: t
@@ -35,7 +35,7 @@ let y = Chunk473749.memo(function(e) {
   } = (0, s.cj)([h.Z], () => ({
     isBlocked: null != y && h.Z.isBlockedForMessage(y),
     isIgnored: null != y && h.Z.isIgnoredForMessage(y)
-  }), [y]), S = (0, s.e7)([g.Z], () => g.Z.can(b.Plq.MANAGE_MESSAGES, t)), T = f.cC.useSetting(), {
+  }), [y]), S = (0, s.e7)([g.Z], () => g.Z.can(_.Plq.MANAGE_MESSAGES, t)), T = f.cC.useSetting(), {
     content: N
   } = i.useMemo(() => (null == y ? true : y.content) != null && "" !== y.content ? (0, u.ZP)(y, {
     formatInline: true,
@@ -69,7 +69,7 @@ let y = Chunk473749.memo(function(e) {
     } = (0, d.f)(y, N, I, C, a()(O.messageContent, v.inlineFormat), {
       leadingIconClass: O.messageContentIcon,
       trailingIconClass: O.messageContentIcon,
-      iconSize: _.WW
+      iconSize: b.WW
     });
     j = null != t ? (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",

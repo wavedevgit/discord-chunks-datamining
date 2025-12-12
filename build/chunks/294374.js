@@ -9,7 +9,7 @@ let Chunk975439 = require("./975439.js");
 ! function(e) {
   e.Text = "text", e.Strong = "strong", e.Emphasis = "em", e.Strikethrough = "s", e.Code = "inlineCode", e.Link = "link", e.Paragraph = "paragraph"
 }(r || (exports.RichTextNodeType = r = {}));
-let a = {
+let o = {
   $b: e => ({
     type: r.Strong,
     content: e
@@ -36,13 +36,13 @@ let a = {
     content: e
   })
 };
-class o extends Chunk975439.FormatBuilder {
+class a extends Chunk975439.FormatBuilder {
   constructor() {
     super(...arguments), this.result = []
   }
   pushRichTextTag(e, t, n) {
-    if (!(e in a)) throw `${e} is not a known rich text formatting tag`;
-    let r = a[e](t, "", n);
+    if (!(e in o)) throw `${e} is not a known rich text formatting tag`;
+    let r = o[e](t, "", n);
     Array.isArray(r) ? this.result.push(...r) : this.result.push(r)
   }
   pushLiteralText(e) {
@@ -64,9 +64,9 @@ function s(e, t) {
   return "string" == typeof e ? [{
     type: r.Text,
     content: e
-  }] : this.bindFormatValues(o, e, t)
+  }] : this.bindFormatValues(a, e, t)
 }
 exports.astFormatter = {
   format: s,
-  builder: o
+  builder: a
 }

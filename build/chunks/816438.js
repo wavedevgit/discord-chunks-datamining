@@ -53,8 +53,8 @@ function p(e) {
         setOptions: function(n) {
           var r = "function" == typeof n ? n(_.options) : n;
           y(), _.options = Object.assign({}, m, _.options, r), _.scrollParents = {
-            reference: (0, u.kK)(e) ? (0, a.Z)(e) : e.contextElement ? (0, a.Z)(e.contextElement) : [],
-            popper: (0, a.Z)(t)
+            reference: (0, u.kK)(e) ? (0, o.Z)(e) : e.contextElement ? (0, o.Z)(e.contextElement) : [],
+            popper: (0, o.Z)(t)
           };
           var i = (0, s.Z)((0, c.Z)([].concat(p, _.options.modifiers)));
           return _.orderedModifiers = i.filter(function(e) {
@@ -68,17 +68,17 @@ function p(e) {
               n = e.popper;
             if (f(t, n)) {
               _.rects = {
-                reference: (0, r.Z)(t, (0, o.Z)(n), "fixed" === _.options.strategy),
+                reference: (0, r.Z)(t, (0, a.Z)(n), "fixed" === _.options.strategy),
                 popper: (0, i.Z)(n)
               }, _.reset = false, _.placement = _.options.placement, _.orderedModifiers.forEach(function(e) {
                 return _.modifiersData[e.name] = Object.assign({}, e.data)
               });
-              for (var a = 0; a < _.orderedModifiers.length; a++) {
+              for (var o = 0; o < _.orderedModifiers.length; o++) {
                 if (true === _.reset) {
-                  _.reset = false, a = false;
+                  _.reset = false, o = false;
                   continue
                 }
-                var s = _.orderedModifiers[a],
+                var s = _.orderedModifiers[o],
                   l = s.fn,
                   c = s.options,
                   u = true === c ? {} : c,
@@ -111,14 +111,14 @@ function p(e) {
           r = true === n ? {} : n,
           i = e.effect;
         if ("function" == typeof i) {
-          var a = i({
+          var o = i({
               state: _,
               name: t,
               instance: E,
               options: r
             }),
-            o = function() {};
-          h.push(a || o)
+            a = function() {};
+          h.push(o || a)
         }
       })
     }

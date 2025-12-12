@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk319498 = require("./319498.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -29,8 +29,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk518084 = require("./518084.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk978440 = require("./978440.js"),
-  Chunk424126 = require("./424126.js");
+  Chunk361979 = require("./361979.js"),
+  Chunk890332 = require("./890332.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,13 +73,13 @@ class D extends Chunk473749.PureComponent {
   renderChannelLink(e) {
     let {
       guild: t
-    } = this.props, n = (0, h.F6)(e, x.default, E.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, a = null != t ? t.id : j.ME;
-    return (0, i.jsx)(o.rU, {
-      to: j.Z5c.CHANNEL(a),
+    } = this.props, n = (0, p.F6)(e, E.default, O.Z), r = null != t ? "".concat(n, " / ").concat(t.name) : n, s = null != t ? t.id : j.ME;
+    return (0, i.jsx)(l.rU, {
+      to: j.Z5c.CHANNEL(s),
       onClick: t => {
-        t.stopPropagation(), u.Z.channelListScrollTo(a, e.id)
+        t.stopPropagation(), u.Z.channelListScrollTo(s, e.id)
       },
-      children: (0, i.jsx)(b.Z, {
+      children: (0, i.jsx)(m.Z, {
         className: P.channel,
         children: r
       })
@@ -91,23 +91,23 @@ class D extends Chunk473749.PureComponent {
       contentClassName: t,
       pinned: n,
       lobbyId: r,
-      channel: a,
-      quality: o,
-      lastPing: l,
+      channel: s,
+      quality: l,
+      lastPing: a,
       hasVideo: d,
       connectionState: u,
-      deaf: f,
-      mute: h
+      deaf: h,
+      mute: p
     } = this.props;
     return null == Chunk120356 ? null : (0, Chunk54381.jsx)(Chunk518084.ZP.Bar, {
-      className: s()(module, Chunk978440.controls, {
-        [Chunk978440.unpinned]: !require
+      className: o()(module, Chunk361979.controls, {
+        [Chunk361979.unpinned]: !require
       }),
       children: (0, Chunk54381.jsxs)(Chunk518084.ZP.Content, {
-        className: s()(exports, Chunk978440.content),
+        className: o()(exports, Chunk361979.content),
         dynamicSize: true,
         children: [(0, Chunk54381.jsx)("div", {
-          className: Chunk424126.inner,
+          className: Chunk890332.inner,
           children: (0, Chunk54381.jsx)(Chunk481060.yRy, {
             targetElementRef: this.rtcConnectionStatusRef,
             renderPopout: () => this.renderPopout(Chunk120356.id),
@@ -115,12 +115,12 @@ class D extends Chunk473749.PureComponent {
             children: e => (0, i.jsx)(c.P3F, T(N({}, e), {
               innerRef: this.rtcConnectionStatusRef,
               children: (0, i.jsx)(y.Z, {
-                channelId: a.id,
-                quality: o,
-                lastPing: l,
+                channelId: s.id,
+                quality: l,
+                lastPing: a,
                 hasVideo: d,
                 state: u,
-                children: this.renderChannelLink(a)
+                children: this.renderChannelLink(s)
               })
             }))
           })
@@ -129,13 +129,13 @@ class D extends Chunk473749.PureComponent {
           children: [(0, Chunk54381.jsx)(Chunk870569.Z, {
             tooltipText: Chunk933557 ? Chunk388032.intl.string(Chunk388032.t.YqAjXy) : Chunk388032.intl.string(Chunk388032.t.w4m945),
             icon: Chunk933557 ? Chunk481060.nRN : Chunk481060.S6n,
-            iconForeground: Chunk933557 ? Chunk978440.strikethrough : null,
+            iconForeground: Chunk933557 ? Chunk361979.strikethrough : null,
             onClick: this.handleToggleSelfMute
           }), (0, Chunk54381.jsx)(Chunk870569.Z, {
             tooltipText: Chunk287734 ? Chunk388032.intl.string(Chunk388032.t["2US872"]) : Chunk388032.intl.string(Chunk388032.t.wjcRFX),
             icon: Chunk287734 ? Chunk481060.wE8 : Chunk481060.VWR,
             onClick: this.handleToggleSelfDeaf,
-            iconForeground: Chunk287734 ? Chunk978440.strikethrough : null
+            iconForeground: Chunk287734 ? Chunk361979.strikethrough : null
           }), null == Chunk473749 && (0, Chunk54381.jsx)(Chunk870569.Z, {
             tooltipText: Chunk388032.intl.string(Chunk388032.t["6vrfgt"]),
             onClick: this.handleDisconnect,
@@ -166,7 +166,7 @@ class D extends Chunk473749.PureComponent {
       let {
         lobbyId: t
       } = this.props;
-      return (0, i.jsx)(m.Z, {
+      return (0, i.jsx)(_.Z, {
         channelId: e,
         lobbyId: t,
         isOverlay: true
@@ -180,35 +180,35 @@ function k(e) {
     context: t,
     lobbyId: n,
     channel: r
-  } = e, a = function(e, t) {
+  } = e, s = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
       var n, i, r = {},
-        a = Object.keys(e);
-      for (i = 0; i < a.length; i++) n = a[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        s = Object.keys(e);
+      for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
       return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < a.length; i++) n = a[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      var s = Object.getOwnPropertySymbols(e);
+      for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
     return r
   }(e, ["context", "lobbyId", "channel"]);
-  let s = (0, l.e7)([v.Z], () => v.Z.getGuild(null == r ? true : r.getGuildId())),
-    o = (0, l.e7)([S.Z], () => null != r && S.Z.hasVideo(r.id)),
-    [c, d] = (0, l.Wu)([O.Z], () => [O.Z.isSelfMute(t) || O.Z.isSelfMutedTemporarily(t), O.Z.isSelfDeaf(t)]),
-    [u, f, h] = (0, l.Wu)([_.Z], () => [_.Z.getConnectionState(n), _.Z.getLastPing(n), _.Z.getQuality(n)]);
-  return (0, i.jsx)(D, T(N({}, a), {
+  let o = (0, a.e7)([v.Z], () => v.Z.getGuild(null == r ? true : r.getGuildId())),
+    l = (0, a.e7)([x.Z], () => null != r && x.Z.hasVideo(r.id)),
+    [c, d] = (0, a.Wu)([b.Z], () => [b.Z.isSelfMute(t) || b.Z.isSelfMutedTemporarily(t), b.Z.isSelfDeaf(t)]),
+    [u, h, p] = (0, a.Wu)([S.Z], () => [S.Z.getConnectionState(n), S.Z.getLastPing(n), S.Z.getQuality(n)]);
+  return (0, i.jsx)(D, T(N({}, s), {
     context: t,
     lobbyId: n,
     channel: r,
-    guild: s,
-    hasVideo: o,
+    guild: o,
+    hasVideo: l,
     mute: c,
     deaf: d,
     connectionState: u,
-    lastPing: f,
-    quality: h
+    lastPing: h,
+    quality: p
   }))
 }

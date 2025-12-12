@@ -1,12 +1,12 @@
-/** Chunk was on 92504 **/
+/** Chunk was on 69844 **/
 /** chunk id: 979233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  M: () => i
+  M: () => a
 });
 var Chunk473749 = require("./473749.js"),
   Chunk660384 = require("./660384.js");
 
-function i() {
+function a() {
   let e = Chunk473749.useRef(new Chunk660384.Z),
     t = Chunk473749.useCallback(t => {
       e.current.handleScroll(t)

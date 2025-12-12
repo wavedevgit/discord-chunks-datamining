@@ -13,9 +13,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk916001 = require("./916001.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk395051 = require("./395051.js");
+  Chunk744422 = require("./744422.js");
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var A = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(A);
@@ -55,37 +55,37 @@ function v(e) {
   } = e, a = r.useRef(null), {
     name: s,
     color: v
-  } = t, h = e => A(t => (l()(null != t, "newRoleParams should be defined"), p(g({}, t), {
+  } = t, h = e => A(t => (l()(null != t, "newRoleParams should be defined"), p(f({}, t), {
     color: e
   })));
   return (0, n.jsxs)("div", {
-    className: f.roleInputContainer,
+    className: g.roleInputContainer,
     children: [(0, n.jsx)(o.oil, {
       autoFocus: true,
       value: s,
-      onChange: e => A(t => (l()(null != t, "newRoleParams should be defined"), p(g({}, t), {
+      onChange: e => A(t => (l()(null != t, "newRoleParams should be defined"), p(f({}, t), {
         name: e
       }))),
       id: m,
-      placeholder: u.intl.string(u.t.oNauug),
-      maxLength: c.VKK
+      placeholder: c.intl.string(c.t.oNauug),
+      maxLength: u.VKK
     }), (0, n.jsxs)("div", {
-      className: f.roleColorContainer,
+      className: g.roleColorContainer,
       children: [(0, n.jsx)(o.nn4, {
-        children: u.intl.format(u.t["Vlq/pH"], {
+        children: c.intl.format(c.t["Vlq/pH"], {
           color: (0, i.Rf)(v)
         })
       }), (0, n.jsx)(o.yRy, {
         targetElementRef: a,
-        renderPopout: e => (0, n.jsx)(o.Z$W, p(g({}, e), {
+        renderPopout: e => (0, n.jsx)(o.Z$W, p(f({}, e), {
           value: v,
           onChange: h
         })),
-        children: e => (0, n.jsx)(o.hU, p(g({}, e), {
+        children: e => (0, n.jsx)(o.hU, p(f({}, e), {
           variant: "secondary",
           icon: o.ilE,
           buttonRef: a,
-          "aria-label": u.intl.string(u.t.QLgdlS)
+          "aria-label": c.intl.string(c.t.QLgdlS)
         }))
       })]
     }), (0, n.jsx)(d.Z, {

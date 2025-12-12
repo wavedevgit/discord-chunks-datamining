@@ -10,16 +10,16 @@ require.d(exports, {
 });
 var Chunk818083 = require("./818083.js"),
   Chunk154579 = require("./154579.js");
-let a = {
+let o = {
     isInExperiment: false,
     isEnabled: false,
     isHasFilterElevated: false
   },
-  o = (0, Chunk818083.B)({
+  a = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-07_search_filters_redesign",
     label: "Search Filters Redesign",
-    defaultConfig: a,
+    defaultConfig: o,
     treatments: [{
       id: 0,
       label: "Control",
@@ -55,14 +55,14 @@ function s(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    isInExperiment: a
-  } = o.getCurrentConfig({
+    isInExperiment: o
+  } = a.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
-  return a
+  return o
 }
 
 function l(e) {
@@ -73,14 +73,14 @@ function l(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    isInExperiment: a
-  } = o.useExperiment({
+    isInExperiment: o
+  } = a.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
-  return a
+  return o
 }
 
 function c(e) {
@@ -91,14 +91,14 @@ function c(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    isEnabled: a
-  } = o.useExperiment({
+    isEnabled: o
+  } = a.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
-  return a
+  return o
 }
 
 function u(e) {
@@ -109,14 +109,14 @@ function u(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    isHasFilterElevated: a
-  } = o.getCurrentConfig({
+    isHasFilterElevated: o
+  } = a.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
-  return a
+  return o
 }
 
 function d(e) {
@@ -127,12 +127,12 @@ function d(e) {
     location: t,
     autoTrackExposure: n
   }), {
-    isHasFilterElevated: a
-  } = o.useExperiment({
+    isHasFilterElevated: o
+  } = a.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
     disable: r
   });
-  return a
+  return o
 }

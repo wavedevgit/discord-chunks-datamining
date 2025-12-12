@@ -3,16 +3,16 @@
 var Chunk660326 = require("./660326.js"),
   i = "Expected a function";
 
-function a(e, t) {
+function o(e, t) {
   if ("function" != typeof e || null != t && "function" != typeof t) throw TypeError(i);
   var n = function() {
     var r = arguments,
       i = t ? t.apply(this, r) : r[0],
-      a = n.cache;
-    if (a.has(i)) return a.get(i);
-    var o = e.apply(this, r);
-    return n.cache = a.set(i, o) || a, o
+      o = n.cache;
+    if (o.has(i)) return o.get(i);
+    var a = e.apply(this, r);
+    return n.cache = o.set(i, a) || o, a
   };
-  return n.cache = new(a.Cache || r), n
+  return n.cache = new(o.Cache || r), n
 }
-a.Cache = Chunk660326, module.exports = a
+o.Cache = Chunk660326, module.exports = o

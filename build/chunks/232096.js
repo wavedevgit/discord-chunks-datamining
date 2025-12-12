@@ -2,7 +2,7 @@
 /** chunk id: 232096, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 }), require("./388685.js");
 let r = [
     ["position", "absolute"],
@@ -17,16 +17,16 @@ let r = [
     ["height", "200px"]
   ];
 
-function a() {
+function o() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "",
     t = document.createElement("div"),
     n = document.createElement("div");
   for (let [e, n] of r) exports.style[module] = require;
   for (let [e, t] of i) require.style[module] = exports;
   exports.appendChild(require), document.body.appendChild(exports), exports.className = module;
-  let a = {
+  let o = {
     width: exports.offsetWidth - exports.clientWidth,
     height: exports.offsetHeight - exports.clientHeight
   };
-  return document.body.removeChild(exports), a
+  return document.body.removeChild(exports), o
 }

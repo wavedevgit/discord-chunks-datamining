@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk745510 = require("./745510.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk527224 = require("./527224.js");
+  Chunk330084 = require("./330084.js");
 
 function c(e) {
   let {
@@ -17,13 +17,13 @@ function c(e) {
     initialPercent: n,
     numActions: c
   } = e, [l, h] = s.useState(n), {
-    createMultipleConfetti: f
+    createMultipleConfetti: p
   } = s.useContext(r.h);
   return s.useEffect(() => {
     setTimeout(() => h(1), 200), setTimeout(() => {
       let e = window.innerWidth / 2,
         t = window.innerHeight / 2;
-      f({
+      p({
         position: {
           type: "static-random",
           minValue: {
@@ -37,7 +37,7 @@ function c(e) {
         }
       }, 25)
     }, 700), setTimeout(t, 2e3)
-  }, [f, t]), (0, i.jsxs)("div", {
+  }, [p, t]), (0, i.jsxs)("div", {
     children: [(0, i.jsx)(o.Heading, {
       className: u.heading,
       variant: "heading-xl/semibold",

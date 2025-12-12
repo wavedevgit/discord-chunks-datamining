@@ -2,18 +2,18 @@
 /** chunk id: 928968, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => a,
-  w: () => o
+  f: () => o,
+  w: () => a
 });
 var Chunk515652 = require("./515652.js"),
   Chunk926028 = require("./926028.js");
 
-function a(e, t) {
+function o(e, t) {
   var n = new i.p(r.s[e]);
   return n.loadDataTransfer(t), n
 }
 
-function o(e) {
+function a(e) {
   if (!e) return null;
   var t = Array.prototype.slice.call(e.types || []);
   return Object.keys(r.s).filter(function(e) {

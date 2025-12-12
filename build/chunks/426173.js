@@ -12,12 +12,12 @@ class i {
     let n = null != e ? (0, r.D0)(this.ref, e) : null;
     if (!n) return null;
     let i = t.getBoundingClientRect(),
-      a = n.getBoundingClientRect();
+      o = n.getBoundingClientRect();
     return {
-      x: a.left - i.left - t.clientLeft + t.scrollLeft,
-      y: a.top - i.top - t.clientTop + t.scrollTop,
-      width: a.width,
-      height: a.height
+      x: o.left - i.left - t.clientLeft + t.scrollLeft,
+      y: o.top - i.top - t.clientTop + t.scrollTop,
+      width: o.width,
+      height: o.height
     }
   }
   getContentSize() {

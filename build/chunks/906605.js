@@ -50,7 +50,7 @@ function m() {
 
 function h(e, t) {
   var n;
-  let i = null == (n = a.Z.getChannel(o.Z.getVoiceChannelId())) ? true : n.guild_id;
+  let i = null == (n = o.Z.getChannel(a.Z.getVoiceChannelId())) ? true : n.guild_id;
   if (null == e || null == i) return void b(false, t);
   r.Z.dispatch({
     type: "UPDATE_HANG_STATUS",

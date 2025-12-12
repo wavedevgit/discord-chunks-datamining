@@ -17,18 +17,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk372807 = require("./372807.js");
+  Chunk435757 = require("./435757.js");
 
 function g() {
   let e = (0, Chunk915009.LN)(),
     t = (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.USAGE_STATISTICS)),
     n = Chunk473749.useCallback(e => {
-      e ? (0, o.g)([_.pjP.USAGE_STATISTICS], []).catch(f.S) : (0, f.V)({
+      e ? (0, a.g)([_.pjP.USAGE_STATISTICS], []).catch(f.S) : (0, f.V)({
         header: m.intl.string(m.t.OdPCbN),
         body: m.intl.string(m.t.MGWabA),
         confirmText: m.intl.string(m.t["D3+rU4"]),
         cancelText: m.intl.string(m.t.kYpG0u),
-        onConfirm: () => (0, o.g)([], [_.pjP.USAGE_STATISTICS]).catch(f.S)
+        onConfirm: () => (0, a.g)([], [_.pjP.USAGE_STATISTICS]).catch(f.S)
       })
     }, []);
   return (0, Chunk54381.jsx)(Chunk838436.U, {
@@ -41,7 +41,7 @@ function g() {
       value: exports,
       onChange: require,
       disabled: module,
-      tooltipText: module ? Chunk388032.intl.string(Chunk372807.default["6Af/cw"]) : true
+      tooltipText: module ? Chunk388032.intl.string(Chunk435757.default["6Af/cw"]) : true
     })
   })
 }

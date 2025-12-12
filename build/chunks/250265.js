@@ -24,8 +24,8 @@ class c extends Chunk19467.V {
     return !!e.match(this.patternBetween()) && (!!s(t) || !!l(t)) && !!n.start.get("day") && !!n.start.get("month") && !!n.start.get("year")
   }
   mergeResults(e, t, n) {
-    let r = (0, a.RA)(t.text);
-    s(t) && (r = (0, o.de)(r));
+    let r = (0, o.RA)(t.text);
+    s(t) && (r = (0, a.de)(r));
     let l = i.L.createRelativeFromReference(i.X2.fromDate(n.start.date()), r);
     return new i.G5(n.reference, t.index, `${t.text}${e}${n.text}`, l)
   }

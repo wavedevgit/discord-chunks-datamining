@@ -17,6 +17,6 @@ module.exports = function(e, t) {
       if (f = t[u], d = e.dontCallGetSet ? (p = i(n, u)) && p.value : n[u], !c(m ? u : _ + (h ? "." : "#") + u, e.forced) && true !== d) {
         if (typeof f == typeof d) continue;
         l(f, d)
-      }(e.sham || d && d.sham) && a(f, "sham", true), o(n, u, f, e)
+      }(e.sham || d && d.sham) && o(f, "sham", true), a(n, u, f, e)
     }
 }

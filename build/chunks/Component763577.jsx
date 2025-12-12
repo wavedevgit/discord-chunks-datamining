@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 763577, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -44,7 +44,7 @@ function u() {
 }
 
 function m() {
-  let [e, t] = Chunk473749.useState(null), [n, i] = Chunk473749.useState(null), [s, o] = Chunk473749.useState(null), [c, u] = Chunk473749.useState([]), m = Chunk473749.useRef(null), [f, x] = Chunk473749.useState(400), [b, g] = Chunk473749.useState(400), v = Chunk473749.useCallback(() => {
+  let [e, t] = Chunk473749.useState(null), [n, i] = Chunk473749.useState(null), [s, o] = Chunk473749.useState(null), [c, u] = Chunk473749.useState([]), m = Chunk473749.useRef(null), [x, f] = Chunk473749.useState(400), [g, b] = Chunk473749.useState(400), v = Chunk473749.useCallback(() => {
     setTimeout(() => {
       var e, t, n, a;
       Chunk333200(null != (n = null == (e = m.current) ? true : module.getProperties()) ? require : {}), u(null != (a = null == (t = m.current) ? true : exports.getArtboards()) ? Chunk54381 : []), Chunk164617({})
@@ -85,18 +85,18 @@ function m() {
         Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
       }), r
     })
-  }, [Chunk692547, require]), y = Chunk473749.useCallback(e => {
+  }, [Chunk692547, require]), _ = Chunk473749.useCallback(e => {
     o(null), i(null), t(e)
   }, []);
   return (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
     gap: 16,
     children: [(0, Chunk54381.jsx)(h, {
       riveName: "Rive inspector",
-      onRiveLoad: y
+      onRiveLoad: _
     }), null != module && (0, Chunk54381.jsx)("div", {
       style: {
-        width: f,
-        height: b
+        width: x,
+        height: g
       },
       children: (0, Chunk54381.jsx)(Chunk481060.BmE, {
         src: module,
@@ -113,13 +113,13 @@ function m() {
         }), (0, Chunk54381.jsx)(Chunk481060.oil, {
           type: "number",
           label: "width",
-          value: f.toString(),
-          onChange: e => x(parseInt(e))
+          value: x.toString(),
+          onChange: e => f(parseInt(e))
         }), (0, Chunk54381.jsx)(Chunk481060.oil, {
           type: "number",
           label: "height",
-          value: b.toString(),
-          onChange: e => g(parseInt(e))
+          value: g.toString(),
+          onChange: e => b(parseInt(e))
         })]
       }), (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
         gap: 8,

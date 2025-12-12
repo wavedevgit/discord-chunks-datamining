@@ -13,14 +13,14 @@ var Chunk668781 = require("./668781.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u(e, t) {
-  if (o.Z.isBlockedForMessage(e)) return r.Z.show({
+  if (a.Z.isBlockedForMessage(e)) return r.Z.show({
     title: c.intl.string(c.t["j7eA/g"]),
     body: c.intl.formatToPlainString(c.t.dTNNgr, {
       name: e.author.username
     }),
     confirmText: c.intl.string(c.t.BddRzS)
   }), false;
-  if (o.Z.isIgnoredForMessage(e)) return r.Z.show({
+  if (a.Z.isIgnoredForMessage(e)) return r.Z.show({
     title: c.intl.string(c.t.XyWoKV),
     body: c.intl.formatToPlainString(c.t["8t8doK"], {
       name: e.author.username
@@ -29,7 +29,7 @@ function u(e, t) {
   }), false;
   if ((0, s.DQ)(e)) {
     let n = i.Z.getChannel(e.channel_id);
-    return (null == n ? true : n.isPrivate()) || a.Z.can(l.Plq.MODERATE_MEMBERS, n) ? r.Z.show({
+    return (null == n ? true : n.isPrivate()) || o.Z.can(l.Plq.MODERATE_MEMBERS, n) ? r.Z.show({
       title: c.intl.string(c.t["cZcG+P"]),
       body: c.intl.formatToPlainString(c.t["1YTWty"], {
         name: e.author.username

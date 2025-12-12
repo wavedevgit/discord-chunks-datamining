@@ -2,9 +2,9 @@
 /** chunk id: 286035, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Pg: () => o,
+  Pg: () => a,
   Te: () => i,
-  kb: () => a
+  kb: () => o
 });
 var Chunk570140 = require("./570140.js");
 
@@ -14,12 +14,12 @@ function i() {
   }))
 }
 
-function a() {
+function o() {
   Chunk570140.Z.dispatch({
     type: "DOMAIN_MIGRATION_FAILURE"
   })
 }
 
-function o() {
+function a() {
   window.location.reload()
 }

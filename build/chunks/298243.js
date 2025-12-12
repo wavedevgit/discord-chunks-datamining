@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk240864 = require("./240864.js"),
@@ -19,13 +19,13 @@ function f(e) {
   let {
     guildId: i,
     productId: f
-  } = e, p = (0, o.e7)([l.Z], () => l.Z.getGuildProduct(f)), {
+  } = e, p = (0, a.e7)([l.Z], () => l.Z.getGuildProduct(f)), {
     isLoading: _,
     downloadAttachment: m
   } = (0, c.Z)(i, f), h = r.useCallback(() => {
     var e, t;
     let n = null == p || null == (t = p.attachments) || null == (e = t[0]) ? true : e.id;
-    a()(null != n, "No attachment"), m(n)
+    o()(null != n, "No attachment"), m(n)
   }, [m, null == p ? true : p.attachments]), g = r.useCallback(() => u.Z.open({
     guildId: i,
     productId: f

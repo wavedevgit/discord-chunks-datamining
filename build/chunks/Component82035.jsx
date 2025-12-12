@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk51144 = require("./51144.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk808079 = require("./808079.js");
+  Chunk277081 = require("./277081.js");
 
 function p(l) {
   let {
@@ -79,7 +79,7 @@ let A = function(l) {
     var l;
     let t = v.Z.getGuild(o);
     return null != t && ((null == (l = k.default.getCurrentUser()) ? true : l.id) === u.id ? N.Z.can(E.Plq.CHANGE_NICKNAME, t) || N.Z.can(E.Plq.MANAGE_NICKNAMES, t) : N.Z.canManageUser(E.Plq.MANAGE_NICKNAMES, u.id, t))
-  }), [M, Z] = r.useState(false), [j, y] = r.useState(null != (t = null == f ? true : f.nick) ? t : ""), [_, I] = r.useState({});
+  }), [_, M] = r.useState(false), [Z, j] = r.useState(null != (t = null == f ? true : f.nick) ? t : ""), [y, I] = r.useState({});
   (0, c.ZP)(() => {
     g.default.track(E.rMx.OPEN_MODAL, {
       type: "Change Server Identity",
@@ -95,22 +95,22 @@ let A = function(l) {
       var t, n, e, r, i, s, c, x, v;
       l.preventDefault();
       let N = null;
-      if (j !== (null != (t = null == f ? true : f.nick) ? t : "") && ((N = null != N ? N : {}).nick = j), null == N) return void m();
+      if (Z !== (null != (t = null == f ? true : f.nick) ? t : "") && ((N = null != N ? N : {}).nick = Z), null == N) return void m();
       try {
-        Z(true), await a.tn.patch({
+        M(true), await a.tn.patch({
           url: E.ANM.GUILD_MEMBER(o, u.id),
           body: N,
           rejectWithError: false
         }), P(d.jQ.CHANGE_NICKNAME), m()
       } catch (a) {
         let l;
-        Z(false);
+        M(false);
         let t = null != (e = null == (n = a.body) ? true : n.errors) ? e : null;
         (null == t ? true : t.nick) != null ? l = (null == (s = t.nick) || null == (i = s._errors) || null == (r = i[0]) ? true : r.message) || h.intl.string(h.t.xex86n) : (null == t ? true : t.username) != null && (l = (null == (v = t.username) || null == (x = v._errors) || null == (c = x[0]) ? true : c.message) || h.intl.string(h.t.xex86n)), I({
           nick: l
         })
       }
-    }, [o, j, m, u, f, P]);
+    }, [o, Z, m, u, f, P]);
   return (0, e.jsx)("form", {
     onSubmit: S,
     children: (0, e.jsx)(s.u_l, {
@@ -125,14 +125,14 @@ let A = function(l) {
         text: h.intl.string(h.t["R3BPH+"]),
         variant: "primary",
         type: "submit",
-        disabled: M
+        disabled: _
       }],
       children: (0, e.jsx)(p, {
         disabled: !b,
         user: u,
-        error: _.nick,
-        nickname: j,
-        setNickname: y,
+        error: y.nick,
+        nickname: Z,
+        setNickname: j,
         hasNick: (null == f ? true : f.nick) != null
       })
     })

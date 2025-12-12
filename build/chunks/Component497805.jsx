@@ -42,8 +42,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -51,8 +51,8 @@ function _(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let h = new Set;
@@ -62,8 +62,8 @@ function g(e, t) {
 }
 async function E(e) {
   var t, {
-      userId: a,
-      section: o,
+      userId: o,
+      section: a,
       subsection: f,
       guildId: m,
       channelId: E,
@@ -73,18 +73,18 @@ async function E(e) {
       disableActionsForPreview: v = false
     } = e,
     S = _(e, ["userId", "section", "subsection", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]);
-  let I = l.default.getUser(a);
+  let I = l.default.getUser(o);
   if (null == I) return;
   let T = l.default.getCurrentUser();
   if (null == T) return;
-  let C = g(a, b ? m : true);
+  let C = g(o, b ? m : true);
   h.add(await (0, i.ZDy)(async () => {
-    let e = (await Promise.all([n.e("61924"), n.e("74330"), n.e("39380"), n.e("62880"), n.e("85032"), n.e("93979")]).then(n.bind(n, 866035))).default;
+    let e = (await Promise.all([n.e("61924"), n.e("74330"), n.e("39380"), n.e("62880"), n.e("49941"), n.e("93979")]).then(n.bind(n, 866035))).default;
     return t => (0, r.jsx)(e, p({
       user: I,
       currentUser: T,
       guildId: m,
-      initialSection: o,
+      initialSection: a,
       initialSubsection: f,
       channelId: E,
       showGuildProfile: b,

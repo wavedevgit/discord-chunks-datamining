@@ -9,17 +9,17 @@ let i = {
     isXMLFile: s,
     findOffsets: l
   },
-  a = 0,
-  o = "<?xpacket begin";
+  o = 0,
+  a = "<?xpacket begin";
 
 function s(e) {
-  return !!e && (0, r.oH)(e, a, o.length) === o
+  return !!e && (0, r.oH)(e, o, a.length) === a
 }
 
 function l(e) {
   let t = [];
   return t.push({
-    dataOffset: a,
+    dataOffset: o,
     length: e.byteLength
   }), {
     xmpChunks: t

@@ -23,25 +23,25 @@ let c = "png",
   _ = "http://localhost:4000";
 
 function m(e) {
-  return !((0, a.B0)(e) || (0, r.zt)(e))
+  return !((0, o.B0)(e) || (0, r.zt)(e))
 }
 
 function h(e, t, n) {
   let r = l.ZP.canSaveImage(e, null != n ? n : t),
     i = s.Z.isDiscordAssetUrl(e, t, n),
-    a = m(e);
-  return r && i && a
+    o = m(e);
+  return r && i && o
 }
 
 function g(e, t, n) {
   let r = l.ZP.canCopyImage(e),
     i = s.Z.isDiscordAssetUrl(e, t, n),
-    a = m(e);
-  return r && i && a
+    o = m(e);
+  return r && i && o
 }
 
 function E(e, t) {
-  if ((0, o.ii)()) return null != e ? e : t;
+  if ((0, a.ii)()) return null != e ? e : t;
   if (null != e) {
     let n = s.Z.toURLSafe(t);
     if (null != n && (0, i._M)(n)) return e
@@ -52,12 +52,12 @@ function E(e, t) {
 function b(e, t, n, r) {
   let i = s.Z.toURLSafe(e);
   if (null == i || i.host === d) return e;
-  let a = (0, l.xG)(e, t),
+  let o = (0, l.xG)(e, t),
     c = false;
-  if (i.origin === u && (c = true), (0, o.ii)() && i.origin === _ && (c = true), i.searchParams.delete("width"), i.searchParams.delete("height"), i.searchParams.delete("quality"), i.searchParams.delete("size"), c)
-    if ((0, o.ii)()) {
+  if (i.origin === u && (c = true), (0, a.ii)() && i.origin === _ && (c = true), i.searchParams.delete("width"), i.searchParams.delete("height"), i.searchParams.delete("quality"), i.searchParams.delete("size"), c)
+    if ((0, a.ii)()) {
       if (s.Z.isOriginalContentTypeDifferent(t, n)) return i.toString();
       i.host = f, i.port = p, i.pathname.startsWith("/attachments/") && (i.pathname = "/channels/" + i.pathname.substring(13))
     } else i.host = d;
-  return i.searchParams.delete("format"), null == a && null != r && i.searchParams.append("format", r), i.toString()
+  return i.searchParams.delete("format"), null == o && null != r && i.searchParams.append("format", r), i.toString()
 }

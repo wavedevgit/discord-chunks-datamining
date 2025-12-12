@@ -5,12 +5,12 @@ require.d(exports, {
   J8: () => s,
   ZP: () => l,
   ls: () => c,
-  tE: () => o
+  tE: () => a
 }), require("./953529.js");
 var Chunk81825 = require("./81825.js"),
   Chunk973616 = require("./973616.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,7 +18,7 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var o = function(e) {
+var a = function(e) {
     return e[e.LINKED = 1] = "LINKED", e[e.OFFICIAL = 2] = "OFFICIAL", e
   }({}),
   s = function(e) {
@@ -33,7 +33,7 @@ class l extends Chunk81825.Z {
   }
   constructor(e) {
     var t;
-    super(), a(this, "id", true), a(this, "name", true), a(this, "description", true), a(this, "icon", true), a(this, "icon_hash", true), a(this, "cover_image_hash", true), a(this, "aliases", true), a(this, "executables", true), a(this, "overlay", true), a(this, "overlayWarn", true), a(this, "overlayCompatibilityHook", true), a(this, "hook", true), a(this, "supportsOutOfProcessOverlay", true), a(this, "thirdPartySkus", true), a(this, "themes", true), a(this, "linkedApplications", true), this.id = e.id, this.name = e.name, this.description = e.description, this.icon = e.icon, this.icon_hash = e.icon_hash, this.aliases = e.aliases || [], this.cover_image_hash = e.cover_image_hash, this.executables = (null != (t = e.executables) ? t : []).map(i.BA), this.overlay = e.overlay || false, this.overlayWarn = e.overlayWarn || false, this.overlayCompatibilityHook = e.overlayCompatibilityHook || false, this.hook = e.hook || false, this.supportsOutOfProcessOverlay = e.supportsOutOfProcessOverlay || false, this.thirdPartySkus = e.thirdPartySkus || [], this.themes = e.themes || [], this.linkedApplications = e.linkedApplications
+    super(), o(this, "id", true), o(this, "name", true), o(this, "description", true), o(this, "icon", true), o(this, "icon_hash", true), o(this, "cover_image_hash", true), o(this, "aliases", true), o(this, "executables", true), o(this, "overlay", true), o(this, "overlayWarn", true), o(this, "overlayCompatibilityHook", true), o(this, "hook", true), o(this, "supportsOutOfProcessOverlay", true), o(this, "thirdPartySkus", true), o(this, "themes", true), o(this, "linkedApplications", true), this.id = e.id, this.name = e.name, this.description = e.description, this.icon = e.icon, this.icon_hash = e.icon_hash, this.aliases = e.aliases || [], this.cover_image_hash = e.cover_image_hash, this.executables = (null != (t = e.executables) ? t : []).map(i.BA), this.overlay = e.overlay || false, this.overlayWarn = e.overlayWarn || false, this.overlayCompatibilityHook = e.overlayCompatibilityHook || false, this.hook = e.hook || false, this.supportsOutOfProcessOverlay = e.supportsOutOfProcessOverlay || false, this.thirdPartySkus = e.thirdPartySkus || [], this.themes = e.themes || [], this.linkedApplications = e.linkedApplications
   }
 }
 var c = function(e) {

@@ -12,7 +12,7 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk408677 = require("./408677.js");
+  Chunk304946 = require("./304946.js");
 
 function l(e) {
   let {
@@ -20,12 +20,12 @@ function l(e) {
     compact: i,
     onClick: l
   } = e;
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     icon: n(508933),
     timestamp: t.timestamp,
     compact: i,
     contentClassName: s.messageContent,
-    children: o.intl.format(o.t.bYdG3f, {
+    children: a.intl.format(a.t.bYdG3f, {
       onClick: l
     })
   })
@@ -36,12 +36,12 @@ function c(e) {
     message: t,
     compact: i
   } = e;
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     icon: n(324606),
     timestamp: t.timestamp,
     compact: i,
     contentClassName: s.messageContent,
-    children: o.intl.string(o.t.tu6tOR)
+    children: a.intl.string(a.t.tu6tOR)
   })
 }
 
@@ -50,7 +50,7 @@ function u(e) {
     message: t,
     compact: n
   } = e;
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     iconNode: (0, r.jsx)(i.Mgn, {
       size: "custom",
       width: 20,
@@ -61,7 +61,7 @@ function u(e) {
     timestamp: t.timestamp,
     compact: n,
     contentClassName: s.messageContent,
-    children: o.intl.string(o.t.vzfXql)
+    children: a.intl.string(a.t.vzfXql)
   })
 }
 
@@ -70,7 +70,7 @@ function d(e) {
     message: t,
     compact: n
   } = e;
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(o.Z, {
     iconNode: (0, r.jsx)(i.Mgn, {
       size: "custom",
       width: 20,
@@ -81,6 +81,6 @@ function d(e) {
     timestamp: t.timestamp,
     compact: n,
     contentClassName: s.messageContent,
-    children: o.intl.string(o.t["/TfvyR"])
+    children: a.intl.string(a.t["/TfvyR"])
   })
 }

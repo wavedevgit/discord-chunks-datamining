@@ -19,7 +19,7 @@ class c extends Chunk438774 {
         interval: 0,
         concurrency: 1 / 0,
         autoStart: true,
-        queueClass: o.default
+        queueClass: a.default
       }, e)).intervalCap && e.intervalCap >= 1)) throw TypeError(`Expected \`intervalCap\` to be a number from 1 and up, got \`${null!=(n=null==(t=e.intervalCap)?true:t.toString())?n:""}\` (${typeof e.intervalCap})`);
     if (true === e.interval || !(Number.isFinite(e.interval) && e.interval >= 0)) throw TypeError(`Expected \`interval\` to be a finite number >= 0, got \`${null!=(i=null==(r=e.interval)?true:r.toString())?i:""}\` (${typeof e.interval})`);
     this._carryoverConcurrencyCount = e.carryoverConcurrencyCount, this._isIntervalIgnored = e.intervalCap === 1 / 0 || 0 === e.interval, this._intervalCap = e.intervalCap, this._interval = e.interval, this._queue = new e.queueClass, this._queueClass = e.queueClass, this.concurrency = e.concurrency, this._timeout = e.timeout, this._throwOnTimeout = true === e.throwOnTimeout, this._isPaused = false === e.autoStart
@@ -84,7 +84,7 @@ class c extends Chunk438774 {
       let i = async () => {
         this._pendingCount++, this._intervalCount++;
         try {
-          let i = true === this._timeout && true === t.timeout ? e() : a.default(Promise.resolve(e()), true === t.timeout ? this._timeout : t.timeout, () => {
+          let i = true === this._timeout && true === t.timeout ? e() : o.default(Promise.resolve(e()), true === t.timeout ? this._timeout : t.timeout, () => {
             (true === t.throwOnTimeout ? this._throwOnTimeout : t.throwOnTimeout) && r(l)
           });
           n(await i)

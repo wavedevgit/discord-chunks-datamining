@@ -6,8 +6,8 @@ require.d(exports, {
 });
 var Chunk720479 = require("./720479.js"),
   Chunk745597 = require("./745597.js");
-let a = 347997,
-  o = 25920,
+let o = 347997,
+  a = 25920,
   s = 765433;
 
 function l(e) {
@@ -54,8 +54,8 @@ function _(e, t) {
 }
 class m {
   fromJulianDay(e) {
-    let t = e - a,
-      n = Math.floor((t * o / s * 19 + 234) / 235) + 1,
+    let t = e - o,
+      n = Math.floor((t * a / s * 19 + 234) / 235) + 1,
       i = d(n),
       l = Math.floor(t - i);
     for (; l < 1;) l = Math.floor(t - (i = d(--n)));
@@ -68,7 +68,7 @@ class m {
   toJulianDay(e) {
     let t = d(e.year);
     for (let n = 1; n < e.month; n++) t += _(e.year, n);
-    return t + e.day + a
+    return t + e.day + o
   }
   getDaysInMonth(e) {
     return _(e.year, e.month)

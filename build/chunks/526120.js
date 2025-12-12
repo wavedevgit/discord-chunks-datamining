@@ -85,11 +85,11 @@ let h = async e => {
     channel_action_type: false
   }), n && (0, l.Kh)(t, {
     navigationReplace: false
-  }), a.Z.jumpToMessage({
+  }), o.Z.jumpToMessage({
     channelId: t,
     messageId: d.default.castChannelIdAsMessageId(t),
     flash: false,
-    jumpType: o.SR.INSTANT
+    jumpType: a.SR.INSTANT
   })
 }, b = (e, t) => {
   i.Z.dispatch({
@@ -112,15 +112,15 @@ let h = async e => {
       channelId: t
     }), s.Z.isFullServerPreview(e)) return;
   let n = c.Z.getChannel(t),
-    a = f.Z.getActionForChannel(e, t);
-  if (null != n && null != a) {
-    var o, l;
-    let t = d.default.keys(null != (o = _.Z.getCompletedActions(e)) ? o : {}),
+    o = f.Z.getActionForChannel(e, t);
+  if (null != n && null != o) {
+    var a, l;
+    let t = d.default.keys(null != (a = _.Z.getCompletedActions(e)) ? a : {}),
       r = null != (l = f.Z.getNewMemberActions(e)) ? l : [];
     u.default.track(m.rMx.SERVER_GUIDE_ACTION_COMPLETED, {
       guild_id: n.guild_id,
       channel_id: n.id,
-      channel_action_type: a.actionType,
+      channel_action_type: o.actionType,
       has_completed_all: r.reduce((e, n) => e && t.includes(n.channelId), true)
     })
   }

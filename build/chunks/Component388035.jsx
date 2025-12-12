@@ -25,8 +25,8 @@ function f(e) {
     location: "ForLaterCoachmarkWeb"
   }, {
     autoTrackExposure: false
-  }), p = t === (f ? "inbox-button" : "bookmarks-button"), _ = i && p ? [d] : [], [m, h] = (0, o.US)(_, true);
-  return m !== d ? null : (0, r.jsx)(a.J2, {
+  }), p = t === (f ? "inbox-button" : "bookmarks-button"), _ = i && p ? [d] : [], [m, h] = (0, a.US)(_, true);
+  return m !== d ? null : (0, r.jsx)(o.J2, {
     targetElementRef: n,
     gradientColor: "purple",
     position: "bottom",

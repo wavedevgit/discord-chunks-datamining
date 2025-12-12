@@ -2,15 +2,15 @@
 /** chunk id: 153758, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  C: () => a
+  C: () => o
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk564546 = require("./564546.js");
+var Chunk334405 = require("./334405.js");
 
-function a() {
+function o() {
   return (0, Chunk54381.jsx)("div", {
     role: "separator",
-    className: Chunk564546.separator
+    className: Chunk334405.separator
   })
 }

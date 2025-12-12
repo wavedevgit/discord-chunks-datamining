@@ -1,45 +1,45 @@
 /** Chunk was on 10667 **/
-/** chunk id: 555638, original params: e,t,n (module,exports,require) **/
+/** chunk id: 555638, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => c
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk212598 = require("./212598.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk60236 = require("./60236.js"),
-  Chunk254564 = require("./254564.js");
+  Chunk436200 = require("./436200.js"),
+  Chunk757685 = require("./757685.js");
 
-function d(e) {
+function c(t) {
   let {
-    platformType: t,
-    isWaitingForConnection: n,
-    onWaitingForConnection: d,
-    expectedCallbackState: c,
-    onAuthToken: l,
-    onError: b,
-    onClose: u
-  } = e, p = n ? (0, o.jsx)("img", {
-    src: s.Z,
+    platformType: n,
+    isWaitingForConnection: e,
+    onWaitingForConnection: c,
+    expectedCallbackState: l,
+    onAuthToken: d,
+    onError: u,
+    onClose: p
+  } = t, _ = e ? (0, o.jsx)("img", {
+    src: a.Z,
     width: "231",
     height: "172",
     alt: ""
   }) : (0, o.jsx)("img", {
-    src: r.Z,
+    src: s.Z,
     width: "231",
     height: "160",
     alt: ""
-  }), C = n ? a.intl.string(a.t.TTIocg) : a.intl.string(a.t["6n+UPR"]), h = n ? a.intl.string(a.t.MNmoKH) : a.intl.string(a.t.JaaqIf);
+  }), b = e ? r.intl.string(r.t.TTIocg) : r.intl.string(r.t["6n+UPR"]), C = e ? r.intl.string(r.t.MNmoKH) : r.intl.string(r.t.JaaqIf);
   return (0, o.jsx)(i.t, {
-    platformType: t,
-    isWaitingForConnection: n,
-    onWaitingForConnection: d,
-    expectedCallbackState: c,
-    onAuthToken: l,
-    onError: b,
-    onClose: u,
-    img: p,
-    title: C,
-    body: h
+    platformType: n,
+    isWaitingForConnection: e,
+    onWaitingForConnection: c,
+    expectedCallbackState: l,
+    onAuthToken: d,
+    onError: u,
+    onClose: p,
+    img: _,
+    title: b,
+    body: C
   })
 }

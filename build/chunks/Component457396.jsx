@@ -54,7 +54,7 @@ var Chunk54381 = require("./54381.js"),
 let Q = e => {
     let {
       selected: t
-    } = e, n = (0, s.e7)([_.default], () => _.default.getCurrentUser()), r = (0, s.e7)([E.Z], () => E.Z.getPremiumTypeSubscription()), i = (0, A.N)(), l = (0, x.N)(), a = (0, C.Vi)(), o = (0, V.V)(), c = (0, y.Qo)(n, r), u = (0, s.e7)([I.Z], () => I.Z.getCreatedAtOverride()), d = t || null != i || null != l || a || null != o || c, p = null != u ? u : null == n ? true : n.createdAt;
+    } = e, n = (0, s.e7)([b.default], () => b.default.getCurrentUser()), r = (0, s.e7)([E.Z], () => E.Z.getPremiumTypeSubscription()), i = (0, A.N)(), l = (0, x.N)(), a = (0, C.Vi)(), o = (0, V.V)(), c = (0, y.Qo)(n, r), u = (0, s.e7)([I.Z], () => I.Z.getCreatedAtOverride()), d = t || null != i || null != l || a || null != o || c, p = null != u ? u : null == n ? true : n.createdAt;
     return d || null != n && null != p && Date.now() - p.getTime() > 12096e5
   },
   J = e => {
@@ -80,7 +80,7 @@ let Q = e => {
         }
         return i
       }(e, ["selected", "nitroTabButtonRef", "route", "locationState"]);
-    let el = (0, s.e7)([_.default], () => _.default.getCurrentUser()),
+    let el = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
       ea = (0, s.e7)([E.Z], () => E.Z.getPremiumTypeSubscription()),
       {
         variant: es,
@@ -94,10 +94,10 @@ let Q = e => {
       eg = (0, P.$)(),
       eh = (0, S.W)(),
       em = (0, C.Vi)(),
-      eb = (0, D.HI)({
+      e_ = (0, D.HI)({
         trialOffer: ep
       }),
-      e_ = (0, V.V)(),
+      eb = (0, V.V)(),
       eE = (0, D.eW)(),
       eO = (0, R._h)(),
       ev = (0, F.Kn)(),
@@ -121,7 +121,7 @@ let Q = e => {
         location: "NitroTabButton"
       }),
       ew = (null == ep ? true : ep.trial_id) === Y.a7,
-      eL = (0, b.bg)({
+      eL = (0, _.bg)({
         location: "NitroTabButton"
       }),
       eR = [],
@@ -154,7 +154,7 @@ let Q = e => {
       isDismissed: eH !== o.z.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE
     }), I = 9;
     else if (em) n = (0, r.jsx)(w.Z, {}), I = 0;
-    else if (eb) {
+    else if (e_) {
       let e = (0, D.$q)();
       n = (0, r.jsx)(U._y, {
         isTabSelected: ee,
@@ -175,8 +175,8 @@ let Q = e => {
       offerExpiresAt: null
     }), I = 2) : eh ? (n = (0, r.jsx)(H.S, {
       expiresAt: eP
-    }), I = 4) : null != e_ ? (n = (0, r.jsx)(z.Z, {
-      copy: e_,
+    }), I = 4) : null != eb ? (n = (0, r.jsx)(z.Z, {
+      copy: eb,
       showStars: false
     }), I = 1) : null != ef ? (n = es === T.tE.OFFER_COUNTDOWN && eS ? (0, r.jsx)(G.a, {
       discountOffer: ef

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk473749 = require("./473749.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js");
-let o = 1e3;
+let a = 1e3;
 
 function s(e, t, n, s) {
   let l = r.useRef(null),
@@ -24,7 +24,7 @@ function s(e, t, n, s) {
         sessionId: t,
         guildId: n,
         pageIndex: r,
-        pageTitle: o,
+        pageTitle: a,
         pageSection: s,
         pageSectionTitle: l,
         isUserGuildMember: d,
@@ -33,12 +33,12 @@ function s(e, t, n, s) {
         positionInSection: p,
         analyticsLocations: _
       } = u.current;
-      i.default.track(a.rMx.SLAYER_STOREFRONT_CARD_IMPRESSION, {
+      i.default.track(o.rMx.SLAYER_STOREFRONT_CARD_IMPRESSION, {
         slayer_storefront_session_id: t,
         sku_id: e,
         guild_id: n,
         page_index: r,
-        page_title: o,
+        page_title: a,
         page_section: s,
         page_section_title: l,
         position_in_section: p,
@@ -50,7 +50,7 @@ function s(e, t, n, s) {
     f = r.useCallback(e => {
       e ? null === l.current && (l.current = window.setTimeout(() => {
         d(), l.current = null
-      }, o)) : null !== l.current && (clearTimeout(l.current), l.current = null)
+      }, a)) : null !== l.current && (clearTimeout(l.current), l.current = null)
     }, [d]);
   return r.useEffect(() => () => {
     null !== l.current && (clearTimeout(l.current), l.current = null)

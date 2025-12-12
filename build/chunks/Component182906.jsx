@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk558522 = require("./558522.jsx"),
-  Chunk737163 = require("./737163.js");
+  Chunk568126 = require("./568126.js");
 
 function s(e) {
   let {
@@ -18,8 +18,8 @@ function s(e) {
   } = e, [c, u] = i.useState(false);
   return "not-found" === t.state || c ? (0, r.jsx)("div", {
     className: l,
-    children: (0, r.jsx)(a.Z, {
-      className: o.brokenImageIcon
+    children: (0, r.jsx)(o.Z, {
+      className: a.brokenImageIcon
     })
   }) : "loading" === t.state ? null : (0, r.jsx)("img", {
     alt: n,

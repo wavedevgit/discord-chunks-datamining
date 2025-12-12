@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk666188 = require("./666188.js"),
@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk267642 = require("./267642.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk453301 = require("./453301.js");
+  Chunk566588 = require("./566588.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,7 +66,7 @@ function S(e) {
     guild: t,
     isBannerVisible: n,
     disableBoostClick: i
-  } = e, a = (0, o.e7)([_.default, p.ZP], () => {
+  } = e, o = (0, a.e7)([_.default, p.ZP], () => {
     let e = _.default.getCurrentUser();
     return p.ZP.isMember(t.id, null == e ? true : e.id)
   }), {
@@ -75,7 +75,7 @@ function S(e) {
   } = t;
   if (0 === c && l === h.Eu4.NONE) return null;
   let u = e => {
-      e.stopPropagation(), e.preventDefault(), a && !i && (0, d.f)({
+      e.stopPropagation(), e.preventDefault(), o && !i && (0, d.f)({
         guildId: t.id,
         location: {
           section: h.jXE.GUILD_HEADER,
@@ -128,7 +128,7 @@ function I(e) {
       size: 18,
       tooltipPosition: "bottom",
       tooltipColor: s.aML.Colors.PRIMARY,
-      className: a()(E.guildBadge, {
+      className: o()(E.guildBadge, {
         [E.disableColor]: n
       }),
       disableBoostClick: i
@@ -140,7 +140,7 @@ function I(e) {
       size: 18,
       tooltipPosition: "bottom",
       tooltipColor: s.aML.Colors.PRIMARY,
-      className: a()(E.guildBadge, {
+      className: o()(E.guildBadge, {
         [E.disableColor]: n
       })
     })

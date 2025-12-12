@@ -16,9 +16,9 @@ function c(e, t) {
     r = t.split(".").map(Number),
     i = Math.max(n.length, r.length);
   for (let e = 0; e < i; e++) {
-    var a, o;
-    let t = null != (a = n[e]) ? a : 0,
-      i = null != (o = r[e]) ? o : 0;
+    var o, a;
+    let t = null != (o = n[e]) ? o : 0,
+      i = null != (a = r[e]) ? a : 0;
     if (t < i) return false;
     if (t > i) return 1
   }
@@ -27,7 +27,7 @@ function c(e, t) {
 
 function u(e) {
   if (!(0, i.isIOS)()) returnfalse;
-  let t = (0, a.e)();
+  let t = (0, o.e)();
   if (null == t || false === c(t, s)) returnfalse;
   let n = r.Z.getGuild(e);
   return null != n && !!l.every(e => n.features.has(e))

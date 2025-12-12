@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 551097, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk110560 = require("./110560.jsx"),
   Chunk73826 = require("./73826.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk952334 = require("./952334.js");
+  Chunk765486 = require("./765486.js");
 let v = (0, Chunk467721.animated)(Chunk685613.ZP),
   j = e => {
     let {
@@ -27,11 +27,11 @@ let v = (0, Chunk467721.animated)(Chunk685613.ZP),
       onCtxMenuSelect: i,
       onCtxMenuOpen: h,
       onCtxMenuClose: j,
-      useReducedMotion: y,
-      isExpanded: C,
-      isExpansionAnimationComplete: _
+      useReducedMotion: _,
+      isExpanded: y,
+      isExpansionAnimationComplete: C
     } = e, S = (0, d.aM)(), E = r.useCallback(() => {
-      (0, f.openDisclosureModal)(t, {
+      (0, x.openDisclosureModal)(t, {
         content: u.jn.QUEST_BAR_V2,
         ctaContent: c.jZ.OPEN_DISCLOSURE,
         sourceQuestContent: u.jn.QUEST_BAR_V2
@@ -43,15 +43,15 @@ let v = (0, Chunk467721.animated)(Chunk685613.ZP),
         impressionId: S,
         sourceQuestContent: u.jn.QUEST_BAR_V2
       })
-    }, [S, t]), T = C && _, N = (0, a.jsx)(o.P3F, {
+    }, [S, t]), T = y && C, N = (0, a.jsx)(o.P3F, {
       onClick: O,
-      className: l()(g.clickable, {
-        [g.logo]: T
+      className: l()(b.clickable, {
+        [b.logo]: T
       }),
       children: (0, a.jsx)(v, {
         quest: t,
         withGameTile: false,
-        logotypeClassName: g.partnerBranding,
+        logotypeClassName: b.partnerBranding,
         logotypeStyle: {
           height: 24,
           maxWidth: 92,
@@ -63,8 +63,8 @@ let v = (0, Chunk467721.animated)(Chunk685613.ZP),
       })
     });
     return (0, a.jsxs)(s.animated.div, {
-      className: l()(g.wrapper, g.rewardHighlightWrapper, {
-        [g.interactable]: T
+      className: l()(b.wrapper, b.rewardHighlightWrapper, {
+        [b.interactable]: T
       }),
       style: {
         transform: (0, s.to)([n.to({
@@ -73,21 +73,21 @@ let v = (0, Chunk467721.animated)(Chunk685613.ZP),
         })], e => "translateY(".concat(e, "px)"))
       },
       children: [(0, a.jsx)(s.animated.div, {
-        className: g.opaqueExpandedBackground,
+        className: b.opaqueExpandedBackground,
         style: {
           opacity: n.to({
             range: [0, 1],
             output: [0, 1]
           })
         }
-      }), (0, a.jsx)(x.Z, {
+      }), (0, a.jsx)(f.Z, {
         quest: t,
         expansionSpring: n,
         isFullyExpanded: T,
         partnerBranding: N,
-        useReducedMotion: y
+        useReducedMotion: _
       }), (0, a.jsxs)(s.animated.div, {
-        className: g.promotedBadgeWrapper,
+        className: b.promotedBadgeWrapper,
         style: {
           opacity: n.to({
             range: [0, 1],
@@ -95,15 +95,15 @@ let v = (0, Chunk467721.animated)(Chunk685613.ZP),
           })
         },
         children: [(0, a.jsxs)(o.P3F, {
-          className: g.promotedBadge,
+          className: b.promotedBadge,
           onClick: E,
           children: [(0, a.jsx)(o.Text, {
             color: "always-white",
             variant: "text-xs/normal",
-            children: b.intl.string(b.t.o6FLcF)
+            children: g.intl.string(g.t.o6FLcF)
           }), (0, a.jsx)(o.idN, {
             color: o.TVs.colors.WHITE,
-            className: g.promotedBadgeIcon
+            className: b.promotedBadgeIcon
           })]
         }), (0, a.jsx)(p.i, {
           onOpen: h,
@@ -134,12 +134,12 @@ let v = (0, Chunk467721.animated)(Chunk685613.ZP),
               }
               return e
             }({}, e), n = n = {
-              className: g.submenuWrapper,
-              "aria-label": b.intl.string(b.t.DEoVWZ),
+              className: b.submenuWrapper,
+              "aria-label": g.intl.string(g.t.DEoVWZ),
               children: (0, a.jsx)(o.xhG, {
                 size: "md",
                 color: "currentColor",
-                className: l()(g.submenuIcon, g.white)
+                className: l()(b.submenuIcon, b.white)
               })
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);

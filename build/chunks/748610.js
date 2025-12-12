@@ -95,18 +95,18 @@ let E = {
       searchQuery: O
     });
     let I = n.map(e => d(e));
-    return a.Z.dispatch({
+    return o.Z.dispatch({
       type: "SEARCH_MESSAGES_START",
       ids: I
     }), S.fetch(e => {
       let {
         body: n
       } = e, r = Object.entries(n.tabs);
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "SEARCH_MESSAGES_SUCCESS",
         guildId: g(v),
         data: r.map(e => {
-          var t, r, a;
+          var t, r, o;
           let [s, l] = e, c = d(s), u = l.cursor;
           return {
             id: c,
@@ -116,7 +116,7 @@ let E = {
             messages: l.messages,
             channels: null != (t = l.channels) ? t : [],
             threads: null != (r = l.threads) ? r : [],
-            members: (null != (a = l.members) ? a : []).map(e => (0, o.Z)(e)),
+            members: (null != (o = l.members) ? o : []).map(e => (0, a.Z)(e)),
             doingHistoricalIndex: n.doing_deep_historical_index,
             documentsIndexed: n.documents_indexed
           }
@@ -126,12 +126,12 @@ let E = {
         tabEntries: r
       })
     }, () => {
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "SEARCH_MESSAGES_INDEXING",
         ids: I
       })
     }, e => {
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "SEARCH_MESSAGES_FAILURE",
         ids: I,
         error: e
@@ -160,12 +160,12 @@ let E = {
       searchContext: t,
       searchQueryString: n,
       searchQuery: f
-    }), a.Z.dispatch({
+    }), o.Z.dispatch({
       type: "SEARCH_MESSAGES_START",
       ids: [h]
     }), E.fetch(e => {
       var t, n, r;
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "SEARCH_MESSAGES_SUCCESS",
         guildId: g(_),
         data: [{
@@ -174,7 +174,7 @@ let E = {
           totalResults: e.body.total_results,
           messages: e.body.messages,
           threads: null != (t = e.body.threads) ? t : [],
-          members: (null != (n = e.body.members) ? n : []).map(e => (0, o.Z)(e)),
+          members: (null != (n = e.body.members) ? n : []).map(e => (0, a.Z)(e)),
           doingHistoricalIndex: e.body.doing_deep_historical_index,
           documentsIndexed: e.body.documents_indexed,
           channels: null != (r = e.body.channels) ? r : [],
@@ -182,12 +182,12 @@ let E = {
         }]
       })
     }, () => {
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "SEARCH_MESSAGES_INDEXING",
         ids: [h]
       })
     }, e => {
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "SEARCH_MESSAGES_FAILURE",
         ids: [h],
         error: e
@@ -205,13 +205,13 @@ let E = {
     })
   },
   clearSearchMessages: function(e) {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SEARCH_MESSAGES_CLEAR",
       id: e
     })
   },
   initializeAutocomplete: function(e) {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "SEARCH_AUTOCOMPLETE_INITIALIZE",
       searchContext: e
     })
@@ -223,7 +223,7 @@ let E = {
       queryString: r,
       cursorScope: i
     } = e;
-    r.trim().length > 0 && s.DZ.loadIfNecessary(), a.Z.dispatch({
+    r.trim().length > 0 && s.DZ.loadIfNecessary(), o.Z.dispatch({
       type: "SEARCH_AUTOCOMPLETE_QUERY_UPDATE",
       searchContext: t,
       tokens: n,

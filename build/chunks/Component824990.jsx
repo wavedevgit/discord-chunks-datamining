@@ -1,8 +1,8 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 824990, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,21 +10,21 @@ var Chunk54381 = require("./54381.js"),
   Chunk471445 = require("./471445.js"),
   Chunk8426 = require("./8426.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk551952 = require("./551952.js");
-let d = function(e) {
+  Chunk197530 = require("./197530.js");
+let u = function(e) {
   var t;
   let {
     channel: n,
-    end: d
-  } = e, u = i.useCallback(() => {
-    (0, s.r2)({
+    end: u
+  } = e, d = i.useCallback(() => {
+    (0, a.r2)({
       channelId: n.id,
       title: n.name,
       description: "",
       emoji: null,
       icon: null
     })
-  }, [n]), g = null != (t = (0, a.KS)(n)) ? t : l.VL1;
+  }, [n]), g = null != (t = (0, s.KS)(n)) ? t : l.VL1;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: c.suggestedChannel,
@@ -37,10 +37,10 @@ let d = function(e) {
       }), (0, r.jsx)(l.Button, {
         size: "sm",
         variant: "primary",
-        onClick: u,
+        onClick: d,
         text: o.intl.string(o.t.OYkgVk)
       })]
-    }), d && (0, r.jsx)("div", {
+    }), u && (0, r.jsx)("div", {
       className: c.suggestedSeparator
     })]
   })

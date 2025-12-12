@@ -12,8 +12,8 @@ let s = (0, Chunk442837.Kb)(Chunk551428.Z, {
   getQueryId: Chunk981631.McO.STORE_LISTING,
   get: e => {
     var t;
-    return null != e && null != (t = a.Z.getForSKU(e)) ? t : null
+    return null != e && null != (t = o.Z.getForSKU(e)) ? t : null
   },
   load: e => null != e ? (0, i.km)(e) : Promise.resolve(),
-  getIsLoading: e => null != e && a.Z.isFetchingForSKU(e)
+  getIsLoading: e => null != e && o.Z.isFetchingForSKU(e)
 })

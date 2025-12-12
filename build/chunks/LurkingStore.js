@@ -52,10 +52,10 @@ function b(e) {
     lurker: n,
     source: r,
     directoryChannelId: i,
-    loadId: a
+    loadId: o
   } = e;
   if (n) {
-    switch (g(t), E(t, a), r) {
+    switch (g(t), E(t, o), r) {
       case u.vtS.MOBILE_GUILD_DISCOVERY:
         _ = {
           type: u.vtS.MOBILE_GUILD_DISCOVERY
@@ -88,8 +88,8 @@ function O(e) {
     guildId: n,
     joinedAt: r,
     user: i
-  } = e, a = i.id === (null == (t = c.default.getCurrentUser()) ? true : t.id), o = null == r;
-  return !!a && !o && !!f.includes(n) && (h(n), _ = null, true)
+  } = e, o = i.id === (null == (t = c.default.getCurrentUser()) ? true : t.id), a = null == r;
+  return !!o && !a && !!f.includes(n) && (h(n), _ = null, true)
 }
 
 function v(e) {
@@ -115,7 +115,7 @@ function I(e) {
 }
 
 function T() {
-  f = Chunk430824.Z.getGuildsArray().filter(e => (0, o.zN)(e)).map(e => e.id)
+  f = Chunk430824.Z.getGuildsArray().filter(e => (0, a.zN)(e)).map(e => e.id)
 }
 class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -131,7 +131,7 @@ class C extends(r = Chunk442837.ZP.Store) {
     let t = l.Z.getGuild(e);
     if (null == t) returnfalse;
     let n = s.ZP.isCurrentUserGuest(e),
-      r = (0, o.zN)(t);
+      r = (0, a.zN)(t);
     return !!(!n && r)
   }
   getLurkingSource() {

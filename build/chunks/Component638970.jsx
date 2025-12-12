@@ -81,29 +81,29 @@ function I(e) {
   } = (0, f.Z)({
     userId: t.id,
     guildId: y
-  }), w = t.id === n.id, D = (0, a.e7)([c.Z, l.Z], () => {
+  }), w = t.id === n.id, D = (0, o.e7)([c.Z, l.Z], () => {
     let e = w ? c.Z.getStatus() : l.Z.getStatus(t.id, y);
     return e === E.Sk.OFFLINE || e === E.Sk.INVISIBLE
   }), {
     voiceActivityStatusEnabled: x
-  } = (0, o.U)({
+  } = (0, a.U)({
     location: "UserProfileStackedActivity"
   }), L = x && null == N && null == R && null != P, j = i.useCallback(e => {
     let i = [],
-      a = S(O({}, e), {
+      o = S(O({}, e), {
         user: t,
         currentUser: n,
         onClose: I
       });
     return null != N && i.push((0, r.jsx)(m.Z, O({
       stream: N
-    }, a), "stream")), A.forEach((e, t) => {
+    }, o), "stream")), A.forEach((e, t) => {
       i.push((0, r.jsx)(_.Z, O({
         activity: e
-      }, a), "live-".concat(t)))
+      }, o), "live-".concat(t)))
     }), L && i.push((0, r.jsx)(h.Z, O({
       voiceChannel: P
-    }, a), "voice")), i
+    }, o), "voice")), i
   }, [n, L, A, I, N, t, P]);
   return D ? null : (0, r.jsx)(p.Z, {
     renderCards: j,

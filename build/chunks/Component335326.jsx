@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk442550 = require("./442550.jsx"),
   Chunk297781 = require("./297781.jsx"),
   Chunk443487 = require("./443487.jsx"),
-  Chunk925002 = require("./925002.js");
+  Chunk451419 = require("./451419.js");
 let u = [Chunk297781.Yl, Chunk297781.Rg],
   d = e => {
     let {
@@ -20,7 +20,7 @@ let u = [Chunk297781.Yl, Chunk297781.Rg],
       selected: i
     } = e, {
       largeImage: d
-    } = (0, a.rv)({
+    } = (0, o.rv)({
       entry: t
     });
     return (0, r.jsxs)(l.Zb, {
@@ -38,7 +38,7 @@ let u = [Chunk297781.Yl, Chunk297781.Rg],
             entry: t
           }, n))
         })]
-      }), (0, r.jsx)(o.f, {
+      }), (0, r.jsx)(a.f, {
         src: null == d ? true : d.src,
         size: 48,
         className: c.thumbnail,

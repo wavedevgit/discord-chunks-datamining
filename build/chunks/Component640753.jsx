@@ -15,8 +15,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk347904 = require("./347904.js"),
   Chunk620652 = require("./620652.jsx"),
   Chunk815605 = require("./815605.js"),
-  Chunk719426 = require("./719426.js"),
-  Chunk791541 = require("./791541.js");
+  Chunk537509 = require("./537509.js"),
+  Chunk491726 = require("./491726.js");
 
 function h(e) {
   let {
@@ -27,11 +27,11 @@ function h(e) {
     color: E,
     count: b,
     emojiSize: y
-  } = e, O = (0, a.e7)([u.Z], () => u.Z.getEffectForEmojiId(t, n, h)), v = g ? m : _, S = i.useMemo(() => (0, p.Zn)(h, E, t, {
+  } = e, O = (0, o.e7)([u.Z], () => u.Z.getEffectForEmojiId(t, n, h)), v = g ? m : _, S = i.useMemo(() => (0, p.Zn)(h, E, t, {
     key: O,
     messageId: n
-  }), [E, O, h, t, n]), [I, T] = i.useState(false), C = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), A = c.Yk.useSetting(), N = i.useCallback(() => {
-    o.Z.dispatch({
+  }), [E, O, h, t, n]), [I, T] = i.useState(false), C = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), A = c.Yk.useSetting(), N = i.useCallback(() => {
+    a.Z.dispatch({
       type: "BURST_REACTION_EFFECT_CLEAR",
       channelId: t,
       messageId: n,

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk979554 = require("./979554.js"),
   Chunk656698 = require("./656698.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,14 +17,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -32,9 +32,9 @@ function o(e) {
 let s = e => e instanceof l;
 class l extends Chunk656698.Z {
   static fromServer(e) {
-    return new l(o({}, super.fromServer(e), e))
+    return new l(a({}, super.fromServer(e), e))
   }
   constructor(e) {
-    super(e), a(this, "title", true), a(this, "description", true), a(this, "accessibilityLabel", true), a(this, "reducedMotionSrc", true), a(this, "thumbnailPreviewSrc", true), a(this, "effects", true), a(this, "animationType", true), a(this, "staticFrameSrc", true), this.type = r.Z.PROFILE_EFFECT, this.title = e.title, this.description = e.description, this.accessibilityLabel = e.accessibilityLabel, this.reducedMotionSrc = e.reducedMotionSrc, this.thumbnailPreviewSrc = e.thumbnailPreviewSrc, this.effects = e.effects, this.animationType = e.animationType, this.staticFrameSrc = e.staticFrameSrc
+    super(e), o(this, "title", true), o(this, "description", true), o(this, "accessibilityLabel", true), o(this, "reducedMotionSrc", true), o(this, "thumbnailPreviewSrc", true), o(this, "effects", true), o(this, "animationType", true), o(this, "staticFrameSrc", true), this.type = r.Z.PROFILE_EFFECT, this.title = e.title, this.description = e.description, this.accessibilityLabel = e.accessibilityLabel, this.reducedMotionSrc = e.reducedMotionSrc, this.thumbnailPreviewSrc = e.thumbnailPreviewSrc, this.effects = e.effects, this.animationType = e.animationType, this.staticFrameSrc = e.staticFrameSrc
   }
 }

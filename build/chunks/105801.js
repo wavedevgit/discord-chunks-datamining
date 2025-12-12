@@ -25,7 +25,7 @@ let r = new(require("./710845.js")).Z("mp4box"),
     containerFormat: null
   };
 
-function a(e) {
+function o(e) {
   if (e.startsWith("avc1")) return "H.264/AVC";
   if (e.startsWith("hev1") || e.startsWith("hvc1")) return "H.265/HEVC";
   if (e.startsWith("vp08")) return "VP8";
@@ -34,7 +34,7 @@ function a(e) {
   return e
 }
 
-function o(e) {
+function a(e) {
   if (e.startsWith("mp4a.40.2")) return "AAC-LC";
   if (e.startsWith("mp4a.40.5")) return "HE-AAC";
   if (e.startsWith("mp4a.40.29")) return "HE-AACv2";
@@ -145,8 +145,8 @@ async function h(e) {
           C = {
             videoCodec: null != (c = null == I ? true : I.codec) ? c : null,
             audioCodec: null != (f = null == T ? true : T.codec) ? f : null,
-            videoCodecDescription: null != I ? a(I.codec) : null,
-            audioCodecDescription: null != T ? o(T.codec) : null,
+            videoCodecDescription: null != I ? o(I.codec) : null,
+            audioCodecDescription: null != T ? a(T.codec) : null,
             videoBitrate: null != (p = null == I ? true : I.bitrate) ? p : null,
             audioBitrate: null != (_ = null == T ? true : T.bitrate) ? _ : null,
             audioChannels: null != (m = null == T || null == (r = T.audio) ? true : r.channel_count) ? m : null,

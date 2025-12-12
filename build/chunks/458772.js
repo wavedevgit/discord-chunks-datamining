@@ -51,7 +51,7 @@ class u extends Chunk442837.ZP.Store {
     this.guilds.clear(), this.channels.clear()
   }
   handleConnectionOpen(e) {
-    let t = o.Z.allGuildIds();
+    let t = a.Z.allGuildIds();
     for (let e of this.guilds.keys()) t.has(e) || this.delete(e)
   }
   handleLogout(e) {

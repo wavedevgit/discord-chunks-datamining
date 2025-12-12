@@ -63,7 +63,7 @@ let h = {
     isSupportedPrivateBrowsingPerkPlatform: (0, Chunk818710.ED)() || (0, Chunk818710.V5)(),
     installTimeout: 6e5
   },
-  g = e => (0, a.M)()(t => p(m(p({}, h), {
+  g = e => (0, o.M)()(t => p(m(p({}, h), {
     setRegistration: e => t(t => m(p({}, t), {
       registration: e
     })),
@@ -136,5 +136,5 @@ function O(e) {
   let t = (0, i.useContext)(E),
     n = y(),
     r = null != t ? t : n;
-  return null != e ? (0, o.o)(r, e) : (0, o.o)(r)
+  return null != e ? (0, a.o)(r, e) : (0, a.o)(r)
 }

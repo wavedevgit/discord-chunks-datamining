@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 18868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => h
@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk310752 = require("./310752.jsx"),
   Chunk897842 = require("./897842.jsx"),
   Chunk731994 = require("./731994.js"),
-  Chunk796591 = require("./796591.js");
+  Chunk386325 = require("./386325.js");
 let m = () => {
     (0, Chunk481060.ZDy)(async () => {
       let {
@@ -50,15 +50,15 @@ let m = () => {
       className: t,
       onDrop: n,
       children: i
-    } = e, [h, f] = r.useState(false), x = r.useRef(null), b = r.useCallback(e => {
-      p(e), f(true), (0, s.Mr3)(c.A)
-    }, []), g = r.useCallback(e => {
+    } = e, [h, x] = r.useState(false), f = r.useRef(null), g = r.useCallback(e => {
+      p(e), x(true), (0, s.Mr3)(c.A)
+    }, []), b = r.useCallback(e => {
       p(e);
-      let t = x.current,
+      let t = f.current,
         n = e.relatedTarget;
-      null != n && (null == t || t.contains(n)) || f(false)
+      null != n && (null == t || t.contains(n)) || x(false)
     }, []), v = r.useCallback(async e => {
-      p(e), f(false);
+      p(e), x(false);
       let t = e.dataTransfer;
       if (null == t) return void m();
       let a = await Promise.all(Array.from(t.items).map(e => {
@@ -68,11 +68,11 @@ let m = () => {
       a.length > 0 ? n(a) : m()
     }, [n]);
     return (0, a.jsxs)("div", {
-      ref: x,
+      ref: f,
       className: l()(t, u.wrapper),
-      onDragEnter: b,
+      onDragEnter: g,
       onDragOver: p,
-      onDragLeave: g,
+      onDragLeave: b,
       onDrop: v,
       children: [i, h && (0, a.jsx)("div", {
         className: u.uploadModal,

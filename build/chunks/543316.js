@@ -46,7 +46,7 @@ module.exports = {
       p = c.splitBlock(l, f),
       _ = p.getSelectionAfter(),
       b = c.setBlockType(p, _, "atomic"),
-      y = o.create({
+      y = a.create({
         entity: t
       }),
       O = {
@@ -65,7 +65,7 @@ module.exports = {
       prevSibling: O.key
     }));
     var S = [new h(O), new h(v)],
-      I = a.createFromArray(S),
+      I = o.createFromArray(S),
       T = c.replaceWithFragment(b, _, I),
       C = T.merge({
         selectionBefore: s,
@@ -74,13 +74,13 @@ module.exports = {
     return u.push(e, C, "insert-fragment")
   },
   moveAtomicBlock: function(e, t, n, r) {
-    var i, a = e.getCurrentContent(),
-      o = e.getSelection();
+    var i, o = e.getCurrentContent(),
+      a = e.getSelection();
     if ("before" === r || "after" === r) {
-      var s = a.getBlockForKey("before" === r ? n.getStartKey() : n.getEndKey());
-      i = _(a, t, s, r)
+      var s = o.getBlockForKey("before" === r ? n.getStartKey() : n.getEndKey());
+      i = _(o, t, s, r)
     } else {
-      var l = c.removeRange(a, n, "backward"),
+      var l = c.removeRange(o, n, "backward"),
         d = l.getSelectionAfter(),
         f = l.getBlockForKey(d.getFocusKey());
       if (0 === d.getStartOffset()) i = _(l, t, f, "before");
@@ -93,7 +93,7 @@ module.exports = {
       }
     }
     var g = i.merge({
-      selectionBefore: o,
+      selectionBefore: a,
       selectionAfter: i.getSelectionAfter().set("hasFocus", true)
     });
     return u.push(e, g, "move-block")

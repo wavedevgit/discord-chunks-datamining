@@ -19,7 +19,7 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 let u = new Chunk537986.Z(Chunk271383.ZP.isMember, (e, t) => {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "GUILD_MEMBERS_REQUEST",
     guildIds: [e],
     userIds: t

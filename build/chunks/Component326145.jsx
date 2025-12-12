@@ -19,8 +19,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk745752 = require("./745752.js"),
   Chunk17181 = require("./17181.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk337917 = require("./337917.js"),
-  Chunk321347 = require("./321347.js");
+  Chunk76531 = require("./76531.js"),
+  Chunk718215 = require("./718215.js");
 
 function v(e) {
   let {
@@ -31,7 +31,7 @@ function v(e) {
     width: v,
     height: y
   } = (0, c.ZP)(), I = i.useCallback(() => {
-    null != t && null != n && ((0, m.I1)(t), (0, b.default)({
+    null != t && null != n && ((0, m.I1)(t), (0, _.default)({
       guildId: t,
       returnChannelId: n
     }))
@@ -64,16 +64,16 @@ function v(e) {
         children: [(0, r.jsx)(o.Heading, {
           variant: "heading-xxl/normal",
           color: "always-white",
-          children: _.intl.string(_.t.CCmhpF)
+          children: b.intl.string(b.t.CCmhpF)
         }), (0, r.jsx)(o.Text, {
           variant: "text-lg/normal",
           color: "always-white",
-          children: _.intl.string(_.t.gRAHcZ)
+          children: b.intl.string(b.t.gRAHcZ)
         })]
       }), (0, r.jsx)(o.Button, {
         variant: "overlay-primary",
         size: "md",
-        text: _.intl.string(_.t.VVFjAC),
+        text: b.intl.string(b.t.VVFjAC),
         onClick: I
       })]
     })]

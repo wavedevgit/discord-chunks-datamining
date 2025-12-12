@@ -3,9 +3,9 @@
 "use strict";
 var r = require("./117895.js").f,
   Chunk77025 = require("./77025.js"),
-  a = require("./751736.js")("toStringTag");
+  o = require("./751736.js")("toStringTag");
 module.exports = function(e, t, n) {
-  e && !n && (e = e.prototype), e && !i(e, a) && r(e, a, {
+  e && !n && (e = e.prototype), e && !i(e, o) && r(e, o, {
     configurable: true,
     value: t
   })

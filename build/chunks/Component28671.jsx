@@ -1,7 +1,7 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 49941 **/
 /** chunk id: 28671, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,15 +17,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function b(e) {
   let {
     user: t,
     application: n,
-    onDismiss: m
+    onDismiss: b
   } = e, {
     trackUserProfileEditAction: h
-  } = (0, c.KZ)(), y = i.useMemo(() => new s.q({
-    type: a.l.APPLICATION,
+  } = (0, s.KZ)(), y = i.useMemo(() => new c.q({
+    type: l.l.APPLICATION,
     applicationId: n.id
   }), [n.id]), O = i.useCallback(() => {
     null != y && ((0, u.qH)(y.type, y), h(function(e) {
@@ -55,37 +55,37 @@ function m(e) {
     subtle: true,
     cta: (0, r.jsx)(f.Z.Cta, {
       showSuggestedForYou: true,
-      heading: b.intl.format(b.t.OIzLCy, {
+      heading: m.intl.format(m.t.OIzLCy, {
         applicationName: n.name
       }),
-      content: b.intl.format(b.t.BQySru, {
+      content: m.intl.format(m.t.BQySru, {
         applicationName: n.name
       }),
       buttons: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(l.u, {
-          text: b.intl.string(b.t.WAI6xu),
+        children: [(0, r.jsx)(a.u, {
+          text: m.intl.string(m.t.WAI6xu),
           ariaHidden: true,
           children: (0, r.jsx)(o.Yd2, {
             variant: "secondary",
             size: "sm",
             icon: o.Dio,
-            "aria-label": b.intl.string(b.t.WAI6xu),
+            "aria-label": m.intl.string(m.t.WAI6xu),
             onClick: () => {
-              m(p.L.USER_DISMISS)
+              b(p.L.USER_DISMISS)
             }
           })
-        }), (0, r.jsx)(l.u, {
-          text: b.intl.string(b.t["lBG2s/"]),
+        }), (0, r.jsx)(a.u, {
+          text: m.intl.string(m.t["lBG2s/"]),
           ariaHidden: true,
           children: (0, r.jsx)(o.Yd2, {
             variant: "primary",
             size: "sm",
             icon: o.kmB,
-            "aria-label": b.intl.formatToPlainString(b.t.KfGahB, {
+            "aria-label": m.intl.formatToPlainString(m.t.KfGahB, {
               applicationName: n.name
             }),
             onClick: () => {
-              m(p.L.TAKE_ACTION), O()
+              b(p.L.TAKE_ACTION), O()
             }
           })
         })]

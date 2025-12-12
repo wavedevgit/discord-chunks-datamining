@@ -22,7 +22,7 @@ let d = (e, t) => {
     userId: r,
     colorRoleId: l
   } = e;
-  (0, s.openUserProfileModal)({
+  (0, a.openUserProfileModal)({
     userId: r,
     guildId: n,
     sourceAnalyticsLocations: t,
@@ -33,12 +33,12 @@ let d = (e, t) => {
 function _(e, t, n, r) {
   let {
     analyticsLocations: i
-  } = (0, a.ZP)();
+  } = (0, s.ZP)();
   return l.useCallback(l => {
     if (null == e) return;
-    let a = c.default.getUser(e.userId);
-    null != a && (l.stopPropagation(), (0, E.nm)(l, {
-      user: a,
+    let s = c.default.getUser(e.userId);
+    null != s && (l.stopPropagation(), (0, E.nm)(l, {
+      user: s,
       guildId: e.guildId,
       analyticsLocations: null != n ? [n] : i,
       onCloseContextMenu: r,
@@ -50,7 +50,7 @@ function _(e, t, n, r) {
 function A(e, t, n) {
   let {
     analyticsLocations: r
-  } = (0, a.ZP)();
+  } = (0, s.ZP)();
   return l.useCallback(l => {
     if (null == e) return;
     let i = c.default.getUser(e.userId);

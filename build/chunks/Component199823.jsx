@@ -2,24 +2,24 @@
 /** chunk id: 199823, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => a
+  M: () => o
 }), require("./49124.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk635041 = require("./635041.jsx");
 
-function a(e) {
+function o(e) {
   let {
     name: t,
     form: n,
-    disabled: a,
-    autoComplete: o,
+    disabled: o,
+    autoComplete: a,
     selectionMode: s,
     selectedItems: l,
     onSelectionChange: c,
     listItems: u
   } = e;
-  if (null == t && (null == o || "off" === o)) return null;
+  if (null == t && (null == a || "off" === a)) return null;
 
   function d(e) {
     let t = Array.from(e.target.selectedOptions).map(e => e.dataset.id);
@@ -29,11 +29,11 @@ function a(e) {
     children: (0, r.jsx)("select", {
       "aria-hidden": true,
       tabIndex: false,
-      disabled: a,
+      disabled: o,
       name: t,
       form: n,
       multiple: "multiple" === s,
-      autoComplete: o,
+      autoComplete: a,
       onChange: d,
       children: null == u ? true : u.map(e => {
         let t = "object" == typeof e.value ? JSON.stringify(e.value) : String(e.value);

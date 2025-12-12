@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk911969 = require("./911969.js"),
   Chunk367907 = require("./367907.js"),
   Chunk998698 = require("./998698.js"),
@@ -37,11 +37,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk645174 = require("./645174.jsx"),
   Chunk120481 = require("./120481.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk919148 = require("./919148.js");
+  Chunk867641 = require("./867641.js");
 let k = Chunk473749.forwardRef(function(e, t) {
   let {
     value: n,
-    type: a,
+    type: o,
     channel: k,
     className: U,
     id: G,
@@ -64,8 +64,8 @@ let k = Chunk473749.forwardRef(function(e, t) {
     maybeShowAutocomplete: en,
     hideAutocomplete: er,
     moveSelection: ei,
-    spellcheckEnabled: ea,
-    canUseCommands: eo,
+    spellcheckEnabled: eo,
+    canUseCommands: ea,
     canOnlyUseTextCommands: es,
     disableAutoFocus: el,
     disableEnterToSubmit: ec,
@@ -85,30 +85,30 @@ let k = Chunk473749.forwardRef(function(e, t) {
     var r;
     let {
       value: i,
-      selection: a
-    } = n, o = b.bN.richValue(e), s = e.selection, l = false;
-    if (true !== i && i !== o) {
+      selection: o
+    } = n, a = b.bN.richValue(e), s = e.selection, l = false;
+    if (true !== i && i !== a) {
       if (e.children = i, "parent" === t && !e.previewMarkdown && e.chatInputType === p.Ie.EDIT) {
         try {
           e.previewMarkdown = true, (0, R.KH)(e, k.guild_id, k.id)
         } finally {
           e.previewMarkdown = false
-        }(0, R.KH)(e, k.guild_id, k.id), a = true
+        }(0, R.KH)(e, k.guild_id, k.id), o = true
       }
-      "undo" !== t && true !== i && i !== o && m.T.insertEntry(e, "other", false, o, s), l = true
+      "undo" !== t && true !== i && i !== a && m.T.insertEntry(e, "other", false, a, s), l = true
     }
-    if (null == a || b.Ew.isValid(e, a) || (a = true), (l || !b.Ew.isValid(e, s)) && true === a) {
+    if (null == o || b.Ew.isValid(e, o) || (o = true), (l || !b.Ew.isValid(e, s)) && true === o) {
       let t = b.bN.end(e, []);
-      a = {
+      o = {
         anchor: t,
         focus: t
       }
     }
-    let u = null != a && !b.Ew.equals(a, s);
-    if (l && !el && b.bN.focus(e), null != a && u) {
-      e.selection = a;
+    let u = null != o && !b.Ew.equals(o, s);
+    if (l && !el && b.bN.focus(e), null != o && u) {
+      e.selection = o;
       let t = m.T.currentEntry(e);
-      null != t && (t.selection = a), l = true
+      null != t && (t.selection = o), l = true
     }
     let d = _.cr(e);
     if (null != d && d[0].command.id !== (null == (r = c.Z.getActiveCommand(k.id)) ? true : r.id) && m.T.withMergedEntry(e, () => {
@@ -125,8 +125,8 @@ let k = Chunk473749.forwardRef(function(e, t) {
     eI.current = true
   }, []), eR = (0, I.Z)({
     channel: k,
-    chatInputType: a,
-    canUseCommands: eo,
+    chatInputType: o,
+    canUseCommands: ea,
     canOnlyUseTextCommands: es,
     onChangeStart: eN,
     onChangeEnd: eP,
@@ -141,7 +141,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
   }, [k.guild_id, k.id, eR]), eD = i.useCallback(() => {
     let e, t = b.bN.getNodesOfType(eR, ["gameMentionInput", "timestampMentionInput"]),
       n = null != t ? [...t] : null,
-      r = eo ? c.Z.getActiveCommand(k.id) : null,
+      r = ea ? c.Z.getActiveCommand(k.id) : null,
       i = false;
     if (null != r && null != r.options) {
       let t = ew(r, false);
@@ -152,12 +152,12 @@ let k = Chunk473749.forwardRef(function(e, t) {
       });
       for (let e of r.options) !e.required || e.name in t.values || (E.Q.insertCommandOption(eR, e), n.push(e));
       if (n.length > 0) {
-        var a, o;
+        var o, a;
         let e = n[0];
         E.Q.selectCommandOption(eR, e.name), i = true, (0, l.yw)(j.rMx.APPLICATION_COMMAND_VALIDATION_FAILED, {
           application_id: null == r ? true : r.applicationId,
-          command_id: null == r || null == (a = r.rootCommand) ? true : a.id,
-          argument_type: s.jw[null != (o = null == e ? true : e.type) ? o : 3],
+          command_id: null == r || null == (o = r.rootCommand) ? true : o.id,
+          argument_type: s.jw[null != (a = null == e ? true : e.type) ? a : 3],
           is_required: null == e ? true : e.required
         })
       }
@@ -179,7 +179,7 @@ let k = Chunk473749.forwardRef(function(e, t) {
       mode: "raw",
       ignoreTrailingEmptyNodes: true
     }), r, e)
-  }, [k.id, eR, ee, et, ew, eo]);
+  }, [k.id, eR, ee, et, ew, ea]);
   (0, T.Z)(t, eR, k, eD), (0, N.Z)(eR, ev, K);
   let {
     handleKeyDown: ex,
@@ -233,16 +233,16 @@ let k = Chunk473749.forwardRef(function(e, t) {
       handler: eM
     }), (0, r.jsx)("div", {
       ref: ev,
-      className: o()(U, M.slateContainer),
+      className: a()(U, M.slateContainer),
       children: (0, r.jsx)(h.Z, {
         id: G,
         editor: eR,
         channelId: k.id,
         guildId: k.guild_id,
-        className: o()(M.slateTextArea, H),
+        className: a()(M.slateTextArea, H),
         placeholder: B,
         readOnly: eC,
-        spellCheck: ea,
+        spellCheck: eo,
         autoFocus: !el,
         canFocus: !Z,
         onChange: eU,

@@ -26,11 +26,11 @@ function f(e) {
     isOwner: n,
     canManageGuildRoleSubscriptions: r,
     isGuildEligibleForRoleSubscriptions: i,
-    isExpeditedMonetizationOnboardingGuild: a,
-    isUserInCreatorMonetizationEligibleCountry: o,
+    isExpeditedMonetizationOnboardingGuild: o,
+    isUserInCreatorMonetizationEligibleCountry: a,
     shouldRestrictUpdatingRoleSubscriptionSettings: s
   } = e;
-  return !!r && (!s || !!n) && (!!(t.features.has(u.GuildFeatures.CREATOR_MONETIZABLE) || t.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) || !!t.features.has(u.GuildFeatures.COMMUNITY) && (!!i || !!a) && n && o)
+  return !!r && (!s || !!n) && (!!(t.features.has(u.GuildFeatures.CREATOR_MONETIZABLE) || t.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) || !!t.features.has(u.GuildFeatures.COMMUNITY) && (!!i || !!o) && n && a)
 }
 
 function p(e) {
@@ -41,10 +41,10 @@ function p(e) {
     isOwner: n,
     isUserInCreatorMonetizationEligibleCountry: r,
     isMonetizationWaitlistEnabledForGuild: i,
-    isGuildEligibleForRoleSubscriptions: a,
-    isExpeditedMonetizationOnboardingGuild: o
+    isGuildEligibleForRoleSubscriptions: o,
+    isExpeditedMonetizationOnboardingGuild: a
   } = e;
-  return n && !r && i ? 1 : n && i && (a || o) && !t.features.has(u.GuildFeatures.COMMUNITY) ? 2 : 0
+  return n && !r && i ? 1 : n && i && (o || a) && !t.features.has(u.GuildFeatures.COMMUNITY) ? 2 : 0
 }
 
 function _(e) {
@@ -58,12 +58,12 @@ function m(e) {
     u = h(e),
     d = (0, r.e7)([l.default], () => {
       let t = l.default.getCurrentUser();
-      return null != e && (0, o.eM)(e, t)
+      return null != e && (0, a.eM)(e, t)
     }),
     f = (0, i.Sd)(),
     {
       shouldRestrictUpdatingCreatorMonetizationSettings: _
-    } = (0, a.gX)(null == e ? true : e.id);
+    } = (0, o.gX)(null == e ? true : e.id);
   return null == e ? 0 : p({
     guild: e,
     isOwner: d,

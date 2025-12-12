@@ -11,16 +11,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk946273 = require("./946273.js"),
   Chunk441110 = require("./441110.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk223850 = require("./223850.js");
+  Chunk334090 = require("./334090.js");
 
 function d(e) {
   let {
     guild: t,
     message: n
   } = e, d = i.useRef(null);
-  return (0, s.vV)(t.id, n.author.id) ? (0, r.jsx)(o.yRy, {
+  return (0, s.vV)(t.id, n.author.id) ? (0, r.jsx)(a.yRy, {
     targetElementRef: d,
-    animation: o.yRy.Animation.TRANSLATE,
+    animation: a.yRy.Animation.TRANSLATE,
     align: "center",
     autoInvert: true,
     nudgeAlignIntoViewport: true,
@@ -39,15 +39,15 @@ function d(e) {
       let {
         onClick: t
       } = e;
-      return (0, r.jsx)(o.P3F, {
+      return (0, r.jsx)(a.P3F, {
         onClick: t,
         tag: "span",
         innerRef: d,
-        children: (0, r.jsx)(a.u, {
+        children: (0, r.jsx)(o.u, {
           text: c.intl.string(c.t["v/OYd2"]),
           children: (0, r.jsx)("div", {
             className: u.newMemberBadge,
-            children: (0, r.jsx)(o.hg2, {
+            children: (0, r.jsx)(a.hg2, {
               size: "custom",
               color: "currentColor",
               width: 20,

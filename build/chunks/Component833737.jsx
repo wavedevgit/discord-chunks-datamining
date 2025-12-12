@@ -52,7 +52,7 @@ let I = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     return null != (e = p.Z.getUserVoiceChannelId(u, n.id)) ? e : true
   }, [u, n.id]), G = r.useCallback(() => {
     k(O.jQ.COPY_ID)
-  }, [k]), q = (0, i.e7)([E.ZP], () => E.ZP.isMember(u, n.id), [u, n.id]), B = (0, S.Z)({
+  }, [k]), q = (0, i.e7)([E.ZP], () => E.ZP.isMember(u, n.id), [u, n.id]), B = (0, _.Z)({
     userId: n.id,
     guildId: u,
     sourceAnalyticsLocations: T
@@ -72,7 +72,7 @@ let I = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     guildId: u,
     location: U,
     channelId: c
-  }), Q = (0, y.Z)(n, u, null != c ? c : L, U), H = (0, h.Z)(c, N), W = (0, v.Z)(n, u), X = (0, _.Z)(n.id, u, false, U), z = (0, b.Z)({
+  }), Q = (0, y.Z)(n, u, null != c ? c : L, U), H = (0, h.Z)(c, N), W = (0, v.Z)(n, u), X = (0, S.Z)(n.id, u, false, U), z = (0, b.Z)({
     id: n.id,
     label: C.intl.string(C.t["/AXYnE"]),
     onSuccess: G

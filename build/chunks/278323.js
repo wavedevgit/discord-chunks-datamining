@@ -18,8 +18,8 @@ let f = {
     let {
       applicationId: t,
       distributor: n,
-      shareActivity: a,
-      token: o = null,
+      shareActivity: o,
+      token: a = null,
       duration: s = 0,
       closed: l = false,
       exePath: c = null,
@@ -36,9 +36,9 @@ let f = {
       url: u.ANM.ACTIVITIES,
       body: {
         application_id: t,
-        token: o,
+        token: a,
         duration: s,
-        share_activity: a,
+        share_activity: o,
         distributor: n,
         closed: l,
         exePath: c,
@@ -79,7 +79,7 @@ let f = {
       location: f
     } = e, p = s.Z.getChannel(t);
     if (null == p) return Promise.resolve(null);
-    let _ = o.ZP.parse(p, null != i ? i : "");
+    let _ = a.ZP.parse(p, null != i ? i : "");
     return c.Z.sendMessage(p.id, _, false, {
       activityAction: {
         type: n,
@@ -87,7 +87,7 @@ let f = {
         targetUserId: l
       },
       location: d.dy.ACTIVITY_SHARE
-    }).then(e => (a.ZP.trackWithMetadata(u.rMx.INVITE_SENT, {
+    }).then(e => (o.ZP.trackWithMetadata(u.rMx.INVITE_SENT, {
       location: f,
       invite_type: r.type === u.IIU.LISTENING ? u.dAT.SPOTIFY : u.dAT.APPLICATION,
       application_id: r.application_id,
@@ -102,22 +102,22 @@ let f = {
       type: n,
       activity: r,
       content: i,
-      location: a
+      location: o
     } = e;
     return l.Z.ensurePrivateChannel(t).then(e => this.sendActivityInvite({
       channelId: e,
       type: n,
       activity: r,
       content: i,
-      location: a
+      location: o
     }))
   },
-  async getJoinSecret(e, t, n, i, a) {
-    let o = {};
-    return null != i && (o.channel_id = i), null != a && (o.message_id = a), (await r.tn.get({
+  async getJoinSecret(e, t, n, i, o) {
+    let a = {};
+    return null != i && (a.channel_id = i), null != o && (a.message_id = o), (await r.tn.get({
       url: u.ANM.USER_ACTIVITY_JOIN(e, t, n),
       retries: 3,
-      query: o,
+      query: a,
       rejectWithError: false
     })).body.secret
   },
@@ -128,14 +128,14 @@ let f = {
         applicationId: n,
         partyId: r,
         messageId: i,
-        channelId: a
+        channelId: o
       } = e;
       return {
         user_id: t,
         application_id: n,
         party_id: r,
         message_id: i,
-        channel_id: a
+        channel_id: o
       }
     });
     return (await r.tn.post({

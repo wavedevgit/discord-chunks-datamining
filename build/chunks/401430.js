@@ -22,9 +22,9 @@ async function p(e, t) {
     type: "DEVELOPER_TEST_MODE_AUTHORIZATION_START"
   });
   try {
-    if (!await (0, a.W5)(e)) throw Error("Do not have access!");
+    if (!await (0, o.W5)(e)) throw Error("Do not have access!");
     let n = s.Z.getApplication(e);
-    null == n && (n = c.ZP.createFromServer(await o.ZP.fetchApplication(e)));
+    null == n && (n = c.ZP.createFromServer(await a.ZP.fetchApplication(e)));
     let l = (0, r.yE)(n.flags, f.udG.EMBEDDED);
     if (l && (null == t || !u.Z.URL_REGEX.test(t))) throw Error("Invalid Origin URL for embedded application");
     return l || d.GR(n), i.Z.dispatch({

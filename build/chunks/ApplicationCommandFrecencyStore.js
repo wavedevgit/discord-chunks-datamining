@@ -6,7 +6,7 @@ require.d(exports, {
   ZP: () => I
 }), require("./388685.js"), require("./35282.js"), require("./539854.js");
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk704907 = require("./704907.js"),
@@ -101,7 +101,7 @@ function O(e) {
 function v() {
   var e, t;
   let n = null != (t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.applicationCommandFrecency) ? true : module.applicationCommands) ? exports : {};
-  g.overwriteHistory(a().mapValues(require, e => m(p({}, e), {
+  g.overwriteHistory(o().mapValues(require, e => m(p({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   })), h.pendingUsages)
 }

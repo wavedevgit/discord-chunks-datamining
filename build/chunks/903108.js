@@ -1,4 +1,4 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 91053 **/
 /** chunk id: 903108, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -22,6 +22,6 @@ function p(e) {
     g = (0, r.e7)([l.Z], () => l.Z.getGuild(e.guild_id), [e.guild_id]),
     m = (0, r.e7)([a.Z], () => a.Z.can(c.yP, e), [e]),
     b = null != (t = null == g ? true : g.maxStageVideoChannelUsers) ? t : 0,
-    y = !(null != g && g.features.has(u.GuildFeatures.COMMUNITY)) && b > u.RcX;
-  return f && !n && m && !y && p + h >= b
+    _ = !(null != g && g.features.has(u.GuildFeatures.COMMUNITY)) && b > u.RcX;
+  return f && !n && m && !_ && p + h >= b
 }

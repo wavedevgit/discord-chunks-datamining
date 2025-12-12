@@ -14,16 +14,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk797670 = require("./797670.jsx"),
   Chunk304432 = require("./304432.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk512929 = require("./512929.js"),
+  Chunk254681 = require("./254681.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk964385 = require("./964385.js");
+  Chunk378976 = require("./378976.js");
 
 function h(e) {
   let {
     guild: t,
     isActivityRestricted: n,
     onToggleActivityRestrictedGuild: i
-  } = e, o = (0, a.e7)([l.Z], () => l.Z.getMemberCount(t.id));
+  } = e, a = (0, o.e7)([l.Z], () => l.Z.getMemberCount(t.id));
   return (0, r.jsxs)(s.Kqy, {
     as: "li",
     direction: "horizontal",
@@ -35,7 +35,7 @@ function h(e) {
     }), (0, r.jsx)(s.rsf, {
       label: t.name,
       description: _.intl.format(_.t.zRl6XR, {
-        count: null != o ? o : 0
+        count: null != a ? a : 0
       }),
       checked: !n,
       onChange: e => i({
@@ -50,7 +50,7 @@ let g = function() {
     guilds: e,
     searchQuery: t,
     setSearchQuery: n,
-    sortOrder: a,
+    sortOrder: o,
     setSortOrder: l,
     hasActivityRestrictedGuilds: u,
     onToggleAllActivityRestrictedGuilds: g,
@@ -67,9 +67,9 @@ let g = function() {
     }), require("")
   }, S = (0, Chunk473749.useId)();
   return (0, Chunk54381.jsxs)("div", {
-    className: Chunk964385.wrapper,
+    className: Chunk378976.wrapper,
     children: [(0, Chunk54381.jsxs)("div", {
-      className: Chunk964385.headerContainer,
+      className: Chunk378976.headerContainer,
       children: [(0, Chunk54381.jsx)(Chunk481060.E1j, {
         query: exports,
         onChange: require,
@@ -93,9 +93,9 @@ let g = function() {
           "aria-expanded": true
         }
       }), module.length > 0 && (0, Chunk54381.jsxs)("div", {
-        className: Chunk964385.controlsContainer,
+        className: Chunk378976.controlsContainer,
         children: [(0, Chunk54381.jsx)(Chunk199849.B6, {
-          className: Chunk964385.select,
+          className: Chunk378976.select,
           variant: "text-only",
           options: [{
             label: Chunk388032.intl.string(Chunk388032.t.STMPJ2),
@@ -104,10 +104,10 @@ let g = function() {
             label: Chunk388032.intl.string(Chunk388032.t.CbaapP),
             value: Chunk304432.W.RECENTLY_JOINED
           }, {
-            label: Chunk388032.intl.string(Chunk512929.default.ZI51JZ),
+            label: Chunk388032.intl.string(Chunk254681.default.ZI51JZ),
             value: Chunk304432.W.ACTIVITY_SHARING_ON
           }, {
-            label: Chunk388032.intl.string(Chunk512929.default["+kxafn"]),
+            label: Chunk388032.intl.string(Chunk254681.default["+kxafn"]),
             value: Chunk304432.W.ACTIVITY_SHARING_OFF
           }],
           select: e => {
@@ -118,7 +118,7 @@ let g = function() {
               total_guild_count: O
             }), l(e)
           },
-          isSelected: e => a === e,
+          isSelected: e => o === e,
           serialize: String
         }), (0, Chunk54381.jsx)(Chunk481060.Avr, {
           variant: "primary",
@@ -129,17 +129,17 @@ let g = function() {
     }), (0, Chunk54381.jsx)(Chunk481060.nn4, {
       "aria-live": "polite",
       role: "region",
-      children: Chunk388032.intl.format(Chunk512929.default.EvzDff, {
+      children: Chunk388032.intl.format(Chunk254681.default.EvzDff, {
         count: module.length
       })
     }), (0, Chunk54381.jsxs)("ul", {
-      className: Chunk964385.guildsList,
+      className: Chunk378976.guildsList,
       id: S,
       "aria-label": Chunk388032.intl.string(Chunk388032.t["7hB4kg"]),
       children: [0 === module.length && (0, Chunk54381.jsx)("div", {
-        className: Chunk964385.noResultsContainer,
+        className: Chunk378976.noResultsContainer,
         children: (0, Chunk54381.jsx)(Chunk481060.Text, {
-          className: Chunk964385.noResultsText,
+          className: Chunk378976.noResultsText,
           variant: "text-lg/medium",
           children: Chunk388032.intl.string(Chunk388032.t["Xe+fJM"])
         })

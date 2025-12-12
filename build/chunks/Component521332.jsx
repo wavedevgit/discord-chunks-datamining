@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 521332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => f
 }), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk185625 = require("./185625.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk427572 = require("./427572.js");
+  Chunk769450 = require("./769450.js");
 
 function h(e) {
   let {
@@ -25,35 +25,35 @@ function h(e) {
     description: n,
     onButtonClick: i,
     trackSettingsUpsellsAction: a
-  } = e, [o, c] = l.useState(false);
+  } = e, [o, d] = l.useState(false);
   return (0, s.ZP)(() => {
-    a(p.M4.SETTINGS_UPSELLS_VIEWED)
-  }), (0, r.jsx)(d.JZ, {
+    a(g.M4.SETTINGS_UPSELLS_VIEWED)
+  }), (0, r.jsx)(c.JZ, {
     title: t,
     description: n,
-    buttonText: o ? f.intl.string(f.t["h+WsPb"]) : f.intl.string(f.t.A8t4Nf),
+    buttonText: o ? b.intl.string(b.t["h+WsPb"]) : b.intl.string(b.t.A8t4Nf),
     buttonDisabled: o,
     onButtonPress: () => {
-      i(), c(true), a(p.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
+      i(), d(true), a(g.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
     }
   })
 }
 
-function v(e) {
+function f(e) {
   let {
     settingsUpsells: t,
     channelId: n,
     onModalClose: l,
     reportId: s,
-    reportType: d,
-    reportSubType: v
-  } = e, _ = (0, i.e7)([m.Z], () => m.Z.getChannel(n)), j = (0, b.jc)(t, null == _ ? true : _.type), y = (0, p.i_)(d, v, s);
+    reportType: c,
+    reportSubType: f
+  } = e, v = (0, i.e7)([m.Z], () => m.Z.getChannel(n)), j = (0, p.jc)(t, null == v ? true : v.type), y = (0, g.i_)(c, f, s);
   return 0 === j.length ? null : (0, r.jsxs)("div", {
     className: x.container,
     children: [(0, r.jsx)(a.Heading, {
       variant: "text-sm/semibold",
       className: x.header,
-      children: f.intl.string(f.t["1yxTIJ"])
+      children: b.intl.string(b.t["1yxTIJ"])
     }), (0, r.jsx)("div", {
       className: x.upsellsContainer,
       children: j.map((e, n) => {
@@ -70,15 +70,15 @@ function v(e) {
         }, n)
       })
     }), (0, r.jsx)(a.Avr, {
-      text: f.intl.string(f.t.olebGx),
+      text: b.intl.string(b.t.olebGx),
       onClick: () => {
-        (0, u.openUserSettings)(c.n.CONTENT_AND_SOCIAL_PANEL, {
-          section: g.oAB.CONTENT_AND_SOCIAL
-        }), l(), o.ZP.trackWithMetadata(g.rMx.IAR_SETTINGS_UPSELLS_ACTION, {
+        (0, u.openUserSettings)(d.n.CONTENT_AND_SOCIAL_PANEL, {
+          section: _.oAB.CONTENT_AND_SOCIAL
+        }), l(), o.ZP.trackWithMetadata(_.rMx.IAR_SETTINGS_UPSELLS_ACTION, {
           report_id: s,
-          report_type: d.name,
-          report_subtype: v,
-          action: p.M4.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED
+          report_type: c.name,
+          report_subtype: f,
+          action: g.M4.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED
         })
       }
     })]

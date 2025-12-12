@@ -2,11 +2,11 @@
 /** chunk id: 180717, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk674279 = require("./674279.js"),
   Chunk746047 = require("./746047.js");
-class a {
+class o {
   get selectionMode() {
     return this.state.selectionMode
   }
@@ -88,11 +88,11 @@ class a {
     if (null != n) {
       if ("all" === this.state.selectedKeys) t = new(0, r.Y)([n], n, n);
       else {
-        var i, a;
+        var i, o;
         let e = this.state.selectedKeys,
-          o = null != (i = e.anchorKey) ? i : n;
-        for (let i of (t = new(0, r.Y)(e, o, n), this.getKeyRange(o, null != (a = e.currentKey) ? a : n))) t.delete(i);
-        for (let e of this.getKeyRange(n, o)) this.canSelectItem(e) && t.add(e)
+          a = null != (i = e.anchorKey) ? i : n;
+        for (let i of (t = new(0, r.Y)(e, a, n), this.getKeyRange(a, null != (o = e.currentKey) ? o : n))) t.delete(i);
+        for (let e of this.getKeyRange(n, a)) this.canSelectItem(e) && t.add(e)
       }
       this.state.setSelectedKeys(t)
     }
@@ -149,9 +149,9 @@ class a {
       t = n => {
         for (; null != n;) {
           if (this.canSelectItem(n)) {
-            var r, a;
-            let o = this.collection.getItem(n);
-            (null == o ? true : o.type) === "item" && e.push(n), (null == o ? true : o.hasChildNodes) && (this.allowsCellSelection || "item" !== o.type) && t(null != (a = null == (r = (0, i.l8)((0, i._P)(o, this.collection))) ? true : r.key) ? a : null)
+            var r, o;
+            let a = this.collection.getItem(n);
+            (null == a ? true : a.type) === "item" && e.push(n), (null == a ? true : a.hasChildNodes) && (this.allowsCellSelection || "item" !== a.type) && t(null != (o = null == (r = (0, i.l8)((0, i._P)(a, this.collection))) ? true : r.key) ? o : null)
           }
           n = this.collection.getKeyAfter(n)
         }
@@ -199,7 +199,7 @@ class a {
     return null == (t = this.collection.getItem(e)) ? true : t.props
   }
   withCollection(e) {
-    return new a(e, this.state, {
+    return new o(e, this.state, {
       allowsCellSelection: this.allowsCellSelection,
       layoutDelegate: this.layoutDelegate || true
     })

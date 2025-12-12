@@ -2,12 +2,12 @@
 /** chunk id: 860684, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D: () => a
+  D: () => o
 });
 var Chunk54381 = require("./54381.js"),
-  Chunk33569 = require("./33569.js");
+  Chunk266585 = require("./266585.js");
 
-function a(e) {
+function o(e) {
   let {
     graphic: t,
     layout: n
@@ -15,21 +15,21 @@ function a(e) {
   if ("type" in t) switch (t.type) {
     case "role":
       let {
-        color: a
+        color: o
       } = t;
       return (0, r.jsx)("div", {
         className: i.roleDot,
         style: {
-          backgroundColor: a
+          backgroundColor: o
         }
       });
     case "avatar":
       let {
-        src: o
+        src: a
       } = t;
       return (0, r.jsx)("img", {
         className: i.avatar,
-        src: o,
+        src: a,
         alt: ""
       });
     case "image":

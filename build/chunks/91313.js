@@ -14,7 +14,7 @@ require.d(exports, {
 var Chunk911969 = require("./911969.js"),
   Chunk555573 = require("./555573.js"),
   Chunk998698 = require("./998698.js"),
-  Chunk344896 = require("./344896.js"),
+  Chunk509716 = require("./509716.js"),
   Chunk703558 = require("./703558.js"),
   Chunk117530 = require("./117530.js"),
   Chunk752305 = require("./752305.js"),
@@ -54,12 +54,12 @@ function g(e, t, n) {
   let r = {};
   if (null == t.options) return {};
   let i = _(e),
-    a = Object.fromEntries(t.options.map(e => [e.name, e])),
-    o = null == i ? true : i[0].children;
-  if (null != o) {
-    for (let t of o)
+    o = Object.fromEntries(t.options.map(e => [e.name, e])),
+    a = null == i ? true : i[0].children;
+  if (null != a) {
+    for (let t of a)
       if (d.aj.isType(t, "applicationCommandOption")) {
-        let i = a[t.optionName];
+        let i = o[t.optionName];
         null != i && (r[t.optionName] = E(e, i, t, n))
       }
   }
@@ -67,14 +67,14 @@ function g(e, t, n) {
 }
 
 function E(e, t, n, i) {
-  let a = n.children.map(n => {
+  let o = n.children.map(n => {
     if (t.type === r.jw.ATTACHMENT) {
       let e = l.Z.getUpload(i, t.name, s.d.SlashCommand);
       if (null != e) {
-        var a;
+        var o;
         return {
           type: "text",
-          text: null != (a = e.filename) ? a : ""
+          text: null != (o = e.filename) ? o : ""
         }
       }
     }
@@ -94,22 +94,22 @@ function E(e, t, n, i) {
     }
   });
   if (t.type !== r.jw.STRING) {
-    for (; a.length > 0 && "text" === a[0].type && "" === a[0].text.trim();) a.shift();
-    for (; a.length > 0 && "text" === a[a.length - 1].type && "" === a[a.length - 1].text.trim();) a.pop()
+    for (; o.length > 0 && "text" === o[0].type && "" === o[0].text.trim();) o.shift();
+    for (; o.length > 0 && "text" === o[o.length - 1].type && "" === o[o.length - 1].text.trim();) o.pop()
   }
-  return a
+  return o
 }
 
-function b(e, t, n, r, a) {
+function b(e, t, n, r, o) {
   if (null == e.options) return {};
   let s = Object.fromEntries(e.options.map(e => {
     var i;
-    return [e.name, o.f({
+    return [e.name, a.f({
       option: e,
       content: null != (i = r[e.name]) ? i : null,
       guildId: t,
       channelId: n,
-      allowEmptyValues: a
+      allowEmptyValues: o
     })]
   }));
   return i.VP(n, s), s
@@ -117,10 +117,10 @@ function b(e, t, n, r, a) {
 
 function y(e, t, n, r, s) {
   var l;
-  let [c] = r, u = a.Z.getActiveCommand(n), d = null == u || null == (l = u.options) ? true : l.find(e => e.name === c.optionName);
+  let [c] = r, u = o.Z.getActiveCommand(n), d = null == u || null == (l = u.options) ? true : l.find(e => e.name === c.optionName);
   if (null == d) return;
   let f = E(e, d, c, n),
-    p = o.f({
+    p = a.f({
       option: d,
       content: f,
       guildId: t,
@@ -139,9 +139,9 @@ function O(e, t) {
   let n = d.bN.richValue(e),
     r = [],
     i = new Set(h(e)),
-    a = {},
-    o = new Set;
-  for (let e of t.options) a[e.displayName] = e, i.has(e.name) || o.add(e.displayName);
+    o = {},
+    a = new Set;
+  for (let e of t.options) o[e.displayName] = e, i.has(e.name) || a.add(e.displayName);
   let s = null;
   for (let t = 0; t < n.length; t++) {
     let i = n[t];
@@ -163,9 +163,9 @@ function O(e, t) {
           for (p.lastIndex = 0; null != (f = p.exec(_.text));) {
             if (0 !== f.index && null == _.text.charAt(f.index - 1).match(/(\t|\s)/)) continue;
             let e = f[1];
-            if (!o.has(e)) continue;
-            o.delete(e);
-            let t = a[e];
+            if (!a.has(e)) continue;
+            a.delete(e);
+            let t = o[e];
             if (null == t) continue;
             let i = {
                 path: m,

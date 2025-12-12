@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk256003 = require("./256003.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk108551 = require("./108551.js");
+  Chunk800209 = require("./800209.js");
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -59,10 +59,10 @@ function y(e) {
   } = e, y = (0, f.xC)(t), {
     selectedUserIds: O,
     clearSelection: H
-  } = (0, p.Z)(t), w = O.size > 0, S = async (e, t, n, r) => {
+  } = (0, p.Z)(t), _ = O.size > 0, w = async (e, t, n, r) => {
     try {
-      let l = await d.Z.banMultipleUsers(e, t, n, r);
-      (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.AsCe5I), c.ToastType.SUCCESS)), m.default.track(h.rMx.BULK_MODERATION_ACTION_COMPLETED, v(x({}, (0, u.hH)(e)), {
+      let l = await u.Z.banMultipleUsers(e, t, n, r);
+      (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.AsCe5I), c.ToastType.SUCCESS)), m.default.track(h.rMx.BULK_MODERATION_ACTION_COMPLETED, v(x({}, (0, d.hH)(e)), {
         action_type: b.jQ.BAN,
         target_user_ids: [...O],
         mod_user_id: C.default.getId(),
@@ -73,9 +73,9 @@ function y(e) {
       (0, c.showToast)((0, c.createToast)(g.intl.string(g.t.mICAWY), c.ToastType.FAILURE))
     }
     H()
-  }, Z = l.useCallback(() => {
+  }, S = l.useCallback(() => {
     H()
-  }, [H]), D = (0, r.jsxs)("span", {
+  }, [H]), Z = (0, r.jsxs)("span", {
     className: j.messageContainer,
     children: [(0, r.jsx)(c.tBG, {
       size: "custom",
@@ -90,9 +90,9 @@ function y(e) {
       })
     }), (0, r.jsx)(c.Avr, {
       text: g.intl.string(g.t.yW6ZdE),
-      onClick: Z
+      onClick: S
     })]
-  }), N = (0, r.jsxs)("span", {
+  }), D = (0, r.jsxs)("span", {
     className: j.buttonContainer,
     children: [(0, r.jsx)(c.pgN, {
       size: "custom",
@@ -108,10 +108,10 @@ function y(e) {
   return y ? (0, r.jsx)(o.W, {
     component: "div",
     className: j.saveNoticeContainer,
-    children: w && (0, r.jsx)(c.oXn, {
+    children: _ && (0, r.jsx)(c.oXn, {
       children: (0, r.jsx)(a.Z, {
         onSave: () => {
-          m.default.track(h.rMx.BULK_MODERATION_ACTION_STARTED, v(x({}, (0, u.hH)(t)), {
+          m.default.track(h.rMx.BULK_MODERATION_ACTION_STARTED, v(x({}, (0, d.hH)(t)), {
             action_type: b.jQ.BAN,
             target_user_ids: [...O],
             mod_user_id: C.default.getId(),
@@ -124,13 +124,13 @@ function y(e) {
               guildId: t,
               canBulkBan: y,
               userIds: O,
-              onBanMultiple: S
+              onBanMultiple: w
             }))
           })
         },
-        onSaveText: N,
+        onSaveText: D,
         onSaveButtonColor: s.Tt.RED,
-        message: D
+        message: Z
       })
     })
   }) : null

@@ -11,7 +11,7 @@ var Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk711730 = require("./711730.js");
+  Chunk123472 = require("./123472.js");
 let c = e => {
     let {
       className: t,
@@ -22,19 +22,19 @@ let c = e => {
       className: t,
       children: (0, r.jsxs)("div", {
         className: l.awaitingWrapper,
-        children: [(0, r.jsx)(a.Heading, {
+        children: [(0, r.jsx)(o.Heading, {
           variant: "heading-xl/bold",
           children: s.intl.string(s.t.Q03WWV)
         }), (0, r.jsxs)("p", {
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             children: s.intl.string(s.t.BxPxhI)
-          }), (0, r.jsx)("br", {}), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)("br", {}), (0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             children: s.intl.string(s.t.Y3fdOp)
-          }), (0, r.jsx)("br", {}), (0, r.jsxs)(a.Text, {
+          }), (0, r.jsx)("br", {}), (0, r.jsxs)(o.Text, {
             variant: "text-md/normal",
-            children: [s.intl.string(s.t.Paa4v4), "\xa0", n ? s.intl.string(s.t.StGVvC) : (0, r.jsx)(a.Anchor, {
+            children: [s.intl.string(s.t.Paa4v4), "\xa0", n ? s.intl.string(s.t.StGVvC) : (0, r.jsx)(o.Anchor, {
               onClick: i,
               children: s.intl.string(s.t.Ex7sk9)
             })]

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
   Chunk52396 = require("./52396.jsx"),
   Chunk592125 = require("./592125.js"),
@@ -69,11 +69,11 @@ function h(e) {
 
 function g(e) {
   let t = (0, c.CJ)();
-  a()(null != t, "Component context is not defined. Did you forget to wrap your component in a ComponentStateContextProvider?");
+  o()(null != t, "Component context is not defined. Did you forget to wrap your component in a ComponentStateContextProvider?");
   let {
     channelId: n
-  } = t, i = (0, o.e7)([l.Z], () => l.Z.getChannel(n));
-  return a()(null != i, "channel must be defined"), (0, r.jsx)(s.r, {
+  } = t, i = (0, a.e7)([l.Z], () => l.Z.getChannel(n));
+  return o()(null != i, "channel must be defined"), (0, r.jsx)(s.r, {
     location: d._.EMBED,
     entry: e.contentInventoryEntry,
     channel: i,

@@ -26,8 +26,8 @@ var Chunk98405 = require("./98405.js"),
   T = function() {
     return this
   };
-module.exports = function(e, t, n, o, _, h, C) {
-  l(n, t, o);
+module.exports = function(e, t, n, a, _, h, C) {
+  l(n, t, a);
   var A, N, P, R = function(e) {
       if (e === _ && j) return j;
       if (!y && e && e in x) return x[e];
@@ -49,7 +49,7 @@ module.exports = function(e, t, n, o, _, h, C) {
     L = x[O] || x["@@iterator"] || _ && x[_],
     j = !y && L || R(_),
     M = "Array" === t && x.entries || L;
-  if (M && (A = c(M.call(new e))) !== Object.prototype && A.next && (!a && c(A) !== b && (u ? u(A, b) : s(A[O]) || p(A, O, T)), d(A, w, true, true), a && (m[w] = T)), g && _ === S && L && L.name !== S && (!a && E ? f(x, "name", S) : (D = true, j = function() {
+  if (M && (A = c(M.call(new e))) !== Object.prototype && A.next && (!o && c(A) !== b && (u ? u(A, b) : s(A[O]) || p(A, O, T)), d(A, w, true, true), o && (m[w] = T)), g && _ === S && L && L.name !== S && (!o && E ? f(x, "name", S) : (D = true, j = function() {
       return i(L, this)
     })), _)
     if (N = {
@@ -63,7 +63,7 @@ module.exports = function(e, t, n, o, _, h, C) {
       proto: true,
       forced: y || D
     }, N);
-  return (!a || C) && x[O] !== j && p(x, O, j, {
+  return (!o || C) && x[O] !== j && p(x, O, j, {
     name: _
   }), m[t] = j, N
 }

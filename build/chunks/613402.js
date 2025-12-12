@@ -8,7 +8,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk147913 = require("./147913.js"),
   Chunk885110 = require("./885110.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,7 +18,7 @@ function o(e, t, n) {
 }
 class s extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), o(this, "stores", new Map().set(a.Z, l))
+    super(...e), a(this, "stores", new Map().set(o.Z, l))
   }
 }
 

@@ -13,26 +13,26 @@ var Chunk442837 = require("./442837.js"),
   Chunk509545 = require("./509545.js"),
   Chunk74538 = require("./74538.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk283102 = require("./283102.js");
+  Chunk274065 = require("./274065.js");
 let f = function(e) {
   let {
     isGift: t = false,
     priceOptions: n
-  } = e, f = (0, i.e7)([l.Z], () => l.Z.get(u.Xh.PREMIUM_GROUP_MONTH)), p = (0, a.ap)((0, s.ZP)());
-  if (null == f) return (0, r.jsx)(o.$jN, {
-    type: o.$jN.Type.PULSING_ELLIPSIS,
+  } = e, f = (0, i.e7)([l.Z], () => l.Z.get(u.Xh.PREMIUM_GROUP_MONTH)), p = (0, o.ap)((0, s.ZP)());
+  if (null == f) return (0, r.jsx)(a.$jN, {
+    type: a.$jN.Type.PULSING_ELLIPSIS,
     className: d.priceSpinner
   });
   let _ = (0, c.gy)(f, n, false, t),
     m = u.rV.MONTH,
     h = p ? "text-strong" : "always-white";
   return (0, r.jsxs)("div", {
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, r.jsx)(a.Text, {
       variant: "heading-xxl/extrabold",
       color: h,
       tag: "span",
       children: _
-    }), (0, r.jsxs)(o.Text, {
+    }), (0, r.jsxs)(a.Text, {
       variant: "text-xs/medium",
       tag: "span",
       color: "text-muted",

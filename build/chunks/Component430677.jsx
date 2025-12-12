@@ -1,13 +1,13 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 430677, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -20,43 +20,43 @@ var Chunk54381 = require("./54381.js"),
   Chunk430824 = require("./430824.js"),
   Chunk768581 = require("./768581.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk551952 = require("./551952.js");
-let v = function(e) {
-  var t, l, v, O, C;
+  Chunk197530 = require("./197530.js");
+let _ = function(e) {
+  var t, l, _, v, O;
   let {
-    guildId: y,
-    action: N,
-    actionIndex: E,
-    onChange: I,
-    onDelete: S,
-    onDragStart: _,
+    guildId: C,
+    action: y,
+    actionIndex: N,
+    onChange: E,
+    onDelete: I,
+    onDragStart: S,
     onDragComplete: T,
     onDragReset: P
-  } = e, w = (0, s.e7)([b.Z], () => b.Z.getChannel(N.channelId)), Z = (0, s.e7)([p.Z], () => p.Z.getGuild(y)), {
+  } = e, w = (0, a.e7)([f.Z], () => f.Z.getChannel(y.channelId)), Z = (0, a.e7)([h.Z], () => h.Z.getGuild(C)), {
     customEmoji: R,
     unicodeEmoji: D
-  } = (0, g.Z)(null == (t = N.emoji) ? true : t.id, null == (l = N.emoji) ? true : l.name), A = null == N.emoji || null != R || null != D, L = h.ZP.getNewMemberActionIconURL({
-    channelId: N.channelId,
-    icon: N.icon
+  } = (0, g.Z)(null == (t = y.emoji) ? true : t.id, null == (l = y.emoji) ? true : l.name), A = null == y.emoji || null != R || null != D, L = x.ZP.getNewMemberActionIconURL({
+    channelId: y.channelId,
+    icon: y.icon
   }), k = null;
-  null != w && (0, f.kb)(w) ? A || (k = x.intl.string(x.t.wAkIZW)) : k = x.intl.string(x.t.CbTEKP);
+  null != w && (0, m.kb)(w) ? A || (k = b.intl.string(b.t.wAkIZW)) : k = b.intl.string(b.t.CbTEKP);
   let {
     drag: G,
     dragSourcePosition: M,
     drop: U,
     setIsDraggable: B
-  } = (0, u.Z)({
+  } = (0, d.Z)({
     type: "NEW_MEMBER_ACTION",
-    index: E,
-    optionId: N.channelId,
-    onDragStart: _,
+    index: N,
+    optionId: y.channelId,
+    onDragStart: S,
     onDragComplete: T,
     onDragReset: P
   }), F = i.useCallback(() => {
-    if (null != y) return (0, c.ZDy)(async () => {
+    if (null != C) return (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7590"), n.e("88575")]).then(n.bind(n, 380716));
+      } = await Promise.all([n.e("7590"), n.e("83975")]).then(n.bind(n, 380716));
       return t => {
         var n, i;
         return (0, r.jsx)(e, (n = function(e) {
@@ -77,10 +77,10 @@ let v = function(e) {
           }
           return e
         }({}, t), i = i = {
-          guildId: y,
-          action: N,
-          onSave: (e, t, n) => I(E, e, t, n),
-          onDelete: () => S(E)
+          guildId: C,
+          action: y,
+          onSave: (e, t, n) => E(N, e, t, n),
+          onDelete: () => I(N)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -93,15 +93,15 @@ let v = function(e) {
         }), n))
       }
     })
-  }, [y, N, E, I, S]);
+  }, [C, y, N, E, I]);
   if (null == w || null == Z) return null;
-  let H = null != (C = (0, d.KS)(w)) ? C : c.VL1;
+  let H = null != (O = (0, u.KS)(w)) ? O : c.VL1;
   return (0, r.jsxs)("div", {
     className: j.actionItemContainer,
     children: [(0, r.jsxs)("div", {
-      className: a()(j.actionItem, {
-        [j.dropIndicatorBefore]: null != M && E < M,
-        [j.dropIndicatorAfter]: null != M && E > M,
+      className: s()(j.actionItem, {
+        [j.dropIndicatorBefore]: null != M && N < M,
+        [j.dropIndicatorAfter]: null != M && N > M,
         [j.actionItemError]: null != k
       }),
       ref: e => {
@@ -128,10 +128,10 @@ let v = function(e) {
         })
       }) : (0, r.jsx)("div", {
         className: j.actionItemEmojiWrapper,
-        children: (0, r.jsx)(m.Z, {
-          emojiId: null == (v = N.emoji) ? true : v.id,
-          emojiName: null == (O = N.emoji) ? true : O.name,
-          size: m.R.MEDIUM,
+        children: (0, r.jsx)(p.Z, {
+          emojiId: null == (_ = y.emoji) ? true : _.id,
+          emojiName: null == (v = y.emoji) ? true : v.name,
+          size: p.R.MEDIUM,
           defaultComponent: (0, r.jsx)(H, {})
         })
       }), (0, r.jsxs)("div", {
@@ -139,22 +139,22 @@ let v = function(e) {
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/semibold",
           color: "text-strong",
-          children: N.title
+          children: y.title
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-default",
-          children: x.intl.format(x.t.Ngk8Nr, {
+          children: b.intl.format(b.t.Ngk8Nr, {
             channelName: w.name
           })
         })]
       }), (0, r.jsx)(o.u, {
-        text: x.intl.string(x.t.bt75uw),
+        text: b.intl.string(b.t.bt75uw),
         children: (0, r.jsx)(c.hU, {
           icon: c.vdY,
           size: "sm",
           variant: "primary",
           onClick: F,
-          "aria-label": x.intl.string(x.t.bt75uw)
+          "aria-label": b.intl.string(b.t.bt75uw)
         })
       })]
     }), null != k && (0, r.jsx)(c.Text, {

@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
-  Chunk52999 = require("./52999.js");
+  Chunk825456 = require("./825456.js");
 
 function c(e) {
   let {
@@ -20,15 +20,15 @@ function c(e) {
     separatorClassName: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(l.breadcrumbWrapper, {
+    className: o()(l.breadcrumbWrapper, {
       [l.breadcrumbFinalWrapper]: i
     }),
-    children: [(0, r.jsx)(o.Text, {
+    children: [(0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: n ? "text-strong" : "text-muted",
       children: t.label
     }), i ? null : (0, r.jsx)(s.Z, {
-      className: a()(l.breadcrumbArrow, c),
+      className: o()(l.breadcrumbArrow, c),
       direction: s.Z.Directions.RIGHT
     })]
   }, t.id)
@@ -38,15 +38,15 @@ let u = function(e) {
     breadcrumbs: t,
     activeId: n,
     className: i,
-    separatorClassName: o
+    separatorClassName: a
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(l.breadcrumbs, i),
+    className: o()(l.breadcrumbs, i),
     children: t.map((e, i) => (0, r.jsx)(c, {
       breadcrumb: e,
       isActiveBreadcrumb: e.id === n,
       isFinalBreadcrumb: i === t.length - 1,
-      separatorClassName: o
+      separatorClassName: a
     }, e.id))
   })
 }

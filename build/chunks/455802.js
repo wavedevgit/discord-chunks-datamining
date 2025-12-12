@@ -1,9 +1,0 @@
-/** Chunk was on 51235 **/
-/** chunk id: 455802, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  blobContainer: "e5445cbd3ad226f2-blobContainer",
-  pill: "e5445cbd3ad226f2-pill",
-  sorting: "e5445cbd3ad226f2-sorting",
-  wobble: "e5445cbd3ad226f2-wobble",
-  selected: "e5445cbd3ad226f2-selected"
-}

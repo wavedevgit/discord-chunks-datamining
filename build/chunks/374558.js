@@ -4,10 +4,10 @@
 require.d(exports, {
   YX: () => i
 }), require("./54381.js"), require("./473749.js"), require("./120356.js"), require("./793030.js"), require("./28664.jsx");
-var Chunk828412 = require("./828412.js");
+var Chunk94321 = require("./94321.js");
 let i = {
-  TERTIARY: Chunk828412.tertiary,
-  SECONDARY: Chunk828412.secondary,
-  PRIMARY: Chunk828412.primary
+  TERTIARY: Chunk94321.tertiary,
+  SECONDARY: Chunk94321.secondary,
+  PRIMARY: Chunk94321.primary
 };
-Chunk828412.size24, Chunk828412.size32, Chunk828412.size36
+Chunk94321.size24, Chunk94321.size32, Chunk94321.size36

@@ -1,7 +1,7 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 82697 **/
 /** chunk id: 252417, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,38 +18,38 @@ var Chunk54381 = require("./54381.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
-  Chunk580784 = require("./580784.js");
+  Chunk777267 = require("./777267.js");
 let O = Chunk481060.EFr.SIZE_40,
-  v = (0, Chunk481060.dcp)(O);
+  y = (0, Chunk481060.dcp)(O);
 
-function j(e) {
+function v(e) {
   let {
     user: t,
-    status: j,
-    guildId: x,
-    channelId: P,
-    onSelect: I
+    status: v,
+    guildId: _,
+    channelId: x,
+    onSelect: P
   } = e, {
-    theme: w,
+    theme: I,
     themeType: S
-  } = (0, b.z)(), E = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, P), [t, P]), {
-    activities: _,
-    isMobileOnline: T
-  } = (0, a.cj)([p.Z], () => ({
+  } = (0, h.z)(), C = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, x), [t, x]), {
+    activities: k,
+    isMobileOnline: w
+  } = (0, o.cj)([p.Z], () => ({
     activities: p.Z.getActivities(t.id),
     isMobileOnline: p.Z.isMobileOnline(t.id)
-  })), C = (0, g.Z)(t.id), {
-    voiceActivityStatusEnabled: D
-  } = (0, s.a)({
+  })), Z = (0, b.Z)(t.id), {
+    voiceActivityStatusEnabled: E
+  } = (0, c.a)({
     location: "UserProfileMutualFriendRow"
   }), {
-    voiceChannel: k
+    voiceChannel: T
   } = (0, u.Z)({
-    userId: D ? t.id : true,
-    guildId: x
+    userId: E ? t.id : true,
+    guildId: _
   });
-  return (0, r.jsxs)(l.P3F, {
-    focusProps: S === h.l.MODAL_V2 ? {
+  return (0, r.jsxs)(a.P3F, {
+    focusProps: S === g.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -60,15 +60,15 @@ function j(e) {
         right: 8
       }
     },
-    className: y.row,
-    onClick: I,
+    className: j.row,
+    onClick: P,
     onContextMenu: e => {
-      (0, o.jW)(e, async () => {
+      (0, l.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("26465")]).then(n.bind(n, 881351));
+        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("77635")]).then(n.bind(n, 881351));
         return n => {
-          var i, a;
+          var i, o;
           return (0, r.jsx)(e, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -86,40 +86,40 @@ function j(e) {
               })
             }
             return e
-          }({}, n), a = a = {
+          }({}, n), o = o = {
             user: t
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(a)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+          })(Object(o)).forEach(function(e) {
+            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
           }), i))
         }
       })
     },
-    children: [(0, r.jsx)(l.qEK, {
-      src: t.getAvatarURL(x, v),
+    children: [(0, r.jsx)(a.qEK, {
+      src: t.getAvatarURL(_, y),
       "aria-label": t.username,
       size: O,
-      status: E ? m.Skl.UNKNOWN : j,
-      statusBackdropColor: E ? true : (0, l.QFD)(w),
-      isMobile: T,
-      className: y.avatar
+      status: C ? m.Skl.UNKNOWN : v,
+      statusBackdropColor: C ? true : (0, a.QFD)(I),
+      isMobile: w,
+      className: j.avatar
     }), (0, r.jsxs)("div", {
-      className: y.details,
-      children: [(0, r.jsx)(c.Z, {
+      className: j.details,
+      children: [(0, r.jsx)(s.Z, {
         user: t,
-        className: y.tag,
-        discriminatorClass: y.discriminator
+        className: j.tag,
+        discriminatorClass: j.discriminator
       }), (0, r.jsx)(d.Z, {
         user: t,
-        activities: _,
-        applicationStream: C,
-        voiceChannel: k
+        activities: k,
+        applicationStream: Z,
+        voiceChannel: T
       })]
     })]
   })

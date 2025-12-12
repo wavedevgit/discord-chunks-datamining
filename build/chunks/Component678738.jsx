@@ -7,18 +7,18 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
   Chunk313201 = require("./313201.js"),
-  Chunk516117 = require("./516117.js");
+  Chunk729392 = require("./729392.js");
 
 function f(e) {
   let {
     children: t,
     heading: n,
-    headingIcon: a,
+    headingIcon: o,
     introText: f,
     className: p,
     scrollIntoView: _ = false,
@@ -37,7 +37,7 @@ function f(e) {
     return () => cancelAnimationFrame(t)
   }, [b]), (0, r.jsxs)("section", {
     ref: _ ? y : true,
-    className: o()(d.section, p),
+    className: a()(d.section, p),
     "aria-labelledby": null != n ? E : true,
     children: [null != n && (0, r.jsxs)("div", {
       className: d.headings,
@@ -49,7 +49,7 @@ function f(e) {
           className: m,
           id: E,
           children: n
-        }), a]
+        }), o]
       }), null != f && (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
         children: f

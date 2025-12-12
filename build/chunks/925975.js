@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 925975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   g: () => b
@@ -14,7 +14,7 @@ var Chunk159635 = require("./159635.js"),
   Chunk695346 = require("./695346.js"),
   Chunk375954 = require("./375954.js"),
   Chunk981631 = require("./981631.js");
-let h = /\\([*?+/])/g,
+let f = /\\([*?+/])/g,
   m = {
     tts: {
       action: () => ({
@@ -46,7 +46,7 @@ let h = /\\([*?+/])/g,
         let {
           channel: n
         } = t;
-        if (null != n.guild_id) return l.Z.changeNickname(n.guild_id, n.id, f.ME, e), {
+        if (null != n.guild_id) return l.Z.changeNickname(n.guild_id, n.id, h.ME, e), {
           content: ""
         }
       }
@@ -80,9 +80,9 @@ let h = /\\([*?+/])/g,
         if (null == o || null == o.id) return {
           content: ""
         };
-        let [s, c, u, d] = Array.from(null != (n = e.match(this.match.regex)) ? n : []), f = null != (i = null == d ? true : d.split("")) ? i : [];
-        c = c.replace(h, (e, t) => t), u = u.replace(h, (e, t) => t);
-        let m = f.includes("g") ? o.content.replaceAll(c, u) : o.content.replace(c, u);
+        let [s, c, u, d] = Array.from(null != (n = e.match(this.match.regex)) ? n : []), h = null != (i = null == d ? true : d.split("")) ? i : [];
+        c = c.replace(f, (e, t) => t), u = u.replace(f, (e, t) => t);
+        let m = h.includes("g") ? o.content.replaceAll(c, u) : o.content.replace(c, u);
         return (null == m || "" === m.trim()) && 0 === o.attachments.length ? a.Z.deleteMessage(l.id, o.id) : m !== o.content && a.Z.editMessage(l.id, o.id, {
           content: m
         }), {
@@ -92,13 +92,13 @@ let h = /\\([*?+/])/g,
     },
     spoiler: {
       action: e => ({
-        content: (0, f.XmY)(e).trim()
+        content: (0, h.XmY)(e).trim()
       })
     }
   };
 
 function g(e, t, n, i) {
-  return o.ZP.trackWithMetadata(f.rMx.SLASH_COMMAND_USED, {
+  return o.ZP.trackWithMetadata(h.rMx.SLASH_COMMAND_USED, {
     command: e
   }), t.action(n, i)
 }

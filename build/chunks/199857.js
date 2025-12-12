@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => I
 }), require("./539854.js"), require("./415506.js"), require("./388685.js"), require("./49124.js"), require("./290780.js"), require("./35282.js");
 var r, Chunk74514 = require("./74514.js"),
-  a = require.n(Chunk74514),
+  o = require.n(Chunk74514),
   Chunk117806 = require("./117806.js"),
   s = require.n(Chunk117806),
   Chunk264344 = require("./264344.js"),
@@ -41,22 +41,22 @@ class I extends Chunk912095.Z {
     super.destroy(module), "closed" !== this.signalingState && this.pc.close()
   }
   setCodecs(e, t, n) {
-    var r, i, a, o;
+    var r, i, o, a;
     let s;
-    (this.audioCodec !== e || this.videoCodec !== t) && (s = this.codecs.find(t => t.name === e), this.audioCodec = e, this.audioPayloadType = null != (i = null == s ? true : s.payloadType) ? i : 0, s = this.codecs.find(e => e.name === t), this.videoCodec = t, this.videoPayloadType = null != (a = null == s ? true : s.payloadType) ? a : 0, this.rtxPayloadType = null != (o = null == s ? true : s.rtxPayloadType) ? o : 0, null == (r = this.daveSessionManager) || r.updateLocalUserCodecs(e, t), this.logger.info("Renegotiating: Codecs changed"), this.handleNegotiationNeeded())
+    (this.audioCodec !== e || this.videoCodec !== t) && (s = this.codecs.find(t => t.name === e), this.audioCodec = e, this.audioPayloadType = null != (i = null == s ? true : s.payloadType) ? i : 0, s = this.codecs.find(e => e.name === t), this.videoCodec = t, this.videoPayloadType = null != (o = null == s ? true : s.payloadType) ? o : 0, this.rtxPayloadType = null != (a = null == s ? true : s.rtxPayloadType) ? a : 0, null == (r = this.daveSessionManager) || r.updateLocalUserCodecs(e, t), this.logger.info("Renegotiating: Codecs changed"), this.handleNegotiationNeeded())
   }
   setStream(e) {
     let t = "closed" === this.iceConnectionState;
     null != e && !t && (S(this.audioTransceiver, e.getAudioTracks()[0]), this.videoSupported && S(this.videoTransceiver, e.getVideoTracks()[0])), this.logger.info("Renegotiating: Streams changed"), this.handleNegotiationNeeded()
   }
   createUser(e, t, n) {
-    var r, i, a;
+    var r, i, o;
     if (null == (r = this.daveSessionManager) || r.createUser(e), 0 === t) return void this.logger.warn("Attempting to create user ".concat(e, " with 0 audio SSRC"));
     this.logger.info("Creating user: ".concat(e, " with audio SSRC: ").concat(t, " and video SSRCs: ").concat(null != (i = null == n ? true : n.join(",")) ? i : 0));
-    let o = false,
+    let a = false,
       s = this.users.get(e);
     if (null == s && (s = {}), s.audioSSRC !== t) {
-      s.audioSSRC = t, o = true, this.unassignedStreams.audio.push({
+      s.audioSSRC = t, a = true, this.unassignedStreams.audio.push({
         cname: e,
         ssrc: t
       });
@@ -68,7 +68,7 @@ class I extends Chunk912095.Z {
       let t = null != n && n.length > 0 ? n[0] : 0;
       if (t > 0) {
         if (s.videoSSRC !== t) {
-          s.videoSSRC = t, o = true, this.unassignedStreams.video.push({
+          s.videoSSRC = t, a = true, this.unassignedStreams.video.push({
             cname: e,
             ssrc: t
           });
@@ -76,12 +76,12 @@ class I extends Chunk912095.Z {
             r = O + this.unassignedStreams.video.length - n;
           this.addTransceivers("video", "recvonly", r)
         }
-      } else null != s.videoSSRC && (s.videoSSRC = true, o = true)
+      } else null != s.videoSSRC && (s.videoSSRC = true, a = true)
     }
-    if (o) {
+    if (a) {
       this.users.set(e, s), t > 0 && this.userIdsBySsrc.set(t, e);
       let r = null != n && n.length > 0 ? n[0] : 0;
-      r > 0 && this.userIdsBySsrc.set(r, e), null == (a = this.daveSessionManager) || a.updateSsrcs(e, t, null != n ? n : []), this.logger.info("Renegotiating: User joined"), this.handleNegotiationNeeded()
+      r > 0 && this.userIdsBySsrc.set(r, e), null == (o = this.daveSessionManager) || o.updateSsrcs(e, t, null != n ? n : []), this.logger.info("Renegotiating: User joined"), this.handleNegotiationNeeded()
     }
   }
   destroyUser(e) {
@@ -173,10 +173,10 @@ class I extends Chunk912095.Z {
         }
         of t) e[n] !== r && (this.logger.info("UnifiedConnection.setTransceiverEncodingParameters: ".concat(n, ": from '").concat(e[n], "' to '").concat(r, "'")), i = true, e[n] = r);
     if (!i) return;
-    let a = e => {
+    let o = e => {
       this.logger.error('UnifiedConnection.setTransceiverEncodingProperty: setParameters failed: "'.concat(e, '" (').concat(JSON.stringify(t), ')"'))
     };
-    n.setParameters(r).then(() => {}, e => a(e)).catch(e => a(e))
+    n.setParameters(r).then(() => {}, e => o(e)).catch(e => o(e))
   }
   setAudioEncoderParameters(e) {
     let t = {
@@ -234,8 +234,8 @@ class I extends Chunk912095.Z {
         outboundStreams: n,
         codecs: r,
         audioSSRC: i,
-        videoSSRC: a,
-        rtxSSRC: o
+        videoSSRC: o,
+        rtxSSRC: a
       } = (0, Chunk649318.Nl)(exports, this.experimentFlags.has(Chunk65154.V8.BROWSER_HEVC)),
       s = (0, Chunk649318.nX)(exports);
     return {
@@ -243,22 +243,22 @@ class I extends Chunk912095.Z {
       outboundStreams: require,
       codecs: r,
       audioSSRC: Chunk74514,
-      videoSSRC: a,
+      videoSSRC: o,
       rtxSSRC: Chunk117806,
       extensions: s
     }
   }
   addTransceivers(e, t, n, r) {
     let i = this.pc,
-      a = i.getTransceivers().length;
-    for (let s = a; s < a + n; s++) {
-      var o;
+      o = i.getTransceivers().length;
+    for (let s = o; s < o + n; s++) {
+      var a;
       let n = {
         direction: t
       };
       "video" === e && null != r && (n.streams = [r]);
-      let a = i.addTransceiver(e, n);
-      null == (o = this.daveSessionManager) || o.setupEncodedTransformsForTransceiver(a), this.inactiveTransceivers[e].push(s.toString())
+      let o = i.addTransceiver(e, n);
+      null == (a = this.daveSessionManager) || a.setupEncodedTransformsForTransceiver(o), this.inactiveTransceivers[e].push(s.toString())
     }
   }
   buildSSRCsFromOutboundStreams(e, t, n, r) {
@@ -266,18 +266,18 @@ class I extends Chunk912095.Z {
       ssrcs: e.map(e => {
         let {
           mid: i,
-          type: a,
-          direction: o
+          type: o,
+          direction: a
         } = e;
         i = String(i);
         let s = this.assignedStreams.get(i);
         if (null != s) {
           let e = r.get(s.cname),
-            t = "audio" === a ? null == e ? true : e.audioSSRC : null == e ? true : e.videoSSRC;
-          s.ssrc !== t && (this.logger.info("Deleting inactive stream for user with mid: ".concat(i, ", type: ").concat(a, ", ssrc: ").concat(s.ssrc)), s = true, this.assignedStreams.delete(i))
+            t = "audio" === o ? null == e ? true : e.audioSSRC : null == e ? true : e.videoSSRC;
+          s.ssrc !== t && (this.logger.info("Deleting inactive stream for user with mid: ".concat(i, ", type: ").concat(o, ", ssrc: ").concat(s.ssrc)), s = true, this.assignedStreams.delete(i))
         }
-        let l = "audio" === a ? t : n,
-          c = this.inactiveTransceivers[a],
+        let l = "audio" === o ? t : n,
+          c = this.inactiveTransceivers[o],
           u = c.indexOf(i);
         return null == s && l.length > 0 && false !== u && (s = l.pop(), c.splice(u, 1), this.assignedStreams.set(i, s)), null == s && (s = {
           ssrc: false,
@@ -285,8 +285,8 @@ class I extends Chunk912095.Z {
         }), {
           ssrc: s.ssrc,
           cname: s.cname,
-          type: a,
-          direction: (0, h.Mg)(o),
+          type: o,
+          direction: (0, h.Mg)(a),
           mid: i
         }
       }),
@@ -295,15 +295,15 @@ class I extends Chunk912095.Z {
     }
   }
   generateSDPAnswer(e, t, n, r) {
-    var i, a;
-    let o = this.audioCodec,
+    var i, o;
+    let a = this.audioCodec,
       s = this.audioPayloadType,
       l = this.videoCodec,
       c = this.videoPayloadType,
-      u = this.videoSupported && (null == (a = this.videoTransceiver) || null == (i = a.sender) ? true : i.track) != null,
+      u = this.videoSupported && (null == (o = this.videoTransceiver) || null == (i = o.sender) ? true : i.track) != null,
       d = this.rtxPayloadType,
       f = this.sdp;
-    if (null == o || null == s || null == l || null == c || null == d || null == f) throw Error("Invalid payload: audioCodec: ".concat(o, ", audioPayloadType: ").concat(null == s ? "null" : s, ", videoCodec: ").concat(l, ", videoCodecPayloadType: ").concat(null == c ? "null" : c, ", rtxPayloadType: ").concat(null == d ? "null" : d, ", sdp: ").concat(null == f ? "null" : f));
+    if (null == a || null == s || null == l || null == c || null == d || null == f) throw Error("Invalid payload: audioCodec: ".concat(a, ", audioPayloadType: ").concat(null == s ? "null" : s, ", videoCodec: ").concat(l, ", videoCodecPayloadType: ").concat(null == c ? "null" : c, ", rtxPayloadType: ").concat(null == d ? "null" : d, ", sdp: ").concat(null == f ? "null" : f));
     let {
       ssrcs: p,
       remainingAudioStreams: _,
@@ -315,7 +315,7 @@ class I extends Chunk912095.Z {
       answer: (0, h.Rx)({
         type: "answer",
         baseSDP: f,
-        audioCodec: o,
+        audioCodec: a,
         audioPayloadType: s,
         audioBitRate: this.voiceBitrate,
         videoCodec: l,
@@ -332,16 +332,16 @@ class I extends Chunk912095.Z {
   async setRemoteAnswer(e, t, n, r) {
     let i = this.pc,
       {
-        answer: a,
-        remainingAudioStreams: o,
+        answer: o,
+        remainingAudioStreams: a,
         remainingVideoStreams: s
       } = this.generateSDPAnswer(e, t, n, r);
     try {
-      await i.setRemoteDescription(a)
+      await i.setRemoteDescription(o)
     } catch (e) {
-      this.logger.warn("Failed to set remote answer: ".concat(e, ", type: ").concat(a.type)), this.emit(d.Sh.SdpError, "setRemoteDescription", e.message, a.type)
+      this.logger.warn("Failed to set remote answer: ".concat(e, ", type: ").concat(o.type)), this.emit(d.Sh.SdpError, "setRemoteDescription", e.message, o.type)
     }
-    this.unassignedStreams.audio.unshift(...o), this.unassignedStreams.video.unshift(...s), (this.unassignedStreams.audio.length > 0 || this.unassignedStreams.video.length > 0) && (this.negotiationNeeded = true, this.logger.info("Renegotiating: Streams left unassigned after negotiation - renegotiate")), this.negotiating = false, this.negotiationNeeded && this.handleNegotiationNeeded()
+    this.unassignedStreams.audio.unshift(...a), this.unassignedStreams.video.unshift(...s), (this.unassignedStreams.audio.length > 0 || this.unassignedStreams.video.length > 0) && (this.negotiationNeeded = true, this.logger.info("Renegotiating: Streams left unassigned after negotiation - renegotiate")), this.negotiating = false, this.negotiationNeeded && this.handleNegotiationNeeded()
   }
   setConnected() {
     this.input.reset(), this.setConnectionState(Chunk65154.$j.CONNECTED), this.on(Chunk46973.Sh.Stats, this.handleStats), this.input.on(Chunk886848.G.VoiceActivity, this.handleVoiceActivity)
@@ -353,12 +353,12 @@ class I extends Chunk912095.Z {
       return
     }
     this.negotiating = true, this.negotiationNeeded = false;
-    let t = a()(this.unassignedStreams.audio),
-      n = a()(this.unassignedStreams.video),
+    let t = o()(this.unassignedStreams.audio),
+      n = o()(this.unassignedStreams.video),
       r = s()(this.users);
     this.unassignedStreams.audio = [], this.unassignedStreams.video = [];
     let i = this.pc,
-      o = await Chunk74514.createOffer(this.makeOfferAnswerOptions());
+      a = await Chunk74514.createOffer(this.makeOfferAnswerOptions());
     try {
       await Chunk74514.setLocalDescription(Chunk117806)
     } catch (e) {
@@ -428,11 +428,11 @@ class I extends Chunk912095.Z {
       let t = e.streams[0].id,
         n = e.track;
       if (!/^default/.test(n.id)) {
-        var r, i, a, o;
+        var r, i, o, a;
         let [e, s] = t.split("-");
         this.trackUserIds[n.id] = e;
         let l = this.users.get(e);
-        if ((null == l || null == (i = l.videoSSRC) || null == (r = i.toString) ? true : r.call(i)) !== s && (null == l || null == (o = l.audioSSRC) || null == (a = o.toString) ? true : a.call(o)) !== s) return void this.logger.info("Got stale ssrc ".concat(s, " for ").concat(n.kind, " track, user ID ").concat(e));
+        if ((null == l || null == (i = l.videoSSRC) || null == (r = i.toString) ? true : r.call(i)) !== s && (null == l || null == (a = l.audioSSRC) || null == (o = a.toString) ? true : o.call(a)) !== s) return void this.logger.info("Got stale ssrc ".concat(s, " for ").concat(n.kind, " track, user ID ").concat(e));
         this.createOutput(e, n), n.onunmute = () => this.createOutput(e, n), n.onmute = () => {
           var t;
           (null == (t = this.users.get(e)) ? true : t.videoSSRC) == null && this.destroyOutput(e, n)

@@ -68,7 +68,7 @@ function g(e) {
     children: (0, r.jsx)(h.i, {
       appId: g,
       skuId: y,
-      benefits: null != N ? N.map(e => (0, r.jsx)(a.Gm, {
+      benefits: null != N ? N.map(e => (0, r.jsx)(o.Gm, {
         header: e.title,
         icon: e.icon,
         description: e.description
@@ -76,7 +76,7 @@ function g(e) {
       description: null != (t = C.description) ? t : true,
       imgSrc: A,
       title: null != (n = null == T ? true : T.name) ? n : C.summary,
-      tag: (0, r.jsx)(o.Z, {
+      tag: (0, r.jsx)(a.Z, {
         type: E
       }),
       FallbackIcon: s.Vh5

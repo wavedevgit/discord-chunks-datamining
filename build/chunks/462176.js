@@ -18,7 +18,7 @@ let r = {
     36: "cyan",
     37: "white"
   },
-  a = {
+  o = {
     40: "black",
     41: "red",
     42: "green",
@@ -28,19 +28,19 @@ let r = {
     46: "cyan",
     47: "white"
   },
-  o = /\x1B\[(\d+(?:[:;]\d+)*)m/,
-  s = new RegExp("(?=".concat(o.source, ")"));
+  a = /\x1B\[(\d+(?:[:;]\d+)*)m/,
+  s = new RegExp("(?=".concat(a.source, ")"));
 
 function l() {
   let e = {
       className: "ansi-control-sequence",
-      begin: o,
+      begin: a,
       starts: {
         end: s,
         endsParent: true
       }
     },
-    t = [...u("foreground", i, ["38", "39"], true), ...u("background", a, ["48", "49"], true), ...u("style", r, [], false), module];
+    t = [...u("foreground", i, ["38", "39"], true), ...u("background", o, ["48", "49"], true), ...u("style", r, [], false), module];
   return d(exports), {
     contains: [{
       begin: s,

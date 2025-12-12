@@ -46,8 +46,8 @@ function w(e) {
     channelId: n,
     messageId: r,
     forceFetch: i,
-    isPreload: a,
-    jumpType: o,
+    isPreload: o,
+    jumpType: a,
     skipLocalFetch: s,
     avoidInitialScroll: l
   } = e;
@@ -63,16 +63,16 @@ function w(e) {
     focusTargetId: null
   }), f.Z.commit(_));
   let h = i;
-  if (!a || m.Z.isConnected() || _.loadingMore ? _.loadingMore || _.ready && !_.cached ? null != r && (h = true) : (null == t || null != y.Z.getGuild(t)) && (h = true) : h = true, (0, p.Z)(n) && O.ZP.hasUnread(n) && (h = true), h)
+  if (!o || m.Z.isConnected() || _.loadingMore ? _.loadingMore || _.ready && !_.cached ? null != r && (h = true) : (null == t || null != y.Z.getGuild(t)) && (h = true) : h = true, (0, p.Z)(n) && O.ZP.hasUnread(n) && (h = true), h)
     if (f.Z.commit(_.mutate({
         loadingMore: true
       })), null != r) c.Z.jumpToMessage({
       channelId: n,
       messageId: r,
       flash: true,
-      isPreload: a,
+      isPreload: o,
       skipLocalFetch: s,
-      jumpType: o,
+      jumpType: a,
       avoidInitialScroll: l
     });
     else {
@@ -83,14 +83,14 @@ function w(e) {
           messageId: n,
           flash: false
         },
-        isPreload: a,
+        isPreload: o,
         skipLocalFetch: s,
         avoidInitialScroll: l
       });
       if (!((null == d ? true : d.isThread()) && O.ZP.hasTrackedUnread(d.id)) || _.ready) return c.Z.fetchMessages({
         channelId: n,
         limit: C.AQB,
-        isPreload: a,
+        isPreload: o,
         skipLocalFetch: s,
         jump: {
           jumpType: u.SR.ANIMATED
@@ -106,7 +106,7 @@ function w(e) {
           flash: false,
           offset: 1
         },
-        isPreload: a,
+        isPreload: o,
         skipLocalFetch: s,
         avoidInitialScroll: l
       })
@@ -119,19 +119,19 @@ function L(e) {
   if (O.ZP.hasOpenedThread(e)) returnfalse;
   if (null == i) {
     var t;
-    i = null != (t = o.K.get(x, {})) ? t : {}
+    i = null != (t = a.K.get(x, {})) ? t : {}
   }
   if (e in i) returnfalse;
   i[e] = Date.now();
   let n = Date.now() - D;
   for (let e in i) i[e] < n && delete i[e];
-  return o.K.set(x, i), true
+  return a.K.set(x, i), true
 }
 
 function j(e) {
   var t;
   if (null != r && r.channelId === e) return r;
-  let n = (0, a.LX)(location.pathname, {
+  let n = (0, o.LX)(location.pathname, {
     path: C.Z5c.CHANNEL(":guild", ":channel", ":message"),
     exact: true
   });
@@ -175,19 +175,19 @@ function U(e) {
     guildId: t,
     channelId: n,
     messageId: i,
-    jumpType: a,
-    isInitialSetup: o
+    jumpType: o,
+    isInitialSetup: a
   } = e;
-  if (o) return null != n && (r = {
+  if (a) return null != n && (r = {
     channelId: n,
     messageId: null != i ? i : true,
-    jumpType: a
+    jumpType: o
   }), false;
   w({
     guildId: t,
     channelId: n,
     messageId: i,
-    jumpType: a
+    jumpType: o
   }), F(t, n)
 }
 
@@ -281,11 +281,11 @@ function K(e) {
     channelId: n,
     jump: r,
     isStale: i,
-    isPreview: a = false
+    isPreview: o = false
   } = e;
-  if (a) return;
-  let o = null != (t = W[n]) ? t : 0;
-  if (Date.now() - o < 10 * I.Z.Millis.SECOND) return;
+  if (o) return;
+  let a = null != (t = W[n]) ? t : 0;
+  if (Date.now() - a < 10 * I.Z.Millis.SECOND) return;
   W[n] = Date.now();
   let s = v.Z.getChannelId(),
     l = E.ZP.getCurrentSidebarChannelId(s),
@@ -303,7 +303,7 @@ function z(e) {
     messageId: n,
     reason: r,
     noSendFailed: i,
-    shouldSendNotification: a
+    shouldSendNotification: o
   } = e;
   null != n && true !== i && s.Z.dispatch({
     type: "MESSAGE_SEND_FAILED",

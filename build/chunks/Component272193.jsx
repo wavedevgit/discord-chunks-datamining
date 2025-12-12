@@ -1,7 +1,7 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 272193, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,30 +15,30 @@ var Chunk913527 = require("./913527.js"),
   Chunk441623 = require("./441623.js"),
   Chunk594174 = require("./594174.js"),
   Chunk246992 = require("./246992.js"),
-  Chunk555109 = require("./555109.js"),
-  Chunk663618 = require("./663618.js");
+  Chunk636503 = require("./636503.js"),
+  Chunk451429 = require("./451429.js");
 
-function x() {
+function f() {
   let e = (0, Chunk442837.e7)([Chunk441623.ZP], () => Chunk441623.ZP.getDevToolTotalFriendAnniversaries()),
     t = (0, Chunk442837.e7)([Chunk441623.ZP], () => Chunk441623.ZP.getDevToolCurrentDate()),
     n = (0, Chunk442837.e7)([Chunk441623.ZP], () => Chunk441623.ZP.getGiftUnreadNotificationLastDismissedTimes()),
     r = (0, Chunk442837.e7)([Chunk441623.ZP], () => Chunk441623.ZP.getMessageGiftIntentLastShownMap()),
-    x = e => {
+    f = e => {
       c.Z.dispatch({
         type: "DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT",
         total: e
       })
     };
   return (0, Chunk54381.jsx)(Chunk481060.zJl, {
-    className: Chunk663618.panel,
+    className: Chunk451429.panel,
     children: (0, Chunk54381.jsxs)("div", {
-      className: Chunk555109.panelInner,
+      className: Chunk636503.panelInner,
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk555109.panelHeader,
+        className: Chunk636503.panelHeader,
         variant: "text-lg/bold",
         children: "Friend Anniversary"
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk555109.panelRow,
+        className: Chunk636503.panelRow,
         children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
           gap: 8,
           direction: "horizontal",
@@ -76,7 +76,7 @@ function x() {
             }],
             value: module,
             onChange: e => {
-              x(e)
+              f(e)
             },
             popoutLayerContext: Chunk246992.O$
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
@@ -84,12 +84,12 @@ function x() {
             variant: "secondary",
             text: "Clear",
             onClick: () => {
-              x(null)
+              f(null)
             }
           })]
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk555109.panelRow,
+        className: Chunk636503.panelRow,
         children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
           gap: 8,
           direction: "horizontal",
@@ -116,7 +116,7 @@ function x() {
           })]
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk555109.panelRow,
+        className: Chunk636503.panelRow,
         children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
           gap: 8,
           children: [(0, Chunk54381.jsxs)(Chunk481060.Kqy, {
@@ -151,7 +151,7 @@ function x() {
           })]
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk555109.panelRow,
+        className: Chunk636503.panelRow,
         children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
           gap: 8,
           children: [(0, Chunk54381.jsxs)(Chunk481060.Kqy, {
@@ -182,7 +182,7 @@ function x() {
           })]
         })
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk555109.panelRow,
+        className: Chunk636503.panelRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Send gift notification"
@@ -195,7 +195,7 @@ function x() {
           }
         })]
       }), (0, Chunk54381.jsxs)("div", {
-        className: Chunk555109.panelRow,
+        className: Chunk636503.panelRow,
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "Clear last seen friend anniversaries in All Friends"

@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk159635 = require("./159635.js"),
   i = require.n(Chunk159635);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,7 +17,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e, t) {
+function a(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -30,7 +30,7 @@ function o(e, t) {
 let s = /^[\s\S]+?(?=[^0-9A-Za-z\s\u00c0-\uffff]|\n\n| {2,}\n|\w+:\S|[0-9]+\.|$)/,
   l = e => new RegExp("^[\\s\\S]+?(?=".concat(e, "|[^0-9A-Za-z\\s\\u00ff-\\uffff]|\\n\\n| {2,}\\n|\\w+:\\S|[0-9]+\\.|$)")),
   c = function(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
   }(function(e) {
@@ -40,7 +40,7 @@ let s = /^[\s\S]+?(?=[^0-9A-Za-z\s\u00c0-\uffff]|\n\n| {2,}\n|\w+:\S|[0-9]+\.|$)
       "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), r.forEach(function(t) {
-        a(e, t, n[t])
+        o(e, t, n[t])
       })
     }
     return e

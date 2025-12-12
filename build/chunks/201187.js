@@ -8,6 +8,6 @@ var Chunk745872 = require("./745872.js"),
   s = Chunk745872("%Reflect.apply%", true) || Chunk166691("Function.prototype.apply");
 module.exports = function(e, t) {
   var n = arguments.length > 2 ? arguments[2] : [];
-  if (!o(n)) throw new a("Assertion failed: optional `argumentsList`, if provided, must be a List");
+  if (!a(n)) throw new o("Assertion failed: optional `argumentsList`, if provided, must be a List");
   return s(e, t, n)
 }

@@ -42,7 +42,7 @@ let m = function(e) {
       questId: n,
       setQuestId: r
     }
-  }(t), b = (0, a.e7)([c.Z], () => null != n ? c.Z.getQuest(n) : true, [n]), _ = (0, a.e7)([c.Z], () => null != n ? c.Z.getQuestLoadedViaPreview(n) : null, [n]);
+  }(t), _ = (0, a.e7)([c.Z], () => null != n ? c.Z.getQuest(n) : true, [n]), b = (0, a.e7)([c.Z], () => null != n ? c.Z.getQuestLoadedViaPreview(n) : null, [n]);
   i.useEffect(() => {
     null != n && (0, o.MG)(n).then(() => {
       (0, o.T0)(n)
@@ -63,7 +63,7 @@ let m = function(e) {
     controls: (0, r.jsx)(d.Z, {
       questId: n,
       setQuestId: m,
-      quest: b,
+      quest: _,
       refreshQuest: () => {
         null != n && (0, o.MG)(n)
       }
@@ -72,8 +72,8 @@ let m = function(e) {
     onSectionSelect: e => {
       "all" === e ? O([]) : O([e])
     },
-    children: (null == _ ? true : _.id) != null ? (0, r.jsx)(f.UN, {
-      questId: null == _ ? true : _.id,
+    children: (null == b ? true : b.id) != null ? (0, r.jsx)(f.UN, {
+      questId: null == b ? true : b.id,
       selectedSections: E
     }) : null
   })

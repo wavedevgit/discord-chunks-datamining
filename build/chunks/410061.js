@@ -15,7 +15,7 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -28,7 +28,7 @@ function a(e) {
   return e
 }
 
-function o(e, t) {
+function a(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -40,7 +40,7 @@ function o(e, t) {
 }
 
 function s(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : a(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -76,7 +76,7 @@ function u(e) {
 }
 let d = (e, t) => {
   let n = r.useRef(0),
-    [i, o] = r.useState(false),
+    [i, a] = r.useState(false),
     [d, f] = r.useState({}),
     p = r.useRef(new AbortController),
     [_, m] = r.useState(t),
@@ -95,7 +95,7 @@ let d = (e, t) => {
         } = e;
         return g.current.has(t)
       })) && r;
-      if (o(i), n.current = 0, !i && null != e)
+      if (a(i), n.current = 0, !i && null != e)
         for (let {
             src: t
           }
@@ -106,13 +106,13 @@ let d = (e, t) => {
     n.current = 1;
     let t = p.current;
     e.config.effects.forEach(async e => {
-      if (g.current.has(e.src)) h.current.set(e.src, 2), u(h.current) && (o(true), n.current = 2);
+      if (g.current.has(e.src)) h.current.set(e.src, 2), u(h.current) && (a(true), n.current = 2);
       else try {
         let r = await l(e.src, t.signal);
         if (t.signal.aborted) return;
-        h.current.set(e.src, 2), g.current.set(e.src, r.src), f(t => s(a({}, t), {
+        h.current.set(e.src, 2), g.current.set(e.src, r.src), f(t => s(o({}, t), {
           [e.src]: r
-        })), u(h.current) && (o(true), n.current = 2)
+        })), u(h.current) && (a(true), n.current = 2)
       } catch (e) {}
     })
   }, [e, _]), r.useEffect(() => {

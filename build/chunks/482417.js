@@ -63,19 +63,19 @@ function f(e) {
     } = u,
     h = f.name,
     g = {
-      onClick: () => (0, i.o)(o.Hw.TRACK, u.external_id),
+      onClick: () => (0, i.o)(a.Hw.TRACK, u.external_id),
       ariaDescription: s.intl.formatToPlainString(s.t.xTsar2, {
         itemName: p
       })
     },
     E = {
-      onClick: () => (0, i.o)(o.Hw.ARTIST, f.external_id),
+      onClick: () => (0, i.o)(a.Hw.ARTIST, f.external_id),
       ariaDescription: s.intl.formatToPlainString(s.t.xTsar2, {
         itemName: h
       })
     };
   return _ === r.p.SPOTIFY && (t = {
-    type: a.kG.SPOTIFY
+    type: o.kG.SPOTIFY
   }), d(c({}, l), {
     title: p,
     subtitle: h,

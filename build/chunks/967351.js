@@ -32,11 +32,11 @@ let g = Chunk998502.ZP.requireModule("discord_rpc").RPCIPC,
     PONG: 4
   };
 
-function b(e, t) {
+function _(e, t) {
   null != e.setHandshakeComplete ? e.setHandshakeComplete(t) : e._didHandshake = t
 }
 
-function _(e) {
+function b(e) {
   return null != e.getHandshakeComplete ? e.getHandshakeComplete() : e._didHandshake
 }
 
@@ -130,7 +130,7 @@ class v extends Chunk76238.Z {
         this.handleHandshake(e, n), e.emit("handshake", n);
         break;
       case m.FRAME:
-        if (!_(e)) throw Error("did not handshake");
+        if (!b(e)) throw Error("did not handshake");
         e.emit("request", n);
         break;
       case m.CLOSE:
@@ -141,11 +141,11 @@ class v extends Chunk76238.Z {
     }
   }
   handleHandshake(e, t) {
-    if (_(e)) throw Error("already did handshake");
-    this.clientId = t.client_id, this.checkRpcVersion(+t.v), b(e, true)
+    if (b(e)) throw Error("already did handshake");
+    this.clientId = t.client_id, this.checkRpcVersion(+t.v), _(e, true)
   }
   constructor(e, t) {
-    super("ipc", p.X6Q, t), f(this, "messageBuffer", r.Buffer.alloc(0)), f(this, "currentHeader", null), f(this, "MAX_BUFFER_SIZE", 5242880), f(this, "socket", true), f(this, "clientId", null), this.socket = e, b(e, false)
+    super("ipc", p.X6Q, t), f(this, "messageBuffer", r.Buffer.alloc(0)), f(this, "currentHeader", null), f(this, "MAX_BUFFER_SIZE", 5242880), f(this, "socket", true), f(this, "clientId", null), this.socket = e, _(e, false)
   }
 }
 class y extends Chunk836560.EventEmitter {

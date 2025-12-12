@@ -2,24 +2,24 @@
 /** chunk id: 226106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk668781 = require("./668781.js"),
   Chunk194359 = require("./194359.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o(e) {
+function a(e) {
   let t = () => {
     i.Z.clearPendingRelationships()
   };
   r.Z.show({
-    title: a.intl.string(a.t.z2pFjo),
-    body: a.intl.formatToPlainString(a.t["0nTvEw"], {
+    title: o.intl.string(o.t.z2pFjo),
+    body: o.intl.formatToPlainString(o.t["0nTvEw"], {
       incomingRequestCount: e
     }),
-    confirmText: a.intl.string(a.t["cY+Oob"]),
+    confirmText: o.intl.string(o.t["cY+Oob"]),
     confirmVariant: "critical-primary",
-    cancelText: a.intl.string(a.t["ETE/oC"]),
+    cancelText: o.intl.string(o.t["ETE/oC"]),
     onConfirm: t
   })
 }

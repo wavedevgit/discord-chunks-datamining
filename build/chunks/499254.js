@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   _: () => i,
-  y: () => a
+  y: () => o
 });
 var Chunk570140 = require("./570140.js");
 
@@ -17,7 +17,7 @@ function i(e, t, n, i) {
   })
 }
 
-function a(e) {
+function o(e) {
   r.Z.dispatch({
     type: "APP_LAUNCHER_DISMISS",
     closeReason: e

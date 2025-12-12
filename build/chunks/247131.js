@@ -11,11 +11,11 @@ module.exports = function() {
   var r = 42;
   for (var i in module[t] = r, module) returnfalse;
   if ("function" == typeof Object.keys && 0 !== Object.keys(module).length || "function" == typeof Object.getOwnPropertyNames && 0 !== Object.getOwnPropertyNames(module).length) returnfalse;
-  var a = Object.getOwnPropertySymbols(module);
-  if (1 !== a.length || a[0] !== t || !Object.prototype.propertyIsEnumerable.call(module, t)) returnfalse;
+  var o = Object.getOwnPropertySymbols(module);
+  if (1 !== o.length || o[0] !== t || !Object.prototype.propertyIsEnumerable.call(module, t)) returnfalse;
   if ("function" == typeof Object.getOwnPropertyDescriptor) {
-    var o = Object.getOwnPropertyDescriptor(module, t);
-    if (o.value !== r || true !== o.enumerable) returnfalse
+    var a = Object.getOwnPropertyDescriptor(module, t);
+    if (a.value !== r || true !== a.enumerable) returnfalse
   }
   returntrue
 }

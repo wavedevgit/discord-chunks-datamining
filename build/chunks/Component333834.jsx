@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 333834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk91192 = require("./91192.jsx"),
@@ -27,9 +27,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk862149 = require("./862149.jsx"),
   Chunk982183 = require("./982183.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk588641 = require("./588641.js"),
+  Chunk422755 = require("./422755.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk347344 = require("./347344.js");
+  Chunk809946 = require("./809946.js");
 
 function Z(e) {
   e.stopPropagation()
@@ -44,7 +44,7 @@ function w(e) {
   return (0, r.jsx)(d.P3F, {
     "aria-expanded": n,
     onClick: i,
-    className: a()(N.messagesGroupHeaderWrap, {
+    className: o()(N.messagesGroupHeaderWrap, {
       [N.collapsed]: !n
     }),
     children: (0, r.jsxs)(d.Kqy, {
@@ -55,7 +55,7 @@ function w(e) {
         variant: "text-sm/medium",
         color: "text-subtle",
         className: N.messagesGroupHeader,
-        children: (0, o.capitalize)(P.intl.string(S.Vv[t]).toLowerCase())
+        children: (0, a.capitalize)(P.intl.string(E.Vv[t]).toLowerCase())
       }), (0, r.jsx)(d.CJ0, {
         size: "xxs",
         className: N.chevron
@@ -70,7 +70,7 @@ function A() {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.NOTIFICATIONS_INBOX);
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk347344.emptyStateContainer,
+    className: Chunk809946.emptyStateContainer,
     children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
       gap: 24,
       align: "center",
@@ -88,12 +88,12 @@ function A() {
           style: {
             textAlign: "center"
           },
-          children: Chunk388032.intl.string(Chunk588641.default["O+racd"])
+          children: Chunk388032.intl.string(Chunk422755.default["O+racd"])
         })]
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "secondary",
         onClick: () => (0, Chunk370774.j4)(module),
-        text: Chunk388032.intl.string(Chunk588641.default.klSpfs)
+        text: Chunk388032.intl.string(Chunk422755.default.klSpfs)
       })]
     })
   })
@@ -104,39 +104,39 @@ function R(e) {
     messages: t,
     unreadMessages: n,
     loadMore: l,
-    renderLoadingState: o,
+    renderLoadingState: a,
     renderMessageGroup: h,
     scrollerClassName: p,
-    className: _,
+    className: I,
     listName: P,
     ignoreGrouping: R = false
-  } = e, D = (0, O.fJ)(), M = i.useRef(null), L = (0, f.Z)(P, M), {
+  } = e, D = (0, y.fJ)(), M = i.useRef(null), L = (0, f.Z)(P, M), {
     entrypoint: k,
     notificationCenterVariant: G
-  } = (0, y.pN)({
+  } = (0, _.pN)({
     location: "NotificationsInboxSidebarList"
   }), {
     isLoading: U,
     isLoadingComplete: B,
     hasLoadedEver: F
-  } = (0, u.cj)([j.Z], () => ({
-    isLoading: j.Z.isLoading,
-    isLoadingComplete: j.Z.isLoadingComplete,
-    hasLoadedEver: j.Z.hasLoadedEver
+  } = (0, u.cj)([v.Z], () => ({
+    isLoading: v.Z.isLoading,
+    isLoadingComplete: v.Z.isLoadingComplete,
+    hasLoadedEver: v.Z.hasLoadedEver
   })), V = !F && U, {
     messageCategoryOpenStates: H,
     toggleOpenState: z
-  } = (0, v.Z)(), W = function() {
-    let e = (0, u.Wu)([j.Z], () => {
+  } = (0, O.Z)(), W = function() {
+    let e = (0, u.Wu)([v.Z], () => {
       var e;
-      return null != (e = j.Z.getNotifyingChannelIds()) ? e : []
+      return null != (e = v.Z.getNotifyingChannelIds()) ? e : []
     });
-    return (0, u.e7)([j.Z, g.ZP], () => {
-      let t = j.Z.getChannelInfoMap();
+    return (0, u.e7)([v.Z, g.ZP], () => {
+      let t = v.Z.getChannelInfoMap();
       for (let r of e) {
         var n;
         let e = t[r];
-        if ((null == e || e.loadState === S.a7.UNLOADED) && null != (n = g.ZP.hasUnread(r)) && n) returntrue
+        if ((null == e || e.loadState === E.a7.UNLOADED) && null != (n = g.ZP.hasUnread(r)) && n) returntrue
       }
       returnfalse
     }, [e])
@@ -155,8 +155,8 @@ function R(e) {
         animate: true
       })
     }
-    return b.S.subscribe(I.CkL.SCROLL_PAGE_DOWN, t), b.S.subscribe(I.CkL.SCROLL_PAGE_UP, e), () => {
-      b.S.unsubscribe(I.CkL.SCROLL_PAGE_DOWN, t), b.S.unsubscribe(I.CkL.SCROLL_PAGE_UP, e)
+    return m.S.subscribe(S.CkL.SCROLL_PAGE_DOWN, t), m.S.subscribe(S.CkL.SCROLL_PAGE_UP, e), () => {
+      m.S.unsubscribe(S.CkL.SCROLL_PAGE_DOWN, t), m.S.unsubscribe(S.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
   let K = i.useCallback(() => {
@@ -164,34 +164,34 @@ function R(e) {
       let t = null == (e = M.current) ? true : e.getScrollerState();
       if (null == t) return;
       let n = .5 * t.offsetHeight;
-      t.scrollHeight - (t.scrollTop + t.offsetHeight) <= n && (null == l || l(S.X.USER_SCROLL))
+      t.scrollHeight - (t.scrollTop + t.offsetHeight) <= n && (null == l || l(E.X.USER_SCROLL))
     }, [l]),
     Y = i.useMemo(() => {
       let e = {
-          [S.KZ.UNREAD]: [],
-          [S.KZ.TODAY]: [],
-          [S.KZ.YESTERDAY]: [],
-          [S.KZ.OLDER]: []
+          [E.KZ.UNREAD]: [],
+          [E.KZ.TODAY]: [],
+          [E.KZ.YESTERDAY]: [],
+          [E.KZ.OLDER]: []
         },
         r = {
-          [S.KZ.UNREAD]: [],
-          [S.KZ.TODAY]: [],
-          [S.KZ.YESTERDAY]: [],
-          [S.KZ.OLDER]: []
+          [E.KZ.UNREAD]: [],
+          [E.KZ.TODAY]: [],
+          [E.KZ.YESTERDAY]: [],
+          [E.KZ.OLDER]: []
         },
         i = {
-          [S.KZ.UNREAD]: {},
-          [S.KZ.TODAY]: {},
-          [S.KZ.YESTERDAY]: {},
-          [S.KZ.OLDER]: {}
+          [E.KZ.UNREAD]: {},
+          [E.KZ.TODAY]: {},
+          [E.KZ.YESTERDAY]: {},
+          [E.KZ.OLDER]: {}
         };
       return (t.length > 0 || n.length > 0) && (s().each(n, e => {
-        e.kind === S.fL.MENTION ? r[S.KZ.UNREAD].push(e) : e.channelId in i[S.KZ.UNREAD] ? i[S.KZ.UNREAD][e.channelId].push(e) : i[S.KZ.UNREAD][e.channelId] = [e]
+        e.kind === E.fL.MENTION ? r[E.KZ.UNREAD].push(e) : e.channelId in i[E.KZ.UNREAD] ? i[E.KZ.UNREAD][e.channelId].push(e) : i[E.KZ.UNREAD][e.channelId] = [e]
       }), s().each(t, e => {
-        let t = (0, C.bl)(e);
-        e.kind === S.fL.MENTION ? r[t].push(e) : e.channelId in i[t] ? i[t][e.channelId].push(e) : i[t][e.channelId] = [e]
+        let t = (0, j.bl)(e);
+        e.kind === E.fL.MENTION ? r[t].push(e) : e.channelId in i[t] ? i[t][e.channelId].push(e) : i[t][e.channelId] = [e]
       }), s().each(T, t => {
-        [...Object.values(i[t]).map(e => e.reverse()), ...r[t].map(e => [e])].sort((e, t) => m.default.compare(t[0].id, e[0].id)).forEach(n => {
+        [...Object.values(i[t]).map(e => e.reverse()), ...r[t].map(e => [e])].sort((e, t) => b.default.compare(t[0].id, e[0].id)).forEach(n => {
           e[t].push(n)
         })
       })), e
@@ -200,24 +200,24 @@ function R(e) {
     Q = 0 === t.length && 0 === n.length && !F && U,
     X = i.useMemo(() => {
       let e = [];
-      return Q ? e.push(o()) : q ? e.push((0, r.jsx)(A, {}, "empty-state")) : R ? (e.push(...n.map(e => h([e], true))), e.push(...t.map(e => h([e], false)))) : s().each(T, t => {
+      return Q ? e.push(a()) : q ? e.push((0, r.jsx)(A, {}, "empty-state")) : R ? (e.push(...n.map(e => h([e], true))), e.push(...t.map(e => h([e], false)))) : s().each(T, t => {
         0 !== Y[t].length && (e.push((0, r.jsx)(w, {
           group: t,
           isOpen: H[t],
           toggleOpenedState: () => {
             let e = H[t];
-            z(t), (0, O.RZ)({
+            z(t), (0, y.RZ)({
               section: t,
               enabled: !e,
               viewId: D
             })
           }
-        }, t)), H[t] && e.push(...Y[t].map(e => h(e, t === S.KZ.UNREAD))))
+        }, t)), H[t] && e.push(...Y[t].map(e => h(e, t === E.KZ.UNREAD))))
       }), e
-    }, [t, n, o, H, z, Y, R, h, q, Q, D]),
+    }, [t, n, a, H, z, Y, R, h, q, Q, D]),
     J = X[X.length - 1],
     $ = i.isValidElement(J) && J.type === w,
-    ee = (0, x.d)(e => e.setInboxReadState);
+    ee = (0, C.d)(e => e.setInboxReadState);
   i.useEffect(() => {
     Q || ee(0 === Y.UNREAD.length)
   }, [Y, Q, ee]);
@@ -227,11 +227,11 @@ function R(e) {
       loadingInitial: t,
       messagesByCategory: n
     } = e, r = i.useRef(false), l = n.UNREAD.length > 0, {
-      setOpenStateFromUnreads: a
-    } = (0, v.Z)();
+      setOpenStateFromUnreads: o
+    } = (0, O.Z)();
     i.useEffect(() => {
-      t || r.current || (a(l), r.current = true)
-    }, [a, l, t])
+      t || r.current || (o(l), r.current = true)
+    }, [o, l, t])
   }({
     messagesByCategory: Y,
     loadingInitial: V
@@ -243,16 +243,16 @@ function R(e) {
     return null == n ? 0 : Math.max(0, Math.ceil(n.offsetHeight / 64) - t)
   }, [H, Y]);
   i.useEffect(() => {
-    Q || U || 0 >= en() || (!$ || W) && (null == l || l(S.X.FILL_SCROLLER))
+    Q || U || 0 >= en() || (!$ || W) && (null == l || l(E.X.FILL_SCROLLER))
   }, [en, l, Q, U, $, W]);
   let er = i.useMemo(() => {
     let e = Math.min(Math.max(2, en()), 20);
-    return (0, r.jsx)(E.Z, {
+    return (0, r.jsx)(x.Z, {
       withHeader: false,
       size: e
     })
   }, [en]);
-  return (0, O.vU)({
+  return (0, y.vU)({
     notificationCenterVariant: G,
     entrypoint: k,
     messages: t,
@@ -260,7 +260,7 @@ function R(e) {
     messagesByCategory: Y,
     viewId: D
   }), (0, r.jsx)("div", {
-    className: a()(_, N.messagesPopoutWrap),
+    className: o()(I, N.messagesPopoutWrap),
     onClick: Z,
     onDoubleClick: Z,
     "aria-label": e["aria-label"],
@@ -308,7 +308,7 @@ function R(e) {
               var t;
               M.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
-            className: a()(N.messagesPopout, p),
+            className: o()(N.messagesPopout, p),
             onScroll: K,
             fade: true
           }, l), n = n = {

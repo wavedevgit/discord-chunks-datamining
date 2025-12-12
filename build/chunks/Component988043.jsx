@@ -24,13 +24,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk736530 = require("./736530.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk372807 = require("./372807.js");
+  Chunk435757 = require("./435757.js");
 
 function I(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, E = (0, p.c_)(), I = d.h2.useSetting().includes(n), T = (0, u.q)(), C = (0, f.r)(), A = (0, o.LN)(), N = i.useCallback(e => {
+  } = e, E = (0, p.c_)(), I = d.h2.useSetting().includes(n), T = (0, u.q)(), C = (0, f.r)(), A = (0, a.LN)(), N = i.useCallback(e => {
     let r = (0, c.YK)();
     e ? r.delete(n) : r.add(n), d.h2.updateSetting(Array.from(r)), l.default.track(O.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: g.Y.DIRECT_MESSAGES_TOGGLE,
@@ -60,7 +60,7 @@ function I(e) {
         body: v.intl.string(v.t.hjGJBp),
         confirmText: v.intl.string(v.t.gm1Vej),
         cancelText: v.intl.string(v.t.p89ACt),
-        confirmButtonColor: a.zx.Colors.BRAND,
+        confirmButtonColor: o.zx.Colors.BRAND,
         onConfirm: n,
         onCancel: t
       })

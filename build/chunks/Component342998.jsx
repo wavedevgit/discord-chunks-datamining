@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk964056 = require("./964056.js");
+  Chunk627261 = require("./627261.js");
 let y = (0, Chunk663042.U)(e => ({
     activeEntryId: null,
     setActiveEntryId: t => e({
@@ -31,7 +31,7 @@ let y = (0, Chunk663042.U)(e => ({
     let {
       entry: t,
       isFirstApplicationOccurrence: n,
-      targetElementRef: a
+      targetElementRef: o
     } = e, {
       data: O
     } = (0, _.IX)(t.extra.application_id), {
@@ -56,8 +56,8 @@ let y = (0, Chunk663042.U)(e => ({
     i.useEffect(() => {
       D && !L && j(true)
     }, [D, L]), (0, p.Z)({
-      name: o.ImpressionNames.CLOUD_PLAY_CTA,
-      type: o.ImpressionTypes.VIEW,
+      name: a.ImpressionNames.CLOUD_PLAY_CTA,
+      type: a.ImpressionTypes.VIEW,
       properties: {
         location_stack: v
       }
@@ -70,7 +70,7 @@ let y = (0, Chunk663042.U)(e => ({
     return (0, r.jsx)(l.J2, {
       title: E.intl.string(E.t["+WNDtV"]),
       body: E.intl.string(E.t["5QKxGI"]),
-      targetElementRef: a,
+      targetElementRef: o,
       shouldShow: D,
       position: "left",
       caretConfig: {

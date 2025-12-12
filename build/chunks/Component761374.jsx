@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 761374, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => C
 }), require("./388685.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,13 +25,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk340101 = require("./340101.js"),
   Chunk501787 = require("./501787.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk230558 = require("./230558.js");
+  Chunk965365 = require("./965365.js");
 
-function j(e) {
+function C(e) {
   var t, n;
   let {
-    id: j,
-    widget: _,
+    id: C,
+    widget: j,
     size: Z,
     locked: N,
     padding: w,
@@ -42,20 +42,20 @@ function j(e) {
     anchorTop: D,
     anchorLeft: R,
     showEmpty: L = true
-  } = e, M = A ? S.C5.HORIZONTAL : S.C5.VERTICAL, z = M === S.C5.VERTICAL, V = (0, l.e7)([m.Z], () => {
+  } = e, M = A ? _.C5.HORIZONTAL : _.C5.VERTICAL, z = M === _.C5.VERTICAL, V = (0, l.e7)([m.Z], () => {
     var e;
-    let t = m.Z.getWidget(j);
-    return !!(0, S.ZL)(t) && !N && (null == (e = t.meta.showAllStreams) || e)
-  }, [j, N]), U = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), W = (0, l.e7)([p.Z], () => p.Z.getChannel(U)), {
+    let t = m.Z.getWidget(C);
+    return !!(0, _.ZL)(t) && !N && (null == (e = t.meta.showAllStreams) || e)
+  }, [C, N]), U = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), W = (0, l.e7)([f.Z], () => f.Z.getChannel(U)), {
     streamParticipants: G,
     activeStreams: F,
     participantsVersion: H
-  } = function(e, t, n, i, a) {
-    let o = (0, l.Wu)([f.Z], () => null == e ? [] : f.Z.getAllActiveStreamsForChannel(e)),
-      s = r.useMemo(() => new Set(o.map(e => (0, u.V9)(e))), [o]),
+  } = function(e, t, n, i, o) {
+    let a = (0, l.Wu)([h.Z], () => null == e ? [] : h.Z.getAllActiveStreamsForChannel(e)),
+      s = r.useMemo(() => new Set(a.map(e => (0, u.V9)(e))), [a]),
       d = (0, l.e7)([c.Z], () => null == e ? false : c.Z.getParticipantsVersion(e));
     return {
-      streamParticipants: (0, l.Wu)([c.Z, f.Z], () => {
+      streamParticipants: (0, l.Wu)([c.Z, h.Z], () => {
         if (null == e) return [];
 
         function r(e) {
@@ -63,39 +63,39 @@ function j(e) {
         }
         let l = c.Z.getStreamParticipants(e).filter(e => {
           if (e.user.id === t) returnfalse;
-          let i = f.Z.getActiveStreamForUser(e.user.id, e.stream.guildId);
-          return !(null != i && v.q.has(i.state)) && (!!n || r(e))
+          let i = h.Z.getActiveStreamForUser(e.user.id, e.stream.guildId);
+          return !(null != i && E.q.has(i.state)) && (!!n || r(e))
         });
         return l.sort((e, t) => {
           if (i) {
             if (r(e) && !r(t)) return false;
             if (!r(e) && r(t)) return 1
-          } else if (a) {
+          } else if (o) {
             if (r(e) && !r(t)) return 1;
             if (!r(e) && r(t)) return false
           }
           return e.user.username.localeCompare(t.user.username)
         }), l
-      }, [e, s, t, n, i, a]),
+      }, [e, s, t, n, i, o]),
       activeStreams: s,
       participantsVersion: d
     }
-  }(U, (0, l.e7)([h.default], () => h.default.getId()), V, D && z || R && A, !D && z || !R && A), B = G.length, Y = (0, l.e7)([d.Z], () => d.Z.getWindowState(x.$J), []), {
+  }(U, (0, l.e7)([p.default], () => p.default.getId()), V, D && z || R && A, !D && z || !R && A), B = G.length, Y = (0, l.e7)([d.Z], () => d.Z.getWindowState(S.$J), []), {
     tileWidth: Q,
     tileHeight: K,
     widgetWidth: X,
     widgetHeight: J,
     containerRef: q,
     containerMinMaxSizes: $
-  } = (0, E.Bz)({
+  } = (0, b.Bz)({
     tileCount: B,
     padding: w,
     borderWidth: T,
     isVertical: z,
     widgetSize: Z
   }), ee = {
-    id: j,
-    widget: _,
+    id: C,
+    widget: j,
     layout: M,
     participants: G.length,
     padding: w,
@@ -113,29 +113,29 @@ function j(e) {
     },
     locked: N
   };
-  (0, E.Dl)({
-    id: j,
+  (0, b.Dl)({
+    id: C,
     streamParticipants: G,
     layout: M,
     widgetLayoutSpecs: ee
   });
   let et = null == W || 0 === F.size && N || 0 === B && !N;
   return (r.useEffect(() => {
-    o.Z.setGpuBoostRequested(b.zS.OVERLAY_VIDEO_STREAM_RENDERING, !et)
+    a.Z.setGpuBoostRequested(y.zS.OVERLAY_VIDEO_STREAM_RENDERING, !et)
   }, [et]), (0, s.ZP)(() => () => {
-    o.Z.setGpuBoostRequested(b.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
-  }), (et || !k) && N) ? null : et && !N ? L ? N ? null : (0, i.jsx)(y.E, {
-    emptyText: I.intl.string(I.t["T6+rXy"]),
-    icon: a.hGI,
+    a.Z.setGpuBoostRequested(y.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
+  }), (et || !k) && N) ? null : et && !N ? L ? N ? null : (0, i.jsx)(O.E, {
+    emptyText: x.intl.string(x.t["T6+rXy"]),
+    icon: o.hGI,
     absolute: true
   }) : null : (0, i.jsx)("div", {
-    className: C.goLiveGridContainer,
+    className: I.goLiveGridContainer,
     style: {
       opacity: P
     },
     ref: q,
-    children: (0, i.jsx)(O.Z, {
-      widgetId: j,
+    children: (0, i.jsx)(v.Z, {
+      widgetId: C,
       tileWidth: Q,
       tileHeight: K,
       locked: N,

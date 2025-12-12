@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk658244 = require("./658244.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -50,11 +50,11 @@ class E extends Chunk473749.PureComponent {
     }) : null
   }
   constructor(...e) {
-    super(...e), _(this, "handleUserContextMenu", (e, t) => {
+    super(...e), b(this, "handleUserContextMenu", (e, t) => {
       (0, o.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("18030")]).then(n.bind(n, 881351));
+        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("74820")]).then(n.bind(n, 881351));
         return n => (0, r.jsx)(e, function(e, t) {
           return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
@@ -73,7 +73,7 @@ class E extends Chunk473749.PureComponent {
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              _(e, t, n[t])
+              b(e, t, n[t])
             })
           }
           return e
@@ -81,13 +81,13 @@ class E extends Chunk473749.PureComponent {
           user: t
         }))
       })
-    }), _(this, "renderOverflowPopout", () => {
+    }), b(this, "renderOverflowPopout", () => {
       let {
         party: e
       } = this.props;
       return (0, r.jsx)(m.Z, {
         party: e,
-        header: b.intl.formatToPlainString(b.t.I9et1z, {
+        header: _.intl.formatToPlainString(_.t.I9et1z, {
           count: e.length
         })
       })

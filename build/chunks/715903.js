@@ -29,5 +29,5 @@ function u(e) {
 }
 
 function d(e) {
-  return (0, i.e7)([a.ZP], () => null != e && u(a.ZP.getSelfMember(e)), [e])
+  return (0, i.e7)([o.ZP], () => null != e && u(o.ZP.getSelfMember(e)), [e])
 }

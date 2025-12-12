@@ -24,7 +24,7 @@ function d() {
       gradientPreset: n
     } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Chunk514361.Z,
     r = arguments.length > 3 ? arguments[3] : true,
-    a = arguments.length > 4 ? arguments[4] : true,
+    o = arguments.length > 4 ? arguments[4] : true,
     c = null != Chunk442837.customUserThemeSettings || Chunk233398;
   return (0, Chunk780384.ap)(module.theme) && exports && null == require && !Chunk695346
 }

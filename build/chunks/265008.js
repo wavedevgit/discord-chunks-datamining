@@ -71,8 +71,8 @@ class y extends Chunk147913.Z {
       CONNECTION_INTERRUPTED: () => this.clear(),
       SELF_PRESENCE_STORE_UPDATE: () => this.start()
     }), p(this, "start", () => {
-      h() && u.Z.isCooldownElapsed() && null == this.timerId && b(o.Z.getStatus()) && (this.timerId = setTimeout(() => {
-        this.timerId = null, b(o.Z.getStatus()) && u.Z.isCooldownElapsed() && E()
+      h() && u.Z.isCooldownElapsed() && null == this.timerId && b(a.Z.getStatus()) && (this.timerId = setTimeout(() => {
+        this.timerId = null, b(a.Z.getStatus()) && u.Z.isCooldownElapsed() && E()
       }, g()))
     }), p(this, "clear", () => {
       null != this.timerId && (clearTimeout(this.timerId), this.timerId = null)

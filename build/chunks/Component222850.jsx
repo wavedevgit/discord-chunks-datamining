@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk435673 = require("./435673.js");
+  Chunk718462 = require("./718462.js");
 let I = Math.ceil(Math.sqrt(115200)),
   C = (I - 240) / 2,
   S = function(e) {
@@ -45,7 +45,7 @@ let I = Math.ceil(Math.sqrt(115200)),
         dismissContent: r
       }
     }(), x = i.useCallback(() => {
-      _.Z.getState().setUtmCurrentContext({
+      b.Z.getState().setUtmCurrentContext({
         utmContentCurrent: "PRIMARY_QUEST_HOME"
       })
     }, []), [{
@@ -170,7 +170,7 @@ let I = Math.ceil(Math.sqrt(115200)),
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
-      }), N && (0, r.jsx)(b.Z, {
+      }), N && (0, r.jsx)(_.Z, {
         targetElementRef: T,
         onNavigateToQuestHome: x,
         onRender: M,

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   BR: () => i,
-  VV: () => a
+  VV: () => o
 }), require("./388685.js");
 let r = {
     DARK: "dark",
@@ -13,6 +13,6 @@ let r = {
   },
   i = r;
 r.MIDNIGHT, r.DARK, r.DARKER, r.DARK;
-let a = {
+let o = {
   Themes: r
 }

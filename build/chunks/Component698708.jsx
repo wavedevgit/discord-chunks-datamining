@@ -30,7 +30,7 @@ function p(e) {
   null != g ? b = g : null != m && null == (0, u.ly)(m) ? b = m : null != h ? b = h : null != t && (b = t);
   let y = _.length > 1,
     O = null != b ? b.message : "";
-  if (null != b && b instanceof o.HF && (b.code === s.SM.CARD_DECLINED && y && (O += " ".concat(f.intl.string(f.t.iWvwQS))), b.code === s.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (O = f.intl.string(f.t.ypuSd8)), b.code === d.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (O = f.intl.string(f.t.mXMmWE)), b.code === s.SM.INVALID_CURRENCY_FOR_PAYMENT_SOURCE && (O = f.intl.string(f.t.mC1Fjz)), b.code === s.SM.INVALID_BILLING_ADDRESS)) {
+  if (null != b && b instanceof a.HF && (b.code === s.SM.CARD_DECLINED && y && (O += " ".concat(f.intl.string(f.t.iWvwQS))), b.code === s.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (O = f.intl.string(f.t.ypuSd8)), b.code === d.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (O = f.intl.string(f.t.mXMmWE)), b.code === s.SM.INVALID_CURRENCY_FOR_PAYMENT_SOURCE && (O = f.intl.string(f.t.mC1Fjz)), b.code === s.SM.INVALID_BILLING_ADDRESS)) {
     let e = f.intl.format(f.t.BPDKoA, {
       helpdeskArticle: l.Z.getArticleURL(d.BhN.BILLING).concat(d.Bjg.INVALID_BILLING_ADDRESS)
     });
@@ -43,7 +43,7 @@ function p(e) {
   }, [b, E]), null == b) ? null : (0, r.jsx)("div", {
     ref: n,
     className: p,
-    children: (0, r.jsx)(a.M14, {
+    children: (0, r.jsx)(o.M14, {
       type: "critical",
       children: O
     })

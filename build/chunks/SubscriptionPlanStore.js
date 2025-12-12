@@ -43,7 +43,7 @@ function E(e) {
 }
 
 function b() {
-  [Chunk474936.GP[Chunk474936.Xh.NONE_MONTH], Chunk474936.GP[Chunk474936.Xh.NONE_YEAR], Chunk474936.GP[Chunk474936.Xh.NONE_3_MONTH], Chunk474936.GP[Chunk474936.Xh.NONE_6_MONTH]].forEach(e => E(o.ZP.createFromServer({
+  [Chunk474936.GP[Chunk474936.Xh.NONE_MONTH], Chunk474936.GP[Chunk474936.Xh.NONE_YEAR], Chunk474936.GP[Chunk474936.Xh.NONE_3_MONTH], Chunk474936.GP[Chunk474936.Xh.NONE_6_MONTH]].forEach(e => E(a.ZP.createFromServer({
     id: e.id,
     name: e.name,
     interval: e.interval,
@@ -57,7 +57,7 @@ function b() {
 }
 
 function y(e) {
-  E(o.ZP.createFromServer(e))
+  E(a.ZP.createFromServer(e))
 }
 
 function O(e) {

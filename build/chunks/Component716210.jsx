@@ -21,7 +21,7 @@ function d() {
     children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.jtiiCw),
       checked: module,
-      onChange: e => o.Z.setSilenceWarning(e)
+      onChange: e => a.Z.setSilenceWarning(e)
     })
   })
 }

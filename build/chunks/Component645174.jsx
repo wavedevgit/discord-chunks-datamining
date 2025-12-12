@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk685578 = require("./685578.js"),
   Chunk887490 = require("./887490.js"),
-  Chunk299477 = require("./299477.js");
+  Chunk953782 = require("./953782.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,11 +55,11 @@ function _(e, t) {
   let {
     attributes: n,
     children: i,
-    element: a
+    element: o
   } = t;
-  return "gameMentionInput" === a.type ? (0, r.jsx)(m, {
+  return "gameMentionInput" === o.type ? (0, r.jsx)(m, {
     attributes: n,
-    element: a,
+    element: o,
     children: i
   }) : null
 }
@@ -67,15 +67,15 @@ let m = e => {
   let {
     element: t,
     attributes: n,
-    children: a
-  } = e, u = (0, s.vt)(), f = (0, s.UE)(), _ = (0, s._7)(), m = o()(c.inlineElement, c.optionPill, c.gameMention, {
+    children: o
+  } = e, u = (0, s.vt)(), f = (0, s.UE)(), _ = (0, s._7)(), m = a()(c.inlineElement, c.optionPill, c.gameMention, {
     [c.selectedPill]: f && u,
     [c.erroredPill]: t.error
   }), h = i.useCallback(() => {
     l.bN.isVoid(_, t)
   }, [_, t]), g = (0, r.jsx)("span", {
     className: c.optionPillValue,
-    children: a
+    children: o
   });
   return (0, r.jsxs)("span", p(d({}, n), {
     className: m,

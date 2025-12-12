@@ -72,7 +72,7 @@ let k = {
     } = (0, L.n)(y), {
       primaryColor: q,
       secondaryColor: Q
-    } = (0, P.Z)(null == V ? true : V.src), X = (0, o.e7)([E.default], () => E.default.locale), {
+    } = (0, P.Z)(null == V ? true : V.src), X = (0, a.e7)([E.default], () => E.default.locale), {
       streamPreviewUrl: J,
       stream: $
     } = (0, I.Z)(y), {
@@ -80,7 +80,7 @@ let k = {
       participant1: et,
       participant2: en,
       numOtherParticipants: er
-    } = (0, S.Z)(y, 3), ei = y.extra.platform, ea = null != ei ? k[ei] : null, eo = ei === a.z.XBOX ? j.ABu.XBOX : ei === a.z.PLAYSTATION ? j.ABu.PLAYSTATION : true, es = (0, N.Z)(eo), {
+    } = (0, S.Z)(y, 3), ei = y.extra.platform, eo = null != ei ? k[ei] : null, ea = ei === o.z.XBOX ? j.ABu.XBOX : ei === o.z.PLAYSTATION ? j.ABu.PLAYSTATION : true, es = (0, N.Z)(ea), {
       data: el
     } = (0, h.IX)(y.extra.application_id), ec = (0, d.q)(el), eu = (0, g.L)(null != (n = null != (t = null == K ? true : K.application_id) ? t : null == z ? true : z.applicationId) ? n : null == el ? true : el.id), ed = i.useCallback(e => {
       if ((null == V ? true : V.src) == null || null == b || null == H) return;
@@ -109,9 +109,9 @@ let k = {
       }),
       ep = null == $ ? (0, r.jsx)(D.wG, {
         channel: b,
-        headerIcons: null == ea ? null : (0, r.jsx)(x.Z, {
+        headerIcons: null == eo ? null : (0, r.jsx)(x.Z, {
           onClick: es,
-          Icon: ea,
+          Icon: eo,
           "aria-label": M.intl.string(M.t.YR4cHH)
         }),
         userDescription: (0, T.kr)(y) ? M.t.vPg1JT : M.t.rPqqts,

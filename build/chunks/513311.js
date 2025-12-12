@@ -20,11 +20,11 @@ var r = Object.assign || function(e) {
     }
   }();
 
-function a(e, t) {
+function o(e, t) {
   if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 
-function o(e, t) {
+function a(e, t) {
   if (!e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
   return t && ("object" == typeof t || "function" == typeof t) ? t : e
 }
@@ -46,8 +46,8 @@ var Chunk543251 = require("./543251.js"),
   Chunk330890 = require("./330890.js");
 module.exports = function(e) {
   function t(e) {
-    a(this, t);
-    var n = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
+    o(this, t);
+    var n = a(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
     return !(e = d.current(e) || {}).transform || e.transform instanceof l || (e = r({}, e, {
       transform: new u(e.transform)
     })), n._style = e, n

@@ -3,21 +3,21 @@
 "use strict";
 require.d(exports, {
   UU: () => s,
-  uZ: () => o
+  uZ: () => a
 });
 var Chunk54381 = require("./54381.js"),
   Chunk24156 = require("./24156.js");
-let a = "popover-portal";
+let o = "popover-portal";
 
-function o() {
+function a() {
   return (0, Chunk54381.jsx)("div", {
-    id: a
+    id: o
   })
 }
 
 function s(e) {
   let {
     children: t
-  } = e, n = document.getElementById(a);
+  } = e, n = document.getElementById(o);
   return null == n ? null : (0, i.createPortal)(t, n)
 }

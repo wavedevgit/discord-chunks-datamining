@@ -18,11 +18,11 @@ async function p(e, t, n) {
   try {
     return await e()
   } catch (e) {
-    var r, i, o;
-    (null == (r = e.body) ? true : r.code) === d.evJ.NON_MODERATED_TAG_REQUIRED ? a.Z.show({
+    var r, i, a;
+    (null == (r = e.body) ? true : r.code) === d.evJ.NON_MODERATED_TAG_REQUIRED ? o.Z.show({
       title: t,
       body: n
-    }) : (null == (i = e.body) ? true : i.code) === d.evJ.INVALID_FORM_BODY && (null == (o = e.body) ? true : o.errors.emoji) && a.Z.show({
+    }) : (null == (i = e.body) ? true : i.code) === d.evJ.INVALID_FORM_BODY && (null == (a = e.body) ? true : a.errors.emoji) && o.Z.show({
       title: f.intl.string(f.t.T8sBLJ),
       body: f.intl.string(f.t.aHt1Bd)
     })
@@ -65,7 +65,7 @@ let _ = {
     });
     p(() => n, f.intl.string(f.t["0ZkNDU"]), f.intl.string(f.t.imcb5u))
   },
-  updateForumPostTags: async (e, t) => (await o.Z.unarchiveThreadIfNecessary(e), r.tn.patch({
+  updateForumPostTags: async (e, t) => (await a.Z.unarchiveThreadIfNecessary(e), r.tn.patch({
     url: d.ANM.CHANNEL(e),
     body: {
       applied_tags: t
@@ -89,13 +89,13 @@ let _ = {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : l.cs.IMMEDIATE_WITH_COOLDOWN;
     (0, s.rS)((0, c.UP)(e), t)
   },
-  async searchForumPosts(e, t, n, r, a) {
+  async searchForumPosts(e, t, n, r, o) {
     i.Z.dispatch({
       type: "FORUM_SEARCH_START",
       channelId: t
     });
     try {
-      let s = await o.Z.searchThreads(e, t, n, r, a);
+      let s = await a.Z.searchThreads(e, t, n, r, o);
       (0, u.Js)({
         guildId: e,
         channelId: t,

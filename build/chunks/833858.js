@@ -133,15 +133,15 @@ let _ = () => ({
   },
   E = function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "twemoji";
-    if ((null == t ? true : t.type) !== o.IIU.HANG_STATUS || (null == t ? true : t.state) == null) return null;
+    if ((null == t ? true : t.type) !== a.IIU.HANG_STATUS || (null == t ? true : t.state) == null) return null;
     let r = (0, i.F)(e, t.state),
       s = r[0];
-    if (s === a.tN.CUSTOM) return null;
+    if (s === o.tN.CUSTOM) return null;
     let l = g(r.length > 1 ? r[1] : n);
     return s in l ? l[s] : null
   },
   b = function(e, t) {
     var n;
     let r = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "twemoji";
-    return (null == t ? true : t.type) !== o.IIU.HANG_STATUS || (null == t ? true : t.state) == null ? null : (0, i.F)(e, t.state)[0] === a.tN.CUSTOM ? null == t ? true : t.details : null == (n = E(e, t, r)) ? true : n.title
+    return (null == t ? true : t.type) !== a.IIU.HANG_STATUS || (null == t ? true : t.state) == null ? null : (0, i.F)(e, t.state)[0] === o.tN.CUSTOM ? null == t ? true : t.details : null == (n = E(e, t, r)) ? true : n.title
   }

@@ -13,26 +13,26 @@ let s = "1290718710658629658";
 function l(e) {
   let t = [{
     key: "NOT_INTERESTED",
-    text: (0, a.q8)(e) ? o.intl.string(o.t.wHRWkE) : o.intl.formatToPlainString(o.t.AZRWVY, {
+    text: (0, o.q8)(e) ? a.intl.string(a.t.wHRWkE) : a.intl.formatToPlainString(a.t.AZRWVY, {
       entityName: e.config.messages.gameTitle
     })
   }, {
     key: "INVALUABLE",
-    text: o.intl.string(o.t.ETU4Na)
+    text: a.intl.string(a.t.ETU4Na)
   }, {
     key: "TOO_LONG",
-    text: o.intl.string(o.t.uRIIpD)
+    text: a.intl.string(a.t.uRIIpD)
   }, {
     key: "UNSURE_HOW",
-    text: o.intl.string(o.t["5dxvxs"])
+    text: a.intl.string(a.t["5dxvxs"])
   }, {
     key: "OTHER",
-    text: o.intl.string(o.t.RFasgu)
+    text: a.intl.string(a.t.RFasgu)
   }];
   return {
     id: s,
-    title: o.intl.string(o.t.ugbhDS),
-    subtitle: o.intl.string(o.t.FIYcpC),
+    title: a.intl.string(a.t.ugbhDS),
+    subtitle: a.intl.string(a.t.FIYcpC),
     choices: i()(t.slice(0, 4)).concat(t[4])
   }
 }

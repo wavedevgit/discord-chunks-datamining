@@ -88,8 +88,8 @@ function N(e, t) {
   if (null == e) return {};
   var n, r, i = P(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -97,8 +97,8 @@ function N(e, t) {
 function P(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let R = {
@@ -171,7 +171,7 @@ function Z(e) {
     channel: d
   } = r, p = async () => {
     try {
-      let a = await (0, f.Z)({
+      let o = await (0, f.Z)({
         command: t,
         optionValues: n,
         context: r,
@@ -181,15 +181,15 @@ function Z(e) {
         sectionName: l,
         source: E.Z.entrypoint()
       });
-      if (t.inputType === u.iw.BUILT_IN_TEXT && null != a && null != r.channel) {
+      if (t.inputType === u.iw.BUILT_IN_TEXT && null != o && null != r.channel) {
         var e;
-        let t = _.ZP.parse(d, a.content);
-        t.tts = null != (e = a.tts) && e, o.Z.sendMessage(r.channel.id, t, true, {
+        let t = _.ZP.parse(d, o.content);
+        t.tts = null != (e = o.tts) && e, a.Z.sendMessage(r.channel.id, t, true, {
           location: v.dy.APP_COMMAND
         })
       }
     } catch (e) {
-      throw a.Z.show({
+      throw o.Z.show({
         title: S.intl.string(S.t["aHO//m"]),
         body: S.intl.string(S.t.kuzKHK),
         confirmText: S.intl.string(S.t["5911Lb"]),

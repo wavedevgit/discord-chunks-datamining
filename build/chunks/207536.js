@@ -4,8 +4,8 @@ var Chunk543744 = require("./543744.js"),
   Chunk436091 = require("./436091.js");
 module.exports = function(e, t) {
   var n = false,
-    a = i(e) ? Array(e.length) : [];
+    o = i(e) ? Array(e.length) : [];
   return r(e, function(e, r, i) {
-    a[++n] = t(e, r, i)
-  }), a
+    o[++n] = t(e, r, i)
+  }), o
 }

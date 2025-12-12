@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => p
 });
 var r, Chunk31775 = require("./31775.js"),
-  a = require.n(Chunk31775),
+  o = require.n(Chunk31775),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
@@ -18,7 +18,7 @@ function l(e, t, n) {
   }) : e[t] = n, e
 }
 let c = 500,
-  u = new(a())({
+  u = new(o())({
     max: c
   });
 

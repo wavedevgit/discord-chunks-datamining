@@ -8,17 +8,17 @@ require.d(exports, {
 var Chunk230367 = require("./230367.js"),
   Chunk69122 = require("./69122.js"),
   Chunk825842 = require("./825842.js");
-let o = {
+let a = {
   readUnknownField: true,
   readerFactory: e => new l(e)
 };
 
 function s(e) {
-  return e ? Object.assign(Object.assign({}, o), e) : o
+  return e ? Object.assign(Object.assign({}, a), e) : a
 }
 class l {
   constructor(e, t) {
-    this.varint64 = a.sg, this.uint32 = a.jI, this.buf = e, this.len = e.length, this.pos = 0, this.view = new DataView(e.buffer, e.byteOffset, e.byteLength), this.textDecoder = null != t ? t : new TextDecoder("utf-8", {
+    this.varint64 = o.sg, this.uint32 = o.jI, this.buf = e, this.len = e.length, this.pos = 0, this.view = new DataView(e.buffer, e.byteOffset, e.byteLength), this.textDecoder = null != t ? t : new TextDecoder("utf-8", {
       fatal: true,
       ignoreBOM: true
     })

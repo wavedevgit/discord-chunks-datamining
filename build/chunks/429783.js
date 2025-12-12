@@ -27,8 +27,8 @@ function m(e, t) {
   if (!e.nodeType || !e.setAttribute) returnfalse;
   var n = "filter" === e.nodeName || e.parentNode && "filter" === e.parentNode.nodeName,
     r = t,
-    a = r.style,
-    o = r.children,
+    o = r.style,
+    a = r.children,
     s = r.scrollTop,
     l = r.scrollLeft,
     c = i(r, ["style", "children", "scrollTop", "scrollLeft"]),
@@ -39,9 +39,9 @@ function m(e, t) {
       }))
     });
   u.Globals.frameLoop.onWrite(function() {
-    for (var t in true !== o && (e.textContent = o), a)
-      if (a.hasOwnProperty(t)) {
-        var n = p(t, a[t]);
+    for (var t in true !== a && (e.textContent = a), o)
+      if (o.hasOwnProperty(t)) {
+        var n = p(t, o[t]);
         "float" === t ? t = "cssFloat" : f.test(t) ? e.style.setProperty(t, n) : e.style[t] = n
       } m.forEach(function(t, n) {
       e.setAttribute(t, d[n])
@@ -115,34 +115,34 @@ var b = /^(matrix|translate|scale|rotate|skew)/,
     function t(t) {
       var n = t.x,
         r = t.y,
-        a = t.z,
-        o = i(t, ["x", "y", "z"]),
+        o = t.z,
+        a = i(t, ["x", "y", "z"]),
         s = [],
         l = [];
-      return (n || r || a) && (s.push([n || 0, r || 0, a || 0]), l.push(function(e) {
+      return (n || r || o) && (s.push([n || 0, r || 0, o || 0]), l.push(function(e) {
         return ["translate3d(" + e.map(function(e) {
           return v(e, "px")
         }).join(",") + ")", S(e, 0)]
-      })), u.each(o, function(e, t) {
+      })), u.each(a, function(e, t) {
         if ("transform" === t) s.push([e || ""]), l.push(function(e) {
           return [e, "" === e]
         });
         else if (b.test(t)) {
-          if (delete o[t], u.is.und(e)) return;
+          if (delete a[t], u.is.und(e)) return;
           var n = y.test(t) ? "px" : O.test(t) ? "deg" : "";
           s.push(u.toArray(e)), l.push("rotate3d" === t ? function(e) {
             var t = e[0],
               r = e[1],
               i = e[2],
-              a = e[3];
-            return ["rotate3d(" + t + "," + r + "," + i + "," + v(a, n) + ")", S(a, 0)]
+              o = e[3];
+            return ["rotate3d(" + t + "," + r + "," + i + "," + v(o, n) + ")", S(o, 0)]
           } : function(e) {
             return [t + "(" + e.map(function(e) {
               return v(e, n)
             }).join(",") + ")", S(e, +!!t.startsWith("scale"))]
           })
         }
-      }), s.length && (o.transform = new T(s, l)), e.call(this, o) || this
+      }), s.length && (a.transform = new T(s, l)), e.call(this, a) || this
     }
     return d(t, e), t
   }(Chunk774505.AnimatedObject),
@@ -160,10 +160,10 @@ var b = /^(matrix|translate|scale|rotate|skew)/,
         t = "",
         n = true;
       return u.each(this.inputs, function(r, i) {
-        var a = u.getFluidValue(r[0]),
-          o = e.transforms[i](u.is.arr(a) ? a : r.map(u.getFluidValue)),
-          s = o[0],
-          l = o[1];
+        var o = u.getFluidValue(r[0]),
+          a = e.transforms[i](u.is.arr(o) ? o : r.map(u.getFluidValue)),
+          s = a[0],
+          l = a[1];
         t += " " + s, n = n && l
       }), n ? "none" : t
     }, n.addChild = function(e) {
@@ -207,7 +207,7 @@ Object.keys(Chunk247901).forEach(function(e) {
   "default" !== e && Object.defineProperty(t, e, {
     enumerable: true,
     get: function() {
-      return a[e]
+      return o[e]
     }
   })
 }), exports.a = A, exports.animated = A

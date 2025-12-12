@@ -5,8 +5,8 @@ var r;
 
 function i(e) {}
 
-function a(e, t) {}
+function o(e, t) {}
 require.d(exports, {
   B1: () => i,
-  L8: () => a
+  L8: () => o
 }), r = require.g.performance

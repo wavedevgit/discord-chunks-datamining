@@ -8,9 +8,9 @@ require("./473749.js");
 var Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk666075 = require("./666075.js"),
-  Chunk787068 = require("./787068.js");
-let s = t => {
+  Chunk76349 = require("./76349.js"),
+  Chunk768982 = require("./768982.js");
+let a = t => {
   let {
     text: e,
     icon: r,
@@ -76,7 +76,7 @@ function u(t) {
   }({}, b), r = r = {
     graphic: {
       type: "image",
-      src: a.Z
+      src: s.Z
     },
     title: l.intl.string(l.t.UVuXCs),
     onClose: u,
@@ -86,14 +86,14 @@ function u(t) {
       variant: "primary",
       onClick: u
     }],
-    children: [(0, n.jsx)(s, {
+    children: [(0, n.jsx)(a, {
       text: l.intl.string(l.t.sBDfo6),
       icon: i.nRN,
       foreground: "var(--status-danger)"
-    }), (0, n.jsx)(s, {
+    }), (0, n.jsx)(a, {
       text: l.intl.string(l.t.x58YtH),
       icon: i.gkL
-    }), (0, n.jsx)(s, {
+    }), (0, n.jsx)(a, {
       text: l.intl.string(l.t.XtVqla),
       icon: i.V9
     })]

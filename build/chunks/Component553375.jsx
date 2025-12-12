@@ -63,7 +63,7 @@ function h(e) {
     entry: r
   } = e;
   return null != r ? {
-    applicationId: (0, o.dX)(r) ? r.extra.application_id : true,
+    applicationId: (0, a.dX)(r) ? r.extra.application_id : true,
     sourceUserId: r.author_id
   } : null != n ? {
     applicationId: n.type === u.IIU.PLAYING && null != n.application_id ? n.application_id : true,
@@ -85,17 +85,17 @@ function g(e) {
     activity: s,
     entry: l,
     user: t
-  }), f = (0, c.M)(u), _ = null != s && (0, a.Z)(s), g = null != l && (0, o.dX)(l);
+  }), f = (0, c.M)(u), _ = null != s && (0, o.Z)(s), g = null != l && (0, a.dX)(l);
   if (_ || g) {
     let e = () => (0, i.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("82077"), n.e("30709")]).then(n.bind(n, 953848));
+      } = await Promise.all([n.e("82077"), n.e("87087")]).then(n.bind(n, 953848));
       if (null != s) return t => (0, r.jsx)(e, m(p({}, t), {
         detectedActivity: s,
         onSubmitted: () => {}
       }));
-      if (null != l && (0, o.dX)(l)) {
+      if (null != l && (0, a.dX)(l)) {
         let t = {
           name: l.extra.game_name,
           application_id: l.extra.application_id
@@ -122,8 +122,8 @@ function E(e) {
   let {
     user: t,
     activity: n,
-    entry: a,
-    onAction: o,
+    entry: o,
+    onAction: a,
     isMenuOpen: c,
     appContext: u
   } = e, {
@@ -131,7 +131,7 @@ function E(e) {
     sourceUserId: p
   } = h({
     activity: n,
-    entry: a,
+    entry: o,
     user: t
   }), _ = (0, l.Z)({
     location: "UserProfileActivityContextMenu",
@@ -145,7 +145,7 @@ function E(e) {
     id: "game-profile",
     label: d.intl.string(d.t.ajHoOr),
     action: e => {
-      null == o || o({
+      null == a || a({
         action: "PRESS_VIEW_GAME_PROFILE_MENU_ITEM"
       }), _(e)
     }

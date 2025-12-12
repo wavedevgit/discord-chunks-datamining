@@ -3,11 +3,11 @@
 "use strict";
 require.d(exports, {
   H: () => s,
-  f: () => o
+  f: () => a
 });
 var Chunk818083 = require("./818083.js"),
   Chunk751823 = require("./751823.js");
-let a = (0, Chunk818083.B)({
+let o = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-05_push_to_talk_latching",
   label: "Push to Talk Latching",
@@ -23,7 +23,7 @@ let a = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function a(e) {
   let {
     location: t,
     autoTrackExposure: n = true
@@ -34,7 +34,7 @@ function o(e) {
   }, {
     autoTrackExposure: n
   });
-  return a.getCurrentConfig({
+  return o.getCurrentConfig({
     location: t
   }, {
     disable: r,
@@ -53,7 +53,7 @@ function s(e) {
   }, {
     autoTrackExposure: n
   });
-  return a.useExperiment({
+  return o.useExperiment({
     location: t
   }, {
     disable: r,

@@ -26,7 +26,7 @@ var r = {
   "./ro.png": "935303",
   "./ru.png": "978138",
   "./sv-SE.png": "676980",
-  "./th.png": "654077",
+  "./th.png": "234798",
   "./tr.png": "126318",
   "./uk.png": "829531",
   "./vi.png": "43572",
@@ -35,10 +35,10 @@ var r = {
 };
 
 function i(e) {
-  return n(a(e))
+  return n(o(e))
 }
 
-function a(e) {
+function o(e) {
   if (!n.o(r, e)) {
     var t = Error("Cannot find module '" + e + "'");
     throw t.code = "MODULE_NOT_FOUND", t
@@ -47,4 +47,4 @@ function a(e) {
 }
 i.keys = function() {
   return Object.keys(r)
-}, i.resolve = a, module.exports = i, i.id = 621287
+}, i.resolve = o, module.exports = i, i.id = 621287

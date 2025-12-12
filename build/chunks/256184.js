@@ -6,12 +6,12 @@ require.d(exports, {
 });
 var Chunk822632 = require("./822632.js");
 let i = {
-  read: a
+  read: o
 };
 
-function a(e) {
+function o(e) {
   return {
-    "GIF Version": o(e),
+    "GIF Version": a(e),
     "Image Width": s(e),
     "Image Height": l(e),
     "Global Color Map": c(e),
@@ -20,7 +20,7 @@ function a(e) {
   }
 }
 
-function o(e) {
+function a(e) {
   let t = 3,
     n = 3;
   if (6 > e.byteLength) return;

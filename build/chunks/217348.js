@@ -6,21 +6,21 @@ require.d(exports, {
   S6: () => c,
   Xy: () => s,
   ZT: () => i,
-  dE: () => a,
-  is: () => o,
+  dE: () => o,
+  is: () => a,
   qo: () => u,
   yl: () => d
 });
 var Chunk239189 = require("./239189.js"),
   i = function() {},
-  a = function(e, t, n) {
+  o = function(e, t, n) {
     return Object.defineProperty(e, t, {
       value: n,
       writable: true,
       configurable: true
     })
   },
-  o = {
+  a = {
     arr: Array.isArray,
     obj: function(e) {
       return !!e && "Object" === e.constructor.name
@@ -40,8 +40,8 @@ var Chunk239189 = require("./239189.js"),
   };
 
 function s(e, t) {
-  if (o.arr(e)) {
-    if (!o.arr(t) || e.length !== t.length) returnfalse;
+  if (a.arr(e)) {
+    if (!a.arr(t) || e.length !== t.length) returnfalse;
     for (var n = 0; n < e.length; n++)
       if (e[n] !== t[n]) returnfalse;
     returntrue
@@ -49,15 +49,15 @@ function s(e, t) {
   return e === t
 }
 var l = function(e) {
-    return o.str(e) && ("#" == e[0] || /\d/.test(e) || !!(r.colorNames && r.colorNames[e]))
+    return a.str(e) && ("#" == e[0] || /\d/.test(e) || !!(r.colorNames && r.colorNames[e]))
   },
   c = function(e, t, n) {
-    o.fun(e.forEach) ? e.forEach(t, n) : Object.keys(e).forEach(function(r) {
+    a.fun(e.forEach) ? e.forEach(t, n) : Object.keys(e).forEach(function(r) {
       return t.call(n, e[r], r)
     })
   },
   u = function(e) {
-    return o.und(e) ? [] : o.arr(e) ? e : [e]
+    return a.und(e) ? [] : a.arr(e) ? e : [e]
   };
 
 function d(e, t) {

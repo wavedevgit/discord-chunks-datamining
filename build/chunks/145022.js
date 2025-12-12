@@ -28,7 +28,7 @@ function c(e, t, n) {
     reason: l.intl.formatToPlainString(l.t.wySUzv, {
       requestedTargets: p.map(e => {
         var t;
-        return null != (t = o.o0[e]) ? t : "unknown"
+        return null != (t = a.o0[e]) ? t : "unknown"
       }).join(", ")
     })
   };
@@ -66,7 +66,7 @@ function c(e, t, n) {
   return null != _ && _ < Date.now() ? {
     valid: false,
     reason: l.intl.string(l.t["8eRE6S"])
-  } : u.length > 0 && !u.includes(a.default.getId()) ? {
+  } : u.length > 0 && !u.includes(o.default.getId()) ? {
     valid: false,
     reason: l.intl.string(l.t.qZgV0a)
   } : {

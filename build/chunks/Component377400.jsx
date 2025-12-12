@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 377400, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -18,7 +18,7 @@ class c extends Chunk317770.Z {
     Chunk570140.Z.unsubscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), Chunk570140.Z.unsubscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
   }
   showKeyboardShortcuts() {
-    (0, Chunk481060.h7j)(e => (0, r.jsx)(o.Z, function(e) {
+    (0, Chunk481060.h7j)(e => (0, r.jsx)(a.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk81825 = require("./81825.js"),
   Chunk156570 = require("./156570.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,14 +16,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -54,12 +54,12 @@ class c extends Chunk81825.Z {
   }
   static convertStoreListing(e) {
     var t;
-    return l(o({}, e), {
+    return l(a({}, e), {
       summary: e.summary.default,
       description: null == (t = e.description) ? true : t.default
     })
   }
   constructor(e) {
-    super(), a(this, "subscriptions", true), a(this, "otps", true), this.subscriptions = e.subscriptions, this.otps = e.otps
+    super(), o(this, "subscriptions", true), o(this, "otps", true), this.subscriptions = e.subscriptions, this.otps = e.otps
   }
 }

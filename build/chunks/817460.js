@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   JE: () => l,
-  ab: () => o,
+  ab: () => a,
   iG: () => c,
   lL: () => d,
   rC: () => u
@@ -12,18 +12,18 @@ var Chunk293810 = require("./293810.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o(e) {
+function a(e) {
   return "roles" in e ? "emoji-".concat(e.id) : "".concat(e.ref_type, "-").concat(e.emoji_id, "-").concat(e.name, "-").concat(e.ref_id)
 }
 
 function s(e) {
   switch (e) {
     case i.rV.DAY:
-      return a.t["3rUmPQ"];
+      return o.t["3rUmPQ"];
     case i.rV.MONTH:
-      return a.t.zuN545;
+      return o.t.zuN545;
     case i.rV.YEAR:
-      return a.t.cuSp8Q
+      return o.t.cuSp8Q
   }
 }
 
@@ -32,7 +32,7 @@ function l(e) {
     interval: t,
     interval_count: n
   } = e;
-  return a.intl.format(s(t), {
+  return o.intl.format(s(t), {
     count: n
   })
 }
@@ -44,18 +44,18 @@ function c(e) {
   } = e;
   switch (t) {
     case i.rV.DAY:
-      if (n > 0 && n % 7 == 0) return a.intl.formatToPlainString(a.t.iVZYyl, {
+      if (n > 0 && n % 7 == 0) return o.intl.formatToPlainString(o.t.iVZYyl, {
         weeks: n / 7
       });
-      return a.intl.formatToPlainString(a.t.jzH70Z, {
+      return o.intl.formatToPlainString(o.t.jzH70Z, {
         days: n
       });
     case i.rV.MONTH:
-      return a.intl.formatToPlainString(a.t.erUSmA, {
+      return o.intl.formatToPlainString(o.t.erUSmA, {
         months: n
       });
     case i.rV.YEAR:
-      return a.intl.formatToPlainString(a.t.IfYQVC, {
+      return o.intl.formatToPlainString(o.t.IfYQVC, {
         years: n
       })
   }

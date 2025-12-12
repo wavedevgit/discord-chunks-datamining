@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 651780, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -28,9 +28,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk999382 = require("./999382.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk874176 = require("./874176.js");
+  Chunk424359 = require("./424359.js");
 
-function _(e) {
+function S(e) {
   let {
     endsAt: t,
     appliedGuildBoostsToMaintain: n,
@@ -38,11 +38,11 @@ function _(e) {
   } = e, {
     days: i,
     hours: l
-  } = (0, u.Z)(t);
-  return n <= 0 ? null : 0 === i && 0 === l ? I.intl.format(I.t.kF0HEa, {
+  } = (0, d.Z)(t);
+  return n <= 0 ? null : 0 === i && 0 === l ? E.intl.format(E.t.kF0HEa, {
     tierName: r,
     numPremiumSubscriptions: n
-  }) : I.intl.format(I.t.neDJhq, {
+  }) : E.intl.format(E.t.neDJhq, {
     days: i,
     hours: l,
     tierName: r,
@@ -54,17 +54,17 @@ function T(e) {
   let {
     appliedGuildBoosts: t,
     guildId: n
-  } = e, i = (0, C.gZ)(t, n), l = (0, C.nW)((0, C.Jh)(n));
+  } = e, i = (0, O.gZ)(t, n), l = (0, O.nW)((0, O.Jh)(n));
   if (null == i || null == l) return null;
-  let s = (0, C._k)(t, n);
-  return (0, r.jsxs)(a.Wn, {
-    messageType: a.QYI.WARNING,
+  let a = (0, O._k)(t, n);
+  return (0, r.jsxs)(s.Wn, {
+    messageType: s.QYI.WARNING,
     children: [(0, r.jsx)("div", {
-      className: S.guildBoostingGracePeriodTitle,
-      children: I.intl.format(I.t.LG7vvg, {})
-    }), (0, r.jsx)(_, {
+      className: I.guildBoostingGracePeriodTitle,
+      children: E.intl.format(E.t.LG7vvg, {})
+    }), (0, r.jsx)(S, {
       endsAt: i,
-      appliedGuildBoostsToMaintain: s,
+      appliedGuildBoostsToMaintain: a,
       tierName: l
     })]
   })
@@ -75,8 +75,8 @@ let P = e => {
     onSetRef: n,
     subscriptionCount: i,
     tier: l,
-    tiers: a,
-    tierIndex: s,
+    tiers: s,
+    tierIndex: a,
     guildId: o
   } = e;
   return (0, r.jsx)(j.Z, {
@@ -84,7 +84,7 @@ let P = e => {
     tier: l,
     onSetRef: n,
     isAnimatedTo: t,
-    hasBottomMargin: s !== a.length - 1,
+    hasBottomMargin: a !== s.length - 1,
     guildId: o
   }, l.tier)
 };
@@ -107,7 +107,7 @@ function w() {
         appliedGuildBoosts: exports,
         guildId: module.id
       }) : null, (0, Chunk54381.jsx)(Chunk481060.Text, {
-        className: Chunk874176.titleBlurb,
+        className: Chunk424359.titleBlurb,
         variant: "text-sm/normal",
         children: Chunk388032.intl.format(Chunk388032.t.hLOkp9, {
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.GUILD_SUBSCRIPTIONS)
@@ -122,7 +122,7 @@ function w() {
       tiers: (0, Chunk267642.cP)(null != module && module.features.has(Chunk981631.GuildFeatures.COMMUNITY) && module.maxStageVideoChannelUsers >= Chunk981631.B9o),
       renderTier: P
     }), (0, Chunk54381.jsx)("div", {
-      className: Chunk874176.divider
+      className: Chunk424359.divider
     }), require ? (0, Chunk54381.jsx)(Chunk404270.Z, {}) : null, require ? (0, Chunk54381.jsx)(Chunk774380.Z, {
       onOpenPremiumClick: () => void Chunk626135.default.track(Chunk981631.rMx.PREMIUM_PROMOTION_OPENED, {
         location: {

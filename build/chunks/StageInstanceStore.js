@@ -104,7 +104,7 @@ class y extends(r = Chunk442837.ZP.Store) {
   }
   isPublic(e) {
     var t;
-    return (null == (t = this.getStageInstanceByChannel(e)) ? true : t.privacy_level) === o.j8.PUBLIC
+    return (null == (t = this.getStageInstanceByChannel(e)) ? true : t.privacy_level) === a.j8.PUBLIC
   }
   getStageInstancesByGuild(e) {
     var t;

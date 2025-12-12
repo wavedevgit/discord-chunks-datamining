@@ -17,8 +17,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk91140 = require("./91140.jsx"),
   Chunk297781 = require("./297781.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk320677 = require("./320677.js"),
-  Chunk452379 = require("./452379.js");
+  Chunk192025 = require("./192025.js"),
+  Chunk226788 = require("./226788.js");
 let j = e => {
   let {
     entry: t,
@@ -26,30 +26,30 @@ let j = e => {
     onReaction: r,
     onRequestOpen: j,
     disableActivityProfileLinks: b,
-    customCTA: I,
-    popoutClassname: O,
-    popoutPosition: y = "right"
-  } = e, P = i.useRef(null), w = (0, o.e7)([d.Z, c.Z], () => c.Z.getChannel(d.Z.getChannelId())), E = (0, o.e7)([u.default], () => u.default.getUser(t.author_id)), {
-    nick: C,
-    avatar: N
+    customCTA: _,
+    popoutClassname: I,
+    popoutPosition: O = "right"
+  } = e, y = i.useRef(null), P = (0, o.e7)([d.Z, c.Z], () => c.Z.getChannel(d.Z.getChannelId())), w = (0, o.e7)([u.default], () => u.default.getUser(t.author_id)), {
+    nick: E,
+    avatar: C
   } = i.useMemo(() => {
-    let e = null == E ? true : E.getAvatarURL(null == w ? true : w.guild_id, 48, false);
+    let e = null == w ? true : w.getAvatarURL(null == P ? true : P.guild_id, 48, false);
     return {
-      nick: m.ZP.getName(null == w ? true : w.guild_id, null == w ? true : w.id, E),
+      nick: m.ZP.getName(null == P ? true : P.guild_id, null == P ? true : P.id, w),
       avatar: e
     }
-  }, [E, w]);
-  return null == E ? null : (0, a.jsx)(s.yRy, {
-    targetElementRef: P,
-    position: y,
+  }, [w, P]);
+  return null == w ? null : (0, a.jsx)(s.yRy, {
+    targetElementRef: y,
+    position: O,
     renderPopout: e => {
       let {
         closePopout: i,
         updatePosition: l
       } = e;
       return (0, a.jsx)("div", {
-        className: O,
-        children: (0, a.jsx)(f.J, {
+        className: I,
+        children: (0, a.jsx)(g.J, {
           entry: t,
           closePopout: i,
           updatePopoutPosition: l,
@@ -86,7 +86,7 @@ let j = e => {
         }
         return e
       }({
-        innerRef: P
+        innerRef: y
       }, e), i = i = {
         className: v.profileEntryCard,
         children: (0, a.jsx)(s.tEY, {
@@ -99,9 +99,9 @@ let j = e => {
           children: (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)("img", {
               className: v.avatar,
-              src: N,
+              src: C,
               alt: x.intl.formatToPlainString(x.t.IzVXxY, {
-                userName: C
+                userName: E
               })
             }), (0, a.jsx)("div", {
               className: v.playerInfo,
@@ -111,15 +111,15 @@ let j = e => {
                   variant: "text-md/medium",
                   color: "text-strong",
                   lineClamp: 1,
-                  children: C
+                  children: E
                 }), (0, a.jsx)(p.Gk, {
                   location: p.Gt.APP_LAUNCHER,
-                  children: g.W.map((e, n) => (0, a.jsx)(e, {
+                  children: f.W.map((e, n) => (0, a.jsx)(e, {
                     entry: t
                   }, n))
                 })]
               })
-            }), null != I ? I : (0, a.jsx)("div", {
+            }), null != _ ? _ : (0, a.jsx)("div", {
               className: v.reactions,
               children: (0, a.jsx)(s.n$P, {
                 size: "sm"

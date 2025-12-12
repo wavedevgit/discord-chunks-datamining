@@ -12,7 +12,7 @@ var Chunk284737 = require("./284737.js"),
 
 function l(e) {
   let t = e.document,
-    n = (0, o.Ig)(e);
+    n = (0, a.Ig)(e);
 
   function l() {
     (0, r.dx)(e)
@@ -49,5 +49,5 @@ function l(e) {
     (0, r.CO)(e)
   }
   for (let n of ((0, i.YP)(c, e.document.body), e.addEventListener("focus", u), e.addEventListener("blur", d), e.addEventListener("unload", p), e.addEventListener("visibilitychange", h), s.wu)) t.addEventListener(n, _, true), t.addEventListener(n, m, false);
-  (0, a.uF)(t, f), (0, r.S1)(e)
+  (0, o.uF)(t, f), (0, r.S1)(e)
 }

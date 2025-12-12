@@ -3,8 +3,8 @@
 "use strict";
 var Chunk134533 = require("./134533.js"),
   Chunk461648 = require("./461648.js"),
-  a = Chunk134533.hasArrayLengthDefineBug(),
-  o = a && require("./805906.js"),
+  o = Chunk134533.hasArrayLengthDefineBug(),
+  a = o && require("./805906.js"),
   s = require("./166691.js")("Object.prototype.propertyIsEnumerable");
 module.exports = function(e, t, n, r, l, c) {
   if (!i) {
@@ -12,5 +12,5 @@ module.exports = function(e, t, n, r, l, c) {
     var u = c["[[Value]]"];
     return r[l] = u, t(r[l], u)
   }
-  return a && "length" === l && "[[Value]]" in c && o(r) && r.length !== c["[[Value]]"] ? (r.length = c["[[Value]]"], r.length === c["[[Value]]"]) : (i(r, l, n(c)), true)
+  return o && "length" === l && "[[Value]]" in c && a(r) && r.length !== c["[[Value]]"] ? (r.length = c["[[Value]]"], r.length === c["[[Value]]"]) : (i(r, l, n(c)), true)
 }

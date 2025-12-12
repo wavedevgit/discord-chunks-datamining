@@ -1,44 +1,44 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 382574, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => a
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk73880 = require("./73880.jsx"),
   Chunk137158 = require("./137158.jsx"),
   Chunk388032 = require("./388032.jsx");
-let s = function(e) {
+let a = function(e) {
   let {
     formField: t,
     index: n,
-    isDragEnabled: s,
+    isDragEnabled: a,
     isDropHovered: o,
     onDrop: c,
-    onEdit: d,
-    onRemove: u,
+    onEdit: u,
+    onRemove: d,
     canRemove: g,
-    actionsLocation: f,
-    fieldStyle: m
+    actionsLocation: m,
+    fieldStyle: p
   } = e, {
-    label: b,
-    placeholder: p
+    label: f,
+    placeholder: h
   } = t;
   return (0, r.jsx)(l.Z, {
     field: t,
     index: n,
-    isDragEnabled: s,
+    isDragEnabled: a,
     isDropHovered: o,
     onDrop: c,
-    onEdit: d,
-    onRemove: u,
-    title: b,
+    onEdit: u,
+    onRemove: d,
+    title: f,
     canRemove: g,
-    actionsLocation: f,
-    fieldStyle: m,
+    actionsLocation: m,
+    fieldStyle: p,
     children: (0, r.jsx)(i.Q8, {
-      placeholder: null != p ? p : a.intl.string(a.t["Sqn+Wh"]),
+      placeholder: null != h ? h : s.intl.string(s.t["Sqn+Wh"]),
       disabled: true
     })
   })

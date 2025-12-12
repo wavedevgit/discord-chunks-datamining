@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk688619 = require("./688619.js"),
-  o = require.n(Chunk688619),
+  a = require.n(Chunk688619),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk608787 = require("./608787.jsx"),
@@ -20,18 +20,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk233398 = require("./233398.js"),
   Chunk866419 = require("./866419.js"),
   Chunk771934 = require("./771934.js"),
-  Chunk990551 = require("./990551.js"),
+  Chunk939101 = require("./939101.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk202560 = require("./202560.js");
+  Chunk209289 = require("./209289.js");
 
 function v() {
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk202560.loader,
+    className: Chunk209289.loader,
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   })
 }
 let S = (0, Chunk608787.Un)({
-    createPromise: () => Promise.all([require.e("66382"), require.e("77400")]).then(require.bind(require, 164267)),
+    createPromise: () => Promise.all([require.e("66382"), require.e("35855")]).then(require.bind(require, 164267)),
     webpackId: 164267,
     name: "CustomThemeColorPickerControlV2",
     renderLoader: v
@@ -47,8 +47,8 @@ function A(e) {
   let {
     colors: t,
     selectedIndex: n,
-    onColorSelect: a
-  } = e, [o, s] = i.useMemo(() => {
+    onColorSelect: o
+  } = e, [a, s] = i.useMemo(() => {
     let e = t.map((e, n) => C(t, n)),
       n = t.map((t, n) => "".concat(t, " ").concat(e[n], "%")).join(", ");
     return [e, {
@@ -59,7 +59,7 @@ function A(e) {
     className: O.gradientBar,
     style: s,
     children: t.map((e, t) => {
-      let s = o[t],
+      let s = a[t],
         c = t === n;
       return (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(_.P3F, {
@@ -70,7 +70,7 @@ function A(e) {
             left: "".concat(s, "%"),
             backgroundColor: e
           },
-          onClick: () => a(t),
+          onClick: () => o(t),
           children: (0, r.jsx)("div", {
             className: O.colorSquareInner
           })
@@ -100,7 +100,7 @@ function N(e) {
 
 function P(e) {
   if (!(0, u.FX)(e)) return e;
-  let t = o()(e);
+  let t = a()(e);
   return t.set("hsl.h", (t.get("hsl.h") + 15) % 360).hex()
 }
 
@@ -108,25 +108,25 @@ function R(e) {
   let {
     value: t,
     onChange: n,
-    className: a,
-    colors: o,
+    className: o,
+    colors: a,
     setColors: s
   } = e, c = (0, m.Z)(), [v, T] = i.useState(0), [C, R] = i.useState(t);
   i.useEffect(() => {
-    if (o.length > 0 && v < o.length) {
-      let e = o[v];
+    if (a.length > 0 && v < a.length) {
+      let e = a[v];
       (0, u.FX)(e) && (R(e), n(e))
     }
-    v >= o.length && T(0)
-  }, [v, o, n]);
+    v >= a.length && T(0)
+  }, [v, a, n]);
   let w = e => {
       let t = e.trim();
       return t.startsWith("#") ? t : t.length > 0 ? "#".concat(t) : t
     },
     D = e => {
       let t = w(e);
-      if (R(t), (0, u.FX)(t) && ((0, E.zW)(), n(t), o.length > 0)) {
-        let e = [...o];
+      if (R(t), (0, u.FX)(t) && ((0, E.zW)(), n(t), a.length > 0)) {
+        let e = [...a];
         e[v] = t, s(e)
       }
     },
@@ -134,8 +134,8 @@ function R(e) {
       R(e.hex)
     }, []),
     L = e => {
-      if ((0, E.P0)(), n(e.hex), o.length > 0) {
-        let t = [...o];
+      if ((0, E.P0)(), n(e.hex), a.length > 0) {
+        let t = [...a];
         t[v] = e.hex, s(t)
       }
     },
@@ -147,25 +147,25 @@ function R(e) {
         (0, E.J4)(), D(e)
       } catch (e) {}
     }, M = () => {
-      if (o.length === I) return;
-      0 === o.length && (0, g.ft)(), (0, E.gG)();
-      let e = o.length > 0 ? o[o.length - 1] : C,
-        t = o.length > 0 ? P(e) : e,
-        n = [...o, t];
+      if (a.length === I) return;
+      0 === a.length && (0, g.ft)(), (0, E.gG)();
+      let e = a.length > 0 ? a[a.length - 1] : C,
+        t = a.length > 0 ? P(e) : e,
+        n = [...a, t];
       s(n), T(n.length - 1)
     }, k = e => {
-      if (o.length > 1) {
+      if (a.length > 1) {
         (0, E.JL)();
-        let t = o.filter((t, n) => n !== e);
+        let t = a.filter((t, n) => n !== e);
         s(t), v >= t.length ? T(t.length - 1) : v > e && T(v - 1)
       }
     }, U = e => {
       T(e), (0, E.w8)()
-    }, G = o.length > 1;
+    }, G = a.length > 1;
   return (0, r.jsxs)("div", {
-    className: l()(O.container, a),
+    className: l()(O.container, o),
     children: [G && (0, r.jsx)(A, {
-      colors: o,
+      colors: a,
       selectedIndex: v,
       onColorSelect: U
     }), (0, r.jsx)(S, {
@@ -205,7 +205,7 @@ function R(e) {
           })
         })]
       })]
-    }), o.length < I && (0, r.jsx)(p.zxk, {
+    }), a.length < I && (0, r.jsx)(p.zxk, {
       variant: "secondary",
       size: "md",
       onClick: M,

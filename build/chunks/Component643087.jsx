@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk126134 = require("./126134.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk867972 = require("./867972.js");
+  Chunk542560 = require("./542560.js");
 
 function b(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -59,7 +59,7 @@ class g extends Chunk473749.PureComponent {
           }), (0, Chunk54381.jsx)(Chunk481060.gNt, {
             label: Chunk388032.intl.string(Chunk388032.t.xpurRF),
             children: (0, Chunk54381.jsx)(f, {
-              className: Chunk867972.colorPicker,
+              className: Chunk542560.colorPicker,
               defaultColor: Chunk126134.Wy,
               colors: Chunk981631.pmI,
               value: null != Chunk473749 ? Chunk473749 : Chunk126134.Wy,

@@ -37,8 +37,8 @@ function u(e, t) {
   if (null == e) return {};
   var n, r, i = d(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -46,8 +46,8 @@ function u(e, t) {
 function d(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -58,10 +58,10 @@ function f(e) {
     variant: l = "secondary",
     size: d = "sm"
   } = e, f = u(e, ["activity", "onAction", "variant", "size"]);
-  if (!(0, o.Z)(t)) return null;
+  if (!(0, a.Z)(t)) return null;
   let p = () => {
     null == n || n();
-    let e = (0, a.Z)(t);
+    let e = (0, o.Z)(t);
     return window.open(null != e ? e : true)
   };
   return (0, r.jsx)(i.Button, c({

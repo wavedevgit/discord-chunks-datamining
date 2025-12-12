@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk217588 = require("./217588.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk271397 = require("./271397.js");
+  Chunk205844 = require("./205844.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -74,8 +74,8 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
     let {
       renderableSticker: t,
       channel: n,
-      isInteracting: o
-    } = e, c = i.useRef(null), [f, _] = i.useState(true), [g, E] = i.useState(String(Date.now())), [y] = (0, p.XW)(t, o), {
+      isInteracting: a
+    } = e, c = i.useRef(null), [f, _] = i.useState(true), [g, E] = i.useState(String(Date.now())), [y] = (0, p.XW)(t, a), {
       analyticsLocations: v
     } = (0, u.ZP)(l.Z.STICKER_MESSAGE), C = (0, r.jsxs)("span", {
       className: b.stickerName,
@@ -104,7 +104,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
           let {
             onClick: n
           } = e;
-          return (0, r.jsx)(a.u, S(O({}, d.b_), {
+          return (0, r.jsx)(o.u, S(O({}, d.b_), {
             shouldShow: f,
             __unsupportedReactNodeAsText: (0, d.Y)(C),
             "aria-label": false,
@@ -119,7 +119,7 @@ let I = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
               },
               tag: "span",
               children: (0, r.jsx)(m.Z, {
-                isInteracting: o,
+                isInteracting: a,
                 size: I,
                 sticker: null != y ? y : t
               })

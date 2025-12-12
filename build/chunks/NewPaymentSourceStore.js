@@ -120,7 +120,7 @@ function Z(e) {
   let {
     message: t
   } = e;
-  I = new o.HF(t)
+  I = new a.HF(t)
 }
 
 function F(e) {

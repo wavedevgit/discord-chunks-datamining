@@ -186,7 +186,7 @@ function S(e, t, n, r) {
 }
 
 function I(e, t) {
-  let n = new o.Z({});
+  let n = new a.Z({});
   x(l.BM.USER, {
     reported_user_id: n.id
   }), (0, u.m)({
@@ -227,7 +227,7 @@ function C(e, t) {
 }
 
 function A(e, t) {
-  let n = new a.ZP({});
+  let n = new o.ZP({});
   x(l.BM.MESSAGE, {
     message_id: true,
     channel_id: true
@@ -286,8 +286,8 @@ function w(e) {
     application: t,
     entrypoint: n,
     contextualGuildId: i,
-    contextualChannelId: a,
-    onSubmit: o,
+    contextualChannelId: o,
+    onSubmit: a,
     appContext: s
   } = e;
   r.ZP.trackWithMetadata(d.rMx.REPORT_APPLICATION_CLICKED, {
@@ -296,15 +296,15 @@ function w(e) {
   }), x(l.b.APPLICATION, {
     application_id: t.id,
     guild_id: i,
-    channel_id: a
+    channel_id: o
   }), (0, u.m)({
     name: l.b.APPLICATION,
     record: t,
     contextualGuildId: i,
-    contextualChannelId: a,
+    contextualChannelId: o,
     entrypoint: n
   }, {}, {
-    onSubmit: o,
+    onSubmit: a,
     appContext: s
   })
 }

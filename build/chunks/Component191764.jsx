@@ -66,7 +66,7 @@ function y(e) {
     onClose: E
   } = e, {
     newestAnalyticsLocation: y
-  } = (0, o.ZP)(), O = (0, i.e7)([d.Z, c.Z], () => {
+  } = (0, a.ZP)(), O = (0, i.e7)([d.Z, c.Z], () => {
     var e;
     return c.Z.getChannel(null == (e = d.Z.getVoiceStateForUser(t.id)) ? true : e.channelId)
   }), v = (0, i.e7)([u.Z], () => u.Z.getChannelId() === (null == O ? true : O.id));
@@ -76,7 +76,7 @@ function y(e) {
     onClick: e => {
       e.stopPropagation(), null == h || h({
         action: "PRESS_HANG_STATUS_BUTTON"
-      }), a.default.selectVoiceChannel(O.id), (0, l.Kh)(O.id), f.default.track(_.rMx.HANG_STATUS_CTA_CLICKED, b(g({}, (0, s.Z)(O.id)), {
+      }), o.default.selectVoiceChannel(O.id), (0, l.Kh)(O.id), f.default.track(_.rMx.HANG_STATUS_CTA_CLICKED, b(g({}, (0, s.Z)(O.id)), {
         source: y,
         other_user_id: t.id,
         cta_type: v ? "open" : "join"

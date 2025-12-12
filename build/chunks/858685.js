@@ -25,16 +25,16 @@
     var n = t || {};
     if ("function" != typeof e) throw Error("callback must be a function");
     if (n.root && 1 != n.root.nodeType) throw Error("root must be an Element");
-    this._checkForIntersections = o(this._checkForIntersections.bind(this), this.THROTTLE_TIMEOUT), this._callback = e, this._observationTargets = [], this._queuedEntries = [], this._rootMarginValues = this._parseRootMargin(n.rootMargin), this.thresholds = this._initThresholds(n.threshold), this.root = n.root || null, this.rootMargin = this._rootMarginValues.map(function(e) {
+    this._checkForIntersections = a(this._checkForIntersections.bind(this), this.THROTTLE_TIMEOUT), this._callback = e, this._observationTargets = [], this._queuedEntries = [], this._rootMarginValues = this._parseRootMargin(n.rootMargin), this.thresholds = this._initThresholds(n.threshold), this.root = n.root || null, this.rootMargin = this._rootMarginValues.map(function(e) {
       return e.value + e.unit
     }).join(" ")
   }
 
-  function a() {
+  function o() {
     return e.performance && performance.now && performance.now()
   }
 
-  function o(e, t) {
+  function a(e, t) {
     var n = null;
     return function() {
       n || (n = setTimeout(function() {
@@ -55,15 +55,15 @@
     var n = Math.max(e.top, t.top),
       r = Math.min(e.bottom, t.bottom),
       i = Math.max(e.left, t.left),
-      a = Math.min(e.right, t.right),
-      o = a - i,
+      o = Math.min(e.right, t.right),
+      a = o - i,
       s = r - n;
-    return o >= 0 && s >= 0 && {
+    return a >= 0 && s >= 0 && {
       top: n,
       bottom: r,
       left: i,
-      right: a,
-      width: o,
+      right: o,
+      width: a,
       height: s
     }
   }
@@ -155,14 +155,14 @@
       t = e ? this._getRootRect() : d();
     this._observationTargets.forEach(function(n) {
       var i = n.element,
-        o = u(i),
+        a = u(i),
         s = this._rootContainsTarget(i),
         l = n.entry,
         c = e && s && this._computeTargetAndRootIntersection(i, t),
         d = n.entry = new r({
-          time: a(),
+          time: o(),
           target: i,
-          boundingClientRect: o,
+          boundingClientRect: a,
           rootBounds: t,
           intersectionRect: c
         });
@@ -170,14 +170,14 @@
     }, this), this._queuedEntries.length && this._callback(this.takeRecords(), this)
   }, i.prototype._computeTargetAndRootIntersection = function(n, r) {
     if ("none" != e.getComputedStyle(n).display) {
-      for (var i = u(n), a = i, o = p(n), s = false; !s;) {
+      for (var i = u(n), o = i, a = p(n), s = false; !s;) {
         var l = null,
-          d = 1 == o.nodeType ? e.getComputedStyle(o) : {};
+          d = 1 == a.nodeType ? e.getComputedStyle(a) : {};
         if ("none" == d.display) return;
-        if (o == this.root || o == t ? (s = true, l = r) : o != t.body && o != t.documentElement && "visible" != d.overflow && (l = u(o)), l && !(a = c(l, a))) break;
-        o = p(o)
+        if (a == this.root || a == t ? (s = true, l = r) : a != t.body && a != t.documentElement && "visible" != d.overflow && (l = u(a)), l && !(o = c(l, o))) break;
+        a = p(a)
       }
-      return a
+      return o
     }
   }, i.prototype._getRootRect = function() {
     var e;
@@ -211,8 +211,8 @@
       r = t.isIntersecting ? t.intersectionRatio || 0 : false;
     if (n !== r)
       for (var i = 0; i < this.thresholds.length; i++) {
-        var a = this.thresholds[i];
-        if (a == n || a == r || a < n != a < r) returntrue
+        var o = this.thresholds[i];
+        if (o == n || o == r || o < n != o < r) returntrue
       }
   }, i.prototype._rootIsInDom = function() {
     return !this.root || f(t, this.root)

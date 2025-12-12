@@ -65,7 +65,7 @@ function _() {
 }
 
 function m(e) {
-  (0, a.ZDy)(async () => {
+  (0, o.ZDy)(async () => {
     let {
       default: t
     } = await n.e("40897").then(n.bind(n, 507294));
@@ -76,10 +76,10 @@ function m(e) {
 }
 
 function h(e) {
-  return (0, i.e7)([o.Z], () => (0, s.kQ)(o.Z.getSortedRoles(e.id)), [e]) ? (0, r.jsx)(a.sNh, {
+  return (0, i.e7)([a.Z], () => (0, s.kQ)(a.Z.getSortedRoles(e.id)), [e]) ? (0, r.jsx)(o.sNh, {
     id: "guild-connection-roles",
     label: l.intl.string(l.t.ghtnss),
-    icon: a.xPt,
+    icon: o.xPt,
     action: () => m(e.id)
   }) : null
 }

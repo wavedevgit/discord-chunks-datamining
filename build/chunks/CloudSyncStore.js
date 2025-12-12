@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 /** chunk id: 293245, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a;
+let r, i, o;
 require.d(exports, {
   Z: () => I
 }), require("./388685.js");
-var o, Chunk442837 = require("./442837.js"),
+var a, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk372123 = require("./372123.js"),
   Chunk594190 = require("./594190.js"),
@@ -26,7 +26,7 @@ function h(e, t, n) {
 
 function g() {
   let e = Chunk594190.ZP.getRunningDiscordApplicationIds();
-  for (let t of a.filter(t => !e.includes(t))) {
+  for (let t of o.filter(t => !e.includes(t))) {
     let e = Chunk283595.Z.getActiveLibraryApplication(exports);
     null != module && Chunk570140.Z.wait(() => {
       try {
@@ -34,7 +34,7 @@ function g() {
       } catch (e) {}
     })
   }
-  return a = module, false
+  return o = module, false
 }
 
 function E(e) {
@@ -49,8 +49,8 @@ function b(e) {
   let {
     applicationId: t,
     branchId: n
-  } = e, a = (0, f.Tu)(t, n);
-  return i.delete(a), r[a] = {
+  } = e, o = (0, f.Tu)(t, n);
+  return i.delete(o), r[o] = {
     type: m.TzF.DONE,
     timestamp: Date.now()
   }, true
@@ -67,13 +67,13 @@ function O(e) {
   let {
     applicationId: t,
     branchId: n,
-    next: a,
-    remote: o
+    next: o,
+    remote: a
   } = e, s = (0, f.Tu)(t, n);
   r[s] = {
     type: m.TzF.CONFLICT,
-    next: a,
-    remote: o
+    next: o,
+    remote: a
   }, i.delete(s)
 }
 
@@ -81,14 +81,14 @@ function v(e) {
   let {
     applicationId: t,
     branchId: n
-  } = e, a = (0, f.Tu)(t, n);
-  r[a] = {
+  } = e, o = (0, f.Tu)(t, n);
+  r[o] = {
     type: m.TzF.ERROR
-  }, i.delete(a)
+  }, i.delete(o)
 }
-class S extends(o = Chunk442837.ZP.Store) {
+class S extends(a = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk283595.Z, Chunk594190.ZP), Chunk358085.isPlatformEmbedded && Chunk209492.S(), r = {}, i = new Set, a = []
+    this.waitFor(Chunk283595.Z, Chunk594190.ZP), Chunk358085.isPlatformEmbedded && Chunk209492.S(), r = {}, i = new Set, o = []
   }
   getState(e, t) {
     return r[(0, f.Tu)(e, t)]

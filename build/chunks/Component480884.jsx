@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk636749 = require("./636749.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk602042 = require("./602042.js");
+  Chunk98201 = require("./98201.js");
 
 function p(t) {
   let {
@@ -30,9 +30,9 @@ function p(t) {
     safetyTipRows: y,
     actionRows: m,
     learnMore: j
-  } = t, N = (0, o.e7)([b.ZP], () => b.ZP.getChannelSafetyWarning(p, h));
+  } = t, N = (0, o.e7)([_.ZP], () => _.ZP.getChannelSafetyWarning(p, h));
   return s.useEffect(() => {
-    (0, g.MC)(_.rMx.SAFETY_WARNING_MODAL_VIEWED, {
+    (0, b.MC)(x.rMx.SAFETY_WARNING_MODAL_VIEWED, {
       channelId: p,
       warningId: h,
       senderId: T,
@@ -67,7 +67,7 @@ function p(t) {
         }), (0, a.jsx)(u.rT, {
           children: m
         })]
-      }), (0, a.jsx)(x.Z, {
+      }), (0, a.jsx)(g.Z, {
         channelId: p,
         warningId: h,
         senderId: T,

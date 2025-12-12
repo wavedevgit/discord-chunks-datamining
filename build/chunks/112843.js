@@ -43,11 +43,11 @@ function u() {
     }
   }), []);
   return Chunk473749.useMemo(() => ({
-    fire: (r, i, a) => {
-      var o, s;
-      let c = (null == a ? true : a.settings) != null ? l({}, t, a.settings) : t;
-      e(r, i, n(c), (null != (o = null == a ? true : a.count) ? o : c.confettiCount) * (null != (s = null == a ? true : a.countMultiplier) ? s : 1), {
-        sprite: null == a ? true : a.sprite
+    fire: (r, i, o) => {
+      var a, s;
+      let c = (null == o ? true : o.settings) != null ? l({}, t, o.settings) : t;
+      e(r, i, n(c), (null != (a = null == o ? true : o.count) ? a : c.confettiCount) * (null != (s = null == o ? true : o.countMultiplier) ? s : 1), {
+        sprite: null == o ? true : o.sprite
       })
     }
   }), [module, require, exports])

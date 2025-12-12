@@ -22,12 +22,12 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js");
 
 function h(e, t) {
-  var n, r, i, a, o;
+  var n, r, i, o, a;
   let p, m = null != (p = e instanceof c.Sf && e.isThread() && null != (i = d.Z.getChannel(e.parent_id)) ? i : e) ? O(p) : true,
     h = (0, l.GG)(),
     g = u.default.getId(),
-    y = null != (a = null == (n = _.default.getCurrentUser()) ? true : n.nsfwAllowed) && a,
-    v = null != m && null != (o = null == (r = f.ZP.getMember(m, g)) ? true : r.roles) ? o : [],
+    y = null != (o = null == (n = _.default.getCurrentUser()) ? true : n.nsfwAllowed) && o,
+    v = null != m && null != (a = null == (r = f.ZP.getMember(m, g)) ? true : r.roles) ? a : [],
     S = s.Z.isViewingRoles(m),
     {
       computedPermissions: I,
@@ -56,22 +56,22 @@ function g(e, t) {
       return e
     }, [e]),
     i = null != n ? O(n) : true,
-    o = (0, l.Xg)(),
-    p = (0, a.e7)([u.default], () => u.default.getId()),
-    m = (0, a.e7)([_.default], () => {
+    a = (0, l.Xg)(),
+    p = (0, o.e7)([u.default], () => u.default.getId()),
+    m = (0, o.e7)([_.default], () => {
       var e, t;
       return null != (t = null == (e = _.default.getCurrentUser()) ? true : e.nsfwAllowed) && t
     }),
-    h = (0, a.Wu)([f.ZP], () => {
+    h = (0, o.Wu)([f.ZP], () => {
       var e, t;
       return null != i && null != (t = null == (e = f.ZP.getMember(i, p)) ? true : e.roles) ? t : []
     }),
-    g = (0, a.e7)([s.Z], () => s.Z.isViewingRoles(i));
+    g = (0, o.e7)([s.Z], () => s.Z.isViewingRoles(i));
   return r.useMemo(() => {
     let {
       computedPermissions: r,
       hasBaseAccessPermissions: i,
-      hasSendMessagesPermission: a
+      hasSendMessagesPermission: o
     } = b(n, e instanceof c.Sf && e.isThread());
     return {
       context: n,
@@ -81,10 +81,10 @@ function g(e, t) {
       isImpersonating: g,
       computedPermissions: r,
       hasBaseAccessPermissions: i,
-      hasSendMessagesPermission: a,
-      allowNsfw: E(n, m, o)
+      hasSendMessagesPermission: o,
+      allowNsfw: E(n, m, a)
     }
-  }, [t, n, g, h, p, m, o, e])
+  }, [t, n, g, h, p, m, a, e])
 }
 
 function E(e, t, n) {
@@ -98,16 +98,16 @@ function b(e, t) {
     hasBaseAccessPermissions: true,
     hasSendMessagesPermission: true
   };
-  let a = p.Z.computePermissions(e);
-  return i.e$(a, m.Plq.ADMINISTRATOR) ? (n = true, r = true) : e instanceof c.Sf ? (n = i.e$(a, m.Plq.VIEW_CHANNEL) && i.e$(a, m.Plq.USE_APPLICATION_COMMANDS), r = t ? i.e$(a, m.Plq.SEND_MESSAGES_IN_THREADS) : i.e$(a, m.Plq.SEND_MESSAGES)) : (n = i.e$(a, m.Plq.VIEW_CHANNEL), r = true), {
-    computedPermissions: a,
+  let o = p.Z.computePermissions(e);
+  return i.e$(o, m.Plq.ADMINISTRATOR) ? (n = true, r = true) : e instanceof c.Sf ? (n = i.e$(o, m.Plq.VIEW_CHANNEL) && i.e$(o, m.Plq.USE_APPLICATION_COMMANDS), r = t ? i.e$(o, m.Plq.SEND_MESSAGES_IN_THREADS) : i.e$(o, m.Plq.SEND_MESSAGES)) : (n = i.e$(o, m.Plq.VIEW_CHANNEL), r = true), {
+    computedPermissions: o,
     hasBaseAccessPermissions: n,
     hasSendMessagesPermission: r
   }
 }
 
 function y(e, t) {
-  return e instanceof c.Sf && (null == e ? true : e.guild_id) == null ? (null == e ? true : e.type) === m.d4z.DM && (null == e ? true : e.getRecipientId()) === t ? o.D.BOT_DM : o.D.PRIVATE_CHANNEL : o.D.GUILD
+  return e instanceof c.Sf && (null == e ? true : e.guild_id) == null ? (null == e ? true : e.type) === m.d4z.DM && (null == e ? true : e.getRecipientId()) === t ? a.D.BOT_DM : a.D.PRIVATE_CHANNEL : a.D.GUILD
 }
 
 function O(e) {

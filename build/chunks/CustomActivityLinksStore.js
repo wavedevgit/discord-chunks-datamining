@@ -23,7 +23,7 @@ function c(e) {
     applicationId: t,
     link: n
   } = e;
-  null == l[t] && (l[t] = Object.create(null)), l[t][n.link_id] = new o.Z(n)
+  null == l[t] && (l[t] = Object.create(null)), l[t][n.link_id] = new a.Z(n)
 }
 
 function u() {

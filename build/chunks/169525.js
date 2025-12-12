@@ -25,52 +25,52 @@ let _ = (e, t) => {
       spoiler: n,
       flags: i = 0
     } = e, l = (0, s.LD)({
-      type: a.l.Attachment,
+      type: o.l.Attachment,
       media: e
     }, t), c = (0, s.UJ)({
-      type: a.l.Attachment,
+      type: o.l.Attachment,
       media: e
     }, t);
-    return l.length > 0 ? l[0] : c ? o.wk.POTENTIAL_EXPLICIT_CONTENT : n || (0, r.yE)(i, f.J0y.IS_SPOILER) ? o.wk.SPOILER : null
+    return l.length > 0 ? l[0] : c ? a.wk.POTENTIAL_EXPLICIT_CONTENT : n || (0, r.yE)(i, f.J0y.IS_SPOILER) ? a.wk.SPOILER : null
   },
   m = (e, t, n, r) => {
     let i = (0, s.LD)({
-        type: a.l.Embed,
+        type: o.l.Embed,
         media: e
       }, r),
       l = !t.author.bot && (0, s.UJ)({
-        type: a.l.Embed,
+        type: o.l.Embed,
         media: e
       }, r);
-    return i.length > 0 ? i[0] : l ? o.wk.POTENTIAL_EXPLICIT_CONTENT : n ? o.wk.SPOILER : null
+    return i.length > 0 ? i[0] : l ? a.wk.POTENTIAL_EXPLICIT_CONTENT : n ? a.wk.SPOILER : null
   },
   h = function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
       r = arguments.length > 3 && true !== arguments[3] && arguments[3],
       i = (0, s.LD)({
-        type: a.l.GenericMedia,
+        type: o.l.GenericMedia,
         media: e
       }, t),
       l = !r && (0, s.UJ)({
-        type: a.l.GenericMedia,
+        type: o.l.GenericMedia,
         media: e
       }, t);
-    return i.includes(o.wk.EXPLICIT_CONTENT) ? o.wk.EXPLICIT_CONTENT : i.includes(o.wk.GORE_CONTENT) ? o.wk.GORE_CONTENT : i.includes(o.wk.SELF_HARM_CONTENT) ? o.wk.SELF_HARM_CONTENT : l ? o.wk.POTENTIAL_EXPLICIT_CONTENT : n ? o.wk.SPOILER : null
+    return i.includes(a.wk.EXPLICIT_CONTENT) ? a.wk.EXPLICIT_CONTENT : i.includes(a.wk.GORE_CONTENT) ? a.wk.GORE_CONTENT : i.includes(a.wk.SELF_HARM_CONTENT) ? a.wk.SELF_HARM_CONTENT : l ? a.wk.POTENTIAL_EXPLICIT_CONTENT : n ? a.wk.SPOILER : null
   };
 
 function g(e) {
   switch (e.type) {
     case l.Ah.EMBED:
       return {
-        type: a.l.Embed, media: e
+        type: o.l.Embed, media: e
       };
     case l.Ah.ATTACHMENT:
       return {
-        type: a.l.Attachment, media: e
+        type: o.l.Attachment, media: e
       };
     case l.Ah.COMPONENT:
       return {
-        type: a.l.GenericMedia, media: e.srcUnfurledMediaItem
+        type: o.l.GenericMedia, media: e.srcUnfurledMediaItem
       };
     default:
       return null
@@ -82,24 +82,24 @@ function E(e, t, n) {
   let r = g(e);
   if (null == r) return [false, true];
   let i = (0, s.LD)(r, n),
-    a = (0, s.UJ)(r, n);
-  return i.length > 0 ? [true, i[0]] : a ? [true, o.wk.POTENTIAL_EXPLICIT_CONTENT] : e.spoiler ? [t, o.wk.SPOILER] : [false, true]
+    o = (0, s.UJ)(r, n);
+  return i.length > 0 ? [true, i[0]] : o ? [true, a.wk.POTENTIAL_EXPLICIT_CONTENT] : e.spoiler ? [t, a.wk.SPOILER] : [false, true]
 }
 
 function b(e) {
   let {
     channel: t,
     media: n
-  } = e, r = (0, i.e7)([u.Z], () => null != t && u.Z.can(f.Plq.MANAGE_MESSAGES, t)), o = c.cC.useSetting(), l = (0, s.kh)(a.n.GUILD);
-  return E(n, !(0, d.Z)(o, r), l)
+  } = e, r = (0, i.e7)([u.Z], () => null != t && u.Z.can(f.Plq.MANAGE_MESSAGES, t)), a = c.cC.useSetting(), l = (0, s.kh)(o.n.GUILD);
+  return E(n, !(0, d.Z)(a, r), l)
 }
 let y = e => {
   switch (e) {
-    case o.wk.EXPLICIT_CONTENT:
-    case o.wk.GORE_CONTENT:
-    case o.wk.SELF_HARM_CONTENT:
+    case a.wk.EXPLICIT_CONTENT:
+    case a.wk.GORE_CONTENT:
+    case a.wk.SELF_HARM_CONTENT:
       return p.intl.string(p.t.SEgHFh);
-    case o.wk.SPOILER:
+    case a.wk.SPOILER:
       return p.intl.string(p.t["XpfDH+"]);
     default:
       return

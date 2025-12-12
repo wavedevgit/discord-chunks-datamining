@@ -2,12 +2,12 @@
 /** chunk id: 146528, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk81825 = require("./81825.js"),
   Chunk591548 = require("./591548.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,10 +15,10 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class o extends Chunk81825.Z {
+class a extends Chunk81825.Z {
   static createInvoiceFromServer(e) {
     var t;
-    return new o({
+    return new a({
       id: e.id,
       invoiceItems: null == (t = e.invoice_items) ? true : t.map(i.H),
       total: e.total,
@@ -42,6 +42,6 @@ class o extends Chunk81825.Z {
     if (null != exports) return exports.discount_id
   }
   constructor(e) {
-    super(), a(this, "id", true), a(this, "invoiceItems", true), a(this, "total", true), a(this, "subtotal", true), a(this, "currency", true), a(this, "tax", true), a(this, "taxInclusive", true), a(this, "subscriptionPeriodStart", true), a(this, "subscriptionPeriodEnd", true), a(this, "status", true), this.id = e.id, this.invoiceItems = e.invoiceItems, this.total = e.total, this.subtotal = e.subtotal, this.currency = e.currency, this.tax = e.tax, this.taxInclusive = e.taxInclusive, this.subscriptionPeriodStart = e.subscriptionPeriodStart, this.subscriptionPeriodEnd = e.subscriptionPeriodEnd, this.status = e.status
+    super(), o(this, "id", true), o(this, "invoiceItems", true), o(this, "total", true), o(this, "subtotal", true), o(this, "currency", true), o(this, "tax", true), o(this, "taxInclusive", true), o(this, "subscriptionPeriodStart", true), o(this, "subscriptionPeriodEnd", true), o(this, "status", true), this.id = e.id, this.invoiceItems = e.invoiceItems, this.total = e.total, this.subtotal = e.subtotal, this.currency = e.currency, this.tax = e.tax, this.taxInclusive = e.taxInclusive, this.subscriptionPeriodStart = e.subscriptionPeriodStart, this.subscriptionPeriodEnd = e.subscriptionPeriodEnd, this.status = e.status
   }
 }

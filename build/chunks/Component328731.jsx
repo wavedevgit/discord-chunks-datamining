@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk36563 = require("./36563.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk5192 = require("./5192.js"),
@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk91907 = require("./91907.jsx"),
   Chunk866040 = require("./866040.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk617987 = require("./617987.js");
+  Chunk817120 = require("./817120.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,7 +61,7 @@ function y(e) {
   let {
     entry: t,
     channel: n,
-    className: a
+    className: o
   } = e, h = i.useRef(null), E = i.useRef(null), {
     displayParticipants: y,
     participant1: O,
@@ -70,7 +70,7 @@ function y(e) {
     orderedParticipants: I
   } = (0, u.Z)(t), T = [O, v];
   return (0, r.jsxs)("div", {
-    className: o()(m.container, a),
+    className: a()(m.container, o),
     children: [y.length > 0 ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(p.Z, {
         targetElementRef: h,
@@ -95,7 +95,7 @@ function y(e) {
     }) : null, (0, r.jsx)(l.Heading, {
       variant: "text-sm/semibold",
       color: "text-subtle",
-      className: o()(m.truncatedText, m.usersHeader),
+      className: a()(m.truncatedText, m.usersHeader),
       scaleFontToUserSetting: true,
       children: _.intl.format(_.t.rH95Gu, {
         user0: c.ZP.getName(n.guild_id, n.id, T[0]),

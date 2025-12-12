@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
 function s(e) {
   let {
     children: t,
-    theme: n = o.BR.DARK,
+    theme: n = a.BR.DARK,
     primaryColor: s = null,
     secondaryColor: l = null,
     gradient: c = null,
@@ -22,7 +22,7 @@ function s(e) {
     density: p = "compact",
     disableAdaptiveTheme: _ = false,
     reduceAdaptiveTheme: m = false
-  } = e, h = i.useMemo(() => (0, a.TT)({
+  } = e, h = i.useMemo(() => (0, o.TT)({
     theme: n,
     primaryColor: s,
     secondaryColor: l,
@@ -34,7 +34,7 @@ function s(e) {
     disableAdaptiveTheme: _,
     reduceAdaptiveTheme: m
   }), [n, s, l, c, u, d, f, p, _, m]);
-  return (0, r.jsx)(a.Ni.Provider, {
+  return (0, r.jsx)(o.Ni.Provider, {
     value: h,
     children: t
   })

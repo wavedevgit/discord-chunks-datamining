@@ -9,9 +9,9 @@ var Chunk473749 = require("./473749.js"),
   i = function(e) {
     return e[e.MOUNTED = 0] = "MOUNTED", e[e.ENTERED = 1] = "ENTERED", e[e.YEETED = 2] = "YEETED", e
   }({});
-let a = {};
+let o = {};
 
-function o(e) {
+function a(e) {
   return e
 }
 
@@ -20,50 +20,50 @@ function s(e) {
     items: t,
     renderItem: n,
     getItemKey: i,
-    wrapChildren: s = o,
+    wrapChildren: s = a,
     lazyCleanUpDelay: l
   } = e, c = r.useRef(false);
   r.useLayoutEffect(() => {
     false !== c.current && clearTimeout(c.current)
   }, []);
-  let [, u] = r.useState(a), d = r.useRef(null), f = r.useMemo(() => {
+  let [, u] = r.useState(o), d = r.useRef(null), f = r.useMemo(() => {
     var e;
     let r = new Set(null == (e = d.current) ? true : e.keys()),
-      a = new Map(d.current);
+      o = new Map(d.current);
     for (let e of t) {
       let t = i(e),
-        o = a.get(t);
-      if (null == o) {
+        a = o.get(t);
+      if (null == a) {
         let r = +(null != d.current),
           i = () => {
             var e, n;
             let r = null == (e = d.current) ? true : e.get(t);
             null == r || (2 === r.state ? (null == (n = d.current) || n.delete(t), null != l ? (clearTimeout(c.current), c.current = setTimeout(() => u({}), l)) : u({})) : __DEV__ && console.warn("SimpleTransitionGroup.cleanUp: Attempted to remove an item that isn't yeetable: ".concat(t)))
           },
-          a = n(t, e, r, i);
-        o = {
+          o = n(t, e, r, i);
+        a = {
           item: e,
-          children: a,
+          children: o,
           state: r,
           cleanUp: i,
           renderItem: n
         }
-      } else if (o.item !== e || o.renderItem !== n || 2 === o.state) {
+      } else if (a.item !== e || a.renderItem !== n || 2 === a.state) {
         let {
           cleanUp: r
-        } = o, i = 2 === o.state ? 1 : o.state, a = n(t, e, i, o.cleanUp);
-        o = {
+        } = a, i = 2 === a.state ? 1 : a.state, o = n(t, e, i, a.cleanUp);
+        a = {
           item: e,
-          children: a,
+          children: o,
           state: i,
           cleanUp: r,
           renderItem: n
         }
       }
-      a.set(t, o), r.delete(t)
+      o.set(t, a), r.delete(t)
     }
     for (let e of r) {
-      let t = a.get(e);
+      let t = o.get(e);
       if (null != t)
         if (2 !== t.state || t.renderItem !== n) {
           let {
@@ -76,10 +76,10 @@ function s(e) {
             state: 2,
             cleanUp: i,
             renderItem: n
-          }).children ? a.set(e, t) : a.delete(e)
-        } else a.set(e, t)
+          }).children ? o.set(e, t) : o.delete(e)
+        } else o.set(e, t)
     }
-    return a
+    return o
   }, [t, i, n, l]);
   r.useInsertionEffect(() => (d.current = f, () => {
     var e;

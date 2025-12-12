@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk602733 = require("./602733.js"),
@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk889588 = require("./889588.js"),
+  Chunk232644 = require("./232644.js"),
   y = function(e) {
     return e.SMALL = "small", e.MEDIUM = "medium", e.LARGE = "large", e
   }({});
@@ -30,7 +30,7 @@ function O(e) {
   let {
     item: t,
     wishlistId: n,
-    isOwner: a,
+    isOwner: o,
     cardSize: y = "medium",
     showOverlayButton: O = true,
     cardRef: v,
@@ -45,7 +45,7 @@ function O(e) {
     source: w
   } = e, D = i.useRef(null), x = i.useRef(null), L = null != v ? v : x, {
     trackUserProfileWishlistAction: j
-  } = (0, p.KZ)(), M = a && true === t.isOwned && null != t.gifterUserId, k = null != t.gifterUserId ? u.default.getUser(t.gifterUserId) : null, U = null != k ? f.ZP.getName(k) : null, G = M && null != k && null != U && "" !== U, Z = G ? (0, r.jsx)(l.qEK, {
+  } = (0, p.KZ)(), M = o && true === t.isOwned && null != t.gifterUserId, k = null != t.gifterUserId ? u.default.getUser(t.gifterUserId) : null, U = null != k ? f.ZP.getName(k) : null, G = M && null != k && null != U && "" !== U, Z = G ? (0, r.jsx)(l.qEK, {
     src: k.getAvatarURL(true, 48),
     size: l.EFr.SIZE_48,
     "aria-label": U
@@ -56,7 +56,7 @@ function O(e) {
       color: l.TVs.colors.WHITE,
       width: 38,
       height: 38,
-      className: o()(b.cardStateIcon, b.checkmark),
+      className: a()(b.cardStateIcon, b.checkmark),
       "aria-label": E.intl.string(E.t.L5Pt9L)
     })
   }), B = (0, r.jsx)("div", {
@@ -95,7 +95,7 @@ function O(e) {
     className: b.container,
     children: [(0, r.jsxs)("div", {
       ref: L,
-      className: o()(b.card, {
+      className: a()(b.card, {
         [b.isOwned]: N,
         [b.smallCard]: "small" === y,
         [b.largeCard]: "large" === y
@@ -117,7 +117,7 @@ function O(e) {
           e.stopPropagation(), V()
         }
       })]
-    }), null != P && P(), a && null != n && (0, r.jsx)(_.Z, {
+    }), null != P && P(), o && null != n && (0, r.jsx)(_.Z, {
       iconSize: "sm",
       item: t,
       wishlistId: n,

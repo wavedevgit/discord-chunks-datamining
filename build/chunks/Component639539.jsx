@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk70956 = require("./70956.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk65893 = require("./65893.js");
+  Chunk636433 = require("./636433.js");
 
 function m(e) {
   if (null != e) {
@@ -128,11 +128,11 @@ let f = e => {
     });
     return (0, Chunk54381.jsxs)(Chunk467721.animated.div, {
       style: require,
-      className: Chunk65893.colonContainer,
+      className: Chunk636433.colonContainer,
       children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk65893.tinyDot
+        className: Chunk636433.tinyDot
       }), (0, Chunk54381.jsx)("div", {
-        className: Chunk65893.tinyDot
+        className: Chunk636433.tinyDot
       })]
     })
   },

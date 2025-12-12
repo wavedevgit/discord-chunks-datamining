@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk739754 = require("./739754.jsx"),
   Chunk970184 = require("./970184.jsx"),
-  Chunk481458 = require("./481458.js");
+  Chunk520525 = require("./520525.js");
 
 function s(e) {
   let {
@@ -16,14 +16,14 @@ function s(e) {
     renderComponents: n
   } = e, {
     message: s
-  } = (0, a.CJ)();
+  } = (0, o.CJ)();
   return null == t || 0 === t.length ? null : (0, r.jsxs)("div", {
-    className: o.container,
+    className: a.container,
     children: [(0, r.jsx)("div", {
-      className: o.children,
+      className: a.children,
       children: n(t)
     }), null != s ? (0, r.jsx)(i.ZP, {
-      className: o.error,
+      className: a.error,
       message: s,
       component: e
     }) : null]

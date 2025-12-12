@@ -6,7 +6,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk946170 = require("./946170.js");
+  Chunk919686 = require("./919686.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,8 +51,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -60,14 +60,14 @@ function _(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let h = {
-  SMALL: Chunk946170.sizeSmall,
-  MEDIUM: Chunk946170.sizeMedium,
-  LARGE: Chunk946170.sizeLarge
+  SMALL: Chunk919686.sizeSmall,
+  MEDIUM: Chunk919686.sizeMedium,
+  LARGE: Chunk919686.sizeLarge
 };
 class g extends(r = Chunk473749.PureComponent) {
   calculateScroll() {
@@ -91,11 +91,11 @@ class g extends(r = Chunk473749.PureComponent) {
     let {
       hideSeparator: e
     } = this.state;
-    return Chunk473749.Children.map(this.props.children, t => a.isValidElement(t) ? t.type === l.hzk || t.type === l.YAO ? a.cloneElement(t, {
+    return Chunk473749.Children.map(this.props.children, t => o.isValidElement(t) ? t.type === l.hzk || t.type === l.YAO ? o.cloneElement(t, {
       scrollerRef: this.setRef,
       onScroll: this.handleScroll,
       onResize: this.handleScroll
-    }) : t.type === l.xBx && e ? a.cloneElement(t, {
+    }) : t.type === l.xBx && e ? o.cloneElement(t, {
       separator: false
     }) : t : t)
   }
@@ -105,13 +105,13 @@ class g extends(r = Chunk473749.PureComponent) {
         className: t,
         children: n,
         tag: r,
-        size: a,
-        fullscreenOnMobile: o
+        size: o,
+        fullscreenOnMobile: a
       } = module,
       l = _(module, ["className", "children", "tag", "size", "fullscreenOnMobile"]);
     return (0, Chunk54381.jsx)(r, p(d({
-      className: s()(Chunk946170.modal, exports, Chunk473749, {
-        [Chunk946170.fullscreenOnMobile]: Chunk120356
+      className: s()(Chunk919686.modal, exports, Chunk473749, {
+        [Chunk919686.fullscreenOnMobile]: Chunk120356
       })
     }, Chunk481060), {
       children: this.renderChildren()

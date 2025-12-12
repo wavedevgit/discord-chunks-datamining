@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 503737, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -46,11 +46,11 @@ class h extends Chunk317770.Z {
   handleModalOpen(e) {
     let {
       activity: t,
-      isPrivate: a,
-      context: o
-    } = e, h = o === s.IlC.POPOUT ? l.u1M : l.z1l;
-    a ? (0, l.h7j)(e => {
-      var n, a;
+      isPrivate: o,
+      context: a
+    } = e, h = a === s.IlC.POPOUT ? l.u1M : l.z1l;
+    o ? (0, l.h7j)(e => {
+      var n, o;
       return (0, r.jsx)(i.Modal, (n = u({
         title: c.intl.formatToPlainString(c.t["2tN7ih"], {
           name: t.name
@@ -61,20 +61,20 @@ class h extends Chunk317770.Z {
           onClick: e.onClose,
           autoFocus: true
         }]
-      }, e), a = a = {
+      }, e), o = o = {
         children: (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           children: c.intl.string(c.t.MAxtks)
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(a)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
+      })(Object(o)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
       }), n))
     }, {
       onCloseCallback: f,

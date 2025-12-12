@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk923540 = require("./923540.js");
+  Chunk137435 = require("./137435.js");
 
 function _(e) {
   let {
@@ -37,11 +37,11 @@ function _(e) {
   if (t) return {
     subtitle: f.intl.string(f.t.W5rDjW),
     flavor: f.intl.format(f.t.cUHcaQ, {
-      helpdeskArticle: a.Z.getArticleURL(u.BhN.GUILD_SUBSCRIPTIONS)
+      helpdeskArticle: o.Z.getArticleURL(u.BhN.GUILD_SUBSCRIPTIONS)
     })
   };
   let p = d.GP[d.Xh.PREMIUM_MONTH_GUILD],
-    _ = o.ZP.getDefaultPrice(p.id, n),
+    _ = a.ZP.getDefaultPrice(p.id, n),
     m = (0, s.og)((0, s.T4)(_.amount, _.currency), p.interval, p.intervalCount);
   return {
     subtitle: n ? f.intl.string(f.t.bhPzXR) : f.intl.string(f.t.Zs9h9Z),
@@ -54,16 +54,16 @@ let m = function(e) {
   let {
     hasAppliedGuildBoosts: t,
     hasBoostPerk: n,
-    hasGuildAffinitiesOrInGuild: a,
-    subscriptionIsPausedOrPausePending: o
+    hasGuildAffinitiesOrInGuild: o,
+    subscriptionIsPausedOrPausePending: a
   } = e, {
     subtitle: s,
     flavor: l
   } = _({
     hasAppliedGuildBoosts: t,
     hasBoostPerk: n,
-    hasGuildAffinitiesOrInGuild: a,
-    subscriptionIsPausedOrPausePending: o
+    hasGuildAffinitiesOrInGuild: o,
+    subscriptionIsPausedOrPausePending: a
   });
   return (0, r.jsxs)("div", {
     className: p.wrapper,

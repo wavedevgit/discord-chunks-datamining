@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk835473 = require("./835473.js"),
@@ -18,19 +18,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk97057 = require("./97057.js");
+  Chunk976794 = require("./976794.js");
 
 function E(e) {
   let {
     user: t,
     guildId: n,
-    channelId: a,
+    channelId: o,
     applicationId: E,
     isGameRelationship: b = false,
     className: y
   } = e, {
     themeType: O
-  } = (0, _.z)(), v = O === m.l.MODAL_V2, S = f.ZP.getName(n, a, t), {
+  } = (0, _.z)(), v = O === m.l.MODAL_V2, S = f.ZP.getName(n, o, t), {
     trackUserProfileAction: I
   } = (0, p.KZ)(), {
     newestAnalyticsLocation: T
@@ -52,7 +52,7 @@ function E(e) {
     })
   }, [A, b, I]), R = null != E, w = (0, c.q)(E);
   return R && null == w ? null : (0, r.jsxs)("div", {
-    className: o()(g.container, y),
+    className: a()(g.container, y),
     children: [R ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       children: h.intl.format(b ? h.t.syHjLL : h.t.V15uUI, {

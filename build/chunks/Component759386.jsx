@@ -1,7 +1,7 @@
 /** Chunk was on 86513 **/
 /** chunk id: 759386, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  getApplicationPaymentSteps: () => f
+  getApplicationPaymentSteps: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -33,7 +33,7 @@ function m(e) {
   return e
 }
 
-function f(e) {
+function p(e) {
   let {
     guildId: t,
     showBenefitsFirst: n

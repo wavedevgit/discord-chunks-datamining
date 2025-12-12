@@ -58,8 +58,8 @@ function g(e, t) {
   if (null == e) return {};
   var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -67,8 +67,8 @@ function g(e, t) {
 function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -81,12 +81,12 @@ function b(e) {
   let {
     parentAnalyticsLocation: E
   } = (0, s.ZP)(), b = n ? u.d : u.Z, y = t.isManaged() || !t.isPrivate() ? f.intl.string(f.t.S0W8Z5) : f.intl.string(f.t["0D/6Rz"]), O = i.useCallback(() => {
-    null == p || p(), (0, l.v)(E, l.d.JOIN_CALL), o.default.selectVoiceChannel(t.id)
+    null == p || p(), (0, l.v)(E, l.d.JOIN_CALL), a.default.selectVoiceChannel(t.id)
   }, [t.id, p, E]);
   return i.useEffect(() => (c.S.subscribe(d.CkL.CALL_ACCEPT, O), () => {
     c.S.unsubscribe(d.CkL.CALL_ACCEPT, O)
   }), [O]), (0, r.jsx)(b, h(_({}, m), {
-    iconComponent: a.Csw,
+    iconComponent: o.Csw,
     label: y,
     onClick: O,
     isTrayButton: false

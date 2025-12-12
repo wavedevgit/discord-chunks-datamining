@@ -12,50 +12,50 @@ var Chunk54381 = require("./54381.js"),
   Chunk626135 = require("./626135.js"),
   Chunk660662 = require("./660662.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk324243 = require("./324243.js"),
+  Chunk486730 = require("./486730.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk205178 = require("./205178.js"),
-  Chunk238267 = require("./238267.js");
+  Chunk745993 = require("./745993.js"),
+  Chunk959389 = require("./959389.js");
 
 function h(e) {
   var t;
   let {
     selectedColors: n,
     setSelectedColors: h,
-    defaultColor: b,
-    selectedEffectId: x,
-    className: S
-  } = e, j = x === r.m.GRADIENT, C = (0, o.useCallback)(e => {
+    defaultColor: x,
+    selectedEffectId: b,
+    className: _
+  } = e, S = b === r.m.GRADIENT, j = (0, o.useCallback)(e => {
     h([e]), c.default.track(u.rMx.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
-      default: e === b,
+      default: e === x,
       colors: [e]
     })
-  }, [h, b]), v = (0, o.useCallback)(e => {
+  }, [h, x]), C = (0, o.useCallback)(e => {
     h(e), c.default.track(u.rMx.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
       default: false,
       colors: e
     })
   }, [h]);
   return (0, l.jsxs)("div", {
-    className: S,
-    children: [(0, l.jsxs)(a.X6q, {
+    className: _,
+    children: [(0, l.jsxs)(i.X6q, {
       variant: "heading-md/semibold",
       className: g.selectorHeading,
-      children: [p.intl.string(f.default.JOpi7z), (0, l.jsx)(i.SrA, {
+      children: [m.intl.string(p.default.JOpi7z), (0, l.jsx)(a.SrA, {
         size: "xs",
-        color: i.TVs.colors.TEXT_DEFAULT
+        color: a.TVs.colors.TEXT_DEFAULT
       })]
     }), (0, l.jsx)(s.default, {
-      className: m.colorPicker,
-      colorContainerClassName: m.colorPickerContainer,
-      defaultColor: b,
-      colors: j ? d.vK : d.gD,
+      className: f.colorPicker,
+      colorContainerClassName: f.colorPickerContainer,
+      defaultColor: x,
+      colors: S ? d.vK : d.gD,
       value: n[0],
       secondaryValue: null != (t = n[1]) ? t : true,
-      onChange: C,
-      onChangeGradientColors: v,
-      isGradient: j,
-      gradientButtonClassName: m.gradientPicker,
+      onChange: j,
+      onChangeGradientColors: C,
+      isGradient: S,
+      gradientButtonClassName: f.gradientPicker,
       gradientDegrees: 90,
       allowBlackCustomColor: true,
       customPickerPosition: "top"

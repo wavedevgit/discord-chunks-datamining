@@ -36,7 +36,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk474936 = require("./474936.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk691496 = require("./691496.js");
+  Chunk553330 = require("./553330.js");
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -89,7 +89,7 @@ function Z(e) {
     tryItOutThemeColors: Y,
     tryItOutAvatar: W,
     tryItOutBanner: K
-  } = (0, a.cj)([O.Z], () => {
+  } = (0, o.cj)([O.Z], () => {
     let e = O.Z.getAllPending(),
       t = O.Z.getErrors();
     return G(k({}, e, O.Z.getAllTryItOut()), {
@@ -135,7 +135,7 @@ function Z(e) {
       children: [(0, r.jsx)(I.Z, {
         layoutClassName: j.tryItOutLayout,
         profilePreviewTitle: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(o.SrA, {
+          children: [(0, r.jsx)(a.SrA, {
             size: "md",
             color: "currentColor",
             className: j.premiumIcon
@@ -152,10 +152,10 @@ function Z(e) {
         children: (0, r.jsxs)("div", {
           className: j.editor,
           children: [(0, r.jsxs)("div", {
-            children: [(0, r.jsx)(o.Heading, {
+            children: [(0, r.jsx)(a.Heading, {
               variant: "heading-xl/extrabold",
               children: L.intl.string(L.t["2zGdAW"])
-            }), (0, r.jsx)(o.Text, {
+            }), (0, r.jsx)(a.Text, {
               className: j.description,
               variant: "text-sm/normal",
               children: L.intl.string(L.t.xeEC20)
@@ -187,7 +187,7 @@ function Z(e) {
           }), (0, r.jsx)(C.Z, {
             user: M,
             className: j.customizationSection
-          }), !et && (0, r.jsx)(o.Text, {
+          }), !et && (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
             children: L.intl.string(L.t["smo74/"])
           })]

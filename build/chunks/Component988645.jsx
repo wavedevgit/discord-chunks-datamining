@@ -15,22 +15,22 @@ var Chunk990547 = require("./990547.js"),
   Chunk981631 = require("./981631.js"),
   Chunk531578 = require("./531578.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk801485 = require("./801485.js");
+  Chunk5315 = require("./5315.js");
 
 function v(e) {
   let {
     onClose: t,
     transitionState: v,
-    analyticsData: m
+    analyticsData: _
   } = e, {
-    surveyEmojiKind: E
+    surveyEmojiKind: m
   } = (0, o.R)({
     location: "VoiceCallFeedback"
-  }), p = f.intl.string(f.t.Ss6tlb), g = f.intl.string(f.t.tLi4cR), _ = {
+  }), E = f.intl.string(f.t.Ss6tlb), p = f.intl.string(f.t.tLi4cR), g = {
     impressionName: l.ImpressionNames.VOICE_FEEDBACK_MODAL,
     impressionProperties: {
-      rtc_connection_id: m.rtc_connection_id,
-      media_session_id: m.media_session_id
+      rtc_connection_id: _.rtc_connection_id,
+      media_session_id: _.media_session_id
     }
   }, h = {
     value: b.tX.CONNECTION,
@@ -71,9 +71,9 @@ function v(e) {
       label: f.intl.string(f.t.emlT91)
     }
   };
-  return (0, a.jsx)(d.Z, {
+  return (0, a.jsx)(s.Z, {
     onMount: () => {
-      u.default.track(c.rMx.OPEN_MODAL, {
+      d.default.track(c.rMx.OPEN_MODAL, {
         type: "voice",
         source: "Feedback Modal"
       })
@@ -82,21 +82,21 @@ function v(e) {
       var t, l;
       let {
         dontShowAgain: o,
-        rating: d,
-        feedback: u,
+        rating: s,
+        feedback: d,
         category: O,
         problem: v
       } = e;
       o && (0, r.Uv)({
         feedbackType: b.nw.VOICE,
         location: "VoiceCallFeedbackModal"
-      }), null != d && ((0, s.Z)(c.rMx.CALL_REPORT_PROBLEM, {
-        rating: d,
+      }), null != s && ((0, u.Z)(c.rMx.CALL_REPORT_PROBLEM, {
+        rating: s,
         category: O,
         reasonDescription: null != (t = null == v ? true : v.value) ? t : null,
         variant: null != (l = null == v ? true : v.variant) ? l : null,
-        feedback: u,
-        analyticsData: m
+        feedback: d,
+        analyticsData: _
       }), null != v && (0, i.ZDy)(async () => {
         let {
           default: e
@@ -124,12 +124,12 @@ function v(e) {
       }))
     },
     onClose: t,
-    ratingHeader: p,
-    ratingEmojiKind: E,
-    ratingBody: g,
+    ratingHeader: E,
+    ratingEmojiKind: m,
+    ratingBody: p,
     categoriesHeader: f.intl.string(O.default.tq8598),
     optionsTree: [h, S, j, y],
-    impression: _,
+    impression: g,
     transitionState: v
   })
 }

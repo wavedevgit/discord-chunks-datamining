@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk907331 = require("./907331.js"),
   Chunk636977 = require("./636977.js"),
   Chunk685816 = require("./685816.js"),
@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk222194 = require("./222194.js");
+  Chunk310582 = require("./310582.js");
 let B = (0, Chunk884697.IC)(90),
   A = {
     rankedSkuIds: [],
@@ -48,20 +48,20 @@ let B = (0, Chunk884697.IC)(90),
     var t;
     let {
       isLoading: n,
-      handleTransition: a,
+      handleTransition: o,
       category: N,
       heroBlock: P,
       tab: R,
       onVisibilityChange: Z
-    } = e, w = (0, v.W)("HeroBlock"), H = (0, i.O)(e => {
+    } = e, w = (0, b.W)("HeroBlock"), H = (0, s.O)(e => {
       null == Z || Z(e)
-    }, .1, null != Z), D = l.useRef(null), M = (0, x.B)("HeroBlock"), F = (0, u.e7)([b.default], () => b.default.getCurrentUser()), W = (0, C.sp)(), U = l.useMemo(() => {
+    }, .1, null != Z), D = l.useRef(null), M = (0, x.B)("HeroBlock"), F = (0, u.e7)([m.default], () => m.default.getCurrentUser()), W = (0, h.sp)(), U = l.useMemo(() => {
       var e, t;
       return null != P ? P : null == N ? A : {
         rankedSkuIds: null != (e = N.heroRanking) ? e : [],
         name: N.name,
         unpublishedAt: N.unpublishedAt,
-        logoUrl: (0, h.uV)(null != (t = N.heroLogo) ? t : N.logo, {
+        logoUrl: (0, _.uV)(null != (t = N.heroLogo) ? t : N.logo, {
           size: B
         }),
         categorySkuId: N.skuId,
@@ -75,32 +75,32 @@ let B = (0, Chunk884697.IC)(90),
         heroBannerUrl: N.heroBannerUrl,
         heroBannerAnimatedUrl: N.heroBannerAnimatedUrl
       }
-    }, [P, N]), V = (0, E.Pc)("HeroBlock") && U.categorySkuId === k.Hi, {
+    }, [P, N]), V = (0, v.Pc)("HeroBlock") && U.categorySkuId === k.Hi, {
       bannerStyleOverrides: z,
       logoStyleOverrides: G,
       heroLogo: K,
       heroBannerStatic: Y,
       heroBannerAnimated: q,
       heroBannerRive: Q
-    } = (0, S.hr)(U), J = null != (t = null == z ? true : z.responsive) && t, X = null == z ? true : z.backgroundStyle, $ = null != Q, ee = R === k.AW.ORBS, et = null != N && N.isOrbsExclusive, en = ee ? I.intl.string(I.t["1CdL8d"]) : I.intl.string(I.t.xYKa1T);
+    } = (0, E.hr)(U), J = null != (t = null == z ? true : z.responsive) && t, X = null == z ? true : z.backgroundStyle, $ = null != Q, ee = R === k.AW.ORBS, et = null != N && N.isOrbsExclusive, en = ee ? I.intl.string(I.t["1CdL8d"]) : I.intl.string(I.t.xYKa1T);
     ee && V && (en = I.intl.string(I.t.dVz4hi));
     let {
       analyticsLocations: er
-    } = (0, f.ZP)(), el = () => {
+    } = (0, g.ZP)(), el = () => {
       ee ? ((0, p.Y)({
         pageType: T.ZY5.SHOP_ORBS_TAB,
         sectionType: T.jXE.ORBS_SHOP_HERO_BLOCK,
         ctaObject: T.qAy.CTA_TO_QUEST_HOME
-      }), V ? (0, _.Z)({
+      }), V ? (0, S.Z)({
         analyticsLocations: er
-      }) : (0, g.navigateToQuestHome)({
-        fromContent: s.j.ORBS_SHOP_HERO_CTA
-      })) : (a({
+      }) : (0, f.navigateToQuestHome)({
+        fromContent: a.j.ORBS_SHOP_HERO_CTA
+      })) : (o({
         sourceButton: "shop latest category hero",
         categorySkuId: et ? U.categorySkuId : true,
         isInternalShopDeeplink: true,
         isOrbsExclusive: et
-      }), m.default.track(T.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      }), C.default.track(T.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == W ? true : W.sessionId,
         sku_id: U.categorySkuId,
         page_type: R,
@@ -117,7 +117,7 @@ let B = (0, Chunk884697.IC)(90),
         className: L.riveEventOverlay,
         riveEventTargetRef: D
       }) : null, (0, r.jsx)("div", {
-        className: o()(L.banner, {
+        className: i()(L.banner, {
           [L.rivBanner]: $,
           [L.responsive]: J
         }),
@@ -141,7 +141,7 @@ let B = (0, Chunk884697.IC)(90),
             text: en
           })
         }) : (0, r.jsxs)("div", {
-          className: o()(L.heroHeaderContainer, {
+          className: i()(L.heroHeaderContainer, {
             [L.responsive]: J
           }),
           children: [n ? (0, r.jsx)("div", {

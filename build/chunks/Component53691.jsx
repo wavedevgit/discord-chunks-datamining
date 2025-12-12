@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk436774 = require("./436774.jsx"),
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk740594 = require("./740594.jsx"),
   Chunk767714 = require("./767714.jsx"),
   Chunk474936 = require("./474936.js"),
-  Chunk879149 = require("./879149.js");
+  Chunk414239 = require("./414239.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,9 +72,9 @@ function h(e) {
     size: "md",
     color: l.JX.PREMIUM_TIER_2
   });
-  return (0, r.jsxs)(o.animated.div, {
+  return (0, r.jsxs)(a.animated.div, {
     style: m({}, T),
-    className: a()(p.upsellContainer, {
+    className: o()(p.upsellContainer, {
       [p.upsellContainerShadow]: !I && y,
       [p.upsellContainerFloating]: "floating" === O,
       [p.upsellContainerInline]: "inline" === O

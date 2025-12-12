@@ -76,8 +76,8 @@ function j(e, t) {
   if (null == e) return {};
   var n, r, i = M(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -85,14 +85,14 @@ function j(e, t) {
 function M(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function k(e) {
   var t;
-  let n = (0, a.e7)([h.Z], () => h.Z.questDeliveryOverride, []),
+  let n = (0, o.e7)([h.Z], () => h.Z.questDeliveryOverride, []),
     u = (0, O.GN)(e.questContent),
     w = [g.jn.QUEST_BAR_V2, g.jn.QUEST_BAR].includes(e.questContent),
     D = (0, _.O5)(),
@@ -162,14 +162,14 @@ function k(e) {
         sourceQuestContent: e.sourceQuestContent
       }), (0, O.GN)(e.questContent) && ((0, p.gl)(e.quest.id, e.questContent), w && (0, C.maybeShowSurveyForQuest)(e.quest))
     },
-    z = e => (0, o.showToast)((0, o.createToast)(new l.Z(e, e.status).message, o.ToastType.FAILURE)),
+    z = e => (0, a.showToast)((0, a.createToast)(new l.Z(e, e.status).message, a.ToastType.FAILURE)),
     q = () => (0, p.CS)(e.quest.id, true).catch(z),
     Q = () => (0, p.is)(e.quest.id).catch(z),
     X = () => {
       G(), Q()
     },
     J = (0, b.m4)(e.quest),
-    $ = i.useMemo(() => (0, r.jsx)(o.S89, {
+    $ = i.useMemo(() => (0, r.jsx)(a.S89, {
       id: "delivery",
       label: "Show in Quest Bar",
       checked: (null == n ? true : n.id) === e.quest.id,
@@ -179,75 +179,75 @@ function k(e) {
       (0, c.uL)(N.Z5c.QUEST_PREVIEW_TOOL_2(e.quest.id))
     }, [e.quest.id]),
     et = e.shouldShowDisclosure && e.quest.id !== A.V6;
-  return (0, r.jsxs)(o.v2r, {
+  return (0, r.jsxs)(a.v2r, {
     variant: "fixed",
     onSelect: W,
     navId: "quests-entry",
     "aria-label": R.intl.string(R.t.ogxXGq),
     onClose: null != (t = null == e ? true : e.onClose) ? t : P.dG,
-    children: [(0, r.jsxs)(o.kSQ, {
-      children: [(0, r.jsx)(o.sNh, {
+    children: [(0, r.jsxs)(a.kSQ, {
+      children: [(0, r.jsx)(a.sNh, {
         id: "play-game",
         label: L,
         action: B,
-        icon: o.zFc
-      }), j && (0, r.jsx)(o.sNh, {
+        icon: a.zFc
+      }), j && (0, r.jsx)(a.sNh, {
         id: "share-link",
         label: R.intl.string(R.t.RDE0Sc),
         action: V,
-        icon: o.TIy
+        icon: a.TIy
       }), J && $]
-    }, "major-actions"), (0, r.jsxs)(o.kSQ, {
-      children: [!e.hideLearnMore && (0, r.jsx)(o.sNh, {
+    }, "major-actions"), (0, r.jsxs)(a.kSQ, {
+      children: [!e.hideLearnMore && (0, r.jsx)(a.sNh, {
         id: "learn-more",
         label: R.intl.string(R.t["Ws2Bl+"]),
         action: Y,
-        icon: o.qDn
-      }), et && (0, r.jsx)(o.sNh, {
+        icon: a.qDn
+      }), et && (0, r.jsx)(a.sNh, {
         id: "display-disclosure",
         label: R.intl.string(R.t.GcsZKJ),
         action: H
-      }), u && (0, r.jsx)(o.sNh, {
+      }), u && (0, r.jsx)(a.sNh, {
         id: "hide-entrypoint",
         label: R.intl.string(R.t.NN79E9),
         action: K,
         subtext: R.intl.string(R.t.RK9gxo)
       })]
-    }, "minor-actions"), e.quest.preview && (0, r.jsxs)(o.kSQ, {
+    }, "minor-actions"), e.quest.preview && (0, r.jsxs)(a.kSQ, {
       label: R.intl.string(R.t["Ape+mm"]),
-      children: [(0, r.jsx)(o.sNh, {
+      children: [(0, r.jsx)(a.sNh, {
         id: "dismiss",
         label: R.intl.string(R.t.JF6W66),
         action: U
-      }), (0, r.jsx)(o.sNh, {
+      }), (0, r.jsx)(a.sNh, {
         id: "enrollment",
         label: R.intl.string(R.t.taqkwK),
         action: X
-      }), (0, r.jsx)(o.sNh, {
+      }), (0, r.jsx)(a.sNh, {
         id: "progress",
         label: R.intl.string(R.t.cKSLr4),
         action: F
-      }), (0, r.jsx)(o.sNh, {
+      }), (0, r.jsx)(a.sNh, {
         id: "complete",
         label: R.intl.string(R.t.jQEfRT),
         action: M
-      }), (0, S.$J)(e.quest) && (0, r.jsxs)(o.sNh, {
+      }), (0, S.$J)(e.quest) && (0, r.jsxs)(a.sNh, {
         id: "console",
         label: "Console Heartbeat",
-        children: [(0, r.jsx)(o.sNh, {
+        children: [(0, r.jsx)(a.sNh, {
           disabled: true,
           id: "status",
           label: "Status: ".concat((0, S.Bz)(e.quest) ? "alive" : "dead")
-        }), (0, r.jsx)(o.sNh, {
+        }), (0, r.jsx)(a.sNh, {
           id: "start",
           label: "Start heartbeat (cheatmode)",
           action: q
-        }), (0, r.jsx)(o.sNh, {
+        }), (0, r.jsx)(a.sNh, {
           id: "stop",
           label: "Stop heartbeat",
           action: Q
         })]
-      }), (0, r.jsx)(o.sNh, {
+      }), (0, r.jsx)(a.sNh, {
         id: "copy-quest-id",
         label: R.intl.string(R.t.oisrFi),
         action: () => {
@@ -255,7 +255,7 @@ function k(e) {
         }
       }), (0, E.T)({
         location: A.dr.QUEST_PREVIEW_TOOL_2
-      }) && (0, r.jsx)(o.sNh, {
+      }) && (0, r.jsx)(a.sNh, {
         id: "preview",
         label: R.intl.string(R.t.tx5Ax5),
         action: ee
@@ -268,7 +268,7 @@ function U(e) {
   let {
     children: t,
     onOpen: n,
-    onClose: a,
+    onClose: o,
     preventIdle: s,
     quest: l,
     questContent: c,
@@ -283,10 +283,10 @@ function U(e) {
       sourceQuestContent: f
     }), null != n && n()
   }, [n, l.id, c, d, m, f]);
-  return (0, r.jsx)(o.yRy, {
+  return (0, r.jsx)(a.yRy, {
     targetElementRef: h,
     onRequestOpen: g,
-    onRequestClose: a,
+    onRequestClose: o,
     renderPopout: e => {
       let {
         closePopout: t
@@ -307,7 +307,7 @@ function U(e) {
         sourceQuestContent: f
       }))
     },
-    animation: o.yRy.Animation.NONE,
+    animation: a.yRy.Animation.NONE,
     children: e => (0, r.jsx)("div", {
       ref: h,
       children: t(e)

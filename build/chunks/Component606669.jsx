@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk324243 = require("./324243.js");
+  Chunk486730 = require("./486730.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -100,10 +100,10 @@ function E() {
     children: (0, Chunk54381.jsx)(Chunk481060.II_, {
       id: "input",
       label: Chunk388032.intl.string(Chunk388032.t["5PWWCY"]),
-      control: (t, n) => (0, r.jsx)(a._wy, g(m({}, t), {
+      control: (t, n) => (0, r.jsx)(o._wy, g(m({}, t), {
         ref: n,
         value: 100 * e,
-        onChange: e => (0, o.o2)(e / 100),
+        onChange: e => (0, a.o2)(e / 100),
         "aria-label": f.intl.string(f.t["5PWWCY"])
       }))
     })
@@ -116,19 +116,19 @@ function E() {
           name: t,
           value: i
         } = e;
-        return (0, r.jsx)(a.k5B, {
+        return (0, r.jsx)(o.k5B, {
           id: i,
           group: "role-colors",
           checked: i === n,
           label: t,
-          action: () => (0, o.u1)(i)
+          action: () => (0, a.u1)(i)
         }, i)
       })
     })
   }, "role-colors"), (0, Chunk54381.jsx)(Chunk481060.kSQ, {
     children: (0, Chunk54381.jsx)(Chunk481060.S89, {
       id: "display-name-styles",
-      label: Chunk388032.intl.string(Chunk324243.default["2gFUEw"]),
+      label: Chunk388032.intl.string(Chunk486730.default["2gFUEw"]),
       checked: E,
       action: v
     })

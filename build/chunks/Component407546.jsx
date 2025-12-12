@@ -12,7 +12,7 @@ var Chunk149765 = require("./149765.js"),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk829478 = require("./829478.js");
+  Chunk990199 = require("./990199.js");
 let d = 5;
 
 function f(e) {
@@ -32,11 +32,11 @@ function f(e) {
       variant: "heading-deprecated-12/semibold",
       className: u.sectionLabel,
       children: c.intl.string(c.t["1DXFFd"])
-    }), null != t && "" !== t ? (0, r.jsx)(a.x, {
+    }), null != t && "" !== t ? (0, r.jsx)(o.x, {
       variant: "text-xs/normal",
       color: "text-feedback-critical",
       children: t
-    }) : null, (0, r.jsx)(o.d, {
+    }) : null, (0, r.jsx)(a.d, {
       wrapperClassName: u.select,
       maxVisibleItems: d,
       placeholder: c.intl.string(c.t.oM4E1A),
@@ -44,7 +44,7 @@ function f(e) {
       onChange: f,
       isDisabled: _,
       value: n
-    }), (0, r.jsx)(a.x, {
+    }), (0, r.jsx)(o.x, {
       variant: "text-xs/medium",
       color: "text-default",
       className: u.label,

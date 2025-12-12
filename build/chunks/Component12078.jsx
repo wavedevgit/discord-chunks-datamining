@@ -1,13 +1,13 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 12078, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => O
 }), require("./35282.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -20,35 +20,35 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk570911 = require("./570911.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk257699 = require("./257699.js");
+  Chunk453921 = require("./453921.js");
 
-function v(e) {
+function _(e) {
   let {
     profile: t,
     canManageGuild: n,
     handleClick: i,
     hasCustomBanner: l
-  } = e, s = (0, d.nv)(), u = (0, d.qw)({
+  } = e, a = (0, u.nv)(), d = (0, u.qw)({
     profile: t,
-    defaultColor: s.hex(),
+    defaultColor: a.hex(),
     forceDefaultColor: false
   });
   return (0, r.jsx)(o.u, {
     asContainer: true,
-    text: x.intl.string(x.t.W4Nd7Q),
+    text: b.intl.string(b.t.W4Nd7Q),
     children: (0, r.jsx)(c.P3F, {
       "aria-disabled": !n,
       tabIndex: n ? 0 : false,
-      "aria-label": x.intl.string(x.t.W4Nd7Q),
+      "aria-label": b.intl.string(b.t.W4Nd7Q),
       onClick: n ? i : true,
       style: {
-        background: (0, d.dG)(u)
+        background: (0, u.dG)(d)
       },
-      className: a()(j.itemContainer, {
+      className: s()(j.itemContainer, {
         [j.disabled]: !n
       }),
       children: (0, r.jsx)("div", {
-        className: a()({
+        className: s()({
           [j.itemSelected]: !l && null == t.brandColorPrimary
         })
       })
@@ -56,25 +56,25 @@ function v(e) {
   })
 }
 
-function O(e) {
+function v(e) {
   let {
     isDiscoverable: t,
     profile: n,
     onCustomBannerChange: l,
-    canManageGuild: s
-  } = e, o = null != n.customBanner, d = i.useMemo(() => {
+    canManageGuild: a
+  } = e, o = null != n.customBanner, u = i.useMemo(() => {
     if (null == n.customBanner) return null;
     let e = n.customBanner;
-    return f.ff.test(e) ? e : f.ZP.getGuildDiscoverySplashURL({
+    return m.ff.test(e) ? e : m.ZP.getGuildDiscoverySplashURL({
       id: n.id,
       splash: n.customBanner,
-      size: 300 * (0, m.Z)()
+      size: 300 * (0, p.Z)()
     })
   }, [n]);
   if (!t) return null;
-  let g = null != d ? (0, r.jsx)("img", {
+  let g = null != u ? (0, r.jsx)("img", {
     className: j.uploadedImage,
-    src: d,
+    src: u,
     alt: "",
     "aria-hidden": true
   }) : (0, r.jsx)(c.dZu, {
@@ -85,12 +85,12 @@ function O(e) {
     children: (0, r.jsx)(c.tEY, {
       within: true,
       children: (0, r.jsx)("div", {
-        className: a()(j.uploadItemWrapper, {
+        className: s()(j.uploadItemWrapper, {
           [j.uploadItemSelected]: o
         }),
         children: (0, r.jsxs)("div", {
-          className: a()(j.uploadItem, {
-            [j.disabled]: !s
+          className: s()(j.uploadItem, {
+            [j.disabled]: !a
           }),
           children: [g, (0, r.jsx)("div", {
             className: j.overlay
@@ -100,11 +100,11 @@ function O(e) {
             width: 20,
             height: 20,
             color: "white"
-          }), (0, r.jsx)(u.ZP, {
+          }), (0, r.jsx)(d.ZP, {
             multiple: false,
             tabIndex: 0,
             onChange: l,
-            disabled: !s
+            disabled: !a
           })]
         })
       })
@@ -112,28 +112,28 @@ function O(e) {
   })
 }
 
-function C(e) {
+function O(e) {
   var t;
   let {
     profile: n,
     onCustomBannerChange: l,
-    canManageGuild: u
-  } = e, f = (0, s.e7)([g.Z], () => g.Z.getGuild(n.id)), m = null != (t = null == f ? true : f.features.has(p.GuildFeatures.DISCOVERABLE)) && t, C = n.id, y = i.useCallback(e => () => {
-    b.Z.updateGuildProfile(C, {
+    canManageGuild: d
+  } = e, m = (0, a.e7)([g.Z], () => g.Z.getGuild(n.id)), p = null != (t = null == m ? true : m.features.has(h.GuildFeatures.DISCOVERABLE)) && t, O = n.id, C = i.useCallback(e => () => {
+    f.Z.updateGuildProfile(O, {
       brandColorPrimary: e,
       customBanner: null
     })
-  }, [C]), N = i.useCallback(e => (!m || null == n.customBanner) && e === n.brandColorPrimary, [n, m]);
+  }, [O]), y = i.useCallback(e => (!p || null == n.customBanner) && e === n.brandColorPrimary, [n, p]);
   return (0, r.jsx)(c.gNt, {
-    label: x.intl.string(x.t.BSVog8),
+    label: b.intl.string(b.t.BSVog8),
     children: (0, r.jsxs)("div", {
       className: j.grid,
-      children: [(0, r.jsx)(v, {
+      children: [(0, r.jsx)(_, {
         profile: n,
-        canManageGuild: u,
-        handleClick: y(null),
-        hasCustomBanner: m && null != n.customBanner
-      }), h.cb.map(e => {
+        canManageGuild: d,
+        handleClick: C(null),
+        hasCustomBanner: p && null != n.customBanner
+      }), x.cb.map(e => {
         let {
           name: t,
           color: n
@@ -142,26 +142,26 @@ function C(e) {
           asContainer: true,
           __unsupportedReactNodeAsText: t,
           children: (0, r.jsx)(c.P3F, {
-            "aria-disabled": !u,
-            tabIndex: u ? 0 : false,
+            "aria-disabled": !d,
+            tabIndex: d ? 0 : false,
             "aria-label": t,
-            onClick: u ? y(n) : true,
+            onClick: d ? C(n) : true,
             style: {
-              background: (0, d.dG)(n)
+              background: (0, u.dG)(n)
             },
-            className: a()(j.itemContainer, {
-              [j.disabled]: !u
+            className: s()(j.itemContainer, {
+              [j.disabled]: !d
             }),
             children: (0, r.jsx)("div", {
-              className: a()({
-                [j.itemSelected]: N(n)
+              className: s()({
+                [j.itemSelected]: y(n)
               })
             })
           })
         }, t)
-      }), (0, r.jsx)(O, {
-        canManageGuild: u,
-        isDiscoverable: m,
+      }), (0, r.jsx)(v, {
+        canManageGuild: d,
+        isDiscoverable: p,
         profile: n,
         onCustomBannerChange: l
       })]

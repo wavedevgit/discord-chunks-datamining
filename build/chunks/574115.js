@@ -17,7 +17,7 @@ function p(e, t) {
 }
 module.exports = function(e, t) {
   true !== e._pendingStateFromBeforeInput && (e.update(e._pendingStateFromBeforeInput), e._pendingStateFromBeforeInput = true);
-  var n, o, c, _, m = e.editor.ownerDocument.defaultView.getSelection(),
+  var n, a, c, _, m = e.editor.ownerDocument.defaultView.getSelection(),
     h = m.anchorNode,
     g = m.isCollapsed;
   if ((null == h ? true : h.nodeType) === Node.TEXT_NODE || (null == h ? true : h.nodeType) === Node.ELEMENT_NODE) {
@@ -59,18 +59,18 @@ module.exports = function(e, t) {
       Z = "MUTABLE" === G,
       F = Z ? "spellcheck-change" : "apply-entity",
       B = r.replaceText(R, M, y, w.getInlineStyleAt(N), Z ? w.getEntityAt(N) : null);
-    if (d) n = m.anchorOffset, _ = (c = N + Math.min(n, o = m.focusOffset)) + Math.abs(n - o), n = c, o = _;
+    if (d) n = m.anchorOffset, _ = (c = N + Math.min(n, a = m.focusOffset)) + Math.abs(n - a), n = c, a = _;
     else {
       var V = y.length - D.length;
-      c = j.getStartOffset(), _ = j.getEndOffset(), n = g ? _ + V : c, o = _ + V
+      c = j.getStartOffset(), _ = j.getEndOffset(), n = g ? _ + V : c, a = _ + V
     }
     var H = B.merge({
       selectionBefore: R.getSelectionAfter(),
       selectionAfter: j.merge({
         anchorOffset: n,
-        focusOffset: o
+        focusOffset: a
       })
     });
-    e.update(a.push(O, H, F))
+    e.update(o.push(O, H, F))
   }
 }

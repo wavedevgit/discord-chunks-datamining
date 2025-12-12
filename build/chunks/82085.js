@@ -13,6 +13,6 @@ let s = {
     let {
       guild: t
     } = e;
-    null != t && (null != i.Z.getGuild(t.id) ? (0, r.uL)(o.Z5c.CHANNEL(t.id)) : (0, a.Z)(e.code))
+    null != t && (null != i.Z.getGuild(t.id) ? (0, r.uL)(a.Z5c.CHANNEL(t.id)) : (0, o.Z)(e.code))
   }
 }

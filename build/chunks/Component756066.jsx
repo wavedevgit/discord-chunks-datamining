@@ -1,36 +1,36 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 756066, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => s
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function s(e) {
   let t, {
     resubmittingEnableRequest: n,
-    resubmissionError: a,
-    createEnableRequest: s,
+    resubmissionError: s,
+    createEnableRequest: a,
     requestRejectedNoticeText: o,
     reapplyNoticeText: c,
-    isApplicationPending: d
+    isApplicationPending: u
   } = e;
-  if (null != a) return (0, r.jsx)(i.M14, {
+  if (null != s) return (0, r.jsx)(i.M14, {
     type: "critical",
-    children: a.getAnyErrorMessage()
+    children: s.getAnyErrorMessage()
   });
-  let u = null;
-  return d ? u = l.intl.string(l.t.OrkTBn) : null != o ? u = o : null != c && (u = c, t = l.intl.string(l.t["YKw/NQ"])), null != u ? (0, r.jsx)(i.Wn, {
+  let d = null;
+  return u ? d = l.intl.string(l.t.OrkTBn) : null != o ? d = o : null != c && (d = c, t = l.intl.string(l.t["YKw/NQ"])), null != d ? (0, r.jsx)(i.Wn, {
     messageType: i.QYI.WARNING,
     action: (0, r.jsx)(i.zxk, {
       variant: "overlay-secondary",
       text: t,
-      onClick: s,
+      onClick: a,
       loading: n
     }),
-    children: u
+    children: d
   }) : null
 }

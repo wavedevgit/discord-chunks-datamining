@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk502577 = require("./502577.js");
+  Chunk658855 = require("./658855.js");
 
 function u(t) {
   let {
@@ -16,7 +16,7 @@ function u(t) {
     onClose: n,
     guildName: u,
     transitionState: c
-  } = t, [f, d] = i.useState(""), [m, p] = i.useState(null), x = i.useMemo(() => [{
+  } = t, [d, f] = i.useState(""), [m, p] = i.useState(null), x = i.useMemo(() => [{
     text: l.intl.string(l.t["ETE/oC"]),
     onClick: n,
     variant: "secondary"
@@ -27,10 +27,10 @@ function u(t) {
   }], [n]);
   return (0, r.jsx)("form", {
     onSubmit: function(t) {
-      if (t.preventDefault(), f.toLowerCase() !== u.toLowerCase()) return void p(l.intl.string(l.t["c2/DS/"]));
+      if (t.preventDefault(), d.toLowerCase() !== u.toLowerCase()) return void p(l.intl.string(l.t["c2/DS/"]));
       null == e || e(), n()
     },
-    children: (0, r.jsxs)(a.u_l, {
+    children: (0, r.jsxs)(o.u_l, {
       title: l.intl.formatToPlainString(l.t.us7mC1, {
         name: u
       }),
@@ -40,15 +40,15 @@ function u(t) {
       actions: x,
       onClose: n,
       transitionState: c,
-      children: [(0, r.jsx)(o.oil, {
+      children: [(0, r.jsx)(a.oil, {
         id: "text-entry-confirm",
         type: "text",
         label: l.intl.string(l.t.abprOC),
-        value: f,
+        value: d,
         autoComplete: "off",
-        onChange: d,
+        onChange: f,
         autoFocus: true
-      }), null != m && "" !== m ? (0, r.jsx)(o.Text, {
+      }), null != m && "" !== m ? (0, r.jsx)(a.Text, {
         color: "text-feedback-critical",
         variant: "text-xs/normal",
         className: s.error,

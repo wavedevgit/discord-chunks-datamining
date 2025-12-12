@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk370210 = require("./370210.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk323407 = require("./323407.js");
+  Chunk923289 = require("./923289.js");
 
 function E(e) {
   let {
@@ -29,10 +29,10 @@ function E(e) {
     return null != (e = d.Z.getGuildId()) ? e : true
   }), [v, S] = i.useState(false), I = i.useCallback(e => {
     e && S(true)
-  }, []), T = (0, a.O)(I), C = i.useCallback(() => {
+  }, []), T = (0, o.O)(I), C = i.useCallback(() => {
     f.default.track(m.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: t,
-      device_platform: o.tq ? "mobile_web" : "desktop_web",
+      device_platform: a.tq ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
       guild_id: O,
       channel_id: n.channel_id
@@ -44,7 +44,7 @@ function E(e) {
     v && y === _.M.FETCHED && C()
   }, [v, y, C]), i.useEffect(() => {
     v && b && f.default.track(m.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
-      device_platform: o.tq ? "mobile_web" : "desktop_web",
+      device_platform: a.tq ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
       guild_id: O,
       channel_id: n.channel_id

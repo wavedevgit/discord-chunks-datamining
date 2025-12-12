@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk372129 = require("./372129.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk295406 = require("./295406.js");
+  Chunk144291 = require("./144291.js");
 
 function d(e) {
   let {
@@ -21,7 +21,7 @@ function d(e) {
     null == (e = n.current) || e.activateUploadDialogue()
   }, E = i.useCallback(async (e, n, r) => {
     var i;
-    m(true), await (0, o.i)({
+    m(true), await (0, a.i)({
       userImage: {
         data: e,
         file: n,
@@ -35,7 +35,7 @@ function d(e) {
     }), d.current += 1, m(false)
   }, [t]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(a.Button, {
+    children: [(0, r.jsx)(o.Button, {
       text: c.intl.string(c.t.iMJO37),
       variant: "secondary",
       onClick: g,

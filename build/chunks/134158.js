@@ -15,22 +15,22 @@ function i(e) {
   return "row" === e.type
 }
 require.d(exports, {
-  Z: () => o,
+  Z: () => a,
   o: () => i
 }), require("./539854.js");
-class a {
+class o {
   mergeProps(e) {
     let {
       sectionHeight: t,
       rowHeight: n,
       footerHeight: r,
       listHeaderHeight: i,
-      paddingTop: a,
-      paddingBottom: o,
+      paddingTop: o,
+      paddingBottom: a,
       sections: s,
       getAnchorId: l
     } = e;
-    this.sections = s, this.sectionHeight = t, this.rowHeight = n, this.footerHeight = r, this.listHeaderHeight = i, this.uniform = "number" == typeof n, this.paddingTop = a, this.paddingBottom = o, this.getAnchorId = null != l ? l : this.getAnchorId
+    this.sections = s, this.sectionHeight = t, this.rowHeight = n, this.footerHeight = r, this.listHeaderHeight = i, this.uniform = "number" == typeof n, this.paddingTop = o, this.paddingBottom = a, this.getAnchorId = null != l ? l : this.getAnchorId
   }
   getHeight() {
     let e = this.paddingTop + this.getListHeaderHeight(),
@@ -73,10 +73,10 @@ class a {
     let n = this.paddingTop,
       r = n,
       i = n,
-      a = 0,
       o = 0,
+      a = 0,
       s = [],
-      l = a => (i = n, (n += a) < e) ? (r += a, false) : !(i > t);
+      l = o => (i = n, (n += o) < e) ? (r += o, false) : !(i > t);
     l(this.getListHeaderHeight()) && s.push({
       type: "header",
       section: false,
@@ -88,30 +88,30 @@ class a {
         if (l(this.getHeightForSection(e)) && s.push({
             type: "section",
             section: e,
-            listIndex: o,
+            listIndex: a,
             offsetTop: i,
             anchorId: this.getAnchorId(e)
-          }), o += 1, this.uniform) {
+          }), a += 1, this.uniform) {
           let n = this.getHeightForRow(e, 0);
           for (let r = 0; r < t; r++) l(n) && s.push({
             type: "row",
             section: e,
-            listIndex: o,
+            listIndex: a,
             row: r,
-            rowIndex: a,
+            rowIndex: o,
             offsetTop: i,
             anchorId: this.getAnchorId(e, r)
-          }), a += 1, o += 1
+          }), o += 1, a += 1
         } else
           for (let n = 0; n < t; n++) l(this.getHeightForRow(e, n)) && s.push({
             type: "row",
             section: e,
-            listIndex: o,
+            listIndex: a,
             row: n,
-            rowIndex: a,
+            rowIndex: o,
             offsetTop: i,
             anchorId: this.getAnchorId(e, n)
-          }), a += 1, o += 1;
+          }), o += 1, a += 1;
         l(this.getHeightForFooter(e)) && s.push({
           type: "footer",
           section: e,
@@ -128,11 +128,11 @@ class a {
   computeScrollPosition(e, t) {
     let {
       paddingTop: n
-    } = this, r = n + this.getListHeaderHeight(), i = 0, a = false;
+    } = this, r = n + this.getListHeaderHeight(), i = 0, o = false;
     for (; i <= e;) {
       let n = this.sections[i];
       if (i === e && null == t) {
-        a = true;
+        o = true;
         break
       }
       if (0 === n) {
@@ -140,16 +140,16 @@ class a {
         continue
       }
       if (r += this.getHeightForSection(i), this.uniform) {
-        let o = this.getHeightForRow(i, 0);
-        i === e && null != t ? (r += o * t, a = true) : r += o * n
+        let a = this.getHeightForRow(i, 0);
+        i === e && null != t ? (r += a * t, o = true) : r += a * n
       } else
-        for (let o = 0; o < n; o++)
-          if (i < e || i === e && null != t && o < t) r += this.getHeightForRow(i, o);
-          else if (i === e && null != t && o === t) {
-        a = true;
+        for (let a = 0; a < n; a++)
+          if (i < e || i === e && null != t && a < t) r += this.getHeightForRow(i, a);
+          else if (i === e && null != t && a === t) {
+        o = true;
         break
       }
-      a || (r += this.getHeightForFooter(i)), i += 1
+      o || (r += this.getHeightForFooter(i)), i += 1
     }
     return [r, null != t ? this.getHeightForRow(e, t) : this.getHeightForSection(i)]
   }
@@ -157,4 +157,4 @@ class a {
     r(this, "sectionHeight", 0), r(this, "rowHeight", 0), r(this, "footerHeight", 0), r(this, "listHeaderHeight", 0), r(this, "uniform", false), r(this, "paddingBottom", 0), r(this, "paddingTop", 0), r(this, "sections", []), r(this, "getAnchorId", () => true)
   }
 }
-let o = a
+let a = o

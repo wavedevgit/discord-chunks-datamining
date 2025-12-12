@@ -12,8 +12,8 @@ Chunk98405({
   proto: true
 }, {
   flatMap: function(e) {
-    var t, n = o(this),
+    var t, n = a(this),
       r = s(n);
-    return a(e), (t = l(n, 0)).length = i(t, n, n, r, 0, 1, e, arguments.length > 1 ? arguments[1] : true), t
+    return o(e), (t = l(n, 0)).length = i(t, n, n, r, 0, 1, e, arguments.length > 1 ? arguments[1] : true), t
   }
 })

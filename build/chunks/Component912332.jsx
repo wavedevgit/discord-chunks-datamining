@@ -12,7 +12,7 @@ require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk822869 = require("./822869.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,7 +28,7 @@ function s(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      o(e, t, n[t])
+      a(e, t, n[t])
     })
   }
   return e
@@ -55,23 +55,23 @@ let u = "forward-modal";
 function d(e) {
   let {
     message: t,
-    source: o,
+    source: a,
     initialSelectedDestinations: l = [],
     forwardOptions: d,
     onRequestSent: f,
     customSendHandler: p
   } = e;
-  (0, a.Lb)(t.channel_id, t.id, o), (0, i.ZDy)(async () => {
+  (0, o.Lb)(t.channel_id, t.id, a), (0, i.ZDy)(async () => {
     let {
       ForwardModal: e
-    } = await Promise.all([n.e("36653"), n.e("33648"), n.e("72559")]).then(n.bind(n, 930864));
+    } = await Promise.all([n.e("36653"), n.e("33648"), n.e("48533")]).then(n.bind(n, 930864));
     return n => (0, r.jsx)(e, c(s({}, n), {
       message: t,
       initialSelectedDestinations: l,
       forwardOptions: d,
       onRequestSent: f,
       customSendHandler: p,
-      source: o
+      source: a
     }))
   }, {
     modalKey: u
@@ -85,8 +85,8 @@ function f() {
 function p(e) {
   let {
     message: t,
-    failedDestinations: a,
-    forwardOptions: o
+    failedDestinations: o,
+    forwardOptions: a
   } = e;
   (0, i.ZDy)(async () => {
     let {
@@ -94,8 +94,8 @@ function p(e) {
     } = await n.e("86590").then(n.bind(n, 384331));
     return n => (0, r.jsx)(e, c(s({}, n), {
       message: t,
-      failedDestinations: a,
-      forwardOptions: o
+      failedDestinations: o,
+      forwardOptions: a
     }))
   })
 }

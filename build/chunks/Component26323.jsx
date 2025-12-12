@@ -38,8 +38,8 @@ function d(e, t) {
   if (null == e) return {};
   var n, r, i = f(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -47,8 +47,8 @@ function d(e, t) {
 function f(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -67,8 +67,8 @@ function p(e, t) {
   });
   let {
     openInPopoutEnabled: p
-  } = e, _ = d(e, ["openInPopoutEnabled"]), m = a.Z.getWindowOpen(l.KJ3.CHANNEL_CALL_POPOUT) && null != p && p;
-  m && (0, o.Z)(l.KJ3.CHANNEL_CALL_POPOUT);
+  } = e, _ = d(e, ["openInPopoutEnabled"]), m = o.Z.getWindowOpen(l.KJ3.CHANNEL_CALL_POPOUT) && null != p && p;
+  m && (0, a.Z)(l.KJ3.CHANNEL_CALL_POPOUT);
   let h = m ? i.u1M : i.z1l;
   (0, i.ZDy)(async () => {
     let {

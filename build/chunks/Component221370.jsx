@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk657707 = require("./657707.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk452379 = require("./452379.js");
+  Chunk226788 = require("./226788.js");
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -31,9 +31,9 @@ function m(e) {
   }
   return e
 }
-let f = [Chunk758713.z.DESKTOP, Chunk758713.z.XBOX, Chunk758713.z.PLAYSTATION, Chunk758713.z.NINTENDO];
+let g = [Chunk758713.z.DESKTOP, Chunk758713.z.XBOX, Chunk758713.z.PLAYSTATION, Chunk758713.z.NINTENDO];
 
-function g(e) {
+function f(e) {
   var {
     platform: t
   } = e, n = function(e, t) {
@@ -97,7 +97,7 @@ function p(e) {
             return null
         }
       }(e),
-      children: (0, a.jsx)(g, {
+      children: (0, a.jsx)(f, {
         platform: e
       })
     }, e))
@@ -111,7 +111,7 @@ function x(e) {
   } = e, r = i.useMemo(() => {
     let e = new Set(t.platforms),
       n = [...e];
-    return !e.has(o.z.DESKTOP) && (e.has(o.z.MACOS) || e.has(o.z.LINUX)) && n.push(o.z.DESKTOP), n.filter(e => f.includes(e))
+    return !e.has(o.z.DESKTOP) && (e.has(o.z.MACOS) || e.has(o.z.LINUX)) && n.push(o.z.DESKTOP), n.filter(e => g.includes(e))
   }, [t.platforms]);
   return 0 === r.length ? null : (0, a.jsx)("div", {
     className: l()(u.column, u.gapLg, n),

@@ -19,7 +19,7 @@ module.exports = function(e) {
         }]
       }
     },
-    a = [i, {
+    o = [i, {
       begin: "\\n\\n",
       starts: {
         subLanguage: [],
@@ -43,7 +43,7 @@ module.exports = function(e) {
       starts: {
         end: /\b\B/,
         illegal: /\S/,
-        contains: a
+        contains: o
       }
     }, {
       begin: "(?=^[A-Z]+ (.*?) " + n + "$)",
@@ -64,7 +64,7 @@ module.exports = function(e) {
       starts: {
         end: /\b\B/,
         illegal: /\S/,
-        contains: a
+        contains: o
       }
     }, e.inherit(i, {
       relevance: 0

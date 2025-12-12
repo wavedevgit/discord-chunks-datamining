@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk834129 = require("./834129.jsx"),
@@ -19,12 +19,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk115610 = require("./115610.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk507559 = require("./507559.js");
+  Chunk38297 = require("./38297.js");
 
 function b(e) {
   let {
     message: t,
-    channel: a,
+    channel: o,
     compact: b
   } = e, y = (0, s.Wu)([d.Z], () => Array.from(d.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [O, v] = i.useState(null);
   return (i.useEffect(() => {
@@ -32,19 +32,19 @@ function b(e) {
       y.length > 0 && v(y[Math.floor(Math.random() * y.length)])
     }, 500);
     return () => clearInterval(e)
-  }, [y]), null == a.guild_id) ? null : (0, r.jsxs)("div", {
+  }, [y]), null == o.guild_id) ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(c.Z, {
-      className: o()(E.mainContainer, {
+      className: a()(E.mainContainer, {
         [E.compact]: b
       }),
       icon: n(570111),
       compact: b,
       children: (0, r.jsx)("div", {
-        className: o()({
+        className: a()({
           [E.compact]: b
         }),
         children: (0, r.jsx)("div", {
-          className: o()({
+          className: a()({
             [E.compact]: b
           }),
           children: "" !== t.content ? t.content : g.intl.string(g.t.wnn1Dc)
@@ -58,14 +58,14 @@ function b(e) {
         onClick: () => {
           p.default.track(h.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
             message_id: t.id,
-            channel_id: a.id,
-            guild_id: a.guild_id,
+            channel_id: o.id,
+            guild_id: o.guild_id,
             action_type: "upload_file"
           }), _.S.dispatch(h.CkL.UPLOAD_FILE, {
-            channelId: a.id
+            channelId: o.id
           }), (0, u.fE)({
             message: t,
-            channel: a,
+            channel: o,
             shouldMention: true
           })
         }
@@ -80,10 +80,10 @@ function b(e) {
         onClick: () => {
           p.default.track(h.rMx.CHANNEL_PROMPT_ACTION_CLICKED, {
             message_id: t.id,
-            channel_id: a.id,
-            guild_id: a.guild_id,
+            channel_id: o.id,
+            guild_id: o.guild_id,
             action_type: "sticker"
-          }), (0, m.O)(t.id, a)
+          }), (0, m.O)(t.id, o)
         }
       })]
     })]

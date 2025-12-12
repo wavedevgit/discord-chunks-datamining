@@ -40,7 +40,7 @@ function v(e) {
     botUserId: null == S || null == (n = S.bot) ? true : n.id
   }), R = null != S && (0, l.ye)(S), w = null != N && R && P, {
     analyticsLocations: D
-  } = (0, o.ZP)(a.Z.ACTIVITY_CUSTOM_LINK), x = (0, i.e7)([m.Z], () => m.Z.getChannelId()), L = (0, y.KF)(x), j = (0, i.e7)([E.ZP], () => {
+  } = (0, a.ZP)(o.Z.ACTIVITY_CUSTOM_LINK), x = (0, i.e7)([m.Z], () => m.Z.getChannelId()), L = (0, y.KF)(x), j = (0, i.e7)([E.ZP], () => {
     if (null == x) return;
     let e = E.ZP.getEmbeddedActivitiesForChannel(x).filter(e => e.applicationId === S.id);
     return e.length > 0 ? e[0].compositeInstanceId : true

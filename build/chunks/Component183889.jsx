@@ -8,25 +8,25 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk708888 = require("./708888.js");
+  Chunk248813 = require("./248813.js");
 let s = e => {
   let {
     error: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.bar,
+    className: a.bar,
     children: [(0, r.jsx)(i.Text, {
       variant: "text-xs/bold",
       color: "text-strong",
-      children: a.intl.string(a.t["4VDCG0"])
+      children: o.intl.string(o.t["4VDCG0"])
     }), t ? (0, r.jsx)(i.Text, {
       variant: "text-xs/medium",
-      className: o.error,
-      children: a.intl.string(a.t.qNorwt)
+      className: a.error,
+      children: o.intl.string(o.t.qNorwt)
     }) : (0, r.jsx)(i.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
-      children: a.intl.string(a.t["260qZS"])
+      children: o.intl.string(o.t["260qZS"])
     })]
   })
 }

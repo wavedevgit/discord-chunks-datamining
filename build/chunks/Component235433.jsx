@@ -21,8 +21,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk324243 = require("./324243.js"),
-  Chunk399477 = require("./399477.js");
+  Chunk486730 = require("./486730.js"),
+  Chunk147164 = require("./147164.js");
 
 function v(e) {
   let {
@@ -39,8 +39,8 @@ function v(e) {
     pendingDisplayNameStyles: N,
     pendingErrors: P
   } = (0, m.mD)(t, n), R = [];
-  S && R.push(a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
-  let [w, D] = (0, c.US)(R), x = w === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, L = (0, i.useCallback)(() => {
+  S && R.push(o.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
+  let [w, D] = (0, c.US)(R), x = w === o.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, L = (0, i.useCallback)(() => {
     D(E.L.TAKE_ACTION), p.default.track(g.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.I)({
       analyticsLocations: T,
       guildId: n
@@ -54,7 +54,7 @@ function v(e) {
   let U = true !== N ? N : A;
   return (0, r.jsx)(h.Z, {
     title: b.intl.string(y.default["86GtGH"]),
-    titleIcon: x ? (0, r.jsx)(o.IGR, {
+    titleIcon: x ? (0, r.jsx)(a.IGR, {
       text: b.intl.string(b.t.y2b7CA),
       className: O.newBadge
     }) : true,
@@ -63,17 +63,17 @@ function v(e) {
     errors: P,
     children: (0, r.jsxs)("div", {
       className: O.buttonsContainer,
-      children: [S && (0, r.jsx)(o.Button, {
+      children: [S && (0, r.jsx)(a.Button, {
         variant: "primary",
         size: "sm",
         text: b.intl.string(y.default.vJqrIg),
         onClick: L
-      }), null == n && k && (0, r.jsx)(o.Button, {
+      }), null == n && k && (0, r.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
         text: b.intl.string(y.default.ymq8WQ),
         onClick: j
-      }), null != n && null != U && (0, r.jsx)(o.Button, {
+      }), null != n && null != U && (0, r.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
         text: b.intl.string(y.default["j/KRxc"]),

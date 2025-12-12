@@ -33,8 +33,8 @@ function l(e) {
 }
 
 function c(e) {
-  a.default.track(o.rMx.OPEN_MODAL, {
-    type: o.jXE.STICKER_PREMIUM_TIER_2_UPSELL_MODAL,
+  o.default.track(a.rMx.OPEN_MODAL, {
+    type: a.jXE.STICKER_PREMIUM_TIER_2_UPSELL_MODAL,
     location: e
   }), (0, i.ZDy)(async () => {
     let {

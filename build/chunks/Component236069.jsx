@@ -62,8 +62,8 @@ function y(e, t) {
   if (null == e) return {};
   var n, r, i = O(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -71,8 +71,8 @@ function y(e, t) {
 function O(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
@@ -80,13 +80,13 @@ function v(e) {
   let {
     guildId: t,
     analyticsLocations: n
-  } = e, [i, o] = (0, f.ww)({
+  } = e, [i, a] = (0, f.ww)({
     guildId: t,
     analyticsLocations: n
-  }), s = o ? m.intl.string(m.t["6ndMcq"]) : m.intl.string(m.t["0eiu6J"]), l = o ? m.intl.string(m.t.S09nw4) : m.intl.string(m.t.tEttXd);
-  return (0, r.jsxs)(a.qXd, {
-    color: a.DM8.DANGER,
-    children: [s, (0, r.jsx)(a.EyT, {
+  }), s = a ? m.intl.string(m.t["6ndMcq"]) : m.intl.string(m.t["0eiu6J"]), l = a ? m.intl.string(m.t.S09nw4) : m.intl.string(m.t.tEttXd);
+  return (0, r.jsxs)(o.qXd, {
+    color: o.DM8.DANGER,
+    children: [s, (0, r.jsx)(o.EyT, {
       onClick: i,
       children: l
     })]
@@ -111,15 +111,15 @@ function I(e) {
     analyticsLocations: t
   } = e, n = y(e, ["analyticsLocations"]);
   let {
-    analyticsLocations: a
-  } = (0, s.ZP)(t, o.Z.AUTOMOD_NAGBAR_NOTICE), l = (0, i.e7)([c.default, u.ZP], () => {
+    analyticsLocations: o
+  } = (0, s.ZP)(t, a.Z.AUTOMOD_NAGBAR_NOTICE), l = (0, i.e7)([c.default, u.ZP], () => {
     if (null == n.guildId) return new Set;
     let e = c.default.getId();
     return (0, d.no)(u.ZP.getMember(n.guildId, e))
   }, [n.guildId]);
   return l.has(p.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || l.has(p.q.AUTOMOD_QUARANTINED_BIO) ? (0, r.jsx)(v, b(g({}, n), {
-    analyticsLocations: a
+    analyticsLocations: o
   })) : l.has(p.q.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, r.jsx)(S, {}) : (0, r.jsx)(v, b(g({}, n), {
-    analyticsLocations: a
+    analyticsLocations: o
   }))
 }

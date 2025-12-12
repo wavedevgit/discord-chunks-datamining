@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 746916, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => c
@@ -12,13 +12,13 @@ var Chunk442837 = require("./442837.js"),
 
 function c(e) {
   let t = null == e ? true : e.features.has(s.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL),
-    n = (0, r.e7)([o.Z, l.default, i.ZP], () => {
+    n = (0, r.e7)([a.Z, l.default, i.ZP], () => {
       if (null == e) return;
-      let t = o.Z.getRequest(e.id),
+      let t = a.Z.getRequest(e.id),
         n = l.default.getCurrentUser();
       if (null == n || null == t || t.userId !== n.id) return;
       let r = i.ZP.getMember(e.id, t.userId);
-      if (!(null != r && !r.isPending) || (0, a.oP)(t)) return t.applicationStatus
+      if (!(null != r && !r.isPending) || (0, o.oP)(t)) return t.applicationStatus
     }, [e]);
   return t ? n : true
 }

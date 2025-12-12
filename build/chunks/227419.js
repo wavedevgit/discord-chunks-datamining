@@ -101,7 +101,7 @@ let g = [...i()(Chunk981631.nkL).values().map(e => ({
       _ = null != (r = null == (n = e.find(e => "silent" === e.name)) ? true : n.value) && r;
     async function h() {
       if (null != i) try {
-        await o.Z.closePrivateChannel(i.id, true, _)
+        await a.Z.closePrivateChannel(i.id, true, _)
       } catch (e) {
         s.Z.sendBotMessage(i.id, m.intl.string(m.t["YOsuT/"]))
       }
@@ -110,7 +110,7 @@ let g = [...i()(Chunk981631.nkL).values().map(e => ({
       name: l
     }), p = m.intl.format(m.t.IK1Qvs, {
       name: l
-    })), (0, a.Z)({
+    })), (0, o.Z)({
       title: f,
       subtitle: p,
       confirmText: m.intl.string(m.t["26C4oi"]),

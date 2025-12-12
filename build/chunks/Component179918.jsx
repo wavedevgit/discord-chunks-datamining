@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk63063 = require("./63063.js"),
   Chunk671728 = require("./671728.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk407367 = require("./407367.js");
+  Chunk671713 = require("./671713.js");
 let g = e => {
   let {
     componentId: t,
@@ -29,7 +29,7 @@ let g = e => {
     type: i.ImpressionTypes.VIEW,
     name: i.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
     properties: {
-      component_type: a.I.MARKETING_PAGE_BANNER,
+      component_type: o.I.MARKETING_PAGE_BANNER,
       component_id: t
     }
   });
@@ -74,7 +74,7 @@ let g = e => {
         size: "md",
         onClick: y,
         text: b.button.copy,
-        icon: o.SrA
+        icon: a.SrA
       })
     })]
   })

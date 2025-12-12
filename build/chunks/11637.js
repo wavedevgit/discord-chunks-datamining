@@ -15,16 +15,16 @@ var Chunk763296 = require("./763296.js"),
   Chunk981631 = require("./981631.js");
 let d = /^<sound:(\d+):(\d+)>/;
 
-function f(e, t, n, a, l) {
-  if (!o.zv.getCurrentConfig({
+function f(e, t, n, o, l) {
+  if (!a.zv.getCurrentConfig({
       location: "getSoundmojiASTFromString"
     }, {
       autoTrackExposure: false
     }).enabled) return;
-  let d = r.Z.getSoundById(a),
+  let d = r.Z.getSoundById(o),
     f = (0, c.Z)(d, e, t);
   if (null != n && null != t) {
-    let e = (0, s.Z)(t, n, a, l);
+    let e = (0, s.Z)(t, n, o, l);
     if (f && null == e) {
       let e = i.Z.getMessage(t, n);
       if ((null == e ? true : e.state) !== u.yb.SENT) return d
@@ -39,11 +39,11 @@ function p(e, t) {
   let r = e[1],
     i = e[2],
     {
-      guildId: o,
+      guildId: a,
       channelId: s,
       messageId: c
     } = t,
-    u = f(o, s, c, i, t.soundboardSounds);
+    u = f(a, s, c, i, t.soundboardSounds);
   if (null == u) return {
     type: "text",
     content: (0, l.Z)(r, i)
@@ -58,7 +58,7 @@ function p(e, t) {
     content: d,
     emojiId: null == u ? true : u.emojiId,
     emojiName: null == u ? true : u.emojiName,
-    emojiSrc: (null == u ? true : u.emojiId) != null ? (0, a.gT)({
+    emojiSrc: (null == u ? true : u.emojiId) != null ? (0, o.gT)({
       id: null == u ? true : u.emojiId,
       animated: false,
       size: 16

@@ -7,15 +7,15 @@ require.d(exports, {
 var Chunk592125 = require("./592125.js"),
   Chunk979651 = require("./979651.js"),
   Chunk574176 = require("./574176.js");
-let o = [null, null];
+let a = [null, null];
 
 function s(e, t) {
   var n, s;
-  if (null == t) return o;
+  if (null == t) return a;
   let l = null == (n = r.Z.getChannel(null == (s = i.Z.getVoiceStateForUser(e)) ? true : s.channelId)) ? true : n.guild_id,
     {
       defaultStatusVariant: c
-    } = (0, a.gx)({
+    } = (0, o.gx)({
       guildId: l,
       location: "parseHangStatus"
     }),

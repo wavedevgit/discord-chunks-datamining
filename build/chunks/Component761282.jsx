@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk261600 = require("./261600.jsx"),
   Chunk157925 = require("./157925.js"),
-  Chunk649519 = require("./649519.js");
+  Chunk84822 = require("./84822.js");
 let s = {
   [Chunk157925.gD]: new Chunk261600.U
 };
@@ -31,7 +31,7 @@ function c(e) {
   if ((null == i ? true : i.body) != null && (null == (t = i.shouldShow) ? true : t.call(i, e)) !== false) {
     let t = i.body;
     return (0, r.jsx)("section", {
-      className: o.section,
+      className: a.section,
       children: (0, r.jsx)(t, {
         activity: e
       })

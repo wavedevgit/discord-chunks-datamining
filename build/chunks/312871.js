@@ -2,26 +2,26 @@
 /** chunk id: 312871, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk473749 = require("./473749.js"),
   Chunk907331 = require("./907331.js");
 
-function a(e) {
+function o(e) {
   let {
     onVisible: t,
     threshold: n,
-    minTimeVisibleMs: a
-  } = e, o = r.useRef(false), s = r.useRef(null);
+    minTimeVisibleMs: o
+  } = e, a = r.useRef(false), s = r.useRef(null);
   r.useEffect(() => () => {
     null != s.current && (clearTimeout(s.current), s.current = null)
   }, []);
   let l = e => {
-    if (null == s.current || e || false !== o.current || (clearTimeout(s.current), s.current = null), !e || true === o.current) return;
+    if (null == s.current || e || false !== a.current || (clearTimeout(s.current), s.current = null), !e || true === a.current) return;
     let n = () => {
-      t(), o.current = true, s.current = null
+      t(), a.current = true, s.current = null
     };
-    null != a ? s.current = setTimeout(n, a) : n()
+    null != o ? s.current = setTimeout(n, o) : n()
   };
   return (0, i.O)(l, n)
 }

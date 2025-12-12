@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 674552, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Ne: () => d,
@@ -14,10 +14,10 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk246364 = require("./246364.js"),
   Chunk460562 = require("./460562.jsx"),
-  Chunk105303 = require("./105303.js");
+  Chunk816827 = require("./816827.js");
 
 function d(e, t, n) {
-  return (0, r.jsx)(o.mAB, {
+  return (0, r.jsx)(a.mAB, {
     count: e,
     color: t,
     "aria-hidden": n
@@ -28,7 +28,7 @@ function f() {
   return (0, Chunk54381.jsx)(Chunk481060.G2e, {
     icon: (0, Chunk481060.GSL)(Chunk460562.Z),
     disableColor: true,
-    className: Chunk105303.unavailableBadge
+    className: Chunk816827.unavailableBadge
   })
 }
 
@@ -38,18 +38,18 @@ function h(e) {
     video: r,
     screenshare: i,
     isCurrentUserConnected: l,
-    liveStage: a,
+    liveStage: o,
     activeEvent: s,
     activity: c
   } = e;
-  if (s) t = o.Que;
-  else if (a) t = o.ewx;
-  else if (i) t = o.pzj;
-  else if (r) t = o.Odl;
-  else if (n) t = o.gj8;
+  if (s) t = a.Que;
+  else if (o) t = a.ewx;
+  else if (i) t = a.pzj;
+  else if (r) t = a.Odl;
+  else if (n) t = a.gj8;
   else {
     if (!c) return null;
-    t = o.nG3
+    t = a.nG3
   }
   return g({
     icon: t,
@@ -63,13 +63,13 @@ function p(e) {
   } = e, [n, r] = function(e) {
     switch (e) {
       case s.wB.SUBMITTED:
-        return [true, o.T39];
+        return [true, a.T39];
       case s.wB.REJECTED:
-        return [a.Z.unsafe_rawColors.RED_400.css, o.Dio];
+        return [o.Z.unsafe_rawColors.RED_400.css, a.Dio];
       case s.wB.APPROVED:
-        return [a.Z.unsafe_rawColors.GREEN_360.css, o.dz2];
+        return [o.Z.unsafe_rawColors.GREEN_360.css, a.dz2];
       default:
-        return [true, o.vdY]
+        return [true, a.vdY]
     }
   }(t);
   return g({
@@ -84,7 +84,7 @@ function g(e) {
     color: n,
     isCurrentUserConnected: i
   } = e;
-  return (0, r.jsx)(o.G2e, function(e) {
+  return (0, r.jsx)(a.G2e, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

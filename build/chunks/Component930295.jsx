@@ -74,10 +74,10 @@ class A extends(r = Chunk473749.Component) {
     e.shouldShow, this.props.shouldShow;
     let n = this.shouldShowPopout(this.props, this.state);
     if ((this.shouldShowPopout(e, t) !== n || t.isLoading !== this.state.isLoading || e.ignoreModalClicks !== this.props.ignoreModalClicks) && (n ? this.setupShowPopout() : this.unsubscribe()), this.props.scrollBehavior !== e.scrollBehavior) {
-      var r, i, a, o;
+      var r, i, o, a;
       let e = this.getDomElement();
       if (null == e) return;
-      null == (r = e.ownerDocument) || r.removeEventListener("scroll", this.handleScroll, true), null == (i = e.ownerDocument) || i.removeEventListener("scroll", this.handleStickyScroll, true), "close" === this.props.scrollBehavior ? null == (a = e.ownerDocument) || a.addEventListener("scroll", this.handleScroll, true) : "sticky" === this.props.scrollBehavior && (null == (o = e.ownerDocument) || o.addEventListener("scroll", this.handleStickyScroll, true))
+      null == (r = e.ownerDocument) || r.removeEventListener("scroll", this.handleScroll, true), null == (i = e.ownerDocument) || i.removeEventListener("scroll", this.handleStickyScroll, true), "close" === this.props.scrollBehavior ? null == (o = e.ownerDocument) || o.addEventListener("scroll", this.handleScroll, true) : "sticky" === this.props.scrollBehavior && (null == (a = e.ownerDocument) || a.addEventListener("scroll", this.handleStickyScroll, true))
     }
   }
   getDomElement() {
@@ -99,7 +99,7 @@ class A extends(r = Chunk473749.Component) {
   }
   unsubscribe() {
     var e, t, n, r, i;
-    let a = this.domElementRef.current;
+    let o = this.domElementRef.current;
     null != Chunk473749 && (null == (t = Chunk473749.ownerDocument) || exports.removeEventListener("mousedown", this.handleDocumentMouseDown, true), null == (n = Chunk473749.ownerDocument) || require.removeEventListener("mouseup", this.handleDocumentMouseUp, true), null == (r = Chunk473749.ownerDocument) || r.removeEventListener("scroll", this.handleScroll, true), null == (i = Chunk473749.ownerDocument) || Chunk54381.removeEventListener("scroll", this.handleStickyScroll, true)), this.context.windowDispatch.unsubscribe(Chunk981631.CkL.POPOUT_CLOSE, this.handleEscapeClose), this.context.windowDispatch.unsubscribe(Chunk981631.CkL.POPOUT_CLOSE_AFTER_MODALS, this.handleEscapeClose), null == (e = this.resizeObserver) || module.disconnect()
   }
   componentWillUnmount() {
@@ -136,8 +136,8 @@ class A extends(r = Chunk473749.Component) {
       align: t,
       nudgeAlignIntoViewport: n,
       useRawTargetDimensions: r,
-      spacing: a,
-      offset: o,
+      spacing: o,
+      offset: a,
       autoInvert: s,
       fixed: l,
       positionKey: c,
@@ -179,7 +179,7 @@ class A extends(r = Chunk473749.Component) {
     })
   }
   constructor(...e) {
-    super(...e), O(this, "domElementRef", a.createRef()), O(this, "layerRef", a.createRef()), O(this, "popoutRef", a.createRef()), O(this, "resizeObserver", true), O(this, "popoutId", "popout_".concat(c()())), O(this, "loadingTimeout", new p.V7), O(this, "validClickTimeout", new p.V7), O(this, "isValidClickStart", false), O(this, "state", {
+    super(...e), O(this, "domElementRef", o.createRef()), O(this, "layerRef", o.createRef()), O(this, "popoutRef", o.createRef()), O(this, "resizeObserver", true), O(this, "popoutId", "popout_".concat(c()())), O(this, "loadingTimeout", new p.V7), O(this, "validClickTimeout", new p.V7), O(this, "isValidClickStart", false), O(this, "state", {
       renderedPosition: this.props.position,
       shouldShowPopout: false,
       shouldShowLoadingState: false,
@@ -222,8 +222,8 @@ class A extends(r = Chunk473749.Component) {
         onRequestClose: i
       } = this.props;
       if ((null == e ? true : e.shiftKey) && null != t) return void t(e);
-      let a = null != n;
-      (a ? n : this.state.shouldShowPopout) ? null == i || i(null == e ? true : e.nativeEvent, "user:explicit"): null == r || r(), a || this.setState(e => {
+      let o = null != n;
+      (o ? n : this.state.shouldShowPopout) ? null == i || i(null == e ? true : e.nativeEvent, "user:explicit"): null == r || r(), o || this.setState(e => {
         let {
           shouldShowPopout: t
         } = e;
@@ -300,9 +300,9 @@ O(A, "defaultProps", {
   closeOnClickOutside: true
 }), O(A, "contextType", Chunk728285.ZP);
 let N = e => {
-  var t, n, r, i, a, o;
+  var t, n, r, i, o, a;
   let s = e.getBoundingClientRect(),
-    l = null != (a = null == (n = e.ownerDocument) || null == (t = n.defaultView) ? true : t.innerHeight) ? a : 0,
-    c = null != (o = null == (i = e.ownerDocument) || null == (r = i.defaultView) ? true : r.innerWidth) ? o : 0;
+    l = null != (o = null == (n = e.ownerDocument) || null == (t = n.defaultView) ? true : t.innerHeight) ? o : 0,
+    c = null != (a = null == (i = e.ownerDocument) || null == (r = i.defaultView) ? true : r.innerWidth) ? a : 0;
   return s.top < l && s.bottom > 0 && s.left < c && s.right > 0
 }

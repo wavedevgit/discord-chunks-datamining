@@ -1,7 +1,7 @@
 /** Chunk was on 89675 **/
 /** chunk id: 146747, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => k
+  default: () => v
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,8 +16,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk678558 = require("./678558.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk261203 = require("./261203.js"),
-  Chunk478411 = require("./478411.js");
+  Chunk707435 = require("./707435.js"),
+  Chunk197571 = require("./197571.js");
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -47,13 +47,13 @@ function y(e) {
   } = e;
   return (0, n.jsxs)("div", {
     className: j.header,
-    children: [(0, n.jsx)(a.Heading, {
+    children: [(0, n.jsx)(s.Heading, {
       variant: "heading-xl/semibold",
       id: x,
       color: "text-strong",
       className: h.marginBottom8,
       children: t
-    }), (0, n.jsx)(a.Text, {
+    }), (0, n.jsx)(s.Text, {
       variant: "text-md/normal",
       className: j.subtitleText,
       children: r
@@ -65,18 +65,18 @@ let O = e => {
       onClose: t,
       perks: r,
       perkIntro: o = m.intl.string(m.t.Dr3GoS),
-      headerProps: s
+      headerProps: i
     } = e;
     return (0, n.jsxs)("div", {
       className: j.wrapper,
-      children: [(0, n.jsx)(a.olH, {
+      children: [(0, n.jsx)(s.olH, {
         "data-migration-pending": true,
         className: j.closeButton,
         onClick: () => {
           t()
         }
-      }), (0, n.jsx)(P, {
-        headerProps: s,
+      }), (0, n.jsx)(_, {
+        headerProps: i,
         perkIntro: o
       }), (0, n.jsx)("div", {
         className: j.perks,
@@ -84,60 +84,60 @@ let O = e => {
           let {
             icon: r,
             iconClassName: o,
-            description: a,
-            color: s
+            description: s,
+            color: i
           } = e;
           return (0, n.jsx)(p.Z, {
             icon: r,
             iconClassName: o,
-            description: a,
-            color: s
+            description: s,
+            color: i
           }, t)
         })
       })]
     })
   },
-  P = e => {
+  _ = e => {
     let {
       headerProps: t,
-      perkIntro: s
+      perkIntro: i
     } = e;
     return (0, n.jsxs)(o.Fragment, {
       children: [null != t ? (0, n.jsx)(y, f({}, t)) : (0, n.jsx)("img", {
         className: j.heroImage,
         src: r(438471),
         alt: m.intl.string(m.t.PkcaAH)
-      }), (0, n.jsx)(a.Text, {
+      }), (0, n.jsx)(s.Text, {
         variant: "text-md/normal",
         className: j.heading,
-        children: s
+        children: i
       })]
     })
   },
-  v = e => {
+  P = e => {
     let {
       guild: t,
       targetBoostedGuildTier: r,
       onClose: o,
-      analyticsSourceLocation: s
-    } = e, i = {
-      section: g.jXE.PREMIUM_GUILD_UPSELL_MODAL,
-      object: g.qAy.BUTTON_CTA,
+      analyticsSourceLocation: i
+    } = e, a = {
+      section: b.jXE.PREMIUM_GUILD_UPSELL_MODAL,
+      object: b.qAy.BUTTON_CTA,
       objectType: null != r ? (0, d.ge)(r) : null
     };
-    return (0, n.jsxs)(a.mzw, {
+    return (0, n.jsxs)(s.mzw, {
       className: j.footer,
       "data-migration-pending": true,
-      children: [(0, n.jsx)(a.Button, {
+      children: [(0, n.jsx)(s.Button, {
         variant: "secondary",
         size: "sm",
         text: m.intl.string(m.t.cpT0Cq),
         onClick: () => {
           o()
         }
-      }), (0, n.jsx)(b.Z, {
-        analyticsLocation: i,
-        analyticsSourceLocation: s,
+      }), (0, n.jsx)(g.Z, {
+        analyticsLocation: a,
+        analyticsSourceLocation: i,
         guild: t,
         targetBoostedGuildTier: r,
         onClose: () => {
@@ -147,13 +147,13 @@ let O = e => {
     })
   };
 
-function k(e) {
+function v(e) {
   var t, r, {
       analyticsSourceLocation: o,
       guild: p,
       targetBoostedGuildTier: d,
-      perks: b,
-      perkIntro: g,
+      perks: g,
+      perkIntro: b,
       headerProps: m,
       onClose: j
     } = e,
@@ -162,26 +162,26 @@ function k(e) {
       var r, n, o = function(e, t) {
         if (null == e) return {};
         var r, n, o = {},
-          a = Object.keys(e);
-        for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+          s = Object.keys(e);
+        for (n = 0; n < s.length; n++) r = s[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
         return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+        var s = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
       }
       return o
     }(e, ["analyticsSourceLocation", "guild", "targetBoostedGuildTier", "perks", "perkIntro", "headerProps", "onClose"]);
   let {
     analyticsLocations: y
-  } = (0, i.ZP)(s.Z.ACTIVITY_DIRECTORY);
-  return (0, n.jsx)(i.Gt, {
+  } = (0, a.ZP)(i.Z.ACTIVITY_DIRECTORY);
+  return (0, n.jsx)(a.Gt, {
     value: y,
     children: (0, n.jsx)(l.PaymentContextProvider, {
       activeSubscription: null,
       stepConfigs: [],
       skuIDs: [],
-      children: (0, n.jsx)(a.Y0X, (t = f({}, h), r = r = {
+      children: (0, n.jsx)(s.Y0X, (t = f({}, h), r = r = {
         "aria-labelledby": x,
         "data-migration-pending": true,
         parentComponent: "GuildBoostingUpsellModal",
@@ -189,11 +189,11 @@ function k(e) {
           hideBreadcrumbs: true,
           body: (0, n.jsx)(O, {
             onClose: j,
-            perks: b,
-            perkIntro: g,
+            perks: g,
+            perkIntro: b,
             headerProps: m
           }),
-          footer: (0, n.jsx)(v, {
+          footer: (0, n.jsx)(P, {
             guild: p,
             targetBoostedGuildTier: d,
             onClose: j,

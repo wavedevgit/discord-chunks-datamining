@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
   Chunk573385 = require("./573385.js"),
@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk935910 = require("./935910.js"),
   Chunk392819 = require("./392819.js"),
   Chunk131085 = require("./131085.js"),
-  Chunk549578 = require("./549578.js");
+  Chunk724913 = require("./724913.js");
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -75,8 +75,8 @@ function x(e, t) {
   if (null == e) return {};
   var n, r, i = L(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -84,8 +84,8 @@ function x(e, t) {
 function L(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 var j = function(e) {
@@ -96,7 +96,7 @@ function M(e) {
   var t;
   let {
     author: n,
-    message: a,
+    message: o,
     channel: P,
     userOverride: w,
     compact: L = false,
@@ -120,13 +120,13 @@ function M(e) {
     colorStrings: ee,
     colorRoleName: et,
     displayNameStyles: en
-  } = n, er = (0, l.e7)([f.Z], () => f.Z.roleStyle), ei = "username" === er, ea = "dot" === er, eo = (0, g.j)({
+  } = n, er = (0, l.e7)([f.Z], () => f.Z.roleStyle), ei = "username" === er, eo = "dot" === er, ea = (0, g.j)({
     displayNameStyles: en
-  }), es = (0, l.e7)([S.Z], () => null == n.guildId || null == n.colorRoleId ? null : S.Z.getRole(n.guildId, n.colorRoleId)), el = (0, O.yH)(null != Y ? Y : q, es), ec = (0, T.Z)(a), eu = i.useContext(c.d), ed = (null == eu ? true : eu.animate) || M, ef = el && (0, y.S2)(n), ep = ei && ef, e_ = (null == P ? true : P.isPrivate()) && null != en;
+  }), es = (0, l.e7)([S.Z], () => null == n.guildId || null == n.colorRoleId ? null : S.Z.getRole(n.guildId, n.colorRoleId)), el = (0, O.yH)(null != Y ? Y : q, es), ec = (0, T.Z)(o), eu = i.useContext(c.d), ed = (null == eu ? true : eu.animate) || M, ef = el && (0, y.S2)(n), ep = ei && ef, e_ = (null == P ? true : P.isPrivate()) && null != en;
   (0, C.Z)({
     shouldSubscribe: e_ || ep,
     subscribeToGroupId: W,
-    authorId: a.author.id
+    authorId: o.author.id
   });
   let {
     gradientStyle: em,
@@ -149,7 +149,7 @@ function M(e) {
       } : true
     }
   }, eE = (0, u.EJ)(X + J), eb = {
-    className: o()(N.username, eo, {
+    className: a()(N.username, ea, {
       [eh]: ep,
       [N.usernameColorOnName]: "username" === er && null != $
     }),
@@ -166,11 +166,11 @@ function M(e) {
     "data-text": X + J
   }, ey = i.useMemo(() => L && !k ? (0, r.jsx)(b.ZP, {
     primaryGuild: n.primaryGuild,
-    userId: a.author.id,
+    userId: o.author.id,
     contextGuildId: q,
     className: N.clanTagChiplet,
     badgeSize: A.Gg.SIZE_12
-  }) : null, [L, n.primaryGuild, q, a.author.id, k]), eO = null != w ? w : a.author, ev = null != V && null != M ? (0, r.jsx)(v.Z, {
+  }) : null, [L, n.primaryGuild, q, o.author.id, k]), eO = null != w ? w : o.author, ev = null != V && null != M ? (0, r.jsx)(v.Z, {
     targetElementRef: K,
     user: eO,
     renderPopout: V,
@@ -194,20 +194,20 @@ function M(e) {
           tag: "span",
           innerRef: K
         }, n, eb), {
-          className: o()(eb.className, N.clickable, G)
+          className: a()(eb.className, N.clickable, G)
         })), ey]
       })
     }
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.P3F, D(R({}, eb), {
-      className: o()(eb.className, G)
+      className: a()(eb.className, G)
     })), ey]
   }), eS = null != H ? H[0] : null, eI = null != H ? H[1] : null;
   return (0, r.jsxs)(_.Gt, {
     value: Q,
     children: [null != eS && !U && L ? (0, r.jsxs)(r.Fragment, {
       children: [" ", eS, " "]
-    }) : null, ea ? (0, r.jsx)(d.FhE, {
+    }) : null, eo ? (0, r.jsx)(d.FhE, {
       color: $,
       colors: ef ? ee : null,
       name: et,
@@ -215,7 +215,7 @@ function M(e) {
       hoverOverride: ed
     }) : null, ev, !L && !k && (0, r.jsx)(b.ZP, {
       primaryGuild: n.primaryGuild,
-      userId: a.author.id,
+      userId: o.author.id,
       contextGuildId: q,
       className: N.clanTagChiplet
     }), null != eI ? eI : null, null == eS || U || L ? null : eS]

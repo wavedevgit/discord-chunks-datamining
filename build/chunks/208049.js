@@ -70,19 +70,19 @@ let y = false,
     }
   }, S = e => new Promise(t => {
     let n = () => {
-      o.Z.unsubscribe(e, n), setTimeout(t, 0)
+      a.Z.unsubscribe(e, n), setTimeout(t, 0)
     };
-    o.Z.subscribe(e, n)
+    a.Z.subscribe(e, n)
   }), I = e => new Promise(t => {
     let n = new Map;
     e.forEach(r => {
       let i = () => {
         e.forEach(e => {
           let t = n.get(e);
-          null != t && o.Z.unsubscribe(e, t)
+          null != t && a.Z.unsubscribe(e, t)
         }), setTimeout(t, 0)
       };
-      n.set(r, i), o.Z.subscribe(r, i)
+      n.set(r, i), a.Z.subscribe(r, i)
     })
   }), T = () => {
     if (!Chunk763296.Z.shouldFetchDefaultSounds()) return Promise.resolve();
@@ -130,15 +130,15 @@ async function P(e) {
     name: n,
     sound: r,
     volume: i,
-    emojiId: o,
+    emojiId: a,
     emojiName: s
-  } = e, l = await a.tn.post({
+  } = e, l = await o.tn.post({
     url: g.ANM.GUILD_SOUNDBOARD_SOUNDS(t),
     body: {
       name: n,
       sound: r,
       volume: i,
-      emoji_id: o,
+      emoji_id: a,
       emoji_name: s
     },
     rejectWithError: false
@@ -151,14 +151,14 @@ async function R(e) {
     soundId: n,
     name: r,
     volume: i,
-    emojiId: o,
+    emojiId: a,
     emojiName: s
-  } = e, l = await a.tn.patch({
+  } = e, l = await o.tn.patch({
     url: g.ANM.GUILD_SOUNDBOARD_SOUND(t, n),
     body: {
       name: r,
       volume: i,
-      emoji_id: o,
+      emoji_id: a,
       emoji_name: s
     },
     rejectWithError: false
@@ -166,7 +166,7 @@ async function R(e) {
   return (0, p.o3)(l.body, t)
 }
 async function w(e, t) {
-  await a.tn.del({
+  await o.tn.del({
     url: g.ANM.GUILD_SOUNDBOARD_SOUND(e, t),
     oldFormErrors: true,
     rejectWithError: false
@@ -189,7 +189,7 @@ function x(e) {
 }
 async function L(e, t) {
   try {
-    let n = await a.tn.get({
+    let n = await o.tn.get({
       url: g.ANM.SOUNDBOARD_SOUND_GUILD_DATA(e, t),
       rejectWithError: false
     });
@@ -200,7 +200,7 @@ async function L(e, t) {
 }
 
 function j(e, t, n) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY",
     sound: t,
     channelId: e,
@@ -209,7 +209,7 @@ function j(e, t, n) {
 }
 
 function M(e, t) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_START",
     soundId: e,
     userId: t
@@ -217,7 +217,7 @@ function M(e, t) {
 }
 
 function k(e, t) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "GUILD_SOUNDBOARD_SOUND_PLAY_END",
     soundId: e,
     userId: t
@@ -225,7 +225,7 @@ function k(e, t) {
 }
 
 function U(e, t) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "USER_SOUNDBOARD_SET_VOLUME",
     volume: e,
     location: t
@@ -233,7 +233,7 @@ function U(e, t) {
 }
 
 function G(e) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "SOUNDBOARD_MUTE_JOIN_SOUND",
     channelId: e
   })

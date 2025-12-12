@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk79766 = require("./79766.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -29,12 +29,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk638631 = require("./638631.jsx"),
   Chunk254139 = require("./254139.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk466127 = require("./466127.js");
+  Chunk350169 = require("./350169.js");
 let P = (e, t) => {
     let {
       className: n,
       subscriptionTier: i,
-      isEligibleForBogoPromotion: a,
+      isEligibleForBogoPromotion: o,
       offerExpiresAt: P
     } = e, {
       analyticsLocations: R
@@ -46,7 +46,7 @@ let P = (e, t) => {
       value: R,
       children: (0, r.jsx)("div", {
         ref: t,
-        className: o()(N.container, null != P && N.containerWithOfferCountdown, n),
+        className: a()(N.container, null != P && N.containerWithOfferCountdown, n),
         "data-testid": "marketing-page-hero-header",
         children: (0, r.jsx)("div", {
           ref: M,
@@ -91,7 +91,7 @@ let P = (e, t) => {
                 children: [(0, r.jsx)(b.Z, {
                   size: "md",
                   fullWidth: w,
-                  hasActivePromotion: !!a,
+                  hasActivePromotion: !!o,
                   subscriptionTier: i
                 }), !w && (0, r.jsx)(E.Z, {
                   variant: "secondary",

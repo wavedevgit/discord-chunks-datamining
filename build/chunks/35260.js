@@ -11,7 +11,7 @@ var Chunk147913 = require("./147913.js"),
 
 function s(e) {
   var t;
-  if ((null == (t = e.message_reference) ? true : t.type) !== o.Uvt.FORWARD) return;
+  if ((null == (t = e.message_reference) ? true : t.type) !== a.Uvt.FORWARD) return;
   let n = e.message_reference.guild_id;
   null != n && (0, i.Q)(n)
 }

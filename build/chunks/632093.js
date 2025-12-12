@@ -72,8 +72,8 @@ class _ {
     let r = s.Z.userGuildSettingsTransaction(n);
     for (let t of e) {
       var i;
-      let e = d(c({}, (0, o.wL)(t.guild_id), t), {
-        channel_overrides: (0, o.U2)(t.channel_overrides)
+      let e = d(c({}, (0, a.wL)(t.guild_id), t), {
+        channel_overrides: (0, a.U2)(t.channel_overrides)
       });
       r.put(null != (i = t.guild_id) ? i : p, e)
     }

@@ -9,32 +9,32 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk921801 = require("./921801.js"),
-  Chunk22354 = require("./22354.js");
+  Chunk198840 = require("./198840.js");
 
 function s(e) {
   let {
     children: t,
     title: n,
-    description: a
+    description: o
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.category,
-    children: [(null != n || null != a) && (0, r.jsxs)("div", {
-      className: o.categoryHeader,
+    className: a.category,
+    children: [(null != n || null != o) && (0, r.jsxs)("div", {
+      className: a.categoryHeader,
       children: [null != n && (0, r.jsx)(i.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
         children: n
-      }), null != a && (0, r.jsx)(i.Text, {
+      }), null != o && (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: a
+        children: o
       })]
     }), (0, r.jsx)("div", {
-      className: o.categoryContent,
+      className: a.categoryContent,
       children: t
     }), (0, r.jsx)(i.izJ, {
-      className: o.categoryDivider
+      className: a.categoryDivider
     })]
   })
 }
@@ -44,10 +44,10 @@ function l(e) {
     children: t,
     title: n,
     description: i,
-    webSetting: o
+    webSetting: a
   } = e;
-  return (0, r.jsx)(a.F, {
-    setting: o,
+  return (0, r.jsx)(o.F, {
+    setting: a,
     children: (0, r.jsx)(s, {
       title: n,
       description: i,

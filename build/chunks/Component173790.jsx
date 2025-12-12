@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk675993 = require("./675993.jsx"),
   Chunk689079 = require("./689079.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk999711 = require("./999711.js"),
+  Chunk30787 = require("./30787.js"),
   Chunk413097 = require("./413097.js");
 let S = 2048,
   I = 84;
@@ -33,7 +33,7 @@ function T(e) {
     context: n,
     application: l,
     sectionName: c
-  } = e, S = "channel" === n.type ? n.channel : true, T = (0, a.e7)([f.Z], () => f.Z.entrypoint()), A = null != (t = (0, d.q)(l.id === b.bi.BUILT_IN ? null : l.id)) ? t : l, N = (0, _.ye)(A) ? C : E.Z, P = i.useRef(null), [R, w] = i.useState(false), {
+  } = e, S = "channel" === n.type ? n.channel : true, T = (0, o.e7)([f.Z], () => f.Z.entrypoint()), A = null != (t = (0, d.q)(l.id === b.bi.BUILT_IN ? null : l.id)) ? t : l, N = (0, _.ye)(A) ? C : E.Z, P = i.useRef(null), [R, w] = i.useState(false), {
     iconURL: D,
     name: x
   } = i.useMemo(() => (0, _.sl)(A, {
@@ -60,7 +60,7 @@ function T(e) {
     }), null != D && (0, r.jsx)(m.Z, {
       src: D,
       className: O.appIcon
-    }), (0, r.jsx)(o.Z, {
+    }), (0, r.jsx)(a.Z, {
       size: 54
     }), (0, r.jsx)(N, {
       context: n,
@@ -82,8 +82,8 @@ function C(e) {
     context: t,
     application: n,
     sectionName: i,
-    hasCommands: a
-  } = e, o = (0, c.Z)({
+    hasCommands: o
+  } = e, a = (0, c.Z)({
     applicationId: n.id,
     size: S,
     names: ["embedded_cover"],
@@ -92,9 +92,9 @@ function C(e) {
   return (0, r.jsx)(E.Z, {
     context: t,
     application: n,
-    imageCoverUrl: o.url,
+    imageCoverUrl: a.url,
     videoUrl: u,
     sectionName: i,
-    hasCommands: a
+    hasCommands: o
   })
 }

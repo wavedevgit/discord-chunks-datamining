@@ -13,27 +13,27 @@ var Chunk54381 = require("./54381.js"),
 let c = "blocked_user_joined_voice_channel_modal";
 
 function u(e, t) {
-  let u = a.Z.isBlocked(t);
+  let u = o.Z.isBlocked(t);
   (0, i.ZDy)(async () => {
     let {
       default: i
     } = await n.e("85505").then(n.bind(n, 232837));
     return n => {
       let {
-        transitionState: a,
-        onClose: o
+        transitionState: o,
+        onClose: a
       } = n;
       return (0, r.jsx)(i, {
         channelId: e,
         userId: t,
-        transitionState: a,
-        onClose: o
+        transitionState: o,
+        onClose: a
       })
     }
   }, {
     modalKey: c,
     onCloseCallback: () => {
-      o.default.track(l.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
+      a.default.track(l.rMx.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, {
         action: s.q.DISMISS,
         channel_id: e,
         blocked_user_ids: u ? [t] : [],

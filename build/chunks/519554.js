@@ -34,9 +34,9 @@ function l(e) {
 function c(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : "respect-motion-settings",
     s = arguments.length > 3 ? arguments[3] : true,
-    c = r.useContext(o.Sfi).reducedMotion.enabled,
+    c = r.useContext(a.Sfi).reducedMotion.enabled,
     u = t;
-  "animate-always" !== n && ("respect-motion-settings" !== n || c) && (u = "function" == typeof t ? (e, n) => l({}, t(e, n), a.FWm) : t.map(e => l({}, e, a.FWm)));
+  "animate-always" !== n && ("respect-motion-settings" !== n || c) && (u = "function" == typeof t ? (e, n) => l({}, t(e, n), o.FWm) : t.map(e => l({}, e, o.FWm)));
   let d = "function" == typeof u,
     [f, p, _] = (0, i.useSprings)(e, u, s);
   return d || 4 == arguments.length ? [f, p, _] : f

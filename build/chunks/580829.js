@@ -2,14 +2,14 @@
 /** chunk id: 580829, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk704965 = require("./704965.js"),
   Chunk822632 = require("./822632.js");
-let a = {
+let o = {
     read: _
   },
-  o = 84,
+  a = 84,
   s = 128,
   l = "acsp",
   c = "desc",
@@ -37,12 +37,12 @@ function g(e, t) {
     let n = t.reduce((e, t) => e + t.length, 0),
       r = new Uint8Array(n),
       i = 0,
-      a = E(e);
+      o = E(e);
     for (let e = 1; e <= t.length; e++) {
       let n = t.find(t => t.chunkNumber === e);
       if (!n) throw Error(`ICC chunk ${e} not found`);
-      let o = a.slice(n.offset, n.offset + n.length),
-        s = new Uint8Array(o);
+      let a = o.slice(n.offset, n.offset + n.length),
+        s = new Uint8Array(a);
       r.set(s, i), i += s.length
     }
     return O(new DataView(r.buffer))
@@ -67,60 +67,60 @@ function O(e) {
   let t = e.buffer,
     n = e.getUint32();
   if (e.byteLength !== n) throw Error("ICC profile length not matching");
-  if (e.byteLength < o) throw Error("ICC profile too short");
-  let a = {},
+  if (e.byteLength < a) throw Error("ICC profile too short");
+  let o = {},
     s = Object.keys(r.m);
   for (let t = 0; t < s.length; t++) {
     let n = s[t],
       i = r.m[n],
-      o = i.value(e, parseInt(n, 10)),
-      l = o;
-    i.description && (l = i.description(o)), a[i.name] = {
-      value: o,
+      a = i.value(e, parseInt(n, 10)),
+      l = a;
+    i.description && (l = i.description(a)), o[i.name] = {
+      value: a,
       description: l
     }
   }
   if (v(t.slice(36, 40)) !== l) throw Error("ICC profile: missing signature");
-  if (b(t)) return a;
+  if (b(t)) return o;
   let p = e.getUint32(128),
     _ = 132;
   for (let n = 0; n < p && !y(t, _); n++) {
     let n = (0, i.oH)(e, _, 4),
       r = e.getUint32(_ + 4),
-      o = e.getUint32(_ + 8);
+      a = e.getUint32(_ + 8);
     if (r > t.length) break;
     let s = (0, i.oH)(e, r, 4);
     if (s === c) {
       let i = e.getUint32(r + 8);
-      if (i > o) return a;
-      S(a, n, v(t.slice(r + 12, r + i + 11)))
+      if (i > a) return o;
+      S(o, n, v(t.slice(r + 12, r + i + 11)))
     } else if (s === u) {
       let t = e.getUint32(r + 8),
-        o = e.getUint32(r + 12),
+        a = e.getUint32(r + 12),
         s = r + 16,
         l = [];
       for (let n = 0; n < t; n++) {
         let t = (0, i.oH)(e, s + 0, 2),
           n = (0, i.oH)(e, s + 2, 2),
-          a = e.getUint32(s + 4),
+          o = e.getUint32(s + 4),
           c = e.getUint32(s + 8),
-          u = (0, i.cs)(e, r + c, a);
+          u = (0, i.cs)(e, r + c, o);
         l.push({
           languageCode: t,
           countryCode: n,
           text: u
-        }), s += o
+        }), s += a
       }
-      if (1 === t) S(a, n, l[0].text);
+      if (1 === t) S(o, n, l[0].text);
       else {
         let e = {};
         for (let t = 0; t < l.length; t++) e[`${l[t].languageCode}-${l[t].countryCode}`] = l[t].text;
-        S(a, n, e)
+        S(o, n, e)
       }
-    } else s === d ? S(a, n, v(t.slice(r + 8, r + o - 7))) : s === f && S(a, n, v(t.slice(r + 8, r + 12)));
+    } else s === d ? S(o, n, v(t.slice(r + 8, r + a - 7))) : s === f && S(o, n, v(t.slice(r + 8, r + 12)));
     _ += 12
   }
-  return a
+  return o
 }
 
 function v(e) {

@@ -3,16 +3,16 @@
 "use strict";
 require.d(exports, {
   G: () => s,
-  N: () => a
+  N: () => o
 }), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js");
 var Chunk998502 = require("./998502.js");
 let i = null;
 
-function a() {
-  return null == i && (i = o()), i
+function o() {
+  return null == i && (i = a()), i
 }
 
-function o() {
+function a() {
   if (null == window.DiscordNative || true === window.Uint8Array || true === window.TextDecoder) returnfalse;
   try {
     let e = Chunk998502.ZP.requireModule("discord_zstd");
@@ -25,7 +25,7 @@ function o() {
 }
 
 function s() {
-  if (!a()) return;
+  if (!o()) return;
   let {
     createContext: e
   } = Chunk998502.ZP.requireModule("discord_zstd");

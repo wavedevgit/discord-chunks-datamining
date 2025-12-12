@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 /** chunk id: 366050, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-let r, i, a;
+let r, i, o;
 require.d(exports, {
   Z: () => P
 }), require("./388685.js");
-var o, Chunk442837 = require("./442837.js"),
+var a, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js");
@@ -59,19 +59,19 @@ let m = new Map,
 function b(e) {
   var t, n;
   let {
-    id: o,
+    id: a,
     component: s,
     props: l
   } = e;
-  if (null != m.get(o)) return;
+  if (null != m.get(a)) return;
   let u = {
-    id: o,
+    id: a,
     component: s,
     position: null != (t = l.position) ? t : g,
     props: l,
     docked: null != (n = l.docked) && n
   };
-  m.set(o, u), s === c.NYg.VIDEO ? null == r && (r = o) : s === c.NYg.ACTIVITY ? null == i && (i = o) : s === c.NYg.FRAME && null == a && (a = o)
+  m.set(a, u), s === c.NYg.VIDEO ? null == r && (r = a) : s === c.NYg.ACTIVITY ? null == i && (i = a) : s === c.NYg.FRAME && null == o && (o = a)
 }
 
 function y(e) {
@@ -88,7 +88,7 @@ function y(e) {
     }) : i === t ? i = e.find(e => {
       let t = m.get(e);
       return null != t && t.component === c.NYg.ACTIVITY
-    }) : a === t && (a = e.find(e => {
+    }) : o === t && (o = e.find(e => {
       let t = m.get(e);
       return null != t && t.component === c.NYg.FRAME
     }))
@@ -100,7 +100,7 @@ function O(e) {
     id: t,
     position: n
   } = e;
-  if (null == t || r !== t && i !== t && a !== t) returnfalse;
+  if (null == t || r !== t && i !== t && o !== t) returnfalse;
   {
     let e = new Map;
     m.forEach((t, r) => {
@@ -131,7 +131,7 @@ function I(e) {
   let {
     id: t
   } = e;
-  if (r !== t && i !== t && a !== t) returnfalse;
+  if (r !== t && i !== t && o !== t) returnfalse;
   {
     let e = m.get(t);
     if (null == e) returnfalse;
@@ -145,7 +145,7 @@ function T(e) {
   let {
     id: t
   } = e;
-  if (r !== t && i !== t && a !== t) returnfalse;
+  if (r !== t && i !== t && o !== t) returnfalse;
   {
     let e = m.get(t);
     if (null == e) returnfalse;
@@ -159,13 +159,13 @@ function C(e) {
   let {
     id: t
   } = e, n = m.get(t);
-  null != n && (n.component === c.NYg.VIDEO ? r = t : n.component === c.NYg.ACTIVITY ? i = t : n.component === c.NYg.FRAME && (a = t))
+  null != n && (n.component === c.NYg.VIDEO ? r = t : n.component === c.NYg.ACTIVITY ? i = t : n.component === c.NYg.FRAME && (o = t))
 }
 
 function A() {
-  r = null, i = null, a = null, m = new Map
+  r = null, i = null, o = null, m = new Map
 }
-class N extends(o = Chunk442837.ZP.PersistedStore) {
+class N extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null == e) {
       g = c.VD2.BOTTOM_RIGHT, E = {
@@ -178,7 +178,7 @@ class N extends(o = Chunk442837.ZP.PersistedStore) {
   }
   get pipWindow() {
     var e, t;
-    return null == r && null == i && null == a ? null : m.get(null != (t = null != (e = null != r ? r : i) ? module : a) ? exports : "")
+    return null == r && null == i && null == o ? null : m.get(null != (t = null != (e = null != r ? r : i) ? module : o) ? exports : "")
   }
   get pipVideoWindow() {
     return null == r ? null : m.get(r)
@@ -187,7 +187,7 @@ class N extends(o = Chunk442837.ZP.PersistedStore) {
     return null == i ? null : m.get(i)
   }
   get pipFrameWindow() {
-    return null == a ? null : m.get(a)
+    return null == o ? null : m.get(o)
   }
   get pipWindows() {
     return m
@@ -199,7 +199,7 @@ class N extends(o = Chunk442837.ZP.PersistedStore) {
     return null == i
   }
   isFrameHidden() {
-    return null == a
+    return null == o
   }
   getDockedRect(e) {
     return h[e]

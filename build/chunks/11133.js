@@ -19,7 +19,7 @@ function d(e) {
     d = (null == e ? true : e.details) === "" ? null : null == e ? true : e.details,
     f = (null == e ? true : e.state) === "" ? null : null == e ? true : e.state,
     p = (null == e ? true : e.type) === c.IIU.STREAMING && null != d ? d : n;
-  if ((null == e ? true : e.status_display_type) === r.D.NAME && null != n ? p = n : (null == e ? true : e.status_display_type) === r.D.STATE && null != f ? p = f : (null == e ? true : e.status_display_type) === r.D.DETAILS && null != d && (p = d), (0, o.Z)(e)) {
+  if ((null == e ? true : e.status_display_type) === r.D.NAME && null != n ? p = n : (null == e ? true : e.status_display_type) === r.D.STATE && null != f ? p = f : (null == e ? true : e.status_display_type) === r.D.DETAILS && null != d && (p = d), (0, a.Z)(e)) {
     let e = (0, i.Z)(n);
     return {
       text: e,
@@ -52,7 +52,7 @@ function d(e) {
     tooltip: u.intl.formatToPlainString(u.t.Vnuxue, {
       name: p
     })
-  } : (0, a.Z)(e) && t && null != d ? {
+  } : (0, o.Z)(e) && t && null != d ? {
     text: d,
     tooltip: u.intl.formatToPlainString(u.t.pW3Ip3, {
       name: d

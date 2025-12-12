@@ -3,8 +3,8 @@
 "use strict";
 var Chunk46015 = require("./46015.js"),
   Chunk527160 = require("./527160.js"),
-  a = Math.floor,
-  o = Chunk46015("".charAt),
+  o = Math.floor,
+  a = Chunk46015("".charAt),
   s = Chunk46015("".replace),
   l = Chunk46015("".slice),
   c = /\$([$&'`]|\d{1,2}|<[^>]*>)/g,
@@ -15,7 +15,7 @@ module.exports = function(e, t, n, r, d, f) {
     m = u;
   return true !== d && (d = i(d), m = c), s(f, m, function(i, s) {
     var c;
-    switch (o(s, 0)) {
+    switch (a(s, 0)) {
       case "$":
         return "$";
       case "&":
@@ -31,9 +31,9 @@ module.exports = function(e, t, n, r, d, f) {
         var u = +s;
         if (0 === u) return i;
         if (u > _) {
-          var f = a(u / 10);
+          var f = o(u / 10);
           if (0 === f) return i;
-          if (f <= _) return true === r[f - 1] ? o(s, 1) : r[f - 1] + o(s, 1);
+          if (f <= _) return true === r[f - 1] ? a(s, 1) : r[f - 1] + a(s, 1);
           return i
         }
         c = r[u - 1]

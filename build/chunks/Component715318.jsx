@@ -60,7 +60,7 @@ function m(e) {
     id: t,
     label: u.intl.string(u.t["FfCL+6"])
   }), m = (0, c.M)(t);
-  return null == p && null == m ? null : (0, r.jsx)(o.yRy, {
+  return null == p && null == m ? null : (0, r.jsx)(a.yRy, {
     targetElementRef: d,
     align: "top",
     position: "right",
@@ -69,7 +69,7 @@ function m(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(o.v2r, {
+      return (0, r.jsx)(a.v2r, {
         navId: "game-profile-context",
         onClose: () => {
           (0, s.Zy)(), t()
@@ -77,23 +77,23 @@ function m(e) {
         "aria-label": u.intl.string(u.t.PNeFgW),
         onSelect: () => {},
         children: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(o.kSQ, {
+          children: [(0, r.jsx)(a.kSQ, {
             children: p
-          }), (0, r.jsx)(o.kSQ, {
+          }), (0, r.jsx)(a.kSQ, {
             children: m
           })]
         })
       })
     },
-    children: e => (0, r.jsx)(a.u, {
+    children: e => (0, r.jsx)(o.u, {
       text: u.intl.string(u.t["UKOtz+"]),
-      children: (0, r.jsx)(o.P3F, _(f({
+      children: (0, r.jsx)(a.P3F, _(f({
         innerRef: d,
         className: n
       }, e), {
-        children: (0, r.jsx)(o.xhG, {
+        children: (0, r.jsx)(a.xhG, {
           size: "xs",
-          color: o.TVs.colors.WHITE
+          color: a.TVs.colors.WHITE
         })
       }))
     })

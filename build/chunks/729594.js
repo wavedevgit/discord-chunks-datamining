@@ -6,8 +6,8 @@ var Chunk890308 = require("./890308.js");
 function i() {
   this.protocol = null, this.slashes = null, this.auth = null, this.host = null, this.port = null, this.hostname = null, this.hash = null, this.search = null, this.query = null, this.pathname = null, this.path = null, this.href = null
 }
-var a = /^([a-z0-9.+-]+:)/i,
-  o = /:[0-9]*$/,
+var o = /^([a-z0-9.+-]+:)/i,
+  a = /:[0-9]*$/,
   s = /^(\/\/?(?!\/)[^?\s]*)(\?[^\s]*)?$/,
   l = ["'"].concat(["{", "}", "|", "\\", "^", "`"].concat(["<", ">", '"', "`", " ", "\r", "\n", "	"])),
   c = ["%", "/", "?", ";", "#"].concat(l),
@@ -57,16 +57,16 @@ function O(e, t) {
 i.prototype.parse = function(e, t, n) {
   if ("string" != typeof e) throw TypeError("Parameter 'url' must be a string, not " + typeof e);
   var i = e.indexOf("?"),
-    o = false !== i && i < e.indexOf("#") ? "?" : "#",
-    E = e.split(o),
+    a = false !== i && i < e.indexOf("#") ? "?" : "#",
+    E = e.split(a),
     b = /\\/g;
   E[0] = E[0].replace(b, "/");
-  var y = e = E.join(o);
+  var y = e = E.join(a);
   if (y = y.trim(), !n && 1 === e.split("#").length) {
     var O = s.exec(y);
     if (O) return this.path = y, this.href = y, this.pathname = O[1], O[2] ? (this.search = O[2], t ? this.query = g.parse(this.search.substr(1)) : this.query = this.search.substr(1)) : t && (this.search = "", this.query = {}), this
   }
-  var v = a.exec(y);
+  var v = o.exec(y);
   if (v) {
     var S = (v = v[0]).toLowerCase();
     this.protocol = S, y = y.substr(v.length)
@@ -130,15 +130,15 @@ i.prototype.parse = function(e, t, n) {
     n = this.pathname || "",
     r = this.hash || "",
     i = false,
-    a = "";
-  this.host ? i = module + this.host : this.hostname && (i = module + (false === this.hostname.indexOf(":") ? this.hostname : "[" + this.hostname + "]"), this.port && (i += ":" + this.port)), this.query && "object" == typeof this.query && Object.keys(this.query).length && (a = Chunk699901.stringify(this.query, {
+    o = "";
+  this.host ? i = module + this.host : this.hostname && (i = module + (false === this.hostname.indexOf(":") ? this.hostname : "[" + this.hostname + "]"), this.port && (i += ":" + this.port)), this.query && "object" == typeof this.query && Object.keys(this.query).length && (o = Chunk699901.stringify(this.query, {
     arrayFormat: "repeat",
     addQueryPrefix: false
   }));
-  var o = this.search || a && "?" + a || "";
-  return exports && ":" !== exports.substr(false) && (t += ":"), this.slashes || (!exports || h[exports]) && false !== i ? (i = "//" + (i || ""), require && "/" !== require.charAt(0) && (n = "/" + require)) : i || (i = ""), Chunk890308 && "#" !== Chunk890308.charAt(0) && (r = "#" + Chunk890308), o && "?" !== o.charAt(0) && (o = "?" + o), exports + i + (n = require.replace(/[?#]/g, function(e) {
+  var a = this.search || o && "?" + o || "";
+  return exports && ":" !== exports.substr(false) && (t += ":"), this.slashes || (!exports || h[exports]) && false !== i ? (i = "//" + (i || ""), require && "/" !== require.charAt(0) && (n = "/" + require)) : i || (i = ""), Chunk890308 && "#" !== Chunk890308.charAt(0) && (r = "#" + Chunk890308), a && "?" !== a.charAt(0) && (a = "?" + a), exports + i + (n = require.replace(/[?#]/g, function(e) {
     return encodeURIComponent(e)
-  })) + (o = o.replace("#", "%23")) + Chunk890308
+  })) + (a = a.replace("#", "%23")) + Chunk890308
 }, i.prototype.resolve = function(e) {
   return this.resolveObject(E(e, false, true)).format()
 }, i.prototype.resolveObject = function(e) {
@@ -146,9 +146,9 @@ i.prototype.parse = function(e, t, n) {
     var t = new i;
     t.parse(e, false, true), e = t
   }
-  for (var n = new i, r = Object.keys(this), a = 0; a < r.length; a++) {
-    var o = r[a];
-    n[o] = this[o]
+  for (var n = new i, r = Object.keys(this), o = 0; o < r.length; o++) {
+    var a = r[o];
+    n[a] = this[a]
   }
   if (n.hash = e.hash, "" === e.href) return n.href = n.format(), n;
   if (e.slashes && !e.protocol) {
@@ -209,6 +209,6 @@ i.prototype.parse = function(e, t, n) {
   return (y = y || n.host && v.length) && !P && v.unshift(""), v.length > 0 ? n.pathname = v.join("/") : (n.pathname = null, n.path = null), (null !== n.pathname || null !== n.search) && (n.path = (n.pathname ? n.pathname : "") + (n.search ? n.search : "")), n.auth = e.auth || n.auth, n.slashes = n.slashes || e.slashes, n.href = n.format(), n
 }, i.prototype.parseHost = function() {
   var e = this.host,
-    t = o.exec(module);
+    t = a.exec(module);
   exports && (":" !== (t = exports[0]) && (this.port = exports.substr(1)), e = module.substr(0, module.length - exports.length)), module && (this.hostname = module)
 }, exports.parse = E, exports.resolve = y, exports.resolveObject = O, exports.format = b, exports.Url = i

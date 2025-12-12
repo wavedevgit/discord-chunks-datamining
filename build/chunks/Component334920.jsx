@@ -7,26 +7,26 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
-  Chunk635148 = require("./635148.js");
+  a = require.n(Chunk120356),
+  Chunk13084 = require("./13084.js");
 let l = e => {
   let {
     src: t,
     alt: n,
-    size: a,
+    size: o,
     "aria-label": l,
     className: c
   } = e, u = i.useRef(null), d = i.useRef(false), f = d.current ? s.image : s.imageLoading;
   return (0, r.jsx)("img", {
-    className: o()(f, c),
+    className: a()(f, c),
     alt: n,
     src: t,
     ref: u,
     "aria-label": l,
     style: {
-      backgroundSize: a,
-      height: a,
-      width: a
+      backgroundSize: o,
+      height: o,
+      width: o
     },
     onLoad: d.current ? true : e => {
       var t, n, r;

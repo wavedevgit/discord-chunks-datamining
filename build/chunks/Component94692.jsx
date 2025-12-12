@@ -1,7 +1,7 @@
 /** Chunk was on 226 **/
 /** chunk id: 94692, original params: t,e,s (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk424218 = require("./424218.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk971561 = require("./971561.js");
+  Chunk901650 = require("./901650.js");
 
 function p(t, e, s) {
   return e in t ? Object.defineProperty(t, e, {
@@ -23,7 +23,7 @@ function p(t, e, s) {
   }) : t[e] = s, t
 }
 let I = "select";
-class f extends Chunk473749.PureComponent {
+class m extends Chunk473749.PureComponent {
   fetchAllDirectoryMetadata() {
     let {
       installationPaths: t
@@ -86,10 +86,10 @@ class f extends Chunk473749.PureComponent {
       installationPathsMetadata: e
     } = this.props;
     return null != exports[module] && false === exports[module].hasPermission ? (0, Chunk54381.jsx)("div", {
-      className: Chunk971561.error,
+      className: Chunk901650.error,
       children: Chunk388032.intl.string(Chunk388032.t.cEUT8B)
     }) : this.hasEnoughDiskSpace(module) ? null : (0, Chunk54381.jsx)("div", {
-      className: Chunk971561.error,
+      className: Chunk901650.error,
       children: Chunk388032.intl.string(Chunk388032.t["duXbE/"])
     })
   }
@@ -141,7 +141,7 @@ class f extends Chunk473749.PureComponent {
     })
   }
 }
-let m = Chunk442837.ZP.connectStores([Chunk391690.Z], () => ({
+let g = Chunk442837.ZP.connectStores([Chunk391690.Z], () => ({
   installationPaths: Chunk391690.Z.installationPaths,
   installationPathsMetadata: Chunk391690.Z.installationPathsMetadata
-}))(f)
+}))(m)

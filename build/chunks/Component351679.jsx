@@ -24,8 +24,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk592125 = require("./592125.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk630573 = require("./630573.js"),
-  Chunk548498 = require("./548498.js");
+  Chunk7938 = require("./7938.js"),
+  Chunk360514 = require("./360514.js");
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -94,7 +94,7 @@ let N = Chunk473749.memo(function(e) {
     }),
     disableInteraction: k,
     childrenExecutedCommand: (0, O.Z)(N, Z, false),
-    childrenHeader: (0, _.Z)({
+    childrenHeader: (0, b.Z)({
       message: N,
       channel: Z,
       author: z,
@@ -107,7 +107,7 @@ let N = Chunk473749.memo(function(e) {
       hideGuildTag: false
     }),
     childrenAccessories: e.hideAccessories ? true : (0, m.Q)(e, H, V),
-    childrenMessageContent: (0, b.Z)(e, B),
+    childrenMessageContent: (0, _.Z)(e, B),
     childrenSystemMessage: (0, E.Z)((i = T({}, e), l = l = {
       disableInteraction: k
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {

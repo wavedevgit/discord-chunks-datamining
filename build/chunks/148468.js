@@ -18,11 +18,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 }), exports.isHeicSignatureIncluded = exports.isAvifStringIncluded = exports.isFileContaineJfiforExifHeader = exports.isFlvStringIncluded = exports.isftypStringIncluded = exports.findMatroskaDocTypeElements = exports.fetchFromObject = exports.getFileChunk = true, exports.getFileChunk = function(e, t = 32) {
   let r = e instanceof ArrayBuffer ? new Uint8Array(e) : e,
-    a = [];
-  if (Array.isArray(e) && i(e) || e instanceof ArrayBuffer || e instanceof Uint8Array) a = Array.from(r.slice(0, t));
+    o = [];
+  if (Array.isArray(e) && i(e) || e instanceof ArrayBuffer || e instanceof Uint8Array) o = Array.from(r.slice(0, t));
   else throw TypeError(`Expected the \`file\` argument to be of type \`Array<number>\`, \`Uint8Array\`, or \`ArrayBuffer\`, got \`${typeof e}\``);
-  if (!n(a)) throw TypeError("File content contains illegal values");
-  return a
+  if (!n(o)) throw TypeError("File content contains illegal values");
+  return o
 }, exports.fetchFromObject = r, exports.findMatroskaDocTypeElements = function(e) {
   let t = "webm",
     n = "matroska",

@@ -1,4 +1,4 @@
-/** Chunk was on 91968 **/
+/** Chunk was on 88569 **/
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk59662 = require("./59662.js"),
   Chunk131051 = require("./131051.js"),
   Chunk996435 = require("./996435.js"),
-  Chunk785766 = require("./785766.js");
+  Chunk990757 = require("./990757.js");
 
 function y(e) {
   var t;
@@ -27,34 +27,34 @@ function y(e) {
     emptyState: j,
     searchQuery: v,
     onSearchChange: h
-  } = e, x = d.Z.useField("currentPanelKey"), {
+  } = e, x = f.Z.useField("currentPanelKey"), {
     node: S,
     visibleDirectory: P,
     accessibleDirectory: C
-  } = (0, f.ZP)(n, null != v ? v : ""), w = null != y && (null == (t = P.entry(y)) ? true : t.parentPanelKey) != null ? y : p, T = o.useMemo(() => C.get(null != x ? x : w), [x, C, w]), {
-    navigateWithValidation: k
+  } = (0, b.ZP)(n, null != v ? v : ""), _ = null != y && (null == (t = P.entry(y)) ? true : t.parentPanelKey) != null ? y : p, w = o.useMemo(() => C.get(null != x ? x : _), [x, C, _]), {
+    navigateWithValidation: T
   } = (0, s.Cu)();
-  (0, i.ZP)(() => {
+  (0, l.ZP)(() => {
     var e, t, n;
-    let r = P.entry(w).parentPanelKey,
-      o = null == (e = P.entry(w)) ? true : e.parentTabKey,
-      a = null == (t = P.entry(w)) ? true : t.parentCategoryKey,
-      i = null == (n = P.entry(w)) ? true : n.parentAccordionKey;
-    return d.Z.setState({
+    let r = P.entry(_).parentPanelKey,
+      o = null == (e = P.entry(_)) ? true : e.parentTabKey,
+      i = null == (t = P.entry(_)) ? true : t.parentCategoryKey,
+      l = null == (n = P.entry(_)) ? true : n.parentAccordionKey;
+    return f.Z.setState({
       currentPanelKey: r,
       currentTabKeys: null != o ? new Map([
         [r, o]
       ]) : new Map,
-      currentCategoryKey: a,
+      currentCategoryKey: i,
       disableSidebarCategoryAutoSelect: true,
       navTransition: {
-        targetKey: w,
-        targetAccordionKey: i,
+        targetKey: _,
+        targetAccordionKey: l,
         animateScroll: false
       },
       showNavigationMobile: null == y
-    }), () => d.Z.resetState()
-  }), o.useEffect(() => d.Z.subscribe(e => ({
+    }), () => f.Z.resetState()
+  }), o.useEffect(() => f.Z.subscribe(e => ({
     requestedTargetKey: e.requestedTargetKey,
     currentPanelKey: e.currentPanelKey
   }), e => {
@@ -69,52 +69,52 @@ function y(e) {
       return
     }
     let o = r.parentPanelKey;
-    if (null == o) return void d.Z.setState({
+    if (null == o) return void f.Z.setState({
       requestedTargetKey: true
     });
-    let a = d.Z.getField("currentTabKeys"),
-      i = null != r.parentTabKey ? new Map(a).set(o, r.parentTabKey) : a,
-      l = r.parentPanelKey === n && (null == r.parentTabKey || r.parentTabKey === a.get(o)),
+    let i = f.Z.getField("currentTabKeys"),
+      l = null != r.parentTabKey ? new Map(i).set(o, r.parentTabKey) : i,
+      a = r.parentPanelKey === n && (null == r.parentTabKey || r.parentTabKey === i.get(o)),
       c = () => {
-        d.Z.setState({
+        f.Z.setState({
           requestedTargetKey: true,
           currentPanelKey: r.parentPanelKey,
-          currentTabKeys: i,
+          currentTabKeys: l,
           currentCategoryKey: r.parentCategoryKey,
           disableSidebarCategoryAutoSelect: true,
           navTransition: {
             targetKey: t,
             targetAccordionKey: r.parentAccordionKey,
-            animateScroll: l
+            animateScroll: a
           }
         })
       };
-    r.parentPanelKey !== n ? k(() => {
+    r.parentPanelKey !== n ? T(() => {
       c(), null == m || m(o)
     }) : c()
   }, {
-    equalityFn: a.X
-  }), [P, k, m, h]);
-  let E = o.useMemo(() => ({
+    equalityFn: i.X
+  }), [P, T, m, h]);
+  let k = o.useMemo(() => ({
       visibleDirectory: P,
       accessibleDirectory: C
     }), [P, C]),
-    N = () => k(g),
-    Z = null != x ? P.get(x) : true;
+    E = () => T(g),
+    N = null != x ? P.get(x) : true;
   return (0, r.jsx)(u.j.Provider, {
-    value: E,
+    value: k,
     children: (0, r.jsxs)("div", {
-      className: b.container,
+      className: d.container,
       children: [(0, r.jsx)(c.P, {
         root: S,
         footer: O,
-        onClose: N,
+        onClose: E,
         emptyState: j,
         searchQuery: v,
         onSearchChange: h
-      }), (0, r.jsx)(l.Z, {
-        onClose: N,
-        setting: null != Z ? Z : T
+      }), (0, r.jsx)(a.Z, {
+        onClose: E,
+        setting: null != N ? N : w
       })]
     })
   })

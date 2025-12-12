@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 878752, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -16,7 +16,7 @@ var Chunk100527 = require("./100527.js"),
   Chunk320427 = require("./320427.jsx"),
   Chunk145010 = require("./145010.jsx"),
   Chunk159909 = require("./159909.jsx"),
-  Chunk2012 = require("./2012.js");
+  Chunk474830 = require("./474830.js");
 
 function g(e) {
   let {
@@ -36,19 +36,19 @@ function g(e) {
     location: "VoiceEffectsActionBar"
   }, {
     autoTrackExposure: false
-  }), O = (0, a.Z)(u.Z);
+  }), _ = (0, a.Z)(u.Z);
   if (null == t || null != C) return null;
-  let x = v && O,
-    E = y && n;
-  return x || E ? (0, i.jsxs)(l.Gt, {
+  let O = v && _,
+    x = y && n;
+  return O || x ? (0, i.jsxs)(l.Gt, {
     value: b,
     children: [(0, i.jsxs)("div", {
       className: m.voiceEffectsActionBar,
-      children: [x && (0, i.jsx)(d.Z, {
+      children: [O && (0, i.jsx)(d.Z, {
         channel: t
-      }), E && (0, i.jsx)(p.Z, {}), E && (0, i.jsx)(f.Z, {
+      }), x && (0, i.jsx)(p.Z, {}), x && (0, i.jsx)(h.Z, {
         channel: t
-      }), E && (0, i.jsx)(h.Z, {})]
+      }), x && (0, i.jsx)(f.Z, {})]
     }), g && (0, i.jsx)("div", {
       className: m.divider
     })]

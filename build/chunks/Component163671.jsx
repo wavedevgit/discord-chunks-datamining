@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk388905 = require("./388905.jsx"),
-  Chunk616464 = require("./616464.js");
+  Chunk646956 = require("./646956.js");
 
 function o(e) {
   var t, n, {
@@ -32,7 +32,7 @@ function o(e) {
       return i
     }(e, ["children", "className"]);
   let u = i();
-  return (0, r.jsx)(a.ZP, (t = function(e) {
+  return (0, r.jsx)(l.ZP, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -50,10 +50,10 @@ function o(e) {
     }
     return e
   }({}, c), n = n = {
-    className: s()(o, l.container),
-    contentClassName: l.content,
+    className: s()(o, a.container),
+    contentClassName: a.content,
     children: u.map((e, t) => (0, r.jsx)("div", {
-      className: l.column,
+      className: a.column,
       style: {
         flexBasis: "".concat(100 / u.length, "%")
       },

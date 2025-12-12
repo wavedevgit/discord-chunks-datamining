@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 178088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => P
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk734610 = require("./734610.js"),
   Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk946443 = require("./946443.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk424626 = require("./424626.js");
+  Chunk253107 = require("./253107.js");
 
 function P(e) {
   let {
@@ -42,26 +42,26 @@ function P(e) {
     dialogClassName: A
   } = e, {
     analyticsLocations: R
-  } = (0, f.ZP)(d.Z.NOTIFICATION_CENTER), [D, M] = i.useState(false), [L, k] = [(0, s.e7)([y.Z], () => {
+  } = (0, f.ZP)(d.Z.NOTIFICATION_CENTER), [D, M] = i.useState(false), [L, k] = [(0, s.e7)([_.Z], () => {
     var e, t;
-    return null != (t = null == (e = y.Z.settings.inbox) ? true : e.currentTab) ? t : c.X.UNREADS
+    return null != (t = null == (e = _.Z.settings.inbox) ? true : e.currentTab) ? t : c.X.UNREADS
   }), i.useCallback(e => {
-    m.hW.updateAsync("inbox", t => {
+    b.hW.updateAsync("inbox", t => {
       if (t.currentTab === e) returnfalse;
       t.currentTab = e
-    }, m.fy.FREQUENT_USER_ACTION)
+    }, b.fy.FREQUENT_USER_ACTION)
   }, [])], {
     showTutorial: G,
     setSeenTutorial: U
   } = function(e) {
-    let t = (0, s.e7)([y.Z], () => {
+    let t = (0, s.e7)([_.Z], () => {
         var e, t;
-        return null != (t = null == (e = y.Z.settings.inbox) ? true : e.viewedTutorial) && t
+        return null != (t = null == (e = _.Z.settings.inbox) ? true : e.viewedTutorial) && t
       }),
       n = i.useCallback(() => {
-        m.hW.updateAsync("inbox", e => {
+        b.hW.updateAsync("inbox", e => {
           e.viewedTutorial = true
-        }, m.fy.INFREQUENT_USER_ACTION)
+        }, b.fy.INFREQUENT_USER_ACTION)
       }, []);
     return {
       showTutorial: !t && e === c.X.UNREADS,
@@ -72,7 +72,7 @@ function P(e) {
   }, [n, D]), F = i.useCallback(() => {
     M(!D), D ? null == n || n() : null == t || t()
   }, [n, t, D]);
-  i.useEffect(() => (O.S.subscribe(S.CkL.TOGGLE_INBOX, F), () => void O.S.unsubscribe(S.CkL.TOGGLE_INBOX, F)), [F]);
+  i.useEffect(() => (y.S.subscribe(E.CkL.TOGGLE_INBOX, F), () => void y.S.unsubscribe(E.CkL.TOGGLE_INBOX, F)), [F]);
   let {
     enabled: V,
     inInbox: H
@@ -85,7 +85,7 @@ function P(e) {
   let W = i.useCallback(e => {
       e.shiftKey || B()
     }, [B]),
-    K = (0, b.Us)({
+    K = (0, m.Us)({
       location: "ForYou"
     });
   return (0, r.jsx)(f.Gt, {
@@ -100,26 +100,26 @@ function P(e) {
       onRequestClose: B,
       renderPopout: function() {
         return (0, r.jsx)(u.VqE, {
-          "aria-label": I.intl.string(I.t.GSmTKJ),
+          "aria-label": S.intl.string(S.t.GSmTKJ),
           className: A,
           children: (0, r.jsx)("div", {
-            className: a()(_.container, {
-              [_.widerInbox]: K
+            className: o()(I.container, {
+              [I.widerInbox]: K
             }),
             children: (0, r.jsx)(u.y5t, {
-              component: (0, r.jsx)(C.Z, {
+              component: (0, r.jsx)(j.Z, {
                 tab: L,
                 setTab: k,
                 badgeState: P,
                 closePopout: B
               }),
-              children: L === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : L === c.X.MENTIONS ? (0, r.jsx)(j.Z, {
+              children: L === c.X.FOR_YOU ? (0, r.jsx)(O.ZP, {}) : L === c.X.MENTIONS ? (0, r.jsx)(v.Z, {
                 onJump: W
               }) : V && H && L === c.X.BOOKMARKS ? (0, r.jsx)(g.K, {
                 closePopout: B
-              }) : L === c.X.SCHEDULED ? (0, r.jsx)(x._, {}) : (0, r.jsx)(o.SV, {
-                fallback: (0, r.jsx)(E.h6, {}),
-                children: (0, r.jsx)(E.ZP, {
+              }) : L === c.X.SCHEDULED ? (0, r.jsx)(C._, {}) : (0, r.jsx)(a.SV, {
+                fallback: (0, r.jsx)(x.h6, {}),
+                children: (0, r.jsx)(x.ZP, {
                   onJump: W,
                   showTutorial: G,
                   setSeenTutorial: U,

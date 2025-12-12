@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 43779, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk324805 = require("./324805.js"),
   Chunk642145 = require("./642145.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk710294 = require("./710294.js");
+  Chunk289157 = require("./289157.js");
 let O = async () => await require.e("67963").then(require.t.bind(require, 145193, 19));
 
 function T(e) {
@@ -39,7 +39,7 @@ function T(e) {
     isVisibleInViewport: D,
     onReceiveErrorHints: Z,
     sourceQuestContent: L
-  } = e, M = r.useRef(null), U = (0, x.w8)(w.config), B = (0, x.B3)(w.config), F = (null == (t = w.userStatus) ? true : t.enrolledAt) != null, {
+  } = e, M = r.useRef(null), U = (0, f.w8)(w.config), B = (0, f.B3)(w.config), F = (null == (t = w.userStatus) ? true : t.enrolledAt) != null, {
     ref: G,
     scrollHeight: V
   } = (0, d.kE)(), H = 104 !== V, {
@@ -65,7 +65,7 @@ function T(e) {
         })
       }
       return e
-    }({}, _.Y), P = P = {
+    }({}, C.Y), P = P = {
       clamp: true
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(T, Object.getOwnPropertyDescriptors(P)) : (function(e, t) {
       var n = Object.keys(e);
@@ -77,7 +77,7 @@ function T(e) {
     })(Object(P)).forEach(function(e) {
       Object.defineProperty(T, e, Object.getOwnPropertyDescriptor(P, e))
     }), T)
-  }), q = (null == (n = w.userStatus) ? true : n.completedAt) != null, K = (null == (i = w.userStatus) ? true : i.claimedAt) != null, Y = (0, x.xN)(w.config), Q = (0, x.LM)(w.config), {
+  }), q = (null == (n = w.userStatus) ? true : n.completedAt) != null, K = (null == (i = w.userStatus) ? true : i.claimedAt) != null, Y = (0, f.xN)(w.config), Q = (0, f.LM)(w.config), {
     completedRatio: X,
     completedRatioDisplay: J
   } = (0, h.I)(w), $ = (0, p.Bd)(w, L, M), ee = r.useMemo(() => K && Y ? S.intl.format(S.t["8Op4c4"], {
@@ -138,18 +138,18 @@ function T(e) {
               loop: false,
               autoplay: false,
               shouldAnimate: !en
-            }), (0, a.jsx)(b.Z, {
+            }), (0, a.jsx)(g.Z, {
               quest: w,
               size: 76,
               percentComplete: X,
-              percentCompleteText: k && !(0, f.zi)(w) ? J : true,
+              percentCompleteText: k && !(0, x.zi)(w) ? J : true,
               children: (0, a.jsx)("div", {
                 className: E.circularRewardTileWrapper,
-                children: (0, a.jsx)(g.Z, {
+                children: (0, a.jsx)(b.Z, {
                   quest: w,
                   questContent: I,
                   className: E.circularQuestRewardTileAsset,
-                  location: C.dr.QUEST_HOME_DESKTOP,
+                  location: y.dr.QUEST_HOME_DESKTOP,
                   autoplay: k,
                   onLoadComplete: W,
                   lazyLoad: true,
@@ -157,12 +157,12 @@ function T(e) {
                 })
               })
             })]
-          }) : (0, a.jsx)(g.Z, {
+          }) : (0, a.jsx)(b.Z, {
             quest: w,
             autoplay: k,
             questContent: I,
             className: E.questRewardTileAsset,
-            location: C.dr.QUEST_HOME_DESKTOP,
+            location: y.dr.QUEST_HOME_DESKTOP,
             onLoadComplete: W,
             lazyLoad: true,
             sourceQuestContent: L
@@ -192,7 +192,7 @@ function T(e) {
         },
         className: E.textOverflowBlur
       })]
-    }), (0, a.jsx)(y.Z, {
+    }), (0, a.jsx)(_.Z, {
       quest: w,
       questContent: I,
       contentPosition: R,

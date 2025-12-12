@@ -2,18 +2,18 @@
 /** chunk id: 386949, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L: () => o
+  L: () => a
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
-  Chunk773758 = require("./773758.js");
+  Chunk643357 = require("./643357.js");
 
-function o(e) {
+function a(e) {
   let {
     choiceId: t,
     choice: n,
-    isSelected: o,
+    isSelected: a,
     onSelectionChange: s,
     inputType: l,
     textInputValue: c,
@@ -21,24 +21,24 @@ function o(e) {
   } = e, d = "true" === n.TextEntry, f = "choice-label-".concat(t), p = () => {
     s(t)
   }, _ = e => {
-    o || s(t), null == u || u(t, e)
+    a || s(t), null == u || u(t, e)
   };
   return (0, r.jsxs)("div", {
-    className: a.optionContainer,
+    className: o.optionContainer,
     children: [(0, r.jsxs)(i.P3F, {
-      className: a.clickableRow,
+      className: o.clickableRow,
       onClick: p,
       role: l,
-      "aria-checked": o,
+      "aria-checked": a,
       "aria-labelledby": f,
       children: [(0, r.jsx)("div", {
-        className: a.indicatorWrapper,
+        className: o.indicatorWrapper,
         children: "radio" === l ? (0, r.jsx)(i.Fj9, {
           disabled: false,
-          checked: o
+          checked: a
         }) : (0, r.jsx)(i.FZ5, {
           disabled: false,
-          checked: o
+          checked: a
         })
       }), (0, r.jsx)(i.Text, {
         id: f,
@@ -51,11 +51,11 @@ function o(e) {
         })
       })]
     }), d && (0, r.jsx)("div", {
-      className: a.textInputWrapper,
+      className: o.textInputWrapper,
       children: (0, r.jsx)(i.oil, {
         value: null != c ? c : "",
         onChange: _,
-        disabled: !o
+        disabled: !a
       })
     })]
   })

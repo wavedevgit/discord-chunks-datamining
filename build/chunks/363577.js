@@ -15,10 +15,10 @@ let u = function(e) {
     n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     u = arguments.length > 3 && true !== arguments[3] && arguments[3],
     d = (0, a.e7)([l.Z], () => l.Z.validate(e), [e]),
-    f = (0, a.e7)([l.Z], () => l.Z.isRateLimited()),
-    m = (0, s.c)(),
-    g = r.useMemo(() => (0, i.debounce)(e => o.Z.attemptPomelo(e, n ? "registration" : "modal", n, u), m), [m, n, u]);
+    m = (0, a.e7)([l.Z], () => l.Z.isRateLimited()),
+    g = (0, s.c)(),
+    f = r.useMemo(() => (0, i.debounce)(e => o.Z.attemptPomelo(e, n ? "registration" : "modal", n, u), g), [g, n, u]);
   return r.useEffect(() => {
-    t && !f && null == d && "" !== e && g(e)
-  }, [t, f, d, e, g]), r.useMemo(() => null != d ? (0, c.ti)(d) : true, [d])
+    t && !m && null == d && "" !== e && f(e)
+  }, [t, m, d, e, f]), r.useMemo(() => null != d ? (0, c.ti)(d) : true, [d])
 }

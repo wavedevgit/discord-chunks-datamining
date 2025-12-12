@@ -58,7 +58,7 @@ async function m(e, t, n) {
   });
   if (_.has(i)) return _.get(i);
   let {
-    users: o,
+    users: a,
     next_index: l
   } = (await r.tn.post({
     url: s.ANM.GET_REFERRAL_ELIGIBLE_USERS,
@@ -70,7 +70,7 @@ async function m(e, t, n) {
     oldFormErrors: true,
     rejectWithError: false
   })).body, u = {
-    users: o.map(e => new a.Z(e)),
+    users: a.map(e => new o.Z(e)),
     nextIndex: l
   };
   return _.set(i, u), u
@@ -82,20 +82,20 @@ let h = () => (Chunk570140.Z.dispatch({
   oldFormErrors: true,
   rejectWithError: false
 }).then(e => {
-  var t, n, r, a;
-  let o = new Map;
+  var t, n, r, o;
+  let a = new Map;
   if (null != e.body && null != e.body.recipient_status)
     for (let t in e.body.recipient_status) {
       let n = e.body.recipient_status[t];
-      o.set(t, n)
+      a.set(t, n)
     }
   i.Z.dispatch({
     type: "BILLING_REFERRALS_REMAINING_FETCH_SUCCESS",
     referrals_remaining: null != e.body && null != e.body.referrals_remaining ? e.body.referrals_remaining : 0,
     sent_user_ids: null != e.body && null != e.body.sent_user_ids ? e.body.sent_user_ids : [],
     refresh_at: null != (r = null == (t = e.body) ? true : t.refresh_at) ? r : null,
-    recipient_status: o,
-    has_eligible_friends: null != (a = null == (n = e.body) ? true : n.has_eligible_friends) && a
+    recipient_status: a,
+    has_eligible_friends: null != (o = null == (n = e.body) ? true : n.has_eligible_friends) && o
   })
 }, e => {
   (null == e ? true : e.status) !== 404 && i.Z.dispatch({
@@ -106,15 +106,15 @@ async function g(e) {
   let t = [],
     n = new Map;
   for (let i of e) try {
-    var a;
-    let e = null != (a = (await r.tn.post({
+    var o;
+    let e = null != (o = (await r.tn.post({
       url: s.ANM.CREATE_REFERRAL(i),
       oldFormErrors: true,
       rejectWithError: true
-    })).body) ? a : null;
+    })).body) ? o : null;
     null != e && t.push(e), n.set(i, 1)
   } catch (e) {
-    o.Z.captureException(e), n.set(i, 2)
+    a.Z.captureException(e), n.set(i, 2)
   }
   return i.Z.dispatch({
     type: "CREATE_REFERRALS_SUCCESS",

@@ -9,7 +9,7 @@ var Chunk47770 = require("./47770.js"),
   Chunk68721 = require("./68721.js"),
   Chunk591218 = require("./591218.js");
 
-function o(e, t, n) {
+function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -89,19 +89,19 @@ class l extends Chunk47770.Z {
     return null != this.desktop
   }
   constructor(e) {
-    super(), o(this, "audio", true), o(this, "video", new a.Z), o(this, "desktop", null), o(this, "stream", true), o(this, "mergeStreams", () => {
+    super(), a(this, "audio", true), a(this, "video", new o.Z), a(this, "desktop", null), a(this, "stream", true), a(this, "mergeStreams", () => {
       var e, t, n;
       let r = new MediaStream;
       return null != this.desktop ? (null == (e = this.desktop.stream) || e.getTracks().forEach(e => r.addTrack(e)), this.desktop.refreshSpeaking()) : (null == (t = this.audio.stream) || t.getAudioTracks().forEach(e => r.addTrack(e)), null == (n = this.video.stream) || n.getVideoTracks().forEach(e => r.addTrack(e))), this.stream = r, this.emit("stream", r), this.emit("video", this.getVideoStreamId()), r
-    }), o(this, "handleVoiceActivity", e => {
+    }), a(this, "handleVoiceActivity", e => {
       this.emit("voiceactivity", e)
-    }), o(this, "handleDesktopSourceEnd", () => {
+    }), a(this, "handleDesktopSourceEnd", () => {
       this.emit("desktopsourceend")
-    }), o(this, "handleSpeaking", e => {
+    }), a(this, "handleSpeaking", e => {
       this.emit("speaking", e)
-    }), o(this, "handleAudioPermission", e => {
+    }), a(this, "handleAudioPermission", e => {
       this.emit("audio-permission", e)
-    }), o(this, "handleVideoPermission", e => {
+    }), a(this, "handleVideoPermission", e => {
       this.emit("video-permission", e)
     }), this.audio = new i.Z(e), this.audio.addListener("voiceactivity", this.handleVoiceActivity), this.audio.addListener("speaking", this.handleSpeaking), this.audio.addListener("stream", this.mergeStreams), this.audio.addListener("permission", this.handleAudioPermission), this.video.addListener("stream", this.mergeStreams), this.video.addListener("permission", this.handleVideoPermission), this.video.addListener("add-video-track", e => this.emit("add-video-track", e))
   }

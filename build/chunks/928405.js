@@ -2,11 +2,11 @@
 /** chunk id: 928405, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  n: () => o
+  n: () => a
 });
 var Chunk427164 = require("./427164.js"),
   Chunk480218 = require("./480218.js");
-let a = (0, Chunk427164.le)({
+let o = (0, Chunk427164.le)({
   name: "2025-09-image-attachment-mezzanine-v2",
   kind: "user",
   defaultConfig: {
@@ -27,7 +27,7 @@ let a = (0, Chunk427164.le)({
   }
 });
 
-function o(e) {
+function a(e) {
   let {
     location: t
   } = e, {
@@ -39,7 +39,7 @@ function o(e) {
   });
   return n ? {
     enabled: false
-  } : a.getConfig({
+  } : o.getConfig({
     location: t
   })
 }

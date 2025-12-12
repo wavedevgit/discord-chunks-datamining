@@ -1,33 +1,33 @@
-/** Chunk was on 96760 **/
-/** chunk id: 768015, original params: t,e,a (module,exports,require) **/
+/** Chunk was on 31216 **/
+/** chunk id: 768015, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => o
 });
 var Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js");
 
-function c(t) {
+function o(t) {
   let {
     problem: e,
-    channel: a,
-    embeddedActivityLocation: c,
-    feedback: o,
-    activityApplication: d,
-    analyticsData: l = {},
-    location: r,
-    rating: b = null
+    channel: n,
+    embeddedActivityLocation: o,
+    feedback: l,
+    activityApplication: c,
+    analyticsData: r = {},
+    location: _,
+    rating: d = null
   } = t;
-  n.default.track(i.rMx.ACTIVITY_REPORT_PROBLEM, {
+  i.default.track(a.rMx.ACTIVITY_REPORT_PROBLEM, {
     reason: e,
-    guild_id: null == a ? true : a.getGuildId(),
-    channel_id: null == a ? true : a.id,
-    application_id: null == d ? true : d.id,
-    application_name: null == d ? true : d.name,
-    location: r,
-    rating: b,
-    feedback: o,
-    embedded_activity_location_kind: c.kind,
-    rtc_connection_id: l.rtc_connection_id,
-    media_session_id: l.media_session_id
+    guild_id: null == n ? true : n.getGuildId(),
+    channel_id: null == n ? true : n.id,
+    application_id: null == c ? true : c.id,
+    application_name: null == c ? true : c.name,
+    location: _,
+    rating: d,
+    feedback: l,
+    embedded_activity_location_kind: o.kind,
+    rtc_connection_id: r.rtc_connection_id,
+    media_session_id: r.media_session_id
   })
 }

@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk657707 = require("./657707.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk565138 = require("./565138.jsx"),
   Chunk430824 = require("./430824.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk329467 = require("./329467.js");
+  Chunk478942 = require("./478942.js");
 let g = {
   top: 8,
   bottom: 8,
@@ -37,7 +37,7 @@ function E(e) {
       "data-recents-channel": t.id,
       children: [(0, r.jsx)(b, {
         channel: t
-      }), t.isPrivate() ? null : (0, r.jsx)(o.Fbu, {
+      }), t.isPrivate() ? null : (0, r.jsx)(a.Fbu, {
         size: "xxs"
       }), (0, r.jsx)(y, {
         channel: t
@@ -59,8 +59,8 @@ function b(e) {
     channel: t,
     size: c.EFr.SIZE_24
   }) : (0, r.jsx)("div", {
-    className: a()(h.icon, h.dmIcon),
-    children: (0, r.jsx)(o.kBi, {
+    className: o()(h.icon, h.dmIcon),
+    children: (0, r.jsx)(a.kBi, {
       size: "xxs"
     })
   })
@@ -69,12 +69,12 @@ function b(e) {
 function y(e) {
   let {
     channel: t
-  } = e, n = (0, l.e7)([_.Z], () => _.Z.getGuild(t.guild_id)), i = (0, u.ZP)(t, false), a = (0, d.KS)(t, n), o = t.isPrivate() || null == a, s = t.isDM() ? m.intl.formatToPlainString(m.t.smD7XV, {
+  } = e, n = (0, l.e7)([_.Z], () => _.Z.getGuild(t.guild_id)), i = (0, u.ZP)(t, false), o = (0, d.KS)(t, n), a = t.isPrivate() || null == o, s = t.isDM() ? m.intl.formatToPlainString(m.t.smD7XV, {
     username: i
   }) : i;
   return (0, r.jsxs)("div", {
     className: h.channelNameSection,
-    children: [o ? null : (0, r.jsx)(a, {
+    children: [a ? null : (0, r.jsx)(o, {
       className: h.channelTypeIcon,
       size: "xxs"
     }), (0, r.jsx)(c.Heading, {

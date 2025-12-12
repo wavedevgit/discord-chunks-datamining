@@ -13,7 +13,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk486114 = require("./486114.js");
+  Chunk699454 = require("./699454.js");
 
 function f(e) {
   let {
@@ -23,21 +23,21 @@ function f(e) {
   return (0, r.jsx)(s.Z, {
     contentClassName: d.messageContentContainer,
     iconContainerClassName: d.iconContainer,
-    iconNode: (0, r.jsx)(a.Dkj, {
+    iconNode: (0, r.jsx)(o.Dkj, {
       colorClass: d.icon
     }),
     children: (0, r.jsxs)("div", {
       className: d.container,
       children: [(0, r.jsxs)("div", {
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
           children: t.content
         }), (0, r.jsxs)("div", {
           className: d.nitroBadge,
-          children: [(0, r.jsx)(a.SrA, {
+          children: [(0, r.jsx)(o.SrA, {
             size: "xs",
             colorClass: d.nitroBadgeIcon
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(o.Text, {
             variant: "text-xs/medium",
             className: d.nitroBadgeText,
             children: u.intl.string(u.t["BMw+7I"])
@@ -45,7 +45,7 @@ function f(e) {
         })]
       }), (0, r.jsx)("div", {
         className: d.buttonContainer,
-        children: (0, r.jsx)(o.Z, {
+        children: (0, r.jsx)(a.Z, {
           showGradient: true,
           iconClassName: d.premiumIcon,
           subscriptionTier: c.Si.TIER_2,

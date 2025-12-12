@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk159635 = require("./159635.js"),
-  o = require.n(Chunk159635),
+  a = require.n(Chunk159635),
   Chunk159299 = require("./159299.js"),
   Chunk675478 = require("./675478.js"),
   Chunk709302 = require("./709302.js"),
@@ -123,14 +123,14 @@ class T {
         allowSnowflake: r,
         blacklist: i
       } = this.options,
-      a = null != i ? e => !i.has("channel:".concat(e.id)) : true;
+      o = null != i ? e => !i.has("channel:".concat(e.id)) : true;
     return p.ZP.queryChannels({
       query: e,
       guildId: null,
       limit: t,
       fuzzy: true,
       allowSnowflake: r,
-      filter: a,
+      filter: o,
       boosters: n
     })
   }
@@ -157,12 +157,12 @@ class T {
         allowSnowflake: r,
         blacklist: i
       } = this.options,
-      a = null != i ? e => !i.has("guild:".concat(e.id)) : true;
+      o = null != i ? e => !i.has("guild:".concat(e.id)) : true;
     return p.ZP.queryGuilds({
       query: e,
       limit: t,
       fuzzy: true,
-      filter: a,
+      filter: o,
       boosters: n,
       allowSnowflake: r
     })
@@ -174,16 +174,16 @@ class T {
     if (null == r || !this._include(E.h8.USER)) return;
     let {
       allowSnowflake: i,
-      userFilters: a
-    } = this.options, o = I(E.h8.USER, this.options);
-    if ((null == a ? true : a.thread) != null) {
-      let t = s.Z.getMemberListSections(a.thread),
+      userFilters: o
+    } = this.options, a = I(E.h8.USER, this.options);
+    if ((null == o ? true : o.thread) != null) {
+      let t = s.Z.getMemberListSections(o.thread),
         r = [];
       for (let e in t) {
         let n = t[e];
         for (let e of n.userIds) {
           var l, c, u;
-          (null == a || !a.friends || d.Z.isFriend(e)) && (null != (u = null == (l = this._userBlacklist) ? true : l.includes(e)) && u || r.push({
+          (null == o || !o.friends || d.Z.isFriend(e)) && (null != (u = null == (l = this._userBlacklist) ? true : l.includes(e)) && u || r.push({
             userId: e,
             nick: null == (c = n.usersById[e]) ? true : c.displayName
           }))
@@ -193,16 +193,16 @@ class T {
         query: e,
         users: r,
         limit: n,
-        boosters: o,
+        boosters: a,
         allowSnowflake: i
       });
       return
     }
     true !== t && _.Z.requestMembers(t, e, 100), r.setLimit(n), r.setQuery({
       query: e,
-      filters: a,
+      filters: o,
       blacklist: this._userBlacklist,
-      boosters: o
+      boosters: a
     })
   }
   queryGroupDMs(e, t) {
@@ -228,7 +228,7 @@ class T {
   queryLink(e, t) {
     let n;
     if (!this._include(E.h8.LINK)) return [];
-    let r = o().sanitizeUrl(e);
+    let r = a().sanitizeUrl(e);
     try {
       n = new URL(r)
     } catch (e) {
@@ -236,9 +236,9 @@ class T {
     }
     let {
       pathname: i,
-      hostname: a = "",
+      hostname: o = "",
       host: s
-    } = n, l = m.Z.isDiscordHostname(a) || window.location.host === s;
+    } = n, l = m.Z.isDiscordHostname(o) || window.location.host === s;
     return null !== i && l && m.Z.isAppRoute(i) ? [{
       type: E.h8.LINK,
       record: c.Z.fromPath(i),
@@ -252,7 +252,7 @@ class T {
       fuzzy: true
     }) : []
   }
-  constructor(e, t, n = O, r = v, a = 0) {
+  constructor(e, t, n = O, r = v, o = 0) {
     b(this, "query", ""), b(this, "options", v), b(this, "results", []), b(this, "_userResults", []), b(this, "_groupDMResults", []), b(this, "_textChannelResults", []), b(this, "_voiceChannelResults", []), b(this, "_guildResults", []), b(this, "_applicationResults", []), b(this, "_linkResults", []), b(this, "_inAppNavigations", []), b(this, "_asyncTimeout", true), b(this, "userSearchContext", true), b(this, "onResultsChange", true), b(this, "resultTypes", true), b(this, "_userBlacklist", null), b(this, "_limit", true), b(this, "_refetchForSingleCategoryLimit", true), b(this, "_refetched", false), b(this, "parseUserResults", e => {
       let {
         results: t
@@ -276,6 +276,6 @@ class T {
       !n && this._userResults.length > this._limit && (this._userResults.length = this._limit), n && this.refetchIfSingleCategoryResults(), this.updateAllResults()
     }), b(this, "updateAllResults", () => {
       clearTimeout(this._asyncTimeout), this.results = i()([...this._userResults, ...this._groupDMResults, ...this._textChannelResults, ...this._voiceChannelResults, ...this._guildResults, ...this._linkResults, ...this._inAppNavigations]).uniqBy(e => "".concat(e.type, "-").concat(e.record.id)).sort(g.Z).value(), this.onResultsChange(this.results, this.query)
-    }), this.onResultsChange = e, this.setOptions(r, true), this._limit = n, this._refetchForSingleCategoryLimit = a, this.createSearchContext(), this.setResultTypes(t)
+    }), this.onResultsChange = e, this.setOptions(r, true), this._limit = n, this._refetchForSingleCategoryLimit = o, this.createSearchContext(), this.setResultTypes(t)
   }
 }

@@ -13,7 +13,7 @@ var Chunk399606 = require("./399606.js"),
 let c = () => ({
   selectedTab: (0, Chunk399606.e7)([Chunk914788.Z], () => Chunk914788.Z.getSelectedTab()),
   handleTabChange: e => {
-    a.ZP.selectTab(e), i.default.track(l.rMx.FAMILY_CENTER_ACTION, {
+    o.ZP.selectTab(e), i.default.track(l.rMx.FAMILY_CENTER_ACTION, {
       action: s.YC.TabChange,
       tab: e
     })

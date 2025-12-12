@@ -101,7 +101,7 @@ async function P(e, t, n) {
         return null != e && (0, s.yE)(e.flags, C.udG.EMBEDDED) && (null == (t = e.integrationTypesConfig) ? true : t[i.Y.USER_INSTALL]) != null
       },
       t = f.Z.getApplication(d);
-    l = e(t) || e(t = _.ZP.createFromServer(await (0, b.UM)(d, M))) ? i.Y.USER_INSTALL : i.Y.GUILD_INSTALL
+    l = e(t) || e(t = b.ZP.createFromServer(await (0, _.UM)(d, M))) ? i.Y.USER_INSTALL : i.Y.GUILD_INSTALL
   }
   try {
     [o, {

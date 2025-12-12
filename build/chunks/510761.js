@@ -2,7 +2,7 @@
 /** chunk id: 510761, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X3: () => a,
+  X3: () => o,
   nq: () => i
 });
 var Chunk452913 = require("./452913.js");
@@ -11,7 +11,7 @@ let i = {
     comboKeysBindGlobal: true,
     action: e => (e.preventDefault(), e.stopPropagation(), (0, r.Z)(), false)
   },
-  a = {
+  o = {
     binds: ["mod+alt+up", "mod+shift+[", "ctrl+shift+tab"],
     comboKeysBindGlobal: true,
     action: e => (e.preventDefault(), e.stopPropagation(), (0, r.Z)(false), false)

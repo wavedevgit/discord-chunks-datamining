@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk112471 = require("./112471.js"),
   Chunk746728 = require("./746728.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk106016 = require("./106016.js");
+  Chunk656535 = require("./656535.js");
 
 function f(e) {
   let {
@@ -37,7 +37,7 @@ function g(e) {
       loadId: t,
       categoryId: Number(e)
     })
-  }, [t]), b = i.useMemo(() => null == g ? [] : g.map(e => {
+  }, [t]), _ = i.useMemo(() => null == g ? [] : g.map(e => {
     let [t, n] = e;
     return {
       id: "".concat(t),
@@ -54,7 +54,7 @@ function g(e) {
       color: "text-subtle",
       children: d.intl.string(d.t.f09BQJ)
     }), (0, r.jsx)(a.ZP, {
-      items: b,
+      items: _,
       title: h,
       onSelect: m,
       selected: "".concat(n),

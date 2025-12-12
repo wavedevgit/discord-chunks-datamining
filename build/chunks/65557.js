@@ -6,31 +6,31 @@ var Chunk473749 = require("./473749.js");
 function i(e, t) {
   return e === t && (0 !== e || 1 / e == 1 / t) || e != e && t != t
 }
-var a = "function" == typeof Object.is ? Object.is : i,
-  o = Chunk473749.useState,
+var o = "function" == typeof Object.is ? Object.is : i,
+  a = Chunk473749.useState,
   s = Chunk473749.useEffect,
   l = Chunk473749.useLayoutEffect,
   c = Chunk473749.useDebugValue;
 
 function u(e, t) {
   var n = t(),
-    r = o({
+    r = a({
       inst: {
         value: n,
         getSnapshot: t
       }
     }),
     i = r[0].inst,
-    a = r[1];
+    o = r[1];
   return l(function() {
-    i.value = n, i.getSnapshot = t, d(i) && a({
+    i.value = n, i.getSnapshot = t, d(i) && o({
       inst: i
     })
   }, [e, n, t]), s(function() {
-    return d(i) && a({
+    return d(i) && o({
       inst: i
     }), e(function() {
-      d(i) && a({
+      d(i) && o({
         inst: i
       })
     })
@@ -42,7 +42,7 @@ function d(e) {
   e = e.value;
   try {
     var n = t();
-    return !a(e, n)
+    return !o(e, n)
   } catch (e) {
     returntrue
   }

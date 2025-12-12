@@ -60,7 +60,7 @@ let u = {
   },
   updateLayout(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : s.IlC.APP;
-    a.default.track(s.rMx.VIDEO_LAYOUT_TOGGLED, c({
+    o.default.track(s.rMx.VIDEO_LAYOUT_TOGGLED, c({
       video_layout: t
     }, (0, i.AB)(e))), r.Z.dispatch({
       type: "CHANNEL_RTC_UPDATE_LAYOUT",
@@ -110,10 +110,10 @@ let u = {
       channelId: e,
       chatOpen: t
     }), t ? setTimeout(() => {
-      o.S.dispatch(s.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+      a.S.dispatch(s.CkL.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: e
       })
-    }, 0) : o.S.dispatch(s.CkL.FOCUS_CHAT_BUTTON)
+    }, 0) : a.S.dispatch(s.CkL.FOCUS_CHAT_BUTTON)
   },
   jumpToVoiceChannelMessage(e, t, n, i) {
     r.Z.dispatch({

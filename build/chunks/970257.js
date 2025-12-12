@@ -16,7 +16,7 @@ let l = 50;
 function c(e) {
   if (null == e) returnfalse;
   let t = e.id,
-    n = o.default.getCurrentUser();
+    n = a.default.getCurrentUser();
   return null != n && n.id !== t && true !== e.system
 }
 
@@ -28,7 +28,7 @@ function d(e) {
   let t = r.Z.getChannel(e);
   if (null == t) returnfalse;
   if (t.type === s.d4z.DM || t.type === s.d4z.GROUP_DM) returntrue;
-  if (a.Z.canWithPartialContext(s.Plq.MANAGE_MESSAGES, {
+  if (o.Z.canWithPartialContext(s.Plq.MANAGE_MESSAGES, {
       channelId: e
     })) {
     let e = i.Z.getMemberCount(t.getGuildId());

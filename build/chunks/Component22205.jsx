@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk467721 = require("./467721.js"),
   Chunk818405 = require("./818405.js"),
   Chunk587158 = require("./587158.js"),
@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk249993 = require("./249993.js");
+  Chunk534887 = require("./534887.js");
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -40,7 +40,7 @@ function R(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let w = o().throttle(() => {
+let w = a().throttle(() => {
     Chunk797614.Z.increment({
       name: Chunk286379.V.APP_CRASHED,
       tags: ["reason:".concat(Chunk818405.v.UNHANDLED_JS_ERROR), "level:".concat(Chunk587158.c.FATAL)]
@@ -53,8 +53,8 @@ let w = o().throttle(() => {
 function x(e) {
   var t, n;
   let {
-    error: a,
-    onLock: o,
+    error: o,
+    onLock: a,
     onReload: l,
     onDisable: c,
     onCrashDisabled: u
@@ -65,20 +65,20 @@ function x(e) {
     null != h.current && clearTimeout(h.current)
   }));
   let R = i.useCallback(() => {
-      p.set(0), null != h.current && clearTimeout(h.current), h.current = null, null == o || o(), null == u || u()
-    }, [p, o, u]),
+      p.set(0), null != h.current && clearTimeout(h.current), h.current = null, null == a || a(), null == u || u()
+    }, [p, a, u]),
     w = i.useCallback(e => {
-      O || (v(true), null == o || o(), _.Z.track(A.rMx.NOTIFICATION_CLICKED, {
+      O || (v(true), null == a || a(), _.Z.track(A.rMx.NOTIFICATION_CLICKED, {
         notif_type: C.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => null == l ? true : l(), 200))
-    }, [o, l, O]),
+    }, [a, l, O]),
     x = i.useCallback(e => {
       e.stopPropagation(), e.shiftKey ? (y(true), null != h.current && clearTimeout(h.current)) : y(false)
     }, [y]),
     L = i.useCallback(e => {
-      e.stopPropagation(), null == o || o(), null == c || c()
-    }, [c, o]),
+      e.stopPropagation(), null == a || a(), null == c || c()
+    }, [c, a]),
     j = (0, d.e7)([I.Z], () => I.Z.getFocusedRunningGame()),
     M = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
@@ -90,14 +90,14 @@ function x(e) {
         children: [(0, r.jsx)(f.Text, {
           variant: "text-sm/normal",
           color: "text-subtle",
-          children: a.message
+          children: o.message
         }), (0, r.jsx)(f.Text, {
           variant: "text-xxs/normal",
           color: "text-subtle",
           children: (0, r.jsx)("code", {
             className: P.code,
             children: (0, r.jsx)("pre", {
-              children: a.stack
+              children: o.stack
             })
           })
         })]
@@ -119,7 +119,7 @@ function x(e) {
     onNotificationClick: x,
     onConfirmClick: w,
     onCancelClick: null != j ? L : true,
-    onDismissClick: o,
+    onDismissClick: a,
     expand: true,
     locked: true,
     notificationId: "overlay-crashed",
@@ -164,7 +164,7 @@ class L extends Chunk473749.PureComponent {
       showError: i
     } = this.state;
     return null != require ? Chunk473749 ? (0, Chunk54381.jsx)(Chunk333031.Z, {
-      className: Chunk249993.errorClickNotification,
+      className: Chunk534887.errorClickNotification,
       children: (0, Chunk54381.jsx)(x, {
         error: require,
         onLock: () => {

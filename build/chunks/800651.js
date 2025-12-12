@@ -35,16 +35,16 @@ function l(e) {
 }
 let c = e => null != e && e !== r.Q4.UNSET_EXPLICIT_CONTENT_REDACTION,
   u = e => {
-    let t = o.up.getControlledSetting(e),
+    let t = a.up.getControlledSetting(e),
       {
         goreContentNonFriendDm: n,
         goreContentFriendDm: i
       } = null != t ? t : {};
     return {
-      goreContentNonFriendDm: c(n) ? n : (0, a.zR)({
+      goreContentNonFriendDm: c(n) ? n : (0, o.zR)({
         isDm: true
       }),
-      goreContentFriendDm: c(i) ? i : (0, a.zR)({
+      goreContentFriendDm: c(i) ? i : (0, o.zR)({
         isDm: true,
         isFriend: true
       }),
@@ -53,7 +53,7 @@ let c = e => null != e && e !== r.Q4.UNSET_EXPLICIT_CONTENT_REDACTION,
   },
   d = (e, t) => {
     let n = u(e);
-    o.up.updateControlledSetting(e, l({}, n, t))
+    a.up.updateControlledSetting(e, l({}, n, t))
   },
   f = e => {
     let {
@@ -62,11 +62,11 @@ let c = e => null != e && e !== r.Q4.UNSET_EXPLICIT_CONTENT_REDACTION,
       isFriend: r = false
     } = e;
     if (c(n)) return n;
-    let a = o.eD.getControlledSetting(t);
-    return r ? i.MS[a] : i.FE[a]
+    let o = a.eD.getControlledSetting(t);
+    return r ? i.MS[o] : i.FE[o]
   },
   p = e => {
-    let t = o.sx.getControlledSetting(e);
+    let t = a.sx.getControlledSetting(e);
     return {
       explicitContentNonFriendDm: f({
         teenId: e,
@@ -82,5 +82,5 @@ let c = e => null != e && e !== r.Q4.UNSET_EXPLICIT_CONTENT_REDACTION,
   },
   _ = (e, t) => {
     let n = p(e);
-    o.sx.updateControlledSetting(e, l({}, n, t))
+    a.sx.updateControlledSetting(e, l({}, n, t))
   }

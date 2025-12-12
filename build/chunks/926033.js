@@ -2,10 +2,10 @@
 /** chunk id: 926033, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 var r, Chunk166691 = require("./166691.js"),
-  a = require("./195653.js")(),
+  o = require("./195653.js")(),
   Chunk706165 = require("./706165.js"),
   Chunk566817 = require("./566817.js");
-if (a) {
+if (o) {
   var l = Chunk166691("RegExp.prototype.exec"),
     c = {},
     u = function() {
@@ -18,7 +18,7 @@ if (a) {
   "symbol" == typeof Symbol.toPrimitive && (d[Symbol.toPrimitive] = u), r = function(e) {
     if (!e || "object" != typeof e) returnfalse;
     var t = s(e, "lastIndex");
-    if (!(t && o(t, "value"))) returnfalse;
+    if (!(t && a(t, "value"))) returnfalse;
     try {
       l(e, d)
     } catch (e) {

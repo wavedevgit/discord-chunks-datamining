@@ -23,21 +23,21 @@ function p(e) {
     } = e,
     m = "channel" === n.type ? n.channel : true,
     h = (0, r.e7)([c.Z], () => c.Z.can(d.Pl.USE_EMBEDDED_ACTIVITIES, m)),
-    g = (0, a.KF)(null == m ? true : m.id),
+    g = (0, o.KF)(null == m ? true : m.id),
     E = false;
   switch (_) {
     case s.JS.LEAVE:
       E = false;
       break;
     case s.JS.START:
-      null == m ? E = false : (null == m ? true : m.isGuildVoice()) ? g !== a.jy.CAN_LAUNCH && (E = true) : (0, i.WS)(m) || (E = true);
+      null == m ? E = false : (null == m ? true : m.isGuildVoice()) ? g !== o.jy.CAN_LAUNCH && (E = true) : (0, i.WS)(m) || (E = true);
       break;
     case s.JS.JOIN:
       (null == m ? true : m.isGuildVoice()) ? E = !h: (0, i.WS)(m) || (E = true)
   }
   if (_ !== s.JS.LEAVE) {
     let e = p instanceof l.ZP ? p.embeddedActivityConfig : p.embedded_activity_config,
-      n = (0, o.Z)((0, u.getOS)());
+      n = (0, a.Z)((0, u.getOS)());
     null == e || e.supported_platforms.includes(n) ? (null == m ? true : m.isThread()) && (E = true, t = f.intl.string(f.t.ddSR3v)) : (E = false, t = f.intl.string(f.t.z2YTgJ))
   }
   return E && null == t && (t = f.intl.string(f.t.f41E1g)), {

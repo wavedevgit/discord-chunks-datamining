@@ -9,7 +9,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
   Chunk91192 = require("./91192.jsx"),
@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk294218 = require("./294218.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk619629 = require("./619629.js");
+  Chunk129633 = require("./129633.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -75,8 +75,8 @@ function D(e, t) {
   if (null == e) return {};
   var n, r, i = x(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -84,8 +84,8 @@ function D(e, t) {
 function x(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let L = 43,
@@ -101,10 +101,10 @@ let G = e => {
       title: t,
       icon: n,
       children: i,
-      className: a
+      className: o
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(a, A.header),
+      className: a()(o, A.header),
       children: [(0, r.jsxs)("div", {
         className: A.titleContainer,
         children: [null != n ? (0, r.jsx)(n, {
@@ -141,7 +141,7 @@ class F extends Chunk473749.PureComponent {
       jumping: e
     } = this.props;
     return (0, Chunk54381.jsx)("div", {
-      className: Chunk619629.buttonContainer,
+      className: Chunk129633.buttonContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "secondary",
         size: "sm",
@@ -157,10 +157,10 @@ class F extends Chunk473749.PureComponent {
       canCloseAllMessages: t,
       canManageMessages: n,
       channel: i,
-      closeAriaLabel: a
+      closeAriaLabel: o
     } = this.props;
     return null != module && (exports || require || null != Chunk473749 && Chunk473749.isPrivate()) ? (0, Chunk54381.jsx)("div", {
-      className: Chunk619629.buttonContainer,
+      className: Chunk129633.buttonContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.hU, {
         icon: Chunk481060.Dio,
         size: "sm",
@@ -172,7 +172,7 @@ class F extends Chunk473749.PureComponent {
   }
   render() {
     return (0, Chunk54381.jsxs)("div", {
-      className: Chunk619629.actionButtons,
+      className: Chunk129633.actionButtons,
       children: [this.renderJumpButton(), this.renderCloseButton()]
     })
   }
@@ -205,7 +205,7 @@ function V(e) {
   let {
     analyticsName: t,
     items: n,
-    hasMore: a,
+    hasMore: o,
     loading: s,
     loadMore: f,
     renderHeader: m,
@@ -241,12 +241,12 @@ function V(e) {
   let F = i.useCallback(() => {
       var e;
       let t = null == (e = R.current) ? true : e.getScrollerState();
-      null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < k && a && !s && (null == f || f())
-    }, [a, f, s]),
+      null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < k && o && !s && (null == f || f())
+    }, [o, f, s]),
     B = [],
     V = true;
   null == n || s && 0 === n.length ? B = [(0, r.jsx)("div", {
-    className: o()(A.emptyPlaceholder, A.loadingPlaceholder),
+    className: a()(A.emptyPlaceholder, A.loadingPlaceholder),
     children: (0, r.jsx)(d.$jN, {})
   }, "spinner")] : 0 === n.length ? B.push((0, r.jsx)(i.Fragment, {
     children: h()
@@ -257,7 +257,7 @@ function V(e) {
   null != n && n.length > 0 && null != f && (H = s ? (0, r.jsx)("div", {
     className: A.loadingMore,
     children: (0, r.jsx)(d.$jN, {})
-  }, "loading-more-after") : a ? (0, r.jsx)("div", {
+  }, "loading-more-after") : o ? (0, r.jsx)("div", {
     className: A.hasMore,
     children: (0, r.jsx)(d.Button, {
       variant: "secondary",
@@ -286,9 +286,9 @@ function V(e) {
       maxHeight: Z.height - L - j - 48
     };
   G && (K.maxHeight -= M);
-  let z = null != f && a;
+  let z = null != f && o;
   return (0, r.jsx)("div", {
-    className: o()(I, A.messagesPopoutWrap),
+    className: a()(I, A.messagesPopoutWrap),
     style: K,
     onClick: U,
     onDoubleClick: U,
@@ -296,7 +296,7 @@ function V(e) {
     children: (0, r.jsxs)(d.y5t, {
       component: m(),
       children: [(0, r.jsxs)(d.Den, {
-        className: o()(A.messagesPopout, S),
+        className: a()(A.messagesPopout, S),
         onScroll: z ? F : true,
         ref: R,
         children: [(0, r.jsx)(c.bG, {
@@ -323,8 +323,8 @@ function H(e) {
   let {
     analyticsName: t,
     onFetch: n,
-    channel: a,
-    messages: o,
+    channel: o,
+    messages: a,
     hasMore: s,
     loading: l,
     loadMore: c,
@@ -340,7 +340,7 @@ function H(e) {
     listName: N,
     closeAriaLabel: P
   } = e, R = (0, u.e7)([g.Z], () => {
-    let e = null != a ? g.Z.getMessages(a.id) : null;
+    let e = null != o ? g.Z.getMessages(o.id) : null;
     return null != e && null != e.jumpTargetId && e.loadingMore && null == e.get(e.jumpTargetId)
   });
 
@@ -349,8 +349,8 @@ function H(e) {
       let {
         id: r,
         channel_id: i
-      } = e, a = h.Z.getChannel(i);
-      null != a && (f.Z.trackJump(i, r, t), (0, m.uL)(T.Z5c.CHANNEL(a.getGuildId(), i, r))), null == d || d(n)
+      } = e, o = h.Z.getChannel(i);
+      null != o && (f.Z.trackJump(i, r, t), (0, m.uL)(T.Z5c.CHANNEL(o.getGuildId(), i, r))), null == d || d(n)
     };
     (0, S.Z)(e, r) && !R && r()
   }
@@ -370,7 +370,7 @@ function H(e) {
         message: t,
         channel: n
       }), (0, r.jsx)(B, {
-        channel: a,
+        channel: o,
         message: t,
         jumping: R,
         canCloseAllMessages: p,
@@ -381,12 +381,12 @@ function H(e) {
     }, t.id)), i)
   }
   i.useEffect(() => {
-    n(a)
-  }, [a, n]);
-  let x = i.useMemo(() => null == o ? true : o.map(e => ({
+    n(o)
+  }, [o, n]);
+  let x = i.useMemo(() => null == a ? true : a.map(e => ({
     message: e,
-    channel: a
-  })), [o, a]);
+    channel: o
+  })), [a, o]);
   return (0, r.jsx)(V, {
     className: v,
     scrollerClassName: O,

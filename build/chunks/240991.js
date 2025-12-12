@@ -10,7 +10,7 @@ require.r(exports), require.d(exports, {
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk31775 = require("./31775.js"),
-  o = require.n(Chunk31775),
+  a = require.n(Chunk31775),
   Chunk159635 = require("./159635.js"),
   l = require.n(Chunk159635),
   Chunk25209 = require("./25209.js"),
@@ -22,7 +22,7 @@ let p = (0, Chunk364458.Z)([Chunk428595.Z.PROFILE_BIO_RULES, (0, Chunk691424.Z)(
     enableBuildOverrides: false,
     mustConfirmExternalLink: true
   })]),
-  _ = new(o())({
+  _ = new(a())({
     max: 2e3
   }),
   m = Chunk25209.w4(p),

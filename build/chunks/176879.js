@@ -42,12 +42,12 @@ function p(e) {
     source: g
   }), {
     isDisplayProfileSocialLayerStorefrontEligible: T
-  } = (0, a.Z)({
+  } = (0, o.Z)({
     displayProfile: p,
     location: d
   }), {
     wishlistItems: C
-  } = (0, o.Z)({
+  } = (0, a.Z)({
     guildId: (0, i.ac)(),
     numWishlistItems: n
   }), A = r.useMemo(() => {
@@ -88,9 +88,9 @@ function _(e) {
     user: t,
     numItems: n = u.zL,
     source: i,
-    location: a
+    location: o
   } = e, {
-    displayItems: o,
+    displayItems: a,
     defaultWishlistId: s,
     wishlist: l,
     hasMoreItems: c,
@@ -101,7 +101,7 @@ function _(e) {
     user: t,
     numItems: n,
     source: i,
-    location: a
+    location: o
   }), {
     displayedWishlistItems: h,
     title: g
@@ -110,16 +110,16 @@ function _(e) {
     return null == e || 0 === e.length ? {
       displayedWishlistItems: null,
       title: null
-    } : e.length > 1 && e.length < n && o.length > e.length ? {
-      displayedWishlistItems: o.map(e => e.item),
+    } : e.length > 1 && e.length < n && a.length > e.length ? {
+      displayedWishlistItems: a.map(e => e.item),
       title: d.intl.string(d.t.BCi1gT)
     } : {
       displayedWishlistItems: e,
       title: d.intl.string(d.t["7lZ31J"])
     }
-  }, [o, l, n]);
+  }, [a, l, n]);
   return {
-    displayItems: o,
+    displayItems: a,
     hasMoreItems: c,
     totalWishlistItemCount: f,
     wishlistItemCountToBeDisplayed: _,

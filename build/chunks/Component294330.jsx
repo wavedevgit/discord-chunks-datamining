@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk826946 = require("./826946.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk465825 = require("./465825.js"),
+  Chunk972725 = require("./972725.js"),
   Chunk129512 = require("./129512.js"),
   Chunk330065 = require("./330065.js"),
   Chunk755386 = require("./755386.js");
@@ -83,10 +83,10 @@ function N(e) {
       }
     })
   }, [t]), L = (0, d.ZP)(), R = t.features.has(v.GuildFeatures.HUB), D = i.useMemo(() => {
-    let e = _.ZP.getGuildDiscoverySplashURL({
+    let e = b.ZP.getGuildDiscoverySplashURL({
       id: t.id,
       splash: t.discoverySplash,
-      size: 300 * (0, b.x_)()
+      size: 300 * (0, _.x_)()
     });
     if (null != e) return e;
     if (R) return T;
@@ -96,7 +96,7 @@ function N(e) {
       case v.BRd.LIGHT:
         return S
     }
-  }, [t.discoverySplash, t.id, R, L]), M = i.useMemo(() => _.ZP.getGuildIconURL({
+  }, [t.discoverySplash, t.id, R, L]), M = i.useMemo(() => b.ZP.getGuildIconURL({
     id: t.id,
     icon: t.icon,
     size: 48

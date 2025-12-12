@@ -9,8 +9,8 @@ require("./473749.js");
 var Chunk212598 = require("./212598.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk903072 = require("./903072.js"),
-  Chunk844434 = require("./844434.js");
+  Chunk250331 = require("./250331.js"),
+  Chunk300778 = require("./300778.js");
 
 function l(e) {
   let {
@@ -20,7 +20,7 @@ function l(e) {
     onAuthToken: d,
     onError: u,
     onClose: p
-  } = e, b = t ? (0, o.jsx)("img", {
+  } = e, f = t ? (0, o.jsx)("img", {
     src: c.Z,
     width: "231",
     height: "172",
@@ -30,7 +30,7 @@ function l(e) {
     width: "231",
     height: "160",
     alt: ""
-  }), f = t ? s.intl.string(s.t.EuwcxO) : s.intl.string(s.t["e/z3na"]), x = t ? s.intl.string(s.t["1GjS/W"]) : s.intl.string(s.t["7tXu0i"]);
+  }), b = t ? s.intl.string(s.t.EuwcxO) : s.intl.string(s.t["e/z3na"]), x = t ? s.intl.string(s.t["1GjS/W"]) : s.intl.string(s.t["7tXu0i"]);
   return (0, o.jsx)(r.t, {
     platformType: i.ABu.XBOX,
     isWaitingForConnection: t,
@@ -39,8 +39,8 @@ function l(e) {
     onAuthToken: d,
     onError: u,
     onClose: p,
-    img: b,
-    title: f,
+    img: f,
+    title: b,
     body: x
   })
 }

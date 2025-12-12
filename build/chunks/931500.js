@@ -10,7 +10,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk651941 = require("./651941.js");
 
 function s(e) {
-  return (0, a.Wu)([o.Z], () => i()(o.Z.getUserVerifiedKeys(e)).entries().map(e => {
+  return (0, o.Wu)([a.Z], () => i()(a.Z.getUserVerifiedKeys(e)).entries().map(e => {
     let [t, n] = e;
     return {
       verifiedKey: t,

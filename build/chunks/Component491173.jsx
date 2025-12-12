@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk378233 = require("./378233.js"),
   Chunk419922 = require("./419922.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk475765 = require("./475765.js");
+  Chunk695004 = require("./695004.js");
 let E = (0, Chunk624138.Mg)(Chunk477690.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BAR_GRAPHIC_PRIMARY_DIMENSIONS),
   b = (0, Chunk624138.Mg)(Chunk477690.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BAR_GRAPHIC_SECONDARY_DIMENSIONS),
   y = e => {
@@ -49,29 +49,29 @@ let E = (0, Chunk624138.Mg)(Chunk477690.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION
   O = Chunk473749.memo(function(e) {
     let {
       stickersGrid: t
-    } = e, n = l.ZN.useStore(e => e.inspectedExpressionPosition), a = i.useMemo(() => {
+    } = e, n = l.ZN.useStore(e => e.inspectedExpressionPosition), o = i.useMemo(() => {
       var e;
       let {
         rowIndex: r,
         columnIndex: i
-      } = n, a = null == (e = t[r]) ? true : e[i];
-      return (null == a ? true : a.type) === p.al.CREATE_STICKER ? {
-        guild_id: a.guild_id,
-        name: a.name
-      } : (null == a ? true : a.type) !== p.al.STICKER ? null : a.sticker
+      } = n, o = null == (e = t[r]) ? true : e[i];
+      return (null == o ? true : o.type) === p.al.CREATE_STICKER ? {
+        guild_id: o.guild_id,
+        name: o.name
+      } : (null == o ? true : o.type) !== p.al.STICKER ? null : o.sticker
     }, [t, n]);
-    if (null == a) return null;
+    if (null == o) return null;
     let {
       graphic: s,
       title: u
-    } = y(a), d = (0, _.jl)(a) || (0, _.J8)(a) ? (0, r.jsx)(m.Z, {
+    } = y(o), d = (0, _.jl)(o) || (0, _.J8)(o) ? (0, r.jsx)(m.Z, {
       isInteracting: true,
       size: E,
-      sticker: a,
+      sticker: o,
       disableAnimation: true
     }) : (0, r.jsx)("div", {
       className: g.iconWrapper,
-      children: (0, r.jsx)(o.qJs, {
+      children: (0, r.jsx)(a.qJs, {
         size: "md",
         color: "currentColor",
         className: g.icon
@@ -80,7 +80,7 @@ let E = (0, Chunk624138.Mg)(Chunk477690.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION
     return (0, r.jsx)(c.Z, {
       graphicPrimary: d,
       graphicSecondary: s,
-      titlePrimary: a.name,
-      titleSecondary: (0, _.jl)(a) || (0, _.J8)(a) ? u : null
+      titlePrimary: o.name,
+      titleSecondary: (0, _.jl)(o) || (0, _.J8)(o) ? u : null
     })
   })

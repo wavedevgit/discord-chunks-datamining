@@ -63,8 +63,8 @@ function E(e, t) {
   if (null == e) return {};
   var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -72,8 +72,8 @@ function E(e, t) {
 function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let y = "USER_SETTINGS_MODAL_MODAL_KEY";
@@ -86,7 +86,7 @@ async function O(e) {
     subsection: l,
     stackingBehavior: u = "replaceAll"
   } = t, d = E(t, ["subsection", "stackingBehavior"]);
-  a.Z.dispatch(m({
+  o.Z.dispatch(m({
     type: "USER_SETTINGS_MODAL_OPEN",
     subsection: null != l ? l : null
   }, d)), (0, f.yP)("openUserSettings") ? (0, i.nfh)(y) ? c.Z.setState({
@@ -94,7 +94,7 @@ async function O(e) {
   }) : await (0, i.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("77069"), n.e("91968")]).then(n.bind(n, 245286));
+    } = await Promise.all([n.e("77069"), n.e("88569")]).then(n.bind(n, 245286));
     return n => (0, r.jsx)(t, g(m({}, n), {
       target: e
     }))
@@ -103,7 +103,7 @@ async function O(e) {
     stackingBehavior: u,
     stackNextByDefault: true,
     contextKey: i.z1l
-  }) : (0, o.jN)(p.S9g.USER_SETTINGS), null == s || s()
+  }) : (0, a.jN)(p.S9g.USER_SETTINGS), null == s || s()
 }
 
 function v(e) {

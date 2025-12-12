@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   Bs: () => r,
-  NJ: () => a,
-  x0: () => o,
+  NJ: () => o,
+  x0: () => a,
   xH: () => i
 });
 var r = function(e) {
@@ -13,9 +13,9 @@ var r = function(e) {
   i = function(e) {
     return e.UNKNOWN = "unknown", e.BELOW_MINIMUM = "below_minimum", e.MEETS_MINIMUM = "meets_minimum", e.MEETS_AUTO_ENABLE = "meets_auto_enable", e
   }({}),
-  a = function(e) {
+  o = function(e) {
     return e.CLIP = "clip", e.SCREENSHOT = "screenshot", e.VOICE_CLIP = "voice_clip", e
   }({}),
-  o = function(e) {
+  a = function(e) {
     return e.KILL = "kill", e.MULTIKILL = "multikill", e.DEATH = "death", e.ASSIST = "assist", e.ITEM = "item", e.VICTORY = "victory", e.DEFEAT = "defeat", e.LEVEL_UP = "level_up", e.TREASURE = "treasure", e.OBJECTIVE_KILL = "objective_kill", e
   }({})

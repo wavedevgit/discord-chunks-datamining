@@ -33,8 +33,8 @@ async function g(e) {
     returnChannelId: n,
     isPreview: r = false
   } = e;
-  (0, a.pTH)(), i()(null == _[t], "should not double-join guilds");
-  let l = await (0, o.V)(t);
+  (0, o.pTH)(), i()(null == _[t], "should not double-join guilds");
+  let l = await (0, a.V)(t);
   if (l.features.has(f.GuildFeatures.COMMUNITY)) {
     if (r)(0, c.I1)(t);
     else {

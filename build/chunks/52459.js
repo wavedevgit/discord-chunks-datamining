@@ -15,8 +15,8 @@ function i(e) {
     let {
       filterFn: r,
       getAutocompleteRowItem: i,
-      getAutocompleteGroupItem: a
-    } = e, o = 0, s = [], l = [];
+      getAutocompleteGroupItem: o
+    } = e, a = 0, s = [], l = [];
     for (let e of t) {
       let t = [],
         {
@@ -32,8 +32,8 @@ function i(e) {
           });
           t.push(r)
         }
-        o += u.length;
-        let e = a({
+        a += u.length;
+        let e = o({
           group: c,
           rows: t
         });
@@ -41,7 +41,7 @@ function i(e) {
       }
     }
     return {
-      autocompleteCount: o,
+      autocompleteCount: a,
       autocompleteGroups: s,
       allAutocompleteRows: l
     }

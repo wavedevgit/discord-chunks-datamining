@@ -21,15 +21,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk856651 = require("./856651.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk649324 = require("./649324.js");
+  Chunk673449 = require("./673449.js");
 
 function O(e) {
   var t;
   let {
     account: n,
-    refreshed: o,
+    refreshed: a,
     handleRefresh: l
-  } = e, [c, u] = i.useState(false), f = null != (t = n.metadata) ? t : {}, m = (0, a.e7)([_.default], () => _.default.locale), O = i.useCallback(async () => {
+  } = e, [c, u] = i.useState(false), f = null != (t = n.metadata) ? t : {}, m = (0, o.e7)([_.default], () => _.default.locale), O = i.useCallback(async () => {
     u(true);
     try {
       await l(n)
@@ -65,7 +65,7 @@ function O(e) {
     children: b.intl.format(b.t.Up2ni7, {
       helpdeskUrl: h.Z.getArticleURL(g.BhN.CONNECTION_DETAILS)
     })
-  }, "label"), T = b.intl.string(b.t["LVh3/5"])), o && (T = b.intl.string(b.t.i4jeWR)), (0, r.jsxs)("div", {
+  }, "label"), T = b.intl.string(b.t["LVh3/5"])), a && (T = b.intl.string(b.t.i4jeWR)), (0, r.jsxs)("div", {
     className: y.metadataContainer,
     children: [I, null == v ? true : v.map((e, t) => (0, r.jsxs)(r.Fragment, {
       children: [e, t < v.length - 1 ? (0, r.jsx)("span", {
@@ -83,9 +83,9 @@ function O(e) {
       className: y.metadataRefreshButton,
       children: (0, r.jsx)(s.Button, {
         size: "sm",
-        variant: o ? "active" : "secondary",
+        variant: a ? "active" : "secondary",
         loading: c,
-        disabled: o,
+        disabled: a,
         "aria-label": b.intl.string(b.t.sCkLYH),
         onClick: O,
         text: T
@@ -98,7 +98,7 @@ function v(e) {
   let {
     account: t,
     handleRefresh: n,
-    refreshedAccountIds: a
+    refreshedAccountIds: o
   } = e, [d, p] = i.useState(t.visibility), [_, m] = i.useState(t.metadataVisibility), h = (0, c.ZP)();
 
   function g(e) {
@@ -139,7 +139,7 @@ function v(e) {
       children: [(0, r.jsx)("img", {
         alt: v.name,
         className: y.connectionIcon,
-        src: (0, o.wj)(h) ? v.icon.darkSVG : v.icon.lightSVG
+        src: (0, a.wj)(h) ? v.icon.darkSVG : v.icon.lightSVG
       }), (0, r.jsxs)("div", {
         className: y.activitySettings,
         children: [(0, r.jsxs)("div", {
@@ -149,7 +149,7 @@ function v(e) {
             label: v.name
           }), S && (0, r.jsx)(O, {
             account: t,
-            refreshed: a.includes(t.id),
+            refreshed: o.includes(t.id),
             handleRefresh: n
           })]
         }), S && (0, r.jsx)(s.rsf, {
@@ -166,12 +166,12 @@ function v(e) {
 function S() {
   let e = (0, Chunk442837.e7)([Chunk553795.Z], () => Chunk553795.Z.getAccounts()),
     t = Chunk473749.useMemo(() => module.filter(e => u.Z.isSupported(e.type)), [module]),
-    [n, o] = Chunk473749.useState([]),
+    [n, a] = Chunk473749.useState([]),
     c = Chunk473749.useCallback(e => l.Z.refresh(e.type, e.id).finally(() => {
-      o(t => [...t, e.id])
+      a(t => [...t, e.id])
     }), []);
   return 0 === exports.length ? null : (0, Chunk54381.jsx)(Chunk481060.C3N, {
-    className: Chunk649324.container,
+    className: Chunk673449.container,
     label: Chunk388032.intl.string(Chunk388032.t.aw0GVS),
     children: exports.map(e => (0, r.jsx)(v, {
       account: e,

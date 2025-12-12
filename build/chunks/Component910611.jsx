@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 910611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   TS: () => F,
@@ -37,7 +37,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk978966 = require("./978966.js");
+  Chunk97009 = require("./97009.js");
 
 function L(e) {
   var t;
@@ -46,12 +46,12 @@ function L(e) {
     children: r
   } = e, l = (0, d.q)(null == (t = n.linkedLobby) ? true : t.application_id), [a, o] = (0, m.US)([s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP], true, true);
   if (null == l) return null;
-  let p = j.ZP.getApplicationIconURL({
+  let p = E.ZP.getApplicationIconURL({
       id: l.id,
       icon: l.icon,
       size: 14
     }),
-    [f, h] = a !== s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP ? [M.intl.string(M.t["XJVlf/"]), true] : [(0, i.jsxs)("div", {
+    [h, f] = a !== s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP ? [M.intl.string(M.t["XJVlf/"]), true] : [(0, i.jsxs)("div", {
       className: R.linkedLobbyEducationTooltip,
       children: [(0, i.jsx)(u.Text, {
         variant: "text-md/semibold",
@@ -61,7 +61,7 @@ function L(e) {
         variant: "text-sm/medium",
         color: "text-default",
         children: M.intl.format(M.t["16aguo"], {
-          helpdeskArticle: S.Z.getArticleURL(A.BhN.LINKED_LOBBIES)
+          helpdeskArticle: j.Z.getArticleURL(A.BhN.LINKED_LOBBIES)
         })
       }), (0, i.jsx)(u.P3F, {
         className: R.linkedLobbyEducationTooltipCloseClickContainer,
@@ -75,8 +75,8 @@ function L(e) {
   return (0, i.jsx)(c.u, {
     position: "bottom",
     align: "left",
-    __unsupportedReactNodeAsText: f,
-    "aria-label": h,
+    __unsupportedReactNodeAsText: h,
+    "aria-label": f,
     forceOpen: a === s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP || true,
     children: (0, i.jsxs)("div", {
       className: R.linkedLobbyTooltip,
@@ -106,7 +106,7 @@ function D(e) {
     handleParentClick: p,
     handleParentContextMenu: m,
     renderFollowButton: g
-  } = e, b = (0, h.KS)(t, o), {
+  } = e, b = (0, f.KS)(t, o), {
     prefix: C,
     level: y
   } = function(e, t) {
@@ -207,35 +207,35 @@ function D(e) {
     case A.d4z.ANNOUNCEMENT_THREAD:
     case A.d4z.PUBLIC_THREAD:
     case A.d4z.PRIVATE_THREAD:
-      let x = null;
+      let O = null;
       if (!s && null != l) {
-        let e = (0, h.KS)(l, o);
-        x = (0, i.jsxs)(r.Fragment, {
+        let e = (0, f.KS)(l, o);
+        O = (0, i.jsxs)(r.Fragment, {
           children: [V(e, M.intl.string(M.t.Pnajj0)), (0, i.jsx)(T.Z.Title, {
             level: y,
             onContextMenu: m,
             onClick: p,
             className: a()(R.parentChannelName, R.cursorPointer),
-            children: (0, f.F6)(l, E.default, O.Z)
+            children: (0, h.F6)(l, x.default, _.Z)
           }), (0, i.jsx)(T.Z.Caret, {})]
         })
       }
-      let j = (null == l ? true : l.type) != null && A.TPd.GUILD_THREADS_ONLY.has(l.type);
+      let E = (null == l ? true : l.type) != null && A.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, i.jsxs)(r.Fragment, {
-        children: [x, V(j ? null : b, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(T.Z.Title, {
+        children: [O, V(E ? null : b, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(T.Z.Title, {
           level: y,
           onContextMenu: d,
           onClick: c,
           className: a()({
             [R.cursorPointer]: s,
-            [R.forumPostTitle]: j,
-            [R.forumPostSidebarTitle]: s && j
+            [R.forumPostTitle]: E,
+            [R.forumPostSidebarTitle]: s && E
           }),
           children: v
         })]
       });
     case A.d4z.GUILD_DIRECTORY:
-      let S = (null == o ? true : o.features.has(A.GuildFeatures.HUB)) ? M.intl.formatToPlainString(M.t.Dy2aht, {
+      let j = (null == o ? true : o.features.has(A.GuildFeatures.HUB)) ? M.intl.formatToPlainString(M.t.Dy2aht, {
         guildName: n
       }) : n;
       return (0, i.jsxs)(r.Fragment, {
@@ -248,7 +248,7 @@ function D(e) {
           onClick: c,
           children: [null != C ? (0, i.jsxs)(u.nn4, {
             children: [C, ":"]
-          }) : null, " ", S]
+          }) : null, " ", j]
         })]
       });
     default:
@@ -259,7 +259,7 @@ let k = e => {
   var t, n, l;
   let {
     channel: a
-  } = e, s = (0, o.e7)([E.default], () => E.default.getCurrentUser()), c = (0, o.e7)([E.default], () => E.default.getUser(a.getRecipientId())), u = (0, _.G)(), d = (0, o.e7)([y.Z], () => null != c ? y.Z.getUserProfile(c.id) : null), f = null != d && (null != (t = null == d ? true : d.fetchEndedAt) ? t : 0) > 0;
+  } = e, s = (0, o.e7)([x.default], () => x.default.getCurrentUser()), c = (0, o.e7)([x.default], () => x.default.getUser(a.getRecipientId())), u = (0, S.G)(), d = (0, o.e7)([y.Z], () => null != c ? y.Z.getUserProfile(c.id) : null), h = null != d && (null != (t = null == d ? true : d.fetchEndedAt) ? t : 0) > 0;
   return (r.useEffect(() => {
     (null == s ? true : s.isStaff()) && null != c && !c.isStaff() && (0, v.Z)(c.id, c.getAvatarURL(true, 80), {
       dispatchWait: true,
@@ -268,7 +268,7 @@ let k = e => {
     })
   }, [s, c]), a.isDM() && (null == s ? true : s.isStaff()) && null != c) ? c.isStaff() ? (0, i.jsx)(p.Z, {
     type: p.Z.Types.STAFF_ONLY_DM
-  }) : u && f && !(null != (l = null == (n = d.badges) ? true : n.some(e => e.id.startsWith("staff"))) && l) ? (0, i.jsx)(p.Z, {
+  }) : u && h && !(null != (l = null == (n = d.badges) ? true : n.some(e => e.id.startsWith("staff"))) && l) ? (0, i.jsx)(p.Z, {
     type: p.Z.Types.NOT_STAFF_WARNING
   }) : null : null
 };
@@ -313,7 +313,7 @@ function F(e) {
     guild: t,
     channel: n,
     caretPosition: l = "left"
-  } = e, a = (0, o.e7)([x.Z], () => x.Z.getGuildId()), s = (0, b.D)(), d = r.useRef(null);
+  } = e, a = (0, o.e7)([O.Z], () => O.Z.getGuildId()), s = (0, b.D)(), d = r.useRef(null);
   return (a === A.I_8 || s) && null != t ? (0, i.jsx)(c.u, {
     asContainer: true,
     text: t.name,

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk150039 = require("./150039.js"),
   Chunk993413 = require("./993413.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk518894 = require("./518894.js");
+  Chunk642588 = require("./642588.js");
 
 function g(e) {
   let {
@@ -43,7 +43,7 @@ function g(e) {
     })
   }, A = () => {
     (0, p.PO)(null, null == n ? true : n.id)
-  }, N = E ? s.gtL : o.zx;
+  }, N = E ? s.gtL : a.zx;
   return (0, r.jsxs)(_.Z, {
     className: i,
     forcedDivider: g,
@@ -53,9 +53,9 @@ function g(e) {
     children: [(0, r.jsxs)("div", {
       className: h.buttonsContainer,
       children: [(0, r.jsx)(N, {
-        size: o.zx.Sizes.SMALL,
+        size: a.zx.Sizes.SMALL,
         onClick: C,
-        className: a()({
+        className: o()({
           [h.buttonHighlighted]: E
         }),
         children: m.intl.string(m.t.BVcYCx)

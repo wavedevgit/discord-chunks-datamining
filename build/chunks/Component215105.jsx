@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk106351 = require("./106351.js"),
   Chunk507274 = require("./507274.jsx"),
   Chunk541716 = require("./541716.js"),
@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk228168 = require("./228168.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk756065 = require("./756065.js");
+  Chunk36190 = require("./36190.js");
 let I = (0, Chunk131704.createChannelRecord)({
     id: "1",
     type: Chunk106351.d.DM
@@ -38,11 +38,11 @@ let I = (0, Chunk131704.createChannelRecord)({
     } = e;
     switch (r) {
       case y.n_.ACTIVITY:
-        let a = v.intl.formatToPlainString(v.t.WmvMCo, {
+        let o = v.intl.formatToPlainString(v.t.WmvMCo, {
             username: n
           }),
-          o = "\n> ".concat(i);
-        return null != i ? "".concat(E.jd).concat(a, "*").concat(o, "\n").concat(t) : "".concat(E.jd).concat(a, "*\n").concat(t);
+          a = "\n> ".concat(i);
+        return null != i ? "".concat(E.jd).concat(o, "*").concat(a, "\n").concat(t) : "".concat(E.jd).concat(o, "*\n").concat(t);
       case y.n_.AVATAR:
         let s = v.intl.formatToPlainString(v.t.lpaBsB, {
           username: n
@@ -75,7 +75,7 @@ function A(e) {
   let {
     user: t,
     guildId: n,
-    channelId: a,
+    channelId: o,
     sourceType: s,
     sourceDetails: f,
     setPopoutRef: p,
@@ -130,7 +130,7 @@ function A(e) {
     ref: U,
     onKeyDown: G,
     children: (0, r.jsx)("div", {
-      className: o()(S.container, F, {
+      className: a()(S.container, F, {
         [S.customProfileTheme]: null != D
       }),
       children: (0, r.jsx)(d.ZP, {
@@ -141,7 +141,7 @@ function A(e) {
         editorClassName: S.editor,
         type: c.Ie.USER_PROFILE_REPLY,
         placeholder: v.intl.formatToPlainString(C(s), {
-          username: _.ZP.getName(n, a, t)
+          username: _.ZP.getName(n, o, t)
         }),
         channel: I,
         textValue: x,

@@ -8,13 +8,13 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk490093 = require("./490093.js"),
   Chunk317257 = require("./317257.js"),
   Chunk583478 = require("./583478.jsx"),
   Chunk976845 = require("./976845.jsx"),
-  Chunk663261 = require("./663261.js");
+  Chunk647917 = require("./647917.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 let m = () => (0, Chunk54381.jsx)("img", {
-    className: Chunk663261.notificationBadge,
+    className: Chunk647917.notificationBadge,
     src: require("./808824.js"),
     alt: ""
   }),
@@ -47,7 +47,7 @@ let m = () => (0, Chunk54381.jsx)("img", {
   E = (0, Chunk473749.forwardRef)(function(e, t) {
     let {
       id: n,
-      balance: a,
+      balance: o,
       balanceWidgetMode: p = c.b.DEFAULT,
       showNotificationBadge: E,
       onClick: b,
@@ -55,7 +55,7 @@ let m = () => (0, Chunk54381.jsx)("img", {
       disabled: O,
       isInModalOverlay: v,
       className: S
-    } = e, [I, T] = (0, i.useState)(false), C = (0, i.useMemo)(() => g(p, I), [p, I]), [A, N] = (0, i.useState)(false), [P, R] = (0, i.useState)(false), [w, D] = (0, i.useState)(.9 * l.D2), x = null === a;
+    } = e, [I, T] = (0, i.useState)(false), C = (0, i.useMemo)(() => g(p, I), [p, I]), [A, N] = (0, i.useState)(false), [P, R] = (0, i.useState)(false), [w, D] = (0, i.useState)(.9 * l.D2), x = null === o;
     (0, i.useEffect)(() => {
       x && !A && (N(true), setTimeout(() => {
         R(true)
@@ -64,7 +64,7 @@ let m = () => (0, Chunk54381.jsx)("img", {
       P && !x && N(false)
     }, [x, P]);
     let L = x || A,
-      j = A ? null : a,
+      j = A ? null : o,
       [M, k] = (0, i.useState)(null),
       U = (0, i.useRef)(null),
       G = (0, i.useCallback)(() => {
@@ -81,7 +81,7 @@ let m = () => (0, Chunk54381.jsx)("img", {
       };
     return (0, r.jsx)(s.P3F, {
       onClick: L ? true : b,
-      className: o()(f.clickable, {
+      className: a()(f.clickable, {
         [f.disabled]: O
       }),
       id: null != n ? n : h,
@@ -90,13 +90,13 @@ let m = () => (0, Chunk54381.jsx)("img", {
         onMouseEnter: O ? true : () => T(true),
         onMouseLeave: O ? true : () => T(false),
         ref: t,
-        className: o()(f.container, C, S, {
+        className: a()(f.container, C, S, {
           [f.containerLoading]: L,
           [f.inModalOverlay]: v,
           [f.disabled]: O
         }),
         children: [(0, r.jsx)("div", {
-          className: o()(f.orbsLottieContainer, L ? f.orbIconloading : true),
+          className: a()(f.orbsLottieContainer, L ? f.orbIconloading : true),
           children: (0, r.jsx)(d.ZP, _({}, F))
         }), (0, r.jsx)(u.Z, {
           value: j,

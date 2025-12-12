@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk101051 = require("./101051.js");
+  Chunk56011 = require("./56011.js");
 
 function l(e) {
   let {
@@ -17,8 +17,8 @@ function l(e) {
     className: n
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(s.pill, s.pillGradient, n),
-    children: (0, r.jsx)(o.Text, {
+    className: o()(s.pill, s.pillGradient, n),
+    children: (0, r.jsx)(a.Text, {
       variant: "text-xxs/bold",
       color: "text-strong",
       className: s.pillText,

@@ -28,7 +28,7 @@ let s = 8,
 function f(e, t, n, c) {
   let u = r.Z.getByteOrder(e, t + n + s),
     d = t + n,
-    f = (0, a.N)(e, o.eG, d, d + l, u, c, true);
+    f = (0, o.N)(e, a.eG, d, d + l, u, c, true);
   return p(f) && (f = (0, i.wB)({}, f, _(e, d + f.LevelInfo.__offset, u)), delete f.LevelInfo), f
 }
 
@@ -39,15 +39,15 @@ function p(e) {
 function _(e, t, n) {
   let i = {};
   if (t + 7 > e.byteLength) return i;
-  let a = e.getInt8(t + u.CAMERA_ORIENTATION);
+  let o = e.getInt8(t + u.CAMERA_ORIENTATION);
   i.CameraOrientation = {
-    value: a,
-    description: m(a)
-  };
-  let o = e.getInt16(t + u.ROLL_ANGLE, n === r.Z.LITTLE_ENDIAN);
-  i.RollAngle = {
     value: o,
-    description: h(o)
+    description: m(o)
+  };
+  let a = e.getInt16(t + u.ROLL_ANGLE, n === r.Z.LITTLE_ENDIAN);
+  i.RollAngle = {
+    value: a,
+    description: h(a)
   };
   let s = e.getInt16(t + u.PITCH_ANGLE, n === r.Z.LITTLE_ENDIAN);
   return i.PitchAngle = {

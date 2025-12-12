@@ -32,7 +32,7 @@ async function y(e, t) {
   let v = d.default.getCurrentUser();
   if (null == v) return;
   await (0, s.$p)();
-  let S = Array.from(l.Z.getAllGuildStickers().values()).flat().filter(e => b(e.guild_id) && (0, o.kl)(e, v, t)).sort((e, t) => -p.default.compare(e.id, t.id));
+  let S = Array.from(l.Z.getAllGuildStickers().values()).flat().filter(e => b(e.guild_id) && (0, a.kl)(e, v, t)).sort((e, t) => -p.default.compare(e.id, t.id));
   if (S.length > g) {
     let i = [S[Math.floor(Math.pow(Math.random(), 2) * S.length)].id];
     r.Z.sendStickers(t.id, i, "", {
@@ -53,7 +53,7 @@ async function y(e, t) {
   })).sort((e, t) => -p.default.compare(e.id, t.id));
   if (I.length > E) {
     let n = I[Math.floor(Math.pow(Math.random(), 2) * I.length)];
-    r.Z.sendMessage(t.id, a.ZP.parse(t, (0, f.nY)(n)), false, {
+    r.Z.sendMessage(t.id, o.ZP.parse(t, (0, f.nY)(n)), false, {
       location: h.dy.CHANNEL_PROMPT,
       messageReference: {
         guild_id: null != (_ = t.getGuildId()) ? _ : true,

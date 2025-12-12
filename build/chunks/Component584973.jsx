@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
   Chunk633302 = require("./633302.js"),
   Chunk695346 = require("./695346.js"),
   Chunk563114 = require("./563114.js"),
   Chunk556638 = require("./556638.js"),
-  Chunk175996 = require("./175996.js");
+  Chunk80568 = require("./80568.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -42,20 +42,20 @@ function h(e) {
   let {
     emoji: t,
     className: n,
-    animate: a = true,
+    animate: o = true,
     hideTooltip: _ = false,
     tooltipDelay: h = f.X
   } = e, g = u.Yk.useSetting(), E = i.useRef(null), b = null != t.id ? ":".concat(t.name, ":") : c.ZP.translateSurrogatesToInlineEmoji(t.name);
   if (null == t.id && d.T.has(t.name)) return (0, r.jsx)("span", {
-    className: o()(p.emoji, n),
+    className: a()(p.emoji, n),
     children: t.name
   });
   let y = {
-    className: o()(p.emoji, n),
+    className: a()(p.emoji, n),
     emojiId: t.id,
     emojiName: t.name,
     autoplay: true,
-    animated: !!(t.animated && g && a),
+    animated: !!(t.animated && g && o),
     registerInnerRef: e => {
       E.current = e
     }

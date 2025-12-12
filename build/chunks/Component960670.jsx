@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk513318 = require("./513318.js");
+  Chunk905935 = require("./905935.js");
 
 function a(e) {
   var t, r, {
@@ -17,21 +17,21 @@ function a(e) {
     } = e,
     u = function(e, t) {
       if (null == e) return {};
-      var r, n, c = function(e, t) {
+      var r, n, o = function(e, t) {
         if (null == e) return {};
-        var r, n, c = {},
-          o = Object.keys(e);
-        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (c[r] = e[r]);
-        return c
+        var r, n, o = {},
+          c = Object.keys(e);
+        for (n = 0; n < c.length; n++) r = c[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+        return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (c[r] = e[r])
+        var c = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
       }
-      return c
+      return o
     }(e, ["header", "body", "onSubmit"]);
-  let [p, f] = c.useState(false);
-  return (0, n.jsxs)(o.VoidConfirmModal, (t = function(e) {
+  let [p, f] = o.useState(false);
+  return (0, n.jsxs)(c.VoidConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -56,12 +56,12 @@ function a(e) {
       s(null, p)
     }
   }, u), r = r = {
-    children: [(0, n.jsx)(o.Text, {
+    children: [(0, n.jsx)(c.Text, {
       variant: "text-md/normal",
       children: b
     }), (0, n.jsx)("div", {
       className: l.checkbox,
-      children: (0, n.jsx)(o.Checkbox, {
+      children: (0, n.jsx)(c.Checkbox, {
         checked: p,
         onChange: () => f(e => !e),
         label: i.intl.string(i.t.bq3JXs),

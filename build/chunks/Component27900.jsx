@@ -63,8 +63,8 @@ function A(e) {
   let {
     user: t,
     guildId: n,
-    channelId: a,
-    mediaEngineContext: o,
+    channelId: o,
+    mediaEngineContext: a,
     onSelect: c,
     onShowProfile: S,
     onWatchStream: _,
@@ -79,7 +79,7 @@ function A(e) {
   }), C = (0, b.Z)({
     user: t,
     appContext: P
-  }), M = (0, p.Z)(t.id, _), x = (0, j.Z)(t.id), D = (0, m.Z)(t.id, o), w = (0, v.Z)({
+  }), M = (0, p.Z)(t.id, _), x = (0, j.Z)(t.id), D = (0, m.Z)(t.id, a), w = (0, v.Z)({
     user: t
   }), N = (0, u.Z)(null, t), T = (0, f.Z)({
     user: t,
@@ -93,7 +93,7 @@ function A(e) {
   }), L = (0, s.Z)({
     id: t.id,
     label: h.intl.string(h.t["/AXYnE"])
-  }), R = (0, d.Z)(t), B = (0, g.Z)(t, n, a), V = t.isNonUserBot();
+  }), R = (0, d.Z)(t), B = (0, g.Z)(t, n, o), V = t.isNonUserBot();
   return (0, l.jsxs)(r.v2r, {
     navId: "user-context",
     onClose: i.Zy,
@@ -123,13 +123,13 @@ function I(e) {
   let {
     user: t,
     mediaEngineContext: n,
-    onSelect: a,
-    onShowProfile: o,
+    onSelect: o,
+    onShowProfile: a,
     onWatchStream: c,
     appContext: g
   } = e, S = (0, E.Z)({
     onAction: () => {
-      null == o || o()
+      null == a || a()
     }
   }), _ = (0, y.Z)({
     user: t,
@@ -156,7 +156,7 @@ function I(e) {
     navId: "user-context",
     onClose: i.Zy,
     "aria-label": h.intl.string(h.t.liqwPJ),
-    onSelect: a,
+    onSelect: o,
     children: [!U && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(r.kSQ, {
         children: k

@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   FX: () => s,
-  oc: () => a,
-  r4: () => o,
+  oc: () => o,
+  r4: () => a,
   rd: () => i
 }), require("./388685.js");
 var Chunk837268 = require("./837268.js");
@@ -13,7 +13,7 @@ function i(e) {
   return e
 }
 
-function a(e) {
+function o(e) {
   switch (e) {
     case "click":
     case "unknown":
@@ -29,7 +29,7 @@ function a(e) {
   }
 }
 
-function o() {
+function a() {
   return {
     popoutOpened: false,
     windowHandleSentToNative: false,

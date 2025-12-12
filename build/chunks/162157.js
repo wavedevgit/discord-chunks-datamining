@@ -20,8 +20,8 @@ function l(e) {
 
 function c(e) {
   let t = (0, r.e7)([i.Z], () => l(e, i.Z), [e]),
-    n = (0, r.e7)([o.Z], () => null != e ? o.Z.getGuildIncident(e.id) : null, [e]);
-  return !(null != n && (0, a.i9)(n)) && t
+    n = (0, r.e7)([a.Z], () => null != e ? a.Z.getGuildIncident(e.id) : null, [e]);
+  return !(null != n && (0, o.i9)(n)) && t
 }
 
 function u(e) {

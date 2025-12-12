@@ -11,9 +11,9 @@ var r, l, Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk979322 = require("./979322.js");
+  Chunk599684 = require("./599684.js");
 
-function h(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,10 +21,10 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let d = Object.freeze({
-  SMALL: Chunk979322.small,
-  MEDIUM: Chunk979322.medium,
-  LARGE: Chunk979322.large
+let f = Object.freeze({
+  SMALL: Chunk599684.small,
+  MEDIUM: Chunk599684.medium,
+  LARGE: Chunk599684.large
 });
 var g = ((l = {}).MEMBER = "MEMBER", l.ROLE = "ROLE", l.CHANNEL = "CHANNEL", l.USER = "USER", l);
 class b extends(r = Chunk473749.Component) {
@@ -59,31 +59,31 @@ class b extends(r = Chunk473749.Component) {
       onSelectionChange: s,
       onSelect: i,
       onRemoveTag: o,
-      preventEscapePropagation: c
+      preventEscapePropagation: u
     } = this.props;
     if (0 !== r.length) {
       switch (e.key) {
-        case u.vn.BACKSPACE:
+        case c.vn.BACKSPACE:
           (null == l || 0 === l.length) && null != a && a.length > 0 && (e.preventDefault(), e.stopPropagation(), null == o || o(a.length - 1));
           break;
-        case u.vn.ARROW_DOWN:
+        case c.vn.ARROW_DOWN:
           e.preventDefault(), e.stopPropagation(), false === t ? (t = 0, n = 0) : ((t += 1) >= r.length && (t = r.length - 1), n >= r[t] && (n = r[t] - 1));
           break;
-        case u.vn.ARROW_UP:
+        case c.vn.ARROW_UP:
           e.preventDefault(), e.stopPropagation(), (t -= 1) < 0 ? (t = 0, n = 0) : n >= r[t] && (n = r[t] - 1);
           break;
-        case u.vn.ARROW_LEFT:
+        case c.vn.ARROW_LEFT:
           e.preventDefault(), e.stopPropagation(), false === t && (t = 0), (n -= 1) < 0 && ((t -= 1) >= 0 ? n = r[t] - 1 : t < 0 && (t = 0, n = 0));
           break;
-        case u.vn.ARROW_RIGHT:
+        case c.vn.ARROW_RIGHT:
           e.preventDefault(), e.stopPropagation(), false === t && (t = 0), (n += 1) >= r[t] && (n = 0, (t += 1) >= r.length && (t = r.length - 1, n = r[t] - 1));
           break;
-        case u.vn.ENTER:
+        case c.vn.ENTER:
           if (e.preventDefault(), e.stopPropagation(), false === t && (t = 0), false === n && (n = 0), t >= r.length || n >= r[t]) return;
           null != i && i(t, n, e);
           return;
-        case u.vn.ESCAPE:
-          e.preventDefault(), c && e.stopPropagation(), null != i && i(null, null, e);
+        case c.vn.ESCAPE:
+          e.preventDefault(), u && e.stopPropagation(), null != i && i(null, null, e);
           return;
         default:
           return
@@ -102,26 +102,26 @@ class b extends(r = Chunk473749.Component) {
       tags: i,
       preventEscapePropagation: o
     } = this.props, {
-      current: c
+      current: u
     } = this.ref;
-    if (null != c) switch (e.key) {
-      case u.vn.BACKSPACE:
+    if (null != u) switch (e.key) {
+      case c.vn.BACKSPACE:
         if ((null == s || 0 === s.length) && null != i && i.length > 0) {
-          var p, f;
-          e.preventDefault(), e.stopPropagation(), null == (p = (f = this.props).onRemoveTag) || p.call(f, i.length - 1)
+          var p, h;
+          e.preventDefault(), e.stopPropagation(), null == (p = (h = this.props).onRemoveTag) || p.call(h, i.length - 1)
         }
         break;
-      case u.vn.ARROW_DOWN:
+      case c.vn.ARROW_DOWN:
         e.preventDefault(), e.stopPropagation(), t.length > n && ++r >= t[n] && (++n >= t.length && (n = 0), r = 0), null == a || a(n, r);
         break;
-      case u.vn.ARROW_UP:
+      case c.vn.ARROW_UP:
         e.preventDefault(), e.stopPropagation(), --r < 0 && (--n < 0 && (n = t.length - 1), r = t[n] - 1), null == a || a(n, r);
         break;
-      case u.vn.ENTER:
+      case c.vn.ENTER:
         e.preventDefault(), e.stopPropagation(), t.length > n && t[n] > r && (null == l || l(n, r, e));
         break;
-      case u.vn.ESCAPE:
-        e.preventDefault(), o && e.stopPropagation(), null == l || l(null, null, e), c.blur()
+      case c.vn.ESCAPE:
+        e.preventDefault(), o && e.stopPropagation(), null == l || l(null, null, e), u.blur()
     }
   }
   render() {
@@ -133,43 +133,43 @@ class b extends(r = Chunk473749.Component) {
       disabled: l,
       size: s,
       maxHeight: i,
-      tags: u,
-      onActivate: d,
+      tags: c,
+      onActivate: f,
       className: g,
       inputProps: b,
       focusAfterReady: m
     } = this.props, v = false, y = [];
-    return null != Chunk295907 && Chunk295907.length > 0 && ("string" == typeof Chunk295907[0] ? Chunk295907.forEach((e, t) => y.push((0, a.jsxs)(c.Anchor, {
+    return null != Chunk295907 && Chunk295907.length > 0 && ("string" == typeof Chunk295907[0] ? Chunk295907.forEach((e, t) => y.push((0, a.jsxs)(u.Anchor, {
       focusProps: {
         offset: 4
       },
-      className: f.tag,
+      className: h.tag,
       onClick: this.handleRemoveTag.bind(this, t),
-      children: [e, (0, a.jsx)(c.Dio, {
+      children: [e, (0, a.jsx)(u.Dio, {
         size: "md",
         color: "currentColor",
-        className: f.close,
+        className: h.close,
         "aria-label": p.intl.string(p.t.N86XcP)
       })]
-    }, t))) : (v = true, Chunk295907.forEach((e, t) => y.push((0, a.jsxs)(c.Anchor, {
-      className: o()(f.tag, f.richTag),
+    }, t))) : (v = true, Chunk295907.forEach((e, t) => y.push((0, a.jsxs)(u.Anchor, {
+      className: o()(h.tag, h.richTag),
       onClick: this.handleRemoveTag.bind(this, t),
-      children: [("MEMBER" === e.type || "USER" === e.type) && null != e.avatar && (0, a.jsx)(c.qEK, {
+      children: [("MEMBER" === e.type || "USER" === e.type) && null != e.avatar && (0, a.jsx)(u.qEK, {
         src: e.avatar,
         "aria-hidden": true,
-        size: c.EFr.SIZE_16
+        size: u.EFr.SIZE_16
       }), "ROLE" === e.type && null != e.color && (0, a.jsx)("span", {
-        className: f.tagRoleColor,
+        className: h.tagRoleColor,
         style: {
           backgroundColor: e.color
         }
       }), (0, a.jsx)("span", {
-        className: f.tagLabel,
+        className: h.tagLabel,
         children: e.label
-      }), (0, a.jsx)(c.Dio, {
+      }), (0, a.jsx)(u.Dio, {
         size: "md",
         color: "currentColor",
-        className: f.close,
+        className: h.close,
         "aria-label": p.intl.string(p.t.N86XcP)
       })]
     }, t))))), (0, Chunk54381.jsx)(Chunk481060.tEY, {
@@ -179,11 +179,11 @@ class b extends(r = Chunk473749.Component) {
         theme: r,
         children: r => (0, a.jsx)("div", {
           ref: this.containerRef,
-          className: o()(g, f.container, s, r, {
-            [f.disabled]: l
+          className: o()(g, h.container, s, r, {
+            [h.disabled]: l
           }),
-          children: (0, a.jsxs)(c.zJl, {
-            className: f.inner,
+          children: (0, a.jsxs)(u.zJl, {
+            className: h.inner,
             style: {
               maxHeight: i
             },
@@ -194,13 +194,13 @@ class b extends(r = Chunk473749.Component) {
                 "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                   return Object.getOwnPropertyDescriptor(n, e).enumerable
                 }))), r.forEach(function(t) {
-                  h(e, t, n[t])
+                  d(e, t, n[t])
                 })
               }
               return e
             }({
-              className: o()(f.input, {
-                [f.richTagInput]: v
+              className: o()(h.input, {
+                [h.richTagInput]: v
               }),
               type: "text",
               ref: this.ref,
@@ -213,7 +213,7 @@ class b extends(r = Chunk473749.Component) {
               disabled: l,
               "aria-disabled": l,
               autoFocus: !m && e,
-              onMouseDown: d
+              onMouseDown: f
             }, this.defaultInputProps, b))]
           })
         })
@@ -221,11 +221,11 @@ class b extends(r = Chunk473749.Component) {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "defaultInputProps", {
+    super(...e), d(this, "defaultInputProps", {
       role: "combobox",
       "aria-haspopup": "listbox",
       "aria-autocomplete": "list"
-    }), h(this, "ref", s.createRef()), h(this, "containerRef", s.createRef()), h(this, "previousHeight", 0), h(this, "handleKeyDown", e => {
+    }), d(this, "ref", s.createRef()), d(this, "containerRef", s.createRef()), d(this, "previousHeight", 0), d(this, "handleKeyDown", e => {
       let {
         onActivate: t,
         onKeyDown: n,
@@ -237,30 +237,30 @@ class b extends(r = Chunk473749.Component) {
         current: a
       } = this.ref;
       if (null == a || null != t) {
-        e.key !== u.vn.TAB && (null == t || t(e));
+        e.key !== c.vn.TAB && (null == t || t(e));
         return
       }
-      if (e.key === u.vn.ESCAPE && null != a.value && "" !== a.value && a.value.length > 0) {
+      if (e.key === c.vn.ESCAPE && null != a.value && "" !== a.value && a.value.length > 0) {
         a.value = "", null != r && r("");
         return
       }
       l && (this.props.gridResults ? this.handleKeyDownGrid(e) : this.handleKeyDownList(e))
-    }), h(this, "handleChange", e => {
+    }), d(this, "handleChange", e => {
       let {
         onQueryChange: t
       } = this.props;
       null != t && t(e.currentTarget.value)
-    }), h(this, "handleFocus", e => {
+    }), d(this, "handleFocus", e => {
       let {
         onFocus: t
       } = this.props;
       null != t && t(e)
-    }), h(this, "handleRemoveTag", e => {
+    }), d(this, "handleRemoveTag", e => {
       let {
         onRemoveTag: t
       } = this.props;
       null == t || t(e)
-    }), h(this, "focus", () => {
+    }), d(this, "focus", () => {
       let {
         current: e
       } = this.ref;
@@ -268,8 +268,8 @@ class b extends(r = Chunk473749.Component) {
     })
   }
 }
-h(b, "Sizes", d), h(b, "defaultProps", {
-  size: d.SMALL,
+d(b, "Sizes", f), d(b, "defaultProps", {
+  size: f.SMALL,
   query: "",
   sections: [],
   selectedSection: 0,

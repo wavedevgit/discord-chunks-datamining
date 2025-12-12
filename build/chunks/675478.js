@@ -81,19 +81,19 @@ class A {
     await this.loadIfNecessary();
     let r = (0, g.H)(this.ProtoClass, e),
       i = this.getCurrentValue()[e],
-      a = (0, g.r)(i, t, r, this.ProtoClass, e);
-    null != a && (__OVERLAY__ ? u.Z.dispatch({
+      o = (0, g.r)(i, t, r, this.ProtoClass, e);
+    null != o && (__OVERLAY__ ? u.Z.dispatch({
       type: "USER_SETTINGS_PROTO_ENQUEUE_UPDATE",
       settings: {
         type: this.type,
-        proto: a
+        proto: o
       },
       delaySeconds: n,
       jitter: n === b.fy.AUTOMATED || n === b.fy.DAILY,
       partial: true,
       resetEditInfo: false,
       local: true
-    }) : (this.logger.log("Updating ".concat(String(e), " with delay ").concat(n)), this.markDirty(a, {
+    }) : (this.logger.log("Updating ".concat(String(e), " with delay ").concat(n)), this.markDirty(o, {
       delaySeconds: n,
       jitter: n === b.fy.AUTOMATED || n === b.fy.DAILY
     })))
@@ -103,7 +103,7 @@ class A {
     i()(!__OVERLAY__, "this cannot run in the overlay");
     let {
       editInfo: r
-    } = this.getEditInfo(), a = {
+    } = this.getEditInfo(), o = {
       timeout: r.timeout
     };
     if (!r.loaded) throw Error("Cannot edit user settings proto because we have not yet loaded the stored version from the DB");
@@ -116,12 +116,12 @@ class A {
       partial: true,
       local: true
     });
-    let o = null != (n = t.delaySeconds) ? n : 0;
-    if (null != a.timeout && o < r.timeoutDelay && !r.rateLimited && (clearTimeout(a.timeout), a.timeout = true), null == a.timeout) {
-      let e = o * p.Z.Millis.SECOND;
-      t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * p.Z.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), a.timeout = setTimeout(this.persistChanges, e), a.timeoutDelay = o
+    let a = null != (n = t.delaySeconds) ? n : 0;
+    if (null != o.timeout && a < r.timeoutDelay && !r.rateLimited && (clearTimeout(o.timeout), o.timeout = true), null == o.timeout) {
+      let e = a * p.Z.Millis.SECOND;
+      t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * p.Z.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), o.timeout = setTimeout(this.persistChanges, e), o.timeoutDelay = a
     }
-    null != t.cleanup && (a.cleanupFuncs = [...r.cleanupFuncs, ...t.cleanup]), null == r.protoToSave ? a.protoToSave = e : a.protoToSave = (0, E.re)(this.ProtoClass, r.protoToSave, e), this.dispatchChanges(a)
+    null != t.cleanup && (o.cleanupFuncs = [...r.cleanupFuncs, ...t.cleanup]), null == r.protoToSave ? o.protoToSave = e : o.protoToSave = (0, E.re)(this.ProtoClass, r.protoToSave, e), this.dispatchChanges(o)
   }
   dispatchChanges(e) {
     u.Z.dispatch({
@@ -157,7 +157,7 @@ class A {
           body: {
             settings: t
           }
-        } = await a.tn.get({
+        } = await o.tn.get({
           url: y.ANM.USER_SETTINGS_PROTO(this.type),
           rejectWithError: false
         }), n = (0, E.d5)(this.ProtoClass, t);
@@ -168,7 +168,7 @@ class A {
         let r = m.Z[this.type],
           {
             proto: i,
-            isDirty: o,
+            isDirty: a,
             cleanupFuncs: s
           } = (0, E.xt)(n, r);
         return await u.Z.dispatch({
@@ -177,9 +177,9 @@ class A {
             type: this.type,
             proto: n
           },
-          resetEditInfo: o || e,
+          resetEditInfo: a || e,
           local: false
-        }), o && this.markDirtyFromMigration(i, s), n
+        }), a && this.markDirtyFromMigration(i, s), n
       } catch (e) {
         throw this.dispatchChanges({
           loading: false
@@ -239,7 +239,7 @@ class A {
         this.saveLastSendTime();
         let {
           body: n
-        } = await a.tn.patch({
+        } = await o.tn.patch({
           url: y.ANM.USER_SETTINGS_PROTO(this.type),
           body: {
             settings: t,
@@ -301,7 +301,7 @@ function x(e) {
 
 function L(e) {
   !h.Z.hasLoaded(b.yP.PRELOADED_USER_SETTINGS) && (j(e) || f.default.track(y.rMx.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
-    content_type: o.z[e]
+    content_type: a.z[e]
   }))
 }
 

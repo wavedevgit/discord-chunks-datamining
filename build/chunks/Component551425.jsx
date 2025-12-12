@@ -17,9 +17,9 @@ var Chunk979554 = require("./979554.js"),
   Chunk594174 = require("./594174.js"),
   Chunk583434 = require("./583434.js"),
   Chunk216541 = require("./216541.jsx"),
-  Chunk411698 = require("./411698.js");
-let g = Chunk481060.EFr.SIZE_152,
-  y = (0, Chunk1585.y9)(g),
+  Chunk948067 = require("./948067.js");
+let b = Chunk481060.EFr.SIZE_152,
+  y = (0, Chunk1585.y9)(b),
   O = e => {
     var t, n;
     let {
@@ -34,7 +34,7 @@ let g = Chunk481060.EFr.SIZE_152,
       size: y
     });
     return (0, i.jsx)("div", {
-      className: b.avatarDecorationPreview,
+      className: g.avatarDecorationPreview,
       children: (0, i.jsx)(s.qEK, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -56,7 +56,7 @@ let g = Chunk481060.EFr.SIZE_152,
         "aria-label": r.label,
         src: u,
         avatarDecoration: c,
-        size: g
+        size: b
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ let g = Chunk481060.EFr.SIZE_152,
       item: t
     } = e;
     return (0, i.jsx)("div", {
-      className: b.profileEffectPreview,
+      className: g.profileEffectPreview,
       children: (0, i.jsx)(f.Z, {
         isHighlighted: true,
         skuId: null == t ? true : t.skuId
@@ -86,10 +86,10 @@ let g = Chunk481060.EFr.SIZE_152,
       item: t
     } = e;
     return (0, i.jsx)("div", {
-      className: b.nameplatePreview,
+      className: g.nameplatePreview,
       children: (0, i.jsx)(c.Z, {
         nameplate: t,
-        className: b.nameplate,
+        className: g.nameplate,
         nameplatePreviewSize: "xlarge",
         isHighlighted: true,
         showPlaceholderUser: true
@@ -101,7 +101,7 @@ let g = Chunk481060.EFr.SIZE_152,
       product: t
     } = e;
     return (0, i.jsx)("div", {
-      className: b.bundlePreview,
+      className: g.bundlePreview,
       children: (0, i.jsx)(h.d, {
         product: t,
         isPurchased: false,
@@ -117,7 +117,7 @@ let g = Chunk481060.EFr.SIZE_152,
       isFetching: l
     } = (0, m.T)(t.skuId, true);
     if (l || null == n) return (0, i.jsx)("div", {
-      className: b.spinnerContainer,
+      className: g.spinnerContainer,
       children: (0, i.jsx)(s.$jN, {})
     });
     if (n.type === r.Z.BUNDLE) return 0 === n.items.length ? null : (0, i.jsx)(v, {
@@ -141,7 +141,7 @@ let g = Chunk481060.EFr.SIZE_152,
         return null != t.giftStyle ? (0, i.jsx)(d.Z, {
           defaultAnimationState: u.SR.ACTION,
           idleAnimationState: u.SR.LOOP,
-          className: b.giftAnimation,
+          className: g.giftAnimation,
           giftStyle: t.giftStyle
         }) : null
     }

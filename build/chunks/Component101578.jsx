@@ -24,7 +24,7 @@ let f = e => {
     hideParty: c
   } = e, {
     analyticsLocations: u
-  } = (0, o.ZP)(a.Z.INVITE_EMBED), f = d(l), {
+  } = (0, a.ZP)(o.Z.INVITE_EMBED), f = d(l), {
     data: p
   } = (0, s.IX)(null == (t = l.application) ? true : t.id), _ = null != p ? p : f;
   return null == _ ? null : (0, r.jsx)(i.c, {

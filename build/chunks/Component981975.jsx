@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 981975, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
@@ -25,10 +25,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk856651 = require("./856651.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk40718 = require("./40718.js"),
-  Chunk536673 = require("./536673.js");
+  Chunk144563 = require("./144563.js"),
+  Chunk21321 = require("./21321.js");
 
-function I(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,34 +47,34 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function I(e, t) {
   return t !== g.O1.AND ? Object.values(o().groupBy(e, e => "".concat(e.connectionType, ":").concat(e.applicationId))) : 0 === e.length ? [] : [
     [...e]
   ]
 }
 
-function _(e) {
+function S(e) {
   let {
     handleAddVerificationClicked: t,
     locked: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: N.headerNoConfigContainer,
-    children: [(0, r.jsx)(d.Heading, {
-      className: N.headerHeading,
+    className: y.headerNoConfigContainer,
+    children: [(0, r.jsx)(u.Heading, {
+      className: y.headerHeading,
       variant: "eyebrow",
-      children: y.intl.string(y.t.nMir27)
-    }), (0, r.jsx)(d.Text, {
+      children: C.intl.string(C.t.nMir27)
+    }), (0, r.jsx)(u.Text, {
       variant: "text-sm/normal",
       color: "text-default",
-      className: N.headerNoConfigSubtitle,
-      children: y.intl.format(y.t.q5f7tK, {
-        helpdeskArticleUrl: f.Z.getArticleURL(O.BhN.CONNECTION_DETAILS_ADMIN)
+      className: y.headerNoConfigSubtitle,
+      children: C.intl.format(C.t.q5f7tK, {
+        helpdeskArticleUrl: m.Z.getArticleURL(v.BhN.CONNECTION_DETAILS_ADMIN)
       })
-    }), (0, r.jsx)(d.Button, {
+    }), (0, r.jsx)(u.Button, {
       disabled: n,
       onClick: t,
-      text: y.intl.string(y.t["OSvW5+"]),
+      text: C.intl.string(C.t["OSvW5+"]),
       fullWidth: true,
       variant: "primary"
     })]
@@ -86,20 +86,20 @@ function T(e) {
     guild: t,
     role: n,
     locked: l,
-    setSelectedSection: s,
+    setSelectedSection: a,
     integrations: o
   } = e, {
     headerHeight: T,
     headerRef: P
-  } = (0, h.Z)(0), {
+  } = (0, x.Z)(0), {
     scrolledToTop: w,
     handleScroll: Z
-  } = (0, j.V)(), R = (0, c.e7)([m.Z], () => {
+  } = (0, j.V)(), R = (0, c.e7)([p.Z], () => {
     var e;
-    return null == (e = m.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
-  }, [n.id, t.id]), D = (0, c.Wu)([p.Z], () => {
+    return null == (e = p.Z.getRoleMemberCount(t.id)) ? true : e[n.id]
+  }, [n.id, t.id]), D = (0, c.Wu)([h.Z], () => {
     var e;
-    return null != (e = p.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
+    return null != (e = h.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
   }), A = D.length > 1 ? g.O1.OR : g.O1.AND, L = i.useMemo(() => A === g.O1.OR ? D.flat() : null != D && D.length > 0 ? D[0] : [], [A, D]), k = i.useMemo(() => new Set(L.map(e => e.connectionType)), [L]);
 
   function G(e) {
@@ -111,95 +111,95 @@ function T(e) {
       applicationId: t,
       operator: true,
       value: true
-    }), (0, b.d_)(n.id, S(r, A))
+    }), (0, f.d_)(n.id, I(r, A))
   }
 
   function M() {
-    u.Z.dispatch({
+    d.Z.dispatch({
       type: "CONNECTIONS_GRID_MODAL_SHOW",
       onComplete: e => G(e),
       excludedPlatformTypes: k,
       integrations: o,
-      onCompleteApplication: e => G(C.Kt, e)
+      onCompleteApplication: e => G(O.Kt, e)
     })
   }
   let U = null;
-  if (0 === L.length) U = (0, r.jsx)(_, {
+  if (0 === L.length) U = (0, r.jsx)(S, {
     handleAddVerificationClicked: M,
     locked: l
   });
   else if (L.length > 0) {
     var B;
     let e = null;
-    L.length < 10 && (e = (0, r.jsx)(d.Button, {
+    L.length < 10 && (e = (0, r.jsx)(u.Button, {
       disabled: l,
       onClick: M,
-      text: y.intl.string(y.t["OSvW5+"]),
-      icon: d.oFk,
+      text: C.intl.string(C.t["OSvW5+"]),
+      icon: u.oFk,
       fullWidth: true,
       variant: "secondary"
     })), U = (0, r.jsxs)(r.Fragment, {
-      children: [(B = () => (0, b.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
+      children: [(B = () => (0, f.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          className: N.headerTitleContainer,
+          className: y.headerTitleContainer,
           children: [(0, r.jsx)("div", {
-            className: N.headerTitleTextContainer,
-            children: (0, r.jsx)(d.Heading, {
+            className: y.headerTitleTextContainer,
+            children: (0, r.jsx)(u.Heading, {
               variant: "eyebrow",
-              children: y.intl.string(y.t.nMir27)
+              children: C.intl.string(C.t.nMir27)
             })
-          }), (0, r.jsx)(d.Avr, {
+          }), (0, r.jsx)(u.Avr, {
             variant: "critical",
             onClick: B,
             disabled: l,
-            text: y.intl.string(y.t.ntW1cc),
+            text: C.intl.string(C.t.ntW1cc),
             textVariant: "text-sm/semibold"
           })]
-        }), (0, r.jsx)(d.Text, {
+        }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
-          children: y.intl.format(y.t.q5f7tK, {
-            helpdeskArticleUrl: f.Z.getArticleURL(O.BhN.CONNECTION_DETAILS_ADMIN)
+          children: C.intl.format(C.t.q5f7tK, {
+            helpdeskArticleUrl: m.Z.getArticleURL(v.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, l) {
-        let a = S(i, g.O1.OR);
-        return (0, r.jsx)(d.FXm, {
-          label: y.intl.string(y.t.Xs7PHX),
+        let s = I(i, g.O1.OR);
+        return (0, r.jsx)(u.FXm, {
+          label: C.intl.string(C.t.Xs7PHX),
           options: [{
-            name: y.intl.string(y.t.W3iY58),
+            name: C.intl.string(C.t.W3iY58),
             value: g.O1.OR
           }, {
-            name: y.intl.string(y.t.gHXS9A),
+            name: C.intl.string(C.t.gHXS9A),
             value: g.O1.AND
           }],
           onChange: e => l(i, e),
           value: n,
-          disabled: e || a.length < 2
+          disabled: e || s.length < 2
         })
-      }(l, n.id, A, L, (e, t) => (0, b.d_)(n.id, S(e, t))), function(e, t, n, i, l) {
-        function a(n, r) {
+      }(l, n.id, A, L, (e, t) => (0, f.d_)(n.id, I(e, t))), function(e, t, n, i, l) {
+        function s(n, r) {
           let i = [];
-          for (let t of e) i.push(I({}, t));
+          for (let t of e) i.push(E({}, t));
           if (null == n) {
             let t = e[r];
             null !== t && null == t.connectionMetadataField && null == t.operator && null == t.value ? i = i.filter(e => null == t.applicationId ? e.connectionType !== t.connectionType : e.connectionType !== t.connectionType && e.applicationId !== t.applicationId) : i.splice(r, 1)
           } else false === r ? i.push(n) : r >= 0 && (i[r] = n);
           t(i)
         }
-        let s = new Map;
+        let a = new Map;
         for (let t of (e.forEach((e, t) => {
             let n = "".concat(e.connectionType, ":").concat(e.applicationId);
-            if (s.has(n)) {
-              let r = s.get(n);
+            if (a.has(n)) {
+              let r = a.get(n);
               null == r || r.push({
                 index: t,
                 configuration: e
               })
-            } else s.set(n, [{
+            } else a.set(n, [{
               index: t,
               configuration: e
             }])
-          }), s.values())) {
+          }), a.values())) {
           if (t.some(e => {
               let {
                 configuration: t
@@ -217,7 +217,7 @@ function T(e) {
               })(Object(t)).forEach(function(n) {
                 Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
               }), e
-            }(I({}, t[0].configuration), {
+            }(E({}, t[0].configuration), {
               connectionMetadataField: true,
               operator: true,
               value: true
@@ -229,48 +229,48 @@ function T(e) {
           })
         }
         return (0, r.jsx)("div", {
-          className: N.configurationsContainer,
-          children: Array.from(s.values()).map(e => (0, r.jsx)(x.Z, {
+          className: y.configurationsContainer,
+          children: Array.from(a.values()).map(e => (0, r.jsx)(b.Z, {
             configurationItems: e,
-            onConfigurationChange: a,
+            onConfigurationChange: s,
             locked: n,
             integrations: l
           }, e[0].configuration.connectionType + ":" + e[0].index))
         })
-      }(L, e => (0, b.d_)(n.id, S(e, A)), l, n.id, o), e]
+      }(L, e => (0, f.d_)(n.id, I(e, A)), l, n.id, o), e]
     })
   }
-  return (0, r.jsx)(d.yWw, {
-    className: N.scroller,
+  return (0, r.jsx)(u.yWw, {
+    className: y.scroller,
     style: {
       scrollPaddingTop: T
     },
     onScroll: Z,
     children: (0, r.jsxs)("div", {
-      className: E.contentWidth,
+      className: N.contentWidth,
       children: [(0, r.jsx)("div", {
-        className: a()(E.header, E.stickyHeader, {
-          [E.stickyHeaderElevated]: !w
+        className: s()(N.header, N.stickyHeader, {
+          [N.stickyHeaderElevated]: !w
         }),
         ref: P,
         children: (0, r.jsx)(j.Z, {
           guild: t,
           role: n,
-          selectedSection: v.ZI.VERIFICATIONS,
-          setSelectedSection: s
+          selectedSection: _.ZI.VERIFICATIONS,
+          setSelectedSection: a
         })
       }), (null != R ? R : 0) > 0 ? (0, r.jsxs)("div", {
-        className: N.warningContainer,
-        children: [(0, r.jsx)(d.Mgn, {
+        className: y.warningContainer,
+        children: [(0, r.jsx)(u.Mgn, {
           size: "custom",
           width: 20,
           height: 20,
           color: "currentColor",
-          className: N.warningIcon
-        }), (0, r.jsx)(d.Text, {
+          className: y.warningIcon
+        }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: y.intl.string(y.t["2aFeef"])
+          children: C.intl.string(C.t["2aFeef"])
         })]
       }) : null, U]
     })

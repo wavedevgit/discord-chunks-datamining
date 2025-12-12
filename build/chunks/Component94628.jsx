@@ -2,7 +2,7 @@
 /** chunk id: 94628, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  B: () => l
+  B: () => c
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,16 +11,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk787025 = require("./787025.jsx"),
   Chunk944844 = require("./944844.js");
 
-function l(e) {
+function c(e) {
   let {
     data: t,
     onDenied: n,
-    onError: l,
+    onError: c,
     onSuccess: d
-  } = e, u = (0, c.t)(n, l, d), f = r.useCallback(e => u(t, e), [t, u]);
-  return (0, a.jsx)(s.G, {
+  } = e, u = (0, l.t)(n, c, d), f = a.useCallback(e => u(t, e), [t, u]);
+  return (0, r.jsx)(s.G, {
     removeChildWrapper: true,
-    children: (0, a.jsx)(i.OAuth2AuthorizeModal, {
+    children: (0, r.jsx)(i.OAuth2AuthorizeModal, {
       transitionState: o.Dvm.ENTERED,
       clientId: t.clientId,
       scopes: t.scopes,

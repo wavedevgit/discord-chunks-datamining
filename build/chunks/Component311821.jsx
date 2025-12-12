@@ -8,19 +8,19 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk44592 = require("./44592.js");
+  Chunk831371 = require("./831371.js");
 let c = e => {
     let {
       className: t,
       onClick: n,
       children: i
     } = e;
-    return (0, r.jsx)(o.Anchor, {
+    return (0, r.jsx)(a.Anchor, {
       onClick: n,
-      className: a()(l.link, t),
+      className: o()(l.link, t),
       children: i
     })
   },

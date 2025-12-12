@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk740078 = require("./740078.js"),
   Chunk510104 = require("./510104.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return true === n && (n = {
     x: 0,
     y: 0
@@ -19,7 +19,7 @@ function a(e, t, n) {
   }
 }
 
-function o(e) {
+function a(e) {
   return [r.we, r.F2, r.I, r.t$].some(function(t) {
     return e[t] >= 0
   })
@@ -41,10 +41,10 @@ let s = {
       u = (0, i.Z)(t, {
         altBoundary: true
       }),
-      d = a(c, r),
-      f = a(u, s, l),
-      p = o(d),
-      _ = o(f);
+      d = o(c, r),
+      f = o(u, s, l),
+      p = a(d),
+      _ = a(f);
     t.modifiersData[n] = {
       referenceClippingOffsets: d,
       popperEscapeOffsets: f,

@@ -20,6 +20,6 @@ class c extends Chunk727916.Z {
   }
   innerExtract(e, t) {
     let n = (0, r.RA)(t[1]);
-    return n ? i.L.createRelativeFromReference(e.reference, (0, o.de)(n)) : null
+    return n ? i.L.createRelativeFromReference(e.reference, (0, a.de)(n)) : null
   }
 }

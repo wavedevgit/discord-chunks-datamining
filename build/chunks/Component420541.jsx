@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk111810 = require("./111810.js"),
   Chunk317568 = require("./317568.js"),
   Chunk516604 = require("./516604.js"),
-  Chunk261906 = require("./261906.js");
+  Chunk313677 = require("./313677.js");
 let d = () => {
     let e = (0, Chunk885006.Z)(),
       t = Chunk473749.useMemo(() => ({
@@ -19,7 +19,7 @@ let d = () => {
       }), [module]),
       r = (0, Chunk516604.Z)(exports);
     return (0, Chunk317568.Z)(), (0, Chunk54381.jsx)("div", {
-      className: Chunk261906.canvasWrapper,
+      className: Chunk313677.canvasWrapper,
       id: "simple-confetti-canvas",
       children: (0, Chunk54381.jsx)(Chunk597846.z, {
         playing: require.playing,

@@ -4,12 +4,12 @@
 require.d(exports, {
   UC: () => l,
   YP: () => s,
-  c: () => o
+  c: () => a
 }), require("./388685.js");
 let r = new WeakMap,
   i = new WeakMap;
 
-function a(e, t) {
+function o(e, t) {
   e.forEach(e => {
     var n;
     let r = null == (n = i.get(t)) ? true : n.get(e.target);
@@ -17,15 +17,15 @@ function a(e, t) {
   })
 }
 
-function o(e) {
+function a(e) {
   let t = r.get(e);
-  return null == t && (t = new IntersectionObserver(a, e), r.set(e, t), i.set(t, new WeakMap)), t
+  return null == t && (t = new IntersectionObserver(o, e), r.set(e, t), i.set(t, new WeakMap)), t
 }
 
 function s(e, t, n) {
   var r;
-  let a = null != (r = i.get(e)) ? r : new WeakMap;
-  a.has(t) || e.observe(t), a.set(t, n), i.set(e, a)
+  let o = null != (r = i.get(e)) ? r : new WeakMap;
+  o.has(t) || e.observe(t), o.set(t, n), i.set(e, o)
 }
 
 function l(e, t) {

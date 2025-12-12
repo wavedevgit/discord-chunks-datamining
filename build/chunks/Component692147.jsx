@@ -40,10 +40,10 @@ function _(e) {
   let {
     reactionRef: t,
     count: n
-  } = e, r = i.useRef(n), l = (0, o.e7)([s.Z], () => s.Z.getState()), d = (0, u.Z)(), f = (0, c.Z)(t);
+  } = e, r = i.useRef(n), l = (0, a.e7)([s.Z], () => s.Z.getState()), d = (0, u.Z)(), f = (0, c.Z)(t);
   return i.useEffect(() => {
     if (n > r.current && null != f) {
-      let e = (0, a.clamp)(n, l.confettiCount / 2, 2 * l.confettiCount);
+      let e = (0, o.clamp)(n, l.confettiCount / 2, 2 * l.confettiCount);
       d.fire(f.x, f.y, {
         count: e
       })

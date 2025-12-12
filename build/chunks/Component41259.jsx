@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk436808 = require("./436808.js");
+  Chunk604483 = require("./604483.js");
 
 function E(e) {
   let {
@@ -37,7 +37,7 @@ function E(e) {
       variant: "text-lg/normal",
       color: "text-default",
       children: h.intl.string(h.t.uT1CPa)
-    }), (0, r.jsx)(o.X6q, {
+    }), (0, r.jsx)(a.X6q, {
       variant: "heading-xxl/bold",
       color: "text-strong",
       children: n.name
@@ -48,7 +48,7 @@ function E(e) {
       color: "text-strong",
       children: [n.name, null != E ? (0, r.jsx)(c.Z, {
         className: g.botTag,
-        verified: null != E.public_flags && (0, a.yE)(E.public_flags, _.xW$.VERIFIED_BOT)
+        verified: null != E.public_flags && (0, o.yE)(E.public_flags, _.xW$.VERIFIED_BOT)
       }) : null]
     }), b.length > 0 ? (0, r.jsx)(l.x, {
       variant: "text-md/normal",
@@ -100,7 +100,7 @@ function E(e) {
               children: "#".concat(t.discriminator)
             })]
           }, t.id)
-        }), (0, r.jsx)(o.P3F, {
+        }), (0, r.jsx)(a.P3F, {
           tag: "a",
           className: g.logoutLink,
           onClick: () => (0, d.c$)(O, "oauth2_logout"),

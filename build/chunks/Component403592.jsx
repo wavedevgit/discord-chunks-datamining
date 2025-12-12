@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk166459 = require("./166459.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk297747 = require("./297747.js");
+  Chunk374450 = require("./374450.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -63,7 +63,7 @@ let S = 104,
   I = 16;
 
 function T(e) {
-  var t, n, a;
+  var t, n, o;
   let {
     file: s
   } = e, [l, c] = i.useState(), [d, f] = i.useState(false), [p, _] = i.useState({}), m = i.useRef(null);
@@ -94,14 +94,14 @@ function T(e) {
   return (0, r.jsx)("img", {
     ref: m,
     src: l,
-    className: o()(E.fileIcon, {
+    className: a()(E.fileIcon, {
       [E.image]: !d
     }),
     "aria-hidden": true,
     alt: "",
     style: {
       width: null != (n = p.width) ? n : "initial",
-      maxHeight: null != (a = p.height) ? a : S,
+      maxHeight: null != (o = p.height) ? o : S,
       height: "unset",
       marginLeft: g,
       marginRight: g,
@@ -115,8 +115,8 @@ class C extends Chunk473749.Component {
     return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk54381.jsx)(T, {
       file: this.props.upload.item.file
     }) : (0, Chunk54381.jsx)("div", {
-      className: o()(Chunk297747.fileIcon, {
-        [Chunk297747[null != (e = this.props.upload.classification) ? module : ""]]: true
+      className: a()(Chunk374450.fileIcon, {
+        [Chunk374450[null != (e = this.props.upload.classification) ? module : ""]]: true
       })
     })
   }
@@ -141,7 +141,7 @@ class A extends Chunk473749.Component {
       disableSpoiler: n,
       onClose: i
     } = this.props, {
-      hasSpoiler: a
+      hasSpoiler: o
     } = this.state;
     return (0, Chunk54381.jsxs)(Chunk793030.Modal, {
       transitionState: exports,
@@ -193,7 +193,7 @@ class A extends Chunk473749.Component {
     })
   }
   constructor(e) {
-    var t, n, r, i, a, o;
+    var t, n, r, i, o, a;
     super(e), b(this, "cancelAll", () => {
       c.Z.clearAll(this.props.channelId, this.props.draftType), this.props.onClose()
     }), b(this, "cancel", () => {
@@ -211,22 +211,22 @@ class A extends Chunk473749.Component {
       } = this.props, {
         filename: r,
         description: i,
-        hasSpoiler: a
+        hasSpoiler: o
       } = this.state;
       n({
         upload: e,
         name: r,
         description: i,
-        spoiler: a
+        spoiler: o
       }), t()
     });
     let s = e.ignoreDraft ? "" : p.Z.getDraft(this.props.channelId, e.draftType);
     this.state = v(y({}, (0, f.eK)(s)), {
       textFocused: true,
       hasSpoiler: null != (i = null == (t = e.upload) ? true : t.spoiler) && i,
-      filename: null != (a = null == (n = e.upload) ? true : n.filename) ? a : "",
+      filename: null != (o = null == (n = e.upload) ? true : n.filename) ? o : "",
       contentWarningProps: null,
-      description: null != (o = null == (r = e.upload) ? true : r.description) ? o : ""
+      description: null != (a = null == (r = e.upload) ? true : r.description) ? a : ""
     })
   }
 }

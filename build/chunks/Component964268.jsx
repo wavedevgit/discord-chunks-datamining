@@ -18,8 +18,8 @@ let f = e => {
       skuId: t,
       analyticsSourceLocation: n,
       analyticsLocations: i,
-      orbProductContext: a,
-      isRedeeming: o,
+      orbProductContext: o,
+      isRedeeming: a,
       orbRedemptionError: s,
       onRedeemVirtualCurrency: l,
       rentalDuration: f
@@ -34,7 +34,7 @@ let f = e => {
       skuId: t,
       analyticsSourceLocation: n,
       analyticsLocations: i,
-      orbProductContext: a,
+      orbProductContext: o,
       orbRedemptionError: s,
       onRedeemVirtualCurrency: l
     }), {
@@ -59,7 +59,7 @@ let f = e => {
       reviewBodyLegalContent: null,
       primaryCTAButtonProps: {
         onClick: h,
-        loading: o,
+        loading: a,
         text: O,
         disabled: b,
         tooltipText: y
@@ -75,8 +75,8 @@ let f = e => {
       paymentModalStepProps: r,
       sharedCheckoutContext: {
         skuId: i,
-        analyticsLocations: a,
-        analyticsSourceLocation: o,
+        analyticsLocations: o,
+        analyticsSourceLocation: a,
         flowSpecificOptions: s
       }
     } = e, l = null != (t = s.rentalDuration) ? t : true, {
@@ -92,8 +92,8 @@ let f = e => {
       onRedeemVirtualCurrency: m
     } = g(), h = f({
       skuId: i,
-      analyticsLocations: a,
-      analyticsSourceLocation: o,
+      analyticsLocations: o,
+      analyticsSourceLocation: a,
       orbProductContext: d,
       isRedeeming: p,
       orbRedemptionError: _,
@@ -129,8 +129,8 @@ let f = e => {
         skuId: t,
         loadId: n,
         analyticsLocations: i,
-        analyticsSourceLocation: a,
-        renderModalProps: o,
+        analyticsSourceLocation: o,
+        renderModalProps: a,
         flowSpecificOptions: s,
         children: u
       } = e, {
@@ -148,10 +148,10 @@ let f = e => {
         analyticsLocations: i,
         rentalDuration: f
       }), b = (0, c.HR)({
-        onClose: o.onClose,
+        onClose: a.onClose,
         skuId: t,
         analyticsLocations: i,
-        analyticsSourceLocation: a,
+        analyticsSourceLocation: o,
         orbProductContext: p
       });
       return (0, r.jsx)(m.Provider, {
@@ -160,11 +160,11 @@ let f = e => {
             loadId: n,
             skuId: t,
             analyticsLocations: i,
-            analyticsSourceLocation: a,
+            analyticsSourceLocation: o,
             flowSpecificOptions: s
           },
           paymentModalProps: b,
-          renderModalProps: o
+          renderModalProps: a
         },
         children: (0, r.jsx)(h.Provider, {
           value: {

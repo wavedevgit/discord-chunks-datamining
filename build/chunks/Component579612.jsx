@@ -10,7 +10,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk933557 = require("./933557.js"),
   Chunk471445 = require("./471445.js"),
@@ -20,25 +20,25 @@ var Chunk120356 = require("./120356.js"),
   Chunk246946 = require("./246946.js"),
   Chunk594174 = require("./594174.js"),
   Chunk51144 = require("./51144.js"),
-  Chunk399781 = require("./399781.js");
+  Chunk495824 = require("./495824.js");
 
 function h(e) {
   let {
     channel: t,
     className: n,
     avatarSize: i,
-    iconSize: a
+    iconSize: o
   } = e;
   if (t.isDM()) {
     let e = t.getRecipientId(),
       n = p.default.getUser(e);
     if (null == n) return null;
-    let a = n.getAvatarURL(null, o.ny6[i].size);
-    return (0, r.jsx)(o.qEK, {
+    let o = n.getAvatarURL(null, a.ny6[i].size);
+    return (0, r.jsx)(a.qEK, {
       "aria-hidden": true,
       className: m.searchResultDMChannelIcon,
       size: i,
-      src: a
+      src: o
     })
   }
   if (t.isGroupDM()) return (0, r.jsx)(c.Z, {
@@ -51,7 +51,7 @@ function h(e) {
   return null == s ? null : (0, r.jsx)(s, {
     className: n,
     color: "currentColor",
-    size: a
+    size: o
   })
 }
 
@@ -97,10 +97,10 @@ function b(e) {
   return null == t ? (0, r.jsx)("strong", {
     children: n
   }) : (0, r.jsxs)("div", {
-    className: a()(m.resultChannel, i),
+    className: o()(m.resultChannel, i),
     children: [(0, r.jsx)(h, {
       channel: t,
-      avatarSize: o.EFr.SIZE_20,
+      avatarSize: a.EFr.SIZE_20,
       iconSize: "refresh_sm"
     }), (0, r.jsxs)("div", {
       className: s,

@@ -50,26 +50,26 @@ function u(e, t) {
 
 function d(e, t, n) {
   let i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {},
-    a = arguments.length > 4 ? arguments[4] : true;
-  e.preventDefault(), (0, r.kK)(e.currentTarget) && e.currentTarget.blur(), (0, o.K)(u(l({}, i), {
+    o = arguments.length > 4 ? arguments[4] : true;
+  e.preventDefault(), (0, r.kK)(e.currentTarget) && e.currentTarget.blur(), (0, a.K)(u(l({}, i), {
     items: t,
     startingIndex: n,
-    location: null != a ? a : "zoomedMediaModalHelper"
+    location: null != o ? o : "zoomedMediaModalHelper"
   }))
 }
 
 function f(e, t, n) {
   let r = {},
-    o = {};
+    a = {};
   for (let [s, l] of e.entries()) {
     let c = (0, i.q)({
       proxyURL: l.proxyUrl,
       url: l.url
     });
-    r[c] = r => d(r, e, s, t, n), o[c] = () => (0, a.WG)(l, e.length > 1)
+    r[c] = r => d(r, e, s, t, n), a[c] = () => (0, o.WG)(l, e.length > 1)
   }
   return {
     srcToOnClickOverride: r,
-    srcToHandlePreloadImage: o
+    srcToHandlePreloadImage: a
   }
 }

@@ -14,7 +14,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk704215 = require("./704215.js"),
   Chunk70956 = require("./70956.js"),
-  Chunk512170 = require("./512170.js"),
+  Chunk29467 = require("./29467.js"),
   Chunk388032 = require("./388032.jsx");
 let s = 6 * Chunk70956.Z.Millis.DAYS_30;
 var l = function(e) {
@@ -62,29 +62,29 @@ var f = function(e) {
 function p(e) {
   let t = [{
     value: "pid_concern",
-    label: o.intl.string(a.default.ZsnNgz)
+    label: a.intl.string(o.default.ZsnNgz)
   }, {
     value: "too_much_time",
-    label: o.intl.string(a.default.kkKhVJ)
+    label: a.intl.string(o.default.kkKhVJ)
   }, {
     value: "confusion",
-    label: o.intl.string(a.default.bC0QVX)
+    label: a.intl.string(o.default.bC0QVX)
   }, {
     value: "something_else",
-    label: o.intl.string(o.t.WAYoTx)
+    label: a.intl.string(a.t.WAYoTx)
   }];
   return e === r.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE ? [...t, {
     value: "need_documents",
-    label: o.intl.string(a.default["Dl4A+U"])
+    label: a.intl.string(o.default["Dl4A+U"])
   }, {
     value: "didnt_work",
-    label: o.intl.string(a.default["8JFGXc"])
+    label: a.intl.string(o.default["8JFGXc"])
   }] : [...t, {
     value: "changed_mind",
-    label: o.intl.string(a.default.eSP1F9)
+    label: a.intl.string(o.default.eSP1F9)
   }, {
     value: "unnecessary",
-    label: o.intl.string(a.default.maxf2S)
+    label: a.intl.string(o.default.maxf2S)
   }]
 }
 var _ = function(e) {

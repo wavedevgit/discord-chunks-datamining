@@ -11,11 +11,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk6598 = require("./6598.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk442147 = require("./442147.js");
+  Chunk998268 = require("./998268.js");
 let d = Chunk473749.forwardRef((e, t) => {
   let {
     analyticsLocations: n
-  } = (0, s.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA);
+  } = (0, s.ZP)(a.Z.PREMIUM_MARKETING_FOOTER_CTA);
   return (0, r.jsx)(s.Gt, {
     value: n,
     children: (0, r.jsx)("div", {
@@ -23,7 +23,7 @@ let d = Chunk473749.forwardRef((e, t) => {
       className: u.container,
       children: (0, r.jsxs)("div", {
         className: u.contentContainer,
-        children: [(0, r.jsx)(l.Z, {}), (0, r.jsx)(a.Heading, {
+        children: [(0, r.jsx)(l.Z, {}), (0, r.jsx)(o.Heading, {
           variant: "display-md",
           color: "text-strong",
           className: u.footerHeader,

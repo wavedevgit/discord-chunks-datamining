@@ -2,8 +2,8 @@
 /** chunk id: 668761, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  f: () => h,
-  y: () => f
+  f: () => p,
+  y: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,24 +16,24 @@ var Chunk481060 = require("./481060.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f() {
+function h() {
   let {
     trackView: e,
     trackClick: t
   } = (0, Chunk312839.R)(Chunk987650.n0.ClipsReminderNotification, {
     notif_type: Chunk987650.n0.ClipsReminderNotification
-  }), n = Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP), f = (0, Chunk341569.LI)();
-  if (null == require || !f) return null;
-  let h = Chunk13140.BB(require.shortcut, true);
+  }), n = Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP), h = (0, Chunk341569.LI)();
+  if (null == require || !h) return null;
+  let p = Chunk13140.BB(require.shortcut, true);
   return {
     title: Chunk388032.intl.format(Chunk388032.t.S5uhCN, {
-      keybind: h,
+      keybind: p,
       keybindHook: () => (0, Chunk54381.jsx)("span", {
         style: {
           display: "inline-block"
         },
         children: (0, Chunk54381.jsx)(Chunk481060.M2$, {
-          shortcut: h
+          shortcut: p
         })
       })
     }),
@@ -50,11 +50,11 @@ function f() {
   }
 }
 
-function h(e) {
+function p(e) {
   let {
     trackView: t,
     trackClick: n
-  } = (0, a.R)(d.n0.ClipsNotification, {
+  } = (0, s.R)(d.n0.ClipsNotification, {
     notif_type: d.n0.ClipsNotification
   });
   return {

@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk998502 = require("./998502.js"),
   Chunk631885 = require("./631885.js"),
   Chunk329242 = require("./329242.jsx"),
-  Chunk12252 = require("./12252.js");
+  Chunk173664 = require("./173664.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,11 +57,11 @@ function m(e) {
   let {
     otherUser: t,
     status: n
-  } = e, o = (0, s.j_)(t.id, n), {
+  } = e, a = (0, s.j_)(t.id, n), {
     avatarSrc: u,
     avatarDecorationSrc: f,
     eventHandlers: m
-  } = (0, a.Z)({
+  } = (0, o.Z)({
     userId: t.id,
     size: i.EFr.SIZE_40,
     animateOnHover: true
@@ -85,7 +85,7 @@ function m(e) {
       }), (0, r.jsx)(i.Text, {
         color: "text-muted",
         variant: "text-xs/normal",
-        children: o
+        children: a
       })]
     })]
   })

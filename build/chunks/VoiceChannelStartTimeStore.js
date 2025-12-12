@@ -1,7 +1,7 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 168611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 }), require("./388685.js");
 var r, i, Chunk106351 = require("./106351.js"),
   Chunk442837 = require("./442837.js"),
@@ -39,7 +39,7 @@ class g extends(r = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : g[i] = "VoiceChannelStartTimeStore";
-let b = new g(Chunk570140.Z, {
+let m = new g(Chunk570140.Z, {
   GUILD_CREATE: p,
   GUILD_DELETE: p,
   CONNECTION_RESUMED: h,

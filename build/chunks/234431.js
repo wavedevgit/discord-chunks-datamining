@@ -8,11 +8,11 @@ var Chunk591759 = require("./591759.js");
 
 function i(e) {
   var t, n, i;
-  let a = r.Z.toURLSafe(e),
-    o = null != (t = null == a ? true : a.searchParams.get("referrer_id")) ? t : true;
+  let o = r.Z.toURLSafe(e),
+    a = null != (t = null == o ? true : o.searchParams.get("referrer_id")) ? t : true;
   return {
-    referrerId: o,
-    customId: null != (n = null == a ? true : a.searchParams.get("custom_id")) ? n : true,
-    linkId: null != (i = null == a ? true : a.searchParams.get("link_id")) ? i : true
+    referrerId: a,
+    customId: null != (n = null == o ? true : o.searchParams.get("custom_id")) ? n : true,
+    linkId: null != (i = null == o ? true : o.searchParams.get("link_id")) ? i : true
   }
 }

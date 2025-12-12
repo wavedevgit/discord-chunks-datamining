@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 64722 **/
 /** chunk id: 31022, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -19,7 +19,7 @@ function h(e) {
     voiceState: t,
     userNick: n,
     user: r
-  } = e, i = (0, a.sQ)(t, n);
+  } = e, i = (0, o.sQ)(t, n);
   return {
     user: r,
     voiceState: t,
@@ -31,7 +31,7 @@ function h(e) {
 function p(e) {
   let [t] = (0, r.e7)([u.Z, l.Z, i.Z], () => {
     let t;
-    return [(t = e === f.I_8 ? c.default.keys(i.Z.getFavoriteChannels()).map(e => l.Z.getChannel(e)).filter(o.lm).filter(e => e.isGuildStageVoice()) : u.Z.getChannels(e)).reduce((e, t) => {
+    return [(t = e === f.I_8 ? c.default.keys(i.Z.getFavoriteChannels()).map(e => l.Z.getChannel(e)).filter(a.lm).filter(e => e.isGuildStageVoice()) : u.Z.getChannels(e)).reduce((e, t) => {
       let n = u.Z.getMutableParticipants(t.id, d.pV.SPEAKER);
       return e[t.id] = n.filter(e => e.type === d.Ui.VOICE).map(h), e
     }, {}), t.reduce((e, t) => {

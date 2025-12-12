@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   L: () => i,
-  Z: () => a
+  Z: () => o
 });
 var Chunk54381 = require("./54381.js");
 
@@ -11,16 +11,16 @@ function i(e) {
   let {
     size: t,
     horizontal: n = false
-  } = e, i = n ? t : 1, a = n ? 1 : t;
+  } = e, i = n ? t : 1, o = n ? 1 : t;
   return (0, r.jsx)("span", {
     style: {
       display: "block",
       width: i,
       minWidth: i,
-      height: a,
-      minHeight: a
+      height: o,
+      minHeight: o
     }
   })
 }
 require("./473749.js");
-let a = i
+let o = i

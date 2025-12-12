@@ -20,11 +20,11 @@ function i(e) {
   return n >>> 0
 }
 
-function a(e, t, n, r) {
-  for (let a = 0; a < t; ++a) r[a] = i(e, n[a])
+function o(e, t, n, r) {
+  for (let o = 0; o < t; ++o) r[o] = i(e, n[o])
 }
 
-function o(e) {
+function a(e) {
   return e <= 0 ? 1 : (e--, e |= e >> 1, e |= e >> 2, e |= e >> 4, e |= e >> 8, e |= e >> 16, ++e)
 }
 require.d(exports, {
@@ -33,24 +33,24 @@ require.d(exports, {
 class s {
   static createEstimate(e, t) {
     if (e <= 0 || e >= 1 || t <= 0 || t >= 1) throw Error("Epsilon and delta must be between 0 and 1 (exclusive)");
-    return new s(o(Math.ceil(Math.E / e)), Math.ceil(Math.log(1 / t)))
+    return new s(a(Math.ceil(Math.E / e)), Math.ceil(Math.log(1 / t)))
   }
   update(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1;
     if (t <= 0) return;
-    a(e, this.depth, this.seeds, this.scratchHashes);
+    o(e, this.depth, this.seeds, this.scratchHashes);
     let n = this.width,
       r = n - 1,
       i = this.scratchHashes;
     if (5 === this.depth) this.table[(i[0] & r) + 0 * n] += t, this.table[(i[1] & r) + +n] += t, this.table[(i[2] & r) + 2 * n] += t, this.table[(i[3] & r) + 3 * n] += t, this.table[(i[4] & r) + 4 * n] += t;
     else
       for (let e = 0; e < this.depth; ++e) {
-        let a = (i[e] & r) + e * n;
-        this.table[a] += t
+        let o = (i[e] & r) + e * n;
+        this.table[o] += t
       }
   }
   query(e) {
-    a(e, this.depth, this.seeds, this.scratchHashes);
+    o(e, this.depth, this.seeds, this.scratchHashes);
     let t = 1 / 0,
       n = this.width,
       r = n - 1,
@@ -58,8 +58,8 @@ class s {
     if (5 === this.depth) t = Math.min(t = Math.min(t = Math.min(t = Math.min(t = Math.min(t, this.table[(i[0] & r) + 0 * n]), this.table[(i[1] & r) + +n]), this.table[(i[2] & r) + 2 * n]), this.table[(i[3] & r) + 3 * n]), this.table[(i[4] & r) + 4 * n]);
     else
       for (let e = 0; e < this.depth; ++e) {
-        let a = (i[e] & r) + e * n;
-        t = Math.min(t, this.table[a])
+        let o = (i[e] & r) + e * n;
+        t = Math.min(t, this.table[o])
       }
     return t
   }
@@ -85,7 +85,7 @@ class s {
   }
   constructor(e, t) {
     if (r(this, "width", true), r(this, "depth", true), r(this, "table", true), r(this, "seeds", true), r(this, "scratchHashes", true), e <= 0 || t <= 0) throw Error("Width and depth must be positive integers");
-    this.width = o(0 | e), this.depth = 0 | t, this.table = new Uint32Array(this.width * this.depth), this.scratchHashes = new Uint32Array(this.depth), this.seeds = Array(this.depth);
+    this.width = a(0 | e), this.depth = 0 | t, this.table = new Uint32Array(this.width * this.depth), this.scratchHashes = new Uint32Array(this.depth), this.seeds = Array(this.depth);
     for (let e = 0; e < this.depth; e++) this.seeds[e] = e
   }
 }

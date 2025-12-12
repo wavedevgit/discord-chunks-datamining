@@ -13,8 +13,8 @@ var Chunk48657 = require("./48657.js"),
   f = require("./840475.js").aTypedArrayConstructor,
   Chunk190475 = require("./190475.js");
 module.exports = function(e) {
-  var t, n, _, m, h, g, E, b, y = a(this),
-    O = o(e),
+  var t, n, _, m, h, g, E, b, y = o(this),
+    O = a(e),
     v = arguments.length,
     S = v > 1 ? arguments[1] : true,
     I = true !== S,

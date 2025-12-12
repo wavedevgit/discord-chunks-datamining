@@ -8,12 +8,12 @@ var Chunk473749 = require("./473749.js"),
   Chunk768943 = require("./768943.js"),
   Chunk429828 = require("./429828.js");
 
-function o() {
+function a() {
   return Chunk768943.Z.getSavedMessages().map(e => e.saveData)
 }
 
 function s() {
-  let [e, t] = Chunk473749.useState(o), n = Chunk473749.useRef(Chunk768943.Z.getIsStale());
+  let [e, t] = Chunk473749.useState(a), n = Chunk473749.useRef(Chunk768943.Z.getIsStale());
   return Chunk473749.useEffect(() => {
     let e = Chunk768943.Z.getLastChanged();
 
@@ -21,7 +21,7 @@ function s() {
       let r = Chunk768943.Z.getLastChanged();
       if (module !== Chunk473749) {
         if (e = Chunk473749, require.current && !Chunk768943.Z.getIsStale()) {
-          require.current = false, exports(o());
+          require.current = false, exports(a());
           return
         }
         exports(e => {

@@ -56,8 +56,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = m(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function _(e, t) {
 function m(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let h = Chunk473749.createContext({
@@ -102,7 +102,7 @@ function E(e) {
   var {
     children: t
   } = e, n = _(e, ["children"]);
-  return (0, r.jsx)(a.Wd, {
+  return (0, r.jsx)(o.Wd, {
     children: e => (0, r.jsx)(h.Provider, {
       value: {
         firstFocusableItemProps: e
@@ -120,7 +120,7 @@ function b(e) {
   var {
     ref: t,
     returnRef: n,
-    modal: a = true,
+    modal: o = true,
     setDialogRef: s,
     trackingProps: l
   } = e, u = _(e, ["ref", "returnRef", "modal", "setDialogRef", "trackingProps"]);
@@ -142,11 +142,11 @@ function b(e) {
         disableTrack: l.disableTrack
       })
     }
-  }, [m, l]), (0, o.T)(f, {
+  }, [m, l]), (0, a.T)(f, {
     returnRef: n,
-    disable: !a
+    disable: !o
   });
-  let h = a ? g : E;
+  let h = o ? g : E;
   return (0, r.jsx)(h, p(d({}, u), {
     ref: f
   }))

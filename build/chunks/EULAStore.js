@@ -3,10 +3,10 @@
 require.d(exports, {
   Z: () => c
 });
-var r, a, Chunk442837 = require("./442837.js"),
+var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 let l = {};
-class o extends(a = Chunk442837.ZP.Store) {
+class o extends(i = Chunk442837.ZP.Store) {
   getEULA(e) {
     return l[e]
   }

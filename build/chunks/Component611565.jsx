@@ -1,7 +1,7 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 611565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
@@ -13,11 +13,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk592125 = require("./592125.js"),
   Chunk787879 = require("./787879.js"),
   Chunk370774 = require("./370774.js"),
-  Chunk616182 = require("./616182.js"),
-  Chunk663618 = require("./663618.js");
-let f = [{
+  Chunk326588 = require("./326588.js"),
+  Chunk451429 = require("./451429.js");
+let x = [{
     key: "channelName",
-    cellClassName: i()(Chunk616182.cell, Chunk616182.channelName),
+    cellClassName: i()(Chunk326588.cell, Chunk326588.channelName),
     render(e) {
       let {
         channelName: t
@@ -29,7 +29,7 @@ let f = [{
     }
   }, {
     key: "channelId",
-    cellClassName: i()(Chunk616182.cell, Chunk616182.channelId),
+    cellClassName: i()(Chunk326588.cell, Chunk326588.channelId),
     render(e) {
       let {
         channelId: t
@@ -40,9 +40,9 @@ let f = [{
       })
     }
   }],
-  x = [{
+  f = [{
     key: "channelName",
-    cellClassName: i()(Chunk616182.cell, Chunk616182.channelName),
+    cellClassName: i()(Chunk326588.cell, Chunk326588.channelName),
     render(e) {
       let {
         channelName: t
@@ -54,7 +54,7 @@ let f = [{
     }
   }, {
     key: "loadState",
-    cellClassName: i()(Chunk616182.cell, Chunk616182.loadState),
+    cellClassName: i()(Chunk326588.cell, Chunk326588.loadState),
     render(e) {
       let {
         loadState: t
@@ -66,7 +66,7 @@ let f = [{
     }
   }, {
     key: "channelId",
-    cellClassName: i()(Chunk616182.cell, Chunk616182.channelId),
+    cellClassName: i()(Chunk326588.cell, Chunk326588.channelId),
     render(e) {
       let {
         channelId: t
@@ -78,7 +78,7 @@ let f = [{
     }
   }];
 
-function b() {
+function g() {
   let {
     unreadRecentMentionsCount: e,
     unreadChannelIds: t
@@ -86,34 +86,34 @@ function b() {
     isLoading: n,
     hasLoadedEver: r,
     hasPreloaded: i,
-    hasMoreToLoad: b,
-    isLoadingComplete: g
+    hasMoreToLoad: g,
+    isLoadingComplete: b
   } = (0, Chunk399606.cj)([Chunk787879.Z], () => ({
     isLoading: Chunk787879.Z.isLoading,
     hasLoadedEver: Chunk787879.Z.hasLoadedEver,
     hasPreloaded: Chunk787879.Z.hasPreloaded,
     hasMoreToLoad: Chunk787879.Z.hasMoreToLoad,
     isLoadingComplete: Chunk787879.Z.isLoadingComplete
-  })), v = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.currentRequestAnalyticsPayload), j = (0, Chunk399606.cj)([Chunk787879.Z], () => Chunk787879.Z.getChannelInfoMap()), y = (0, Chunk399606.cj)([Chunk592125.Z], () => {
+  })), v = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.currentRequestAnalyticsPayload), j = (0, Chunk399606.cj)([Chunk787879.Z], () => Chunk787879.Z.getChannelInfoMap()), _ = (0, Chunk399606.cj)([Chunk592125.Z], () => {
     let e = {};
     return Object.entries(j).forEach(t => {
       let [n] = t, a = d.Z.getChannel(n);
       e[n] = null != a ? a : null
     }), module
-  }), C = (0, Chunk399606.cj)([Chunk592125.Z], () => exports.reduce((e, t) => {
+  }), y = (0, Chunk399606.cj)([Chunk592125.Z], () => exports.reduce((e, t) => {
     let n = d.Z.getChannel(t);
     return e[t] = null != n ? n : null, e
-  }, {})), _ = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getInboxMessages()), S = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getDevOverrides().navOnClick);
+  }, {})), C = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getInboxMessages()), S = (0, Chunk399606.e7)([Chunk787879.Z], () => Chunk787879.Z.getDevOverrides().navOnClick);
   return (0, Chunk54381.jsx)("div", {
-    className: Chunk663618.panel,
+    className: Chunk451429.panel,
     children: (0, Chunk54381.jsxs)(Chunk481060.zJl, {
-      className: Chunk616182.content,
+      className: Chunk326588.content,
       children: [(0, Chunk54381.jsxs)("div", {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",
           children: "Inbox"
         }), (0, Chunk54381.jsxs)("div", {
-          children: ["Inbox Message Count: ", _.length]
+          children: ["Inbox Message Count: ", C.length]
         })]
       }), (0, Chunk54381.jsxs)("div", {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
@@ -147,8 +147,8 @@ function b() {
         }), (0, Chunk54381.jsxs)("div", {
           children: ["Unread Channel Count: ", exports.length]
         }), (0, Chunk54381.jsx)(Chunk681619.Z, {
-          columns: f,
-          data: Object.entries(C).map(e => {
+          columns: x,
+          data: Object.entries(y).map(e => {
             var t;
             let [n, a] = e;
             return {
@@ -169,9 +169,9 @@ function b() {
         }), (0, Chunk54381.jsxs)("div", {
           children: ["Has Loaded Ever: ", Chunk120356 ? "✅" : "❌"]
         }), (0, Chunk54381.jsxs)("div", {
-          children: ["Has More To Load: ", b ? "✅" : "❌"]
+          children: ["Has More To Load: ", g ? "✅" : "❌"]
         }), (0, Chunk54381.jsxs)("div", {
-          children: ["Is Loading Complete: ", g ? "✅" : "❌"]
+          children: ["Is Loading Complete: ", b ? "✅" : "❌"]
         }), (0, Chunk54381.jsxs)("div", {
           children: ["Last Loading Trigger: ", null == v ? true : v.loadingTrigger]
         })]
@@ -182,14 +182,14 @@ function b() {
         }), (0, Chunk54381.jsxs)("div", {
           children: ["Total Channels: ", Object.keys(j).length]
         }), (0, Chunk54381.jsx)(Chunk681619.Z, {
-          columns: x,
+          columns: f,
           data: Object.entries(j).map(e => {
             var t, n;
             let [a, r] = e;
             return {
               key: a,
               channelId: a,
-              channelName: null != (n = null == (t = y[a]) ? true : t.name) ? n : "",
+              channelName: null != (n = null == (t = _[a]) ? true : t.name) ? n : "",
               loadState: r.loadState
             }
           })

@@ -45,7 +45,7 @@ function p(e) {
   } = e;
   if (__OVERLAY__ || !l.wS || null == t) return null;
   let m = s.default.getCurrentUser(),
-    h = (0, o.Ow)(t);
+    h = (0, a.Ow)(t);
 
   function g() {
     var e;
@@ -59,12 +59,12 @@ function p(e) {
     null != n && (0, l.JG)(n, d)
   }
   let E = "copy-app-link-".concat(t.id);
-  return (0, r.jsx)(a.sNh, {
+  return (0, r.jsx)(o.sNh, {
     id: E,
     label: n,
     action: g,
-    icon: p ? true : a.xPt,
-    iconLeft: p ? a.xPt : true,
+    icon: p ? true : o.xPt,
+    iconLeft: p ? o.xPt : true,
     focusedClassName: _
   }, E)
 }

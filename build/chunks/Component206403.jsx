@@ -7,10 +7,10 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk126827 = require("./126827.js");
+  Chunk845442 = require("./845442.js");
 
 function c(e) {
   let {
@@ -25,7 +25,7 @@ function c(e) {
     style: _
   } = e;
   return (0, r.jsxs)(s.P3F, {
-    className: a()(l.baseControlItem, {
+    className: o()(l.baseControlItem, {
       [l.clickable]: null != f
     }),
     onClick: f,
@@ -38,12 +38,12 @@ function c(e) {
       className: l.baseControlItemContent,
       children: [(0, r.jsx)("div", {
         className: l.baseControlItemTitle,
-        children: (0, r.jsx)(o.X6q, {
+        children: (0, r.jsx)(a.X6q, {
           variant: "heading-md/medium",
           color: t,
           children: u
         })
-      }), null != d && (0, r.jsx)(o.xvT, {
+      }), null != d && (0, r.jsx)(a.xvT, {
         variant: "text-sm/normal",
         color: "text-subtle",
         className: l.baseControlItemDescription,

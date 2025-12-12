@@ -17,14 +17,14 @@ function c(e) {
   let {
     author: c,
     inviteError: u
-  } = e, d = (0, i.e7)([o.default], () => o.default.getId()) === c.id ? l.intl.string(l.t.C89OLE) : l.intl.string(l.t.YVub5y), f = (0, s.l)(null == u ? true : u.code);
-  return (0, r.jsxs)(a.Z, {
-    children: [(0, r.jsx)(a.Z.Header, {
+  } = e, d = (0, i.e7)([a.default], () => a.default.getId()) === c.id ? l.intl.string(l.t.C89OLE) : l.intl.string(l.t.YVub5y), f = (0, s.l)(null == u ? true : u.code);
+  return (0, r.jsxs)(o.Z, {
+    children: [(0, r.jsx)(o.Z.Header, {
       text: d
-    }), (0, r.jsxs)(a.Z.Body, {
-      children: [(0, r.jsx)(a.Z.Icon, {
+    }), (0, r.jsxs)(o.Z.Body, {
+      children: [(0, r.jsx)(o.Z.Icon, {
         expired: true
-      }), (0, r.jsx)(a.Z.Info, {
+      }), (0, r.jsx)(o.Z.Info, {
         expired: true,
         title: null != (t = null == f ? true : f.title) ? t : l.intl.string(l.t["Jhx/ud"]),
         children: null != (n = null == f ? true : f.description) ? n : null == u ? true : u.message

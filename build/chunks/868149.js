@@ -9,9 +9,9 @@ var Chunk384404 = require("./384404.js"),
 module.exports = function(e, t) {
   var n = s(e, function(e) {
     var n = e.getSelection();
-    if (n.isCollapsed() && 0 === n.getAnchorOffset()) return o(e, 1);
+    if (n.isCollapsed() && 0 === n.getAnchorOffset()) return a(e, 1);
     var r = t.currentTarget.ownerDocument.defaultView.getSelection().getRangeAt(0);
-    return a(e, null, (r = i(r)).endContainer, r.endOffset, r.startContainer, r.startOffset).selectionState
+    return o(e, null, (r = i(r)).endContainer, r.endOffset, r.startContainer, r.startOffset).selectionState
   }, "backward");
   return n === e.getCurrentContent() ? e : r.push(e, n, "remove-range")
 }

@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk335131 = require("./335131.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk876441 = require("./876441.js");
+  Chunk698311 = require("./698311.js");
 let p = e => {
   let {
     onClose: t
@@ -22,9 +22,9 @@ let p = e => {
     analyticsLocations: n
   } = (0, s.ZP)(), p = () => {
     t(), (0, l.uL)(u.Z5c.COLLECTIBLES_SHOP), (0, c.mK)({
-      analyticsSource: o.Z.PREMIUM_PAYMENT_MODAL,
+      analyticsSource: a.Z.PREMIUM_PAYMENT_MODAL,
       analyticsLocations: n
-    }), (0, a.xf)()
+    }), (0, o.xf)()
   };
   return (0, r.jsxs)("div", {
     className: f.container,

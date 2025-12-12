@@ -1,7 +1,7 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 88499 **/
 /** chunk id: 474376, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  g: () => y
+  g: () => _
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -21,19 +21,19 @@ var Chunk442837 = require("./442837.js"),
   Chunk383832 = require("./383832.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk608125 = require("./608125.js");
+  Chunk681285 = require("./681285.js");
 
-function y(e) {
+function _(e) {
   let t = (0, r.e7)([u.default], () => u.default.getCurrentUser()),
     n = (0, r.e7)([d.Z], () => d.Z.hidePersonalInformation),
-    y = (0, r.e7)([o.Z], () => (0, l.wj)(o.Z.theme)),
+    _ = (0, r.e7)([o.Z], () => (0, l.wj)(o.Z.theme)),
     {
-      multiAccountUsers: C
-    } = (0, x.L)(),
-    _ = C.map(r => {
+      multiAccountUsers: y
+    } = (0, f.L)(),
+    C = y.map(r => {
       let l = new c.Z(r),
         o = l.id === (null == t ? true : t.id),
-        d = r.tokenStatus === f.q.INVALID,
+        d = r.tokenStatus === x.q.INVALID,
         u = n ? null : "#".concat(l.discriminator);
       return (0, a.jsx)(s.sNh, {
         id: l.id,
@@ -65,36 +65,36 @@ function y(e) {
             }), o && (0, a.jsx)(s.owK, {
               size: "sm",
               color: t ? i.Z.unsafe_rawColors.WHITE_500.css : i.Z.unsafe_rawColors.BRAND_500.css,
-              secondaryColor: t && y || t && !y ? i.Z.unsafe_rawColors.BRAND_500.css : i.Z.unsafe_rawColors.WHITE_500.css,
+              secondaryColor: t && _ || t && !_ ? i.Z.unsafe_rawColors.BRAND_500.css : i.Z.unsafe_rawColors.WHITE_500.css,
               className: j.activeIcon
             }), d && (0, a.jsx)(s.Mgn, {
               color: i.Z.unsafe_rawColors.RED_400.css,
-              secondaryColor: t && y || t && !y ? i.Z.unsafe_rawColors.BRAND_500.css : i.Z.unsafe_rawColors.WHITE_500.css,
+              secondaryColor: t && _ || t && !_ ? i.Z.unsafe_rawColors.BRAND_500.css : i.Z.unsafe_rawColors.WHITE_500.css,
               size: "xs",
               className: j.activeIcon
             })]
           })
         },
         action: () => {
-          if (null == e || e(), d)(0, b.Z)();
+          if (null == e || e(), d)(0, g.Z)();
           else {
             var n;
-            (n = l.id) !== (null == t ? true : t.id) && (m.default.track(g.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
+            (n = l.id) !== (null == t ? true : t.id) && (m.default.track(b.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
               location: {
-                section: g.jXE.USER_PROFILE
+                section: b.jXE.USER_PROFILE
               }
             }), h.yD(n))
           }
         }
       }, l.id)
     });
-  return _.push((0, a.jsxs)(a.Fragment, {
+  return C.push((0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.Clw, {}), (0, a.jsx)(s.sNh, {
       id: "manage-accounts",
       label: v.intl.string(v.t.WbFpq4),
       action: () => {
-        null == e || e(), (0, b.Z)()
+        null == e || e(), (0, g.Z)()
       }
     })]
-  })), _
+  })), C
 }

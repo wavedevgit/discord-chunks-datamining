@@ -2,11 +2,11 @@
 /** chunk id: 58892, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => o
+  A: () => a
 });
 var Chunk297808 = require("./297808.js"),
   Chunk154343 = require("./154343.js");
-class a {
+class o {
   get currentNode() {
     return this._currentNode
   }
@@ -23,10 +23,10 @@ class a {
           });
         t.push(r), r.currentNode = i, this._currentSetFor.add(r), n = i = e.host
       } else n = n.parentNode;
-    let a = this._doc.createTreeWalker(this.root, this.whatToShow, {
+    let o = this._doc.createTreeWalker(this.root, this.whatToShow, {
       acceptNode: this._acceptNode
     });
-    t.push(a), a.currentNode = i, this._currentSetFor.add(a), this._walkerStack = t
+    t.push(o), o.currentNode = i, this._currentSetFor.add(o), this._walkerStack = t
   }
   get doc() {
     return this._doc
@@ -123,6 +123,6 @@ class a {
   }
 }
 
-function o(e, t, n, r) {
-  return (0, i.Wr)() ? new a(e, t, n, r) : e.createTreeWalker(t, n, r)
+function a(e, t, n, r) {
+  return (0, i.Wr)() ? new o(e, t, n, r) : e.createTreeWalker(t, n, r)
 }

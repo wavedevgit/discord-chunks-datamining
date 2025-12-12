@@ -44,8 +44,8 @@ function E(e, t) {
   if (null == e) return {};
   var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -53,15 +53,15 @@ function E(e, t) {
 function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let y = 5,
   O = 1500;
 
 function v(e) {
-  return a.Z.fetchRecentMentions({
+  return o.Z.fetchRecentMentions({
     before: e,
     limit: m.DJj,
     roles: l.ZP.roleFilter,
@@ -78,9 +78,9 @@ function I(e) {
     var r;
     if ((null == (r = t[i]) ? true : r.loadState) === _.a7.LOADED) continue;
     let e = u.ZP.lastMessageId(i),
-      a = null != e && d.default.age(e) > _.ib;
-    if (n.length >= y || a) break;
-    let s = o.Z.fetchMessages({
+      o = null != e && d.default.age(e) > _.ib;
+    if (n.length >= y || o) break;
+    let s = a.Z.fetchMessages({
       channelId: i,
       limit: _.AQ,
       feature: _.Lr
@@ -94,10 +94,10 @@ async function T(e) {
       preload: n = false
     } = e,
     r = E(e, ["preload"]);
-  let a = Date.now(),
-    o = p.Z.getNotifyingChannelIds();
-  if (null == o) return;
-  let s = n ? [] : I(o),
+  let o = Date.now(),
+    a = p.Z.getNotifyingChannelIds();
+  if (null == a) return;
+  let s = n ? [] : I(a),
     c = l.ZP.getMentions(),
     u = null != c && c.length > 0 ? c[c.length - 1].id : null,
     d = false;
@@ -109,7 +109,7 @@ async function T(e) {
   try {
     await Promise.all(s);
     let e = {
-      timeToLoad: Date.now() - a,
+      timeToLoad: Date.now() - o,
       loadingTrigger: null != (t = r.loadingTrigger) ? t : _.X.UNKNOWN,
       viewId: r.viewId,
       channelsFetched: s.length - !!d,
@@ -148,7 +148,7 @@ let C = {
       message: t,
       channel: n,
       isUnread: r,
-      isSidebar: a,
+      isSidebar: o,
       viewId: l,
       track: u = true
     } = e;
@@ -165,8 +165,8 @@ let C = {
       section: m.jXE.INBOX,
       object: m.qAy.ACK_MESSAGE_VIEWED,
       objectType: m.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
-    }, true, true, t.id), o.Z.trackJump(n.id, t.id, _.JP);
-    let d = a ? m.STv : n.guild_id;
+    }, true, true, t.id), a.Z.trackJump(n.id, t.id, _.JP);
+    let d = o ? m.STv : n.guild_id;
     (0, c.uL)(m.Z5c.CHANNEL(d, n.id, t.id))
   }
 }

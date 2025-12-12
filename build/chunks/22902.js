@@ -13,12 +13,12 @@ var Chunk473749 = require("./473749.js"),
 function l(e) {
   return r.useMemo(() => {
     var t;
-    let n = a.DN.map(e => ({
+    let n = o.DN.map(e => ({
         value: e,
-        label: e.interval === o.rV.DAY && 7 === e.interval_count ? s.intl.formatToPlainString(s.t.XfSsr1, {
+        label: e.interval === a.rV.DAY && 7 === e.interval_count ? s.intl.formatToPlainString(s.t.XfSsr1, {
           defaultLimit: (0, i.iG)(e)
         }) : (0, i.iG)(e),
-        isDefault: e.interval === o.rV.DAY && 7 === e.interval_count
+        isDefault: e.interval === a.rV.DAY && 7 === e.interval_count
       })),
       r = null != e ? null == (t = n.find(t => null != t.value && t.value.interval === e.interval && t.value.interval_count === e.interval_count)) ? true : t.value : e;
     return {

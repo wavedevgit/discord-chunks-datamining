@@ -11,7 +11,7 @@ var r, i, Chunk54381 = require("./54381.js"),
   Chunk748780 = require("./748780.js"),
   Chunk793030 = require("./793030.js"),
   Chunk215569 = require("./215569.js"),
-  Chunk297421 = require("./297421.js");
+  Chunk466842 = require("./466842.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -164,8 +164,8 @@ class g extends(r = Chunk473749.PureComponent) {
     } = this.props, {
       animationProgress: r,
       animationState: i,
-      baseHeight: a,
-      targetHeight: o
+      baseHeight: o,
+      targetHeight: a
     } = this.state, s = null != (e = this.props.sideMargin) ? module : 0, l = null != (t = this.props.verticalMargin) ? exports : 0, u = 1 === i, d = 0 === i;
     return h(_({}, {
       overflow: Chunk215569 || Chunk793030 ? "hidden" : "visible",
@@ -200,19 +200,19 @@ class g extends(r = Chunk473749.PureComponent) {
     } = this.state;
     return module ? (0, Chunk54381.jsx)("div", {
       ref: this._measureRef,
-      className: l()(Chunk297421.measurementFill, exports, {
-        [l()(Chunk297421.measurementFillStatic, r)]: 3 === i
+      className: l()(Chunk466842.measurementFill, exports, {
+        [l()(Chunk466842.measurementFillStatic, r)]: 3 === i
       }),
       children: (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-        className: l()(Chunk297421.animatedNode, require),
+        className: l()(Chunk466842.animatedNode, require),
         style: this.getAnimatedStyle(),
         children: this.props.children
       })
     }) : (0, Chunk54381.jsx)("div", {
       ref: this._measureRef,
-      className: l()(Chunk297421.measurement, exports),
+      className: l()(Chunk466842.measurement, exports),
       children: (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-        className: l()(Chunk297421.animatedNode, require),
+        className: l()(Chunk466842.animatedNode, require),
         style: this.getAnimatedStyle(),
         children: this.props.children
       })
@@ -224,7 +224,7 @@ class g extends(r = Chunk473749.PureComponent) {
       targetHeight: 0,
       baseHeight: 0,
       animationState: null
-    }), p(this, "direction", this.props.getDirection()), p(this, "_measureRef", o.createRef())
+    }), p(this, "direction", this.props.getDirection()), p(this, "_measureRef", a.createRef())
   }
 }
 p(g, "contextType", Chunk793030.Sfi), p(g, "defaultProps", {
@@ -251,7 +251,7 @@ class E extends(i = Chunk473749.Component) {
       className: n,
       innerClassName: r,
       animatedNodeClassName: i,
-      staticClassName: o,
+      staticClassName: a,
       sideMargin: s,
       verticalMargin: c,
       children: u,
@@ -260,7 +260,7 @@ class E extends(i = Chunk473749.Component) {
     } = this.props;
     return (0, Chunk54381.jsx)(Chunk215569.W, {
       component: "div",
-      className: l()(Chunk297421.transitionGroup, require),
+      className: l()(Chunk466842.transitionGroup, require),
       children: (0, Chunk54381.jsx)(g, {
         fillParent: p,
         sideMargin: Chunk120356,

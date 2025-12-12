@@ -34,12 +34,12 @@ let u = {},
   d = {};
 
 function f() {
-  var e, t, n, r, i, a;
-  let o = Chunk581883.Z.settings;
+  var e, t, n, r, i, o;
+  let a = Chunk581883.Z.settings;
   return {
     gifAutoPlay: null == (t = Chunk570140.textAndImages) || null == (e = exports.gifAutoPlay) ? true : module.value,
     animateEmoji: null == (r = Chunk570140.textAndImages) || null == (n = r.animateEmoji) ? true : require.value,
-    animateStickers: null == (a = Chunk570140.textAndImages) || null == (i = Chunk433517.animateStickers) ? true : Chunk442837.value
+    animateStickers: null == (o = Chunk570140.textAndImages) || null == (i = Chunk433517.animateStickers) ? true : Chunk442837.value
   }
 }
 

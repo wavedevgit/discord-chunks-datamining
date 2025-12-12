@@ -1,7 +1,7 @@
-/** Chunk was on 48615 **/
+/** Chunk was on 46931 **/
 /** chunk id: 743597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 });
 var Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
@@ -47,15 +47,15 @@ let p = l().debounce(Chunk125268.BR, Chunk813900.Fq, {
   maxWait: Chunk813900.Fq
 });
 
-function b(e, t, n) {
+function m(e, t, n) {
   let i = r.useRef((0, a.Z)()),
     l = r.useRef(new o.Xp),
-    b = r.useCallback(r => {
+    m = r.useCallback(r => {
       r.lastUpdatedAt = Date.now(), (0, c.gr)(r, e, n), (0, c.BR)(t, n, r)
     }, [t, n, e]),
-    m = r.useCallback((r, o, p) => {
+    _ = r.useCallback((r, o, p) => {
       i.current = (0, a.Z)();
-      let m = f(d({}, r), {
+      let _ = f(d({}, r), {
         id: i.current,
         x: o,
         y: p,
@@ -63,10 +63,10 @@ function b(e, t, n) {
         state: s.f.START,
         lastUpdatedAt: Date.now()
       });
-      (0, c.BR)(t, n, m), (0, c.gr)(m, e, n), l.current.start(u.FO, () => b(m))
-    }, [e, t, n, b]),
+      (0, c.BR)(t, n, _), (0, c.gr)(_, e, n), l.current.start(u.FO, () => m(_))
+    }, [e, t, n, m]),
     g = r.useCallback((r, a, o) => {
-      let m = f(d({}, r), {
+      let _ = f(d({}, r), {
         id: i.current,
         x: a,
         y: o,
@@ -74,8 +74,8 @@ function b(e, t, n) {
         state: s.f.START,
         lastUpdatedAt: Date.now()
       });
-      p(t, n, m), (0, c.gr)(m, e, n), l.current.start(u.FO, () => b(m))
-    }, [e, t, n, b]),
+      p(t, n, _), (0, c.gr)(_, e, n), l.current.start(u.FO, () => m(_))
+    }, [e, t, n, m]),
     v = r.useCallback((r, a, o) => {
       p.cancel(), (0, c.Df)(t, n, i.current), (0, c.gr)(f(d({}, r), {
         id: i.current,
@@ -86,11 +86,11 @@ function b(e, t, n) {
         lastUpdatedAt: Date.now()
       }), e, n), l.current.stop()
     }, [t, n, e]),
-    h = r.useCallback((e, t, n) => g(e, t, n), [g]);
+    b = r.useCallback((e, t, n) => g(e, t, n), [g]);
   return r.useMemo(() => ({
-    handleMouseDown: m,
+    handleMouseDown: _,
     handleMouseMove: g,
     handleMouseUp: v,
-    handleMouseEnter: h
-  }), [m, h, g, v])
+    handleMouseEnter: b
+  }), [_, b, g, v])
 }

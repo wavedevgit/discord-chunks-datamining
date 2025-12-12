@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk993413 = require("./993413.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk754024 = require("./754024.js");
+  Chunk100077 = require("./100077.js");
 let g = (0, Chunk313201.hQ)(),
   E = (0, Chunk131704.createChannelRecord)({
     id: "1",
@@ -74,7 +74,7 @@ function y(e) {
       richValue: T,
       emojiPickerCloseOnModalOuterClick: R,
       parentModalKey: R ? d.USER_SETTINGS_MODAL_KEY : true,
-      type: o.Ie.PROFILE_BIO_INPUT,
+      type: a.Ie.PROFILE_BIO_INPUT,
       onBlur: () => {
         A.current = false
       },
@@ -83,7 +83,7 @@ function y(e) {
       },
       focused: A.current,
       onSubmit: P
-    }), (0, r.jsx)(a.nn4, {
+    }), (0, r.jsx)(o.nn4, {
       id: b,
       children: m.intl.format(m.t["+DFxLc"], {
         maxLength: _.tPV

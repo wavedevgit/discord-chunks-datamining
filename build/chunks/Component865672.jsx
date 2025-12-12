@@ -10,18 +10,18 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk789023 = require("./789023.js");
+  Chunk842926 = require("./842926.js");
 let d = RegExp("\\p{Extended_Pictographic}", "gu");
 
 function f(e) {
   var t, n, r;
   let {
     colorStrings: i,
-    useReducedMotion: a,
+    useReducedMotion: o,
     roleStyle: s,
     includeConvenienceGlow: l,
     animateGradient: d
@@ -32,14 +32,14 @@ function f(e) {
   }, g = (null == i ? true : i.tertiaryColor) != null ? u.threeColorGradient : u.twoColorGradient;
   return {
     gradientStyle: h,
-    gradientClassname: o()(g, {
+    gradientClassname: a()(g, {
       [u.usernameGradient]: f,
       [u.convenienceGlowGradient]: _,
       [u.convenienceGlowGradientActive]: _ && d,
-      [u.gradientDotAnimation]: !a && p,
+      [u.gradientDotAnimation]: !o && p,
       [u.animateGradient]: d && f
     }),
-    gradientGlowClassname: o()(g, u.usernameGlow, {
+    gradientGlowClassname: a()(g, u.usernameGlow, {
       [u.usernameGradient]: f,
       [u.animateGradient]: d && f,
       [u.usernameGlowActive]: f && d
@@ -52,31 +52,31 @@ function p(e) {
     colorStrings: t,
     roleStyle: n,
     includeConvenienceGlow: r,
-    animateGradient: a
-  } = e, o = (0, s.e7)([l.Z], () => l.Z.useReducedMotion);
+    animateGradient: o
+  } = e, a = (0, s.e7)([l.Z], () => l.Z.useReducedMotion);
   return i.useMemo(() => f({
     colorStrings: t,
-    useReducedMotion: o,
+    useReducedMotion: a,
     roleStyle: n,
     includeConvenienceGlow: r,
-    animateGradient: a
-  }), [t, n, r, o, a])
+    animateGradient: o
+  }), [t, n, r, a, o])
 }
 
 function _(e, t, n) {
   return i.useMemo(() => {
     let i = [e, t, n].filter(e => null != e),
-      a = i.length >= 2,
-      o = i.length > 1 ? 100 / (i.length - 1) : 0,
+      o = i.length >= 2,
+      a = i.length > 1 ? 100 / (i.length - 1) : 0,
       s = i.map((e, t) => (0, r.jsx)("stop", {
-        offset: "".concat(t * o, "%"),
+        offset: "".concat(t * a, "%"),
         style: {
           stopColor: e
         }
       }, t)),
       l = i.join("");
     return {
-      hasGradient: a,
+      hasGradient: o,
       stops: s,
       gradientId: "dotGradient-".concat(l),
       animatedGradientId: "dotAnimatedGradient-".concat(l)
@@ -89,12 +89,12 @@ function m(e, t) {
     let n;
     if (null == e) return e;
     let i = new RegExp(d),
-      a = [],
+      o = [],
       s = 0;
-    for (; null !== (n = i.exec(e));) n.index > s && a.push(e.slice(s, n.index)), a.push((0, r.jsx)("span", {
-      className: o()(u.emoji, t),
+    for (; null !== (n = i.exec(e));) n.index > s && o.push(e.slice(s, n.index)), o.push((0, r.jsx)("span", {
+      className: a()(u.emoji, t),
       children: n[0]
     }, "emoji".concat(n.index))), s = i.lastIndex;
-    return s < e.length && a.push(e.slice(s)), a
+    return s < e.length && o.push(e.slice(s)), o
   }, [e, t])
 }

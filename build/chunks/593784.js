@@ -14,7 +14,7 @@ class s extends Chunk522677.M {
   }
   innerExtract(e, t) {
     let n = (0, r.RA)(t[1]),
-      a = (0, o.de)(n);
-    return i.L.createRelativeFromReference(e.reference, a)
+      o = (0, a.de)(n);
+    return i.L.createRelativeFromReference(e.reference, o)
   }
 }

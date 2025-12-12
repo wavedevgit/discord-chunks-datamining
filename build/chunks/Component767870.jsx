@@ -12,7 +12,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk706140 = require("./706140.js"),
   Chunk325767 = require("./325767.js"),
   Chunk382791 = require("./382791.jsx"),
-  Chunk233409 = require("./233409.js");
+  Chunk966677 = require("./966677.js");
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -122,11 +122,11 @@ function m(e) {
     messageStyle: c,
     upperCase: p,
     showSparkles: m
-  } = e, [b] = (0, o.Tt)(a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
+  } = e, [_] = (0, o.Tt)(a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
     showAfterTimestamp: n.valueOf(),
     cooldownDurationMs: 0
-  }), _ = (0, s.ZP)(i, c);
-  return "" === _ ? null : (p && (_ = _.toUpperCase()), (0, r.jsxs)("div", {
+  }), b = (0, s.ZP)(i, c);
+  return "" === b ? null : (p && (b = b.toUpperCase()), (0, r.jsxs)("div", {
     className: l()(t, d.countDown),
     children: [m ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(h, {
@@ -137,8 +137,8 @@ function m(e) {
         color: "url(#".concat(f, ")")
       })]
     }) : null, (0, r.jsx)(u.mn, {
-      text: _,
-      colorOptions: b === a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL ? u.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : u.VE.PREMIUM_TIER_2_GREY_FILL
+      text: b,
+      colorOptions: _ === a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL ? u.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : u.VE.PREMIUM_TIER_2_GREY_FILL
     })]
   }))
 }

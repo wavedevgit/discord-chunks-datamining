@@ -10,30 +10,30 @@ var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
   Chunk67423 = require("./67423.js");
 
-function o(e) {
+function a(e) {
   return e
 }
 let s = {
   age: function(e) {
-    return a.B_(e)
+    return o.B_(e)
   },
   extractTimestamp: function(e) {
-    return a.Lm(e)
+    return o.Lm(e)
   },
   compare: function(e, t) {
-    return a.qu(e, t)
+    return o.qu(e, t)
   },
   atPreviousMillisecond: function(e) {
-    return a.cO(e)
+    return o.cO(e)
   },
   atNextMillisecond: function(e) {
-    return a.sd(e)
+    return o.sd(e)
   },
   fromTimestamp: function(e) {
-    return a.Ol(e)
+    return o.Ol(e)
   },
   fromTimestampWithSequence: function(e, t) {
-    return a.P4(e, t)
+    return o.P4(e, t)
   },
   keys: function(e) {
     return Object.keys(e)
@@ -48,16 +48,16 @@ let s = {
     return Object.entries(e)
   },
   isProbablyAValidSnowflake: function(e) {
-    return a.qi(e)
+    return o.qi(e)
   },
   castChannelIdAsMessageId: function(e) {
-    return o(e)
+    return a(e)
   },
   castMessageIdAsChannelId: function(e) {
-    return o(e)
+    return a(e)
   },
   castGuildIdAsEveryoneGuildRoleId: function(e) {
-    return o(e)
+    return a(e)
   },
-  cast: o
+  cast: a
 }

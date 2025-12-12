@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   WK: () => i,
-  de: () => a,
+  de: () => o,
   df: () => r
 });
 let r = {
@@ -67,7 +67,7 @@ function i(e, t) {
   return n
 }
 
-function a(e) {
+function o(e) {
   let t = {};
   for (let n in e) t[n] = -e[n];
   return t

@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk430824 = require("./430824.js"),
   Chunk270144 = require("./270144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk919350 = require("./919350.js");
+  Chunk250117 = require("./250117.js");
 
 function p(t) {
   let {
@@ -20,21 +20,21 @@ function p(t) {
     onClose: e,
     sku: p,
     onSelect: h,
-    currentGuildId: f
-  } = t, [g, j] = l.useState(), {
+    currentGuildId: g
+  } = t, [f, j] = l.useState(), {
     guilds: v,
     isFetching: I
   } = (0, d.CR)(p.applicationId, p.id, true), b = l.useMemo(() => {
-    if (!I && null != f) return v.findIndex(t => {
+    if (!I && null != g) return v.findIndex(t => {
       let {
         id: n
       } = t;
-      return n === f
+      return n === g
     }) >= 0
-  }, [f, v, I]);
+  }, [g, v, I]);
   l.useLayoutEffect(() => {
-    b && j(f)
-  }, [f, b]);
+    b && j(g)
+  }, [g, b]);
   let m = l.useMemo(() => {
     let t = [];
     for (let n of v) {
@@ -42,10 +42,10 @@ function p(t) {
         value: n.id,
         label: n.name
       };
-      b && n.id === f ? t.unshift(e) : t.push(e)
+      b && n.id === g ? t.unshift(e) : t.push(e)
     }
     return t
-  }, [f, v, b]);
+  }, [g, v, b]);
   return (0, i.jsx)(r.Modal, {
     title: c.intl.string(c.t["xgtI/K"]),
     subtitle: c.intl.string(c.t.rAXXxN),
@@ -58,9 +58,9 @@ function p(t) {
     }, {
       variant: "primary",
       text: c.intl.string(c.t["cY+Oob"]),
-      disabled: null == g,
+      disabled: null == f,
       onClick: function() {
-        null != g && (h(g), e())
+        null != f && (h(f), e())
       }
     }],
     children: I ? (0, i.jsx)(a.$jN, {
@@ -69,7 +69,7 @@ function p(t) {
     }) : m.length > 0 ? (0, i.jsx)(s.d, {
       "aria-label": c.intl.string(c.t["5qyruI"]),
       options: m,
-      value: g,
+      value: f,
       onChange: j,
       renderOptionPrefix: t => {
         let n = null == t ? true : t.value,
@@ -88,7 +88,7 @@ function p(t) {
           children: [(0, i.jsx)(a.Text, {
             variant: "text-md/normal",
             children: n
-          }), e === f && (0, i.jsx)(a.Text, {
+          }), e === g && (0, i.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "text-default",
             children: c.intl.string(c.t.RjtuAI)

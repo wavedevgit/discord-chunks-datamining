@@ -15,14 +15,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk185923 = require("./185923.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk589339 = require("./589339.js");
+  Chunk11079 = require("./11079.js");
 let m = 3,
   h = e => {
     let {
       emojis: t
     } = e, {
       analyticsLocations: n
-    } = (0, a.ZP)();
+    } = (0, o.ZP)();
     i.useEffect(() => {
       l.default.track(u.rMx.PREMIUM_UPSELL_VIEWED, {
         type: f.cd.EMOJI_AUTOCOMPLETE_INLINE,
@@ -53,15 +53,15 @@ let m = 3,
         }, e.id)
       })
     });
-    return (0, r.jsxs)(o.RX, {
+    return (0, r.jsxs)(a.RX, {
       className: _.upsell,
-      children: [(0, r.jsx)(o.z5, {
-        children: (0, r.jsx)(o.BR, {
+      children: [(0, r.jsx)(a.z5, {
+        children: (0, r.jsx)(a.BR, {
           children: p.intl.format(p.t.uEky42, {
             count: t.length
           })
         })
-      }), (0, r.jsx)(o.dY, {
+      }), (0, r.jsx)(a.dY, {
         children: h
       })]
     })

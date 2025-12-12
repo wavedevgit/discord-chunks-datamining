@@ -6,7 +6,7 @@ require.d(exports, {
   Z: () => O
 });
 var r, Chunk31775 = require("./31775.js"),
-  a = require.n(Chunk31775),
+  o = require.n(Chunk31775),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
@@ -61,7 +61,7 @@ function _(e) {
   } = e;
   return "applicationId:".concat(t, " guildId:").concat(n, " page:").concat(r)
 }
-let m = new(a())({
+let m = new(o())({
     max: f
   }),
   h = {};
@@ -87,19 +87,19 @@ function E(e) {
     guildId: n,
     similarApplications: r,
     loadId: i,
-    page: a,
-    totalPages: o
+    page: o,
+    totalPages: a
   } = e, s = _({
     applicationId: t,
     guildId: n,
-    page: a
+    page: o
   });
   m.set(s, {
     lastFetchTimeMs: Date.now(),
     applications: r,
     loadId: i,
-    page: a,
-    totalPages: o
+    page: o,
+    totalPages: a
   }), h = d(c({}, h), {
     [s]: 2
   })

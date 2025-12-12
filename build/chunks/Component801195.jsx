@@ -37,8 +37,8 @@ function u(e) {
   let {
     onConfirm: t
   } = e;
-  a.default.track(s.rMx.OPEN_MODAL, {
-    type: o.M1
+  o.default.track(s.rMx.OPEN_MODAL, {
+    type: a.M1
   }), (0, i.ZDy)(async () => {
     let {
       default: e

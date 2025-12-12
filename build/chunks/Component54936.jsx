@@ -7,14 +7,14 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk910111 = require("./910111.jsx"),
   Chunk732559 = require("./732559.jsx"),
   Chunk723851 = require("./723851.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk497536 = require("./497536.js");
+  Chunk84637 = require("./84637.js");
 let p = {
   [Chunk981631.TaA.WINDOWS]: {
     icon: Chunk723851.Z,
@@ -36,10 +36,10 @@ function _(e) {
     className: n
   } = e, i = p[t];
   if (null == i) throw Error("Unexpected operating system: ".concat(t));
-  let a = i.icon;
-  return (0, r.jsx)(o.u, {
+  let o = i.icon;
+  return (0, r.jsx)(a.u, {
     text: i.getLabel(),
-    children: (0, r.jsx)(a, {
+    children: (0, r.jsx)(o, {
       className: n
     })
   })
@@ -51,10 +51,10 @@ let m = e => {
     iconClassName: i
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(f.OSSection, n),
+    className: o()(f.OSSection, n),
     children: t.map(e => (0, r.jsx)(_, {
       operatingSystem: e,
-      className: a()(f.purchaseUnitOperatingSystem, i)
+      className: o()(f.purchaseUnitOperatingSystem, i)
     }, e))
   })
 }

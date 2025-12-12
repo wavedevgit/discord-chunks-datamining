@@ -22,7 +22,7 @@ function g(e) {
     g = (0, u.h6)(n),
     h = () => (0, c.sB)(n.id),
     m = i.useMemo(() => new Set(g.map(e => e.applicationId)), [g]),
-    b = (0, l.Wu)([a.Z], () => {
+    _ = (0, l.Wu)([a.Z], () => {
       let e = [];
       for (let t of m) {
         let n = a.Z.getApplication(t);
@@ -30,15 +30,15 @@ function g(e) {
       }
       return e
     }, [m]);
-  return 0 === b.length ? null : (t = 1 === b.length ? p.intl.formatToPlainString(p.t["Egq+G/"], {
-    a: b[0].name
-  }) : 2 === b.length ? p.intl.formatToPlainString(p.t.LxU9R3, {
-    a: b[0].name,
-    b: b[1].name
-  }) : 3 === b.length ? p.intl.formatToPlainString(p.t.crKXMC, {
-    a: b[0].name,
-    b: b[1].name,
-    c: b[2].name
+  return 0 === _.length ? null : (t = 1 === _.length ? p.intl.formatToPlainString(p.t["Egq+G/"], {
+    a: _[0].name
+  }) : 2 === _.length ? p.intl.formatToPlainString(p.t.LxU9R3, {
+    a: _[0].name,
+    b: _[1].name
+  }) : 3 === _.length ? p.intl.formatToPlainString(p.t.crKXMC, {
+    a: _[0].name,
+    b: _[1].name,
+    c: _[2].name
   }) : p.intl.string(p.t.MvfowF), (0, r.jsx)(s.Z, {
     guild: n,
     onDismissed: h,

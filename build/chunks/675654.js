@@ -2,8 +2,8 @@
 /** chunk id: 675654, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Br: () => a,
-  CA: () => o,
+  Br: () => o,
+  CA: () => a,
   Ko: () => s,
   We: () => l,
   rq: () => c,
@@ -11,8 +11,8 @@ require.d(exports, {
 });
 var Chunk921254 = require("./921254.js");
 let Chunk177351 = require("./177351.js"),
-  a = ["#FF73FA", "#FFC0FF", "#FFD836", "#FF9A15", "#A5F7DE", "#51BC9D", "#AEC7FF", "#3E70DD"],
-  o = [require("./294521.js"), Chunk177351, require("./817812.js"), require("./602002.js"), require("./673910.js"), require("./337242.js"), require("./678282.js"), {
+  o = ["#FF73FA", "#FFC0FF", "#FFD836", "#FF9A15", "#A5F7DE", "#51BC9D", "#AEC7FF", "#3E70DD"],
+  a = [require("./294521.js"), Chunk177351, require("./817812.js"), require("./602002.js"), require("./673910.js"), require("./337242.js"), require("./678282.js"), {
     src: require("./688815.js"),
     colorize: false
   }],

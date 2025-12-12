@@ -123,10 +123,10 @@ class p {
   constructor(e) {
     u(this, "_members", new s.Z((e, t) => this._enqueue(e, {
       members: t
-    }))), u(this, "_channels", new o.ZP((e, t) => this._enqueue(e, {
+    }))), u(this, "_channels", new a.ZP((e, t) => this._enqueue(e, {
       channels: t
     }))), u(this, "_threadMemberLists", new l.Z((e, t) => this._enqueue(e, {
       thread_member_lists: t
-    }))), u(this, "_typing", new Set), u(this, "_threads", new Set), u(this, "_activities", new Set), u(this, "_memberUpdates", new Set), u(this, "_subscribed", new Set), u(this, "_pending", {}), u(this, "_flush", new a.sW(0, () => this.flush())), u(this, "_onChange", true), this._onChange = e
+    }))), u(this, "_typing", new Set), u(this, "_threads", new Set), u(this, "_activities", new Set), u(this, "_memberUpdates", new Set), u(this, "_subscribed", new Set), u(this, "_pending", {}), u(this, "_flush", new o.sW(0, () => this.flush())), u(this, "_onChange", true), this._onChange = e
   }
 }

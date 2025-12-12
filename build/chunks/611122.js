@@ -9,14 +9,14 @@ let Chunk718939 = require("./718939.js"),
 exports.detectFile = function(e, t) {
   var n;
   if (t && Object.prototype.hasOwnProperty.call(t, "chunkSize") && (null != (n = null == t ? true : t.chunkSize) ? n : 0) <= 0) throw RangeError("chunkSize must be bigger than zero");
-  let a = (0, i.getFileChunk)(e, (null == t ? true : t.chunkSize) || 64);
-  if (0 === a.length) return;
-  let o = [],
+  let o = (0, i.getFileChunk)(e, (null == t ? true : t.chunkSize) || 64);
+  if (0 === o.length) return;
+  let a = [],
     s = [];
   for (let e in r.FileTypes)
     if (Object.prototype.hasOwnProperty.call(r.FileTypes, e)) {
       let t = r.FileTypes.getSignaturesByName(e),
-        n = r.FileTypes.detectbBySignatures(a, t);
+        n = r.FileTypes.detectbBySignatures(o, t);
       if (n) {
         let t = r.FileTypes.getInfoByName(e);
         r.FILE_TYPES_REQUIRED_ADDITIONAL_CHECK.includes(t.extension) && s.push(t.extension);
@@ -28,10 +28,10 @@ exports.detectFile = function(e, t) {
             sequence: n.sequence.map(e => e.toString(16))
           })
         };
-        o.push(i)
+        a.push(i)
       }
-    } if (0 === o.length) return;
-  if (1 === o.length && 0 === s.length) return o[0];
-  let l = r.FileTypes.detectTypeByAdditionalCheck(a, o);
-  if (l) return o.find(e => e.extension === l)
+    } if (0 === a.length) return;
+  if (1 === a.length && 0 === s.length) return a[0];
+  let l = r.FileTypes.detectTypeByAdditionalCheck(o, a);
+  if (l) return a.find(e => e.extension === l)
 }

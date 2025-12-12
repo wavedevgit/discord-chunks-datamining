@@ -2,7 +2,7 @@
 /** chunk id: 254854, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => o
+  Z: () => a
 });
 var Chunk570140 = require("./570140.js");
 
@@ -15,7 +15,7 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
+function o(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -27,12 +27,12 @@ function a(e) {
   }
   return e
 }
-let o = {
-  show(e, t, n, i, a) {
+let a = {
+  show(e, t, n, i, o) {
     r.Z.dispatch({
       type: "NOTICE_SHOW",
       notice: {
-        id: a,
+        id: o,
         type: e,
         message: t,
         buttonText: n,
@@ -41,7 +41,7 @@ let o = {
     })
   },
   dismiss(e) {
-    r.Z.dispatch(a({
+    r.Z.dispatch(o({
       type: "NOTICE_DISMISS"
     }, e))
   }

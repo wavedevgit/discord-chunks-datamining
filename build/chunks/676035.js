@@ -21,7 +21,7 @@ function c(e, t) {
     animated: t.animated
   };
   else if (null != e.emojiName && "" !== e.emojiName) {
-    let t = o.ZP.getByName(o.ZP.convertSurrogateToName(e.emojiName, false));
+    let t = a.ZP.getByName(a.ZP.convertSurrogateToName(e.emojiName, false));
     r = null != t ? {
       id: null,
       name: t.surrogates,
@@ -29,7 +29,7 @@ function c(e, t) {
     } : null
   }
   let i = Number(e.expiresAtMs),
-    a = null == (n = e.label) ? true : n.value;
+    o = null == (n = e.label) ? true : n.value;
   return {
     name: "Custom Status",
     type: l.IIU.CUSTOM_STATUS,
@@ -38,9 +38,9 @@ function c(e, t) {
       end: i
     } : true,
     emoji: r,
-    details: a,
+    details: o,
     metadata: {
-      label: a
+      label: o
     }
   }
 }
@@ -49,7 +49,7 @@ function u(e) {
   let {
     emojiId: t
   } = e;
-  return c(e, null != t && "0" !== t ? a.ZP.getUsableCustomEmojiById(t) : null)
+  return c(e, null != t && "0" !== t ? o.ZP.getUsableCustomEmojiById(t) : null)
 }
 
 function d() {

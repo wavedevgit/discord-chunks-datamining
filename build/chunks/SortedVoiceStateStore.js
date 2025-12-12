@@ -7,7 +7,7 @@ require.d(exports, {
   sQ: () => A
 }), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk759174 = require("./759174.js"),
   Chunk570140 = require("./570140.js"),
@@ -90,9 +90,9 @@ function N(e, t, n) {
 
 function P(e, t, n, r) {
   var i;
-  let a = p.default.getUser(n),
-    o = null == a;
-  null == a && (a = new c.Z({
+  let o = p.default.getUser(n),
+    a = null == o;
+  null == o && (o = new c.Z({
     id: n,
     username: "...",
     discriminator: n.slice(false, false)
@@ -100,15 +100,15 @@ function P(e, t, n, r) {
   let {
     member: s,
     comparator: l
-  } = N(t, a, e), u = {
+  } = N(t, o, e), u = {
     voiceState: e,
-    user: a,
+    user: o,
     member: s,
     comparator: l,
     nick: null == s ? true : s.nick,
     connectedOn: null != (i = null == r ? true : r.connectedOn) ? i : Date.now()
   };
-  return o && (u._isPlaceholder = true), u
+  return a && (u._isPlaceholder = true), u
 }
 class R {
   updateVoiceState(e) {
@@ -120,12 +120,12 @@ class R {
       if (null == n) return this._voiceStates.set(e, P(t, this.guildId, e)), true;
       else if (n.voiceState !== t) {
         var i;
-        let a = T(this.guildId, r),
-          o = null != (i = null == a ? true : a.nick) ? i : h.ZP.getName(r);
+        let o = T(this.guildId, r),
+          a = null != (i = null == o ? true : o.nick) ? i : h.ZP.getName(r);
         return this._voiceStates.set(e, O(b({}, n), {
-          member: a,
-          comparator: A(t, o),
-          nick: o,
+          member: o,
+          comparator: A(t, a),
+          nick: a,
           voiceState: t
         })), true
       }
@@ -138,15 +138,15 @@ class R {
       n = p.default.getUser(e);
     if (null != t && null != n) {
       var r, i;
-      let a = T(this.guildId, n);
-      if ((null == a ? true : a.nick) !== (null == (r = t.member) ? true : r.nick) || (null == a ? true : a.avatar) !== (null == (i = t.member) ? true : i.avatar)) {
+      let o = T(this.guildId, n);
+      if ((null == o ? true : o.nick) !== (null == (r = t.member) ? true : r.nick) || (null == o ? true : o.avatar) !== (null == (i = t.member) ? true : i.avatar)) {
         let {
           comparator: r
-        } = C(t.voiceState, a, n);
+        } = C(t.voiceState, o, n);
         return this._voiceStates.set(e, O(b({}, t), {
-          member: a,
+          member: o,
           comparator: r,
-          nick: null == a ? true : a.nick
+          nick: null == o ? true : o.nick
         })), true
       }
     }
@@ -223,10 +223,10 @@ function L(e) {
   var t, n;
   let r = false,
     i = new Set(null == (t = S[e.guildId]) ? true : t.getUserIds()),
-    a = new Set(null == (n = e.voiceStates) ? true : n.map(e => e.userId)),
-    o = new Set(e.removedVoiceStateUsers);
-  for (let t of new Set([...i, ...a])) r = I(e.guildId).updateVoiceState(t) || r;
-  for (let t of i) o.has(t) || (r = I(e.guildId).updateMember(t) || r);
+    o = new Set(null == (n = e.voiceStates) ? true : n.map(e => e.userId)),
+    a = new Set(e.removedVoiceStateUsers);
+  for (let t of new Set([...i, ...o])) r = I(e.guildId).updateVoiceState(t) || r;
+  for (let t of i) a.has(t) || (r = I(e.guildId).updateMember(t) || r);
   return r
 }
 
@@ -238,7 +238,7 @@ function j(e) {
 }
 
 function M() {
-  return a().reduce(S, (e, t) => t.updateUsers() || e, false)
+  return o().reduce(S, (e, t) => t.updateUsers() || e, false)
 }
 
 function k(e) {

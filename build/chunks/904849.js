@@ -20,14 +20,14 @@ class i {
       parentPanelKey: n,
       parentTabKey: r,
       parentCategoryKey: i,
-      parentAccordionKey: a
+      parentAccordionKey: o
     } = e;
     this.map.set(t.key, {
       node: t,
       parentPanelKey: n,
       parentTabKey: r,
       parentCategoryKey: i,
-      parentAccordionKey: a
+      parentAccordionKey: o
     })
   }
   entry(e) {

@@ -22,7 +22,7 @@ function p(e) {
     onSuccess: h,
     onClose: g,
     requirementsUpdated: E
-  } = e, [b, y] = i.useState(""), [O, v] = i.useState(""), [S, I] = i.useState(""), [T, C] = i.useState(null), [A, N] = i.useState(null), P = (0, o.e7)([c.Z], () => c.Z.getErrors()), R = (0, o.e7)([c.Z], () => c.Z.getFormState()), w = i.useRef(null);
+  } = e, [b, y] = i.useState(""), [O, v] = i.useState(""), [S, I] = i.useState(""), [T, C] = i.useState(null), [A, N] = i.useState(null), P = (0, a.e7)([c.Z], () => c.Z.getErrors()), R = (0, a.e7)([c.Z], () => c.Z.getFormState()), w = i.useRef(null);
   async function D(e) {
     e.preventDefault(), (0, l.b9)();
     let t = false;
@@ -44,7 +44,7 @@ function p(e) {
     }
   }, [m]), (0, r.jsx)("form", {
     onSubmit: D,
-    children: (0, r.jsx)(a.Modal, {
+    children: (0, r.jsx)(o.Modal, {
       transitionState: m,
       onClose: g,
       title: f.intl.string(f.t.geta79),

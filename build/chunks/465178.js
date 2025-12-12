@@ -9,11 +9,11 @@ let i = {
     isGifFile: s,
     findOffsets: l
   },
-  a = 6,
-  o = ["GIF87a", "GIF89a"];
+  o = 6,
+  a = ["GIF87a", "GIF89a"];
 
 function s(e) {
-  return !!e && o.includes((0, r.oH)(e, 0, a))
+  return !!e && a.includes((0, r.oH)(e, 0, o))
 }
 
 function l() {

@@ -2,13 +2,13 @@
 /** chunk id: 117995, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => o
+  M: () => a
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk861974 = require("./861974.jsx");
 
-function a(e) {
+function o(e) {
   switch (e) {
     case "critical":
       return i.Q.ERROR;
@@ -21,15 +21,15 @@ function a(e) {
   }
 }
 
-function o(e) {
+function a(e) {
   let {
     type: t,
     hidden: n,
-    children: o
+    children: a
   } = e;
   return (0, r.jsx)(i.W, {
-    messageType: a(t),
+    messageType: o(t),
     hidden: n,
-    children: o
+    children: a
   })
 }

@@ -1,4 +1,4 @@
 /** Chunk was on web.js **/
-/** chunk id: 328259, original params: e (module,exports,re quire) **/
+/** chunk id: 328259, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-module.exports = "/assets/28f89b5f78dd6f80.webp"
+module.exports = require.p + "28f89b5f78dd6f80.webp"

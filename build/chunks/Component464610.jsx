@@ -1,8 +1,8 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 464610, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 }), require("./472816.js"), require("./794429.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,19 +16,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk723136 = require("./723136.jsx"),
   Chunk598622 = require("./598622.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk270533 = require("./270533.js");
+  Chunk687726 = require("./687726.js");
 
-function p(e) {
+function h(e) {
   let {
     title: t,
     subtitle: n,
     icon: i,
-    page: a
+    page: s
   } = e;
   return (0, r.jsxs)("div", {
-    className: b.safetyStepRow,
+    className: f.safetyStepRow,
     children: [(0, r.jsxs)("div", {
-      className: b.safetyStepContent,
+      className: f.safetyStepContent,
       children: [(0, r.jsx)(l.qEK, {
         src: i,
         size: l.EFr.SIZE_40,
@@ -47,30 +47,30 @@ function p(e) {
     }), (0, r.jsx)(l.Button, {
       size: "sm",
       variant: "secondary",
-      onClick: () => (0, d.K)(a),
-      text: m.intl.string(m.t.bt75uw)
+      onClick: () => (0, u.K)(s),
+      text: p.intl.string(p.t.bt75uw)
     })]
   })
 }
 
-function h(e) {
+function x(e) {
   let {
     guild: t
   } = e;
-  (0, a.RD)(t.id);
-  let d = (0, s.Z6)(t.id),
+  (0, s.RD)(t.id);
+  let u = (0, a.Z6)(t.id),
     {
-      rulesByTriggerType: h
-    } = (0, a.pH)(t.id),
+      rulesByTriggerType: x
+    } = (0, s.pH)(t.id),
     {
-      numEnabledRules: x,
+      numEnabledRules: b,
       numRules: j
     } = i.useMemo(() => {
       let e = 0,
         t = 0;
-      return null == h || Object.values(d).flat().forEach(n => {
+      return null == x || Object.values(u).flat().forEach(n => {
         var r;
-        let i = null == (r = h[n]) ? true : r.filter(c.lm);
+        let i = null == (r = x[n]) ? true : r.filter(c.lm);
         if (null == i || 0 === i.length) return void t++;
         i.forEach(n => {
           n.enabled && e++, t++
@@ -79,62 +79,62 @@ function h(e) {
         numEnabledRules: e,
         numRules: t
       }
-    }, [d, h]),
-    v = (0, f.Q)(t),
-    O = v[u.u.CAPTCHA_AND_RAID_PROTECTION],
-    C = v[u.u.DM_AND_SPAM_PROTECTION],
-    y = v[u.u.PERMISSIONS],
-    N = (0, o.pr)(t.id);
+    }, [u, x]),
+    _ = (0, m.Q)(t),
+    v = _[d.u.CAPTCHA_AND_RAID_PROTECTION],
+    O = _[d.u.DM_AND_SPAM_PROTECTION],
+    C = _[d.u.PERMISSIONS],
+    y = (0, o.pr)(t.id);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-lg/semibold",
       color: "text-strong",
-      className: b.header,
-      children: m.intl.string(m.t["0A+VSA"])
+      className: f.header,
+      children: p.intl.string(p.t["0A+VSA"])
     }), (0, r.jsx)(g.z, {
       guild: t
     }), (0, r.jsxs)("div", {
-      className: b.safetyChecklist,
-      children: [(0, r.jsx)(p, {
+      className: f.safetyChecklist,
+      children: [(0, r.jsx)(h, {
         icon: n(14215),
-        title: m.intl.string(m.t["53eF5o"]),
-        subtitle: m.intl.formatToPlainString(m.t.TG7NYK, {
+        title: p.intl.string(p.t["53eF5o"]),
+        subtitle: p.intl.formatToPlainString(p.t.TG7NYK, {
+          enabled: v.filter(e => e.enabled).length,
+          total: v.length
+        }),
+        page: d.u.CAPTCHA_AND_RAID_PROTECTION
+      }), (0, r.jsx)("div", {
+        className: f.divider
+      }), (0, r.jsx)(h, {
+        icon: n(128724),
+        title: p.intl.string(p.t.O0SfFy),
+        subtitle: p.intl.formatToPlainString(p.t.TG7NYK, {
           enabled: O.filter(e => e.enabled).length,
           total: O.length
         }),
-        page: u.u.CAPTCHA_AND_RAID_PROTECTION
+        page: d.u.DM_AND_SPAM_PROTECTION
       }), (0, r.jsx)("div", {
-        className: b.divider
-      }), (0, r.jsx)(p, {
-        icon: n(128724),
-        title: m.intl.string(m.t.O0SfFy),
-        subtitle: m.intl.formatToPlainString(m.t.TG7NYK, {
+        className: f.divider
+      }), y && (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(h, {
+          icon: n(145136),
+          title: p.intl.string(p.t.uRelgx),
+          subtitle: p.intl.formatToPlainString(p.t.TG7NYK, {
+            enabled: b,
+            total: j
+          }),
+          page: d.u.AUTOMOD
+        }), (0, r.jsx)("div", {
+          className: f.divider
+        })]
+      }), (0, r.jsx)(h, {
+        icon: n(913414),
+        title: p.intl.string(p.t.xrmhRX),
+        subtitle: p.intl.formatToPlainString(p.t.TG7NYK, {
           enabled: C.filter(e => e.enabled).length,
           total: C.length
         }),
-        page: u.u.DM_AND_SPAM_PROTECTION
-      }), (0, r.jsx)("div", {
-        className: b.divider
-      }), N && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(p, {
-          icon: n(145136),
-          title: m.intl.string(m.t.uRelgx),
-          subtitle: m.intl.formatToPlainString(m.t.TG7NYK, {
-            enabled: x,
-            total: j
-          }),
-          page: u.u.AUTOMOD
-        }), (0, r.jsx)("div", {
-          className: b.divider
-        })]
-      }), (0, r.jsx)(p, {
-        icon: n(913414),
-        title: m.intl.string(m.t.xrmhRX),
-        subtitle: m.intl.formatToPlainString(m.t.TG7NYK, {
-          enabled: y.filter(e => e.enabled).length,
-          total: y.length
-        }),
-        page: u.u.PERMISSIONS
+        page: d.u.PERMISSIONS
       })]
     })]
   })

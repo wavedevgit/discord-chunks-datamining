@@ -7,23 +7,23 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk936141 = require("./936141.js"),
   Chunk411405 = require("./411405.jsx"),
   Chunk197653 = require("./197653.jsx"),
   Chunk979372 = require("./979372.jsx"),
-  Chunk339410 = require("./339410.js");
+  Chunk821618 = require("./821618.js");
 
 function f(e) {
   let {
     components: t,
     accentColor: n,
-    spoiler: a,
+    spoiler: o,
     renderComponents: f
-  } = e, [p, _] = i.useState(a), m = e => (0, r.jsx)(c.am.AutoMeasuredNestedContainer, {
+  } = e, [p, _] = i.useState(o), m = e => (0, r.jsx)(c.am.AutoMeasuredNestedContainer, {
     children: i => (0, r.jsx)("div", {
       ref: i,
-      className: o()(d.container, {
+      className: a()(d.container, {
         [d.isHidden]: e,
         [d.withAccentColor]: null != n
       }),
@@ -36,7 +36,7 @@ function f(e) {
       })
     })
   });
-  return null == t || 0 === t.length ? null : a ? (0, r.jsx)(l.ZP, {
+  return null == t || 0 === t.length ? null : o ? (0, r.jsx)(l.ZP, {
     type: l.ZP.Types.ATTACHMENT,
     reason: s.wk.SPOILER,
     obscured: p,

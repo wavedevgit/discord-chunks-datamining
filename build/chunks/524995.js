@@ -27,7 +27,7 @@ function _(e) {
       debug: _ = false
     } = n,
     m = (0, u.R)(e),
-    h = (0, a.t)(null == m ? true : m.id, "AUTHORIZE_REQUEST"),
+    h = (0, o.t)(null == m ? true : m.id, "AUTHORIZE_REQUEST"),
     g = p.includes("rpc") && h,
     E = p.includes("web") && (null == m ? true : m.connectionEntrypointUrl) != null,
     b = g ? "rpc" : E ? "web" : null,
@@ -48,7 +48,7 @@ function _(e) {
       }).enabled;
       if (g) {
         var n;
-        return o.Z.dispatchToSubscriptions("AUTHORIZE_REQUEST", e => e.socket.application.id === m.id, {}), null == (n = e.onConfirm) || n.call(e), t && s.default.track(f.rMx.ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED, {
+        return a.Z.dispatchToSubscriptions("AUTHORIZE_REQUEST", e => e.socket.application.id === m.id, {}), null == (n = e.onConfirm) || n.call(e), t && s.default.track(f.rMx.ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED, {
           location_stack: e.analyticsLocations,
           application_id: m.id,
           flow_type: "rpc"

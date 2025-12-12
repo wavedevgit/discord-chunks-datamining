@@ -1,7 +1,7 @@
-/** Chunk was on 41700 **/
+/** Chunk was on 91053 **/
 /** chunk id: 882378, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,42 +18,42 @@ var Chunk54381 = require("./54381.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk134612 = require("./134612.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk962793 = require("./962793.js");
-let O = Chunk473749.memo(function(e) {
+  Chunk807597 = require("./807597.js");
+let y = Chunk473749.memo(function(e) {
   let {
     channel: t
-  } = e, O = (0, d.h)(t.id), x = (0, u.o)(t.id), j = (0, p.M)(t.id), v = (0, a.useHasAnyModalOpen)(), C = (0, l.e7)([f.Z], () => f.Z.hasLayers()), I = i.useCallback(() => x ? b.intl.string(b.t["16QyDv"]) : null != j ? b.intl.string(b.t.kCN9i0) : null, [x, j]), _ = i.useMemo(() => (x || null != j) && !v && !C, [x, j, v, C]), [S, E] = i.useState(I());
+  } = e, y = (0, d.h)(t.id), O = (0, u.o)(t.id), x = (0, p.M)(t.id), j = (0, a.useHasAnyModalOpen)(), v = (0, l.e7)([f.Z], () => f.Z.hasLayers()), C = i.useCallback(() => O ? b.intl.string(b.t["16QyDv"]) : null != x ? b.intl.string(b.t.kCN9i0) : null, [O, x]), I = i.useMemo(() => (O || null != x) && !j && !v, [O, x, j, v]), [S, E] = i.useState(C());
   i.useEffect(() => {
-    null != j && null != O && (s.uvj.announce(b.intl.string(b.t.acsXuG)), setTimeout(() => {
-      (0, c.T)(t.id, [j.id])
+    null != x && null != y && (s.uvj.announce(b.intl.string(b.t.acsXuG)), setTimeout(() => {
+      (0, c.T)(t.id, [x.id])
     }, 5e3), (0, h.KQ)({
       channelId: t.id,
       senderId: t.getRecipientId(),
-      warningId: j.id,
-      warningType: j.type,
-      isNudgeWarning: null != j,
+      warningId: x.id,
+      warningType: x.type,
+      isNudgeWarning: null != x,
       viewName: h.pb.SAFETY_TOOLS_NUDGE_TOOLTIP
-    })), x && (s.uvj.announce(b.intl.string(b.t["1dxCqG"])), setTimeout(() => {
+    })), O && (s.uvj.announce(b.intl.string(b.t["1dxCqG"])), setTimeout(() => {
       (0, c.Ot)(t.id)
     }, 5e3))
-  }, [t, j, O, x]), (0, o.ZP)(() => {
-    null != O && (0, h.KQ)({
+  }, [t, x, y, O]), (0, o.ZP)(() => {
+    null != y && (0, h.KQ)({
       channelId: t.id,
       senderId: t.getRecipientId(),
-      warningId: O.id,
-      warningType: O.type,
-      isNudgeWarning: null != j,
+      warningId: y.id,
+      warningType: y.type,
+      isNudgeWarning: null != x,
       viewName: h.pb.SAFETY_TOOLS_BUTTON
     })
   }), i.useEffect(() => {
-    let e = I();
+    let e = C();
     null != e && E(e)
-  }, [x, j, I]);
+  }, [O, x, C]);
   let Z = i.useCallback(() => {
-    null != j && (0, c.T)(t.id, [j.id]), null != O && ((0, s.ZDy)(async () => {
+    null != x && (0, c.T)(t.id, [x.id]), null != y && ((0, s.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("37031"), n.e("89650"), n.e("94253")]).then(n.bind(n, 611446));
+      } = await Promise.all([n.e("37031"), n.e("89650"), n.e("37157")]).then(n.bind(n, 611446));
       return n => {
         let {
           onClose: i,
@@ -62,8 +62,8 @@ let O = Chunk473749.memo(function(e) {
         return (0, r.jsx)(e, {
           otherUserId: t.getRecipientId(),
           channelId: t.id,
-          warningId: O.id,
-          warningType: O.type,
+          warningId: y.id,
+          warningType: y.type,
           onClose: i,
           transitionState: l
         })
@@ -73,25 +73,25 @@ let O = Chunk473749.memo(function(e) {
     }), (0, h.qc)({
       channelId: t.id,
       senderId: t.getRecipientId(),
-      warningId: O.id,
-      warningType: O.type,
+      warningId: y.id,
+      warningType: y.type,
       cta: h.NM.USER_SAFETY_TOOLS_BUTTON_CLICK,
-      isNudgeWarning: null != j
+      isNudgeWarning: null != x
     }))
-  }, [j, O, t]);
-  return null == O ? null : (0, r.jsx)(s.aML, {
+  }, [x, y, t]);
+  return null == y ? null : (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
-    forceOpen: _,
+    forceOpen: I,
     text: S,
     color: s.r6K.BRAND,
     position: "bottom",
-    tooltipClassName: y.tooltip,
-    tooltipContentClassName: y.tooltipContent,
+    tooltipClassName: _.tooltip,
+    tooltipContentClassName: _.tooltipContent,
     children: () => (0, r.jsx)(g.ZP.Icon, {
       icon: s.b7C,
       onClick: Z,
       tooltip: b.intl.string(b.t.rpc2qv),
-      tooltipDisabled: null != j
+      tooltipDisabled: null != x
     })
   })
 })

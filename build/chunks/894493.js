@@ -13,11 +13,11 @@ module.exports = function(e) {
       end: "\\}",
       keywords: r
     },
-    a = {
+    o = {
       begin: /->\{/,
       end: /\}/
     },
-    o = {
+    a = {
       scope: "attr",
       match: /\s+:\s*\w+(\s*\(.*?\))?/
     },
@@ -31,7 +31,7 @@ module.exports = function(e) {
         begin: /[$%@](?!")[^\s\w{=]|\$=/,
         relevance: 0
       }],
-      contains: [o]
+      contains: [a]
     },
     l = {
       className: "number",
@@ -51,13 +51,13 @@ module.exports = function(e) {
     c = [e.BACKSLASH_ESCAPE, i, s],
     u = [/!/, /\//, /\|/, /\?/, /'/, /"/, /#/],
     d = (e, r, i = "\\1") => {
-      let a = "\\1" === i ? i : t.concat(i, r);
-      return t.concat(t.concat("(?:", e, ")"), r, /(?:\\.|[^\\\/])*?/, a, /(?:\\.|[^\\\/])*?/, i, n)
+      let o = "\\1" === i ? i : t.concat(i, r);
+      return t.concat(t.concat("(?:", e, ")"), r, /(?:\\.|[^\\\/])*?/, o, /(?:\\.|[^\\\/])*?/, i, n)
     },
     f = (e, r, i) => t.concat(t.concat("(?:", e, ")"), r, /(?:\\.|[^\\\/])*?/, i, n),
     p = [s, e.HASH_COMMENT_MODE, e.COMMENT(/^=\w/, /=cut/, {
       endsWithParent: true
-    }), a, {
+    }), o, {
       className: "string",
       contains: c,
       variants: [{
@@ -145,14 +145,14 @@ module.exports = function(e) {
       end: "(\\s*\\(.*?\\))?[;{]",
       excludeEnd: true,
       relevance: 5,
-      contains: [e.TITLE_MODE, o]
+      contains: [e.TITLE_MODE, a]
     }, {
       className: "class",
       beginKeywords: "class",
       end: "[;{]",
       excludeEnd: true,
       relevance: 5,
-      contains: [e.TITLE_MODE, o, l]
+      contains: [e.TITLE_MODE, a, l]
     }, {
       begin: "-\\w\\b",
       relevance: 0
@@ -166,7 +166,7 @@ module.exports = function(e) {
         className: "comment"
       }]
     }];
-  return i.contains = p, a.contains = p, {
+  return i.contains = p, o.contains = p, {
     name: "Perl",
     aliases: ["pl", "pm"],
     keywords: r,

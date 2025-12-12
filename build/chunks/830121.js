@@ -7,10 +7,10 @@ require.d(exports, {
   ZP: () => es,
   el: () => el,
   oO: () => F,
-  wT: () => eo,
+  wT: () => ea,
   zO: () => eu
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./804061.js"), require("./704826.js"), require("./388685.js"), require("./539854.js");
-var r, i, a, o, s, l, c, u, d, Chunk512722 = require("./512722.js"),
+var r, i, o, a, s, l, c, u, d, Chunk512722 = require("./512722.js"),
   p = require.n(Chunk512722),
   Chunk593473 = require("./593473.js"),
   Chunk159635 = require("./159635.js"),
@@ -44,7 +44,7 @@ let A = 10,
   F = /dev:\/\/[\w-.~:\/?#\[\]@!$&'()*+,;=%]+/i,
   B = X(window.GLOBAL_ENV.INVITE_HOST),
   V = X(window.GLOBAL_ENV.GUILD_TEMPLATE_HOST),
-  H = X(null != (o = window.GLOBAL_ENV.WEBAPP_ENDPOINT) ? o : "//canary.".concat(Chunk981631.$R1)),
+  H = X(null != (a = window.GLOBAL_ENV.WEBAPP_ENDPOINT) ? a : "//canary.".concat(Chunk981631.$R1)),
   Y = X("//canary.".concat(Chunk981631.$R1)),
   W = X("//ptb.".concat(Chunk981631.$R1)),
   K = X("discordapp.com"),
@@ -70,7 +70,7 @@ function X(e) {
   }
 }
 let J = e => e.replaceAll(ee, " $2 "),
-  $ = null == (a = h().defaultRules.link) || null == (i = a.match) || null == (r = i.regex) ? true : r.source;
+  $ = null == (o = h().defaultRules.link) || null == (i = o.match) || null == (r = i.regex) ? true : r.source;
 p()($, "SimpleMarkdown link regex is not set."), "^" === $[0] && ($ = $.substring(1));
 let ee = RegExp($, "g");
 
@@ -83,10 +83,10 @@ function en(e, t) {
   var n, r;
   if (!et(e, t)) return null;
   let i = null != (n = t.pathname) ? n : "",
-    a = null != (r = e.pathPrefix) ? r : "";
-  if (!i.startsWith(a)) return null;
-  let o = i.substring(a.length);
-  return "" === o ? null : o
+    o = null != (r = e.pathPrefix) ? r : "";
+  if (!i.startsWith(o)) return null;
+  let a = i.substring(o.length);
+  return "" === a ? null : a
 }
 
 function er(e) {
@@ -104,27 +104,27 @@ function ei(e) {
   } : null
 }
 
-function ea(e) {
+function eo(e) {
   var t, n, r, i;
-  let a = ec(e);
-  if (null == a || null == a.pathname) return {
+  let o = ec(e);
+  if (null == o || null == o.pathname) return {
     url: null,
     inviteHostRemainingPath: null,
     templateHostRemainingPath: null,
     primaryHostRemainingPath: null
   };
-  let o = en(B, a),
-    s = en(V, a),
-    l = null != (i = null != (r = null != (n = null != (t = en(H, a)) ? t : en(Y, a)) ? n : en(W, a)) ? r : en(K, a)) ? i : en(z, a);
+  let a = en(B, o),
+    s = en(V, o),
+    l = null != (i = null != (r = null != (n = null != (t = en(H, o)) ? t : en(Y, o)) ? n : en(W, o)) ? r : en(K, o)) ? i : en(z, o);
   return {
-    url: a,
-    inviteHostRemainingPath: o,
+    url: o,
+    inviteHostRemainingPath: a,
     templateHostRemainingPath: s,
     primaryHostRemainingPath: l
   }
 }
 
-function eo(e) {
+function ea(e) {
   if (e.includes("\\")) {
     let r = ec(e);
     if (null == r) returnfalse;
@@ -145,14 +145,14 @@ function es(e) {
     i = e.match(F);
   if (null == (r = (null != r ? r : []).concat(null != i ? i : [])) || 0 === r.length) return [];
   for (let e of r) {
-    var a, o, s, l;
+    var o, a, s, l;
     if (n.length >= A) break;
     let {
       url: r,
       inviteHostRemainingPath: i,
       templateHostRemainingPath: c,
       primaryHostRemainingPath: u
-    } = ea(e);
+    } = eo(e);
     if (null == r || null == r.pathname) continue;
     let d = (r, i) => {
       t.has(i) || (t.add(i), n.push({
@@ -179,7 +179,7 @@ function es(e) {
     if (null != p && d(T.g.EVENT, "".concat(p.guildId, "-").concat(p.guildEventId) + (null != p.recurrenceId ? "-".concat(p.recurrenceId) : "")), null != (null == u ? true : u.match(G)) && null != r.query) {
       let e = (0, O.y)(r.query),
         t = e.clientId;
-      null == t || "" === t || (null == (a = e.scopes) ? true : a.some(e => e !== E.x.APPLICATIONS_COMMANDS)) || d(T.g.APP_OAUTH2_LINK, t)
+      null == t || "" === t || (null == (o = e.scopes) ? true : o.some(e => e !== E.x.APPLICATIONS_COMMANDS)) || d(T.g.APP_OAUTH2_LINK, t)
     }
     let m = null == u ? true : u.match(D);
     if (null != m) {
@@ -205,7 +205,7 @@ function es(e) {
     let I = null == u ? true : u.match(k);
     null != I && d(T.g.SERVER_SHOP, I[1]);
     let C = null == u ? true : u.match(M);
-    null != C && d(T.g.SOCIAL_LAYER_STOREFRONT, "".concat(C[3], "-").concat(null != (o = C[1]) ? o : C[2]));
+    null != C && d(T.g.SOCIAL_LAYER_STOREFRONT, "".concat(C[3], "-").concat(null != (a = C[1]) ? a : C[2]));
     let w = el(e);
     if (null != w && d(T.g.QUESTS_EMBED, w), "/shop" === u) {
       let e = null != r.query ? (0, _.parse)(r.query).tab : null,
@@ -218,7 +218,7 @@ function es(e) {
 
 function el(e) {
   var t, n;
-  let r = ea(e),
+  let r = eo(e),
     i = null == r || null == (t = r.primaryHostRemainingPath) ? true : t.match(U);
   return null != (n = null == i ? true : i[1]) ? n : null
 }

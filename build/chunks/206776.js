@@ -81,7 +81,7 @@ class _ extends Chunk692401.W {
         visible: t,
         windowId: n
       } = e;
-      n === (0, o.UU)() && this._trackAppBackgrounded(!t)
+      n === (0, a.UU)() && this._trackAppBackgrounded(!t)
     })
   }
 }

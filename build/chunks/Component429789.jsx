@@ -30,16 +30,16 @@ function d() {
       description: Chunk388032.intl.string(Chunk388032.t["0A/8Rt"]),
       initialValue: module,
       onValueChange: e => {
-        o.Z.setAttenuation(e, t, n)
+        a.Z.setAttenuation(e, t, n)
       }
     }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t["9dHxRY"]),
       checked: exports,
-      onChange: t => o.Z.setAttenuation(e, t, n)
+      onChange: t => a.Z.setAttenuation(e, t, n)
     }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.SMt0Gr),
       checked: require,
-      onChange: n => o.Z.setAttenuation(e, t, n)
+      onChange: n => a.Z.setAttenuation(e, t, n)
     })]
   })
 }

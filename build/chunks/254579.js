@@ -116,8 +116,8 @@ let N = (e, t) => {
   var n, r;
   let i = null == e || null == (r = e.progress[t]) || null == (n = r.heartbeat) ? true : n.expiresAt;
   if (null == i) returnfalse;
-  let a = new Date(i).valueOf();
-  return !isNaN(a) && a > Date.now()
+  let o = new Date(i).valueOf();
+  return !isNaN(o) && o > Date.now()
 };
 
 function P(e) {
@@ -134,16 +134,16 @@ function w(e) {
 let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
   x = e => P(e) || s.Z.isProgressingOnDesktop(e.id),
   L = (e, t) => {
-    var n, i, o, s;
-    let l = null == (s = e.userStatus) || null == (o = s.progress) || null == (i = o[t.type]) || null == (n = i.heartbeat) ? true : n.lastBeatAt;
+    var n, i, a, s;
+    let l = null == (s = e.userStatus) || null == (a = s.progress) || null == (i = a[t.type]) || null == (n = i.heartbeat) ? true : n.lastBeatAt;
     if (null == l || !x(e)) return 0;
     let c = Date.now() - new Date(l).valueOf();
-    return (0, r.floor)(c / a.Z.Millis.SECOND, 2)
+    return (0, r.floor)(c / o.Z.Millis.SECOND, 2)
   },
   j = (e, t) => {
-    var n, r, i, a, o;
+    var n, r, i, o, a;
     let l = null == (r = e.userStatus) || null == (n = r.progress) ? true : n[t.type],
-      c = null != (o = null != (a = null == l ? true : l.value) ? a : null == (i = e.userStatus) ? true : i.streamProgressSeconds) ? o : 0;
+      c = null != (a = null != (o = null == l ? true : l.value) ? o : null == (i = e.userStatus) ? true : i.streamProgressSeconds) ? a : 0;
     if (T(e)) {
       let n = s.Z.getOptimisticProgress(e.id, t.type);
       return null == n || n < c ? c : n
@@ -155,25 +155,25 @@ let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
     var n;
     let i = t.target;
     if ((null == (n = e.userStatus) ? true : n.completedAt) != null) return i;
-    let a = Math.min(i * M, j(e, t));
-    return Math.max((0, r.floor)(a, 2), 0)
+    let o = Math.min(i * M, j(e, t));
+    return Math.max((0, r.floor)(o, 2), 0)
   },
   U = e => {
     var t, n, r;
     let {
-      quest: o,
+      quest: a,
       taskType: s,
       includeTaskTypes: l = i.T.ALL
-    } = e, c = o.config.taskConfigV2, u = null != s ? s : null == (t = Object.values(c.tasks).filter(e => l.has(e.type))[0]) ? true : t.type, d = null != (r = c.tasks[u]) ? r : c.tasks[i.X.STREAM_ON_DESKTOP];
-    if (null == d) throw Error("No task with type ".concat(s, " found for quest ").concat(o.id, "!"));
+    } = e, c = a.config.taskConfigV2, u = null != s ? s : null == (t = Object.values(c.tasks).filter(e => l.has(e.type))[0]) ? true : t.type, d = null != (r = c.tasks[u]) ? r : c.tasks[i.X.STREAM_ON_DESKTOP];
+    if (null == d) throw Error("No task with type ".concat(s, " found for quest ").concat(a.id, "!"));
     let f = d.target,
-      p = k(o, d),
+      p = k(a, d),
       _ = Object.values(c.tasks).find(w),
       m = null == _ || null == (n = _.applications) ? true : n.map(e => e.id);
     return {
       progressSeconds: p,
       targetSeconds: f,
-      targetMinutes: Math.ceil(f / a.Z.Seconds.MINUTE),
+      targetMinutes: Math.ceil(f / o.Z.Seconds.MINUTE),
       percentComplete: D(f, p),
       taskType: u,
       applications: m
@@ -184,24 +184,24 @@ let D = (e, t) => e > 0 ? (0, r.floor)(Math.min(t / e, 1), 4) : 0,
     var t, n;
     let {
       quest: r,
-      includeTaskTypes: a = i.T.ALL
+      includeTaskTypes: o = i.T.ALL
     } = e;
     for (let e of Object.values(null != (n = null == (t = r.userStatus) ? true : t.progress) ? n : {}).sort((e, t) => {
         var n, r;
         let i = null == e || null == (n = e.heartbeat) ? true : n.lastBeatAt,
-          a = null == t || null == (r = t.heartbeat) ? true : r.lastBeatAt;
-        return null != i && null != a ? new Date(i).valueOf() > new Date(a).valueOf() ? false : 1 : null == i && null == a && (null == e ? true : e.updatedAt) != null && (null == t ? true : t.updatedAt) != null ? new Date(e.updatedAt).valueOf() > new Date(t.updatedAt).valueOf() ? false : 1 : null != i && null == a ? false : 1
-      }).filter(o.lm)) {
+          o = null == t || null == (r = t.heartbeat) ? true : r.lastBeatAt;
+        return null != i && null != o ? new Date(i).valueOf() > new Date(o).valueOf() ? false : 1 : null == i && null == o && (null == e ? true : e.updatedAt) != null && (null == t ? true : t.updatedAt) != null ? new Date(e.updatedAt).valueOf() > new Date(t.updatedAt).valueOf() ? false : 1 : null != i && null == o ? false : 1
+      }).filter(a.lm)) {
       let t = G(e.eventName);
-      if (null != t && (null == a ? true : a.has(t))) return U({
+      if (null != t && (null == o ? true : o.has(t))) return U({
         quest: r,
         taskType: t,
-        includeTaskTypes: a
+        includeTaskTypes: o
       })
     }
     return U({
       quest: r,
-      includeTaskTypes: a
+      includeTaskTypes: o
     })
   },
   F = (e, t) => {
@@ -241,21 +241,21 @@ function B(e) {
   var t;
   let n = e.taskConfigV2.tasks,
     r = n[i.X.ACHIEVEMENT_IN_ACTIVITY],
-    a = n[i.X.ACHIEVEMENT_IN_GAME];
-  return null != (t = null != r ? r : a) ? t : null
+    o = n[i.X.ACHIEVEMENT_IN_GAME];
+  return null != (t = null != r ? r : o) ? t : null
 }
 
 function V(e) {
   var t, n, r, i;
-  let a = B(e.config);
-  if (null == a) return null;
-  let o = null != (i = null == (r = e.userStatus) || null == (n = r.progress) || null == (t = n[a.type]) ? true : t.value) ? i : 0,
-    s = D(a.target, o);
+  let o = B(e.config);
+  if (null == o) return null;
+  let a = null != (i = null == (r = e.userStatus) || null == (n = r.progress) || null == (t = n[o.type]) ? true : t.value) ? i : 0,
+    s = D(o.target, a);
   return {
-    title: a.messages.taskTitle,
-    description: a.messages.taskDescription,
-    target: a.target,
-    progress: o,
+    title: o.messages.taskTitle,
+    description: o.messages.taskDescription,
+    target: o.target,
+    progress: a,
     percentComplete: s
   }
 }

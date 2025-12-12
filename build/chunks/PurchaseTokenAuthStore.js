@@ -28,8 +28,8 @@ let u = 0,
 function p(e) {
   let {
     error: t
-  } = e, n = t instanceof o.ZP ? t : new o.ZP(t);
-  s.Z.isConnected() && n.code === o.ZP.ErrorCodes.PURCHASE_TOKEN_AUTHORIZATION_REQUIRED && (u = 1)
+  } = e, n = t instanceof a.ZP ? t : new a.ZP(t);
+  s.Z.isConnected() && n.code === a.ZP.ErrorCodes.PURCHASE_TOKEN_AUTHORIZATION_REQUIRED && (u = 1)
 }
 
 function _(e) {

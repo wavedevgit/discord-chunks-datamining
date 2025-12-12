@@ -34,10 +34,10 @@ class h extends Chunk147913.Z {
       let {
         channelId: t,
         userId: n,
-        suppress: a,
+        suppress: o,
         requestToSpeakTimestamp: m
       } = e;
-      if (u.Z.getVoiceChannelId() === t && a && null != t && n !== o.default.getId() && c.Z.can(f.yP, s.Z.getChannel(t)))
+      if (u.Z.getVoiceChannelId() === t && o && null != t && n !== a.default.getId() && c.Z.can(f.yP, s.Z.getChannel(t)))
         if (null != m) {
           let e = d.default.getUser(n);
           null != e && (0, p.U)(t, e, m)

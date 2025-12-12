@@ -48,7 +48,7 @@ function E(e) {
     url: t
   } = e;
   if (h(t)) returnfalse;
-  p.add((0, c.F)(t)), o.K.set(f, {
+  p.add((0, c.F)(t)), a.K.set(f, {
     trustedDomains: p,
     trustedProtocols: _
   })
@@ -59,7 +59,7 @@ function b(e) {
     url: t
   } = e;
   if (g(t)) returnfalse;
-  _.add((0, c.E)(t)), o.K.set(f, {
+  _.add((0, c.E)(t)), a.K.set(f, {
     trustedDomains: p,
     trustedProtocols: _
   })

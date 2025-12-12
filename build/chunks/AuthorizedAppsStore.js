@@ -68,12 +68,12 @@ function y(e) {
     } = e;
     return t.id !== i.application.id
   }));
-  let a = {
+  let o = {
     id: t,
     application: n,
     scopes: r
   };
-  d.set(a.application.id, a), f = [...f, a], null == a.application.parent_id && (p = [...p, a])
+  d.set(o.application.id, o), f = [...f, o], null == o.application.parent_id && (p = [...p, o])
 }
 
 function O(e) {

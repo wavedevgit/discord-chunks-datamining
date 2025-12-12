@@ -34,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk490897 = require("./490897.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk925969 = require("./925969.js");
+  Chunk834505 = require("./834505.js");
 
 function M(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -92,19 +92,19 @@ function I(e) {
     subLabel: i,
     selected: u,
     disabled: c,
-    onPressDestination: f,
-    "aria-setsize": b,
+    onPressDestination: b,
+    "aria-setsize": f,
     "aria-posinset": h
   } = e, m = (0, o.JA)(t.id), p = r.useCallback(() => {
-    c || null == f || f(t)
-  }, [f, c, t]);
+    c || null == b || b(t)
+  }, [b, c, t]);
   return (0, l.jsxs)(d.P3F, D(M({
     className: a()(R.destinationRow, {
       [R.disabled]: c
     }),
     onClick: p,
     "aria-selected": u,
-    "aria-setsize": b,
+    "aria-setsize": f,
     "aria-posinset": h
   }, m), {
     children: [(0, l.jsxs)("div", {
@@ -141,14 +141,14 @@ function F(e) {
     user: t,
     subLabel: n
   } = e, r = A(e, ["user", "subLabel"]);
-  let s = w.ZP.useName(t),
-    a = w.ZP.useUserTag(t, {
+  let s = C.ZP.useName(t),
+    a = C.ZP.useUserTag(t, {
       decoration: "never"
     }),
-    i = (0, c.e7)([E.Z], () => E.Z.getNickname(t.id)),
+    i = (0, c.e7)([Z.Z], () => Z.Z.getNickname(t.id)),
     u = (0, c.e7)([O.Z], () => O.Z.getStatus(t.id));
   return (0, l.jsx)(I, D(M({}, r), {
-    icon: (0, l.jsx)(f.Z, {
+    icon: (0, l.jsx)(b.Z, {
       "aria-hidden": true,
       size: d.EFr.SIZE_32,
       user: t,
@@ -184,15 +184,15 @@ function q(e) {
   } = e, r = A(e, ["channel", "subLabel"]);
   let s = (0, c.e7)([S.Z], () => S.Z.getGuild(null == t ? true : t.guild_id)),
     a = (0, m.ZP)(t),
-    i = (0, c.e7)([v.Z, L.default, E.Z], () => {
+    i = (0, c.e7)([v.Z, E.default, Z.Z], () => {
       let e = v.Z.getChannel(t.parent_id);
-      return null == e ? null : (0, m.F6)(e, L.default, E.Z, false)
+      return null == e ? null : (0, m.F6)(e, E.default, Z.Z, false)
     }),
-    o = (0, c.e7)([Z.ZP], () => Z.ZP.lastMessageTimestamp(t.id, k.W.CHANNEL)),
-    f = null == s ? true : s.name;
+    o = (0, c.e7)([_.ZP], () => _.ZP.lastMessageTimestamp(t.id, k.W.CHANNEL)),
+    b = null == s ? true : s.name;
   if (t.isThread() || t.isForumPost()) {
     let e = t.isForumPost() ? d.Mmi : d.VL1;
-    f = (0, l.jsxs)("div", {
+    b = (0, l.jsxs)("div", {
       className: R.threadSubLabel,
       children: [(0, l.jsx)(e, {
         color: d.TVs.colors.TEXT_SUBTLE,
@@ -211,7 +211,7 @@ function q(e) {
         }), (0, l.jsx)(d.Text, {
           variant: "text-xs/medium",
           color: "text-subtle",
-          children: (0, T.Xf)(u()(o))
+          children: (0, L.Xf)(u()(o))
         })]
       }) : null]
     })
@@ -223,7 +223,7 @@ function q(e) {
       channel: t
     }),
     label: a,
-    subLabel: null != n ? n : f
+    subLabel: null != n ? n : b
   }))
 }
 
@@ -236,7 +236,7 @@ function G(e) {
   } = e, i = A(e, ["rowData", "selectedDestinations", "handleToggleDestination", "disableSelection"]);
   let u = r.useMemo(() => [t.length], [t.length]),
     c = r.useCallback(() => 48, []),
-    f = r.useMemo(() => {
+    b = r.useMemo(() => {
       var e;
       return null != (e = null == n ? true : n.map(y.hC)) ? e : []
     }, [n]),
@@ -260,17 +260,17 @@ function G(e) {
         },
         c = (0, y.hC)(o),
         d = function(e) {
-          if (e instanceof j.Sf && (0, j.Km)(e.type) && null != e.rateLimitPerUser && e.rateLimitPerUser > 0 && !(P.Z.can(_.Plq.MANAGE_CHANNELS, e) || P.Z.can(_.Plq.MANAGE_MESSAGES, e))) return {
+          if (e instanceof j.Sf && (0, j.Km)(e.type) && null != e.rateLimitPerUser && e.rateLimitPerUser > 0 && !(P.Z.can(w.Plq.MANAGE_CHANNELS, e) || P.Z.can(w.Plq.MANAGE_MESSAGES, e))) return {
             label: N.intl.string(N.t.Icu3bf)
           }
         }(u),
-        b = f.includes(c),
+        f = b.includes(c),
         m = {
           key: c,
           destination: o,
           subLabel: null != d ? d.label : true,
-          disabled: a && !b || null != d,
-          selected: b,
+          disabled: a && !f || null != d,
+          selected: f,
           onPressDestination: s,
           "aria-posinset": r + 1,
           "aria-setsize": t.length
@@ -281,10 +281,10 @@ function G(e) {
         channel: u
       }, m)) : i === h.h8.TEXT_CHANNEL || i === h.h8.VOICE_CHANNEL ? (0, l.jsx)(q, M({
         channel: u
-      }, m)) : void(0, C.vE)(i)
-    }, [a, s, t, f]),
+      }, m)) : void(0, T.vE)(i)
+    }, [a, s, t, b]),
     p = r.useRef(null),
-    g = (0, b.Z)("share-command-modal", p);
+    g = (0, f.Z)("share-command-modal", p);
   return (0, l.jsx)(o.bG, {
     navigator: g,
     children: (0, l.jsx)(o.SJ, {

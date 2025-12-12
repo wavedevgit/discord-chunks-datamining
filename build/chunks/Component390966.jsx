@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   l = require.n(Chunk913527),
   Chunk692547 = require("./692547.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk849464 = require("./849464.js"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk791675 = require("./791675.js");
+  Chunk646615 = require("./646615.js");
 let E = 20;
 
 function b(e, t) {
@@ -57,11 +57,11 @@ function b(e, t) {
   }
 }
 
-function y(e, t, n, i, a) {
+function y(e, t, n, i, o) {
   switch (e) {
     case 1:
-      return a > 0 ? h.intl.formatToPlainString(h.t.PQlCWk, {
-        minutes: a
+      return o > 0 ? h.intl.formatToPlainString(h.t.PQlCWk, {
+        minutes: o
       }) : h.intl.string(h.t.WINqKV);
     case 2:
       return h.intl.string(h.t.WINqKV);
@@ -86,8 +86,8 @@ function O(e) {
       timeStatus: n,
       textBrand: r,
       textPositive: i,
-      textDanger: a,
-      endDateTimeString: o,
+      textDanger: o,
+      endDateTimeString: a,
       startDateTimeString: s
     } = e,
     l = d.Que,
@@ -95,7 +95,7 @@ function O(e) {
     u = "text-default";
   switch (n) {
     case 3:
-      c = i, u = null != o ? true : "text-feedback-positive";
+      c = i, u = null != a ? true : "text-feedback-positive";
       break;
     case 4:
       l = d.T39;
@@ -105,7 +105,7 @@ function O(e) {
       u = "text-brand", t = s;
       break;
     case 5:
-      c = a
+      c = o
   }
   return {
     Icon: l,
@@ -117,10 +117,10 @@ function O(e) {
 
 function v() {
   return (0, Chunk54381.jsx)(Chunk481060.IGR, {
-    className: Chunk791675.newBadge,
+    className: Chunk646615.newBadge,
     color: Chunk692547.Z.unsafe_rawColors.BRAND_260.css,
     text: (0, Chunk54381.jsx)(Chunk481060.Text, {
-      className: Chunk791675.newBadgeText,
+      className: Chunk646615.newBadgeText,
       variant: "text-xs/bold",
       children: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     })
@@ -134,13 +134,13 @@ function S(e) {
     tooltipText: i
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(g.eventStatusContainer, n),
+    className: a()(g.eventStatusContainer, n),
     children: (0, r.jsx)(u.u, {
       position: "right",
       text: i,
       shouldShow: null != i,
       children: (0, r.jsx)("div", {
-        className: o()(g.eventStatusContainer, n),
+        className: a()(g.eventStatusContainer, n),
         children: t
       })
     })
@@ -151,7 +151,7 @@ function I(e) {
   let {
     startTime: t,
     status: n,
-    eventType: a,
+    eventType: o,
     className: s,
     endTime: u,
     liveText: _,
@@ -161,7 +161,7 @@ function I(e) {
     guildEventId: A,
     recurrenceId: N
   } = e, P = (0, d.dQu)(c.Z.colors.TEXT_BRAND).hex(), R = (0, d.dQu)(c.Z.colors.TEXT_FEEDBACK_POSITIVE).hex(), w = (0, d.dQu)(c.Z.colors.TEXT_FEEDBACK_CRITICAL).hex();
-  null == _ && (_ = a === m.WX.EXTERNAL ? h.intl.string(h.t.IyZxjH) : h.intl.string(h.t["X2K3/4"]));
+  null == _ && (_ = o === m.WX.EXTERNAL ? h.intl.string(h.t.IyZxjH) : h.intl.string(h.t["X2K3/4"]));
   let D = (0, f.Z)(N, A),
     [{
       startDateTimeString: x,
@@ -207,7 +207,7 @@ function I(e) {
     W = b((0, p.zi)(n, C), n)
   }
   return (0, r.jsxs)(S, {
-    className: o()(s, {
+    className: a()(s, {
       [g.isRecurring]: null != W
     }),
     tooltipText: Y,

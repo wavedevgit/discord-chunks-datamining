@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
@@ -20,8 +20,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk656139 = require("./656139.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk641952 = require("./641952.js"),
-  Chunk456254 = require("./456254.js");
+  Chunk756555 = require("./756555.js"),
+  Chunk754761 = require("./754761.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -150,7 +150,7 @@ let I = e => {
       className: t
     } = e, {
       referralSentUsers: n
-    } = (0, _.G)(), i = (0, o.e7)([p.Z], () => p.Z.getRecipientStatus()), l = (0, o.e7)([p.Z], () => p.Z.getHasEligibleFriends()), c = i.size === _.Q && [...i.values()].every(e => e === f.Fe.REDEEMED), d = i.size === _.Q, b = () => false === l ? g.intl.format(g.t["zWhX/Q"], {
+    } = (0, _.G)(), i = (0, a.e7)([p.Z], () => p.Z.getRecipientStatus()), l = (0, a.e7)([p.Z], () => p.Z.getHasEligibleFriends()), c = i.size === _.Q && [...i.values()].every(e => e === f.Fe.REDEEMED), d = i.size === _.Q, b = () => false === l ? g.intl.format(g.t["zWhX/Q"], {
       helpdeskArticle: u.Z.getArticleURL(h.BhN.REFERRAL_PROGRAM)
     }) : n.length === _.Q ? true === c ? g.intl.format(g.t["1aEjsH"], {
       helpdeskArticle: u.Z.getArticleURL(h.BhN.REFERRAL_PROGRAM)
@@ -160,7 +160,7 @@ let I = e => {
       helpdeskArticle: u.Z.getArticleURL(h.BhN.REFERRAL_PROGRAM)
     });
     return (0, r.jsxs)("div", {
-      className: a()(E.container, t),
+      className: o()(E.container, t),
       children: [(0, r.jsx)("div", {
         className: E.progressCircle,
         children: (0, r.jsx)(N, {

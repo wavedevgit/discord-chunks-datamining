@@ -29,7 +29,7 @@ class h extends Chunk147913.Z {
   constructor(...e) {
     super(...e), m(this, "_didAttemptToOpenModal", false), m(this, "_didConnectionOpen", false), m(this, "_didUserSettingsProtoLoad", false), m(this, "_didGamesSeenLoad", false), m(this, "actions", {
       POST_CONNECTION_OPEN: () => this._handlePostConnectionOpen()
-    }), m(this, "stores", new Map().set(l.Z, () => this._handleUserSettingsProtoUpdate()).set(s.ZP, () => this._handleGamesSeenUpdate()).set(o.Z, () => this._handleApexExperimentUpdate())), m(this, "_handlePostConnectionOpen", () => {
+    }), m(this, "stores", new Map().set(l.Z, () => this._handleUserSettingsProtoUpdate()).set(s.ZP, () => this._handleGamesSeenUpdate()).set(a.Z, () => this._handleApexExperimentUpdate())), m(this, "_handlePostConnectionOpen", () => {
       this._didConnectionOpen = true, this._handleShowAnnouncementModal()
     }), m(this, "_handleUserSettingsProtoUpdate", () => {
       this._didUserSettingsProtoLoad = l.Z.hasLoaded(_.yP.PRELOADED_USER_SETTINGS), this._handleShowAnnouncementModal()
@@ -40,7 +40,7 @@ class h extends Chunk147913.Z {
     }), m(this, "_handleShowAnnouncementModal", () => {
       if (!this._didAttemptToOpenModal && this._didConnectionOpen && this._didUserSettingsProtoLoad && this._didGamesSeenLoad && (0, d.ne)({
           location: "social-layer-storefront-announcement-modal"
-        }) && (this._didAttemptToOpenModal = true, !(0, a.zu)(r.z.GAME_SHOP_ANNOUNCEMENT_MODAL))) {
+        }) && (this._didAttemptToOpenModal = true, !(0, o.zu)(r.z.GAME_SHOP_ANNOUNCEMENT_MODAL))) {
         if (null != c.Z.getGuild((0, u.ac)())) return void(0, f.b)();
         for (let e of s.ZP.getGamesSeen(false, false))
           if (null != e.id && p.RI.has(e.id)) return void(0, f.b)()

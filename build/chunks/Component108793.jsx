@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk801461 = require("./801461.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk991119 = require("./991119.js");
+  Chunk631936 = require("./631936.js");
 
 function p(e) {
   var t, n, {
@@ -41,44 +41,44 @@ function p(e) {
   let {
     user: S,
     editState: b,
-    onClose: x
-  } = y, N = (0, s.ZP)(S.id), v = function(e, t, n) {
+    onClose: _
+  } = y, x = (0, s.ZP)(S.id), N = function(e, t, n) {
     switch (e) {
-      case f.Wq.EDIT_USERNAME:
+      case m.Wq.EDIT_USERNAME:
         return {
-          header: g.intl.string(g.t["a/zCWh"]), subtitle: g.intl.string(g.t.gGz0se)
+          header: f.intl.string(f.t["a/zCWh"]), subtitle: f.intl.string(f.t.gGz0se)
         };
-      case f.Wq.EDIT_DISPLAY_NAME:
+      case m.Wq.EDIT_DISPLAY_NAME:
         return {
-          header: g.intl.string(g.t.SRDNcG), subtitle: g.intl.string(g.t["940AS0"])
+          header: f.intl.string(f.t.SRDNcG), subtitle: f.intl.string(f.t["940AS0"])
         };
-      case f.Wq.PREVIEW:
+      case m.Wq.PREVIEW:
         return {
-          header: g.intl.formatToPlainString(g.t.XDHrcj, {
+          header: f.intl.formatToPlainString(f.t.XDHrcj, {
             displayName: t
-          }), subtitle: g.intl.format(g.t.bWE0ZD, {
+          }), subtitle: f.intl.format(f.t.bWE0ZD, {
             onClick: () => {
               n(), (0, l.openUserSettings)()
             }
           })
         };
-      case f.Wq.SUGGESTION:
+      case m.Wq.SUGGESTION:
         return {
-          header: g.intl.string(g.t.F7T4db), subtitle: g.intl.formatToPlainString(g.t.Z8F83a, {}), link: g.intl.format(g.t.i2vB8z, {
-            helpdeskArticle: c.Z.getArticleURL(m.BhN.POMELO_FAQ)
+          header: f.intl.string(f.t.F7T4db), subtitle: f.intl.formatToPlainString(f.t.Z8F83a, {}), link: f.intl.format(f.t.i2vB8z, {
+            helpdeskArticle: c.Z.getArticleURL(g.BhN.POMELO_FAQ)
           })
         };
       default:
         return {
-          header: g.intl.string(g.t["a/zCWh"]), subtitle: g.intl.string(g.t.gGz0se)
+          header: f.intl.string(f.t["a/zCWh"]), subtitle: f.intl.string(f.t.gGz0se)
         }
     }
-  }(b, u.ZP.getName(S), x), [T, I] = (0, o.q_F)(() => ({
+  }(b, u.ZP.getName(S), _), [v, T] = (0, o.q_F)(() => ({
     opacity: 0,
     y: 10
   }));
   return i.useEffect(() => {
-    I({
+    T({
       y: 0,
       opacity: 1,
       from: {
@@ -86,29 +86,29 @@ function p(e) {
         opacity: 0
       }
     })
-  }, [I, b]), (0, r.jsxs)("div", {
+  }, [T, b]), (0, r.jsxs)("div", {
     className: E.displayNameContainer,
     children: [(0, r.jsxs)(a.animated.div, {
       style: {
-        opacity: T.opacity,
-        y: T.y
+        opacity: v.opacity,
+        y: v.y
       },
       children: [(0, r.jsx)(o.Heading, {
         className: E.title,
         color: "text-strong",
         variant: "heading-xl/extrabold",
-        children: v.header
+        children: N.header
       }), (0, r.jsxs)("div", {
         className: E.subtitle,
         children: [(0, r.jsx)(o.Heading, {
           color: "text-default",
           variant: "heading-sm/medium",
-          children: v.subtitle
-        }), null != v.link && (0, r.jsx)(o.Text, {
+          children: N.subtitle
+        }), null != N.link && (0, r.jsx)(o.Text, {
           className: E.link,
           color: "text-default",
           variant: "text-sm/medium",
-          children: v.link
+          children: N.link
         })]
       })]
     }), (0, r.jsx)(d.Z, (t = function(e) {
@@ -129,7 +129,7 @@ function p(e) {
       }
       return e
     }({}, y), n = n = {
-      displayProfile: N,
+      displayProfile: x,
       ref: p,
       usernameSuggestionLoading: h,
       oneClickFlow: O

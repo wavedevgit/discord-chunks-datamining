@@ -1,7 +1,7 @@
-/** Chunk was on 93099 **/
-/** chunk id: 766775, original params: e,a,c (module,exports,require) **/
+/** Chunk was on 86015 **/
+/** chunk id: 766775, original params: e,n,i (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -13,57 +13,57 @@ var Chunk120356 = require("./120356.js"),
   Chunk659900 = require("./659900.jsx"),
   Chunk473855 = require("./473855.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk193352 = require("./193352.js");
+  Chunk204078 = require("./204078.js");
 
-function C(e) {
+function h(e) {
   let {
-    transitionState: a,
-    onClose: c,
-    guildTemplate: i
+    transitionState: n,
+    onClose: i,
+    guildTemplate: c
   } = e, {
-    form: C,
-    preview: m,
-    handleSubmit: u
-  } = (0, l.Z)(i, false), _ = (0, o.Dt)();
-  return (0, n.jsxs)(r.IX, {
-    transitionState: a,
-    onClose: c,
+    form: h,
+    preview: C,
+    handleSubmit: m
+  } = (0, s.Z)(c, false), u = (0, l.Dt)();
+  return (0, a.jsxs)(r.IX, {
+    transitionState: n,
+    onClose: i,
     size: "xxl",
-    "aria-labelledby": _,
-    children: [(0, n.jsxs)("div", {
-      className: h.modalContainer,
-      children: [(0, n.jsx)("div", {
-        className: t()(h.modalSection, h.ctaSection),
-        children: (0, n.jsx)("div", {
-          className: h.ctaContainer,
-          children: (0, n.jsx)(s.Z, {
-            guildTemplate: i,
-            headerId: _
+    "aria-labelledby": u,
+    children: [(0, a.jsxs)("div", {
+      className: f.modalContainer,
+      children: [(0, a.jsx)("div", {
+        className: t()(f.modalSection, f.ctaSection),
+        children: (0, a.jsx)("div", {
+          className: f.ctaContainer,
+          children: (0, a.jsx)(d.Z, {
+            guildTemplate: c,
+            headerId: u
           })
         })
-      }), (0, n.jsx)("div", {
-        className: t()(h.modalSection, h.formSection),
-        children: (0, n.jsxs)(d.Ttm, {
-          className: h.formContainer,
-          children: [(0, n.jsx)(d.Heading, {
+      }), (0, a.jsx)("div", {
+        className: t()(f.modalSection, f.formSection),
+        children: (0, a.jsxs)(o.Ttm, {
+          className: f.formContainer,
+          children: [(0, a.jsx)(o.Heading, {
             variant: "heading-xl/semibold",
-            className: h.header,
-            children: f.intl.string(f.t.UNFvtM)
-          }), (0, n.jsxs)(d.C3N, {
-            children: [C, m]
+            className: f.header,
+            children: _.intl.string(_.t.UNFvtM)
+          }), (0, a.jsxs)(o.C3N, {
+            children: [h, C]
           })]
         })
       })]
-    }), (0, n.jsx)(r.Go$, {
+    }), (0, a.jsx)(r.Go$, {
       actions: [{
         variant: "secondary",
-        text: f.intl.string(f.t.cpT0Cq),
-        onClick: c
+        text: _.intl.string(_.t.cpT0Cq),
+        onClick: i
       }, {
         variant: "primary",
-        text: f.intl.string(f.t.CumH4u),
+        text: _.intl.string(_.t.CumH4u),
         onClick: async () => {
-          null != await u() && c()
+          null != await m() && i()
         }
       }]
     })]

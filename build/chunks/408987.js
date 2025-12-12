@@ -10,10 +10,10 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js");
 let s = {
   async checkGuildTemplateDirty(e) {
-    if (!i.Z.canWithPartialContext(o.Plq.MANAGE_GUILD, {
+    if (!i.Z.canWithPartialContext(a.Plq.MANAGE_GUILD, {
         guildId: e
       })) return;
-    let t = await a.Z.loadTemplatesForGuild(e);
+    let t = await o.Z.loadTemplatesForGuild(e);
     t.body.length > 0 && r.Z.dispatch({
       type: "GUILD_TEMPLATE_DIRTY_TOOLTIP_REFRESH",
       guildTemplate: t.body[0]

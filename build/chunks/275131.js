@@ -41,13 +41,13 @@ class _ extends Chunk147913.Z {
           categoryId: d.Hk
         });
       if (n || (0, u.Ew)(s)) {
-        o.Z.dispatch({
+        a.Z.dispatch({
           type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_START",
           categoryId: d.Hk,
           reset: true
         });
         try {
-          let e = await a.tn.get({
+          let e = await o.tn.get({
               url: f.ANM.GUILD_DISCOVERY,
               query: r.stringify({
                 offset: 0,
@@ -58,14 +58,14 @@ class _ extends Chunk147913.Z {
             }),
             t = e.body.total,
             n = e.body.guilds.map(u.Uv);
-          o.Z.dispatch({
+          a.Z.dispatch({
             type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS",
             categoryId: d.Hk,
             guilds: n,
             total: t
           })
         } catch (e) {
-          o.Z.dispatch({
+          a.Z.dispatch({
             type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_FAILURE",
             categoryId: d.Hk,
             error: e
@@ -84,13 +84,13 @@ class _ extends Chunk147913.Z {
         categoryId: t
       });
       if (n || (0, u.Ew)(i)) {
-        o.Z.dispatch({
+        a.Z.dispatch({
           type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_START",
           categoryId: t,
           reset: true
         });
         try {
-          let e = await a.tn.get({
+          let e = await o.tn.get({
               url: f.ANM.GUILD_DISCOVERY,
               query: r.stringify({
                 categories: [t]
@@ -100,14 +100,14 @@ class _ extends Chunk147913.Z {
             }),
             n = e.body.total,
             i = e.body.guilds.map(u.Uv);
-          o.Z.dispatch({
+          a.Z.dispatch({
             type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS",
             categoryId: t,
             guilds: i,
             total: n
           })
         } catch (e) {
-          o.Z.dispatch({
+          a.Z.dispatch({
             type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_FAILURE",
             categoryId: t,
             error: e

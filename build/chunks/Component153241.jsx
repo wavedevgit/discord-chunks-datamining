@@ -1,7 +1,7 @@
 /** Chunk was on 86948 **/
 /** chunk id: 153241, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => N
+  default: () => w
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,10 +20,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk154122 = require("./154122.jsx"),
   Chunk282793 = require("./282793.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk137427 = require("./137427.js"),
+  Chunk96011 = require("./96011.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk992909 = require("./992909.js"),
-  Chunk135471 = require("./135471.js");
+  Chunk781565 = require("./781565.js"),
+  Chunk383092 = require("./383092.js");
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -76,24 +76,24 @@ let C = e => {
     var {
       onInvite: t,
       onClose: n,
-      subscriptionId: u
+      subscriptionId: c
     } = e, p = R(e, ["onInvite", "onClose", "subscriptionId"]);
-    let [d, m] = l.useState([]), [y, x] = l.useState(""), C = (0, c.Z)(y, 400), w = (0, s.e7)([g.Z], () => g.Z.getNumAvailableInvites()), {
-      eligibleUsers: N,
-      getNextRows: D,
-      hasError: k,
-      isFetching: _
+    let [f, m] = l.useState([]), [y, x] = l.useState(""), C = (0, u.Z)(y, 400), _ = (0, s.e7)([g.Z], () => g.Z.getNumAvailableInvites()), {
+      eligibleUsers: w,
+      getNextRows: N,
+      hasError: D,
+      isFetching: k
     } = (0, b.Z)({
-      subscriptionId: u,
+      subscriptionId: c,
       searchQuery: C
     }), [A, T] = l.useState(false);
-    return k ? (0, r.jsx)(a.Modal, S({
+    return D ? (0, r.jsx)(a.Modal, S({
       size: "sm",
       title: j.intl.string(O.default["54lM5y"]),
       subtitle: j.intl.string(O.default.zrtwpV),
       onClose: n,
       actions: []
-    }, p)) : 0 !== N.length || _ || 0 !== C.length ? (0, r.jsx)(a.Modal, E(S({
+    }, p)) : 0 !== w.length || k || 0 !== C.length ? (0, r.jsx)(a.Modal, E(S({
       size: "md",
       title: j.intl.string(O.default["Um/7BM"]),
       subtitle: j.intl.format(O.default.qSWXaf, {
@@ -105,8 +105,8 @@ let C = e => {
       input: (0, r.jsx)(o.Z, {
         className: P.searchbar,
         size: o.Z.Sizes.MEDIUM,
-        tags: d.map(e => f.ZP.getName(e)),
-        placeholder: 0 === d.length ? j.intl.string(O.default.wRS8vo) : "",
+        tags: f.map(e => h.ZP.getName(e)),
+        placeholder: 0 === f.length ? j.intl.string(O.default.wRS8vo) : "",
         query: y,
         onRemoveTag: e => {
           m(t => t.filter((t, n) => n !== e))
@@ -116,29 +116,29 @@ let C = e => {
       }),
       actions: [],
       actionBarInput: (() => {
-        let e = C.length > 0 && 0 === N.length;
+        let e = C.length > 0 && 0 === w.length;
         return (0, r.jsx)(i.Button, {
           variant: "primary",
-          disabled: 0 === d.length && !e || A,
+          disabled: 0 === f.length && !e || A,
           text: j.intl.string(O.default["5fZHp3"]),
           size: "md",
           fullWidth: true,
           onClick: async () => {
             if (e) return void n();
-            T(true), await t(d), T(false)
+            T(true), await t(f), T(false)
           }
         })
       })()
     }, p), {
-      children: (0, r.jsx)(h.Z, {
-        users: N,
-        isUserSelected: e => d.some(t => t.id === e.id),
+      children: (0, r.jsx)(d.Z, {
+        users: w,
+        isUserSelected: e => f.some(t => t.id === e.id),
         onSelectionChange: (e, t) => {
           m(n => t ? [...n, e] : n.filter(t => t.id !== e.id))
         },
-        isUserDisabled: () => d.length >= w,
-        isFetching: _,
-        onFetchMore: D,
+        isUserDisabled: () => f.length >= _,
+        isFetching: k,
+        onFetchMore: N,
         searchQuery: C,
         emptySearchContent: {
           header: j.intl.string(O.default.gaamNe),
@@ -156,7 +156,7 @@ let C = e => {
       actions: []
     }, p))
   },
-  w = e => {
+  _ = e => {
     var {
       onClose: t,
       inviteUsersResult: n
@@ -172,7 +172,7 @@ let C = e => {
       }),
       subtitle: j.intl.format(O.default.olkQkj, {
         onClick: () => {
-          t(), (0, p.openUserSettings)(u.n.SUBSCRIPTIONS_PANEL, {
+          t(), (0, p.openUserSettings)(c.n.SUBSCRIPTIONS_PANEL, {
             section: y.oAB.SUBSCRIPTIONS
           })
         }
@@ -186,15 +186,15 @@ let C = e => {
       }, e.user.id))
     }))
   },
-  N = e => {
+  w = e => {
     var {
       subscription: t
     } = e, n = R(e, ["subscription"]);
-    let [a, s] = l.useState([]), [i, o] = l.useState(1), c = async e => {
+    let [a, s] = l.useState([]), [i, o] = l.useState(1), u = async e => {
       let n = new Map,
         r = [];
       for (let t of e) n.set(t.id, t), r.push(t.id);
-      let l = await (0, d.cD)(t.id, r);
+      let l = await (0, f.cD)(t.id, r);
       if (null == l) {
         s(e.map(e => ({
           user: e,
@@ -215,9 +215,9 @@ let C = e => {
       }))]), o(2)
     };
     return 1 === i ? (0, r.jsx)(C, E(S({}, n), {
-      onInvite: c,
+      onInvite: u,
       subscriptionId: t.id
-    })) : 2 === i ? (0, r.jsx)(w, E(S({}, n), {
+    })) : 2 === i ? (0, r.jsx)(_, E(S({}, n), {
       inviteUsersResult: a
     })) : true
   }

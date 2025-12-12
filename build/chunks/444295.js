@@ -34,8 +34,8 @@ function d(e) {
   }
 }
 async function f(e, t, r) {
-  var o, u, f, p, _, m;
-  let h = null != r ? a.Z.getDetectableGame(r) : null,
+  var a, u, f, p, _, m;
+  let h = null != r ? o.Z.getDetectableGame(r) : null,
     {
       default: g
     } = n(371651),
@@ -48,17 +48,17 @@ async function f(e, t, r) {
     application_id: null != (p = null == h ? true : h.id) ? p : true,
     application_name: null != (_ = null == h ? true : h.name) ? _ : true,
     most_recent_overlay_render_method: b,
-    hardware_display_count: null != (m = await (null === i.Z || true === i.Z || null == (u = i.Z.hardware) || null == (o = u.getDisplayCount) ? true : o.call(u))) ? m : null
+    hardware_display_count: null != (m = await (null === i.Z || true === i.Z || null == (u = i.Z.hardware) || null == (a = u.getDisplayCount) ? true : a.call(u))) ? m : null
   })
 }
 
 function p(e, t) {
-  let [n, i] = r.useState(e()), a = r.useRef(e);
+  let [n, i] = r.useState(e()), o = r.useRef(e);
   return r.useEffect(() => {
-    a.current = e
+    o.current = e
   }, [e]), r.useEffect(() => {
     i(e => {
-      let t = a.current();
+      let t = o.current();
       if (e.size > t.size || e.size < t.size) return t;
       for (let n of e)
         if (!t.has(n)) return t;
@@ -72,18 +72,18 @@ function p(e, t) {
 function _(e, t) {
   var n, r, i;
   let {
-    locked: a,
+    locked: o,
     shownUserIds: l,
     liveUserIds: u,
     contentInventoryIds: d
   } = t;
   ((null != (n = null == l ? true : l.length) ? n : 0) !== 0 || (null != (r = null == u ? true : u.length) ? r : 0) !== 0 || (null != (i = null == d ? true : d.length) ? i : 0) !== 0) && s.default.track(c.rMx.WIDGET_CONTENT_SHOWN, {
-    overlay_locked: a,
+    overlay_locked: o,
     widget_type: e,
     shown_user_ids: l,
     live_user_ids: u,
     content_inventory_ids: d,
-    media_session_id: o.Z.getMediaSessionId()
+    media_session_id: a.Z.getMediaSessionId()
   })
 }
 
@@ -110,14 +110,14 @@ function E(e, t) {
     type: n,
     value: r,
     userId: i,
-    secondaryValue: a
+    secondaryValue: o
   } = t;
   s.default.track(c.rMx.WIDGET_INTERACTED, {
     widget_type: e,
     interaction_type: n,
     interaction_value: r,
-    interaction_secondary_value: a,
+    interaction_secondary_value: o,
     target_user_id: i,
-    media_session_id: o.Z.getMediaSessionId()
+    media_session_id: a.Z.getMediaSessionId()
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 20114 **/
-/** chunk id: 536920, original params: t,e,a (module,exports,require) **/
+/** chunk id: 536920, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => y
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,17 +18,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk371651 = require("./371651.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk23898 = require("./23898.js");
+  Chunk361902 = require("./361902.js");
 
-function f(t) {
+function y(t) {
   let {
     onClose: e,
-    transitionState: a,
-    clientSettingType: f,
-    gameId: y
+    transitionState: n,
+    clientSettingType: y,
+    gameId: f
   } = t, [k, C] = i.useState("unreported"), [b, w] = i.useState(""), [S, j] = i.useState(false), [Z, M] = i.useState(false), [H, P] = i.useState(false), [F, R] = i.useState(false), D = (0, r.e7)([m.Z, c.ZP], () => {
     var t;
-    let e = null != y ? y : null == (t = c.ZP.getCurrentGameForAnalytics()) ? true : t.id;
+    let e = null != f ? f : null == (t = c.ZP.getCurrentGameForAnalytics()) ? true : t.id;
     return null == e ? null : m.Z.getDetectableGame(e)
   }), E = (0, r.e7)([h.default], () => {
     var t;
@@ -50,7 +50,7 @@ function f(t) {
       value: e
     }))
   }, []), O = i.useCallback(async () => {
-    var t, a, n;
+    var t, n, a;
     if ("unreported" === k && 0 === b.length) {
       P(true), await (0, o._v)(100), P(false), R(true);
       return
@@ -58,13 +58,13 @@ function f(t) {
     j(true), await _.default.track(g.rMx.OVERLAY_DISABLED_SURVEY, {
       reason: k,
       comment: b,
-      client_setting_type: f,
+      client_setting_type: y,
       application_id: null == D ? true : D.id,
       application_name: null == D ? true : D.name,
       most_recent_overlay_render_method: E,
-      hardware_display_count: null != (n = await (null === u.Z || true === u.Z || null == (a = u.Z.hardware) || null == (t = a.getDisplayCount) ? true : t.call(a))) ? n : null
+      hardware_display_count: null != (a = await (null === u.Z || true === u.Z || null == (n = u.Z.hardware) || null == (t = n.getDisplayCount) ? true : t.call(n))) ? a : null
     }), await (0, o._v)(1e3), j(false), M(true), await (0, o._v)(1500), e()
-  }, [k, b, f, null == D ? true : D.id, null == D ? true : D.name, E, e]);
+  }, [k, b, y, null == D ? true : D.id, null == D ? true : D.name, E, e]);
   (0, d.ZP)(() => {
     _.default.track(g.rMx.OPEN_MODAL, {
       type: "overlay_disabled_questionnaire_modal"
@@ -83,37 +83,37 @@ function f(t) {
     loading: S,
     autoFocus: false
   }], [e, S, Z, O, H]);
-  return (0, n.jsxs)(l.Modal, {
+  return (0, a.jsxs)(l.Modal, {
     onClose: e,
-    transitionState: a,
+    transitionState: n,
     title: p.intl.string(p.t["9JKzxe"]),
     subtitle: p.intl.string(p.t["2yjnmb"]),
     actions: U,
-    children: [(0, n.jsxs)("div", {
-      children: [(0, n.jsx)(s.UkV, {
+    children: [(0, a.jsxs)("div", {
+      children: [(0, a.jsx)(s.UkV, {
         isShaking: H,
         intensity: 1,
         className: x.radioHeader,
-        children: (0, n.jsx)(s.Text, {
+        children: (0, a.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: F ? "text-feedback-critical" : "text-muted",
           children: p.intl.string(p.t.yhUvdd)
         })
-      }), (0, n.jsx)(s.FXm, {
+      }), (0, a.jsx)(s.FXm, {
         value: k,
         options: L,
         onChange: t => {
           C(t), R(false), P(false)
         }
       })]
-    }), (0, n.jsxs)("div", {
+    }), (0, a.jsxs)("div", {
       className: x.commentContainer,
-      children: [(0, n.jsx)(s.Text, {
+      children: [(0, a.jsx)(s.Text, {
         variant: "text-sm/semibold",
         color: "text-muted",
         className: x.commentHeader,
         children: p.intl.string(p.t.LYnrhc)
-      }), (0, n.jsx)(s.Kx8, {
+      }), (0, a.jsx)(s.Kx8, {
         autosize: true,
         value: b,
         maxLength: 1e3,

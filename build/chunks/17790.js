@@ -12,19 +12,19 @@ let s = 30 * Chunk70956.Z.Millis.SECOND,
 
 function c(e) {
   let n = (0, i.n)();
-  a.useEffect(() => {
+  r.useEffect(() => {
     if (null == e) return;
     let t = true,
-      a = null,
-      r = 0,
+      r = null,
+      a = 0,
       i = () => setTimeout(() => {
-        n && (a = new AbortController, (0, l.mF)(e, false, a.signal).then(() => r = 0).catch(() => r = Math.min(r + 1, 4)).finally(() => {
+        n && (r = new AbortController, (0, l.mF)(e, false, r.signal).then(() => a = 0).catch(() => a = Math.min(a + 1, 4)).finally(() => {
           t && (c = i())
         }))
-      }, s * Math.pow(2, r) + Math.random() * o),
+      }, s * Math.pow(2, a) + Math.random() * o),
       c = i();
     return () => {
-      t = false, null == a || a.abort(), clearTimeout(c)
+      t = false, null == r || r.abort(), clearTimeout(c)
     }
   }, [e, n])
 }

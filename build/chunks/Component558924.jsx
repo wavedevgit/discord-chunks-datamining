@@ -27,7 +27,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk354459 = require("./354459.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk59110 = require("./59110.js");
+  Chunk604570 = require("./604570.js");
 
 function E(e, n) {
   let t = (0, u.e7)([j.Z], () => j.Z.getVoiceChannelId()),

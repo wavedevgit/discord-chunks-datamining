@@ -1,8 +1,8 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 934638, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,25 +13,25 @@ var Chunk54381 = require("./54381.js"),
   Chunk999382 = require("./999382.js"),
   Chunk388032 = require("./388032.jsx");
 
-function u(e) {
+function d(e) {
   let {
     profile: t,
     canManageGuild: n
-  } = e, u = t.id, g = i.useCallback(e => {
+  } = e, d = t.id, g = i.useCallback(e => {
     o.Z.updateGuild({
       description: e
-    }), o.Z.updateGuildProfile(u, {
+    }), o.Z.updateGuildProfile(d, {
       description: e
     })
-  }, [u]), f = (0, a.e7)([c.Z], () => c.Z.getError("description"));
-  return (0, r.jsx)(s.Kx8, {
-    label: d.intl.string(d.t.Z27SCb),
-    description: d.intl.string(d.t.pw0MIk),
+  }, [d]), m = (0, s.e7)([c.Z], () => c.Z.getError("description"));
+  return (0, r.jsx)(a.Kx8, {
+    label: u.intl.string(u.t.Z27SCb),
+    description: u.intl.string(u.t.pw0MIk),
     value: t.description,
-    placeholder: d.intl.string(d.t.Nvfowl),
+    placeholder: u.intl.string(u.t.Nvfowl),
     onChange: g,
     maxLength: l.Us,
     disabled: !n,
-    error: f
+    error: m
   })
 }

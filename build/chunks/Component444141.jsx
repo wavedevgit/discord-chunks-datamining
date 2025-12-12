@@ -1,7 +1,7 @@
 /** Chunk was on 93979 **/
 /** chunk id: 444141, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -31,7 +31,7 @@ function u(e) {
   return e
 }
 
-function f(e, n) {
+function m(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,55 +44,55 @@ function f(e, n) {
   }), e
 }
 
-function m(e) {
+function f(e) {
   let {
     user: n,
     guildId: t,
-    channelId: m,
+    channelId: f,
     displayProfile: p,
     onClose: x
   } = e, {
     analyticsLocations: h,
-    sourceAnalyticsLocations: b
+    sourceAnalyticsLocations: v
   } = (0, o.ZP)(), {
-    context: v,
-    trackUserProfileAction: j
-  } = (0, a.KZ)(), g = (0, s.ZP)(n.id, t);
-  return (null == g ? true : g.guildId) == null ? null : (null == p ? true : p.guildId) != null ? (0, l.jsx)(i.sNh, {
+    context: j,
+    trackUserProfileAction: g
+  } = (0, s.KZ)(), b = (0, c.ZP)(n.id, t);
+  return (null == b ? true : b.guildId) == null ? null : (null == p ? true : p.guildId) != null ? (0, l.jsx)(i.sNh, {
     id: "view-main-profile",
     label: d.intl.string(d.t.GISTta),
     subtext: d.intl.formatToPlainString(d.t["mn/nW2"], {
       displayName: r.ZP.getName(true, true, n)
     }),
     action: () => {
-      null == x || x(), (0, c.openUserProfileModal)(f(u({
+      null == x || x(), (0, a.openUserProfileModal)(m(u({
         userId: n.id,
         guildId: t
-      }, v), {
+      }, j), {
         showGuildProfile: false,
-        sourceAnalyticsLocations: b
-      })), j(u({
+        sourceAnalyticsLocations: v
+      })), g(u({
         action: "PRESS_VIEW_MAIN_PROFILE",
         analyticsLocations: h
-      }, v))
+      }, j))
     }
   }) : (0, l.jsx)(i.sNh, {
     id: "view-server-profile",
     label: d.intl.string(d.t.DisZzB),
     subtext: d.intl.formatToPlainString(d.t["mn/nW2"], {
-      displayName: r.ZP.getName(t, m, n)
+      displayName: r.ZP.getName(t, f, n)
     }),
     action: () => {
-      null == x || x(), (0, c.openUserProfileModal)(f(u({
+      null == x || x(), (0, a.openUserProfileModal)(m(u({
         userId: n.id,
         guildId: t
-      }, v), {
+      }, j), {
         showGuildProfile: true,
-        sourceAnalyticsLocations: b
-      })), j(u({
+        sourceAnalyticsLocations: v
+      })), g(u({
         action: "PRESS_VIEW_SERVER_PROFILE",
         analyticsLocations: h
-      }, v))
+      }, j))
     }
   })
 }

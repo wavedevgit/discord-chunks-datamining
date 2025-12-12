@@ -1,7 +1,7 @@
 /** Chunk was on 99014 **/
 /** chunk id: 271224, original params: e,t,o (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,32 +15,32 @@ var Chunk54381 = require("./54381.js"),
   Chunk880419 = require("./880419.jsx"),
   Chunk535396 = require("./535396.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk631159 = require("./631159.js"),
+  Chunk237963 = require("./237963.js"),
   Chunk942570 = require("./942570.js");
 
-function O(e) {
+function _(e) {
   var t, o, {
-      guildId: r,
-      powerup: O,
-      onClose: k
+      guildId: a,
+      powerup: _,
+      onClose: O
     } = e,
-    j = function(e, t) {
+    k = function(e, t) {
       if (null == e) return {};
-      var o, n, a = function(e, t) {
+      var o, n, r = function(e, t) {
         if (null == e) return {};
-        var o, n, a = {},
-          r = Object.keys(e);
-        for (n = 0; n < r.length; n++) o = r[n], t.indexOf(o) >= 0 || (a[o] = e[o]);
-        return a
+        var o, n, r = {},
+          a = Object.keys(e);
+        for (n = 0; n < a.length; n++) o = a[n], t.indexOf(o) >= 0 || (r[o] = e[o]);
+        return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < r.length; n++) o = r[n], !(t.indexOf(o) >= 0) && Object.prototype.propertyIsEnumerable.call(e, o) && (a[o] = e[o])
+        var a = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < a.length; n++) o = a[n], !(t.indexOf(o) >= 0) && Object.prototype.propertyIsEnumerable.call(e, o) && (r[o] = e[o])
       }
-      return a
+      return r
     }(e, ["guildId", "powerup", "onClose"]);
-  let [g, v] = a.useState(true), x = (0, d.ZP)(r, O), y = x.type === p.A3.TIER_OVERRIDE_ACTIVATED, C = (0, l.Z)(r), E = null == x.sourceEntitlement || !C;
-  return (0, i.$)(r, O, i.w.DETAIL), (0, n.jsxs)(s.Y0X, (t = function(e) {
+  let [j, g] = r.useState(true), v = (0, d.ZP)(a, _), x = v.type === b.A3.TIER_OVERRIDE_ACTIVATED, y = (0, l.Z)(a), C = null == v.sourceEntitlement || !y;
+  return (0, i.$)(a, _, i.w.DETAIL), (0, n.jsxs)(s.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var o = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(o);
@@ -61,7 +61,7 @@ function O(e) {
     "data-migration-pending": true,
     className: f.modal,
     size: s.CgR.DYNAMIC
-  }, j), o = o = {
+  }, k), o = o = {
     parentComponent: "GuildPowerupLevelModal",
     children: [(0, n.jsxs)(s.hzk, {
       "data-migration-pending": true,
@@ -75,26 +75,26 @@ function O(e) {
         className: f.contentContainer,
         children: [(0, n.jsx)(s.Heading, {
           variant: "heading-xl/extrabold",
-          children: O.title
+          children: _.title
         }), (0, n.jsx)(u.Z, {
-          powerup: O
-        }), null != g && (0, n.jsx)(s.Text, {
+          powerup: _
+        }), null != j && (0, n.jsx)(s.Text, {
           color: "status-danger",
           variant: "text-sm/semibold",
-          children: g
+          children: j
         }), (0, n.jsxs)("div", {
           className: c()(f.footer, {
-            [f.disabled]: E
+            [f.disabled]: C
           }),
-          children: [!y && C && (0, n.jsx)(b.Z, {
-            guildId: r,
-            powerup: O,
-            onError: v,
+          children: [!x && y && (0, n.jsx)(p.Z, {
+            guildId: a,
+            powerup: _,
+            onError: g,
             grow: false,
-            compact: !E
+            compact: !C
           }), (0, n.jsx)(s.Button, {
-            variant: E ? "secondary" : "primary",
-            onClick: k,
+            variant: C ? "secondary" : "primary",
+            onClick: O,
             text: m.intl.string(m.t.cpT0Cq)
           })]
         })]
@@ -102,7 +102,7 @@ function O(e) {
     }), (0, n.jsx)(s.olH, {
       "data-migration-pending": true,
       className: f.close,
-      onClick: k
+      onClick: O
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
     var o = Object.keys(e);

@@ -24,14 +24,14 @@ async function d(e) {
   let {
     openInteractionModal: t
   } = await n.e("31453").then(n.bind(n, 440934));
-  t(e), a.default.track(l.rMx.OPEN_MODAL, {
+  t(e), o.default.track(l.rMx.OPEN_MODAL, {
     type: "interaction_modal",
     application_id: e.application.id
   })
 }
 
 function f(e) {
-  (0, s.Z)(e), a.default.track(l.rMx.OPEN_MODAL, {
+  (0, s.Z)(e), o.default.track(l.rMx.OPEN_MODAL, {
     type: u,
     application_id: e.application.id
   })
@@ -41,12 +41,12 @@ function p(e) {
   let {
     application: t
   } = e, n = i.ZP.getIFrameModalApplicationId(), r = i.ZP.getIFrameModalKey();
-  t.id === n && null != n && (0, o.Z)(n, r)
+  t.id === n && null != n && (0, a.Z)(n, r)
 }
 
 function _(e, t) {
   let n = null != t ? Date.now() - t : true;
-  a.default.track(l.rMx.MODAL_DISMISSED, {
+  o.default.track(l.rMx.MODAL_DISMISSED, {
     type: u,
     application_id: e.applicationId,
     duration_open_ms: n

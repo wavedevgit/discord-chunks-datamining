@@ -1,4 +1,4 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 49941 **/
 /** chunk id: 683881, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk623132 = require("./623132.jsx"),
   Chunk778414 = require("./778414.jsx"),
   Chunk796483 = require("./796483.jsx"),
-  Chunk814855 = require("./814855.js");
+  Chunk707804 = require("./707804.js");
 
 function p(e) {
   var t;
@@ -21,19 +21,19 @@ function p(e) {
     scrollerRef: n
   } = e, {
     isDragging: p,
-    item: b,
-    sourceClientOffset: m
-  } = (0, a.f)(e => ({
+    item: m,
+    sourceClientOffset: b
+  } = (0, l.f)(e => ({
     isDragging: e.isDragging(),
     item: e.getItem(),
     sourceClientOffset: e.getSourceClientOffset()
-  })), h = (0, l.e7)([c.default], () => c.default.getCurrentUser()), y = (0, o.zPA)(), O = i.useMemo(() => {
-    if (null == h || null == b) return null;
+  })), h = (0, a.e7)([s.default], () => s.default.getCurrentUser()), y = (0, o.zPA)(), O = i.useMemo(() => {
+    if (null == h || null == m) return null;
     let {
       id: e,
       itemType: t,
       itemPreviewProps: n
-    } = b;
+    } = m;
     if ("WIDGET" === t && (null == n ? true : n.widget) != null) return (0, r.jsx)("div", {
       className: g.widgetPreview,
       children: (0, r.jsx)(d.Z, {
@@ -47,7 +47,7 @@ function p(e) {
         imageSrc: t,
         gameName: i
       } = n;
-      return (0, r.jsx)(s.Z, {
+      return (0, r.jsx)(c.Z, {
         className: g.gamePreview,
         imageSrc: t,
         gameName: i,
@@ -87,7 +87,7 @@ function p(e) {
       })
     }
     return null
-  }, [b, h]), v = i.useRef(null), j = i.useCallback(() => {
+  }, [m, h]), v = i.useRef(null), j = i.useCallback(() => {
     if (null == n.current) return;
     let e = n.current.getBoundingClientRect();
     v.current = {
@@ -101,7 +101,7 @@ function p(e) {
         return
       }
       null == v.current && j()
-    }, [p, j]), true !== p || null == m || null == O) return null;
+    }, [p, j]), true !== p || null == b || null == O) return null;
   null == v.current && j();
   let {
     x: x,
@@ -109,11 +109,11 @@ function p(e) {
   } = null != (t = v.current) ? t : {
     x: 0,
     y: 0
-  }, I = m.x - x - 60 * !!y, w = m.y - P;
+  }, _ = b.x - x - 60 * !!y, I = b.y - P;
   return (0, r.jsx)("div", {
     className: g.container,
     style: {
-      transform: "translate3d(".concat(I, "px, ").concat(w, "px, 0)")
+      transform: "translate3d(".concat(_, "px, ").concat(I, "px, 0)")
     },
     children: O
   })

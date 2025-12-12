@@ -2,12 +2,12 @@
 /** chunk id: 221503, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Q: () => a
+  Q: () => o
 });
 var Chunk668781 = require("./668781.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function o(e) {
   let {
     onConfirm: t
   } = e;

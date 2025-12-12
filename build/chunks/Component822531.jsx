@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 822531, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -18,10 +18,10 @@ let c = e => {
     application: n,
     loading: c
   } = (0, l.Z)(t.id, o.wW.GUILD_ROLE_SUBSCRIPTIONS);
-  return c ? (0, r.jsx)(i.$jN, {}) : null != n ? (0, r.jsx)(a.Z, {
+  return c ? (0, r.jsx)(i.$jN, {}) : null != n ? (0, r.jsx)(s.Z, {
     guildId: t.id,
     application: n
-  }) : (0, r.jsx)(s.Z, {
+  }) : (0, r.jsx)(a.Z, {
     guild: t
   })
 }

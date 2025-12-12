@@ -10,16 +10,16 @@ var Chunk639119 = require("./639119.js"),
   Chunk947390 = require("./947390.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk356961 = require("./356961.js");
+  Chunk987410 = require("./987410.js");
 let c = e => {
   let {
     discountAmount: t
-  } = e, n = (0, i.N)(), c = null != n && n.trial_id === o.a7, u = s.intl.string(s.t.IBYG5U);
+  } = e, n = (0, i.N)(), c = null != n && n.trial_id === a.a7, u = s.intl.string(s.t.IBYG5U);
   return true !== t ? u = s.intl.formatToPlainString(s.t.iiLbvu, {
     percent: t
   }) : c && (u = s.intl.string(s.t.gtNqJQ)), (0, r.jsx)("div", {
     className: l.badgeContainer,
-    children: (0, r.jsx)(a.E, {
+    children: (0, r.jsx)(o.E, {
       text: u
     })
   })

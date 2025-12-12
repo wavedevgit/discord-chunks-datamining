@@ -3,8 +3,8 @@
 "use strict";
 var Chunk72689 = require("./72689.js"),
   i = Object.prototype.hasOwnProperty,
-  a = Array.isArray,
-  o = function() {
+  o = Array.isArray,
+  a = function() {
     for (var e = [], t = 0; exports < 256; ++exports) module.push("%" + ((exports < 16 ? "0" : "") + exports.toString(16)).toUpperCase());
     return module
   }(),
@@ -12,7 +12,7 @@ var Chunk72689 = require("./72689.js"),
     for (; e.length > 1;) {
       var t = e.pop(),
         n = t.obj[t.prop];
-      if (a(n)) {
+      if (o(n)) {
         for (var r = [], i = 0; i < n.length; ++i) true !== n[i] && r.push(n[i]);
         t.obj[t.prop] = r
       }
@@ -27,7 +27,7 @@ var Chunk72689 = require("./72689.js"),
   c = function e(t, n, r) {
     if (!n) return t;
     if ("object" != typeof n && "function" != typeof n) {
-      if (a(t)) t.push(n);
+      if (o(t)) t.push(n);
       else {
         if (!t || "object" != typeof t) return [t, n];
         (r && (r.plainObjects || r.allowPrototypes) || !i.call(Object.prototype, n)) && (t[n] = true)
@@ -35,16 +35,16 @@ var Chunk72689 = require("./72689.js"),
       return t
     }
     if (!t || "object" != typeof t) return [t].concat(n);
-    var o = t;
-    return (a(t) && !a(n) && (o = l(t, r)), a(t) && a(n)) ? (n.forEach(function(n, a) {
-      if (i.call(t, a)) {
-        var o = t[a];
-        o && "object" == typeof o && n && "object" == typeof n ? t[a] = e(o, n, r) : t.push(n)
-      } else t[a] = n
-    }), t) : Object.keys(n).reduce(function(t, a) {
-      var o = n[a];
-      return i.call(t, a) ? t[a] = e(t[a], o, r) : t[a] = o, t
-    }, o)
+    var a = t;
+    return (o(t) && !o(n) && (a = l(t, r)), o(t) && o(n)) ? (n.forEach(function(n, o) {
+      if (i.call(t, o)) {
+        var a = t[o];
+        a && "object" == typeof a && n && "object" == typeof n ? t[o] = e(a, n, r) : t.push(n)
+      } else t[o] = n
+    }), t) : Object.keys(n).reduce(function(t, o) {
+      var a = n[o];
+      return i.call(t, o) ? t[o] = e(t[o], a, r) : t[o] = a, t
+    }, a)
   },
   u = 1024;
 module.exports = {
@@ -64,11 +64,11 @@ module.exports = {
         },
         prop: "o"
       }], n = [], r = 0; r < t.length; ++r)
-      for (var i = t[r], a = i.obj[i.prop], o = Object.keys(a), l = 0; l < o.length; ++l) {
-        var c = o[l],
-          u = a[c];
+      for (var i = t[r], o = i.obj[i.prop], a = Object.keys(o), l = 0; l < a.length; ++l) {
+        var c = a[l],
+          u = o[c];
         "object" == typeof u && null !== u && false === n.indexOf(u) && (t.push({
-          obj: a,
+          obj: o,
           prop: c
         }), n.push(u))
       }
@@ -83,7 +83,7 @@ module.exports = {
       return r
     }
   },
-  encode: function(e, t, n, i, a) {
+  encode: function(e, t, n, i, o) {
     if (0 === e.length) return e;
     var s = e;
     if ("symbol" == typeof e ? s = Symbol.prototype.toString.call(e) : "string" != typeof e && (s = String(e)), "iso-8859-1" === n) return escape(s).replace(/%u[0-9a-f]{4}/gi, function(e) {
@@ -92,23 +92,23 @@ module.exports = {
     for (var l = "", c = 0; c < s.length; c += u) {
       for (var d = s.length >= u ? s.slice(c, c + u) : s, f = [], p = 0; p < d.length; ++p) {
         var _ = d.charCodeAt(p);
-        if (45 === _ || 46 === _ || 95 === _ || 126 === _ || _ >= 48 && _ <= 57 || _ >= 65 && _ <= 90 || _ >= 97 && _ <= 122 || a === r.RFC1738 && (40 === _ || 41 === _)) {
+        if (45 === _ || 46 === _ || 95 === _ || 126 === _ || _ >= 48 && _ <= 57 || _ >= 65 && _ <= 90 || _ >= 97 && _ <= 122 || o === r.RFC1738 && (40 === _ || 41 === _)) {
           f[f.length] = d.charAt(p);
           continue
         }
         if (_ < 128) {
-          f[f.length] = o[_];
+          f[f.length] = a[_];
           continue
         }
         if (_ < 2048) {
-          f[f.length] = o[192 | _ >> 6] + o[128 | 63 & _];
+          f[f.length] = a[192 | _ >> 6] + a[128 | 63 & _];
           continue
         }
         if (_ < 55296 || _ >= 57344) {
-          f[f.length] = o[224 | _ >> 12] + o[128 | _ >> 6 & 63] + o[128 | 63 & _];
+          f[f.length] = a[224 | _ >> 12] + a[128 | _ >> 6 & 63] + a[128 | 63 & _];
           continue
         }
-        p += 1, _ = 65536 + ((1023 & _) << 10 | 1023 & d.charCodeAt(p)), f[f.length] = o[240 | _ >> 18] + o[128 | _ >> 12 & 63] + o[128 | _ >> 6 & 63] + o[128 | 63 & _]
+        p += 1, _ = 65536 + ((1023 & _) << 10 | 1023 & d.charCodeAt(p)), f[f.length] = a[240 | _ >> 18] + a[128 | _ >> 12 & 63] + a[128 | _ >> 6 & 63] + a[128 | 63 & _]
       }
       l += f.join("")
     }
@@ -121,7 +121,7 @@ module.exports = {
     return "[object RegExp]" === Object.prototype.toString.call(e)
   },
   maybeMap: function(e, t) {
-    if (a(e)) {
+    if (o(e)) {
       for (var n = [], r = 0; r < e.length; r += 1) n.push(t(e[r]));
       return n
     }

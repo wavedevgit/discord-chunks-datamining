@@ -2,15 +2,15 @@
 /** chunk id: 410747, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => o
 });
 var Chunk822632 = require("./822632.js");
 let i = [6, 7, 99],
-  a = {
-    get: o
+  o = {
+    get: a
   };
 
-function o(e, t, n) {
+function a(e, t, n) {
   if (s(t)) {
     t.type = "image/jpeg";
     let i = n + t.JPEGInterchangeFormat.value;

@@ -31,7 +31,7 @@ function c() {
     i.Z.dispatch({
       type: "LOAD_USER_AFFINITIES_V2_SUCCESS",
       affineUsers: n.user_affinities.map(e => {
-        var t, n, r, i, a, o, s, l;
+        var t, n, r, i, o, a, s, l;
         return {
           otherUserId: e.other_user_id,
           userSegment: e.user_segment,
@@ -41,8 +41,8 @@ function c() {
           dmRank: null != (n = e.dm_rank) ? n : 0,
           vcProbability: null != (r = e.vc_probability) ? r : 0,
           vcRank: null != (i = e.vc_rank) ? i : 0,
-          serverMessageProbability: null != (a = e.server_message_probability) ? a : 0,
-          serverMessageRank: null != (o = e.server_message_rank) ? o : 0,
+          serverMessageProbability: null != (o = e.server_message_probability) ? o : 0,
+          serverMessageRank: null != (a = e.server_message_rank) ? a : 0,
           communicationProbability: null != (s = e.communication_probability) ? s : 0,
           communicationRank: null != (l = e.communication_rank) ? l : 0
         }

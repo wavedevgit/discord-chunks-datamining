@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk780384 = require("./780384.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk648613 = require("./648613.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk558585 = require("./558585.js");
+  Chunk827154 = require("./827154.js");
 let _ = e => e === d.Si.TIER_0 ? f.intl.string(f.t.rk4Uu8) : f.intl.string(f.t.Ve9Ge6),
   m = e => {
     let {
@@ -44,16 +44,16 @@ let _ = e => e === d.Si.TIER_0 ? f.intl.string(f.t.rk4Uu8) : f.intl.string(f.t.V
         return (0, r.jsxs)(s.zx, {
           "data-migration-pending": true,
           innerClassName: p.innerGiftButton,
-          color: null != i ? i : (0, o.wj)(b) ? s.Tt.WHITE : s.Tt.BRAND,
+          color: null != i ? i : (0, a.wj)(b) ? s.Tt.WHITE : s.Tt.BRAND,
           look: null != d ? d : s.iL.OUTLINED,
-          className: a()(t, p.giftButton),
+          className: o()(t, p.giftButton),
           onClick: u,
           children: [!f && (0, r.jsx)(l.OgN, {
             size: "md",
             color: "currentColor",
             className: p.giftIcon
           }), (0, r.jsx)("span", {
-            className: a()(p.buttonText, null == n ? true : n.textClassName),
+            className: o()(p.buttonText, null == n ? true : n.textClassName),
             children: null != (c = null == n ? true : n.textOverride) ? c : y
           })]
         })

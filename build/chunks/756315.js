@@ -100,7 +100,7 @@ class p {
       let {
         resolution: e,
         fps: t
-      } = a.Z.getState();
+      } = o.Z.getState();
       this._streamSettingsChanged = e !== this._targetResolution || t !== this._targetFPS
     }), this._isSender = t, this._statInterval = new i.Xp, this._lastLayout = e, this._layoutBuckets = {}
   }

@@ -11,7 +11,7 @@ var r, Chunk54381 = require("./54381.js"),
   s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk112724 = require("./112724.jsx"),
-  Chunk428414 = require("./428414.js");
+  Chunk582235 = require("./582235.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,9 +73,9 @@ class y extends(r = Chunk473749.Component) {
       animate: n,
       currentIndex: r,
       items: i,
-      width: a
-    } = this.props, o = b(r, i.length), s = b(e.currentIndex, i.length);
-    (o !== s || i.length !== e.items.length) && this.updateAnimatedIndex(o, s), a !== e.width ? this.animatedAlignmentOffset.setValue(this.getAlignmentOffset(t)) : n && (t !== e.align || o !== s) && l.Z.spring(this.animatedAlignmentOffset, _(f({}, m), {
+      width: o
+    } = this.props, a = b(r, i.length), s = b(e.currentIndex, i.length);
+    (a !== s || i.length !== e.items.length) && this.updateAnimatedIndex(a, s), o !== e.width ? this.animatedAlignmentOffset.setValue(this.getAlignmentOffset(t)) : n && (t !== e.align || a !== s) && l.Z.spring(this.animatedAlignmentOffset, _(f({}, m), {
       toValue: this.getAlignmentOffset(t)
     })).start()
   }
@@ -85,9 +85,9 @@ class y extends(r = Chunk473749.Component) {
       itemSize: n,
       currentIndex: r,
       gutter: i,
-      items: a
-    } = this.props, o = i * b(r, a.length) * 2;
-    return e === g ? (t - n.width) / 2 + o : e === E ? t - n.width - i + o : i + o
+      items: o
+    } = this.props, a = i * b(r, o.length) * 2;
+    return e === g ? (t - n.width) / 2 + a : e === E ? t - n.width - i + a : i + a
   }
   getCarouselTranslate() {
     let {
@@ -134,9 +134,9 @@ class y extends(r = Chunk473749.Component) {
       className: r
     } = this.props;
     return (0, Chunk54381.jsx)("div", {
-      className: s()(Chunk428414.singleItemWrapper, Chunk428414.viewport, r),
+      className: s()(Chunk582235.singleItemWrapper, Chunk582235.viewport, r),
       children: (0, Chunk54381.jsx)("div", {
-        className: Chunk428414.singleItem,
+        className: Chunk582235.singleItem,
         style: {
           width: require.width,
           height: require.height
@@ -152,8 +152,8 @@ class y extends(r = Chunk473749.Component) {
         animatedOpacity: r
       } = this,
       {
-        renderItem: a,
-        items: o,
+        renderItem: o,
+        items: a,
         itemSize: s,
         edgeItems: c,
         gutter: d
@@ -167,10 +167,10 @@ class y extends(r = Chunk473749.Component) {
       h = (e = Chunk112724 > 0 ? [...Chunk120356.slice(-Chunk112724), ...Chunk120356, ...Chunk120356.slice(0, Chunk112724)] : Chunk120356).map((e, t) => (0, i.jsx)("div", {
         style: m,
         className: u.item,
-        children: a(e, t - c, this.interpolateValueForItem(t - c))
+        children: o(e, t - c, this.interpolateValueForItem(t - c))
       }, t));
     return (0, Chunk54381.jsx)(Chunk748780.Z.div, {
-      className: Chunk428414.carousel,
+      className: Chunk582235.carousel,
       style: {
         opacity: r,
         left: Chunk748780.Z.add(exports.interpolate({
@@ -190,7 +190,7 @@ class y extends(r = Chunk473749.Component) {
     if (module.length <= 0) throw Error("Carousel has no items");
     return 1 === module.length ? this.renderSingleItem() : (0, Chunk54381.jsx)("div", {
       className: s()({
-        [Chunk428414.viewport]: require
+        [Chunk582235.viewport]: require
       }, exports),
       children: this.renderCarouselItems()
     })

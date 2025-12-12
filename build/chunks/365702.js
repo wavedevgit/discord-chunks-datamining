@@ -29,9 +29,9 @@ module.exports = function(e) {
     var r = this.getAnchorKey(),
       i = this.getFocusKey();
     if (r === i && r === e) {
-      var a = this.getStartOffset(),
-        o = this.getEndOffset();
-      return t <= a && a <= n || t <= o && o <= n
+      var o = this.getStartOffset(),
+        a = this.getEndOffset();
+      return t <= o && o <= n || t <= a && a <= n
     }
     if (e !== r && e !== i) returnfalse;
     var s = e === r ? this.getAnchorOffset() : this.getFocusOffset();

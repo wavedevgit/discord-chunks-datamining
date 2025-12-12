@@ -2,7 +2,7 @@
 /** chunk id: 290926, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Al: () => a,
+  Al: () => o,
   BR: () => i
 }), require("./388685.js");
 let r = {
@@ -12,7 +12,7 @@ let r = {
     DARKER: "darker"
   },
   i = r,
-  a = new Map([
+  o = new Map([
     [r.MIDNIGHT, r.DARK],
     [r.DARKER, r.DARK]
   ])

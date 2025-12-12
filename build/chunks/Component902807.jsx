@@ -1,4 +1,4 @@
-/** Chunk was on 9536 **/
+/** Chunk was on 384 **/
 /** chunk id: 902807, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -7,11 +7,11 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk673583 = require("./673583.js");
-class d extends Chunk473749.Component {
+  Chunk152406 = require("./152406.js");
+class u extends Chunk473749.Component {
   render() {
     var e, t;
     let n = this.props,
@@ -66,14 +66,14 @@ class d extends Chunk473749.Component {
     }), module))
   }
 }
-let u = (0, Chunk467721.animated)(d),
+let d = (0, Chunk467721.animated)(u),
   g = function(e) {
     let {
       className: t,
       name: n,
       icon: i,
       iconClassName: l
-    } = e, s = (0, o.Yzy)({
+    } = e, a = (0, o.Yzy)({
       name: n,
       icon: i,
       iconClassName: l
@@ -91,15 +91,15 @@ let u = (0, Chunk467721.animated)(d),
       }
     }, "animate-always");
     return (0, r.jsx)("div", {
-      className: a()(c.crossfade, t),
-      children: s((e, t) => {
+      className: s()(c.crossfade, t),
+      children: a((e, t) => {
         let {
           icon: n,
           iconClassName: i
         } = t;
-        return (0, r.jsx)(u, {
+        return (0, r.jsx)(d, {
           icon: n,
-          className: a()(c.icon, i),
+          className: s()(c.icon, i),
           style: e
         })
       })

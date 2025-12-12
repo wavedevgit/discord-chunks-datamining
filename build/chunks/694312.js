@@ -15,12 +15,12 @@ var Chunk473749 = require("./473749.js"),
   Chunk761122 = require("./761122.js");
 
 function f(e) {
-  let t = (0, i.e7)([o.default], o.default.getCurrentUser),
+  let t = (0, i.e7)([a.default], a.default.getCurrentUser),
     n = (0, i.Wu)([u.ZP], () => u.ZP.getShelfActivities(e)),
     f = (0, i.e7)([s.Z], () => s.Z.testModeEmbeddedApplicationId),
     p = n.map(e => e.application_id),
     _ = null != f ? [f, ...p] : p,
-    m = (0, a.Z)(_),
+    m = (0, o.Z)(_),
     h = r.useMemo(() => m.filter(l.lm), [m]),
     g = r.useMemo(() => null != f && h.length > 0 && h[0].id === f && null != h[0].embeddedActivityConfig ? [{
       activity: h[0].embeddedActivityConfig,

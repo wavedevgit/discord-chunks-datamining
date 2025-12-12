@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk482617 = require("./482617.js"),
   Chunk883166 = require("./883166.jsx"),
   Chunk612776 = require("./612776.js"),
-  Chunk675830 = require("./675830.js");
+  Chunk916018 = require("./916018.js");
 let g = {
   [Chunk612776.yD.WELCOME]: "Entry",
   [Chunk612776.yD.MESSAGES]: "Messages",
@@ -35,9 +35,9 @@ function E(e) {
   let {
     slide: t,
     className: n
-  } = e, a = i.useContext(f.Q), _ = (0, p.Z)((0, c.dQu)(a.primaryColor).hex()), m = (0, d.a7)(_), E = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
+  } = e, o = i.useContext(f.Q), _ = (0, p.Z)((0, c.dQu)(o.primaryColor).hex()), m = (0, d.a7)(_), E = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
   return (0, r.jsx)("div", {
-    className: o()(h.container, n),
+    className: a()(h.container, n),
     children: (0, r.jsx)(s.xKG, {
       artboard: g[t],
       dataBinding: {

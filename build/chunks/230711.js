@@ -54,26 +54,26 @@ let f = {
   setSection(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
       n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
-    a.Z.dispatch(d({
+    o.Z.dispatch(d({
       type: "USER_SETTINGS_MODAL_SET_SECTION",
       section: e,
       subsection: t
     }, n))
   },
   clearSubsection(e) {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "USER_SETTINGS_MODAL_CLEAR_SUBSECTION",
       forSection: e
     })
   },
   clearScrollPosition(e) {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "USER_SETTINGS_MODAL_CLEAR_SCROLL_POSITION",
       forSection: e
     })
   },
   updateAccount(e) {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "USER_SETTINGS_MODAL_UPDATE_ACCOUNT",
       settings: e
     })
@@ -89,7 +89,7 @@ let f = {
     })
   },
   saveAccountChanges(e, t) {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "USER_SETTINGS_MODAL_SUBMIT"
     });
     let {
@@ -121,24 +121,24 @@ let f = {
     }).then(e => {
       let t = e.body,
         n = t.token;
-      return delete t.token, a.Z.dispatch({
+      return delete t.token, o.Z.dispatch({
         type: "UPDATE_TOKEN",
         token: n,
         userId: t.id
-      }), a.Z.dispatch({
+      }), o.Z.dispatch({
         type: "CURRENT_USER_UPDATE",
         user: t
-      }), true !== f && (0, o.Z)({
+      }), true !== f && (0, a.Z)({
         avatarHash: t.avatar
-      }), null != p && a.Z.dispatch({
+      }), null != p && o.Z.dispatch({
         type: "USER_PASSWORD_UPDATE",
         user: t,
         newPassword: p
-      }), null != d && null != p && a.Z.dispatch({
+      }), null != d && null != p && o.Z.dispatch({
         type: "PASSWORD_UPDATED",
         userId: t.id
       }), m ? this.close() : this.submitComplete(), e
-    }, e => (a.Z.dispatch({
+    }, e => (o.Z.dispatch({
       type: "USER_SETTINGS_MODAL_SUBMIT_FAILURE",
       errors: e.body
     }), e))

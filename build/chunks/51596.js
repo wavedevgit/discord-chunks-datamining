@@ -106,14 +106,14 @@ function U(e, t) {
     results: n,
     queryMode: r,
     query: i,
-    maxQueryLength: a
-  } = C.Z.getProps(), o = v.Z.getGuildId(), s = O.Z.getChannelId(o), l = n[(0, d.gJ)(d.a8.DOWN, false, n)], c = T.Z.isEmail(i), u = T.Z.isPhoneNumber(i), f = T.Z.isUserTagLike(i), p = null != s && (0, N.AB)(s), _ = e => null == e ? null : e.type === d.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, m = {
+    maxQueryLength: o
+  } = C.Z.getProps(), a = v.Z.getGuildId(), s = O.Z.getChannelId(a), l = n[(0, d.gJ)(d.a8.DOWN, false, n)], c = T.Z.isEmail(i), u = T.Z.isPhoneNumber(i), f = T.Z.isUserTagLike(i), p = null != s && (0, N.AB)(s), _ = e => null == e ? null : e.type === d.h8.IN_APP_NAVIGATION ? e.type + "_" + e.record.type : e.type, m = {
     current_channel_id: p ? true : s,
     current_channel_static_route: p ? s : true,
-    current_guild_id: o,
+    current_guild_id: a,
     query_mode: null != r ? r : "GENERAL",
     query_length: i.length,
-    max_query_length: a,
+    max_query_length: o,
     is_email_like: c,
     is_phone_like: u,
     is_username_like: f,
@@ -215,7 +215,7 @@ function Y(e) {
       });
       break;
     case d.h8.VOICE_CHANNEL:
-      null != (t = b.Z.getChannel(v.id)) && (E ? o.Z.updateChatOpen(v.id, true) : c.default.selectVoiceChannel(v.id), (0, m.Kh)(t.id, {
+      null != (t = b.Z.getChannel(v.id)) && (E ? a.Z.updateChatOpen(v.id, true) : c.default.selectVoiceChannel(v.id), (0, m.Kh)(t.id, {
         state: {
           analyticsSource: S
         },
@@ -223,7 +223,7 @@ function Y(e) {
       }));
       break;
     case d.h8.USER:
-      a.Z.openPrivateChannel({
+      o.Z.openPrivateChannel({
         recipientIds: [v.id],
         location: "Quickswitcher"
       }), s.Z.channelListScrollTo(A.ME, b.Z.getDMFromUserId(v.id));

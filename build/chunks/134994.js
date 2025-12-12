@@ -10,12 +10,12 @@ function i(e) {
   return e instanceof Uint8Array || null != e && "object" == typeof e && "Uint8Array" === e.constructor.name
 }
 
-function a(e, ...t) {
+function o(e, ...t) {
   if (!i(e)) throw Error("Uint8Array expected");
   if (t.length > 0 && !t.includes(e.length)) throw Error(`Uint8Array expected of length ${t}, not of length=${e.length}`)
 }
 
-function o(e) {
+function a(e) {
   if ("function" != typeof e || "function" != typeof e.create) throw Error("Hash should be wrapped by utils.wrapConstructor");
   r(e.outputLen), r(e.blockLen)
 }
@@ -26,7 +26,7 @@ function s(e, t = true) {
 }
 
 function l(e, t) {
-  a(e);
+  o(e);
   let n = t.outputLen;
   if (e.length < n) throw Error(`digestInto() expects output buffer of length at least ${n}`)
 }
@@ -34,6 +34,6 @@ require.d(exports, {
   Gg: () => s,
   J8: () => l,
   Rx: () => r,
-  aI: () => a,
-  vp: () => o
+  aI: () => o,
+  vp: () => a
 })

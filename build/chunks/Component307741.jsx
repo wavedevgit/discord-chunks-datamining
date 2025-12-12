@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk168524 = require("./168524.js"),
   Chunk715318 = require("./715318.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk158859 = require("./158859.js");
+  Chunk488463 = require("./488463.js");
 
 function O(e) {
   let {
@@ -80,8 +80,8 @@ function S(e) {
   var t;
   let {
     application: n,
-    detectedGame: a
-  } = e, o = i.useMemo(() => null == a ? true : a.genres.map(m.P3).join(", "), [a]), l = null != (t = a.name) ? t : null == n ? true : n.name;
+    detectedGame: o
+  } = e, a = i.useMemo(() => null == o ? true : o.genres.map(m.P3).join(", "), [o]), l = null != (t = o.name) ? t : null == n ? true : n.name;
   return (0, r.jsxs)("div", {
     className: y.headingContainer,
     children: [(0, r.jsx)(s.X6q, {
@@ -91,7 +91,7 @@ function S(e) {
     }), (0, r.jsx)(s.xvT, {
       variant: "text-xs/medium",
       color: "text-subtle",
-      children: o
+      children: a
     })]
   })
 }
@@ -133,18 +133,18 @@ function I(e) {
 function T(e) {
   let {
     application: t
-  } = e, n = (0, l.e7)([p.Z], () => p.Z.getMute(t.id)), a = i.useMemo(() => n ? b.intl.string(b.t.tpvw4T) : b.intl.string(b.t["6EwEwp"]), [n]);
+  } = e, n = (0, l.e7)([p.Z], () => p.Z.getMute(t.id)), o = i.useMemo(() => n ? b.intl.string(b.t.tpvw4T) : b.intl.string(b.t["6EwEwp"]), [n]);
   return (0, r.jsxs)("div", {
     className: y.actionButtonsContainer,
     children: [(0, r.jsx)(c.u, {
       asContainer: true,
       tag: "span",
-      text: a,
-      "aria-label": a,
+      text: o,
+      "aria-label": o,
       delay: 750,
       children: (0, r.jsx)(u.P3F, {
         className: y.actionButton,
-        "aria-label": a,
+        "aria-label": o,
         onClick: () => {
           (0, d.Eq)({
             gameName: t.name,
@@ -172,7 +172,7 @@ function C(e) {
   let {
     application: t,
     detectedGame: n,
-    className: a,
+    className: o,
     onClose: s
   } = e, l = (0, g.Z)({
     location: "MiniGameProfile",
@@ -184,7 +184,7 @@ function C(e) {
     null == s || s(), null == l || l(e)
   }, [s, l]);
   return (0, r.jsxs)("div", {
-    className: o()(y.container, a),
+    className: a()(y.container, o),
     children: [(0, r.jsx)(O, {
       detectedGame: n
     }), (0, r.jsx)(T, {

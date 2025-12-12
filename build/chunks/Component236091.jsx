@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 7891 **/
 /** chunk id: 236091, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk341569 = require("./341569.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk339012 = require("./339012.js");
+  Chunk363862 = require("./363862.js");
 let g = e => {
   let {
     channelId: t
@@ -25,9 +25,9 @@ let g = e => {
     if (null == t) returnfalse;
     let n = u.Z.getCurrentUserActiveStream(),
       i = null == (e = c.ZP.getVisibleGame()) ? true : e.windowHandle;
-    return !!(null != n && (0, p.LI)() || null != i && (0, p.CY)()) || s.Z.getParticipants(t).some(e => e.type === f.fO.USER && d.Z.isClipsEnabledForUser(e.user.id))
+    return !!(null != n && (0, p.LI)() || null != i && (0, p.CY)()) || s.Z.getParticipants(t).some(e => e.type === h.fO.USER && d.Z.isClipsEnabledForUser(e.user.id))
   }) ? (0, i.jsx)(a.u, {
-    text: h.intl.string(h.t.DJXW3G),
+    text: f.intl.string(f.t.DJXW3G),
     children: (0, i.jsxs)("div", {
       className: m.clipsEnabledIndicator,
       children: [(0, i.jsx)(o.G2e, {
@@ -36,7 +36,7 @@ let g = e => {
         color: l.Z.unsafe_rawColors.PRIMARY_500.css,
         className: m.clipBadgeIcon
       }), (0, i.jsx)(o.IGR, {
-        text: h.intl.string(h.t.pCMkDb),
+        text: f.intl.string(f.t.pCMkDb),
         shape: o.Dv2.ROUND_RIGHT,
         color: l.Z.unsafe_rawColors.PRIMARY_500.css,
         className: m.clipBadgeText

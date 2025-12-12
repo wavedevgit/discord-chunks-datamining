@@ -45,7 +45,7 @@ function p(e) {
 function _(e) {
   c.error("Failed to execute smoke test:", e);
   let t = p(e);
-  o.default.track(l.rMx.LIBDISCORE_LOADED, {
+  a.default.track(l.rMx.LIBDISCORE_LOADED, {
     success: false,
     error: t
   })

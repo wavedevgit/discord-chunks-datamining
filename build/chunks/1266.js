@@ -8,7 +8,7 @@ var Chunk48657 = require("./48657.js"),
   s = function(e) {
     var t = 1 === e;
     return function(n, s, l) {
-      for (var c, u = a(n), d = i(u), f = o(d), p = r(s, l); f-- > 0;)
+      for (var c, u = o(n), d = i(u), f = a(d), p = r(s, l); f-- > 0;)
         if (p(c = d[f], f, u)) switch (e) {
           case 0:
             return c;

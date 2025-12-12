@@ -57,30 +57,30 @@ function v(e) {
       shortcut: i,
       delay: c,
       pttLatchingEnabled: E
-    } = (0, a.cj)([u.Z], () => u.Z.getModeOptions()),
+    } = (0, o.cj)([u.Z], () => u.Z.getModeOptions()),
     {
       enableLatching: b
     } = (0, f.H)({
       location: "PTTTools"
     });
-  return t = d.isPlatformEmbedded || n !== h.pM4.PUSH_TO_TALK ? (0, r.jsx)(o.Wn, {
-    messageType: o.QYI.INFO,
+  return t = d.isPlatformEmbedded || n !== h.pM4.PUSH_TO_TALK ? (0, r.jsx)(a.Wn, {
+    messageType: a.QYI.INFO,
     children: g.intl.format(g.t.HVvn5T, {
       onClick: () => (0, _.openUserSettings)(p.n.KEYBINDS_PANEL, {
         section: h.oAB.KEYBINDS
       })
     })
-  }) : (0, r.jsx)(o.Wn, {
-    messageType: o.QYI.WARNING,
+  }) : (0, r.jsx)(a.Wn, {
+    messageType: a.QYI.WARNING,
     children: g.intl.format(g.t.zvMPOc, {
       onDownloadClick: () => (0, m.y)("Help Text PTT")
     })
-  }), (0, r.jsxs)(o.Kqy, {
+  }), (0, r.jsxs)(a.Kqy, {
     gap: 20,
-    children: [(0, r.jsxs)(o.Kqy, {
+    children: [(0, r.jsxs)(a.Kqy, {
       gap: 16,
       direction: "horizontal",
-      children: [(0, r.jsx)(o.gNt, {
+      children: [(0, r.jsx)(a.gNt, {
         label: g.intl.string(g.t.YkDjVM),
         children: (0, r.jsx)(l.Z, {
           defaultValue: i,
@@ -88,7 +88,7 @@ function v(e) {
             shortcut: e
           })
         })
-      }), (0, r.jsx)(o.iRW, {
+      }), (0, r.jsx)(a.iRW, {
         label: g.intl.string(g.t.y0ShVt),
         initialValue: c,
         onValueChange: e => s.Z.setMode(n, {
@@ -97,7 +97,7 @@ function v(e) {
         onValueRender: O,
         maxValue: h.qhL
       })]
-    }), b && (0, r.jsx)(o.rsf, {
+    }), b && (0, r.jsx)(a.rsf, {
       label: g.intl.string(g.t.EGn1eN),
       description: g.intl.string(g.t.iT257i),
       checked: null != E && E,
@@ -109,7 +109,7 @@ function v(e) {
 }
 
 function S(e, t) {
-  e === h.pM4.PUSH_TO_TALK && y && (0, o.ZDy)(async () => {
+  e === h.pM4.PUSH_TO_TALK && y && (0, a.ZDy)(async () => {
     let {
       default: e
     } = await n.e("84112").then(n.bind(n, 273352));

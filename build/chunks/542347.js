@@ -24,7 +24,7 @@ var Chunk754700 = require("./754700.js"),
 
 function p(e, t) {
   var n, r;
-  (0, c.zi)(e) || (null == (n = e.userStatus) ? true : n.enrolledAt) == null || (null == (r = e.userStatus) ? true : r.completedAt) != null || (0, a.cT)(e.id, t)
+  (0, c.zi)(e) || (null == (n = e.userStatus) ? true : n.enrolledAt) == null || (null == (r = e.userStatus) ? true : r.completedAt) != null || (0, o.cT)(e.id, t)
 }
 let _ = "landscape";
 
@@ -53,14 +53,14 @@ function b(e) {
   var t, n;
   let {
     questId: r,
-    sourceQuestContent: a,
+    sourceQuestContent: o,
     videoSessionId: c
   } = e, u = l.ZP.getState().getVideoProgress(r);
   if (null == u) return;
   let f = s.Z.getQuest(r);
   null != f && (null == (t = f.userStatus) ? true : t.enrolledAt) != null && (null == (n = f.userStatus) ? true : n.completedAt) == null && p(f, u.maxTimestampSec);
   let _ = g(u.maxTimestampSec, u.duration);
-  (0, o.dA)({
+  (0, a.dA)({
     questId: r,
     event: d.rMx.QUEST_VIDEO_PROGRESSED,
     properties: {
@@ -68,8 +68,8 @@ function b(e) {
       video_timestamp_seconds: u.maxTimestampSec,
       video_session_id: c
     },
-    sourceQuestContent: a
-  }), (0, o.dA)({
+    sourceQuestContent: o
+  }), (0, a.dA)({
     questId: r,
     event: d.rMx.QUEST_VIDEO_MODAL_CLOSED,
     properties: {
@@ -77,7 +77,7 @@ function b(e) {
       video_session_id: c,
       network_connection_speed: i.Z.getEffectiveConnectionSpeed()
     },
-    sourceQuestContent: a
+    sourceQuestContent: o
   })
 }
 

@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk190054 = require("./190054.jsx"),
   Chunk760373 = require("./760373.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk979519 = require("./979519.js");
+  Chunk547990 = require("./547990.js");
 let j = function(e) {
   var t, r;
   let {
@@ -31,15 +31,15 @@ let j = function(e) {
     fingerprintBase64: v,
     chunkSize: b.y6,
     desiredLength: b.YP
-  }), P = c.useCallback(() => {
+  }), P = o.useCallback(() => {
     (0, a.ih)({
       channelId: g
     })
-  }, [g]), w = {
+  }, [g]), _ = {
     transitionState: j,
     title: O.intl.string(O.t.QogHld),
     subtitle: O.intl.string(O.t.qODBkW)
-  }, T = (0, n.jsxs)(n.Fragment, {
+  }, w = (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)("div", {
       className: y.verification,
       children: [(0, n.jsxs)("div", {
@@ -68,7 +68,7 @@ let j = function(e) {
       })
     })]
   });
-  return (0, n.jsx)(o.Modal, (t = function(e) {
+  return (0, n.jsx)(c.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -85,10 +85,10 @@ let j = function(e) {
       })
     }
     return e
-  }({}, w), r = r = {
+  }({}, _), r = r = {
     onClose: m,
     actions: [],
-    children: T
+    children: w
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

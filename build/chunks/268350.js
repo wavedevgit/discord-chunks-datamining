@@ -76,7 +76,7 @@ let S = async (e, t) => {
     url: h.ANM.STICKER_PACK(e),
     rejectWithError: false
   });
-  return o.Z.dispatch({
+  return a.Z.dispatch({
     type: "STICKER_PACK_FETCH_SUCCESS",
     packId: e,
     pack: n,
@@ -110,15 +110,15 @@ let S = async (e, t) => {
 }, T = async e => {
   let {
     body: t
-  } = await a.tn.get({
+  } = await o.tn.get({
     url: h.ANM.STICKER(e),
     rejectWithError: false
   });
-  if ((0, m.J8)(t)) o.Z.dispatch({
+  if ((0, m.J8)(t)) a.Z.dispatch({
     type: "GUILD_STICKER_FETCH_SUCCESS",
     sticker: t
   });
-  else if ((0, m.jl)(t)) o.Z.dispatch({
+  else if ((0, m.jl)(t)) a.Z.dispatch({
     type: "PACK_STICKER_FETCH_SUCCESS",
     sticker: t
   });
@@ -126,12 +126,12 @@ let S = async (e, t) => {
 }, C = async (e, t) => {
   let {
     body: n
-  } = await a.tn.get({
+  } = await o.tn.get({
     url: h.ANM.GUILD_STICKER_PACKS(e),
     rejectWithError: false,
     signal: t
   });
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "GUILD_STICKERS_FETCH_SUCCESS",
     guildId: e,
     stickers: n.map(e => null != e.user ? v(y({}, e), {
@@ -140,7 +140,7 @@ let S = async (e, t) => {
     }) : e)
   })
 }, A = async e => {
-  await a.tn.del({
+  await o.tn.del({
     url: h.ANM.GUILD_STICKER(e.guild_id, e.id),
     rejectWithError: false
   })
@@ -148,7 +148,7 @@ let S = async (e, t) => {
   var t;
   let {
     guildId: n
-  } = e, r = await a.tn.post({
+  } = e, r = await o.tn.post({
     url: h.ANM.GUILD_STICKER_PACKS(n),
     body: "web" === e.platform ? e.body : true,
     fields: "mobile" === e.platform ? [{
@@ -171,21 +171,21 @@ let S = async (e, t) => {
     }] : true,
     rejectWithError: false
   });
-  return o.Z.dispatch({
+  return a.Z.dispatch({
     type: "GUILD_STICKERS_CREATE_SUCCESS",
     guildId: n,
     sticker: v(y({}, r.body), {
       user_id: null == (t = f.default.getCurrentUser()) ? true : t.id
     })
   }), r.body
-}, P = async (e, t, n) => (await a.tn.patch({
+}, P = async (e, t, n) => (await o.tn.patch({
   url: h.ANM.GUILD_STICKER(e, t),
   body: n,
   rejectWithError: false
 })).body;
 
 function R(e, t, n) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "ADD_STICKER_PREVIEW",
     channelId: e,
     sticker: t,
@@ -194,7 +194,7 @@ function R(e, t, n) {
 }
 
 function w(e, t) {
-  o.Z.dispatch({
+  a.Z.dispatch({
     type: "CLEAR_STICKER_PREVIEW",
     channelId: e,
     draftType: t

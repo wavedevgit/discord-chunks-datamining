@@ -57,5 +57,5 @@ function p(e) {
   } = e, [n, c] = (0, i.Z)(t.id);
   return n ? (0, r.jsx)(s.Z, f(u({}, e), {
     onHide: c
-  })) : t.isNonUserBot() ? (0, r.jsx)(o.Z, u({}, e)) : t.bot ? (0, r.jsx)(a.Z, u({}, e)) : (0, r.jsx)(l.Z, u({}, e))
+  })) : t.isNonUserBot() ? (0, r.jsx)(a.Z, u({}, e)) : t.bot ? (0, r.jsx)(o.Z, u({}, e)) : (0, r.jsx)(l.Z, u({}, e))
 }

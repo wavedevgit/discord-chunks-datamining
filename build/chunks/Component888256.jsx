@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk526761 = require("./526761.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk747511 = require("./747511.js");
+  Chunk543879 = require("./543879.js");
 
 function f(e) {
   let {
@@ -21,25 +21,25 @@ function f(e) {
     handleDisableAccount: f,
     handleDeleteAccount: p
   } = e, _ = t.isClaimed(), m = i.useRef(null);
-  return (0, s.Z)(m, l.KQ.AccountScrollPositions.DISABLE_ACCOUNT), (0, r.jsx)(o.F, {
+  return (0, s.Z)(m, l.KQ.AccountScrollPositions.DISABLE_ACCOUNT), (0, r.jsx)(a.F, {
     setting: c.s6.ACCOUNT_DISABLE_ACCOUNT,
     children: (0, r.jsx)("div", {
       ref: m,
-      children: (0, r.jsx)(a.gNt, {
+      children: (0, r.jsx)(o.gNt, {
         label: u.intl.string(u.t.ZKsIks),
         description: _ ? u.intl.string(u.t.TIh3Yj) : u.intl.string(u.t.czsGA8),
-        children: (0, r.jsxs)(a.ButtonGroup, {
+        children: (0, r.jsxs)(o.ButtonGroup, {
           size: "sm",
           className: d.buttonContainer,
-          children: [_ ? (0, r.jsx)(a.Button, {
+          children: [_ ? (0, r.jsx)(o.Button, {
             variant: "critical-primary",
             size: "sm",
             text: u.intl.string(u.t.jf5GGb),
             disabled: n,
             onClick: f
-          }) : null, (0, r.jsx)(o.F, {
+          }) : null, (0, r.jsx)(a.F, {
             setting: c.s6.ACCOUNT_DELETE_ACCOUNT,
-            children: (0, r.jsx)(a.Button, {
+            children: (0, r.jsx)(o.Button, {
               variant: "critical-secondary",
               size: "sm",
               text: u.intl.string(u.t["8lQ2rR"]),

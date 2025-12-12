@@ -34,8 +34,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk176505 = require("./176505.js"),
   Chunk20281 = require("./20281.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk977063 = require("./977063.js"),
-  Chunk978966 = require("./978966.js");
+  Chunk486663 = require("./486663.js"),
+  Chunk97009 = require("./97009.js");
 
 function E(e) {
   var t;
@@ -45,32 +45,32 @@ function E(e) {
   } = e, {
     loaded: o,
     subscriptionsSettings: l
-  } = (0, O.H)(r), c = (0, s.e7)([g.Z], () => g.Z.getGuild(r)), {
+  } = (0, O.H)(r), s = (0, c.e7)([g.Z], () => g.Z.getGuild(r)), {
     selectedTab: a,
     isPhantomPreview: u,
     categoryTabs: C
   } = (0, m.m)(), p = !o || null == l;
-  return null == c || !u && p ? (0, n.jsx)(d.$jN, {}) : (0, n.jsx)(x.Z, {
+  return null == s || !u && p ? (0, n.jsx)(d.$jN, {}) : (0, n.jsx)(x.Z, {
     defaultSortOption: null != (t = null == l ? true : l.store_page_guild_products_default_sort) ? t : Z.zJ.NAME,
     children: (0, n.jsxs)("div", {
       className: N.contentContainer,
       children: [(0, n.jsx)(S.C, {
-        guild: c,
+        guild: s,
         subscriptionsSettings: l
       }), (0, n.jsx)(d.LZC, {
         size: 32
-      }), C.length > 0 && (0, n.jsx)(P.z, {
-        guild: c
+      }), C.length > 0 && (0, n.jsx)(w.z, {
+        guild: s
       }), (0, n.jsxs)("div", {
         className: N.tabContainer,
         children: [(0, n.jsx)(d.LZC, {
           size: 32
-        }), u && (0, n.jsx)(_.Z, {
+        }), u && (0, n.jsx)(P.Z, {
           guildId: r
         }), a === v.y.GUILD_PRODUCTS && (0, n.jsx)(y.Q, {
           guildId: r,
           productId: i
-        }), a === v.y.GUILD_ROLE_SUBSCRIPTIONS && (0, n.jsx)(w.Z, {
+        }), a === v.y.GUILD_ROLE_SUBSCRIPTIONS && (0, n.jsx)(_.Z, {
           guildId: r
         })]
       })]
@@ -82,25 +82,25 @@ function V(e) {
   let {
     guildId: t,
     productId: r
-  } = e, o = (0, s.e7)([p.Z], () => p.Z.isConnected()), O = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), {
+  } = e, o = (0, c.e7)([p.Z], () => p.Z.isConnected()), O = (0, c.e7)([g.Z], () => g.Z.getGuild(t)), {
     shouldHideGuildPurchaseEntryPoints: x,
     restrictionsLoading: v
   } = (0, C.uP)(t), {
     selectedTab: y,
-    isPhantomPreview: w,
-    categoryTabs: P
-  } = (0, m.m)(), _ = o && (null == O || 0 === P.length && !w || x && !v);
+    isPhantomPreview: _,
+    categoryTabs: w
+  } = (0, m.m)(), P = o && (null == O || 0 === w.length && !_ || x && !v);
   return i.useEffect(() => {
-    _ && (0, h.M)(t, D.oC.GUILD_SHOP)
-  }, [t, _]), (0, u.Z)({
+    P && (0, h.M)(t, D.oC.GUILD_SHOP)
+  }, [t, P]), (0, u.Z)({
     type: T.n.PAGE,
-    name: c.ImpressionNames.GUILD_SHOP_PAGE,
+    name: s.ImpressionNames.GUILD_SHOP_PAGE,
     properties: {
       product_id: r,
       tab: y
     }
   }, {
-    disableTrack: _
+    disableTrack: P
   }), (0, n.jsxs)("div", {
     "data-has-border": true,
     className: l()(R.chat, N.container),

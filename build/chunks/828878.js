@@ -2,6 +2,6 @@
 /** chunk id: 828878, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  A: () => r
+  A: () => a
 });
-var a, r = ((a = {})[a.USER_CODE_LENGTH = 8] = "USER_CODE_LENGTH", a)
+var r, a = ((r = {})[r.USER_CODE_LENGTH = 8] = "USER_CODE_LENGTH", r)
