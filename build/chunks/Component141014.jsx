@@ -3,19 +3,21 @@
 require.d(exports, {
   N: () => l,
   g: () => o
-}), require("./415506.js");
+}), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js");
 let a = Chunk473749.createContext(null);
 
 function l(e) {
   let {
-    value: t,
-    children: n
-  } = e;
+    children: t
+  } = e, [n, l] = i.useState(false);
   return (0, r.jsx)(a.Provider, {
-    value: t,
-    children: n
+    value: {
+      expanded: n,
+      setExpanded: l
+    },
+    children: t
   })
 }
 

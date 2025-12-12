@@ -125,7 +125,7 @@ function E(e) {
         return e
       }({
         action: "WIDGET_ADDED"
-      }, P.getProfileEditAnalyticsOptions())), (0, g.L$)(h.qb.WIDGET_ADDED), null == n || n())
+      }, P.getProfileEditAnalyticsOptions())), (0, x.L$)(h.qb.WIDGET_ADDED), null == n || n())
     }, [u, l, P, N, n]);
   return (null != P && null != L && (a = L(P)), null == P) ? null : (0, i.jsxs)("div", {
     className: A.addButtonContainer,
@@ -139,13 +139,13 @@ function E(e) {
         let e = E(P);
         switch (e.variant) {
           case "details":
-            return (0, i.jsx)(x.i, {
+            return (0, i.jsx)(g.i, {
               className: A.placeholderPadding,
               applicationId: e.applicationId,
               size: o
             });
           case "grid":
-            return (0, i.jsx)(x.c, {
+            return (0, i.jsx)(g.c, {
               className: A.placeholderPadding,
               applicationIds: e.applicationIds,
               size: o

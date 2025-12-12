@@ -95,7 +95,7 @@ async function E(e) {
     modalKey: C,
     contextKey: (0, i.VnL)(null != (t = null != y ? y : (0, s.GB)()) ? t : d.IlC.APP),
     onCloseRequest: () => {
-      if (u.Z.hasSaveablePendingChanges()) return void c.Z.notifyPendingWidgets();
+      if (u.Z.hasUnsavedChanges()) return void c.Z.notifyUnsavedWidgets();
       (0, i.Mr3)(C), h.delete(C), c.Z.clearPendingWidgets()
     }
   }))

@@ -53,11 +53,11 @@ function S(e) {
   } = (0, p.Z)({
     userId: t.id,
     guildId: E
-  }), L = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), M = t.id === n.id, B = (0, i.e7)([u.Z, s.Z], () => {
-    let e = M ? u.Z.getStatus() : s.Z.getStatus(t.id);
+  }), M = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), L = t.id === n.id, B = (0, i.e7)([u.Z, s.Z], () => {
+    let e = L ? u.Z.getStatus() : s.Z.getStatus(t.id);
     return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
-  }), F = N.length > 0 || null != Z, U = D && null == Z && null == G && null != R, W = !B && (F || U), H = A.length > 0;
-  if (!W && !H && L) return (0, r.jsx)("div", {
+  }), U = N.length > 0 || null != Z, F = D && null == Z && null == G && null != R, W = !B && (U || F), H = A.length > 0;
+  if (!W && !H && M) return (0, r.jsx)("div", {
     className: w.cards,
     children: Array.from({
       length: 8
@@ -72,11 +72,11 @@ function S(e) {
       })]
     }, t))
   });
-  if (!W && !H && !L) {
+  if (!W && !H && !M) {
     var z;
-    return M ? (0, r.jsx)(O.Uf, {
+    return L ? (0, r.jsx)(v.Uf, {
       onClose: C
-    }) : (0, r.jsx)(O.P9, {
+    }) : (0, r.jsx)(v.P9, {
       user: t,
       guildId: null != (z = null == S ? true : S.guildId) ? z : E,
       channelId: _,
@@ -86,11 +86,11 @@ function S(e) {
   return (0, r.jsxs)(j.F, {
     className: w.scroller,
     fade: true,
-    children: [W ? (0, r.jsx)(v.Z, {
+    children: [W ? (0, r.jsx)(O.Z, {
       heading: I.intl.string(I.t.J6STd9),
       children: (0, r.jsxs)("ul", {
         className: w.cards,
-        children: [!k && U && (0, r.jsx)("li", {
+        children: [!k && F && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -111,7 +111,7 @@ function S(e) {
             activity: e,
             onClose: C
           })
-        }, "live-".concat(i))), k && U && (0, r.jsx)("li", {
+        }, "live-".concat(i))), k && F && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -120,9 +120,9 @@ function S(e) {
           })
         })]
       })
-    }) : null, H ? (0, r.jsx)(v.Z, {
+    }) : null, H ? (0, r.jsx)(O.Z, {
       heading: I.intl.string(I.t.jzgEoL),
-      introText: M ? I.intl.format(I.t["4bk9Ak"], {
+      introText: L ? I.intl.format(I.t["4bk9Ak"], {
         learnMoreHook: (e, t) => (0, r.jsx)(a.Anchor, {
           href: d.Z.getArticleURL(P.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e

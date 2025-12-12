@@ -2,14 +2,15 @@
 /** chunk id: 836197, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ki: () => o,
-  Wc: () => s,
-  zy: () => l
+  Ki: () => s,
+  Wc: () => l,
+  zy: () => c
 });
-var Chunk296009 = require("./296009.js"),
+var Chunk624238 = require("./624238.js"),
+  Chunk296009 = require("./296009.js"),
   Chunk86419 = require("./86419.js");
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,12 +18,12 @@ function a(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let o = [Chunk296009.l.CURRENT_GAMES, Chunk296009.l.FAVORITE_GAMES, Chunk296009.l.WANT_TO_PLAY_GAMES, Chunk296009.l.PLAYED_GAMES];
+let s = [Chunk296009.l.CURRENT_GAMES, Chunk296009.l.FAVORITE_GAMES, Chunk296009.l.WANT_TO_PLAY_GAMES, Chunk296009.l.PLAYED_GAMES];
 
-function s(e) {
-  return o.includes(e.type)
+function l(e) {
+  return s.includes(e.type)
 }
-class l {
+class c {
   toSubmission() {
     let e = e => ({
       game_id: e.applicationId,
@@ -37,11 +38,14 @@ class l {
       }
     }
   }
-  isSaveable() {
-    return this.games.length > 0
+  isDiscardable() {
+    return 0 === this.games.length
+  }
+  isValid() {
+    return this.games.length > 0 && this.games.length <= Chunk624238.kp[this.type]
   }
   isEqual(e) {
-    return e instanceof l && e.type === this.type && (0, i.ou)(this.games, e.games, this.type)
+    return e instanceof c && e.type === this.type && (0, a.ou)(this.games, e.games, this.type)
   }
   getProfileAnalyticsOptions() {
     return {
@@ -58,6 +62,6 @@ class l {
     type: t,
     games: n
   }) {
-    a(this, "id", true), a(this, "type", true), a(this, "games", true), this.id = e, this.type = t, this.games = n
+    o(this, "id", true), o(this, "type", true), o(this, "games", true), this.id = e, this.type = t, this.games = n
   }
 }

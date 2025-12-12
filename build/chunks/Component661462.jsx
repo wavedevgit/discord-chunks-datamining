@@ -1,7 +1,7 @@
 /** Chunk was on 85032 **/
 /** chunk id: 661462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => v,
+  F: () => O,
   Z: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -39,7 +39,7 @@ function y(e) {
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function O(e, t) {
   }), e
 }
 
-function v(e) {
+function O(e) {
   var {
     children: t,
     className: n,
@@ -72,7 +72,7 @@ function v(e) {
     }
     return i
   }(e, ["children", "className", "scrollerRef"]);
-  return (0, r.jsx)(o.Ttm, O(y({
+  return (0, r.jsx)(o.Ttm, v(y({
     ref: i,
     className: l()(h.tabPanelScroller, n),
     fade: true
@@ -128,14 +128,14 @@ function x(e) {
     items: g,
     initialSection: p,
     initialSubsection: b,
-    onClose: v
+    onClose: O
   } = e, {
     trackUserProfileAction: x
   } = (0, c.KZ)(), [{
     section: P,
     subsection: I,
     text: w
-  }, S] = i.useState(O(y({}, null != (t = g.find(e => {
+  }, S] = i.useState(v(y({}, null != (t = g.find(e => {
     let {
       section: t
     } = e;
@@ -155,7 +155,7 @@ function x(e) {
         look: "custom",
         selectedItem: P,
         onItemSelect: e => {
-          if (u.Z.hasSaveablePendingChanges() && P === m.oh.WIDGETS) return void s.Z.notifyPendingWidgets();
+          if (u.Z.hasUnsavedChanges() && P === m.oh.WIDGETS) return void s.Z.notifyUnsavedWidgets();
           x({
             action: "PRESS_SECTION",
             section: e
@@ -189,7 +189,7 @@ function x(e) {
           channelId: f,
           section: P,
           subsection: I,
-          onClose: v
+          onClose: O
         })
       })
     })]

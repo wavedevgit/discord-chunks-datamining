@@ -18,7 +18,10 @@ function d() {
     }),
     t = e => {
       let t = (0, s.np)(e);
-      (0, s.ES)(e, t)
+      (0, s.ES)({
+        widgetType: e,
+        game: t
+      })
     };
   return module ? (0, Chunk54381.jsxs)("div", {
     className: Chunk87489.container,

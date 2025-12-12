@@ -70,21 +70,24 @@ function m(e) {
     onAddGame: m,
     children: h
   } = e, y = b(e, ["widgetType", "widget", "onAddGame", "children"]);
-  let O = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]),
+  let v = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]),
     {
-      trackUserProfileEditAction: v
+      trackUserProfileEditAction: O
     } = (0, s.KZ)(),
     [j, x] = i.useState(""),
     P = i.useRef(""),
     I = i.useCallback(e => {
-      (0, u.ES)(t, {
-        applicationId: e
-      }), o.uvj.announce(d.intl.string(d.t.q0U3DE)), v({
+      (0, u.ES)({
+        widgetType: t,
+        game: {
+          applicationId: e
+        }
+      }), o.uvj.announce(d.intl.string(d.t.q0U3DE)), O({
         action: "GAME_ADDED",
         gameId: e,
         widgetEdited: t
       }), null == m || m()
-    }, [t, v, m]),
+    }, [t, O, m]),
     {
       options: w,
       matchSorterOptions: S
@@ -93,8 +96,8 @@ function m(e) {
       id: String(e.value),
       value: String(e.value),
       label: e.label,
-      disabled: O.has(e.value)
-    })), [w, O]),
+      disabled: v.has(e.value)
+    })), [w, v]),
     _ = i.useMemo(() => p(g({}, S), {
       threshold: a.Lu.rankings.CONTAINS,
       keys: ["label"]
@@ -102,22 +105,22 @@ function m(e) {
     T = i.useCallback(e => "" === e.trim() ? E.length : (0, a.Lu)(E, e, _).length, [E, _]),
     C = i.useCallback(e => {
       let n = e.target.value;
-      "" === j.trim() && "" !== n.trim() && v({
+      "" === j.trim() && "" !== n.trim() && O({
         action: "GAME_SEARCH_SESSION_STARTED",
         widgetEdited: t,
         numCharacters: n.trim().length,
         numResults: T(n)
       }), x(n), P.current = n
-    }, [j, v, t, T]);
+    }, [j, O, t, T]);
   return (0, r.jsx)(o.yRy, p(g({}, y), {
     onRequestOpen: () => {
-      v({
+      O({
         action: "PRESS_ADD_GAME",
         widgetEdited: t
       }), x(""), P.current = ""
     },
     onRequestClose: () => {
-      v({
+      O({
         action: "GAME_SEARCH_SESSION_ENDED",
         widgetEdited: t,
         numCharacters: P.current.trim().length,

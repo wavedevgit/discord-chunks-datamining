@@ -307,15 +307,13 @@ function K(e) {
     channel: K,
     onAction: en,
     onClose: q
-  }), eE = () => t.id === n.id ? null : (0, r.jsx)("div", {
-    className: B.actions,
-    children: (0, r.jsx)(N.Z, {
-      activity: i,
-      user: t,
-      onAction: en,
-      onClose: q,
-      application: V
-    })
+  }), eE = () => (0, r.jsx)(N.Z, {
+    containerClassName: B.actions,
+    activity: i,
+    user: t,
+    onAction: en,
+    onClose: q,
+    application: V
   });
   return (0, r.jsx)(p.Gt, {
     value: $,

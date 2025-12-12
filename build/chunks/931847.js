@@ -23,7 +23,10 @@ class i {
       }
     }
   }
-  isSaveable() {
+  isDiscardable() {
+    returnfalse
+  }
+  isValid() {
     returntrue
   }
   isEqual(e) {

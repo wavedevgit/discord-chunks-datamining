@@ -35,7 +35,7 @@ function f(e) {
   let {
     analyticsLocations: f,
     newestAnalyticsLocation: m
-  } = (0, r.ZP)(), p = (0, i.e7)([s.Z], () => s.Z.hasSaveablePendingChanges());
+  } = (0, r.ZP)(), p = (0, i.e7)([s.Z], () => s.Z.hasUnsavedChanges());
   return (0, l.jsx)(d.pt, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
@@ -58,7 +58,7 @@ function f(e) {
     icon: o.EOn,
     tooltipText: u.intl.string(u.t.b2d0N0),
     onClick: () => {
-      if (p) return void c.Z.notifyPendingWidgets();
+      if (p) return void c.Z.notifyUnsavedWidgets();
       (0, a.mK)({
         analyticsLocations: f,
         analyticsSource: m

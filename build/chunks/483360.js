@@ -27,7 +27,6 @@ var Chunk658722 = require("./658722.js"),
   Chunk627050 = require("./627050.js"),
   Chunk31445 = require("./31445.js"),
   Chunk931261 = require("./931261.js"),
-  Chunk510231 = require("./510231.js"),
   Chunk277078 = require("./277078.js"),
   Chunk208049 = require("./208049.js"),
   Chunk763296 = require("./763296.js"),
@@ -38,6 +37,7 @@ var Chunk658722 = require("./658722.js"),
   Chunk373228 = require("./373228.js"),
   Chunk601070 = require("./601070.js"),
   Chunk569471 = require("./569471.js"),
+  Chunk86419 = require("./86419.js"),
   Chunk675478 = require("./675478.js"),
   Chunk131704 = require("./131704.js"),
   Chunk345162 = require("./345162.js"),
@@ -282,14 +282,14 @@ function e0(e) {
 
 function e1(e) {
   switch (e) {
-    case R.MO.STICKER_NAME:
+    case P.MO.STICKER_NAME:
       return ew;
-    case R.MO.CORRELATED_EMOJI:
+    case P.MO.CORRELATED_EMOJI:
       return eD;
-    case R.MO.TAG:
+    case P.MO.TAG:
       return eL;
-    case R.MO.GUILD_NAME:
-    case R.MO.PACK_NAME:
+    case P.MO.GUILD_NAME:
+    case P.MO.PACK_NAME:
       return ex;
     default:
       return 1
@@ -547,7 +547,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
         } = e,
         h = e5(n, c),
         g = e3(l);
-      t = null != r ? s()(F.ZP.getChannels(r)[l]).map(e => e.channel).concat(g ? m ? U.Z.getAllThreadsForGuild(r) : w.Z.computeAllActiveJoinedThreads(r) : []).value() : s()(U.Z.loadAllGuildAndPrivateChannelsFromDisk()).values().concat(g ? w.Z.computeAllActiveJoinedThreads() : []).value();
+      t = null != r ? s()(F.ZP.getChannels(r)[l]).map(e => e.channel).concat(g ? m ? U.Z.getAllThreadsForGuild(r) : R.Z.computeAllActiveJoinedThreads(r) : []).value() : s()(U.Z.loadAllGuildAndPrivateChannelsFromDisk()).values().concat(g ? R.Z.computeAllActiveJoinedThreads() : []).value();
       let E = {},
         b = [],
         y = G.Z.getMaxScore();
@@ -567,7 +567,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
             }
             c = Math.min(eS - eC, c)
           }
-          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e4(l, e.type) && (c = Math.max(c - eA, eC / 2)), e.isThread() && (e.isActiveThread() || (c -= eN), D.Z.hasJoined(e.id) || (c -= eP)), c = Math.min(c + Math.min(null != (O = G.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eR, c >= eS ? eO : eS), b.push({
+          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e4(l, e.type) && (c = Math.max(c - eA, eC / 2)), e.isThread() && (e.isActiveThread() || (c -= eN), w.Z.hasJoined(e.id) || (c -= eP)), c = Math.min(c + Math.min(null != (O = G.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eR, c >= eS ? eO : eS), b.push({
             type: (0, L.bw)(e.type) ? eu.h8.VOICE_CHANNEL : eu.h8.TEXT_CHANNEL,
             record: e,
             score: eK(c, d[e.id]),
@@ -1037,20 +1037,20 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
           l = (0, es._I)(e),
           c = RegExp("^".concat(ea.Z.escape(l)), "i"),
           u = RegExp("".concat(ea.Z.escape(l)), "i");
-        P.Z.getStickerMetadataArrays().forEach(s => {
+        N.Z.getStickerMetadataArrays().forEach(s => {
           s.forEach((s, l) => {
             let d = 0,
               f = null,
-              p = P.Z.getStickerById(l);
-            if (null == p || !r(p, (0, A.cO)(p, i, n))) return;
+              p = N.Z.getStickerById(l);
+            if (null == p || !r(p, (0, C.cO)(p, i, n))) return;
             for (let n of s) {
               let {
                 type: r,
                 value: i
               } = n, a = e1(r), o = 0;
-              t ? i === e ? o = eO * a : c.test(i) ? o = eS * a : (r === R.MO.GUILD_NAME || r === R.MO.PACK_NAME || r === R.MO.STICKER_NAME) && u.test(i) && (o = eI * a) : i === e && (o = eO * a, f = i), o > d && (d = o, f = i)
+              t ? i === e ? o = eO * a : c.test(i) ? o = eS * a : (r === P.MO.GUILD_NAME || r === P.MO.PACK_NAME || r === P.MO.STICKER_NAME) && u.test(i) && (o = eI * a) : i === e && (o = eO * a, f = i), o > d && (d = o, f = i)
             }
-            let _ = N.Z.stickerFrecencyWithoutFetchingLatest.getScore(l);
+            let _ = A.Z.stickerFrecencyWithoutFetchingLatest.getScore(l);
             null != _ && (d *= _ / 100), d > 0 && null != f && !a.has(p.id) && (a.add(p.id), o.push({
               sticker: p,
               comparator: f,
@@ -1063,11 +1063,11 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
     },
     querySoundmoji(e, t) {
       let n = X.default.getCurrentUser();
-      T.Z.isFetching() || T.Z.hasFetchedAllSounds() || (0, I.w)(), x.DZ.loadIfNecessary();
-      let r = Array.from(T.Z.getSounds().values()).reduce((e, n) => (n.forEach(n => {
-        (0, S.Z)(n, null == t ? true : t.guild_id, null == t ? true : t.id) && e.push(n)
+      I.Z.isFetching() || I.Z.hasFetchedAllSounds() || (0, S.w)(), x.DZ.loadIfNecessary();
+      let r = Array.from(I.Z.getSounds().values()).reduce((e, n) => (n.forEach(n => {
+        (0, v.Z)(n, null == t ? true : t.guild_id, null == t ? true : t.id) && e.push(n)
       }), e), []);
-      return (0, C.cK)(e, r, n, t)
+      return (0, T.cK)(e, r, n, t)
     },
     queryGames(e) {
       let t = E.ZP.getRunningVerifiedApplicationIds();
@@ -1081,7 +1081,7 @@ let te = (0, Chunk251625.oH)((e, t, n) => {
         return r.id === s ? i += 1e3 : o === s ? i += 5 : o.startsWith(s) ? i += 4 : o.includes(s) ? i += 3 : o.endsWith(s) ? i += 2 : a()(s, o) && (i += 1), i > 0 && (t.includes(r.id) && (i += 10), r.id in n && (i += 2), ef.gQ.has(r.id) && (i += ef.gQ.get(r.id) / ef.gQ.size)), i
       }
       let i = Z.Z.games;
-      return s()(i).filter(e => !(0, v.N)(e)).map(e => ({
+      return s()(i).filter(e => !(0, D.NY)(e)).map(e => ({
         game: e,
         score: r(e)
       })).filter(e => {

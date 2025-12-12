@@ -30,10 +30,10 @@ function j(e) {
   } = (0, f.KZ)(), [a, j] = i.useState(false), x = (0, c.Wu)([b.Z], () => {
     var e;
     return null != (e = b.Z.getSaveablePendingWidgets()) ? e : []
-  }), P = (0, c.Wu)([b.Z], () => b.Z.getChangedWidgets()), I = (0, c.Wu)([b.Z], () => b.Z.getRemovedWidgets()), w = (0, c.e7)([b.Z], () => b.Z.hasSaveablePendingChanges()), S = (0, c.e7)([b.Z], () => b.Z.isSubmitting), E = (0, c.e7)([u.Z], () => u.Z.useReducedMotion), _ = (0, s.Yzy)(w, {
+  }), P = (0, c.Wu)([b.Z], () => b.Z.getChangedWidgets()), I = (0, c.Wu)([b.Z], () => b.Z.getRemovedWidgets()), w = (0, c.e7)([b.Z], () => b.Z.hasUnsavedChanges()), S = (0, c.e7)([b.Z], () => b.Z.canSaveChanges()), E = (0, c.e7)([b.Z], () => b.Z.isSubmitting), _ = (0, c.e7)([u.Z], () => u.Z.useReducedMotion), T = (0, s.Yzy)(w, {
     from: {
       opacity: 0,
-      y: 80 * !E
+      y: 80 * !_
     },
     enter: {
       opacity: 1,
@@ -41,7 +41,7 @@ function j(e) {
     },
     leave: {
       opacity: 0,
-      y: 80 * !E
+      y: 80 * !_
     }
   });
   i.useEffect(() => {
@@ -54,64 +54,66 @@ function j(e) {
       d.S.unsubscribe(y.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), i.useEffect(() => {
-    w && s.uvj.announce(O.intl.string(O.t["0Y/qkL"]))
+    w && s.uvj.announce(v.intl.string(v.t["0Y/qkL"]))
   }, [w]);
-  let T = i.useCallback(async () => {
-      try {
-        await p.Z.savePendingWidgets(x)
-      } catch (e) {
-        (0, m.L$)(h.qb.WIDGET_SAVE_FAILURE);
-        return
-      }
-      for (let e of P) {
-        let t = {
+  let C = i.useCallback(async () => {
+      if (b.Z.canSaveChanges()) {
+        try {
+          await p.Z.savePendingWidgets(x)
+        } catch (e) {
+          (0, m.L$)(h.qb.WIDGET_SAVE_FAILURE);
+          return
+        }
+        for (let e of P) {
+          let t = {
+            widgetEdited: e.type,
+            isWidgetRemoved: false
+          };
+          (0, g.Wc)(e) && (t.gameIds = e.games.map(e => e.applicationId), t.tags = e.games.flatMap(e => {
+            var t;
+            return null != (t = e.tags) ? t : []
+          }).map(e => e.toString()), t.numCharactersCommentary = e.games.reduce((e, t) => {
+            var n, r;
+            return e + (null != (r = null == (n = t.comment) ? true : n.length) ? r : 0)
+          }, 0)), n(t)
+        }
+        for (let e of I) n({
           widgetEdited: e.type,
-          isWidgetRemoved: false
-        };
-        (0, g.Wc)(e) && (t.gameIds = e.games.map(e => e.applicationId), t.tags = e.games.flatMap(e => {
-          var t;
-          return null != (t = e.tags) ? t : []
-        }).map(e => e.toString()), t.numCharactersCommentary = e.games.reduce((e, t) => {
-          var n, r;
-          return e + (null != (r = null == (n = t.comment) ? true : n.length) ? r : 0)
-        }, 0)), n(t)
+          isWidgetRemoved: true
+        })
       }
-      for (let e of I) n({
-        widgetEdited: e.type,
-        isWidgetRemoved: true
-      })
     }, [x, P, I, n]),
-    C = i.useCallback(() => {
+    D = i.useCallback(() => {
       p.Z.clearPendingWidgets()
     }, []);
-  return _((e, n) => n ? (0, r.jsx)(o.animated.div, {
+  return T((e, n) => n ? (0, r.jsx)(o.animated.div, {
     className: t,
     style: e,
     children: (0, r.jsxs)("section", {
-      className: l()(v.content, {
-        [v.emphasized]: a
+      className: l()(O.content, {
+        [O.emphasized]: a
       }),
-      "aria-label": O.intl.string(O.t["odDw+z"]),
+      "aria-label": v.intl.string(v.t["odDw+z"]),
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/medium",
         color: "text-strong",
-        className: v.message,
-        children: O.intl.string(O.t["/lQiX/"])
+        className: O.message,
+        children: v.intl.string(v.t["/lQiX/"])
       }), (0, r.jsxs)("div", {
-        className: v.actions,
+        className: O.actions,
         children: [(0, r.jsx)(s.Button, {
           size: "sm",
           variant: "secondary",
-          text: O.intl.string(O.t.yBZMsQ),
-          onClick: C,
-          disabled: !w || S
+          text: v.intl.string(v.t.yBZMsQ),
+          onClick: D,
+          disabled: !w || E
         }), (0, r.jsx)(s.Button, {
           size: "sm",
           variant: "primary",
-          text: O.intl.string(O.t["R3BPH+"]),
-          onClick: T,
-          loading: S,
-          disabled: !w || S
+          text: v.intl.string(v.t["R3BPH+"]),
+          onClick: C,
+          loading: E,
+          disabled: !S || !w || E
         })]
       })]
     })

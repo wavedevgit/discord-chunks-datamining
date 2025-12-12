@@ -2,7 +2,7 @@
 /** chunk id: 817053, original params: e,a,l (module,exports,require) **/
 require.d(exports, {
   Z: () => h,
-  o: () => x
+  o: () => g
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk713603 = require("./713603.js");
 
-function g(e) {
+function x(e) {
   for (var a = 1; a < arguments.length; a++) {
     var l = null != arguments[a] ? arguments[a] : {},
       i = Object.keys(l);
@@ -37,7 +37,7 @@ function g(e) {
   return e
 }
 
-function x(e) {
+function g(e) {
   let {
     imageSrc: a,
     gameName: l
@@ -66,21 +66,21 @@ function j(e) {
     imageSrc: a,
     gameName: l,
     applicationId: n,
-    userId: g,
+    userId: x,
     className: j,
     hideTooltip: h = false,
     coverRef: N
-  } = e, A = (0, s.e7)([m.Z], () => m.Z.hasSaveablePendingChanges()), I = (0, u.Z)({
+  } = e, A = (0, s.e7)([m.Z], () => m.Z.hasUnsavedChanges()), I = (0, u.Z)({
     location: "GameCover",
     applicationId: n,
     source: d.m1.UserProfile,
-    sourceUserId: g,
+    sourceUserId: x,
     trackEntryPointImpression: true
   }), E = null != l ? l : v.intl.string(v.t.GIWFlF), b = v.intl.formatToPlainString(v.t["8QLQB+"], {
     gameName: E
   }), L = t.useCallback(e => {
     if (A) {
-      e.preventDefault(), e.stopPropagation(), p.Z.notifyPendingWidgets();
+      e.preventDefault(), e.stopPropagation(), p.Z.notifyUnsavedWidgets();
       return
     }
     null == I || I(e)
@@ -94,7 +94,7 @@ function j(e) {
       ref: N,
       className: j,
       tabIndex: false,
-      children: (0, i.jsx)(x, {
+      children: (0, i.jsx)(g, {
         imageSrc: a,
         gameName: l
       })
@@ -104,7 +104,7 @@ function j(e) {
     onClick: L,
     "aria-label": b,
     className: r()(f.clickable, j),
-    children: (0, i.jsx)(x, {
+    children: (0, i.jsx)(g, {
       imageSrc: a,
       gameName: l
     })
@@ -140,9 +140,9 @@ function h(e) {
       ref: c,
       className: u,
       tabIndex: false,
-      children: (0, i.jsx)(x, g({}, d))
+      children: (0, i.jsx)(g, x({}, d))
     })
-  }) : (0, i.jsx)(j, g({
+  }) : (0, i.jsx)(j, x({
     className: u,
     applicationId: a,
     userId: l,

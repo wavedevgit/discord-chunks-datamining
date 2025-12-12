@@ -42,7 +42,7 @@ function x(e) {
     itemPreviewProps: {
       item: t
     },
-    "aria-label": v.intl.formatToPlainString(v.t["7SnyMA"], {
+    "aria-label": O.intl.formatToPlainString(O.t["7SnyMA"], {
       positionNumber: n + 1
     }),
     onReorder: a,
@@ -71,7 +71,7 @@ let P = Chunk473749.memo(function(e) {
     tooltipConfig: u,
     isDragging: d,
     onReorder: g
-  } = e, p = (0, r.jsx)(O.Z, {
+  } = e, p = (0, r.jsx)(v.Z, {
     item: t,
     profileOwner: i,
     wishlistId: l,
@@ -118,10 +118,10 @@ function I(e) {
     defaultWishlistId: f
   } = (0, l.cj)([b.Z], () => ({
     defaultWishlistId: b.Z.getFirstWishlistId(n.id)
-  })), h = (0, g.c)(t, o), O = (0, m.f)({
+  })), h = (0, g.c)(t, o), v = (0, m.f)({
     location: "UserProfileModalV2WishlistGrid"
   }) && o, {
-    isDragging: v
+    isDragging: O
   } = (0, a.f)(e => ({
     isDragging: e.isDragging()
   })), x = i.useCallback((e, n) => {
@@ -149,13 +149,13 @@ function I(e) {
       profileOwner: n,
       isOwner: o,
       wishlistId: f,
-      canReorder: O,
+      canReorder: v,
       tooltipConfig: h[t],
-      isDragging: v,
+      isDragging: O,
       onReorder: x
     }, e.skuId))
   });
-  return O ? (0, r.jsx)(y.d, {
+  return v ? (0, r.jsx)(y.d, {
     emptyListFallbackRef: null,
     children: I
   }) : I

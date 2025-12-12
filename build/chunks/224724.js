@@ -81,7 +81,7 @@ class T extends Chunk442837.ZP.Store {
     return c
   }
   getSaveablePendingWidgets() {
-    return null == c ? null : c.filter(e => e.isSaveable())
+    return null == c ? null : c.filter(e => !e.isDiscardable())
   }
   hasPendingChanges() {
     return null !== c && (null === u || !i().isEqual(c, u))
@@ -128,13 +128,17 @@ class T extends Chunk442837.ZP.Store {
     } = this.getWidgetUpdates();
     return module
   }
-  hasSaveablePendingChanges() {
+  hasUnsavedChanges() {
     let {
       changedWidgets: e,
       removedWidgets: t,
       hasOrderChanges: n
     } = this.getWidgetUpdates();
     return module.length > 0 || exports.length > 0 || require
+  }
+  canSaveChanges() {
+    let e = this.getSaveablePendingWidgets();
+    return null != module && module.every(e => e.isValid())
   }
   get isSubmitting() {
     return d

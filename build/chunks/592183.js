@@ -79,7 +79,7 @@ let d = {
       applicationId: e
     })
   },
-  notifyPendingWidgets() {
+  notifyUnsavedWidgets() {
     Chunk585483.S.dispatch(Chunk981631.CkL.SHAKE_PROFILE_MODAL), Chunk585483.S.dispatch(Chunk981631.CkL.EMPHASIZE_NOTICE), Chunk780384.uv.announce("".concat(Chunk388032.intl.string(Chunk388032.t.GP7JLE), " ").concat(Chunk388032.intl.string(Chunk388032.t.gKoO1D)))
   }
 }

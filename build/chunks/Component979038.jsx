@@ -2,22 +2,26 @@
 /** chunk id: 979038, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk620662 = require("./620662.js"),
+var Chunk442837 = require("./442837.js"),
+  Chunk620662 = require("./620662.js"),
   Chunk841784 = require("./841784.js"),
   Chunk834353 = require("./834353.js"),
   Chunk802856 = require("./802856.js"),
   Chunk420660 = require("./420660.js"),
   Chunk206074 = require("./206074.js"),
+  Chunk194544 = require("./194544.jsx"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk584057 = require("./584057.js"),
   Chunk750154 = require("./750154.js"),
+  Chunk314897 = require("./314897.js"),
   Chunk374129 = require("./374129.jsx"),
   Chunk639351 = require("./639351.jsx"),
+  Chunk172416 = require("./172416.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk103479 = require("./103479.jsx"),
   Chunk191764 = require("./191764.jsx"),
@@ -30,56 +34,66 @@ var Chunk620662 = require("./620662.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js");
 
-function A(e) {
+function w(e) {
   var t;
   let {
     user: n,
-    activity: A,
-    onAction: N,
-    onClose: P,
-    application: R
+    activity: w,
+    onAction: D,
+    onClose: x,
+    application: L,
+    containerClassName: j
   } = e, {
-    themeType: w
-  } = (0, h.z)(), D = (0, c.q)(R), x = (0, f.L)(null != (t = null == A ? true : A.application_id) ? t : null == R ? true : R.id), {
-    analyticsLocations: L
-  } = (0, d.ZP)(u.Z.USER_PROFILE_ACTIVITY_BUTTONS), j = w === C.l.MODAL || w === C.l.MODAL_V2;
-  return x || !D || null == R || j ? (0, s.Z)(A) ? (0, r.jsx)(O.Z, {
-    platformType: T.ABu.XBOX,
-    icon: () => (0, r.jsx)(m.Z, {}),
-    onAction: N
-  }) : (0, o.Z)(A) ? (0, r.jsx)(O.Z, {
-    platformType: T.ABu.PLAYSTATION,
-    icon: () => (0, r.jsx)(_.Z, {}),
-    onAction: N
-  }) : (0, l.Z)(A) ? (0, r.jsx)(S.Z, {
-    activity: A,
-    onAction: N
-  }) : (0, i.Z)(A, T.xjy.JOIN) || (0, a.Z)(A) ? (0, r.jsx)(b.Z, {
+    themeType: M
+  } = (0, y.z)(), k = (0, i.e7)([h.default], () => h.default.getId() === n.id), U = (0, u.q)(L), G = (0, _.L)(null != (t = null == w ? true : w.application_id) ? t : null == L ? true : L.id), {
+    analyticsLocations: Z
+  } = (0, p.ZP)(f.Z.USER_PROFILE_ACTIVITY_BUTTONS), F = (0, b.Un)({
+    location: "UserProfileActivityButtons"
+  }), B = M === R.l.MODAL || M === R.l.MODAL_V2, V = M === R.l.POPOUT, H = (() => k ? V && (null == w ? true : w.type) === P.IIU.PLAYING && (null == L ? true : L.id) != null && F ? (0, r.jsx)(d.Z, {
+    applicationId: L.id,
+    onAction: D,
+    onClose: x
+  }) : null : G || !U || null == L || B ? (0, l.Z)(w) ? (0, r.jsx)(T.Z, {
+    platformType: P.ABu.XBOX,
+    icon: () => (0, r.jsx)(E.Z, {}),
+    onAction: D
+  }) : (0, s.Z)(w) ? (0, r.jsx)(T.Z, {
+    platformType: P.ABu.PLAYSTATION,
+    icon: () => (0, r.jsx)(g.Z, {}),
+    onAction: D
+  }) : (0, c.Z)(w) ? (0, r.jsx)(A.Z, {
+    activity: w,
+    onAction: D
+  }) : (0, a.Z)(w, P.xjy.JOIN) || (0, o.Z)(w) ? (0, r.jsx)(S.Z, {
     user: n,
-    activity: A,
-    onAction: N,
-    onClose: P
-  }) : (null == A ? true : A.type) === T.IIU.HANG_STATUS ? (0, r.jsx)(E.Z, {
+    activity: w,
+    onAction: D,
+    onClose: x
+  }) : (null == w ? true : w.type) === P.IIU.HANG_STATUS ? (0, r.jsx)(v.Z, {
     user: n,
-    activity: A,
-    onAction: N,
-    onClose: P
-  }) : (null == A ? true : A.buttons) != null && (null == A ? true : A.buttons.length) >= 1 ? (0, r.jsx)(g.Z, {
+    activity: w,
+    onAction: D,
+    onClose: x
+  }) : (null == w ? true : w.buttons) != null && (null == w ? true : w.buttons.length) >= 1 ? (0, r.jsx)(O.Z, {
     user: n,
-    activity: A,
-    onAction: N
-  }) : (0, i.Z)(A, T.xjy.INSTANCE) ? (0, r.jsx)(y.Z, {
+    activity: w,
+    onAction: D
+  }) : (0, a.Z)(w, P.xjy.INSTANCE) ? (0, r.jsx)(I.Z, {
     user: n,
-    activity: A,
-    onAction: N
-  }) : (0, p.dS)(A) ? (0, r.jsx)(v.Z, {
-    activity: A,
-    onAction: N,
-    onClose: P
-  }) : null : (0, r.jsx)(I.Z, {
-    application: R,
-    onAction: N,
-    onClose: P,
-    analyticsLocations: L
+    activity: w,
+    onAction: D
+  }) : (0, m.dS)(w) ? (0, r.jsx)(C.Z, {
+    activity: w,
+    onAction: D,
+    onClose: x
+  }) : null : (0, r.jsx)(N.Z, {
+    application: L,
+    onAction: D,
+    onClose: x,
+    analyticsLocations: Z
+  }))();
+  return null == H ? null : (0, r.jsx)("div", {
+    className: j,
+    children: H
   })
 }

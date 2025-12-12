@@ -37,10 +37,13 @@ function u(e) {
   } = (0, c.g)(), {
     trackUserProfileEditAction: g
   } = (0, a.KZ)(), p = i.useCallback((e, n, r) => {
-    d(e), f(true), (0, l.ES)(t, {
-      applicationId: e,
-      gameName: n,
-      imageSrc: r
+    d(e), f(true), (0, l.ES)({
+      widgetType: t,
+      game: {
+        applicationId: e,
+        gameName: n,
+        imageSrc: r
+      }
     }), g({
       action: "GAME_ADDED",
       gameId: e,

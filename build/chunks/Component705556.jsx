@@ -66,7 +66,7 @@ function O(e) {
     fullWidth: g,
     appContext: y,
     onClose: O
-  } = e, v = (0, a.e7)([c.default], () => c.default.getId() === t.id), S = (0, a.e7)([u.Z], () => null != n ? u.Z.getGuild(n) : null), I = (0, a.e7)([p.Z], () => p.Z.hasSaveablePendingChanges()), T = (0, l.Z)({
+  } = e, v = (0, a.e7)([c.default], () => c.default.getId() === t.id), S = (0, a.e7)([u.Z], () => null != n ? u.Z.getGuild(n) : null), I = (0, a.e7)([p.Z], () => p.Z.hasUnsavedChanges()), T = (0, l.Z)({
     guild: S
   }), C = (0, l.Z)({}), {
     trackUserProfileAction: A
@@ -79,7 +79,7 @@ function O(e) {
     fullWidth: g,
     variant: "primary",
     onClick: () => {
-      if (I) return void f.Z.notifyPendingWidgets();
+      if (I) return void f.Z.notifyUnsavedWidgets();
       null == O || O(), C(), (0, s.i)(y)
     }
   }) : (0, r.jsx)(o.yRy, {
@@ -129,7 +129,7 @@ function O(e) {
         fullWidth: g,
         variant: "primary",
         onClick: () => {
-          if (I) return void f.Z.notifyPendingWidgets();
+          if (I) return void f.Z.notifyUnsavedWidgets();
           null == t || t()
         }
       }, n))

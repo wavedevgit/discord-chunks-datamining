@@ -192,20 +192,20 @@ function A(e) {
     applicationId: f
   } = e, g = (0, s.Dt)(), m = (0, s.Dt)(), {
     trackUserProfileEditAction: h
-  } = (0, p.KZ)(), [y, O] = i.useState("idle"), [v, j] = i.useState(null != t ? t : ""), x = i.useRef(null), P = i.useRef(null), w = I.intl.string(I.t.xKSfBT), E = null != t && "" !== t.trim(), _ = i.useCallback(() => {
+  } = (0, p.KZ)(), [y, v] = i.useState("idle"), [O, j] = i.useState(null != t ? t : ""), x = i.useRef(null), P = i.useRef(null), w = I.intl.string(I.t.xKSfBT), E = null != t && "" !== t.trim(), _ = i.useCallback(() => {
     h({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
-    }), O("editing")
+    }), v("editing")
   }, [d, h]), T = i.useCallback(() => {
-    let e = v.trim(),
+    let e = O.trim(),
       n = e !== (null != t ? t : "").trim();
-    (0, b.Bu)(d, f, "" !== e ? e : true), O("completed"), n && h({
+    (0, b.Bu)(d, f, "" !== e ? e : true), v("completed"), n && h({
       action: "COMMENTARY_EDITED",
       widgetEdited: d,
       gameId: f
     })
-  }, [d, f, v, t, h]), C = i.useCallback(e => {
+  }, [d, f, O, t, h]), C = i.useCallback(e => {
     j(e)
   }, []);
   return i.useEffect(() => {
@@ -223,7 +223,7 @@ function A(e) {
       children: I.intl.string(I.t.JxKXeT)
     }), (0, r.jsx)(c.Kx8, {
       id: g,
-      value: v,
+      value: O,
       placeholder: w,
       onChange: C,
       onBlur: T,
@@ -285,13 +285,13 @@ function Z(e) {
     coverImageUrl: Z,
     gameName: R,
     isLoading: G
-  } = (0, P.Z)(I), L = {
+  } = (0, P.Z)(I), M = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, M = f.default.getCurrentUser(), B = (null == M ? true : M.id) === t.id, F = 1 === (0, b.Gv)(o), U = !s && B, W = U && (0, b.vI)(o), H = U && !F, {
+  }, L = f.default.getCurrentUser(), B = (null == L ? true : L.id) === t.id, U = 1 === (0, b.Gv)(o), F = !s && B, W = F && (0, b.vI)(o), H = F && !U, {
     registerDragHandleRef: z
   } = (0, h.C)();
-  if (G) return (0, r.jsx)(O.i, {});
+  if (G) return (0, r.jsx)(v.i, {});
   let K = () => (0, r.jsx)(y.Z, {
       coverRef: g,
       className: null == Z || s ? true : w.hoverActiveEffect,
@@ -312,13 +312,13 @@ function Z(e) {
         })]
       }) : K(), (0, r.jsxs)("div", {
         className: S.details,
-        children: [s ? (0, r.jsx)(c.Heading, _(E({}, L), {
+        children: [s ? (0, r.jsx)(c.Heading, _(E({}, M), {
           children: R
         })) : (0, r.jsx)(C, E({
           applicationId: I,
           userId: t.id,
           gameName: R
-        }, L)), W ? (0, r.jsx)(A, {
+        }, M)), W ? (0, r.jsx)(A, {
           text: D,
           user: t,
           guildId: n,
@@ -330,7 +330,7 @@ function Z(e) {
           user: t,
           guildId: n,
           channelId: i
-        }), (0, r.jsx)(v.Z, {
+        }), (0, r.jsx)(O.Z, {
           tags: k,
           isCurrentUser: B,
           widgetType: o,

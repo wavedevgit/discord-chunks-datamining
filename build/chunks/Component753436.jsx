@@ -1,7 +1,7 @@
 /** Chunk was on 85032 **/
 /** chunk id: 753436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => v
+  S: () => O
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk713603 = require("./713603.js"),
   Chunk507683 = require("./507683.js");
 
-function O(e) {
+function v(e) {
   let {
     index: t,
     widgetType: n,
@@ -57,14 +57,14 @@ function O(e) {
   })
 }
 
-function v(e) {
+function O(e) {
   let {
     game: t,
     userId: n,
     widgetType: i,
     guildId: c,
     channelId: m,
-    disableInteraction: v = false,
+    disableInteraction: O = false,
     index: j,
     onRemoveGame: x,
     coverRef: P
@@ -74,7 +74,7 @@ function v(e) {
     isLoading: S
   } = (0, p.Z)(t.applicationId), {
     registerDragHandleRef: E
-  } = (0, u.C)(), _ = (0, b.Z)(t.applicationId).length > 0, T = o.default.getCurrentUser(), C = (null == T ? true : T.id) === n, D = !v && C, {
+  } = (0, u.C)(), _ = (0, b.Z)(t.applicationId).length > 0, T = o.default.getCurrentUser(), C = (null == T ? true : T.id) === n, D = !O && C, {
     isDragging: k
   } = (0, l.f)(e => ({
     isDragging: e.isDragging()
@@ -84,14 +84,14 @@ function v(e) {
       gameName: w,
       applicationId: t.applicationId,
       userId: n,
-      disableInteraction: v,
-      className: a()(_ ? y.socialProofBackdrop : true, null == I || v ? true : h.hoverActiveEffect),
+      disableInteraction: O,
+      className: a()(_ ? y.socialProofBackdrop : true, null == I || O ? true : h.hoverActiveEffect),
       hideTooltip: k,
       coverRef: P
     }), D && (0, r.jsx)(s.e_, {
       buttonRef: E(t.applicationId),
       className: y.dragHandle
-    }), !v && (0, r.jsx)(g.L, {
+    }), !O && (0, r.jsx)(g.L, {
       userId: n,
       applicationId: t.applicationId,
       guildId: c,
@@ -107,7 +107,7 @@ function v(e) {
   });
   return S ? (0, r.jsx)("div", {
     className: h.loadingCover
-  }) : D ? (0, r.jsx)(O, {
+  }) : D ? (0, r.jsx)(v, {
     widgetType: i,
     index: null != j ? j : 0,
     game: t,

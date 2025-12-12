@@ -22,7 +22,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk203742 = require("./203742.js");
 
-function v(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -66,9 +66,9 @@ function x(e) {
     widget: t,
     additionalMenuItems: l,
     children: e => (0, r.jsx)(P, {
-      children: (0, r.jsxs)(s.P3F, j(v({
+      children: (0, r.jsxs)(s.P3F, j(O({
         innerRef: i,
-        className: a()(O.button, n),
+        className: a()(v.button, n),
         "data-dnd-name": o,
         "aria-label": y.intl.formatToPlainString(y.t.HWNJJN, {
           widgetTitle: o
@@ -96,7 +96,7 @@ let P = e => {
     }));
     return (0, r.jsx)(c.u, {
       __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
-        className: O.tooltipText,
+        className: v.tooltipText,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "none",
@@ -131,7 +131,7 @@ let P = e => {
       trackUserProfileEditAction: o
     } = (0, p.KZ)(), c = e => {
       if (e.shiftKey) {
-        (0, b.y8)(i.type), o(v({
+        (0, b.y8)(i.type), o(O({
           action: "WIDGET_REMOVED"
         }, i.getProfileEditAnalyticsOptions())), (0, m.L$)(h.qb.WIDGET_REMOVED);
         return
@@ -139,7 +139,7 @@ let P = e => {
         let {
           default: e
         } = await n.e("70887").then(n.bind(n, 37668));
-        return t => (0, r.jsx)(e, j(v({}, t), {
+        return t => (0, r.jsx)(e, j(O({}, t), {
           userId: g.default.getId(),
           widget: i,
           trackUserProfileEditAction: o
@@ -164,7 +164,7 @@ let P = e => {
           },
           onSelect: () => {},
           "aria-label": y.intl.string(y.t.xpSHSk),
-          className: O.menu,
+          className: v.menu,
           children: (0, r.jsxs)(s.kSQ, {
             children: [l, (0, r.jsx)(s.sNh, {
               id: "remove-widget",

@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
 function f(e) {
   let t = (0, l.e7)([c.default], () => c.default.getId() === e),
     n = (0, o.zPA)(),
-    r = (0, l.e7)([s.Z], () => s.Z.hasSaveablePendingChanges());
+    r = (0, l.e7)([s.Z], () => s.Z.hasUnsavedChanges());
   return t && (n || r)
 }
 

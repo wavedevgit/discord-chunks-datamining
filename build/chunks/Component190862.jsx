@@ -2,10 +2,10 @@
 /** chunk id: 190862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
-}), require("./388685.js");
-var Chunk54381 = require("./54381.js"),
-  Chunk473749 = require("./473749.js"),
-  Chunk296009 = require("./296009.js"),
+});
+var Chunk54381 = require("./54381.js");
+require("./473749.js");
+var Chunk296009 = require("./296009.js"),
   Chunk442837 = require("./442837.js"),
   Chunk314897 = require("./314897.js"),
   Chunk86419 = require("./86419.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk272289 = require("./272289.jsx"),
   Chunk902210 = require("./902210.js");
 
-function y(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function y(e) {
   return e
 }
 
-function O(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -53,66 +53,75 @@ function O(e, t) {
   }
   return i
 }
-let v = e => {
-    var {
-      widget: t
-    } = e, n = O(e, ["widget"]);
-    switch (t.type) {
-      case a.l.FAVORITE_GAMES:
-        return (0, r.jsx)(g.Z, y({
-          widget: t
-        }, n));
-      case a.l.CURRENT_GAMES:
-        return (0, r.jsx)(f.Z, y({
-          widget: t
-        }, n));
-      case a.l.WANT_TO_PLAY_GAMES:
-        return (0, r.jsx)(b.Z, y({
-          widget: t
-        }, n));
-      case a.l.PLAYED_GAMES:
-        return (0, r.jsx)(p.Z, y({
-          widget: t
-        }, n));
-      default:
-        return null
-    }
-  },
-  j = e => {
-    var {
-      widget: t,
-      user: n,
-      disableInteraction: a
-    } = e, f = O(e, ["widget", "user", "disableInteraction"]);
-    let {
-      shouldShowSuggestions: g,
-      handleDismissSuggestions: p
-    } = (0, s.h)(t), b = (0, l.e7)([o.default], () => o.default.getId() === n.id), j = b && !a && g, x = (0, c.mR)(t), P = (0, c.Hy)(t, {
-      isCurrentUser: b
-    }), I = (0, c.kQ)(t), w = 1 === (0, c.Gv)(t.type), [S, E] = i.useState(false);
-    return (0, r.jsx)(d.N, {
-      value: {
-        expanded: S,
-        setExpanded: E
-      },
-      children: (0, r.jsx)(v, y({
-        widget: t,
-        user: n,
-        disableInteraction: a,
-        headerTitle: x,
-        headerSubtitle: P,
-        headerActionButtons: b && !w ? [(0, r.jsx)(u.yX, {
-          disabled: I,
-          widgetType: t.type,
-          widget: t,
-          onAddGame: () => E(true)
-        }, "".concat(t.type, "-browse-games-popout"))] : true,
-        trailingContent: j && (0, r.jsx)(m.Z, {
-          userId: n.id,
-          widgetType: t.type,
-          onDismiss: p,
-          className: h.suggestedGames
-        })
-      }, f))
-    })
+
+function v(e) {
+  var {
+    widget: t
+  } = e, n = y(e, ["widget"]);
+  switch (t.type) {
+    case i.l.FAVORITE_GAMES:
+      return (0, r.jsx)(f.Z, h({
+        widget: t
+      }, n));
+    case i.l.CURRENT_GAMES:
+      return (0, r.jsx)(d.Z, h({
+        widget: t
+      }, n));
+    case i.l.WANT_TO_PLAY_GAMES:
+      return (0, r.jsx)(p.Z, h({
+        widget: t
+      }, n));
+    case i.l.PLAYED_GAMES:
+      return (0, r.jsx)(g.Z, h({
+        widget: t
+      }, n));
+    default:
+      return null
   }
+}
+
+function O(e) {
+  var {
+    widget: t,
+    user: n,
+    disableInteraction: i
+  } = e, d = y(e, ["widget", "user", "disableInteraction"]);
+  let {
+    setExpanded: f
+  } = (0, u.g)(), {
+    shouldShowSuggestions: g,
+    handleDismissSuggestions: p
+  } = (0, c.h)(t), O = (0, a.e7)([l.default], () => l.default.getId() === n.id), j = O && !i && g, x = (0, o.mR)(t), P = (0, o.Hy)(t, {
+    isCurrentUser: O
+  }), I = (0, o.kQ)(t), w = 1 === (0, o.Gv)(t.type);
+  return (0, r.jsx)(v, h({
+    widget: t,
+    user: n,
+    disableInteraction: i,
+    headerTitle: x,
+    headerSubtitle: P,
+    headerActionButtons: O && !w ? [(0, r.jsx)(s.yX, {
+      disabled: I,
+      widgetType: t.type,
+      widget: t,
+      onAddGame: () => f(true)
+    }, "".concat(t.type, "-browse-games-popout"))] : true,
+    trailingContent: j && (0, r.jsx)(b.Z, {
+      userId: n.id,
+      widgetType: t.type,
+      onDismiss: p,
+      className: m.suggestedGames
+    })
+  }, d))
+}
+
+function j(e) {
+  var {
+    widget: t
+  } = e, n = y(e, ["widget"]);
+  return (0, r.jsx)(u.N, {
+    children: (0, r.jsx)(O, h({
+      widget: t
+    }, n))
+  })
+}
