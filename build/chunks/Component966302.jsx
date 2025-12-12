@@ -308,7 +308,7 @@ function el(e) {
             [q.previewCamera]: O
           }, e),
           style: ee(J({}, n), {
-            width: F.value.interpolate([0, 1], [el.width, er]),
+            minWidth: F.value.interpolate([0, 1], [el.width, er]),
             minHeight: F.value.interpolate([0, 1], [el.height, ei]),
             translateX: F.value.interpolate([0, 1], [0, false * Math.abs(er - el.width) / 2])
           }),

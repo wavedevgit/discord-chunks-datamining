@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk797670 = require("./797670.jsx"),
   Chunk304432 = require("./304432.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk254681 = require("./254681.js"),
+  Chunk498778 = require("./498778.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk378976 = require("./378976.js");
 
@@ -104,10 +104,10 @@ let g = function() {
             label: Chunk388032.intl.string(Chunk388032.t.CbaapP),
             value: Chunk304432.W.RECENTLY_JOINED
           }, {
-            label: Chunk388032.intl.string(Chunk254681.default.ZI51JZ),
+            label: Chunk388032.intl.string(Chunk498778.default.ZI51JZ),
             value: Chunk304432.W.ACTIVITY_SHARING_ON
           }, {
-            label: Chunk388032.intl.string(Chunk254681.default["+kxafn"]),
+            label: Chunk388032.intl.string(Chunk498778.default["+kxafn"]),
             value: Chunk304432.W.ACTIVITY_SHARING_OFF
           }],
           select: e => {
@@ -129,7 +129,7 @@ let g = function() {
     }), (0, Chunk54381.jsx)(Chunk481060.nn4, {
       "aria-live": "polite",
       role: "region",
-      children: Chunk388032.intl.format(Chunk254681.default.EvzDff, {
+      children: Chunk388032.intl.format(Chunk498778.default.EvzDff, {
         count: module.length
       })
     }), (0, Chunk54381.jsxs)("ul", {

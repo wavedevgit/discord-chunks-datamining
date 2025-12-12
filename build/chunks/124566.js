@@ -58,6 +58,9 @@ let h = {
           return fetch(t).then(e => e.json())
         }),
         getGlowAnimationData: () => Promise.resolve(null)
+      },
+      gradientConfig: {
+        gradient: ["rgba(88, 101, 242, 0)", "rgba(88, 101, 242, 1)"]
       }
     },
     firstTimeNotice: {

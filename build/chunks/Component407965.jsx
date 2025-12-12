@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk45474 = require("./45474.js"),
   Chunk594135 = require("./594135.js"),
   Chunk282793 = require("./282793.js"),
-  Chunk96011 = require("./96011.js"),
+  Chunk941651 = require("./941651.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk181679 = require("./181679.js");
 let v = e => {
@@ -61,8 +61,8 @@ let v = e => {
       }
     });
     let A = (0, Chunk74538.Ju)(S),
-      N = A ? Chunk388032.intl.string(Chunk96011.default.z2vO3h) : Chunk388032.intl.string(Chunk388032.t.PWq8TL),
-      P = A ? Chunk388032.intl.formatToPlainString(Chunk96011.default.stVlc6, {
+      N = A ? Chunk388032.intl.string(Chunk941651.default.z2vO3h) : Chunk388032.intl.string(Chunk388032.t.PWq8TL),
+      P = A ? Chunk388032.intl.formatToPlainString(Chunk941651.default.stVlc6, {
         cooldownMonths: Chunk282793.T9
       }) : Chunk388032.intl.string(Chunk388032.t.SOC4ML),
       R = [];

@@ -1,4 +1,3 @@
-/** Chunk was on 23357 **/
-/** chunk id: 947814, original params: e,t,n (module,exports,require) **/
-"use strict";
-require("./481754.js"), module.exports = require("./981994.js").Object.setPrototypeOf
+/** Chunk was on 28776 **/
+/** chunk id: 947814, original params: e (module,exports,require) **/
+module.exports = JSON.parse('{"RPb8Zk":["Dein Feedback hilft uns, die Discord-Safety-Funktionen zu verbessern."],"cDP3b4":["Feedback abgeschickt"],"KZw6kn":["Was funktioniert nicht gut?"],"eSP1F9":["Ich habe meine Meinung \xfcber die Anzeige dieses Inhalts ge\xe4ndert."],"bC0QVX":["Die Anweisungen waren verwirrend."],"8JFGXc":["Ich habe versucht, die Schritte zu befolgen, aber es hat nicht funktioniert."],"Dl4A+U":["Ich hatte nicht die richtigen Dokumente dabei."],"ZsnNgz":["Mir ist unwohl dabei, personenbezogene Daten zu teilen."],"ep5SQp":["Sonstiges"],"kkKhVJ":["Das dauert zu lange."],"maxf2S":["Ich habe mich gefragt, warum das n\xf6tig war."],"Q5cQ46":["Beschreibe dein Problem"],"zApKaR":["M\xf6chtest du uns mehr dar\xfcber erz\xe4hlen?"],"4djgO/":["Danke f\xfcr das Feedback!"],"RqoA4v":["Wie war deine Erfahrung mit der Altersbest\xe4tigung?"]}')

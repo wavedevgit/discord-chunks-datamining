@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk391876 = require("./391876.jsx"),
   Chunk883166 = require("./883166.jsx"),
   Chunk612776 = require("./612776.js"),
-  Chunk862474 = require("./862474.js"),
+  Chunk670847 = require("./670847.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk417788 = require("./417788.js"),
   Chunk154326 = require("./154326.js");
@@ -171,7 +171,7 @@ function N() {
         }), (0, Chunk54381.jsx)(Chunk391876.Z, {
           variant: "eyebrow",
           className: Chunk417788.eyebrow,
-          children: Chunk388032.intl.string(Chunk862474.default.mAroeJ)
+          children: Chunk388032.intl.string(Chunk670847.default.mAroeJ)
         })]
       }), (0, Chunk54381.jsxs)("div", {
         className: Chunk154326.header,
@@ -183,7 +183,7 @@ function N() {
           children: [(0, Chunk54381.jsx)(Chunk391876.Z, {
             variant: "heading-xxl/medium",
             className: Chunk154326.subtitle,
-            children: Chunk388032.intl.string(Chunk862474.default.Q0EMOP)
+            children: Chunk388032.intl.string(Chunk670847.default.Q0EMOP)
           }), (0, Chunk54381.jsx)(Chunk909397.o, {
             slide: Chunk612776.yD.GUILDS
           })]

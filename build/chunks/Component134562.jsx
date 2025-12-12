@@ -17,7 +17,7 @@ function c(t) {
     onClose: e,
     transitionState: c
   } = t;
-  return (0, a.jsxs)(r.Ioy, {
+  return (0, r.jsxs)(i.Ioy, {
     graphic: {
       type: "image",
       src: o.Z
@@ -34,13 +34,13 @@ function c(t) {
       text: l.intl.string(l.t["ETE/oC"]),
       onClick: e
     }],
-    children: [(0, a.jsx)(r.Text, {
+    children: [(0, r.jsx)(i.Text, {
       className: s.description,
       variant: "text-md/normal",
       children: l.intl.format(l.t.rqWXUf, {
-        hcArticle: i.j1
+        hcArticle: a.j1
       })
-    }), (0, a.jsx)(r.Text, {
+    }), (0, r.jsx)(i.Text, {
       className: s.description,
       variant: "text-md/normal",
       children: l.intl.string(l.t["3LW10C"])

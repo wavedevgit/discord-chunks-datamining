@@ -22,13 +22,13 @@ function l() {
   })
 }
 async function s(t) {
-  return (await r.Z.post({
-    url: i.ANM.USER_EMAIL_VERIFY_CODE,
+  return (await i.Z.post({
+    url: a.ANM.USER_EMAIL_VERIFY_CODE,
     body: {
       code: t
     },
     trackedActionData: {
-      event: a.NetworkActionNames.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE
+      event: r.NetworkActionNames.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE
     },
     rejectWithError: false
   })).body

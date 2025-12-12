@@ -1,5 +1,5 @@
 /** Chunk was on 56499 **/
-/** chunk id: 433570, original params: t,e,a (module,exports,require) **/
+/** chunk id: 433570, original params: t,e,s (module,exports,require) **/
 require.d(exports, {
   default: () => p
 }), require("./388685.js");
@@ -15,25 +15,25 @@ var Chunk54381 = require("./54381.js"),
 function p(t) {
   let {
     transitionState: e,
-    onFormSubmit: a,
+    onFormSubmit: s,
     onResend: p,
     onSuccess: y,
-    onClose: d,
-    headerText: h,
-    confirmButtonText: g,
-    confirmButtonVariant: T = "primary",
-    impression: f
-  } = t, [m, x] = n.useState(false), [S, w] = n.useState(""), [C, b] = n.useState(false), [k, v] = n.useState(null), E = n.useRef(null), j = async t => {
-    t.preventDefault(), v(null), x(true);
+    onClose: g,
+    headerText: d,
+    confirmButtonText: h,
+    confirmButtonVariant: x = "primary",
+    impression: T
+  } = t, [f, m] = n.useState(false), [S, w] = n.useState(""), [C, b] = n.useState(false), [k, v] = n.useState(null), E = n.useRef(null), j = async t => {
+    t.preventDefault(), v(null), m(true);
     try {
-      let t = await a(S);
-      null != y && y(t), d()
+      let t = await s(S);
+      null != y && y(t), g()
     } catch (t) {
       v(new o.Z(t).getAnyErrorMessage())
     } finally {
-      x(false)
+      m(false)
     }
-  }, M = async () => {
+  }, A = async () => {
     if (!C) {
       b(true);
       try {
@@ -45,46 +45,45 @@ function p(t) {
         b(false)
       }
     }
-  }, A = m || C;
-  return (0, s.jsx)("form", {
+  }, M = f || C;
+  return (0, a.jsx)("form", {
     onSubmit: j,
-    children: (0, s.jsx)(r.ExpressiveModal, {
+    children: (0, a.jsx)(r.ExpressiveModal, {
       transitionState: e,
       trackingProps: {
-        impression: f,
+        impression: T,
         impressionType: i.ImpressionTypes.MODAL
       },
       graphic: {
         src: u,
         type: "image"
       },
-      title: h,
+      title: d,
       subtitle: c.intl.string(c.t.SZJowy),
       actions: [{
         text: c.intl.string(c.t["ETE/oC"]),
-        onClick: d,
+        onClick: g,
         variant: "secondary",
-        disabled: A
+        disabled: M
       }, {
-        text: g,
-        variant: T,
-        loading: A,
+        text: h,
+        variant: x,
+        loading: M,
         type: "submit"
       }],
-      onClose: d,
-      children: (0, s.jsxs)(l.Kqy, {
+      onClose: g,
+      children: (0, a.jsxs)(l.Kqy, {
         gap: 8,
-        children: [(0, s.jsx)(l.oil, {
+        children: [(0, a.jsx)(l.oil, {
           label: c.intl.string(c.t["8mZX6M"]),
           error: k,
           value: S,
           onChange: w,
           inputRef: E
-        }), (0, s.jsx)(l.Text, {
-          variant: "text-sm/normal",
-          children: c.intl.format(c.t.P0sak5, {
-            onResend: M
-          })
+        }), (0, a.jsx)(r.Avr, {
+          textVariant: "text-sm/normal",
+          text: c.intl.string(c.t.K0NPQ6),
+          onClick: A
         })]
       })
     })

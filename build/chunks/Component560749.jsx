@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk823379 = require("./823379.js"),
   Chunk102172 = require("./102172.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk258587 = require("./258587.js"),
+  Chunk731136 = require("./731136.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk603410 = require("./603410.js");
 
@@ -155,11 +155,11 @@ function N() {
       className: Chunk603410.emptyHeader,
       variant: "text-lg/medium",
       color: "text-strong",
-      children: Chunk388032.intl.string(Chunk258587.default.sWGfr9)
+      children: Chunk388032.intl.string(Chunk731136.default.sWGfr9)
     }), (0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       color: "text-subtle",
-      children: Chunk388032.intl.string(Chunk258587.default["nBRtt/"])
+      children: Chunk388032.intl.string(Chunk731136.default["nBRtt/"])
     })]
   })
 }

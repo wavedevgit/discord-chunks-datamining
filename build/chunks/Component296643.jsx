@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk410030 = require("./410030.js"),
   Chunk343312 = require("./343312.jsx"),
   Chunk231338 = require("./231338.js"),
-  Chunk400580 = require("./400580.js"),
+  Chunk847328 = require("./847328.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk731926 = require("./731926.js"),
   Chunk737413 = require("./737413.js"),
@@ -20,7 +20,7 @@ function f() {
   return (0, Chunk54381.jsx)(Chunk793030.xvT, {
     variant: "text-sm/medium",
     className: Chunk731926.text,
-    children: Chunk388032.intl.format(Chunk400580.default.fcJiY8, {
+    children: Chunk388032.intl.format(Chunk847328.default.fcJiY8, {
       provider: (0, Chunk54381.jsx)("img", {
         className: Chunk731926.image,
         src: module !== Chunk231338.BR.LIGHT ? Chunk688913 : Chunk737413,

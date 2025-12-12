@@ -7,10 +7,10 @@ var Chunk509613 = require("./509613.js"),
   Chunk695346 = require("./695346.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk254681 = require("./254681.js");
+  Chunk498778 = require("./498778.js");
 let a = (0, Chunk509613.qs)(Chunk313789.n.ACTIVITY_PRIVACY_VOICE_JOIN_SETTING, {
-  useTitle: () => Chunk388032.intl.string(Chunk254681.default.Uz5Ipi),
-  useSubtitle: () => Chunk388032.intl.string(Chunk254681.default.CZI2Gb),
+  useTitle: () => Chunk388032.intl.string(Chunk498778.default.Uz5Ipi),
+  useSubtitle: () => Chunk388032.intl.string(Chunk498778.default.CZI2Gb),
   useValue: () => Chunk695346.Ou.useSetting(),
   setValue: t => l.Ou.updateSetting(t)
 })

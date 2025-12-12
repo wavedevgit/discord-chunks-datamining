@@ -19,18 +19,18 @@ function _(t) {
     onNext: n,
     onClose: e,
     transitionState: _
-  } = t, [d, C] = r.useState(false), x = (0, i.e7)([c.default], () => c.default.getCurrentUser()), N = async t => {
-    t.preventDefault(), C(true);
+  } = t, [C, d] = i.useState(false), x = (0, a.e7)([c.default], () => c.default.getCurrentUser()), N = async t => {
+    t.preventDefault(), d(true);
     try {
       await (0, o.i)(), n()
     } catch (n) {
       let t = new s.Z(n).getAnyErrorMessage();
       null != t && (0, l.showToast)((0, l.createToast)(t, l.ToastType.FAILURE))
     } finally {
-      C(false)
+      d(false)
     }
   };
-  return (0, a.jsx)(l.Ioy, {
+  return (0, r.jsx)(l.Ioy, {
     graphic: {
       type: "image",
       src: A
@@ -45,10 +45,10 @@ function _(t) {
     }, {
       variant: "primary",
       text: u.intl.string(u.t.rXV81H),
-      loading: d,
+      loading: C,
       onClick: N
     }],
-    children: (0, a.jsx)(l.Text, {
+    children: (0, r.jsx)(l.Text, {
       className: E.description,
       variant: "text-md/normal",
       children: u.intl.format(u.t.oMFSgi, {

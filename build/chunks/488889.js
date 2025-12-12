@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk308569 = require("./308569.js"),
   Chunk388032 = require("./388032.jsx");
-let i = {
+let a = {
   [Chunk308569.pw.DISCORD_EMPLOYEE_ASKED_ME_TO]: () => Chunk388032.intl.string(Chunk388032.t.naBTFO),
   [Chunk308569.pw.SOMEONE_ASKED_ME_TO]: () => Chunk388032.intl.string(Chunk388032.t.LQ0RUP),
   [Chunk308569.pw.NEW_EMAIL]: () => Chunk388032.intl.string(Chunk388032.t.oOqQjw),
@@ -13,5 +13,5 @@ let i = {
 };
 
 function l(t) {
-  return i[t]()
+  return a[t]()
 }

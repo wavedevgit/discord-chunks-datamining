@@ -248,7 +248,7 @@ let C = {
   NewMemberActionModal: async () => {
     let {
       default: e
-    } = await Promise.all([require.e("7590"), require.e("14010")]).then(require.bind(require, 380716)), {
+    } = await Promise.all([require.e("7590"), require.e("81257")]).then(require.bind(require, 380716)), {
       NewMemberActionTypes: t
     } = await Promise.resolve().then(require.bind(require, 734893)), r = {
       channelId: "123456789",

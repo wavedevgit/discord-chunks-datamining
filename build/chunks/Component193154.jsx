@@ -57,7 +57,7 @@ function h(e) {
             (0, o.ZDy)(async () => {
               let {
                 default: t
-              } = await n.e("42358").then(n.bind(n, 210995));
+              } = await n.e("1872").then(n.bind(n, 210995));
               return n => (0, r.jsx)(t, f({
                 name: e.name,
                 guildId: e.id

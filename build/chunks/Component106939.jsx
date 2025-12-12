@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk539086 = require("./539086.js"),
   Chunk292352 = require("./292352.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk435757 = require("./435757.js"),
+  Chunk148806 = require("./148806.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk166387 = require("./166387.js");
 let x = {
@@ -153,9 +153,9 @@ function U() {
   let s = x[require];
   return (0, Chunk54381.jsxs)("main", {
     className: Chunk166387.container,
-    "aria-label": Chunk388032.intl.string(Chunk435757.default.RZqaJn),
+    "aria-label": Chunk388032.intl.string(Chunk148806.default.RZqaJn),
     children: [(0, Chunk54381.jsx)(Chunk252618.yY, {
-      location: Chunk388032.intl.string(Chunk435757.default.RZqaJn)
+      location: Chunk388032.intl.string(Chunk148806.default.RZqaJn)
     }), (0, Chunk54381.jsx)(M, {
       section: require,
       handleItemSelect: a
@@ -198,9 +198,9 @@ function G() {
     value: module,
     children: (0, Chunk54381.jsxs)("main", {
       className: a()(Chunk166387.container, Chunk166387.containerSidenav),
-      "aria-label": Chunk388032.intl.string(Chunk435757.default.RZqaJn),
+      "aria-label": Chunk388032.intl.string(Chunk148806.default.RZqaJn),
       children: [(0, Chunk54381.jsx)(Chunk252618.yY, {
-        location: Chunk388032.intl.string(Chunk435757.default.RZqaJn)
+        location: Chunk388032.intl.string(Chunk148806.default.RZqaJn)
       }), (0, Chunk54381.jsx)(k, {
         theme: Chunk120356,
         section: Chunk731934,

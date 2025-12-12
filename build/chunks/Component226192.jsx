@@ -76,7 +76,7 @@ function f(e) {
       (0, o.ZDy)(async () => {
         let {
           default: o
-        } = await n.e("74543").then(n.bind(n, 643611)), l = t.actions.find(e => e.type === a.jj.FLAG_TO_CHANNEL);
+        } = await n.e("63714").then(n.bind(n, 643611)), l = t.actions.find(e => e.type === a.jj.FLAG_TO_CHANNEL);
         return n => (0, r.jsx)(o, d(c({
           action: i,
           isEdit: null != l,

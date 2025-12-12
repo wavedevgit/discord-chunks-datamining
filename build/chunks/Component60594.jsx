@@ -246,8 +246,8 @@ function eo(e) {
       eQ(e);
       eN(K ? 2 : 3)
     }, [K]),
-    e9 = !(1 === eT && eO && eC === H.Uc.Error),
-    e6 = function(e) {
+    e6 = !(1 === eT && eO && eC === H.Uc.Error),
+    e9 = function(e) {
       switch (e) {
         case 2:
           return et.intl.string(et.t["aC4/Zi"]);
@@ -274,11 +274,11 @@ function eo(e) {
           id: eE,
           className: en.headerText,
           children: et.intl.string(et.t.RDkJQ6)
-        }), e9 && null != e6 ? (0, r.jsx)(m.Text, {
+        }), e6 && null != e9 ? (0, r.jsx)(m.Text, {
           className: en.headerDescription,
           variant: "text-md/normal",
           color: "text-subtle",
-          children: e6
+          children: e9
         }) : null]
       })
     }),

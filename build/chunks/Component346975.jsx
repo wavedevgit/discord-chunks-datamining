@@ -503,8 +503,8 @@ function eP(e) {
     updateMasonryListScrollerRef: e4,
     getItemKey: e8,
     renderGridSection: e9,
-    renderGridItem: e2,
-    getGridSectionHeight: e5,
+    renderGridItem: e5,
+    getGridSectionHeight: e2,
     getSectionProps: e7,
     handleGridFocus: te
   } = function(e) {
@@ -714,10 +714,10 @@ function eP(e) {
             columns: eA,
             sections: eU,
             getItemKey: e8,
-            getSectionHeight: e5,
+            getSectionHeight: e2,
             getItemHeight: ta,
             renderSection: e9,
-            renderItem: e2,
+            renderItem: e5,
             getSectionProps: e7,
             onScroll: C ? tt : true,
             chunkSize: 350
