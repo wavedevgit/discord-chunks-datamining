@@ -1,12 +1,9 @@
 /** Chunk was on web.js **/
 /** chunk id: 803038, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-require.d(exports, {
-  Mc: () => a
-});
 var Chunk818083 = require("./818083.js"),
   Chunk987338 = require("./987338.js");
-let a = (0, Chunk818083.B)({
+(0, Chunk818083.B)({
   id: "2025-05_client_theme_color_picker",
   kind: "user",
   label: "Client Theme Color Picker",

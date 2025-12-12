@@ -113,8 +113,11 @@ function E(e) {
   let {
     i18n: i
   } = (0, c.ZF)();
-  return (0, r.jsx)(l.X, _(f({}, n), {
-    label: null != t ? t : i.MODAL_DONT_SHOW_AGAIN,
-    labelType: "secondary"
-  }))
+  return (0, r.jsx)("div", {
+    className: u.actionBarCheckbox,
+    children: (0, r.jsx)(l.X, _(f({}, n), {
+      label: null != t ? t : i.MODAL_DONT_SHOW_AGAIN,
+      labelType: "secondary"
+    }))
+  })
 }

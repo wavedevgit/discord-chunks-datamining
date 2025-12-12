@@ -50,6 +50,7 @@ var r = {
   actionBarTrailing: "_8a031a135bfcb9ba-actionBarTrailing",
   actionButtonWrapper: "_8a031a135bfcb9ba-actionButtonWrapper",
   actionBarTrailingFullWidth: "_8a031a135bfcb9ba-actionBarTrailingFullWidth",
+  actionBarCheckbox: "_8a031a135bfcb9ba-actionBarCheckbox",
   actionBarLayoutChatInput: "_8a031a135bfcb9ba-actionBarLayoutChatInput"
 };
 require.r(module.exports = r)

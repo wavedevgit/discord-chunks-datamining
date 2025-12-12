@@ -42,10 +42,10 @@ function a(t) {
       a && (0, l.E)()
     },
     variant: "primary",
-    checkbox: (0, n.jsx)(c.Blj, {
+    checkboxProps: {
       checked: a,
-      onChange: u
-    })
+      onChange: t => u(t)
+    }
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
     var r = Object.keys(t);
     if (Object.getOwnPropertySymbols) {

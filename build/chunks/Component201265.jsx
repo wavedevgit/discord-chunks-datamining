@@ -2,14 +2,15 @@
 /** chunk id: 201265, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ConfirmModal: () => d
+  ConfirmModal: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk402453 = require("./402453.jsx"),
-  Chunk775086 = require("./775086.jsx");
+  Chunk775086 = require("./775086.jsx"),
+  Chunk144771 = require("./144771.jsx");
 
-function s(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,22 +19,22 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function l(e) {
+function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      l(e, t, n[t])
     })
   }
   return e
 }
 
-function c(e, t) {
+function u(e, t) {
   if (null == e) return {};
-  var n, r, i = u(e, t);
+  var n, r, i = d(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -41,7 +42,7 @@ function c(e, t) {
   return i
 }
 
-function u(e, t) {
+function d(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -49,54 +50,54 @@ function u(e, t) {
   return i
 }
 
-function d(e) {
+function f(e) {
   var {
     confirmText: t,
     cancelText: n,
-    checkbox: s,
-    onConfirm: u,
-    onCancel: d,
-    onCloseCallback: f,
-    variant: p = "critical"
-  } = e, _ = c(e, ["confirmText", "cancelText", "checkbox", "onConfirm", "onCancel", "onCloseCallback", "variant"]);
+    checkboxProps: l,
+    onConfirm: d,
+    onCancel: f,
+    onCloseCallback: p,
+    variant: _ = "critical"
+  } = e, m = u(e, ["confirmText", "cancelText", "checkboxProps", "onConfirm", "onCancel", "onCloseCallback", "variant"]);
   let {
-    i18n: m
-  } = (0, a.ZF)(), h = m.CANCEL, g = m.INLINE_NOTICE_GENERIC_ERROR, [E, b] = i.useState(false), y = i.useRef(f);
+    i18n: h
+  } = (0, a.ZF)(), g = h.CANCEL, E = h.INLINE_NOTICE_GENERIC_ERROR, [b, y] = i.useState(false), O = i.useRef(p);
   i.useLayoutEffect(() => {
-    y.current = f
+    O.current = p
   }), i.useLayoutEffect(() => () => {
     var e;
-    null == (e = y.current) || e.call(y)
+    null == (e = O.current) || e.call(O)
   }, []);
-  let [O, v] = i.useState(true), S = e => {
-    v(e)
+  let [v, S] = i.useState(true), I = e => {
+    S(e)
   };
-  return (0, r.jsx)(o.Modal, l({
+  return (0, r.jsx)(o.Modal, c({
     actions: [{
-      text: null != n ? n : h,
+      text: null != n ? n : g,
       variant: "secondary",
       onClick: () => {
-        null == d || d(), _.onClose()
+        null == f || f(), m.onClose()
       }
     }, {
       text: t,
-      variant: "primary" === p ? "primary" : "critical-primary",
+      variant: "critical" === _ ? "critical-primary" : _,
       onClick: async () => {
-        v(true), b(true);
+        S(true), y(true);
         try {
-          await (null == u ? true : u(S)), _.onClose()
+          await (null == d ? true : d(I)), m.onClose()
         } catch (e) {
-          throw b(false), v(e => null != e ? e : g), e
+          throw y(false), S(e => null != e ? e : E), e
         }
       },
-      disabled: E,
-      loading: E
+      disabled: b,
+      loading: b
     }],
-    actionBarInput: s,
+    actionBarInput: null != l ? (0, r.jsx)(s.B, c({}, l)) : true,
     role: "alertdialog",
-    notice: null != O ? {
-      message: O,
+    notice: null != v ? {
+      message: v,
       type: "critical"
     } : true
-  }, _))
+  }, m))
 }

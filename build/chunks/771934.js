@@ -2,148 +2,121 @@
 /** chunk id: 771934, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ac: () => b,
-  DI: () => A,
-  HA: () => R,
-  HV: () => S,
-  J4: () => m,
-  JL: () => g,
-  Ln: () => d,
-  Om: () => I,
-  P0: () => _,
-  PI: () => O,
-  Vb: () => C,
-  fR: () => y,
-  gG: () => h,
-  hf: () => P,
-  u7: () => N,
-  uf: () => T,
-  w8: () => E,
-  z3: () => v,
-  zW: () => p
+  Ac: () => h,
+  DI: () => I,
+  HV: () => y,
+  J4: () => f,
+  JL: () => _,
+  Ln: () => l,
+  Om: () => O,
+  P0: () => d,
+  PI: () => E,
+  Vb: () => S,
+  fR: () => g,
+  gG: () => p,
+  hf: () => C,
+  u7: () => T,
+  uf: () => v,
+  w8: () => m,
+  z3: () => b,
+  zW: () => u
 });
 var Chunk473749 = require("./473749.js"),
-  Chunk704215 = require("./704215.js"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk467409 = require("./467409.js"),
-  Chunk266454 = require("./266454.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
-  d = function(e) {
+  l = function(e) {
     return e.APPEARANCE_SETTINGS = "appearance_settings", e.PREVIEW_THEMES = "preview_themes", e
   }({});
-let f = "manual",
-  p = () => {
-    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+let c = "manual",
+  u = () => {
+    c = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "hex_input"
     })
   },
-  _ = () => {
-    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  d = () => {
+    c = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "color_picker"
     })
   },
-  m = () => {
+  f = () => {
     Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "eye_dropper"
     })
   },
-  h = () => {
-    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  p = () => {
+    c = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "add_color"
     })
   },
-  g = () => {
-    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  _ = () => {
+    c = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "remove_color"
     })
   },
-  E = () => {
+  m = () => {
     Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "color_selected"
     })
   },
-  b = () => {
-    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  h = () => {
+    c = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "gradient_direction_input"
     })
   },
-  y = () => {
-    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  g = () => {
+    c = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "gradient_direction"
     })
   },
-  O = () => {
-    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  E = () => {
+    c = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "color_intensity_input"
     })
   },
-  v = () => {
-    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  b = () => {
+    c = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "color_intensity"
     })
   },
-  S = () => {
-    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
+  y = () => {
+    c = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_EDITOR_CONTROLS_CHANGED, {
       control_name: "base_theme"
     })
   },
-  I = () => {
-    f = "surprise_me", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_SURPRISE_BUTTON_CLICKED, {})
+  O = () => {
+    c = "surprise_me", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_SURPRISE_BUTTON_CLICKED, {})
   },
-  T = () => {
-    f = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEME_RESET_BUTTON_CLICKED, {})
+  v = () => {
+    c = "manual", Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEME_RESET_BUTTON_CLICKED, {})
   },
-  C = () => {
+  S = () => {
     Chunk626135.default.track(Chunk981631.rMx.CUSTOM_THEMES_BACK_BUTTON_CLICKED, {})
   },
-  A = e => {
-    l.default.track(c.rMx.CUSTOM_THEMES_BANNER_CLICKED, {
+  I = e => {
+    a.default.track(o.rMx.CUSTOM_THEMES_BANNER_CLICKED, {
       banner_location: e
     })
   },
-  N = (e, t, n, r, i) => {
-    l.default.track(c.rMx.CUSTOM_THEMES_UPDATED, {
+  T = (e, t, n, r, i) => {
+    a.default.track(o.rMx.CUSTOM_THEMES_UPDATED, {
       colors: e,
       color_intensity: t,
       gradient_angle: n,
       base_theme: r,
       location_stack: i,
-      creation_method: f
-    }), f = "manual"
+      creation_method: c
+    }), c = "manual"
   },
-  P = (e, t) => {
+  C = (e, t) => {
     let {
       analyticsLocations: n
-    } = (0, a.ZP)(t);
+    } = (0, i.ZP)(t);
     r.useEffect(() => {
-      e || l.default.track(c.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: u.cd.CUSTOM_THEMES_UPSELL,
+      e || a.default.track(o.rMx.PREMIUM_UPSELL_VIEWED, {
+        type: s.cd.CUSTOM_THEMES_UPSELL,
         location_stack: n
       })
     }, [e, n])
-  },
-  R = (e, t) => {
-    let n = (0, s.Nj)(i.z.CUSTOM_THEME_COACHMARK);
-    r.useEffect(() => {
-      if (e && !n && t !== i.z.CUSTOM_THEME_COACHMARK) {
-        let {
-          dailyCapReached: e,
-          inCooldown: t,
-          inAccountTenureRestriction: n,
-          lastContentShown: r,
-          currentFatigableWinner: a,
-          lastDismissibleContentWinner: s
-        } = (0, o.i)(i.z.CUSTOM_THEME_COACHMARK);
-        (e || t || n || "CUSTOM_THEME_COACHMARK" !== a && "None" !== a) && l.default.track(c.rMx.CUSTOM_THEMES_COACHMARK_NOT_SHOWN_REASON, {
-          daily_cap_reached: e,
-          in_cooldown: t,
-          in_account_tenure_restriction: n,
-          last_content_shown: r,
-          current_fatigable_winner: a,
-          last_dismissible_content_winner: s
-        })
-      }
-    }, [e, n, t])
   }

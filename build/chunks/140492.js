@@ -20,7 +20,7 @@ var Chunk358230 = require("./358230.js"),
   Chunk176505 = require("./176505.js");
 let g = () => {
   let e = Chunk355298.Z.getMessageRequestsCount() > 0 || Chunk333984.Z.getSpamChannelsCount() > 0;
-  return [Chunk981631.Z5c.FRIENDS, (0, Chunk518929.VZ)("navigateToChannel") ? Chunk981631.Z5c.ICYMI : null, module ? Chunk981631.Z5c.MESSAGE_REQUESTS : null, Chunk283595.Z.hasLibraryApplication() && !Chunk695346.bm.getSetting() ? Chunk981631.Z5c.APPLICATION_LIBRARY : null, Chunk981631.Z5c.APPLICATION_STORE, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk695346.Ex.getSetting() ? Chunk981631.Z5c.FAMILY_CENTER : null, Chunk981631.Z5c.QUEST_HOME_V2].filter(Chunk823379.lm)
+  return [Chunk981631.Z5c.FRIENDS, (0, Chunk518929.VZ)("navigateToChannel") ? Chunk981631.Z5c.ICYMI : null, Chunk283595.Z.hasLibraryApplication() && !Chunk695346.bm.getSetting() ? Chunk981631.Z5c.APPLICATION_LIBRARY : null, module ? Chunk981631.Z5c.MESSAGE_REQUESTS : null, Chunk981631.Z5c.APPLICATION_STORE, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk695346.Ex.getSetting() ? Chunk981631.Z5c.FAMILY_CENTER : null, Chunk981631.Z5c.QUEST_HOME_V2].filter(Chunk823379.lm)
 };
 
 function E(e, t) {
