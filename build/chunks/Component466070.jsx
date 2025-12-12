@@ -33,9 +33,9 @@ function d(e) {
   var t, {
       channel: d,
       application: u,
-      showApplicationImage: b
+      showApplicationImage: m
     } = e,
-    p = function(e, t) {
+    b = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
@@ -50,8 +50,8 @@ function d(e) {
       }
       return r
     }(e, ["channel", "application", "showApplicationImage"]);
-  let m = (0, a.w)(d),
-    f = r.useCallback(() => (0, l.ZDy)(async () => {
+  let p = (0, a.w)(d),
+    g = r.useCallback(() => (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("30019").then(n.bind(n, 719498));
@@ -72,12 +72,12 @@ function d(e) {
         }), n))
       }
     }), [u, d]),
-    g = b ? null != (t = u.getIconURL(48)) ? t : o.pK["0"] : true;
+    f = m ? null != (t = u.getIconURL(48)) ? t : o.pK["0"] : true;
   return (0, i.jsx)(s.Z, c({
-    imageSrc: g,
-    onButtonClick: f,
-    details: null != m ? [{
-      text: m
+    imageSrc: f,
+    onButtonClick: g,
+    details: null != p ? [{
+      text: p
     }] : true
-  }, p))
+  }, b))
 }

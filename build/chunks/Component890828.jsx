@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk36563 = require("./36563.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -62,18 +62,18 @@ let P = e => [e.userId, ... function(e) {
     let {
       channel: t,
       query: n
-    } = e, [l] = (0, o.e7)([j.Z], () => [j.Z.getVoiceStatesForChannel(t.id), j.Z.getVoiceStateVersion()], [t.id], Z.Q), [a, u] = r.useState([]);
-    (0, y.BO)(n, Object.values(l), u, k);
+    } = e, [a] = (0, o.e7)([j.Z], () => [j.Z.getVoiceStatesForChannel(t.id), j.Z.getVoiceStateVersion()], [t.id], Z.Q), [l, u] = r.useState([]);
+    (0, y.BO)(n, Object.values(a), u, k);
     let d = (0, o.Wu)([j.Z, C.default, O.Z, I.Z], () => Object.values(j.Z.getVoiceStatesForChannel(t.id)).map(e => C.default.getUser(e.userId)).filter(_.lm).sort((e, t) => {
-        var i, r, l, o;
-        if (a.length > 0 && "" !== n.trim()) {
-          if (a.some(t => t.userId === e.id)) return false;
-          if (a.some(e => e.userId === t.id)) return 1
+        var i, r, a, o;
+        if (l.length > 0 && "" !== n.trim()) {
+          if (l.some(t => t.userId === e.id)) return false;
+          if (l.some(e => e.userId === t.id)) return 1
         }
-        return I.Z.isFriend(e.id) && !I.Z.isFriend(t.id) ? false : !I.Z.isFriend(e.id) && I.Z.isFriend(t.id) ? 1 : (null != (l = null == (i = O.Z.getUserAffinity(t.id)) ? true : i.vcProbability) ? l : 0) - (null != (o = null == (r = O.Z.getUserAffinity(e.id)) ? true : r.vcProbability) ? o : 0)
-      }), [t.id, a, n]),
+        return I.Z.isFriend(e.id) && !I.Z.isFriend(t.id) ? false : !I.Z.isFriend(e.id) && I.Z.isFriend(t.id) ? 1 : (null != (a = null == (i = O.Z.getUserAffinity(t.id)) ? true : i.vcProbability) ? a : 0) - (null != (o = null == (r = O.Z.getUserAffinity(e.id)) ? true : r.vcProbability) ? o : 0)
+      }), [t.id, l, n]),
       f = t.getGuildId(),
-      h = Math.max(a.length, 2);
+      h = Math.max(l.length, 2);
     return null == f ? null : (0, i.jsx)(s.Z, {
       users: d,
       guildId: f,
@@ -89,8 +89,8 @@ let P = e => [e.userId, ... function(e) {
     var t;
     let {
       channel: n
-    } = e, r = n.getGuildId(), l = (0, o.e7)([S.Z], () => S.Z.getGuild(r), [r]);
-    if (null == l) switch (n.type) {
+    } = e, r = n.getGuildId(), a = (0, o.e7)([S.Z], () => S.Z.getGuild(r), [r]);
+    if (null == a) switch (n.type) {
       case N.d4z.DM:
         return (0, i.jsx)(p.je, {
           channel: n,
@@ -111,9 +111,9 @@ let P = e => [e.userId, ... function(e) {
       children: (0, i.jsx)("div", {
         className: T.guildIconWrapper,
         children: (0, i.jsx)(h.Ft, {
-          guildId: l.id,
-          guildName: null != (t = l.name) ? t : w.intl.string(w.t.DmIUGK),
-          guildIcon: l.icon,
+          guildId: a.id,
+          guildName: null != (t = a.name) ? t : w.intl.string(w.t.DmIUGK),
+          guildIcon: a.icon,
           iconSize: 32
         })
       })
@@ -124,14 +124,14 @@ let P = e => [e.userId, ... function(e) {
     let {
       channelId: n,
       isHighlighted: r,
-      currentVoiceChannel: l,
+      currentVoiceChannel: a,
       onClick: s,
       onMouseOver: f,
       onMouseLeave: h,
       query: p
-    } = e, m = (0, o.e7)([v.Z], () => v.Z.getChannel(n), [n]), g = null == m ? true : m.getGuildId(), b = (0, o.e7)([S.Z], () => S.Z.getGuild(g), [g]), y = (0, d.KS)(m, b), O = (null == l ? true : l.id) === n, E = O ? "text-feedback-positive" : r ? "interactive-text-active" : "text-muted", x = O ? c.TVs.colors.TEXT_FEEDBACK_POSITIVE : r ? c.TVs.colors.INTERACTIVE_TEXT_ACTIVE : c.TVs.colors.ICON_MUTED;
+    } = e, m = (0, o.e7)([v.Z], () => v.Z.getChannel(n), [n]), g = null == m ? true : m.getGuildId(), b = (0, o.e7)([S.Z], () => S.Z.getGuild(g), [g]), y = (0, d.KS)(m, b), O = (null == a ? true : a.id) === n, E = O ? "text-feedback-positive" : r ? "interactive-text-active" : "text-muted", x = O ? c.TVs.colors.TEXT_FEEDBACK_POSITIVE : r ? c.TVs.colors.INTERACTIVE_TEXT_ACTIVE : c.TVs.colors.ICON_MUTED;
     return null == m ? null : (0, i.jsxs)(c.kL8, {
-      className: a()(T.channelItemContainer, r && T.channelItemHighlighted),
+      className: l()(T.channelItemContainer, r && T.channelItemHighlighted),
       "aria-label": m.name,
       onClick: () => s(n),
       onMouseOver: () => f(n),
@@ -164,7 +164,7 @@ let P = e => [e.userId, ... function(e) {
         className: T.channelItemAvatars,
         children: (0, i.jsx)(D, {
           channel: m,
-          currentVoiceChannel: l,
+          currentVoiceChannel: a,
           query: p
         })
       })]
@@ -187,8 +187,8 @@ let P = e => [e.userId, ... function(e) {
     let {
       sectionHeader: t,
       channelIds: n,
-      currentVoiceChannel: l,
-      onSelect: a,
+      currentVoiceChannel: a,
+      onSelect: l,
       hasQuery: o,
       query: s,
       scrollable: u = true
@@ -212,9 +212,9 @@ let P = e => [e.userId, ... function(e) {
         }), n.map(e => (0, i.jsx)(L, {
           channelId: e,
           isHighlighted: e === d,
-          currentVoiceChannel: l,
+          currentVoiceChannel: a,
           onClick: () => {
-            a(e)
+            l(e)
           },
           onMouseOver: h,
           onMouseLeave: p,
@@ -230,13 +230,13 @@ function V(e) {
     currentVoiceChannel: n,
     onSelect: r
   } = e, {
-    recentVoiceChannelIds: l,
+    recentVoiceChannelIds: a,
     friendVoiceChannelIds: s
   } = function() {
     let e = function() {
         let e = (0, o.Wu)([C.default, I.Z, O.Z], () => I.Z.getFriendIDs().sort((e, t) => {
-          var n, i, r, l;
-          return null == e && null == t ? 0 : null == e ? 1 : null == t ? false : (null != (r = null == (n = O.Z.getUserAffinity(t)) ? true : n.communicationProbability) ? r : 0) - (null != (l = null == (i = O.Z.getUserAffinity(e)) ? true : i.communicationProbability) ? l : 0)
+          var n, i, r, a;
+          return null == e && null == t ? 0 : null == e ? 1 : null == t ? false : (null != (r = null == (n = O.Z.getUserAffinity(t)) ? true : n.communicationProbability) ? r : 0) - (null != (a = null == (i = O.Z.getUserAffinity(e)) ? true : i.communicationProbability) ? a : 0)
         }).reduce((e, t) => {
           let n = C.default.getUser(t);
           return null != n && e.push(n), e
@@ -261,11 +261,11 @@ function V(e) {
       recentVoiceChannelIds: t
     }
   }();
-  return l.length > 0 || s.length > 0 ? (0, i.jsxs)(c.zJl, {
-    className: a()(T.channelList, T.channelListWrapper),
-    children: [l.length > 0 && (0, i.jsx)(z, {
+  return a.length > 0 || s.length > 0 ? (0, i.jsxs)(c.zJl, {
+    className: l()(T.channelList, T.channelListWrapper),
+    children: [a.length > 0 && (0, i.jsx)(z, {
       sectionHeader: w.intl.string(w.t.lnk2NQ),
-      channelIds: l.slice(0, 3),
+      channelIds: a.slice(0, 3),
       hasQuery: false,
       query: t,
       currentVoiceChannel: n,
@@ -292,8 +292,8 @@ function U(e) {
 function W(e) {
   var t, n;
   let {
-    currentVoiceChannel: l,
-    onClose: a,
+    currentVoiceChannel: a,
+    onClose: l,
     onSelect: s
   } = e, u = (0, o.Wu)([S.Z, E.ZP, j.Z, I.Z, x.Z], () => S.Z.getGuildsArray().reduce((e, t) => [...e, ...E.ZP.getChannels(t.id)[E.Zb].filter(e => x.Z.can(N.Plq.VIEW_CHANNEL, e.channel) && x.Z.can(N.Plq.CONNECT, e.channel)).map(e => {
     let {
@@ -306,14 +306,14 @@ function W(e) {
   })), []), [d, f] = r.useState(""), [h, p] = r.useState([]);
   (0, y.BO)(d, u, p, A);
   let m = r.useCallback(e => {
-      "Escape" === e.key && a()
-    }, [a]),
+      "Escape" === e.key && l()
+    }, [l]),
     g = r.useCallback((e, t) => {
-      s(e, t), a()
-    }, [s, a]);
+      s(e, t), l()
+    }, [s, l]);
   r.useEffect(() => (document.addEventListener("keydown", m, true), () => {
     document.removeEventListener("keydown", m, true)
-  }), [a, m]);
+  }), [l, m]);
   let b = "" !== d.trim(),
     O = h.length > 20,
     v = {
@@ -373,11 +373,11 @@ function W(e) {
       }).slice(0, 20),
       hasQuery: b,
       query: d,
-      currentVoiceChannel: l,
+      currentVoiceChannel: a,
       onSelect: e => g(e, "search channel")
     }) : (0, i.jsx)(V, {
       searchQuery: d,
-      currentVoiceChannel: l,
+      currentVoiceChannel: a,
       onSelect: g
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

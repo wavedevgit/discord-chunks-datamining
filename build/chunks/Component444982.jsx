@@ -60,19 +60,19 @@ let x = {
         widget: t,
         locked: n,
         size: r,
-        padding: l,
-        borderWidth: a,
+        padding: a,
+        borderWidth: l,
         showEmpty: o
       } = e;
       return (0, d.js)(t) ? (0, i.jsx)(p.Z, {
         id: t.id,
         locked: n,
         widget: t,
-        height: "auto" === r.height ? 0 : r.height - 2 * l - 2 * a,
-        width: "auto" === r.width ? 0 : r.width - 2 * l - 2 * a,
+        height: "auto" === r.height ? 0 : r.height - 2 * a - 2 * l,
+        width: "auto" === r.width ? 0 : r.width - 2 * a - 2 * l,
         showEmpty: o,
-        padding: l,
-        borderWidth: a
+        padding: a,
+        borderWidth: l
       }) : null
     },
     renderTitle: () => (0, Chunk54381.jsx)(Chunk430561.PI, {
@@ -103,18 +103,18 @@ let x = {
       let {
         widget: n,
         anchorLeft: r,
-        locked: l,
-        showEmpty: a
+        locked: a,
+        showEmpty: l
       } = e;
       return (0, d.Aw)(n) ? (0, i.jsx)(m.ZP, {
         anchorLeft: r,
         id: n.id,
-        locked: l,
+        locked: a,
         pinned: n.pinned,
         widget: O.Odu.VOICE_V3,
         maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : y.At,
         isPreviewingInGame: false,
-        showEmpty: a
+        showEmpty: l
       }) : null
     },
     renderTitle: () => (0, Chunk54381.jsx)(Chunk430561.PI, {
@@ -195,8 +195,8 @@ let x = {
       let {
         widget: n,
         locked: r,
-        size: l,
-        dragStart: a,
+        size: a,
+        dragStart: l,
         anchorTop: o,
         anchorLeft: s,
         showEmpty: u,
@@ -208,12 +208,12 @@ let x = {
         locked: r,
         pinned: n.pinned,
         opacity: n.opacity,
-        size: l,
+        size: a,
         anchorTop: o,
         anchorLeft: s,
         widget: n,
         isPreviewingInGame: false,
-        dragStart: a,
+        dragStart: l,
         horizontal: null != (t = n.meta.horizontal) && t,
         padding: f,
         borderWidth: h,
@@ -296,7 +296,7 @@ let x = {
       let {
         locked: t
       } = e;
-      return (0, i.jsx)(a.ZP, {
+      return (0, i.jsx)(l.ZP, {
         locked: t
       })
     },

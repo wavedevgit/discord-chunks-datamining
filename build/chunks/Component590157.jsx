@@ -1,7 +1,7 @@
 /** Chunk was on 9414 **/
 /** chunk id: 590157, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,26 +16,26 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk920843 = require("./920843.js");
 
-function f(e) {
+function g(e) {
   let {
     application: t,
     canNavigate: n,
     guildId: d
-  } = e, b = (0, l.e7)([c.Z], () => c.Z.isUnavailable());
+  } = e, m = (0, l.e7)([c.Z], () => c.Z.isUnavailable());
   return (r.useEffect(() => (s.I4(t.id), s.kZ), [t.id]), r.useEffect(() => {
     s.gq(t.id, d, t.id), s.Sn(d, t.id)
-  }, [t.id, d]), b) ? null : (0, i.jsxs)(r.Fragment, {
+  }, [t.id, d]), m) ? null : (0, i.jsxs)(r.Fragment, {
     children: [(0, i.jsx)(o.Z, {
       icon: (0, i.jsx)(a.SsZ, {
         size: "md",
         color: "currentColor"
       }),
-      title: p.intl.string(p.t.RGoJNN)
+      title: b.intl.string(b.t.RGoJNN)
     }), (0, i.jsx)(a.Text, {
       color: "text-muted",
       variant: "text-sm/normal",
-      children: p.intl.string(p.t.sCkD3Z)
-    }), (0, i.jsx)(g, {
+      children: b.intl.string(b.t.sCkD3Z)
+    }), (0, i.jsx)(f, {
       guildId: d,
       applicationId: t.id
     }), (0, i.jsx)(u.Z, {
@@ -47,7 +47,7 @@ function f(e) {
   })
 }
 
-function g(e) {
+function f(e) {
   let {
     applicationId: t,
     guildId: n
@@ -57,8 +57,8 @@ function g(e) {
     selectedPermissionCount: a
   } = (0, d.Z)(n, t);
   return (0, i.jsx)("div", {
-    className: m.applicationPermissions,
-    children: (0, i.jsx)(b.Z, {
+    className: p.applicationPermissions,
+    children: (0, i.jsx)(m.Z, {
       applicationId: t,
       guildId: n,
       inModal: false,

@@ -135,7 +135,7 @@ let _ = e => {
     })
   },
   S = () => {
-    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [S, E] = Chunk473749.useState(false), [O, T] = Chunk473749.useState(5e3), [N, P] = Chunk473749.useState(false), w = Chunk473749.useRef(null), I = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), k = (0, Chunk848984.u)(), [R] = Chunk473749.useState(() => (0, Chunk773275.o8)({
+    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [S, E] = Chunk473749.useState(false), [T, O] = Chunk473749.useState(5e3), [N, P] = Chunk473749.useState(false), w = Chunk473749.useRef(null), I = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), k = (0, Chunk848984.u)(), [R] = Chunk473749.useState(() => (0, Chunk773275.o8)({
       finishSetup: async () => true,
       perkAvailableToUser: k
     })), {
@@ -152,31 +152,31 @@ let _ = e => {
       isSupportedPrivateBrowsingPerkPlatform: H,
       setGetWarpInstallationStatus: W,
       perkAvailableToUser: z,
-      setPerkAvailableToUser: q
-    } = (0, Chunk663042.o)(R), K = Chunk473749.useCallback(async () => (L(Chunk5900.Ij.INITIALIZING), exports(setTimeout(() => {
+      setPerkAvailableToUser: K
+    } = (0, Chunk663042.o)(R), q = Chunk473749.useCallback(async () => (L(Chunk5900.Ij.INITIALIZING), exports(setTimeout(() => {
       L(Chunk5900.Ij.CONNECTED)
     }, 1e3)), true), [L, exports]);
     Chunk473749.useEffect(() => {
-      M(K)
-    }, [K, M]);
-    let Y = Chunk473749.useCallback(async () => Chunk5900._n.INSTALLING, []);
+      M(q)
+    }, [q, M]);
+    let Q = Chunk473749.useCallback(async () => Chunk5900._n.INSTALLING, []);
     Chunk473749.useEffect(() => {
-      q(k)
-    }, [k, q]), Chunk473749.useEffect(() => {
-      W(Y)
-    }, [W, Y]);
-    let Q = Chunk473749.useCallback(async () => (clearTimeout(module), L(Chunk5900.Ij.DISCONNECTED), true), [module, L]),
+      K(k)
+    }, [k, K]), Chunk473749.useEffect(() => {
+      W(Q)
+    }, [W, Q]);
+    let Y = Chunk473749.useCallback(async () => (clearTimeout(module), L(Chunk5900.Ij.DISCONNECTED), true), [module, L]),
       X = Chunk473749.useCallback(() => new Promise((e, t) => {
         D(p._n.INSTALLING), s(setTimeout(() => {
           if (S) return void t(Error("Installation failed"));
           e()
-        }, O))
-      }), [S, O, D, Chunk544891]);
+        }, T))
+      }), [S, T, D, Chunk544891]);
     Chunk473749.useEffect(() => {
       V && A !== Chunk5900._n.UNKNOWN && D(Chunk5900._n.UNKNOWN)
     }, [V, D, A]), Chunk473749.useEffect(() => {
-      U(Q)
-    }, [Q, U]), Chunk473749.useEffect(() => {
+      U(Y)
+    }, [Y, U]), Chunk473749.useEffect(() => {
       B(X)
     }, [X, B]), Chunk473749.useEffect(() => {
       A !== Chunk5900._n.INSTALLING && clearTimeout(require)
@@ -323,8 +323,8 @@ let _ = e => {
               variant: "text-md/semibold",
               children: "Install time"
             }), (0, Chunk54381.jsx)(Chunk199849.B6, {
-              select: e => T(e),
-              isSelected: e => e === O,
+              select: e => O(e),
+              isSelected: e => e === T,
               serialize: e => "".concat(e),
               options: [{
                 label: "1 second",

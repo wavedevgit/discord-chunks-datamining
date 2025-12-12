@@ -1,7 +1,7 @@
 /** Chunk was on 9414 **/
 /** chunk id: 936726, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => Z
 }), require("./35282.js"), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,6 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk846519 = require("./846519.js"),
   Chunk668339 = require("./668339.jsx"),
   Chunk248514 = require("./248514.jsx"),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk668781 = require("./668781.js"),
   Chunk139387 = require("./139387.js"),
@@ -28,100 +29,100 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk191607 = require("./191607.js");
 
-function w(e, t) {
-  return null != t && /^data:/.test(t) ? t : (0, j.ov)({
+function E(e, t) {
+  return null != t && /^data:/.test(t) ? t : (0, v.ov)({
     id: e.id,
     avatar: t,
-    discriminator: N.fo$
+    discriminator: S.fo$
   })
 }
 
-function E(e) {
+function Z(e) {
   let {
     id: t,
     webhook: n,
     editedWebhook: l,
-    channelOptions: j,
-    isExpanded: E,
-    isNew: P,
-    errors: T,
-    onToggleExpand: Z
-  } = e, [_, k] = r.useState(false), [A] = r.useState(new s.V7);
-  r.useEffect(() => () => A.stop(), [A]);
-  let D = r.useMemo(() => w(n, n.avatar), [n]),
-    R = r.useCallback(() => {
-      let e = "".concat((0, o.K0)(false)).concat(N.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
-      (0, v.JG)(e)
-    }, [n]),
+    channelOptions: v,
+    isExpanded: Z,
+    isNew: w,
+    errors: P,
+    onToggleExpand: _
+  } = e, [k, A] = r.useState(false), [D] = r.useState(new s.V7);
+  r.useEffect(() => () => D.stop(), [D]);
+  let R = r.useMemo(() => E(n, n.avatar), [n]),
     L = r.useCallback(() => {
+      let e = "".concat((0, o.K0)(false)).concat(S.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
+      (0, O.JG)(e)
+    }, [n]),
+    M = r.useCallback(() => {
       (0, d.Z)({
-        title: S.intl.formatToPlainString(S.t.QVFjHh, {
+        title: I.intl.formatToPlainString(I.t.QVFjHh, {
           name: n.name
         }),
-        subtitle: S.intl.format(S.t["rIWe+5"], {
+        subtitle: I.intl.format(I.t["rIWe+5"], {
           name: n.name
         }),
-        confirmText: S.intl.string(S.t["W+K1Fs"]),
-        cancelText: S.intl.string(S.t.xNhj0O),
+        confirmText: I.intl.string(I.t["W+K1Fs"]),
+        cancelText: I.intl.string(I.t.xNhj0O),
         onConfirm: () => {
-          m.Z.delete(n.guild_id, n.id).catch(e => {
+          g.Z.delete(n.guild_id, n.id).catch(e => {
             let {
               status: t
             } = e;
             429 === t ? b.Z.show({
-              title: S.intl.string(S.t.N5riYn),
-              body: S.intl.string(S.t.eAxcCc)
+              title: I.intl.string(I.t.N5riYn),
+              body: I.intl.string(I.t.eAxcCc)
             }) : b.Z.show({
-              title: S.intl.string(S.t.N5riYn),
-              body: S.intl.string(S.t["/4TwKf"])
+              title: I.intl.string(I.t.N5riYn),
+              body: I.intl.string(I.t["/4TwKf"])
             })
           })
         }
       })
     }, [n.guild_id, n.id, n.name]),
-    M = [];
-  null != n.user ? M.push({
-    icon: u.T39,
-    text: S.intl.formatToPlainString(S.t["7EcUbr"], {
+    U = [];
+  null != n.user ? U.push({
+    icon: m.T39,
+    text: I.intl.formatToPlainString(I.t["7EcUbr"], {
       user: (e => {
         if (null == e) return null;
-        let t = new h.Z(e);
-        return y.ZP.getUserTag(t)
+        let t = new x.Z(e);
+        return C.ZP.getUserTag(t)
       })(n.user),
-      timestamp: O.default.extractTimestamp(n.id)
+      timestamp: y.default.extractTimestamp(n.id)
     })
-  }) : M.push({
-    icon: u.T39,
-    text: S.intl.formatToPlainString(S.t["7mv59O"], {
-      timestamp: O.default.extractTimestamp(n.id)
+  }) : U.push({
+    icon: m.T39,
+    text: I.intl.formatToPlainString(I.t["7mv59O"], {
+      timestamp: y.default.extractTimestamp(n.id)
     })
   });
-  let U = null;
-  return E && null != l && (U = (0, i.jsxs)("div", {
-    className: I.body,
-    children: [(0, i.jsx)(u.izJ, {
-      className: I.topDivider
+  let B = null;
+  return Z && null != l && (B = (0, i.jsxs)("div", {
+    className: T.body,
+    children: [(0, i.jsx)(m.izJ, {
+      className: T.topDivider
     }), (0, i.jsxs)(f.Z, {
       children: [(0, i.jsx)(f.Z.Child, {
         shrink: 1,
         grow: 0,
         children: (0, i.jsxs)(f.Z, {
-          className: I.avatarWrapper,
+          className: T.avatarWrapper,
           direction: f.Z.Direction.VERTICAL,
-          children: [(0, i.jsx)(g.Z, {
+          children: [(0, i.jsx)(h.Z, {
             image: l.avatar,
             onChange: e => {
               p.Z.updateWebhook({
                 avatar: e
               })
             },
-            makeURL: e => w(n, e),
-            imageClassName: I.avatarUploaderInner,
+            makeURL: e => E(n, e),
+            imageClassName: T.avatarUploaderInner,
             showIcon: true
-          }), null != T.avatar && "" !== T.avatar ? (0, i.jsx)(u.Text, {
+          }), null != P.avatar && "" !== P.avatar ? (0, i.jsx)(m.Text, {
             color: "text-feedback-critical",
             variant: "text-sm/normal",
-            children: T.avatar
+            children: P.avatar
           }) : null]
         })
       }), (0, i.jsxs)(f.Z, {
@@ -130,8 +131,8 @@ function E(e) {
           children: [(0, i.jsx)(f.Z.Child, {
             wrap: true,
             basis: "50%",
-            children: (0, i.jsx)(u.oil, {
-              label: S.intl.string(S.t.ukdxuo),
+            children: (0, i.jsx)(m.oil, {
+              label: I.intl.string(I.t.ukdxuo),
               value: l.name,
               onChange: e => {
                 p.Z.updateWebhook({
@@ -139,130 +140,76 @@ function E(e) {
                 })
               },
               maxLength: 80,
-              error: T.name
+              error: P.name
             })
           }), (0, i.jsx)(f.Z.Child, {
             basis: "50%",
             children: (0, i.jsx)("div", {
               children: (0, i.jsx)(c.d, {
-                label: S.intl.string(S.t.GK18KJ),
+                label: I.intl.string(I.t.GK18KJ),
                 value: l.channel_id,
-                options: j,
+                options: v,
                 onChange: e => {
                   p.Z.updateWebhook({
                     channelId: e
                   })
                 },
-                placeholder: S.intl.string(S.t.r2ptsz)
+                placeholder: I.intl.string(I.t.r2ptsz)
               })
             })
           })]
-        }), (0, i.jsx)(u.izJ, {
-          className: I.bottomDivider
+        }), (0, i.jsx)(m.izJ, {
+          className: T.bottomDivider
         }), (0, i.jsxs)(f.Z, {
-          children: [(0, i.jsx)(u.aML, {
-            "data-migration-pending": true,
-            text: S.intl.string(S.t.wwdb3g),
-            forceOpen: _,
-            color: u.r6K.GREEN,
-            disableTooltipPointerEvents: true,
-            children: e => {
-              var t, r, {
-                  onClick: l,
-                  onMouseEnter: a,
-                  onMouseLeave: o,
-                  onBlur: s,
-                  onFocus: c
-                } = e,
-                d = function(e, t) {
-                  if (null == e) return {};
-                  var n, i, r = function(e, t) {
-                    if (null == e) return {};
-                    var n, i, r = {},
-                      l = Object.keys(e);
-                    for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-                    return r
-                  }(e, t);
-                  if (Object.getOwnPropertySymbols) {
-                    var l = Object.getOwnPropertySymbols(e);
-                    for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
-                  }
-                  return r
-                }(e, ["onClick", "onMouseEnter", "onMouseLeave", "onBlur", "onFocus"]);
-              return (0, i.jsx)("div", {
-                "data-button-hoisted-classname-wrapper": true,
-                className: I.copyButton,
-                children: (0, i.jsx)(u.Button, (t = function(e) {
-                  for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
-                      i = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                      return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), i.forEach(function(t) {
-                      var i;
-                      i = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: i,
-                        enumerable: true,
-                        configurable: true,
-                        writable: true
-                      }) : e[t] = i
-                    })
-                  }
-                  return e
-                }({
-                  variant: "secondary",
-                  size: "sm",
-                  text: S.intl.string(S.t.Ae9rUW)
-                }, d), r = r = {
-                  "aria-label": "",
-                  onClick: () => {
-                    null == l || l(), k(true), u.uvj.announce(S.intl.string(S.t.wwdb3g)), A.start(1e3, () => k(false)), R()
-                  },
-                  disabled: null == n.token || "" === n.token
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-                  var n = Object.keys(e);
-                  if (Object.getOwnPropertySymbols) {
-                    var i = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, i)
-                  }
-                  return n
-                })(Object(r)).forEach(function(e) {
-                  Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-                }), t))
+          children: [(0, i.jsx)(u.u, {
+            text: I.intl.string(I.t.wwdb3g),
+            shouldShow: k,
+            children: (0, i.jsx)("div", {
+              "data-button-hoisted-classname-wrapper": true,
+              className: T.copyButton,
+              children: (0, i.jsx)(m.Button, {
+                variant: "secondary",
+                size: "sm",
+                text: I.intl.string(I.t.Ae9rUW),
+                "aria-label": "",
+                onClick: () => {
+                  A(true), m.uvj.announce(I.intl.string(I.t.wwdb3g)), D.start(1e3, () => A(false)), L()
+                },
+                disabled: null == n.token || "" === n.token
               })
-            }
-          }), (0, i.jsx)(u.Button, {
+            })
+          }), (0, i.jsx)(m.Button, {
             variant: "critical-secondary",
             size: "sm",
-            text: S.intl.string(S.t.jVrUnC),
-            onClick: L
+            text: I.intl.string(I.t.jVrUnC),
+            onClick: M
           })]
         })]
       })]
     })]
-  })), (0, i.jsx)(u.Zbd, {
+  })), (0, i.jsx)(m.Zbd, {
     editable: true,
     id: t,
-    className: a()(I.card, P ? I.pulse : null),
+    className: a()(T.card, w ? T.pulse : null),
     children: (0, i.jsxs)(f.Z, {
       direction: f.Z.Direction.VERTICAL,
-      children: [(0, i.jsx)(u.P3F, {
-        className: I.header,
-        "aria-expanded": E,
-        onClick: Z,
+      children: [(0, i.jsx)(m.P3F, {
+        className: T.header,
+        "aria-expanded": Z,
+        onClick: _,
         children: (0, i.jsxs)(f.Z, {
           align: f.Z.Align.CENTER,
-          children: [(0, i.jsx)(C.Z, {
+          children: [(0, i.jsx)(N.Z, {
             name: n.name,
-            imageSrc: D,
-            details: M
-          }), (0, i.jsx)(x.Z, {
-            className: I.expandIcon,
-            expanded: E,
+            imageSrc: R,
+            details: U
+          }), (0, i.jsx)(j.Z, {
+            className: T.expandIcon,
+            expanded: Z,
             "aria-hidden": true
           })]
         })
-      }), U]
+      }), B]
     })
   })
 }

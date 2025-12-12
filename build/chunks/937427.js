@@ -28,14 +28,14 @@ function d(e) {
       }), i
     }, [e]),
     [n, d] = i.useState(""),
-    b = i.useMemo(() => {
+    m = i.useMemo(() => {
       var e;
       let i = (e = n).startsWith("#") ? e.substr(1) : e;
       return (0, o.B)(t, u, i)
     }, [t, n]);
   return {
     query: n,
-    results: b,
+    results: m,
     setQuery: d,
     unfilteredCount: t.length
   }

@@ -1,11 +1,11 @@
 /** Chunk was on 23736 **/
 /** chunk id: 500949, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $R: () => q,
+  $R: () => K,
   A0: () => et,
-  GU: () => Y,
+  GU: () => Q,
   H8: () => X,
-  HI: () => Q,
+  HI: () => Y,
   HW: () => F,
   Ib: () => eo,
   KB: () => eu,
@@ -18,7 +18,7 @@ require.d(exports, {
   iw: () => en,
   jC: () => H,
   jQ: () => G,
-  lT: () => K,
+  lT: () => q,
   rd: () => ed,
   t4: () => ec,
   uF: () => em,
@@ -134,7 +134,7 @@ function z(e, t) {
   }, [e, n]), [n, a]
 }
 
-function q(e) {
+function K(e) {
   let t = H[e];
   return {
     name: e,
@@ -146,7 +146,7 @@ function q(e) {
   }
 }
 
-function K(e, t, n, a, r) {
+function q(e, t, n, a, r) {
   return {
     name: t,
     colors: B(U({}, e.colors), {
@@ -159,13 +159,13 @@ function K(e, t, n, a, r) {
   }
 }
 
-function Y(e) {
+function Q(e) {
   return B(U({}, e), {
     highlight: !e.highlight
   })
 }
 
-function Q(e) {
+function Y(e) {
   return (0, R.Z)((0, A.Z)(e, l.Z), {
     format: "hex"
   })

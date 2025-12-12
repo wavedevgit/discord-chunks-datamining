@@ -25,40 +25,40 @@ function j(e) {
   let {
     transitionState: t,
     event: j,
-    onSuccess: f,
-    onClose: N
+    onSuccess: N,
+    onClose: f
   } = e, {
-    guild_id: y,
-    privacy_level: k
-  } = j, b = (0, r.e7)([d.Z], () => d.Z.getChannel(j.channel_id), [j]), E = (0, r.e7)([h.Z], () => h.Z.getGuild(y), [y]), {
-    canManageGuildEvent: w
-  } = (0, o.XJ)(null != b ? b : E), I = w(j), O = (0, r.e7)([c.Z], () => c.Z.isLurking(y), [y]), S = j.entity_type === x.WX.STAGE_INSTANCE, [Z, _] = l.useState(S), [T, {
-    loading: L,
-    error: P
+    guild_id: k,
+    privacy_level: E
+  } = j, y = (0, r.e7)([d.Z], () => d.Z.getChannel(j.channel_id), [j]), w = (0, r.e7)([h.Z], () => h.Z.getGuild(k), [k]), {
+    canManageGuildEvent: I
+  } = (0, o.XJ)(null != y ? y : w), Z = I(j), _ = (0, r.e7)([c.Z], () => c.Z.isLurking(k), [k]), b = j.entity_type === C.WX.STAGE_INSTANCE, [S, T] = i.useState(b), [A, {
+    loading: G,
+    error: L
   }] = (0, v.Z)();
-  if (!I) return null;
-  let A = k === x.j8.PUBLIC ? p.intl.string(p.t.HhlaLP) : p.intl.string(p.t.GI3xXd),
-    G = () => {
-      null == f || f(), N(), (0, u.Ku)(false)
+  if (!Z) return null;
+  let X = E === C.j8.PUBLIC ? g.intl.string(g.t.HhlaLP) : g.intl.string(g.t.GI3xXd),
+    O = () => {
+      null == N || N(), f(), (0, u.Ku)(false)
     },
-    X = async () => {
-      await T(j, Z, {
-        onSuccess: G
+    P = async () => {
+      await A(j, S, {
+        onSuccess: O
       })
     };
-  return (0, i.jsxs)(a.Modal, {
+  return (0, l.jsxs)(a.Modal, {
     transitionState: t,
-    onClose: N,
+    onClose: f,
     title: j.name,
-    subtitle: p.intl.format(p.t.UMajol, {
-      privacyLevel: A,
-      privacyLevelHook: (e, n) => k !== x.j8.PUBLIC ? null : (0, i.jsxs)("div", {
-        className: C.privacyLevel,
-        children: [(0, i.jsx)(s.enf, {
+    subtitle: g.intl.format(g.t.UMajol, {
+      privacyLevel: X,
+      privacyLevelHook: (e, n) => E !== C.j8.PUBLIC ? null : (0, l.jsxs)("div", {
+        className: p.privacyLevel,
+        children: [(0, l.jsx)(s.enf, {
           size: "xs",
           color: "currentColor",
-          className: C.publicIcon
-        }), (0, i.jsx)(s.Text, {
+          className: p.publicIcon
+        }), (0, l.jsx)(s.Text, {
           variant: "text-md/normal",
           children: e
         })]
@@ -66,41 +66,41 @@ function j(e) {
     }),
     actions: [{
       variant: "secondary",
-      text: p.intl.string(p.t.CZGqeT),
+      text: g.intl.string(g.t.CZGqeT),
       onClick: () => {
-        N()
+        f()
       }
     }, {
       variant: "active",
-      text: p.intl.string(p.t.cK1GGY),
-      onClick: X,
-      loading: L
+      text: g.intl.string(g.t.cK1GGY),
+      onClick: P,
+      loading: G
     }],
-    children: [(0, i.jsx)(g.Z, {
-      guild: E,
-      channel: b,
+    children: [(0, l.jsx)(x.Z, {
+      guild: w,
+      channel: y,
       name: j.name,
       description: null != (n = j.description) ? n : true,
       imageSource: (0, m.Z)(j),
       isActive: false,
-      isUserLurking: O,
+      isUserLurking: _,
       speakers: [],
       speakerCount: 0,
       rsvped: true,
       guildEvent: j
-    }), S && (0, i.jsx)("div", {
-      className: C.verticalSpacing,
-      children: (0, i.jsx)(a.XZJ, {
-        checked: Z,
-        onChange: e => _(e),
-        label: p.intl.string(p.t.dGNtgI),
+    }), b && (0, l.jsx)("div", {
+      className: p.verticalSpacing,
+      children: (0, l.jsx)(a.XZJ, {
+        checked: S,
+        onChange: e => T(e),
+        label: g.intl.string(g.t.dGNtgI),
         labelType: "secondary"
       })
-    }), null != P && null != P.getAnyErrorMessage() ? (0, i.jsx)(s.Text, {
+    }), null != L && null != L.getAnyErrorMessage() ? (0, l.jsx)(s.Text, {
       color: "text-feedback-critical",
       variant: "text-sm/normal",
-      className: C.errorMessage,
-      children: P.getAnyErrorMessage()
+      className: p.errorMessage,
+      children: L.getAnyErrorMessage()
     }) : null]
   })
 }

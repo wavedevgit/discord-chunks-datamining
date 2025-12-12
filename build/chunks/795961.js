@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 795961, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  d: () => O
+  d: () => N
 });
 var Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
@@ -18,7 +18,7 @@ var Chunk509613 = require("./509613.js"),
   Chunk960323 = require("./960323.js"),
   Chunk249857 = require("./249857.js"),
   Chunk388032 = require("./388032.jsx");
-let O = (0, Chunk509613.vB)(Chunk313789.n.APP_SECTION, {
+let N = (0, Chunk509613.vB)(Chunk313789.n.APP_SECTION, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.f2n1TP),
   buildLayout: () => [Chunk650271.z, Chunk444250.Fu, Chunk960323.K, Chunk513696.g, Chunk263735.Q, Chunk755322.w, Chunk645912.G, Chunk452784.a, Chunk249857.R, Chunk101870.o, Chunk860171.g, Chunk825193.w]
 })

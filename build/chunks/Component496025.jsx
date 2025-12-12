@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk769633 = require("./769633.js"),
   Chunk663618 = require("./663618.js");
 
-function O() {
+function T() {
   var e;
   let t = (0, Chunk442837.Wu)([Chunk55589.Z], () => Chunk55589.Z.getSortedChannels()[1]),
     [n, i] = Chunk473749.useState(exports.length > 0 ? exports[0].channelId : true),
@@ -84,7 +84,7 @@ function O() {
   })
 }
 
-function T() {
+function O() {
   let e = Chunk473749.useCallback(() => {
     Chunk493683.Z.openPrivateChannel({
       recipientIds: [Chunk37812.I]
@@ -114,8 +114,8 @@ function N() {
     className: l()(Chunk663618.panel, Chunk769633.panel),
     children: [module, (0, Chunk54381.jsx)("div", {
       className: Chunk769633.divider
-    }), (0, Chunk54381.jsx)(O, {}), (0, Chunk54381.jsx)("div", {
+    }), (0, Chunk54381.jsx)(T, {}), (0, Chunk54381.jsx)("div", {
       className: Chunk769633.divider
-    }), (0, Chunk54381.jsx)(T, {})]
+    }), (0, Chunk54381.jsx)(O, {})]
   })
 }

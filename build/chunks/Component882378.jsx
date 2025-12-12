@@ -7,6 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk952265 = require("./952265.js"),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk378298 = require("./378298.js"),
@@ -17,40 +18,39 @@ var Chunk54381 = require("./54381.js"),
   Chunk819640 = require("./819640.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk134612 = require("./134612.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk962793 = require("./962793.js");
+  Chunk388032 = require("./388032.jsx");
 let O = Chunk473749.memo(function(e) {
   let {
     channel: t
-  } = e, O = (0, d.h)(t.id), x = (0, u.o)(t.id), j = (0, p.M)(t.id), v = (0, a.useHasAnyModalOpen)(), C = (0, l.e7)([f.Z], () => f.Z.hasLayers()), I = i.useCallback(() => x ? b.intl.string(b.t["16QyDv"]) : null != j ? b.intl.string(b.t.kCN9i0) : null, [x, j]), _ = i.useMemo(() => (x || null != j) && !v && !C, [x, j, v, C]), [S, E] = i.useState(I());
+  } = e, O = (0, u.h)(t.id), x = (0, p.o)(t.id), j = (0, h.M)(t.id), v = (0, a.useHasAnyModalOpen)(), C = (0, l.e7)([g.Z], () => g.Z.hasLayers()), I = i.useCallback(() => x ? y.intl.string(y.t["16QyDv"]) : null != j ? y.intl.string(y.t.kCN9i0) : null, [x, j]), _ = i.useMemo(() => (x || null != j) && !v && !C, [x, j, v, C]), [S, E] = i.useState(I());
   i.useEffect(() => {
-    null != j && null != O && (s.uvj.announce(b.intl.string(b.t.acsXuG)), setTimeout(() => {
-      (0, c.T)(t.id, [j.id])
-    }, 5e3), (0, h.KQ)({
+    null != j && null != O && (o.uvj.announce(y.intl.string(y.t.acsXuG)), setTimeout(() => {
+      (0, d.T)(t.id, [j.id])
+    }, 5e3), (0, f.KQ)({
       channelId: t.id,
       senderId: t.getRecipientId(),
       warningId: j.id,
       warningType: j.type,
       isNudgeWarning: null != j,
-      viewName: h.pb.SAFETY_TOOLS_NUDGE_TOOLTIP
-    })), x && (s.uvj.announce(b.intl.string(b.t["1dxCqG"])), setTimeout(() => {
-      (0, c.Ot)(t.id)
+      viewName: f.pb.SAFETY_TOOLS_NUDGE_TOOLTIP
+    })), x && (o.uvj.announce(y.intl.string(y.t["1dxCqG"])), setTimeout(() => {
+      (0, d.Ot)(t.id)
     }, 5e3))
-  }, [t, j, O, x]), (0, o.ZP)(() => {
-    null != O && (0, h.KQ)({
+  }, [t, j, O, x]), (0, c.ZP)(() => {
+    null != O && (0, f.KQ)({
       channelId: t.id,
       senderId: t.getRecipientId(),
       warningId: O.id,
       warningType: O.type,
       isNudgeWarning: null != j,
-      viewName: h.pb.SAFETY_TOOLS_BUTTON
+      viewName: f.pb.SAFETY_TOOLS_BUTTON
     })
   }), i.useEffect(() => {
     let e = I();
     null != e && E(e)
   }, [x, j, I]);
   let Z = i.useCallback(() => {
-    null != j && (0, c.T)(t.id, [j.id]), null != O && ((0, s.ZDy)(async () => {
+    null != j && (0, d.T)(t.id, [j.id]), null != O && ((0, o.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("37031"), n.e("89650"), n.e("94253")]).then(n.bind(n, 611446));
@@ -69,28 +69,24 @@ let O = Chunk473749.memo(function(e) {
         })
       }
     }, {
-      modalKey: m.X_
-    }), (0, h.qc)({
+      modalKey: b.X_
+    }), (0, f.qc)({
       channelId: t.id,
       senderId: t.getRecipientId(),
       warningId: O.id,
       warningType: O.type,
-      cta: h.NM.USER_SAFETY_TOOLS_BUTTON_CLICK,
+      cta: f.NM.USER_SAFETY_TOOLS_BUTTON_CLICK,
       isNudgeWarning: null != j
     }))
   }, [j, O, t]);
-  return null == O ? null : (0, r.jsx)(s.aML, {
-    "data-migration-pending": true,
+  return null == O ? null : (0, r.jsx)(s.u, {
     forceOpen: _,
     text: S,
-    color: s.r6K.BRAND,
     position: "bottom",
-    tooltipClassName: y.tooltip,
-    tooltipContentClassName: y.tooltipContent,
-    children: () => (0, r.jsx)(g.ZP.Icon, {
-      icon: s.b7C,
+    children: (0, r.jsx)(m.ZP.Icon, {
+      icon: o.b7C,
       onClick: Z,
-      tooltip: b.intl.string(b.t.rpc2qv),
+      tooltip: y.intl.string(y.t.rpc2qv),
       tooltipDisabled: null != j
     })
   })

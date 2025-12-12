@@ -1,7 +1,7 @@
 /** Chunk was on 56236 **/
 /** chunk id: 710679, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => y
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -26,25 +26,25 @@ var Chunk442837 = require("./442837.js"),
   Chunk462179 = require("./462179.jsx"),
   Chunk981631 = require("./981631.js");
 
-function Z(e) {
-  var n, t, Z;
+function y(e) {
+  var n, t, y;
   let {
     guildEvent: N,
-    truncate: P,
-    onActionTaken: k,
+    truncate: k,
+    onActionTaken: P,
     className: E,
     isNew: w
   } = e, {
     id: I,
     guild_id: S,
     channel_id: D,
-    creator_id: L,
-    name: T,
-    description: M,
-    entity_type: G,
+    creator_id: T,
+    name: G,
+    description: L,
+    entity_type: M,
     image: _,
     recurrence_rule: R
-  } = N, A = (0, x.DK)(N), B = (0, i.e7)([m.ZP], () => m.ZP.isInterestedInEventRecurrence(I, A), [I, A]), U = (0, i.e7)([l.Z], () => l.Z.isLurking(S), [S]), z = (0, i.e7)([c.Z], () => c.Z.getStageInstanceByChannel(D), [D]), J = (0, i.e7)([s.Z], () => s.Z.getGuild(S), [S]), q = (0, i.e7)([o.Z], () => o.Z.getChannel(D), [D]), H = (0, i.e7)([g.default], () => g.default.getUser(L), [L]), {
+  } = N, A = (0, f.DK)(N), B = (0, i.e7)([h.ZP], () => h.ZP.isInterestedInEventRecurrence(I, A), [I, A]), U = (0, i.e7)([l.Z], () => l.Z.isLurking(S), [S]), z = (0, i.e7)([c.Z], () => c.Z.getStageInstanceByChannel(D), [D]), J = (0, i.e7)([s.Z], () => s.Z.getGuild(S), [S]), q = (0, i.e7)([o.Z], () => o.Z.getChannel(D), [D]), H = (0, i.e7)([g.default], () => g.default.getUser(T), [T]), {
     speakers: K
   } = (0, v.Z)({
     id: D,
@@ -58,18 +58,18 @@ function Z(e) {
       guildId: S,
       instance: z
     }
-  }), W = (0, i.e7)([d.Z], () => d.Z.getChannelId()), F = (0, m.xt)(N), V = W === D && null != W && F, Q = K.filter(e => e.type === a.Ui.VOICE), X = Q.length, Y = (0, i.e7)([u.Z], () => u.Z.can(C.Plq.CONNECT, q), [q]), $ = (0, h.ZP)(N), ee = null != J, en = (0, y.Z)({
+  }), W = (0, i.e7)([d.Z], () => d.Z.getChannelId()), F = (0, h.xt)(N), V = W === D && null != W && F, Q = K.filter(e => e.type === a.Ui.VOICE), X = Q.length, Y = (0, i.e7)([u.Z], () => u.Z.can(Z.Plq.CONNECT, q), [q]), $ = (0, p.ZP)(N), ee = null != J, en = (0, O.Z)({
     guild: J,
     channel: q,
     guildScheduledEvent: N,
     isActive: F,
     recurrenceId: A,
-    onActionTaken: k
-  }), et = U ? true : e => (0, p.bO)({
+    onActionTaken: P
+  }), et = U ? true : e => (0, m.bO)({
     eventId: I,
     recurrenceId: e
   });
-  return (0, r.jsx)(O.Z, (t = function(e) {
+  return (0, r.jsx)(C.Z, (t = function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         r = Object.keys(t);
@@ -90,12 +90,12 @@ function Z(e) {
     guild: J,
     channel: q,
     creator: H,
-    name: T,
-    entityType: G,
-    description: null != M ? M : true,
-    location: null != (n = (0, f.cS)(N)) ? n : true,
+    name: G,
+    entityType: M,
+    description: null != L ? L : true,
+    location: null != (n = (0, x.cS)(N)) ? n : true,
     imageSource: null != _ ? (0, b.Z)(N) : true,
-    imageLocation: O.Q.THUMBNAIL,
+    imageLocation: C.Q.THUMBNAIL,
     isActive: F,
     isUserLurking: U,
     isJoined: V,
@@ -105,22 +105,22 @@ function Z(e) {
     speakerCount: X,
     rsvped: B,
     canInvite: $
-  }, en), Z = Z = {
+  }, en), y = y = {
     className: E,
     onClick: et,
-    truncate: P,
+    truncate: k,
     isNew: w,
     guildEvent: N,
     recurrenceRule: (0, j.KV)(R),
     recurrenceId: A
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(Z)) : (function(e, n) {
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(y)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var r = Object.getOwnPropertySymbols(e);
       t.push.apply(t, r)
     }
     return t
-  })(Object(Z)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(Z, e))
+  })(Object(y)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(y, e))
   }), t))
 }

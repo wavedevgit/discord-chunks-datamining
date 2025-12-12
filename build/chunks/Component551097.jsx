@@ -1,7 +1,7 @@
 /** Chunk was on 23736 **/
 /** chunk id: 551097, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,104 +16,109 @@ var Chunk54381 = require("./54381.js"),
   Chunk698716 = require("./698716.jsx"),
   Chunk685613 = require("./685613.jsx"),
   Chunk110560 = require("./110560.jsx"),
+  Chunk444134 = require("./444134.jsx"),
+  Chunk526188 = require("./526188.jsx"),
   Chunk73826 = require("./73826.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk952334 = require("./952334.js");
-let v = (0, Chunk467721.animated)(Chunk685613.ZP),
-  j = e => {
-    let {
-      quest: t,
-      expansionSpring: n,
-      onCtxMenuSelect: i,
-      onCtxMenuOpen: h,
-      onCtxMenuClose: j,
-      useReducedMotion: y,
-      isExpanded: C,
-      isExpansionAnimationComplete: _
-    } = e, S = (0, d.aM)(), E = r.useCallback(() => {
-      (0, f.openDisclosureModal)(t, {
-        content: u.jn.QUEST_BAR_V2,
-        ctaContent: c.jZ.OPEN_DISCLOSURE,
-        sourceQuestContent: u.jn.QUEST_BAR_V2
-      })
-    }, [t]), O = r.useCallback(() => {
-      (0, m.nc)(t, {
-        content: u.jn.QUEST_BAR_V2,
-        ctaContent: c.jZ.OPEN_GAME_LINK,
-        impressionId: S,
-        sourceQuestContent: u.jn.QUEST_BAR_V2
-      })
-    }, [S, t]), T = C && _, N = (0, a.jsx)(o.P3F, {
-      onClick: O,
-      className: l()(g.clickable, {
-        [g.logo]: T
-      }),
-      children: (0, a.jsx)(v, {
-        quest: t,
-        withGameTile: false,
-        logotypeClassName: g.partnerBranding,
-        logotypeStyle: {
-          height: 24,
-          maxWidth: 92,
-          transform: (0, s.to)([n.to({
-            range: [0, 1],
-            output: [1, 1]
-          })], e => "scale(".concat(e, ")"))
-        }
-      })
-    });
-    return (0, a.jsxs)(s.animated.div, {
-      className: l()(g.wrapper, g.rewardHighlightWrapper, {
-        [g.interactable]: T
+let y = (0, Chunk467721.animated)(Chunk685613.ZP),
+  C = () => {
+    let e = (0, Chunk915750.aM)(),
+      {
+        expansionSpring: t
+      } = Chunk473749.useContext(Chunk444134.xo),
+      {
+        onCtxMenuOpen: n,
+        onCtxMenuClose: i,
+        onCtxMenuSelect: h,
+        isExpanded: C,
+        isExpansionAnimationComplete: _,
+        quest: S
+      } = Chunk473749.useContext(Chunk526188.A),
+      E = Chunk473749.useCallback(() => {
+        (0, Chunk110560.openDisclosureModal)(S, {
+          content: Chunk49436.jn.QUEST_BAR_V2,
+          ctaContent: Chunk617136.jZ.OPEN_DISCLOSURE,
+          sourceQuestContent: Chunk49436.jn.QUEST_BAR_V2
+        })
+      }, [S]),
+      T = Chunk473749.useCallback(() => {
+        (0, Chunk387745.nc)(S, {
+          content: Chunk49436.jn.QUEST_BAR_V2,
+          ctaContent: Chunk617136.jZ.OPEN_GAME_LINK,
+          impressionId: module,
+          sourceQuestContent: Chunk49436.jn.QUEST_BAR_V2
+        })
+      }, [module, S]),
+      O = C && _,
+      N = (0, Chunk54381.jsx)(Chunk481060.P3F, {
+        onClick: T,
+        className: l()(Chunk952334.clickable, {
+          [Chunk952334.logo]: O
+        }),
+        children: (0, Chunk54381.jsx)(y, {
+          quest: S,
+          withGameTile: false,
+          logotypeClassName: Chunk952334.partnerBranding,
+          logotypeStyle: {
+            height: 24,
+            maxWidth: 92,
+            transform: (0, Chunk467721.to)([exports.to({
+              range: [0, 1],
+              output: [1, 1]
+            })], e => "scale(".concat(e, ")"))
+          }
+        })
+      });
+    return (0, Chunk54381.jsxs)(Chunk467721.animated.div, {
+      className: l()(Chunk952334.wrapper, Chunk952334.rewardHighlightWrapper, {
+        [Chunk952334.interactable]: O
       }),
       style: {
-        transform: (0, s.to)([n.to({
+        transform: (0, Chunk467721.to)([exports.to({
           range: [0, 1],
           output: [6, 0]
         })], e => "translateY(".concat(e, "px)"))
       },
-      children: [(0, a.jsx)(s.animated.div, {
-        className: g.opaqueExpandedBackground,
+      children: [(0, Chunk54381.jsx)(Chunk467721.animated.div, {
+        className: Chunk952334.opaqueExpandedBackground,
         style: {
-          opacity: n.to({
+          opacity: exports.to({
             range: [0, 1],
             output: [0, 1]
           })
         }
-      }), (0, a.jsx)(x.Z, {
-        quest: t,
-        expansionSpring: n,
-        isFullyExpanded: T,
-        partnerBranding: N,
-        useReducedMotion: y
-      }), (0, a.jsxs)(s.animated.div, {
-        className: g.promotedBadgeWrapper,
+      }), (0, Chunk54381.jsx)(Chunk73826.Z, {
+        isFullyExpanded: O,
+        partnerBranding: N
+      }), (0, Chunk54381.jsxs)(Chunk467721.animated.div, {
+        className: Chunk952334.promotedBadgeWrapper,
         style: {
-          opacity: n.to({
+          opacity: exports.to({
             range: [0, 1],
             output: [0, 1]
           })
         },
-        children: [(0, a.jsxs)(o.P3F, {
-          className: g.promotedBadge,
+        children: [(0, Chunk54381.jsxs)(Chunk481060.P3F, {
+          className: Chunk952334.promotedBadge,
           onClick: E,
-          children: [(0, a.jsx)(o.Text, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
             color: "always-white",
             variant: "text-xs/normal",
-            children: b.intl.string(b.t.o6FLcF)
-          }), (0, a.jsx)(o.idN, {
-            color: o.TVs.colors.WHITE,
-            className: g.promotedBadgeIcon
+            children: Chunk388032.intl.string(Chunk388032.t.o6FLcF)
+          }), (0, Chunk54381.jsx)(Chunk481060.idN, {
+            color: Chunk481060.TVs.colors.WHITE,
+            className: Chunk952334.promotedBadgeIcon
           })]
-        }), (0, a.jsx)(p.i, {
-          onOpen: h,
-          onClose: j,
-          onSelect: i,
-          questContent: u.jn.QUEST_BAR_V2,
-          quest: t,
+        }), (0, Chunk54381.jsx)(Chunk698716.i, {
+          onOpen: require,
+          onClose: Chunk120356,
+          onSelect: Chunk685613,
+          questContent: Chunk49436.jn.QUEST_BAR_V2,
+          quest: S,
           shouldShowDisclosure: true,
           showShareLink: true,
-          sourceQuestContent: u.jn.QUEST_BAR_V2,
+          sourceQuestContent: Chunk49436.jn.QUEST_BAR_V2,
           children: e => {
             var t, n;
             return (0, a.jsx)(o.P3F, (t = function(e) {
@@ -134,12 +139,12 @@ let v = (0, Chunk467721.animated)(Chunk685613.ZP),
               }
               return e
             }({}, e), n = n = {
-              className: g.submenuWrapper,
-              "aria-label": b.intl.string(b.t.DEoVWZ),
+              className: j.submenuWrapper,
+              "aria-label": v.intl.string(v.t.DEoVWZ),
               children: (0, a.jsx)(o.xhG, {
                 size: "md",
                 color: "currentColor",
-                className: l()(g.submenuIcon, g.white)
+                className: l()(j.submenuIcon, j.white)
               })
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);

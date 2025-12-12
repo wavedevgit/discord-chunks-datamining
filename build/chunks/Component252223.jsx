@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk392711 = require("./392711.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk481060 = require("./481060.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk833664 = require("./833664.js"),
   Chunk545957 = require("./545957.js"),
   Chunk933557 = require("./933557.js"),
@@ -251,17 +251,14 @@ function Z(e) {
     ei = () => 0 === X ? null : J && !W ? x ? (0, r.jsxs)("div", {
       className: o()(R.activityContainer, $ && R.iconOnly),
       children: [et(), er()]
-    }) : (0, r.jsx)(u.aML, {
-      "data-migration-pending": true,
-      tooltipContentClassName: o()(R.container, R.activitiesTooltip, R.hasMultipleActivities),
+    }) : (0, r.jsx)(u.u, {
       delay: A.X,
-      text: en(),
-      "aria-label": ee,
-      children: e => (0, r.jsxs)("div", L(D({
-        className: o()(R.activityContainer, $ && R.iconOnly)
-      }, e), {
+      __unsupportedReactNodeAsText: en(),
+      children: (0, r.jsxs)("div", {
+        className: o()(R.activityContainer, $ && R.iconOnly),
+        "aria-label": ee,
         children: [et(true), er()]
-      }))
+      })
     }) : et(),
     ea = o()(R.container, {
       [R.textXs]: "xs" === y,

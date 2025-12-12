@@ -21,17 +21,17 @@ let o = e => {
       var n, i, r = function(e, t) {
         if (null == e) return {};
         var n, i, r = {},
-          l = Object.keys(e);
-        for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+          a = Object.keys(e);
+        for (i = 0; i < a.length; i++) n = a[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
         return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+        var a = Object.getOwnPropertySymbols(e);
+        for (i = 0; i < a.length; i++) n = a[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
       return r
     }(e, ["size", "width", "height", "color", "colorClass"]);
-  let m = (0, l.m)(c),
+  let m = (0, a.m)(c),
     g = null != (o = null == m ? true : m.width) ? o : u,
     b = null != (s = null == m ? true : m.height) ? s : d;
   return (0, i.jsxs)("svg", (t = function(e) {
@@ -51,7 +51,7 @@ let o = e => {
       })
     }
     return e
-  }({}, (0, a.Z)(p)), n = n = {
+  }({}, (0, l.Z)(p)), n = n = {
     xmlns: "http://www.w3.org/2000/svg",
     width: g,
     height: b,

@@ -686,7 +686,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eR.oAB.INVENTORY,
         searchableTitles: [eD.intl.string(eD.t["jcSP+g"])],
         label: eD.intl.string(eD.t["jcSP+g"]),
-        element: eu.Z,
+        element: eu.ZP,
         ariaLabel: eD.intl.string(eD.t["jcSP+g"]),
         badgeCount: t
       },

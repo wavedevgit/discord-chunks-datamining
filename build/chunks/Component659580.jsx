@@ -32,8 +32,8 @@ function C(e) {
     onClose: t,
     renderOutputDevices: n = false,
     renderInputDevices: C = false,
-    renderInputProfiles: w = false,
-    renderInputModes: E = false,
+    renderInputProfiles: E = false,
+    renderInputModes: w = false,
     renderInputVolume: I = false,
     renderOutputVolume: T = false,
     renderDeafen: S = false,
@@ -51,18 +51,18 @@ function C(e) {
       location_stack: M
     }
   });
-  let A = (0, O.Z)(k),
+  let A = (0, j.Z)(k),
     R = (0, p.M)({
       deviceType: x.h7.AUDIO_INPUT,
       analyticsLocations: M,
       asSubmenu: N
     }),
-    L = (0, p.M)({
+    V = (0, p.M)({
       deviceType: x.h7.AUDIO_OUTPUT,
       analyticsLocations: M,
       asSubmenu: N
     }),
-    V = (0, o.e7)([v.Z], () => v.Z.getActiveInputProfile()),
+    L = (0, o.e7)([v.Z], () => v.Z.getActiveInputProfile()),
     F = (0, b.Z)(M),
     U = (0, m.Z)(M),
     Y = (0, f.Z)(M),
@@ -70,9 +70,9 @@ function C(e) {
     z = l.Yn.DEFAULT,
     B = v.Z.isSelfDeaf(z),
     q = (0, o.e7)([v.Z], () => v.Z.getMode()),
-    W = q === j.pM4.VOICE_ACTIVITY ? j.pM4.PUSH_TO_TALK : j.pM4.VOICE_ACTIVITY;
+    W = q === O.pM4.VOICE_ACTIVITY ? O.pM4.PUSH_TO_TALK : O.pM4.VOICE_ACTIVITY;
   return (0, r.jsx)(c.Z, {
-    object: j.qAy.CONTEXT_MENU,
+    object: O.qAy.CONTEXT_MENU,
     children: (0, r.jsxs)(a.v2r, {
       onSelect: Z,
       onInteraction: D,
@@ -81,7 +81,7 @@ function C(e) {
       navId: "audio-device-context",
       variant: "fixed",
       "aria-label": _.intl.string(_.t.ZR1Ss6),
-      children: [C && R, n && L, w && F, !N && E && V !== h._.STUDIO ? (0, r.jsx)(a.kSQ, {
+      children: [C && R, n && V, E && F, !N && w && L !== h._.STUDIO ? (0, r.jsx)(a.kSQ, {
         label: _.intl.string(_.t["pS+K2L"]),
         children: U
       }) : null, (0, r.jsxs)(a.kSQ, {
@@ -94,13 +94,13 @@ function C(e) {
           }),
           checked: B
         }, "self-deafen") : null, N && C && y.isPlatformEmbedded ? (0, r.jsx)(a.S89, {
-          checked: q === j.pM4.PUSH_TO_TALK,
+          checked: q === O.pM4.PUSH_TO_TALK,
           id: "input-mode",
           label: _.intl.string(_.t.Q8gkVL),
           action: () => s.Z.setMode(W, true, true, {
             analyticsLocations: M
           }),
-          disabled: V === h._.STUDIO
+          disabled: L === h._.STUDIO
         }) : null, A]
       })]
     })

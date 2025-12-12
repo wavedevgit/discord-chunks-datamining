@@ -29,23 +29,23 @@ function x(e) {
     onToggleExpand: O
   } = e, y = r.useMemo(() => {
     var e;
-    return null != (e = t.avatar) && /^data:/.test(e) ? e : (0, p.ov)({
+    return null != (e = t.avatar) && /^data:/.test(e) ? e : (0, b.ov)({
       id: t.id,
       avatar: e,
-      discriminator: f.fo$
+      discriminator: g.fo$
     })
   }, [t]), C = r.useCallback(() => {
     (0, o.Z)({
-      title: g.intl.formatToPlainString(g.t.gBKqZ0, {
+      title: f.intl.formatToPlainString(f.t.gBKqZ0, {
         name: t.name
       }),
-      subtitle: g.intl.string(g.t.zO9jrD),
-      confirmText: g.intl.string(g.t.CMy0Cj),
+      subtitle: f.intl.string(f.t.zO9jrD),
+      confirmText: f.intl.string(f.t.CMy0Cj),
       onConfirm: () => {
         u.Z.delete(t.guild_id, t.id).catch(() => {
           c.Z.show({
-            title: g.intl.string(g.t.LpbaFV),
-            body: g.intl.string(g.t["/4TwKf"])
+            title: f.intl.string(f.t.LpbaFV),
+            body: f.intl.string(f.t["/4TwKf"])
           })
         })
       }
@@ -57,7 +57,7 @@ function x(e) {
   }), N.push({
     text: (0, i.jsx)("span", {
       className: h.guildSource,
-      children: g.intl.format(g.t["H/jJ6R"], {
+      children: f.intl.format(f.t["H/jJ6R"], {
         guildHook: () => (0, i.jsx)("span", {
           className: h.sourceName,
           children: t.source_guild.name
@@ -76,7 +76,7 @@ function x(e) {
         direction: "horizontal",
         gap: 16,
         children: [(0, i.jsx)(s.oil, {
-          label: g.intl.string(g.t.I1o5gV),
+          label: f.intl.string(f.t.I1o5gV),
           value: n.name,
           onChange: e => {
             d.Z.updateWebhook({
@@ -86,7 +86,7 @@ function x(e) {
           maxLength: 80,
           error: v.name
         }), (0, i.jsx)(a.y6, {
-          label: g.intl.string(g.t["4TuWfc"]),
+          label: f.intl.string(f.t["4TuWfc"]),
           value: n.channel_id,
           options: x,
           onChange: e => {
@@ -101,7 +101,7 @@ function x(e) {
         onClick: C,
         size: "sm",
         variant: "critical",
-        text: g.intl.string(g.t.CMy0Cj)
+        text: f.intl.string(f.t.CMy0Cj)
       })]
     })]
   })), (0, i.jsx)(s.Zbd, {
@@ -116,11 +116,11 @@ function x(e) {
           direction: "horizontal",
           justify: "space-between",
           align: "center",
-          children: [(0, i.jsx)(m.Z, {
+          children: [(0, i.jsx)(p.Z, {
             name: t.name,
             imageSrc: y,
             details: N
-          }), (0, i.jsx)(b.Z, {
+          }), (0, i.jsx)(m.Z, {
             className: h.expandIcon,
             expanded: j,
             "aria-hidden": true

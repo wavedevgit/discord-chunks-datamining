@@ -92,15 +92,15 @@ function z(e) {
     onElementResizeEnd: e => {},
     orientation: d.y.VERTICAL_TOP
   });
-  (0, F.useSyncMessages)(V.messagesLoader);
+  (0, F.useSyncMessages)(L.messagesLoader);
   let Q = (0, s.e7)([h.default], () => (0, _.I5)(h.default.getCurrentUser())),
-    J = (0, s.e7)([E.Z], () => E.Z.getCatalogUpdateTime()),
+    J = (0, s.e7)([w.Z], () => w.Z.getCatalogUpdateTime()),
     [$, ee] = i.useState(false),
     [et, en] = i.useState(false),
     {
       activeVoice: er
     } = (0, I.o)(),
-    ei = (0, w.HM)({
+    ei = (0, E.HM)({
       location: W[0],
       autoTrackExposure: true
     }),
@@ -200,7 +200,7 @@ function z(e) {
               showUpsell: true,
               text: F.intl.format(F.t.XMDm8z, {
                 nitroTierName: (0, P.Px)(R.PremiumTypes.TIER_2),
-                onClick: () => (0, O.i)()
+                onClick: () => (0, j.i)()
               }),
               button: F.intl.string(F.t.cRCCJ3),
               buttonAnalyticsObject: {
@@ -220,17 +220,17 @@ function z(e) {
           [U.hasActiveVoice]: null != er
         }),
         children: [(0, r.jsx)(v.j, {
-          deviceType: L.h7.AUDIO_INPUT,
+          deviceType: V.h7.AUDIO_INPUT,
           location: "VoiceFiltersPopout",
           onOpen: () => {
             var e;
             x.default.track(M.rMx.VOICE_FILTER_MIC_SELECTOR_OPENED, {
-              active_voice_filter_id: null != (e = j.Z.getActiveVoiceFilter()) ? e : null
+              active_voice_filter_id: null != (e = O.Z.getActiveVoiceFilter()) ? e : null
             })
           },
           popoutPosition: "top"
         }), o && (0, r.jsx)(v.j, {
-          deviceType: L.h7.AUDIO_OUTPUT,
+          deviceType: V.h7.AUDIO_OUTPUT,
           location: "VoiceFiltersPopout",
           popoutPosition: "top"
         }), (0, r.jsx)(c.yRy, {

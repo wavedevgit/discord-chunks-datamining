@@ -1,81 +1,83 @@
 /** Chunk was on 23736 **/
 /** chunk id: 167308, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
-var Chunk54381 = require("./54381.js");
-require("./473749.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk49436 = require("./49436.js"),
   Chunk373370 = require("./373370.js"),
   Chunk644646 = require("./644646.jsx"),
   Chunk444134 = require("./444134.jsx"),
   Chunk836831 = require("./836831.jsx"),
+  Chunk526188 = require("./526188.jsx"),
   Chunk324805 = require("./324805.js"),
   Chunk674293 = require("./674293.js");
-let m = e => {
+let h = e => {
   let {
-    contentLocation: t,
-    quest: n,
-    progressBarRef: m,
-    isExpanded: p,
-    percentComplete: h,
-    activeScreen: f,
-    popoutTargetElementRef: x,
-    onGameSheetOpened: b,
-    onGameSheetClosed: g
-  } = e, v = (0, l.eQ)(n), j = (0, l.vf)({
-    quest: n,
-    isExpanded: p,
-    activeScreen: f,
-    sourceQuestContent: i.jn.QUEST_BAR_V2,
-    popoutTargetElementRef: x,
-    onGameSheetOpened: b,
-    onGameSheetClosed: g
+    isExpanded: t,
+    contentLocation: n,
+    progressBarRef: h,
+    percentComplete: f,
+    activeScreen: x,
+    popoutTargetElementRef: b
+  } = e, {
+    quest: g,
+    onGameSheetOpen: v,
+    onGameSheetClose: j
+  } = r.useContext(u.A), y = (0, s.eQ)(g), C = (0, s.vf)({
+    quest: g,
+    isExpanded: t,
+    activeScreen: x,
+    sourceQuestContent: l.jn.QUEST_BAR_V2,
+    popoutTargetElementRef: b,
+    onGameSheetOpened: v,
+    onGameSheetClosed: j
   });
   return (0, a.jsxs)("div", {
-    className: u.questProgressWrapper,
-    children: [(0, a.jsx)(o.JC, {
-      inState: t,
+    className: p.questProgressWrapper,
+    children: [(0, a.jsx)(c.JC, {
+      inState: n,
       id: "progress-bar",
-      ref: m,
-      children: e => (0, a.jsx)(c.Z, {
+      ref: h,
+      children: e => (0, a.jsx)(d.Z, {
         ref: e,
-        quest: n,
-        percentComplete: h,
+        quest: g,
+        percentComplete: f,
         size: 42,
         strokeWidth: 3,
-        children: (0, a.jsx)(s.Z, {
-          className: u.questProgressRewardTile,
-          quest: n,
-          questContent: i.jn.QUEST_BAR_V2,
+        children: (0, a.jsx)(o.Z, {
+          className: p.questProgressRewardTile,
+          quest: g,
+          questContent: l.jn.QUEST_BAR_V2,
           autoplay: false,
-          location: d.dr.QUESTS_BAR,
-          sourceQuestContent: i.jn.QUEST_BAR_V2
+          location: m.dr.QUESTS_BAR,
+          sourceQuestContent: l.jn.QUEST_BAR_V2
         })
       })
     }), (0, a.jsxs)("div", {
-      className: u.questProgressCopy,
-      children: [(0, a.jsx)(o.JC, {
-        inState: t,
+      className: p.questProgressCopy,
+      children: [(0, a.jsx)(c.JC, {
+        inState: n,
         id: "progress-title",
-        children: e => (0, a.jsx)(r.Text, {
+        children: e => (0, a.jsx)(i.Text, {
           ref: e,
-          className: u.questProgressHint,
+          className: p.questProgressHint,
           color: "text-strong",
           variant: "text-sm/semibold",
-          children: v
+          children: y
         })
-      }), (0, a.jsx)(o.JC, {
-        inState: t,
+      }), (0, a.jsx)(c.JC, {
+        inState: n,
         id: "progress-subtitle",
         isTextTransition: true,
-        children: e => (0, a.jsx)(r.Text, {
+        children: e => (0, a.jsx)(i.Text, {
           ref: e,
-          className: u.questProgressHint,
+          className: p.questProgressHint,
           color: "text-muted",
           variant: "text-xs/normal",
-          children: j
+          children: C
         })
       })]
     })]

@@ -16,33 +16,33 @@ var Chunk473749 = require("./473749.js"),
 
 function f(e, n, t) {
   let i = (0, l.e7)([u.ZP], () => u.ZP.getGuildScheduledEvent(e)),
-    f = (0, o.Z)(t),
-    [p, h] = a.useState(null != t && null != i ? (0, b.PJ)(4, (0, b.Ho)(t), new Date(i.scheduled_start_time)) : []);
+    f = (0, c.Z)(t),
+    [h, p] = a.useState(null != t && null != i ? (0, b.PJ)(4, (0, b.Ho)(t), new Date(i.scheduled_start_time)) : []);
   a.useEffect(() => {
     if (null == f || null == t || null == i || r().isEqual(f, t)) return;
     let e = (0, b.Ho)(t);
-    h((0, b.PJ)(p.length, e, new Date(i.scheduled_start_time)))
-  }, [t, p.length, i, f]), a.useEffect(() => {
+    p((0, b.PJ)(h.length, e, new Date(i.scheduled_start_time)))
+  }, [t, h.length, i, f]), a.useEffect(() => {
     if (null == n) return;
-    let t = p.map(e => d.default.fromTimestamp(Math.floor(e.getTime() / c.Z.Millis.SECOND) * c.Z.Millis.SECOND));
+    let t = h.map(e => d.default.fromTimestamp(Math.floor(e.getTime() / o.Z.Millis.SECOND) * o.Z.Millis.SECOND));
     s.Z.getGuildEventUserCounts(n, e, t)
-  }, [e, n, p]);
+  }, [e, n, h]);
   let v = a.useMemo(() => {
-    if (null == t || 0 === p.length || (null == i ? true : i.scheduled_start_time) == null) returnfalse;
+    if (null == t || 0 === h.length || (null == i ? true : i.scheduled_start_time) == null) returnfalse;
     let e = new Date;
     e.setFullYear(e.getFullYear() + b.hn);
-    let n = p[p.length - 1],
+    let n = h[h.length - 1],
       a = (0, b.Ho)(t).after(n);
     return null != a && a <= e
-  }, [t, p, null == i ? true : i.scheduled_start_time]);
+  }, [t, h, null == i ? true : i.scheduled_start_time]);
   return {
-    recurrenceStartTimes: p,
+    recurrenceStartTimes: h,
     canViewMoreRecurrences: v,
     updateRecurrenceStartTimes: () => {
       if (null == t || null == i) return;
       let e = (0, b.Ho)(t),
-        n = p[p.length - 1];
-      h([...p, ...(0, b.PJ)(4, e, n, true)])
+        n = h[h.length - 1];
+      p([...h, ...(0, b.PJ)(4, e, n, true)])
     }
   }
 }

@@ -12,7 +12,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function d(e, n) {
-  return r.Uu(c.Plq.VIEW_CHANNEL, e) || n === o.WX.EXTERNAL
+  return r.Uu(o.Plq.VIEW_CHANNEL, e) || n === c.WX.EXTERNAL
 }
 
 function s(e, n) {

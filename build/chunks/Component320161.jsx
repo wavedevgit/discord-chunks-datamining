@@ -111,7 +111,6 @@ function S(e) {
       null == f || f(), (0, c.JG)(n), l.default.track(d.rMx.TEXT_COPIED), A || I(S + 1), N(true), C(true), P.start(b, () => N(false)), R.start(y, () => I(0))
     };
   return (0, r.jsx)(s.aML, {
-    "data-migration-pending": true,
     text: L(),
     delay: m,
     "aria-label": p,

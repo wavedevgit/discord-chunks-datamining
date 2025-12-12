@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
@@ -72,45 +72,45 @@ let R = Chunk473749.memo(function(e) {
     let {
       participant: n,
       channel: r,
-      context: l
-    } = e, a = null == (t = n.user) ? true : t.id;
-    return (0, o.e7)([O.Z], () => null != n.user && null != l && null != r && O.Z.isLocalVideoDisabled(a, l), [a, n.user, l, r]) ? null : (0, i.jsx)(g.ZP, k({}, e))
+      context: a
+    } = e, l = null == (t = n.user) ? true : t.id;
+    return (0, o.e7)([O.Z], () => null != n.user && null != a && null != r && O.Z.isLocalVideoDisabled(l, a), [l, n.user, a, r]) ? null : (0, i.jsx)(g.ZP, k({}, e))
   }),
   L = Chunk473749.memo(function(e) {
     let {
       context: t = T.Yn.DEFAULT,
-      participants: l,
-      locked: a,
+      participants: a,
+      locked: l,
       channel: o,
       width: s,
       height: u,
       shouldDisplay: d
     } = e, f = r.useCallback((e, r) => {
-      let l = e.user;
+      let a = e.user;
       (0, x.Ws)(w.Odu.VIDEO, {
         type: x.Qu.CAMERA,
         value: x.bk.SETTINGS_OPENED,
-        userId: null == l ? true : l.id
+        userId: null == a ? true : a.id
       }), (0, c.jW)(r, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("6524")]).then(n.bind(n, 27900));
         return n => (0, i.jsx)(e, D(k({}, n), {
-          user: l,
+          user: a,
           mediaEngineContext: t,
           onWatchStream: () => {
             (0, x.Ws)(w.Odu.VIDEO, {
               type: x.Qu.GO_LIVE,
               value: x.bk.ENABLED,
-              userId: null == l ? true : l.id
+              userId: null == a ? true : a.id
             })
           }
         }))
       })
-    }, [t]), m = (0, x.ee)(() => new Set(l.map(e => {
+    }, [t]), m = (0, x.ee)(() => new Set(a.map(e => {
       var t;
       return null == (t = e.user) ? true : t.id
-    })), [l]);
+    })), [a]);
     r.useEffect(() => {
       d && (0, x.zi)(w.Odu.VIDEO, {
         locked: E.default.isInstanceLocked(),
@@ -124,7 +124,7 @@ let R = Chunk473749.memo(function(e) {
       height: u
     }), [s, u]);
     return (0, i.jsx)(i.Fragment, {
-      children: l.map(e => (0, i.jsx)(R, {
+      children: a.map(e => (0, i.jsx)(R, {
         participant: e,
         width: s,
         className: A.tile,
@@ -134,8 +134,8 @@ let R = Chunk473749.memo(function(e) {
         popoutType: h.P.OVERLAY,
         inCall: true,
         noBorder: true,
-        onContextMenu: a ? true : f,
-        forceIdle: a,
+        onContextMenu: l ? true : f,
+        forceIdle: l,
         paused: !d,
         context: t
       }, e.id))
@@ -145,7 +145,7 @@ let R = Chunk473749.memo(function(e) {
     let {
       context: t = T.Yn.DEFAULT,
       participants: n,
-      participantsVersion: l,
+      participantsVersion: a,
       locked: o,
       widget: c,
       channel: u,
@@ -165,7 +165,7 @@ let R = Chunk473749.memo(function(e) {
     let b = r.useMemo(() => ({
         opacity: c.opacity
       }), [c.opacity]),
-      y = r.useMemo(() => a()({
+      y = r.useMemo(() => l()({
         [A.videoList]: true,
         [A.vertical]: !m,
         [A.hidden]: !g && o
@@ -182,7 +182,7 @@ let R = Chunk473749.memo(function(e) {
         width: d,
         height: f,
         shouldDisplay: g,
-        participantsVersion: l
+        participantsVersion: a
       })
     }) : h ? (0, i.jsx)("div", {
       ref: p,
@@ -199,12 +199,12 @@ let R = Chunk473749.memo(function(e) {
       computedSize: n,
       borderWidth: i,
       padding: r,
-      containerSpecs: l
+      containerSpecs: a
     } = e;
     if (!(0, Z.js)(t)) return n;
-    let a = "boolean" != typeof t.meta.horizontal || t.meta.horizontal,
+    let l = "boolean" != typeof t.meta.horizontal || t.meta.horizontal,
       o = 2 * i + 2 * r,
-      s = a ? {
+      s = l ? {
         width: Math.max(n.width, N.vZ),
         height: Math.min(n.height, 2 * N.mo + o)
       } : {
@@ -212,14 +212,14 @@ let R = Chunk473749.memo(function(e) {
         width: Math.min(n.width, 2 * N.mo + o)
       },
       c = {
-        maxWidth: .75 * l.maxX,
-        maxHeight: .75 * l.maxY
+        maxWidth: .75 * a.maxX,
+        maxHeight: .75 * a.maxY
       };
     return (0, _.hJ)(s, c)
   };
 
 function V(e) {
-  var t, n, l, a;
+  var t, n, a, l;
   let s = (0, o.e7)([v.Z, y.Z], () => y.Z.getChannel(v.Z.getVoiceChannelId())),
     c = 2 * e.padding + 2 * e.borderWidth,
     h = null == s ? true : s.id,
@@ -263,8 +263,8 @@ function V(e) {
       orientedPosition: {
         top: 0,
         left: 0,
-        bottom: null != (l = null == Z ? true : Z.height) ? l : e.height,
-        right: null != (a = null == Z ? true : Z.width) ? a : e.width
+        bottom: null != (a = null == Z ? true : Z.height) ? a : e.height,
+        right: null != (l = null == Z ? true : Z.width) ? l : e.width
       }
     };
   return ! function(e) {
@@ -272,29 +272,29 @@ function V(e) {
       horizontal: t,
       widget: n,
       widgetLayoutSpecs: i
-    } = e, l = {
+    } = e, a = {
       id: n.id,
       size: n.size,
       containerWidth: i.containerSize.containerWidth,
       containerHeight: i.containerSize.containerHeight,
       widget: n,
       widgetLayoutSpecs: i
-    }, a = r.useRef(l);
-    r.useLayoutEffect(() => void(a.current = l)), r.useLayoutEffect(() => {
+    }, l = r.useRef(a);
+    r.useLayoutEffect(() => void(l.current = a)), r.useLayoutEffect(() => {
       let {
         size: e,
         id: n,
         containerWidth: i,
         containerHeight: r,
-        widget: l,
+        widget: a,
         widgetLayoutSpecs: o
-      } = a.current;
+      } = l.current;
       if (!(t && e.height > e.width || !t && e.width > e.height)) return;
       let {
         width: s,
         height: c
       } = z(D(k({}, o), {
-        widget: l,
+        widget: a,
         operation: C.B.RESIZE_NORTH,
         computedSize: {
           width: r,

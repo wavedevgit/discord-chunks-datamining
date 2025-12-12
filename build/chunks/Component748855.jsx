@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 748855, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  L: () => h
+  L: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,75 +9,46 @@ var Chunk54381 = require("./54381.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk106301 = require("./106301.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk227426 = require("./227426.js"),
   Chunk564546 = require("./564546.js");
 
-function h(e) {
+function m(e) {
   let {
     label: t,
     icon: n,
     setStatus: l,
-    isFavorited: h,
-    onFavoriteClick: m
-  } = e, [g, b] = r.useState(false), C = (0, o.e7)([u.Z], () => u.Z.getFavoritedStatuses().length >= u.o), y = r.useCallback(e => {
-    e.stopPropagation(), null == m || m()
-  }, [m]), v = h ? c.r7p : c.vxU;
-  return (0, i.jsxs)(c.P3F, {
+    isFavorited: m,
+    onFavoriteClick: g
+  } = e, [b, C] = r.useState(false), y = (0, o.e7)([d.Z], () => d.Z.getFavoritedStatuses().length >= d.o), v = null != g, O = r.useCallback(e => {
+    e.stopPropagation(), null == g || g()
+  }, [g]), x = m ? u.r7p : u.vxU;
+  return (0, i.jsxs)(u.P3F, {
     onClick: l,
     onMouseEnter: () => {
-      b(true)
+      C(true)
     },
     onMouseLeave: () => {
-      b(false)
+      C(false)
     },
-    className: a()(f.item, f.labelContainer, p.container),
-    children: [n, (0, i.jsx)(c.Text, {
+    className: a()(h.item, h.labelContainer, f.container),
+    children: [n, (0, i.jsx)(u.Text, {
       variant: "text-md/normal",
-      className: p.itemText,
+      className: f.itemText,
       children: t
-    }), g && null != m && (0, i.jsx)(c.aML, {
-      "data-migration-pending": true,
-      text: C && !h ? d.intl.string(d.t.YSDH9n) : true,
-      children: e => {
-        var t, n;
-        return (0, i.jsx)(c.P3F, (t = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), i.forEach(function(t) {
-              var i;
-              i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
-                enumerable: true,
-                configurable: true,
-                writable: true
-              }) : e[t] = i
-            })
-          }
-          return e
-        }({}, e), n = n = {
-          className: a()(p.centerAlign, p.favoriteIcon),
-          onClick: y,
-          children: (0, i.jsx)(v, {
-            className: p.closeIcon,
-            color: h ? s.Z.colors.ICON_FEEDBACK_WARNING : "currentColor"
-          })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-          var n = Object.keys(e);
-          if (Object.getOwnPropertySymbols) {
-            var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
-          }
-          return n
-        })(Object(n)).forEach(function(e) {
-          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-        }), t))
-      }
+    }), b && v && (0, i.jsx)(c.u, {
+      text: y && !m ? p.intl.string(p.t.YSDH9n) : true,
+      children: (0, i.jsx)(u.P3F, {
+        className: a()(f.centerAlign, f.favoriteIcon),
+        onClick: O,
+        children: (0, i.jsx)(x, {
+          className: f.closeIcon,
+          color: m ? s.Z.colors.ICON_FEEDBACK_WARNING : "currentColor"
+        })
+      })
     })]
   })
 }

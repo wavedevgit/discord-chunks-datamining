@@ -36,14 +36,14 @@ class u extends(r = Chunk473749.PureComponent) {
       showDays: t,
       showUnits: n,
       className: r
-    } = this.props, l = [e.days, e.hours, e.minutes, e.seconds], a = [s.intl.string(s.t["6m/6nM"]), s.intl.string(s.t.n7dksO), s.intl.string(s.t["1LyF1h"]), s.intl.string(s.t.QJyuxY)];
-    if (0 === e.days) l.shift();
+    } = this.props, a = [e.days, e.hours, e.minutes, e.seconds], l = [s.intl.string(s.t["6m/6nM"]), s.intl.string(s.t.n7dksO), s.intl.string(s.t["1LyF1h"]), s.intl.string(s.t.QJyuxY)];
+    if (0 === e.days) a.shift();
     else if (!t) {
-      let e = l.shift();
-      l[0] += 24 * e
+      let e = a.shift();
+      a[0] += 24 * e
     }
-    let c = o()(l).map(e => e < 10 ? "0".concat(e) : e).map((e, t) => [t > 0 && !n ? ":" : " ", (0, i.jsxs)("span", {
-      children: [e, n ? a[l.length - t - 1] : null]
+    let c = o()(a).map(e => e < 10 ? "0".concat(e) : e).map((e, t) => [t > 0 && !n ? ":" : " ", (0, i.jsxs)("span", {
+      children: [e, n ? l[a.length - t - 1] : null]
     }, t)]).flatten().value();
     return (0, i.jsx)("span", {
       className: r,
@@ -62,7 +62,7 @@ class u extends(r = Chunk473749.PureComponent) {
       "aria-label": Chunk388032.intl.string(Chunk388032.t.PqEzn8),
       children: "∞"
     });
-    let l = (0, Chunk55935.TD)(Date.now(), module, r);
+    let a = (0, Chunk55935.TD)(Date.now(), module, r);
     return null != exports ? exports(Chunk473749, this.defaultRender.bind(this, Chunk473749)) : this.defaultRender(Chunk473749)
   }
   constructor(...e) {

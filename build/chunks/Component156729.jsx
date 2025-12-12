@@ -2,7 +2,7 @@
 /** chunk id: 156729, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => w
 }), require("./388685.js"), require("./35282.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,6 +10,7 @@ var r, Chunk54381 = require("./54381.js"),
   s = require.n(Chunk120356),
   Chunk873546 = require("./873546.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk681715 = require("./681715.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -24,7 +25,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk391000 = require("./391000.js");
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,20 +34,20 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 
-function I(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
 }
 
-function T(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -57,14 +58,14 @@ function T(e, t) {
   return n
 }
 
-function C(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : T(Object(t)).forEach(function(n) {
+function A(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = "https://www.paypal.com",
-  N = "isDefault";
-class P extends(r = Chunk473749.PureComponent) {
+let N = "https://www.paypal.com",
+  P = "isDefault";
+class R extends(r = Chunk473749.PureComponent) {
   componentWillUnmount() {
     Chunk570140.Z.wait(() => {
       (0, Chunk355467._H)(), (0, Chunk355467.w7)()
@@ -102,7 +103,7 @@ class P extends(r = Chunk473749.PureComponent) {
         className: Chunk391000.sectionHeader,
         variant: "text-sm/normal",
         children: Chunk388032.intl.string(Chunk388032.t["50Auo2"])
-      }), (0, Chunk54381.jsx)(Chunk464179.ZP, C(I({}, module), {
+      }), (0, Chunk54381.jsx)(Chunk464179.ZP, A(T({}, module), {
         mode: Chunk464179.ZP.Modes.EDIT,
         layout: r,
         onBillingAddressChange: this.handleAddressUpdate,
@@ -147,13 +148,12 @@ class P extends(r = Chunk473749.PureComponent) {
         children: [(0, Chunk54381.jsx)(Chunk159691.hE2, {
           children: (0, Chunk54381.jsxs)("div", {
             className: Chunk391000.disabledTooltipWrapper,
-            children: [require ? (0, Chunk54381.jsx)(Chunk481060.aML, {
-              "data-migration-pending": true,
+            children: [require ? (0, Chunk54381.jsx)(Chunk681715.u, {
               text: Chunk388032.intl.string(Chunk388032.t["v6/z28"]),
-              children: e => (0, i.jsx)("div", I({
+              children: (0, Chunk54381.jsx)("div", {
                 "aria-hidden": true,
-                className: v.disabledTooltipTarget
-              }, e))
+                className: Chunk391000.disabledTooltipTarget
+              })
             }) : null, (0, Chunk54381.jsx)(Chunk159691.zxk, {
               type: "button",
               disabled: require || module,
@@ -215,15 +215,15 @@ class P extends(r = Chunk473749.PureComponent) {
           }) : null, (0, Chunk54381.jsx)("div", {
             className: Chunk391000.subText,
             children: Chunk873546 ? Chunk388032.intl.format(Chunk388032.t.w9WkBl, {
-              paypalURL: A
+              paypalURL: N
             }) : Chunk388032.intl.string(Chunk388032.t.VXndyr)
           })]
         }), this.renderCardExpirationSection(), this.renderBillingAddressSection(), (0, Chunk54381.jsx)("div", {
           className: Chunk391000.defaultSection,
           children: (0, Chunk54381.jsx)(Chunk481060.Checkbox, {
-            value: N,
+            value: P,
             checked: Chunk120356,
-            onChange: e => this.handleFieldChange(e, N),
+            onChange: e => this.handleFieldChange(e, P),
             label: Chunk388032.intl.string(Chunk388032.t.nag9Og),
             labelType: "secondary"
           })
@@ -233,8 +233,8 @@ class P extends(r = Chunk473749.PureComponent) {
   }
   constructor(e) {
     var t, n, r, i, a, o, s;
-    super(e), S(this, "handleSubmit", e => {
-      if (e.preventDefault(), e.stopPropagation(), 0 === Object.values(this.state.dirtyFields).filter(g.lm).length) this.props.onCancel();
+    super(e), I(this, "handleSubmit", e => {
+      if (e.preventDefault(), e.stopPropagation(), 0 === Object.values(this.state.dirtyFields).filter(E.lm).length) this.props.onCancel();
       else {
         let {
           billingAddress: e,
@@ -249,23 +249,23 @@ class P extends(r = Chunk473749.PureComponent) {
           isDefault: t
         })
       }
-    }), S(this, "handleCancel", () => {
+    }), I(this, "handleCancel", () => {
       this.props.onCancel()
-    }), S(this, "handleDelete", () => {
+    }), I(this, "handleDelete", () => {
       let {
         onDelete: e,
         paymentSource: t
       } = this.props;
       e(t.id)
-    }), S(this, "handleAddressUpdate", (e, t, n) => {
+    }), I(this, "handleAddressUpdate", (e, t, n) => {
       this.setState({
         billingAddress: e,
         billingAddressValid: t,
-        dirtyFields: C(I({}, this.state.dirtyFields), {
+        dirtyFields: A(T({}, this.state.dirtyFields), {
           billingAddress: n
         })
       })
-    }), S(this, "handleExpirationDateUpdate", (e, t) => {
+    }), I(this, "handleExpirationDateUpdate", (e, t) => {
       let {
         expirationDate: n
       } = e;
@@ -274,10 +274,10 @@ class P extends(r = Chunk473749.PureComponent) {
         }), null == n || "" === n) return;
       let [r, i] = n.split("/");
       this.handleFieldChange(Number(r), "expiresMonth"), this.handleFieldChange(Number("".concat(new Date().getFullYear().toString().slice(0, 2)).concat(i)), "expiresYear")
-    }), S(this, "handleFieldChange", (e, t) => {
+    }), I(this, "handleFieldChange", (e, t) => {
       null != t && this.setState({
         [t]: e,
-        dirtyFields: C(I({}, this.state.dirtyFields), {
+        dirtyFields: A(T({}, this.state.dirtyFields), {
           [t]: true
         })
       })
@@ -296,8 +296,8 @@ class P extends(r = Chunk473749.PureComponent) {
         city: null != (o = u.city) ? o : "",
         postalCode: null != (s = u.postalCode) ? s : ""
       },
-      expiresMonth: l instanceof m.dm ? l.expiresMonth : true,
-      expiresYear: l instanceof m.dm ? l.expiresYear : true,
+      expiresMonth: l instanceof h.dm ? l.expiresMonth : true,
+      expiresYear: l instanceof h.dm ? l.expiresYear : true,
       billingAddressValid: false,
       isDefault: c,
       expirationValid: true,
@@ -305,12 +305,12 @@ class P extends(r = Chunk473749.PureComponent) {
     }
   }
 }
-S(P, "defaultProps", {
+I(R, "defaultProps", {
   onDelete: () => {},
   onSubmit: () => {},
   onCancel: () => {}
 });
-let R = Chunk442837.ZP.connectStores([Chunk351402.Z], () => ({
+let w = Chunk442837.ZP.connectStores([Chunk351402.Z], () => ({
   updateError: Chunk351402.Z.editSourceError,
   removeError: Chunk351402.Z.removeSourceError
-}))(P)
+}))(R)

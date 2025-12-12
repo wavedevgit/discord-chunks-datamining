@@ -15,10 +15,10 @@ let c = () => {
     e = (0, Chunk773275.xf)(t => t.install),
     n = (0, Chunk773275.xf)(t => t.installationStatus),
     c = (0, Chunk773275.xf)(t => t.setDoInstall),
-    S = (0, Chunk773275.xf)(t => t.setInstallationStatus);
+    T = (0, Chunk773275.xf)(t => t.setInstallationStatus);
   return (0, Chunk473749.useEffect)(() => {
-    module && require === Chunk5900._n.NOT_INSTALLED && (c(false), S(Chunk5900._n.INSTALLING), exports().catch(t => {
-      S(s._n.ERROR), a.Z.captureException(t, {
+    module && require === Chunk5900._n.NOT_INSTALLED && (c(false), T(Chunk5900._n.INSTALLING), exports().catch(t => {
+      T(s._n.ERROR), a.Z.captureException(t, {
         tags: {
           source: l.D.WARP_INSTALL_HELPER
         }
@@ -27,5 +27,5 @@ let c = () => {
         error_source: l.D.WARP_INSTALL_HELPER
       })
     }))
-  }, [module, c, exports, require, S]), null
+  }, [module, c, exports, require, T]), null
 }

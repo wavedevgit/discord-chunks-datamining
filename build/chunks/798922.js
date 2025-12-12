@@ -25,14 +25,14 @@ let I = (0, Chunk509613.k4)(Chunk313789.n.SESSIONS_DESCRIPTION_CATEGORY, {
       (0, Chunk43015.$Z)()
     })
   }),
-  O = (0, Chunk509613.wf)(Chunk313789.n.SESSIONS_PANEL, {
+  N = (0, Chunk509613.wf)(Chunk313789.n.SESSIONS_PANEL, {
     usePredicate: () => !(0, Chunk526665.gN)("LegacySessionsPanel"),
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
     hideInStreamerMode: true,
     StronglyDiscouragedCustomComponent: Chunk36192.ZP,
     buildLayout: () => []
   }),
-  N = (0, Chunk509613.wf)(Chunk313789.n.SESSIONS_PANEL, {
+  O = (0, Chunk509613.wf)(Chunk313789.n.SESSIONS_PANEL, {
     usePredicate: () => (0, Chunk526665.gN)("SessionsPanel"),
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
     hideInStreamerMode: true,
@@ -46,5 +46,5 @@ let I = (0, Chunk509613.k4)(Chunk313789.n.SESSIONS_DESCRIPTION_CATEGORY, {
       type: Chunk970013.W.BADGE_NEW,
       getDismissibleContentTypes: () => [Chunk704215.z.AUTH_SESSIONS_NEW]
     },
-    buildLayout: () => (0, Chunk526665.Gl)("SessionsPanel") ? [N] : [O]
+    buildLayout: () => (0, Chunk526665.Gl)("SessionsPanel") ? [O] : [N]
   })

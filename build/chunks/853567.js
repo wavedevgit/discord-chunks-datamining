@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 853567, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  H: () => E
+  H: () => g
 });
 var Chunk509613 = require("./509613.js"),
   Chunk970013 = require("./970013.js"),
@@ -15,7 +15,7 @@ var Chunk509613 = require("./509613.js"),
   Chunk169804 = require("./169804.js"),
   Chunk343597 = require("./343597.js"),
   Chunk388032 = require("./388032.jsx");
-let E = (0, Chunk509613.k4)(Chunk313789.n.ACCESSIBILITY_OVERVIEW, {
+let g = (0, Chunk509613.k4)(Chunk313789.n.ACCESSIBILITY_OVERVIEW, {
   useSubnavLabel: () => Chunk388032.intl.string(Chunk388032.t.fTNxW7),
   useNotice: () => ({
     type: Chunk970013.v.STRONGLY_DISCOURAGED_CUSTOM,

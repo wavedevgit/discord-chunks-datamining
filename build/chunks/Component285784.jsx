@@ -21,24 +21,24 @@ function u(e) {
     canInvite: u,
     isChannelPublic: b = true,
     entityType: f,
-    onJoinClick: p,
-    onRsvpClick: h,
+    onJoinClick: h,
+    onRsvpClick: p,
     onStartClick: v,
-    onInviteClick: g,
-    onEndClick: m,
+    onInviteClick: m,
+    onEndClick: g,
     onJoinGuildClick: x,
     isJoined: _ = false,
     channel: C
-  } = e, j = true !== p, I = function(e) {
+  } = e, I = true !== h, k = function(e) {
     let {
       onInviteClick: n,
       canInvite: t,
       isChannelPublic: a,
       channel: d
     } = e, u = new r.V7, [b, f] = i.useState(false);
-    return ((0, o.ZP)(() => () => {
+    return ((0, c.ZP)(() => () => {
       u.stop()
-    }), null == n) ? null : (0, c.T)(null != t && t, null != a && a, d) ? {
+    }), null == n) ? null : (0, o.T)(null != t && t, null != a && a, d) ? {
       variant: "secondary",
       icon: l.aAc,
       onClick: n,
@@ -55,15 +55,15 @@ function u(e) {
       "aria-label": s.intl.string(s.t.WqhZss)
     }
   }({
-    onInviteClick: g,
+    onInviteClick: m,
     canInvite: u,
     isChannelPublic: b,
     channel: C
-  }), k = [];
-  if (null != I && k.push(I), n && f !== d.WX.EXTERNAL && k.push({
+  }), Z = [];
+  if (null != k && Z.push(k), n && f !== d.WX.EXTERNAL && Z.push({
       variant: "active",
       size: "sm",
-      onClick: p,
+      onClick: h,
       text: function(e) {
         let {
           isJoined: n,
@@ -73,37 +73,37 @@ function u(e) {
         return t ? n ? s.intl.string(s.t.aW2YlJ) : a ? s.intl.string(s.t.nxUtoQ) : s.intl.string(s.t.ZYO5OK) : s.intl.string(s.t.TVBCKZ)
       }({
         isJoined: _,
-        canJoin: j,
+        canJoin: I,
         isVoiceChannel: f === d.WX.VOICE
       }),
-      disabled: !j
-    }), t && null != x && k.push({
+      disabled: !I
+    }), t && null != x && Z.push({
       variant: "active",
       size: "sm",
       text: s.intl.string(s.t["2BP08E"]),
       onClick: x
-    }), !t && !n && null != h) {
+    }), !t && !n && null != p) {
     let e = a && !t;
-    k.push({
+    Z.push({
       variant: e ? "active" : "secondary",
       size: "sm",
       icon: e ? l.dz2 : l.Dkj,
       text: s.intl.string(s.t.DlcqlU),
-      onClick: h,
+      onClick: p,
       disabled: t
     })
   }
-  return n || null == v || k.push({
+  return n || null == v || Z.push({
     variant: "primary",
     size: "sm",
     onClick: v,
     text: s.intl.string(s.t.I0v0Qv)
-  }), n && null != m && k.push({
+  }), n && null != g && Z.push({
     variant: "secondary",
     size: "sm",
-    onClick: m,
+    onClick: g,
     text: s.intl.string(s.t.qaYzPA)
-  }), k
+  }), Z
 }
 
 function b(e) {

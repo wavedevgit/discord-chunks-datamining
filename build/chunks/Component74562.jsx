@@ -1,7 +1,7 @@
 /** Chunk was on 56236 **/
 /** chunk id: 74562, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -15,11 +15,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk435663 = require("./435663.js");
 
-function p(e) {
+function m(e) {
   let {
     guildId: n,
     onClose: t
-  } = e, p = (0, i.e7)([o.Z, s.Z], () => {
+  } = e, m = (0, i.e7)([o.Z, s.Z], () => {
     let e = o.Z.getGuild(n);
     return s.Z.can(u.Plq.MANAGE_ROLES, e)
   }, [n]);
@@ -46,7 +46,7 @@ function p(e) {
       variant: "text-sm/normal",
       className: g.subtitle,
       children: d.intl.string(d.t["v/S/PG"])
-    }), p && (0, r.jsx)(l.Text, {
+    }), m && (0, r.jsx)(l.Text, {
       color: "text-default",
       variant: "text-sm/normal",
       className: g.roleTip,

@@ -215,7 +215,7 @@ class et extends Chunk473749.PureComponent {
             voiceChannelBitrate: g,
             voiceChannelGuildId: d
           })
-        }, 1e4), null != I.name && null != S && R.Z.shouldReport(I)) {
+        }, 1e4), null != I.name && null != S && R.Z.shouldReport(I.name)) {
         let e = I.name;
         c.Z.identifyGame(S, e).then(e => c.Z.reportUnverifiedGame(e)).catch(e => new _.Z("AutoAnalytics").error("Cannot identify game", e))
       }

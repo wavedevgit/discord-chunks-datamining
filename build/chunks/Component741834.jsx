@@ -16,8 +16,8 @@ function u(e) {
   var t;
   let {
     roles: u,
-    guildId: b
-  } = e, p = null != (t = u[0]) ? t : null, m = u.length - 1, f = r.useMemo(() => new Intl.NumberFormat(c.intl.currentLocale).format(m), [m]), g = r.useCallback(e => {
+    guildId: m
+  } = e, b = null != (t = u[0]) ? t : null, p = u.length - 1, g = r.useMemo(() => new Intl.NumberFormat(c.intl.currentLocale).format(p), [p]), f = r.useCallback(e => {
     e.stopPropagation(), (0, o.jW)(e, async () => {
       let {
         default: e
@@ -29,19 +29,19 @@ function u(e) {
   }, [u]);
   return 0 === u.length ? null : (0, i.jsxs)("div", {
     className: d.roleContainer,
-    children: [null != p && (0, i.jsx)(s.Z, {
+    children: [null != b && (0, i.jsx)(s.Z, {
       className: d.firstRole,
-      role: p,
-      guildId: b
-    }), m > 0 && (0, i.jsx)(a.P3F, {
+      role: b,
+      guildId: m
+    }), p > 0 && (0, i.jsx)(a.P3F, {
       className: d.otherRoles,
-      onClick: g,
+      onClick: f,
       children: (0, i.jsx)(l.u, {
         text: c.intl.string(c.t.DY6n4q),
         children: (0, i.jsxs)(a.Text, {
           variant: "text-xs/medium",
           color: "text-strong",
-          children: ["+", f]
+          children: ["+", g]
         })
       })
     })]

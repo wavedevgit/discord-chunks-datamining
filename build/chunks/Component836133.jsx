@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 836133, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  y: () => S
+  y: () => T
 });
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk313789 = require("./313789.js"),
   Chunk494620 = require("./494620.jsx"),
   Chunk388032 = require("./388032.jsx");
-let S = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_HARDWARE_CLASSIFICATION_WARNING, {
+let T = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_HARDWARE_CLASSIFICATION_WARNING, {
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.SIxrIF)],
   usePredicate: () => (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()) === Chunk894694.xH.BELOW_MINIMUM,
   Component: () => (0, Chunk54381.jsx)(Chunk494620.Z, {

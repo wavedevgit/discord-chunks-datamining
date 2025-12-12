@@ -121,7 +121,7 @@ function v(e) {
       icon: b,
       className: a
     }) : true,
-    text: g,
+    text: null != g ? g : "",
     textVariant: n,
     textClassName: i,
     hideTooltip: c,

@@ -1,7 +1,7 @@
 /** Chunk was on 9414 **/
 /** chunk id: 665578, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => w
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -48,7 +48,7 @@ function E(e) {
   return e
 }
 
-function P(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,21 +61,21 @@ function P(e, t) {
   }), e
 }
 
-function T(e) {
+function w(e) {
   let {
     applicationId: t,
     commandId: l,
     guildId: j,
     inModal: v,
-    editedTargetPermissions: T,
+    editedTargetPermissions: w,
     originalApplicationPermissions: k,
     originalCommandPermissions: A,
     selectedPermissionCount: D
-  } = e, R = (0, s.e7)([x.Z], () => null == l ? null : x.Z.getCommand(l), [l]), L = (null == R ? true : R.defaultMemberPermissions) != null, M = (0, s.e7)([f.Z, p.ZP, g.Z], () => {
-    let e = f.Z.getGuild(j),
-      t = p.ZP.getSelfMember(j);
+  } = e, R = (0, s.e7)([x.Z], () => null == l ? null : x.Z.getCommand(l), [l]), L = (null == R ? true : R.defaultMemberPermissions) != null, M = (0, s.e7)([g.Z, b.ZP, f.Z], () => {
+    let e = g.Z.getGuild(j),
+      t = b.ZP.getSelfMember(j);
     return null != e && null != t && (0, u.Ft)({
-      PermissionStore: g.Z,
+      PermissionStore: f.Z,
       guild: e,
       selfMember: t,
       applicationLevelPermissions: k,
@@ -85,20 +85,20 @@ function T(e) {
   }, [j, R, k, A]), U = null != l ? l : t, [B, W] = r.useMemo(() => {
     let e = {},
       t = {};
-    for (let [n, i] of Object.entries(T)) i.type === d.Kw.CHANNEL ? e[n] = i : t[n] = i;
+    for (let [n, i] of Object.entries(w)) i.type === d.Kw.CHANNEL ? e[n] = i : t[n] = i;
     return [e, t]
-  }, [T]), H = r.useCallback(e => {
-    let t = f.Z.getGuild(j),
-      n = p.ZP.getSelfMember(j);
+  }, [w]), H = r.useCallback(e => {
+    let t = g.Z.getGuild(j),
+      n = b.ZP.getSelfMember(j);
     return null != t && null != n && (null != l ? (0, u.Ft)({
-      PermissionStore: g.Z,
+      PermissionStore: f.Z,
       guild: t,
       selfMember: n,
       applicationLevelPermissions: k,
       commandLevelPermissions: e,
       defaultMemberPermissions: null == R ? true : R.defaultMemberPermissions
     }) : (0, u.Ft)({
-      PermissionStore: g.Z,
+      PermissionStore: f.Z,
       guild: t,
       selfMember: n,
       applicationLevelPermissions: e
@@ -106,34 +106,34 @@ function T(e) {
   }, [j, R, l, k]), G = r.useCallback((e, t) => {
     let n, i = null;
     if (0 !== t.length) {
-      let e = T[t[0]];
+      let e = w[t[0]];
       if (e.type === d.Kw.USER) n = y.s.REMOVE_SELF;
       else {
         let t = e.id;
-        if (n = y.s.REMOVE_ROLE, (0, b.pM)(j, t)) i = "@everyone";
+        if (n = y.s.REMOVE_ROLE, (0, m.pM)(j, t)) i = "@everyone";
         else {
-          let e = m.Z.getRole(j, t);
+          let e = p.Z.getRole(j, t);
           i = null != e ? e.name : "role"
         }
       }
     } else {
       let t = Object.values(e)[0].id;
-      if (n = y.s.DENY_ROLE, (0, b.pM)(j, t)) i = "@everyone";
+      if (n = y.s.DENY_ROLE, (0, m.pM)(j, t)) i = "@everyone";
       else {
-        let e = m.Z.getRole(j, t);
+        let e = p.Z.getRole(j, t);
         i = null != e ? e.name : "role"
       }
     }(0, y._)(n, i)
-  }, [j, T]), F = r.useCallback((e, n) => {
+  }, [j, w]), F = r.useCallback((e, n) => {
     let i = {};
-    for (let [e, t] of Object.entries(T)) i[e] = {
+    for (let [e, t] of Object.entries(w)) i[e] = {
       id: t.id,
       permission: t.permission,
       type: t.type
     };
     if (i = Object.assign(i, e), n.length > 0 && (i = a().omit(i, n)), !H(i)) return void G(e, n);
     h.W4(t, U, i)
-  }, [t, T, U, H, G]), K = r.useCallback(() => {
+  }, [t, w, U, H, G]), K = r.useCallback(() => {
     let e = Object.keys(B);
     return (0, c.ZDy)(async () => {
       let {
@@ -145,7 +145,7 @@ function T(e) {
         headerText: I.intl.string(I.t["i1c+kV"]),
         hasMemberSearch: false,
         overwrittenKeys: e,
-        search: Z,
+        search: P,
         searchPlaceholderText: I.intl.string(I.t["TLQo/i"]),
         selectedPermissionCount: D
       }, n))
@@ -171,7 +171,7 @@ function T(e) {
     let {
       default: e
     } = await n.e("21897").then(n.bind(n, 303313)), t = R.defaultMemberPermissions;
-    return o.fS(t, u.BO) && (t = N.Plq.ADMINISTRATOR), n => (0, i.jsx)(e, P(E({}, n), {
+    return o.fS(t, u.BO) && (t = N.Plq.ADMINISTRATOR), n => (0, i.jsx)(e, Z(E({}, n), {
       defaultMemberPermissions: t
     }))
   }), [R]), q = D - S._n, Y = q >= 0, J = [{
@@ -194,13 +194,13 @@ function T(e) {
         removeCount: q
       })
     }) : null, L ? (0, i.jsxs)("div", {
-      className: w.requiredPermissionsBanner,
+      className: T.requiredPermissionsBanner,
       children: [(0, i.jsx)(c.d3s, {
         size: "sm",
         color: "currentColor",
-        className: w.icon
+        className: T.icon
       }), (0, i.jsx)("span", {
-        className: w.message,
+        className: T.message,
         children: I.intl.format(I.t["2889Gq"], {})
       }), (0, i.jsx)(c.Button, {
         variant: "secondary",
@@ -212,10 +212,10 @@ function T(e) {
       let n = null;
       return M ? Y && (n = I.intl.string(I.t["XTwtW/"])) : n = null != l ? I.intl.string(I.t.tybdas) : I.intl.string(I.t["z2hjk/"]), (0, i.jsx)(C.Z, {
         bar: (0, i.jsx)(c.aML, {
-          tooltipClassName: w.tooltip,
+          tooltipClassName: T.tooltip,
           text: n,
           shouldShow: null != n,
-          children: t => (0, i.jsx)(c.Button, P(E({}, t), {
+          children: t => (0, i.jsx)(c.Button, Z(E({}, t), {
             variant: "secondary",
             disabled: Y || !M,
             onClick: e.buttonClick,
@@ -226,7 +226,7 @@ function T(e) {
         inModal: v,
         title: e.title,
         children: (0, i.jsx)("div", {
-          className: v ? true : w.listContainer,
+          className: v ? true : T.listContainer,
           children: (0, i.jsx)(O.Z, {
             guildId: j,
             commandId: l,
@@ -241,10 +241,10 @@ function T(e) {
   })
 }
 
-function Z(e) {
+function P(e) {
   let t = (0, j.w)(e);
-  return P(E({}, t), {
-    results: t.results.map(e => P(E({}, e), {
+  return Z(E({}, t), {
+    results: t.results.map(e => Z(E({}, e), {
       type: d.Kw.CHANNEL
     }))
   })
@@ -252,10 +252,10 @@ function Z(e) {
 
 function _(e) {
   let t = (0, v.U)(e);
-  return P(E({}, t), {
-    results: t.results.roles.map(e => P(E({}, e), {
+  return Z(E({}, t), {
+    results: t.results.roles.map(e => Z(E({}, e), {
       type: d.Kw.ROLE
-    })).concat(t.results.members.map(e => P(E({}, e), {
+    })).concat(t.results.members.map(e => Z(E({}, e), {
       type: d.Kw.USER
     })))
   })

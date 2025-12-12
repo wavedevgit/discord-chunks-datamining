@@ -20,29 +20,29 @@ function d(e) {
   } = e, s = t.slice(0, 5), u = s.map(e => {
     var t, i;
     return (0, a.jsxs)("div", {
-      className: c.speakerContainer,
+      className: o.speakerContainer,
       children: [(0, a.jsx)(l.qEK, {
         src: null == e || null == (t = e.user) ? true : t.getAvatarURL(n.id, 20),
         size: l.EFr.SIZE_20,
-        className: c.avatar,
+        className: o.avatar,
         "aria-label": "".concat(null == e ? true : e.userNick, "-avatar")
       }), (0, a.jsx)("div", {
-        className: c.textInGridContainer,
+        className: o.textInGridContainer,
         children: (0, a.jsx)(l.Text, {
           color: "text-default",
           variant: "text-sm/normal",
-          className: c.textInGrid,
+          className: o.textInGrid,
           children: null == e ? true : e.userNick
         })
       })]
     }, null == e || null == (i = e.user) ? true : i.id)
   }), b = i - s.length;
   return (0, a.jsxs)("div", {
-    className: r()(c.grid, d),
+    className: r()(o.grid, d),
     children: [u, b > 0 && (0, a.jsxs)("div", {
-      className: c.speakerContainer,
+      className: o.speakerContainer,
       children: [(0, a.jsx)("div", {
-        className: c.iconMicrophone,
+        className: o.iconMicrophone,
         children: (0, a.jsx)(l.S6n, {
           size: "custom",
           color: "currentColor",
@@ -51,8 +51,8 @@ function d(e) {
       }), (0, a.jsx)(l.Text, {
         color: "text-default",
         variant: "text-sm/normal",
-        className: c.textInGrid,
-        children: o.intl.format(o.t["185ggO"], {
+        className: o.textInGrid,
+        children: c.intl.format(c.t["185ggO"], {
           count: b
         })
       })]

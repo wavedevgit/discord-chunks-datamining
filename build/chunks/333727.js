@@ -14,7 +14,7 @@ var Chunk278323 = require("./278323.js"),
   Chunk388032 = require("./388032.jsx");
 
 function f(e, t, n, f) {
-  if (a.Z.isNotificationDisabled(c.n0.ActivityInvite)) return null;
+  if (l.Z.isNotificationDisabled(c.n0.ActivityInvite)) return null;
   let h = t.username,
     p = d.intl.format(d.t.VDODnv, {
       username: "",
@@ -48,7 +48,7 @@ function f(e, t, n, f) {
       }), b("join"), r.Z.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {
-      (0, l.ack)(e.id, {
+      (0, a.ack)(e.id, {
         section: u.jXE.OVERLAY,
         object: u.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
         objectType: u.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC

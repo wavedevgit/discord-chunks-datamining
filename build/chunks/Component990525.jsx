@@ -1,7 +1,7 @@
 /** Chunk was on 43342 **/
 /** chunk id: 990525, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => w
+  J: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -44,15 +44,15 @@ function C(e) {
   }
   return e
 }
-let w = e => {
+let E = e => {
   let {
     voiceFilter: t,
     hasNitro: n,
     analyticsContext: o
   } = e, {
-    activeVoice: w,
-    mostRecentlyRequestedVoiceId: E
-  } = (0, j.o)(), I = (0, O.z)(t.id), T = t.id === w, S = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !T, Z = !T && t.id === E, [k, D] = i.useState(false);
+    activeVoice: E,
+    mostRecentlyRequestedVoiceId: w
+  } = (0, O.o)(), I = (0, j.z)(t.id), T = t.id === E, S = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !T, Z = !T && t.id === w, [k, D] = i.useState(false);
   i.useEffect(() => {
     let e = Z ? setTimeout(() => D(Z), 200) : true;
     return () => {
@@ -66,29 +66,29 @@ let w = e => {
     }),
     A = (0, a.e7)([y.Z], () => y.Z.isVoiceFilterDownloaded(t.id), [t]),
     R = null == I ? true : I.previewSoundURLs,
-    [L, V] = i.useState(0),
+    [V, L] = i.useState(0),
     {
       isPlaying: F,
       playSound: U,
       stopSound: Y,
       preloadSound: H
-    } = (0, p.Z)(null != R ? R[L] : null, {
+    } = (0, p.Z)(null != R ? R[V] : null, {
       soundId: t.id
     }),
     z = P[t.styleKey],
     B = i.useCallback(() => {
-      n || !S ? ((0, b.v6)(w === t.id ? null : t.id, o), N && m.default.track(h.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, C({
+      n || !S ? ((0, b.v6)(E === t.id ? null : t.id, o), N && m.default.track(h.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, C({
         voice_filter_id: t.id
       }, (0, g.w)(o)))) : (0, d.i)()
-    }, [n, S, w, t.id, o, N]),
+    }, [n, S, E, t.id, o, N]),
     q = i.useCallback(() => {
       m.default.track(h.rMx.VOICE_FILTER_PREVIEW_PLAYED, C({
         voice_filter_id: t.id
       }, (0, g.w)(o))), U({
         volume: .5,
         outputChannel: x.w.VOICE
-      }), (.25 > Math.random() || L > 0) && null != R && V(e => (e + 1) % R.length)
-    }, [o, U, L, R, t.id]),
+      }), (.25 > Math.random() || V > 0) && null != R && L(e => (e + 1) % R.length)
+    }, [o, U, V, R, t.id]),
     W = null != I ? _.intl.string(I.name) : "";
   return (0, r.jsxs)("div", {
     className: l()(P.filter, z, {

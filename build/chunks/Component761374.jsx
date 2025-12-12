@@ -42,45 +42,45 @@ function j(e) {
     anchorTop: D,
     anchorLeft: R,
     showEmpty: L = true
-  } = e, M = A ? S.C5.HORIZONTAL : S.C5.VERTICAL, z = M === S.C5.VERTICAL, V = (0, l.e7)([m.Z], () => {
+  } = e, M = A ? S.C5.HORIZONTAL : S.C5.VERTICAL, z = M === S.C5.VERTICAL, V = (0, a.e7)([m.Z], () => {
     var e;
     let t = m.Z.getWidget(j);
     return !!(0, S.ZL)(t) && !N && (null == (e = t.meta.showAllStreams) || e)
-  }, [j, N]), U = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), W = (0, l.e7)([p.Z], () => p.Z.getChannel(U)), {
+  }, [j, N]), U = (0, a.e7)([g.Z], () => g.Z.getVoiceChannelId()), W = (0, a.e7)([p.Z], () => p.Z.getChannel(U)), {
     streamParticipants: G,
     activeStreams: F,
     participantsVersion: H
-  } = function(e, t, n, i, a) {
-    let o = (0, l.Wu)([f.Z], () => null == e ? [] : f.Z.getAllActiveStreamsForChannel(e)),
+  } = function(e, t, n, i, l) {
+    let o = (0, a.Wu)([f.Z], () => null == e ? [] : f.Z.getAllActiveStreamsForChannel(e)),
       s = r.useMemo(() => new Set(o.map(e => (0, u.V9)(e))), [o]),
-      d = (0, l.e7)([c.Z], () => null == e ? false : c.Z.getParticipantsVersion(e));
+      d = (0, a.e7)([c.Z], () => null == e ? false : c.Z.getParticipantsVersion(e));
     return {
-      streamParticipants: (0, l.Wu)([c.Z, f.Z], () => {
+      streamParticipants: (0, a.Wu)([c.Z, f.Z], () => {
         if (null == e) return [];
 
         function r(e) {
           return s.has((0, u.V9)(e.stream))
         }
-        let l = c.Z.getStreamParticipants(e).filter(e => {
+        let a = c.Z.getStreamParticipants(e).filter(e => {
           if (e.user.id === t) returnfalse;
           let i = f.Z.getActiveStreamForUser(e.user.id, e.stream.guildId);
           return !(null != i && v.q.has(i.state)) && (!!n || r(e))
         });
-        return l.sort((e, t) => {
+        return a.sort((e, t) => {
           if (i) {
             if (r(e) && !r(t)) return false;
             if (!r(e) && r(t)) return 1
-          } else if (a) {
+          } else if (l) {
             if (r(e) && !r(t)) return 1;
             if (!r(e) && r(t)) return false
           }
           return e.user.username.localeCompare(t.user.username)
-        }), l
-      }, [e, s, t, n, i, a]),
+        }), a
+      }, [e, s, t, n, i, l]),
       activeStreams: s,
       participantsVersion: d
     }
-  }(U, (0, l.e7)([h.default], () => h.default.getId()), V, D && z || R && A, !D && z || !R && A), B = G.length, Y = (0, l.e7)([d.Z], () => d.Z.getWindowState(x.$J), []), {
+  }(U, (0, a.e7)([h.default], () => h.default.getId()), V, D && z || R && A, !D && z || !R && A), B = G.length, Y = (0, a.e7)([d.Z], () => d.Z.getWindowState(x.$J), []), {
     tileWidth: Q,
     tileHeight: K,
     widgetWidth: X,
@@ -126,7 +126,7 @@ function j(e) {
     o.Z.setGpuBoostRequested(b.zS.OVERLAY_VIDEO_STREAM_RENDERING, false)
   }), (et || !k) && N) ? null : et && !N ? L ? N ? null : (0, i.jsx)(y.E, {
     emptyText: I.intl.string(I.t["T6+rXy"]),
-    icon: a.hGI,
+    icon: l.hGI,
     absolute: true
   }) : null : (0, i.jsx)("div", {
     className: C.goLiveGridContainer,

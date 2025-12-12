@@ -1,7 +1,7 @@
 /** Chunk was on 9414 **/
 /** chunk id: 494118, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk780384 = require("./780384.js"),
@@ -16,12 +16,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk893916 = require("./893916.js"),
   Chunk408942 = require("./408942.js");
 
-function f(e) {
+function g(e) {
   let {
     followedChannelWebhooks: t,
     editedWebhook: n,
-    selectableWebhookChannels: f,
-    errors: g,
+    selectableWebhookChannels: g,
+    errors: f,
     canNavigate: h
   } = e, x = (0, a.ZP)();
   return (0, i.jsxs)("div", {
@@ -31,28 +31,28 @@ function f(e) {
         helpdeskArticle: s.Z.getArticleURL(d.BhN.CHANNEL_FOLLOWING)
       })
     }), (0, i.jsx)(l.izJ, {
-      className: b.headerDivider
+      className: m.headerDivider
     }), t.length > 0 ? (0, i.jsx)(c.Z, {
       webhooks: t,
       editedWebhook: n,
-      selectableWebhookChannels: f,
-      errors: g,
+      selectableWebhookChannels: g,
+      errors: f,
       canNavigate: h
     }) : function(e, t) {
-      let n = (0, r.wj)(e) ? p : m;
+      let n = (0, r.wj)(e) ? b : p;
       return (0, i.jsxs)(o.Z, {
         direction: o.Z.Direction.VERTICAL,
         align: o.Z.Align.CENTER,
         children: [(0, i.jsx)("img", {
           alt: "",
           src: n,
-          className: b.emptyStateImage
+          className: m.emptyStateImage
         }), (0, i.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           children: u.intl.string(u.t.gzuVH0)
         }), (0, i.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: b.emptyStateButton,
+          className: m.emptyStateButton,
           children: (0, i.jsx)(l.Button, {
             variant: "primary",
             text: u.intl.string(u.t["ZwSt+T"]),

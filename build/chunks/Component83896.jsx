@@ -1,13 +1,14 @@
 /** Chunk was on 40184 **/
 /** chunk id: 83896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => _
+  I: () => P
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk287734 = require("./287734.js"),
   Chunk496675 = require("./496675.js"),
@@ -25,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk527019 = require("./527019.js"),
   Chunk770966 = require("./770966.js");
 
-function j(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -44,7 +45,7 @@ function j(e) {
   return e
 }
 
-function S(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -57,74 +58,73 @@ function S(e, t) {
   }), e
 }
 
-function _(e) {
+function P(e) {
   let {
     hangStatusActivity: t,
     channel: n,
     userId: l,
-    setPopoutRef: _
-  } = e, P = r.useRef(null), I = (0, o.e7)([d.Z], () => d.Z.getVoiceChannelId() === n.id), Z = (0, o.e7)([u.Z], () => u.Z.can(v.Plq.CONNECT, n)), T = (null == t ? true : t.emoji) == null || (0, m.K)(t.emoji, n);
+    setPopoutRef: P
+  } = e, I = r.useRef(null), Z = (0, o.e7)([p.Z], () => p.Z.getVoiceChannelId() === n.id), T = (0, o.e7)([d.Z], () => d.Z.can(O.Plq.CONNECT, n)), N = (null == t ? true : t.emoji) == null || (0, g.K)(t.emoji, n);
   r.useEffect(() => {
-    null == _ || _(null == P ? true : P.current)
-  }, [P, _]), r.useEffect(() => {
-    p.default.track(v.rMx.VIEW_HANG_STATUS, j({
+    null == P || P(null == I ? true : I.current)
+  }, [I, P]), r.useEffect(() => {
+    f.default.track(O.rMx.VIEW_HANG_STATUS, S({
       source: "HangStatusPopout",
       other_user_id: l
-    }, (0, g.Z)(n.id)))
+    }, (0, b.Z)(n.id)))
   }, [n.guild_id, n.id, l]);
-  let N = r.useCallback(() => {
-      !I && Z && (c.default.selectVoiceChannel(n.id), p.default.track(v.rMx.HANG_STATUS_CTA_CLICKED, S(j({
+  let A = r.useCallback(() => {
+      !Z && T && (u.default.selectVoiceChannel(n.id), f.default.track(O.rMx.HANG_STATUS_CTA_CLICKED, _(S({
         source: "HangStatusPopout"
-      }, (0, g.Z)(n.id)), {
+      }, (0, b.Z)(n.id)), {
         other_user_id: l,
         cta_type: "join"
       })))
-    }, [I, Z, n.id, l]),
-    A = r.useCallback(() => {
-      if (!I || !T || null == t.state) return;
-      let [e] = (0, b.F)(l, t.state);
+    }, [Z, T, n.id, l]),
+    w = r.useCallback(() => {
+      if (!Z || !N || null == t.state) return;
+      let [e] = (0, C.F)(l, t.state);
       if (null != e) {
-        if (e === y.tN.CUSTOM) {
+        if (e === v.tN.CUSTOM) {
           if (null == t.details || null == t.emoji) return;
-          (0, f._s)(t.details, t.emoji, true)
-        } else(0, f.Zx)(e, true);
-        p.default.track(v.rMx.HANG_STATUS_CTA_CLICKED, S(j({
+          (0, h._s)(t.details, t.emoji, true)
+        } else(0, h.Zx)(e, true);
+        f.default.track(O.rMx.HANG_STATUS_CTA_CLICKED, _(S({
           source: "HangStatusPopout"
-        }, (0, g.Z)(n.id)), {
+        }, (0, b.Z)(n.id)), {
           other_user_id: l,
           cta_type: "swipe"
         }))
       }
-    }, [I, T, t, n.id, l]);
+    }, [Z, N, t, n.id, l]);
   return (0, i.jsxs)("div", {
-    ref: P,
-    className: a()(E.popover, x.container),
-    children: [(0, i.jsx)(C.Z, {
+    ref: I,
+    className: a()(j.popover, E.container),
+    children: [(0, i.jsx)(y.Z, {
       userId: l,
       size: 32,
-      className: x.icon,
+      className: E.icon,
       hangStatusActivity: t
-    }), (0, i.jsx)(s.Text, {
+    }), (0, i.jsx)(c.Text, {
       variant: "text-md/medium",
-      className: x.statusText,
-      children: (0, h.O8)(l, t)
-    }), I ? (0, i.jsx)(s.aML, {
-      "data-migration-pending": true,
-      text: T ? true : O.intl.string(O.t["0LMpW+"]),
-      children: e => (0, i.jsx)("div", S(j({}, e), {
-        children: (0, i.jsx)(s.Button, {
+      className: E.statusText,
+      children: (0, m.O8)(l, t)
+    }), Z ? (0, i.jsx)(s.u, {
+      text: N ? true : x.intl.string(x.t["0LMpW+"]),
+      children: (0, i.jsx)("div", {
+        children: (0, i.jsx)(c.Button, {
           size: "sm",
           variant: "secondary",
-          text: O.intl.string(O.t["0eHzpm"]),
-          onClick: A,
-          disabled: !T
+          text: x.intl.string(x.t["0eHzpm"]),
+          onClick: w,
+          disabled: !N
         })
-      }))
-    }) : Z && (0, i.jsx)(s.Button, {
+      })
+    }) : T && (0, i.jsx)(c.Button, {
       size: "sm",
       variant: "secondary",
-      text: O.intl.string(O.t["B/dHXL"]),
-      onClick: N
+      text: x.intl.string(x.t["B/dHXL"]),
+      onClick: A
     })]
   })
 }

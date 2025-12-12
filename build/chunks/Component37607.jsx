@@ -37,7 +37,7 @@ function x(e) {
       })]
     }), n.map(e => {
       var t;
-      return (0, i.jsx)(m.t, {
+      return (0, i.jsx)(p.t, {
         channel: e,
         application: r,
         name: e.name,
@@ -55,17 +55,17 @@ function x(e) {
 function j(e) {
   let {
     guild: t
-  } = e, n = (0, b.F)(t.id), l = a().groupBy(n, e => {
+  } = e, n = (0, m.F)(t.id), l = a().groupBy(n, e => {
     var t;
     return null == (t = e.linkedLobby) ? true : t.application_id
   }), c = Object.keys(l);
   return r.useEffect(() => {
-    0 === n.length && s.Z.setSection(f.b4C.OVERVIEW)
+    0 === n.length && s.Z.setSection(g.b4C.OVERVIEW)
   }, [n]), (0, i.jsxs)("div", {
     children: [(0, i.jsx)(o.Text, {
       variant: "text-sm/normal",
-      children: g.intl.format(g.t["9gsSLu"], {
-        helpdeskArticle: p.Z.getArticleURL(f.BhN.LINKED_LOBBIES)
+      children: f.intl.format(f.t["9gsSLu"], {
+        helpdeskArticle: b.Z.getArticleURL(g.BhN.LINKED_LOBBIES)
       })
     }), (0, i.jsx)(o.izJ, {
       className: h.headerDivider

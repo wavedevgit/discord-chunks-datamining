@@ -117,6 +117,7 @@ function y(e) {
       })]
     }) : _, [_, h, b]);
   if (null == G || "string" == typeof G && "" === G) return n;
+  if (null == n) return null;
   let Z = null != P ? P : (0, c.Sw)(_);
   if (y) {
     let e = R ? j : g(m({}, j), {

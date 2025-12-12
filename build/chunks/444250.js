@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 444250, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Fu: () => N
+  Fu: () => O
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
@@ -22,13 +22,13 @@ let _ = (0, Chunk509613.wf)(Chunk313789.n.ACCESSIBILITY_PANEL, {
     StronglyDiscouragedCustomComponent: Chunk154022.ZP,
     buildLayout: () => []
   }),
-  O = (0, Chunk509613.wf)(Chunk313789.n.ACCESSIBILITY_PANEL, {
+  N = (0, Chunk509613.wf)(Chunk313789.n.ACCESSIBILITY_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.G0neg7),
     buildLayout: () => [Chunk853567.H, Chunk692281.m, Chunk175289.y, Chunk886761.x, Chunk949367.k, Chunk428903.F, Chunk584927.D]
   }),
-  N = (0, Chunk509613.m7)(Chunk313789.n.ACCESSIBILITY_SIDEBAR_ITEM, {
+  O = (0, Chunk509613.m7)(Chunk313789.n.ACCESSIBILITY_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.G0neg7),
     getLegacySearchKey: () => (0, Chunk526665.Gl)("AccessibilityPanel") ? true : Chunk726985.s6.ACCESSIBILITY,
     icon: Chunk657707.O0f,
-    buildLayout: () => (0, Chunk526665.Gl)("AccessibilityPanel") ? [O] : [_]
+    buildLayout: () => (0, Chunk526665.Gl)("AccessibilityPanel") ? [N] : [_]
   })

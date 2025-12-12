@@ -19,7 +19,7 @@ var Chunk26151 = require("./26151.js"),
 function m(e) {
   let t = (0, o.F6)(e, c.default, s.Z),
     n = p.intl.string(p.t.ssrVzG),
-    m = (0, a.x)(e),
+    m = (0, l.x)(e),
     g = (0, u.Z)(e),
     {
       trackView: b,
@@ -44,7 +44,7 @@ function m(e) {
       if (y("join"), h.TPd.CALLABLE.has(e.type)) i.Z.call(e.id, false, false);
       else {
         if (e.type !== h.d4z.GUILD_VOICE) return;
-        l.default.selectVoiceChannel(e.id)
+        a.default.selectVoiceChannel(e.id)
       }
       r.Z.updateNotificationStatus(n), r.Z.track(h.rMx.VOICE_CHANNEL_SELECTED, {
         location: "Overlay Notificaiton",

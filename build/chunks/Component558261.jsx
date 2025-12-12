@@ -285,11 +285,11 @@ let R = e => {
       product: t,
       isPartiallyOwnedBundle: S,
       isPurchased: g
-    }), I = (0, O.Iw)(t), k = null != I, {
+    }), I = (0, T.Iw)(t), k = null != I, {
       shouldCheckoutWithOrbs: G,
       hasSufficientOrbs: V,
       checkoutEligiblePrices: H
-    } = (0, T.Ip)({
+    } = (0, O.Ip)({
       product: t,
       isPremiumUser: p,
       prioritizedCurrency: d,
@@ -297,9 +297,9 @@ let R = e => {
       isRental: null != x
     }), {
       analyticsLocations: W
-    } = (0, o.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), z = (0, _.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, u), [q, K] = (0, i.Wu)([b.Z], () => [b.Z.isClaiming === t.skuId, null != b.Z.isClaiming && b.Z.isClaiming !== t.skuId]), {
-      handleUseNow: Y,
-      isApplying: Q
+    } = (0, o.ZP)(s.Z.COLLECTIBLES_SHOP_CARD), z = (0, _.J7)(t, s.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, u), [K, q] = (0, i.Wu)([b.Z], () => [b.Z.isClaiming === t.skuId, null != b.Z.isClaiming && b.Z.isClaiming !== t.skuId]), {
+      handleUseNow: Q,
+      isApplying: Y
     } = (0, j.W)({
       product: t
     });
@@ -309,7 +309,7 @@ let R = e => {
       text: c
     });
     if (E && !p && !N) return (0, a.jsx)(A, {
-      isClaimPremiumProductDisabled: K,
+      isClaimPremiumProductDisabled: q,
       text: c
     });
     if (!w || P) return (0, a.jsx)(D, {
@@ -317,14 +317,14 @@ let R = e => {
       text: c
     });
     if (g) return (0, a.jsx)(Z, {
-      handleUseNow: Y,
-      isApplying: Q,
+      handleUseNow: Q,
+      isApplying: Y,
       text: c
     });
     if (E) return (0, a.jsx)(M, {
       product: t,
-      isClaimPremiumProductDisabled: K,
-      isClaiming: q,
+      isClaimPremiumProductDisabled: q,
+      isClaiming: K,
       analyticsLocations: W,
       text: c,
       onClickAnalytics: u

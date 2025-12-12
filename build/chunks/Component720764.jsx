@@ -32,63 +32,63 @@ function j(e) {
       canNavigate: S
     } = e,
     I = (0, d.ZP)(),
-    [w, E] = r.useState(null),
-    [P, T] = r.useState(null);
+    [T, E] = r.useState(null),
+    [Z, w] = r.useState(null);
   if (null != j) t = j;
   else {
     let e = Object.values(y);
     t = e.length > 0 ? e[0] : null
   }
-  let Z = r.useCallback(async () => {
+  let P = r.useCallback(async () => {
     if (S() && null !== t) {
       let e = await s.Z.create(n.id, t.id).catch(e => {
         let {
           body: t,
           status: n
         } = e;
-        return t && t.code === m.evJ.TOO_MANY_WEBHOOKS ? o.Z.show({
-          title: f.intl.string(f.t.cCqsca),
-          body: f.intl.string(f.t["w+QZoX"])
+        return t && t.code === p.evJ.TOO_MANY_WEBHOOKS ? o.Z.show({
+          title: g.intl.string(g.t.cCqsca),
+          body: g.intl.string(g.t["w+QZoX"])
         }) : 429 === n ? o.Z.show({
-          title: f.intl.string(f.t.cCqsca),
-          body: f.intl.string(f.t["YBM+UW"])
+          title: g.intl.string(g.t.cCqsca),
+          body: g.intl.string(g.t["YBM+UW"])
         }) : o.Z.show({
-          title: f.intl.string(f.t.cCqsca),
-          body: f.intl.string(f.t["/4TwKf"])
+          title: g.intl.string(g.t.cCqsca),
+          body: g.intl.string(g.t["/4TwKf"])
         }), null
       });
-      null != e && (T(e.id), E(e))
+      null != e && (w(e.id), E(e))
     }
   }, [S, t, n]);
   (0, c.ZP)(() => {
-    0 === v.length && Z()
+    0 === v.length && P()
   });
   let _ = null !== t;
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(a.Text, {
       variant: "text-sm/normal",
-      children: f.intl.format(f.t.WL0d0e, {
-        helpdeskArticle: b.Z.getArticleURL(m.BhN.WEBHOOKS),
-        developersArticle: m.EYA.API_DOCS_WEBHOOKS
+      children: g.intl.format(g.t.WL0d0e, {
+        helpdeskArticle: m.Z.getArticleURL(p.BhN.WEBHOOKS),
+        developersArticle: p.EYA.API_DOCS_WEBHOOKS
       })
     }), (0, i.jsx)(a.izJ, {
-      className: g.headerDivider
+      className: f.headerDivider
     }), v.length > 0 ? (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: g.createButton,
+        className: f.createButton,
         children: (0, i.jsx)(a.Button, {
           variant: "primary",
           size: "sm",
-          text: f.intl.string(f.t["nrO/HH"]),
+          text: g.intl.string(g.t["nrO/HH"]),
           disabled: !_,
-          onClick: Z
+          onClick: P
         })
-      }), (0, i.jsx)(p.Z, {
+      }), (0, i.jsx)(b.Z, {
         webhooks: v,
         editedWebhook: O,
         selectableWebhookChannels: y,
-        lastCreatedWebhookId: null == w ? true : w.id,
+        lastCreatedWebhookId: null == T ? true : T.id,
         errors: N,
         canNavigate: S
       })]
@@ -100,21 +100,21 @@ function j(e) {
         children: [(0, i.jsx)("img", {
           alt: "",
           src: r,
-          className: g.emptyStateImage
+          className: f.emptyStateImage
         }), (0, i.jsx)(a.Heading, {
           variant: "heading-md/semibold",
-          children: f.intl.string(f.t.LzmsWl)
+          children: g.intl.string(g.t.LzmsWl)
         }), (0, i.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
-          className: g.emptyStateButton,
+          className: f.emptyStateButton,
           children: (0, i.jsx)(a.Button, {
             variant: "primary",
-            text: f.intl.string(f.t.lOQqJK),
+            text: g.intl.string(g.t.lOQqJK),
             disabled: !t,
             onClick: n
           })
         })]
       })
-    }(I, _, Z)]
+    }(I, _, P)]
   })
 }

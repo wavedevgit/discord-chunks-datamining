@@ -1,7 +1,7 @@
 /** Chunk was on 23736 **/
 /** chunk id: 800926, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => g
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -10,71 +10,60 @@ var Chunk54381 = require("./54381.js"),
   Chunk467721 = require("./467721.js"),
   Chunk49436 = require("./49436.js"),
   Chunk968843 = require("./968843.js"),
+  Chunk444134 = require("./444134.jsx"),
   Chunk217599 = require("./217599.jsx"),
   Chunk373322 = require("./373322.jsx"),
+  Chunk526188 = require("./526188.jsx"),
   Chunk167308 = require("./167308.jsx"),
   Chunk26275 = require("./26275.jsx"),
   Chunk945165 = require("./945165.js"),
   Chunk50683 = require("./50683.js");
-let x = Chunk473749.forwardRef(function(e, t) {
+let g = Chunk473749.forwardRef(function(e, t) {
   var n, i;
   let {
-    className: x,
-    expansionSpring: b,
-    isExpanded: g,
-    isExpansionAnimationComplete: v,
-    quest: j,
-    taskDetails: y,
-    useReducedMotion: C,
-    onCtxMenuOpen: _,
-    onCtxMenuClose: S,
-    onCtxMenuSelect: E,
-    overlayRef: O
-  } = e, T = (null == (n = j.userStatus) ? true : n.completedAt) != null, N = (0, c.Jf)(j), P = r.useRef(null), w = (null == (i = j.userStatus) ? true : i.enrolledAt) != null, I = null != N ? N.percentComplete : y.percentComplete, [k, R] = r.useState(false);
+    className: g,
+    overlayRef: v
+  } = e, {
+    expansionSpring: j
+  } = r.useContext(d.xo), {
+    quest: y,
+    taskDetails: C,
+    isExpanded: _,
+    isExpansionAnimationComplete: S
+  } = r.useContext(p.A), E = (null == (n = y.userStatus) ? true : n.completedAt) != null, T = (0, c.Jf)(y), O = r.useRef(null), N = (null == (i = y.userStatus) ? true : i.enrolledAt) != null, P = null != T ? T.percentComplete : C.percentComplete, [w, I] = r.useState(false);
   return (0, a.jsxs)(a.Fragment, {
-    children: [T && (0, a.jsx)(u.Z, {
-      expansionSpring: b,
-      overlayRef: O,
-      progressBarRef: P,
-      quest: j,
-      isExpanded: g,
-      isHovered: k
+    children: [E && (0, a.jsx)(m.Z, {
+      overlayRef: v,
+      progressBarRef: O,
+      isHovered: w
     }), (0, a.jsx)(s.animated.div, {
       ref: t,
-      "aria-hidden": g && v,
-      className: l()(x, f.contentCollapsed, {
-        [f.contentCollapsedExpanded]: g,
-        [f.contentCollapsedAccepted]: w
+      "aria-hidden": _ && S,
+      className: l()(g, b.contentCollapsed, {
+        [b.contentCollapsedExpanded]: _,
+        [b.contentCollapsedAccepted]: N
       }),
       style: {
-        opacity: b.to({
+        opacity: j.to({
           range: [0, 1],
           output: [1, 0]
         }),
-        backgroundImage: T ? "linear-gradient(90deg, ".concat(h.cd, ", ").concat(h.v$, ")") : true
+        backgroundImage: E ? "linear-gradient(90deg, ".concat(x.cd, ", ").concat(x.v$, ")") : true
       },
-      onMouseEnter: () => R(true),
-      onMouseLeave: () => R(false),
+      onMouseEnter: () => I(true),
+      onMouseLeave: () => I(false),
       children: (0, a.jsxs)("div", {
-        className: f.contentCollapsedWrapper,
-        children: [T && (0, a.jsxs)(a.Fragment, {
-          children: [(0, a.jsx)(p.Z, {
-            quest: j,
-            onCtxMenuOpen: _,
-            onCtxMenuClose: S,
-            onCtxMenuSelect: E
-          }), (0, a.jsx)("div", {
-            className: f.divider
+        className: b.contentCollapsedWrapper,
+        children: [E && (0, a.jsxs)(a.Fragment, {
+          children: [(0, a.jsx)(f.Z, {}), (0, a.jsx)("div", {
+            className: b.divider
           })]
-        }), w ? (0, a.jsx)(m.Z, {
+        }), N ? (0, a.jsx)(h.Z, {
           contentLocation: "collapsed",
-          quest: j,
-          progressBarRef: P,
+          progressBarRef: O,
           isExpanded: false,
-          percentComplete: I
-        }) : null, T && (0, a.jsx)(d.r, {
-          quest: j,
-          useReducedMotion: C,
+          percentComplete: P
+        }) : null, E && (0, a.jsx)(u.r, {
           isExpanded: false,
           awaitingConsoleConnections: false,
           hasMadeProgress: true,
@@ -82,7 +71,6 @@ let x = Chunk473749.forwardRef(function(e, t) {
           activeScreen: o.LI.DESKTOP,
           showBackButton: false,
           onBack: () => {},
-          taskDetails: y,
           sourceQuestContent: o.jn.QUEST_BAR_V2
         })]
       })

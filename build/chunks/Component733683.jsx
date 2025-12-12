@@ -95,7 +95,6 @@ class E extends(r = Chunk473749.Component) {
       a = null != Chunk473749 ? Chunk473749.numRequired : null,
       s = null != Chunk120356 ? Chunk120356 - module : null;
     return (0, Chunk54381.jsxs)(Chunk481060.gqK, {
-      "data-migration-pending": true,
       targetElementRef: this.foregroundTooltipElementRef,
       position: "right",
       color: Chunk481060.aML.Colors.PRIMARY,

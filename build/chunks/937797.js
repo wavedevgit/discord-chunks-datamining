@@ -7,7 +7,8 @@ require.d(exports, {
   EO: () => l,
   eC: () => u,
   m_: () => s,
-  n0: () => d
+  n0: () => d,
+  nj: () => f
 });
 var Chunk427164 = require("./427164.js");
 let i = (0, Chunk427164.le)({
@@ -123,6 +124,18 @@ let l = (0, Chunk427164.le)({
   },
   d = (0, Chunk427164.le)({
     name: "2025-11-quest-home-takeover-client-rollout",
+    kind: "user",
+    defaultConfig: {
+      enabled: false
+    },
+    variations: {
+      1: {
+        enabled: true
+      }
+    }
+  }),
+  f = (0, Chunk427164.le)({
+    name: "2025-11-quest-bar-listen-for-source-error",
     kind: "user",
     defaultConfig: {
       enabled: false

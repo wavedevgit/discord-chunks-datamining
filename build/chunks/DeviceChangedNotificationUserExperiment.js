@@ -2,11 +2,11 @@
 /** chunk id: 422202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => o,
-  _: () => a
+  _: () => l
 });
 var Chunk818083 = require("./818083.js"),
   Chunk751823 = require("./751823.js");
-let l = (0, Chunk818083.B)({
+let a = (0, Chunk818083.B)({
   kind: "user",
   id: "2025-08_device_changed_notification",
   label: "Device-changed notification experiment",
@@ -22,7 +22,7 @@ let l = (0, Chunk818083.B)({
   }]
 });
 
-function a(e) {
+function l(e) {
   let {
     location: t,
     autoTrackExposure: n = true
@@ -33,7 +33,7 @@ function a(e) {
   }, {
     autoTrackExposure: n
   });
-  return l.getCurrentConfig({
+  return a.getCurrentConfig({
     location: t
   }, {
     disable: r,
@@ -52,7 +52,7 @@ function o(e) {
   }, {
     autoTrackExposure: n
   });
-  return l.useExperiment({
+  return a.useExperiment({
     location: t
   }, {
     disable: r,

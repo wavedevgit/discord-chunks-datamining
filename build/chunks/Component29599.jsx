@@ -159,92 +159,90 @@ function G(e) {
     })]
   })
 }
-let Z = function() {
-  let e = (0, Chunk442837.Wu)([Chunk580130.Z], () => Chunk580130.Z.getGiftable()),
-    [t, n] = l().partition(module, e => {
-      let {
-        giftCodeBatchId: t
-      } = e;
-      return null == t
-    }),
-    a = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk74538.ZP.isPremiumExactly(Chunk594174.default.getCurrentUser(), Chunk474936.PremiumTypes.TIER_2)),
-    s = l().groupBy(exports, e => (0, T.Bg)(e.skuId, e.subscriptionPlanId, e.giftStyle)),
-    [p, _] = Chunk473749.useState(false);
-  Chunk473749.useEffect(() => {
-    Chunk570140.Z.wait(() => {
-      (0, Chunk496929.Qv)().then(() => Chunk454585(true))
+let Z = function(e) {
+  let {
+    inOldSettings: t = false
+  } = e, n = (0, c.Wu)([I.Z], () => I.Z.getGiftable()), [a, s] = l().partition(n, e => {
+    let {
+      giftCodeBatchId: t
+    } = e;
+    return null == t
+  }), p = (0, c.e7)([S.default], () => C.ZP.isPremiumExactly(S.default.getCurrentUser(), D.PremiumTypes.TIER_2)), _ = l().groupBy(a, e => (0, T.Bg)(e.skuId, e.subscriptionPlanId, e.giftStyle)), [h, g] = i.useState(false);
+  i.useEffect(() => {
+    d.Z.wait(() => {
+      (0, f.Qv)().then(() => g(true))
     })
   }, []);
   let {
-    promotionsLoaded: h,
-    activeOutboundPromotions: g,
-    claimedEndedOutboundPromotions: b,
-    claimedOutboundPromotionCodeMap: j,
-    addClaimedOutboundPromotionCode: M
-  } = (0, Chunk725727.lG)(), k = Chunk518638.length + Chunk454982.length > 0, U = Chunk163684.g.useExperiment({
+    promotionsLoaded: b,
+    activeOutboundPromotions: j,
+    claimedEndedOutboundPromotions: M,
+    claimedOutboundPromotionCodeMap: k,
+    addClaimedOutboundPromotionCode: U
+  } = (0, E.lG)(), Z = j.length + M.length > 0, F = m.g.useExperiment({
     location: "EntitlementGifts"
   }, {
     autoTrackExposure: false,
-    disable: Chunk120356
-  }).enabled && k;
+    disable: p
+  }).enabled && Z;
 
-  function Z() {
-    (0, Chunk518596.openUserSettings)(Chunk313789.n.NITRO_PANEL, {
-      section: Chunk981631.oAB.PREMIUM
+  function B() {
+    (0, R.openUserSettings)(A.n.NITRO_PANEL, {
+      section: w.oAB.PREMIUM
     })
   }
 
-  function F() {
+  function V() {
     var e;
-    let t = require.find(e => e.giftCodeBatchId === D.m8 && !e.consumed),
-      i = null != (e = require.filter(e => e.giftCodeBatchId === D.rX && !e.consumed)) ? module : [],
-      [s, c] = l().partition(Chunk473749, e => {
+    let n = s.find(e => e.giftCodeBatchId === D.m8 && !e.consumed),
+      i = null != (e = s.filter(e => e.giftCodeBatchId === D.rX && !e.consumed)) ? e : [],
+      [a, c] = l().partition(i, e => {
         let {
           subscriptionPlanId: t
         } = e;
         return t === D.Xh.PREMIUM_YEAR_TIER_2
       }),
-      d = (0, Chunk54381.jsx)(Chunk481060.Heading, {
+      d = (0, r.jsx)(u.Heading, {
         variant: "heading-md/semibold",
-        children: k ? Chunk388032.intl.string(Chunk388032.t.wFsj3B) : true
+        children: Z ? x.intl.string(x.t.wFsj3B) : true
       }),
-      f = U ? (0, Chunk54381.jsxs)("div", {
-        className: Chunk785911.promoHeaderContainer,
-        children: [(0, Chunk54381.jsx)(Chunk481060.SrA, {
+      f = F ? (0, r.jsxs)("div", {
+        className: L.promoHeaderContainer,
+        children: [(0, r.jsx)(u.SrA, {
           size: "md",
-          color: Chunk481060.TVs.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2,
-          className: Chunk785911.premiumIcon
-        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+          color: u.TVs.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2,
+          className: L.premiumIcon
+        }), (0, r.jsx)(u.Text, {
           variant: "text-md/normal",
-          className: Chunk785911.promoDescription,
-          children: Chunk388032.intl.format(Chunk388032.t.G4fwxK, {
+          className: L.promoDescription,
+          children: x.intl.format(x.t.G4fwxK, {
             onClick: () => {
-              (0, Chunk342386.default)(), (0, Chunk703656.uL)(Chunk981631.Z5c.APPLICATION_STORE)
+              (0, P.default)(), (0, v.uL)(w.Z5c.APPLICATION_STORE)
             }
           })
-        }), (0, Chunk54381.jsx)(Chunk767714.Z, {
+        }), (0, r.jsx)(y.Z, {
           showGradient: true,
-          className: Chunk785911.promoNitroButton,
-          subscriptionTier: Chunk474936.Si.TIER_2,
+          className: L.promoNitroButton,
+          subscriptionTier: D.Si.TIER_2,
           textOptions: {
-            textOverride: Chunk388032.intl.string(Chunk388032.t.mr4K7D)
+            textOverride: x.intl.string(x.t.mr4K7D)
           }
         })]
       }) : null;
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk785911.marginContainer,
-      children: [Chunk570140, k ? (0, Chunk54381.jsx)(Chunk481060.izJ, {
-        className: Chunk785911.divider
-      }) : null, (0, Chunk54381.jsx)(Chunk504983.Z, {
-        className: Chunk785911.gradientContainer,
-        isShown: U,
-        type: Chunk504983.Y.PREMIUM,
+    return (0, r.jsxs)("div", {
+      className: t ? L.marginContainer : true,
+      children: [d, Z ? (0, r.jsx)(u.izJ, {
+        className: L.divider
+      }) : null, (0, r.jsx)(O.Z, {
+        className: L.gradientContainer,
+        isShown: F,
+        type: O.Y.PREMIUM,
         hasBackground: true,
-        children: (0, Chunk54381.jsxs)("div", {
+        children: (0, r.jsxs)("div", {
           className: o()({
-            [Chunk785911.marginContainer]: !U
+            [L.marginContainer]: !F && t
           }),
-          children: [Chunk496929, Chunk454982.map(e => {
+          children: [f, M.map(e => {
             let {
               code: t,
               promotion: n
@@ -252,65 +250,65 @@ let Z = function() {
             return (0, r.jsx)(G, {
               outboundPromotion: n,
               code: t,
-              addClaimedOutboundPromotionCode: M,
-              disabled: !a
+              addClaimedOutboundPromotionCode: U,
+              disabled: !p
             }, n.id)
-          }), Chunk518638.map(e => (0, r.jsx)(G, {
+          }), j.map(e => (0, r.jsx)(G, {
             outboundPromotion: e,
-            code: j[e.id],
-            addClaimedOutboundPromotionCode: M,
-            disabled: !a
-          }, e.id)), null != exports ? (0, Chunk54381.jsx)(Chunk317941.Z, {
-            className: Chunk785911.skuCard,
-            skuId: exports.skuId,
-            subscriptionPlanId: exports.subscriptionPlanId,
-            entitlements: [exports],
-            giftCodeBatchId: Chunk474936.m8
-          }, (0, Chunk669079.Bg)(exports.skuId, exports.subscriptionPlanId)) : null, Chunk392711.length > 0 ? (0, Chunk54381.jsx)(Chunk317941.Z, {
-            className: Chunk785911.skuCard,
-            skuId: Chunk392711[0].skuId,
-            subscriptionPlanId: Chunk392711[0].subscriptionPlanId,
-            entitlements: Chunk392711,
-            giftCodeBatchId: Chunk474936.rX
-          }, (0, Chunk669079.Bg)(Chunk392711[0].skuId, Chunk392711[0].subscriptionPlanId)) : null, Chunk442837.length > 0 ? (0, Chunk54381.jsx)(Chunk317941.Z, {
-            className: Chunk785911.skuCard,
-            skuId: Chunk442837[0].skuId,
-            subscriptionPlanId: Chunk442837[0].subscriptionPlanId,
-            entitlements: Chunk442837,
-            giftCodeBatchId: Chunk474936.rX
-          }, (0, Chunk669079.Bg)(Chunk442837[0].skuId, Chunk442837[0].subscriptionPlanId)) : null]
+            code: k[e.id],
+            addClaimedOutboundPromotionCode: U,
+            disabled: !p
+          }, e.id)), null != n ? (0, r.jsx)(N.Z, {
+            className: L.skuCard,
+            skuId: n.skuId,
+            subscriptionPlanId: n.subscriptionPlanId,
+            entitlements: [n],
+            giftCodeBatchId: D.m8
+          }, (0, T.Bg)(n.skuId, n.subscriptionPlanId)) : null, a.length > 0 ? (0, r.jsx)(N.Z, {
+            className: L.skuCard,
+            skuId: a[0].skuId,
+            subscriptionPlanId: a[0].subscriptionPlanId,
+            entitlements: a,
+            giftCodeBatchId: D.rX
+          }, (0, T.Bg)(a[0].skuId, a[0].subscriptionPlanId)) : null, c.length > 0 ? (0, r.jsx)(N.Z, {
+            className: L.skuCard,
+            skuId: c[0].skuId,
+            subscriptionPlanId: c[0].subscriptionPlanId,
+            entitlements: c,
+            giftCodeBatchId: D.rX
+          }, (0, T.Bg)(c[0].skuId, c[0].subscriptionPlanId)) : null]
         })
       })]
     })
   }
 
-  function B() {
-    return (0, Chunk54381.jsxs)("div", {
-      className: Chunk785911.emptyState,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk785911.emptyStateImage
-      }), (0, Chunk54381.jsx)(Chunk481060.H, {
-        className: Chunk785911.emptyStateHeader,
-        children: Chunk388032.intl.string(Chunk388032.t.B1qgZn)
-      }), (0, Chunk54381.jsx)("p", {
-        className: Chunk785911.emptyStateSubtext,
-        children: Chunk388032.intl.format(Chunk388032.t.HezvJ8, {
-          onClick: Z
+  function H() {
+    return (0, r.jsxs)("div", {
+      className: L.emptyState,
+      children: [(0, r.jsx)("div", {
+        className: L.emptyStateImage
+      }), (0, r.jsx)(u.H, {
+        className: L.emptyStateHeader,
+        children: x.intl.string(x.t.B1qgZn)
+      }), (0, r.jsx)("p", {
+        className: L.emptyStateSubtext,
+        children: x.intl.format(x.t.HezvJ8, {
+          onClick: B
         })
       })]
     })
   }
-  return Chunk410030 && Chunk178100 ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [F(), (0, Chunk54381.jsx)("div", {
-      className: Chunk785911.marginContainer,
-      children: (0, Chunk54381.jsxs)(Chunk481060.y5t, {
-        component: (0, Chunk54381.jsx)(Chunk481060.Heading, {
+  return h && b ? (0, r.jsxs)(r.Fragment, {
+    children: [V(), (0, r.jsx)("div", {
+      className: t ? L.marginContainer : true,
+      children: (0, r.jsxs)(u.y5t, {
+        component: (0, r.jsx)(u.Heading, {
           variant: "heading-md/semibold",
-          children: Chunk388032.intl.string(Chunk388032.t["9KeUbY"])
+          children: x.intl.string(x.t["9KeUbY"])
         }),
-        children: [(0, Chunk54381.jsx)(Chunk481060.izJ, {
-          className: Chunk785911.divider
-        }), 0 === Object.keys(Chunk392711).length ? B() : l().keys(Chunk392711).map(e => {
+        children: [(0, r.jsx)(u.izJ, {
+          className: L.divider
+        }), 0 === Object.keys(_).length ? H() : l().keys(_).map(e => {
           let {
             skuId: t,
             subscriptionPlanId: n,
@@ -320,13 +318,13 @@ let Z = function() {
             className: L.skuCard,
             skuId: t,
             subscriptionPlanId: n,
-            entitlements: s[e],
+            entitlements: _[e],
             giftStyle: i
           }, e)
         })]
       })
     })]
-  }) : (0, Chunk54381.jsx)(Chunk481060.$jN, {
-    className: Chunk785911.loading
+  }) : (0, r.jsx)(u.$jN, {
+    className: L.loading
   })
 }

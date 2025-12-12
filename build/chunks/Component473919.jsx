@@ -2,78 +2,39 @@
 /** chunk id: 473919, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk556638 = require("./556638.js"),
   Chunk175996 = require("./175996.js");
 
-function c(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
 function u(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      c(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function d(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function p(e) {
   let {
     icon: t,
     tooltipText: n,
     tooltipAriaLabel: i,
-    className: c,
+    className: u,
     onTooltipShow: d
-  } = e, p = (0, o.vjg)(o.Skl.ONLINE);
+  } = e, f = (0, s.vjg)(s.Skl.ONLINE);
   return null == n ? (0, r.jsx)(t, {
     size: "custom",
-    color: p,
-    className: a()(l.icon, c)
-  }) : (0, r.jsx)(o.aML, {
-    "data-migration-pending": true,
+    color: f,
+    className: a()(c.icon, u)
+  }) : (0, r.jsx)(o.u, {
+    ariaHidden: true,
     text: n,
-    "aria-label": i,
-    tooltipContentClassName: l.container,
-    delay: s.X,
+    delay: l.X,
     onTooltipShow: d,
-    children: e => (0, r.jsx)(t, f(u({}, e), {
+    children: (0, r.jsx)(t, {
       size: "custom",
-      color: p,
-      className: a()(l.icon, c)
-    }))
+      color: f,
+      className: a()(c.icon, u),
+      "aria-label": i
+    })
   })
 }

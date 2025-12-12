@@ -28,14 +28,14 @@ function v(e) {
     applicationIntegration: v
   } = e, {
     application: O
-  } = v, y = null != O.bot ? new m.Z(O.bot) : null, C = (0, a.e7)([f.ZP], () => null != y ? f.ZP.getMember(n.id, y.id) : null, [y, n]), N = (0, a.e7)([g.Z], () => g.Z.getEveryoneRole(n)), S = (0, a.Wu)([g.Z], () => {
+  } = v, y = null != O.bot ? new p.Z(O.bot) : null, C = (0, a.e7)([g.ZP], () => null != y ? g.ZP.getMember(n.id, y.id) : null, [y, n]), N = (0, a.e7)([f.Z], () => f.Z.getEveryoneRole(n)), S = (0, a.Wu)([f.Z], () => {
     var e;
-    return g.Z.getManyRoles(n.id, null != (e = null == C ? true : C.roles) ? e : [])
+    return f.Z.getManyRoles(n.id, null != (e = null == C ? true : C.roles) ? e : [])
   }), I = null == y ? true : y.id;
   r.useEffect(() => {
     null != I && s.Z.requestMembersById(n.id, I)
   }, [n.id, I]);
-  let w = r.useMemo(() => l.$e(N.permissions, ...S.map(e => e.permissions)), [S, N]);
+  let T = r.useMemo(() => l.$e(N.permissions, ...S.map(e => e.permissions)), [S, N]);
   if (null == y) return null;
   let E = h.ZP.getApplicationIconURL({
     id: O.id,
@@ -47,10 +47,10 @@ function v(e) {
   return (0, i.jsx)(o.Zbd, {
     editable: true,
     className: j.card,
-    children: (0, i.jsxs)(b.Z, {
-      direction: b.Z.Direction.VERTICAL,
-      children: [(0, i.jsxs)(b.Z, {
-        align: b.Z.Align.CENTER,
+    children: (0, i.jsxs)(m.Z, {
+      direction: m.Z.Direction.VERTICAL,
+      children: [(0, i.jsxs)(m.Z, {
+        align: m.Z.Align.CENTER,
         children: [(0, i.jsx)("img", {
           alt: "",
           src: E,
@@ -68,7 +68,7 @@ function v(e) {
       }), function(e, t, n, r) {
         let a = [],
           s = [];
-        for (let e of p.VY) l.e$(r, e) ? a.push(e) : s.push(e);
+        for (let e of b.VY) l.e$(r, e) ? a.push(e) : s.push(e);
         return (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(o.izJ, {
             className: j.divider
@@ -91,7 +91,7 @@ function v(e) {
             disabledPermissionsHeader: x.intl.string(x.t["/rEZ2i"])
           }) : null]
         })
-      }(y, n, null != (t = null == C ? true : C.roles) ? t : [], w)]
+      }(y, n, null != (t = null == C ? true : C.roles) ? t : [], T)]
     })
   })
 }

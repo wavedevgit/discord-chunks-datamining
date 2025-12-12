@@ -2,7 +2,7 @@
 /** chunk id: 453628, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h,
-  y: () => p
+  y: () => b
 });
 var i, Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -32,7 +32,7 @@ function u(e) {
   return e
 }
 
-function b(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -44,10 +44,10 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var p = ((i = {}).DENY = "DENY", i.PASSTHROUGH = "PASSTHROUGH", i.ALLOW = "ALLOW", i);
-let m = Object.keys(p);
+var b = ((i = {}).DENY = "DENY", i.PASSTHROUGH = "PASSTHROUGH", i.ALLOW = "ALLOW", i);
+let p = Object.keys(b);
 
-function f(e) {
+function g(e) {
   let {
     value: t = "PASSTHROUGH",
     onChange: n,
@@ -59,8 +59,8 @@ function f(e) {
     isDisabled: l,
     labelledBy: i
   }), {
-    ref: p
-  } = c, f = function(e, t) {
+    ref: b
+  } = c, g = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -75,14 +75,14 @@ function f(e) {
     }
     return r
   }(c, ["ref"]);
-  return (0, r.jsx)("div", b(u({
+  return (0, r.jsx)("div", m(u({
     className: a()(d.group, {
       [d.disabled]: l
     }),
-    ref: p,
+    ref: b,
     id: s
-  }, f), {
-    children: m.map(e => (0, r.jsx)(g, {
+  }, g), {
+    children: p.map(e => (0, r.jsx)(f, {
       type: e,
       isSelected: t === e,
       onSelect: e => {
@@ -92,11 +92,11 @@ function f(e) {
   }))
 }
 
-function g(e) {
+function f(e) {
   let t, n, i, {
     type: l,
-    onSelect: p,
-    isSelected: m
+    onSelect: b,
+    isSelected: p
   } = e;
   switch (l) {
     case "DENY":
@@ -108,21 +108,21 @@ function g(e) {
     default:
       i = c.intl.string(c.t.ujC3ZS), t = s.XZC, n = d.passthrough
   }
-  let f = (0, o.jm)({
-    isSelected: m,
+  let g = (0, o.jm)({
+    isSelected: p,
     label: i
   });
-  return (0, r.jsx)(s.P3F, b(u({
+  return (0, r.jsx)(s.P3F, m(u({
     className: a()(d.item, n, {
-      [d.selected]: m
+      [d.selected]: p
     }),
-    onClick: () => p(l)
-  }, f), {
+    onClick: () => b(l)
+  }, g), {
     children: (0, r.jsx)(t, {
       color: "currentColor",
       size: "xs"
     })
   }))
 }
-f.Types = p;
-let h = f
+g.Types = b;
+let h = g

@@ -18,12 +18,12 @@ var Chunk657707 = require("./657707.js"),
   Chunk776570 = require("./776570.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let O = (0, Chunk509613.wf)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
+let N = (0, Chunk509613.wf)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.B1fFpf),
     StronglyDiscouragedCustomComponent: Chunk604224.Z,
     buildLayout: () => []
   }),
-  N = (0, Chunk509613.wf)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
+  O = (0, Chunk509613.wf)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.B1fFpf),
     buildLayout: () => [Chunk776570.Z, Chunk556080.W, Chunk901567.V, Chunk927947.d, Chunk756893.g, Chunk90794.d, Chunk279362.g]
   }),
@@ -32,5 +32,5 @@ let O = (0, Chunk509613.wf)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
     usePredicate: () => Chunk131951.Z.isSupported(),
     icon: Chunk657707.S6n,
     getLegacySearchKey: () => (0, Chunk526665.Ml)("VoiceAndVideoPanel") ? true : Chunk726985.s6.VOICE_AND_VIDEO,
-    buildLayout: () => [(0, Chunk526665.Ml)("VoiceAndVideoPanel") ? N : O]
+    buildLayout: () => [(0, Chunk526665.Ml)("VoiceAndVideoPanel") ? O : N]
   })

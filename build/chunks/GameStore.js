@@ -3,9 +3,9 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => F,
-  m: () => D
-}), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js");
+  Z: () => k,
+  m: () => P
+}), require("./388685.js"), require("./35282.js");
 var i, a, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js"),
@@ -36,12 +36,9 @@ let b = "GameStoreReportedGames",
   T = null != (i = Chunk433517.K.get(b)) ? i : {},
   C = "",
   A = null,
-  N = false,
-  P = null,
-  R = [],
-  w = [];
+  N = false;
 
-function D(e) {
+function P(e) {
   var t, n, r, i, a, o, s, l, c, u;
   return {
     id: e.id,
@@ -60,7 +57,7 @@ function D(e) {
   }
 }
 
-function x(e) {
+function R(e) {
   var t, n, r;
   return {
     id: e.id,
@@ -79,48 +76,40 @@ function x(e) {
   }
 }
 
-function L(e) {
-  let t = e instanceof d.ZP ? x(e) : e;
+function w(e) {
+  let t = e instanceof d.ZP ? R(e) : e;
   for (let n of (v.set(e.id, t), S[e.name.toLowerCase()] = t, e.aliases)) S[n.toLowerCase()] = t;
   if ((0, m.isDesktop)())
     for (let n of e.executables) I[n.name] = t
 }
 
-function j(e) {
+function D(e) {
   let {
     detectableApplications: t
   } = e;
-  for (let e of (v.clear(), S = {}, I = {}, t)) L(e)
+  for (let e of (v.clear(), S = {}, I = {}, t)) w(e)
 }
 
-function M() {
+function x() {
   r = true
 }
 
-function k() {
+function L() {
   r = false, N = true
 }
 
-function U(e) {
+function j(e) {
   let {
     games: t,
     etag: n
   } = e;
-  for (let e of (null != n && C !== n && (v.clear(), S = {}, I = {}, C = n), t)) L(D(e));
+  for (let e of (null != n && C !== n && (v.clear(), S = {}, I = {}, C = n), t)) w(P(e));
   r = true, A = Date.now(), N = true
 }
-
-function G(e) {
-  let {
-    executables: t,
-    patterns: n
-  } = e;
-  R = t.map(e => e.toLowerCase()), w = n.map(e => RegExp(e, "i")), P = Date.now()
-}
-class Z extends(a = Chunk442837.ZP.PersistedStore) {
+class M extends(a = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    null != e && (null != e.detectableGamesEtag && (C = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => L(e)))
+    null != e && (null != e.detectableGamesEtag && (C = e.detectableGamesEtag), null == (t = e.detectableGames) || t.forEach(e => w(e)))
   }
   getState() {
     return (0, Chunk358085.isDesktop)() ? {
@@ -182,9 +171,6 @@ class Z extends(a = Chunk442837.ZP.PersistedStore) {
   canFetchDetectableGames() {
     returntrue !== r && (null == A || Date.now() >= A + O)
   }
-  canFetchExecutableBlocklist() {
-    return null == P || Date.now() >= P + O
-  }
   getGameByExecutable(e) {
     return I[e]
   }
@@ -202,27 +188,23 @@ class Z extends(a = Chunk442837.ZP.PersistedStore) {
     }
     return null != (n = null != (t = this.getGameByExecutable(i)) ? t : this.getGameByExecutable(a)) ? n : r
   }
-  shouldBlock(e) {
-    return !!(null != e.exePath && (null != R.find(t => e.exePath.includes(t)) || w.some(t => t.test(e.exePath)))) || false
-  }
   shouldReport(e) {
-    if (this.shouldBlock(e)) returnfalse;
-    let t = null != this.getGameByName(e.name),
-      n = null != e.name && null != T[e.name];
+    let t = null != this.getGameByName(e),
+      n = null != T[e];
     return f.G6.getSetting() && !r && !(t || n)
   }
   markGameReported(e) {
     T[e] = true, s.K.set(b, T)
   }
 }
-E(Z, "displayName", "GameStore"), E(Z, "persistKey", "GameStore"), E(Z, "migrations", [e => {
+E(M, "displayName", "GameStore"), E(M, "persistKey", "GameStore"), E(M, "migrations", [e => {
   var t, n;
   return null == e ? {
     detectableGamesEtag: "",
     detectableGames: []
   } : {
     detectableGamesEtag: e.detectableGamesEtag,
-    detectableGames: null != (n = null == (t = e.detectableGames) ? true : t.map(e => x(new d.ZP(e)))) ? n : []
+    detectableGames: null != (n = null == (t = e.detectableGames) ? true : t.map(e => R(new d.ZP(e)))) ? n : []
   }
 }, e => (0, m.isDesktop)() ? e : {
   detectableGamesEtag: "",
@@ -231,10 +213,9 @@ E(Z, "displayName", "GameStore"), E(Z, "persistKey", "GameStore"), E(Z, "migrati
   detectableGamesEtag: "",
   detectableGames: []
 })]);
-let F = new Z(Chunk570140.Z, {
-  OVERLAY_INITIALIZE: j,
-  GAMES_DATABASE_FETCH: M,
-  GAMES_DATABASE_FETCH_FAIL: k,
-  GAMES_DATABASE_UPDATE: U,
-  GAMES_BLOCKLIST_UPDATE: G
+let k = new M(Chunk570140.Z, {
+  OVERLAY_INITIALIZE: D,
+  GAMES_DATABASE_FETCH: x,
+  GAMES_DATABASE_FETCH_FAIL: L,
+  GAMES_DATABASE_UPDATE: j
 })

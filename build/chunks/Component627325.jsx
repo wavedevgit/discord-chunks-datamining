@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk990525 = require("./990525.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk890373 = require("./890373.js");
-let j = [51],
+let O = [51],
   h = [Chunk388032.t.OpqAok];
 
 function x(e) {
@@ -30,7 +30,7 @@ function x(e) {
     voiceListRef: i,
     showSectionHeaders: o = false,
     query: l
-  } = e, a = P(), x = (0, s.e7)([p.default], () => (0, m.I5)(p.default.getCurrentUser())), w = C(l, x), E = Math.ceil(w.length / t), {
+  } = e, a = P(), x = (0, s.e7)([p.default], () => (0, m.I5)(p.default.getCurrentUser())), E = C(l, x), w = Math.ceil(E.length / t), {
     isNativeModuleLoaded: I,
     isNativeModuleLoading: T,
     catalogLastFetchTime: S
@@ -39,8 +39,8 @@ function x(e) {
     isNativeModuleLoading: b.Z.isNativeModuleLoading(),
     catalogLastFetchTime: b.Z.getCatalogLastFetchTime()
   }));
-  return l && 0 === w.length ? (0, r.jsxs)("div", {
-    className: O.iconMessage,
+  return l && 0 === E.length ? (0, r.jsxs)("div", {
+    className: j.iconMessage,
     children: [(0, r.jsx)(u._Ve, {
       width: 40,
       height: 40,
@@ -52,7 +52,7 @@ function x(e) {
       children: y.intl.string(y.t.ZzukHk)
     })]
   }) : a ? (0, r.jsxs)("div", {
-    className: O.iconMessage,
+    className: j.iconMessage,
     children: [(0, r.jsx)(u.aNP, {
       width: 40,
       height: 40,
@@ -70,24 +70,24 @@ function x(e) {
       })
     })]
   }) : T || null == S ? (0, r.jsx)("div", {
-    className: O.loading,
+    className: j.loading,
     children: (0, r.jsx)(u.$jN, {
       type: u.$jN.Type.CHASING_DOTS,
       animated: true
     })
   }) : (0, r.jsx)(d.Z, {
     fade: true,
-    className: O.container,
+    className: j.container,
     renderRow: e => {
       let n = e * t,
-        i = w.slice(n, n + t);
+        i = E.slice(n, n + t);
       return (0, r.jsx)(_, {
         children: i.map((n, i) => (0, r.jsx)(v.J, {
           voiceFilter: n,
           hasNitro: x,
           analyticsContext: {
             reason: f.W.USER_SELECTION,
-            gridRows: E,
+            gridRows: w,
             gridColumns: t,
             interactedRow: e,
             interactedColumn: i
@@ -98,11 +98,11 @@ function x(e) {
     renderSectionHeader: false === o ? true : e => (0, r.jsx)(u.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
-      className: O.header,
+      className: j.header,
       children: y.intl.string(h[e])
     }),
-    sectionHeaderHeight: false === o ? true : e => j[e],
-    rowCount: E,
+    sectionHeaderHeight: false === o ? true : e => O[e],
+    rowCount: w,
     rowHeight: 130,
     onScroll: n,
     ref: i,
@@ -116,7 +116,7 @@ function _(e) {
   } = e, n = i.useRef(null);
   return (0, r.jsx)("div", {
     ref: n,
-    className: O.row,
+    className: j.row,
     children: (0, r.jsx)(u.JcV, {
       containerRef: n,
       children: t

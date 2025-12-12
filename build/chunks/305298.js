@@ -16,14 +16,14 @@ function c() {
   let [e, n] = Chunk473749.useState(false), [t, c] = Chunk473749.useState(null);
   return [async function(e, t) {
     let {
-      onSuccess: i = s.onSuccess,
+      onSuccess: l = s.onSuccess,
       permissionOverwrites: o = s.permissionOverwrites
     } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : s;
     n(true);
     try {
-      await r.GV(e, o), await r.iQ(e, t), await (0, a.o)(e, i), await (0, a.T)(e, i), n(false)
+      await r.GV(e, o), await r.iQ(e, t), await (0, a.o)(e, l), await (0, a.T)(e, l), n(false)
     } catch (e) {
-      c(new l.Hx(e)), n(false)
+      c(new i.Hx(e)), n(false)
     }
     n(false)
   }, {

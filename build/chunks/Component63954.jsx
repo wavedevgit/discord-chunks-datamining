@@ -172,7 +172,7 @@ function V() {
     V(Z(D({}, e), {
       preview: true
     }))
-  }, []), [W, z] = Chunk473749.useState(Chunk899457.a.UNENROLLED), [q, K] = Chunk473749.useState(false), [Y, Q] = Chunk473749.useState(false), [X, J] = Chunk473749.useState(null), $ = (A = F.config, (0, Chunk278074.EQ)(A).with({
+  }, []), [W, z] = Chunk473749.useState(Chunk899457.a.UNENROLLED), [K, q] = Chunk473749.useState(false), [Q, Y] = Chunk473749.useState(false), [X, J] = Chunk473749.useState(null), $ = (A = F.config, (0, Chunk278074.EQ)(A).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -437,12 +437,12 @@ function V() {
         children: ["Reward #", t + 1]
       }), (0, a.jsxs)("div", {
         className: R.fields,
-        children: [(0, a.jsx)(O.Z, {
+        children: [(0, a.jsx)(T.Z, {
           title: "Name",
           assetKey: "name",
           onMessageChange: (e, n) => ea(e, n, t),
           initialValue: e.messages.name
-        }), (0, a.jsx)(O.Z, {
+        }), (0, a.jsx)(T.Z, {
           title: "Name With Article",
           assetKey: "nameWithArticle",
           onMessageChange: (e, n) => ea(e, n, t),
@@ -637,7 +637,7 @@ function V() {
               children: (0, Chunk54381.jsx)(Chunk801604.Z, {
                 channelId: "123",
                 previewQuest: F,
-                isParticipatingOverride: q
+                isParticipatingOverride: K
               })
             })
           })
@@ -646,9 +646,9 @@ function V() {
         className: Chunk607814.toggleSwitch,
         children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Is Participating:",
-          checked: q,
+          checked: K,
           onChange: function(e) {
-            K(e)
+            q(e)
           }
         })
       }), (0, Chunk54381.jsxs)(Chunk456799.Z, {
@@ -656,7 +656,7 @@ function V() {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-sm/semibold",
           children: "Quest Card Embed"
-        }), Y ? (0, Chunk54381.jsx)(Chunk557843.W, {
+        }), Q ? (0, Chunk54381.jsx)(Chunk557843.W, {
           questId: F.id
         }) : (0, Chunk54381.jsx)(Chunk686834.X, {
           quest: F,
@@ -667,8 +667,8 @@ function V() {
         className: Chunk607814.toggleSwitch,
         children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Invalid Quests Embed:",
-          checked: Y,
-          onChange: Q
+          checked: Q,
+          onChange: Y
         })
       }), es && (0, Chunk54381.jsxs)(Chunk456799.Z, {
         withBorder: true,

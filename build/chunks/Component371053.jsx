@@ -28,10 +28,10 @@ function E(e) {
     pid: t,
     analyticsLocation: n,
     allowOneClickGoLive: i = false,
-    onBeforeShowModal: a,
+    onBeforeShowModal: l,
     onOneClickGoLive: o,
     appContext: u
-  } = e, d = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), y = (0, l.e7)([f.Z], () => f.Z.getChannel(d), [d]), O = (0, l.e7)([b.default], () => b.default.getCurrentUser()), v = null == y ? true : y.getGuildId(), E = (0, l.e7)([p.Z], () => (0, c.Z)(p.Z)), S = (0, l.e7)([h.Z, m.Z], () => null != y && (0, s.JL)(y, h.Z, m.Z));
+  } = e, d = (0, a.e7)([g.Z], () => g.Z.getVoiceChannelId()), y = (0, a.e7)([f.Z], () => f.Z.getChannel(d), [d]), O = (0, a.e7)([b.default], () => b.default.getCurrentUser()), v = null == y ? true : y.getGuildId(), E = (0, a.e7)([p.Z], () => (0, c.Z)(p.Z)), S = (0, a.e7)([h.Z, m.Z], () => null != y && (0, s.JL)(y, h.Z, m.Z));
   return r.useCallback(async () => {
     await x({
       pid: t,
@@ -42,11 +42,11 @@ function E(e) {
       canStream: S,
       analyticsLocation: n,
       allowOneClickGoLive: i,
-      onBeforeShowModal: a,
+      onBeforeShowModal: l,
       onOneClickGoLive: o,
       appContext: u
     })
-  }, [t, d, O, v, E, S, n, i, a, o, u])
+  }, [t, d, O, v, E, S, n, i, l, o, u])
 }
 async function S(e) {
   let {
@@ -54,8 +54,8 @@ async function S(e) {
     analyticsLocation: n,
     allowOneClickGoLive: i = false,
     onBeforeShowModal: r,
-    onOneClickGoLive: l,
-    appContext: a
+    onOneClickGoLive: a,
+    appContext: l
   } = e, o = g.Z.getVoiceChannelId(), u = f.Z.getChannel(o), d = b.default.getCurrentUser(), y = null == u ? true : u.getGuildId(), O = null != u && (0, s.JL)(u, h.Z, m.Z), v = (0, c.Z)(p.Z);
   await x({
     pid: t,
@@ -67,15 +67,15 @@ async function S(e) {
     analyticsLocation: n,
     allowOneClickGoLive: i,
     onBeforeShowModal: r,
-    onOneClickGoLive: l,
-    appContext: a
+    onOneClickGoLive: a,
+    appContext: l
   })
 }
 async function x(e) {
   let {
     pid: t,
     voiceChannelId: r,
-    user: l,
+    user: a,
     targetGuildId: s,
     canGoLive: c,
     canStream: f,
@@ -104,15 +104,15 @@ async function x(e) {
         return
       }
     }
-    if (null == l) return void(0, a.showToast)((0, a.createToast)(v.intl.string(v.t.OKnWyb), a.ToastType.FAILURE, {
+    if (null == a) return void(0, l.showToast)((0, l.createToast)(v.intl.string(v.t.OKnWyb), l.ToastType.FAILURE, {
       appContext: y.IlC.OVERLAY
     }));
-    null == m || m(), (0, a.ZDy)(async () => {
+    null == m || m(), (0, l.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("38697"), n.e("4093"), n.e("44183"), n.e("59416")]).then(n.bind(n, 60594));
       return n => {
-        var r, l;
+        var r, a;
         return (0, i.jsx)(e, (r = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -130,25 +130,25 @@ async function x(e) {
             })
           }
           return e
-        }({}, n), l = l = {
+        }({}, n), a = a = {
           sourcePID: t,
           selectSource: false,
           guildId: s,
           selectGuild: null == s,
           analyticsLocation: h
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var i = Object.getOwnPropertySymbols(e);
             n.push.apply(n, i)
           }
           return n
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
         }), r))
       }
     }, {
-      contextKey: null != b ? (0, a.VnL)(b) : true
+      contextKey: null != b ? (0, l.VnL)(b) : true
     })
   }
 }

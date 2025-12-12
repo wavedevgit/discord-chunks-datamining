@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk481060 = require("./481060.js"),
+  Chunk28664 = require("./28664.jsx"),
   Chunk596454 = require("./596454.jsx"),
   Chunk633302 = require("./633302.js"),
   Chunk695346 = require("./695346.js"),
@@ -60,11 +60,10 @@ function h(e) {
       E.current = e
     }
   };
-  return _ ? (0, r.jsx)(l.Z, m({}, y)) : (0, r.jsx)(s.aML, {
-    "data-migration-pending": true,
+  return _ ? (0, r.jsx)(l.Z, m({}, y)) : (0, r.jsx)(s.u, {
     targetElementRef: E,
     text: b,
     delay: h,
-    children: e => (0, r.jsx)(l.Z, m({}, e, y))
+    children: (0, r.jsx)(l.Z, m({}, y))
   })
 }

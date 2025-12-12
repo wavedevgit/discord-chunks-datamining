@@ -2,7 +2,7 @@
 /** chunk id: 789654, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N,
-  q: () => T
+  q: () => O
 }), require("./804061.js"), require("./704826.js"), require("./35282.js"), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./361932.js"), require("./187205.js"), require("./49124.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -63,11 +63,11 @@ function E(e) {
   return e.replaceAll(/_|\./g, "-").toLowerCase()
 }
 
-function O(e) {
+function T(e) {
   return e.replaceAll(/_|-/g, ".").toLowerCase()
 }
 
-function T(e, t) {
+function O(e, t) {
   let n = new Blob([t], {
       type: "application/json"
     }),
@@ -87,7 +87,7 @@ function N() {
       semanticColorOverrides: m,
       rawColorOverrides: v,
       tab: S,
-      scales: O
+      scales: T
     } = exports,
     N = Chunk473749.useMemo(() => {
       let t = Object.entries(Chunk668339).map(t => {
@@ -120,7 +120,7 @@ function N() {
             i = o().kebabCase(e);
           return ["--".concat(i, "-hsl: ").concat(n, " calc(var(--saturation-factor, 1) * ").concat(a, "%) ").concat(r, "% !important;"), "--".concat(i, ": hsl(var(--").concat(i, "-hsl)) !important;")]
         }),
-        a = O.reduce((e, t) => {
+        a = T.reduce((e, t) => {
           let {
             name: n
           } = t, a = (0, j.XM)(t), r = (0, j.W6)(a, n);
@@ -132,7 +132,7 @@ function N() {
           }, "")
         }, "");
       return "\n      :root {\n        ".concat(Chunk54381, "\n      }\n\n      .theme-").concat(module, " {\n        ").concat(exports.join("\n"), "\n      }\n\n      html {\n        ").concat(require.join("\n"), "\n      }\n    ")
-    }, [Chunk246992, O, Chunk668339, module]);
+    }, [Chunk246992, T, Chunk668339, module]);
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk532255.panel,
     children: [(0, Chunk54381.jsxs)("div", {
@@ -209,7 +209,7 @@ function N() {
           size: "md",
           icon: Chunk481060._8t,
           onClick: () => {
-            T("color-overrides", JSON.stringify(C({}, exports), null, 2))
+            O("color-overrides", JSON.stringify(C({}, exports), null, 2))
           },
           "aria-label": "Export"
         })]
@@ -322,12 +322,12 @@ function P(e) {
       children: Object.entries(l).map(e => {
         let [t, r] = e, l = r.colors[i];
         if (null == l) return null;
-        let s = O(l.color),
+        let s = T(l.color),
           c = l.opacity,
           d = j.jC[t][i];
         return (0, a.jsx)(w, {
           title: E(t),
-          subtitle: 1 === d.opacity ? O(d.raw) : "".concat(O(d.raw), " @ ").concat(100 * d.opacity, "%"),
+          subtitle: 1 === d.opacity ? T(d.raw) : "".concat(T(d.raw), " @ ").concat(100 * d.opacity, "%"),
           highlight: r.highlight,
           onReset: () => {
             n(e => {

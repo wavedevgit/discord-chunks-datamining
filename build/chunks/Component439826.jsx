@@ -128,12 +128,12 @@ function M(e) {
     onCtxMenuOpen: G,
     onCtxMenuSelect: V,
     sourceQuestContent: H
-  } = e, W = (0, C.PB)(S), z = (0, p.ZP)(), q = ((0, d.wj)(z) ? R.BRd.DARK : R.BRd.LIGHT) === R.BRd.DARK, K = (0, j.tP)(S), Y = (null == (t = S.userStatus) ? true : t.claimedAt) != null, Q = (0, j.B6)(S.config.expiresAt, {
+  } = e, W = (0, C.PB)(S), z = (0, p.ZP)(), K = ((0, d.wj)(z) ? R.BRd.DARK : R.BRd.LIGHT) === R.BRd.DARK, q = (0, j.tP)(S), Q = (null == (t = S.userStatus) ? true : t.claimedAt) != null, Y = (0, j.B6)(S.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), X = (null == (n = S.userStatus) ? true : n.enrolledAt) != null, J = (null == (i = S.userStatus) ? true : i.completedAt) != null, {
     onAssetLoadComplete: $
-  } = r.useContext(P.k), ee = q ? "text-muted" : "always-white", et = r.useCallback(async () => {
+  } = r.useContext(P.k), ee = K ? "text-muted" : "always-white", et = r.useCallback(async () => {
     W && ((0, y.zi)(S) || X ? (0, N.openVideoQuestModal)({
       quest: S,
       questContent: g.jn.QUEST_HOME_DESKTOP,
@@ -206,7 +206,7 @@ function M(e) {
                 className: D.utilButtonIcon
               })
             })
-          }), (0, a.jsx)(O.i, {
+          }), (0, a.jsx)(T.i, {
             onOpen: G,
             onClose: F,
             onSelect: V,
@@ -260,11 +260,11 @@ function M(e) {
           width: 100,
           height: 30,
           className: D.partnerBranding,
-          children: (0, a.jsx)(T.ZP, {
+          children: (0, a.jsx)(O.ZP, {
             className: D.partnerBranding,
             logotypeClassName: D.partnerLogotypes,
             quest: S,
-            separatorSpacing: T.US.MEDIUM,
+            separatorSpacing: O.US.MEDIUM,
             withGameTile: false,
             onLoadComplete: $
           })
@@ -292,11 +292,11 @@ function M(e) {
               color: "always-white",
               children: null != (m = null == (s = S.config.cosponsorMetadata) ? true : s.name) ? m : S.config.messages.gamePublisher
             })]
-          }), K || Y ? null : (0, a.jsx)(u.Text, {
+          }), q || Q ? null : (0, a.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: ee,
             children: A.intl.format(A.t["7D8r4F"], {
-              expiryDate: Q
+              expiryDate: Y
             })
           })]
         })]
@@ -304,7 +304,7 @@ function M(e) {
         quest: S,
         errorHints: M,
         warningHints: U,
-        isDarkTheme: q,
+        isDarkTheme: K,
         sourceQuestContent: H
       })]
     })]

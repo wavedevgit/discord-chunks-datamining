@@ -41,21 +41,20 @@ class Z extends Chunk473749.Component {
     })
   }
   renderCallButton() {
-    let e, t, {
-      channel: n,
-      channelHasActiveCall: r,
-      userIsInChannelCall: a,
-      isBlocked: s
+    let e, {
+      channel: t,
+      channelHasActiveCall: n,
+      userIsInChannelCall: r,
+      isBlocked: a
     } = this.props;
-    if (!(0, Chunk131704.hv)(require.type)) return null;
-    let o = Chunk481060.Csw,
-      c = false;
-    return Chunk473749 ? Chunk120356 ? (e = Chunk388032.intl.string(Chunk388032.t["4ry6yi"]), o = Chunk481060.gkL) : e = Chunk388032.intl.string(Chunk388032.t["0D/6Rz"]) : s ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvX), t = Chunk481060.aML.Colors.RED, c = true) : e = Chunk388032.intl.string(Chunk388032.t.focH1t), (0, Chunk54381.jsx)(Chunk984370.Z.Icon, {
-      icon: Chunk442837,
+    if (!(0, Chunk131704.hv)(exports.type)) return null;
+    let s = Chunk481060.Csw,
+      o = false;
+    return require ? Chunk473749 ? (e = Chunk388032.intl.string(Chunk388032.t["4ry6yi"]), s = Chunk481060.gkL) : e = Chunk388032.intl.string(Chunk388032.t["0D/6Rz"]) : Chunk120356 ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvX), o = true) : e = Chunk388032.intl.string(Chunk388032.t.focH1t), (0, Chunk54381.jsx)(Chunk984370.Z.Icon, {
+      icon: s,
       tooltip: module,
       onClick: this.handleClickCall,
-      tooltipColor: exports,
-      disabled: Chunk13245
+      disabled: Chunk442837
     })
   }
   render() {

@@ -1,25 +1,26 @@
 /** Chunk was on 23736 **/
 /** chunk id: 404672, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk467721 = require("./467721.js"),
-  Chunk444134 = require("./444134.jsx");
+  Chunk444134 = require("./444134.jsx"),
+  Chunk526188 = require("./526188.jsx");
 
-function s(e) {
+function o() {
   let {
-    expansionSpring: t,
-    isExpanded: n
-  } = e, {
-    animatedComponentProps: s,
-    recalculateAnimationPositions: o,
-    mountPoints: c
-  } = r.useContext(l.xo);
-  return r.useEffect(() => {
-    o()
-  }, [o, n]), (0, a.jsx)("div", {
+    expansionSpring: e,
+    animatedComponentProps: t,
+    recalculateAnimationPositions: n,
+    mountPoints: o
+  } = Chunk473749.useContext(Chunk444134.xo), {
+    isExpanded: c
+  } = Chunk473749.useContext(Chunk526188.A);
+  return Chunk473749.useEffect(() => {
+    require()
+  }, [require, c]), (0, Chunk54381.jsx)("div", {
     style: {
       overflow: "hidden",
       pointerEvents: "none",
@@ -30,15 +31,15 @@ function s(e) {
       height: "100%",
       zIndex: 5
     },
-    children: s.map(e => {
+    children: exports.map(t => {
       let {
         id: n,
         collapsedLeft: r,
         expandedLeft: l,
         collapsedTop: s,
-        expandedTop: o,
+        expandedTop: c,
         width: d
-      } = e, u = c.get(n);
+      } = t, u = o.get(n);
       return (0, a.jsx)(i.animated.div, {
         ref: u,
         style: {
@@ -47,12 +48,12 @@ function s(e) {
           top: 0,
           left: 0,
           width: d,
-          transform: (0, i.to)([t.to({
+          transform: (0, i.to)([e.to({
             range: [0, 1],
             output: [r, l]
-          }), t.to({
+          }), e.to({
             range: [0, 1],
-            output: [s, o]
+            output: [s, c]
           })], (e, t) => "translate(".concat(e, "px, ").concat(t, "px)"))
         }
       }, n)

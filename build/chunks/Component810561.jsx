@@ -21,36 +21,36 @@ function b(e) {
     guildEventId: i,
     onRecurrenceClick: b,
     hideScroller: f = false,
-    activeRecurrenceId: p
+    activeRecurrenceId: h
   } = e, {
-    recurrenceStartTimes: h,
+    recurrenceStartTimes: p,
     canViewMoreRecurrences: v,
-    updateRecurrenceStartTimes: g
-  } = (0, c.Z)(i, n, t), m = f ? "div" : l.Ttm;
+    updateRecurrenceStartTimes: m
+  } = (0, o.Z)(i, n, t), g = f ? "div" : l.Ttm;
   return (0, a.jsxs)("div", {
     className: u.recurrences,
     children: [(0, a.jsx)(l.Heading, {
       variant: "heading-sm/medium",
       className: u.heading,
       children: s.intl.string(s.t["D/jjoa"])
-    }), (0, a.jsxs)(m, {
+    }), (0, a.jsxs)(g, {
       className: r()(u.scroller, {
         [u.showScroller]: !f
       }),
-      children: [h.map(e => {
-        let n = o.default.fromTimestamp(e.getTime());
+      children: [p.map(e => {
+        let n = c.default.fromTimestamp(e.getTime());
         return (0, a.jsx)(d.Z, {
           recurrenceId: n,
           originalScheduledStartTime: e,
           guildEventId: i,
           onClick: b,
-          isActive: n === p
+          isActive: n === h
         }, n)
       }), v && (0, a.jsx)("div", {
         className: u.buttonContainer,
         children: (0, a.jsx)(l.Avr, {
           onClick: e => {
-            e.stopPropagation(), g()
+            e.stopPropagation(), m()
           },
           text: s.intl.string(s.t["8O7Hpy"]),
           size: "sm"

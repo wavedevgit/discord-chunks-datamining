@@ -1,51 +1,56 @@
 /** Chunk was on 23736 **/
 /** chunk id: 73826, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => v
 });
-var Chunk54381 = require("./54381.js");
-require("./473749.js");
-var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
+  Chunk120356 = require("./120356.js"),
+  l = require.n(Chunk120356),
   Chunk467721 = require("./467721.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk607070 = require("./607070.js"),
   Chunk49436 = require("./49436.js"),
   Chunk644646 = require("./644646.jsx"),
+  Chunk444134 = require("./444134.jsx"),
+  Chunk526188 = require("./526188.jsx"),
   Chunk617889 = require("./617889.js"),
   Chunk324805 = require("./324805.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk964907 = require("./964907.js");
-let h = e => {
+let v = e => {
   let {
-    quest: t,
-    expansionSpring: n,
-    isFullyExpanded: r,
-    partnerBranding: h,
-    useReducedMotion: f
-  } = e, x = (0, d.qe)().label, b = x ? false : 6;
+    isFullyExpanded: t,
+    partnerBranding: n
+  } = e, i = (0, f.qe)().label, v = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), {
+    quest: j
+  } = r.useContext(h.A), {
+    expansionSpring: y
+  } = r.useContext(p.xo), C = i ? false : 6;
   return (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsx)(l.animated.div, {
-      className: p.rewardTileContainer,
+    children: [(0, a.jsx)(s.animated.div, {
+      className: g.rewardTileContainer,
       style: {
-        transform: (0, l.to)([n.to({
+        transform: (0, s.to)([y.to({
           range: [0, 1],
           output: [0, 0]
-        }), n.to({
+        }), y.to({
           range: [0, 1],
           output: [0, 82]
-        }), n.to({
+        }), y.to({
           range: [0, 1],
           output: [1, 64 / 48]
         })], (e, t, n) => "translate(".concat(e, "px, ").concat(t, "px) scale(").concat(n, ")"))
       },
-      children: (0, a.jsx)(c.Z, {
+      children: (0, a.jsx)(m.Z, {
         learnMoreStyle: "text",
-        learnMoreFontSize: r ? 9 : true,
-        quest: t,
-        questContent: o.jn.QUEST_BAR_V2,
-        location: u.dr.QUESTS_BAR,
-        autoplay: r && !f,
-        sourceQuestContent: o.jn.QUEST_BAR_V2,
+        learnMoreFontSize: t ? 9 : true,
+        quest: j,
+        questContent: u.jn.QUEST_BAR_V2,
+        location: x.dr.QUESTS_BAR,
+        autoplay: t && !v,
+        sourceQuestContent: u.jn.QUEST_BAR_V2,
         style: {
           width: 48,
           height: 48,
@@ -53,39 +58,39 @@ let h = e => {
           borderRadius: 6
         }
       })
-    }), (0, a.jsxs)(l.animated.div, {
-      className: i()(p.rewardHighlightLogoCTA, {
-        [p.rewardHighlightLogoCTALabel]: x
+    }), (0, a.jsxs)(s.animated.div, {
+      className: l()(g.rewardHighlightLogoCTA, {
+        [g.rewardHighlightLogoCTALabel]: i
       }),
       style: {
-        transform: (0, l.to)([n.to({
+        transform: (0, s.to)([y.to({
           range: [0, 1],
           output: [0, false]
-        }), n.to({
+        }), y.to({
           range: [0, 1],
-          output: [0, b]
+          output: [0, C]
         })], (e, t) => "translate(".concat(e, "px, ").concat(t, "px)"))
       },
       children: [(0, a.jsx)("div", {
-        className: i()({
-          [p.partnerBranding]: !x
+        className: l()({
+          [g.partnerBranding]: !i
         }),
-        children: h
-      }), (0, a.jsx)(l.animated.div, {
-        className: i()(p.rewardHighlightCTA, {
-          [p.rewardHighlightCTALabel]: x
+        children: n
+      }), (0, a.jsx)(s.animated.div, {
+        className: l()(g.rewardHighlightCTA, {
+          [g.rewardHighlightCTALabel]: i
         }),
         style: {
-          opacity: n.to({
+          opacity: y.to({
             range: [0, 1],
-            output: [x ? 1 : .7, 0]
+            output: [i ? 1 : .7, 0]
           })
         },
-        children: (0, a.jsx)(s.Text, {
+        children: (0, a.jsx)(c.Text, {
           color: "always-white",
           lineClamp: 1,
           variant: "text-xs/medium",
-          children: m.intl.string(m.t["3mgEQf"])
+          children: b.intl.string(b.t["3mgEQf"])
         })
       })]
     })]

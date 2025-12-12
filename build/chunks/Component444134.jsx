@@ -51,7 +51,7 @@ let u = Chunk473749.createContext({
     collapsedContentRef: Chunk473749.createRef(),
     recalculateAnimationPositions: () => {},
     animatedComponentProps: [],
-    expansionSpring: null,
+    expansionSpring: new Chunk467721.SpringValue(0),
     mountPoints: new Map
   }),
   m = Chunk473749.forwardRef(function(e, t) {

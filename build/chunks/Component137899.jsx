@@ -51,7 +51,6 @@ class m extends Chunk473749.PureComponent {
     switch (this.props.mode) {
       case "UPDATE_AVAILABLE":
         return (0, Chunk54381.jsx)(Chunk665149.JO, {
-          hideOnClick: false,
           tooltip: Chunk388032.intl.string(Chunk388032.t["zp9d/4"]),
           foreground: Chunk350724.downloadArrow,
           background: Chunk350724.cloud,

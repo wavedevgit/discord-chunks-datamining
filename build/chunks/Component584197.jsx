@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 584197, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  n: () => T
+  n: () => d
 }), require("./415506.js"), require("./49124.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,15 +13,15 @@ var Chunk54381 = require("./54381.js"),
   Chunk5900 = require("./5900.js"),
   Chunk773275 = require("./773275.jsx"),
   Chunk981631 = require("./981631.js");
-let T = () => {
+let d = () => {
   let {
     connectionStatus: t,
     setConnectionStatus: e,
     connect: n,
-    disconnect: T
-  } = (0, Chunk773275.xf)(), g = [Chunk5900.Ij.CONNECTED, Chunk5900.Ij.INITIALIZING].includes(module), E = (0, Chunk473749.useCallback)(() => g ? (exports(Chunk5900.Ij.DISCONNECTED), (0, Chunk594421.j)(Chunk981631.rMx.NITRO_WARP_TOGGLED, {
+    disconnect: d
+  } = (0, Chunk773275.xf)(), E = [Chunk5900.Ij.CONNECTED, Chunk5900.Ij.INITIALIZING].includes(module), g = (0, Chunk473749.useCallback)(() => E ? (exports(Chunk5900.Ij.DISCONNECTED), (0, Chunk594421.j)(Chunk981631.rMx.NITRO_WARP_TOGGLED, {
     is_connecting: false
-  }), T()) : ((0, Chunk594421.j)(Chunk981631.rMx.NITRO_WARP_TOGGLED, {
+  }), d()) : ((0, Chunk594421.j)(Chunk981631.rMx.NITRO_WARP_TOGGLED, {
     is_connecting: true
   }), exports(Chunk5900.Ij.INITIALIZING), require().then(t => {
     t || e(c.Ij.DISCONNECTED)
@@ -30,15 +30,15 @@ let T = () => {
       tags: {
         source: o.D.PRIVATE_BROWSING_PERK_CONNECT
       }
-    }), r.default.track(d.rMx.PREMIUM_FEATURE_ERROR, {
+    }), r.default.track(S.rMx.PREMIUM_FEATURE_ERROR, {
       error_message: t instanceof Error ? t.message : JSON.stringify(t),
       error_source: o.D.PRIVATE_BROWSING_PERK_CONNECT
     }), e(c.Ij.DISCONNECTED)
-  })), [g, T, require, exports]);
+  })), [E, d, require, exports]);
   return (0, Chunk54381.jsx)("div", {
     children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
-      onChange: E,
-      checked: g
+      onChange: g,
+      checked: E
     })
   })
 }

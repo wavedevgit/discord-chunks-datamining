@@ -2,151 +2,111 @@
 /** chunk id: 189283, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  s: () => E
+  s: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk155973 = require("./155973.js");
 
-function c(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
 function u(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      c(e, t, n[t])
-    })
+  switch (e) {
+    case "tab":
+    default:
+      return c.tabContainer;
+    case "pill":
+      return c.pillContainer
   }
-  return e
 }
 
-function d(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
+function d(e) {
+  switch (e) {
+    case "tab":
+    default:
+      return c.tabItem;
+    case "pill":
+      return c.pillItem
   }
-  return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
+function f(e) {
+  switch (e) {
+    case "tab":
+    default:
+      return c.tabItemSelected;
+    case "pill":
+      return c.pillItemSelected
+  }
 }
 
 function p(e) {
-  switch (e) {
-    case "tab":
-    default:
-      return l.tabContainer;
-    case "pill":
-      return l.pillContainer
-  }
+  return "pill" === e ? c.pillItemText : true
 }
 
 function _(e) {
-  switch (e) {
-    case "tab":
-    default:
-      return l.tabItem;
-    case "pill":
-      return l.pillItem
-  }
-}
-
-function m(e) {
-  switch (e) {
-    case "tab":
-    default:
-      return l.tabItemSelected;
-    case "pill":
-      return l.pillItemSelected
-  }
-}
-
-function h(e) {
-  return "pill" === e ? l.pillItemText : true
-}
-
-function g(e) {
   let {
     option: t,
     selected: n,
     onClick: a,
-    look: c,
-    className: d,
-    disabled: p = false,
-    tooltip: g,
-    tooltipAriaLabel: E
-  } = e, b = i.useCallback(e => a(t, e), [a, t]), y = e => (0, r.jsx)(s.P3F, f(u({
-    className: o()(_(c), d, {
-      [m(c)]: n,
-      [l.disabled]: p
+    look: u,
+    className: _,
+    disabled: m = false,
+    tooltip: h,
+    tooltipAriaLabel: g
+  } = e, E = i.useCallback(e => a(t, e), [a, t]), b = () => (0, r.jsx)(l.P3F, {
+    className: o()(d(u), _, {
+      [f(u)]: n,
+      [c.disabled]: m
     }),
-    "aria-disabled": p
-  }, e), {
-    onClick: p ? true : b,
-    children: (0, r.jsxs)(s.Text, {
-      className: o()(l.controlText, h(c)),
+    "aria-disabled": m,
+    "aria-label": null != h ? g : true,
+    onClick: m ? true : E,
+    children: (0, r.jsxs)(l.Text, {
+      className: o()(c.controlText, p(u)),
       variant: "text-sm/medium",
       color: "none",
       children: [null != t.icon ? (0, r.jsx)(t.icon, {
-        className: l.icon
+        className: c.icon
       }) : null, t.name]
     })
-  }));
-  return null == g ? y() : (0, r.jsx)(s.aML, {
-    "data-migration-pending": true,
-    shouldShow: !p,
-    "aria-label": E,
-    text: g,
-    children: e => y(e)
+  });
+  return null == h ? b() : (0, r.jsx)(s.u, {
+    shouldShow: !m,
+    __unsupportedReactNodeAsText: h,
+    children: b()
   })
 }
 
-function E(e) {
+function m(e) {
   let {
     options: t,
     value: n,
     onChange: a,
     look: s = "tab",
-    className: c,
-    optionClassName: u,
-    disabled: d = false
-  } = e, f = i.useCallback(e => {
+    className: l,
+    optionClassName: d,
+    disabled: f = false
+  } = e, p = i.useCallback(e => {
     var t;
     let i = n === e.value;
-    return (0, r.jsx)(g, {
+    return (0, r.jsx)(_, {
       selected: i,
       option: e,
       look: s,
       onClick: a,
-      disabled: d,
-      className: o()(u, e.className),
+      disabled: f,
+      className: o()(d, e.className),
       tooltip: e.tooltip,
       tooltipAriaLabel: e.tooltipAriaLabel
     }, null != (t = e.key) ? t : String(e.value))
-  }, [n, s, a, u, d]);
+  }, [n, s, a, d, f]);
   return (0, r.jsx)("div", {
-    className: o()(p(s), c, {
-      [l.disabledContainer]: d
+    className: o()(u(s), l, {
+      [c.disabledContainer]: f
     }),
-    children: t.map(f)
+    children: t.map(p)
   })
 }

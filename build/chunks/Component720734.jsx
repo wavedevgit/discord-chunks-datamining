@@ -184,12 +184,12 @@ function tf(e) {
     transitionAccountPanel: b,
     avatarDecoration: v,
     "data-jump-section": j
-  } = e, C = r.useRef(null), _ = null != t ? t : C, S = (0, eQ.NZ)({
+  } = e, C = r.useRef(null), _ = null != t ? t : C, S = (0, eY.NZ)({
     avatarDecoration: v,
     size: (0, I.y9)(x.EFr.SIZE_32)
-  }), E = (0, q.Z)(), {
-    updateOpenPopoutRef: O,
-    highlightBadge: T,
+  }), E = (0, K.Z)(), {
+    updateOpenPopoutRef: T,
+    highlightBadge: O,
     setHighlightBadge: N
   } = function() {
     let e = r.useRef(null),
@@ -238,7 +238,7 @@ function tf(e) {
         } = e;
         return (0, a.jsx)(en.Z, {
           currentUser: c,
-          highlightBadge: T,
+          highlightBadge: O,
           openedAt: t,
           onClose: () => {
             null == n || n()
@@ -257,7 +257,7 @@ function tf(e) {
       onRequestClose: () => {
         m(), N(true)
       },
-      children: e => (O(e), (0, a.jsxs)(x.P3F, td(tc({
+      children: e => (T(e), (0, a.jsxs)(x.P3F, td(tc({
         innerRef: _,
         style: P
       }, e), {
@@ -441,7 +441,7 @@ class tx extends Chunk473749.PureComponent {
                 })
               });
             case u.z.DISPLAY_NAME_STYLES_COACHMARK:
-              return (0, a.jsx)(Y.e, {
+              return (0, a.jsx)(Q.e, {
                 markAsDismissed: r,
                 targetElementRef: this.avatarWithPopoutRef,
                 children: this.renderAvatarWithPopout({
@@ -519,13 +519,13 @@ class tx extends Chunk473749.PureComponent {
         suppress: t,
         selfMute: n
       } = this.props;
-      (0, B.Z)(e, t, tn.jXE.ACCOUNT_PANEL), (0, F.v)(T.Z.ACCOUNT, F.d.MIC, n)
+      (0, B.Z)(e, t, tn.jXE.ACCOUNT_PANEL), (0, F.v)(O.Z.ACCOUNT, F.d.MIC, n)
     }), to(this, "handleToggleSelfDeaf", () => {
       let {
         serverDeaf: e,
         selfDeaf: t
       } = this.props;
-      (0, U.Z)(e, tn.jXE.ACCOUNT_PANEL), (0, F.v)(T.Z.ACCOUNT, F.d.DEAFEN, !t)
+      (0, U.Z)(e, tn.jXE.ACCOUNT_PANEL), (0, F.v)(O.Z.ACCOUNT, F.d.DEAFEN, !t)
     }), to(this, "handleOpenAccountSettings", () => {
       this.dismissTooltips(), eG.Z.isConnected() ? (0, ey.openUserSettings)(ev.n.VOICE_AND_VIDEO_PANEL, {
         section: tn.oAB.VOICE
@@ -542,10 +542,10 @@ class tx extends Chunk473749.PureComponent {
           user: t,
           premiumSubscription: this.props.premiumSubscription,
           webBuildOverride: this.props.webBuildOverride,
-          onInteraction: (0, G.u)("UserSettingsCogContextMenu", T.Z.ACCOUNT)
+          onInteraction: (0, G.u)("UserSettingsCogContextMenu", O.Z.ACCOUNT)
         }))
       })
-    }), to(this, "audioOnInteractionHandler", (0, G.u)("AudioDeviceMenu", T.Z.ACCOUNT)), to(this, "handleInputAudioContextMenu", (e, t) => {
+    }), to(this, "audioOnInteractionHandler", (0, G.u)("AudioDeviceMenu", O.Z.ACCOUNT)), to(this, "handleInputAudioContextMenu", (e, t) => {
       this.dismissTooltips(), (0, b.jW)(e, async () => {
         let {
           default: e
@@ -620,7 +620,7 @@ class tx extends Chunk473749.PureComponent {
       (0, eX.JG)(e8.ZP.getUserTag(e, {
         decoration: "never",
         identifiable: "always"
-      })), eY.default.track(tn.rMx.TEXT_COPIED, {
+      })), eQ.default.track(tn.rMx.TEXT_COPIED, {
         type: "User Tag"
       });
       let a = {
@@ -675,10 +675,10 @@ class tx extends Chunk473749.PureComponent {
             className: l()({
               [ts.withDisplayNameStyles]: null != e
             }),
-            children: (0, a.jsx)(Q.Z, {
+            children: (0, a.jsx)(Y.Z, {
               userName: n,
               displayNameStyles: e,
-              effectDisplayType: this.state.hovered ? K.F.ANIMATED : K.F.STATIC,
+              effectDisplayType: this.state.hovered ? q.F.ANIMATED : q.F.STATIC,
               loop: true,
               inProfile: true
             })
@@ -835,7 +835,7 @@ function tv() {
       selfDeaf: S,
       deaf: E
     } = (0, Chunk879815.Z)(Chunk410575),
-    O = (0, Chunk442837.e7)([Chunk304761.C], () => {
+    T = (0, Chunk442837.e7)([Chunk304761.C], () => {
       var e;
       return (0, Chunk865427.fD)() ? null == (e = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : module.discord_web : null
     }),
@@ -850,14 +850,14 @@ function tv() {
     G = null == exports ? true : exports.avatarDecoration,
     V = (0, Chunk541638.R)(exports, null != Chunk522651 ? Chunk522651 : true),
     W = (0, Chunk676742.Z)(Chunk473749 ? Chunk427217 : Chunk795318),
-    q = Chunk5192.ZP.useName(null != Chunk522651 ? Chunk522651 : true, null, exports),
-    K = null != (e = Chunk51144.ZP.useName(exports)) ? module : "",
+    K = Chunk5192.ZP.useName(null != Chunk522651 ? Chunk522651 : true, null, exports),
+    q = null != (e = Chunk51144.ZP.useName(exports)) ? module : "",
     {
-      voiceActivityStatusEnabled: Y
+      voiceActivityStatusEnabled: Q
     } = (0, Chunk468363.U)({
       location: "Account"
     }),
-    [Q, J] = (0, Chunk291533.G)(null != Chunk522651 ? Chunk522651 : null),
+    [Y, J] = (0, Chunk291533.G)(null != Chunk522651 ? Chunk522651 : null),
     [ee, et] = (0, Chunk812055.b)(),
     en = Chunk594928.JH.useExperiment({
       location: "Account"
@@ -885,7 +885,7 @@ function tv() {
         a = [];
       if (null != exports ? e = exports.partyId : null != require && null != require.party && null != require.party.id && (e = require.party.id), null != module) {
         var r;
-        a = o()(Array.from(null != (r = Chunk831506.Z.getParty(module)) ? Chunk473749 : [])).map(e => eq.default.getUser(e)).filter(Chunk823379.lm).value()
+        a = o()(Array.from(null != (r = Chunk831506.Z.getParty(module)) ? Chunk473749 : [])).map(e => eK.default.getUser(e)).filter(Chunk823379.lm).value()
       }
       return Chunk54381.length > 1
     }),
@@ -1048,7 +1048,7 @@ function ty(e) {
     } = e,
     S = n || s || i,
     E = r.useRef(null),
-    O = r.useRef(null),
+    T = r.useRef(null),
     P = (0, eD.b)(S),
     {
       activeVoice: w,
@@ -1057,9 +1057,9 @@ function ty(e) {
     } = (0, eN.o)(),
     {
       showSilentLagWarning: R
-    } = (0, eT.Y)(),
+    } = (0, eO.Y)(),
     A = null != w,
-    D = (0, eO.z)(w),
+    D = (0, eT.z)(w),
     U = (0, d.e7)([eG.Z], () => eG.Z.isConnected()),
     {
       Component: B,
@@ -1068,8 +1068,8 @@ function ty(e) {
     } = P,
     H = i || s ? x.v0G : B,
     z = (0, Z.Z)(n, i, s, o),
-    q = R ? tl.intl.string(tl.t.ARRV6m) : null;
-  t = y ? tl.intl.string(tl.t["29gnR4"]) : null != q ? (0, a.jsxs)("div", {
+    K = R ? tl.intl.string(tl.t.ARRV6m) : null;
+  t = y ? tl.intl.string(tl.t["29gnR4"]) : null != K ? (0, a.jsxs)("div", {
     className: ts.tooltipWithSubtext,
     children: [(0, a.jsx)(x.Text, {
       variant: "text-sm/medium",
@@ -1078,22 +1078,22 @@ function ty(e) {
     }), (0, a.jsx)(x.Text, {
       variant: "text-xs/medium",
       color: "text-feedback-warning",
-      children: q
+      children: K
     })]
   }) : z;
   let {
-    analyticsLocations: K
-  } = (0, N.ZP)(T.Z.AUDIO_INPUT_BUTTON), Y = (0, eS.Hu)({
-    location: T.Z.AUDIO_INPUT_BUTTON,
+    analyticsLocations: q
+  } = (0, N.ZP)(O.Z.AUDIO_INPUT_BUTTON), Q = (0, eS.Hu)({
+    location: O.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: true
-  }), Q = (0, eE.av)({
-    location: T.Z.AUDIO_INPUT_BUTTON,
+  }), Y = (0, eE.av)({
+    location: O.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: true
   });
   r.useEffect(() => () => V(), [S, V]);
   let X = r.useCallback(e => {
-      g(e, K)
-    }, [g, K]),
+      g(e, q)
+    }, [g, q]),
     [J, $] = r.useState(false),
     ee = r.useCallback(e => {
       var t;
@@ -1137,7 +1137,7 @@ function ty(e) {
       location: "MicrophoneButton"
     });
   return ed ? (0, a.jsx)(N.Gt, {
-    value: K,
+    value: q,
     children: (0, a.jsx)(x.yRy, {
       targetElementRef: E,
       renderPopout: e => {
@@ -1145,9 +1145,9 @@ function ty(e) {
           closePopout: t
         } = e;
         return _(), (0, a.jsx)(N.Gt, {
-          value: K,
+          value: q,
           children: ed ? (0, a.jsx)(M.Z, {
-            onInteraction: (0, G.u)("AudioDeviceMenu", T.Z.ACCOUNT),
+            onInteraction: (0, G.u)("AudioDeviceMenu", O.Z.ACCOUNT),
             onClose: t,
             maybeRenderPTTCheckbox: true,
             renderInputProfiles: eu.length > 0,
@@ -1156,7 +1156,7 @@ function ty(e) {
             renderInputVolume: true,
             renderSettingsButton: true
           }) : (0, a.jsx)(L.default, {
-            onInteraction: (0, G.u)("AudioDeviceMenu", T.Z.ACCOUNT),
+            onInteraction: (0, G.u)("AudioDeviceMenu", O.Z.ACCOUNT),
             onClose: t,
             renderInputDevices: true,
             renderInputProfiles: eu.length > 0,
@@ -1248,7 +1248,7 @@ function ty(e) {
       }
     })
   }) : (0, a.jsx)(N.Gt, {
-    value: K,
+    value: q,
     children: (0, a.jsxs)("div", {
       ref: E,
       className: l()(ts.micButtonParent, {
@@ -1276,14 +1276,14 @@ function ty(e) {
         onContextMenu: X,
         role: "switch",
         className: l()({
-          [ts.micButtonWithMenu]: Y
+          [ts.micButtonWithMenu]: Q
         }),
         orangeGlow: R,
         redGlow: S,
         "aria-label": tl.intl.string(tl.t.w4m945),
         "aria-checked": S,
         disabled: o
-      }), Y && (0, a.jsx)(x.yRy, {
+      }), Q && (0, a.jsx)(x.yRy, {
         targetElementRef: j,
         position: "top",
         align: "left",
@@ -1324,7 +1324,7 @@ function ty(e) {
           } = t;
           let l = i ? x.u04 : x.CJ0,
             s = [];
-          return !i && (es && s.push(u.z.VOICE_FILTER_EARLY_ACCESS_COACHMARK), s.push(u.z.VOICE_FILTER_LAUNCH_COACHMARK), Q && U && !A && s.push(u.z.VOICE_FILTER_FIRST_USE_COACHMARK)), (0, a.jsx)("div", {
+          return !i && (es && s.push(u.z.VOICE_FILTER_EARLY_ACCESS_COACHMARK), s.push(u.z.VOICE_FILTER_LAUNCH_COACHMARK), Y && U && !A && s.push(u.z.VOICE_FILTER_FIRST_USE_COACHMARK)), (0, a.jsx)("div", {
             children: (0, a.jsx)(W.ZP, {
               bypassAutoDismiss: true,
               contentTypes: s,
@@ -1344,7 +1344,7 @@ function ty(e) {
                   onCTA: () => $(true)
                 }));
                 let c = () => (0, a.jsx)(e9.Z, tc({
-                  ref: O,
+                  ref: T,
                   plated: null != v,
                   tooltipForceOpen: en,
                   tooltipColor: en ? x.r6K.GREEN : true,
@@ -1378,7 +1378,7 @@ function ty(e) {
                   }
                 }, r));
                 return null != s ? (0, a.jsx)(x.yRy, {
-                  targetElementRef: O,
+                  targetElementRef: T,
                   renderPopout: () => s,
                   animation: x.yRy.Animation.TRANSLATE,
                   animationPosition: "bottom",
@@ -1422,9 +1422,9 @@ function tC(e) {
     location: "HeadphonesButton"
   }), _ = (0, D.Z)(t, n, i), {
     analyticsLocations: S
-  } = (0, N.ZP)(T.Z.AUDIO_OUTPUT_BUTTON), E = r.useRef(null);
+  } = (0, N.ZP)(O.Z.AUDIO_OUTPUT_BUTTON), E = r.useRef(null);
   r.useEffect(() => () => b(), [h, b]);
-  let O = r.useCallback(e => {
+  let T = r.useCallback(e => {
     o(e, S)
   }, [o, S]);
   return C ? (0, a.jsx)(N.Gt, {
@@ -1438,7 +1438,7 @@ function tC(e) {
         return m(), (0, a.jsx)(N.Gt, {
           value: S,
           children: (0, a.jsx)(M.Z, {
-            onInteraction: (0, G.u)("AudioDeviceMenu", T.Z.ACCOUNT),
+            onInteraction: (0, G.u)("AudioDeviceMenu", O.Z.ACCOUNT),
             onClose: t,
             renderOutputDevices: true,
             renderOutputVolume: true,
@@ -1535,7 +1535,7 @@ function tC(e) {
         className: c
       }),
       onClick: s,
-      onContextMenu: O,
+      onContextMenu: T,
       innerClassName: l()({
         [ts.redIcon]: n
       }),

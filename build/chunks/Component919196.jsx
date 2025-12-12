@@ -1,7 +1,7 @@
 /** Chunk was on 9414 **/
 /** chunk id: 919196, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => T
 }), require("./388685.js"), require("./539854.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -94,40 +94,40 @@ function I(e) {
   }), t))
 }
 
-function w(e) {
+function T(e) {
   let {
     guild: t,
     applicationIntegration: n,
     selectableWebhookChannels: a,
     editedWebhook: c,
     errors: u,
-    canNavigate: w
+    canNavigate: T
   } = e, {
     application: E,
-    integration: P,
-    webhooks: T
-  } = n, [Z, _] = (0, o.Wu)([m.Z], () => [m.Z.can(y.Plq.MANAGE_ROLES, t), null == E.bot || m.Z.canManageUser(y.Plq.MANAGE_GUILD, E.bot.id, t)], [E.bot, t]), k = (0, o.e7)([m.Z], () => m.Z.can(y.Plq.MANAGE_WEBHOOKS, t), [t]), A = r.useCallback(() => {
-    w() && (0, s.h7j)(e => (0, i.jsx)(I, S({
+    integration: Z,
+    webhooks: w
+  } = n, [P, _] = (0, o.Wu)([p.Z], () => [p.Z.can(y.Plq.MANAGE_ROLES, t), null == E.bot || p.Z.canManageUser(y.Plq.MANAGE_GUILD, E.bot.id, t)], [E.bot, t]), k = (0, o.e7)([p.Z], () => p.Z.can(y.Plq.MANAGE_WEBHOOKS, t), [t]), A = r.useCallback(() => {
+    T() && (0, s.h7j)(e => (0, i.jsx)(I, S({
       guild: t,
       application: E,
-      integration: P
+      integration: Z
     }, e)))
-  }, [E, w, t, P]), D = r.useMemo(() => {
+  }, [E, T, t, Z]), D = r.useMemo(() => {
     let e = [{
       icon: s.T39,
       text: C.intl.formatToPlainString(C.t.gcdJ8J, {
-        timestamp: g.default.extractTimestamp(P.id)
+        timestamp: f.default.extractTimestamp(Z.id)
       })
     }];
-    return null != P.user && e.push({
+    return null != Z.user && e.push({
       icon: s.tBG,
       text: C.intl.formatToPlainString(C.t.qE7oqs, {
-        user: h.ZP.getUserTag(P.user)
+        user: h.ZP.getUserTag(Z.user)
       })
     }), e
-  }, [P.id, P.user]), R = r.useMemo(() => {
+  }, [Z.id, Z.user]), R = r.useMemo(() => {
     var e;
-    return null != E.bot && (null == (e = P.scopes) ? true : e.includes(l.x.BOT)) ? (0, i.jsx)(v.Z, {
+    return null != E.bot && (null == (e = Z.scopes) ? true : e.includes(l.x.BOT)) ? (0, i.jsx)(v.Z, {
       guild: t,
       applicationIntegration: n
     }) : (0, i.jsx)(s.Zbd, {
@@ -139,23 +139,23 @@ function w(e) {
         children: C.intl.string(C.t.pfLnza)
       })
     })
-  }, [E.bot, n, t, P.scopes]);
+  }, [E.bot, n, t, Z.scopes]);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(x.Z, {
       name: E.name,
-      imageSrc: f.ZP.getApplicationIconURL({
+      imageSrc: g.ZP.getApplicationIconURL({
         id: E.id,
         icon: E.icon,
         size: 32
       }),
       details: D,
       isHeader: true
-    }), (null == E ? true : E.description) != null ? (0, i.jsx)(p.Z, {
+    }), (null == E ? true : E.description) != null ? (0, i.jsx)(b.Z, {
       userBio: E.description,
       className: N.headerDescription
-    }) : null, Z ? (0, i.jsx)(b.Z, {
+    }) : null, P ? (0, i.jsx)(m.Z, {
       application: E,
-      canNavigate: w,
+      canNavigate: T,
       guildId: t.id
     }) : null, (0, i.jsx)(s.izJ, {
       className: N.headerDivider
@@ -176,12 +176,12 @@ function w(e) {
           color: "currentColor"
         }),
         title: C.intl.string(C.t["t9ZX/I"])
-      }), T.length > 0 ? (0, i.jsx)(O.Z, {
-        webhooks: T,
+      }), w.length > 0 ? (0, i.jsx)(O.Z, {
+        webhooks: w,
         editedWebhook: c,
         selectableWebhookChannels: a,
         errors: u,
-        canNavigate: w
+        canNavigate: T
       }) : (0, i.jsx)(s.Zbd, {
         className: N.emptyCard,
         editable: true,

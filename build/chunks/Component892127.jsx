@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk765250 = require("./765250.js"),
   Chunk13245 = require("./13245.js"),
@@ -58,28 +58,28 @@ let I = Chunk473749.memo(function(e) {
   let {
     widget: t,
     renderWidget: n,
-    renderTitle: l,
+    renderTitle: a,
     renderButtons: I,
     resizeValidation: C,
     className: j,
     dragContainerClassName: _
   } = e, Z = (0, o.e7)([u.Z], () => u.Z.getWidgetConfig(t.type), [t.type]), N = (0, b.xZ)(t.id, b.bc), w = (0, y.Z)(), T = (0, O.Z)(), P = (0, o.e7)([d.Z], () => d.Z.windowSize((0, h.ZY)(T))), A = r.useCallback((e, t, n, i, r) => {
-    let l = d.Z.windowSize((0, h.ZY)((0, O.i)())),
-      a = (0, f.jL)(n, l),
-      o = (0, f.Ox)(i, l);
+    let a = d.Z.windowSize((0, h.ZY)((0, O.i)())),
+      l = (0, f.jL)(n, a),
+      o = (0, f.Ox)(i, a);
     (0, s.Os)(t), (0, s.nv)({
       widgetId: t,
-      anchor: a,
+      anchor: l,
       size: o
     });
     let p = e === m.B.MOVE,
-      g = (0, f.PY)(n, l.width, l.height, r.width, r.height);
+      g = (0, f.PY)(n, a.width, a.height, r.width, r.height);
     c.Z.track(v.rMx.OVERLAY_LAYOUT_UPDATED, {
       was_resized: !p,
       was_dragged: p,
       widget_type: u.Z.getWidgetType(t),
-      window_width: l.width,
-      window_height: l.height,
+      window_width: a.width,
+      window_height: a.height,
       widget_width: r.width,
       widget_height: r.height,
       widget_left: g.left,
@@ -107,16 +107,16 @@ let I = Chunk473749.memo(function(e) {
     widget: t,
     dragging: null != e.dragOperation,
     className: j
-  })), [t, n, j]), K = r.useCallback(e => null != l || null != I ? (0, i.jsxs)("div", {
-    className: a()(E.extrasContainer, N && E.fullFlex),
-    children: [null == l ? true : l(t), null == I ? true : I(t, e)]
-  }) : null, [t, l, N, I]), X = (0, o.e7)([g.Z], () => g.Z.hasRenderDebugMode(p.GO.WidgetAreas)), J = r.useMemo(() => {
+  })), [t, n, j]), K = r.useCallback(e => null != a || null != I ? (0, i.jsxs)("div", {
+    className: l()(E.extrasContainer, N && E.fullFlex),
+    children: [null == a ? true : a(t), null == I ? true : I(t, e)]
+  }) : null, [t, a, N, I]), X = (0, o.e7)([g.Z], () => g.Z.hasRenderDebugMode(p.GO.WidgetAreas)), J = r.useMemo(() => {
     if (null != C) return e => C(x(S({}, e), {
       widget: t
     }))
   }, [C, t]);
   return (0, i.jsx)(m.Z, {
-    className: a()({
+    className: l()({
       [E.debug]: X,
       [E.debugUnpinned]: X && !R,
       [E.debugPinned]: X && R

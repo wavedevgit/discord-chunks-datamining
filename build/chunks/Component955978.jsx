@@ -26,7 +26,7 @@ function y(e, t, n) {
   if (null == O) return null;
   let v = u.Z.getCurrentlySelectedChannelId(),
     E = c.Z.getChannel(v),
-    S = a.Z.getApplication(t),
+    S = l.Z.getApplication(t),
     x = o.ZP.getRunningGames().find(e => e.id === t),
     I = null != (y = null == x ? true : x.name) ? y : null == S ? true : S.name,
     C = (0, f.oY)(null == E ? true : E.guild_id, null == E ? true : E.id, O),
@@ -34,7 +34,7 @@ function y(e, t, n) {
       className: b.nowPlayingNotification,
       children: [(0, i.jsx)("div", {
         className: b.nowPlayingNotificationIcon,
-        children: (0, i.jsx)(l.Z, {
+        children: (0, i.jsx)(a.Z, {
           user: O,
           "aria-hidden": true,
           size: r.EFr.SIZE_24

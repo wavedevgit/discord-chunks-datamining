@@ -79,7 +79,7 @@ function W(e) {
     onManageFollowedChannels: Q,
     onManageApplication: X,
     onManageLobbiesLinked: $
-  } = e, ee = (0, p.ZP)(), [et, en] = r.useState(""), {
+  } = e, ee = (0, b.ZP)(), [et, en] = r.useState(""), {
     isFetchingConnections: ei,
     accounts: er
   } = (0, c.cj)([y.Z], () => ({
@@ -91,11 +91,11 @@ function W(e) {
   } = (0, c.cj)([C.Z], () => ({
     canManageWebhooks: null != W && C.Z.can(_.Plq.MANAGE_WEBHOOKS, W) || null != H && C.Z.can(_.Plq.MANAGE_WEBHOOKS, H),
     canManageGuild: null != W && null == H && C.Z.can(_.Plq.MANAGE_GUILD, W)
-  }), [W, H]), eo = (0, v.Y)(H), es = (0, f.q)(null == H || null == (t = H.linkedLobby) ? true : t.application_id), ec = (0, O.F)(null == W ? true : W.id), {
+  }), [W, H]), eo = (0, v.Y)(H), es = (0, g.q)(null == H || null == (t = H.linkedLobby) ? true : t.application_id), ec = (0, O.F)(null == W ? true : W.id), {
     availableTwitchIntegrations: ed,
     availableYoutubeIntegrations: eu,
-    guildTwitchIntegrations: eb,
-    guildYoutubeIntegrations: ep
+    guildTwitchIntegrations: em,
+    guildYoutubeIntegrations: eb
   } = r.useMemo(() => {
     var e, t, n, i, r, l, a, o;
     return {
@@ -105,8 +105,8 @@ function W(e) {
       guildYoutubeIntegrations: null != (o = null == (i = F.youtube) ? true : i.filter(e => e.enabled).length) ? o : 0
     }
   }, [F.twitch, F.youtube]), {
-    showTwitchCard: em,
-    showYoutubeCard: ef
+    showTwitchCard: ep,
+    showYoutubeCard: eg
   } = r.useMemo(() => {
     if (ei || !ea) return {
       showTwitchCard: false,
@@ -119,8 +119,8 @@ function W(e) {
       showTwitchCard: ed > 0 || !t && e,
       showYoutubeCard: eu > 0 || !n && e
     }
-  }, [ei, ea, W, er, ed, eu]), eg = Object.values(G).length, eh = r.useMemo(() => {
-    let e = eg > 100 ? U : s();
+  }, [ei, ea, W, er, ed, eu]), ef = Object.values(G).length, eh = r.useMemo(() => {
+    let e = ef > 100 ? U : s();
     return Object.values(G).filter(t => {
       var n;
       let {
@@ -128,8 +128,8 @@ function W(e) {
       } = t;
       return !!("" === (n = (n = et).trim().toLowerCase()) || i.id === n || e(n, i.name.toLowerCase()) || null != i.bot && e(n, i.bot.username.toLowerCase()))
     })
-  }, [G, eg, et]), ex = (0, c.e7)([Z.Z], () => {
-    if (null != W) return eh.find(e => Z.Z.canShowOverviewTooltip(W.id, e.integration.id))
+  }, [G, ef, et]), ex = (0, c.e7)([P.Z], () => {
+    if (null != W) return eh.find(e => P.Z.canShowOverviewTooltip(W.id, e.integration.id))
   }, [eh, W]), ej = r.useMemo(() => true !== ex ? [ex, ...eh.filter(e => e.integration.id !== ex.integration.id)] : eh, [eh, ex]), ev = (0, u.s9z)(u.JQI), [eO, ey] = r.useState(false), eC = r.useRef(0), eN = () => {
     ey(true), clearTimeout(eC.current), eC.current = setTimeout(() => {
       ey(false)
@@ -146,15 +146,15 @@ function W(e) {
       return null != r.user ? l.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.Nu9sat, {
-          timestamp: w.default.extractTimestamp(r.id),
+          timestamp: T.default.extractTimestamp(r.id),
           user: E.ZP.getUserTag(r.user)
         })
       }) : l.push({
         icon: u.T39,
         text: A.intl.formatToPlainString(A.t.gcdJ8J, {
-          timestamp: w.default.extractTimestamp(r.id)
+          timestamp: T.default.extractTimestamp(r.id)
         })
-      }), (0, i.jsx)(T.Z, {
+      }), (0, i.jsx)(w.Z, {
         name: n.name,
         imageSrc: S.ZP.getApplicationIconURL({
           id: n.id,
@@ -226,22 +226,22 @@ function W(e) {
                     },
                     guildId: n
                   }
-                }), (0, b.xf)()
+                }), (0, m.xf)()
               }
             })
           })]
         })
       });
     return t > 0 ? l : a
-  }(ee, eg, null == W ? true : W.id), eI = null);
-  let ew = I.Z.getArticleURL(_.BhN.INTEGRATIONS),
+  }(ee, ef, null == W ? true : W.id), eI = null);
+  let eT = I.Z.getArticleURL(_.BhN.INTEGRATIONS),
     eE = null != H ? A.t.YV0vh6 : A.t.FnZEJs,
-    eP = [];
+    eZ = [];
   if (el) {
     let e, t, r, a, o;
-    eP.push((n = K.length, n > 0 ? t = (0, i.jsx)(u.LJT, {
+    eZ.push((n = K.length, n > 0 ? t = (0, i.jsx)(u.LJT, {
       size: "xs"
-    }) : e = A.intl.string(A.t.lOQqJK), (0, i.jsx)(T.Z, {
+    }) : e = A.intl.string(A.t.lOQqJK), (0, i.jsx)(w.Z, {
       name: A.intl.string(A.t.xOg4SP),
       icon: u.tYf,
       buttonText: e,
@@ -254,9 +254,9 @@ function W(e) {
           count: n
         })
       }]
-    }, "webhooks"))), (null == H ? true : H.type) === _.d4z.GUILD_VOICE || (null == H ? true : H.type) != null && _.TPd.GUILD_THREADS_ONLY.has(H.type) || eP.push((l = z.length, l > 0 ? (o = (0, i.jsx)(u.LJT, {
+    }, "webhooks"))), (null == H ? true : H.type) === _.d4z.GUILD_VOICE || (null == H ? true : H.type) != null && _.TPd.GUILD_THREADS_ONLY.has(H.type) || eZ.push((l = z.length, l > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
-    }), a = Q) : (r = A.intl.string(A.t["ZwSt+T"]), a = () => open(I.Z.getArticleURL(_.BhN.CHANNEL_FOLLOWING))), (0, i.jsx)(T.Z, {
+    }), a = Q) : (r = A.intl.string(A.t["ZwSt+T"]), a = () => open(I.Z.getArticleURL(_.BhN.CHANNEL_FOLLOWING))), (0, i.jsx)(w.Z, {
       name: A.intl.string(A.t.OrV60r),
       icon: u.AsW,
       buttonText: r,
@@ -270,7 +270,7 @@ function W(e) {
       }]
     }, "channels-followed")))
   }
-  null == H && ec.length > 0 && eP.push((o = ec.length, (0, i.jsx)(T.Z, {
+  null == H && ec.length > 0 && eZ.push((o = ec.length, (0, i.jsx)(w.Z, {
     name: A.intl.string(A.t.tqtDXC),
     icon: u.DuK,
     trailing: (0, i.jsx)(u.LJT, {
@@ -283,16 +283,16 @@ function W(e) {
         count: o
       })
     }]
-  }, "channels-syncing"))), em && eP.push(function(e, t, n) {
-    let r, l, a, o, s = m.Z.get(_.ABu.TWITCH);
+  }, "channels-syncing"))), ep && eZ.push(function(e, t, n) {
+    let r, l, a, o, s = p.Z.get(_.ABu.TWITCH);
     return e > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
     }), l = A.intl.formatToPlainString(A.t.FFpnT8, {
       count: t
-    }), a = () => n(_.ABu.TWITCH)) : (r = A.intl.string(A.t.bkvGkn), l = A.intl.string(A.t.Qq3X2M), a = () => (0, g.Z)({
+    }), a = () => n(_.ABu.TWITCH)) : (r = A.intl.string(A.t.bkvGkn), l = A.intl.string(A.t.Qq3X2M), a = () => (0, f.Z)({
       platformType: _.ABu.TWITCH,
       location: "Integration Settings"
-    })), (0, i.jsx)(T.Z, {
+    })), (0, i.jsx)(w.Z, {
       name: A.intl.string(A.t.q4pBG3),
       icon: s.icon.whiteSVG,
       iconBackgroundColor: s.color,
@@ -305,16 +305,16 @@ function W(e) {
         text: l
       }]
     }, "integrations-twitch")
-  }(ed, eb, Y)), ef && eP.push(function(e, t, n) {
-    let r, l, a, o, s = m.Z.get(_.ABu.YOUTUBE);
+  }(ed, em, Y)), eg && eZ.push(function(e, t, n) {
+    let r, l, a, o, s = p.Z.get(_.ABu.YOUTUBE);
     return e > 0 ? (o = (0, i.jsx)(u.LJT, {
       size: "xs"
     }), l = A.intl.formatToPlainString(A.t.b2g5vC, {
       count: t
-    }), a = () => n(_.ABu.YOUTUBE)) : (r = A.intl.string(A.t.xEyQ3X), l = A.intl.string(A.t.T0ivgQ), a = () => (0, g.Z)({
+    }), a = () => n(_.ABu.YOUTUBE)) : (r = A.intl.string(A.t.xEyQ3X), l = A.intl.string(A.t.T0ivgQ), a = () => (0, f.Z)({
       platformType: _.ABu.YOUTUBE,
       location: "Integration Settings"
-    })), (0, i.jsx)(T.Z, {
+    })), (0, i.jsx)(w.Z, {
       name: A.intl.string(A.t.aS6cK4),
       icon: s.icon.whiteSVG,
       iconBackgroundColor: s.color,
@@ -327,14 +327,14 @@ function W(e) {
         text: l
       }]
     }, "integrations-youtube")
-  }(eu, ep, Y));
-  let eT = null != H && eo && null != es;
+  }(eu, eb, Y));
+  let ew = null != H && eo && null != es;
   return (0, i.jsxs)("div", {
     className: a()(null != eI ? D.footerPlaceholder : null),
     children: [(0, i.jsx)(u.Text, {
       variant: "text-sm/normal",
       children: A.intl.format(eE, {
-        helpdeskArticle: ew
+        helpdeskArticle: eT
       })
     }), (0, i.jsx)(u.izJ, {
       className: D.divider
@@ -342,14 +342,14 @@ function W(e) {
       className: D.__invalid_spinner,
       type: u.$jN.Type.SPINNING_CIRCLE
     }) : (0, i.jsxs)(i.Fragment, {
-      children: [eP, eT && (0, i.jsxs)(i.Fragment, {
-        children: [eP.length > 0 ? (0, i.jsx)(u.izJ, {
+      children: [eZ, ew && (0, i.jsxs)(i.Fragment, {
+        children: [eZ.length > 0 ? (0, i.jsx)(u.izJ, {
           className: D.divider
         }) : null, (0, i.jsx)(u.Heading, {
           variant: "heading-md/semibold",
           className: D.sectionHeader,
           children: A.intl.string(A.t.oAvIAg)
-        }), (0, i.jsx)(P.t, {
+        }), (0, i.jsx)(Z.t, {
           channel: H,
           application: es,
           showApplicationImage: true,
@@ -361,13 +361,13 @@ function W(e) {
           })
         })]
       }), ea ? (0, i.jsxs)(i.Fragment, {
-        children: [eP.length > 0 || eT ? (0, i.jsx)(u.izJ, {
+        children: [eZ.length > 0 || ew ? (0, i.jsx)(u.izJ, {
           className: D.divider
         }) : null, (0, i.jsx)(u.Heading, {
           variant: "heading-md/semibold",
           className: D.sectionHeader,
           children: A.intl.string(A.t.pUBKht)
-        }), eg > 4 ? (0, i.jsx)(B, {
+        }), ef > 4 ? (0, i.jsx)(B, {
           query: et,
           setQuery: en
         }) : null, eS]

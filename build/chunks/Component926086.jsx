@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk348327 = require("./348327.js"),
   s = require.n(Chunk348327),
   Chunk467721 = require("./467721.js"),
@@ -25,7 +25,7 @@ function m(e) {
   let {
     locked: t,
     pinned: n
-  } = e, [l, o] = r.useState(0), [m, g] = r.useState(0), [b, y] = r.useState(0), O = r.useRef(0), [v, E] = r.useState(0), {
+  } = e, [a, o] = r.useState(0), [m, g] = r.useState(0), [b, y] = r.useState(0), O = r.useRef(0), [v, E] = r.useState(0), {
     timeToLiveMs: S,
     reappearTimeMs: x
   } = d.ZP.useState(e => ({
@@ -52,7 +52,7 @@ function m(e) {
   let j = () => {
       o(Date.now()), E(e => e + 1)
     },
-    _ = l > 0 && m - l < 1e3,
+    _ = a > 0 && m - a < 1e3,
     Z = (0, u.Yzy)(b > 0 && b < m && m - b < S, {
       from: {
         opacity: 0
@@ -74,7 +74,7 @@ function m(e) {
       style: e,
       className: h.clickZoneDebugContainer,
       children: (0, i.jsx)(f.Z, {
-        className: a()(h.clickZone, _ && h.clickBackground),
+        className: l()(h.clickZone, _ && h.clickBackground),
         children: (0, i.jsx)(u.P3F, {
           onClick: j,
           className: h.clickable,

@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
 function m(e) {
   let {
     locked: t
-  } = e, n = (0, f.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, b = (0, l.e7)([c.default], () => c.default.getCurrentUser()), y = null != g ? g : m, [O, v] = r.useState(new Set), [E, S] = r.useState(new Set), x = r.useCallback((e, t, n) => {
+  } = e, n = (0, f.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, b = (0, a.e7)([c.default], () => c.default.getCurrentUser()), y = null != g ? g : m, [O, v] = r.useState(new Set), [E, S] = r.useState(new Set), x = r.useCallback((e, t, n) => {
     v(n => {
       if (t) {
         if (n.has(e)) return n;
@@ -39,7 +39,7 @@ function m(e) {
       }
       return new Set(i)
     })
-  }, []), I = (0, u.ee)(() => O, [O]), C = (0, u.ee)(() => E, [E]), j = (0, a.h)(u.zi, 3e3, []);
+  }, []), I = (0, u.ee)(() => O, [O]), C = (0, u.ee)(() => E, [E]), j = (0, l.h)(u.zi, 3e3, []);
   r.useEffect(() => {
     0 === I.size || t || j(h.Odu.FRIENDS, {
       locked: t,
@@ -48,7 +48,7 @@ function m(e) {
       contentInventoryIds: []
     })
   }, [I, C, t, j]);
-  let _ = (0, l.e7)([s.Z], () => null == y ? null : s.Z.getApplicationActivity(y), [y]),
+  let _ = (0, a.e7)([s.Z], () => null == y ? null : s.Z.getApplicationActivity(y), [y]),
     Z = (0, r.useCallback)((e, t) => {
       let n = function(e) {
         switch (e) {

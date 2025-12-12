@@ -2,17 +2,18 @@
 /** chunk id: 532657, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => _
-});
+  Z: () => m
+}), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk454399 = require("./454399.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk556638 = require("./556638.js"),
   Chunk175996 = require("./175996.js");
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,20 +22,20 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 
-function d(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      u(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function f(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -45,68 +46,60 @@ function f(e, t) {
   return n
 }
 
-function p(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e) {
+function m(e) {
+  var t;
   let {
-    text: t,
-    tooltipText: n,
-    textVariant: a = "text-xs/medium",
-    textClassName: u,
-    "aria-label": f,
-    icon: _,
-    canTruncate: m = true,
-    hideTooltip: h = false,
-    hideText: g = false
-  } = e, E = i.useRef(null), b = () => {
-    let e = null != n ? n : t;
-    return (0, r.jsxs)(r.Fragment, {
-      children: [_, (0, r.jsx)(s.Text, {
-        variant: "text-sm/medium",
-        color: "none",
-        className: o()(c.tooltipText, u),
-        children: e
-      })]
-    })
-  }, y = {
-    variant: a,
+    text: n,
+    tooltipText: a,
+    textVariant: d = "text-xs/medium",
+    textClassName: p,
+    "aria-label": m,
+    icon: h,
+    canTruncate: g = true,
+    hideTooltip: E = false,
+    hideText: b = false
+  } = e, y = i.useRef(null), [O, v] = i.useState(false), S = {
+    variant: d,
     color: "none",
-    className: o()(m && c.truncated, u)
-  }, O = null != t && null == n && m, v = !h && (null != n || O || g);
-  return null == _ && g ? null : v ? (0, r.jsx)(s.aML, {
-    "data-migration-pending": true,
-    text: b(),
-    "aria-label": f,
-    tooltipContentClassName: o()(c.container, c.activitiesTooltip),
-    delay: l.X,
-    children: e => {
+    className: o()(g && u.truncated, p)
+  }, I = null != n && null == a && g, T = !E && (null != a || I || b), C = null != (t = null != a ? a : n) ? t : "", A = (null == d ? true : d.startsWith("text-sm")) ? u.textSm : u.textXs, N = i.useCallback(() => {
+    if (I) {
       let {
-        onMouseEnter: i,
-        onMouseLeave: a
-      } = e;
-      return (0, r.jsxs)("div", {
-        className: o()(c.container, c.textWithIconContainer),
-        onMouseEnter: () => {
-          let {
-            current: e
-          } = E, t = null != e && e.offsetWidth < e.scrollWidth;
-          (null != n || t || g) && (null == i || i())
-        },
-        onMouseLeave: a,
-        children: [_, !g && (0, r.jsx)(s.Text, p(d({
-          ref: E
-        }, y), {
-          children: t
-        }))]
-      })
-    }
-  }) : (0, r.jsxs)(r.Fragment, {
-    children: [_, !g && (0, r.jsx)(s.Text, p(d({}, y), {
-      children: t
+        current: e
+      } = y;
+      v(null != e && e.offsetWidth < e.scrollWidth || null != a || b)
+    } else v(true)
+  }, [I, a, b]), P = i.useCallback(() => {
+    v(false)
+  }, []);
+  return null == h && b ? null : T ? (0, r.jsx)(s.i, {
+    body: C,
+    asset: h,
+    assetSize: 16,
+    delay: c.X,
+    shouldShow: O,
+    asContainer: true,
+    children: (0, r.jsxs)("div", {
+      className: o()(u.container, u.textWithIconContainer, A),
+      "aria-label": m,
+      onMouseEnter: N,
+      onMouseLeave: P,
+      children: [h, !b && (0, r.jsx)(l.Text, _(f({
+        ref: y
+      }, S), {
+        children: n
+      }))]
+    })
+  }) : (0, r.jsxs)("div", {
+    className: o()(u.container, u.textWithIconContainer, A),
+    children: [h, !b && (0, r.jsx)(l.Text, _(f({}, S), {
+      children: n
     }))]
   })
 }

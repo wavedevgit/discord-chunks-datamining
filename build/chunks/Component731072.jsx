@@ -1,7 +1,7 @@
 /** Chunk was on 9414 **/
 /** chunk id: 731072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,31 +13,31 @@ var Chunk54381 = require("./54381.js"),
   Chunk13051 = require("./13051.jsx"),
   Chunk456928 = require("./456928.js");
 
-function b(e) {
+function m(e) {
   let {
     integrations: t,
     editedIntegration: n,
-    guild: b,
-    platformType: p,
-    labelText: m,
-    descriptionText: f,
-    helpText: g,
+    guild: m,
+    platformType: b,
+    labelText: p,
+    descriptionText: g,
+    helpText: f,
     errors: h,
     canNavigate: x
-  } = e, j = o.Z.get(p), v = r.useCallback(async e => {
-    x() && (await s.Z.enableIntegration(b.id, e.type, e.id), a.Z.startEditingIntegration(e.id))
-  }, [x, b.id]), O = r.useCallback(e => {
-    x() && (e.id === (null == n ? true : n.id) && a.Z.stopEditingIntegration(), s.Z.disableIntegration(b.id, e.id))
-  }, [x, n, b.id]), y = r.useCallback(e => {
+  } = e, j = o.Z.get(b), v = r.useCallback(async e => {
+    x() && (await s.Z.enableIntegration(m.id, e.type, e.id), a.Z.startEditingIntegration(e.id))
+  }, [x, m.id]), O = r.useCallback(e => {
+    x() && (e.id === (null == n ? true : n.id) && a.Z.stopEditingIntegration(), s.Z.disableIntegration(m.id, e.id))
+  }, [x, n, m.id]), y = r.useCallback(e => {
     x() && (e === (null == n ? true : n.id) ? a.Z.stopEditingIntegration() : a.Z.startEditingIntegration(e))
   }, [x, n]);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(c.Z, {
-      name: m,
+      name: p,
       icon: null == j ? true : j.icon.whiteSVG,
       iconBackgroundColor: null == j ? true : j.color,
       iconClassName: u.platformIcon,
-      description: f,
+      description: g,
       isHeader: true
     }), (0, i.jsx)(l.izJ, {
       className: u.headerDivider
@@ -49,7 +49,7 @@ function b(e) {
     }), t.map(e => (0, i.jsx)(d.Z, {
       integration: e,
       editedIntegration: n,
-      guild: b,
+      guild: m,
       isExpanded: (null == n ? true : n.id) === e.id,
       onEnable: v,
       onDisable: O,
@@ -58,7 +58,7 @@ function b(e) {
       className: u.helpText,
       color: "text-muted",
       variant: "text-sm/normal",
-      children: g
+      children: f
     })]
   })
 }

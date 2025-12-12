@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk517319 = require("./517319.js");
-let E = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
+let g = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk517319.default.RZqaJn),
     StronglyDiscouragedCustomComponent: Chunk54942.Z,
     buildLayout: () => []
@@ -30,11 +30,11 @@ let E = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
       useCustomDecoration: function(t) {
         let e = (0, r.gU)();
         return t === s.z.FAMILY_CENTER_NEW_BADGE ? (0, i.jsx)(u.IGR, {
-          text: T.intl.string(T.t.y2b7CA)
+          text: d.intl.string(d.t.y2b7CA)
         }) : e > 0 ? (0, i.jsx)(u.mAB, {
           count: e
         }) : null
       }
     },
-    buildLayout: () => [E]
+    buildLayout: () => [g]
   })

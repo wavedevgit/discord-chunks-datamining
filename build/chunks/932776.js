@@ -25,11 +25,11 @@ function c() {
         i = (t.type > n ? n : t.type) - (e.type > n ? n : e.type);
       return 0 !== i ? i : e.untranslatedName.localeCompare(t.untranslatedName)
     }), [c]),
-    b = Chunk473749.useMemo(() => exports.startsWith("/") ? u.filter(e => e.type === a.yU.CHAT) : u, [exports, u]),
-    p = Chunk473749.useMemo(() => exports.startsWith("/") ? exports.substring(1) : exports, [exports]);
+    m = Chunk473749.useMemo(() => exports.startsWith("/") ? u.filter(e => e.type === a.yU.CHAT) : u, [exports, u]),
+    b = Chunk473749.useMemo(() => exports.startsWith("/") ? exports.substring(1) : exports, [exports]);
   return {
     query: exports,
-    results: Chunk473749.useMemo(() => (0, Chunk282923.B)(b, d, p), [b, p]),
+    results: Chunk473749.useMemo(() => (0, Chunk282923.B)(m, d, b), [m, b]),
     setQuery: require,
     unfilteredCount: module.length
   }

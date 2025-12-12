@@ -55,8 +55,8 @@ function j(e, t) {
 function y() {
   var e, t;
   let [n, i] = (0, Chunk473749.useState)(false), [s, d] = (0, Chunk473749.useState)(false), [h, x] = (0, Chunk473749.useState)(null), y = (0, Chunk396821.ZP)(e => e.toolsCache), {
-    setToolsCache: O,
-    removeToolsCache: T
+    setToolsCache: T,
+    removeToolsCache: O
   } = (0, Chunk396821.L3)(), {
     setImgCache: N
   } = (0, Chunk396821.W_)(), P = (0, Chunk473749.useCallback)(e => {
@@ -79,8 +79,8 @@ function y() {
       preview: true
     }))
   }, []), I = (0, Chunk473749.useCallback)(e => {
-    T(e)
-  }, [T]);
+    O(e)
+  }, [O]);
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk337555.controls,
@@ -106,7 +106,7 @@ function y() {
         children: [require && (0, Chunk54381.jsx)(Chunk329013.i, {}), Chunk276264 && (0, Chunk54381.jsx)(Chunk711325.Z, {
           selected: null == Chunk996746 || null == (e = Chunk996746.palette) ? true : module.name,
           onSelect: e => {
-            (null == h ? true : h.src) != null && O(h.src, h.src, e), w(e)
+            (null == h ? true : h.src) != null && T(h.src, h.src, e), w(e)
           }
         })]
       })]
@@ -127,7 +127,7 @@ function y() {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               a = await n.arrayBuffer();
-            N(t, t, (0, p.xh)(a)), O(t, t, m.jD)
+            N(t, t, (0, p.xh)(a)), T(t, t, m.jD)
           }
         }), (0, Chunk54381.jsx)("div", {
           className: Chunk337555.uploadedArea,
@@ -191,12 +191,12 @@ function C(e) {
       children: [(0, a.jsx)(l.Text, {
         variant: "text-sm/semibold",
         children: "Memberlist"
-      }), (0, a.jsx)(O, {
+      }), (0, a.jsx)(T, {
         nameplate: t
       }), (0, a.jsx)(l.Text, {
         variant: "text-sm/semibold",
         children: "DMs"
-      }), (0, a.jsx)(T, {
+      }), (0, a.jsx)(O, {
         nameplate: t
       }), (0, a.jsx)(l.Text, {
         variant: "text-sm/semibold",
@@ -284,7 +284,7 @@ function E(e) {
   })
 }
 
-function O(e) {
+function T(e) {
   let {
     nameplate: t
   } = e, n = (0, i.e7)([d.default], () => d.default.getCurrentUser());
@@ -320,7 +320,7 @@ function O(e) {
   })
 }
 
-function T(e) {
+function O(e) {
   let {
     nameplate: t
   } = e;

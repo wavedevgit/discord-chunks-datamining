@@ -1,7 +1,7 @@
 /** Chunk was on 23736 **/
 /** chunk id: 852758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -45,22 +45,22 @@ function E(e) {
   return e
 }
 
-function O() {
+function T() {
   let {
     action: e,
     theme: t
   } = (0, Chunk442837.cj)([Chunk23434.Z, Chunk210887.Z], () => ({
     action: Chunk23434.Z.getAction(),
     theme: Chunk210887.Z.theme
-  })), O = Chunk1964.Z.getVerificationTypes(module), [T, N] = Chunk473749.useState(0), P = (0, Chunk110924.Z)(O);
+  })), T = Chunk1964.Z.getVerificationTypes(module), [O, N] = Chunk473749.useState(0), P = (0, Chunk110924.Z)(T);
   (0, Chunk213609.Z)({
     type: Chunk990547.ImpressionTypes.MODAL,
     name: Chunk990547.ImpressionNames.USER_ACTION_REQUIRED,
     properties: {
-      verification_type: O[0],
-      verification_types: O
+      verification_type: T[0],
+      verification_types: T
     }
-  }, {}, [O.toString()]);
+  }, {}, [T.toString()]);
   let w = () => {
     (0, Chunk809206.FD)(), (0, Chunk481060.ZDy)(async () => {
       let {
@@ -75,7 +75,7 @@ function O() {
   return Chunk473749.useEffect(() => (Chunk714338.Z.disable(), () => {
     Chunk714338.Z.enable()
   }), []), Chunk473749.useEffect(() => {
-    (null == P ? true : P[0]) === Chunk981631.PUi.PHONE && (null == O ? true : O[0]) === Chunk981631.PUi.EMAIL && (0, Chunk481060.ZDy)(async () => {
+    (null == P ? true : P[0]) === Chunk981631.PUi.PHONE && (null == T ? true : T[0]) === Chunk981631.PUi.EMAIL && (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
       } = await require.e("84112").then(require.bind(require, 273352));
@@ -101,9 +101,9 @@ function O() {
       Layer: Chunk429142.ZP,
       onCloseCallback: w
     })
-  }, [O, P]), (0, Chunk54381.jsx)(Chunk762756.Z, {
-    types: O,
-    captchaKey: T,
+  }, [T, P]), (0, Chunk54381.jsx)(Chunk762756.Z, {
+    types: T,
+    captchaKey: O,
     onCaptchaVerify: e => {
       s.tn.post({
         url: C.ANM.CAPTCHA,

@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk765250 = require("./765250.js"),
   Chunk13245 = require("./13245.js"),
@@ -40,7 +40,7 @@ function T(e) {
   } = e;
   return null != n || null != r ? (0, i.jsx)("div", {
     className: w.avatarWrapper,
-    children: (0, i.jsx)(a.aRk, {
+    children: (0, i.jsx)(l.aRk, {
       lowerBadge: (0, i.jsx)("div", {
         className: w.gameIconMask,
         children: null != n || null != r ? (0, i.jsx)(p.Z, {
@@ -57,13 +57,13 @@ function T(e) {
       children: (0, i.jsx)(u.Z, {
         user: t,
         "aria-hidden": true,
-        size: a.EFr.SIZE_40
+        size: l.EFr.SIZE_40
       })
     })
   }) : (0, i.jsx)(u.Z, {
     user: t,
     "aria-hidden": true,
-    size: a.EFr.SIZE_40
+    size: l.EFr.SIZE_40
   })
 }
 
@@ -86,8 +86,8 @@ function P(e) {
         runningGame: r
       })
     }), (0, i.jsx)("div", {
-      className: l()(w.body, w.singleLineBody),
-      children: (0, i.jsx)(a.Text, {
+      className: a()(w.body, w.singleLineBody),
+      children: (0, i.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "interactive-text-default",
         className: w.bodyText,
@@ -97,10 +97,10 @@ function P(e) {
       })
     }), (0, i.jsx)("div", {
       className: w.watchButtonContainer,
-      children: (0, i.jsx)(a.P3F, {
+      children: (0, i.jsx)(l.P3F, {
         onClick: s,
-        className: l()(w.watchButton, "green" === c && w.greenButton, "gray" === c && w.grayButton),
-        children: (0, i.jsx)(a.Text, {
+        className: a()(w.watchButton, "green" === c && w.greenButton, "gray" === c && w.grayButton),
+        children: (0, i.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "always-white",
           tag: "span",
@@ -130,8 +130,8 @@ function A(e) {
         runningGame: r
       })
     }), (0, i.jsx)("div", {
-      className: l()(w.body, w.singleLineBody),
-      children: (0, i.jsx)(a.Text, {
+      className: a()(w.body, w.singleLineBody),
+      children: (0, i.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "interactive-text-default",
         className: w.bodyText,
@@ -143,12 +143,12 @@ function A(e) {
       className: w.buttonDivider
     }), (0, i.jsx)("div", {
       className: w.watchButtonContainer,
-      children: (0, i.jsx)(a.P3F, {
+      children: (0, i.jsx)(l.P3F, {
         onClick: s,
         className: w.watchIconButton,
         children: (0, i.jsx)(C.a, {
           size: "sm",
-          color: "green" === c ? "white" : a.TVs.colors.INTERACTIVE_TEXT_ACTIVE.css
+          color: "green" === c ? "white" : l.TVs.colors.INTERACTIVE_TEXT_ACTIVE.css
         })
       })
     })]
@@ -156,18 +156,18 @@ function A(e) {
 }
 
 function k(e, t, n) {
-  var r, l;
+  var r, a;
   if (I.Z.isNotificationDisabled(_.n0.StreamWatchNudge)) return null;
-  let a = O.default.getUser(e);
-  if (null == a) return null;
+  let l = O.default.getUser(e);
+  if (null == l) return null;
   let {
     designVariant: u
-  } = (0, S.lj)("OverlayV3StreamWatchNudge"), p = null == n ? true : n.application_id, C = g.Z.getChannel(t), N = null != p ? d.Z.getApplication(p) : null, w = null != p ? b.Z.getDetectableGame(p) : null, T = null != p ? h.ZP.getRunningGames().find(e => e.id === p) : null, k = null != (l = null != (r = null == T ? true : T.name) ? r : null == w ? true : w.name) ? l : null == N ? true : N.name, D = (0, v.oY)(null == C ? true : C.guild_id, null == C ? true : C.id, a), {
+  } = (0, S.lj)("OverlayV3StreamWatchNudge"), p = null == n ? true : n.application_id, C = g.Z.getChannel(t), N = null != p ? d.Z.getApplication(p) : null, w = null != p ? b.Z.getDetectableGame(p) : null, T = null != p ? h.ZP.getRunningGames().find(e => e.id === p) : null, k = null != (a = null != (r = null == T ? true : T.name) ? r : null == w ? true : w.name) ? a : null == N ? true : N.name, D = (0, v.oY)(null == C ? true : C.guild_id, null == C ? true : C.id, l), {
     trackView: R,
     trackClick: L
   } = (0, j.Rg)(_.n0.StreamWatchNudge, {
     notif_type: _.n0.StreamWatchNudge,
-    notif_user_id: a.id,
+    notif_user_id: l.id,
     activity_type: null == n ? true : n.type,
     activity_name: null != k ? k : null == n ? true : n.name
   });
@@ -176,7 +176,7 @@ function k(e, t, n) {
       switch (u) {
         case S.RD.GREEN_BUTTON_WITH_TEXT:
           return (0, i.jsx)(P, {
-            user: a,
+            user: l,
             application: N,
             runningGame: T,
             username: D,
@@ -184,7 +184,7 @@ function k(e, t, n) {
           });
         case S.RD.GRAY_BUTTON_WITH_TEXT:
           return (0, i.jsx)(P, {
-            user: a,
+            user: l,
             application: N,
             runningGame: T,
             username: D,
@@ -192,7 +192,7 @@ function k(e, t, n) {
           });
         case S.RD.SINGLE_ICON_BUTTON:
           return (0, i.jsx)(A, {
-            user: a,
+            user: l,
             application: N,
             runningGame: T,
             username: D,
@@ -203,8 +203,8 @@ function k(e, t, n) {
     maxBodyLines: 1,
     onNotificationClick: (n, i) => {
       L("overlay-watch-stream");
-      let [r] = y.Z.getWidgetsByType(Z.Odu.GO_LIVE), l = f.Z.getStreamParticipants(t).find(t => t.user.id === e);
-      null != r && null != l && ((0, x.gI)(l.stream, m.L.COVER), (0, c.rn)(l.stream, {
+      let [r] = y.Z.getWidgetsByType(Z.Odu.GO_LIVE), a = f.Z.getStreamParticipants(t).find(t => t.user.id === e);
+      null != r && null != a && ((0, x.gI)(a.stream, m.L.COVER), (0, c.rn)(a.stream, {
         forceMultiple: true,
         noFocus: true
       }), (0, o.xh)(r.id, {
@@ -212,7 +212,7 @@ function k(e, t, n) {
       }), (0, o.n6)(r.id), (0, E.Ws)(Z.Odu.GO_LIVE, {
         type: E.Qu.GO_LIVE,
         value: E.bk.ACCEPT_REQUEST,
-        userId: l.user.id
+        userId: a.user.id
       })), setTimeout(() => {
         s.Z.updateNotificationStatus(i)
       }, 300)

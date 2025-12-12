@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 536527, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  r: () => E
+  r: () => g
 });
 var Chunk442837 = require("./442837.js"),
   Chunk493773 = require("./493773.js"),
@@ -14,11 +14,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let g = (0, Chunk972959.H)(() => ({
+let E = (0, Chunk972959.H)(() => ({
     syncEnabled: null,
     updateTimeout: null
   })),
-  E = (0, Chunk509613.qs)(Chunk313789.n.SYNC_FORCED_COLORS, {
+  g = (0, Chunk509613.qs)(Chunk313789.n.SYNC_FORCED_COLORS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.cguiec),
     useSubtitle: () => Chunk388032.intl.format(Chunk388032.t.GwEVE2, {
       learnMoreLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.FORCED_COLORS)
@@ -27,31 +27,31 @@ let g = (0, Chunk972959.H)(() => ({
       var t;
       let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.syncForcedColors);
       return (0, Chunk493773.ZP)(() => {
-        g.setState({
+        E.setState({
           syncEnabled: Chunk607070.Z.syncForcedColors
         })
-      }), null != (t = g.useState(t => t.syncEnabled)) ? module : exports
+      }), null != (t = E.useState(t => t.syncEnabled)) ? module : exports
     },
     setValue: t => {
       let {
         updateTimeout: e
-      } = g.getState();
+      } = E.getState();
       if (null != e) {
-        clearTimeout(e), g.setState({
+        clearTimeout(e), E.setState({
           syncEnabled: t,
           updateTimeout: null
         });
         return
       }
-      if (t === r.Z.syncForcedColors) return void g.setState({
+      if (t === r.Z.syncForcedColors) return void E.setState({
         syncEnabled: t
       });
       let n = setTimeout(() => {
-        (0, u.qz)(t), g.setState({
+        (0, u.qz)(t), E.setState({
           updateTimeout: null
         })
       }, 150);
-      g.setState({
+      E.setState({
         syncEnabled: t,
         updateTimeout: n
       })

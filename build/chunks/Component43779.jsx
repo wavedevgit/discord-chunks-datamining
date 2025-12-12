@@ -1,7 +1,7 @@
 /** Chunk was on 23736 **/
 /** chunk id: 43779, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => O
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,10 +26,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk642145 = require("./642145.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk710294 = require("./710294.js");
-let O = async () => await require.e("67963").then(require.t.bind(require, 145193, 19));
+let T = async () => await require.e("67963").then(require.t.bind(require, 145193, 19));
 
-function T(e) {
-  var t, n, i, T, P;
+function O(e) {
+  var t, n, i, O, P;
   let {
     quest: w,
     questContent: I,
@@ -48,7 +48,7 @@ function T(e) {
     expansionSpring: z
   } = (0, c.q_F)({
     expansionSpring: +!!k,
-    config: (T = function(e) {
+    config: (O = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           a = Object.keys(n);
@@ -67,7 +67,7 @@ function T(e) {
       return e
     }({}, _.Y), P = P = {
       clamp: true
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(T, Object.getOwnPropertyDescriptors(P)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(O, Object.getOwnPropertyDescriptors(P)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var a = Object.getOwnPropertySymbols(e);
@@ -75,38 +75,38 @@ function T(e) {
       }
       return n
     })(Object(P)).forEach(function(e) {
-      Object.defineProperty(T, e, Object.getOwnPropertyDescriptor(P, e))
-    }), T)
-  }), q = (null == (n = w.userStatus) ? true : n.completedAt) != null, K = (null == (i = w.userStatus) ? true : i.claimedAt) != null, Y = (0, x.xN)(w.config), Q = (0, x.LM)(w.config), {
+      Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(P, e))
+    }), O)
+  }), K = (null == (n = w.userStatus) ? true : n.completedAt) != null, q = (null == (i = w.userStatus) ? true : i.claimedAt) != null, Q = (0, x.xN)(w.config), Y = (0, x.LM)(w.config), {
     completedRatio: X,
     completedRatioDisplay: J
-  } = (0, h.I)(w), $ = (0, p.Bd)(w, L, M), ee = r.useMemo(() => K && Y ? S.intl.format(S.t["8Op4c4"], {
+  } = (0, h.I)(w), $ = (0, p.Bd)(w, L, M), ee = r.useMemo(() => q && Q ? S.intl.format(S.t["8Op4c4"], {
     balanceHook: () => (0, a.jsxs)(N, {
       questId: w.id,
       children: [(0, a.jsx)(m.Z, {
         shouldUseThemeColor: true,
         className: E.orbsBalanceIcon,
         customSize: 14
-      }), Q]
+      }), Y]
     }, w.id)
-  }) : K ? (0, a.jsx)(N, {
+  }) : q ? (0, a.jsx)(N, {
     questId: w.id,
     children: U
-  }) : Y ? S.intl.format(S.t.ro1sze, {
+  }) : Q ? S.intl.format(S.t.ro1sze, {
     balanceHook: () => (0, a.jsxs)(N, {
       questId: w.id,
       children: [(0, a.jsx)(m.Z, {
         shouldUseThemeColor: true,
         className: E.orbsBalanceIcon,
         customSize: 14
-      }), Q]
+      }), Y]
     }, w.id)
   }) : S.intl.format(S.t["0IUT4Y"], {
     rewardWithArticleHook: () => (0, a.jsx)(N, {
       questId: w.id,
       children: B
     }, w.id)
-  }), [U, K, B, w.id, Q, Y]), et = r.useMemo(() => {
+  }), [U, q, B, w.id, Y, Q]), et = r.useMemo(() => {
     if (null != $) return (0, a.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -128,12 +128,12 @@ function T(e) {
         height: 80,
         children: (0, a.jsxs)("div", {
           className: E.assetWrapper,
-          children: [!K && q && (0, a.jsx)("div", {
+          children: [!q && K && (0, a.jsx)("div", {
             className: E.completionAnimation
           }), F ? (0, a.jsxs)("div", {
             className: E.progressWrapper,
-            children: [q && (0, a.jsx)(c.Fmz, {
-              importData: O,
+            children: [K && (0, a.jsx)(c.Fmz, {
+              importData: T,
               className: E.confetti,
               loop: false,
               autoplay: false,

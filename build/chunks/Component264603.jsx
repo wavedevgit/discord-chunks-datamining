@@ -1,7 +1,7 @@
 /** Chunk was on 23736 **/
 /** chunk id: 264603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk246992 = require("./246992.js"),
   Chunk663618 = require("./663618.js"),
   Chunk17827 = require("./17827.js");
-let O = [{
+let T = [{
   label: "Unset",
   value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET
 }, {
@@ -40,14 +40,14 @@ let O = [{
   value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
 }];
 
-function T() {
+function O() {
   let e = Chunk473749.useRef(null),
     {
       analyticsLocations: t
     } = (0, Chunk906732.ZP)(Chunk100527.Z.DEV_TOOLS),
     n = Chunk695346.JG.useSetting(),
     [i, o] = Chunk473749.useState(""),
-    T = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
+    O = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
     N = (0, Chunk835473.q)(Chunk120356),
     P = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
       var e, t;
@@ -83,7 +83,7 @@ function T() {
         children: "Settings"
       }), (0, Chunk54381.jsx)(Chunk199849.B6, {
         label: "Receive DMs In Game",
-        options: O,
+        options: T,
         isSelected: e => e === n,
         select: Chunk695346.JG.updateSetting,
         popoutLayerContext: Chunk246992.O$,
@@ -98,10 +98,10 @@ function T() {
         label: "Application ID",
         value: Chunk120356,
         onChange: Chunk524437
-      }), null != T && null != T.id ? (0, Chunk54381.jsx)(Chunk481060.Button, {
-        onClick: () => Chunk524437(T.id),
+      }), null != O && null != O.id ? (0, Chunk54381.jsx)(Chunk481060.Button, {
+        onClick: () => Chunk524437(O.id),
         variant: "primary",
-        text: "Use detected game: ".concat(T.name, " (").concat(T.id, ")")
+        text: "Use detected game: ".concat(O.name, " (").concat(O.id, ")")
       }) : null, (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Application Name: ", null != N ? N.name : "N/A"]

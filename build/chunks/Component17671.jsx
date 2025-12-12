@@ -36,21 +36,21 @@ function w(e) {
     transitionState: n,
     onClose: l,
     guildId: w
-  } = e, I = (0, d.Dt)(), S = (0, c.e7)([p.Z], () => p.Z.getGuild(w)), D = (0, x.Z)(null == S ? true : S.id), L = (0, b.ZP)(w), T = i.useRef(m.ZP.ackMessageId(w, P.W.GUILD_EVENT)), M = (0, C.Z)();
+  } = e, I = (0, d.Dt)(), S = (0, c.e7)([m.Z], () => m.Z.getGuild(w)), D = (0, f.Z)(null == S ? true : S.id), T = (0, b.ZP)(w), G = i.useRef(h.ZP.ackMessageId(w, k.W.GUILD_EVENT)), L = (0, Z.Z)();
   return i.useEffect(() => {
-    L.forEach(e => f.Z.getGuildEventUserCounts(w, e.id, [])), f.Z.getGuildEventsForCurrentUser(w)
-  }, [L, w]), (0, u.ZP)(() => {
-    h.default.track(N.rMx.OPEN_MODAL, {
-      type: Z.zw,
+    T.forEach(e => x.Z.getGuildEventUserCounts(w, e.id, [])), x.Z.getGuildEventsForCurrentUser(w)
+  }, [T, w]), (0, u.ZP)(() => {
+    p.default.track(N.rMx.OPEN_MODAL, {
+      type: y.zw,
       guild_id: w,
-      guild_events_count: L.length
+      guild_events_count: T.length
     })
   }), i.useEffect(() => {
-    a()(L).map(e => e.creator_id).filter(v.lm).uniq().forEach(e => {
+    a()(T).map(e => e.creator_id).filter(v.lm).uniq().forEach(e => {
       g.Z.requestMember(w, e)
     })
-  }, [w, L]), i.useEffect(() => {
-    null != w && (0, s.Ju)(w, P.W.GUILD_EVENT)
+  }, [w, T]), i.useEffect(() => {
+    null != w && (0, s.Ju)(w, k.W.GUILD_EVENT)
   }, [w]), (0, r.jsxs)(o.Y0X, {
     size: o.CgR.MEDIUM,
     transitionState: n,
@@ -67,9 +67,9 @@ function w(e) {
       }), (0, r.jsx)(o.Heading, {
         id: I,
         variant: "heading-md/semibold",
-        children: L.length > 0 ? k.intl.formatToPlainString(k.t.IBdqSu, {
-          number: L.length
-        }) : k.intl.string(k.t.tlopTM)
+        children: T.length > 0 ? P.intl.formatToPlainString(P.t.IBdqSu, {
+          number: T.length
+        }) : P.intl.string(P.t.tlopTM)
       }), D && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: E.divider,
@@ -114,14 +114,14 @@ function w(e) {
                   Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
                 }), t))
               }
-            }, M)
+            }, L)
           },
-          text: k.intl.string(k.t["60lJ0C"])
+          text: P.intl.string(P.t["60lJ0C"])
         })]
       }), (0, r.jsx)(o.P3F, {
         onClick: l,
         className: E.iconButton,
-        "aria-label": k.intl.string(k.t.cpT0Cq),
+        "aria-label": P.intl.string(P.t.cpT0Cq),
         children: (0, r.jsx)(o.Dio, {
           size: "md",
           color: "currentColor",
@@ -131,11 +131,11 @@ function w(e) {
     }), (0, r.jsx)(o.hzk, {
       className: E.content,
       "data-migration-pending": true,
-      children: L.length > 0 ? L.map(e => (0, r.jsx)(O.Z, {
+      children: T.length > 0 ? T.map(e => (0, r.jsx)(C.Z, {
         guildEvent: e,
         onActionTaken: l,
-        isNew: null != T.current && j.default.compare(e.id, T.current) > 0
-      }, e.id)) : (0, r.jsx)(y.Z, {
+        isNew: null != G.current && j.default.compare(e.id, G.current) > 0
+      }, e.id)) : (0, r.jsx)(O.Z, {
         guildId: w,
         onClose: l
       })
