@@ -454,55 +454,58 @@ function e4(e) {
     play: c,
     events: {
       onMouseEnter: u,
-      onMouseLeave: d
+      onMouseLeave: p
     }
-  } = s, p = eK(s.events, ["onMouseEnter", "onMouseLeave"]), [g, h] = i.useState(false), m = i.useCallback(() => {
-    h(false)
-  }, []), E = i.useCallback(e => {
+  } = s, g = eK(s.events, ["onMouseEnter", "onMouseLeave"]), [h, m] = i.useState(false), [E, O] = (0, U.US)([d.z.GAME_SHOP_RTC_GIFTING_NEW_BADGE], true, true), v = i.useCallback(() => {
+    m(false)
+  }, []), y = i.useCallback(e => {
     let {
       closePopout: n
     } = e;
     return (0, r.jsx)($.Z, {
       channel: t,
       closePopout: n,
-      isHovered: g
+      isHovered: h
     })
-  }, [t, g]), O = i.useCallback(() => {
-    c(), g ? h(false) : h(true), (0, R.v)(l, R.d.GIFTING)
-  }, [l, c, g]);
+  }, [t, h]), I = i.useCallback(() => {
+    c(), h ? m(false) : m(true), (0, R.v)(l, R.d.GIFTING), E === d.z.GAME_SHOP_RTC_GIFTING_NEW_BADGE && O(eG.L.TAKE_ACTION)
+  }, [l, c, h, E, O]);
   return (0, r.jsx)(b.aML, {
     "data-migration-pending": true,
     text: eV.intl.string(eV.t.PEjaCx),
-    shouldShow: !g,
+    shouldShow: !h,
     onTooltipShow: u,
-    onTooltipHide: d,
+    onTooltipHide: p,
     children: e => (0, r.jsx)(b.yRy, {
       targetElementRef: n,
-      shouldShow: g,
+      shouldShow: h,
       animation: b.yRy.Animation.FADE,
       animationPosition: "top",
       position: "top",
       align: "left",
-      spacing: 16,
-      onRequestClose: m,
-      renderPopout: E,
-      children: () => (0, r.jsx)(_.zx, eq(eW(eq(eW({
+      onRequestClose: v,
+      renderPopout: y,
+      children: () => (0, r.jsxs)(_.zx, eq(eW(eq(eW({
         "data-migration-pending": true
       }, e), {
         fullWidth: true,
         size: _.zx.Sizes.MEDIUM,
         buttonRef: n
-      }), p), {
-        onClick: O,
+      }), g), {
+        onClick: I,
         className: a()(eF.button, eF.buttonColor),
         innerClassName: eF.buttonContents,
         wrapperClassName: eF.button,
         focusProps: eQ,
-        children: (0, r.jsx)(o, {
+        children: [E === d.z.GAME_SHOP_RTC_GIFTING_NEW_BADGE && (0, r.jsx)(P.r, {
+          top: false,
+          right: false,
+          alert: true
+        }), (0, r.jsx)(o, {
           size: "md",
           color: "currentColor",
           className: eF.buttonIcon
-        })
+        })]
       }))
     })
   })
@@ -944,7 +947,7 @@ let e7 = (0, Chunk730749.Z)(function(e) {
         voiceStates: T,
         showVoiceStates: v,
         shouldShowVoicePanelIntroduction: g,
-        showSocialLayerStorefrontGiftingButton: R && D,
+        showSocialLayerStorefrontGiftingButton: R && D || true,
         isPrivateChannelWithEnabledActivities: L,
         analyticsLocations: Z
       })), !N && E && null != d ? (0, r.jsxs)("div", {
