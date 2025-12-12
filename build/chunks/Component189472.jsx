@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 189472, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,19 +16,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk621600 = require("./621600.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let b = e => {
+let x = e => {
   let {
     user: t,
     channelId: n,
-    reportId: b
-  } = e, x = d.Z.getDMFromUserId(t.id), h = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), f = l.useMemo(() => m.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), v = (0, i.e7)([u.ZP], () => null == x ? null : u.ZP.isChannelMuted(null, x)), [j, y] = l.useState(null != v && v), O = l.useCallback(() => {
-    null != x && (y(true), s.ZP.trackWithMetadata(g.rMx.IAR_MUTE_USER_BUTTON_CLICKED, {
+    reportId: x
+  } = e, b = d.Z.getDMFromUserId(t.id), h = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), f = l.useMemo(() => m.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), v = (0, i.e7)([u.ZP], () => null == b ? null : u.ZP.isChannelMuted(null, b)), [j, y] = l.useState(null != v && v), O = l.useCallback(() => {
+    null != b && (y(true), s.ZP.trackWithMetadata(g.rMx.IAR_MUTE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
-      report_id: b
-    }), a.Z.updateChannelOverrideSettings(null, x, {
+      report_id: x
+    }), a.Z.updateChannelOverrideSettings(null, b, {
       muted: true
     }, p.ZB.Muted), o.Z.showMuteSuccessToast(t.id, n))
-  }, [x, n, t, b]);
+  }, [b, n, t, x]);
   return (0, r.jsx)(c.JZ, {
     title: _.intl.formatToPlainString(_.t.TRp5wR, {
       username: f

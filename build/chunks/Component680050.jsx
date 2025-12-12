@@ -16,7 +16,7 @@ let m = e => {
   var t, n;
   let {
     parents: m
-  } = e, p = (0, o.PO)("share_with_parent_element"), [g, _] = l.useState(false), b = l.useCallback(() => {
+  } = e, p = (0, o.PO)("share_with_parent_element"), [g, _] = l.useState(false), x = l.useCallback(() => {
     (0, s.ty)().then(() => {
       var e, t;
       (0, a.showToast)((0, i.Y)(u.intl.formatToPlainString(u.t.wr4IT5, {
@@ -30,17 +30,17 @@ let m = e => {
     })
   }, [m]);
   if (0 === m.length || !p) return null;
-  let x = u.intl.formatToPlainString(u.t.HqyWeO, {
+  let b = u.intl.formatToPlainString(u.t.HqyWeO, {
     count: m.length,
     parent1: m[0].username,
     parent2: null == (t = m[1]) ? true : t.username,
     parent3: null == (n = m[2]) ? true : n.username
   });
   return (0, r.jsx)(d.JZ, {
-    title: x,
+    title: b,
     description: u.intl.string(u.t["5l/hlt"]),
     buttonText: g ? u.intl.string(u.t.ntuuk7) : u.intl.string(u.t["sYdX/H"]),
     buttonDisabled: g,
-    onButtonPress: b
+    onButtonPress: x
   })
 }

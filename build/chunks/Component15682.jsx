@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk481060 = require("./481060.js"),
+var Chunk793030 = require("./793030.js"),
   Chunk652339 = require("./652339.js");
 let a = e => {
     let {
@@ -16,7 +16,7 @@ let a = e => {
     } = e;
     return (0, r.jsx)("div", {
       className: i.checkboxRow,
-      children: (0, r.jsx)(l.Checkbox, {
+      children: (0, r.jsx)(l.XZJ, {
         checked: s,
         onChange: t,
         label: n,

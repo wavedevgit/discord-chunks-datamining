@@ -31,7 +31,7 @@ function h(e) {
   }), (0, r.jsx)(c.JZ, {
     title: t,
     description: n,
-    buttonText: o ? b.intl.string(b.t["h+WsPb"]) : b.intl.string(b.t.A8t4Nf),
+    buttonText: o ? x.intl.string(x.t["h+WsPb"]) : x.intl.string(x.t.A8t4Nf),
     buttonDisabled: o,
     onButtonPress: () => {
       i(), d(true), a(g.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
@@ -49,13 +49,13 @@ function f(e) {
     reportSubType: f
   } = e, v = (0, i.e7)([m.Z], () => m.Z.getChannel(n)), j = (0, p.jc)(t, null == v ? true : v.type), y = (0, g.i_)(c, f, s);
   return 0 === j.length ? null : (0, r.jsxs)("div", {
-    className: x.container,
+    className: b.container,
     children: [(0, r.jsx)(a.Heading, {
       variant: "text-sm/semibold",
-      className: x.header,
-      children: b.intl.string(b.t["1yxTIJ"])
+      className: b.header,
+      children: x.intl.string(x.t["1yxTIJ"])
     }), (0, r.jsx)("div", {
-      className: x.upsellsContainer,
+      className: b.upsellsContainer,
       children: j.map((e, n) => {
         let {
           getTitle: l,
@@ -70,7 +70,7 @@ function f(e) {
         }, n)
       })
     }), (0, r.jsx)(a.Avr, {
-      text: b.intl.string(b.t.olebGx),
+      text: x.intl.string(x.t.olebGx),
       onClick: () => {
         (0, u.openUserSettings)(d.n.CONTENT_AND_SOCIAL_PANEL, {
           section: _.oAB.CONTENT_AND_SOCIAL

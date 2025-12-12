@@ -20,9 +20,9 @@ let c = e => {
       isModeratorReport: g
     } = e,
     _ = l.useRef(null),
-    b = null != n && "cancel" !== n.type,
-    x = m && (null == n ? true : n.type) !== "done",
-    h = b || x;
+    x = null != n && "cancel" !== n.type,
+    b = m && (null == n ? true : n.type) !== "done",
+    h = x || b;
   if (l.useEffect(() => {
       if ((null == n ? true : n.type) === "submit" || (null == n ? true : n.type) === "done") {
         var e;
@@ -34,13 +34,13 @@ let c = e => {
     "data-migration-pending": true,
     direction: a.Z.Direction.HORIZONTAL,
     children: (0, r.jsxs)(i.ButtonGroup, {
-      fullWidth: x && b,
-      children: [x && (0, r.jsx)(i.Button, {
+      fullWidth: true,
+      children: [b && (0, r.jsx)(i.Button, {
         onClick: p,
         variant: "secondary",
         disabled: c,
         text: s.intl.string(s.t["13/7kX"])
-      }), b && (0, r.jsx)(i.Button, {
+      }), x && (0, r.jsx)(i.Button, {
         onClick: () => {
           null != n && u(n)
         },

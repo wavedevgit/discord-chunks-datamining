@@ -20,8 +20,8 @@ let _ = e => {
     user: t,
     channelId: n,
     reportId: _,
-    reportType: b
-  } = e, x = (0, i.e7)([u.Z], () => u.Z.isBlocked(t.id), [t.id]), h = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), f = l.useMemo(() => m.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), v = l.useCallback(() => {
+    reportType: x
+  } = e, b = (0, i.e7)([u.Z], () => u.Z.isBlocked(t.id), [t.id]), h = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), f = l.useMemo(() => m.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), v = l.useCallback(() => {
     s.ZP.trackWithMetadata(p.rMx.IAR_BLOCK_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: _
@@ -36,9 +36,9 @@ let _ = e => {
       username: f
     }),
     description: g.intl.string(g.t.G08MKu),
-    buttonText: x ? g.intl.string(g.t.ot2tSp) : g.intl.string(g.t["l+7PZY"]),
-    buttonDisabled: x,
+    buttonText: b ? g.intl.string(g.t.ot2tSp) : g.intl.string(g.t["l+7PZY"]),
+    buttonDisabled: b,
     onButtonPress: v,
-    buttonVariant: "application" === b.name && x ? "secondary" : "critical-primary"
+    buttonVariant: "application" === x.name && b ? "secondary" : "critical-primary"
   })
 }

@@ -107,7 +107,7 @@ let et = e => {
     multiSelect: ea,
     reportId: es,
     textInput: eo
-  } = e, ec = $(t, "checkbox"), ed = $(t, "text_line_resource"), eu = ee(t, "external_link"), em = ee(t, "free_text"), ep = ee(t, "dropdown"), eg = $(t, "text"), e_ = i.s.REPORT_TO_MOD.has(n.name), [eb, ex] = l.useState(false), [eh, ef] = l.useState(false), [ev, ej] = l.useState(""), [ey, eO] = l.useState(() => ({})), [eZ, eI] = l.useState(() => ({})), eC = l.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), eS = l.useCallback(e => ({
+  } = e, ec = $(t, "checkbox"), ed = $(t, "text_line_resource"), eu = ee(t, "external_link"), em = ee(t, "free_text"), ep = ee(t, "dropdown"), eg = $(t, "text"), e_ = i.s.REPORT_TO_MOD.has(n.name), [ex, eb] = l.useState(false), [eh, ef] = l.useState(false), [ev, ej] = l.useState(""), [ey, eO] = l.useState(() => ({})), [eZ, eI] = l.useState(() => ({})), eC = l.useMemo(() => "message" === n.name ? n.record.channel_id : true, [n]), eS = l.useCallback(e => ({
     nodeRef: t.id,
     destination: e,
     textInput: null != em || null != ep ? eZ : true,
@@ -148,7 +148,7 @@ let et = e => {
     }
   }, [ec]);
   let ek = l.useCallback(e => {
-      e === Q.evJ.INVALID_FORM_BODY ? ej(K.intl.string(K.t.VjAAuP)) : e_ ? ej(K.intl.string(J.default.psKFdJ)) : ej(K.intl.string(K.t.h6D8Vy))
+      e === Q.evJ.INVALID_FORM_BODY ? ej(J.intl.string(J.t.VjAAuP)) : e_ ? ej(J.intl.string(K.default.psKFdJ)) : ej(J.intl.string(J.t.h6D8Vy))
     }, [e_]),
     eE = l.useCallback(() => {
       let t = ["", e.successNodeId];
@@ -158,7 +158,7 @@ let et = e => {
         var t;
         ek(null == (t = e.body) ? true : t.code)
       }).finally(() => {
-        ex(false)
+        eb(false)
       })
     }, [e.successNodeId, eS, ei, eT, ek]),
     ew = l.useCallback(e => {
@@ -171,12 +171,12 @@ let et = e => {
           eT(["", e.target]);
           break;
         case "submit":
-          ex(true), eE()
+          eb(true), eE()
       }
     }, [el, eT, eE]),
     eM = l.useCallback(e => {
-      "Enter" !== e.key || eN || eb || null == t.button || (e.preventDefault(), ew(t.button))
-    }, [eN, eb, t.button, ew]);
+      "Enter" !== e.key || eN || ex || null == t.button || (e.preventDefault(), ew(t.button))
+    }, [eN, ex, t.button, ew]);
   l.useEffect(() => {
     t.is_auto_submit && !eh && (ef(true), ei(eS(["", t.id])))
   }, [t.is_auto_submit, eh, ei, eS, t.id]);
@@ -220,7 +220,7 @@ let et = e => {
         userId: n.user_id
       }) : null, null != $(t, "guild_preview") && "guild" === n.name ? (0, r.jsx)(S.Z, {
         guild: n.record
-      }) : null, null != $(t, "breadcrumbs") && (0, r.jsx)(x.Z, {
+      }) : null, null != $(t, "breadcrumbs") && (0, r.jsx)(b.Z, {
         isModeratorReport: e_,
         history: en
       }), function(e) {
@@ -240,7 +240,7 @@ let et = e => {
           reportId: es
         }), eL && (0, r.jsx)(U.Z, {
           parents: eU
-        }), null != $(t, "block_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name || "application" === n.name && null != n.record.bot) && (0, r.jsx)(b.Z, {
+        }), null != $(t, "block_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name || "application" === n.name && null != n.record.bot) && (0, r.jsx)(x.Z, {
           user: "application" === n.name ? n.record.bot : "user" === n.name ? n.record : n.record.author,
           channelId: eC,
           reportId: es,
@@ -311,7 +311,7 @@ let et = e => {
       })]
     }), (0, r.jsx)(g.Z, {
       button: t.button,
-      submitting: eb,
+      submitting: ex,
       disableNext: eN,
       isModeratorReport: e_,
       onClick: ew,

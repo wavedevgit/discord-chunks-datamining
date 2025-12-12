@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 157759, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,11 +17,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk944486 = require("./944486.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let x = e => {
+let b = e => {
   let {
     application: t,
     reportId: n
-  } = e, [x, h] = l.useState(false), [f, v] = l.useState(false), j = (0, i.e7)([g.Z, u.Z], () => {
+  } = e, [b, h] = l.useState(false), [f, v] = l.useState(false), j = (0, i.e7)([g.Z, u.Z], () => {
     var e;
     return null == (e = u.Z.getChannel(g.Z.getChannelId())) ? true : e.guild_id
   }), [y, O] = l.useState(null);
@@ -52,8 +52,8 @@ let x = e => {
         report_id: n
       }), null != j && null != y && o.Z.disableIntegration(j, y.id).catch(() => {
         a.Z.show({
-          title: b.intl.string(b.t.wYqMmI),
-          body: b.intl.string(b.t.A4Mnst)
+          title: x.intl.string(x.t.wYqMmI),
+          body: x.intl.string(x.t.A4Mnst)
         })
       })
     }, [t.id, j, y, n]),
@@ -64,10 +64,10 @@ let x = e => {
         r = null == t.bot || p.Z.canManageUser(_.Plq.MANAGE_GUILD, t.bot.id, e);
       return n && r
     });
-  return null != t && null != j && x && I ? (0, r.jsx)(d.JZ, {
-    title: b.intl.string(b.t["WV/CsH"]),
-    description: b.intl.string(b.t["FlcC+3"]),
-    buttonText: f ? b.intl.string(b.t.aCJlq4) : b.intl.string(b.t["6I1F3i"]),
+  return null != t && null != j && b && I ? (0, r.jsx)(d.JZ, {
+    title: x.intl.string(x.t["WV/CsH"]),
+    description: x.intl.string(x.t["FlcC+3"]),
+    buttonText: f ? x.intl.string(x.t.aCJlq4) : x.intl.string(x.t["6I1F3i"]),
     buttonDisabled: !f,
     onButtonPress: Z,
     buttonVariant: f ? "critical-primary" : "secondary"

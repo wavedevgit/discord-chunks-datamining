@@ -33,7 +33,7 @@ let f = e => {
     } = (0, m.f)(t, j, false, false, "", {
       leadingIconClass: h.attachmentIcon,
       trailingIconClass: h.attachmentIcon,
-      iconSize: b.WW
+      iconSize: x.WW
     });
     return (0, r.jsxs)("div", {
       className: h.contentContainer,
@@ -49,7 +49,7 @@ let f = e => {
     children: [(0, r.jsx)(a.Heading, {
       className: h.header,
       variant: "heading-sm/semibold",
-      children: x.intl.string(x.t.iouM3a)
+      children: b.intl.string(b.t.iouM3a)
     }), (0, r.jsx)(a.Ttm, {
       className: h.messagePreviewContainer,
       children: (0, r.jsx)(c.Z, {

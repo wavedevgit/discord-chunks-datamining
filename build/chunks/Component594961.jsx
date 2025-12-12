@@ -2,9 +2,8 @@
 /** chunk id: 594961, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  K: () => b,
-  V: () => E,
-  default: () => j
+  KS: () => j,
+  V4: () => E
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -44,23 +43,23 @@ var E = ((r = {}).SELECTION = "selection", r.DSA = "dsa", r.TIDA = "tida", r);
 let v = e => {
     let {
       transitionState: t,
-      onClose: r
-    } = e, [E, v] = s.useState(true), [j, b] = s.useState([]), [I, N] = s.useState("selection"), y = (0, l.e7)([g.default], () => g.default.isAuthenticated()), S = (0, l.e7)([u.Z], () => u.Z.hasLoadedExperiments), C = s.useCallback(() => {
+      onClose: n
+    } = e, [r, E] = s.useState(true), [j, b] = s.useState([]), [I, N] = s.useState("selection"), y = (0, l.e7)([g.default], () => g.default.isAuthenticated()), S = (0, l.e7)([u.Z], () => u.Z.hasLoadedExperiments), C = s.useCallback(() => {
       (0, h.Jj)().then(e => {
         let {
           body: {
             capabilities: t
           }
         } = e;
-        v(false), b(t)
+        E(false), b(t)
       }).catch(() => {
-        v(false), b([])
+        E(false), b([])
       })
     }, []);
     s.useEffect(() => {
-      y ? (v(true), c.k({
+      y ? (E(true), c.k({
         withAnalyticsToken: true
-      }).then(() => C()).catch(() => v(false))) : C()
+      }).then(() => C()).catch(() => E(false))) : C()
     }, [y, C]), s.useEffect(() => {
       (async () => {
         S || (await o.Z.getLocationMetadata(), o.Z.getExperiments())
@@ -71,10 +70,10 @@ let v = e => {
       A = O.length > 0,
       Z = A && T;
     s.useEffect(() => {
-      !E && S && !Z && (A ? N("dsa") : T && N("tida"))
-    }, [E, S, Z, A, T]), s.useEffect(() => {
-      E || !S || A || T || r()
-    }, [E, S, A, T, r]);
+      !r && S && !Z && (A ? N("dsa") : T && N("tida"))
+    }, [r, S, Z, A, T]), s.useEffect(() => {
+      r || !S || A || T || n()
+    }, [r, S, A, T, n]);
     let P = s.useCallback(e => {
         N(e)
       }, []),
@@ -82,12 +81,7 @@ let v = e => {
         N("selection")
       }, []),
       L = s.useCallback(() => {
-        (0, a.ZDy)(async () => {
-          let {
-            default: e
-          } = await Promise.resolve().then(n.bind(n, 594961));
-          return t => (0, i.jsx)(e, x({}, t))
-        }, {
+        (0, a.ZDy)(() => Promise.resolve(e => (0, i.jsx)(v, x({}, e))), {
           dismissable: false
         })
       }, []),
@@ -103,7 +97,7 @@ let v = e => {
       children: (0, i.jsx)(a.hzk, {
         className: _.container,
         "data-migration-pending": true,
-        children: E || !S ? (0, i.jsx)(a.Kqy, {
+        children: r || !S ? (0, i.jsx)(a.Kqy, {
           gap: 16,
           align: "center",
           justify: "center",
@@ -127,7 +121,7 @@ let v = e => {
               onBack: Z ? R : true,
               dsaCapabilities: O,
               renderFooter: D,
-              onClose: r,
+              onClose: n,
               onReopen: L
             })
           }), (0, i.jsx)(a.Mi4, {
@@ -136,7 +130,7 @@ let v = e => {
               showBackButton: Z,
               onBack: Z ? R : true,
               renderFooter: D,
-              onClose: r,
+              onClose: n,
               onReopen: L
             })
           })]
@@ -144,8 +138,7 @@ let v = e => {
       })
     })
   },
-  j = v,
-  b = () => (Chunk473749.useEffect(() => {
+  j = () => (Chunk473749.useEffect(() => {
     (0, Chunk481060.ZDy)(() => Promise.resolve(e => (0, i.jsx)(v, x({}, e))), {
       dismissable: false
     })

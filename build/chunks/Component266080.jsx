@@ -20,7 +20,7 @@ let m = e => {
   l.useEffect(() => {
     p(!_)
   }, [_]);
-  let b = l.useCallback(() => {
+  let x = l.useCallback(() => {
     p(true), a.ZP.trackWithMetadata(d.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
       guild_id: t,
       report_id: n
@@ -43,7 +43,7 @@ let m = e => {
           name: g.name
         }),
         confirmText: u.intl.string(u.t.J2TBi3),
-        onConfirm: b
+        onConfirm: x
       })
     }
   })

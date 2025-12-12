@@ -18,7 +18,7 @@ let m = e => {
       child: t,
       onClick: n,
       nodeMap: l
-    } = e, [m, p] = t, g = (0, a.e7)([o.ZP], () => o.ZP.get("iar_show_report_sub_type_labels")), _ = l[p], b = null == _ ? true : _.report_type;
+    } = e, [m, p] = t, g = (0, a.e7)([o.ZP], () => o.ZP.get("iar_show_report_sub_type_labels")), _ = l[p], x = null == _ ? true : _.report_type;
     return (0, r.jsxs)(s.P3F, {
       className: i()(u.childButton, d.listElement),
       onClick: () => n(t),
@@ -28,11 +28,11 @@ let m = e => {
           className: u.childText,
           variant: "text-md/semibold",
           children: m
-        }), g && null != b && (0, r.jsx)(s.Text, {
+        }), g && null != x && (0, r.jsx)(s.Text, {
           className: u.debugText,
           variant: "text-xs/normal",
           color: "text-muted",
-          children: b
+          children: x
         })]
       }), (0, r.jsx)(c.Z, {
         className: u.childIcon,

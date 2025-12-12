@@ -16,15 +16,16 @@ let u = e => {
       data: {
         title: t,
         subtitle: n,
-        placeholder: u,
-        rows: m,
-        character_limit: p,
-        pattern: g
+        description: u,
+        placeholder: m,
+        rows: p,
+        character_limit: g,
+        pattern: _
       },
-      onChange: _,
+      onChange: x,
       initialText: b,
-      isRequired: x
-    } = e, h = l.useMemo(() => {
+      isRequired: h
+    } = e, f = l.useMemo(() => {
       var e, t;
       return a.Z.reactParserFor((e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -55,52 +56,60 @@ let u = e => {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e))
-    }, []), [f, v] = l.useState(""), [j, y] = l.useState(null);
+    }, []), [v, j] = l.useState(""), [y, O] = l.useState(null);
     l.useEffect(() => {
       var e;
-      v(null != (e = null == b ? true : b.value) ? e : "")
+      j(null != (e = null == b ? true : b.value) ? e : "")
     }, [b]);
-    let O = l.useCallback(e => {
-      let t = null != g ? new RegExp(g) : null;
-      null == t || t.test(e) ? null != e && (y(null), v(e), _({
+    let Z = l.useCallback(e => {
+      let t = null != _ ? new RegExp(_) : null;
+      null == t || t.test(e) ? null != e && (O(null), j(e), x({
         value: e,
         isValid: true
-      })) : (y(o.intl.string(o.t["24xrGb"])), _({
+      })) : (O(o.intl.string(o.t["24xrGb"])), x({
         value: e,
         isValid: false
       }))
-    }, [_, g]);
+    }, [x, _]);
     return (0, r.jsxs)("div", {
       className: d.marginBottom8,
-      children: [null != t && (0, r.jsx)("div", {
+      children: [(0, r.jsxs)("div", {
         className: d.marginBottom8,
-        children: (0, r.jsxs)(i.Text, {
+        children: [null != t && (0, r.jsxs)(i.Text, {
           variant: "text-sm/bold",
-          children: [t, x && (0, r.jsx)("span", {
+          children: [t, h && (0, r.jsx)("span", {
             className: c.required,
             children: "*"
           })]
-        })
-      }), 1 === m ? (0, r.jsx)(i.oil, {
-        maxLength: p,
-        onChange: O,
-        value: f,
-        error: j,
-        placeholder: u,
+        }), null != u && (0, r.jsx)("div", {
+          className: d.marginTop4,
+          children: (0, r.jsx)(i.Text, {
+            variant: "text-sm/normal",
+            color: "text-muted",
+            children: u
+          })
+        })]
+      }), 1 === p ? (0, r.jsx)(i.oil, {
+        maxLength: g,
+        onChange: Z,
+        value: v,
+        error: y,
+        placeholder: m,
         autoFocus: true
       }) : (0, r.jsx)(i.Kx8, {
-        maxLength: p,
-        onChange: O,
-        value: f,
-        error: j,
-        rows: m,
-        placeholder: u,
+        maxLength: g,
+        onChange: Z,
+        value: v,
+        error: y,
+        rows: p,
+        placeholder: m,
         autoFocus: true
       }), null != n && (0, r.jsx)("div", {
         className: d.marginTop4,
         children: (0, r.jsx)(i.Text, {
-          variant: "text-sm/normal",
-          children: h(n)
+          variant: "text-xs/normal",
+          color: "text-muted",
+          children: f(n)
         })
       })]
     })

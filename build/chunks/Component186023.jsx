@@ -75,7 +75,7 @@ let h = e => {
       }), r));
       if (D([...M, e]), null != c.key && (null == v || v(c.key)), k(true), w(true), t.name === p.b.MESSAGE || t.name === p.b.FIRST_DM) {
         let e = t.record.id;
-        o.ZP.trackWithMetadata(b.rMx.IAR_NAVIGATE, {
+        o.ZP.trackWithMetadata(x.rMx.IAR_NAVIGATE, {
           message_id: e,
           content_type: t.name,
           report_sub_type: c.report_type,
@@ -98,7 +98,7 @@ let h = e => {
         i = null != (n = null == l ? true : l.nodeRef) ? n : I;
       if (t.name === p.b.MESSAGE || t.name === p.b.FIRST_DM) {
         let e = t.record.id;
-        o.ZP.trackWithMetadata(b.rMx.IAR_NAVIGATE, {
+        o.ZP.trackWithMetadata(x.rMx.IAR_NAVIGATE, {
           message_id: e,
           content_type: t.name,
           report_sub_type: Z[i].report_type,
@@ -139,7 +139,7 @@ let h = e => {
       children: F.map(e => (0, r.jsx)(a.Mi4, {
         id: e.id,
         children: (0, r.jsx)("div", {
-          className: x.slideContainer,
+          className: b.slideContainer,
           children: (0, r.jsx)(_.Z, {
             node: e,
             reportType: t,
