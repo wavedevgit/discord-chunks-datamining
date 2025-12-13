@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk112456 = require("./112456.js"),
   l = require.n(Chunk112456),
   Chunk226961 = require("./226961.js"),
-  Chunk706619 = require("./706619.jsx"),
+  Chunk392023 = require("./392023.jsx"),
   Chunk206314 = require("./206314.jsx");
 let d = {
   accelerateRate: "Accelerate Rate",

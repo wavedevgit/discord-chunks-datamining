@@ -1,15 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 467721, original params: e,t,n (module,exports,re quire) **/
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var Chunk429783 = require("./429783.js");
-Object.keys(Chunk429783).forEach(function(e) {
-  "default" !== e && Object.defineProperty(t, e, {
-    enumerable: true,
-    get: function() {
-      return r[e]
-    }
-  })
-})
+/** Chunk was on 226 **/
+/** chunk id: 467721, original params: t,e,s (module,exports,require) **/
+module.exports = {
+  splash: "_15293d44d152f857-splash",
+  gameIcon: "_15293d44d152f857-gameIcon",
+  gameName: "_15293d44d152f857-gameName",
+  installSize: "_15293d44d152f857-installSize",
+  divider: "_15293d44d152f857-divider",
+  selector: "_15293d44d152f857-selector",
+  terms: "_15293d44d152f857-terms"
+}
