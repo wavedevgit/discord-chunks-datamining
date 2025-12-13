@@ -23,7 +23,7 @@ function _(e) {
     themeType: n
   } = (0, i.z)(), _ = (0, r.Z)({
     userId: e.user.id,
-    section: d.oh.ACTIVITY,
+    tabSection: d.oh.ACTIVITY,
     label: p.intl.string(p.t.pD1L1u),
     onAction: () => null == t ? true : t({
       action: "PRESS_VIEW_ALL_ACTIVITY_MENU_ITEM"

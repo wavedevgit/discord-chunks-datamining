@@ -63,9 +63,7 @@ let P = e => {
       }
       return e
     }({}, I.fH), a = a = {
-      name: A.intl.string(A.t.bfXHLB),
-      summary: A.intl.string(A.t.MWDrou),
-      title: A.intl.string(A.t.hhOtGl)
+      name: A.intl.string(A.t.bfXHLB)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

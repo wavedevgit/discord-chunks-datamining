@@ -72,7 +72,7 @@ function P(e) {
     }), (0, r.jsx)(I.Z, {
       user: t,
       onOpenProfile: e => null == D ? true : D({
-        section: e
+        tabSection: e
       })
     }), (0, r.jsxs)("div", {
       className: A.buttons,

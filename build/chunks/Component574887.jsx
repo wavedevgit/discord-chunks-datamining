@@ -29,7 +29,7 @@ function I(e) {
     account: t,
     locale: i,
     userId: o
-  } = e, r = null != (n = t.metadata) ? n : {}, x = (0, f.FI)(r[v.PC.CREATED_AT], i), I = s.Z.get((0, u.rR)(t.type));
+  } = e, r = null != (n = t.metadata) ? n : {}, x = (0, f.FI)(r[b.PC.CREATED_AT], i), I = s.Z.get((0, u.rR)(t.type));
   return (0, l.jsxs)("li", {
     className: g.connection,
     children: [(0, l.jsx)(a.u, {
@@ -64,12 +64,12 @@ function I(e) {
             useDefaultUnderlineStyles: false,
             "aria-label": (null == I ? true : I.name) != null ? "".concat(I.name, ", ").concat(t.name, ", ").concat(j.intl.string(j.t.q5jLJB)) : "".concat(t.name, ", ").concat(j.intl.string(j.t.q5jLJB)),
             onClick: e => {
-              (0, d.yw)(b.rMx.CONNECTED_ACCOUNT_VIEWED, {
+              (0, d.yw)(v.rMx.CONNECTED_ACCOUNT_VIEWED, {
                 platform_type: t.type,
                 other_user_id: o
               }), (0, h.q)({
                 href: n,
-                trusted: (null == I ? true : I.type) !== b.ABu.DOMAIN
+                trusted: (null == I ? true : I.type) !== v.ABu.DOMAIN
               }, e)
             },
             children: (0, l.jsxs)("div", {
@@ -96,7 +96,7 @@ function I(e) {
         })]
       }), (0, l.jsx)("div", {
         className: g.metadata,
-        children: t.type === b.ABu.REDDIT ? (0, m.oP)(r) : t.type === b.ABu.STEAM ? (0, m.Dq)(r) : t.type === b.ABu.BLUESKY || t.type === b.ABu.MASTODON || t.type === b.ABu.TWITTER ? (0, m.rJ)(r) : t.type === b.ABu.PAYPAL ? (0, m.li)(r) : t.type === b.ABu.EBAY ? (0, m.ul)(r) : t.type === b.ABu.TIKTOK ? (0, m.hf)(r) : null
+        children: t.type === v.ABu.REDDIT ? (0, m.oP)(r) : t.type === v.ABu.STEAM ? (0, m.Dq)(r) : t.type === v.ABu.BLUESKY || t.type === v.ABu.MASTODON || t.type === v.ABu.TWITTER ? (0, m.rJ)(r) : t.type === v.ABu.PAYPAL ? (0, m.li)(r) : t.type === v.ABu.EBAY ? (0, m.ul)(r) : t.type === v.ABu.TIKTOK ? (0, m.hf)(r) : null
       })]
     })]
   })

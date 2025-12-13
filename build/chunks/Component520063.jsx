@@ -54,11 +54,11 @@ function p(e, n, p) {
   let P = i.useMemo(() => ({
     [n]: [e.id]
   }), [n, e.id]);
-  (0, u.$)(P, "useThreadAdminActionItems"), (0, r.e7)([f.Z], () => f.Z.getGuildVersion(n), [n]);
+  (0, o.$)(P, "useThreadAdminActionItems"), (0, r.e7)([f.Z], () => f.Z.getGuildVersion(n), [n]);
   let j = (0, r.e7)([g.Z], () => g.Z.getChannel(p)),
     v = (0, r.e7)([Z.Z], () => Z.Z.getGuild(n), [n]),
     N = (0, r.e7)([b.default], () => b.default.getCurrentUser()),
-    y = (0, o.Z)(j, "Context Menu"),
+    y = (0, u.Z)(j, "Context Menu"),
     x = (0, c.yw)(null == j ? true : j.id);
   return (null == N ? true : N.id) === e.id ? [y] : null == v || null == j || null == N ? [] : [x ? (0, l.jsx)(a.sNh, {
     id: "remove",

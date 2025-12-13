@@ -63,8 +63,8 @@ function g(e, t) {
 async function E(e) {
   var t, {
       userId: a,
-      section: o,
-      subsection: f,
+      tabSection: o,
+      scrollTarget: f,
       guildId: m,
       channelId: E,
       showGuildProfile: b = true,
@@ -72,20 +72,20 @@ async function E(e) {
       customStatusPrompt: O,
       disableActionsForPreview: v = false
     } = e,
-    S = _(e, ["userId", "section", "subsection", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]);
+    S = _(e, ["userId", "tabSection", "scrollTarget", "guildId", "channelId", "showGuildProfile", "appContext", "customStatusPrompt", "disableActionsForPreview"]);
   let I = l.default.getUser(a);
   if (null == I) return;
   let T = l.default.getCurrentUser();
   if (null == T) return;
   let C = g(a, b ? m : true);
   h.add(await (0, i.ZDy)(async () => {
-    let e = (await Promise.all([n.e("61924"), n.e("74330"), n.e("39380"), n.e("62880"), n.e("85032"), n.e("93979")]).then(n.bind(n, 866035))).default;
+    let e = (await Promise.all([n.e("61924"), n.e("74330"), n.e("62880"), n.e("39380"), n.e("85032"), n.e("93979")]).then(n.bind(n, 866035))).default;
     return t => (0, r.jsx)(e, p({
       user: I,
       currentUser: T,
       guildId: m,
-      initialSection: o,
-      initialSubsection: f,
+      initialTabSection: o,
+      initialScrollTarget: f,
       channelId: E,
       showGuildProfile: b,
       customStatusPrompt: O,

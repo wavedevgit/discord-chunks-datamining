@@ -251,7 +251,7 @@ let W = function(i) {
   }), z = s.useCallback(() => {
     (0, I.openUserProfileModal)({
       userId: e.id,
-      section: k.oh.WISHLIST
+      tabSection: k.oh.WISHLIST
     })
   }, [e.id]), F = R[s.useMemo(() => j >= L.zL ? "FULL_WISHLIST" : j > 0 ? "MIXED" : c.length > 0 && c.every(i => {
     let {

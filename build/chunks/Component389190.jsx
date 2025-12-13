@@ -23,9 +23,9 @@ function x(e) {
     channelId: x,
     onClose: h
   } = e, {
-    mutualFriends: b
+    mutualFriends: v
   } = (0, s.Z)(n), {
-    analyticsLocations: v
+    analyticsLocations: b
   } = (0, a.ZP)(), {
     context: j,
     trackUserProfileAction: g
@@ -35,10 +35,10 @@ function x(e) {
   }, [n.id, I]), (0, l.jsx)(o.zJl, {
     className: p.listScroller,
     fade: true,
-    children: null == b ? (0, l.jsx)("div", {
+    children: null == v ? (0, l.jsx)("div", {
       className: p.empty,
       children: (0, l.jsx)(o.$jN, {})
-    }) : 0 === b.length ? (0, l.jsxs)("div", {
+    }) : 0 === v.length ? (0, l.jsxs)("div", {
       className: p.empty,
       children: [(0, l.jsx)("div", {
         className: p.emptyIconFriends
@@ -46,7 +46,7 @@ function x(e) {
         className: p.emptyText,
         children: m.intl.string(m.t["/5p4gx"])
       })]
-    }) : b.map(e => {
+    }) : v.map(e => {
       let {
         key: n,
         user: i,
@@ -80,7 +80,7 @@ function x(e) {
             return e
           }({}, j), t = t = {
             userId: e,
-            sourceAnalyticsLocations: v
+            sourceAnalyticsLocations: b
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
             var t = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

@@ -31,50 +31,49 @@ function O(e) {
     user: n,
     currentUser: t,
     guildId: O,
-    subsection: N,
     onClose: T
   } = e, {
-    voiceActivityStatusEnabled: A
+    voiceActivityStatusEnabled: N
   } = (0, r.U)({
     location: "UserProfileModalActivity"
-  }), P = (0, u.b)({
+  }), A = (0, u.b)({
     location: "UserProfileModalActivity"
   }), {
-    live: E,
-    recent: _,
-    stream: C
+    live: P,
+    recent: E,
+    stream: _
   } = (0, f.Z)(n.id), {
-    voiceChannel: S,
-    voiceActivity: w
+    voiceChannel: C,
+    voiceActivity: S
   } = (0, m.Z)({
     userId: n.id,
     guildId: O
-  }), D = (0, i.e7)([a.Z], () => a.Z.isFetchingUserOutbox(n.id)), L = n.id === t.id, R = (0, i.e7)([s.Z, c.Z], () => {
-    let e = L ? s.Z.getStatus() : c.Z.getStatus(n.id);
+  }), w = (0, i.e7)([a.Z], () => a.Z.isFetchingUserOutbox(n.id)), D = n.id === t.id, L = (0, i.e7)([s.Z, c.Z], () => {
+    let e = D ? s.Z.getStatus() : c.Z.getStatus(n.id);
     return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
-  }), M = E.length > 0 || null != C, B = A && null == C && null == w && null != S, U = !R && (M || B), k = _.length > 0;
-  return U || k || !D ? (0, l.jsxs)(o.zJl, {
+  }), R = P.length > 0 || null != _, M = N && null == _ && null == S && null != C, B = !L && (R || M), U = E.length > 0;
+  return B || U || !w ? (0, l.jsxs)(o.zJl, {
     className: y.scroller,
     fade: true,
-    children: [U ? (0, l.jsx)(p.Z, {
+    children: [B ? (0, l.jsx)(p.Z, {
       "aria-label": I.intl.string(I.t.J6STd9),
       children: (0, l.jsxs)("ul", {
         className: y.activityList,
-        children: [!P && B && (0, l.jsx)("li", {
-          children: (0, l.jsx)(v.Z, {
-            user: n,
-            currentUser: t,
-            voiceChannel: S,
-            onClose: T
-          })
-        }), null != C && (0, l.jsx)("li", {
+        children: [!A && M && (0, l.jsx)("li", {
           children: (0, l.jsx)(b.Z, {
             user: n,
             currentUser: t,
-            stream: C,
+            voiceChannel: C,
             onClose: T
           })
-        }), E.map((e, i) => (0, l.jsx)("li", {
+        }), null != _ && (0, l.jsx)("li", {
+          children: (0, l.jsx)(v.Z, {
+            user: n,
+            currentUser: t,
+            stream: _,
+            onClose: T
+          })
+        }), P.map((e, i) => (0, l.jsx)("li", {
           children: (0, l.jsx)(x.Z, {
             user: n,
             currentUser: t,
@@ -83,18 +82,18 @@ function O(e) {
           })
         }, "live-".concat(i)))]
       })
-    }) : null, k ? (0, l.jsx)(p.Z, {
+    }) : null, U ? (0, l.jsx)(p.Z, {
       heading: I.intl.string(I.t.M0zgnT),
-      introText: L ? I.intl.format(I.t["4bk9Ak"], {
+      introText: D ? I.intl.format(I.t["4bk9Ak"], {
         learnMoreHook: (e, n) => (0, l.jsx)(o.Anchor, {
           href: d.Z.getArticleURL(g.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, n)
       }) : true,
-      scrollIntoView: N === j.Tb.RECENT_ACTIVITY,
+      scrollTargetId: j.Tb.RECENT_ACTIVITY,
       children: (0, l.jsx)("ul", {
         className: y.activityList,
-        children: _.map(e => (0, l.jsx)("li", {
+        children: E.map(e => (0, l.jsx)("li", {
           children: (0, l.jsx)(h.Z, {
             user: n,
             entry: e,

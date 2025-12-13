@@ -173,7 +173,7 @@ function B(e) {
     P = l.useCallback(() => {
       (null == d ? true : d.id) != null && (0, m.openUserProfileModal)({
         userId: d.id,
-        section: j.oh.WISHLIST,
+        tabSection: j.oh.WISHLIST,
         showGuildProfile: false
       })
     }, [null == d ? true : d.id]);

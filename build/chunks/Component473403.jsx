@@ -195,9 +195,9 @@ let U = Chunk473749.memo(function(e) {
     } = e, et = J === w.i.ALL_MESSAGES || null != X && X > 0, {
       enableWaveformIcon: en,
       enableHighlight: el
-    } = (0, f.M)(g.guild_id, "ChannelItem"), ei = en || el, er = (0, s.e7)([_.Z], () => Object.values(_.Z.getVoiceStatesForChannel(g.id)).length > 0, [g.id]), ea = ei && g.isGuildVocal() && er, eo = (0, o.JA)(g.id), {
-      role: es
-    } = eo, eu = function(e, t) {
+    } = (0, f.M)(g.guild_id, "ChannelItem"), ei = en || el, er = (0, s.e7)([_.Z], () => Object.values(_.Z.getVoiceStatesForChannel(g.id)).length > 0, [g.id]), ea = ei && g.isGuildVocal() && er, eo = el && g.isGuildVocal() && er, es = (0, o.JA)(g.id), {
+      role: eu
+    } = es, ec = function(e, t) {
       if (null == e) return {};
       var n, l, i = function(e, t) {
         if (null == e) return {};
@@ -211,11 +211,11 @@ let U = Chunk473749.memo(function(e) {
         for (l = 0; l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(eo, ["role"]), ec = i.useRef(null), ed = i.useRef(null), eg = (0, y.Z)(g), ef = A.Z5c.CHANNEL(eg, g.id), eh = (0, N.ZP)(g), em = g.isGuildVocal(), eN = (0, l.jsx)("div", {
+    }(es, ["role"]), ed = i.useRef(null), eg = i.useRef(null), ef = (0, y.Z)(g), eh = A.Z5c.CHANNEL(ef, g.id), em = (0, N.ZP)(g), eN = g.isGuildVocal(), eE = (0, l.jsx)("div", {
       className: a()({
         [L.favoritesSuggestion]: Q
       }),
-      ref: ed,
+      ref: eg,
       children: (0, l.jsxs)(b.Z, (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -234,13 +234,13 @@ let U = Chunk473749.memo(function(e) {
         }
         return e
       }({
-        role: em && !p ? "button" : "link",
-        href: em ? true : ef,
+        role: eN && !p ? "button" : "link",
+        href: eN ? true : eh,
         target: "_blank",
-        ref: ec,
+        ref: ed,
         className: L.link,
         onClick: () => null == S ? true : S(g)
-      }, eu), c = c = {
+      }, ec), c = c = {
         "aria-label": W,
         focusProps: {
           enabled: false
@@ -262,7 +262,7 @@ let U = Chunk473749.memo(function(e) {
             "aria-hidden": true,
             children: (0, l.jsx)(B, {
               channel: g,
-              name: null != h ? h : eh
+              name: null != h ? h : em
             })
           }), i.Children.count(F) > 0 ? (0, l.jsx)("div", {
             onClick: P,
@@ -292,8 +292,8 @@ let U = Chunk473749.memo(function(e) {
       }), r))
     });
     return (0, l.jsx)(d.tEY, {
-      focusTarget: ec,
-      ringTarget: ed,
+      focusTarget: ed,
+      ringTarget: eg,
       offset: {
         top: 2,
         bottom: 2,
@@ -334,9 +334,9 @@ let U = Chunk473749.memo(function(e) {
         onContextMenu: e => null == x ? true : x(e, g),
         onMouseEnter: z,
         onMouseLeave: V,
-        children: [!el && v && !m && (0, l.jsx)("div", {
+        children: [!eo && v && !m && (0, l.jsx)("div", {
           className: a()(L.unread, et ? L.unreadImportant : true)
-        }), null != (n = null == D ? true : D(eN)) ? n : eN]
+        }), null != (n = null == D ? true : D(eE)) ? n : eE]
       })
     })
   }) : null;

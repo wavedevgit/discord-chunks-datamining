@@ -26,7 +26,7 @@ function c(t) {
       onClick: () => {
         null != c && (0, s.openUserProfileModal)({
           userId: c.id,
-          section: l.oh.WISHLIST
+          tabSection: l.oh.WISHLIST
         }), i()
       },
       variant: "secondary"

@@ -28,56 +28,53 @@ let y = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       userName: n,
       displayNameStyles: i,
       effectDisplayType: a = h.F.STATIC,
-      inProfile: O = false,
-      textClassName: S,
-      loop: I = false,
-      shouldWrap: T = false,
-      boldFontOpacity: C = 1,
-      shouldUnderlineOnHover: A = false
-    } = e, N = (0, E.j)({
+      inProfile: l = false,
+      textClassName: O,
+      loop: S = false,
+      shouldWrap: I = false,
+      boldFontOpacity: T = 1,
+      shouldUnderlineOnHover: C = false
+    } = e, A = (0, E.j)({
       displayNameStyles: i,
-      inProfile: O
+      inProfile: l
     }), {
-      useReducedMotion: P
+      useReducedMotion: N
     } = (0, c.cj)([f.Z], () => ({
       useReducedMotion: f.Z.useReducedMotion
     })), {
-      includeNonProfile: R
+      includeNonProfile: P
     } = p.fN.useExperiment({
       location: "useDisplayNameStylesFont"
-    }), w = (0, m.Y)({
+    }), R = (0, m.Y)({
       location: "UserNameWithEffects"
-    }), D = (0, d.dQu)(d.TVs.colors.BACKGROUND_BASE_LOW).hex(), x = null != (t = null == i ? true : i.effectId) ? t : s.m.SOLID, L = (0, d.qgQ)(n), j = (0, u.EJ)(L, x === s.m.TOON ? b.emoji : true), M = (0, _.Z)({
-      displayNameStyles: w ? i : null,
-      backgroundColor: D
+    }), w = (0, d.dQu)(d.TVs.colors.BACKGROUND_BASE_LOW).hex(), D = null != (t = null == i ? true : i.effectId) ? t : s.m.SOLID, x = (0, d.qgQ)(n), L = (0, u.EJ)(x, D === s.m.TOON ? b.emoji : true), j = (0, _.Z)({
+      displayNameStyles: R ? i : null,
+      backgroundColor: w
     });
-    if (!w || !O && !R || null == i) return n;
-    let k = (0, g.K)(x, M, {
-        shouldWrap: T,
-        fontOpacity: y.includes(i.fontId) ? C : 1
+    if (!R || !l && !P || null == i) return n;
+    let M = (0, g.K)(D, j, {
+        shouldWrap: I,
+        fontOpacity: y.includes(i.fontId) ? T : 1
       }),
-      U = v(x);
+      k = v(D);
     return (0, r.jsxs)("div", {
-      className: o()(b.container, N, S, {
+      className: o()(b.container, A, O, {
         [b.showEffect]: a !== h.F.PLAIN,
-        [b.animated]: a === h.F.ANIMATED && !P,
-        [b.loop]: I,
-        [b.inProfile]: O
+        [b.animated]: a === h.F.ANIMATED && !N,
+        [b.loop]: S,
+        [b.inProfile]: l
       }),
-      style: k,
+      style: M,
       children: [(0, r.jsx)("span", {
-        "data-username-with-effects": L,
-        className: o()(b.innerContainer, null == U ? true : U.effectClassName, {
-          [b.underlineOnHover]: A,
-          [b.chicle]: i.fontId === l.C.CHICLE
+        "data-username-with-effects": x,
+        className: o()(b.innerContainer, null == k ? true : k.effectClassName, {
+          [b.underlineOnHover]: C
         }),
-        children: j
-      }), (null == U ? true : U.glowClassName) != null && (0, r.jsx)("span", {
-        className: o()(b.glowContainer, b.innerContainer, U.glowClassName, {
-          [b.chicle]: i.fontId === l.C.CHICLE
-        }),
-        "aria-hidden": true,
         children: L
+      }), (null == k ? true : k.glowClassName) != null && (0, r.jsx)("span", {
+        className: o()(b.glowContainer, b.innerContainer, k.glowClassName),
+        "aria-hidden": true,
+        children: x
       })]
     })
   });

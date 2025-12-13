@@ -30,7 +30,7 @@ function j(e) {
   } = e, r = (0, s.rm)(n, t);
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)("div", {
-      className: v.platformIconContainer,
+      className: b.platformIconContainer,
       children: null != n.application.bot ? (0, l.jsx)(c.Z, {
         user: new m.Z(n.application.bot),
         size: a.EFr.SIZE_16
@@ -39,9 +39,9 @@ function j(e) {
         size: "sm"
       })
     }), (0, l.jsxs)("div", {
-      className: v.connectionInfo,
+      className: b.connectionInfo,
       children: [(0, l.jsxs)(a.P3F, {
-        className: v.connectedAppRoleAccountClickable,
+        className: b.connectedAppRoleAccountClickable,
         onClick: () => {
           null == i || i(), (0, d.transitionToGlobalDiscovery)({
             tab: h.GlobalDiscoveryTab.APPS,
@@ -65,13 +65,13 @@ function j(e) {
         }) : null, (0, l.jsx)(a.Text, {
           variant: "text-xxs/normal",
           color: "text-default",
-          className: v.connectedAppRoleAccountPoweredBy,
-          children: b.intl.format(b.t.zIT9YA, {
+          className: b.connectedAppRoleAccountPoweredBy,
+          children: v.intl.format(v.t.zIT9YA, {
             applicationHook: () => n.application.name
           })
         })]
       }), null != r && r.length > 0 ? (0, l.jsx)("div", {
-        className: v.metadata,
+        className: b.metadata,
         children: r
       }) : null]
     })]
@@ -87,9 +87,9 @@ function g(e) {
     trackUserProfileAction: a
   } = (0, x.KZ)(), c = (0, r.e7)([f.default], () => f.default.locale), s = (0, r.e7)([p.Z], () => p.Z.getGuildId());
   return 0 === n.length ? null : (0, l.jsx)("ul", {
-    className: o()(v.container, t),
+    className: o()(b.container, t),
     children: n.map((e, n) => (0, l.jsx)("li", {
-      className: v.connection,
+      className: b.connection,
       children: (0, l.jsx)(j, {
         applicationRoleConnection: e,
         locale: c,

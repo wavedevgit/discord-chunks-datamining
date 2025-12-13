@@ -106,7 +106,7 @@ function M(e) {
     }), !q && (0, r.jsx)(R.Z, {
       user: t,
       onOpenProfile: e => null == G ? true : G({
-        section: e
+        tabSection: e
       })
     }), t.isProvisional ? (0, r.jsx)(I.Z.Overlay, {
       className: j.card,

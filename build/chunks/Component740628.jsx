@@ -23,110 +23,96 @@ var Chunk54381 = require("./54381.js"),
 function j(e) {
   let {
     section: n,
-    subsection: t,
-    user: i,
-    currentUser: o,
-    displayProfile: r,
-    guildId: a,
-    channelId: c,
-    onClose: h
+    user: t,
+    currentUser: i,
+    displayProfile: o,
+    guildId: r,
+    channelId: a,
+    onClose: c
   } = e;
   return n === x.oh.ACTIVITY ? (0, l.jsx)(u.Z, {
-    user: i,
-    currentUser: o,
-    guildId: a,
-    onClose: h
+    user: t,
+    currentUser: i,
+    guildId: r,
+    onClose: c
   }) : n === x.oh.MUTUAL_FRIENDS ? (0, l.jsx)(m.Z, {
-    user: i,
-    guildId: a,
-    channelId: c,
-    onClose: h
+    user: t,
+    guildId: r,
+    channelId: a,
+    onClose: c
   }) : n === x.oh.MUTUAL_GUILDS ? (0, l.jsx)(p.Z, {
-    user: i,
-    onClose: h
+    user: t,
+    onClose: c
   }) : n === x.oh.BOT_DATA_ACCESS ? (0, l.jsx)(s.Z, {
-    user: i
+    user: t
   }) : n === x.oh.BOT_INFO ? (0, l.jsx)(d.Z, {
-    user: i,
-    currentUser: o,
-    displayProfile: r,
-    guildId: a,
-    subsection: t,
-    onClose: h
+    user: t,
+    currentUser: i,
+    displayProfile: o,
+    guildId: r,
+    onClose: c
   }) : (0, l.jsx)(f.Z, {
-    user: i,
-    currentUser: o,
-    displayProfile: r,
-    subsection: t,
-    onClose: h
+    user: t,
+    currentUser: i,
+    displayProfile: o,
+    onClose: c
   })
 }
 
 function g(e) {
-  var n, t, s;
   let {
-    user: d,
-    currentUser: u,
-    displayProfile: f,
-    guildId: m,
-    items: p,
-    initialSection: g = x.oh.USER_INFO,
-    initialSubsection: I,
-    onClose: y
+    user: n,
+    currentUser: t,
+    displayProfile: s,
+    guildId: d,
+    items: u,
+    initialSection: f = x.oh.USER_INFO,
+    onClose: m
   } = e, {
-    trackUserProfileAction: Z
-  } = (0, c.KZ)(), O = (0, o.e7)([a.Z], () => a.Z.hidePersonalInformation), [{
-    section: N,
-    subsection: T
-  }, A] = i.useState({
-    section: null != (s = null == (n = p.find(e => {
+    trackUserProfileAction: p
+  } = (0, c.KZ)(), g = (0, o.e7)([a.Z], () => a.Z.hidePersonalInformation), [I, y] = i.useState(() => {
+    var e, n, t;
+    return null != (t = null == (e = u.find(e => {
       let {
         section: n
       } = e;
-      return n === g
-    })) ? true : n.section) ? s : null == (t = p[0]) ? true : t.section,
-    subsection: I
+      return n === f
+    })) ? true : e.section) ? t : null == (n = u[0]) ? true : n.section
   });
   i.useEffect(() => {
-    null == p.find(e => e.section === N) && A({
-      section: p[0].section,
-      subsection: true
-    })
-  }, [p, N]);
-  let P = i.useCallback(e => {
-    Z({
+    null == u.find(e => e.section === I) && y(u[0].section)
+  }, [u, I]);
+  let Z = i.useCallback(e => {
+    p({
       action: "PRESS_SECTION",
       section: e
-    }), A({
-      section: e,
-      subsection: true
-    })
-  }, [Z, A]);
-  return O ? (0, l.jsx)("div", {
-    className: v.container,
+    }), y(e)
+  }, [p]);
+  return g ? (0, l.jsx)("div", {
+    className: b.container,
     children: (0, l.jsxs)("div", {
-      className: b.empty,
+      className: v.empty,
       children: [(0, l.jsx)("div", {
-        className: b.emptyIconStreamerMode
+        className: v.emptyIconStreamerMode
       }), (0, l.jsx)("div", {
-        className: b.emptyText,
+        className: v.emptyText,
         children: h.intl.string(h.t.Br1ls3)
       })]
     })
   }) : (0, l.jsxs)("div", {
-    className: v.container,
+    className: b.container,
     children: [(0, l.jsx)(r.njP, {
-      className: v.tabBar,
+      className: b.tabBar,
       type: "top",
-      selectedItem: N,
-      onItemSelect: P,
-      children: p.map(e => {
+      selectedItem: I,
+      onItemSelect: Z,
+      children: u.map(e => {
         let {
           section: n,
           text: t
         } = e;
         return (0, l.jsx)(r.njP.Item, {
-          className: v.tabBarItem,
+          className: b.tabBarItem,
           id: n,
           "aria-label": t,
           children: (0, l.jsx)(r.Text, {
@@ -136,14 +122,13 @@ function g(e) {
         }, n)
       })
     }), (0, l.jsx)(j, {
-      items: p,
-      section: N,
-      subsection: T,
-      user: d,
-      currentUser: u,
-      displayProfile: f,
-      guildId: m,
-      onClose: y
+      items: u,
+      section: I,
+      user: n,
+      currentUser: t,
+      displayProfile: s,
+      guildId: d,
+      onClose: m
     })]
   })
 }

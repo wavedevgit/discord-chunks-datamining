@@ -53,9 +53,9 @@ function v(e, n) {
       return (0, l.jsx)(r.sNh, {
         id: i.id,
         action: () => {
-          e.id === s.default.getId() ? u.default.selectVoiceChannel(i.id) : a.Z.setChannel(n, e.id, i.id)
+          e.id === s.default.getId() ? o.default.selectVoiceChannel(i.id) : a.Z.setChannel(n, e.id, i.id)
         },
-        label: (0, o.F6)(i, O.default, b.Z)
+        label: (0, u.F6)(i, O.default, b.Z)
       }, i.id)
     })
   })

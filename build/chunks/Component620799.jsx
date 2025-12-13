@@ -54,7 +54,7 @@ function h(e) {
             userId: f,
             sourceAnalyticsLocations: [s.Z.ACCOUNT],
             hideRestrictedProfile: true,
-            section: u.oh.WIDGETS
+            tabSection: u.oh.WIDGETS
           })
         }
       }]

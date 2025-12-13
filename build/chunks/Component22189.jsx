@@ -129,7 +129,7 @@ let ey = () => {
       userId: ev.id,
       sourceAnalyticsLocations: module,
       hideRestrictedProfile: true,
-      section: Chunk228168.oh.WIDGETS
+      tabSection: Chunk228168.oh.WIDGETS
     })
   }, eZ = Chunk473749.useCallback(() => {
     (0, Chunk518596.openUserSettings)(Chunk313789.n.PROFILE_PANEL, {

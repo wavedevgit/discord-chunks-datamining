@@ -48,12 +48,12 @@ function Z(e) {
     guildId: t,
     channelId: Z,
     messageId: O,
-    roleId: N,
-    transitionState: T,
+    roleId: T,
+    transitionState: N,
     openedAt: A,
     onHide: P,
     sourceAnalyticsLocations: E = []
-  } = e, _ = t === v.ME ? true : t, C = (0, i.e7)([s.Z], () => s.Z.isBlocked(n.id)), {
+  } = e, _ = t === b.ME ? true : t, C = (0, i.e7)([s.Z], () => s.Z.isBlocked(n.id)), {
     analyticsLocations: S
   } = (0, a.ZP)([...E, C ? r.Z.BLOCKED_PROFILE_MODAL : r.Z.IGNORED_PROFILE_MODAL]), w = (0, u.ZB)({
     layout: "MODAL_V2",
@@ -62,7 +62,7 @@ function Z(e) {
     guildId: _,
     channelId: Z,
     messageId: O,
-    roleId: N
+    roleId: T
   }), D = [{
     icon: o.owK,
     description: g.intl.string(g.t.kcuWva)
@@ -82,7 +82,7 @@ function Z(e) {
       isLoaded: null == L ? true : L.isLoaded,
       children: (0, l.jsx)(o.Y0X, {
         "data-migration-pending": true,
-        transitionState: T,
+        transitionState: N,
         className: I.root,
         "aria-label": M,
         parentComponent: "RestrictedUserProfileModalV2",
@@ -126,7 +126,7 @@ function Z(e) {
               })
             }), (0, l.jsxs)(o.Kqy, {
               align: "center",
-              children: [(0, l.jsx)(b.Z, {
+              children: [(0, l.jsx)(v.Z, {
                 size: "md",
                 isBlocked: C,
                 onClick: () => {

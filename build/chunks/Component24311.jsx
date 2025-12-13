@@ -25,7 +25,7 @@ function b(e) {
     joinCallVideo: m,
     id: h,
     onCall: p
-  } = e, P = (0, u.Aq)(), j = (0, i.e7)([s.default], () => s.default.getId() === n.id), v = (0, i.e7)([c.Z], () => c.Z.isBlocked(n.id)), N = (0, i.e7)([g.Z, d.Z], () => g.Z.getVoiceChannelId() === d.Z.getDMFromUserId(n.id));
+  } = e, P = (0, o.Aq)(), j = (0, i.e7)([s.default], () => s.default.getId() === n.id), v = (0, i.e7)([c.Z], () => c.Z.isBlocked(n.id)), N = (0, i.e7)([g.Z, d.Z], () => g.Z.getVoiceChannelId() === d.Z.getDMFromUserId(n.id));
   if (j || b === Z.IlC.POPOUT || N || n.bot || n.isProvisional) return null;
   let y = () => {
       null == p || p(), a.Z.openPrivateChannel({
@@ -34,7 +34,7 @@ function b(e) {
         joinCallVideo: m
       }), P.dispatch(Z.CkL.POPOUT_CLOSE), (0, r.pTH)()
     },
-    x = !o.ZP.disableCallUserConfirmationPrompt;
+    x = !u.ZP.disableCallUserConfirmationPrompt;
   return (0, l.jsx)(r.sNh, {
     id: null != h ? h : "call",
     label: null != O ? O : f.intl.string(f.t.JJogjm),

@@ -38,8 +38,8 @@ let T = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: t,
     guildId: n,
-    showModalItems: o = true,
-    showMediaItems: a = false,
+    showModalItems: a = true,
+    showMediaItems: o = false,
     showChatItems: u = true,
     context: T,
     onSelect: D
@@ -95,13 +95,13 @@ let T = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     onSelect: D,
     children: [!ei && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(i.kSQ, {
-        children: [o && L, u && w, k, B, o && V, o && q, R]
-      }), a && (0, l.jsx)(i.kSQ, {
+        children: [a && L, u && w, k, B, a && V, a && q, R]
+      }), o && (0, l.jsx)(i.kSQ, {
         children: G
       }), (0, l.jsx)(i.kSQ, {
-        children: o && H
+        children: a && H
       }), (0, l.jsxs)(i.kSQ, {
-        children: [a && F, o && Y, o && Q, W, X, J, K, o && $, o && z]
+        children: [o && F, a && Y, a && Q, W, X, J, K, a && $, a && z]
       }), (0, l.jsx)(i.kSQ, {
         children: ee
       }), (0, l.jsxs)(i.kSQ, {

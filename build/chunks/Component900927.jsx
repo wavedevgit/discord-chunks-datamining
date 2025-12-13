@@ -23,8 +23,8 @@ function x(e) {
     guildId: t,
     textClassName: x,
     tooltipDelay: h
-  } = e, b = (0, i.e7)([s.default], () => s.default.locale), v = (0, i.e7)([u.Z], () => null != t ? u.Z.getGuild(t) : null), j = (0, i.e7)([d.ZP], () => null != t ? d.ZP.getMember(t, n) : null), g = (0, a.FI)(f.default.extractTimestamp(n), b), I = (0, a.FI)(null == j ? true : j.joinedAt, b);
-  return null == v || null == j ? (0, l.jsx)(r.Text, {
+  } = e, v = (0, i.e7)([s.default], () => s.default.locale), b = (0, i.e7)([u.Z], () => null != t ? u.Z.getGuild(t) : null), j = (0, i.e7)([d.ZP], () => null != t ? d.ZP.getMember(t, n) : null), g = (0, a.FI)(f.default.extractTimestamp(n), v), I = (0, a.FI)(null == j ? true : j.joinedAt, v);
+  return null == b || null == j ? (0, l.jsx)(r.Text, {
     variant: "text-sm/normal",
     className: x,
     children: g
@@ -52,10 +52,10 @@ function x(e) {
     }), (0, l.jsxs)("div", {
       className: p.memberSince,
       children: [(0, l.jsx)(o.u, {
-        text: v.name,
+        text: b.name,
         delay: h,
         children: (0, l.jsx)(c.Z, {
-          guild: v,
+          guild: b,
           size: c.Z.Sizes.SMOL,
           className: p.guildIcon
         })

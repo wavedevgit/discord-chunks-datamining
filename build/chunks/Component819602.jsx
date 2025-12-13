@@ -34,21 +34,21 @@ var Chunk120356 = require("./120356.js"),
 
 function P(e) {
   var n, t;
-  let i, d, b, {
-    connectedAccount: v,
+  let i, d, v, {
+    connectedAccount: b,
     theme: j,
     locale: y,
-    userId: N,
+    userId: T,
     className: P,
     showMetadata: E,
     showInvisibleIcon: _
   } = e;
   null == E && (E = true);
-  let C = null != (t = v.metadata) ? t : {},
+  let C = null != (t = b.metadata) ? t : {},
     S = E ? (0, p.FI)(C[O.PC.CREATED_AT], y) : null,
     w = (0, s.dQu)(r.Z.unsafe_rawColors.TWITTER).hex(),
-    D = T.intl.string(T.t["6H6h1r"]);
-  if (E) switch (v.type) {
+    D = N.intl.string(N.t["6H6h1r"]);
+  if (E) switch (b.type) {
     case Z.ABu.REDDIT:
       i = (0, x.oP)(C);
       break;
@@ -58,7 +58,7 @@ function P(e) {
     case Z.ABu.BLUESKY:
     case Z.ABu.MASTODON:
     case Z.ABu.TWITTER:
-      i = (0, x.rJ)(C), "1" === C[O.PC.TWITTER_VERIFIED] && (d = w, D = T.intl.string(T.t.Jebrww));
+      i = (0, x.rJ)(C), "1" === C[O.PC.TWITTER_VERIFIED] && (d = w, D = N.intl.string(N.t.Jebrww));
       break;
     case Z.ABu.PAYPAL:
       i = (0, x.li)(C);
@@ -69,20 +69,20 @@ function P(e) {
     case Z.ABu.TIKTOK:
       i = (0, x.hf)(C)
   }
-  let L = u.Z.get((0, m.rR)(v.type)),
-    R = null == L || null == (n = L.getPlatformUserUrl) ? true : n.call(L, v);
-  null != _ && _ ? b = (0, l.jsx)(s.kZF, {
+  let L = u.Z.get((0, m.rR)(b.type)),
+    R = null == L || null == (n = L.getPlatformUserUrl) ? true : n.call(L, b);
+  null != _ && _ ? v = (0, l.jsx)(s.kZF, {
     size: "md",
     color: "currentColor",
     className: o()(A.__invalid_connectedAccountOpenIconContainer, A.connectedAccountHideIcon)
-  }) : null != R && (b = (0, l.jsx)(s.Anchor, {
+  }) : null != R && (v = (0, l.jsx)(s.Anchor, {
     href: R,
-    "aria-label": (null == L ? true : L.name) != null ? "".concat(L.name, ", ").concat(v.name, ", ").concat(T.intl.string(T.t.q5jLJB)) : "".concat(v.name, ", ").concat(T.intl.string(T.t.q5jLJB)),
+    "aria-label": (null == L ? true : L.name) != null ? "".concat(L.name, ", ").concat(b.name, ", ").concat(N.intl.string(N.t.q5jLJB)) : "".concat(b.name, ", ").concat(N.intl.string(N.t.q5jLJB)),
     onClick: e => {
       var n;
-      n = v.type, (0, f.yw)(Z.rMx.CONNECTED_ACCOUNT_VIEWED, {
+      n = b.type, (0, f.yw)(Z.rMx.CONNECTED_ACCOUNT_VIEWED, {
         platform_type: n,
-        other_user_id: N
+        other_user_id: T
       }), (0, I.q)({
         href: R,
         trusted: (null == L ? true : L.type) !== Z.ABu.DOMAIN
@@ -95,7 +95,7 @@ function P(e) {
   }));
   let M = (0, s.dQu)(r.Z.colors.INTERACTIVE_MUTED).hex(),
     B = (0, s.dQu)(r.Z.colors.INTERACTIVE_TEXT_ACTIVE).hex(),
-    U = v.verified ? (0, l.jsx)(h.Z, {
+    U = b.verified ? (0, l.jsx)(h.Z, {
       className: A.connectedAccountVerifiedIcon,
       color: null != d ? d : M,
       forcedIconColor: B,
@@ -109,7 +109,7 @@ function P(e) {
       children: [(0, l.jsx)(a.u, {
         __unsupportedReactNodeAsText: null == L ? true : L.name,
         children: (0, l.jsx)("img", {
-          alt: T.intl.formatToPlainString(T.t.rtm15P, {
+          alt: N.intl.formatToPlainString(N.t.rtm15P, {
             name: null == L ? true : L.name
           }),
           className: A.connectedAccountIcon,
@@ -123,19 +123,19 @@ function P(e) {
             className: A.connectedAccountNameTextContainer,
             children: [(0, l.jsx)(a.u, {
               overflowOnly: true,
-              text: v.name,
+              text: b.name,
               children: (0, l.jsx)(s.Text, {
                 variant: "text-sm/medium",
                 color: "interactive-text-active",
                 className: A.connectedAccountNameText,
-                children: v.name
+                children: b.name
               })
             }), U]
-          }), b]
+          }), v]
         }), null != S ? (0, l.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-default",
-          children: T.intl.format(T.t["9rfonh"], {
+          children: N.intl.format(N.t["9rfonh"], {
             date: S
           })
         }) : null]
@@ -155,12 +155,12 @@ function E(e) {
     onApplicationClicked: r,
     selectedGuildId: a
   } = e, c = (0, x.rm)(n, i), u = () => {
-    null == r || r(), (0, b.transitionToGlobalDiscovery)({
-      tab: N.GlobalDiscoveryTab.APPS,
+    null == r || r(), (0, v.transitionToGlobalDiscovery)({
+      tab: T.GlobalDiscoveryTab.APPS,
       applicationId: n.application.id,
       newSessionState: {
         entrypoint: {
-          name: v.xF.APPLICATION_DIRECTORY_URL
+          name: b.xF.APPLICATION_DIRECTORY_URL
         },
         guildId: a
       }
@@ -200,7 +200,7 @@ function E(e) {
         children: (0, l.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: T.intl.format(T.t.zIT9YA, {
+          children: N.intl.format(N.t.zIT9YA, {
             applicationHook: () => (0, l.jsxs)("div", {
               className: A.connectedAccountPoweredByText,
               children: [null != n.application.bot ? (0, l.jsx)(d.Z, {

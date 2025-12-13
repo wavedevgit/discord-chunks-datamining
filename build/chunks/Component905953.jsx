@@ -71,7 +71,7 @@ function _(e) {
           onClick: () => {
             E(true), (0, b.openUserProfileModal)({
               userId: O,
-              section: y.oh.WIDGETS
+              tabSection: y.oh.WIDGETS
             }).then(() => {
               r(j.L.TAKE_ACTION), _();
               let e = new p.q({
@@ -108,7 +108,7 @@ function _(e) {
               onConfirm: () => {
                 E(true), (0, b.openUserProfileModal)({
                   userId: O,
-                  section: y.oh.WIDGETS
+                  tabSection: y.oh.WIDGETS
                 }).then(() => {
                   r(j.L.TAKE_ACTION), _()
                 }).finally(() => E(false))

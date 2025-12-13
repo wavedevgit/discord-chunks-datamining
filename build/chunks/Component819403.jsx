@@ -25,7 +25,7 @@ function h(e) {
   let t = (0, b.Z)(),
     h = null == t ? true : t.id,
     p = null == t ? true : t.guild_id,
-    P = (0, i.e7)([o.Z], () => o.Z.getGuild(p), [p]),
+    P = (0, i.e7)([u.Z], () => u.Z.getGuild(p), [p]),
     j = (0, i.e7)([d.Z], () => null != h ? d.Z.getVoiceStateForChannel(h, e.id) : null, [h, e.id]),
     v = (null == (n = s.default.getCurrentUser()) ? true : n.id) === e.id,
     N = (0, f.Z)(),
@@ -36,7 +36,7 @@ function h(e) {
   let _ = () => {
     if (v) {
       if ((0, O.u1)()) return void a.Z.showAgeVerificationGetStartedModal({
-        entryPoint: u.cU.STAGE_CHANNEL_RAISE_HAND
+        entryPoint: o.cU.STAGE_CHANNEL_RAISE_HAND
       });
       (0, c.RK)(t, false)
     } else(0, c._0)(t, e.id)

@@ -32,7 +32,7 @@ function P(e) {
     onAction: S,
     appContext: y
   } = e, C = i.useContext(O.AnalyticsContext), I = (0, d.Aq)(), M = (0, r.e7)([m.Z], () => null != P ? P : m.Z.getChannelId(n, true), [P, n]), x = (0, r.e7)([b.ZP], () => null == n ? null : b.ZP.getMember(n, t), [n, t]), N = (0, u.m)(n);
-  return null != n && null != x && N ? (0, l.jsx)(o.sNh, {
+  return null != n && null != x && N ? (0, l.jsx)(a.sNh, {
     id: "mod-view",
     label: j.intl.string(j.t.kj3tz2),
     action: () => {
@@ -43,7 +43,7 @@ function P(e) {
           sourceLocation: null != p ? p : C.location
         };
       if ((null == e ? true : e.isThread()) && null != e.parent_id) {
-        Z.ZP.getCurrentSidebarChannelId(e.parent_id) === e.id && (a.Z.dispatch({
+        Z.ZP.getCurrentSidebarChannelId(e.parent_id) === e.id && (o.Z.dispatch({
           type: "SIDEBAR_CLOSE",
           baseChannelId: e.parent_id
         }), (0, g.Kh)(e.id)), (0, s.r)(n, t, e.parent_id, l);

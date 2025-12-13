@@ -471,7 +471,7 @@ let {
         dark: {
           color: "gradient.start",
           saturation: .25,
-          lightness: .1,
+          lightness: .05,
           opacity: .7
         }
       }
@@ -544,12 +544,12 @@ let {
       },
       gradient: {
         light: {
-          color: "BLACK_500",
-          opacity: .1
+          color: "gradient.mid",
+          lightness: .9
         },
         dark: {
-          color: "WHITE_500",
-          opacity: .1
+          color: "gradient.mid",
+          lightness: .1
         }
       }
     },

@@ -29,15 +29,15 @@ function Z(e) {
   } = (0, a.Z)(b), h = !O && null != m && m.length > 0, p = f === d.IlC.POPOUT || f === d.IlC.OVERLAY, {
     analyticsLocations: P
   } = (0, r.ZP)();
-  return b === o.default.getId() || s.Z.hidePersonalInformation || p ? null : (0, l.jsx)(i.sNh, {
+  return b === u.default.getId() || s.Z.hidePersonalInformation || p ? null : (0, l.jsx)(i.sNh, {
     id: "note",
     label: O ? g.intl.string(g.t["WLKx/9"]) : h ? g.intl.string(g.t.sHHsOM) : g.intl.string(g.t.Dglxrf),
     subtext: g.intl.string(g.t.r1BOdd),
     action: () => {
-      (0, u.openUserProfileModal)({
+      (0, o.openUserProfileModal)({
         userId: n.id,
-        section: c.oh.USER_INFO,
-        subsection: c.Tb.NOTE,
+        tabSection: c.oh.USER_INFO,
+        scrollTarget: c.Tb.NOTE,
         guildId: t,
         channelId: Z,
         sourceAnalyticsLocations: P,

@@ -79,12 +79,12 @@ let S = Chunk473749.forwardRef(function(e, t) {
   var {
     children: n,
     className: i,
-    subsection: a,
+    profileModalScrollTarget: a,
     onAction: g,
     onClose: b,
     "aria-label": v,
     "aria-labelledby": S
-  } = e, I = O(e, ["children", "className", "subsection", "onAction", "onClose", "aria-label", "aria-labelledby"]);
+  } = e, I = O(e, ["children", "className", "profileModalScrollTarget", "onAction", "onClose", "aria-label", "aria-labelledby"]);
   let {
     themeType: T
   } = (0, f.z)(), {
@@ -113,9 +113,9 @@ let S = Chunk473749.forwardRef(function(e, t) {
         null == g || g({
           action: "PRESS_CARD"
         }), (0, u.openUserProfileModal)(E({
-          section: p.oh.ACTIVITY,
+          tabSection: p.oh.ACTIVITY,
           sourceAnalyticsLocations: C,
-          subsection: a
+          scrollTarget: a
         }, A)), null == b || b()
       },
       children: (0, r.jsx)(d.Z.Overlay, y(E({

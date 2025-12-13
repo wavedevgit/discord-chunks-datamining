@@ -35,29 +35,28 @@ function S(e) {
     displayProfile: S,
     guildId: E,
     channelId: _,
-    subsection: T,
-    onClose: C
+    onClose: T
   } = e, {
-    voiceActivityStatusEnabled: D
+    voiceActivityStatusEnabled: C
   } = (0, l.U)({
     location: "UserProfileModalV2Activity"
-  }), k = (0, f.b)({
+  }), D = (0, f.b)({
     location: "UserProfileModalV2Activity"
   }), {
-    live: N,
-    recent: A,
-    stream: Z
+    live: k,
+    recent: N,
+    stream: A
   } = (0, g.Z)(t.id), {
-    voiceChannel: R,
-    voiceActivity: G
+    voiceChannel: Z,
+    voiceActivity: R
   } = (0, p.Z)({
     userId: t.id,
     guildId: E
-  }), M = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), L = t.id === n.id, B = (0, i.e7)([u.Z, s.Z], () => {
-    let e = L ? u.Z.getStatus() : s.Z.getStatus(t.id);
+  }), G = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), M = t.id === n.id, L = (0, i.e7)([u.Z, s.Z], () => {
+    let e = M ? u.Z.getStatus() : s.Z.getStatus(t.id);
     return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
-  }), U = N.length > 0 || null != Z, F = D && null == Z && null == G && null != R, W = !B && (U || F), H = A.length > 0;
-  if (!W && !H && M) return (0, r.jsx)("div", {
+  }), B = k.length > 0 || null != A, U = C && null == A && null == R && null != Z, F = !L && (B || U), W = N.length > 0;
+  if (!F && !W && G) return (0, r.jsx)("div", {
     className: w.cards,
     children: Array.from({
       length: 8
@@ -72,70 +71,70 @@ function S(e) {
       })]
     }, t))
   });
-  if (!W && !H && !M) {
-    var z;
-    return L ? (0, r.jsx)(v.Uf, {
-      onClose: C
+  if (!F && !W && !G) {
+    var H;
+    return M ? (0, r.jsx)(v.Uf, {
+      onClose: T
     }) : (0, r.jsx)(v.P9, {
       user: t,
-      guildId: null != (z = null == S ? true : S.guildId) ? z : E,
+      guildId: null != (H = null == S ? true : S.guildId) ? H : E,
       channelId: _,
-      onClose: C
+      onClose: T
     })
   }
   return (0, r.jsxs)(j.F, {
     className: w.scroller,
     fade: true,
-    children: [W ? (0, r.jsx)(O.Z, {
+    children: [F ? (0, r.jsx)(O.Z, {
       heading: I.intl.string(I.t.J6STd9),
       children: (0, r.jsxs)("ul", {
         className: w.cards,
-        children: [!k && F && (0, r.jsx)("li", {
+        children: [!D && U && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
-            voiceChannel: R,
-            onClose: C
+            voiceChannel: Z,
+            onClose: T
           })
-        }), null != Z && (0, r.jsx)("li", {
+        }), null != A && (0, r.jsx)("li", {
           children: (0, r.jsx)(h.Z, {
             user: t,
             currentUser: n,
-            stream: Z,
-            onClose: C
+            stream: A,
+            onClose: T
           })
-        }), N.map((e, i) => (0, r.jsx)("li", {
+        }), k.map((e, i) => (0, r.jsx)("li", {
           children: (0, r.jsx)(b.Z, {
             user: t,
             currentUser: n,
             activity: e,
-            onClose: C
+            onClose: T
           })
-        }, "live-".concat(i))), k && F && (0, r.jsx)("li", {
+        }, "live-".concat(i))), D && U && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
-            voiceChannel: R,
-            onClose: C
+            voiceChannel: Z,
+            onClose: T
           })
         })]
       })
-    }) : null, H ? (0, r.jsx)(O.Z, {
+    }) : null, W ? (0, r.jsx)(O.Z, {
       heading: I.intl.string(I.t.jzgEoL),
-      introText: L ? I.intl.format(I.t["4bk9Ak"], {
+      introText: M ? I.intl.format(I.t["4bk9Ak"], {
         learnMoreHook: (e, t) => (0, r.jsx)(a.Anchor, {
           href: d.Z.getArticleURL(P.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : true,
-      scrollIntoView: T === x.Tb.RECENT_ACTIVITY,
+      scrollTargetId: x.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
         className: w.cards,
-        children: A.map(e => (0, r.jsx)("li", {
+        children: N.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(m.Z, {
             user: t,
             entry: e,
-            onClose: C
+            onClose: T
           })
         }, e.id))
       })

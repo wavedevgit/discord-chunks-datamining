@@ -7,7 +7,6 @@ var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk666520 = require("./666520.jsx"),
   Chunk246016 = require("./246016.js"),
   Chunk189156 = require("./189156.jsx"),
   Chunk706454 = require("./706454.js"),
@@ -22,6 +21,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk900927 = require("./900927.jsx"),
   Chunk678738 = require("./678738.jsx"),
   Chunk179828 = require("./179828.jsx"),
+  Chunk878566 = require("./878566.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk199912 = require("./199912.js");
@@ -31,79 +31,68 @@ function O(e) {
     user: n,
     currentUser: t,
     displayProfile: O,
-    subsection: N,
     onClose: T
   } = e, {
-    trackUserProfileAction: A
-  } = (0, f.KZ)(), P = (0, i.e7)([d.Z], () => d.Z.getGuildId()), E = (0, a.Y)({
+    trackUserProfileAction: N
+  } = (0, u.KZ)(), A = (0, i.e7)([s.Z], () => s.Z.getGuildId()), P = (0, r.Y)({
     userId: n.id
-  }), _ = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), C = (0, i.e7)([s.default], () => s.default.locale), S = (0, p.Z)(n.id), w = (0, m.Z)(n.id);
+  }), E = (0, i.e7)([d.Z], () => d.Z.hidePersonalInformation), _ = (0, i.e7)([c.default], () => c.default.locale), C = (0, m.Z)(n.id), S = (0, f.Z)(n.id);
   return (0, l.jsxs)(o.zJl, {
     fade: true,
     className: Z.scroller,
-    children: [(null == O ? true : O.bio) != null && (null == O ? true : O.bio) !== "" && !_ && (0, l.jsx)(x.Z, {
+    children: [(null == O ? true : O.bio) != null && (null == O ? true : O.bio) !== "" && !E && (0, l.jsx)(p.Z, {
       userBio: O.bio,
       setLineClamp: false
-    }), (null == O ? true : O.guildId) != null && (0, l.jsx)(g.Z, {
+    }), (null == O ? true : O.guildId) != null && (0, l.jsx)(j.Z, {
       user: n,
       currentUser: t,
-      guildId: O.guildId,
-      scrollIntoView: N === I.Tb.ROLES
-    }), n.isProvisional && (0, l.jsx)(j.Z, {
+      guildId: O.guildId
+    }), n.isProvisional && (0, l.jsx)(b.Z, {
       heading: y.intl.string(y.t.Iyka0U),
       headingIcon: (0, l.jsx)(o.Mgn, {
         size: "xxs",
         color: o.TVs.colors.TEXT_STRONG
       }),
       headingColor: "text-default",
-      children: (0, l.jsx)(c.n, {
+      children: (0, l.jsx)(a.n, {
         userId: n.id
       })
-    }), E.length > 0 && (0, l.jsx)(j.Z, {
+    }), P.length > 0 && (0, l.jsx)(b.Z, {
       heading: y.intl.string(y.t["Uv/eTx"]),
-      children: (0, l.jsx)(b.Z, {
-        applicationIds: E
+      children: (0, l.jsx)(h.Z, {
+        applicationIds: P
       })
-    }), (0, l.jsx)(j.Z, {
+    }), (0, l.jsx)(b.Z, {
       heading: y.intl.string(y.t.a6XYD9),
       children: (0, l.jsx)(v.Z, {
         userId: n.id,
         guildId: null == O ? true : O.guildId,
         tooltipDelay: I.vB
       })
-    }), S.length > 0 && (0, l.jsx)(j.Z, {
+    }), C.length > 0 && (0, l.jsx)(b.Z, {
       heading: y.intl.string(y.t["3fe7U5"]),
-      scrollIntoView: N === I.Tb.CONNECTIONS,
-      children: (0, l.jsx)(h.ZP, {
-        connectedAccounts: S,
+      scrollTargetId: I.Tb.CONNECTIONS,
+      children: (0, l.jsx)(x.ZP, {
+        connectedAccounts: C,
         className: Z.connections,
         userId: n.id,
-        locale: C
+        locale: _
       })
-    }), w.length > 0 && (0, l.jsx)(j.Z, {
+    }), S.length > 0 && (0, l.jsx)(b.Z, {
       heading: y.intl.string(y.t.PHjkRE),
-      children: w.map(e => (0, l.jsx)(h.tH, {
+      children: S.map(e => (0, l.jsx)(x.tH, {
         className: Z.appsConnections,
         applicationRoleConnection: e,
-        locale: C,
+        locale: _,
         onApplicationClicked: () => {
-          A({
+          N({
             action: "PRESS_APP_CONNECTION"
           }), T()
         },
-        selectedGuildId: null != P ? P : true
+        selectedGuildId: null != A ? A : true
       }, e.application.id))
-    }), (0, l.jsx)(j.Z, {
-      heading: y.intl.string(y.t["mQKv+v"]),
-      scrollIntoView: N === I.Tb.NOTE,
-      children: (0, l.jsx)(r.Z, {
-        userId: n.id,
-        className: Z.note,
-        autoFocus: N === I.Tb.NOTE,
-        onUpdate: () => A({
-          action: "SET_NOTE"
-        })
-      })
+    }), (0, l.jsx)(g.Z, {
+      userId: n.id
     })]
   })
 }

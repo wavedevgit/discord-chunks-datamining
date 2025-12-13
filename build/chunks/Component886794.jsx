@@ -45,7 +45,7 @@ function C(e) {
     openedAt: M,
     onClose: B,
     sourceAnalyticsLocations: U = []
-  } = e, k = C === N.ME ? true : C, G = (0, m.ZP)(t.id, k), V = u.ZP.getName(k, S, t), F = (0, c.Dt)(), {
+  } = e, k = C === T.ME ? true : C, G = (0, m.ZP)(t.id, k), F = u.ZP.getName(k, S, t), V = (0, c.Dt)(), {
     analyticsLocations: W
   } = (0, a.ZP)([...U, r.Z.USER_PROFILE_MODAL]), z = (0, f.ZB)({
     layout: "MODAL",
@@ -69,21 +69,21 @@ function C(e) {
         transitionState: R,
         className: P.root,
         hideShadow: true,
-        "aria-labelledby": F,
+        "aria-labelledby": V,
         parentComponent: "NonUserBotProfileModal",
         children: [(0, l.jsx)(o.y5t, {
           component: (0, l.jsx)(o.nn4, {
             children: (0, l.jsx)(o.H, {
-              id: F,
+              id: V,
               children: A.intl.format(A.t.KRe1Fk, {
-                name: V
+                name: F
               })
             })
           }),
           children: (0, l.jsxs)(g.Z, {
             user: t,
             displayProfile: G,
-            themeType: T.l.MODAL,
+            themeType: N.l.MODAL,
             ref: (null == G ? true : G.profileEffect) != null ? H : true,
             children: [(0, l.jsx)(Z.Z, {
               children: (0, l.jsx)(y.Z, {
@@ -93,7 +93,7 @@ function C(e) {
               children: [(0, l.jsx)(h.Z, {
                 user: t,
                 displayProfile: G,
-                themeType: T.l.MODAL
+                themeType: N.l.MODAL
               }), (0, l.jsx)("div", {
                 className: P.headerInner,
                 children: (0, l.jsx)(p.Z, {
@@ -101,7 +101,7 @@ function C(e) {
                   displayProfile: G,
                   guildId: k,
                   channelId: S,
-                  themeType: T.l.MODAL
+                  themeType: N.l.MODAL
                 })
               })]
             }), (0, l.jsxs)("div", {
@@ -110,12 +110,12 @@ function C(e) {
                 className: P.username,
                 user: t,
                 guildId: k,
-                nickname: V,
+                nickname: F,
                 pronouns: null == G ? true : G.pronouns,
                 nicknameVariant: "heading-xl/bold",
                 tags: (0, l.jsx)(x.Z, {
                   displayProfile: G,
-                  themeType: T.l.MODAL,
+                  themeType: N.l.MODAL,
                   onClose: B
                 })
               }), (0, l.jsxs)("div", {
@@ -124,7 +124,7 @@ function C(e) {
                   className: _.tabBar,
                   type: "top",
                   selectedItem: O.oh.BOT_INFO,
-                  onItemSelect: N.dG4,
+                  onItemSelect: T.dG4,
                   children: (0, l.jsx)(o.njP.Item, {
                     className: _.tabBarItem,
                     id: O.oh.BOT_INFO,
@@ -137,13 +137,13 @@ function C(e) {
                 }), (0, l.jsxs)(o.zJl, {
                   fade: true,
                   className: E.scroller,
-                  children: [(0, l.jsx)(b.Z, {
+                  children: [(0, l.jsx)(v.Z, {
                     userId: t.id,
                     userBio: null == G ? true : G.bio,
                     setLineClamp: false
                   }), (0, l.jsx)(j.Z, {
                     heading: A.intl.string(A.t["A//N4k"]),
-                    children: (0, l.jsx)(v.Z, {
+                    children: (0, l.jsx)(b.Z, {
                       userId: t.id,
                       guildId: k,
                       tooltipDelay: O.vB

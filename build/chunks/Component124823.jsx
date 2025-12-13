@@ -66,11 +66,11 @@ function w(e) {
   }), G = i.useRef(null), {
     isHoveringOrFocusing: H,
     isHovering: F
-  } = (0, u.Z)(G), B = e => {
+  } = (0, u.Z)(G), B = () => {
     (0, b.openUserProfileModal)(R({
       sourceAnalyticsLocations: k,
       hideRestrictedProfile: true
-    }, U, e))
+    }, U))
   };
   return (0, r.jsx)(c.Gt, {
     value: k,

@@ -40,7 +40,8 @@ function h(e) {
       ignoreMaxGames: true
     }), (0, u.openUserProfileModal)({
       userId: g,
-      section: _.oh.WIDGETS
+      tabSection: _.oh.WIDGETS,
+      scrollTarget: a.l.CURRENT_GAMES
     }), null == h || h()
   }, [t, g, n, h]);
   return y ? (0, r.jsx)(d.O1, {

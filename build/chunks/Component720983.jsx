@@ -54,7 +54,7 @@ function N(e) {
   } = (0, u.ZP)(), A = i.useCallback(() => {
     (null == L ? true : L.id) != null && (0, p.openUserProfileModal)({
       userId: L.id,
-      section: k.oh.WISHLIST,
+      tabSection: k.oh.WISHLIST,
       showGuildProfile: false,
       sourceAnalyticsLocations: [c.Z.SOCIAL_LAYER_STOREFRONT]
     })

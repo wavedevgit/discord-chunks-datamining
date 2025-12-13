@@ -48,7 +48,7 @@ function P(e, n) {
     j = (0, i.e7)([Z.Z], () => Z.Z.getGuild(n)),
     v = (0, i.e7)([g.Z], () => g.Z.getSortedRoles(n)),
     N = (0, i.e7)([a.Z], () => a.Z.roleStyle),
-    y = (0, u.sE)(n, {
+    y = (0, o.sE)(n, {
       location: h,
       targetUserId: e
     }),
@@ -76,7 +76,7 @@ function P(e, n) {
         label: () => p(t, N, C),
         disabled: i,
         action: () => {
-          x.includes(t.id) ? (o.Z.updateMemberRoles(n, e, x.filter(e => e !== t.id), [], [t.id]), y(u.jQ.REMOVE_ROLE)) : (o.Z.updateMemberRoles(n, e, x.concat([t.id]), [t.id], []), y(u.jQ.ADD_ROLE))
+          x.includes(t.id) ? (u.Z.updateMemberRoles(n, e, x.filter(e => e !== t.id), [], [t.id]), y(o.jQ.REMOVE_ROLE)) : (u.Z.updateMemberRoles(n, e, x.concat([t.id]), [t.id], []), y(o.jQ.ADD_ROLE))
         },
         checked: a
       }, t.id)

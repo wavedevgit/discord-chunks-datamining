@@ -173,7 +173,7 @@ function G(e) {
                 title: ei,
                 onClick: () => {
                   null == J || J({
-                    section: D.oh.WISHLIST
+                    tabSection: D.oh.WISHLIST
                   })
                 }
               })

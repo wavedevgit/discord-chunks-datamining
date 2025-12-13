@@ -23,7 +23,9 @@ function x() {
     t = (0, Chunk442837.e7)([Chunk441623.ZP], () => Chunk441623.ZP.getDevToolCurrentDate()),
     n = (0, Chunk442837.e7)([Chunk441623.ZP], () => Chunk441623.ZP.getGiftUnreadNotificationLastDismissedTimes()),
     r = (0, Chunk442837.e7)([Chunk441623.ZP], () => Chunk441623.ZP.getMessageGiftIntentLastShownMap()),
-    x = e => {
+    x = (0, Chunk442837.e7)([Chunk441623.ZP], () => Chunk441623.ZP.getHighestAffinityFriendAnniversaries()),
+    b = (0, Chunk442837.e7)([Chunk441623.ZP], () => Chunk441623.ZP.getHighAffinityFriendAnniversaries()),
+    g = e => {
       c.Z.dispatch({
         type: "DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT",
         total: e
@@ -76,7 +78,7 @@ function x() {
             }],
             value: module,
             onChange: e => {
-              x(e)
+              g(e)
             },
             popoutLayerContext: Chunk246992.O$
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
@@ -84,8 +86,42 @@ function x() {
             variant: "secondary",
             text: "Clear",
             onClick: () => {
-              x(null)
+              g(null)
             }
+          })]
+        })
+      }), null != module && (0, Chunk54381.jsx)("div", {
+        className: Chunk555109.panelRow,
+        children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+          gap: 8,
+          children: [x.length > 0 && (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+            gap: 4,
+            children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+              variant: "text-xs/semibold",
+              children: "Highest Affinity Friend Anniversaries (Eligible for Notification):"
+            }), x.map(e => {
+              var t;
+              let n = m.default.getUser(e),
+                r = null != (t = null == n ? true : n.username) ? t : "Unknown User (".concat(e, ")");
+              return (0, a.jsx)(o.Text, {
+                variant: "text-xs/normal",
+                children: r
+              }, e)
+            })]
+          }), b.length > 0 && (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+            gap: 4,
+            children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+              variant: "text-xs/semibold",
+              children: "High Affinity Friend Anniversaries:"
+            }), b.map(e => {
+              var t;
+              let n = m.default.getUser(e),
+                r = null != (t = null == n ? true : n.username) ? t : "Unknown User (".concat(e, ")");
+              return (0, a.jsx)(o.Text, {
+                variant: "text-xs/normal",
+                children: r
+              }, e)
+            })]
           })]
         })
       }), (0, Chunk54381.jsx)("div", {

@@ -29,7 +29,8 @@ function p(e) {
     E({
       action: "PRESS_ADD_NOTE"
     }), null == i || i({
-      subsection: u.Tb.NOTE
+      tabSection: u.oh.USER_INFO,
+      scrollTarget: u.Tb.NOTE
     })
   };
   return (0, r.jsx)(o.u, {

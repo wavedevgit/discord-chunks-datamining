@@ -30,8 +30,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk59110 = require("./59110.js");
 
 function E(e, n) {
-  let t = (0, u.e7)([j.Z], () => j.Z.getVoiceChannelId()),
-    l = (0, u.e7)([P.Z], () => {
+  let t = (0, o.e7)([j.Z], () => j.Z.getVoiceChannelId()),
+    l = (0, o.e7)([P.Z], () => {
       var e, n;
       return null != (n = null == (e = P.Z.getChannel(t)) ? true : e.getGuildId()) ? n : true
     }),
@@ -45,14 +45,14 @@ function E(e, n) {
 }
 
 function _(e, n) {
-  let [t, i] = (0, u.Wu)([f.Z], () => [null != n ? f.Z.getParticipants(n) : null, null != n ? f.Z.getParticipant(n, e.id) : null], [n, e.id]), s = (0, u.e7)([P.Z], () => P.Z.getChannel(n)), O = (0, b.s)(e, "context_menu", n), {
+  let [t, i] = (0, o.Wu)([f.Z], () => [null != n ? f.Z.getParticipants(n) : null, null != n ? f.Z.getParticipant(n, e.id) : null], [n, e.id]), s = (0, o.e7)([P.Z], () => P.Z.getChannel(n)), O = (0, b.s)(e, "context_menu", n), {
     enabled: j
   } = p.Z.useExperiment({
     guildId: null == s ? true : s.guild_id,
     location: "useRingHangupItem"
   }), E = !O || (null == t ? true : t.length) === 0 || null == n, _ = j && (null == s ? true : s.guild_id) != null, S = null == i, T = null != i && i.type === v.fO.USER && i.ringing, A = [];
-  _ && !E && (S || T) && A.push(o.z.RING_USER_TO_VC_NEW_BADGE);
-  let [U, M] = (0, m.US)(A), k = U === o.z.RING_USER_TO_VC_NEW_BADGE, {
+  _ && !E && (S || T) && A.push(u.z.RING_USER_TO_VC_NEW_BADGE);
+  let [U, M] = (0, m.US)(A), k = U === u.z.RING_USER_TO_VC_NEW_BADGE, {
     analyticsLocations: w
   } = (0, g.ZP)();
   return ((0, Z.Z)({

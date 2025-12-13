@@ -23,8 +23,8 @@ function p(e) {
     guildId: p,
     channelId: x,
     displayProfile: h,
-    relationshipType: b,
-    onClose: v
+    relationshipType: v,
+    onClose: b
   } = e, {
     newestAnalyticsLocation: j
   } = (0, o.ZP)(), g = (0, r.Z)({
@@ -32,7 +32,7 @@ function p(e) {
     guildId: p,
     channelId: x,
     displayProfile: h,
-    onClose: v
+    onClose: b
   }), {
     gameFriends: I,
     hasOutgoingPendingGameFriends: y,
@@ -40,13 +40,13 @@ function p(e) {
   } = (0, f.H)({
     userId: n.id
   }), O = I.length > 0 || y || Z;
-  return b === m.OGo.BLOCKED ? null : n.id === t.id ? (0, l.jsxs)(l.Fragment, {
+  return v === m.OGo.BLOCKED ? null : n.id === t.id ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(a.Z, {
       user: n,
       guildId: p,
-      onClose: v
+      onClose: b
     }), (0, l.jsx)(d.Z, {
-      onClose: v
+      onClose: b
     }), (0, l.jsx)(s.wV, {
       user: n,
       guildId: p,
@@ -62,7 +62,7 @@ function p(e) {
       guildId: p,
       viewProfileItem: g
     })]
-  }) : b === m.OGo.PENDING_INCOMING ? (0, l.jsxs)(l.Fragment, {
+  }) : v === m.OGo.PENDING_INCOMING ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(c.H, {
       userId: n.id,
       onClose: i.Z.popAll,
@@ -71,21 +71,21 @@ function p(e) {
       user: n,
       guildId: p
     })]
-  }) : b === m.OGo.FRIEND || b === m.OGo.PENDING_OUTGOING ? (0, l.jsxs)(l.Fragment, {
+  }) : v === m.OGo.FRIEND || v === m.OGo.PENDING_OUTGOING ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(c.H, {
       userId: n.id,
       onClose: i.Z.popAll,
       autoFocus: true
     }), (0, l.jsx)(u.n1, {
       user: n,
-      relationshipType: b,
+      relationshipType: v,
       analyticsLocation: j
     }), (0, l.jsx)(s.wV, {
       user: n,
       guildId: p,
       viewProfileItem: g
     })]
-  }) : b === m.OGo.NONE && O ? (0, l.jsxs)(l.Fragment, {
+  }) : v === m.OGo.NONE && O ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(c.H, {
       userId: n.id,
       onClose: i.Z.popAll,

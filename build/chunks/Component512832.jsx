@@ -18,7 +18,7 @@ function u(e) {
     onOpenProfile: n
   } = e, u = i.useCallback(() => {
     null == n || n({
-      section: c.oh.WISHLIST
+      tabSection: c.oh.WISHLIST
     })
   }, [n]), {
     displayedWishlistItems: d,

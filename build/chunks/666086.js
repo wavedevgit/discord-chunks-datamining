@@ -66,11 +66,6 @@ class O extends Chunk147913.Z {
       }
     }
   }
-  recipientUserIDForGiftingNotification() {
-    if (Chunk441623.ZP.canShowGiftNotification()) return Chunk441623.ZP.getFriendAnniversaries().find(e => h.ZP.isFreshTopAffinityFriendAnniversary({
-      userId: e
-    }))
-  }
   async sendGiftingNotificationIfEligible() {
     let {
       enabled: e
@@ -78,7 +73,7 @@ class O extends Chunk147913.Z {
       location: "PremiumGiftingIntentManager handleTopAffinityUnreadNotification"
     }), t = Chunk695346.vc.getSetting();
     if (!module || !exports) return;
-    let n = this.recipientUserIDForGiftingNotification();
+    let n = Chunk441623.ZP.getNextRecipientUserIDForNotification();
     if (null != require) try {
       let e = await Chunk493683.Z.getOrEnsurePrivateChannel(require),
         t = Chunk592125.Z.getChannel(module);
@@ -87,7 +82,7 @@ class O extends Chunk147913.Z {
         channelId: exports.id,
         isPreload: true
       });
-      let r = this.recipientUserIDForGiftingNotification();
+      let r = Chunk441623.ZP.getNextRecipientUserIDForNotification();
       if (Chunk106351 !== require) return;
       Chunk904245.Z.sendGiftingPromptSystemMessage(exports.id, {
         giftIntentType: Chunk474936.hX.FRIEND_ANNIVERSARY,

@@ -44,17 +44,17 @@ let G = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: n,
     guildId: t,
-    channel: u,
-    context: o,
+    channel: o,
+    context: u,
     onSelect: G,
     onHeightUpdate: L
-  } = e, V = u.id, H = (0, M.Z)({
+  } = e, V = o.id, H = (0, M.Z)({
     userId: n.id,
     guildId: t,
     channelId: V
-  }), q = (0, C.Z)(n, t, o), B = (0, I.Z)(n.id, o), K = (0, w.Z)(n.id), W = (0, x.Z)({
+  }), q = (0, C.Z)(n, t, u), B = (0, I.Z)(n.id, u), K = (0, w.Z)(n.id), W = (0, x.Z)({
     user: n,
-    context: o
+    context: u
   }), Q = (0, i.e7)([h.Z, m.Z], () => {
     let e = h.Z.getVoiceChannelId();
     return m.Z.getChannel(e)
@@ -67,7 +67,7 @@ let G = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     user: n,
     guildId: t,
     channelId: V,
-    context: o
+    context: u
   }), J = (0, P.Z)({
     user: n
   }), {
@@ -81,7 +81,7 @@ let G = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
       object: R.qAy.CONTEXT_MENU_ITEM
     },
     analyticsLocations: $,
-    context: o
+    context: u
   }), en = (0, _.Z)({
     user: n,
     guildId: t
@@ -96,18 +96,18 @@ let G = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     guildId: t,
     channelId: V,
     location: "ThreadUserContextMenu"
-  }), eu = (0, E.Z)({
+  }), eo = (0, E.Z)({
     user: n,
     guildId: t,
     channelId: V,
     location: "ThreadUserContextMenu"
-  }), eo = (0, U.Z)(n, t, V), es = (0, k.Z)(n.id, t), ed = (0, S.Z)(n, t), ec = (0, Z.Z)({
+  }), eu = (0, U.Z)(n, t, V), es = (0, k.Z)(n.id, t), ed = (0, S.Z)(n, t), ec = (0, Z.Z)({
     id: n.id,
     label: D.intl.string(D.t["/AXYnE"])
   }), eg = (0, b.Z)(n), eZ = (0, N.Z)({
     commandType: s.yU.USER,
     commandTargetId: n.id,
-    channel: u,
+    channel: o,
     guildId: t,
     onHeightUpdate: L
   }), ef = n.isNonUserBot();
@@ -124,9 +124,9 @@ let G = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
       }), (0, l.jsx)(r.kSQ, {
         children: et
       }), (0, l.jsxs)(r.kSQ, {
-        children: [ee, eZ, en, el, ei, er, eu, ea]
+        children: [ee, eZ, en, el, ei, er, eo, ea]
       }), (0, l.jsx)(r.kSQ, {
-        children: eo
+        children: eu
       }), (0, l.jsxs)(r.kSQ, {
         children: [es, ed]
       })]

@@ -113,7 +113,7 @@ function I(e) {
         action: "PRESS_SHOW_MORE_ACTIVITY",
         analyticsLocations: T
       }), null == v || v({
-        section: g.oh.ACTIVITY
+        tabSection: g.oh.ACTIVITY
       })
     }
   })

@@ -37,7 +37,7 @@ let g = () => {
           userId: g,
           sourceAnalyticsLocations: [Chunk100527.Z.USER_SETTINGS_USER_PROFILE],
           hideRestrictedProfile: true,
-          section: Chunk228168.oh.WIDGETS
+          tabSection: Chunk228168.oh.WIDGETS
         })
       },
       size: "sm"
