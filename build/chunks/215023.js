@@ -110,6 +110,7 @@ let j = {
       static: Chunk25951.Z
     },
     logoUrl: Chunk704514.Z,
+    heroLogoUrl: Chunk704514.Z,
     name: "Try Before You Buy!",
     summary: " ",
     title: " "
