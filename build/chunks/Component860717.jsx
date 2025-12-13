@@ -390,12 +390,12 @@ function X(e, t) {
 let Q = Chunk473749.createContext(null);
 
 function J(e) {
-  return (0, o.cj)([g.Z, T.Z, S.Z], () => {
+  return (0, o.cj)([g.Z, _.Z, S.Z], () => {
     let t = g.Z.getApplication(e.applicationId);
     return {
       application: t,
       game: null != t ? S.Z.getGameByApplication(t) : null,
-      config: T.Z.getApplicationWidgetApplicationConfig(e.applicationId)
+      config: _.Z.getApplicationWidgetApplicationConfig(e.applicationId)
     }
   })
 }
@@ -456,7 +456,7 @@ function ee(e) {
 let et = Object.assign(function(e) {
   let {
     trackUserProfileAction: t
-  } = (0, _.KZ)(), {
+  } = (0, T.KZ)(), {
     user: n,
     widget: a,
     cta: s,
@@ -465,7 +465,7 @@ let et = Object.assign(function(e) {
     application: h,
     game: y,
     config: v
-  } = J(a), O = null == h ? true : h.getIconURL(16), x = (0, P.O)(n.id).data, S = null == x ? true : x.find(e => e.application_id === a.applicationId), T = (0, b.Z)({
+  } = J(a), O = null == h ? true : h.getIconURL(16), x = (0, P.O)(n.id).data, S = null == x ? true : x.find(e => e.application_id === a.applicationId), _ = (0, b.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == y ? true : y.id,
     source: p.m1.UserProfile,
@@ -505,7 +505,7 @@ let et = Object.assign(function(e) {
     children: H
   }) : (0, r.jsx)(c.P3F, {
     className: l()(N.headerTitle, N.clickable),
-    onClick: T,
+    onClick: _,
     children: H
   }), K = (0, o.e7)([I.default], () => I.default.locale), q = i.useMemo(() => {
     let e = function(e, t, n) {
@@ -583,7 +583,7 @@ let et = Object.assign(function(e) {
       id: "view-game-profile",
       label: "View Game Profile",
       icon: c.iWm,
-      action: T
+      action: _
     }) : null,
     children: [(0, r.jsx)(Q.Provider, {
       value: e,

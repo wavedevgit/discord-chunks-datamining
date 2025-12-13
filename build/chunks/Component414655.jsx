@@ -43,7 +43,7 @@ function k(e) {
     title: C.intl.string(C.t["i/yzHs"]),
     handleOpenCollectiblesShop: n,
     handleOpenGameShop: i,
-    socialLayerStorefrontApplicationId: T.t9
+    socialLayerStorefrontApplicationId: _.t9
   }) : (0, r.jsx)(s.Button, {
     variant: "secondary",
     size: "sm",
@@ -107,7 +107,7 @@ function A(e) {
     analyticsLocations: R
   } = (0, d.ZP)(), {
     trackUserProfileWishlistAction: G
-  } = (0, v.KZ)(), M = (null == A ? true : A.id) === n.id, L = false === n.nsfwAllowed, B = T.t9, [U, F] = i.useState(true);
+  } = (0, v.KZ)(), M = (null == A ? true : A.id) === n.id, L = false === n.nsfwAllowed, B = _.t9, [U, F] = i.useState(true);
   i.useEffect(() => {
     (null == Z ? true : Z.visibility) != null && F(Z.visibility === a.f.PUBLIC)
   }, [null == Z ? true : Z.visibility]);
@@ -140,7 +140,7 @@ function A(e) {
     let e = U ? a.f.PRIVATE : a.f.PUBLIC;
     F(!U), m.Z.updateWishlistVisibility(E, e), G({
       wishlistId: E,
-      action: U ? _.NW.WISHLIST_TOGGLE_PRIVATE : _.NW.WISHLIST_TOGGLE_PUBLIC,
+      action: U ? T.NW.WISHLIST_TOGGLE_PRIVATE : T.NW.WISHLIST_TOGGLE_PUBLIC,
       productLines: null == W ? true : W.getProductLines()
     })
   }, [E, U, G, W]), Y = i.useCallback(() => {
@@ -184,7 +184,7 @@ function A(e) {
           variant: "primary",
           size: "sm",
           icon: s.EOn,
-          text: B === T.t9 ? C.intl.string(C.t["kq/75v"]) : C.intl.string(C.t.apFNLU),
+          text: B === _.t9 ? C.intl.string(C.t["kq/75v"]) : C.intl.string(C.t.apFNLU),
           onMouseDown: X,
           onClick: Q
         })]

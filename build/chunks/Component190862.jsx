@@ -120,6 +120,7 @@ function j(e) {
     widget: t
   } = e, n = y(e, ["widget"]);
   return (0, r.jsx)(u.N, {
+    widgetType: t.type,
     children: (0, r.jsx)(O, h({
       widget: t
     }, n))

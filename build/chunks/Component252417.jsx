@@ -33,8 +33,8 @@ function j(e) {
     theme: w,
     themeType: S
   } = (0, b.z)(), E = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, P), [t, P]), {
-    activities: _,
-    isMobileOnline: T
+    activities: T,
+    isMobileOnline: _
   } = (0, a.cj)([p.Z], () => ({
     activities: p.Z.getActivities(t.id),
     isMobileOnline: p.Z.isMobileOnline(t.id)
@@ -107,7 +107,7 @@ function j(e) {
       size: v,
       status: E ? m.Skl.UNKNOWN : j,
       statusBackdropColor: E ? true : (0, l.QFD)(w),
-      isMobile: T,
+      isMobile: _,
       className: y.avatar
     }), (0, r.jsxs)("div", {
       className: y.details,
@@ -117,7 +117,7 @@ function j(e) {
         discriminatorClass: y.discriminator
       }), (0, r.jsx)(d.Z, {
         user: t,
-        activities: _,
+        activities: T,
         applicationStream: C,
         voiceChannel: k
       })]

@@ -143,11 +143,11 @@ function F(e) {
   (0, P.s)(x);
   let {
     data: S,
-    refetch: T
+    refetch: _
   } = (0, p.O)(w), C = i.useRef(S);
   C.current = S, i.useEffect(() => {
-    null !== C.current && T()
-  }, [T]);
+    null !== C.current && _()
+  }, [_]);
   let k = () => (0, r.jsxs)(r.Fragment, {
     children: [c && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(E.Z, {
@@ -166,7 +166,7 @@ function F(e) {
   if (f)
     if (d) return (0, r.jsx)(D.Z, {});
     else return (0, r.jsx)(A.Z, {});
-  return c ? (0, r.jsx)(_.K, {
+  return c ? (0, r.jsx)(T.K, {
     children: k()
   }) : k()
 }
@@ -187,7 +187,7 @@ function W(e) {
       [R.hasToolbar]: o
     }),
     fade: true,
-    children: [(0, r.jsx)(T.Z, {
+    children: [(0, r.jsx)(_.Z, {
       scrollerRef: a
     }), (0, r.jsx)(F, G({
       user: t

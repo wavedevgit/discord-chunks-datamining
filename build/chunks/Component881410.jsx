@@ -98,20 +98,20 @@ function m(e) {
       label: e.label,
       disabled: v.has(e.value)
     })), [w, v]),
-    _ = i.useMemo(() => p(g({}, S), {
+    T = i.useMemo(() => p(g({}, S), {
       threshold: a.Lu.rankings.CONTAINS,
       keys: ["label"]
     }), [S]),
-    T = i.useCallback(e => "" === e.trim() ? E.length : (0, a.Lu)(E, e, _).length, [E, _]),
+    _ = i.useCallback(e => "" === e.trim() ? E.length : (0, a.Lu)(E, e, T).length, [E, T]),
     C = i.useCallback(e => {
       let n = e.target.value;
       "" === j.trim() && "" !== n.trim() && O({
         action: "GAME_SEARCH_SESSION_STARTED",
         widgetEdited: t,
         numCharacters: n.trim().length,
-        numResults: T(n)
+        numResults: _(n)
       }), x(n), P.current = n
-    }, [j, O, t, T]);
+    }, [j, O, t, _]);
   return (0, r.jsx)(o.yRy, p(g({}, y), {
     onRequestOpen: () => {
       O({
@@ -124,7 +124,7 @@ function m(e) {
         action: "GAME_SEARCH_SESSION_ENDED",
         widgetEdited: t,
         numCharacters: P.current.trim().length,
-        numResults: T(P.current)
+        numResults: _(P.current)
       })
     },
     renderPopout: e => {
@@ -141,7 +141,7 @@ function m(e) {
             null != e && (I(e), t())
           },
           options: E,
-          matchSorterOptions: _,
+          matchSorterOptions: T,
           children: [(0, r.jsx)(l.Ct, {
             label: d.intl.string(d.t["5h0QOP"]),
             hideLabel: true,

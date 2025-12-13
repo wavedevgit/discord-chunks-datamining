@@ -47,7 +47,7 @@ function E(e) {
   return e
 }
 
-function _(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function _(e, t) {
   }), e
 }
 
-function T(e) {
+function _(e) {
   let {
     index: t,
     widgetType: n,
@@ -118,9 +118,9 @@ function C(e) {
     sourceUserId: n,
     trackEntryPointImpression: true
   });
-  return null == l ? (0, r.jsx)(c.Heading, _(E({}, a), {
+  return null == l ? (0, r.jsx)(c.Heading, T(E({}, a), {
     children: i
-  })) : (0, r.jsx)(c.Heading, _(E({}, a), {
+  })) : (0, r.jsx)(c.Heading, T(E({}, a), {
     children: (0, r.jsx)(c.P3F, {
       onClick: l,
       className: S.clickableText,
@@ -192,12 +192,12 @@ function A(e) {
     applicationId: f
   } = e, g = (0, s.Dt)(), m = (0, s.Dt)(), {
     trackUserProfileEditAction: h
-  } = (0, p.KZ)(), [y, v] = i.useState("idle"), [O, j] = i.useState(null != t ? t : ""), x = i.useRef(null), P = i.useRef(null), w = I.intl.string(I.t.xKSfBT), E = null != t && "" !== t.trim(), _ = i.useCallback(() => {
+  } = (0, p.KZ)(), [y, v] = i.useState("idle"), [O, j] = i.useState(null != t ? t : ""), x = i.useRef(null), P = i.useRef(null), w = I.intl.string(I.t.xKSfBT), E = null != t && "" !== t.trim(), T = i.useCallback(() => {
     h({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
     }), v("editing")
-  }, [d, h]), T = i.useCallback(() => {
+  }, [d, h]), _ = i.useCallback(() => {
     let e = O.trim(),
       n = e !== (null != t ? t : "").trim();
     (0, b.Bu)(d, f, "" !== e ? e : true), v("completed"), n && h({
@@ -226,11 +226,11 @@ function A(e) {
       value: O,
       placeholder: w,
       onChange: C,
-      onBlur: T,
+      onBlur: _,
       rows: 3,
       autoFocus: "editing" === y,
       onKeyDown: e => {
-        "Enter" !== e.key || e.shiftKey || (e.preventDefault(), T())
+        "Enter" !== e.key || e.shiftKey || (e.preventDefault(), _())
       },
       maxLength: o.rN
     })]
@@ -238,7 +238,7 @@ function A(e) {
     ref: P,
     role: "group",
     "aria-labelledby": m,
-    onClick: _,
+    onClick: T,
     className: S.editableCommentContainer,
     children: [(0, r.jsx)(c.vdY, {
       size: "xxs",
@@ -256,7 +256,7 @@ function A(e) {
       innerRef: x,
       "aria-label": I.intl.string(I.t.ppb9MJ),
       onClick: e => {
-        e.stopPropagation(), _()
+        e.stopPropagation(), T()
       },
       focusProps: {
         ringTarget: P
@@ -312,7 +312,7 @@ function Z(e) {
         })]
       }) : K(), (0, r.jsxs)("div", {
         className: S.details,
-        children: [s ? (0, r.jsx)(c.Heading, _(E({}, M), {
+        children: [s ? (0, r.jsx)(c.Heading, T(E({}, M), {
           children: R
         })) : (0, r.jsx)(C, E({
           applicationId: I,
@@ -350,7 +350,7 @@ function Z(e) {
         onRemove: () => null == d ? true : d(a.applicationId)
       })]
     });
-  return H ? (0, r.jsx)(T, {
+  return H ? (0, r.jsx)(_, {
     index: null != u ? u : 0,
     widgetType: o,
     game: a,

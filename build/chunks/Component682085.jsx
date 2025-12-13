@@ -76,17 +76,17 @@ function O() {
     }, {
       stackingBehavior: "stack"
     })
-  }, [exports]), _ = null == j || null == x || null == S || !w, T = null != I;
+  }, [exports]), T = null == j || null == x || null == S || !w, _ = null != I;
   if (Chunk473749.useEffect(() => {
-      !_ && T && (O.current || (module({
+      !T && _ && (O.current || (module({
         action: "VIEW_APPLICATION_WIDGETS_EMPTY_STATE",
         applicationId: x.id
       }), O.current = true))
-    }, [_, T, module, null == x ? true : x.id]), _) return (0, Chunk54381.jsx)("div", {
+    }, [T, _, module, null == x ? true : x.id]), T) return (0, Chunk54381.jsx)("div", {
     className: Chunk284459.loading,
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   });
-  if (!T) return (0, Chunk54381.jsx)(Chunk795990.Z, {});
+  if (!_) return (0, Chunk54381.jsx)(Chunk795990.Z, {});
   let C = (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
     gap: 4,
     className: Chunk284459.header,

@@ -30,10 +30,10 @@ function j(e) {
   } = (0, f.KZ)(), [a, j] = i.useState(false), x = (0, c.Wu)([b.Z], () => {
     var e;
     return null != (e = b.Z.getSaveablePendingWidgets()) ? e : []
-  }), P = (0, c.Wu)([b.Z], () => b.Z.getChangedWidgets()), I = (0, c.Wu)([b.Z], () => b.Z.getRemovedWidgets()), w = (0, c.e7)([b.Z], () => b.Z.hasUnsavedChanges()), S = (0, c.e7)([b.Z], () => b.Z.canSaveChanges()), E = (0, c.e7)([b.Z], () => b.Z.isSubmitting), _ = (0, c.e7)([u.Z], () => u.Z.useReducedMotion), T = (0, s.Yzy)(w, {
+  }), P = (0, c.Wu)([b.Z], () => b.Z.getChangedWidgets()), I = (0, c.Wu)([b.Z], () => b.Z.getRemovedWidgets()), w = (0, c.e7)([b.Z], () => b.Z.hasUnsavedChanges()), S = (0, c.e7)([b.Z], () => b.Z.canSaveChanges()), E = (0, c.e7)([b.Z], () => b.Z.isSubmitting), T = (0, c.e7)([u.Z], () => u.Z.useReducedMotion), _ = (0, s.Yzy)(w, {
     from: {
       opacity: 0,
-      y: 80 * !_
+      y: 80 * !T
     },
     enter: {
       opacity: 1,
@@ -41,7 +41,7 @@ function j(e) {
     },
     leave: {
       opacity: 0,
-      y: 80 * !_
+      y: 80 * !T
     }
   });
   i.useEffect(() => {
@@ -86,7 +86,7 @@ function j(e) {
     D = i.useCallback(() => {
       p.Z.clearPendingWidgets()
     }, []);
-  return T((e, n) => n ? (0, r.jsx)(o.animated.div, {
+  return _((e, n) => n ? (0, r.jsx)(o.animated.div, {
     className: t,
     style: e,
     children: (0, r.jsxs)("section", {

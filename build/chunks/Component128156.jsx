@@ -34,8 +34,8 @@ function S(e) {
     currentUser: n,
     displayProfile: S,
     guildId: E,
-    channelId: _,
-    onClose: T
+    channelId: T,
+    onClose: _
   } = e, {
     voiceActivityStatusEnabled: C
   } = (0, l.U)({
@@ -74,12 +74,12 @@ function S(e) {
   if (!F && !W && !G) {
     var H;
     return M ? (0, r.jsx)(v.Uf, {
-      onClose: T
+      onClose: _
     }) : (0, r.jsx)(v.P9, {
       user: t,
       guildId: null != (H = null == S ? true : S.guildId) ? H : E,
-      channelId: _,
-      onClose: T
+      channelId: T,
+      onClose: _
     })
   }
   return (0, r.jsxs)(j.F, {
@@ -94,28 +94,28 @@ function S(e) {
             user: t,
             currentUser: n,
             voiceChannel: Z,
-            onClose: T
+            onClose: _
           })
         }), null != A && (0, r.jsx)("li", {
           children: (0, r.jsx)(h.Z, {
             user: t,
             currentUser: n,
             stream: A,
-            onClose: T
+            onClose: _
           })
         }), k.map((e, i) => (0, r.jsx)("li", {
           children: (0, r.jsx)(b.Z, {
             user: t,
             currentUser: n,
             activity: e,
-            onClose: T
+            onClose: _
           })
         }, "live-".concat(i))), D && U && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
             voiceChannel: Z,
-            onClose: T
+            onClose: _
           })
         })]
       })
@@ -134,7 +134,7 @@ function S(e) {
           children: (0, r.jsx)(m.Z, {
             user: t,
             entry: e,
-            onClose: T
+            onClose: _
           })
         }, e.id))
       })

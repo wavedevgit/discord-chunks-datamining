@@ -93,12 +93,12 @@ function P(e) {
     headerActionButtons: P,
     headerClassName: I,
     additionalManageWidgetMenuItems: w
-  } = e, S = (0, s.Dt)(), E = (0, c.e7)([u.default], () => u.default.getId() === t), _ = (0, m.b)(), {
-    trackUserProfileAction: T
+  } = e, S = (0, s.Dt)(), E = (0, c.e7)([u.default], () => u.default.getId() === t), T = (0, m.b)(), {
+    trackUserProfileAction: _
   } = (0, d.KZ)(), C = (0, p.Z)({
     widget: n,
-    onAction: T
-  }), D = _ === n.type;
+    onAction: _
+  }), D = T === n.type;
   (0, g.Z)(C, D);
   let k = E && null != b && !a,
     N = () => (0, r.jsxs)("div", {

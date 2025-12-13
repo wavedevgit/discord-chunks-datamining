@@ -74,7 +74,7 @@ function O(e) {
     isLoading: S
   } = (0, p.Z)(t.applicationId), {
     registerDragHandleRef: E
-  } = (0, u.C)(), _ = (0, b.Z)(t.applicationId).length > 0, T = o.default.getCurrentUser(), C = (null == T ? true : T.id) === n, D = !O && C, {
+  } = (0, u.C)(), T = (0, b.Z)(t.applicationId).length > 0, _ = o.default.getCurrentUser(), C = (null == _ ? true : _.id) === n, D = !O && C, {
     isDragging: k
   } = (0, l.f)(e => ({
     isDragging: e.isDragging()
@@ -85,7 +85,7 @@ function O(e) {
       applicationId: t.applicationId,
       userId: n,
       disableInteraction: O,
-      className: a()(_ ? y.socialProofBackdrop : true, null == I || O ? true : h.hoverActiveEffect),
+      className: a()(T ? y.socialProofBackdrop : true, null == I || O ? true : h.hoverActiveEffect),
       hideTooltip: k,
       coverRef: P
     }), D && (0, r.jsx)(s.e_, {
