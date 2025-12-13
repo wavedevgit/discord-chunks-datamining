@@ -153,7 +153,7 @@ function T(e) {
     iconSize: f = 20,
     animationStyle: N = d.i.GENTLE_AMBIENT,
     locked: E = false
-  } = e, p = i.useId(), T = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), O = (0, o.e7)([c.Z], () => c.Z.isAppFocused() || c.Z.isVisible()), [y, S] = i.useState(false), b = i.useCallback(e => {
+  } = e, p = i.useId(), T = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), O = (0, o.e7)([c.Z], () => c.Z.isAppFocused()), [y, S] = i.useState(false), b = i.useCallback(e => {
     e && S(true)
   }, []), j = (0, a.O)(b, .15), I = v[N], x = (function(e, t) {
     let [n, l] = i.useState(() => t.states[t.firstState].getHeights()), r = i.useRef(t.firstState), a = i.useRef(null), o = !e;

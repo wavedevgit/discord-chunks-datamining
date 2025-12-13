@@ -268,7 +268,9 @@ class y extends Chunk47770.Z {
         duration_encoder_exynos: E(t.encoderBuckets[p.Su.EXYNOS]),
         duration_encoder_qualcomm: E(t.encoderBuckets[p.Su.QUALCOMM]),
         duration_encoder_mediatek: E(t.encoderBuckets[p.Su.MEDIATEK]),
-        duration_encoder_wmf_sw: E(t.encoderBuckets[p.Su.WMF_SW])
+        duration_encoder_wmf_sw: E(t.encoderBuckets[p.Su.WMF_SW]),
+        duration_encoder_wmf_hw: E(t.encoderBuckets[p.Su.WMF_HW]),
+        duration_encoder_wmf_direct3d: E(t.encoderBuckets[p.Su.WMF_DIRECT_3D])
       }))
     }), module
   }

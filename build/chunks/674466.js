@@ -33,7 +33,7 @@ var d = function(e) {
     return e.H264 = "H264", e.H265 = "H265", e.VP8 = "VP8", e.VP9 = "VP9", e.AV1 = "AV1", e.UNKNOWN = "UNKNOWN", e
   }({}),
   f = function(e) {
-    return e.NVIDIA_CUDA = "nvidia_cuda", e.NVIDIA_DIRECT_3D = "nvidia_direct_3d", e.OPENH264 = "openh264", e.VIDEOTOOLBOX = "videotoolbox", e.AMD_DIRECT_3D = "amd_direct_3d", e.AMD_VAAPI = "amd_vaapi", e.INTEL = "intel", e.INTEL_DIRECT_3D = "intel_direct_3d", e.VP8_LIBVPX = "vp8_libvpx", e.EXYNOS = "exynos", e.QUALCOMM = "qualcomm", e.MEDIATEK = "mediatek", e.WMF_SW = "wmf_sw", e.UNCATEGORIZED = "uncategorized", e.UNKNOWN = "unknown", e
+    return e.NVIDIA_CUDA = "nvidia_cuda", e.NVIDIA_DIRECT_3D = "nvidia_direct_3d", e.OPENH264 = "openh264", e.VIDEOTOOLBOX = "videotoolbox", e.AMD_DIRECT_3D = "amd_direct_3d", e.AMD_VAAPI = "amd_vaapi", e.INTEL = "intel", e.INTEL_DIRECT_3D = "intel_direct_3d", e.VP8_LIBVPX = "vp8_libvpx", e.EXYNOS = "exynos", e.QUALCOMM = "qualcomm", e.MEDIATEK = "mediatek", e.WMF_SW = "wmf_sw", e.WMF_HW = "wmf_hw", e.WMF_DIRECT_3D = "wmf_direct_3d", e.UNCATEGORIZED = "uncategorized", e.UNKNOWN = "unknown", e
   }({}),
   p = function(e) {
     return e.VIDEOTOOLBOX = "videotoolbox", e.VP8_LIBVPX = "vp8_libvpx", e.ELECTRON = "electron", e.FFMPEG = "ffmpeg", e.DAV1D = "dav1d", e.WEBRTC = "WebRTC", e.EXYNOS = "exynos", e.QUALCOMM = "qualcomm", e.MEDIATEK = "mediatek", e.UNCATEGORIZED = "uncategorized", e.UNKNOWN = "unknown", e
@@ -54,7 +54,9 @@ let _ = Object.freeze({
     "omx.qcom": "qualcomm",
     "c2.mtk": "mediatek",
     "omx.mtk": "mediatek",
-    "mediafoundation sw": "wmf_sw"
+    "mediafoundation sw": "wmf_sw",
+    "mediafoundation hw": "wmf_hw",
+    "mediafoundation direct3d": "wmf_direct_3d"
   }),
   m = Object.freeze({
     videotoolbox: "videotoolbox",
