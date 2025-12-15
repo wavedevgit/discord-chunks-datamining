@@ -176,6 +176,30 @@ class c extends Chunk77450.h {
       return null
     }
   }
+  enableProfilingV8Heap(e) {
+    try {
+      var t, n;
+      return null === r.Z || true === r.Z || null == (n = r.Z.processUtils) || null == (t = n.enableProfilingV8Heap) ? true : t.call(n, e)
+    } catch (e) {
+      return
+    }
+  }
+  disableProfilingV8Heap() {
+    try {
+      var e, t;
+      return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.disableProfilingV8Heap) ? true : module.call(exports)
+    } catch (e) {
+      return
+    }
+  }
+  getProfilerV8MemoryCallstacks() {
+    try {
+      var e, t;
+      return null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getProfilerV8MemoryCallstacks) ? true : module.call(exports)
+    } catch (e) {
+      return null
+    }
+  }
   constructor() {
     var e, t;
     super(), s(this, "lastMemoryUsageKB", true), this.cpuCoreCount = null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.processUtils) || null == (e = exports.getCPUCoreCount) ? true : module.call(exports), this.setupReportingTimer()

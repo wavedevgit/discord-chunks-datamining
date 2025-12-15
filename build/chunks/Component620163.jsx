@@ -124,12 +124,12 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
     let e = [];
     return Chunk299886.H.getConfig({
       location: "SettingsRendererConfig"
-    }).enabled && module.push(Chunk704215.z.NITRO_PRIVACY_PERK_NEW_BADGE), module
+    }).enabled && module.push(Chunk704215.z.NITRO_PRIVACY_PERK_NEW_BADGE_V2), module
   },
   eV = () => {
     let e = eB(),
       [t] = (0, Chunk243778.US)(module);
-    return Chunk704215.z.NITRO_PRIVACY_PERK_NEW_BADGE === exports ? (0, Chunk54381.jsx)(Chunk481060.IGR, {
+    return Chunk704215.z.NITRO_PRIVACY_PERK_NEW_BADGE_V2 === exports ? (0, Chunk54381.jsx)(Chunk481060.IGR, {
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     }) : null
   },

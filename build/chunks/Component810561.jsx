@@ -24,21 +24,21 @@ function b(e) {
     activeRecurrenceId: h
   } = e, {
     recurrenceStartTimes: p,
-    canViewMoreRecurrences: v,
-    updateRecurrenceStartTimes: m
-  } = (0, o.Z)(i, n, t), g = f ? "div" : l.Ttm;
+    canViewMoreRecurrences: m,
+    updateRecurrenceStartTimes: g
+  } = (0, c.Z)(i, n, t), v = f ? "div" : l.Ttm;
   return (0, a.jsxs)("div", {
     className: u.recurrences,
     children: [(0, a.jsx)(l.Heading, {
       variant: "heading-sm/medium",
       className: u.heading,
       children: s.intl.string(s.t["D/jjoa"])
-    }), (0, a.jsxs)(g, {
+    }), (0, a.jsxs)(v, {
       className: r()(u.scroller, {
         [u.showScroller]: !f
       }),
       children: [p.map(e => {
-        let n = c.default.fromTimestamp(e.getTime());
+        let n = o.default.fromTimestamp(e.getTime());
         return (0, a.jsx)(d.Z, {
           recurrenceId: n,
           originalScheduledStartTime: e,
@@ -46,11 +46,11 @@ function b(e) {
           onClick: b,
           isActive: n === h
         }, n)
-      }), v && (0, a.jsx)("div", {
+      }), m && (0, a.jsx)("div", {
         className: u.buttonContainer,
         children: (0, a.jsx)(l.Avr, {
           onClick: e => {
-            e.stopPropagation(), m()
+            e.stopPropagation(), g()
           },
           text: s.intl.string(s.t["8O7Hpy"]),
           size: "sm"

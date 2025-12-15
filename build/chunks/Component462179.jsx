@@ -125,7 +125,7 @@ function D(t) {
       t.stopPropagation(), (0, u.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("84722"), n.e("65413")]).then(n.bind(n, 296864));
+        } = await Promise.all([n.e("84722"), n.e("20247")]).then(n.bind(n, 296864));
         return e => (0, l.jsx)(t, S(w({}, e), {
           event: T,
           onSuccess: G

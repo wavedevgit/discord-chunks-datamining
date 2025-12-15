@@ -58,7 +58,7 @@ function b(e) {
     onClose: j,
     headerAlignStart: x,
     width: y = 440
-  } = e, [S, v] = l.useState(null != (n = null == (t = h.methods[0]) ? true : t.type) ? n : "select"), [C, Z] = l.useState(S), O = async e => {
+  } = e, [S, v] = l.useState(null != (n = null == (t = h.methods[0]) ? true : t.type) ? n : "select"), [C, O] = l.useState(S), Z = async e => {
     let {
       mfaType: t,
       data: n
@@ -70,7 +70,7 @@ function b(e) {
     }), null != j && j()
   }, w = {
     mfaChallenge: h,
-    finish: O,
+    finish: Z,
     setSlide: v,
     onClose: p,
     headerAlignStart: x
@@ -78,7 +78,7 @@ function b(e) {
   return (0, r.jsxs)(i.MyZ, {
     activeSlide: S,
     width: y,
-    onSlideReady: Z,
+    onSlideReady: O,
     children: [(0, r.jsx)(i.Mi4, {
       id: "select",
       children: (0, r.jsx)(c.Z, g({}, w))

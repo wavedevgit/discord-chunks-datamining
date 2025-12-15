@@ -20,7 +20,7 @@ function d(e) {
     onClose: f,
     isSlideReady: h,
     headerAlignStart: g
-  } = e, [m, b] = l.useState(false), [p, j] = l.useState(null), [x, y] = l.useState(false), [S, v] = l.useState(null), [C, Z] = l.useState(""), O = l.useRef(null);
+  } = e, [m, b] = l.useState(false), [p, j] = l.useState(null), [x, y] = l.useState(false), [S, v] = l.useState(null), [C, O] = l.useState(""), Z = l.useRef(null);
   l.useEffect(() => {
     b(true), s.tn.post({
       url: c.ANM.LOGIN_SMS_SEND,
@@ -40,7 +40,7 @@ function d(e) {
   }, [t.ticket]), l.useEffect(() => {
     if (h) {
       var e;
-      null == (e = O.current) || e.focus()
+      null == (e = Z.current) || e.focus()
     }
   }, [h]);
   let w = null == p ? u.intl.string(u.t.LQdCQE) : u.intl.formatToPlainString(u.t["8r6h7+"], {
@@ -66,8 +66,8 @@ function d(e) {
       children: [(0, r.jsxs)(a.NIo, {
         children: [(0, r.jsx)(a.oil, {
           label: u.intl.string(u.t.HZPBOd),
-          inputRef: O,
-          onChange: Z,
+          inputRef: Z,
+          onChange: O,
           placeholder: u.intl.string(u.t.tARzgo),
           maxLength: 10,
           value: C,

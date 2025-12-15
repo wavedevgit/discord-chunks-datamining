@@ -1,7 +1,7 @@
 /** Chunk was on 84722 **/
 /** chunk id: 296864, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => p
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,6 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk41776 = require("./41776.js"),
   Chunk357156 = require("./357156.js"),
   Chunk513449 = require("./513449.js"),
+  Chunk937096 = require("./937096.jsx"),
   Chunk592125 = require("./592125.js"),
   Chunk430824 = require("./430824.js"),
   Chunk305298 = require("./305298.js"),
@@ -20,86 +21,86 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk710421 = require("./710421.js");
 
-function j(e) {
+function p(e) {
   var n;
   let {
     transitionState: t,
-    event: j,
+    event: p,
     onSuccess: N,
-    onClose: f
+    onClose: k
   } = e, {
-    guild_id: k,
+    guild_id: y,
     privacy_level: E
-  } = j, y = (0, r.e7)([d.Z], () => d.Z.getChannel(j.channel_id), [j]), w = (0, r.e7)([h.Z], () => h.Z.getGuild(k), [k]), {
-    canManageGuildEvent: I
-  } = (0, o.XJ)(null != y ? y : w), Z = I(j), _ = (0, r.e7)([c.Z], () => c.Z.isLurking(k), [k]), b = j.entity_type === C.WX.STAGE_INSTANCE, [S, T] = i.useState(b), [A, {
+  } = p, w = (0, r.e7)([h.Z], () => h.Z.getChannel(p.channel_id), [p]), _ = (0, r.e7)([x.Z], () => x.Z.getGuild(y), [y]), {
+    canManageGuildEvent: T
+  } = (0, o.XJ)(null != w ? w : _), Z = T(p), S = (0, r.e7)([c.Z], () => c.Z.isLurking(y), [y]), A = p.entity_type === j.WX.STAGE_INSTANCE, [I, b] = l.useState(A), [P, {
     loading: G,
     error: L
   }] = (0, v.Z)();
   if (!Z) return null;
-  let X = E === C.j8.PUBLIC ? g.intl.string(g.t.HhlaLP) : g.intl.string(g.t.GI3xXd),
-    O = () => {
-      null == N || N(), f(), (0, u.Ku)(false)
+  let O = E === j.j8.PUBLIC ? f.intl.string(f.t.HhlaLP) : f.intl.string(f.t.GI3xXd),
+    R = () => {
+      null == N || N(), k(), (0, u.Ku)(false)
     },
-    P = async () => {
-      await A(j, S, {
-        onSuccess: O
+    M = async () => {
+      await P(p, I, {
+        onSuccess: R
       })
     };
-  return (0, l.jsxs)(a.Modal, {
+  return (0, i.jsxs)(a.Modal, {
     transitionState: t,
-    onClose: f,
-    title: j.name,
-    subtitle: g.intl.format(g.t.UMajol, {
-      privacyLevel: X,
-      privacyLevelHook: (e, n) => E !== C.j8.PUBLIC ? null : (0, l.jsxs)("div", {
-        className: p.privacyLevel,
-        children: [(0, l.jsx)(s.enf, {
+    onClose: k,
+    title: p.name,
+    subtitle: f.intl.format(f.t.UMajol, {
+      privacyLevel: O,
+      privacyLevelHook: (e, n) => E !== j.j8.PUBLIC ? null : (0, i.jsxs)("div", {
+        className: C.privacyLevel,
+        children: [(0, i.jsx)(s.enf, {
           size: "xs",
           color: "currentColor",
-          className: p.publicIcon
-        }), (0, l.jsx)(s.Text, {
+          className: C.publicIcon
+        }), (0, i.jsx)(s.Text, {
           variant: "text-md/normal",
           children: e
         })]
       }, n)
     }),
+    actionBarInput: A ? (0, i.jsxs)(a.P3F, {
+      onClick: () => b(!I),
+      className: C.notificationToggle,
+      children: [(0, i.jsx)(a.FZ5, {
+        checked: I
+      }), (0, i.jsx)(s.Text, {
+        color: "text-default",
+        variant: "text-sm/normal",
+        children: f.intl.string(f.t["Pe+Pwp"])
+      })]
+    }) : true,
     actions: [{
-      variant: "secondary",
-      text: g.intl.string(g.t.CZGqeT),
-      onClick: () => {
-        f()
-      }
-    }, {
       variant: "active",
-      text: g.intl.string(g.t.cK1GGY),
-      onClick: P,
+      text: f.intl.string(f.t.cK1GGY),
+      onClick: M,
       loading: G
     }],
-    children: [(0, l.jsx)(x.Z, {
-      guild: w,
-      channel: y,
-      name: j.name,
-      description: null != (n = j.description) ? n : true,
-      imageSource: (0, m.Z)(j),
+    children: [(0, i.jsx)(g.Z, {
+      guild: _,
+      channel: w,
+      name: p.name,
+      description: null != (n = p.description) ? n : true,
+      imageSource: (0, m.Z)(p),
       isActive: false,
-      isUserLurking: _,
+      isUserLurking: S,
       speakers: [],
       speakerCount: 0,
       rsvped: true,
-      guildEvent: j
-    }), b && (0, l.jsx)("div", {
-      className: p.verticalSpacing,
-      children: (0, l.jsx)(a.XZJ, {
-        checked: S,
-        onChange: e => T(e),
-        label: g.intl.string(g.t.dGNtgI),
-        labelType: "secondary"
-      })
-    }), null != L && null != L.getAnyErrorMessage() ? (0, l.jsx)(s.Text, {
+      guildEvent: p,
+      hideAgeVerificationNotice: true
+    }), j.Qk.has(p.entity_type) && (0, i.jsx)(d.Z, {
+      className: C.ageVerificationNotice
+    }), null != L && null != L.getAnyErrorMessage() ? (0, i.jsx)(s.Text, {
       color: "text-feedback-critical",
       variant: "text-sm/normal",
-      className: p.errorMessage,
+      className: C.errorMessage,
       children: L.getAnyErrorMessage()
     }) : null]
   })

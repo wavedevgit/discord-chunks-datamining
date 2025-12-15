@@ -49,8 +49,8 @@ function O(e) {
     }) : null,
     D = null == k || null == T,
     R = (0, s.Z)(null != k ? k : ""),
-    _ = null != (n = null == T ? true : T.maxAge) ? n : b.value,
-    A = null != (O = null == T ? true : T.maxUses) ? O : y.value;
+    A = null != (n = null == T ? true : T.maxAge) ? n : b.value,
+    _ = null != (O = null == T ? true : T.maxUses) ? O : y.value;
   return (0, l.jsxs)("div", {
     className: j.container,
     children: [(0, l.jsx)(i.P3F, {
@@ -103,7 +103,7 @@ function O(e) {
         variant: "text-xs/normal",
         color: "text-default",
         className: j.inviteDetail,
-        children: (0, h.Vg)(_, A)
+        children: (0, h.Vg)(A, _)
       })]
     })]
   })

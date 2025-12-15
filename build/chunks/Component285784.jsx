@@ -23,22 +23,22 @@ function u(e) {
     entityType: f,
     onJoinClick: h,
     onRsvpClick: p,
-    onStartClick: v,
-    onInviteClick: m,
-    onEndClick: g,
+    onStartClick: m,
+    onInviteClick: g,
+    onEndClick: v,
     onJoinGuildClick: x,
     isJoined: _ = false,
     channel: C
-  } = e, I = true !== h, k = function(e) {
+  } = e, j = true !== h, k = function(e) {
     let {
       onInviteClick: n,
       canInvite: t,
       isChannelPublic: a,
       channel: d
     } = e, u = new r.V7, [b, f] = i.useState(false);
-    return ((0, c.ZP)(() => () => {
+    return ((0, o.ZP)(() => () => {
       u.stop()
-    }), null == n) ? null : (0, o.T)(null != t && t, null != a && a, d) ? {
+    }), null == n) ? null : (0, c.T)(null != t && t, null != a && a, d) ? {
       variant: "secondary",
       icon: l.aAc,
       onClick: n,
@@ -55,12 +55,12 @@ function u(e) {
       "aria-label": s.intl.string(s.t.WqhZss)
     }
   }({
-    onInviteClick: m,
+    onInviteClick: g,
     canInvite: u,
     isChannelPublic: b,
     channel: C
-  }), Z = [];
-  if (null != k && Z.push(k), n && f !== d.WX.EXTERNAL && Z.push({
+  }), I = [];
+  if (null != k && I.push(k), n && f !== d.WX.EXTERNAL && I.push({
       variant: "active",
       size: "sm",
       onClick: h,
@@ -73,18 +73,18 @@ function u(e) {
         return t ? n ? s.intl.string(s.t.aW2YlJ) : a ? s.intl.string(s.t.nxUtoQ) : s.intl.string(s.t.ZYO5OK) : s.intl.string(s.t.TVBCKZ)
       }({
         isJoined: _,
-        canJoin: I,
+        canJoin: j,
         isVoiceChannel: f === d.WX.VOICE
       }),
-      disabled: !I
-    }), t && null != x && Z.push({
+      disabled: !j
+    }), t && null != x && I.push({
       variant: "active",
       size: "sm",
       text: s.intl.string(s.t["2BP08E"]),
       onClick: x
     }), !t && !n && null != p) {
     let e = a && !t;
-    Z.push({
+    I.push({
       variant: e ? "active" : "secondary",
       size: "sm",
       icon: e ? l.dz2 : l.Dkj,
@@ -93,17 +93,17 @@ function u(e) {
       disabled: t
     })
   }
-  return n || null == v || Z.push({
+  return n || null == m || I.push({
     variant: "primary",
     size: "sm",
-    onClick: v,
+    onClick: m,
     text: s.intl.string(s.t.I0v0Qv)
-  }), n && null != g && Z.push({
+  }), n && null != v && I.push({
     variant: "secondary",
     size: "sm",
-    onClick: g,
+    onClick: v,
     text: s.intl.string(s.t.qaYzPA)
-  }), Z
+  }), I
 }
 
 function b(e) {

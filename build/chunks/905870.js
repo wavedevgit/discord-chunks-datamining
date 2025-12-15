@@ -2,7 +2,7 @@
 /** chunk id: 905870, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => V
+  Z: () => K
 }), require("./642613.js"), require("./388685.js"), require("./539854.js"), require("./361932.js"), require("./187205.js");
 var Chunk268146 = require("./268146.js"),
   Chunk433517 = require("./433517.js"),
@@ -43,31 +43,37 @@ let y = 1048576,
   w = 256,
   D = 12,
   x = true,
-  L = 4 * y,
-  j = 30 * Chunk70956.Z.Millis.MINUTE,
-  M = 8 * y,
-  k = 60 * Chunk70956.Z.Millis.MINUTE,
-  U = "lastMemoryUsageRestart",
-  G = +Chunk70956.Z.Millis.DAY,
-  Z = +Chunk70956.Z.Millis.MINUTE;
+  L = 15 * Chunk70956.Z.Millis.MINUTE,
+  j = .75 * y,
+  M = +y,
+  k = 64,
+  U = 4 * y,
+  G = 30 * Chunk70956.Z.Millis.MINUTE,
+  Z = 8 * y,
+  F = 60 * Chunk70956.Z.Millis.MINUTE,
+  B = "lastMemoryUsageRestart",
+  V = +Chunk70956.Z.Millis.DAY,
+  H = +Chunk70956.Z.Millis.MINUTE;
 
-function F() {
+function Y() {
   return Chunk358085.isPlatformEmbedded && (0, Chunk358085.isWindows)()
 }
-class B extends Chunk147913.Z {
+class W extends Chunk147913.Z {
   _initialize() {}
   _terminate() {
-    F() && (clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = null, clearInterval(this._checkIntervalPA), this._checkIntervalPA = null, Chunk848479.Z.disablePerfMemoryHooks(), Chunk848479.Z.disablePAMemoryProfiler())
+    Y() && (clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = null, clearInterval(this._checkIntervalPA), this._checkIntervalPA = null, clearInterval(this._checkIntervalV8), this._checkIntervalV8 = null, Chunk848479.Z.disablePerfMemoryHooks(), Chunk848479.Z.disablePAMemoryProfiler(), Chunk848479.Z.disableProfilingV8Heap())
   }
   handlePostConnectionOpen() {
     var e, t;
-    if (!F()) return;
+    if (!Y()) return;
     let n = null == (e = (t = Chunk579806.Z.remoteApp).getReleaseChannel) ? true : module.call(exports);
     "development" !== require && "canary" !== require && (this._supportedNativeChannel = false), clearInterval(this._checkIntervalNativeHeap), this._checkIntervalNativeHeap = setInterval(async () => {
       await this.trackNativeHeapPerformanceStats()
     }, O), this._supportedNativeChannel && (clearInterval(this._checkIntervalPA), this._checkIntervalPA = setInterval(async () => {
       await this.trackPartitionAllocPerformanceStats()
-    }, N))
+    }, N), clearInterval(this._checkIntervalV8), this._checkIntervalV8 = setInterval(async () => {
+      await this.trackV8HeapAlloc()
+    }, L))
   }
   async trackNativeHeapPerformanceStats() {
     var e, t;
@@ -137,11 +143,11 @@ class B extends Chunk147913.Z {
     }), this._pushedNativeDeadlockMinidumpCount += 1)
   }
   doRestartIfNeeded(e) {
-    if (e < L) return;
+    if (e < U) return;
     let t = performance.now() - this._startupTime;
-    if (t < k) return;
-    let n = i.K.get(U);
-    if (null != n && n.timestamp >= Date.now() - G) return;
+    if (t < F) return;
+    let n = i.K.get(B);
+    if (null != n && n.timestamp >= Date.now() - V) return;
     let {
       enable: a,
       enableForce: o
@@ -150,24 +156,24 @@ class B extends Chunk147913.Z {
     });
     a && setTimeout(() => {
       let n = true;
-      if (e < M || !o) {
+      if (e < Z || !o) {
         let e = l.Z.getIdleSince();
-        if (null == e || e > Date.now() - j || null != u.Z.getRTCConnection()) return
+        if (null == e || e > Date.now() - G || null != u.Z.getRTCConnection()) return
       } else n = false;
-      s.Z.persist(), i.K.set(U, {
+      s.Z.persist(), i.K.set(B, {
         timeSinceStartup: t,
         timestamp: Date.now()
       }), h.ZP.setCrashInformation(r.X4.IntentionalCrashReason, "excessive-memory-usage".concat(n ? "-forced" : "")), m.Z.addBreadcrumb({
         category: "excessive-memory-usage-restart",
         message: "Restarting due to excessive renderer memory usage: ".concat(e, "kB")
       }), h.ZP.crash(3)
-    }, Z)
+    }, H)
   }
   trackPartitionAllocPerformanceStats() {
     var e, t, n;
-    let r = Chunk848479.Z.getMemoryHeapStats();
+    let r = Chunk848479.Z.getPartitionAllocatorStats();
     if (null == Chunk268146) return;
-    let i = null != (e = Chunk268146.usedHeapSize) ? module : 0;
+    let i = null != (e = Chunk268146.total_alloc_kb) ? module : 0;
     if (!this._paHeapHooksInstalled && Chunk433517 > P) {
       let e = Chunk848479.Z.enablePAMemoryProfiler({
         allocationThresholdKB: D,
@@ -223,10 +229,50 @@ class B extends Chunk147913.Z {
       }
     }
   }
+  trackV8HeapAlloc() {
+    var e, t, n, r, i, a, o, s, l;
+    let c = Chunk848479.Z.getMemoryHeapStats();
+    if (null == Chunk131951) return;
+    let u = null != (e = Chunk131951.usedHeapSize) ? module : 0;
+    if (!this._v8ProfilerRunning && Chunk19780 >= j && (Chunk848479.Z.enableProfilingV8Heap({
+        allocationThresholdKB: k,
+        sampleIntervalBytes: 65536,
+        stackDepth: 64
+      }), this._v8ProfilerRunning = true), this._v8ProfilerRunning) {
+      if (Chunk19780 < M) return;
+      let e = Chunk848479.Z.getProfilerV8MemoryCallstacks();
+      if (null != module) {
+        let c = 3,
+          u = module.map(e => {
+            var t, n;
+            return {
+              callstack: e,
+              totalSize: null != (n = null == (t = e.frame_alloc_size) ? true : t.reduce((e, t) => e + t, 0)) ? n : 0
+            }
+          });
+        for (let e of (Chunk19780.sort((e, t) => t.totalSize - e.totalSize), Chunk19780.slice(0, Chunk131951).map(e => e.callstack))) {
+          let c = null != (s = null == (t = module.frame_script_name) ? true : exports.length) ? Chunk703558 : 0;
+          if (null == Chunk131951 || Chunk131951 !== (null == (n = module.frame_name) ? true : require.length) || Chunk131951 !== (null == (r = module.frame_line) ? true : Chunk268146.length) || Chunk131951 !== (null == (i = module.frame_col) ? true : Chunk433517.length)) continue;
+          let u = {
+            memory_type: "v8_heap",
+            callstack_allocation_total_size_kb: Math.floor((null != (l = null == (a = module.frame_alloc_size) ? true : Chunk147913.reduce((e, t) => e + t, 0)) ? Chunk517100 : 0) / 1024),
+            callstack_frame_module_names: null == (o = module.frame_script_name) ? true : Chunk579806.map((t, n) => {
+              var r, i, a, o, s, l;
+              let c = null != (o = null == (r = e.frame_name) ? true : r[n]) ? o : "",
+                u = null != (s = null == (i = e.frame_line) ? true : i[n]) ? s : 0,
+                d = null != (l = null == (a = e.frame_col) ? true : a[n]) ? l : 0;
+              return c.length > 0 ? "at ".concat(c, " (").concat(t, ":").concat(u, ":").concat(d, ")") : "at ".concat(t, ":").concat(u, ":").concat(d)
+            })
+          };
+          Chunk626135.default.track(Chunk981631.rMx.DESKTOP_PERF_ATTRIBUTED_MODULE_MEMORY_CALLSTACK, Chunk19780)
+        }
+      }
+    }
+  }
   constructor(...e) {
-    super(...e), b(this, "_checkIntervalNativeHeap", null), b(this, "_checkIntervalPA", null), b(this, "_nativeHeapHooksInstalled", false), b(this, "_paHeapHooksInstalled", false), b(this, "_pushedNativeDeadlockMinidumpCount", 0), b(this, "_startupTime", performance.now()), b(this, "_supportedNativeChannel", true), b(this, "actions", {
+    super(...e), b(this, "_checkIntervalNativeHeap", null), b(this, "_checkIntervalPA", null), b(this, "_checkIntervalV8", null), b(this, "_nativeHeapHooksInstalled", false), b(this, "_paHeapHooksInstalled", false), b(this, "_v8ProfilerRunning", false), b(this, "_pushedNativeDeadlockMinidumpCount", 0), b(this, "_startupTime", performance.now()), b(this, "_supportedNativeChannel", true), b(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
     })
   }
 }
-let V = new B
+let K = new W

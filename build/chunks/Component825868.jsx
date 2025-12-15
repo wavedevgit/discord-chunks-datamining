@@ -1,7 +1,7 @@
 /** Chunk was on 19919 **/
-/** chunk id: 825868, original params: e,l,a (module,exports,require) **/
+/** chunk id: 825868, original params: e,a,l (module,exports,require) **/
 require.d(exports, {
-  default: () => j
+  default: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,41 +17,47 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk797991 = require("./797991.js");
-let j = e => {
+let m = e => {
   let {
-    analyticsLocations: l,
-    transitionState: a,
-    onClose: j
-  } = e, v = (0, o.IT)("CollectiblesRentalsModal"), g = r.useMemo(() => p.Hl.map(e => c.Z.getProduct(e)).filter(e => null != e), []), k = (0, u.R)(g);
-  return (0, s.jsx)(i.Gt, {
-    value: l,
-    children: (0, s.jsx)(d.IX, {
+    analyticsLocations: a,
+    transitionState: l,
+    onClose: m
+  } = e, v = (0, o.IT)("CollectiblesRentalsModal"), C = s.useMemo(() => x.Hl.map(e => c.Z.getProduct(e)).filter(e => null != e), []), g = (0, u.R)(C);
+  return (0, t.jsx)(i.Gt, {
+    value: a,
+    children: (0, t.jsx)(d.IX, {
       size: "xl",
-      onClose: j,
-      transitionState: a,
-      children: (0, s.jsxs)("div", {
-        className: m.modal,
-        children: [(0, s.jsxs)("div", {
-          className: m.header,
-          children: [(0, s.jsx)(n.Heading, {
-            variant: "heading-xl/bold",
-            children: x.intl.string(x.t.bfXHLB)
-          }), (0, s.jsx)("button", {
-            className: m.closeButton,
-            onClick: j,
-            "aria-label": x.intl.string(x.t.cpT0Cq),
-            children: (0, s.jsx)(t.D, {})
+      onClose: m,
+      transitionState: l,
+      children: (0, t.jsxs)("div", {
+        className: j.modal,
+        children: [(0, t.jsxs)("div", {
+          className: j.header,
+          children: [(0, t.jsxs)("div", {
+            className: j.titleContainer,
+            children: [(0, t.jsx)(n.Heading, {
+              variant: "heading-xl/bold",
+              children: p.intl.string(p.t.bfXHLB)
+            }), (0, t.jsx)(n.IGR, {
+              text: p.intl.string(p.t.oW0eUd),
+              disableColor: true
+            })]
+          }), (0, t.jsx)("button", {
+            className: j.closeButton,
+            onClick: m,
+            "aria-label": p.intl.string(p.t.cpT0Cq),
+            children: (0, t.jsx)(r.D, {})
           })]
-        }), (0, s.jsx)(n.Den, {
-          className: m.scroller,
-          children: (0, s.jsx)("div", {
-            className: m.grid,
-            children: (0, s.jsx)(h.zp.Provider, {
+        }), (0, t.jsx)(n.Den, {
+          className: j.scroller,
+          children: (0, t.jsx)("div", {
+            className: j.grid,
+            children: (0, t.jsx)(h.zp.Provider, {
               value: {
                 rentalDuration: v,
                 flattenProductVariants: true
               },
-              children: k.map(e => (0, s.jsx)(b.Z, {
+              children: g.map(e => (0, t.jsx)(b.Z, {
                 skuId: null == e ? true : e.skuId,
                 prioritizedCurrency: h.tA.ORBS
               }, "rental_inner_".concat(e.skuId)))

@@ -49,7 +49,8 @@ function p(e) {
       speakerCount: 0,
       rsvped: true,
       guildEvent: O,
-      eventPreview: O
+      eventPreview: O,
+      hideAgeVerificationNotice: true
     }), (0, l.jsxs)("div", {
       className: f.textContainer,
       children: [(0, l.jsx)(a.Heading, {

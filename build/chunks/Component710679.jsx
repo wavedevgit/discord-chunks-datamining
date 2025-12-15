@@ -1,7 +1,7 @@
 /** Chunk was on 56236 **/
 /** chunk id: 710679, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => Z
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -26,47 +26,47 @@ var Chunk442837 = require("./442837.js"),
   Chunk462179 = require("./462179.jsx"),
   Chunk981631 = require("./981631.js");
 
-function y(e) {
-  var n, t, y;
+function Z(e) {
+  var n, t, Z;
   let {
-    guildEvent: N,
+    guildEvent: O,
     truncate: k,
     onActionTaken: P,
     className: E,
     isNew: w
   } = e, {
-    id: I,
-    guild_id: S,
-    channel_id: D,
-    creator_id: T,
-    name: G,
-    description: L,
-    entity_type: M,
-    image: _,
+    id: S,
+    guild_id: I,
+    channel_id: T,
+    creator_id: D,
+    name: _,
+    description: G,
+    entity_type: A,
+    image: M,
     recurrence_rule: R
-  } = N, A = (0, f.DK)(N), B = (0, i.e7)([h.ZP], () => h.ZP.isInterestedInEventRecurrence(I, A), [I, A]), U = (0, i.e7)([l.Z], () => l.Z.isLurking(S), [S]), z = (0, i.e7)([c.Z], () => c.Z.getStageInstanceByChannel(D), [D]), J = (0, i.e7)([s.Z], () => s.Z.getGuild(S), [S]), q = (0, i.e7)([o.Z], () => o.Z.getChannel(D), [D]), H = (0, i.e7)([g.default], () => g.default.getUser(T), [T]), {
-    speakers: K
-  } = (0, v.Z)({
-    id: D,
+  } = O, L = (0, f.DK)(O), U = (0, i.e7)([h.ZP], () => h.ZP.isInterestedInEventRecurrence(S, L), [S, L]), J = (0, i.e7)([l.Z], () => l.Z.isLurking(I), [I]), B = (0, i.e7)([c.Z], () => c.Z.getStageInstanceByChannel(T), [T]), z = (0, i.e7)([s.Z], () => s.Z.getGuild(I), [I]), q = (0, i.e7)([o.Z], () => o.Z.getChannel(T), [T]), W = (0, i.e7)([g.default], () => g.default.getUser(D), [D]), {
+    speakers: H
+  } = (0, j.Z)({
+    id: T,
     data: {
       guild: null,
-      instance: z,
+      instance: B,
       speakers: [],
       participantCount: 0
     },
     context: {
-      guildId: S,
-      instance: z
+      guildId: I,
+      instance: B
     }
-  }), W = (0, i.e7)([d.Z], () => d.Z.getChannelId()), F = (0, h.xt)(N), V = W === D && null != W && F, Q = K.filter(e => e.type === a.Ui.VOICE), X = Q.length, Y = (0, i.e7)([u.Z], () => u.Z.can(Z.Plq.CONNECT, q), [q]), $ = (0, p.ZP)(N), ee = null != J, en = (0, O.Z)({
-    guild: J,
+  }), K = (0, i.e7)([d.Z], () => d.Z.getChannelId()), V = (0, h.xt)(O), F = K === T && null != K && V, Q = H.filter(e => e.type === a.Ui.VOICE), X = Q.length, Y = (0, i.e7)([u.Z], () => u.Z.can(N.Plq.CONNECT, q), [q]), $ = (0, p.ZP)(O), ee = null != z, en = (0, y.Z)({
+    guild: z,
     channel: q,
-    guildScheduledEvent: N,
-    isActive: F,
-    recurrenceId: A,
+    guildScheduledEvent: O,
+    isActive: V,
+    recurrenceId: L,
     onActionTaken: P
-  }), et = U ? true : e => (0, m.bO)({
-    eventId: I,
+  }), et = J ? true : e => (0, m.bO)({
+    eventId: S,
     recurrenceId: e
   });
   return (0, r.jsx)(C.Z, (t = function(e) {
@@ -87,40 +87,40 @@ function y(e) {
     }
     return e
   }({
-    guild: J,
+    guild: z,
     channel: q,
-    creator: H,
-    name: G,
-    entityType: M,
-    description: null != L ? L : true,
-    location: null != (n = (0, x.cS)(N)) ? n : true,
-    imageSource: null != _ ? (0, b.Z)(N) : true,
+    creator: W,
+    name: _,
+    entityType: A,
+    description: null != G ? G : true,
+    location: null != (n = (0, v.cS)(O)) ? n : true,
+    imageSource: null != M ? (0, b.Z)(O) : true,
     imageLocation: C.Q.THUMBNAIL,
-    isActive: F,
-    isUserLurking: U,
-    isJoined: V,
+    isActive: V,
+    isUserLurking: J,
+    isJoined: F,
     isMember: ee,
     speakers: Q,
     canConnect: Y,
     speakerCount: X,
-    rsvped: B,
+    rsvped: U,
     canInvite: $
-  }, en), y = y = {
+  }, en), Z = Z = {
     className: E,
     onClick: et,
     truncate: k,
     isNew: w,
-    guildEvent: N,
-    recurrenceRule: (0, j.KV)(R),
-    recurrenceId: A
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(y)) : (function(e, n) {
+    guildEvent: O,
+    recurrenceRule: (0, x.KV)(R),
+    recurrenceId: L
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(Z)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var r = Object.getOwnPropertySymbols(e);
       t.push.apply(t, r)
     }
     return t
-  })(Object(y)).forEach(function(e) {
-    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(y, e))
+  })(Object(Z)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(Z, e))
   }), t))
 }

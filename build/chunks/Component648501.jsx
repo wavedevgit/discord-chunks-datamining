@@ -1,7 +1,7 @@
 /** Chunk was on 51235 **/
 /** chunk id: 648501, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => P
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -28,71 +28,69 @@ var Chunk442837 = require("./442837.js"),
   Chunk25601 = require("./25601.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk490897 = require("./490897.js"),
-  Chunk388032 = require("./388032.jsx"),
-  Chunk884874 = require("./884874.js");
+  Chunk388032 = require("./388032.jsx");
 
-function N(e) {
+function P(e) {
   var t;
   let {
     channel: n,
-    isChannelSelected: N,
-    isChannelCollapsed: Z,
-    voiceStates: w,
-    enableConnectedUserLimit: T,
-    enableActivities: A,
-    isSubscriptionGated: R,
-    needSubscriptionToAccess: D,
-    isNewChannel: M,
-    muted: L,
-    resolvedUnreadSetting: k
-  } = e, G = (0, i.e7)([b.ZP], () => b.ZP.getMentionCount(n.id)), U = (0, i.e7)([b.ZP], () => b.ZP.getIsMentionLowImportance(n.id)), B = (0, o.ZP)(n), F = (0, i.e7)([g.Z], () => !g.Z.can(S.Plq.CONNECT, n)), V = (0, s.P)(n), H = (0, i.e7)([m.Z], () => m.Z.hasVideo(n.id)), z = (0, f.PK)(n.id) && n.isGuildStageVoice(), W = (0, j.ZP)({
+    isChannelSelected: P,
+    isChannelCollapsed: N,
+    voiceStates: Z,
+    enableConnectedUserLimit: w,
+    enableActivities: T,
+    isSubscriptionGated: A,
+    needSubscriptionToAccess: R,
+    isNewChannel: D,
+    muted: M,
+    resolvedUnreadSetting: L
+  } = e, k = (0, i.e7)([b.ZP], () => b.ZP.getMentionCount(n.id)), G = (0, i.e7)([b.ZP], () => b.ZP.getIsMentionLowImportance(n.id)), U = (0, o.ZP)(n), B = (0, i.e7)([g.Z], () => !g.Z.can(S.Plq.CONNECT, n)), F = (0, s.P)(n), V = (0, i.e7)([m.Z], () => m.Z.hasVideo(n.id)), H = (0, f.PK)(n.id) && n.isGuildStageVoice(), z = (0, j.ZP)({
     channel: n,
-    locked: F,
-    video: (H || z) && null == V,
-    selected: N
-  }), K = (0, i.e7)([h.Z], () => h.Z.getNewThreadCount(n.guild_id, n.id)), Y = (0, u.n2)(n.guild_id, n.id), q = (0, i.e7)([p.Z], () => {
+    locked: B,
+    video: (V || H) && null == F,
+    selected: P
+  }), W = (0, i.e7)([h.Z], () => h.Z.getNewThreadCount(n.guild_id, n.id)), K = (0, u.n2)(n.guild_id, n.id), Y = (0, i.e7)([p.Z], () => {
     var e, t;
     return null != (t = null == (e = p.Z.getGuild(n.guild_id)) ? true : e.features.has(S.GuildFeatures.COMMUNITY)) && t
   });
-  if ((0, v.Z)(G)) return (0, r.jsx)(E.Z, {
-    mentionsCount: G,
-    isMentionLowImportance: U
+  if ((0, v.Z)(k)) return (0, r.jsx)(E.Z, {
+    mentionsCount: k,
+    isMentionLowImportance: G
   });
-  if ((0, d.O)(R)) return (0, r.jsx)(d.Z, {
-    locked: D
+  if ((0, d.O)(A)) return (0, r.jsx)(d.Z, {
+    locked: R
   });
-  if (M) return (0, r.jsx)(a.IGR, {
+  if (D) return (0, r.jsx)(a.IGR, {
     text: _.intl.string(_.t.y2b7CA),
-    color: l.Z.unsafe_rawColors.BRAND_260.css,
-    className: P.newChannel
+    color: l.Z.colors.BADGE_BACKGROUND_DEFAULT.css
   });
-  if (!L && k === I.i.ALL_MESSAGES && n.isForumLikeChannel() && null != K && K > 0) return (0, r.jsx)(a.Text, {
+  if (!M && L === I.i.ALL_MESSAGES && n.isForumLikeChannel() && null != W && W > 0) return (0, r.jsx)(a.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
     children: _.intl.format(_.t.GkAbqY, {
-      count: (0, a.NGo)(K)
+      count: (0, a.NGo)(W)
     })
   });
-  if (!L && n.isForumLikeChannel() && null != Y && Y > 0) return (0, r.jsx)(a.Text, {
+  if (!M && n.isForumLikeChannel() && null != K && K > 0) return (0, r.jsx)(a.Text, {
     variant: "text-xs/semibold",
     color: "text-muted",
-    children: (0, a.NGo)(Y)
+    children: (0, a.NGo)(K)
   });
-  let Q = null != (t = null == w ? true : w.length) ? t : 0;
-  return null != T && T && W ? (0, r.jsx)(x.Z, {
-    userCount: Q,
-    video: H || z,
+  let q = null != (t = null == Z ? true : Z.length) ? t : 0;
+  return null != w && w && z ? (0, r.jsx)(x.Z, {
+    userCount: q,
+    video: V || H,
     channel: n
-  }) : Z && (0, y.a)(w) && q ? (0, r.jsx)(a.IGR, {
+  }) : N && (0, y.a)(Z) && Y ? (0, r.jsx)(a.IGR, {
     text: _.intl.string(_.t.dI3q4h),
     color: l.Z.unsafe_rawColors.RED_400.css
-  }) : null != V ? (0, r.jsx)(c.x3, {
+  }) : null != F ? (0, r.jsx)(c.x3, {
     textColor: "text-feedback-positive",
     entry: {
-      start: V
+      start: F
     }
-  }) : null != A && A && (0, O.u)(B) ? (0, r.jsx)(C.Z, {
-    embeddedApps: B,
-    muted: L
+  }) : null != T && T && (0, O.u)(U) ? (0, r.jsx)(C.Z, {
+    embeddedApps: U,
+    muted: M
   }) : null
 }

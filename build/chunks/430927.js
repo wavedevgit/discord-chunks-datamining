@@ -5,7 +5,7 @@ require.d(exports, {
   o: () => d
 });
 var Chunk512722 = require("./512722.js"),
-  i = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk287734 = require("./287734.js"),
   Chunk471253 = require("./471253.js"),
   Chunk922482 = require("./922482.js"),
@@ -20,13 +20,13 @@ async function d(e, n) {
     case u.WX.STAGE_INSTANCE: {
       let n = o.Z.getChannelId(),
         t = c.Z.getChannel(e.channel_id);
-      i()(null != t, "could not find channel"), n !== t.id && (await s.TM(t, true), await s.R5(t, null)), await (0, r.RK)(t, false, true);
+      l()(null != t, "could not find channel"), n !== t.id && (await s.TM(t, true), await s.R5(t, null)), await (0, r.RK)(t, false, true);
       break
     }
     case u.WX.VOICE: {
       let n = o.Z.getChannelId(),
         t = c.Z.getChannel(e.channel_id);
-      i()(null != t, "could not find channel"), n !== t.id && a.default.selectVoiceChannel(t.id)
+      l()(null != t, "could not find channel"), n !== t.id && a.default.selectVoiceChannel(t.id)
     }
   }
 }

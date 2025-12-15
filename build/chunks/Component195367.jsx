@@ -40,7 +40,7 @@ function y(e) {
     scheduledEndTime: k,
     scheduledStartTime: D,
     recurrenceRule: R
-  } = t, _ = (0, u._d)(I), A = (0, u.K3)(I), G = null != t && (0, g.xt)(t), U = r.useMemo(() => {
+  } = t, A = (0, u._d)(I), _ = (0, u.K3)(I), G = null != t && (0, g.xt)(t), U = r.useMemo(() => {
     let e = (0, m.v1)(t);
     return null != e ? e : {
       startDate: a()(D)
@@ -99,7 +99,7 @@ function y(e) {
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)("div", {
       className: b.blockedUsersContainer,
-      children: null != I && !G && (_ > 0 || A > 0) && (0, l.jsx)(d.mv, {
+      children: null != I && !G && (A > 0 || _ > 0) && (0, l.jsx)(d.mv, {
         channelId: I
       })
     }), (0, l.jsx)("div", {

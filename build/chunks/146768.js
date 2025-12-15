@@ -23,13 +23,13 @@ function s(e) {
   } = e, m = (0, r.e7)([o.Z, c.Z], () => {
     var e;
     return o.Z.getGuild(null == (e = c.Z.getChannel(n)) ? true : e.getGuildId())
-  }, [n]), h = (0, r.e7)([a.Z], () => a.Z.getStageInstanceByChannel(n), [n]), p = (0, i.w8)(n, l.pV.SPEAKER), v = (0, i.Rk)(n), j = null != h ? p : u, x = (null != h ? v : d) - j.length;
+  }, [n]), h = (0, r.e7)([a.Z], () => a.Z.getStageInstanceByChannel(n), [n]), p = (0, i.w8)(n, l.pV.SPEAKER), j = (0, i.Rk)(n), x = null != h ? p : u, v = (null != h ? j : d) - x.length;
   return {
     channelId: n,
     guild: null != m ? m : t,
     stage: null != h ? h : s,
-    speakers: j,
-    audienceCount: x,
+    speakers: x,
+    audienceCount: v,
     context: g
   }
 }

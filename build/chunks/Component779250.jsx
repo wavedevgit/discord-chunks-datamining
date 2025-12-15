@@ -35,7 +35,7 @@ var l, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk723009 = require("./723009.js");
 
-function _(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       l = Object.keys(n);
@@ -54,7 +54,7 @@ function _(e) {
   return e
 }
 let {
-  INVITE_OPTIONS_7_DAYS: A,
+  INVITE_OPTIONS_7_DAYS: _,
   INVITE_OPTIONS_UNLIMITED: G
 } = Chunk971130.ZP;
 var U = ((l = U || {})[l.ENTITY = 0] = "ENTITY", l[l.SETTINGS = 1] = "SETTINGS", l[l.PREVIEW = 2] = "PREVIEW", l[l.SUCCESS = 3] = "SUCCESS", l);
@@ -147,12 +147,12 @@ function z(e) {
     slideId: 2,
     label: D.intl.string(D.t["8aJzT4"]),
     valid: true
-  }], [d, c, N]), w = Object.keys(U).length, k = (0, p.xt)(n), _ = e => Math.max(0, Math.min(e, w - 1)), [A, G] = i.useState(+!!k), [z, F] = i.useState(false), M = i.useMemo(() => T.slice(0, A + 1).map(e => e.valid).every(Boolean), [T, A]), V = A >= T.length ? 3 : T[_(A)].slideId, B = 3 === V;
+  }], [d, c, N]), w = Object.keys(U).length, k = (0, p.xt)(n), A = e => Math.max(0, Math.min(e, w - 1)), [_, G] = i.useState(+!!k), [z, F] = i.useState(false), M = i.useMemo(() => T.slice(0, _ + 1).map(e => e.valid).every(Boolean), [T, _]), V = _ >= T.length ? 3 : T[A(_)].slideId, B = 3 === V;
   (0, C.l)(e => e.onUpdateCanCloseModal)(B);
   let X = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
     W = i.useRef(null),
     q = e => {
-      F(false), G(_(e))
+      F(false), G(A(e))
     },
     H = i.useRef(q);
   i.useEffect(() => {
@@ -161,10 +161,10 @@ function z(e) {
     (null == y ? true : y.id) != null && H.current(3)
   }, [null == y ? true : y.id]);
   let Y = () => {
-      M && (2 === V ? j() : B ? b() : q(A + 1))
+      M && (2 === V ? j() : B ? b() : q(_ + 1))
     },
     K = () => {
-      q(A - 1)
+      q(_ - 1)
     },
     J = D.intl.string(D.t.PDTjLN);
   return 2 === V && (J = c ? D.intl.string(D.t.e5VEcE) : D.intl.string(D.t["60lJ0C"])), (0, r.jsxs)(o.Y0X, {
@@ -181,9 +181,9 @@ function z(e) {
       "data-migration-pending": true,
       children: [!B && (0, r.jsx)(g.Z, {
         steps: T.map(e => e.label),
-        stepIndex: A,
+        stepIndex: _,
         onClick: e => {
-          e < A ? K() : e > A && Y()
+          e < _ ? K() : e > _ && Y()
         }
       }), (0, r.jsxs)(o.MyZ, {
         activeSlide: V,
@@ -286,7 +286,7 @@ function F(e) {
         let n = (0, b.so)(e),
           l = null != (t = e.channel_id) ? t : null == g ? true : g.id;
         null != l && c.ZP.createInvite(l, {
-          max_age: A.value,
+          max_age: _.value,
           max_uses: G.value
         }, k.t4x.GUILD_EVENTS), n ? I(e) : u()
       })(e.body), e
@@ -308,7 +308,7 @@ function F(e) {
           [r] = (0, y.SU)(t, l);
         e.channelId = null != (n = null == r ? true : r.id) ? n : null, e.entityType !== w.WX.EXTERNAL && v.entityType === w.WX.EXTERNAL && (e.entityMetadata = null)
       }
-      C(t => _({}, t, e))
+      C(t => A({}, t, e))
     },
     onSave: () => {
       null != v.recurrenceRule && P && (0, N.BP)(d, v) ? (0, o.ZDy)(async () => {
@@ -317,7 +317,7 @@ function F(e) {
         } = await Promise.resolve().then(n.bind(n, 288022));
         return t => {
           var n, l;
-          return (0, r.jsxs)(e, (n = _({}, t), l = l = {
+          return (0, r.jsxs)(e, (n = A({}, t), l = l = {
             header: D.intl.string(D.t.BW1Qoh),
             confirmText: D.intl.string(D.t.e5VEcE),
             cancelText: D.intl.string(D.t.oEAioF),
