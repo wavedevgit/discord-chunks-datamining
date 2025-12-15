@@ -132,7 +132,6 @@ let R = e => {
     className: y.bundlePreviewWrapper,
     children: (0, r.jsx)(u.d, {
       product: o,
-      isPurchased: false,
       isHighlighted: false
     })
   });

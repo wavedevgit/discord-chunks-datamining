@@ -221,7 +221,6 @@ function N(e) {
         className: T.bundlePreview,
         children: (0, n.jsx)(m.d, {
           product: e,
-          isPurchased: B,
           isHighlighted: W && !M,
           user: l
         })
@@ -233,7 +232,7 @@ function N(e) {
       isHighlighted: W && !M,
       cardSize: R
     })
-  }, [Y, D, l, B, W, R, M]);
+  }, [Y, D, l, W, R, M]);
   return (0, n.jsx)(L.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},

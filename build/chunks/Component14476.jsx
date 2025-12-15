@@ -1,109 +1,99 @@
 /** Chunk was on 23242 **/
 /** chunk id: 14476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => j
+  c: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
-  Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk410030 = require("./410030.js"),
   Chunk104505 = require("./104505.js"),
   Chunk699758 = require("./699758.js"),
   Chunk616066 = require("./616066.jsx"),
   Chunk396728 = require("./396728.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk252728 = require("./252728.js");
-let j = e => {
+let h = e => {
   let t, n, {
       skuId: i,
-      assetId: j,
-      user: y,
-      claimed: v,
-      onSelect: b,
-      productName: O,
-      a11yLabel: P,
-      selectedSkuId: S,
-      category: x,
-      type: E,
-      palette: w
+      assetId: h,
+      user: g,
+      claimed: y,
+      onSelect: j,
+      productName: v,
+      a11yLabel: b,
+      selectedSkuId: O,
+      category: S,
+      type: P,
+      palette: x
     } = e,
-    I = l.useRef(null),
+    E = l.useRef(null),
     {
-      isHoveringOrFocusing: T
-    } = (0, d.Z)(I),
-    k = !v && T,
-    C = (0, c.ZP)(),
-    N = (0, o.wj)(C);
-  return E === s.Z.AVATAR_DECORATION ? (t = {
-    type: s.Z.AVATAR_DECORATION,
-    label: P,
-    asset: j
-  }, n = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(m.R, {
-      item: t,
-      user: y,
-      isHighlighted: k,
-      avatarSize: u.EFr.SIZE_96,
-      isPurchased: v
-    }), v && (0, r.jsx)(u.sV5, {
-      size: "custom",
-      width: 48,
-      height: 48,
-      color: N ? u.TVs.colors.WHITE : u.TVs.colors.BLACK,
-      className: g.claimedIcon
-    })]
-  })) : E === s.Z.NAMEPLATE && (t = {
-    type: s.Z.NAMEPLATE,
-    label: P,
-    asset: j,
-    palette: null != w ? w : "none"
-  }, n = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(h.Z, {
-      nameplate: t,
-      user: y,
-      isHighlighted: k,
-      isPurchased: v,
-      size: "small"
-    }), v && (0, r.jsx)(u.sV5, {
-      size: "custom",
-      width: 48,
-      height: 48,
-      color: N ? u.TVs.colors.WHITE : u.TVs.colors.BLACK,
-      className: g.claimedIcon
-    })]
-  })), (0, r.jsx)(u.tEY, {
-    children: (0, r.jsxs)(u.kL8, {
-      ref: I,
-      "aria-label": null != O ? O : "",
+      isHoveringOrFocusing: w
+    } = (0, u.Z)(E),
+    I = !y && w;
+  return P === o.Z.AVATAR_DECORATION ? (t = {
+    type: o.Z.AVATAR_DECORATION,
+    label: b,
+    asset: h
+  }, n = (0, r.jsx)(d.R, {
+    item: t,
+    user: g,
+    isHighlighted: I,
+    avatarSize: s.EFr.SIZE_96
+  })) : P === o.Z.NAMEPLATE && (t = {
+    type: o.Z.NAMEPLATE,
+    label: b,
+    asset: h,
+    palette: null != x ? x : "none"
+  }, n = (0, r.jsx)(p.Z, {
+    nameplate: t,
+    user: g,
+    isHighlighted: I,
+    size: "small"
+  })), (0, r.jsx)(s.tEY, {
+    children: (0, r.jsxs)(s.kL8, {
+      ref: E,
+      "aria-label": null != v ? v : "",
       onClick: () => {
-        null == i || null == b || v || b(i)
+        null == i || null == j || y || j(i)
       },
-      className: a()(N ? g.shopCardDark : g.shopCard, {
-        [g.shopCardAnimation]: !v,
-        [N ? g.shopCardDarkHighlighted : g.shopCardHighlighted]: k,
-        [g.shopCardSelected]: S === i
+      className: a()(f.shopCard, {
+        [f.shopCardAnimation]: !y,
+        [f.highlighted]: I,
+        [f.shopCardSelected]: O === i
       }),
       children: [(0, r.jsx)("div", {
-        className: a()(g.preview, {
-          [g.avatarPreview]: E === s.Z.AVATAR_DECORATION,
-          [g.nameplatePreview]: E === s.Z.NAMEPLATE,
-          [g.previewTrick]: x === p.KN.Trick,
-          [g.previewTreat]: x === p.KN.Treat,
-          [g.shopCardClaimed]: v
+        className: a()(f.preview, {
+          [f.avatarPreview]: P === o.Z.AVATAR_DECORATION,
+          [f.nameplatePreview]: P === o.Z.NAMEPLATE,
+          [f.previewTrick]: S === c.KN.Trick,
+          [f.previewTreat]: S === c.KN.Treat
         }),
-        children: null != t && n
+        children: null != t ? (0, r.jsxs)(r.Fragment, {
+          children: [(0, r.jsx)("div", {
+            className: a()(f.previewContainer, {
+              [f.claimed]: y
+            }),
+            children: n
+          }), y && (0, r.jsx)(s.sV5, {
+            size: "custom",
+            width: 48,
+            height: 48,
+            color: s.TVs.colors.INTERACTIVE_TEXT_ACTIVE,
+            className: f.claimedIcon
+          })]
+        }) : null
       }), (0, r.jsxs)("div", {
-        className: g.productName,
-        children: [(0, r.jsx)(u.Heading, {
+        className: f.productName,
+        children: [(0, r.jsx)(s.Heading, {
           variant: "heading-md/extrabold",
-          children: O
-        }), (0, r.jsx)(u.Text, {
+          children: v
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
-          children: v ? f.intl.string(f.t["6cfuDj"]) : f.intl.string(f.t.QQsaCc)
+          children: y ? m.intl.string(m.t["6cfuDj"]) : m.intl.string(m.t.QQsaCc)
         })]
       })]
     })

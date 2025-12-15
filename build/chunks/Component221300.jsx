@@ -30,7 +30,6 @@ function p(e) {
         children: (0, r.jsx)(l.Z, {
           skuId: m.skuId,
           isHighlighted: p,
-          isPurchased: false,
           removeSetHeight: true
         })
       });
@@ -41,7 +40,6 @@ function p(e) {
           item: m,
           user: n,
           isHighlighted: p,
-          isPurchased: false,
           avatarSize: a.EFr.SIZE_80
         })
       });
@@ -56,7 +54,6 @@ function p(e) {
             isHighlighted: p,
             showPlaceholderUser: true,
             showStatus: true,
-            isPurchased: false,
             nameplatePreviewSize: "default",
             width: _ === c.U.SMALL ? d : f
           })
@@ -69,7 +66,6 @@ function p(e) {
             isHighlighted: p,
             showPlaceholderUser: true,
             showStatus: true,
-            isPurchased: false,
             nameplatePreviewSize: "default",
             width: _ === c.U.SMALL ? d : f
           })

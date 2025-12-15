@@ -29,8 +29,8 @@ let v = e => {
     fractionalPremiumInfo: P,
     setStep: x
   } = e, O = (0, i.e7)([s.default], () => s.default.locale), _ = new Date(y.subscriptionPeriodStart);
-  w.isBoostOnly || (_ = p.ZP.extendDateWithUnconsumedFractionalPremium(_, P.unactivatedUnits));
-  let g = (0, f.T4)(y.total, y.currency),
+  w.isBoostOnly || (_ = f.ZP.extendDateWithUnconsumedFractionalPremium(_, P.unactivatedUnits));
+  let g = (0, p.T4)(y.total, y.currency),
     [j, R] = (0, n.useState)(false),
     [T, k] = (0, n.useState)(false),
     M = _.toLocaleDateString(O, {
@@ -40,7 +40,7 @@ let v = e => {
     }),
     I = n.useMemo(() => (0, d.b)(), []);
   n.useEffect(() => {
-    b.default.track(h.rMx.PREMIUM_RESUBSCRIBE_FLOW_STARTED, function(e) {
+    b.default.track(C.rMx.PREMIUM_RESUBSCRIBE_FLOW_STARTED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var a = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(a);
@@ -70,7 +70,7 @@ let v = e => {
       k(true), R(false)
     }
   }, B = [{
-    text: C.intl.string(C.t["cY+Oob"]),
+    text: h.intl.string(h.t["cY+Oob"]),
     onClick: () => E(),
     variant: "primary",
     loading: j,
@@ -83,7 +83,7 @@ let v = e => {
     },
     gradientColor: "nitro-pink",
     transitionState: v,
-    title: C.intl.string(C.t.fYEWlq),
+    title: h.intl.string(h.t.fYEWlq),
     actions: B,
     onClose: async () => a(),
     children: [(0, r.jsxs)(c.Text, {
@@ -92,16 +92,16 @@ let v = e => {
         textAlign: "center"
       },
       children: [(0, r.jsx)("p", {
-        children: C.intl.format(C.t.dbGGui, {
+        children: h.intl.format(h.t.dbGGui, {
           price: g,
           date: M
         })
       }), (0, r.jsx)("p", {
-        children: C.intl.string(C.t.UQolSy)
+        children: h.intl.string(h.t.UQolSy)
       })]
     }), T ? (0, r.jsx)(o.M14, {
       type: "critical",
-      children: C.intl.string(C.t["5mlOCW"])
+      children: h.intl.string(h.t["5mlOCW"])
     }) : null]
   })
 }

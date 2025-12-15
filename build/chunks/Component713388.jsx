@@ -1,7 +1,7 @@
 /** Chunk was on 23736 **/
 /** chunk id: 713388, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => b
 }), require("./642613.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,51 +14,79 @@ var Chunk54381 = require("./54381.js"),
   Chunk478152 = require("./478152.js");
 
 function m(e) {
+  if (e.type === s.Jq.PANEL && null != e.StronglyDiscouragedCustomComponent || (0, s.Lk)(e) && e.type === s.Jq.SIDEBAR_ITEM && e.layout.some(e => (null == e ? true : e.StronglyDiscouragedCustomComponent) != null)) returntrue;
+  if ((0, s.Lk)(e) && 0 === e.layout.length) {
+    var t, n, a;
+    if (null != (null == (a = e.parent) || null == (n = a.parent) || null == (t = n.getLegacySearchKey) ? true : t.call(n))) returntrue
+  }
+  returnfalse
+}
+
+function p(e) {
+  return !!m(e) || !!(0, s.Lk)(e) && e.layout.some(e => p(e))
+}
+
+function h(e) {
   var t;
   let {
     setting: n,
     depth: i,
-    highlight: l
-  } = e, s = null == (t = r.useContext(h)) ? true : t.get(n), o = null;
-  return null != s && s.length > 0 && (o = s.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(m, {
+    highlightMode: l
+  } = e, s = null == (t = r.useContext(x)) ? true : t.get(n), o = null;
+  return null != s && s.length > 0 && (o = s.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(h, {
     setting: e,
     depth: i + 1,
-    highlight: l
+    highlightMode: l
   }, e))), (0, a.jsx)(c.r, {
     title: n,
     initExpanded: i <= 2,
-    highlight: l,
+    highlightMode: l,
     children: o
   })
 }
 
-function p(e) {
+function f(e) {
   let {
     setting: t,
-    depth: n
-  } = e, r = (0, s.Lk)(t) && t.type === s.Jq.SIDEBAR_ITEM && t.layout.some(e => (null == e ? true : e.StronglyDiscouragedCustomComponent) != null) || t.type === s.Jq.PANEL && null != t.StronglyDiscouragedCustomComponent, i = null;
+    depth: n,
+    inheritedHighlightMode: r
+  } = e, i = function(e, t) {
+    if ("migrated" === t) return "migrated";
+    switch (e.type) {
+      case s.Jq.ROOT:
+        return p(e) ? "root" : "migrated-root";
+      case s.Jq.SECTION:
+        return p(e) ? "none" : "migrated";
+      case s.Jq.PANEL:
+      case s.Jq.SIDEBAR_ITEM:
+        return m(e) ? "legacy" : "migrated";
+      default:
+        return null != t ? t : "migrated"
+    }
+  }(t, r), l = "migrated" === i ? "migrated" : true, o = null;
   if ((0, s.Lk)(t)) {
-    var l, o, d;
-    let e = null == (d = t.parent) || null == (o = d.parent) || null == (l = o.getLegacySearchKey) ? true : l.call(o);
-    0 === t.layout.length && null != e ? i = (0, a.jsx)(m, {
+    var d, u, x;
+    let e = null == (x = t.parent) || null == (u = x.parent) || null == (d = u.getLegacySearchKey) ? true : d.call(u);
+    0 === t.layout.length && null != e ? o = (0, a.jsx)(h, {
       setting: e,
       depth: n + 1,
-      highlight: true
-    }) : t.layout.length > 0 && (i = t.layout.map(e => (0, a.jsx)(p, {
+      highlightMode: null != l ? l : "legacy"
+    }) : t.layout.length > 0 && (o = t.layout.map(e => (0, a.jsx)(f, {
       setting: e,
-      depth: n + 1
+      depth: n + 1,
+      inheritedHighlightMode: l
     }, e.key)))
   }
   return (0, a.jsx)(c.r, {
     title: t.key,
     initExpanded: n <= 2,
-    highlight: r,
-    children: i
+    highlightMode: i,
+    children: o
   })
 }
-let h = Chunk473749.createContext(null);
+let x = Chunk473749.createContext(null);
 
-function f() {
+function b() {
   let [e, t] = Chunk473749.useState(false), {
     legacySettingDirectory: n
   } = (0, Chunk617810.q)(), {
@@ -75,14 +103,14 @@ function f() {
       checked: module,
       onChange: e => t(e),
       label: "Show Legacy Settings Tree"
-    }), (0, Chunk54381.jsx)(h.Provider, {
+    }), (0, Chunk54381.jsx)(x.Provider, {
       value: require,
       children: (0, Chunk54381.jsxs)("div", {
         className: Chunk478152.tree,
-        children: [module && (0, Chunk54381.jsx)(m, {
+        children: [module && (0, Chunk54381.jsx)(h, {
           setting: "root",
           depth: 1
-        }, "root"), !module && (0, Chunk54381.jsx)(p, {
+        }, "root"), !module && (0, Chunk54381.jsx)(f, {
           setting: Chunk28682,
           depth: 1
         }, Chunk28682.key)]

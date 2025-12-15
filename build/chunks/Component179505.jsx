@@ -70,7 +70,6 @@ function E(e, t) {
         className: _.bundlePreview,
         children: (0, r.jsx)(l.d, {
           product: t,
-          isPurchased: false,
           isHighlighted: false,
           user: a
         })

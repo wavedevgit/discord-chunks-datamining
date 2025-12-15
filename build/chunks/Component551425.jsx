@@ -104,7 +104,6 @@ let g = Chunk481060.EFr.SIZE_152,
       className: b.bundlePreview,
       children: (0, i.jsx)(h.d, {
         product: t,
-        isPurchased: false,
         isHighlighted: false
       })
     })

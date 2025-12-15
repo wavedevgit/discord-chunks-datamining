@@ -131,7 +131,7 @@ function ey(e) {
   } = e;
   return (0, a.jsx)(ei.oL, {
     channel: t,
-    children: (0, a.jsx)(eI, {
+    children: (0, a.jsx)(eP, {
       channel: t,
       guild: n,
       sidebarState: r
@@ -191,7 +191,7 @@ function eO(e, t) {
   return "card-".concat(e, "-").concat(t)
 }
 
-function eP(e) {
+function eI(e) {
   if ("string" == typeof e) {
     let t = e.match(/card-{\d+}-({\d+})$/);
     return null == t ? null : t[1]
@@ -199,7 +199,7 @@ function eP(e) {
   return null
 }
 
-function eI(e) {
+function eP(e) {
   let {
     channel: t,
     sidebarState: n
@@ -277,11 +277,11 @@ function eI(e) {
       layoutType: a
     }
   }(t), G = g.length > 0, V = G || x.length > 0, W = (0, O.Z)(t), {
-    tagFilter: X,
+    tagFilter: K,
     tagSetting: en
   } = (0, Y.H)(t.id);
-  (0, J.ku)(t, X, en, u), (0, v.ZP)(() => {
-    !u && m.length > 0 && K.Z.updateForumSearchQuery(t.id, m)
+  (0, J.ku)(t, K, en, u), (0, v.ZP)(() => {
+    !u && m.length > 0 && X.Z.updateForumSearchQuery(t.id, m)
   });
   let ea = (0, J.jR)(t),
     el = (0, J.eZ)(t),
@@ -337,22 +337,22 @@ function eI(e) {
       channelId: t.id
     }),
     eS = null != j && null != ey && ey.length > 0,
-    eI = r.useRef(null),
+    eP = r.useRef(null),
     {
       containerRef: eM,
       containerWidth: ek
     } = (0, em.Z)();
   r.useEffect(() => {
-    if (null == eI.current && null != t.id) {
+    if (null == eP.current && null != t.id) {
       let e = D.ZP.getSidebarState(t.id);
-      null != e && e.type === Z.tI.VIEW_THREAD && (eI.current = e.channelId)
+      null != e && e.type === Z.tI.VIEW_THREAD && (eP.current = e.channelId)
     }
   }, [t.id]);
   let {
     columns: eA
   } = r.useMemo(() => eu ? eT.getRenderOptions(ek) : ed.eU, [eu, ek]), eL = r.useMemo(() => _ ? Math.round((window.innerHeight - 200) / 118) : 0, [_]), {
     showResolvedFlags: eF
-  } = (0, I.N)(t.id), eD = t.isModeratorReportChannel(), eH = r.useMemo(() => {
+  } = (0, P.N)(t.id), eD = t.isModeratorReportChannel(), eH = r.useMemo(() => {
     let e = Math.ceil(window.innerHeight / (0, ed.KW)(eT.getWidth(ek))) * eA;
     return w ? e : 0
   }, [ek, eA, w]), ez = r.useMemo(() => {
@@ -397,8 +397,8 @@ function eI(e) {
       }
     }), n ? (0, M.ad)(e, {
       source: ex.on.BROWSER
-    }) : (eI.current = e.id, (0, F.ok)(e))
-  }, [t.guild_id, t.id, eI]), [eW, eq] = r.useState(i + s - 24), eK = r.useCallback((e, n, r) => 0 === e ? (0, a.jsx)(eZ, {
+    }) : (eP.current = e.id, (0, F.ok)(e))
+  }, [t.guild_id, t.id, eP]), [eW, eq] = r.useState(i + s - 24), eX = r.useCallback((e, n, r) => 0 === e ? (0, a.jsx)(eZ, {
     channel: t,
     isEmpty: !G,
     isSearchLoading: L,
@@ -416,7 +416,7 @@ function eI(e) {
   }, "archive-or-search-result") : r() : (0, a.jsx)(eE, {
     channel: t,
     coords: n
-  }, "archived-missing-reading-history-perm"), [eS, el, j, ea, t, G, L, _, V]), eX = (0, h.e7)([q.Z], () => q.Z.hasHidden(t.id)), eY = {
+  }, "archived-missing-reading-history-perm"), [eS, el, j, ea, t, G, L, _, V]), eK = (0, h.e7)([q.Z], () => q.Z.hasHidden(t.id)), eY = {
     editorHeight: i,
     isGridLayout: eu
   }, eJ = r.useRef(eY);
@@ -428,10 +428,10 @@ function eI(e) {
       editorHeight: n,
       isGridLayout: a
     } = eJ.current, r = a ? e1 : eo, i = null == (e = r.current) ? true : e.getScrollerState();
-    null != i && !eX && i.scrollTop > n && (null == (t = r.current) || t.scrollTo({
+    null != i && !eK && i.scrollTop > n && (null == (t = r.current) || t.scrollTo({
       to: 0
     }))
-  }, [eX]);
+  }, [eK]);
   let {
     updateListScrollerRef: eQ,
     renderListSection: e$,
@@ -495,7 +495,7 @@ function eI(e) {
     listViewCardHeights: o,
     editorHeight: i,
     editorAdditionRowHeight: s,
-    renderSectionOrItem: eK,
+    renderSectionOrItem: eX,
     goToThread: eV,
     observePostVisibilityAnalytics: ec,
     isShowingSearchResult: eS
@@ -542,9 +542,9 @@ function eI(e) {
             })
           })
         }
-      }), f.current = eP(n)
+      }), f.current = eI(n)
     }, [t, f]), p = r.useCallback(e => {
-      let t = eP(e);
+      let t = eI(e);
       if (null == t) return;
       let n = H.Z.getChannel(t);
       null != n && i(n, true)
@@ -598,13 +598,13 @@ function eI(e) {
     masonryListScrollerRef: e1,
     threadIdsBySection: eG,
     goToThread: eV,
-    renderSectionOrItem: eK,
+    renderSectionOrItem: eX,
     hasActiveThreads: G,
     isShowingSearchResult: eS,
     canSearchForumPosts: ea,
     canViewArchivedPosts: el,
     observePostVisibilityAnalytics: ec,
-    focusedThreadId: eI,
+    focusedThreadId: eP,
     headerHeight: eW
   });
   ! function(e) {
@@ -641,7 +641,7 @@ function eI(e) {
     isGridLayout: eu,
     threadIdsBySection: eG,
     parentId: t.id,
-    focusedThreadId: eI
+    focusedThreadId: eP
   });
   let tt = r.useCallback(() => {
       var e, n;
@@ -698,7 +698,7 @@ function eI(e) {
           })
         }), W ? (0, a.jsx)("div", {
           className: ep.optInNotice,
-          children: (0, a.jsx)(P.Z, {
+          children: (0, a.jsx)(I.Z, {
             channel: t
           })
         }) : null, eu ? (0, a.jsx)(ef.KT, {
@@ -791,8 +791,8 @@ function eR(e) {
   let {
     channel: t
   } = e, n = r.useCallback(() => {
-    K.Z.resort(t.id)
-  }, [t]), i = (0, h.e7)([X.Z], () => X.Z.getNewThreadCount());
+    X.Z.resort(t.id)
+  }, [t]), i = (0, h.e7)([K.Z], () => K.Z.getNewThreadCount());
   return 0 === i ? null : (0, a.jsx)(b.P3F, {
     className: ep.newPostsButton,
     onClick: n,
@@ -819,9 +819,9 @@ function eZ(e) {
     numResults: y,
     children: N,
     coords: O,
-    onHeightChange: P
+    onHeightChange: I
   } = e, {
-    name: I,
+    name: P,
     formOpen: R,
     titleFocused: M,
     hasClickedForm: Z,
@@ -850,7 +850,7 @@ function eZ(e) {
   }, c.X), {
     tagFilter: D,
     layoutType: H
-  } = (0, Y.H)(s.id), U = (0, ei.AF)(), q = (0, Y.v)(), X = (0, h.e7)([B.Z], () => B.Z.canChatInGuild(s.guild_id)), Q = (0, J.r_)(s), $ = (0, L.cD)(s), [et, er] = r.useState($), [, es] = (0, w.AB)(null != (i = s.getGuildId()) ? i : true), eo = (0, _.HL)(s), ed = X && ($ || et && es) && !eo, em = s.isMediaChannel();
+  } = (0, Y.H)(s.id), U = (0, ei.AF)(), q = (0, Y.v)(), K = (0, h.e7)([B.Z], () => B.Z.canChatInGuild(s.guild_id)), Q = (0, J.r_)(s), $ = (0, L.cD)(s), [et, er] = r.useState($), [, es] = (0, w.AB)(null != (i = s.getGuildId()) ? i : true), eo = (0, _.HL)(s), ed = K && ($ || et && es) && !eo, em = s.isMediaChannel();
   r.useEffect(() => {
     $ && er(true)
   }, [$]);
@@ -859,8 +859,8 @@ function eZ(e) {
     height: eh
   } = (0, j.ZP)();
   r.useEffect(() => {
-    null != eh && P(eh)
-  }, [P, eh]);
+    null != eh && I(eh)
+  }, [I, eh]);
   let ex = r.useCallback(() => {
     o()(() => {
       null != ef.current && U.getState().setEditorHeight(ef.current.offsetHeight)
@@ -876,9 +876,9 @@ function eZ(e) {
     eS = r.useRef(null),
     [eN, eO] = r.useState(0),
     {
-      width: eP
+      width: eI
     } = (0, h.e7)([V.Z], () => V.Z.windowSize()),
-    eI = null == (n = ew.current) || null == (t = n.getBoundingClientRect()) ? true : t.width,
+    eP = null == (n = ew.current) || null == (t = n.getBoundingClientRect()) ? true : t.width,
     eE = r.useRef(null),
     e_ = r.useRef(null);
   r.useLayoutEffect(() => {
@@ -901,8 +901,8 @@ function eZ(e) {
       }
       eO(a)
     }
-  }, [s.availableTags, eP, eI, D]);
-  let eR = I.length > 0 && !R && (v || null != y),
+  }, [s.availableTags, eI, eP, D]);
+  let eR = P.length > 0 && !R && (v || null != y),
     eZ = !__OVERLAY__ && !Z && !R && M && (0 === k.textValue.trim().length || k.textValue.trim() === eT) && 0 === ey.length && !eo;
   r.useLayoutEffect(() => {
     let e = eR || eZ;
@@ -977,14 +977,14 @@ function eZ(e) {
             color: "text-default",
             children: v ? eb.intl.string(eb.t["/9i3qq"]) : 0 === y ? eb.intl.string(eb.t.DbgHxi) : eb.intl.formatToPlainString(eb.t["tBz/8b"], {
               numPosts: null != y ? y : "",
-              query: I
+              query: P
             })
           }), !v && (0, a.jsx)(b.P3F, {
             onClick: () => {
               (0, ee.zI)({
                 guildId: s.guild_id,
                 channelId: s.id
-              }), K.Z.clearForumSearch(s.id), U.getState().setName("")
+              }), X.Z.clearForumSearch(s.id), U.getState().setName("")
             },
             children: (0, a.jsx)(b.Text, {
               variant: "text-xs/semibold",

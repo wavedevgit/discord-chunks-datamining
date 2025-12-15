@@ -131,12 +131,12 @@ let eo = Chunk473749.memo(function(e) {
     overrideMedia: s
   });
   (0, ee.KK)(j);
-  let C = (0, f.e7)([J.default, K.Z], () => {
+  let C = (0, f.e7)([J.default, X.Z], () => {
       var e, t, n, a, r, i;
       let l = J.default.getUser(null == j || null == (t = j.messageSnapshots[0]) || null == (e = t.moderatorReport) ? true : e.reported_user_id);
       if (null != l) return l;
       if ((null == j || null == (n = j.messageReference) ? true : n.channel_id) != null && (null == j || null == (a = j.messageReference) ? true : a.message_id) != null) {
-        let e = K.Z.getMessage(null == j || null == (r = j.messageReference) ? true : r.channel_id, null == j || null == (i = j.messageReference) ? true : i.message_id);
+        let e = X.Z.getMessage(null == j || null == (r = j.messageReference) ? true : r.channel_id, null == j || null == (i = j.messageReference) ? true : i.message_id);
         if (null != e) return e.author
       }
       return null
@@ -151,12 +151,12 @@ let eo = Chunk473749.memo(function(e) {
   }, [T, w, t]), r.useEffect(() => {
     null == i || i(y.current, t)
   }, [y, i, t]);
-  let P = r.useRef(null),
+  let I = r.useRef(null),
     {
-      handleLeftClick: I,
+      handleLeftClick: P,
       handleRightClick: _
     } = (0, M.Z)({
-      facepileRef: P,
+      facepileRef: I,
       goToThread: n,
       channel: d
     }),
@@ -188,7 +188,7 @@ let eo = Chunk473749.memo(function(e) {
   return (0, a.jsxs)("div", {
     ref: y,
     "data-item-id": t,
-    onClick: I,
+    onClick: P,
     onContextMenu: _,
     className: l()(el.container, ei.container, c, {
       [el.isOpen]: h
@@ -211,7 +211,7 @@ let eo = Chunk473749.memo(function(e) {
       }
       return e
     }({
-      onClick: I,
+      onClick: P,
       focusProps: {
         ringTarget: y
       },
@@ -244,7 +244,7 @@ let eo = Chunk473749.memo(function(e) {
         children: (0, a.jsx)(eu, {
           channel: d,
           firstMessage: j,
-          facepileRef: P
+          facepileRef: I
         })
       })]
     })]
@@ -286,7 +286,7 @@ let ed = Chunk473749.memo(function(e) {
     hasMediaAttachment: i,
     hasUnreads: s,
     originalAuthor: o
-  } = e, c = (0, f.e7)([P.Z], () => P.Z.isLoading(n.id)), d = (0, f.e7)([X.Z], () => X.Z.can(en.Plq.MANAGE_MESSAGES, n)), u = V.cC.useSetting(), m = (0, f.e7)([Y.Z], () => Y.Z.getGuildId()), {
+  } = e, c = (0, f.e7)([I.Z], () => I.Z.isLoading(n.id)), d = (0, f.e7)([K.Z], () => K.Z.can(en.Plq.MANAGE_MESSAGES, n)), u = V.cC.useSetting(), m = (0, f.e7)([Y.Z], () => Y.Z.getGuildId()), {
     contentPlaceholder: h,
     renderedContent: x
   } = null == t ? {
@@ -577,7 +577,7 @@ function eb(e) {
         shouldObscure: r,
         obscureReason: i,
         shouldShowAgeVerification: s
-      }), r && (0, a.jsx)(I.Z, {
+      }), r && (0, a.jsx)(P.Z, {
         iconClassname: el.obscuredTag,
         obscureReason: i
       })]

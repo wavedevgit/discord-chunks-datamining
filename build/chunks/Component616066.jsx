@@ -60,30 +60,27 @@ let g = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       item: t,
       user: n,
       isHighlighted: i = false,
-      isPurchased: u = false,
-      avatarSize: p = s.EFr.SIZE_152,
-      avatarPlaceholderSrc: m,
-      className: E
-    } = e, b = (0, l.y9)(p), {
-      avatarDecorationSrc: y,
-      eventHandlers: O,
-      avatarPlaceholderSrc: v
+      avatarSize: u = s.EFr.SIZE_152,
+      avatarPlaceholderSrc: p,
+      className: m
+    } = e, E = (0, l.y9)(u), {
+      avatarDecorationSrc: b,
+      eventHandlers: y,
+      avatarPlaceholderSrc: O
     } = (0, c.Z)({
       user: n,
       avatarDecorationOverride: (null == t ? true : t.type) === o.Z.AVATAR_DECORATION ? t : true,
-      size: b,
+      size: E,
       onlyAnimateOnHoverOrFocus: !i
-    }), S = d.intl.formatToPlainString(d.t.Do2lxE, {
+    }), v = d.intl.formatToPlainString(d.t.Do2lxE, {
       a11y_text: t.label
     });
-    return (0, r.jsx)(g, h(_({}, O), {
-      avatarDecoration: y,
-      src: i ? null == n ? true : n.getAvatarURL(true, 152, true) : null != m ? m : v,
+    return (0, r.jsx)(g, h(_({}, y), {
+      avatarDecoration: b,
+      src: i ? null == n ? true : n.getAvatarURL(true, 152, true) : null != p ? p : O,
       imageClassName: i ? f.fadeInAvatarImg : true,
-      className: a()(E, f.avatar, {
-        [f.avatarPurchased]: u && !i
-      }),
-      size: p,
-      "aria-label": S
+      className: a()(m, f.avatar),
+      size: u,
+      "aria-label": v
     }))
   }

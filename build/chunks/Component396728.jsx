@@ -13,23 +13,22 @@ let o = Chunk473749.memo(function(e) {
     user: t,
     nameplate: n,
     isHighlighted: r,
-    isPurchased: o,
-    size: c = "default"
-  } = e, d = "small" === c ? 62 : 94, u = "small" === c ? 72 : 110;
+    size: o = "default"
+  } = e, c = "small" === o ? 62 : 94, d = "small" === o ? 72 : 110;
   return (0, a.jsx)("div", {
     className: s.nameplatePreviewContainer,
     children: (0, a.jsxs)("div", {
       className: s.nameplatePreviewList,
       children: [(0, a.jsx)(i.G, {
         showStatus: true,
-        width: d,
+        width: c,
         opacity: .7,
-        size: c
+        size: o
       }), (0, a.jsx)(i.G, {
         showStatus: true,
-        width: u,
+        width: d,
         opacity: .85,
-        size: c
+        size: o
       }), (0, a.jsx)(l.Z, {
         user: t,
         nameplate: n,
@@ -37,18 +36,17 @@ let o = Chunk473749.memo(function(e) {
         isHighlighted: r,
         showPlaceholderUser: !r,
         showStatus: true,
-        isPurchased: o,
-        nameplatePreviewSize: "small" === c ? "small" : "default"
-      }), (0, a.jsx)(i.G, {
-        showStatus: true,
-        width: u,
-        opacity: .85,
-        size: c
+        nameplatePreviewSize: "small" === o ? "small" : "default"
       }), (0, a.jsx)(i.G, {
         showStatus: true,
         width: d,
+        opacity: .85,
+        size: o
+      }), (0, a.jsx)(i.G, {
+        showStatus: true,
+        width: c,
         opacity: .7,
-        size: c
+        size: o
       })]
     })
   })

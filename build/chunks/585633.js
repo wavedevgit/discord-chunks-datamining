@@ -11,7 +11,6 @@ module.exports = {
   avatarContainer: "e144e058a84f76ff-avatarContainer",
   avatar: "e144e058a84f76ff-avatar",
   avatarVisible: "e144e058a84f76ff-avatarVisible",
-  nameplatePurchased: "e144e058a84f76ff-nameplatePurchased",
   placeholderUsername: "e144e058a84f76ff-placeholderUsername",
   tagChiplet: "e144e058a84f76ff-tagChiplet",
   inheritWidth: "e144e058a84f76ff-inheritWidth"

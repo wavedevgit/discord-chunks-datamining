@@ -2,7 +2,7 @@
 /** chunk id: 76451, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => I,
+  Z: () => P,
   _: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -87,7 +87,7 @@ function O(e) {
   })
 }
 
-function P(e) {
+function I(e) {
   let {
     channelId: t,
     closePopout: n
@@ -132,7 +132,7 @@ function P(e) {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     channelId: t
   } = e, [n, i] = r.useState(false), l = (0, o.e7)([b.Z], () => b.Z.getUploads(t, m.Ie.CREATE_FORUM_POST.drafts.type)), s = l.length, c = s > 0;
@@ -156,7 +156,7 @@ function I(e) {
     }) : (0, a.jsx)(O, {
       onMouseEnter: d,
       channelId: t
-    }), n && (0, a.jsx)(P, {
+    }), n && (0, a.jsx)(I, {
       channelId: t,
       closePopout: () => {
         i(false)

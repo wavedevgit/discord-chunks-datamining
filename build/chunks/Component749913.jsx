@@ -121,9 +121,9 @@ function ed(e) {
     }
   }, c.X), [b, p] = r.useState(null), j = r.useContext(B.oo), v = r.useCallback(() => {
     j.bumpDispatchPriority()
-  }, [j]), C = (0, h.e7)([F.Z], () => F.Z.can(ea.Plq.ATTACH_FILES, t)), y = (0, h.Wu)([H.Z], () => H.Z.getUploads(t.id, L.d.FirstThreadMessage)), T = g && C && u, w = (null == t ? true : t.isMediaChannel()) === true, P = function(e, t) {
+  }, [j]), C = (0, h.e7)([F.Z], () => F.Z.can(ea.Plq.ATTACH_FILES, t)), y = (0, h.Wu)([H.Z], () => H.Z.getUploads(t.id, L.d.FirstThreadMessage)), T = g && C && u, w = (null == t ? true : t.isMediaChannel()) === true, I = function(e, t) {
     let n = (0, Q.AF)(),
-      a = (0, K.ql)(e);
+      a = (0, X.ql)(e);
     return r.useCallback(() => {
       let {
         formOpen: r,
@@ -139,7 +139,7 @@ function ed(e) {
         }
       }, 0), (o && l.length > 0 || s.textValue.trim().length > 0 && s.textValue.trim() !== a || H.Z.getUploads(e.id, L.d.FirstThreadMessage).length > 0) && i())
     }, [n, e.id, a, t])
-  }(t, d), I = function(e) {
+  }(t, d), P = function(e) {
     let {
       formOpen: t
     } = (0, Q.xH)(e => {
@@ -201,7 +201,7 @@ function ed(e) {
         setFormOpenFromUserAction: h,
         setGuidelinesOpen: g
       } = n.getState(), x = q.Z.hasSeen(e.id);
-      if (!u) return (0, X.P_)({
+      if (!u) return (0, K.P_)({
         guildId: e.guild_id,
         channelId: e.id
       }), x || n.getState().setGuidelinesOpen(true), h(), {
@@ -256,12 +256,12 @@ function ed(e) {
       className: l()(el.container, {
         [el.collapsed]: !g
       }),
-      onClick: !g && u ? P : true,
+      onClick: !g && u ? I : true,
       children: (0, a.jsxs)("form", {
         onMouseDown: v,
         onFocus: v,
         onSubmit: e => {
-          e.preventDefault(), u && I()
+          e.preventDefault(), u && P()
         },
         children: [(0, a.jsxs)("div", {
           className: el.formContainer,
@@ -282,7 +282,7 @@ function ed(e) {
               editorRef: b,
               setEditorRef: p,
               parentChannel: t,
-              submit: I,
+              submit: P,
               disabled: !u
             }), x && (0, a.jsx)(ex, {})]
           }), T && (w ? (0, a.jsx)(N._, {
@@ -334,9 +334,9 @@ let eu = Chunk473749.memo(function(e) {
         hasClickedForm: l,
         submitting: s
       }
-    }, c.X), m = (0, Q.AF)(), f = (0, K.ql)(t), h = r.useCallback(() => {
+    }, c.X), m = (0, Q.AF)(), f = (0, X.ql)(t), h = r.useCallback(() => {
       var e;
-      m.getState().resetFormState(), p.Z.clearDraft(t.id, L.d.ThreadSettings), p.Z.clearDraft(t.id, L.d.FirstThreadMessage), j.Z.clearAll(t.id, L.d.FirstThreadMessage), m.getState().setFormOpen(false), m.getState().setBodyFocused(false), m.getState().setTitleFocused(false), m.getState().setHasClickedForm(false), m.getState().setPreviewing(false), null == (e = i.current) || e.blur(), (0, X.Oq)({
+      m.getState().resetFormState(), p.Z.clearDraft(t.id, L.d.ThreadSettings), p.Z.clearDraft(t.id, L.d.FirstThreadMessage), j.Z.clearAll(t.id, L.d.FirstThreadMessage), m.getState().setFormOpen(false), m.getState().setBodyFocused(false), m.getState().setTitleFocused(false), m.getState().setHasClickedForm(false), m.getState().setPreviewing(false), null == (e = i.current) || e.blur(), (0, K.Oq)({
         guildId: t.guild_id,
         channelId: t.id
       })
@@ -388,7 +388,7 @@ let eu = Chunk473749.memo(function(e) {
         hasClickedForm: l,
         submitting: s
       }
-    }, c.X), j = (0, Q.AF)(), v = null != t.topic && 0 !== t.topic.length, C = q.Z.hasSeen(t.id), y = (0, K.ql)(t), T = (0, h.e7)([z.default], () => z.default.getCurrentUser());
+    }, c.X), j = (0, Q.AF)(), v = null != t.topic && 0 !== t.topic.length, C = q.Z.hasSeen(t.id), y = (0, X.ql)(t), T = (0, h.e7)([z.default], () => z.default.getCurrentUser());
     o()(null != T, "current user cannot be null"), (0, B.yp)({
       event: ea.CkL.FOCUS_COMPOSER_TITLE,
       handler: () => {
@@ -437,7 +437,7 @@ let eu = Chunk473749.memo(function(e) {
             e !== f && (j.getState().setName(e), u || W.Z.updateForumSearchQuery(t.id, e))
           },
           onKeyDown: e => {
-            "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), u && f.length > 0 ? null == l || l.focus() : i && e.shiftKey ? ((0, X.nH)({
+            "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), u && f.length > 0 ? null == l || l.focus() : i && e.shiftKey ? ((0, K.nH)({
               guildId: t.guild_id,
               channelId: t.id
             }), v && !C && j.getState().setGuidelinesOpen(true), j.getState().setFormOpenFromUserAction(), f.trim().length > 0 && (j.getState().setBodyFocused(true), null == l || l.focus())) : u || !(f.length > 0) || null != d || s || W.Z.updateForumSearchQuery(t.id, f));
@@ -513,7 +513,7 @@ let eh = Chunk473749.memo(function(e) {
       content: n
     }), {
       content: i
-    } = (0, P.Z)(r, {
+    } = (0, I.Z)(r, {
       hideSimpleEmbedContent: true,
       isInteracting: false,
       formatInline: false,
@@ -521,7 +521,7 @@ let eh = Chunk473749.memo(function(e) {
       allowHeading: true,
       previewLinkTarget: true,
       allowLinks: true
-    }), s = (0, I.Z)({
+    }), s = (0, P.Z)({
       message: r,
       channel: t,
       compact: false
@@ -562,7 +562,7 @@ let eh = Chunk473749.memo(function(e) {
         formOpen: i
       }
     }, c.X), j = (0, Q.AF)();
-    r.useEffect(() => () => (0, X.Vn)({
+    r.useEffect(() => () => (0, K.Vn)({
       guildId: t.guild_id,
       channelId: t.id
     }), [t.guild_id, t.id]);
@@ -837,7 +837,7 @@ function eT(e) {
   }), {
     containerRef: h,
     containerWidth: g
-  } = (0, et.Z)(), x = r.useRef(null), p = r.useRef(null), [j, v] = r.useState(true), C = (0, K.Vm)(t), [y, T] = r.useState(0);
+  } = (0, et.Z)(), x = r.useRef(null), p = r.useRef(null), [j, v] = r.useState(true), C = (0, X.Vm)(t), [y, T] = r.useState(0);
   return (r.useLayoutEffect(() => {
     var e;
     let t = x.current,

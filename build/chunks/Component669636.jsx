@@ -50,15 +50,15 @@ let _ = e => {
       product: t,
       itemConsumed: r,
       forCollectedModal: a
-    } = e, [i] = t.items, l = (0, f.e7)([b.default], () => {
-      let e = b.default.getCurrentUser();
+    } = e, [i] = t.items, l = (0, f.e7)([h.default], () => {
+      let e = h.default.getCurrentUser();
       return s()(null != e, "User cannot be undefined"), e
     }), w = Object.values(u.a).includes(t.skuId), S = (0, g.Z)({
       location: "CollectiblesProductPreview"
     });
     return (0, o.EQ)(t.type).with(c.Z.PROFILE_EFFECT, () => (0, n.jsx)("div", {
       className: O.profileEffectShopPreview,
-      children: (0, n.jsx)(h.Z, {
+      children: (0, n.jsx)(b.Z, {
         skuId: i.skuId,
         delayProfileEffectIntro: a,
         withScaleAnimation: a
@@ -67,7 +67,6 @@ let _ = e => {
       item: i,
       user: l,
       avatarSize: d.EFr.SIZE_120,
-      isPurchased: false,
       isHighlighted: true
     })).with(c.Z.NAMEPLATE, () => (0, n.jsx)("div", {
       className: O.nameplate,
@@ -82,7 +81,6 @@ let _ = e => {
       children: (0, n.jsx)(y.d, {
         product: t,
         user: l,
-        isPurchased: false,
         isHighlighted: true,
         forCollectedModal: a
       })

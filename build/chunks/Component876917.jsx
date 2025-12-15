@@ -17,25 +17,24 @@ let f = e => {
   let {
     skuId: t,
     isHighlighted: n,
-    isPurchased: a,
-    removeSetHeight: f = false,
-    withScaleAnimation: p = false,
-    delayProfileEffectIntro: _ = false
-  } = e, [m, h] = i.useState(true);
+    removeSetHeight: a = false,
+    withScaleAnimation: f = false,
+    delayProfileEffectIntro: p = false
+  } = e, [_, m] = i.useState(true);
   return (i.useEffect(() => {
-    if (true !== p) h(false);
+    if (true !== f) m(false);
     else {
       let e = setTimeout(() => {
-        h(false)
+        m(false)
       }, s.JH);
       return () => {
         clearTimeout(e)
       }
     }
-  }, [p]), null == t) ? null : (0, r.jsxs)("div", {
+  }, [f]), null == t) ? null : (0, r.jsxs)("div", {
     className: o()(u.previewContainer, {
-      [u.previewContainerAnimation]: p,
-      [u.previewContainerSetHeight]: !f
+      [u.previewContainerAnimation]: f,
+      [u.previewContainerSetHeight]: !a
     }),
     children: [(0, r.jsx)("img", {
       src: d,
@@ -43,19 +42,16 @@ let f = e => {
       className: u.preview,
       "aria-hidden": true,
       draggable: false
-    }), !m && (0, r.jsx)("div", {
-      className: a ? u.purchasedEffect : true,
-      children: (0, r.jsx)(c.Z, {
-        skuId: t,
-        useThumbnail: true,
-        autoPlay: p,
-        restartMethod: l.Q.FromStart,
-        resetOnHover: true,
-        isHovering: n,
-        useOpacityOnHover: false,
-        delayIntro: _,
-        shopPreview: true
-      })
+    }), !_ && (0, r.jsx)(c.Z, {
+      skuId: t,
+      useThumbnail: true,
+      autoPlay: f,
+      restartMethod: l.Q.FromStart,
+      resetOnHover: true,
+      isHovering: n,
+      useOpacityOnHover: false,
+      delayIntro: p,
+      shopPreview: true
     })]
   })
 }

@@ -136,7 +136,6 @@ let g = {
             item: h
           }), null != h && v === i.Z.PROFILE_EFFECT && (0, r.jsx)(s.Z, {
             skuId: h.skuId,
-            isPurchased: false,
             isHighlighted: true
           })]
         }, m + t)

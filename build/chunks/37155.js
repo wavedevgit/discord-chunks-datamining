@@ -1,5 +1,5 @@
 /** Chunk was on 98587 **/
-/** chunk id: 37155, original params: e,a,r (module,exports,require) **/
+/** chunk id: 37155, original params: e,a,t (module,exports,require) **/
 module.exports = {
   container: "_3530562679e023a4-container",
   trickSelected: "_3530562679e023a4-trickSelected",

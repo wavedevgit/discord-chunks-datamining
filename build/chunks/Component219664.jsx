@@ -118,11 +118,11 @@ function G(e) {
   } = (0, N.nP)(n), {
     isNew: w,
     hasUnreads: S
-  } = (0, N.J$)(n), P = r.useRef(null), {
-    handleLeftClick: I,
+  } = (0, N.J$)(n), I = r.useRef(null), {
+    handleLeftClick: P,
     handleRightClick: R
   } = (0, A.Z)({
-    facepileRef: P,
+    facepileRef: I,
     goToThread: i,
     channel: n
   });
@@ -158,7 +158,7 @@ function G(e) {
     }(B, ["onFocus"]);
   return (0, a.jsxs)("li", {
     ref: p,
-    onClick: I,
+    onClick: P,
     onFocus: U,
     onContextMenu: R,
     className: l()(H.container, m, {
@@ -166,7 +166,7 @@ function G(e) {
     }),
     style: z({}, f),
     children: [(0, a.jsx)(d.P3F, z({
-      onClick: I,
+      onClick: P,
       focusProps: {
         ringTarget: p
       },
@@ -224,7 +224,7 @@ function G(e) {
         children: (0, a.jsx)(q, {
           channel: n,
           firstMessage: v,
-          facepileRef: P
+          facepileRef: I
         })
       })
     })]
@@ -277,7 +277,7 @@ function W(e) {
     noStyleAndInteraction: false
   }), {
     hasUnreads: d
-  } = (0, N.J$)(t), u = (0, o.e7)([w.Z], () => w.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = C.QK.useSetting(), f = C.cC.useSetting(), h = (0, p.Z)(f, u), g = (0, P.aU)(n, s, false), x = t.isMediaPost(), [b, j] = (0, _.rI)(l.width - 2 * _.LT, x ? _.Lv.SIXTEEN_BY_NINE : _.Lv.THREE_BY_TWO);
+  } = (0, N.J$)(t), u = (0, o.e7)([w.Z], () => w.Z.can(F.Plq.MANAGE_MESSAGES, t)), m = C.QK.useSetting(), f = C.cC.useSetting(), h = (0, p.Z)(f, u), g = (0, I.aU)(n, s, false), x = t.isMediaPost(), [b, j] = (0, _.rI)(l.width - 2 * _.LT, x ? _.Lv.SIXTEEN_BY_NINE : _.Lv.THREE_BY_TWO);
   return (null == n ? true : n.blocked) || null == (null != i ? i : c) ? (0, a.jsx)(Q, {
     channel: t,
     firstMessage: n,
@@ -354,8 +354,8 @@ function q(e) {
     })]
   })
 }
-let K = e => e.preventDefault(),
-  X = Chunk473749.memo(function(e) {
+let X = e => e.preventDefault(),
+  K = Chunk473749.memo(function(e) {
     return (0, a.jsx)(a.Fragment, {
       children: (0, v.Yi)(B(z({}, e), {
         analyticsSource: "ForumPostMediaPreviewImage"
@@ -373,7 +373,7 @@ let K = e => e.preventDefault(),
     } = e, {
       containsVideo: u,
       containsGif: m
-    } = r.useMemo(() => (0, P.cp)(t), [t]), p = r.useMemo(() => t.slice(R.$x, R.GV), [t]), j = (0, R.tu)({
+    } = r.useMemo(() => (0, I.cp)(t), [t]), p = r.useMemo(() => t.slice(R.$x, R.GV), [t]), j = (0, R.tu)({
       numAttachments: p.length,
       containerWidth: i,
       containerHeight: s
@@ -388,7 +388,7 @@ let K = e => e.preventDefault(),
         width: e.width,
         height: e.height,
         alt: null != e.alt && i ? h : e.alt,
-        onClick: K,
+        onClick: X,
         shouldRenderAccessory: !m && !u
       }), p = (0, x.d$)(e.src) ? "".concat(e.src, "?format=png") : e.src, y = o && !i ? e.src : p;
       return (0, a.jsxs)("div", {
@@ -408,7 +408,7 @@ let K = e => e.preventDefault(),
           imageClassName: l()(H.thumbnailOverride, {
             [H.obscured]: i
           })
-        })) : (0, a.jsx)(X, B(z({}, g), {
+        })) : (0, a.jsx)(K, B(z({}, g), {
           autoPlay: o && !i,
           containerClassName: H.mosaicMediaContainer,
           imageClassName: l()(H.imageCover, {
@@ -417,7 +417,7 @@ let K = e => e.preventDefault(),
           responsive: true
         })), i && (0, a.jsx)("div", {
           className: H.obscuredTagContainer,
-          children: (0, a.jsx)(I.Z, {
+          children: (0, a.jsx)(P.Z, {
             obscureReason: s,
             iconClassname: H.obscuredTag
           })

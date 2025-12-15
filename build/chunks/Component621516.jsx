@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk420196 = require("./420196.js"),
   Chunk433075 = require("./433075.js");
 
-function P(e) {
+function I(e) {
   let {
     handleHide: t
   } = e;
@@ -46,7 +46,7 @@ function P(e) {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     username: t,
     title: n,
@@ -162,7 +162,7 @@ let E = e => {
             color: "currentColor",
             className: T.icon
           }), y.intl.string(y.t.znhX2R)]
-        }), (0, a.jsx)(P, {
+        }), (0, a.jsx)(I, {
           handleHide: A
         })]
       }), (0, a.jsxs)("div", {
@@ -173,7 +173,7 @@ let E = e => {
             className: T.contentMediaContainer,
             children: (0, a.jsxs)("div", {
               className: T.contentVideoContainer,
-              children: [(0, a.jsx)(I, {
+              children: [(0, a.jsx)(P, {
                 username: y.intl.string(y.t.AkORco),
                 videoSrc: "https://cdn.discordapp.com/assets/media_channel/admin_edu_discord_birthday.mp4",
                 title: y.intl.string(y.t.yO6Fxu),
@@ -181,7 +181,7 @@ let E = e => {
                 reaction: "⚡️",
                 reactionCount: "724",
                 classname: T.backgroundVideo
-              }), (0, a.jsx)(I, {
+              }), (0, a.jsx)(P, {
                 username: y.intl.string(y.t.DPg3YM),
                 videoSrc: "https://cdn.discordapp.com/assets/media_channel/admin_edu_wumpus_onboarding.mp4",
                 title: y.intl.string(y.t["R5XnC/"]),
@@ -189,7 +189,7 @@ let E = e => {
                 reactionCount: "84",
                 reaction: "\uD83D\uDC9E",
                 classname: T.backgroundVideo
-              }), (0, a.jsx)(I, {
+              }), (0, a.jsx)(P, {
                 username: y.intl.string(y.t.KIelex),
                 videoSrc: "https://cdn.discordapp.com/assets/media_channel/admin_edu_scientist_wumpus.mp4",
                 title: y.intl.string(y.t.pt88Vb),

@@ -2,14 +2,14 @@
 /** chunk id: 699758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   KN: () => i,
-  ZP: () => s,
+  ZP: () => o,
   mo: () => a
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk473749 = require("./473749.js"),
   i = ((r = {})[r.Trick = 0] = "Trick", r[r.Treat = 1] = "Treat", r);
 let a = 2;
 
-function s(e, t, n) {
+function o(e, t, n) {
   let r = l.useRef(Math.random());
   return l.useMemo(() => {
     if (null == e || 0 === e.length) return null;
@@ -22,13 +22,13 @@ function s(e, t, n) {
     }
     let l = [],
       i = new Map,
-      s = new Map;
+      o = new Map;
     for (let n of t)
       if (n.variants.length >= a)
         for (let t = 0; t < a; t++) {
           let r = t,
             a = n.variants[t];
-          e.some(e => e.skuId === a.skuId) && (s.set(a.skuId, r), i.has(r) || (l.push(r), i.set(r, function(e, t) {
+          e.some(e => e.skuId === a.skuId) && (o.set(a.skuId, r), i.has(r) || (l.push(r), i.set(r, function(e, t) {
             return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -62,16 +62,16 @@ function s(e, t, n) {
         }
     if (0 === l.length) return null;
     if (null != n) {
-      let e = s.get(n.skuId);
+      let e = o.get(n.skuId);
       if (null != e) return {
         defaultCategory: e,
         defaultHighlightedReward: n
       }
     }
-    let o = l[Math.floor(r.current * l.length)];
+    let s = l[Math.floor(r.current * l.length)];
     return {
-      defaultCategory: o,
-      defaultHighlightedReward: i.get(o)
+      defaultCategory: s,
+      defaultHighlightedReward: i.get(s)
     }
   }, [e, t, n])
 }

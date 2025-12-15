@@ -35,7 +35,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk968394 = require("./968394.js");
-let R = {
+let P = {
   FULL_WISHLIST: {
     title: Chunk388032.intl.string(Chunk388032.t["7lZ31J"]),
     getSubtitle: i => E.intl.formatToPlainString(E.t.BjEX38, {
@@ -73,9 +73,9 @@ function M(i) {
     themeClass: s
   } = i;
   return (0, n.jsx)("div", {
-    className: a()(P.wishlistBannerHeader, s),
+    className: a()(R.wishlistBannerHeader, s),
     children: (0, n.jsxs)("div", {
-      className: P.wishlistBannerTitleContainer,
+      className: R.wishlistBannerTitleContainer,
       children: [(0, n.jsx)(d.Heading, {
         variant: "heading-lg/bold",
         children: e
@@ -110,7 +110,7 @@ function H(i) {
     onOpenWishlist: r
   } = i;
   return null == e ? null : (0, n.jsx)("li", {
-    className: P.wishlistBannerListItem,
+    className: R.wishlistBannerListItem,
     children: (0, n.jsx)(b.BO, {
       item: e.item,
       remainingCount: t,
@@ -123,10 +123,9 @@ function H(i) {
               items: e.item.bundleItems
             };
             return (0, n.jsx)("div", {
-              className: P.bundlePreviewBanner,
+              className: R.bundlePreviewBanner,
               children: (0, n.jsx)(h.d, {
                 product: t,
-                isPurchased: false,
                 isHighlighted: i,
                 user: s
               })
@@ -160,14 +159,14 @@ function G(i) {
     analyticsLocations: f
   } = i;
   return (0, n.jsxs)("ul", {
-    className: P.wishlistBannerGrid,
+    className: R.wishlistBannerGrid,
     children: [e.map((i, e) => {
       let {
         item: t,
         source: s
       } = i;
       return (0, n.jsx)("li", {
-        className: P.wishlistBannerListItem,
+        className: R.wishlistBannerListItem,
         children: ((i, e) => {
           var t, s;
           let {
@@ -253,7 +252,7 @@ let W = function(i) {
       userId: e.id,
       tabSection: k.oh.WISHLIST
     })
-  }, [e.id]), F = R[s.useMemo(() => j >= L.zL ? "FULL_WISHLIST" : j > 0 ? "MIXED" : c.length > 0 && c.every(i => {
+  }, [e.id]), F = P[s.useMemo(() => j >= L.zL ? "FULL_WISHLIST" : j > 0 ? "MIXED" : c.length > 0 && c.every(i => {
     let {
       item: e,
       source: t
@@ -285,10 +284,10 @@ let W = function(i) {
   }, [S, c, e.id, r]), V = (0, l.O)(J, true, !S && !q);
   return "error" === x.status ? null : (0, n.jsxs)("div", {
     ref: V,
-    className: a()(P.wishlistBanner, Z),
+    className: a()(R.wishlistBanner, Z),
     style: W,
     children: [null != D && (0, n.jsx)("div", {
-      className: P.backgroundImage,
+      className: R.backgroundImage,
       style: {
         backgroundImage: "url(".concat(D, ")")
       }

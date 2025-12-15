@@ -18,11 +18,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk745769 = require("./745769.js");
 
-function C(e) {
+function h(e) {
   let {
     onClose: t
   } = e, a = (0, r.jsx)(o.Text, {
-    className: h.description,
+    className: C.description,
     variant: "text-md/normal",
     children: m.intl.string(m.t.FCsTCk)
   });
@@ -39,8 +39,8 @@ function S(e) {
   let {
     onClose: t
   } = e;
-  return (0, r.jsx)(p.ZP, {
-    planId: f.Xh.PREMIUM_MONTH_TIER_0,
+  return (0, r.jsx)(f.ZP, {
+    planId: p.Xh.PREMIUM_MONTH_TIER_0,
     onClose: t
   })
 }
@@ -49,21 +49,21 @@ let v = e => {
     transitionState: t,
     onClose: a,
     premiumType: s
-  } = e, b = s === f.PremiumTypes.TIER_0, p = n.useCallback(() => {
+  } = e, b = s === p.PremiumTypes.TIER_0, f = n.useCallback(() => {
     c.S.dispatch(u.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), l.Z.isDisplayingWowMomentConfirmation && l.Z.isAnimated ? setTimeout(() => {
       a()
     }, i.P) : a()
   }, [a]);
   return (0, r.jsxs)(o.Y0X, {
-    className: h.root,
+    className: C.root,
     transitionState: t,
     parentComponent: "ResubscribeSuccessStep",
     children: [(0, r.jsx)(d.Z, {
-      onClose: p,
+      onClose: f,
       upgradeToPremiumType: s
     }), (0, r.jsx)(o.hzk, {
-      children: (0, r.jsx)(b ? S : C, {
-        onClose: p
+      children: (0, r.jsx)(b ? S : h, {
+        onClose: f
       })
     })]
   })

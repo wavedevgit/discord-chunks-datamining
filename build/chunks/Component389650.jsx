@@ -196,12 +196,6 @@ class W extends Chunk473749.PureComponent {
   }
 }
 class K extends Chunk473749.PureComponent {
-  componentDidMount() {
-    Chunk660216.Z.enableAll(false)
-  }
-  componentWillUnmount() {
-    Chunk660216.Z.enableAll(true)
-  }
   get keybindActionTypes() {
     let {
       overlaySupported: e,
@@ -420,19 +414,22 @@ class K extends Chunk473749.PureComponent {
 }
 
 function z() {
+  Chunk473749.useEffect(() => (Chunk660216.Z.enableAll(false), () => {
+    Chunk660216.Z.enableAll(true)
+  }), []);
   let e = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getState()),
     t = (0, Chunk442837.e7)([Chunk131951.Z], () => (0, Chunk74299.Z)(Chunk131951.Z)),
     n = (0, Chunk442837.e7)([Chunk509140.Z], () => Chunk509140.Z.isSupported),
-    i = (0, Chunk924557.w9)(),
-    a = (0, Chunk924557.PP)(),
-    o = (0, Chunk526665.wy)("UserSettingsKeybindsConnected");
+    a = (0, Chunk924557.w9)(),
+    o = (0, Chunk924557.PP)(),
+    s = (0, Chunk526665.wy)("UserSettingsKeybindsConnected");
   return (0, Chunk54381.jsx)(K, {
     keybinds: module,
     canGoLive: exports,
     overlaySupported: require,
     allowSoundboard: (0, Chunk358085.isWindows)(),
-    enableClips: Chunk473749,
-    enableScreenshotKeybind: Chunk120356,
-    isUserSettingsRedesignEnabled: o
+    enableClips: Chunk120356,
+    enableScreenshotKeybind: o,
+    isUserSettingsRedesignEnabled: Chunk392711
   })
 }

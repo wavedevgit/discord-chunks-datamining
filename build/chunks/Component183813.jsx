@@ -36,20 +36,20 @@ function x(e) {
     step: N
   } = (0, v.JL)(), {
     setSelectedGiftingPromotionReward: M,
-    selectedGiftingPromotionReward: R,
-    claimableRewards: _,
+    selectedGiftingPromotionReward: _,
+    claimableRewards: R,
     claimableVariants: A
-  } = (0, y.wD)(), L = (0, d.Z)(), Z = (0, s.e7)([g.default], () => g.default.getCurrentUser()), D = (0, p.ZP)(_, A, R), [F, G] = l.useState(null == D || null == (t = D.defaultHighlightedReward) ? true : t.skuId), [B, H] = l.useState(false), U = (0, m.Z)({
+  } = (0, j.wD)(), L = (0, d.Z)(), Z = (0, o.e7)([g.default], () => g.default.getCurrentUser()), D = (0, p.ZP)(R, A, _), [F, G] = l.useState(null == D || null == (t = D.defaultHighlightedReward) ? true : t.skuId), [B, U] = l.useState(false), H = (0, m.Z)({
     claimableVariants: A,
-    claimableRewards: _,
+    claimableRewards: R,
     defaultSelection: D,
-    selectedGiftingPromotionReward: R,
+    selectedGiftingPromotionReward: _,
     setSelectedGiftingPromotionReward: M,
     hasUserMadeSelection: B
   }), z = l.useMemo(() => {
     var e, t;
     if (null == A || 0 === A.length) return null != (e = null == L ? true : L.rewards) ? e : [];
-    let n = null != (t = null == U ? true : U.selectedCategory) ? t : p.KN.Trick;
+    let n = null != (t = null == H ? true : H.selectedCategory) ? t : p.KN.Trick;
     return A.flatMap(e => {
       var t, r;
       return e.variants.length < p.mo ? [] : (t = function(e) {
@@ -82,13 +82,13 @@ function x(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
       }), t)
     })
-  }, [A, null == L ? true : L.rewards, null == U ? true : U.selectedCategory]);
+  }, [A, null == L ? true : L.rewards, null == H ? true : H.selectedCategory]);
   l.useEffect(() => {
     let e = null == D ? true : D.defaultHighlightedReward;
-    !B && null == R && null != e && null != e && z.some(t => t.skuId === e.skuId) && (M(e), G(e.skuId))
-  }, [D, B, R, z, M]), a()(null != k, "Expected plan to selected"), a()(null != C, "Expected selectedSkuId"), a()(null != N, "Step should be set");
-  let K = l.useMemo(() => null != F && (null != _ ? _ : []).some(e => e.skuId === F), [F, _]),
-    W = l.useMemo(() => null != R && z.some(e => e.skuId === R.skuId), [z, R]),
+    !B && null == _ && null != e && null != e && z.some(t => t.skuId === e.skuId) && (M(e), G(e.skuId))
+  }, [D, B, _, z, M]), a()(null != k, "Expected plan to selected"), a()(null != C, "Expected selectedSkuId"), a()(null != N, "Step should be set");
+  let K = l.useMemo(() => null != F && (null != R ? R : []).some(e => e.skuId === F), [F, R]),
+    W = l.useMemo(() => null != _ && z.some(e => e.skuId === _.skuId), [z, _]),
     V = l.useMemo(() => 0 === z.length || null == F || !W || !K, [z, F, K, W]);
   l.useEffect(() => {
     if (0 === z.length) {
@@ -98,7 +98,7 @@ function x(e) {
     K && z.some(e => e.skuId === F) || null == F || (G(true), M(true))
   }, [z, K, F, M]);
   let Y = e => {
-      M(z.find(t => t.skuId === e)), G(e), H(true)
+      M(z.find(t => t.skuId === e)), G(e), U(true)
     },
     q = z.map(e => {
       var t, n;
@@ -107,24 +107,24 @@ function x(e) {
         assetId: e.assetId,
         productName: null == (t = e.name) ? true : t.call(e),
         a11yLabel: null == (n = e.a11yLabel) ? true : n.call(e),
-        claimed: null != _ && _.every(t => t.skuId !== e.skuId),
+        claimed: null != R && R.every(t => t.skuId !== e.skuId),
         user: Z,
         onSelect: Y,
         selectedSkuId: F,
-        category: null == U ? true : U.selectedCategory,
+        category: null == H ? true : H.selectedCategory,
         type: e.type,
         palette: e.palette
       }, e.skuId)
     }),
     J = (0, r.jsx)(O.O3, {
-      children: (0, r.jsx)(o.mzw, {
+      children: (0, r.jsx)(s.mzw, {
         "data-migration-pending": true,
-        className: S.modalFooter,
-        children: (0, r.jsx)(f.y, {
+        className: P.modalFooter,
+        children: (0, r.jsx)(h.y, {
           onStepChange: e => {
-            null != Z && null != R && j.default.track(P.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != Z && null != _ && y.default.track(S.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: Z.id,
-              reward_sku_id: R.skuId
+              reward_sku_id: _.skuId
             }), I(e)
           },
           onBackClick: () => I(b.h8.PLAN_SELECT),
@@ -137,41 +137,41 @@ function x(e) {
       })
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(o.xBx, {
+    children: [(0, r.jsxs)(s.xBx, {
       "data-migration-pending": true,
-      className: S.modalHeader,
+      className: P.modalHeader,
       direction: c.Z.Direction.VERTICAL,
       align: c.Z.Align.START,
       separator: false,
-      children: [(0, r.jsx)(o.Heading, {
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
         children: null == L || null == (n = L.rewardSelection) ? true : n.heading()
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-md/medium",
         color: "text-subtle",
-        className: S.headerSubtitle,
+        className: P.headerSubtitle,
         children: null == L || null == (i = L.rewardSelection) ? true : i.primarySubtitle()
-      }), (null == L || null == (E = L.rewardSelection) || null == (x = E.secondarySubtitle) ? true : x.call(E)) != null && (0, r.jsx)(o.Text, {
+      }), (null == L || null == (E = L.rewardSelection) || null == (x = E.secondarySubtitle) ? true : x.call(E)) != null && (0, r.jsx)(s.Text, {
         variant: "text-md/medium",
         color: "text-subtle",
         children: null == L || null == (w = L.rewardSelection) ? true : w.secondarySubtitle()
-      }), (0, r.jsx)(o.olH, {
+      }), (0, r.jsx)(s.olH, {
         "data-migration-pending": true,
-        className: S.closeButton,
+        className: P.closeButton,
         onClick: T
       })]
-    }), (0, r.jsx)(o.hzk, {
+    }), (0, r.jsx)(s.hzk, {
       "data-migration-pending": true,
-      children: (0, r.jsxs)(o.Kqy, {
+      children: (0, r.jsxs)(s.Kqy, {
         direction: "vertical",
         justify: "center",
         align: "center",
-        children: [(null == U ? true : U.shouldRenderCategoryControl) && (0, r.jsx)(h.Z, {
-          defaultCategory: U.selectedCategory,
-          onCategoryChange: U.setSelectedCategory
+        children: [(null == H ? true : H.shouldRenderCategoryControl) && (0, r.jsx)(f.Z, {
+          defaultCategory: H.selectedCategory,
+          onCategoryChange: H.setSelectedCategory
         }), (0, r.jsx)("div", {
-          className: S.giftRewardShopCardsGrid,
+          className: P.giftRewardShopCardsGrid,
           children: q
         })]
       })

@@ -55,7 +55,6 @@ let C = e => {
         return (0, a.jsx)(d.Z, {
           skuId: s.skuId,
           isHighlighted: n,
-          isPurchased: false,
           removeSetHeight: true
         });
       case l.Z.AVATAR_DECORATION:
@@ -63,22 +62,19 @@ let C = e => {
           item: s,
           user: r,
           isHighlighted: n,
-          isPurchased: false,
           avatarSize: c.EFr.SIZE_120
         });
       case l.Z.NAMEPLATE:
         return (0, a.jsx)(g.Z, {
           nameplate: s,
           user: r,
-          isHighlighted: n,
-          isPurchased: false
+          isHighlighted: n
         });
       case l.Z.BUNDLE:
         return (0, a.jsx)(b.d, {
           product: t,
           user: r,
-          isHighlighted: n,
-          isPurchased: false
+          isHighlighted: n
         });
       case l.Z.EXTERNAL_SKU:
         return (0, a.jsx)(f.b, {

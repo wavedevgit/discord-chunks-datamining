@@ -32,9 +32,9 @@ let O = [{
     name: "Media Post Thumbnail",
     extensions: ["jpg", "jpeg", "png", "gif", "webp"]
   }],
-  P = (0, Chunk313201.hQ)();
+  I = (0, Chunk313201.hQ)();
 
-function I(e) {
+function P(e) {
   let {
     mediaAttachments: t,
     containerWidth: n,
@@ -151,10 +151,10 @@ let E = e => {
     multiple: false,
     "aria-hidden": true,
     filters: O,
-    "aria-describedby": P,
+    "aria-describedby": I,
     "aria-label": E ? S.intl.string(S.t.MxJI3f) : S.intl.string(S.t.Cbiofa),
     children: E ? (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(I, {
+      children: [(0, a.jsx)(P, {
         mediaAttachments: j,
         containerWidth: _.width,
         containerHeight: _.height

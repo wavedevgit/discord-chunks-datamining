@@ -1,7 +1,7 @@
 /** Chunk was on 23242 **/
 /** chunk id: 858026, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk473749 = require("./473749.js"),
   Chunk699758 = require("./699758.js");
@@ -38,28 +38,28 @@ function a(e, t) {
   }), e
 }
 
-function s(e) {
+function o(e) {
   var t;
   let {
     claimableVariants: n,
-    defaultSelection: s,
-    selectedGiftingPromotionReward: o,
+    defaultSelection: o,
+    selectedGiftingPromotionReward: s,
     setSelectedGiftingPromotionReward: u,
     hasUserMadeSelection: c
-  } = e, d = null != n && n.length > 0, [p, m] = r.useState(null != (t = null == s ? true : s.defaultCategory) ? t : l.KN.Trick), h = r.useRef(p), f = r.useMemo(() => d ? n.flatMap(e => e.variants.length < l.mo ? [] : a(i({}, e.variants[p]), {
+  } = e, d = null != n && n.length > 0, [p, m] = r.useState(null != (t = null == o ? true : o.defaultCategory) ? t : l.KN.Trick), f = r.useRef(p), h = r.useMemo(() => d ? n.flatMap(e => e.variants.length < l.mo ? [] : a(i({}, e.variants[p]), {
     name: e.name
-  })) : [], [n, p, d]), g = r.useMemo(() => null != o && f.some(e => e.skuId === o.skuId), [f, o]);
+  })) : [], [n, p, d]), g = r.useMemo(() => null != s && h.some(e => e.skuId === s.skuId), [h, s]);
   if (r.useEffect(() => {
-      d && ((null == s ? true : s.defaultCategory) == null || c || m(s.defaultCategory))
-    }, [null == s ? true : s.defaultCategory, c, d]), r.useEffect(() => {
-      d && (h.current === p || g || u(true), h.current = p)
+      d && ((null == o ? true : o.defaultCategory) == null || c || m(o.defaultCategory))
+    }, [null == o ? true : o.defaultCategory, c, d]), r.useEffect(() => {
+      d && (f.current === p || g || u(true), f.current = p)
     }, [p, g, u, d]), !d) return null;
-  let j = n.length > 1;
-  return a(i({}, j && {
+  let y = n.length > 1;
+  return a(i({}, y && {
     selectedCategory: p
-  }, j && {
+  }, y && {
     setSelectedCategory: m
   }), {
-    shouldRenderCategoryControl: j
+    shouldRenderCategoryControl: y
   })
 }

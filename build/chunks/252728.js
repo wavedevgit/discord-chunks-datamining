@@ -1,13 +1,12 @@
 /** Chunk was on 98587 **/
-/** chunk id: 252728, original params: e,a,r (module,exports,require) **/
+/** chunk id: 252728, original params: e,a,t (module,exports,require) **/
 module.exports = {
   shopCard: "bab2bcf65c38925f-shopCard",
-  shopCardDark: "bab2bcf65c38925f-shopCardDark bab2bcf65c38925f-shopCard",
-  shopCardHighlighted: "bab2bcf65c38925f-shopCardHighlighted",
-  shopCardDarkHighlighted: "bab2bcf65c38925f-shopCardDarkHighlighted",
+  highlighted: "bab2bcf65c38925f-highlighted",
   shopCardAnimation: "bab2bcf65c38925f-shopCardAnimation",
   shopCardSelected: "bab2bcf65c38925f-shopCardSelected",
-  shopCardClaimed: "bab2bcf65c38925f-shopCardClaimed",
+  previewContainer: "bab2bcf65c38925f-previewContainer",
+  claimed: "bab2bcf65c38925f-claimed",
   claimedIcon: "bab2bcf65c38925f-claimedIcon",
   preview: "bab2bcf65c38925f-preview",
   previewTrick: "bab2bcf65c38925f-previewTrick",

@@ -88,12 +88,12 @@ let W = {
     height: 20,
     borderRadius: 10
   },
-  K = e => {
+  X = e => {
     (0, k.e5)({
       onboardingCTA: e
     })
   };
-class X {
+class K {
   addStep(e) {
     ++this.currentIndex, this.steps.push(G({
       index: this.currentIndex
@@ -247,7 +247,7 @@ let Y = e => {
           let s = null == e ? true : e.id,
             o = (0, m.e7)([w.Z], () => null != s ? w.Z.getSortedRoles(s) : true);
           return r.useMemo(() => {
-            let r, s = new X,
+            let r, s = new K,
               c = (null == t ? true : t.isMediaChannel()) === true;
             return null == e || null == t || c || null == o || s.addStep(function(e, t, r, i) {
               let l = (0, p.Z)(r) ? u.$e(H.Plq.VIEW_CHANNEL, H.Plq.SEND_MESSAGES) : H.Plq.SEND_MESSAGES,
@@ -264,7 +264,7 @@ let Y = e => {
                   roles: s
                 }) : null,
                 clickHandler: () => {
-                  K(D.ZI.PERMISSIONS), (0, h.ZDy)(async () => {
+                  X(D.ZI.PERMISSIONS), (0, h.ZDy)(async () => {
                     let {
                       default: t
                     } = await n.e("78704").then(n.bind(n, 560602));
@@ -287,7 +287,7 @@ let Y = e => {
                 name: z.intl.string(z.t.UgJu1e),
                 description: z.intl.string(z.t["3C6/G1"]),
                 clickHandler: () => {
-                  K(D.ZI.GUIDELINES), g.ZP.open(e.id, true, H.ZfP.TOPIC)
+                  X(D.ZI.GUIDELINES), g.ZP.open(e.id, true, H.ZfP.TOPIC)
                 },
                 isDone: t
               }
@@ -297,7 +297,7 @@ let Y = e => {
                 name: z.intl.string(z.t.xiBFCi),
                 description: z.intl.string(z.t.wCv4Oz),
                 clickHandler: () => {
-                  K(D.ZI.TAGS), g.ZP.open(e.id), (0, h.ZDy)(async () => {
+                  X(D.ZI.TAGS), g.ZP.open(e.id), (0, h.ZDy)(async () => {
                     let {
                       default: t
                     } = await n.e("21971").then(n.bind(n, 201049));
@@ -315,7 +315,7 @@ let Y = e => {
                 name: z.intl.string(z.t.QlyC9s),
                 description: z.intl.string(z.t["+50LJg"]),
                 clickHandler: () => {
-                  K(D.ZI.DEFAULT_REACTION), (0, h.ZDy)(async () => {
+                  X(D.ZI.DEFAULT_REACTION), (0, h.ZDy)(async () => {
                     let {
                       default: t
                     } = await n.e("80404").then(n.bind(n, 158586));
@@ -341,18 +341,18 @@ let Y = e => {
                 }
               }),
               clickHandler: () => {
-                K(D.ZI.CREATE_POST), O.S.dispatch(H.CkL.FOCUS_COMPOSER_TITLE)
+                X(D.ZI.CREATE_POST), O.S.dispatch(H.CkL.FOCUS_COMPOSER_TITLE)
               },
               isDone: i
             })), s
           }, [t, e, o, i, l])
         }(t, i, l, d), j = b.isAllDone(), v = f || x || !(e => {
-          let t = I.default.extractTimestamp(e);
+          let t = P.default.extractTimestamp(e);
           return o()().isBefore(o()(t).add(o().duration(15, "days")))
         })(i.id), C = r.useRef(0);
         return r.useEffect(() => (c || !j || v ? clearTimeout(C.current) : C.current = setTimeout(() => {
           s()
-        }, 60 * P.Z.Millis.SECOND), () => clearTimeout(C.current)), [j, v, s, c]), {
+        }, 60 * I.Z.Millis.SECOND), () => clearTimeout(C.current)), [j, v, s, c]), {
           onboardingSteps: b,
           isHidden: x,
           isDismissed: f,

@@ -36,7 +36,6 @@ let C = e => {
       item: t,
       avatarSize: n,
       isHighlighted: false,
-      isPurchased: false,
       avatarPlaceholderSrc: a,
       className: v.avatarDecoration
     })
