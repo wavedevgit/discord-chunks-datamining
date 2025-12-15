@@ -25,18 +25,6 @@ let i = (0, Chunk427164.le)({
     }
   }
 });
-(0, Chunk427164.le)({
-  name: "2025-10-mobile-quest-home-v2-entrypoint-relocation",
-  kind: "user",
-  defaultConfig: {
-    enabled: false
-  },
-  variations: {
-    1: {
-      enabled: true
-    }
-  }
-});
 var a = function(e) {
   return e[e.DISPLAY_ADVERTISER_CTA_ALWAYS = 0] = "DISPLAY_ADVERTISER_CTA_ALWAYS", e[e.OVERLAY_SHARE_ON_VIDEO = 1] = "OVERLAY_SHARE_ON_VIDEO", e
 }({});
