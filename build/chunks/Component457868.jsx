@@ -370,7 +370,7 @@ function J(e) {
     channel: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(V.membersWrap, V.hiddenMembers, V.members, B.emptyState),
+    className: a()(B.emptyState, B.container, V.membersWrap, V.hiddenMembers, V.members),
     children: [(0, r.jsx)(h.Text, {
       className: B.emptyStateHeader,
       variant: "text-xs/bold",
