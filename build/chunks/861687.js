@@ -536,25 +536,25 @@ class eN extends Chunk47770.Z {
           vad_use_advanced_voice_activity: i.modeOptions.vadUseKrisp,
           soundshare_experimental: k.Z.getExperimentalSoundshare(),
           join_voice_id: this.joinVoiceId,
-          bypass_system_input_processing: i.bypassSystemInputProcessing
+          bypass_system_input_processing: i.bypassSystemInputProcessing,
+          system_microphone_mode: k.Z.getSystemMicrophoneMode()
         });
       Promise.all([(async () => {
         var e, t;
         return null != (t = await (null == (e = this._systemResources) ? true : e.getBatteryLevelStats())) ? t : {
           batteryUsageRounded: null
         }
-      })(), x.Z.getKrispModel(), k.Z.getKrispEnableStats() ? k.Z.getMediaEngine().getNoiseCancellationStats() : Promise.resolve(null), k.Z.getMediaEngine().getSystemMicrophoneMode()]).then(e => {
+      })(), x.Z.getKrispModel(), k.Z.getKrispEnableStats() ? k.Z.getMediaEngine().getNoiseCancellationStats() : Promise.resolve(null)]).then(e => {
         let [{
           batteryUsageRounded: t
-        }, n, r, i] = e;
+        }, n, r] = e;
         B.default.track(es.rMx.VOICE_DISCONNECT, ep(ed({}, s), {
           battery_usage: t,
           krisp_nc_model: n,
           duration_low_noise_detected_ms: null == r ? true : r.lowNoiseMs,
           duration_medium_noise_detected_ms: null == r ? true : r.mediumNoiseMs,
           duration_high_noise_detected_ms: null == r ? true : r.highNoiseMs,
-          duration_noise_cancellation_voice_detected_ms: null == r ? true : r.talkTimeMs,
-          system_microphone_mode: i
+          duration_noise_cancellation_voice_detected_ms: null == r ? true : r.talkTimeMs
         }))
       }), this._trackRemainingSecureFrameTransitions()
     }

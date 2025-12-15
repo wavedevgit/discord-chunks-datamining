@@ -1,16 +1,16 @@
 /** Chunk was on 74783 **/
 /** chunk id: 698066, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => l
 });
 var Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js");
 
-function a(e) {
+function l(e) {
   let {
     problem: t,
     stream: n,
-    feedback: a,
+    feedback: l,
     streamApplication: i,
     analyticsData: o,
     location: c,
@@ -18,7 +18,7 @@ function a(e) {
     category: d,
     variant: u
   } = e;
-  r.default.track(l.rMx.STREAM_REPORT_PROBLEM, function(e) {
+  r.default.track(a.rMx.STREAM_REPORT_PROBLEM, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -46,6 +46,6 @@ function a(e) {
     application_name: null != i ? i.name : null,
     location: c,
     rating: s,
-    feedback: a
+    feedback: l
   }, o))
 }

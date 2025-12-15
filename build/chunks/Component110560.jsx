@@ -335,8 +335,7 @@ function et(e) {
       default: t
     } = await Promise.all([n.e("8753"), n.e("53145")]).then(n.bind(n, 627080));
     return n => (0, r.jsx)(t, k(j({}, n), {
-      questId: e.id,
-      questName: e.config.messages.questName
+      questId: e.id
     }))
   })
 }

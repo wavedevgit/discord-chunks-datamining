@@ -78,7 +78,7 @@ function h(e) {
   let A = (0, f.Dt)(),
     [k, w] = l.useState(false),
     [U, Z] = l.useState(D),
-    [$, H] = l.useState(null),
+    [$, H] = l.useState(1 === R.length ? R[0] : null),
     [B, G] = l.useState(null),
     [J, K] = l.useState("");
   (0, u.ZP)(() => null == o ? true : o()), (0, u.zq)(() => {
@@ -141,7 +141,7 @@ function h(e) {
         }
       })
     })
-  }), i = () => H(null)) : null != $ && null != B && (null == (t = $.freeformConfig) ? true : t.value) === B.value && (n = (0, a.jsx)(s.hzk, {
+  }), i = () => 1 === R.length ? Z(null) : H(null)) : null != $ && null != B && (null == (t = $.freeformConfig) ? true : t.value) === B.value && (n = (0, a.jsx)(s.hzk, {
     children: (0, a.jsx)(s.Kx8, {
       label: p.intl.string(p.t.h95hcn),
       helperText: $.freeformConfig.hideHelpdeskLink ? true : p.intl.format(p.t.ybi2tD, {
