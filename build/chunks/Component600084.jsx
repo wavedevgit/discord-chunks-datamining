@@ -71,12 +71,12 @@ function F(e) {
     showingBanner: p
   } = e, f = (0, d.ZP)(n), {
     type: C
-  } = n, v = (0, l.e7)([x.default], () => n.isPrivate() ? x.default.getUser(n.getRecipientId()) : null), _ = E.ZP.useUserTag(v), {
+  } = n, v = (0, l.e7)([O.default], () => n.isPrivate() ? O.default.getUser(n.getRecipientId()) : null), _ = E.ZP.useUserTag(v), {
     canManageRoles: N,
     canReadMessageHistory: A
-  } = (0, l.cj)([O.Z], () => ({
-    canManageRoles: O.Z.can(R.Plq.MANAGE_ROLES, n),
-    canReadMessageHistory: O.Z.can(R.Plq.READ_MESSAGE_HISTORY, n)
+  } = (0, l.cj)([x.Z], () => ({
+    canManageRoles: x.Z.can(R.Plq.MANAGE_ROLES, n),
+    canReadMessageHistory: x.Z.can(R.Plq.READ_MESSAGE_HISTORY, n)
   })), w = (0, l.e7)([g.Z], () => C === R.d4z.DM ? g.Z.getMutualGuilds(n.getRecipientId()) : null, [n, C]), M = (0, u.Z)(null != (t = null == v ? true : v.id) ? t : R.lds), {
     authorizedAppToken: F,
     authorizedAppsFetchState: B

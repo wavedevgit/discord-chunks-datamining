@@ -754,10 +754,10 @@ class eu extends(i = Chunk473749.PureComponent) {
         location: "New Group DM"
       }).then(e => {
         let t = {};
-        "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && m.Z.updateChannel(e, t, x.Z.NEW_GROUP_DM_INVITE_MODAL), G.default.track($.rMx.GDM_EDIT_INTERACTED, {
+        "" !== this.state.newChannelName && (t.name = this.state.newChannelName), null != this.state.previewIcon && (t.icon = this.state.previewIcon), (null != t.name || null != t.icon) && m.Z.updateChannel(e, t, O.Z.NEW_GROUP_DM_INVITE_MODAL), G.default.track($.rMx.GDM_EDIT_INTERACTED, {
           channel_id: e,
           channel_type: $.d4z.GROUP_DM,
-          location: x.Z.NEW_GROUP_DM_INVITE_MODAL,
+          location: O.Z.NEW_GROUP_DM_INVITE_MODAL,
           new_name_set: "" !== this.state.newChannelName,
           new_icon_set: null != this.state.previewIcon
         })
@@ -836,8 +836,8 @@ function ed(e) {
     onChange: o
   } = e, {
     analyticsLocations: s
-  } = (0, j.ZP)(x.Z.NEW_GROUP_DM_INVITE_MODAL);
-  if (!(0, I.a)(x.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
+  } = (0, j.ZP)(O.Z.NEW_GROUP_DM_INVITE_MODAL);
+  if (!(0, I.a)(O.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
   let c = (0, _.pT)(Array.from(t), H.default, F.Z);
   return (0, r.jsxs)("div", {
     className: en.customizationContainer,
@@ -896,7 +896,7 @@ function ef(e) {
   }), [t, u, c]), h = l.useCallback(() => c ? d ? (0, p.Mr3)(u) : f() : s(e => !e), [c, d, u, f, s]);
   return l.useEffect(() => (i && W.S.subscribe($.CkL.TOGGLE_DM_CREATE, h), () => {
     W.S.unsubscribe($.CkL.TOGGLE_DM_CREATE, h)
-  }), [i, h, c]), (0, O.ZP)(() => {
+  }), [i, h, c]), (0, x.ZP)(() => {
     (0, w._)()
   }), {
     showModal: f,
@@ -928,8 +928,8 @@ function eh(e) {
   } = e, b = l.useRef(null), C = null != s ? s : null == i ? p.kL_ : p.ejJ, {
     showModal: y,
     renderPopout: v,
-    toggleVisible: O,
-    popoutOpen: x,
+    toggleVisible: x,
+    popoutOpen: O,
     setPopoutOpen: E,
     inBornThisNamedExperiment: j
   } = ef({
@@ -950,7 +950,7 @@ function eh(e) {
     targetElementRef: b,
     renderPopout: v,
     position: f,
-    shouldShow: x,
+    shouldShow: O,
     nudgeAlignIntoViewport: true,
     autoInvert: true,
     align: h,
@@ -960,7 +960,7 @@ function eh(e) {
     clickTrap: true,
     children: e => (0, r.jsx)(J.ZP.Icon, el(er({}, e), {
       ref: b,
-      onClick: O,
+      onClick: x,
       icon: C,
       className: o,
       iconClassName: a,

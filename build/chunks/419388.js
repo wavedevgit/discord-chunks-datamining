@@ -30,7 +30,7 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function x(e) {
   var t, n;
   if (null == e.jumpTargetId || !e.ready) return null;
   let {
@@ -52,7 +52,7 @@ function O(e) {
     o = null != (n = l[a + (Math.abs(r) > 0 ? r : 1)]) ? n : l[a - 1];
   return null != o ? o : null
 }
-let x = {
+let O = {
   scrollTop: 0,
   scrollHeight: 0,
   offsetHeight: 0
@@ -133,7 +133,7 @@ class E {
     }
     if (null != e.messages.jumpTargetId) {
       if (this.isLoading()) return;
-      let n = O(e.messages);
+      let n = x(e.messages);
       if (null == n || this.isJumping() || e.messages.jumpSequenceId === t.jumpSequenceId) {
         if (this.isJumping()) return void(null != n ? this.scrollToMessage(n, true) : this.jumping = false)
       } else {
@@ -292,7 +292,7 @@ class E {
   }
   getScrollerState() {
     var e, t;
-    return null != (t = null == (e = this.ref.current) ? true : module.getScrollerState()) ? exports : x
+    return null != (t = null == (e = this.ref.current) ? true : module.getScrollerState()) ? exports : O
   }
   isHeightChange(e, t) {
     return e !== this.offsetHeightCache || t !== this.scrollHeightCache
@@ -350,7 +350,7 @@ class E {
       hasUnreads: t
     } = this.props;
     if (null != module.jumpTargetId) {
-      let n = O(module);
+      let n = x(module);
       if (null == require) return;
       let i = this.getElementFromMessageId(require);
       (0, Chunk374470.kK)(Chunk473749) ? this.scrollTo(this.getOffsetOrientationFromNode(Chunk473749, "middle", exports ? this.newMessageBarBuffer() : Chunk959517.kQ), true): this.scrollToNewMessages(true, "middle")
@@ -382,7 +382,7 @@ class E {
       initialScrollTop: e
     } = this;
     this.initialScrollTop = true;
-    let t = O(this.props.messages);
+    let t = x(this.props.messages);
     null != exports ? this.scrollToMessage(exports, false) : this.props.hasUnreads && this.props.channel.type !== Chunk981631.d4z.GUILD_VOICE && this.props.channel.type !== Chunk981631.d4z.GUILD_STAGE_VOICE ? this.scrollToNewMessages() : null != module ? this.scrollTo(module + this.props.placeholderHeight, false, this.handleScroll) : this.setScrollToBottom()
   }
   scrollTo(e) {

@@ -4,7 +4,7 @@ require.d(exports, {
   F: () => d
 });
 var Chunk512722 = require("./512722.js"),
-  r = require.n(Chunk512722),
+  i = require.n(Chunk512722),
   Chunk846027 = require("./846027.js"),
   Chunk287734 = require("./287734.js"),
   Chunk131951 = require("./131951.js"),
@@ -13,8 +13,8 @@ var Chunk512722 = require("./512722.js"),
 
 function d(e, t) {
   var n;
-  let i = null != (n = e.sessionId) ? n : "";
-  (0, o._)(i), (0, o.s6)();
+  let r = null != (n = e.sessionId) ? n : "";
+  (0, o._)(r), (0, o.s6)();
   let d = null != t ? t : e.channelId;
-  r()(null != d, "attempted to transfer to unknown channel"), e.selfMute !== a.Z.isSelfMute() && l.Z.toggleSelfMute(), e.selfDeaf !== a.Z.isSelfDeaf() && l.Z.toggleSelfDeaf(), (0, c.Z)(d, "discord_client", i), u.default.selectVoiceChannel(d, false)
+  i()(null != d, "attempted to transfer to unknown channel"), e.selfMute !== a.Z.isSelfMute() && l.Z.toggleSelfMute(), e.selfDeaf !== a.Z.isSelfDeaf() && l.Z.toggleSelfDeaf(), (0, c.Z)(d, "discord_client", r), u.default.selectVoiceChannel(d, false)
 }

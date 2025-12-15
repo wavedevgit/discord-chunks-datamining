@@ -24,7 +24,7 @@ function b(e) {
     onClick: n
   } = e, b = (0, o.bp)(), C = (0, m.qY)(t), y = (0, l.e7)([d.Z], () => d.Z.getChannel(t), [t]), {
     canManageGuildEvent: v
-  } = (0, s.XJ)(y), O = v(C), x = r.useRef(null);
+  } = (0, s.XJ)(y), x = v(C), O = r.useRef(null);
   if (null == C) return null;
   let E = () => {
       if (null != y && (0, h.Z)(y)) return void(0, p.lC)(y, b);
@@ -33,8 +33,8 @@ function b(e) {
     j = () => {
       f.Z.endEvent(C.id, C.guild_id)
     };
-  return O ? (0, i.jsx)(a.yRy, {
-    targetElementRef: x,
+  return x ? (0, i.jsx)(a.yRy, {
+    targetElementRef: O,
     renderPopout: e => {
       let {
         closePopout: t
@@ -63,7 +63,7 @@ function b(e) {
         onClick: t
       } = e;
       return (0, i.jsx)(u.Z, {
-        buttonRef: x,
+        buttonRef: O,
         label: g.intl.string(g.t["6vrfgt"]),
         onClick: E,
         onPopoutClick: t

@@ -27,8 +27,8 @@ function y(e) {
     height: l,
     channel: y,
     participants: v,
-    onSelectParticipant: O
-  } = e, [x, E] = function() {
+    onSelectParticipant: x
+  } = e, [O, E] = function() {
     let [e, t] = r.useState(() => s.K.get(C, h.VD2.BOTTOM_RIGHT));
     return [e, r.useCallback(e => {
       s.K.set(C, e), t(e)
@@ -51,7 +51,7 @@ function y(e) {
   return (0, i.jsx)("div", {
     className: g.container,
     children: (0, i.jsx)(d._, {
-      position: x,
+      position: O,
       id: 0,
       width: I,
       ref: j,
@@ -75,7 +75,7 @@ function y(e) {
           inCall: true,
           popoutType: u.P.NO_POPOUT,
           width: 160,
-          onClick: O
+          onClick: x
         }, e.id))
       })
     })

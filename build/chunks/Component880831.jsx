@@ -38,9 +38,9 @@ function Z(e) {
   } = e, {
     isBlocked: l,
     isIgnored: o
-  } = (0, c.cj)([O.Z], () => ({
-    isBlocked: O.Z.isBlockedForMessage(n),
-    isIgnored: O.Z.isIgnoredForMessage(n)
+  } = (0, c.cj)([x.Z], () => ({
+    isBlocked: x.Z.isBlockedForMessage(n),
+    isIgnored: x.Z.isIgnoredForMessage(n)
   }), [n]), s = (0, g.Uj)(n), d = r.useContext(h.Z), [v, E] = r.useState(false), j = r.useCallback(e => {
     "A" !== e.target.nodeName && (p.Z.updateChatOpen(n.channel_id, true), f.Z.jumpToMessage({
       channelId: n.channel_id,
@@ -82,7 +82,7 @@ function Z(e) {
       }), null != w ? null : T]
     }), (0, i.jsx)("img", {
       alt: "",
-      src: (null == s ? true : s.guildMemberAvatar) != null && null != d ? (0, x.JM)({
+      src: (null == s ? true : s.guildMemberAvatar) != null && null != d ? (0, O.JM)({
         guildId: d,
         userId: n.author.id,
         avatar: s.guildMemberAvatar
@@ -153,12 +153,12 @@ function T(e) {
       e[i.id] = t, t += r + 8
     }(0, o.isEqual)(e, y.current) || b(e)
   }, [h]);
-  let O = h.map(e => ({
+  let x = h.map(e => ({
       message: e,
       height: m.current[e.id],
       y: g[e.id]
     })),
-    x = (0, u.Yzy)(O, {
+    O = (0, u.Yzy)(x, {
       keys: e => e.message.id,
       from: () => ({
         opacity: 0
@@ -202,7 +202,7 @@ function T(e) {
       onMouseLeave: () => {
         p(false)
       },
-      children: x((e, t) => (0, i.jsx)(s.animated.div, {
+      children: O((e, t) => (0, i.jsx)(s.animated.div, {
         ref: e => C(t.message.id, null != e ? e.offsetHeight : null),
         className: P.toastWrapper,
         style: e,

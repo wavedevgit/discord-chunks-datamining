@@ -24,7 +24,7 @@ function g(e) {
     guild: g
   } = e, b = (0, r.e7)([p.default, u.Z, d.Z], () => null != n && null != g && (0, o.F)(g.id, n.id, [p.default, u.Z, d.Z])), [C, y] = (0, s.ZP)(null == n ? true : n.id, t.guild_id), v = (0, r.e7)([c.ZP], () => null != g && null != n && null != c.ZP.getMember(g.id, n.id));
   if (!b || !v) return null;
-  let O = "timeout-user-".concat(null == n ? true : n.id);
+  let x = "timeout-user-".concat(null == n ? true : n.id);
   return (0, i.jsx)(f.Z, {
     text: y ? m.intl.string(h.default["6uMZbv"]) : m.intl.string(h.default["Sgg/uI"]),
     icon: l.T39,
@@ -36,5 +36,5 @@ function g(e) {
       })
     },
     disabled: y
-  }, O)
+  }, x)
 }

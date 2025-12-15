@@ -26,10 +26,10 @@ function g(e) {
   } = e, y = (0, r.e7)([c.Z], () => c.Z.isBlocked(b.getRecipientId()));
   (0, o.Z)(b.id);
   let v = (0, s.Z)(b.id),
-    O = b.isSystemDM(),
-    x = y && !O && !b.isMultiUserDM(),
+    x = b.isSystemDM(),
+    O = y && !x && !b.isMultiUserDM(),
     E = {};
-  if (O) {
+  if (x) {
     let e = v ? m.intl.string(m.t["+KSnWX"]) : m.intl.string(m.t.hvVgAZ);
     E.message = m.intl.string(m.t.Bt2N7D), E.subtitle = m.intl.string(m.t["n/Vzkw"]), E.buttonText = e, E.buttonIcon = v ? l.rgF : true, E.onButtonClick = () => {
       if (v) {
@@ -41,7 +41,7 @@ function g(e) {
       }
       open(d.Z.getArticleURL(f.BhN.SYSTEM_DMS))
     }, E.imageSrc = n(780961)
-  } else x && (E.message = m.intl.string(m.t["9T6N5/"]), E.buttonText = m.intl.string(m.t.XyHpKH), E.onButtonClick = () => {
+  } else O && (E.message = m.intl.string(m.t["9T6N5/"]), E.buttonText = m.intl.string(m.t.XyHpKH), E.onButtonClick = () => {
     a.Z.unblockUser(b.getRecipientId())
   });
   return (0, i.jsx)(p.Z, (t = function(e) {

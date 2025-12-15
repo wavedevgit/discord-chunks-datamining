@@ -72,28 +72,28 @@ let S = Chunk473749.memo(function(e) {
   }).enabled, L = (0, u.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), D = r.useMemo(() => {
     if (null == w) return null;
     let e = (0, o.Z)(w);
-    if (e.type === O.uaV.USER_JOIN) return (0, a.Rp)(x.intl.formatToParts(m.Z.getSystemMessageUserJoin(e.id), {
+    if (e.type === x.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(m.Z.getSystemMessageUserJoin(e.id), {
       username: null != M ? M.nick : e.author.username,
       usernameHook: e => e
     }));
-    if (e.type === O.uaV.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.Rp)((0, c.PA)({
+    if (e.type === x.uaV.ROLE_SUBSCRIPTION_PURCHASE) return (0, a.Rp)((0, c.PA)({
       username: null != M ? M.nick : e.author.username,
       guildId: null == _ ? true : _.guild_id,
       roleSubscriptionData: e.roleSubscriptionData
     }));
-    if (e.type === O.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.Rp)((0, d.Y)({
+    if (e.type === x.uaV.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION) return (0, a.Rp)((0, d.Y)({
       application: null == e ? true : e.application,
       username: null == M ? true : M.nick
     }));
-    if (e.type === O.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.Rp)((0, p.B2)({
+    if (e.type === x.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.Rp)((0, p.B2)({
       application: null == e ? true : e.application,
       username: null == M ? true : M.nick
     }));
-    if (e.type === O.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.Rp)((0, p.hj)({
+    if (e.type === x.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.Rp)((0, p.hj)({
       application: null == e ? true : e.application,
       username: null == M ? true : M.nick
     }));
-    else if (e.type === O.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : x.intl.string(x.t.wnn1Dc);
+    else if (e.type === x.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : O.intl.string(O.t.wnn1Dc);
     if (null != e.content && "" !== e.content) {
       let t = {
           formatInline: true,

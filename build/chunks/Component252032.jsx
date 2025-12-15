@@ -68,7 +68,7 @@ function j(e) {
       t.splice(+!!e, 0, {
         type: s.re.TEXT_DISPLAY,
         content: a,
-        id: "".concat(O.Kb)
+        id: "".concat(x.Kb)
       }), p.content = "", p.components = t
     }
     return d && null != P && (0, l.yE)(P.flags, v.iLy.CROSSPOSTED) ? b.Z.confirmEdit(e, i, p) : o.Z.editMessage(e, i, p), Promise.resolve()
@@ -92,7 +92,7 @@ function j(e) {
       }
       return e
     }({}, e), n = n = {
-      className: x.channelTextArea,
+      className: O.channelTextArea,
       key: u
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -134,7 +134,7 @@ function S(e) {
   return r.useEffect(() => (m.S.subscribe(v.CkL.TEXTAREA_FOCUS, g), m.S.subscribe(v.CkL.TEXTAREA_BLUR, b), () => {
     m.S.unsubscribe(v.CkL.TEXTAREA_FOCUS, g), m.S.unsubscribe(v.CkL.TEXTAREA_BLUR, b)
   }), [g, b]), (0, i.jsx)(u.ZP, {
-    className: x.channelTextArea,
+    className: O.channelTextArea,
     textValue: t,
     richValue: n,
     channel: a,

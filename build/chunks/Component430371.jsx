@@ -84,7 +84,7 @@ function I(e) {
     W = (0, c.Z)(G),
     [q, K] = r.useState(true),
     [Y, X] = r.useState(false),
-    J = R.type === O.fO.ACTIVITY,
+    J = R.type === x.fO.ACTIVITY,
     Q = (0, u.Z)(J ? R.applicationId : true),
     $ = !J && null != R.streamId,
     ee = U <= 2 * P + 144,
@@ -159,16 +159,16 @@ function I(e) {
         opacity: 0
       }
     }, em),
-    eO = r.useCallback(e => {
+    ex = r.useCallback(e => {
       z(e), K(false)
     }, []),
-    ex = et ? [] : (0, C.n3)(T, R, H),
+    eO = et ? [] : (0, C.n3)(T, R, H),
     {
       visibleParticipants: eE,
       participantTileWidth: ej
     } = (0, y.ZB)(k, N);
   return (0, i.jsxs)("div", {
-    className: a()(E.root, x.flexCenter, D),
+    className: a()(E.root, O.flexCenter, D),
     children: [(0, i.jsxs)("div", {
       className: E.tileWrapper,
       style: {
@@ -185,7 +185,7 @@ function I(e) {
           },
           className: E.videoWrapper,
           children: (0, i.jsx)("div", {
-            className: x.videoSizer,
+            className: O.videoSizer,
             style: {
               aspectRatio: es
             },
@@ -194,20 +194,20 @@ function I(e) {
                 key: r
               } = n;
               return null != t ? (0, i.jsx)(o.animated.div, {
-                className: x.videoWrapperAnimated,
+                className: O.videoWrapperAnimated,
                 style: e,
                 children: (0, i.jsx)(g.ZP, {
                   focused: true,
                   noBorder: eu >= k || ec >= U,
                   channel: M,
-                  className: x.focusedVideo,
+                  className: O.focusedVideo,
                   videoComponent: B,
                   width: k,
                   participant: t,
                   onClick: l,
                   onDoubleClick: Z,
                   onContextMenu: I,
-                  onVideoResize: eO,
+                  onVideoResize: ex,
                   inCall: w,
                   popoutType: A,
                   controlsBottom: ef
@@ -248,12 +248,12 @@ function I(e) {
           paused: Y || !L
         })
       })]
-    }), ex.length > 0 ? (0, i.jsx)(b.Z, {
+    }), eO.length > 0 ? (0, i.jsx)(b.Z, {
       onContextMenuParticipant: I,
       width: k,
       height: U,
       channel: M,
-      participants: ex,
+      participants: eO,
       onSelectParticipant: l
     }) : null]
   })

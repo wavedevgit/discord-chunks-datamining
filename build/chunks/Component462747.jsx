@@ -1,4 +1,4 @@
-/** Chunk was on 66452 **/
+/** Chunk was on 92486 **/
 /** chunk id: 462747, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -86,7 +86,7 @@ function Z() {
   })
 }
 
-function S() {
+function C() {
   return (0, Chunk54381.jsx)(I, {
     children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
       color: "text-default",
@@ -97,7 +97,7 @@ function S() {
   })
 }
 
-function y(e) {
+function S(e) {
   let {
     count: t
   } = e;
@@ -122,12 +122,12 @@ function y(e) {
   })
 }
 
-function E(e) {
+function y(e) {
   let {
     eventUser: t,
     guildId: n,
     onContextMenu: i
-  } = e, o = r.useRef(null), u = (0, s.e7)([m.default], () => m.default.getUser(t.user_id)), g = (0, s.e7)([x.Z, h.Z, b.default], () => t.user_id === b.default.getId() ? x.Z.getStatus() : h.Z.getStatus(t.user_id, n), [t.user_id, n]);
+  } = e, o = r.useRef(null), u = (0, s.e7)([g.default], () => g.default.getUser(t.user_id)), m = (0, s.e7)([h.Z, x.Z, b.default], () => t.user_id === b.default.getId() ? h.Z.getStatus() : x.Z.getStatus(t.user_id, n), [t.user_id, n]);
   return null == u ? null : (0, l.jsx)(f.Z, {
     targetElementRef: o,
     userId: t.user_id,
@@ -151,7 +151,7 @@ function E(e) {
           "aria-label": u.username,
           size: c.EFr.SIZE_24,
           className: _.listAvatar,
-          status: g
+          status: m
         }), (0, l.jsx)(d.Z, {
           user: u,
           className: _.listName,
@@ -163,7 +163,7 @@ function E(e) {
   })
 }
 
-function C(e) {
+function P(e) {
   let {
     eventUsers: t,
     guildId: n,
@@ -172,17 +172,17 @@ function C(e) {
   } = e;
   return (0, l.jsxs)(c.zJl, {
     className: _.listScroller,
-    children: [t.map(e => (0, l.jsx)(E, {
+    children: [t.map(e => (0, l.jsx)(y, {
       guildId: n,
       eventUser: e,
       onContextMenu: i
-    }, e.user_id)), r > 0 && (0, l.jsx)(y, {
+    }, e.user_id)), r > 0 && (0, l.jsx)(S, {
       count: r
     })]
   })
 }
 
-function P(e) {
+function k(e) {
   let {
     children: t,
     style: n
@@ -194,12 +194,12 @@ function P(e) {
   })
 }
 
-function T(e) {
+function E(e) {
   let {
     children: t,
     height: n
   } = e;
-  return (0, l.jsx)(P, {
+  return (0, l.jsx)(k, {
     style: {
       height: n
     },
@@ -215,24 +215,24 @@ function w(e) {
     loading: a,
     error: s,
     containerHeight: d
-  } = e, u = (0, g.Z)(t.guild_id, t.id, r);
-  if (a && 0 === i.length) return (0, l.jsx)(T, {
+  } = e, u = (0, m.Z)(t.guild_id, t.id, r);
+  if (a && 0 === i.length) return (0, l.jsx)(E, {
     height: d,
     children: (0, l.jsx)(c.$jN, {
       type: c.$jN.Type.SPINNING_CIRCLE,
       className: _.spinner
     })
   });
-  if (null != s && 0 === i.length) return (0, l.jsx)(T, {
+  if (null != s && 0 === i.length) return (0, l.jsx)(E, {
     height: d,
-    children: (0, l.jsx)(S, {})
+    children: (0, l.jsx)(C, {})
   });
   let f = 0;
-  return i.length >= v.rC && u > v.rC && (f = Math.max(u - i.length, 0)), 0 === i.length ? (0, l.jsx)(T, {
+  return i.length >= v.rC && u > v.rC && (f = Math.max(u - i.length, 0)), 0 === i.length ? (0, l.jsx)(E, {
     height: d,
     children: (0, l.jsx)(Z, {})
-  }) : (0, l.jsx)(P, {
-    children: (0, l.jsx)(C, {
+  }) : (0, l.jsx)(k, {
+    children: (0, l.jsx)(P, {
       eventUsers: i,
       guildId: t.guild_id,
       onContextMenu: function(e, t) {

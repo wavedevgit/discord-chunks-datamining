@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function x(e) {
+function O(e) {
   let t = (0, s.e7)([m.Z], () => !(0, o.isEmpty)(m.Z.getTypingUsers(e)), [e]),
     n = (0, s.e7)([h.Z], () => h.Z.getVoiceChannelId() === e, [e]),
     {
@@ -50,7 +50,7 @@ function E(e) {
     mentionCount: l,
     isTyping: a,
     voiceChannelIsSelected: o
-  } = x(n);
+  } = O(n);
   return (0, i.jsx)(C.Z, {
     className: t,
     unreadCount: r,
@@ -98,7 +98,7 @@ function j(e) {
       unreadCount: t,
       mentionCount: n,
       isTyping: i
-    } = x(e), [l, a] = r.useState(false);
+    } = O(e), [l, a] = r.useState(false);
     return r.useEffect(() => {
       a(t > 0);
       let e = setTimeout(() => {
@@ -144,10 +144,10 @@ function j(e) {
       clearTimeout(e)
     }
   }, [R]);
-  let k = [t = h && _ ? O.intl.string(O.t.DPgc5h) : I ? O.intl.string(O.t.nthdxB) : O.intl.string(O.t["5KxXrK"])];
-  return N > 0 && k.push(O.intl.formatToPlainString(O.t["3l1GOx"], {
+  let k = [t = h && _ ? x.intl.string(x.t.DPgc5h) : I ? x.intl.string(x.t.nthdxB) : x.intl.string(x.t["5KxXrK"])];
+  return N > 0 && k.push(x.intl.formatToPlainString(x.t["3l1GOx"], {
     mentionCount: N
-  })), T > 0 && k.push(O.intl.string(O.t.x5zAGZ)), (0, i.jsx)(y.Z, function(e) {
+  })), T > 0 && k.push(x.intl.string(x.t.x5zAGZ)), (0, i.jsx)(y.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);

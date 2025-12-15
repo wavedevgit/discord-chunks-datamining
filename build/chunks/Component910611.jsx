@@ -207,22 +207,22 @@ function D(e) {
     case A.d4z.ANNOUNCEMENT_THREAD:
     case A.d4z.PUBLIC_THREAD:
     case A.d4z.PRIVATE_THREAD:
-      let x = null;
+      let O = null;
       if (!s && null != l) {
         let e = (0, h.KS)(l, o);
-        x = (0, i.jsxs)(r.Fragment, {
+        O = (0, i.jsxs)(r.Fragment, {
           children: [V(e, M.intl.string(M.t.Pnajj0)), (0, i.jsx)(T.Z.Title, {
             level: y,
             onContextMenu: m,
             onClick: p,
             className: a()(R.parentChannelName, R.cursorPointer),
-            children: (0, f.F6)(l, E.default, O.Z)
+            children: (0, f.F6)(l, E.default, x.Z)
           }), (0, i.jsx)(T.Z.Caret, {})]
         })
       }
       let j = (null == l ? true : l.type) != null && A.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, i.jsxs)(r.Fragment, {
-        children: [x, V(j ? null : b, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(T.Z.Title, {
+        children: [O, V(j ? null : b, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(T.Z.Title, {
           level: y,
           onContextMenu: d,
           onClick: c,
@@ -313,7 +313,7 @@ function F(e) {
     guild: t,
     channel: n,
     caretPosition: l = "left"
-  } = e, a = (0, o.e7)([x.Z], () => x.Z.getGuildId()), s = (0, b.D)(), d = r.useRef(null);
+  } = e, a = (0, o.e7)([O.Z], () => O.Z.getGuildId()), s = (0, b.D)(), d = r.useRef(null);
   return (a === A.I_8 || s) && null != t ? (0, i.jsx)(c.u, {
     asContainer: true,
     text: t.name,

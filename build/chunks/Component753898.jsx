@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 753898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,11 +23,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk701766 = require("./701766.js");
 
-function x(e) {
+function O(e) {
   var t;
   let {
     channel: n,
-    children: x,
+    children: O,
     user: E
   } = e, j = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), S = null != (t = (0, d.ZP)(n)) ? t : "", {
     avatarDecorationSrc: _,
@@ -72,9 +72,9 @@ function x(e) {
         loop: true
       }) : S
     }), (0, i.jsx)(y.jz, {
-      children: x
+      children: O
     }), n.isMultiUserDM() && (0, i.jsxs)(a.hE2, {
-      className: O.buttonContainer,
+      className: x.buttonContainer,
       children: [(0, i.jsx)(b.l, {
         channel: n,
         text: v.intl.string(v.t["6Qgrev"]),

@@ -25,16 +25,16 @@ function v(e) {
   let {
     channelId: t,
     warningId: v,
-    senderId: O
-  } = e, x = (0, b.E4)(), E = r.useCallback(() => {
+    senderId: x
+  } = e, O = (0, b.E4)(), E = r.useCallback(() => {
     (0, p.T)(t, [v])
   }, [t, v]), j = e => {
     o.Z.updateChannelOverrideSettings(null, t, {
       muted: true
-    }, g.ZB.Muted), c.Z.showMuteSuccessToast(O, t), (0, h.qc)({
+    }, g.ZB.Muted), c.Z.showMuteSuccessToast(x, t), (0, h.qc)({
       channelId: t,
       warningId: v,
-      senderId: O,
+      senderId: x,
       warningType: f.pj.LIKELY_ATO,
       cta: e
     }), E()
@@ -43,15 +43,15 @@ function v(e) {
     (0, h.MC)(C.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
       warningId: v,
-      senderId: O,
+      senderId: x,
       warningType: f.pj.LIKELY_ATO
     }), s.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
-  }, [t, v, O]), (0, i.jsx)(m.Q, {
+  }, [t, v, x]), (0, i.jsx)(m.Q, {
     channelId: t,
     warningId: v,
-    senderId: O,
+    senderId: x,
     warningType: f.pj.LIKELY_ATO,
     header: y.intl.string(y.t.R8UsiI),
     description: y.intl.string(y.t.lI8nQl),
@@ -74,9 +74,9 @@ function v(e) {
               onClose: l,
               channelId: t,
               warningId: v,
-              senderId: O,
+              senderId: x,
               description: y.intl.string(y.t["/uid3p"]),
-              safetyTipRows: x.map((e, t) => (0, i.jsx)(u.q, {
+              safetyTipRows: O.map((e, t) => (0, i.jsx)(u.q, {
                 listType: "numbered",
                 index: t,
                 title: e.title,
@@ -94,7 +94,7 @@ function v(e) {
                 onClick: () => (0, h.qc)({
                   channelId: t,
                   warningId: v,
-                  senderId: O,
+                  senderId: x,
                   warningType: f.pj.LIKELY_ATO,
                   cta: h.NM.USER_MODAL_LEARN_MORE
                 }),
@@ -111,7 +111,7 @@ function v(e) {
         }), (0, h.qc)({
           channelId: t,
           warningId: v,
-          senderId: O,
+          senderId: x,
           warningType: f.pj.LIKELY_ATO,
           cta: h.NM.OPEN_MORE_TIPS
         })

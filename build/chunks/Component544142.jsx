@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk616508 = require("./616508.js");
 
-function x(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -70,7 +70,7 @@ function j(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("70675"), n.e("66256")]).then(n.bind(n, 654663));
-      return t => (0, i.jsx)(e, E(x({}, t), {
+      return t => (0, i.jsx)(e, E(O({}, t), {
         user: S,
         guildId: y.guild_id,
         channel: y
@@ -80,7 +80,7 @@ function j(e) {
   let Z = null != (p = null != (l = null == _ ? true : _.nick) ? l : b.ZP.getName(S)) ? p : "???",
     T = null == _ ? true : _.colorString;
   return null == S ? (0, i.jsx)("span", {
-    className: a()(O.threadCreatorName, O.unknownCreatorName),
+    className: a()(x.threadCreatorName, x.unknownCreatorName),
     children: Z
   }) : (0, i.jsx)(d.Gt, {
     value: j,
@@ -91,10 +91,10 @@ function j(e) {
       channelId: y.id,
       roleId: null == _ ? true : _.colorRoleId,
       clickTrap: true,
-      children: e => (0, i.jsx)(s.P3F, E(x({}, e), {
+      children: e => (0, i.jsx)(s.P3F, E(O({}, e), {
         innerRef: v,
         tag: "span",
-        className: O.threadCreatorName,
+        className: x.threadCreatorName,
         onContextMenu: I,
         children: (0, i.jsx)(s.PUh, {
           name: Z,
@@ -121,7 +121,7 @@ function S(e) {
       variant: "text-md/normal",
       color: "text-default",
       children: (0, i.jsx)("div", {
-        className: O.subtitle,
+        className: x.subtitle,
         children: v.intl.format(v.t.imPXd5, {
           usernameHook: (e, n) => (0, i.jsx)(j, {
             userId: t.ownerId,
@@ -145,9 +145,9 @@ function _(e) {
   return (0, i.jsxs)(C.ZP, {
     channelId: n.id,
     children: [(0, i.jsx)("div", {
-      className: O.iconWrapper,
+      className: x.iconWrapper,
       children: (0, i.jsx)(r, {
-        className: O.icon
+        className: x.icon
       })
     }), (0, i.jsx)(C.Ot, {
       children: n.name

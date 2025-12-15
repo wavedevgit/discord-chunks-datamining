@@ -50,16 +50,16 @@ function b(t) {
   let {
     guildEventId: e,
     guild: b,
-    channel: p,
-    recurrenceId: v,
-    isRecurrenceItem: E
+    channel: v,
+    recurrenceId: E,
+    isRecurrenceItem: p
   } = t, {
-    canManageGuildEvent: y
-  } = (0, o.XJ)(null != p ? p : b), O = (0, r.e7)([u.ZP], () => u.ZP.getGuildScheduledEvent(e)), P = y(O), Z = (0, s.Z)(), h = (0, c.Z)(v, null == O ? true : O.id), j = (0, a.zI)(e, v);
-  if (!P || null == j || null == O) return null;
-  let m = null != O.recurrence_rule && !E,
+    canManageGuildEvent: Z
+  } = (0, u.XJ)(null != v ? v : b), h = (0, r.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(e)), y = Z(h), P = (0, s.Z)(), O = (0, c.Z)(E, null == h ? true : h.id), m = (0, a.zI)(e, E);
+  if (!y || null == m || null == h) return null;
+  let j = null != h.recurrence_rule && !p,
     N = t => {
-      (null == v || t) && !E ? (0, i.ZDy)(async () => {
+      (null == E || t) && !p ? (0, i.ZDy)(async () => {
         let {
           default: t
         } = await Promise.all([n.e("49049"), n.e("36599"), n.e("61"), n.e("50341")]).then(n.bind(n, 779250));
@@ -67,31 +67,31 @@ function b(t) {
           guildScheduledEventId: e,
           guildId: b.id
         }))
-      }, Z) : null != v && (0, i.ZDy)(async () => {
+      }, P) : null != E && (0, i.ZDy)(async () => {
         let {
           default: t
         } = await n.e("27919").then(n.bind(n, 379038));
         return e => (0, l.jsx)(t, f(g({}, e), {
-          guildEvent: O,
-          recurrenceId: v
+          guildEvent: h,
+          recurrenceId: E
         }))
-      }, Z)
+      }, P)
     };
   return (0, l.jsx)(i.sNh, {
     id: d.intl.string(d.t.Rgy2dU),
     label: d.intl.string(d.t.Rgy2dU),
-    action: m ? true : () => N(true),
-    children: m && (0, l.jsxs)(l.Fragment, {
+    action: j ? true : () => N(true),
+    children: j && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(i.sNh, {
         id: d.intl.string(d.t.wmVmXN),
         label: d.intl.string(d.t.wmVmXN),
         action: () => N(false),
-        disabled: (null == h ? true : h.is_canceled) || j.startTime.getTime() < Date.now()
+        disabled: (null == O ? true : O.is_canceled) || m.startTime.getTime() < Date.now()
       }), (0, l.jsx)(i.sNh, {
         id: d.intl.string(d.t.BW1Qoh),
         label: d.intl.string(d.t.BW1Qoh),
         action: () => N(true),
-        disabled: new Date(O.scheduled_start_time).getTime() < Date.now()
+        disabled: new Date(h.scheduled_start_time).getTime() < Date.now()
       })]
     })
   })

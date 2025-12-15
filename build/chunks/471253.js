@@ -83,9 +83,10 @@ function I(e, t) {
 function T(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = null == e ? true : e.getGuildId();
-  if (i()(null != r, "This channel cannot be guildless."), !t && (0, E.u1)()) return Promise.resolve();
-  let a = f.Z.getVoiceStateForChannel(e.id);
-  return (0, g.gf)(a) !== g.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK || t || (0, c.yw)(b.rMx.PROMOTED_TO_SPEAKER, v({}, (0, m.s$)(e))), o.tn.patch({
+  i()(null != r, "This channel cannot be guildless.");
+  let a = f.Z.getVoiceStateForChannel(e.id),
+    s = (0, g.gf)(a);
+  return !t && (0, E.u1)() ? Promise.resolve() : (s !== g.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK || t || (0, c.yw)(b.rMx.PROMOTED_TO_SPEAKER, v({}, (0, m.s$)(e))), o.tn.patch({
     url: b.ANM.UPDATE_VOICE_STATE(r),
     body: v({
       suppress: t,
@@ -95,7 +96,7 @@ function T(e, t) {
       silent: n
     } : {}),
     rejectWithError: false
-  })
+  }))
 }
 
 function C(e) {

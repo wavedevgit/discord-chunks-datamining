@@ -28,8 +28,8 @@ function h(e) {
     canPostPolls: C,
     canLaunchActivities: y,
     appContext: v,
-    canSendScheduledMessages: O,
-    canSummarizeThreads: x,
+    canSendScheduledMessages: x,
+    canSummarizeThreads: O,
     showAppLauncher: E
   } = e, j = [];
   t && (j.push({
@@ -99,11 +99,11 @@ function h(e) {
       }),
       activity: e
     }))
-  }), O && j.push({
+  }), x && j.push({
     type: "SCHEDULED_MESSAGE",
     icon: l.T39,
     display: p.intl.string(p.t["3+ii4F"])
-  }), m.isThread() && x && j.push({
+  }), m.isThread() && O && j.push({
     type: "SUMMARIZE_THREAD",
     icon: l.$2U,
     display: p.intl.string(p.t.EXfguE)

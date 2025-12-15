@@ -56,7 +56,7 @@ let U = Chunk473749.memo(e => {
       userIds: t
     } = e;
     return t.has(T)
-  }), [T, y.id]), X = (0, p.Z)(null != Y ? [Y.applicationId] : []), J = (0, x.Z)(T, y.guild_id)[0], Q = null != (n = (0, d.IX)(null == J ? true : J.application_id).data) ? n : true, [$, ee] = (0, o.Wu)([S.Z], () => [S.Z.getStreamForUser(T, y.getGuildId()), S.Z.getActiveStreamForUser(T, y.getGuildId())], [y, T]), et = (0, o.e7)([N.Z], () => N.Z.getSessionById(j)), en = M.ZP.useName(C), ei = (0, o.e7)([w.Z], () => w.Z.getVoicePlatformForChannel(y.id, T), [y.id, T]), {
+  }), [T, y.id]), X = (0, p.Z)(null != Y ? [Y.applicationId] : []), J = (0, O.Z)(T, y.guild_id)[0], Q = null != (n = (0, d.IX)(null == J ? true : J.application_id).data) ? n : true, [$, ee] = (0, o.Wu)([S.Z], () => [S.Z.getStreamForUser(T, y.getGuildId()), S.Z.getActiveStreamForUser(T, y.getGuildId())], [y, T]), et = (0, o.e7)([N.Z], () => N.Z.getSessionById(j)), en = M.ZP.useName(C), ei = (0, o.e7)([w.Z], () => w.Z.getVoicePlatformForChannel(y.id, T), [y.id, T]), {
     enableHangStatus: er
   } = (0, m.bN)({
     guildId: y.guild_id,
@@ -64,7 +64,7 @@ let U = Chunk473749.memo(e => {
   }), el = (0, h.ZP)(y, true, C), ea = (0, o.e7)([g.Z], () => k ? g.Z.getHangStatusActivity() : null, [k]), eo = (0, b.j)(T), es = (0, E.Eu)(y.id, T), {
     enableVCStatusIcons: ec,
     enableRequestToStream: eu
-  } = O.A.useExperiment({
+  } = x.A.useExperiment({
     guildId: y.guild_id,
     location: "VoiceUsers"
   }, {
@@ -141,8 +141,8 @@ let V = [],
       numAudience: g,
       withGuildIcon: b = false,
       className: v,
-      children: O,
-      isThread: x = false
+      children: x,
+      isThread: O = false
     } = e, [S, P] = r.useState(null), [I, N] = r.useState(false), A = r.useRef(null), w = (0, E.Es)(l.id, null != c ? c : V), {
       shouldShow: M,
       dismiss: D
@@ -209,13 +209,13 @@ let V = [],
         numUsers: w.length - d
       })), r
     })();
-    return null == W && null == O ? null : (0, i.jsxs)(j.eJ, {
+    return null == W && null == x ? null : (0, i.jsxs)(j.eJ, {
       className: a()(v, k.list, {
         [k.collapsed]: u,
         [k.withGuildIcon]: b,
-        [k.isThread]: x
+        [k.isThread]: O
       }),
       collapsed: u,
-      children: [W, O]
+      children: [W, x]
     })
   }

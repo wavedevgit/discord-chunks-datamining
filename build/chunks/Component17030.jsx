@@ -25,7 +25,7 @@ function b(e) {
     selectedDefaultStatus: b,
     setIsEmojiPickerOpen: C,
     defaultStatusVariant: y
-  } = e, v = r.useRef(null), O = (0, l.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), x = r.useCallback(() => null != t ? (0, i.jsx)(o.Z, {
+  } = e, v = r.useRef(null), x = (0, l.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), O = r.useCallback(() => null != t ? (0, i.jsx)(o.Z, {
     emojiId: t.id,
     emojiName: t.name,
     animated: !!t.animated
@@ -49,8 +49,8 @@ function b(e) {
         closePopout: r
       } = e;
       return (0, i.jsx)(c.Z, {
-        channel: O,
-        guildId: null != (t = null == O ? true : O.guild_id) ? t : true,
+        channel: x,
+        guildId: null != (t = null == x ? true : x.guild_id) ? t : true,
         closePopout: r,
         onSelectEmoji: e => {
           let {
@@ -103,7 +103,7 @@ function b(e) {
         ref: v,
         active: a,
         tabIndex: 0,
-        renderButtonContents: null == t && null == b ? null : x
+        renderButtonContents: null == t && null == b ? null : O
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

@@ -195,7 +195,7 @@ function ei(e) {
     popouts: G,
     selected: J,
     setPopout: et
-  } = (0, L.Z)(o.id, q.d$), en = x.RS.useSetting(), ei = x.NA.useSetting(), er = (0, u.e7)([v.Z], () => v.Z.getMessageByReference(S)), el = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
+  } = (0, L.Z)(o.id, q.d$), en = O.RS.useSetting(), ei = O.NA.useSetting(), er = (0, u.e7)([v.Z], () => v.Z.getMessageByReference(S)), el = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
     handleMouseEnter: ea,
     handleMouseLeave: eo,
     isHovered: es
@@ -218,7 +218,7 @@ function ei(e) {
     allowDevLinks: ep,
     previewLinkTarget: true,
     viewingChannelId: E
-  }), eg = (0, R.Z)(s, f, ec), eb = (0, T.ZP)(o), eC = (0, w.iG)(o, y), ey = (0, w.Gx)(o), ev = (0, H.Z)(e, ef, false), eO = r.useCallback(() => (0, O.XU)(g, f, s), [g, f, s]), ex = (0, h.p9)({
+  }), eg = (0, R.Z)(s, f, ec), eb = (0, T.ZP)(o), eC = (0, w.iG)(o, y), ey = (0, w.Gx)(o), ev = (0, H.Z)(e, ef, false), ex = r.useCallback(() => (0, x.XU)(g, f, s), [g, f, s]), eO = (0, h.p9)({
     guildId: g,
     roleId: eb.iconRoleId
   });
@@ -226,7 +226,7 @@ function ei(e) {
     className: X.quotedChatMessage,
     children: [(0, i.jsx)(d.P3F, {
       className: X.jump,
-      onClick: eO,
+      onClick: ex,
       "aria-label": Y.intl.string(Y.t.k5WiPf),
       children: Y.intl.string(Y.t.k5WiPf)
     }), (0, i.jsx)(A.Z, $(Q({}, N), {
@@ -260,7 +260,7 @@ function ei(e) {
         replyReference: S,
         author: eb,
         repliedMessage: er,
-        roleIcon: ex
+        roleIcon: eO
       }),
       childrenAccessories: (0, U.Z)({
         channelMessageProps: e,
@@ -287,7 +287,7 @@ let er = Chunk473749.memo(function(e) {
   var t, n;
   let l, {
     id: o,
-    message: O,
+    message: x,
     message: {
       id: I
     },
@@ -301,32 +301,32 @@ let er = Chunk473749.memo(function(e) {
     groupId: el,
     renderContentOnly: ea
   } = e;
-  s()(O.type !== K.uaV.THREAD_STARTER_MESSAGE, "Message must not be a thread starter message");
-  let eo = K.OBS.has(O.type) ? O.messageReference : true,
+  s()(x.type !== K.uaV.THREAD_STARTER_MESSAGE, "Message must not be a thread starter message");
+  let eo = K.OBS.has(x.type) ? x.messageReference : true,
     es = (0, c.JA)(null != (t = e.id) ? t : ""),
     {
       onFocus: ec
     } = es,
     eu = ee(es, ["onFocus"]),
     ed = (0, b.p7)("ChatMessage"),
-    ep = x.RS.useSetting(),
-    ef = x.NA.useSetting(),
+    ep = O.RS.useSetting(),
+    ef = O.NA.useSetting(),
     eh = (0, u.e7)([v.Z], () => v.Z.getMessageByReference(eo)),
     {
       popouts: em,
       selected: eg,
       setPopout: eb
-    } = (0, L.Z)(O.id, q.d$),
-    eC = (0, M.qo)(O, J, eb),
-    ey = (0, M.Go)(O, J),
+    } = (0, L.Z)(x.id, q.d$),
+    eC = (0, M.qo)(x, J, eb),
+    ey = (0, M.Go)(x, J),
     {
       handleMouseEnter: ev,
-      handleMouseLeave: eO,
-      hasHovered: ex,
+      handleMouseLeave: ex,
+      hasHovered: eO,
       isHovered: eE
     } = (0, M.tn)({
       groupId: el,
-      message: O,
+      message: x,
       defaultValue: eg,
       popouts: em
     }),
@@ -340,21 +340,21 @@ let er = Chunk473749.memo(function(e) {
       e_(e), ev(e)
     }, [e_, ev]),
     eZ = r.useCallback(e => {
-      eP(e), eO()
-    }, [eP, eO]),
+      eP(e), ex()
+    }, [eP, ex]),
     eT = (0, u.e7)([S.Z], () => S.Z.isEditing(et, I), [et, I]),
     eN = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled),
     eA = eg || eT || eN && ej,
     ew = eA || eE,
-    eM = (0, u.e7)([E.Z], () => O.hasFlag(K.iLy.HAS_THREAD) && E.Z.getChannel(_.default.castMessageIdAsChannelId(O.id))),
-    eR = O.isFirstMessageInForumPost(J),
-    eL = (0, m.A)((null != (n = O.editedTimestamp) ? n : O.timestamp).valueOf()),
+    eM = (0, u.e7)([E.Z], () => x.hasFlag(K.iLy.HAS_THREAD) && E.Z.getChannel(_.default.castMessageIdAsChannelId(x.id))),
+    eR = x.isFirstMessageInForumPost(J),
+    eL = (0, m.A)((null != (n = x.editedTimestamp) ? n : x.timestamp).valueOf()),
     eD = (0, u.e7)([j.Z], () => j.Z.isDeveloper),
     {
       content: ek,
       hasSpoilerEmbeds: eU,
       hasBailedAst: eV
-    } = (0, D.Z)(O, {
+    } = (0, D.Z)(x, {
       hideSimpleEmbedContent: ep && ef,
       isInteracting: ew,
       formatInline: false,
@@ -365,7 +365,7 @@ let er = Chunk473749.memo(function(e) {
       previewLinkTarget: true
     }),
     eF = (0, R.Z)(I, et, eN),
-    eB = (0, T.ZP)(O),
+    eB = (0, T.ZP)(x),
     eH = (0, u.e7)([y.Z], () => y.Z.getPendingReply(et)),
     eG = function(e) {
       let t = r.useRef(e);
@@ -377,18 +377,18 @@ let er = Chunk473749.memo(function(e) {
       guildId: J.guild_id,
       roleId: eB.iconRoleId
     }),
-    eW = (0, w.iG)(O, el),
-    eq = (0, w.Gx)(O),
+    eW = (0, w.iG)(x, el),
+    eq = (0, w.Gx)(x),
     eK = (0, u.e7)([f.Z], () => f.Z.getMessage(I), [I]),
     eY = (0, k.Z)({
-      message: O,
+      message: x,
       channel: J
     }),
     eX = r.useRef(window),
     eJ = null != eK,
     eQ = r.useMemo(() => Object.values(em).some(e => e), [em]);
-  l = O.type === K.uaV.CUSTOM_GIFT ? "" : !eT && eJ ? (0, V.Z)(e, ek) : (0, H.Z)(e, ek, eT);
-  let e$ = O.id === el,
+  l = x.type === K.uaV.CUSTOM_GIFT ? "" : !eT && eJ ? (0, V.Z)(e, ek) : (0, H.Z)(e, ek, eT);
+  let e$ = x.id === el,
     e0 = (0, i.jsx)(d.tEY, {
       offset: {
         left: 4,
@@ -398,9 +398,9 @@ let er = Chunk473749.memo(function(e) {
         id: o,
         className: X.messageListItem,
         "aria-setsize": false,
-        children: [(0, C.Uw)(O) && (0, i.jsx)(g.Z, {
+        children: [(0, C.Uw)(x) && (0, i.jsx)(g.Z, {
           compact: en,
-          message: O,
+          message: x,
           hovering: eE && !eT && !eQ
         }), (0, i.jsx)(A.Z, $(Q({}, eu), {
           "aria-setsize": false,
@@ -417,21 +417,21 @@ let er = Chunk473749.memo(function(e) {
           className: a()(ei, {
             [X.message]: true,
             [X.cozyMessage]: !en,
-            [X.mentioned]: O.mentioned,
-            [X.ephemeral]: (0, P.Pv)(O),
-            [X.nitroMessage]: O.type === K.uaV.NITRO_NOTIFICATION,
-            [X.systemMessage]: (0, Z.Z)(O),
-            [X.groupStart]: !ea && (e$ || O.type === K.uaV.REPLY),
+            [X.mentioned]: x.mentioned,
+            [X.ephemeral]: (0, P.Pv)(x),
+            [X.nitroMessage]: x.type === K.uaV.NITRO_NOTIFICATION,
+            [X.systemMessage]: (0, Z.Z)(x),
+            [X.groupStart]: !ea && (e$ || x.type === K.uaV.REPLY),
             [X.selected]: eA,
-            [X.replying]: (null == eH ? true : eH.message.id) === O.id,
-            [X.interactionSending]: O.isCommandType() && O.state === K.yb.SENDING,
+            [X.replying]: (null == eH ? true : eH.message.id) === x.id,
+            [X.interactionSending]: x.isCommandType() && x.state === K.yb.SENDING,
             [X.automodMessage]: eJ,
             [X.editing]: eT,
             [X.hasOpenPopouts]: eQ,
-            [X.potioned]: (0, C.Uw)(O) && ed
+            [X.potioned]: (0, C.Uw)(x) && ed
           }),
           zalgo: !eT,
-          childrenRepliedMessage: ea || O.type !== K.uaV.REPLY ? true : (0, z.Z)($(Q({}, e), {
+          childrenRepliedMessage: ea || x.type !== K.uaV.REPLY ? true : (0, z.Z)($(Q({}, e), {
             setPopout: eb,
             referencedUsernameProfile: em.referencedUsernameProfile,
             referencedAvatarProfile: em.referencedAvatarProfile,
@@ -456,9 +456,9 @@ let er = Chunk473749.memo(function(e) {
             handleContextMenu: eC,
             isInteracting: ew,
             isAutomodBlockedMessage: eJ,
-            forceAddReactions: O.type === K.uaV.EMOJI_ADDED
+            forceAddReactions: x.type === K.uaV.EMOJI_ADDED
           }),
-          childrenButtons: ex || eS ? (0, F.Z)({
+          childrenButtons: eO || eS ? (0, F.Z)({
             buttonProps: e,
             setPopout: eb,
             messagePopouts: em,
@@ -468,10 +468,10 @@ let er = Chunk473749.memo(function(e) {
           childrenSystemMessage: (0, W.Z)(e),
           childrenMessageContent: l,
           onMouseMove: ev,
-          onMouseLeave: eO,
-          hasThread: !ea && O.hasFlag(K.iLy.HAS_THREAD) && null != eM,
-          isSystemMessage: (0, Z.Z)(O),
-          hasReply: O.type === K.uaV.REPLY,
+          onMouseLeave: ex,
+          hasThread: !ea && x.hasFlag(K.iLy.HAS_THREAD) && null != eM,
+          isSystemMessage: (0, Z.Z)(x),
+          hasReply: x.type === K.uaV.REPLY,
           messageRef: e => {
             var t, n;
             eY.current = e, eX.current = null != (n = null == e || null == (t = e.ownerDocument) ? true : t.defaultView) ? n : window
@@ -484,7 +484,7 @@ let er = Chunk473749.memo(function(e) {
     flashKey: eG,
     className: a()({
       [X.backgroundFlash]: true,
-      [X.groupStart]: !en && O.id === el
+      [X.groupStart]: !en && x.id === el
     }),
     children: e0
   }, "bg-flash-".concat(o)) : e0

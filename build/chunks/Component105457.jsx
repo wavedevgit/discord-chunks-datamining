@@ -48,10 +48,10 @@ function m(e) {
       type: C
     }, (0, s.v_)(b)))
   }, [C, b]);
-  let O = r.useCallback(() => {
+  let x = r.useCallback(() => {
       null == m || m(), t()
     }, [m, t]),
-    x = r.useCallback(() => {
+    O = r.useCallback(() => {
       null == g || g(), t()
     }, [g, t]),
     E = r.useRef(null);
@@ -76,7 +76,7 @@ function m(e) {
     "aria-labelledby": "content-warning-popout-label",
     children: (0, i.jsxs)("form", {
       className: f.contentWarningPopout,
-      onSubmit: O,
+      onSubmit: x,
       children: [(0, i.jsxs)("div", {
         className: f.body,
         children: [null != v && (0, i.jsx)("div", {
@@ -100,7 +100,7 @@ function m(e) {
                 className: f.button,
                 children: (0, i.jsx)(o.Button, {
                   variant: "secondary",
-                  onClick: x,
+                  onClick: O,
                   text: p.intl.string(p.t.fsBWmS)
                 })
               }), (0, i.jsx)(o.Text, {
@@ -114,7 +114,7 @@ function m(e) {
                 className: f.button,
                 children: (0, i.jsx)(o.Button, {
                   variant: "primary",
-                  onClick: O,
+                  onClick: x,
                   text: p.intl.string(p.t.KJnHq3),
                   autoFocus: true
                 })

@@ -26,7 +26,7 @@ function v(e) {
     channel: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, o.ZP)(), v = (0, l.e7)([m.Z], () => m.Z.getSelectedParticipant(t.id)), O = (null == v ? true : v.type) === b.fO.STREAM, x = (0, l.e7)([f.Z], () => O ? f.Z.getActiveStreamForStreamKey(v.id) : null), {
+  } = (0, o.ZP)(), v = (0, l.e7)([m.Z], () => m.Z.getSelectedParticipant(t.id)), x = (null == v ? true : v.type) === b.fO.STREAM, O = (0, l.e7)([f.Z], () => x ? f.Z.getActiveStreamForStreamKey(v.id) : null), {
     ignoreSenderPreference: E
   } = d.Z.useExperiment({
     location: "ActionBarClipsButton"
@@ -36,9 +36,9 @@ function v(e) {
     viewerClippingAllowed: j,
     isAtMaxSavingClipOperations: S
   } = (0, l.cj)([s.Z], () => ({
-    viewerClippingAllowed: null != x && (s.Z.isViewerClippingAllowedForUser(x.ownerId) || E),
+    viewerClippingAllowed: null != O && (s.Z.isViewerClippingAllowedForUser(O.ownerId) || E),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), _ = (0, c.z8)(), P = (null == x ? true : x.ownerId) === h.default.getId(), I = !_ || !(P || j) || S || null == v, Z = r.useCallback(e => {
+  })), _ = (0, c.z8)(), P = (null == O ? true : O.ownerId) === h.default.getId(), I = !_ || !(P || j) || S || null == v, Z = r.useCallback(e => {
     var t, n;
     return (0, i.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -77,7 +77,7 @@ function v(e) {
     },
     disabled: I,
     iconComponent: Z,
-    label: null == x ? C.intl.string(C.t.eg5qtV) : P || j ? _ ? S ? true : C.intl.string(C.t.U4URzP) : C.intl.string(C.t.wSS1yN) : C.intl.string(C.t.aRifJX),
+    label: null == O ? C.intl.string(C.t.eg5qtV) : P || j ? _ ? S ? true : C.intl.string(C.t.U4URzP) : C.intl.string(C.t.wSS1yN) : C.intl.string(C.t.aRifJX),
     grow: false
   })
 }

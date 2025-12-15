@@ -31,9 +31,9 @@ function v(e) {
     onClick: a,
     aspectRatio: y = 0,
     animatedDivClass: v,
-    commandOrigin: O
+    commandOrigin: x
   } = e, {
-    onActivityItemSelected: x,
+    onActivityItemSelected: O,
     imageBackground: E,
     activityAction: j,
     labelType: S
@@ -45,7 +45,7 @@ function v(e) {
     onActivityItemSelected: a,
     embeddedActivitiesManager: f.Z,
     assetNames: b,
-    commandOrigin: O
+    commandOrigin: x
   }), [_, P] = l.useState(false), I = l.useCallback(() => {
     P(true)
   }, [P]), Z = l.useCallback(() => {
@@ -90,7 +90,7 @@ function v(e) {
     }
   }, [j]);
   return (0, r.jsx)(c.P3F, {
-    onClick: x,
+    onClick: O,
     onFocus: I,
     onBlur: Z,
     onMouseEnter: I,

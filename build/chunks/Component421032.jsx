@@ -39,7 +39,7 @@ function x(e) {
       e.stopPropagation(), null != Z && (0, d.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([t.e("91973"), t.e("470"), t.e("91187")]).then(t.bind(t, 215269));
+        } = await Promise.all([t.e("91973"), t.e("470")]).then(t.bind(t, 215269));
         return t => (0, a.jsx)(e, function(e) {
           for (var n = 1; n < arguments.length; n++) {
             var t = null != arguments[n] ? arguments[n] : {},

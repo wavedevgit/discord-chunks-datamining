@@ -8,7 +8,7 @@ require("./473749.js");
 var Chunk35149 = require("./35149.js"),
   i = require.n(Chunk35149),
   Chunk913527 = require("./913527.js"),
-  u = require.n(Chunk913527),
+  o = require.n(Chunk913527),
   Chunk593473 = require("./593473.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,95 +23,95 @@ var Chunk35149 = require("./35149.js"),
   Chunk765305 = require("./765305.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let h = "YYYYMMDDTHHmmss",
-  j = "YYYY-MM-DDTHH:mm:ss",
-  m = /RRULE:.*/;
+let O = "YYYYMMDDTHHmmss",
+  m = "YYYY-MM-DDTHH:mm:ss",
+  j = /RRULE:.*/;
 
 function N(t, e, n, r) {
-  var o, N, w;
-  let _, D = (0, a.e7)([p.ZP], () => p.ZP.isActive(t)),
-    S = (0, v.zI)(null != t ? t : "", r),
-    x = (0, a.e7)([p.ZP], () => p.ZP.getGuildScheduledEvent(t), [t]),
-    T = (0, a.e7)([f.Z], () => f.Z.getGuild(e), [e]);
-  if (D || null == S || null == x) return null;
-  _ = x.entity_type === O.WX.EXTERNAL ? x.entity_metadata.location : null != n && null != T ? Z.intl.formatToPlainString(Z.t["2t8L04"], {
+  var u, N, _;
+  let w, S = (0, a.e7)([v.ZP], () => v.ZP.isActive(t)),
+    D = (0, E.zI)(null != t ? t : "", r),
+    T = (0, a.e7)([v.ZP], () => v.ZP.getGuildScheduledEvent(t), [t]),
+    x = (0, a.e7)([f.Z], () => f.Z.getGuild(e), [e]);
+  if (S || null == D || null == T) return null;
+  w = T.entity_type === h.WX.EXTERNAL ? T.entity_metadata.location : null != n && null != x ? P.intl.formatToPlainString(P.t["2t8L04"], {
     channelName: n.name,
-    guildName: T.name
-  }) : Z.intl.string(Z.t.VSgOVg);
-  let I = u()(x.scheduled_start_time),
-    C = null != x.scheduled_end_time ? u()(x.scheduled_end_time) : I,
-    G = null != x.description && "" !== x.description ? g.ZP.unparse(x.description, null != (o = null == n ? true : n.id) ? o : P.lds, true) : "",
-    L = (0, E.KV)(x.recurrence_rule),
-    U = null != L ? (0, y.Ho)(L) : null,
+    guildName: x.name
+  }) : P.intl.string(P.t.VSgOVg);
+  let I = o()(T.scheduled_start_time),
+    C = null != T.scheduled_end_time ? o()(T.scheduled_end_time) : I,
+    G = null != T.description && "" !== T.description ? g.ZP.unparse(T.description, null != (u = null == n ? true : n.id) ? u : y.lds, true) : "",
+    L = (0, p.KV)(T.recurrence_rule),
+    U = null != L ? (0, Z.Ho)(L) : null,
     {
       startTime: A,
-      endTime: M
-    } = S,
-    V = null != (N = u()(A)) ? N : I,
-    k = null != (w = u()(null != M ? M : A)) ? w : I,
+      endTime: V
+    } = D,
+    M = null != (N = o()(A)) ? N : I,
+    k = null != (_ = o()(null != V ? V : A)) ? _ : I,
     R = () => {
       let t = i()();
       t.createEvent({
         start: I,
         end: C,
-        summary: x.name,
+        summary: T.name,
         description: G,
-        location: _,
+        location: w,
         repeating: U
       }), b.isPlatformEmbedded ? d.Z.fileManager.saveWithDialog(t.toString(), "discord-event.ics") : window.open(t.toURL(), "_blank")
     };
   return (0, l.jsxs)(s.sNh, {
-    id: Z.intl.string(Z.t.k5pvjo),
-    label: Z.intl.string(Z.t.k5pvjo),
+    id: P.intl.string(P.t.k5pvjo),
+    label: P.intl.string(P.t.k5pvjo),
     action: R,
     children: [(0, l.jsx)(s.sNh, {
-      id: Z.intl.string(Z.t.JKSLRH),
-      label: Z.intl.string(Z.t.JKSLRH),
+      id: P.intl.string(P.t.JKSLRH),
+      label: P.intl.string(P.t.JKSLRH),
       action: () => {
         var t;
         let e = null == U ? true : U.toString(),
           n = {
-            text: x.name,
-            dates: "".concat(I.format(h), "/").concat(C.format(h)),
+            text: T.name,
+            dates: "".concat(I.format(O), "/").concat(C.format(O)),
             details: G,
             action: "TEMPLATE",
-            location: _,
-            recur: null != e ? null == (t = m.exec(e)) ? true : t[0] : true
+            location: w,
+            recur: null != e ? null == (t = j.exec(e)) ? true : t[0] : true
           },
           l = "https://calendar.google.com/calendar/render?".concat((0, c.stringify)(n));
         window.open(l, "_blank")
       }
     }), (0, l.jsx)(s.sNh, {
-      id: Z.intl.string(Z.t.nrBYSe),
-      label: Z.intl.string(Z.t.nrBYSe),
+      id: P.intl.string(P.t.nrBYSe),
+      label: P.intl.string(P.t.nrBYSe),
       action: R
     }), (0, l.jsx)(s.sNh, {
-      id: Z.intl.string(Z.t.odzaCd),
-      label: Z.intl.string(Z.t.odzaCd),
+      id: P.intl.string(P.t.odzaCd),
+      label: P.intl.string(P.t.odzaCd),
       action: () => {
         let t = {
             v: 60,
-            title: x.name,
-            st: V.format(h),
-            et: k.format(h),
+            title: T.name,
+            st: M.format(O),
+            et: k.format(O),
             desc: G,
-            in_loc: _
+            in_loc: w
           },
           e = "https://calendar.yahoo.com/?".concat((0, c.stringify)(t));
         window.open(e, "_blank")
       }
     }), (0, l.jsx)(s.sNh, {
-      id: Z.intl.string(Z.t.rQe8EE),
-      label: Z.intl.string(Z.t.rQe8EE),
+      id: P.intl.string(P.t.rQe8EE),
+      label: P.intl.string(P.t.rQe8EE),
       action: () => {
         let t = {
             path: "/calendar/action/compose",
             rru: "addevent",
-            startdt: V.format(j),
-            enddt: k.format(j),
-            subject: x.name,
+            startdt: M.format(m),
+            enddt: k.format(m),
+            subject: T.name,
             body: G,
-            location: _,
+            location: w,
             allday: false
           },
           e = "https://outlook.live.com/calendar/0/deeplink/compose?".concat((0, c.stringify)(t));

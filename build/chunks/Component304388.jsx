@@ -73,8 +73,8 @@ let p = Chunk473749.forwardRef(function(e, t) {
     onPopoutClose: b,
     onRequestClose: C
   } = e, [y, v] = r.useState(false), {
-    isHovered: O,
-    setIsHovered: x,
+    isHovered: x,
+    setIsHovered: O,
     onMouseEnter: E,
     onMouseLeave: j,
     cancelTimers: S
@@ -89,14 +89,14 @@ let p = Chunk473749.forwardRef(function(e, t) {
   }
 
   function I(e) {
-    S(), v(!y), y ? null == b || b() : null == g || g(), (!O || y) && e()
+    S(), v(!y), y ? null == b || b() : null == g || g(), (!x || y) && e()
   }
   r.useImperativeHandle(t, () => ({
     hidePopout() {
-      x(false), v(false)
+      O(false), v(false)
     }
-  }), [x, v]);
-  let Z = O && !m || y;
+  }), [O, v]);
+  let Z = x && !m || y;
   return (0, i.jsx)(a.yRy, {
     targetElementRef: p,
     animation: a.yRy.Animation.FADE,
@@ -107,7 +107,7 @@ let p = Chunk473749.forwardRef(function(e, t) {
     spacing: 16,
     onRequestClose: () => {
       if ((null == C ? true : C()) === l.F) return l.F;
-      x(false), v(false), null == b || b()
+      O(false), v(false), null == b || b()
     },
     renderPopout: e => (0, i.jsx)(d, u({
       isHovered: Z,

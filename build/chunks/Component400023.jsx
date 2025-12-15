@@ -104,8 +104,8 @@ let q = (0, Chunk236726.animated)(Chunk481060.eTT),
       unreadCount: b,
       showNewMessagesBar: C,
       messageDisplayCompact: v,
-      channelStream: O,
-      uploads: x,
+      channelStream: x,
+      uploads: O,
       hasUnreads: j,
       editingMessageId: _,
       fontSize: P,
@@ -157,8 +157,8 @@ let q = (0, Chunk236726.animated)(Chunk481060.eTT),
       unreadCount: b,
       showNewMessagesBar: C,
       messageDisplayCompact: v,
-      channelStream: O,
-      uploads: x,
+      channelStream: x,
+      uploads: O,
       loadMore: X.loadMore,
       scrollManager: X,
       specs: Y,
@@ -298,8 +298,8 @@ let q = (0, Chunk236726.animated)(Chunk481060.eTT),
       renderSpoilers: L,
       keyboardModeEnabled: k
     } = function() {
-      let e = x.jU.useSetting(),
-        t = x.cC.useSetting(),
+      let e = O.jU.useSetting(),
+        t = O.cC.useSetting(),
         {
           messageGroupSpacing: n,
           fontSize: i,
@@ -345,11 +345,11 @@ let q = (0, Chunk236726.animated)(Chunk481060.eTT),
         o = null != (n = null == (t = A.default.getUser(j.default.getId())) ? true : t.hasFlag(F.xW$.SPAMMER)) && n,
         s = (0, p.ts)(e),
         u = (0, b.Z)("use_topic_dividers_in_chat"),
-        d = (0, c.Wu)([O.Z], () => {
+        d = (0, c.Wu)([x.Z], () => {
           var t;
-          return s && u && null != (t = O.Z.summaries(e.id)) ? t : []
+          return s && u && null != (t = x.Z.summaries(e.id)) ? t : []
         }, [s, e.id, u]),
-        f = (0, c.e7)([O.Z], () => s ? O.Z.selectedSummary(e.id) : null, [s, e.id]),
+        f = (0, c.e7)([x.Z], () => s ? x.Z.selectedSummary(e.id) : null, [s, e.id]),
         h = function(e) {
           let t = r.useMemo(() => {
             let t = new Set;

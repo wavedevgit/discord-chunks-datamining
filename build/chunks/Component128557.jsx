@@ -96,9 +96,9 @@ function w(e) {
       className: a()(T.checkmark, {
         [T.animate]: d
       })
-    }) : (0, i.jsx)(O.Z, {
+    }) : (0, i.jsx)(x.Z, {
       className: T.arrow,
-      direction: O.Z.Directions.RIGHT
+      direction: x.Z.Directions.RIGHT
     })]
   })
 }
@@ -106,7 +106,7 @@ function w(e) {
 function M(e) {
   let {
     channel: t
-  } = e, l = (0, s.e7)([y.Z], () => null != t ? y.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && S.default.extractTimestamp(l.id) < Date.now() - P._8R, O = (0, s.e7)([C.default], () => (null == l ? true : l.ownerId) === C.default.getId(), [l]), {
+  } = e, l = (0, s.e7)([y.Z], () => null != t ? y.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && S.default.extractTimestamp(l.id) < Date.now() - P._8R, x = (0, s.e7)([C.default], () => (null == l ? true : l.ownerId) === C.default.getId(), [l]), {
     canInvite: M,
     canManageGuild: R,
     canMessage: L
@@ -145,7 +145,7 @@ function M(e) {
         f.ZP.trackWithMetadata(P.rMx.SERVER_SETUP_CTA_CLICKED, {
           setup_type: I.Ft.CHANNEL_WELCOME,
           action: I.j7.SEND_MESSAGE
-        }), x.S.dispatch(P.CkL.TEXTAREA_FOCUS, {
+        }), O.S.dispatch(P.CkL.TEXTAREA_FOCUS, {
           highlight: true,
           channelId: P.lds
         })
@@ -300,7 +300,7 @@ function M(e) {
       onClick: z
     })
   }, "addapp")));
-  let $ = O ? Z.intl.string(Z.t["1ach9C"]) : Z.intl.string(Z.t["ezm+/j"]);
+  let $ = x ? Z.intl.string(Z.t["1ach9C"]) : Z.intl.string(Z.t["ezm+/j"]);
   p && ($ = Z.intl.string(Z.t["gwyU/J"]));
   let ee = "".concat(E.Z.getArticleURL(P.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
   return (0, i.jsx)(_.ZP, {

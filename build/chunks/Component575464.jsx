@@ -27,8 +27,8 @@ function m(e) {
     selected: C,
     checked: y,
     disabled: v = false,
-    inlineUsername: O = true,
-    onClick: x,
+    inlineUsername: x = true,
+    onClick: O,
     onMouseEnter: E,
     "aria-setsize": j,
     "aria-posinset": S
@@ -56,7 +56,7 @@ function m(e) {
       [h.disabled]: v
     }),
     onClick: () => {
-      null != x && x(r.id)
+      null != O && O(r.id)
     },
     onMouseEnter: () => {
       null != E && E(m)
@@ -71,7 +71,7 @@ function m(e) {
       align: d.Z.Align.CENTER,
       className: l()(h.friend, {
         [h.friendSelected]: C,
-        [h.twoRows]: !O
+        [h.twoRows]: !x
       }),
       children: [(0, i.jsx)(u.Z, {
         user: r,
@@ -80,7 +80,7 @@ function m(e) {
       }), (0, i.jsxs)(d.Z, {
         className: h.match,
         align: d.Z.Align.BASELINE,
-        direction: O ? d.Z.Direction.HORIZONTAL : d.Z.Direction.VERTICAL,
+        direction: x ? d.Z.Direction.HORIZONTAL : d.Z.Direction.VERTICAL,
         children: [(0, i.jsx)(s.Text, {
           tag: "strong",
           className: h.nickname,

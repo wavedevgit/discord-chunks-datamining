@@ -1,4 +1,4 @@
-/** Chunk was on 66452 **/
+/** Chunk was on 92486 **/
 /** chunk id: 390072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -17,13 +17,13 @@ function u(e) {
     guildScheduledEvent: t,
     channel: n,
     onClose: u
-  } = e, f = t.entity_type === o.WX.EXTERNAL, b = r.useCallback(e => (0, s.Qt)(t, u)(e), [t, u]), h = (0, c.u)(t, n);
-  if (null == h) return null;
+  } = e, f = t.entity_type === o.WX.EXTERNAL, b = r.useCallback(e => (0, s.Qt)(t, u)(e), [t, u]), x = (0, c.u)(t, n);
+  if (null == x) return null;
   let {
-    IconComponent: x,
-    locationName: m
-  } = h, g = (0, l.jsxs)(l.Fragment, {
-    children: [null != x && (0, l.jsx)(x, {
+    IconComponent: h,
+    locationName: g
+  } = x, m = (0, l.jsxs)(l.Fragment, {
+    children: [null != h && (0, l.jsx)(h, {
       size: "custom",
       color: "currentColor",
       width: 20,
@@ -33,7 +33,7 @@ function u(e) {
       color: "text-default",
       variant: "text-sm/normal",
       className: d.locationText,
-      children: (0, a.m)(m, true)
+      children: (0, a.m)(g, true)
     })]
   });
   return (0, l.jsx)("div", {
@@ -41,7 +41,7 @@ function u(e) {
     children: null != b ? (0, l.jsx)(i.P3F, {
       className: f ? d.externalLocation : d.channelLocation,
       onClick: b,
-      children: g
-    }) : g
+      children: m
+    }) : m
   })
 }

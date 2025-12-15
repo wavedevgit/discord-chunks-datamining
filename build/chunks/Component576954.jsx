@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 576954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  M: () => O
+  M: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -55,40 +55,40 @@ function v(e) {
   })
 }
 
-function O(e) {
+function x(e) {
   let {
     channelId: t,
-    warningId: O,
-    senderId: x
+    warningId: x,
+    senderId: O
   } = e, {
     isBlocked: E
   } = (0, a.cj)([p.Z], () => ({
-    isBlocked: p.Z.isBlocked(x)
-  }), [x]), j = r.useCallback(() => {
-    (0, f.T)(t, [O])
-  }, [t, O]), S = (0, b.C2)(), _ = r.useCallback(e => () => {
-    s.Z.blockUser(x, {
+    isBlocked: p.Z.isBlocked(O)
+  }), [O]), j = r.useCallback(() => {
+    (0, f.T)(t, [x])
+  }, [t, x]), S = (0, b.C2)(), _ = r.useCallback(e => () => {
+    s.Z.blockUser(O, {
       location: b.zr
     }).then(() => {
       j()
     }), (0, m.qc)({
       channelId: t,
-      warningId: O,
-      senderId: x,
+      warningId: x,
+      senderId: O,
       warningType: h.pj.STRANGER_DANGER,
       cta: e
     })
-  }, [j, t, O, x]);
+  }, [j, t, x, O]);
   r.useEffect(() => {
     (0, m.MC)(C.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
-      warningId: O,
-      senderId: x,
+      warningId: x,
+      senderId: O,
       warningType: h.pj.STRANGER_DANGER
     }), c.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
-  }, [t, O, x]);
+  }, [t, x, O]);
   let P = () => {
       (0, o.ZDy)(async () => {
         let {
@@ -103,8 +103,8 @@ function O(e) {
             transitionState: r,
             onClose: l,
             channelId: t,
-            warningId: O,
-            senderId: x,
+            warningId: x,
+            senderId: O,
             description: y.intl.string(y.t.DJMZX6),
             safetyTipRows: S.map((e, t) => (0, i.jsx)(u.q, {
               index: t,
@@ -113,9 +113,9 @@ function O(e) {
             }, t)),
             actionRows: (0, i.jsxs)(i.Fragment, {
               children: [(0, i.jsx)(v, {
-                senderId: x,
+                senderId: O,
                 channelId: t,
-                warningId: O
+                warningId: x
               }, "more-tips-button"), (0, i.jsx)(d.JZ, {
                 title: y.intl.string(y.t["5QYPO2"]),
                 description: y.intl.string(y.t.G08MKu),
@@ -155,13 +155,13 @@ function O(e) {
             }
             return e
           }({}, n), s = s = {
-            userId: x,
+            userId: O,
             confirmBlock: _(e),
             onCancel: () => {
               null == l || l(), (0, m.qc)({
                 channelId: t,
-                warningId: O,
-                senderId: x,
+                warningId: x,
+                senderId: O,
                 warningType: h.pj.STRANGER_DANGER,
                 cta: r
               })
@@ -181,8 +181,8 @@ function O(e) {
     };
   return (0, i.jsx)(g.Q, {
     channelId: t,
-    warningId: O,
-    senderId: x,
+    warningId: x,
+    senderId: O,
     warningType: h.pj.STRANGER_DANGER,
     header: y.intl.string(y.t.iOkDpM),
     description: y.intl.string(y.t.ISUbcM),
@@ -193,8 +193,8 @@ function O(e) {
       onClick: () => {
         P(), (0, m.qc)({
           channelId: t,
-          warningId: O,
-          senderId: x,
+          warningId: x,
+          senderId: O,
           warningType: h.pj.STRANGER_DANGER,
           cta: m.NM.OPEN_MORE_TIPS
         })

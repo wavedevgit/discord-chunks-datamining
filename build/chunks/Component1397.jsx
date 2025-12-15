@@ -118,8 +118,8 @@ class q extends Chunk473749.PureComponent {
       useReducedMotion: b,
       isStaff: C,
       guildJoinRequest: v,
-      showLinkedLobbyApplicationLoadingIndicator: O,
-      requiredLinkedLobbyApplication: x
+      showLinkedLobbyApplicationLoadingIndicator: x,
+      requiredLinkedLobbyApplication: O
     } = this.props, {
       shouldShowLurkerModeUpsellPopout: E,
       shouldShowLurkerModeSuccessPopout: j
@@ -312,7 +312,7 @@ class q extends Chunk473749.PureComponent {
         g.Z.ackUserGuildJoinRequest(e.id, t.joinRequestId)
       };
       return (0, i.jsx)(u.u_l, {
-        renderModal: t => (0, i.jsx)(x.Z, W(z({}, t), {
+        renderModal: t => (0, i.jsx)(O.Z, W(z({}, t), {
           onAccept: r,
           guildName: e.name
         })),
@@ -330,7 +330,7 @@ function K(e) {
   } = e, a = r.getGuildId(), s = (0, o.e7)([A.Z], () => A.Z.getGuild(a)), c = (0, o.e7)([w.Z], () => w.Z.getCheck(a)), u = r.type === U.d4z.GUILD_ANNOUNCEMENT && null != s && s.features.has(U.GuildFeatures.NEWS), d = (0, o.e7)([T.Z], () => u ? T.Z.getFollowerStatsForChannel(r.id) : null), p = (0, o.e7)([j.Z], () => j.Z.isLurking(a)), f = (0, o.e7)([R.default], () => R.default.getCurrentUser()), m = null != (t = null == f ? true : f.isStaff()) && t, g = (0, o.e7)([N.ZP], () => {
     var e, t;
     return null != f && null != (t = null == (e = N.ZP.getMember(a, f.id)) ? true : e.isPending) && t
-  }), b = !!(0, v.Dc)(s), C = (0, o.e7)([E.Z], () => E.Z.shouldShowPopout(a)), x = (0, o.e7)([M.Z], () => M.Z.can(U.Plq.SEND_MESSAGES, r)), S = (0, o.e7)([O.Z], () => O.Z.getRequest(a)), {
+  }), b = !!(0, v.Dc)(s), C = (0, o.e7)([E.Z], () => E.Z.shouldShowPopout(a)), O = (0, o.e7)([M.Z], () => M.Z.can(U.Plq.SEND_MESSAGES, r)), S = (0, o.e7)([x.Z], () => x.Z.getRequest(a)), {
     showLinkedLobbyApplicationLoadingIndicator: _,
     requiredLinkedLobbyApplication: P
   } = (0, D.Z)(r.linkedLobby), I = W(z({}, c), {
@@ -340,7 +340,7 @@ function K(e) {
     shouldShowLurkerModeSuccessPopout: C,
     showLurkerModeUpsellPopout: p && null != s && L.Uu(U.Plq.SEND_MESSAGES, r),
     theme: Z.Z.theme,
-    canSendMessages: x,
+    canSendMessages: O,
     channelFollowingUsersSeen: null != d ? d.usersSeenEver : null,
     hasVerificationGate: b,
     showMemberVerificationModal: g && b,

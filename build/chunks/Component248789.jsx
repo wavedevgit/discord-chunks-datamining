@@ -56,24 +56,24 @@ function C(e) {
     senderId: y
   } = e, v = r.useCallback(() => {
     (0, u.T)(t, [C])
-  }, [t, C]), O = (0, a.e7)([c.Z], () => c.Z.isBlocked(y)), x = r.useMemo(() => ({
+  }, [t, C]), x = (0, a.e7)([c.Z], () => c.Z.isBlocked(y)), O = r.useMemo(() => ({
     channelId: t,
     warningId: C,
     senderId: y,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2
   }), [t, C, y]);
   r.useEffect(() => {
-    (0, p.KQ)(b(g({}, x), {
+    (0, p.KQ)(b(g({}, O), {
       viewName: p.pb.SAFETY_WARNING_BANNER
     })), s.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
-  }, [x]);
+  }, [O]);
   let E = r.useCallback(e => {
-      (0, p.qc)(b(g({}, x), {
+      (0, p.qc)(b(g({}, O), {
         cta: e
       }))
-    }, [x]),
+    }, [O]),
     j = r.useCallback(() => {
       (0, o.ZDy)(async () => {
         let {
@@ -139,7 +139,7 @@ function C(e) {
       text: m.intl.string(m.t.Qyu4UK),
       variant: "primary",
       onClick: j
-    }, ...O ? [] : [{
+    }, ...x ? [] : [{
       text: m.intl.string(m.t["7q0bNY"]),
       variant: "secondary",
       onClick: P

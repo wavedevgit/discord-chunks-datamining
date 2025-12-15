@@ -64,7 +64,7 @@ function L(e) {
     channel: t,
     chatInputType: g,
     options: b,
-    onFileUpload: x,
+    onFileUpload: O,
     onClose: L,
     onSelect: D,
     draftType: k,
@@ -79,7 +79,7 @@ function L(e) {
   }), z = (0, l.e7)([v.Z], () => v.Z.isInProgress());
 
   function W() {
-    (0, O.R6)(t, true, "Plus Button")
+    (0, x.R6)(t, true, "Plus Button")
   }
 
   function q() {
@@ -197,7 +197,7 @@ function L(e) {
           return (0, i.jsx)(s.sNh, {
             id: "upload-file",
             label: r,
-            action: x
+            action: O
           }, "upload-file");
         case I.r.UPLOAD_TEXT_AS_FILE:
           if ("" === U) return null;

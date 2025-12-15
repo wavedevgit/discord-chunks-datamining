@@ -181,8 +181,8 @@ function ep(e) {
     canPublish: m,
     canReact: g,
     canConfigureJoin: b,
-    canReply: O,
-    canStartThread: x,
+    canReply: x,
+    canStartThread: O,
     canViewThread: T,
     canForward: N,
     isExpanded: A,
@@ -207,7 +207,7 @@ function ep(e) {
       author: d
     } = n, p = (0, u.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), m = (0, u.e7)([k.default], () => k.default.getId()), g = (0, L.$R)(t), b = (0, L.Gu)(t), {
       firstMessage: v
-    } = (0, u.e7)([C.Z], () => C.Z.getMessage(t.id), [t.id]), O = D.nc.useSetting(), x = D.Sb.useSetting(), j = (0, u.e7)([B.Z], () => null == t.guild_id || B.Z.canChatInGuild(t.guild_id), [t]), {
+    } = (0, u.e7)([C.Z], () => C.Z.getMessage(t.id), [t.id]), x = D.nc.useSetting(), O = D.Sb.useSetting(), j = (0, u.e7)([B.Z], () => null == t.guild_id || B.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: S,
       canAddNewReactions: _
     } = (0, u.cj)([H.Z], () => ({
@@ -223,7 +223,7 @@ function ep(e) {
       } = (0, Q.Z)({
         channel: t,
         canChat: j,
-        renderReactions: O,
+        renderReactions: x,
         canAddNewReactions: _,
         isLurking: T,
         isGuest: N,
@@ -255,8 +255,8 @@ function ep(e) {
       canViewThread: Z,
       canForward: er,
       canCopy: z.wS,
-      hasDeveloperMode: x,
-      canReact: !$ && O,
+      hasDeveloperMode: O,
+      canReact: !$ && x,
       canPublish: ee,
       canConfigureJoin: en,
       isExpanded: eo && !es && !i && !r && !l,
@@ -313,11 +313,11 @@ function ep(e) {
         label: n.pinned ? el.intl.string(el.t["Bse+F/"]) : el.intl.string(el.t.CvQ18w),
         icon: d.qQX,
         onClick: e => (0, ee.rY)(t, n, e)
-      }, "pin") : null, x && N ? (0, i.jsx)($.sF, {
+      }, "pin") : null, O && N ? (0, i.jsx)($.sF, {
         label: el.intl.string(el.t.rBIGBL),
         icon: d.or_,
         onClick: () => (0, ee.gK)(t, n)
-      }, "thread") : null, O && p ? (0, i.jsx)($.sF, {
+      }, "thread") : null, x && p ? (0, i.jsx)($.sF, {
         label: el.intl.string(el.t["5IEsGx"]),
         icon: d.n$P,
         onClick: e => (0, ee.HH)(t, n, e)
@@ -350,7 +350,7 @@ function ep(e) {
           })
         }
       }, "add-confetti-potion") : null]
-    }) : null, O && !p ? (0, i.jsx)($.sF, {
+    }) : null, x && !p ? (0, i.jsx)($.sF, {
       label: el.intl.string(el.t["5IEsGx"]),
       icon: d.n$P,
       onClick: e => (0, ee.HH)(t, n, e)
@@ -362,11 +362,11 @@ function ep(e) {
       label: el.intl.string(el.t.I3ltXO),
       icon: v.Z,
       onClick: () => (0, ee.ts)(t, n)
-    }, "forward") : null, x && !N ? (0, i.jsx)($.sF, {
+    }, "forward") : null, O && !N ? (0, i.jsx)($.sF, {
       label: el.intl.string(el.t.rBIGBL),
       icon: d.or_,
       onClick: () => (0, ee.gK)(t, n)
-    }, "thread") : null, !x && T ? (0, i.jsx)($.sF, {
+    }, "thread") : null, !O && T ? (0, i.jsx)($.sF, {
       label: el.intl.string(el.t["39d0Wj"]),
       icon: d.or_,
       onClick: () => (0, ee.qe)(t, n)
@@ -437,7 +437,7 @@ function ef(e) {
   let {
     channel: t,
     message: n
-  } = e, r = (0, u.e7)([O.Z], () => null != O.Z.getMessage(n.id), [n.id]), l = null == n.interaction || null != n.interactionData && (0, x.$s)(n.interactionData);
+  } = e, r = (0, u.e7)([x.Z], () => null != x.Z.getMessage(n.id), [n.id]), l = null == n.interaction || null != n.interactionData && (0, O.$s)(n.interactionData);
   return (0, i.jsxs)(i.Fragment, {
     children: [!r && l && (0, i.jsx)($.sF, {
       label: el.intl.string(el.t["5911Lb"]),

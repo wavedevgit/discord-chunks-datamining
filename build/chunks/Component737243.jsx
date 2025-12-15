@@ -24,38 +24,38 @@ let f = Chunk473749.memo(function(e) {
     interactionData: C,
     referencedUsernameProfile: y,
     referencedAvatarProfile: v,
-    setPopout: O
+    setPopout: x
   } = e, {
-    isInteractionUserBlocked: x,
+    isInteractionUserBlocked: O,
     isInteractionUserIgnored: E
   } = (0, l.cj)([c.Z], () => ({
     isInteractionUserBlocked: c.Z.isBlockedForMessage(f),
     isInteractionUserIgnored: c.Z.isIgnoredForMessage(f)
-  }), [f]), j = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == f ? true : f.messageReference)), S = (0, d.wq)(null == (t = f.interaction) ? true : t.user.id, h.id), _ = (0, d.Nk)(f.interaction, h, g, O), P = (0, d.NU)(b, O), I = (0, o.t0)(f), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, T = (0, d.wq)(Z, h.id), N = (0, d.JC)(Z, h, y, O), A = (0, d.rY)(v, O), w = (0, d.Xn)(C, O), M = r.useCallback(() => {
-    O({
+  }), [f]), j = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == f ? true : f.messageReference)), S = (0, d.wq)(null == (t = f.interaction) ? true : t.user.id, h.id), _ = (0, d.Nk)(f.interaction, h, g, x), P = (0, d.NU)(b, x), I = (0, o.t0)(f), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, T = (0, d.wq)(Z, h.id), N = (0, d.JC)(Z, h, y, x), A = (0, d.rY)(v, x), w = (0, d.Xn)(C, x), M = r.useCallback(() => {
+    x({
       interactionUsernameProfile: false,
       interactionAvatarProfile: false,
       interactionData: false,
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [O]), R = r.useCallback(() => (0, p.Z)({
+  }, [x]), R = r.useCallback(() => (0, p.Z)({
     message: f,
     channel: h,
     compact: m,
-    setPopout: O,
+    setPopout: x,
     referencedAvatarProfile: v,
     referencedUsernameProfile: y,
     replyReference: f.messageReference,
     replyMessage: j,
     isReplySpineClickable: false,
     showReplySpine: false
-  }), [h, m, f, v, j, y, O]);
+  }), [h, m, f, v, j, y, x]);
   return (0, i.jsx)(u.Z, {
     message: f,
     channel: h,
     compact: m,
-    isInteractionUserBlocked: x,
+    isInteractionUserBlocked: O,
     isInteractionUserIgnored: E,
     showAvatarPopout: b,
     showUsernamePopout: g,

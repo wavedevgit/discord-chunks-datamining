@@ -23,9 +23,9 @@ function m(e) {
     setStatus: l,
     isFavorited: m,
     onFavoriteClick: g
-  } = e, [b, C] = r.useState(false), y = (0, o.e7)([d.Z], () => d.Z.getFavoritedStatuses().length >= d.o), v = null != g, O = r.useCallback(e => {
+  } = e, [b, C] = r.useState(false), y = (0, o.e7)([d.Z], () => d.Z.getFavoritedStatuses().length >= d.o), v = null != g, x = r.useCallback(e => {
     e.stopPropagation(), null == g || g()
-  }, [g]), x = m ? u.r7p : u.vxU;
+  }, [g]), O = m ? u.r7p : u.vxU;
   return (0, i.jsxs)(u.P3F, {
     onClick: l,
     onMouseEnter: () => {
@@ -43,8 +43,8 @@ function m(e) {
       text: y && !m ? p.intl.string(p.t.YSDH9n) : true,
       children: (0, i.jsx)(u.P3F, {
         className: a()(f.centerAlign, f.favoriteIcon),
-        onClick: O,
-        children: (0, i.jsx)(x, {
+        onClick: x,
+        children: (0, i.jsx)(O, {
           className: f.closeIcon,
           color: m ? s.Z.colors.ICON_FEEDBACK_WARNING : "currentColor"
         })

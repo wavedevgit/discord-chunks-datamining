@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 641861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => O
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -24,7 +24,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk943856 = require("./943856.js");
 
-function x(e) {
+function O(e) {
   let {
     recipientUser: t,
     voiceChannel: n
@@ -37,7 +37,7 @@ function x(e) {
       userIsInCall: null != e,
       isUserRinging: null != e && e.type === y.fO.USER && e.ringing
     }
-  }), x = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), j = null != x ? (0, g.EB)(x, 32, true) : null, S = !s || u && !m;
+  }), O = (0, o.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), j = null != O ? (0, g.EB)(O, 32, true) : null, S = !s || u && !m;
   return ((0, d.Z)({
     type: a.ImpressionTypes.PAGE,
     name: a.ImpressionNames.RING_TO_GUILD_VC_BANNER_SHOWN,
@@ -48,27 +48,27 @@ function x(e) {
   }, {
     disableTrack: S
   }, [t.id]), S) ? null : (0, i.jsxs)("div", {
-    className: l()(O.themed, O.chatHeaderBar),
+    className: l()(x.themed, x.chatHeaderBar),
     children: [(0, i.jsxs)("div", {
-      className: O.chatHeaderBarInfo,
+      className: x.chatHeaderBarInfo,
       children: [(0, i.jsx)(h.ZP, {
-        className: O.mask,
+        className: x.mask,
         mask: h.QS.SQUIRCLE,
         width: 24,
         height: 24,
         children: null == j ? (0, i.jsx)("div", {
-          className: l()(O.guildIcon, O.guildIconWithoutImage),
+          className: l()(x.guildIcon, x.guildIconWithoutImage),
           children: (0, i.jsx)("div", {
-            className: O.guildAcronym,
-            children: null != x ? (0, g.gM)(x) : null
+            className: x.guildAcronym,
+            children: null != O ? (0, g.gM)(O) : null
           })
         }) : (0, i.jsx)("img", {
-          alt: null == x ? true : x.name,
+          alt: null == O ? true : O.name,
           src: j,
-          className: O.guildIcon
+          className: x.guildIcon
         })
       }), (0, i.jsx)(c.Text, {
-        className: O.chatHeaderBarText,
+        className: x.chatHeaderBarText,
         variant: "text-md/medium",
         color: "text-default",
         children: v.intl.format(v.t.f2tNxH, {

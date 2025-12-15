@@ -44,7 +44,7 @@ function A(e) {
       fetchState: g,
       voiceBannerCollection: v
     } = function() {
-      let e = (0, c.e7)([x.default], () => x.default.onlyShowPreviewAppCollections) ? a.E.PREVIEW : a.E.ACTIVE;
+      let e = (0, c.e7)([O.default], () => O.default.onlyShowPreviewAppCollections) ? a.E.PREVIEW : a.E.ACTIVE;
       return r.useEffect(() => {
         (0, b.XK)({
           surface: T,
@@ -61,7 +61,7 @@ function A(e) {
         }))[0]
       }
     }(),
-    O = g === C.M.FETCHING,
+    x = g === C.M.FETCHING,
     E = r.useMemo(() => {
       let e = null == v ? true : v.application_directory_collection_items[0];
       return null == e ? null : e.type === s.C.APPLICATION_BANNER ? e : null
@@ -76,7 +76,7 @@ function A(e) {
       sectionOverallPosition: 0,
       promotionalLabel: null != E ? (0, f.dF)(E.application) : true
     });
-  return null == E || null == v || O ? null : (null != E.id && null != E.image_hash && (n = (0, y.$_)({
+  return null == E || null == v || x ? null : (null != E.id && null != E.image_hash && (n = (0, y.$_)({
     itemId: E.id,
     hash: E.image_hash,
     containerWidth: 584
@@ -129,7 +129,7 @@ let w = Chunk473749.forwardRef(function(e, t) {
   }, [o, a]);
   let y = (0, v.bp)(),
     {
-      analyticsLocations: x,
+      analyticsLocations: O,
       newestAnalyticsLocation: T
     } = (0, p.ZP)(d.Z.ACTIVITIES_MINI_SHELF),
     w = y === P.IlC.POPOUT,
@@ -159,8 +159,8 @@ let w = Chunk473749.forwardRef(function(e, t) {
       })
     }, [s, l]);
   return (0, i.jsx)(p.Gt, {
-    value: x,
-    children: (0, i.jsx)(O.Z, {
+    value: O,
+    children: (0, i.jsx)(x.Z, {
       children: (0, i.jsxs)(u.VqE, {
         ref: t,
         "aria-labelledby": N,

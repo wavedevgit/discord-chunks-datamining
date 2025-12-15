@@ -21,17 +21,17 @@ var Chunk399606 = require("./399606.js"),
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = i
+      }) : e[t] = r
     })
   }
   return e
@@ -41,8 +41,8 @@ function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -51,26 +51,26 @@ function v(e, t) {
 }
 
 function Z(e) {
-  let t = (0, r.e7)([o.Z], () => o.Z.getChannelId() === e.id),
+  let t = (0, i.e7)([o.Z], () => o.Z.getChannelId() === e.id),
     Z = (0, s.Z)(),
     h = (null == Z ? true : Z.channelId) === e.id,
-    y = (0, a.V)(e) && !e.isPrivate(),
-    _ = (0, a.Z)(e),
-    b = !(0, r.e7)([c.Z], () => c.Z.isInChannel(e.id)) && _ || y,
+    b = (0, a.V)(e) && !e.isPrivate(),
+    y = (0, a.Z)(e),
+    _ = !(0, i.e7)([c.Z], () => c.Z.isInChannel(e.id)) && y || b,
     N = (0, f.Z)();
-  return h || 0 !== N.length ? h ? (0, i.jsx)(l.sNh, {
+  return h || 0 !== N.length ? h ? (0, r.jsx)(l.sNh, {
     label: O.intl.string(O.t.PlwgdU),
     id: "handoff",
     action: () => {
       (0, d.F)(Z)
     },
     icon: (0, E.Z)(true),
-    disabled: b
-  }) : N.map(r => {
+    disabled: _
+  }) : N.map(i => {
     var a, o;
-    return (0, i.jsx)(l.sNh, {
-      id: "transfer-".concat(r.type, "-").concat(r.id),
-      label: (a = r.type, o = t, a === g.ABu.XBOX ? o ? O.intl.string(O.t["qVE/VF"]) : O.intl.string(O.t.E8euSk) : a === g.ABu.PLAYSTATION ? o ? O.intl.string(O.t.vzfxmY) : O.intl.string(O.t.QxEYDj) : a === g.ABu.PLAYSTATION_STAGING ? o ? O.intl.string(O.t.BDiXtV) : O.intl.string(O.t["bhdB9+"]) : true),
+    return (0, r.jsx)(l.sNh, {
+      id: "transfer-".concat(i.type, "-").concat(i.id),
+      label: (a = i.type, o = t, a === g.ABu.XBOX ? o ? O.intl.string(O.t["qVE/VF"]) : O.intl.string(O.t.E8euSk) : a === g.ABu.PLAYSTATION ? o ? O.intl.string(O.t.vzfxmY) : O.intl.string(O.t.QxEYDj) : a === g.ABu.PLAYSTATION_STAGING ? o ? O.intl.string(O.t.BDiXtV) : O.intl.string(O.t["bhdB9+"]) : true),
       action: () => (t => {
         if (!t.twoWayLink || t.revoked) return void(0, u.Z)({
           platformType: t.type,
@@ -80,21 +80,21 @@ function Z(e) {
           let {
             default: t
           } = await Promise.all([n.e("8753"), n.e("45929")]).then(n.bind(n, 200623));
-          return n => (0, i.jsx)(t, v(p({}, n), {
+          return n => (0, r.jsx)(t, v(p({}, n), {
             channel: e
           }))
         }) : (t.type === g.ABu.PLAYSTATION || t.type === g.ABu.PLAYSTATION_STAGING) && (0, l.ZDy)(async () => {
           let {
-            default: r
+            default: i
           } = await n.e("638").then(n.bind(n, 543974));
-          return n => (0, i.jsx)(r, v(p({}, n), {
+          return n => (0, r.jsx)(i, v(p({}, n), {
             platform: t.type,
             channel: e
           }))
         })
-      })(r),
-      icon: (0, E.Z)(r.type),
-      disabled: b
-    }, r.id)
+      })(i),
+      icon: (0, E.Z)(i.type),
+      disabled: _
+    }, i.id)
   }) : null
 }

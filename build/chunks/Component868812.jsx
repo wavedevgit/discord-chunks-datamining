@@ -27,9 +27,9 @@ function h(e) {
     isHovered: C,
     setIsHovered: y,
     onMouseEnter: v,
-    onMouseLeave: O
+    onMouseLeave: x
   } = (0, c.Z)(200, 300), {
-    Component: x,
+    Component: O,
     play: E,
     events: {
       onMouseEnter: j,
@@ -38,10 +38,10 @@ function h(e) {
   } = (0, l.$)(), _ = r.useCallback(e => {
     "focus" !== e.type && (v(), j())
   }, [v, j]), P = r.useCallback(() => {
-    null == h && (O(), S())
-  }, [O, S, h]), I = r.useCallback(() => {
-    (0, s.v)(g, s.d.GIFTING), h === p.D.GIFTING ? (null == m || m(true), O()) : (null != h ? (E(), v()) : E(), null == m || m(p.D.GIFTING))
-  }, [v, O, g, E, m, h]);
+    null == h && (x(), S())
+  }, [x, S, h]), I = r.useCallback(() => {
+    (0, s.v)(g, s.d.GIFTING), h === p.D.GIFTING ? (null == m || m(true), x()) : (null != h ? (E(), v()) : E(), null == m || m(p.D.GIFTING))
+  }, [v, x, g, E, m, h]);
   return (0, i.jsx)(a.y, {
     targetElementRef: b,
     shouldShow: C && (h === p.D.GIFTING || null == h) || h === p.D.GIFTING,
@@ -62,7 +62,7 @@ function h(e) {
         closePopout: n,
         isHovered: C,
         onMouseEnter: v,
-        onMouseLeave: O
+        onMouseLeave: x
       })
     },
     children: () => (0, i.jsx)(d.d, {
@@ -70,7 +70,7 @@ function h(e) {
       isTrayButton: true,
       themeable: n,
       "aria-label": f.intl.string(f.t.PEjaCx),
-      iconComponent: x,
+      iconComponent: O,
       onClick: I,
       onMouseEnter: _,
       onMouseLeave: P,

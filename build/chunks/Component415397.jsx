@@ -81,7 +81,7 @@ function _(e) {
         return (0, i.jsx)(r, (l = S({}, n), a = a = {
           guild: e,
           channel: t,
-          source: O.t4x.VOICE_INVITE_SUGGESTIONS
+          source: x.t4x.VOICE_INVITE_SUGGESTIONS
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -97,7 +97,7 @@ function _(e) {
   }, [t, p]);
   return (0, i.jsx)("div", {
     ref: g,
-    "aria-label": x.intl.string(x.t.o53CL2),
+    "aria-label": O.intl.string(O.t.o53CL2),
     className: a()(j.popover, E.popover),
     children: (0, i.jsx)("div", {
       className: E.inner,
@@ -121,7 +121,7 @@ function _(e) {
             variant: "text-md/medium",
             className: E.name,
             lineClamp: 1,
-            children: x.intl.string(x.t.NOP3Ry)
+            children: O.intl.string(O.t.NOP3Ry)
           })]
         })]
       })
@@ -143,7 +143,7 @@ function P(e) {
       inviteKey: l,
       location: "VoiceInviteSuggestionsPopover",
       inviteAnalyticsMetadata: {
-        source: O.t4x.VOICE_INVITE_SUGGESTIONS
+        source: x.t4x.VOICE_INVITE_SUGGESTIONS
       }
     }, e => {
       h(e ? "success" : null)
@@ -160,7 +160,7 @@ function P(e) {
   });
   if (null == s) return null;
   let I = y.ZP.getName(n),
-    Z = x.intl.string(x.t.jYnGPG);
+    Z = O.intl.string(O.t.jYnGPG);
   return (0, i.jsxs)(d.P3F, {
     innerRef: o,
     tag: "li",
@@ -192,7 +192,7 @@ function P(e) {
       color: "text-muted",
       className: E.status,
       lineClamp: 1,
-      children: x.intl.string(x.t["8BEiNn"])
+      children: O.intl.string(O.t["8BEiNn"])
     }), null == f && (0, i.jsx)("div", {
       className: E.userIconContainer,
       children: (0, i.jsx)(d.oLu, {

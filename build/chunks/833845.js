@@ -1,4 +1,4 @@
-/** Chunk was on 40184 **/
+/** Chunk was on 51235 **/
 /** chunk id: 833845, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -9,8 +9,8 @@ var Chunk442837 = require("./442837.js"),
 
 function a(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return (0, i.cj)([l.ZP, r.default], () => {
-    let n = r.default.getId();
+  return (0, r.cj)([l.ZP, i.default], () => {
+    let n = i.default.getId();
     return l.ZP.getPermissionsForUser(n, e, t)
   }, [e, t])
 }

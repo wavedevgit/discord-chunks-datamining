@@ -151,8 +151,8 @@ let F = (0, Chunk888651.$)(function(e) {
     hangStatusActivity: eb,
     requestToStreamActivity: eC,
     showHangStatus: ey
-  } = e, ev = r.useRef(null), [eO, ex] = r.useState(false), eE = r.useRef(null), [ej, eS] = r.useState(false), [e_, eP] = r.useState(false), [eI, eZ] = r.useState(false), [eT, eN] = r.useState(false), eA = e_ || eT || eI, ew = ej || eA, eM = (null == eC ? true : eC.session_id) != null, eR = () => {
-    ex(!eO)
+  } = e, ev = r.useRef(null), [ex, eO] = r.useState(false), eE = r.useRef(null), [ej, eS] = r.useState(false), [e_, eP] = r.useState(false), [eI, eZ] = r.useState(false), [eT, eN] = r.useState(false), eA = e_ || eT || eI, ew = ej || eA, eM = (null == eC ? true : eC.session_id) != null, eR = () => {
+    eO(!ex)
   }, eL = (e, t) => {
     let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
     null != t && n.has(t) && (eI && eZ(false), e_ && eP(false)), eD()
@@ -175,7 +175,7 @@ let F = (0, Chunk888651.$)(function(e) {
         channelId: U.id,
         guildId: U.guild_id
       };
-      I.default.getId() !== f.id && d.default.selectVoiceChannel(U.id), ei ? ((0, O.Z)(e), c.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, p.iV)(e), null == eo || eo(f.id)
+      I.default.getId() !== f.id && d.default.selectVoiceChannel(U.id), ei ? ((0, x.Z)(e), c.Z.selectParticipant(e.channelId, (0, y.V9)(e))) : (0, p.iV)(e), null == eo || eo(f.id)
     },
     eF = e => {
       (0, u.jW)(e, async () => {
@@ -207,7 +207,7 @@ let F = (0, Chunk888651.$)(function(e) {
       userId: f.id,
       channel: U
     }),
-    eG = () => (0, h.dl)() && (0, h.zd)(U.id) ? null : (0, i.jsx)(x.Z, {
+    eG = () => (0, h.dl)() && (0, h.zd)(U.id) ? null : (0, i.jsx)(O.Z, {
       user: f,
       channel: U,
       onWatch: eV,
@@ -218,18 +218,18 @@ let F = (0, Chunk888651.$)(function(e) {
       className: L.draggable,
       "data-dnd-name": U.name,
       onMouseEnter: ep ? true : () => {
-        (en || ey || eM) && !eO && (null == ea || ea(f.id))
+        (en || ey || eM) && !ex && (null == ea || ea(f.id))
       },
       onMouseLeave: ep ? true : eD,
       children: (0, i.jsx)(_.Z, {
-        clickTrap: (null == f ? true : f.id) === (null == (t = N.default.getCurrentUser()) ? true : t.id) && eO,
+        clickTrap: (null == f ? true : f.id) === (null == (t = N.default.getCurrentUser()) ? true : t.id) && ex,
         targetElementRef: ev,
         user: f,
         guildId: U.guild_id,
         channelId: U.id,
         newAnalyticsLocations: [m.Z.VOICE_USER],
-        shouldShow: eO,
-        onRequestClose: () => ex(false),
+        shouldShow: ex,
+        onRequestClose: () => eO(false),
         children: e => (e => {
           let t = w.al.has(null != eu ? eu : ""),
             n = {
@@ -260,7 +260,7 @@ let F = (0, Chunk888651.$)(function(e) {
                 [L.userAvatar]: true
               }),
               disabled: ep && !t,
-              selected: eO,
+              selected: ex,
               onClick: t ? true : eR,
               onDoubleClick: eV,
               onContextMenu: eF,
@@ -285,7 +285,7 @@ let F = (0, Chunk888651.$)(function(e) {
             targetElementRef: ev,
             position: "right",
             renderPopout: c,
-            shouldShow: (es || ey && eA) && !eO,
+            shouldShow: (es || ey && eA) && !ex,
             onRequestClose: eL,
             align: ey && ew && !em ? "center" : true,
             spacing: ey && ew ? 8 : 0,

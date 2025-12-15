@@ -92,7 +92,7 @@ function R(e) {
   }, "current-speaker")), U.push((0, i.jsx)(g.Z, {
     className: w.button,
     channelId: s
-  }, "clips-enabled-indicator")), (null == v ? true : v.type) === N.fO.STREAM && (U.push((0, i.jsx)(O.Z, {
+  }, "clips-enabled-indicator")), (null == v ? true : v.type) === N.fO.STREAM && (U.push((0, i.jsx)(x.Z, {
     className: w.button,
     participant: v
   }, "warning")), U.push((0, i.jsx)(b.Z, {
@@ -101,7 +101,7 @@ function R(e) {
     participant: v,
     showQuality: true,
     premiumIndicator: false
-  }, "live-indicator"))), (null == v ? true : v.type) === N.fO.USER && U.push((0, i.jsx)(x.Z, {
+  }, "live-indicator"))), (null == v ? true : v.type) === N.fO.USER && U.push((0, i.jsx)(O.Z, {
     className: w.button,
     userId: v.id
   }, "video-warning")), u && !R && U.push((0, i.jsx)(d.yRy, {

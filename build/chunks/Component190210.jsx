@@ -133,8 +133,8 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     setEditorRef: eC,
     autoCompletePosition: ey,
     disableThemedBackground: ev = false,
-    emojiPickerCloseOnModalOuterClick: eO,
-    parentModalKey: ex
+    emojiPickerCloseOnModalOuterClick: ex,
+    parentModalKey: eO
   } = e, eE = E.Z.useField("channelDrafts")[L.id], ej = null != (l = null == eE ? true : eE.title) ? l : "", eS = null == eE ? true : eE.heroFile, e_ = null == (o = null == eE ? true : eE.publish) || o, eP = null == (u = null == eE ? true : eE.createThread) || u;
   s()(null != k, "chat input type must be set");
   let {
@@ -143,11 +143,11 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
   null == eC || eC(eN.current);
   let {
     activeCommand: eM
-  } = (0, d.cj)([O.Z], () => {
+  } = (0, d.cj)([x.Z], () => {
     var e, t;
     return {
-      activeCommand: (null == (e = k.commands) ? true : e.enabled) ? O.Z.getActiveCommand(L.id) : null,
-      activeCommandSection: (null == (t = k.commands) ? true : t.enabled) ? O.Z.getActiveCommandSection(L.id) : null
+      activeCommand: (null == (e = k.commands) ? true : e.enabled) ? x.Z.getActiveCommand(L.id) : null,
+      activeCommandSection: (null == (t = k.commands) ? true : t.enabled) ? x.Z.getActiveCommandSection(L.id) : null
     }
   }), {
     isLurking: eR,
@@ -464,7 +464,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
               })
             })
           })]
-        }), (0, i.jsx)(x.Z, {
+        }), (0, i.jsx)(O.Z, {
           targetRef: eZ,
           ref: eJ,
           channel: L,
@@ -493,8 +493,8 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
         onSelectEmoji: tn,
         onSelectSticker: tr,
         channel: L,
-        closeOnModalOuterClick: eO,
-        parentModalKey: ex,
+        closeOnModalOuterClick: ex,
+        parentModalKey: eO,
         position: "top",
         align: "right",
         positionLayerClassName: Q.expressionPickerPositionLayer

@@ -146,7 +146,7 @@ function H(e) {
         }),
         children: [!es && !J && null != ei && (0, i.jsx)("div", {
           className: V.reactions,
-          children: (0, i.jsx)(x.le, {
+          children: (0, i.jsx)(O.le, {
             message: K,
             readOnly: false,
             useChatFontScaling: false,
@@ -162,7 +162,7 @@ function H(e) {
             me_burst: false,
             emojiSize: "reaction"
           })
-        }), (0, i.jsx)(O.Z, {
+        }), (0, i.jsx)(x.Z, {
           message: K,
           channel: q,
           disableReactionCreates: true,

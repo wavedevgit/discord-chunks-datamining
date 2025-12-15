@@ -129,9 +129,9 @@ function et(e) {
     eb = (0, s.ts)(U),
     eC = (0, l.e7)([S.Z], () => S.Z.shouldShowTopicsBar() && !ed),
     ey = (0, E.P)(U.id),
-    ev = (0, O.z)(U.id, X.zr),
-    eO = (0, d.k)(U.id),
-    ex = (0, D.Z)(),
+    ev = (0, x.z)(U.id, X.zr),
+    ex = (0, d.k)(U.id),
+    eO = (0, D.Z)(),
     eE = function(e, t) {
       if (e.isDM() && null != t)
         if (t.type === v.pj.STRANGER_DANGER) return (0, i.jsx)(j.M, {
@@ -144,13 +144,13 @@ function et(e) {
         warningId: t.id,
         senderId: e.getRecipientId()
       });
-      else return (0, i.jsx)(x.Y, {
+      else return (0, i.jsx)(O.Y, {
         channelId: e.id,
         warningId: t.id,
         senderId: e.getRecipientId()
       });
       return null
-    }(U, null != (n = null != ey ? ey : ev) ? n : eO),
+    }(U, null != (n = null != ey ? ey : ev) ? n : ex),
     ej = U.isForumPost() && !eg ? (0, i.jsx)(m.Z, {
       postId: U.id
     }) : null,
@@ -246,7 +246,7 @@ function et(e) {
     let e, t, n = Z.ZP.getOldestUnreadTimestamp(U.id),
       l = 0 !== n ? n : M.default.extractTimestamp(U.id),
       o = (0, A.KC)(new Date, new Date(l));
-    if (Z.ZP.isEstimated(U.id) ? (e = o ? J.t.wvtbbG : J.t.tHqbtg, t = J.t.vaPWFe) : (e = o ? J.t["BctFH/"] : J.t["3wXb9P"], t = J.t["4H8ldG"]), eb && (0, s.tW)(U) && ex.includes(q.E.SUMMARIES)) {
+    if (Z.ZP.isEstimated(U.id) ? (e = o ? J.t.wvtbbG : J.t.tHqbtg, t = J.t.vaPWFe) : (e = o ? J.t["BctFH/"] : J.t["3wXb9P"], t = J.t["4H8ldG"]), eb && (0, s.tW)(U) && eO.includes(q.E.SUMMARIES)) {
       let n = Z.ZP.ackMessageId(U.id),
         o = (0, _.q)(U.id, Z.ZP.getOldestUnreadMessageId(U.id));
       if ((0, u.yw)(Y.rMx.SUMMARIES_UNREAD_BAR_VIEWED, {
@@ -334,7 +334,7 @@ function et(e) {
           })
         }
       }
-    } else ex.includes(q.E.NEW_MESSAGES) && (r = (0, i.jsx)(H.LE, {
+    } else eO.includes(q.E.NEW_MESSAGES) && (r = (0, i.jsx)(H.LE, {
       content: J.intl.format(e, {
         count: en,
         timestamp: l
@@ -342,7 +342,7 @@ function et(e) {
       channelId: U.id
     }))
   }
-  if (null == r && (0, s.Lp)(U) && eC && ex.includes(q.E.SUMMARIES) && (r = (0, i.jsx)(H.BO, {
+  if (null == r && (0, s.Lp)(U) && eC && eO.includes(q.E.SUMMARIES) && (r = (0, i.jsx)(H.BO, {
       channel: U,
       scrollManager: eo
     })), et.error) f = (0, i.jsx)(H.Rp, {

@@ -80,7 +80,7 @@ let y = Chunk473749.memo(function(e) {
   r.useEffect(() => {
     f && y(true)
   }, [f]);
-  let O = n.hasUnread ? n.content.length - 1 : n.content.length;
+  let x = n.hasUnread ? n.content.length - 1 : n.content.length;
   return (0, i.jsxs)("div", {
     className: a()({
       [b.groupStart]: true,
@@ -90,7 +90,7 @@ let y = Chunk473749.memo(function(e) {
       isUnread: true,
       id: s
     }, "divider") : null, (0, i.jsx)(C, {
-      count: O,
+      count: x,
       compact: o,
       expanded: m,
       onClick: v,

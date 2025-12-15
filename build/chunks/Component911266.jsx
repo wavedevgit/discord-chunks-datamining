@@ -24,12 +24,12 @@ let y = e => {
     message: t,
     hovering: n,
     compact: l
-  } = e, y = r.useRef((0, o.random)(false, 24)).current, v = (0, s.e7)([f.Z], () => f.Z.confettiMode), O = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), x = r.useRef(0), E = r.useRef(null), j = r.useRef(null), [S, _] = r.useState(false), P = r.useMemo(() => !n && !v && !O, [v, n, O]);
+  } = e, y = r.useRef((0, o.random)(false, 24)).current, v = (0, s.e7)([f.Z], () => f.Z.confettiMode), x = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), O = r.useRef(0), E = r.useRef(null), j = r.useRef(null), [S, _] = r.useState(false), P = r.useMemo(() => !n && !v && !x, [v, n, x]);
   if (r.useEffect(() => {
       n || _(false), n && v && _(true)
     }, [n, v]), r.useEffect(() => {
-      !O && (S || (false === n && (x.current = 0, null != E.current && (clearTimeout(E.current), E.current = null)), x.current = Date.now(), E.current = setTimeout(() => {
-        let e = x.current;
+      !x && (S || (false === n && (O.current = 0, null != E.current && (clearTimeout(E.current), E.current = null)), O.current = Date.now(), E.current = setTimeout(() => {
+        let e = O.current;
         if (0 !== e && false !== n && !(Date.now() - e < 1e3) && !v) {
           if (null != j.current) {
             var i;
@@ -52,7 +52,7 @@ let y = e => {
           })
         }
       }, 1100)))
-    }, [v, S, n, t, O]), !(0, m.p7)("Message Confetti Peak") || !(0, b.Uw)(t)) return null;
+    }, [v, S, n, t, x]), !(0, m.p7)("Message Confetti Peak") || !(0, b.Uw)(t)) return null;
   let I = (0, b.Eq)(t);
   if (null == I) return null;
   if (l) return (0, i.jsx)("span", {

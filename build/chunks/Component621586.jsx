@@ -64,27 +64,27 @@ function j(e) {
       "aria-labelledby": E,
       modal: false,
       children: (0, i.jsxs)("div", {
-        className: x.container,
+        className: O.container,
         onMouseEnter: j,
         onMouseLeave: S,
         children: [(0, i.jsx)(a.X6q, {
-          className: x.title,
+          className: O.title,
           variant: "text-lg/bold",
           color: "text-strong",
-          children: O.intl.string(O.t.xLP3bi)
+          children: x.intl.string(x.t.xLP3bi)
         }), (0, i.jsx)(a.xvT, {
-          className: x.subtitle,
+          className: O.subtitle,
           variant: "text-sm/medium",
           color: "text-subtle",
-          children: O.intl.format(O.t["+SqhBF"], {
-            applicationName: null != (t = null == P ? true : P.name) ? t : O.intl.string(O.t["/1hhto"])
+          children: x.intl.format(x.t["+SqhBF"], {
+            applicationName: null != (t = null == P ? true : P.name) ? t : x.intl.string(x.t["/1hhto"])
           })
         }), (0, i.jsx)("div", {
-          className: x.wishlistItemsContainer,
+          className: O.wishlistItemsContainer,
           children: Z || 0 === T.length ? (0, i.jsx)(a.$jN, {
-            className: x.loading
+            className: O.loading
           }) : T.map(e => (0, i.jsx)(s.i_, {
-            body: O.intl.string(O.t["4yiU7x"]),
+            body: x.intl.string(x.t["4yiU7x"]),
             asset: I,
             assetSize: p.EU,
             position: "top",

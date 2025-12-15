@@ -27,8 +27,8 @@ function y(e) {
     showProfile: n = false,
     showTrailingDivider: y = false
   } = e, v = p.default.cast(t), {
-    joinRequest: O,
-    isModmin: x,
+    joinRequest: x,
+    isModmin: O,
     guildId: E,
     maxMembers: j
   } = (0, r.cj)([f.Z, u.Z, d.Z], () => {
@@ -44,8 +44,8 @@ function y(e) {
     approveRequest: P,
     rejectRequest: I,
     submitting: Z
-  } = (0, m.s)(null == O ? true : O.guildId, null == O ? true : O.userId, null == O ? true : O.joinRequestId);
-  return null != O && O.applicationStatus === h.wB.SUBMITTED && x ? (0, i.jsxs)("div", {
+  } = (0, m.s)(null == x ? true : x.guildId, null == x ? true : x.userId, null == x ? true : x.joinRequestId);
+  return null != x && x.applicationStatus === h.wB.SUBMITTED && O ? (0, i.jsxs)("div", {
     className: C.buttons,
     children: [(0, i.jsx)(l.u, {
       text: b.intl.string(b.t.cdPGbE),
@@ -63,12 +63,12 @@ function y(e) {
       size: "sm",
       text: b.intl.string(b.t.hDtbsz),
       onClick: I,
-      disabled: Z || O.applicationStatus !== h.wB.SUBMITTED
+      disabled: Z || x.applicationStatus !== h.wB.SUBMITTED
     }), n && (0, i.jsx)(a.Button, {
       onClick: () => {
         (0, s.openUserProfileModal)({
-          userId: O.userId,
-          guildId: O.guildId
+          userId: x.userId,
+          guildId: x.guildId
         })
       },
       variant: "secondary",

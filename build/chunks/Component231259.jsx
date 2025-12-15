@@ -21,22 +21,22 @@ function g(t) {
     guild: g,
     channel: f
   } = t, b = null != n, {
-    canManageGuildEvent: p
-  } = (0, o.XJ)(null != f ? f : g), [v, E] = (0, r.Wu)([u.ZP], () => [u.ZP.isActive(e), u.ZP.getGuildScheduledEvent(e)]), y = (0, a.Z)(n, null == E ? true : E.id), O = null != E && p(E), P = (null == E ? true : E.recurrence_rule) != null && !b, Z = (0, s.zI)(e, n);
-  if (!O || v && !P && !b || b && !b || null == E || null == Z) return null;
+    canManageGuildEvent: v
+  } = (0, u.XJ)(null != f ? f : g), [E, p] = (0, r.Wu)([o.ZP], () => [o.ZP.isActive(e), o.ZP.getGuildScheduledEvent(e)]), Z = (0, a.Z)(n, null == p ? true : p.id), h = null != p && v(p), y = (null == p ? true : p.recurrence_rule) != null && !b, P = (0, s.zI)(e, n);
+  if (!h || E && !y && !b || b && !b || null == p || null == P) return null;
   let {
-    startTime: h
-  } = Z;
-  if (v && b) {
-    var j;
-    if (null == h) return null;
-    let t = new Date(null != (j = null == y ? true : y.scheduled_start_time) ? j : h);
+    startTime: O
+  } = P;
+  if (E && b) {
+    var m;
+    if (null == O) return null;
+    let t = new Date(null != (m = null == Z ? true : Z.scheduled_start_time) ? m : O);
     if (new Date > t) return null
   }
-  let m = t => {
+  let j = t => {
     (0, i.h7j)(r => {
-      var o, u;
-      return (0, l.jsxs)(i.VoidConfirmModal, (o = function(t) {
+      var u, o;
+      return (0, l.jsxs)(i.VoidConfirmModal, (u = function(t) {
         for (var e = 1; e < arguments.length; e++) {
           var n = null != arguments[e] ? arguments[e] : {},
             l = Object.keys(n);
@@ -53,46 +53,46 @@ function g(t) {
           })
         }
         return t
-      }({}, r), u = u = {
+      }({}, r), o = o = {
         header: d.intl.string(d.t.R5bpin),
-        confirmText: P || t ? d.intl.string(d.t["8ZsNv5"]) : d.intl.string(d.t.B9sJLX),
+        confirmText: y || t ? d.intl.string(d.t["8ZsNv5"]) : d.intl.string(d.t.B9sJLX),
         cancelText: d.intl.string(d.t.oEAioF),
-        onConfirm: () => b && !t ? c.Z.deleteRecurrence(g.id, e, n, y) : c.Z.deleteGuildEvent(e, g.id),
+        onConfirm: () => b && !t ? c.Z.deleteRecurrence(g.id, e, n, Z) : c.Z.deleteGuildEvent(e, g.id),
         children: [(0, l.jsx)(i.Text, {
           variant: "text-md/normal",
           children: d.intl.string(d.t.v2GWNQ)
-        }), (0, l.jsx)("br", {}), (P || t) && (0, l.jsx)(i.Text, {
+        }), (0, l.jsx)("br", {}), (y || t) && (0, l.jsx)(i.Text, {
           variant: "text-md/normal",
           children: d.intl.format(d.t.ZcpcyO, {})
         })]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(u)) : (function(t, e) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(o)) : (function(t, e) {
         var n = Object.keys(t);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(t);
           n.push.apply(n, l)
         }
         return n
-      })(Object(u)).forEach(function(t) {
-        Object.defineProperty(o, t, Object.getOwnPropertyDescriptor(u, t))
-      }), o))
+      })(Object(o)).forEach(function(t) {
+        Object.defineProperty(u, t, Object.getOwnPropertyDescriptor(o, t))
+      }), u))
     })
   };
   return (0, l.jsx)(i.sNh, {
     id: d.intl.string(d.t.B9sJLX),
     label: d.intl.string(d.t.B9sJLX),
-    action: b ? true : () => m(),
+    action: b ? true : () => j(),
     color: "danger",
     children: b && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(i.sNh, {
         id: d.intl.string(d.t.tqClly),
         label: d.intl.string(d.t.tqClly),
-        action: () => m(),
-        disabled: null == y ? true : y.is_canceled,
+        action: () => j(),
+        disabled: null == Z ? true : Z.is_canceled,
         color: "danger"
       }), (0, l.jsx)(i.sNh, {
         id: d.intl.string(d.t.wr33rW),
         label: d.intl.string(d.t.wr33rW),
-        action: () => m(true),
+        action: () => j(true),
         color: "danger"
       })]
     })

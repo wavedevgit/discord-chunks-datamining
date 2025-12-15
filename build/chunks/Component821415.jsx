@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk67103 = require("./67103.js");
 
-function x(e) {
+function O(e) {
   let t, {
       activity: n,
       channel: l,
@@ -33,7 +33,7 @@ function x(e) {
     [p, f] = r.useState(false),
     [m, g] = r.useState(0),
     b = (0, o.e7)([h.Z], () => h.Z.getChannelId() !== l.id);
-  async function x() {
+  async function O() {
     g(1);
     try {
       await c.Z.sendActivityInvite({
@@ -53,9 +53,9 @@ function x(e) {
   if (b && (t = v.intl.string(y.default.qRXats)), n.type === C.IIU.PLAYING) {
     let e = null == u ? true : u.getIconURL(46);
     return (0, i.jsxs)("div", {
-      className: O.activityRow,
+      className: x.activityRow,
       children: [(0, i.jsxs)("div", {
-        className: O.activityRowContent,
+        className: x.activityRowContent,
         children: [p || null == e ? (0, i.jsx)(s.IMN, {
           size: "custom",
           width: 46,
@@ -80,9 +80,9 @@ function x(e) {
         fullWidth: true,
         size: "sm",
         text: 2 === m ? v.intl.string(y.default["8HU1M2"]) : v.intl.string(y.default.DKHhec),
-        onClick: x
+        onClick: O
       }), null != t && (0, i.jsx)(s.Text, {
-        className: O.disabledReason,
+        className: x.disabledReason,
         variant: "text-xs/normal",
         color: "text-muted",
         children: t
@@ -110,10 +110,10 @@ function E(e) {
   }), C) ? null : (0, i.jsx)(p.Z.Provider, {
     value: n.guild_id,
     children: (0, i.jsx)("div", {
-      className: O.root,
+      className: x.root,
       children: (0, i.jsx)("div", {
-        className: O.activityList,
-        children: h.map(e => (0, i.jsx)(x, {
+        className: x.activityList,
+        children: h.map(e => (0, i.jsx)(O, {
           activity: e,
           channel: n,
           userId: t

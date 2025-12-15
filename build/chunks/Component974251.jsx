@@ -86,7 +86,7 @@ let W = Chunk473749.memo(function(e) {
     setValue: X,
     canOnlyUseTextCommands: J,
     chatInputType: Q
-  } = e, $ = (0, x.bp)(), ee = r.useRef(null), et = r.useRef(null), en = (0, o.e7)([N.Z], () => N.Z.getActivities()), ei = (0, b.z8)(), er = (0, o.e7)([g.Z], () => g.Z.getLastClipsSession()), el = (0, o.Wu)([g.Z], () => g.Z.getNewClipIds()), ea = (0, o.e7)([P.ZP], () => null == P.ZP.getCurrentSidebarChannelId(q.id)), {
+  } = e, $ = (0, O.bp)(), ee = r.useRef(null), et = r.useRef(null), en = (0, o.e7)([N.Z], () => N.Z.getActivities()), ei = (0, b.z8)(), er = (0, o.e7)([g.Z], () => g.Z.getLastClipsSession()), el = (0, o.Wu)([g.Z], () => g.Z.getNewClipIds()), ea = (0, o.e7)([P.ZP], () => null == P.ZP.getCurrentSidebarChannelId(q.id)), {
     showClipsHeaderEntrypoint: eo
   } = m.NV.useExperiment({
     location: "ChannelAttachButton"
@@ -94,7 +94,7 @@ let W = Chunk473749.memo(function(e) {
     autoTrackExposure: false
   }), {
     onShareClick: es
-  } = (0, y.Z)(q.id), ec = (0, o.e7)([O.qc], () => O.qc.hasHotspot(O.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), eu = (0, c.s9z)(e => (0, c.DEQ)(e, V.Qr)), ed = (0, o.e7)([I.Z], () => I.Z.hasLayers()), ep = (0, o.e7)([g.Z], () => g.Z.hasClips()), [ef, eh] = r.useState(null), em = (0, m.w9)() && (ei || ep), eg = q.isPrivate(), eb = (0, o.e7)([T.Z], () => eg || T.Z.can(U.Plq.ATTACH_FILES, q) && T.Z.can(U.Plq.SEND_MESSAGES, q)), eC = (0, d.Z)(er);
+  } = (0, y.Z)(q.id), ec = (0, o.e7)([x.qc], () => x.qc.hasHotspot(x.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), eu = (0, c.s9z)(e => (0, c.DEQ)(e, V.Qr)), ed = (0, o.e7)([I.Z], () => I.Z.hasLayers()), ep = (0, o.e7)([g.Z], () => g.Z.hasClips()), [ef, eh] = r.useState(null), em = (0, m.w9)() && (ei || ep), eg = q.isPrivate(), eb = (0, o.e7)([T.Z], () => eg || T.Z.can(U.Plq.ATTACH_FILES, q) && T.Z.can(U.Plq.SEND_MESSAGES, q)), eC = (0, d.Z)(er);
   (null == eC ? true : eC.newClipIds.length) !== (null == er ? true : er.newClipIds.length) && (null != (t = null == er ? true : er.newClipIds.length) ? t : 0) > 0 && null == ef && ec && ea && !eu && !eo && !ed && eh("recentClips");
   let ey = (0, o.e7)([Z.Z], () => Z.Z.hasCurrentUserSentMessageSinceAppStart());
 
@@ -127,8 +127,8 @@ let W = Chunk473749.memo(function(e) {
       A.S.unsubscribe(U.CkL.UPLOAD_FILE, e)
     }
   });
-  let eO = (0, S.NE)(q),
-    ex = (0, S.Xu)(q),
+  let ex = (0, S.NE)(q),
+    eO = (0, S.Xu)(q),
     eE = !_.dN.useSetting() && !(0, w.isAndroidWeb)() && null != window.ResizeObserver,
     ej = (0, h.R)({
       channel: q,
@@ -143,7 +143,7 @@ let W = Chunk473749.memo(function(e) {
     eZ = null != (l = null == el ? true : el.length) ? l : 0,
     eT = (0, k.Z)({
       canAttachFiles: eb,
-      canStartThreads: eO || ex,
+      canStartThreads: ex || eO,
       useSlate: eE,
       hasClips: em,
       canUseApplicationCommands: !J,

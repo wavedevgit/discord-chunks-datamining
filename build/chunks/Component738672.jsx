@@ -20,16 +20,16 @@ function d(e) {
     renderComponent: p,
     nudgeAlignIntoViewport: f = false,
     skipForceHide: h = false
-  } = e, m = r.useContext(c.h9), [g, b] = r.useState(""), [C, y] = r.useState(false), v = (0, l.e7)([s.ZP], () => s.ZP.callHeaderHeight), O = r.useRef(null), x = r.useRef(0);
+  } = e, m = r.useContext(c.h9), [g, b] = r.useState(""), [C, y] = r.useState(false), v = (0, l.e7)([s.ZP], () => s.ZP.callHeaderHeight), x = r.useRef(null), O = r.useRef(0);
   r.useEffect(() => {
     let e = t.current;
     if (null != e) return e.addEventListener("click", d), () => e.removeEventListener("click", d)
   }), r.useEffect(() => {
     if (!h) {
       var e, t;
-      b(String(x.current)), y(true !== v && v < (null != (t = null == (e = O.current) ? true : e.clientHeight) ? t : 300) + 24), x.current += 1
+      b(String(O.current)), y(true !== v && v < (null != (t = null == (e = x.current) ? true : e.clientHeight) ? t : 300) + 24), O.current += 1
     }
-  }, [v, O, h]);
+  }, [v, x, h]);
   let {
     preventIdle: E,
     allowIdle: j
@@ -43,7 +43,7 @@ function d(e) {
       positionKey: g,
       nudgeAlignIntoViewport: f,
       children: () => (0, i.jsx)("div", {
-        ref: O,
+        ref: x,
         onMouseOver: E,
         onFocus: E,
         onBlur: j,

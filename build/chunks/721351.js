@@ -9,5 +9,5 @@ var Chunk481060 = require("./481060.js"),
   Chunk927923 = require("./927923.js");
 
 function a(e) {
-  return null != e ? (0, i.GSL)(e === u.YE.XBOX ? l.Z : r.Z) : i.U5H
+  return null != e ? (0, r.GSL)(e === u.YE.XBOX ? l.Z : i.Z) : r.U5H
 }

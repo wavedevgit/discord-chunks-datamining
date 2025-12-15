@@ -1,7 +1,7 @@
 /** Chunk was on 79521 **/
 /** chunk id: 207540, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => v
+  default: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -22,18 +22,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk496675 = require("./496675.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let v = e => {
+let C = e => {
   let {
     channel: t,
     onClose: n,
-    onConfirm: v,
-    transitionState: C
-  } = e, S = (0, o.ZP)(t, true), I = t.id, P = t.isForumPost(), T = (0, u.e7)([m.Z], () => m.Z.getGuild(t.getGuildId())), y = (0, N.u1)(I), {
-    isSubscriptionGated: D
-  } = (0, E.Z)(t.id), b = (0, f.Z)(T, t), [G, w] = i.useState(), A = (0, u.e7)([Z.default], () => t.isOwner(Z.default.getId()), [t]), U = (0, u.e7)([p.Z], () => p.Z.can(t.isThread() ? h.Plq.MANAGE_THREADS : h.Plq.MANAGE_CHANNELS, t), [t]), L = (0, u.e7)([_.Z], () => {
+    onConfirm: C,
+    transitionState: v
+  } = e, S = (0, o.ZP)(t, true), I = t.id, P = t.isForumPost(), T = (0, u.e7)([m.Z], () => m.Z.getGuild(t.getGuildId())), D = (0, N.u1)(I), {
+    isSubscriptionGated: y
+  } = (0, E.Z)(t.id), b = (0, f.Z)(T, t), [G, w] = i.useState(), A = (0, u.e7)([Z.default], () => t.isOwner(Z.default.getId()), [t]), U = (0, u.e7)([O.Z], () => O.Z.can(t.isThread() ? h.Plq.MANAGE_THREADS : h.Plq.MANAGE_CHANNELS, t), [t]), L = (0, u.e7)([_.Z], () => {
     var e;
     return null != (e = _.Z.getCount(t.id)) ? e : 0
-  }, [t.id]), j = P && (U || A && L < 1), V = y.length > 0 && (t.type === h.d4z.GUILD_VOICE || t.type === h.d4z.GUILD_STAGE_VOICE);
+  }, [t.id]), j = P && (U || A && L < 1), V = D.length > 0 && (t.type === h.d4z.GUILD_VOICE || t.type === h.d4z.GUILD_STAGE_VOICE);
   if (i.useEffect(() => {
       (async () => {
         if (!await (0, s.C)(t.getGuildId(), I)) return w(d.j.DEFAULT);
@@ -51,39 +51,39 @@ let v = e => {
     };
     switch (G) {
       case d.j.DEFAULT:
-        e = O.intl.format(O.t.iWlB6h, {
+        e = p.intl.format(p.t.iWlB6h, {
           onClick: t
         });
         break;
       case d.j.TODO:
-        e = O.intl.format(O.t["/rjozD"], {
+        e = p.intl.format(p.t["/rjozD"], {
           onClick: t
         });
         break;
       case d.j.RESOURCE:
-        e = O.intl.format(O.t.Nf5ptw, {
+        e = p.intl.format(p.t.Nf5ptw, {
           onClick: t
         });
         break;
       case d.j.RULES:
-        e = O.intl.format(O.t["kB1f+3"], {
-          reason: O.intl.string(O.t.yjrZPl),
+        e = p.intl.format(p.t["kB1f+3"], {
+          reason: p.intl.string(p.t.yjrZPl),
           onClick: i
         });
         break;
       case d.j.UPDATES:
-        e = O.intl.format(O.t["kB1f+3"], {
-          reason: O.intl.string(O.t["1B1/NB"]),
+        e = p.intl.format(p.t["kB1f+3"], {
+          reason: p.intl.string(p.t["1B1/NB"]),
           onClick: i
         })
     }
     return (0, l.jsx)(r.Modal, {
-      title: O.intl.string(O.t["TY/V+H"]),
+      title: p.intl.string(p.t["TY/V+H"]),
       onClose: n,
       subtitle: e,
-      transitionState: C,
+      transitionState: v,
       actions: [{
-        text: O.intl.string(O.t.BddRzS),
+        text: p.intl.string(p.t.BddRzS),
         onClick: n,
         variant: "primary"
       }]
@@ -93,54 +93,54 @@ let v = e => {
     deleteText: M,
     deleteBody: k
   } = t.type === h.d4z.GUILD_CATEGORY ? {
-    deleteText: O.intl.string(O.t.ifbXnL),
-    deleteBody: O.intl.format(O.t.a6Gz9J, {
+    deleteText: p.intl.string(p.t.ifbXnL),
+    deleteBody: p.intl.format(p.t.a6Gz9J, {
       channelName: S
     })
   } : t.isForumPost() ? {
-    deleteText: j ? O.intl.string(O.t.nEOg1N) : O.intl.string(O.t.xwMqD7),
-    deleteBody: j && A && !U ? O.intl.format(O.t["6/pY2+"], {
+    deleteText: j ? p.intl.string(p.t.nEOg1N) : p.intl.string(p.t.xwMqD7),
+    deleteBody: j && A && !U ? p.intl.format(p.t["6/pY2+"], {
       postName: S
-    }) : j ? O.intl.format(O.t.su3voL, {
+    }) : j ? p.intl.format(p.t.su3voL, {
       postName: S
-    }) : O.intl.string(O.t.RUHcyk)
+    }) : p.intl.string(p.t.RUHcyk)
   } : t.isThread() ? {
-    deleteText: O.intl.string(O.t.H7vTe2),
-    deleteBody: O.intl.format(O.t.a6Gz9J, {
+    deleteText: p.intl.string(p.t.H7vTe2),
+    deleteBody: p.intl.format(p.t.a6Gz9J, {
       channelName: S
     })
-  } : D && b > 0 ? {
-    deleteText: O.intl.string(O.t["8D8Rsb"]),
-    deleteBody: O.intl.format(O.t["+qkiT9"], {
+  } : y && b > 0 ? {
+    deleteText: p.intl.string(p.t["8D8Rsb"]),
+    deleteBody: p.intl.format(p.t["+qkiT9"], {
       channelName: S,
       numGuildRoleSubscriptionMembers: b
     })
   } : {
-    deleteText: O.intl.string(O.t["8D8Rsb"]),
-    deleteBody: O.intl.format(O.t.a6Gz9J, {
+    deleteText: p.intl.string(p.t["8D8Rsb"]),
+    deleteBody: p.intl.format(p.t.a6Gz9J, {
       channelName: S
     })
   };
   return (0, l.jsx)(r.Modal, {
     size: "sm",
     onClose: n,
-    transitionState: C,
+    transitionState: v,
     title: M,
     subtitle: k,
     actions: [{
-      text: O.intl.string(O.t["ETE/oC"]),
+      text: p.intl.string(p.t["ETE/oC"]),
       onClick: n,
       variant: "secondary"
     }, {
       text: M,
-      onClick: v,
+      onClick: C,
       variant: "critical-primary"
     }],
     children: V ? (0, l.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "text-default",
-      children: O.intl.format(O.t.Ze005A, {
-        count: y.length
+      children: p.intl.format(p.t.Ze005A, {
+        count: D.length
       })
     }) : null
   })

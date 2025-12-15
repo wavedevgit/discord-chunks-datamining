@@ -179,9 +179,9 @@ let T = e => {
     } = e, l = r.useCallback(() => {
       (0, c.showToast)((0, c.createToast)(I.intl.string(I.t.a2j0hv), c.ToastType.FAILURE))
     }, []), a = r.useCallback(() => {
-      C.Z.closeChannelSidebar(O.uZ)
+      C.Z.closeChannelSidebar(x.uZ)
     }, []), o = r.useCallback(() => {
-      C.Z.closeChannelSidebar(O.uZ)
+      C.Z.closeChannelSidebar(x.uZ)
     }, []), {
       acceptMessageRequest: s,
       rejectMessageRequest: u,
@@ -220,7 +220,7 @@ let T = e => {
       showingBanner: r
     } = e, {
       channelId: l
-    } = (0, g._)(), u = (0, s.e7)([h.Z], () => null != l && h.Z.isSpam(l), [l]), d = (0, s.e7)([x.Z], () => x.Z.getRelationshipType(t), [t]), p = n.id === l, f = !o.tq && !p, m = !!o.tq || p || u, C = u || p ? (0, i.jsxs)("div", {
+    } = (0, g._)(), u = (0, s.e7)([h.Z], () => null != l && h.Z.isSpam(l), [l]), d = (0, s.e7)([O.Z], () => O.Z.getRelationshipType(t), [t]), p = n.id === l, f = !o.tq && !p, m = !!o.tq || p || u, C = u || p ? (0, i.jsxs)("div", {
       className: Z.inline,
       children: [(0, i.jsx)(A, {
         channelId: n.id,
