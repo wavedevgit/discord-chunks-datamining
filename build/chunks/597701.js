@@ -1,26 +1,25 @@
-/** Chunk was on 96537 **/
-/** chunk id: 597701, original params: e,n,t (module,exports,require) **/
-"use strict";
+/** Chunk was on 85032 **/
+/** chunk id: 597701, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  p: () => c
+  p: () => o
 });
 var Chunk573654 = require("./573654.js");
 
-function i(e, n, t) {
-  return n in e ? Object.defineProperty(e, n, {
-    value: t,
+function i(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[n] = t, e
+  }) : e[t] = n, e
 }
 var a = false,
-  o = false,
-  c = function() {
+  l = false,
+  o = function() {
     var e;
 
-    function n(e) {
-      if (!(this instanceof n)) throw TypeError("Cannot call a class as a function");
+    function t(e) {
+      if (!(this instanceof t)) throw TypeError("Cannot call a class as a function");
       i(this, "internalMonitor", true), i(this, "sourceId", null), this.internalMonitor = e.getMonitor()
     }
     return e = [{
@@ -47,17 +46,17 @@ var a = false,
         key: "isDragging",
         value: function() {
           if (!this.sourceId) returnfalse;
-          (0, Chunk573654.k)(!o, "You may not call monitor.isDragging() inside your isDragging() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
+          (0, Chunk573654.k)(!l, "You may not call monitor.isDragging() inside your isDragging() implementation. Read more: http://react-dnd.github.io/react-dnd/docs/api/drag-source-monitor");
           try {
-            return o = true, this.internalMonitor.isDraggingSource(this.sourceId)
+            return l = true, this.internalMonitor.isDraggingSource(this.sourceId)
           } finally {
-            o = false
+            l = false
           }
         }
       }, {
         key: "subscribeToStateChange",
-        value: function(e, n) {
-          return this.internalMonitor.subscribeToStateChange(e, n)
+        value: function(e, t) {
+          return this.internalMonitor.subscribeToStateChange(e, t)
         }
       }, {
         key: "isDraggingSource",
@@ -66,8 +65,8 @@ var a = false,
         }
       }, {
         key: "isOverTarget",
-        value: function(e, n) {
-          return this.internalMonitor.isOverTarget(e, n)
+        value: function(e, t) {
+          return this.internalMonitor.isOverTarget(e, t)
         }
       }, {
         key: "getTargetIds",
@@ -145,9 +144,9 @@ var a = false,
           return this.internalMonitor.getDifferenceFromInitialOffset()
         }
       }],
-      function(e, n) {
-        for (var t = 0; t < n.length; t++) {
-          var r = n[t];
+      function(e, t) {
+        for (var n = 0; n < t.length; n++) {
+          var r = t[n];
           r.enumerable = r.enumerable || false, r.configurable = true, "value" in r && (r.writable = true), Object.defineProperty(e, r.key, r)
         }
       }(exports.prototype, module), exports

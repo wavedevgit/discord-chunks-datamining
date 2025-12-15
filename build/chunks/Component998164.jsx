@@ -108,12 +108,13 @@ let j = function(e) {
   } = e, n = (0, l.Wu)([d.Z], () => {
     var e;
     return null != (e = d.Z.getSettings().newMemberActions) ? e : p
-  }), a = i.useCallback((e, n) => {
-    (0, c.vR)(e), (0, c.ad)(t, e.channelId, n, true)
-  }, [t]), g = i.useCallback((e, r, i, l) => {
+  }), a = i.useCallback((e, t) => {
+    (0, c.vR)(e, t)
+  }, []), g = i.useCallback((e, r, i, l) => {
     var a;
-    let s = null == (a = n[e]) ? true : a.channelId;
-    null != s && null != d.Z.getSettings() && ((0, c.el)(s, r), (0, c.ad)(t, s, i, l))
+    let s = null == (a = n[e]) ? true : a.channelId,
+      o = r.channelId;
+    null != s && null != d.Z.getSettings() && (null == d.Z.getPendingIconDataForChannel(o) && (0, c.ad)(t, s, i, l), (0, c.el)(s, r))
   }, [n, t]), j = i.useCallback(e => {
     var t;
     let r = null == (t = n[e]) ? true : t.channelId;

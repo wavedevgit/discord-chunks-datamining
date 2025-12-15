@@ -1,94 +1,112 @@
-/** Chunk was on 9536 **/
-/** chunk id: 8426, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** Chunk was on 80187 **/
+/** chunk id: 8426, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Hr: () => x,
-  Hz: () => y,
-  To: () => S,
+  Di: () => T,
+  Hr: () => A,
+  Hz: () => g,
+  Lt: () => D,
+  To: () => m,
   XG: () => C,
-  _N: () => b,
-  ad: () => v,
+  _N: () => O,
+  ad: () => p,
   bj: () => P,
-  el: () => h,
-  hS: () => j,
-  lq: () => N,
-  mM: () => E,
-  oo: () => I,
-  q6: () => T,
-  r2: () => O,
-  vR: () => p
-}), require("./361932.js"), require("./187205.js");
+  el: () => G,
+  hS: () => h,
+  lq: () => U,
+  mM: () => b,
+  oo: () => R,
+  q6: () => w,
+  r2: () => f,
+  vR: () => d
+}), require("./361932.js"), require("./187205.js"), require("./388685.js"), require("./457542.js");
 var Chunk392711 = require("./392711.js"),
-  i = require.n(Chunk392711),
+  l = require.n(Chunk392711),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk668781 = require("./668781.js"),
   Chunk563534 = require("./563534.js"),
   Chunk734893 = require("./734893.js"),
   Chunk626135 = require("./626135.js"),
+  Chunk956664 = require("./956664.js"),
   Chunk960048 = require("./960048.js"),
   Chunk969632 = require("./969632.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e) {
-  a.Z.dispatch({
+function O(e) {
+  i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_UPDATE_WELCOME_MESSAGE",
     welcomeMessage: e
   })
 }
 
-function p(e) {
-  a.Z.dispatch({
+function d(e, n) {
+  i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_ADD_NEW_MEMBER_ACTION",
-    action: e
+    action: e,
+    pendingIconData: n
   })
 }
 
-function h(e, t) {
-  a.Z.dispatch({
+function T(e, n) {
+  i.Z.dispatch({
+    type: "GUILD_SETTINGS_ONBOARDING_UPDATE_NEW_MEMBER_ACTION_PENDING_ICON_DATA",
+    channelId: e,
+    pendingIconData: n
+  })
+}
+
+function D(e) {
+  i.Z.dispatch({
+    type: "GUILD_SETTINGS_ONBOARDING_CLEAR_NEW_MEMBER_ACTION_PENDING_ICON_DATA",
+    channelId: e
+  })
+}
+
+function G(e, n) {
+  i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_UPDATE_NEW_MEMBER_ACTION",
     channelId: e,
-    action: t
+    action: n
   })
 }
 
-function x(e) {
-  a.Z.dispatch({
+function A(e) {
+  i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_DELETE_NEW_MEMBER_ACTION",
     channelId: e
   })
 }
 
-function j(e) {
-  a.Z.dispatch({
+function h(e) {
+  i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_REORDER_NEW_MEMBER_ACTION",
     actions: e
   })
 }
-async function v(e, t, n, r) {
+async function p(e, n, t, r) {
   if (!r) return Promise.resolve();
   try {
-    let r = await l.tn.patch({
-        url: f.ANM.NEW_MEMBER_ACTION(e, t),
+    let r = await o.tn.patch({
+        url: N.ANM.NEW_MEMBER_ACTION(e, n),
         body: {
-          icon: n
+          icon: t
         },
         oldFormErrors: true,
         rejectWithError: false
       }),
-      i = (0, c.cq)(r.body);
-    return a.Z.dispatch({
+      l = (0, c.cq)(r.body);
+    return i.Z.dispatch({
       type: "GUILD_NEW_MEMBER_ACTION_UPDATE_SUCCESS",
       guildId: e,
-      action: i
+      action: l
     }), Promise.resolve(r.body)
-  } catch (t) {
-    var o;
-    let e = i().flatMap(null != (o = t.body) ? o : {}, e => e);
-    return s.Z.show({
-      title: m.intl.string(m.t["6nCZyG"]),
-      body: m.intl.format(m.t.dYCPD2, {
+  } catch (n) {
+    var _;
+    let e = l().flatMap(null != (_ = n.body) ? _ : {}, e => e);
+    return a.Z.show({
+      title: S.intl.string(S.t["6nCZyG"]),
+      body: S.intl.format(S.t.dYCPD2, {
         errorMessage: e.join(", ")
       })
     }), u.Z.addBreadcrumb({
@@ -97,156 +115,174 @@ async function v(e, t, n, r) {
   }
 }
 
-function O(e) {
-  a.Z.dispatch({
+function f(e) {
+  i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_ADD_RESOURCE_CHANNEL",
     resourceChannel: e
   })
 }
 
-function C(e, t) {
-  a.Z.dispatch({
+function C(e, n) {
+  i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_UPDATE_RESOURCE_CHANNEL",
     channelId: e,
-    resourceChannel: t
+    resourceChannel: n
   })
 }
 
-function y(e) {
-  a.Z.dispatch({
+function g(e) {
+  i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_DELETE_RESOURCE_CHANNEL",
     resourceChannelId: e
   })
 }
 
-function N(e) {
-  a.Z.dispatch({
+function U(e) {
+  i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_REORDER_RESOURCE_CHANNEL",
     resourceChannels: e
   })
 }
-async function E(e, t, n) {
+async function b(e, n, t) {
   try {
-    let r = await l.tn.put({
-        url: f.ANM.RESOURCE_CHANNEL(e, t),
+    let r = await o.tn.put({
+        url: N.ANM.RESOURCE_CHANNEL(e, n),
         body: {
-          icon: n
+          icon: t
         },
         oldFormErrors: true,
         rejectWithError: false
       }),
-      i = (0, c.vD)(r.body);
-    return a.Z.dispatch({
+      l = (0, c.vD)(r.body);
+    return i.Z.dispatch({
       type: "GUILD_RESOURCE_CHANNEL_UPDATE_SUCCESS",
       guildId: e,
-      resourceChannel: i
+      resourceChannel: l
     }), r.body
-  } catch (t) {
+  } catch (n) {
     var r;
-    let e = i().flatMap(null != (r = t.body) ? r : {}, e => e);
-    s.Z.show({
-      title: m.intl.string(m.t["6nCZyG"]),
-      body: m.intl.format(m.t.dYCPD2, {
+    let e = l().flatMap(null != (r = n.body) ? r : {}, e => e);
+    a.Z.show({
+      title: S.intl.string(S.t["6nCZyG"]),
+      body: S.intl.format(S.t.dYCPD2, {
         errorMessage: e.join(", ")
       })
     })
   }
 }
 
-function I(e, t) {
-  let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-  return n || g.Z.hasChanges() ? o.Z.getEnabled(e) && !(0, c.uo)(t) ? (s.Z.show({
-    title: m.intl.string(m.t["6nCZyG"]),
-    body: m.intl.string(m.t.JuhUTS)
+function R(e, n) {
+  let t = arguments.length > 2 && true !== arguments[2] && arguments[2];
+  return t || I.Z.hasChanges() ? _.Z.getEnabled(e) && !(0, c.uo)(n) ? (a.Z.show({
+    title: S.intl.string(S.t["6nCZyG"]),
+    body: S.intl.string(S.t.JuhUTS)
   }), u.Z.addBreadcrumb({
     message: "Error saving home settings"
-  }), Promise.reject()) : _(e, t) : Promise.resolve()
+  }), Promise.reject()) : y(e, n) : Promise.resolve()
 }
 
-function S(e, t) {
-  var n, r;
-  let i = o.Z.getSettings(e);
-  return t && !(0, c.uo)(i) ? void s.Z.show({
-    title: m.intl.string(m.t["6nCZyG"]),
-    body: m.intl.string(m.t.JuhUTS)
-  }) : (a.Z.dispatch({
+function m(e, n) {
+  var t, r;
+  let l = _.Z.getSettings(e);
+  return n && !(0, c.uo)(l) ? void a.Z.show({
+    title: S.intl.string(S.t["6nCZyG"]),
+    body: S.intl.string(S.t.JuhUTS)
+  }) : (i.Z.dispatch({
     type: "GUILD_HOME_SETTINGS_TOGGLE_ENABLED",
     guildId: e,
-    enabled: t
-  }), _(e, (n = function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
+    enabled: n
+  }), y(e, (t = function(e) {
+    for (var n = 1; n < arguments.length; n++) {
+      var t = null != arguments[n] ? arguments[n] : {},
+        r = Object.keys(t);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(t, e).enumerable
+      }))), r.forEach(function(n) {
         var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
+        r = t[n], n in e ? Object.defineProperty(e, n, {
           value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = r
+        }) : e[n] = r
       })
     }
     return e
-  }({}, i), r = r = {
-    enabled: t
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-    var n = Object.keys(e);
+  }({}, l), r = r = {
+    enabled: n
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, n) {
+    var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      t.push.apply(t, r)
     }
-    return n
+    return t
   })(Object(r)).forEach(function(e) {
-    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-  }), n)))
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+  }), t)))
 }
-async function _(e, t) {
-  var n, r, o, u, g, b, p, h, x;
-  a.Z.dispatch({
+async function y(e, n) {
+  var t, r, _, E, u, O, d, T, G;
+  i.Z.dispatch({
     type: "GUILD_HOME_SETTINGS_UPDATE_START"
   });
+  let A = I.Z.getPendingIconData();
   try {
-    let i = await l.tn.put({
-        url: f.ANM.GUILD_HOME_SETTINGS(e),
-        body: (0, c.HH)(e, t),
+    let l = await o.tn.put({
+        url: N.ANM.GUILD_HOME_SETTINGS(e),
+        body: (0, c.HH)(e, n),
         oldFormErrors: true,
         rejectWithError: false
       }),
-      s = (0, c.tB)(i.body);
-    return a.Z.dispatch({
+      a = (0, c.tB)(l.body);
+    return i.Z.dispatch({
       type: "GUILD_HOME_SETTINGS_UPDATE_SUCCESS",
       guildId: e,
-      homeSettings: s
-    }), d.default.track(f.rMx.GUILD_SETTINGS_GUIDE_UPDATED, {
+      homeSettings: a
+    }), Object.entries(A).forEach(n => {
+      let [t, r] = n;
+      null != r && M(e, t, r).finally(() => {
+        D(t)
+      })
+    }), s.default.track(N.rMx.GUILD_SETTINGS_GUIDE_UPDATED, {
       guild_id: e,
-      welcome_message_author_id: (null != (u = null == s || null == (n = s.welcomeMessage) ? true : n.authorIds) ? u : [])[0],
-      welcome_message_length: null != (g = null == s || null == (o = s.welcomeMessage) || null == (r = o.message) ? true : r.length) ? g : 0,
-      member_action_channel_ids: (null != (b = null == s ? true : s.newMemberActions) ? b : []).map(e => e.channelId),
-      member_action_channel_actions: (null != (p = null == s ? true : s.newMemberActions) ? p : []).map(e => e.actionType),
-      resource_channel_ids: (null != (h = null == s ? true : s.resourceChannels) ? h : []).map(e => e.channelId),
-      enabled: null == s ? true : s.enabled
-    }), i.body
-  } catch (t) {
-    let e = i().flatMap(null != (x = t.body) ? x : {}, e => e);
-    a.Z.dispatch({
+      welcome_message_author_id: (null != (E = null == a || null == (t = a.welcomeMessage) ? true : t.authorIds) ? E : [])[0],
+      welcome_message_length: null != (u = null == a || null == (_ = a.welcomeMessage) || null == (r = _.message) ? true : r.length) ? u : 0,
+      member_action_channel_ids: (null != (O = null == a ? true : a.newMemberActions) ? O : []).map(e => e.channelId),
+      member_action_channel_actions: (null != (d = null == a ? true : a.newMemberActions) ? d : []).map(e => e.actionType),
+      resource_channel_ids: (null != (T = null == a ? true : a.resourceChannels) ? T : []).map(e => e.channelId),
+      enabled: null == a ? true : a.enabled
+    }), l.body
+  } catch (n) {
+    let e = l().flatMap(null != (G = n.body) ? G : {}, e => e);
+    D(), i.Z.dispatch({
       type: "GUILD_HOME_SETTINGS_UPDATE_FAIL"
-    }), s.Z.show({
-      title: m.intl.string(m.t["6nCZyG"]),
-      body: m.intl.format(m.t.dYCPD2, {
+    }), a.Z.show({
+      title: S.intl.string(S.t["6nCZyG"]),
+      body: S.intl.format(S.t.dYCPD2, {
         errorMessage: e.join(", ")
       })
     })
   }
 }
+async function M(e, n, t) {
+  let {
+    iconData: r,
+    isUrl: l
+  } = t, o = null != r && l ? await L(e, n, r) : r;
+  await p(e, n, o, true)
+}
+async function L(e, n, t) {
+  let r = await fetch(t),
+    l = await r.blob();
+  return await (0, E.fD)(l)
+}
 
-function T(e, t) {
-  null != e && a.Z.dispatch({
+function w(e, n) {
+  null != e && i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_DISMISS_RESOURCE_CHANNEL_SUGGESTION",
     guildId: e,
-    channelIds: t
+    channelIds: n
   })
 }
 

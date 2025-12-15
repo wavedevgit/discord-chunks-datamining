@@ -2,7 +2,7 @@
 /** chunk id: 302175, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => V
 }), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,12 +11,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk236726 = require("./236726.js"),
   Chunk907331 = require("./907331.js"),
   Chunk793030 = require("./793030.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk879892 = require("./879892.jsx"),
   Chunk245004 = require("./245004.jsx"),
   Chunk430824 = require("./430824.js"),
+  Chunk594174 = require("./594174.js"),
   Chunk63063 = require("./63063.js"),
   Chunk713081 = require("./713081.js"),
   Chunk905128 = require("./905128.js"),
@@ -33,7 +35,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk887143 = require("./887143.js"),
   Chunk918820 = require("./918820.js");
 
-function w(e, t, n) {
+function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,20 +44,20 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      x(e, t, n[t])
     })
   }
   return e
 }
 
-function x(e, t) {
+function j(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -66,131 +68,132 @@ function x(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function M(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : j(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function j(e) {
+function k(e) {
   let {
     guildId: t,
     activeStatus: n,
     title: a,
     description: c,
-    cost: h,
-    costDecorator: g,
-    imageUrl: E,
-    skuId: b,
-    isNew: O,
-    onClose: v,
-    onHover: I
+    cost: E,
+    costDecorator: b,
+    imageUrl: y,
+    skuId: O,
+    isNew: S,
+    onClose: I,
+    onHover: C
   } = e, {
-    analyticsLocations: w
-  } = (0, f.ZP)(), x = n !== T.A3.INACTIVE, j = (0, y.Z)(t), [M, k] = i.useState(false), [U, G] = i.useState(false), Z = U, F = i.useCallback(() => {
-    let e = m.Z.getGuild(t);
-    null != e && (0, p.u)({
+    analyticsLocations: x
+  } = (0, p.ZP)(), j = n !== A.A3.INACTIVE, k = (0, v.Z)(t), U = (0, u.e7)([g.default], () => g.default.getCurrentUser()), [G, Z] = i.useState(false), [F, B] = i.useState(false), V = F, H = i.useCallback(() => {
+    let e = h.Z.getGuild(t);
+    null != e && (0, _.u)({
       analyticsLocation: {
-        page: C.ZY5.GUILD_POWERUPS_MARKETING,
-        section: C.jXE.GUILD_POWERUPS_MARKETING_PERKS_SECTION
+        page: N.ZY5.GUILD_POWERUPS_MARKETING,
+        section: N.jXE.GUILD_POWERUPS_MARKETING_PERKS_SECTION
       },
       numberOfBoostsToAdd: 1,
-      analyticsLocations: w,
+      analyticsLocations: x,
       guild: e
     })
-  }, [t, w]), B = i.useCallback(() => {
-    v(), (0, S.Z)(t, d.Z.GUILD_POWERUPS_MARKETING, b)
-  }, [t, b, v]), V = {
+  }, [t, x]), Y = i.useCallback(() => {
+    I(), (0, T.Z)(t, f.Z.GUILD_POWERUPS_MARKETING, O)
+  }, [t, O, I]), W = {
     tension: 400,
     friction: 30
-  }, H = (0, u.q_F)({
-    transform: Z ? "translateX(-50%) translateY(16px) scale(1)" : "translateX(-50%) translateY(24px) scale(1.40)",
+  }, K = (0, d.q_F)({
+    transform: V ? "translateX(-50%) translateY(16px) scale(1)" : "translateX(-50%) translateY(24px) scale(1.40)",
     borderRadius: "0px",
     transformOrigin: "center 0%",
-    config: V
-  }), Y = (0, u.q_F)({
-    y: Z ? false : 0,
-    config: V
-  }), W = (0, u.q_F)({
-    opacity: +!!Z,
-    transform: Z ? "translateY(0)" : "translateY(20px)",
-    config: V
-  }), K = i.useCallback(e => {
-    e && k(true)
-  }, []), z = (0, l.O)(K);
+    config: W
+  }), z = (0, d.q_F)({
+    y: V ? false : 0,
+    config: W
+  }), q = (0, d.q_F)({
+    opacity: +!!V,
+    transform: V ? "translateY(0)" : "translateY(20px)",
+    config: W
+  }), Q = i.useCallback(e => {
+    e && Z(true)
+  }, []), X = (0, l.O)(Q);
   return (0, r.jsxs)("div", {
-    className: o()(R.topPerksCard, R.animatedTopPerksCard, P.powerupCard, {
-      [R.animate]: M
+    className: o()(D.topPerksCard, D.animatedTopPerksCard, w.powerupCard, {
+      [D.animate]: G
     }),
     onMouseEnter: () => {
-      G(true), null == I || I(true)
+      B(true), null == C || C(true)
     },
     onMouseLeave: () => {
-      G(false), null == I || I(false)
+      B(false), null == C || C(false)
     },
     children: [(0, r.jsx)("div", {
-      className: R.intObserver,
-      ref: z
+      className: D.intObserver,
+      ref: X
     }), (0, r.jsx)("div", {
-      className: R.topPerksCardImageWrapper,
+      className: D.topPerksCardImageWrapper,
       children: (0, r.jsx)(s.animated.img, {
-        className: o()(R.topPerksCardImage, P.image),
-        src: E,
+        className: o()(D.topPerksCardImage, w.image),
+        src: y,
         alt: "",
-        style: H
+        style: K
       })
     }), (0, r.jsxs)(s.animated.div, {
-      style: L(D({}, Y), {
-        transform: Y.y.to(e => "translateY(".concat(e, "px)"))
+      style: M(L({}, z), {
+        transform: z.y.to(e => "translateY(".concat(e, "px)"))
       }),
-      className: o()(R.contentContainer, P.contentContainer),
-      children: [(0, r.jsx)(_.xm, {
+      className: o()(D.contentContainer, w.contentContainer),
+      children: [(0, r.jsx)(m.xm, {
         heading: a,
         description: c,
-        label: N.intl.formatToPlainString(A.default.QOacIS, {
-          quantity: h,
-          decorator: null != g ? g : ""
+        label: R.intl.formatToPlainString(P.default.QOacIS, {
+          quantity: E,
+          decorator: null != b ? b : ""
         }),
-        isEnabled: x
+        isEnabled: j
       }), (0, r.jsxs)(s.animated.div, {
-        style: W,
-        className: R.buttonsContainer,
+        style: q,
+        className: D.buttonsContainer,
         children: [(0, r.jsx)("div", {
-          className: R.button,
-          children: (0, r.jsx)(u.Button, {
+          className: D.button,
+          children: (0, r.jsx)(d.Button, {
             variant: "primary",
-            text: N.intl.string(N.t.oPAx73),
-            onClick: F,
+            text: R.intl.string(R.t.oPAx73),
+            onClick: H,
+            disabled: null == U ? true : U.isPremiumGroupMember(),
             fullWidth: true
           })
-        }), j && (0, r.jsx)("div", {
-          className: R.button,
-          children: (0, r.jsx)(u.Button, {
+        }), k && (0, r.jsx)("div", {
+          className: D.button,
+          children: (0, r.jsx)(d.Button, {
             variant: "secondary",
-            text: N.intl.string(N.t.GoCQxU),
-            onClick: B,
+            text: R.intl.string(R.t.GoCQxU),
+            onClick: Y,
             fullWidth: true
           })
         })]
       })]
-    }), O && (0, r.jsx)(u.IGR, {
-      className: R.topPerksCardNew,
-      text: N.intl.string(N.t.y2b7CA)
-    }), M && (0, r.jsx)("div", {
-      className: R.shineLine
+    }), S && (0, r.jsx)(d.IGR, {
+      className: D.topPerksCardNew,
+      text: R.intl.string(R.t.y2b7CA)
+    }), G && (0, r.jsx)("div", {
+      className: D.shineLine
     })]
   })
 }
 
-function M(e) {
+function U(e) {
   let {
     guildId: t,
     powerup: n,
     costDecorator: a,
     isNew: o,
     onClose: s
-  } = e, [l, c] = i.useState(false), u = (0, v.ZP)(t, n).type, d = (0, b.Z)(n, l);
-  return (0, r.jsx)(j, {
+  } = e, [l, c] = i.useState(false), u = (0, I.ZP)(t, n).type, d = (0, O.Z)(n, l);
+  return (0, r.jsx)(k, {
     guildId: t,
     activeStatus: u,
     title: n.title,
@@ -204,43 +207,43 @@ function M(e) {
     onHover: e => c(e)
   })
 }
-let k = 3,
-  U = new Set([Chunk619733.fj]),
-  G = new Map([
+let G = 3,
+  Z = new Set([Chunk619733.fj]),
+  F = new Map([
     [Chunk619733.fj, "+"]
   ]),
-  Z = Chunk473749.forwardRef((e, t) => {
+  B = Chunk473749.forwardRef((e, t) => {
     let {
       guild: n,
       onClose: a
     } = e;
     i.useEffect(() => {
-      E.Z.shouldFetchCatalogForGuild(n.id) && (0, g.Sn)(n.id), E.Z.shouldFetchPowerupsForGuild(n.id) && (0, g.BN)(n.id)
+      y.Z.shouldFetchCatalogForGuild(n.id) && (0, b.Sn)(n.id), y.Z.shouldFetchPowerupsForGuild(n.id) && (0, b.BN)(n.id)
     }, [n.id]);
-    let o = (0, O.Z)(n.id),
-      s = (null != o ? o : []).slice(0, k);
+    let o = (0, S.Z)(n.id),
+      s = (null != o ? o : []).slice(0, G);
     return 0 === s.length ? null : (0, r.jsxs)("div", {
       ref: t,
-      className: P.container,
+      className: w.container,
       children: [(0, r.jsx)(c.X6q, {
         variant: "heading-xxl/extrabold",
-        children: N.intl.string(A.default.wjI18Q)
+        children: R.intl.string(P.default.wjI18Q)
       }), (0, r.jsx)(c.xvT, {
         variant: "text-lg/medium",
-        children: N.intl.format(A.default.S562fn, {
-          helpDeskArticle: h.Z.getArticleURL(C.BhN.GUILD_BOOSTING_FAQ)
+        children: R.intl.format(P.default.S562fn, {
+          helpDeskArticle: E.Z.getArticleURL(N.BhN.GUILD_BOOSTING_FAQ)
         })
       }), (0, r.jsx)("div", {
-        className: P.powerupsContainer,
-        children: s.map(e => (0, r.jsx)(M, {
+        className: w.powerupsContainer,
+        children: s.map(e => (0, r.jsx)(U, {
           guildId: n.id,
           powerup: e,
-          costDecorator: G.get(e.skuId),
-          isNew: U.has(e.skuId),
+          costDecorator: F.get(e.skuId),
+          isNew: Z.has(e.skuId),
           onClose: a
         }, "guild-powerup-marketing-".concat(e.skuId)))
       })]
     })
   });
-Z.displayName = "GuildPowerupsMarketingPowerupCards";
-let F = Z
+B.displayName = "GuildPowerupsMarketingPowerupCards";
+let V = B

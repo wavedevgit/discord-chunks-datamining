@@ -12,12 +12,12 @@ var Chunk524437 = require("./524437.js"),
   Chunk981631 = require("./981631.js"),
   Chunk874893 = require("./874893.js");
 
-function u(e, t, n) {
-  var u, d, f;
+function u(e, t) {
+  var n, u, d;
   if (__OVERLAY__) return l.BRd.DARK;
-  let p = c.yW;
+  let f = c.yW;
   if (i.Z.syncForcedColors && "active" === i.Z.systemForcedColors && e !== c.zd.NO_PREFERENCE) return e;
   if (o.ZP.useSystemTheme === c.KW.ON && e !== c.zd.NO_PREFERENCE) return t[e];
-  let _ = null == (u = a.Z.getAppearanceSettings()) ? true : u.theme;
-  return null != _ ? _ : p[null != (f = null == (d = s.Z.settings.appearance) ? true : d.theme) ? f : r.Q2.UNSET]
+  let p = null == (n = a.Z.getAppearanceSettings()) ? true : n.theme;
+  return null != p ? p : f[null != (d = null == (u = s.Z.settings.appearance) ? true : u.theme) ? d : r.Q2.UNSET]
 }
