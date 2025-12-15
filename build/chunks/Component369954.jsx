@@ -2,7 +2,7 @@
 /** chunk id: 369954, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  J: () => T
+  J: () => I
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,7 +14,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk981312 = require("./981312.js"),
   Chunk342386 = require("./342386.js"),
   Chunk260722 = require("./260722.js"),
-  Chunk277537 = require("./277537.js"),
   Chunk841409 = require("./841409.js"),
   Chunk780985 = require("./780985.js"),
   Chunk631885 = require("./631885.js"),
@@ -23,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk517319 = require("./517319.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk837842 = require("./837842.js");
-let v = e => {
+let O = e => {
     let {
       title: t,
       buttonText: n,
@@ -49,7 +48,7 @@ let v = e => {
       })]
     })
   },
-  S = () => {
+  v = () => {
     let e = (0, Chunk631885.ZM)(),
       t = () => {
         (0, Chunk342386.default)(), Chunk493683.Z.openPrivateChannel({
@@ -90,7 +89,7 @@ let v = e => {
       })]
     })
   },
-  I = () => {
+  S = () => {
     let e = (0, Chunk780985.cz)(),
       t = (0, Chunk780985.$r)(),
       {
@@ -114,24 +113,23 @@ let v = e => {
           color: "text-muted",
           children: Chunk388032.intl.string(Chunk517319.default.Sv236e)
         })]
-      }), (0, Chunk54381.jsx)(v, {
+      }), (0, Chunk54381.jsx)(O, {
         title: Chunk388032.intl.string(Chunk388032.t["+o1pDZ"]),
         buttonText: Chunk388032.intl.string(Chunk388032.t.bt75uw),
         onButtonPress: () => Chunk481060(Chunk292352.dG.CONTENT_AND_SOCIAL)
       }), (0, Chunk54381.jsx)(Chunk511010.Z, {
         className: Chunk837842.divider
-      }), (0, Chunk54381.jsx)(v, {
+      }), (0, Chunk54381.jsx)(O, {
         title: Chunk388032.intl.string(Chunk388032.t.OAuOHD),
         buttonText: Chunk388032.intl.string(Chunk388032.t.bt75uw),
         onButtonPress: () => Chunk481060(Chunk292352.dG.DATA_AND_PRIVACY)
       })]
     })
   },
-  T = () => {
-    let e = (0, Chunk981312.U)(),
-      t = (0, Chunk631885.ZM)();
-    return (0, Chunk277537.PO)("settings-controls") && 0 !== exports.length ? (0, Chunk54381.jsx)("div", {
+  I = () => {
+    let e = (0, Chunk981312.U)();
+    return 0 === (0, Chunk631885.ZM)().length ? null : (0, Chunk54381.jsx)("div", {
       className: Chunk837842.container,
-      children: module ? (0, Chunk54381.jsx)(S, {}) : (0, Chunk54381.jsx)(I, {})
-    }) : null
+      children: module ? (0, Chunk54381.jsx)(v, {}) : (0, Chunk54381.jsx)(S, {})
+    })
   }

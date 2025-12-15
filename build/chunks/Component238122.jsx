@@ -56,14 +56,14 @@ let u = e => {
       })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
       }), e))
-    }, []), [_, j] = l.useState(""), [y, O] = l.useState(null);
+    }, []), [j, _] = l.useState(""), [y, O] = l.useState(null);
     l.useEffect(() => {
       var e;
-      j(null != (e = null == x ? true : x.value) ? e : "")
+      _(null != (e = null == x ? true : x.value) ? e : "")
     }, [x]);
     let Z = l.useCallback(e => {
       let t = null != g ? new RegExp(g) : null;
-      null == t || t.test(e) ? null != e && (O(null), j(e), f({
+      null == t || t.test(e) ? null != e && (O(null), _(e), f({
         value: e,
         isValid: true
       })) : (O(o.intl.string(o.t["24xrGb"])), f({
@@ -92,14 +92,14 @@ let u = e => {
       }), 1 === b ? (0, r.jsx)(i.oil, {
         maxLength: p,
         onChange: Z,
-        value: _,
+        value: j,
         error: y,
         placeholder: m,
         autoFocus: true
       }) : (0, r.jsx)(i.Kx8, {
         maxLength: p,
         onChange: Z,
-        value: _,
+        value: j,
         error: y,
         rows: b,
         placeholder: m,

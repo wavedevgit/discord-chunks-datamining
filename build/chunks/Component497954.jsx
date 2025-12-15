@@ -30,14 +30,14 @@ let p = e => {
       other_user_id: t.id,
       report_id: p
     }), a.Z.ignoreUser(t.id, "web_iar_ignore_user_element", n)
-  }, [t, p, n]), _ = l.useMemo(() => g || f, [g, f]);
+  }, [t, p, n]), j = l.useMemo(() => g || f, [g, f]);
   return (0, r.jsx)(o.JZ, {
     title: b.intl.formatToPlainString(b.t.U3yyFs, {
       username: h
     }),
     description: b.intl.string(b.t.naWE6W),
-    buttonText: _ ? b.intl.string(b.t.nDdxOG) : b.intl.string(b.t.ICYEfY),
-    buttonDisabled: _,
+    buttonText: j ? b.intl.string(b.t.nDdxOG) : b.intl.string(b.t.ICYEfY),
+    buttonDisabled: j,
     onButtonPress: v
   })
 }

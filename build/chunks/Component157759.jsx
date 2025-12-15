@@ -21,19 +21,19 @@ let x = e => {
   let {
     application: t,
     reportId: n
-  } = e, [x, h] = l.useState(false), [v, _] = l.useState(false), j = (0, i.e7)([p.Z, u.Z], () => {
+  } = e, [x, h] = l.useState(false), [v, j] = l.useState(false), _ = (0, i.e7)([p.Z, u.Z], () => {
     var e;
     return null == (e = u.Z.getChannel(p.Z.getChannelId())) ? true : e.guild_id
   }), [y, O] = l.useState(null);
   l.useEffect(() => {
-    null != y && (h(true), _(true))
+    null != y && (h(true), j(true))
   }, [y]), l.useEffect(() => {
-    if (null == j) return;
+    if (null == _) return;
     let e = false;
     return (async () => {
       let n = null;
       try {
-        n = await (0, d.i)(j)
+        n = await (0, d.i)(_)
       } catch (e) {}
       if (e || null == n) return;
       let r = n.find(e => {
@@ -44,27 +44,27 @@ let x = e => {
     })(), () => {
       e = true
     }
-  }, [j, t.id]);
+  }, [_, t.id]);
   let Z = l.useCallback(() => {
-      _(false), s.ZP.trackWithMetadata(g.rMx.IAR_REMOVE_APP_BUTTON_CLICKED, {
-        guild_id: j,
+      j(false), s.ZP.trackWithMetadata(g.rMx.IAR_REMOVE_APP_BUTTON_CLICKED, {
+        guild_id: _,
         application_id: t.id,
         report_id: n
-      }), null != j && null != y && o.Z.disableIntegration(j, y.id).catch(() => {
+      }), null != _ && null != y && o.Z.disableIntegration(_, y.id).catch(() => {
         a.Z.show({
           title: f.intl.string(f.t.wYqMmI),
           body: f.intl.string(f.t.A4Mnst)
         })
       })
-    }, [t.id, j, y, n]),
+    }, [t.id, _, y, n]),
     I = (0, i.e7)([b.Z, m.Z], () => {
-      let e = m.Z.getGuild(j);
+      let e = m.Z.getGuild(_);
       if (null == e) returnfalse;
       let n = b.Z.can(g.Plq.MANAGE_GUILD, e),
         r = null == t.bot || b.Z.canManageUser(g.Plq.MANAGE_GUILD, t.bot.id, e);
       return n && r
     });
-  return null != t && null != j && x && I ? (0, r.jsx)(c.JZ, {
+  return null != t && null != _ && x && I ? (0, r.jsx)(c.JZ, {
     title: f.intl.string(f.t["WV/CsH"]),
     description: f.intl.string(f.t["FlcC+3"]),
     buttonText: v ? f.intl.string(f.t.aCJlq4) : f.intl.string(f.t["6I1F3i"]),

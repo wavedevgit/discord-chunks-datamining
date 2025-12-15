@@ -23,7 +23,7 @@ let x = e => {
     entry: x
   } = e, {
     name: h
-  } = x, v = (0, i.e7)([m.default], () => m.default.getNewestTokenForApplication(x.id)), _ = null != (n = x.getIconURL(40)) ? n : f, j = (0, c.Z)({
+  } = x, v = (0, i.e7)([m.default], () => m.default.getNewestTokenForApplication(x.id)), j = null != (n = x.getIconURL(40)) ? n : f, _ = (0, c.Z)({
     application: x
   }), y = l.useRef(false);
   l.useEffect(() => {
@@ -46,7 +46,7 @@ let x = e => {
           height: 40,
           className: g.appIconMask,
           children: (0, r.jsx)("img", {
-            src: _,
+            src: j,
             alt: "",
             className: g.appIcon
           })
@@ -56,14 +56,14 @@ let x = e => {
             color: "text-strong",
             variant: "text-md/medium",
             children: h
-          }), j.length > 0 ? (0, r.jsxs)(r.Fragment, {
+          }), _.length > 0 ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(s.Text, {
               color: "text-default",
               variant: "text-md/normal",
-              children: (0, u.Z)(j.length)
+              children: (0, u.Z)(_.length)
             }), (0, r.jsx)(a.Z, {
               className: g.guildStack,
-              guilds: j,
+              guilds: _,
               maxGuilds: 6
             })]
           }) : (0, r.jsxs)(r.Fragment, {

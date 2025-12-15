@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 186023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => x
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,39 +12,38 @@ var Chunk54381 = require("./54381.js"),
   Chunk313201 = require("./313201.js"),
   Chunk797614 = require("./797614.js"),
   Chunk546791 = require("./546791.js"),
-  Chunk277537 = require("./277537.js"),
   Chunk82554 = require("./82554.js"),
   Chunk185625 = require("./185625.js"),
   Chunk255514 = require("./255514.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk351356 = require("./351356.js");
-let h = e => {
+let x = e => {
   let {
     reportType: t,
     menu: n,
-    modalProps: h,
-    onSubmit: v,
-    onNavigate: _,
+    modalProps: x,
+    onSubmit: h,
+    onNavigate: v,
     emailToken: j,
-    isAuthenticated: y = true
-  } = e, O = (0, d.Dt)(), {
-    nodes: Z,
-    root_node_id: I,
-    success_node_id: C,
-    fail_node_id: S
-  } = n, [N, P] = l.useState(I), [T, k] = l.useState(true), [E, w] = l.useState(true), [M, D] = l.useState([]), [R, A] = l.useState(true), [B, U] = l.useState(true), L = (0, m.PO)("in_app_report_modal");
+    isAuthenticated: _ = true
+  } = e, y = (0, d.Dt)(), {
+    nodes: O,
+    root_node_id: Z,
+    success_node_id: I,
+    fail_node_id: C
+  } = n, [S, N] = l.useState(Z), [T, P] = l.useState(true), [k, E] = l.useState(true), [w, M] = l.useState([]), [D, R] = l.useState(true), [A, B] = l.useState(true);
   (0, s.ZP)(() => {
-    L && (0, u.k0)()
+    (0, u.k0)()
   });
-  let G = e => {
+  let U = e => {
       var n, r, l;
       let {
         destination: a
-      } = e, [, s] = a, d = Z[s];
+      } = e, [, s] = a, d = O[s];
       if (true === d) return void c.Z.increment({
         name: i.V.IN_APP_REPORT_NAVIGATE_TO_NONEXISTENT_NODE
       });
-      if (d.elements.some(e => "skip" === e.type) && (null == (n = d.button) ? true : n.type) === "next") return G((r = function(e) {
+      if (d.elements.some(e => "skip" === e.type) && (null == (n = d.button) ? true : n.type) === "next") return U((r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -73,88 +72,88 @@ let h = e => {
       })(Object(l)).forEach(function(e) {
         Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
       }), r));
-      if (D([...M, e]), null != d.key && (null == _ || _(d.key)), k(true), w(true), t.name === b.b.MESSAGE || t.name === b.b.FIRST_DM) {
+      if (M([...w, e]), null != d.key && (null == v || v(d.key)), P(true), E(true), t.name === m.b.MESSAGE || t.name === m.b.FIRST_DM) {
         let e = t.record.id;
-        o.ZP.trackWithMetadata(f.rMx.IAR_NAVIGATE, {
+        o.ZP.trackWithMetadata(g.rMx.IAR_NAVIGATE, {
           message_id: e,
           content_type: t.name,
           report_sub_type: d.report_type,
-          current_node: Z[N].id,
+          current_node: O[S].id,
           next_node: d.id
         })
       }
-      P(s)
+      N(s)
     },
-    H = async e => {
+    L = async e => {
       var r;
-      let l = y ? await (0, p.ZD)(n, t, [...M, e]) : await (0, p.fw)(n, t, [...M, e], j),
+      let l = _ ? await (0, b.ZD)(n, t, [...w, e]) : await (0, b.fw)(n, t, [...w, e], j),
         i = null == l || null == (r = l.body) ? true : r.report_id;
-      null != i && A(i), U(Z[e.nodeRef].report_type), null == v || v(i)
-    }, W = () => {
+      null != i && R(i), B(O[e.nodeRef].report_type), null == h || h(i)
+    }, G = () => {
       var e, n;
-      if (M.length < 1) return;
-      let r = [...M],
+      if (w.length < 1) return;
+      let r = [...w],
         l = r.pop(),
-        i = null != (n = null == l ? true : l.nodeRef) ? n : I;
-      if (t.name === b.b.MESSAGE || t.name === b.b.FIRST_DM) {
+        i = null != (n = null == l ? true : l.nodeRef) ? n : Z;
+      if (t.name === m.b.MESSAGE || t.name === m.b.FIRST_DM) {
         let e = t.record.id;
-        o.ZP.trackWithMetadata(f.rMx.IAR_NAVIGATE, {
+        o.ZP.trackWithMetadata(g.rMx.IAR_NAVIGATE, {
           message_id: e,
           content_type: t.name,
-          report_sub_type: Z[i].report_type,
-          current_node: Z[N].id,
-          next_node: Z[i].id
+          report_sub_type: O[i].report_type,
+          current_node: O[S].id,
+          next_node: O[i].id
         })
       }
-      k(null == l || null == (e = l.multiSelect) ? true : e.state), w(null == l ? true : l.textInput), P(i), D(r), null == _ || _("..")
-    }, F = l.useMemo(() => {
+      P(null == l || null == (e = l.multiSelect) ? true : e.state), E(null == l ? true : l.textInput), N(i), M(r), null == v || v("..")
+    }, H = l.useMemo(() => {
       let e = [],
         t = [];
-      for (let i in Z) {
+      for (let i in O) {
         var n, r, l;
-        let a = Z[i];
-        if (a.id !== C && a.id !== S && a.id !== I) {
+        let a = O[i];
+        if (a.id !== I && a.id !== C && a.id !== Z) {
           if (a.key.endsWith("_SUBMIT") || (null == (n = a.button) ? true : n.type) === "submit") {
             t.push(a);
             continue
           }
           if (e.push(a), (null == (r = a.button) ? true : r.type) === "next") {
             let t = null == (l = a.button) ? true : l.target,
-              n = e.indexOf(Z[t]);
-            false !== n && (e.splice(n, 1), e.push(Z[t]))
+              n = e.indexOf(O[t]);
+            false !== n && (e.splice(n, 1), e.push(O[t]))
           }
         }
       }
-      return [Z[I], ...e, ...t, Z[C], Z[S]]
-    }, [Z, I, S, C]);
+      return [O[Z], ...e, ...t, O[I], O[C]]
+    }, [O, Z, C, I]);
   return (0, r.jsx)(a.Y0X, {
     "data-migration-pending": true,
-    transitionState: h.transitionState,
-    "aria-labelledby": O,
+    transitionState: x.transitionState,
+    "aria-labelledby": y,
     parentComponent: "InAppReportModal",
     children: (0, r.jsx)(a.MyZ, {
       width: 440,
-      activeSlide: N,
+      activeSlide: S,
       centered: false,
-      children: F.map(e => (0, r.jsx)(a.Mi4, {
+      children: H.map(e => (0, r.jsx)(a.Mi4, {
         id: e.id,
         children: (0, r.jsx)("div", {
-          className: x.slideContainer,
-          children: (0, r.jsx)(g.Z, {
+          className: f.slideContainer,
+          children: (0, r.jsx)(p.Z, {
             node: e,
             reportType: t,
-            reportSubType: B,
-            history: M,
-            onModalClose: h.onClose,
-            onSelectChild: G,
-            onNavigateBack: W,
+            reportSubType: A,
+            history: w,
+            onModalClose: x.onClose,
+            onSelectChild: U,
+            onNavigateBack: G,
             multiSelect: T,
-            textInput: E,
-            successNodeId: C,
-            failNodeId: S,
-            onSubmit: H,
-            reportId: R,
-            nodeMap: Z
+            textInput: k,
+            successNodeId: I,
+            failNodeId: C,
+            onSubmit: L,
+            reportId: D,
+            nodeMap: O
           })
         })
       }, e.id))

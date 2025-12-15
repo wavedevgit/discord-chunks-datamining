@@ -2,12 +2,12 @@
 /** chunk id: 915009, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  LN: () => v,
-  T3: () => b,
-  aR: () => T,
-  q1: () => y,
-  rD: () => O,
-  xf: () => E
+  LN: () => O,
+  T3: () => E,
+  aR: () => I,
+  q1: () => b,
+  rD: () => y,
+  xf: () => g
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -20,11 +20,10 @@ var Chunk473749 = require("./473749.js"),
   Chunk260722 = require("./260722.js"),
   Chunk473007 = require("./473007.js"),
   Chunk800651 = require("./800651.js"),
-  Chunk277537 = require("./277537.js"),
   Chunk652262 = require("./652262.js"),
   Chunk631885 = require("./631885.js"),
   Chunk484710 = require("./484710.js");
-let E = () => {
+let g = () => {
     let e = (0, Chunk652262.F)(),
       t = Chunk722687.sx.useControlledSetting(null == module ? true : module.id);
     return null == module ? null : {
@@ -40,7 +39,7 @@ let E = () => {
       explicitContentGuilds: Chunk524437.Q4.BLUR
     }
   },
-  b = () => {
+  E = () => {
     let e = (0, Chunk652262.F)(),
       t = Chunk722687.up.useControlledSetting(null == module ? true : module.id);
     if (null == module) return null;
@@ -59,34 +58,33 @@ let E = () => {
       goreContentGuilds: Chunk524437.Q4.BLUR
     }
   },
-  y = () => {
+  b = () => {
     let e = (0, Chunk652262.F)(),
       t = Chunk722687.Ov.useControlledSetting(null == module ? true : module.id),
       n = Chunk722687.vV.useControlledSetting(null == module ? true : module.id);
     return null != require ? require : !!exports || exports
   };
 
-function O() {
+function y() {
   let e = (0, Chunk652262.F)(),
     t = Chunk722687.vB.useControlledSetting(null == module ? true : module.id),
     n = Chunk473749.useMemo(() => (0, Chunk88658.bL)(exports), [exports]);
   return require.mutualGuilds && !require.all
 }
 
-function v() {
+function O() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    t = (0, Chunk631885.AZ)(),
-    n = (0, Chunk277537.PO)("settings-controls");
-  return (null == module ? true : module.nsfwAllowed) === false && exports && require
+    t = (0, Chunk631885.AZ)();
+  return (null == module ? true : module.nsfwAllowed) === false && exports
 }
 
-function S(e) {
-  let t = (0, m.M)();
+function v(e) {
+  let t = (0, _.M)();
   return (0, i.e7)([f.Z], () => f.Z.hasConsented(t, e))
 }
 
-function I(e) {
-  let t = (0, m.M)();
+function S(e) {
+  let t = (0, _.M)();
   return r.useCallback(async n => {
     if (null == t) return;
     let r = n ? [e] : [],
@@ -94,14 +92,14 @@ function I(e) {
     try {
       await d.ZP.updateTeenConsents(t, r, i)
     } catch (e) {
-      s.Z.showFailedToast(g.wQ.GENERIC_ERROR)
+      s.Z.showFailedToast(h.wQ.GENERIC_ERROR)
     }
   }, [t, e])
 }
 
-function T(e) {
+function I(e) {
   return {
-    hasConsented: S(e),
-    updateConsent: I(e)
+    hasConsented: v(e),
+    updateConsent: S(e)
   }
 }

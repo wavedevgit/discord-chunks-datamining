@@ -1,1 +1,0 @@
-{"id":"277537","type":"experiment","data":{"kind":"user","id":"2025-07_family_center_v2","label":"Family Center V2","defaultConfig":{"enabled":false},"commonTriggerPoint":"Chunk987338.$P.CONNECTION_OPEN","treatments":[{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

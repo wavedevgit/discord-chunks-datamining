@@ -22,15 +22,15 @@ var Chunk54381 = require("./54381.js"),
 let v = e => {
   let {
     message: t
-  } = e, n = (0, o.ZP)(t), v = (0, i.e7)([g.Z], () => g.Z.getChannel(t.channel_id)), _ = l.useMemo(() => (0, s.Z)(t), [t]), {
-    content: j
-  } = (0, b.Z)(_, {
+  } = e, n = (0, o.ZP)(t), v = (0, i.e7)([g.Z], () => g.Z.getChannel(t.channel_id)), j = l.useMemo(() => (0, s.Z)(t), [t]), {
+    content: _
+  } = (0, b.Z)(j, {
     hideSimpleEmbedContent: false
   }), y = p.jU.useSetting(), O = l.useCallback(() => {
     let {
       leadingIcon: e,
       trailingIcon: n
-    } = (0, m.f)(t, j, false, false, "", {
+    } = (0, m.f)(t, _, false, false, "", {
       leadingIconClass: h.attachmentIcon,
       trailingIconClass: h.attachmentIcon,
       iconSize: f.WW
@@ -39,11 +39,11 @@ let v = e => {
       className: h.contentContainer,
       children: [e, (0, r.jsx)(c.ZP, {
         message: t,
-        content: j,
+        content: _,
         compact: y
       }), n]
     })
-  }, [t, j, y]);
+  }, [t, _, y]);
   return null == v ? null : (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsx)(a.Heading, {

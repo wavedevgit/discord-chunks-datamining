@@ -21,7 +21,7 @@ let f = e => {
     user: t,
     channelId: n,
     reportId: f
-  } = e, x = c.Z.getDMFromUserId(t.id), h = (0, i.e7)([c.Z], () => c.Z.getChannel(n), [n]), v = l.useMemo(() => m.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), _ = (0, i.e7)([u.ZP], () => null == x ? null : u.ZP.isChannelMuted(null, x)), [j, y] = l.useState(null != _ && _), O = l.useCallback(() => {
+  } = e, x = c.Z.getDMFromUserId(t.id), h = (0, i.e7)([c.Z], () => c.Z.getChannel(n), [n]), v = l.useMemo(() => m.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), j = (0, i.e7)([u.ZP], () => null == x ? null : u.ZP.isChannelMuted(null, x)), [_, y] = l.useState(null != j && j), O = l.useCallback(() => {
     null != x && (y(true), s.ZP.trackWithMetadata(p.rMx.IAR_MUTE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: f
@@ -34,8 +34,8 @@ let f = e => {
       username: v
     }),
     description: g.intl.string(g.t["yM/+AJ"]),
-    buttonText: j ? g.intl.string(g.t.E8x4Nj) : g.intl.string(g.t.HITUcR),
-    buttonDisabled: j,
+    buttonText: _ ? g.intl.string(g.t.E8x4Nj) : g.intl.string(g.t.HITUcR),
+    buttonDisabled: _,
     onButtonPress: O
   })
 }
