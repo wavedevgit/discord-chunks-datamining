@@ -113,10 +113,17 @@ function E(e, t, n) {
     formatInline: o = false,
     postProcessor: s,
     contentMessage: l
-  } = n, c = false, u = false, d = e((null != l ? l : t).content, true, h(t, n), (e, n) => (Array.isArray(e) || (e = [e]), e.length >= r.dc - 10 && (u = true), a && (e = N(e, (null != l ? l : t).embeds)), o || (e = S(e, n)), e = b(e), t.embeds.length > 0 && (c = T(e, n)), o && (e = P(e)), null != s && (e = s(e, n)), e));
+  } = n, c = false, u = false, d = (null != l ? l : t).content, f = e(d, true, h(t, n), (e, n) => (Array.isArray(e) || (e = [e]), e.length >= r.dc - 10 && (u = true, e = [{
+    type: "text",
+    content: d,
+    originalMatch: {
+      index: 0,
+      0: d
+    }
+  }]), a && (e = N(e, (null != l ? l : t).embeds)), o || (e = S(e, n)), e = b(e), t.embeds.length > 0 && (c = T(e, n)), o && (e = P(e)), null != s && (e = s(e, n)), e));
   return {
     hasSpoilerEmbeds: c,
-    content: d,
+    content: f,
     hasBailedAst: u
   }
 }

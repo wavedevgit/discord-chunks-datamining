@@ -1,1 +1,0 @@
-{"id":"479661","type":"experiment","data":{"id":"2025-08_custom_theme_share_send","kind":"user","label":"Custom Theme Share Send","defaultConfig":{"enabled":false},"commonTriggerPoint":"Chunk987338.$P.CONNECTION_OPEN","treatments":[{"id":1,"label":"Enables sharing functionality for custom client themes","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

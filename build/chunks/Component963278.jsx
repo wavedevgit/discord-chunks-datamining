@@ -42,7 +42,7 @@ let h = e => {
             sourceButton: "shelf block see all",
             categorySkuId: t.categorySkuId,
             isInternalShopDeeplink: true,
-            isOrbsExclusive: null == v ? true : v.isOrbsExclusive
+            isOrbsExclusive: (null == v ? true : v.isOrbsExclusive) && a !== b.AW.ORBS
           })
         }
       })]
