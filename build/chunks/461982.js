@@ -11,5 +11,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.vB)(Chunk313789.n.ACTIVITY_SECTION, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.SmHCFf),
-  buildLayout: () => [Chunk199548.ts, Chunk191694.q, Chunk215871.b]
+  buildLayout: () => [Chunk199548.ts, Chunk191694.qn, Chunk215871.b]
 })

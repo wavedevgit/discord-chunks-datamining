@@ -2,7 +2,10 @@
 /** chunk id: 293389, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => K
+  ZP: () => Q,
+  bs: () => q,
+  pJ: () => z,
+  qI: () => K
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -418,73 +421,91 @@ let W = (0, Chunk251625.oH)(function() {
     for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require];
     return new Set(exports.map(e => e.exePath))
   }),
-  K = function(e) {
+  K = () => {
+    let e = (0, Chunk442837.Wu)([Chunk594190.ZP], () => Chunk594190.ZP.getGamesSeen(false)),
+      {
+        runningGame: t,
+        overrideExePaths: n
+      } = (0, Chunk442837.cj)([Chunk594190.ZP], () => ({
+        runningGame: Chunk594190.ZP.getVisibleGame(),
+        overrideExePaths: W(...Chunk594190.ZP.getOverrides())
+      }));
+    Chunk473749.useEffect(() => ((0, Chunk320724.Ky)(), Chunk320724.P7), []);
+    let a = Chunk473749.useMemo(() => module.reduce((e, t) => ((0, b.le)(t) && e.push(t), e), []), [module]);
+    return null != exports ? (0, Chunk54381.jsx)(V, {
+      rawGame: exports,
+      isOverride: require.has(exports.exePath),
+      nowPlaying: true,
+      subgames: exports.id === Chunk817788.eB ? Chunk120356 : true
+    }, (0, Chunk594190.rH)(exports)) : (0, Chunk54381.jsx)(H, {})
+  },
+  z = () => {
+    let e = Chunk473749.useRef(null);
+    return (0, Chunk54381.jsxs)("div", {
+      className: o()(Chunk675433.nowPlayingAdd, Chunk478411.marginReset),
+      children: [(0, Chunk54381.jsx)("span", {
+        children: Chunk388032.intl.string(Chunk388032.t.xwhoqM)
+      }), (0, Chunk54381.jsx)(Chunk481060.yRy, {
+        targetElementRef: module,
+        renderPopout: e => {
+          let {
+            closePopout: t
+          } = e;
+          return (0, r.jsx)(B, {
+            onClose: t
+          })
+        },
+        align: "center",
+        position: "bottom",
+        children: t => (0, r.jsx)(d.Avr, k(j({}, t), {
+          buttonRef: e,
+          variant: "primary",
+          textVariant: "text-sm/medium",
+          text: P.intl.string(P.t.GjgdXe)
+        }))
+      })]
+    })
+  },
+  q = e => {
+    let {
+      hideHeader: t = false
+    } = e, n = (0, s.Wu)([m.ZP], () => m.ZP.getGamesSeen(false)), a = (0, s.e7)([m.ZP], () => W(...m.ZP.getOverrides()));
+    i.useEffect(() => ((0, h.Ky)(), h.P7), []);
+    let {
+      gameHistory: o,
+      robloxSubgameHistory: l
+    } = i.useMemo(() => n.reduce((e, t) => ((0, b.le)(t) ? e.robloxSubgameHistory.push(t) : e.gameHistory.push(t), e), {
+      gameHistory: [],
+      robloxSubgameHistory: []
+    }), [n]);
+    return 0 === o.length ? (0, r.jsx)(Y, {
+      children: (0, r.jsx)(d.OZU, {
+        children: P.intl.string(P.t["1yiJwn"])
+      })
+    }) : (0, r.jsx)(d.C3N, {
+      label: t ? true : P.intl.string(P.t.jCOdvx),
+      description: t ? true : P.intl.format(P.t.KPA3m9, {
+        igdbLink: F
+      }),
+      children: (0, r.jsx)("div", {
+        children: o.map(e => (0, r.jsx)(V, {
+          rawGame: e,
+          isOverride: a.has(e.exePath),
+          subgames: e.id === E.eB ? l : true
+        }, (0, m.rH)(e)))
+      })
+    })
+  },
+  Q = function(e) {
     let {
       className: t,
       showHeader: n = true
-    } = e, a = (0, s.Wu)([m.ZP], () => m.ZP.getGamesSeen(false)), {
-      runningGame: l,
-      overrideExePaths: c
-    } = (0, s.cj)([m.ZP], () => ({
-      runningGame: m.ZP.getVisibleGame(),
-      overrideExePaths: W(...m.ZP.getOverrides())
-    })), {
-      gameHistory: u,
-      robloxSubgameHistory: f
-    } = i.useMemo(() => a.reduce((e, t) => ((0, b.le)(t) ? e.robloxSubgameHistory.push(t) : e.gameHistory.push(t), e), {
-      gameHistory: [],
-      robloxSubgameHistory: []
-    }), [a]), p = i.useRef(null);
-
-    function _() {
-      return 0 === u.length ? (0, r.jsx)(Y, {
-        children: (0, r.jsx)(d.OZU, {
-          children: P.intl.string(P.t["1yiJwn"])
-        })
-      }) : (0, r.jsx)(d.C3N, {
-        className: x.marginTop40,
-        label: P.intl.string(P.t.jCOdvx),
-        description: P.intl.format(P.t.KPA3m9, {
-          igdbLink: F
-        }),
-        children: u.map(e => (0, r.jsx)(V, {
-          rawGame: e,
-          isOverride: c.has(e.exePath),
-          subgames: e.id === E.eB ? f : true
-        }, (0, m.rH)(e)))
-      })
-    }
-    return i.useEffect(() => ((0, h.Ky)(), h.P7), []), (0, r.jsxs)(C.Z, {
+    } = e;
+    return (0, r.jsxs)(C.Z, {
       title: n ? P.intl.string(P.t.AVDyEj) : null,
       className: t,
-      children: [null != l ? (0, r.jsx)(V, {
-        rawGame: l,
-        isOverride: c.has(l.exePath),
-        nowPlaying: true,
-        subgames: l.id === E.eB ? f : true
-      }, (0, m.rH)(l)) : (0, r.jsx)(H, {}), (0, r.jsxs)("div", {
-        className: o()(R.nowPlayingAdd, x.marginReset, x.marginTop8, x.marginBottom20),
-        children: [(0, r.jsx)("span", {
-          children: P.intl.string(P.t.xwhoqM)
-        }), (0, r.jsx)(d.yRy, {
-          targetElementRef: p,
-          renderPopout: e => {
-            let {
-              closePopout: t
-            } = e;
-            return (0, r.jsx)(B, {
-              onClose: t
-            })
-          },
-          align: "center",
-          position: "bottom",
-          children: e => (0, r.jsx)(d.Avr, k(j({}, e), {
-            buttonRef: p,
-            variant: "primary",
-            textVariant: "text-sm/medium",
-            text: P.intl.string(P.t.GjgdXe)
-          }))
-        })]
-      }), _()]
+      children: [(0, r.jsx)(K, {}), (0, r.jsx)(z, {}), (0, r.jsx)(d.izJ, {
+        gap: 20
+      }), (0, r.jsx)(q, {})]
     })
   }

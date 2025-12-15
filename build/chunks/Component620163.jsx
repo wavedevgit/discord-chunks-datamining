@@ -1593,7 +1593,7 @@ let eU = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eR.oAB.REGISTERED_GAMES,
         searchableTitles: [eD.intl.string(eD.t.AVDyEj)],
         label: eD.intl.string(eD.t.AVDyEj),
-        element: ec.Z,
+        element: ec.ZP,
         predicate: () => !eK && (0, eS.Jw)()
       },
       [eN.s6.OVERLAY]: {
