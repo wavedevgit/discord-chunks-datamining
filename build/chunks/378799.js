@@ -353,8 +353,8 @@ class A extends C {
     if (null != t) {
       var i;
       let e = null == (i = this.cachedKeyMapEntries.find(e => {
-        let [t, n] = e;
-        return n == n
+        let [n, r] = e;
+        return r === t
       })) ? true : i[0];
       if (null == e) return;
       return v({
