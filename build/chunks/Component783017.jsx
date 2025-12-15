@@ -1,7 +1,7 @@
 /** Chunk was on 84992 **/
 /** chunk id: 783017, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => Z
 });
 var Chunk54381 = require("./54381.js"),
   Chunk512722 = require("./512722.js"),
@@ -20,18 +20,18 @@ var Chunk54381 = require("./54381.js"),
   Chunk530641 = require("./530641.js"),
   Chunk491567 = require("./491567.js"),
   Chunk419698 = require("./419698.js");
-let m = t => {
+let Z = t => {
   let {
     type: e,
     text: n,
     buttonText: s,
-    buttonLoading: m,
+    buttonLoading: Z,
     hideClose: N,
     onClose: f
-  } = t, x = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), E = (0, a.e7)([u.default], () => {
+  } = t, x = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), _ = (0, a.e7)([u.default], () => {
     let t = u.default.getCurrentUser();
     return i()(null != t, "UserSettingsProfileCustomization: user cannot be undefined"), t
-  }), _ = (0, L.rO)() ? Z.Z : g.Z, I = (t => {
+  }), E = (0, L.rO)() ? p.Z : g.Z, I = (t => {
     switch (t) {
       case H.Yk.PREMIUM_UPDATED:
         return M.intl.string(M.t["75Wt0E"]);
@@ -51,7 +51,7 @@ let m = t => {
     }), (0, l.jsxs)("div", {
       className: h.nameplatePreviewContainer,
       children: [x ? (0, l.jsx)("img", {
-        src: p.Z,
+        src: m.Z,
         alt: "",
         className: h.nameplateGlow
       }) : (0, l.jsx)(d.Z, {
@@ -61,13 +61,13 @@ let m = t => {
         loop: true,
         className: h.nameplateGlow,
         children: (0, l.jsx)("source", {
-          src: _
+          src: E
         })
       }), (0, l.jsx)(o.Z, {
-        user: E,
+        user: _,
         isHighlighted: true,
         nameplate: null,
-        nameplateData: E.nameplate,
+        nameplateData: _.nameplate,
         className: h.nameplatePreview,
         nameplatePreviewSize: "large"
       })]
@@ -81,7 +81,7 @@ let m = t => {
         fullWidth: true,
         text: s,
         onClick: f,
-        loading: m
+        loading: Z
       })
     })]
   })

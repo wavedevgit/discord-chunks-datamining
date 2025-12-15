@@ -41,18 +41,18 @@ function v(t) {
     [a, c] = (0, C.Wu)([M.Z], () => [M.Z.get(l), M.Z.get(n)]);
   if (r()(null != a && null != c, "Missing startingPlan or newPlan"), x.Y1.indexOf(l) < x.Y1.indexOf(n)) switch (n) {
       case x.Xh.PREMIUM_MONTH_TIER_1:
-        e = P.intl.string(P.t.knvOVz), _.X7u.has(null != i ? i : _.HeQ.UNKNOWN) && (e = P.intl.format(P.t.o6hBiR, {}));
+        e = P.intl.string(P.t.knvOVz), E.X7u.has(null != i ? i : E.HeQ.UNKNOWN) && (e = P.intl.format(P.t.o6hBiR, {}));
         break;
       case x.Xh.PREMIUM_MONTH_TIER_2:
-        e = P.intl.string(P.t.f8Dquh), _.X7u.has(null != i ? i : _.HeQ.UNKNOWN) && (e = P.intl.format(P.t.A4THYt, {}));
+        e = P.intl.string(P.t.f8Dquh), E.X7u.has(null != i ? i : E.HeQ.UNKNOWN) && (e = P.intl.format(P.t.A4THYt, {}));
         break;
       case x.Xh.PREMIUM_YEAR_TIER_1:
-        e = P.intl.string(P.t.YZd5rw), _.X7u.has(null != i ? i : _.HeQ.UNKNOWN) && (e = P.intl.format(P.t.MHAxpE, {}));
+        e = P.intl.string(P.t.YZd5rw), E.X7u.has(null != i ? i : E.HeQ.UNKNOWN) && (e = P.intl.format(P.t.MHAxpE, {}));
         break;
       case x.Xh.PREMIUM_YEAR_TIER_2:
         e = P.intl.formatToPlainString(P.t["M/Lknl"], {
           numFreeGuildSubscriptions: x.cb
-        }), _.X7u.has(null != i ? i : _.HeQ.UNKNOWN) && (e = P.intl.format(P.t.mULxLW, {
+        }), E.X7u.has(null != i ? i : E.HeQ.UNKNOWN) && (e = P.intl.format(P.t.mULxLW, {
           numFreeGuildSubscriptions: x.cb
         }));
         break;
@@ -63,6 +63,12 @@ function v(t) {
       case x.Xh.PREMIUM_MONTH_TIER_0:
       case x.Xh.PREMIUM_YEAR_TIER_0:
         e = P.intl.string(P.t["XEoQ7+"]);
+        break;
+      case x.Xh.PREMIUM_GROUP_MONTH:
+        e = P.intl.formatToPlainString(T.default.pDiwHe, {
+          premiumGroupProductName: (0, _.sO)(),
+          totalSeats: _.v$
+        });
         break;
       default:
         throw Error("Unexpected planId: ".concat(n))
@@ -97,8 +103,8 @@ function j(t) {
       isDowngrade: k,
       hideClose: j,
       postSuccessGuild: b,
-      paymentSourceType: w,
-      startingFractionalPremiumEndsAt: U,
+      paymentSourceType: U,
+      startingFractionalPremiumEndsAt: w,
       customCTAType: A
     } = t,
     {
@@ -107,32 +113,32 @@ function j(t) {
       isPremiumGroupPurchase: X
     } = (0, u.JL)(),
     {
-      theme: y
+      theme: D
     } = (0, c.TCT)(),
-    D = (0, C.e7)([h.Z], () => null != H ? h.Z.get(H.id) : null),
-    Y = (0, p.qH)(U);
+    y = (0, C.e7)([h.Z], () => null != H ? h.Z.get(H.id) : null),
+    Y = (0, m.qH)(w);
   i.useEffect(() => {
-    if (null == H || null != D) return;
+    if (null == H || null != y) return;
     let {
       applicationId: t,
       id: e
     } = H;
-    (0, d.$N)(t, e).catch(_.VqG)
-  }, [H, D]);
+    (0, d.$N)(t, e).catch(E.VqG)
+  }, [H, y]);
   let B = t => X ? P.intl.formatToPlainString(T.default.pDiwHe, {
-    premiumGroupProductName: (0, E.sO)(),
-    totalSeats: E.v$
-  }) : t.skuId === x.Si.TIER_0 ? _.X7u.has(null != w ? w : _.HeQ.UNKNOWN) ? P.intl.format(P.t.o6hBiR, {}) : P.intl.string(P.t["AGf/ye"]) : t.skuId === x.Si.TIER_1 ? _.X7u.has(null != w ? w : _.HeQ.UNKNOWN) ? P.intl.format(P.t.o6hBiR, {}) : P.intl.string(P.t.knvOVz) : _.X7u.has(null != w ? w : _.HeQ.UNKNOWN) ? P.intl.format(P.t.A4THYt, {}) : a ? P.intl.string(P.t["g52y/r"]) : P.intl.string(P.t.aTUr3Z);
+    premiumGroupProductName: (0, _.sO)(),
+    totalSeats: _.v$
+  }) : t.skuId === x.Si.TIER_0 ? E.X7u.has(null != U ? U : E.HeQ.UNKNOWN) ? P.intl.format(P.t.o6hBiR, {}) : P.intl.string(P.t["AGf/ye"]) : t.skuId === x.Si.TIER_1 ? E.X7u.has(null != U ? U : E.HeQ.UNKNOWN) ? P.intl.format(P.t.o6hBiR, {}) : P.intl.string(P.t.knvOVz) : E.X7u.has(null != U ? U : E.HeQ.UNKNOWN) ? P.intl.format(P.t.A4THYt, {}) : a ? P.intl.string(P.t["g52y/r"]) : P.intl.string(P.t.aTUr3Z);
   if ("deeplink_to_desktop_app" === A) e = (0, s.jsx)("div", {
     className: R.text,
     children: (0, s.jsxs)("p", {
       children: [P.intl.string(P.t.bIVRSQ), " ", P.intl.string(P.t["0UJqOy"])]
     })
   });
-  else if (null != D) e = (0, s.jsx)("div", {
+  else if (null != y) e = (0, s.jsx)("div", {
     className: R.text,
     children: P.intl.format(P.t["tsQOs+"], {
-      skuName: D.name
+      skuName: y.name
     })
   });
   else if (Y && !k) {
@@ -143,7 +149,7 @@ function j(t) {
         children: P.intl.string(P.t["L9lcG/"])
       }), (0, s.jsx)("p", {
         children: P.intl.format(P.t.EoDFuN, {
-          helpCenterLink: Z.Z.getArticleURL(_.BhN.FRACTIONAL_PREMIUM_ABOUT)
+          helpCenterLink: p.Z.getArticleURL(E.BhN.FRACTIONAL_PREMIUM_ABOUT)
         })
       })]
     }) : (t.skuId === x.Si.TIER_1 || t.skuId === x.Si.TIER_2) && (e = (0, s.jsxs)("div", {
@@ -152,7 +158,7 @@ function j(t) {
         children: P.intl.string(P.t.UPpbP3)
       }), (0, s.jsx)("p", {
         children: P.intl.format(P.t.EoDFuN, {
-          helpCenterLink: Z.Z.getArticleURL(_.BhN.FRACTIONAL_PREMIUM_ABOUT)
+          helpCenterLink: p.Z.getArticleURL(E.BhN.FRACTIONAL_PREMIUM_ABOUT)
         })
       })]
     }))
@@ -182,32 +188,32 @@ function j(t) {
   }
   let Q = g.ZP.getPremiumType(l);
   r()(null != Q, "premium type should not be null in purchase confirmation");
-  let [W, K] = i.useState(false), G = i.useCallback(() => {
-    null != L && (L(), S === I.cL.APPLE_PAYMENT_LINK && K(true))
+  let [W, G] = i.useState(false), K = i.useCallback(() => {
+    null != L && (L(), S === I.cL.APPLE_PAYMENT_LINK && G(true))
   }, [L, S]);
-  n = X ? P.intl.string(T.default.clIveA) : "deeplink_to_desktop_app" === A || S === I.cL.APPLE_PAYMENT_LINK ? P.intl.string(P.t.qXV2XU) : null != D ? P.intl.formatToPlainString(P.t["1qGgm4"], {
-    skuName: D.name
+  n = X ? P.intl.string(T.default.clIveA) : "deeplink_to_desktop_app" === A || S === I.cL.APPLE_PAYMENT_LINK ? P.intl.string(P.t.qXV2XU) : null != y ? P.intl.formatToPlainString(P.t["1qGgm4"], {
+    skuName: y.name
   }) : k ? P.intl.string(P.t.QJ9EyM) : null != b ? P.intl.string(P.t.ta3cXY) : P.intl.string(P.t.TkTvBz);
-  let V = () => _.X7u.has(null != w ? w : _.HeQ.UNKNOWN) ? N.ZP.Types.PREMIUM_PAYMENT_STARTED : null != o ? N.ZP.Types.PREMIUM_UPDATED : N.ZP.Types.PREMIUM_ACTIVATED;
+  let V = () => E.X7u.has(null != U ? U : E.HeQ.UNKNOWN) ? N.ZP.Types.PREMIUM_PAYMENT_STARTED : null != o ? N.ZP.Types.PREMIUM_UPDATED : N.ZP.Types.PREMIUM_ACTIVATED;
   return O ? (0, s.jsx)(f.Z, {
     type: V(),
     text: e,
     buttonText: n,
     hideClose: j,
-    onClose: G,
+    onClose: K,
     buttonLoading: W
   }) : (0, s.jsxs)("div", {
     className: R.confirmation,
-    children: [(0, s.jsx)(m.Z, {
+    children: [(0, s.jsx)(Z.Z, {
       type: V(),
-      theme: y
+      theme: D
     }), e, j ? null : (0, s.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: R.button,
       children: (0, s.jsx)(c.Button, {
         variant: "primary",
         text: n,
-        onClick: G,
+        onClick: K,
         loading: W
       })
     })]
