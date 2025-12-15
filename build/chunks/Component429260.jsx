@@ -59,7 +59,7 @@ function E() {
 function P(e) {
   let t = (0, i.e7)([g.Z], () => g.Z.hasReportedMessage(e.channel_id, e.id)),
     n = (0, b.sP)(e);
-  return ((0, s.zq)(() => {
+  return ((0, c.zq)(() => {
     n && (0, u.Q3)(l.z.REPORT_TO_MOD_NEW_TAG, {
       dismissAction: v.L.AUTO_DISMISS
     })
@@ -77,7 +77,7 @@ function P(e) {
 }
 
 function T(e) {
-  let t = (0, i.e7)([c.ZP], () => c.ZP.get("iar_testing")),
+  let t = (0, i.e7)([s.ZP], () => s.ZP.get("iar_testing")),
     n = (0, i.e7)([y.default], () => y.default.getCurrentUser());
   return (0, m.a4)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.sNh, {
     id: "staff-test-message-report",

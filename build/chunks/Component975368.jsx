@@ -14,8 +14,8 @@ var Chunk95015 = require("./95015.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e) {
-  let t = (0, s.X)("use-save-voice-message-audio");
-  return (0, i.yE)(e.flags, c.iLy.IS_VOICE_MESSAGE) && t ? (0, r.jsx)(l.sNh, {
+  let t = (0, c.X)("use-save-voice-message-audio");
+  return (0, i.yE)(e.flags, s.iLy.IS_VOICE_MESSAGE) && t ? (0, r.jsx)(l.sNh, {
     id: "save-voice-message-audio",
     label: u.intl.string(u.t.vbAEaA),
     icon: l._8t,

@@ -26,7 +26,7 @@ var Chunk54381 = require("./54381.js"),
 function S(e, t) {
   let {
     reducedMotion: n
-  } = i.useContext(s.Sfi), l = (0, f.$R)(t), o = (0, a.e7)([b.Z], () => (t.isPrivate() || b.Z.can(m.Plq.ADD_REACTIONS, t)) && l, [t, l]), p = (0, c.MZ)(t.getGuildId());
+  } = i.useContext(c.Sfi), l = (0, f.$R)(t), o = (0, a.e7)([b.Z], () => (t.isPrivate() || b.Z.can(m.Plq.ADD_REACTIONS, t)) && l, [t, l]), p = (0, s.MZ)(t.getGuildId());
   if (!g.nc.getSetting() || !o) return null;
   let j = p.filter(e => !y.ZP.isEmojiFilteredOrLocked({
     emoji: e,
@@ -34,7 +34,7 @@ function S(e, t) {
     intention: v.Hz.REACTION
   })).slice(0, 12).map((i, l) => {
     var o, a;
-    return (0, r.jsx)(s.sNh, {
+    return (0, r.jsx)(c.sNh, {
       color: "default",
       id: null != (a = null != (o = i.id) ? o : i.optionallyDiverseSequence) ? a : i.name,
       label: ":".concat(i.name, ":"),
@@ -77,7 +77,7 @@ function S(e, t) {
       dontCloseOnActionIfHoldingShiftKey: true
     }, l)
   });
-  return (0, r.jsx)(s.sNh, {
+  return (0, r.jsx)(c.sNh, {
     id: "add-reaction",
     label: h.intl.string(h.t.lfIHs4),
     action: () => {
@@ -87,11 +87,11 @@ function S(e, t) {
     },
     color: "default",
     children: (0, r.jsxs)(r.Fragment, {
-      children: [j, (0, r.jsx)(s.Clw, {}), (0, r.jsx)(s.sNh, {
+      children: [j, (0, r.jsx)(c.Clw, {}), (0, r.jsx)(c.sNh, {
         color: "default",
         id: "other-reactions",
         label: h.intl.string(h.t["OBCR+p"]),
-        icon: s.EO4,
+        icon: c.EO4,
         action: () => {
           O.S.dispatchKeyed(m.LPv.TOGGLE_REACTION_POPOUT, e.id, {
             emojiPicker: true

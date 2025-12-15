@@ -27,7 +27,7 @@ function h(e) {
     analyticsLocations: S
   } = (0, u.ZP)(), E = null == (t = e.interactionMetadata) ? true : t.authorizing_integration_owners[l.Y.USER_INSTALL], P = null == (n = e.interactionMetadata) ? true : n.authorizing_integration_owners[l.Y.GUILD_INSTALL], T = null == (h = e.interactionMetadata) ? true : h.user.id, _ = (0, o.e7)([y.default], () => y.default.getUser(E)), I = (0, o.e7)([O.Z], () => O.Z.getGuild(P)), Z = p.Z.getChannel(e.channel_id), w = null == Z ? true : Z.getGuildId(), A = (0, o.e7)([y.default], () => y.default.getUser(T));
   if (i.useEffect(() => {
-      null == _ && null != E && (0, s.PR)(E)
+      null == _ && null != E && (0, c.PR)(E)
     }, [_, E]), !(0, d.a)(e)) return null;
   null == A && (A = new b.Z(null == (j = e.interactionMetadata) ? true : j.user));
   let N = null;
@@ -51,7 +51,7 @@ function h(e) {
       sourceAnalyticsLocations: S
     }),
     className: v.interactionInfoMenuItem,
-    iconLeft: () => (0, r.jsx)(c.Z, {
+    iconLeft: () => (0, r.jsx)(s.Z, {
       user: _,
       size: a.EFr.SIZE_20
     }),
@@ -71,7 +71,7 @@ function h(e) {
         sourceAnalyticsLocations: S
       }),
       className: v.interactionInfoMenuItem,
-      iconLeft: () => (0, r.jsx)(c.Z, {
+      iconLeft: () => (0, r.jsx)(s.Z, {
         user: A,
         size: a.EFr.SIZE_20
       }),

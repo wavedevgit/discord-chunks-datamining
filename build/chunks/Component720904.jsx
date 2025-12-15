@@ -31,13 +31,13 @@ function S(e) {
   } = e, {
     animated: i,
     src: o,
-    surrogates: s
+    surrogates: c
   } = t;
   return null == o && null != t.id ? o = p.ZP.getEmojiURL({
     id: t.id,
     animated: !!i,
     size: 20
-  }) : null == o && (o = O.ZP.getURL(s)), (0, r.jsx)(a.u, {
+  }) : null == o && (o = O.ZP.getURL(c)), (0, r.jsx)(a.u, {
     text: (0, O.nY)(t),
     hideOnClick: true,
     spacing: 16,
@@ -51,7 +51,7 @@ function S(e) {
       }),
       children: null == o || "" === o.trim() ? (0, r.jsx)("span", {
         className: l()("emoji", "emoji-text", h.icon),
-        children: s
+        children: c
       }) : (0, r.jsx)("img", {
         className: h.icon,
         src: o,
@@ -62,7 +62,7 @@ function S(e) {
 }
 
 function E(e, t) {
-  let n = (0, c.MZ)(t.guild_id).filter(e => {
+  let n = (0, s.MZ)(t.guild_id).filter(e => {
     var n;
     return !(e.useSpriteSheet && j.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !O.ZP.isEmojiPremiumLocked({
       emoji: e,
@@ -73,11 +73,11 @@ function E(e, t) {
   n.length > 4 && (n.length = 4);
   let i = g.nc.useSetting(),
     l = (0, f.$R)(t);
-  return (0, o.e7)([b.Z], () => i && l && (t.isPrivate() || b.Z.can(y.Plq.ADD_REACTIONS, t)), [t, l, i]) && n.length > 0 ? (0, r.jsx)(s.kSQ, {
+  return (0, o.e7)([b.Z], () => i && l && (t.isPrivate() || b.Z.can(y.Plq.ADD_REACTIONS, t)), [t, l, i]) && n.length > 0 ? (0, r.jsx)(c.kSQ, {
     className: h.wrapper,
     children: n.map((n, i) => {
       var l;
-      return (0, r.jsx)(s.sNh, {
+      return (0, r.jsx)(c.sNh, {
         id: "quickreact-".concat(null != (l = n.id) ? l : i),
         render: e => {
           let {

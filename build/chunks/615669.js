@@ -1,7 +1,7 @@
 /** Chunk was on 37220 **/
 /** chunk id: 615669, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s,
+  Z: () => c,
   z: () => o
 }), require("./539854.js");
 var r, Chunk442837 = require("./442837.js"),
@@ -9,7 +9,7 @@ var r, Chunk442837 = require("./442837.js"),
   o = ((r = {})[r.END_EARLY = 0] = "END_EARLY", r);
 let a = [];
 
-function s(e) {
+function c(e) {
   let t = (0, i.e7)([l.default], () => l.default.getId()),
     {
       poll: n

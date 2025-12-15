@@ -315,16 +315,7 @@ class k extends Chunk473749.PureComponent {
       })))
     }), D(this, "viewBackupCodes", e => {
       (0, l.h7j)(t => (0, r.jsx)(p.Z, j(x({}, t), {
-        handleSubmit: e => c.Z.confirmViewBackupCodes(e, false).then(() => t.onClose()),
-        maxLength: 8,
-        title: P.intl.string(P.t["mGppp/"]),
-        label: P.intl.string(P.t.TjGb4Q),
-        forceNoPlaceholder: true,
-        retryPrompt: P.intl.string(P.t.PZgmxv),
-        retrySuccessMessage: P.intl.string(P.t.j4qu8n),
-        onRetry: () => c.Z.sendMFABackupCodesVerificationKeyEmail(e),
-        actionText: P.intl.string(P.t.piW6YS),
-        helpMessage: P.intl.string(P.t["37S9yU"])
+        password: e
       })), {
         stackingBehavior: "stack"
       })

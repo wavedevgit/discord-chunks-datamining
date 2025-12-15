@@ -80,129 +80,152 @@ function B(e) {
       disabled: l,
       loading: r,
       text: A.intl.string(A.t.XiOHRX)
-    }), a ? (0, i.jsx)(C.Z, {
+    }), a ? (0, i.jsx)(v.Z, {
       onClick: n
     }) : null]
   })
 }
 
 function R(e) {
-  var t;
   let {
-    handleStepChange: n,
-    handleClose: l
+    handleStepChange: t,
+    handleClose: n
   } = e, {
-    customGiftMessage: p = "",
-    setCustomGiftMessage: C,
-    giftRecipient: S,
-    emojiConfetti: T,
-    soundEffect: O,
-    setEmojiConfetti: W,
-    setSoundEffect: R,
-    giftingOrigin: H
-  } = (0, g.wD)(), {
-    selectedSkuId: F,
-    application: U
-  } = (0, m.JL)(), K = (0, s.e7)([P.default], () => P.default.getCurrentUser()), J = function(e) {
-    let t = (0, u.Z)({
-        location: "Slayer Storefront Gift Customization Step"
-      }),
-      n = function(e) {
-        let t = (0, s.e7)([I.Z], () => I.Z.isConnected() ? I.Z.getChannelId() : null),
-          [n, i] = a.useState([]);
-        return a.useEffect(() => {
-          let n = null != t ? d.Z.getParticipants(t) : [],
-            a = [],
-            l = new Set;
-          for (let t of n) !(0, Z.Io)(t) && !(0, Z._5)(t) || t.user.id === e || l.has(t.user.id) || (l.add(t.user.id), a.push(t));
-          a.sort((e, t) => (0, Z._5)(e) && !(0, Z._5)(t) ? false : (0, Z._5)(t) && !(0, Z._5)(e) ? 1 : 0), i(a.map(e => e.user))
-        }, [t, e]), n
-      }(e);
-    return a.useMemo(() => r().uniqWith([...n, ...t], (e, t) => e.id === t.id), [t, n])
-  }(null == K ? true : K.id), q = (0, s.e7)([w.Z], () => null != F ? w.Z.get(F) : null, [F]), V = (0, y.Do)(q), z = (0, y.a7)(q), Y = (0, E.K)(q, {
-    shouldFetchIfMissing: true
-  }), X = async (e, t) => {};
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(h.C3, {
-      children: (0, i.jsxs)("div", {
-        className: L.stepBody,
-        children: [(0, i.jsxs)("div", {
+    getLeftColumnComponent: l,
+    getRightColumnComponent: p,
+    onStepChange: v,
+    onBackClick: y,
+    disabled: T
+  } = (e => {
+    let {
+      handleStepChange: t,
+      handleClose: n
+    } = e, {
+      customGiftMessage: l = "",
+      setCustomGiftMessage: f,
+      giftRecipient: p,
+      emojiConfetti: h,
+      soundEffect: v,
+      setEmojiConfetti: y,
+      setSoundEffect: T,
+      giftingOrigin: O
+    } = (0, g.wD)(), {
+      selectedSkuId: W,
+      application: B
+    } = (0, m.JL)(), R = (0, s.e7)([P.default], () => P.default.getCurrentUser()), H = function(e) {
+      let t = (0, u.Z)({
+          location: "Slayer Storefront Gift Customization Step"
+        }),
+        n = function(e) {
+          let t = (0, s.e7)([I.Z], () => I.Z.isConnected() ? I.Z.getChannelId() : null),
+            [n, i] = a.useState([]);
+          return a.useEffect(() => {
+            let n = null != t ? d.Z.getParticipants(t) : [],
+              a = [],
+              l = new Set;
+            for (let t of n) !(0, Z.Io)(t) && !(0, Z._5)(t) || t.user.id === e || l.has(t.user.id) || (l.add(t.user.id), a.push(t));
+            a.sort((e, t) => (0, Z._5)(e) && !(0, Z._5)(t) ? false : (0, Z._5)(t) && !(0, Z._5)(e) ? 1 : 0), i(a.map(e => e.user))
+          }, [t, e]), n
+        }(e);
+      return a.useMemo(() => r().uniqWith([...n, ...t], (e, t) => e.id === t.id), [t, n])
+    }(null == R ? true : R.id), F = (0, s.e7)([w.Z], () => null != W ? w.Z.get(W) : null, [W]), U = (0, _.Do)(F), K = (0, _.a7)(F), J = (0, k.K)(F, {
+      shouldFetchIfMissing: true
+    }), q = async (e, t) => {}, V = e => {
+      null != T && T(null == e ? true : e)
+    };
+    return {
+      getLeftColumnComponent: () => {
+        var e;
+        return (0, i.jsxs)("div", {
           className: L.bodyColumnLeft,
-          children: [null != V && (0, i.jsx)(k.p, {
+          children: [null != U && (0, i.jsx)(E.p, {
             containerClassName: L.skuCardImage,
-            cardImage: V,
-            cardBackgroundImage: z,
-            altText: null != (t = null == q ? true : q.name) ? t : "",
+            cardImage: U,
+            cardBackgroundImage: K,
+            altText: null != (e = null == F ? true : F.name) ? e : "",
             shape: "square"
           }), (0, i.jsxs)("div", {
             className: L.giftEffectsContainer,
             children: [(0, i.jsx)(j.Z, {
-              sound: O,
-              onSelect: e => {
-                null != R && R(null == e ? true : e)
-              }
-            }), (0, i.jsx)(v.Z, {
-              setEmojiConfetti: W,
-              emojiConfetti: null == T ? true : T
+              sound: v,
+              onSelect: V
+            }), (0, i.jsx)(x.Z, {
+              setEmojiConfetti: y,
+              emojiConfetti: null == h ? true : h
             })]
           })]
-        }), (0, i.jsxs)("div", {
-          className: L.bodyColumnRight,
-          children: [null != S && (H === G.Wt.USER_PROFILE_WISHLIST || H === G.Wt.DM_CHANNEL_WISHLIST) ? (0, i.jsx)(b.s, {
-            giftRecipient: S
-          }) : (0, i.jsx)(c.Z, {
-            selectedSkuId: F,
-            validateSelectedGift: X,
-            searchableSelectWrapperClassName: L.recipientPickerSelectWrapper,
-            recipients: J
-          }), (0, i.jsx)(x.Z, {
-            sectionTitle: A.intl.string(A.t.B3miE8),
-            onTextChange: e => null == C ? true : C(e),
-            pendingText: p,
-            currentText: p,
-            disableThemedBackground: true,
-            className: L.customGiftMessageWrapper,
-            innerClassName: L.customGiftMessage
-          }), (() => {
-            var e, t, n, a;
-            if (null == q) return null;
-            let l = (0, _.T4)(null != (n = null == (e = q.price) ? true : e.amount) ? n : 0, null != (a = null == (t = q.price) ? true : t.currency) ? a : M.pK.USD);
-            return (0, i.jsxs)("div", {
-              className: L.giftPreviewContainer,
-              children: [(0, i.jsx)(o.vwX, {
-                className: L.giftPreviewTitle,
-                children: A.intl.string(A.t.PpoJzt)
+        })
+      },
+      getRightColumnComponent: () => (0, i.jsxs)("div", {
+        className: L.bodyColumnRight,
+        children: [null != p && (O === G.Wt.USER_PROFILE_WISHLIST || O === G.Wt.DM_CHANNEL_WISHLIST) ? (0, i.jsx)(b.s, {
+          giftRecipient: p
+        }) : (0, i.jsx)(c.Z, {
+          selectedSkuId: W,
+          validateSelectedGift: q,
+          searchableSelectWrapperClassName: L.recipientPickerSelectWrapper,
+          recipients: H
+        }), (0, i.jsx)(C.Z, {
+          sectionTitle: A.intl.string(A.t.B3miE8),
+          onTextChange: e => null == f ? true : f(e),
+          pendingText: l,
+          currentText: l,
+          disableThemedBackground: true,
+          className: L.customGiftMessageWrapper,
+          innerClassName: L.customGiftMessage
+        }), (() => {
+          var e, t, n, a;
+          if (null == F) return null;
+          let l = (0, S.T4)(null != (n = null == (e = F.price) ? true : e.amount) ? n : 0, null != (a = null == (t = F.price) ? true : t.currency) ? a : M.pK.USD);
+          return (0, i.jsxs)("div", {
+            className: L.giftPreviewContainer,
+            children: [(0, i.jsx)(o.vwX, {
+              className: L.giftPreviewTitle,
+              children: A.intl.string(A.t.PpoJzt)
+            }), (0, i.jsxs)("div", {
+              className: L.giftPreviewContent,
+              children: [(0, i.jsx)("div", {
+                className: L.giftPreviewImageContainer,
+                children: null != F && null != U && (0, i.jsx)(E.p, {
+                  containerClassName: L.giftPreviewCardContainer,
+                  cardImage: U,
+                  cardBackgroundImage: K,
+                  altText: F.name,
+                  shape: "square"
+                })
               }), (0, i.jsxs)("div", {
-                className: L.giftPreviewContent,
-                children: [(0, i.jsx)("div", {
-                  className: L.giftPreviewImageContainer,
-                  children: null != q && null != V && (0, i.jsx)(k.p, {
-                    containerClassName: L.giftPreviewCardContainer,
-                    cardImage: V,
-                    cardBackgroundImage: z,
-                    altText: q.name,
-                    shape: "square"
-                  })
-                }), (0, i.jsxs)("div", {
-                  className: L.giftPreviewTextContainer,
-                  children: [null != U && (0, i.jsx)(N.e, {
-                    application: U
-                  }), (0, i.jsx)(o.Text, {
-                    variant: "text-sm/semibold",
-                    children: q.name
-                  })]
+                className: L.giftPreviewTextContainer,
+                children: [null != B && (0, i.jsx)(N.e, {
+                  application: B
                 }), (0, i.jsx)(o.Text, {
-                  variant: "text-md/semibold",
-                  children: l
+                  variant: "text-sm/semibold",
+                  children: F.name
                 })]
+              }), (0, i.jsx)(o.Text, {
+                variant: "text-md/semibold",
+                children: l
               })]
-            })
-          })(), null != Y && null != q && (0, i.jsx)(D, {
-            handleClose: l,
-            sku: q,
-            guild: Y
-          })]
+            })]
+          })
+        })(), null != J && null != F && (0, i.jsx)(D, {
+          handleClose: n,
+          sku: F,
+          guild: J
         })]
+      }),
+      onStepChange: t,
+      onBackClick: n,
+      disabled: null == p || p.id === (null == R ? true : R.id) || l.length > G.$n
+    }
+  })({
+    handleStepChange: t,
+    handleClose: n
+  });
+  return (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsx)(h.C3, {
+      children: (0, i.jsxs)("div", {
+        className: L.stepBody,
+        children: [l(), p()]
       })
     }), (0, i.jsx)(h.O3, {
       children: (0, i.jsx)(o.mzw, {
@@ -211,9 +234,9 @@ function R(e) {
         align: f.Z.Align.CENTER,
         className: L.footer,
         children: (0, i.jsx)(B, {
-          onStepChange: n,
-          onBackClick: l,
-          disabled: null == S || S.id === (null == K ? true : K.id) || p.length > G.$n
+          onStepChange: v,
+          onBackClick: y,
+          disabled: T
         })
       })
     })]
@@ -232,7 +255,7 @@ function D(e) {
   }, [n.id]), s = a.useCallback(() => {
     var e;
     t();
-    let i = null == (e = S.Z.getStorefrontState(n.id)) ? true : e.activePage;
+    let i = null == (e = y.Z.getStorefrontState(n.id)) ? true : e.activePage;
     window.location.pathname.includes(O.Z5c.CHANNELS_GAME_SHOP(n.id, null != i ? i : 0, l.id)) || ((0, o.pTH)(), (0, T.default)({
       guildId: n.id,
       pageIndex: null != i ? i : 0,
@@ -243,7 +266,7 @@ function D(e) {
   return (0, i.jsx)("div", {
     className: L.viewItemButton,
     children: (0, i.jsx)(o.Avr, {
-      text: n.id === (0, y.ac)() ? A.intl.string(A.t.nyIcya) : A.intl.string(A.t.ImioFL),
+      text: n.id === (0, _.ac)() ? A.intl.string(A.t.nyIcya) : A.intl.string(A.t.ImioFL),
       onMouseDown: r,
       onClick: s,
       textVariant: "text-sm/medium",

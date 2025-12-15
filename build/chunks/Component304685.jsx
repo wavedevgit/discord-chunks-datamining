@@ -18,10 +18,10 @@ function u(e, t) {
     f = i.useCallback(() => {
       "" !== u && (0, a.jL)(u)
     }, [u]);
-  if (null == e || !(0, c.X2)(e.contentType) || (null == t ? true : t.shouldHideMediaOptions) === true) return null;
+  if (null == e || !(0, s.X2)(e.contentType) || (null == t ? true : t.shouldHideMediaOptions) === true) return null;
   let {
     enableVideoStatsForNerds: g
-  } = (0, s.w)({
+  } = (0, c.w)({
     location: "useVideoStatsMenuItem"
   });
   return g ? (0, r.jsx)(o.S89, {

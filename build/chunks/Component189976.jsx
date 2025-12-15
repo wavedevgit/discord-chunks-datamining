@@ -26,11 +26,11 @@ function p(e, t) {
     let [t, n] = i.useState(false), r = (0, l.e7)([u.default], () => u.default.locale);
     return {
       handleTranslate: i.useCallback(async (i, l) => {
-        var c, u;
+        var s, u;
         if (t) return;
         let g = null != i ? i : r;
         n(true);
-        let p = null != (u = null != l ? l : null == (c = (0, f.getAvailableLocales)().find(e => e.value === g)) ? true : c.name) ? u : g;
+        let p = null != (u = null != l ? l : null == (s = (0, f.getAvailableLocales)().find(e => e.value === g)) ? true : s.name) ? u : g;
         b.has(e.id) || b.set(e.id, e.content), (0, a.showToast)((0, a.createToast)(f.intl.formatToPlainString(f.t.Znl8Z8, {
           targetLanguage: p
         }), a.ToastType.AI));
@@ -43,7 +43,7 @@ function p(e, t) {
             },
             rejectWithError: false
           });
-          t.ok && t.body && (s.Z.dispatch({
+          t.ok && t.body && (c.Z.dispatch({
             type: "MESSAGE_UPDATE",
             message: {
               id: e.id,
@@ -59,7 +59,7 @@ function p(e, t) {
       }, [e, t, r]),
       handleRevertTranslation: i.useCallback(() => {
         let t = b.get(e.id);
-        null != t && (s.Z.dispatch({
+        null != t && (c.Z.dispatch({
           type: "MESSAGE_UPDATE",
           message: {
             id: e.id,
@@ -92,7 +92,7 @@ function p(e, t) {
         disabled: t
       }, i.value)
     }), [e, t, l])
-  }(p, y), h = (0, c.o)();
+  }(p, y), h = (0, s.o)();
   return null != e.content && "" !== e.content.trim() && h ? m ? (0, r.jsx)(a.sNh, {
     id: "revert-translation",
     label: f.intl.string(f.t.JC9BXn),

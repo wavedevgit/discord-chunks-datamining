@@ -21,11 +21,11 @@ function d(e) {
     embedId: f,
     transitionState: g,
     onClose: b
-  } = e, p = (0, s.v)(t, n, d), O = (0, s.Z)(t, n, f), {
+  } = e, p = (0, c.v)(t, n, d), O = (0, c.Z)(t, n, f), {
     reportFalsePositive: y,
     isReportFalsePositiveLoading: m
   } = (0, a.$)({
-    onSuccess: () => (0, c.s)(b),
+    onSuccess: () => (0, s.s)(b),
     onError: () => {
       (0, i.showToast)((0, i.createToast)(u.intl.string(u.t.R0RpRX), i.ToastType.FAILURE))
     },
@@ -33,7 +33,7 @@ function d(e) {
       (0, l.Uj)(t, n, p.map(e => e.id), O.map(e => e.id))
     }
   });
-  return p.length > 0 || O.length > 0 || b(), (0, r.jsx)(c.$, {
+  return p.length > 0 || O.length > 0 || b(), (0, r.jsx)(s.$, {
     messageId: n,
     channelId: t,
     isReportFalsePositiveLoading: m,

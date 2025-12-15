@@ -56,16 +56,16 @@ let j = Chunk273504.fX.KEYWORD;
 function S(e, t) {
   let {
     perGuildMaxCount: n
-  } = c.I6[j], {
+  } = s.I6[j], {
     isLoading: S,
     saveRule: E,
     errorMessage: P
   } = (0, d.w)(), {
     createNewEditingRule: T
-  } = (0, d.V)(), [_, I] = i.useState(false), [Z, w] = (0, s.I2)(t), {
+  } = (0, d.V)(), [_, I] = i.useState(false), [Z, w] = (0, c.I2)(t), {
     rulesByTriggerType: A,
     updateRule: N
-  } = (0, s.pH)(t), x = i.useMemo(() => {
+  } = (0, c.pH)(t), x = i.useMemo(() => {
     var e;
     return null != (e = A[j]) ? e : []
   }, [A]), M = 0 === x.length, D = n > x.length && !M;
@@ -108,7 +108,7 @@ function S(e, t) {
       action: R,
       disabled: S
     }), x.map(e => {
-      let t = (0, c.V9)(j).reduce((t, n) => {
+      let t = (0, s.V9)(j).reduce((t, n) => {
         let r = e.actions.find(e => {
           let {
             type: t

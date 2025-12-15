@@ -83,7 +83,7 @@ function N(e, t) {
 function x(e, t, n) {
   let r = e.isPrivate(),
     i = t.author.id === d.default.getId();
-  (0, s.fE)({
+  (0, c.fE)({
     channel: e,
     message: t,
     shouldMention: !n.shiftKey && !i,
@@ -103,14 +103,14 @@ function D(e, t) {
 }
 
 function C(e, t) {
-  (0, c.z)({
+  (0, s.z)({
     channelId: e.id,
     messageId: t.id
   })
 }
 
 function L(e, t) {
-  (0, c.x)({
+  (0, s.x)({
     channelId: e.id,
     messageId: t.id
   })

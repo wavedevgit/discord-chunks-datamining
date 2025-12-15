@@ -2,13 +2,14 @@
 /** chunk id: 183620, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./388685.js");
-var r, Chunk54381 = require("./54381.js"),
+var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
+  Chunk816814 = require("./816814.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk44463 = require("./44463.js");
 
@@ -20,51 +21,24 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class f extends(r = Chunk473749.PureComponent) {
+class f extends Chunk473749.PureComponent {
   render() {
-    var e;
     let {
-      title: t,
-      actionText: n,
-      children: r,
-      error: o,
-      isLoading: d,
-      maxLength: f,
-      transitionState: p,
-      helpMessage: _,
-      retryPrompt: m,
-      retrySuccessMessage: h
+      transitionState: e
     } = this.props, {
-      code: g,
-      errorMessage: E,
-      retrySuccess: b
-    } = this.state, y = Chunk473749.Children.count(r) > 0 ? (0, Chunk54381.jsx)(Chunk481060.Zbd, {
-      type: Chunk481060.Zbd.Types.WARNING,
-      className: Chunk44463.card,
-      children: (0, Chunk54381.jsx)(Chunk481060.Text, {
-        variant: "text-md/normal",
-        children: r
-      })
-    }) : null, O = null != m ? (0, Chunk54381.jsxs)(Chunk481060.Text, {
-      className: s()(Chunk44463.__invalid_submitText, Chunk44463.spacing),
-      variant: "text-sm/normal",
-      children: [(0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsx)(Chunk481060.P3F, {
-        className: s()(Chunk44463.spacing, Chunk44463.__invalid_link),
-        onClick: this.handleRetry,
-        children: (0, Chunk54381.jsx)(Chunk481060.Anchor, {
-          children: m
-        })
-      })]
-    }) : null, v = b ? (0, Chunk54381.jsx)(Chunk481060.Zbd, {
+      code: t,
+      errorMessage: n,
+      retrySuccess: i
+    } = this.state, a = Chunk473749 ? (0, Chunk54381.jsx)(Chunk481060.Zbd, {
       type: Chunk481060.Zbd.Types.SUCCESS,
       className: Chunk44463.card,
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: h
+        children: Chunk388032.intl.string(Chunk388032.t.j4qu8n)
       })
     }) : null;
     return (0, Chunk54381.jsx)(Chunk481060.Y0X, {
-      transitionState: p,
+      transitionState: module,
       parentComponent: "MFAConfirm",
       children: (0, Chunk54381.jsxs)("form", {
         onSubmit: this.handleSubmit,
@@ -72,45 +46,54 @@ class f extends(r = Chunk473749.PureComponent) {
           separator: false,
           children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/semibold",
-            children: exports
+            children: Chunk388032.intl.string(Chunk388032.t["mGppp/"])
           })
         }), (0, Chunk54381.jsxs)(Chunk481060.hzk, {
-          children: [null != _ ? (0, Chunk54381.jsx)(Chunk481060.Text, {
+          children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
             color: "text-default",
             variant: "text-md/normal",
             className: Chunk44463.spacing,
-            children: _
-          }) : null, y, v, (0, Chunk54381.jsxs)("div", {
+            children: Chunk388032.intl.string(Chunk388032.t["37S9yU"])
+          }), Chunk120356, (0, Chunk54381.jsxs)("div", {
             className: Chunk44463.spacing,
             children: [(0, Chunk54381.jsx)(Chunk481060.oil, {
               inputRef: this.setRef,
-              label: this.getLabelText(),
+              label: Chunk388032.intl.string(Chunk388032.t.TjGb4Q),
               onChange: this.handleCodeChange,
-              placeholder: null != (e = this.getPlaceholder()) ? module : true,
-              maxLength: null != f ? f : 10,
-              value: g,
+              maxLength: 8,
+              value: exports,
               autoComplete: "one-time-code",
               autoFocus: true
-            }), this.errorPresent() ? (0, Chunk54381.jsx)(Chunk481060.Text, {
+            }), null != this.state.errorMessage && "" !== this.state.errorMessage ? (0, Chunk54381.jsx)(Chunk481060.Text, {
               color: "text-feedback-critical",
               variant: "text-xs/normal",
               className: Chunk44463.error,
-              children: null != Chunk120356 ? Chunk120356 : E
-            }) : null, O]
+              children: require
+            }) : null, (0, Chunk54381.jsxs)(Chunk481060.Text, {
+              className: o()(Chunk44463.__invalid_submitText, Chunk44463.spacing),
+              variant: "text-sm/normal",
+              children: [(0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsx)(Chunk481060.P3F, {
+                className: o()(Chunk44463.spacing, Chunk44463.__invalid_link),
+                onClick: this.handleRetry,
+                children: (0, Chunk54381.jsx)(Chunk481060.Anchor, {
+                  children: Chunk388032.intl.string(Chunk388032.t.PZgmxv)
+                })
+              })]
+            })]
           })]
         }), (0, Chunk54381.jsx)(Chunk481060.mzw, {
           children: (0, Chunk54381.jsxs)(Chunk481060.ButtonGroup, {
             direction: "horizontal-reverse",
             children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
               variant: "primary",
-              text: null != require ? require : Chunk388032.intl.string(Chunk388032.t["cY+Oob"]),
+              text: Chunk388032.intl.string(Chunk388032.t.piW6YS),
               type: "submit",
-              disabled: d || 0 === g.length
+              disabled: this.state.isLoading || 0 === exports.length
             }), (0, Chunk54381.jsx)(Chunk481060.Button, {
               variant: "secondary",
               text: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
-              onClick: this.handleCancel,
-              disabled: d
+              onClick: this.props.onClose,
+              disabled: this.state.isLoading
             })]
           })
         })]
@@ -121,39 +104,30 @@ class f extends(r = Chunk473749.PureComponent) {
     super(...e), d(this, "_input", true), d(this, "state", {
       code: "",
       errorMessage: "",
-      retrySuccess: false
+      retrySuccess: false,
+      isLoading: false
     }), d(this, "setRef", e => {
       this._input = e
-    }), d(this, "getLabelText", () => {
-      var e;
-      return null != (e = this.props.label) ? e : this.props.disallowBackupCodes ? c.intl.string(c.t.HZPBOd) : c.intl.string(c.t["+NQopF"])
-    }), d(this, "getSupportedCodeTypes", () => this.props.disallowBackupCodes ? c.intl.string(c.t.tARzgo) : c.intl.string(c.t.yO4lAM)), d(this, "getPlaceholder", () => {
-      var e;
-      return this.props.forceNoPlaceholder ? null : null != (e = this.props.placeholder) ? e : this.getSupportedCodeTypes()
-    }), d(this, "errorPresent", () => null != this.props.error && "" !== this.props.error || null != this.state.errorMessage && "" !== this.state.errorMessage), d(this, "handleRetry", () => {
-      let {
-        onRetry: e
-      } = this.props;
-      null == e || e().then(() => this.setState({
+    }), d(this, "handleRetry", async () => {
+      await l.Z.sendMFABackupCodesVerificationKeyEmail(this.props.password), this.setState({
         retrySuccess: true
-      }))
-    }), d(this, "handleSubmit", e => {
-      e.preventDefault();
-      let {
-        handleSubmit: t,
-        onError: n
-      } = this.props;
-      t(this.state.code).catch(e => {
-        null != e.body && (null == n || n(e.body), e.body.message && this.setState({
-          errorMessage: e.body.message
-        }))
       })
-    }), d(this, "handleCancel", () => {
-      let {
-        onClose: e,
-        handleEarlyClose: t
-      } = this.props;
-      e(), null == t || t()
+    }), d(this, "handleSubmit", async e => {
+      e.preventDefault(), this.setState({
+        isLoading: true
+      });
+      try {
+        await l.Z.confirmViewBackupCodes(this.state.code, false), this.props.onClose()
+      } catch (e) {
+        if (null == e.body) return;
+        e.body.message && this.setState({
+          errorMessage: e.body.message
+        })
+      } finally {
+        this.setState({
+          isLoading: false
+        })
+      }
     }), d(this, "handleCodeChange", e => {
       this.setState({
         code: e
@@ -161,11 +135,3 @@ class f extends(r = Chunk473749.PureComponent) {
     })
   }
 }
-d(f, "defaultProps", {
-  btnClass: "",
-  isLoading: false,
-  disallowBackupCodes: false,
-  error: null,
-  forceNoPlaceholder: false
-});
-let p = f

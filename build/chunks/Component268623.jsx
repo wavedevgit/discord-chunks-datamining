@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
 function O(e) {
   let {
     enabled: t
-  } = s.Z.useExperiment({
+  } = c.Z.useExperiment({
     location: "LongPressMessageActionSheet"
   }), n = (0, l.e7)([d.Z], () => d.Z.getSavedMessage(e.channel_id, e.id)), i = y({
     message: e,
@@ -30,11 +30,11 @@ function O(e) {
   return t ? null != n || (0, f.Z)() ? (0, r.jsxs)(o.sNh, {
     id: "save-for-later",
     label: p.intl.string(p.t.tpxJto),
-    action: () => null == n ? (0, c.z)({
+    action: () => null == n ? (0, s.z)({
       channelId: e.channel_id,
       messageId: e.id,
       displayToast: true
-    }) : (0, c.x)({
+    }) : (0, s.x)({
       channelId: e.channel_id,
       messageId: e.id,
       dueAt: n.saveData.dueAt,
@@ -44,7 +44,7 @@ function O(e) {
       id: "remove-from-for-later",
       label: p.intl.string(p.t.SvXS1Z),
       icon: o.plf,
-      action: () => (0, c.x)({
+      action: () => (0, s.x)({
         channelId: e.channel_id,
         messageId: e.id,
         dueAt: n.saveData.dueAt,
@@ -54,7 +54,7 @@ function O(e) {
       id: "create-bookmark",
       label: p.intl.string(p.t["9p3D9p"]),
       icon: o.gt9,
-      action: () => (0, c.z)({
+      action: () => (0, s.z)({
         channelId: e.channel_id,
         messageId: e.id,
         displayToast: true
@@ -67,7 +67,7 @@ function O(e) {
     iconProps: {
       color: a.JX.PREMIUM_TIER_2
     },
-    action: () => (0, c.z)({
+    action: () => (0, s.z)({
       channelId: e.channel_id,
       messageId: e.id,
       displayToast: true
@@ -86,14 +86,14 @@ function y(e) {
       clearInterval(e)
     }
   }, []);
-  let s = i.useCallback(e => (0, c.z)({
+  let c = i.useCallback(e => (0, s.z)({
       channelId: t.channel_id,
       messageId: t.id,
       dueAt: e,
       displayToast: true
     }), [t.channel_id, t.id]),
     d = (0, g.r)({
-      createReminder: s
+      createReminder: c
     }),
     {
       dueInText: f
@@ -111,7 +111,7 @@ function y(e) {
       id: "mark-complete",
       label: p.intl.string(p.t.yjGtdJ),
       icon: o.kmB,
-      action: () => (0, c.z)({
+      action: () => (0, s.z)({
         channelId: t.channel_id,
         messageId: t.id,
         dueAt: true

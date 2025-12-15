@@ -87,7 +87,7 @@ function Y(e, t) {
 
 function $(e) {
   var t, n;
-  let i, o, s, d, {
+  let i, o, c, d, {
       channel: f,
       message: g,
       target: b,
@@ -98,15 +98,15 @@ function $(e) {
     } = e,
     {
       analyticsLocations: v
-    } = (0, u.ZP)([c.Z.MESSAGE_CONTEXT_MENU]),
+    } = (0, u.ZP)([s.Z.MESSAGE_CONTEXT_MENU]),
     h = b,
     j = b.getAttribute("data-type"),
     S = b.getAttribute("data-id"),
     E = b.getAttribute("data-name");
-  if (null != p) o = i = s = p.url;
+  if (null != p) o = i = c = p.url;
   else
     for (;
-      (0, l.kK)(h);)(0, l.kK)(h, HTMLImageElement) && null != h.src && (o = h.src), (0, l.kK)(h, HTMLAnchorElement) && null != h.href && (i = h.href, d = h.textContent, null == o && "img" === h.getAttribute("data-role") && (o = i, h.hasAttribute("data-safe-src") && "" !== h.getAttribute("data-safe-src") && (s = h.getAttribute("data-safe-src")))), h = h.parentNode;
+      (0, l.kK)(h);)(0, l.kK)(h, HTMLImageElement) && null != h.src && (o = h.src), (0, l.kK)(h, HTMLAnchorElement) && null != h.href && (i = h.href, d = h.textContent, null == o && "img" === h.getAttribute("data-role") && (o = i, h.hasAttribute("data-safe-src") && "" !== h.getAttribute("data-safe-src") && (c = h.getAttribute("data-safe-src")))), h = h.parentNode;
   let P = null != (n = null == (t = document.getSelection()) ? true : t.toString()) ? n : "";
   return (0, r.jsx)(u.Gt, {
     value: v,
@@ -120,7 +120,7 @@ function $(e) {
       favoriteableName: E,
       itemHref: i,
       itemSrc: o,
-      itemSafeSrc: s,
+      itemSafeSrc: c,
       itemTextContent: d,
       canReport: true,
       onHeightUpdate: m,
@@ -139,7 +139,7 @@ function ee(e) {
     channel: n,
     mediaItem: l,
     textSelection: a,
-    favoriteableType: c,
+    favoriteableType: s,
     favoriteableId: u,
     favoriteableName: $,
     itemHref: ee,
@@ -150,8 +150,8 @@ function ee(e) {
     onHeightUpdate: el,
     onSelect: eo,
     onClose: ea,
-    navId: es,
-    ariaLabel: ec,
+    navId: ec,
+    ariaLabel: es,
     shouldHideMediaOptions: eu = false
   } = e, ed = i.useRef(null);
   i.useEffect(() => {
@@ -188,17 +188,18 @@ function ee(e) {
     ep = (e, t) => {
       var n;
       return function e(t, n, r, l) {
+        var o;
         if (null == t) return null;
         if (!r && !l) return t;
         if (Array.isArray(t)) return t.map(t => e(t, n, r, l));
         if (!i.isValidElement(t)) return t;
-        let o = t.props,
+        let a = t.props,
           {
-            icon: a,
+            icon: c,
             iconLeft: s,
-            children: c
-          } = o,
-          u = function(e, t) {
+            children: u
+          } = a,
+          d = function(e, t) {
             if (null == e) return {};
             var n, r, i = function(e, t) {
               if (null == e) return {};
@@ -212,22 +213,23 @@ function ee(e) {
               for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
             }
             return i
-          }(o, ["icon", "iconLeft", "children"]),
-          d = null != c ? i.Children.map(c, t => null == t ? null : e(t, true, false, l)) : c;
-        if (r) return i.cloneElement(t, Y(J({}, u), {
+          }(a, ["icon", "iconLeft", "children"]),
+          f = null != u ? i.Children.map(u, t => null == t ? null : e(t, true, false, l)) : u;
+        if (r) return i.cloneElement(t, Y(J({}, d), {
           icon: true,
           iconLeft: true,
-          children: d
+          children: f
         }));
-        if (l) {
-          var f;
-          return i.cloneElement(t, Y(J({}, u), {
-            icon: true,
-            iconLeft: null != (f = null != s ? s : n) ? f : a,
-            children: d
-          }))
-        }
-        return t
+        let g = null != (o = null != s ? s : n) ? o : "function" == typeof c ? c : true;
+        return null == g ? i.cloneElement(t, Y(J({}, d), {
+          icon: c,
+          iconLeft: s,
+          children: f
+        })) : l ? i.cloneElement(t, Y(J({}, d), {
+          icon: true,
+          iconLeft: g,
+          children: f
+        })) : t
       }(e, null == t ? true : t.iconToAdd, null != (n = null == t ? true : t.removeIcon) ? n : eb, eg)
     },
     eO = (0, D.Z)(t, n),
@@ -265,7 +267,7 @@ function ee(e) {
       iconToAdd: o.plf
     }),
     ew = ep((0, m.Z)({
-      commandType: s.yU.MESSAGE,
+      commandType: c.yU.MESSAGE,
       commandTargetId: t.id,
       channel: n,
       guildId: true,
@@ -306,10 +308,11 @@ function ee(e) {
       removeIcon: false
     }),
     eB = ep((0, U.wY)(t), {
+      iconToAdd: o.U65,
       removeIcon: false
     }),
     eK = ep((0, A.Z)({
-      type: c,
+      type: s,
       id: u,
       name: $
     }), {
@@ -347,9 +350,9 @@ function ee(e) {
       removeIcon: false
     });
   return eb ? (0, r.jsxs)(o.v2r, {
-    navId: es,
+    navId: ec,
     onClose: ea,
-    "aria-label": ec,
+    "aria-label": es,
     onSelect: ef,
     children: [(0, r.jsxs)(o.kSQ, {
       children: ["" === a ? eO : null, eh, eC, ej, eS, eE, eP]
@@ -363,9 +366,9 @@ function ee(e) {
       children: [e$, eF, ei && ez, ei && eH, eB]
     })]
   }) : (0, r.jsxs)(o.v2r, {
-    navId: es,
+    navId: ec,
     onClose: ea,
-    "aria-label": ec,
+    "aria-label": es,
     onSelect: ef,
     children: [(0, r.jsx)(o.kSQ, {
       children: ey

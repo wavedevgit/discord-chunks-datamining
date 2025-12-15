@@ -42,7 +42,7 @@ function j(e) {
 }
 let I = function() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  return (t, n, a) => (0, i.jsx)(v.Z, {
+  return (t, n, a) => (0, i.jsx)(x.Z, {
     step: a,
     onClose: () => n(false),
     isGift: e
@@ -78,37 +78,46 @@ function w(e) {
   let {
     loadId: t,
     applicationId: n,
-    skuId: f,
-    analyticsLocations: v,
-    isGift: I = false,
-    giftRecipient: w,
-    giftingOrigin: _
+    isGift: f = false,
+    giftRecipient: x,
+    giftingOrigin: I
   } = e, {
-    analyticsLocations: y
-  } = (0, r.ZP)(v, l.Z.SLAYER_STOREFRONT_PAYMENT_MODAL), S = (0, s.q)(n);
-  return a.useEffect(() => {
-    null == S || null == S.guildId || null == f || p.Z.isFetchingForSKU(f) || null != m.Z.get(f) || (0, h.y)(S.guildId, f)
-  }, [S, f]), (0, i.jsx)(r.Gt, {
-    value: y,
+    analyticsLocations: w
+  } = (e => {
+    let {
+      applicationId: t,
+      skuId: n,
+      analyticsLocations: i
+    } = e, {
+      analyticsLocations: o
+    } = (0, r.ZP)(i, l.Z.SLAYER_STOREFRONT_PAYMENT_MODAL), d = (0, s.q)(t);
+    return a.useEffect(() => {
+      null == d || null == d.guildId || null == n || p.Z.isFetchingForSKU(n) || null != m.Z.get(n) || (0, h.y)(d.guildId, n)
+    }, [d, n]), {
+      analyticsLocations: o
+    }
+  })(e);
+  return (0, i.jsx)(r.Gt, {
+    value: w,
     children: (0, i.jsx)(d.PaymentContextProvider, {
       loadId: t,
       stepConfigs: function() {
         let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-        return [g.WA, ...e ? [C.jM] : [], g.s2, ...g.yp, g.wo, {
+        return [g.WA, ...e ? [v.jM] : [], g.s2, ...g.yp, g.wo, {
           key: c.h8.CONFIRM,
-          renderStep: e => (0, i.jsx)(x.d, j({}, e))
+          renderStep: e => (0, i.jsx)(C.d, j({}, e))
         }]
-      }(I),
+      }(f),
       applicationId: n,
-      skuIDs: [f],
+      skuIDs: [e.skuId],
       activeSubscription: null,
       purchaseType: b.GZ.ONE_TIME,
-      isGift: I,
+      isGift: f,
       children: (0, i.jsx)(u.c1, {
         children: (0, i.jsx)(o.KB, {
-          isGift: I,
-          giftRecipient: w,
-          giftingOrigin: _,
+          isGift: f,
+          giftRecipient: x,
+          giftingOrigin: I,
           children: (0, i.jsx)(P, j({}, e))
         })
       })

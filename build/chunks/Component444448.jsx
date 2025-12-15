@@ -36,34 +36,34 @@ function b(e) {
     giftRecipient: w
   } = (0, c.wD)();
   r()(null != j, "Expected selectedSkuId"), r()(null != I, "Expected application");
-  let _ = b[j];
-  return (r()(null != _, "Expected sku"), a.useEffect(() => {
+  let S = b[j];
+  return (r()(null != S, "Expected sku"), a.useEffect(() => {
     P || ((0, h.U)(), n(), (0, p.I)({
-      sku: _,
+      sku: S,
       application: I,
       analyticsLocations: l
     }))
-  }, [P, _, I, n, l]), P) ? (0, i.jsxs)(f.C3, {
+  }, [P, S, I, n, l]), P) ? (0, i.jsxs)(f.C3, {
     children: [(0, i.jsx)(m.Z, {}), (0, i.jsx)(g.Z, {}), (0, i.jsxs)("div", {
-      className: C.confirmation,
-      children: [(0, i.jsx)(x.A, {
-        sku: _,
+      className: v.confirmation,
+      children: [(0, i.jsx)(C.A, {
+        sku: S,
         shape: "square",
-        containerClassName: C.skuImage
+        containerClassName: v.skuImage
       }), (0, i.jsx)(o.Heading, {
         variant: "heading-xl/semibold",
-        className: C.confirmationHeader,
-        children: v.intl.string(v.t["5glWta"])
+        className: v.confirmationHeader,
+        children: x.intl.string(x.t["5glWta"])
       }), (0, i.jsx)(o.Text, {
         variant: "text-md/normal",
-        className: C.confirmationDescription,
-        children: v.intl.formatToPlainString(v.t["2VjPTw"], {
-          itemName: _.name,
+        className: v.confirmationDescription,
+        children: x.intl.formatToPlainString(x.t["2VjPTw"], {
+          itemName: S.name,
           giftRecipient: null != (t = null == w ? true : w.username) ? t : "your recipient"
         })
       }), (0, i.jsx)(s.zxk, {
         onClick: n,
-        text: v.intl.string(v.t.cpT0Cq),
+        text: x.intl.string(x.t.cpT0Cq),
         fullWidth: true
       })]
     })]

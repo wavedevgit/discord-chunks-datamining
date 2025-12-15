@@ -29,13 +29,13 @@ function p(e, t) {
     }, [t.id, e.id]),
     m = i.useCallback(() => {
       f.default.track(g.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
-        location: s.MG.MessageContextMenu
-      }), (0, c.s)({
+        location: c.MG.MessageContextMenu
+      }), (0, s.s)({
         channelId: t.id,
         message: e,
         onRedeem: y,
         onClose: a.Qy,
-        source: s.YD.MessageContextMenu
+        source: c.YD.MessageContextMenu
       })
     }, [t.id, e, y]);
   return n && !p && O ? (0, r.jsx)(l.sNh, {
