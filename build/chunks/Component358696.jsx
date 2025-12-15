@@ -84,30 +84,32 @@ function g(e) {
   });
   return (0, r.jsxs)("div", {
     className: a()(f.imagePosition, y),
-    children: [(0, r.jsx)(o.u, {
-      text: s.text,
-      asContainer: true,
-      children: (0, r.jsx)(h, {
-        onClick: E,
-        children: (0, r.jsx)(u._, {
-          href: s.url,
-          children: null != _ ? (0, r.jsx)(l.ZP, {
+    children: [(0, r.jsx)(h, {
+      onClick: E,
+      children: (0, r.jsx)(u._, {
+        href: s.url,
+        children: null != _ ? (0, r.jsx)(o.u, {
+          text: s.text,
+          asContainer: true,
+          children: (0, r.jsx)(l.ZP, {
             className: f.imageContainer,
             mask: S,
             width: O,
             height: O,
             children: I
-          }) : (0, r.jsx)("div", {
+          })
+        }) : (0, r.jsx)(o.u, {
+          text: s.text,
+          children: (0, r.jsx)("div", {
             className: f.imageContainer,
             children: I
           })
         })
       })
-    }), null != _ && (0, r.jsx)(o.u, {
-      text: _.text,
-      asContainer: true,
-      children: (0, r.jsx)(u._, {
-        href: _.url,
+    }), null != _ && (0, r.jsx)(u._, {
+      href: _.url,
+      children: (0, r.jsx)(o.u, {
+        text: _.text,
         children: (0, r.jsx)("div", {
           className: f.smallImageContainer,
           children: (0, r.jsx)(c.f, {

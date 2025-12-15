@@ -380,17 +380,17 @@ function e4(e) {
     events: O,
     play: v
   } = (0, p.w)();
-  return n ? (0, r.jsx)(b.u, {
-    text: f,
-    children: (0, r.jsx)(G.Xf, {
-      contentType: d.z.ACTIVITIES_VOICE_LAUNCHER_BADGE,
-      latestVersion: h,
-      children: e => {
-        let {
-          visibleContent: n,
-          markAsDismissed: i
-        } = e;
-        return (0, r.jsxs)(E.zx, eK(eq({
+  return n ? (0, r.jsx)(G.Xf, {
+    contentType: d.z.ACTIVITIES_VOICE_LAUNCHER_BADGE,
+    latestVersion: h,
+    children: e => {
+      let {
+        visibleContent: n,
+        markAsDismissed: i
+      } = e;
+      return (0, r.jsx)(b.u, {
+        text: f,
+        children: (0, r.jsxs)(E.zx, eK(eq({
           "data-migration-pending": true,
           fullWidth: true,
           size: E.zx.Sizes.MEDIUM
@@ -430,8 +430,8 @@ function e4(e) {
             className: ez.buttonIcon
           })]
         }))
-      }
-    })
+      })
+    }
   }) : null
 }
 
@@ -461,22 +461,23 @@ function e3(e) {
   }, [t, h]), C = i.useCallback(() => {
     c(), h ? m(false) : m(true), (0, D.v)(l, D.d.GIFTING), O === d.z.GAME_SHOP_RTC_GIFTING_NEW_BADGE && v(eB.L.TAKE_ACTION)
   }, [l, c, h, O, v]);
-  return (0, r.jsx)(b.u, {
-    text: eF.intl.string(eF.t.PEjaCx),
-    shouldShow: !h,
-    onTooltipShow: u,
-    onTooltipHide: p,
-    children: (0, r.jsx)(_.yRy, {
+  return (0, r.jsx)(_.yRy, {
+    targetElementRef: n,
+    shouldShow: h,
+    animation: _.yRy.Animation.FADE,
+    animationPosition: "top",
+    position: "top",
+    align: "left",
+    spacing: 16,
+    onRequestClose: y,
+    renderPopout: I,
+    children: () => (0, r.jsx)(b.u, {
+      text: eF.intl.string(eF.t.PEjaCx),
       targetElementRef: n,
-      shouldShow: h,
-      animation: _.yRy.Animation.FADE,
-      animationPosition: "top",
-      position: "top",
-      align: "left",
-      spacing: 16,
-      onRequestClose: y,
-      renderPopout: I,
-      children: () => (0, r.jsxs)(E.zx, eK(eq({
+      shouldShow: !h,
+      onTooltipShow: u,
+      onTooltipHide: p,
+      children: (0, r.jsxs)(E.zx, eK(eq({
         "data-migration-pending": true,
         fullWidth: true,
         size: E.zx.Sizes.MEDIUM,
