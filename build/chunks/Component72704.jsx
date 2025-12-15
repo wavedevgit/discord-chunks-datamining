@@ -13,23 +13,24 @@ function o(e) {
     node: t
   } = e, {
     useValue: n,
-    setValue: o,
-    useTitle: s,
-    useSubtitle: l,
-    useOptions: c,
-    fieldLayout: u
-  } = t, d = s(), f = null == l ? true : l(), p = n(), _ = c();
+    useTitle: o,
+    useSubtitle: s,
+    useOptions: l,
+    fieldLayout: c,
+    clearable: u
+  } = t, d = t.setValue, f = o(), p = null == s ? true : s(), _ = n(), m = l();
   return (0, r.jsx)(a.X, {
     children: (0, r.jsx)(i.PhF, {
       selectionMode: "single",
-      label: d,
-      description: f,
-      options: _,
-      value: p,
+      label: f,
+      description: p,
+      options: m,
+      value: _,
+      clearable: u,
       onSelectionChange: e => {
-        null != e && o(e)
+        d(e)
       },
-      layout: u
+      layout: c
     })
   })
 }

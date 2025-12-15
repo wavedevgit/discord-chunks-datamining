@@ -26,5 +26,6 @@ module.exports = {
   rimGlowTier2: "a45ed3bc8a11b547-rimGlowTier2",
   trialHeader: "a45ed3bc8a11b547-trialHeader",
   fractionalPremiumTopRimPill: "a45ed3bc8a11b547-fractionalPremiumTopRimPill",
-  fractionalPremiumSubheader: "a45ed3bc8a11b547-fractionalPremiumSubheader"
+  fractionalPremiumSubheader: "a45ed3bc8a11b547-fractionalPremiumSubheader",
+  premiumGroupHeader: "a45ed3bc8a11b547-premiumGroupHeader"
 }
