@@ -191,16 +191,19 @@ function v(e) {
               submitting: l,
               trackingArea: u,
               isDeadEnd: f,
-              iconButton: p
-            } = e, _ = 0 === t;
+              iconButton: p,
+              buttonRef: _
+            } = e, h = 0 === t;
             return p ? (0, r.jsx)(d.u, {
               text: n,
+              targetElementRef: _,
               children: (0, r.jsx)(c.hU, {
-                variant: _ ? "overlay-primary" : "overlay-secondary",
+                variant: h ? "overlay-primary" : "overlay-secondary",
                 disabled: o || null != s,
                 loading: l,
                 icon: i,
                 "aria-label": n,
+                buttonRef: _,
                 onClick: e => {
                   a(e), (0, m.KX)({
                     applicationId: C.id,
@@ -215,11 +218,12 @@ function v(e) {
             }, n) : (0, r.jsxs)("div", {
               className: E.buttonWithPossibleDisabledTextWrapper,
               children: [(0, r.jsx)(c.zxk, {
-                variant: _ ? "overlay-primary" : "overlay-secondary",
+                variant: h ? "overlay-primary" : "overlay-secondary",
                 disabled: o || null != s,
                 loading: l,
                 icon: i,
                 text: n,
+                buttonRef: _,
                 onClick: e => {
                   a(e), (0, m.KX)({
                     applicationId: C.id,

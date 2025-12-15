@@ -83,10 +83,16 @@ function T(e) {
     presenceActivity: P,
     analyticsLocations: R,
     showAuthButton: w,
-    startAuthorization: D
-  } = e, x = (0, s.e7)([h.Z], () => h.Z.getMessages(o.id)), L = i.useMemo(() => {
+    startAuthorization: D,
+    accountLinkButtonRef: x,
+    renderAccountLinkUpsell: L
+  } = e, j = (0, s.e7)([h.Z], () => h.Z.getMessages(o.id)), {
+    actions: M,
+    hasAccountLinkButton: k
+  } = i.useMemo(() => {
     let e = [],
-      r = true;
+      r = true,
+      i = false;
     return (null != _ ? e = [{
       label: O.intl.string(O.t["s+J8Dl"]),
       trackingArea: d.j_.PLAY,
@@ -97,7 +103,7 @@ function T(e) {
           embedded: m
         })
       }
-    }] : null != S && (e = [S], r = false), w && r && e.push({
+    }] : null != S && (e = [S], r = false), w && r && (e.push({
       label: O.intl.string(O.t.lw71Nf),
       trackingArea: d.j_.CONNECT_ACCOUNT,
       onClick: () => {
@@ -106,45 +112,54 @@ function T(e) {
         })
       },
       icon: l.uIJ,
-      iconButton: true
-    }), e.length > 0 && !(0, E.b)(t.id, x, n.id, P)) ? [] : e
-  }, [m, _, S, x, P, n.id, t.id, w, D, R]), j = L.some(e => e.trackingArea === d.j_.CLOUD_PLAY);
-  (0, b.Z)(j, R);
-  let M = L.length > 0,
-    k = i.useMemo(() => (0, r.jsx)(l.Text, {
+      iconButton: true,
+      buttonRef: x
+    }), i = true), e.length > 0 && !(0, E.b)(t.id, j, n.id, P)) ? {
+      actions: [],
+      hasAccountLinkButton: false
+    } : {
+      actions: e,
+      hasAccountLinkButton: i
+    }
+  }, [m, _, S, j, P, n.id, t.id, w, D, R, x]), U = M.some(e => e.trackingArea === d.j_.CLOUD_PLAY);
+  (0, b.Z)(U, R);
+  let G = M.length > 0,
+    Z = i.useMemo(() => (0, r.jsx)(l.Text, {
       variant: "text-xs/medium",
       className: v.description,
       color: "none",
       lineClamp: 3,
-      children: (0, g.wR)(t, a, o, p, M)
-    }), [t, a, o, p, M]);
-  return 0 === L.length ? (0, r.jsx)(I, {
+      children: (0, g.wR)(t, a, o, p, G)
+    }), [t, a, o, p, G]);
+  return 0 === M.length ? (0, r.jsx)(I, {
     message: t,
     applicationName: a,
     iconSrc: A,
     channel: o,
     currentUserId: p,
     viewAction: C
-  }) : (0, r.jsx)(u.W, {
-    header: f,
-    title: a,
-    staticBannerSrc: T,
-    onClickBanner: C,
-    bannerAspectRatio: u.u.ACTIVITY,
-    iconSrc: null != A ? A : true,
-    info: k,
-    actions: L,
-    primaryActionFirst: true,
-    onClickContent: C,
-    trackingConfig: {
-      id: n.id,
-      linkType: y.U.RICH_PRESENCE_INVITE,
-      onView: N,
-      referrerId: t.author.id,
-      guildId: o.guild_id,
-      channelId: t.channel_id,
-      messageId: t.id,
-      isDeadEnd: true
-    }
+  }) : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(u.W, {
+      header: f,
+      title: a,
+      staticBannerSrc: T,
+      onClickBanner: C,
+      bannerAspectRatio: u.u.ACTIVITY,
+      iconSrc: null != A ? A : true,
+      info: Z,
+      actions: M,
+      primaryActionFirst: true,
+      onClickContent: C,
+      trackingConfig: {
+        id: n.id,
+        linkType: y.U.RICH_PRESENCE_INVITE,
+        onView: N,
+        referrerId: t.author.id,
+        guildId: o.guild_id,
+        channelId: t.channel_id,
+        messageId: t.id,
+        isDeadEnd: true
+      }
+    }), k ? L() : null]
   })
 }

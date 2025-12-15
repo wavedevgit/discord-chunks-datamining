@@ -198,6 +198,7 @@ async function M(e) {
         event: r.NetworkActionNames.QUEST_HEARTBEAT,
         properties: {
           quest_id: t,
+          application_id: i,
           terminal: s,
           is_overlay: __OVERLAY__,
           stack_trace: null != (l = Error().stack) ? l : "",
