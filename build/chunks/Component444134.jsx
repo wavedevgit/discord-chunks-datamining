@@ -8,7 +8,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk24156 = require("./24156.js"),
-  Chunk706619 = require("./706619.js"),
+  Chunk236726 = require("./236726.js"),
   Chunk393238 = require("./393238.js"),
   Chunk945165 = require("./945165.js");
 
@@ -51,7 +51,7 @@ let u = Chunk473749.createContext({
     collapsedContentRef: Chunk473749.createRef(),
     recalculateAnimationPositions: () => {},
     animatedComponentProps: [],
-    expansionSpring: new Chunk706619.SpringValue(0),
+    expansionSpring: new Chunk236726.SpringValue(0),
     mountPoints: new Map
   }),
   m = Chunk473749.forwardRef(function(e, t) {
