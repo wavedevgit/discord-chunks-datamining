@@ -35,7 +35,9 @@ function m(e) {
       C(false)
     },
     className: a()(h.item, h.labelContainer, f.container),
-    children: [n, (0, i.jsx)(u.Text, {
+    children: [(0, i.jsx)("div", {
+      children: n
+    }), (0, i.jsx)(u.Text, {
       variant: "text-md/normal",
       className: f.itemText,
       children: t
