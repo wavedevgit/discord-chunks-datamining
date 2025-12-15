@@ -924,7 +924,7 @@ let e7 = (0, Chunk730749.Z)(function(e) {
         voiceStates: S,
         showVoiceStates: v,
         shouldShowVoicePanelIntroduction: g,
-        showSocialLayerStorefrontGiftingButton: R && D || true,
+        showSocialLayerStorefrontGiftingButton: R && D,
         isPrivateChannelWithEnabledActivities: L,
         analyticsLocations: x
       })), !N && E && null != d ? (0, r.jsxs)("div", {
