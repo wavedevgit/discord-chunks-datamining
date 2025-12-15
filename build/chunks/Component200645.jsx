@@ -94,7 +94,7 @@ function E() {
 class b extends Chunk473749.PureComponent {
   async componentDidMount() {
     this.setState({
-      openOnStartup: await Chunk998502.ZP.getSetting("OPEN_ON_STARTUP", true),
+      openOnStartup: await Chunk998502.ZP.getOpenOnStart(),
       startMinimized: await Chunk998502.ZP.getSetting("START_MINIMIZED", false),
       minimizeToTray: await Chunk998502.ZP.getSetting("MINIMIZE_TO_TRAY", true)
     })

@@ -31,7 +31,7 @@ function p() {
 
 function _() {
   return null != l ? l : l = new Promise((e, t) => {
-    Promise.all([n.e("69418"), n.e("13263")]).then(n.bind(n, 129487)).then(n => {
+    Promise.all([n.e("79253"), n.e("7058"), n.e("13263")]).then(n.bind(n, 129487)).then(n => {
       let {
         DaveModuleFactory: r
       } = n;

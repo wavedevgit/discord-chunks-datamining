@@ -522,6 +522,10 @@ let q = {
     async setOptionalUpdates(e) {
       await S.settings.set("OPTIN_OPTIONAL_UPDATES", e)
     },
+    async getOpenOnStart() {
+      var e, t, n;
+      return null != (n = await (null == (e = (t = S.app).getOpenOnStart) ? true : module.call(exports))) ? require : await S.settings.get("OPEN_ON_STARTUP", true)
+    },
     getGPUDriverVersions() {
       return (0, Chunk358085.isWindows)() && null != this.getDiscordUtils().getGPUDriverVersions ? this.getDiscordUtils().getGPUDriverVersions() : Promise.resolve(Object.freeze({}))
     },

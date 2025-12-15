@@ -32,16 +32,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk286274 = require("./286274.js");
-let A = new Chunk710845.Z("EmojiStudio"),
+let R = new Chunk710845.Z("EmojiStudio"),
   T = e => {
     var t;
     let {
       guildId: n
-    } = e, i = "userImage" in e ? e.userImage : true, h = "emoji" in e ? e.emoji : true, T = !!h, [D, k] = r.useState(null != i ? i : null), [G, Z] = r.useState(false), z = (0, s.e7)([f.Z, x.Z, v.Z], () => {
-      let e = x.Z.getGuildId(),
+    } = e, i = "userImage" in e ? e.userImage : true, h = "emoji" in e ? e.emoji : true, T = !!h, [D, k] = r.useState(null != i ? i : null), [G, Z] = r.useState(false), U = (0, s.e7)([f.Z, p.Z, v.Z], () => {
+      let e = p.Z.getGuildId(),
         t = f.Z.getGuild(e);
-      return v.Z.can(w.Plq.CREATE_GUILD_EXPRESSIONS, t) && null != t ? t.id : null
-    }), [L, U] = r.useState(null != n ? n : z), [B, F] = r.useState(false), [J, H] = r.useState(null), [V, W] = r.useState(null), [Y, q] = r.useState(function(e) {
+      return v.Z.can(S.Plq.CREATE_GUILD_EXPRESSIONS, t) && null != t ? t.id : null
+    }), [z, L] = r.useState(null != n ? n : U), [B, J] = r.useState(false), [H, F] = r.useState(null), [V, W] = r.useState(null), [Y, q] = r.useState(function(e) {
       var t, n;
       if (null == e) return "";
       let l = null != (n = null == e || null == (t = e.file) ? true : t.name) ? n : "",
@@ -58,43 +58,43 @@ let A = new Chunk710845.Z("EmojiStudio"),
         k(e), X(e.data), q(h.name), Z(false);
         return
       }
-      Z(true), (0, y.Q)(h).then(e => {
+      Z(true), (0, C.Q)(h).then(e => {
         k(e), X(e.data), q(h.name), Z(false)
       }).catch(e => {
-        A.error("Failed to fetch emoji image", e), H(O.ze.MISSING_IMAGE_DATA), Z(false)
+        R.error("Failed to fetch emoji image", e), F(O.ze.MISSING_IMAGE_DATA), Z(false)
       })
     }, [h]);
     let ea = r.useCallback(e => {
       let {
         reason: t
-      } = e, n = null != J ? J : V;
-      p.default.track(w.rMx.EMOJI_STUDIO_ENDED, {
+      } = e, n = null != H ? H : V;
+      x.default.track(S.rMx.EMOJI_STUDIO_ENDED, {
         reason: t,
         is_initial: 0 === $.current,
         has_image: null != D,
         error: null == n ? null : String(n),
         throttled_edit_count: ee.current,
         session_duration_ms: Date.now() - Q.current,
-        has_guild_selected: null != L
+        has_guild_selected: null != z
       })
-    }, [J, V, Q, D, L]);
+    }, [H, V, Q, D, z]);
     (0, m.zq)(() => {
       et.current || ea({
         reason: "closed"
       })
     });
     let eo = r.useCallback(async () => {
-        if (H(null), null == L) return void H(O.ze.MISSING_GUILD);
-        if (null == D || (null == D ? true : D.file) == null || null == K) return void H(O.ze.MISSING_IMAGE_DATA);
-        F(true);
+        if (F(null), null == z) return void F(O.ze.MISSING_GUILD);
+        if (null == D || (null == D ? true : D.file) == null || null == K) return void F(O.ze.MISSING_IMAGE_DATA);
+        J(true);
         let e = null;
         try {
           e = await (0, d.rS)({
             image: K,
-            guildId: L,
+            guildId: z,
             name: Y,
             analyticsLocation: {
-              page: w.ZY5.EMOJI_STUDIO
+              page: S.ZY5.EMOJI_STUDIO
             }
           }), b.M({
             emojiId: e.id,
@@ -118,33 +118,33 @@ let A = new Chunk710845.Z("EmojiStudio"),
             }({}, D)
           })
         } catch (e) {
-          F(false), H((0, N.zg)(e)), A.error("Failed to upload emoji.", e);
+          J(false), F((0, N.zg)(e)), R.error("Failed to upload emoji.", e);
           return
         }
         if (null != h) try {
-          await (0, d.RE)(L, h.id, e.id)
+          await (0, d.RE)(z, h.id, e.id)
         } catch (e) {
           if (429 === e.status) c.Z.show({
             title: M.intl.string(M.t.iufib1),
             body: M.intl.string(M.t.Whhv4w)
           });
           else {
-            F(false), H((0, N.zg)(e)), A.error("Failed to delete emoji.", e);
+            J(false), F((0, N.zg)(e)), R.error("Failed to delete emoji.", e);
             return
           }
         }(0, E.g)(false), (0, u.Mr3)(O.Hj), ea({
           reason: "uploaded"
-        }), et.current = true, (0, C.y)({
+        }), et.current = true, (0, y.y)({
           emoji: e,
-          guildId: L
-        }), F(false)
-      }, [L, D, h, K, ea, Y]),
+          guildId: z
+        }), J(false)
+      }, [z, D, h, K, ea, Y]),
       es = r.useCallback(() => {
         var e;
-        H(null), null != D && X(D.data), ee.current = 0, (0, E.g)(false), null == (e = en.current) || e.reset()
+        F(null), null != D && X(D.data), ee.current = 0, (0, E.g)(false), null == (e = en.current) || e.reset()
       }, [en, D]),
       eu = r.useCallback(() => {
-        (0, y.E)({
+        (0, C.E)({
           onClose: es
         })
       }, [es]),
@@ -154,26 +154,26 @@ let A = new Chunk710845.Z("EmojiStudio"),
           imageDataTimestamp: n = 0,
           error: l
         } = e, r = null;
-        null != t && j.ZP.isDataTooBig(t) && (r = O.ze.TOO_BIG), H(null != l ? l : r), n < $.current || null != t && (X(t), $.current = n)
+        null != t && j.ZP.isDataTooBig(t) && (r = O.ze.TOO_BIG), F(null != l ? l : r), n < $.current || null != t && (X(t), $.current = n)
       }, []),
       ed = r.useCallback(() => {
         ee.current++, (0, E.g)(true)
       }, []),
       em = T ? M.intl.string(M.t.FOYn8U) : M.intl.string(M.t.iMJO37);
     return G || null == D ? (0, l.jsx)("main", {
-      className: R.main,
+      className: A.main,
       children: (0, l.jsxs)("div", {
-        className: R.editor,
+        className: A.editor,
         children: [(0, l.jsx)("div", {
-          className: R.titleBar,
+          className: A.titleBar,
           children: (0, l.jsx)(u.Heading, {
             variant: "heading-lg/medium",
             color: "text-strong",
-            className: R.title,
+            className: A.title,
             children: em
           })
         }), (0, l.jsx)("div", {
-          className: R.closeButton,
+          className: A.closeButton,
           children: (0, l.jsx)(u.PZ7, {
             size: "md",
             onClick: eu
@@ -181,33 +181,33 @@ let A = new Chunk710845.Z("EmojiStudio"),
         })]
       })
     }) : (0, l.jsxs)("main", {
-      className: a()(R.main, {
-        [R.checkerboard]: null != D
+      className: a()(A.main, {
+        [A.checkerboard]: null != D
       }),
       children: [(0, l.jsxs)("div", {
-        className: R.editor,
-        children: [(0, l.jsx)(S.v, {
+        className: A.editor,
+        children: [(0, l.jsx)(w.v, {
           ref: en,
           file: D.file,
           imageUri: D.data,
           onUpdate: ec,
           onThrottledEdit: ed
         }), (0, l.jsx)("div", {
-          className: R.titleBar,
+          className: A.titleBar,
           children: (0, l.jsx)(u.Heading, {
             variant: "heading-lg/medium",
             color: "text-strong",
-            className: R.title,
+            className: A.title,
             children: em
           })
         }), (0, l.jsx)("div", {
-          className: R.closeButton,
+          className: A.closeButton,
           children: (0, l.jsx)(u.PZ7, {
             size: "md",
             onClick: eu
           })
         }), (0, l.jsx)("div", {
-          className: R.resetButton,
+          className: A.resetButton,
           children: (0, l.jsx)(u.yRy, {
             targetElementRef: ei,
             "aria-label": M.intl.string(M.t.vznjTl),
@@ -242,15 +242,15 @@ let A = new Chunk710845.Z("EmojiStudio"),
           })
         })]
       }), (0, l.jsxs)("aside", {
-        className: R.aside,
+        className: A.aside,
         children: [(0, l.jsx)("div", {
-          className: R.previews,
+          className: A.previews,
           children: (0, l.jsx)(u.gNt, {
             label: M.intl.string(M.t.JmuIb5),
             children: (0, l.jsxs)("ul", {
               children: [(0, l.jsx)("li", {
                 children: (0, l.jsxs)("div", {
-                  className: R.reactions,
+                  className: A.reactions,
                   children: [(0, l.jsx)(P, {
                     src: K,
                     alt: M.intl.string(M.t["zS0K+s"])
@@ -260,7 +260,7 @@ let A = new Chunk710845.Z("EmojiStudio"),
                 })
               }), (0, l.jsx)("li", {
                 children: (0, l.jsx)("div", {
-                  className: R.jumbo,
+                  className: A.jumbo,
                   children: (0, l.jsx)(P, {
                     src: K,
                     alt: M.intl.string(M.t["tE41+d"])
@@ -279,25 +279,25 @@ let A = new Chunk710845.Z("EmojiStudio"),
           children: (0, l.jsx)(_.q, {
             label: M.intl.string(M.t["9uKafS"]),
             required: true,
-            helperText: null == L ? M.intl.string(M.t["1pdw0A"]) : true,
-            onChange: U,
-            selected: L,
+            helperText: null == z ? M.intl.string(M.t["1pdw0A"]) : true,
+            onChange: L,
+            selected: z,
             onError: e => W(e),
             labelledBy: "guild-selector-label",
             isEmojiAnimated: (0, o.v)(null == D || null == (t = D.file) ? true : t.type),
             errorMessage: null != V ? (0, N.e$)(V) : true
           })
         }), (0, l.jsxs)("div", {
-          className: R.foot,
-          children: [null != J && (0, l.jsx)(N.H4, {
-            error: J,
+          className: A.foot,
+          children: [null != H && (0, l.jsx)(N.H4, {
+            error: H,
             variant: "text-sm/normal",
             color: "text-feedback-critical"
           }), (0, l.jsx)(u.Button, {
             text: M.intl.string(M.t.Q7UP6F),
             onClick: eo,
             loading: B,
-            disabled: B || null == D || null == L || Y.length < 2 || null != V,
+            disabled: B || null == D || null == z || Y.length < 2 || null != V,
             fullWidth: true
           })]
         })]
@@ -310,7 +310,7 @@ let A = new Chunk710845.Z("EmojiStudio"),
       alt: n
     } = e;
     return null == t || "" === t ? (0, l.jsx)("div", {
-      className: R.previewPlaceholder
+      className: A.previewPlaceholder
     }) : (0, l.jsx)("img", {
       src: t,
       alt: n
