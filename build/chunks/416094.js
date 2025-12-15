@@ -1,14 +1,13 @@
 /** Chunk was on 59030 **/
-/** chunk id: 416094, original params: e,t,r (module,exports,require) **/
+/** chunk id: 416094, original params: e,t,n (module,exports,require) **/
 "use strict";
 module.exports = {
-  spacing: "_07d8286c50ee0cf8-spacing",
+  section: "_07d8286c50ee0cf8-section",
+  sectionImage: "_07d8286c50ee0cf8-sectionImage",
+  sectionContent: "_07d8286c50ee0cf8-sectionContent",
   headerSpacing: "_07d8286c50ee0cf8-headerSpacing",
   topSpacing: "_07d8286c50ee0cf8-topSpacing",
   inputContainer: "_07d8286c50ee0cf8-inputContainer",
-  customWidth: "_07d8286c50ee0cf8-customWidth",
   divider: "_07d8286c50ee0cf8-divider",
-  image: "_07d8286c50ee0cf8-image",
-  secret: "_07d8286c50ee0cf8-secret",
-  subHeader: "_07d8286c50ee0cf8-subHeader"
+  secret: "_07d8286c50ee0cf8-secret"
 }
