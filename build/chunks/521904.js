@@ -6887,6 +6887,63 @@ let {
         opacity: .12156862745098039
       }
     },
+    RADIO_FOREGROUND_ACTIVE: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      }
+    },
+    RADIO_FOREGROUND_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "OPACITY_BLACK_8",
+        opacity: .0784313725490196
+      },
+      [r.LIGHT]: {
+        raw: "OPACITY_4",
+        opacity: .0392156862745098
+      },
+      [r.MIDNIGHT]: {
+        raw: "OPACITY_BLACK_8",
+        opacity: .0784313725490196
+      },
+      [r.DARKER]: {
+        raw: "OPACITY_BLACK_8",
+        opacity: .0784313725490196
+      }
+    },
+    RADIO_FOREGROUND_HOVER: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "OPACITY_BLACK_8",
+        opacity: .0784313725490196
+      },
+      [r.LIGHT]: {
+        raw: "OPACITY_4",
+        opacity: .0392156862745098
+      },
+      [r.MIDNIGHT]: {
+        raw: "OPACITY_BLACK_8",
+        opacity: .0784313725490196
+      },
+      [r.DARKER]: {
+        raw: "OPACITY_BLACK_8",
+        opacity: .0784313725490196
+      }
+    },
     RADIO_THUMB_BACKGROUND_ACTIVE: {
       category: "generic",
       [r.DARK]: {
@@ -7676,15 +7733,15 @@ let {
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_31",
+        raw: "NEUTRAL_33",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_45",
+        raw: "NEUTRAL_46",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_43",
+        raw: "NEUTRAL_44",
         opacity: 1
       }
     },
@@ -7695,15 +7752,15 @@ let {
         opacity: 1
       },
       [r.LIGHT]: {
-        raw: "NEUTRAL_3",
+        raw: "NEUTRAL_5",
         opacity: 1
       },
       [r.MIDNIGHT]: {
-        raw: "NEUTRAL_98",
+        raw: "NEUTRAL_100",
         opacity: 1
       },
       [r.DARKER]: {
-        raw: "NEUTRAL_90",
+        raw: "NEUTRAL_94",
         opacity: 1
       }
     },

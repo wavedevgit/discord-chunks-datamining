@@ -2,7 +2,7 @@
 /** chunk id: 441623, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => eo,
+  ZP: () => ec,
   n3: () => O,
   nN: () => E
 }), require("./388685.js"), require("./539854.js"), require("./642613.js");
@@ -55,7 +55,8 @@ function A() {
     messageGiftIntentLastShownMap: {},
     lastShownFriendsListGiftIntents: [],
     friendsTabBadgeLastDismissedTime: null,
-    giftUnreadNotificationLastDismissedTimes: []
+    giftUnreadNotificationLastDismissedTimes: [],
+    profilePopoutGiftIntentsDismissMap: {}
   }
 }
 let N = A(),
@@ -101,7 +102,7 @@ function U() {
 }
 
 function G() {
-  if (null != x) return void ei(x);
+  if (null != x) return void es(x);
   if (B(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
@@ -180,18 +181,24 @@ function X() {
 }
 
 function J() {
-  N.lastShownFriendsListGiftIntents = []
+  let e = j(),
+    t = y * b * 2;
+  for (let n in N.profilePopoutGiftIntentsDismissMap) module - N.profilePopoutGiftIntentsDismissMap[require] > exports && delete N.profilePopoutGiftIntentsDismissMap[require]
 }
 
 function $() {
-  N.messageGiftIntentLastShownMap = {}
+  N.lastShownFriendsListGiftIntents = []
 }
 
 function ee() {
+  N.messageGiftIntentLastShownMap = {}
+}
+
+function et() {
   N.giftUnreadNotificationLastDismissedTimes = []
 }
 
-function et(e) {
+function en(e) {
   let {
     total: t
   } = e;
@@ -199,21 +206,32 @@ function et(e) {
     x = null, G();
     return
   }
-  ei(t)
+  es(t)
 }
 
-function en(e) {
+function er(e) {
   let {
     date: t
   } = e;
   L = t
 }
 
-function er() {
+function ei() {
   L = null
 }
 
-function ei(e) {
+function ea(e) {
+  let {
+    recipientUserId: t
+  } = e;
+  N.profilePopoutGiftIntentsDismissMap[t] = j()
+}
+
+function eo() {
+  N.profilePopoutGiftIntentsDismissMap = {}
+}
+
+function es(e) {
   B();
   let {
     enabled: t
@@ -233,13 +251,13 @@ function ei(e) {
     }
   }), P.sort((e, t) => d.Z.compareByDmProbability(e, t)), U(true)
 }
-class ea extends(r = Chunk442837.ZP.PersistedStore) {
+class el extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (N = A(), null != e) {
       var t;
-      N.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, N.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), N.messageGiftIntentLastShownMap = g({}, e.messageGiftIntentLastShownMap), N.giftUnreadNotificationLastDismissedTimes = Array.from(null != (t = e.giftUnreadNotificationLastDismissedTimes) ? t : [])
+      N.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, N.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), N.messageGiftIntentLastShownMap = g({}, e.messageGiftIntentLastShownMap), N.giftUnreadNotificationLastDismissedTimes = Array.from(null != (t = e.giftUnreadNotificationLastDismissedTimes) ? t : []), N.profilePopoutGiftIntentsDismissMap = g({}, e.profilePopoutGiftIntentsDismissMap)
     }
-    this.syncWith([p.Z, d.Z, f.Z, u.Z], G), X(), z()
+    this.syncWith([p.Z, d.Z, f.Z, u.Z], G), X(), z(), J()
   }
   getState() {
     return N
@@ -265,6 +283,9 @@ class ea extends(r = Chunk442837.ZP.PersistedStore) {
     let t = D[e];
     return null == t ? 0 : Z(t.friendsSince)
   }
+  canShowProfilePopoutGiftIntents(e) {
+    return null == N.profilePopoutGiftIntentsDismissMap[e] && this.getFriendAnniversaryYears(e) > 0
+  }
   isGiftIntentMessageInCooldown(e) {
     return null != N.messageGiftIntentLastShownMap[e]
   }
@@ -287,7 +308,7 @@ class ea extends(r = Chunk442837.ZP.PersistedStore) {
     return N.messageGiftIntentLastShownMap
   }
 }
-h(ea, "displayName", "PremiumGiftingIntentStore"), h(ea, "persistKey", "PremiumGiftingIntentStore"), h(ea, "migrations", [e => {
+h(el, "displayName", "PremiumGiftingIntentStore"), h(el, "persistKey", "PremiumGiftingIntentStore"), h(el, "migrations", [e => {
   var t, n;
   return null == e ? e : {
     friendsTabBadgeLastDismissedTime: null != (t = e.friendsTabBadgeLastDismissedTime) ? t : null,
@@ -302,18 +323,29 @@ h(ea, "displayName", "PremiumGiftingIntentStore"), h(ea, "persistKey", "PremiumG
     messageGiftIntentLastShownMap: null != (n = e.messageGiftIntentLastShownMap) ? n : {},
     giftUnreadNotificationLastDismissedTimes: []
   }
+}, e => {
+  var t, n, r;
+  return null == e ? e : {
+    friendsTabBadgeLastDismissedTime: null,
+    lastShownFriendsListGiftIntents: null != (t = e.lastShownFriendsListGiftIntents) ? t : [],
+    messageGiftIntentLastShownMap: null != (n = e.messageGiftIntentLastShownMap) ? n : {},
+    giftUnreadNotificationLastDismissedTimes: null != (r = e.giftUnreadNotificationLastDismissedTimes) ? r : [],
+    profilePopoutGiftIntentsDismissMap: {}
+  }
 }]);
-let eo = new ea(Chunk570140.Z, {
+let ec = new el(Chunk570140.Z, {
   CONNECTION_OPEN: V,
   LOGOUT: H,
   MESSAGE_GIFT_INTENT_SHOWN: W,
   FRIENDS_LIST_GIFT_INTENTS_SHOWN: Y,
   GIFT_UNREAD_NOTIFICATION_DISMISS: K,
   GIFT_INTENT_FLOW_PURCHASED_GIFT: q,
-  DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: J,
-  DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET: $,
-  DEV_TOOLS_GIFT_UNREAD_NOTIFICATION_COOLDOWN_RESET: ee,
-  DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT: et,
-  DEV_TOOLS_SET_CURRENT_DATE: en,
-  DEV_TOOLS_RESET_CURRENT_DATE: er
+  PROFILE_POPOUT_GIFT_INTENTS_DISMISS: ea,
+  DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: $,
+  DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET: ee,
+  DEV_TOOLS_GIFT_UNREAD_NOTIFICATION_COOLDOWN_RESET: et,
+  DEV_TOOLS_SET_FRIEND_ANNIVERSARY_COUNT: en,
+  DEV_TOOLS_SET_CURRENT_DATE: er,
+  DEV_TOOLS_RESET_CURRENT_DATE: ei,
+  DEV_TOOLS_PROFILE_POPOUT_GIFT_INTENTS_DISMISS_RESET: eo
 })

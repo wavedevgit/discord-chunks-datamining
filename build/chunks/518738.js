@@ -32,17 +32,19 @@ function c(e) {
   let {
     guildId: t,
     roleId: n,
-    size: c = 20
+    size: c = 20,
+    role: u,
+    guild: d
   } = e, {
-    guild: u,
-    role: d
+    guild: f,
+    role: p
   } = (0, i.cj)([o.Z, a.Z], () => ({
-    guild: o.Z.getGuild(t),
-    role: null != n ? a.Z.getRole(t, n) : true
-  }), [t, n]);
+    guild: null == d ? o.Z.getGuild(t) : true,
+    role: null == u && null != n ? a.Z.getRole(t, n) : true
+  }), [t, n, u, d]), _ = null != d ? d : f, m = null != u ? u : p;
   return r.useMemo(() => {
-    if (null != u && null != n && (0, s._b)(u, d)) return l(d, c)
-  }, [u, d, n, c])
+    if (null != _ && null != m && (0, s._b)(_, m)) return l(m, c)
+  }, [_, m, c])
 }
 
 function u(e, t) {

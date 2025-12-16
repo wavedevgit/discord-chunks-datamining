@@ -245,6 +245,21 @@ function x() {
             })
           }
         })]
+      }), (0, Chunk54381.jsxs)("div", {
+        className: Chunk555109.panelRow,
+        children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+          variant: "text-md/normal",
+          children: "Reset profile popout gift intents dismiss"
+        }), (0, Chunk54381.jsx)(Chunk481060.Button, {
+          variant: "primary",
+          size: "sm",
+          text: "Reset",
+          onClick: () => {
+            Chunk570140.Z.dispatch({
+              type: "DEV_TOOLS_PROFILE_POPOUT_GIFT_INTENTS_DISMISS_RESET"
+            })
+          }
+        })]
       })]
     })
   })
