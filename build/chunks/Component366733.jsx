@@ -46,7 +46,7 @@ let h = e => {
       user: t,
       isOwnUser: n,
       label: a,
-      onRemove: s,
+      removeButton: s,
       isFaded: d
     } = e, {
       avatarSrc: _,
@@ -86,8 +86,8 @@ let h = e => {
         children: (0, r.jsx)(l.Avr, {
           textVariant: "text-sm/medium",
           variant: "secondary",
-          text: f.intl.string(f.t.N86XcP),
-          onClick: s
+          text: s.label,
+          onClick: s.onRemove
         })
       })]
     })
@@ -111,7 +111,10 @@ let h = e => {
     return (0, r.jsx)(h, {
       user: t,
       label: f.intl.string(d.default.mnt50A),
-      onRemove: n
+      removeButton: {
+        onRemove: n,
+        label: f.intl.string(f.t.N86XcP)
+      }
     })
   },
   b = e => {
@@ -134,7 +137,10 @@ let h = e => {
       user: t,
       label: f.intl.string(d.default["1RH5t9"]),
       isFaded: true,
-      onRemove: n
+      removeButton: {
+        onRemove: n,
+        label: f.intl.string(d.default["2blqtw"])
+      }
     })
   },
   O = e => {

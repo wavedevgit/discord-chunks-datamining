@@ -1,16 +1,17 @@
 /** Chunk was on 1272 **/
 /** chunk id: 948053, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk695346 = require("./695346.js"),
   Chunk960048 = require("./960048.js"),
+  Chunk518929 = require("./518929.js"),
   Chunk613928 = require("./613928.js"),
   Chunk981631 = require("./981631.js");
 
-function c(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -28,13 +29,13 @@ function c(e) {
   }
   return e
 }
-let u = {
+let d = {
   async fetchPopularGuildsFromCategories(e, t) {
     try {
       let {
         guilds: n
       } = (await r.tn.post({
-        url: s.ANM.GRAVITY_TOPIC_GUILDS,
+        url: c.ANM.GRAVITY_TOPIC_GUILDS,
         body: {
           category_ids: e,
           offset: t
@@ -86,9 +87,9 @@ let u = {
     }
   },
   async gravityJoinGuild(e, t) {
-    if ((0, o.rK)("gravityJoinGuild") && 0 !== e.length) try {
+    if ((0, s.rK)("gravityJoinGuild") && 0 !== e.length) try {
       return await r.tn.post({
-        url: s.ANM.GRAVITY_JOIN_GUILD,
+        url: c.ANM.GRAVITY_JOIN_GUILD,
         body: {
           guild_ids: e,
           location: t
@@ -100,9 +101,9 @@ let u = {
     }
   },
   async fetchForNotification(e, t) {
-    if ((0, o.rK)("fetchInitial")) try {
+    if ((0, s.rK)("fetchInitial")) try {
       let n = await r.tn.post({
-        url: s.ANM.GRAVITY_ITEMS_HYDRATE,
+        url: c.ANM.GRAVITY_ITEMS_HYDRATE,
         body: {
           message_items: [{
             channel_id: e,
@@ -123,19 +124,21 @@ let u = {
     }
   },
   fetchForStatusNotification(e) {
-    (0, o.rK)("fetchInitialStatus") && i.Z.dispatch({
+    (0, s.rK)("fetchInitialStatus") && i.Z.dispatch({
       type: "LOAD_ICYMI_FROM_NOTIFICATION",
       customStatusItem: e
     })
   },
   async fetchHydrated(e, t, n) {
-    if (!(0, o.rK)("fetchHydrated")) return;
+    if (!(0, s.rK)("fetchHydrated")) return;
     let {
-      messageItems: l,
-      activityItems: c,
-      generatedCandidateItems: u
+      contentGenerationEnabled: l
+    } = (0, o.q3)("fetchHydrated", false), {
+      messageItems: u,
+      activityItems: d,
+      generatedCandidateItems: p
     } = n;
-    if (0 === l.length && 0 === c.length && 0 === u.length) return void i.Z.dispatch({
+    if (0 === u.length && 0 === d.length && 0 === p.length) return void i.Z.dispatch({
       type: "LOAD_ICYMI_HYDRATED",
       requestMessageItems: [],
       requestActivityItems: [],
@@ -148,28 +151,28 @@ let u = {
     });
     try {
       let n = await r.tn.post({
-        url: s.ANM.GRAVITY_ITEMS_HYDRATE,
+        url: c.ANM.GRAVITY_ITEMS_HYDRATE,
         body: {
-          message_items: l,
-          activity_items: c,
-          generated_candidate_items: u
+          message_items: u,
+          activity_items: d,
+          generated_candidate_items: p
         },
         rejectWithError: false
       });
       i.Z.dispatch({
         type: "LOAD_ICYMI_HYDRATED",
-        requestMessageItems: l,
-        requestActivityItems: c,
-        requestGeneratedCandidateItems: u,
+        requestMessageItems: u,
+        requestActivityItems: d,
+        requestGeneratedCandidateItems: p,
         messageItems: n.body.message_items,
         activityItems: n.body.activity_items,
-        generatedCandidateItems: n.body.generated_candidate_items,
+        generatedCandidateItems: l ? n.body.generated_candidate_items : [],
         startingIndex: e,
         endingIndex: t
       })
     } catch (r) {
       a.Z.captureException(r);
-      let n = (0, o.y_)(e, t);
+      let n = (0, s.y_)(e, t);
       i.Z.dispatch({
         type: "LOAD_ICYMI_HYDRATED_FAILED",
         hydrationId: n
@@ -311,17 +314,17 @@ let u = {
     })
   },
   feedItemActioned(e) {
-    i.Z.dispatch(c({
+    i.Z.dispatch(u({
       type: "ICYMI_FEED_ITEM_ACTIONED"
     }, e))
   },
   feedFilterActioned(e) {
-    i.Z.dispatch(c({
+    i.Z.dispatch(u({
       type: "ICYMI_FEED_FILTER_ACTIONED"
     }, e))
   },
   feedPageActioned(e) {
-    i.Z.dispatch(c({
+    i.Z.dispatch(u({
       type: "ICYMI_FEED_PAGE_ACTIONED"
     }, e))
   }

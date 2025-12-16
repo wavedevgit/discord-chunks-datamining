@@ -513,7 +513,7 @@ function ev(e) {
               [eo.nameplated]: eX
             }),
             children: [eY ? (0, r.jsx)(v.Text, {
-              variant: "text-xxs/normal",
+              variant: "text-xs/normal",
               color: l ? "interactive-text-active" : eL ? "interactive-text-default" : "text-muted",
               className: eo.timestamp,
               children: eq
