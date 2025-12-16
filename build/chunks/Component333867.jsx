@@ -173,7 +173,7 @@ let A = e => {
       onCloseRequest: p,
       onComplete: _
     } = e;
-    return u.yU.openCheckoutModal({
+    return (0, u.h4)().openCheckoutModal({
       loadId: t,
       skuId: n,
       analyticsLocations: r,

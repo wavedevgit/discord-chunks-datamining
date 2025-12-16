@@ -108,7 +108,7 @@ let E = e => {
       rentalDuration: s,
       onCloseRequest: c
     } = e;
-    return g(), l.F4.openCheckoutModal({
+    return g(), (0, l.wO)().openCheckoutModal({
       loadId: t,
       skuId: n,
       analyticsLocations: i,
