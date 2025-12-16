@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
-/** chunk id: 323407, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 60814, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  p: () => l
+  F: () => l
 }), require("./980754.js"), require("./388685.js"), require("./415506.js");
 var Chunk230367 = require("./230367.js"),
   Chunk320215 = require("./320215.js"),
@@ -11,7 +11,8 @@ var Chunk230367 = require("./230367.js"),
 class s extends Chunk495852.C {
   create(e) {
     let t = {
-      bodyKey: ""
+      lightUrl: "",
+      darkUrl: ""
     };
     return globalThis.Object.defineProperty(t, a.C, {
       enumerable: false,
@@ -23,25 +24,36 @@ class s extends Chunk495852.C {
       o = e.pos + t;
     for (; e.pos < o;) {
       let [t, i] = e.tag();
-      if (1 === t) a.bodyKey = e.string();
-      else {
-        let o = n.readUnknownField;
-        if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
-        let s = e.skip(i);
-        false !== o && (true === o ? r.z.onRead : o)(this.typeName, a, t, i, s)
+      switch (t) {
+        case 1:
+          a.lightUrl = e.string();
+          break;
+        case 2:
+          a.darkUrl = e.string();
+          break;
+        default:
+          let o = n.readUnknownField;
+          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let s = e.skip(i);
+          false !== o && (true === o ? r.z.onRead : o)(this.typeName, a, t, i, s)
       }
     }
     return a
   }
   internalBinaryWrite(e, t, n) {
-    "" !== e.bodyKey && t.tag(1, r.TD.LengthDelimited).string(e.bodyKey);
+    "" !== e.lightUrl && t.tag(1, r.TD.LengthDelimited).string(e.lightUrl), "" !== e.darkUrl && t.tag(2, r.TD.LengthDelimited).string(e.darkUrl);
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
   constructor() {
-    super("discord_protos.premium_marketing.v1.GiftReminderNagbar", [{
+    super("discord_protos.premium_marketing.v1.ThemeAwareAsset", [{
       no: 1,
-      name: "body_key",
+      name: "light_url",
+      kind: "scalar",
+      T: 9
+    }, {
+      no: 2,
+      name: "dark_url",
       kind: "scalar",
       T: 9
     }])
