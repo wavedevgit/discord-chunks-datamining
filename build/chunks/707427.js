@@ -395,7 +395,7 @@ let {
         dark: {
           color: "gradient.start",
           saturation: .25,
-          lightness: .05,
+          lightness: .1,
           opacity: .7
         }
       }
@@ -2001,44 +2001,6 @@ let {
         opacity: .3
       }
     },
-    FORUM_POST_EXTRA_MEDIA_COUNT_CONTAINER_BACKGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "PRIMARY_660",
-        opacity: .8
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_160",
-        opacity: .8
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_19",
-        opacity: .8
-      },
-      [r.DARKER]: {
-        raw: "PLUM_19",
-        opacity: .8
-      }
-    },
-    FORUM_POST_TAG_BACKGROUND: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "PRIMARY_660",
-        opacity: .9
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_160",
-        opacity: .9
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_19",
-        opacity: .9
-      },
-      [r.DARKER]: {
-        raw: "PLUM_19",
-        opacity: .9
-      }
-    },
     GRADIENT_PROGRESS_PILL_BACKGROUND: {
       category: "generic",
       [r.DARK]: {
@@ -3077,6 +3039,72 @@ let {
       [r.DARKER]: {
         raw: "PLUM_3",
         opacity: 1
+      }
+    },
+    MOBILE_TOAST_BACKGROUND_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "PRIMARY_800",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "WHITE",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "PLUM_19",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "PLUM_17",
+        opacity: 1
+      },
+      gradient: {
+        light: {
+          color: "gradient.start",
+          lightness: .7,
+          saturation: .5,
+          opacity: .95
+        },
+        dark: {
+          color: "gradient.start",
+          lightness: .4,
+          saturation: .5,
+          opacity: .95
+        }
+      }
+    },
+    MOBILE_TYPING_INDICATOR_BACKGROUND_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "PRIMARY_630",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "PRIMARY_130",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "BLACK",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "PLUM_20",
+        opacity: 1
+      },
+      gradient: {
+        light: {
+          color: "gradient.end",
+          lightness: "*0.9",
+          saturation: "*0.6",
+          opacity: .9
+        },
+        dark: {
+          color: "gradient.end",
+          lightness: "*1.5",
+          saturation: "*1",
+          opacity: .9
+        }
       }
     },
     MODAL_BACKGROUND: {
@@ -4886,72 +4914,6 @@ let {
       [r.DARKER]: {
         raw: "PLUM_13",
         opacity: 1
-      }
-    },
-    TOAST_BG: {
-      category: "background",
-      [r.DARK]: {
-        raw: "PRIMARY_800",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "WHITE",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "PLUM_19",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PLUM_17",
-        opacity: 1
-      },
-      gradient: {
-        light: {
-          color: "gradient.start",
-          lightness: .7,
-          saturation: .5,
-          opacity: .95
-        },
-        dark: {
-          color: "gradient.start",
-          lightness: .4,
-          saturation: .5,
-          opacity: .95
-        }
-      }
-    },
-    TYPING_INDICATOR_BG: {
-      category: "background",
-      [r.DARK]: {
-        raw: "PRIMARY_630",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "PRIMARY_130",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "BLACK",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "PLUM_20",
-        opacity: 1
-      },
-      gradient: {
-        light: {
-          color: "gradient.end",
-          lightness: "*0.9",
-          saturation: "*0.6",
-          opacity: .9
-        },
-        dark: {
-          color: "gradient.end",
-          lightness: "*1.5",
-          saturation: "*1",
-          opacity: .9
-        }
       }
     },
     VOICE_VIDEO_VIDEO_TILE_BACKGROUND: {

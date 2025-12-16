@@ -8,7 +8,7 @@ let {
   Themes: r
 } = require("./15202.js").VV, i = {
   SemanticColorExperiments: {
-    APP_BORDER_FRAME: {
+    APP_FRAME_BORDER: {
       "refresh-fast-follow-distinct-borders": {
         [r.DARK]: {
           raw: "NEUTRAL_52",

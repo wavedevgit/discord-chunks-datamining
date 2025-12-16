@@ -8,25 +8,6 @@ let {
   Themes: r
 } = require("./15202.js").VV, i = {
   SemanticColors: {
-    APP_BORDER_FRAME: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "OPACITY_12",
-        opacity: .12156862745098039
-      },
-      [r.LIGHT]: {
-        raw: "OPACITY_28",
-        opacity: .2784313725490196
-      },
-      [r.MIDNIGHT]: {
-        raw: "OPACITY_24",
-        opacity: .23921568627450981
-      },
-      [r.DARKER]: {
-        raw: "OPACITY_12",
-        opacity: .12156862745098039
-      }
-    },
     APP_FRAME_BACKGROUND: {
       category: "generic",
       [r.DARK]: {
@@ -44,6 +25,25 @@ let {
       [r.DARKER]: {
         raw: "NEUTRAL_97",
         opacity: 1
+      }
+    },
+    APP_FRAME_BORDER: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "OPACITY_12",
+        opacity: .12156862745098039
+      },
+      [r.LIGHT]: {
+        raw: "OPACITY_28",
+        opacity: .2784313725490196
+      },
+      [r.MIDNIGHT]: {
+        raw: "OPACITY_24",
+        opacity: .23921568627450981
+      },
+      [r.DARKER]: {
+        raw: "OPACITY_12",
+        opacity: .12156862745098039
       }
     },
     APP_MESSAGE_EMBED_SECONDARY_TEXT: {
@@ -471,7 +471,7 @@ let {
         dark: {
           color: "gradient.start",
           saturation: .25,
-          lightness: .05,
+          lightness: .1,
           opacity: .7
         }
       }
@@ -2447,63 +2447,6 @@ let {
         opacity: .7215686274509804
       }
     },
-    CONTROL_BORDER_EXPRESSIVE_ACTIVE: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "OPACITY_12",
-        opacity: .12156862745098039
-      },
-      [r.LIGHT]: {
-        raw: "OPACITY_WHITE_8",
-        opacity: .0784313725490196
-      },
-      [r.MIDNIGHT]: {
-        raw: "OPACITY_24",
-        opacity: .23921568627450981
-      },
-      [r.DARKER]: {
-        raw: "OPACITY_12",
-        opacity: .12156862745098039
-      }
-    },
-    CONTROL_BORDER_EXPRESSIVE_DEFAULT: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "OPACITY_12",
-        opacity: .12156862745098039
-      },
-      [r.LIGHT]: {
-        raw: "OPACITY_WHITE_8",
-        opacity: .0784313725490196
-      },
-      [r.MIDNIGHT]: {
-        raw: "OPACITY_24",
-        opacity: .23921568627450981
-      },
-      [r.DARKER]: {
-        raw: "OPACITY_12",
-        opacity: .12156862745098039
-      }
-    },
-    CONTROL_BORDER_EXPRESSIVE_HOVER: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "OPACITY_12",
-        opacity: .12156862745098039
-      },
-      [r.LIGHT]: {
-        raw: "OPACITY_WHITE_8",
-        opacity: .0784313725490196
-      },
-      [r.MIDNIGHT]: {
-        raw: "OPACITY_24",
-        opacity: .23921568627450981
-      },
-      [r.DARKER]: {
-        raw: "OPACITY_12",
-        opacity: .12156862745098039
-      }
-    },
     CONTROL_BRAND_FOREGROUND: {
       category: "generic",
       [r.DARK]: {
@@ -3281,6 +3224,63 @@ let {
       [r.DARKER]: {
         raw: "NEUTRAL_1",
         opacity: 1
+      }
+    },
+    CONTROL_EXPRESSIVE_BORDER_ACTIVE: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "OPACITY_12",
+        opacity: .12156862745098039
+      },
+      [r.LIGHT]: {
+        raw: "OPACITY_WHITE_8",
+        opacity: .0784313725490196
+      },
+      [r.MIDNIGHT]: {
+        raw: "OPACITY_24",
+        opacity: .23921568627450981
+      },
+      [r.DARKER]: {
+        raw: "OPACITY_12",
+        opacity: .12156862745098039
+      }
+    },
+    CONTROL_EXPRESSIVE_BORDER_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "OPACITY_12",
+        opacity: .12156862745098039
+      },
+      [r.LIGHT]: {
+        raw: "OPACITY_WHITE_8",
+        opacity: .0784313725490196
+      },
+      [r.MIDNIGHT]: {
+        raw: "OPACITY_24",
+        opacity: .23921568627450981
+      },
+      [r.DARKER]: {
+        raw: "OPACITY_12",
+        opacity: .12156862745098039
+      }
+    },
+    CONTROL_EXPRESSIVE_BORDER_HOVER: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "OPACITY_12",
+        opacity: .12156862745098039
+      },
+      [r.LIGHT]: {
+        raw: "OPACITY_WHITE_8",
+        opacity: .0784313725490196
+      },
+      [r.MIDNIGHT]: {
+        raw: "OPACITY_24",
+        opacity: .23921568627450981
+      },
+      [r.DARKER]: {
+        raw: "OPACITY_12",
+        opacity: .12156862745098039
       }
     },
     CONTROL_EXPRESSIVE_ICON_ACTIVE: {
@@ -6735,25 +6735,6 @@ let {
         opacity: .0784313725490196
       }
     },
-    RADIO_BACKGROUND_DEFAULT_SELECTED: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "BLURPLE_50",
-        opacity: 1
-      },
-      [r.LIGHT]: {
-        raw: "BLURPLE_50",
-        opacity: 1
-      },
-      [r.MIDNIGHT]: {
-        raw: "BLURPLE_50",
-        opacity: 1
-      },
-      [r.DARKER]: {
-        raw: "BLURPLE_50",
-        opacity: 1
-      }
-    },
     RADIO_BACKGROUND_HOVER: {
       category: "generic",
       [r.DARK]: {
@@ -6773,7 +6754,26 @@ let {
         opacity: .0784313725490196
       }
     },
-    RADIO_BACKGROUND_HOVER_SELECTED: {
+    RADIO_BACKGROUND_SELECTED_DEFAULT: {
+      category: "generic",
+      [r.DARK]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      },
+      [r.LIGHT]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      },
+      [r.MIDNIGHT]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      },
+      [r.DARKER]: {
+        raw: "BLURPLE_50",
+        opacity: 1
+      }
+    },
+    RADIO_BACKGROUND_SELECTED_HOVER: {
       category: "generic",
       [r.DARK]: {
         raw: "BLURPLE_60",
@@ -6830,25 +6830,6 @@ let {
         opacity: .6392156862745098
       }
     },
-    RADIO_BORDER_DEFAULT_SELECTED: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "OPACITY_12",
-        opacity: .12156862745098039
-      },
-      [r.LIGHT]: {
-        raw: "OPACITY_28",
-        opacity: .2784313725490196
-      },
-      [r.MIDNIGHT]: {
-        raw: "OPACITY_24",
-        opacity: .23921568627450981
-      },
-      [r.DARKER]: {
-        raw: "OPACITY_12",
-        opacity: .12156862745098039
-      }
-    },
     RADIO_BORDER_HOVER: {
       category: "generic",
       [r.DARK]: {
@@ -6868,7 +6849,7 @@ let {
         opacity: .8
       }
     },
-    RADIO_BORDER_HOVER_SELECTED: {
+    RADIO_BORDER_SELECTED_DEFAULT: {
       category: "generic",
       [r.DARK]: {
         raw: "OPACITY_12",
@@ -6887,61 +6868,23 @@ let {
         opacity: .12156862745098039
       }
     },
-    RADIO_FOREGROUND_ACTIVE: {
+    RADIO_BORDER_SELECTED_HOVER: {
       category: "generic",
       [r.DARK]: {
-        raw: "BLURPLE_50",
-        opacity: 1
+        raw: "OPACITY_12",
+        opacity: .12156862745098039
       },
       [r.LIGHT]: {
-        raw: "BLURPLE_50",
-        opacity: 1
+        raw: "OPACITY_28",
+        opacity: .2784313725490196
       },
       [r.MIDNIGHT]: {
-        raw: "BLURPLE_50",
-        opacity: 1
+        raw: "OPACITY_24",
+        opacity: .23921568627450981
       },
       [r.DARKER]: {
-        raw: "BLURPLE_50",
-        opacity: 1
-      }
-    },
-    RADIO_FOREGROUND_DEFAULT: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "OPACITY_BLACK_8",
-        opacity: .0784313725490196
-      },
-      [r.LIGHT]: {
-        raw: "OPACITY_4",
-        opacity: .0392156862745098
-      },
-      [r.MIDNIGHT]: {
-        raw: "OPACITY_BLACK_8",
-        opacity: .0784313725490196
-      },
-      [r.DARKER]: {
-        raw: "OPACITY_BLACK_8",
-        opacity: .0784313725490196
-      }
-    },
-    RADIO_FOREGROUND_HOVER: {
-      category: "generic",
-      [r.DARK]: {
-        raw: "OPACITY_BLACK_8",
-        opacity: .0784313725490196
-      },
-      [r.LIGHT]: {
-        raw: "OPACITY_4",
-        opacity: .0392156862745098
-      },
-      [r.MIDNIGHT]: {
-        raw: "OPACITY_BLACK_8",
-        opacity: .0784313725490196
-      },
-      [r.DARKER]: {
-        raw: "OPACITY_BLACK_8",
-        opacity: .0784313725490196
+        raw: "OPACITY_12",
+        opacity: .12156862745098039
       }
     },
     RADIO_THUMB_BACKGROUND_ACTIVE: {
