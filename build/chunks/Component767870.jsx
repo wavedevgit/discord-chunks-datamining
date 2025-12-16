@@ -40,9 +40,9 @@ function h(e) {
       width: i = 14,
       height: l = 15,
       color: a = "white",
-      foreground: s
+      foreground: o
     } = e,
-    o = function(e, t) {
+    s = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -57,12 +57,12 @@ function h(e) {
       }
       return i
     }(e, ["width", "height", "color", "foreground"]);
-  return (0, r.jsxs)("svg", (t = p({}, (0, c.Z)(p({}, o))), n = n = {
+  return (0, r.jsxs)("svg", (t = p({}, (0, c.Z)(p({}, s))), n = n = {
     preserveAspectRatio: "none",
     width: i,
     height: l,
     viewBox: "0 0 14 15",
-    className: s,
+    className: o,
     xmlns: "http://www.w3.org/2000/svg",
     children: [(0, r.jsx)("defs", {
       children: (0, r.jsxs)("linearGradient", {
@@ -122,11 +122,11 @@ function m(e) {
     messageStyle: c,
     upperCase: p,
     showSparkles: m
-  } = e, [b] = (0, o.Tt)(a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
+  } = e, [b] = (0, s.Tt)(a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
     showAfterTimestamp: n.valueOf(),
     cooldownDurationMs: 0
-  }), E = (0, s.ZP)(i, c);
-  return "" === E ? null : (p && (E = E.toUpperCase()), (0, r.jsxs)("div", {
+  }), _ = (0, o.ZP)(i, c);
+  return "" === _ ? null : (p && (_ = _.toUpperCase()), (0, r.jsxs)("div", {
     className: l()(t, d.countDown),
     children: [m ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(h, {
@@ -137,7 +137,7 @@ function m(e) {
         color: "url(#".concat(f, ")")
       })]
     }) : null, (0, r.jsx)(u.mn, {
-      text: E,
+      text: _,
       colorOptions: b === a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL ? u.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : u.VE.PREMIUM_TIER_2_GREY_FILL
     })]
   }))

@@ -1,16 +1,16 @@
-/** Chunk was on 29725 **/
-/** chunk id: 617889, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 11941 **/
+/** chunk id: 617889, original params: e,t,o (module,exports,require) **/
 require.d(exports, {
-  EK: () => o,
-  GX: () => s,
-  qe: () => d
+  EK: () => i,
+  GX: () => c,
+  qe: () => s
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk968843 = require("./968843.js");
 
-function s() {
+function c() {
   let [{
     spring: e
   }, t] = (0, Chunk481060.q_F)(() => ({
@@ -29,31 +29,31 @@ function s() {
   }
 }
 
-function o(e, t) {
-  var n;
-  let a = (0, i.z)(e),
-    r = null != (n = (0, l.i6)()) ? n : 0,
-    s = "var(--green-330)",
-    o = ["var(--background-base-lowest)", "var(--interactive-text-default)"];
+function i(e, t) {
+  var o;
+  let r = (0, d.z)(e),
+    n = null != (o = (0, a.i6)()) ? o : 0,
+    c = "var(--green-330)",
+    i = ["var(--background-base-lowest)", "var(--interactive-text-default)"];
   return {
-    backgroundTop: t ? o[r] : ["#828288", "#CBCDD4"][r],
-    backgroundBottom: t ? o[r] : ["#535356", "#8B8C95"][r],
-    foreground: s,
-    glow: t && a ? s : "#C4C1D66E"
+    backgroundTop: t ? i[n] : ["#828288", "#CBCDD4"][n],
+    backgroundBottom: t ? i[n] : ["#535356", "#8B8C95"][n],
+    foreground: c,
+    glow: t && r ? c : "#C4C1D66E"
   }
 }
-let c = () => {
+let b = () => {
   let e = document.body.style.getPropertyValue("--custom-guild-sidebar-width").slice(0, false);
   return parseInt("" !== module ? module : "375")
 };
 
-function d() {
+function s() {
   return {
     label: ! function() {
-      let [e, t] = Chunk473749.useState(() => 270 > c());
+      let [e, t] = Chunk473749.useState(() => 270 > b());
       return Chunk473749.useEffect(() => {
         let e = new MutationObserver(() => {
-          exports(270 > c())
+          exports(270 > b())
         });
         return module.observe(document.body, {
           attributes: true,

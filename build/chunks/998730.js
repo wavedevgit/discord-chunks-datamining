@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 998730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => s
+  N: () => o
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk302221 = require("./302221.js"),
@@ -20,7 +20,7 @@ async function a(e) {
   })
 }
 
-function s(e) {
+function o(e) {
   let [t, n] = r.useState(), i = r.useRef(false);
   return null == e || null != t || i.current || (i.current = true, a(e).then(e => {
     n(e[0])

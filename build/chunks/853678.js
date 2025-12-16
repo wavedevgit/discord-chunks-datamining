@@ -45,7 +45,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
       scope: {
         [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.b_]
       },
-      validation: e => (0, _.Z)(e).required().keys({
+      validation: e => (0, E.Z)(e).required().keys({
         url: e.string().required()
       }),
       handler(e) {
@@ -55,34 +55,34 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
             url: n
           }
         } = e;
-        (0, E.bu)(t.transport);
-        let r = s.ZP.getCurrentEmbeddedActivity();
+        (0, _.bu)(t.transport);
+        let r = o.ZP.getCurrentEmbeddedActivity();
         try {
           var i, c;
           let e = new URL(n),
-            s = e.toString();
+            o = e.toString();
           if (m.isPlatformEmbedded) {
             let e = (0, a.R)() ? v.KJ3.ACTIVITY_POPOUT : null;
             g.Z.focus(e, true)
           }
           let p = d.Z.getApplication(null == (i = t.application) ? true : i.id),
             b = (0, u.p)(null == r ? true : r.location),
-            E = (null == p ? true : p.id) !== true ? T.get(p.id) : true;
-          if (true !== E && E.trustedUntilEpochMs >= Date.now() && E.trustedHosts.has(e.host)) return (0, l.Z)(s), f.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+            _ = (null == p ? true : p.id) !== true ? T.get(p.id) : true;
+          if (true !== _ && _.trustedUntilEpochMs >= Date.now() && _.trustedHosts.has(e.host)) return (0, l.Z)(o), f.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
             application_id: null == (c = t.application) ? true : c.id,
-            url: s,
+            url: o,
             opened: true
           }), Promise.resolve({
             opened: true
           });
           return new Promise(e => (0, h.q)({
-            href: s,
+            href: o,
             shouldConfirm: true,
             onConfirm: () => {
               var n;
-              (0, l.Z)(s), f.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+              (0, l.Z)(o), f.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                 application_id: null == (n = t.application) ? true : n.id,
-                url: s,
+                url: o,
                 opened: true
               }), e({
                 opened: true
@@ -92,13 +92,13 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
               var n;
               f.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                 application_id: null == (n = t.application) ? true : n.id,
-                url: s,
+                url: o,
                 opened: false
               }), e({
                 opened: false
               })
             }
-          }, true, true, (0, o.z)({
+          }, true, true, (0, s.z)({
             application: p,
             channelId: b
           })))
@@ -110,7 +110,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
       }
     },
     [Chunk981631.Etm.NAVIGATE_TO_CONNECTIONS]: {
-      validation: e => (0, _.Z)(e),
+      validation: e => (0, E.Z)(e),
       scope: {
         [Chunk186901.Gp.ANY]: [Chunk186901.wE]
       },
@@ -118,8 +118,8 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
         let {
           socket: t
         } = e;
-        (0, E.bu)(t.transport);
-        let r = (0, E._f)(t.application);
+        (0, _.bu)(t.transport);
+        let r = (0, _._f)(t.application);
         if (!C.has(r)) throw new b.Z({
           errorCode: v.lTL.UNAUTHORIZED_FOR_APPLICATION
         }, "Command not available for this application");
@@ -147,9 +147,9 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
             link_id: a
           }
         } = e;
-        (0, E.bu)(n.transport);
-        let s = (0, E._f)(n.application);
-        if (null == s) throw new b.Z({
+        (0, _.bu)(n.transport);
+        let o = (0, _._f)(n.application);
+        if (null == o) throw new b.Z({
           errorCode: v.lTL.INVALID_COMMAND
         }, "No application.");
         if (!(0, r.yE)(null != (t = n.application.flags) ? t : 0, v.udG.EMBEDDED)) throw new b.Z({
@@ -157,7 +157,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
         }, "This application cannot access this API");
         return new Promise(e => {
           (0, c._)({
-            applicationId: s,
+            applicationId: o,
             customId: i,
             linkId: a,
             message: l,

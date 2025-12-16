@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 745052, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eo
+  Z: () => es
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -110,23 +110,23 @@ function ei() {
     m = Chunk473749.useCallback(() => {
       Chunk907862(require.map(e => e.channel.id))
     }, [require, Chunk907862]),
-    E = Chunk473749.useCallback(e => {
+    _ = Chunk473749.useCallback(e => {
       var t, i;
       let {
-        row: s
-      } = e, o = n[s], c = null == (i = n[s + 1]) || null == (t = i.channel) ? true : t.id, u = o.channel.id;
+        row: o
+      } = e, s = n[o], c = null == (i = n[o + 1]) || null == (t = i.channel) ? true : t.id, u = s.channel.id;
       return (0, r.jsx)(W.Z, {
-        index: s,
+        index: o,
         className: a()({
           [ee.selected]: null != g && g === u,
           [ee.siblingSelected]: null != g && g === c
         }),
-        channel: o.channel,
-        user: o.user,
+        channel: s.channel,
+        user: s.user,
         hasSingleMessageRequest: l
       }, u)
     }, [Chunk120356, require, Chunk112724]),
-    _ = Chunk473749.useCallback(() => (0, Chunk54381.jsxs)(Chunk82295.Z, {
+    E = Chunk473749.useCallback(() => (0, Chunk54381.jsxs)(Chunk82295.Z, {
       className: Chunk439700.sectionTitle,
       children: [exports > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.rA4iWY, {
         count: exports
@@ -183,8 +183,8 @@ function ei() {
           paddingBottom: 24,
           sectionHeight: K.oi,
           rowHeight: K.WN,
-          renderSection: _,
-          renderRow: E,
+          renderSection: E,
+          renderRow: _,
           sections: [n.length],
           chunkSize: 30,
           fade: true
@@ -201,11 +201,11 @@ function el(e) {
   } = e, i = (0, c.e7)([w.ZP], () => w.ZP.getSidebarState(w.uZ)), l = (0, c.e7)([L.Z], () => L.Z.getChannel(null == i ? true : i.channelId));
   if (null == i || i.type !== j.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
   let a = t - Q.R7I;
-  return (0, r.jsx)(E.Z, {
-    sidebarType: E.y.MessageRequestSidebar,
+  return (0, r.jsx)(_.Z, {
+    sidebarType: _.y.MessageRequestSidebar,
     maxWidth: a,
     onWidthChange: n,
-    children: (0, r.jsx)(_.Z, {
+    children: (0, r.jsx)(E.Z, {
       channel: l,
       baseChannelId: w.uZ
     })
@@ -261,13 +261,13 @@ let ea = e => {
   })
 };
 
-function es(e) {
+function eo(e) {
   let {
     section: t
   } = e;
   return t === K.pS.SPAM ? (0, r.jsx)(q.Z, {}) : (0, r.jsx)(ei, {})
 }
-let eo = (0, Chunk112724.Z)(function(e) {
+let es = (0, Chunk112724.Z)(function(e) {
   let {
     width: t
   } = e, n = (0, V.q)();
@@ -275,11 +275,11 @@ let eo = (0, Chunk112724.Z)(function(e) {
     f.Y(Q.Z5c.MESSAGE_REQUESTS), (0, P.e)("message-requests"), D.default.track(Q.rMx.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
     }), S.Z.increment({
-      name: o.V.MESSAGE_REQUEST_VIEW
+      name: s.V.MESSAGE_REQUEST_VIEW
     })
   });
   let l = (0, c.e7)([x.Z], () => x.Z.theme),
-    s = (0, z.w)(),
+    o = (0, z.w)(),
     [u, d] = i.useState(false),
     g = (0, c.e7)([w.ZP], () => {
       let e = w.ZP.getSidebarState(w.uZ);
@@ -287,12 +287,12 @@ let eo = (0, Chunk112724.Z)(function(e) {
     }),
     h = null == g ? true : g.channelId,
     b = null != g,
-    E = (0, k.T)(h),
-    _ = (0, M.J)(h),
+    _ = (0, k.T)(h),
+    E = (0, M.J)(h),
     O = i.useRef(null);
   i.useEffect(() => {
-    null != h && !E && _ && b && ((0, T.Kh)(h), N.Z.closeChannelSidebar(w.uZ))
-  }, [h, _, b, E]);
+    null != h && !_ && E && b && ((0, T.Kh)(h), N.Z.closeChannelSidebar(w.uZ))
+  }, [h, E, b, _]);
   let [y, I] = i.useState(K.pS.REQUESTS), A = e => {
     I(e)
   };
@@ -330,15 +330,15 @@ let eo = (0, Chunk112724.Z)(function(e) {
             }), (0, r.jsx)(p.njP.Item, {
               id: K.pS.SPAM,
               className: ee.item,
-              children: 0 === s ? $.intl.string($.t.ulKXHp) : $.intl.formatToPlainString($.t["5jtrlZ"], {
-                count: s
+              children: 0 === o ? $.intl.string($.t.ulKXHp) : $.intl.formatToPlainString($.t["5jtrlZ"], {
+                count: o
               })
             })]
           })]
         })
       }), (0, r.jsx)("div", {
         className: et.content,
-        children: (0, r.jsx)(es, {
+        children: (0, r.jsx)(eo, {
           section: y
         })
       })]

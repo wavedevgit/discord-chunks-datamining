@@ -15,32 +15,32 @@ var Chunk238679 = require("./238679.js"),
 function u(e, t, n) {
   var u, d, p, f, g, h;
   switch (t) {
-    case o.zMe.ACTIVITY_PIP_MODE_UPDATE: {
+    case s.zMe.ACTIVITY_PIP_MODE_UPDATE: {
       let t = null == (u = e.application) ? true : u.id,
         n = null != t ? r.ZP.getLayoutModeForApp(t) : null;
       return null != n ? {
         is_pip_mode: n !== c.cE.FOCUSED
       } : null
     }
-    case o.zMe.ACTIVITY_LAYOUT_MODE_UPDATE: {
+    case s.zMe.ACTIVITY_LAYOUT_MODE_UPDATE: {
       let t = null == (d = e.application) ? true : d.id,
         n = null != t ? r.ZP.getLayoutModeForApp(t) : null;
       return null != n ? {
         layout_mode: n
       } : null
     }
-    case o.zMe.THERMAL_STATE_UPDATE: {
+    case s.zMe.THERMAL_STATE_UPDATE: {
       let e = (0, i.bY)();
       if (e === i.bG.UNHANDLED) return null;
       return {
         thermal_state: e
       }
     }
-    case o.zMe.ORIENTATION_UPDATE:
+    case s.zMe.ORIENTATION_UPDATE:
       return null;
-    case o.zMe.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE:
-      return (0, s.dO)();
-    case o.zMe.QUEST_ENROLLMENT_STATUS_UPDATE: {
+    case s.zMe.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE:
+      return (0, o.dO)();
+    case s.zMe.QUEST_ENROLLMENT_STATUS_UPDATE: {
       let {
         quest_id: t
       } = n;

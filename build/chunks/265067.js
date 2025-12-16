@@ -25,7 +25,7 @@ let m = {
       await (0, Chunk208049.w)();
       let e = Chunk763296.Z.getSounds(),
         t = [];
-      return module.forEach(e => e.forEach(e => t.push((0, s.QL)(e)))), exports
+      return module.forEach(e => e.forEach(e => t.push((0, o.QL)(e)))), exports
     }
   },
   [Chunk231338.Et.PLAY_SOUNDBOARD_SOUND]: {
@@ -45,14 +45,14 @@ let m = {
       } = e;
       await (0, l.w)();
       let r = u.default.getCurrentUser(),
-        s = a.Z.getSound(t, n),
+        o = a.Z.getSound(t, n),
         p = (0, f.Z)(),
-        g = null != s && null != r && (0, o.Nq)(r, s, p);
+        g = null != o && null != r && (0, s.Nq)(r, o, p);
       if (null == p) throw new d.Z({
         errorCode: h.lT.INVALID_CHANNEL
       }, "Invalid Channel.");
       if (g)
-        if ((0, c.Z)(p)) null != s && (0, o.GN)(s, p.id, [i.Z.RPC]);
+        if ((0, c.Z)(p)) null != o && (0, s.GN)(o, p.id, [i.Z.RPC]);
         else throw new d.Z({
           errorCode: h.lT.INVALID_PERMISSIONS
         }, "Invalid Permissions.");

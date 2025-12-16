@@ -20,7 +20,7 @@ function g(e) {
   var t, n;
   let {
     tooltipText: l,
-    onClick: o
+    onClick: s
   } = e, {
     parentAnalyticsLocation: c
   } = (0, a.ZP)(), {
@@ -47,7 +47,7 @@ function g(e) {
   }({
     tooltipText: l,
     onClick: () => {
-      (0, s.v)(c, s.d.DISCONNECT), o()
+      (0, o.v)(c, o.d.DISCONNECT), s()
     }
   }, u), n = n = {
     icon: (0, r.jsx)(d, {
@@ -85,7 +85,7 @@ function m(e) {
   return (0, r.jsx)(g, {
     tooltipText: f.intl.string(f.t["6vrfgt"]),
     onClick: () => {
-      if ((0, c.Z)(t)) return void(0, o.lC)(t);
+      if ((0, c.Z)(t)) return void(0, s.lC)(t);
       l.default.disconnect()
     }
   })

@@ -8,7 +8,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk70956 = require("./70956.js"),
   Chunk948053 = require("./948053.js"),
   Chunk518929 = require("./518929.js");
-let o = null;
+let s = null;
 class c extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
@@ -21,7 +21,7 @@ class c extends Chunk317770.Z {
       let t = arguments.length > 0 && true !== arguments[0] && arguments[0];
       Chunk948053.Z.fetchDehydrated({
         isInitialLoad: exports
-      }), null != o && clearTimeout(o), o = setTimeout(() => module(), 15 * Chunk70956.Z.Millis.MINUTE)
+      }), null != s && clearTimeout(s), s = setTimeout(() => module(), 15 * Chunk70956.Z.Millis.MINUTE)
     }(true), Chunk948053.Z.getGuildChannelScores(), Chunk948053.Z.getRecommendedGuilds())
   }
 }

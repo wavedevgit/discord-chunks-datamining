@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 838195, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -9,14 +9,14 @@ var Chunk481060 = require("./481060.js"),
   Chunk812206 = require("./812206.js"),
   Chunk531826 = require("./531826.js");
 
-function s(e) {
+function o(e) {
   let {
     applicationId: t,
-    channelId: s,
-    mediaUrl: o
+    channelId: o,
+    mediaUrl: s
   } = e, c = l.Z.getApplication(t), u = null != (0, a.ZP)({
     application: c,
-    channelId: s
+    channelId: o
   }) ? i.u1M : i.z1l;
   (0, i.ZDy)(async () => {
     let {
@@ -41,7 +41,7 @@ function s(e) {
       return e
     }({
       applicationId: t,
-      mediaUrl: o
+      mediaUrl: s
     }, n))
   }, {
     modalKey: "activity-share-moment-modal",

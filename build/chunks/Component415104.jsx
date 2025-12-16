@@ -1,4 +1,4 @@
-/** Chunk was on 29725 **/
+/** Chunk was on 6043 **/
 /** chunk id: 415104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk617136 = require("./617136.js"),
   Chunk49436 = require("./49436.js"),
   Chunk968843 = require("./968843.js"),
@@ -23,16 +23,16 @@ var Chunk54381 = require("./54381.js"),
 function v(e) {
   var t, n;
   let {
-    quest: l,
+    quest: i,
     className: o,
     questContent: u,
     contentPosition: v,
     rowIndex: j,
     impressionRef: y,
     sourceQuestContent: C
-  } = e, [_, S] = r.useState(false), [E, T] = r.useState([]), O = (0, c.qb)(l), N = r.useMemo(() => (0, d.q8)(l), [l]), w = (0, s._F)(), P = r.useCallback(() => {
+  } = e, [_, S] = r.useState(false), [E, T] = r.useState([]), O = (0, c.qb)(i), N = r.useMemo(() => (0, d.q8)(i), [i]), w = (0, s._F)(), P = r.useCallback(() => {
     S(true), w({
-      questId: l.id,
+      questId: i.id,
       event: b.rMx.QUEST_HOVER,
       properties: {
         content_id: u,
@@ -41,9 +41,9 @@ function v(e) {
       },
       sourceQuestContent: C
     }), N && (0, m.loadVideoQuestModal)()
-  }, [w, l.id, u, N, C, v]), I = r.useCallback(() => {
+  }, [w, i.id, u, N, C, v]), I = r.useCallback(() => {
     S(false), w({
-      questId: l.id,
+      questId: i.id,
       event: b.rMx.QUEST_HOVER_OFF,
       properties: {
         content_id: u,
@@ -52,7 +52,7 @@ function v(e) {
       },
       sourceQuestContent: C
     })
-  }, [w, l.id, u, C, v]), k = r.useContext(h.t), {
+  }, [w, i.id, u, C, v]), k = r.useContext(h.t), {
     visibilityElementRef: R,
     almostVisibleInViewport: A
   } = function(e) {
@@ -69,24 +69,24 @@ function v(e) {
     }
   }(null != (n = null == k || null == (t = k.current) ? true : t.getScrollerNode()) ? n : null);
   return (0, a.jsxs)("div", {
-    id: "quest-tile-".concat(l.id),
+    id: "quest-tile-".concat(i.id),
     ref: e => {
       y.current = e, R.current = e
     },
-    className: i()(g.container, o),
+    className: l()(g.container, o),
     onMouseEnter: P,
     onMouseLeave: I,
     onFocus: P,
     onBlur: I,
     children: [(0, a.jsx)(f.Z, {
-      quest: l,
+      quest: i,
       isHovering: _,
       errorHints: E,
       warningHints: O,
       isVisibleInViewport: A,
       sourceQuestContent: C
     }), (0, a.jsx)(x.Z, {
-      quest: l,
+      quest: i,
       questContent: u,
       isHovering: _,
       contentPosition: v,

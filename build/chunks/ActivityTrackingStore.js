@@ -28,7 +28,7 @@ function j(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   t && P(e, true);
   let n = T[e.applicationId];
-  null != n && (n.stop(), delete T[e.applicationId]), delete S[e.applicationId], s.K.set(y, S)
+  null != n && (n.stop(), delete T[e.applicationId]), delete S[e.applicationId], o.K.set(y, S)
 }
 
 function P(e) {
@@ -36,10 +36,10 @@ function P(e) {
     n = Date.now(),
     r = null != e.updatedAt ? n - e.updatedAt : 0;
   r > I + C && (r = 0);
-  let i = (0, h.OT)(e.applicationId, E.Z),
+  let i = (0, h.OT)(e.applicationId, _.Z),
     l = O.Z.getVoiceChannelId(),
     a = m.default.getSessionId(),
-    c = _.Z.getMediaSessionId();
+    c = E.Z.getMediaSessionId();
   u.Z.updateActivity({
     applicationId: e.applicationId,
     distributor: e.isDiscordApplication ? v.GQo.DISCORD : e.distributor,
@@ -53,7 +53,7 @@ function P(e) {
     mediaSessionId: c
   }), e.updatedAt = n;
   let d = T[e.applicationId];
-  null == d && (d = T[e.applicationId] = new o.Xp).start(I, () => P(e)), t || (S[e.applicationId] = e, s.K.set(y, S))
+  null == d && (d = T[e.applicationId] = new s.Xp).start(I, () => P(e)), t || (S[e.applicationId] = e, o.K.set(y, S))
 }
 
 function x() {
@@ -113,13 +113,13 @@ class Z extends(i = Chunk442837.ZP.Store) {
       token: n
     } = e, r = S[t];
     if (null == r) returnfalse;
-    r.token = n, s.K.set(y, S)
+    r.token = n, o.K.set(y, S)
   },
   ACTIVITY_UPDATE_FAIL: function(e) {
     let {
       applicationId: t
     } = e, n = S[t];
     if (null == n) returnfalse;
-    n.token = null, n.updatedAt = null, s.K.set(y, S)
+    n.token = null, n.updatedAt = null, o.K.set(y, S)
   }
 })

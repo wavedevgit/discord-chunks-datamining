@@ -21,18 +21,18 @@ function g(e) {
   } = e, n = i.useCallback(e => {
     if (null == e.target.closest('img, video, audio, [class*="imageWrapper"], [class*="embedWrapper"], [class*="attachment"], [class*="mediaPlayer"]')) switch (t.data.kind) {
       case "message":
-        (0, o.jd)(t.data.message.channel_id, t.data.message.id);
+        (0, s.jd)(t.data.message.channel_id, t.data.message.id);
         break;
       case "guildEvent": {
         let e = a.ZP.getGuildScheduledEvent(t.data.eventId);
-        null != e && (0, s.uL)(p.Z5c.GUILD_EVENT_DETAILS(e.guild_id, e.id));
+        null != e && (0, o.uL)(p.Z5c.GUILD_EVENT_DETAILS(e.guild_id, e.id));
         break
       }
       case "forumThread":
-        (0, o.jd)(t.data.threadChannel.id, t.data.message.id);
+        (0, s.jd)(t.data.threadChannel.id, t.data.message.id);
         break;
       case "generatedCandidate":
-        (0, o.jd)(t.data.item.channel_id, t.data.item.message_ids[0]);
+        (0, s.jd)(t.data.item.channel_id, t.data.item.message_ids[0]);
         break;
       case "contentInventory":
         (0, c.openUserProfileModal)({

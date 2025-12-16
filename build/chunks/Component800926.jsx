@@ -1,4 +1,4 @@
-/** Chunk was on 29725 **/
+/** Chunk was on 6043 **/
 /** chunk id: 800926, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk236726 = require("./236726.js"),
   Chunk49436 = require("./49436.js"),
   Chunk968843 = require("./968843.js"),
@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk945165 = require("./945165.js"),
   Chunk50683 = require("./50683.js");
 let g = Chunk473749.forwardRef(function(e, t) {
-  var n, l;
+  var n, i;
   let {
     className: g,
     overlayRef: v
@@ -30,7 +30,7 @@ let g = Chunk473749.forwardRef(function(e, t) {
     taskDetails: C,
     isExpanded: _,
     isExpansionAnimationComplete: S
-  } = r.useContext(p.A), E = (null == (n = y.userStatus) ? true : n.completedAt) != null, T = (0, c.Jf)(y), O = r.useRef(null), N = (null == (l = y.userStatus) ? true : l.enrolledAt) != null, w = null != T ? T.percentComplete : C.percentComplete, [P, I] = r.useState(false);
+  } = r.useContext(p.A), E = (null == (n = y.userStatus) ? true : n.completedAt) != null, T = (0, c.Jf)(y), O = r.useRef(null), N = (null == (i = y.userStatus) ? true : i.enrolledAt) != null, w = null != T ? T.percentComplete : C.percentComplete, [P, I] = r.useState(false);
   return (0, a.jsxs)(a.Fragment, {
     children: [E && (0, a.jsx)(m.Z, {
       overlayRef: v,
@@ -39,7 +39,7 @@ let g = Chunk473749.forwardRef(function(e, t) {
     }), (0, a.jsx)(s.animated.div, {
       ref: t,
       "aria-hidden": _ && S,
-      className: i()(g, b.contentCollapsed, {
+      className: l()(g, b.contentCollapsed, {
         [b.contentCollapsedExpanded]: _,
         [b.contentCollapsedAccepted]: N
       }),

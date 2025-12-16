@@ -31,13 +31,13 @@ class f extends Chunk317770.Z {
   constructor(...e) {
     super(...e), d(this, "timeout", null), d(this, "handleMaybeOpenModal", () => {
       var e;
-      let t = o.default.getCurrentUser(),
+      let t = s.default.getCurrentUser(),
         n = null == t || null == (e = t.avatarDecoration) ? true : e.expiresAt;
       null != n && (this.maybeOpenModal() || (null != this.timeout && clearTimeout(this.timeout), this.timeout = setTimeout(this.maybeOpenModal, 1e3 * n - Date.now() + 1e3)))
     }), d(this, "maybeOpenModal", () => {
       var e, t;
-      let l = o.default.getCurrentUser(),
-        a = s.Z.getState(),
+      let l = s.default.getCurrentUser(),
+        a = o.Z.getState(),
         f = null == l || null == (e = l.avatarDecoration) ? true : e.skuId,
         g = null == l || null == (t = l.avatarDecoration) ? true : t.expiresAt;
       return null != l && !!(null != g && 1e3 * g < Date.now()) && a !== u.hes.RTC_CONNECTED && ((0, i.Mr3)(p), (0, i.ZDy)(async () => {

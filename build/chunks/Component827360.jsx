@@ -19,7 +19,7 @@ let p = e => {
     onClick: p
   } = e, {
     analyticsLocations: f
-  } = (0, s.ZP)(a.Z.HOME_PAGE_SHOP_TAB), g = i.useRef(n);
+  } = (0, o.ZP)(a.Z.HOME_PAGE_SHOP_TAB), g = i.useRef(n);
   return g.current = n, i.useEffect(() => () => {
     var e;
     null == (e = g.current) || e.call(g)
@@ -43,7 +43,7 @@ let p = e => {
       text: u.intl.string(u.t.dp9qDi),
       variant: "primary",
       onClick: () => {
-        null == p || p(), (0, o.mK)({
+        null == p || p(), (0, s.mK)({
           analyticsLocations: f,
           analyticsSource: a.Z.HOME_PAGE_SHOP_TAB,
           tab: c.AW.HOME

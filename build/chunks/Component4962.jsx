@@ -25,7 +25,7 @@ let g = Chunk442837.ZP.connectStores([Chunk451478.Z], () => ({
     return (0, i.jsxs)("div", {
       className: a()(p.staffReviewHeader, n),
       children: [(0, i.jsx)(c.Z, {
-        size: o.EFr.SIZE_32,
+        size: s.EFr.SIZE_32,
         user: t,
         animate: r
       }), (0, i.jsxs)("div", {

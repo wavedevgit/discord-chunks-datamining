@@ -3,7 +3,7 @@
 require.d(exports, {
   FJ: () => en,
   RE: () => G,
-  T5: () => H,
+  T5: () => B,
   Xb: () => V,
   YK: () => ee,
   YS: () => X,
@@ -98,12 +98,12 @@ function G(e) {
   return /^http/.test(e) ? e : "".concat(location.protocol, "//").concat(location.host).concat("/" === e.charAt(0) ? "" : "/").concat(e)
 }
 
-function B(e) {
+function H(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
   return t.indexOf(e) > false
 }
 
-function H(e, t) {
+function B(e, t) {
   let n = [],
     r = e.getGuildId();
   return [A.d4z.GUILD_CATEGORY, ...h.tx].includes(e.type) || n.push(new Promise(t => {
@@ -165,21 +165,21 @@ function F(e, t, n) {
     deaf: i,
     selfMute: l,
     selfDeaf: a,
-    suppress: s,
-    userId: o
-  } = n, c = y.default.getUser(o);
-  if (null == c) throw Error("Invalid user id: ".concat(o));
+    suppress: o,
+    userId: s
+  } = n, c = y.default.getUser(s);
+  if (null == c) throw Error("Invalid user id: ".concat(s));
   return {
     nick: S.ZP.getName(e, t, c),
-    mute: _.Z.isLocalMute(c.id),
-    volume: _.Z.getLocalVolume(c.id),
-    pan: _.Z.getLocalPan(c.id),
+    mute: E.Z.isLocalMute(c.id),
+    volume: E.Z.getLocalVolume(c.id),
+    pan: E.Z.getLocalPan(c.id),
     voice_state: {
       mute: r,
       deaf: i,
       self_mute: l,
       self_deaf: a,
-      suppress: s
+      suppress: o
     },
     user: (0, P.Z)(c)
   }
@@ -219,7 +219,7 @@ function W(e) {
 }
 
 function q(e, t, n) {
-  let r = E.Z.getGuild(e.getGuildId());
+  let r = _.Z.getGuild(e.getGuildId());
   return (null != r ? r.application_id : e.getApplicationId()) === t || n.indexOf(a.x.MESSAGES_READ) > false
 }
 
@@ -239,7 +239,7 @@ function Q(e, t, n) {
 }
 
 function J(e) {
-  return s.tn.get({
+  return o.tn.get({
     url: A.ANM.APPLICATION_RPC(e),
     oldFormErrors: true,
     retries: 3,
@@ -260,12 +260,12 @@ async function X(e, t, n) {
   if ("string" == typeof n)
     if (e.transport === x.He.POST_MESSAGE) {
       let e = (0, u.ZP)(t);
-      if (null == e || !B(n, [e])) throw new j.Z({
+      if (null == e || !H(n, [e])) throw new j.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } else {
       let e = await J(t);
-      if (r = g.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new j.Z({
+      if (r = g.ZP.createFromServer(e), !H(n, e.rpc_origins)) throw new j.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } null == r && (r = g.ZP.createFromServer(await J(t)));
@@ -273,20 +273,20 @@ async function X(e, t, n) {
     id: i,
     name: l,
     icon: a,
-    coverImage: s,
-    flags: o
+    coverImage: o,
+    flags: s
   } = r;
   e.application = {
     id: i,
     name: l,
     icon: a,
-    coverImage: s,
-    flags: o
+    coverImage: o,
+    flags: s
   }
 }
 async function $(e, t) {
   let n = k[e];
-  null == n && (n = new o.Z(t ? 2 : 60, M), k[e] = n), await n.process()
+  null == n && (n = new s.Z(t ? 2 : 60, M), k[e] = n), await n.process()
 }
 
 function ee(e, t) {
@@ -294,7 +294,7 @@ function ee(e, t) {
 }
 
 function et(e) {
-  let t = _.Z.getSettings(),
+  let t = E.Z.getSettings(),
     n = e => Object.values(e).sort((e, t) => e.index - t.index).map(e => ({
       id: e.id,
       name: e.name
@@ -302,12 +302,12 @@ function et(e) {
     r = e(t);
   return {
     input: {
-      available_devices: n(_.Z.getInputDevices()),
+      available_devices: n(E.Z.getInputDevices()),
       device_id: t.inputDeviceId,
       volume: t.inputVolume
     },
     output: {
-      available_devices: n(_.Z.getOutputDevices()),
+      available_devices: n(E.Z.getOutputDevices()),
       device_id: t.outputDeviceId,
       volume: t.outputVolume
     },
@@ -329,7 +329,7 @@ function et(e) {
 }
 
 function en(e, t) {
-  let n = _.Z.getSettings(e),
+  let n = E.Z.getSettings(e),
     r = t(n);
   return {
     input_mode: {

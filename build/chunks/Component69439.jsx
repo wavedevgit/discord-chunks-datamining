@@ -1,4 +1,4 @@
-/** Chunk was on 29725 **/
+/** Chunk was on 6043 **/
 /** chunk id: 69439, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -84,7 +84,7 @@ function N(e) {
     contentPosition: R,
     rowIndex: A,
     sourceQuestContent: Z
-  } = e, D = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), L = (0, j.g2)({
+  } = e, D = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), L = (0, j.g2)({
     useReducedMotion: D
   }), M = (0, m.O5)(), U = (0, x._s)({
     quest: P
@@ -95,11 +95,11 @@ function N(e) {
     isClaiming: G,
     isEnrolling: V,
     isQuestEnrollmentBlocked: H
-  } = (0, l.cj)([p.Z], () => ({
+  } = (0, i.cj)([p.Z], () => ({
     isClaiming: p.Z.isClaimingReward(P.id) || p.Z.isFetchingRewardCode(P.id),
     isEnrolling: p.Z.isEnrolling(P.id),
     isQuestEnrollmentBlocked: null != p.Z.questEnrollmentBlockedUntil
-  })), z = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, W = (null == (n = P.userStatus) ? true : n.completedAt) != null, K = W && (null == (N = P.userStatus) ? true : N.claimedAt) == null, q = (0, b.iQ)(P), Y = !(0, b.zi)(P), Q = (0, x._Q)(P), X = (0, g.PB)(P), J = (0, g.HJ)(P), $ = (0, g.Vl)(P), ee = (0, x.Rf)(P), [et, en, ea] = (0, x.me)(P, ee), er = Y && Q === x.OH.ACCEPTED, el = er && et === h.LI.SELECT, ei = er && !el && en.length > 1, es = r.useCallback(e => {
+  })), z = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, W = (null == (n = P.userStatus) ? true : n.completedAt) != null, K = W && (null == (N = P.userStatus) ? true : N.claimedAt) == null, q = (0, b.iQ)(P), Y = !(0, b.zi)(P), Q = (0, x._Q)(P), X = (0, g.PB)(P), J = (0, g.HJ)(P), $ = (0, g.Vl)(P), ee = (0, x.Rf)(P), [et, en, ea] = (0, x.me)(P, ee), er = Y && Q === x.OH.ACCEPTED, ei = er && et === h.LI.SELECT, el = er && !ei && en.length > 1, es = r.useCallback(e => {
     ea(e), e === C.cd.DESKTOP && k([])
   }, [ea, k]), {
     text: eo,
@@ -209,7 +209,7 @@ function N(e) {
       text: eo,
       fullWidth: true
     })
-  }) : Y && z && !em ? ef = el ? (0, a.jsx)(i.B6, {
+  }) : Y && z && !em ? ef = ei ? (0, a.jsx)(l.B6, {
     className: S.platformSelectorPrimary,
     isSelected: () => false,
     options: E,
@@ -308,9 +308,9 @@ function N(e) {
     children: [(0, a.jsx)("div", {
       className: S.ctaItem,
       children: ef
-    }), ei && (0, a.jsx)("div", {
+    }), el && (0, a.jsx)("div", {
       className: S.ctaItem,
-      children: (0, a.jsx)(i.B6, {
+      children: (0, a.jsx)(l.B6, {
         className: S.platformSelectorSecondary,
         isSelected: e => {
           switch (et) {

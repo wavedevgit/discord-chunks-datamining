@@ -1,4 +1,4 @@
-/** Chunk was on 29725 **/
+/** Chunk was on 6043 **/
 /** chunk id: 287647, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   e: () => v
@@ -27,7 +27,7 @@ function v(e) {
     children: o
   } = e, {
     analyticsLocations: v
-  } = (0, s.ZP)(), j = (0, r.useRef)(null), y = (0, l.e7)([u.Z], () => u.Z.isFocused()), C = (0, r.useCallback)(() => {
+  } = (0, s.ZP)(), j = (0, r.useRef)(null), y = (0, i.e7)([u.Z], () => u.Z.isFocused()), C = (0, r.useCallback)(() => {
     t(h.L.TAKE_ACTION), (0, d.openUserSettings)(c.n.PROFILE_PANEL, {
       section: p.oAB.PROFILE_CUSTOMIZATION,
       analyticsLocations: v
@@ -43,7 +43,7 @@ function v(e) {
     var e, t, n;
     y && (null == (e = j.current) ? true : e.paused) ? null == (t = j.current) || t.play().catch(g.error) : y || null == (n = j.current) || n.pause()
   }, [y]), (0, a.jsxs)(a.Fragment, {
-    children: [o, (0, a.jsx)(i.J, {
+    children: [o, (0, a.jsx)(l.J, {
       targetElementRef: n,
       shouldShow: true,
       onRequestClose: _,

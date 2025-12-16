@@ -20,7 +20,7 @@ class p extends(i = Chunk442837.ZP.Store) {
     this.waitFor(Chunk594174.default, Chunk984933.ZP), this.syncWith([Chunk594174.default, Chunk984933.ZP], d)
   }
   isVisible(e) {
-    return null != e && e.mfaLevel === c.BpS.ELEVATED && false === u && s.ZP.hasElevatedPermissions(e.id)
+    return null != e && e.mfaLevel === c.BpS.ELEVATED && false === u && o.ZP.hasElevatedPermissions(e.id)
   }
 }(r = "displayName") in p ? Object.defineProperty(p, r, {
   value: "GuildMFAWarningStore",

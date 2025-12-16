@@ -26,7 +26,7 @@ function O(e) {
     onOpen: t,
     onClose: n,
     "data-jump-section": l
-  } = e, O = (0, s.e7)([h.default], () => h.default.getCurrentUser()), v = i.useRef(null), y = (0, s.e7)([g.ZP], () => (null == O ? true : O.id) != null && g.ZP.getMentionCount(O.id, b.W.NOTIFICATION_CENTER) > 0), {
+  } = e, O = (0, o.e7)([h.default], () => h.default.getCurrentUser()), v = i.useRef(null), y = (0, o.e7)([g.ZP], () => (null == O ? true : O.id) != null && g.ZP.getMentionCount(O.id, b.W.NOTIFICATION_CENTER) > 0), {
     titlebarIconSize: I,
     titlebarHoverHighlight: C
   } = (0, p.T)({
@@ -45,13 +45,13 @@ function O(e) {
     popoutPosition: "bottom",
     popoutAlign: "right",
     children: (e, t, n, i) => {
-      var s, p;
+      var o, p;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.u, {
           targetElementRef: v,
           shouldShow: !t,
-          text: E.intl.string(E.t.GSmTKJ),
-          children: (0, r.jsx)(u.P3F, (s = function(e) {
+          text: _.intl.string(_.t.GSmTKJ),
+          children: (0, r.jsx)(u.P3F, (o = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -73,23 +73,23 @@ function O(e) {
             innerRef: v,
             onClick: e,
             "data-jump-section": l,
-            "aria-label": E.intl.string(E.t.GSmTKJ),
-            className: a()(_.clickable, {
-              [_.withHighlight]: C
+            "aria-label": _.intl.string(_.t.GSmTKJ),
+            className: a()(E.clickable, {
+              [E.withHighlight]: C
             }),
             children: y || i ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(d.ZP, {
                 mask: d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
-                height: o.Z[S],
-                width: o.Z[S],
+                height: s.Z[S],
+                width: s.Z[S],
                 children: T
               }), (0, r.jsx)("span", {
-                className: a()(_.badge, {
-                  [_.smol]: "refresh_sm" === S
+                className: a()(E.badge, {
+                  [E.smol]: "refresh_sm" === S
                 })
               })]
             }) : T
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
@@ -97,8 +97,8 @@ function O(e) {
             }
             return n
           })(Object(p)).forEach(function(e) {
-            Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(p, e))
-          }), s))
+            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(p, e))
+          }), o))
         }), (0, r.jsx)(f.U, {
           location: "inbox-button",
           targetElementRef: v

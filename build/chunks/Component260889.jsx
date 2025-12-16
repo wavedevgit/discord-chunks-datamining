@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 260889, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -49,14 +49,14 @@ function b(e, t) {
   }), e
 }
 
-function E(e) {
+function _(e) {
   let t = i.useContext(f.AnalyticsContext),
     n = e.voiceChannels[0],
-    E = (0, l.e7)([d.Z], () => null != n && d.Z.can(g.Plq.CONNECT, n.channel));
+    _ = (0, l.e7)([d.Z], () => null != n && d.Z.can(g.Plq.CONNECT, n.channel));
   return null == n ? null : [(0, r.jsx)(a.sNh, {
     id: "join-voice",
     action: function() {
-      (0, c.Kh)(n.channel.id), s.default.selectVoiceChannel(n.channel.id), o.ZP.trackWithMetadata(g.rMx.ACTIVITY_FEED_VOICE_CHANNEL_VISITED, m({
+      (0, c.Kh)(n.channel.id), o.default.selectVoiceChannel(n.channel.id), s.ZP.trackWithMetadata(g.rMx.ACTIVITY_FEED_VOICE_CHANNEL_VISITED, m({
         source: b(m({}, t.location), {
           object: g.qAy.LIST_ITEM
         }),
@@ -65,11 +65,11 @@ function E(e) {
       }, (0, p.y)(e)))
     },
     label: h.intl.string(h.t["8yOlh9"]),
-    disabled: !E
+    disabled: !_
   }, "join-voice"), (0, r.jsx)(a.sNh, {
     id: "goto-server",
     action: function() {
-      (0, u.X)(n.guild.id), o.ZP.trackWithMetadata(g.rMx.ACTIVITY_FEED_GUILD_VISITED, m({
+      (0, u.X)(n.guild.id), s.ZP.trackWithMetadata(g.rMx.ACTIVITY_FEED_GUILD_VISITED, m({
         source: b(m({}, t.location), {
           object: g.qAy.LIST_ITEM
         }),

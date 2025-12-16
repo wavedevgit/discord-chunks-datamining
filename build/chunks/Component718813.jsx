@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk442837 = require("./442837.js"),
   Chunk215569 = require("./215569.js"),
@@ -137,9 +137,9 @@ class D extends(r = Chunk473749.PureComponent) {
       opacity: t,
       scale: n
     } = this.state;
-    o.Z.parallel([o.Z.spring(t, C({
+    s.Z.parallel([s.Z.spring(t, C({
       toValue: 1
-    }, L)), o.Z.spring(n, C({
+    }, L)), s.Z.spring(n, C({
       toValue: 1
     }, L))]).start(() => this.animateComplete(e))
   }
@@ -149,12 +149,12 @@ class D extends(r = Chunk473749.PureComponent) {
       opacity: t,
       scale: n
     } = this.state;
-    o.Z.parallel([o.Z.spring(t, C({
+    s.Z.parallel([s.Z.spring(t, C({
       toValue: 0
-    }, L)), o.Z.spring(n, C({
+    }, L)), s.Z.spring(n, C({
       toValue: 1.1
     }, L))]).start(() => {
-      e(), _.S.dispatch(O.CkL.LAYER_POP_COMPLETE)
+      e(), E.S.dispatch(O.CkL.LAYER_POP_COMPLETE)
     })
   }
   animateUnder() {
@@ -216,7 +216,7 @@ class D extends(r = Chunk473749.PureComponent) {
         }
       }(require) : true,
       role: Chunk134616 ? "dialog" : true,
-      className: s()(Chunk388596.layer, {
+      className: o()(Chunk388596.layer, {
         [Chunk388596.baseLayer]: Chunk120356,
         [Chunk388596.animating]: module,
         "stop-animations": r === w
@@ -254,8 +254,8 @@ class D extends(r = Chunk473749.PureComponent) {
       n = 1;
     e.mode === w && (t = .93, n = 0), this.state = {
       animating: false,
-      scale: new o.Z.Value(t),
-      opacity: new o.Z.Value(n),
+      scale: new s.Z.Value(t),
+      opacity: new s.Z.Value(n),
       mode: e.mode
     }
   }
@@ -296,7 +296,7 @@ class M extends Chunk473749.PureComponent {
     return (0, Chunk54381.jsx)(Chunk481060.f6W, {
       theme: this.props.sidebarTheme,
       children: e => (0, i.jsx)("div", {
-        className: s()(y.bg, e)
+        className: o()(y.bg, e)
       })
     })
   }
@@ -304,7 +304,7 @@ class M extends Chunk473749.PureComponent {
     return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [this.renderArtisanalHack(), (0, Chunk54381.jsx)(Chunk215569.W, {
         component: "div",
-        className: s()(Chunk388596.layers, this.props.className),
+        className: o()(Chunk388596.layers, this.props.className),
         children: this.renderLayers()
       })]
     })
@@ -313,7 +313,7 @@ class M extends Chunk473749.PureComponent {
 
 function k(e) {
   let t = (0, b.Ll)(),
-    n = (0, c.e7)([E.Z], () => E.Z.getLayers()),
+    n = (0, c.e7)([_.Z], () => _.Z.getLayers()),
     r = (0, m.QP)(e => e.fullScreenLayers.length > 0 && !e.fullScreenLayers.some(e => e.options.showAppUnderLayer));
   return (0, i.jsx)(M, S(C({}, e), {
     sidebarTheme: t,

@@ -22,7 +22,7 @@ let g = function(e) {
     footer: h,
     sectionFilter: m,
     renderSectionFooter: b
-  } = e, E = e => {
+  } = e, _ = e => {
     let {
       section: r,
       row: i
@@ -30,7 +30,7 @@ let g = function(e) {
     if (null == l || null == i) return null;
     let a = l[i];
     return null == a ? null : n(a, r)
-  }, _ = i.useCallback((e, n) => {
+  }, E = i.useCallback((e, n) => {
     var r;
     let i = null == (r = t[e]) ? true : r[n];
     return m === d.pJs.ALL && (null == i ? true : i.giftIntentType) === p.hX.FRIEND_ANNIVERSARY && 0 === e ? u.fJ : u.NV
@@ -39,7 +39,7 @@ let g = function(e) {
       section: t
     } = e;
     return g(t)
-  }, [g]), v = i.useCallback(e => null == b ? null : b(e.section), [b]), y = i.useCallback(e => null == b ? 0 : null != b(e) ? u.lC : 0, [b]), I = (0, s.e7)([c.Z], () => c.Z.keyboardModeEnabled), C = i.useRef(null), S = i.useCallback(() => new Promise(e => {
+  }, [g]), v = i.useCallback(e => null == b ? null : b(e.section), [b]), y = i.useCallback(e => null == b ? 0 : null != b(e) ? u.lC : 0, [b]), I = (0, o.e7)([c.Z], () => c.Z.keyboardModeEnabled), C = i.useRef(null), S = i.useCallback(() => new Promise(e => {
     let t = C.current;
     if (null == t) return e();
     t.scrollToTop({
@@ -88,7 +88,7 @@ let g = function(e) {
           return i
         }(e, ["ref"]);
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(o._2F, function(e) {
+          children: [(0, r.jsx)(s._2F, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -110,8 +110,8 @@ let g = function(e) {
               var n;
               C.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
             },
-            renderRow: E,
-            rowHeight: _,
+            renderRow: _,
+            rowHeight: E,
             renderSection: O,
             sectionHeight: u.aS,
             renderFooter: v,

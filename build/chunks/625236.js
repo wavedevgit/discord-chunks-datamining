@@ -1,7 +1,8 @@
-/** Chunk was on 1272 **/
-/** chunk id: 625236, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 625236, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  B: () => u
+  B: () => d
 }), require("./388685.js");
 var Chunk786761 = require("./786761.js"),
   Chunk23750 = require("./23750.js"),
@@ -17,7 +18,7 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -31,24 +32,28 @@ function o(e) {
 }
 
 function c(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function u(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class u {
+class d {
   isLatest(e, t) {
     return this.messageGeneration(e, t) === t
   }
   messageGeneration(e, t) {
     let n = this.messages.get(e);
-    return null == n ? false / 0 : n.generation !== t && null != n.message && n.message.id === l.ZP.lastMessageId(e) ? (this.messages.set(e, c(o({}, n), {
+    return null == n ? false / 0 : n.generation !== t && null != n.message && n.message.id === a.ZP.lastMessageId(e) ? (this.messages.set(e, u(l({}, n), {
       generation: t
     })), t) : n.generation
   }
@@ -72,9 +77,9 @@ class u {
     })
   }
   putNew(e, t, n) {
-    var r, i, l;
-    let s = this.messages.get(e);
-    null != t && (i = t.id, null == (l = null == s || null == (r = s.message) ? true : r.id) || a.default.compare(i, l) > 0) && this.put(e, t, n)
+    var r;
+    let i = this.messages.get(e);
+    null != t && f(t.id, null == i || null == (r = i.message) ? true : r.id) && this.put(e, t, n)
   }
   putMany(e, t) {
     for (let n of e) this.put(n.channel_id, n, t)
@@ -83,11 +88,11 @@ class u {
     var t;
     if (null == e.id || null == e.channel_id) return;
     let n = e.channel_id,
-      l = this.messages.get(n);
-    if ((null == l || null == (t = l.message) ? true : t.id) !== e.id) return;
-    let a = l.message instanceof i.ZP ? (0, r.wi)(l.message, e) : (0, r.gx)(l.message, e);
-    this.messages.set(n, c(o({}, l), {
-      message: a
+      a = this.messages.get(n);
+    if ((null == a || null == (t = a.message) ? true : t.id) !== e.id) return;
+    let o = a.message instanceof i.ZP ? (0, r.wi)(a.message, e) : (0, r.gx)(a.message, e);
+    this.messages.set(n, u(l({}, a), {
+      message: o
     }))
   }
   delete(e) {
@@ -96,4 +101,8 @@ class u {
   constructor() {
     s(this, "localNeeded", true), s(this, "messages", new Map)
   }
+}
+
+function f(e, t) {
+  return null == t || o.default.compare(e, t) > 0
 }

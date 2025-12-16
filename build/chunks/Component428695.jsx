@@ -21,11 +21,11 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       guild: t,
       title: n,
       message: l,
-      image: s,
+      image: o,
       type: m,
       imageStyles: b,
-      imageMarginX: E,
-      imageMarginTop: _,
+      imageMarginX: _,
+      imageMarginTop: E,
       trackingSource: O,
       undismissable: v,
       onDismissed: y,
@@ -42,10 +42,10 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       })
     }, [t.id, m]);
     let j = null;
-    "function" == typeof C ? j = C() : null != C && (j = (0, r.jsx)(o.zx, {
+    "function" == typeof C ? j = C() : null != C && (j = (0, r.jsx)(s.zx, {
       "data-migration-pending": true,
       className: g.button,
-      size: o.zx.Sizes.SMALL,
+      size: s.zx.Sizes.SMALL,
       onClick: () => {
         null != m && d.default.track(p.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
           source: O,
@@ -62,7 +62,7 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       variant: "text-md/medium",
       color: "text-strong",
       className: a()(g.title, {
-        [g.noImageTitle]: null == s
+        [g.noImageTitle]: null == o
       }, {
         [g.center]: T
       }),
@@ -77,7 +77,7 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       color: "text-muted",
       children: l
     }));
-    let A = null != E ? "".concat(E, "px") : "16px";
+    let A = null != _ ? "".concat(_, "px") : "16px";
     return (0, r.jsxs)("div", {
       className: a()(g.container, N),
       children: [true === v ? null : (0, r.jsx)(c.P3F, {
@@ -93,17 +93,17 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
           color: "currentColor",
           className: g.closeIcon
         })
-      }), null != s && (0, r.jsx)("div", {
+      }), null != o && (0, r.jsx)("div", {
         className: g.imageContainer,
         style: {
-          marginTop: "".concat(_, "px"),
+          marginTop: "".concat(E, "px"),
           marginLeft: A,
           marginRight: A
         },
         children: (0, r.jsx)("img", {
           className: g.image,
           style: b,
-          src: s,
+          src: o,
           alt: ""
         })
       }), (0, r.jsxs)("div", {

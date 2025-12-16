@@ -18,18 +18,18 @@ function u(e) {
     onRequestClose: u,
     targetElementRef: d
   } = e, p = i.useCallback(() => {
-    t(), (0, a.uL)(s.Z5c.QUEST_HOME_V2)
+    t(), (0, a.uL)(o.Z5c.QUEST_HOME_V2)
   }, [t]);
   return i.useEffect(() => {
     n()
   }, [n]), (0, r.jsx)(l.J2, {
     actions: [{
-      text: o.intl.string(o.t.facYnD),
+      text: s.intl.string(s.t.facYnD),
       variant: "primary",
       onClick: p
     }],
     align: "top",
-    body: o.intl.string(o.t.o4NGXc),
+    body: s.intl.string(s.t.o4NGXc),
     caretConfig: {
       align: "start"
     },
@@ -42,6 +42,6 @@ function u(e) {
     position: "right",
     size: "lg",
     targetElementRef: d,
-    title: o.intl.string(o.t.EDDchq)
+    title: s.intl.string(s.t.EDDchq)
   })
 }

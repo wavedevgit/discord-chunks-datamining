@@ -9,26 +9,26 @@ var Chunk657305 = require("./657305.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o(e, t) {
+function s(e, t) {
   if (null != e && e.type === a.IIU.CUSTOM_STATUS) return null != e.state ? e.state.trim() : null;
-  if (null != t) return null == e || e.type !== a.IIU.PLAYING ? s.intl.string(s.t.eXan7B) : e.name;
+  if (null != t) return null == e || e.type !== a.IIU.PLAYING ? o.intl.string(o.t.eXan7B) : e.name;
   if (null == e || null == e.name) return null;
   if ((0, l.Z)(e)) return null != e.details && "" !== e.details ? e.details : e.name;
   if ((0, i.Z)(e)) return (0, r.Z)(e.name);
   var n = e.type,
-    o = e.name;
+    s = e.name;
   switch (n) {
     case a.IIU.LISTENING:
     case a.IIU.WATCHING:
     case a.IIU.COMPETING:
     case a.IIU.STREAMING:
-      return o;
+      return s;
     case a.IIU.CUSTOM_STATUS:
     case a.IIU.HANG_STATUS:
       return null;
     case a.IIU.PLAYING:
     default:
-      return o
+      return s
   }
 }
 
@@ -38,7 +38,7 @@ function c(e, t) {
     null != t && false !== t.discoverable && (n = [...n, null]);
     let r = null;
     for (let e of n) {
-      let n = o(e, t);
+      let n = s(e, t);
       if (null != n) return {
         activity: e,
         activityText: n
@@ -50,5 +50,5 @@ function c(e, t) {
       activityText: null
     } : null
   }
-  return o(e, t)
+  return s(e, t)
 }

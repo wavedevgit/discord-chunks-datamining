@@ -26,7 +26,7 @@ function O(e) {
   var t, n;
   let {
     markAsDismissed: O
-  } = e, v = u.E[f.yD.WELCOME], y = (0, a.dQu)(v.primaryColor).hex(), I = (0, l.e7)([s.Z], () => s.Z.useReducedMotion);
+  } = e, v = u.E[f.yD.WELCOME], y = (0, a.dQu)(v.primaryColor).hex(), I = (0, l.e7)([o.Z], () => o.Z.useReducedMotion);
   return (0, r.jsx)(c.Q.Provider, {
     value: (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -57,11 +57,11 @@ function O(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t),
-    children: (0, r.jsx)(o.ZP, {
+    children: (0, r.jsx)(s.ZP, {
       children: (0, r.jsxs)("div", {
         className: b.container,
         style: {
-          backgroundImage: "url(".concat(_.Z, "), linear-gradient(").concat(y, "80, black)"),
+          backgroundImage: "url(".concat(E.Z, "), linear-gradient(").concat(y, "80, black)"),
           borderColor: y,
           boxShadow: "0 0 15px 5px ".concat(y, "50")
         },
@@ -72,7 +72,7 @@ function O(e) {
           loop: true,
           className: b.logo,
           children: (0, r.jsx)("source", {
-            src: E.Z,
+            src: _.Z,
             type: "video/webm"
           })
         }), (0, r.jsxs)("div", {

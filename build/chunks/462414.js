@@ -16,7 +16,7 @@ var Chunk243814 = require("./243814.js"),
 
 function f(e) {
   let t = e.application.id;
-  if (null == t) throw new o.Z({
+  if (null == t) throw new s.Z({
     errorCode: d.lTL.INVALID_COMMAND
   }, "No application.");
   return t
@@ -40,13 +40,13 @@ let g = {
           self_mute: r,
           self_deaf: l
         }
-      } = e, o = f(t);
+      } = e, s = f(t);
       null != n && i.Z.setMode(n.type, {
-        shortcut: (0, s.Kd)(n.shortcut)
-      }, o), null != r && r !== a.Z.isSelfMute(o) && i.Z.toggleSelfMute({
-        context: o
-      }), null != l && l !== a.Z.isSelfDeaf(o) && i.Z.toggleSelfDeaf({
-        context: o
+        shortcut: (0, o.Kd)(n.shortcut)
+      }, s), null != r && r !== a.Z.isSelfMute(s) && i.Z.toggleSelfMute({
+        context: s
+      }), null != l && l !== a.Z.isSelfDeaf(s) && i.Z.toggleSelfDeaf({
+        context: s
       })
     }
   },
@@ -65,8 +65,8 @@ let g = {
           mute: r,
           volume: l
         }
-      } = e, s = f(t);
-      null != r && r !== a.Z.isLocalMute(n, s) && i.Z.toggleLocalMute(n, s), null != l && i.Z.setLocalVolume(n, l, s)
+      } = e, o = f(t);
+      null != r && r !== a.Z.isLocalMute(n, o) && i.Z.toggleLocalMute(n, o), null != l && i.Z.setLocalVolume(n, l, o)
     }
   },
   [Chunk981631.Etm.PUSH_TO_TALK]: {

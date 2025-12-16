@@ -22,13 +22,13 @@ let u = function(e) {
     value: e.value,
     radioBarClassName: n
   })), [p, n]);
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(s.Z, {
     renderPopout: (e, t) => {
       let {
         closePopout: n
       } = e;
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(o.g, {
+        children: [(0, r.jsx)(s.g, {
           id: t,
           children: c.intl.string(c.t.tZXJIS)
         }), (0, r.jsx)(l.FXm, {
@@ -62,7 +62,7 @@ let u = function(e) {
       }({}, e), i = i = {
         buttonRef: t,
         size: "sm",
-        text: (0, s.NL)(u),
+        text: (0, o.NL)(u),
         icon: l.hic,
         iconPosition: "end",
         variant: "secondary"

@@ -6,7 +6,7 @@ require.d(exports, {
 }), require("./49124.js"), require("./388685.js"), require("./35282.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./539854.js"), require("./415506.js");
 var Chunk836560 = require("./836560.js"),
   Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk570140 = require("./570140.js"),
   Chunk710845 = require("./710845.js"),
   Chunk857192 = require("./857192.js"),
@@ -18,7 +18,7 @@ var Chunk836560 = require("./836560.js"),
   Chunk852926 = require("./852926.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js"),
-  _ = require("./413135.js").Buffer;
+  E = require("./413135.js").Buffer;
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,7 +66,7 @@ function N(e, t, n) {
       "Access-Control-Allow-Methods": "POST, GET, PUT, PATCH, DELETE",
       "Access-Control-Allow-Headers": "Content-Type, Authorization"
     } : {};
-  n = n ? JSON.stringify(n) : "", r = 200 === r && 0 === n.length ? 204 : r, t.setHeader("Content-Length", _.byteLength(n).toString()), t.setHeader("Content-Type", "application/json"), t.writeHead(r, function(e) {
+  n = n ? JSON.stringify(n) : "", r = 200 === r && 0 === n.length ? 204 : r, t.setHeader("Content-Length", E.byteLength(n).toString()), t.setHeader("Content-Type", "application/json"), t.writeHead(r, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -89,7 +89,7 @@ function j(e, t, n, r) {
 }
 class P extends Chunk76238.Z {
   send(e) {
-    (u.default.isLoggingOverlayEvents || e.cmd !== E.Etm.OVERLAY && e.evt !== E.zMe.OVERLAY) && I.info("Socket Emit: ".concat(this.id), (0, g.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
+    (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY && e.evt !== _.zMe.OVERLAY) && I.info("Socket Emit: ".concat(this.id), (0, g.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
       binary: true
     }) : this._socket.send(JSON.stringify(e))
   }
@@ -98,24 +98,24 @@ class P extends Chunk76238.Z {
   }
   constructor(e, t, n) {
     if (super("ws", t, n), O(this, "_socket", true), false === ["etf", "json"].indexOf(n)) throw new f.Z({
-      closeCode: E.$VG.INVALID_ENCODING
+      closeCode: _.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(n));
     if ("etf" === n && null == r) throw new f.Z({
-      closeCode: E.$VG.INVALID_ENCODING
+      closeCode: _.$VG.INVALID_ENCODING
     }, "Erlpack cannot be used on this client");
     this._socket = e
   }
 }
 class x extends Chunk76238.Z {
   send(e) {
-    (u.default.isLoggingOverlayEvents || e.cmd !== E.Etm.OVERLAY) && I.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
+    (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY) && I.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
   }
   close(e, t) {
     this._closeCallback(t, e)
   }
   constructor(e, t, n, r) {
     if (super("http", n, r), O(this, "_sendCallback", true), O(this, "_closeCallback", true), "json" !== r) throw new f.Z({
-      closeCode: E.$VG.INVALID_ENCODING
+      closeCode: _.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(r));
     this._sendCallback = e, this._closeCallback = t
   }
@@ -130,7 +130,7 @@ class A extends Chunk836560.EventEmitter {
     if ("/rpc" === n && ("GET" === i || l)) {
       let n = new URLSearchParams(r),
         i = l ? S(e.headers)["content-type"].split("/")[1] : "json",
-        s = function() {
+        o = function() {
           var e, r;
           let {
             protocol: i,
@@ -138,20 +138,20 @@ class A extends Chunk836560.EventEmitter {
           } = null != (r = d.Z.toURLSafe(null != (e = n.get("callback")) ? e : "")) ? r : {};
           i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", y), t.writeHead(301), t.end()
         },
-        o = new x(!l ? s : N.bind(null, e, t), !l ? s : j.bind(null, e, t, 400), Number(n.get("v")), i);
-      if (l)(0, m.em)(o, S(e.headers).origin, n.get("client_id")).then(() => {
+        s = new x(!l ? o : N.bind(null, e, t), !l ? o : j.bind(null, e, t, 400), Number(n.get("v")), i);
+      if (l)(0, m.em)(s, S(e.headers).origin, n.get("client_id")).then(() => {
         let n = "";
-        e.on("data", e => n += e), e.on("error", () => j(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(o, n))
+        e.on("data", e => n += e), e.on("error", () => j(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
       }).catch(e => {
         let {
           code: t,
           message: n
         } = e;
-        return o.close(t, n)
+        return s.close(t, n)
       });
       else {
         var a;
-        o.authorization.scopes = [b.CN], this.handleMessage(o, decodeURIComponent(null != (a = n.get("payload")) ? a : ""))
+        s.authorization.scopes = [b.CN], this.handleMessage(s, decodeURIComponent(null != (a = n.get("payload")) ? a : ""))
       }
       return
     }
@@ -168,7 +168,7 @@ class A extends Chunk836560.EventEmitter {
       return
     }
     I.info("Socket Opened: ".concat(r.id)), e.on("error", e => I.error("WS Error: ".concat(e.message))), e.on("close", (e, t) => {
-      I.info("Socket Closed: ".concat(r.id, ", code ").concat(e, ", message ").concat(t)), s().remove(C, e => e === r), this.emit("disconnect", r)
+      I.info("Socket Closed: ".concat(r.id, ", code ").concat(e, ", message ").concat(t)), o().remove(C, e => e === r), this.emit("disconnect", r)
     }), (0, m.em)(r, l, i.get("client_id")).then(() => {
       C.push(r), e.on("message", e => this.handleMessage(r, e)), this.emit("connect", r)
     }).catch(e => {
@@ -186,9 +186,9 @@ class A extends Chunk836560.EventEmitter {
       else if ("string" == typeof t) n = JSON.parse(t);
       else throw Error()
     } catch (t) {
-      e.close(E.$VG.CLOSE_UNSUPPORTED, "Payload not ".concat(e.encoding));
+      e.close(_.$VG.CLOSE_UNSUPPORTED, "Payload not ".concat(e.encoding));
       return
-    }(u.default.isLoggingOverlayEvents || n.cmd !== E.Etm.OVERLAY) && I.info("Socket Message: ".concat(e.id), (0, g.Z)(n)), this.emit("request", e, n)
+    }(u.default.isLoggingOverlayEvents || n.cmd !== _.Etm.OVERLAY) && I.info("Socket Message: ".concat(e.id), (0, g.Z)(n)), this.emit("request", e, n)
   }
   constructor() {
     var e;

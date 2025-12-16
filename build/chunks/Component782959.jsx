@@ -41,7 +41,7 @@ function g(e) {
   } = e, m = {
     text: p.intl.string(p.t.JzJpg4),
     onClick: () => {
-      o.default.track(u.rMx.MEDIA_CHANNEL_UPSELL_CLICKED, f({}, (0, s.hH)(t))), g(d.L.PRIMARY), (0, a.ZDy)(async () => {
+      s.default.track(u.rMx.MEDIA_CHANNEL_UPSELL_CLICKED, f({}, (0, o.hH)(t))), g(d.L.PRIMARY), (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("29497"), n.e("59679")]).then(n.bind(n, 241865));

@@ -18,11 +18,11 @@ function u(e) {
     onSelectTab: t
   } = e, {
     claimedQuests: n,
-    isFetchingClaimedQuests: o
+    isFetchingClaimedQuests: s
   } = (0, l.eN)();
-  return o && 0 === n.length ? (0, r.jsx)(i.$jN, {
+  return s && 0 === n.length ? (0, r.jsx)(i.$jN, {
     className: c.spinner
-  }) : 0 === n.length ? (0, r.jsx)(s.Z, {
+  }) : 0 === n.length ? (0, r.jsx)(o.Z, {
     onClick: () => t(l.e5.ALL)
   }) : (0, r.jsx)("div", {
     className: c.gridContainer,
@@ -46,9 +46,9 @@ function d(e) {
   } = (0, l.bA)(l.e5.CLAIMED);
   return u && 0 === n.length ? (0, r.jsx)(i.$jN, {
     className: c.spinner
-  }) : 0 === n.length ? (0, r.jsx)(s.Z, {
+  }) : 0 === n.length ? (0, r.jsx)(o.Z, {
     onClick: () => t(l.e5.ALL)
-  }) : (0, r.jsx)(o.Z, {
+  }) : (0, r.jsx)(s.Z, {
     quests: n,
     excludedQuests: a,
     isFetching: u,

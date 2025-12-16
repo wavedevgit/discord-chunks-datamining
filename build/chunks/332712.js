@@ -11,13 +11,13 @@ var Chunk473749 = require("./473749.js"),
   Chunk594174 = require("./594174.js");
 
 function c(e) {
-  let t = (0, i.e7)([o.default], () => o.default.getUser(e)),
+  let t = (0, i.e7)([s.default], () => s.default.getUser(e)),
     n = (0, i.Wu)([a.Z], () => {
       var t, n;
       return null != (n = null == (t = a.Z.getMutualGuilds(e)) ? true : t.map(e => e.guild)) ? n : []
     });
   return r.useEffect(() => {
-    0 === n.length && null != t && null == a.Z.getMutualGuilds(e) && l.Z.wait(() => (0, s.Z)(e, true, {
+    0 === n.length && null != t && null == a.Z.getMutualGuilds(e) && l.Z.wait(() => (0, o.Z)(e, true, {
       withMutualGuilds: true
     }))
   }, [n, t, e]), n

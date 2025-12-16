@@ -32,12 +32,12 @@ let f = e => {
         targetElementRef: a,
         userId: t.id,
         guildId: l,
-        newAnalyticsLocations: [o.Z.AVATAR],
+        newAnalyticsLocations: [s.Z.AVATAR],
         position: "left",
         clickTrap: true,
         children: e => {
           var n, i;
-          return (0, r.jsx)(s.qEK, (n = function(e) {
+          return (0, r.jsx)(o.qEK, (n = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -58,7 +58,7 @@ let f = e => {
             ref: a,
             src: t.getAvatarURL(l, 24),
             "aria-label": t.username,
-            size: s.EFr.SIZE_24,
+            size: o.EFr.SIZE_24,
             className: p.partyMember
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
@@ -80,31 +80,31 @@ let f = e => {
       members: n,
       minAvatarsShown: i = 1,
       maxAvatarsShown: l = 2,
-      guildId: s
+      guildId: o
     } = e, {
-      unknownSize: o,
+      unknownSize: s,
       totalSize: c,
       knownSize: u
     } = t;
     if (c < i) return null;
     let g = a()(n).filter(d.lm).take(l).map(e => (0, r.jsx)(f, {
       member: e,
-      guildId: s
+      guildId: o
     }, e.id)).value();
-    for (let e = 0; e < o && g.length < l; e++) g.push((0, r.jsx)(f, {
-      guildId: s
+    for (let e = 0; e < s && g.length < l; e++) g.push((0, r.jsx)(f, {
+      guildId: o
     }, "unknown-member-".concat(e)));
-    let h = c - u - o;
+    let h = c - u - s;
     for (let e = 0; e < h && g.length < l; e++) g.push((0, r.jsx)(f, {
       empty: true,
-      guildId: s
+      guildId: o
     }, "empty-member-".concat(e)));
     let m = Math.max(Math.min(c - g.length, 99), 0);
     if (1 === m) {
       let e = n[l];
       g.push((0, r.jsx)(f, {
         member: e,
-        guildId: s
+        guildId: o
       }, e.id))
     }
     return (0, r.jsx)("div", {

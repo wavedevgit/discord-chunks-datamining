@@ -32,16 +32,16 @@ let m = {
         }
       } = e;
       (0, d.bu)(n.transport), (0, d._f)(n.application);
-      let o = n.application.id,
+      let s = n.application.id,
         p = (0, f.Z)(),
         g = null == p ? true : p.getGuildId(),
-        m = s.Z.getApplication(o);
+        m = o.Z.getApplication(s);
       if (!(0, r.yE)(null != (t = null == m ? true : m.flags) ? t : 0, h.udG.EMBEDDED_FIRST_PARTY)) throw new u.Z({
         errorCode: h.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
-      let b = (0, a.U)(o),
-        E = {
-          activity_application_id: o,
+      let b = (0, a.U)(s),
+        _ = {
+          activity_application_id: s,
           activity_channel_type: null == p ? true : p.type,
           activity_guild_id: g,
           activity_user_session_id: null == b ? true : b.activityUserSessionId
@@ -63,7 +63,7 @@ let m = {
           })
         }
         return e
-      }({}, E, l))
+      }({}, _, l))
     }
   },
   [Chunk981631.Etm.GET_APPLICATION_TICKET]: {
@@ -78,7 +78,7 @@ let m = {
       return i.tn.post({
         url: h.ANM.APPLICATION_TICKET(n),
         body: {
-          test_mode: o.Z.inTestModeForApplication(n) || l.Z.inDevModeForApplication(n)
+          test_mode: s.Z.inTestModeForApplication(n) || l.Z.inDevModeForApplication(n)
         },
         retries: 3,
         oldFormErrors: true,

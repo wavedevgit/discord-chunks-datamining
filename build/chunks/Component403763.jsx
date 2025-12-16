@@ -24,7 +24,7 @@ function f() {
   let f = (0, Chunk34828.X)(Chunk131951.Z.getInputDevices()[exports]),
     g = (0, Chunk34828.X)(Chunk131951.Z.getOutputDevices()[Chunk392711]);
   if (l().some(Chunk34828.Z.lastDeviceConnected, e => d.has(e.displayName) || e.displayName === f || e.displayName === g)) return;
-  let h = l().some(Chunk34828.Z.lastDeviceConnected, e => s.Z.isCertified(c.Z.inputDevices[e.displayName]) || s.Z.isCertified(c.Z.outputDevices[e.displayName]));
+  let h = l().some(Chunk34828.Z.lastDeviceConnected, e => o.Z.isCertified(c.Z.inputDevices[e.displayName]) || o.Z.isCertified(c.Z.outputDevices[e.displayName]));
   if ((exports === Chunk65154.w5 && Chunk34828.Z.lastInputSystemDevice.justChanged || Chunk392711 === Chunk65154.w5 && Chunk34828.Z.lastOutputSystemDevice.justChanged) && !h) return;
   let m = l().first(Object.keys(Chunk34828.Z.lastDeviceConnected)),
     b = null != m && "" !== m ? Chunk34828.Z.lastDeviceConnected[m] : null;

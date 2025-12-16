@@ -19,7 +19,7 @@ function u(e) {
     guild: u,
     description: d,
     children: p
-  } = e, f = a.QK.useSetting(), g = (0, s.n)(), [h, m] = (0, o.Z)(t, g && f);
+  } = e, f = a.QK.useSetting(), g = (0, o.n)(), [h, m] = (0, s.Z)(t, g && f);
   return (0, r.jsxs)("div", {
     className: c.container,
     children: [(0, r.jsx)("div", {

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 197941, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -20,7 +20,7 @@ var Chunk243814 = require("./243814.js"),
   Chunk736045 = require("./736045.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
-let _ = {
+let E = {
   [Chunk981631.Etm.TOGGLE_VIDEO]: {
     scope: {
       [Chunk186901.Gp.ALL]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VIDEO_WRITE]
@@ -42,12 +42,12 @@ let _ = {
         args: {
           pid: t
         }
-      } = e, i = d.Z.getCurrentUserActiveStream(), a = d.Z.getStreamerActiveStreamMetadata(), u = (0, c.Z)(o.ZP, f.Z), p = (0, m.Z)();
-      null != p && (null != t && null != a && a.pid !== t && (0, g.isWindows)() ? (0, s.WH)(p.guild_id, p.id, {
+      } = e, i = d.Z.getCurrentUserActiveStream(), a = d.Z.getStreamerActiveStreamMetadata(), u = (0, c.Z)(s.ZP, f.Z), p = (0, m.Z)();
+      null != p && (null != t && null != a && a.pid !== t && (0, g.isWindows)() ? (0, o.WH)(p.guild_id, p.id, {
         pid: t
-      }) : null != i ? (0, s.L6)(false) : null != t && (0, g.isWindows)() ? (0, s.WH)(p.guild_id, p.id, {
+      }) : null != i ? (0, o.L6)(false) : null != t && (0, g.isWindows)() ? (0, o.WH)(p.guild_id, p.id, {
         pid: t
-      }) : null != u ? (0, s.WH)(p.guild_id, p.id, {
+      }) : null != u ? (0, o.WH)(p.guild_id, p.id, {
         pid: u.pid
       }) : (0, l.ZDy)(async () => {
         let {
@@ -74,7 +74,7 @@ let _ = {
             return e
           }({}, t), i = i = {
             guildId: p.guild_id,
-            analyticsLocation: E.Sbl.ACTIVITY_RPC
+            analyticsLocation: _.Sbl.ACTIVITY_RPC
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

@@ -1,4 +1,4 @@
-/** Chunk was on 29725 **/
+/** Chunk was on 6043 **/
 /** chunk id: 53891, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => j
@@ -34,7 +34,7 @@ function g(e) {
   let {
     isAdopting: n,
     onAdoptTag: r,
-    onEditProfile: l
+    onEditProfile: i
   } = (0, h.Z)(e.guild.id, () => t(f.L.TAKE_ACTION)), c = [{
     text: x.intl.string(x.t.jwEaiX),
     loading: n,
@@ -42,7 +42,7 @@ function g(e) {
     variant: "primary"
   }, {
     text: x.intl.string(x.t.s5vZlQ),
-    onClick: l,
+    onClick: i,
     variant: "secondary"
   }];
   return (0, a.jsxs)(a.Fragment, {
@@ -52,7 +52,7 @@ function g(e) {
       position: "top",
       graphic: {
         type: "dynamic",
-        component: i.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+        component: l.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
         props: {
           guildId: e.guild.id,
           guildProfile: e.guild.profile
@@ -78,7 +78,7 @@ function v(e) {
       lastSeenInfo: {
         tag: e.guild.profile.tag
       }
-    }), (0, d.Qd)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guild.id, true, f.L.DISMISS), null == (n = e.onDismiss) || n.call(e, t)
+    }), (0, d.Qd)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guild.id, true, f.L.DISMISS), null == (n = e.onDismiss) || n.call(e, t)
   }
   let {
     isAdopting: n,
@@ -101,7 +101,7 @@ function v(e) {
       position: "top",
       graphic: {
         type: "dynamic",
-        component: i.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+        component: l.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
         props: {
           guildId: e.guild.id,
           guildProfile: e.guild.profile

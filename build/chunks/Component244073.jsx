@@ -41,7 +41,7 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function N(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -54,7 +54,7 @@ function N(e) {
   return e
 }
 
-function T(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -112,7 +112,7 @@ class D extends Chunk473749.PureComponent {
             targetElementRef: this.rtcConnectionStatusRef,
             renderPopout: () => this.renderPopout(Chunk120356.id),
             position: "top",
-            children: e => (0, i.jsx)(c.P3F, T(N({}, e), {
+            children: e => (0, i.jsx)(c.P3F, N(T({}, e), {
               innerRef: this.rtcConnectionStatusRef,
               children: (0, i.jsx)(y.Z, {
                 channelId: a.id,
@@ -199,7 +199,7 @@ function k(e) {
     o = (0, l.e7)([S.Z], () => null != r && S.Z.hasVideo(r.id)),
     [c, d] = (0, l.Wu)([O.Z], () => [O.Z.isSelfMute(t) || O.Z.isSelfMutedTemporarily(t), O.Z.isSelfDeaf(t)]),
     [u, f, h] = (0, l.Wu)([_.Z], () => [_.Z.getConnectionState(n), _.Z.getLastPing(n), _.Z.getQuality(n)]);
-  return (0, i.jsx)(D, T(N({}, a), {
+  return (0, i.jsx)(D, N(T({}, a), {
     context: t,
     lobbyId: n,
     channel: r,

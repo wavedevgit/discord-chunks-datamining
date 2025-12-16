@@ -33,7 +33,7 @@ class h extends Chunk317770.Z {
   constructor(...e) {
     var t;
     super(...e), t = this, f(this, "focusedOrForegrounded", (0, d.H)()), f(this, "heartbeatInterval", new r.Xp), f(this, "schedulerStarted", false), f(this, "lastHeartbeatTimestamp", 0), f(this, "maybeStartHeartbeat", () => {
-      this.heartbeatInterval.isStarted() || (this.trackHeartbeat(), this.heartbeatInterval.start(5 * o.Z.Millis.MINUTE, this.trackHeartbeat))
+      this.heartbeatInterval.isStarted() || (this.trackHeartbeat(), this.heartbeatInterval.start(5 * s.Z.Millis.MINUTE, this.trackHeartbeat))
     }), f(this, "startAnalyticHeartbeat", () => {
       this.schedulerStarted || (this.schedulerStarted = true, c.Z.addBreadcrumb({
         category: "ad",
@@ -50,10 +50,10 @@ class h extends Chunk317770.Z {
       }
       let n = performance.now(),
         r = n - t.lastHeartbeatTimestamp,
-        i = 5 * o.Z.Millis.MINUTE;
+        i = 5 * s.Z.Millis.MINUTE;
       if (!e && t.lastHeartbeatTimestamp > 0 && r < i) return;
       let l = (0, u.Gy)();
-      s.default.track(p.rMx.CLIENT_AD_HEARTBEAT, {
+      o.default.track(p.rMx.CLIENT_AD_HEARTBEAT, {
         client_ad_session_id: l.uuid,
         client_heartbeat_initialization_timestamp: l.createdAtTimestamp,
         client_heartbeat_version: 3

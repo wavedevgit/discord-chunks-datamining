@@ -25,7 +25,7 @@ function p() {
   return {
     participants: Array.from(module.userIds, e => {
       var r, i;
-      let l = s.default.getUser(e);
+      let l = o.default.getUser(e);
       if (null == l) return;
       let a = (0, c.y)(t, n, l);
       return r = function(e) {

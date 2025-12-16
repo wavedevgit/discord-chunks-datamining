@@ -21,52 +21,52 @@ function h(e) {
   var t, n, h, m;
   let {
     componentId: b,
-    promotionId: E,
-    content: _,
+    promotionId: _,
+    content: E,
     renderModalProps: O,
     analyticsLocations: v,
     analyticsLocation: y,
     isLightTheme: I
   } = e, C = "AnnouncementModalVariant1_".concat(b), {
     onClose: S
-  } = O, T = null != (m = null == (t = _.button) ? true : t.copy) ? m : f.intl.string(f.t.YScQSF), N = (null == (n = _.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", j = (0, d.K)({
-    buttonAction: null == (h = _.button) ? true : h.buttonAction,
+  } = O, T = null != (m = null == (t = E.button) ? true : t.copy) ? m : f.intl.string(f.t.YScQSF), N = (null == (n = E.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", j = (0, d.K)({
+    buttonAction: null == (h = E.button) ? true : h.buttonAction,
     analyticsLocations: v,
     analyticsLocation: y,
     onClose: S
-  }), P = "" !== _.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
-    children: ["\xa0", (0, r.jsx)(s.Anchor, {
+  }), P = "" !== E.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
+    children: ["\xa0", (0, r.jsx)(o.Anchor, {
       className: g.termsApplyAnchor,
-      href: c.Z.getArticleURL(_.helpArticleId),
+      href: c.Z.getArticleURL(E.helpArticleId),
       children: f.intl.string(f.t["sBp+u0"])
     })]
   }) : true, x = {
     type: "video",
-    src: I ? _.heroArtVideoLinkLightTheme : _.videoLink
+    src: I ? E.heroArtVideoLinkLightTheme : E.videoLink
   };
-  null != _.heroArtVideoSubtitles && (x.subtitles = _.heroArtVideoSubtitles.map(e => ({
+  null != E.heroArtVideoSubtitles && (x.subtitles = E.heroArtVideoSubtitles.map(e => ({
     locale: e.locale,
     src: e.link,
     isDefault: false
-  }))), ("" !== _.heroArtImageLinkDarkTheme || "" !== _.heroArtImageLinkLightTheme) && (x = {
+  }))), ("" !== E.heroArtImageLinkDarkTheme || "" !== E.heroArtImageLinkLightTheme) && (x = {
     type: "image",
-    src: I ? _.heroArtImageLinkLightTheme : _.heroArtImageLinkDarkTheme
+    src: I ? E.heroArtImageLinkLightTheme : E.heroArtImageLinkDarkTheme
   });
-  let A = "" !== _.modalTopPill ? () => (0, r.jsx)(u.mn, {
-    text: _.modalTopPill,
+  let A = "" !== E.modalTopPill ? () => (0, r.jsx)(u.mn, {
+    text: E.modalTopPill,
     className: g.modalTopPill
   }) : true;
   return {
     componentId: b,
-    promotionId: E,
+    promotionId: _,
     renderModalProps: O,
-    header: _.header,
+    header: E.header,
     modalTopExtra: A,
-    subHeader: _.subheader,
+    subHeader: E.subheader,
     subHeaderExtra: P,
-    body: _.body,
+    body: E.body,
     heroArt: x,
-    featureCards: _.featureCards.map(e => ({
+    featureCards: E.featureCards.map(e => ({
       header: e.header,
       subHeader: e.body,
       imageSrc: I ? e.imageLinkLightTheme : e.imageLink,
@@ -79,7 +79,7 @@ function h(e) {
         variant: "expressive",
         size: "md",
         onClick: () => {
-          o.default.track(p.rMx.CHANGE_LOG_CTA_CLICKED, {
+          s.default.track(p.rMx.CHANGE_LOG_CTA_CLICKED, {
             change_log_id: C,
             cta_type: N,
             seconds_open: Math.round((Date.now() - e) / 1e3),

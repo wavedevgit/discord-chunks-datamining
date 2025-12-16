@@ -13,8 +13,8 @@ var Chunk927723 = require("./927723.jsx"),
 function c(e, t) {
   if ((0, r.k)({
       kind: "channel"
-    }), s.Z.getChannelId(e) === t) {
+    }), o.Z.getChannelId(e) === t) {
     var n;
-    (0, i.dL)(o.Z5c.CHANNEL(e, null == (n = a.ZP.getDefaultChannel(e)) ? true : n.id))
+    (0, i.dL)(s.Z5c.CHANNEL(e, null == (n = a.ZP.getDefaultChannel(e)) ? true : n.id))
   } else(0, i.dL)(l.Z.defaultRoute)
 }

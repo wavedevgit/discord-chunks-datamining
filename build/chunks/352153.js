@@ -22,12 +22,12 @@ function h(e) {
     notificationItem: n,
     setScrollState: h
   } = e, [m, b] = r.useState(false), {
-    unreadItems: E,
-    readItems: _,
+    unreadItems: _,
+    readItems: E,
     allUnreadItemsHydrated: O
   } = (0, p.Z)(), v = (0, i.e7)([c.Z], () => c.Z.getVersion(), []), y = (0, i.e7)([c.Z], () => !(c.Z.isFirstPageHydrated() && v > 0));
   r.useEffect(() => {
-    null != c.Z.getLoadId() && s.m.trackFeedShown({
+    null != c.Z.getLoadId() && o.m.trackFeedShown({
       homeSessionId: "gravity"
     })
   }, [v]);
@@ -45,7 +45,7 @@ function h(e) {
       let {
         item: t
       } = e;
-      return !o.X.has(t.data.kind)
+      return !s.X.has(t.data.kind)
     }).map(e => {
       let {
         item: t
@@ -56,7 +56,7 @@ function h(e) {
   r.useEffect(() => {
     if (I || y || null == x || null == P || P === x) return;
     let e = Date.now();
-    e - j > g.C && (a.Z.gravityScrollEvent(e), s.m.trackFeedFirstScrollStarted())
+    e - j > g.C && (a.Z.gravityScrollEvent(e), o.m.trackFeedFirstScrollStarted())
   }, [I, j, x, P, N, y]);
   let A = r.useCallback(e => {
       var t, n;
@@ -67,16 +67,16 @@ function h(e) {
       T(r), (null != (n = null == (t = r[r.length - 1]) ? true : t.index) ? n : 0) > 10 && (null == h || h());
       let i = [],
         l = (0, d.FJ)(r),
-        o = Date.now();
+        s = Date.now();
       for (let e = l.length - 1; e >= 0; e--) {
         let t = l[e];
         null != t && i.push({
           id: t.id,
           type: (0, u.v$)(t),
-          timestamp: o++
+          timestamp: s++
         })
       }
-      i.length > 0 && a.Z.ackGravityItems(i, true), s.m.trackItemShortImpression(r, l.map(e => ({
+      i.length > 0 && a.Z.ackGravityItems(i, true), o.m.trackItemShortImpression(r, l.map(e => ({
         id: e.id,
         type: (0, u.v$)(e)
       })), v)
@@ -87,14 +87,14 @@ function h(e) {
       } = e;
       if (0 === t.length) return;
       let n = (0, d.FJ)(t);
-      s.m.trackItemLongImpression(t, n.map(e => ({
+      o.m.trackItemLongImpression(t, n.map(e => ({
         id: e.id,
         type: (0, u.v$)(e)
       })), v), a.Z.triggerItemsLongImpression(t.filter(e => {
         let {
           item: t
         } = e;
-        return !o.X.has(t.data.kind)
+        return !s.X.has(t.data.kind)
       }).map(e => {
         var t, n;
         let {
@@ -120,7 +120,7 @@ function h(e) {
         let {
           item: t
         } = e;
-        return !o.X.has(t.data.kind)
+        return !s.X.has(t.data.kind)
       }).map(e => {
         var t, n;
         let {
@@ -185,7 +185,7 @@ function h(e) {
         data: {
           kind: "loading"
         }
-      }) : (E.forEach(t => {
+      }) : (_.forEach(t => {
         (0, d.eO)(t) || e.push(t)
       }), O && e.push({
         id: "end",
@@ -194,7 +194,7 @@ function h(e) {
         data: {
           kind: "end"
         }
-      }), _.length > 0 && _.forEach(t => {
+      }), E.length > 0 && E.forEach(t => {
         (0, d.eO)(t) || e.push(t)
       }), C && e.push({
         id: "bottomLoading",
@@ -207,7 +207,7 @@ function h(e) {
         data: e,
         stickyHeaderIndices: []
       }
-    }, [y, n, E, O, _, C]);
+    }, [y, n, _, O, E, C]);
   return {
     data: D,
     loading: y,

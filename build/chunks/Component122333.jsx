@@ -87,11 +87,11 @@ class Z extends Chunk317770.Z {
       case Chunk701476.M5.MARKETING_UNCLAIMED:
         Chunk390885.Z.flowStart(Chunk630724.MK.ORGANIC_MARKETING, Chunk630724.EW.NUF_STARTED)
     }
-    let s = false,
+    let o = false,
       A = Chunk914010.Z.getGuildId();
     if (Chunk570140 === Chunk701476.M5.INVITE_UNCLAIMED) {
       let e = Chunk430824.Z.getGuild(A);
-      null != module && (0, Chunk983736.Dc)(module) && (s = true, (0, Chunk524329.RM)(module.id))
+      null != module && (0, Chunk983736.Dc)(module) && (o = true, (0, Chunk524329.RM)(module.id))
     }
     let Z = () => 0 === Chunk486472.Z.totalGuilds && !Chunk358085.isPlatformEmbedded,
       w = Chunk622822.bN();

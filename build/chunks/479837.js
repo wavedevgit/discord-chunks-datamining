@@ -23,8 +23,8 @@ function b() {
   if (!(0, Chunk365023.l)()) return;
   let n = Chunk131951.Z.isVideoEnabled(),
     b = Object.values(Chunk131951.Z.getVideoDevices())[0],
-    E = false === (null == (t = null == b ? true : b.disabled) || exports),
-    _ = Chunk131951.Z.supportsInApp(Chunk65154.AN.VIDEO) && Chunk131951.Z.supportsInApp(Chunk65154.AN.DESKTOP_CAPTURE),
+    _ = false === (null == (t = null == b ? true : b.disabled) || exports),
+    E = Chunk131951.Z.supportsInApp(Chunk65154.AN.VIDEO) && Chunk131951.Z.supportsInApp(Chunk65154.AN.DESKTOP_CAPTURE),
     O = Chunk592125.Z.getChannel(Chunk19780.Z.getChannelId()),
     v = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.id;
   if (null == O || null == v) return;
@@ -40,10 +40,10 @@ function b() {
           } = e;
           return t.id === v
         });
-      if (!(0, Chunk368442.tu)(O.guild_id) || !_ || null == exports || exports.voiceState.suppress) return
+      if (!(0, Chunk368442.tu)(O.guild_id) || !E || null == exports || exports.voiceState.suppress) return
     }
-    return require ? Chunk846027.Z.setVideoEnabled(false) : !require && E ? (0, Chunk173507.Z)(() => {
+    return require ? Chunk846027.Z.setVideoEnabled(false) : !require && _ ? (0, Chunk173507.Z)(() => {
       Chunk846027.Z.setVideoEnabled(true)
-    }, Chunk981631.IlC.APP, true) : E || (0, Chunk560688.Z)(), false
+    }, Chunk981631.IlC.APP, true) : _ || (0, Chunk560688.Z)(), false
   }
 }

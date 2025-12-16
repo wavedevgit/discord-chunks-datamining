@@ -3,7 +3,8 @@
 "use strict";
 require.d(exports, {
   ZP: () => y,
-  k$: () => v,
+  d6: () => v,
+  k$: () => I,
   p6: () => g,
   rs: () => h
 }), require("./388685.js"), require("./781311.js"), require("./704826.js"), require("./35282.js");
@@ -120,7 +121,7 @@ function E(e, t, n) {
       index: 0,
       0: d
     }
-  }]), a && (e = N(e, (null != l ? l : t).embeds)), o || (e = S(e, n)), e = b(e), t.embeds.length > 0 && (c = T(e, n)), o && (e = P(e)), null != s && (e = s(e, n)), e));
+  }]), a && (e = R(e, (null != l ? l : t).embeds)), o || (e = T(e, n)), e = b(e), t.embeds.length > 0 && (c = A(e, n)), o && (e = w(e)), null != s && (e = s(e, n)), e));
   return {
     hasSpoilerEmbeds: c,
     content: f,
@@ -142,7 +143,41 @@ function y(e) {
   return E(t.formatInline ? a.Z.parseInlineReply : a.Z.parse, e, t)
 }
 
-function O(e, t, n, r) {
+function O(e, t) {
+  arguments.length > 2 && true !== arguments[2] && arguments[2];
+  let {
+    content: n,
+    guildId: r,
+    channelId: i
+  } = t;
+  return e(n, true, {
+    allowLinks: false,
+    allowDevLinks: false,
+    allowEmojiLinks: false,
+    mentionChannels: [],
+    soundboardSounds: [],
+    isInteracting: false,
+    formatInline: true,
+    noStyleAndInteraction: false,
+    allowHeading: false,
+    allowList: false,
+    allowGameMentions: false,
+    disableAutoBlockNewlines: true,
+    previewLinkTarget: false,
+    disableAnimatedEmoji: true,
+    guildId: r,
+    channelId: i,
+    muted: false,
+    disablePressableChannelMention: true
+  }, e => (Array.isArray(e) || (e = [e]), e))
+}
+
+function v(e, t) {
+  let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {};
+  return O(e, t, n)
+}
+
+function S(e, t, n, r) {
   return e(t, true, {
     allowLinks: false,
     allowDevLinks: false,
@@ -163,15 +198,15 @@ function O(e, t, n, r) {
   }, e => (Array.isArray(e) || (e = [e]), e))
 }
 
-function v(e, t, n) {
-  return O(a.Z.parseAutoModerationSystemMessage, e, t, n)
+function I(e, t, n) {
+  return S(a.Z.parseAutoModerationSystemMessage, e, t, n)
 }
 
-function S(e, t) {
-  return t ? I(e) : ("paragraph" === e[0].type && e[0].content instanceof Array && (e[0].content = I(e[0].content)), e)
+function T(e, t) {
+  return t ? C(e) : ("paragraph" === e[0].type && e[0].content instanceof Array && (e[0].content = C(e[0].content)), e)
 }
 
-function I(e) {
+function C(e) {
   if (e.some(e => "emoji" !== e.type && "customEmoji" !== e.type && "soundboard" !== e.type && ("string" != typeof e.content || "" !== e.content.trim()))) return e;
   let t = 0;
   return e.forEach(e => {
@@ -181,29 +216,29 @@ function I(e) {
   }), e
 }
 
-function T(e, t) {
-  return t ? A(e) : "paragraph" === e[0].type && e[0].content instanceof Array && A(e[0].content)
-}
-
-function C(e, t) {
-  if (e instanceof Array) return e.some(e => C(e, t));
-  let n = t(e);
-  return null != n ? n : e.content instanceof Array ? C(e.content, t) : e.items instanceof Array && e.items.some(e => C(e, t))
-}
-
-function A(e) {
-  return C(e, e => "spoiler" === e.type ? C(e, e => "link" === e.type || "attachmentLink" === e.type || null) : null)
+function A(e, t) {
+  return t ? P(e) : "paragraph" === e[0].type && e[0].content instanceof Array && P(e[0].content)
 }
 
 function N(e, t) {
+  if (e instanceof Array) return e.some(e => N(e, t));
+  let n = t(e);
+  return null != n ? n : e.content instanceof Array ? N(e.content, t) : e.items instanceof Array && e.items.some(e => N(e, t))
+}
+
+function P(e) {
+  return N(e, e => "spoiler" === e.type ? N(e, e => "link" === e.type || "attachmentLink" === e.type || null) : null)
+}
+
+function R(e, t) {
   if (1 !== e.length || 1 !== t.length) return e;
   let n = e[0],
     r = t[0];
   return ("link" === n.type || "attachmentLink" === n.type) && _.has(r.type) && (0, o.dY)(r) ? [] : e
 }
 
-function P(e) {
+function w(e) {
   return e.forEach(e => {
-    m.has(e.type) && null != e.content && (Array.isArray(e.content) ? P(e.content) : "string" == typeof e.content ? e.content = e.content.replace(/\n/g, " ") : s.Z.captureMessage("AST node type:".concat(e.type, " with content typeof ").concat(typeof e.content, ". Keys ").concat(Object.keys(e))))
+    m.has(e.type) && null != e.content && (Array.isArray(e.content) ? w(e.content) : "string" == typeof e.content ? e.content = e.content.replace(/\n/g, " ") : s.Z.captureMessage("AST node type:".concat(e.type, " with content typeof ").concat(typeof e.content, ". Keys ").concat(Object.keys(e))))
   }), e
 }

@@ -12,7 +12,7 @@ var Chunk243814 = require("./243814.js"),
 let c = {
   [Chunk981631.zMe.QUEST_ENROLLMENT_STATUS_UPDATE]: {
     scope: Chunk243814.x.IDENTIFY,
-    validation: e => (0, s.Z)(e).required().keys({
+    validation: e => (0, o.Z)(e).required().keys({
       quest_id: e.string().required()
     }),
     handler: function(e) {
@@ -21,9 +21,9 @@ let c = {
           quest_id: t
         },
         socket: n
-      } = e, r = i.Z.getQuest(t), s = (0, l.nY)(r);
-      if (null == r || null == s || s !== n.application.id) throw new a.Z({
-        errorCode: o.lTL.INVALID_COMMAND
+      } = e, r = i.Z.getQuest(t), o = (0, l.nY)(r);
+      if (null == r || null == o || o !== n.application.id) throw new a.Z({
+        errorCode: s.lTL.INVALID_COMMAND
       }, "Quest not found: ".concat(t))
     }
   }

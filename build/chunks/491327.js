@@ -87,7 +87,7 @@ let y = {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.GUILDS_MEMBERS_READ, Chunk243814.x.GUILDS_CHANNELS_READ]
     },
     handler(e) {
-      let t = (0, _.Z)();
+      let t = (0, E.Z)();
       if (null == t) throw new m.Z({
         errorCode: v.lTL.INVALID_CHANNEL
       }, "Invalid channel");
@@ -98,7 +98,7 @@ let y = {
   },
   [Chunk981631.Etm.SELECT_VOICE_CHANNEL]: {
     scope: Chunk243814.x.RPC,
-    validation: e => (0, E.Z)(e).required().keys({
+    validation: e => (0, _.Z)(e).required().keys({
       channel_id: e.string().allow(null),
       timeout: e.number().min(0).max(60),
       force: e.boolean(),
@@ -115,9 +115,9 @@ let y = {
           navigate: a = false
         }
       } = e;
-      if (!r) return s.default.selectVoiceChannel(null), null;
-      let E = f.Z.getVoiceChannelId();
-      if (null != E && E !== r && false === l) throw new m.Z({
+      if (!r) return o.default.selectVoiceChannel(null), null;
+      let _ = f.Z.getVoiceChannelId();
+      if (null != _ && _ !== r && false === l) throw new m.Z({
         errorCode: v.lTL.SELECT_VOICE_FORCE_REQUIRED
       }, "User is already joined to a voice channel.");
       return t.storeWait(n, () => u.Z.getChannel(r), i).catch(() => {
@@ -142,7 +142,7 @@ let y = {
             errorCode: v.lTL.INVALID_PERMISSIONS
           }, "Connect permission required to join channel")
         }
-        return s.default.selectVoiceChannel(t.id), a && (0, o.dL)(v.Z5c.CHANNEL(t.guild_id, t.id)), n
+        return o.default.selectVoiceChannel(t.id), a && (0, s.dL)(v.Z5c.CHANNEL(t.guild_id, t.id)), n
       })
     }
   },
@@ -159,7 +159,7 @@ let y = {
   },
   [Chunk981631.Etm.SELECT_TEXT_CHANNEL]: {
     scope: Chunk243814.x.RPC,
-    validation: e => (0, E.Z)(e).required().keys({
+    validation: e => (0, _.Z)(e).required().keys({
       channel_id: e.string().allow(null),
       timeout: e.number().min(0).max(60)
     }),
@@ -189,8 +189,8 @@ let y = {
         if (n.guild_id && !p.Z.can(v.Plq.VIEW_CHANNEL, t)) throw new m.Z({
           errorCode: v.lTL.INVALID_CHANNEL
         }, "No permission to see channel");
-        return n.guild_id ? (0, o.dL)(v.Z5c.CHANNEL(n.guild_id, t.id)) : s.default.selectPrivateChannel(t.id), n
-      }) : ((0, o.uL)(v.Z5c.ME), null)
+        return n.guild_id ? (0, s.dL)(v.Z5c.CHANNEL(n.guild_id, t.id)) : o.default.selectPrivateChannel(t.id), n
+      }) : ((0, s.uL)(v.Z5c.ME), null)
     }
   },
   [Chunk981631.Etm.CREATE_CHANNEL_INVITE]: {

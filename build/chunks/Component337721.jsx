@@ -20,20 +20,20 @@ function u(e) {
   } = e;
   return (0, r.jsx)(i.J2, {
     targetElementRef: u,
-    title: o.intl.string(o.t.Hgd22r),
-    body: o.intl.string(o.t.SorTPA),
+    title: s.intl.string(s.t.Hgd22r),
+    body: s.intl.string(s.t.SorTPA),
     graphic: {
       type: "image",
       src: c
     },
     actions: [{
-      text: o.intl.string(o.t["9l+df7"]),
+      text: s.intl.string(s.t["9l+df7"]),
       variant: "primary",
       onClick: e => {
         l.Z.open(t.id, a.pNK.DISCOVERY_LANDING_PAGE)
       }
     }],
-    onRequestClose: () => n(s.L.USER_DISMISS),
+    onRequestClose: () => n(o.L.USER_DISMISS),
     position: "bottom",
     caretConfig: {
       align: "center"

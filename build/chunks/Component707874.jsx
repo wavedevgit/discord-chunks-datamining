@@ -39,9 +39,9 @@ function p(e) {
           channelId: true, messageIds: [], title: true
         }
     }
-  }, [t]), g = (0, l.e7)([a.Z], () => null != n ? a.Z.getChannel(n) : null, [n]), h = (0, l.e7)([s.Z], () => (null == g ? true : g.guild_id) != null ? s.Z.getGuild(g.guild_id) : null, [g]), m = (0, l.Wu)([c.Z, o.Z], () => null == n ? [] : p.map(e => {
+  }, [t]), g = (0, l.e7)([a.Z], () => null != n ? a.Z.getChannel(n) : null, [n]), h = (0, l.e7)([o.Z], () => (null == g ? true : g.guild_id) != null ? o.Z.getGuild(g.guild_id) : null, [g]), m = (0, l.Wu)([c.Z, s.Z], () => null == n ? [] : p.map(e => {
     var t;
-    return null != (t = c.Z.getMessage(e)) ? t : o.Z.getMessage(n, e)
+    return null != (t = c.Z.getMessage(e)) ? t : s.Z.getMessage(n, e)
   }).filter(e => null != e), [n, p]);
   return null == g || null == h || 0 === m.length ? null : (0, r.jsxs)("div", {
     className: d.container,

@@ -1,4 +1,4 @@
-/** Chunk was on 29725 **/
+/** Chunk was on 6043 **/
 /** chunk id: 905953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -31,7 +31,7 @@ function _(e) {
     onClose: _
   } = e, [S, E] = r.useState(false), {
     trackUserProfileEditAction: T
-  } = (0, m.KZ)(), O = (0, i.e7)([v.default], () => v.default.getId()), {
+  } = (0, m.KZ)(), O = (0, l.e7)([v.default], () => v.default.getId()), {
     config: N,
     application: w
   } = (0, f.G)(), {
@@ -50,7 +50,7 @@ function _(e) {
         markAsDismissed: r
       } = e;
       if (null == t) return null;
-      let i = t === s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
+      let l = t === s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
       return (0, a.jsx)(o.J2, {
         targetElementRef: n,
         position: "right",
@@ -62,11 +62,11 @@ function _(e) {
         title: C.intl.format(C.t.TXDztH, {
           applicationName: w.name
         }),
-        body: i ? C.intl.string(C.t["63Kso0"]) : C.intl.string(C.t.HwXoeC),
+        body: l ? C.intl.string(C.t["63Kso0"]) : C.intl.string(C.t.HwXoeC),
         onRequestClose: () => {
           r(j.L.USER_DISMISS)
         },
-        actions: [i ? {
+        actions: [l ? {
           text: C.intl.string(C.t.VSLDly),
           onClick: () => {
             E(true), (0, b.openUserProfileModal)({
@@ -76,7 +76,7 @@ function _(e) {
               r(j.L.TAKE_ACTION), _();
               let e = new p.q({
                 applicationId: w.id,
-                type: l.l.APPLICATION
+                type: i.l.APPLICATION
               });
               (0, h.qH)(e.type, e), T(function(e) {
                 for (var t = 1; t < arguments.length; t++) {

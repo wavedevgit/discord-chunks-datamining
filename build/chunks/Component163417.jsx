@@ -13,13 +13,13 @@ function a(e) {
     rows: t,
     renderRow: n,
     renderSection: a,
-    isVirtualizedList: s,
-    hasSearchQuery: o,
+    isVirtualizedList: o,
+    hasSearchQuery: s,
     sectionFilter: c,
     footer: u,
     renderSectionFooter: d
   } = e;
-  return s ? (0, r.jsx)(i.Z, {
+  return o ? (0, r.jsx)(i.Z, {
     rows: t,
     renderRow: n,
     renderSection: a,
@@ -31,7 +31,7 @@ function a(e) {
     renderRow: n,
     renderSection: a,
     sectionFilter: c,
-    hasSearchQuery: o,
+    hasSearchQuery: s,
     footer: u,
     renderSectionFooter: d
   })

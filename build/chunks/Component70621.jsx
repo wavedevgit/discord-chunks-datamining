@@ -14,15 +14,15 @@ let c = e => {
     quest: t
   } = e;
   return (0, r.jsx)("div", {
-    className: o.previewBackground,
+    className: s.previewBackground,
     children: (0, r.jsxs)("div", {
-      className: o.previewCard,
+      className: s.previewCard,
       children: [(0, r.jsx)(i.Heading, {
-        className: o.heading,
+        className: s.heading,
         variant: "heading-md/semibold",
-        children: s.intl.string(s.t["5wnpF3"])
+        children: o.intl.string(o.t["5wnpF3"])
       }), (0, r.jsx)(a.Z, {
-        className: o.questTile,
+        className: s.questTile,
         quest: t,
         questContent: l.jn.QUEST_HOME_DESKTOP,
         contentPosition: 0,

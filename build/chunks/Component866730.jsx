@@ -1,4 +1,4 @@
-/** Chunk was on 29725 **/
+/** Chunk was on 6043 **/
 /** chunk id: 866730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk913527 = require("./913527.js"),
-  l = require.n(Chunk913527),
+  i = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk713284 = require("./713284.js"),
@@ -49,7 +49,7 @@ function f() {
   let e = (0, Chunk442837.e7)([Chunk713284.Z], () => Chunk713284.Z.getDCFEvents()),
     t = (0, Chunk211644.ZP)(e => e.candidates),
     n = (0, Chunk211644.ZP)(e => e.lastWinnerTime),
-    r = 0 !== require ? l()(require).fromNow() : "n/a",
+    r = 0 !== require ? i()(require).fromNow() : "n/a",
     f = (0, Chunk211644.ZP)(e => e.recentlyShown[0]),
     x = module.map(e => {
       let {

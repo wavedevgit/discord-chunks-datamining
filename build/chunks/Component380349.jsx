@@ -17,7 +17,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function g(e, t, n) {
-  let g = (0, i.e7)([s.Z, a.default], () => null != t ? (0, c.Z)(s.Z, a.default, t, e) : true, [e, t]);
+  let g = (0, i.e7)([o.Z, a.default], () => null != t ? (0, c.Z)(o.Z, a.default, t, e) : true, [e, t]);
   if (null == g || null == e || null == t) return null;
   let h = g.isCurrentUser || g.notPlayable || g.playingSameTrack,
     m = g.isCurrentUser || g.syncingWithUser || g.syncingWithParty;
@@ -25,13 +25,13 @@ function g(e, t, n) {
     id: "spotify-play-".concat(e.session_id),
     action: () => (0, d.Z)(g, p.kG.USER_ACTIVITY_PLAY, n),
     label: f.intl.string(f.t.rRffNz),
-    subtext: h ? (0, o.Z)(g, p.kG.USER_ACTIVITY_PLAY) : true,
+    subtext: h ? (0, s.Z)(g, p.kG.USER_ACTIVITY_PLAY) : true,
     disabled: h
   }, "spotify-play-".concat(e.session_id)), g.canPlaySpotify ? (0, r.jsx)(l.sNh, {
     id: "spotify-sync-".concat(e.session_id),
     action: () => (0, u.Z)(g, p.kG.USER_ACTIVITY_SYNC, n),
     label: f.intl.string(f.t.eU3inB),
-    subtext: m ? (0, o.Z)(g, p.kG.USER_ACTIVITY_SYNC) : true,
+    subtext: m ? (0, s.Z)(g, p.kG.USER_ACTIVITY_SYNC) : true,
     disabled: m
   }, "spotify-sync-".concat(e.session_id)) : null]
 }

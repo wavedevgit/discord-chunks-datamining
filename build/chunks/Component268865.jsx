@@ -1,4 +1,4 @@
-/** Chunk was on 29725 **/
+/** Chunk was on 6043 **/
 /** chunk id: 268865, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -29,7 +29,7 @@ let c = e => {
       isCardHovered: n
     } = e, s = (0, r.Y)({
       location: "ProductWishlistButton"
-    }), o = (0, i.LJ)(t), d = (0, l.o)(o);
+    }), o = (0, l.LJ)(t), d = (0, i.o)(o);
     return null != o && s ? (0, a.jsx)(c, {
       product: o,
       selectedVariantIndex: d,

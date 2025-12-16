@@ -45,7 +45,7 @@ class f extends Chunk473749.PureComponent {
         let {
           guild: e
         } = this.props;
-        (0, s.f)({
+        (0, o.f)({
           guildId: e.id,
           location: {
             section: c.jXE.CHANNEL_NOTICE,
@@ -60,6 +60,6 @@ let g = Chunk442837.ZP.connectStores([Chunk650774.Z], e => {
     guild: t
   } = e;
   return {
-    memberCount: o.Z.getMemberCount(t.id)
+    memberCount: s.Z.getMemberCount(t.id)
   }
 })(f)

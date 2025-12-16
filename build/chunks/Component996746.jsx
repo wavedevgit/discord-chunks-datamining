@@ -1,4 +1,4 @@
-/** Chunk was on 29725 **/
+/** Chunk was on 6043 **/
 /** chunk id: 996746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -15,7 +15,7 @@ function c(e) {
   let {
     nameplate: n
   } = e, c = (0, r.e7)([s.default], () => s.default.getCurrentUser()), d = null != (t = o.ZP.useName(c)) ? t : "";
-  return (0, a.jsx)(i.m, {
+  return (0, a.jsx)(l.m, {
     username: d,
     selfMute: false,
     selfDeaf: false,
@@ -24,7 +24,7 @@ function c(e) {
     suppress: false,
     speaking: false,
     streaming: false,
-    status: l.Sk.ONLINE,
+    status: i.Sk.ONLINE,
     currentUser: c,
     activities: [],
     applicationStream: true,

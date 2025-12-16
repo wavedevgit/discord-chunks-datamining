@@ -22,36 +22,36 @@ let f = e => {
     onWithdrawApplication: h,
     rejectionReason: m = null,
     guild: b = null
-  } = e, E = (0, l.e7)([c.Z], () => {
+  } = e, _ = (0, l.e7)([c.Z], () => {
     var e;
     return c.Z.getCooldown(null != (e = null == b ? true : b.id) ? e : "0")
   }), {
-    canReapply: _,
+    canReapply: E,
     isLoading: O
   } = (0, u.o)(null == b ? true : b.id);
   i.useEffect(() => {
-    null == E && null != b && o.Z.fetchJoinRequestCooldown(b.id)
-  }, [E, b]);
-  let v = (null != E ? E : 0) > 0,
-    y = v && null != E ? Math.ceil((1e3 * E - Date.now()) / 864e5) : 0;
+    null == _ && null != b && s.Z.fetchJoinRequestCooldown(b.id)
+  }, [_, b]);
+  let v = (null != _ ? _ : 0) > 0,
+    y = v && null != _ ? Math.ceil((1e3 * _ - Date.now()) / 864e5) : 0;
   return (0, r.jsxs)("div", {
     className: p.confirmation,
     children: [(0, r.jsx)("div", {
       className: p.iconWrapper,
-      children: (0, r.jsx)(s.P$X, {
+      children: (0, r.jsx)(o.P$X, {
         size: "md",
-        color: s.TVs.colors.INTERACTIVE_TEXT_ACTIVE
+        color: o.TVs.colors.INTERACTIVE_TEXT_ACTIVE
       })
     }), (0, r.jsxs)("div", {
       className: p.statusTextContainer,
-      children: [(0, r.jsx)(s.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         id: t,
         variant: "heading-lg/semibold",
         color: "text-strong",
         children: (null == b ? true : b.name) != null ? d.intl.formatToPlainString(d.t["P+/gzA"], {
           guildName: b.name
         }) : d.intl.string(d.t.gBPcuP)
-      }), null != m && "" !== m ? (0, r.jsxs)(s.Text, {
+      }), null != m && "" !== m ? (0, r.jsxs)(o.Text, {
         variant: "text-md/medium",
         color: "text-default",
         children: [(0, r.jsx)("span", {
@@ -63,7 +63,7 @@ let f = e => {
       }) : null]
     }), (0, r.jsxs)("div", {
       className: p.confirmationButtonRow,
-      children: [_ || O ? (0, r.jsx)(a.u, {
+      children: [E || O ? (0, r.jsx)(a.u, {
         asContainer: true,
         text: v ? d.intl.formatToPlainString(d.t.A0f0P7, {
           days: y
@@ -71,17 +71,17 @@ let f = e => {
         "aria-label": v ? d.intl.formatToPlainString(d.t.A0f0P7, {
           days: y
         }) : true,
-        children: (0, r.jsx)(s.Button, {
+        children: (0, r.jsx)(o.Button, {
           onClick: f,
           variant: "secondary",
           size: "md",
-          loading: null == E || O,
+          loading: null == _ || O,
           disabled: v || O,
           text: n,
           fullWidth: true
         })
-      }) : null, (0, r.jsx)(s.Button, {
-        onClick: () => h(_ || O),
+      }) : null, (0, r.jsx)(o.Button, {
+        onClick: () => h(E || O),
         variant: "critical-primary",
         size: "md",
         text: g,

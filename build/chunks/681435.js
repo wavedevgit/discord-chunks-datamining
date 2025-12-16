@@ -21,7 +21,7 @@ let g = () => {
     [g, h] = (0, Chunk243778.XR)(require ? Chunk704215.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == exports ? true : exports.version) ? module : 0, true, true),
     m = (0, Chunk794324.mB)(exports),
     b = null != g ? ((e, t) => {
-      var n, r, i, a, s, o, c, u;
+      var n, r, i, a, o, s, c, u;
       if ((null == t ? true : t.type) === l.Z.COACHTIP || e.hasPreviewAssets) {
         let i = null != t ? {
           title: () => t.title,
@@ -81,17 +81,17 @@ let g = () => {
           entrypointBackgroundStyle: null == e ? true : e.style,
           entryPointBackgroundAssets: {
             srcDarkHovered: null == e || null == (a = e.asset) || null == (i = a.hovered) ? true : i.dark,
-            srcLightHovered: null == e || null == (o = e.asset) || null == (s = o.hovered) ? true : s.light
+            srcLightHovered: null == e || null == (s = e.asset) || null == (o = s.hovered) ? true : o.light
           }
         }
       }
       return null
     })(m, exports) : null,
-    E = Chunk473749.useCallback(() => {
+    _ = Chunk473749.useCallback(() => {
       null != b && h(Chunk921944.L.AUTO)
     }, [b, h]);
   return {
     shopButtonDisplayOptions: b,
-    dismissShopButtonDC: E
+    dismissShopButtonDC: _
   }
 }

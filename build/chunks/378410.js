@@ -1,14 +1,14 @@
 /** Chunk was on 1272 **/
 /** chunk id: 378410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 }), require("./388685.js");
 var Chunk710845 = require("./710845.js"),
   Chunk914946 = require("./914946.js"),
   Chunk452426 = require("./452426.js"),
   Chunk981631 = require("./981631.js");
-let s = new Chunk710845.Z(Chunk981631.BZL),
-  o = {
+let o = new Chunk710845.Z(Chunk981631.BZL),
+  s = {
     [Chunk981631.Etm.CAPTURE_LOG]: {
       validation: e => (0, l.Z)(e).required().keys({
         level: e.string().max(10).required(),
@@ -27,19 +27,19 @@ let s = new Chunk710845.Z(Chunk981631.BZL),
           a = "".concat(l, " - ").concat(r);
         switch (n) {
           case "log":
-            s.log(a);
+            o.log(a);
             break;
           case "warn":
-            s.warn(a);
+            o.warn(a);
             break;
           case "debug":
-            s.verbose(a);
+            o.verbose(a);
             break;
           case "info":
-            s.info(a);
+            o.info(a);
             break;
           case "error":
-            s.error(a)
+            o.error(a)
         }
       }
     }

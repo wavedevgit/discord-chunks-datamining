@@ -27,7 +27,7 @@ let O = {
   },
   handleRequiredAction(e) {
     let t = e.requiredAction;
-    !g.s.isDisallowPopupsSet() && null != f.default.getCurrentUser() && (t === m.c2C.REQUIRE_CAPTCHA || t === m.c2C.REQUIRE_VERIFIED_EMAIL || t === m.c2C.REQUIRE_VERIFIED_PHONE || t === m.c2C.REQUIRE_REVERIFIED_PHONE || t === m.c2C.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE || t === m.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === m.c2C.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || u.Z.isEmailReverification(t) ? (0, o.bu)({
+    !g.s.isDisallowPopupsSet() && null != f.default.getCurrentUser() && (t === m.c2C.REQUIRE_CAPTCHA || t === m.c2C.REQUIRE_VERIFIED_EMAIL || t === m.c2C.REQUIRE_VERIFIED_PHONE || t === m.c2C.REQUIRE_REVERIFIED_PHONE || t === m.c2C.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE || t === m.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === m.c2C.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || u.Z.isEmailReverification(t) ? (0, s.bu)({
       location: "verification-legacy"
     }) ? (0, a.q4)(e => {
       let {
@@ -37,11 +37,11 @@ let O = {
         onClose: t
       })
     }, {
-      layerKey: E.CV,
-      Layer: s.ZP
+      layerKey: _.CV,
+      Layer: o.ZP
     }) : (0, a.q4)(() => (0, r.jsx)(d.Z, {}), {
-      layerKey: E.CV,
-      Layer: s.ZP
+      layerKey: _.CV,
+      Layer: o.ZP
     }) : t === m.c2C.AGREEMENTS ? (0, i.h7j)(e => (0, r.jsx)(h.default, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -60,8 +60,8 @@ let O = {
       }
       return e
     }({}, e)), {
-      modalKey: E.f1,
-      onCloseRequest: _.Vq,
+      modalKey: _.f1,
+      onCloseRequest: E.Vq,
       dismissable: false
     }) : t === m.c2C.REQUIRE_SAFETY_FLOWS ? (0, a.q4)(e => {
       let {
@@ -71,9 +71,9 @@ let O = {
         onClose: t
       })
     }, {
-      layerKey: E.CV,
-      Layer: s.ZP
-    }) : null == t && ((0, a.ob)(E.CV), (0, i.nfh)(E.f1) && (0, i.Mr3)(E.f1)))
+      layerKey: _.CV,
+      Layer: o.ZP
+    }) : null == t && ((0, a.ob)(_.CV), (0, i.nfh)(_.f1) && (0, i.Mr3)(_.f1)))
   },
   handleAuthenticationStoreChanged() {
     null == Chunk314897.default.getId() && ((0, Chunk84615.ob)(Chunk308569.CV), (0, Chunk481060.Mr3)(Chunk308569.f1), (0, Chunk481060.Mr3)(Chunk308569.HR), (0, Chunk481060.Mr3)(Chunk308569.F0), (0, Chunk481060.Mr3)(Chunk815660.M))
@@ -82,6 +82,6 @@ let O = {
     let {
       user: t
     } = e;
-    t.verified && (0, i.Mr3)(E.F0)
+    t.verified && (0, i.Mr3)(_.F0)
   }
 }

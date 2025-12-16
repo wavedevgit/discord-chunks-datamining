@@ -46,7 +46,7 @@ let h = e => {
   let g = e => null == n || 0 === n.length || n.includes(e);
   return (0, r.jsxs)(r.Fragment, {
     children: [g("quest_bar") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.Z, {
+      children: [(0, r.jsx)(s.Z, {
         quest: f
       }), (0, r.jsx)(a.i, {})]
     }), g("home_card") && (0, r.jsxs)(r.Fragment, {
@@ -66,7 +66,7 @@ let h = e => {
         quest: f
       }), (0, r.jsx)(a.i, {})]
     }), g("activity_panel") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(s.Z, {
+      children: [(0, r.jsx)(o.Z, {
         quest: f
       }), (0, r.jsx)(a.i, {})]
     })]

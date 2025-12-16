@@ -17,14 +17,14 @@ var Chunk54381 = require("./54381.js"),
 let g = function(e) {
   let {
     loadId: t
-  } = e, n = o.Z.useField("categoryId"), g = (0, l.e7)([c.Z], () => c.Z.getCategoryName(n)), h = i.useCallback(() => {
-    o.Z.setState({
+  } = e, n = s.Z.useField("categoryId"), g = (0, l.e7)([c.Z], () => c.Z.getCategoryName(n)), h = i.useCallback(() => {
+    s.Z.setState({
       categoryId: u.Hk
-    }), s.Z.loadCategoryResults({
+    }), o.Z.loadCategoryResults({
       loadId: t,
       categoryId: u.Hk,
-      query: o.Z.getField("fetchedQuery"),
-      languageCode: o.Z.getField("languageCode")
+      query: s.Z.getField("fetchedQuery"),
+      languageCode: s.Z.getField("languageCode")
     })
   }, [t]), m = n === u.Hk ? d.intl.string(d.t.Ivw1Is) : d.intl.formatToPlainString(d.t["+1WAFb"], {
     categoryName: g

@@ -1,4 +1,4 @@
-/** Chunk was on 29725 **/
+/** Chunk was on 6043 **/
 /** chunk id: 167308, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -30,7 +30,7 @@ let h = e => {
     quest: g,
     isExpanded: t,
     activeScreen: x,
-    sourceQuestContent: i.jn.QUEST_BAR_V2,
+    sourceQuestContent: l.jn.QUEST_BAR_V2,
     popoutTargetElementRef: b,
     onGameSheetOpened: v,
     onGameSheetClosed: j
@@ -50,10 +50,10 @@ let h = e => {
         children: (0, a.jsx)(o.Z, {
           className: p.questProgressRewardTile,
           quest: g,
-          questContent: i.jn.QUEST_BAR_V2,
+          questContent: l.jn.QUEST_BAR_V2,
           autoplay: false,
           location: m.dr.QUESTS_BAR,
-          sourceQuestContent: i.jn.QUEST_BAR_V2
+          sourceQuestContent: l.jn.QUEST_BAR_V2
         })
       })
     }), (0, a.jsxs)("div", {
@@ -61,7 +61,7 @@ let h = e => {
       children: [(0, a.jsx)(c.JC, {
         inState: n,
         id: "progress-title",
-        children: e => (0, a.jsx)(l.Text, {
+        children: e => (0, a.jsx)(i.Text, {
           ref: e,
           className: p.questProgressHint,
           color: "text-strong",
@@ -72,7 +72,7 @@ let h = e => {
         inState: n,
         id: "progress-subtitle",
         isTextTransition: true,
-        children: e => (0, a.jsx)(l.Text, {
+        children: e => (0, a.jsx)(i.Text, {
           ref: e,
           className: p.questProgressHint,
           color: "text-muted",

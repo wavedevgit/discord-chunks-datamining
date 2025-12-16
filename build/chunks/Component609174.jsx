@@ -28,19 +28,19 @@ let h = Chunk185514.Nx.binds["0"],
       location: "BackForwardButtons"
     }), {
       canGoBack: b,
-      canGoForward: E
+      canGoForward: _
     } = (0, a.cj)([d.Z], () => ({
       canGoBack: d.Z.canGoBack,
       canGoForward: d.Z.canGoForward
     }));
     return (0, r.jsxs)("div", {
       className: g.backForwardButtons,
-      children: [(0, r.jsx)(s.u, {
+      children: [(0, r.jsx)(o.u, {
         ariaHidden: true,
         shouldShow: b,
         text: f.intl.string(f.t.B9vzIP),
         keyboardShortcut: h,
-        children: (0, r.jsx)(o.P3F, (t = function(e) {
+        children: (0, r.jsx)(s.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -65,7 +65,7 @@ let h = Chunk185514.Nx.binds["0"],
           }),
           onClick: () => (0, p.Hm)("nav_button")
         }, i), n = n = {
-          children: (0, r.jsx)(o.whL, {
+          children: (0, r.jsx)(s.whL, {
             size: c,
             color: "currentColor"
           })
@@ -79,19 +79,19 @@ let h = Chunk185514.Nx.binds["0"],
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
-      }), (0, r.jsx)(s.u, {
+      }), (0, r.jsx)(o.u, {
         ariaHidden: true,
-        shouldShow: E,
+        shouldShow: _,
         text: f.intl.string(f.t["9KJ29e"]),
         keyboardShortcut: m,
-        children: (0, r.jsx)(o.P3F, {
+        children: (0, r.jsx)(s.P3F, {
           "aria-label": f.intl.string(f.t["9KJ29e"]),
-          "aria-disabled": !E,
+          "aria-disabled": !_,
           className: l()(g.button, g.forward, {
-            [g.disabled]: !E
+            [g.disabled]: !_
           }),
           onClick: () => (0, p.TL)("nav_button"),
-          children: (0, r.jsx)(o.ZSh, {
+          children: (0, r.jsx)(s.ZSh, {
             size: c,
             color: "currentColor"
           })

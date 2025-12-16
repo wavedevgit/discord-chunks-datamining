@@ -22,14 +22,14 @@ let f = function(e) {
     sectionFilter: h,
     footer: m,
     renderSectionFooter: b
-  } = e, E = (0, s.e7)([u.Z], () => u.Z.keyboardModeEnabled), _ = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), O = (0, l.ZP)({
+  } = e, _ = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), E = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), O = (0, l.ZP)({
     id: "people",
-    isEnabled: E,
+    isEnabled: _,
     async scrollToStart() {},
     async scrollToEnd() {}
-  }), v = h !== d.pJs.ONLINE && h !== d.pJs.ALL, y = _ || g || v, I = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
+  }), v = h !== d.pJs.ONLINE && h !== d.pJs.ALL, y = E || g || v, I = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
     children: [f(t), e.map(e => n(e, t)), null == b ? true : b(t)]
-  }, t) : (0, r.jsxs)(o.W, {
+  }, t) : (0, r.jsxs)(s.W, {
     transitionAppear: false,
     component: "div",
     children: [f(t), e.map(e => n(e, t)), null == b ? true : b(t)]

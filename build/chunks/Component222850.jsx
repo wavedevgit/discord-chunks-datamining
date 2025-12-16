@@ -29,7 +29,7 @@ let I = Math.ceil(Math.sqrt(115200)),
     var t, n;
     let {
       selected: l
-    } = e, S = (0, o.JA)("quests"), T = i.useRef(null), {
+    } = e, S = (0, s.JA)("quests"), T = i.useRef(null), {
       shouldShowPopover: N,
       shouldShowGradientAndBadge: j,
       dismissContent: P
@@ -45,7 +45,7 @@ let I = Math.ceil(Math.sqrt(115200)),
         dismissContent: r
       }
     }(), x = i.useCallback(() => {
-      E.Z.getState().setUtmCurrentContext({
+      _.Z.getState().setUtmCurrentContext({
         utmContentCurrent: "PRIMARY_QUEST_HOME"
       })
     }, []), [{
@@ -94,10 +94,10 @@ let I = Math.ceil(Math.sqrt(115200)),
       }), Z({
         glowSpring: 1,
         delay: 700
-      }), m.default.track(_.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
+      }), m.default.track(E.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
     }, [L, Z]), [k, U] = i.useState(false), G = i.useCallback(e => {
       U(e.contentRect.width)
-    }, []), B = (0, f.y)(G, [], {
+    }, []), H = (0, f.y)(G, [], {
       fireOnMount: true
     });
     return (0, r.jsxs)(r.Fragment, {
@@ -107,7 +107,7 @@ let I = Math.ceil(Math.sqrt(115200)),
         onMouseLeave: D,
         onFocus: R,
         onBlur: D,
-        ref: B,
+        ref: H,
         style: {
           "--custom-shine-dimensions": "".concat(240, "px"),
           "--custom-shine-rotated-dimensions-delta": "".concat(C, "px")
@@ -136,17 +136,17 @@ let I = Math.ceil(Math.sqrt(115200)),
           icon: d.qDn,
           listItemRef: T,
           onClick: x,
-          route: _.Z5c.QUEST_HOME_V2,
+          route: E.Z5c.QUEST_HOME_V2,
           selected: l,
           text: v.intl.string(v.t.JALI2K)
         }, S), n = n = {
           children: j && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(s.animated.div, {
+            children: [(0, r.jsx)(o.animated.div, {
               className: y.shine,
               style: {
                 transform: w.to(e => "translateX(calc(".concat(e * k, "px + ").concat(e * I, "px)) translateY(-50%) rotate(45deg)"))
               }
-            }), (0, r.jsx)(s.animated.div, {
+            }), (0, r.jsx)(o.animated.div, {
               className: y.glow,
               style: {
                 opacity: A.to({

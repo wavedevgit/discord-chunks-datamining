@@ -18,12 +18,12 @@ var Chunk54381 = require("./54381.js"),
 function g(e) {
   let {
     loadId: t
-  } = e, n = (0, l.e7)([s.default], () => (0, d.Xp)([s.default])), g = u.Z.useField("languageCode"), h = null != g ? g : n, m = i.useCallback(e => {
+  } = e, n = (0, l.e7)([o.default], () => (0, d.Xp)([o.default])), g = u.Z.useField("languageCode"), h = null != g ? g : n, m = i.useCallback(e => {
     u.Z.setState({
       languageCode: e
     });
     let n = u.Z.getField("fetchedQuery");
-    o.Z.clearSearchResults({
+    s.Z.clearSearchResults({
       ignoreQueries: [n]
     }), c.Z.loadCategoryResults({
       loadId: t,
@@ -34,14 +34,14 @@ function g(e) {
   }, [t]), b = i.useMemo(() => (0, p.Cf)().map(e => ({
     id: e.code,
     label: e.name
-  })), []), E = i.useMemo(() => {
+  })), []), _ = i.useMemo(() => {
     var e;
     let t = (0, p.Cf)().find(e => e.code === h);
     return null != (e = null == t ? true : t.name) ? e : f.intl.string(f.t.LQLMGP)
   }, [h]);
   return (0, r.jsx)(a.ZP, {
     items: b,
-    title: E,
+    title: _,
     onSelect: m,
     selected: h,
     "aria-label": f.intl.string(f.t.Ng5cTK)

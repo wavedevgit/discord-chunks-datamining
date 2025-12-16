@@ -246,7 +246,7 @@ function z(e) {
       channelId: t
     } = e;
     return t
-  }), w = (0, s.e7)([j.Z], () => j.Z.getVoiceChannelId()), N = (0, s.e7)([S.Z], () => S.Z.getGuildVersion(n)), D = (0, s.e7)([b.Z], () => b.Z.version), k = (0, s.e7)([E.default], () => E.default.getGuildChangeSentinel(n)), R = (0, l.QN)(null == r ? true : r.id), A = (0, c.gM)(null == r ? true : r.id), L = null != (t = null == r ? true : r.features.has(T.GuildFeatures.COMMUNITY)) && t, z = (0, s.e7)([Z.Z], () => Z.Z.getChannelId()), V = (0, s.e7)([_.Z], () => _.Z.desyncedVoiceStatesCount);
+  }), w = (0, s.e7)([j.Z], () => j.Z.getVoiceChannelId()), T = (0, s.e7)([S.Z], () => S.Z.getGuildVersion(n)), D = (0, s.e7)([b.Z], () => b.Z.version), k = (0, s.e7)([E.default], () => E.default.getGuildChangeSentinel(n)), R = (0, l.QN)(null == r ? true : r.id), A = (0, c.gM)(null == r ? true : r.id), L = null != (t = null == r ? true : r.features.has(N.GuildFeatures.COMMUNITY)) && t, z = (0, s.e7)([Z.Z], () => Z.Z.getChannelId()), V = (0, s.e7)([_.Z], () => _.Z.desyncedVoiceStatesCount);
   return (0, i.jsx)(M, {
     guildId: n,
     guild: r,
@@ -262,7 +262,7 @@ function z(e) {
     collapsedChannels: h,
     collapseMuted: u,
     guildReadStateSentinel: k,
-    permissionVersion: N,
+    permissionVersion: T,
     categoryCollapseVersion: D,
     embeddedAppsByChannel: R,
     activeEventsByChannel: A,

@@ -117,8 +117,8 @@ function ea(e) {
     {
       mute: P,
       selfMute: w,
-      suppress: N,
-      deaf: T,
+      suppress: T,
+      deaf: N,
       selfDeaf: A
     } = b,
     L = y && v,
@@ -146,9 +146,9 @@ function ea(e) {
       priority: Z,
       mute: P || z || E,
       localMute: E,
-      serverMute: P || N,
-      deaf: T || A,
-      serverDeaf: T,
+      serverMute: P || T,
+      deaf: N || A,
+      serverDeaf: N,
       userNameClassName: o()(et.username, {
         [et.locked]: n,
         [et.hidden]: n && (c === Q.wC$.NEVER || !_ && c === Q.wC$.ONLY_WHILE_SPEAKING)
@@ -156,7 +156,7 @@ function ea(e) {
     }), I && L && (0, r.jsx)(K.Z, {
       value: w,
       action: Q.kg4.TOGGLE_MUTE,
-      shouldShow: !P && !N
+      shouldShow: !P && !T
     })]
   })
 }
@@ -184,7 +184,7 @@ class es extends(i = Chunk473749.PureComponent) {
       return (0, r.jsx)(ea, {
         guildId: null == l ? true : l.guild_id,
         user: c,
-        nick: null != (o = null == h ? true : h.nick) ? o : H.ZP.getName(c),
+        nick: null != (o = null == h ? true : h.nick) ? o : F.ZP.getName(c),
         flipped: f,
         voiceState: u,
         displayNameMode: n,
@@ -464,7 +464,7 @@ function eo(e) {
         displayUserMode: G.default.getDisplayUserMode(),
         displayNameMode: G.default.getDisplayNameMode(),
         avatarSizeMode: G.default.getAvatarSizeMode(),
-        streamApplication: (null == o ? true : o.pid) === (0, F.getPID)() ? (0, C.Z)(e) : null,
+        streamApplication: (null == o ? true : o.pid) === (0, H.getPID)() ? (0, C.Z)(e) : null,
         stream: t
       }
     });

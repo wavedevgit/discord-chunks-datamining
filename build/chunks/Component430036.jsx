@@ -215,7 +215,7 @@ class eo extends Chunk473749.Component {
       return 0 === t.length ? Promise.resolve({
         shouldClear: false,
         shouldRefocus: true
-      }) : (0, H.v)({
+      }) : (0, F.v)({
         openWarningPopout: e => this.setState({
           contentWarningProps: e
         }),
@@ -237,7 +237,7 @@ class eo extends Chunk473749.Component {
         let o = h.Z.getSendMessageOptionsForReply(i);
         return (h.Z.sendMessage(n.id, I.ZP.parse(n, t), true, er(ei({}, o), {
           location: $.dy.OVERLAY
-        })), this.setState((0, S.H2)()), (0, N.A6)(n.id), r) ? (p.Z.deactivateAllRegions(), {
+        })), this.setState((0, S.H2)()), (0, T.A6)(n.id), r) ? (p.Z.deactivateAllRegions(), {
           shouldClear: false,
           shouldRefocus: false
         }) : {
@@ -493,12 +493,12 @@ function ec(e) {
     a = (0, c.e7)([z.Z], () => z.Z.getChannelId(r)),
     s = (0, c.e7)([k.Z], () => k.Z.getChannel(a)),
     o = (0, c.e7)([U.ZP], () => U.ZP.getOverlayChatKeybind()),
-    l = null != o ? (0, F.BB)(o.shortcut, true) : "]",
+    l = null != o ? (0, H.BB)(o.shortcut, true) : "]",
     [d, u, f] = (0, c.Wu)([G.default], () => [G.default.getTextWidgetOpacity(), G.default.getActiveRegions(), !t && G.default.isPreviewingInGame()]),
     h = (0, c.e7)([L.Z], () => L.Z.getGuild(r)),
     p = (0, c.e7)([A.Z], () => null != r && A.Z.didAgree(r)),
     g = null != s && s.isPrivate() ? s.getRecipientId() : null,
-    b = (0, c.e7)([T.Z], () => null != a ? T.Z.getPendingReply(a) : true),
+    b = (0, c.e7)([N.Z], () => null != a ? N.Z.getPendingReply(a) : true),
     v = (0, c.e7)([W.default], () => null != g ? W.default.getUser(g) : null),
     {
       placeholder: O

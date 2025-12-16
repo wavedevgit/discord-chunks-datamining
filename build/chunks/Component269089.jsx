@@ -43,12 +43,12 @@ let g = (0, Chunk663993.Un)({
     webpackId: 945778,
     name: "PopoutWindowRTCDebug"
   }),
-  E = (0, Chunk663993.Un)({
+  _ = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("50751"), require.e("27278")]).then(require.bind(require, 748623)),
     webpackId: 748623,
     name: "PopoutWindowActivity"
   });
-class _ extends Chunk317770.Z {
+class E extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), Chunk570140.Z.subscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), Chunk570140.Z.subscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), Chunk570140.Z.subscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.initializeStyleSheetObserver()
   }
@@ -97,7 +97,7 @@ class _ extends Chunk317770.Z {
     })
   }
   handleOpenActivityPopout() {
-    (0, Chunk765250.te)(Chunk757744.$S, Chunk355863.Z.getDefaultLayout(Chunk757744.$S, Chunk757744.HN), Chunk757744.HN), Chunk788983.open(Chunk981631.KJ3.ACTIVITY_POPOUT, e => (0, r.jsx)(E, {
+    (0, Chunk765250.te)(Chunk757744.$S, Chunk355863.Z.getDefaultLayout(Chunk757744.$S, Chunk757744.HN), Chunk757744.HN), Chunk788983.open(Chunk981631.KJ3.ACTIVITY_POPOUT, e => (0, r.jsx)(_, {
       windowKey: e
     }), {
       defaultWidth: 854,
@@ -109,7 +109,7 @@ class _ extends Chunk317770.Z {
       let {
         channelId: t,
         participantId: n
-      } = e, i = (0, s.Z)(t, n);
+      } = e, i = (0, o.Z)(t, n);
       u.open(i, e => (0, r.jsx)(h, {
         windowKey: e,
         channelId: t,
@@ -121,4 +121,4 @@ class _ extends Chunk317770.Z {
     })
   }
 }
-let O = new _
+let O = new E

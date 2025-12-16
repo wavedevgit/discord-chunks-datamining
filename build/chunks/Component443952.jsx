@@ -57,7 +57,7 @@ async function U(e, t, n, r) {
       }, "No eligible activity for application. Ensure user does have have privacy enabled.")
     })
   }
-  await o.Z.sendActivityInviteUser({
+  await s.Z.sendActivityInviteUser({
     userId: n,
     type: r,
     activity: l,
@@ -148,17 +148,17 @@ let G = {
           session_id: i,
           channel_id: l,
           message_id: a,
-          application_id: s
+          application_id: o
         }
-      } = e, o = t.transport === D.He.IPC && null != s ? s : t.application.id;
-      if (null == o) throw new x.Z({
+      } = e, s = t.transport === D.He.IPC && null != o ? o : t.application.id;
+      if (null == s) throw new x.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No application.");
       let c = Promise.resolve(false);
       return n === M.mFx.JOIN && (c = u.Z.join({
         userId: r,
         sessionId: i,
-        applicationId: o,
+        applicationId: s,
         channelId: l,
         messageId: a
       })), c.then(e => {
@@ -182,15 +182,15 @@ let G = {
       let {
         channel: l,
         guild: a,
-        frame: o
+        frame: s
       } = (0, L.T)(), u = (0, h.ZP)({
         application: t.application,
         channelId: null == l ? true : l.id
       }), d = null != u ? O.Z.getWindow(u) : true;
       (null == d ? true : d.closed) && (d = true);
       let p = null != d ? M.IlC.POPOUT : M.IlC.APP;
-      if ((0, P.Pr)({}, null == d ? true : d.document), null != o) {
-        if (o.applicationId !== i.id) throw new x.Z({
+      if ((0, P.Pr)({}, null == d ? true : d.document), null != s) {
+        if (s.applicationId !== i.id) throw new x.Z({
           errorCode: M.lTL.INVALID_COMMAND
         }, "Application is not currently mounted.");
         let e = I.Z.getApplicationActivity(i.id);
@@ -198,12 +198,12 @@ let G = {
         else throw new x.Z({
           errorCode: M.lTL.NO_ELIGIBLE_ACTIVITY
         }, "No eligible activity for application. Ensure an activity was set using setActivity.")
-      } else(0, s.ZDy)(async () => {
+      } else(0, o.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("7654"), n.e("45965")]).then(n.bind(n, 560114));
         return t => {
-          var n, s;
+          var n, o;
           return (0, r.jsx)(e, (n = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -221,25 +221,25 @@ let G = {
               })
             }
             return e
-          }({}, t), s = s = {
+          }({}, t), o = o = {
             guild: a,
             channel: l,
             applicationId: i.id,
             analyticsLocation: M.Sbl.ACTIVITY_RPC,
             source: M.t4x.ACTIVITY_INVITE
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(s)).forEach(function(e) {
-            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(s, e))
+          })(Object(o)).forEach(function(e) {
+            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
           }), n))
         }
       }, {
-        contextKey: p === M.IlC.POPOUT ? s.u1M : s.z1l
+        contextKey: p === M.IlC.POPOUT ? o.u1M : o.z1l
       })
     }
   },
@@ -263,7 +263,7 @@ let G = {
           else {
             var r;
             let e = S.Z.getLastFocusedWindowId();
-            n = null == e ? null : null == (r = (0, _.g0)(e)) ? true : r.renderWindow
+            n = null == e ? null : null == (r = (0, E.g0)(e)) ? true : r.renderWindow
           }
           if (null == n) throw new x.Z({
             errorCode: M.lTL.UNKNOWN_ERROR
@@ -336,7 +336,7 @@ let G = {
           args: {
             command: i,
             preview_image: a,
-            components: o,
+            components: s,
             require_launch_channel: c,
             content: u,
             options: d,
@@ -357,7 +357,7 @@ let G = {
       if (null == g && c) throw new x.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No channel found");
-      if (null !== a || null !== o || null !== u) {
+      if (null !== a || null !== s || null !== u) {
         let e = [];
         true !== a && (e = [{
           id: N.default.cast(N.default.fromTimestamp(Date.now())),
@@ -371,15 +371,15 @@ let G = {
           id: N.default.cast(N.default.fromTimestamp(Date.now())),
           applicationId: f,
           content: u,
-          components: o,
+          components: s,
           attachments: e
         })
       }
       return new Promise(e => {
         let t = false,
           r = (0, R.jU)(p),
-          l = s.z1l;
-        (O.Z.getWindowOpen(M.KJ3.ACTIVITY_POPOUT) || r.context === M.IlC.POPOUT) && (l = s.u1M), (0, E.M)({
+          l = o.z1l;
+        (O.Z.getWindowOpen(M.KJ3.ACTIVITY_POPOUT) || r.context === M.IlC.POPOUT) && (l = o.u1M), (0, _.M)({
           applicationId: f,
           channel: g,
           command: {

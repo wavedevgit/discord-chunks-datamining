@@ -44,11 +44,11 @@ function N(e) {
   var t, n;
   let {
     onClick: l,
-    selectedOverride: s = false,
-    popoutProps: o,
+    selectedOverride: o = false,
+    popoutProps: s,
     ref: h,
     focusSectionProps: b
-  } = e, [O, v] = i.useState(false), N = (0, E.D)(), j = s || N, P = s || j, {
+  } = e, [O, v] = i.useState(false), N = (0, _.D)(), j = o || N, P = o || j, {
     backForwardButtons: x,
     titlebarIconSize: A,
     titlebarHoverHighlight: Z
@@ -61,7 +61,7 @@ function N(e) {
   }), {
     badge: L,
     badgeType: R
-  } = (0, _.h6)({
+  } = (0, E.h6)({
     isSelected: j
   }), D = (0, m.isDesktop)() && x, M = (0, g.A)(), k = (0, m.isMac)() ? C[M] : D ? S[M] : T[M];
   return (0, r.jsxs)(d.Kqy, {
@@ -96,7 +96,7 @@ function N(e) {
         className: a()(I.clickableContainer, {
           [I.withHoverHighlight]: Z
         })
-      }, b, o), n = n = {
+      }, b, s), n = n = {
         onMouseEnter: () => {
           v(true)
         },
@@ -105,7 +105,7 @@ function N(e) {
         },
         onClick: () => {
           var e;
-          null == l || l(), null == o || null == (e = o.onClick) || e.call(o)
+          null == l || l(), null == s || null == (e = s.onClick) || e.call(s)
         },
         children: [(0, r.jsx)("div", {
           className: a()(I.iconWrapper, null),

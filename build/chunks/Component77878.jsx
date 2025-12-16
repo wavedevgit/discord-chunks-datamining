@@ -9,7 +9,7 @@ var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk981631 = require("./981631.js"),
   Chunk136569 = require("./136569.js");
-let o = "1",
+let s = "1",
   c = "2",
   u = "3",
   d = "4",
@@ -19,10 +19,10 @@ let o = "1",
   h = "2",
   m = "3",
   b = "4",
-  E = "5",
-  _ = {
+  _ = "5",
+  E = {
     [Chunk981631.aIt.ESRB]: {
-      [o]: Chunk136569.esrbEveryone,
+      [s]: Chunk136569.esrbEveryone,
       [c]: Chunk136569.esrbEveryoneTenPlus,
       [u]: Chunk136569.esrbTeen,
       [d]: Chunk136569.esrbMature,
@@ -34,7 +34,7 @@ let o = "1",
       [h]: Chunk136569.pegiSeven,
       [m]: Chunk136569.pegiTwelve,
       [b]: Chunk136569.pegiSixteen,
-      [E]: Chunk136569.pegiEighteen
+      [_]: Chunk136569.pegiEighteen
     }
   },
   O = e => {
@@ -42,8 +42,8 @@ let o = "1",
       agency: t,
       rating: n,
       className: i
-    } = e, a = _[t][n];
+    } = e, a = E[t][n];
     return null == a ? null : (0, r.jsx)("div", {
-      className: l()(s.contentRating, a, i)
+      className: l()(o.contentRating, a, i)
     })
   }

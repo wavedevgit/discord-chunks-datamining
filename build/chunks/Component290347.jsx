@@ -76,11 +76,11 @@ let P = [],
       subHeader: n,
       imageSrc: i,
       tagText: l,
-      wideStyle: s
+      wideStyle: o
     } = e;
     return (0, r.jsxs)("div", {
       className: a()(T.featureCard, {
-        [T.wideStyle]: s
+        [T.wideStyle]: o
       }),
       children: [null != l ? (0, r.jsx)(x, {
         tagText: l,
@@ -88,7 +88,7 @@ let P = [],
       }) : null, (0, r.jsx)("img", {
         alt: "",
         className: a()(T.featureCardImg, {
-          [T.wideStyle]: s
+          [T.wideStyle]: o
         }),
         src: i
       }), (0, r.jsxs)("div", {
@@ -121,26 +121,26 @@ function Z(e) {
     subHeaderExtra: k,
     featureCards: U,
     changeLogId: G,
-    button: B,
-    body: H
+    button: H,
+    body: B
   } = e, {
     onClose: V,
     transitionState: F
-  } = x, z = (0, b.Dt)(), Y = U.length % 2 == 0, W = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), [q, K] = i.useState(Date.now()), [Q, J] = i.useState(0), [X, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(q), el = i.useRef(Q), ea = i.useRef(X), es = i.useRef(ee), eo = i.useRef(en), [ec, eu] = i.useState(P), ed = i.useRef(false);
+  } = x, z = (0, b.Dt)(), Y = U.length % 2 == 0, W = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), [q, K] = i.useState(Date.now()), [Q, J] = i.useState(0), [X, $] = i.useState(0), [ee, et] = i.useState(false), [en, er] = i.useState(true), ei = i.useRef(q), el = i.useRef(Q), ea = i.useRef(X), eo = i.useRef(ee), es = i.useRef(en), [ec, eu] = i.useState(P), ed = i.useRef(false);
 
   function ep() {
     let e = Date.now(),
       t = e - ei.current,
       n = el.current,
       r = ea.current;
-    return es.current && (J(n += t), eo.current || $(r += t)), K(e), [n, r]
+    return eo.current && (J(n += t), es.current || $(r += t)), K(e), [n, r]
   }
   return (0, g.Z)({
-    type: s.ImpressionTypes.MODAL,
-    name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
+    type: o.ImpressionTypes.MODAL,
+    name: o.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
     properties: {
       component_id: t,
-      component_type: o.I.ANNOUNCEMENT_MODAL
+      component_type: s.I.ANNOUNCEMENT_MODAL
     }
   }), i.useEffect(() => {
     let e = async () => {
@@ -170,7 +170,7 @@ function Z(e) {
       URL.revokeObjectURL(e.src)
     })
   }, [ec]), i.useEffect(() => {
-    ei.current = q, el.current = Q, ea.current = X, es.current = ee, eo.current = en
+    ei.current = q, el.current = Q, ea.current = X, eo.current = ee, es.current = en
   }, [q, Q, X, ee, en]), i.useEffect(() => () => {
     if ("video" === Z.type || "embed" === Z.type) {
       let [e, t] = ep();
@@ -183,7 +183,7 @@ function Z(e) {
       })
     }
   }, [G, Z.type]), i.useEffect(() => {
-    (0, _.kk)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
+    (0, E.kk)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
     let e = Date.now();
     return v.default.track(I.rMx.CHANGE_LOG_OPENED, {
       change_log_id: G
@@ -191,7 +191,7 @@ function Z(e) {
       v.default.track(I.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: G,
         seconds_open: Math.round((Date.now() - e) / 1e3)
-      }), (0, _.JO)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, n, {
+      }), (0, E.JO)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, n, {
         dismissAction: C.L.DISMISS
       })
     }
@@ -212,7 +212,7 @@ function Z(e) {
       }), null == L ? true : L(), (0, r.jsxs)(p.hzk, {
         "data-migration-pending": true,
         className: T.content,
-        children: ["video" === Z.type ? (0, r.jsx)(E.Z, {
+        children: ["video" === Z.type ? (0, r.jsx)(_.Z, {
           className: a()(T.video, w),
           autoPlay: !W,
           loop: true,
@@ -276,10 +276,10 @@ function Z(e) {
           color: "text-subtle",
           className: T.subHeader,
           children: [M, null == k ? true : k()]
-        }), null != H && "" !== H && (0, r.jsx)(p.Heading, {
+        }), null != B && "" !== B && (0, r.jsx)(p.Heading, {
           variant: "heading-lg/semibold",
           className: T.bodyText,
-          children: H
+          children: B
         }), U.length > 0 && (0, r.jsx)("div", {
           className: a()(T.featureCardGroup, {
             [T.wideStyle]: Y
@@ -289,7 +289,7 @@ function Z(e) {
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {
           className: T.buttonContainer,
-          children: B()
+          children: H()
         })]
       })]
     })

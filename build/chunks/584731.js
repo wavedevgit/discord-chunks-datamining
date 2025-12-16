@@ -1,6 +1,9 @@
-/** Chunk was on 1272 **/
-/** chunk id: 584731, original params: e,t,n (module,exports,require) **/
-require("./388685.js");
+/** Chunk was on web.js **/
+/** chunk id: 584731, original params: e,t,n (module,exports,re quire) **/
+"use strict";
+require.d(exports, {
+  Z: () => _
+}), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk513418 = require("./513418.js"),
@@ -18,8 +21,8 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = false / 0,
-  p = new Chunk710845.Z("MessagePreviewStore");
-class f extends Chunk442837.ZP.Store {
+  f = new Chunk710845.Z("MessagePreviewStore");
+class p extends Chunk442837.ZP.Store {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk375954.Z)
   }
@@ -62,7 +65,7 @@ class f extends Chunk442837.ZP.Store {
     var t, n;
     let r = null != (n = e.guildId) ? n : null;
     if ((null == (t = this.data(r)) ? true : t.messageId(e.channelId)) === e.id) {
-      let t = o.Z.getMessages(e.channelId),
+      let t = l.Z.getMessages(e.channelId),
         n = t.hasMoreAfter ? null : t.last();
       null != n ? this.data(r).put(e.channelId, n, this.generation) : this.data(r).delete(e.channelId)
     }
@@ -73,9 +76,9 @@ class f extends Chunk442837.ZP.Store {
       r = e.message.channel_id,
       i = e.message.id;
     if (null == r || null == i) returnfalse;
-    let l = this.data(n);
-    if ((null == l ? true : l.messageId(r)) !== i) returnfalse;
-    null == l || l.update(e.message)
+    let a = this.data(n);
+    if ((null == a ? true : a.messageId(r)) !== i) returnfalse;
+    null == a || a.update(e.message)
   }
   handleThreadListSync(e) {
     var t;
@@ -85,22 +88,22 @@ class f extends Chunk442837.ZP.Store {
     var t, n;
     let r = s.Z.getBasicChannel(e.channelId);
     if (null == r) returnfalse;
-    (0, l.Z)(e.messages), e.isAfter || e.isBefore || e.hasMoreAfter ? this.data(r.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, this.generation) : this.data(r.guild_id).put(e.channelId, null != (t = e.messages[0]) ? t : null, this.generation)
+    (0, a.Z)(e.messages), e.isAfter || e.isBefore || e.hasMoreAfter ? this.data(r.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, this.generation) : this.data(r.guild_id).put(e.channelId, null != (t = e.messages[0]) ? t : null, this.generation)
   }
   handleLocalMessagesLoaded(e) {
     let t = s.Z.getBasicChannel(e.channelId);
     if (null != t) {
       var n;
-      (0, l.Z)(e.messages), this.data(t.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, d)
+      (0, a.Z)(e.messages), this.data(t.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, d)
     }
   }
   handleMessagePreviewsLoaded(e) {
-    p.verbose("adding remote previews (guildId: ".concat(e.guildId, ", messages: ").concat(e.messages.length, ")"));
+    f.verbose("adding remote previews (guildId: ".concat(e.guildId, ", messages: ").concat(e.messages.length, ")"));
     let t = this.data(e.guildId);
     for (let n of e.messages) t.isLatest(n.channel_id, this.generation) || t.put(n.channel_id, n, this.generation)
   }
   handleMessagePreviewsLocallyLoaded(e) {
-    p.verbose("adding local previews (guildId: ".concat(e.guildId, ", messages: ").concat(e.messages.length, ")"));
+    f.verbose("adding local previews (guildId: ".concat(e.guildId, ", messages: ").concat(e.messages.length, ")"));
     let t = this.data(e.guildId);
     for (let [n, r] of e.messages) t.has(n) || t.put(n, r, d);
     t.localNeeded = false
@@ -125,4 +128,4 @@ class f extends Chunk442837.ZP.Store {
     }), u(this, "guilds", new Map), u(this, "generation", 0)
   }
 }
-new f
+let _ = new p

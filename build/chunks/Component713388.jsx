@@ -1,4 +1,4 @@
-/** Chunk was on 29725 **/
+/** Chunk was on 6043 **/
 /** chunk id: 713388, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -30,17 +30,17 @@ function h(e) {
   var t;
   let {
     setting: n,
-    depth: l,
-    highlightMode: i
+    depth: i,
+    highlightMode: l
   } = e, s = null == (t = r.useContext(x)) ? true : t.get(n), o = null;
   return null != s && s.length > 0 && (o = s.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(h, {
     setting: e,
-    depth: l + 1,
-    highlightMode: i
+    depth: i + 1,
+    highlightMode: l
   }, e))), (0, a.jsx)(c.r, {
     title: n,
-    initExpanded: l <= 2,
-    highlightMode: i,
+    initExpanded: i <= 2,
+    highlightMode: l,
     children: o
   })
 }
@@ -50,7 +50,7 @@ function f(e) {
     setting: t,
     depth: n,
     inheritedHighlightMode: r
-  } = e, l = function(e, t) {
+  } = e, i = function(e, t) {
     if ("migrated" === t) return "migrated";
     switch (e.type) {
       case s.Jq.ROOT:
@@ -63,24 +63,24 @@ function f(e) {
       default:
         return null != t ? t : "migrated"
     }
-  }(t, r), i = "migrated" === l ? "migrated" : true, o = null;
+  }(t, r), l = "migrated" === i ? "migrated" : true, o = null;
   if ((0, s.Lk)(t)) {
     var d, u, x;
     let e = null == (x = t.parent) || null == (u = x.parent) || null == (d = u.getLegacySearchKey) ? true : d.call(u);
     0 === t.layout.length && null != e ? o = (0, a.jsx)(h, {
       setting: e,
       depth: n + 1,
-      highlightMode: null != i ? i : "legacy"
+      highlightMode: null != l ? l : "legacy"
     }) : t.layout.length > 0 && (o = t.layout.map(e => (0, a.jsx)(f, {
       setting: e,
       depth: n + 1,
-      inheritedHighlightMode: i
+      inheritedHighlightMode: l
     }, e.key)))
   }
   return (0, a.jsx)(c.r, {
     title: t.key,
     initExpanded: n <= 2,
-    highlightMode: l,
+    highlightMode: i,
     children: o
   })
 }

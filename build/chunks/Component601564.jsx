@@ -48,7 +48,7 @@ Chunk442837.ZP.initialize();
 class P extends Chunk473749.PureComponent {
   componentDidMount() {
     (0, Chunk838049.Y)(this.props.location), this.stopListeningToHistory = (0, Chunk703656.s1)().listen(e => {
-      e.pathname.startsWith(I.Z5c.APPLICATION_STORE) && (0, o.Y)(e)
+      e.pathname.startsWith(I.Z5c.APPLICATION_STORE) && (0, s.Y)(e)
     }), this.props.isAuthenticated && (0, Chunk355467.tZ)(), Chunk714338.Z.disable(), Chunk714338.Z.setLayout(Chunk447269.r), Chunk714338.Z.enable(), (0, Chunk108427.e)("application_store")
   }
   componentWillUnmount() {
@@ -92,8 +92,8 @@ class P extends Chunk473749.PureComponent {
         },
         location: a
       } = e, {
-        width: s
-      } = this.props, o = (0, l.parse)(a.search);
+        width: o
+      } = this.props, s = (0, l.parse)(a.search);
       return (0, r.jsx)(u.Z, {
         page: I.ZY5.STORE_LISTING,
         root: true,
@@ -102,8 +102,8 @@ class P extends Chunk473749.PureComponent {
           applicationId: n,
           slug: i,
           location: a,
-          storeListingId: o.store_listing_id,
-          pageSize: j(s)
+          storeListingId: s.store_listing_id,
+          pageSize: j(o)
         })
       })
     }), T(this, "renderContent", () => (0, r.jsxs)(a.rs, {

@@ -1,4 +1,4 @@
-/** Chunk was on 29725 **/
+/** Chunk was on 6043 **/
 /** chunk id: 361045, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   n: () => c
@@ -31,7 +31,7 @@ function c(e) {
       className: o.content,
       children: [(0, a.jsx)(r.P3F, {
         className: o.closeIcon,
-        onClick: () => t(i.L.USER_DISMISS),
+        onClick: () => t(l.L.USER_DISMISS),
         children: (0, a.jsx)(r.Dio, {})
       }), (0, a.jsx)("img", {
         src: n(414190),
@@ -42,7 +42,7 @@ function c(e) {
           variant: "heading-md/semibold",
           color: "text-strong",
           className: o.heading,
-          children: [s.intl.string(s.t.MLt8H4), (0, a.jsx)(l.Z, {
+          children: [s.intl.string(s.t.MLt8H4), (0, a.jsx)(i.Z, {
             className: o.betaTag
           })]
         }), (0, a.jsx)(r.Text, {
@@ -55,7 +55,7 @@ function c(e) {
         text: s.intl.string(s.t["9WdoB+"]),
         fullWidth: true,
         onClick: () => {
-          t(i.L.TAKE_ACTION), c()
+          t(l.L.TAKE_ACTION), c()
         }
       })]
     })]

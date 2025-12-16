@@ -40,8 +40,8 @@ function w(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let N = 10 * Chunk70956.Z.Millis.SECOND,
-  T = new Chunk579092.Yd("LegacyOverlayErrorBoundary");
+let T = 10 * Chunk70956.Z.Millis.SECOND,
+  N = new Chunk579092.Yd("LegacyOverlayErrorBoundary");
 
 function D() {
   let e = (0, Chunk145597.getPID)(),
@@ -59,7 +59,7 @@ function D() {
 }
 class k extends Chunk473749.PureComponent {
   componentDidMount() {
-    this.notificationTimer = setTimeout(this.hideNotification, N), Chunk13245.Z.track(Chunk981631.rMx.NOTIFICATION_VIEWED, {
+    this.notificationTimer = setTimeout(this.hideNotification, T), Chunk13245.Z.track(Chunk981631.rMx.NOTIFICATION_VIEWED, {
       notif_type: Chunk987650.n0.OverlayCrashed
     })
   }
@@ -160,7 +160,7 @@ class A extends Chunk473749.PureComponent {
     this.setState({
       error: e,
       info: t
-    }), T.error("ErrorBoundary caught error: ".concat(e.message), {
+    }), N.error("ErrorBoundary caught error: ".concat(e.message), {
       error: e,
       info: t
     });

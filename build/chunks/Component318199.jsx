@@ -24,13 +24,13 @@ function m(e) {
     promotionId: t,
     content: n,
     isPreview: r
-  } = e, s = a.t.fromBinary((0, i.c)(n));
-  if ("announcementModalVariant1" !== s.properties.oneofKind) return null;
+  } = e, o = a.t.fromBinary((0, i.c)(n));
+  if ("announcementModalVariant1" !== o.properties.oneofKind) return null;
   {
     let {
       isDismissed: e
     } = (0, p.Ob)(l.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, t);
-    return !r && e ? null : (r && (s.properties.announcementModalVariant1.dismissKey = ""), s)
+    return !r && e ? null : (r && (o.properties.announcementModalVariant1.dismissKey = ""), o)
   }
 }
 
@@ -42,9 +42,9 @@ function b(e) {
     properties: l
   } = e, {
     location: a
-  } = (0, o.O)(), {
+  } = (0, s.O)(), {
     analyticsLocations: p
-  } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), m = (0, c.ZP)(), b = (0, s.apv)(m);
+  } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), m = (0, c.ZP)(), b = (0, o.apv)(m);
   if ("announcementModalVariant1" === l.properties.oneofKind) {
     let e = (0, g.N)({
       componentId: t,

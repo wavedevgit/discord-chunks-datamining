@@ -36,7 +36,7 @@ function j(e) {
   var t;
   let {
     guild: n
-  } = e, [p, g] = i.useState(null != (t = s.K.get(C.Iv)) ? t : 0), h = (0, l.Wu)(C.HG, () => C.XN.filter(e => {
+  } = e, [p, g] = i.useState(null != (t = o.K.get(C.Iv)) ? t : 0), h = (0, l.Wu)(C.HG, () => C.XN.filter(e => {
     let {
       dismissibleContentType: t,
       store: r
@@ -52,7 +52,7 @@ function j(e) {
         markAsDismissed: i
       } = e, l = () => {
         var e;
-        e = Date.now(), s.K.set(C.Iv, e), g(e), i(S.L.UNKNOWN)
+        e = Date.now(), o.K.set(C.Iv, e), g(e), i(S.L.UNKNOWN)
       }, c = (() => {
         switch (t) {
           case a.z.CHANNEL_NOTICE_HUBLINK:
@@ -81,7 +81,7 @@ function j(e) {
               markAsDismissed: l
             });
           case a.z.LINKED_ROLE_ADMIN_GUILD:
-            return (0, r.jsx)(o.Z, {
+            return (0, r.jsx)(s.Z, {
               guild: n,
               markAsDismissed: () => i(S.L.UNKNOWN)
             });
@@ -114,7 +114,7 @@ let P = e => {
         guild: t
       });
     case I.R.GUILD_MFA_WARNING:
-      return (0, r.jsx)(_.Z, {
+      return (0, r.jsx)(E.Z, {
         guild: t
       });
     case I.R.COMMANDS_MIGRATION:
@@ -130,7 +130,7 @@ let P = e => {
         guild: t
       })
   }
-  return E.s.isDisallowPopupsSet() ? null : (0, r.jsx)(j, {
+  return _.s.isDisallowPopupsSet() ? null : (0, r.jsx)(j, {
     guild: e.guild
   })
 }

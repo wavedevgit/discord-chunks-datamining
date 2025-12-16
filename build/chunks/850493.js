@@ -11,7 +11,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js");
 
 function c(e) {
-  let [t, n] = r.useState(true), c = (0, i.e7)([s.Z], () => null != e ? s.Z.getJoinRequestGuild(e) : true), u = r.useCallback(async e => {
+  let [t, n] = r.useState(true), c = (0, i.e7)([o.Z], () => null != e ? o.Z.getJoinRequestGuild(e) : true), u = r.useCallback(async e => {
     try {
       let t = l.Z.getInviteKeyForGuildId(e);
       null != t && await a.ZP.fetchVerificationForm(e, t)
@@ -22,7 +22,7 @@ function c(e) {
   return r.useEffect(() => {
     null == e ? n(false) : (n(true), u(e))
   }, [e, u]), {
-    canReapply: null != c && c.features.has(o.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL),
+    canReapply: null != c && c.features.has(s.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL),
     isLoading: t
   }
 }

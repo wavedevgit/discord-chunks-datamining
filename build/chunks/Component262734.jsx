@@ -38,19 +38,19 @@ function j(e) {
   } = e, n = (0, f.q)(t.applicationId), l = (0, d.Z)(), {
     selectedChannelId: j,
     selectedVoiceChannelId: P
-  } = (0, s.cj)([E.Z], () => ({
-    selectedChannelId: E.Z.getChannelId(),
-    selectedVoiceChannelId: E.Z.getVoiceChannelId()
-  })), x = (0, s.e7)([g.Z], () => null != P && j === P && g.Z.getChatOpen(P), [j, P]), A = (0, s.e7)([h.ZP], () => h.ZP.callChatSidebarWidth), Z = (0, u.dQu)(o.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
+  } = (0, o.cj)([_.Z], () => ({
+    selectedChannelId: _.Z.getChannelId(),
+    selectedVoiceChannelId: _.Z.getVoiceChannelId()
+  })), x = (0, o.e7)([g.Z], () => null != P && j === P && g.Z.getChatOpen(P), [j, P]), A = (0, o.e7)([h.ZP], () => h.ZP.callChatSidebarWidth), Z = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
     width: 0,
     height: 0
   }), M = i.useCallback(() => {
-    _.Z.updateFrameLayoutMode({
+    E.Z.updateFrameLayoutMode({
       applicationId: t.applicationId,
       layoutMode: y.U.PIP
     })
   }, [t.applicationId]), k = i.useCallback(() => {
-    _.Z.stopFrame({
+    E.Z.stopFrame({
       applicationId: t.applicationId
     })
   }, [t.applicationId]);
@@ -66,7 +66,7 @@ function j(e) {
     return e.observe(L.current), () => e.disconnect()
   }, []), i.useEffect(() => {
     let e = e => {
-      null == w.current || w.current.contains(e.target) || l || _.Z.updateFrameLayoutMode({
+      null == w.current || w.current.contains(e.target) || l || E.Z.updateFrameLayoutMode({
         applicationId: t.applicationId,
         layoutMode: y.U.PIP
       })
@@ -77,12 +77,12 @@ function j(e) {
   }, [t.applicationId, l]);
   let U = R.width / Math.max(R.height, 1) < C.I0,
     G = 0,
-    B = 0,
-    H = (0, p.Z)(null == n ? true : n.id);
-  if (!H) {
+    H = 0,
+    B = (0, p.Z)(null == n ? true : n.id);
+  if (!B) {
     let e = R.width,
       t = R.height;
-    U ? ((t = R.width / C.I0) > R.height && (e = (t = R.height) * C.I0), B = (R.height - t) / 2) : ((e = Math.min(R.height * C.I0)) > R.width && (t = (e = R.width) / C.I0), G = (R.width - e) / 2)
+    U ? ((t = R.width / C.I0) > R.height && (e = (t = R.height) * C.I0), H = (R.height - t) / 2) : ((e = Math.min(R.height * C.I0)) > R.width && (t = (e = R.width) / C.I0), G = (R.width - e) / 2)
   }
   let V = C.MI.NO_CHAT;
   if (null == n) return null;
@@ -100,13 +100,13 @@ function j(e) {
         className: T.activityPanelContainer,
         children: (0, r.jsx)("div", {
           className: a()(T.activityContainer, {
-            [T.activityContainerNoMargin]: H
+            [T.activityContainerNoMargin]: B
           }),
           style: {
             paddingLeft: G,
             paddingRight: G,
-            paddingTop: B,
-            paddingBottom: B
+            paddingTop: H,
+            paddingBottom: H
           },
           ref: L,
           children: (0, r.jsx)(O.Z, {

@@ -73,8 +73,8 @@ let N = Chunk473749.memo(function(e) {
     }
     return i
   }(e, ["message", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory"]), k = N.type === I.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, U = N.isFirstMessageInForumPost(Z), G = (0, u.A)((null != (n = N.editedTimestamp) ? n : N.timestamp).valueOf()), {
-    content: B,
-    hasSpoilerEmbeds: H,
+    content: H,
+    hasSpoilerEmbeds: B,
     hasBailedAst: V
   } = (0, h.Z)(N, {
     hideSimpleEmbedContent: A,
@@ -82,7 +82,7 @@ let N = Chunk473749.memo(function(e) {
     allowHeading: U || G,
     allowLinks: true,
     previewLinkTarget: true
-  }), F = (0, s.JA)(N.id), z = (0, p.ZP)(N), Y = (0, o.e7)([v.Z], () => N.hasFlag(I.iLy.HAS_THREAD) && v.Z.getChannel(y.default.castMessageIdAsChannelId(N.id))), W = (0, c.p9)({
+  }), F = (0, o.JA)(N.id), z = (0, p.ZP)(N), Y = (0, s.e7)([v.Z], () => N.hasFlag(I.iLy.HAS_THREAD) && v.Z.getChannel(y.default.castMessageIdAsChannelId(N.id))), W = (0, c.p9)({
     guildId: Z.guild_id,
     roleId: z.iconRoleId
   }), q = (0, g.iG)(N), K = (0, g.Gx)(N);
@@ -94,7 +94,7 @@ let N = Chunk473749.memo(function(e) {
     }),
     disableInteraction: k,
     childrenExecutedCommand: (0, O.Z)(N, Z, false),
-    childrenHeader: (0, E.Z)({
+    childrenHeader: (0, _.Z)({
       message: N,
       channel: Z,
       author: z,
@@ -106,9 +106,9 @@ let N = Chunk473749.memo(function(e) {
       hideTimestamp: true,
       hideGuildTag: false
     }),
-    childrenAccessories: e.hideAccessories ? true : (0, m.Q)(e, H, V),
-    childrenMessageContent: (0, b.Z)(e, B),
-    childrenSystemMessage: (0, _.Z)((i = T({}, e), l = l = {
+    childrenAccessories: e.hideAccessories ? true : (0, m.Q)(e, B, V),
+    childrenMessageContent: (0, b.Z)(e, H),
+    childrenSystemMessage: (0, E.Z)((i = T({}, e), l = l = {
       disableInteraction: k
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);

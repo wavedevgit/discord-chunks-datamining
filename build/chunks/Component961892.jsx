@@ -18,10 +18,10 @@ let g = e => {
   let {
     isSelected: t,
     discountOffer: n
-  } = e, [l, g] = (0, c.US)([s.z.CHURN_DISCOUNT_PREMIUM_TAB_BADGE], true, true);
+  } = e, [l, g] = (0, c.US)([o.z.CHURN_DISCOUNT_PREMIUM_TAB_BADGE], true, true);
   return (i.useEffect(() => {
-    t && l === s.z.CHURN_DISCOUNT_PREMIUM_TAB_BADGE && g(d.L.TAKE_ACTION)
-  }, [t, g, l]), l === s.z.CHURN_DISCOUNT_PREMIUM_TAB_BADGE) ? (0, r.jsx)(u._y, {
+    t && l === o.z.CHURN_DISCOUNT_PREMIUM_TAB_BADGE && g(d.L.TAKE_ACTION)
+  }, [t, g, l]), l === o.z.CHURN_DISCOUNT_PREMIUM_TAB_BADGE) ? (0, r.jsx)(u._y, {
     badgeCopy: p.intl.format(p.t.AYcXGW, {
       discountOfferAmount: n.discount.amount
     }).toString(),
@@ -29,13 +29,13 @@ let g = e => {
     offerExpiresAt: null
   }) : (0, r.jsxs)("div", {
     className: a()(f.churnDiscountBadge, f.churnDiscountAcknowledgedBadge),
-    children: [(0, r.jsx)(o.T39, {
+    children: [(0, r.jsx)(s.T39, {
       size: "custom",
       width: 14,
       height: 14,
       color: "currentColor",
       className: f.churnDiscountBadgeIcon
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "eyebrow",
       color: "text-subtle",
       children: p.intl.format(p.t.AYcXGW, {

@@ -7,7 +7,7 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js");
 
-function s(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,14 +16,14 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -49,7 +49,7 @@ function f(e) {
   let {
     guildId: t
   } = e;
-  d = c(o({}, d), {
+  d = c(s({}, d), {
     [t]: false
   })
 }
@@ -62,13 +62,13 @@ class g extends(r = Chunk442837.ZP.Store) {
     return !p
   }
 }
-s(g, "displayName", "GuildTemplateTooltipStore");
+o(g, "displayName", "GuildTemplateTooltipStore");
 let h = new g(Chunk570140.Z, {
   GUILD_TEMPLATE_DIRTY_TOOLTIP_REFRESH: function(e) {
     let {
       guildTemplate: t
     } = e;
-    d = c(o({}, d), {
+    d = c(s({}, d), {
       [t.source_guild_id]: t.is_dirty || false
     })
   },
@@ -76,7 +76,7 @@ let h = new g(Chunk570140.Z, {
     Chunk433517.K.set(u, true), p = true
   },
   GUILD_TEMPLATE_SYNC_SUCCESS: function(e) {
-    d = c(o({}, d), {
+    d = c(s({}, d), {
       [e.guildTemplate.source_guild_id]: false
     })
   },

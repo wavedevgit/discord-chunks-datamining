@@ -1,4 +1,4 @@
-/** Chunk was on 29725 **/
+/** Chunk was on 6043 **/
 /** chunk id: 926976, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk913527 = require("./913527.js"),
   o = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
@@ -64,14 +64,14 @@ function P(e) {
   let {
     name: t,
     children: n,
-    copyValue: l
-  } = e, [i, s] = r.useState(false);
+    copyValue: i
+  } = e, [l, s] = r.useState(false);
   return r.useEffect(() => {
-    if (i) {
+    if (l) {
       let e = setTimeout(() => s(false), 1e3);
       return () => clearTimeout(e)
     }
-  }, [i]), (0, a.jsxs)("div", {
+  }, [l]), (0, a.jsxs)("div", {
     className: T.customProperty,
     children: [(0, a.jsx)("dt", {
       className: T.customPropertiesName,
@@ -81,8 +81,8 @@ function P(e) {
     }), (0, a.jsx)(u.P3F, {
       tag: "span",
       className: T.copyPropertyButton,
-      onClick: () => (0, b.JG)(JSON.stringify(l), () => s(true)),
-      children: i ? (0, a.jsx)(u.kmB, {
+      onClick: () => (0, b.JG)(JSON.stringify(i), () => s(true)),
+      children: l ? (0, a.jsx)(u.kmB, {
         color: "currentColor",
         size: "sm"
       }) : (0, a.jsx)(u.TIy, {
@@ -103,15 +103,15 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
           event: t,
           properties: n,
           timestamp: r,
-          fingerprint: l
+          fingerprint: i
         },
         onClose: s,
         filteredEvents: c
-      } = e, d = x.default.getUser(l), h = o()(r);
+      } = e, d = x.default.getUser(i), h = o()(r);
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, a.jsxs)(p.ZP, {
-          className: i()(O.headerBar, T.subPanelHeaderBar),
+          className: l()(O.headerBar, T.subPanelHeaderBar),
           children: [(0, a.jsx)(p.ZP.Icon, {
             icon: u.IeX,
             tooltip: t
@@ -150,7 +150,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
               }({
                 event: t,
                 timestamp: r,
-                fingerprint: l,
+                fingerprint: i,
                 user: null == d ? true : d.id
               }, n), (e, t) => true === t ? null : t, 2))
             }
@@ -177,28 +177,28 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
             })
           }), (0, a.jsx)(y.Z9, {
             name: "Fingerprint",
-            copyValue: l,
+            copyValue: i,
             children: (0, a.jsx)("code", {
-              children: l
+              children: i
             })
           })]
         }), (0, a.jsx)(w, {
           children: Object.entries(n).map(e => {
-            let [n, r] = e, l = I.has(n) ? ((e, t, n) => {
+            let [n, r] = e, i = I.has(n) ? ((e, t, n) => {
               let a = e.filter(e => e.event === t);
               if (0 === a.length) return {
                 average: null,
                 count: 0
               };
               let r = null,
-                l = 0;
+                i = 0;
               for (let e of a) {
                 let t = e.properties[n];
-                "number" == typeof t && (l += 1, null == r ? r = t : r += t)
+                "number" == typeof t && (i += 1, null == r ? r = t : r += t)
               }
               return {
                 average: null !== r ? r / a.length : null,
-                count: l
+                count: i
               }
             })(c, t, n) : null;
             return (0, a.jsxs)("div", {
@@ -213,13 +213,13 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
                   className: T.emptyProperty,
                   children: "null"
                 })
-              }, n), null !== l && null !== l.average && (0, a.jsx)(P, {
+              }, n), null !== i && null !== i.average && (0, a.jsx)(P, {
                 name: "".concat(n, "_avg:"),
                 copyValue: {
                   [n]: r || null
                 },
                 children: (0, a.jsxs)("code", {
-                  children: [l.average.toFixed(3), " (", l.count, ")"]
+                  children: [i.average.toFixed(3), " (", i.count, ")"]
                 })
               }, "".concat(n, "_avg"))]
             }, "".concat(n, "_container"))
@@ -269,7 +269,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
 function Z() {
   let e = Chunk473749.useRef(null),
     [t, n] = Chunk473749.useState(""),
-    l = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.loggedEventsVersion),
+    i = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.loggedEventsVersion),
     [s, o] = Chunk473749.useState(() => Object.keys(R)),
     [m, p] = Chunk473749.useState(Chunk120816.Z.loggedEvents),
     h = Chunk473749.useCallback(e => {
@@ -291,7 +291,7 @@ function Z() {
     }, []);
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
-    className: i()(Chunk663618.panel, Chunk865362.panel),
+    className: l()(Chunk663618.panel, Chunk865362.panel),
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk865362.toolbar,
       children: [(0, Chunk54381.jsx)(Chunk755721.zx, {
@@ -314,7 +314,7 @@ function Z() {
         children: Object.entries(R).map(e => {
           let [t, n] = e;
           return (0, a.jsx)(u.P3F, {
-            className: i()(T.filter, s.includes(t) && T.activeFilter),
+            className: l()(T.filter, s.includes(t) && T.activeFilter),
             onClick: () => {
               o(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
             },

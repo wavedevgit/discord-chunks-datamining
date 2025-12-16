@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 679891, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => _
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk846027 = require("./846027.js"),
@@ -45,8 +45,8 @@ class b extends Chunk317770.Z {
     if (n !== d.Yn.DEFAULT || null == r) return;
     let l = null != a.ZP.getVisibleGame(),
       p = c.Z.isVisible(),
-      h = s.Z.getWindowVisible(u.KJ3.CHANNEL_CALL_POPOUT),
-      m = o.Z.isLocalVideoDisabled(t, n),
+      h = o.Z.getWindowVisible(u.KJ3.CHANNEL_CALL_POPOUT),
+      m = s.Z.isLocalVideoDisabled(t, n),
       b = g.has(t);
     !l || p || h || m || b || (f.add(t), i.Z.setDisableLocalVideo(t, u.ZUi.DISABLED, n, false))
   }
@@ -69,8 +69,8 @@ class b extends Chunk317770.Z {
       } = e;
       t !== h && (m(), h = t)
     }), p(this, "handlePopoutChange", () => {
-      s.Z.getWindowVisible(u.KJ3.CHANNEL_CALL_POPOUT) && m()
+      o.Z.getWindowVisible(u.KJ3.CHANNEL_CALL_POPOUT) && m()
     })
   }
 }
-let E = new b
+let _ = new b

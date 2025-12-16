@@ -85,19 +85,19 @@ function P(e) {
     let {
       currentActivities: t
     } = e, n = i.useContext(v.AnalyticsContext);
-    return (0, l.Wu)([f.ZP, _.Z, g.Z, O.Z, E.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
+    return (0, l.Wu)([f.ZP, E.Z, g.Z, O.Z, _.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
       let {
         activity: t,
         game: r
-      } = e, i = _.Z.getActiveLibraryApplication(r.id);
+      } = e, i = E.Z.getActiveLibraryApplication(r.id);
       return N(T({}, e), {
         libraryApplication: i,
         canJoin: null != t && (0, u.Z)(t, C.xjy.JOIN) && t.type === C.IIU.PLAYING,
         canPlay: (0, y.t)({
-          LibraryApplicationStore: _.Z,
+          LibraryApplicationStore: E.Z,
           LaunchableGameStore: g.Z,
           DispatchApplicationStore: O.Z,
-          ConnectedAppsStore: E.Z,
+          ConnectedAppsStore: _.Z,
           applicationId: r.id,
           branchId: null != i ? i.branchId : null
         }),
@@ -120,13 +120,13 @@ function P(e) {
       if (!n || null == i) return null;
       async function c() {
         if (null == i) return;
-        let e = await s.Z.sendActivityInviteUser({
+        let e = await o.Z.sendActivityInviteUser({
           type: C.mFx.JOIN_REQUEST,
           userId: l.id,
           activity: i,
           location: C.Sbl.USER_ACTIVITY_ACTIONS
         });
-        null != e && o.default.selectPrivateChannel(e.id)
+        null != e && s.default.selectPrivateChannel(e.id)
       }
       return (0, r.jsx)(a.sNh, {
         id: "join-".concat(i.session_id),
@@ -140,12 +140,12 @@ function P(e) {
         activity: n,
         game: i,
         libraryApplication: l,
-        location: s,
-        canPlay: o,
+        location: o,
+        canPlay: s,
         isRunning: c,
         isLaunching: u
       } = e;
-      if (!o || null == n) return null;
+      if (!s || null == n) return null;
       let d = c ? S.intl.formatToPlainString(S.t["gBme/4"], {
         name: i.name
       }) : u ? S.intl.formatToPlainString(S.t.WtSQwG, {
@@ -156,7 +156,7 @@ function P(e) {
         action: function() {
           (0, I.playApplication)(i.id, l, {
             analyticsParams: {
-              location: N(T({}, s), {
+              location: N(T({}, o), {
                 object: C.qAy.LIST_ITEM
               })
             }

@@ -44,7 +44,7 @@ function x() {
 let A = function(e) {
   let {
     initialSection: t
-  } = e, n = (0, s.TH)(), l = (0, s.k6)();
+  } = e, n = (0, o.TH)(), l = (0, o.k6)();
   i.useEffect(() => {
     "true" === new URLSearchParams(n.search).get("confirm-age") && u.Z.dispatch({
       type: "AGE_GATE_MODAL_OPEN",
@@ -53,15 +53,15 @@ let A = function(e) {
       l.replace(T.Z5c.ME)
     })
   }, [l, n]), i.useEffect(() => {
-    d.Y(T.Z5c.FRIENDS), (0, _.e)("friends")
+    d.Y(T.Z5c.FRIENDS), (0, E.e)("friends")
   }, []);
-  let b = (0, o.e7)([O.Z], () => O.Z.theme),
+  let b = (0, s.e7)([O.Z], () => O.Z.theme),
     A = (0, I.If)(),
     {
       section: Z,
       rows: w
-    } = (0, o.cj)([v.ZP], () => v.ZP.getState()),
-    L = (0, o.e7)([h.Z], () => h.Z.getSuggestionCount()),
+    } = (0, s.cj)([v.ZP], () => v.ZP.getState()),
+    L = (0, s.e7)([h.Z], () => h.Z.getSuggestionCount()),
     R = i.useMemo(() => w.getRelationshipCounts(), [w]);
   i.useEffect(() => {
     null != t && p.Z.setInitialSection(t), 0 === R[T.OGo.FRIEND] && 0 === R[T.OGo.PENDING_INCOMING] && 0 === R[T.OGo.PENDING_OUTGOING] && 0 === R[T.OGo.BLOCKED] && p.Z.transitionToSection(T.pJs.ADD_FRIEND)
@@ -121,12 +121,12 @@ let A = function(e) {
     G = y.o.useConfig({
       location: "people page"
     }).friendsTab,
-    B = null,
-    H = G ? null : (0, r.jsx)("div", {
+    H = null,
+    B = G ? null : (0, r.jsx)("div", {
       className: P.nowPlayingColumn,
-      children: (0, r.jsx)(E.Z, {})
+      children: (0, r.jsx)(_.Z, {})
     });
-  return B = Z === T.pJs.ADD_FRIEND ? (0, r.jsx)(C.Z, {}) : (0, r.jsx)(S.Z, {
+  return H = Z === T.pJs.ADD_FRIEND ? (0, r.jsx)(C.Z, {}) : (0, r.jsx)(S.Z, {
     titleId: k
   }), (0, r.jsxs)("main", {
     className: P.container,
@@ -167,8 +167,8 @@ let A = function(e) {
         id: Z,
         className: P.peopleColumn,
         "aria-labelledby": k,
-        children: B
-      }), H]
+        children: H
+      }), B]
     })]
   })
 }

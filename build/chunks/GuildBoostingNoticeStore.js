@@ -12,7 +12,7 @@ class c extends(i = Chunk442837.ZP.Store) {
     this.waitFor(Chunk496675.Z), this.syncWith([Chunk496675.Z], Chunk981631.dG4)
   }
   channelNoticePredicate(e, t) {
-    return Date.now() - t >= o.Hqc && s.Z.can(o.Plq.MANAGE_GUILD, e)
+    return Date.now() - t >= s.Hqc && o.Z.can(s.Plq.MANAGE_GUILD, e)
   }
 }(r = "displayName") in c ? Object.defineProperty(c, r, {
   value: "GuildBoostingNoticeStore",

@@ -30,7 +30,7 @@ let u = {
           url: c.ANM.GUILD_DISCOVERY_SEARCH,
           query: {
             query: e,
-            category_id: n === o.Hk ? null : n,
+            category_id: n === s.Hk ? null : n,
             offset: d,
             limit: p,
             language_code: u,
@@ -39,7 +39,7 @@ let u = {
           oldFormErrors: true,
           rejectWithError: false
         }),
-        i = t.body.guilds.map(s.Iv),
+        i = t.body.guilds.map(o.Iv),
         a = t.body.total_count;
       if (f) {
         var g;

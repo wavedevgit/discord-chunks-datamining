@@ -11,7 +11,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.MkvEgl),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["yR/d2T"]),
+    useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.RiIiPw),
     useValue: () => (0, Chunk442837.e7)([Chunk246946.Z], () => {
       let {
         hidePersonalInformation: t

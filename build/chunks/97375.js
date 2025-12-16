@@ -25,7 +25,7 @@ let h = {
           socket: n,
           args: {
             user_id: a,
-            content: s
+            content: o
           }
         } = e,
         p = n.application.id;
@@ -58,11 +58,11 @@ let h = {
           }, "Unsupported activity location")
       }
       try {
-        await (0, o.pu)({
+        await (0, s.pu)({
           channelId: t.id,
           applicationId: p,
           userId: a,
-          prefixedContent: s,
+          prefixedContent: o,
           location: "RPC_ACTIVITY_INVITE_USER",
           inviteAnalyticsMetadata: {
             source: f.t4x.ACTIVITY_INVITE

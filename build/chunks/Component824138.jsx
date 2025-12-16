@@ -119,20 +119,20 @@ class I extends Chunk473749.PureComponent {
         host: l,
         onUserContextMenu: u
       } = this.props;
-      return n = (null == l ? true : l.id) === e.id ? E.intl.string(E.t["N9bqD+"]) : E.intl.string(E.t.Z2Y4c9), (0, r.jsx)(d.Z, {
+      return n = (null == l ? true : l.id) === e.id ? _.intl.string(_.t["N9bqD+"]) : _.intl.string(_.t.Z2Y4c9), (0, r.jsx)(d.Z, {
         targetElementRef: this.partyMemberAvatarRef,
         user: e,
         newAnalyticsLocations: [c.Z.AVATAR],
         position: "top",
         align: "center",
         clickTrap: true,
-        children: l => (0, r.jsx)(s.u, {
+        children: l => (0, r.jsx)(o.u, {
           text: n,
-          children: (0, i.createElement)(o.qEK, y(v({}, l), {
+          children: (0, i.createElement)(s.qEK, y(v({}, l), {
             key: e.id,
             src: e.getAvatarURL(true, 24),
-            size: o.EFr.SIZE_24,
-            className: a()(_.avatar, t),
+            size: s.EFr.SIZE_24,
+            className: a()(E.avatar, t),
             "aria-label": e.username,
             onContextMenu: t => void(null != e && (null == u || u(t, e))),
             avatarContentRef: this.partyMemberAvatarRef
@@ -143,14 +143,14 @@ class I extends Chunk473749.PureComponent {
       let {
         renderOverflowPopout: i
       } = this.props;
-      return (0, r.jsx)(o.yRy, {
+      return (0, r.jsx)(s.yRy, {
         renderPopout: i,
         targetElementRef: this.partyMemberOverflowRef,
-        children: n => (0, r.jsx)(s.u, {
-          text: E.intl.string(E.t.Zf4NPe),
+        children: n => (0, r.jsx)(o.u, {
+          text: _.intl.string(_.t.Zf4NPe),
           children: (0, r.jsx)("div", y(v({}, n), {
             ref: this.partyMemberOverflowRef,
-            className: a()(_.overflow, t),
+            className: a()(E.overflow, t),
             children: e
           }))
         })

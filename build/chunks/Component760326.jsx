@@ -19,14 +19,14 @@ let f = e => {
     shortcut: l.$.binds["0"],
     keyClassName: d.key
   });
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(o.Z, {
     guild: e.guild,
     onDismissed: () => e.markAsDismissed(c.L.UNKNOWN),
     onClick: () => (0, a.$Z)("CHANNEL_NOTICE"),
     message: u.intl.string(u.t.Qhk8cs),
     cta: t,
-    trackingSource: o.PsQ.QUICK_SWITCHER_NOTICE,
-    type: o.vID.QUICKSWITCHER,
+    trackingSource: s.PsQ.QUICK_SWITCHER_NOTICE,
+    type: s.vID.QUICKSWITCHER,
     image: p,
     imageMarginX: 50
   })

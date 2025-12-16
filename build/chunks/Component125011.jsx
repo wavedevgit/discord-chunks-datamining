@@ -15,23 +15,23 @@ let c = e => {
     className: t,
     isAnimated: n = false,
     questName: i
-  } = e, c = n ? o.Z : o.Z + "?format=webp";
+  } = e, c = n ? s.Z : s.Z + "?format=webp";
   return (0, r.jsx)("div", {
-    className: l()(s.container, t),
+    className: l()(o.container, t),
     children: n ? (0, r.jsx)(a.Z, {
       autoPlay: true,
       loop: true,
       muted: true,
       preload: "auto",
       playsInline: true,
-      className: s.asset,
+      className: o.asset,
       controls: false,
       children: (0, r.jsx)("source", {
         src: c,
         type: "video/webm"
       })
     }) : (0, r.jsx)("img", {
-      className: s.asset,
+      className: o.asset,
       src: c,
       alt: i
     })

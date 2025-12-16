@@ -73,7 +73,7 @@ let g = [{
     let {
       state: t
     } = l.ZP.PersistedStore.migrateAndReadStoreState("EmojiStore", [() => ({
-      usageHistory: s.K.get("EmojiUsageHistory") || {}
+      usageHistory: o.K.get("EmojiUsageHistory") || {}
     })]);
     if (null == t) returnfalse;
     let n = false;
@@ -100,8 +100,8 @@ let g = [{
         e.favoriteGifs.gifs[i].order = l.order;
         continue
       }
-      let s = a.JM.toBinary(l).length + i.length + 7;
-      n + s > u.vY || (n += s, e.favoriteGifs.gifs[i] = l)
+      let o = a.JM.toBinary(l).length + i.length + 7;
+      n + o > u.vY || (n += o, e.favoriteGifs.gifs[i] = l)
     }
     for (n = a.wK.toBinary(e.favoriteGifs).length; n > u.vY;) {
       let t = 0;
@@ -133,7 +133,7 @@ let g = [{
     } = l.ZP.PersistedStore.migrateAndReadStoreState("SoundboardFavoriteStore", []);
     if (null == t) returnfalse;
     let n = false;
-    return i().size(t.favoriteSounds) > 0 && (e.favoriteSoundboardSounds = a.h_.create(), o.default.keys(t.favoriteSounds).forEach(n => {
+    return i().size(t.favoriteSounds) > 0 && (e.favoriteSoundboardSounds = a.h_.create(), s.default.keys(t.favoriteSounds).forEach(n => {
       new Set(t.favoriteSounds[n]).forEach(t => {
         var n;
         null == (n = e.favoriteSoundboardSounds) || n.soundIds.push(t)
@@ -146,7 +146,7 @@ let g = [{
 }, {
   version: 9,
   run(e) {
-    let t = s.K.get(p);
+    let t = o.K.get(p);
     if (null == t) returnfalse;
     for (let e in t) d.Xyh.test(e) || delete t[e];
     return e.guildAndChannelFrecency = a.lG.create(), e.guildAndChannelFrecency.guildAndChannels = (0, c.tU)(t, 100), true

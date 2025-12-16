@@ -56,7 +56,7 @@ function p(e) {
         id: "staff-help-center",
         label: "Go to Help Center",
         icon: l.rgF,
-        action: () => (0, a.Z)(s.w)
+        action: () => (0, a.Z)(o.w)
       })]
     })
   })
@@ -66,9 +66,9 @@ function f(e) {
   let {
     className: t,
     focusSectionProps: n
-  } = e, [a, s] = i.useState(false), [f, g] = i.useState(0), h = i.useRef(null), m = e => {
+  } = e, [a, o] = i.useState(false), [f, g] = i.useState(0), h = i.useRef(null), m = e => {
     clearTimeout(f), g(setTimeout(() => {
-      s(e)
+      o(e)
     }, 100))
   };
   return (0, r.jsx)("div", {
@@ -81,16 +81,16 @@ function f(e) {
       position: "bottom",
       align: "right",
       autoInvert: false,
-      onRequestOpen: () => s(true),
-      onRequestClose: () => s(false),
+      onRequestOpen: () => o(true),
+      onRequestClose: () => o(false),
       renderPopout: () => (0, r.jsx)(p, {
-        onClose: () => s(false)
+        onClose: () => o(false)
       }),
       children: (e, i) => {
         let {
           isShown: a
         } = i;
-        return (0, r.jsx)(o.JO, u({
+        return (0, r.jsx)(s.JO, u({
           ref: h,
           onClick: d,
           icon: l.nnZ,

@@ -1,4 +1,4 @@
-/** Chunk was on 29725 **/
+/** Chunk was on 6043 **/
 /** chunk id: 74650, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => f
@@ -26,10 +26,10 @@ function f(e) {
     className: p.popup,
     children: (0, a.jsxs)("div", {
       className: p.content,
-      children: [(0, a.jsx)(i.P3F, {
+      children: [(0, a.jsx)(l.P3F, {
         className: p.closeIcon,
         onClick: () => t(d.L.USER_DISMISS),
-        children: (0, a.jsx)(i.Dio, {
+        children: (0, a.jsx)(l.Dio, {
           size: "xs"
         })
       }), (0, a.jsx)("img", {
@@ -37,17 +37,17 @@ function f(e) {
         alt: "",
         className: p.asset
       }), (0, a.jsxs)("div", {
-        children: [(0, a.jsx)(i.Heading, {
+        children: [(0, a.jsx)(l.Heading, {
           variant: "heading-md/semibold",
           color: "text-strong",
           className: p.title,
           children: m.intl.string(m.t.PRXV49)
-        }), (0, a.jsx)(i.Text, {
+        }), (0, a.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-subtle",
           children: m.intl.string(m.t["RSHtF+"])
         })]
-      }), x ? (0, a.jsx)(i.Button, {
+      }), x ? (0, a.jsx)(l.Button, {
         text: m.intl.string(m.t.LhcHi5),
         fullWidth: true,
         onClick: () => {
@@ -59,8 +59,8 @@ function f(e) {
         },
         showGradient: true,
         subscriptionTier: u.Si.TIER_2,
-        size: l.zx.Sizes.LARGE,
-        color: l.zx.Colors.CUSTOM,
+        size: i.zx.Sizes.LARGE,
+        color: i.zx.Colors.CUSTOM,
         textOptions: {
           textOverride: m.intl.string(m.t.pj0XBN)
         },

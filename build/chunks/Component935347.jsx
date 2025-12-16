@@ -8,7 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk481060 = require("./481060.js"),
@@ -55,8 +55,8 @@ class P extends Chunk473749.PureComponent {
     } = this.state, {
       connected: l,
       soundpack: a
-    } = this.props, s = l && n && !r && !i;
-    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || s ? (l && (0, E.t)(), l && null != this.videoRef && u.K.get(S.wli) && this._connectedSound.play(), this.setState({
+    } = this.props, o = l && n && !r && !i;
+    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || o ? (l && (0, _.t)(), l && null != this.videoRef && u.K.get(S.wli) && this._connectedSound.play(), this.setState({
       problems: false,
       hide: l
     })) : t.hide !== r ? (r ? this.clearProblemsTimeout() : this.setProblemsTimeout(), this.setState({
@@ -200,10 +200,10 @@ class P extends Chunk473749.PureComponent {
           className: N.keybind
         }, t)
       })];
-      return _.default.locale.startsWith("en-") && e.push(T.intl.string(T.t.dQ9Wqk)), e[o().random(e.length - 1)]
+      return E.default.locale.startsWith("en-") && e.push(T.intl.string(T.t.dQ9Wqk)), e[s().random(e.length - 1)]
     }()), j(this, "_eventLoadingText", function() {
       let e = h.Z.getLoadingTips();
-      if (null != e && e.length > 0) return e[o().random(e.length - 1)]
+      if (null != e && e.length > 0) return e[s().random(e.length - 1)]
     }()), j(this, "handleReady", () => {
       this.setState({
         ready: true

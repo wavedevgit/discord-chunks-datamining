@@ -8,7 +8,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk314897 = require("./314897.js"),
   Chunk804739 = require("./804739.js");
 
-function s() {
+function o() {
   if (!(0, Chunk804739.Q)()) return;
   let e = Chunk314897.default.getToken(),
     t = Chunk314897.default.getId();
@@ -16,11 +16,11 @@ function s() {
   Chunk51025.S1(module, exports)
 }
 
-function o() {
+function s() {
   Chunk51025.ob()
 }
 let c = {
   init() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", s), Chunk570140.Z.subscribe("LOGOUT", o)
+    Chunk570140.Z.subscribe("CONNECTION_OPEN", o), Chunk570140.Z.subscribe("LOGOUT", s)
   }
 }

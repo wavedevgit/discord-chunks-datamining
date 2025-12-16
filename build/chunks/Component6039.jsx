@@ -34,20 +34,20 @@ function S(e) {
   } = e, a = i.useMemo(() => (null == t ? true : t.splash) != null ? p.ZP.getGuildSplashURL({
     id: null == t ? true : t.id,
     splash: null == t ? true : t.splash
-  }) : null, [null == t ? true : t.splash, null == t ? true : t.id]), s = (0, c.N)(a);
+  }) : null, [null == t ? true : t.splash, null == t ? true : t.id]), o = (0, c.N)(a);
   return null == a ? (0, r.jsx)("div", {
     className: C.defaultGradient
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(o.Z, {
+    children: [(0, r.jsx)(s.Z, {
       className: C.splash,
       src: a,
       imageClassName: C.cover,
       width: n,
       height: l
-    }), null != s && (0, r.jsx)("div", {
+    }), null != o && (0, r.jsx)("div", {
       className: C.splashGradient,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, f.aD)(s, .16), " 0%, ").concat((0, f.aD)(s, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, f.aD)(o, .16), " 0%, ").concat((0, f.aD)(o, 1), " 100%)")
       }
     }), (0, r.jsx)("div", {
       className: C.splashGradient
@@ -59,9 +59,9 @@ let T = e => {
     guildId: t
   } = e, {
     ref: n,
-    width: o,
+    width: s,
     height: c
-  } = (0, s.ZP)(), [p, f] = i.useState(y.hO.INITIAL), T = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), N = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
+  } = (0, o.ZP)(), [p, f] = i.useState(y.hO.INITIAL), T = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), N = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
     hasFetchedRequestToJoinGuilds: j,
     guildPreviewDisabled: P
   } = (0, l.cj)([b.Z], () => ({
@@ -101,7 +101,7 @@ let T = e => {
     children: [(0, r.jsx)(S, {
       guild: P,
       height: c,
-      width: o
+      width: s
     }), (0, r.jsx)("div", {
       className: C.contentWrapper,
       children: (() => {
@@ -113,7 +113,7 @@ let T = e => {
               guild: P
             });
           case m.wB.REJECTED:
-            return (0, r.jsx)(_.Z, {
+            return (0, r.jsx)(E.Z, {
               reapplyText: I.intl.string(I.t.I1LYVk),
               onReapply: Z,
               confirmText: I.intl.string(I.t.g9tK0o),
@@ -122,7 +122,7 @@ let T = e => {
               guild: P
             });
           default:
-            return (0, r.jsx)(E.s, {
+            return (0, r.jsx)(_.s, {
               onDiscardApplication: L,
               onContinueApplication: () => (0, h.hk)(t),
               guild: P

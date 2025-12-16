@@ -22,10 +22,10 @@ let g = e => {
     onClick: h
   } = e, {
     analyticsLocations: m
-  } = (0, c.ZP)(o.Z.HOME_PAGE_SHOP_TAB), b = (0, s.ZP)(), E = (0, a.wj)(b) ? t.assetDark : t.assetLight, _ = i.useRef(g);
-  return _.current = g, i.useEffect(() => () => {
+  } = (0, c.ZP)(s.Z.HOME_PAGE_SHOP_TAB), b = (0, o.ZP)(), _ = (0, a.wj)(b) ? t.assetDark : t.assetLight, E = i.useRef(g);
+  return E.current = g, i.useEffect(() => () => {
     var e;
-    null == (e = _.current) || e.call(_)
+    null == (e = E.current) || e.call(E)
   }, []), (0, r.jsx)(l.J2, {
     targetElementRef: n,
     position: "right",
@@ -38,7 +38,7 @@ let g = e => {
     body: t.body(),
     graphic: {
       type: "image",
-      src: E
+      src: _
     },
     actions: [{
       text: f.intl.string(f.t.fYfGgK),
@@ -46,7 +46,7 @@ let g = e => {
       onClick: () => {
         null == h || h(), (0, u.uL)(p.Z5c.COLLECTIBLES_SHOP), (0, d.mK)({
           analyticsLocations: m,
-          analyticsSource: o.Z.HOME_PAGE_SHOP_TAB
+          analyticsSource: s.Z.HOME_PAGE_SHOP_TAB
         })
       }
     }],

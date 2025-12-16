@@ -88,7 +88,7 @@ let M = {
       if (null == S.default.getCurrentUser()) return;
       let {
         guildTemplate: i
-      } = await E.Z.resolveGuildTemplate(t);
+      } = await _.Z.resolveGuildTemplate(t);
       if (null == i) throw new x.Z({
         errorCode: w.lTL.INVALID_GUILD_TEMPLATE
       }, "Invalid guild template id: ".concat(t));
@@ -126,7 +126,7 @@ let M = {
         }
       } = e;
       return new Promise((e, i) => {
-        s.Z.wait(() => {
+        o.Z.wait(() => {
           p.Z.resolveGiftCode(t, true, true).then(i => {
             let {
               giftCode: l
@@ -228,8 +228,8 @@ let M = {
         case Z.jE.OAUTH2:
           let r = new URL(w.Z5c.OAUTH2_AUTHORIZE, window.location.origin);
           r.search = n.search;
-          let l = (0, _.getOAuth2AuthorizeProps)(r.toString());
-          if (null != l) return (0, _.openOAuth2ModalWithCreateGuildModal)(l), true;
+          let l = (0, E.getOAuth2AuthorizeProps)(r.toString());
+          if (null != l) return (0, E.openOAuth2ModalWithCreateGuildModal)(l), true;
           returnfalse;
         case Z.jE.ONE_TIME_LOGIN:
           if (null != n) return (0, O.Y)({
@@ -261,15 +261,15 @@ let M = {
                   attempt_id: n
                 });
                 let a = await b.ZP.fetchApplication(e),
-                  s = null == a || null == (r = a.bot) ? true : r.id;
-                if (null == s) return void T.default.track(w.rMx.ACTIVITY_DEEP_LINK_RECEIVED, {
+                  o = null == a || null == (r = a.bot) ? true : r.id;
+                if (null == o) return void T.default.track(w.rMx.ACTIVITY_DEEP_LINK_RECEIVED, {
                   application_id: e,
                   success: false,
                   failure_reason: "no_bot_user",
                   attempt_id: n
                 });
-                let o = await u.Z.openPrivateChannel({
-                    recipientIds: s
+                let s = await u.Z.openPrivateChannel({
+                    recipientIds: o
                   }),
                   c = new URL(t),
                   d = null != (i = c.searchParams.get("referrer_id")) ? i : true,
@@ -278,7 +278,7 @@ let M = {
                   } = await (0, h.ur)(e, c.searchParams.get("link_id"), c.searchParams.get("custom_id"));
                 await (0, g.Z)({
                   targetApplicationId: e,
-                  channelId: o,
+                  channelId: s,
                   analyticsLocations: [m.Z.DEEPLINK],
                   customId: p,
                   referrerId: d
@@ -354,7 +354,7 @@ let M = {
           query: r
         }
       } = e;
-      return (0, o.rt)({
+      return (0, s.rt)({
         paymentSourceType: w.HeQ.PAYPAL,
         state: t,
         path: n,
@@ -373,7 +373,7 @@ let M = {
           payment_source_type: i
         }
       } = e;
-      return (0, o.rt)({
+      return (0, s.rt)({
         paymentSourceType: i,
         state: t,
         path: n,

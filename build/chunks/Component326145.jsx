@@ -35,12 +35,12 @@ function v(e) {
       guildId: t,
       returnChannelId: n
     }))
-  }, [t, n]), C = (0, s.e7)([f.Z], () => f.Z.getGuild(t)), S = i.useMemo(() => null == C ? null : g.ZP.getGuildSplashURL({
+  }, [t, n]), C = (0, o.e7)([f.Z], () => f.Z.getGuild(t)), S = i.useMemo(() => null == C ? null : g.ZP.getGuildSplashURL({
     id: C.id,
     splash: C.splash
   }), [C]), T = (0, d.N)(S);
   return (0, r.jsxs)("div", {
-    className: a()(_.outerWrapping, O.main, {
+    className: a()(E.outerWrapping, O.main, {
       [O.fullBorderWithGradient]: null == S
     }),
     ref: l,
@@ -58,22 +58,22 @@ function v(e) {
     }), null != S && (0, r.jsx)("div", {
       className: O.gradient
     }), (0, r.jsxs)("div", {
-      className: a()(_.explainerContainer, _.transparentBackground),
+      className: a()(E.explainerContainer, E.transparentBackground),
       children: [(0, r.jsxs)("div", {
-        className: _.header,
-        children: [(0, r.jsx)(o.Heading, {
+        className: E.header,
+        children: [(0, r.jsx)(s.Heading, {
           variant: "heading-xxl/normal",
           color: "always-white",
-          children: E.intl.string(E.t.CCmhpF)
-        }), (0, r.jsx)(o.Text, {
+          children: _.intl.string(_.t.CCmhpF)
+        }), (0, r.jsx)(s.Text, {
           variant: "text-lg/normal",
           color: "always-white",
-          children: E.intl.string(E.t.gRAHcZ)
+          children: _.intl.string(_.t.gRAHcZ)
         })]
-      }), (0, r.jsx)(o.Button, {
+      }), (0, r.jsx)(s.Button, {
         variant: "overlay-primary",
         size: "md",
-        text: E.intl.string(E.t.VVFjAC),
+        text: _.intl.string(_.t.VVFjAC),
         onClick: I
       })]
     })]

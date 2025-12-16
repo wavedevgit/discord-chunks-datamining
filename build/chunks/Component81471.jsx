@@ -32,10 +32,10 @@ let y = Chunk473749.memo(function(e) {
   } = (0, m.a)(t), {
     isBlocked: I,
     isIgnored: C
-  } = (0, s.cj)([h.Z], () => ({
+  } = (0, o.cj)([h.Z], () => ({
     isBlocked: null != y && h.Z.isBlockedForMessage(y),
     isIgnored: null != y && h.Z.isIgnoredForMessage(y)
-  }), [y]), S = (0, s.e7)([g.Z], () => g.Z.can(b.Plq.MANAGE_MESSAGES, t)), T = f.cC.useSetting(), {
+  }), [y]), S = (0, o.e7)([g.Z], () => g.Z.can(b.Plq.MANAGE_MESSAGES, t)), T = f.cC.useSetting(), {
     content: N
   } = i.useMemo(() => (null == y ? true : y.content) != null && "" !== y.content ? (0, u.ZP)(y, {
     formatInline: true,
@@ -43,24 +43,24 @@ let y = Chunk473749.memo(function(e) {
   }) : {
     content: null
   }, [y]), j = null;
-  if (l) j = (0, r.jsx)(o.Text, {
+  if (l) j = (0, r.jsx)(s.Text, {
     className: O.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: _.intl.string(_.t.BZHld2)
+    children: E.intl.string(E.t.BZHld2)
   });
   else if (n)
-    if (null != y && I) j = (0, r.jsx)(o.Text, {
+    if (null != y && I) j = (0, r.jsx)(s.Text, {
       className: O.messageReplacement,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: _.intl.string(_.t["WPe+xL"])
+      children: E.intl.string(E.t["WPe+xL"])
     });
-    else if (null != y && C) j = (0, r.jsx)(o.Text, {
+    else if (null != y && C) j = (0, r.jsx)(s.Text, {
     className: O.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: _.intl.string(_.t.uxrh1O)
+    children: E.intl.string(E.t.uxrh1O)
   });
   else if (null != y) {
     let {
@@ -69,30 +69,30 @@ let y = Chunk473749.memo(function(e) {
     } = (0, d.f)(y, N, I, C, a()(O.messageContent, v.inlineFormat), {
       leadingIconClass: O.messageContentIcon,
       trailingIconClass: O.messageContentIcon,
-      iconSize: E.WW
+      iconSize: _.WW
     });
-    j = null != t ? (0, r.jsx)(o.Text, {
+    j = null != t ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
       className: O.messageContent,
       children: t
-    }) : (0, r.jsx)(o.Text, {
+    }) : (0, r.jsx)(s.Text, {
       tag: "span",
       variant: "text-sm/normal",
       color: "text-muted",
       className: O.messageReplacement,
       children: e
     })
-  } else j = (0, r.jsx)(o.Text, {
+  } else j = (0, r.jsx)(s.Text, {
     className: O.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: _.intl.string(_.t["0KfDxM"])
+    children: E.intl.string(E.t["0KfDxM"])
   });
   else j = null;
   return (0, r.jsx)(p.aQ.Provider, {
     value: (0, c.Z)(T, S),
-    children: (0, r.jsx)(o.Rny, {
+    children: (0, r.jsx)(s.Rny, {
       className: O.messageFocusBlock,
       children: j
     })

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 46832, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => E
 }), require("./388685.js"), require("./539854.js");
 var Chunk836560 = require("./836560.js"),
   Chunk317381 = require("./317381.js"),
@@ -26,10 +26,10 @@ function g(e, t, n) {
 let h = 10 * Chunk70956.Z.Millis.SECOND,
   m = new Map,
   b = new Set,
-  E = (e, t, n) => {
+  _ = (e, t, n) => {
     n([u.Z.CLOSE, t], e)
   };
-class _ extends Chunk836560.EventEmitter {
+class E extends Chunk836560.EventEmitter {
   routeEvent(e, t, n, r) {
     if (!Array.isArray(n)) return void console.warn("[PostMessageTransport] Protocol error: event data should be an Array!");
     let [i, l] = n;
@@ -55,7 +55,7 @@ class _ extends Chunk836560.EventEmitter {
         }, "Invalid opcode")
     }
   }
-  constructor(e, t, r, o) {
+  constructor(e, t, r, s) {
     var u;
     super(), u = this, g(this, "validateSocketClient", true), g(this, "logger", true), g(this, "createPostMessageProxySocket", true), g(this, "onFrameHandled", true), g(this, "handshakeFailureTimeoutId", true), g(this, "disconnectSocket", function(e, t) {
       var n, r;
@@ -104,7 +104,7 @@ class _ extends Chunk836560.EventEmitter {
         null != r ? this.disconnectSocket(r, {
           code: e.code,
           message: e.message
-        }, true) : E(t, {
+        }, true) : _(t, {
           code: e.code,
           message: e.message
         }, n)
@@ -140,34 +140,34 @@ class _ extends Chunk836560.EventEmitter {
           closeCode: f.$VG.CLOSE_UNSUPPORTED
         }, e.message)
       }
-      let s = t.frame_id;
-      if (!b.has(s)) throw this.logger.error("Unrecognized frame ID ".concat(s)), new c.Z({
+      let o = t.frame_id;
+      if (!b.has(o)) throw this.logger.error("Unrecognized frame ID ".concat(o)), new c.Z({
         closeCode: f.$VG.CLOSE_UNSUPPORTED
-      }, "Unrecognized frame ID ".concat(s));
+      }, "Unrecognized frame ID ".concat(o));
       null != t.sdk_version && a.default.track(f.rMx.ACTIVITY_HANDSHAKE, {
         application_id: t.client_id,
         sdk_version: t.sdk_version
       });
       try {
-        var o;
+        var s;
         i = this.createPostMessageProxySocket({
           origin: e,
           postMessageToRPCClient: r,
-          frameId: s,
+          frameId: o,
           version: Number(t.v),
           logger: this.logger,
-          postClose: E,
-          encoding: null != (o = t.encoding) ? o : "json"
+          postClose: _,
+          encoding: null != (s = t.encoding) ? s : "json"
         })
       } catch (e) {
         throw this.logger.error("Error opening window socket ".concat(e)), e
       }
       this.logger.info("Socket Opened: ".concat(i.id));
       try {
-        if (await this.validateSocketClient(i, e, t.client_id), !b.has(s)) throw this.logger.error("Frame ID ".concat(s, " no longer exists")), new c.Z({
+        if (await this.validateSocketClient(i, e, t.client_id), !b.has(o)) throw this.logger.error("Frame ID ".concat(o, " no longer exists")), new c.Z({
           closeCode: f.$VG.CLOSE_UNSUPPORTED
-        }, "Unrecognized frame ID ".concat(s));
-        m.set(e, i), b.delete(s), i.authorization.scopes.push(p.b_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
+        }, "Unrecognized frame ID ".concat(o));
+        m.set(e, i), b.delete(o), i.authorization.scopes.push(p.b_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
       } catch (e) {
         throw this.logger.info("Socket Closed: ".concat(i.id, ", ").concat(e.message)), e
       }
@@ -184,6 +184,6 @@ class _ extends Chunk836560.EventEmitter {
         }, e.message)
       }
       this.disconnectSocket(e, t)
-    }), s.S.subscribe(f.CkL.IFRAME_MOUNT, this.handleIFrameMount), s.S.subscribe(f.CkL.IFRAME_UNMOUNT, this.handleIFrameUnmount), this.validateSocketClient = e, this.logger = t, this.createPostMessageProxySocket = r, this.onFrameHandled = o
+    }), o.S.subscribe(f.CkL.IFRAME_MOUNT, this.handleIFrameMount), o.S.subscribe(f.CkL.IFRAME_UNMOUNT, this.handleIFrameUnmount), this.validateSocketClient = e, this.logger = t, this.createPostMessageProxySocket = r, this.onFrameHandled = s
   }
 }

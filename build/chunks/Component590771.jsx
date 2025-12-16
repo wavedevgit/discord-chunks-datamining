@@ -20,7 +20,7 @@ function g(e) {
     onScroll: t,
     onGuildCardSeen: n,
     onGuildCardClick: a
-  } = e, s = (0, l.e7)([c.Z], () => {
+  } = e, o = (0, l.e7)([c.Z], () => {
     var e;
     return null != (e = c.Z.getGuildIds({
       categoryId: f.Hk
@@ -32,10 +32,10 @@ function g(e) {
     })) || e
   });
   return i.useEffect(() => {
-    o.Z.fetchFeaturedGuilds()
+    s.Z.fetchFeaturedGuilds()
   }, []), (0, r.jsx)(d.Z, {
     tab: f.vf.FEATURED,
-    guildIds: s,
+    guildIds: o,
     loading: u,
     onScroll: t,
     onGuildCardSeen: n,
@@ -48,7 +48,7 @@ function h(e) {
     tab: t,
     onScroll: n,
     onGuildCardSeen: a,
-    onGuildCardClick: s
+    onGuildCardClick: o
   } = e, p = (0, u.lg)(t), g = (0, l.e7)([c.Z], () => {
     var e;
     return null != (e = c.Z.getGuildIds({
@@ -61,7 +61,7 @@ function h(e) {
     })) || e
   });
   return i.useEffect(() => {
-    o.Z.fetchCategoryFeaturedGuilds({
+    s.Z.fetchCategoryFeaturedGuilds({
       categoryId: p
     })
   }, [p]), (0, r.jsx)(d.Z, {
@@ -70,7 +70,7 @@ function h(e) {
     loading: h,
     onScroll: n,
     onGuildCardSeen: a,
-    onGuildCardClick: s
+    onGuildCardClick: o
   })
 }
 
@@ -79,7 +79,7 @@ function m(e) {
     selectedTab: t,
     onScroll: n,
     onGuildCardSeen: l,
-    onGuildCardClick: o
+    onGuildCardClick: s
   } = e;
   switch (i.useEffect(() => {
       let e = (0, u.lg)(t);
@@ -91,7 +91,7 @@ function m(e) {
       return (0, r.jsx)(g, {
         tab: t,
         onScroll: n,
-        onGuildCardClick: o,
+        onGuildCardClick: s,
         onGuildCardSeen: l
       });
     case f.vf.GAMING:
@@ -102,7 +102,7 @@ function m(e) {
       return (0, r.jsx)(h, {
         tab: t,
         onScroll: n,
-        onGuildCardClick: o,
+        onGuildCardClick: s,
         onGuildCardSeen: l
       }, t);
     case f.vf.HUBS:
@@ -110,6 +110,6 @@ function m(e) {
         onScroll: n
       });
     default:
-      (0, s.vE)(t)
+      (0, o.vE)(t)
   }
 }

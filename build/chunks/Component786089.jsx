@@ -32,13 +32,13 @@ let j = (0, Chunk473749.memo)(function(e) {
   var t, n, l, j, P, x;
   let {
     quest: A
-  } = e, [Z, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, M] = (0, i.useState)(false), k = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
-    ref: H,
+  } = e, [Z, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, M] = (0, i.useState)(false), k = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), H = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
+    ref: B,
     height: V = 0
   } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, O.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), Y = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, W = A.config.rewards[Y], q = (null == W ? true : W.type) === o.w.FRACTIONAL_PREMIUM, K = (null == W ? true : W.type) === o.w.COLLECTIBLE, Q = (null == W ? true : W.type) === o.w.VIRTUAL_CURRENCY, J = null == W || null == (j = W.collectibleProduct) || null == (l = j.items) ? true : l[0], X = (null == J ? true : J.type) === s.Z.AVATAR_DECORATION ? J : null;
+  }), Y = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, W = A.config.rewards[Y], q = (null == W ? true : W.type) === s.w.FRACTIONAL_PREMIUM, K = (null == W ? true : W.type) === s.w.COLLECTIBLE, Q = (null == W ? true : W.type) === s.w.VIRTUAL_CURRENCY, J = null == W || null == (j = W.collectibleProduct) || null == (l = j.items) ? true : l[0], X = (null == J ? true : J.type) === o.Z.AVATAR_DECORATION ? J : null;
   (0, p.PM)(k, e => {
     let {
       height: t
@@ -53,7 +53,7 @@ let j = (0, Chunk473749.memo)(function(e) {
     ee = (0, i.useMemo)(() => null != A.config.cosponsorMetadata, [A]),
     et = (0, i.useMemo)(() => (0, v.fh)(A, v.eC.REWARD), [A]),
     en = Z ? V + 8 : 0,
-    er = (0, E.mH)(_.jn.TROPHY_CASE_CARD),
+    er = (0, _.mH)(E.jn.TROPHY_CASE_CARD),
     {
       content_position: ei,
       row_index: el
@@ -73,7 +73,7 @@ let j = (0, Chunk473749.memo)(function(e) {
       }
       return i
     }(er, ["content_position", "row_index"]),
-    es = () => {
+    eo = () => {
       w(true), b.default.track(S.rMx.QUEST_HOVER, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -95,7 +95,7 @@ let j = (0, Chunk473749.memo)(function(e) {
         quest_id: A.id
       }, ea))
     },
-    eo = () => {
+    es = () => {
       w(false)
     },
     ec = e => {
@@ -109,14 +109,14 @@ let j = (0, Chunk473749.memo)(function(e) {
     children: (0, r.jsxs)("div", {
       ref: k,
       tabIndex: 0,
-      onFocus: es,
-      onBlur: eo,
-      onMouseEnter: es,
-      onMouseLeave: eo,
+      onFocus: eo,
+      onBlur: es,
+      onMouseEnter: eo,
+      onMouseLeave: es,
       className: a()(N.container, {
         [N.hovered]: Z
       }),
-      children: [null != B && K && null != X && (0, r.jsx)("div", {
+      children: [null != H && K && null != X && (0, r.jsx)("div", {
         ref: G,
         className: N.decoWrapper,
         style: {
@@ -124,7 +124,7 @@ let j = (0, Chunk473749.memo)(function(e) {
         },
         children: (0, r.jsx)(g.Z, {
           avatarDecorationOverride: X,
-          user: B,
+          user: H,
           guildId: null,
           animateOnHover: !Z
         })
@@ -166,7 +166,7 @@ let j = (0, Chunk473749.memo)(function(e) {
           withGameTile: false
         })
       }), (0, r.jsxs)("div", {
-        ref: H,
+        ref: B,
         className: N.details,
         children: [(0, r.jsx)(d.Heading, {
           className: N.title,

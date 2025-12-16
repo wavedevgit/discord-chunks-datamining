@@ -22,10 +22,10 @@ let h = e => {
     discountOffer: h,
     premiumSubscription: m,
     dismissCoachmark: b,
-    children: E
+    children: _
   } = e, {
-    analyticsLocations: _
-  } = (0, s.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), O = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, h, m), v = (0, r.jsx)(i.Z, {
+    analyticsLocations: E
+  } = (0, o.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), O = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, h, m), v = (0, r.jsx)(i.Z, {
     targetElementRef: t,
     position: "right",
     align: "top",
@@ -38,7 +38,7 @@ let h = e => {
     }).toString(),
     body: f.intl.format(f.t["3Q4wCy"], {
       discountedPrice: O,
-      billingPeriod: (0, o.JP)(h.discount.user_usage_limit_interval),
+      billingPeriod: (0, s.JP)(h.discount.user_usage_limit_interval),
       numMonths: h.discount.user_usage_limit
     }),
     graphic: {
@@ -75,7 +75,7 @@ let h = e => {
               return e
             }({}, t), i = i = {
               premiumSubscription: m,
-              analyticsLocations: _,
+              analyticsLocations: E,
               initialStep: u.R.CONFIRM_DISCOUNT
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);
@@ -98,7 +98,7 @@ let h = e => {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      children: E
+      children: _
     }), v]
   })
 }

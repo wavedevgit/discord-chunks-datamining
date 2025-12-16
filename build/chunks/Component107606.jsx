@@ -1,4 +1,4 @@
-/** Chunk was on 29725 **/
+/** Chunk was on 6043 **/
 /** chunk id: 107606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -90,13 +90,13 @@ function g() {
         variant: "text-md/normal",
         children: ["UI Density: ", M, " (", function(e) {
           switch (e) {
-            case l.Pi.COMPACT:
+            case i.Pi.COMPACT:
               return "Compact";
-            case l.Pi.COZY:
+            case i.Pi.COZY:
               return "Cozy";
-            case l.Pi.DEFAULT:
+            case i.Pi.DEFAULT:
               return "Default";
-            case l.Pi.RESPONSIVE:
+            case i.Pi.RESPONSIVE:
               return "Responsive";
             default:
               return "Unknown"

@@ -23,14 +23,14 @@ let p = function(e) {
       children: [(0, r.jsx)(i.Heading, {
         className: u.barHeading,
         variant: "heading-md/semibold",
-        children: o.intl.string(o.t.rjVPdM)
+        children: s.intl.string(s.t.rjVPdM)
       }), (0, r.jsx)("div", {
         className: u.fixedBarContainer,
         children: (0, r.jsx)("div", {
           className: u.fixedBarWrapper,
           children: (0, r.jsx)("div", {
             className: d.panels,
-            children: (0, r.jsx)(s.Z, {
+            children: (0, r.jsx)(o.Z, {
               children: (0, r.jsx)(l.x8, {
                 source: "preview",
                 questId: t.id,

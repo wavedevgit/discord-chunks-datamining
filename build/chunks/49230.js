@@ -29,11 +29,11 @@ function f(e) {
     soundVolume: r,
     reportSoundStartedPlaying: a
   } = e;
-  return new Promise(async (e, s) => {
-    let o = await p(n);
-    null == o && e(), c.Z.getMediaEngine().eachConnection(n => {
-      n.context === l.Yn.DEFAULT && (a(), i()(null != o, "audioBuffer cannot be null here"), n.startSamplesLocalPlayback(t, o, r, (t, n) => {
-        0 !== t ? s(Error("".concat(n))) : e()
+  return new Promise(async (e, o) => {
+    let s = await p(n);
+    null == s && e(), c.Z.getMediaEngine().eachConnection(n => {
+      n.context === l.Yn.DEFAULT && (a(), i()(null != s, "audioBuffer cannot be null here"), n.startSamplesLocalPlayback(t, s, r, (t, n) => {
+        0 !== t ? o(Error("".concat(n))) : e()
       }))
     })
   })
@@ -51,8 +51,8 @@ function g(e, t) {
     return
   }
   return new Promise(async e => {
-    let a = new(await (0, o.Z)(r));
-    a.src = r, a.volume = (0, u.Z)(i), a.addEventListener(a instanceof s.Z.OGVPlayer ? "loadedmetadata" : "canplaythrough", () => {
+    let a = new(await (0, s.Z)(r));
+    a.src = r, a.volume = (0, u.Z)(i), a.addEventListener(a instanceof o.Z.OGVPlayer ? "loadedmetadata" : "canplaythrough", () => {
       l(), t.set(n, a), a.play()
     }), a.addEventListener("ended", () => {
       t.delete(n), a.src = "", e()

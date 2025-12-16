@@ -52,25 +52,25 @@ let h = function(e) {
     user: h,
     channel: m,
     onClick: b,
-    isFocused: E,
-    isActive: _,
+    isFocused: _,
+    isActive: E,
     onOtherHover: O,
     className: v
   } = e, [y, I] = i.useState(false), [C, S] = i.useState(false), T = () => {
-    I(true), !E || _ || C || null == O || O()
+    I(true), !_ || E || C || null == O || O()
   }, N = () => {
     I(false)
   };
-  return (0, r.jsx)(o.mh, {
+  return (0, r.jsx)(s.mh, {
     id: m.id,
     children: e => (0, r.jsx)(c.tEY, {
       offset: {
         left: false,
         right: false
       },
-      children: (0, r.jsx)(s.Z.div, g(f({
+      children: (0, r.jsx)(o.Z.div, g(f({
         className: a()(p.messageRequestItem, v, {
-          [p.active]: _ || C,
+          [p.active]: E || C,
           [p.firstItem]: 0 === t
         }),
         onContextMenu: e => {
@@ -95,7 +95,7 @@ let h = function(e) {
           opacity: 1
         }
       }, e), {
-        children: l(y || _ || C)
+        children: l(y || E || C)
       }))
     })
   })

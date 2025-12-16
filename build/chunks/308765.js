@@ -535,6 +535,11 @@ let i = {
     inlineRequire: () => require("./696011.js").Z,
     neverLoadBeforeConnectionOpen: true,
     hasStoreChangeListeners: true
+  },
+  MessagePreviewManager: {
+    actions: ["CONNECTION_OPEN_SUPPLEMENTAL", "CONNECTION_RESUMED", "GUILD_CREATE", "GUILD_DELETE", "LOAD_MESSAGES_SUCCESS", "LOCAL_MESSAGES_LOADED", "LOGOUT", "MESSAGE_CREATE", "MESSAGE_DELETE", "MESSAGE_UPDATE", "THREAD_LIST_SYNC"],
+    inlineRequire: () => require("./983543.js").Z,
+    neverLoadBeforeConnectionOpen: false
   }
 };
 (0, Chunk132454.j)(i)

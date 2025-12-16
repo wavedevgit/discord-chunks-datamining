@@ -16,7 +16,7 @@ function u() {
   let e = (0, Chunk899740.q)(),
     t = Chunk473749.useRef(module),
     n = (0, Chunk442837.e7)([Chunk355298.Z], () => Chunk355298.Z.isReady()),
-    s = Chunk473749.useRef(require);
+    o = Chunk473749.useRef(require);
   return Chunk473749.useEffect(() => {
     require && !Chunk333984.current && (Chunk333984.current = true, exports.current = module)
   }, [require, module]), 1 >= (0, Chunk990169.Z)(exports) && 1 === module

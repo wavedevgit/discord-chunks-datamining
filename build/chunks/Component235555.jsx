@@ -19,7 +19,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk658244 = require("./658244.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function E(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,7 +27,7 @@ function E(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class _ extends Chunk473749.PureComponent {
+class E extends Chunk473749.PureComponent {
   hasParty(e) {
     return e.length > 1
   }
@@ -50,8 +50,8 @@ class _ extends Chunk473749.PureComponent {
     }) : null
   }
   constructor(...e) {
-    super(...e), E(this, "handleUserContextMenu", (e, t) => {
-      (0, o.jW)(e, async () => {
+    super(...e), _(this, "handleUserContextMenu", (e, t) => {
+      (0, s.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220"), n.e("18030")]).then(n.bind(n, 881351));
@@ -73,7 +73,7 @@ class _ extends Chunk473749.PureComponent {
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              E(e, t, n[t])
+              _(e, t, n[t])
             })
           }
           return e
@@ -81,7 +81,7 @@ class _ extends Chunk473749.PureComponent {
           user: t
         }))
       })
-    }), E(this, "renderOverflowPopout", () => {
+    }), _(this, "renderOverflowPopout", () => {
       let {
         party: e
       } = this.props;
@@ -100,12 +100,12 @@ let O = Chunk442837.ZP.connectStores([Chunk768419.Z, Chunk594174.default, Chunk6
     i = Chunk594174.default.getCurrentUser(),
     l = [];
   if (null != require ? (e = Chunk594174.default.getUser(require.userId), t = require.partyId) : null != Chunk54381 && null != Chunk54381.party && null != Chunk54381.party.id && (e = Chunk473749, t = Chunk54381.party.id), null != exports) {
-    var s;
-    l = a()(Array.from(null != (s = Chunk831506.Z.getParty(exports)) ? Chunk442837 : [])).map(e => f.default.getUser(e)).filter(Chunk823379.lm).orderBy([t => null == e || e.id === t.id, e => p.Z.isFriend(e.id)], ["desc", "desc"]).value()
+    var o;
+    l = a()(Array.from(null != (o = Chunk831506.Z.getParty(exports)) ? Chunk442837 : [])).map(e => f.default.getUser(e)).filter(Chunk823379.lm).orderBy([t => null == e || e.id === t.id, e => p.Z.isFriend(e.id)], ["desc", "desc"]).value()
   }
   return {
     currentUser: Chunk473749,
     host: module,
     party: Chunk392711
   }
-})(_)
+})(E)

@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk14934 = require("./14934.js"),
   Chunk478411 = require("./478411.js");
 
-function _(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -44,7 +44,7 @@ class O extends Chunk473749.PureComponent {
       label: i,
       editingPath: l,
       isDefault: a,
-      metadata: o
+      metadata: s
     } = this.props;
     return null != Chunk325432 && (e = null != Chunk325432.availableKB ? (0, Chunk424218.BU)(Chunk325432.availableKB, {
       useKibibytes: true
@@ -155,10 +155,10 @@ class O extends Chunk473749.PureComponent {
     return this.props.editingPath === this.props.path ? this.renderEditing() : this.renderViewing()
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), E(this, "state", {
       label: true,
       isDefault: null
-    }), _(this, "handleStartEditing", () => {
+    }), E(this, "handleStartEditing", () => {
       let {
         path: e,
         label: t,
@@ -169,7 +169,7 @@ class O extends Chunk473749.PureComponent {
         label: t,
         isDefault: n
       })
-    }), _(this, "handleStopEditing", () => {
+    }), E(this, "handleStopEditing", () => {
       let {
         onToggleEditing: e
       } = this.props;
@@ -177,25 +177,25 @@ class O extends Chunk473749.PureComponent {
         label: true,
         isDefault: null
       })
-    }), _(this, "handleRemoveLocation", () => {
+    }), E(this, "handleRemoveLocation", () => {
       (0, a.Z)({
         title: m.intl.string(m.t.iBUzS5),
         subtitle: m.intl.string(m.t["1XqeW2"]),
         confirmText: m.intl.string(m.t.iBUzS5),
         onConfirm: () => {
-          this.handleStopEditing(), (0, o.iD)(this.props.path)
+          this.handleStopEditing(), (0, s.iD)(this.props.path)
         }
       })
-    }), _(this, "handleSaveChanges", () => {
-      (0, o.Tb)(this.props.path, {
+    }), E(this, "handleSaveChanges", () => {
+      (0, s.Tb)(this.props.path, {
         label: null != this.state.label ? this.state.label : this.props.label,
         isDefault: null != this.state.isDefault ? this.state.isDefault : this.props.isDefault
       }), this.handleStopEditing()
-    }), _(this, "handleLabelChange", e => {
+    }), E(this, "handleLabelChange", e => {
       this.setState({
         label: e
       })
-    }), _(this, "handleToggleDefault", () => {
+    }), E(this, "handleToggleDefault", () => {
       this.setState({
         isDefault: !this.state.isDefault
       })
@@ -251,13 +251,13 @@ class v extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), E(this, "state", {
       editingPath: null
-    }), _(this, "handleAddInstallationLocation", () => {
+    }), E(this, "handleAddInstallationLocation", () => {
       h.ZP.showOpenDialog(["openDirectory"]).then(e => {
-        null != e && 0 !== e.length && null != e[0] && "undefined" !== e[0] && (0, o.RY)(e[0])
+        null != e && 0 !== e.length && null != e[0] && "undefined" !== e[0] && (0, s.RY)(e[0])
       })
-    }), _(this, "handleToggleEditing", e => {
+    }), E(this, "handleToggleEditing", e => {
       this.setState({
         editingPath: e
       })

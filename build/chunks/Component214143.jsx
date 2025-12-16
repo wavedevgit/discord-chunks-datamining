@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js");
 let p = (e, t) => {
   a.Z.wait(() => {
-    (0, s.Cz)(e, t)
+    (0, o.Cz)(e, t)
   })
 };
 
@@ -23,7 +23,7 @@ function f(e) {
     embedId: t,
     className: n,
     style: a
-  } = e, s = (0, l.e7)([c.Z], () => c.Z.getConnectedFrame()), f = ((0, l.e7)([c.Z], () => c.Z.getFrameLayoutMode()), null != s && u.U.FOCUSED, window), g = i.useRef(null), h = i.useCallback(() => {
+  } = e, o = (0, l.e7)([c.Z], () => c.Z.getConnectedFrame()), f = ((0, l.e7)([c.Z], () => c.Z.getFrameLayoutMode()), null != o && u.U.FOCUSED, window), g = i.useRef(null), h = i.useCallback(() => {
     null != g.current && p(t, g.current.getBoundingClientRect())
   }, [t]);
   i.useLayoutEffect(() => {
@@ -41,8 +41,8 @@ function f(e) {
     return f.addEventListener("scroll", e, true), f.addEventListener("resize", t), () => {
       f.removeEventListener("scroll", e, true), f.removeEventListener("resize", t)
     }
-  }, [h, f]), i.useLayoutEffect(() => (o.S.subscribe(d.CkL.MANUAL_IFRAME_RESIZING, h), () => {
-    o.S.unsubscribe(d.CkL.MANUAL_IFRAME_RESIZING, h)
+  }, [h, f]), i.useLayoutEffect(() => (s.S.subscribe(d.CkL.MANUAL_IFRAME_RESIZING, h), () => {
+    s.S.unsubscribe(d.CkL.MANUAL_IFRAME_RESIZING, h)
   }), [h]), i.useLayoutEffect(() => () => {
     p(t, null)
   }, [t]), (0, r.jsx)("div", {

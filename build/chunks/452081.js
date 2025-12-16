@@ -13,7 +13,7 @@ var Chunk473749 = require("./473749.js"),
 function c(e) {
   let {
     withClaimedQuestsTab: t = true
-  } = e, n = a.Z.useField("tab"), c = (0, i.TH)(), u = (0, s.aV)();
+  } = e, n = a.Z.useField("tab"), c = (0, i.TH)(), u = (0, o.aV)();
   r.useEffect(() => {
     a.Z.getState().initializeFromUrl(c.search, u)
   }, [c.search, u]);
@@ -22,14 +22,14 @@ function c(e) {
   }, []);
   return {
     tabs: r.useMemo(() => [{
-      id: s.e5.ALL,
-      label: o.intl.string(o.t["0SzXmi"])
+      id: o.e5.ALL,
+      label: s.intl.string(s.t["0SzXmi"])
     }, t ? {
-      id: s.e5.CLAIMED,
-      label: o.intl.string(o.t.zyNYNB)
+      id: o.e5.CLAIMED,
+      label: s.intl.string(s.t.zyNYNB)
     } : null, t && u ? {
-      id: s.e5.PREVIEW_TOOL,
-      label: o.intl.string(o.t.BDUDau)
+      id: o.e5.PREVIEW_TOOL,
+      label: s.intl.string(s.t.BDUDau)
     } : null].filter(l.lm), [t, u]),
     selectedTab: n,
     onSelectTab: d

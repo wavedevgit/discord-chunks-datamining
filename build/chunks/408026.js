@@ -7,9 +7,9 @@ var Chunk570140 = require("./570140.js"),
   Chunk224706 = require("./224706.js"),
   Chunk710845 = require("./710845.js"),
   Chunk77498 = require("./77498.js");
-let s = {};
+let o = {};
 
-function o(e) {
+function s(e) {
   let {
     name: t,
     hash: n,
@@ -17,7 +17,7 @@ function o(e) {
   } = e;
   for (let e of (a.Z.markGameReported(t), r))
     if ("icon" === e) {
-      let e = s[t];
+      let e = o[t];
       null != e && i.Z.uploadIcon(t, n, e);
       return
     } else new l.Z("GameStoreIconManager").log("Could not find missing data key: ".concat(e))
@@ -28,10 +28,10 @@ function c(e) {
     gameName: t,
     icon: n
   } = e;
-  s[t] = n
+  o[t] = n
 }
 let u = {
   initialize() {
-    Chunk570140.Z.subscribe("UNVERIFIED_GAME_UPDATE", o), Chunk570140.Z.subscribe("GAME_ICON_UPDATE", c)
+    Chunk570140.Z.subscribe("UNVERIFIED_GAME_UPDATE", s), Chunk570140.Z.subscribe("GAME_ICON_UPDATE", c)
   }
 }

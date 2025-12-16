@@ -20,9 +20,9 @@ let d = function(e) {
     animate: d,
     getHistoricalTotalBytes: p
   } = e;
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(s.Z, {
     getHistoricalTotalBytes: p,
-    children: (e, o, p) => {
+    children: (e, s, p) => {
       var f;
       return (0, r.jsx)("div", {
         className: l()(u.monitor, n),
@@ -36,7 +36,7 @@ let d = function(e) {
               children: t
             }), (0, r.jsx)("div", {
               className: u.rate,
-              children: (f = e[e.length - 1] / o * 1e3) > 1e3 ? c.intl.formatToPlainString(c.t["WU+gTX"], {
+              children: (f = e[e.length - 1] / s * 1e3) > 1e3 ? c.intl.formatToPlainString(c.t["WU+gTX"], {
                 size: Math.round(f / 1e3)
               }) : c.intl.formatToPlainString(c.t.wnF6TH, {
                 size: Math.round(f)
@@ -44,11 +44,11 @@ let d = function(e) {
             })]
           }), (0, r.jsx)("div", {
             className: u.overflowContainer,
-            children: (0, r.jsx)(s.Z, {
+            children: (0, r.jsx)(o.Z, {
               data: e,
               maxValue: Math.max(Math.max.apply(null, e), 1e3),
               className: u.sparkChart,
-              updateInterval: o,
+              updateInterval: s,
               color: i,
               numUpdatesToShow: p,
               animate: d,

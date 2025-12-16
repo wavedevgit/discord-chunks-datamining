@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 177698, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => E
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -38,7 +38,7 @@ function b(e) {
   return e
 }
 
-function E(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,14 +50,14 @@ function E(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = (0, Chunk703912.Z)(e => {
+let E = (0, Chunk703912.Z)(e => {
   var t;
   let {
     clientId: n,
     authorizations: u,
     scopes: d,
     parsedPermissions: f,
-    responseType: _,
+    responseType: E,
     redirectUri: O,
     codeChallenge: v,
     codeChallengeMethod: y,
@@ -81,18 +81,18 @@ let _ = (0, Chunk703912.Z)(e => {
     let R = false,
       D = l => {
         let {
-          clientId: s,
-          location: o
+          clientId: o,
+          location: s
         } = l;
-        if (null == s || s === n) {
-          if (R = true, null == o) {
+        if (null == o || o === n) {
+          if (R = true, null == s) {
             t(new p.Z({
               errorCode: h.lTL.OAUTH2_ERROR
             }, "OAuth2 Error: No location provided")), a.lock();
             return
           }
-          if (e(o), null == O || null == L) return void a.lock();
-          null == new URL(o).searchParams.get("error") ? (0, i.h7j)(e => (0, r.jsx)(c.$0, b({
+          if (e(s), null == O || null == L) return void a.lock();
+          null == new URL(s).searchParams.get("error") ? (0, i.h7j)(e => (0, r.jsx)(c.$0, b({
             application: L
           }, e)), {
             onCloseCallback: () => {
@@ -109,7 +109,7 @@ let _ = (0, Chunk703912.Z)(e => {
         cleanup: M
       } = function(e, t) {
         function n() {
-          (0, i.Mr3)(e) && (0, i.h7j)(e => (0, r.jsx)(o.j, E(b({}, e), {
+          (0, i.Mr3)(e) && (0, i.h7j)(e => (0, r.jsx)(s.j, _(b({}, e), {
             title: m.intl.string(m.t.j2d6Km),
             subtitle: m.intl.string(m.t["4LKmN5"]),
             actions: [{
@@ -124,13 +124,13 @@ let _ = (0, Chunk703912.Z)(e => {
           }
         }
       }(Z, A);
-    (0, i.h7j)(e => (0, r.jsx)(s.OAuth2AuthorizeModal, E(b({}, e), {
+    (0, i.h7j)(e => (0, r.jsx)(o.OAuth2AuthorizeModal, _(b({}, e), {
       authorizations: u,
       clientId: n,
       scopes: null != d ? d : [],
       disclosures: null != j ? j : [],
       callback: D,
-      responseType: _,
+      responseType: E,
       redirectUri: O,
       codeChallenge: v,
       codeChallengeMethod: y,

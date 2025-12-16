@@ -1,4 +1,4 @@
-/** Chunk was on 29725 **/
+/** Chunk was on 6043 **/
 /** chunk id: 676728, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -15,17 +15,17 @@ let s = function(e) {
   return (0, a.jsxs)(r.ButtonGroup, {
     direction: "vertical",
     fullWidth: true,
-    className: i.buttonGroup,
+    className: l.buttonGroup,
     size: "sm",
     children: [(0, a.jsx)(r.Button, {
       onClick: t,
-      text: l.intl.string(l.t["QXc01+"]),
+      text: i.intl.string(i.t["QXc01+"]),
       variant: "secondary",
       icon: r.pzj,
       iconPosition: "end"
     }), (0, a.jsx)(r.Button, {
       onClick: n,
-      text: l.intl.string(l.t["8lAfuB"]),
+      text: i.intl.string(i.t["8lAfuB"]),
       variant: "secondary",
       icon: r.iWm,
       iconPosition: "end"

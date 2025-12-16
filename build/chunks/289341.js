@@ -22,9 +22,9 @@ function h(e) {
     match: h
   } = e, m = null != (n = (0, u.DR)()) ? n : [], {
     analyticsLocations: b
-  } = (0, o.ZP)([...m, s.Z.ACTIVITY_DETAIL_PAGE]), {
-    applicationId: E
-  } = h.params, [_] = (0, c.Z)([E]), O = null == _ || null == (t = _.bot) ? true : t.id, v = (0, i.e7)([d.default], () => d.default.getCurrentUser());
+  } = (0, s.ZP)([...m, o.Z.ACTIVITY_DETAIL_PAGE]), {
+    applicationId: _
+  } = h.params, [E] = (0, c.Z)([_]), O = null == E || null == (t = E.bot) ? true : t.id, v = (0, i.e7)([d.default], () => d.default.getCurrentUser());
   return r.useEffect(() => {
     null != O && null != v && (async () => {
       try {
@@ -36,9 +36,9 @@ function h(e) {
           r = null != (e = t.searchParams.get("referrer_id")) ? e : true,
           {
             customId: i
-          } = await (0, f.ur)(E, t.searchParams.get("link_id"), t.searchParams.get("custom_id"));
+          } = await (0, f.ur)(_, t.searchParams.get("link_id"), t.searchParams.get("custom_id"));
         await (0, p.Z)({
-          targetApplicationId: E,
+          targetApplicationId: _,
           channelId: n,
           analyticsLocations: b,
           customId: i,
@@ -46,7 +46,7 @@ function h(e) {
         })
       } catch (e) {}
     })()
-  }, [b, E, O, v]), r.useEffect(() => {
+  }, [b, _, O, v]), r.useEffect(() => {
     let e = setTimeout(() => {
       null == O && l.Z.show({
         title: g.intl.string(g.t.PtobXW),

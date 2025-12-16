@@ -1,18 +1,18 @@
 /** Chunk was on 1272 **/
 /** chunk id: 748635, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk857192 = require("./857192.js"),
   Chunk901077 = require("./901077.js"),
   Chunk915357 = require("./915357.js"),
   Chunk981631 = require("./981631.js");
-let s = e => {
+let o = e => {
   let {
     origin: t,
     postMessageToRPCClient: n,
-    frameId: s,
-    version: o,
+    frameId: o,
+    version: s,
     encoding: c,
     logger: u,
     postClose: d
@@ -20,8 +20,8 @@ let s = e => {
   return new l.Z({
     origin: t,
     postMessageToRPCClient: n,
-    frameId: s,
-    version: o,
+    frameId: o,
+    version: s,
     encoding: c,
     logger: u,
     postClose: d,

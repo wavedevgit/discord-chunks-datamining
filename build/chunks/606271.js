@@ -49,7 +49,7 @@ class P {
         type: "RPC_APP_CONNECTED",
         socketId: e.id,
         application: e.application
-      }), E.default.track(C.rMx.AUTHORIZED_APP_CONNECTED, {
+      }), _.default.track(C.rMx.AUTHORIZED_APP_CONNECTED, {
         app_id: e.application.id,
         transport: e.transport
       })
@@ -87,7 +87,7 @@ class P {
           }, i = "".concat(t).concat(e.id);
           break;
         default:
-          return (0, _.vE)(e)
+          return (0, E.vE)(e)
       }
       null != n && this.rpcServer.dispatchToSubscriptions(t, {
         channel_id: n
@@ -101,7 +101,7 @@ class P {
       if (e.context === N.Yn.DEFAULT) {
         let n = h.Z.getVoiceChannelId();
         if (null != n) {
-          let r = o.Z.getChannel(n);
+          let r = s.Z.getChannel(n);
           if (null == r) return;
           let i = b.Z.getVoiceState(r.getGuildId(), e.userId);
           if (null == i) return;
@@ -208,16 +208,16 @@ class P {
       if (null == i || null == l || null == l.party_id) return;
       let a = m.default.getUser(null == (t = r.author) ? true : t.id);
       if (null == a) return;
-      let s = m.default.getCurrentUser();
-      if (null == s || a.id === s.id) return;
-      let o = l.type === C.mFx.JOIN_REQUEST ? p.Z.getApplicationActivity(s.id, i.id) : p.Z.getApplicationActivity(a.id, i.id);
-      if (null == o || null == o.party || o.party.id !== l.party_id) return;
-      let c = o.application_id;
+      let o = m.default.getCurrentUser();
+      if (null == o || a.id === o.id) return;
+      let s = l.type === C.mFx.JOIN_REQUEST ? p.Z.getApplicationActivity(o.id, i.id) : p.Z.getApplicationActivity(a.id, i.id);
+      if (null == s || null == s.party || s.party.id !== l.party_id) return;
+      let c = s.application_id;
       switch (l.type) {
         case C.mFx.JOIN:
           this.rpcServer.dispatchToSubscriptions(C.zMe.ACTIVITY_INVITE, e => e.socket.application.id === c, {
             user: (0, I.Z)(a),
-            activity: o,
+            activity: s,
             type: l.type,
             channel_id: n,
             message_id: r.id
@@ -226,7 +226,7 @@ class P {
         case C.mFx.JOIN_REQUEST:
           this.rpcServer.dispatchToSubscriptions(C.zMe.ACTIVITY_JOIN_REQUEST, e => e.socket.application.id === c, {
             user: (0, I.Z)(a),
-            activity: o,
+            activity: s,
             type: l.type,
             channel_id: n,
             message_id: r.id
@@ -361,7 +361,7 @@ class P {
       let n = t.questId,
         r = a.Z.getQuest(n);
       if (null == r) return;
-      let i = (0, s.nY)(r);
+      let i = (0, o.nY)(r);
       null != i && this.rpcServer.dispatchToSubscriptions(C.zMe.QUEST_ENROLLMENT_STATUS_UPDATE, e => {
         var t;
         return e.socket.application.id === i && (null == (t = e.args) ? true : t.quest_id) === n

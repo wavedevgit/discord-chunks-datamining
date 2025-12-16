@@ -103,13 +103,13 @@ function w() {
       connectHasStarted: i,
       awaitingRemote: l,
       connectedRemote: a
-    } = t, s = e.channelType, o = e.connectedRemote, c = e.connected;
-    if (!e.connectHasStarted && i || a && !o) {
+    } = t, o = e.channelType, s = e.connectedRemote, c = e.connected;
+    if (!e.connectHasStarted && i || a && !s) {
       if (null != n && m.Lr.has(n)) return;
       return "user_join"
     }
     if (c && !r) {
-      if (l || a || null != s && m.Lr.has(s)) return;
+      if (l || a || null != o && m.Lr.has(o)) return;
       return "disconnect"
     }
   }), null
@@ -174,13 +174,13 @@ function G() {
       i = [],
       l = null,
       a = 0,
-      s = Chunk199902.Z.getAllActiveStreams();
+      o = Chunk199902.Z.getAllActiveStreams();
     if (null != require) {
       let r = Chunk592125.Z.getChannel(require);
       null != Chunk54381 && (e = Chunk54381.type, t = Chunk938475.ZP.countVoiceStatesForChannel(Chunk54381.id) - !!Chunk979651.Z.isInChannel(Chunk54381.id), i = Chunk199902.Z.getAllApplicationStreamsForChannel(Chunk54381.id).map(e => e.ownerId))
     }
-    let o = null;
-    return (null == (o = 1 === Chunk317381.length ? Chunk317381[0] : Chunk199902.Z.getCurrentUserActiveStream()) ? true : Chunk16609.state) === Chunk981631.jm8.CONNECTING && (o = null), null != Chunk16609 && (l = (0, Chunk569545.V9)(Chunk16609), a = Chunk199902.Z.getViewerIds(Chunk392711).filter(e => e !== r).length), {
+    let s = null;
+    return (null == (s = 1 === Chunk317381.length ? Chunk317381[0] : Chunk199902.Z.getCurrentUserActiveStream()) ? true : Chunk16609.state) === Chunk981631.jm8.CONNECTING && (s = null), null != Chunk16609 && (l = (0, Chunk569545.V9)(Chunk16609), a = Chunk199902.Z.getViewerIds(Chunk392711).filter(e => e !== r).length), {
       channelType: module,
       voiceChannelId: require,
       voiceChannelUserCount: exports,
@@ -197,11 +197,11 @@ function G() {
       voiceChannelUserCount: i,
       streamingUserIds: l,
       singleActiveStreamKey: a,
-      singleActiveStreamViewerCount: s,
-      currentUserId: o
+      singleActiveStreamViewerCount: o,
+      currentUserId: s
     } = t;
     if (e.voiceChannelId !== r || null == r || function(e) {
-        let t = _.Z.getChannel(e);
+        let t = E.Z.getChannel(e);
         if (null == t) returnfalse;
         let n = t.getGuildId();
         if (null == n) returnfalse;
@@ -211,17 +211,17 @@ function G() {
     let c = null != a && e.singleActiveStreamKey === a,
       u = l.some(t => !e.streamingUserIds.includes(t)),
       d = e.allActiveStreams.map(e => e.ownerId),
-      p = e.streamingUserIds.some(e => !l.includes(e) && (e === o || d.includes(e)));
+      p = e.streamingUserIds.some(e => !l.includes(e) && (e === s || d.includes(e)));
     if (u) return "stream_started";
     if (p) return "stream_ended";
-    if (e.singleActiveStreamViewerCount <= 25 && c && s > e.singleActiveStreamViewerCount) return "stream_user_joined";
+    if (e.singleActiveStreamViewerCount <= 25 && c && o > e.singleActiveStreamViewerCount) return "stream_user_joined";
     if (null != e.voiceChannelUserCount && null != i && e.voiceChannelUserCount <= 25 && i > e.voiceChannelUserCount) return "user_join";
     if (null != e.voiceChannelUserCount && null != i && e.voiceChannelUserCount <= 25 && i < e.voiceChannelUserCount) return "user_leave";
-    else if (e.singleActiveStreamViewerCount <= 25 && c && s < e.singleActiveStreamViewerCount) return "stream_user_left"
+    else if (e.singleActiveStreamViewerCount <= 25 && c && o < e.singleActiveStreamViewerCount) return "stream_user_left"
   }), null
 }
 
-function B() {
+function H() {
   return x([Chunk944486.Z, Chunk317381.ZP, Chunk591472.Z, Chunk314897.default], () => {
     let e = Chunk944486.Z.getVoiceChannelId(),
       t = Chunk944486.Z.getChannelId(),
@@ -248,27 +248,27 @@ function B() {
         voiceChannelId: i,
         currentUserId: l,
         channelActivities: a,
-        connectedChannelActivities: s,
-        userConnectedActivity: o,
+        connectedChannelActivities: o,
+        userConnectedActivity: s,
         voiceChannelActivities: c,
         connectedFrame: u
       } = t,
-      d = c.some(e => e.applicationId === (null == o ? true : o.applicationId) && e.launchId === o.launchId);
+      d = c.some(e => e.applicationId === (null == s ? true : s.applicationId) && e.launchId === s.launchId);
     if ((0, j.lm)(i)) {
       let t = e.voiceChannelActivities.find(e => e.userIds.has(l)),
         r = c.find(e => e.userIds.has(l));
       e.voiceChannelActivities.length < c.length && (0, j.lm)(e.voiceChannelId) && (n = "activity_launch"), true === r && (0, j.lm)(t) && (n = "activity_end"), true === t && (0, j.lm)(r) && r.userIds.size > 1 && (n = "activity_user_join"), (0, j.lm)(r) && (0, j.lm)(t) && (r.userIds.size > t.userIds.size && (n = "activity_user_join"), r.userIds.size < t.userIds.size && (n = "activity_user_left"))
     }
     if (!d) {
-      e.connectedChannelActivities.length < s.length && e.channelActivities.length < a.length && (n = "activity_launch");
+      e.connectedChannelActivities.length < o.length && e.channelActivities.length < a.length && (n = "activity_launch");
       let t = e.userConnectedActivity;
-      null == o && (0, j.lm)(t) && (n = "activity_end"), (0, j.lm)(o) && (0, j.lm)(t) && (o.userIds.size > t.userIds.size && (n = "activity_user_join"), o.userIds.size < t.userIds.size && (n = "activity_user_left"))
+      null == s && (0, j.lm)(t) && (n = "activity_end"), (0, j.lm)(s) && (0, j.lm)(t) && (s.userIds.size > t.userIds.size && (n = "activity_user_join"), s.userIds.size < t.userIds.size && (n = "activity_user_left"))
     }
-    return null == n && (null != e.connectedActivityLocation || null != r) && (null == e.connectedActivityLocation && null != r ? n = "activity_launch" : null != e.connectedActivityLocation && null == r ? n = "activity_end" : null != o && null != e.userConnectedActivity && (e.userConnectedActivity.userIds.size < o.userIds.size ? n = "activity_user_join" : e.userConnectedActivity.userIds.size > o.userIds.size && (n = "activity_user_leave"))), null == n && (null != e.connectedFrame || null != u) && (null == e.connectedFrame && null != u ? n = "activity_launch" : null != e.connectedFrame && null == u && (n = "activity_end")), n
+    return null == n && (null != e.connectedActivityLocation || null != r) && (null == e.connectedActivityLocation && null != r ? n = "activity_launch" : null != e.connectedActivityLocation && null == r ? n = "activity_end" : null != s && null != e.userConnectedActivity && (e.userConnectedActivity.userIds.size < s.userIds.size ? n = "activity_user_join" : e.userConnectedActivity.userIds.size > s.userIds.size && (n = "activity_user_leave"))), null == n && (null != e.connectedFrame || null != u) && (null == e.connectedFrame && null != u ? n = "activity_launch" : null != e.connectedFrame && null == u && (n = "activity_end")), n
   }), null
 }
 
-function H() {
+function B() {
   return x([Chunk106301.Z, Chunk944486.Z], () => ({
     hangStatus: Chunk106301.Z.getCurrentHangStatus(),
     customHangStatus: Chunk106301.Z.getCustomHangStatus(),
@@ -279,14 +279,14 @@ function H() {
     let {
       hangStatus: i,
       customHangStatus: a,
-      gameActivityHangStatus: s
+      gameActivityHangStatus: o
     } = t;
-    if (e.inVoice && (null != i && i !== e.hangStatus || null != a && (a.status !== (null == (n = e.customHangStatus) ? true : n.status) || !(0, l.isEqual)(a.emoji, null == (r = e.customHangStatus) ? true : r.emoji)) || null != s && e.gameActivityHangStatus !== s)) return "hang_status_select"
+    if (e.inVoice && (null != i && i !== e.hangStatus || null != a && (a.status !== (null == (n = e.customHangStatus) ? true : n.status) || !(0, l.isEqual)(a.emoji, null == (r = e.customHangStatus) ? true : r.emoji)) || null != o && e.gameActivityHangStatus !== o)) return "hang_status_select"
   }, .15), null
 }
 
 function V() {
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)(A, {}), (0, Chunk54381.jsx)(Z, {}), (0, Chunk54381.jsx)(w, {}), (0, Chunk54381.jsx)(L, {}), (0, Chunk54381.jsx)(D, {}), (0, Chunk54381.jsx)(k, {}), (0, Chunk54381.jsx)(G, {}), (0, Chunk54381.jsx)(U, {}), (0, Chunk54381.jsx)(B, {}), (0, Chunk54381.jsx)(R, {}), (0, Chunk54381.jsx)(M, {}), (0, Chunk54381.jsx)(H, {})]
+    children: [(0, Chunk54381.jsx)(A, {}), (0, Chunk54381.jsx)(Z, {}), (0, Chunk54381.jsx)(w, {}), (0, Chunk54381.jsx)(L, {}), (0, Chunk54381.jsx)(D, {}), (0, Chunk54381.jsx)(k, {}), (0, Chunk54381.jsx)(G, {}), (0, Chunk54381.jsx)(U, {}), (0, Chunk54381.jsx)(H, {}), (0, Chunk54381.jsx)(R, {}), (0, Chunk54381.jsx)(M, {}), (0, Chunk54381.jsx)(B, {})]
   })
 }

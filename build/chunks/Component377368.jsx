@@ -57,10 +57,10 @@ class C extends Chunk131468.Z {
         let i = {
           soundKey: "".concat(r, "-").concat(e),
           soundURL: (0, b.Z)(e),
-          soundVolume: (0, E.Z)(n),
+          soundVolume: (0, _.Z)(n),
           reportSoundStartedPlaying: () => (0, g.xR)(e, r)
         };
-        u.Z.supports(v.AN.SAMPLE_PLAYBACK) ? await (0, _.$)(i) : await (0, _.h)(i, t.playingSoundsWeb)
+        u.Z.supports(v.AN.SAMPLE_PLAYBACK) ? await (0, E.$)(i) : await (0, E.h)(i, t.playingSoundsWeb)
       } catch (e) {
         I.warn("Error playing soundboard sound: ".concat(e.message))
       } finally {
@@ -72,7 +72,7 @@ class C extends Chunk131468.Z {
       if (null == e) return;
       let l = c.Z.getChannel(t),
         a = p.ZP.getKeybindForAction(O.kg4.SOUNDBOARD_HOLD);
-      null != l && (0, m.Z)(l) && null != a && o.Z.hasHotspot(s.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.ZDy)(async () => {
+      null != l && (0, m.Z)(l) && null != a && s.Z.hasHotspot(o.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.ZDy)(async () => {
         let {
           default: t
         } = await n.e("69208").then(n.bind(n, 490166));

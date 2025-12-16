@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk132841 = require("./132841.js");
 
-function _(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -83,22 +83,22 @@ class O extends Chunk473749.Component {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "searchBarRef", i.createRef()), _(this, "state", {
+    super(...e), E(this, "searchBarRef", i.createRef()), E(this, "state", {
       focused: false
-    }), _(this, "handleKeyDown", e => {
+    }), E(this, "handleKeyDown", e => {
       var t, n, r;
       let {
         activeRowKey: i,
         hasModalOpen: l,
         applicationViewItems: a
       } = this.props, {
-        searchBarRef: o
+        searchBarRef: s
       } = this;
-      if (l || e.ctrlKey || e.altKey || e.metaKey || null == o) return;
-      let c = null == (t = (0, s.uB)(e)) ? true : t.activeElement;
-      if (!(c !== o.current && (0, s.VG)(c))) switch (e.which) {
+      if (l || e.ctrlKey || e.altKey || e.metaKey || null == s) return;
+      let c = null == (t = (0, o.uB)(e)) ? true : t.activeElement;
+      if (!(c !== s.current && (0, o.VG)(c))) switch (e.which) {
         case m.yXg.ESCAPE:
-          e.target !== o.current ? this.reset() : null != o.current && (null == (n = o.current) || n.blur());
+          e.target !== s.current ? this.reset() : null != s.current && (null == (n = s.current) || n.blur());
           break;
         case m.yXg.ENTER:
           if (null != i) {
@@ -123,7 +123,7 @@ class O extends Chunk473749.Component {
           e.preventDefault(), e.stopPropagation(), this.updateActiveRow(e.which === m.yXg.ARROW_DOWN ? 1 : false);
           break;
         default:
-          null != o.current && e.target !== o.current && (null == (r = o.current) || r.focus())
+          null != s.current && e.target !== s.current && (null == (r = s.current) || r.focus())
       }
     })
   }

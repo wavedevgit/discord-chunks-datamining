@@ -20,15 +20,15 @@ function c(e) {
     guildId: l
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.memberItem,
+    className: s.memberItem,
     children: [(0, r.jsx)(a.qEK, {
       src: t.getAvatarURL(l, 24),
-      className: o.avatar,
+      className: s.avatar,
       "aria-label": t.username,
       size: a.EFr.SIZE_24,
       status: n,
       statusColor: i ? "currentColor" : true
-    }), (0, r.jsx)(s.Z, {
+    }), (0, r.jsx)(o.Z, {
       user: t,
       hideDiscriminator: true
     })]
@@ -40,9 +40,9 @@ function u(e) {
     label: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.memberItem,
+    className: s.memberItem,
     children: [(0, r.jsx)("div", {
-      className: l()(o.avatar, o.unknown)
+      className: l()(s.avatar, s.unknown)
     }), (0, r.jsx)("div", {
       children: t
     })]
