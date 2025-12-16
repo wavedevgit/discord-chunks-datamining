@@ -28,8 +28,8 @@ let h = {
   },
   m = h,
   b = false,
-  E = {},
   _ = {},
+  E = {},
   O = {},
   v = {
     id: null,
@@ -72,13 +72,13 @@ class T extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return O
   }
   get inputDevices() {
-    return E
+    return _
   }
   get lastInputSystemDevice() {
     return v
   }
   get outputDevices() {
-    return _
+    return E
   }
   get lastOutputSystemDevice() {
     return y
@@ -134,12 +134,12 @@ let N = new T(Chunk570140.Z, {
           n !== y.id && (y.justChanged = true), y.id = n
         }
       }), !b) {
-      E = r, _ = i, b = true;
+      _ = r, E = i, b = true;
       return
     }
-    let a = Object.keys(E),
+    let a = Object.keys(_),
       s = Object.keys(r),
-      o = Object.keys(_),
+      o = Object.keys(E),
       c = Object.keys(i),
       u = l().difference(a, s),
       d = l().difference(o, c);
@@ -147,7 +147,7 @@ let N = new T(Chunk570140.Z, {
       O[e] = S(O[e], e, p.Q.INPUT)
     }), l().difference(c, o).forEach(e => {
       O[e] = S(O[e], e, p.Q.OUTPUT)
-    })), !(l().isEqual(a, s) && l().isEqual(o, c)) && (E = r, _ = i, true)
+    })), !(l().isEqual(a, s) && l().isEqual(o, c)) && (_ = r, E = i, true)
   },
   CONNECTED_DEVICE_SWITCH: function(e) {
     let {
@@ -156,13 +156,13 @@ let N = new T(Chunk570140.Z, {
       location: r
     } = e;
     if (n === p.a.INPUT || n === p.a.INPUT_AND_OUTPUT) {
-      let e = E[t];
+      let e = _[t];
       null != e && s.Z.wait(() => o.Z.setInputDevice(e, {
         location: r
       }))
     }
     if (n === p.a.OUTPUT || n === p.a.INPUT_AND_OUTPUT) {
-      let e = _[t];
+      let e = E[t];
       s.Z.wait(() => o.Z.setOutputDevice(e, {
         location: r
       }))

@@ -106,7 +106,7 @@ function j(e) {
     fireOnMount: true
   }), R = (0, c.e7)([b.Z], () => b.Z.quests);
   return i.useEffect(() => {
-    h.default.track(v.rMx.QUEST_CONTENT_VIEWED, T(S({}, (0, m.mH)(E.jn.QUEST_HOME_TAKEOVER)), {
+    h.default.track(v.rMx.QUEST_CONTENT_VIEWED, T(S({}, (0, m.mH)(_.jn.QUEST_HOME_TAKEOVER)), {
       quest_id: t.campaignId,
       is_targeted: false
     }))
@@ -160,7 +160,7 @@ function j(e) {
                   cta_name: m.jZ.OPEN_GAME_LINK,
                   click_id: (0, o.Z)(),
                   is_targeted: false
-                }, (0, m.mH)(E.jn.QUEST_HOME_TAKEOVER)))
+                }, (0, m.mH)(_.jn.QUEST_HOME_TAKEOVER)))
               },
               size: "md",
               text: t.ctaSponsorUrl.title,
@@ -170,7 +170,7 @@ function j(e) {
                 j.replace(T(S({}, l), {
                   hash: true
                 })), null == n || n(), window.requestIdleCallback(() => {
-                  (0, _.navigateToQuestHome)({
+                  (0, E.navigateToQuestHome)({
                     questId: e.questId
                   })
                 }), h.default.track(v.rMx.QUEST_CONTENT_CLICKED, S({
@@ -178,7 +178,7 @@ function j(e) {
                   cta_name: m.jZ.LEARN_MORE,
                   click_id: (0, o.Z)(),
                   is_targeted: false
-                }, (0, m.mH)(E.jn.QUEST_HOME_TAKEOVER)))
+                }, (0, m.mH)(_.jn.QUEST_HOME_TAKEOVER)))
               },
               size: "md",
               text: e.title,

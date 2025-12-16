@@ -121,8 +121,8 @@ function Z(e) {
     subHeaderExtra: k,
     featureCards: U,
     changeLogId: G,
-    button: B,
-    body: H
+    button: H,
+    body: B
   } = e, {
     onClose: V,
     transitionState: F
@@ -183,7 +183,7 @@ function Z(e) {
       })
     }
   }, [G, Z.type]), i.useEffect(() => {
-    (0, _.kk)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
+    (0, E.kk)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL);
     let e = Date.now();
     return v.default.track(I.rMx.CHANGE_LOG_OPENED, {
       change_log_id: G
@@ -191,7 +191,7 @@ function Z(e) {
       v.default.track(I.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: G,
         seconds_open: Math.round((Date.now() - e) / 1e3)
-      }), (0, _.JO)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, n, {
+      }), (0, E.JO)(u.z.PREMIUM_MARKETING_MOMENT_ANNOUNCEMENT_UPSELL, n, {
         dismissAction: C.L.DISMISS
       })
     }
@@ -212,7 +212,7 @@ function Z(e) {
       }), null == L ? true : L(), (0, r.jsxs)(p.hzk, {
         "data-migration-pending": true,
         className: T.content,
-        children: ["video" === Z.type ? (0, r.jsx)(E.Z, {
+        children: ["video" === Z.type ? (0, r.jsx)(_.Z, {
           className: a()(T.video, w),
           autoPlay: !W,
           loop: true,
@@ -276,10 +276,10 @@ function Z(e) {
           color: "text-subtle",
           className: T.subHeader,
           children: [M, null == k ? true : k()]
-        }), null != H && "" !== H && (0, r.jsx)(p.Heading, {
+        }), null != B && "" !== B && (0, r.jsx)(p.Heading, {
           variant: "heading-lg/semibold",
           className: T.bodyText,
-          children: H
+          children: B
         }), U.length > 0 && (0, r.jsx)("div", {
           className: a()(T.featureCardGroup, {
             [T.wideStyle]: Y
@@ -289,7 +289,7 @@ function Z(e) {
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {
           className: T.buttonContainer,
-          children: B()
+          children: H()
         })]
       })]
     })

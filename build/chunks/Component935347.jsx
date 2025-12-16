@@ -56,7 +56,7 @@ class P extends Chunk473749.PureComponent {
       connected: l,
       soundpack: a
     } = this.props, s = l && n && !r && !i;
-    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || s ? (l && (0, E.t)(), l && null != this.videoRef && u.K.get(S.wli) && this._connectedSound.play(), this.setState({
+    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || s ? (l && (0, _.t)(), l && null != this.videoRef && u.K.get(S.wli) && this._connectedSound.play(), this.setState({
       problems: false,
       hide: l
     })) : t.hide !== r ? (r ? this.clearProblemsTimeout() : this.setProblemsTimeout(), this.setState({
@@ -200,7 +200,7 @@ class P extends Chunk473749.PureComponent {
           className: N.keybind
         }, t)
       })];
-      return _.default.locale.startsWith("en-") && e.push(T.intl.string(T.t.dQ9Wqk)), e[o().random(e.length - 1)]
+      return E.default.locale.startsWith("en-") && e.push(T.intl.string(T.t.dQ9Wqk)), e[o().random(e.length - 1)]
     }()), j(this, "_eventLoadingText", function() {
       let e = h.Z.getLoadingTips();
       if (null != e && e.length > 0) return e[o().random(e.length - 1)]

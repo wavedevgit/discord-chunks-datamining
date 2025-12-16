@@ -2,7 +2,7 @@
 /** chunk id: 267161, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => V,
-  useAppSidebarState: () => B
+  useAppSidebarState: () => H
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -42,11 +42,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk950796 = require("./950796.jsx"),
   Chunk741764 = require("./741764.js"),
   Chunk428754 = require("./428754.js");
-let B = (0, Chunk663042.U)(() => ({
+let H = (0, Chunk663042.U)(() => ({
   isOpen: true
 }));
 
-function H(e) {
+function B(e) {
   let {
     withFastTravel: t,
     quickSwitcherInsteadOfTitle: n,
@@ -85,7 +85,7 @@ let V = Chunk473749.memo(function() {
   }, {
     autoTrackExposure: false
   }), {
-    enabled: B
+    enabled: H
   } = Chunk99977.c.useConfig({
     location: "AppTitleBar"
   }), V = (0, Chunk442837.e7)([Chunk906467.Z], () => Chunk906467.Z.isDeveloper), F = (0, Chunk442837.e7)([Chunk695103.Z, Chunk812206.Z], () => Chunk695346.Sb.getSetting() && null != Chunk695103.Z.testModeApplicationId && null != Chunk812206.Z.getApplication(Chunk695103.Z.testModeApplicationId) && (0, Chunk870822.Z)(Chunk812206.Z.getApplication(Chunk695103.Z.testModeApplicationId))), z = null !== module && exports === Chunk821020.u3.TITLE_BAR_LEFT, Y = null === module;
@@ -120,13 +120,13 @@ let V = Chunk473749.memo(function() {
         return (0, r.jsx)(k.TF, {
           className: t,
           leading: (0, r.jsxs)(r.Fragment, {
-            children: [s && (0, r.jsx)(_.Z, {
+            children: [s && (0, r.jsx)(E.Z, {
               firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === K ? e : true
             }), z && (0, r.jsx)(j.Z, {
               focusSectionProps: "NOTIFICATIONS_INBOX" === K ? e : true
             })]
           }),
-          title: (0, r.jsx)(H, {
+          title: (0, r.jsx)(B, {
             withFastTravel: n,
             quickSwitcherInsteadOfTitle: l,
             focusSectionProps: "TITLEBAR_FAST_TRAVEL" === K ? e : true
@@ -134,7 +134,7 @@ let V = Chunk473749.memo(function() {
           trailing: (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(v.Z, {
               className: Q
-            }), B && (0, r.jsx)(h.Z, {
+            }), H && (0, r.jsx)(h.Z, {
               className: Q
             }), (0, r.jsx)(m.Z, {
               canShowReminder: true,

@@ -24,24 +24,24 @@ function h(e) {
     hasFetched: h,
     hasFiltersApplied: m = false,
     onClearFilters: b
-  } = e, E = i.useRef(false), _ = (0, o.TH)(), O = i.useMemo(() => {
-    if (_.hash.length > 0) {
-      let e = _.hash.slice(1),
+  } = e, _ = i.useRef(false), E = (0, o.TH)(), O = i.useMemo(() => {
+    if (E.hash.length > 0) {
+      let e = E.hash.slice(1),
         r = (0, d._x)(e, t, n);
       if (null != r) return r.id
     }
     return null
-  }, [t, n, _.hash]);
+  }, [t, n, E.hash]);
   i.useEffect(() => {
-    E.current = false
-  }, [_.hash]), i.useEffect(() => {
-    if (null == O || E.current || l || !h) return;
+    _.current = false
+  }, [E.hash]), i.useEffect(() => {
+    if (null == O || _.current || l || !h) return;
     let e = document.getElementById("quest-tile-".concat(O));
     null == e || e.scrollIntoView({
       behavior: "smooth",
       block: "center"
-    }), E.current = true
-  }, [t, O, _, l, h]);
+    }), _.current = true
+  }, [t, O, E, l, h]);
   let v = null != O,
     [y, I] = i.useState(window.innerWidth);
   i.useEffect(() => {

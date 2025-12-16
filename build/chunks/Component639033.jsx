@@ -44,8 +44,8 @@ class g extends Chunk317770.Z {
       }
       let b = o.Z.getChannel(m);
       if (!(null == b ? true : b.isGuildStageVoice())) return;
-      let E = (0, u.gf)(h) === u.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
-      if (null != b && E) {
+      let _ = (0, u.gf)(h) === u.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+      if (null != b && _) {
         if ((0, i.nfh)(f)) return;
         (0, i.ZDy)(async () => {
           let {

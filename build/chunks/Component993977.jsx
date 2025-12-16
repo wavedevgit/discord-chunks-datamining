@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk375951 = require("./375951.js");
 
-function _(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,7 +36,7 @@ function O(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
@@ -51,33 +51,33 @@ function v(e) {
   let i = t.map(e => {
     let t = e.libraryApplication.getDistributor();
     return (0, r.jsxs)("div", {
-      className: E.hiddenLibraryApplication,
+      className: _.hiddenLibraryApplication,
       children: [(0, r.jsxs)(c.Z, {
         direction: c.Z.Direction.VERTICAL,
-        className: E.hiddenLibraryApplicationContent,
+        className: _.hiddenLibraryApplicationContent,
         children: [(0, r.jsx)("div", {
-          className: E.applicationName,
+          className: _.applicationName,
           children: e.libraryApplication.getBranchedName(e.application)
         }), null != t ? (0, r.jsx)("div", {
-          className: E.applicationSubText,
+          className: _.applicationSubText,
           children: m.EOG[t]
         }) : null]
       }), (0, r.jsx)(s.P3F, {
-        className: E.restoreButton,
+        className: _.restoreButton,
         onClick: () => n(e.libraryApplication),
         children: (0, r.jsx)(s.Dio, {
           size: "md",
           color: "currentColor",
-          className: E.restoreIcon
+          className: _.restoreIcon
         })
       })]
     }, e.key)
   });
   return (0, r.jsxs)("div", {
-    className: E.hiddenLibraryApplications,
+    className: _.hiddenLibraryApplications,
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-md/semibold",
-      className: E.hiddenLibraryApplicationsTitle,
+      className: _.hiddenLibraryApplicationsTitle,
       children: b.intl.string(b.t["5PJtrH"])
     }), i]
   })
@@ -132,7 +132,7 @@ class y extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "handleRestoreHiddenLibraryApplication", e => {
+    super(...e), E(this, "handleRestoreHiddenLibraryApplication", e => {
       let t = l.x9(e.getFlags(), m.eHb.HIDDEN);
       o.h(e.id, e.branchId, t), this.trackRestoreApplication(e, l.yE(t, m.eHb.HIDDEN))
     })

@@ -61,7 +61,7 @@ let U = e => {
     })
   },
   G = [Chunk692547.Z.unsafe_rawColors.BLUE_345.css, Chunk692547.Z.colors.INTERACTIVE_TEXT_DEFAULT.css],
-  B = e => {
+  H = e => {
     let {
       tooltip: t,
       onClick: n,
@@ -83,7 +83,7 @@ let U = e => {
     })
   };
 
-function H(e, t) {
+function B(e, t) {
   switch (t) {
     case R.f07.POST_INSTALL_SCRIPTS:
     case R.f07.PLANNING:
@@ -196,7 +196,7 @@ function z(e) {
     progress: i,
     total: l,
     secondsRemaining: a
-  } = e, s = H(l, n), o = H(i, n);
+  } = e, s = B(l, n), o = B(i, n);
   switch (n) {
     case R.f07.QUEUED:
       if (0 === i) return D.intl.string(D.t.RpfBqd);
@@ -319,8 +319,8 @@ class Y extends Chunk473749.PureComponent {
         stage: l
       } = require;
       if (null != Chunk54381 && null != Chunk473749) {
-        let n = H(Chunk473749, Chunk120356),
-          a = H(Chunk54381, Chunk120356),
+        let n = B(Chunk473749, Chunk120356),
+          a = B(Chunk54381, Chunk120356),
           s = Math.floor(t = Chunk780570.xI(Chunk54381, Chunk473749));
         e = Chunk120356 === Chunk981631.f07.PAUSING ? Chunk388032.intl.formatToPlainString(Chunk388032.t.vjxhWo, {
           percent: Chunk392711,
@@ -457,12 +457,12 @@ class Y extends Chunk473749.PureComponent {
     })
   }
 }
-let W = () => (0, Chunk54381.jsx)(B, {
+let W = () => (0, Chunk54381.jsx)(H, {
     icon: Chunk481060.o1U,
     tooltip: Chunk388032.intl.string(Chunk388032.t.YGm6SZ),
     onClick: () => Chunk51025.v4()
   }),
-  q = () => (0, Chunk54381.jsx)(B, {
+  q = () => (0, Chunk54381.jsx)(H, {
     icon: Chunk481060.fpf,
     tooltip: Chunk388032.intl.string(Chunk388032.t.TVAd5J),
     onClick: () => Chunk51025.wO()
@@ -471,7 +471,7 @@ let W = () => (0, Chunk54381.jsx)(B, {
     let {
       item: t
     } = e;
-    return (0, r.jsx)(B, {
+    return (0, r.jsx)(H, {
       icon: g.wj7,
       tooltip: D.intl.string(D.t["Eqb+LN"]),
       onClick: () => b.A1(t.applicationId, t.branchId)
@@ -481,7 +481,7 @@ let W = () => (0, Chunk54381.jsx)(B, {
     let {
       item: t
     } = e;
-    return (0, r.jsx)(B, {
+    return (0, r.jsx)(H, {
       icon: g.Dio,
       tooltip: D.intl.string(D.t["0lFmC9"]),
       onClick: () => b.al(t.applicationId, t.branchId)
@@ -515,7 +515,7 @@ let W = () => (0, Chunk54381.jsx)(B, {
     cellClassName: Chunk654069.actionsCell,
     render(e, t) {
       let n, i;
-      return e.finished ? n = null != e.libraryApplication ? (0, r.jsx)(E.Z, {
+      return e.finished ? n = null != e.libraryApplication ? (0, r.jsx)(_.Z, {
         libraryApplication: e.libraryApplication,
         size: f.zx.Sizes.SMALL,
         className: M.gameActionButton,

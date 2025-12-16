@@ -50,7 +50,7 @@ function O(e) {
         children: [(0, r.jsx)(c.u, {
           targetElementRef: v,
           shouldShow: !t,
-          text: E.intl.string(E.t.GSmTKJ),
+          text: _.intl.string(_.t.GSmTKJ),
           children: (0, r.jsx)(u.P3F, (s = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -73,9 +73,9 @@ function O(e) {
             innerRef: v,
             onClick: e,
             "data-jump-section": l,
-            "aria-label": E.intl.string(E.t.GSmTKJ),
-            className: a()(_.clickable, {
-              [_.withHighlight]: C
+            "aria-label": _.intl.string(_.t.GSmTKJ),
+            className: a()(E.clickable, {
+              [E.withHighlight]: C
             }),
             children: y || i ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(d.ZP, {
@@ -84,8 +84,8 @@ function O(e) {
                 width: o.Z[S],
                 children: T
               }), (0, r.jsx)("span", {
-                className: a()(_.badge, {
-                  [_.smol]: "refresh_sm" === S
+                className: a()(E.badge, {
+                  [E.smol]: "refresh_sm" === S
                 })
               })]
             }) : T

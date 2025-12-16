@@ -102,13 +102,13 @@ let k = function(e) {
   } = (0, d.ZP)(u.Z.FRIENDS_LIST), {
     rows: s,
     section: R
-  } = (0, l.cj)([E.ZP], () => E.ZP.getState()), k = (0, l.e7)([_.Z], () => _.Z.isFocused()), {
+  } = (0, l.cj)([_.ZP], () => _.ZP.getState()), k = (0, l.e7)([E.Z], () => E.Z.isFocused()), {
     relationshipCount: U,
     hasBlockedOrIgnored: G
   } = (0, l.cj)([b.Z], () => ({
     relationshipCount: b.Z.getRelationshipCount(),
     hasBlockedOrIgnored: b.Z.getBlockedOrIgnoredIDs().length > 0
-  })), [B, H] = i.useState(() => {
+  })), [H, B] = i.useState(() => {
     let e = {};
     for (let t of Object.values(j.pJs)) e[t] = "";
     return e
@@ -152,14 +152,14 @@ let k = function(e) {
         }), n)
     }
   }, [k, R, V]), W = i.useCallback(e => {
-    H(w(Z({}, B), {
+    B(w(Z({}, H), {
       [R]: e
     }))
-  }, [B, R]), q = i.useCallback(() => {
-    H(w(Z({}, B), {
+  }, [H, R]), q = i.useCallback(() => {
+    B(w(Z({}, H), {
       [R]: ""
     }))
-  }, [B, R]), K = i.useMemo(() => R === j.pJs.PENDING && (s.filter(j.pJs.SPAM).length > 0 || s.filter(j.pJs.PENDING_IGNORED).length > 0), [s, R]), Q = i.useMemo(() => s.filter(R, B[R]), [s, B, R]), J = R === j.pJs.PENDING, X = i.useMemo(() => {
+  }, [H, R]), K = i.useMemo(() => R === j.pJs.PENDING && (s.filter(j.pJs.SPAM).length > 0 || s.filter(j.pJs.PENDING_IGNORED).length > 0), [s, R]), Q = i.useMemo(() => s.filter(R, H[R]), [s, H, R]), J = R === j.pJs.PENDING, X = i.useMemo(() => {
     if (!J) return L;
     let e = [];
     return Q.forEach(t => {
@@ -266,11 +266,11 @@ let k = function(e) {
       R === j.pJs.ALL && (0, g.d$)()
     }, [R]), i.useEffect(() => {
       z(false)
-    }, [R, $]), 0 === Q.length && "" === B[R]) return (0, r.jsx)(M, {
+    }, [R, $]), 0 === Q.length && "" === H[R]) return (0, r.jsx)(M, {
     section: R,
     showSpamCta: K
   });
-  let es = "" !== B[R],
+  let es = "" !== H[R],
     eo = 0 === Q.length && es;
   return (0, r.jsx)(d.Gt, {
     value: n,
@@ -279,7 +279,7 @@ let k = function(e) {
       children: [G && (0, r.jsx)(C.R, {}), (0, r.jsx)("div", {
         className: A.searchBar,
         children: (0, r.jsx)(a.E1j, {
-          query: B[R],
+          query: H[R],
           onChange: W,
           onClear: q
         })

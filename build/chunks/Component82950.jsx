@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 82950, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -36,7 +36,7 @@ function m(e) {
   return e
 }
 let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
-  E = e => {
+  _ = e => {
     let {
       guild: t,
       title: n,
@@ -45,8 +45,8 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       type: d,
       imageMarginX: p,
       imageMarginTop: m,
-      trackingSource: E,
-      undismissable: _,
+      trackingSource: _,
+      undismissable: E,
       onDismissed: O,
       onClick: v,
       cta: y,
@@ -65,7 +65,7 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       size: s.zx.Sizes.SMALL,
       onClick: () => {
         null != d && u.default.track(f.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
-          source: E,
+          source: _,
           guild_id: t.id,
           notice_type: d
         }), null == v || v()
@@ -77,7 +77,7 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
     let S = null != p ? "".concat(p, "px") : "16px";
     return (0, r.jsxs)("div", {
       className: h.channelNotice,
-      children: [true === _ ? null : (0, r.jsx)(o.P3F, {
+      children: [true === E ? null : (0, r.jsx)(o.P3F, {
         onClick: () => {
           c.ZP.trackWithMetadata(f.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: d
@@ -115,9 +115,9 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       })]
     })
   },
-  _ = function(e) {
+  E = function(e) {
     let {
       showRedesignedChannelNotice: t
     } = (0, d.o)(true);
-    return t ? (0, r.jsx)(p.Z, m({}, e)) : (0, r.jsx)(E, m({}, e))
+    return t ? (0, r.jsx)(p.Z, m({}, e)) : (0, r.jsx)(_, m({}, e))
   }

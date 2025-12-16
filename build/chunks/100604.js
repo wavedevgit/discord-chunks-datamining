@@ -2,7 +2,7 @@
 /** chunk id: 100604, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  r: () => h
+  r: () => g
 });
 var Chunk933557 = require("./933557.js"),
   Chunk356264 = require("./356264.js"),
@@ -42,12 +42,23 @@ function m(e, t) {
     })
   }
 }
-class h {
+
+function h(e, t) {
+  return {
+    originLabel: e,
+    timestampLabel: t,
+    accessibilityLabel: f.intl.formatToPlainString(f.t["+l04BN"], {
+      origin: e,
+      timestamp: t
+    })
+  }
+}
+class g {
   getForwardInfo() {
     var e, t, n, u;
-    let p = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk592125.Z,
-      _ = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Chunk594174.default,
-      h = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Chunk699516.Z,
+    let f = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk592125.Z,
+      p = arguments.length > 1 && true !== arguments[1] ? arguments[1] : Chunk594174.default,
+      _ = arguments.length > 2 && true !== arguments[2] ? arguments[2] : Chunk699516.Z,
       g = arguments.length > 3 && true !== arguments[3] ? arguments[3] : Chunk496675.Z,
       E = arguments.length > 4 && true !== arguments[4] ? arguments[4] : Chunk430824.Z,
       b = arguments.length > 5 && true !== arguments[5] ? arguments[5] : Chunk356264.Z,
@@ -57,9 +68,9 @@ class h {
         messageSnapshot: v
       } = this,
       S = (0, Chunk55935.Xf)(v.message.timestamp),
-      I = p.getChannel(this.parentMessage.channel_id);
+      I = Chunk388032.getChannel(this.parentMessage.channel_id);
     if (null != I && I.guild_id === (null == (e = O.messageReference) ? true : module.guild_id)) {
-      let e = p.getChannel(null == (n = O.messageReference) ? true : require.channel_id);
+      let e = Chunk388032.getChannel(null == (n = O.messageReference) ? true : require.channel_id);
       if (null == module) {
         let e = E.getGuild(I.guild_id);
         return null == module ? {
@@ -69,20 +80,11 @@ class h {
           footerInfo: m(module, S)
         }
       }
-      if (!g.can(module.accessPermissions, module)) return {
-        snapshotIndex: y
-      };
-      let t = (0, Chunk933557.F6)(module, _, h, true);
-      return {
+      return g.can(module.accessPermissions, module) ? {
         snapshotIndex: y,
-        footerInfo: {
-          originLabel: exports,
-          timestampLabel: S,
-          accessibilityLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t["+l04BN"], {
-            origin: exports,
-            timestamp: S
-          })
-        }
+        footerInfo: h((0, Chunk933557.F6)(module, p, _, true), S)
+      } : {
+        snapshotIndex: y
       }
     }
     let T = null == (t = O.messageReference) ? true : exports.guild_id;

@@ -1,21 +1,24 @@
-/** Chunk was on 33648 **/
-/** chunk id: 797394, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 797394, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   KF: () => o,
-  Lb: () => s,
-  Ni: () => u,
-  m: () => h,
-  v$: () => c,
+  Lb: () => a,
+  Ni: () => s,
+  m: () => u,
+  v$: () => l,
   xy: () => i,
-  zd: () => d
+  zd: () => c
 }), require("./388685.js");
-var l, a, Chunk981631 = require("./981631.js");
+var Chunk981631 = require("./981631.js");
 let i = 15,
-  s = 3,
+  a = 3,
   o = "1312632705086787756";
-var u = 12633 == require.j ? ((l = {})[l.MESSAGE = 0] = "MESSAGE", l[l.ACTIVITY = 2] = "ACTIVITY", l[l.CUSTOM_STATUS = 3] = "CUSTOM_STATUS", l[l.GENERATED_CANDIDATE = 4] = "GENERATED_CANDIDATE", l[l.GUILD_EVENT = 5] = "GUILD_EVENT", l[l.RECOMMENDED_GUILDS = 6] = "RECOMMENDED_GUILDS", l) : null;
+var s = function(e) {
+  return e[e.MESSAGE = 0] = "MESSAGE", e[e.ACTIVITY = 2] = "ACTIVITY", e[e.CUSTOM_STATUS = 3] = "CUSTOM_STATUS", e[e.GENERATED_CANDIDATE = 4] = "GENERATED_CANDIDATE", e[e.GUILD_EVENT = 5] = "GUILD_EVENT", e[e.RECOMMENDED_GUILDS = 6] = "RECOMMENDED_GUILDS", e
+}({});
 
-function c(e) {
+function l(e) {
   switch (e.type) {
     case 0:
       var t;
@@ -34,6 +37,8 @@ function c(e) {
       return "generated_candidate"
   }
 }
-let d = new Set([0, 3, 4]);
+let c = new Set([0, 3, 4]);
 Chunk981631.hBH.IMAGE, Chunk981631.hBH.GIFV;
-var h = 12633 == require.j ? ((a = {})[a.DEFAULT = 0] = "DEFAULT", a[a.BOOKMARKS = 2] = "BOOKMARKS", a) : null
+var u = function(e) {
+  return e[e.DEFAULT = 0] = "DEFAULT", e[e.BOOKMARKS = 2] = "BOOKMARKS", e
+}({})

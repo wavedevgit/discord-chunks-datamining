@@ -48,7 +48,7 @@ function N(e) {
     popoutProps: o,
     ref: h,
     focusSectionProps: b
-  } = e, [O, v] = i.useState(false), N = (0, E.D)(), j = s || N, P = s || j, {
+  } = e, [O, v] = i.useState(false), N = (0, _.D)(), j = s || N, P = s || j, {
     backForwardButtons: x,
     titlebarIconSize: A,
     titlebarHoverHighlight: Z
@@ -61,7 +61,7 @@ function N(e) {
   }), {
     badge: L,
     badgeType: R
-  } = (0, _.h6)({
+  } = (0, E.h6)({
     isSelected: j
   }), D = (0, m.isDesktop)() && x, M = (0, g.A)(), k = (0, m.isMac)() ? C[M] : D ? S[M] : T[M];
   return (0, r.jsxs)(d.Kqy, {

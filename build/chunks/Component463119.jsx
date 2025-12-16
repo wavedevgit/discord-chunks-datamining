@@ -95,7 +95,7 @@ let G = e => {
       text: R.intl.string(R.t.y2b7CA)
     })
   },
-  B = () => {
+  H = () => {
     let {
       noCache: e,
       includeUnpublished: t
@@ -106,7 +106,7 @@ let G = e => {
       includeBundles: true
     }, true, true), null
   },
-  H = e => {
+  B = e => {
     var {
       selected: t,
       locationState: n,
@@ -120,22 +120,22 @@ let G = e => {
     let h = (0, s.JA)("shop"),
       m = b.Z.HOME_PAGE_SHOP_TAB,
       {
-        analyticsLocations: _
-      } = (0, E.ZP)(m),
+        analyticsLocations: E
+      } = (0, _.ZP)(m),
       [O, v] = i.useState(false),
       y = i.useCallback(() => {
         true !== a && a(), true !== o && (0, C.mK)({
           tab: o,
-          analyticsLocations: _,
+          analyticsLocations: E,
           analyticsSource: m
         }), v(true), (0, C.Sm)({
           analyticsSource: m,
-          analyticsLocations: _
+          analyticsLocations: E
         })
-      }, [m, _, a, v, o]),
+      }, [m, E, a, v, o]),
       I = w.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
-      children: [O && (0, r.jsx)(B, {}), (0, r.jsx)(g.Qj, k(M({
+      children: [O && (0, r.jsx)(H, {}), (0, r.jsx)(g.Qj, k(M({
         selected: t,
         route: I,
         icon: null != l ? l : p.EOn,
@@ -149,7 +149,7 @@ let G = e => {
       }))]
     })
   },
-  V = e => (0, r.jsx)(H, k(M({}, e), {
+  V = e => (0, r.jsx)(B, k(M({}, e), {
     children: (0, r.jsx)(G, {})
   })),
   F = Chunk473749.memo(function(e) {
@@ -158,7 +158,7 @@ let G = e => {
       displayOptions: n,
       assetId: i,
       reducedMotion: l = false
-    } = e, a = null != i ? (0, _.Z)(i, p.EFr.SIZE_80, !l) : true, s = n.title(), o = null == (t = n.body) ? true : t.call(n), c = null == o || "" === o;
+    } = e, a = null != i ? (0, E.Z)(i, p.EFr.SIZE_80, !l) : true, s = n.title(), o = null == (t = n.body) ? true : t.call(n), c = null == o || "" === o;
     return (0, r.jsxs)("div", {
       className: D.shopMarketingTooltipContent,
       children: [(0, r.jsx)("div", {
@@ -190,7 +190,7 @@ let G = e => {
   },
   Y = e => {
     let t, n;
-    var l, s, c, u, f, g, b, E, _, O, v, y, {
+    var l, s, c, u, f, g, b, _, E, O, v, y, {
         displayOptions: C
       } = e,
       T = U(e, ["displayOptions"]);
@@ -199,26 +199,26 @@ let G = e => {
       [x, A] = i.useState(false),
       [Z, w] = i.useState(false),
       L = i.useRef(null),
-      B = i.useRef(null),
+      H = i.useRef(null),
       V = (0, h.ZP)(),
       Y = (0, d.wj)(V),
       W = (0, S.p)({
         location: "CollectiblesShopButton"
       }),
       q = W.useNewHoverStyle ? D.marketingButtonBackgroundNew : D.marketingButtonBackground;
-    x ? Y ? (t = null == (l = C.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (c = C.entrypointBackgroundStyle) || null == (s = c.hovered) ? true : s.dark) : (t = null == (u = C.entryPointBackgroundAssets) ? true : u.srcLightHovered, n = null == (g = C.entrypointBackgroundStyle) || null == (f = g.hovered) ? true : f.light) : Y ? (t = null == (b = C.entryPointBackgroundAssets) ? true : b.srcDark, n = null == (_ = C.entrypointBackgroundStyle) || null == (E = _.resting) ? true : E.dark) : (t = null == (O = C.entryPointBackgroundAssets) ? true : O.srcLight, n = null == (y = C.entrypointBackgroundStyle) || null == (v = y.resting) ? true : v.light);
+    x ? Y ? (t = null == (l = C.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (c = C.entrypointBackgroundStyle) || null == (s = c.hovered) ? true : s.dark) : (t = null == (u = C.entryPointBackgroundAssets) ? true : u.srcLightHovered, n = null == (g = C.entrypointBackgroundStyle) || null == (f = g.hovered) ? true : f.light) : Y ? (t = null == (b = C.entryPointBackgroundAssets) ? true : b.srcDark, n = null == (E = C.entrypointBackgroundStyle) || null == (_ = E.resting) ? true : _.dark) : (t = null == (O = C.entryPointBackgroundAssets) ? true : O.srcLight, n = null == (y = C.entrypointBackgroundStyle) || null == (v = y.resting) ? true : v.light);
     let K = i.useCallback(e => {
         C.assetIds.length > 0 && P(e => (e + 1) % C.assetIds.length), A(true);
         let t = () => {
           w(W.useNewHoverStyle && z(L))
         };
-        t(), B.current = requestAnimationFrame(t), null == e || e()
+        t(), H.current = requestAnimationFrame(t), null == e || e()
       }, [C.assetIds.length, W.useNewHoverStyle]),
       Q = i.useCallback(e => {
-        A(false), w(false), null != B.current && (cancelAnimationFrame(B.current), B.current = null), null == e || e()
+        A(false), w(false), null != H.current && (cancelAnimationFrame(H.current), H.current = null), null == e || e()
       }, []);
     i.useEffect(() => () => {
-      null != B.current && cancelAnimationFrame(B.current)
+      null != H.current && cancelAnimationFrame(H.current)
     }, []);
     let J = C.title();
     return (0, r.jsx)(p.aML, {
@@ -234,7 +234,7 @@ let G = e => {
       allowOverflow: true,
       hideOnClick: false,
       "aria-label": "string" == typeof J ? J : R.intl.string(R.t.rSXaxY),
-      children: e => (0, r.jsxs)(H, k(M(k(M({
+      children: e => (0, r.jsxs)(B, k(M(k(M({
         className: null != C.entryPointClassName ? (0, I.l)(D, C.entryPointClassName) : true
       }, T), {
         icon: C.entryPointIcon
@@ -281,7 +281,7 @@ let G = e => {
       delay: 100,
       hideOnClick: false,
       "aria-label": t.title(),
-      children: e => (0, r.jsx)(H, k(M({}, n, e), {
+      children: e => (0, r.jsx)(B, k(M({}, n, e), {
         children: (0, r.jsx)(G, {
           color: t.badgeColor
         })
@@ -302,10 +302,10 @@ let G = e => {
       b = (0, S.p)({
         location: "CollectiblesShopButton"
       }),
-      E = b.useNewHoverStyle ? D.marketingButtonBackgroundNew : D.marketingButtonBackground,
-      _ = l.entryPointBackgroundAssets,
+      _ = b.useNewHoverStyle ? D.marketingButtonBackgroundNew : D.marketingButtonBackground,
+      E = l.entryPointBackgroundAssets,
       O = l.entrypointBackgroundStyle,
-      v = m ? null == _ ? true : _.srcDarkHovered : null == _ ? true : _.srcLightHovered,
+      v = m ? null == E ? true : E.srcDarkHovered : null == E ? true : E.srcLightHovered,
       y = m ? null == O || null == (t = O.hovered) ? true : t.dark : null == O || null == (n = O.hovered) ? true : n.light;
     return i.useEffect(() => {
       if (null == v || "" === v) return void f(false);
@@ -318,12 +318,12 @@ let G = e => {
         cancelAnimationFrame(t)
       }
     }, [v, b.useNewHoverStyle]), (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(H, k(M({}, o), {
+      children: [(0, r.jsxs)(B, k(M({}, o), {
         onClick: () => s(L.L.TAKE_ACTION),
         listItemRef: c,
         children: [(0, r.jsx)("div", {
           ref: u,
-          className: E,
+          className: _,
           style: null != y ? {
             background: y
           } : true,
@@ -348,7 +348,7 @@ let G = e => {
     } = e, n = U(e, ["dismissContent"]);
     let l = i.useRef(null);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(H, k(M({}, n), {
+      children: [(0, r.jsx)(B, k(M({}, n), {
         onClick: () => t(L.L.TAKE_ACTION),
         listItemRef: l
       })), (0, r.jsx)(j.Z, {
@@ -397,5 +397,5 @@ let G = e => {
     }
     return d === c.z.WISHLIST_SHOP_BUTTON_POPOVER ? (0, r.jsx)(K, k(M({}, g), {
       dismissContent: f
-    })) : (0, r.jsx)(H, M({}, g))
+    })) : (0, r.jsx)(B, M({}, g))
   }

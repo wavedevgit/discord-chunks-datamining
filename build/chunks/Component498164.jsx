@@ -88,7 +88,7 @@ let M = {
       if (null == S.default.getCurrentUser()) return;
       let {
         guildTemplate: i
-      } = await E.Z.resolveGuildTemplate(t);
+      } = await _.Z.resolveGuildTemplate(t);
       if (null == i) throw new x.Z({
         errorCode: w.lTL.INVALID_GUILD_TEMPLATE
       }, "Invalid guild template id: ".concat(t));
@@ -228,8 +228,8 @@ let M = {
         case Z.jE.OAUTH2:
           let r = new URL(w.Z5c.OAUTH2_AUTHORIZE, window.location.origin);
           r.search = n.search;
-          let l = (0, _.getOAuth2AuthorizeProps)(r.toString());
-          if (null != l) return (0, _.openOAuth2ModalWithCreateGuildModal)(l), true;
+          let l = (0, E.getOAuth2AuthorizeProps)(r.toString());
+          if (null != l) return (0, E.openOAuth2ModalWithCreateGuildModal)(l), true;
           returnfalse;
         case Z.jE.ONE_TIME_LOGIN:
           if (null != n) return (0, O.Y)({

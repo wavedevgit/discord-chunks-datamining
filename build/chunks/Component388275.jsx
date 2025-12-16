@@ -23,32 +23,32 @@ function f(e) {
     selectedDestinations: f,
     onSend: p,
     inputValue: v,
-    setInputValue: w
-  } = e, b = (0, o.Z)(), x = (0, c.nm)(f), C = (0, d.Ad)(), {
-    textValue: y,
-    richValue: j
-  } = v, [O, E] = a.useState(false), T = a.useCallback(() => E(true), []), _ = a.useCallback(() => E(false), []), P = a.useCallback((e, n, l) => {
-    w({
+    setInputValue: x
+  } = e, b = (0, o.Z)(), w = (0, c.nm)(f), j = (0, d.Ad)(), {
+    textValue: C,
+    richValue: y
+  } = v, [P, O] = a.useState(false), S = a.useCallback(() => O(true), []), T = a.useCallback(() => O(false), []), k = a.useCallback((e, n, l) => {
+    x({
       textValue: n,
       richValue: l
-    }), null != t && (r.Z.saveDraft(t.channel_id, n, u.d.ForwardContextMessage), C(t.channel_id, t.id))
-  }, [C, t, w]), S = a.useCallback(() => {
-    null != t && (r.Z.clearDraft(t.channel_id, u.d.ForwardContextMessage), p(y))
-  }, [t, p, y]), D = a.useCallback(() => (!n || y.length > b || S(), Promise.resolve({
+    }), null != t && (r.Z.saveDraft(t.channel_id, n, u.d.ForwardContextMessage), j(t.channel_id, t.id))
+  }, [j, t, x]), Z = a.useCallback(() => {
+    null != t && (r.Z.clearDraft(t.channel_id, u.d.ForwardContextMessage), p(C))
+  }, [t, p, C]), D = a.useCallback(() => (!n || C.length > b || Z(), Promise.resolve({
     shouldClear: false,
     shouldRefocus: true
-  })), [S, y, b, n]);
+  })), [Z, C, b, n]);
   return (0, l.jsx)(s.ZP, {
     innerClassName: g.messageInput,
-    onChange: P,
+    onChange: k,
     placeholder: m.intl.string(m.t.ZroO3G),
-    channel: x,
-    textValue: y,
-    richValue: j,
+    channel: w,
+    textValue: C,
+    richValue: y,
     type: i.Ie.FORWARD_MESSAGE_INPUT,
-    onBlur: _,
-    onFocus: T,
-    focused: O,
+    onBlur: T,
+    onFocus: S,
+    focused: P,
     onSubmit: D,
     parentModalKey: h.so,
     autoCompletePosition: "bottom",

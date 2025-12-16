@@ -36,15 +36,15 @@ function v(e) {
         (0, h.Z)("header_bar"), I && l(b.L.INDIRECT_ACTION)
       },
       icon: s.d5i,
-      tooltip: _.intl.string(E.default["CdU/PF"]),
+      tooltip: E.intl.string(_.default["CdU/PF"]),
       foreground: a()(O.iconForeground, I ? O.highlighted : null)
     }), !I && v && (0, r.jsx)(u.J2, {
       targetElementRef: y,
-      title: _.intl.string(E.default.goiR2u),
-      body: _.intl.string(E.default.UYjWa5),
+      title: E.intl.string(_.default.goiR2u),
+      body: E.intl.string(_.default.UYjWa5),
       onRequestClose: C,
       actions: [{
-        text: _.intl.string(_.t["NX+WJN"]),
+        text: E.intl.string(E.t["NX+WJN"]),
         onClick: C
       }]
     }), I && (0, r.jsx)(m.Z, {

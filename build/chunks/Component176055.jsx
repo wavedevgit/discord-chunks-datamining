@@ -76,8 +76,8 @@ class N extends Chunk473749.PureComponent {
       p = Chunk388032.intl.string(Chunk388032.t.pxwdrA),
       f = this.handleJoinOrView,
       b = Chunk755721.zx.Looks.FILLED,
-      E = Chunk755721.zx.Colors.PRIMARY;
-    return Chunk120356 ? require ? (b = Chunk755721.zx.Looks.OUTLINED, E = Chunk612510.buttonColorInGuild, p = (0, Chunk54381.jsxs)(Chunk600164.Z, {
+      _ = Chunk755721.zx.Colors.PRIMARY;
+    return Chunk120356 ? require ? (b = Chunk755721.zx.Looks.OUTLINED, _ = Chunk612510.buttonColorInGuild, p = (0, Chunk54381.jsxs)(Chunk600164.Z, {
       align: Chunk600164.Z.Align.CENTER,
       children: [(0, Chunk54381.jsx)("div", {
         children: Chunk388032.intl.string(Chunk388032.t.cEnaWx)
@@ -125,7 +125,7 @@ class N extends Chunk473749.PureComponent {
         skuId: t,
         isInGuild: n,
         isLurking: r
-      } = this.props, i = () => (0, _.X)(e.id);
+      } = this.props, i = () => (0, E.X)(e.id);
       if (r)(0, p.Oj)(t).then(i);
       else if (n) i();
       else try {
@@ -138,7 +138,7 @@ class N extends Chunk473749.PureComponent {
       let e = {
         redirect_to: I.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
       };
-      (0, E.uL)(I.Z5c.LOGIN, {
+      (0, _.uL)(I.Z5c.LOGIN, {
         search: (0, s.stringify)(e),
         source: "verified_guild_invite"
       })

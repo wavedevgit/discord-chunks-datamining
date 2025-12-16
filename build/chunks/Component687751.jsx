@@ -20,7 +20,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk484710 = require("./484710.js");
 
-function E(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function E(e) {
   }
   return e
 }
-class _ extends Chunk317770.Z {
+class E extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.subscribe("CHANNEL_SELECT", this.handleChannelSelect), Chunk570140.Z.subscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), Chunk570140.Z.subscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), Chunk570140.Z.subscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), Chunk570140.Z.subscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), Chunk570140.Z.subscribe("GUILD_UPDATE", this.handleGuildUpdate)
   }
@@ -65,7 +65,7 @@ class _ extends Chunk317770.Z {
       let {
         default: e
       } = await Promise.all([n.e("1716"), n.e("22611")]).then(n.bind(n, 746882));
-      return n => (0, r.jsx)(e, E({
+      return n => (0, r.jsx)(e, _({
         source: t
       }, n))
     }, {
@@ -81,7 +81,7 @@ class _ extends Chunk317770.Z {
     let {
       underageMessage: t
     } = e;
-    (0, i.oav)(h.dG, e => (0, r.jsx)(g.default, E({
+    (0, i.oav)(h.dG, e => (0, r.jsx)(g.default, _({
       underageMessage: t
     }, e)))
   }
@@ -95,4 +95,4 @@ class _ extends Chunk317770.Z {
     if (null != n && t.id === n && (t.owner_configured_content_level === m.V_K.AGE_RESTRICTED || (0, f.X)("age_gate_manager") && c.Ov.has(t.nsfw_level))) return void(0, p.I8)(t.id, null)
   }
 }
-let O = new _
+let O = new E

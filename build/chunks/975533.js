@@ -69,7 +69,7 @@ function k(e, t, n, r) {
     u = s.latched.size > 0,
     d = c || u,
     p = s.priorityHeldOrLatched.size > 0;
-  (0, E.I)(c, p, d)
+  (0, _.I)(c, p, d)
 }
 let U = {
   [Chunk981631.kg4.TOGGLE_PRIORITY_SPEAKER]: {
@@ -310,22 +310,22 @@ function G() {
   M.clear(), (0, Chunk837968.I)(false, false, false)
 }
 
-function B(e) {
+function H(e) {
   let {
     hasLatchPermission: t
   } = e;
   if (t === D) returnfalse;
   (D = t) || G()
 }
-class H extends Chunk317770.Z {
+class B extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.wait(() => Chunk570140.Z.dispatch({
       type: "KEYBINDS_REGISTER_GLOBAL_KEYBIND_ACTIONS",
       keybinds: U
-    })), Chunk570140.Z.subscribe("AUDIO_SET_MODE", G), Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk570140.Z.subscribe("SET_VAD_PERMISSION", B)
+    })), Chunk570140.Z.subscribe("AUDIO_SET_MODE", G), Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk570140.Z.subscribe("SET_VAD_PERMISSION", H)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("AUDIO_SET_MODE", G), Chunk570140.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk570140.Z.unsubscribe("SET_VAD_PERMISSION", B)
+    Chunk570140.Z.unsubscribe("AUDIO_SET_MODE", G), Chunk570140.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), Chunk570140.Z.unsubscribe("SET_VAD_PERMISSION", H)
   }
   handleVoiceChannelSelect(e) {
     let {
@@ -335,4 +335,4 @@ class H extends Chunk317770.Z {
     t !== n && G()
   }
 }
-let V = new H
+let V = new B

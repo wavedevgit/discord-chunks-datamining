@@ -22,7 +22,7 @@ let g = function(e) {
     footer: h,
     sectionFilter: m,
     renderSectionFooter: b
-  } = e, E = e => {
+  } = e, _ = e => {
     let {
       section: r,
       row: i
@@ -30,7 +30,7 @@ let g = function(e) {
     if (null == l || null == i) return null;
     let a = l[i];
     return null == a ? null : n(a, r)
-  }, _ = i.useCallback((e, n) => {
+  }, E = i.useCallback((e, n) => {
     var r;
     let i = null == (r = t[e]) ? true : r[n];
     return m === d.pJs.ALL && (null == i ? true : i.giftIntentType) === p.hX.FRIEND_ANNIVERSARY && 0 === e ? u.fJ : u.NV
@@ -110,8 +110,8 @@ let g = function(e) {
               var n;
               C.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
             },
-            renderRow: E,
-            rowHeight: _,
+            renderRow: _,
+            rowHeight: E,
             renderSection: O,
             sectionHeight: u.aS,
             renderFooter: v,

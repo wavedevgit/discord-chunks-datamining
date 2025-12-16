@@ -52,7 +52,7 @@ let w = 15 * Chunk70956.Z.Millis.MINUTE,
       applicationStreams: g,
       currentActivities: h,
       voiceChannels: m
-    } = t, b = f.length, E = g.length, _ = h.length, O = m.length > 0, y = p.o.useConfig({
+    } = t, b = f.length, _ = g.length, E = h.length, O = m.length > 0, y = p.o.useConfig({
       location: "itemcard"
     }).demureActivityCards, I = i.useCallback(() => {
       let e = h.filter(e => {
@@ -61,12 +61,12 @@ let w = 15 * Chunk70956.Z.Millis.MINUTE,
       }).map(e => e.game.name);
       v.default.track(P.rMx.NOW_PLAYING_CARD_HOVERED, {
         num_users: b,
-        num_streams: E,
-        num_activities: _,
+        num_streams: _,
+        num_activities: E,
         in_voice_channel: O,
         games_detected: e
       })
-    }, [b, E, _, O, h]), j = i.useMemo(() => o()(I, w), [I]);
+    }, [b, _, E, O, h]), j = i.useMemo(() => o()(I, w), [I]);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: s,
       position: "left",

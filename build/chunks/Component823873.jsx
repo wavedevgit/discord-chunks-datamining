@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 823873, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => _
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,17 +19,17 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk617821 = require("./617821.js");
 
-function E(e) {
+function _(e) {
   var t, n;
   let {
-    eventId: E
-  } = e, _ = (0, l.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(E), [E]), O = (0, l.e7)([h.Z], () => h.Z.getGuild(null == _ ? true : _.guild_id), [_]), v = (0, l.e7)([g.Z], () => g.Z.getChannel(null == _ ? true : _.channel_id), [_]), y = (0, u.zI)(E, null), I = null != _ && (0, o.xt)(_), C = null != _ ? (0, f.DK)(_) : null, S = (0, d.Z)(null == _ ? true : _.guild_id, null == _ ? true : _.id, C), T = null == y ? true : y.startTime.toISOString(), {
+    eventId: _
+  } = e, E = (0, l.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(_), [_]), O = (0, l.e7)([h.Z], () => h.Z.getGuild(null == E ? true : E.guild_id), [E]), v = (0, l.e7)([g.Z], () => g.Z.getChannel(null == E ? true : E.channel_id), [E]), y = (0, u.zI)(_, null), I = null != E && (0, o.xt)(E), C = null != E ? (0, f.DK)(E) : null, S = (0, d.Z)(null == E ? true : E.guild_id, null == E ? true : E.id, C), T = null == y ? true : y.startTime.toISOString(), {
     startDateTimeString: N
   } = i.useMemo(() => I ? {
     startDateTimeString: m.intl.string(m.t.TxqPQR)
-  } : (0, f.ub)(null != T ? T : new Date().toISOString()), [T, I]), j = null != _ ? (0, p.cS)(_) : true, P = null != (t = null == v ? true : v.name) ? t : j, x = null != v ? (0, s.KS)(v) : null;
-  if (null == _ || null == O) return null;
-  let A = null != _.description && _.description.length > 0;
+  } : (0, f.ub)(null != T ? T : new Date().toISOString()), [T, I]), j = null != E ? (0, p.cS)(E) : true, P = null != (t = null == v ? true : v.name) ? t : j, x = null != v ? (0, s.KS)(v) : null;
+  if (null == E || null == O) return null;
+  let A = null != E.description && E.description.length > 0;
   return (0, r.jsxs)("div", {
     className: b.eventContainer,
     children: [(0, r.jsx)("div", {
@@ -42,12 +42,12 @@ function E(e) {
     }), (0, r.jsx)(a.Text, {
       variant: "text-lg/semibold",
       className: A ? b.eventTitle : true,
-      children: _.name
+      children: E.name
     }), A && (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "text-subtle",
       className: b.eventDescription,
-      children: (0, c.m)(null != (n = _.description) ? n : "", true, {
+      children: (0, c.m)(null != (n = E.description) ? n : "", true, {
         guildId: O.id
       })
     }), (0, r.jsx)("hr", {
