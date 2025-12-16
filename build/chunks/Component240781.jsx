@@ -6,7 +6,8 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
+  Chunk392711 = require("./392711.js"),
   Chunk278074 = require("./278074.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -21,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk204418 = require("./204418.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk314183 = require("./314183.js");
-let P = [{
+let y = [{
     avatarSize: Chunk481060.EFr.SIZE_40,
     showStatus: false
   }, {
@@ -37,31 +38,31 @@ let P = [{
   O = e => {
     let {
       purchase: t
-    } = e, n = (0, o.e7)([h.default], () => h.default.locale), i = (0, d.qS)(t), a = null != t.expiresAt ? (0, f.TD)(Date.now(), t.expiresAt) : null, l = (0, m.ag)(t), s = t.purchasedAt.toLocaleDateString(n, {
+    } = e, n = (0, c.e7)([x.default], () => x.default.locale), i = (0, u.qS)(t), l = null != t.expiresAt ? (0, g.TD)(Date.now(), t.expiresAt) : null, a = (0, p.ag)(t), s = t.purchasedAt.toLocaleDateString(n, {
       month: "long",
       year: "numeric"
     });
     return (0, r.jsxs)("div", {
-      className: j.purchaseInfo,
-      children: [(0, r.jsx)(c.Text, {
+      className: P.purchaseInfo,
+      children: [(0, r.jsx)(d.Text, {
         variant: "text-sm/semibold",
         color: "text-strong",
-        children: l
-      }), null != a && (0, r.jsx)(c.Text, {
+        children: a
+      }), null != l && (0, r.jsx)(d.Text, {
         variant: "text-xxs/normal",
         color: "text-muted",
-        children: b.intl.format(b.t.Io7ozn, {
-          days: a.days.toString()
+        children: j.intl.format(j.t.Io7ozn, {
+          days: l.days.toString()
         })
-      }), (0, r.jsxs)(c.Text, {
+      }), (0, r.jsxs)(d.Text, {
         variant: "text-xxs/normal",
         color: "text-muted",
-        children: [i ? b.intl.format(b.t["req+eY"], {
+        children: [i ? j.intl.format(j.t["req+eY"], {
           dateAcquired: s
-        }) : b.intl.format(b.t.gW9R4B, {
+        }) : j.intl.format(j.t.gW9R4B, {
           date: s
         }), null != t.expiresAt && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("br", {}), b.intl.format(b.t.eZSTa5, {
+          children: [(0, r.jsx)("br", {}), j.intl.format(j.t.eZSTa5, {
             date: t.expiresAt.toLocaleDateString(n, {
               minute: "numeric",
               hour: "numeric",
@@ -71,10 +72,10 @@ let P = [{
             })
           })]
         })]
-      }), i && (0, r.jsx)(c.Text, {
+      }), i && (0, r.jsx)(d.Text, {
         variant: "text-xxs/normal",
         color: "text-muted",
-        children: b.intl.string(b.t.nKdAlO)
+        children: j.intl.string(j.t.nKdAlO)
       })]
     })
   },
@@ -82,64 +83,64 @@ let P = [{
     let {
       user: t,
       guildId: n,
-      avatarDecoration: a,
-      className: h
-    } = e, f = (0, o.e7)([x.Z], () => x.Z.getStatus(t.id)), {
+      avatarDecoration: l,
+      className: x
+    } = e, g = (0, c.e7)([f.Z], () => f.Z.getStatus(t.id)), {
       product: w,
-      purchase: y
-    } = (0, u.Z)(null == a ? true : a.skuId), C = v.ZP.canUseCollectibles(t), S = (0, d.qS)(y), I = (0, d.G1)(w), E = !C && S, A = (0, p.M)(!I || C), T = (0, m.kd)(w), _ = i.useMemo(() => E ? b.intl.string(b.t["7vkeu5"]) : (0, s.EQ)([I, C, A]).with([true, true, false], () => b.intl.string(b.t.hmyYK8)).with([true, false, true], () => b.intl.string(b.t.q0PlFn)).with([true, false, false], () => b.intl.string(b.t["0xs2sA"])).otherwise(() => b.intl.string(b.t.fEGjVQ)), [E, I, C, A]);
-    return null != w && (null == y || E) ? (0, r.jsxs)("div", {
-      className: l()(j.modalPreview, j.shopPreviewContainer, h),
+      purchase: S
+    } = (0, m.Z)(null == l ? true : l.skuId), C = v.ZP.canUseCollectibles(t), I = null != S ? (0, u.qS)(S) : (0, u.G1)(w), E = !C && I, A = (0, h.M)(!I || C), T = (0, p.ag)(S), _ = (0, p.kd)(w), D = i.useMemo(() => E ? j.intl.string(j.t["7vkeu5"]) : (0, o.EQ)([I, C, A]).with([true, true, false], () => j.intl.string(j.t.hmyYK8)).with([true, false, true], () => j.intl.string(j.t.q0PlFn)).with([true, false, false], () => j.intl.string(j.t["0xs2sA"])).otherwise(() => j.intl.string(j.t.fEGjVQ)), [E, I, C, A]);
+    return null == S || E ? (0, r.jsxs)("div", {
+      className: a()(P.modalPreview, P.shopPreviewContainer, x),
       children: [(0, r.jsx)("div", {
-        className: j.shopPreviewBanner,
-        children: (0, r.jsx)(g.Z, {
+        className: P.shopPreviewBanner,
+        children: (0, r.jsx)(b.Z, {
           user: t,
           guildId: n,
-          avatarDecorationOverride: a
+          avatarDecorationOverride: l
         })
       }), (0, r.jsxs)("div", {
-        className: j.shopPreviewTextContainer,
-        children: [(0, r.jsx)(c.Text, {
+        className: P.shopPreviewTextContainer,
+        children: [(0, r.jsx)(d.Text, {
           variant: "text-sm/semibold",
-          children: T
-        }), (0, r.jsx)(c.Text, {
+          children: (0, s.isEmpty)(T) ? _ : T
+        }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
-          children: _
+          children: D
         })]
       })]
     }) : (0, r.jsxs)("div", {
-      className: l()(j.modalPreview, h),
+      className: a()(P.modalPreview, x),
       children: [(0, r.jsxs)("div", {
-        className: j.previewSections,
+        className: P.previewSections,
         children: [(0, r.jsx)("div", {
-          className: j.decorationPreview,
-          children: (0, r.jsx)(g.Z, {
+          className: P.decorationPreview,
+          children: (0, r.jsx)(b.Z, {
             user: t,
             guildId: n,
-            avatarDecorationOverride: a
+            avatarDecorationOverride: l
           })
         }), (0, r.jsx)("div", {
-          className: j.smallDecorationPreviewsContainer,
-          children: P.map(e => {
+          className: P.smallDecorationPreviewsContainer,
+          children: y.map(e => {
             let {
               avatarSize: i,
-              showStatus: l
+              showStatus: a
             } = e;
             return (0, r.jsx)("div", {
-              className: j.smallDecorationPreview,
-              children: (0, r.jsx)(g.Z, {
+              className: P.smallDecorationPreview,
+              children: (0, r.jsx)(b.Z, {
                 user: t,
                 guildId: n,
                 avatarSize: i,
-                avatarDecorationOverride: a,
-                status: l ? f : true,
+                avatarDecorationOverride: l,
+                status: a ? g : true,
                 "aria-hidden": true
               })
-            }, "".concat(i).concat(l))
+            }, "".concat(i).concat(a))
           })
         })]
-      }), null != y && (0, r.jsx)(O, {
-        purchase: y
+      }), null != S && (0, r.jsx)(O, {
+        purchase: S
       })]
     })
   }

@@ -25,7 +25,7 @@ let d = {
     return (0, Chunk473749.useMemo)(() => {
       let r = (0, Chunk884697.yn)(module, exports).reduce((t, r) => {
         let i = e.get(r.skuId);
-        return (0, c.G1)(null != i ? i : n.get(r.skuId)) ? t.premium_purchase.push(r) : null != i ? t.purchase.push(r) : t.preview.push(r), t
+        return (null != i ? (0, c.qS)(i) : (0, c.G1)(n.get(r.skuId))) ? t.premium_purchase.push(r) : null != i ? t.purchase.push(r) : t.preview.push(r), t
       }, {
         purchase: [],
         premium_purchase: [],

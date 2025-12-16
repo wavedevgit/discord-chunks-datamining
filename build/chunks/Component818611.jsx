@@ -1,12 +1,12 @@
 /** Chunk was on 79589 **/
 /** chunk id: 818611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => O
 }), require("./314940.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk278074 = require("./278074.js"),
   Chunk481060 = require("./481060.js"),
   Chunk171019 = require("./171019.jsx"),
@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk354841 = require("./354841.js");
 
-function v(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function v(e) {
   return e
 }
 
-function g(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,13 +55,13 @@ function b(e, t) {
   var n, r, i = function(e, t) {
     if (null == e) return {};
     var n, r, i = {},
-      a = Object.keys(e);
-    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      l = Object.keys(e);
+    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var l = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -71,28 +71,28 @@ let j = () => 80,
       children: t,
       className: n,
       onSelect: i,
-      isSelected: a = false
+      isSelected: l = false
     } = e, s = b(e, ["children", "className", "onSelect", "isSelected"]);
-    return (0, r.jsx)(o.P3F, g(v({
-      className: l()(f.decorationGridItem, a ? f.selected : true, n)
+    return (0, r.jsx)(o.P3F, v(g({
+      className: a()(f.decorationGridItem, l ? f.selected : true, n)
     }, s), {
       onClick: i,
       children: t
     }))
   },
-  O = e => {
+  y = e => {
     var {
       user: t,
       avatarDecoration: n,
-      innerRef: a,
-      section: l,
+      innerRef: l,
+      section: a,
       canUsePremiumCollectibles: s,
       isSelected: o = false
     } = e, u = b(e, ["user", "avatarDecoration", "innerRef", "section", "canUsePremiumCollectibles", "isSelected"]);
     let m = i.useRef(null),
       {
         isHoveringOrFocusing: x
-      } = (0, d.Z)(null != a ? a : m),
+      } = (0, d.Z)(null != l ? l : m),
       {
         avatarDecorationSrc: j
       } = (0, h.Z)({
@@ -101,8 +101,8 @@ let j = () => 80,
         size: 80,
         onlyAnimateOnHoverOrFocus: !x
       });
-    return (0, r.jsxs)(P, g(v({
-      innerRef: null != a ? a : m,
+    return (0, r.jsxs)(P, v(g({
+      innerRef: null != l ? l : m,
       isSelected: o
     }, u), {
       children: [(0, r.jsx)("img", {
@@ -112,18 +112,18 @@ let j = () => 80,
       }), (0, r.jsx)(c.Z, {
         skuId: n.skuId,
         canUsePremiumCollectibles: s,
-        isPurchaseSection: l === p.$0.PURCHASE,
-        isPremiumSection: l === p.$0.PREMIUM_PURCHASE
+        isPurchaseSection: a === p.$0.PURCHASE,
+        isPremiumSection: a === p.$0.PREMIUM_PURCHASE
       })]
     }))
   },
-  w = e => {
+  O = e => {
     let {
       user: t,
       guild: n,
       pendingAvatarDecoration: i,
-      selectedAvatarDecorationRef: a,
-      onSelect: l,
+      selectedAvatarDecorationRef: l,
+      onSelect: a,
       onOpenShop: c
     } = e, d = (0, p.ZP)(), h = u.ZP.canUseCollectibles(t);
     return (0, r.jsx)(o.GMG, {
@@ -141,15 +141,15 @@ let j = () => 80,
       paddingHorizontal: 12,
       paddingVertical: 0,
       removeEdgeItemGutters: true,
-      renderItem: (e, u, g, b) => {
+      renderItem: (e, u, v, b) => {
         let {
           section: j,
-          items: w
+          items: O
         } = d[e];
-        return (0, s.EQ)(w[u]).with(p.Tm, () => (0, r.jsxs)(P, {
-          style: v({}, g),
+        return (0, s.EQ)(O[u]).with(p.Tm, () => (0, r.jsxs)(P, {
+          style: g({}, v),
           isSelected: null === i,
-          onSelect: () => l(null),
+          onSelect: () => a(null),
           children: [(0, r.jsx)(o.t6m, {
             size: "md",
             color: "currentColor",
@@ -160,7 +160,7 @@ let j = () => 80,
             children: (0, m.ad)(t, n) ? x.intl.string(x.t.CHf9iJ) : x.intl.string(x.t.PoWNfe)
           })]
         }, b)).with(p.oT, () => (0, r.jsxs)(P, {
-          style: g,
+          style: v,
           onSelect: c,
           children: [(0, r.jsx)(o.EOn, {
             size: "custom",
@@ -175,15 +175,15 @@ let j = () => 80,
           })]
         }, b)).otherwise(e => {
           let n = (null == i ? true : i.skuId) === e.skuId;
-          return (0, r.jsx)(O, {
-            style: v({}, g),
+          return (0, r.jsx)(y, {
+            style: g({}, v),
             user: t,
             avatarDecoration: e,
             section: j,
-            innerRef: n ? a : true,
+            innerRef: n ? l : true,
             canUsePremiumCollectibles: h,
             isSelected: n,
-            onSelect: () => l(e)
+            onSelect: () => a(e)
           }, b)
         })
       },
@@ -193,7 +193,7 @@ let j = () => 80,
         } = d[e];
         return (0, r.jsx)("div", {
           className: f.headings,
-          style: g(v({}, t), {
+          style: v(g({}, t), {
             position: "absolute"
           }),
           children: (0, r.jsx)(o.Text, {

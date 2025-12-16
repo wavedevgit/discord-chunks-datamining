@@ -37,7 +37,7 @@ function C(e) {
     disableApplyButton: a,
     canUsePremiumCollectibles: d,
     selectedProfileEffect: f
-  } = e, g = (0, u.G1)(n);
+  } = e, g = null != i ? (0, u.qS)(i) : (0, u.G1)(n);
   return (0, r.jsx)(r.Fragment, {
     children: (0, r.jsxs)(o.mzw, {
       "data-migration-pending": true,
@@ -58,7 +58,7 @@ function C(e) {
           textOverride: h.ZP.isPremium(t) ? O.intl.string(O.t.KXLX7l) : d ? O.intl.string(O.t.mr4K7D) : O.intl.string(O.t.pj0XBN)
         }
       }), !d && g ? (0, r.jsx)(p.Z, {
-        product: n,
+        product: null != i ? i : n,
         onClose: s
       }) : (0, r.jsx)(o.Button, {
         variant: "secondary",
@@ -101,7 +101,7 @@ function I(e) {
   }, [I, P, v]), {
     product: _,
     purchase: A
-  } = (0, d.Z)(null == w ? true : w.skuId), k = i.useRef(null), N = h.ZP.canUseCollectibles(t), Z = true === x ? (null == I ? true : I.skuId) === (null == p ? true : p.skuId) : (null == I ? true : I.skuId) === (null == x ? true : x.skuId), T = i.useCallback(e => {
+  } = (0, d.Z)(null == w ? true : w.skuId), Z = i.useRef(null), k = h.ZP.canUseCollectibles(t), N = true === x ? (null == I ? true : I.skuId) === (null == p ? true : p.skuId) : (null == I ? true : I.skuId) === (null == x ? true : x.skuId), T = i.useCallback(e => {
     S(e)
   }, [S]), D = i.useCallback(e => {
     b(), (0, a.mK)({
@@ -130,7 +130,7 @@ function I(e) {
         user: t,
         guild: n,
         pendingProfileEffect: I,
-        selectedProfileEffectRef: k,
+        selectedProfileEffectRef: Z,
         onSelect: T,
         onOpenShop: D
       }), (0, r.jsx)(j.Z, {
@@ -149,9 +149,9 @@ function I(e) {
       onOpenShop: D,
       product: _,
       purchase: A,
-      canUsePremiumCollectibles: N,
+      canUsePremiumCollectibles: k,
       selectedProfileEffect: I,
-      disableApplyButton: Z
+      disableApplyButton: N
     })]
   })
 }
