@@ -13,7 +13,7 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk171516 = require("./171516.js"),
   Chunk103450 = require("./103450.js"),
   Chunk652853 = require("./652853.jsx"),
-  Chunk732380 = require("./732380.jsx"),
+  Chunk475413 = require("./475413.jsx"),
   Chunk614716 = require("./614716.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx");
@@ -35,7 +35,7 @@ function m(e) {
     user: t,
     onClose: h
   }), y = (0, l.h)(null == n ? true : n.application_id);
-  if (null == b && null != n && (0, s.Z)(n)) return (0, r.jsx)(d.O1, {
+  if (null == b && null != n && (0, s.Z)(n)) return (0, r.jsx)(d.i6, {
     icon: a.jje,
     text: _.intl.string(_.t.RscU7I),
     fullWidth: g !== p.l.MODAL_V2,
@@ -59,7 +59,7 @@ function m(e) {
   return (0, r.jsx)(i.u, {
     text: I,
     asContainer: !T,
-    children: (0, r.jsx)(d.O1, {
+    children: (0, r.jsx)(d.i6, {
       icon: C ? a.YVR : a.iWm,
       text: S,
       disabled: !T,

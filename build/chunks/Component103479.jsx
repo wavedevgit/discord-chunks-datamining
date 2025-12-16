@@ -12,7 +12,7 @@ var Chunk763472 = require("./763472.js"),
   Chunk49012 = require("./49012.js"),
   Chunk591759 = require("./591759.js"),
   Chunk652853 = require("./652853.jsx"),
-  Chunk732380 = require("./732380.jsx"),
+  Chunk475413 = require("./475413.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk251806 = require("./251806.js");
@@ -48,7 +48,7 @@ function _(e) {
   let s = (0, a.Z)(n);
   return o === u.l.MODAL_V2 ? (0, r.jsx)("div", {
     className: f.customButtons,
-    children: n.buttons.map((e, a) => (0, r.jsx)(c.O1, {
+    children: n.buttons.map((e, a) => (0, r.jsx)(c.i6, {
       text: s ? d.intl.string(d.t.I6JG46) : e,
       onClick: e => {
         e.stopPropagation(), null == i || i({
@@ -62,7 +62,7 @@ function _(e) {
     }, a))
   }) : (0, r.jsx)("div", {
     className: f.customButtons,
-    children: n.buttons.map((e, a) => (0, r.jsx)(c.O1, {
+    children: n.buttons.map((e, a) => (0, r.jsx)(c.i6, {
       text: s ? d.intl.string(d.t.I6JG46) : e,
       fullWidth: true,
       onClick: e => {

@@ -12,7 +12,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk231757 = require("./231757.jsx"),
   Chunk553795 = require("./553795.js"),
   Chunk652853 = require("./652853.jsx"),
-  Chunk732380 = require("./732380.jsx"),
+  Chunk475413 = require("./475413.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx");
@@ -38,7 +38,7 @@ function _(e) {
       location: m
     })
   };
-  return (0, r.jsx)(u.O1, {
+  return (0, r.jsx)(u.i6, {
     icon: n,
     text: p.intl.formatToPlainString(p.t.XWSHTb, {
       platform: a.Z.get(t).name

@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk359110 = require("./359110.js"),
   Chunk314897 = require("./314897.js"),
   Chunk944486 = require("./944486.js"),
-  Chunk732380 = require("./732380.jsx"),
+  Chunk475413 = require("./475413.jsx"),
   Chunk176505 = require("./176505.js"),
   Chunk50493 = require("./50493.js"),
   Chunk388032 = require("./388032.jsx");
@@ -31,7 +31,7 @@ function E(e) {
   } = e, {
     newestAnalyticsLocation: O
   } = (0, o.ZP)(), v = (0, i.e7)([f.default], () => f.default.getId() === (null == t ? true : t.id)), S = (0, l.m)(null != n ? n : null), I = (0, i.e7)([p.Z], () => null != E ? E : p.Z.getChannelId(n, true), [E, n]);
-  return null == n || !S || v ? null : (0, r.jsx)(_.f6, {
+  return null == n || !S || v ? null : (0, r.jsx)(_.oY, {
     action: "PRESS_MOD_VIEW",
     icon: a.HI3,
     tooltipText: g.intl.string(g.t.kj3tz2),

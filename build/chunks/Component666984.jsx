@@ -13,7 +13,7 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk829820 = require("./829820.js"),
   Chunk395361 = require("./395361.jsx"),
   Chunk652853 = require("./652853.jsx"),
-  Chunk732380 = require("./732380.jsx"),
+  Chunk475413 = require("./475413.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -42,7 +42,7 @@ function h(e) {
   return v === p.l.MODAL_V2 ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.u, {
       text: I.tooltip,
-      children: (0, r.jsx)(d.O1, {
+      children: (0, r.jsx)(d.i6, {
         text: null != (t = I.label) ? t : _.intl.string(_.t.eU3inB),
         onClick: C,
         disabled: I.disabled,
@@ -50,7 +50,7 @@ function h(e) {
       })
     }), (0, r.jsx)(i.u, {
       text: S.tooltip,
-      children: (0, r.jsx)(d.O1, {
+      children: (0, r.jsx)(d.i6, {
         text: null != (n = S.label) ? n : _.intl.string(_.t.rRffNz),
         onClick: T,
         disabled: S.disabled,
@@ -62,7 +62,7 @@ function h(e) {
       className: m.primaryButton,
       children: (0, r.jsx)(i.u, {
         text: S.tooltip,
-        children: (0, r.jsx)(d.O1, {
+        children: (0, r.jsx)(d.i6, {
           icon: () => (0, r.jsx)(c.Z, {}),
           text: null != (h = S.label) ? h : _.intl.string(_.t.rRffNz),
           onClick: T,
@@ -71,7 +71,7 @@ function h(e) {
           fullWidth: true
         })
       })
-    }), (0, r.jsx)(d.pt, {
+    }), (0, r.jsx)(d.ef, {
       icon: a.iOO,
       tooltipText: null != (g = I.tooltip) ? g : _.intl.string(_.t.eU3inB),
       "aria-label": null != (E = I.label) ? E : _.intl.string(_.t.eU3inB),

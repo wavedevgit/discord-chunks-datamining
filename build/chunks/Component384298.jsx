@@ -14,7 +14,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk496675 = require("./496675.js"),
   Chunk979651 = require("./979651.js"),
   Chunk652853 = require("./652853.jsx"),
-  Chunk732380 = require("./732380.jsx"),
+  Chunk475413 = require("./475413.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx");
@@ -38,7 +38,7 @@ function h(e) {
         action: "PRESS_JOIN_CALL_BUTTON"
       }), t.isGuildStageVoice() ? (0, l.Cq)(t) : (a.default.selectVoiceChannel(t.id), (0, s.Kh)(t.id)), null == h || h()
     };
-  return (0, r.jsx)(f.O1, {
+  return (0, r.jsx)(f.i6, {
     text: b ? y() : O(),
     fullWidth: !E,
     onClick: v

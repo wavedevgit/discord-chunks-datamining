@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk914010 = require("./914010.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk652853 = require("./652853.jsx"),
-  Chunk732380 = require("./732380.jsx"),
+  Chunk475413 = require("./475413.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
@@ -63,7 +63,7 @@ function w(e) {
     className: P.upsellButtons,
     children: [(0, r.jsx)("div", {
       className: P.upsellButtonWrapper,
-      children: n ? (0, r.jsx)(v.O1, {
+      children: n ? (0, r.jsx)(v.i6, {
         action: S.yM.VIEW_PREMIUM_PERKS,
         fullWidth: true,
         size: "sm",
@@ -95,7 +95,7 @@ function w(e) {
       })
     }), (0, r.jsx)("div", {
       className: P.upsellButtonWrapper,
-      children: (0, r.jsx)(v.O1, {
+      children: (0, r.jsx)(v.i6, {
         action: S.yM.VISIT_SHOP,
         fullWidth: true,
         icon: u.EOn,

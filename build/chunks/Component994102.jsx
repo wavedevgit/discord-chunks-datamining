@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk206074 = require("./206074.js"),
   Chunk213609 = require("./213609.js"),
   Chunk652853 = require("./652853.jsx"),
-  Chunk732380 = require("./732380.jsx"),
+  Chunk475413 = require("./475413.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx");
 
@@ -38,7 +38,7 @@ function p(e) {
   }, [h]), null == h) ? null : (0, r.jsx)(a.u, {
     text: f.intl.string(f.t.JVwWva),
     position: "top",
-    children: (0, r.jsx)(u.O1, {
+    children: (0, r.jsx)(u.i6, {
       icon: o.v3n,
       text: f.intl.string(f.t["jaYS/h"]),
       size: "sm",

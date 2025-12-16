@@ -12,7 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk86419 = require("./86419.js"),
   Chunk687158 = require("./687158.js"),
   Chunk892001 = require("./892001.js"),
-  Chunk732380 = require("./732380.jsx"),
+  Chunk475413 = require("./475413.jsx"),
   Chunk314897 = require("./314897.js"),
   Chunk77498 = require("./77498.js"),
   Chunk228168 = require("./228168.js"),
@@ -44,7 +44,7 @@ function h(e) {
       scrollTarget: a.l.CURRENT_GAMES
     }), null == h || h()
   }, [t, g, n, h]);
-  return y ? (0, r.jsx)(d.O1, {
+  return y ? (0, r.jsx)(d.i6, {
     text: m.intl.string(m.t.BjYzmC),
     onClick: O,
     fullWidth: true

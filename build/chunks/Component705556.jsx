@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk592183 = require("./592183.js"),
   Chunk224724 = require("./224724.js"),
-  Chunk732380 = require("./732380.jsx"),
+  Chunk475413 = require("./475413.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk119180 = require("./119180.js");
 
@@ -71,7 +71,7 @@ function O(e) {
   }), C = (0, l.Z)({}), {
     trackUserProfileAction: A
   } = (0, d.KZ)(), N = i.useRef(null);
-  return v ? null == S ? (0, r.jsx)(_.O1, {
+  return v ? null == S ? (0, r.jsx)(_.i6, {
     action: "EDIT_PROFILE",
     text: m.intl.string(m.t.s5vZlQ),
     icon: o.vdY,
@@ -121,7 +121,7 @@ function O(e) {
       var {
         onClick: t
       } = e, n = b(e, ["onClick"]);
-      return (0, r.jsx)(_.O1, E({
+      return (0, r.jsx)(_.i6, E({
         buttonRef: N,
         text: m.intl.string(m.t.s5vZlQ),
         icon: o.vdY,

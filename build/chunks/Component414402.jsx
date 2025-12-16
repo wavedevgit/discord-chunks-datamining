@@ -9,7 +9,7 @@ require("./473749.js");
 var Chunk620662 = require("./620662.js"),
   Chunk710845 = require("./710845.js"),
   Chunk652853 = require("./652853.jsx"),
-  Chunk732380 = require("./732380.jsx"),
+  Chunk475413 = require("./475413.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx");
@@ -28,7 +28,7 @@ function d(e) {
       action: "PRESS_NOTIFY_BUTTON"
     }), new a.Z("UserActivityActions").log("notify", t.id, n)
   };
-  return (0, r.jsx)(s.O1, {
+  return (0, r.jsx)(s.i6, {
     text: u.intl.string(u.t.vwl1PK),
     fullWidth: !p,
     onClick: _

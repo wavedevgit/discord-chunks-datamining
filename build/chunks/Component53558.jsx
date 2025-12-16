@@ -11,7 +11,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk970321 = require("./970321.js"),
   Chunk283836 = require("./283836.js"),
   Chunk621853 = require("./621853.js"),
-  Chunk732380 = require("./732380.jsx"),
+  Chunk475413 = require("./475413.jsx"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e, t, n) {
@@ -59,7 +59,7 @@ function m(e) {
     user: t,
     onClick: n
   } = e, i = p(e, ["user", "onClick"]);
-  return (0, s.q)(t.id), (0, r.jsx)(c.O1, f({
+  return (0, s.q)(t.id), (0, r.jsx)(c.i6, f({
     action: "PRESS_APP_STOREFRONT",
     icon: a.EOn,
     text: u.intl.string(u.t.V7j5aZ),

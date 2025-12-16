@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => o
 });
 var Chunk54381 = require("./54381.js"),
-  Chunk732380 = require("./732380.jsx"),
+  Chunk475413 = require("./475413.jsx"),
   Chunk388032 = require("./388032.jsx");
 
 function o(e) {
@@ -14,7 +14,7 @@ function o(e) {
     onClick: n,
     size: o = "sm"
   } = e;
-  return (0, r.jsx)(i.O1, {
+  return (0, r.jsx)(i.i6, {
     size: o,
     action: t ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
     text: a.intl.string(a.t["UJKH/l"]),

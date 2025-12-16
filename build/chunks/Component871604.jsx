@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk135431 = require("./135431.js"),
   Chunk621853 = require("./621853.js"),
   Chunk497805 = require("./497805.jsx"),
-  Chunk732380 = require("./732380.jsx"),
+  Chunk475413 = require("./475413.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
@@ -113,7 +113,7 @@ function C(e) {
       var {
         onClick: t
       } = e, n = I(e, ["onClick"]);
-      return (0, r.jsx)(b.O1, S({
+      return (0, r.jsx)(b.i6, S({
         buttonRef: T,
         action: "PRESS_ADD_APP",
         text: w,
@@ -122,7 +122,7 @@ function C(e) {
         onClick: R
       }, n, v))
     }
-  }) : (0, r.jsx)(b.O1, S({
+  }) : (0, r.jsx)(b.i6, S({
     action: "PRESS_ADD_APP",
     text: w,
     icon: L,

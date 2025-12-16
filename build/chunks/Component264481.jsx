@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk313789 = require("./313789.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk5192 = require("./5192.js"),
-  Chunk732380 = require("./732380.jsx"),
+  Chunk475413 = require("./475413.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk771838 = require("./771838.js");
@@ -95,7 +95,7 @@ function I(e) {
     bodyText: p,
     children: (0, r.jsx)("div", {
       className: m.buttonRow,
-      children: (0, r.jsx)(g.O1, {
+      children: (0, r.jsx)(g.i6, {
         icon: l.kBi,
         text: b.intl.string(b.t["g33r/P"]),
         onClick: h
@@ -139,10 +139,10 @@ function S(e) {
     bodyText: b.intl.string(b.t.KpjsU9),
     children: [(0, r.jsx)(w, {}), (0, r.jsxs)("div", {
       className: m.buttonRow,
-      children: [(0, r.jsx)(g.O1, {
+      children: [(0, r.jsx)(g.i6, {
         text: b.intl.string(b.t["/Hl24U"]),
         onClick: n
-      }), (0, r.jsx)(g.O1, {
+      }), (0, r.jsx)(g.i6, {
         text: b.intl.string(b.t.GTCx0p),
         onClick: a
       })]
