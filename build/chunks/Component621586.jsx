@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk602733 = require("./602733.js"),
   Chunk626135 = require("./626135.js"),
   Chunk164670 = require("./164670.js"),
-  Chunk81939 = require("./81939.js"),
+  Chunk927613 = require("./927613.js"),
   Chunk851397 = require("./851397.jsx"),
   Chunk582113 = require("./582113.js"),
   Chunk981631 = require("./981631.js"),
@@ -46,20 +46,23 @@ function j(e) {
       }) : null
     }, [P]),
     {
-      loading: Z,
-      wishlistItems: T,
-      wishlistItemSkuIds: N
+      state: Z,
+      recommendations: T
     } = (0, m.Z)({
       guildId: (0, h.ac)(),
-      numWishlistItems: m.W
+      applicationId: b.t9,
+      numWishlistItems: m.W,
+      userIds: _.recipients,
+      location: "Social Layer Gifting Mini Shelf",
+      includeWishlists: true
     });
   return r.useEffect(() => {
-    0 !== N.length && f.default.track(C.rMx.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
+    0 !== T.length && f.default.track(C.rMx.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
       guild_id: _.guild_id,
       channel_id: _.id,
-      sku_ids: N
+      sku_ids: T.map(e => e.skuId)
     })
-  }, [_.id, _.guild_id, N]), (0, i.jsx)(d.Z, {
+  }, [_.id, _.guild_id, T]), (0, i.jsx)(d.Z, {
     children: (0, i.jsx)(a.VqE, {
       "aria-labelledby": E,
       modal: false,
@@ -81,7 +84,7 @@ function j(e) {
           })
         }), (0, i.jsx)("div", {
           className: O.wishlistItemsContainer,
-          children: Z || 0 === T.length ? (0, i.jsx)(a.$jN, {
+          children: "loading" === Z || 0 === T.length ? (0, i.jsx)(a.$jN, {
             className: O.loading
           }) : T.map(e => (0, i.jsx)(s.i_, {
             body: x.intl.string(x.t["4yiU7x"]),

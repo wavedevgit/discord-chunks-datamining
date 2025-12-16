@@ -3,8 +3,8 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => O
-});
+  Z: () => A
+}), require("./415506.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk706454 = require("./706454.js");
@@ -47,96 +47,168 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = {},
-  p = {};
 
-function _(e) {
-  let {
-    guildId: t
-  } = e, n = p[t];
-  p[t] = d(c({}, n), {
-    state: "loading"
-  }), p = c({}, p)
+function f(e) {
+  if (0 === e.length) throw Error("No user IDs provided");
+  return e.length > 1 ? "more-than-one-user" : e[0]
+}
+let p = {},
+  _ = {},
+  m = {};
+
+function h() {
+  m = {}
 }
 
-function m(e) {
+function g(e) {
+  var t;
+  let {
+    applicationId: n,
+    userIds: r
+  } = e, i = f(r);
+  m = d(c({}, m), {
+    [n]: d(c({}, null != (t = m[n]) ? t : {}), {
+      [i]: {
+        state: "loading"
+      }
+    })
+  })
+}
+
+function E(e) {
+  var t;
+  let {
+    skus: n,
+    skusToRecommendationReasons: r,
+    userIds: i,
+    application: a,
+    numItemsRequested: o
+  } = e, s = f(i);
+  m = d(c({}, m), {
+    [a.id]: d(c({}, null != (t = m[a.id]) ? t : {}), {
+      [s]: {
+        state: "success",
+        data: {
+          skus: n,
+          skusToRecommendationReasons: r,
+          numItemsRequested: o
+        }
+      }
+    })
+  })
+}
+
+function b(e) {
+  var t;
+  let {
+    applicationId: n,
+    userIds: r
+  } = e, i = f(r);
+  if (null != m[n] && null != m[n][i] && "success" === m[n][i].state) returnfalse;
+  m = d(c({}, m), {
+    [n]: d(c({}, null != (t = m[n]) ? t : {}), {
+      [i]: {
+        state: "error"
+      }
+    })
+  })
+}
+
+function y(e) {
+  let {
+    guildId: t
+  } = e, n = _[t];
+  _[t] = d(c({}, n), {
+    state: "loading"
+  }), _ = c({}, _)
+}
+
+function O(e) {
   let {
     guildId: t,
     storefront: n
   } = e;
-  p[t] = {
+  _[t] = {
     storefront: n,
     state: "fetched",
     fetchedAt: Date.now()
-  }, p = c({}, p)
+  }, _ = c({}, _)
 }
 
-function h(e) {
+function v(e) {
   let {
     guildId: t,
     storefront: n
-  } = e, r = p[t];
-  (null == r ? true : r.storefront) != null ? p[t] = d(c({}, r), {
+  } = e, r = _[t];
+  (null == r ? true : r.storefront) != null ? _[t] = d(c({}, r), {
     storefront: d(c({}, r.storefront), {
       assets: c({}, r.storefront.assets, n.assets)
     })
-  }) : p[t] = {
+  }) : _[t] = {
     storefront: n,
     state: "partially-fetched",
     fetchedAt: null
-  }, p = c({}, p)
+  }, _ = c({}, _)
 }
 
-function g(e) {
+function S(e) {
   let {
     guildId: t,
     eager: n
   } = e;
   if (n) {
-    let e = p[t];
-    (null == e ? true : e.state) === "loading" && (null == e ? true : e.storefront) != null ? p[t] = d(c({}, e), {
+    let e = _[t];
+    (null == e ? true : e.state) === "loading" && (null == e ? true : e.storefront) != null ? _[t] = d(c({}, e), {
       state: "fetched"
-    }) : delete p[t]
-  } else p[t] = {
+    }) : delete _[t]
+  } else _[t] = {
     storefront: null,
     state: "error",
     fetchedAt: Date.now()
   };
-  p = c({}, p)
+  _ = c({}, _)
 }
 
-function E(e) {
+function I(e) {
   let {
     guildId: t,
     pageIndex: n,
     skuId: r
   } = e;
-  f[t] = {
+  p[t] = {
     activePage: n,
     activeSkuId: r
-  }, f = c({}, f)
+  }, p = c({}, p)
 }
 
-function b() {
+function T() {
   if (r === Chunk706454.default.locale) returnfalse;
-  r = Chunk706454.default.locale, f = {}, p = {}
+  r = Chunk706454.default.locale, p = {}, _ = {}, m = {}
 }
-class y extends(i = Chunk442837.ZP.Store) {
+class C extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk706454.default), this.syncWith([Chunk706454.default], b), r = Chunk706454.default.locale
+    this.waitFor(Chunk706454.default), this.syncWith([Chunk706454.default], T), r = Chunk706454.default.locale
   }
   getStorefrontData(e) {
-    return p[e]
+    return _[e]
   }
   getStorefrontState(e) {
-    return f[e]
+    return p[e]
+  }
+  recommendationsByApplicationsAndUsers(e, t) {
+    var n;
+    if (null != t && 0 !== t.length) return null == (n = m[e]) ? true : n[f(t)]
   }
 }
-l(y, "displayName", "SocialLayerStorefrontStore");
-let O = new y(Chunk570140.Z, {
-  SOCIAL_LAYER_STOREFRONT_LOAD: _,
-  SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS: m,
-  SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS: h,
-  SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE: g,
-  SET_SOCIAL_LAYER_STOREFRONT_STATE: E
+l(C, "displayName", "SocialLayerStorefrontStore");
+let A = new C(Chunk570140.Z, {
+  LOGOUT: h,
+  SOCIAL_LAYER_STOREFRONT_LOAD: y,
+  SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS: O,
+  SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS: v,
+  SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE: S,
+  SET_SOCIAL_LAYER_STOREFRONT_STATE: I,
+  SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_SUCCESS: E,
+  SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_FAILURE: b,
+  SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_START: g
 })

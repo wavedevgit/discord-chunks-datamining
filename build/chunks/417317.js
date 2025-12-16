@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 417317, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 77033 **/
+/** chunk id: 417317, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => r
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -10,14 +9,14 @@ var Chunk473749 = require("./473749.js"),
   Chunk210218 = require("./210218.js"),
   Chunk699955 = require("./699955.js");
 
-function l(e) {
+function r(e) {
   let {
-    guildId: t,
-    location: n
-  } = e, l = (0, s.cZ)({
-    location: n
-  }), c = (0, i.e7)([o.Z], () => null != t ? o.Z.getStorefrontData(t) : true, [t]);
-  return r.useEffect(() => {
-    null != t && l && (0, a.YL)(t, false)
-  }, [t, c, l]), c
+    guildId: n,
+    location: t
+  } = e, r = (0, s.cZ)({
+    location: t
+  }), d = (0, i.e7)([o.Z], () => null != n ? o.Z.getStorefrontData(n) : true, [n]);
+  return l.useEffect(() => {
+    null != n && r && (0, a.YL)(n, false)
+  }, [n, d, r]), d
 }

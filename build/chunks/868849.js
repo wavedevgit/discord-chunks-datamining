@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
-/** chunk id: 125742, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 868849, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  R: () => i
+  Q: () => i
 });
 let r = (0, require("./427164.js").le)({
-  name: "2025-12-dm-side-panel-show-recommendations-in-breadcrumbs",
+  name: "2025-12-social-layer-storefront-recommendations",
   kind: "user",
   defaultConfig: {
     enabled: false

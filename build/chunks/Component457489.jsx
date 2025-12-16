@@ -30,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk910440 = require("./910440.js");
 
-function L(e) {
+function N(e) {
   let {
     storefront: n,
     guildId: t,
@@ -42,7 +42,7 @@ function L(e) {
   }, [s]);
   let d = null == o ? true : o.id;
   return i.useEffect(() => {
-    if (null != d) return (0, j.g)({
+    if (null != d) return (0, S.g)({
       skuId: d,
       applicationId: n.applicationId,
       guildId: t,
@@ -50,17 +50,17 @@ function L(e) {
       analyticsLocations: [u.Z.SOCIAL_LAYER_STOREFRONT],
       analyticsContext: r.current,
       onClose: () => {
-        (0, g.s1)().location.pathname.indexOf(N.Z5c.CHANNELS_GAME_SHOP(t, a)) >= 0 && (0, C.Z)({
+        (0, g.s1)().location.pathname.indexOf(E.Z5c.CHANNELS_GAME_SHOP(t, a)) >= 0 && (0, C.Z)({
           guildId: t,
           pageIndex: a
         })
       }
     }), () => {
-      (0, j.U)()
+      (0, S.U)()
     }
   }, [t, a, d, n.applicationId]), (0, l.jsxs)("div", {
-    className: E.container,
-    children: [(0, l.jsx)(S.Z, {
+    className: L.container,
+    children: [(0, l.jsx)(j.Z, {
       guildId: t,
       storefront: n,
       selectedPageIndex: a
@@ -75,20 +75,20 @@ function L(e) {
 function R(e) {
   var n, t, a, g, C;
   let {
-    match: j
+    match: S
   } = e, {
-    guildId: S,
+    guildId: j,
     gameShopPageIndex: Z,
-    gameShopSkuId: N
-  } = j.params, {
+    gameShopSkuId: E
+  } = S.params, {
     analyticsLocations: R
   } = (0, f.ZP)(u.Z.SOCIAL_LAYER_STOREFRONT), T = (0, k.Z)({
-    guildId: S,
+    guildId: j,
     location: "Social Layer Storefront"
-  }), A = (0, r.e7)([I.default], () => I.default.getSessionId(), []), M = (0, r.e7)([_.Z], () => _.Z.get(N), [N]);
+  }), A = (0, r.e7)([I.default], () => I.default.getSessionId(), []), M = (0, r.e7)([_.Z], () => _.Z.get(E), [E]);
   (0, p.p2)();
   let O = (0, c.Z)((0, s.Z)()),
-    P = (0, r.e7)([h.ZP, I.default], () => h.ZP.isMember(S, I.default.getId())),
+    P = (0, r.e7)([h.ZP, I.default], () => h.ZP.isMember(j, I.default.getId())),
     y = i.useMemo(() => {
       if (null == Z) return 0;
       let e = parseInt(Z, 10);
@@ -98,28 +98,28 @@ function R(e) {
     G = (null == T || null == (g = T.storefront) || null == (a = g.pages[y]) ? true : a.leaderboard) != null,
     B = i.useMemo(() => ({
       sessionId: O,
-      guildId: S,
+      guildId: j,
       pageIndex: y,
       pageTitle: w,
       isUserGuildMember: P,
       pageHasLeaderboard: G
-    }), [O, S, y, w, P, G]);
+    }), [O, j, y, w, P, G]);
   return (i.useEffect(() => {
-    null != S && (0, b.m0)(S, y, null != N ? N : null)
-  }, [S, y, N]), i.useEffect(() => {
-    null != S && null != A && null == x.Z.getGuild(S) && (0, m.Ub)(S, {}, {
+    null != j && (0, b.m0)(j, y, null != E ? E : null)
+  }, [j, y, E]), i.useEffect(() => {
+    null != j && null != A && null == x.Z.getGuild(j) && (0, m.Ub)(j, {}, {
       shouldNavigate: false
     })
-  }, [S, A]), null == S || (null == T ? true : T.storefront) == null) ? (0, l.jsx)("div", {
-    className: o()(E.spinner, E.container),
+  }, [j, A]), null == j || (null == T ? true : T.storefront) == null) ? (0, l.jsx)("div", {
+    className: o()(L.spinner, L.container),
     children: (0, l.jsx)(d.$jN, {})
   }) : (0, l.jsx)(f.Gt, {
     value: R,
     children: (0, l.jsx)(v.hL, {
       newValue: B,
-      children: (0, l.jsx)(L, {
+      children: (0, l.jsx)(N, {
         storefront: T.storefront,
-        guildId: S,
+        guildId: j,
         selectedPageIndex: y,
         selectedSku: M
       })

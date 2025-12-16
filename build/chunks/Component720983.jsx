@@ -1,7 +1,7 @@
 /** Chunk was on 77033 **/
 /** chunk id: 720983, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -35,30 +35,30 @@ function Z(e) {
     className: a
   } = e;
   return (0, l.jsx)(s.P3F, {
-    className: o()(S.iconButton, a),
+    className: o()(j.iconButton, a),
     onClick: t,
     "aria-label": i,
     children: n
   })
 }
 
-function N(e) {
+function E(e) {
   let {
     guildId: n,
     storefront: t,
     selectedPageIndex: a
-  } = e, N = (0, s.wjy)((0, d.ZP)()), E = (0, g.Y)({
+  } = e, E = (0, s.wjy)((0, d.ZP)()), L = (0, g.Y)({
     location: "SocialLayerStorefrontHeader"
-  }), L = (0, r.e7)([I.default], () => I.default.getCurrentUser()), R = (0, m.oR)(), {
+  }), N = (0, r.e7)([I.default], () => I.default.getCurrentUser()), R = (0, m.oR)(), {
     analyticsLocations: T
   } = (0, u.ZP)(), A = i.useCallback(() => {
-    (null == L ? true : L.id) != null && (0, p.openUserProfileModal)({
-      userId: L.id,
+    (null == N ? true : N.id) != null && (0, p.openUserProfileModal)({
+      userId: N.id,
       tabSection: k.oh.WISHLIST,
       showGuildProfile: false,
       sourceAnalyticsLocations: [c.Z.SOCIAL_LAYER_STOREFRONT]
     })
-  }, [L]), M = i.useCallback(() => {
+  }, [N]), M = i.useCallback(() => {
     h.default.track(C.rMx.SLAYER_STOREFRONT_PAGE_ELEMENT_CLICKED, {
       slayer_storefront_session_id: null == R ? true : R.sessionId,
       cta_type: v.US.LEARN_MORE,
@@ -69,9 +69,9 @@ function N(e) {
   let O = null != t.logoAssetId ? (0, _._W)(t.applicationId, t.logoAssetId, 75) : null,
     P = null != t.lightThemeLogoAssetId ? (0, _._W)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
     y = null;
-  return y = N ? null != O ? O : P : null != P ? P : O, (0, l.jsxs)(f.Z, {
+  return y = E ? null != O ? O : P : null != P ? P : O, (0, l.jsxs)(f.Z, {
     disableDoubleClick: true,
-    className: S.headerContainer,
+    className: j.headerContainer,
     children: [(0, l.jsxs)(s.P3F, {
       onClick: () => {
         (0, b.default)({
@@ -79,16 +79,16 @@ function N(e) {
           pageIndex: 0
         })
       },
-      className: S.titleContainer,
+      className: j.titleContainer,
       children: [null != y && (0, l.jsx)("img", {
-        className: S.logo,
+        className: j.logo,
         src: y,
         alt: t.title
       }), (0, l.jsx)(f.Z.Title, {
         children: t.title
       })]
     }), (0, l.jsx)("div", {
-      className: S.titles,
+      className: j.titles,
       children: t.pages.map((e, t) => (0, l.jsx)(f.Z.Title, {
         onClick: () => {
           (0, b.default)({
@@ -96,33 +96,33 @@ function N(e) {
             pageIndex: t
           })
         },
-        wrapperClassName: S.titleWrapper,
-        className: o()(S.pageTitleContainer, {
-          [S.selectedPageIndicator]: a === t
+        wrapperClassName: j.titleWrapper,
+        className: o()(j.pageTitleContainer, {
+          [j.selectedPageIndicator]: a === t
         }),
         children: (0, l.jsx)(s.xvT, {
           variant: "text-sm/medium",
           children: e.title
         })
       }, "".concat(e.title, "-").concat(t)))
-    }), E && (0, l.jsxs)("div", {
-      className: S.alignedRightContent,
+    }), L && (0, l.jsxs)("div", {
+      className: j.alignedRightContent,
       children: [(0, l.jsx)(Z, {
         content: (0, l.jsx)(s.h_8, {
           size: "xs",
           color: "currentColor"
         }),
         onClick: A,
-        ariaLabel: j.intl.string(j.t["7lZ31J"]),
-        className: S.wishlistButton
+        ariaLabel: S.intl.string(S.t["7lZ31J"]),
+        className: j.wishlistButton
       }), (0, l.jsx)(Z, {
         onClick: M,
-        ariaLabel: j.intl.string(j.t.hvVgAZ),
+        ariaLabel: S.intl.string(S.t.hvVgAZ),
         content: (0, l.jsx)(s.xvT, {
           variant: "text-sm/medium",
-          children: j.intl.string(j.t.hvVgAZ)
+          children: S.intl.string(S.t.hvVgAZ)
         }),
-        className: S.learnMoreButton
+        className: j.learnMoreButton
       })]
     })]
   })

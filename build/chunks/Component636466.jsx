@@ -160,22 +160,23 @@ function L(e, t) {
     profileOwner: s,
     wishlistId: l,
     showTypeTooltip: c = false,
-    cardSize: d
-  } = t, p = null != i && i > 0, _ = c && !p, m = p ? v.intl.string(v.t.TxBQzD) : v.intl.string(v.t.pLPjsb), h = {
-    title: _ ? v.intl.string(v.t["4yiU7x"]) : m,
-    body: _ ? v.intl.string(v.t.ilhtIa) : true,
-    renderIcon: _ ? f.Q : true,
+    cardSize: d,
+    analyticsLocations: p
+  } = t, _ = null != i && i > 0, m = c && !_, h = _ ? v.intl.string(v.t.TxBQzD) : v.intl.string(v.t.pLPjsb), y = {
+    title: m ? v.intl.string(v.t["4yiU7x"]) : h,
+    body: m ? v.intl.string(v.t.ilhtIa) : true,
+    renderIcon: m ? f.Q : true,
     shouldShow: true
-  }, y = () => {
-    if (p) return void a();
+  }, I = () => {
+    if (_) return void a();
     (0, g.P)(e.sku, {
       isGift: true,
       giftRecipient: s,
       giftingOrigin: O.Wt.USER_PROFILE_WISHLIST
     }, {
-      analyticsLocations: [u.Z.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
+      analyticsLocations: [...p, u.Z.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
     })
-  }, I = () => (0, r.jsx)(E.A, {
+  }, T = () => (0, r.jsx)(E.A, {
     containerClassName: S.card,
     backgroundImageClassName: S.cardBackgroundImage,
     foregroundImageClassName: S.cardImage,
@@ -184,10 +185,10 @@ function L(e, t) {
   });
   return (0, r.jsx)(x, {
     wishlistItem: e,
-    onCardClick: y,
-    tooltipConfig: h,
+    onCardClick: I,
+    tooltipConfig: y,
     shouldScalePreview: false,
-    renderPreview: I,
+    renderPreview: T,
     moreCount: i,
     isSingleCard: o,
     wishlistId: l,
@@ -201,16 +202,17 @@ function j(e) {
   let {
     item: t,
     card: n,
-    profileOwner: i
+    analyticsLocations: i,
+    profileOwner: a
   } = e, {
-    data: a
-  } = (0, d.IX)(t.sku.applicationId), o = () => {
+    data: o
+  } = (0, d.IX)(t.sku.applicationId), s = () => {
     (0, g.P)(t.sku, {
       isGift: true,
-      giftRecipient: i,
+      giftRecipient: a,
       giftingOrigin: O.Wt.USER_PROFILE_WISHLIST
     }, {
-      analyticsLocations: [u.Z.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
+      analyticsLocations: [...i, u.Z.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
     })
   };
   return (0, r.jsxs)("div", {
@@ -218,7 +220,7 @@ function j(e) {
     children: [n, (0, r.jsx)("div", {
       className: I.singleItemInfo,
       children: (0, r.jsxs)(c.P3F, {
-        onClick: o,
+        onClick: s,
         className: I.singleItemName,
         "aria-label": v.intl.string(v.t.pLPjsb),
         children: [(0, r.jsx)(c.Text, {
@@ -230,7 +232,7 @@ function j(e) {
           variant: "text-xs/medium",
           color: "text-default",
           children: v.intl.format(v.t["CqpEC+"], {
-            applicationName: null == a ? true : a.name
+            applicationName: null == o ? true : o.name
           })
         })]
       })
@@ -255,6 +257,7 @@ function M(e, t) {
   return (0, r.jsx)(j, {
     item: e,
     card: s,
-    profileOwner: n
+    profileOwner: n,
+    analyticsLocations: i
   })
 }

@@ -8,14 +8,21 @@ let r = (0, require("./427164.js").le)({
   name: "2025-12-user-profile-wishlist-popout",
   kind: "user",
   defaultConfig: {
-    enabled: false
+    enabled: false,
+    showRecommendations: false
   },
   variations: {
     0: {
-      enabled: false
+      enabled: false,
+      showRecommendations: false
     },
     1: {
-      enabled: true
+      enabled: true,
+      showRecommendations: false
+    },
+    2: {
+      enabled: true,
+      showRecommendations: true
     }
   }
 });
@@ -26,5 +33,5 @@ function i(e) {
   } = e;
   return r.useConfig({
     location: t
-  }).enabled
+  })
 }

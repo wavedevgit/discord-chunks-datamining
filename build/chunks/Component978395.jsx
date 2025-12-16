@@ -56,7 +56,9 @@ function M(e) {
     originApplicationId: l.Z.getOriginApplicationId(t.id)
   })), Y = (0, o.vh)(t.id), W = (0, i.e7)([c.Z], () => c.Z.hidePersonalInformation), K = (0, f.b)({
     location: "UserProfilePopoutBody"
-  }), z = (0, p.E)({
+  }), {
+    enabled: z
+  } = (0, p.E)({
     location: "UserProfilePopoutBody"
   }), q = t.id === n.id, Q = (0, _.Z)({
     location: "UserProfilePopoutBody"
