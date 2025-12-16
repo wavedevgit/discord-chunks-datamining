@@ -101,6 +101,7 @@ let f = e => {
       rentalDuration: l
     });
     return n({
+      paymentModalStepProps: r,
       unifiedStepProps: h
     })
   },

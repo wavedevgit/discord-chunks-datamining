@@ -155,8 +155,25 @@ let U = e => {
       disableThemedBackground: true,
       className: D.customGiftMessageWrapper,
       innerClassName: D.customGiftMessage
+    });
+  return {
+    renderLeftColumn: () => z ? (0, r.jsxs)("div", {
+      className: D.bodyColumnLeft,
+      children: [(0, r.jsx)(a.Text, {
+        variant: "text-xs/bold",
+        color: "text-default",
+        className: D.selectGiftTitle,
+        children: q.toLocaleUpperCase()
+      }), N.map(e => J(e)), (0, r.jsx)(Z, {
+        handleClose: n
+      })]
+    }) : (0, r.jsx)("div", {
+      className: D.bodyColumnMiddle,
+      children: (0, r.jsx)(g.q, {
+        isShopGift: true
+      })
     }),
-    ee = () => {
+    renderRightColumn: () => {
       if (z) return (0, r.jsxs)("div", {
         className: D.bodyColumnRight,
         children: [(0, r.jsx)(b.s, {
@@ -209,25 +226,7 @@ let U = e => {
           shouldDisplayHeader: true
         })]
       })
-    };
-  return {
-    leftColumnComponent: z ? (0, r.jsxs)("div", {
-      className: D.bodyColumnLeft,
-      children: [(0, r.jsx)(a.Text, {
-        variant: "text-xs/bold",
-        color: "text-default",
-        className: D.selectGiftTitle,
-        children: q.toLocaleUpperCase()
-      }), N.map(e => J(e)), (0, r.jsx)(Z, {
-        handleClose: n
-      })]
-    }) : (0, r.jsx)("div", {
-      className: D.bodyColumnMiddle,
-      children: (0, r.jsx)(g.q, {
-        isShopGift: true
-      })
-    }),
-    rightColumnComponent: ee(),
+    },
     onStepChange: t,
     onBackClick: n,
     ctaDisabled: null != _ || null == A || A.id === (null == H ? true : H.id) || s.length > R.$n,
@@ -240,8 +239,8 @@ function G(e) {
     handleStepChange: t,
     handleClose: n
   } = e, {
-    leftColumnComponent: i,
-    rightColumnComponent: o,
+    renderLeftColumn: i,
+    renderRightColumn: o,
     onStepChange: s,
     onBackClick: l,
     ctaDisabled: c,
@@ -254,7 +253,7 @@ function G(e) {
     children: [(0, r.jsx)(N.C3, {
       children: (0, r.jsxs)("div", {
         className: D.stepBody,
-        children: [i, o]
+        children: [i(), o()]
       })
     }), (0, r.jsx)(N.O3, {
       children: (0, r.jsx)(a.mzw, {

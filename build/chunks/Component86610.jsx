@@ -70,6 +70,9 @@ let S = (e, t) => null != t && t.implemented && t.flowType === e,
     },
     [Chunk733579.G.PREMIUM_CHECKOUT]: {
       allowGiftCustomization: false
+    },
+    [Chunk733579.G.SLAYER_STOREFRONT_CHECKOUT]: {
+      allowGiftCustomization: true
     }
   };
 class T {

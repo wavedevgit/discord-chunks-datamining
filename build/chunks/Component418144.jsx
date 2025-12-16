@@ -2,7 +2,7 @@
 /** chunk id: 418144, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  NB: () => R
+  NB: () => P
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,10 +15,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk49308 = require("./49308.jsx"),
   Chunk117652 = require("./117652.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk231338 = require("./231338.js"),
-  Chunk388032 = require("./388032.jsx");
+  Chunk231338 = require("./231338.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,20 +26,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
 }
 
-function E(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,15 +50,15 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
-  var n, r, i = O(e, t);
+  var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -67,14 +66,14 @@ function y(e, t) {
   return i
 }
 
-function O(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let v = (0, Chunk473749.createContext)({
+let O = (0, Chunk473749.createContext)({
     setCustomConfettiVisible: () => {},
     confettiCanvas: null,
     hideConfirmStepConfetti: false,
@@ -82,41 +81,41 @@ let v = (0, Chunk473749.createContext)({
     skuIDs: [],
     analyticsLocations: []
   }),
-  S = () => (0, Chunk473749.useContext)(v),
-  I = e => {
+  v = () => (0, Chunk473749.useContext)(O),
+  S = e => {
     let {
       analyticsLocations: t,
       hideConfirmStepConfetti: n,
       confettiCanvas: i
-    } = S();
-    return (0, r.jsx)(d.x, g({
+    } = v();
+    return (0, r.jsx)(d.x, h({
       analyticsLocations: t,
       hideConfetti: n,
       confettiCanvas: i
     }, e))
   },
-  T = {
-    renderStep: e => (0, r.jsx)(I, g({}, e)),
+  I = {
+    renderStep: e => (0, r.jsx)(S, h({}, e)),
     options: Chunk608579.Kf
   },
-  C = e => {
+  T = e => {
     var {
       skuId: t,
       analyticsLocations: n,
       children: o
-    } = e, s = y(e, ["skuId", "analyticsLocations", "children"]);
+    } = e, s = b(e, ["skuId", "analyticsLocations", "children"]);
     let {
       environment: c,
       confettiCanvas: d,
       setConfettiCanvas: f,
       customConfettiVisible: p,
       setCustomConfettiVisible: m,
-      customConfettiDisplayOptions: h,
-      hideConfirmStepConfetti: E
+      customConfettiDisplayOptions: g,
+      hideConfirmStepConfetti: y
     } = (0, u.dc)({
       skuId: t
     }), {
-      analyticsLocations: O
+      analyticsLocations: v
     } = (0, u.Jb)({
       analyticsLocations: null != n ? n : []
     }), {
@@ -125,34 +124,34 @@ let v = (0, Chunk473749.createContext)({
     } = (0, u.Af)({
       skuId: t
     }), T = (0, i.useMemo)(() => ({
-      analyticsLocations: O,
+      analyticsLocations: v,
       skuIDs: S,
       skipConfirm: I,
       setCustomConfettiVisible: m,
-      hideConfirmStepConfetti: E,
+      hideConfirmStepConfetti: y,
       confettiCanvas: d
-    }), [O, S, I, m, E, d]);
+    }), [v, S, I, m, y, d]);
     return (0, r.jsxs)(a.Gt, {
-      value: O,
+      value: v,
       children: [(0, r.jsx)(u.sy, {
         environment: c,
         setConfettiCanvas: f,
-        customConfettiDisplayOptions: h,
+        customConfettiDisplayOptions: g,
         customConfettiVisible: p
-      }), (0, r.jsx)(l.PaymentContextProvider, b(g({}, s), {
+      }), (0, r.jsx)(l.PaymentContextProvider, E(h({}, s), {
         skuIDs: S,
         stepConfigs: s.stepConfigs,
         activeSubscription: null,
         purchaseType: _.GZ.ONE_TIME,
         excludeSubscriptionPlansBySKU: true,
-        children: (0, r.jsx)(v.Provider, {
+        children: (0, r.jsx)(O.Provider, {
           value: T,
           children: o
         })
       }))]
     })
   },
-  A = e => {
+  C = e => {
     let {
       onClose: t,
       step: n
@@ -167,8 +166,8 @@ let v = (0, Chunk473749.createContext)({
       giftingOrigin: a
     })
   },
-  N = (0, Chunk467368.Dz)(),
-  P = e => {
+  A = (0, Chunk467368.Dz)(),
+  N = e => {
     let {
       renderStep: t,
       paymentModalStepProps: n
@@ -176,32 +175,29 @@ let v = (0, Chunk473749.createContext)({
       handleStepChange: r,
       handleClose: i
     } = n, {
-      leftColumnComponent: a,
-      rightColumnComponent: o,
-      onStepChange: s,
-      ctaDisabled: u,
-      loading: d
+      renderLeftColumn: a,
+      renderRightColumn: o,
+      ctaDisabled: s,
+      loading: l
     } = (0, f.YX)({
       handleStepChange: r,
       handleClose: i
-    }), {
-      hasPaymentSources: p
-    } = (0, l.JL)(), _ = p ? c.h8.REVIEW : c.h8.ADD_PAYMENT_STEPS;
+    });
     return t({
+      paymentModalStepProps: n,
       unifiedStepProps: {
-        leftColumnComponent: a,
-        rightColumnComponent: o,
+        layout: "two-column",
+        renderLeftColumn: a,
+        renderRightColumn: o,
         primaryCTAButtonProps: {
-          onClick: () => s(_),
-          loading: d,
-          text: m.intl.string(m.t.XiOHRX),
-          disabled: u
+          loading: l,
+          disabled: s
         }
       }
     })
   },
-  R = {
-    CustomPaymentContextProvider: C,
+  P = {
+    CustomPaymentContextProvider: T,
     UnifiedCheckoutContextProvider: e => {
       let {
         skuId: t,
@@ -219,7 +215,7 @@ let v = (0, Chunk473749.createContext)({
         skipConfirm: h,
         setCustomConfettiVisible: g,
         analyticsLocations: E
-      } = S(), {
+      } = v(), {
         paymentModalSkuId: b,
         paymentModalOnClose: y,
         paymentModalOnComplete: O
@@ -228,7 +224,7 @@ let v = (0, Chunk473749.createContext)({
         onComplete: l,
         skuIDs: m,
         setCustomConfettiVisible: g
-      }), v = (0, i.useMemo)(() => ({
+      }), S = (0, i.useMemo)(() => ({
         loadId: n,
         skuId: t,
         analyticsLocations: E,
@@ -247,23 +243,23 @@ let v = (0, Chunk473749.createContext)({
         transitionState: o.transitionState,
         returnRef: o.returnRef
       }), [b, y, O, E, c.onStepChange, h, o.transitionState, o.returnRef]);
-      return (0, r.jsx)(N.Provider, {
+      return (0, r.jsx)(A.Provider, {
         value: {
-          sharedCheckoutContext: v,
+          sharedCheckoutContext: S,
           paymentModalProps: I,
           renderModalProps: o
         },
         children: d
       })
     },
-    UnifiedCheckoutCustomHeader: A,
+    UnifiedCheckoutCustomHeader: C,
     UnifiedCheckoutStepDefinitions: {
       [Chunk409813.h8.GIFT_CUSTOMIZATION]: {
-        StepController: P
+        StepController: N
       },
       [Chunk409813.h8.REVIEW]: {
         legacyStepConfig: true
       }
     },
-    CUSTOM_CONFIRM_STEP_CONFIG: T
+    CUSTOM_CONFIRM_STEP_CONFIG: I
   }

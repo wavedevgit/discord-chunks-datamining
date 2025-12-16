@@ -1,12 +1,14 @@
-/** Chunk was on 45227 **/
-/** chunk id: 152242, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 152242, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  jM: () => W
+  jM: () => Z,
+  n3: () => H
 }), require("./388685.js"), require("./539854.js"), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  r = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk358221 = require("./358221.js"),
@@ -38,236 +40,246 @@ var Chunk54381 = require("./54381.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk442538 = require("./442538.js");
-let W = {
+
+function U(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function G(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      U(e, t, n[t])
+    })
+  }
+  return e
+}
+let Z = {
   key: Chunk409813.h8.GIFT_CUSTOMIZATION,
-  renderStep: e => (0, i.jsx)(R, function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        i = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), i.forEach(function(t) {
-        var i;
-        i = n[t], t in e ? Object.defineProperty(e, t, {
-          value: i,
-          enumerable: true,
-          configurable: true,
-          writable: true
-        }) : e[t] = i
-      })
-    }
-    return e
-  }({}, e)),
+  renderStep: e => (0, r.jsx)(Y, G({}, e)),
   options: {
     isLargeModal: true,
     useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t["W685+b"])
   }
 };
 
+function F(e) {
+  let t = (0, s.e7)([v.Z], () => v.Z.isConnected() ? v.Z.getChannelId() : null),
+    [n, r] = i.useState([]);
+  return i.useEffect(() => {
+    let n = null != t ? c.Z.getParticipants(t) : [],
+      i = [],
+      a = new Set;
+    for (let t of n) !(0, x.Io)(t) && !(0, x._5)(t) || t.user.id === e || a.has(t.user.id) || (a.add(t.user.id), i.push(t));
+    i.sort((e, t) => (0, x._5)(e) && !(0, x._5)(t) ? false : (0, x._5)(t) && !(0, x._5)(e) ? 1 : 0), r(i.map(e => e.user))
+  }, [t, e]), n
+}
+
 function B(e) {
+  let t = (0, d.Z)({
+      location: "Slayer Storefront Gift Customization Step"
+    }),
+    n = F(e);
+  return i.useMemo(() => o().uniqWith([...n, ...t], (e, t) => e.id === t.id), [t, n])
+}
+
+function V(e) {
   let {
     onStepChange: t,
     onBackClick: n,
-    showBackButton: a = false,
-    disabled: l = false,
-    loading: r = false
+    showBackButton: i = false,
+    disabled: a = false,
+    loading: o = false
   } = e, {
     hasPaymentSources: s
-  } = (0, m.JL)(), d = s ? p.h8.REVIEW : p.h8.ADD_PAYMENT_STEPS;
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(o.Button, {
-      onClick: () => t(d),
-      disabled: l,
-      loading: r,
-      text: A.intl.string(A.t.XiOHRX)
-    }), a ? (0, i.jsx)(v.Z, {
+  } = (0, _.JL)(), c = s ? m.h8.REVIEW : m.h8.ADD_PAYMENT_STEPS;
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(l.Button, {
+      onClick: () => t(c),
+      disabled: a,
+      loading: o,
+      text: M.intl.string(M.t.XiOHRX)
+    }), i ? (0, r.jsx)(b.Z, {
       onClick: n
     }) : null]
   })
 }
-
-function R(e) {
+let H = e => {
   let {
     handleStepChange: t,
     handleClose: n
   } = e, {
-    getLeftColumnComponent: l,
-    getRightColumnComponent: p,
-    onStepChange: v,
-    onBackClick: y,
-    disabled: T
-  } = (e => {
-    let {
-      handleStepChange: t,
-      handleClose: n
-    } = e, {
-      customGiftMessage: l = "",
-      setCustomGiftMessage: f,
-      giftRecipient: p,
-      emojiConfetti: h,
-      soundEffect: v,
-      setEmojiConfetti: y,
-      setSoundEffect: T,
-      giftingOrigin: O
-    } = (0, g.wD)(), {
-      selectedSkuId: W,
-      application: B
-    } = (0, m.JL)(), R = (0, s.e7)([P.default], () => P.default.getCurrentUser()), H = function(e) {
-      let t = (0, u.Z)({
-          location: "Slayer Storefront Gift Customization Step"
-        }),
-        n = function(e) {
-          let t = (0, s.e7)([I.Z], () => I.Z.isConnected() ? I.Z.getChannelId() : null),
-            [n, i] = a.useState([]);
-          return a.useEffect(() => {
-            let n = null != t ? d.Z.getParticipants(t) : [],
-              a = [],
-              l = new Set;
-            for (let t of n) !(0, Z.Io)(t) && !(0, Z._5)(t) || t.user.id === e || l.has(t.user.id) || (l.add(t.user.id), a.push(t));
-            a.sort((e, t) => (0, Z._5)(e) && !(0, Z._5)(t) ? false : (0, Z._5)(t) && !(0, Z._5)(e) ? 1 : 0), i(a.map(e => e.user))
-          }, [t, e]), n
-        }(e);
-      return a.useMemo(() => r().uniqWith([...n, ...t], (e, t) => e.id === t.id), [t, n])
-    }(null == R ? true : R.id), F = (0, s.e7)([w.Z], () => null != W ? w.Z.get(W) : null, [W]), U = (0, _.Do)(F), K = (0, _.a7)(F), J = (0, k.K)(F, {
-      shouldFetchIfMissing: true
-    }), q = async (e, t) => {}, V = e => {
-      null != T && T(null == e ? true : e)
-    };
-    return {
-      getLeftColumnComponent: () => {
-        var e;
-        return (0, i.jsxs)("div", {
-          className: L.bodyColumnLeft,
-          children: [null != U && (0, i.jsx)(E.p, {
-            containerClassName: L.skuCardImage,
-            cardImage: U,
-            cardBackgroundImage: K,
-            altText: null != (e = null == F ? true : F.name) ? e : "",
-            shape: "square"
-          }), (0, i.jsxs)("div", {
-            className: L.giftEffectsContainer,
-            children: [(0, i.jsx)(j.Z, {
-              sound: v,
-              onSelect: V
-            }), (0, i.jsx)(x.Z, {
-              setEmojiConfetti: y,
-              emojiConfetti: null == h ? true : h
-            })]
-          })]
-        })
-      },
-      getRightColumnComponent: () => (0, i.jsxs)("div", {
-        className: L.bodyColumnRight,
-        children: [null != p && (O === G.Wt.USER_PROFILE_WISHLIST || O === G.Wt.DM_CHANNEL_WISHLIST) ? (0, i.jsx)(b.s, {
-          giftRecipient: p
-        }) : (0, i.jsx)(c.Z, {
-          selectedSkuId: W,
-          validateSelectedGift: q,
-          searchableSelectWrapperClassName: L.recipientPickerSelectWrapper,
-          recipients: H
-        }), (0, i.jsx)(C.Z, {
-          sectionTitle: A.intl.string(A.t.B3miE8),
-          onTextChange: e => null == f ? true : f(e),
-          pendingText: l,
-          currentText: l,
-          disableThemedBackground: true,
-          className: L.customGiftMessageWrapper,
-          innerClassName: L.customGiftMessage
-        }), (() => {
-          var e, t, n, a;
-          if (null == F) return null;
-          let l = (0, S.T4)(null != (n = null == (e = F.price) ? true : e.amount) ? n : 0, null != (a = null == (t = F.price) ? true : t.currency) ? a : M.pK.USD);
-          return (0, i.jsxs)("div", {
-            className: L.giftPreviewContainer,
-            children: [(0, i.jsx)(o.vwX, {
-              className: L.giftPreviewTitle,
-              children: A.intl.string(A.t.PpoJzt)
-            }), (0, i.jsxs)("div", {
-              className: L.giftPreviewContent,
-              children: [(0, i.jsx)("div", {
-                className: L.giftPreviewImageContainer,
-                children: null != F && null != U && (0, i.jsx)(E.p, {
-                  containerClassName: L.giftPreviewCardContainer,
-                  cardImage: U,
-                  cardBackgroundImage: K,
-                  altText: F.name,
-                  shape: "square"
-                })
-              }), (0, i.jsxs)("div", {
-                className: L.giftPreviewTextContainer,
-                children: [null != B && (0, i.jsx)(N.e, {
-                  application: B
-                }), (0, i.jsx)(o.Text, {
-                  variant: "text-sm/semibold",
-                  children: F.name
-                })]
-              }), (0, i.jsx)(o.Text, {
-                variant: "text-md/semibold",
-                children: l
-              })]
-            })]
-          })
-        })(), null != J && null != F && (0, i.jsx)(D, {
-          handleClose: n,
-          sku: F,
-          guild: J
+    customGiftMessage: i = "",
+    setCustomGiftMessage: a,
+    giftRecipient: o,
+    emojiConfetti: c,
+    soundEffect: d,
+    setEmojiConfetti: f,
+    setSoundEffect: m,
+    giftingOrigin: h
+  } = (0, p.wD)(), {
+    selectedSkuId: b,
+    application: v
+  } = (0, _.JL)(), A = (0, s.e7)([S.default], () => S.default.getCurrentUser()), N = B(null == A ? true : A.id), D = (0, s.e7)([I.Z], () => null != b ? I.Z.get(b) : null, [b]), x = (0, C.Do)(D), U = (0, C.a7)(D), G = (0, R.K)(D, {
+    shouldFetchIfMissing: true
+  }), Z = async (e, t) => {}, F = () => (0, r.jsx)(g.Z, {
+    sectionTitle: M.intl.string(M.t.B3miE8),
+    onTextChange: e => null == a ? true : a(e),
+    pendingText: i,
+    currentText: i,
+    disableThemedBackground: true,
+    className: k.customGiftMessageWrapper,
+    innerClassName: k.customGiftMessage
+  }), V = () => null != o && (h === L.Wt.USER_PROFILE_WISHLIST || h === L.Wt.DM_CHANNEL_WISHLIST) ? (0, r.jsx)(y.s, {
+    giftRecipient: o
+  }) : (0, r.jsx)(u.Z, {
+    selectedSkuId: b,
+    validateSelectedGift: Z,
+    searchableSelectWrapperClassName: k.recipientPickerSelectWrapper,
+    recipients: N
+  }), H = e => {
+    null != m && m(null == e ? true : e)
+  }, Y = () => {
+    var e;
+    return (0, r.jsxs)("div", {
+      className: k.bodyColumnLeft,
+      children: [null != x && (0, r.jsx)(w.p, {
+        containerClassName: k.skuCardImage,
+        cardImage: x,
+        cardBackgroundImage: U,
+        altText: null != (e = null == D ? true : D.name) ? e : "",
+        shape: "square"
+      }), (0, r.jsxs)("div", {
+        className: k.giftEffectsContainer,
+        children: [(0, r.jsx)(O.Z, {
+          sound: d,
+          onSelect: H
+        }), (0, r.jsx)(E.Z, {
+          setEmojiConfetti: f,
+          emojiConfetti: null == c ? true : c
         })]
-      }),
-      onStepChange: t,
-      onBackClick: n,
-      disabled: null == p || p.id === (null == R ? true : R.id) || l.length > G.$n
-    }
-  })({
+      })]
+    })
+  }, K = () => {
+    var e, t, n, i;
+    if (null == D) return null;
+    let a = (0, T.T4)(null != (n = null == (e = D.price) ? true : e.amount) ? n : 0, null != (i = null == (t = D.price) ? true : t.currency) ? i : j.pK.USD);
+    return (0, r.jsxs)("div", {
+      className: k.giftPreviewContainer,
+      children: [(0, r.jsx)(l.vwX, {
+        className: k.giftPreviewTitle,
+        children: M.intl.string(M.t.PpoJzt)
+      }), (0, r.jsxs)("div", {
+        className: k.giftPreviewContent,
+        children: [(0, r.jsx)("div", {
+          className: k.giftPreviewImageContainer,
+          children: null != D && null != x && (0, r.jsx)(w.p, {
+            containerClassName: k.giftPreviewCardContainer,
+            cardImage: x,
+            cardBackgroundImage: U,
+            altText: D.name,
+            shape: "square"
+          })
+        }), (0, r.jsxs)("div", {
+          className: k.giftPreviewTextContainer,
+          children: [null != v && (0, r.jsx)(P.e, {
+            application: v
+          }), (0, r.jsx)(l.Text, {
+            variant: "text-sm/semibold",
+            children: D.name
+          })]
+        }), (0, r.jsx)(l.Text, {
+          variant: "text-md/semibold",
+          children: a
+        })]
+      })]
+    })
+  }, z = () => (0, r.jsxs)("div", {
+    className: k.bodyColumnRight,
+    children: [V(), F(), K(), null != G && null != D && (0, r.jsx)(W, {
+      handleClose: n,
+      sku: D,
+      guild: G
+    })]
+  });
+  return {
+    renderStepBody: () => (0, r.jsxs)("div", {
+      className: k.stepBody,
+      children: [Y(), z()]
+    }),
+    getLeftColumnComponent: Y,
+    getRightColumnComponent: z,
+    onStepChange: t,
+    onBackClick: n,
+    disabled: null == o || o.id === (null == A ? true : A.id) || i.length > L.$n
+  }
+};
+
+function Y(e) {
+  let {
+    handleStepChange: t,
+    handleClose: n
+  } = e, {
+    renderStepBody: i,
+    onStepChange: a,
+    onBackClick: o,
+    disabled: s
+  } = H({
     handleStepChange: t,
     handleClose: n
   });
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(h.C3, {
-      children: (0, i.jsxs)("div", {
-        className: L.stepBody,
-        children: [l(), p()]
-      })
-    }), (0, i.jsx)(h.O3, {
-      children: (0, i.jsx)(o.mzw, {
+  return (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(h.C3, {
+      children: i()
+    }), (0, r.jsx)(h.O3, {
+      children: (0, r.jsx)(l.mzw, {
         "data-migration-pending": true,
         justify: f.Z.Justify.BETWEEN,
         align: f.Z.Align.CENTER,
-        className: L.footer,
-        children: (0, i.jsx)(B, {
-          onStepChange: v,
-          onBackClick: y,
-          disabled: T
+        className: k.footer,
+        children: (0, r.jsx)(V, {
+          onStepChange: a,
+          onBackClick: o,
+          disabled: s
         })
       })
     })]
   })
 }
 
-function D(e) {
+function W(e) {
   let {
     handleClose: t,
     guild: n,
-    sku: l
-  } = e, r = a.useCallback(() => {
-    (0, T.eagerNavigateToSocialLayerStorefront)({
+    sku: a
+  } = e, o = i.useCallback(() => {
+    (0, N.eagerNavigateToSocialLayerStorefront)({
       guildId: n.id
     })
-  }, [n.id]), s = a.useCallback(() => {
+  }, [n.id]), s = i.useCallback(() => {
     var e;
     t();
-    let i = null == (e = y.Z.getStorefrontState(n.id)) ? true : e.activePage;
-    window.location.pathname.includes(O.Z5c.CHANNELS_GAME_SHOP(n.id, null != i ? i : 0, l.id)) || ((0, o.pTH)(), (0, T.default)({
+    let r = null == (e = A.Z.getStorefrontState(n.id)) ? true : e.activePage;
+    window.location.pathname.includes(D.Z5c.CHANNELS_GAME_SHOP(n.id, null != r ? r : 0, a.id)) || ((0, l.pTH)(), (0, N.default)({
       guildId: n.id,
-      pageIndex: null != i ? i : 0,
-      skuId: l.id,
-      slug: l.slug
+      pageIndex: null != r ? r : 0,
+      skuId: a.id,
+      slug: a.slug
     }))
-  }, [n.id, l.id, l.slug, t]);
-  return (0, i.jsx)("div", {
-    className: L.viewItemButton,
-    children: (0, i.jsx)(o.Avr, {
-      text: n.id === (0, _.ac)() ? A.intl.string(A.t.nyIcya) : A.intl.string(A.t.ImioFL),
-      onMouseDown: r,
+  }, [n.id, a.id, a.slug, t]);
+  return (0, r.jsx)("div", {
+    className: k.viewItemButton,
+    children: (0, r.jsx)(l.Avr, {
+      text: n.id === (0, C.ac)() ? M.intl.string(M.t.nyIcya) : M.intl.string(M.t.ImioFL),
+      onMouseDown: o,
       onClick: s,
       textVariant: "text-sm/medium",
       lineClamp: true

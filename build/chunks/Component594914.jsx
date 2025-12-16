@@ -63,7 +63,7 @@ function _(e, t) {
   (0, a.ZDy)(async () => {
     let {
       default: t
-    } = await n.e("45227").then(n.bind(n, 556266));
+    } = await Promise.resolve().then(n.bind(n, 556266));
     return n => (0, r.jsx)(t, p(d({}, n), {
       loadId: g,
       applicationId: e.applicationId,
