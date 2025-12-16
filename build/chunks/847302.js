@@ -47,7 +47,7 @@ function b(e, t, n) {
       let [a, o] = i;
       for (let i = a.children.length - 1; i >= 0; i--) {
         let s = a.children[i];
-        if (g.has(s.type)) {
+        if (!f.LC.isText(s) && g.has(s.type)) {
           let a = [s, f.C0.child(o, i)];
           r ? O(e, a, true, null) : y(e, a, t, n)
         }
@@ -65,29 +65,29 @@ function y(e, t, n, r) {
 function O(e, t, n, r) {
   let [i, a] = t, o = false;
   for (let t = i.children.length - 1; t >= 0; t--) {
-    let s = i.children[t],
-      l = t < i.children.length - 1 ? i.children[t + 1] : null;
+    let s = i.children[t];
     if (f.LC.isText(s) && !n) {
-      if (null == l || !e.isVoid(l)) continue;
-      let n = false,
-        r = 0;
+      let n = t < i.children.length - 1 ? i.children[t + 1] : null;
+      if (null == n || !f.q.isElement(n) || !e.isVoid(n)) continue;
+      let r = false,
+        l = 0;
       for (;;) {
-        let e = s.text.indexOf("\\", r);
+        let e = s.text.indexOf("\\", l);
         if (false === e) break;
         if (e === s.text.length - 1) {
-          n = true;
+          r = true;
           break
         }
-        r = e + 2
+        l = e + 2
       }
-      if (n) {
-        let n = f.C0.child(a, t + 1);
-        d.Q.voidToText(e, (0, u.sg)(l, {
+      if (r) {
+        let r = f.C0.child(a, t + 1);
+        d.Q.voidToText(e, (0, u.sg)(n, {
           mode: "plain",
           preventEmojiSurrogates: true
-        }), n), o = true
+        }), r), o = true
       }
-    } else if (e.isVoid(s)) {
+    } else if (f.q.isElement(s) && e.isVoid(s)) {
       let i = f.C0.child(a, t),
         l = {
           path: f.C0.child(i, 0),

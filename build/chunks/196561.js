@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 196561, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  G: () => c
+  G: () => T
 });
 var Chunk442837 = require("./442837.js"),
   Chunk435064 = require("./435064.js"),
@@ -10,7 +10,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk356659 = require("./356659.js"),
   Chunk388032 = require("./388032.jsx");
-let c = (0, Chunk509613.Em)(Chunk313789.n.CLIPS_LENGTH, {
+let T = (0, Chunk509613.Em)(Chunk313789.n.CLIPS_LENGTH, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.OgfUio),
   useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.H7j4tY),
   useValue: () => (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getSettings().clipsLength),

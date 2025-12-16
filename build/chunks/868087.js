@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 868087, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  p: () => c
+  p: () => T
 }), require("./415506.js"), require("./49124.js");
 var Chunk473749 = require("./473749.js"),
   Chunk323183 = require("./323183.js"),
@@ -10,15 +10,15 @@ var Chunk473749 = require("./473749.js"),
   Chunk626135 = require("./626135.js"),
   Chunk960048 = require("./960048.js"),
   Chunk981631 = require("./981631.js");
-let c = () => {
+let T = () => {
   let t = (0, Chunk773275.xf)(t => t.doInstall),
     e = (0, Chunk773275.xf)(t => t.install),
     n = (0, Chunk773275.xf)(t => t.installationStatus),
-    c = (0, Chunk773275.xf)(t => t.setDoInstall),
-    T = (0, Chunk773275.xf)(t => t.setInstallationStatus);
+    T = (0, Chunk773275.xf)(t => t.setDoInstall),
+    S = (0, Chunk773275.xf)(t => t.setInstallationStatus);
   return (0, Chunk473749.useEffect)(() => {
-    module && require === Chunk5900._n.NOT_INSTALLED && (c(false), T(Chunk5900._n.INSTALLING), exports().catch(t => {
-      T(s._n.ERROR), a.Z.captureException(t, {
+    module && require === Chunk5900._n.NOT_INSTALLED && (T(false), S(Chunk5900._n.INSTALLING), exports().catch(t => {
+      S(s._n.ERROR), a.Z.captureException(t, {
         tags: {
           source: l.D.WARP_INSTALL_HELPER
         }
@@ -27,5 +27,5 @@ let c = () => {
         error_source: l.D.WARP_INSTALL_HELPER
       })
     }))
-  }, [module, c, exports, require, T]), null
+  }, [module, T, exports, require, S]), null
 }

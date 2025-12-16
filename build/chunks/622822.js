@@ -7,6 +7,7 @@ require.d(exports, {
   Kt: () => U,
   Lj: () => N,
   RW: () => Y,
+  Uw: () => $,
   Y3: () => Q,
   Yt: () => R,
   _I: () => L,
@@ -18,7 +19,7 @@ require.d(exports, {
   hO: () => w,
   kH: () => G,
   qF: () => K,
-  xi: () => $,
+  xi: () => ee,
   zd: () => V
 }), require("./388685.js"), require("./953529.js");
 var Chunk442837 = require("./442837.js"),
@@ -310,6 +311,12 @@ function J() {
 }
 
 function $() {
+  let e = (0, Chunk532812.S)("age-gate-utils"),
+    t = (0, Chunk81643.sf)();
+  return module && exports
+}
+
+function ee() {
   let e = (0, Chunk532812.H)("age-gate-utils"),
     t = (0, Chunk81643.L5)();
   return module && exports

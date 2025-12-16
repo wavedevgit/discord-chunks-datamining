@@ -13,13 +13,13 @@ var Chunk657707 = require("./657707.js"),
   Chunk87513 = require("./87513.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let d = (0, Chunk509613.wf)(Chunk313789.n.ACTIVITY_PRIVACY_PANEL, {
+let E = (0, Chunk509613.wf)(Chunk313789.n.ACTIVITY_PRIVACY_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.Cq98yL),
     StronglyDiscouragedCustomComponent: Chunk309739.ZP,
     buildLayout: () => [],
     usePredicate: () => !(0, Chunk526665.gN)("ActivityPrivacyPanel")
   }),
-  E = (0, Chunk509613.wf)(Chunk313789.n.ACTIVITY_PRIVACY_PANEL, {
+  d = (0, Chunk509613.wf)(Chunk313789.n.ACTIVITY_PRIVACY_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.Cq98yL),
     usePredicate: () => (0, Chunk526665.gN)("ActivityPrivacyPanel"),
     buildLayout: () => [Chunk418878.v, Chunk330187.b, Chunk87513.o]
@@ -28,5 +28,5 @@ let d = (0, Chunk509613.wf)(Chunk313789.n.ACTIVITY_PRIVACY_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.Cq98yL),
     getLegacySearchKey: () => (0, Chunk526665.Gl)("ActivityPrivacyPanel") ? true : Chunk726985.s6.ACTIVITY_PRIVACY,
     icon: Chunk657707.KED,
-    buildLayout: () => (0, Chunk526665.Gl)("ActivityPrivacyPanel") ? [E] : [d]
+    buildLayout: () => (0, Chunk526665.Gl)("ActivityPrivacyPanel") ? [d] : [E]
   })

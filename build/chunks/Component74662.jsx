@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 74662, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  U: () => _
+  U: () => I
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,12 +17,12 @@ var Chunk657707 = require("./657707.js"),
   Chunk888645 = require("./888645.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk472057 = require("./472057.js");
-let I = (0, Chunk509613.wf)(Chunk313789.n.PRIVATE_BROWSING_PANEL, {
+let _ = (0, Chunk509613.wf)(Chunk313789.n.PRIVATE_BROWSING_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk472057.default.bU5ANm),
     useBadge: () => (0, Chunk54381.jsx)(Chunk688465.Z, {}),
     buildLayout: () => [Chunk888645.m]
   }),
-  _ = (0, Chunk509613.m7)(Chunk313789.n.PRIVATE_BROWSING_SIDEBAR_ITEM, {
+  I = (0, Chunk509613.m7)(Chunk313789.n.PRIVATE_BROWSING_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk472057.default.bU5ANm),
     icon: Chunk657707.enf,
     usePredicate: () => {
@@ -39,7 +39,7 @@ let I = (0, Chunk509613.wf)(Chunk313789.n.PRIVATE_BROWSING_PANEL, {
         });
       return Chunk657707 && (exports || require) && (!module || Chunk54381)
     },
-    buildLayout: () => [I],
+    buildLayout: () => [_],
     trailing: {
       type: Chunk970013.W.BADGE_NEW,
       getDismissibleContentTypes: Chunk620163._x

@@ -13,13 +13,13 @@ var Chunk657707 = require("./657707.js"),
   Chunk916936 = require("./916936.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let d = (0, Chunk509613.wf)(Chunk313789.n.REGISTERED_GAMES_PANEL, {
+let E = (0, Chunk509613.wf)(Chunk313789.n.REGISTERED_GAMES_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AVDyEj),
     StronglyDiscouragedCustomComponent: Chunk293389.ZP,
     buildLayout: () => [],
     usePredicate: () => !(0, Chunk526665.gN)("RegisteredGamesPanel")
   }),
-  E = (0, Chunk509613.wf)(Chunk313789.n.REGISTERED_GAMES_PANEL, {
+  d = (0, Chunk509613.wf)(Chunk313789.n.REGISTERED_GAMES_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AVDyEj),
     usePredicate: () => (0, Chunk526665.gN)("RegisteredGamesPanel"),
     buildLayout: () => [Chunk916936.A, Chunk586929._]
@@ -29,5 +29,5 @@ let d = (0, Chunk509613.wf)(Chunk313789.n.REGISTERED_GAMES_PANEL, {
     getLegacySearchKey: () => (0, Chunk526665.Gl)("RegisteredGamesPanel") ? true : Chunk726985.s6.REGISTERED_GAMES,
     icon: Chunk657707.iWm,
     usePredicate: Chunk168308.Jw,
-    buildLayout: () => (0, Chunk526665.Gl)("RegisteredGamesPanel") ? [E] : [d]
+    buildLayout: () => (0, Chunk526665.Gl)("RegisteredGamesPanel") ? [d] : [E]
   })

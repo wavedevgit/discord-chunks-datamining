@@ -14,7 +14,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let E = (0, Chunk972959.H)(() => ({
+let d = (0, Chunk972959.H)(() => ({
     syncEnabled: null,
     updateTimeout: null
   })),
@@ -27,31 +27,31 @@ let E = (0, Chunk972959.H)(() => ({
       var t;
       let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.syncForcedColors);
       return (0, Chunk493773.ZP)(() => {
-        E.setState({
+        d.setState({
           syncEnabled: Chunk607070.Z.syncForcedColors
         })
-      }), null != (t = E.useState(t => t.syncEnabled)) ? module : exports
+      }), null != (t = d.useState(t => t.syncEnabled)) ? module : exports
     },
     setValue: t => {
       let {
         updateTimeout: e
-      } = E.getState();
+      } = d.getState();
       if (null != e) {
-        clearTimeout(e), E.setState({
+        clearTimeout(e), d.setState({
           syncEnabled: t,
           updateTimeout: null
         });
         return
       }
-      if (t === r.Z.syncForcedColors) return void E.setState({
+      if (t === r.Z.syncForcedColors) return void d.setState({
         syncEnabled: t
       });
       let n = setTimeout(() => {
-        (0, u.qz)(t), E.setState({
+        (0, u.qz)(t), d.setState({
           updateTimeout: null
         })
       }, 150);
-      E.setState({
+      d.setState({
         syncEnabled: t,
         updateTimeout: n
       })

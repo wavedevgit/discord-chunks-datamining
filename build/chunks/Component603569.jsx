@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 603569, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  a: () => I
+  a: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk657707 = require("./657707.js"),
@@ -20,7 +20,7 @@ let g = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
     StronglyDiscouragedCustomComponent: Chunk54942.Z,
     buildLayout: () => []
   }),
-  I = (0, Chunk509613.m7)(Chunk313789.n.FAMILY_CENTER_SIDEBAR_ITEM, {
+  _ = (0, Chunk509613.m7)(Chunk313789.n.FAMILY_CENTER_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk517319.default.RZqaJn),
     getLegacySearchKey: () => Chunk726985.s6.PRIVACY_FAMILY_CENTER,
     icon: Chunk657707.BFJ,
@@ -30,7 +30,7 @@ let g = (0, Chunk509613.wf)(Chunk313789.n.FAMILY_CENTER_PANEL, {
       useCustomDecoration: function(t) {
         let e = (0, r.gU)();
         return t === s.z.FAMILY_CENTER_NEW_BADGE ? (0, i.jsx)(u.IGR, {
-          text: d.intl.string(d.t.y2b7CA)
+          text: E.intl.string(E.t.y2b7CA)
         }) : e > 0 ? (0, i.jsx)(u.mAB, {
           count: e
         }) : null

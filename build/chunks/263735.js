@@ -19,11 +19,11 @@ var Chunk657707 = require("./657707.js"),
   Chunk638367 = require("./638367.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let O = (0, Chunk509613.wf)(Chunk313789.n.CHAT_PANEL, {
+let A = (0, Chunk509613.wf)(Chunk313789.n.CHAT_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["/VQax8"]),
     buildLayout: () => [Chunk724485.k, Chunk175600.w, Chunk99019.v, Chunk469843.m, Chunk316418.W, Chunk505045.x, Chunk638367.b, Chunk317134.s, Chunk629022.l]
   }),
-  A = (0, Chunk509613.wf)(Chunk313789.n.CHAT_PANEL, {
+  O = (0, Chunk509613.wf)(Chunk313789.n.CHAT_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["/VQax8"]),
     StronglyDiscouragedCustomComponent: Chunk400287.Z,
     buildLayout: () => []
@@ -32,5 +32,5 @@ let O = (0, Chunk509613.wf)(Chunk313789.n.CHAT_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["/VQax8"]),
     getLegacySearchKey: () => (0, Chunk526665.Gl)("ChatPanel") ? true : Chunk726985.s6.CHAT,
     icon: Chunk657707.kBi,
-    buildLayout: () => [(0, Chunk526665.Gl)("ChatPanel") ? O : A]
+    buildLayout: () => [(0, Chunk526665.Gl)("ChatPanel") ? A : O]
   })

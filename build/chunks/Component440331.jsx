@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 440331, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  k: () => _
+  k: () => I
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk216476 = require("./216476.js");
-let _ = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_KEYBIND, {
+let I = (0, Chunk509613.ON)(Chunk313789.n.CLIPS_KEYBIND, {
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.pf54EU), Chunk388032.intl.string(Chunk388032.t["QyB/jK"])],
   Component: () => {
     let t = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true));

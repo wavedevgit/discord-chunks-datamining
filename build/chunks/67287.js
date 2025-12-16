@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 67287, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  W: () => T
+  W: () => S
 });
 var Chunk509613 = require("./509613.js"),
   Chunk906467 = require("./906467.js"),
@@ -11,7 +11,7 @@ var Chunk509613 = require("./509613.js"),
   Chunk965557 = require("./965557.js"),
   Chunk865121 = require("./865121.js"),
   Chunk388032 = require("./388032.jsx");
-let T = (0, Chunk509613.vB)(Chunk313789.n.DEVELOPER_SECTION, {
+let S = (0, Chunk509613.vB)(Chunk313789.n.DEVELOPER_SECTION, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.CbItOL),
   usePredicate: () => (0, Chunk526665.NT)("DeveloperSection") || Chunk906467.Z.isDeveloper,
   buildLayout: () => [Chunk965557.d, Chunk713602.B, Chunk865121.T]

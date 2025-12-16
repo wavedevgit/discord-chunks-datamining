@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk897192 = require("./897192.js");
-let A = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
+let O = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["vi7f+q"]),
     notice: {
       stores: [Chunk778825.Z, Chunk25990.Z],
@@ -76,5 +76,5 @@ let A = (0, Chunk509613.wf)(Chunk313789.n.PROFILE_PANEL, {
       type: Chunk970013.W.BADGE_NEW,
       getDismissibleContentTypes: Chunk620163.OF
     },
-    buildLayout: () => [A]
+    buildLayout: () => [O]
   })

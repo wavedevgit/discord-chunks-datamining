@@ -2,7 +2,7 @@
 /** chunk id: 564344, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => N
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,7 +11,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk503089 = require("./503089.jsx"),
-  Chunk254901 = require("./254901.js"),
   Chunk18438 = require("./18438.js"),
   Chunk778825 = require("./778825.js"),
   Chunk851894 = require("./851894.jsx"),
@@ -31,60 +30,57 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk37149 = require("./37149.js");
 
-function P() {
-  Chunk254901.Z.useExperiment({
-    location: "profile_customization_auto"
-  });
+function N() {
   let e = (0, Chunk442837.e7)([Chunk778825.Z], () => Chunk778825.Z.getGuild()),
     t = (0, Chunk16703.Z)(),
     n = (0, Chunk442837.e7)([Chunk778825.Z, Chunk25990.Z], () => Chunk778825.Z.showNotice() || Chunk25990.Z.showNotice()),
     a = null != module ? module : exports,
-    P = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
+    N = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     {
-      subsection: R,
-      setSubsection: w
+      subsection: P,
+      setSubsection: R
     } = (0, Chunk785145.Z)(),
-    D = Chunk839469.R.useField("hasSearchResults"),
-    x = Chunk839469.R.useField("searchResults");
+    w = Chunk839469.R.useField("hasSearchResults"),
+    D = Chunk839469.R.useField("searchResults");
 
-  function L(t) {
-    if (R !== t) {
+  function x(t) {
+    if (P !== t) {
       if (n) {
-        y.S.dispatch(S.CkL.SHAKE_APP, {
+        b.S.dispatch(v.CkL.SHAKE_APP, {
           duration: 300,
           intensity: c.$x
-        }), y.S.dispatch(S.CkL.EMPHASIZE_NOTICE);
+        }), b.S.dispatch(v.CkL.EMPHASIZE_NOTICE);
         return
       }
-      t === T.NB.GUILD && null == e && null != a && (0, d.Fq)(a), w(t)
+      t === I.NB.GUILD && null == e && null != a && (0, u.Fq)(a), R(t)
     }
   }
   Chunk473749.useEffect(() => {
-    null != P && (null == Chunk120356 ? true : Chunk120356.id) !== Chunk647086._ && (0, Chunk484459.Z)(P.id, P.getAvatarURL(null == Chunk120356 ? true : Chunk120356.id, 80), {
+    null != N && (null == Chunk120356 ? true : Chunk120356.id) !== Chunk647086._ && (0, Chunk484459.Z)(N.id, N.getAvatarURL(null == Chunk120356 ? true : Chunk120356.id, 80), {
       guildId: null == Chunk120356 ? true : Chunk120356.id
     })
-  }, [null == Chunk120356 ? true : Chunk120356.id, P]);
-  let j = true,
-    M = true;
-  return D && 1 === x.length && (x.includes(Chunk726985.s6.PROFILE_SERVER_PROFILES) ? (L(Chunk526761.NB.GUILD), M = false) : x.includes(Chunk726985.s6.PROFILE_USER_PROFILE) && (L(Chunk526761.NB.USER_PROFILE), j = false)), (0, Chunk54381.jsxs)(Chunk10298.N, {
+  }, [null == Chunk120356 ? true : Chunk120356.id, N]);
+  let L = true,
+    j = true;
+  return w && 1 === D.length && (D.includes(Chunk726985.s6.PROFILE_SERVER_PROFILES) ? (x(Chunk526761.NB.GUILD), j = false) : D.includes(Chunk726985.s6.PROFILE_USER_PROFILE) && (x(Chunk526761.NB.USER_PROFILE), L = false)), (0, Chunk54381.jsxs)(Chunk10298.N, {
     header: Chunk388032.intl.string(Chunk388032.t["vi7f+q"]),
     children: [(0, Chunk54381.jsxs)(Chunk481060.njP, {
       className: Chunk37149.tabBar,
       type: "top",
       look: "brand",
-      selectedItem: R,
-      onItemSelect: L,
-      children: [M ? (0, Chunk54381.jsx)(Chunk481060.njP.Item, {
+      selectedItem: P,
+      onItemSelect: x,
+      children: [j ? (0, Chunk54381.jsx)(Chunk481060.njP.Item, {
         className: Chunk37149.tabBarItem,
         id: Chunk526761.NB.USER_PROFILE,
         children: Chunk388032.intl.string(Chunk388032.t["2p07FR"])
-      }, Chunk526761.NB.USER_PROFILE) : null, j ? (0, Chunk54381.jsx)(Chunk481060.njP.Item, {
+      }, Chunk526761.NB.USER_PROFILE) : null, L ? (0, Chunk54381.jsx)(Chunk481060.njP.Item, {
         className: o()(Chunk37149.tabBarItem, Chunk37149.guildTabBarItem),
         "aria-label": Chunk388032.intl.string(Chunk388032.t.kPHroX),
         id: Chunk526761.NB.GUILD,
         children: Chunk388032.intl.string(Chunk388032.t.kPHroX)
       }, Chunk526761.NB.GUILD) : null]
-    }), R === Chunk526761.NB.GUILD ? (0, Chunk54381.jsx)(Chunk851894.Z, {
+    }), P === Chunk526761.NB.GUILD ? (0, Chunk54381.jsx)(Chunk851894.Z, {
       selectedGuild: Chunk120356
     }) : (0, Chunk54381.jsx)(Chunk216045.Z, {})]
   })
