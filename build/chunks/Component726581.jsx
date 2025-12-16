@@ -23,17 +23,17 @@ var Chunk54381 = require("./54381.js"),
 class O extends Chunk473749.Component {
   renderReasons(e, t, n) {
     return 0 === e.length && 0 === t.length ? null : (0, r.jsx)("div", {
-      className: E.section,
+      className: _.section,
       children: (0, r.jsxs)("div", {
-        className: E.sectionContent,
+        className: _.sectionContent,
         children: [e.map(e => (0, r.jsx)("div", {
-          className: E.unit,
+          className: _.unit,
           children: (0, r.jsx)(m.Z, {
             reason: e,
             hidePersonalInformation: n
           })
         }, e.type)), t.map(e => (0, r.jsx)("div", {
-          className: E.unit,
+          className: _.unit,
           children: (0, r.jsx)(o.Z, {
             reason: e
           })

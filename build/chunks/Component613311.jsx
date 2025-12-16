@@ -306,7 +306,7 @@ class ef extends Chunk473749.PureComponent {
         children: eo.intl.format(eo.t.tluX4B, {
           name: n.name
         })
-      }), (0, r.jsx)(E.Z, {}), (0, r.jsx)(q.Z, {
+      }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(q.Z, {
         applicationId: e.id,
         blurb: t.summary,
         description: l,
@@ -442,7 +442,7 @@ class ef extends Chunk473749.PureComponent {
       let {
         sku: r
       } = this.props;
-      null != r && B.default.track(ea.rMx.STORE_LISTING_MEDIA_SCROLLED, ep(ed({}, (0, j.Z)(r)), {
+      null != r && H.default.track(ea.rMx.STORE_LISTING_MEDIA_SCROLLED, ep(ed({}, (0, j.Z)(r)), {
         card_index: n,
         card_type: e.type === ea.s9s.IMG ? "image" : "video"
       }))
@@ -569,7 +569,7 @@ class ef extends Chunk473749.PureComponent {
         pageSize: n,
         isFocused: i
       } = this.props;
-      return (0, r.jsx)(_.Z, {
+      return (0, r.jsx)(E.Z, {
         section: ea.jXE.HERO,
         children: (0, r.jsx)(J.Z, {
           pageSize: n,
@@ -617,7 +617,7 @@ let eg = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
     didFetchEntitlements: null != l && M.Z.applicationIdsFetched.has(l),
     shouldFetchStatistics: o && null != l && R.Z.shouldFetchStatisticsForApplication(l),
     sku: n,
-    isFocused: H.Z.isFocused(),
+    isFocused: B.Z.isFocused(),
     storeListing: U.Z.getStoreListing({
       storeListingId: a,
       skuId: t,

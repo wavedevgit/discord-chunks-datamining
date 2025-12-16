@@ -22,18 +22,18 @@ let f = e => {
     onWithdrawApplication: h,
     rejectionReason: m = null,
     guild: b = null
-  } = e, _ = (0, l.e7)([c.Z], () => {
+  } = e, E = (0, l.e7)([c.Z], () => {
     var e;
     return c.Z.getCooldown(null != (e = null == b ? true : b.id) ? e : "0")
   }), {
-    canReapply: E,
+    canReapply: _,
     isLoading: O
   } = (0, u.o)(null == b ? true : b.id);
   i.useEffect(() => {
-    null == _ && null != b && o.Z.fetchJoinRequestCooldown(b.id)
-  }, [_, b]);
-  let v = (null != _ ? _ : 0) > 0,
-    y = v && null != _ ? Math.ceil((1e3 * _ - Date.now()) / 864e5) : 0;
+    null == E && null != b && o.Z.fetchJoinRequestCooldown(b.id)
+  }, [E, b]);
+  let v = (null != E ? E : 0) > 0,
+    y = v && null != E ? Math.ceil((1e3 * E - Date.now()) / 864e5) : 0;
   return (0, r.jsxs)("div", {
     className: p.confirmation,
     children: [(0, r.jsx)("div", {
@@ -63,7 +63,7 @@ let f = e => {
       }) : null]
     }), (0, r.jsxs)("div", {
       className: p.confirmationButtonRow,
-      children: [E || O ? (0, r.jsx)(a.u, {
+      children: [_ || O ? (0, r.jsx)(a.u, {
         asContainer: true,
         text: v ? d.intl.formatToPlainString(d.t.A0f0P7, {
           days: y
@@ -75,13 +75,13 @@ let f = e => {
           onClick: f,
           variant: "secondary",
           size: "md",
-          loading: null == _ || O,
+          loading: null == E || O,
           disabled: v || O,
           text: n,
           fullWidth: true
         })
       }) : null, (0, r.jsx)(s.Button, {
-        onClick: () => h(E || O),
+        onClick: () => h(_ || O),
         variant: "critical-primary",
         size: "md",
         text: g,

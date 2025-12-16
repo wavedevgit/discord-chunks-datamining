@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 782691, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk480210 = require("./480210.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -63,7 +63,7 @@ let C = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), i = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = r.useState(true), T = r.useRef({}), [O, N] = r.useState(false), [P, w] = r.useState(false), [I, k] = r.useState([]), [R, A] = r.useState(C), D = r.useRef([]), [Z, L] = r.useState(t.name), M = Z.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
+    } = (0, h.n6)(), l = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = r.useState(true), T = r.useRef({}), [O, N] = r.useState(false), [w, P] = r.useState(false), [I, k] = r.useState([]), [R, A] = r.useState(C), Z = r.useRef([]), [D, L] = r.useState(t.name), M = D.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
       id: _,
       skuId: _,
       title: _,
@@ -89,7 +89,7 @@ let C = {
       e.length > 0 && k([...e].map(e => {
         if (null != e.base64) {
           let t = (0, f.$j)(e.base64);
-          e.src = t, D.current.push(t)
+          e.src = t, Z.current.push(t)
         }
         return e
       }))
@@ -99,7 +99,7 @@ let C = {
         let [t, n] = e;
         if (null != n) {
           let e = (0, f.$j)(n.base64);
-          n.src = e, D.current.push(e), A(e => y(j({}, e), {
+          n.src = e, Z.current.push(e), A(e => y(j({}, e), {
             [t]: n
           }))
         }
@@ -119,17 +119,17 @@ let C = {
       } = V.current;
       e.readonly || t({
         skuId: e.skuId,
-        name: Z,
+        name: D,
         config: {
           effects: I,
           stillFrames: R
         }
       })
-    }, [I, R, Z]), r.useEffect(() => () => {
-      D.current.forEach(e => {
+    }, [I, R, D]), r.useEffect(() => () => {
+      Z.current.forEach(e => {
         URL.revokeObjectURL(e)
-      }), D.current = []
-    }, []), null == i) ? (0, a.jsx)("div", {}) : (0, a.jsxs)("div", {
+      }), Z.current = []
+    }, []), null == l) ? (0, a.jsx)("div", {}) : (0, a.jsxs)("div", {
       className: b.root,
       children: [(0, a.jsxs)("div", {
         style: {
@@ -169,7 +169,7 @@ let C = {
       }), (0, a.jsxs)("div", {
         className: b.grid,
         children: [(0, a.jsxs)("div", {
-          className: l()(b.col, b.preview),
+          className: i()(b.col, b.preview),
           children: [(0, a.jsx)("img", {
             src: O ? g : v,
             alt: "",
@@ -180,13 +180,13 @@ let C = {
         }), (0, a.jsxs)("div", {
           className: b.col,
           children: [(0, a.jsxs)("div", {
-            className: l()(b.col, b.section),
+            className: i()(b.col, b.section),
             children: [(0, a.jsx)(c.Text, {
               variant: "text-md/normal",
               children: "Profile Effect Name"
             }), (0, a.jsx)("input", {
               type: "text",
-              value: Z,
+              value: D,
               className: b.input,
               onChange: e => {
                 L(e.target.value)
@@ -214,10 +214,10 @@ let C = {
                 children: "Show User Profile"
               }), (0, a.jsx)("input", {
                 type: "checkbox",
-                checked: P,
+                checked: w,
                 className: b.checkBox,
                 onChange: () => {
-                  w(!P)
+                  P(!w)
                 }
               })]
             })]
@@ -271,7 +271,7 @@ let C = {
               })
             })
           }), (0, a.jsxs)("div", {
-            className: l()(b.bottomControls, b.shareSection),
+            className: i()(b.bottomControls, b.shareSection),
             children: [(0, a.jsx)(c.Text, {
               variant: "text-sm/semibold",
               children: "Please download both configs for the drop package!"
@@ -292,7 +292,7 @@ let C = {
                 })
               }), (0, a.jsx)(d.Z, {
                 fileContents: () => JSON.stringify(y(j({}, t), {
-                  name: Z,
+                  name: D,
                   config: y(j({}, t.config), {
                     effects: I,
                     stillFrames: R
@@ -342,7 +342,7 @@ let C = {
             var t;
             return (null != (t = e.randomizedSources) ? t : []).length > 0
           }) && (0, a.jsxs)("div", {
-            className: l()(b.section, b.randomizedRules),
+            className: i()(b.section, b.randomizedRules),
             children: [(0, a.jsx)(c.Text, {
               variant: "text-md/bold",
               children: "Rules of Randomized Effects"
@@ -358,10 +358,10 @@ let C = {
               })]
             })]
           }), (0, a.jsx)("div", {
-            children: P && (0, a.jsxs)("div", {
-              className: l()(b.userProfilePreview, b.preview),
+            children: w && (0, a.jsxs)("div", {
+              className: i()(b.userProfilePreview, b.preview),
               children: [(0, a.jsx)(m.Z, {
-                user: i,
+                user: l,
                 pendingAvatar: true,
                 pendingProfileEffect: null,
                 canUsePremiumCustomization: true,
@@ -372,7 +372,7 @@ let C = {
             })
           })]
         }), (0, a.jsxs)("div", {
-          className: l()(b.grid, b.layers),
+          className: i()(b.grid, b.layers),
           children: [(0, a.jsx)("div", {
             className: b.dangerControls,
             children: (0, a.jsx)(c.Button, {
@@ -412,7 +412,7 @@ let C = {
                 })]
               })]
             }), (0, a.jsxs)("div", {
-              className: l()(b.grid, b.section),
+              className: i()(b.grid, b.section),
               children: [(0, a.jsxs)("div", {
                 className: b.col,
                 children: [(0, a.jsx)(c.Text, {
@@ -451,7 +451,7 @@ let C = {
                 })]
               })]
             }), (0, a.jsxs)("div", {
-              className: l()(b.grid, b.section),
+              className: i()(b.grid, b.section),
               children: [(0, a.jsxs)("div", {
                 className: b.col,
                 children: [(0, a.jsx)(c.Text, {
@@ -503,20 +503,20 @@ let C = {
                   null != n && (0, f.i0)(n, e => {
                     k(a => {
                       let r = [...a],
-                        i = a[t];
-                      if (null == i) return a;
-                      let l = j({}, i);
-                      return null == l.randomizedSources && (l.randomizedSources = []), l.randomizedSources.push({
+                        l = a[t];
+                      if (null == l) return a;
+                      let i = j({}, l);
+                      return null == i.randomizedSources && (i.randomizedSources = []), i.randomizedSources.push({
                         src: e,
                         filename: n.name
-                      }), r[t] = l, r
+                      }), r[t] = i, r
                     })
                   })
                 })(e, t),
                 multiple: false
               })
             }), (0, a.jsxs)("div", {
-              className: l()(b.row, b.end),
+              className: i()(b.row, b.end),
               children: [(0, a.jsx)(c.Button, {
                 variant: "secondary",
                 text: "Add Alternative",

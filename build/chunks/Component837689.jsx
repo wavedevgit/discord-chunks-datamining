@@ -87,7 +87,7 @@ class P extends Chunk317770.Z {
       if (null != t) return {
         userDiscountOffer: t
       };
-      let n = (0, _.J0)();
+      let n = (0, E.J0)();
       return null != n ? {
         userTrialOffer: n
       } : {}
@@ -104,7 +104,7 @@ class P extends Chunk317770.Z {
         }),
         r = (0, u.zu)(a.z.Q2_2025_MARKETING_MOMENT_FOLLOW_UP_MODAL),
         l = p.default.getCurrentUser();
-      if (!t || r || (0, s.$sL)() || (0, g.I5)(l) || await (0, E.G)(e.userTrialOffer) && (0, C.Z)({
+      if (!t || r || (0, s.$sL)() || (0, g.I5)(l) || await (0, _.G)(e.userTrialOffer) && (0, C.Z)({
           upsellType: T.cd.REVERSE_TRIAL_FOLLOWUP_UPSELL
         }), (null == l || l.verified) && !(0, s.$sL)() && !i.tq && !n) {
         for (let t of (await (0, y.He)(e)))

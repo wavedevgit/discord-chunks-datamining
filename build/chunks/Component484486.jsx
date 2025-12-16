@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 484486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -20,7 +20,7 @@ let c = () => {
     }), (0, Chunk54381.jsx)(Chunk481060.FiK, {
       value: module,
       onChange: e => {
-        (0, l.p8)(e)
+        (0, i.p8)(e)
       },
       minValue: 0,
       maxValue: 100

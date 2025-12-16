@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 704088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => S
@@ -23,14 +23,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk246992 = require("./246992.js"),
   Chunk474936 = require("./474936.js");
 let C = Chunk473749.forwardRef((e, t) => {
-  let [n, i] = r.useState(null), [l, o] = r.useState(null), [d, u] = r.useState(false), m = r.useCallback(async () => {
-    u(true), o(null), i(null);
+  let [n, l] = r.useState(null), [i, o] = r.useState(null), [d, u] = r.useState(false), m = r.useCallback(async () => {
+    u(true), o(null), l(null);
     try {
       let e = await s.tn.get({
         url: "/users/@me/debug/warp/license",
         rejectWithError: true
       });
-      i(e.body)
+      l(e.body)
     } catch (r) {
       var e, t;
       let n = (null == r || null == (e = r.body) ? true : e.message) || (null == r ? true : r.message) || "Unknown error occurred",
@@ -52,7 +52,7 @@ let C = Chunk473749.forwardRef((e, t) => {
       text: d ? "Loading..." : "Fetch WARP License Info",
       onClick: m,
       disabled: d
-    }), null != l && (0, a.jsx)("div", {
+    }), null != i && (0, a.jsx)("div", {
       style: {
         padding: "12px",
         backgroundColor: "#ed4245",
@@ -61,7 +61,7 @@ let C = Chunk473749.forwardRef((e, t) => {
         fontFamily: "monospace",
         fontSize: "12px"
       },
-      children: l
+      children: i
     }), null != n && (0, a.jsx)("pre", {
       style: {
         width: "100%",
@@ -86,17 +86,17 @@ C.displayName = "DebugWarpLicenseInfo";
 let _ = e => {
     let {
       onSuccess: t
-    } = e, [n, i] = r.useState(false), [l, o] = r.useState(0), [d, u] = r.useState(null);
+    } = e, [n, l] = r.useState(false), [i, o] = r.useState(0), [d, u] = r.useState(null);
     r.useEffect(() => {
-      if (l > 0) {
+      if (i > 0) {
         let e = setTimeout(() => {
-          o(l - 1), 1 === l && t()
+          o(i - 1), 1 === i && t()
         }, 1e3);
         return () => clearTimeout(e)
       }
-    }, [l, t]);
+    }, [i, t]);
     let m = async () => {
-      i(true), u(null);
+      l(true), u(null);
       try {
         await s.tn.post({
           url: "/users/@me/debug/warp/license/extension-task",
@@ -108,7 +108,7 @@ let _ = e => {
           a = (null == r ? true : r.status) || (null == r || null == (t = r.body) ? true : t.code);
         u("Error ".concat(a ? "(".concat(a, ")") : "", ": ").concat(n))
       } finally {
-        i(false)
+        l(false)
       }
     };
     return (0, a.jsxs)("div", {
@@ -118,9 +118,9 @@ let _ = e => {
         gap: "12px"
       },
       children: [(0, a.jsx)(c.zxk, {
-        text: n ? "Triggering Task..." : l > 0 ? "Refreshing in ".concat(l, "s...") : "Trigger License Extension Task",
+        text: n ? "Triggering Task..." : i > 0 ? "Refreshing in ".concat(i, "s...") : "Trigger License Extension Task",
         onClick: m,
-        disabled: n || l > 0
+        disabled: n || i > 0
       }), null != d && (0, a.jsx)("div", {
         style: {
           padding: "12px",
@@ -135,13 +135,13 @@ let _ = e => {
     })
   },
   S = () => {
-    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [S, E] = Chunk473749.useState(false), [T, O] = Chunk473749.useState(5e3), [N, P] = Chunk473749.useState(false), w = Chunk473749.useRef(null), I = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), k = (0, Chunk848984.u)(), [R] = Chunk473749.useState(() => (0, Chunk773275.o8)({
+    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [S, E] = Chunk473749.useState(false), [T, O] = Chunk473749.useState(5e3), [N, w] = Chunk473749.useState(false), P = Chunk473749.useRef(null), I = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), k = (0, Chunk848984.u)(), [R] = Chunk473749.useState(() => (0, Chunk773275.o8)({
       finishSetup: async () => true,
       perkAvailableToUser: k
     })), {
       installationStatus: A,
-      setInstallationStatus: D,
-      connectionStatus: Z,
+      setInstallationStatus: Z,
+      connectionStatus: D,
       setConnectionStatus: L,
       setConnect: M,
       setDisconnect: U,
@@ -150,8 +150,8 @@ let _ = e => {
       setIsSupportedPrivateBrowsingPerkPlatform: G,
       isWeb: V,
       isSupportedPrivateBrowsingPerkPlatform: H,
-      setGetWarpInstallationStatus: W,
-      perkAvailableToUser: z,
+      setGetWarpInstallationStatus: z,
+      perkAvailableToUser: W,
       setPerkAvailableToUser: K
     } = (0, Chunk663042.o)(R), q = Chunk473749.useCallback(async () => (L(Chunk5900.Ij.INITIALIZING), exports(setTimeout(() => {
       L(Chunk5900.Ij.CONNECTED)
@@ -163,26 +163,26 @@ let _ = e => {
     Chunk473749.useEffect(() => {
       K(k)
     }, [k, K]), Chunk473749.useEffect(() => {
-      W(Y)
-    }, [W, Y]);
+      z(Y)
+    }, [z, Y]);
     let Q = Chunk473749.useCallback(async () => (clearTimeout(module), L(Chunk5900.Ij.DISCONNECTED), true), [module, L]),
       X = Chunk473749.useCallback(() => new Promise((e, t) => {
-        D(p._n.INSTALLING), s(setTimeout(() => {
+        Z(p._n.INSTALLING), s(setTimeout(() => {
           if (S) return void t(Error("Installation failed"));
           e()
         }, T))
-      }), [S, T, D, Chunk544891]);
+      }), [S, T, Z, Chunk544891]);
     Chunk473749.useEffect(() => {
-      V && A !== Chunk5900._n.UNKNOWN && D(Chunk5900._n.UNKNOWN)
-    }, [V, D, A]), Chunk473749.useEffect(() => {
+      V && A !== Chunk5900._n.UNKNOWN && Z(Chunk5900._n.UNKNOWN)
+    }, [V, Z, A]), Chunk473749.useEffect(() => {
       U(Q)
     }, [Q, U]), Chunk473749.useEffect(() => {
       B(X)
     }, [X, B]), Chunk473749.useEffect(() => {
       A !== Chunk5900._n.INSTALLING && clearTimeout(require)
     }, [require, A]), Chunk473749.useEffect(() => {
-      if (A !== Chunk5900._n.INSTALLED && Z !== Chunk5900.Ij.INITIALIZING) return void L(Chunk5900.Ij.INITIALIZING)
-    }, [A, Z, L]);
+      if (A !== Chunk5900._n.INSTALLED && D !== Chunk5900.Ij.INITIALIZING) return void L(Chunk5900.Ij.INITIALIZING)
+    }, [A, D, L]);
     let {
       enabled: J
     } = Chunk299886.H.useConfig({
@@ -210,9 +210,9 @@ let _ = e => {
               },
               children: (0, Chunk54381.jsx)(Chunk159691.rsf, {
                 onChange: () => {
-                  z ? (0, Chunk535664.C)(null, I) : (0, Chunk535664.C)(Chunk474936.F_, I)
+                  W ? (0, Chunk535664.C)(null, I) : (0, Chunk535664.C)(Chunk474936.F_, I)
                 },
-                checked: z
+                checked: W
               })
             })]
           }), (0, Chunk54381.jsxs)(Chunk261538.BZ, {
@@ -246,7 +246,7 @@ let _ = e => {
               variant: "text-md/semibold",
               children: "Installation Status"
             }), (0, Chunk54381.jsx)(Chunk199849.B6, {
-              select: e => D(e),
+              select: e => Z(e),
               isSelected: e => e === A,
               serialize: e => "".concat(e),
               disabled: V,
@@ -286,7 +286,7 @@ let _ = e => {
               children: "Connection Status"
             }), (0, Chunk54381.jsx)(Chunk199849.B6, {
               select: e => L(e),
-              isSelected: e => e === Z,
+              isSelected: e => e === D,
               serialize: e => "".concat(e),
               options: [{
                 label: "Initializing",
@@ -363,16 +363,16 @@ let _ = e => {
           }), (0, Chunk54381.jsx)(Chunk159691.zxk, {
             text: "Show exit modal",
             onClick: () => {
-              P(true)
+              w(true)
             }
           }), N && (0, Chunk54381.jsx)(Chunk720553.default, {
             url: "https://www.discord.com",
             trustUrl: () => false,
-            onCancel: () => P(false),
+            onCancel: () => w(false),
             isProtocol: false,
             onConfirm: () => {},
             onClose: async () => {
-              P(false)
+              w(false)
             },
             transitionState: Chunk481060.Dvm.ENTERED
           })]
@@ -383,7 +383,7 @@ let _ = e => {
           }), (0, Chunk54381.jsx)(_, {
             onSuccess: () => {
               var e;
-              null == (e = w.current) || module.refresh()
+              null == (e = P.current) || module.refresh()
             }
           })]
         }), (0, Chunk54381.jsxs)(Chunk261538.$0, {
@@ -391,7 +391,7 @@ let _ = e => {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk WARP License Info"
           }), (0, Chunk54381.jsx)(C, {
-            ref: w
+            ref: P
           })]
         })]
       })]

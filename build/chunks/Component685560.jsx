@@ -1,11 +1,11 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 685560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => P
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk913527 = require("./913527.js"),
-  i = require.n(Chunk913527),
+  l = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk704215 = require("./704215.js"),
@@ -49,19 +49,19 @@ async function N(e, t, n) {
     url: y.ANM.APPLIED_BOOST_MODIFY_END_DATE,
     body: {
       applied_boost_ids: t.map(e => e.id),
-      ends_at: n ? null : i()().add(1, "day")
+      ends_at: n ? null : l()().add(1, "day")
     },
     rejectWithError: true
   }), (0, d.C0)(e), (0, f.BN)(e, true)
 }
-async function P(e) {
+async function w(e) {
   await s.tn.post({
     url: y.ANM.SEND_POWERUPS_SYSTEM_MESSAGE(e),
     rejectWithError: true
   })
 }
 
-function w() {
+function P() {
   let e = (0, Chunk442837.e7)([Chunk914010.Z], () => Chunk914010.Z.getGuildId()),
     t = (0, Chunk442837.e7)([Chunk430824.Z], () => {
       var t;
@@ -181,7 +181,7 @@ function w() {
         variant: "primary",
         text: "Send System Message",
         onClick: () => {
-          P(module)
+          w(module)
         }
       })]
     }), (0, Chunk54381.jsx)(Chunk481060.Button, {

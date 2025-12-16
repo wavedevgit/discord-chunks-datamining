@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 918714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -26,18 +26,18 @@ function y(e) {
   let {
     task: t,
     handleSubmit: n,
-    disabled: i
-  } = e, [l, s] = r.useState(t), o = r.useMemo(() => ({
-    task: l,
+    disabled: l
+  } = e, [i, s] = r.useState(t), o = r.useMemo(() => ({
+    task: i,
     setTask: s
-  }), [l, s]);
+  }), [i, s]);
   return r.useEffect(() => {
     s(t)
   }, [t]), (0, a.jsxs)(u.y.Provider, {
     value: o,
     children: [(0, a.jsx)(f.Z, {}), (0, a.jsx)(h.Z, {
       onSubmit: n,
-      disabled: i
+      disabled: l
     })]
   })
 }
@@ -87,7 +87,7 @@ let C = function(e) {
       }
     }
   }, [n, T]);
-  (0, l.ZP)(() => {
+  (0, i.ZP)(() => {
     T()
   });
   let N = r.useMemo(() => (null == n ? true : n.task_type) === m.UA.AGE_VERIFICATION, [n]);
@@ -98,7 +98,7 @@ let C = function(e) {
       src: j,
       alt: ""
     }), N ? (0, a.jsx)(o.default, {
-      transitionState: i.Dvm.ENTERED,
+      transitionState: l.Dvm.ENTERED,
       entryPoint: s.cU.SAFETY_FLOWS,
       onClose: x.dG,
       onComplete: async () => {
@@ -109,43 +109,43 @@ let C = function(e) {
       dismissable: false
     }) : (0, a.jsx)("div", {
       className: v.safetyFlow,
-      children: h ? (0, a.jsx)(i.$jN, {
-        type: i.$jN.Type.SPINNING_CIRCLE
+      children: h ? (0, a.jsx)(l.$jN, {
+        type: l.$jN.Type.SPINNING_CIRCLE
       }) : (0, a.jsx)("div", {
         className: v.container,
-        children: (0, a.jsxs)(i.Kqy, {
+        children: (0, a.jsxs)(l.Kqy, {
           direction: "horizontal",
           justify: "start",
           className: v.body,
-          children: [null !== C && (0, a.jsxs)(i.Kqy, {
+          children: [null !== C && (0, a.jsxs)(l.Kqy, {
             direction: "vertical",
             justify: "space-between",
             align: "center",
             className: v.interimBody,
             padding: 16,
-            children: [(0, a.jsxs)(i.Kqy, {
+            children: [(0, a.jsxs)(l.Kqy, {
               direction: "vertical",
               gap: 4,
-              children: [(0, a.jsx)(i.Heading, {
+              children: [(0, a.jsx)(l.Heading, {
                 variant: "heading-xl/semibold",
                 children: g.intl.string(g.t.c6kn6F)
-              }), (0, a.jsx)(i.Text, {
+              }), (0, a.jsx)(l.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
                 children: g.intl.string(g.t.ZUEGFn)
               })]
-            }), (0, a.jsxs)(i.Kqy, {
+            }), (0, a.jsxs)(l.Kqy, {
               direction: "horizontal",
               justify: "center",
               align: "center",
-              children: [(0, a.jsx)(i.Button, {
+              children: [(0, a.jsx)(l.Button, {
                 fullWidth: true,
                 variant: "secondary",
                 text: g.intl.string(g.t["2jxGer"]),
                 onClick: () => {
                   (0, p.R)("safety_flows_modal")
                 }
-              }), (0, a.jsx)(i.Button, {
+              }), (0, a.jsx)(l.Button, {
                 fullWidth: true,
                 text: g.intl.string(g.t["7NqTJn"]),
                 onClick: () => {

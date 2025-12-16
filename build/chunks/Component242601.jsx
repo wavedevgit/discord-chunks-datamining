@@ -452,13 +452,13 @@ function ed(e) {
   let p = (0, v.Z)(n),
     f = (0, s.e7)([D.Z], () => D.Z.getGuildDimensions(n).scrollTo),
     T = (0, s.e7)([V.Z], () => V.Z.getChannelId()),
-    P = (0, s.e7)([H.Z], () => H.Z.can(X.Plq.MANAGE_GUILD, u)),
+    P = (0, s.e7)([B.Z], () => B.Z.can(X.Plq.MANAGE_GUILD, u)),
     Z = (0, s.e7)([M.Z], () => M.Z.isUnavailable(n)),
     w = (0, s.e7)([F.default], () => F.default.getCurrentUser()),
     {
       enableStudyGroup: k
     } = (0, j.s)(u),
-    Y = (0, E.ZP)(e => e.currentlyShown.has(o.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION)),
+    Y = (0, _.ZP)(e => e.currentlyShown.has(o.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION)),
     [W, q] = i.useState(!Y),
     K = (0, h.Z)(n),
     {
@@ -467,15 +467,15 @@ function ed(e) {
   i.useEffect(() => {
     n !== K && q(!Y)
   }, [n, K, Y]);
-  let [J, et] = (0, E.ZP)(e => [$.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ee.R.GUILD_HEADER_TOOLTIPS)], a.X), en = (0, _.Z)(u), er = (0, d.s9z)(d.JQI), ei = (0, s.e7)([G.Z], () => G.Z.hasLayers()), el = (0, s.e7)([L.Z], () => L.Z.shouldShow(eo)), ea = (0, S.Z)(n), es = (null == u ? true : u.features.has(X.GuildFeatures.HUB)) === true, ec = P && (null == u ? true : u.features.has(X.GuildFeatures.DISCOVERABLE)) === true, ed = (0, s.e7)([N.Z, G.Z], () => null != u && null != w && P && !G.Z.hasLayers() && N.Z.shouldShowGuildTemplateDirtyTooltip(n)), ep = (0, s.e7)([R.Z], () => R.Z.getChannel(c)), {
+  let [J, et] = (0, _.ZP)(e => [$.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ee.R.GUILD_HEADER_TOOLTIPS)], a.X), en = (0, E.Z)(u), er = (0, d.s9z)(d.JQI), ei = (0, s.e7)([G.Z], () => G.Z.hasLayers()), el = (0, s.e7)([L.Z], () => L.Z.shouldShow(eo)), ea = (0, S.Z)(n), es = (null == u ? true : u.features.has(X.GuildFeatures.HUB)) === true, ec = P && (null == u ? true : u.features.has(X.GuildFeatures.DISCOVERABLE)) === true, ed = (0, s.e7)([N.Z, G.Z], () => null != u && null != w && P && !G.Z.hasLayers() && N.Z.shouldShowGuildTemplateDirtyTooltip(n)), ep = (0, s.e7)([R.Z], () => R.Z.getChannel(c)), {
     isPopoutOpen: ef
   } = (0, y.y)(), eg = null != (t = null == u ? true : u.features.has(X.GuildFeatures.COMMUNITY)) && t, eh = z.ZP.isNewUser(w), em = W && !eh;
   (0, I.Z)(u);
   let eb = (0, O.Nj)(o.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
-    e_ = (0, x.Z)(n),
-    eE = (0, C.Z)(n),
+    eE = (0, x.Z)(n),
+    e_ = (0, C.Z)(n),
     eO = (0, s.e7)([V.Z], () => V.Z.getChannelId()),
-    ev = (0, s.e7)([B.Z], () => B.Z.desyncedVoiceStatesCount),
+    ev = (0, s.e7)([H.Z], () => H.Z.desyncedVoiceStatesCount),
     ey = (0, A.Z)(n);
   return (0, r.jsx)(eu, {
     guildId: n,
@@ -498,8 +498,8 @@ function ed(e) {
     showRoleSubscriptionUpsell: ea,
     showHubPrivacySettingsTooltip: es,
     showNewUnreadsBar: eg,
-    showMediaChannelUpsell: e_,
-    showTierTemplatesUpsell: eE,
+    showMediaChannelUpsell: eE,
+    showTierTemplatesUpsell: e_,
     isHeaderPopoutOpen: ef,
     enableStudyGroup: k,
     isGuildHeaderDismissibleTooltipShown: et,

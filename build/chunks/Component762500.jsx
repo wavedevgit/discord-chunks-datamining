@@ -48,7 +48,7 @@ function P(e) {
     analyticsLocations: U
   } = (0, d.ZP)(), {
     Component: G
-  } = (0, c.V)(), H = (0, o.e7)([I.ZP], () => I.ZP.getFriendAnniversaryYears(M.id)), B = (0, _.ao)({
+  } = (0, c.V)(), B = (0, o.e7)([I.ZP], () => I.ZP.getFriendAnniversaryYears(M.id)), H = (0, E.ao)({
     location: "gift-intent-friend-row",
     isGift: true,
     giftRecipient: M
@@ -70,7 +70,7 @@ function P(e) {
       O.default.track(S.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
         gift_intent_type: k,
         affinity: null == t ? true : t.communicationProbability
-      }), B ? (0, v.Z)({
+      }), H ? (0, v.Z)({
         giftRecipient: M,
         analyticsLocations: U,
         analyticsLocation: S.Sbl.FRIEND_ANNIVERSARIES_ACTION_BUTTON,
@@ -119,7 +119,7 @@ function P(e) {
             applicationStream: Z,
             status: x,
             user: M,
-            userIgnored: E.Z.isIgnored(M.id)
+            userIgnored: _.Z.isIgnored(M.id)
           }), (0, r.jsxs)("div", {
             className: j.anniversarySubtext,
             children: [(0, r.jsx)(u.iFz, {
@@ -129,7 +129,7 @@ function P(e) {
               variant: "text-xs/normal",
               color: "text-subtle",
               children: N.intl.formatToPlainString(N.t.S3fdq7, {
-                numberOfYears: H
+                numberOfYears: B
               })
             })]
           })]

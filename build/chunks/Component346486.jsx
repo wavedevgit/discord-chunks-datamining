@@ -1,12 +1,12 @@
 /** Chunk was on 93886 **/
 /** chunk id: 346486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => u
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  l = require.n(Chunk392711),
   Chunk55935 = require("./55935.js"),
   Chunk388032 = require("./388032.jsx");
 
@@ -18,7 +18,7 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class u extends(r = Chunk473749.PureComponent) {
+class f extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     let {
       intervalDuration: e,
@@ -36,14 +36,14 @@ class u extends(r = Chunk473749.PureComponent) {
       showDays: t,
       showUnits: n,
       className: r
-    } = this.props, a = [e.days, e.hours, e.minutes, e.seconds], l = [s.intl.string(s.t["6m/6nM"]), s.intl.string(s.t.n7dksO), s.intl.string(s.t["1LyF1h"]), s.intl.string(s.t.QJyuxY)];
+    } = this.props, a = [e.days, e.hours, e.minutes, e.seconds], o = [s.intl.string(s.t["6m/6nM"]), s.intl.string(s.t.n7dksO), s.intl.string(s.t["1LyF1h"]), s.intl.string(s.t.QJyuxY)];
     if (0 === e.days) a.shift();
     else if (!t) {
       let e = a.shift();
       a[0] += 24 * e
     }
-    let c = o()(a).map(e => e < 10 ? "0".concat(e) : e).map((e, t) => [t > 0 && !n ? ":" : " ", (0, i.jsxs)("span", {
-      children: [e, n ? l[a.length - t - 1] : null]
+    let c = l()(a).map(e => e < 10 ? "0".concat(e) : e).map((e, t) => [t > 0 && !n ? ":" : " ", (0, i.jsxs)("span", {
+      children: [e, n ? o[a.length - t - 1] : null]
     }, t)]).flatten().value();
     return (0, i.jsx)("span", {
       className: r,
@@ -69,10 +69,10 @@ class u extends(r = Chunk473749.PureComponent) {
     super(...e), d(this, "_interval", true)
   }
 }
-d(u, "defaultProps", {
+d(f, "defaultProps", {
   showDays: true,
   showUnits: false,
   stopAtOneSec: false,
   intervalDuration: 1e3
 });
-let f = u
+let u = f

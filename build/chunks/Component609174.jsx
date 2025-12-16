@@ -28,7 +28,7 @@ let h = Chunk185514.Nx.binds["0"],
       location: "BackForwardButtons"
     }), {
       canGoBack: b,
-      canGoForward: _
+      canGoForward: E
     } = (0, a.cj)([d.Z], () => ({
       canGoBack: d.Z.canGoBack,
       canGoForward: d.Z.canGoForward
@@ -81,14 +81,14 @@ let h = Chunk185514.Nx.binds["0"],
         }), t))
       }), (0, r.jsx)(s.u, {
         ariaHidden: true,
-        shouldShow: _,
+        shouldShow: E,
         text: f.intl.string(f.t["9KJ29e"]),
         keyboardShortcut: m,
         children: (0, r.jsx)(o.P3F, {
           "aria-label": f.intl.string(f.t["9KJ29e"]),
-          "aria-disabled": !_,
+          "aria-disabled": !E,
           className: l()(g.button, g.forward, {
-            [g.disabled]: !_
+            [g.disabled]: !E
           }),
           onClick: () => (0, p.TL)("nav_button"),
           children: (0, r.jsx)(o.ZSh, {

@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 623249, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => T,
@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -32,20 +32,20 @@ function T(e) {
   var t;
   let {
     quest: n,
-    errorHints: i,
+    errorHints: l,
     transitionState: y,
     onClose: T,
     sourceQuestContent: N
-  } = e, [P, w] = (0, r.useState)(i), I = (0, b.KX)(), k = (0, h.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), A = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), D = (0, C.g2)({
+  } = e, [w, P] = (0, r.useState)(l), I = (0, b.KX)(), k = (0, h.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), A = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), Z = (0, C.g2)({
     useReducedMotion: A,
     className: E.colorTransition
-  }), Z = P.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.Bz)(n), M = (0, o.e7)([p.Z], () => p.Z.getState().theme), U = (0, d.wj)(M) ? _.BR.DARK : _.BR.LIGHT, {
+  }), D = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.Bz)(n), M = (0, o.e7)([p.Z], () => p.Z.getState().theme), U = (0, d.wj)(M) ? _.BR.DARK : _.BR.LIGHT, {
     startConsoleQuest: B,
     startingConsoleQuest: F
   } = (0, b.GI)({
     questId: n.id,
     beforeRequest: () => {
-      D.startAnimation(), k({
+      Z.startAnimation(), k({
         questId: n.id,
         questContent: x.jn.CONNECTIONS_MODAL,
         questContentCTA: h.jZ.DEFIBRILLATOR,
@@ -53,7 +53,7 @@ function T(e) {
       })
     },
     afterRequest: e => {
-      D.stopAnimation(), w(e)
+      Z.stopAnimation(), P(e)
     }
   });
   return (0, a.jsx)(s.Modal, {
@@ -85,11 +85,11 @@ function T(e) {
           color: "text-default",
           children: S.intl.string(S.t["+/hZM/"])
         }), (0, a.jsxs)(u.P3F, {
-          className: l()(E.refreshWrapper, {
+          className: i()(E.refreshWrapper, {
             [E.disabled]: F
           }),
           onClick: B,
-          children: [D.render(), (0, a.jsx)(u.Text, {
+          children: [Z.render(), (0, a.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
             className: E.colorTransition,
@@ -108,7 +108,7 @@ function T(e) {
             size: "sm"
           }),
           text: S.intl.string(S.t.XF4wuA),
-          errors: L ? true : Z.map(e => e.message),
+          errors: L ? true : D.map(e => e.message),
           gameTile: L ? (0, a.jsx)(c.u, {
             "aria-label": n.config.messages.gameTitle,
             __unsupportedReactNodeAsText: (0, a.jsxs)("div", {
@@ -139,12 +139,12 @@ function O(e) {
     icon: t,
     text: n,
     errors: r = [],
-    gameTile: i
+    gameTile: l
   } = e, s = r.length > 0, o = s ? u._3e : u.B_b;
   return (0, a.jsxs)("div", {
     className: E.connectionRow,
     children: [(0, a.jsxs)("div", {
-      className: l()(E.connectionRowHeader, {
+      className: i()(E.connectionRowHeader, {
         [E.connectionRowHeaderError]: s
       }),
       children: [(0, a.jsxs)("div", {
@@ -156,10 +156,10 @@ function O(e) {
         })]
       }), (0, a.jsxs)("div", {
         className: E.connectionRowHeaderContent,
-        children: [i, (0, a.jsx)(o, {
+        children: [l, (0, a.jsx)(o, {
           color: "currentColor",
           size: "sm",
-          className: l()({
+          className: i()({
             [E.success]: !s,
             [E.error]: s
           })

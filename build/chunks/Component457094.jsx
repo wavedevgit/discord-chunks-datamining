@@ -143,7 +143,7 @@ function tt(e) {
 require("./117240.js"), require("./801077.js"), require("./967368.js"), require("./272053.js"), require("./974180.js"), require("./574254.js"), require("./551428.js"), require("./55563.js"), require("./882029.js"), require("./959457.js"), require("./653255.js"), require("./663389.js"), require("./25990.js"), require("./778825.js"), require("./999382.js"), require("./388610.js"), require("./533947.js"), require("./277053.js"), require("./371398.js"), require("./141233.js"), require("./471073.js"), require("./606206.js");
 let tn = false;
 (0, Chunk912471.DL)(), Chunk442837.ZP.initialize(), Chunk298969.Z.loadServer(), Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("USER_SETTINGS_OPEN", (e, t) => {
-  eK.Z.getLayers().includes(e2.S9g.USER_SETTINGS) || (0, eH.openUserSettings)()
+  eK.Z.getLayers().includes(e2.S9g.USER_SETTINGS) || (0, eB.openUserSettings)()
 }), Chunk998502.ZP.on("LAUNCH_APPLICATION", (e, t) => {
   let n = eQ.Z.getActiveLibraryApplication(t);
   e5.playApplication(t, n, {
@@ -160,7 +160,7 @@ let tr = (0, Chunk951752.l)(e => {
       location: t
     } = e, n = (0, eG.default)(t.pathname);
     return null != n && (0, Q.h)(() => {
-      (0, eH.openUserSettingsFromParsedUrl)({
+      (0, eB.openUserSettingsFromParsedUrl)({
         match: n,
         urlOrigin: "deeplink"
       })
@@ -264,7 +264,7 @@ let tc = [{
         let {
           giftCode: t
         } = e;
-        null != t && (0, e_.V)({
+        null != t && (0, eE.V)({
           processedCode: t.code
         })
       })

@@ -17,7 +17,7 @@ function p(e, t, n) {
   let i = arguments.length > 3 && true !== arguments[3] && arguments[3],
     p = (0, l.e7)([a.Z], () => a.Z.hasLoadedExperiments),
     f = (0, l.e7)([o.Z], () => o.Z.skipNumCategories),
-    [g, h, m, b, _, E, O, v] = (0, l.Wu)([c.Z], () => {
+    [g, h, m, b, E, _, O, v] = (0, l.Wu)([c.Z], () => {
       var t, n;
       return [c.Z.getShopBlocks(e), null != (t = c.Z.getLastSuccessfulFetch(e)) ? t : 0, null != (n = c.Z.getLastErrorTimestamp(e)) ? n : 0, c.Z.getLastFetchOptions(e), c.Z.getFetchShopHomeError(e), c.Z.getIsFetchingShopHome(e), c.Z.getHasKnownStaleData(e), c.Z.getShopHomeConfigOverride()]
     }),
@@ -57,15 +57,15 @@ function p(e, t, n) {
       }), e
     }, [t, v, f]),
     I = (0, r.useMemo)(() => !(0, s.oc)(b, y), [b, y]),
-    C = (0, u.J)(g, null != E && E, i),
+    C = (0, u.J)(g, null != _ && _, i),
     S = (0, r.useMemo)(() => !C && Date.now() - h < 6e5, [h, C]);
   return (0, r.useEffect)(() => {
-    if (!p || E) return;
+    if (!p || _) return;
     let t = Date.now() - m < 6e5;
-    (null == _ || !t) && (I || !S || O) && (0, s.Ov)(e, y, n)
-  }, [p, E, _, m, S, O, I, y, e, n]), {
-    isFetchingShopHome: E,
-    fetchShopHomeError: _,
+    (null == E || !t) && (I || !S || O) && (0, s.Ov)(e, y, n)
+  }, [p, _, E, m, S, O, I, y, e, n]), {
+    isFetchingShopHome: _,
+    fetchShopHomeError: E,
     shopBlocks: g,
     refreshShopHome: (0, r.useCallback)(() => {
       (0, s.Ov)(e, y, n)

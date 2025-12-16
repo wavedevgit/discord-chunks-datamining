@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 58755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => y
@@ -66,8 +66,8 @@ function y(e) {
     state: t,
     setState: n
   } = e, {
-    scales: i
-  } = t, [l, s] = r.useState(null), o = (0, a.jsxs)("div", {
+    scales: l
+  } = t, [i, s] = r.useState(null), o = (0, a.jsxs)("div", {
     className: x.section,
     children: [(0, a.jsx)(d.d, {
       options: j,
@@ -93,7 +93,7 @@ function y(e) {
       popoutLayerContext: h.O$
     }), (0, a.jsx)("ul", {
       className: x.overrides,
-      children: i.map(e => (0, a.jsx)("li", {
+      children: l.map(e => (0, a.jsx)("li", {
         children: (0, a.jsx)(m.P3F, {
           onClick: () => s(e.name),
           style: {
@@ -108,7 +108,7 @@ function y(e) {
         })
       }, e.name))
     })]
-  }), u = i.find(e => e.name === l), p = null != u ? (0, a.jsx)(C, {
+  }), u = l.find(e => e.name === i), p = null != u ? (0, a.jsx)(C, {
     onClose: () => s(null),
     scale: u,
     setState: n
@@ -153,7 +153,7 @@ function C(e) {
           let e = Object.entries(E).reduce((e, t) => {
             let [n, a] = t;
             return e[n] = {
-              value: (0, i.Z)((0, l.Z)(a, f.HW.sRGB), {
+              value: (0, l.Z)((0, i.Z)(a, f.HW.sRGB), {
                 format: "hex"
               }),
               type: "color"
@@ -264,7 +264,7 @@ function C(e) {
                 opacity: .75,
                 color: u
               },
-              children: [(0, i.Z)((0, l.Z)(c, f.HW.sRGB), {
+              children: [(0, l.Z)((0, i.Z)(c, f.HW.sRGB), {
                 format: "hex"
               }).toUpperCase(), " - ", d]
             })]
@@ -279,7 +279,7 @@ function _(e) {
   let {
     scale: t,
     onRemove: n
-  } = e, s = r.useMemo(() => Object.values((0, f.XM)(t)).map(e => (0, i.Z)((0, l.Z)(e, f.HW.sRGB), {
+  } = e, s = r.useMemo(() => Object.values((0, f.XM)(t)).map(e => (0, l.Z)((0, i.Z)(e, f.HW.sRGB), {
     format: "hex"
   })), [t]);
   return (0, a.jsxs)("li", {

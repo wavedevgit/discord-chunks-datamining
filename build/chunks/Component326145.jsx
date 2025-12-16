@@ -40,7 +40,7 @@ function v(e) {
     splash: C.splash
   }), [C]), T = (0, d.N)(S);
   return (0, r.jsxs)("div", {
-    className: a()(E.outerWrapping, O.main, {
+    className: a()(_.outerWrapping, O.main, {
       [O.fullBorderWithGradient]: null == S
     }),
     ref: l,
@@ -58,22 +58,22 @@ function v(e) {
     }), null != S && (0, r.jsx)("div", {
       className: O.gradient
     }), (0, r.jsxs)("div", {
-      className: a()(E.explainerContainer, E.transparentBackground),
+      className: a()(_.explainerContainer, _.transparentBackground),
       children: [(0, r.jsxs)("div", {
-        className: E.header,
+        className: _.header,
         children: [(0, r.jsx)(o.Heading, {
           variant: "heading-xxl/normal",
           color: "always-white",
-          children: _.intl.string(_.t.CCmhpF)
+          children: E.intl.string(E.t.CCmhpF)
         }), (0, r.jsx)(o.Text, {
           variant: "text-lg/normal",
           color: "always-white",
-          children: _.intl.string(_.t.gRAHcZ)
+          children: E.intl.string(E.t.gRAHcZ)
         })]
       }), (0, r.jsx)(o.Button, {
         variant: "overlay-primary",
         size: "md",
-        text: _.intl.string(_.t.VVFjAC),
+        text: E.intl.string(E.t.VVFjAC),
         onClick: I
       })]
     })]

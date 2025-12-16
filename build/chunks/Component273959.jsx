@@ -38,9 +38,9 @@ function j(e) {
     x = (0, s.TH)(),
     A = (0, o.e7)([v.Z], () => v.Z.getGuildId()),
     Z = (0, o.e7)([O.Z], () => O.Z.getChannelId()),
-    w = (0, o.e7)([_.Z], () => _.Z.getChannel(Z), [Z]),
+    w = (0, o.e7)([E.Z], () => E.Z.getChannel(Z), [Z]),
     L = null != A ? A : null == w ? true : w.guild_id,
-    R = (0, o.e7)([E.Z], () => E.Z.getGuild(L), [L]),
+    R = (0, o.e7)([_.Z], () => _.Z.getGuild(L), [L]),
     D = (0, f.Z)(),
     M = (0, m.D)(),
     {
@@ -51,7 +51,7 @@ function j(e) {
     }),
     {
       application: G,
-      isFrameInFocusedMode: H
+      isFrameInFocusedMode: B
     } = (0, o.cj)([d.Z, g.Z], () => {
       let e = g.Z.getConnectedFrame();
       return {
@@ -59,16 +59,16 @@ function j(e) {
         isFrameInFocusedMode: g.Z.getFrameLayoutMode() === C.U.FOCUSED
       }
     }),
-    B = null != G ? y.ZP.getApplicationIconURL({
+    H = null != G ? y.ZP.getApplicationIconURL({
       id: G.id,
       icon: G.icon,
       bot: G.bot
     }) : true,
     V = null;
-  null != G && H ? (l = G.name, V = (0, r.jsx)("img", {
+  null != G && B ? (l = G.name, V = (0, r.jsx)("img", {
     className: N.appIcon,
     alt: S.intl.string(S.t.X4IxWL),
-    src: B,
+    src: H,
     "aria-hidden": true,
     draggable: false
   })) : M ? (l = S.intl.string(S.t.HcoRu0), V = (0, r.jsx)(u.Dkj, {

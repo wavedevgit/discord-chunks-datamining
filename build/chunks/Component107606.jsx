@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 107606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -29,14 +29,14 @@ function g() {
     T = S.backgroundGradientPresetId,
     O = (0, Chunk442837.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
     N = (0, Chunk884697.Ad)(O),
-    P = (0, Chunk884697.jT)(O),
-    w = null == _ || null == (e = _.avatarDecoration) ? true : module.skuId,
+    w = (0, Chunk884697.jT)(O),
+    P = null == _ || null == (e = _.avatarDecoration) ? true : module.skuId,
     I = null == _ || null == (n = _.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
-    k = null != w && null != (v = N.find(e => e.skuId === w)) ? v : null,
-    R = null != I && null != (j = P.find(e => e.skuId === I)) ? j : null,
+    k = null != P && null != (v = N.find(e => e.skuId === P)) ? v : null,
+    R = null != I && null != (j = w.find(e => e.skuId === I)) ? j : null,
     A = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == k ? true : k.skuId)),
-    D = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == R ? true : R.skuId)),
-    Z = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.fontSize),
+    Z = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == R ? true : R.skuId)),
+    D = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.fontSize),
     L = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.messageGroupSpacing),
     M = Chunk695346.YC.useSetting();
   return (0, Chunk176038.ub)(), (0, Chunk54381.jsxs)("div", {
@@ -79,10 +79,10 @@ function g() {
         children: ["Avatar Decoration: ", null != (y = null == A ? true : A.name) ? y : "None"]
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Nameplate: ", null != (C = null == D ? true : D.name) ? C : "None"]
+        children: ["Nameplate: ", null != (C = null == Z ? true : Z.name) ? C : "None"]
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Font Size: ", Z, "px"]
+        children: ["Font Size: ", D, "px"]
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Message Spacing: ", L]
@@ -90,13 +90,13 @@ function g() {
         variant: "text-md/normal",
         children: ["UI Density: ", M, " (", function(e) {
           switch (e) {
-            case i.Pi.COMPACT:
+            case l.Pi.COMPACT:
               return "Compact";
-            case i.Pi.COZY:
+            case l.Pi.COZY:
               return "Cozy";
-            case i.Pi.DEFAULT:
+            case l.Pi.DEFAULT:
               return "Default";
-            case i.Pi.RESPONSIVE:
+            case l.Pi.RESPONSIVE:
               return "Responsive";
             default:
               return "Unknown"

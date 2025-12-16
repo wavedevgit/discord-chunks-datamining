@@ -155,7 +155,7 @@ function f(e) {
         })
       }, n)
     }),
-    _ = g.map(e => e.id);
+    E = g.map(e => e.id);
   return [...b, (0, r.jsx)(l.kSQ, {
     label: "".concat(c.intl.string(c.t["mIx+gG"]), " - ").concat(g.length),
     children: p({
@@ -163,7 +163,7 @@ function f(e) {
         let {
           user: t
         } = e;
-        return _.includes(t.id)
+        return E.includes(t.id)
       }),
       otherMembers: g.filter(e => !u.has(e.id)),
       totalMembers: g.length,

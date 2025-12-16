@@ -1,25 +1,25 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 602683, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => l
+  Z: () => i
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk481060 = require("./481060.js");
-let l = function(e) {
+let i = function(e) {
   let {
     assetKey: t,
     initialValue: n,
-    onMessageChange: l,
+    onMessageChange: i,
     title: s
   } = e, [o, c] = r.useState("");
   return r.useEffect(() => {
     c(null != n ? n : "")
-  }, [n]), (0, a.jsx)(i.oil, {
+  }, [n]), (0, a.jsx)(l.oil, {
     label: s,
     value: o,
     onChange: function(e) {
-      c(e), l(t, e)
+      c(e), i(t, e)
     }
   })
 }

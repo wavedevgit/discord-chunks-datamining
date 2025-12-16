@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 932083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -12,7 +12,7 @@ let s = e => {
   let {
     skuId: t,
     className: n
-  } = e, s = (0, i.LJ)(t), o = (0, l.To)(s);
+  } = e, s = (0, l.LJ)(t), o = (0, i.To)(s);
   return (0, a.jsx)(r.Heading, {
     variant: "heading-md/medium",
     color: "text-strong",

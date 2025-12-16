@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 665307, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => B
+  Z: () => H
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -95,8 +95,8 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     sort: true,
     cellClassName: Chunk901740.nameCell,
     bodyCellClassName: Chunk901740.nameBodyCell,
-    render: e => (0, i.jsxs)(E.Z, {
-      align: E.Z.Align.CENTER,
+    render: e => (0, i.jsxs)(_.Z, {
+      align: _.Z.Align.CENTER,
       children: [(0, i.jsx)(v.Z, {
         game: e.application,
         size: v.A.SMALL,
@@ -124,8 +124,8 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     bodyCellClassName: Chunk901740.textCell,
     render(e) {
       let t = e.libraryApplication.getDistributor();
-      return (0, i.jsx)(E.Z, {
-        align: E.Z.Align.CENTER,
+      return (0, i.jsx)(_.Z, {
+        align: _.Z.Align.CENTER,
         children: null != t ? P.EOG[t] : x.intl.string(x.t["F+l3Jt"])
       })
     }
@@ -140,8 +140,8 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       return t = e.isRunning ? x.intl.string(x.t.Md326p) : e.isNew ? x.intl.string(x.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(y.ZP, {
         end: e.lastPlayed,
         location: y.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
-      }) : x.intl.string(x.t.EoWLru), (0, i.jsx)(E.Z, {
-        align: E.Z.Align.CENTER,
+      }) : x.intl.string(x.t.EoWLru), (0, i.jsx)(_.Z, {
+        align: _.Z.Align.CENTER,
         className: s()({
           [A.lastPlayedCellNew]: e.isNew
         }),
@@ -175,7 +175,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
             }),
             libraryApplication: e.libraryApplication
           })]
-        }), (0, T.Je)(e.libraryApplication) ? (0, i.jsx)(_.Z, {
+        }), (0, T.Je)(e.libraryApplication) ? (0, i.jsx)(E.Z, {
           analyticsListSort: (r = t.sortKey, a = t.sortDirection, "".concat(M[r], " ").concat(a === P.sHY.ASCENDING ? "ASC" : "DESC")),
           analyticsListIndex: n,
           source: P.Sbl.APPLICATION_LIBRARY,
@@ -234,7 +234,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       children: (0, i.jsx)("div", w({}, u))
     })
   };
-class H extends(r = Chunk473749.PureComponent) {
+class B extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     let {
       fetched: e
@@ -427,7 +427,7 @@ class H extends(r = Chunk473749.PureComponent) {
   }
 }
 
-function B(e) {
+function H(e) {
   let t = l.useContext(S.AnalyticsContext),
     n = (0, o.TH)(),
     {
@@ -450,7 +450,7 @@ function B(e) {
       activeRowKey: C.Z.activeRowKey,
       isNavigatingByKeyboard: C.Z.isNavigatingByKeyboard
     }));
-  return (0, i.jsx)(H, L(w({}, e), {
+  return (0, i.jsx)(B, L(w({}, e), {
     analyticsContext: t,
     location: n,
     applicationViewItems: r,
@@ -462,6 +462,6 @@ function B(e) {
     isNavigatingByKeyboard: f
   }))
 }
-Z(H, "defaultProps", {
+Z(B, "defaultProps", {
   stickyHeader: false
 })

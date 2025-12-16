@@ -28,7 +28,7 @@ function v(e) {
     isStandalone: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), i = (0, a.e7)([m.Z], () => m.Z.hasConsented(_.pjP.PERSONALIZATION)) ? [] : [s.z.NOW_PLAYING_CONSENT_CARD], v = g.o.useConfig({
+  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), i = (0, a.e7)([m.Z], () => m.Z.hasConsented(E.pjP.PERSONALIZATION)) ? [] : [s.z.NOW_PLAYING_CONSENT_CARD], v = g.o.useConfig({
     location: "nowplaying"
   }).demureActivityCards, y = g.o.useConfig({
     location: "nowplaying"
@@ -36,7 +36,7 @@ function v(e) {
   return (0, r.jsx)(d.Gt, {
     value: n,
     children: (0, r.jsx)(c.Z, {
-      section: _.jXE.ACTIVE_NOW_COLUMN,
+      section: E.jXE.ACTIVE_NOW_COLUMN,
       children: (0, r.jsx)("aside", {
         className: l()(O.container, {
           [O.refreshActiveNow]: v,
@@ -55,7 +55,7 @@ function v(e) {
               variant: "heading-lg/semibold",
               className: O.header,
               id: I,
-              children: E.intl.string(E.t.F4Zggw)
+              children: _.intl.string(_.t.F4Zggw)
             }), (0, r.jsx)(f.ZP, {
               contentTypes: i,
               children: e => {

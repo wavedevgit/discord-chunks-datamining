@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 428530, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -39,7 +39,7 @@ function h(e) {
 function f(e) {
   let {
     data: t
-  } = e, n = (0, l.ZP)();
+  } = e, n = (0, i.ZP)();
   return (0, a.jsx)("div", {
     className: c.inspectorWrapper,
     children: (0, a.jsx)(r.L, {

@@ -52,12 +52,12 @@ let h = function(e) {
     user: h,
     channel: m,
     onClick: b,
-    isFocused: _,
-    isActive: E,
+    isFocused: E,
+    isActive: _,
     onOtherHover: O,
     className: v
   } = e, [y, I] = i.useState(false), [C, S] = i.useState(false), T = () => {
-    I(true), !_ || E || C || null == O || O()
+    I(true), !E || _ || C || null == O || O()
   }, N = () => {
     I(false)
   };
@@ -70,7 +70,7 @@ let h = function(e) {
       },
       children: (0, r.jsx)(s.Z.div, g(f({
         className: a()(p.messageRequestItem, v, {
-          [p.active]: E || C,
+          [p.active]: _ || C,
           [p.firstItem]: 0 === t
         }),
         onContextMenu: e => {
@@ -95,7 +95,7 @@ let h = function(e) {
           opacity: 1
         }
       }, e), {
-        children: l(y || E || C)
+        children: l(y || _ || C)
       }))
     })
   })

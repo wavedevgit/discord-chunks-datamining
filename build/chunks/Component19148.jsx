@@ -1,11 +1,11 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 19148, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => s
 });
 var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk902300 = require("./902300.js");
 
 function s(e) {
@@ -17,7 +17,7 @@ function s(e) {
     className: o
   } = e;
   return r ? (0, a.jsx)("div", {
-    className: i()(l.placeholderElement, o),
+    className: l()(i.placeholderElement, o),
     style: {
       width: t,
       height: n

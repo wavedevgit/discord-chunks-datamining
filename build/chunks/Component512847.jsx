@@ -201,7 +201,7 @@ function G() {
       currentUserId: o
     } = t;
     if (e.voiceChannelId !== r || null == r || function(e) {
-        let t = E.Z.getChannel(e);
+        let t = _.Z.getChannel(e);
         if (null == t) returnfalse;
         let n = t.getGuildId();
         if (null == n) returnfalse;
@@ -221,7 +221,7 @@ function G() {
   }), null
 }
 
-function H() {
+function B() {
   return x([Chunk944486.Z, Chunk317381.ZP, Chunk591472.Z, Chunk314897.default], () => {
     let e = Chunk944486.Z.getVoiceChannelId(),
       t = Chunk944486.Z.getChannelId(),
@@ -268,7 +268,7 @@ function H() {
   }), null
 }
 
-function B() {
+function H() {
   return x([Chunk106301.Z, Chunk944486.Z], () => ({
     hangStatus: Chunk106301.Z.getCurrentHangStatus(),
     customHangStatus: Chunk106301.Z.getCustomHangStatus(),
@@ -287,6 +287,6 @@ function B() {
 
 function V() {
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-    children: [(0, Chunk54381.jsx)(A, {}), (0, Chunk54381.jsx)(Z, {}), (0, Chunk54381.jsx)(w, {}), (0, Chunk54381.jsx)(L, {}), (0, Chunk54381.jsx)(D, {}), (0, Chunk54381.jsx)(k, {}), (0, Chunk54381.jsx)(G, {}), (0, Chunk54381.jsx)(U, {}), (0, Chunk54381.jsx)(H, {}), (0, Chunk54381.jsx)(R, {}), (0, Chunk54381.jsx)(M, {}), (0, Chunk54381.jsx)(B, {})]
+    children: [(0, Chunk54381.jsx)(A, {}), (0, Chunk54381.jsx)(Z, {}), (0, Chunk54381.jsx)(w, {}), (0, Chunk54381.jsx)(L, {}), (0, Chunk54381.jsx)(D, {}), (0, Chunk54381.jsx)(k, {}), (0, Chunk54381.jsx)(G, {}), (0, Chunk54381.jsx)(U, {}), (0, Chunk54381.jsx)(B, {}), (0, Chunk54381.jsx)(R, {}), (0, Chunk54381.jsx)(M, {}), (0, Chunk54381.jsx)(H, {})]
   })
 }

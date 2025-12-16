@@ -53,7 +53,7 @@ let A = function(e) {
       l.replace(T.Z5c.ME)
     })
   }, [l, n]), i.useEffect(() => {
-    d.Y(T.Z5c.FRIENDS), (0, E.e)("friends")
+    d.Y(T.Z5c.FRIENDS), (0, _.e)("friends")
   }, []);
   let b = (0, o.e7)([O.Z], () => O.Z.theme),
     A = (0, I.If)(),
@@ -121,12 +121,12 @@ let A = function(e) {
     G = y.o.useConfig({
       location: "people page"
     }).friendsTab,
-    H = null,
-    B = G ? null : (0, r.jsx)("div", {
+    B = null,
+    H = G ? null : (0, r.jsx)("div", {
       className: P.nowPlayingColumn,
-      children: (0, r.jsx)(_.Z, {})
+      children: (0, r.jsx)(E.Z, {})
     });
-  return H = Z === T.pJs.ADD_FRIEND ? (0, r.jsx)(C.Z, {}) : (0, r.jsx)(S.Z, {
+  return B = Z === T.pJs.ADD_FRIEND ? (0, r.jsx)(C.Z, {}) : (0, r.jsx)(S.Z, {
     titleId: k
   }), (0, r.jsxs)("main", {
     className: P.container,
@@ -167,8 +167,8 @@ let A = function(e) {
         id: Z,
         className: P.peopleColumn,
         "aria-labelledby": k,
-        children: H
-      }), B]
+        children: B
+      }), H]
     })]
   })
 }

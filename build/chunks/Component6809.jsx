@@ -25,7 +25,7 @@ let h = function() {
   let h = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.LIGHT),
     m = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.DARKER),
     b = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.MIDNIGHT),
-    _ = Chunk473749.useMemo(() => [{
+    E = Chunk473749.useMemo(() => [{
       theme: Chunk981631.BRd.LIGHT,
       label: Chunk388032.t.K2sFfo,
       color: h.hex()
@@ -38,7 +38,7 @@ let h = function() {
       label: Chunk388032.t.Do4ZJx,
       color: b.hex()
     }], [h, m, b]),
-    E = Chunk473749.useCallback(t => {
+    _ = Chunk473749.useCallback(t => {
       (0, u.Yk)({
         isPersisted: true,
         analyticsLocations: e,
@@ -48,16 +48,16 @@ let h = function() {
       })
     }, [module]),
     O = Chunk473749.useCallback(() => {
-      null != require.current && E(require.current)
-    }, [E]);
+      null != require.current && _(require.current)
+    }, [_]);
   return (0, Chunk54381.jsx)("div", {
     className: Chunk969373.themeSection,
     children: (0, Chunk54381.jsxs)("div", {
       className: Chunk969373.themeSelector,
-      children: [_.map(e => (0, r.jsxs)("button", {
+      children: [E.map(e => (0, r.jsxs)("button", {
         type: "button",
         className: g.themeOption,
-        onClick: () => E(e.theme),
+        onClick: () => _(e.theme),
         "aria-label": f.intl.string(e.label),
         children: [(0, r.jsx)("div", {
           className: "".concat(g.themeCircle, " ").concat(t === e.theme ? g.themeCircleSelected : ""),

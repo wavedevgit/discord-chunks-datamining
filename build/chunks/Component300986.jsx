@@ -22,7 +22,7 @@ function m(e) {
   let {
     className: t,
     focusSectionProps: n
-  } = e, m = (0, i.e7)([o.default], () => o.default.getCurrentUser()), b = (0, i.e7)([s.default], () => s.default.locale), _ = (0, d.EO)(m);
+  } = e, m = (0, i.e7)([o.default], () => o.default.getCurrentUser()), b = (0, i.e7)([s.default], () => s.default.locale), E = (0, d.EO)(m);
   return (0, r.jsx)(a.Anchor, {
     href: u.w,
     target: "_blank",
@@ -45,10 +45,10 @@ function m(e) {
       }
       return e
     }({
-      color: _ ? l.Z.unsafe_rawColors.GREEN_360.css : "currentColor",
+      color: E ? l.Z.unsafe_rawColors.GREEN_360.css : "currentColor",
       className: t,
       onClick: () => c.default.track(f.rMx.HELP_CLICKED, {
-        highlighted: _
+        highlighted: E
       }),
       icon: a.idN,
       tooltipPosition: h.has(b) ? "left" : true,

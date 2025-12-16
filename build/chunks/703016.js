@@ -38,7 +38,7 @@ let A = [],
   R = /\|\|([\s\S]+?)\|\|/g;
 
 function D(e, t, n, r) {
-  let l = _.Z.getGuild(n),
+  let l = E.Z.getGuild(n),
     a = e.replace(R, x.intl.string(x.t["F+x38C"])).replace(/<@!?(\d+)>/g, (e, t) => {
       var r;
       let i = C.default.getUser(t);
@@ -97,11 +97,11 @@ function G(e) {
   k(t, n, r, i, l)
 }
 
-function H() {
+function B() {
   return null !== Z && Z.removeEventListener("end", Chunk196051.NB), Chunk419363.M9(), Z = null, true
 }
 
-function B(e) {
+function H(e) {
   var t, n, r;
   let {
     message: i,
@@ -117,15 +117,15 @@ function V(e) {
     message: o,
     optimistic: c
   } = e;
-  if (c || E.Z.isSelfDeaf()) returnfalse;
+  if (c || _.Z.isSelfDeaf()) returnfalse;
   let u = h.Z.getChannel(s);
   if (null == u) returnfalse;
   let d = y.Z.getChannelId(),
     b = g.ZP.getCurrentSidebarChannelId(d),
-    _ = s === d || s === b,
-    C = p.OW.getSetting() && o.tts && _,
+    E = s === d || s === b,
+    C = p.OW.getSetting() && o.tts && E,
     T = O.Z.getTTSType(),
-    N = (null == (t = o.author) ? true : t.id) !== f.default.getId() && (T === P.PrB.ALL_CHANNELS || T === P.PrB.SELECTED_CHANNEL && _);
+    N = (null == (t = o.author) ? true : t.id) !== f.default.getId() && (T === P.PrB.ALL_CHANNELS || T === P.PrB.SELECTED_CHANNEL && E);
   if ((C || N) && !v.Z.isBlockedOrIgnoredForMessage(o)) {
     if (A.indexOf(o.id) >= 0) returnfalse;
     A.unshift(o.id) > 10 && A.pop();
@@ -152,6 +152,6 @@ function z() {
 }
 let Y = {
   init() {
-    Chunk570140.Z.subscribe("SPEAK_TEXT", G), Chunk570140.Z.subscribe("SPEAK_MESSAGE", B), Chunk570140.Z.subscribe("STOP_SPEAKING", H), Chunk570140.Z.subscribe("MESSAGE_CREATE", V), Chunk570140.Z.subscribe("MESSAGE_DELETE", F), Chunk570140.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", z), Chunk570140.Z.subscribe("USER_SETTINGS_PROTO_UPDATE", M), (0, Chunk241601.Ql)(M)
+    Chunk570140.Z.subscribe("SPEAK_TEXT", G), Chunk570140.Z.subscribe("SPEAK_MESSAGE", H), Chunk570140.Z.subscribe("STOP_SPEAKING", B), Chunk570140.Z.subscribe("MESSAGE_CREATE", V), Chunk570140.Z.subscribe("MESSAGE_DELETE", F), Chunk570140.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", z), Chunk570140.Z.subscribe("USER_SETTINGS_PROTO_UPDATE", M), (0, Chunk241601.Ql)(M)
   }
 }

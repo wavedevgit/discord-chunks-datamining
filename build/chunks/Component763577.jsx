@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 763577, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -44,14 +44,14 @@ function u() {
 }
 
 function m() {
-  let [e, t] = Chunk473749.useState(null), [n, i] = Chunk473749.useState(null), [s, o] = Chunk473749.useState(null), [c, u] = Chunk473749.useState([]), m = Chunk473749.useRef(null), [f, x] = Chunk473749.useState(400), [b, g] = Chunk473749.useState(400), v = Chunk473749.useCallback(() => {
+  let [e, t] = Chunk473749.useState(null), [n, l] = Chunk473749.useState(null), [s, o] = Chunk473749.useState(null), [c, u] = Chunk473749.useState([]), m = Chunk473749.useRef(null), [f, x] = Chunk473749.useState(400), [b, g] = Chunk473749.useState(400), v = Chunk473749.useCallback(() => {
     setTimeout(() => {
       var e, t, n, a;
       Chunk333200(null != (n = null == (e = m.current) ? true : module.getProperties()) ? require : {}), u(null != (a = null == (t = m.current) ? true : exports.getArtboards()) ? Chunk54381 : []), Chunk164617({})
     }, 1e3)
   }, []), j = Chunk473749.useCallback((e, t) => {
-    null != n && i(n => {
-      var a, r, i;
+    null != n && l(n => {
+      var a, r, l;
       return r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -69,24 +69,24 @@ function m() {
           })
         }
         return e
-      }({}, n), i = i = {
+      }({}, n), l = l = {
         [e]: {
           type: null == s || null == (a = s[e]) ? true : a.type,
           value: t
         }
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var a = Object.getOwnPropertySymbols(e);
           n.push.apply(n, a)
         }
         return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
       }), r
     })
   }, [Chunk692547, require]), y = Chunk473749.useCallback(e => {
-    o(null), i(null), t(e)
+    o(null), l(null), t(e)
   }, []);
   return (0, Chunk54381.jsxs)(Chunk793030.Kqy, {
     gap: 16,
@@ -127,11 +127,11 @@ function m() {
           variant: "heading-lg/medium",
           children: "Data Binding"
         }), Object.keys(null != Chunk692547 ? Chunk692547 : {}).map(e => {
-          var t, r, i, l;
+          var t, r, l, i;
           return (0, a.jsx)(p, {
             property: e,
             type: null == s || null == (t = s[e]) ? true : t.type,
-            value: null != (l = null == n || null == (r = n[e]) ? true : r.value) ? l : null == s || null == (i = s[e]) ? true : i.value,
+            value: null != (i = null == n || null == (r = n[e]) ? true : r.value) ? i : null == s || null == (l = s[e]) ? true : l.value,
             onChange: t => j(e, t),
             artboards: c
           }, e)
@@ -146,34 +146,34 @@ function p(e) {
     property: t,
     type: n,
     value: r,
-    onChange: i,
+    onChange: l,
     artboards: c
   } = e;
   return "string" === n ? (0, a.jsx)(d.oil, {
     label: t,
     value: r,
-    onChange: e => i(e)
+    onChange: e => l(e)
   }) : "number" === n ? (0, a.jsx)(d.oil, {
     type: "number",
     label: t,
     value: r,
-    onChange: e => i(parseInt(e))
-  }) : "boolean" === n ? (0, a.jsx)(l.rsf, {
+    onChange: e => l(parseInt(e))
+  }) : "boolean" === n ? (0, a.jsx)(i.rsf, {
     label: t,
     checked: r,
-    onChange: e => i(e)
-  }) : "trigger" === n ? (0, a.jsx)(l.zxk, {
+    onChange: e => l(e)
+  }) : "trigger" === n ? (0, a.jsx)(i.zxk, {
     text: "Trigger ".concat(t),
-    onClick: () => i(Number.isSafeInteger(r) ? r + 1 : 1)
+    onClick: () => l(Number.isSafeInteger(r) ? r + 1 : 1)
   }) : "image" === n ? (0, a.jsx)(d.oil, {
     label: t,
     value: r,
-    onChange: e => i(e)
+    onChange: e => l(e)
   }) : "color" === n ? (0, a.jsx)(o.V, {
     selectionMode: "single",
     label: t,
     value: r,
-    onSelectionChange: e => i(e),
+    onSelectionChange: e => l(e),
     closeOnSelect: true,
     placeholder: "Select a color...",
     options: Object.entries(s.Z.colors).map(e => {
@@ -188,7 +188,7 @@ function p(e) {
     selectionMode: "single",
     label: t,
     value: r,
-    onSelectionChange: e => i(e),
+    onSelectionChange: e => l(e),
     closeOnSelect: true,
     placeholder: "Select an artboard...",
     options: c.map(e => ({
@@ -204,12 +204,12 @@ function h(e) {
   let {
     riveName: n,
     onRiveLoad: s
-  } = e, o = null == (t = i[n]) ? true : t.riveSrc, u = null == o, m = r.useRef(null), p = (0, d.o8M)(o);
-  return (0, a.jsxs)(l.Kqy, {
+  } = e, o = null == (t = l[n]) ? true : t.riveSrc, u = null == o, m = r.useRef(null), p = (0, d.o8M)(o);
+  return (0, a.jsxs)(i.Kqy, {
     gap: 8,
     children: [(0, a.jsx)("label", {
       children: n
-    }), (0, a.jsxs)(l.Kqy, {
+    }), (0, a.jsxs)(i.Kqy, {
       justify: "space-between",
       direction: "horizontal",
       align: "center",

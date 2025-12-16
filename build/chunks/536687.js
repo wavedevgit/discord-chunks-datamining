@@ -24,8 +24,8 @@ function b(e) {
     r = (0, l.e7)([p.Z], () => p.Z.isVisible(e)),
     m = (0, l.e7)([g.Z], () => g.Z.isVisible(e)),
     b = (0, s.m)(n),
-    _ = (0, l.e7)([f.Z], () => f.Z.isVisible(e)),
-    E = u.Z.useShouldShowChannelNotice(n),
+    E = (0, l.e7)([f.Z], () => f.Z.isVisible(e)),
+    _ = u.Z.useShouldShowChannelNotice(n),
     O = (0, d.h6)(e),
     {
       enableStudyGroup: v
@@ -38,8 +38,8 @@ function b(e) {
     }, [n]), r) return 0;
   if (m) return 1;
   if (b || null != C) return 2;
-  if (_) return 3;
-  if (E) return 4;
+  if (E) return 3;
+  if (_) return 4;
   else if (y) return 5;
   else if (I) return 6;
   return null

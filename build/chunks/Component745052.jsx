@@ -110,7 +110,7 @@ function ei() {
     m = Chunk473749.useCallback(() => {
       Chunk907862(require.map(e => e.channel.id))
     }, [require, Chunk907862]),
-    _ = Chunk473749.useCallback(e => {
+    E = Chunk473749.useCallback(e => {
       var t, i;
       let {
         row: s
@@ -126,7 +126,7 @@ function ei() {
         hasSingleMessageRequest: l
       }, u)
     }, [Chunk120356, require, Chunk112724]),
-    E = Chunk473749.useCallback(() => (0, Chunk54381.jsxs)(Chunk82295.Z, {
+    _ = Chunk473749.useCallback(() => (0, Chunk54381.jsxs)(Chunk82295.Z, {
       className: Chunk439700.sectionTitle,
       children: [exports > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.rA4iWY, {
         count: exports
@@ -183,8 +183,8 @@ function ei() {
           paddingBottom: 24,
           sectionHeight: K.oi,
           rowHeight: K.WN,
-          renderSection: E,
-          renderRow: _,
+          renderSection: _,
+          renderRow: E,
           sections: [n.length],
           chunkSize: 30,
           fade: true
@@ -201,11 +201,11 @@ function el(e) {
   } = e, i = (0, c.e7)([w.ZP], () => w.ZP.getSidebarState(w.uZ)), l = (0, c.e7)([L.Z], () => L.Z.getChannel(null == i ? true : i.channelId));
   if (null == i || i.type !== j.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
   let a = t - Q.R7I;
-  return (0, r.jsx)(_.Z, {
-    sidebarType: _.y.MessageRequestSidebar,
+  return (0, r.jsx)(E.Z, {
+    sidebarType: E.y.MessageRequestSidebar,
     maxWidth: a,
     onWidthChange: n,
-    children: (0, r.jsx)(E.Z, {
+    children: (0, r.jsx)(_.Z, {
       channel: l,
       baseChannelId: w.uZ
     })
@@ -287,12 +287,12 @@ let eo = (0, Chunk112724.Z)(function(e) {
     }),
     h = null == g ? true : g.channelId,
     b = null != g,
-    _ = (0, k.T)(h),
-    E = (0, M.J)(h),
+    E = (0, k.T)(h),
+    _ = (0, M.J)(h),
     O = i.useRef(null);
   i.useEffect(() => {
-    null != h && !_ && E && b && ((0, T.Kh)(h), N.Z.closeChannelSidebar(w.uZ))
-  }, [h, E, b, _]);
+    null != h && !E && _ && b && ((0, T.Kh)(h), N.Z.closeChannelSidebar(w.uZ))
+  }, [h, _, b, E]);
   let [y, I] = i.useState(K.pS.REQUESTS), A = e => {
     I(e)
   };

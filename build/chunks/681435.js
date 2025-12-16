@@ -87,11 +87,11 @@ let g = () => {
       }
       return null
     })(m, exports) : null,
-    _ = Chunk473749.useCallback(() => {
+    E = Chunk473749.useCallback(() => {
       null != b && h(Chunk921944.L.AUTO)
     }, [b, h]);
   return {
     shopButtonDisplayOptions: b,
-    dismissShopButtonDC: _
+    dismissShopButtonDC: E
   }
 }

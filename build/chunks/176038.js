@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 176038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _Y: () => O,
@@ -77,7 +77,7 @@ async function T() {
       (0, Chunk150039.Wh)(module)
     }
     let e = Chunk25990.Z.getAllPending(),
-      l = (0, Chunk164946.ED)(module);
+      i = (0, Chunk164946.ED)(module);
     await (0, Chunk809206.Mn)(Chunk153867).finally(Chunk809206.si)
   } catch (e) {}
 }
@@ -107,8 +107,8 @@ function N() {
       T = null == Chunk74538 || null == (n = Chunk74538.collectibles) || null == (t = require.nameplate) ? true : exports.skuId,
       O = null != E && null != (a = Chunk959517.find(e => e.skuId === E)) ? Chunk473749 : null,
       N = null != T && null != (r = C.find(e => e.skuId === T)) ? Chunk524437 : null,
-      P = Chunk607070.Z.fontSize,
-      w = Chunk607070.Z.messageGroupSpacing,
+      w = Chunk607070.Z.fontSize,
+      P = Chunk607070.Z.messageGroupSpacing,
       I = Chunk695346.YC.getSetting();
     return () => {
       try {
@@ -119,7 +119,7 @@ function N() {
         }, Chunk675478.fy.INFREQUENT_USER_ACTION), (0, Chunk150039.PO)(O), (0, Chunk150039.Wh)(N);
         let e = Chunk25990.Z.getAllPending(),
           t = (0, Chunk164946.ED)(module);
-        (0, Chunk809206.Mn)(exports).finally(Chunk809206.si), (0, Chunk857595.oL)(P), (0, Chunk857595.ZZ)(w), Chunk695346.YC.updateSetting(I)
+        (0, Chunk809206.Mn)(exports).finally(Chunk809206.si), (0, Chunk857595.oL)(w), (0, Chunk857595.ZZ)(P), Chunk695346.YC.updateSetting(I)
       } catch (e) {}
     }
   }, [])

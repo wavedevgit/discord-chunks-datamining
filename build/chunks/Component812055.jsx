@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 812055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _,
@@ -25,20 +25,31 @@ let v = Chunk70956.Z.Millis.HOUR,
   y = 4 * Chunk70956.Z.Millis.DAY;
 
 function C() {
-  let [e, t] = Chunk473749.useState(Date.now()), n = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()), a = (0, Chunk442837.e7)([Chunk885110.Z], () => Chunk885110.Z.getStatus()), s = Chunk695346.P4.useSetting(), c = (null == Chunk907862 ? true : Chunk907862.value) != null ? Number(Chunk907862.value) : null, p = Chunk695346.Cr.useSetting(), b = Chunk54381 === Chunk231338.Sk.DND && null != Chunk246133 && module - Chunk246133 > j && "0" === Chunk70956, {
-    enabled: g
-  } = (0, Chunk809930.a)({
-    location: "useDoNotDisturbReminderPopoverDismissibleContent",
-    autoTrackExposure: Chunk388032,
-    disable: !Chunk388032
-  });
+  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
+    {
+      shouldShow: t = true
+    } = module,
+    [n, a] = Chunk473749.useState(Date.now()),
+    s = (0, Chunk442837.e7)([Chunk819640.Z], () => Chunk819640.Z.hasLayers()),
+    c = (0, Chunk442837.e7)([Chunk885110.Z], () => Chunk885110.Z.getStatus()),
+    p = Chunk695346.P4.useSetting(),
+    b = (null == Chunk70956 ? true : Chunk70956.value) != null ? Number(Chunk70956.value) : null,
+    g = Chunk695346.Cr.useSetting(),
+    C = Chunk246133 === Chunk231338.Sk.DND && null != Chunk388032 && require - Chunk388032 > j && "0" === Chunk668073,
+    {
+      enabled: _
+    } = (0, Chunk809930.a)({
+      location: "useDoNotDisturbReminderPopoverDismissibleContent",
+      autoTrackExposure: C,
+      disable: !C
+    });
   return Chunk473749.useEffect(() => {
-    if (Chunk54381 === Chunk231338.Sk.DND) {
-      exports(Date.now());
-      let e = setInterval(() => exports(Date.now()), v);
+    if (Chunk246133 === Chunk231338.Sk.DND) {
+      Chunk54381(Date.now());
+      let e = setInterval(() => Chunk54381(Date.now()), v);
       return () => clearInterval(module)
     }
-  }, [Chunk54381]), (0, Chunk243778.bf)(Chunk668073 && !require ? Chunk704215.z.DO_NOT_DISTURB_REMINDER_POPOVER : null, {
+  }, [Chunk246133]), (0, Chunk243778.bf)(_ && !Chunk907862 && exports ? Chunk704215.z.DO_NOT_DISTURB_REMINDER_POPOVER : null, {
     cooldownDurationMs: y,
     numTimesToRecur: 2
   }, Chunk921944.R.ACCOUNT_NAME_ZONE, true)
@@ -50,17 +61,17 @@ function _(e) {
     onDismiss: n,
     children: r
   } = e, {
-    enabled: i,
-    titleText: l,
+    enabled: l,
+    titleText: i,
     bodyText: o
   } = (0, h.a)({
     location: "popover",
     autoTrackExposure: false
   });
-  return null != t.current && i ? (0, a.jsxs)(a.Fragment, {
+  return null != t.current && l ? (0, a.jsxs)(a.Fragment, {
     children: [r, (0, a.jsx)(s.J2, {
       targetElementRef: t,
-      title: b.intl.string(l),
+      title: b.intl.string(i),
       body: b.intl.string(o),
       caretConfig: {
         align: "start"

@@ -61,7 +61,7 @@ function O(e) {
       children: (0, r.jsxs)("div", {
         className: b.container,
         style: {
-          backgroundImage: "url(".concat(E.Z, "), linear-gradient(").concat(y, "80, black)"),
+          backgroundImage: "url(".concat(_.Z, "), linear-gradient(").concat(y, "80, black)"),
           borderColor: y,
           boxShadow: "0 0 15px 5px ".concat(y, "50")
         },
@@ -72,7 +72,7 @@ function O(e) {
           loop: true,
           className: b.logo,
           children: (0, r.jsx)("source", {
-            src: _.Z,
+            src: E.Z,
             type: "video/webm"
           })
         }), (0, r.jsxs)("div", {

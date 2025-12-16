@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 905953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -31,26 +31,26 @@ function _(e) {
     onClose: _
   } = e, [S, E] = r.useState(false), {
     trackUserProfileEditAction: T
-  } = (0, m.KZ)(), O = (0, l.e7)([v.default], () => v.default.getId()), {
+  } = (0, m.KZ)(), O = (0, i.e7)([v.default], () => v.default.getId()), {
     config: N,
-    application: P
+    application: w
   } = (0, f.G)(), {
-    fetched: w,
+    fetched: P,
     hasAlreadyLinked: I,
     canStartAuthorization: k,
     startAuthorization: R
-  } = (0, d.F)(P), A = (0, x.ZP)(O), {
-    analyticsLocations: D
-  } = (0, c.ZP)(), Z = null == A || null == (t = A.widgets) ? true : t.some(e => e instanceof p.q && e.applicationId === (null == P ? true : P.id));
-  return null != N && null != N.edit_profile_upsell_image && null != P && w ? (0, a.jsx)(u.ZP, {
-    contentTypes: I ? Z ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : k ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
+  } = (0, d.F)(w), A = (0, x.ZP)(O), {
+    analyticsLocations: Z
+  } = (0, c.ZP)(), D = null == A || null == (t = A.widgets) ? true : t.some(e => e instanceof p.q && e.applicationId === (null == w ? true : w.id));
+  return null != N && null != N.edit_profile_upsell_image && null != w && P ? (0, a.jsx)(u.ZP, {
+    contentTypes: I ? D ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : k ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
         visibleContent: t,
         markAsDismissed: r
       } = e;
       if (null == t) return null;
-      let l = t === s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
+      let i = t === s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
       return (0, a.jsx)(o.J2, {
         targetElementRef: n,
         position: "right",
@@ -60,13 +60,13 @@ function _(e) {
           src: N.edit_profile_upsell_image
         },
         title: C.intl.format(C.t.TXDztH, {
-          applicationName: P.name
+          applicationName: w.name
         }),
-        body: l ? C.intl.string(C.t["63Kso0"]) : C.intl.string(C.t.HwXoeC),
+        body: i ? C.intl.string(C.t["63Kso0"]) : C.intl.string(C.t.HwXoeC),
         onRequestClose: () => {
           r(j.L.USER_DISMISS)
         },
-        actions: [l ? {
+        actions: [i ? {
           text: C.intl.string(C.t.VSLDly),
           onClick: () => {
             E(true), (0, b.openUserProfileModal)({
@@ -75,8 +75,8 @@ function _(e) {
             }).then(() => {
               r(j.L.TAKE_ACTION), _();
               let e = new p.q({
-                applicationId: P.id,
-                type: i.l.APPLICATION
+                applicationId: w.id,
+                type: l.l.APPLICATION
               });
               (0, h.qH)(e.type, e), T(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
@@ -113,7 +113,7 @@ function _(e) {
                   r(j.L.TAKE_ACTION), _()
                 }).finally(() => E(false))
               },
-              analyticsLocations: D
+              analyticsLocations: Z
             })
           },
           loading: S

@@ -118,7 +118,7 @@ function eb(e, t) {
   }
   return i
 }
-let e_ = e => {
+let eE = e => {
     var {
       selected: t
     } = e, n = eb(e, ["selected"]);
@@ -129,7 +129,7 @@ let e_ = e => {
       children: (0, r.jsx)(y.Qj, eh({
         selected: t,
         route: eo.Z5c.ICYMI,
-        icon: E.qOE,
+        icon: _.qOE,
         text: (0, r.jsxs)(r.Fragment, {
           children: [ep.intl.string(ep.t["jnXV/V"]), (0, r.jsx)("span", {
             className: eg.preAlphaText,
@@ -139,21 +139,21 @@ let e_ = e => {
       }, n, l))
     }) : null
   },
-  eE = e => {
+  e_ = e => {
     var {
       selected: t
     } = e, n = eb(e, ["selected"]);
     let l = (0, u.JA)("friends"),
       a = (0, G.If)(),
-      s = (0, p.e7)([B.ZP], () => B.ZP.canShowFriendsTabBadge()),
+      s = (0, p.e7)([H.ZP], () => H.ZP.canShowFriendsTabBadge()),
       o = (0, p.e7)([S.Z], () => S.Z.useReducedMotion),
       {
         enabled: d
-      } = H.w.useConfig({
+      } = B.w.useConfig({
         location: "Friends Tab"
       }),
       [g, m] = (0, x.bf)(s && d ? f.z.GIFTING_INTENT_FRIENDS_TAB_BADGE : null, {
-        cooldownDurationMs: B.n3
+        cooldownDurationMs: H.n3
       }),
       b = g === f.z.GIFTING_INTENT_FRIENDS_TAB_BADGE;
     i.useEffect(() => {
@@ -185,19 +185,19 @@ let e_ = e => {
         interactiveClassName: b ? eg.friendsBadge : true,
         selected: t,
         route: eo.Z5c.FRIENDS,
-        icon: E.iFz,
+        icon: _.iFz,
         text: ep.intl.string(ep.t.TdEu5X),
         onMouseEnter: P,
         onMouseLeave: j
       }, n, l), {
-        children: a > 0 ? (0, r.jsx)(E.mAB, {
+        children: a > 0 ? (0, r.jsx)(_.mAB, {
           count: a
         }) : null
       }));
     return (0, r.jsx)("div", {
       className: eg.friendsButtonContainer,
       children: b ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(_.i_, {
+        children: [(0, r.jsx)(E.i_, {
           title: ep.intl.string(ep.t.Thb5MO),
           body: ep.intl.string(ep.t.kGvgwS),
           position: "left",
@@ -239,7 +239,7 @@ let e_ = e => {
       children: (0, r.jsx)(y.Qj, eh({
         selected: t,
         route: eo.Z5c.ME_ACTIVITY,
-        icon: E.g8d,
+        icon: _.g8d,
         text: ep.intl.string(ep.t.IC5Ann)
       }, n, i))
     })
@@ -253,7 +253,7 @@ let e_ = e => {
     return (0, r.jsx)(y.Qj, em(eh({
       selected: t,
       route: eo.Z5c.APPLICATION_LIBRARY,
-      icon: E.vqy,
+      icon: _.vqy,
       text: ep.intl.string(ep.t.cw57ar)
     }, i, l), {
       children: (0, r.jsx)(C.Z, {
@@ -280,7 +280,7 @@ let e_ = e => {
     return (0, r.jsx)(y.Qj, em(eh({
       selected: t,
       route: eo.Z5c.MESSAGE_REQUESTS,
-      icon: E._XJ,
+      icon: _._XJ,
       text: ep.intl.string(ep.t.e7GWjQ),
       onClick: l
     }, n), {
@@ -294,7 +294,7 @@ let e_ = e => {
     return (0, r.jsx)(y.Qj, em(eh({
       selected: t,
       route: eo.Z5c.FAMILY_CENTER,
-      icon: E.BFJ,
+      icon: _.BFJ,
       text: n,
       onMouseEnter: () => {
         s(true)
@@ -325,11 +325,11 @@ let e_ = e => {
           })
         },
         "aria-label": ep.intl.string(ep.t.cpT0Cq),
-        icon: E.Dio
+        icon: _.Dio
       })
     }) : i > 0 ? (0, r.jsx)("div", {
       className: a()(eg.familyCenterButtonContainer, eg.withPadding),
-      children: (0, r.jsx)(E.mAB, {
+      children: (0, r.jsx)(_.mAB, {
         count: i
       })
     }) : (0, r.jsx)("div", {
@@ -340,7 +340,7 @@ let e_ = e => {
           let {
             visibleContent: t
           } = e;
-          return t === f.z.FAMILY_CENTER_NEW_BADGE ? (0, r.jsx)(E.IGR, {
+          return t === f.z.FAMILY_CENTER_NEW_BADGE ? (0, r.jsx)(_.IGR, {
             text: ep.intl.string(ep.t.y2b7CA),
             color: g.Z.colors.BACKGROUND_BRAND.css
           }) : null
@@ -388,7 +388,7 @@ let eP = Chunk473749.memo(function(e) {
     selectedChannelId: g,
     path: h,
     onlyShowDMs: m,
-    hideAllDMs: _
+    hideAllDMs: E
   } = e, O = i.useRef(null), v = i.useRef(null), y = i.useRef(null), C = i.useRef(null), S = U.o.useConfig({
     location: "privatechannels"
   }).friendsTab, T = (0, w.b5)("PrivateChannels"), N = null;
@@ -409,7 +409,7 @@ let eP = Chunk473749.memo(function(e) {
         className: a()(eg.searchBar, {
           [eg.themedHeaderMobile]: d.tq
         }),
-        children: (0, r.jsx)(E.Button, {
+        children: (0, r.jsx)(_.Button, {
           fullWidth: true,
           variant: "secondary",
           size: "sm",
@@ -424,14 +424,14 @@ let eP = Chunk473749.memo(function(e) {
     }), (0, r.jsxs)(I.Z, em(eh({}, e), {
       version: h,
       selectedChannelId: g,
-      showDMHeader: !_ && !m,
-      hideAllDMs: _,
+      showDMHeader: !E && !m,
+      hideAllDMs: E,
       listScrollerRef: y,
       children: [S && !m ? (0, r.jsx)(eO, {
         selected: null != h ? h === eo.Z5c.ME_ACTIVITY : l === eo.Z5c.ME_ACTIVITY
-      }, "activity_experimental") : null, m ? null : (0, r.jsx)(eE, {
+      }, "activity_experimental") : null, m ? null : (0, r.jsx)(e_, {
         selected: null != h ? h === eo.Z5c.FRIENDS : l === eo.Z5c.FRIENDS
-      }, "friends"), !m && T ? (0, r.jsx)(e_, {
+      }, "friends"), !m && T ? (0, r.jsx)(eE, {
         selected: null != h ? h === eo.Z5c.ICYMI : l === eo.Z5c.ICYMI
       }, "icymi") : null, n && t && !m ? (0, r.jsx)(ev, {
         selected: null == h ? null != l && l.startsWith(eo.Z5c.APPLICATION_LIBRARY) : h.startsWith(eo.Z5c.APPLICATION_LIBRARY),
@@ -465,7 +465,7 @@ let eP = Chunk473749.memo(function(e) {
         selected: null != l && l.startsWith(eo.Z5c.FAMILY_CENTER) || null != h && h.startsWith(eo.Z5c.FAMILY_CENTER)
       }, "family-center") : null, m ? null : (0, r.jsx)(K.Z, {
         selected: null == h ? null != l && l.startsWith(eo.Z5c.QUEST_HOME_V2) : h === eo.Z5c.QUEST_HOME_V2
-      }, "quests"), m || _ ? null : (0, r.jsx)(ex, {}, "section-divider-top"), _ ? null : (0, r.jsx)(A.Z, {}, "frequent-friends")]
+      }, "quests"), m || E ? null : (0, r.jsx)(ex, {}, "section-divider-top"), E ? null : (0, r.jsx)(A.Z, {}, "frequent-friends")]
     }))]
   })
 });
@@ -509,7 +509,7 @@ function eA() {
     h = (0, Chunk675957._h)(),
     m = [];
   (0, Chunk211644.Kl)() && (Chunk692547 && Chunk952265.push(Chunk704215.z.REFERRAL_PROGRAM_POPOVER), Chunk970683 && Chunk952265.push(Chunk704215.z.RECURRING_3P_PROMOTION_POPOVER));
-  let [b, _] = (0, Chunk243778.US)(Chunk952265, true, true), E = (0, Chunk28476.a)(), O = function() {
+  let [b, E] = (0, Chunk243778.US)(Chunk952265, true, true), _ = (0, Chunk28476.a)(), O = function() {
     let e = Chunk695346.Ex.useSetting(),
       t = (0, Chunk880257.Z)();
     returntrue === module && true === exports

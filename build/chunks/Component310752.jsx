@@ -15,21 +15,21 @@ let c = function(e) {
     className: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(o.icons, n),
+    className: a()(l.icons, n),
     children: [(0, r.jsx)("div", {
-      className: o.wrapOne,
+      className: l.wrapOne,
       children: (0, r.jsx)("div", {
-        className: a()(o.icon, o.one, l.bd[t[0]])
+        className: a()(l.icon, l.one, o.bd[t[0]])
       })
     }), (0, r.jsx)("div", {
-      className: o.wrapThree,
+      className: l.wrapThree,
       children: (0, r.jsx)("div", {
-        className: a()(o.icon, o.three, l.bd[t[2]])
+        className: a()(l.icon, l.three, o.bd[t[2]])
       })
     }), (0, r.jsx)("div", {
-      className: o.wrapTwo,
+      className: l.wrapTwo,
       children: (0, r.jsx)("div", {
-        className: a()(o.icon, o.two, l.bd[t[1]])
+        className: a()(l.icon, l.two, o.bd[t[1]])
       })
     })]
   })

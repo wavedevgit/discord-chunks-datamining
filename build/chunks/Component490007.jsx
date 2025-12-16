@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 490007, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk488922 = require("./488922.jsx"),
@@ -28,7 +28,7 @@ let p = [{
 function f() {
   let [e, t] = Chunk473749.useState("virtual-currency"), n = Chunk473749.useMemo(() => h[module], [module]);
   return (0, Chunk54381.jsxs)("div", {
-    className: l()(Chunk663618.panel, Chunk13408.container),
+    className: i()(Chunk663618.panel, Chunk13408.container),
     children: [(0, Chunk54381.jsx)(Chunk481060.njP, {
       className: Chunk13408.tabBar,
       selectedItem: module,

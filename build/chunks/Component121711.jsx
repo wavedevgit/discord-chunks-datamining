@@ -130,7 +130,7 @@ function eb(e) {
   })
 }
 
-function e_(e) {
+function eE(e) {
   let {
     onLoadComplete: t
   } = e;
@@ -152,7 +152,7 @@ function e_(e) {
   })
 }
 
-function eE(e) {
+function e_(e) {
   let {
     renderBanner: t,
     children: n,
@@ -177,9 +177,9 @@ function eE(e) {
     enabled: b
   } = V.n0.useConfig({
     location: er.dr.QUEST_HOME_DESKTOP
-  }), _ = i.useRef(null), E = i.useCallback(() => {
+  }), E = i.useRef(null), _ = i.useCallback(() => {
     var e;
-    null == (e = _.current) || e.resetSortingFiltering()
+    null == (e = E.current) || e.resetSortingFiltering()
   }, []);
   return (0, r.jsxs)(ee.t.Provider, {
     value: d,
@@ -192,7 +192,7 @@ function eE(e) {
           if (h) return (0, r.jsx)(et.o, {});
           if (null != g) return (0, r.jsx)(et.Z, {
             config: g,
-            onQuestCtaClick: E
+            onQuestCtaClick: _
           })
         }
         return t()
@@ -204,7 +204,7 @@ function eE(e) {
           children: [n, s ? p === z.e5.CLAIMED ? (0, r.jsx)(f, {
             onSelectTab: u
           }) : p === z.e5.PREVIEW_TOOL ? (0, r.jsx)(Y.Z, {}) : (0, r.jsx)(Q.Z, {
-            ref: _
+            ref: E
           }) : null]
         })
       })]
@@ -217,7 +217,7 @@ let eO = function(e) {
   } = e, n = (0, s.TH)(), l = (0, s.k6)(), g = i.useMemo(() => {
     var e;
     return (null == (e = (0, s.LX)(n.pathname, ei.Z5c.QUEST_HOME)) ? true : e.isExact) === true
-  }, [n.pathname]), v = (0, u.e7)([_.Z], () => _.Z.getState("quests")), {
+  }, [n.pathname]), v = (0, u.e7)([E.Z], () => E.Z.getState("quests")), {
     selectedTab: T,
     onSelectTab: x,
     tabs: L
@@ -225,7 +225,7 @@ let eO = function(e) {
     withClaimedQuestsTab: !g
   });
   i.useLayoutEffect(() => {
-    g && T === z.e5.CLAIMED && B.Z.setState({
+    g && T === z.e5.CLAIMED && H.Z.setState({
       tab: z.e5.ALL
     })
   }, [g, T]);
@@ -270,7 +270,7 @@ let eO = function(e) {
         pageType: ei.ZY5.GLOBAL_DISCOVERY_QUESTS,
         sectionType: ei.jXE.ORBS_BALANCE_MENU,
         ctaObject: ei.qAy.CTA_TO_ORBS_SHOP
-      }), (0, E.mK)({
+      }), (0, _.mK)({
         tab: el.AW.ORBS,
         analyticsLocations: [],
         analyticsSource: h.Z.ORBS_BALANCE_MENU
@@ -318,12 +318,12 @@ let eO = function(e) {
   }, [t]);
   let ep = i.useCallback(() => {
       (0, W.navigateToQuestHome)({
-        fromContent: H.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER
+        fromContent: B.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER
       }), R.default.track(ei.rMx.QUEST_CONTENT_CLICKED, eh({
         cta_name: U.jZ.VIEW_QUESTS,
         click_id: (0, o.Z)(),
         is_targeted: false
-      }, (0, U.mH)(H.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER)))
+      }, (0, U.mH)(B.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER)))
     }, []),
     ef = i.useCallback(e => {
       var t, n, r;
@@ -358,7 +358,7 @@ let eO = function(e) {
         className: a()(eo.container, {
           [eo.withoutTopBorder]: !t
         }),
-        children: g ? (0, r.jsx)(eE, {
+        children: g ? (0, r.jsx)(e_, {
           renderBanner: () => (0, r.jsx)(S.Z, {
             title: es.intl.string(es.t.z8YP2A),
             titleColor: "always-white",
@@ -368,7 +368,7 @@ let eO = function(e) {
               onClick: ep
             }),
             className: eo.redirectNoticeBannerContainer,
-            children: (0, r.jsx)(e_, {
+            children: (0, r.jsx)(eE, {
               onLoadComplete: Y
             })
           }),
@@ -395,7 +395,7 @@ let eO = function(e) {
               variant: "primary"
             })]
           })
-        }) : Q ? (0, r.jsx)(eE, {
+        }) : Q ? (0, r.jsx)(e_, {
           renderBanner: () => T !== z.e5.PREVIEW_TOOL && (0, r.jsxs)(S.Z, {
             title: ee,
             description: et,
@@ -403,7 +403,7 @@ let eO = function(e) {
               children: [(0, r.jsx)(p.Button, {
                 variant: "overlay-primary",
                 text: es.intl.string(es.t["1Wm127"]),
-                onClick: () => (0, E.mK)({
+                onClick: () => (0, _.mK)({
                   tab: el.AW.ORBS,
                   analyticsLocations: [],
                   analyticsSource: h.Z.INTRO_TO_ORBS_QUEST_BANNER
@@ -433,7 +433,7 @@ let eO = function(e) {
               ctaOnClick: eu
             })
           })
-        }) : (0, r.jsx)(eE, {
+        }) : (0, r.jsx)(e_, {
           renderBanner: () => (0, r.jsxs)(S.Z, {
             title: ee,
             description: et,

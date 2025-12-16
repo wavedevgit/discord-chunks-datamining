@@ -35,7 +35,7 @@ function N(e) {
     guild: t,
     onClick: l,
     onView: s
-  } = e, [g, h] = i.useState(false), [E, N] = i.useState(false), [j, P] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
+  } = e, [g, h] = i.useState(false), [_, N] = i.useState(false), [j, P] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
     N(true);
     try {
       await l(t.id)
@@ -83,7 +83,7 @@ function N(e) {
       }
     })
   }, [t]), L = (0, d.ZP)(), R = t.features.has(v.GuildFeatures.HUB), D = i.useMemo(() => {
-    let e = _.ZP.getGuildDiscoverySplashURL({
+    let e = E.ZP.getGuildDiscoverySplashURL({
       id: t.id,
       splash: t.discoverySplash,
       size: 300 * (0, b.x_)()
@@ -96,14 +96,14 @@ function N(e) {
       case v.BRd.LIGHT:
         return S
     }
-  }, [t.discoverySplash, t.id, R, L]), M = i.useMemo(() => _.ZP.getGuildIconURL({
+  }, [t.discoverySplash, t.id, R, L]), M = i.useMemo(() => E.ZP.getGuildIconURL({
     id: t.id,
     icon: t.icon,
     size: 48
   }), [t.icon, t.id]);
   return (0, r.jsxs)("div", {
     className: I.container,
-    children: [E && (0, r.jsx)("div", {
+    children: [_ && (0, r.jsx)("div", {
       className: I.spinnerContainer,
       children: (0, r.jsx)(c.$jN, {
         type: c.$jN.Type.PULSING_ELLIPSIS,
@@ -118,7 +118,7 @@ function N(e) {
         ref: x,
         className: I.card,
         onClick: A,
-        disabled: E,
+        disabled: _,
         onContextMenu: w,
         "aria-label": y.intl.string(y.t["M9wQ+f"]),
         children: [(0, r.jsxs)("div", {
@@ -214,7 +214,7 @@ function j(e) {
     guildId: t,
     onClick: n,
     onView: i
-  } = e, l = (0, s.e7)([E.Z], () => E.Z.getGuild(t));
+  } = e, l = (0, s.e7)([_.Z], () => _.Z.getGuild(t));
   return null == l ? null : (0, r.jsx)(N, {
     guild: l,
     onClick: n,

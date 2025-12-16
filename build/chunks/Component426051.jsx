@@ -23,15 +23,15 @@ function b(e) {
     active: t,
     user: n,
     channel: b
-  } = e, _ = (0, d.V)(), E = i.useCallback(() => {
+  } = e, E = (0, d.V)(), _ = i.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(h.intl.string(h.t.pIQ3h4), a.ToastType.FAILURE)), s.Z.increment({
       name: l.V.SPAM_MESSAGE_REQUEST_ERROR_VIEW
     })
   }, []), O = i.useCallback(() => {
     c.Z.closeChannelSidebar(u.uZ)
   }, []), v = i.useCallback(() => {
-    c.Z.closeChannelSidebar(u.uZ), _ && (0, o.Kh)(b.id)
-  }, [b.id, _]), {
+    c.Z.closeChannelSidebar(u.uZ), E && (0, o.Kh)(b.id)
+  }, [b.id, E]), {
     acceptMessageRequest: y,
     isAcceptLoading: I,
     isUserProfileLoading: C,
@@ -40,7 +40,7 @@ function b(e) {
     user: n,
     onAcceptSuccess: v,
     onRejectSuccess: O,
-    onError: E
+    onError: _
   }), T = I || C, N = T || S;
   return (0, r.jsxs)("div", {
     className: m.container,

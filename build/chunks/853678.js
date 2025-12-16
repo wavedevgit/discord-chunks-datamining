@@ -45,7 +45,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
       scope: {
         [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.b_]
       },
-      validation: e => (0, E.Z)(e).required().keys({
+      validation: e => (0, _.Z)(e).required().keys({
         url: e.string().required()
       }),
       handler(e) {
@@ -55,7 +55,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
             url: n
           }
         } = e;
-        (0, _.bu)(t.transport);
+        (0, E.bu)(t.transport);
         let r = s.ZP.getCurrentEmbeddedActivity();
         try {
           var i, c;
@@ -67,8 +67,8 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
           }
           let p = d.Z.getApplication(null == (i = t.application) ? true : i.id),
             b = (0, u.p)(null == r ? true : r.location),
-            _ = (null == p ? true : p.id) !== true ? T.get(p.id) : true;
-          if (true !== _ && _.trustedUntilEpochMs >= Date.now() && _.trustedHosts.has(e.host)) return (0, l.Z)(s), f.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+            E = (null == p ? true : p.id) !== true ? T.get(p.id) : true;
+          if (true !== E && E.trustedUntilEpochMs >= Date.now() && E.trustedHosts.has(e.host)) return (0, l.Z)(s), f.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
             application_id: null == (c = t.application) ? true : c.id,
             url: s,
             opened: true
@@ -110,7 +110,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
       }
     },
     [Chunk981631.Etm.NAVIGATE_TO_CONNECTIONS]: {
-      validation: e => (0, E.Z)(e),
+      validation: e => (0, _.Z)(e),
       scope: {
         [Chunk186901.Gp.ANY]: [Chunk186901.wE]
       },
@@ -118,8 +118,8 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
         let {
           socket: t
         } = e;
-        (0, _.bu)(t.transport);
-        let r = (0, _._f)(t.application);
+        (0, E.bu)(t.transport);
+        let r = (0, E._f)(t.application);
         if (!C.has(r)) throw new b.Z({
           errorCode: v.lTL.UNAUTHORIZED_FOR_APPLICATION
         }, "Command not available for this application");
@@ -147,8 +147,8 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
             link_id: a
           }
         } = e;
-        (0, _.bu)(n.transport);
-        let s = (0, _._f)(n.application);
+        (0, E.bu)(n.transport);
+        let s = (0, E._f)(n.application);
         if (null == s) throw new b.Z({
           errorCode: v.lTL.INVALID_COMMAND
         }, "No application.");

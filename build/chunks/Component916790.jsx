@@ -1,12 +1,12 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 916790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => D
 }), require("./35282.js"), require("./388685.js"), require("./49124.js"), require("./975844.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk299608 = require("./299608.js"),
   o = require.n(Chunk299608),
   Chunk913527 = require("./913527.js"),
@@ -30,10 +30,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk461015 = require("./461015.js"),
   Chunk663618 = require("./663618.js");
 
-function P(e) {
+function w(e) {
   return parseFloat(e.toFixed(3))
 }
-let w = [{
+let P = [{
   key: "store",
   cellClassName: Chunk461015.actionColumn,
   render(e) {
@@ -49,7 +49,7 @@ let w = [{
     let {
       trace: t
     } = e;
-    return "".concat(P(t.time), " ms")
+    return "".concat(w(t.time), " ms")
   }
 }];
 
@@ -62,7 +62,7 @@ function I(e) {
   })), [t]);
   return (0, a.jsx)(p.zJl, {
     children: (0, a.jsx)(S.Z, {
-      columns: w,
+      columns: P,
       data: n
     })
   })
@@ -88,7 +88,7 @@ let k = [{
           })
         }), (0, a.jsxs)(C.Z9, {
           name: "Total Time",
-          children: [P(n.totalTime), " ms"]
+          children: [w(n.totalTime), " ms"]
         })]
       }), (0, a.jsx)(p.zJl, {
         className: O.inspectorContainer,
@@ -116,7 +116,7 @@ function R(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, i = r.useMemo(() => t.error ? [...k, {
+  } = e, l = r.useMemo(() => t.error ? [...k, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(g.Z, {
@@ -130,7 +130,7 @@ function R(e) {
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
-          className: l()(O.errorToolbar, N.toolbar),
+          className: i()(O.errorToolbar, N.toolbar),
           children: (0, a.jsx)("div", {
             className: N.toolbarGroup,
             children: (0, a.jsx)(m.zx, {
@@ -152,19 +152,19 @@ function R(e) {
     TabBar: s,
     renderSelectedTab: o
   } = (0, E.ZP)({
-    tabs: i
-  }, [i]);
+    tabs: l
+  }, [l]);
   return (0, a.jsxs)(_.Z, {
     className: O.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(s, {}), (0, a.jsxs)(f.ZP, {
-      className: l()(N.headerBar, O.subPanelHeaderBar),
+      className: i()(N.headerBar, O.subPanelHeaderBar),
       children: [(0, a.jsx)(f.ZP.Icon, {
         icon: p.xVZ,
         tooltip: t.name
       }), (0, a.jsx)(f.ZP.Title, {
-        wrapperClassName: l()(N.headerTitle, N.dispatcherHeader),
+        wrapperClassName: i()(N.headerTitle, N.dispatcherHeader),
         className: N.headerTitleText,
         children: t.name
       }), (0, a.jsx)(f.ZP.Icon, {
@@ -208,7 +208,7 @@ let A = [{
       let {
         actionLog: t
       } = e;
-      return "".concat(P(t.totalTime), " ms")
+      return "".concat(w(t.totalTime), " ms")
     }
   }, {
     key: "timestamp",
@@ -220,7 +220,7 @@ let A = [{
       return d()(t.createdAt).format("HH:mm:ss.SSS")
     }
   }],
-  D = {
+  Z = {
     searchType: Chunk886118.S.REGEX,
     searchStringGenerator: e => {
       let {
@@ -231,10 +231,10 @@ let A = [{
     throttleMs: 100
   };
 
-function Z() {
+function D() {
   let e = Chunk473749.useRef(null),
     [t, n] = Chunk473749.useState(""),
-    i = function(e) {
+    l = function(e) {
       let [t, n] = r.useState(e.logs);
       return r.useEffect(() => {
         let t = o()(() => {
@@ -256,7 +256,7 @@ function Z() {
     y = Chunk473749.useCallback(e => {
       f(e)
     }, []);
-  (0, Chunk301801.BO)(exports, Chunk886118 ? Chunk913527 : Chunk299608, Chunk428530, D);
+  (0, Chunk301801.BO)(exports, Chunk886118 ? Chunk913527 : Chunk299608, Chunk428530, Z);
   let C = Chunk473749.useCallback(e => {
       d(s), g(e)
     }, [Chunk299608]),
@@ -265,7 +265,7 @@ function Z() {
     T = Chunk886118 ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
-    className: l()(Chunk663618.panel, Chunk461015.panel),
+    className: i()(Chunk663618.panel, Chunk461015.panel),
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk461015.toolbar,
       children: [(0, Chunk54381.jsx)(Chunk28664.u, {

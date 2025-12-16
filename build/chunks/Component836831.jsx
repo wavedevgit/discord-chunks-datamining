@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 836831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk236726 = require("./236726.js"),
   Chunk481060 = require("./481060.js"),
   Chunk617889 = require("./617889.js"),
@@ -16,13 +16,13 @@ let m = Chunk473749.forwardRef((e, t) => {
   let {
     quest: n,
     percentComplete: r,
-    size: i = 42,
+    size: l = 42,
     strokeWidth: m = 3,
     glowBlur: p = .4,
     percentCompleteText: h,
     percentCompleteTextVariant: f = "text-lg/medium",
     children: x
-  } = e, b = (0, c.EK)(n, r > 0), g = i / 2, v = i / 2 - m / 2, j = 2 * Math.PI * v, y = j - r * j, C = {
+  } = e, b = (0, c.EK)(n, r > 0), g = l / 2, v = l / 2 - m / 2, j = 2 * Math.PI * v, y = j - r * j, C = {
     strokeDasharray: "".concat(j, " ").concat(j),
     strokeDashoffset: y
   }, _ = {
@@ -46,9 +46,9 @@ let m = Chunk473749.forwardRef((e, t) => {
         style: {
           opacity: E
         },
-        className: l()(u.coverContent, u.progressTextWrapper),
+        className: i()(u.coverContent, u.progressTextWrapper),
         children: [(0, a.jsx)("div", {
-          className: l()(u.coverContent, u.progressTextOverlay)
+          className: i()(u.coverContent, u.progressTextOverlay)
         }), (0, a.jsx)(o.Text, {
           variant: f,
           color: "text-strong",
@@ -58,8 +58,8 @@ let m = Chunk473749.forwardRef((e, t) => {
       })]
     }), (0, a.jsxs)("svg", {
       className: u.progressBar,
-      height: i,
-      width: i,
+      height: l,
+      width: l,
       children: [(0, a.jsxs)("defs", {
         children: [(0, a.jsxs)("filter", {
           id: "glow",

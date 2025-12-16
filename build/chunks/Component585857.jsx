@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 585857, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q: () => h
@@ -28,7 +28,7 @@ function m(e) {
         questContent: o.jn.QUEST_BAR_V2,
         questContentCTA: s.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
         sourceQuestContent: d
-      }), (0, l.openUserSettings)(i.n.CONNECTIONS_PANEL, {
+      }), (0, i.openUserSettings)(l.n.CONNECTIONS_PANEL, {
         section: c.oAB.CONNECTIONS
       })
     },

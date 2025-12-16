@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 18868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => h
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk310752 = require("./310752.jsx"),
   Chunk897842 = require("./897842.jsx"),
@@ -49,7 +49,7 @@ let m = () => {
     let {
       className: t,
       onDrop: n,
-      children: i
+      children: l
     } = e, [h, f] = r.useState(false), x = r.useRef(null), b = r.useCallback(e => {
       p(e), f(true), (0, s.Mr3)(c.A)
     }, []), g = r.useCallback(e => {
@@ -69,12 +69,12 @@ let m = () => {
     }, [n]);
     return (0, a.jsxs)("div", {
       ref: x,
-      className: l()(t, u.wrapper),
+      className: i()(t, u.wrapper),
       onDragEnter: b,
       onDragOver: p,
       onDragLeave: g,
       onDrop: v,
-      children: [i, h && (0, a.jsx)("div", {
+      children: [l, h && (0, a.jsx)("div", {
         className: u.uploadModal,
         children: (0, a.jsxs)("div", {
           className: u.inner,

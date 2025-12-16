@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 715495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -54,12 +54,12 @@ function j(e, t) {
 
 function y() {
   var e, t;
-  let [n, i] = (0, Chunk473749.useState)(false), [s, d] = (0, Chunk473749.useState)(false), [h, x] = (0, Chunk473749.useState)(null), y = (0, Chunk396821.ZP)(e => e.toolsCache), {
+  let [n, l] = (0, Chunk473749.useState)(false), [s, d] = (0, Chunk473749.useState)(false), [h, x] = (0, Chunk473749.useState)(null), y = (0, Chunk396821.ZP)(e => e.toolsCache), {
     setToolsCache: T,
     removeToolsCache: O
   } = (0, Chunk396821.L3)(), {
     setImgCache: N
-  } = (0, Chunk396821.W_)(), P = (0, Chunk473749.useCallback)(e => {
+  } = (0, Chunk396821.W_)(), w = (0, Chunk473749.useCallback)(e => {
     let t = y[e];
     null != t && x({
       src: t.url,
@@ -73,7 +73,7 @@ function y() {
       src: e,
       preview: true
     }))
-  }, [y]), w = (0, Chunk473749.useCallback)(e => {
+  }, [y]), P = (0, Chunk473749.useCallback)(e => {
     x(t => null == t ? null : j(v({}, t), {
       palette: e,
       preview: true
@@ -106,7 +106,7 @@ function y() {
         children: [require && (0, Chunk54381.jsx)(Chunk329013.i, {}), Chunk276264 && (0, Chunk54381.jsx)(Chunk711325.Z, {
           selected: null == Chunk996746 || null == (e = Chunk996746.palette) ? true : module.name,
           onSelect: e => {
-            (null == h ? true : h.src) != null && T(h.src, h.src, e), w(e)
+            (null == h ? true : h.src) != null && T(h.src, h.src, e), P(e)
           }
         })]
       })]
@@ -137,13 +137,13 @@ function y() {
             } = e;
             return (0, a.jsx)(_, {
               src: t,
-              onSetStatic: P,
+              onSetStatic: w,
               removeAsset: I
             }, t)
           })
         }), (0, Chunk54381.jsx)(E, {
           label: "gradient override",
-          onChange: e => w({
+          onChange: e => P({
             name: m._j,
             darkBackground: e,
             lightBackground: e
@@ -160,10 +160,10 @@ function y() {
 function C(e) {
   let {
     nameplate: t
-  } = e, [n, i] = (0, r.useState)(320), s = (0, r.useRef)(null), o = (0, r.useRef)(null), c = (0, r.useRef)(null), d = (0, r.useRef)(document), u = (0, r.useCallback)(e => {
+  } = e, [n, l] = (0, r.useState)(320), s = (0, r.useRef)(null), o = (0, r.useRef)(null), c = (0, r.useRef)(null), d = (0, r.useRef)(document), u = (0, r.useCallback)(e => {
     if (null != s.current) {
       let t = s.current.getBoundingClientRect();
-      i(Math.max(264, Math.min(432, e.clientX - t.left)))
+      l(Math.max(264, Math.min(432, e.clientX - t.left)))
     }
   }, []), m = (0, r.useCallback)(e => {
     e.preventDefault(), e.stopPropagation();
@@ -179,7 +179,7 @@ function C(e) {
   }, [u]);
   return (0, r.useEffect)(() => () => {
     null != o.current && (d.current.removeEventListener("mousemove", o.current), o.current = null), null != c.current && (d.current.removeEventListener("mouseup", c.current), c.current = null)
-  }, []), (0, a.jsx)(l.zJl, {
+  }, []), (0, a.jsx)(i.zJl, {
     className: g.previewsContainer,
     orientation: "horizontal",
     children: (0, a.jsxs)("div", {
@@ -188,17 +188,17 @@ function C(e) {
       style: {
         width: "".concat(n, "px")
       },
-      children: [(0, a.jsx)(l.Text, {
+      children: [(0, a.jsx)(i.Text, {
         variant: "text-sm/semibold",
         children: "Memberlist"
       }), (0, a.jsx)(T, {
         nameplate: t
-      }), (0, a.jsx)(l.Text, {
+      }), (0, a.jsx)(i.Text, {
         variant: "text-sm/semibold",
         children: "DMs"
       }), (0, a.jsx)(O, {
         nameplate: t
-      }), (0, a.jsx)(l.Text, {
+      }), (0, a.jsx)(i.Text, {
         variant: "text-sm/semibold",
         children: "RTC"
       }), (0, a.jsx)(N, {
@@ -219,10 +219,10 @@ function _(e) {
   } = e;
   return (0, a.jsxs)("div", {
     className: g.uploaded,
-    children: [(0, a.jsx)(l.P3F, {
+    children: [(0, a.jsx)(i.P3F, {
       onClick: () => r(t),
       className: g.xicon,
-      children: (0, a.jsx)(l.Dio, {
+      children: (0, a.jsx)(i.Dio, {
         size: "custom",
         width: 16,
         height: 16,
@@ -234,7 +234,7 @@ function _(e) {
       alt: ""
     }), (0, a.jsx)("div", {
       className: g.uploadedControls,
-      children: (0, a.jsx)(l.Button, {
+      children: (0, a.jsx)(i.Button, {
         onClick: () => n(t),
         size: "sm",
         variant: "secondary",
@@ -251,10 +251,10 @@ function S(e) {
   } = e;
   return (0, a.jsxs)("div", {
     className: g.flex,
-    children: [(0, a.jsx)(l.Text, {
+    children: [(0, a.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: "coming soon"
-    }), (0, a.jsx)(l.Button, {
+    }), (0, a.jsx)(i.Button, {
       variant: "secondary",
       size: "sm",
       text: t,
@@ -271,7 +271,7 @@ function E(e) {
   } = e;
   return (0, a.jsxs)("div", {
     className: g.hexInput,
-    children: [(0, a.jsx)(l.Text, {
+    children: [(0, a.jsx)(i.Text, {
       variant: "text-sm/normal",
       children: t
     }), (0, a.jsx)("input", {
@@ -287,12 +287,12 @@ function E(e) {
 function T(e) {
   let {
     nameplate: t
-  } = e, n = (0, i.e7)([d.default], () => d.default.getCurrentUser());
+  } = e, n = (0, l.e7)([d.default], () => d.default.getCurrentUser());
   return (0, a.jsx)("div", {
     className: g.preview,
     children: (0, a.jsxs)("div", {
       className: g.simArea,
-      children: [(0, a.jsx)(l.Text, {
+      children: [(0, a.jsx)(i.Text, {
         className: g.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
@@ -300,7 +300,7 @@ function T(e) {
         nameplate: t,
         user: n,
         currentUser: n
-      }), (0, a.jsx)(l.Text, {
+      }), (0, a.jsx)(i.Text, {
         className: g.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
@@ -328,13 +328,13 @@ function O(e) {
     className: g.preview,
     children: (0, a.jsxs)("div", {
       className: g.simArea,
-      children: [(0, a.jsx)(l.Text, {
+      children: [(0, a.jsx)(i.Text, {
         className: g.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
       }), (0, a.jsx)(x.Z, {
         nameplate: t
-      }), (0, a.jsx)(l.Text, {
+      }), (0, a.jsx)(i.Text, {
         className: g.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"

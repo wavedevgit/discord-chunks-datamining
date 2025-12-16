@@ -22,8 +22,8 @@ function h(e) {
     notificationItem: n,
     setScrollState: h
   } = e, [m, b] = r.useState(false), {
-    unreadItems: _,
-    readItems: E,
+    unreadItems: E,
+    readItems: _,
     allUnreadItemsHydrated: O
   } = (0, p.Z)(), v = (0, i.e7)([c.Z], () => c.Z.getVersion(), []), y = (0, i.e7)([c.Z], () => !(c.Z.isFirstPageHydrated() && v > 0));
   r.useEffect(() => {
@@ -185,7 +185,7 @@ function h(e) {
         data: {
           kind: "loading"
         }
-      }) : (_.forEach(t => {
+      }) : (E.forEach(t => {
         (0, d.eO)(t) || e.push(t)
       }), O && e.push({
         id: "end",
@@ -194,7 +194,7 @@ function h(e) {
         data: {
           kind: "end"
         }
-      }), E.length > 0 && E.forEach(t => {
+      }), _.length > 0 && _.forEach(t => {
         (0, d.eO)(t) || e.push(t)
       }), C && e.push({
         id: "bottomLoading",
@@ -207,7 +207,7 @@ function h(e) {
         data: e,
         stickyHeaderIndices: []
       }
-    }, [y, n, _, O, E, C]);
+    }, [y, n, E, O, _, C]);
   return {
     data: D,
     loading: y,

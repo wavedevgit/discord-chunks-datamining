@@ -1,29 +1,29 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 897842, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => i,
-  default: () => l
+  A: () => l,
+  default: () => i
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk793030 = require("./793030.js");
-let i = "UPLOAD_ERROR_MODAL_KEY",
-  l = e => {
+let l = "UPLOAD_ERROR_MODAL_KEY",
+  i = e => {
     let {
       title: t,
       help: n,
-      transitionState: i,
-      onClose: l
+      transitionState: l,
+      onClose: i
     } = e;
     return (0, a.jsx)(r.Modal, {
       title: t,
       subtitle: n,
-      transitionState: i,
+      transitionState: l,
       actions: [{
         variant: "critical-secondary",
         text: "Close",
-        onClick: l
+        onClick: i
       }],
-      onClose: l
+      onClose: i
     })
   }

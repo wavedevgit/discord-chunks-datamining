@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 264603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk524437 = require("./524437.js"),
   Chunk199849 = require("./199849.jsx"),
@@ -46,14 +46,14 @@ function O() {
       analyticsLocations: t
     } = (0, Chunk906732.ZP)(Chunk100527.Z.DEV_TOOLS),
     n = Chunk695346.JG.useSetting(),
-    [i, o] = Chunk473749.useState(""),
+    [l, o] = Chunk473749.useState(""),
     O = (0, Chunk442837.e7)([Chunk594190.ZP, Chunk449224.Z], () => (0, Chunk989941.Z)(Chunk594190.ZP, Chunk449224.Z)),
     N = (0, Chunk835473.q)(Chunk120356),
-    P = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
+    w = (0, Chunk442837.Wu)([Chunk812206.Z], () => {
       var e, t;
       return null != (t = null == N || null == (e = N.linkedGames) ? true : module.map(e => x.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
     }),
-    w = (0, Chunk524995.F)(N, {
+    P = (0, Chunk524995.F)(N, {
       allowedFlows: [Chunk524995.r.RPC]
     }),
     I = (0, Chunk524995.F)(N, {
@@ -75,7 +75,7 @@ function O() {
     }(null == N ? true : N.id);
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
-    className: l()(Chunk663618.panel, Chunk17827.panel),
+    className: i()(Chunk663618.panel, Chunk17827.panel),
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk17827.container,
       children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
@@ -107,7 +107,7 @@ function O() {
         children: ["Application Name: ", null != N ? N.name : "N/A"]
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Linked Games:", " ", P.length > 0 ? P.map(e => {
+        children: ["Linked Games:", " ", w.length > 0 ? w.map(e => {
           var t;
           return (null == (t = (0, h.r)(N)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
         }).join(", ") : "N/A"]
@@ -129,8 +129,8 @@ function O() {
         color: "text-subtle",
         children: "This will start whichever authorization flow is available. RPC authorization takes precedence over web."
       }), (0, Chunk54381.jsx)(Chunk481060.Button, {
-        disabled: !w.canStartAuthorization,
-        onClick: () => w.startAuthorization({
+        disabled: !P.canStartAuthorization,
+        onClick: () => P.startAuthorization({
           analyticsLocations: exports
         }),
         variant: "secondary",

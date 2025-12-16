@@ -112,8 +112,8 @@ function Z(e) {
       checkSoundSharing: true
     }),
     G = null != (t = v.getGuildId()) ? t : true,
-    H = Z.getAvatarURL(v.guild_id, 24),
-    B = null != w ? w : C.ZP.getName(Z),
+    B = Z.getAvatarURL(v.guild_id, 24),
+    H = null != w ? w : C.ZP.getName(Z),
     {
       icon: V,
       colorize: F,
@@ -139,9 +139,9 @@ function Z(e) {
       localMute: k
     })) ? l : {},
     Y = null != z ? T.intl.formatToPlainString(T.t["1+MVBP"], {
-      userName: B,
+      userName: H,
       status: z()
-    }) : B;
+    }) : H;
 
   function W(e) {
     null != G ? (0, u.jW)(e, async () => {
@@ -153,7 +153,7 @@ function Z(e) {
         guildId: G,
         channel: v,
         showMediaItems: true,
-        onInteraction: (0, _.u)("GuildChannelUserContextMenu", g.Z.RTC_PANEL, {
+        onInteraction: (0, E.u)("GuildChannelUserContextMenu", g.Z.RTC_PANEL, {
           targetUserId: Z.id
         })
       }))
@@ -164,7 +164,7 @@ function Z(e) {
       return t => (0, r.jsx)(e, P(j({}, t), {
         user: Z,
         showMediaItems: true,
-        onInteraction: (0, _.u)("UserGenericContextMenu", g.Z.RTC_PANEL, {
+        onInteraction: (0, E.u)("UserGenericContextMenu", g.Z.RTC_PANEL, {
           targetUserId: Z.id
         })
       }))
@@ -194,13 +194,13 @@ function Z(e) {
         className: N.avatarContainer,
         onContextMenu: W,
         focusProps: x,
-        children: (0, r.jsx)(E.Z, {
+        children: (0, r.jsx)(_.Z, {
           shakeLocation: S.oZ.VOICE_USER,
           isShaking: U,
           children: (0, r.jsx)("div", {
             className: N.avatar,
             style: j({
-              backgroundImage: "url(".concat(H, ")")
+              backgroundImage: "url(".concat(B, ")")
             }, K),
             children: null != V ? (0, r.jsx)(V, {
               className: a()(N.avatarIconOverlay, {
@@ -238,26 +238,26 @@ function w(e) {
       containerRef: l,
       maxVisibleAvatars: t
     }
-  }(t.length - 1), [b, _] = function(e, t, n) {
+  }(t.length - 1), [b, E] = function(e, t, n) {
     let r = [];
     for (let i of e)
       if (i.user.id !== t && !r.some(e => e.user.id === i.user.id)) {
         if (r.length >= n) return [r, true];
         r.push(i)
       } return [r, false]
-  }(t, g, m), E = u ? c.V_R : c.qJs, O = u ? T.intl.string(T.t["Z/Tya5"]) : T.intl.string(T.t.XR5BAc), y = (0, r.jsx)(o.u, {
+  }(t, g, m), _ = u ? c.V_R : c.qJs, O = u ? T.intl.string(T.t["Z/Tya5"]) : T.intl.string(T.t.XR5BAc), y = (0, r.jsx)(o.u, {
     text: O,
     ariaHidden: true,
     children: (0, r.jsx)(c.hU, {
       "aria-label": O,
       onClick: () => d(!u),
-      icon: () => (0, r.jsx)(E, {
+      icon: () => (0, r.jsx)(_, {
         size: "md"
       }),
       variant: "icon-only",
       size: "sm"
     })
-  }), I = _ && u ? t : b;
+  }), I = E && u ? t : b;
   return I.length <= 0 ? null : (0, r.jsx)(c.zJl, {
     className: a()(N.scroller, l),
     fade: true,
@@ -282,7 +282,7 @@ function w(e) {
           serverMute: l.mute,
           serverDeaf: l.deaf
         }, t.id) : null
-      }), _ ? y : null]
+      }), E ? y : null]
     })
   })
 }

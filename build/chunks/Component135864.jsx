@@ -30,31 +30,31 @@ function C(e) {
     tab: t
   } = e, n = m.Z.useField("selectedTab"), l = i.useMemo(() => (function(e) {
     switch (e) {
-      case E.GlobalDiscoveryTab.SERVERS:
+      case _.GlobalDiscoveryTab.SERVERS:
         return (0, r.jsx)(o.QTo, {
           color: "currentColor"
         });
-      case E.GlobalDiscoveryTab.APPS:
+      case _.GlobalDiscoveryTab.APPS:
         return (0, r.jsx)(o.jje, {
           color: "currentColor"
         });
-      case E.GlobalDiscoveryTab.QUESTS:
+      case _.GlobalDiscoveryTab.QUESTS:
         return (0, r.jsx)(o.qDn, {
           color: "currentColor"
         })
     }
   })(t), [t]), y = i.useMemo(() => (0, b.s)(t), [t]), C = n === t, S = i.useCallback(() => {
     switch (t) {
-      case E.GlobalDiscoveryTab.QUESTS:
+      case _.GlobalDiscoveryTab.QUESTS:
         return C && g.Z.resetState(), h.default.track(O.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
           client_ad_session_id: (0, c.Gy)().uuid
-        }), (0, _.transitionToGlobalDiscovery)({
-          tab: E.GlobalDiscoveryTab.QUESTS,
+        }), (0, E.transitionToGlobalDiscovery)({
+          tab: _.GlobalDiscoveryTab.QUESTS,
           location: v.dr.DISCOVERY_SIDEBAR,
           questContent: s.j.DISCOVERY_SIDEBAR
         });
-      case E.GlobalDiscoveryTab.APPS:
-        if (!C) return (0, _.transitionToGlobalDiscovery)({
+      case _.GlobalDiscoveryTab.APPS:
+        if (!C) return (0, E.transitionToGlobalDiscovery)({
           tab: t,
           newSessionState: {
             entrypoint: {
@@ -63,18 +63,18 @@ function C(e) {
             restorePreviousView: true
           }
         });
-        u.Z.resetState(), (0, _.transitionToGlobalDiscovery)({
+        u.Z.resetState(), (0, E.transitionToGlobalDiscovery)({
           tab: t
         });
         return;
-      case E.GlobalDiscoveryTab.SERVERS:
-        if (!C) return (0, _.transitionToGlobalDiscovery)({
+      case _.GlobalDiscoveryTab.SERVERS:
+        if (!C) return (0, E.transitionToGlobalDiscovery)({
           tab: t
         });
         p.Z.resetState(), f.Z.resetState();
         return;
       default:
-        return (0, _.transitionToGlobalDiscovery)({
+        return (0, E.transitionToGlobalDiscovery)({
           tab: t
         })
     }

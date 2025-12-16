@@ -1,4 +1,4 @@
-/** Chunk was on 23736 **/
+/** Chunk was on 29725 **/
 /** chunk id: 396728, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -19,17 +19,17 @@ let o = Chunk473749.memo(function(e) {
     className: s.nameplatePreviewContainer,
     children: (0, a.jsxs)("div", {
       className: s.nameplatePreviewList,
-      children: [(0, a.jsx)(i.G, {
+      children: [(0, a.jsx)(l.G, {
         showStatus: true,
         width: c,
         opacity: .7,
         size: o
-      }), (0, a.jsx)(i.G, {
+      }), (0, a.jsx)(l.G, {
         showStatus: true,
         width: d,
         opacity: .85,
         size: o
-      }), (0, a.jsx)(l.Z, {
+      }), (0, a.jsx)(i.Z, {
         user: t,
         nameplate: n,
         className: s.nameplatePreviewSampleItem,
@@ -37,12 +37,12 @@ let o = Chunk473749.memo(function(e) {
         showPlaceholderUser: !r,
         showStatus: true,
         nameplatePreviewSize: "small" === o ? "small" : "default"
-      }), (0, a.jsx)(i.G, {
+      }), (0, a.jsx)(l.G, {
         showStatus: true,
         width: d,
         opacity: .85,
         size: o
-      }), (0, a.jsx)(i.G, {
+      }), (0, a.jsx)(l.G, {
         showStatus: true,
         width: c,
         opacity: .7,
