@@ -2,13 +2,15 @@
 /** chunk id: 443702, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  B7: () => N,
+  ZP: () => w,
+  v0: () => P,
+  wu: () => A
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk570140 = require("./570140.js"),
   Chunk355467 = require("./355467.js"),
   Chunk497321 = require("./497321.jsx"),
   Chunk231428 = require("./231428.jsx"),
@@ -28,130 +30,85 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk330374 = require("./330374.js");
 
-function C(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
+function T() {
+  return (0, Chunk54381.jsx)("div", {
+    className: Chunk330374.syncing,
+    children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
+  })
+}
+
+function C() {
+  (0, Chunk518596.openUserSettings)(Chunk313789.n.GIFT_PANEL, {
+    section: Chunk981631.oAB.INVENTORY
+  })
 }
 
 function A(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      C(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function N(e, t) {
-  if (null == e) return {};
-  var n, r, i = P(e, t);
-  if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-  }
-  return i
-}
-
-function P(e, t) {
-  if (null == e) return {};
-  var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-  return i
-}
-let R = () => (0, Chunk54381.jsx)("div", {
-  className: Chunk330374.syncing,
-  children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
-});
-class w extends Chunk473749.PureComponent {
-  componentDidMount() {
-    Chunk570140.Z.wait(() => {
-      Chunk355467.tZ(), Chunk355467.jg()
-    })
-  }
-  handleRedemptionRedirect() {
-    (0, Chunk518596.openUserSettings)(Chunk313789.n.GIFT_PANEL, {
-      section: Chunk981631.oAB.INVENTORY
-    })
-  }
-  render() {
-    let {
-      syncing: e,
-      hide: t,
-      paymentSources: n,
-      defaultPaymentSourceId: i,
-      locale: a,
-      premiumSubscription: s,
-      isRemovingPaymentSource: l,
-      isUpdatingPaymentSource: _
-    } = this.props;
-    return exports ? (0, Chunk54381.jsx)(Chunk497321.Z, {}) : (0, Chunk54381.jsxs)("div", {
-      children: [module && 0 === Object.keys(require).length ? (0, Chunk54381.jsx)(R, {}) : (0, Chunk54381.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.BILLING_PAYMENT_METHODS,
-        children: (0, Chunk54381.jsx)(Chunk390954.Z, {
-          paymentSources: require,
-          defaultPaymentSourceId: Chunk473749,
-          premiumSubscriptionPaymentSourceId: null != Chunk570140 && Chunk570140.status !== Chunk981631.O0b.CANCELED ? Chunk570140.paymentSourceId : null,
-          locale: Chunk442837,
-          removing: Chunk355467,
-          submitting: Chunk246946
-        })
-      }), (0, Chunk54381.jsx)(Chunk921801.F, {
-        setting: Chunk726985.s6.BILLING_TRANSACTION_HISTORY,
-        children: (0, Chunk54381.jsx)("div", {
-          className: Chunk330374.paymentHistory,
-          children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
-            gap: 16,
-            children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
-              variant: "heading-lg/semibold",
-              children: Chunk388032.intl.string(Chunk388032.t.obLrcK)
-            }), (0, Chunk54381.jsx)(Chunk89057.oQ, {}), (0, Chunk54381.jsx)(Chunk231428.Z, {
-              locale: Chunk442837
-            })]
-          })
-        })
-      }), (0, Chunk54381.jsx)(Chunk481060.Wn, {
-        messageType: Chunk481060.QYI.INFO,
-        className: Chunk330374.codeRedemptionRedirect,
-        children: Chunk388032.intl.format(Chunk388032.t["8b+FXG"], {
-          onClick: () => this.handleRedemptionRedirect()
-        })
-      })]
-    })
-  }
-}
-
-function D() {
-  let e = (0, Chunk442837.cj)([Chunk706454.default, Chunk351402.Z, Chunk853872.Z, Chunk594174.default, Chunk246946.Z, Chunk78839.Z], () => {
-    let e = Chunk78839.Z.getPremiumTypeSubscription(),
-      t = Chunk594174.default.getCurrentUser();
-    return null == exports ? {
-      shouldRenderBillingSettings: false
-    } : {
-      shouldRenderBillingSettings: true,
-      locale: Chunk706454.default.locale,
-      hide: Chunk246946.Z.enabled,
-      isClaimed: exports.isClaimed(),
-      isVerified: exports.verified,
-      premiumSubscription: module,
-      defaultPaymentSourceId: Chunk853872.Z.defaultPaymentSourceId,
-      paymentSources: Chunk853872.Z.paymentSources,
-      syncing: Chunk351402.Z.isSyncing,
-      isRemovingPaymentSource: Chunk351402.Z.isRemovingPaymentSource,
-      isUpdatingPaymentSource: Chunk351402.Z.isUpdatingPaymentSource
-    }
-  });
-  if (!module.shouldRenderBillingSettings) return (0, Chunk54381.jsx)(R, {});
   let {
-    shouldRenderBillingSettings: t
-  } = module, n = N(module, ["shouldRenderBillingSettings"]);
-  return (0, Chunk54381.jsx)(w, A({}, require))
+    showHeader: t = false
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.isSyncing), o = (0, a.e7)([h.Z], () => h.Z.paymentSources), l = (0, a.e7)([h.Z], () => h.Z.defaultPaymentSourceId), c = (0, a.e7)([E.default], () => E.default.locale), d = (0, a.e7)([g.Z], () => g.Z.getPremiumTypeSubscription()), f = (0, a.e7)([m.Z], () => m.Z.isRemovingPaymentSource), p = (0, a.e7)([m.Z], () => m.Z.isUpdatingPaymentSource);
+  return (i.useEffect(() => {
+    s.tZ(), s.jg()
+  }, []), n && 0 === Object.keys(o).length) ? (0, r.jsx)(T, {}) : (0, r.jsx)(u.Z, {
+    showHeader: t,
+    paymentSources: o,
+    defaultPaymentSourceId: l,
+    premiumSubscriptionPaymentSourceId: null != d && d.status !== v.O0b.CANCELED ? d.paymentSourceId : null,
+    locale: c,
+    removing: f,
+    submitting: p
+  })
+}
+
+function N(e) {
+  let {
+    className: t
+  } = e;
+  return (0, r.jsx)(o.Wn, {
+    messageType: o.QYI.INFO,
+    className: t,
+    children: S.intl.format(S.t["8b+FXG"], {
+      onClick: C
+    })
+  })
+}
+
+function P() {
+  let e = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale);
+  return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+    children: [(0, Chunk54381.jsx)(Chunk89057.oQ, {}), (0, Chunk54381.jsx)(Chunk231428.Z, {
+      locale: module
+    })]
+  })
+}
+
+function R() {
+  return (0, Chunk54381.jsxs)("div", {
+    children: [(0, Chunk54381.jsx)(Chunk921801.F, {
+      setting: Chunk726985.s6.BILLING_PAYMENT_METHODS,
+      children: (0, Chunk54381.jsx)(A, {
+        showHeader: true
+      })
+    }), (0, Chunk54381.jsx)(Chunk921801.F, {
+      setting: Chunk726985.s6.BILLING_TRANSACTION_HISTORY,
+      children: (0, Chunk54381.jsx)("div", {
+        className: Chunk330374.paymentHistory,
+        children: (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
+          gap: 16,
+          children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
+            variant: "heading-lg/semibold",
+            children: Chunk388032.intl.string(Chunk388032.t.obLrcK)
+          }), (0, Chunk54381.jsx)(P, {})]
+        })
+      })
+    }), (0, Chunk54381.jsx)(N, {
+      className: Chunk330374.codeRedemptionRedirect
+    })]
+  })
+}
+
+function w() {
+  let e = (0, Chunk442837.e7)([Chunk594174.default], () => null != Chunk594174.default.getCurrentUser()),
+    t = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled);
+  return module ? exports ? (0, Chunk54381.jsx)(Chunk497321.Z, {}) : (0, Chunk54381.jsx)(R, {}) : (0, Chunk54381.jsx)(T, {})
 }

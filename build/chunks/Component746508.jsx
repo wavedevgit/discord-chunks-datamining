@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 746508, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => e7
+  Z: () => e2
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -99,10 +99,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk190378 = require("./190378.js"),
   Chunk345655 = require("./345655.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk424126 = require("./424126.js"),
-  Chunk478411 = require("./478411.js");
+  Chunk424126 = require("./424126.js");
 
-function eW(e, t, n) {
+function eY(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -111,20 +110,20 @@ function eW(e, t, n) {
   }) : e[t] = n, e
 }
 
-function eq(e) {
+function eW(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      eW(e, t, n[t])
+      eY(e, t, n[t])
     })
   }
   return e
 }
 
-function eK(e, t) {
+function eq(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -137,7 +136,7 @@ function eK(e, t) {
   }), e
 }
 
-function eQ(e, t) {
+function eK(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -152,7 +151,7 @@ function eQ(e, t) {
   }
   return i
 }
-let eJ = {
+let eQ = {
   offset: {
     left: false,
     top: false,
@@ -161,7 +160,7 @@ let eJ = {
   }
 };
 
-function eX(e) {
+function eJ(e) {
   let t = e.currentTarget;
   eZ.default.track(eU.rMx.NOISE_CANCELLATION_LINK_CLICKED, {
     text: t.text,
@@ -172,7 +171,7 @@ function eX(e) {
   })
 }
 
-function e$() {
+function eX() {
   let e = Chunk473749.useRef(null);
   (0, Chunk481060.Tbt)(module), Chunk473749.useEffect(() => {
     Chunk626135.default.track(Chunk981631.rMx.OPEN_POPOUT, {
@@ -213,32 +212,29 @@ function e$() {
       location: {
         section: Chunk981631.jXE.NOISE_CANCELLATION_POPOUT
       }
-    }), (0, Chunk54381.jsx)("div", {
-      className: a()(Chunk478411.marginBottom8, Chunk478411.marginTop20),
-      children: (0, Chunk54381.jsx)(Chunk481060.gNt, {
-        label: Chunk388032.intl.string(Chunk388032.t.k6h1F4),
-        children: (0, Chunk54381.jsxs)(Chunk600164.Z, {
-          justify: Chunk600164.Z.Justify.BETWEEN,
-          className: Chunk424126.__invalid_footer,
-          children: [(0, Chunk54381.jsx)(Chunk481060.Anchor, {
-            href: Chunk981631.EYA.KRISP,
-            onClick: e => eX(e),
-            children: (0, Chunk54381.jsx)("div", {
-              className: Chunk424126.krispLogo
-            })
-          }), (0, Chunk54381.jsx)(Chunk481060.Anchor, {
-            href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION),
-            className: Chunk424126.krispLink,
-            onClick: e => eX(e),
-            children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
-          })]
-        })
+    }), (0, Chunk54381.jsx)(Chunk481060.gNt, {
+      label: Chunk388032.intl.string(Chunk388032.t.k6h1F4),
+      children: (0, Chunk54381.jsxs)(Chunk600164.Z, {
+        justify: Chunk600164.Z.Justify.BETWEEN,
+        className: Chunk424126.__invalid_footer,
+        children: [(0, Chunk54381.jsx)(Chunk481060.Anchor, {
+          href: Chunk981631.EYA.KRISP,
+          onClick: e => eJ(e),
+          children: (0, Chunk54381.jsx)("div", {
+            className: Chunk424126.krispLogo
+          })
+        }), (0, Chunk54381.jsx)(Chunk481060.Anchor, {
+          href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION),
+          className: Chunk424126.krispLink,
+          onClick: e => eJ(e),
+          children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
+        })]
       })
     })]
   })
 }
 
-function e0() {
+function e$() {
   let {
     parentAnalyticsLocation: e
   } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk754277.Z], () => Chunk754277.Z.isMuted()), n = exports ? Chunk388032.intl.string(Chunk388032.t.ScHlfl) : Chunk388032.intl.string(Chunk388032.t.zqxfrf);
@@ -252,7 +248,7 @@ function e0() {
   })
 }
 
-function e1(e) {
+function e0(e) {
   let {
     channel: t,
     enableActivities: n,
@@ -276,7 +272,7 @@ function e1(e) {
     play: N,
     events: j
   } = (0, h.o)(c.enabled ? "disable" : "enable");
-  return i.useEffect(() => () => N(), [c.enabled, N]), (0, r.jsx)(eE.Z, eK(eq({
+  return i.useEffect(() => () => N(), [c.enabled, N]), (0, r.jsx)(eE.Z, eq(eW({
     onChange: I,
     onCameraUnavailable: v,
     hasPermission: d,
@@ -291,7 +287,7 @@ function e1(e) {
         label: i,
         iconComponent: l,
         iconColor: c
-      } = e, u = eQ(e, ["unavailable", "isActive", "label", "iconComponent", "iconColor"]);
+      } = e, u = eK(e, ["unavailable", "isActive", "label", "iconComponent", "iconColor"]);
       let d = (0, r.jsx)(T, {
         size: "md",
         className: a()(ez.buttonIcon, {
@@ -317,12 +313,12 @@ function e1(e) {
         children: (e, l) => {
           var {
             onClick: s
-          } = e, c = eQ(e, ["onClick"]), {
+          } = e, c = eK(e, ["onClick"]), {
             isShown: p
           } = l;
           return (0, r.jsx)(b.u, {
             text: i,
-            children: (0, r.jsx)(_.zx, eK(eq({
+            children: (0, r.jsx)(_.zx, eq(eW({
               "data-migration-pending": true,
               buttonRef: o
             }, u, c), {
@@ -348,7 +344,7 @@ function e1(e) {
               innerClassName: ez.buttonContents,
               wrapperClassName: ez.button,
               fullWidth: true,
-              focusProps: eJ,
+              focusProps: eQ,
               children: C ? d : (0, r.jsxs)(U.Z, {
                 align: U.Z.Align.CENTER,
                 children: [d, eF.intl.string(eF.t.FlNoSV)]
@@ -361,7 +357,7 @@ function e1(e) {
   }))
 }
 
-function e4(e) {
+function e1(e) {
   let {
     channel: t,
     enableActivities: n
@@ -390,7 +386,7 @@ function e4(e) {
       } = e;
       return (0, r.jsx)(b.u, {
         text: f,
-        children: (0, r.jsxs)(_.zx, eK(eq({
+        children: (0, r.jsxs)(_.zx, eq(eW({
           "data-migration-pending": true,
           fullWidth: true,
           size: _.zx.Sizes.MEDIUM
@@ -420,7 +416,7 @@ function e4(e) {
           }),
           innerClassName: ez.buttonContents,
           wrapperClassName: ez.button,
-          focusProps: eJ,
+          focusProps: eQ,
           children: [n === d.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && (0, r.jsx)(x.r, {
             top: false,
             right: false
@@ -435,7 +431,7 @@ function e4(e) {
   }) : null
 }
 
-function e3(e) {
+function e4(e) {
   let {
     channel: t
   } = e, n = i.useRef(null), {
@@ -447,7 +443,7 @@ function e3(e) {
       onMouseEnter: u,
       onMouseLeave: p
     }
-  } = o, g = eQ(o.events, ["onMouseEnter", "onMouseLeave"]), [h, m] = i.useState(false), [O, v] = (0, G.US)([d.z.GAME_SHOP_RTC_GIFTING_NEW_BADGE], true, true), y = i.useCallback(() => {
+  } = o, g = eK(o.events, ["onMouseEnter", "onMouseLeave"]), [h, m] = i.useState(false), [O, v] = (0, G.US)([d.z.GAME_SHOP_RTC_GIFTING_NEW_BADGE], true, true), y = i.useCallback(() => {
     m(false)
   }, []), I = i.useCallback(e => {
     let {
@@ -477,7 +473,7 @@ function e3(e) {
       shouldShow: !h,
       onTooltipShow: u,
       onTooltipHide: p,
-      children: (0, r.jsxs)(_.zx, eK(eq({
+      children: (0, r.jsxs)(_.zx, eq(eW({
         "data-migration-pending": true,
         fullWidth: true,
         size: _.zx.Sizes.MEDIUM,
@@ -487,7 +483,7 @@ function e3(e) {
         className: a()(ez.button, ez.buttonColor),
         innerClassName: ez.buttonContents,
         wrapperClassName: ez.button,
-        focusProps: eJ,
+        focusProps: eQ,
         children: [O === d.z.GAME_SHOP_RTC_GIFTING_NEW_BADGE && (0, r.jsx)(x.r, {
           top: false,
           right: false,
@@ -502,7 +498,7 @@ function e3(e) {
   })
 }
 
-function e8(e) {
+function e3(e) {
   let t, {
       channel: n,
       canGoLive: l,
@@ -567,10 +563,10 @@ function e8(e) {
       var {
         onClick: n,
         onMouseEnter: i
-      } = e, l = eQ(e, ["onClick", "onMouseEnter"]);
+      } = e, l = eK(e, ["onClick", "onMouseEnter"]);
       return (0, r.jsx)(b.u, {
         text: j,
-        children: (0, r.jsx)(_.zx, eK(eq({
+        children: (0, r.jsx)(_.zx, eq(eW({
           "data-migration-pending": true,
           buttonRef: c,
           size: _.zx.Sizes.MEDIUM,
@@ -591,7 +587,7 @@ function e8(e) {
           },
           innerClassName: ez.buttonContents,
           wrapperClassName: ez.button,
-          focusProps: eJ,
+          focusProps: eQ,
           children: P ? R : (0, r.jsxs)(U.Z, {
             align: U.Z.Align.CENTER,
             children: [R, eF.intl.string(eF.t["r0/+v7"])]
@@ -601,7 +597,7 @@ function e8(e) {
     }
   })
 }
-class e5 extends Chunk473749.PureComponent {
+class e8 extends Chunk473749.PureComponent {
   renderConnectionStatus() {
     let e, {
       channel: t,
@@ -648,7 +644,7 @@ class e5 extends Chunk473749.PureComponent {
       channel: l,
       voiceStates: a
     } = this.props;
-    return null != Chunk473749 ? null : (null == Chunk120356 ? true : Chunk120356.isGuildStageVoice()) && null == a.find(e => e.user.id === ev.default.getId() && (0, ec.gf)(e.voiceState) === ec.xO.ON_STAGE) && (0, Chunk485287.U5)(Chunk120356.id) ? (0, Chunk54381.jsx)(e0, {}) : !require && exports ? (0, Chunk54381.jsx)(Chunk681715.u, {
+    return null != Chunk473749 ? null : (null == Chunk120356 ? true : Chunk120356.isGuildStageVoice()) && null == a.find(e => e.user.id === ev.default.getId() && (0, ec.gf)(e.voiceState) === ec.xO.ON_STAGE) && (0, Chunk485287.U5)(Chunk120356.id) ? (0, Chunk54381.jsx)(e$, {}) : !require && exports ? (0, Chunk54381.jsx)(Chunk681715.u, {
       text: Chunk388032.intl.string(Chunk388032.t["i+SO/U"]),
       forceOpen: true,
       children: (0, Chunk54381.jsx)(Chunk870569.Z, {
@@ -661,12 +657,12 @@ class e5 extends Chunk473749.PureComponent {
       targetElementRef: this.krispButtonRef,
       position: "top",
       align: "center",
-      renderPopout: () => (0, Chunk54381.jsx)(e$, {}),
+      renderPopout: () => (0, Chunk54381.jsx)(eX, {}),
       children: (t, n) => {
         let {
           isShown: i
         } = n;
-        return (0, r.jsx)(e2, {
+        return (0, r.jsx)(e5, {
           popoutProps: t,
           isShown: i,
           noiseCancellationActive: e,
@@ -712,23 +708,23 @@ class e5 extends Chunk473749.PureComponent {
       p = (0, Chunk368442.xJ)(module.id);
     return (0, Chunk54381.jsxs)("div", {
       className: Chunk424126.actionButtons,
-      children: [(0, Chunk54381.jsx)(e1, {
+      children: [(0, Chunk54381.jsx)(e0, {
         channel: module,
         enableActivities: Chunk442837,
         disabled: !Chunk749280 && Chunk704215
-      }), (0, Chunk54381.jsx)(e8, {
+      }), (0, Chunk54381.jsx)(e3, {
         channel: module,
         canGoLive: exports,
         enableActivities: Chunk442837,
         disabled: module.isGuildStageVoice() && (Chunk749280 && null == a || !Chunk749280 && Chunk704215)
-      }), Chunk442837 && !s ? (0, Chunk54381.jsx)(e4, {
+      }), Chunk442837 && !s ? (0, Chunk54381.jsx)(e1, {
         channel: module,
         enableActivities: Chunk473749
-      }) : null, s ? (0, Chunk54381.jsx)(e3, {
+      }) : null, s ? (0, Chunk54381.jsx)(e4, {
         channel: module
       }) : null, (0, Chunk641015.Z)(module) ? (0, Chunk54381.jsx)(Chunk848543.Z, {
         channel: module,
-        focusProps: eJ
+        focusProps: eQ
       }) : null]
     })
   }
@@ -767,14 +763,14 @@ class e5 extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), eW(this, "ref", i.createRef()), eW(this, "krispButtonRef", i.createRef()), eW(this, "handleChannelLinkClick", e => {
+    super(...e), eY(this, "ref", i.createRef()), eY(this, "krispButtonRef", i.createRef()), eY(this, "handleChannelLinkClick", e => {
       var t;
       let {
         guild: n,
         channel: r
       } = this.props;
       s()(null != r, "Channel is null during navigation click"), e.stopPropagation(), y.Z.channelListScrollTo(null != (t = null == n ? true : n.id) ? t : eU.ME, r.id), (0, D.v)(A.Z.RTC_PANEL, D.d.CHANNEL_LINK)
-    }), eW(this, "handleChannelLinkContextMenu", e => {
+    }), eY(this, "handleChannelLinkContextMenu", e => {
       let {
         channel: t,
         analyticsLocations: i
@@ -785,15 +781,15 @@ class e5 extends Chunk473749.PureComponent {
         } = await n.e("56944").then(n.bind(n, 600830));
         return n => (0, r.jsx)(Z.Gt, {
           value: i,
-          children: (0, r.jsx)(e, eK(eq({}, n), {
+          children: (0, r.jsx)(e, eq(eW({}, n), {
             channel: t,
             onInteraction: (0, M.u)("RTCConnectionMenu", A.Z.RTC_PANEL)
           }))
         })
       })
-    }), eW(this, "handleCloseVoicePanelIntroduction", () => {
+    }), eY(this, "handleCloseVoicePanelIntroduction", () => {
       Y.Kw(eB.v.VOICE_PANEL_INTRODUCTION)
-    }), eW(this, "renderVoicePanelIntroduction", () => (0, r.jsxs)("div", {
+    }), eY(this, "renderVoicePanelIntroduction", () => (0, r.jsxs)("div", {
       className: a()(ez.voicePanelIntroductionWrapper, "theme-light"),
       children: [(0, r.jsx)(E.Heading, {
         className: ez.voicePanelIntroductionHeader,
@@ -807,13 +803,13 @@ class e5 extends Chunk473749.PureComponent {
         fullWidth: true,
         onClick: this.handleCloseVoicePanelIntroduction,
         text: eF.intl.string(eF.t.shaBeH),
-        focusProps: eJ
+        focusProps: eQ
       })]
     }))
   }
 }
 
-function e2(e) {
+function e5(e) {
   let {
     popoutProps: t,
     isShown: n,
@@ -826,7 +822,7 @@ function e2(e) {
     Component: c,
     events: u
   } = (0, m.P)(l ? "disable" : "enable");
-  return i.useEffect(() => () => s(), [l, s]), (0, r.jsx)(eR.Z, eK(eq({}, t), {
+  return i.useEffect(() => () => s(), [l, s]), (0, r.jsx)(eR.Z, eq(eW({}, t), {
     ref: a,
     onClick: e => {
       (0, D.v)(o, D.d.KRISP, !l), t.onClick(e)
@@ -844,7 +840,7 @@ function e2(e) {
     })
   }))
 }
-let e7 = (0, Chunk730749.Z)(function(e) {
+let e2 = (0, Chunk730749.Z)(function(e) {
   let t = (0, B.Z)(),
     n = (0, u.e7)([H.default], () => H.default.getAwaitingRemoteSessionInfo()),
     l = (0, u.e7)([eP.default], () => eP.default.getCurrentUser()),
@@ -862,7 +858,7 @@ let e7 = (0, Chunk730749.Z)(function(e) {
     {
       channelId: o
     } = a,
-    s = eQ(a, ["channelId"]),
+    s = eK(a, ["channelId"]),
     c = (0, u.e7)([ey.Z], () => ey.Z.getChannel(o), [o]),
     d = null == c ? true : c.getGuildId(),
     p = (0, u.e7)([eI.Z], () => eI.Z.getGuild(d), [d]),
@@ -914,7 +910,7 @@ let e7 = (0, Chunk730749.Z)(function(e) {
       children: [null != t || null != n ? (0, r.jsx)(V.Z, {
         voiceState: t,
         awaitingRemoteSessionInfo: n
-      }) : null, (0, r.jsx)(e5, eK(eq({}, e, f, s), {
+      }) : null, (0, r.jsx)(e8, eq(eW({}, e, f, s), {
         enableActivities: w,
         remoteVoiceState: t,
         guild: p,
@@ -941,7 +937,7 @@ let e7 = (0, Chunk730749.Z)(function(e) {
             j(true)
           },
           text: eF.intl.string(eF.t.WAI6xu),
-          focusProps: eJ
+          focusProps: eQ
         })]
       }) : null]
     })

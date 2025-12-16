@@ -44,19 +44,22 @@ function f(e, t, n) {
 function p(e) {
   return !!o.ZP.shouldAllowSurveyAction() && (!!e.startsWith("quest_completed_") || r.J[e] >= 100 * Math.random())
 }
-async function _(e) {
-  if (p(e)) try {
-    var t;
-    let n = await i.tn.post({
+async function _(e, t) {
+  if (!p(e)) return;
+  let n = {
+    action_type: e
+  };
+  null != t && (n.metadata = t);
+  try {
+    var r;
+    let e = await i.tn.post({
       url: d.ANM.EMBEDDED_SURVEY_ACTION,
-      body: {
-        action_type: e
-      },
+      body: n,
       rejectWithError: true
     });
     a.Z.dispatch({
       type: "SURVEY_FETCHED",
-      survey: null == n || null == (t = n.body) ? true : t.survey,
+      survey: null == e || null == (r = e.body) ? true : r.survey,
       isActionTriggered: true
     })
   } catch (e) {}

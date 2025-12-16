@@ -17,27 +17,29 @@ function u(e) {
     node: t
   } = e, {
     useTitle: n,
-    useSubnavLabel: i,
-    useSubtitle: u,
-    layout: d,
-    initialize: f,
-    useNotice: p
-  } = t, _ = null == n ? true : n(), m = null == u ? true : u(), h = null == p ? true : p(), g = null != n || null != i;
-  return (0, s.D)(f), (0, r.jsxs)(r.Fragment, {
-    children: [null != _ && (0, r.jsx)(l.Y, {
-      title: _,
-      subtitle: m
+    useTitleTrailingIcon: i,
+    useSubnavLabel: u,
+    useSubtitle: d,
+    layout: f,
+    initialize: p,
+    useNotice: _
+  } = t, m = null == n ? true : n(), h = null == i ? true : i(), g = null == d ? true : d(), E = null == _ ? true : _(), b = null != n || null != u;
+  return (0, s.D)(p), (0, r.jsxs)(r.Fragment, {
+    children: [null != m && (0, r.jsx)(l.Y, {
+      title: m,
+      titleTrailingIcon: h,
+      subtitle: g
     }), (0, r.jsx)("div", {
-      "data-settings-category-key": g ? t.key : true,
+      "data-settings-category-key": b ? t.key : true,
       "aria-hidden": true,
       style: {
         height: 1
       }
     }), (0, r.jsxs)(a.Kqy, {
       gap: 16,
-      children: [null != h && (0, r.jsx)(c.Z, {
-        notice: h
-      }), d.map(e => (0, r.jsx)(o.Z, {
+      children: [null != E && (0, r.jsx)(c.Z, {
+        notice: E
+      }), f.map(e => (0, r.jsx)(o.Z, {
         node: e
       }, e.key))]
     })]

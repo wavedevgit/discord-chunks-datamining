@@ -720,7 +720,7 @@ let eG = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         searchableTitles: [ex.intl.string(ex.t.oeUm2s)],
         label: ex.intl.string(ex.t.oeUm2s),
         ariaLabel: ex.intl.string(ex.t.oeUm2s),
-        element: ei.Z
+        element: ei.ZP
       },
       [eP.s6.BILLING_PAYMENT_METHODS]: {
         section: ew.oAB.BILLING,

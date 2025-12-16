@@ -141,41 +141,42 @@ class I extends Chunk473749.PureComponent {
   }
   render() {
     let {
-      defaultPaymentSourceId: e,
-      paymentSources: t,
-      locale: n,
-      removing: r,
-      submitting: a,
-      premiumSubscriptionPaymentSourceId: o
-    } = this.props, l = s().values(exports).sort((t, n) => t.id === e ? false : n.id === e ? 1 : p.default.compare(t.id, n.id)), u = this.state.editingPayment, d = Chunk159691.findIndex(e => e.id === u), f = Chunk159691.map((t, s) => (0, i.jsx)(S, {
-      locale: n,
-      paymentSource: t,
-      isDefault: e === t.id,
+      showHeader: e,
+      defaultPaymentSourceId: t,
+      paymentSources: n,
+      locale: r,
+      removing: a,
+      submitting: o,
+      premiumSubscriptionPaymentSourceId: l
+    } = this.props, u = s().values(require).sort((e, n) => e.id === t ? false : n.id === t ? 1 : p.default.compare(e.id, n.id)), d = this.state.editingPayment, f = Chunk355467.findIndex(e => e.id === d), _ = Chunk355467.map((e, n) => (0, i.jsx)(S, {
+      locale: r,
+      paymentSource: e,
+      isDefault: t === e.id,
       onCancel: this.handleCancel,
       onDelete: this.handleDelete,
-      isForSubscription: t.id === o,
-      hideDivider: d === s - 1,
+      isForSubscription: e.id === l,
+      hideDivider: f === n - 1,
       onSubmit: this.handleSubmit,
-      index: s,
-      submitting: a,
-      removing: r,
-      isEditing: u === t.id,
+      index: n,
+      submitting: o,
+      removing: a,
+      isEditing: d === e.id,
       onEditClick: this.handleEditClick
-    }, t.id));
+    }, e.id));
     return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsxs)(Chunk481060.Heading, {
-        variant: "heading-lg/semibold",
-        children: [(0, Chunk54381.jsx)(Chunk481060.mBM, {
-          size: "sm",
-          className: Chunk262992.lockIcon
-        }), " ", Chunk388032.intl.string(Chunk388032.t.W26xGQ)]
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-        variant: "text-sm/normal",
-        color: "text-subtle",
-        children: Chunk388032.intl.string(Chunk388032.t.h6V3uK)
-      }), Chunk212895, Chunk159351 !== Chunk159691.length - 1 ? (0, Chunk54381.jsx)(Chunk481060.izJ, {
-        className: Chunk262992.__invalid_sourceDivider
-      }) : null, this.renderFooter()]
+      children: [module ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        children: [(0, Chunk54381.jsxs)(Chunk481060.Heading, {
+          variant: "heading-lg/semibold",
+          children: [(0, Chunk54381.jsx)(Chunk481060.mBM, {
+            size: "sm",
+            className: Chunk262992.lockIcon
+          }), " ", Chunk388032.intl.string(Chunk388032.t.W26xGQ)]
+        }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+          variant: "text-sm/normal",
+          color: "text-subtle",
+          children: Chunk388032.intl.string(Chunk388032.t.h6V3uK)
+        })]
+      }) : null, Chunk156729, Chunk212895 !== Chunk355467.length - 1 ? (0, Chunk54381.jsx)(Chunk481060.izJ, {}) : null, this.renderFooter()]
     })
   }
   constructor(...e) {
