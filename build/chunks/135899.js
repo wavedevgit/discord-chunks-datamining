@@ -23,5 +23,5 @@ let a = "publicSuccessModalSeen",
   d = 1e3,
   f = "Enable Community Modal";
 var p = function(e) {
-  return e.SAFETY_CHECK = "safety_check", e.BASICS = "basics", e.FINISH = "finish", e
+  return e.INTRO = "intro", e.SAFETY_CHECK = "safety_check", e.BASICS = "basics", e.FINISH = "finish", e.RULES = "rules", e
 }({})

@@ -107,6 +107,7 @@ function E(e, t) {
 }
 async function O(e, t, n, r, l) {
   var s, c, d, p;
+  let _ = arguments.length > 5 && true !== arguments[5] ? arguments[5] : {};
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ROLES_SUBMITTING"
   });
@@ -134,9 +135,9 @@ async function O(e, t, n, r, l) {
       type: "GUILD_SETTINGS_ROLES_SAVE_SUCCESS"
     })
   } catch (e) {
-    i.Z.dispatch({
-      type: "GUILD_SETTINGS_ROLES_SAVE_FAIL",
-      message: null != (p = null == (d = e.body) ? true : d.message) ? p : Object.values(e.body)[0]
-    })
+    if (i.Z.dispatch({
+        type: "GUILD_SETTINGS_ROLES_SAVE_FAIL",
+        message: null != (p = null == (d = e.body) ? true : d.message) ? p : Object.values(e.body)[0]
+      }), _.throwErr) throw e
   }
 }

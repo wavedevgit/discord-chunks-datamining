@@ -2,8 +2,7 @@
 /** chunk id: 741118, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  d: () => y,
-  v: () => b
+  d: () => b
 }), require("./415506.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -73,91 +72,86 @@ function g(e, t) {
 }
 let E = Chunk473749.createContext(null);
 
-function b() {
-  let e = Chunk473749.useContext(E);
-  if (null == module) throw Error("useMultiStepModalContext must be used within a MultiStepModal");
-  return module
-}
-
-function y(e) {
-  var t, n, {
-      steps: f,
-      currentStepKey: _,
-      onStepChange: g,
-      onComplete: b,
-      stepCount: y
+function b(e) {
+  var t, n, f, {
+      steps: _,
+      currentStepKey: g,
+      numberedSteps: b,
+      onStepChange: y,
+      onComplete: O
     } = e,
-    O = h(e, ["steps", "currentStepKey", "onStepChange", "onComplete", "stepCount"]);
+    v = h(e, ["steps", "currentStepKey", "numberedSteps", "onStepChange", "onComplete"]);
   let {
-    i18n: v
-  } = (0, o.ZF)(), S = O.onClose, I = f.find(e => e.stepKey === _);
-  if (null == I) throw Error("Step with key ".concat(_, " not found"));
-  let T = f.findIndex(e => e.stepKey === _),
-    C = T === f.length - 1,
-    A = 0 === T,
-    [N, P] = i.useState(false),
-    [R, w] = i.useState(_);
-  R !== _ && (P(false), w(_));
-  let D = i.useCallback(e => {
-      null == g || g(e)
-    }, [g]),
-    x = i.useCallback(async () => {
-      await (null == b ? true : b()), S()
-    }, [b, S]),
-    L = i.useCallback(async () => {
-      C ? await x() : g(f[T + 1].stepKey)
-    }, [g, T, f, C, x]),
-    j = i.useCallback(() => {
-      A || g(f[T - 1].stepKey)
-    }, [g, T, f, A]),
-    M = i.useMemo(() => ({
-      currentStepKey: _,
-      setNextEnabled: P,
-      goToStep: D,
-      goToNextStep: L,
-      goToPreviousStep: j,
-      complete: x
-    }), [_, P, D, L, j, x]),
-    k = {
+    i18n: S
+  } = (0, o.ZF)(), I = v.onClose, T = _.find(e => e.stepKey === g);
+  if (null == T) throw Error("Step with key ".concat(g, " not found"));
+  let C = _.findIndex(e => e.stepKey === g),
+    A = C === _.length - 1,
+    N = 0 === C,
+    P = null == (f = T.nextEnabled) || f,
+    R = i.useCallback(e => {
+      null == y || y(e, g)
+    }, [y, g]),
+    w = i.useCallback(async () => {
+      await (null == O ? true : O()), I()
+    }, [O, I]),
+    D = i.useCallback(async () => {
+      (null == T.onNext || await T.onNext()) && (A ? await w() : R(_[C + 1].stepKey))
+    }, [R, C, _, A, w, T]),
+    x = i.useCallback(() => {
+      N || R(_[C - 1].stepKey)
+    }, [R, C, _, N]),
+    L = i.useMemo(() => ({
+      currentStepKey: g,
+      goToStep: R,
+      goToNextStep: D,
+      goToPreviousStep: x,
+      complete: w
+    }), [g, R, D, x, w]),
+    j = {
       variant: "secondary",
-      text: v.BACK
+      text: S.BACK
     },
-    U = {
+    M = {
       variant: "primary",
-      text: v.NEXT,
-      disabled: !N,
+      text: S.NEXT,
+      disabled: !P,
       onClick: () => {
-        N && L()
+        P && D()
       }
     },
-    G = I.hideBackButton || A ? true : (0, r.jsx)(a.A, m(p({}, k, I.backButtonProps), {
-      onClick: j
+    k = {
+      text: S.CANCEL,
+      variant: "secondary",
+      onClick: I
+    },
+    U = T.hideBackButton || N ? true : (0, r.jsx)(a.A, m(p({}, j, T.backButtonProps), {
+      onClick: x
     }));
   return (0, r.jsx)(E.Provider, {
-    value: M,
-    children: (0, r.jsxs)(s.I, m(p({}, O), {
+    value: L,
+    children: (0, r.jsxs)(s.I, m(p({}, v), {
       children: [(0, r.jsx)(u.x, {
-        title: I.title,
-        subtitle: I.subtitle,
-        stepNumber: I.stepNumber,
-        stepCount: y
+        title: T.title,
+        subtitle: T.subtitle,
+        stepNumber: (null == b ? true : b.includes(g)) ? b.indexOf(g) + 1 : true,
+        stepCount: null == b ? true : b.length
       }), (0, r.jsx)(d.Y, {
-        message: null == (t = I.notice) ? true : t.message,
-        type: null == (n = I.notice) ? true : n.type
-      }), (0, r.jsx)(c.f, {
-        controls: I.input,
-        listProps: I.listProps,
-        children: I.body
-      }), (0, r.jsx)(l.G, {
-        leading: G,
-        actionsFullWidth: A,
-        actions: [{
-          text: v.CANCEL,
-          variant: "secondary",
-          onClick: () => {
-            S()
-          }
-        }, p({}, U, I.nextButtonProps)]
+        message: null == (t = T.notice) ? true : t.message,
+        type: null == (n = T.notice) ? true : n.type
+      }), _.map(e => null != e.body || null != e.input || null != e.listProps ? (0, r.jsx)("div", {
+        style: {
+          display: e.stepKey === g ? true : "none"
+        },
+        children: (0, r.jsx)(c.f, {
+          controls: e.input,
+          listProps: e.listProps,
+          children: e.body
+        })
+      }, e.stepKey) : true), (0, r.jsx)(l.G, {
+        leading: U,
+        actionsFullWidth: N,
+        actions: [...N ? [k] : [], p({}, M, T.nextButtonProps)]
       })]
     }))
   })

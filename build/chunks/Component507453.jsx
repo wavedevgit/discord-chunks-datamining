@@ -16,6 +16,7 @@ let o = {
       scrollbarType: n
     } = e;
     return (0, r.jsx)(l.hzk, {
+      "data-migration-pending": true,
       className: a.content,
       scrollbarType: n,
       children: t
@@ -40,12 +41,13 @@ let o = {
       showConfirm: a = false,
       disabled: o,
       submitting: c
-    } = e, u = t.methods.length > 1;
-    return null != i || u || a ? (0, r.jsx)(l.mzw, {
+    } = e, d = t.methods.length > 1;
+    return null != i || d || a ? (0, r.jsx)(l.mzw, {
+      "data-migration-pending": true,
       children: (0, r.jsxs)(l.ButtonGroup, {
         fullWidth: true,
         direction: "vertical",
-        children: [u && (0, r.jsx)(l.Button, {
+        children: [d && (0, r.jsx)(l.Button, {
           variant: "secondary",
           text: s.intl.string(s.t.Tot4EC),
           onClick: () => n("select")
@@ -66,6 +68,7 @@ let o = {
       headerAlignStart: o
     } = e;
     return (0, r.jsxs)(l.xBx, {
+      "data-migration-pending": true,
       direction: i.Z.Direction.VERTICAL,
       className: a.header,
       separator: false,

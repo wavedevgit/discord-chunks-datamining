@@ -1,8 +1,8 @@
-/** Chunk was on 57486 **/
+/** Chunk was on 51218 **/
 /** chunk id: 785697, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  D2: () => o,
-  SE: () => c
+  D2: () => c,
+  SE: () => o
 });
 var Chunk442837 = require("./442837.js"),
   Chunk818083 = require("./818083.js"),
@@ -24,7 +24,7 @@ let r = (0, Chunk818083.B)({
   }]
 });
 
-function o(e) {
+function c(e) {
   return r.useExperiment({
     guildId: e,
     location: "dd4beb_1"
@@ -33,11 +33,11 @@ function o(e) {
   })
 }
 
-function c(e) {
+function o(e) {
   var t;
-  let i = (0, s.e7)([n.Z], () => n.Z.can(a.Plq.MANAGE_GUILD, e)),
+  let i = (0, l.e7)([s.Z], () => s.Z.can(a.Plq.MANAGE_GUILD, e)),
     {
-      enabled: l
+      enabled: n
     } = r.useExperiment({
       guildId: null != (t = null == e ? true : e.id) ? t : a.lds,
       location: "dd4beb_3"
@@ -45,6 +45,6 @@ function c(e) {
       autoTrackExposure: true
     });
   if (null == e) returnfalse;
-  let o = e.features.has(a.GuildFeatures.COMMUNITY);
-  return i && o && l
+  let c = e.features.has(a.GuildFeatures.COMMUNITY);
+  return i && c && n
 }

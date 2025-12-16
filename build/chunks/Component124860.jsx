@@ -1,8 +1,8 @@
 /** Chunk was on 52030 **/
 /** chunk id: 124860, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => b,
-  MFAModal: () => p,
+  C: () => p,
+  MFAModal: () => b,
   Y: () => j
 }), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
@@ -49,12 +49,12 @@ function m(e, t) {
   }), e
 }
 
-function b(e) {
+function p(e) {
   var t, n;
   let {
     mfaChallenge: h,
-    mfaFinish: b,
-    onEarlyClose: p,
+    mfaFinish: p,
+    onEarlyClose: b,
     onClose: j,
     headerAlignStart: x,
     width: y = 440
@@ -63,7 +63,7 @@ function b(e) {
       mfaType: t,
       data: n
     } = e;
-    await b({
+    await p({
       mfaType: t,
       data: n,
       ticket: h.ticket
@@ -72,7 +72,7 @@ function b(e) {
     mfaChallenge: h,
     finish: Z,
     setSlide: v,
-    onClose: p,
+    onClose: b,
     headerAlignStart: x
   };
   return (0, r.jsxs)(i.MyZ, {
@@ -87,12 +87,12 @@ function b(e) {
       children: (0, r.jsx)(f.Z, g({}, w))
     }), (0, r.jsx)(i.Mi4, {
       id: "totp",
-      children: (0, r.jsx)(d.Z, m(g({}, w), {
+      children: (0, r.jsx)(u.Z, m(g({}, w), {
         isSlideReady: "totp" === C
       }))
     }), (0, r.jsx)(i.Mi4, {
       id: "sms",
-      children: (0, r.jsx)(u.Z, m(g({}, w), {
+      children: (0, r.jsx)(d.Z, m(g({}, w), {
         isSlideReady: "sms" === C
       }))
     }), (0, r.jsx)(i.Mi4, {
@@ -112,7 +112,7 @@ function b(e) {
   })
 }
 
-function p(e) {
+function b(e) {
   let {
     mfaChallenge: t,
     finish: n,
@@ -120,11 +120,12 @@ function p(e) {
     onClose: s
   } = e;
   return (0, r.jsx)(i.Y0X, {
+    "data-migration-pending": true,
     transitionState: l,
     size: i.CgR.SMALL,
     "aria-label": h.intl.string(h.t.saHocI),
     parentComponent: "MFAModal",
-    children: (0, r.jsx)(b, {
+    children: (0, r.jsx)(p, {
       mfaChallenge: t,
       mfaFinish: n,
       onClose: s,
@@ -134,7 +135,7 @@ function p(e) {
 }
 
 function j(e, t, n) {
-  (0, i.h7j)(n => (0, r.jsx)(p, g({
+  (0, i.h7j)(n => (0, r.jsx)(b, g({
     finish: t,
     mfaChallenge: e
   }, n)), {

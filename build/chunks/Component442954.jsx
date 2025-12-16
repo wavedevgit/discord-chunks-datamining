@@ -724,10 +724,10 @@ let y = {
   EnableCommunityModal: async () => {
     let {
       default: e
-    } = await Promise.all([require.e("57486"), require.e("116")]).then(require.bind(require, 87026));
+    } = await Promise.all([require.e("57486"), require.e("39464")]).then(require.bind(require, 87026));
     return t => (0, a.jsx)(e, j(v({}, t), {
-      onClose: () => {
-        console.log("EnableCommunityModal: Closed"), t.onClose()
+      onClose: async () => {
+        console.log("EnableCommunityModal: Closed"), await t.onClose()
       }
     }))
   },

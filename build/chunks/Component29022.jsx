@@ -78,7 +78,7 @@ function y(t) {
   })
 }
 
-function C(t) {
+function g(t) {
   let {
     permissions: e,
     step: n
@@ -106,7 +106,7 @@ function C(t) {
   }))
 }
 
-function g(t) {
+function C(t) {
   let {
     permissions: e,
     step: n
@@ -119,7 +119,7 @@ function g(t) {
     children: [2 !== n ? (0, i.jsx)(y, {
       permissions: o,
       step: n
-    }) : null, (0, i.jsx)(C, {
+    }) : null, (0, i.jsx)(g, {
       permissions: a,
       step: n
     })]
@@ -169,7 +169,7 @@ function L(t) {
       }), (0, i.jsx)(b, {
         guild: e
       })]
-    }) : null, (0, i.jsx)(g, {
+    }) : null, (0, i.jsx)(C, {
       permissions: n,
       step: o
     })]

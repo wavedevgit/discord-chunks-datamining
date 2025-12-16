@@ -15,29 +15,29 @@ function c(e) {
     mfaChallenge: t,
     finish: n,
     setSlide: c,
-    onClose: u,
-    isSlideReady: d,
+    onClose: d,
+    isSlideReady: u,
     headerAlignStart: f
-  } = e, [h, g] = l.useState(false), [m, b] = l.useState(null), [p, j] = l.useState(""), x = l.useRef(null);
+  } = e, [h, g] = l.useState(false), [m, p] = l.useState(null), [b, j] = l.useState(""), x = l.useRef(null);
   return l.useEffect(() => {
-    if (d) {
+    if (u) {
       var e;
       null == (e = x.current) || e.focus()
     }
-  }, [d]), (0, r.jsxs)("form", {
+  }, [u]), (0, r.jsxs)("form", {
     onSubmit: e => {
-      e.preventDefault(), g(true), b(null), n({
+      e.preventDefault(), g(true), p(null), n({
         mfaType: "totp",
-        data: p
+        data: b
       }).catch(e => {
         var t, n;
-        b(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
+        p(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
       }).finally(() => {
         g(false)
       })
     },
     children: [(0, r.jsx)(a.Z.SlideHeader, {
-      onClose: u,
+      onClose: d,
       headerAlignStart: f
     }), (0, r.jsxs)(a.Z.SlideContent, {
       scrollbarType: "none",
@@ -48,7 +48,7 @@ function c(e) {
         placeholder: o.intl.string(o.t.tARzgo),
         maxLength: i.gH,
         minLength: i.gH,
-        value: p,
+        value: b,
         autoComplete: "one-time-code",
         spellCheck: "false",
         disabled: h
@@ -59,7 +59,7 @@ function c(e) {
       mfaChallenge: t,
       setSlide: c,
       showConfirm: true,
-      disabled: p.length !== i.gH,
+      disabled: b.length !== i.gH,
       submitting: h
     })]
   })

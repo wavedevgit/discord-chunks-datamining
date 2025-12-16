@@ -15,31 +15,31 @@ function c(e) {
     mfaChallenge: t,
     finish: n,
     setSlide: c,
-    onClose: u,
-    isSlideReady: d,
+    onClose: d,
+    isSlideReady: u,
     headerAlignStart: f
-  } = e, [h, g] = l.useState(false), [m, b] = l.useState(null), [p, j] = l.useState(""), x = l.useRef(null), y = o.intl.string(o.t["C/ZAw/"]), S = o.intl.string(o.t.fZSi1D), v = l.useCallback(e => {
-    j(e), b(null)
-  }, [j, b]);
+  } = e, [h, g] = l.useState(false), [m, p] = l.useState(null), [b, j] = l.useState(""), x = l.useRef(null), y = o.intl.string(o.t["C/ZAw/"]), S = o.intl.string(o.t.fZSi1D), v = l.useCallback(e => {
+    j(e), p(null)
+  }, [j, p]);
   return l.useEffect(() => {
-    if (d) {
+    if (u) {
       var e;
       null == (e = x.current) || e.focus()
     }
-  }, [d]), (0, r.jsxs)("form", {
+  }, [u]), (0, r.jsxs)("form", {
     onSubmit: e => {
       e.preventDefault(), g(true), n({
         mfaType: "backup",
-        data: p.replace(/-/g, "")
+        data: b.replace(/-/g, "")
       }).catch(e => {
         var t, n;
-        b(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
+        p(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
       }).finally(() => {
         g(false)
       })
     },
     children: [(0, r.jsx)(a.Z.SlideHeader, {
-      onClose: u,
+      onClose: d,
       headerAlignStart: f
     }), (0, r.jsxs)(a.Z.SlideContent, {
       children: [(0, r.jsx)(s.oil, {
@@ -49,7 +49,7 @@ function c(e) {
         placeholder: S,
         maxLength: i.tL,
         minLength: i.th,
-        value: p,
+        value: b,
         spellCheck: "false",
         disabled: h
       }), (0, r.jsx)(a.Z.SlideError, {
@@ -59,7 +59,7 @@ function c(e) {
       mfaChallenge: t,
       setSlide: c,
       showConfirm: true,
-      disabled: p.length < 8,
+      disabled: b.length < 8,
       submitting: h
     })]
   })

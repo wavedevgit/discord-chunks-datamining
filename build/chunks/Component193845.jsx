@@ -55,9 +55,9 @@ function S(e) {
     })]
   })
 }
-let T = e => e.toString() === f.Plq.MENTION_EVERYONE.toString() ? E.intl.string(E.t.yCpsQw) : (0, s.wt)(e);
+let h = e => e.toString() === f.Plq.MENTION_EVERYONE.toString() ? E.intl.string(E.t.yCpsQw) : (0, s.wt)(e);
 
-function h(e) {
+function T(e) {
   let {
     permissions: t
   } = e;
@@ -77,7 +77,7 @@ function h(e) {
         }), (0, i.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: T(e)
+          children: h(e)
         })]
       }, t))
     })]
@@ -104,7 +104,7 @@ function I(e) {
         }), (0, i.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: T(e)
+          children: h(e)
         })]
       }, t))
     })]
@@ -122,7 +122,7 @@ function N(e) {
     "data-migration-pending": true,
     children: (0, i.jsxs)("div", {
       className: O.table,
-      children: [(0, i.jsx)(h, {
+      children: [(0, i.jsx)(T, {
         permissions: n
       }), (0, i.jsx)(I, {
         permissions: a
