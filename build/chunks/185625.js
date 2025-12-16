@@ -399,11 +399,21 @@ function U(e, t) {
   })
 }
 
-function G(e, t, n, r, i) {
-  return e.some(e => {
+function G(e, t) {
+  var n;
+  let {
+    freeTextElements: r,
+    dropdownElements: i,
+    multiSelectElement: a,
+    contentUrlInputElement: o
+  } = e, {
+    textInput: s,
+    multiSelect: l
+  } = t;
+  return r.some(e => {
     var t;
-    returntrue === e.should_submit_data && ((null == r ? true : r[e.name]) == null || (null == r ? true : r[e.name].value) === "" || !(null == r || null == (t = r[e.name]) ? true : t.isValid))
-  }) || t.some(e => true === e.should_submit_data && ((null == r ? true : r[e.name]) == null || (null == r ? true : r[e.name].value) === "")) || (null == n ? true : n.should_submit_data) === true && (null == i || 0 === Object.keys(i).length)
+    returntrue === e.should_submit_data && ((null == s ? true : s[e.name]) == null || (null == s ? true : s[e.name].value) === "" || !(null == s || null == (t = s[e.name]) ? true : t.isValid))
+  }) || i.some(e => true === e.should_submit_data && ((null == s ? true : s[e.name]) == null || (null == s ? true : s[e.name].value) === "")) || (null == a ? true : a.should_submit_data) === true && (null == l || 0 === Object.keys(l).length) || (null == o ? true : o.should_submit_data) === true && ((null == s ? true : s[o.name]) == null || (null == s ? true : s[o.name].value) === "" || !(null == s || null == (n = s[o.name]) ? true : n.isValid))
 }
 var Z = function(e) {
   return e.SETTINGS_UPSELLS_VIEWED = "SETTINGS_UPSELLS_VIEWED", e.SETTINGS_UPSELLS_APPLY_CLICKED = "SETTINGS_UPSELLS_APPLY_CLICKED", e.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED = "SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED", e

@@ -22,10 +22,10 @@ let p = e => {
   } = e, {
     isIgnored: g,
     isBlocked: f
-  } = (0, i.cj)([c.Z], () => ({
-    isIgnored: c.Z.isIgnored(t.id),
-    isBlocked: c.Z.isBlocked(t.id)
-  }), [t]), x = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), h = l.useMemo(() => u.ZP.getName(null == x ? true : x.guild_id, null == x ? true : x.id, t), [x, t]), v = l.useCallback(() => {
+  } = (0, i.cj)([d.Z], () => ({
+    isIgnored: d.Z.isIgnored(t.id),
+    isBlocked: d.Z.isBlocked(t.id)
+  }), [t]), x = (0, i.e7)([c.Z], () => c.Z.getChannel(n), [n]), h = l.useMemo(() => u.ZP.getName(null == x ? true : x.guild_id, null == x ? true : x.id, t), [x, t]), v = l.useCallback(() => {
     s.ZP.trackWithMetadata(m.rMx.IAR_IGNORE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: p

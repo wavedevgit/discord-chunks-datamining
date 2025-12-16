@@ -181,9 +181,9 @@ class et extends(r = Chunk473749.PureComponent) {
     if (delete i.redirect_to, null != n) {
       if ((0, E.Eu)(n)) return void(0, E.Pq)(n);
       null != r ? r(n) : t(n)
-    } else if (null == i.service) t(H.Z5c.APP);
+    } else if (null == i.service) t(K.Z5c.APP);
     else {
-      let e = window.location.protocol + window.GLOBAL_ENV.API_ENDPOINT + H.ANM.SSO,
+      let e = window.location.protocol + window.GLOBAL_ENV.API_ENDPOINT + K.ANM.SSO,
         t = $(X({}, i), {
           token: k.default.getToken()
         });
@@ -387,7 +387,7 @@ class et extends(r = Chunk473749.PureComponent) {
                 text: q.intl.string(q.t.dKhVQN),
                 fullWidth: true,
                 type: "submit",
-                loading: a === H.u34.LOGGING_IN
+                loading: a === K.u34.LOGGING_IN
               })
             }), (0, i.jsxs)("div", {
               className: J.marginTop4,
@@ -430,7 +430,7 @@ class et extends(r = Chunk473749.PureComponent) {
     })
   }
   renderGuildTemplate(e) {
-    return (0, i.jsx)(K.Z, {
+    return (0, i.jsx)(H.Z, {
       onSubmit: this.handleLogin,
       tag: "form",
       className: l()(this.props.authBoxClassName, Y.horizontalAuthBox),
@@ -551,8 +551,8 @@ class et extends(r = Chunk473749.PureComponent) {
     super(e), Q(this, "loginRef", true), Q(this, "passwordRef", true), Q(this, "codeRef", true), Q(this, "handleAuthToken", async (e, t) => {
       this.setState({
         errors: {}
-      }), await m.Z.loginToken(e, false), B.default.track(H.rMx.LOGIN_SUCCESSFUL, {
-        source: H.uRl.QR_CODE,
+      }), await m.Z.loginToken(e, false), B.default.track(K.rMx.LOGIN_SUCCESSFUL, {
+        source: K.uRl.QR_CODE,
         login_source: this.loginSource,
         gift_code_sku_id: this.giftCodeSKUId,
         is_new_user: false,
@@ -590,7 +590,7 @@ class et extends(r = Chunk473749.PureComponent) {
         undelete: n,
         conditionalMediationAbortController: r
       } = this.state;
-      null == e || e.preventDefault(), r.abort("Starting password login"), U.S.dispatch(H.CkL.WAVE_EMPHASIZE), this.setState({
+      null == e || e.preventDefault(), r.abort("Starting password login"), U.S.dispatch(K.CkL.WAVE_EMPHASIZE), this.setState({
         errors: {}
       });
       try {
@@ -616,7 +616,7 @@ class et extends(r = Chunk473749.PureComponent) {
       try {
         let {
           token: n
-        } = await T.Z.verifyPhone(t, e, false);
+        } = await O.Z.verifyPhone(t, e, false);
         await m.Z.authorizeIPAddress(n), this.handleLogin()
       } catch (e) {
         null != e.body && null != e.body.message && this.setState({
@@ -633,8 +633,8 @@ class et extends(r = Chunk473749.PureComponent) {
       try {
         let {
           token: n
-        } = await T.Z.verifyPhone(this.getFullLogin(), e, false);
-        t(H.Z5c.RESET, {
+        } = await O.Z.verifyPhone(this.getFullLogin(), e, false);
+        t(K.Z5c.RESET, {
           search: (0, o.stringify)({
             token: n,
             from_login: "true"
@@ -651,7 +651,7 @@ class et extends(r = Chunk473749.PureComponent) {
         data: n,
         ticket: r
       } = e;
-      return U.S.dispatch(H.CkL.WAVE_EMPHASIZE), m.Z.loginMFAv2({
+      return U.S.dispatch(K.CkL.WAVE_EMPHASIZE), m.Z.loginMFAv2({
         code: n,
         ticket: r,
         mfaType: t,
@@ -665,7 +665,7 @@ class et extends(r = Chunk473749.PureComponent) {
         errors: {}
       });
       try {
-        U.S.dispatch(H.CkL.WAVE_EMPHASIZE);
+        U.S.dispatch(K.CkL.WAVE_EMPHASIZE);
         let e = await m.Z.forgotPassword(t);
         if (false === e) return;
         e === u.B.ONE_TIME_LOGIN ? (0, f.h7j)(e => {
@@ -703,7 +703,7 @@ class et extends(r = Chunk473749.PureComponent) {
         })
       }
     }), Q(this, "handleResendCode", () => {
-      T.Z.resendCode(this.getFullLogin())
+      O.Z.resendCode(this.getFullLogin())
     }), Q(this, "handleReset", e => {
       null != e && e.preventDefault(), m.Z.loginReset(), this.setState({
         password: "",
@@ -733,9 +733,9 @@ class et extends(r = Chunk473749.PureComponent) {
           redirectTo: l
         } = this.props,
         c = null != s ? (0, o.parse)(s.search) : {};
-      "" !== t && (c.email = t), null != n ? (c.mode = "register", e = H.Z5c.INVITE(n.code)) : null != r ? (c.mode = "register", e = H.Z5c.GIFT_CODE(r.code)) : null != i ? e = H.Z5c.GUILD_TEMPLATE(i.code) : null != l ? (e = H.Z5c.REGISTER, c.redirect_to = l) : e = H.Z5c.REGISTER, this.loginReset(), a(e, {
+      "" !== t && (c.email = t), null != n ? (c.mode = "register", e = K.Z5c.INVITE(n.code)) : null != r ? (c.mode = "register", e = K.Z5c.GIFT_CODE(r.code)) : null != i ? e = K.Z5c.GUILD_TEMPLATE(i.code) : null != l ? (e = K.Z5c.REGISTER, c.redirect_to = l) : e = K.Z5c.REGISTER, this.loginReset(), a(e, {
         search: (0, o.stringify)(c)
-      }), U.S.dispatch(H.CkL.WAVE_EMPHASIZE)
+      }), U.S.dispatch(K.CkL.WAVE_EMPHASIZE)
     });
     let r = null != e.location ? (0, o.parse)(e.location.search) : {};
     this.state = {

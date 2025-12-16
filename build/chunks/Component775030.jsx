@@ -68,7 +68,7 @@ class u extends(r = Chunk473749.Component) {
         default: d
       }] = await Promise.all([t(), Promise.resolve().then(n.t.bind(n, 500923, 23))]);
       if (null == this.animationRef.current) return;
-      let f = "object" == typeof u && "default" in u && "string" == typeof u.default ? {
+      let f = "object" == typeof u && null != u && "default" in u && "string" == typeof u.default ? {
         path: u.default
       } : {
         animationData: u

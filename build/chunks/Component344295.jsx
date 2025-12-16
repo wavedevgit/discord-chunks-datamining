@@ -2,7 +2,7 @@
 /** chunk id: 344295, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => Q
+  Z: () => q
 }), require("./997841.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk756647 = require("./756647.js"),
   Chunk442837 = require("./442837.js"),
   Chunk298444 = require("./298444.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk481060 = require("./481060.js"),
   Chunk447543 = require("./447543.js"),
   Chunk881052 = require("./881052.js"),
   Chunk899370 = require("./899370.js"),
@@ -42,10 +42,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk701476 = require("./701476.js"),
   Chunk436620 = require("./436620.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk356897 = require("./356897.js"),
   Chunk478411 = require("./478411.js");
 
-function V(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -53,59 +52,17 @@ function V(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-
-function W(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      V(e, t, n[t])
-    })
-  }
-  return e
-}
 Chunk442837.ZP.initialize();
-let K = "Accept Invite Page",
-  H = "register",
-  z = "login",
-  q = e => {
-    var {
-      className: t
-    } = e, n = function(e, t) {
-      if (null == e) return {};
-      var n, r, i = function(e, t) {
-        if (null == e) return {};
-        var n, r, i = {},
-          s = Object.keys(e);
-        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-        return i
-      }(e, t);
-      if (Object.getOwnPropertySymbols) {
-        var s = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-      }
-      return i
-    }(e, ["className"]);
-    let i = n.look === h.zx.Looks.LINK;
-    return (0, r.jsx)(h.zx, W({
-      size: i ? h.zx.Sizes.MIN : h.zx.Sizes.LARGE,
-      fullWidth: !i,
-      className: a()(t, {
-        [G.button]: !i,
-        [G.linkButton]: i
-      })
-    }, n))
-  };
-async function Y(e) {
+let V = "Accept Invite Page",
+  W = "register",
+  H = "login";
+async function K(e) {
   let {
     invite: t
-  } = await f.ZP.resolveInvite(e, K);
+  } = await f.ZP.resolveInvite(e, V);
   null != t && (0, p.A)(t)
 }
-q.Looks = Chunk755721.zx.Looks, q.Colors = Chunk755721.zx.Colors, q.Sizes = Chunk755721.zx.Sizes;
-class J extends Chunk473749.PureComponent {
+class z extends Chunk473749.PureComponent {
   componentDidMount() {
     let {
       isUnderage: e,
@@ -135,9 +92,9 @@ class J extends Chunk473749.PureComponent {
       authenticated: r,
       transitionTo: i
     } = this.props, s = this.getInviteKey();
-    if (s !== this.getInviteKey(e)) Y(s);
+    if (s !== this.getInviteKey(e)) K(s);
     else if (t.state === k.r2o.APP_NOT_OPENED) this.handleContinue();
-    else if (this.getMode() === z && r !== e.authenticated && r) {
+    else if (this.getMode() === H && r !== e.authenticated && r) {
       let e = S.default.getFingerprint();
       if (null != e) {
         let t = (0, c.s)(e);
@@ -147,12 +104,12 @@ class J extends Chunk473749.PureComponent {
       }
       f.ZP.acceptInvite({
         inviteKey: s,
-        context: this.getAcceptInviteContext(K),
+        context: this.getAcceptInviteContext(V),
         skipOnboarding: true,
         callback: this.handleContinue
       })
     }
-    if (n !== e.nativeAppState && n === k.kEZ.OPEN && this.track(k.rMx.INVITE_APP_INVOKED, false), this.getMode() === H && r && !e.authenticated) {
+    if (n !== e.nativeAppState && n === k.kEZ.OPEN && this.track(k.rMx.INVITE_APP_INVOKED, false), this.getMode() === W && r && !e.authenticated) {
       let {
         channel: e
       } = t;
@@ -171,7 +128,7 @@ class J extends Chunk473749.PureComponent {
   }
   getMode() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.props;
-    return Chunk188785.a ? H : module.login ? z : H
+    return Chunk188785.a ? W : module.login ? H : W
   }
   track(e, t, n) {
     let {
@@ -184,7 +141,18 @@ class J extends Chunk473749.PureComponent {
     } : {
       invite_code: s
     };
-    T.default.track(e, W({}, a, n))
+    O.default.track(e, function(e) {
+      for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+          F(e, t, n[t])
+        })
+      }
+      return e
+    }({}, a, n))
   }
   renderSpinner(e) {
     return (0, r.jsxs)(x.ZP, {
@@ -204,12 +172,17 @@ class J extends Chunk473749.PureComponent {
         children: Chunk388032.intl.string(Chunk388032.t.kux01N)
       }), (0, Chunk54381.jsx)(Chunk388905.DK, {
         children: module ? Chunk388032.intl.string(Chunk388032.t["5AkWAd"]) : Chunk388032.intl.string(Chunk388032.t["+qUJAj"])
-      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B)), (0, Chunk54381.jsx)(q, {
-        onClick: () => window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.INVALID_INVITES), "_blank"),
-        look: q.Looks.LINK,
-        color: q.Colors.LINK,
+      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B)), (0, Chunk54381.jsx)("div", {
         className: Chunk478411.marginTop8,
-        children: Chunk388032.intl.string(Chunk388032.t.urIwn4)
+        style: {
+          textAlign: "left"
+        },
+        children: (0, Chunk54381.jsx)(Chunk481060.Avr, {
+          size: "sm",
+          textVariant: "text-sm/medium",
+          text: Chunk388032.intl.string(Chunk388032.t.urIwn4),
+          onClick: () => window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.INVALID_INVITES), "_blank")
+        })
       })]
     })
   }
@@ -232,7 +205,7 @@ class J extends Chunk473749.PureComponent {
     let t = null != e ? e : this.handleContinue;
     return (0, r.jsxs)(x.ZP, {
       children: [(0, r.jsx)(x.Dx, {
-        className: F.marginBottom8,
+        className: G.marginBottom8,
         children: U.intl.string(U.t.csrAMJ)
       }), (0, r.jsx)(x.DK, {
         children: U.intl.string(U.t["m1+IBn"])
@@ -298,7 +271,7 @@ class J extends Chunk473749.PureComponent {
         var a;
         if (require && (0, Chunk95015.yE)(null != (a = module.flags) ? a : 0, Chunk533800.$.IS_GUEST_INVITE)) return Chunk447543.ZP.openApp(module.code), Chunk298444.x.set(Chunk978684.J, module.code), this.renderAppOpened(() => Chunk473749(Chunk981631.Z5c.APP));
         if (require || !Chunk436620.KO) return this.renderAuthenticatedOrDownload();
-        if (this.getMode() === z) return (0, Chunk54381.jsx)(Chunk781428.Z, {
+        if (this.getMode() === H) return (0, Chunk54381.jsx)(Chunk781428.Z, {
           invite: module,
           transitionTo: Chunk473749,
           location: Chunk120356
@@ -324,9 +297,9 @@ class J extends Chunk473749.PureComponent {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, V(this, "state", {
+    super(...e), t = this, F(this, "state", {
       error: null
-    }), V(this, "getAcceptInviteContext", e => f.ZP.getInviteContext(e, this.props.invite)), V(this, "handleContinue", e => {
+    }), F(this, "getAcceptInviteContext", e => f.ZP.getInviteContext(e, this.props.invite)), F(this, "handleContinue", e => {
       let {
         invite: t,
         transitionTo: n
@@ -335,14 +308,14 @@ class J extends Chunk473749.PureComponent {
         var r;
         (null == (r = t.guild) ? true : r.id) != null ? n(k.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code)) : f.ZP.transitionToInvite(null != e ? e : t, n)
       }
-    }), V(this, "handleAccept", () => {
+    }), F(this, "handleAccept", () => {
       this.setState({
         error: null
       });
       let e = this.getInviteKey();
       f.ZP.acceptInvite({
         inviteKey: e,
-        context: this.getAcceptInviteContext(K),
+        context: this.getAcceptInviteContext(V),
         skipOnboarding: true,
         callback: t => {
           (0, p.A)(t), null != t.channel && f.ZP.openApp(e, t.channel.id)
@@ -363,39 +336,42 @@ class J extends Chunk473749.PureComponent {
           }
         })
       })
-    }), V(this, "handleDefaultTransition", () => {
+    }), F(this, "handleDefaultTransition", () => {
       let {
         defaultRoute: e,
         transitionTo: t
       } = this.props;
       t(e)
-    }), V(this, "renderButton", function(e) {
+    }), F(this, "renderButton", function(e) {
       let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : t.handleDefaultTransition,
         {
           invite: i
         } = t.props,
         s = null != i.guild_scheduled_event;
-      return B.KO ? (0, r.jsx)(q, {
-        className: s ? F.marginTop20 : F.marginTop40,
-        onClick: n,
-        color: s ? q.Colors.GREEN : q.Colors.BRAND,
-        children: e
+      return B.KO ? (0, r.jsx)("div", {
+        className: s ? G.marginTop20 : G.marginTop40,
+        children: (0, r.jsx)(h.Button, {
+          text: e,
+          onClick: n,
+          variant: s ? "active" : "primary",
+          fullWidth: true
+        })
       }) : (0, r.jsx)(x.v6, {
-        className: F.marginTop40
+        className: G.marginTop40
       })
     })
   }
 }
-let Q = Chunk442837.ZP.connectStores([Chunk701190.Z, Chunk896797.Z, Chunk314897.default, Chunk362762.Z, Chunk899370.Z], e => {
+let q = Chunk442837.ZP.connectStores([Chunk701190.Z, Chunk896797.Z, Chunk314897.default, Chunk362762.Z, Chunk899370.Z], e => {
   var t;
   let {
     inviteKey: n
   } = e;
   return {
-    invite: null != (t = O.Z.getInvite(n)) ? t : {},
+    invite: null != (t = T.Z.getInvite(n)) ? t : {},
     nativeAppState: v.Z.getState(n),
     authenticated: S.default.isAuthenticated(),
     defaultRoute: C.Z.defaultRoute,
     isUnderage: m.Z.isUnderageAnonymous()
   }
-})(J)
+})(z)

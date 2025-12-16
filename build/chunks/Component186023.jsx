@@ -26,12 +26,12 @@ let x = e => {
     onNavigate: v,
     emailToken: j,
     isAuthenticated: _ = true
-  } = e, y = (0, d.Dt)(), {
+  } = e, y = (0, c.Dt)(), {
     nodes: O,
     root_node_id: Z,
-    success_node_id: I,
-    fail_node_id: C
-  } = n, [S, N] = l.useState(Z), [T, P] = l.useState(true), [k, E] = l.useState(true), [w, M] = l.useState([]), [D, R] = l.useState(true), [A, B] = l.useState(true);
+    success_node_id: C,
+    fail_node_id: I
+  } = n, [S, N] = l.useState(Z), [P, T] = l.useState(true), [k, E] = l.useState(true), [w, M] = l.useState([]), [D, R] = l.useState(true), [A, B] = l.useState(true);
   (0, s.ZP)(() => {
     (0, u.k0)()
   });
@@ -39,11 +39,11 @@ let x = e => {
       var n, r, l;
       let {
         destination: a
-      } = e, [, s] = a, d = O[s];
-      if (true === d) return void c.Z.increment({
+      } = e, [, s] = a, c = O[s];
+      if (true === c) return void d.Z.increment({
         name: i.V.IN_APP_REPORT_NAVIGATE_TO_NONEXISTENT_NODE
       });
-      if (d.elements.some(e => "skip" === e.type) && (null == (n = d.button) ? true : n.type) === "next") return U((r = function(e) {
+      if (c.elements.some(e => "skip" === e.type) && (null == (n = c.button) ? true : n.type) === "next") return U((r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -61,7 +61,7 @@ let x = e => {
         }
         return e
       }({}, e), l = l = {
-        destination: ["", d.button.target]
+        destination: ["", c.button.target]
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -72,14 +72,14 @@ let x = e => {
       })(Object(l)).forEach(function(e) {
         Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
       }), r));
-      if (M([...w, e]), null != d.key && (null == v || v(d.key)), P(true), E(true), t.name === m.b.MESSAGE || t.name === m.b.FIRST_DM) {
+      if (M([...w, e]), null != c.key && (null == v || v(c.key)), T(true), E(true), t.name === m.b.MESSAGE || t.name === m.b.FIRST_DM) {
         let e = t.record.id;
         o.ZP.trackWithMetadata(g.rMx.IAR_NAVIGATE, {
           message_id: e,
           content_type: t.name,
-          report_sub_type: d.report_type,
+          report_sub_type: c.report_type,
           current_node: O[S].id,
-          next_node: d.id
+          next_node: c.id
         })
       }
       N(s)
@@ -105,14 +105,14 @@ let x = e => {
           next_node: O[i].id
         })
       }
-      P(null == l || null == (e = l.multiSelect) ? true : e.state), E(null == l ? true : l.textInput), N(i), M(r), null == v || v("..")
+      T(null == l || null == (e = l.multiSelect) ? true : e.state), E(null == l ? true : l.textInput), N(i), M(r), null == v || v("..")
     }, H = l.useMemo(() => {
       let e = [],
         t = [];
       for (let i in O) {
         var n, r, l;
         let a = O[i];
-        if (a.id !== I && a.id !== C && a.id !== Z) {
+        if (a.id !== C && a.id !== I && a.id !== Z) {
           if (a.key.endsWith("_SUBMIT") || (null == (n = a.button) ? true : n.type) === "submit") {
             t.push(a);
             continue
@@ -124,8 +124,8 @@ let x = e => {
           }
         }
       }
-      return [O[Z], ...e, ...t, O[I], O[C]]
-    }, [O, Z, C, I]);
+      return [O[Z], ...e, ...t, O[C], O[I]]
+    }, [O, Z, I, C]);
   return (0, r.jsx)(a.Y0X, {
     "data-migration-pending": true,
     transitionState: x.transitionState,
@@ -147,10 +147,10 @@ let x = e => {
             onModalClose: x.onClose,
             onSelectChild: U,
             onNavigateBack: G,
-            multiSelect: T,
+            multiSelect: P,
             textInput: k,
-            successNodeId: I,
-            failNodeId: C,
+            successNodeId: C,
+            failNodeId: I,
             onSubmit: L,
             reportId: D,
             nodeMap: O

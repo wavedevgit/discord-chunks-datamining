@@ -21,7 +21,7 @@ let f = e => {
     user: t,
     channelId: n,
     reportId: f
-  } = e, x = c.Z.getDMFromUserId(t.id), h = (0, i.e7)([c.Z], () => c.Z.getChannel(n), [n]), v = l.useMemo(() => m.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), j = (0, i.e7)([u.ZP], () => null == x ? null : u.ZP.isChannelMuted(null, x)), [_, y] = l.useState(null != j && j), O = l.useCallback(() => {
+  } = e, x = d.Z.getDMFromUserId(t.id), h = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), v = l.useMemo(() => m.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), j = (0, i.e7)([u.ZP], () => null == x ? null : u.ZP.isChannelMuted(null, x)), [_, y] = l.useState(null != j && j), O = l.useCallback(() => {
     null != x && (y(true), s.ZP.trackWithMetadata(p.rMx.IAR_MUTE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: f
@@ -29,7 +29,7 @@ let f = e => {
       muted: true
     }, b.ZB.Muted), o.Z.showMuteSuccessToast(t.id, n))
   }, [x, n, t, f]);
-  return (0, r.jsx)(d.JZ, {
+  return (0, r.jsx)(c.JZ, {
     title: g.intl.formatToPlainString(g.t.TRp5wR, {
       username: v
     }),

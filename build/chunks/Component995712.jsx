@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 995712, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => c
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -10,17 +10,17 @@ var Chunk481060 = require("./481060.js"),
   Chunk768581 = require("./768581.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk637462 = require("./637462.js");
-let d = e => {
+let c = e => {
   var t;
   let {
     entry: n
   } = e, {
-    id: d,
-    icon: c,
+    id: c,
+    icon: d,
     name: u
   } = n, m = null != (t = a.ZP.getGuildIconURL({
-    id: d,
-    icon: c,
+    id: c,
+    icon: d,
     size: 32
   })) ? t : true;
   return (0, r.jsxs)("div", {

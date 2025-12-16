@@ -464,10 +464,10 @@ function e_() {
       description: Chunk388032.intl.format(Chunk388032.t["2l9U2j"], {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.REDUCED_MOTION)
       }),
-      children: [(0, Chunk54381.jsx)(Chunk481060.Checkbox, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.rsf, {
+        label: Chunk388032.intl.string(Chunk388032.t["+Dx+HD"]),
         checked: Chunk419363,
-        onChange: Chunk627845,
-        label: Chunk388032.intl.string(Chunk388032.t["+Dx+HD"])
+        onChange: Chunk627845
       }), (0, Chunk54381.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCESSIBILITY_REDUCED_MOTION_ENABLE,
         children: (0, Chunk54381.jsx)(Chunk481060.rsf, {

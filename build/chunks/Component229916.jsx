@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 229916, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => d
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -11,20 +11,20 @@ var Chunk442837 = require("./442837.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk345166 = require("./345166.js");
-let c = e => {
+let d = e => {
   let {
     widget: t,
     userId: n
-  } = e, c = (0, l.e7)([s.default], () => s.default.getUser(n));
-  return null == c ? null : (0, r.jsxs)("div", {
-    className: d.container,
+  } = e, d = (0, l.e7)([s.default], () => s.default.getUser(n));
+  return null == d ? null : (0, r.jsxs)("div", {
+    className: c.container,
     children: [(0, r.jsx)(i.Heading, {
-      className: d.header,
+      className: c.header,
       variant: "heading-sm/semibold",
       children: o.intl.string(o.t.SpsnDY)
     }), (0, r.jsx)(a.Z, {
       widget: t,
-      user: c,
+      user: d,
       disableInteraction: true
     })]
   })

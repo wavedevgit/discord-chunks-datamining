@@ -1,7 +1,7 @@
 /** Chunk was on 54844 **/
 /** chunk id: 273389, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => c
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -9,11 +9,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk792389 = require("./792389.js");
-let d = e => {
+let c = e => {
   let t, {
       button: n,
-      submitting: d,
-      disableNext: c,
+      submitting: c,
+      disableNext: d,
       onClick: u,
       canNavigateBack: m,
       onBackClicked: b,
@@ -38,14 +38,14 @@ let d = e => {
       children: [x && (0, r.jsx)(i.Button, {
         onClick: b,
         variant: "secondary",
-        disabled: d,
+        disabled: c,
         text: s.intl.string(s.t["13/7kX"])
       }), f && (0, r.jsx)(i.Button, {
         onClick: () => {
           null != n && u(n)
         },
         variant: t,
-        disabled: d || c,
+        disabled: c || d,
         buttonRef: g,
         text: v
       })]

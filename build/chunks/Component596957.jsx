@@ -221,7 +221,9 @@ let k = function(e) {
               });
             default:
               if ((0, f.i)(u.Z.FRIENDS_LIST) && r)
-                if (0 === n) return x.intl.string(x.t.Thb5MO);
+                if (0 === n) return x.intl.formatToPlainString(x.t.rrZTqK, {
+                  count: t.toString()
+                });
                 else if (1 === n);
               else throw Error("Unexpected friends all section index: ".concat(n));
               return x.intl.formatToPlainString(x.t.rHRrhC, {

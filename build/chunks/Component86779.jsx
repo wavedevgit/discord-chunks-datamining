@@ -44,21 +44,21 @@ let b = "mweb_handoff_nonce",
         fingerprint: Chunk70956
       })
     }, [Chunk70956, module]);
-    let [O, T] = Chunk473749.useState(null), A = Chunk473749.useCallback(e => {
-      T(e), m.default.track(_.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
+    let [T, O] = Chunk473749.useState(null), A = Chunk473749.useCallback(e => {
+      O(e), m.default.track(_.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
         reason: e,
         fingerprint: (0, a.K)(C)
       }, {
         fingerprint: C
       })
-    }, [T, C]), Z = Chunk433517.K.get(b);
-    if ("null" === require && null === O && A("deep_link_failed"), null != require && "null" !== require && null == Z && null === O && A("nonce_missing"), Chunk473749.useEffect(() => {
+    }, [O, C]), Z = Chunk433517.K.get(b);
+    if ("null" === require && null === T && A("deep_link_failed"), null != require && "null" !== require && null == Z && null === T && A("nonce_missing"), Chunk473749.useEffect(() => {
         if (null != Z) {
           let e = Chunk433517.K.get(j);
           (null == module || Date.now() >= module) && (A("nonce_expired"), S())
         }
       }, [Z, A]), Chunk473749.useEffect(() => {
-        null != require && "null" !== require && null != Z && null == O && Chunk544891.tn.post({
+        null != require && "null" !== require && null != Z && null == T && Chunk544891.tn.post({
           url: Chunk981631.ANM.HANDOFF_EXCHANGE,
           body: {
             key: Z,
@@ -79,11 +79,11 @@ let b = "mweb_handoff_nonce",
         }).finally(() => {
           S()
         })
-      }, [require, Z, O, C, A]), null == C) return null;
-    let P = null == O ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      }, [require, Z, T, C, A]), null == C) return null;
+    let P = null == T ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [Chunk388032.intl.string(Chunk388032.t.uJ1JsY), (0, Chunk54381.jsx)("br", {}), Chunk388032.intl.string(Chunk388032.t.GHVWAs)]
-    }) : y.has(O) ? Chunk388032.intl.string(Chunk388032.t.EPt55r) : N.has(O) ? Chunk388032.intl.string(Chunk388032.t.g87kTp) : true;
-    return null != O && y.has(O) ? (0, Chunk54381.jsx)("div", {
+    }) : y.has(T) ? Chunk388032.intl.string(Chunk388032.t.EPt55r) : N.has(T) ? Chunk388032.intl.string(Chunk388032.t.g87kTp) : true;
+    return null != T && y.has(T) ? (0, Chunk54381.jsx)("div", {
       className: Chunk646030.errorContainer,
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         color: "interactive-text-default",

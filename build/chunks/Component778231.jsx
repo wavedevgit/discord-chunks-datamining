@@ -23,7 +23,7 @@ let x = e => {
     entry: x
   } = e, {
     name: h
-  } = x, v = (0, i.e7)([m.default], () => m.default.getNewestTokenForApplication(x.id)), j = null != (n = x.getIconURL(40)) ? n : f, _ = (0, c.Z)({
+  } = x, v = (0, i.e7)([m.default], () => m.default.getNewestTokenForApplication(x.id)), j = null != (n = x.getIconURL(40)) ? n : f, _ = (0, d.Z)({
     application: x
   }), y = l.useRef(false);
   l.useEffect(() => {
@@ -40,8 +40,8 @@ let x = e => {
       className: g.appContainer,
       children: (0, r.jsxs)("div", {
         className: g.appInfo,
-        children: [(0, r.jsx)(d.ZP, {
-          mask: d.ZP.Masks.AVATAR_DEFAULT,
+        children: [(0, r.jsx)(c.ZP, {
+          mask: c.ZP.Masks.AVATAR_DEFAULT,
           width: 40,
           height: 40,
           className: g.appIconMask,

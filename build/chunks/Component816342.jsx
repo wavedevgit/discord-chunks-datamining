@@ -21,7 +21,7 @@ let g = e => {
     channelId: n,
     reportId: g,
     reportType: f
-  } = e, x = (0, i.e7)([u.Z], () => u.Z.isBlocked(t.id), [t.id]), h = (0, i.e7)([c.Z], () => c.Z.getChannel(n), [n]), v = l.useMemo(() => m.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), j = l.useCallback(() => {
+  } = e, x = (0, i.e7)([u.Z], () => u.Z.isBlocked(t.id), [t.id]), h = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), v = l.useMemo(() => m.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), j = l.useCallback(() => {
     s.ZP.trackWithMetadata(b.rMx.IAR_BLOCK_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
       report_id: g
@@ -31,7 +31,7 @@ let g = e => {
       o.Z.showBlockSuccessToast(t.id, n)
     })
   }, [t, g, n]);
-  return (0, r.jsx)(d.JZ, {
+  return (0, r.jsx)(c.JZ, {
     title: p.intl.formatToPlainString(p.t["Q1o/f3"], {
       username: v
     }),

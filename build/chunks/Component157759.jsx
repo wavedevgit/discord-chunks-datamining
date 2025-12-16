@@ -33,7 +33,7 @@ let x = e => {
     return (async () => {
       let n = null;
       try {
-        n = await (0, d.i)(_)
+        n = await (0, c.i)(_)
       } catch (e) {}
       if (e || null == n) return;
       let r = n.find(e => {
@@ -57,14 +57,14 @@ let x = e => {
         })
       })
     }, [t.id, _, y, n]),
-    I = (0, i.e7)([b.Z, m.Z], () => {
+    C = (0, i.e7)([b.Z, m.Z], () => {
       let e = m.Z.getGuild(_);
       if (null == e) returnfalse;
       let n = b.Z.can(g.Plq.MANAGE_GUILD, e),
         r = null == t.bot || b.Z.canManageUser(g.Plq.MANAGE_GUILD, t.bot.id, e);
       return n && r
     });
-  return null != t && null != _ && x && I ? (0, r.jsx)(c.JZ, {
+  return null != t && null != _ && x && C ? (0, r.jsx)(d.JZ, {
     title: f.intl.string(f.t["WV/CsH"]),
     description: f.intl.string(f.t["FlcC+3"]),
     buttonText: v ? f.intl.string(f.t.aCJlq4) : f.intl.string(f.t["6I1F3i"]),

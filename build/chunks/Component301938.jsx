@@ -26,11 +26,11 @@ function _(e) {
     setSlide: s,
     ready: _,
     token: E
-  } = e, [v, b] = i.useState(false), [j, I] = i.useState(null), [N, y] = i.useState(null), [S, C] = i.useState(""), O = i.useRef(null);
+  } = e, [v, b] = i.useState(false), [j, I] = i.useState(null), [N, y] = i.useState(null), [S, C] = i.useState(""), T = i.useRef(null);
   return i.useEffect(() => {
     if (_) {
       var e;
-      null == (e = O.current) || e.focus()
+      null == (e = T.current) || e.focus()
     }
   }, [_]), (0, r.jsxs)("div", {
     children: [(0, r.jsx)(u.Ee, {
@@ -48,7 +48,7 @@ function _(e) {
         name: "password",
         type: "password",
         label: m.intl.string(m.t["8dM4FO"]),
-        setRef: O,
+        setRef: T,
         className: x.marginBottom20,
         value: S,
         onChange: C,

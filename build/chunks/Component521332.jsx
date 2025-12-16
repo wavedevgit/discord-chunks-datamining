@@ -25,16 +25,16 @@ function h(e) {
     description: n,
     onButtonClick: i,
     trackSettingsUpsellsAction: a
-  } = e, [o, c] = l.useState(false);
+  } = e, [o, d] = l.useState(false);
   return (0, s.ZP)(() => {
     a(p.M4.SETTINGS_UPSELLS_VIEWED)
-  }), (0, r.jsx)(d.JZ, {
+  }), (0, r.jsx)(c.JZ, {
     title: t,
     description: n,
     buttonText: o ? f.intl.string(f.t["h+WsPb"]) : f.intl.string(f.t.A8t4Nf),
     buttonDisabled: o,
     onButtonPress: () => {
-      i(), c(true), a(p.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
+      i(), d(true), a(p.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
     }
   })
 }
@@ -45,9 +45,9 @@ function v(e) {
     channelId: n,
     onModalClose: l,
     reportId: s,
-    reportType: d,
+    reportType: c,
     reportSubType: v
-  } = e, j = (0, i.e7)([m.Z], () => m.Z.getChannel(n)), _ = (0, b.jc)(t, null == j ? true : j.type), y = (0, p.i_)(d, v, s);
+  } = e, j = (0, i.e7)([m.Z], () => m.Z.getChannel(n)), _ = (0, b.jc)(t, null == j ? true : j.type), y = (0, p.i_)(c, v, s);
   return 0 === _.length ? null : (0, r.jsxs)("div", {
     className: x.container,
     children: [(0, r.jsx)(a.Heading, {
@@ -72,11 +72,11 @@ function v(e) {
     }), (0, r.jsx)(a.Avr, {
       text: f.intl.string(f.t.olebGx),
       onClick: () => {
-        (0, u.openUserSettings)(c.n.CONTENT_AND_SOCIAL_PANEL, {
+        (0, u.openUserSettings)(d.n.CONTENT_AND_SOCIAL_PANEL, {
           section: g.oAB.CONTENT_AND_SOCIAL
         }), l(), o.ZP.trackWithMetadata(g.rMx.IAR_SETTINGS_UPSELLS_ACTION, {
           report_id: s,
-          report_type: d.name,
+          report_type: c.name,
           report_subtype: v,
           action: p.M4.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED
         })

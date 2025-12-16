@@ -72,17 +72,17 @@ let u = e => {
       }))
     }, [f, g]);
     return (0, r.jsxs)("div", {
-      className: c.marginBottom8,
+      className: d.marginBottom8,
       children: [(0, r.jsxs)("div", {
-        className: c.marginBottom8,
+        className: d.marginBottom8,
         children: [null != t && (0, r.jsxs)(i.Text, {
           variant: "text-sm/bold",
           children: [t, h && (0, r.jsx)("span", {
-            className: d.required,
+            className: c.required,
             children: "*"
           })]
         }), null != u && (0, r.jsx)("div", {
-          className: c.marginTop4,
+          className: d.marginTop4,
           children: (0, r.jsx)(i.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
@@ -105,7 +105,7 @@ let u = e => {
         placeholder: m,
         autoFocus: true
       }), null != n && (0, r.jsx)("div", {
-        className: c.marginTop4,
+        className: d.marginTop4,
         children: (0, r.jsx)(i.Text, {
           variant: "text-xs/normal",
           color: "text-muted",

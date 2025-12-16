@@ -28,7 +28,7 @@ let p = e => {
   }, []);
   let h = (0, i.e7)([s.ZP], () => s.ZP.getSelfEmbeddedActivities()),
     v = l.useCallback(() => {
-      if (g(false), d.ZP.trackWithMetadata(m.rMx.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
+      if (g(false), c.ZP.trackWithMetadata(m.rMx.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
           application_id: t.id,
           report_id: n
         }), null == f) return;
@@ -40,7 +40,7 @@ let p = e => {
         showFeedback: false
       })
     }, [t.id, f, h, n]);
-  return null == t ? null : (0, r.jsx)(c.JZ, {
+  return null == t ? null : (0, r.jsx)(d.JZ, {
     title: b.intl.string(b.t.ygG62M),
     description: b.intl.string(b.t.S51EKg),
     buttonText: p ? b.intl.string(b.t.xXpoGV) : b.intl.string(b.t.JsiUnL),

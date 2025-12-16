@@ -442,8 +442,8 @@ class eu extends(r = Chunk473749.PureComponent) {
       } = {}
     } = this.state, {
       consentRequired: S,
-      authBoxClassName: O,
-      hasLoggedInAccounts: T
+      authBoxClassName: T,
+      hasLoggedInAccounts: O
     } = this.props, A = this.renderErrorMessage(), Z = (0, i.jsx)(f.u, {
       text: !c && S ? er.intl.string(er.t.AY4IVA) : null,
       children: (0, i.jsx)("div", {
@@ -585,7 +585,7 @@ class eu extends(r = Chunk473749.PureComponent) {
     return t ? (0, i.jsx)(Q.Z, {
       onSubmit: this.handleSubmit,
       tag: "form",
-      className: l()(O, ei.horizontalAuthBox),
+      className: l()(T, ei.horizontalAuthBox),
       children: () => [L, (0, i.jsxs)("div", {
         className: ei.flex,
         children: [(0, i.jsx)(N.Dx, {
@@ -596,8 +596,8 @@ class eu extends(r = Chunk473749.PureComponent) {
     }) : (0, i.jsxs)(N.ZP, {
       onSubmit: this.handleSubmit,
       tag: "form",
-      className: O,
-      children: [T ? (0, i.jsx)("div", {
+      className: T,
+      children: [O ? (0, i.jsx)("div", {
         className: ei.goBackButton,
         children: (0, i.jsx)(g.Button, {
           onClick: this.handleGotoLogin,
@@ -649,7 +649,7 @@ class eu extends(r = Chunk473749.PureComponent) {
       })), m.Z.loginReset(), u(t, {
         search: (0, o.stringify)(d),
         source: "register"
-      }), null == l || l(e), H.S.dispatch(X.CkL.WAVE_EMPHASIZE)
+      }), null == l || l(e), K.S.dispatch(X.CkL.WAVE_EMPHASIZE)
     }), ea(this, "handleSubmit", e => {
       null == e || e.preventDefault();
       let {
@@ -678,11 +678,11 @@ class eu extends(r = Chunk473749.PureComponent) {
         dateOfBirthClientError: er.intl.string(er.t.EkokLy)
       }), o = true)), o || this.handleRegister()
     }), ea(this, "trackInputFocus", e => {
-      K.default.track(X.rMx.REGISTER_INPUT_FOCUS, {
+      H.default.track(X.rMx.REGISTER_INPUT_FOCUS, {
         field: e
       })
     }), ea(this, "trackInputBlur", e => {
-      K.default.track(X.rMx.REGISTER_INPUT_BLUR, {
+      H.default.track(X.rMx.REGISTER_INPUT_BLUR, {
         field: e
       })
     }), ea(this, "handleBirthdayChange", e => {

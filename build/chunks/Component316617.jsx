@@ -37,7 +37,7 @@ let v = e => {
     });
     return (0, r.jsxs)("div", {
       className: h.contentContainer,
-      children: [e, (0, r.jsx)(c.ZP, {
+      children: [e, (0, r.jsx)(d.ZP, {
         message: t,
         content: _,
         compact: y
@@ -52,7 +52,7 @@ let v = e => {
       children: x.intl.string(x.t.iouM3a)
     }), (0, r.jsx)(a.Ttm, {
       className: h.messagePreviewContainer,
-      children: (0, r.jsx)(d.Z, {
+      children: (0, r.jsx)(c.Z, {
         childrenMessageContent: O(),
         childrenHeader: (0, r.jsx)(u.ZP, {
           message: t,
