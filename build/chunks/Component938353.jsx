@@ -732,31 +732,31 @@ class tn extends(r = Chunk473749.Component) {
         location_message_id: n.id
       }
     }), e0(this, "renderEmbed", (e, t, n, r) => {
-      var a, o, s;
+      var a, o, s, l;
       let {
-        gifAutoPlay: l,
-        inlineEmbedMedia: c,
-        canSuppressEmbeds: u,
-        hasSpoilerEmbeds: d,
-        enabledContentHarmTypeFlags: f,
-        shouldAgeVerify: p
-      } = this.props, _ = (0, eT.BP)(e, r, d, f);
+        gifAutoPlay: c,
+        inlineEmbedMedia: u,
+        canSuppressEmbeds: d,
+        hasSpoilerEmbeds: f,
+        enabledContentHarmTypeFlags: p,
+        shouldAgeVerify: _
+      } = this.props, m = (0, eT.BP)(e, r, f, p);
       if (e.type === eq.hBH.GIFT) return null;
-      let m = e6.includes(e.type) ? e.url : null != (s = null == (a = e.image) ? true : a.url) ? s : null == (o = e.video) ? true : o.url;
+      let h = e6.includes(e.type) ? e.url : null != (l = null == (a = e.image) ? true : a.url) ? l : null == (o = e.video) ? true : o.url;
       return (0, i.jsx)(L.h.Provider, {
-        value: (0, eK.P)(m, e.image, e.video),
+        value: (0, eK.P)(h, e.image, e.video, e.thumbnail, null == (s = e.provider) ? true : s.name),
         children: (0, i.jsx)(I.ZP, e1({
           embed: e,
-          obscureReason: null != _ ? _ : true,
-          autoPlayGif: l,
-          hideMedia: !c,
+          obscureReason: null != m ? m : true,
+          autoPlayGif: c,
+          hideMedia: !u,
           allowFullScreen: !this.props.disableComponentInteractivity,
-          onSuppressEmbed: u ? this.handleEmbedSuppressed : true,
+          onSuppressEmbed: d ? this.handleEmbedSuppressed : true,
           renderTitle: this.renderEmbedTitle,
           renderDescription: this.renderEmbedDescription,
           message: r,
           embedIndex: t,
-          shouldAgeVerify: null != p && p
+          shouldAgeVerify: null != _ && _
         }, n))
       }, e.id)
     }), e0(this, "renderEmbedTitle", (e, t) => e.type !== eq.hBH.RICH ? t : (null != e.url && "" !== e.url ? W.Z.parseEmbedTitleWithoutLinks : W.Z.parseEmbedTitle)(t, true, {

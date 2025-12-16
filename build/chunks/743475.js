@@ -34,10 +34,9 @@ function p(e) {
 async function h(e) {
   let t = Array.from(d.Z.editedDefaultChannelIds).filter(e => null != o.Z.getChannel(e)),
     n = g.Z.advancedMode,
-    [b, p] = (0, s.d9)(e.id, [...t]),
-    h = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts),
-    x = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts, s.V7);
-  if (a.Z.getEnabled(e.id) && (!n && (p.length < f.md || b.length < f.X) || n && (h.length < f.md || x.length < f.X))) return void i.Z.show({
+    [b] = (0, s.d9)(e.id, [...t]),
+    p = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts, s.V7);
+  if (a.Z.getEnabled(e.id) && (!n && b.length < f.X || n && p.length < f.X)) return void i.Z.show({
     title: m.intl.string(m.t.iLdiqY),
     body: m.intl.string(m.t.JOT74c)
   });
@@ -54,11 +53,11 @@ async function h(e) {
         channelIds: t
       })
     } catch (n) {
-      var j;
+      var h;
       let {
         fieldName: e,
         error: t
-      } = null != (j = new l.Hx(n).getAnyErrorMessageAndField()) ? j : {};
+      } = null != (h = new l.Hx(n).getAnyErrorMessageAndField()) ? h : {};
       i.Z.show({
         title: m.intl.string(m.t.iLdiqY),
         body: [e, t].filter(c.lm).join(": ")

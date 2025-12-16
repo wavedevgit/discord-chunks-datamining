@@ -1,1 +1,0 @@
-{"id":"111131","type":"experiment","data":{"id":"2025-04_quest_block_on_enrollment","kind":"user","label":"Video Quest Block On Enrollment","defaultConfig":{"enabled":false},"treatments":[{"id":0,"label":"Control","config":{"enabled":false}},{"id":1,"label":"Enabled","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

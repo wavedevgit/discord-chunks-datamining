@@ -118,7 +118,7 @@ function ec(e) {
     eT = (0, b.p)(),
     eO = F.Sb.useSetting(),
     eN = (0, ee.I)(eC),
-    eP = (0, Q.g)(n),
+    eP = (0, Y.g)(n),
     ew = (0, v.Z)({
       analyticsLocations: ex
     }),
@@ -158,8 +158,8 @@ function ec(e) {
     eq = r.useCallback(() => {
       ep && null != em || (ew(), eK())
     }, [ew, eK, ep, em]),
-    eQ = ep && null != em,
-    eY = (0, q.K)(em, ex, ez, n, eK),
+    eY = ep && null != em,
+    eQ = (0, q.K)(em, ex, ez, n, eK),
     eX = (0, _.k)({
       location: "UserProfileAccountPopout"
     }),
@@ -261,7 +261,7 @@ function ec(e) {
                     label: ep ? ei.intl.string(ei.t.Ip9nBS) : ei.intl.string(ei.t.s5vZlQ),
                     icon: c.vdY,
                     onClick: eq,
-                    renderSubmenu: eQ ? e => {
+                    renderSubmenu: eY ? e => {
                       let {
                         closePopout: t
                       } = e;
@@ -269,7 +269,7 @@ function ec(e) {
                         navId: "edit-profile-submenu",
                         "aria-label": ei.intl.string(ei.t.szTA8E),
                         onClose: t,
-                        children: eY
+                        children: eQ
                       })
                     } : true,
                     trailing: ez ? (0, a.jsx)(c.IGR, {
@@ -384,7 +384,7 @@ function ec(e) {
             skuId: ef.profileEffect.skuId,
             isHovering: ey
           })]
-        }), !eQ && eX && eJ ? (0, a.jsx)(Y.Z, {
+        }), !eY && eX && eJ ? (0, a.jsx)(Q.Z, {
           targetElementRef: eD,
           onClose: n
         }) : null, (0, a.jsx)(g.Z, {})]

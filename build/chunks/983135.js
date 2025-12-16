@@ -45,8 +45,8 @@ function _(e) {
 async function j(e, t) {
   let n = a.Z.getEnabled(e),
     s = Array.from(I.Z.editedDefaultChannelIds).filter(e => null != g.Z.getChannel(e)),
-    [o, d] = (0, c.d9)(e, [...s]);
-  if (n && t === S.Un.ONBOARDING_DEFAULT && (d.length < S.md || o.length < S.X)) return void i.Z.show({
+    [o] = (0, c.d9)(e, [...s]);
+  if (n && t === S.Un.ONBOARDING_DEFAULT && o.length < S.X) return void i.Z.show({
     title: x.intl.string(x.t.iLdiqY),
     body: x.intl.string(x.t.JOT74c)
   });
@@ -55,11 +55,11 @@ async function j(e, t) {
       mode: t
     })
   } catch (n) {
-    var u;
+    var d;
     let {
       fieldName: e,
       error: t
-    } = null != (u = new r.Z(n).getAnyErrorMessageAndField()) ? u : {};
+    } = null != (d = new r.Z(n).getAnyErrorMessageAndField()) ? d : {};
     i.Z.show({
       title: x.intl.string(x.t.iLdiqY),
       body: [e, t].filter(h.lm).join(": ")

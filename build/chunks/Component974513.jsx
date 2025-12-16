@@ -25,11 +25,8 @@ function m(e, t) {
 
 function b(e) {
   let t = (0, l.e7)([o.Z], () => o.Z.isAdvancedMode(e)),
-    [n, r] = function(e) {
-      let t = (0, l.Wu)([o.Z], () => (0, c.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e)));
-      return [(0, l.Wu)([o.Z], () => (0, c.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e), c.V7)), t]
-    }(e);
-  return !!t && r.length >= g.md && n.length >= g.X
+    [n] = [(0, l.Wu)([o.Z], () => (0, c.kl)(e, o.Z.getDefaultChannelIds(e), o.Z.getOnboardingPrompts(e), c.V7))];
+  return !!t && n.length >= g.X
 }
 
 function p(e) {

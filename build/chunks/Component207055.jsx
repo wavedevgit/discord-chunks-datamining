@@ -146,7 +146,9 @@ let V = [],
     } = e, [S, P] = r.useState(null), [I, N] = r.useState(false), A = r.useRef(null), w = (0, E.Es)(l.id, null != c ? c : V), {
       shouldShow: M,
       dismiss: D
-    } = (0, y.UM)(l), F = r.useRef(new s.sW(50, () => {
+    } = (0, y.UM)(l, {
+      collapsed: u
+    }), F = r.useRef(new s.sW(50, () => {
       P(A.current), A.current = null
     })), B = r.useRef(new s.sW(175, () => {
       P(null)

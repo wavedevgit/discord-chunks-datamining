@@ -99,13 +99,13 @@ function N(e) {
     isClaiming: p.Z.isClaimingReward(w.id) || p.Z.isFetchingRewardCode(w.id),
     isEnrolling: p.Z.isEnrolling(w.id),
     isQuestEnrollmentBlocked: null != p.Z.questEnrollmentBlockedUntil
-  })), W = (null == (t = w.userStatus) ? true : t.enrolledAt) != null, z = (null == (n = w.userStatus) ? true : n.completedAt) != null, K = z && (null == (N = w.userStatus) ? true : N.claimedAt) == null, q = (0, b.iQ)(w), Q = !(0, b.zi)(w), Y = (0, x._Q)(w), X = (0, g.PB)(w), J = (0, g.HJ)(w), $ = (0, g.Vl)(w), ee = (0, x.Rf)(w), [et, en, ea] = (0, x.me)(w, ee), er = Q && Y === x.OH.ACCEPTED, ei = er && et === h.LI.SELECT, el = er && !ei && en.length > 1, es = r.useCallback(e => {
+  })), W = (null == (t = w.userStatus) ? true : t.enrolledAt) != null, z = (null == (n = w.userStatus) ? true : n.completedAt) != null, K = z && (null == (N = w.userStatus) ? true : N.claimedAt) == null, q = (0, b.iQ)(w), Y = !(0, b.zi)(w), Q = (0, x._Q)(w), X = (0, g.PB)(w), J = (0, g.HJ)(w), $ = (0, g.Vl)(w), ee = (0, x.Rf)(w), [et, en, ea] = (0, x.me)(w, ee), er = Y && Q === x.OH.ACCEPTED, ei = er && et === h.LI.SELECT, el = er && !ei && en.length > 1, es = r.useCallback(e => {
     ea(e), e === C.cd.DESKTOP && k([])
   }, [ea, k]), {
     text: eo,
     onClick: ec
   } = (0, j.Ks)({
-    progressState: Y,
+    progressState: Q,
     quest: w,
     questContent: I,
     questContentPosition: R,
@@ -191,7 +191,7 @@ function N(e) {
       text: eo,
       fullWidth: true
     })
-  }) : Q ? Q && K ? ef = (0, a.jsx)("div", {
+  }) : Y ? Y && K ? ef = (0, a.jsx)("div", {
     className: S.button,
     children: (0, a.jsx)(s.zxk, {
       variant: "primary",
@@ -209,7 +209,7 @@ function N(e) {
       text: eo,
       fullWidth: true
     })
-  }) : Q && W && !em ? ef = ei ? (0, a.jsx)(l.B6, {
+  }) : Y && W && !em ? ef = ei ? (0, a.jsx)(l.B6, {
     className: S.platformSelectorPrimary,
     isSelected: () => false,
     options: E,
@@ -271,7 +271,7 @@ function N(e) {
       text: _.intl.string(_.t["9KoPyB"]),
       fullWidth: true
     })
-  }) : Q && !W && (ef = H ? (0, a.jsxs)(s.hE2, {
+  }) : Y && !W && (ef = H ? (0, a.jsxs)(s.hE2, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, a.jsx)(s.zxk, {

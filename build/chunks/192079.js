@@ -4,7 +4,8 @@
 require.d(exports, {
   ER: () => d,
   kk: () => f,
-  s$: () => p
+  s$: () => p,
+  wQ: () => _
 }), require("./388685.js"), require("./392711.js");
 var Chunk19780 = require("./19780.js"),
   Chunk5192 = require("./5192.js"),
@@ -51,4 +52,23 @@ function p(e) {
     request_to_speak_state: a.Uu(l.Plq.REQUEST_TO_SPEAK, e) ? s.BM.EVERYONE : s.BM.NO_ONE,
     stage_instance_id: null == t ? true : t.id
   }
+}
+
+function _(e, t) {
+  let n = t => i.ZP.getName(e.getGuildId(), e.id, t.user),
+    r = new Set,
+    a = t.filter(e => {
+      let t = e.user.id;
+      return !r.has(t) && (r.add(t), true)
+    });
+  return 0 === a.length ? u.intl.string(u.t.FUVhyC) : 1 === a.length ? u.intl.formatToPlainString(u.t.EQwZlN, {
+    a: n(a[0])
+  }) : 2 === a.length ? u.intl.formatToPlainString(u.t.zBcKoA, {
+    a: n(a[0]),
+    b: n(a[1])
+  }) : u.intl.formatToPlainString(u.t["3AqFaG"], {
+    a: n(a[0]),
+    b: n(a[1]),
+    n: a.length - 2
+  })
 }

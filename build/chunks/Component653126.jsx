@@ -55,12 +55,12 @@ let O = Chunk473749.memo(function(e) {
     } = e, {
       previewingVariantIndex: K,
       handleEntering: q,
-      handleLeaving: Q
-    } = (0, _.f)(t), Y = (0, j.jB)(), X = (0, m.Nd)(), J = null == X ? true : X.tab, $ = (0, S.zQ)(t), ee = r.useRef(null), {
+      handleLeaving: Y
+    } = (0, _.f)(t), Q = (0, j.jB)(), X = (0, m.Nd)(), J = null == X ? true : X.tab, $ = (0, S.zQ)(t), ee = r.useRef(null), {
       isHoveringOrFocusing: et
     } = (0, u.Z)(ee), {
       handleCardVisibilityChange: en
-    } = (0, p.E)(t.skuId, J === E.AW.CATALOG ? "full" : J), ea = (0, j.J7)(t, d.Z.COLLECTIBLES_SHOP_CARD, z, Y), er = t.type === s.Z.VARIANTS_GROUP && !O, ei = !P || !w, el = !(N && i) || er, es = el || ei, eo = ei || er;
+    } = (0, p.E)(t.skuId, J === E.AW.CATALOG ? "full" : J), ea = (0, j.J7)(t, d.Z.COLLECTIBLES_SHOP_CARD, z, Q), er = t.type === s.Z.VARIANTS_GROUP && !O, ei = !P || !w, el = !(N && i) || er, es = el || ei, eo = ei || er;
     return (0, a.jsx)(o.$, {
       innerRef: ee,
       onChange: en,
@@ -123,7 +123,7 @@ let O = Chunk473749.memo(function(e) {
                   skuId: t.skuId,
                   isCollapsed: !et,
                   onVariantEnter: q,
-                  onVariantExit: Q
+                  onVariantExit: Y
                 })]
               }), ei && (0, a.jsx)("div", {
                 className: T.footerButtonContainer,

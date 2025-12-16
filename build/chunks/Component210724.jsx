@@ -76,7 +76,7 @@ function G(e) {
   } = (0, O.qN)({
     quest: i,
     location: L.dr.QUESTS_BAR
-  }), W = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), z = (0, c.e7)([f.Z], () => f.Z.hasLayers()), K = r.useRef(null), q = r.useMemo(() => (0, S.q8)(i), [i]), Q = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, Y = (0, u.Z)(Q), X = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
+  }), W = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), z = (0, c.e7)([f.Z], () => f.Z.hasLayers()), K = r.useRef(null), q = r.useMemo(() => (0, S.q8)(i), [i]), Y = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, Q = (0, u.Z)(Y), X = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
     hasError: J,
     isLoading: $
   } = (0, E.kC)(), ee = r.useContext(D.T) || j && V && !$ && !G, et = r.useRef(ee), en = r.useRef(false), ea = r.useRef(false), [er, ei] = r.useState(false), [el, es] = r.useState(false), [eo, ec] = r.useState(false), [ed, eu] = r.useState(true), [em, ep] = r.useState(true), eh = r.useRef(null), ef = r.useRef(null), ex = r.useRef(null), eb = (0, _.Rf)(i), eg = r.useCallback(e => {
@@ -135,13 +135,13 @@ function G(e) {
   r.useEffect(() => {
     el && eP()
   }, [el, eP]), r.useLayoutEffect(() => {
-    Q && !Y && ea.current && ev()
-  }, [ev, Q, Y]), r.useLayoutEffect(() => {
-    X || !Q || Y || ea.current || eg(false)
-  }, [Q, X, Y, eg]), r.useLayoutEffect(() => {
+    Y && !Q && ea.current && ev()
+  }, [ev, Y, Q]), r.useLayoutEffect(() => {
+    X || !Y || Q || ea.current || eg(false)
+  }, [Y, X, Q, eg]), r.useLayoutEffect(() => {
     ee !== et.current && ep(false), et.current = ee
   }, [ee]);
-  let ew = Q ? L.XZ : L.R4,
+  let ew = Y ? L.XZ : L.R4,
     [{
       expansionSpring: eI
     }, ek] = (0, d.q_F)(() => ({
@@ -268,7 +268,7 @@ function G(e) {
         children: (0, a.jsx)(s.animated.div, {
           className: l()(U.contentWrapper, {
             [U.contentWrapperExpanded]: eo,
-            [U.contentWrapperAccepted]: Q
+            [U.contentWrapperAccepted]: Y
           }),
           children: (0, a.jsx)(R.t, {
             springConfig: ew,
@@ -297,7 +297,7 @@ function G(e) {
                   overlayRef: ex,
                   ref: eh,
                   children: (0, a.jsxs)(a.Fragment, {
-                    children: [(0, a.jsx)(Z.Z, {}), !Q && (0, a.jsx)(P.Z, {})]
+                    children: [(0, a.jsx)(Z.Z, {}), !Y && (0, a.jsx)(P.Z, {})]
                   })
                 }), (0, a.jsx)("div", {
                   ref: ex,

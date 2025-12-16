@@ -77,36 +77,36 @@ function O(e) {
     })(Object(P)).forEach(function(e) {
       Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(P, e))
     }), O)
-  }), K = (null == (n = w.userStatus) ? true : n.completedAt) != null, q = (null == (i = w.userStatus) ? true : i.claimedAt) != null, Q = (0, x.xN)(w.config), Y = (0, x.LM)(w.config), {
+  }), K = (null == (n = w.userStatus) ? true : n.completedAt) != null, q = (null == (i = w.userStatus) ? true : i.claimedAt) != null, Y = (0, x.xN)(w.config), Q = (0, x.LM)(w.config), {
     completedRatio: X,
     completedRatioDisplay: J
-  } = (0, h.I)(w), $ = (0, p.Bd)(w, L, M), ee = r.useMemo(() => q && Q ? S.intl.format(S.t["8Op4c4"], {
+  } = (0, h.I)(w), $ = (0, p.Bd)(w, L, M), ee = r.useMemo(() => q && Y ? S.intl.format(S.t["8Op4c4"], {
     balanceHook: () => (0, a.jsxs)(N, {
       questId: w.id,
       children: [(0, a.jsx)(m.Z, {
         shouldUseThemeColor: true,
         className: E.orbsBalanceIcon,
         customSize: 14
-      }), Y]
+      }), Q]
     }, w.id)
   }) : q ? (0, a.jsx)(N, {
     questId: w.id,
     children: U
-  }) : Q ? S.intl.format(S.t.ro1sze, {
+  }) : Y ? S.intl.format(S.t.ro1sze, {
     balanceHook: () => (0, a.jsxs)(N, {
       questId: w.id,
       children: [(0, a.jsx)(m.Z, {
         shouldUseThemeColor: true,
         className: E.orbsBalanceIcon,
         customSize: 14
-      }), Y]
+      }), Q]
     }, w.id)
   }) : S.intl.format(S.t["0IUT4Y"], {
     rewardWithArticleHook: () => (0, a.jsx)(N, {
       questId: w.id,
       children: B
     }, w.id)
-  }), [U, q, B, w.id, Y, Q]), et = r.useMemo(() => {
+  }), [U, q, B, w.id, Q, Y]), et = r.useMemo(() => {
     if (null != $) return (0, a.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",

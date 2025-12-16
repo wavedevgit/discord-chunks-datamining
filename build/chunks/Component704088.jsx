@@ -159,13 +159,13 @@ let _ = e => {
     Chunk473749.useEffect(() => {
       M(q)
     }, [q, M]);
-    let Q = Chunk473749.useCallback(async () => Chunk5900._n.INSTALLING, []);
+    let Y = Chunk473749.useCallback(async () => Chunk5900._n.INSTALLING, []);
     Chunk473749.useEffect(() => {
       K(k)
     }, [k, K]), Chunk473749.useEffect(() => {
-      W(Q)
-    }, [W, Q]);
-    let Y = Chunk473749.useCallback(async () => (clearTimeout(module), L(Chunk5900.Ij.DISCONNECTED), true), [module, L]),
+      W(Y)
+    }, [W, Y]);
+    let Q = Chunk473749.useCallback(async () => (clearTimeout(module), L(Chunk5900.Ij.DISCONNECTED), true), [module, L]),
       X = Chunk473749.useCallback(() => new Promise((e, t) => {
         D(p._n.INSTALLING), s(setTimeout(() => {
           if (S) return void t(Error("Installation failed"));
@@ -175,8 +175,8 @@ let _ = e => {
     Chunk473749.useEffect(() => {
       V && A !== Chunk5900._n.UNKNOWN && D(Chunk5900._n.UNKNOWN)
     }, [V, D, A]), Chunk473749.useEffect(() => {
-      U(Y)
-    }, [Y, U]), Chunk473749.useEffect(() => {
+      U(Q)
+    }, [Q, U]), Chunk473749.useEffect(() => {
       B(X)
     }, [X, B]), Chunk473749.useEffect(() => {
       A !== Chunk5900._n.INSTALLING && clearTimeout(require)

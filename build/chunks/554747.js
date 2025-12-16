@@ -1,14 +1,14 @@
 /** Chunk was on 79521 **/
 /** chunk id: 554747, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Vm: () => p,
+  Vm: () => C,
   ZP: () => m,
-  eF: () => S,
-  gM: () => h,
-  k5: () => C,
+  eF: () => v,
+  gM: () => p,
+  k5: () => h,
   qY: () => O,
   sz: () => I,
-  u1: () => v
+  u1: () => S
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -47,7 +47,7 @@ function O(e) {
   }, [e])
 }
 
-function h(e) {
+function p(e) {
   let t = (0, i.Wu)([s.ZP], () => s.ZP.getGuildScheduledEventsForGuild(e), [e]);
   return l.useMemo(() => {
     let e = new Map;
@@ -58,7 +58,7 @@ function h(e) {
   }, [t])
 }
 
-function p(e) {
+function C(e) {
   var t;
   let n = (0, i.Wu)([s.ZP, r.Z, a.Z], () => s.ZP.getGuildScheduledEventsByIndex(s.bN.GUILD_EVENT_UPCOMING(e)).filter(e => {
       if (e.entity_type === N.WX.NONE || e.status !== N.p1.SCHEDULED) returnfalse;
@@ -117,7 +117,7 @@ function p(e) {
     }
 }
 
-function C(e) {
+function h(e) {
   return (0, i.e7)([s.ZP, r.Z, a.Z], () => s.ZP.getGuildScheduledEventsByIndex(s.bN.GUILD_EVENT_ACTIVE(e)).find(e => {
     if (e.entity_type === N.WX.NONE || !(0, s.xt)(e)) returnfalse;
     if (null == e.channel_id) returntrue;
@@ -126,11 +126,11 @@ function C(e) {
   }), [e])
 }
 
-function v(e) {
+function S(e) {
   return (0, i.e7)([s.ZP], () => s.ZP.getGuildScheduledEventsByIndex(s.bN.CHANNEL_EVENT_UPCOMING(e)), [e])
 }
 
-function S(e) {
+function v(e) {
   return (0, i.e7)([r.Z, s.ZP], () => {
     let t = s.ZP.getGuildScheduledEventsByIndex(s.bN.GUILD_EVENT_ACTIVE(e)).find(e => null != r.Z.getChannel(e.channel_id));
     return r.Z.getChannel(null == t ? true : t.channel_id)

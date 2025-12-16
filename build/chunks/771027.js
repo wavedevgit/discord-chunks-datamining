@@ -33,15 +33,20 @@ function h(e) {
 }
 
 function m(e) {
-  let {
-    enabled: t
-  } = (0, a.o)({
-    autoTrackExposure: false,
-    guildId: e.guild_id,
-    location: "VoiceInviteSuggestionsUtils"
-  }), n = (0, r.e7)([f.Z], () => f.Z.getShouldShowPopover(e.id), [e.id]);
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
+    {
+      enabled: n
+    } = (0, a.o)({
+      autoTrackExposure: false,
+      guildId: e.guild_id,
+      location: "VoiceInviteSuggestionsUtils"
+    }),
+    {
+      collapsed: l = false
+    } = t,
+    o = (0, r.e7)([f.Z], () => f.Z.getShouldShowPopover(e.id), [e.id]);
   return {
-    shouldShow: t && n,
+    shouldShow: n && o && !l,
     dismiss: i.useCallback(() => {
       (0, p.o)(e.id)
     }, [e])

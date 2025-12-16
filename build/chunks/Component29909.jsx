@@ -21,38 +21,40 @@ let m = Chunk473749.memo(function(e) {
     width: t,
     height: n,
     src: a,
-    url: m,
-    format: h,
-    className: g
-  } = e, [E, b] = i.useState(false), y = (0, u.hb)((0, c.iy)(m)), O = y ? p.intl.string(p.t["5/NS74"]) : p.intl.string(p.t.nIH0v8), v = y ? l.r7p : l.vxU;
+    gifSrc: m,
+    url: h,
+    format: g,
+    className: E
+  } = e, [b, y] = i.useState(false), O = (0, u.hb)((0, c.iy)(h)), v = O ? p.intl.string(p.t["5/NS74"]) : p.intl.string(p.t.nIH0v8), S = O ? l.r7p : l.vxU;
   i.useEffect(() => {
-    if (!E) return;
+    if (!b) return;
     let e = setTimeout(() => {
-      b(false)
+      y(false)
     }, 500);
     return () => clearTimeout(e)
-  }, [E]);
-  let S = e => {
-    e.preventDefault(), e.stopPropagation(), b(true), y ? (0, c.PF)(m) : ((0, c.uL)({
-      url: m,
+  }, [b]);
+  let I = e => {
+    e.preventDefault(), e.stopPropagation(), y(true), O ? (0, c.PF)(h) : ((0, c.uL)({
+      url: h,
       src: a,
+      gifSrc: m,
       width: t,
       height: n,
-      format: h
+      format: g
     }), d.S.dispatch(f.CkL.FAVORITE_GIF))
   };
   return (0, r.jsx)(s.u, {
-    text: O,
+    text: v,
     children: (0, r.jsx)(l.kL8, {
-      "aria-label": O,
-      className: o()(g, _.gifFavoriteButton, {
-        [_.selected]: y,
-        [_.showPulse]: E
+      "aria-label": v,
+      className: o()(E, _.gifFavoriteButton, {
+        [_.selected]: O,
+        [_.showPulse]: b
       }),
       onMouseDown: e => e.preventDefault(),
-      onClick: S,
+      onClick: I,
       onDoubleClick: e => e.preventDefault(),
-      children: (0, r.jsx)(v, {
+      children: (0, r.jsx)(S, {
         color: "currentColor",
         className: _.icon,
         size: "custom",
