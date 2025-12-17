@@ -1,1 +1,1 @@
-{"id":"478738","type":"store","data":{"name":"GeoRestrictedGuildStore","functions":[{"name":"getGeoRestrictedGuilds","args":[]}],"events":["CONNECTION_OPEN","GUILD_DELETE","GUILD_GEO_RESTRICTED"]},"fromModule":{"id":"51235"}}
+{"id":"478738","type":"store","data":{"name":"GeoRestrictedGuildStore","functions":[{"name":"getGeoRestrictedGuilds","args":[]}],"events":["CONNECTION_OPEN","GUILD_DELETE","GUILD_GEO_RESTRICTED"]},"fromModule":{"id":"67000"}}

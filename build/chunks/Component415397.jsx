@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 415397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => _
+  B: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,6 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk990547 = require("./990547.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk447543 = require("./447543.js"),
   Chunk630810 = require("./630810.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -19,6 +20,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk518950 = require("./518950.js"),
   Chunk271383 = require("./271383.js"),
   Chunk430824 = require("./430824.js"),
+  Chunk341165 = require("./341165.js"),
+  Chunk496675 = require("./496675.js"),
   Chunk51144 = require("./51144.js"),
   Chunk771027 = require("./771027.js"),
   Chunk981631 = require("./981631.js"),
@@ -26,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk303092 = require("./303092.js"),
   Chunk770966 = require("./770966.js");
 
-function S(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -44,44 +47,44 @@ function S(e) {
   }
   return e
 }
+let Z = "VoiceInviteSuggestionsPopover";
 
-function _(e) {
+function T(e) {
   let {
     channel: t,
-    inviteKey: l,
-    onHoverOrFocus: o,
-    setPopoutRef: u,
-    closePopout: p
-  } = e, g = r.useRef(null), b = (0, v.Tu)(g), y = (0, v.j1)({
+    onHoverOrFocus: l,
+    setPopoutRef: o,
+    closePopout: u
+  } = e, p = r.useRef(null), f = (0, E.Tu)(p), b = (0, E.j1)({
     channel: t
   }), {
-    analyticsLocations: _
-  } = (0, h.ZP)(f.Z.VOICE_INVITE_SUGGESTIONS_POPOVER);
-  (0, m.Z)({
+    analyticsLocations: C
+  } = (0, m.ZP)(h.Z.VOICE_INVITE_SUGGESTIONS_POPOVER);
+  (0, g.Z)({
     name: c.ImpressionNames.VOICE_INVITE_SUGGESTIONS_POPOVER,
     type: c.ImpressionTypes.POPOUT,
     properties: {
       voice_channel_id: t.id,
       voice_guild_id: t.guild_id,
-      location_stack: _
+      location_stack: C
     }
   }), r.useEffect(() => {
-    null == u || u(g.current)
-  }, [u]), r.useEffect(() => {
-    null == o || o(b.isHoveringOrFocusing)
-  }, [o, b]);
-  let I = r.useCallback(() => {
-    let e = C.Z.getGuild(t.guild_id);
+    null == o || o(p.current)
+  }, [o]), r.useEffect(() => {
+    null == l || l(f.isHoveringOrFocusing)
+  }, [l, f]);
+  let v = r.useCallback(() => {
+    let e = y.Z.getGuild(t.guild_id);
     s()(null != e, "VoiceInviteSuggestionsPopover must be used in context of a guild"), (0, d.ZDy)(async () => {
       let {
         default: r
       } = await Promise.all([n.e("49049"), n.e("7654"), n.e("97016")]).then(n.bind(n, 560114));
       return n => {
         var l, a;
-        return (0, i.jsx)(r, (l = S({}, n), a = a = {
+        return (0, i.jsx)(r, (l = I({}, n), a = a = {
           guild: e,
           channel: t,
-          source: x.t4x.VOICE_INVITE_SUGGESTIONS
+          source: j.t4x.VOICE_INVITE_SUGGESTIONS
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -93,35 +96,34 @@ function _(e) {
           Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
         }), l))
       }
-    }), p()
-  }, [t, p]);
+    }), u()
+  }, [t, u]);
   return (0, i.jsx)("div", {
-    ref: g,
-    "aria-label": O.intl.string(O.t.o53CL2),
-    className: a()(j.popover, E.popover),
+    ref: p,
+    "aria-label": S.intl.string(S.t.o53CL2),
+    className: a()(P.popover, _.popover),
     children: (0, i.jsx)("div", {
-      className: E.inner,
+      className: _.inner,
       children: (0, i.jsxs)("ul", {
-        className: E.list,
-        children: [y.map(e => (0, i.jsx)(P, {
+        className: _.list,
+        children: [b.map(e => (0, i.jsx)(N, {
           channel: t,
-          user: e,
-          inviteKey: l
+          user: e
         }, e.id)), (0, i.jsxs)(d.P3F, {
           tag: "li",
-          onClick: I,
-          className: a()(E.row, E.clickable),
+          onClick: v,
+          className: a()(_.row, _.clickable),
           children: [(0, i.jsx)("div", {
-            className: E.leading,
+            className: _.leading,
             children: (0, i.jsx)(d.BFJ, {
               size: "xs",
-              className: E.icon
+              className: _.icon
             })
           }), (0, i.jsx)(d.Text, {
             variant: "text-md/medium",
-            className: E.name,
+            className: _.name,
             lineClamp: 1,
-            children: O.intl.string(O.t.NOP3Ry)
+            children: S.intl.string(S.t.NOP3Ry)
           })]
         })]
       })
@@ -129,76 +131,93 @@ function _(e) {
   })
 }
 
-function P(e) {
+function N(e) {
   let {
     channel: t,
-    user: n,
-    inviteKey: l
-  } = e, o = r.useRef(null), s = (0, u.e7)([b.ZP], () => b.ZP.getMember(t.guild_id, n.id), [t.guild_id, n.id]), {
-    isHoveringOrFocusing: c
-  } = (0, v.Tu)(o), [f, h] = r.useState(null), m = "success" === f || "sending" === f || null == l, C = r.useCallback(() => {
-    m || null != l && (h("sending"), p.Z.enqueue({
-      type: p.m.USER,
+    user: n
+  } = e, l = r.useRef(null), o = (0, u.e7)([C.ZP], () => C.ZP.getMember(t.guild_id, n.id), [t.guild_id, n.id]), {
+    isHoveringOrFocusing: s
+  } = (0, E.Tu)(l), [c, h] = r.useState(null), m = "success" === c || "sending" === c, g = r.useCallback(async () => {
+    if (m) return;
+    async function e() {
+      var e, n, i;
+      let r = null != (e = v.Z.getInvite(t.id, {})) ? e : null;
+      if (null == r) {
+        if (!x.Z.can(j.Plq.CREATE_INSTANT_INVITE, t)) return null;
+        try {
+          await p.ZP.createInvite(t.id, {}, Z)
+        } catch (e) {
+          return null
+        }
+        r = null != (n = v.Z.getInvite(t.id, {})) ? n : null
+      }
+      return null != (i = null == r ? true : r.code) ? i : null
+    }
+    h("sending");
+    let i = await e();
+    if (null == i) return void h(null);
+    f.Z.enqueue({
+      type: f.m.USER,
       user: n,
-      inviteKey: l,
-      location: "VoiceInviteSuggestionsPopover",
+      inviteKey: i,
+      location: Z,
       inviteAnalyticsMetadata: {
-        source: x.t4x.VOICE_INVITE_SUGGESTIONS
+        source: j.t4x.VOICE_INVITE_SUGGESTIONS
       }
     }, e => {
       h(e ? "success" : null)
-    }))
-  }, [m, l, n]), {
-    avatarDecorationSrc: j,
-    avatarSrc: _,
-    eventHandlers: P
-  } = (0, g.Z)({
+    })
+  }, [m, n, t]), {
+    avatarDecorationSrc: y,
+    avatarSrc: P,
+    eventHandlers: T
+  } = (0, b.Z)({
     userId: n.id,
     size: d.EFr.SIZE_24,
-    animateOnHover: !c,
+    animateOnHover: !s,
     guildId: t.guild_id
   });
-  if (null == s) return null;
-  let I = y.ZP.getName(n),
-    Z = O.intl.string(O.t.jYnGPG);
+  if (null == o) return null;
+  let N = O.ZP.getName(n),
+    A = S.intl.string(S.t.jYnGPG);
   return (0, i.jsxs)(d.P3F, {
-    innerRef: o,
+    innerRef: l,
     tag: "li",
-    className: a()(E.row, {
-      [E.clickable]: !m
+    className: a()(_.row, {
+      [_.clickable]: !m
     }),
     "aria-disabled": m,
-    onClick: C,
-    "aria-label": Z,
-    children: [(0, i.jsx)(d.qEK, S({
-      className: E.avatar,
-      "aria-label": I,
+    onClick: g,
+    "aria-label": A,
+    children: [(0, i.jsx)(d.qEK, I({
+      className: _.avatar,
+      "aria-label": N,
       size: d.EFr.SIZE_24,
-      src: _,
-      avatarDecoration: j
-    }, P)), (0, i.jsx)(d.Text, {
+      src: P,
+      avatarDecoration: y
+    }, T)), (0, i.jsx)(d.Text, {
       variant: "text-md/medium",
-      className: E.name,
+      className: _.name,
       lineClamp: 1,
-      children: I
-    }), "sending" === f && (0, i.jsx)("div", {
-      className: E.dots,
+      children: N
+    }), "sending" === c && (0, i.jsx)("div", {
+      className: _.dots,
       children: (0, i.jsx)(d.bbz, {
         dotRadius: 2,
         themed: true
       })
-    }), "success" === f && (0, i.jsx)(d.Text, {
+    }), "success" === c && (0, i.jsx)(d.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
-      className: E.status,
+      className: _.status,
       lineClamp: 1,
-      children: O.intl.string(O.t["8BEiNn"])
-    }), null == f && (0, i.jsx)("div", {
-      className: E.userIconContainer,
+      children: S.intl.string(S.t["8BEiNn"])
+    }), null == c && (0, i.jsx)("div", {
+      className: _.userIconContainer,
       children: (0, i.jsx)(d.oLu, {
         color: "currentColor",
         size: "xs",
-        className: E.icon
+        className: _.icon
       })
     })]
   })

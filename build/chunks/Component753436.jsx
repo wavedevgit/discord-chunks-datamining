@@ -1,4 +1,4 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 39442 **/
 /** chunk id: 753436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => O
@@ -69,8 +69,8 @@ function O(e) {
     onRemoveGame: x,
     coverRef: P
   } = e, {
-    coverImageUrl: I,
-    gameName: w,
+    coverImageUrl: w,
+    gameName: I,
     isLoading: S
   } = (0, p.Z)(t.applicationId), {
     registerDragHandleRef: E
@@ -80,12 +80,12 @@ function O(e) {
     isDragging: e.isDragging()
   })), N = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
-      imageSrc: I,
-      gameName: w,
+      imageSrc: w,
+      gameName: I,
       applicationId: t.applicationId,
       userId: n,
       disableInteraction: O,
-      className: a()(T ? y.socialProofBackdrop : true, null == I || O ? true : h.hoverActiveEffect),
+      className: a()(T ? y.socialProofBackdrop : true, null == w || O ? true : h.hoverActiveEffect),
       hideTooltip: k,
       coverRef: P
     }), D && (0, r.jsx)(s.e_, {
@@ -111,8 +111,8 @@ function O(e) {
     widgetType: i,
     index: null != j ? j : 0,
     game: t,
-    coverImageUrl: I,
-    gameName: w,
+    coverImageUrl: w,
+    gameName: I,
     children: N()
   }) : (0, r.jsx)("div", {
     className: y.container,

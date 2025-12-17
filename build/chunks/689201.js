@@ -1,7 +1,7 @@
 /** Chunk was on 74330 **/
 /** chunk id: 689201, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  c: () => p,
+  c: () => m,
   g: () => f
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
@@ -65,7 +65,7 @@ function f(e, t) {
   }, [e, t])
 }
 
-function p(e, t) {
+function m(e, t) {
   let r = (0, i.Wu)([o.default], () => e.map(e => o.default.getUser(e.gifterUserId)).filter(s.lm), [e]),
     c = n.useMemo(() => r.reduce((e, t) => (e[t.id] = t, e), {}), [r]);
   return n.useMemo(() => new Set(e.map(e => e.skuProductLine)).size > 1 ? e.map(e => {

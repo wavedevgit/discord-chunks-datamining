@@ -1,4 +1,4 @@
-/** Chunk was on 3472 **/
+/** Chunk was on 32777 **/
 /** chunk id: 170731, original params: i,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => W
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk907331 = require("./907331.js"),
   Chunk454399 = require("./454399.jsx"),
   Chunk28664 = require("./28664.jsx"),
@@ -73,7 +73,7 @@ function M(i) {
     themeClass: s
   } = i;
   return (0, n.jsx)("div", {
-    className: a()(R.wishlistBannerHeader, s),
+    className: l()(R.wishlistBannerHeader, s),
     children: (0, n.jsxs)("div", {
       className: R.wishlistBannerTitleContainer,
       children: [(0, n.jsx)(d.Heading, {
@@ -117,7 +117,7 @@ function H(i) {
       onClick: r,
       cardSize: w.U.SMALL,
       renderItemPreview: i => {
-        if ((0, _.Q)(e.item)) {
+        if ((0, O.Q)(e.item)) {
           if (null != e.item.bundleItems && e.item.bundleItems.length > 0) {
             let t = {
               items: e.item.bundleItems
@@ -150,8 +150,8 @@ function G(i) {
     hasOverflow: t,
     overflowItem: s,
     overflowCount: r,
-    showIcons: a,
-    giftRecipient: l,
+    showIcons: l,
+    giftRecipient: a,
     defaultWishlistId: d,
     onOpenWishlist: u,
     onWishlistItemClick: m,
@@ -174,14 +174,14 @@ function G(i) {
             source: u
           } = i, g = h[e], p = (0, n.jsx)(x.Z, {
             item: r,
-            profileOwner: l,
+            profileOwner: a,
             wishlistId: d,
             isOwner: false,
             cardSize: w.U.SMALL,
             showOverlayButton: false,
             giftingOrigin: y.Wt.DM_CHANNEL_WISHLIST,
             source: u,
-            showIcons: a,
+            showIcons: l,
             onWishlistItemClick: m,
             analyticsLocations: f
           });
@@ -209,7 +209,7 @@ function G(i) {
     }), t && (0, n.jsx)(H, {
       lastItem: s,
       remainingCount: r,
-      giftRecipient: l,
+      giftRecipient: a,
       onOpenWishlist: u
     })]
   })
@@ -232,7 +232,7 @@ let W = function(i) {
     numItems: L.zL,
     location: "Wishlist Banner",
     source: L.bd.WISHLIST_BANNER
-  }), S = s.useMemo(() => "loading" === x.status, [x.status]), _ = T.ZP.getName(e), {
+  }), S = s.useMemo(() => "loading" === x.status, [x.status]), O = T.ZP.getName(e), {
     theme: y,
     primaryColor: E,
     secondaryColor: H
@@ -257,11 +257,11 @@ let W = function(i) {
       item: e,
       source: t
     } = i;
-    return t === L.lr.POPULAR && (0, O.F)(e)
+    return t === L.lr.POPULAR && (0, N.F)(e)
   }) ? "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY" : "SHOP_ONLY", [j, c])], D = null == o ? true : o.getBannerURL({
     canAnimate: false,
     size: 713
-  }), U = s.useMemo(() => h ? c.slice(0, L.zL - 1) : c, [c, h]), Y = (0, N.g)(U, e), X = h ? c[L.zL - 1] : null, K = b - L.zL + 1, [q, Q] = s.useState(false), J = s.useCallback(i => {
+  }), U = s.useMemo(() => h ? c.slice(0, L.zL - 1) : c, [c, h]), Y = (0, _.g)(U, e), X = h ? c[L.zL - 1] : null, K = b - L.zL + 1, [q, Q] = s.useState(false), J = s.useCallback(i => {
     if (i && !S && c.length > 0) {
       let i = c.map(i => {
         let {
@@ -281,10 +281,10 @@ let W = function(i) {
         })))
       }), Q(true)
     }
-  }, [S, c, e.id, r]), V = (0, l.O)(J, true, !S && !q);
+  }, [S, c, e.id, r]), V = (0, a.O)(J, true, !S && !q);
   return "error" === x.status ? null : (0, n.jsxs)("div", {
     ref: V,
-    className: a()(R.wishlistBanner, Z),
+    className: l()(R.wishlistBanner, Z),
     style: W,
     children: [null != D && (0, n.jsx)("div", {
       className: R.backgroundImage,
@@ -296,7 +296,7 @@ let W = function(i) {
       children: i => (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(M, {
           title: F.title,
-          subtitle: F.getSubtitle(_),
+          subtitle: F.getSubtitle(O),
           themeClass: i
         }), (0, n.jsx)("div", {
           className: i,

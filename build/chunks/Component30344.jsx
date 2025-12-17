@@ -1,4 +1,4 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 39442 **/
 /** chunk id: 30344, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -79,7 +79,7 @@ function b(e) {
   } = (0, f.j)(), v = y(d), {
     expanded: O,
     setExpanded: j
-  } = (0, s.g)(), x = O ? m : m.slice(0, 8), P = m.length > 8, I = (0, r.jsxs)(r.Fragment, {
+  } = (0, s.g)(), x = O ? m : m.slice(0, 8), P = m.length > 8, w = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p, (t = g({}, e), n = n = {
       games: x
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -102,7 +102,7 @@ function b(e) {
       gameCount: m.length
     }), (0, r.jsx)(l.d, {
       emptyListFallbackRef: v,
-      children: I
+      children: w
     })]
-  }) : I
+  }) : w
 }

@@ -119,8 +119,8 @@ let F = (0, Chunk888651.$)(function(e) {
     channel: U,
     mute: V,
     localMute: F,
-    localVideoDisabled: B,
-    deaf: H,
+    localVideoDisabled: H,
+    deaf: B,
     video: G,
     embeddedApplication: z,
     serverMute: W,
@@ -194,7 +194,7 @@ let F = (0, Chunk888651.$)(function(e) {
         }))
       })
     },
-    eB = e => em ? (0, i.jsx)(E.$, k(D({}, e), {
+    eH = e => em ? (0, i.jsx)(E.$, k(D({}, e), {
       channel: U,
       setIsHangStatusInputFocused: eP,
       setIsEmojiPickerOpen: eN
@@ -203,7 +203,7 @@ let F = (0, Chunk888651.$)(function(e) {
       channel: U,
       userId: f.id
     })) : null,
-    eH = () => (0, i.jsx)(S.Z, {
+    eB = () => (0, i.jsx)(S.Z, {
       userId: f.id,
       channel: U
     }),
@@ -240,13 +240,13 @@ let F = (0, Chunk888651.$)(function(e) {
               disconnected: $,
               mute: V,
               localMute: F,
-              localVideoDisabled: B,
+              localVideoDisabled: H,
               isStreaming: en,
               isGuest: er,
               video: G,
               priority: el,
               ringing: Y,
-              deaf: H,
+              deaf: B,
               nick: K,
               collapsed: l,
               overlap: l,
@@ -281,7 +281,7 @@ let F = (0, Chunk888651.$)(function(e) {
             })
           }
           let c = () => null;
-          return ey && ew ? c = eB : en ? c = eG : eM && f.id !== I.default.getId() ? c = eH : ey && (c = eB), (0, i.jsx)(s.yRy, {
+          return ey && ew ? c = eH : en ? c = eG : eM && f.id !== I.default.getId() ? c = eB : ey && (c = eH), (0, i.jsx)(s.yRy, {
             targetElementRef: ev,
             position: "right",
             renderPopout: c,

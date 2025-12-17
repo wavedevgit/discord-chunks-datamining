@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk354841 = require("./354841.js");
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -73,8 +73,8 @@ let j = () => 80,
       onSelect: i,
       isSelected: l = false
     } = e, s = b(e, ["children", "className", "onSelect", "isSelected"]);
-    return (0, r.jsx)(o.P3F, v(g({
-      className: a()(f.decorationGridItem, l ? f.selected : true, n)
+    return (0, r.jsx)(o.P3F, v(f({
+      className: a()(g.decorationGridItem, l ? g.selected : true, n)
     }, s), {
       onClick: i,
       children: t
@@ -101,12 +101,12 @@ let j = () => 80,
         size: 80,
         onlyAnimateOnHoverOrFocus: !x
       });
-    return (0, r.jsxs)(P, v(g({
+    return (0, r.jsxs)(P, v(f({
       innerRef: null != l ? l : m,
       isSelected: o
     }, u), {
       children: [(0, r.jsx)("img", {
-        className: f.presetDecorationImg,
+        className: g.presetDecorationImg,
         src: j,
         alt: n.label
       }), (0, r.jsx)(c.Z, {
@@ -128,7 +128,7 @@ let j = () => 80,
     } = e, d = (0, p.ZP)(), h = u.ZP.canUseCollectibles(t);
     return (0, r.jsx)(o.GMG, {
       fade: true,
-      className: f.list,
+      className: g.list,
       columns: 3,
       sections: d.map(e => {
         let {
@@ -147,13 +147,13 @@ let j = () => 80,
           items: O
         } = d[e];
         return (0, s.EQ)(O[u]).with(p.Tm, () => (0, r.jsxs)(P, {
-          style: g({}, v),
+          style: f({}, v),
           isSelected: null === i,
           onSelect: () => a(null),
           children: [(0, r.jsx)(o.t6m, {
             size: "md",
             color: "currentColor",
-            className: f.icon
+            className: g.icon
           }), (0, r.jsx)(o.Text, {
             variant: "text-xs/normal",
             color: "text-strong",
@@ -167,7 +167,7 @@ let j = () => 80,
             width: 23,
             height: 23,
             color: "currentColor",
-            className: f.shopIcon
+            className: g.shopIcon
           }), (0, r.jsx)(o.Text, {
             variant: "text-xs/normal",
             color: "text-strong",
@@ -176,7 +176,7 @@ let j = () => 80,
         }, b)).otherwise(e => {
           let n = (null == i ? true : i.skuId) === e.skuId;
           return (0, r.jsx)(y, {
-            style: g({}, v),
+            style: f({}, v),
             user: t,
             avatarDecoration: e,
             section: j,
@@ -192,8 +192,8 @@ let j = () => 80,
           header: n
         } = d[e];
         return (0, r.jsx)("div", {
-          className: f.headings,
-          style: v(g({}, t), {
+          className: g.headings,
+          style: v(f({}, t), {
             position: "absolute"
           }),
           children: (0, r.jsx)(o.Text, {

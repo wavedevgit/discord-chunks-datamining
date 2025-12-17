@@ -62,7 +62,7 @@ function y(e) {
   let S = (0, c.KS)(b),
     I = g.intl.format(g.t.UqL10G, {
       callToActionHook: (e, t) => (0, r.jsx)(s.Text, {
-        variant: "text-xs/normal",
+        variant: "text-sm/normal",
         color: "text-subtle",
         lineClamp: 1,
         className: E.label,
@@ -70,7 +70,7 @@ function y(e) {
       }, t),
       channelName: b.name,
       channelNameHook: (e, t) => (0, r.jsxs)(s.Text, {
-        variant: "text-xs/normal",
+        variant: "text-sm/normal",
         color: "text-subtle",
         lineClamp: 1,
         className: E.label,

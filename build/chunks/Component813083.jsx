@@ -15,14 +15,14 @@ var Chunk120356 = require("./120356.js"),
 let u = e => {
   let {
     category: t,
-    daysRemainingText: n = s.t.Io7ozn,
+    daysRemainingText: n = i.t.Io7ozn,
     className: l
   } = e;
   if (null == t.unpublishedAt) return null;
-  let u = (0, i.OT)(t.unpublishedAt),
-    d = u > 1 ? s.intl.formatToPlainString(n, {
+  let u = (0, s.OT)(t.unpublishedAt),
+    d = u > 1 ? i.intl.formatToPlainString(n, {
       days: u
-    }) : s.intl.string(s.t.Bc13HF);
+    }) : i.intl.string(i.t.Bc13HF);
   return (0, r.jsx)(o.IGR, {
     disableColor: true,
     text: d,

@@ -2,7 +2,7 @@
 /** chunk id: 953528, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  QH: () => i,
+  QH: () => s,
   pj: () => a
 });
 var r, Chunk427164 = require("./427164.js"),
@@ -28,6 +28,6 @@ let o = (0, Chunk427164.le)({
       }
     }
   }),
-  i = e => o.useConfig({
+  s = e => o.useConfig({
     location: e
   }).variant

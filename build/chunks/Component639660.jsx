@@ -12,10 +12,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk430824 = require("./430824.js"),
   Chunk765703 = require("./765703.js"),
   Chunk618460 = require("./618460.js"),
+  Chunk431971 = require("./431971.js"),
   Chunk800869 = require("./800869.jsx"),
   Chunk366751 = require("./366751.jsx"),
   Chunk309945 = require("./309945.jsx"),
-  Chunk385902 = require("./385902.js"),
   Chunk981631 = require("./981631.js"),
   Chunk914820 = require("./914820.js"),
   Chunk556970 = require("./556970.js"),
@@ -41,7 +41,7 @@ function C(e) {
   }), C = (0, d.Z)(t), Z = (0, u.Z)(t), w = C.length > 0 || Z.length > 0, {
     shouldShow: I,
     notificationConfig: E
-  } = (0, g._)(t, "GuildPowerupNotificationContainer"), P = [];
+  } = (0, f._)(t, "GuildPowerupNotificationContainer"), P = [];
   I && P.push(a.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION);
   let [T, N] = (0, s.ZT)(P, t), y = null != T && null != E, O = [];
   y || w || O.push(a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK);
@@ -51,18 +51,18 @@ function C(e) {
       let e = C.some(e => e.skuId === i.A$),
         l = Z.length > 0 ? h.intl.string(x.default["B3OfL/"]) : true,
         o = [];
-      e && o.push(h.intl.string(b.default.Sfr0Jw)), Z.length > 0 && o.push(h.intl.string(x.default.wiungr)), n.push((0, r.jsx)(m.Z, {
+      e && o.push(h.intl.string(b.default.Sfr0Jw)), Z.length > 0 && o.push(h.intl.string(x.default.wiungr)), n.push((0, r.jsx)(g.Z, {
         guildId: t,
         powerupNames: [...C.map(e => e.title), ...null != l ? [l] : []],
         warnings: o
       }, "expiring-powerups"))
     }
-    return y && n.push((0, r.jsx)(p.Z, {
+    return y && n.push((0, r.jsx)(m.Z, {
       notificationConfig: E,
       markAsDismissed: e => {
         N(e)
       }
-    }, "rollback-notification")), null != e && e === a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(f.Z, {
+    }, "rollback-notification")), null != e && e === a.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK && n.push((0, r.jsx)(p.Z, {
       markAsDismissed: A
     }, "info-card")), n
   })(S);

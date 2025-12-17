@@ -1,4 +1,4 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 39442 **/
 /** chunk id: 881410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   wl: () => y,
@@ -76,7 +76,7 @@ function m(e) {
     } = (0, s.KZ)(),
     [j, x] = i.useState(""),
     P = i.useRef(""),
-    I = i.useCallback(e => {
+    w = i.useCallback(e => {
       (0, u.ES)({
         widgetType: t,
         game: {
@@ -89,15 +89,15 @@ function m(e) {
       }), null == m || m()
     }, [t, O, m]),
     {
-      options: w,
+      options: I,
       matchSorterOptions: S
     } = (0, c.h)(),
-    E = i.useMemo(() => w.map(e => ({
+    E = i.useMemo(() => I.map(e => ({
       id: String(e.value),
       value: String(e.value),
       label: e.label,
       disabled: v.has(e.value)
-    })), [w, v]),
+    })), [I, v]),
     T = i.useMemo(() => p(g({}, S), {
       threshold: a.Lu.rankings.CONTAINS,
       keys: ["label"]
@@ -138,7 +138,7 @@ function m(e) {
           selectionMode: "single",
           value: null,
           onSelectionChange: e => {
-            null != e && (I(e), t())
+            null != e && (w(e), t())
           },
           options: E,
           matchSorterOptions: T,

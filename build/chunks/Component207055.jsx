@@ -48,7 +48,7 @@ let U = Chunk473749.memo(e => {
     channel: y,
     sessionId: j,
     nick: Z
-  } = e, T = C.id, k = (0, o.e7)([_.default], () => _.default.getId() === T, [T]), [U, V, F] = (0, o.Wu)([I.Z], () => k ? [!I.Z.isSupported() || I.Z.isSelfMute() || I.Z.isSelfMutedTemporarily(), I.Z.isSelfDeaf(), false] : [!I.Z.isSupported() || I.Z.isLocalMute(T), false, I.Z.isLocalVideoDisabled(T)], [k, T]), B = (0, o.e7)([A.Z], () => A.Z.isPrioritySpeaker(T)), H = (0, c.Z)({
+  } = e, T = C.id, k = (0, o.e7)([_.default], () => _.default.getId() === T, [T]), [U, V, F] = (0, o.Wu)([I.Z], () => k ? [!I.Z.isSupported() || I.Z.isSelfMute() || I.Z.isSelfMutedTemporarily(), I.Z.isSelfDeaf(), false] : [!I.Z.isSupported() || I.Z.isLocalMute(T), false, I.Z.isLocalVideoDisabled(T)], [k, T]), H = (0, o.e7)([A.Z], () => A.Z.isPrioritySpeaker(T)), B = (0, c.Z)({
     userId: T,
     checkSoundSharing: true
   }), G = (0, o.e7)([A.Z], () => A.Z.getVoiceVolume(T), [T]), z = (0, o.e7)([A.Z], () => A.Z.isCurrentUserPTTLatched()), W = k && z, q = (0, o.e7)([P.ZP], () => P.ZP.isGuestOrLurker(y.guild_id, T)), K = (0, o.e7)([f.Z], () => f.Z.getGuildRingingUsers(y.id).has(T)), Y = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(y.id).find(e => {
@@ -72,7 +72,7 @@ let U = Chunk473749.memo(e => {
   });
   return (0, i.jsx)(v.Z, {
     shakeLocation: D.oZ.VOICE_USER,
-    isShaking: H,
+    isShaking: B,
     children: (0, i.jsx)(R.ZP, (r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -100,11 +100,11 @@ let U = Chunk473749.memo(e => {
       localVideoDisabled: F,
       mute: a || U,
       deaf: s || V,
-      speaking: H,
+      speaking: B,
       voiceDb: G,
       latched: W,
       ringing: K,
-      priority: B,
+      priority: H,
       embeddedApplication: X[0],
       isStreaming: null != $ && $.channelId === y.id,
       isWatching: null != ee && ee.state !== L.jm8.ENDED,
@@ -150,12 +150,12 @@ let V = [],
       collapsed: u
     }), F = r.useRef(new s.sW(50, () => {
       P(A.current), A.current = null
-    })), B = r.useRef(new s.sW(175, () => {
+    })), H = r.useRef(new s.sW(175, () => {
       P(null)
-    })), H = r.useCallback(e => {
-      t && (N(true), B.current.cancel(), A.current = e, F.current.delay())
+    })), B = r.useCallback(e => {
+      t && (N(true), H.current.cancel(), A.current = e, F.current.delay())
     }, [t]), G = r.useCallback(e => {
-      t && (F.current.cancel(), A.current = null, N(false), B.current.delay())
+      t && (F.current.cancel(), A.current = null, N(false), H.current.delay())
     }, [t]), z = (0, o.Wu)([T.Z], () => {
       if (u) return [];
       let e = new Set;
@@ -193,7 +193,7 @@ let V = [],
             channel: l,
             collapsed: u,
             canDrag: n && Z.Z.can(L.Plq.MOVE_MEMBERS, l),
-            showPreview: H,
+            showPreview: B,
             hidePreview: G,
             previewIsOpen: I,
             shouldShowHoverPopout: S === a.id,

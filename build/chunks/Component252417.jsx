@@ -1,4 +1,4 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 67000 **/
 /** chunk id: 252417, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -19,37 +19,37 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk580784 = require("./580784.js");
-let v = Chunk481060.EFr.SIZE_40,
-  O = (0, Chunk481060.dcp)(v);
+let O = Chunk481060.EFr.SIZE_40,
+  v = (0, Chunk481060.dcp)(O);
 
 function j(e) {
   let {
     user: t,
     status: j,
-    guildId: x,
-    channelId: P,
-    onSelect: I
+    guildId: C,
+    channelId: x,
+    onSelect: E
   } = e, {
-    theme: w,
-    themeType: S
-  } = (0, b.z)(), E = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, P), [t, P]), {
-    activities: T,
-    isMobileOnline: _
-  } = (0, a.cj)([p.Z], () => ({
+    theme: S,
+    themeType: I
+  } = (0, g.z)(), _ = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, x), [t, x]), {
+    activities: P,
+    isMobileOnline: N
+  } = (0, l.cj)([p.Z], () => ({
     activities: p.Z.getActivities(t.id),
     isMobileOnline: p.Z.isMobileOnline(t.id)
-  })), C = (0, g.Z)(t.id), {
-    voiceActivityStatusEnabled: D
-  } = (0, s.a)({
+  })), Z = (0, h.Z)(t.id), {
+    voiceActivityStatusEnabled: w
+  } = (0, c.a)({
     location: "UserProfileMutualFriendRow"
   }), {
-    voiceChannel: k
+    voiceChannel: T
   } = (0, u.Z)({
-    userId: D ? t.id : true,
-    guildId: x
+    userId: w ? t.id : true,
+    guildId: C
   });
-  return (0, r.jsxs)(l.P3F, {
-    focusProps: S === h.l.MODAL_V2 ? {
+  return (0, r.jsxs)(a.P3F, {
+    focusProps: I === m.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -61,14 +61,14 @@ function j(e) {
       }
     },
     className: y.row,
-    onClick: I,
+    onClick: E,
     onContextMenu: e => {
       (0, o.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220"), n.e("26465")]).then(n.bind(n, 881351));
         return n => {
-          var i, a;
+          var i, l;
           return (0, r.jsx)(e, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -86,40 +86,40 @@ function j(e) {
               })
             }
             return e
-          }({}, n), a = a = {
+          }({}, n), l = l = {
             user: t
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(a)).forEach(function(e) {
-            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
+          })(Object(l)).forEach(function(e) {
+            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
           }), i))
         }
       })
     },
-    children: [(0, r.jsx)(l.qEK, {
-      src: t.getAvatarURL(x, O),
+    children: [(0, r.jsx)(a.qEK, {
+      src: t.getAvatarURL(C, v),
       "aria-label": t.username,
-      size: v,
-      status: E ? m.Skl.UNKNOWN : j,
-      statusBackdropColor: E ? true : (0, l.QFD)(w),
-      isMobile: _,
+      size: O,
+      status: _ ? b.Skl.UNKNOWN : j,
+      statusBackdropColor: _ ? true : (0, a.QFD)(S),
+      isMobile: N,
       className: y.avatar
     }), (0, r.jsxs)("div", {
       className: y.details,
-      children: [(0, r.jsx)(c.Z, {
+      children: [(0, r.jsx)(s.Z, {
         user: t,
         className: y.tag,
         discriminatorClass: y.discriminator
       }), (0, r.jsx)(d.Z, {
         user: t,
-        activities: T,
-        applicationStream: C,
-        voiceChannel: k
+        activities: P,
+        applicationStream: Z,
+        voiceChannel: T
       })]
     })]
   })

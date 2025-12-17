@@ -1,4 +1,4 @@
-/** Chunk was on 3472 **/
+/** Chunk was on 32777 **/
 /** chunk id: 841081, original params: i,e,t (module,exports,require) **/
 require.d(exports, {
   default: () => g
@@ -19,14 +19,14 @@ function f(i) {
   let {
     giftRecipient: e,
     onClose: t,
-    transitionState: a,
+    transitionState: l,
     analyticsLocations: f,
     analyticsLocation: g,
     analyticsObject: p,
     giftMessage: I
   } = i, {
     priceOptions: b
-  } = (0, l.JL)(), j = s.useCallback(i => {
+  } = (0, a.JL)(), j = s.useCallback(i => {
     (0, o.Z)({
       isGift: true,
       giftRecipient: e,
@@ -44,7 +44,7 @@ function f(i) {
     }), t()
   }, [e, f, g, p, I, t]);
   return (0, n.jsxs)(r.Y0X, {
-    transitionState: a,
+    transitionState: l,
     size: r.CgR.DYNAMIC,
     className: h.modalContainer,
     parentComponent: "GiftOptionSelectModal",
@@ -86,12 +86,12 @@ function g(i) {
     analyticsObject: c,
     giftMessage: u
   } = i;
-  return (0, n.jsx)(l.PaymentContextProvider, {
+  return (0, n.jsx)(a.PaymentContextProvider, {
     activeSubscription: null,
     stepConfigs: [],
     skuIDs: d.nS,
     isGift: true,
-    children: (0, n.jsx)(a.KB, {
+    children: (0, n.jsx)(l.KB, {
       isGift: true,
       giftRecipient: e,
       giftingOrigin: d.Wt.DM_CHANNEL,

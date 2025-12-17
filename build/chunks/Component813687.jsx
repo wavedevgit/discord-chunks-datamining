@@ -50,7 +50,9 @@ let c = "social-layer-storefront-forward-link-modal",
     let {
       sku: t,
       guildId: a,
-      source: s
+      source: s,
+      analyticsLocations: u,
+      analyticsContext: d
     } = e;
     (0, i.ZDy)(async () => {
       let {
@@ -59,7 +61,9 @@ let c = "social-layer-storefront-forward-link-modal",
       return n => (0, r.jsx)(e, l(o({}, n), {
         sku: t,
         guildId: a,
-        source: s
+        source: s,
+        analyticsLocations: u,
+        analyticsContext: d
       }))
     }, {
       stackingBehavior: "stack",

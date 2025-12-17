@@ -1,7 +1,7 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 67000 **/
 /** chunk id: 486311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,9 +14,9 @@ var Chunk54381 = require("./54381.js"),
   Chunk819640 = require("./819640.js"),
   Chunk713081 = require("./713081.js"),
   Chunk326660 = require("./326660.js"),
+  Chunk730164 = require("./730164.js"),
   Chunk441536 = require("./441536.js"),
   Chunk933104 = require("./933104.jsx"),
-  Chunk332538 = require("./332538.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk556970 = require("./556970.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -40,7 +40,28 @@ function j(e) {
   }
   return e
 }
-let C = {
+
+function C(e) {
+  let {
+    indicator: t
+  } = e;
+  if (null == t) return null;
+  switch (t.type) {
+    case h.Ru.WARNING:
+      return (0, r.jsx)(s.Mgn, {
+        color: s.TVs.colors.STATUS_WARNING,
+        size: "sm"
+      });
+    case h.Ru.UNREAD:
+      return (0, r.jsx)(s.mAB, {
+        count: t.count,
+        color: s.TVs.colors.BACKGROUND_ACCENT.css
+      });
+    default:
+      return null
+  }
+}
+let x = {
     animation: {
       BEG: 0,
       END: 75
@@ -50,56 +71,56 @@ let C = {
       END: 376
     }
   },
-  x = Chunk473749.memo(function(e) {
+  E = Chunk473749.memo(function(e) {
     let {
       guildId: t,
       selected: l
-    } = e, x = (0, b.ZP)(t), E = i.useCallback(() => {
+    } = e, E = (0, p.ZP)(t), S = i.useCallback(() => {
       var e;
-      (0, f.jd)(t), (0, p.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == x || null == (e = x.popout) || e.markAsDismissed(m.L.INDIRECT_ACTION)
-    }, [t, x]), S = i.useRef(null), I = (0, s.s9z)(s.JQI), _ = (0, o.e7)([d.Z], () => d.Z.hasLayers()), P = I || _, N = i.useCallback(() => {
+      (0, f.jd)(t), (0, g.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == E || null == (e = E.popout) || e.markAsDismissed(m.L.INDIRECT_ACTION)
+    }, [t, E]), I = i.useRef(null), _ = (0, s.s9z)(s.JQI), P = (0, o.e7)([d.Z], () => d.Z.hasLayers()), N = _ || P, Z = i.useCallback(() => {
       var e;
-      if ((null == x ? true : x.popout) == null || P) return null;
-      switch (null == x || null == (e = x.popout) ? true : e.type) {
-        case h.J.LEVEL_REACHED:
-          return (0, r.jsx)(g.jG, j({
+      if ((null == E ? true : E.popout) == null || N) return null;
+      switch (null == E || null == (e = E.popout) ? true : e.type) {
+        case h.Jk.LEVEL_REACHED:
+          return (0, r.jsx)(b.jG, j({
             guildId: t,
-            channelRowRef: S
-          }, x.popout));
-        case h.J.PERKS_AVAILABLE:
-          return (0, r.jsx)(g.$h, j({
+            channelRowRef: I
+          }, E.popout));
+        case h.Jk.PERKS_AVAILABLE:
+          return (0, r.jsx)(b.$h, j({
             guildId: t,
-            channelRowRef: S
-          }, x.popout));
-        case h.J.PERKS_PURCHASABLE:
-          return (0, r.jsx)(g.yI, j({
+            channelRowRef: I
+          }, E.popout));
+        case h.Jk.PERKS_PURCHASABLE:
+          return (0, r.jsx)(b.yI, j({
             guildId: t,
-            channelRowRef: S
-          }, x.popout));
-        case h.J.NEW_PERK_AVAILABLE:
-          return (0, r.jsx)(g.cO, j({
+            channelRowRef: I
+          }, E.popout));
+        case h.Jk.NEW_PERK_AVAILABLE:
+          return (0, r.jsx)(b.cO, j({
             guildId: t,
-            channelRowRef: S
-          }, x.popout));
-        case h.J.GAME_SERVER_HOSTING_AVAILABLE:
-        case h.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
-          return (0, r.jsx)(g.dJ, j({
+            channelRowRef: I
+          }, E.popout));
+        case h.Jk.GAME_SERVER_HOSTING_AVAILABLE:
+        case h.Jk.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
+          return (0, r.jsx)(b.dJ, j({
             guildId: t,
-            channelRowRef: S
-          }, x.popout));
+            channelRowRef: I
+          }, E.popout));
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == x ? true : x.popout, S, P]), [Z, w] = i.useState(null);
+    }, [t, null == E ? true : E.popout, I, N]), [w, T] = i.useState(null);
     i.useEffect(() => {
-      (null == x ? true : x.popout) == null && w(null)
-    }, [null == x ? true : x.popout]);
-    let T = i.useCallback(e => {
-      w(e)
+      (null == E ? true : E.popout) == null && T(null)
+    }, [null == E ? true : E.popout]);
+    let A = i.useCallback(e => {
+      T(e)
     }, []);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.m, {
-        ref: S,
+        ref: I,
         className: v.container,
         id: "skill-trees-".concat(t),
         renderIcon: e => (0, r.jsx)(s.Ucv, {
@@ -107,14 +128,14 @@ let C = {
           className: e,
           color: "currentColor"
         }),
-        background: (null == x ? true : x.popout) != null && (0, r.jsx)("div", {
+        background: (null == E ? true : E.popout) != null && (0, r.jsx)("div", {
           className: v.lottieContainer,
           children: (0, r.jsx)(s.kci, {
-            nextScene: null == Z ? "animation" : "LOOP",
+            nextScene: null == w ? "animation" : "LOOP",
             className: v.lottie,
-            sceneSegments: C,
+            sceneSegments: x,
             importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
-            onScenePlay: T,
+            onScenePlay: A,
             rendererSettings: {
               preserveAspectRatio: "xMidYMid slice"
             }
@@ -122,14 +143,16 @@ let C = {
         }),
         text: (0, r.jsx)("span", {
           className: a()({
-            [v.textImportant]: (null == x ? true : x.showUnread) === true
+            [v.textImportant]: (null == E ? true : E.showUnread) === true
           }),
           children: O.intl.string(y.default.yv3DJJ)
         }),
         selected: l,
-        onClick: E,
-        showUnread: (null == x ? true : x.showUnread) === true,
-        trailing: null == x ? true : x.trailing
-      }), N()]
+        onClick: S,
+        showUnread: (null == E ? true : E.showUnread) === true,
+        trailing: (0, r.jsx)(C, {
+          indicator: null == E ? true : E.indicator
+        })
+      }), Z()]
     })
   })

@@ -44,7 +44,7 @@ let A = e => {
     tab: R,
     buttonContainerClassName: Z,
     orbsSupportedOnly: w
-  } = e, H = (0, i.e7)([g.default], () => g.default.getCurrentUser()), D = C.ZP.canUseCollectibles(H), M = (0, j.B)("FeedBlock"), {
+  } = e, H = (0, s.e7)([g.default], () => g.default.getCurrentUser()), D = C.ZP.canUseCollectibles(H), M = (0, j.B)("FeedBlock"), {
     sortType: F,
     setSortType: W,
     sortedItems: U,
@@ -56,7 +56,7 @@ let A = e => {
     isPremiumUser: D,
     prioritizeUserDiscounts: P,
     orbsSupportedOnly: w
-  }), K = (0, y.St)(U), Y = (0, i.e7)([f.Z], () => f.Z.useReducedMotion), q = (0, i.e7)([p.Z], () => p.Z.isFocused()), Q = !Y && q, {
+  }), K = (0, y.St)(U), Y = (0, s.e7)([f.Z], () => f.Z.useReducedMotion), q = (0, s.e7)([p.Z], () => p.Z.isFocused()), Q = !Y && q, {
     animationPhase: J,
     startAnimation: X
   } = (0, O.y)(), $ = (0, h.sp)(), ee = null != (t = null == $ ? true : $.sessionId) ? t : "", et = l.useRef(null), en = l.useCallback(e => {
@@ -98,7 +98,7 @@ let A = e => {
           children: L.intl.string(L.t.uaX705)
         }), (0, r.jsx)("div", {
           className: Z,
-          children: (0, r.jsx)(s.B6, {
+          children: (0, r.jsx)(i.B6, {
             options: V,
             select: en,
             className: B.sortSelect,

@@ -27,10 +27,10 @@ var Chunk54381 = require("./54381.js"),
 function _(e) {
   let {
     category: t
-  } = e, n = (0, o.e7)([s.default], () => s.default.getCurrentUser()), l = (0, d.l)(t.products), a = (0, u.a)()(l), i = (0, v.St)(a), f = (0, c.sp)();
-  return null == n || 0 === i.length ? null : (0, r.jsx)("div", {
+  } = e, n = (0, o.e7)([i.default], () => i.default.getCurrentUser()), l = (0, d.l)(t.products), a = (0, u.a)()(l), s = (0, v.St)(a), f = (0, c.sp)();
+  return null == n || 0 === s.length ? null : (0, r.jsx)("div", {
     className: S.cardsContainer,
-    children: i.map((e, t) => (0, r.jsx)(c.k0, {
+    children: s.map((e, t) => (0, r.jsx)(c.k0, {
       newValue: {
         tilePosition: t
       },
@@ -46,12 +46,12 @@ function _(e) {
 function O(e) {
   let {
     category: t
-  } = e, [n, o] = l.useState(false), i = (0, a.O)(e => {
+  } = e, [n, o] = l.useState(false), s = (0, a.O)(e => {
     o(e)
   }, .15);
   return (0, r.jsxs)("div", {
     className: S.categoryWrapper,
-    ref: i,
+    ref: s,
     children: [(0, r.jsx)(g.Z, {
       category: t
     }), (0, r.jsx)(_, {
@@ -66,7 +66,7 @@ function x(e) {
     sortedCategories: n,
     setCategoryRef: a,
     currentPage: o,
-    handlePageChange: s,
+    handlePageChange: i,
     initialCategoryId: u
   } = e, d = (0, c.sp)(), g = (0, C.R)(), b = null != (t = null == d ? true : d.sessionId) ? t : "", {
     noCache: m,
@@ -86,8 +86,8 @@ function x(e) {
     let e = _.findIndex(e => e.skuId === u);
     if (false === e) return;
     let t = Math.floor(e / E.kN) + 1;
-    t !== o && s(t), x.current = u
-  }, [u, _, s, o]);
+    t !== o && i(t), x.current = u
+  }, [u, _, i, o]);
   let y = l.useMemo(() => {
     let e = (o - 1) * E.kN;
     return _.slice(e, e + E.kN)
@@ -122,11 +122,11 @@ function x(e) {
       })
     }, e.skuId)), (0, r.jsx)("div", {
       className: S.paginationContainer,
-      children: (0, r.jsx)(i.DsT, {
+      children: (0, r.jsx)(s.DsT, {
         currentPage: o,
         totalCount: _.length,
         pageSize: E.kN,
-        onPageChange: s,
+        onPageChange: i,
         disablePaginationGap: true
       })
     })]

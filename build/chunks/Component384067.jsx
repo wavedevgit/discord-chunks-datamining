@@ -58,7 +58,7 @@ let y = e => {
       if (N(true), y.isDismissible) {
         var e;
         let t = null != (e = y.dismissibleContentVersion) ? e : 0;
-        (0, u.wH)(i.z.COLLECTIBLES_SHOP_WIDE_BANNER, t, {
+        (0, u.wH)(s.z.COLLECTIBLES_SHOP_WIDE_BANNER, t, {
           dismissAction: S.L.USER_DISMISS
         })
       }
@@ -167,7 +167,7 @@ let y = e => {
     });
   return (0, r.jsx)(c.f6W, {
     theme: H ? true : _.BR.DARK,
-    children: e => (0, r.jsx)(s.$, {
+    children: e => (0, r.jsx)(i.$, {
       innerRef: T,
       onChange: R,
       threshold: 0,

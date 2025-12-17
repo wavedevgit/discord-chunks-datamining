@@ -23,7 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk889588 = require("./889588.js"),
   y = function(e) {
-    return e.SMALL = "small", e.MEDIUM = "medium", e.LARGE = "large", e
+    return e.SMALL = "small", e.SMALL_SQUARE = "small-square", e.MEDIUM = "medium", e.LARGE = "large", e
   }({});
 
 function O(e) {
@@ -97,6 +97,7 @@ function O(e) {
       ref: L,
       className: o()(b.card, {
         [b.isOwned]: N,
+        [b.smallSquareCard]: "small-square" === y,
         [b.smallCard]: "small" === y,
         [b.largeCard]: "large" === y
       }),

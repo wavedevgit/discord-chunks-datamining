@@ -2,7 +2,7 @@
 /** chunk id: 149705, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  a: () => i
+  a: () => s
 });
 var Chunk663042 = require("./663042.js");
 
@@ -45,7 +45,7 @@ let o = {
     searchError: null,
     isFetchingResults: false
   },
-  i = (0, Chunk663042.U)(e => a(l({}, o), {
+  s = (0, Chunk663042.U)(e => a(l({}, o), {
     onSetResponse: t => {
       let n = Math.floor(t.pageOffset / t.pageLimit) + 1;
       e(a(l({}, t), {

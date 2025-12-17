@@ -24,15 +24,15 @@ let h = e => {
     shelf: t,
     handleTransition: n,
     tab: a
-  } = e, h = (0, i.e7)([c.default], () => c.default.getCurrentUser()), v = (0, i.e7)([d.Z], () => d.Z.getCategory(t.categorySkuId)), E = (0, u.sp)(), S = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), _ = (0, f.l)(S).slice(0, 4);
+  } = e, h = (0, s.e7)([c.default], () => c.default.getCurrentUser()), v = (0, s.e7)([d.Z], () => d.Z.getCategory(t.categorySkuId)), E = (0, u.sp)(), S = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), _ = (0, f.l)(S).slice(0, 4);
   return null == h ? null : (0, r.jsxs)("div", {
     className: o()(C.shelfBlockContainer, C.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: C.blockHeader,
-      children: [(0, r.jsx)(s.Heading, {
+      children: [(0, r.jsx)(i.Heading, {
         variant: "heading-lg/semibold",
         children: t.name
-      }), (0, r.jsx)(s.Button, {
+      }), (0, r.jsx)(i.Button, {
         variant: "secondary",
         text: m.intl.formatToPlainString(m.t.bc9RBE, {
           category_name: t.name

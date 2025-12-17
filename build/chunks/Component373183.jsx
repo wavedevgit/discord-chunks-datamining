@@ -39,7 +39,7 @@ let j = Chunk473749.memo(function(e) {
     readyToClaim: T,
     collectibleProductSkuIds: L,
     collectedSkuIds: I
-  } = (0, v.q)(t, n), B = (0, s.e7)([m.Z], () => m.Z.isClaiming === n);
+  } = (0, v.q)(t, n), B = (0, i.e7)([m.Z], () => m.Z.isClaiming === n);
   return (0, r.jsx)(c.$, {
     onChange: a,
     threshold: 0,
@@ -89,7 +89,7 @@ let j = Chunk473749.memo(function(e) {
                 position: "top",
                 children: (0, r.jsx)("span", {
                   className: _.questionIconContainer,
-                  children: (0, r.jsx)(i.idN, {
+                  children: (0, r.jsx)(s.idN, {
                     size: "xs"
                   })
                 })
@@ -107,10 +107,10 @@ let j = Chunk473749.memo(function(e) {
                   className: o()(_.progressTextContainer, {
                     [_.readyToClaimText]: T
                   }),
-                  children: [T ? (0, r.jsx)(i.kmB, {
+                  children: [T ? (0, r.jsx)(s.kmB, {
                     size: "xs",
                     color: "currentColor"
-                  }) : null, (0, r.jsx)(i.xvT, {
+                  }) : null, (0, r.jsx)(s.xvT, {
                     variant: "text-xs/medium",
                     color: "currentColor",
                     children: E.intl.formatToPlainString(E.t["5TwASM"], {
@@ -123,11 +123,11 @@ let j = Chunk473749.memo(function(e) {
             })]
           }), (0, r.jsx)("div", {
             className: S.footerButtonContainer,
-            children: (0, r.jsx)(i.hE2, {
+            children: (0, r.jsx)(s.hE2, {
               wrap: false,
               className: S.footerButtonGroup,
               fullWidth: true,
-              children: (0, r.jsx)(i.zxk, {
+              children: (0, r.jsx)(s.zxk, {
                 variant: "primary",
                 onClick: e => {
                   e.stopPropagation(), T && (0, p.wW)(t.skuId, n).then(() => {
@@ -145,7 +145,7 @@ let j = Chunk473749.memo(function(e) {
                       }
                     })
                   }).catch(() => {
-                    (0, d.ZDy)(() => Promise.resolve(e => (0, r.jsx)(i.Modal, {
+                    (0, d.ZDy)(() => Promise.resolve(e => (0, r.jsx)(s.Modal, {
                       transitionState: e.transitionState,
                       onClose: e.onClose,
                       size: "sm",

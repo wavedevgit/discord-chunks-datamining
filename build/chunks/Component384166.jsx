@@ -1,4 +1,4 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 39442 **/
 /** chunk id: 384166, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -30,7 +30,7 @@ function j(e) {
   } = (0, f.KZ)(), [a, j] = i.useState(false), x = (0, c.Wu)([b.Z], () => {
     var e;
     return null != (e = b.Z.getSaveablePendingWidgets()) ? e : []
-  }), P = (0, c.Wu)([b.Z], () => b.Z.getChangedWidgets()), I = (0, c.Wu)([b.Z], () => b.Z.getRemovedWidgets()), w = (0, c.e7)([b.Z], () => b.Z.hasUnsavedChanges()), S = (0, c.e7)([b.Z], () => b.Z.canSaveChanges()), E = (0, c.e7)([b.Z], () => b.Z.isSubmitting), T = (0, c.e7)([u.Z], () => u.Z.useReducedMotion), _ = (0, s.Yzy)(w, {
+  }), P = (0, c.Wu)([b.Z], () => b.Z.getChangedWidgets()), w = (0, c.Wu)([b.Z], () => b.Z.getRemovedWidgets()), I = (0, c.e7)([b.Z], () => b.Z.hasUnsavedChanges()), S = (0, c.e7)([b.Z], () => b.Z.canSaveChanges()), E = (0, c.e7)([b.Z], () => b.Z.isSubmitting), T = (0, c.e7)([u.Z], () => u.Z.useReducedMotion), _ = (0, s.Yzy)(I, {
     from: {
       opacity: 0,
       y: 80 * !T
@@ -54,8 +54,8 @@ function j(e) {
       d.S.unsubscribe(y.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), i.useEffect(() => {
-    w && s.uvj.announce(v.intl.string(v.t["0Y/qkL"]))
-  }, [w]);
+    I && s.uvj.announce(v.intl.string(v.t["0Y/qkL"]))
+  }, [I]);
   let C = i.useCallback(async () => {
       if (b.Z.canSaveChanges()) {
         try {
@@ -77,12 +77,12 @@ function j(e) {
             return e + (null != (r = null == (n = t.comment) ? true : n.length) ? r : 0)
           }, 0)), n(t)
         }
-        for (let e of I) n({
+        for (let e of w) n({
           widgetEdited: e.type,
           isWidgetRemoved: true
         })
       }
-    }, [x, P, I, n]),
+    }, [x, P, w, n]),
     D = i.useCallback(() => {
       p.Z.clearPendingWidgets()
     }, []);
@@ -106,14 +106,14 @@ function j(e) {
           variant: "secondary",
           text: v.intl.string(v.t.yBZMsQ),
           onClick: D,
-          disabled: !w || E
+          disabled: !I || E
         }), (0, r.jsx)(s.Button, {
           size: "sm",
           variant: "primary",
           text: v.intl.string(v.t["R3BPH+"]),
           onClick: C,
           loading: E,
-          disabled: !S || !w || E
+          disabled: !S || !I || E
         })]
       })]
     })

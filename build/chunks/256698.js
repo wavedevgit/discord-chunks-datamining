@@ -1,5 +1,6 @@
-/** Chunk was on 85032 **/
-/** chunk id: 256698, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 256698, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   card: "_20585df30caf32ab-card",
   cardBackgroundImage: "_20585df30caf32ab-cardBackgroundImage",

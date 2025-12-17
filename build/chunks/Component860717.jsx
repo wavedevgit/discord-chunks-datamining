@@ -1,4 +1,4 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 39442 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => et
@@ -461,7 +461,7 @@ let et = Object.assign(function(e) {
     widget: a,
     cta: s,
     subtle: g = false
-  } = e, m = (0, o.e7)([w.default], () => w.default.getId()) === n.id, {
+  } = e, m = (0, o.e7)([I.default], () => I.default.getId()) === n.id, {
     application: h,
     game: y,
     config: v
@@ -507,7 +507,7 @@ let et = Object.assign(function(e) {
     className: l()(N.headerTitle, N.clickable),
     onClick: _,
     children: H
-  }), K = (0, o.e7)([I.default], () => I.default.locale), q = i.useMemo(() => {
+  }), K = (0, o.e7)([w.default], () => w.default.locale), q = i.useMemo(() => {
     let e = function(e, t, n) {
       var r, i, a;
       let l = new Intl.NumberFormat(n, {

@@ -53,7 +53,7 @@ let B = (0, Chunk884697.IC)(90),
       heroBlock: P,
       tab: R,
       onVisibilityChange: Z
-    } = e, w = (0, v.W)("HeroBlock"), H = (0, i.O)(e => {
+    } = e, w = (0, v.W)("HeroBlock"), H = (0, s.O)(e => {
       null == Z || Z(e)
     }, .1, null != Z), D = l.useRef(null), M = (0, x.B)("HeroBlock"), F = (0, u.e7)([b.default], () => b.default.getCurrentUser()), W = (0, C.sp)(), U = l.useMemo(() => {
       var e, t;
@@ -94,7 +94,7 @@ let B = (0, Chunk884697.IC)(90),
       }), V ? (0, _.Z)({
         analyticsLocations: er
       }) : (0, g.navigateToQuestHome)({
-        fromContent: s.j.ORBS_SHOP_HERO_CTA
+        fromContent: i.j.ORBS_SHOP_HERO_CTA
       })) : (a({
         sourceButton: "shop latest category hero",
         categorySkuId: et ? U.categorySkuId : true,

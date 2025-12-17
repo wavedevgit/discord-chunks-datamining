@@ -177,7 +177,7 @@ class q extends Chunk473749.PureComponent {
             children: e => (0, i.jsx)(u.P3F, W(z({
               innerRef: this.upsellTargetRef
             }, e), {
-              className: H.clickableChannelTextArea,
+              className: B.clickableChannelTextArea,
               onClick: this.handleTextAreaClick,
               children: p
             }))
@@ -206,10 +206,10 @@ class q extends Chunk473749.PureComponent {
         guild: e
       } = this.props;
       null != e && (0, c.Z)({
-        title: B.intl.string(B.t.aIz1oV),
-        subtitle: B.intl.string(B.t["13tjTU"]),
+        title: H.intl.string(H.t.aIz1oV),
+        subtitle: H.intl.string(H.t["13tjTU"]),
         variant: "primary",
-        confirmText: B.intl.string(B.t["cY+Oob"]),
+        confirmText: H.intl.string(H.t["cY+Oob"]),
         onConfirm: () => g.Z.removeGuildJoinRequest(e.id)
       })
     }), G(this, "handleViewApplicationRejection", () => {
@@ -247,8 +247,8 @@ class q extends Chunk473749.PureComponent {
       d.Z.verifyResend();
       let t = null == (e = R.default.getCurrentUser()) ? true : e.email;
       null != t && (0, s.Z)({
-        title: B.intl.string(B.t.LykQYk),
-        subtitle: B.intl.format(B.t.azKEPy, {
+        title: H.intl.string(H.t.LykQYk),
+        subtitle: H.intl.format(H.t.azKEPy, {
           email: t
         })
       })

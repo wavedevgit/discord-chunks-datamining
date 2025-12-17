@@ -44,7 +44,7 @@ function N(e) {
   } = e, R = (0, f.sp)(), Z = null != (t = null == R ? true : R.sessionId) ? t : "", {
     noCache: w,
     includeUnpublished: H
-  } = (0, E.Z)(), D = (0, o.e7)([u.default], () => u.default.getCurrentUser()), M = (0, o.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [F, W] = l.useState(1), U = (0, c.Fg)(), V = (0, i.ap)(U), [z, G, K] = l.useMemo(() => {
+  } = (0, E.Z)(), D = (0, o.e7)([u.default], () => u.default.getCurrentUser()), M = (0, o.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [F, W] = l.useState(1), U = (0, c.Fg)(), V = (0, s.ap)(U), [z, G, K] = l.useMemo(() => {
     switch (P) {
       case S.AW.AVATAR_DECORATIONS:
         return [O.intl.string(O.t.dRZYNE), V ? T.Z : k.Z, a.Z.AVATAR_DECORATION];
@@ -86,7 +86,7 @@ function N(e) {
         backgroundImage: "url(".concat(G, ")")
       },
       className: x.bannerContainer,
-      children: (0, r.jsx)(s.Heading, {
+      children: (0, r.jsx)(i.Heading, {
         variant: "heading-xxl/extrabold",
         children: z
       })
@@ -104,7 +104,7 @@ function N(e) {
     }), Q.length > 40 && (0, r.jsx)("div", {
       className: x.paginationContainer,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(s.DsT, {
+        children: (0, r.jsx)(i.DsT, {
           currentPage: F,
           totalCount: Q.length,
           pageSize: 40,

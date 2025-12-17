@@ -337,7 +337,7 @@ class eu extends(i = Chunk473749.PureComponent) {
     if (!exports || this.isNotFriends() || this.isPartyFull()) return null;
     let i = [];
     return require.forEach(e => {
-      let t = H.default.getUser(e);
+      let t = B.default.getUser(e);
       null != t && i.push({
         id: e,
         label: Y.ZP.getName(t)
@@ -838,7 +838,7 @@ function ed(e) {
     analyticsLocations: s
   } = (0, j.ZP)(O.Z.NEW_GROUP_DM_INVITE_MODAL);
   if (!(0, I.a)(O.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
-  let c = (0, _.pT)(Array.from(t), H.default, F.Z);
+  let c = (0, _.pT)(Array.from(t), B.default, F.Z);
   return (0, r.jsxs)("div", {
     className: en.customizationContainer,
     children: [(0, r.jsx)(Z.B, {
@@ -869,12 +869,12 @@ function ep(e) {
   var {
     channel: t
   } = e, n = ea(e, ["channel"]);
-  let i = (0, u.cj)([k.Z, D.Z, B.Z], () => {
+  let i = (0, u.cj)([k.Z, D.Z, H.Z], () => {
     let e;
     return null != t && null != (e = D.Z.getInvite(t.id)) && e.isExpired() && (e = null), el(er({}, k.Z.getState()), {
       invite: e,
-      hideDiscriminator: B.Z.hidePersonalInformation,
-      hideInstantInvites: B.Z.hideInstantInvites
+      hideDiscriminator: H.Z.hidePersonalInformation,
+      hideInstantInvites: H.Z.hideInstantInvites
     })
   });
   return (0, r.jsx)(eu, er({
@@ -937,7 +937,7 @@ function eh(e) {
     channel: i,
     location: g,
     subscribeToGlobalHotkey: m
-  }), S = (0, u.e7)([H.default], () => H.default.getUser(null == i ? true : i.getRecipientId()));
+  }), S = (0, u.e7)([B.default], () => B.default.getUser(null == i ? true : i.getRecipientId()));
   return null != (t = null == S ? true : S.bot) && t || null != (n = null == S ? true : S.isProvisional) && n ? null : j ? (0, r.jsx)(J.ZP.Icon, {
     ref: b,
     onClick: y,

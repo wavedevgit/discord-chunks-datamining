@@ -123,23 +123,27 @@ function en(e) {
     sku: n,
     isCardHovered: a,
     trackCardClick: o,
-    variant: s
-  } = e, c = i.useCallback(e => {
+    variant: s,
+    analyticsLocations: c,
+    analyticsContext: u
+  } = e, f = i.useCallback(e => {
     e.stopPropagation(), null != n && null != t && (o(Z.rZ.FORWARD_BUTTON), (0, x.b)({
       sku: n,
       guildId: t,
+      analyticsContext: u,
+      analyticsLocations: c,
       source: "social-layer-storefront-embed"
     }))
-  }, [n, t, o]), u = i.useCallback(() => {
+  }, [n, t, o, u, c]), p = i.useCallback(() => {
     o(Z.rZ.WISHLIST_BUTTON)
-  }, [o]), f = i.useMemo(() => l()(H.cardButtonContainer, {
+  }, [o]), _ = i.useMemo(() => l()(H.cardButtonContainer, {
     [H.cardButtonContainerHovered]: a
   }), [a]);
   return (0, r.jsxs)("div", {
     className: H.cardButtonsContainer,
     children: [2 === s && (0, r.jsx)(d.P3F, {
-      className: l()(f, H.forwardButton),
-      onClick: c,
+      className: l()(_, H.forwardButton),
+      onClick: f,
       children: (0, r.jsx)(O.Z, {
         size: "refresh_sm",
         color: "currentColor"
@@ -148,8 +152,8 @@ function en(e) {
       skuId: n.id,
       isCardHovered: a,
       nuxGraphic: (0, D.c)(n),
-      onClick: u,
-      className: l()(f, H.wishlistButton)
+      onClick: p,
+      className: l()(_, H.wishlistButton)
     })]
   })
 }
@@ -274,7 +278,9 @@ function er(e) {
         sku: ei,
         isCardHovered: es,
         variant: K,
-        trackCardClick: e_
+        trackCardClick: e_,
+        analyticsLocations: ec,
+        analyticsContext: el
       }), null != eT ? (0, r.jsx)(j.p, {
         containerClassName: H.cardImageContainer,
         foregroundImageClassName: H.cardImage,

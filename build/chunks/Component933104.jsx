@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 67000 **/
 /** chunk id: 933104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $h: () => A,
@@ -201,8 +201,8 @@ function M(e) {
       src: P.Z,
       className: l()(_.image, _.gameServerHostingImage)
     }),
-    title: I.intl.string(n === h.J.GAME_SERVER_HOSTING_AVAILABLE ? E.default.wXLChx : E.default["8z8RpY"]),
-    body: n === h.J.GAME_SERVER_HOSTING_AVAILABLE ? I.intl.string(E.default.lZ6m7Q) : I.intl.format(E.default["IQ1E+d"], {
+    title: I.intl.string(n === h.Jk.GAME_SERVER_HOSTING_AVAILABLE ? E.default.wXLChx : E.default["8z8RpY"]),
+    body: n === h.Jk.GAME_SERVER_HOSTING_AVAILABLE ? I.intl.string(E.default.lZ6m7Q) : I.intl.format(E.default["IQ1E+d"], {
       boostCount: o
     }),
     actions: [{

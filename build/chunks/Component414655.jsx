@@ -1,4 +1,4 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 39442 **/
 /** chunk id: 414655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -157,7 +157,7 @@ function A(e) {
       guildId: (0, g.ac)()
     })
   }, []);
-  return null != H ? null : null == W || 0 === W.items.length ? (0, r.jsx)(I.F, {
+  return null != H ? null : null == W || 0 === W.items.length ? (0, r.jsx)(w.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
       className: D.emptyStateContainer,
@@ -190,7 +190,7 @@ function A(e) {
         })]
       })]
     })
-  }) : (0, r.jsxs)(I.F, {
+  }) : (0, r.jsxs)(w.F, {
     scrollerRef: S,
     className: D.scroller,
     fade: true,
@@ -248,7 +248,7 @@ function A(e) {
         handleOpenShop: Y,
         handleOpenGameShop: Q
       })]
-    }), (0, r.jsx)(w.Z, {
+    }), (0, r.jsx)(I.Z, {
       items: W.items,
       profileOwner: n,
       isOwner: M

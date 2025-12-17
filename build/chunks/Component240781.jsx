@@ -38,7 +38,7 @@ let y = [{
   O = e => {
     let {
       purchase: t
-    } = e, n = (0, c.e7)([x.default], () => x.default.locale), i = (0, u.qS)(t), l = null != t.expiresAt ? (0, g.TD)(Date.now(), t.expiresAt) : null, a = (0, p.ag)(t), s = t.purchasedAt.toLocaleDateString(n, {
+    } = e, n = (0, c.e7)([x.default], () => x.default.locale), i = (0, u.qS)(t), l = null != t.expiresAt ? (0, f.TD)(Date.now(), t.expiresAt) : null, a = (0, p.ag)(t), s = t.purchasedAt.toLocaleDateString(n, {
       month: "long",
       year: "numeric"
     });
@@ -57,9 +57,7 @@ let y = [{
       }), (0, r.jsxs)(d.Text, {
         variant: "text-xxs/normal",
         color: "text-muted",
-        children: [i ? j.intl.format(j.t["req+eY"], {
-          dateAcquired: s
-        }) : j.intl.format(j.t.gW9R4B, {
+        children: [j.intl.format(j.t.gW9R4B, {
           date: s
         }), null != t.expiresAt && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("br", {}), j.intl.format(j.t.eZSTa5, {
@@ -85,10 +83,10 @@ let y = [{
       guildId: n,
       avatarDecoration: l,
       className: x
-    } = e, g = (0, c.e7)([f.Z], () => f.Z.getStatus(t.id)), {
+    } = e, f = (0, c.e7)([g.Z], () => g.Z.getStatus(t.id)), {
       product: w,
       purchase: S
-    } = (0, m.Z)(null == l ? true : l.skuId), C = v.ZP.canUseCollectibles(t), I = null != S ? (0, u.qS)(S) : (0, u.G1)(w), E = !C && I, A = (0, h.M)(!I || C), T = (0, p.ag)(S), _ = (0, p.kd)(w), D = i.useMemo(() => E ? j.intl.string(j.t["7vkeu5"]) : (0, o.EQ)([I, C, A]).with([true, true, false], () => j.intl.string(j.t.hmyYK8)).with([true, false, true], () => j.intl.string(j.t.q0PlFn)).with([true, false, false], () => j.intl.string(j.t["0xs2sA"])).otherwise(() => j.intl.string(j.t.fEGjVQ)), [E, I, C, A]);
+    } = (0, m.Z)(null == l ? true : l.skuId), C = v.ZP.canUseCollectibles(t), I = null != S ? (0, u.qS)(S) : (0, u.G1)(w), E = !C && (0, u.qS)(S), A = (0, h.M)(!I || C), T = (0, p.ag)(S), _ = (0, p.kd)(w), D = i.useMemo(() => E ? j.intl.string(j.t["7vkeu5"]) : (0, o.EQ)([I, C, A]).with([true, true, false], () => j.intl.string(j.t.hmyYK8)).with([true, false, true], () => j.intl.string(j.t.q0PlFn)).with([true, false, false], () => j.intl.string(j.t["0xs2sA"])).otherwise(() => j.intl.string(j.t.fEGjVQ)), [E, I, C, A]);
     return null == S || E ? (0, r.jsxs)("div", {
       className: a()(P.modalPreview, P.shopPreviewContainer, x),
       children: [(0, r.jsx)("div", {
@@ -133,7 +131,7 @@ let y = [{
                 guildId: n,
                 avatarSize: i,
                 avatarDecorationOverride: l,
-                status: a ? g : true,
+                status: a ? f : true,
                 "aria-hidden": true
               })
             }, "".concat(i).concat(a))

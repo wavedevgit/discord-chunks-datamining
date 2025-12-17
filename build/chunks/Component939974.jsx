@@ -1,4 +1,4 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 39442 **/
 /** chunk id: 939974, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -61,7 +61,7 @@ function x(e) {
     buttonRef: i,
     additionalMenuItems: l
   } = e, o = (0, b.mR)(t), c = (0, f.Dt)();
-  return (0, r.jsx)(I, {
+  return (0, r.jsx)(w, {
     targetRef: i,
     widget: t,
     additionalMenuItems: l,
@@ -121,7 +121,7 @@ let P = e => {
       children: t
     })
   },
-  I = e => {
+  w = e => {
     let {
       children: t,
       widget: i,

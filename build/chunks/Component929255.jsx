@@ -38,7 +38,7 @@ function x(e) {
   let u = l.useRef(null),
     {
       handleScroll: f
-    } = (0, s.z)(u, t),
+    } = (0, i.z)(u, t),
     {
       setCategoryRef: g,
       handleScrollToCategory: b
@@ -58,7 +58,7 @@ function x(e) {
     className: O.pageWrapper,
     children: (0, r.jsxs)("main", {
       className: O.page,
-      children: [(0, r.jsx)(i.yWw, {
+      children: [(0, r.jsx)(s.yWw, {
         className: O.shopScroll,
         ref: u,
         onScroll: f,
@@ -74,7 +74,7 @@ function x(e) {
         })
       }), C && !v && (0, r.jsx)("div", {
         className: O.divider
-      }), C && !v && (0, r.jsx)(i.Ttm, {
+      }), C && !v && (0, r.jsx)(s.Ttm, {
         className: O.filterBar,
         children: (0, r.jsx)(m.Z, {})
       })]
@@ -86,7 +86,7 @@ let y = e => {
     isSmallScreen: t,
     filterBarOpen: n,
     setFilterBarOpen: a,
-    tab: s,
+    tab: i,
     scrollerRef: p,
     sortedCategories: x,
     setCategoryRef: y,
@@ -135,13 +135,13 @@ let y = e => {
           }),
           children: [(0, r.jsxs)("div", {
             className: O.sortBy,
-            children: [(0, r.jsx)(i.Text, {
+            children: [(0, r.jsx)(s.Text, {
               variant: "text-md/semibold",
               children: _.intl.string(_.t.uaX705)
             }), (0, r.jsx)(b.Z, {})]
           }), (0, r.jsx)("div", {
             ref: N,
-            children: (0, r.jsx)(i.Button, {
+            children: (0, r.jsx)(s.Button, {
               onClick: () => {
                 let e = !n;
                 c.default.track(S.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
@@ -156,22 +156,22 @@ let y = e => {
               },
               variant: "secondary",
               text: _.intl.string(n ? _.t.fYtm6f : _.t["TeTYE+"]),
-              icon: i.gXV,
+              icon: s.gXV,
               iconPosition: "end"
             })
           })]
         }), n && t && (0, r.jsx)("div", {
           className: O.filterOverlay,
           ref: k,
-          children: (0, r.jsx)(i.Den, {
+          children: (0, r.jsx)(s.Den, {
             className: O.filterOverlayContent,
             children: (0, r.jsx)(m.Z, {})
           })
         })]
-      }), T ? (0, E.RE)(s) ? (0, r.jsx)(v.Z, {
+      }), T ? (0, E.RE)(i) ? (0, r.jsx)(v.Z, {
         scrollerRef: p,
-        tab: s
-      }, s) : (0, r.jsx)(u.k0, {
+        tab: i
+      }, i) : (0, r.jsx)(u.k0, {
         newValue: {
           pageIndex: B
         },
@@ -184,8 +184,8 @@ let y = e => {
         })
       }) : (0, r.jsx)(h.Z, {
         scrollerRef: p,
-        tab: s
-      }, s)]
+        tab: i
+      }, i)]
     })
   })
 }

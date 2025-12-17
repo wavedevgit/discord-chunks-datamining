@@ -1,4 +1,4 @@
-/** Chunk was on 51235 **/
+/** Chunk was on 67000 **/
 /** chunk id: 339144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => D,
@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk48131 = require("./48131.js"),
   Chunk668519 = require("./668519.js"),
   Chunk803647 = require("./803647.js"),
-  Chunk746298 = require("./746298.js"),
+  Chunk631863 = require("./631863.js"),
   Chunk705338 = require("./705338.js"),
   Chunk445606 = require("./445606.jsx"),
   Chunk131704 = require("./131704.js"),
@@ -157,9 +157,9 @@ let D = Chunk473749.memo(function(e) {
     }, []), i.useEffect(() => {
       Q && (eu(false), null != es.current && (clearTimeout(es.current), es.current = null))
     }, [Q]);
-    let ed = null == et || null == H ? null : (0, r.jsx)(L, {
-        guildId: et,
-        applicationId: H.id
+    let ed = (null == et ? true : et.guildId) == null || null == H ? null : (0, r.jsx)(L, {
+        guildId: et.guildId,
+        applicationId: et.id
       }),
       ef = (null != U || null == B || (0, f.R)()) && (D || S) ? (D ? (o = false, s = () => {
         ea(), (0, m.v)($, m.d.STREAM, false)

@@ -59,7 +59,7 @@ function u(e) {
   return (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("74330"), n.e("16"), n.e("3472")]).then(n.bind(n, 841081));
+    } = await Promise.all([n.e("16"), n.e("74330"), n.e("32777")]).then(n.bind(n, 841081));
     return n => (0, r.jsx)(e, l(o({}, n), {
       giftRecipient: t,
       analyticsLocations: s,

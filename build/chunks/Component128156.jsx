@@ -1,4 +1,4 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 39442 **/
 /** chunk id: 128156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -57,11 +57,11 @@ function S(e) {
     return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
   }), B = k.length > 0 || null != A, U = C && null == A && null == R && null != Z, F = !L && (B || U), W = N.length > 0;
   if (!F && !W && G) return (0, r.jsx)("div", {
-    className: w.cards,
+    className: I.cards,
     children: Array.from({
       length: 8
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: w.loadingItem,
+      className: I.loadingItem,
       children: [(0, r.jsx)(c.ZT, {
         width: 60,
         opacity: .08
@@ -83,12 +83,12 @@ function S(e) {
     })
   }
   return (0, r.jsxs)(j.F, {
-    className: w.scroller,
+    className: I.scroller,
     fade: true,
     children: [F ? (0, r.jsx)(O.Z, {
-      heading: I.intl.string(I.t.J6STd9),
+      heading: w.intl.string(w.t.J6STd9),
       children: (0, r.jsxs)("ul", {
-        className: w.cards,
+        className: I.cards,
         children: [!D && U && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
@@ -120,8 +120,8 @@ function S(e) {
         })]
       })
     }) : null, W ? (0, r.jsx)(O.Z, {
-      heading: I.intl.string(I.t.jzgEoL),
-      introText: M ? I.intl.format(I.t["4bk9Ak"], {
+      heading: w.intl.string(w.t.jzgEoL),
+      introText: M ? w.intl.format(w.t["4bk9Ak"], {
         learnMoreHook: (e, t) => (0, r.jsx)(a.Anchor, {
           href: d.Z.getArticleURL(P.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
@@ -129,7 +129,7 @@ function S(e) {
       }) : true,
       scrollTargetId: x.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
-        className: w.cards,
+        className: I.cards,
         children: N.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(m.Z, {
             user: t,

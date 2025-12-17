@@ -4,18 +4,14 @@
 require.d(exports, {
   c: () => a
 });
-var Chunk473749 = require("./473749.js");
-
-function i(e, t) {
-  if ("function" == typeof e) return void e(t);
-  null != e && "object" == typeof e && "current" in e && (e.current = t)
-}
+var Chunk473749 = require("./473749.js"),
+  Chunk464281 = require("./464281.js");
 
 function a(e) {
   let t = r.useRef(null);
   return {
     triggerRef: r.useCallback(n => {
-      t.current = n, null != e && i(e, n)
+      t.current = n, null != e && (0, i.k$)(e, n)
     }, [e]),
     targetElementRef: t
   }

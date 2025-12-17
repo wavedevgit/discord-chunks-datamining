@@ -59,16 +59,16 @@ let C = "".concat("#").concat("itemSkuId", "="),
             } = e, a = c.Z.getProduct(t), o = c.Z.getCategoryForProduct(t);
             if (null != a && null != o) {
               let e = a,
-                s = (0, b.oQ)({
+                i = (0, b.oQ)({
                   product: a
                 }),
                 u = document.getElementById("shop-item-".concat(e.skuId));
               if (u !== document.activeElement && (null == u || u.focus()), null != a.variantGroupStoreListingId) {
                 let n = c.Z.getProductByStoreListingId(a.variantGroupStoreListingId);
                 if (null != n) {
-                  var i;
+                  var s;
                   e = n;
-                  let r = null == (i = n.variants) ? true : i.findIndex(e => e.skuId === t);
+                  let r = null == (s = n.variants) ? true : s.findIndex(e => e.skuId === t);
                   null != r && r > false && (0, d.$)(n, r)
                 }
               }(0, g.T)({
@@ -77,7 +77,7 @@ let C = "".concat("#").concat("itemSkuId", "="),
                 analyticsSource: r,
                 analyticsLocations: n,
                 tab: l,
-                shouldCheckoutWithOrbs: s
+                shouldCheckoutWithOrbs: i
               })
             }
           })({
@@ -95,12 +95,12 @@ let C = "".concat("#").concat("itemSkuId", "="),
     let t = r.useRef({}),
       n = (0, a.e7)([o.Z], () => o.Z.useReducedMotion),
       l = (0, a.e7)([c.Z], () => c.Z.isFetchingCategories),
-      [i, s] = r.useState(null),
+      [s, i] = r.useState(null),
       u = r.useCallback((e, n) => {
         t.current[e] = n
       }, []),
       d = r.useCallback(r => {
-        l ? s(r) : setTimeout(() => {
+        l ? i(r) : setTimeout(() => {
           let l = t.current[r];
           null != l && (null == e || e.scrollIntoViewNode({
             node: l,
@@ -109,10 +109,10 @@ let C = "".concat("#").concat("itemSkuId", "="),
             shouldScrollToStart: true
           }))
         }, 100)
-      }, [e, n, l, s]);
+      }, [e, n, l, i]);
     return r.useEffect(() => {
-      l || null == i || (d(i), s(null))
-    }, [l, d, i, s]), {
+      l || null == s || (d(s), i(null))
+    }, [l, d, s, i]), {
       setCategoryRef: u,
       handleScrollToCategory: d
     }

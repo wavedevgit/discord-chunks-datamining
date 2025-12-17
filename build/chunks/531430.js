@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
-/** chunk id: 102725, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 531430, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  l: () => l
+  B: () => l
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk374470 = require("./374470.js"),

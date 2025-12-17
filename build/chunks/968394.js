@@ -1,4 +1,4 @@
-/** Chunk was on 3472 **/
+/** Chunk was on 32777 **/
 /** chunk id: 968394, original params: i,e,t (module,exports,require) **/
 module.exports = {
   wishlistBanner: "b05cb404b00dcb04-wishlistBanner",

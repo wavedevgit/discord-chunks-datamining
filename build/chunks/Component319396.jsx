@@ -1,7 +1,7 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 39442 **/
 /** chunk id: 319396, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -109,7 +109,7 @@ let P = Chunk473749.memo(function(e) {
   })
 });
 
-function I(e) {
+function w(e) {
   let {
     items: t,
     profileOwner: n,
@@ -141,7 +141,7 @@ function I(e) {
     })
   }, [f, t]);
   if (null == c || null == f) return null;
-  let I = (0, r.jsx)("ul", {
+  let w = (0, r.jsx)("ul", {
     className: j.grid,
     children: t.map((e, t) => (0, r.jsx)(P, {
       item: e,
@@ -157,6 +157,6 @@ function I(e) {
   });
   return v ? (0, r.jsx)(y.d, {
     emptyListFallbackRef: null,
-    children: I
-  }) : I
+    children: w
+  }) : w
 }

@@ -207,12 +207,12 @@ function ep(e) {
       author: d
     } = n, p = (0, u.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), m = (0, u.e7)([k.default], () => k.default.getId()), g = (0, L.$R)(t), b = (0, L.Gu)(t), {
       firstMessage: v
-    } = (0, u.e7)([C.Z], () => C.Z.getMessage(t.id), [t.id]), x = D.nc.useSetting(), O = D.Sb.useSetting(), j = (0, u.e7)([B.Z], () => null == t.guild_id || B.Z.canChatInGuild(t.guild_id), [t]), {
+    } = (0, u.e7)([C.Z], () => C.Z.getMessage(t.id), [t.id]), x = D.nc.useSetting(), O = D.Sb.useSetting(), j = (0, u.e7)([H.Z], () => null == t.guild_id || H.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: S,
       canAddNewReactions: _
-    } = (0, u.cj)([H.Z], () => ({
-      canAddNewReactions: j && H.Z.can(ei.Plq.ADD_REACTIONS, t),
-      canManageMessages: H.Z.can(ei.Plq.MANAGE_MESSAGES, t)
+    } = (0, u.cj)([B.Z], () => ({
+      canAddNewReactions: j && B.Z.can(ei.Plq.ADD_REACTIONS, t),
+      canManageMessages: B.Z.can(ei.Plq.MANAGE_MESSAGES, t)
     }), [t, j]), P = (0, w.U)(t, n), I = (0, L.NE)(t, n), Z = (0, L.Ek)(n), T = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([V.ZP], () => null != t.guild_id && V.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === m, U = (S || n.canDeleteOwnMessage(m)) && g && !ei.V$x.UNDELETABLE.has(n.type);
     n.type === ei.uaV.AUTO_MODERATION_ACTION && (U = U && S), t.isModeratorReportChannel() && (U = U && n.id !== (null == v ? true : v.id) && !(0, J.Z)(n));
     let G = (0, K.a4)(n),
@@ -231,7 +231,7 @@ function ep(e) {
       }),
       ee = t.type === ei.d4z.GUILD_ANNOUNCEMENT && null != p && p.features.has(ei.GuildFeatures.NEWS) && (A || S) && (0, h.Z)(n),
       et = t.getGuildId(),
-      en = null != et && n.type === ei.uaV.USER_JOIN && H.Z.canWithPartialContext(ei.Plq.MANAGE_GUILD, {
+      en = null != et && n.type === ei.uaV.USER_JOIN && B.Z.canWithPartialContext(ei.Plq.MANAGE_GUILD, {
         guildId: et
       }),
       er = (0, y.a)(n),

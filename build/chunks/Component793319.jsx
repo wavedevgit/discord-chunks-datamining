@@ -455,7 +455,7 @@ let eA = function(e) {
   })), L = (0, N.Z)(), V = (0, u.e7)([T.default], () => null != T.default.getAwaitingRemoteSessionInfo()), F = null != L, G = (0, u.e7)([el.Z], () => {
     var e;
     return (null != (e = null == L ? true : L.channelId) ? e : el.Z.getVoiceChannelId()) === n.id
-  }), W = (0, B.Z)({
+  }), W = (0, H.Z)({
     channelId: n.id,
     location: "center-control-tray"
   }), q = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()), {
@@ -470,7 +470,7 @@ let eA = function(e) {
     showRefreshedAudioContextMenu: ei
   } = (0, U.e)({
     location: v.Z.VOICE_CONTROL_TRAY
-  }), ed = (0, H.Z)(n), eh = r.useRef(null), eg = r.useRef(null), eb = (0, k.bp)(), eC = en ? e => {
+  }), ed = (0, B.Z)(n), eh = r.useRef(null), eg = r.useRef(null), eb = (0, k.bp)(), eC = en ? e => {
     (0, h.jW)(e, () => Promise.resolve(() => (0, i.jsx)(E.default, {
       onClose: h.Zy,
       renderInputDevices: true,

@@ -36,11 +36,11 @@ let m = {
     let {
       isLoading: n = false,
       heroBlock: l,
-      tab: i,
+      tab: s,
       onVisibilityChange: d
     } = e, C = (0, o.O)(e => {
       null == d || d(e)
-    }, .1, null != d), h = (0, s.e7)([u.default], () => u.default.getCurrentUser()), {
+    }, .1, null != d), h = (0, i.e7)([u.default], () => u.default.getCurrentUser()), {
       bannerStyleOverrides: v,
       logoStyleOverrides: E,
       heroLogo: S,
@@ -97,7 +97,7 @@ let m = {
         }), (0, r.jsx)(p.Z, {
           isBlockLoading: n,
           heroBlock: l,
-          tab: i
+          tab: s
         })]
       })]
     }) : null

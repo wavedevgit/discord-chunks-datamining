@@ -41,7 +41,7 @@ function E(e) {
   } = e, E = (0, l.e7)([v.ZP], () => null != w ? v.ZP.getMember(w.id, t.id) : null), A = null != E ? E.avatarDecoration : t.avatarDecoration, {
     pendingAvatarDecoration: T,
     setPendingAvatarDecoration: _
-  } = (0, g.Z)({
+  } = (0, f.Z)({
     analyticsLocations: m,
     guildId: null == w ? true : w.id
   }), [D, Z] = i.useState(() => {
@@ -52,7 +52,7 @@ function E(e) {
       } = e;
       return t === A.skuId
     })) ? e : null
-  }), N = (0, f.Ys)({
+  }), N = (0, g.Ys)({
     pendingValue: D,
     userValue: null == t ? true : t.avatarDecoration,
     guildValue: null == E ? true : E.avatarDecoration,
@@ -142,11 +142,11 @@ function A(e) {
   } = e, h = (0, l.e7)([b.default], () => b.default.getCurrentUser()), {
     analyticsLocations: x
   } = (0, o.ZP)(n, s.Z.EDIT_AVATAR_DECORATION_MODAL), {
-    categories: f,
-    purchases: g,
+    categories: g,
+    purchases: f,
     isFetchingCategories: v,
     isFetchingPurchases: P
-  } = (0, m.ZP)(), y = v || P && 0 === g.size;
+  } = (0, m.ZP)(), y = v || P && 0 === f.size;
   return i.useEffect(() => {
     j.default.track(w.rMx.OPEN_MODAL, {
       type: w.jXE.AVATAR_DECORATION_CUSTOMIZATION,
@@ -166,8 +166,8 @@ function A(e) {
       }) : (0, r.jsx)(E, {
         user: h,
         guild: p,
-        categories: f,
-        purchases: g,
+        categories: g,
+        purchases: f,
         analyticsLocations: x,
         initialSelectedDecoration: u,
         onClose: () => {

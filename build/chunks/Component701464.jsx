@@ -1,4 +1,4 @@
-/** Chunk was on 3472 **/
+/** Chunk was on 32777 **/
 /** chunk id: 701464, original params: i,e,t (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -24,17 +24,17 @@ let c = function(i) {
     children: [(0, n.jsxs)("div", {
       className: o.cardsRow,
       children: [(0, n.jsx)(r.jB, {
-        onClick: () => e(l.Si.TIER_2),
+        onClick: () => e(a.Si.TIER_2),
         isGift: true,
         priceOptions: t,
         showPromotionalGiftBanner: m
       }), (0, n.jsx)(r.j8, {
-        onClick: () => e(l.Si.TIER_0),
+        onClick: () => e(a.Si.TIER_0),
         isGift: true,
         priceOptions: t,
         removeTopMargin: true
       })]
-    }), (0, n.jsx)(a.Z, {
+    }), (0, n.jsx)(l.Z, {
       giftRecipient: c,
       onWishlistItemClick: d
     })]

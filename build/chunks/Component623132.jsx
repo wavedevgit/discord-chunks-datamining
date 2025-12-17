@@ -1,4 +1,4 @@
-/** Chunk was on 85032 **/
+/** Chunk was on 39442 **/
 /** chunk id: 623132, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -78,7 +78,7 @@ function _(e) {
       game: i,
       widgetType: n
     },
-    "aria-label": I.intl.formatToPlainString(I.t["0dR3gw"], {
+    "aria-label": w.intl.formatToPlainString(w.t["0dR3gw"], {
       positionNumber: t + 1
     }),
     onReorder: (e, t) => (0, b.Eq)(n, e, t),
@@ -138,7 +138,7 @@ function D(e) {
   } = e;
   return (0, r.jsx)(c.nn4, {
     id: a,
-    children: I.intl.format(I.t.TM0XDY, {
+    children: w.intl.format(w.t.TM0XDY, {
       name: g.ZP.getName(n, i, t)
     })
   })
@@ -192,7 +192,7 @@ function A(e) {
     applicationId: f
   } = e, g = (0, s.Dt)(), m = (0, s.Dt)(), {
     trackUserProfileEditAction: h
-  } = (0, p.KZ)(), [y, v] = i.useState("idle"), [O, j] = i.useState(null != t ? t : ""), x = i.useRef(null), P = i.useRef(null), w = I.intl.string(I.t.xKSfBT), E = null != t && "" !== t.trim(), T = i.useCallback(() => {
+  } = (0, p.KZ)(), [y, v] = i.useState("idle"), [O, j] = i.useState(null != t ? t : ""), x = i.useRef(null), P = i.useRef(null), I = w.intl.string(w.t.xKSfBT), E = null != t && "" !== t.trim(), T = i.useCallback(() => {
     h({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
@@ -220,11 +220,11 @@ function A(e) {
     children: [(0, r.jsx)(c.nn4, {
       tag: "label",
       htmlFor: g,
-      children: I.intl.string(I.t.JxKXeT)
+      children: w.intl.string(w.t.JxKXeT)
     }), (0, r.jsx)(c.Kx8, {
       id: g,
       value: O,
-      placeholder: w,
+      placeholder: I,
       onChange: C,
       onBlur: _,
       rows: 3,
@@ -250,11 +250,11 @@ function A(e) {
       channelId: u,
       id: m
     }), (0, r.jsx)(k, {
-      text: null != t ? t : w,
+      text: null != t ? t : I,
       className: l()(S.editableCommentText, !E && S.placeholder)
     }), (0, r.jsx)(c.P3F, {
       innerRef: x,
-      "aria-label": I.intl.string(I.t.ppb9MJ),
+      "aria-label": w.intl.string(w.t.ppb9MJ),
       onClick: e => {
         e.stopPropagation(), T()
       },
@@ -278,14 +278,14 @@ function Z(e) {
     coverRef: g,
     className: p
   } = e, {
-    applicationId: I,
+    applicationId: w,
     comment: D,
     tags: k
   } = a, {
     coverImageUrl: Z,
     gameName: R,
     isLoading: G
-  } = (0, P.Z)(I), M = {
+  } = (0, P.Z)(w), M = {
     variant: "heading-sm/medium",
     color: "text-default"
   }, L = f.default.getCurrentUser(), B = (null == L ? true : L.id) === t.id, U = 1 === (0, b.Gv)(o), F = !s && B, W = F && (0, b.vI)(o), H = F && !U, {
@@ -294,10 +294,10 @@ function Z(e) {
   if (G) return (0, r.jsx)(v.i, {});
   let K = () => (0, r.jsx)(y.Z, {
       coverRef: g,
-      className: null == Z || s ? true : w.hoverActiveEffect,
+      className: null == Z || s ? true : I.hoverActiveEffect,
       imageSrc: Z,
       gameName: R,
-      applicationId: I,
+      applicationId: w,
       userId: t.id,
       disableInteraction: s,
       hideTooltip: true
@@ -315,7 +315,7 @@ function Z(e) {
         children: [s ? (0, r.jsx)(c.Heading, T(E({}, M), {
           children: R
         })) : (0, r.jsx)(C, E({
-          applicationId: I,
+          applicationId: w,
           userId: t.id,
           gameName: R
         }, M)), W ? (0, r.jsx)(A, {
@@ -324,7 +324,7 @@ function Z(e) {
           guildId: n,
           channelId: i,
           widgetType: o,
-          applicationId: I
+          applicationId: w
         }) : (0, r.jsx)(N, {
           text: D,
           user: t,
@@ -334,12 +334,12 @@ function Z(e) {
           tags: k,
           isCurrentUser: B,
           widgetType: o,
-          applicationId: I,
+          applicationId: w,
           disableInteraction: s,
           className: S.tags
         }), !s && (0, r.jsx)(x.F, {
           className: S.socialProof,
-          applicationId: I,
+          applicationId: w,
           guildId: n,
           channelId: i
         })]
