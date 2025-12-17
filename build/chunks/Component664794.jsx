@@ -10,8 +10,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk299206 = require("./299206.jsx"),
   Chunk389052 = require("./389052.jsx"),
+  Chunk667708 = require("./667708.jsx"),
   Chunk158508 = require("./158508.jsx"),
   Chunk710631 = require("./710631.jsx"),
   Chunk622724 = require("./622724.jsx"),
@@ -68,91 +68,92 @@ function O(e) {
     popoutTargetRef: g,
     children: b
   } = e, {
-    trackUserProfileAction: y
+    trackUserProfileAction: y,
+    context: O
   } = (0, p.KZ)(), {
-    analyticsLocations: O,
-    newestAnalyticsLocation: v
-  } = (0, s.ZP)(o.Z.USER_PROFILE_OVERFLOW_MENU), S = {
+    analyticsLocations: v,
+    newestAnalyticsLocation: S
+  } = (0, s.ZP)(o.Z.USER_PROFILE_OVERFLOW_MENU), I = null != O && O.showGuildProfile ? n : true, T = {
     action: m.yM.PRESS_OPTIONS,
     icon: a.xhG,
     tooltipText: h.intl.string(h.t["UKOtz+"]),
     "aria-label": h.intl.string(h.t["UKOtz+"])
-  }, I = (0, d.Z)({
+  }, C = (0, d.Z)({
     user: t,
     guildId: n,
     onAction: () => y({
       action: "PRESS_INVITE_TO_SERVER",
-      analyticsLocations: O
+      analyticsLocations: v
     })
-  }), T = (0, c.Z)({
+  }), A = (0, l.Z)({
     user: t,
     guildId: n,
-    location: v,
+    location: S,
     color: "danger",
     appContext: _,
     onBlock: () => y({
       action: "BLOCK",
-      analyticsLocations: O
+      analyticsLocations: v
     }),
     onIgnore: () => y({
       action: "IGNORE",
-      analyticsLocations: O
+      analyticsLocations: v
     }),
     onUnblock: () => y({
       action: "UNBLOCK",
-      analyticsLocations: O
+      analyticsLocations: v
     })
-  }), C = (0, u.Z)({
+  }), N = (0, u.Z)({
     user: t,
     guildId: n,
-    location: v,
+    location: S,
     appContext: _,
     onBlock: () => y({
       action: "BLOCK",
-      analyticsLocations: O
+      analyticsLocations: v
     }),
     onIgnore: () => y({
       action: "IGNORE",
-      analyticsLocations: O
+      analyticsLocations: v
     }),
     onUnignore: () => y({
       action: "UNIGNORE",
-      analyticsLocations: O
+      analyticsLocations: v
     })
-  }), A = (0, f.Z)({
+  }), P = (0, f.Z)({
     user: t,
     guildId: n,
-    location: v,
+    location: S,
     appContext: _,
     color: "danger",
     onAction: () => y({
       action: "REPORT",
-      analyticsLocations: O
+      analyticsLocations: v
     })
-  }), N = [
-    [i, I],
-    [C, T, A, (0, f.T)({
+  }), R = [
+    [i, C],
+    [N, A, P, (0, f.T)({
       user: t,
       guildId: n,
-      location: v,
+      location: S,
       appContext: _,
       color: "danger",
       onAction: () => y({
         action: "REPORT",
-        analyticsLocations: O
+        analyticsLocations: v
       })
     })],
-    [(0, l.Z)({
-      id: t.id,
-      label: h.intl.string(h.t["/AXYnE"]),
+    [(0, c.Z)({
+      user: t,
+      guildId: I,
       onSuccess: () => y({
         action: "COPY_USER_ID",
-        analyticsLocations: O
+        analyticsLocations: v
       })
     })]
   ];
-  return N.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(s.Gt, {
-    value: O,
+  return R.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(s.Gt, {
+    value: v,
     children: (0, r.jsx)(a.yRy, {
       targetElementRef: g,
       renderPopout: e => {
@@ -164,12 +165,12 @@ function O(e) {
           onSelect: true,
           onClose: t,
           "aria-label": h.intl.string(h.t.AXIHpV),
-          children: N.map((e, t) => (0, r.jsx)(a.kSQ, {
+          children: R.map((e, t) => (0, r.jsx)(a.kSQ, {
             children: e.map(e => e)
           }, t))
         })
       },
-      children: e => b(E({}, e, S))
+      children: e => b(E({}, e, T))
     })
   })
 }
