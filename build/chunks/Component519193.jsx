@@ -34,7 +34,7 @@ function T(t) {
     hasAlreadyLinked: v,
     canStartAuthorization: N,
     startAuthorization: S
-  } = (0, u.F)(g), y = (0, f.I)(g), {
+  } = (0, u.FG)(g), y = (0, f.I)(g), {
     analyticsLocations: E
   } = (0, o.ZP)(null != j ? j : [], r.Z.SOCIAL_LAYER_CLAIM_PURCHASED_ITEM_MODAL), I = !A || null == L, R = e.useRef({
     analyticsLocations: E,

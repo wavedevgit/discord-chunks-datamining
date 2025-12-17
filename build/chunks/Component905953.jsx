@@ -39,7 +39,7 @@ function _(e) {
     hasAlreadyLinked: I,
     canStartAuthorization: k,
     startAuthorization: R
-  } = (0, d.F)(w), A = (0, x.ZP)(O), {
+  } = (0, d.FG)(w), A = (0, x.ZP)(O), {
     analyticsLocations: Z
   } = (0, c.ZP)(), D = null == A || null == (t = A.widgets) ? true : t.some(e => e instanceof p.q && e.applicationId === (null == w ? true : w.id));
   return null != N && null != N.edit_profile_upsell_image && null != w && P ? (0, a.jsx)(u.ZP, {

@@ -108,7 +108,7 @@ function j(e) {
     canStartAuthorization: q,
     hasAlreadyLinked: Q,
     startAuthorization: X
-  } = (0, f.F)(g), J = (0, d.C)(X, Q), $ = !(0, T.Z)(k, S, g.id), ee = (0, I.dQ)(Z, null == (t = S.activity) ? true : t.type, $), et = i.useRef(null), en = (0, a.e7)([O.Z], () => O.Z.getMessages(E.id)), er = () => {
+  } = (0, f.FG)(g), J = (0, d.C)(X, Q), $ = !(0, T.Z)(k, S, g.id), ee = (0, I.dQ)(Z, null == (t = S.activity) ? true : t.type, $), et = i.useRef(null), en = (0, a.e7)([O.Z], () => O.Z.getMessages(E.id)), er = () => {
     let e = [];
     return (0, C.c)(S.id, en) && q && !Q && z.enabled && e.push(o.z.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, r.jsx)(h.ZP, {
       contentTypes: e,

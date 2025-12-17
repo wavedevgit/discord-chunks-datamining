@@ -198,7 +198,7 @@ let D = Chunk473749.memo(function(e) {
         startAuthorization: () => {
           Y({
             analyticsLocations: ee
-          }) === b.r.RPC && (eu(true), null != es.current && clearTimeout(es.current), es.current = setTimeout(() => {
+          }) === b.ro.RPC && (eu(true), null != es.current && clearTimeout(es.current), es.current = setTimeout(() => {
             eu(false)
           }, 9e4))
         },

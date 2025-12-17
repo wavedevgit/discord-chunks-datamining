@@ -505,8 +505,8 @@ let ew = (0, Chunk730749.Z)(function(e) {
       canStartAuthorization: Q,
       connectionApp: J,
       startAuthorization: ef
-    } = (0, N.F)(v, {
-      allowedFlows: [N.r.RPC, N.r.WEB]
+    } = (0, N.FG)(v, {
+      allowedFlows: [N.ro.RPC, N.ro.WEB]
     }),
     [eg, eb] = i.useState(false),
     em = (0, j.Z)(null == v ? true : v.id);

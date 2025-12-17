@@ -476,7 +476,7 @@ let et = Object.assign(function(e) {
     hasAlreadyLinked: R,
     canStartAuthorization: M,
     startAuthorization: B
-  } = (0, f.F)(h), {
+  } = (0, f.FG)(h), {
     analyticsLocations: U
   } = (0, d.ZP)(u.Z.USER_PROFILE_APPLICATION_WIDGET), F = i.useCallback(() => {
     M && (t({

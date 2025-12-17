@@ -35,7 +35,7 @@ function g(e) {
       canStartAuthorization: C,
       startAuthorization: O,
       fetched: Z
-    } = (0, c.F)(x),
+    } = (0, c.FG)(x),
     w = (0, l.jsx)(d.Z, {
       game: x,
       size: d.A.MEDIUM

@@ -48,7 +48,7 @@ function O(t) {
     analyticsLocations: T
   } = t, [S, j] = a.useState({
     state: "LINK"
-  }), [k, N] = a.useState(false), v = (0, l.e7)([_.Z], () => _.Z.getApplication(n.applicationId)), E = (0, m.F)(v), {
+  }), [k, N] = a.useState(false), v = (0, l.e7)([_.Z], () => _.Z.getApplication(n.applicationId)), E = (0, m.FG)(v), {
     analyticsLocations: L
   } = (0, x.ZP)(null != T ? T : [], f.Z.SOCIAL_LAYER_GIFT_CODE_CLAIM_MODAL);
   a.useEffect(() => {

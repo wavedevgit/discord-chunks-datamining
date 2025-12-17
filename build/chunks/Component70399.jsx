@@ -74,7 +74,7 @@ function j(e) {
     canStartAuthorization: v,
     startAuthorization: g,
     fetched: j
-  } = (0, u.F)(r), {
+  } = (0, u.FG)(r), {
     analyticsLocations: h
   } = (0, d.ZP)(o.Z.USER_PROFILE_APPLICATION_WIDGET), N = t.useCallback(() => {
     v && (n({

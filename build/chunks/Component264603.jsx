@@ -53,13 +53,13 @@ function O() {
       var e, t;
       return null != (t = null == N || null == (e = N.linkedGames) ? true : module.map(e => x.Z.getApplication(e.id)).filter(e => null != e)) ? exports : []
     }),
-    P = (0, Chunk524995.F)(N, {
-      allowedFlows: [Chunk524995.r.RPC]
+    P = (0, Chunk524995.FG)(N, {
+      allowedFlows: [Chunk524995.ro.RPC]
     }),
-    I = (0, Chunk524995.F)(N, {
-      allowedFlows: [Chunk524995.r.WEB]
+    I = (0, Chunk524995.FG)(N, {
+      allowedFlows: [Chunk524995.ro.WEB]
     }),
-    k = (0, Chunk524995.F)(N),
+    k = (0, Chunk524995.FG)(N),
     {
       canDeauthorize: R,
       deauthorize: A

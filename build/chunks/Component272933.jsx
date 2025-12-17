@@ -43,7 +43,7 @@ function p(e, t) {
     for (var t = arguments.length, i = Array(t), o = 0; o < t; o++) i[o] = arguments[o];
     m(true);
     let l = e(...i);
-    return l === s.r.RPC && u && (0, a.ZDy)(async () => {
+    return l === s.ro.RPC && u && (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("59371").then(n.bind(n, 762466));

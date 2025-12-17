@@ -76,7 +76,7 @@ function R() {
       canStartAuthorization: n,
       hasAlreadyLinked: i,
       startAuthorization: o,
-      preferredFlow: u,
+      chosenFlow: u,
       connectionApp: p,
       debug: {
         isSubscribedToAuthorizeRequest: C,
@@ -84,7 +84,7 @@ function R() {
         hasConnectionEntrypointUrl: N,
         validFlows: P
       }
-    } = (0, Chunk524995.F)(module, {
+    } = (0, Chunk524995.FG)(module, {
       debug: true
     }),
     R = (0, Chunk442837.e7)([Chunk757266.Z], () => null != module && Chunk757266.Z.isConnected(module.id)),
@@ -165,7 +165,7 @@ function R() {
             description: C || !R ? null : Chunk388032.intl.string(Chunk349350.default.aTULMB),
             learnMoreLink: C || !R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
           }],
-          isChosen: Chunk692547 === Chunk524995.r.RPC
+          isChosen: Chunk692547 === Chunk524995.ro.RPC
         }), (0, Chunk54381.jsx)(w, {
           overallStatus: +!N,
           name: Chunk388032.intl.string(Chunk349350.default.K3ObrU),
@@ -176,7 +176,7 @@ function R() {
               url: null == Chunk782568 ? true : Chunk782568.connectionEntrypointUrl
             }) : null
           }],
-          isChosen: Chunk692547 === Chunk524995.r.WEB
+          isChosen: Chunk692547 === Chunk524995.ro.WEB
         })]
       }), (0, Chunk54381.jsxs)("div", {
         className: Chunk536789.footer,
