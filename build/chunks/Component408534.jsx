@@ -37,7 +37,7 @@ function S(e) {
   } = e, I = (0, s.bp)(), {
     id: Z,
     type: T
-  } = S, N = (0, r.e7)([u.Z], () => u.Z.getGuild(S.guild_id), [S.guild_id]), A = (0, r.e7)([d.Z], () => d.Z.getSelectedParticipant(Z)), w = (null == A ? true : A.type) === x.fO.STREAM ? A.stream : null, M = (0, r.e7)([a.Z], () => (null == A ? true : A.type) === x.fO.ACTIVITY ? a.Z.getApplication(A.applicationId) : true), R = (0, h.Z)(Z), L = (0, y.Z)(Z), D = (0, g.Z)(S, N, null == w ? true : w.ownerId, null == M ? true : M.id), k = (0, f.Z)(Z), U = (0, v.Z)(), V = (0, c.$A)(Z), F = (0, c.j8)(Z), H = (0, C.Z)(w, I), B = (0, b.Z)(M, Z), G = (0, m.Z)(), z = (0, o.Z)(S), W = (0, p.m)(Z);
+  } = S, N = (0, r.e7)([u.Z], () => u.Z.getGuild(S.guild_id), [S.guild_id]), A = (0, r.e7)([d.Z], () => d.Z.getSelectedParticipant(Z)), w = (null == A ? true : A.type) === x.fO.STREAM ? A.stream : null, M = (0, r.e7)([a.Z], () => (null == A ? true : A.type) === x.fO.ACTIVITY ? a.Z.getApplication(A.applicationId) : true), R = (0, h.Z)(Z), L = (0, y.Z)(Z), D = (0, g.Z)(S, N, null == w ? true : w.ownerId, null == M ? true : M.id), k = (0, f.Z)(Z), U = (0, v.Z)(), V = (0, c.$A)(Z), F = (0, c.j8)(Z), B = (0, C.Z)(w, I), H = (0, b.Z)(M, Z), G = (0, m.Z)(), W = (0, o.Z)(S), z = (0, p.m)(Z);
   return (0, i.jsxs)(l.v2r, {
     className: j.menu,
     onClose: t,
@@ -50,11 +50,11 @@ function S(e) {
     }), (0, i.jsxs)(l.kSQ, {
       children: [T === O.d4z.GUILD_STAGE_VOICE ? V : null, T === O.d4z.GUILD_STAGE_VOICE ? F : null, _ || T === O.d4z.GUILD_STAGE_VOICE ? null : k, G, T !== O.d4z.GUILD_STAGE_VOICE ? R : null, T === O.d4z.GUILD_STAGE_VOICE || T === O.d4z.GUILD_VOICE ? L : null]
     }), (0, i.jsx)(l.kSQ, {
-      children: z
+      children: W
     }), (0, i.jsxs)(l.kSQ, {
-      children: [!S.isManaged() && S.isPrivate() ? W : null, U]
+      children: [!S.isManaged() && S.isPrivate() ? z : null, U]
     }), (0, i.jsxs)(l.kSQ, {
-      children: [null != w ? H : null, null != M ? B : null]
+      children: [null != w ? B : null, null != M ? H : null]
     })]
   })
 }

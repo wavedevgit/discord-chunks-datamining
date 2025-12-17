@@ -1,8 +1,14 @@
 /** Chunk was on web.js **/
 /** chunk id: 904849, original params: e,t,n (module,exports,re quire) **/
 "use strict";
+require.d(exports, {
+  Z: () => s
+}), require("./388685.js");
+var Chunk512722 = require("./512722.js"),
+  i = require.n(Chunk512722),
+  Chunk28682 = require("./28682.js");
 
-function r(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -10,10 +16,7 @@ function r(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-require.d(exports, {
-  Z: () => i
-}), require("./388685.js");
-class i {
+class s {
   register(e) {
     let {
       node: t,
@@ -43,7 +46,11 @@ class i {
   getDefaultPanel() {
     return this.defaultPanel
   }
+  getPanelOrThrow(e) {
+    let t = this.get(e);
+    return i()((null == t ? true : t.type) === a.Jq.PANEL, "[SettingsDirectory] key is not for a panel: ".concat(e)), t
+  }
   constructor() {
-    r(this, "map", new Map), r(this, "defaultPanel", true)
+    o(this, "map", new Map), o(this, "defaultPanel", true)
   }
 }

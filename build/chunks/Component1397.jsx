@@ -54,7 +54,7 @@ function G(e, t, n) {
   }) : e[t] = n, e
 }
 
-function z(e) {
+function W(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -67,7 +67,7 @@ function z(e) {
   return e
 }
 
-function W(e, t) {
+function z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -166,7 +166,7 @@ class q extends Chunk473749.PureComponent {
         shouldShowLurkerModeSuccessPopout: false
       }),
       renderPopout: this.renderSuccessPopout,
-      children: e => (0, i.jsx)(k.Z, W(z({}, S), {
+      children: e => (0, i.jsx)(k.Z, z(W({}, S), {
         children: (0, i.jsxs)("div", {
           ref: this.textAreaContainerRef,
           children: [this.renderMemberVerificationSuccessModal(), m ? (0, i.jsx)(u.yRy, {
@@ -174,10 +174,10 @@ class q extends Chunk473749.PureComponent {
             renderPopout: this.renderLurkerModeUpsellPopout,
             shouldShow: E,
             position: "top",
-            children: e => (0, i.jsx)(u.P3F, W(z({
+            children: e => (0, i.jsx)(u.P3F, z(W({
               innerRef: this.upsellTargetRef
             }, e), {
-              className: B.clickableChannelTextArea,
+              className: H.clickableChannelTextArea,
               onClick: this.handleTextAreaClick,
               children: p
             }))
@@ -206,10 +206,10 @@ class q extends Chunk473749.PureComponent {
         guild: e
       } = this.props;
       null != e && (0, c.Z)({
-        title: H.intl.string(H.t.aIz1oV),
-        subtitle: H.intl.string(H.t["13tjTU"]),
+        title: B.intl.string(B.t.aIz1oV),
+        subtitle: B.intl.string(B.t["13tjTU"]),
         variant: "primary",
-        confirmText: H.intl.string(H.t["cY+Oob"]),
+        confirmText: B.intl.string(B.t["cY+Oob"]),
         onConfirm: () => g.Z.removeGuildJoinRequest(e.id)
       })
     }), G(this, "handleViewApplicationRejection", () => {
@@ -220,7 +220,7 @@ class q extends Chunk473749.PureComponent {
         let {
           default: t
         } = await n.e("3378").then(n.bind(n, 76075));
-        return n => (0, i.jsx)(t, z({
+        return n => (0, i.jsx)(t, W({
           guildId: e.id
         }, n))
       })
@@ -236,7 +236,7 @@ class q extends Chunk473749.PureComponent {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));
-        return t => (0, i.jsx)(e, z({
+        return t => (0, i.jsx)(e, W({
           reason: P.L.GUILD_PHONE_REQUIRED
         }, t))
       }, {
@@ -247,8 +247,8 @@ class q extends Chunk473749.PureComponent {
       d.Z.verifyResend();
       let t = null == (e = R.default.getCurrentUser()) ? true : e.email;
       null != t && (0, s.Z)({
-        title: H.intl.string(H.t.LykQYk),
-        subtitle: H.intl.format(H.t.azKEPy, {
+        title: B.intl.string(B.t.LykQYk),
+        subtitle: B.intl.format(B.t.azKEPy, {
           email: t
         })
       })
@@ -285,7 +285,7 @@ class q extends Chunk473749.PureComponent {
         let {
           default: t
         } = await n.e("96964").then(n.bind(n, 807007));
-        return n => (0, i.jsx)(t, z({
+        return n => (0, i.jsx)(t, W({
           channel: e
         }, n))
       })
@@ -312,7 +312,7 @@ class q extends Chunk473749.PureComponent {
         g.Z.ackUserGuildJoinRequest(e.id, t.joinRequestId)
       };
       return (0, i.jsx)(u.u_l, {
-        renderModal: t => (0, i.jsx)(O.Z, W(z({}, t), {
+        renderModal: t => (0, i.jsx)(O.Z, z(W({}, t), {
           onAccept: r,
           guildName: e.name
         })),
@@ -333,7 +333,7 @@ function K(e) {
   }), b = !!(0, v.Dc)(s), C = (0, o.e7)([E.Z], () => E.Z.shouldShowPopout(a)), O = (0, o.e7)([M.Z], () => M.Z.can(U.Plq.SEND_MESSAGES, r)), S = (0, o.e7)([x.Z], () => x.Z.getRequest(a)), {
     showLinkedLobbyApplicationLoadingIndicator: _,
     requiredLinkedLobbyApplication: P
-  } = (0, D.Z)(r.linkedLobby), I = W(z({}, c), {
+  } = (0, D.Z)(r.linkedLobby), I = z(W({}, c), {
     guild: s,
     isLurking: p,
     isFollowable: u,
@@ -351,7 +351,7 @@ function K(e) {
     useReducedMotion: h.Z.useReducedMotion,
     isStaff: m
   });
-  return (0, i.jsx)(q, W(z({}, I), {
+  return (0, i.jsx)(q, z(W({}, I), {
     channel: r,
     children: l
   }))

@@ -76,28 +76,28 @@ function V(e) {
   let {
     channel: V,
     setIsHangStatusInputFocused: F,
-    setIsEmojiPickerOpen: H,
-    setPopoutRef: B
-  } = e, G = r.useRef(null), z = (0, u.e7)([v.Z], () => v.Z.getCustomHangStatus()), W = (0, S.Z)(), q = (0, u.e7)([v.Z], () => v.Z.getFavoritedStatuses()), {
+    setIsEmojiPickerOpen: B,
+    setPopoutRef: H
+  } = e, G = r.useRef(null), W = (0, u.e7)([v.Z], () => v.Z.getCustomHangStatus()), z = (0, S.Z)(), q = (0, u.e7)([v.Z], () => v.Z.getFavoritedStatuses()), {
     defaultStatusVariant: K,
     allowPermanentClear: Y
   } = (0, y.bN)({
     guildId: V.guild_id,
     location: "HangStatusPicker"
-  }), X = (0, x.V)(K), J = r.useRef(null), [Q, $] = r.useState(null != (n = null == z ? true : z.status) ? n : ""), [ee, et] = r.useState(null != (l = null == z ? true : z.emoji) ? l : null), [en, ei] = r.useState(false), er = (0, u.e7)([v.Z], () => v.Z.getCurrentHangStatus()), el = X[er], ea = q.length > 0, eo = null == Q || "" === Q.trim(), es = (0, j.Z)(V), ec = Q.trim().length > 0 && Q.trim() !== (null == z || null == (t = z.status) ? true : t.trim()) || null != ee && !s()(ee, null == z ? true : z.emoji), [eu, ed] = r.useState(false), ep = (0, u.e7)([v.Z], () => v.Z.getFavoritedStatuses().length >= v.o), ef = Q.length > 0 || null != ee, [eh, em] = (0, m.US)([d.z.HANG_STATUS_POPOVER_NUX]);
+  }), X = (0, x.V)(K), J = r.useRef(null), [Q, $] = r.useState(null != (n = null == W ? true : W.status) ? n : ""), [ee, et] = r.useState(null != (l = null == W ? true : W.emoji) ? l : null), [en, ei] = r.useState(false), er = (0, u.e7)([v.Z], () => v.Z.getCurrentHangStatus()), el = X[er], ea = q.length > 0, eo = null == Q || "" === Q.trim(), es = (0, j.Z)(V), ec = Q.trim().length > 0 && Q.trim() !== (null == W || null == (t = W.status) ? true : t.trim()) || null != ee && !s()(ee, null == W ? true : W.emoji), [eu, ed] = r.useState(false), ep = (0, u.e7)([v.Z], () => v.Z.getFavoritedStatuses().length >= v.o), ef = Q.length > 0 || null != ee, [eh, em] = (0, m.US)([d.z.HANG_STATUS_POPOVER_NUX]);
   r.useEffect(() => {
     b.default.track(A.rMx.HANG_STATUS_PICKER_OPENED, U(k({}, (0, O.Z)(V.id)), {
       num_favorites: q.length,
-      num_recents: W.length
+      num_recents: z.length
     }))
   }, []), r.useEffect(() => {
     Q.trim().length > 0 && eu && ed(false), null == ee && eu && ed(false)
   }, [Q, ee, eu]), r.useEffect(() => {
     var e;
-    en || Q !== (null != (e = null == z ? true : z.status) ? e : "") && "" !== Q.trim() ? F(true) : F(false)
-  }, [Q, null == z ? true : z.status, ee, null == z ? true : z.emoji, F, en]), r.useEffect(() => {
-    null == B || B(null == J ? true : J.current)
-  }, [J, B]);
+    en || Q !== (null != (e = null == W ? true : W.status) ? e : "") && "" !== Q.trim() ? F(true) : F(false)
+  }, [Q, null == W ? true : W.status, ee, null == W ? true : W.emoji, F, en]), r.useEffect(() => {
+    null == H || H(null == J ? true : J.current)
+  }, [J, H]);
   let eg = r.useCallback(e => {
       e !== er && ((0, C.Zx)(e, true), null != ee && et(null), "" !== Q.trim() && $(""))
     }, [er, ee, Q]),
@@ -109,8 +109,8 @@ function V(e) {
         emoji: t,
         status: n
       } = e;
-      s()(t, null == z ? true : z.emoji) && n === (null == z ? true : z.status) || ((0, C._s)(e.status, e.emoji, true), et(e.emoji), $(e.status))
-    }, [null == z ? true : z.emoji, null == z ? true : z.status]),
+      s()(t, null == W ? true : W.emoji) && n === (null == W ? true : W.status) || ((0, C._s)(e.status, e.emoji, true), et(e.emoji), $(e.status))
+    }, [null == W ? true : W.emoji, null == W ? true : W.status]),
     ey = r.useCallback(e => {
       var t, n;
       null == e || null == (t = e.preventDefault) || t.call(e), null != ee && 0 === Q.trim().length && ed(true), eo || (eC({
@@ -224,10 +224,10 @@ function V(e) {
                 setCustomStatusEmoji: et,
                 selectedDefaultStatus: en || ef ? null : er,
                 defaultStatusVariant: K,
-                setIsEmojiPickerOpen: H
+                setIsEmojiPickerOpen: B
               })
             },
-            trailing: null == z && null == er || ec ? ec ? {
+            trailing: null == W && null == er || ec ? ec ? {
               icon: f.d4D,
               onClick: ey,
               "aria-label": M.intl.string(M.t["R3BPH+"]),
@@ -268,7 +268,7 @@ function V(e) {
             size: "xxs"
           })]
         }), q.map((e, t) => ej(e, t, "favorite"))]
-      }), W.length > 0 && ea && (0, i.jsxs)(i.Fragment, {
+      }), z.length > 0 && ea && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
           role: "separator",
           className: R.separator
@@ -282,7 +282,7 @@ function V(e) {
             size: "xxs"
           })]
         })]
-      }), W.map((e, t) => ej(e, t, "recent"))]
+      }), z.map((e, t) => ej(e, t, "recent"))]
     })]
   })
 }

@@ -119,10 +119,10 @@ function M(e) {
     guildPersonalized: V
   } = (0, h.h_)(l), {
     handleInvite: F,
-    handleMessage: H,
-    handlePersonalize: B,
+    handleMessage: B,
+    handlePersonalize: H,
     handleDownload: G,
-    handleAddApplication: z
+    handleAddApplication: W
   } = function(e) {
     let t = r.useCallback(() => {
         f.ZP.trackWithMetadata(P.rMx.SERVER_SETUP_CTA_CLICKED, {
@@ -194,7 +194,7 @@ function M(e) {
         }))
       }, [e])
     }
-  }(l), W = !(D || k || U || V), {
+  }(l), z = !(D || k || U || V), {
     titleAnimatedStyle: q,
     opacities: K
   } = function(e) {
@@ -233,7 +233,7 @@ function M(e) {
       } : {},
       opacities: i
     }
-  }(W), [Y, X] = r.useState([]), J = Y.length > 0;
+  }(z), [Y, X] = r.useState([]), J = Y.length > 0;
   if (r.useEffect(() => {
       (async () => {
         try {
@@ -246,7 +246,7 @@ function M(e) {
   let Q = [];
   p || (M && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
-    style: W ? {
+    style: z ? {
       opacity: K[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
@@ -257,29 +257,29 @@ function M(e) {
     })
   }, "invite")), R && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
-    style: W ? {
+    style: z ? {
       opacity: K[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.$_T,
       header: Z.intl.string(Z.t.c5kxPh),
       completed: V,
-      onClick: B
+      onClick: H
     })
   }, "customize")), L && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
-    style: W ? {
+    style: z ? {
       opacity: K[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.qMX,
       header: Z.intl.string(Z.t["SoP7+l"]),
       completed: U,
-      onClick: H
+      onClick: B
     })
   }, "message")), (0, j.isWeb)() && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
-    style: W ? {
+    style: z ? {
       opacity: K[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
@@ -290,14 +290,14 @@ function M(e) {
     })
   }, "download")), Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
-    style: W ? {
+    style: z ? {
       opacity: K[Q.length]
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.Tg$,
       header: Z.intl.string(Z.t.IhHDEO),
       completed: J,
-      onClick: z
+      onClick: W
     })
   }, "addapp")));
   let $ = x ? Z.intl.string(Z.t["1ach9C"]) : Z.intl.string(Z.t["ezm+/j"]);

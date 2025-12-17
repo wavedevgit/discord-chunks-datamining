@@ -1,23 +1,13 @@
-/** Chunk was on 86915 **/
-/** chunk id: 195349, original params: e,t,n (module,exports,require) **/
-"use strict";
-module.exports = {
-  settingCard: "_1a4ef2934d882343-settingCard",
-  active: "_1a4ef2934d882343-active",
-  shield: "_1a4ef2934d882343-shield " + require("./712721.js").desaturateUserColors,
-  cardIcon: "_1a4ef2934d882343-cardIcon",
-  cardFolder: "_1a4ef2934d882343-cardFolder",
-  adminWarning: "_1a4ef2934d882343-adminWarning",
-  folderHeader: "_1a4ef2934d882343-folderHeader",
-  folderTitle: "_1a4ef2934d882343-folderTitle",
-  sectionTitle: "_1a4ef2934d882343-sectionTitle",
-  roleMemberList: "_1a4ef2934d882343-roleMemberList",
-  divider: "_1a4ef2934d882343-divider",
-  memberRow: "_1a4ef2934d882343-memberRow",
-  rowHeight: "_1a4ef2934d882343-rowHeight",
-  rowLabel: "_1a4ef2934d882343-rowLabel",
-  rowBotTag: "_1a4ef2934d882343-rowBotTag",
-  rowLabelSubText: "_1a4ef2934d882343-rowLabelSubText",
-  removeIcon: "_1a4ef2934d882343-removeIcon",
-  disabledRemoveIcon: "_1a4ef2934d882343-disabledRemoveIcon"
-}
+/** Chunk was on 77069 **/
+/** chunk id: 195349, original params: t,e,n (module,exports,require) **/
+require.d(exports, {
+  w: () => r
+});
+var Chunk564344 = require("./564344.jsx"),
+  Chunk509613 = require("./509613.js"),
+  Chunk313789 = require("./313789.js"),
+  Chunk388032 = require("./388032.jsx");
+let r = (0, Chunk509613.ON)(Chunk313789.n.PROFILE_SETTING, {
+  Component: Chunk564344.Z,
+  useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["vi7f+q"]), Chunk388032.intl.string(Chunk388032.t.Ip9nBS), Chunk388032.intl.string(Chunk388032.t["2p07FR"]), Chunk388032.intl.string(Chunk388032.t["7vhiqk"]), Chunk388032.intl.string(Chunk388032.t.kPHroX), Chunk388032.intl.string(Chunk388032.t.lqaIxI), Chunk388032.intl.string(Chunk388032.t.Vgdusv), Chunk388032.intl.string(Chunk388032.t.DMeO2X)]
+})

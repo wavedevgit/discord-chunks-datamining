@@ -119,11 +119,11 @@ let F = (0, Chunk888651.$)(function(e) {
     channel: U,
     mute: V,
     localMute: F,
-    localVideoDisabled: H,
-    deaf: B,
+    localVideoDisabled: B,
+    deaf: H,
     video: G,
-    embeddedApplication: z,
-    serverMute: W,
+    embeddedApplication: W,
+    serverMute: z,
     serverDeaf: q,
     nick: K,
     ringing: Y,
@@ -194,7 +194,7 @@ let F = (0, Chunk888651.$)(function(e) {
         }))
       })
     },
-    eH = e => em ? (0, i.jsx)(E.$, k(D({}, e), {
+    eB = e => em ? (0, i.jsx)(E.$, k(D({}, e), {
       channel: U,
       setIsHangStatusInputFocused: eP,
       setIsEmojiPickerOpen: eN
@@ -203,7 +203,7 @@ let F = (0, Chunk888651.$)(function(e) {
       channel: U,
       userId: f.id
     })) : null,
-    eB = () => (0, i.jsx)(S.Z, {
+    eH = () => (0, i.jsx)(S.Z, {
       userId: f.id,
       channel: U
     }),
@@ -214,7 +214,7 @@ let F = (0, Chunk888651.$)(function(e) {
       previewIsOpen: ec,
       location: eh
     }),
-    ez = (0, i.jsx)("div", {
+    eW = (0, i.jsx)("div", {
       className: L.draggable,
       "data-dnd-name": U.name,
       onMouseEnter: ep ? true : () => {
@@ -240,22 +240,22 @@ let F = (0, Chunk888651.$)(function(e) {
               disconnected: $,
               mute: V,
               localMute: F,
-              localVideoDisabled: H,
+              localVideoDisabled: B,
               isStreaming: en,
               isGuest: er,
               video: G,
               priority: el,
               ringing: Y,
-              deaf: B,
+              deaf: H,
               nick: K,
               collapsed: l,
               overlap: l,
-              serverMute: W,
+              serverMute: z,
               serverDeaf: q,
               tabIndex: ef,
               otherClientSessionType: eu,
               voicePlatform: ed,
-              embeddedApplication: z,
+              embeddedApplication: W,
               avatarContainerClass: a()({
                 [L.userAvatar]: true
               }),
@@ -281,7 +281,7 @@ let F = (0, Chunk888651.$)(function(e) {
             })
           }
           let c = () => null;
-          return ey && ew ? c = eH : en ? c = eG : eM && f.id !== I.default.getId() ? c = eB : ey && (c = eH), (0, i.jsx)(s.yRy, {
+          return ey && ew ? c = eB : en ? c = eG : eM && f.id !== I.default.getId() ? c = eH : ey && (c = eB), (0, i.jsx)(s.yRy, {
             targetElementRef: ev,
             position: "right",
             renderPopout: c,
@@ -301,5 +301,5 @@ let F = (0, Chunk888651.$)(function(e) {
         })(e)
       })
     });
-  return et ? ee(ez) : ez
+  return et ? ee(eW) : eW
 })

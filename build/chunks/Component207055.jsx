@@ -48,10 +48,10 @@ let U = Chunk473749.memo(e => {
     channel: y,
     sessionId: j,
     nick: Z
-  } = e, T = C.id, k = (0, o.e7)([_.default], () => _.default.getId() === T, [T]), [U, V, F] = (0, o.Wu)([I.Z], () => k ? [!I.Z.isSupported() || I.Z.isSelfMute() || I.Z.isSelfMutedTemporarily(), I.Z.isSelfDeaf(), false] : [!I.Z.isSupported() || I.Z.isLocalMute(T), false, I.Z.isLocalVideoDisabled(T)], [k, T]), H = (0, o.e7)([A.Z], () => A.Z.isPrioritySpeaker(T)), B = (0, c.Z)({
+  } = e, T = C.id, k = (0, o.e7)([_.default], () => _.default.getId() === T, [T]), [U, V, F] = (0, o.Wu)([I.Z], () => k ? [!I.Z.isSupported() || I.Z.isSelfMute() || I.Z.isSelfMutedTemporarily(), I.Z.isSelfDeaf(), false] : [!I.Z.isSupported() || I.Z.isLocalMute(T), false, I.Z.isLocalVideoDisabled(T)], [k, T]), B = (0, o.e7)([A.Z], () => A.Z.isPrioritySpeaker(T)), H = (0, c.Z)({
     userId: T,
     checkSoundSharing: true
-  }), G = (0, o.e7)([A.Z], () => A.Z.getVoiceVolume(T), [T]), z = (0, o.e7)([A.Z], () => A.Z.isCurrentUserPTTLatched()), W = k && z, q = (0, o.e7)([P.ZP], () => P.ZP.isGuestOrLurker(y.guild_id, T)), K = (0, o.e7)([f.Z], () => f.Z.getGuildRingingUsers(y.id).has(T)), Y = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(y.id).find(e => {
+  }), G = (0, o.e7)([A.Z], () => A.Z.getVoiceVolume(T), [T]), W = (0, o.e7)([A.Z], () => A.Z.isCurrentUserPTTLatched()), z = k && W, q = (0, o.e7)([P.ZP], () => P.ZP.isGuestOrLurker(y.guild_id, T)), K = (0, o.e7)([f.Z], () => f.Z.getGuildRingingUsers(y.id).has(T)), Y = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(y.id).find(e => {
     let {
       userIds: t
     } = e;
@@ -72,7 +72,7 @@ let U = Chunk473749.memo(e => {
   });
   return (0, i.jsx)(v.Z, {
     shakeLocation: D.oZ.VOICE_USER,
-    isShaking: B,
+    isShaking: H,
     children: (0, i.jsx)(R.ZP, (r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -100,11 +100,11 @@ let U = Chunk473749.memo(e => {
       localVideoDisabled: F,
       mute: a || U,
       deaf: s || V,
-      speaking: B,
+      speaking: H,
       voiceDb: G,
-      latched: W,
+      latched: z,
       ringing: K,
-      priority: H,
+      priority: B,
       embeddedApplication: X[0],
       isStreaming: null != $ && $.channelId === y.id,
       isWatching: null != ee && ee.state !== L.jm8.ENDED,
@@ -150,13 +150,13 @@ let V = [],
       collapsed: u
     }), F = r.useRef(new s.sW(50, () => {
       P(A.current), A.current = null
-    })), H = r.useRef(new s.sW(175, () => {
+    })), B = r.useRef(new s.sW(175, () => {
       P(null)
-    })), B = r.useCallback(e => {
-      t && (N(true), H.current.cancel(), A.current = e, F.current.delay())
+    })), H = r.useCallback(e => {
+      t && (N(true), B.current.cancel(), A.current = e, F.current.delay())
     }, [t]), G = r.useCallback(e => {
-      t && (F.current.cancel(), A.current = null, N(false), H.current.delay())
-    }, [t]), z = (0, o.Wu)([T.Z], () => {
+      t && (F.current.cancel(), A.current = null, N(false), B.current.delay())
+    }, [t]), W = (0, o.Wu)([T.Z], () => {
       if (u) return [];
       let e = new Set;
       return null == w || w.forEach(t => {
@@ -168,8 +168,8 @@ let V = [],
         })
       }), Array.from(e)
     });
-    (0, p.Z)(z);
-    let W = (() => {
+    (0, p.Z)(W);
+    let z = (() => {
       if (null == w || 0 === w.length) return null;
       let e = u && w.length > d + 1 ? w.slice(0, d) : w,
         t = f.Z.getGuildRingingUsers(l.id),
@@ -193,7 +193,7 @@ let V = [],
             channel: l,
             collapsed: u,
             canDrag: n && Z.Z.can(L.Plq.MOVE_MEMBERS, l),
-            showPreview: B,
+            showPreview: H,
             hidePreview: G,
             previewIsOpen: I,
             shouldShowHoverPopout: S === a.id,
@@ -211,13 +211,13 @@ let V = [],
         numUsers: w.length - d
       })), r
     })();
-    return null == W && null == x ? null : (0, i.jsxs)(j.eJ, {
+    return null == z && null == x ? null : (0, i.jsxs)(j.eJ, {
       className: a()(v, k.list, {
         [k.collapsed]: u,
         [k.withGuildIcon]: b,
         [k.isThread]: O
       }),
       collapsed: u,
-      children: [W, x]
+      children: [z, x]
     })
   }

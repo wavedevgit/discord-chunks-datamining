@@ -162,10 +162,8 @@ function U() {
     }), (0, Chunk54381.jsx)(Chunk481060.njP.Panel, {
       id: require,
       "aria-labelledby": module,
-      className: Chunk168842.contentPanel,
-      children: (0, Chunk54381.jsx)("div", {
-        children: exports ? (0, Chunk54381.jsx)(j, {}) : (0, Chunk54381.jsx)(Chunk873546, {})
-      })
+      className: Chunk168842.userSettingsContentPanel,
+      children: exports ? (0, Chunk54381.jsx)(j, {}) : (0, Chunk54381.jsx)(Chunk873546, {})
     })]
   })
 }

@@ -78,10 +78,10 @@ function I(e) {
       layout: V,
       idle: F
     } = e,
-    H = f.Z.getVideoComponent(),
-    B = p.default.getId(),
-    [G, z] = r.useState(null),
-    W = (0, c.Z)(G),
+    B = f.Z.getVideoComponent(),
+    H = p.default.getId(),
+    [G, W] = r.useState(null),
+    z = (0, c.Z)(G),
     [q, K] = r.useState(true),
     [Y, X] = r.useState(false),
     J = R.type === x.fO.ACTIVITY,
@@ -111,7 +111,7 @@ function I(e) {
       clearTimeout(e)
     }
   }, []);
-  let eh = q || null == W,
+  let eh = q || null == z,
     em = eh ? "animate-never" : "animate-always",
     eg = (0, s.q_F)({
       value: +!!et,
@@ -160,9 +160,9 @@ function I(e) {
       }
     }, em),
     ex = r.useCallback(e => {
-      z(e), K(false)
+      W(e), K(false)
     }, []),
-    eO = et ? [] : (0, C.n3)(T, R, B),
+    eO = et ? [] : (0, C.n3)(T, R, H),
     {
       visibleParticipants: eE,
       participantTileWidth: ej
@@ -201,7 +201,7 @@ function I(e) {
                   noBorder: eu >= k || ec >= U,
                   channel: M,
                   className: O.focusedVideo,
-                  videoComponent: H,
+                  videoComponent: B,
                   width: k,
                   participant: t,
                   onClick: l,

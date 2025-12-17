@@ -133,13 +133,13 @@ let eF = {
     [Chunk981631.AEg.NO_CHAT]: Chunk94720.noChat,
     [Chunk981631.AEg.FULL_SCREEN]: Chunk94720.fullScreen
   },
-  eH = {
+  eB = {
     [Chunk981631.IlC.POPOUT]: Chunk94720.popout,
     [Chunk981631.IlC.APP]: null,
     [Chunk981631.IlC.OVERLAY]: null,
     [Chunk981631.IlC.CALL_TILE_POPOUT]: null
   };
-class eB extends Chunk473749.PureComponent {
+class eH extends Chunk473749.PureComponent {
   getRootNode() {
     var e, t;
     return (null != (t = null == (e = this.props.popoutWindow) ? true : module.window) ? exports : window).document.getElementById("app-mount")
@@ -262,7 +262,7 @@ class eB extends Chunk473749.PureComponent {
       screenMessage: this.screenMessage,
       disableGradients: !l || y,
       idle: !m && l && !y && e.idle,
-      children: l && this.popoutOpen && !this.inPopout ? null : (0, i.jsx)(W.Z, {
+      children: l && this.popoutOpen && !this.inPopout ? null : (0, i.jsx)(z.Z, {
         ref: this._contentRef,
         inCall: l,
         channel: p,
@@ -300,7 +300,7 @@ class eB extends Chunk473749.PureComponent {
       resizedHeight: p
     } = this.state, h = Chunk473749 === Chunk981631.WtW.VIDEO, m = module !== Chunk981631.AEg.NO_CHAT && module !== Chunk981631.AEg.FULL_SCREEN && null != Chunk990547, g = Chunk981631.BRd.MIDNIGHT;
     return (0, Chunk54381.jsxs)("div", {
-      className: a()(Chunk94720.wrapper, eF[module], eH[Chunk512722], {
+      className: a()(Chunk94720.wrapper, eF[module], eB[Chunk512722], {
         [Chunk94720.poppedOut]: this.popoutOpen && !this.inPopout && module !== Chunk981631.AEg.NO_CHAT && exports.isPrivate(),
         [Chunk94720.video]: Chunk570140,
         [Chunk94720.sidebarOpen]: Chunk120356 || Chunk704215
@@ -422,7 +422,7 @@ class eB extends Chunk473749.PureComponent {
           this.trackCallTileContextMenuImpression(e, eM.TH.USER);
           let f = ep.default.getUser(e.id);
           if (null != f) {
-            if (r) return (0, B.D)(t, f, c, p, (e, t) => (0, eA.o)({
+            if (r) return (0, H.D)(t, f, c, p, (e, t) => (0, eA.o)({
               menuItemProps: t,
               menuName: e,
               entrypoint: eM.A5.THREE_DOT,
@@ -504,7 +504,7 @@ class eB extends Chunk473749.PureComponent {
       } = this.props, n = async () => {
         (null == t ? true : t.applicationId) != null && await (0, S.nJ)(t.applicationId, e.id);
         let n = e.getGuildId();
-        null != n && (0, H.uL)((0, em.LY)(n)), V.openChannelCallPopout(e)
+        null != n && (0, B.uL)((0, em.LY)(n)), V.openChannelCallPopout(e)
       };
       null == t || (0, E.R)() ? n() : (0, I.Z)({
         onConfirm: n
@@ -525,7 +525,7 @@ class eB extends Chunk473749.PureComponent {
         inCall: t,
         layout: n
       } = this.props;
-      return t || n === eR.AEg.MINIMUM || n === eR.AEg.NORMAL ? (0, i.jsx)(z.ZP, {
+      return t || n === eR.AEg.MINIMUM || n === eR.AEg.NORMAL ? (0, i.jsx)(W.ZP, {
         exitFullScreen: this.maybeLeaveFullScreen,
         channel: e,
         onDisconnectCall: this.handleDisconnect,
@@ -723,8 +723,8 @@ let eG = function(e) {
     layout: D,
     participantsOpen: k,
     participantsListOpen: V,
-    chatOpen: H,
-    selectedParticipant: B
+    chatOpen: B,
+    selectedParticipant: H
   } = (0, u.cj)([ev.Z], () => {
     let e = C === eR.IlC.POPOUT,
       t = ev.Z.getMode(n.id);
@@ -741,11 +741,11 @@ let eG = function(e) {
       participantsListOpen: ev.Z.getParticipantsListOpen(n.id),
       participantsVersion: ev.Z.getParticipantsVersion(n.id)
     }
-  }, [C, n.id]), z = (0, u.Wu)([el.Z], () => el.Z.getAllActiveStreams()), {
-    selectedStream: W
+  }, [C, n.id]), W = (0, u.Wu)([el.Z], () => el.Z.getAllActiveStreams()), {
+    selectedStream: z
   } = (0, u.cj)([el.Z], () => ({
-    selectedStream: null != B ? el.Z.getActiveStreamForStreamKey(B.id) : null
-  }), [B]), q = (0, u.e7)([es.Z], () => es.Z.getGuild(n.getGuildId())), K = (0, u.e7)([eu.ZP], () => eu.ZP.getMentionCount(n.id), [n.id]), Y = (0, u.e7)([ea.default], () => ea.default.getId()), {
+    selectedStream: null != H ? el.Z.getActiveStreamForStreamKey(H.id) : null
+  }), [H]), q = (0, u.e7)([es.Z], () => es.Z.getGuild(n.getGuildId())), K = (0, u.e7)([eu.ZP], () => eu.ZP.getMentionCount(n.id), [n.id]), Y = (0, u.e7)([ea.default], () => ea.default.getId()), {
     popoutWindow: X,
     popoutWindowAlwaysOnTop: J
   } = (0, u.cj)([F.Z], () => ({
@@ -790,7 +790,7 @@ let eG = function(e) {
       page: eR.ZY5.CHANNEL_CALL,
       children: (0, i.jsx)(eE.B2, {
         children: (0, i.jsxs)(eT._A, {
-          children: [(0, i.jsx)(eB, {
+          children: [(0, i.jsx)(eH, {
             channel: n,
             guild: q,
             hasConnectPermission: Q,
@@ -801,19 +801,19 @@ let eG = function(e) {
             popoutWindow: X,
             popoutWindowAlwaysOnTop: J,
             mentionCount: K,
-            selectedStream: W,
+            selectedStream: z,
             mode: w,
             inCall: S,
             participants: I,
             filteredParticipants: T,
             participantsVersion: A,
             layout: D,
-            chatOpen: H,
+            chatOpen: B,
             maxSidebarWidth: ex,
             shouldUseVoiceEffectsActionBar: em,
             currentUserId: Y,
-            selectedParticipant: B,
-            allActiveStreams: z,
+            selectedParticipant: H,
+            allActiveStreams: W,
             useNewInviteButton: er,
             connectedEmbeddedActivity: null != eh ? eh : true,
             showChatToasts: $,

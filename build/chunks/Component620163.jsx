@@ -450,16 +450,6 @@ let eG = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         searchableTitles: [ex.intl.string(ex.t["Hj/But"]), ex.intl.string(ex.t["N/oRI+"]), ex.intl.string(ex.t.QVdYsK), ex.intl.string(ex.t["aWD+tu"]), ex.intl.string(ex.t["K0OWP+"])],
         parent: eP.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY
       },
-      [eP.s6.PARENTAL_CONTROLS_SEXUALLY_EXPLICIT_MEDIA_REDACTION]: {
-        section: ew.oAB.FAMILY_CENTER_PARENTAL_CONTROLS,
-        parent: eP.s6.PRIVACY_FAMILY_CENTER,
-        predicate: () => false
-      },
-      [eP.s6.PARENTAL_CONTROLS_GORE_MEDIA_REDACTION]: {
-        section: ew.oAB.FAMILY_CENTER_PARENTAL_CONTROLS,
-        parent: eP.s6.PRIVACY_FAMILY_CENTER,
-        predicate: () => false
-      },
       [eP.s6.PRIVACY_DIRECT_MESSAGE_SPAM_FILTER_V2]: {
         section: ew.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [ex.intl.string(ex.t.JzaP4h), ex.intl.string(ex.t.H9XOl3), ex.intl.string(ex.t.k4W40P)],

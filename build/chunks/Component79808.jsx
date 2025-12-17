@@ -31,7 +31,11 @@ function y(e) {
     node: S,
     visibleDirectory: P,
     accessibleDirectory: C
-  } = (0, f.ZP)(n, null != v ? v : ""), w = null != y && (null == (t = P.entry(y)) ? true : t.parentPanelKey) != null ? y : p, T = o.useMemo(() => C.get(null != x ? x : w), [x, C, w]), {
+  } = (0, f.ZP)(n, null != v ? v : ""), w = null != y && (null == (t = P.entry(y)) ? true : t.parentPanelKey) != null ? y : p, T = o.useMemo(() => {
+    var e;
+    let t = null == (e = C.entry(null != x ? x : w)) ? true : e.parentPanelKey;
+    if (null != t) return C.getPanelOrThrow(t)
+  }, [x, C, w]), {
     navigateWithValidation: k
   } = (0, s.Cu)();
   (0, i.ZP)(() => {

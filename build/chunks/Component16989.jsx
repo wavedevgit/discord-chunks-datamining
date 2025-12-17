@@ -29,8 +29,8 @@ let v = e => {
     fractionalPremiumInfo: P,
     setStep: x
   } = e, O = (0, i.e7)([s.default], () => s.default.locale), _ = new Date(y.subscriptionPeriodStart);
-  w.isBoostOnly || (_ = f.ZP.extendDateWithUnconsumedFractionalPremium(_, P.unactivatedUnits));
-  let g = (0, p.T4)(y.total, y.currency),
+  w.isBoostOnly || (_ = p.ZP.extendDateWithUnconsumedFractionalPremium(_, P.unactivatedUnits));
+  let g = (0, f.T4)(y.total, y.currency),
     [j, R] = (0, n.useState)(false),
     [T, k] = (0, n.useState)(false),
     M = _.toLocaleDateString(O, {

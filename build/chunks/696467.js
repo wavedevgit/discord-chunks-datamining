@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 696467, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  u: () => P
+  u: () => R
 });
 var Chunk755721 = require("./755721.js"),
   Chunk168107 = require("./168107.jsx"),
@@ -23,13 +23,13 @@ var Chunk755721 = require("./755721.js"),
   Chunk526761 = require("./526761.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let R = (t, e) => {
+let P = (t, e) => {
     o.default.track(C.rMx.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
       default_guilds_restricted: t,
       applied_to_existing_guilds: e
     })
   },
-  P = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
+  R = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["3o2ojh"]),
     useSubtitle: () => (0, Chunk639814.c_)() ? Chunk388032.intl.format(Chunk388032.t.WpnWLc, {
       helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.MESSAGE_REQUESTS)
@@ -65,10 +65,10 @@ let R = (t, e) => {
           cancelText: f.intl.string(f.t.p89ACt),
           confirmButtonColor: i.zx.Colors.BRAND,
           onConfirm: () => {
-            d.mX.updateSetting(n), R(n, false)
+            d.mX.updateSetting(n), P(n, false)
           },
           onCancel: () => {
-            d.mX.updateSetting(n), d.zA.updateSetting(n ? a.Z.getGuildIds() : []), R(n, true)
+            d.mX.updateSetting(n), d.zA.updateSetting(n ? a.Z.getGuildIds() : []), P(n, true)
           }
         })
       } else {

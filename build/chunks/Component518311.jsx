@@ -337,7 +337,7 @@ class eu extends(i = Chunk473749.PureComponent) {
     if (!exports || this.isNotFriends() || this.isPartyFull()) return null;
     let i = [];
     return require.forEach(e => {
-      let t = B.default.getUser(e);
+      let t = H.default.getUser(e);
       null != t && i.push({
         id: e,
         label: Y.ZP.getName(t)
@@ -804,7 +804,7 @@ class eu extends(i = Chunk473749.PureComponent) {
         channel: t,
         invite: n
       } = this.props;
-      null != n && (0, z.JG)(e), null != this.copyTimeout && clearTimeout(this.copyTimeout), this.setState({
+      null != n && (0, W.JG)(e), null != this.copyTimeout && clearTimeout(this.copyTimeout), this.setState({
         copied: true
       }), this.copyTimeout = setTimeout(() => {
         this.setState({
@@ -838,7 +838,7 @@ function ed(e) {
     analyticsLocations: s
   } = (0, j.ZP)(O.Z.NEW_GROUP_DM_INVITE_MODAL);
   if (!(0, I.a)(O.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
-  let c = (0, _.pT)(Array.from(t), B.default, F.Z);
+  let c = (0, _.pT)(Array.from(t), H.default, F.Z);
   return (0, r.jsxs)("div", {
     className: en.customizationContainer,
     children: [(0, r.jsx)(Z.B, {
@@ -869,12 +869,12 @@ function ep(e) {
   var {
     channel: t
   } = e, n = ea(e, ["channel"]);
-  let i = (0, u.cj)([k.Z, D.Z, H.Z], () => {
+  let i = (0, u.cj)([k.Z, D.Z, B.Z], () => {
     let e;
     return null != t && null != (e = D.Z.getInvite(t.id)) && e.isExpired() && (e = null), el(er({}, k.Z.getState()), {
       invite: e,
-      hideDiscriminator: H.Z.hidePersonalInformation,
-      hideInstantInvites: H.Z.hideInstantInvites
+      hideDiscriminator: B.Z.hidePersonalInformation,
+      hideInstantInvites: B.Z.hideInstantInvites
     })
   });
   return (0, r.jsx)(eu, er({
@@ -894,8 +894,8 @@ function ef(e) {
   }))), {
     modalKey: u
   }), [t, u, c]), h = l.useCallback(() => c ? d ? (0, p.Mr3)(u) : f() : s(e => !e), [c, d, u, f, s]);
-  return l.useEffect(() => (i && W.S.subscribe($.CkL.TOGGLE_DM_CREATE, h), () => {
-    W.S.unsubscribe($.CkL.TOGGLE_DM_CREATE, h)
+  return l.useEffect(() => (i && z.S.subscribe($.CkL.TOGGLE_DM_CREATE, h), () => {
+    z.S.unsubscribe($.CkL.TOGGLE_DM_CREATE, h)
   }), [i, h, c]), (0, x.ZP)(() => {
     (0, w._)()
   }), {
@@ -937,7 +937,7 @@ function eh(e) {
     channel: i,
     location: g,
     subscribeToGlobalHotkey: m
-  }), S = (0, u.e7)([B.default], () => B.default.getUser(null == i ? true : i.getRecipientId()));
+  }), S = (0, u.e7)([H.default], () => H.default.getUser(null == i ? true : i.getRecipientId()));
   return null != (t = null == S ? true : S.bot) && t || null != (n = null == S ? true : S.isProvisional) && n ? null : j ? (0, r.jsx)(J.ZP.Icon, {
     ref: b,
     onClick: y,

@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 62764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => B
+  Z: () => H
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -43,7 +43,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk860302 = require("./860302.js"),
   Chunk414103 = require("./414103.js");
 
-function H(e) {
+function B(e) {
   let {
     channel: t
   } = e, l = t.isArchivedThread(), a = (0, j.P0)(t), [o, c] = r.useState(false), d = () => {
@@ -79,7 +79,7 @@ function H(e) {
   }) : null
 }
 
-function B(e) {
+function H(e) {
   let {
     postId: t,
     isFirstMessage: n,
@@ -88,7 +88,7 @@ function B(e) {
   } = e, {
     ref: E,
     width: j
-  } = (0, f.ZP)(), [_, k] = r.useState(3), [B, G] = r.useState(!n), [z, W] = (0, h.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
+  } = (0, f.ZP)(), [_, k] = r.useState(3), [H, G] = r.useState(!n), [W, z] = (0, h.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
     firstMessage: K
   } = (0, M.cl)(q), Y = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
     disableReactionUpdates: X,
@@ -125,13 +125,13 @@ function B(e) {
         location: {
           section: L.jXE.CHANNEL_HEADER
         }
-      }), (0, A.JG)((0, N.EO)(q, en), () => W(true))
+      }), (0, A.JG)((0, N.EO)(q, en), () => z(true))
     },
     eu = Y ? u.dz2 : u.Dkj;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: a()(U.container, {
-        [U.header]: B
+        [U.header]: H
       }),
       ref: E,
       children: [et ? (0, i.jsx)("div", {
@@ -187,7 +187,7 @@ function B(e) {
         })]
       }), (0, i.jsxs)("div", {
         className: U.buttons,
-        children: [et ? (0, i.jsx)(H, {
+        children: [et ? (0, i.jsx)(B, {
           channel: q
         }) : (0, i.jsx)(c.u, {
           text: D.intl.string(D.t.F7oeDv),
@@ -202,7 +202,7 @@ function B(e) {
           })
         }), (0, i.jsx)(c.u, {
           text: D.intl.string(D.t.WqhZss),
-          children: z ? (0, i.jsx)(u.Button, {
+          children: W ? (0, i.jsx)(u.Button, {
             icon: u.dz2,
             size: "sm",
             variant: "secondary",

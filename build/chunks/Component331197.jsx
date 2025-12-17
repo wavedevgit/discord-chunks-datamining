@@ -49,12 +49,12 @@ function j(e) {
     analyticsLocations: V
   } = (0, u.ZP)(), {
     isHovered: F,
-    setIsHovered: H,
-    onMouseEnter: B,
+    setIsHovered: B,
+    onMouseEnter: H,
     onMouseLeave: G
   } = (0, h.Z)(200, 300);
 
-  function z(e) {
+  function W(e) {
     null != A && (0, c.jW)(e, async () => {
       let {
         default: e
@@ -97,8 +97,8 @@ function j(e) {
     })
   }
 
-  function W() {
-    (0, d.v)(P, d.d.SOUNDBOARD), S === O.D.SOUNDBOARD ? (null == _ || _(true), G()) : (null != S ? (Z(), B()) : Z(), null == _ || _(O.D.SOUNDBOARD))
+  function z() {
+    (0, d.v)(P, d.d.SOUNDBOARD), S === O.D.SOUNDBOARD ? (null == _ || _(true), G()) : (null != S ? (Z(), H()) : Z(), null == _ || _(O.D.SOUNDBOARD))
   }
   let q = r.useRef(null);
   return (0, i.jsx)(s.y, {
@@ -110,7 +110,7 @@ function j(e) {
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      H(false), null == _ || _(true)
+      B(false), null == _ || _(true)
     },
     renderPopout: e => {
       let {
@@ -118,7 +118,7 @@ function j(e) {
       } = e;
       return L ? null : (0, i.jsx)(v.Z, {
         children: (0, i.jsx)("div", {
-          onMouseEnter: B,
+          onMouseEnter: H,
           onMouseLeave: G,
           children: (0, i.jsx)(b.Z, {
             guildId: A,
@@ -140,10 +140,10 @@ function j(e) {
       label: w ? E.intl.string(E.t["Ox4/zU"]) : M ? E.intl.string(E.t["+YBKYI"]) : R ? E.intl.string(E.t.X1lQli) : true,
       iconComponent: I,
       disabled: L,
-      onContextMenu: z,
-      onClick: W,
+      onContextMenu: W,
+      onClick: z,
       onMouseEnter: () => {
-        B(), T()
+        H(), T()
       },
       onMouseLeave: () => {
         null == S && (G(), N())

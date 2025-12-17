@@ -55,7 +55,7 @@ let w = e => {
   let {
     analyticsLocations: a,
     premiumSubscription: o
-  } = e, w = null == (t = (0, p.Af)(o)) ? true : t.planId, y = null != w ? (0, p.Rd)(w) : null;
+  } = e, w = null == (t = (0, f.Af)(o)) ? true : t.planId, y = null != w ? (0, f.Rd)(w) : null;
   i()(null != y, "Should not be resubscribing Nitro without premiumType");
   let P = y === h.PremiumTypes.TIER_0,
     [x, O] = n.useState(m.R.CONFIRM),
@@ -79,7 +79,7 @@ let w = e => {
     value: a,
     children: (0, r.jsx)(d.PaymentContextProvider, {
       activeSubscription: o,
-      stepConfigs: (0, f.O)(),
+      stepConfigs: (0, p.O)(),
       skuIDs: [],
       breadcrumbs: [s.h8.CONFIRM],
       children: (0, r.jsx)(l.b6, {

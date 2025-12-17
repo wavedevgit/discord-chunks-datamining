@@ -72,13 +72,13 @@ function L(e) {
     setValue: V,
     openClips: F
   } = e, {
-    analyticsLocations: H,
-    newestAnalyticsLocation: B
+    analyticsLocations: B,
+    newestAnalyticsLocation: H
   } = (0, d.ZP)(), G = (0, C.Dt)({
     channel: t
-  }), z = (0, l.e7)([v.Z], () => v.Z.isInProgress());
+  }), W = (0, l.e7)([v.Z], () => v.Z.isInProgress());
 
-  function W() {
+  function z() {
     (0, x.R6)(t, true, "Plus Button")
   }
 
@@ -147,7 +147,7 @@ function L(e) {
         type: "contextless"
       },
       openInPopout: false,
-      analyticsLocation: B
+      analyticsLocation: H
     }), (0, u.w1)({
       guildId: t.guild_id
     })
@@ -228,7 +228,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.JOIN,
                 activity: n,
-                location: H[H.length - 1]
+                location: B[B.length - 1]
               })
             }
           }, "play");
@@ -242,7 +242,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.LISTEN,
                 activity: n,
-                location: H[H.length - 1]
+                location: B[B.length - 1]
               })
             }
           }, "listen");
@@ -256,7 +256,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.WATCH,
                 activity: n,
-                location: H[H.length - 1]
+                location: B[B.length - 1]
               })
             }
           }, "watch");
@@ -264,7 +264,7 @@ function L(e) {
           return (0, i.jsx)(s.sNh, {
             id: "THREAD",
             label: r,
-            action: W
+            action: z
           }, "THREAD");
         case I.r.SLASH_COMMAND:
           return (0, i.jsx)(s.sNh, {
@@ -299,11 +299,11 @@ function L(e) {
             id: "summarize_thread",
             label: r,
             action: () => y.Z.summarizeThread(t),
-            icon: z ? (0, i.jsx)(s.$jN, {
+            icon: W ? (0, i.jsx)(s.$jN, {
               type: s.RAz.PULSING_ELLIPSIS
             }) : null,
-            disabled: z,
-            children: z ? null : (0, i.jsxs)(i.Fragment, {
+            disabled: W,
+            children: W ? null : (0, i.jsxs)(i.Fragment, {
               children: [(0, i.jsx)(s.sNh, {
                 id: "summarize_thread_for_everyone",
                 label: A.intl.string(A.t.eCzSdd),

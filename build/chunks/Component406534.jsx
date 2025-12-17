@@ -156,7 +156,7 @@ function et(e) {
     }) : null,
     eS = (0, b.Z)(U.id),
     e_ = (0, C.nw)(U);
-  (0, W.Z)();
+  (0, z.Z)();
   let eP = null,
     eI = [],
     eZ = el.map((e, t) => {
@@ -168,7 +168,7 @@ function et(e) {
           item: e,
           channel: U,
           isBeforeGroup: null == e.content && $(el[t + 1])
-        }) : (0, i.jsx)(H.Z, {
+        }) : (0, i.jsx)(B.Z, {
           isUnread: l,
           isBeforeGroup: null == e.content && $(el[t + 1]),
           id: l ? K.j1 : true,
@@ -240,7 +240,7 @@ function et(e) {
       showingBanner: eu
     }, "empty-message")), et.hasMoreAfter && eI.push((0, i.jsx)(G.ZP, Q({
       compact: er
-    }, es), "has-more-after")), !eu && em && eh() && eI.push((0, i.jsx)(z.Z, {
+    }, es), "has-more-after")), !eu && em && eh() && eI.push((0, i.jsx)(W.Z, {
       channel: U
     })), en > 0 && ei && eh()) {
     let e, t, n = Z.ZP.getOldestUnreadTimestamp(U.id),
@@ -289,7 +289,7 @@ function et(e) {
             color: "currentColor",
             children: n
           });
-          r = (0, i.jsx)(B.G5, {
+          r = (0, i.jsx)(H.G5, {
             scrollManager: eo,
             content: e,
             channel: U
@@ -328,13 +328,13 @@ function et(e) {
               children: n
             })
           });
-          r = (0, i.jsx)(B.LE, {
+          r = (0, i.jsx)(H.LE, {
             content: e,
             channelId: U.id
           })
         }
       }
-    } else eO.includes(q.E.NEW_MESSAGES) && (r = (0, i.jsx)(B.LE, {
+    } else eO.includes(q.E.NEW_MESSAGES) && (r = (0, i.jsx)(H.LE, {
       content: J.intl.format(e, {
         count: en,
         timestamp: l
@@ -342,10 +342,10 @@ function et(e) {
       channelId: U.id
     }))
   }
-  if (null == r && (0, s.Lp)(U) && eC && eO.includes(q.E.SUMMARIES) && (r = (0, i.jsx)(B.BO, {
+  if (null == r && (0, s.Lp)(U) && eC && eO.includes(q.E.SUMMARIES) && (r = (0, i.jsx)(H.BO, {
       channel: U,
       scrollManager: eo
-    })), et.error) f = (0, i.jsx)(B.Rp, {
+    })), et.error) f = (0, i.jsx)(H.Rp, {
     loading: et.loadingMore,
     onClick: () => {
       var e;
@@ -361,10 +361,10 @@ function et(e) {
     let {
       jumpReturnTargetId: e
     } = et;
-    f = et.loadingMore && et.jumpedToPresent ? (0, i.jsx)(B.DR, {
+    f = et.loadingMore && et.jumpedToPresent ? (0, i.jsx)(H.DR, {
       className: ep
-    }) : null != e ? (0, i.jsx)(B.DR, {
-      type: B.A7.REPLY,
+    }) : null != e ? (0, i.jsx)(H.DR, {
+      type: H.A7.REPLY,
       onClick: () => {
         o.Z.jumpToMessage({
           channelId: U.id,
@@ -373,7 +373,7 @@ function et(e) {
         })
       },
       className: ep
-    }) : (0, i.jsx)(B.DR, {
+    }) : (0, i.jsx)(H.DR, {
       onClick: () => (function(e) {
         o.Z.jumpToPresent(e.id, Y.AQB);
         let t = T.Z.getChannelId();

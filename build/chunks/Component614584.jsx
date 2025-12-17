@@ -119,17 +119,17 @@ let S = Chunk473749.memo(function(e) {
   } = (0, l.cj)([h.Z], () => ({
     isReplyAuthorBlocked: null != w && h.Z.isBlockedForMessage(w),
     isReplyAuthorIgnored: null != w && h.Z.isIgnoredForMessage(w)
-  }), [w]), V = (0, v.wq)(null == w ? true : w.author.id, _.id), F = (0, v.$3)(n, w), H = (0, v.Wl)(w, _, I, T), B = (0, v.rY)(Z, T), G = r.useCallback(() => {
+  }), [w]), V = (0, v.wq)(null == w ? true : w.author.id, _.id), F = (0, v.$3)(n, w), B = (0, v.Wl)(w, _, I, T), H = (0, v.rY)(Z, T), G = r.useCallback(() => {
     T({
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [T]), z = (0, b.Uj)(n);
+  }, [T]), W = (0, b.Uj)(n);
   return (0, i.jsx)(C.Z, {
     repliedAuthor: M,
     baseMessage: n,
     channel: _,
-    baseAuthor: z,
+    baseAuthor: W,
     referencedMessage: S,
     content: D,
     compact: P,
@@ -138,8 +138,8 @@ let S = Chunk473749.memo(function(e) {
     showAvatarPopout: Z,
     showUsernamePopout: I,
     renderPopout: y.Z,
-    onClickAvatar: B,
-    onClickUsername: H,
+    onClickAvatar: H,
+    onClickUsername: B,
     onClickReply: F,
     onContextMenu: V,
     onPopoutRequestClose: G,

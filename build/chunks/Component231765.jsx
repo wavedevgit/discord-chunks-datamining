@@ -459,10 +459,7 @@ function H(e) {
     };
   return i.useEffect(() => (window.addEventListener("mousemove", h), () => window.removeEventListener("mousemove", h)), []), (0, r.jsxs)(c.Kqy, {
     gap: 24,
-    children: [(0, r.jsx)(c.Heading, {
-      variant: "heading-lg/semibold",
-      children: v.intl.string(v.t.AtCukI)
-    }), (0, r.jsx)(k, {
+    children: [(0, r.jsx)(k, {
       settings: a,
       updateSettings: m
     }), (0, r.jsx)(B, {

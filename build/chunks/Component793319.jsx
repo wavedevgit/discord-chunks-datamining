@@ -174,7 +174,7 @@ function eP(e) {
           let {
             closePopout: r
           } = e;
-          return (0, i.jsx)(z.Z, {
+          return (0, i.jsx)(W.Z, {
             children: (0, i.jsx)(eh.Z, {
               channel: t,
               currentUser: n,
@@ -416,7 +416,7 @@ function eT(e) {
       color: "join",
       channel: t,
       className: eO.controlButton
-    }), h ? (0, i.jsx)(W.Z, {
+    }), h ? (0, i.jsx)(z.Z, {
       color: "disconnect",
       channel: t,
       className: eO.controlButton,
@@ -455,7 +455,7 @@ let eA = function(e) {
   })), L = (0, N.Z)(), V = (0, u.e7)([T.default], () => null != T.default.getAwaitingRemoteSessionInfo()), F = null != L, G = (0, u.e7)([el.Z], () => {
     var e;
     return (null != (e = null == L ? true : L.channelId) ? e : el.Z.getVoiceChannelId()) === n.id
-  }), W = (0, H.Z)({
+  }), z = (0, B.Z)({
     channelId: n.id,
     location: "center-control-tray"
   }), q = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()), {
@@ -470,7 +470,7 @@ let eA = function(e) {
     showRefreshedAudioContextMenu: ei
   } = (0, U.e)({
     location: v.Z.VOICE_CONTROL_TRAY
-  }), ed = (0, B.Z)(n), eh = r.useRef(null), eg = r.useRef(null), eb = (0, k.bp)(), eC = en ? e => {
+  }), ed = (0, H.Z)(n), eh = r.useRef(null), eg = r.useRef(null), eb = (0, k.bp)(), eC = en ? e => {
     (0, h.jW)(e, () => Promise.resolve(() => (0, i.jsx)(E.default, {
       onClose: h.Zy,
       renderInputDevices: true,
@@ -532,7 +532,7 @@ let eA = function(e) {
                 minimal: true,
                 onInteraction: eN("AudioDeviceMenu"),
                 appContext: eb
-              }), (0, i.jsxs)(z.Z, {
+              }), (0, i.jsxs)(W.Z, {
                 children: [t, " "]
               })
             },
@@ -565,7 +565,7 @@ let eA = function(e) {
               let {
                 closePopout: t
               } = e;
-              return (0, i.jsx)(z.Z, {
+              return (0, i.jsx)(W.Z, {
                 children: (0, i.jsx)(S.Z, {
                   onClose: t,
                   minimal: true,
@@ -617,7 +617,7 @@ let eA = function(e) {
             themeable: true,
             whichPopoutIsOpen: m,
             setWhichPopoutIsOpen: g
-          }), W && (0, i.jsx)(ef.Z, {
+          }), z && (0, i.jsx)(ef.Z, {
             channel: n,
             themeable: true,
             whichPopoutIsOpen: m,

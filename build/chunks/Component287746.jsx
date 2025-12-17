@@ -448,7 +448,7 @@ class e7 extends Chunk473749.PureComponent {
           let {
             location: t,
             sectionName: n
-          } = null != (v = (0, eH._U)(l)) ? v : {}, i = e === T.bB.APPLICATION_LAUNCHER ? j.Z.lastShownEntrypoint() : S._b.TEXT, {
+          } = null != (v = (0, eB._U)(l)) ? v : {}, i = e === T.bB.APPLICATION_LAUNCHER ? j.Z.lastShownEntrypoint() : S._b.TEXT, {
             isAuthorized: r
           } = await (0, w.L)({
             applicationId: l.applicationId,
@@ -464,7 +464,7 @@ class e7 extends Chunk473749.PureComponent {
             shouldClear: false,
             shouldRefocus: true
           });
-          (0, eH.SC)(l)
+          (0, eB.SC)(l)
         }
         let n = await (0, A.Z)({
           command: l,
@@ -844,7 +844,7 @@ class e8 extends Chunk473749.PureComponent {
       let {
         activeView: t
       } = e;
-      (0, H.PG)(t, this.props.chatInputType, this.props.channel.id)
+      (0, B.PG)(t, this.props.chatInputType, this.props.channel.id)
     }), eQ(this, "handleOpenAppLauncher", e => {
       let {
         applicationId: t
@@ -865,7 +865,7 @@ class e8 extends Chunk473749.PureComponent {
       } = e;
       return t.type === eK.d4z.DM && n ? (0, i.jsx)(es.Z, {}) : t.isModeratorReportChannel() && t.isArchivedThread() ? (0, i.jsx)(ed.Z, {
         channelId: t.id
-      }) : null != l && (0, z.J)(l) && null != r && !eI.Z.can(eK.Plq.ADMINISTRATOR, r) ? (0, i.jsx)(q.T, {
+      }) : null != l && (0, W.J)(l) && null != r && !eI.Z.can(eK.Plq.ADMINISTRATOR, r) ? (0, i.jsx)(q.T, {
         guild: r,
         disabledUntil: l
       }) : a ? (0, i.jsx)(G.h, {
@@ -885,7 +885,7 @@ let e6 = Chunk473749.memo(function(e) {
     accessibilityLabel: o
   } = (0, eF.Z)({
     channel: t
-  }), s = (0, es.S)(eN.default.getCurrentUser(), t), [c] = (0, W.AB)(null == n ? true : n.id), u = (0, B.Ux)(null == n ? true : n.id), d = (0, p.e7)([eN.default], () => eN.default.getCurrentUser()), h = (0, p.e7)([e_.ZP], () => {
+  }), s = (0, es.S)(eN.default.getCurrentUser(), t), [c] = (0, z.AB)(null == n ? true : n.id), u = (0, H.Ux)(null == n ? true : n.id), d = (0, p.e7)([eN.default], () => eN.default.getCurrentUser()), h = (0, p.e7)([e_.ZP], () => {
     var e, t, i;
     return null != d && null != (i = null == (e = e_.ZP.getMember(null != (t = null == n ? true : n.id) ? t : eK.lds, null == d ? true : d.id)) ? true : e.isPending) && i
   }), m = (0, p.e7)([er.Z], () => er.Z.isEnabled()), g = (0, eo.Z)(t.id), b = (0, K.Z)(t.id), y = (0, ef.k)(t.id), v = (0, p.e7)([eZ.Z], () => eZ.Z.getVoiceChannelId()), O = (0, p.e7)([eE.Z], () => eE.Z.getChannel(v)), E = (0, p.e7)([eN.default], () => t.type !== eK.d4z.DM ? null : eN.default.getUser(t.getRecipientId())), j = (0, p.e7)([eb.Z], () => eb.Z.getAlsoSendToChannel(t.id)), S = (0, p.e7)([el.ZP, ex.default], () => el.ZP.getUserCombo(ex.default.getId(), t.id)), _ = (0, C.iD)(t), P = (0, C.d7)(t), I = _.length > 0 || t.rateLimitPerUser > 0 || null != S || null != P, {

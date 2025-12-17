@@ -139,7 +139,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
   s()(null != k, "chat input type must be set");
   let {
     analyticsLocations: eI
-  } = (0, v.ZP)(y.Z.CHANNEL_TEXT_AREA), eZ = (0, B.qz)(t), eT = r.useRef(null), eN = r.useRef(null), eA = r.useRef(null), ew = r.useRef(null);
+  } = (0, v.ZP)(y.Z.CHANNEL_TEXT_AREA), eZ = (0, H.qz)(t), eT = r.useRef(null), eN = r.useRef(null), eA = r.useRef(null), ew = r.useRef(null);
   null == eC || eC(eN.current);
   let {
     activeCommand: eM
@@ -155,17 +155,17 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     disabled: eD,
     canAttachFiles: ek,
     canEveryoneSendMessages: eU
-  } = (0, B.TE)(L, k, eM, I), eV = !A.dN.useSetting() && !(0, D.isAndroidWeb)() && null != window.ResizeObserver, eF = !eV || !(null == (n = k.commands) ? true : n.enabled) || !G || p !== q.GI, eH = (0, T.Z)(), {
-    fontSize: eB
+  } = (0, H.TE)(L, k, eM, I), eV = !A.dN.useSetting() && !(0, D.isAndroidWeb)() && null != window.ResizeObserver, eF = !eV || !(null == (n = k.commands) ? true : n.enabled) || !G || p !== q.GI, eB = (0, T.Z)(), {
+    fontSize: eH
   } = (0, d.cj)([C.Z], () => ({
     fontSize: C.Z.fontSize,
     isSubmitButtonEnabled: C.Z.isSubmitButtonEnabled
-  })), eG = (0, d.e7)([M.Z], () => M.Z.isEnabled()), ez = (0, N.NE)(L);
-  (0, B.hJ)(k, eD, L.id);
+  })), eG = (0, d.e7)([M.Z], () => M.Z.isEnabled()), eW = (0, N.NE)(L);
+  (0, H.hJ)(k, eD, L.id);
   let {
-    eventEmitter: eW,
+    eventEmitter: ez,
     handleEditorSelectionChanged: eq
-  } = (0, B.x2)(eN, p, f), eK = r.useCallback(e => {
+  } = (0, H.x2)(eN, p, f), eK = r.useCallback(e => {
     let t = e => {
         if (e.shouldClear) {
           var t;
@@ -180,7 +180,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
       i = ej.length > 0 ? ej : e.value.length > 0 ? e.value.slice(0, 80) : X.intl.string(X.t["7Xm5QI"]);
     if (null == eS) return eu(ee($({}, e), {
       announcementSendOptions: {
-        createThread: ez && eP,
+        createThread: eW && eP,
         threadName: i,
         publish: e_
       }
@@ -214,25 +214,25 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     }), eu(ee($({}, e), {
       components: n,
       announcementSendOptions: {
-        createThread: ez && eP,
+        createThread: eW && eP,
         threadName: i,
         publish: e_
       }
     })).then(t)
-  }, [eu, ej, eS, L.id, eP, e_, ez]), {
+  }, [eu, ej, eS, L.id, eP, e_, eW]), {
     submit: eY,
     handleSubmit: eX
-  } = (0, B.bL)(eK, k, eN, ew, L.id), {
+  } = (0, H.bL)(eK, k, eN, ew, L.id), {
     autocompleteRef: eJ,
     handleMaybeShowAutocomplete: eQ,
     handleHideAutocomplete: e$
-  } = (0, B.jx)(), e0 = r.useCallback(() => {
+  } = (0, H.jx)(), e0 = r.useCallback(() => {
     var e;
     return null == ew || null == (e = ew.current) ? true : e.hide()
   }, []), {
     editorHeight: e1,
     handleResize: e2
-  } = (0, B.oR)(en), {
+  } = (0, H.oR)(en), {
     handleTab: e3,
     handleEnter: e4,
     handleMoveSelection: e7
@@ -256,10 +256,10 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     expressionPickerView: e8,
     shouldHideExpressionPicker: e6,
     handleOuterClick: e5
-  } = (0, B.iV)(k, eN, L.id), e9 = (0, B.aT)(p), {
+  } = (0, H.iV)(k, eN, L.id), e9 = (0, H.aT)(p), {
     currentAutocompleteType: te,
     handleAutocompleteVisibilityChange: tt
-  } = (0, B.vB)(k, L.id), tn = (0, B.ae)(eN), ti = (0, B.Sg)(eY, k, eN), tr = (0, B.O1)({
+  } = (0, H.vB)(k, L.id), tn = (0, H.ae)(eN), ti = (0, H.Sg)(eY, k, eN), tr = (0, H.O1)({
     editorRef: eN,
     disabled: eD,
     textValue: p,
@@ -267,7 +267,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     chatInputType: k,
     submit: eK
   });
-  (0, U.S)(eW, L.guild_id, L.id);
+  (0, U.S)(ez, L.guild_id, L.id);
   let [tl, ta] = r.useState(false), to = G || tl || p.length > 0 || null != eS || ej.length > 0, {
     editorHeaderHeight: ts,
     paddingTop: tc
@@ -300,7 +300,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
     })
   }, [L.id, eS, k.drafts.type]);
   return (0, i.jsx)(j.f6, {
-    value: eW,
+    value: ez,
     children: (0, i.jsxs)(v.Gt, {
       value: eI,
       children: [(0, i.jsxs)("div", {
@@ -363,8 +363,8 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
                     channel: L,
                     type: V.Ie.CREATE_ANNOUNCEMENT_POST,
                     canPasteFiles: ek,
-                    uploadPromptCharacterCount: W.en1,
-                    maxCharacterCount: null != eh ? eh : eH,
+                    uploadPromptCharacterCount: z.en1,
+                    maxCharacterCount: null != eh ? eh : eB,
                     allowNewLines: true,
                     "aria-describedby": eg,
                     onChange: Y,
@@ -380,7 +380,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
                     onMaybeShowAutocomplete: eQ,
                     onHideAutocomplete: e$,
                     promptToUpload: ed,
-                    fontSize: eB,
+                    fontSize: eH,
                     spellcheckEnabled: eG,
                     canOnlyUseTextCommands: false,
                     isEditorIdle: e9,
@@ -391,7 +391,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
               })]
             }), (0, i.jsx)("div", {
               className: J.attachmentsContainer,
-              children: (0, i.jsx)(z.Z, {
+              children: (0, i.jsx)(W.Z, {
                 channelId: L.id,
                 type: k,
                 canAttachFiles: ek,
@@ -408,7 +408,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
             className: J.footerPart,
             children: [(0, i.jsx)(el, {
               channel: L
-            }), (0, i.jsx)(H.Z, {
+            }), (0, i.jsx)(B.Z, {
               type: V.Ie.CREATE_ANNOUNCEMENT_POST,
               disabled: eD,
               channel: L,
@@ -427,7 +427,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
                 targetElementRef: tu,
                 renderPopout: () => (0, i.jsx)(ei, {
                   channelId: L.id,
-                  canCreateThread: ez
+                  canCreateThread: eW
                 }),
                 shouldShow: td,
                 autoInvert: true,
@@ -453,7 +453,7 @@ let en = Chunk473749.memo(Chunk473749.forwardRef(function(e, t) {
                       children: [(0, i.jsx)(h.Uuj, {
                         size: "xs",
                         color: "white"
-                      }), ez && eP ? (0, i.jsx)(h.or_, {
+                      }), eW && eP ? (0, i.jsx)(h.or_, {
                         size: "xxs",
                         color: "white",
                         className: J.subIcon
@@ -512,8 +512,8 @@ function ei(e) {
   return (0, i.jsxs)(h.v2r, {
     "aria-label": X.intl.string(X.t["9WnJyo"]),
     navId: "send-announcement-options",
-    onClose: W.dG4,
-    onSelect: W.dG4,
+    onClose: z.dG4,
+    onSelect: z.dG4,
     children: [(0, i.jsx)(h.S89, {
       id: "create-thread",
       label: X.intl.string(X.t.rBIGBL),

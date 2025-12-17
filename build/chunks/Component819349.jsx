@@ -69,8 +69,8 @@ function _(e) {
       isHoveringOrFocusing: U
     } = (0, y.Tu)(w ? l : k),
     [V, F] = r.useState(false),
-    H = U || V,
-    B = r.useCallback(function() {
+    B = U || V,
+    H = r.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "unknown";
       b.default.track(v.rMx.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
         reason: e,
@@ -93,28 +93,28 @@ function _(e) {
         clamp: true
       },
       onRest: () => {
-        M && B(L)
+        M && H(L)
       }
     }),
-    z = r.useCallback(function() {
+    W = r.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "unknown";
       R(true), D(e)
     }, []),
-    W = r.useCallback(() => (null != I.current && clearTimeout(I.current), I.current = setTimeout(() => z("timeout"), 1e4), N(e => e + 1), () => {
+    z = r.useCallback(() => (null != I.current && clearTimeout(I.current), I.current = setTimeout(() => W("timeout"), 1e4), N(e => e + 1), () => {
       null != I.current && clearTimeout(I.current)
-    }), [z]),
+    }), [W]),
     q = r.useCallback(() => (null != Z.current && clearTimeout(Z.current), Z.current = setTimeout(() => {
       P(false)
     }, 150), () => {
       null != Z.current && clearTimeout(Z.current)
     }), []);
-  (0, p.ZP)(W), r.useEffect(() => {
-    if (!H) {
-      W(), q();
+  (0, p.ZP)(z), r.useEffect(() => {
+    if (!B) {
+      z(), q();
       return
     }
     null != I.current && clearTimeout(I.current), null != Z.current && clearTimeout(Z.current), P(true)
-  }, [H, W, q]);
+  }, [B, z, q]);
   let K = r.useCallback(() => {
       P(true)
     }, []),
@@ -156,7 +156,7 @@ function _(e) {
               },
               children: [(0, i.jsxs)("svg", {
                 className: a()(O.timer, {
-                  [O.paused]: H
+                  [O.paused]: B
                 }),
                 viewBox: "0 0 ".concat(24, " ").concat(24),
                 style: {
@@ -185,7 +185,7 @@ function _(e) {
               })
             }), U ? (0, i.jsx)(d.P3F, {
               className: O.close,
-              onClick: () => z("user_explicit"),
+              onClick: () => W("user_explicit"),
               "aria-label": x.intl.string(x.t.cpT0Cq),
               children: (0, i.jsx)(d.Dio, {
                 size: "xs",

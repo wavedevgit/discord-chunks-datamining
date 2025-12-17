@@ -39,8 +39,8 @@ function S(e) {
   let {
     onClose: t
   } = e;
-  return (0, r.jsx)(f.ZP, {
-    planId: p.Xh.PREMIUM_MONTH_TIER_0,
+  return (0, r.jsx)(p.ZP, {
+    planId: f.Xh.PREMIUM_MONTH_TIER_0,
     onClose: t
   })
 }
@@ -49,21 +49,23 @@ let v = e => {
     transitionState: t,
     onClose: a,
     premiumType: s
-  } = e, b = s === p.PremiumTypes.TIER_0, f = n.useCallback(() => {
+  } = e, b = s === f.PremiumTypes.TIER_0, p = n.useCallback(() => {
     c.S.dispatch(u.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), l.Z.isDisplayingWowMomentConfirmation && l.Z.isAnimated ? setTimeout(() => {
       a()
     }, i.P) : a()
   }, [a]);
   return (0, r.jsxs)(o.Y0X, {
+    "data-migration-pending": true,
     className: C.root,
     transitionState: t,
     parentComponent: "ResubscribeSuccessStep",
     children: [(0, r.jsx)(d.Z, {
-      onClose: f,
+      onClose: p,
       upgradeToPremiumType: s
     }), (0, r.jsx)(o.hzk, {
+      "data-migration-pending": true,
       children: (0, r.jsx)(b ? S : h, {
-        onClose: f
+        onClose: p
       })
     })]
   })

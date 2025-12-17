@@ -64,7 +64,7 @@ function G(e) {
   return e
 }
 
-function z(e, t) {
+function W(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -77,7 +77,7 @@ function z(e, t) {
   }), e
 }
 
-function W(e, t) {
+function z(e, t) {
   if (null == e) return {};
   var n, i, r = function(e, t) {
     if (null == e) return {};
@@ -208,7 +208,7 @@ let q = (0, Chunk236726.animated)(Chunk481060.eTT),
       {
         ref: ea
       } = el,
-      eo = W(el, ["ref"]),
+      eo = z(el, ["ref"]),
       es = (0, f.Z)(e => {
         var t;
         X.ref.current = e, ea.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
@@ -218,17 +218,17 @@ let q = (0, Chunk236726.animated)(Chunk481060.eTT),
         let t = null == (e = E.Z.settings.appearance) ? true : e.clientThemeSettings;
         return (null == t ? true : t.backgroundGradientPresetId) != null || (null == t ? true : t.customUserThemeSettings) != null
       }),
-      eu = r.useMemo(() => R ? D ? B.chatTypingGradientAtBottom : B.chatTypingGradientNotAtBottom : B.chatGradient, [R, D]),
-      ed = r.useMemo(() => R ? D ? B.typingGradientAtBottom : B.typingGradientNotAtBottom : B.gradientDefault, [R, D]);
+      eu = r.useMemo(() => R ? D ? H.chatTypingGradientAtBottom : H.chatTypingGradientNotAtBottom : H.chatGradient, [R, D]),
+      ed = r.useMemo(() => R ? D ? H.typingGradientAtBottom : H.typingGradientNotAtBottom : H.gradientDefault, [R, D]);
     return (0, i.jsxs)(s.bG, {
       navigator: J,
       children: [null != ei && ei, (0, i.jsxs)("div", {
-        className: a()(B.messagesWrapper, l, "group-spacing-".concat(o)),
-        children: [null == ei && ee, (0, i.jsxs)(q, z(G({
+        className: a()(H.messagesWrapper, l, "group-spacing-".concat(o)),
+        children: [null == ei && ee, (0, i.jsxs)(q, W(G({
           ref: es,
           customTheme: true,
-          className: a()(p, B.scroller, ec ? ed : true),
-          contentClassName: B.scrollerContent,
+          className: a()(p, H.scroller, ec ? ed : true),
+          contentClassName: H.scrollerContent,
           onResize: X.handleResize,
           onScroll: X.handleScroll,
           onMouseDown: X.handleMouseDown,
@@ -236,24 +236,24 @@ let q = (0, Chunk236726.animated)(Chunk481060.eTT),
         }, er), {
           tabIndex: false,
           role: "group",
-          children: [en, (0, i.jsxs)("ol", z(G({
-            className: a()(B.scrollerInner, {
-              [B.scrollerAllowSticky]: m.isModeratorReportChannel()
+          children: [en, (0, i.jsxs)("ol", W(G({
+            className: a()(H.scrollerInner, {
+              [H.scrollerAllowSticky]: m.isModeratorReportChannel()
             }),
-            "aria-label": H.intl.formatToPlainString(H.t.XarRiL, {
+            "aria-label": B.intl.formatToPlainString(B.t.XarRiL, {
               channelName: m.name
             })
           }, eo), {
             children: [(0, i.jsx)("span", {
-              className: B.navigationDescription,
+              className: H.navigationDescription,
               id: "messagesNavigationDescription",
               "aria-hidden": true,
-              children: H.intl.string(H.t["Spb3s/"])
+              children: B.intl.string(B.t["Spb3s/"])
             }), $, (0, i.jsx)("div", {
               className: a()({
-                [B.scrollerSpacer]: !N,
-                [B.empty]: 0 === g.length && !g.loadingMore,
-                [B.emptyForum]: 1 === g.length && !g.loadingMore && m.isForumPost() && (null == (t = g.first()) ? true : t.isFirstMessageInForumPost(m))
+                [H.scrollerSpacer]: !N,
+                [H.empty]: 0 === g.length && !g.loadingMore,
+                [H.emptyForum]: 1 === g.length && !g.loadingMore && m.isForumPost() && (null == (t = g.first()) ? true : t.isFirstMessageInForumPost(m))
               })
             })]
           }))]
@@ -271,7 +271,7 @@ let q = (0, Chunk236726.animated)(Chunk481060.eTT),
       forceCompact: a = false,
       forceCozy: o = false,
       typingGradient: s = false
-    } = e, u = W(e, ["channel", "showingQuarantineBanner", "hideSummaries", "forceCompact", "forceCozy", "typingGradient"]);
+    } = e, u = z(e, ["channel", "showingQuarantineBanner", "hideSummaries", "forceCompact", "forceCozy", "typingGradient"]);
     let {
       canManageMessages: d,
       permissionVersion: f,
@@ -326,8 +326,8 @@ let q = (0, Chunk236726.animated)(Chunk481060.eTT),
     }(), {
       messages: U,
       channelStream: V,
-      oldestUnreadMessageId: H,
-      editingMessageId: B
+      oldestUnreadMessageId: B,
+      editingMessageId: H
     } = function(e) {
       var t, n;
       let i = (0, c.e7)([I.Z], () => I.Z.getMessages(e.id), [e.id]),
@@ -381,7 +381,7 @@ let q = (0, Chunk236726.animated)(Chunk481060.eTT),
     return (0, i.jsx)(v.aQ.Provider, {
       value: (0, M.Z)(L, d),
       children: (0, i.jsx)(D.v, {
-        children: (0, i.jsx)(K, z(G({}, u), {
+        children: (0, i.jsx)(K, W(G({}, u), {
           messageGroupSpacing: E,
           showNewMessagesBar: true,
           channel: t,
@@ -391,9 +391,9 @@ let q = (0, Chunk236726.animated)(Chunk481060.eTT),
           permissionVersion: f,
           uploads: (0, c.e7)([N.Z], () => N.Z.getFiles(t.id), [t]),
           unreadCount: (0, c.e7)([T.ZP], () => T.ZP.getUnreadCount(t.id), [t]),
-          hasUnreads: null != H,
+          hasUnreads: null != B,
           canChat: y,
-          editingMessageId: B,
+          editingMessageId: H,
           fontSize: S,
           keyboardModeEnabled: k,
           showingQuarantineBanner: n,
