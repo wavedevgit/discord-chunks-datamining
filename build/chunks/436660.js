@@ -232,36 +232,29 @@ let c = function(e, t) {
   },
   keyboardMove(e, t) {
     let {
-      reverse: n = false,
+      distance: n = 1,
       unit: i = "character",
-      edge: o
-    } = null != t ? t : {}, s = e.selection;
-    if (null == s) return;
-    if (true === o && a.M8.isExpanded(s)) return void r.YR.collapse(e, {
-      edge: n ? "start" : "end"
-    });
-    let l = a.bN.leaf(e, s.anchor.path);
+      reverse: o = false,
+      edge: s
+    } = null != t ? t : {}, l = e.selection;
     if (null == l) return;
-    let c = n ? a.bN.before : a.bN.after,
-      u = s.focus;
-    for (; null != u;) {
-      let t = i;
-      n || s.focus.offset !== l[0].text.length ? n && 0 === s.focus.offset && (t = "offset") : t = "offset";
-      let r = c(e, u, {
-        unit: t
+    let c = l.focus;
+    if (a.M8.isExpanded(l)) {
+      if (true === s && "character" === i) return void r.YR.collapse(e, {
+        edge: o ? "start" : "end"
       });
-      if (null == r || a.Jz.equals(u, r)) {
-        u = true;
-        break
-      }
-      if (u = r, null == a.bN.getParentVoid(e, u)) break
+      "focus" !== s && (c = "line" === i || o ? a.M8.start(l) : a.M8.end(l))
     }
-    null != u && ("focus" === o ? r.YR.setSelection(e, {
+    let u = (o ? a.bN.before : a.bN.after)(e, c, {
+      unit: i,
+      distance: n
+    });
+    null != u && r.YR.setSelection(e, "focus" === s ? {
       focus: u
-    }) : r.YR.setSelection(e, {
-      focus: u,
-      anchor: u
-    }))
+    } : {
+      anchor: u,
+      focus: u
+    })
   }
 });
 

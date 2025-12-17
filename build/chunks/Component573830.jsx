@@ -154,6 +154,7 @@ function w(e) {
     offset: false,
     children: (0, r.jsxs)("label", b(g({}, M), {
       className: m.container,
+      "data-disabled": n || true,
       children: [(0, r.jsx)(s.animated.div, b(g({}, U), {
         ref: w,
         className: m.switchIndicator,

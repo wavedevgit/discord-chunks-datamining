@@ -93,31 +93,34 @@ function T(e) {
     let e = [],
       r = true,
       i = false;
-    return (null != _ ? e = [{
-      label: O.intl.string(O.t["s+J8Dl"]),
-      trackingArea: d.j_.PLAY,
-      isDeadEnd: true,
-      onClick: () => {
-        c.Z.launch({
-          applicationId: _,
-          embedded: m
-        })
-      }
-    }] : null != S && (e = [S], r = false), w && r && (e.push({
-      label: O.intl.string(O.t.lw71Nf),
-      trackingArea: d.j_.CONNECT_ACCOUNT,
-      onClick: () => {
-        D({
-          analyticsLocations: R
-        })
-      },
-      icon: l.uIJ,
-      iconButton: true,
-      buttonRef: x
-    }), i = true), e.length > 0 && !(0, E.b)(t.id, j, n.id, P)) ? {
-      actions: [],
-      hasAccountLinkButton: false
-    } : {
+    if (null != _ ? e = [{
+        label: O.intl.string(O.t["s+J8Dl"]),
+        trackingArea: d.j_.PLAY,
+        isDeadEnd: true,
+        onClick: () => {
+          c.Z.launch({
+            applicationId: _,
+            embedded: m
+          })
+        }
+      }] : null != S && (e = [S], r = false), e.length > 0)
+      if (!(0, E.b)(t.id, j, n.id, P)) return {
+        actions: [],
+        hasAccountLinkButton: false
+      };
+      else w && r && (e.push({
+        label: O.intl.string(O.t.lw71Nf),
+        trackingArea: d.j_.CONNECT_ACCOUNT,
+        onClick: () => {
+          D({
+            analyticsLocations: R
+          })
+        },
+        icon: l.uIJ,
+        iconButton: true,
+        buttonRef: x
+      }), i = true);
+    return {
       actions: e,
       hasAccountLinkButton: i
     }
