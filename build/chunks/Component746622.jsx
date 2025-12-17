@@ -15,11 +15,11 @@ let u = e => {
     let {
       error: t,
       variant: n,
-      color: i
+      color: r
     } = e;
-    return (0, l.jsx)(r.Text, {
+    return (0, l.jsx)(i.Text, {
       variant: n,
-      color: i,
+      color: r,
       children: c(t)
     })
   },
@@ -28,7 +28,7 @@ let u = e => {
       case a.evJ.TOO_MANY_EMOJI:
       case a.evJ.TOO_MANY_ANIMATED_EMOJI:
         return s.intl.string(s.t.FtKH49);
-      case i.ze.TOO_BIG:
+      case r.ze.TOO_BIG:
       case a.evJ.INVALID_FILE_ASSET_SIZE:
       case a.evJ.INVALID_FORM_BODY:
         return s.intl.formatToPlainString(s.t.kIO9jy, {
@@ -36,19 +36,19 @@ let u = e => {
         });
       case a.evJ.INVALID_FILE_ASSET_SIZE_RESIZE_GIF:
         return s.intl.string(s.t.sp16MU);
-      case i.ze.MISSING_IMAGE_DATA:
+      case r.ze.MISSING_IMAGE_DATA:
         return s.intl.string(s.t["41/Kbh"]);
-      case i.ze.MISSING_GUILD:
+      case r.ze.MISSING_GUILD:
         return s.intl.string(s.t["8RCtpD"]);
-      case i.ze.GIF_CROPPING:
-        return s.intl.string(s.t.X6rtiO);
-      case i.ze.IMAGE_LOAD:
+      case r.ze.ANIMATED_CROPPING:
+        return s.intl.string(s.t.yoVkHN);
+      case r.ze.IMAGE_LOAD:
         return s.intl.format(s.t.xZLPcF, {});
-      case i.ze.NO_PERMISSIONS:
+      case r.ze.NO_PERMISSIONS:
         return s.intl.string(s.t.QY7ZFZ);
       case 429:
         return s.intl.string(s.t["4rjikl"]);
-      case i.ze.UNKNOWN:
+      case r.ze.UNKNOWN:
       default:
         return s.intl.string(s.t.iufib1)
     }
@@ -66,5 +66,5 @@ let u = e => {
         if (!Number.isNaN(e)) return e
       }
     } catch (e) {}
-    return i.ze.UNKNOWN
+    return r.ze.UNKNOWN
   }

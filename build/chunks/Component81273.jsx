@@ -63,7 +63,7 @@ let D = "MMM DD, YYYY",
       {
         analyticsLocations: J
       } = (0, p.ZP)(),
-      $ = (null == B ? true : B.paymentGateway) === R.gg$.APPLE_PARTNER,
+      $ = null == B ? true : B.isPurchasedViaAppleGeneric,
       ee = !x && null != F && H && !M && !K && !z && !$;
     M || x && !L ? s = w.intl.string(w.t.pQK5ho) : W === U ? s = w.intl.formatToPlainString(w.t.UlBRTl, {
       changeDate: null != B ? l()(B.currentPeriodEnd).format(D) : ""

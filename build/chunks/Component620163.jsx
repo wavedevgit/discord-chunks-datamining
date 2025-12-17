@@ -163,7 +163,8 @@ let eG = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
       isInputProfileCustom: tt,
       isChatMentionSuggestionsSettingEnabled: tn,
       isCrossDMSearchEnabledSettingVisible: tr,
-      isRedesignedNotificationsEnabled: ti
+      isRedesignedNotificationsEnabled: ti,
+      isHDRAccessibilitySettingExperimentEnabled: ta
     } = e;
     return Object.freeze({
       [eP.s6.SEARCH_NO_RESULTS]: {
@@ -900,6 +901,12 @@ let eG = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: ew.oAB.ACCESSIBILITY,
         searchableTitles: [ex.intl.string(ex.t.lsW5Ev)],
         parent: eP.s6.ACCESSIBILITY
+      },
+      [eP.s6.ACCESSIBILITY_HDR_DYNAMIC_RANGE]: {
+        section: ew.oAB.ACCESSIBILITY,
+        searchableTitles: [ex.intl.string(ex.t.nemtgW), "HDR", ex.intl.string(ex.t["O/Gjvn"])],
+        parent: eP.s6.ACCESSIBILITY,
+        predicate: () => ta
       },
       [eP.s6.ACCESSIBILITY_APPEARANCE_UPSELL]: {
         section: ew.oAB.ACCESSIBILITY,

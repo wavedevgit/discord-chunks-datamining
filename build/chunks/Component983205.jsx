@@ -13,32 +13,32 @@ let s = e => {
     name: t,
     onNameChange: n,
     label: s
-  } = e, u = r.useRef(null), c = r.useRef(null), [d, m] = r.useState(false), h = r.useCallback(e => {
+  } = e, u = i.useRef(null), c = i.useRef(null), [d, m] = i.useState(false), b = i.useCallback(e => {
     var t;
     c.current = null == (t = u.current) ? true : t.selectionStart, n(e = (e = e.replace(/\s/g, "_")).length < 2 ? e : a.ZP.sanitizeEmojiName(e))
   }, [n]);
-  r.useEffect(() => {
+  i.useEffect(() => {
     if (null != c.current) {
       var e;
       null == (e = u.current) || e.setSelectionRange(c.current, c.current), c.current = null
     }
   });
-  let g = r.useCallback(() => {
+  let h = i.useCallback(() => {
       m(false)
     }, []),
-    b = r.useCallback(() => {
+    g = i.useCallback(() => {
       m(true)
     }, []);
-  return (0, l.jsx)(i.oil, {
+  return (0, l.jsx)(r.oil, {
     inputRef: u,
     error: d ? "" : true,
     minLength: 2,
     value: t,
-    onChange: h,
+    onChange: b,
     placeholder: o.intl.string(o.t.U2JFHZ),
     name: "emoji_name",
-    onBlur: g,
-    onFocus: b,
+    onBlur: h,
+    onFocus: g,
     label: s,
     clearable: true,
     required: true

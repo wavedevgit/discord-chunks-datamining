@@ -92,9 +92,7 @@ function O(e) {
         className: h.popoutMenu,
         onSelect: true,
         navId: "edit-profile-popout",
-        onClose: () => {
-          t(), null == O || O()
-        },
+        onClose: t,
         "aria-label": m.intl.string(m.t.AXIHpV),
         children: [(0, r.jsx)(o.sNh, {
           id: "edit-server-profile",
@@ -103,7 +101,7 @@ function O(e) {
           action: () => {
             A({
               action: "EDIT_GUILD_PROFILE"
-            }), T(), (0, s.i)(y)
+            }), null == O || O(), T(), (0, s.i)(y)
           }
         }), (0, r.jsx)(o.sNh, {
           id: "edit-main-profile",
@@ -112,7 +110,7 @@ function O(e) {
           action: () => {
             A({
               action: "EDIT_PROFILE"
-            }), C(), (0, s.i)(y)
+            }), null == O || O(), C(), (0, s.i)(y)
           }
         })]
       })

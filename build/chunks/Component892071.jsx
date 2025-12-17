@@ -2,8 +2,8 @@
 /** chunk id: 892071, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  cE: () => b,
-  vP: () => E
+  cE: () => y,
+  vP: () => b
 }), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,57 +18,58 @@ var Chunk54381 = require("./54381.js"),
   Chunk377089 = require("./377089.js"),
   Chunk877371 = require("./877371.js"),
   Chunk580747 = require("./580747.js"),
+  Chunk740492 = require("./740492.js"),
   Chunk998502 = require("./998502.js");
-let g = Chunk473749.createContext({
+let E = Chunk473749.createContext({
   lang: "",
   style: "",
   className: "",
   focused: false
 });
 
-function E() {
-  let e = Chunk473749.useContext(g);
+function b() {
+  let e = Chunk473749.useContext(E);
   if (true === module) throw Error("useRootElementContext must be used within a RootElementContextProvider");
   return module
 }
 
-function b(e) {
+function y(e) {
   let {
     rootClassName: t,
     lang: n,
     theme: a,
-    density: E,
-    focused: b,
-    fontScale: y,
-    fontScaleClass: O,
-    mouseMode: v,
-    keyboardModeEnabled: S,
-    saturation: I,
-    desaturateUserColors: T,
-    useForcedColors: C,
-    systemForcedColors: A,
-    useReducedMotion: N,
-    alwaysShowLinkDecorations: P,
-    hardwareAccelerationEnabled: R,
-    highContrastMode: w,
-    isPopoutWindow: D,
-    children: x
-  } = e, L = window.CSS.supports("selector(::-webkit-scrollbar)"), j = (0, l.e7)([d.Z], () => d.Z.zoom), M = D ? "" : "--custom-zoom: ".concat(j, ";"), k = "font-size: ".concat(y, "%; --saturation-factor: ").concat(I, "; ").concat(M), U = (0, m.Z)("highlight_mana_buttons"), G = (0, m.Z)("highlight_mana_components"), Z = (0, m.Z)("highlight_void_toggleables"), F = (0, m.Z)("highlight_void_buttons"), B = o()((0, f.Z)(), (0, c.QeD)(a), "density-".concat(E), O, {
-    "low-saturation": I <= c.AEw,
-    "keyboard-mode": S,
-    "decorate-links": P,
-    "no-webkit-scrollbar": !L,
-    "has-webkit-scrollbar": L,
-    "mouse-mode": v,
-    "reduce-motion": N,
-    "full-motion": !N,
+    density: b,
+    focused: y,
+    fontScale: O,
+    fontScaleClass: v,
+    mouseMode: S,
+    keyboardModeEnabled: I,
+    saturation: T,
+    desaturateUserColors: C,
+    useForcedColors: A,
+    systemForcedColors: N,
+    useReducedMotion: P,
+    alwaysShowLinkDecorations: R,
+    hardwareAccelerationEnabled: w,
+    highContrastMode: D,
+    isPopoutWindow: x,
+    children: L
+  } = e, j = window.CSS.supports("selector(::-webkit-scrollbar)"), M = (0, l.e7)([d.Z], () => d.Z.zoom), k = x ? "" : "--custom-zoom: ".concat(M, ";"), U = (0, m.Z)("highlight_mana_buttons"), G = (0, m.Z)("highlight_mana_components"), Z = (0, m.Z)("highlight_void_toggleables"), F = (0, m.Z)("highlight_void_buttons"), B = (0, l.e7)([h.ZP], () => h.ZP.hdrDynamicRange), V = "font-size: ".concat(O, "%; --saturation-factor: ").concat(T, "; dynamic-range-limit: ").concat(B, "; ").concat(k), H = o()((0, f.Z)(), (0, c.QeD)(a), "density-".concat(b), v, {
+    "low-saturation": T <= c.AEw,
+    "keyboard-mode": I,
+    "decorate-links": R,
+    "no-webkit-scrollbar": !j,
+    "has-webkit-scrollbar": j,
+    "mouse-mode": S,
+    "reduce-motion": P,
+    "full-motion": !P,
     "is-mobile": s.tq,
-    "app-focused": b,
-    "desaturate-user-colors": T,
-    "disable-forced-colors": !C && "active" === A,
-    "enable-forced-colors": C,
+    "app-focused": y,
+    "desaturate-user-colors": C,
+    "disable-forced-colors": !A && "active" === N,
+    "enable-forced-colors": A,
     "visual-refresh": true,
-    "hardware-acceleration-disabled": !R,
+    "hardware-acceleration-disabled": !w,
     "visual-refresh-chat-input": false,
     "mana-toggle-inputs": (0, _.A)("RootElementContextProvider"),
     "mana-text-inputs": (0, p.U)("RootElementContextProvider"),
@@ -76,20 +77,20 @@ function b(e) {
     "highlight-mana-components": G,
     "highlight-void-toggleables": Z,
     "highlight-void-buttons": F,
-    "high-contrast-mode": w
-  }, t), V = i.useMemo(() => ({
+    "high-contrast-mode": D
+  }, t), Y = i.useMemo(() => ({
     lang: n,
-    style: k,
-    className: B,
-    focused: b
-  }), [n, k, B, b]);
+    style: V,
+    className: H,
+    focused: y
+  }), [n, V, H, y]);
   return (0, u.ZP)(() => {
-    h.ZP.setTrafficLightPosition({
+    g.ZP.setTrafficLightPosition({
       x: 9,
       y: 9
     })
-  }), (0, r.jsx)(g.Provider, {
-    value: V,
-    children: x
+  }), (0, r.jsx)(E.Provider, {
+    value: Y,
+    children: L
   })
 }

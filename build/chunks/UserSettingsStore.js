@@ -74,8 +74,8 @@ function C() {
 }
 class A extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
-    var t;
-    (y = null != e ? e : {}).darkSidebar = null != (t = y.darkSidebar) ? t : C()
+    var t, n;
+    (y = null != e ? e : {}).darkSidebar = null != (t = y.darkSidebar) ? t : C(), y.hdrDynamicRange = null != (n = y.hdrDynamicRange) ? n : "no-limit"
   }
   getUserAgnosticState() {
     return y
@@ -189,6 +189,10 @@ class A extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   get listDensity() {
     var e;
     return null != (e = y.listDensity) ? module : Chunk969943.fx.COZY
+  }
+  get hdrDynamicRange() {
+    var e;
+    return null != (e = y.hdrDynamicRange) ? module : "no-limit"
   }
 }
 _(A, "displayName", "UnsyncedUserSettingsStore"), _(A, "persistKey", "UnsyncedUserSettingsStore"), _(A, "migrations", [() => {

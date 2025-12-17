@@ -129,7 +129,7 @@ let M = e => {
       analyticsLocations: Z
     } = (0, _.ZP)(), {
       shouldHideGuildPurchaseEntryPoints: F
-    } = (0, g.uP)(null == s ? true : s.id), B = (null == t ? true : t.paymentGateway) === w.gg$.APPLE_PARTNER;
+    } = (0, g.uP)(null == s ? true : s.id), B = null == t ? true : t.isPurchasedViaAppleGeneric;
     if (null == a || null == n || null == b) return null;
     let V = () => {
         null != s && ((0, O.uL)(w.Z5c.CHANNEL(s.id, D.oC.ROLE_SUBSCRIPTIONS)), (0, S.default)(), f.Z.show(w.kVF.BACK_TO_PREVIOUS_SCREEN, true, L.intl.string(L.t.DvbaM4), () => (0, I.openUserSettings)(v.n.SUBSCRIPTIONS_PANEL, {

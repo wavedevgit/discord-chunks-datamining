@@ -23,7 +23,8 @@ require.d(exports, {
   r_: () => g,
   rf: () => _,
   u1: () => C,
-  vW: () => R
+  vW: () => R,
+  zH: () => D
 });
 var Chunk570140 = require("./570140.js"),
   Chunk153867 = require("./153867.js"),
@@ -200,5 +201,14 @@ function w(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_SWITCH_ICONS_ENABLED",
     switchIconsEnabled: e
+  })
+}
+
+function D(e) {
+  r.Z.dispatch({
+    type: "UNSYNCED_USER_SETTINGS_UPDATE",
+    settings: {
+      hdrDynamicRange: e
+    }
   })
 }
