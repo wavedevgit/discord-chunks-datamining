@@ -1,7 +1,7 @@
 /** Chunk was on 15076 **/
 /** chunk id: 298812, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => M
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -32,7 +32,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk986955 = require("./986955.js");
-let P = Chunk473749.forwardRef(function(e, t) {
+let M = Chunk473749.forwardRef(function(e, t) {
   let {
     guildId: n
   } = e, [l, r] = s.useState(null), o = (0, a.Wu)([j.Z, N.ZP], () => (0, O.OD)(N.ZP.getChannelOverrides(n), {
@@ -40,13 +40,13 @@ let P = Chunk473749.forwardRef(function(e, t) {
     ignoreUnreadSetting: false,
     ignoreNotificationSetting: false
   }).map(e => j.Z.getChannel(e)).filter(S.lm)), d = (0, a.e7)([v.Z], () => v.Z.getCategories(n)), u = o.map((e, t) => (0, i.jsxs)("div", {
-    className: M.channelRow,
+    className: P.channelRow,
     children: [(0, i.jsx)(T, {
       channel: e,
       categories: d,
       autoFocus: l === e.id
     }, e.id), t < o.length - 1 && (0, i.jsx)("div", {
-      className: M.separator
+      className: P.separator
     })]
   }, e.id));
   return (0, i.jsxs)("div", {
@@ -63,37 +63,37 @@ let P = Chunk473749.forwardRef(function(e, t) {
         }, E.ZB.OverrideCreated), r(e))
       }
     }), u.length > 0 && (0, i.jsxs)("div", {
-      className: M.table,
+      className: P.table,
       children: [(0, i.jsxs)("div", {
-        className: M.row,
+        className: P.row,
         children: [(0, i.jsx)(c.Text, {
           variant: "text-xs/bold",
           color: "text-muted",
-          className: M.rowName,
+          className: P.rowName,
           children: A.intl.string(A.t.uShwWv)
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/bold",
           color: "text-muted",
-          className: M.rowOption,
+          className: P.rowOption,
           children: A.intl.string(A.t.hZrr6k)
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/bold",
           color: "text-muted",
-          className: M.rowOption,
+          className: P.rowOption,
           children: A.intl.string(A.t.y59NJm)
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/bold",
           color: "text-muted",
-          className: M.rowOption,
+          className: P.rowOption,
           children: A.intl.string(A.t["pGn/bJ"])
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/bold",
           color: "text-muted",
-          className: M.rowOption,
+          className: P.rowOption,
           children: A.intl.string(A.t["32yow9"])
         })]
       }), u.length > 0 && (0, i.jsx)("div", {
-        className: M.channels,
+        className: P.channels,
         children: u
       })]
     })]
@@ -121,65 +121,65 @@ function T(e) {
   }) : null != v && (Z = A.intl.formatToPlainString(A.t.L1zJgb, {
     categoryName: (0, m.F6)(v, b.default, f.Z)
   }));
-  let P = E ? L.s8.CUSTOM : N.preset;
+  let M = E ? L.s8.CUSTOM : N.preset;
   return (0, i.jsx)("div", {
     ref: S,
     children: (0, i.jsxs)("div", {
-      className: r()(M.row, M.channel),
+      className: r()(P.row, P.channel),
       children: [(0, i.jsxs)("div", {
-        className: r()(M.rowName, M.modColor),
+        className: r()(P.rowName, P.modColor),
         children: [null != _ ? (0, i.jsx)(_, {
           size: "custom",
           color: "currentColor",
           height: 20,
           width: 20,
-          className: M.icon
+          className: P.icon
         }) : null, (0, i.jsxs)("div", {
           children: [(0, i.jsx)(c.Text, {
             variant: "text-md/semibold",
-            className: M.modColor,
+            className: P.modColor,
             children: (0, m.F6)(t, b.default, f.Z)
           }), (0, i.jsx)(c.Text, {
             variant: "text-xs/medium",
-            className: M.modColor,
+            className: P.modColor,
             children: Z
           })]
         })]
       }), (0, i.jsx)("div", {
-        className: M.rowOption,
+        className: P.rowOption,
         children: (0, i.jsx)("div", {
           children: (0, i.jsx)(d.$q, {
             color: h,
             shape: d.zV.ROUND,
             type: d.M0.INVERTED,
-            value: P === L.s8.ALL_MESSAGES,
+            value: M === L.s8.ALL_MESSAGES,
             onChange: () => ((0, C._m)(t.guild_id, t.id, L.s8.ALL_MESSAGES), O(false))
           })
         })
       }), (0, i.jsx)("div", {
-        className: M.rowOption,
+        className: P.rowOption,
         children: (0, i.jsx)("div", {
           children: (0, i.jsx)(d.$q, {
             color: h,
             shape: d.zV.ROUND,
             type: d.M0.INVERTED,
-            value: P === L.s8.MENTIONS,
+            value: M === L.s8.MENTIONS,
             onChange: () => ((0, C._m)(t.guild_id, t.id, L.s8.MENTIONS), O(false))
           })
         })
       }), (0, i.jsx)("div", {
-        className: M.rowOption,
+        className: P.rowOption,
         children: (0, i.jsx)("div", {
           children: (0, i.jsx)(d.$q, {
             color: h,
             shape: d.zV.ROUND,
             type: d.M0.INVERTED,
-            value: P === L.s8.NOTHING,
+            value: M === L.s8.NOTHING,
             onChange: () => ((0, C._m)(t.guild_id, t.id, L.s8.NOTHING), O(false))
           })
         })
       }), (0, i.jsx)("div", {
-        className: M.rowOption,
+        className: P.rowOption,
         children: (0, i.jsx)("div", {
           children: (0, i.jsx)(d.$q, {
             onClick: e => {
@@ -194,13 +194,13 @@ function T(e) {
             color: h,
             shape: d.zV.ROUND,
             type: d.M0.INVERTED,
-            value: P === L.s8.CUSTOM,
+            value: M === L.s8.CUSTOM,
             onChange: () => O(true)
           })
         })
       }), (0, i.jsx)(g.Z, {
         onClick: () => (0, C.JK)(t.guild_id, t.id),
-        className: M.removeButton
+        className: P.removeButton
       })]
     })
   })

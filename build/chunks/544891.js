@@ -90,7 +90,7 @@ function E(e, t, n, r, o) {
     }
     b.query(e)
   }
-  if (t.body && b.send(t.body), null != t.headers && b.set(t.headers), null != t.reason && b.set("X-Audit-Log-Reason", encodeURIComponent(t.reason)), null == (c = t.attachments) || c.forEach(e => {
+  if (t.body && b.send(t.body), null != t.headers && b.set(t.headers), true === t.withCredentials && b.withCredentials(), null != t.reason && b.set("X-Audit-Log-Reason", encodeURIComponent(t.reason)), null == (c = t.attachments) || c.forEach(e => {
       b.attach(e.name, e.file, e.filename)
     }), null == (u = t.fields) || u.forEach(e => {
       b.field(e.name, e.value)

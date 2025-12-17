@@ -1,11 +1,10 @@
 /** Chunk was on 15076 **/
 /** chunk id: 444899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  f: () => b
+  f: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk87051 = require("./87051.js"),
   Chunk225433 = require("./225433.jsx"),
@@ -21,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk99079 = require("./99079.js");
 
-function N(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,7 +28,7 @@ function N(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class b extends Chunk473749.PureComponent {
+class N extends Chunk473749.PureComponent {
   highlight() {
     this.setState({
       highlight: true
@@ -52,30 +51,24 @@ class b extends Chunk473749.PureComponent {
     let {
       channel: i
     } = this.props, s = i.getGuildId();
-    null != s && a.Z.updateChannelOverrideSettings(s, i.id, {
+    null != s && r.Z.updateChannelOverrideSettings(s, i.id, {
       message_notifications: e,
       muted: null != t && t
     }, n)
   }
   handleRadioChange(e) {
-    this.setMessageNotification(e, true, p.UE.notifications(e))
+    this.setMessageNotification(e, true, x.UE.notifications(e))
   }
   renderMessageNotificationsRadioOption(e) {
     let {
       messageNotifications: t,
       guildMuted: n,
-      muted: s,
-      guildMessageNotifications: r,
-      checkboxColor: a
-    } = this.props, o = t === e;
-    (null == t || t === j.bL.NULL) && e === r && (o = true);
-    let d = l.M0.INVERTED;
-    return (s || t === j.bL.NULL || null == t) && (d = l.M0.GHOST), (0, i.jsx)(l.$q, {
-      value: !n && o,
+      guildMessageNotifications: s
+    } = this.props, r = t === e;
+    return (null == t || t === p.bL.NULL) && e === s && (r = true), (0, i.jsx)(l.Checkbox, {
+      checked: !n && r,
+      label: "",
       disabled: n,
-      shape: l.zV.ROUND,
-      color: a,
-      type: d,
       onChange: this.handleRadioChange.bind(this, e)
     })
   }
@@ -146,10 +139,9 @@ class b extends Chunk473749.PureComponent {
         grow: 0,
         shrink: 0,
         className: Chunk99079.checkboxMute,
-        children: (0, Chunk54381.jsx)(Chunk755721.$q, {
-          value: module,
-          shape: Chunk755721.zV.BOX,
-          type: Chunk755721.M0.INVERTED,
+        children: (0, Chunk54381.jsx)(Chunk481060.Checkbox, {
+          checked: module,
+          label: "",
           onChange: this.handleMute
         })
       })]
@@ -171,23 +163,23 @@ class b extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), N(this, "_timeout", true), N(this, "contentDomRef", s.createRef()), N(this, "state", {
+    super(...e), f(this, "_timeout", true), f(this, "contentDomRef", s.createRef()), f(this, "state", {
       highlight: false
-    }), N(this, "unhighlight", () => {
+    }), f(this, "unhighlight", () => {
       this.setState({
         highlight: false
       })
-    }), N(this, "handleMute", (e, t) => {
+    }), f(this, "handleMute", e => {
       let {
-        messageNotifications: n
+        messageNotifications: t
       } = this.props;
-      this.setMessageNotification(null != n ? n : j.bL.NULL, t, p.UE.muted(t))
-    }), N(this, "handleDelete", () => {
+      this.setMessageNotification(null != t ? t : p.bL.NULL, e, x.UE.muted(e))
+    }), f(this, "handleDelete", () => {
       let {
         onDelete: e,
         channel: t
       } = this.props;
-      this.setMessageNotification(j.bL.NULL, false, p.ZB.OverrideDeleted), null != e && e(t.id)
+      this.setMessageNotification(p.bL.NULL, false, x.ZB.OverrideDeleted), null != e && e(t.id)
     })
   }
 }

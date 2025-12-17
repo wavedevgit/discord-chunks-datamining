@@ -440,6 +440,17 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     apexExperiments: null != (t = e.apex_experiments) ? t : true,
     userActivities: null != (n = e.user_activities) ? n : true
   })
+}), Y(["EXPERIMENT_SESSION_OVERRIDE_CREATE"], e => {
+  o.Z.dispatch({
+    type: "APEX_EXPERIMENT_SESSION_OVERRIDE_CREATE",
+    experimentName: e.experiment_name,
+    variantId: e.variant_id
+  })
+}), Y(["EXPERIMENT_SESSION_OVERRIDE_DELETE"], e => {
+  o.Z.dispatch({
+    type: "APEX_EXPERIMENT_SESSION_OVERRIDE_DELETE",
+    experimentName: e.experiment_name
+  })
 }), Y(["RESUMED"], () => {
   Chunk955132.RR.forceUpdate(), Chunk955132.GC.forceUpdate(), q({
     type: "CONNECTION_RESUMED"
