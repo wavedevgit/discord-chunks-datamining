@@ -20,5 +20,5 @@ var Chunk509613 = require("./509613.js"),
   Chunk388032 = require("./388032.jsx");
 let N = (0, Chunk509613.vB)(Chunk313789.n.APP_SECTION, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.f2n1TP),
-  buildLayout: () => [Chunk650271.z, Chunk444250.Fu, Chunk960323.K, Chunk513696.g, Chunk263735.Q, Chunk755322.w, Chunk645912.G, Chunk452784.a, Chunk249857.R, Chunk101870.o, Chunk860171.g, Chunk825193.w]
+  buildLayout: () => [Chunk650271.zn, Chunk444250.Fu, Chunk960323.K, Chunk513696.g, Chunk263735.Q, Chunk755322.w, Chunk645912.G, Chunk452784.a, Chunk249857.R, Chunk101870.o, Chunk860171.g, Chunk825193.w]
 })

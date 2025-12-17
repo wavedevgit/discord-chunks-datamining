@@ -737,7 +737,7 @@ let eG = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         searchableTitles: [ex.intl.string(ex.t["iHH+ky"])],
         label: ex.intl.string(ex.t["iHH+ky"]),
         ariaLabel: ex.intl.string(ex.t["iHH+ky"]),
-        element: en.Z,
+        element: en.ZP,
         newIndicator: (0, r.jsx)(eZ, {}),
         newIndicatorDismissibleContentTypes: eG(),
         url: ew.Z5c.SETTINGS("appearance")

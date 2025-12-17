@@ -1,7 +1,7 @@
 /** Chunk was on 27751 **/
 /** chunk id: 783576, original params: t,a,n (module,exports,require) **/
 require.d(exports, {
-  default: () => c
+  default: () => d
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -11,14 +11,15 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk419543 = require("./419543.js");
 
-function c(t) {
+function d(t) {
   let {
     href: a,
-    onClose: c,
-    transitionState: d
+    onClose: d,
+    transitionState: c
   } = t, b = (0, r.Dt)();
   return (0, e.jsxs)(i.Y0X, {
-    transitionState: d,
+    "data-migration-pending": true,
+    transitionState: c,
     "aria-labelledby": b,
     parentComponent: "SuspiciousDownloadModal",
     children: [(0, e.jsx)("img", {
@@ -44,12 +45,12 @@ function c(t) {
         children: [(0, e.jsx)(i.Button, {
           variant: "primary",
           text: o.intl.string(o.t.j7Vi2i),
-          onClick: c
+          onClick: d
         }), (0, e.jsx)(i.Button, {
           text: o.intl.string(o.t["/bHu89"]),
           variant: "secondary",
           onClick: () => {
-            c(), (0, s.Z)(a, true)
+            d(), (0, s.Z)(a, true)
           }
         })]
       })

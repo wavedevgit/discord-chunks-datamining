@@ -24,7 +24,7 @@ let E = () => {
   }), E()) : ((0, Chunk594421.j)(Chunk981631.rMx.NITRO_WARP_TOGGLED, {
     is_connecting: true
   }), exports(Chunk5900.Ij.INITIALIZING), require().then(t => {
-    t || e(T.Ij.DISCONNECTED)
+    t || e(S.Ij.DISCONNECTED)
   }).catch(t => {
     a.Z.captureException(t, {
       tags: {
@@ -33,7 +33,7 @@ let E = () => {
     }), r.default.track(c.rMx.PREMIUM_FEATURE_ERROR, {
       error_message: t instanceof Error ? t.message : JSON.stringify(t),
       error_source: o.D.PRIVATE_BROWSING_PERK_CONNECT
-    }), e(T.Ij.DISCONNECTED)
+    }), e(S.Ij.DISCONNECTED)
   })), [d, E, require, exports]);
   return (0, Chunk54381.jsx)("div", {
     children: (0, Chunk54381.jsx)(Chunk481060.rsf, {

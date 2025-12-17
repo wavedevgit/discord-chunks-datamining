@@ -11,7 +11,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk546424 = require("./546424.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let S = (0, Chunk509613.wf)(Chunk313789.n.ADVANCED_PANEL, {
+let T = (0, Chunk509613.wf)(Chunk313789.n.ADVANCED_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["8/udY0"]),
     usePredicate: () => !(0, Chunk526665.gN)("LegacyAdvancedPanel"),
     StronglyDiscouragedCustomComponent: Chunk64914.ZP,
@@ -26,5 +26,5 @@ let S = (0, Chunk509613.wf)(Chunk313789.n.ADVANCED_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["8/udY0"]),
     getLegacySearchKey: () => (0, Chunk526665.Gl)("AdvancedPanel") ? true : Chunk726985.s6.SETTINGS_ADVANCED,
     icon: Chunk657707.xhG,
-    buildLayout: () => (0, Chunk526665.Gl)("AdvancedPanel") ? [c] : [S]
+    buildLayout: () => (0, Chunk526665.Gl)("AdvancedPanel") ? [c] : [T]
   })

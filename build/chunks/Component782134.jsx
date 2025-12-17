@@ -37,7 +37,7 @@ let g = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
       n = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.supports(Chunk65154.AN.AUTOMATIC_VAD)),
       {
         volume: a,
-        isSpeaking: T
+        isSpeaking: S
       } = (0, Chunk269876.Kq)(),
       g = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isEnabled()),
       _ = Chunk473749.useMemo(() => !g && (0, Chunk54381.jsx)("div", {
@@ -87,13 +87,13 @@ let g = (0, Chunk509613.ON)(Chunk313789.n.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
         label: Chunk388032.intl.string(Chunk388032.t["sqUm+k"]),
         description: I,
         layout: "vertical",
-        children: e => t ? (0, i.jsx)(S.NP, {
-          isSpeaking: T,
+        children: e => t ? (0, i.jsx)(T.NP, {
+          isSpeaking: S,
           className: d.autoThresholdSlider,
           id: e.controlId,
           ariaDescribedBy: e.describedById,
           ariaLabelledBy: e.labelId
-        }) : (0, i.jsx)(S.t8, {
+        }) : (0, i.jsx)(T.t8, {
           volume: a,
           id: e.controlId,
           ariaDescribedBy: e.describedById,

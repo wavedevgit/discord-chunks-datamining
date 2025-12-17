@@ -65,81 +65,83 @@ function R(e) {
     closePopout: j,
     disableUserProfileLink: M = __OVERLAY__,
     newAnalyticsLocations: k = [],
-    disableAutoFocus: U = false
-  } = e, G = (0, m.ZP)(n.id, N), {
-    analyticsLocations: Z
-  } = (0, s.ZP)([...k, o.Z.USER_PROFILE_POPOUT]), F = (0, p.ZB)({
+    disableAutoFocus: U = false,
+    onClickContainer: G
+  } = e, Z = (0, m.ZP)(n.id, N), {
+    analyticsLocations: F
+  } = (0, s.ZP)([...k, o.Z.USER_PROFILE_POPOUT]), B = (0, p.ZB)({
     layout: "POPOUT",
     userId: n.id,
     guildId: N,
     channelId: R,
     messageId: w,
     roleId: D
-  }), B = i.useRef(null), V = (0, u.X)(B);
+  }), V = i.useRef(null), H = (0, u.X)(V);
   i.useEffect(() => {
-    null == L || L(null == B ? true : B.current)
-  }, [B, L]);
-  let H = () => {
+    null == L || L(null == V ? true : V.current)
+  }, [V, L]);
+  let Y = () => {
       null == j || j(), (0, h.openUserProfileModal)(P({
-        sourceAnalyticsLocations: Z,
+        sourceAnalyticsLocations: F,
         hideRestrictedProfile: true
-      }, F))
+      }, B))
     },
-    Y = !M && (0, l.Z)(n.id),
-    W = () => Y ? (0, r.jsx)(a.sNh, {
+    W = !M && (0, l.Z)(n.id),
+    K = () => W ? (0, r.jsx)(a.sNh, {
       id: "view-profile",
       label: C.intl.string(C.t["+Xp3hq"]),
       action: () => {
-        H(), (0, _.pQ)(P({
+        Y(), (0, _.pQ)(P({
           action: "PRESS_VIEW_PROFILE",
-          analyticsLocations: Z
-        }, F))
+          analyticsLocations: F
+        }, B))
       }
     }) : null,
-    K = U ? "div" : a.VqE,
-    z = (0, c.Dt)(),
-    q = f.ZP.useName(N, R, n);
+    z = U ? "div" : a.VqE,
+    q = (0, c.Dt)(),
+    Q = f.ZP.useName(N, R, n);
   return (0, r.jsx)(s.Gt, {
-    value: Z,
+    value: F,
     children: (0, r.jsx)(p.Mt, {
-      value: F,
+      value: B,
       openedAt: x,
-      fetchStartedAt: null == G ? true : G.fetchStartedAt,
-      fetchEndedAt: null == G ? true : G.fetchEndedAt,
-      isLoaded: null == G ? true : G.isLoaded,
-      children: (0, r.jsxs)(K, {
-        ref: B,
-        "aria-labelledby": z,
+      fetchStartedAt: null == Z ? true : Z.fetchStartedAt,
+      fetchEndedAt: null == Z ? true : Z.fetchEndedAt,
+      isLoaded: null == Z ? true : Z.isLoaded,
+      children: (0, r.jsxs)(z, {
+        ref: V,
+        "aria-labelledby": q,
+        onClick: G,
         children: [(0, r.jsx)(a.nn4, {
           children: (0, r.jsx)(a.H, {
-            id: z,
+            id: q,
             children: C.intl.format(C.t.KRe1Fk, {
-              name: q
+              name: Q
             })
           })
         }), (0, r.jsxs)(O.Z, {
           user: n,
-          displayProfile: G,
+          displayProfile: Z,
           themeType: T.l.POPOUT,
           children: [(0, r.jsx)(I.Z, {
             children: (0, r.jsx)(S.Z, {
               user: n,
-              viewProfileItem: W()
+              viewProfileItem: K()
             })
           }), (0, r.jsxs)("div", {
             className: A.header,
             children: [(0, r.jsx)(b.Z, {
               user: n,
-              displayProfile: G,
+              displayProfile: Z,
               guildId: N,
               themeType: T.l.POPOUT
             }), (0, r.jsx)(g.Z, {
               user: n,
-              displayProfile: G,
+              displayProfile: Z,
               guildId: N,
               channelId: R,
               themeType: T.l.POPOUT,
-              onOpenProfile: Y ? H : true
+              onOpenProfile: W ? Y : true
             })]
           }), (0, r.jsxs)(a.Ttm, {
             fade: true,
@@ -148,24 +150,24 @@ function R(e) {
               user: n,
               guildId: N,
               nickname: f.ZP.getName(N, R, n),
-              onOpenProfile: Y ? H : true,
+              onOpenProfile: W ? Y : true,
               tags: (0, r.jsx)(E.Z, {
-                displayProfile: G,
+                displayProfile: Z,
                 themeType: T.l.POPOUT,
                 onClose: j
               })
             }), (0, r.jsx)(y.Z, {
               userId: n.id,
-              userBio: null == G ? true : G.bio,
+              userBio: null == Z ? true : Z.bio,
               setLineClamp: false,
               textColor: "text-strong"
             })]
           }), (0, r.jsx)("div", {
             className: A.footer
           })]
-        }), (null == G ? true : G.profileEffect) != null && (0, r.jsx)(d.Z, {
-          skuId: null == G || null == (t = G.profileEffect) ? true : t.skuId,
-          isHovering: V
+        }), (null == Z ? true : Z.profileEffect) != null && (0, r.jsx)(d.Z, {
+          skuId: null == Z || null == (t = Z.profileEffect) ? true : t.skuId,
+          isHovering: H
         })]
       })
     })

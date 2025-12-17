@@ -21,7 +21,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_MUT
   },
   setValue: t => {
     let e = a.xq.getSetting();
-    a.xq.updateSetting(t ? l.pj(e, T.SOq.MUTUAL_GUILDS) : l.M1(e, T.SOq.MUTUAL_GUILDS, T.SOq.NO_RELATION))
+    a.xq.updateSetting(t ? l.pj(e, S.SOq.MUTUAL_GUILDS) : l.M1(e, S.SOq.MUTUAL_GUILDS, S.SOq.NO_RELATION))
   },
   useDisabled: () => (0, Chunk915009.LN)()
 })

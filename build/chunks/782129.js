@@ -13,7 +13,7 @@ var Chunk323472 = require("./323472.jsx"),
   Chunk91981 = require("./91981.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.CB)(Chunk313789.n.STREAMING_ADVANCED_ACCORDION, {
-  useTitle: t => t ? S.intl.string(S.t.qrMyvm) : S.intl.string(S.t.LEtTNl),
+  useTitle: t => t ? T.intl.string(T.t.qrMyvm) : T.intl.string(T.t.LEtTNl),
   useCollapsedSubtitle: () => (0, Chunk323472.u)(Chunk313789.n.STREAMING_ADVANCED_ACCORDION),
   buildLayout: () => [Chunk231365.b, Chunk485356.r, Chunk91981.W, Chunk476203.B, Chunk812766.s]
 })

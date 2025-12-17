@@ -12,13 +12,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk292959 = require("./292959.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
-let S = (0, Chunk972959.H)(() => ({
+let T = (0, Chunk972959.H)(() => ({
   currentPlayingSound: null
 }));
 
 function c() {
-  let t = S.getField("currentPlayingSound");
-  null == module || module.stop(), S.setState({
+  let t = T.getField("currentPlayingSound");
+  null == module || module.stop(), T.setState({
     currentPlayingSound: null
   })
 }
@@ -26,12 +26,12 @@ function c() {
 function E(t) {
   return (0, u.qs)("".concat(o.n.SOUNDS_LIST_ITEM_PREFIX).concat(t.sound), {
     useTitle: t.useTitle,
-    useSubtitle: () => T.intl.format(T.t.OOiGCM, {
+    useSubtitle: () => S.intl.format(S.t.OOiGCM, {
       onClick: () => (function(t) {
-        let e = S.getField("currentPlayingSound");
+        let e = T.getField("currentPlayingSound");
         null == e || e.stop();
         let n = (0, r.GN)(t);
-        S.setState({
+        T.setState({
           currentPlayingSound: n
         })
       })(t.sound)

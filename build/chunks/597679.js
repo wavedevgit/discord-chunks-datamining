@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 597679, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  w: () => T
+  w: () => S
 });
 var Chunk657707 = require("./657707.js"),
   Chunk509613 = require("./509613.js"),
@@ -14,7 +14,7 @@ let o = (0, Chunk509613.wf)(Chunk313789.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
     StronglyDiscouragedCustomComponent: Chunk595242.Z,
     buildLayout: () => []
   }),
-  T = (0, Chunk509613.m7)(Chunk313789.n.PREMIUM_GUILD_SUBSCRIPTIONS_SIDEBAR_ITEM, {
+  S = (0, Chunk509613.m7)(Chunk313789.n.PREMIUM_GUILD_SUBSCRIPTIONS_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["+CbP2v"]),
     getLegacySearchKey: () => Chunk726985.s6.GUILD_BOOSTING,
     icon: Chunk657707.Ucv,

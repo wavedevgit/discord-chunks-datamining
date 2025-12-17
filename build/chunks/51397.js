@@ -10,14 +10,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
-let T = (0, Chunk509613.UO)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_SLIDER, {
+let S = (0, Chunk509613.UO)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_SLIDER, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AlybXj),
     setValue: t => l.Z.setAttenuation(t, u.Z.getAttenuateWhileSpeakingSelf(), u.Z.getAttenuateWhileSpeakingOthers()),
     minValue: 0,
     maxValue: 100,
     getInitialValue: () => Chunk131951.Z.getAttenuation()
   }),
-  S = (0, Chunk509613.qs)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_FOR_SELF_SETTING, {
+  T = (0, Chunk509613.qs)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_FOR_SELF_SETTING, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["9dHxRY"]),
     useValue: () => (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getAttenuateWhileSpeakingSelf()),
     setValue: t => l.Z.setAttenuation(u.Z.getAttenuation(), t, u.Z.getAttenuateWhileSpeakingOthers())
@@ -31,5 +31,5 @@ let T = (0, Chunk509613.UO)(Chunk313789.n.VOICE_GLOBAL_ATTENUATION_SLIDER, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.oSdBvW),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["0A/8Rt"]),
     usePredicate: () => (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.supports(Chunk65154.AN.ATTENUATION)),
-    buildLayout: () => [T, S, c]
+    buildLayout: () => [S, T, c]
   })

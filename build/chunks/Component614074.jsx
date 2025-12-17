@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 614074, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  C: () => S
+  C: () => T
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,7 +11,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk472057 = require("./472057.js"),
   Chunk977701 = require("./977701.js");
-let S = () => {
+let T = () => {
     let {
       isWeb: t,
       installationStatus: e

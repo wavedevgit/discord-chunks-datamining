@@ -29,6 +29,6 @@ let d = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_AGE_RESTRICTED_IOS_
     if ((0, r.Uw)() && t) return void l.Z.showAgeVerificationGetStartedModal({
       entryPoint: s.cU.AGE_RESTRICTED_SERVERS_ACCESS_SETTINGS
     });
-    T.DC.updateSetting(t)
+    S.DC.updateSetting(t)
   }
 })

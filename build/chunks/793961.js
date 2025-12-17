@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 793961, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  D: () => S
+  D: () => T
 });
 var Chunk945577 = require("./945577.js"),
   Chunk611004 = require("./611004.jsx"),
@@ -11,7 +11,7 @@ var Chunk945577 = require("./945577.js"),
   Chunk313789 = require("./313789.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let S = (0, Chunk509613.J9)(Chunk313789.n.CHAT_MESSAGE_SEARCH_DEFAULT_DM_SEARCH_BEHAVIOR, {
+let T = (0, Chunk509613.J9)(Chunk313789.n.CHAT_MESSAGE_SEARCH_DEFAULT_DM_SEARCH_BEHAVIOR, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t["NxjN+q"]),
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t["t4+fbe"])],
   useOptions: () => [{

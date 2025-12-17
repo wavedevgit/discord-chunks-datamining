@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 696467, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  u: () => L
+  u: () => P
 });
 var Chunk755721 = require("./755721.js"),
   Chunk168107 = require("./168107.jsx"),
@@ -29,7 +29,7 @@ let R = (t, e) => {
       applied_to_existing_guilds: e
     })
   },
-  L = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
+  P = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["3o2ojh"]),
     useSubtitle: () => (0, Chunk639814.c_)() ? Chunk388032.intl.format(Chunk388032.t.WpnWLc, {
       helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.MESSAGE_REQUESTS)
@@ -72,7 +72,7 @@ let R = (t, e) => {
           }
         })
       } else {
-        let n = (0, S.gl)();
+        let n = (0, T.gl)();
         t ? n.delete(e) : n.add(e), d.zA.updateSetting(Array.from(n)), o.default.track(C.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
           action: A.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
           ingress: O.f4.USER_SETTINGS_PRIVACY_SAFETY,

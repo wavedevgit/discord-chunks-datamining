@@ -10,10 +10,10 @@ var Chunk657707 = require("./657707.js"),
   Chunk526665 = require("./526665.js"),
   Chunk287490 = require("./287490.jsx"),
   Chunk430404 = require("./430404.js");
-let T = (0, Chunk509613.k4)(Chunk313789.n.EXPERIMENTS_CATEGORY, {
+let S = (0, Chunk509613.k4)(Chunk313789.n.EXPERIMENTS_CATEGORY, {
     buildLayout: () => [Chunk430404.z]
   }),
-  S = (0, Chunk509613.wf)(Chunk313789.n.EXPERIMENTS_PANEL, {
+  T = (0, Chunk509613.wf)(Chunk313789.n.EXPERIMENTS_PANEL, {
     usePredicate: () => !(0, Chunk526665.gN)("LegacyExperimentsPanel"),
     useTitle: () => "Experiments",
     StronglyDiscouragedCustomComponent: Chunk287490.Z,
@@ -22,11 +22,11 @@ let T = (0, Chunk509613.k4)(Chunk313789.n.EXPERIMENTS_CATEGORY, {
   c = (0, Chunk509613.wf)(Chunk313789.n.EXPERIMENTS_PANEL, {
     usePredicate: () => (0, Chunk526665.gN)("ExperimentsPanel"),
     useTitle: () => "Experiments",
-    buildLayout: () => [T]
+    buildLayout: () => [S]
   }),
   E = (0, Chunk509613.m7)(Chunk313789.n.EXPERIMENTS_SIDEBAR_ITEM, {
     useTitle: () => "Experiments",
     icon: Chunk657707.uOV,
     usePredicate: () => Chunk906467.Z.isDeveloper,
-    buildLayout: () => (0, Chunk526665.Gl)("ExperimentsPanel") ? [c] : [S]
+    buildLayout: () => (0, Chunk526665.Gl)("ExperimentsPanel") ? [c] : [T]
   })

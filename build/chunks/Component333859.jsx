@@ -2,7 +2,7 @@
 /** chunk id: 333859, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  c: () => y
+  c: () => O
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,30 +16,31 @@ var Chunk442837 = require("./442837.js"),
   Chunk550385 = require("./550385.js"),
   Chunk638212 = require("./638212.jsx"),
   Chunk626135 = require("./626135.js"),
+  Chunk526665 = require("./526665.js"),
   Chunk342386 = require("./342386.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk813671 = require("./813671.js");
-let b = () => {
+let y = () => {
     (0, Chunk550385.XO)(Chunk550385.wh.APP_ICON), (0, Chunk342386.default)()
   },
-  y = () => {
+  O = () => {
     let {
       analyticsLocations: e
-    } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS), t = (0, Chunk442837.e7)([Chunk737604.Z], () => Chunk737604.Z.isUpsellPreview);
+    } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS), t = (0, Chunk442837.e7)([Chunk737604.Z], () => Chunk737604.Z.isUpsellPreview), n = (0, Chunk526665.gN)("UserSettingsAppearanceInAppIcon");
     (0, Chunk493773.ZP)(() => {
       exports && Chunk626135.default.track(Chunk981631.rMx.PREMIUM_UPSELL_VIEWED, {
         type: Chunk474936.cd.APP_ICON_UPSELL,
         location_stack: module
       })
     });
-    let n = () => (0, Chunk54381.jsxs)("div", {
+    let d = () => (0, Chunk54381.jsxs)("div", {
       className: Chunk813671.tryItOutButtons,
       children: [(0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: exports ? "secondary" : "primary",
         text: Chunk388032.intl.string(Chunk388032.t["hb/wE0"]),
-        onClick: () => b()
+        onClick: () => y()
       }), exports ? (0, Chunk54381.jsx)(Chunk638212.Z, {
         subscriptionTier: Chunk474936.Si.TIER_2,
         defaultTextOverride: Chunk388032.intl.string(Chunk388032.t.mr4K7D),
@@ -54,8 +55,8 @@ let b = () => {
       className: Chunk813671.selectionGroup,
       children: [(0, Chunk54381.jsx)(Chunk539873.Z, {
         disabled: exports,
-        renderCTAButtons: require
-      }), (0, Chunk54381.jsx)(Chunk481060.izJ, {
+        renderCTAButtons: Chunk550385
+      }), !require && (0, Chunk54381.jsx)(Chunk481060.izJ, {
         className: Chunk813671.divider
       })]
     })

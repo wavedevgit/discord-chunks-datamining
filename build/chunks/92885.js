@@ -27,7 +27,7 @@ let E = (0, Chunk509613.qs)(Chunk313789.n.NOTIFICATION_HOLIDAY_SOUNDPACK, {
   },
   setValue: function(t) {
     let e = u.Z.getHolidaySoundpack();
-    l()(null != e, "predicate should fail if no soundpack is available"), (0, a.c)(t ? e : S.Y.CLASSIC)
+    l()(null != e, "predicate should fail if no soundpack is available"), (0, a.c)(t ? e : T.Y.CLASSIC)
   },
   usePredicate: Chunk197344.Z.useIsEligible
 })

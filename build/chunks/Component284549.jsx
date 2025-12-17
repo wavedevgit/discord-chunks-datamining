@@ -1,7 +1,7 @@
 /** Chunk was on 35401 **/
-/** chunk id: 284549, original params: t,e,i (module,exports,require) **/
+/** chunk id: 284549, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => f
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,28 +17,28 @@ var Chunk54381 = require("./54381.js"),
   Chunk1964 = require("./1964.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let C = t => {
+let f = t => {
   let {
     transitionState: e,
-    onClose: i
-  } = t, C = (0, a.e7)([c.Z], () => c.Z.getErrors()), v = (0, a.e7)([c.Z], () => c.Z.getFormState()), y = (0, a.e7)([m.default], () => m.default.getCurrentUser()), x = (0, a.e7)([u.Z], () => u.Z.getAction()), b = !p.Z.isEmailReverification(x), [j, R] = s.useState(true), _ = v === g.QZA.SUBMITTING;
+    onClose: n
+  } = t, f = (0, l.e7)([p.Z], () => p.Z.getErrors()), y = (0, l.e7)([p.Z], () => p.Z.getFormState()), v = (0, l.e7)([g.default], () => g.default.getCurrentUser()), E = (0, l.e7)([u.Z], () => u.Z.getAction()), b = !c.Z.isEmailReverification(E), [k, w] = i.useState(true), P = y === m.QZA.SUBMITTING;
 
-  function E(t) {
-    var e, i;
-    return null != (i = null == C || null == (e = C[t]) ? true : e[0]) ? i : ""
+  function R(t) {
+    var e, n;
+    return null != (n = null == f || null == (e = f[t]) ? true : e[0]) ? n : ""
   }
-  let I = E("email"),
-    P = E("password");
-  return (0, n.jsx)(h.Z, {
+  let Z = R("email"),
+    S = R("password");
+  return (0, s.jsx)(h.Z, {
     transitionState: e,
-    email: null == y ? true : y.email,
-    emailError: I,
-    passwordError: P,
-    submitting: _,
-    canResend: j && !_ && (null == y ? true : y.email) != null && 0 === I.length && 0 === P.length,
+    email: null == v ? true : v.email,
+    emailError: Z,
+    passwordError: S,
+    submitting: P,
+    canResend: k && !P && (null == v ? true : v.email) != null && 0 === Z.length && 0 === S.length,
     canChange: b,
     onChangeEmailClick: function() {
-      R(false)
+      w(false)
     },
     onVerify: function(t, e) {
       (0, o.Mn)({
@@ -47,13 +47,13 @@ let C = t => {
       }).then(t => {
         if (!(null == t ? true : t.ok)) {
           var e;
-          (null == t || null == (e = t.body) ? true : e.username) != null ? (0, d.P)() : 0 === P.length && 0 === I.length && (0, l.showToast)((0, l.createToast)(f.intl.string(f.t.R0RpRX), l.ToastType.FAILURE))
+          (null == t || null == (e = t.body) ? true : e.username) != null ? (0, d.P)() : 0 === S.length && 0 === Z.length && (0, a.showToast)((0, a.createToast)(C.intl.string(C.t.R0RpRX), a.ToastType.FAILURE))
         }
-      }), R(true)
+      }), w(true)
     },
     onResend: function() {
       r.Z.verifyResend()
     },
-    onClose: i
+    onClose: n
   })
 }

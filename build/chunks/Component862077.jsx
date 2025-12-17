@@ -57,36 +57,38 @@ function I(e) {
     openedAt: A,
     onHide: N,
     newAnalyticsLocations: P = [],
-    disableAutoFocus: R = false
-  } = e, w = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
-    analyticsLocations: D
-  } = (0, l.ZP)([...P, w ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), x = (0, d.ZB)({
+    disableAutoFocus: R = false,
+    onClickContainer: w
+  } = e, D = (0, a.e7)([c.Z], () => c.Z.isBlocked(t.id)), {
+    analyticsLocations: x
+  } = (0, l.ZP)([...P, D ? s.Z.BLOCKED_PROFILE_POPOUT : s.Z.IGNORED_PROFILE_POPOUT]), L = (0, d.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: n,
     channelId: I,
     messageId: T,
     roleId: C
-  }), L = i.useRef(null), j = (0, p.ZP)(t.id, n);
+  }), j = i.useRef(null), M = (0, p.ZP)(t.id, n);
   i.useEffect(() => {
-    null == v || v(null == L ? true : L.current)
-  }, [L, v]);
-  let M = w ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-    k = R ? "div" : o.VqE;
+    null == v || v(null == j ? true : j.current)
+  }, [j, v]);
+  let k = D ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
+    U = R ? "div" : o.VqE;
   return (0, r.jsx)(l.Gt, {
-    value: D,
+    value: x,
     children: (0, r.jsx)(d.Mt, {
-      value: x,
+      value: L,
       openedAt: A,
-      fetchStartedAt: null == j ? true : j.fetchStartedAt,
-      fetchEndedAt: null == j ? true : j.fetchEndedAt,
-      isLoaded: null == j ? true : j.isLoaded,
-      children: (0, r.jsx)(k, {
-        ref: L,
+      fetchStartedAt: null == M ? true : M.fetchStartedAt,
+      fetchEndedAt: null == M ? true : M.fetchEndedAt,
+      isLoaded: null == M ? true : M.isLoaded,
+      children: (0, r.jsx)(U, {
+        ref: j,
         "aria-label": t.username,
+        onClick: w,
         children: (0, r.jsx)(m.Z, {
           user: t,
-          displayProfile: j,
+          displayProfile: M,
           themeType: E.l.POPOUT,
           children: (0, r.jsxs)("div", {
             className: y.container,
@@ -107,27 +109,27 @@ function I(e) {
                   children: b.intl.string(b.t.b33pLD)
                 }), (0, r.jsx)(o.Text, {
                   variant: "text-sm/medium",
-                  children: b.intl.format(w ? b.t["8F+WNz"] : b.t["/cZp5s"], {
+                  children: b.intl.format(D ? b.t["8F+WNz"] : b.t["/cZp5s"], {
                     username: u.ZP.getName(n, I, t)
                   })
                 })]
               }), (0, r.jsxs)(o.Kqy, {
                 align: "center",
                 children: [(0, r.jsx)(g.Z, {
-                  isBlocked: w,
+                  isBlocked: D,
                   onClick: () => {
                     N(), (0, f.pQ)(S({
-                      action: M,
-                      analyticsLocations: D
-                    }, x))
+                      action: k,
+                      analyticsLocations: x
+                    }, L))
                   }
                 }), (0, r.jsx)(h.Z, {
                   userId: t.id,
                   onClick: () => {
                     N(), (0, f.pQ)(S({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                      analyticsLocations: D
-                    }, x))
+                      analyticsLocations: x
+                    }, L))
                   }
                 })]
               })]

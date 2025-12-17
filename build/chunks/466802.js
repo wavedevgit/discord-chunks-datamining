@@ -11,7 +11,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk126848 = require("./126848.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let S = (0, Chunk509613.wf)(Chunk313789.n.NITRO_PANEL, {
+let T = (0, Chunk509613.wf)(Chunk313789.n.NITRO_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.Ipxkog),
     StronglyDiscouragedCustomComponent: Chunk748717.Z,
     buildLayout: () => []
@@ -24,5 +24,5 @@ let S = (0, Chunk509613.wf)(Chunk313789.n.NITRO_PANEL, {
       type: Chunk970013.W.STRONGLY_DISCOURAGED_CUSTOM,
       useCustomDecoration: (t, e) => (0, a.x)(e)
     },
-    buildLayout: () => [S]
+    buildLayout: () => [T]
   })

@@ -65,83 +65,85 @@ function R(e) {
     setPopoutRef: j,
     disableUserProfileLink: M = __OVERLAY__,
     newAnalyticsLocations: k = [],
-    disableAutoFocus: U = false
+    disableAutoFocus: U = false,
+    onClickContainer: G
   } = e, {
-    analyticsLocations: G
-  } = (0, l.ZP)([...k, s.Z.USER_PROFILE_POPOUT]), Z = (0, p.ZB)({
+    analyticsLocations: Z
+  } = (0, l.ZP)([...k, s.Z.USER_PROFILE_POPOUT]), F = (0, p.ZB)({
     layout: "POPOUT",
     userId: t.id,
     guildId: N,
     channelId: R,
     messageId: w,
     roleId: D
-  }), F = (0, m.ZP)(t.id, N), B = (0, a.e7)([d.Z], () => null != N ? d.Z.getGuild(N) : null), V = i.useRef(null), {
-    isHoveringOrFocusing: H
-  } = (0, u.Z)(V);
+  }), B = (0, m.ZP)(t.id, N), V = (0, a.e7)([d.Z], () => null != N ? d.Z.getGuild(N) : null), H = i.useRef(null), {
+    isHoveringOrFocusing: Y
+  } = (0, u.Z)(H);
   i.useEffect(() => {
-    null == j || j(null == V ? true : V.current)
-  }, [V, j]);
-  let Y = e => {
+    null == j || j(null == H ? true : H.current)
+  }, [H, j]);
+  let W = e => {
       null == L || L(), (0, h.openUserProfileModal)(P({
-        sourceAnalyticsLocations: G,
+        sourceAnalyticsLocations: Z,
         hideRestrictedProfile: true
-      }, Z, e))
+      }, F, e))
     },
-    W = () => M ? null : (0, r.jsx)(o.sNh, {
+    K = () => M ? null : (0, r.jsx)(o.sNh, {
       id: "view-profile",
       label: C.intl.string(C.t["+Xp3hq"]),
       action: () => {
-        Y(), (0, _.pQ)(P({
+        W(), (0, _.pQ)(P({
           action: "PRESS_VIEW_PROFILE",
-          analyticsLocations: G
-        }, Z))
+          analyticsLocations: Z
+        }, F))
       }
     }),
-    K = U ? "div" : o.VqE,
-    z = (0, c.Dt)(),
-    q = f.ZP.useName(N, R, t);
+    z = U ? "div" : o.VqE,
+    q = (0, c.Dt)(),
+    Q = f.ZP.useName(N, R, t);
   return (0, r.jsx)(l.Gt, {
-    value: G,
+    value: Z,
     children: (0, r.jsx)(p.Mt, {
-      value: Z,
+      value: F,
       openedAt: x,
-      fetchStartedAt: null == F ? true : F.fetchStartedAt,
-      fetchEndedAt: null == F ? true : F.fetchEndedAt,
-      isLoaded: null == F ? true : F.isLoaded,
-      children: (0, r.jsxs)(K, {
-        ref: V,
-        "aria-labelledby": z,
+      fetchStartedAt: null == B ? true : B.fetchStartedAt,
+      fetchEndedAt: null == B ? true : B.fetchEndedAt,
+      isLoaded: null == B ? true : B.isLoaded,
+      children: (0, r.jsxs)(z, {
+        ref: H,
+        "aria-labelledby": q,
+        onClick: G,
         children: [(0, r.jsx)(o.nn4, {
           children: (0, r.jsx)(o.H, {
-            id: z,
+            id: q,
             children: C.intl.format(C.t.KRe1Fk, {
-              name: q
+              name: Q
             })
           })
         }), (0, r.jsxs)(b.Z, {
           user: t,
-          displayProfile: F,
+          displayProfile: B,
           themeType: T.l.POPOUT,
           children: [(0, r.jsx)(O.Z, {
             children: (0, r.jsx)(y.Z, {
               user: t,
               guildId: N,
-              viewProfileItem: W()
+              viewProfileItem: K()
             })
           }), (0, r.jsxs)("div", {
             className: A.header,
             children: [(0, r.jsx)(E.Z, {
               user: t,
-              displayProfile: F,
+              displayProfile: B,
               guildId: N,
               themeType: T.l.POPOUT
             }), (0, r.jsx)(g.Z, {
               user: t,
-              displayProfile: F,
+              displayProfile: B,
               guildId: N,
               channelId: R,
               themeType: T.l.POPOUT,
-              onOpenProfile: M ? true : Y
+              onOpenProfile: M ? true : W
             }), (0, r.jsx)(v.Z, {
               user: t,
               themeType: T.l.POPOUT,
@@ -151,10 +153,10 @@ function R(e) {
           }), (0, r.jsx)(S.Z, {
             user: t,
             currentUser: n,
-            displayProfile: F,
-            guild: B,
-            isHoveringOrFocusing: H,
-            onOpenProfile: M ? true : Y,
+            displayProfile: B,
+            guild: V,
+            isHoveringOrFocusing: Y,
+            onOpenProfile: M ? true : W,
             channelId: R,
             onClose: L
           }), (0, r.jsx)(I.Z, {

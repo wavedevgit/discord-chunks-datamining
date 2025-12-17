@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 103644, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  X: () => T
+  X: () => S
 });
 var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
@@ -10,7 +10,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk313789 = require("./313789.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk388032 = require("./388032.jsx");
-let T = (0, Chunk509613.ON)(Chunk313789.n.SOUNDS_HOLIDAY_NOTICE, {
+let S = (0, Chunk509613.ON)(Chunk313789.n.SOUNDS_HOLIDAY_NOTICE, {
   useSearchTerms: () => [Chunk388032.intl.string(Chunk388032.t.fgSHf8)],
   usePredicate: () => null != Chunk197344.Z.useHolidaySoundpack(),
   Component: () => (0, Chunk54381.jsx)(Chunk793030.xvT, {
