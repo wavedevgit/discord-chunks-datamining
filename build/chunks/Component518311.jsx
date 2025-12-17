@@ -208,12 +208,13 @@ class eu extends(i = Chunk473749.PureComponent) {
   }
   isNotFriends() {
     let {
-      channel: e
+      channel: e,
+      isStaffOnlyDM: t
     } = this.props;
     if (null == module || !module.isDM()) returnfalse;
-    let t = module.getRecipientId();
-    if (null == exports) throw Error("no recipient in DM");
-    return !Chunk699516.Z.isFriend(exports)
+    let n = module.getRecipientId();
+    if (null == require) throw Error("no recipient in DM");
+    return !Chunk699516.Z.isFriend(require) && !exports
   }
   createInvite() {
     let {
@@ -870,15 +871,23 @@ function ep(e) {
     channel: t
   } = e, n = ea(e, ["channel"]);
   let i = (0, u.cj)([k.Z, D.Z, B.Z], () => {
-    let e;
-    return null != t && null != (e = D.Z.getInvite(t.id)) && e.isExpired() && (e = null), el(er({}, k.Z.getState()), {
-      invite: e,
-      hideDiscriminator: B.Z.hidePersonalInformation,
-      hideInstantInvites: B.Z.hideInstantInvites
-    })
-  });
+      let e;
+      return null != t && null != (e = D.Z.getInvite(t.id)) && e.isExpired() && (e = null), el(er({}, k.Z.getState()), {
+        invite: e,
+        hideDiscriminator: B.Z.hidePersonalInformation,
+        hideInstantInvites: B.Z.hideInstantInvites
+      })
+    }),
+    l = (0, u.e7)([H.default], () => {
+      var e;
+      return !!(null == (e = H.default.getCurrentUser()) ? true : e.isStaff()) && null != t && !!t.isDM() && t.recipients.every(e => {
+        var t;
+        return null == (t = H.default.getUser(e)) ? true : t.isStaff()
+      })
+    }, [t]);
   return (0, r.jsx)(eu, er({
-    channel: t
+    channel: t,
+    isStaffOnlyDM: l
   }, n, i))
 }
 
