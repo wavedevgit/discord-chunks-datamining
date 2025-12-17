@@ -216,13 +216,17 @@ function R(e) {
         null == (r = ea.current) || r.focus()
       }
     }, [eE, eh, ec]),
-    eS = i.useRef(null);
-  return i.useEffect(() => (!ei && q && (eS.current = setTimeout(() => {
+    eS = Math.max(er.findIndex(e => {
+      var t;
+      return e.id === (null == (t = eh[eh.length - 1]) ? true : t.id)
+    }), 0),
+    eI = i.useRef(null);
+  return i.useEffect(() => (!ei && q && (eI.current = setTimeout(() => {
     var e;
-    return null == (e = document.getElementById((0, E.cA)(en, 0))) ? true : e.focus()
+    return null == (e = document.getElementById((0, E.cA)(en, eS))) ? true : e.focus()
   }, 10)), () => {
-    null != eS.current && clearTimeout(eS.current)
-  }), [ei, en, q]), (0, r.jsx)(l.g, T(S({}, H), {
+    null != eI.current && clearTimeout(eI.current)
+  }), [ei, en, q, eS]), (0, r.jsx)(l.g, T(S({}, H), {
     "data-mana-component": "select",
     layoutConfig: {
       horizontalControlColumnWidth: "min(".concat(eg, ", 50%)")
@@ -307,6 +311,7 @@ function R(e) {
             renderListItem: e => (0, r.jsx)(_.W, S({}, e)),
             maxVisibleItems: M,
             loading: ei,
+            activeDescendantIndex: eS,
             typeahead: true
           })
         })
