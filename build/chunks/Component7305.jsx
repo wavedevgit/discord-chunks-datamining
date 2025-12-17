@@ -226,7 +226,7 @@ let H = function() {
       renderStep: () => (0, Chunk54381.jsx)(Chunk793541.Z, {})
     }, {
       key: Chunk409813.h8.REVIEW,
-      renderStep: e => (0, r.jsx)(w.l, F({}, e)),
+      renderStep: e => (0, r.jsx)(w.lZ, F({}, e)),
       options: {
         renderHeader: true,
         useBreadcrumbLabel: e => (0, C.Fv)(e) ? Z.intl.string(Z.t.UKbp1N) : Z.intl.string(Z.t.QBnNHq)

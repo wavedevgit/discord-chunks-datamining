@@ -89,9 +89,6 @@ let g = e => {
       tooltipText: l
     } = e;
     let c = f({
-        variant: "active",
-        type: "submit",
-        "data-testid": "submitButton",
         text: s
       }, m(e, ["onClick", "loading", "disabled", "text", "tooltipText"])),
       u = (0, r.jsx)(a.zxk, _(f({}, c), {
@@ -115,7 +112,7 @@ let g = e => {
     return (0, r.jsxs)(o.mzw, _(f({
       className: u.checkoutModalFooter,
       direction: s.Z.Direction.HORIZONTAL,
-      justify: s.Z.Justify.END,
+      justify: null != i ? s.Z.Justify.BETWEEN : s.Z.Justify.END,
       "data-migration-pending": true
     }, a), {
       children: [null != i ? (0, r.jsx)(c.Z, {

@@ -60,7 +60,7 @@ function O(e, t) {
 }
 let v = [{
     key: Chunk409813.h8.REVIEW,
-    renderStep: e => (0, r.jsx)(c.l, b({}, e)),
+    renderStep: e => (0, r.jsx)(c.lZ, b({}, e)),
     options: {
       useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t.QBnNHq)
     }

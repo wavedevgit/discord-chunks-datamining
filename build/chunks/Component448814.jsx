@@ -82,70 +82,56 @@ let T = Chunk692547.Z.modules.select.OPTION_HEIGHT.resolve();
 function C(e) {
   let t, {
       id: n,
-      tabIndex: a = 0,
-      required: u = false,
-      disabled: d = false,
-      selectionMode: f = "single",
-      items: b,
-      defaultSelectedItems: O,
-      selectedItems: I,
-      onSelectionChange: C,
-      activeDescendantIndex: P,
-      shouldFocusWrap: R = false,
-      renderListItem: w,
-      renderEmptyState: D,
-      maxVisibleItems: x = 5,
-      loading: L = false,
-      onBlur: j,
-      onFocus: M,
-      typeahead: k = false
+      required: a = false,
+      disabled: u = false,
+      selectionMode: d = "single",
+      items: f,
+      defaultSelectedItems: b,
+      selectedItems: O,
+      onSelectionChange: I,
+      activeDescendantIndex: C,
+      shouldFocusWrap: P = false,
+      renderListItem: R,
+      renderEmptyState: w,
+      maxVisibleItems: D = 5,
+      loading: x = false,
+      onBlur: L,
+      onFocus: j,
+      typeahead: M = false
     } = e,
-    U = i.useId(),
-    G = null != n ? n : U,
-    Z = i.useRef(null),
-    F = i.useMemo(() => b.map((e, t) => v(y({}, e), {
+    k = i.useId(),
+    U = null != n ? n : k,
+    G = i.useMemo(() => f.map((e, t) => v(y({}, e), {
       index: t
-    })), [b]),
-    [B, V] = i.useState(null != O ? O : []),
-    H = null != I,
-    Y = H ? I : B,
-    W = (0, s.ZP)({
-      id: G,
-      defaultFocused: null != P ? (0, g.cA)(G, P) : true,
+    })), [f]),
+    [Z, F] = i.useState(null != b ? b : []),
+    B = null != O,
+    V = B ? O : Z,
+    H = (0, s.ZP)({
+      id: U,
       async scrollToEnd() {},
       async scrollToStart() {},
-      isEnabled: !d,
-      wrap: R,
-      preserveFocusPosition: false
-    });
+      isEnabled: !u,
+      wrap: P,
+      preserveFocusPosition: true
+    }),
+    {
+      activeIndex: Y,
+      handleKeyDown: W
+    } = N(M, G);
   i.useEffect(() => {
-    requestAnimationFrame(() => {
-      if (null != P) {
-        var e;
-        null == (e = Z.current) || e.scrollToIndex({
-          section: 0,
-          row: P
-        })
-      }
-    })
-  }, [P, W, G]);
-  let {
-    activeIndex: K,
-    handleKeyDown: z
-  } = N(k, F);
-  i.useEffect(() => {
-    if (null != K && k) {
-      let e = (0, l.jb)(G, (0, g.cA)(G, K)),
+    if (null != Y && M) {
+      let e = (0, l.jb)(U, (0, g.cA)(U, Y)),
         t = document.querySelector((0, l.P1)(e));
       null == t || t.focus()
     }
-  }, [K, F, k, G]);
-  let q = i.useCallback(e => {
-      if (true === u && 1 === Y.length && Y.includes(e)) return;
-      let t = (0, g.cq)(f, Y, e);
-      H || V(t), null == C || C(t)
-    }, [u, Y, C, H, f]),
-    Q = i.useCallback(e => (0, r.jsx)("div", {
+  }, [Y, G, M, U]);
+  let K = i.useCallback(e => {
+      if (true === a && 1 === V.length && V.includes(e)) return;
+      let t = (0, g.cq)(d, V, e);
+      B || F(t), null == I || I(t)
+    }, [a, V, I, B, d]),
+    z = i.useCallback(e => (0, r.jsx)("div", {
       className: E.listBoxItemContent,
       children: (0, r.jsx)(m.x, {
         variant: "text-md/medium",
@@ -154,7 +140,7 @@ function C(e) {
         children: e.label
       })
     }), []);
-  if (L) t = (0, r.jsx)("div", {
+  if (x) t = (0, r.jsx)("div", {
     className: E.loadingSpinnerWrapper,
     "aria-busy": true,
     children: (0, r.jsx)(_.$, {
@@ -163,62 +149,58 @@ function C(e) {
       itemClassName: E.loadingSpinnerInner
     })
   });
-  else if (F.length > 0) t = (0, r.jsx)(p._2, {
-    ref: Z,
+  else if (G.length > 0) t = (0, r.jsx)(p._2, {
     style: {
-      height: null != x ? "".concat(Math.min(F.length, x) * T, "px") : "100%"
+      height: null != D ? "".concat(Math.min(G.length, D) * T, "px") : "100%"
     },
     role: true,
-    tabIndex: a,
     rowHeight: T,
-    sections: [F.length],
+    sections: [G.length],
     sectionHeight: 0,
     renderSection: () => null,
     renderRow: e => {
       var t;
       let {
         row: n
-      } = e, i = F[n], o = (0, g.cA)(G, n), s = 0 !== Y.length && null != Y.find(e => e.id === i.id);
+      } = e, i = G[n], a = (0, g.cA)(U, n), o = 0 !== V.length && null != V.find(e => e.id === i.id);
       return (0, r.jsx)(A, v(y({}, i), {
-        id: o,
-        tabIndex: a,
-        selectionMode: f,
-        selected: s,
-        disabled: d || i.disabled,
-        focused: n === P,
+        id: a,
+        selectionMode: d,
+        selected: o,
+        disabled: u || i.disabled,
+        focused: n === C,
         onClick: () => {
-          d || i.disabled || q(i)
+          u || i.disabled || K(i)
         },
-        children: null != (t = null == w ? true : w(i)) ? t : Q(i)
+        children: null != (t = null == R ? true : R(i)) ? t : z(i)
       }), i.index)
     }
   });
   else {
-    var X;
-    t = null != (X = null == D ? true : D()) ? X : (0, r.jsx)(h.z, {})
+    var q;
+    t = null != (q = null == w ? true : w()) ? q : (0, r.jsx)(h.z, {})
   }
   return (0, r.jsx)(c.bG, {
-    navigator: W,
+    navigator: H,
     children: (0, r.jsx)(c.SJ, {
       children: e => {
         var {
           ref: n,
           onKeyDown: i
-        } = e, s = S(e, ["ref", "onKeyDown"]);
+        } = e, a = S(e, ["ref", "onKeyDown"]);
         return (0, r.jsx)("div", v(y({
-          onBlur: j,
-          onFocus: M,
-          "aria-busy": L,
+          onBlur: L,
+          onFocus: j,
+          "aria-busy": x,
           ref: n,
           onKeyDown: e => {
-            null == i || i(e), z(e)
+            null == i || i(e), W(e)
           }
-        }, s), {
+        }, a), {
           role: "listbox",
-          tabIndex: a,
-          "aria-multiselectable": "multiple" === f,
+          "aria-multiselectable": "multiple" === d,
           className: o()(E.listBox, {
-            [E.scrollable]: F.length > x
+            [E.scrollable]: G.length > D
           }),
           "data-mana-component": "listbox",
           children: t
@@ -232,35 +214,34 @@ function A(e) {
   let {
     children: t,
     id: n,
-    tabIndex: i,
-    selected: a,
-    disabled: o,
-    focused: s,
-    selectionMode: l,
-    onClick: u
-  } = e, p = (0, c.JA)(n);
+    selected: i,
+    disabled: a,
+    focused: o,
+    selectionMode: s,
+    onClick: l
+  } = e, u = (0, c.JA)(n);
 
-  function _() {
-    return "multiple" === l ? (0, r.jsx)(d.F, {
-      checked: a
-    }) : a ? (0, r.jsx)(f.k, {
+  function p() {
+    return "multiple" === s ? (0, r.jsx)(d.F, {
+      checked: i
+    }) : i ? (0, r.jsx)(f.k, {
       color: "currentColor",
       size: "refresh_sm"
     }) : null
   }
-  return (0, r.jsxs)("div", v(y({}, p), {
+  return (0, r.jsxs)("div", v(y({}, u), {
     id: n,
     className: E.listBoxItem,
     role: "option",
-    tabIndex: false === i ? false : p.tabIndex,
-    onClick: u,
-    "aria-disabled": o,
-    "aria-selected": a,
-    "data-focus-visible": s,
+    tabIndex: u.tabIndex,
+    onClick: l,
+    "aria-disabled": a,
+    "aria-selected": i,
+    "data-focus-visible": o,
     children: [t, (0, r.jsx)("div", {
       className: E.selectedIcon,
       "aria-hidden": true,
-      children: _()
+      children: p()
     })]
   }))
 }
