@@ -2,12 +2,12 @@
 /** chunk id: 373183, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk622535 = require("./622535.js"),
@@ -27,29 +27,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk339574 = require("./339574.js"),
   Chunk446991 = require("./446991.js"),
   Chunk383898 = require("./383898.js");
-let j = Chunk473749.memo(function(e) {
+let k = Chunk473749.memo(function(e) {
   let {
     category: t,
     rewardSkuId: n
   } = e, {
     handleCardVisibilityChange: a
-  } = (0, C.E)(n), j = l.useRef(null), {
-    isHoveringOrFocusing: k
-  } = (0, f.Z)(j), {
-    readyToClaim: T,
+  } = (0, h.E)(n), k = l.useRef(null), {
+    isHoveringOrFocusing: T
+  } = (0, f.Z)(k), {
+    readyToClaim: j,
     collectibleProductSkuIds: L,
     collectedSkuIds: I
-  } = (0, v.q)(t, n), B = (0, i.e7)([m.Z], () => m.Z.isClaiming === n);
+  } = (0, E.q)(t, n), A = (0, i.e7)([m.Z], () => m.Z.isClaiming === n);
   return (0, r.jsx)(c.$, {
     onChange: a,
     threshold: 0,
-    innerRef: j,
+    innerRef: k,
     children: (0, r.jsx)("div", {
-      ref: j,
-      className: o()(S.productCardContainer, _.defaultCursor, {
-        [S.hovered]: k
+      ref: k,
+      className: s()(S.productCardContainer, _.defaultCursor, {
+        [S.hovered]: T
       }),
-      "aria-label": E.intl.formatToPlainString(E.t.Ez6aHE, {
+      "aria-label": v.intl.formatToPlainString(v.t.Ez6aHE, {
         category: t.name
       }),
       children: (0, r.jsxs)("div", {
@@ -61,7 +61,7 @@ let j = Chunk473749.memo(function(e) {
         }), (0, r.jsx)("div", {
           className: S.headerContainer,
           children: (0, r.jsx)(d.IGR, {
-            text: E.intl.string(E.t.rykAJ9),
+            text: v.intl.string(v.t.rykAJ9),
             disableColor: true,
             className: _.unlockRewardBadge
           })
@@ -76,9 +76,9 @@ let j = Chunk473749.memo(function(e) {
                 color: "text-strong",
                 lineClamp: 1,
                 className: S.productName,
-                children: E.intl.string(E.t["0mDmg/"])
+                children: v.intl.string(v.t["0mDmg/"])
               }), (0, r.jsx)(u.u, {
-                text: T ? E.intl.string(E.t.cKH3tk) : E.intl.formatToPlainString(E.t["8aMDPc"], {
+                text: j ? v.intl.string(v.t.cKH3tk) : v.intl.formatToPlainString(v.t["8aMDPc"], {
                   totalCount: L.length
                 }),
                 align: "right",
@@ -89,7 +89,7 @@ let j = Chunk473749.memo(function(e) {
                 position: "top",
                 children: (0, r.jsx)("span", {
                   className: _.questionIconContainer,
-                  children: (0, r.jsx)(s.idN, {
+                  children: (0, r.jsx)(o.idN, {
                     size: "xs"
                   })
                 })
@@ -104,16 +104,16 @@ let j = Chunk473749.memo(function(e) {
                   progress: I.length,
                   maximum: L.length
                 }), (0, r.jsxs)("div", {
-                  className: o()(_.progressTextContainer, {
-                    [_.readyToClaimText]: T
+                  className: s()(_.progressTextContainer, {
+                    [_.readyToClaimText]: j
                   }),
-                  children: [T ? (0, r.jsx)(s.kmB, {
+                  children: [j ? (0, r.jsx)(o.kmB, {
                     size: "xs",
                     color: "currentColor"
-                  }) : null, (0, r.jsx)(s.xvT, {
+                  }) : null, (0, r.jsx)(o.xvT, {
                     variant: "text-xs/medium",
                     color: "currentColor",
-                    children: E.intl.formatToPlainString(E.t["5TwASM"], {
+                    children: v.intl.formatToPlainString(v.t["5TwASM"], {
                       collectedCount: I.length,
                       totalCount: L.length
                     })
@@ -123,48 +123,48 @@ let j = Chunk473749.memo(function(e) {
             })]
           }), (0, r.jsx)("div", {
             className: S.footerButtonContainer,
-            children: (0, r.jsx)(s.hE2, {
+            children: (0, r.jsx)(o.hE2, {
               wrap: false,
               className: S.footerButtonGroup,
               fullWidth: true,
-              children: (0, r.jsx)(s.zxk, {
+              children: (0, r.jsx)(o.zxk, {
                 variant: "primary",
                 onClick: e => {
-                  e.stopPropagation(), T && (0, p.wW)(t.skuId, n).then(() => {
-                    let e = b.Z.getProduct(n);
-                    null != e && (0, h.Z)({
+                  e.stopPropagation(), j && (0, b.wW)(t.skuId, n).then(() => {
+                    let e = p.Z.getProduct(n);
+                    null != e && (0, C.Z)({
                       product: e,
                       analyticsLocations: [],
                       overrideGraphic: {
                         type: "video",
-                        src: x.Z,
-                        fallbackImageSrc: O.Z,
+                        src: O.Z,
+                        fallbackImageSrc: x.Z,
                         loop: true,
                         loopAt: 6,
                         aspectRatio: "16/9"
                       }
                     })
                   }).catch(() => {
-                    (0, d.ZDy)(() => Promise.resolve(e => (0, r.jsx)(s.Modal, {
+                    (0, d.ZDy)(() => Promise.resolve(e => (0, r.jsx)(o.Modal, {
                       transitionState: e.transitionState,
                       onClose: e.onClose,
                       size: "sm",
-                      title: E.intl.string(E.t.SRTlyA),
+                      title: v.intl.string(v.t.SRTlyA),
                       actions: [{
-                        text: E.intl.string(E.t.TyCVIq),
+                        text: v.intl.string(v.t.TyCVIq),
                         onClick: e.onClose,
                         variant: "primary"
                       }],
                       children: (0, r.jsx)("div", {
-                        children: E.intl.string(E.t["0YpIF/"])
+                        children: v.intl.string(v.t["0YpIF/"])
                       })
                     })))
                   })
                 },
-                text: E.intl.string(E.t.VnVTNc),
+                text: v.intl.string(v.t.VnVTNc),
                 fullWidth: true,
-                disabled: !T,
-                loading: B
+                disabled: !j,
+                loading: A
               })
             })
           })]

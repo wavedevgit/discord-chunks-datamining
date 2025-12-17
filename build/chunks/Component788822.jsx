@@ -2,7 +2,7 @@
 /** chunk id: 788822, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  q: () => b
+  q: () => p
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,30 +16,30 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk222194 = require("./222194.js");
-let b = e => {
-  var t, n, b;
+let p = e => {
+  var t, n, p;
   let m, {
-    category: C,
-    subblock: h,
-    badgeText: v,
-    handleTransition: E
+    category: h,
+    subblock: C,
+    badgeText: E,
+    handleTransition: v
   } = e;
-  null != h && (m = null == (t = c.Z.getCategoryByStoreListingId(null == h ? true : h.categoryStoreListingId)) ? true : t.skuId);
-  let S = null != (n = null != m ? m : null == C ? true : C.skuId) ? n : "",
+  null != C && (m = null == (t = c.Z.getCategoryByStoreListingId(null == C ? true : C.categoryStoreListingId)) ? true : t.skuId);
+  let S = null != (n = null != m ? m : null == h ? true : h.skuId) ? n : "",
     {
       handleCardVisibilityChange: _
     } = (0, u.E)(S, "home", "marketing featured block"),
-    O = (0, d.YG)(C, h),
-    x = l.useRef(null),
-    y = null == h ? true : h.bodyText,
-    j = (0, i.sp)();
+    x = (0, d.YG)(h, C),
+    O = l.useRef(null),
+    y = null == C ? true : C.bodyText,
+    k = (0, i.sp)();
   return (0, r.jsx)(a.$, {
-    innerRef: x,
+    innerRef: O,
     onChange: _,
     threshold: 0,
-    children: (0, r.jsxs)(o.P3F, {
-      className: p.featuredBlock,
-      innerRef: x,
+    children: (0, r.jsxs)(s.P3F, {
+      className: b.featuredBlock,
+      innerRef: O,
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -57,60 +57,60 @@ let b = e => {
           })
         }
         return e
-      }({}, null != O && {
-        backgroundImage: "url(".concat(O, ")")
+      }({}, null != x && {
+        backgroundImage: "url(".concat(x, ")")
       }),
       onClick: () => {
-        E({
+        v({
           sourceButton: "shop marketing tile",
           categorySkuId: S,
           isInternalShopDeeplink: true,
-          isOrbsExclusive: null == C ? true : C.isOrbsExclusive
-        }), s.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == j ? true : j.sessionId,
+          isOrbsExclusive: null == h ? true : h.isOrbsExclusive
+        }), o.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          collectibles_shop_session_id: null == k ? true : k.sessionId,
           sku_id: S,
           page_type: "home",
-          page_section: null == j ? true : j.pageSection,
-          page_category: null == j ? true : j.pageCategory,
+          page_section: null == k ? true : k.pageSection,
+          page_category: null == k ? true : k.pageCategory,
           tile_type: "FEATURED_BLOCK",
-          tile_position: String(null == j ? true : j.tilePosition),
+          tile_position: String(null == k ? true : k.tilePosition),
           cta_name: null
         })
       },
-      children: [null != v && (0, r.jsx)(o.IGR, {
+      children: [null != E && (0, r.jsx)(s.IGR, {
         disableColor: true,
-        text: v,
-        className: p.featuredBlockBadge
+        text: E,
+        className: b.featuredBlockBadge
       }), (0, r.jsx)("div", {
-        className: p.featuredBlockTextContainer,
-        children: null != y && (0, r.jsx)(o.Heading, {
+        className: b.featuredBlockTextContainer,
+        children: null != y && (0, r.jsx)(s.Heading, {
           lineClamp: 4,
-          className: p.featuredBlockBodyText,
+          className: b.featuredBlockBodyText,
           style: {
-            color: null != (b = null == h ? true : h.bannerTextColor) ? b : "white"
+            color: null != (p = null == C ? true : C.bannerTextColor) ? p : "white"
           },
           variant: "heading-md/medium",
           children: y
         })
       }), (0, r.jsx)("div", {
-        className: p.featuredBlockButtonContainer,
-        children: (0, r.jsx)(o.Button, {
+        className: b.featuredBlockButtonContainer,
+        children: (0, r.jsx)(s.Button, {
           variant: "overlay-primary",
           text: g.intl.string(g.t.jVcuVY),
           onClick: e => {
-            E({
+            v({
               sourceButton: "shop marketing take me there button",
               categorySkuId: S,
               isInternalShopDeeplink: true,
-              isOrbsExclusive: null == C ? true : C.isOrbsExclusive
-            }), e.stopPropagation(), s.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == j ? true : j.sessionId,
+              isOrbsExclusive: null == h ? true : h.isOrbsExclusive
+            }), e.stopPropagation(), o.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+              collectibles_shop_session_id: null == k ? true : k.sessionId,
               sku_id: S,
               page_type: "home",
-              page_section: null == j ? true : j.pageSection,
-              page_category: null == j ? true : j.pageCategory,
+              page_section: null == k ? true : k.pageSection,
+              page_category: null == k ? true : k.pageCategory,
               tile_type: "FEATURED_BLOCK",
-              tile_position: String(null == j ? true : j.tilePosition),
+              tile_position: String(null == k ? true : k.tilePosition),
               cta_name: "Take me there button"
             })
           }

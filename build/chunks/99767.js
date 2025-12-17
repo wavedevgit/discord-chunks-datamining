@@ -21,43 +21,43 @@ let d = {
   f = e => {
     let {
       enabled: t
-    } = (0, o.W)({
+    } = (0, s.W)({
       location: "useShopViewTransition"
     }), {
       setItemTypeFilter: n,
       reset: a,
       setCurrentTab: f
-    } = (0, s.S)(), g = r.useMemo(() => e !== c.AW.ORBS || t ? (0, c.RE)(e) ? c.AW.CATALOG : e : c.AW.HOME, [e, t]), [p, b] = r.useState(g), [m, C] = r.useState(c.f7.VISIBLE);
+    } = (0, o.S)(), g = r.useMemo(() => e !== c.AW.ORBS || t ? (0, c.RE)(e) ? c.AW.CATALOG : e : c.AW.HOME, [e, t]), [b, p] = r.useState(g), [m, h] = r.useState(c.f7.VISIBLE);
     r.useEffect(() => {
-      f(p)
-    }, [p, f]), r.useEffect(() => {
-      if (b(g), e === c.AW.CATALOG) a();
+      f(b)
+    }, [b, f]), r.useEffect(() => {
+      if (p(g), e === c.AW.CATALOG) a();
       else if ((0, c.RE)(e)) {
         let t = d[e];
         null != t ? n(t) : a()
       }
     }, [g, e, n, a]);
     let {
-      clearError: h
-    } = (0, i.a)(), v = (0, l.k6)(), E = r.useCallback(async (e, t) => {
-      if (h(), e === c.AW.CATALOG) a();
-      else if ((0, c.RE)(e) && e !== p) {
+      clearError: C
+    } = (0, i.a)(), E = (0, l.k6)(), v = r.useCallback(async (e, t) => {
+      if (C(), e === c.AW.CATALOG) a();
+      else if ((0, c.RE)(e) && e !== b) {
         let t = d[e];
         null != t ? n(t) : a()
       }
-      if (p !== e) {
+      if (b !== e) {
         if (t) {
           let e;
-          C(c.f7.OUT), await (e = 1.1 * c.lb, new Promise(t => setTimeout(t, e)))
+          h(c.f7.OUT), await (e = 1.1 * c.lb, new Promise(t => setTimeout(t, e)))
         }
-        b([c.AW.HOME, c.AW.ORBS].includes(e) ? e : c.AW.CATALOG), t && C(c.f7.IN), v.push(u.Z5c.COLLECTIBLES_SHOP_WITH_TAB(e), {
+        p([c.AW.HOME, c.AW.ORBS].includes(e) ? e : c.AW.CATALOG), t && h(c.f7.IN), E.push(u.Z5c.COLLECTIBLES_SHOP_WITH_TAB(e), {
           shallow: true
-        }), C(c.f7.VISIBLE)
+        }), h(c.f7.VISIBLE)
       }
-    }, [v, n, a, p, h]);
+    }, [E, n, a, b, C]);
     return {
-      selectedTab: p,
+      selectedTab: b,
       transitionState: m,
-      transitionToTab: E
+      transitionToTab: v
     }
   }

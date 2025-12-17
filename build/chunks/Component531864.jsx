@@ -2,12 +2,12 @@
 /** chunk id: 531864, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => p
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk876917 = require("./876917.jsx"),
   Chunk597688 = require("./597688.js"),
@@ -18,7 +18,7 @@ let g = {
     x: 160,
     y: 160
   },
-  p = [{
+  b = [{
     left: 0,
     top: 20,
     rotation: false,
@@ -91,12 +91,12 @@ let g = {
     size: g,
     skuId: "1217625794382401577"
   }],
-  b = e => {
+  p = e => {
     let {
       peaking: t,
       transitioning: n,
       style: a
-    } = e, g = window.innerHeight, [b, m] = l.useState(false), C = p.map(e => {
+    } = e, g = window.innerHeight, [p, m] = l.useState(false), h = b.map(e => {
       let {
         skuId: t
       } = e;
@@ -108,34 +108,34 @@ let g = {
       }, d.lb)
     }, [n]), (0, r.jsx)("div", {
       style: a,
-      className: o()(f.jumbleWrapper, {
+      className: s()(f.jumbleWrapper, {
         [f.peaking]: t,
-        [f.transitioned]: b
+        [f.transitioned]: p
       }),
-      children: p.map((e, t) => {
+      children: b.map((e, t) => {
         var l, a;
         let {
-          top: o,
+          top: s,
           left: c,
-          rotation: p,
-          size: b,
+          rotation: b,
+          size: p,
           skuId: m
-        } = e, h = null == (l = C[t]) ? true : l.items[0], v = null == (a = C[t]) ? true : a.type, E = v === s.Z.AVATAR_DECORATION ? 384 : 512;
+        } = e, C = null == (l = h[t]) ? true : l.items[0], E = null == (a = h[t]) ? true : a.type, v = E === o.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, r.jsxs)("div", {
           className: f.asset,
           style: {
-            top: n ? -g - E : o,
+            top: n ? -g - v : s,
             left: n ? "".concat(c - 75 - 350 * Math.random()) : c,
-            transform: "rotate(".concat(p, "deg)"),
-            height: b.y,
-            width: b.x,
+            transform: "rotate(".concat(b, "deg)"),
+            height: p.y,
+            width: p.x,
             transitionDelay: "".concat(Math.random() / 3, "s"),
             transitionDuration: "".concat(d.lb - 200 * Math.random(), "ms")
           },
-          children: [null != h && v === s.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
-            item: h
-          }), null != h && v === s.Z.PROFILE_EFFECT && (0, r.jsx)(i.Z, {
-            skuId: h.skuId,
+          children: [null != C && E === o.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
+            item: C
+          }), null != C && E === o.Z.PROFILE_EFFECT && (0, r.jsx)(i.Z, {
+            skuId: C.skuId,
             isHighlighted: true
           })]
         }, m + t)

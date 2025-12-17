@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk704215 = require("./704215.js"),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
@@ -30,52 +30,52 @@ let y = e => {
   var t, n, a;
   let {
     wideBannerBlock: y,
-    tab: j
-  } = e, k = m.Z.getCategoryByStoreListingId(y.categoryStoreListingId), T = l.useRef(null), L = l.useRef(null), [I, B] = l.useState(), [A, N] = l.useState(false);
+    tab: k
+  } = e, T = m.Z.getCategoryByStoreListingId(y.categoryStoreListingId), j = l.useRef(null), L = l.useRef(null), [I, A] = l.useState(), [B, N] = l.useState(false);
   l.useEffect(() => {
     let e = L.current;
     if (null == e) return;
     let t = () => {
-      e.naturalWidth > 0 && e.naturalHeight > 0 && B(1080 * (e.naturalHeight / e.naturalWidth))
+      e.naturalWidth > 0 && e.naturalHeight > 0 && A(1080 * (e.naturalHeight / e.naturalWidth))
     };
     return e.complete ? t() : e.onload = t, () => {
       e.onload = null
     }
   }, []);
-  let P = null != (t = null == k ? true : k.skuId) ? t : "",
+  let R = null != (t = null == T ? true : T.skuId) ? t : "",
     {
-      handleCardVisibilityChange: R
-    } = (0, C.E)(P, "home", "marketing wide banner"),
-    Z = (0, b.sp)(),
+      handleCardVisibilityChange: P
+    } = (0, h.E)(R, "home", "marketing wide banner"),
+    w = (0, p.sp)(),
     {
-      bannerURL: w
-    } = (0, h.UI)(y),
-    H = j === v.AW.ORBS,
-    D = null != y.ctaRoute && "" !== y.ctaRoute,
-    M = true !== y.disableCta && (null != y.ctaText && "" !== y.ctaText || D),
+      bannerURL: Z
+    } = (0, C.UI)(y),
+    D = k === E.AW.ORBS,
+    H = null != y.ctaRoute && "" !== y.ctaRoute,
+    M = true !== y.disableCta && (null != y.ctaText && "" !== y.ctaText || H),
     F = null != y.logoURL && "" !== y.logoURL,
     W = l.useCallback(() => {
       if (N(true), y.isDismissible) {
         var e;
         let t = null != (e = y.dismissibleContentVersion) ? e : 0;
-        (0, u.wH)(s.z.COLLECTIBLES_SHOP_WIDE_BANNER, t, {
+        (0, u.wH)(o.z.COLLECTIBLES_SHOP_WIDE_BANNER, t, {
           dismissAction: S.L.USER_DISMISS
         })
       }
     }, [y.isDismissible, y.dismissibleContentVersion]),
     U = l.useCallback(e => {
-      g.default.track(E.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == Z ? true : Z.sessionId,
-        sku_id: P,
-        page_type: j,
-        page_section: null == Z ? true : Z.pageSection,
-        page_category: null == Z ? true : Z.pageCategory,
+      g.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        collectibles_shop_session_id: null == w ? true : w.sessionId,
+        sku_id: R,
+        page_type: k,
+        page_section: null == w ? true : w.pageSection,
+        page_category: null == w ? true : w.pageCategory,
         tile_type: "WIDE_BANNER",
-        tile_position: String(null == Z ? true : Z.tilePosition),
+        tile_position: String(null == w ? true : w.tilePosition),
         cta_name: e
       })
-    }, [Z, P, j]),
-    V = l.useCallback(function() {
+    }, [w, R, k]),
+    z = l.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null;
       if (U(e), null != y.ctaRoute && "" !== y.ctaRoute) {
         let e = y.ctaRoute;
@@ -92,50 +92,50 @@ let y = e => {
         } else(0, d.uL)(e)
       }
     }, [y.ctaRoute, U]);
-  if (null == w || A) return null;
-  let z = o()(x.row, x.between, x.bannerBlockContainer, x.centeredSection, {
-      [x.extraRounded]: H,
-      [x.bannerBlockContainerClickable]: D
+  if (null == Z || B) return null;
+  let V = s()(O.row, O.between, O.bannerBlockContainer, O.centeredSection, {
+      [O.extraRounded]: D,
+      [O.bannerBlockContainerClickable]: H
     }),
     G = (0, r.jsxs)(r.Fragment, {
       children: [y.isDismissible && (0, r.jsx)("div", {
-        className: x.wideBannerCloseButton,
+        className: O.wideBannerCloseButton,
         children: (0, r.jsx)(c.PZ7, {
           size: "sm",
           onClick: e => {
             e.stopPropagation(), W()
           },
-          "aria-label": O.intl.string(O.t.WAI6xu)
+          "aria-label": x.intl.string(x.t.WAI6xu)
         })
       }), (0, r.jsx)("div", {
-        className: o()(x.wideBannerBackgroundImg, {
-          [x.extraRounded]: H
+        className: s()(O.wideBannerBackgroundImg, {
+          [O.extraRounded]: D
         }),
         style: null != I ? {
           height: "".concat(I, "px")
         } : true,
         children: (0, r.jsx)("img", {
           ref: L,
-          src: w,
+          src: Z,
           alt: y.title,
-          className: o()(x.wideBannerArt, {
-            [x.wideBannerArtOrbs]: H
+          className: s()(O.wideBannerArt, {
+            [O.wideBannerArtOrbs]: D
           })
         })
       }), (0, r.jsx)("div", {
-        className: o()(x.wideBannerContentContainer, {
-          [x.wideBannerWithCTAContentContainer]: M
+        className: s()(O.wideBannerContentContainer, {
+          [O.wideBannerWithCTAContentContainer]: M
         }),
         style: {
           maxHeight: null != I ? "".concat(I, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
-          className: x.wideBannerTextContainer,
+          className: O.wideBannerTextContainer,
           children: [(0, r.jsx)(c.Heading, {
             style: {
               color: null != (n = y.bannerTextColor) ? n : "var(--text-strong)"
             },
-            className: H ? x.wideBannerOrbsHeading : true,
+            className: D ? O.wideBannerOrbsHeading : true,
             variant: "heading-xl/bold",
             children: y.title
           }), (0, r.jsx)(c.Text, {
@@ -143,42 +143,42 @@ let y = e => {
               color: "var(--text-muted)"
             },
             lineClamp: 2,
-            variant: H ? "text-md/medium" : "text-sm/medium",
-            children: H ? O.intl.format(O.t.SFFP7K, {
-              helpdeskArticle: p.Z.getArticleURL(E.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
+            variant: D ? "text-md/medium" : "text-sm/medium",
+            children: D ? x.intl.format(x.t.SFFP7K, {
+              helpdeskArticle: b.Z.getArticleURL(v.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : y.body
           }), M && (0, r.jsxs)("div", {
-            className: x.wideBannerCtaContainer,
+            className: O.wideBannerCtaContainer,
             children: [(0, r.jsx)(c.Button, {
               variant: "overlay-primary",
               onClick: e => {
                 var t;
-                e.stopPropagation(), V(null != (t = y.ctaText) ? t : O.intl.string(O.t.jVcuVY))
+                e.stopPropagation(), z(null != (t = y.ctaText) ? t : x.intl.string(x.t.jVcuVY))
               },
-              text: null != (a = y.ctaText) ? a : O.intl.string(O.t.jVcuVY)
+              text: null != (a = y.ctaText) ? a : x.intl.string(x.t.jVcuVY)
             }), F && (0, r.jsx)("img", {
               src: y.logoURL,
               alt: "",
-              className: x.wideBannerLogo
+              className: O.wideBannerLogo
             })]
           })]
         })
       })]
     });
   return (0, r.jsx)(c.f6W, {
-    theme: H ? true : _.BR.DARK,
+    theme: D ? true : _.BR.DARK,
     children: e => (0, r.jsx)(i.$, {
-      innerRef: T,
-      onChange: R,
+      innerRef: j,
+      onChange: P,
       threshold: 0,
-      children: D ? (0, r.jsx)(c.P3F, {
-        innerRef: T,
-        onClick: () => V(null),
-        className: o()(e, z),
+      children: H ? (0, r.jsx)(c.P3F, {
+        innerRef: j,
+        onClick: () => z(null),
+        className: s()(e, V),
         children: G
       }) : (0, r.jsx)("div", {
-        ref: T,
-        className: o()(e, z),
+        ref: j,
+        className: s()(e, V),
         children: G
       })
     })

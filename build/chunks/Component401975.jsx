@@ -15,15 +15,15 @@ let i = e => {
     skipPulseAnimation: t = false
   } = e;
   return (0, r.jsx)("div", {
-    className: a()(o.productCardContainer, s.productSkeletonCardContainer, {
-      [s.pulseAnimation]: !t
+    className: a()(s.productCardContainer, o.productSkeletonCardContainer, {
+      [o.pulseAnimation]: !t
     }),
     children: (0, r.jsxs)("div", {
-      className: a()(o.productCardContentContainer, s.productSkeletonContent),
+      className: a()(s.productCardContentContainer, o.productSkeletonContent),
       children: [(0, r.jsx)("div", {
-        className: s.productSkeletonTitle
+        className: o.productSkeletonTitle
       }), (0, r.jsx)("div", {
-        className: s.productSkeletonDescription
+        className: o.productSkeletonDescription
       })]
     })
   })

@@ -27,45 +27,45 @@ let S = e => {
     isBlockLoading: t = false,
     heroBlock: n,
     tab: S
-  } = e, _ = (0, s.sp)(), {
-    hasPromoUpsell: O
+  } = e, _ = (0, o.sp)(), {
+    hasPromoUpsell: x
   } = u.Z.useConfig({
     location: "RewardHeroBlockCards"
-  }), x = l.useMemo(() => i.Z.getCategoryForProduct(n.rewardSkuId), [n.rewardSkuId]), y = (0, a.e7)([c.Z], () => c.Z.getPurchase(n.rewardSkuId)), {
-    products: j
+  }), O = l.useMemo(() => i.Z.getCategoryForProduct(n.rewardSkuId), [n.rewardSkuId]), y = (0, a.e7)([c.Z], () => c.Z.getPurchase(n.rewardSkuId)), {
+    products: k
   } = ((e, t, n) => {
-    let r = (0, C.Z)(),
-      o = (0, a.e7)([i.Z], () => i.Z.products),
-      s = l.useMemo(() => e ? [] : o.size > 0 ? r(t.rankedSkuIds).filter(e => e.skuId !== t.rewardSkuId || null != n) : [], [e, r, t.rankedSkuIds, o, n, t.rewardSkuId]),
-      c = (0, d.a)()(s),
+    let r = (0, h.Z)(),
+      s = (0, a.e7)([i.Z], () => i.Z.products),
+      o = l.useMemo(() => e ? [] : s.size > 0 ? r(t.rankedSkuIds).filter(e => e.skuId !== t.rewardSkuId || null != n) : [], [e, r, t.rankedSkuIds, s, n, t.rewardSkuId]),
+      c = (0, d.a)()(o),
       u = (0, f.l)(c);
     return {
-      products: (0, h.St)(u)
+      products: (0, C.St)(u)
     }
-  })(t, n, y), k = l.useMemo(() => !t && 0 !== n.rankedSkuIds.length && !(j.length > 0) && n.rankedSkuIds.every(e => {
+  })(t, n, y), T = l.useMemo(() => !t && 0 !== n.rankedSkuIds.length && !(k.length > 0) && n.rankedSkuIds.every(e => {
     var t;
     return (null == (t = i.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
-  }), [t, n.rankedSkuIds, j.length]), T = t || k, {
+  }), [t, n.rankedSkuIds, k.length]), j = t || T, {
     readyToClaim: L
-  } = (0, v.q)(x, n.rewardSkuId), I = null == y && null != n.rewardSkuId && null != x;
-  return (0, r.jsx)(o.Z, {
+  } = (0, E.q)(O, n.rewardSkuId), I = null == y && null != n.rewardSkuId && null != O;
+  return (0, r.jsx)(s.Z, {
     gap: "xl",
-    children: T ? (0, r.jsx)(r.Fragment, {
-      children: [true, true, true, true, true].map((e, t) => (0, r.jsx)(b.Z, {}, t))
+    children: j ? (0, r.jsx)(r.Fragment, {
+      children: [true, true, true, true, true].map((e, t) => (0, r.jsx)(p.Z, {}, t))
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [I && !!(O || L) && (0, r.jsx)(s.k0, {
+      children: [I && !!(x || L) && (0, r.jsx)(o.k0, {
         newValue: {
           tilePosition: 0,
           pageSection: "top 4",
           categoryPosition: 0
         },
         children: (0, r.jsx)(m.Z, {
-          category: x,
+          category: O,
           rewardSkuId: n.rewardSkuId
         })
-      }, n.rewardSkuId), j.map((e, t) => {
+      }, n.rewardSkuId), k.map((e, t) => {
         let n = i.Z.getCategoryForProduct(e.skuId);
-        return null == e || null == n ? null : (0, r.jsx)(s.k0, {
+        return null == e || null == n ? null : (0, r.jsx)(o.k0, {
           newValue: {
             tilePosition: t,
             pageSection: "top 4",
@@ -73,8 +73,8 @@ let S = e => {
           },
           children: (0, r.jsx)(g.Z, {
             skuId: null == e ? true : e.skuId,
-            prioritizedCurrency: S === E.AW.ORBS ? p.tA.ORBS : true,
-            onClickAnalytics: (0, p.wO)(e, S, _)
+            prioritizedCurrency: S === v.AW.ORBS ? b.tA.ORBS : true,
+            onClickAnalytics: (0, b.wO)(e, S, _)
           }, e.skuId)
         }, null == e ? true : e.skuId)
       })]

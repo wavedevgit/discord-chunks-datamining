@@ -2,7 +2,7 @@
 /** chunk id: 98535, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,28 +19,28 @@ var Chunk54381 = require("./54381.js"),
   Chunk566564 = require("./566564.jsx"),
   Chunk795477 = require("./795477.jsx"),
   Chunk215023 = require("./215023.js");
-let h = [Chunk215023.AW.HOME, Chunk215023.AW.ORBS];
+let C = [Chunk215023.AW.HOME, Chunk215023.AW.ORBS];
 
-function v(e) {
+function E(e) {
   let {
     tab: t,
     sortedCategories: n,
-    transitionToTab: s,
+    transitionToTab: o,
     transitionState: i,
     updateAnalyticsState: c,
     refreshCategories: u
-  } = e, p = E();
-  S(p);
-  let v = (0, a.e7)([o.Z], () => o.Z.useReducedMotion),
-    [_, O] = l.useState(true),
-    [x, y] = l.useState(true),
-    j = l.useMemo(() => n.filter(e => !C.y8.some(t => {
+  } = e, b = v();
+  S(b);
+  let E = (0, a.e7)([s.Z], () => s.Z.useReducedMotion),
+    [_, x] = l.useState(true),
+    [O, y] = l.useState(true),
+    k = l.useMemo(() => n.filter(e => !h.y8.some(t => {
       let {
         categorySkuId: n
       } = t;
       return n === e.skuId
     })), [n]),
-    k = l.useCallback(e => {
+    T = l.useCallback(e => {
       let {
         sourceButton: t,
         categorySkuId: n,
@@ -49,38 +49,38 @@ function v(e) {
         isOrbsExclusive: a
       } = e;
       c(t, n);
-      let o = r && !v,
-        i = a ? C.AW.ORBS : C.AW.CATALOG;
-      O(n), y(!l), s(i, o)
-    }, [v, s, c]),
+      let s = r && !E,
+        i = a ? h.AW.ORBS : h.AW.CATALOG;
+      x(n), y(!l), o(i, s)
+    }, [E, o, c]),
     {
-      searchError: T
+      searchError: j
     } = (0, d.a)();
-  return null != T ? (0, r.jsx)(m.Z, {}) : null != p ? (0, r.jsx)(g.Z, {
+  return null != j ? (0, r.jsx)(m.Z, {}) : null != b ? (0, r.jsx)(g.Z, {
     onRetry: u,
-    errorMessage: p,
+    errorMessage: b,
     errorOrigin: g.i.SHOP_PAGE
-  }) : h.includes(t) ? (0, r.jsx)(b.Z, {
-    handleTransition: k,
+  }) : C.includes(t) ? (0, r.jsx)(p.Z, {
+    handleTransition: T,
     tab: t,
     transitionState: i
   }) : (0, r.jsx)(f.Z, {
     tab: t,
-    sortedCategories: j,
+    sortedCategories: k,
     initialCategoryId: _,
-    showFilterInitially: x,
+    showFilterInitially: O,
     onUnmount: () => {
-      O(true), y(true)
+      x(true), y(true)
     }
   })
 }
-let E = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
+let v = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
   S = e => {
-    let t = (0, a.e7)([s.default], () => s.default.getCurrentUser()),
+    let t = (0, a.e7)([o.default], () => o.default.getCurrentUser()),
       {
         noCache: n,
         includeUnpublished: r
-      } = (0, p.Z)();
+      } = (0, b.Z)();
     l.useEffect(() => {
       var l, a;
       null != e && i.Z.captureMessage(e, {

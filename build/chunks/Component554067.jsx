@@ -2,10 +2,12 @@
 /** chunk id: 554067, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk120356 = require("./120356.js"),
+  s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk706454 = require("./706454.js"),
@@ -17,54 +19,104 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk973638 = require("./973638.js");
 
-function b(e) {
+function h(e) {
   let {
     handleTransition: t,
-    selectedTab: n
+    selectedTab: n,
+    isNarrow: a,
+    hasText: h
   } = e, {
-    searchQuery: b,
-    onSetSearchQuery: m
-  } = (0, u.S)(), [C, h] = l.useState(""), v = (0, c.sp)(), E = (0, a.e7)([s.default], () => s.default.locale);
-  return l.useEffect(() => {
+    searchQuery: C,
+    onSetSearchQuery: E
+  } = (0, f.S)(), [v, S] = l.useState(""), _ = (0, d.sp)(), x = (0, o.e7)([c.default], () => c.default.locale), O = l.useRef(null), [y, k] = l.useState(false);
+  l.useEffect(() => {
     let e = setTimeout(() => {
-      m(C)
+      E(v)
     }, 250);
     return () => clearTimeout(e)
-  }, [C, m]), l.useEffect(() => {
-    h(b)
-  }, [b]), (0, r.jsx)(o.P3F, {
-    ignoreKeyPress: true,
-    className: p.searchBar,
-    onClick: () => {
-      n !== d.AW.CATALOG && t(d.AW.CATALOG), i.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == v ? true : v.sessionId,
-        page_section: null == v ? true : v.pageSection,
-        page_category: null == v ? true : v.pageCategory,
-        page_index: null == v ? true : v.pageIndex,
-        page_size: null == v ? true : v.pageSize,
-        cta_name: "search bar",
+  }, [v, E]), l.useEffect(() => {
+    S(C)
+  }, [C]), l.useEffect(() => {
+    k(a && h)
+  }, [a, h]);
+  let T = l.useCallback(e => {
+      "Enter" === e.key && E(v)
+    }, [v, E]),
+    j = l.useCallback(e => {
+      u.default.track(b.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        collectibles_shop_session_id: null == _ ? true : _.sessionId,
+        page_section: null == _ ? true : _.pageSection,
+        page_category: null == _ ? true : _.pageCategory,
+        page_index: null == _ ? true : _.pageIndex,
+        page_size: null == _ ? true : _.pageSize,
+        cta_name: e,
         page_type: n
       })
-    },
-    children: (0, r.jsx)(o.E1j, {
+    }, [n, _]),
+    L = l.useCallback(() => {
+      n !== g.AW.CATALOG && t(g.AW.CATALOG), j(g.Dh.SEARCH_ICON), k(true), setTimeout(() => {
+        var e;
+        return null == (e = O.current) ? true : e.focus()
+      })
+    }, [n, t, j]),
+    I = l.useCallback(() => {
+      n !== g.AW.CATALOG && t(g.AW.CATALOG), j(g.Dh.SEARCH_BAR)
+    }, [n, t, j]),
+    A = l.useCallback(() => {
+      S(""), E(""), j(g.Dh.SEARCH_BAR_CLEAR), a && k(false)
+    }, [E, j, a]),
+    B = l.useCallback(() => {
+      a && "" === v && k(false)
+    }, [a, v]),
+    N = a && !y,
+    R = (0, r.jsx)(i.P3F, {
+      className: m.searchIcon,
+      onClick: L,
+      children: (0, r.jsx)(i._Ve, {
+        size: "sm",
+        color: i.TVs.colors.INTERACTIVE_ICON_DEFAULT
+      })
+    }),
+    P = (0, r.jsx)(i.E1j, {
       size: "sm",
-      onKeyDown: e => {
-        "Enter" === e.key && m(C)
-      },
-      query: C,
-      onChange: h,
-      onClear: () => {
-        h(""), i.default.track(f.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == v ? true : v.sessionId,
-          page_section: null == v ? true : v.pageSection,
-          page_category: null == v ? true : v.pageCategory,
-          page_index: null == v ? true : v.pageIndex,
-          page_size: null == v ? true : v.pageSize,
-          cta_name: "search bar clear",
-          page_type: n
-        })
-      },
-      placeholder: "en-US" === E ? g.intl.string(g.t.arz34K) : g.intl.string(g.t["hIt/Nm"])
+      ref: O,
+      onKeyDown: T,
+      query: v,
+      onChange: S,
+      onClear: A,
+      onBlur: B,
+      placeholder: "en-US" === x ? p.intl.string(p.t.arz34K) : p.intl.string(p.t["hIt/Nm"])
+    }),
+    w = {
+      "--custom-search-bar-width": "".concat(g.Cs, "px"),
+      "--custom-search-bar-icon-width": "".concat(g.wf, "px")
+    };
+  if (N) return (0, r.jsx)("div", {
+    style: w,
+    children: R
+  });
+  let Z = s()(m.searchBar, {
+    [m.searchFloating]: y
+  });
+  return y ? (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)("div", {
+      className: m.searchIconContainerHidden,
+      style: w,
+      children: R
+    }), (0, r.jsx)(i.P3F, {
+      className: Z,
+      style: w,
+      onClick: I,
+      ignoreKeyPress: true,
+      children: P
+    })]
+  }) : (0, r.jsx)("div", {
+    className: Z,
+    style: w,
+    children: (0, r.jsx)(i.P3F, {
+      ignoreKeyPress: true,
+      onClick: I,
+      children: P
     })
   })
 }

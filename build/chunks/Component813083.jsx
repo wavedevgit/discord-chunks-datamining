@@ -19,11 +19,11 @@ let u = e => {
     className: l
   } = e;
   if (null == t.unpublishedAt) return null;
-  let u = (0, s.OT)(t.unpublishedAt),
+  let u = (0, o.OT)(t.unpublishedAt),
     d = u > 1 ? i.intl.formatToPlainString(n, {
       days: u
     }) : i.intl.string(i.t.Bc13HF);
-  return (0, r.jsx)(o.IGR, {
+  return (0, r.jsx)(s.IGR, {
     disableColor: true,
     text: d,
     className: a()(c.badge, l)

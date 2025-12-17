@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk907331 = require("./907331.js"),
   Chunk636977 = require("./636977.js"),
   Chunk685816 = require("./685816.js"),
@@ -32,8 +32,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk222194 = require("./222194.js");
-let B = (0, Chunk884697.IC)(90),
-  A = {
+let A = (0, Chunk884697.IC)(90),
+  B = {
     rankedSkuIds: [],
     name: "",
     unpublishedAt: true,
@@ -50,19 +50,19 @@ let B = (0, Chunk884697.IC)(90),
       isLoading: n,
       handleTransition: a,
       category: N,
-      heroBlock: P,
-      tab: R,
-      onVisibilityChange: Z
-    } = e, w = (0, v.W)("HeroBlock"), H = (0, s.O)(e => {
-      null == Z || Z(e)
-    }, .1, null != Z), D = l.useRef(null), M = (0, x.B)("HeroBlock"), F = (0, u.e7)([b.default], () => b.default.getCurrentUser()), W = (0, C.sp)(), U = l.useMemo(() => {
+      heroBlock: R,
+      tab: P,
+      onVisibilityChange: w
+    } = e, Z = (0, E.W)("HeroBlock"), D = (0, o.O)(e => {
+      null == w || w(e)
+    }, .1, null != w), H = l.useRef(null), M = (0, O.B)("HeroBlock"), F = (0, u.e7)([p.default], () => p.default.getCurrentUser()), W = (0, h.sp)(), U = l.useMemo(() => {
       var e, t;
-      return null != P ? P : null == N ? A : {
+      return null != R ? R : null == N ? B : {
         rankedSkuIds: null != (e = N.heroRanking) ? e : [],
         name: N.name,
         unpublishedAt: N.unpublishedAt,
-        logoUrl: (0, h.uV)(null != (t = N.heroLogo) ? t : N.logo, {
-          size: B
+        logoUrl: (0, C.uV)(null != (t = N.heroLogo) ? t : N.logo, {
+          size: A
         }),
         categorySkuId: N.skuId,
         bannerAsset: N.heroBannerAsset,
@@ -75,23 +75,23 @@ let B = (0, Chunk884697.IC)(90),
         heroBannerUrl: N.heroBannerUrl,
         heroBannerAnimatedUrl: N.heroBannerAnimatedUrl
       }
-    }, [P, N]), V = (0, E.Pc)("HeroBlock") && U.categorySkuId === k.Hi, {
-      bannerStyleOverrides: z,
+    }, [R, N]), z = (0, v.Pc)("HeroBlock") && U.categorySkuId === T.Hi, {
+      bannerStyleOverrides: V,
       logoStyleOverrides: G,
       heroLogo: K,
       heroBannerStatic: Y,
       heroBannerAnimated: q,
       heroBannerRive: Q
-    } = (0, S.hr)(U), J = null != (t = null == z ? true : z.responsive) && t, X = null == z ? true : z.backgroundStyle, $ = null != Q, ee = R === k.AW.ORBS, et = null != N && N.isOrbsExclusive, en = ee ? L.intl.string(L.t["1CdL8d"]) : L.intl.string(L.t.xYKa1T);
-    ee && V && (en = L.intl.string(L.t.dVz4hi));
+    } = (0, S.hr)(U), J = null != (t = null == V ? true : V.responsive) && t, X = null == V ? true : V.backgroundStyle, $ = null != Q, ee = P === T.AW.ORBS, et = null != N && N.isOrbsExclusive, en = ee ? L.intl.string(L.t["1CdL8d"]) : L.intl.string(L.t.xYKa1T);
+    ee && z && (en = L.intl.string(L.t.dVz4hi));
     let {
       analyticsLocations: er
     } = (0, f.ZP)(), el = () => {
-      ee ? ((0, p.Y)({
-        pageType: T.ZY5.SHOP_ORBS_TAB,
-        sectionType: T.jXE.ORBS_SHOP_HERO_BLOCK,
-        ctaObject: T.qAy.CTA_TO_QUEST_HOME
-      }), V ? (0, _.Z)({
+      ee ? ((0, b.Y)({
+        pageType: j.ZY5.SHOP_ORBS_TAB,
+        sectionType: j.jXE.ORBS_SHOP_HERO_BLOCK,
+        ctaObject: j.qAy.CTA_TO_QUEST_HOME
+      }), z ? (0, _.Z)({
         analyticsLocations: er
       }) : (0, g.navigateToQuestHome)({
         fromContent: i.j.ORBS_SHOP_HERO_CTA
@@ -100,24 +100,24 @@ let B = (0, Chunk884697.IC)(90),
         categorySkuId: et ? U.categorySkuId : true,
         isInternalShopDeeplink: true,
         isOrbsExclusive: et
-      }), m.default.track(T.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      }), m.default.track(j.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == W ? true : W.sessionId,
         sku_id: U.categorySkuId,
-        page_type: R,
+        page_type: P,
         page_section: null == W ? true : W.pageSection,
         page_category: null == W ? true : W.pageCategory,
         cta_name: "shop latest category hero button"
       }))
     };
-    return null != F && (n || U !== A) ? (0, r.jsxs)("div", {
-      ref: H,
+    return null != F && (n || U !== B) ? (0, r.jsxs)("div", {
+      ref: D,
       className: I.heroBlock,
-      children: [$ ? (0, O.gT)({
+      children: [$ ? (0, x.gT)({
         isCustomCursorEnabled: M,
         className: I.riveEventOverlay,
-        riveEventTargetRef: D
+        riveEventTargetRef: H
       }) : null, (0, r.jsx)("div", {
-        className: o()(I.banner, {
+        className: s()(I.banner, {
           [I.rivBanner]: $,
           [I.responsive]: J
         }),
@@ -129,7 +129,7 @@ let B = (0, Chunk884697.IC)(90),
           bannerAnimated: q,
           bannerRive: Q,
           isResponsive: J,
-          eventTargetRef: D
+          eventTargetRef: H
         })
       }), (0, r.jsxs)("div", {
         className: I.heroBlockContent,
@@ -141,7 +141,7 @@ let B = (0, Chunk884697.IC)(90),
             text: en
           })
         }) : (0, r.jsxs)("div", {
-          className: o()(I.heroHeaderContainer, {
+          className: s()(I.heroHeaderContainer, {
             [I.responsive]: J
           }),
           children: [n ? (0, r.jsx)("div", {
@@ -181,11 +181,11 @@ let B = (0, Chunk884697.IC)(90),
               text: en
             })
           })]
-        }), (0, r.jsx)(j.Z, {
+        }), (0, r.jsx)(k.Z, {
           heroBlockRecord: U,
-          tab: R,
+          tab: P,
           isBlockLoading: n,
-          layout: R === k.AW.HOME ? w ? "hscroll" : "row" : V ? "row" : "feed"
+          layout: P === T.AW.HOME ? Z ? "hscroll" : "row" : z ? "row" : "feed"
         })]
       })]
     }) : null
