@@ -75,12 +75,12 @@ function I(e) {
     })
   }) : null == L ? null : (0, r.jsxs)("div", {
     className: S.container,
-    children: [(0, r.jsx)(y.ZP, {
+    children: [(0, r.jsx)(y.C, {
       className: S.card,
       applicationId: L.applicationId,
       skuId: w,
       guildId: R,
-      variant: y.Zp.EMBEDDED,
+      variant: y.Z.EMBEDDED,
       onClick: Z,
       analyticsLocations: M
     }), (0, r.jsxs)("div", {

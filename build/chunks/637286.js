@@ -12,7 +12,7 @@ var Chunk409813 = require("./409813.js"),
   Chunk622999 = require("./622999.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx");
-let s = new Set([...new Set([Chunk231338.He.CARD, Chunk231338.He.PAYMENT_REQUEST, Chunk231338.He.PAYPAL]), ...new Set([Chunk231338.He.IDEAL, Chunk231338.He.GOPAY_WALLET, Chunk231338.He.KAKAOPAY, Chunk231338.He.VENMO, Chunk231338.He.CASH_APP, Chunk231338.He.GCASH, Chunk231338.He.PAYSAFE_CARD, Chunk231338.He.GRABPAY_MY, Chunk231338.He.MOMO_WALLET, Chunk231338.He.PRZELEWY24, Chunk231338.He.EPS])]),
+let s = new Set([...new Set([Chunk231338.He.CARD, Chunk231338.He.PAYMENT_REQUEST, Chunk231338.He.PAYPAL]), ...new Set([Chunk231338.He.IDEAL, Chunk231338.He.BANCONTACT, Chunk231338.He.GOPAY_WALLET, Chunk231338.He.KAKAOPAY, Chunk231338.He.VENMO, Chunk231338.He.CASH_APP, Chunk231338.He.GCASH, Chunk231338.He.PAYSAFE_CARD, Chunk231338.He.GRABPAY_MY, Chunk231338.He.MOMO_WALLET, Chunk231338.He.PRZELEWY24, Chunk231338.He.EPS])]),
   l = new Set([]),
   c = {
     [Chunk231338.He.PAYPAL]: {
@@ -87,6 +87,7 @@ let s = new Set([...new Set([Chunk231338.He.CARD, Chunk231338.He.PAYMENT_REQUEST
   d = {
     [Chunk231338.He.CARD]: "card",
     [Chunk231338.He.IDEAL]: "ideal",
+    [Chunk231338.He.BANCONTACT]: "bancontact",
     [Chunk231338.He.PAYPAL]: "paypal",
     [Chunk231338.He.VENMO]: "venmo",
     [Chunk231338.He.CASH_APP]: "cashapp",
@@ -111,7 +112,7 @@ function p(e) {
   }
   return null
 }
-let _ = (e, t) => "card" === e || "link_card_brand" === e ? a.He.CARD : "ideal" === e ? a.He.IDEAL : "google_pay" === e || "apple_pay" === e ? a.He.PAYMENT_REQUEST : e in t ? t[e] : null;
+let _ = (e, t) => "card" === e || "link_card_brand" === e ? a.He.CARD : "ideal" === e ? a.He.IDEAL : "bancontact" === e ? a.He.BANCONTACT : "google_pay" === e || "apple_pay" === e ? a.He.PAYMENT_REQUEST : e in t ? t[e] : null;
 
 function m(e) {
   return l.size > 0 && l.has(e) ? "test" === (0, i.rI)() : s.has(e)

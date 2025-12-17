@@ -82,7 +82,7 @@ function x(e) {
         applicationId: x,
         guildId: _,
         skuIds: L ? true : Z,
-        variant: c.Zp.MEDIUM
+        variant: c.Z.MEDIUM
       }), (0, l.jsx)(g.Z, {
         analyticsSectionId: "non-featured-top-section",
         applicationId: x,

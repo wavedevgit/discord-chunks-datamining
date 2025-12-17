@@ -18,7 +18,7 @@ function c(e) {
     guildId: c,
     sectionTitle: u,
     skuIds: f,
-    variant: g = s.Zp.SMALL
+    variant: g = s.Z.SMALL
   } = e, p = i.useMemo(() => ({
     pageSection: n,
     pageSectionTitle: u
