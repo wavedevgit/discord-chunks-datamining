@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk320161 = require("./320161.jsx"),
   Chunk572004 = require("./572004.js"),
@@ -35,7 +35,7 @@ function p(e) {
     }),
     children: e => {
       var t, r;
-      return (0, a.jsx)(l.P3F, (t = function(e) {
+      return (0, a.jsx)(i.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             a = Object.keys(n);
@@ -53,11 +53,11 @@ function p(e) {
         }
         return e
       }({}, e), r = r = {
-        className: i()(m.copyButton, {
+        className: l()(m.copyButton, {
           [m.visible]: n
         }),
         "aria-label": u.intl.string(u.t.y5MwJy),
-        children: (0, a.jsx)(l.TIy, {
+        children: (0, a.jsx)(i.TIy, {
           size: "xs",
           color: "currentColor"
         })

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk49436 = require("./49436.js"),
   Chunk968843 = require("./968843.js"),
@@ -20,13 +20,13 @@ function h() {
     quest: e,
     onCtxMenuOpen: t,
     onCtxMenuClose: n,
-    onCtxMenuSelect: i
+    onCtxMenuSelect: l
   } = Chunk473749.useContext(Chunk526188.A), h = (0, Chunk968843.B6)(module.config.expiresAt);
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk782589.questAcceptedHeader,
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-xxs/medium",
-      className: l()(Chunk782589.flex, Chunk782589.headerText),
+      className: i()(Chunk782589.flex, Chunk782589.headerText),
       children: Chunk388032.intl.format(Chunk388032.t["pX+fmn"], {
         expirationDate: h
       })
@@ -64,7 +64,7 @@ function h() {
           children: (0, a.jsx)(s.xhG, {
             size: "md",
             color: "currentColor",
-            className: l()(p.submenuIcon, p.interactiveNormal)
+            className: i()(p.submenuIcon, p.interactiveNormal)
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);

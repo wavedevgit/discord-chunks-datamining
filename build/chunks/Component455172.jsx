@@ -8,6 +8,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk317381 = require("./317381.js"),
   Chunk884338 = require("./884338.jsx"),
@@ -22,8 +23,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk938475 = require("./938475.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk998081 = require("./998081.js"),
-  Chunk66776 = require("./66776.js");
+  Chunk998081 = require("./998081.js");
 
 function E(e) {
   let {
@@ -31,11 +31,11 @@ function E(e) {
     users: n
   } = e;
   return 0 === n.length ? null : (0, r.jsxs)("div", {
-    className: C.row,
+    className: x.row,
     children: [(0, r.jsx)(t, {
-      className: C.activityIcon,
+      className: x.activityIcon,
       color: "currentColor"
-    }), (0, r.jsx)(u.ZP, {
+    }), (0, r.jsx)(d.ZP, {
       users: n,
       max: 6
     })]
@@ -47,12 +47,12 @@ function S(e) {
     muteConfig: t,
     className: n
   } = e;
-  return (null == t ? true : t.end_time) == null ? (0, r.jsx)(s.Text, {
+  return (null == t ? true : t.end_time) == null ? (0, r.jsx)(c.Text, {
     variant: "text-xs/normal",
     color: "text-muted",
     className: n,
-    children: j.intl.string(j.t.fpKdS1)
-  }) : (0, r.jsx)(h.Z, {
+    children: C.intl.string(C.t.fpKdS1)
+  }) : (0, r.jsx)(p.Z, {
     muteConfig: t,
     className: n
   })
@@ -63,59 +63,59 @@ function I(e) {
     channel: t
   } = e, n = t.id, {
     activityUsers: l,
-    streamUsers: u,
-    voiceUsers: f
+    streamUsers: s,
+    voiceUsers: d
   } = function(e) {
     let t = e.id,
-      n = (0, o.Wu)([m.Z], () => m.Z.getBlockedOrIgnoredIDs()),
-      r = (0, o.e7)([p.Z], () => p.Z.getUserAffinitiesMap(), []),
-      l = (0, o.Wu)([c.ZP, O.default], () => c.ZP.getEmbeddedActivitiesForChannel(t).flatMap(e => Array.from(e.userIds)).map(e => O.default.getUser(e)), [t]),
-      a = i.useMemo(() => (0, d.dq)(l, n), [l, n]),
-      s = i.useMemo(() => (0, g.C)(a, r, "DirectMessageTooltip - activityUsers"), [a, r]),
-      u = (0, o.Wu)([b.Z, O.default], () => {
-        let e = b.Z.getAllApplicationStreamsForChannel(t).map(e => e.ownerId).map(e => O.default.getUser(e));
-        return (0, d.dq)(e, n)
+      n = (0, o.Wu)([y.Z], () => y.Z.getBlockedOrIgnoredIDs()),
+      r = (0, o.e7)([g.Z], () => g.Z.getUserAffinitiesMap(), []),
+      l = (0, o.Wu)([u.ZP, v.default], () => u.ZP.getEmbeddedActivitiesForChannel(t).flatMap(e => Array.from(e.userIds)).map(e => v.default.getUser(e)), [t]),
+      a = i.useMemo(() => (0, f.dq)(l, n), [l, n]),
+      s = i.useMemo(() => (0, b.C)(a, r, "DirectMessageTooltip - activityUsers"), [a, r]),
+      c = (0, o.Wu)([m.Z, v.default], () => {
+        let e = m.Z.getAllApplicationStreamsForChannel(t).map(e => e.ownerId).map(e => v.default.getUser(e));
+        return (0, f.dq)(e, n)
       }, [t, n]),
-      f = i.useMemo(() => (0, d.dq)(u, n), [u, n]),
-      h = i.useMemo(() => (0, g.C)(f, r, "DirectMessageTooltip - activityUsers"), [f, r]),
-      y = i.useMemo(() => h.filter(e => !s.some(t => t.id === e.id)), [h, s]),
-      j = (0, o.Wu)([v.ZP], () => {
-        let t = v.ZP.getVoiceStatesForChannel(e).map(e => {
+      d = i.useMemo(() => (0, f.dq)(c, n), [c, n]),
+      h = i.useMemo(() => (0, b.C)(d, r, "DirectMessageTooltip - activityUsers"), [d, r]),
+      p = i.useMemo(() => h.filter(e => !s.some(t => t.id === e.id)), [h, s]),
+      O = (0, o.Wu)([j.ZP], () => {
+        let t = j.ZP.getVoiceStatesForChannel(e).map(e => {
           let {
             user: t
           } = e;
           return t
         });
-        return (0, d.dq)(t, n)
+        return (0, f.dq)(t, n)
       }, [e, n]),
-      C = i.useMemo(() => (0, d.dq)(j, n), [j, n]),
-      x = i.useMemo(() => (0, g.C)(C, r, "DirectMessageTooltip - voiceUsers"), [C, r]);
+      C = i.useMemo(() => (0, f.dq)(O, n), [O, n]),
+      x = i.useMemo(() => (0, b.C)(C, r, "DirectMessageTooltip - voiceUsers"), [C, r]);
     return {
       voiceUsers: i.useMemo(() => x.filter(e => !s.some(t => t.id === e.id) && !h.some(t => t.id === e.id)), [x, s, h]),
-      streamUsers: y,
+      streamUsers: p,
       activityUsers: s
     }
   }(t), h = (0, r.jsx)(E, {
-    icon: s.gj8,
-    users: f
-  }), j = (0, r.jsx)(E, {
-    icon: s.hGI,
-    users: u
-  }), x = (0, r.jsx)(E, {
-    icon: s.nG3,
+    icon: c.gj8,
+    users: d
+  }), p = (0, r.jsx)(E, {
+    icon: c.hGI,
+    users: s
+  }), C = (0, r.jsx)(E, {
+    icon: c.nG3,
     users: l
   }), {
     isMuted: I,
     muteConfig: _
-  } = (0, o.cj)([y.ZP], () => ({
-    isMuted: y.ZP.isChannelMuted(null, n),
-    muteConfig: y.ZP.getChannelMuteConfig(null, n)
+  } = (0, o.cj)([O.ZP], () => ({
+    isMuted: O.ZP.isChannelMuted(null, n),
+    muteConfig: O.ZP.getChannelMuteConfig(null, n)
   }), [n]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [h, j, x, I ? (0, r.jsx)(S, {
+    children: [h, p, C, I ? (0, r.jsx)(S, {
       muteConfig: _,
-      className: a()(C.muteText, {
-        [C.muteTextWithActivity]: null != h || null != j
+      className: a()(x.muteText, {
+        [x.muteTextWithActivity]: null != h || null != p
       })
     }) : null]
   })
@@ -124,12 +124,12 @@ function I(e) {
 function _(e) {
   let {
     channel: t
-  } = e, n = (0, f.ZP)(t);
+  } = e, n = (0, h.ZP)(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: a()(C.row, C.rowGuildName),
+      className: a()(x.row, x.rowGuildName),
       children: (0, r.jsx)("span", {
-        className: a()(C.guildNameText, C.guildNameTextLimitedSize),
+        className: a()(x.guildNameText, x.guildNameTextLimitedSize),
         children: n
       })
     }), (0, r.jsx)(I, {
@@ -142,70 +142,19 @@ function P(e) {
   let {
     channel: t,
     children: n
-  } = e, i = (0, f.ZP)(t);
-  return (0, r.jsx)(s.aML, {
-    "data-migration-pending": true,
+  } = e, l = (0, h.ZP)(t), a = i.useMemo(() => (0, r.jsx)("div", {
+    className: x.guildTooltipWrapper,
+    children: (0, r.jsx)(_, {
+      channel: t
+    })
+  }), [t]);
+  return (0, r.jsx)(s.u, {
+    __unsupportedReactNodeAsText: a,
     hideOnClick: true,
     spacing: 12,
     position: "right",
-    text: (0, r.jsx)(_, {
-      channel: t
-    }),
-    "aria-label": null != i && i,
-    tooltipClassName: x.listItemTooltip,
-    tooltipContentClassName: x.listItemTooltipContent,
-    children: e => {
-      var t, i, {
-          onFocus: l,
-          onBlur: a
-        } = e,
-        o = function(e, t) {
-          if (null == e) return {};
-          var n, r, i = function(e, t) {
-            if (null == e) return {};
-            var n, r, i = {},
-              l = Object.keys(e);
-            for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
-            return i
-          }(e, t);
-          if (Object.getOwnPropertySymbols) {
-            var l = Object.getOwnPropertySymbols(e);
-            for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
-          }
-          return i
-        }(e, ["onFocus", "onBlur"]);
-      return (0, r.jsx)("div", (t = function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            var r;
-            r = n[t], t in e ? Object.defineProperty(e, t, {
-              value: r,
-              enumerable: true,
-              configurable: true,
-              writable: true
-            }) : e[t] = r
-          })
-        }
-        return e
-      }({
-        onFocus: l,
-        onBlur: a
-      }, o), i = i = {
-        children: n
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(i)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
-      }), t))
-    }
+    "aria-label": null != l ? l : true,
+    asContainer: true,
+    children: n
   })
 }

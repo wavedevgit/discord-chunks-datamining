@@ -35,8 +35,7 @@ class l extends Chunk147913.Z {
       if (!this.questCompletionStates.has(e)) return void this.questCompletionStates.set(e, i);
       null == this.questCompletionStates.get(e) && null != i && this.onQuestCompleted(e), this.questCompletionStates.set(e, i)
     }), s(this, "onQuestCompleted", e => {
-      let t = "quest_completed_".concat(e);
-      (0, a.Ox)(t), (0, a.Ox)(r.Y.QUEST_COMPLETED, {
+      (0, a.Ox)(r.Y.QUEST_COMPLETED, {
         quest_id: e
       })
     }), s(this, "stores", new Map([

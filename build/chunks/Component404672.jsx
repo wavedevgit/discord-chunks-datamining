@@ -35,12 +35,12 @@ function o() {
       let {
         id: n,
         collapsedLeft: r,
-        expandedLeft: l,
+        expandedLeft: i,
         collapsedTop: s,
         expandedTop: c,
         width: d
       } = t, u = o.get(n);
-      return (0, a.jsx)(i.animated.div, {
+      return (0, a.jsx)(l.animated.div, {
         ref: u,
         style: {
           zIndex: 2,
@@ -48,9 +48,9 @@ function o() {
           top: 0,
           left: 0,
           width: d,
-          transform: (0, i.to)([e.to({
+          transform: (0, l.to)([e.to({
             range: [0, 1],
-            output: [r, l]
+            output: [r, i]
           }), e.to({
             range: [0, 1],
             output: [s, c]

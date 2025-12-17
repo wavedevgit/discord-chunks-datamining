@@ -93,7 +93,7 @@ function I(e) {
   }, [i, T]);
   l.useEffect(() => {
     function e() {
-      U && null != F && F.hasAnyPremiumGroup && (0, s.ZDy)(async () => {
+      U && null != F && F.hasAnyPremiumGroup && (0, o.ZDy)(async () => {
         let {
           default: e
         } = await n.e("86948").then(n.bind(n, 153241));
@@ -114,15 +114,15 @@ function I(e) {
         }
       })
     }
-    return f.S.subscribe(x.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
-      f.S.unsubscribe(x.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
+    return h.S.subscribe(x.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
+      h.S.unsubscribe(x.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
     }
   }, [U, F]), l.useEffect(() => {
-    !H || null == z || null == K || W || V || (0, h.pO)(z) || Y({
+    !H || null == z || null == K || W || V || (0, f.pO)(z) || Y({
       onSubscriptionConfirmation: T
     })
   }, [Y, H, z, K, W, V, T]), l.useEffect(() => {
-    null != $ && null != $.reminderNotice && X && (0, u.wH)(o.z.GIFTING_PROMOTION_REMINDER, (0, p.m)(), {
+    null != $ && null != $.reminderNotice && X && (0, u.wH)(s.z.GIFTING_PROMOTION_REMINDER, (0, p.m)(), {
       dismissAction: E.L.INDIRECT_ACTION
     })
   }, [$, X]);

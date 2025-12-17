@@ -29,7 +29,7 @@ let c = e => {
       isCardHovered: n
     } = e, s = (0, r.Y)({
       location: "ProductWishlistButton"
-    }), o = (0, l.LJ)(t), d = (0, i.o)(o);
+    }), o = (0, i.LJ)(t), d = (0, l.o)(o);
     return null != o && s ? (0, a.jsx)(c, {
       product: o,
       selectedVariantIndex: d,

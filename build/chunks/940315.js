@@ -1,16 +1,16 @@
 /** Chunk was on 6043 **/
 /** chunk id: 940315, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y: () => l
+  Y: () => i
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
   Chunk709706 = require("./709706.js");
 
-function l() {
+function i() {
   let e = (0, Chunk442837.e7)([Chunk709706.Z], () => Chunk709706.Z.getLastReportedLagTimestamp()),
     [t, n] = Chunk473749.useState(false),
-    [l, s] = Chunk473749.useState(false),
+    [i, s] = Chunk473749.useState(false),
     o = Chunk473749.useRef(null);
   return Chunk473749.useEffect(() => {
     let t = null != module;
@@ -28,6 +28,6 @@ function l() {
     }
   }, [module]), {
     showSilentLagWarning: exports,
-    showLagTooltip: l
+    showLagTooltip: i
   }
 }

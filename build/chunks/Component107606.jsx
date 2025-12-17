@@ -90,13 +90,13 @@ function g() {
         variant: "text-md/normal",
         children: ["UI Density: ", M, " (", function(e) {
           switch (e) {
-            case i.Pi.COMPACT:
+            case l.Pi.COMPACT:
               return "Compact";
-            case i.Pi.COZY:
+            case l.Pi.COZY:
               return "Cozy";
-            case i.Pi.DEFAULT:
+            case l.Pi.DEFAULT:
               return "Default";
-            case i.Pi.RESPONSIVE:
+            case l.Pi.RESPONSIVE:
               return "Responsive";
             default:
               return "Unknown"

@@ -12,7 +12,7 @@ let s = e => {
   let {
     skuId: t,
     className: n
-  } = e, s = (0, i.LJ)(t), o = (0, l.To)(s);
+  } = e, s = (0, l.LJ)(t), o = (0, i.To)(s);
   return (0, a.jsx)(r.Heading, {
     variant: "heading-md/medium",
     color: "text-strong",

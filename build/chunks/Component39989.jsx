@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk704088 = require("./704088.jsx"),
@@ -22,7 +22,7 @@ let m = [{
   h = () => {
     let [e, t] = Chunk473749.useState("private_browsing_perk"), n = Chunk473749.useMemo(() => p[module], [module]);
     return (0, Chunk54381.jsxs)("div", {
-      className: l()(Chunk663618.panel, Chunk902012.container),
+      className: i()(Chunk663618.panel, Chunk902012.container),
       children: [(0, Chunk54381.jsx)(Chunk481060.njP, {
         className: Chunk902012.tabBar,
         selectedItem: module,

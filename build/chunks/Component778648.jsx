@@ -96,8 +96,8 @@ let M = function() {
   } = (0, Chunk43747.A)(), {
     isSubmitting: ea,
     responseMessage: er,
-    redeemVirtualCurrency: ei
-  } = (0, Chunk43747.f)(), [el, es] = Chunk473749.useState(Chunk981631.lds), [eo, ec] = Chunk473749.useState(""), [ed, eu] = Chunk473749.useState(Chunk981631.lds), [em, ep] = Chunk473749.useState(Chunk981631.lds);
+    redeemVirtualCurrency: el
+  } = (0, Chunk43747.f)(), [ei, es] = Chunk473749.useState(Chunk981631.lds), [eo, ec] = Chunk473749.useState(""), [ed, eu] = Chunk473749.useState(Chunk981631.lds), [em, ep] = Chunk473749.useState(Chunk981631.lds);
   return (0, Chunk54381.jsx)(Chunk906732.Gt, {
     value: Y,
     children: (0, Chunk54381.jsx)(Chunk481060.zJl, {
@@ -278,13 +278,13 @@ let M = function() {
           }), (0, Chunk54381.jsx)(Chunk481060.oil, {
             label: "SKU ID",
             placeholder: "SKU ID",
-            value: el,
+            value: ei,
             onChange: e => es(e)
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Redeem Virtual Currency for SKU",
             loading: ea,
-            onClick: () => ei(el, (0, Chunk772848.Z)())
+            onClick: () => el(ei, (0, Chunk772848.Z)())
           }), null != er && (0, Chunk54381.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
             children: er

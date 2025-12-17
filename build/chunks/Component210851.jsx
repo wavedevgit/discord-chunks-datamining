@@ -18,10 +18,10 @@ let s = function(e) {
   } = e, [m, p] = r.useState(null), h = r.useRef(null);
   return r.useEffect(() => () => {
     null != h.current && URL.revokeObjectURL(h.current)
-  }, []), (0, a.jsx)(i.gNt, {
+  }, []), (0, a.jsx)(l.gNt, {
     label: u,
     description: "Supported asset formats: ".concat(o.join(", ")),
-    children: (0, a.jsx)(l.Z, {
+    children: (0, a.jsx)(i.Z, {
       filename: null != (n = null != (t = null == m ? true : m.name) ? t : c) ? n : "",
       filters: [{
         name: u,

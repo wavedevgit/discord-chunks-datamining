@@ -12,5 +12,5 @@ let s = e => {
   r.PlaygroundStore.setState({
     selectedCollection: e,
     selectedStory: null
-  }), (0, a.jN)(l.S9g.COMPONENT_PLAYGROUND)
+  }), (0, a.jN)(i.S9g.COMPONENT_PLAYGROUND)
 }

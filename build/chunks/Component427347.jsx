@@ -23,24 +23,31 @@ var Chunk481060 = require("./481060.js"),
 
 function v(e) {
   let {
-    dismissibleContent: t
-  } = e, n = p.Z.useIsEligible(), m = (0, s.Nj)(t), {
-    analyticsLocations: v
-  } = (0, l.ZP)(i.Z.HOLIDAY_COACHMARK), j = e => {
+    dismissibleContent: t,
+    backgroundColor: n,
+    specialTextColor: m
+  } = e, v = p.Z.useIsEligible(), j = (0, s.Nj)(t), y = null != n, C = null != m ? {
+    color: m
+  } : true, {
+    analyticsLocations: _
+  } = (0, i.ZP)(l.Z.HOLIDAY_COACHMARK), S = e => {
     (0, s.Q3)(t, {
       dismissAction: e
     })
-  }, y = () => {
+  }, E = () => {
     let e = (0, d.KV)("HolidayCoachmark");
     (0, u.openUserSettings)(e ? c.n.NOTIFICATIONS_PANEL : c.n.LEGACY_NOTIFICATIONS_SETTINGS_PANEL, {
       section: f.oAB.NOTIFICATIONS,
-      analyticsLocations: v
-    }), j(x.L.TAKE_ACTION)
+      analyticsLocations: _
+    }), S(x.L.TAKE_ACTION)
   };
-  return n && !m ? (0, a.jsx)(o.ZP, {
+  return v && !j ? (0, a.jsx)(o.ZP, {
     children: (0, a.jsxs)("div", {
       className: g.wrapper,
-      children: [(0, a.jsxs)("div", {
+      style: {
+        backgroundColor: y ? n : true
+      },
+      children: [!y && (0, a.jsxs)("div", {
         className: g.backgroundWrapper,
         children: [(0, a.jsx)(h.Z, {
           className: g.backgroundImage,
@@ -55,24 +62,25 @@ function v(e) {
         children: [(0, a.jsxs)("div", {
           children: [(0, a.jsx)(r.Heading, {
             variant: "heading-md/bold",
-            color: true,
-            className: g.specialText,
-            children: b.intl.string(b.t.zUhr3D)
+            color: null != C ? true : "always-white",
+            style: C,
+            children: b.intl.string(b.t["6CxPoB"])
           }), (0, a.jsx)(r.Text, {
             variant: "text-xs/normal",
             color: "always-white",
-            children: b.intl.format(b.t.Xw2XUT, {
+            children: b.intl.format(b.t.IVzJ8G, {
               settingsHook: (e, t) => (0, a.jsx)(r.P3F, {
                 tag: "span",
-                className: g.specialTextLink,
-                onClick: y,
+                className: g.link,
+                style: C,
+                onClick: E,
                 children: e
               }, t)
             })
           })]
         }), (0, a.jsx)(r.P3F, {
           className: g.closeClickable,
-          onClick: () => j(x.L.USER_DISMISS),
+          onClick: () => S(x.L.USER_DISMISS),
           children: (0, a.jsx)(r.Dio, {
             color: "currentColor",
             size: "xs"
@@ -85,6 +93,8 @@ function v(e) {
 
 function j() {
   return null == Chunk378364.Z.coachmarkDismissibleContent ? null : (0, Chunk54381.jsx)(v, {
-    dismissibleContent: Chunk378364.Z.coachmarkDismissibleContent
+    dismissibleContent: Chunk378364.Z.coachmarkDismissibleContent,
+    backgroundColor: Chunk378364.Z.coachmarkBackgroundColor,
+    specialTextColor: Chunk378364.Z.coachmarkSpecialTextColor
   })
 }

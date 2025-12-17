@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk345959 = require("./345959.js"),
-  l = require.n(Chunk345959),
+  i = require.n(Chunk345959),
   Chunk442837 = require("./442837.js"),
   Chunk199849 = require("./199849.jsx"),
   Chunk755721 = require("./755721.js"),
@@ -54,7 +54,7 @@ function C(e) {
     recording: t,
     playing: n,
     onPlay: r,
-    onStop: i
+    onStop: l
   } = e;
   return (0, a.jsx)(d.zF9, {
     collapsibleContent: (0, a.jsx)(y, {
@@ -73,7 +73,7 @@ function C(e) {
         }), (0, a.jsx)(d.P3F, {
           tag: "span",
           onClick: e => {
-            e.stopPropagation(), n ? i() : r(t)
+            e.stopPropagation(), n ? l() : r(t)
           },
           children: n ? (0, a.jsx)(d.fpf, {
             size: "xxs"
@@ -84,7 +84,7 @@ function C(e) {
           tag: "span",
           onClick: e => {
             e.stopPropagation();
-            let n = new Blob([l()(t.audioBuffer)], {
+            let n = new Blob([i()(t.audioBuffer)], {
                 type: "audio/wav"
               }),
               a = URL.createObjectURL(n),
@@ -103,7 +103,7 @@ function C(e) {
 function _() {
   let {
     name: e
-  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk473749.useState(false), [i, l] = Chunk473749.useState([]), y = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [_, S] = Chunk473749.useState(null), E = Chunk473749.useRef(null), T = Chunk473749.useRef(null), [O, N] = Chunk473749.useState(.5), {
+  } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk473749.useState(false), [l, i] = Chunk473749.useState([]), y = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [_, S] = Chunk473749.useState(null), E = Chunk473749.useRef(null), T = Chunk473749.useRef(null), [O, N] = Chunk473749.useState(.5), {
     krispModels: w,
     krispModelOverride: P,
     inputMode: I,
@@ -254,7 +254,7 @@ function _() {
           onClick: exports ? z : function() {
             H(), require(true), Chunk846027.Z.setLoopback("krisp_test", true), Chunk131951.Z.getMediaEngine().startRecordingRawSamples((t, a, r) => {
               n(false), u.Z.setLoopback("krisp_test", false);
-              let i = new AudioBuffer({
+              let l = new AudioBuffer({
                 length: t.length,
                 sampleRate: r,
                 numberOfChannels: a
@@ -262,11 +262,11 @@ function _() {
               for (let e = 0; e < a; e++) {
                 let n = new Float32Array(t.length / a);
                 for (let r = 0; r < t.length / a; r++) n[r] = t[r * a + e] / 32768;
-                i.copyToChannel(n, e)
+                l.copyToChannel(n, e)
               }
-              l(t => [...t, {
+              i(t => [...t, {
                 inputName: e,
-                audioBuffer: i,
+                audioBuffer: l,
                 createdAt: Date.now(),
                 suppression: G,
                 echoCancellation: k,

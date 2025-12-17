@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk236726 = require("./236726.js"),
   Chunk399606 = require("./399606.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -40,7 +40,7 @@ function R(e) {
     variant: n = "default"
   } = e;
   return (0, a.jsx)("div", {
-    className: l()(k.pill, {
+    className: i()(k.pill, {
       [k.pillBrand]: "brand" === n,
       "theme-light": "default" === n
     }),
@@ -57,29 +57,29 @@ function A(e) {
   var t;
   let {
     quest: n,
-    errorHints: i,
-    warningHints: l,
+    errorHints: l,
+    warningHints: i,
     isDarkTheme: o,
     sourceQuestContent: c
   } = e, {
     ref: d,
     height: p = 0
-  } = (0, m.ZP)([i]), h = (null == (t = n.userStatus) ? true : t.completedAt) != null, f = (0, g.z)(n), {
+  } = (0, m.ZP)([l]), h = (null == (t = n.userStatus) ? true : t.completedAt) != null, f = (0, g.z)(n), {
     type: x,
     hints: b
   } = r.useMemo(() => h || f ? {
     type: 2,
     hints: []
-  } : i.length > 0 ? {
-    type: 0,
-    hints: i.map(e => e.message)
   } : l.length > 0 ? {
+    type: 0,
+    hints: l.map(e => e.message)
+  } : i.length > 0 ? {
     type: 1,
-    hints: l
+    hints: i
   } : {
     type: 2,
     hints: []
-  }, [i, h, f, l]), v = 2 !== x, j = (0, u.q_F)({
+  }, [l, h, f, i]), v = 2 !== x, j = (0, u.q_F)({
     opacity: +!!v,
     height: v ? p : 0,
     config: w.Y
@@ -103,7 +103,7 @@ function A(e) {
         text: I.intl.string(I.t["yKJi+/"]),
         onClick: () => (0, C.y)({
           quest: n,
-          errorHints: i,
+          errorHints: l,
           sourceQuestContent: c
         }),
         variant: "always-white",
@@ -114,7 +114,7 @@ function A(e) {
 }
 
 function Z(e) {
-  var t, n, i, s, m;
+  var t, n, l, s, m;
   let {
     quest: C,
     isHovering: w,
@@ -128,7 +128,7 @@ function Z(e) {
   } = e, G = (0, j.PB)(C), V = (0, p.ZP)(), H = ((0, d.wj)(V) ? P.BRd.DARK : P.BRd.LIGHT) === P.BRd.DARK, z = (0, g.tP)(C), W = (null == (t = C.userStatus) ? true : t.claimedAt) != null, K = (0, g.B6)(C.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), q = (null == (n = C.userStatus) ? true : n.enrolledAt) != null, Y = (null == (i = C.userStatus) ? true : i.completedAt) != null, {
+  }), q = (null == (n = C.userStatus) ? true : n.enrolledAt) != null, Y = (null == (l = C.userStatus) ? true : l.completedAt) != null, {
     onAssetLoadComplete: Q
   } = r.useContext(O.k), X = H ? "text-muted" : "always-white", J = r.useCallback(async () => {
     G && ((0, v.zi)(C) || q ? (0, T.openVideoQuestModal)({
@@ -158,7 +158,7 @@ function Z(e) {
         containerClassName: k.heroAssetCont
       })
     }), (0, a.jsx)("div", {
-      className: l()(k.overlay, {
+      className: i()(k.overlay, {
         [k.lightThemeGradient]: V === P.BRd.LIGHT,
         [k.darkThemeGradient]: V === P.BRd.DARK,
         [k.darkerThemeGradient]: V === P.BRd.DARKER,

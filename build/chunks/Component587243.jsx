@@ -42,30 +42,30 @@ function b(e) {
   let {
     status: t,
     currentStatus: n,
-    description: i
-  } = e, l = t !== m.Skl.ONLINE, s = (0, a.jsx)(a.Fragment, {
+    description: l
+  } = e, i = t !== m.Skl.ONLINE, s = (0, a.jsx)(a.Fragment, {
     children: f.map(e => {
       let {
-        duration: i,
-        label: l
+        duration: l,
+        label: i
       } = e;
       return (0, a.jsx)(r.sNh, {
-        id: "".concat(t, "-").concat(i),
-        label: l(),
+        id: "".concat(t, "-").concat(l),
+        label: i(),
         action: () => (0, u.Z)({
           nextStatus: t,
           prevStatus: n,
-          durationMillis: i
+          durationMillis: l
         }),
         dontCloseOnAction: true
-      }, null != i ? i : x)
+      }, null != l ? l : x)
     })
   });
   return (0, a.jsx)(r.sNh, {
     id: t,
     className: h.expiringStatusMenuItem,
     keepItemStyles: true,
-    hasSubmenu: l,
+    hasSubmenu: i,
     label: e => {
       let {
         isFocused: n
@@ -80,9 +80,9 @@ function b(e) {
         }), (0, a.jsx)("div", {
           className: h.status,
           children: (0, c.u5)(t)
-        }), null != i && (0, a.jsx)("div", {
+        }), null != l && (0, a.jsx)("div", {
           className: h.description,
-          children: i
+          children: l
         })]
       })
     },
@@ -93,7 +93,7 @@ function b(e) {
       })
     },
     dontCloseOnAction: true,
-    children: l ? s : true
+    children: i ? s : true
   })
 }
 
@@ -114,8 +114,8 @@ function g(e) {
 
 function v(e) {
   let t = s.Cr.useSetting(),
-    n = (0, i.p)(),
-    o = l.e.useExperiment({
+    n = (0, l.p)(),
+    o = i.e.useExperiment({
       location: "UserProfileAccountPopout"
     }).allowQuietMode || n,
     c = s.fv.useSetting(),
@@ -136,13 +136,13 @@ function v(e) {
       children: f.map(t => {
         let {
           duration: n,
-          label: l
+          label: i
         } = t;
         return (0, a.jsx)(r.sNh, {
           id: "".concat(e, "-").concat(n),
-          label: l(),
+          label: i(),
           action: () => {
-            (0, i.oW)(true, n)
+            (0, l.oW)(true, n)
           },
           dontCloseOnAction: true
         }, null != n ? n : x)
@@ -199,7 +199,7 @@ function v(e) {
           })]
         }),
         action: () => {
-          (0, i.oW)(!n)
+          (0, l.oW)(!n)
         },
         dontCloseOnAction: true,
         children: v

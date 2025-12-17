@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk921254 = require("./921254.js"),
   Chunk24156 = require("./24156.js"),
   Chunk236726 = require("./236726.js"),
@@ -25,7 +25,7 @@ let j = ["#51BC9D"],
     var t;
     let {
       overlayRef: n,
-      progressBarRef: i,
+      progressBarRef: l,
       isHovered: y
     } = e, {
       quest: C,
@@ -40,18 +40,18 @@ let j = ["#51BC9D"],
       wind: 0
     })), M = (0, s.uR)(R, Z), U = r.useCallback(() => {
       if (w) return;
-      let e = i.current,
+      let e = l.current,
         t = P.current;
       if (null != t && null != e && M.isReady) {
-        var n, a, r, l, s, o;
+        var n, a, r, i, s, o;
         let {
-          x: i,
+          x: l,
           y: c
         } = e.getBoundingClientRect(), {
           x: d,
           y: u
         } = t.getBoundingClientRect();
-        M.createMultipleConfetti((n = i - d, a = c - u, r = e.clientHeight, l = e.clientWidth, s = function(e) {
+        M.createMultipleConfetti((n = l - d, a = c - u, r = e.clientHeight, i = e.clientWidth, s = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               a = Object.keys(n);
@@ -77,7 +77,7 @@ let j = ["#51BC9D"],
             },
             maxValue: {
               x: n + r,
-              y: a + l
+              y: a + i
             }
           },
           velocity: {
@@ -116,7 +116,7 @@ let j = ["#51BC9D"],
           Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(o, e))
         }), s), 100)
       }
-    }, [i, P, M, w]), B = (0, u.Z)(_);
+    }, [l, P, M, w]), B = (0, u.Z)(_);
     return (r.useEffect(() => {
       O && _ && !B && (T(), U())
     }, [_, O, T, U, B]), r.useEffect(() => {
@@ -137,7 +137,7 @@ let j = ["#51BC9D"],
           opacity: E
         }
       }), (0, a.jsx)(c.animated.div, {
-        className: l()(g.borders, g.bordersTopLeft),
+        className: i()(g.borders, g.bordersTopLeft),
         style: {
           opacity: E
         }
@@ -160,7 +160,7 @@ let j = ["#51BC9D"],
           spriteWidth: b.Ko,
           spriteHeight: b.Ko
         }), null != n.current && (0, o.createPortal)((0, a.jsx)(c.animated.div, {
-          className: l()(g.borders, g.bordersBottom),
+          className: i()(g.borders, g.bordersBottom),
           style: {
             opacity: E
           }

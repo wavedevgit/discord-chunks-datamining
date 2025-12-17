@@ -25,9 +25,9 @@ function j(e) {
   let {
     groupName: t,
     targetElementRef: n
-  } = e, r = (0, h.Z)(), s = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), m = (0, d.Z)(e => e.isOpen), p = (0, i.e7)([u.Z], () => u.Z.getLayers().includes(b.S9g.USER_SETTINGS));
+  } = e, r = (0, h.Z)(), s = (0, l.e7)([o.Z], () => o.Z.useReducedMotion), m = (0, d.Z)(e => e.isOpen), p = (0, l.e7)([u.Z], () => u.Z.getLayers().includes(b.S9g.USER_SETTINGS));
   return s || null == r || m || p ? null : (0, a.jsx)(c.Nq, {
-    contentType: l.z.NITRO_TENURE_BADGE_LEVEL_UP,
+    contentType: i.z.NITRO_TENURE_BADGE_LEVEL_UP,
     timeRecurringConfig: {
       cooldownDurationMs: 12096e5
     },
@@ -35,13 +35,13 @@ function j(e) {
     children: e => {
       let {
         visibleContent: t,
-        markAsDismissed: i
+        markAsDismissed: l
       } = e;
       return (0, a.jsx)(y, {
         recentlyLeveledTenureBadge: r,
-        markAsDismissed: i,
+        markAsDismissed: l,
         targetElementRef: n,
-        shouldShow: t === l.z.NITRO_TENURE_BADGE_LEVEL_UP
+        shouldShow: t === i.z.NITRO_TENURE_BADGE_LEVEL_UP
       })
     }
   })
@@ -51,18 +51,18 @@ function y(e) {
   var t;
   let {
     recentlyLeveledTenureBadge: n,
-    markAsDismissed: i,
-    targetElementRef: l,
+    markAsDismissed: l,
+    targetElementRef: i,
     shouldShow: o
   } = e, c = x.Qh.indexOf(n), u = (0, f.J)(x.Qh[c > 0 ? c - 1 : c], {
     ambient: true
   }), h = (0, r.useCallback)(() => {
-    i(g.L.TAKE_ACTION), d.Z.setState({
+    l(g.L.TAKE_ACTION), d.Z.setState({
       shouldRenderTenureLevelUp: true
     }), m.S.dispatch(b.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
-  }, [i]), j = (0, r.useCallback)(() => {
-    i(g.L.USER_DISMISS)
-  }, [i]), y = x.vK[n], C = v.intl.formatToPlainString(v.t.ewkaVR, {
+  }, [l]), j = (0, r.useCallback)(() => {
+    l(g.L.USER_DISMISS)
+  }, [l]), y = x.vK[n], C = v.intl.formatToPlainString(v.t.ewkaVR, {
     timeMilestone: null == (t = (0, p.q)(y.id, y.tenureReqNumMonths)) ? true : t.toLocaleLowerCase()
   }), _ = [{
     text: v.intl.string(v.t.RzWDqY),
@@ -70,7 +70,7 @@ function y(e) {
     onClick: h
   }];
   return (0, a.jsx)(s.J, {
-    targetElementRef: l,
+    targetElementRef: i,
     onRequestClose: j,
     shouldShow: o,
     caretConfig: {

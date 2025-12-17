@@ -61,17 +61,17 @@ function _(e) {
     onDismiss: n,
     children: r
   } = e, {
-    enabled: i,
-    titleText: l,
+    enabled: l,
+    titleText: i,
     bodyText: o
   } = (0, h.a)({
     location: "popover",
     autoTrackExposure: false
   });
-  return null != t.current && i ? (0, a.jsxs)(a.Fragment, {
+  return null != t.current && l ? (0, a.jsxs)(a.Fragment, {
     children: [r, (0, a.jsx)(s.J2, {
       targetElementRef: t,
-      title: b.intl.string(l),
+      title: b.intl.string(i),
       body: b.intl.string(o),
       caretConfig: {
         align: "start"

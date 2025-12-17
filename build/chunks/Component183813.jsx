@@ -39,7 +39,7 @@ function x(e) {
     selectedGiftingPromotionReward: _,
     claimableRewards: R,
     claimableVariants: A
-  } = (0, j.wD)(), L = (0, d.Z)(), Z = (0, o.e7)([g.default], () => g.default.getCurrentUser()), D = (0, p.ZP)(R, A, _), [F, G] = l.useState(null == D || null == (t = D.defaultHighlightedReward) ? true : t.skuId), [B, U] = l.useState(false), H = (0, m.Z)({
+  } = (0, j.wD)(), L = (0, d.Z)(), Z = (0, s.e7)([g.default], () => g.default.getCurrentUser()), D = (0, p.ZP)(R, A, _), [F, G] = l.useState(null == D || null == (t = D.defaultHighlightedReward) ? true : t.skuId), [B, U] = l.useState(false), H = (0, m.Z)({
     claimableVariants: A,
     claimableRewards: R,
     defaultSelection: D,
@@ -117,10 +117,10 @@ function x(e) {
       }, e.skuId)
     }),
     J = (0, r.jsx)(O.O3, {
-      children: (0, r.jsx)(s.mzw, {
+      children: (0, r.jsx)(o.mzw, {
         "data-migration-pending": true,
         className: P.modalFooter,
-        children: (0, r.jsx)(h.y, {
+        children: (0, r.jsx)(f.y, {
           onStepChange: e => {
             null != Z && null != _ && y.default.track(S.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: Z.id,
@@ -137,37 +137,37 @@ function x(e) {
       })
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(s.xBx, {
+    children: [(0, r.jsxs)(o.xBx, {
       "data-migration-pending": true,
       className: P.modalHeader,
       direction: c.Z.Direction.VERTICAL,
       align: c.Z.Align.START,
       separator: false,
-      children: [(0, r.jsx)(s.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         color: "text-strong",
         children: null == L || null == (n = L.rewardSelection) ? true : n.heading()
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-subtle",
         className: P.headerSubtitle,
         children: null == L || null == (i = L.rewardSelection) ? true : i.primarySubtitle()
-      }), (null == L || null == (E = L.rewardSelection) || null == (x = E.secondarySubtitle) ? true : x.call(E)) != null && (0, r.jsx)(s.Text, {
+      }), (null == L || null == (E = L.rewardSelection) || null == (x = E.secondarySubtitle) ? true : x.call(E)) != null && (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-subtle",
         children: null == L || null == (w = L.rewardSelection) ? true : w.secondarySubtitle()
-      }), (0, r.jsx)(s.olH, {
+      }), (0, r.jsx)(o.olH, {
         "data-migration-pending": true,
         className: P.closeButton,
         onClick: T
       })]
-    }), (0, r.jsx)(s.hzk, {
+    }), (0, r.jsx)(o.hzk, {
       "data-migration-pending": true,
-      children: (0, r.jsxs)(s.Kqy, {
+      children: (0, r.jsxs)(o.Kqy, {
         direction: "vertical",
         justify: "center",
         align: "center",
-        children: [(null == H ? true : H.shouldRenderCategoryControl) && (0, r.jsx)(f.Z, {
+        children: [(null == H ? true : H.shouldRenderCategoryControl) && (0, r.jsx)(h.Z, {
           defaultCategory: H.selectedCategory,
           onCategoryChange: H.setSelectedCategory
         }), (0, r.jsx)("div", {

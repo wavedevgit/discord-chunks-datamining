@@ -16,7 +16,7 @@ let o = async () => (await Chunk544891.tn.get({
     exclude_ended: true
   },
   rejectWithError: true
-})).body.map(e => i.Z.createFromServer(e)), c = async e => {
+})).body.map(e => l.Z.createFromServer(e)), c = async e => {
   await r.tn.post({
     url: "/debug/entitlements/fractional-premium",
     body: {
@@ -37,7 +37,7 @@ let o = async () => (await Chunk544891.tn.get({
     rejectWithError: false
   })
 }, m = () => {
-  let [e, t] = Chunk473749.useState([]), [n, r] = Chunk473749.useState(false), i = (0, Chunk473749.useCallback)(async () => {
+  let [e, t] = Chunk473749.useState([]), [n, r] = Chunk473749.useState(false), l = (0, Chunk473749.useCallback)(async () => {
     try {
       Chunk544891(true);
       let e = await o();
@@ -45,13 +45,13 @@ let o = async () => (await Chunk544891.tn.get({
     } finally {
       Chunk544891(false)
     }
-  }, []), l = (0, Chunk473749.useCallback)(async e => {
-    await c(e), await i()
+  }, []), i = (0, Chunk473749.useCallback)(async e => {
+    await c(e), await l()
   }, [Chunk959546]);
   return {
     grantFractionalPremium: Chunk981631,
     deleteFractionalPremium: (0, Chunk473749.useCallback)(async e => {
-      await d(e), await i()
+      await d(e), await l()
     }, [Chunk959546]),
     triggerNextEntitlementFulfillment: (0, Chunk473749.useCallback)(async () => {
       await u(), await Chunk959546()

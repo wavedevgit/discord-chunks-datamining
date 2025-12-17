@@ -1,7 +1,7 @@
 /** Chunk was on 23242 **/
 /** chunk id: 572517, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => f
+  c: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,21 +15,21 @@ var Chunk54381 = require("./54381.js"),
   Chunk897942 = require("./897942.jsx"),
   Chunk325117 = require("./325117.js");
 
-function f() {
+function h() {
   var e, t;
   let n = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    f = (0, Chunk410030.ZP)(),
-    h = (0, Chunk780384.wj)(f),
+    h = (0, Chunk410030.ZP)(),
+    f = (0, Chunk780384.wj)(h),
     g = (0, Chunk347896.Z)(),
     y = null == g ? true : g.planSelectionBanner,
     {
       claimableRewards: j
     } = (0, Chunk987209.wD)();
   if (null == y || null == j) return null;
-  let v = null == (e = y.getBackgroundImageUrl) ? true : module.call(y, h),
+  let v = null == (e = y.getBackgroundImageUrl) ? true : module.call(y, f),
     b = (0, Chunk717401.Yr)(v),
     O = null == (t = y.gradientConfig) ? true : exports.call(y, {
-      isDarkMode: h,
+      isDarkMode: f,
       isAndroid: false
     }),
     S = (0, Chunk717401.Tl)(O, {
@@ -46,7 +46,7 @@ function f() {
       className: Chunk325117.avatar,
       children: (0, Chunk54381.jsx)(Chunk897942.Z, {
         claimableRewards: j,
-        maxRewardImageSrc: y.getImageUrl(h, require),
+        maxRewardImageSrc: y.getImageUrl(f, require),
         size: Chunk481060.EFr.SIZE_40,
         imageScaling: 1.25
       })

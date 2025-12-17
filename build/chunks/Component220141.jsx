@@ -24,24 +24,24 @@ function p(e) {
       var n, a, r = function(e, t) {
         if (null == e) return {};
         var n, a, r = {},
-          i = Object.keys(e);
-        for (a = 0; a < i.length; a++) n = i[a], t.indexOf(n) >= 0 || (r[n] = e[n]);
+          l = Object.keys(e);
+        for (a = 0; a < l.length; a++) n = l[a], t.indexOf(n) >= 0 || (r[n] = e[n]);
         return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (a = 0; a < i.length; a++) n = i[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (a = 0; a < l.length; a++) n = l[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
       return r
     }(e, ["handleOpenUserProfileModal", "markAsDismissed"]);
   let {
     trackUserProfileEditAction: x
-  } = (0, l.KZ)(), b = c.rR.filter(e => s.Ki.includes(e)), g = r.useCallback(() => {
+  } = (0, i.KZ)(), b = c.rR.filter(e => s.Ki.includes(e)), g = r.useCallback(() => {
     h(d.L.TAKE_ACTION), x({
       action: "PRESS_ADD_WIDGET"
     }), p()
   }, [p, h, x]);
-  return (0, a.jsx)(i.Z, (t = function(e) {
+  return (0, a.jsx)(l.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         a = Object.keys(n);

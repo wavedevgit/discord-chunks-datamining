@@ -12,7 +12,7 @@ var Chunk236726 = require("./236726.js"),
 function s(e) {
   let {
     text: t
-  } = e, n = (0, i.Yzy)(t, {
+  } = e, n = (0, l.Yzy)(t, {
     from: {
       opacity: 0,
       transform: "translate3d(0, 107%, 0)"
@@ -27,9 +27,9 @@ function s(e) {
     }
   });
   return (0, a.jsx)("div", {
-    className: l.container,
+    className: i.container,
     children: n((e, t) => (0, a.jsx)(r.animated.div, {
-      className: l.animatedText,
+      className: i.animatedText,
       style: e,
       children: t
     }))

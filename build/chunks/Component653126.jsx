@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
@@ -31,7 +31,7 @@ let O = Chunk473749.memo(function(e) {
     let {
       product: t,
       hideWishlistButton: n,
-      hideProductName: i,
+      hideProductName: l,
       hideVariantSwitcher: O,
       hidePrice: N,
       hidePrimaryCTA: w,
@@ -60,7 +60,7 @@ let O = Chunk473749.memo(function(e) {
       isHoveringOrFocusing: et
     } = (0, u.Z)(ee), {
       handleCardVisibilityChange: en
-    } = (0, p.E)(t.skuId, J === E.AW.CATALOG ? "full" : J), ea = (0, j.J7)(t, d.Z.COLLECTIBLES_SHOP_CARD, W, Q), er = t.type === s.Z.VARIANTS_GROUP && !O, ei = !w || !P, el = !(N && i) || er, es = el || ei, eo = ei || er;
+    } = (0, p.E)(t.skuId, J === E.AW.CATALOG ? "full" : J), ea = (0, j.J7)(t, d.Z.COLLECTIBLES_SHOP_CARD, W, Q), er = t.type === s.Z.VARIANTS_GROUP && !O, el = !w || !P, ei = !(N && l) || er, es = ei || el, eo = el || er;
     return (0, a.jsx)(o.$, {
       innerRef: ee,
       onChange: en,
@@ -69,7 +69,7 @@ let O = Chunk473749.memo(function(e) {
         ref: ee,
         onClick: null != R ? R : ea,
         "aria-label": $,
-        className: l()(H, T.productCardContainer, {
+        className: i()(H, T.productCardContainer, {
           [T.hovered]: et
         }),
         onFocus: () => null == M ? true : M(t.skuId),
@@ -79,8 +79,8 @@ let O = Chunk473749.memo(function(e) {
         children: (0, a.jsxs)("div", {
           className: T.productCardContentContainer,
           children: [(0, a.jsx)("div", {
-            className: l()(T.productPreviewContainer, {
-              [T.hasBottomContent]: !i || el || eo
+            className: i()(T.productPreviewContainer, {
+              [T.hasBottomContent]: !l || ei || eo
             }),
             children: (0, a.jsx)(x.Z, {
               skuId: t.skuId,
@@ -104,13 +104,13 @@ let O = Chunk473749.memo(function(e) {
               className: T.footerGradient
             }), (0, a.jsxs)("div", {
               className: T.footerContainer,
-              children: [el && (0, a.jsxs)("div", {
+              children: [ei && (0, a.jsxs)("div", {
                 className: T.footerInfoContainer,
-                children: [!(i && N) && (0, a.jsxs)("div", {
+                children: [!(l && N) && (0, a.jsxs)("div", {
                   className: T.footerInfoLeft,
-                  children: [!i && (0, a.jsx)(f.Z, {
+                  children: [!l && (0, a.jsx)(f.Z, {
                     skuId: t.skuId,
-                    className: l()(G, T.productName)
+                    className: i()(G, T.productName)
                   }), !N && (0, a.jsx)("div", {
                     className: T.footerInfoShrinkOnHover,
                     "aria-hidden": true,
@@ -125,7 +125,7 @@ let O = Chunk473749.memo(function(e) {
                   onVariantEnter: q,
                   onVariantExit: Y
                 })]
-              }), ei && (0, a.jsx)("div", {
+              }), el && (0, a.jsx)("div", {
                 className: T.footerButtonContainer,
                 children: (0, a.jsxs)(c.ButtonGroup, {
                   wrap: false,
@@ -162,13 +162,13 @@ let O = Chunk473749.memo(function(e) {
       var n, a, r = function(e, t) {
         if (null == e) return {};
         var n, a, r = {},
-          i = Object.keys(e);
-        for (a = 0; a < i.length; a++) n = i[a], t.indexOf(n) >= 0 || (r[n] = e[n]);
+          l = Object.keys(e);
+        for (a = 0; a < l.length; a++) n = l[a], t.indexOf(n) >= 0 || (r[n] = e[n]);
         return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (a = 0; a < i.length; a++) n = i[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (a = 0; a < l.length; a++) n = l[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
       return r
     }(e, ["skuId"]), r = (0, j.LJ)(t);

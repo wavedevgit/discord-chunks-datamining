@@ -27,24 +27,24 @@ function h() {
 function f(e) {
   let {
     levelUpData: t
-  } = e, n = r.useRef(null), i = r.useCallback(() => {
+  } = e, n = r.useRef(null), l = r.useCallback(() => {
     c.Z.setState({
       shouldRenderTenureLevelUp: false
     })
   }, []);
-  return r.useEffect(() => i, [i]), (0, a.jsx)(s.EqS, {
+  return r.useEffect(() => l, [l]), (0, a.jsx)(s.EqS, {
     containerRef: n,
     children: (0, a.jsxs)("div", {
       className: m.wrapper,
       children: [(0, a.jsx)("div", {
         className: m.closeButton,
-        children: (0, a.jsx)(l.u, {
+        children: (0, a.jsx)(i.u, {
           text: u.intl.string(u.t.cpT0Cq),
           children: (0, a.jsx)(s.hU, {
             icon: s.Dio,
             variant: "secondary",
             size: "sm",
-            onClick: i,
+            onClick: l,
             "aria-label": u.intl.string(u.t.cpT0Cq)
           })
         })

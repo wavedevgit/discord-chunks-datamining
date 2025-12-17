@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk236726 = require("./236726.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -23,11 +23,11 @@ let v = e => {
   let {
     isFullyExpanded: t,
     partnerBranding: n
-  } = e, i = (0, f.qe)().label, v = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), {
+  } = e, l = (0, f.qe)().label, v = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), {
     quest: j
   } = r.useContext(h.A), {
     expansionSpring: y
-  } = r.useContext(p.xo), C = i ? false : 6;
+  } = r.useContext(p.xo), C = l ? false : 6;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.animated.div, {
       className: g.rewardTileContainer,
@@ -59,8 +59,8 @@ let v = e => {
         }
       })
     }), (0, a.jsxs)(s.animated.div, {
-      className: l()(g.rewardHighlightLogoCTA, {
-        [g.rewardHighlightLogoCTALabel]: i
+      className: i()(g.rewardHighlightLogoCTA, {
+        [g.rewardHighlightLogoCTALabel]: l
       }),
       style: {
         transform: (0, s.to)([y.to({
@@ -72,18 +72,18 @@ let v = e => {
         })], (e, t) => "translate(".concat(e, "px, ").concat(t, "px)"))
       },
       children: [(0, a.jsx)("div", {
-        className: l()({
-          [g.partnerBranding]: !i
+        className: i()({
+          [g.partnerBranding]: !l
         }),
         children: n
       }), (0, a.jsx)(s.animated.div, {
-        className: l()(g.rewardHighlightCTA, {
-          [g.rewardHighlightCTALabel]: i
+        className: i()(g.rewardHighlightCTA, {
+          [g.rewardHighlightCTALabel]: l
         }),
         style: {
           opacity: y.to({
             range: [0, 1],
-            output: [i ? 1 : .7, 0]
+            output: [l ? 1 : .7, 0]
           })
         },
         children: (0, a.jsx)(c.Text, {

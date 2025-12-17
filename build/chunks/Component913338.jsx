@@ -18,7 +18,7 @@ function c(e) {
     onClick: i,
     disabled: c = false
   } = e, d = l.useCallback(e => i(t), [i, t]);
-  return (0, r.jsx)(o.P3F, {
+  return (0, r.jsx)(s.P3F, {
     className: a()(u.item, {
       [u.itemSelected]: n,
       [u.disabled]: c
@@ -27,7 +27,7 @@ function c(e) {
     onClick: c ? true : d,
     onMouseEnter: t.onMouseEnter,
     onMouseLeave: t.onMouseLeave,
-    children: (0, r.jsxs)(s.x, {
+    children: (0, r.jsxs)(o.x, {
       className: u.controlText,
       variant: "text-sm/medium",
       color: "none",
@@ -44,8 +44,8 @@ function d(e) {
     options: t,
     value: n,
     onChange: i,
-    className: o,
-    disabled: s = false
+    className: s,
+    disabled: o = false
   } = e, d = l.useMemo(() => t.findIndex(e => e.value === n), [t, n]), p = l.useCallback(e => {
     var t;
     let l = n === e.value;
@@ -53,12 +53,12 @@ function d(e) {
       selected: l,
       option: e,
       onClick: i,
-      disabled: s
+      disabled: o
     }, null != (t = e.key) ? t : String(e.value))
-  }, [n, i, s]);
+  }, [n, i, o]);
   return (0, r.jsx)("div", {
-    className: a()(u.container, o, {
-      [u.disabledContainer]: s,
+    className: a()(u.container, s, {
+      [u.disabledContainer]: o,
       [u.trickSelected]: 0 === d,
       [u.treatSelected]: 1 === d
     }),

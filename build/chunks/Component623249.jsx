@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -32,11 +32,11 @@ function T(e) {
   var t;
   let {
     quest: n,
-    errorHints: i,
+    errorHints: l,
     transitionState: y,
     onClose: T,
     sourceQuestContent: N
-  } = e, [w, P] = (0, r.useState)(i), I = (0, b.KX)(), k = (0, h.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), A = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), Z = (0, C.g2)({
+  } = e, [w, P] = (0, r.useState)(l), I = (0, b.KX)(), k = (0, h.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), A = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), Z = (0, C.g2)({
     useReducedMotion: A,
     className: E.colorTransition
   }), D = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.Bz)(n), M = (0, o.e7)([p.Z], () => p.Z.getState().theme), U = (0, d.wj)(M) ? _.BR.DARK : _.BR.LIGHT, {
@@ -85,7 +85,7 @@ function T(e) {
           color: "text-default",
           children: S.intl.string(S.t["+/hZM/"])
         }), (0, a.jsxs)(u.P3F, {
-          className: l()(E.refreshWrapper, {
+          className: i()(E.refreshWrapper, {
             [E.disabled]: F
           }),
           onClick: B,
@@ -139,12 +139,12 @@ function O(e) {
     icon: t,
     text: n,
     errors: r = [],
-    gameTile: i
+    gameTile: l
   } = e, s = r.length > 0, o = s ? u._3e : u.B_b;
   return (0, a.jsxs)("div", {
     className: E.connectionRow,
     children: [(0, a.jsxs)("div", {
-      className: l()(E.connectionRowHeader, {
+      className: i()(E.connectionRowHeader, {
         [E.connectionRowHeaderError]: s
       }),
       children: [(0, a.jsxs)("div", {
@@ -156,10 +156,10 @@ function O(e) {
         })]
       }), (0, a.jsxs)("div", {
         className: E.connectionRowHeaderContent,
-        children: [i, (0, a.jsx)(o, {
+        children: [l, (0, a.jsx)(o, {
           color: "currentColor",
           size: "sm",
-          className: l()({
+          className: i()({
             [E.success]: !s,
             [E.error]: s
           })

@@ -47,15 +47,15 @@ let d = function(e) {
     onChange: d,
     title: u
   } = e, m = r.useRef(null);
-  return (0, a.jsx)(l.gNt, {
+  return (0, a.jsx)(i.gNt, {
     label: u,
-    children: (0, a.jsx)(l.yRy, {
+    children: (0, a.jsx)(i.yRy, {
       targetElementRef: m,
-      renderPopout: e => (0, a.jsx)(l.Z$W, c(o({}, e), {
+      renderPopout: e => (0, a.jsx)(i.Z$W, c(o({}, e), {
         value: n,
-        onChange: e => d(t, (0, i.Rf)(e))
+        onChange: e => d(t, (0, l.Rf)(e))
       })),
-      children: e => (0, a.jsx)(l.P3F, c(o({}, e), {
+      children: e => (0, a.jsx)(i.P3F, c(o({}, e), {
         innerRef: m,
         tag: "span",
         "aria-label": "Select a color",
@@ -63,7 +63,7 @@ let d = function(e) {
         style: {
           backgroundColor: n
         },
-        children: (0, a.jsx)(l.ilE, {
+        children: (0, a.jsx)(i.ilE, {
           size: "xs",
           color: "currentColor",
           className: s.swatchIcon

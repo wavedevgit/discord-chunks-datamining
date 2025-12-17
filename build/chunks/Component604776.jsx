@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk314794 = require("./314794.js"),
   Chunk199849 = require("./199849.jsx"),
   Chunk755721 = require("./755721.js"),
@@ -34,10 +34,10 @@ let v = {
     let {
       entitlement: n,
       active: r,
-      onDelete: i
+      onDelete: l
     } = e, s = e => null != e ? (0, m.vc)(e, "LLL") : "---";
     return (0, a.jsxs)("div", {
-      className: l()(x.card, r ? b.gradientWrapperTier2 : ""),
+      className: i()(x.card, r ? b.gradientWrapperTier2 : ""),
       children: [(0, a.jsxs)(d.Text, {
         variant: "text-md/normal",
         children: ["ID: ", n.id, " "]
@@ -58,12 +58,12 @@ let v = {
           let e = n.sourceType;
           return null != e && e in v ? v[e] : "Unknown source type ".concat(e)
         })()]
-      }), r && null != i && (0, a.jsx)(c.zx, {
+      }), r && null != l && (0, a.jsx)(c.zx, {
         className: x.deleteEntitlementButton,
         size: c.zx.Sizes.TINY,
         color: c.zx.Colors.RED,
         look: c.zx.Looks.OUTLINED,
-        onClick: i,
+        onClick: l,
         children: "Delete"
       })]
     })
@@ -80,7 +80,7 @@ let v = {
   }];
 
 function C() {
-  let [e, t] = Chunk473749.useState(false), [n, i] = Chunk473749.useState(Chunk314794.a.PREMIUM_TIER_2_1_HOUR), [m, v] = Chunk473749.useState([]), [C, _] = Chunk473749.useState([]), {
+  let [e, t] = Chunk473749.useState(false), [n, l] = Chunk473749.useState(Chunk314794.a.PREMIUM_TIER_2_1_HOUR), [m, v] = Chunk473749.useState([]), [C, _] = Chunk473749.useState([]), {
     refreshEntitlementList: S,
     grantFractionalPremium: E,
     deleteFractionalPremium: T,
@@ -139,7 +139,7 @@ function C() {
         style: {
           marginBottom: "8px"
         },
-        className: l()([Chunk557919.section, Chunk68428.buttons]),
+        className: i()([Chunk557919.section, Chunk68428.buttons]),
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: " Fractional Premium SKU "

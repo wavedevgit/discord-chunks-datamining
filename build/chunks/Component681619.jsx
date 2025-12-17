@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk663618 = require("./663618.js");
 
@@ -14,7 +14,7 @@ function c(e) {
   let {
     columns: t,
     data: n,
-    className: i,
+    className: l,
     rowClassName: c,
     onClickRow: d,
     selectedRowKey: u,
@@ -45,7 +45,7 @@ function c(e) {
   return (0, a.jsx)("div", {
     className: o.tableContainer,
     children: (0, a.jsx)(s.Tvr, {
-      className: i,
+      className: l,
       innerClassName: o.table,
       sections: h,
       sectionHeight: 40,
@@ -56,13 +56,13 @@ function c(e) {
         return (0, a.jsx)("div", {
           className: r,
           children: p.map(e => {
-            var r, i;
-            let l = e.cellClassName,
+            var r, l;
+            let i = e.cellClassName,
               s = {
-                width: "calc(".concat(null != (i = e.cellWidth) ? i : "1fr", " - ").concat(16, "px)")
+                width: "calc(".concat(null != (l = e.cellWidth) ? l : "1fr", " - ").concat(16, "px)")
               };
             return (0, a.jsx)("div", {
-              className: l,
+              className: i,
               style: s,
               children: null == (r = e.renderHeader) ? true : r.call(e, e, n)
             }, "dev-tools-th-".concat(t, "-").concat(e.key))
@@ -75,23 +75,23 @@ function c(e) {
           rowIndex: t
         } = e, r = n[t];
         if (null == r) return null;
-        let i = r.key,
-          h = l()(o.tableRow, {
-            [o.selectedTableRow]: i === u,
+        let l = r.key,
+          h = i()(o.tableRow, {
+            [o.selectedTableRow]: l === u,
             rowClassName: c
           });
         return (0, a.jsx)(s.P3F, {
           className: h,
           onClick: () => null == d ? true : d(r),
           children: p.map(e => {
-            var n, i;
-            let l = e.cellClassName,
+            var n, l;
+            let i = e.cellClassName,
               s = {
-                width: "calc(".concat(null != (i = e.cellWidth) ? i : "1fr", " - ").concat(16, "px)"),
+                width: "calc(".concat(null != (l = e.cellWidth) ? l : "1fr", " - ").concat(16, "px)"),
                 height: "calc(".concat(m, "px - ").concat(16, "px)")
               };
             return (0, a.jsx)("div", {
-              className: l,
+              className: i,
               style: s,
               children: null == (n = e.render) ? true : n.call(e, r, true, t)
             }, "dev-tools-td-".concat(t, "-").concat(e.key))
