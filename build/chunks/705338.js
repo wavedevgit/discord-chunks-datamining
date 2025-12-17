@@ -15,13 +15,17 @@ var Chunk447543 = require("./447543.js"),
 function c(e) {
   let {
     guildId: t,
-    invite: n
+    invite: n,
+    forceFetch: r
   } = e;
   if (null != n) {
-    var r;
-    t = null == (r = n.guild) ? true : r.id
+    var i;
+    t = null == (i = n.guild) ? true : i.id
   }
-  null != t && (0, s.YL)(t, true)
+  null != t && (0, s.YL)(t, {
+    eager: true,
+    forceFetch: r
+  })
 }
 async function u(e) {
   let {

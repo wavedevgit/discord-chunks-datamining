@@ -206,12 +206,8 @@ function z(e) {
               buttonAnalyticsObject: {
                 section: M.jXE.VOICE_FILTERS_FLOATING_UPSELL
               },
-              showShadow: false,
               position: "inline",
-              className: U.upsell,
-              buttonSize: "sm",
-              useLockIcon: true,
-              buttonStyles: U.subscribeButton
+              className: U.upsell
             })
           })
         })]

@@ -30,7 +30,7 @@ function v(e) {
     color: m
   } : true, {
     analyticsLocations: _
-  } = (0, i.ZP)(l.Z.HOLIDAY_COACHMARK), S = e => {
+  } = (0, l.ZP)(i.Z.HOLIDAY_COACHMARK), S = e => {
     (0, s.Q3)(t, {
       dismissAction: e
     })

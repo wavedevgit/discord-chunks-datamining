@@ -1,52 +1,70 @@
 /** Chunk was on 67000 **/
 /** chunk id: 445606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => u
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk907862 = require("./907862.js"),
+  Chunk882508 = require("./882508.js"),
   Chunk388032 = require("./388032.jsx"),
+  Chunk339531 = require("./339531.js"),
   Chunk993516 = require("./993516.js");
 
-function s(e) {
+function u(e) {
   let {
     targetElementRef: t,
     onRender: n,
-    onRequestClose: s,
-    onActionClick: c,
-    position: u = "right",
-    align: d = "top",
-    caretConfig: f = {
+    onRequestClose: u,
+    onActionClick: d,
+    onActionMouseDown: f,
+    position: h = "right",
+    align: p = "top",
+    caretConfig: g = {
       align: "start"
-    }
+    },
+    skuImageDetails: b,
+    title: m,
+    body: y
   } = e;
-  return i.useEffect(() => {
+  i.useEffect(() => {
     null == n || n()
-  }, [n]), (0, r.jsx)(l.J2, {
+  }, [n]);
+  let O = i.useMemo(() => (null == b ? true : b.imageUrl) == null ? {
+    type: "image",
+    src: c.Z,
+    aspectRatio: "6/4"
+  } : (0, a.D)({
+    imageUrl: null == b ? true : b.imageUrl,
+    backgroundImageUrl: null == b ? true : b.backgroundImageUrl,
+    altText: o.intl.string(o.t["ulQB+t"]),
+    customClassNames: {
+      containerClassName: s.dynamicGraphicContainer,
+      foregroundImageClassName: s.dynamicGraphicForegroundImage
+    }
+  }), [null == b ? true : b.imageUrl, null == b ? true : b.backgroundImageUrl]);
+  return (0, r.jsx)(l.J2, {
     size: "lg",
     shouldShow: true,
-    position: u,
-    caretConfig: f,
+    position: h,
+    caretConfig: g,
     gradientColor: "purple",
     alignmentStrategy: "edge",
-    align: d,
+    align: p,
     badge: {
       type: "new",
       variant: "default"
     },
-    onRequestClose: s,
+    onRequestClose: u,
     actions: [{
-      text: a.intl.string(a.t.RzWDqY),
+      text: o.intl.string(o.t.RzWDqY),
       variant: "primary",
-      onClick: c
+      onClick: d,
+      onMouseDown: f
     }],
     targetElementRef: t,
-    title: a.intl.string(a.t.Ylu2JM),
-    body: a.intl.string(a.t.vgylLQ),
-    graphic: {
-      type: "image",
-      src: o.Z
-    }
+    title: null != m ? m : o.intl.string(o.t.Ylu2JM),
+    body: null != y ? y : o.intl.string(o.t.vgylLQ),
+    graphic: O
   })
 }

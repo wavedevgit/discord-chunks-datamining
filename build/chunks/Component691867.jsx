@@ -16,12 +16,12 @@ function d() {
     t = Chunk473749.useMemo(() => module.map(e => {
       let [t, n, r] = e;
       return (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(i.rsf, {
+        children: [(0, a.jsx)(l.rsf, {
           label: r,
           description: t,
           checked: n,
           onChange: e => (0, s.Z)(t, e)
-        }, t), (0, a.jsx)(i.izJ, {
+        }, t), (0, a.jsx)(l.izJ, {
           gap: 16
         })]
       })

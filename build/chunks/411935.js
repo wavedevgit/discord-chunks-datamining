@@ -2,6 +2,7 @@
 /** chunk id: 411935, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  Xp: () => y,
   YL: () => h,
   g$: () => b,
   m0: () => E,
@@ -56,13 +57,17 @@ let p = 6,
   _ = 30 * Chunk70956.Z.Millis.SECOND,
   m = 30 * Chunk70956.Z.Millis.MINUTE;
 async function h(e) {
-  let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-    n = s.Z.getStorefrontData(e),
-    a = (null == n ? true : n.state) === "loading",
-    c = (null == n ? true : n.state) === "error" && (null == n ? true : n.fetchedAt) != null && Date.now() - n.fetchedAt < _,
-    u = (null == n ? true : n.state) === "fetched" && (null == n ? true : n.fetchedAt) != null && Date.now() - n.fetchedAt < m;
-  if (!a && !c && !u) try {
-    var d;
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
+    {
+      eager: n = false,
+      forceFetch: a = false
+    } = t,
+    c = s.Z.getStorefrontData(e),
+    u = (null == c ? true : c.state) === "loading",
+    d = (null == c ? true : c.state) === "error" && (null == c ? true : c.fetchedAt) != null && Date.now() - c.fetchedAt < _,
+    f = (null == c ? true : c.state) === "fetched" && (null == c ? true : c.fetchedAt) != null && Date.now() - c.fetchedAt < m;
+  if (!(u || d || f) || a) try {
+    var p;
     i.Z.dispatch({
       type: "SOCIAL_LAYER_STOREFRONT_LOAD",
       guildId: e
@@ -78,13 +83,13 @@ async function h(e) {
       storefront: (0, o.Uc)(t.body)
     }), i.Z.dispatch({
       type: "STORE_LISTINGS_FETCH_SUCCESS",
-      storeListings: null != (d = t.body.store_listings) ? d : []
+      storeListings: null != (p = t.body.store_listings) ? p : []
     })
-  } catch (n) {
+  } catch (t) {
     i.Z.dispatch({
       type: "SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE",
       guildId: e,
-      eager: t
+      eager: n
     })
   }
 }
@@ -168,5 +173,29 @@ async function b(e) {
       applicationId: t,
       userIds: n
     }), null
+  }
+}
+async function y(e) {
+  try {
+    let t = (await r.tn.get({
+      url: l.ANM.SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT(e),
+      rejectWithError: true
+    })).body;
+    i.Z.dispatch({
+      type: "SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT_FETCH_SUCCESS",
+      guildId: e,
+      announcement: {
+        id: t.id,
+        applicationId: t.application_id,
+        applicationName: t.application_name,
+        assetId: t.asset_id,
+        backgroundImageAssetId: t.background_image_asset_id
+      }
+    })
+  } catch (t) {
+    i.Z.dispatch({
+      type: "SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT_FETCH_FAILURE",
+      guildId: e
+    })
   }
 }

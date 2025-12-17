@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk236726 = require("./236726.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -29,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
 let T = async () => await require.e("67963").then(require.t.bind(require, 145193, 19));
 
 function O(e) {
-  var t, n, l, O, w;
+  var t, n, i, O, w;
   let {
     quest: P,
     questContent: I,
@@ -77,7 +77,7 @@ function O(e) {
     })(Object(w)).forEach(function(e) {
       Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(w, e))
     }), O)
-  }), K = (null == (n = P.userStatus) ? true : n.completedAt) != null, q = (null == (l = P.userStatus) ? true : l.claimedAt) != null, Y = (0, x.xN)(P.config), Q = (0, x.LM)(P.config), {
+  }), K = (null == (n = P.userStatus) ? true : n.completedAt) != null, q = (null == (i = P.userStatus) ? true : i.claimedAt) != null, Y = (0, x.xN)(P.config), Q = (0, x.LM)(P.config), {
     completedRatio: X,
     completedRatioDisplay: J
   } = (0, h.I)(P), $ = (0, p.Bd)(P, L, M), ee = r.useMemo(() => q && Y ? S.intl.format(S.t["8Op4c4"], {
@@ -170,7 +170,7 @@ function O(e) {
         })
       }), (0, a.jsxs)("div", {
         ref: G,
-        className: i()(E.textContainer, {
+        className: l()(E.textContainer, {
           [E.justifyCenter]: !H
         }),
         children: [(0, a.jsx)(c.Heading, {

@@ -111,8 +111,8 @@ function x(e) {
     onComplete: l,
     setFetchError: o,
     className: p
-  } = e, m = (0, s.e7)([u.default], () => u.default.getCurrentUser()), x = a.useRef([]), E = a.useRef(null), O = a.useRef(t.length), S = a.useRef(null), [N, T] = a.useState(false), [w, R] = a.useState(false), P = t.length, _ = Math.max(A.iZ - P, 0), F = (0, c.vRw)(), Z = a.useCallback(async e => {
-    if (null == m || N) return;
+  } = e, m = (0, s.e7)([u.default], () => u.default.getCurrentUser()), x = a.useRef([]), E = a.useRef(null), O = a.useRef(t.length), N = a.useRef(null), [S, T] = a.useState(false), [R, w] = a.useState(false), P = t.length, _ = Math.max(A.iZ - P, 0), F = (0, c.vRw)(), Z = a.useCallback(async e => {
+    if (null == m || S) return;
     T(true), o(null);
     let {
       id: t,
@@ -155,9 +155,9 @@ function x(e) {
     } finally {
       T(false)
     }
-  }, [F, N, l, o, m]), I = a.useCallback((e, a, l, i, s) => {
+  }, [F, S, l, o, m]), I = a.useCallback((e, a, l, i, s) => {
     let o = a + 1 < t.length ? a + 1 : a - 1;
-    S.current = o >= 0 ? x.current[o] : E.current, e.shiftKey ? (0, f.B)(l) : (R(true), (0, c.ZDy)(async () => {
+    N.current = o >= 0 ? x.current[o] : E.current, e.shiftKey ? (0, f.B)(l) : (w(true), (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("70871").then(n.bind(n, 225525));
@@ -186,7 +186,7 @@ function x(e) {
           onConfirmDelete: () => (0, f.B)(l),
           onClose: async () => {
             await n(), requestAnimationFrame(() => {
-              R(false)
+              w(false)
             })
           }
         }, a))
@@ -194,11 +194,11 @@ function x(e) {
     }))
   }, [t]);
   return a.useEffect(() => {
-    w || (t.length < O.current && null != S.current && requestAnimationFrame(() => {
+    R || (t.length < O.current && null != N.current && requestAnimationFrame(() => {
       var e;
-      null == (e = S.current) || e.focus()
+      null == (e = N.current) || e.focus()
     }), O.current = t.length)
-  }, [t.length, w]), (0, r.jsx)("div", {
+  }, [t.length, R]), (0, r.jsx)("div", {
     className: i()(j.recentAvatarContainer, p),
     children: (0, r.jsxs)("div", {
       className: j.recentAvatarSlots,

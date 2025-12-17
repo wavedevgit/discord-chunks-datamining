@@ -1,7 +1,7 @@
 /** Chunk was on 6043 **/
 /** chunk id: 439128, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  w: () => l
+  w: () => i
 });
 var Chunk81825 = require("./81825.js");
 
@@ -13,9 +13,9 @@ function r(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class l extends Chunk81825.Z {
+class i extends Chunk81825.Z {
   static fromServer(e) {
-    return new l(e)
+    return new i(e)
   }
   setPassword(e) {
     return this.password = e, this

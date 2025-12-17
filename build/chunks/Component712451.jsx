@@ -302,7 +302,7 @@ function j(e) {
         newDragBoundaries: s
       }
     }, [N]),
-    eh = i.useCallback(() => {
+    ep = i.useCallback(() => {
       var e;
       if (null == M.current || null == U) return;
       let t = (X + 90) % 360,
@@ -333,7 +333,7 @@ function j(e) {
         imageRotation: t
       })
     }, [H, eg, U, X, es, Z]),
-    ep = i.useCallback(() => {
+    eh = i.useCallback(() => {
       if (null != M.current && null != U) {
         if (U.width !== U.height && (X - 0) % 180 != 0) {
           let {
@@ -451,7 +451,7 @@ function j(e) {
     }
   }, []);
   let eR = N === T.pC.AVATAR || N === T.pC.BANNER,
-    eD = (0, p.M)(!eR);
+    eD = (0, h.M)(!eR);
   return (0, n.jsx)(g.Gt, {
     value: et,
     children: (0, n.jsxs)(c.Modal, {
@@ -460,7 +460,7 @@ function j(e) {
       actionBarInput: (0, n.jsx)(d.Avr, {
         text: b.intl.string(b.t.yBZMsQ),
         textVariant: "text-md/medium",
-        onClick: ep,
+        onClick: eh,
         disabled: !Y
       }),
       actions: [{
@@ -476,7 +476,7 @@ function j(e) {
       }],
       transitionState: A,
       onClose: _,
-      children: [j && !eD && (0, n.jsx)(h.Z, {
+      children: [j && !eD && (0, n.jsx)(p.Z, {
         type: N,
         analyticsPage: k,
         analyticsSection: y.jXE.CROP_GIF_MODAL,
@@ -565,7 +565,7 @@ function j(e) {
               className: o()(w.rotateButton, {
                 [w.disabled]: eo
               }),
-              onClick: eo ? true : eh,
+              onClick: eo ? true : ep,
               "aria-label": b.intl.string(b.t.LzFiKG),
               "aria-disabled": eo,
               children: (0, n.jsx)(d.Vk2, {
@@ -579,8 +579,7 @@ function j(e) {
           analyticsSource: er,
           showUpsell: true,
           position: "inline",
-          className: w.premiumUpsell,
-          showShadow: false
+          className: w.premiumUpsell
         })]
       })]
     })

@@ -53,7 +53,9 @@ function m(e) {
     isEligible: a
   } = e, u = (0, i.e7)([c.Z], () => null != t ? c.Z.getStorefrontData(t) : true);
   r.useEffect(() => {
-    a && null != t && null == c.Z.getStorefrontData(t) && 0 !== n && (0, l.YL)(t, false)
+    a && null != t && null == c.Z.getStorefrontData(t) && 0 !== n && (0, l.YL)(t, {
+      eager: false
+    })
   }, [t, n, a]);
   let d = r.useMemo(() => {
       if (null == u || null == u.storefront || "loading" === u.state || "partially-fetched" === u.state) return [];

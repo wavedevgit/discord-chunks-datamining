@@ -15,7 +15,7 @@ let d = Chunk473749.memo(function(e) {
     className: t,
     content: n,
     onChange: d
-  } = e, u = l.z[n], {
+  } = e, u = i.z[n], {
     isDismissed: m,
     handleToggleDismissState: p
   } = (0, c.Z)(u), [h, f] = r.useState(false), x = r.useCallback(() => {
@@ -24,30 +24,30 @@ let d = Chunk473749.memo(function(e) {
     e.preventDefault(), f(true), navigator.clipboard.writeText(n.toLowerCase())
   }, [n]);
   return (0, a.jsxs)(a.Fragment, {
-    children: [(0, a.jsxs)(i.Kqy, {
+    children: [(0, a.jsxs)(l.Kqy, {
       className: t,
       direction: "horizontal",
       align: "center",
-      children: [(0, a.jsx)(i.hU, {
+      children: [(0, a.jsx)(l.hU, {
         size: "sm",
         variant: "icon-only",
-        icon: h ? i.C2q : i.zTD,
+        icon: h ? l.C2q : l.zTD,
         onClick: b,
         "aria-label": h ? "Copied" : "Copy"
-      }), (0, a.jsx)(i.rsf, {
-        label: "".concat(n.toLowerCase(), " (").concat(l.z[n], ")"),
+      }), (0, a.jsx)(l.rsf, {
+        label: "".concat(n.toLowerCase(), " (").concat(i.z[n], ")"),
         description: (0, o.qh)(u) ? function(e) {
           var t, n;
           let a = null == (n = s.Z.settings.userContent) || null == (t = n.recurringDismissibleContentStates) ? true : t[e];
           if (null == a) return null;
           let r = [],
             {
-              lastDismissedVersion: l,
-              lastDismissedAtMs: i,
+              lastDismissedVersion: i,
+              lastDismissedAtMs: l,
               lastDismissedObjectId: o
             } = a;
-          if (true !== l && 0 !== l && r.push("last_dismissed_version: ".concat(l)), true !== i) {
-            let e = Number(i),
+          if (true !== i && 0 !== i && r.push("last_dismissed_version: ".concat(i)), true !== l) {
+            let e = Number(l),
               t = Number.isNaN(e) ? "n/a" : new Date(e).toLocaleString();
             r.push("last_dismissed_at: ".concat(t))
           }
@@ -56,6 +56,6 @@ let d = Chunk473749.memo(function(e) {
         checked: m,
         onChange: x
       })]
-    }), (0, a.jsx)(i.izJ, {})]
+    }), (0, a.jsx)(l.izJ, {})]
   })
 })

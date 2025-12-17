@@ -88,23 +88,24 @@ function S(e) {
     giftMessage: T,
     confirmationFooter: C,
     isGift: A,
-    children: N
-  } = e, P = (0, i.e7)([f.default], () => f.default.getCurrentUser()), R = (0, i.e7)([p.Z], () => p.Z.getPremiumTypeSubscription()), {
-    analyticsLocations: w
-  } = (0, o.ZP)(), D = (0, _.N)(), x = !A && null != D && null != g && m.nG[D.trial_id].skus.includes(g);
-  return N({
+    initialPlanId: N = null,
+    children: P
+  } = e, R = (0, i.e7)([f.default], () => f.default.getCurrentUser()), w = (0, i.e7)([p.Z], () => p.Z.getPremiumTypeSubscription()), {
+    analyticsLocations: D
+  } = (0, o.ZP)(), x = (0, _.N)(), L = !A && null != x && null != g && m.nG[x.trial_id].skus.includes(g);
+  return P({
     onClick: e => {
       var i;
-      if (e.preventDefault(), null == P) return void(0, c.uL)(h.Z5c.LOGIN, {
+      if (e.preventDefault(), null == R) return void(0, c.uL)(h.Z5c.LOGIN, {
         source: "premium_subscribe_button"
       });
-      if (null == t || t(e), (null == R ? true : R.status) === h.O0b.ACCOUNT_HOLD) {
+      if (null == t || t(e), (null == w ? true : w.status) === h.O0b.ACCOUNT_HOLD) {
         (0, s.A3)(), (0, d.openUserSettings)(u.n.NITRO_PANEL, {
           section: h.oAB.PREMIUM
         }), null == v || v(false);
         return
       }
-      if (!P.isClaimed()) return void(0, a.ZDy)(async () => {
+      if (!R.isClaimed()) return void(0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("88470"), n.e("77927"), n.e("69417")]).then(n.bind(n, 918995));
@@ -117,7 +118,7 @@ function S(e) {
           }))
         }
       });
-      if (!P.verified) return void(0, a.ZDy)(async () => {
+      if (!R.verified) return void(0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("88470"), n.e("20102")]).then(n.bind(n, 444688));
@@ -130,13 +131,13 @@ function S(e) {
           }))
         }
       });
-      let o = x ? null == (i = D.subscription_trial) ? true : i.id : null,
+      let o = L ? null == (i = x.subscription_trial) ? true : i.id : null,
         f = h.AnalyticsObjectTypes.BUY;
       null != o ? f = h.AnalyticsObjectTypes.TRIAL : A && (f = h.AnalyticsObjectTypes.GIFT), (0, l.Z)({
         isGift: A,
-        initialPlanId: null,
+        initialPlanId: N,
         subscriptionTier: g,
-        analyticsLocations: w,
+        analyticsLocations: D,
         analyticsObject: E({
           object: h.qAy.BUTTON_CTA,
           objectType: f

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk299608 = require("./299608.js"),
   o = require.n(Chunk299608),
   Chunk913527 = require("./913527.js"),
@@ -116,7 +116,7 @@ function R(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, l = r.useMemo(() => t.error ? [...k, {
+  } = e, i = r.useMemo(() => t.error ? [...k, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(g.Z, {
@@ -130,7 +130,7 @@ function R(e) {
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
-          className: i()(O.errorToolbar, N.toolbar),
+          className: l()(O.errorToolbar, N.toolbar),
           children: (0, a.jsx)("div", {
             className: N.toolbarGroup,
             children: (0, a.jsx)(m.zx, {
@@ -152,19 +152,19 @@ function R(e) {
     TabBar: s,
     renderSelectedTab: o
   } = (0, E.ZP)({
-    tabs: l
-  }, [l]);
+    tabs: i
+  }, [i]);
   return (0, a.jsxs)(_.Z, {
     className: O.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(s, {}), (0, a.jsxs)(f.ZP, {
-      className: i()(N.headerBar, O.subPanelHeaderBar),
+      className: l()(N.headerBar, O.subPanelHeaderBar),
       children: [(0, a.jsx)(f.ZP.Icon, {
         icon: p.xVZ,
         tooltip: t.name
       }), (0, a.jsx)(f.ZP.Title, {
-        wrapperClassName: i()(N.headerTitle, N.dispatcherHeader),
+        wrapperClassName: l()(N.headerTitle, N.dispatcherHeader),
         className: N.headerTitleText,
         children: t.name
       }), (0, a.jsx)(f.ZP.Icon, {
@@ -234,7 +234,7 @@ let A = [{
 function D() {
   let e = Chunk473749.useRef(null),
     [t, n] = Chunk473749.useState(""),
-    l = function(e) {
+    i = function(e) {
       let [t, n] = r.useState(e.logs);
       return r.useEffect(() => {
         let t = o()(() => {
@@ -265,7 +265,7 @@ function D() {
     T = Chunk886118 ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, Chunk54381.jsxs)("div", {
     ref: module,
-    className: i()(Chunk663618.panel, Chunk461015.panel),
+    className: l()(Chunk663618.panel, Chunk461015.panel),
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk461015.toolbar,
       children: [(0, Chunk54381.jsx)(Chunk28664.u, {

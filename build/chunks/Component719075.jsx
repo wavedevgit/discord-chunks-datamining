@@ -25,7 +25,7 @@ let y = e => {
     let {
       product: t,
       prioritizedCurrency: n
-    } = e, d = (0, l.e7)([s.default], () => s.default.getCurrentUser()), x = (0, f.jB)(), y = c.ZP.canUseCollectibles(d), {
+    } = e, d = (0, i.e7)([s.default], () => s.default.getCurrentUser()), x = (0, f.jB)(), y = c.ZP.canUseCollectibles(d), {
       isDisabled: C
     } = (0, m.G)(t.skuId), {
       isPurchased: _,
@@ -43,13 +43,13 @@ let y = e => {
       hasDiscountOffer: null != P,
       isRental: null != x
     }), A = O && !y;
-    if (C) return (0, a.jsx)(i.Text, {
+    if (C) return (0, a.jsx)(l.Text, {
       variant: "text-md/medium",
       color: "text-muted",
       lineClamp: 1,
       children: v.intl.string(v.t.wu4gyV)
     });
-    if (S) return (0, a.jsx)(i.Text, {
+    if (S) return (0, a.jsx)(l.Text, {
       variant: "text-md/medium",
       color: "text-muted",
       lineClamp: 1,
@@ -57,7 +57,7 @@ let y = e => {
     });
     if (E && null != T) {
       let e = (0, o.TD)(Date.now(), T);
-      return (0, a.jsx)(i.Text, {
+      return (0, a.jsx)(l.Text, {
         variant: "text-md/medium",
         color: "text-muted",
         lineClamp: 1,
@@ -66,17 +66,17 @@ let y = e => {
         })
       })
     }
-    return _ && !A ? (0, a.jsx)(i.Text, {
+    return _ && !A ? (0, a.jsx)(l.Text, {
       variant: "text-md/medium",
       color: "text-muted",
       lineClamp: 1,
       children: v.intl.string(v.t["6cfuDj"])
-    }) : N ? (0, a.jsx)(i.Text, {
+    }) : N ? (0, a.jsx)(l.Text, {
       variant: "text-md/bold",
       color: "text-strong",
       lineClamp: 1,
       children: v.intl.string(v.t.nBtvYB)
-    }) : O ? (0, a.jsx)(i.Text, {
+    }) : O ? (0, a.jsx)(l.Text, {
       variant: "text-md/bold",
       color: "text-strong",
       lineClamp: 1,
@@ -95,11 +95,11 @@ let y = e => {
     let {
       skuId: t,
       prioritizedCurrency: n
-    } = e, r = (0, f.LJ)(t), l = (0, d.o)(r);
+    } = e, r = (0, f.LJ)(t), i = (0, d.o)(r);
     if (null == r) return null;
-    let i = (0, x.W)(r, l);
+    let l = (0, x.W)(r, i);
     return (0, a.jsx)(y, {
-      product: i,
+      product: l,
       prioritizedCurrency: n
     })
   }

@@ -13,7 +13,7 @@ require.d(exports, {
   W6: () => ea,
   XM: () => er,
   YC: () => ep,
-  YE: () => ei,
+  YE: () => el,
   h9: () => es,
   iw: () => en,
   jC: () => H,
@@ -125,11 +125,11 @@ let {
 } = Chunk521904.V, H = V, z = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
 
 function W(e, t) {
-  let [n, a] = l.useState(() => {
+  let [n, a] = i.useState(() => {
     let n = D.K.get(e);
     return null != n ? n : t
   });
-  return l.useEffect(() => {
+  return i.useEffect(() => {
     D.K.set(e, n)
   }, [e, n]), [n, a]
 }
@@ -166,7 +166,7 @@ function Y(e) {
 }
 
 function Q(e) {
-  return (0, R.Z)((0, A.Z)(e, i.Z), {
+  return (0, R.Z)((0, A.Z)(e, l.Z), {
     format: "hex"
   })
 }
@@ -174,13 +174,13 @@ var X = ((a = {}).TOKENS = "Tokens", a.PALETTES = "Palettes", a);
 
 function J() {
   return function(e, t) {
-    let [n, a] = W("".concat(e, "-states"), [t]), [r, i] = W("".concat(e, "-index"), 0), s = n[r], o = l.useCallback(e => {
-      a(["function" == typeof e ? e(s) : e, ...n].slice(0, 20)), i(0)
-    }, [i, a, n, s]), c = l.useCallback(() => {
-      i(Math.min(n.length - 1, r + 1))
-    }, [r, i, n.length]), d = l.useCallback(() => {
-      i(Math.max(0, r - 1))
-    }, [r, i]);
+    let [n, a] = W("".concat(e, "-states"), [t]), [r, l] = W("".concat(e, "-index"), 0), s = n[r], o = i.useCallback(e => {
+      a(["function" == typeof e ? e(s) : e, ...n].slice(0, 20)), l(0)
+    }, [l, a, n, s]), c = i.useCallback(() => {
+      l(Math.min(n.length - 1, r + 1))
+    }, [r, l, n.length]), d = i.useCallback(() => {
+      l(Math.max(0, r - 1))
+    }, [r, l]);
     return [s, o, c, d, r < n.length - 1, r > 0]
   }("color-override-9-24-2024", {
     semanticColorOverrides: {},
@@ -201,12 +201,12 @@ function ea(e, t) {
   let n = et(t),
     a = Object.keys(e).map(e => parseInt(e.split("-")[1])),
     r = Math.max(...a) / (n.length - 1),
-    l = {};
+    i = {};
   return n.forEach((e, n) => {
-    let i = Math.round(n * r),
-      s = a.reduce((e, t) => Math.abs(t - i) < Math.abs(e - i) ? t : e);
-    l["".concat(t, "-").concat(s)] = "".concat(t, "-").concat(e)
-  }), l
+    let l = Math.round(n * r),
+      s = a.reduce((e, t) => Math.abs(t - l) < Math.abs(e - l) ? t : e);
+    i["".concat(t, "-").concat(s)] = "".concat(t, "-").concat(e)
+  }), i
 }
 
 function er(e) {
@@ -215,14 +215,14 @@ function er(e) {
     base: n,
     steps: a = 26,
     darkness: r,
-    lightness: l,
+    lightness: i,
     easingStrength: s = 1
   } = e, o = F[e.colorSpace], c = (0, A.Z)(n, o), d = (0, Z.CD)(c, "white", 1 - r, {
     space: o,
-    outputSpace: i.Z
-  }), u = (0, Z.CD)(c, "black", 1 - l, {
+    outputSpace: l.Z
+  }), u = (0, Z.CD)(c, "black", 1 - i, {
     space: o,
-    outputSpace: i.Z
+    outputSpace: l.Z
   }), m = Math.floor(a / 2), p = a - m, h = (0, Z.w6)(d, c, {
     steps: m,
     outputSpace: o,
@@ -246,56 +246,56 @@ function er(e) {
   return Object.fromEntries(x.map((e, n) => ["".concat(t, "-").concat(n), e]))
 }
 
-function el(e, t, n) {
+function ei(e, t, n) {
   n(n => null == n.scales.find(t => t.name === e) ? n : B(U({}, n), {
     scales: n.scales.map(n => n.name === e ? t(n) : n)
   }))
 }
 
-function ei(e, t, n) {
-  el(e, e => B(U({}, e), {
+function el(e, t, n) {
+  ei(e, e => B(U({}, e), {
     darkness: t
   }), n)
 }
 
 function es(e, t, n) {
-  el(e, e => B(U({}, e), {
+  ei(e, e => B(U({}, e), {
     lightness: t
   }), n)
 }
 
 function eo(e, t, n) {
-  el(e, e => B(U({}, e), {
+  ei(e, e => B(U({}, e), {
     base: t
   }), n)
 }
 
 function ec(e, t, n) {
-  el(e, e => B(U({}, e), {
+  ei(e, e => B(U({}, e), {
     colorSpace: t
   }), n)
 }
 
 function ed(e, t, n) {
-  el(e, e => B(U({}, e), {
+  ei(e, e => B(U({}, e), {
     easingStrength: t
   }), n)
 }
 
 function eu(e, t, n) {
-  el(e, e => B(U({}, e), {
+  ei(e, e => B(U({}, e), {
     showColumnarPalettePreview: t
   }), n)
 }
 
 function em(e, t, n) {
-  el(e, e => B(U({}, e), {
+  ei(e, e => B(U({}, e), {
     useP3ColorSpace: t
   }), n)
 }
 
 function ep(e, t, n) {
-  el(e, e => B(U({}, e), {
+  ei(e, e => B(U({}, e), {
     steps: t
   }), n)
 }

@@ -160,7 +160,7 @@ function U(e) {
     filters: s,
     handleOpenImageEditingModal: o,
     handleFileSizeError: c
-  } = e, d = (0, N.GY)(n), f = (0, N.C6)(n, {
+  } = e, d = (0, S.GY)(n), f = (0, S.C6)(n, {
     isGIF: false
   }), p = k({
     guildFeature: f,
@@ -205,7 +205,7 @@ function B(e) {
     shouldAnimate: l,
     onMouseEnter: i,
     onMouseLeave: s
-  } = (0, j.Z)(), o = (0, N.Kq)(t), c = (0, N.C6)(t, {
+  } = (0, j.Z)(), o = (0, S.Kq)(t), c = (0, S.C6)(t, {
     isGIF: true
   }), d = k({
     guildFeature: c,
@@ -246,17 +246,17 @@ function H(e) {
     showUpsellHeader: g,
     filters: j,
     analyticsLocation: O,
-    analyticsLocations: N = [],
+    analyticsLocations: S = [],
     imageSpecifications: I,
     modalTitle: D = _.intl.string(_.t.DToW4e),
     uploadOptionTitle: k = _.intl.string(_.t["MsUY/S"]),
     allowRecentAvatarsSelection: L = true
-  } = e, M = (0, s.e7)([x.default], () => x.default.getCurrentUser()), H = (0, s.e7)([v.Z], () => v.Z.getGuildId()), V = (0, s.e7)([C.Z], () => C.Z.getGuild(H)), G = (0, u.vRw)(), z = o === R.pC.AVATAR || o === R.pC.BANNER, q = !S.ZP.canUseAnimatedAvatar(M) && o === R.pC.AVATAR, W = (0, m.M)(!z), X = (0, b.T)({
+  } = e, M = (0, s.e7)([x.default], () => x.default.getCurrentUser()), H = (0, s.e7)([v.Z], () => v.Z.getGuildId()), V = (0, s.e7)([C.Z], () => C.Z.getGuild(H)), G = (0, u.vRw)(), z = o === w.pC.AVATAR || o === w.pC.BANNER, q = !N.ZP.canUseAnimatedAvatar(M) && o === w.pC.AVATAR, W = (0, m.M)(!z), X = (0, b.T)({
     location: "NewSelectImageModal"
   }) && L, {
     analyticsLocations: Y,
     newestAnalyticsLocation: J
-  } = (0, f.ZP)(N, d.Z.SELECT_IMAGE_MODAL), K = a.useCallback(e => {
+  } = (0, f.ZP)(S, d.Z.SELECT_IMAGE_MODAL), K = a.useCallback(e => {
     let {
       assetOrigin: t = A.q.NEW_ASSET,
       imageUri: n,
@@ -319,18 +319,18 @@ function H(e) {
     })
   }, [null == O ? true : O.page, G, K, g, o]);
   a.useEffect(() => {
-    q && E.default.track(w.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: w.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
+    q && E.default.track(R.rMx.PREMIUM_UPSELL_VIEWED, {
+      type: R.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
       location_stack: Y
-    }), E.default.track(w.rMx.OPEN_MODAL, {
-      type: w.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
+    }), E.default.track(R.rMx.OPEN_MODAL, {
+      type: R.jXE.UPLOAD_FILE_OR_CHOOSE_GIF_MODAL,
       location: O,
       location_stack: Y,
       upload_type: o
     })
   }, [q, O, Y, o]);
   let et = g && W,
-    en = o === R.pC.AVATAR && X;
+    en = o === w.pC.AVATAR && X;
   return (0, r.jsx)(c.u_l, {
     transitionState: t,
     onClose: l,
@@ -374,7 +374,6 @@ function H(e) {
         analyticsSource: J,
         showUpsell: true,
         position: "inline",
-        showShadow: false,
         className: F.premiumUpsell
       })]
     })

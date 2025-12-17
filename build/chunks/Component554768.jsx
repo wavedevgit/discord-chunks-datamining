@@ -41,14 +41,14 @@ function o(e) {
 let c = function(e) {
   let {
     quest: t
-  } = e, n = (0, l.qb)(t);
+  } = e, n = (0, i.qb)(t);
   if (0 === n.length) return null;
   let r = n.at(0);
-  return r === i.intl.string(i.t.BV6xDm) ? (0, a.jsx)(o, {
-    header: i.intl.string(i.t.onh6ct),
-    children: i.intl.string(i.t.arVHRA)
-  }) : r === i.intl.string(i.t.MFGxFM) ? (0, a.jsx)(o, {
-    header: i.intl.string(i.t.JPihZA),
-    children: i.intl.string(i.t.MFGxFM)
+  return r === l.intl.string(l.t.BV6xDm) ? (0, a.jsx)(o, {
+    header: l.intl.string(l.t.onh6ct),
+    children: l.intl.string(l.t.arVHRA)
+  }) : r === l.intl.string(l.t.MFGxFM) ? (0, a.jsx)(o, {
+    header: l.intl.string(l.t.JPihZA),
+    children: l.intl.string(l.t.MFGxFM)
   }) : null
 }

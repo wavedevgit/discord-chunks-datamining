@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk668757 = require("./668757.js"),
   Chunk481060 = require("./481060.js"),
   Chunk110478 = require("./110478.jsx"),
@@ -30,12 +30,12 @@ function C() {
     r = Chunk695346.Rt.useSetting();
   return (0, Chunk54381.jsxs)(Chunk481060.Ttm, {
     children: [(0, Chunk54381.jsx)("div", {
-      className: l()(Chunk293717.buttonsContainer, Chunk478411.marginBottom20),
+      className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom20),
       children: (0, Chunk54381.jsx)(Chunk306052.g, {
         isDevTools: true
       })
     }), (0, Chunk54381.jsx)("div", {
-      className: l()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
+      className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
       children: (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
@@ -45,7 +45,7 @@ function C() {
         })
       })
     }), (0, Chunk54381.jsx)("div", {
-      className: l()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
+      className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
       children: (0, Chunk54381.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
@@ -87,7 +87,7 @@ function C() {
       })
     }), exports && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsx)("div", {
-        className: l()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
+        className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
         children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
@@ -95,7 +95,7 @@ function C() {
           onClick: () => (0, Chunk840767.Z)("devtools")
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: l()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
+        className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
         children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
@@ -103,7 +103,7 @@ function C() {
           onClick: () => (0, Chunk110478.N)()
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: l()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
+        className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
         children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
@@ -111,7 +111,7 @@ function C() {
           onClick: Chunk906605.YU
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: l()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
+        className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
         children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
@@ -119,7 +119,7 @@ function C() {
           onClick: Chunk668757.$R
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: l()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
+        className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom8),
         children: (0, Chunk54381.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
@@ -127,7 +127,7 @@ function C() {
           onClick: () => (0, Chunk515970.pg)(true)
         })
       }), (0, Chunk54381.jsx)("div", {
-        className: l()(Chunk293717.buttonsContainer, Chunk478411.marginBottom20),
+        className: i()(Chunk293717.buttonsContainer, Chunk478411.marginBottom20),
         children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Ignore profile speedbump disabled",
           checked: Chunk120356,

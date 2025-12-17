@@ -205,8 +205,7 @@ function Z(e) {
           }
         }),
         button: ei(),
-        position: "inline",
-        showShadow: false
+        position: "inline"
       }), et && (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
           className: j.premiumTier2Divider

@@ -15,13 +15,13 @@ var Chunk442837 = require("./442837.js"),
 function d(e) {
   let {
     hotspotLocation: t
-  } = e, [n, i] = (0, r.Wu)([s.qc], () => [s.qc.hasHotspot(t, true), s.qc.getHotspotOverride(t)]);
-  return (0, a.jsx)(l.y6, {
+  } = e, [n, l] = (0, r.Wu)([s.qc], () => [s.qc.hasHotspot(t, true), s.qc.getHotspotOverride(t)]);
+  return (0, a.jsx)(i.y6, {
     label: t,
     helperText: n ? "Active" : true,
     errorMessage: n ? "Inactive" : true,
     className: o.overrideSelect,
-    value: i,
+    value: l,
     options: [{
       value: true,
       label: "No Override"

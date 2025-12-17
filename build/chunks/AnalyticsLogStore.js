@@ -47,7 +47,7 @@ let b = new x(Chunk570140.Z, {
       key: (u++).toString(),
       event: t,
       properties: n,
-      fingerprint: null != a ? (0, i.s)(a) : c.default.getId(),
+      fingerprint: null != a ? (0, l.s)(a) : c.default.getId(),
       timestamp: new Date
     }), p++, m.length > 500 && (m = m.slice(-Math.floor(250))))
   },
@@ -57,16 +57,16 @@ let b = new x(Chunk570140.Z, {
       descriptor: n,
       exposureType: a,
       excluded: r,
-      location: i,
+      location: l,
       previouslyTracked: s
     } = e;
     d.Z.isDeveloper && f && (h = [...h, {
-      key: (0, l.Z)(),
+      key: (0, i.Z)(),
       experimentId: t,
       descriptor: n,
       exposureType: a,
       excluded: r,
-      location: i,
+      location: l,
       previouslyTracked: s,
       timestamp: new Date
     }]).length > 500 && h.shift()

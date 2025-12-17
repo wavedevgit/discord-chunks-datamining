@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk512722 = require("./512722.js"),
-  i = require.n(Chunk512722),
+  l = require.n(Chunk512722),
   Chunk278074 = require("./278074.js"),
   Chunk754700 = require("./754700.js"),
   Chunk887003 = require("./887003.js"),
@@ -167,7 +167,7 @@ let F = "1193992107035983872",
   };
 
 function V() {
-  var e, t, l, d, u, A;
+  var e, t, i, d, u, A;
   let [F, V] = Chunk473749.useState(G), H = Chunk473749.useCallback(e => {
     V(D(Z({}, e), {
       preview: true
@@ -272,16 +272,16 @@ function V() {
     }))
   }
 
-  function el() {
+  function ei() {
     (0, Chunk115179.Xv)(F.config) && (0, Chunk110560.openQuestCollectibleRewardModal)(F, Chunk49436.jn.GIFT_INVENTORY_FOR_YOU, Chunk49436.jn.INTERNAL_PREVIEW_TOOL, true)
   }
-  let ei = Chunk473749.useMemo(() => {
+  let el = Chunk473749.useMemo(() => {
       for (let [e, t] of Object.entries(F.config.taskConfigV2.tasks))
         if (null != exports.target) return exports.target;
       return 10 * Chunk70956.Z.Seconds.MINUTE
     }, [F.config.taskConfigV2.tasks]),
     es = Chunk473749.useMemo(() => Chunk754700.X.WATCH_VIDEO in F.config.taskConfigV2.tasks, [F.config.taskConfigV2.tasks]);
-  i()(false !== F.preview && null != F.preview, "Preview config must have property preview: true");
+  l()(false !== F.preview && null != F.preview, "Preview config must have property preview: true");
   let eo = F.config.taskConfigV2.tasks[Chunk754700.X.WATCH_VIDEO];
   return (0, Chunk54381.jsxs)(Chunk481060.zJl, {
     className: Chunk607814.container,
@@ -312,7 +312,7 @@ function V() {
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk607814.fields,
       children: (0, Chunk54381.jsx)(Chunk749912.Z, {
-        taskDuration: ei,
+        taskDuration: el,
         taskConfigV2: F.config.taskConfigV2,
         onSelect: function(e) {
           H(D(Z({}, F), {
@@ -478,7 +478,7 @@ function V() {
           }), (0, a.jsx)(m.Button, {
             variant: "primary",
             text: "Open Reward Modal",
-            onClick: el
+            onClick: ei
           })]
         })]
       })]
@@ -526,7 +526,7 @@ function V() {
               H(D(Z({}, F), {
                 userStatus: B({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .25 * ei
+                  streamProgressSeconds: .25 * el
                 })
               }));
               break;
@@ -534,7 +534,7 @@ function V() {
               H(D(Z({}, F), {
                 userStatus: B({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .5 * ei
+                  streamProgressSeconds: .5 * el
                 })
               }));
               break;
@@ -542,7 +542,7 @@ function V() {
               H(D(Z({}, F), {
                 userStatus: B({
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: .75 * ei
+                  streamProgressSeconds: .75 * el
                 })
               }));
               break;
@@ -551,7 +551,7 @@ function V() {
                 userStatus: B({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: ei
+                  streamProgressSeconds: el
                 })
               }));
               break;
@@ -561,7 +561,7 @@ function V() {
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
-                  streamProgressSeconds: ei
+                  streamProgressSeconds: el
                 })
               }))
           }
@@ -622,7 +622,7 @@ function V() {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-sm/semibold",
           children: "Channel Call Header"
-        }), (null == (l = F.userStatus) ? true : Chunk512722.claimedAt) != null && (0, Chunk54381.jsx)(Chunk481060.Text, {
+        }), (null == (i = F.userStatus) ? true : Chunk512722.claimedAt) != null && (0, Chunk54381.jsx)(Chunk481060.Text, {
           color: "text-subtle",
           variant: "text-sm/normal",
           children: "The Quest Channel Call Header is hidden when the user has claimed the reward."

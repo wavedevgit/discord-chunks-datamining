@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => A
+  Z: () => P
 }), require("./415506.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -54,13 +54,14 @@ function f(e) {
 }
 let p = {},
   _ = {},
-  m = {};
+  m = {},
+  h = {};
 
-function h() {
+function g() {
   m = {}
 }
 
-function g(e) {
+function E(e) {
   var t;
   let {
     applicationId: n,
@@ -75,7 +76,7 @@ function g(e) {
   })
 }
 
-function E(e) {
+function b(e) {
   var t;
   let {
     skus: n,
@@ -98,7 +99,7 @@ function E(e) {
   })
 }
 
-function b(e) {
+function y(e) {
   var t;
   let {
     applicationId: n,
@@ -114,7 +115,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     guildId: t
   } = e, n = _[t];
@@ -123,7 +124,7 @@ function y(e) {
   }), _ = c({}, _)
 }
 
-function O(e) {
+function v(e) {
   let {
     guildId: t,
     storefront: n
@@ -135,7 +136,7 @@ function O(e) {
   }, _ = c({}, _)
 }
 
-function v(e) {
+function S(e) {
   let {
     guildId: t,
     storefront: n
@@ -151,7 +152,7 @@ function v(e) {
   }, _ = c({}, _)
 }
 
-function S(e) {
+function I(e) {
   let {
     guildId: t,
     eager: n
@@ -169,7 +170,7 @@ function S(e) {
   _ = c({}, _)
 }
 
-function I(e) {
+function T(e) {
   let {
     guildId: t,
     pageIndex: n,
@@ -181,13 +182,21 @@ function I(e) {
   }, p = c({}, p)
 }
 
-function T() {
+function C(e) {
+  let {
+    guildId: t,
+    announcement: n
+  } = e;
+  h[t] = n, h = c({}, h)
+}
+
+function A() {
   if (r === Chunk706454.default.locale) returnfalse;
   r = Chunk706454.default.locale, p = {}, _ = {}, m = {}
 }
-class C extends(i = Chunk442837.ZP.Store) {
+class N extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk706454.default), this.syncWith([Chunk706454.default], T), r = Chunk706454.default.locale
+    this.waitFor(Chunk706454.default), this.syncWith([Chunk706454.default], A), r = Chunk706454.default.locale
   }
   getStorefrontData(e) {
     return _[e]
@@ -199,16 +208,20 @@ class C extends(i = Chunk442837.ZP.Store) {
     var n;
     if (null != t && 0 !== t.length) return null == (n = m[e]) ? true : n[f(t)]
   }
+  getAnnouncement(e) {
+    return h[e]
+  }
 }
-l(C, "displayName", "SocialLayerStorefrontStore");
-let A = new C(Chunk570140.Z, {
-  LOGOUT: h,
-  SOCIAL_LAYER_STOREFRONT_LOAD: y,
-  SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS: O,
-  SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS: v,
-  SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE: S,
-  SET_SOCIAL_LAYER_STOREFRONT_STATE: I,
-  SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_SUCCESS: E,
-  SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_FAILURE: b,
-  SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_START: g
+l(N, "displayName", "SocialLayerStorefrontStore");
+let P = new N(Chunk570140.Z, {
+  LOGOUT: g,
+  SOCIAL_LAYER_STOREFRONT_LOAD: O,
+  SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS: v,
+  SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS: S,
+  SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE: I,
+  SET_SOCIAL_LAYER_STOREFRONT_STATE: T,
+  SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_SUCCESS: b,
+  SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_FAILURE: y,
+  SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_START: E,
+  SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT_FETCH_SUCCESS: C
 })

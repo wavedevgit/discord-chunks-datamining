@@ -17,6 +17,8 @@ function r(e) {
     location: t
   }), d = (0, i.e7)([o.Z], () => null != n ? o.Z.getStorefrontData(n) : true, [n]);
   return l.useEffect(() => {
-    null != n && r && (0, a.YL)(n, false)
+    null != n && r && (0, a.YL)(n, {
+      eager: false
+    })
   }, [n, d, r]), d
 }
