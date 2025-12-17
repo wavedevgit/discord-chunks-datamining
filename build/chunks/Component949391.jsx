@@ -1,7 +1,7 @@
 /** Chunk was on 78662 **/
-/** chunk id: 949391, original params: e,n,t (module,exports,require) **/
+/** chunk id: 949391, original params: n,e,t (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => E
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,38 +14,42 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk648441 = require("./648441.js");
 
-function p(e) {
-  var n;
+function E(n) {
+  var e;
   let {
     eulaId: t,
-    transitionState: p,
-    onClose: f
-  } = e, h = (0, i.e7)([d.Z], () => d.Z.getEULA(t));
-  a.useEffect(() => {
-    (0, l.N)(t)
+    transitionState: E,
+    onClose: g
+  } = n, m = (0, r.e7)([c.Z], () => c.Z.getEULA(t));
+  i.useEffect(() => {
+    (0, d.N)(t)
   }, [t]);
-  let b = null != (n = null == h ? true : h.name) ? n : u.intl.string(u.t.ZTNur7),
-    S = null != h ? (0, r.jsx)(c.Z, {
-      children: h.content,
-      className: E.markdown
-    }) : (0, r.jsx)(s.$jN, {
-      className: E.spinner
+  let f = null != (e = null == m ? true : m.name) ? e : u.intl.string(u.t.ZTNur7),
+    h = null != m ? (0, a.jsx)(o.Z, {
+      children: m.content,
+      className: p.markdown
+    }) : (0, a.jsx)(s.$jN, {
+      className: p.spinner
     });
-  return (0, r.jsxs)(s.Y0X, {
-    transitionState: p,
+  return (0, a.jsxs)(s.Y0X, {
+    "data-migration-pending": true,
+    transitionState: E,
     size: s.CgR.SMALL,
-    "aria-label": b,
+    "aria-label": f,
     parentComponent: "EULA",
-    children: [(0, r.jsxs)(s.xBx, {
-      justify: o.Z.Justify.BETWEEN,
-      children: [(0, r.jsx)(s.Heading, {
+    children: [(0, a.jsxs)(s.xBx, {
+      "data-migration-pending": true,
+      justify: l.Z.Justify.BETWEEN,
+      children: [(0, a.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
-        children: b
-      }), (0, r.jsx)(s.olH, {
-        onClick: f
+        children: f
+      }), (0, a.jsx)(s.olH, {
+        "data-migration-pending": true,
+        onClick: g
       })]
-    }), (0, r.jsx)(s.hzk, {
-      children: S
+    }), (0, a.jsx)(s.hzk, {
+      "data-migration-pending": true,
+      children: h
     })]
   })
 }

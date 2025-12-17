@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   u: () => o
-}), require("./804061.js"), require("./704826.js"), require("./35282.js");
+});
 var Chunk503461 = require("./503461.js"),
   Chunk190313 = require("./190313.js");
 
@@ -86,10 +86,6 @@ class s {
   }
   replaceChannel(e, t, n) {
     this.deleteChannel(e, t), this.putAll(e, t, n)
-  }
-  replaceAll(e, t, n) {
-    let r = n.map(n => l(e, t, n));
-    this.transaction.replaceAll(r)
   }
   deleteAll() {
     this.transaction.delete()

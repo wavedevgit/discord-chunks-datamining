@@ -107,12 +107,13 @@ function A(e) {
     applicationId: n,
     isGift: i = false,
     giftRecipient: a,
-    giftingOrigin: s
+    giftingOrigin: s,
+    additionalUserIds: u
   } = e, {
-    analyticsLocations: u
+    analyticsLocations: f
   } = C(e);
   return (0, r.jsx)(o.Gt, {
-    value: u,
+    value: f,
     children: (0, r.jsx)(c.PaymentContextProvider, {
       loadId: t,
       stepConfigs: T(i),
@@ -126,6 +127,7 @@ function A(e) {
           isGift: i,
           giftRecipient: a,
           giftingOrigin: s,
+          additionalUserIds: u,
           children: (0, r.jsx)(I, v({}, e))
         })
       })

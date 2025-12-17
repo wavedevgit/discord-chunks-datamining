@@ -87,7 +87,8 @@ function S(e) {
           showPrice: true,
           showIcons: false,
           giftingOrigin: y.Wt.SHOP_PAGE,
-          profileOwner: P
+          profileOwner: P,
+          additionalUserIds: null == P ? a : true
         })
       }, e.skuId))
     })]

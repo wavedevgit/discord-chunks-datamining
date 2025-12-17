@@ -56,35 +56,37 @@ function _(e, t) {
   let {
     isGift: u,
     giftRecipient: f,
-    giftingOrigin: _
+    giftingOrigin: _,
+    additionalUserIds: m
   } = t, {
-    analyticsLocations: m
-  } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, h = false, g = (0, i.Z)();
+    analyticsLocations: h
+  } = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {}, g = false, E = (0, i.Z)();
   (0, a.ZDy)(async () => {
     let {
       default: t
     } = await Promise.resolve().then(n.bind(n, 556266));
     return n => (0, r.jsx)(t, p(d({}, n), {
-      loadId: g,
+      loadId: E,
       applicationId: e.applicationId,
       skuId: e.id,
-      analyticsLocations: null != m ? m : [],
+      analyticsLocations: null != h ? h : [],
       isGift: u,
       giftRecipient: f,
+      additionalUserIds: m,
       giftingOrigin: _,
       onComplete: () => {
-        h = true
+        g = true
       }
     }))
   }, {
     onCloseCallback: () => {
-      h || l.default.track(c.rMx.PAYMENT_FLOW_CANCELED, {
-        load_id: g,
+      g || l.default.track(c.rMx.PAYMENT_FLOW_CANCELED, {
+        load_id: E,
         payment_type: c.Zuq[c.GZQ.ONE_TIME],
         is_gift: u,
         sku_id: e.id,
         application_id: e.applicationId,
-        location_stack: m,
+        location_stack: h,
         sku_product_line: e.productLine
       }), (0, o.fw)(), (0, s.p)()
     },
