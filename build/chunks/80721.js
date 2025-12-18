@@ -151,22 +151,25 @@ async function h(e, t, n) {
     }), e
   }
 }
-async function g(e, t) {
+async function g(e, t, n) {
   o.Z.dispatch({
-    type: "PREMIUM_GROUP_REMOVE_INVITE_START"
+    type: "PREMIUM_GROUP_REMOVE_INVITE_START",
+    subscriptionGroupMemberId: n
   });
   try {
-    let n = await a.tn.del({
+    let r = await a.tn.del({
       url: c.ANM.BILLING_SUBSCRIPTION_INVITE(e, t),
       rejectWithError: true
     });
     return o.Z.dispatch({
       type: "PREMIUM_GROUP_REMOVE_INVITE_SUCCESS",
-      subscriptionId: e
-    }), n
+      subscriptionId: e,
+      subscriptionGroupMemberId: n
+    }), r
   } catch (e) {
     return o.Z.dispatch({
-      type: "PREMIUM_GROUP_REMOVE_INVITE_FAILURE"
+      type: "PREMIUM_GROUP_REMOVE_INVITE_FAILURE",
+      subscriptionGroupMemberId: n
     }), null
   }
 }

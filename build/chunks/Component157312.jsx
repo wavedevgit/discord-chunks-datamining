@@ -1,7 +1,7 @@
 /** Chunk was on 72114 **/
 /** chunk id: 157312, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -11,12 +11,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk282793 = require("./282793.js"),
   Chunk353149 = require("./353149.js"),
   Chunk388032 = require("./388032.jsx");
-let f = t => {
+let b = t => {
   var {
     subscriptionId: e,
     invitedUser: r,
+    subscriptionGroupMemberId: b,
     onClose: f
-  } = t, b = function(t, e) {
+  } = t, p = function(t, e) {
     if (null == t) return {};
     var r, n, i = function(t, e) {
       if (null == t) return {};
@@ -30,9 +31,9 @@ let f = t => {
       for (n = 0; n < o.length; n++) r = o[n], !(e.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(t, r) && (i[r] = t[r])
     }
     return i
-  }(t, ["subscriptionId", "invitedUser", "onClose"]);
-  let [p, d] = (0, i.useState)(false), O = async () => {
-    d(true), await (0, a.if)(e, r.id), d(false), f()
+  }(t, ["subscriptionId", "invitedUser", "subscriptionGroupMemberId", "onClose"]);
+  let [d, m] = (0, i.useState)(false), O = async () => {
+    m(true), await (0, a.if)(e, r.id, b), m(false), f()
   };
   return (0, n.jsx)(o.Modal, function(t) {
     for (var e = 1; e < arguments.length; e++) {
@@ -63,7 +64,7 @@ let f = t => {
       text: s.intl.string(c.default["2blqtw"]),
       variant: "critical-primary",
       onClick: O,
-      loading: p
+      loading: d
     }]
-  }, b))
+  }, p))
 }

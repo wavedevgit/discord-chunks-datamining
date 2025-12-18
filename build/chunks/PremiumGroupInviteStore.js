@@ -2,7 +2,7 @@
 /** chunk id: 703995, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => L
 }), require("./388685.js");
 var r, Chunk275726 = require("./275726.js"),
   Chunk442837 = require("./442837.js"),
@@ -146,19 +146,51 @@ function A(e) {
 
 function N(e) {
   let {
-    message: t
+    subscriptionGroupMemberId: t
   } = e;
-  return R(t)
+  if (null == t) returnfalse;
+  let n = m.get(t);
+  if ((null == n ? true : n.invite) == null) returnfalse;
+  m.set(t, {
+    state: c.bZ.REMOVED,
+    invite: _(f({}, n.invite), {
+      removed_at: new Date().toISOString()
+    }),
+    errorStatus: null
+  })
 }
 
 function P(e) {
   let {
-    messages: t
+    subscriptionGroupMemberId: t
   } = e;
-  return t.map(e => R(e)).some(Boolean)
+  if (null == t) returnfalse;
+  let n = m.get(t);
+  if ((null == n ? true : n.invite) == null) returnfalse;
+  m.set(t, {
+    state: c.bZ.PENDING,
+    invite: _(f({}, n.invite), {
+      removed_at: null
+    }),
+    errorStatus: null
+  })
 }
 
 function R(e) {
+  let {
+    message: t
+  } = e;
+  return D(t)
+}
+
+function w(e) {
+  let {
+    messages: t
+  } = e;
+  return t.map(e => D(e)).some(Boolean)
+}
+
+function D(e) {
   if (e.type !== i.u.PREMIUM_GROUP_INVITE) returnfalse;
   let t = e.content;
   if (null == t || "" === t || !s.default.isProbablyAValidSnowflake(t)) returnfalse;
@@ -169,7 +201,7 @@ function R(e) {
     errorStatus: null
   }), o.Z.wait(() => (0, l.hH)(t).catch(u.VqG)), true)
 }
-class w extends(r = Chunk442837.ZP.Store) {
+class x extends(r = Chunk442837.ZP.Store) {
   getInvite(e) {
     var t;
     return null != (t = m.get(e)) ? t : null
@@ -193,8 +225,8 @@ class w extends(r = Chunk442837.ZP.Store) {
     return g
   }
 }
-d(w, "displayName", "PremiumGroupInviteStore");
-let D = new w(Chunk570140.Z, {
+d(x, "displayName", "PremiumGroupInviteStore");
+let L = new x(Chunk570140.Z, {
   PREMIUM_GROUP_INVITES_FETCH_START: b,
   PREMIUM_GROUP_INVITES_FETCH_SUCCESS: y,
   PREMIUM_GROUP_INVITES_FETCH_FAIL: O,
@@ -203,9 +235,11 @@ let D = new w(Chunk570140.Z, {
   PREMIUM_GROUP_INVITE_FETCH_FAIL: T,
   PREMIUM_GROUP_ACCEPT_INVITE_START: C,
   PREMIUM_GROUP_ACCEPT_INVITE_FAIL: A,
-  MESSAGE_CREATE: N,
-  LOCAL_MESSAGES_LOADED: P,
-  LOAD_MESSAGES_SUCCESS: P,
-  LOAD_MESSAGES_AROUND_SUCCESS: P,
+  PREMIUM_GROUP_REMOVE_INVITE_START: N,
+  PREMIUM_GROUP_REMOVE_INVITE_FAILURE: P,
+  MESSAGE_CREATE: R,
+  LOCAL_MESSAGES_LOADED: w,
+  LOAD_MESSAGES_SUCCESS: w,
+  LOAD_MESSAGES_AROUND_SUCCESS: w,
   LOGOUT: E
 })
