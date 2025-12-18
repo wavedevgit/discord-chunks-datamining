@@ -1,7 +1,7 @@
 /** Chunk was on 50614 **/
 /** chunk id: 17597, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => v
+  default: () => C
 }), require("./388685.js"), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,6 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk168107 = require("./168107.jsx"),
   Chunk480916 = require("./480916.js"),
   Chunk352138 = require("./352138.js"),
+  Chunk81643 = require("./81643.js"),
   Chunk629235 = require("./629235.js"),
   Chunk981631 = require("./981631.js"),
   Chunk800530 = require("./800530.js"),
@@ -26,77 +27,75 @@ var Chunk54381 = require("./54381.js"),
   Chunk39151 = require("./39151.js"),
   Chunk765896 = require("./765896.js");
 
-function O(t) {
+function v(t) {
   let {
     modalSessionId: e,
     entryPoint: n
   } = t;
   return (0, E.GE)() ? (0, i.jsx)(s.Text, {
     variant: "text-xs/medium",
-    children: m.intl.format(h.default.htWh1G, {
+    children: I.intl.format(p.default.htWh1G, {
       handleOnHelpUrlHook: () => {
-        R.Z.openUrl(p.sQ.LEARN_MORE_UU_APPEAL_LINK), (0, A.x3)(e, A.d_.EXPRESSIVE_PRIMARY, A.sU.LEARN_MORE)
+        R.Z.openUrl(m.sQ.LEARN_MORE_UU_APPEAL_LINK), (0, A.x3)(e, A.d_.EXPRESSIVE_PRIMARY, A.sU.LEARN_MORE)
       }
     })
   }) : n === A.cU.SAFETY_FLOWS ? (0, i.jsx)(s.Avr, {
     size: "sm",
     textVariant: "text-sm/medium",
-    text: m.intl.string(m.t["2jxGer"]),
+    text: I.intl.string(I.t["2jxGer"]),
     onClick: () => {
       (0, A.x3)(e, A.d_.EXPRESSIVE_PRIMARY, A.sU.LOG_OUT), (0, d.R)("age_verification_get_started_modal")
     }
   }) : null
 }
-let v = function(t) {
+let C = function(t) {
   let {
     transitionState: e,
     entryPoint: n,
     onClose: d,
-    onComplete: p,
-    dismissable: v,
-    classificationId: C
-  } = t, [M, P] = l.useState(o.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), U = l.useRef(M), [b, L] = (0, c.US)([M], true, true), V = l.useMemo(() => (0, r.Z)(), []), j = l.useRef(false), Z = (0, E.GE)();
+    onComplete: m,
+    dismissable: C,
+    classificationId: M
+  } = t, [P, U] = l.useState(o.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), b = l.useRef(P), [L, V] = (0, c.US)([P], true, true), j = l.useMemo(() => (0, r.Z)(), []), Z = l.useRef(false), D = (0, E.GE)();
   l.useEffect(() => {
-    U.current = b
-  }, [b]);
+    b.current = L
+  }, [L]);
   let {
-    loading: D,
-    ageVerificationMethods: G
-  } = (0, x.Z)({
+    loading: G,
+    ageVerificationMethods: y
+  } = (0, S.Z)({
     onClose: () => {
-      null == p || p(), d()
+      null == m || m(), d()
     },
     onMethodClick: () => {
-      P(o.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
+      U(o.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
     },
-    classificationId: C
+    classificationId: M
   });
   return l.useLayoutEffect(() => () => {
-    if (j.current) return;
-    let t = U.current;
-    null != t && (j.current = true, _.Z.maybeOpenAgeVerificationUserFeedback({
+    if (Z.current) return;
+    let t = b.current;
+    null != t && (Z.current = true, _.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: t
     }))
   }, []), l.useEffect(() => {
-    (0, A.lA)(V, A.d_.EXPRESSIVE_PRIMARY, n)
-  }, [V, n]), (0, i.jsx)(a.ExpressiveModal, {
+    (0, A.lA)(j, A.d_.EXPRESSIVE_PRIMARY, n)
+  }, [j, n]), (0, i.jsx)(a.ExpressiveModal, {
     transitionState: e,
     onClose: d,
     gradientColor: "blue",
-    dismissable: v,
+    dismissable: C,
     graphic: {
       type: "image",
-      src: T.Z
+      src: O.Z
     },
-    title: m.intl.string(m.t.JHNunj),
-    subtitle: Z ? m.intl.string(h.default["1/6wta"]) : m.intl.format(h.default.RpMIT0, {
-      handleOnHelpUrlHook: () => {
-        R.Z.openUrl(f.Z.getArticleURL(S.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, A.x3)(V, A.d_.EXPRESSIVE_PRIMARY, A.sU.LEARN_MORE)
-      }
-    }),
-    actionBarInput: (0, i.jsx)(O, {
-      modalSessionId: V,
+    title: (0, g.B7)(n),
+    subtitle: (0, g.s2)(n, () => {
+      R.Z.openUrl(f.Z.getArticleURL(h.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, A.x3)(j, A.d_.EXPRESSIVE_PRIMARY, A.sU.LEARN_MORE)
+    }, D),
+    actionBarInput: (0, i.jsx)(v, {
+      modalSessionId: j,
       entryPoint: n
     }),
     children: (0, i.jsxs)(s.Kqy, {
@@ -113,35 +112,35 @@ let v = function(t) {
           right: 12
         },
         align: "center",
-        className: I.dataAssurance,
+        className: T.dataAssurance,
         children: [(0, i.jsx)(s.d3s, {
           size: "lg",
           color: "currentColor"
         }), (0, i.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-feedback-info",
-          children: m.intl.string(h.default.ar3a3q)
+          children: I.intl.string(p.default.ar3a3q)
         })]
-      }), null == G || 0 === G.length ? (0, i.jsxs)(s.Kqy, {
+      }), null == y || 0 === y.length ? (0, i.jsxs)(s.Kqy, {
         direction: "vertical",
         align: "center",
         gap: 16,
         children: [(0, i.jsx)(s.Text, {
           variant: "text-xs/medium",
           color: "text-subtle",
-          children: m.intl.string(h.default.cR6336)
+          children: I.intl.string(p.default.cR6336)
         }), (0, i.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
-          text: m.intl.string(h.default.hDvmYP),
+          text: I.intl.string(p.default.hDvmYP),
           onClick: () => {
-            (0, g.Jh)()
+            (0, x.Jh)()
           }
         })]
       }) : (0, i.jsx)(s.Kqy, {
         direction: "vertical",
         gap: 8,
-        children: G.map(t => {
+        children: y.map(t => {
           let {
             title: e,
             description: n,
@@ -151,8 +150,8 @@ let v = function(t) {
             variant: "clickable",
             title: e,
             description: n,
-            buttonDisabled: D,
-            onButtonPress: () => l(V)
+            buttonDisabled: G,
+            onButtonPress: () => l(j)
           }, e)
         })
       })]
