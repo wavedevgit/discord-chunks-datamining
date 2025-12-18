@@ -504,7 +504,10 @@ function ev(e) {
                   iconClassName: eA ? eo.mutedIcon : true
                 }) : null != n ? n : null
               })(),
-              subtextClassName: eX ? eo.subtextNameplated : true,
+              subtextClassName: a()(eo.subtextContainer, {
+                [eo.subtextNameplated]: eX,
+                [eo.moreSpace]: eY
+              }),
               nameClassName: eo.username,
               name: (0, r.jsx)(y.Z, {
                 className: a()(eo.overflowTooltip, {

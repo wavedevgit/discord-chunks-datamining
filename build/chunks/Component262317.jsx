@@ -40,7 +40,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk932732 = require("./932732.js");
 
-function L(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -59,7 +59,7 @@ function L(e) {
   return e
 }
 
-function k(e, t) {
+function L(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -155,10 +155,10 @@ let H = (0, Chunk888651.$)(function(e) {
     eO(!ex)
   }, eD = (e, t) => {
     let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
-    null != t && n.has(t) && (eI && eZ(false), e_ && eP(false)), eL()
-  }, eL = () => {
+    null != t && n.has(t) && (eI && eZ(false), e_ && eP(false)), ek()
+  }, ek = () => {
     (en || eC || eM) && (null == eo || eo(f.id))
-  }, ek = e => {
+  }, eL = e => {
     e ? eE.current = setTimeout(() => {
       eS(true)
     }, 150 * !!ec) : clearTimeout(eE.current)
@@ -182,7 +182,7 @@ let H = (0, Chunk888651.$)(function(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("66165"), n.e("8982"), n.e("7717"), n.e("96253")]).then(n.bind(n, 757387));
-        return t => (0, i.jsx)(e, k(L({}, t), {
+        return t => (0, i.jsx)(e, L(k({}, t), {
           user: f,
           guildId: U.guild_id,
           channel: U,
@@ -194,11 +194,11 @@ let H = (0, Chunk888651.$)(function(e) {
         }))
       })
     },
-    eF = e => em ? (0, i.jsx)(E.$, k(L({}, e), {
+    eF = e => em ? (0, i.jsx)(E.$, L(k({}, e), {
       channel: U,
       setIsHangStatusInputFocused: eP,
       setIsEmojiPickerOpen: eN
-    })) : null != eb ? (0, i.jsx)(j.I, k(L({}, e), {
+    })) : null != eb ? (0, i.jsx)(j.I, L(k({}, e), {
       hangStatusActivity: eb,
       channel: U,
       userId: f.id
@@ -220,7 +220,7 @@ let H = (0, Chunk888651.$)(function(e) {
       onMouseEnter: ep ? true : () => {
         (en || eC || eM) && !ex && (null == ea || ea(f.id))
       },
-      onMouseLeave: ep ? true : eL,
+      onMouseLeave: ep ? true : ek,
       children: (0, i.jsx)(_.Z, {
         clickTrap: (null == f ? true : f.id) === (null == (t = N.default.getCurrentUser()) ? true : t.id) && ex,
         targetElementRef: ev,
@@ -275,7 +275,7 @@ let H = (0, Chunk888651.$)(function(e) {
             var r;
             return (0, i.jsx)(o.u, {
               text: null != (r = (0, y.Z)(eu)) ? r : R.intl.string(R.t.IyYqqY),
-              children: (0, i.jsx)(P.ZP, L({
+              children: (0, i.jsx)(P.ZP, k({
                 ref: ev
               }, n))
             })
@@ -289,11 +289,11 @@ let H = (0, Chunk888651.$)(function(e) {
             onRequestClose: eD,
             align: eC && ew && !em ? "center" : true,
             spacing: eC && ew ? 8 : 0,
-            children: () => (0, i.jsx)(P.ZP, k(L({}, n), {
+            children: () => (0, i.jsx)(P.ZP, L(k({}, n), {
               ref: ev,
               onMouseDown: e.onMouseDown,
               onKeyDown: e.onKeyDown,
-              handleHoverHangStatus: ek,
+              handleHoverHangStatus: eL,
               handleHoverIcons: eU,
               onAddHangStatusClicked: () => eZ(true)
             }))

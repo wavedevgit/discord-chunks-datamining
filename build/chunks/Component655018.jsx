@@ -39,7 +39,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk564546 = require("./564546.js"),
   Chunk314040 = require("./314040.js");
 
-function k(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -86,7 +86,7 @@ function V(e) {
     location: "HangStatusPicker"
   }), X = (0, x.V)(K), J = r.useRef(null), [Q, $] = r.useState(null != (n = null == W ? true : W.status) ? n : ""), [ee, et] = r.useState(null != (l = null == W ? true : W.emoji) ? l : null), [en, ei] = r.useState(false), er = (0, u.e7)([v.Z], () => v.Z.getCurrentHangStatus()), el = X[er], ea = q.length > 0, eo = null == Q || "" === Q.trim(), es = (0, j.Z)(V), ec = Q.trim().length > 0 && Q.trim() !== (null == W || null == (t = W.status) ? true : t.trim()) || null != ee && !s()(ee, null == W ? true : W.emoji), [eu, ed] = r.useState(false), ep = (0, u.e7)([v.Z], () => v.Z.getFavoritedStatuses().length >= v.o), ef = Q.length > 0 || null != ee, [eh, em] = (0, m.US)([d.z.HANG_STATUS_POPOVER_NUX]);
   r.useEffect(() => {
-    b.default.track(A.rMx.HANG_STATUS_PICKER_OPENED, U(k({}, (0, O.Z)(V.id)), {
+    b.default.track(A.rMx.HANG_STATUS_PICKER_OPENED, U(L({}, (0, O.Z)(V.id)), {
       num_favorites: q.length,
       num_recents: z.length
     }))
@@ -140,7 +140,7 @@ function V(e) {
     }, [es, ee, V.id]),
     ex = r.useCallback((e, t) => {
       let n = (0, E.Z)(t);
-      (!ep || e) && ((0, y.tg)(n ? t : t.status, n ? null : t.emoji), b.default.track(A.rMx.HANG_STATUS_FAVORITE_CLICKED, U(k({}, (0, O.Z)(V.id)), {
+      (!ep || e) && ((0, y.tg)(n ? t : t.status, n ? null : t.emoji), b.default.track(A.rMx.HANG_STATUS_FAVORITE_CLICKED, U(L({}, (0, O.Z)(V.id)), {
         favorited: !e
       })))
     }, [V.id, ep]),
@@ -198,7 +198,7 @@ function V(e) {
       shouldShow: eh === d.z.HANG_STATUS_POPOVER_NUX,
       graphic: {
         type: "image",
-        src: L.Z
+        src: k.Z
       },
       targetElementRef: J,
       onRequestClose: () => em(w.L.DISMISS)

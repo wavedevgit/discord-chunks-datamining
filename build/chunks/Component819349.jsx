@@ -63,11 +63,11 @@ function _(e) {
   });
   let w = (0, c.e7)([g.Z], () => g.Z.can(v.Plq.CREATE_INSTANT_INVITE, t), [t]),
     [M, R] = r.useState(false),
-    [D, L] = r.useState("unknown"),
-    k = r.useRef(null),
+    [D, k] = r.useState("unknown"),
+    L = r.useRef(null),
     {
       isHoveringOrFocusing: U
-    } = (0, C.Tu)(w ? l : k),
+    } = (0, C.Tu)(w ? l : L),
     [V, H] = r.useState(false),
     F = U || V,
     B = r.useCallback(function() {
@@ -98,7 +98,7 @@ function _(e) {
     }),
     W = r.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "unknown";
-      R(true), L(e)
+      R(true), k(e)
     }, []),
     z = r.useCallback(() => (null != I.current && clearTimeout(I.current), I.current = setTimeout(() => W("timeout"), 1e4), N(e => e + 1), () => {
       null != I.current && clearTimeout(I.current)

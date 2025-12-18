@@ -94,12 +94,12 @@ function H(e) {
       (null == v ? true : v.bot) && F === C.FetchState.NOT_FETCHED && s.Z.fetch()
     }, [null == v ? true : v.bot, F]), n.isSystemDM()) return (0, i.jsx)(T.Z, {
     channel: n,
-    children: L.intl.string(L.t.Rzvnig)
+    children: k.intl.string(k.t.Rzvnig)
   });
   if (y === R.d4z.DM) {
     let e;
     return null != v && null != M ? null != H && (e = (0, i.jsxs)("div", {
-      className: k.buttonContainer,
+      className: L.buttonContainer,
       children: [(0, i.jsx)(Z.W, {
         channel: n,
         user: v
@@ -122,7 +122,7 @@ function H(e) {
         variant: "heading-xl/medium",
         className: U.marginBottom20,
         children: _
-      }), L.intl.format(L.t["Qvg+6+"], {
+      }), k.intl.format(k.t["Qvg+6+"], {
         username: f
       }), (null == v ? true : v.isProvisional) && (0, i.jsx)(m.q, {
         userId: v.id
@@ -133,11 +133,11 @@ function H(e) {
     if (n.isManaged()) return (0, i.jsxs)(S.ZP, {
       channelId: n.id,
       children: [(0, i.jsx)(S.Ot, {
-        children: L.intl.format(L.t.I3R7Vn, {
+        children: k.intl.format(k.t.I3R7Vn, {
           channelName: f
         })
       }), (0, i.jsx)(S.jz, {
-        children: L.intl.string(L.t.M8Ao6I)
+        children: k.intl.string(k.t.M8Ao6I)
       })]
     });
     else if (n.hasFlag(D.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(P.Z, {
@@ -145,7 +145,7 @@ function H(e) {
   });
   else return (0, i.jsx)(T.Z, {
     channel: n,
-    children: L.intl.format(L.t.MFwcqO, {
+    children: k.intl.format(k.t.MFwcqO, {
       name: f
     })
   });
@@ -155,7 +155,7 @@ function H(e) {
   }) : (0, i.jsx)(S.ZP, {
     channelId: n.id,
     children: (0, i.jsx)(S.jz, {
-      children: L.intl.format(L.t.hPVEQG, {
+      children: k.intl.format(k.t.hPVEQG, {
         channelName: f
       })
     })

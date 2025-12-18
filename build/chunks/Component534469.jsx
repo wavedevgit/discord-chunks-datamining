@@ -188,7 +188,7 @@ function ei(e) {
   } = e, S = o.type === K.uaV.REPLY ? o.messageReference : true, _ = (0, c.JA)(null != (t = e.id) ? t : ""), {
     onFocus: I
   } = _, N = ee(_, ["onFocus"]), {
-    isFocused: k,
+    isFocused: L,
     handleFocus: V,
     handleBlur: H
   } = (0, M.bb)(I), {
@@ -204,11 +204,11 @@ function ei(e) {
     message: o,
     defaultValue: J,
     popouts: G
-  }), ec = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), eu = J || ec && k, ed = eu || es, ep = (0, u.e7)([j.Z], () => j.Z.isDeveloper), {
+  }), ec = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), eu = J || ec && L, ed = eu || es, ep = (0, u.e7)([j.Z], () => j.Z.isDeveloper), {
     content: ef,
     hasSpoilerEmbeds: eh,
     hasBailedAst: em
-  } = (0, L.Z)(o, {
+  } = (0, k.Z)(o, {
     hideSimpleEmbedContent: en && ei,
     isInteracting: ed,
     formatInline: false,
@@ -349,19 +349,19 @@ let er = Chunk473749.memo(function(e) {
     eM = (0, u.e7)([E.Z], () => x.hasFlag(K.iLy.HAS_THREAD) && E.Z.getChannel(_.default.castMessageIdAsChannelId(x.id))),
     eR = x.isFirstMessageInForumPost(J),
     eD = (0, m.A)((null != (n = x.editedTimestamp) ? n : x.timestamp).valueOf()),
-    eL = (0, u.e7)([j.Z], () => j.Z.isDeveloper),
+    ek = (0, u.e7)([j.Z], () => j.Z.isDeveloper),
     {
-      content: ek,
+      content: eL,
       hasSpoilerEmbeds: eU,
       hasBailedAst: eV
-    } = (0, L.Z)(x, {
+    } = (0, k.Z)(x, {
       hideSimpleEmbedContent: ep && ef,
       isInteracting: ew,
       formatInline: false,
       allowList: eR || eD,
       allowHeading: eR || eD,
       allowLinks: true,
-      allowDevLinks: eL,
+      allowDevLinks: ek,
       previewLinkTarget: true
     }),
     eH = (0, R.Z)(I, et, eN),
@@ -380,14 +380,14 @@ let er = Chunk473749.memo(function(e) {
     ez = (0, w.iG)(x, el),
     eq = (0, w.Gx)(x),
     eK = (0, u.e7)([f.Z], () => f.Z.getMessage(I), [I]),
-    eY = (0, k.Z)({
+    eY = (0, L.Z)({
       message: x,
       channel: J
     }),
     eX = r.useRef(window),
     eJ = null != eK,
     eQ = r.useMemo(() => Object.values(em).some(e => e), [em]);
-  l = x.type === K.uaV.CUSTOM_GIFT ? "" : !eT && eJ ? (0, V.Z)(e, ek) : (0, B.Z)(e, ek, eT);
+  l = x.type === K.uaV.CUSTOM_GIFT ? "" : !eT && eJ ? (0, V.Z)(e, eL) : (0, B.Z)(e, eL, eT);
   let e$ = x.id === el,
     e0 = (0, i.jsx)(d.tEY, {
       offset: {

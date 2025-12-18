@@ -166,7 +166,7 @@ class q extends Chunk473749.PureComponent {
         shouldShowLurkerModeSuccessPopout: false
       }),
       renderPopout: this.renderSuccessPopout,
-      children: e => (0, i.jsx)(k.Z, z(W({}, S), {
+      children: e => (0, i.jsx)(L.Z, z(W({}, S), {
         children: (0, i.jsxs)("div", {
           ref: this.textAreaContainerRef,
           children: [this.renderMemberVerificationSuccessModal(), m ? (0, i.jsx)(u.yRy, {
@@ -333,7 +333,7 @@ function K(e) {
   }), b = !!(0, v.Dc)(s), y = (0, o.e7)([E.Z], () => E.Z.shouldShowPopout(a)), O = (0, o.e7)([M.Z], () => M.Z.can(U.Plq.SEND_MESSAGES, r)), S = (0, o.e7)([x.Z], () => x.Z.getRequest(a)), {
     showLinkedLobbyApplicationLoadingIndicator: _,
     requiredLinkedLobbyApplication: P
-  } = (0, L.Z)(r.linkedLobby), I = z(W({}, c), {
+  } = (0, k.Z)(r.linkedLobby), I = z(W({}, c), {
     guild: s,
     isLurking: p,
     isFollowable: u,

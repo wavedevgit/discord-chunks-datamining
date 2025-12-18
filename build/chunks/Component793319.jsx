@@ -139,7 +139,7 @@ function eP(e) {
   } = e, {
     parentAnalyticsLocation: c,
     analyticsLocations: f
-  } = (0, x.ZP)(), h = (0, k.bp)(), m = (0, u.Wu)([en.Z], () => en.Z.getAllActiveStreams()), g = m.find(e => e.ownerId === n.id), b = r.useRef(null), y = r.useRef(null), C = t.getGuildId(), v = r.useCallback(() => {
+  } = (0, x.ZP)(), h = (0, L.bp)(), m = (0, u.Wu)([en.Z], () => en.Z.getAllActiveStreams()), g = m.find(e => e.ownerId === n.id), b = r.useRef(null), y = r.useRef(null), C = t.getGuildId(), v = r.useCallback(() => {
     if (null == l || l(), !a) return (0, eg.Z)();
     (0, eb.Z)(C, t.id, f)
   }, [C, t.id, a, l, f]), O = (0, V.B4)(), [E, j] = r.useState(false), S = () => {
@@ -383,7 +383,7 @@ function eT(e) {
     cameraUnavailable: n,
     hasCameraPermission: l,
     currentUser: a
-  } = e, o = (0, k.bp)(), {
+  } = e, o = (0, L.bp)(), {
     parentAnalyticsLocation: s
   } = (0, x.ZP)(), {
     reachedLimit: c,
@@ -470,7 +470,7 @@ let eA = function(e) {
     showRefreshedAudioContextMenu: ei
   } = (0, U.e)({
     location: v.Z.VOICE_CONTROL_TRAY
-  }), ed = (0, B.Z)(n), eh = r.useRef(null), eg = r.useRef(null), eb = (0, k.bp)(), ey = en ? e => {
+  }), ed = (0, B.Z)(n), eh = r.useRef(null), eg = r.useRef(null), eb = (0, L.bp)(), ey = en ? e => {
     (0, h.jW)(e, () => Promise.resolve(() => (0, i.jsx)(E.default, {
       onClose: h.Zy,
       renderInputDevices: true,
@@ -490,7 +490,7 @@ let eA = function(e) {
       section: eC.jXE.VOICE_CONTROL_TRAY,
       children: [(0, i.jsx)("div", {
         className: eO.eventPromptsContainer,
-        children: (0, i.jsx)(L.Z, {
+        children: (0, i.jsx)(k.Z, {
           channelId: n.id
         })
       }), (0, i.jsxs)("div", {

@@ -69,7 +69,7 @@ let I = {
     r.useEffect(() => {
       null != N && T(true)
     }, [N]);
-    let [M, R] = r.useState(.65), [D, L] = r.useState(.65), [k, U] = r.useState(.65), [V, H] = r.useState({
+    let [M, R] = r.useState(.65), [D, k] = r.useState(.65), [L, U] = r.useState(.65), [V, H] = r.useState({
       x: 0,
       y: 0
     }), [F, B] = r.useState(false), [G, W] = r.useState(0), [z, q] = r.useState({
@@ -112,14 +112,14 @@ let I = {
         c = r.y * n,
         u = i.width / 2 - s,
         d = i.height / 2 - c;
-      L(n), H({
+      k(n), H({
         x: u,
         y: d
       })
     }, [et, M]);
     r.useEffect(() => {
-      en(k)
-    }, [k, en]);
+      en(L)
+    }, [L, en]);
     let ei = r.useCallback(e => {
       var t;
       let n = null == (t = et.current) ? true : t.getBoundingClientRect();

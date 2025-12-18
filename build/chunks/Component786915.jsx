@@ -77,14 +77,14 @@ function C(e) {
     M = null == C ? true : C.getGuildId(),
     R = (0, a.e7)([p.Z], () => null != M ? p.Z.getGuild(M) : null, [M]),
     D = (0, a.e7)([f.Z], () => null != t ? f.Z.getApplicationActivity(t) : true),
-    L = null == t || j ? o.ejJ : o.gQj,
-    k = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
+    k = null == t || j ? o.ejJ : o.gQj,
+    L = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
   return null != D && S ? (0, i.jsx)(m.Z, {
     onClick: () => {
       null != w && (0, u.v)(w, u.d.INVITE), s.h7(D, false, A)
     },
-    iconComponent: L,
-    label: k,
+    iconComponent: k,
+    label: L,
     iconClassName: _,
     look: P,
     size: I,
@@ -144,8 +144,8 @@ function C(e) {
           guildScheduledEvent: E
         })
     },
-    iconComponent: L,
-    label: k,
+    iconComponent: k,
+    label: L,
     iconClassName: _,
     look: P,
     size: I,

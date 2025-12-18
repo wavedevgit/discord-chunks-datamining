@@ -141,7 +141,7 @@ let z = Chunk473749.memo(function(e) {
     }),
     eI = (0, f.o)(),
     eZ = null != (l = null == el ? true : el.length) ? l : 0,
-    eT = (0, k.Z)({
+    eT = (0, L.Z)({
       canAttachFiles: eb,
       canStartThreads: ex || eO,
       useSlate: eE,
@@ -188,7 +188,7 @@ let z = Chunk473749.memo(function(e) {
               lastClipsSession: er
             }));
           case "attachMenu":
-            return (0, i.jsx)(L.Z, W(G({}, e), {
+            return (0, i.jsx)(k.Z, W(G({}, e), {
               onClose: () => eh(null),
               options: eT,
               channel: q,

@@ -2,7 +2,7 @@
 /** chunk id: 910611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   TS: () => H,
-  ud: () => L,
+  ud: () => k,
   v0: () => U
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -94,7 +94,7 @@ function D(e) {
   }, a)
 }
 
-function L(e) {
+function k(e) {
   let {
     channel: t,
     channelName: n,
@@ -255,7 +255,7 @@ function L(e) {
       return null
   }
 }
-let k = e => {
+let L = e => {
   var t, n, l;
   let {
     channel: a
@@ -277,7 +277,7 @@ function U(e, t) {
   switch (e.type) {
     case A.d4z.DM:
       return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(k, {
+        children: [(0, i.jsx)(L, {
           channel: e
         }), (0, i.jsx)(P.Z, {
           channel: e

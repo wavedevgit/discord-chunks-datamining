@@ -10,7 +10,7 @@ require("./473749.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk921801 = require("./921801.js"),
+  Chunk921801 = require("./921801.jsx"),
   Chunk3957 = require("./3957.js"),
   Chunk279743 = require("./279743.jsx"),
   Chunk7822 = require("./7822.js"),

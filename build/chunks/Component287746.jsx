@@ -480,7 +480,7 @@ class e7 extends Chunk473749.PureComponent {
         });
         null != n && (t = null != n.content && "" !== n.content ? n.content : t, C = true === n.tts)
       }
-      return (0, eL.v)({
+      return (0, ek.v)({
         openWarningPopout: e => this.setState({
           contentWarningProps: e
         }),
@@ -542,7 +542,7 @@ class e7 extends Chunk473749.PureComponent {
         };
         if (null != n && n.length > 0) {
           let e = (0, eU.KZ)(n);
-          if ((0, eU.Bf)(e, null == u ? true : u.id)) return (0, ek.G)(p, e), {
+          if ((0, eU.Bf)(e, null == u ? true : u.id)) return (0, eL.G)(p, e), {
             shouldClear: false,
             shouldRefocus: false
           };
@@ -598,7 +598,7 @@ class e7 extends Chunk473749.PureComponent {
       var t, n;
       let i = null == (t = this.editorRef) ? true : t.getSlateEditor();
       null != i && (V.Q.select(i, []), i.insertText(e), null == (n = this.editorRef) || n.focus())
-    }), eQ(this, "renderAttachButton", (e, t) => (0, i.jsx)(k.Z, {
+    }), eQ(this, "renderAttachButton", (e, t) => (0, i.jsx)(L.Z, {
       className: t,
       channel: this.props.channel,
       draftType: ej.d.ChannelMessage,
@@ -606,7 +606,7 @@ class e7 extends Chunk473749.PureComponent {
       setValue: this.handleSetValue,
       canOnlyUseTextCommands: e,
       chatInputType: this.props.chatInputType
-    })), eQ(this, "renderApplicationCommandIcon", (e, t, n) => (0, i.jsx)(L.Z, {
+    })), eQ(this, "renderApplicationCommandIcon", (e, t, n) => (0, i.jsx)(k.Z, {
       className: n,
       command: e,
       section: t,
@@ -704,12 +704,12 @@ class e8 extends Chunk473749.PureComponent {
       }),
       D = Chunk10718 ? Chunk104919 : Chunk752305,
       {
-        enabled: L
+        enabled: k
       } = Chunk163612.Z.getCurrentConfig({
         guildId: null == Chunk555573 ? true : Chunk555573.guild_id,
         location: "ChannelChat"
       }),
-      k = Chunk516887 && null != Chunk827498 && null != Chunk555573 && null != Chunk555573.guild_id;
+      L = Chunk516887 && null != Chunk827498 && null != Chunk555573 && null != Chunk555573.guild_id;
     return (0, Chunk54381.jsx)(Chunk410575.Z, {
       page: (0, Chunk934415.mE)(this.props.channel),
       children: (0, Chunk54381.jsx)(Chunk549006.sW, {

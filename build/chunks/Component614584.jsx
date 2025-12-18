@@ -69,7 +69,7 @@ let S = Chunk473749.memo(function(e) {
     showReplySpine: A
   } = e, w = S.state === f.Y.LOADED ? S.message : true, M = (0, b.Uj)(w), R = s.d.useExperiment({
     location: "repliedMessage"
-  }).enabled, D = (0, u.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), L = r.useMemo(() => {
+  }).enabled, D = (0, u.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), k = r.useMemo(() => {
     if (null == w) return null;
     let e = (0, o.Z)(w);
     if (e.type === x.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(m.Z.getSystemMessageUserJoin(e.id), {
@@ -114,7 +114,7 @@ let S = Chunk473749.memo(function(e) {
     }
     return null
   }, [w, M, _, D, R]), {
-    isReplyAuthorBlocked: k,
+    isReplyAuthorBlocked: L,
     isReplyAuthorIgnored: U
   } = (0, l.cj)([h.Z], () => ({
     isReplyAuthorBlocked: null != w && h.Z.isBlockedForMessage(w),
@@ -131,9 +131,9 @@ let S = Chunk473749.memo(function(e) {
     channel: _,
     baseAuthor: W,
     referencedMessage: S,
-    content: L,
+    content: k,
     compact: P,
-    isReplyAuthorBlocked: k,
+    isReplyAuthorBlocked: L,
     isReplyAuthorIgnored: U,
     showAvatarPopout: Z,
     showUsernamePopout: I,

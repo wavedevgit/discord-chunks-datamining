@@ -42,7 +42,8 @@ function _(e) {
     })), [p, d]);
   return {
     state: r.useMemo(() => null == d ? "loading" : d.state, [d]),
-    recommendations: _
+    recommendations: _,
+    skuIdToUserIdsReasons: r.useMemo(() => null == d || "success" !== d.state ? {} : d.data.skusToRecommendationReasons, [d])
   }
 }
 
@@ -78,7 +79,8 @@ function m(e) {
     })), [p]);
   return {
     state: r.useMemo(() => null == u || "loading" === u.state || "partially-fetched" === u.state || 0 === n ? "loading" : "error" === u.state ? "error" : "success", [u, n]),
-    recommendations: _
+    recommendations: _,
+    skuIdToUserIdsReasons: {}
   }
 }
 
@@ -107,7 +109,8 @@ function h(e) {
   }, [s]);
   let {
     state: O,
-    recommendations: v
+    recommendations: v,
+    skuIdToUserIdsReasons: S
   } = _({
     applicationId: o,
     userIds: b,
@@ -117,6 +120,7 @@ function h(e) {
   });
   return {
     state: r.useMemo(() => f && 0 !== n ? h ? O : g : "success", [f, n, h, O, g]),
-    recommendations: r.useMemo(() => f && 0 !== n ? h ? v : E : [], [f, n, h, v, E])
+    recommendations: r.useMemo(() => f && 0 !== n ? h ? v : E : [], [f, n, h, v, E]),
+    skuIdToUserIdsReasons: S
   }
 }
