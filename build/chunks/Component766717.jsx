@@ -25,30 +25,31 @@ let p = Chunk473749.forwardRef(function(e, t) {
     isSingleCard: E = false,
     wishlistId: b,
     wishlistItem: y,
-    cardSize: O = d.H.MEDIUM
+    cardSize: O = d.H.MEDIUM,
+    itemSource: v
   } = e, {
-    skuId: v,
-    skuProductLine: S
+    skuId: S,
+    skuProductLine: I
   } = y, {
-    trackUserProfileWishlistAction: I
-  } = (0, u.KZ)(), T = m ? f.cardPreview : f.cardPreviewNoScale, C = E ? f.cardSingle : f.card, A = null != g && g > 0, N = (0, r.jsxs)(l.P3F, {
+    trackUserProfileWishlistAction: T
+  } = (0, u.KZ)(), C = m ? f.cardPreview : f.cardPreviewNoScale, A = E ? f.cardSingle : f.card, N = null != g && g > 0, P = (0, r.jsxs)(l.P3F, {
     onClick: () => {
-      p(), I({
-        action: A ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
-        skuId: A ? null : v,
+      p(), T({
+        action: N ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
+        skuId: N ? null : S,
         wishlistId: b,
-        productLines: new Set([S])
+        productLines: new Set([I])
       })
     },
-    className: o()(C, {
+    className: o()(A, {
       [f.cardSmall]: O === d.H.SMALL
     }),
     "aria-label": null != (i = _.title) ? i : "",
     innerRef: t,
     children: [(0, r.jsx)("div", {
-      className: T,
+      className: C,
       children: h()
-    }), A && (0, r.jsx)("div", {
+    }), N && (0, r.jsx)("div", {
       className: f.moreOverlay,
       children: (0, r.jsxs)(l.Text, {
         variant: "text-xs/medium",
@@ -56,17 +57,29 @@ let p = Chunk473749.forwardRef(function(e, t) {
         children: ["+", g]
       })
     })]
-  });
-  return null != _.title && null == _.body && null == _.renderIcon ? (0, r.jsx)(s.u, {
-    text: _.title,
-    position: "top",
-    children: N
-  }) : (0, r.jsx)(s.i_, {
-    asContainer: true,
-    asset: null == (n = _.renderIcon) ? true : n.call(_, y),
-    assetSize: c.EU,
-    title: _.title,
-    body: null != (a = _.body) ? a : "",
-    children: N
+  }), R = !N && null != v;
+  return (0, r.jsxs)("div", {
+    className: o()({
+      [f.wrapperContainer]: R
+    }),
+    children: [R && (0, r.jsx)("div", {
+      className: f.contextContainer,
+      children: v === c.lr.POPULAR ? (0, r.jsx)(l.YqE, {
+        className: o()(f.contextIcon, f.fireIcon),
+        size: "xxs",
+        color: "currentColor"
+      }) : (0, r.jsx)(l.h_8, {
+        className: o()(f.contextIcon, f.heartIcon),
+        size: "xxs",
+        color: "currentColor"
+      })
+    }), (0, r.jsx)(s.i_, {
+      asContainer: true,
+      asset: null == (n = _.renderIcon) ? true : n.call(_, y),
+      assetSize: c.EU,
+      title: _.title,
+      body: null != (a = _.body) ? a : "",
+      children: P
+    })]
   })
 })

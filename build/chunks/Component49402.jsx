@@ -83,27 +83,29 @@ function h(e, t, n) {
       paddingFix: v = true,
       style: S,
       gap: I,
-      experimental_useStack: T
-    } = u, C = _(u, ["children", "className", "dir", "orientation", "overflow", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack"]);
+      experimental_useStack: T,
+      disableFocusRingScope: C = false
+    } = u, A = _(u, ["children", "className", "dir", "orientation", "overflow", "fade", "customTheme", "paddingFix", "style", "gap", "experimental_useStack", "disableFocusRingScope"]);
     let {
-      scrollerRef: A,
-      getScrollerState: N
-    } = (0, c.Ke)(), P = (0, c.t2)(A, E);
+      scrollerRef: N,
+      getScrollerState: P
+    } = (0, c.Ke)(), R = (0, c.t2)(N, E);
     i.useImperativeHandle(f, () => d({
-      getScrollerNode: () => A.current,
-      getScrollerState: N
-    }, (0, c.Ue)(A, N, P, E)), [A, N, E, P]);
-    let R = (0, c.tT)({
-      paddingFix: v,
-      orientation: E,
-      dir: g,
-      className: h,
-      scrollerRef: A,
-      specs: a
-    });
+      getScrollerNode: () => N.current,
+      getScrollerState: P
+    }, (0, c.Ue)(N, P, R, E)), [N, P, E, R]);
+    let w = C ? i.Fragment : s.Jc,
+      D = (0, c.tT)({
+        paddingFix: v,
+        orientation: E,
+        dir: g,
+        className: h,
+        scrollerRef: N,
+        specs: a
+      });
     return T ? (0, r.jsx)(l.K, p(d({
       gap: I,
-      ref: A,
+      ref: N,
       className: o()(h, {
         [e]: true,
         [t]: y,
@@ -111,13 +113,13 @@ function h(e, t, n) {
       }),
       style: (0, c.uT)(S, E, b),
       dir: g
-    }, C), {
-      children: (0, r.jsxs)(s.Jc, {
-        containerRef: A,
-        children: [m, R]
+    }, A), {
+      children: (0, r.jsxs)(w, {
+        containerRef: N,
+        children: [m, D]
       })
     })) : (0, r.jsx)("div", p(d({
-      ref: A,
+      ref: N,
       className: o()(h, {
         [e]: true,
         [t]: y,
@@ -125,10 +127,10 @@ function h(e, t, n) {
       }),
       style: (0, c.uT)(S, E, b),
       dir: g
-    }, C), {
-      children: (0, r.jsxs)(s.Jc, {
-        containerRef: A,
-        children: [m, R]
+    }, A), {
+      children: (0, r.jsxs)(w, {
+        containerRef: N,
+        children: [m, D]
       })
     }))
   })

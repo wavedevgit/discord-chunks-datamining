@@ -99,41 +99,34 @@ function h(e) {
   } = e, {
     displayItems: o,
     defaultWishlistId: s,
-    wishlist: l,
-    hasMoreItems: c,
-    totalWishlistItemCount: u,
-    wishlistItemCountToBeDisplayed: f,
-    fetchState: _
+    wishlist: l
   } = m({
     user: t,
     numItems: n,
     source: i,
     location: a
   }), {
-    displayedWishlistItems: h,
-    title: g
+    displayedWishlistItems: c,
+    title: u
   } = r.useMemo(() => {
     let e = null == l ? true : l.items.filter(e => true !== e.isOwned);
     return null == e || 0 === e.length ? {
       displayedWishlistItems: null,
       title: null
     } : e.length > 1 && e.length < n && o.length > e.length ? {
-      displayedWishlistItems: o.map(e => e.item),
+      displayedWishlistItems: o,
       title: p.intl.string(p.t.BCi1gT)
     } : {
-      displayedWishlistItems: e,
+      displayedWishlistItems: e.map(e => ({
+        item: e,
+        source: d.lr.WISHLIST
+      })),
       title: p.intl.string(p.t["7lZ31J"])
     }
   }, [o, l, n]);
   return {
-    displayItems: o,
-    hasMoreItems: c,
-    totalWishlistItemCount: u,
-    wishlistItemCountToBeDisplayed: f,
-    fetchState: _,
     defaultWishlistId: s,
-    wishlist: l,
-    displayedWishlistItems: h,
-    title: g
+    displayedWishlistItems: c,
+    title: u
   }
 }

@@ -137,6 +137,7 @@ function v(e) {
       ref: O,
       className: _.body,
       onScroll: T,
+      disableFocusRingScope: true,
       children: (0, r.jsx)("main", {
         ref: S,
         className: o()(_.bodyInner, {
