@@ -87,7 +87,7 @@ function h(e) {
   let S = null != t ? t : null != f || null != g || (0, o.G)(O) || null != b ? "md" : "sm";
   return (0, r.jsxs)(i.I, p(d({}, v), {
     size: S,
-    children: [(0, r.jsx)(l.x, {
+    children: [(0, r.jsx)(l.xB, {
       title: n,
       subtitle: u
     }), (0, r.jsx)(c.Y, {

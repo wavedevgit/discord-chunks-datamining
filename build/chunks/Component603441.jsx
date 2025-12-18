@@ -83,14 +83,12 @@ function _(e) {
   return (0, r.jsxs)(i.I, d(c({}, E), {
     size: t,
     paddingSize: "lg",
-    children: [(0, r.jsx)(s.x, {
+    children: [(0, r.jsx)(s.iM, {
       gradientColor: n,
       graphic: l,
       badge: u,
       title: p,
-      titleTextVariant: "heading-xl/semibold",
-      subtitle: _,
-      alignCenter: true
+      subtitle: _
     }), (0, r.jsx)(o.f, {
       children: g
     }), (0, r.jsx)(a.G, {

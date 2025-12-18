@@ -1,7 +1,7 @@
 /** Chunk was on 57486 **/
 /** chunk id: 87026, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => B
+  default: () => K
 }), require("./539854.js"), require("./953529.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,10 +25,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk135899 = require("./135899.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk23512 = require("./23512.js");
+  Chunk23512 = require("./23512.js"),
+  Chunk44841 = require("./44841.js");
 
-function C() {
-  return (C = Object.assign || function(t) {
+function N() {
+  return (N = Object.assign || function(t) {
     for (var e = 1; e < arguments.length; e++) {
       var n = arguments[e];
       for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (t[i] = n[i])
@@ -37,7 +38,7 @@ function C() {
   }).apply(this, arguments)
 }
 
-function N(t) {
+function P(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = null != arguments[e] ? arguments[e] : {},
       i = Object.keys(n);
@@ -56,7 +57,7 @@ function N(t) {
   return t
 }
 
-function P(t, e) {
+function w(t, e) {
   return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
     var n = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
@@ -69,7 +70,7 @@ function P(t, e) {
   }), t
 }
 
-function w(t) {
+function L(t) {
   let {
     guild: e,
     verificationLevelMet: n,
@@ -83,17 +84,17 @@ function w(t) {
     })
   }, [e.id]), (0, i.jsxs)(a.Kqy, {
     gap: 12,
-    children: [!n && (0, i.jsx)(A, {
+    children: [!n && (0, i.jsx)(M, {
       title: E.intl.string(E.t["rkA56+"]),
       description: E.intl.string(E.t.fHiGA0)
-    }), !s && (0, i.jsx)(A, {
+    }), !s && (0, i.jsx)(M, {
       title: E.intl.string(E.t.COu4bk),
       description: E.intl.string(E.t.b0MaDV)
     })]
   })
 }
 
-function L(t) {
+function A(t) {
   let {
     guild: e,
     rulesChannelId: n,
@@ -124,7 +125,7 @@ function L(t) {
     } = t;
     e.type === y.d4z.GUILD_TEXT && g.push({
       value: e.id,
-      label: (0, c.F6)(e, S.default, b.Z, true)
+      label: (0, c.F6)(e, m.default, x.Z, true)
     })
   }), (0, i.jsxs)(a.Kqy, {
     gap: 16,
@@ -148,7 +149,7 @@ function L(t) {
   })
 }
 
-function A(t) {
+function M(t) {
   let {
     title: e,
     description: n
@@ -175,7 +176,7 @@ function A(t) {
   })
 }
 
-function M(t) {
+function T(t) {
   let {
     enabledPermissions: e,
     onGetPermisisonName: n
@@ -203,7 +204,7 @@ function M(t) {
   })
 }
 
-function T(t) {
+function F(t) {
   let {
     disabledPermissions: e,
     onGetPermisisonName: n
@@ -231,7 +232,7 @@ function T(t) {
   })
 }
 
-function F(t) {
+function _(t) {
   let {
     permissions: e
   } = t, n = t => {
@@ -251,17 +252,17 @@ function F(t) {
   } = e;
   return (0, i.jsxs)("div", {
     className: v.table,
-    children: [0 !== l.length ? (0, i.jsx)(M, {
+    children: [0 !== l.length ? (0, i.jsx)(T, {
       enabledPermissions: l,
       onGetPermisisonName: n
-    }) : null, (0, i.jsx)(T, {
+    }) : null, (0, i.jsx)(F, {
       disabledPermissions: s,
       onGetPermisisonName: n
     })]
   })
 }
 
-function _(t) {
+function G(t) {
   let {
     guild: e,
     defaultNotificationSettingsMet: n,
@@ -287,20 +288,20 @@ function _(t) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(a.Kqy, {
       gap: 12,
-      children: [!n && (0, i.jsx)(A, {
+      children: [!n && (0, i.jsx)(M, {
         title: E.intl.string(E.t.uPYswy),
         description: E.intl.string(E.t.pf6ptp)
-      }), !s && (0, i.jsx)(A, {
+      }), !s && (0, i.jsx)(M, {
         title: E.intl.format(E.t.IYQeOA, {}),
         description: E.intl.string(E.t["+Iyaif"])
       })]
-    }), !s && (0, i.jsx)(F, {
+    }), !s && (0, i.jsx)(_, {
       permissions: r
     })]
   })
 }
 
-function G(t) {
+function B(t) {
   let {
     guild: e,
     policyAccepted: n,
@@ -326,108 +327,123 @@ function G(t) {
   })
 }
 
-function B(t) {
-  var e = C({}, function(t) {
+function K(t) {
+  var e = N({}, function(t) {
     if (null == t) throw TypeError("Cannot destructure " + t);
     return t
   }(t));
   l.useEffect(() => {
-    m.default.track(y.rMx.OPEN_MODAL, {
+    S.default.track(y.rMx.OPEN_MODAL, {
       type: j.tA
     })
   }, []);
   let {
     guild: n
-  } = (0, r.cj)([d.Z], () => d.Z.getProps()), [o, c] = l.useState("intro"), [g] = l.useState(() => null == n ? true : n.verificationLevel), [f] = l.useState(() => null == n ? true : n.explicitContentFilter), b = null != g && g > y.sFg.NONE, S = f === y.lxg.ALL_MEMBERS, O = !(b && S), [v, A] = l.useState(j.b4), [M, T] = l.useState(j.b4), [F] = l.useState(() => !j.$X.some(t => h.oz(t, n))), [B] = l.useState(() => null == n ? true : n.defaultMessageNotifications), K = B === y.bL.ONLY_MENTIONS, D = !K || !F, R = (0, r.e7)([x.Z], () => null != n ? x.Z.getEveryoneRole(n) : true), [Y, U] = l.useState(false);
+  } = (0, r.cj)([d.Z], () => d.Z.getProps()), [o, c] = l.useState("intro"), [g] = l.useState(() => null == n ? true : n.verificationLevel), [f] = l.useState(() => null == n ? true : n.explicitContentFilter), x = null != g && g > y.sFg.NONE, m = f === y.lxg.ALL_MEMBERS, O = !(x && m), [v, M] = l.useState(j.b4), [T, F] = l.useState(j.b4), [_] = l.useState(() => !j.$X.some(t => h.oz(t, n))), [K] = l.useState(() => null == n ? true : n.defaultMessageNotifications), D = K === y.bL.ONLY_MENTIONS, R = !D || !_, Y = (0, r.e7)([b.Z], () => null != n ? b.Z.getEveryoneRole(n) : true), [U, k] = l.useState(false);
   if (null == n) return null;
-  let k = async () => {
-    if (null == R || !Y) return;
-    let t = F ? null : s.Od(R.permissions, j.mu);
-    if (null != t && t !== R.permissions) {
-      let e = P(N({}, R), {
+  let Z = async () => {
+    if (null == Y || !U) return;
+    let t = _ ? null : s.Od(Y.permissions, j.mu);
+    if (null != t && t !== Y.permissions) {
+      let e = w(P({}, Y), {
         permissions: t
       });
       await (0, p.Gf)(n.id, [e], true, true, true, {
         throwErr: true
       })
     }
-    let e = N({
+    let e = P({
       features: new Set([...n.features, y.GuildFeatures.COMMUNITY]),
       rulesChannelId: v,
-      publicUpdatesChannelId: M
-    }, !b && {
+      publicUpdatesChannelId: T
+    }, !x && {
       verificationLevel: y.sFg.LOW
-    }, !S && {
+    }, !m && {
       explicitContentFilter: y.lxg.ALL_MEMBERS
-    }, !K && {
+    }, !D && {
       defaultMessageNotifications: y.bL.ONLY_MENTIONS
     });
     u.Z.updateGuild(e), await u.Z.saveGuild(n.id, e, {
       throwErr: true
     })
-  }, Z = async () => {
-    m.default.track(y.rMx.MODAL_DISMISSED, {
+  }, H = async () => {
+    S.default.track(y.rMx.MODAL_DISMISSED, {
       type: j.tA
     }), await e.onClose()
-  }, H = [{
+  }, q = [{
     stepKey: j.IO.INTRO,
-    title: E.intl.string(E.t.ElKTeb),
-    subtitle: E.intl.string(E.t["CwC/ll"]),
+    modalProps: {
+      title: E.intl.string(E.t.ElKTeb),
+      subtitle: E.intl.string(E.t["CwC/ll"]),
+      graphic: {
+        src: C.Z,
+        type: "image"
+      },
+      gradientColor: "blue"
+    },
     nextButtonProps: {
       text: E.intl.string(E.t.LhlgY9)
     }
   }, {
     stepKey: j.IO.SAFETY_CHECK,
-    title: E.intl.string(E.t.QrjLYl),
-    subtitle: E.intl.string(E.t.i1STwu),
-    body: (0, i.jsx)(w, {
+    modalProps: {
+      title: E.intl.string(E.t.QrjLYl),
+      subtitle: E.intl.string(E.t.i1STwu)
+    },
+    body: (0, i.jsx)(L, {
       guild: n,
-      verificationLevelMet: b,
-      contentFilterMet: S
+      verificationLevelMet: x,
+      contentFilterMet: m
     }),
     nextButtonProps: {
       text: E.intl.string(E.t.JFfins)
     }
   }, {
     stepKey: j.IO.BASICS,
-    title: E.intl.string(E.t.YtXpEh),
-    subtitle: E.intl.string(E.t["J/fYR8"]),
-    body: (0, i.jsx)(L, {
+    modalProps: {
+      title: E.intl.string(E.t.YtXpEh),
+      subtitle: E.intl.string(E.t["J/fYR8"])
+    },
+    body: (0, i.jsx)(A, {
       guild: n,
       rulesChannelId: v,
-      publicUpdatesChannelId: M,
-      onRulesChannelChange: A,
-      onPublicUpdatesChannelChange: T
+      publicUpdatesChannelId: T,
+      onRulesChannelChange: M,
+      onPublicUpdatesChannelChange: F
     })
   }, {
     stepKey: j.IO.FINISH,
-    title: E.intl.string(E.t.EzGuSr),
-    body: (0, i.jsx)(_, {
+    modalProps: {
+      title: E.intl.string(E.t.EzGuSr)
+    },
+    body: (0, i.jsx)(G, {
       guild: n,
-      defaultNotificationSettingsMet: K,
-      everyonePermissionsMet: F
+      defaultNotificationSettingsMet: D,
+      everyonePermissionsMet: _
     }),
     nextButtonProps: {
       text: E.intl.string(E.t.JFfins)
     }
   }, {
     stepKey: j.IO.RULES,
-    title: E.intl.string(E.t["Pj/s/a"]),
+    modalProps: {
+      title: E.intl.string(E.t["Pj/s/a"])
+    },
     nextButtonProps: {
       text: E.intl.string(E.t.XGl4ba)
     },
-    body: (0, i.jsx)(G, {
+    body: (0, i.jsx)(B, {
       guild: n,
-      policyAccepted: Y,
-      onPolicyAcceptedChange: U
+      policyAccepted: U,
+      onPolicyAcceptedChange: k
     }),
-    nextEnabled: Y
-  }].filter(t => (t.stepKey !== j.IO.SAFETY_CHECK || !!O) && (t.stepKey !== j.IO.FINISH || !!D)), q = H.slice(1).map(t => t.stepKey);
-  return (0, i.jsx)(a.dGG, P(N({}, e), {
-    steps: H,
-    numberedSteps: q,
+    nextEnabled: U
+  }].filter(t => (t.stepKey !== j.IO.SAFETY_CHECK || !!O) && (t.stepKey !== j.IO.FINISH || !!R)), X = q.slice(1).map(t => t.stepKey);
+  return (0, i.jsx)(a.dGG, w(P({}, e), {
+    steps: q,
+    numberedSteps: X,
     currentStepKey: o,
-    onClose: Z,
+    onClose: H,
     onStepChange: (t, e) => {
       (0, I.BF)({
         fromStep: e,
@@ -435,6 +451,6 @@ function B(t) {
         guildId: n.id
       }), c(t)
     },
-    onComplete: k
+    onComplete: Z
   }))
 }

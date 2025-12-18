@@ -127,28 +127,34 @@ function b(e) {
     },
     U = T.hideBackButton || N ? true : (0, r.jsx)(a.A, m(p({}, j, T.backButtonProps), {
       onClick: x
-    }));
+    })),
+    G = T.modalProps,
+    Z = "graphic" in G ? G : null;
   return (0, r.jsx)(E.Provider, {
     value: L,
     children: (0, r.jsxs)(s.I, m(p({}, v), {
-      children: [(0, r.jsx)(u.x, {
-        title: T.title,
-        subtitle: T.subtitle,
+      paddingSize: null != Z ? "lg" : "sm",
+      children: [null != Z ? (0, r.jsx)(u.iM, p({}, Z)) : (0, r.jsx)(u.xB, {
+        title: G.title,
+        subtitle: G.subtitle,
         stepNumber: (null == b ? true : b.includes(g)) ? b.indexOf(g) + 1 : true,
         stepCount: null == b ? true : b.length
-      }), (0, r.jsx)(d.Y, {
-        message: null == (t = T.notice) ? true : t.message,
-        type: null == (n = T.notice) ? true : n.type
-      }), _.map(e => null != e.body || null != e.input || null != e.listProps ? (0, r.jsx)("div", {
-        style: {
-          display: e.stepKey === g ? true : "none"
-        },
-        children: (0, r.jsx)(c.f, {
-          controls: e.input,
-          listProps: e.listProps,
-          children: e.body
-        })
-      }, e.stepKey) : true), (0, r.jsx)(l.G, {
+      }), "notice" in G && (0, r.jsx)(d.Y, {
+        message: null == (t = G.notice) ? true : t.message,
+        type: null == (n = G.notice) ? true : n.type
+      }), _.map(e => {
+        let t = "graphic" in e.modalProps ? null : e.modalProps;
+        return (null != e.body || (null == t ? true : t.input) != null || (null == t ? true : t.listProps) != null) && (0, r.jsx)("div", {
+          style: {
+            display: e.stepKey === g ? true : "none"
+          },
+          children: (0, r.jsx)(c.f, {
+            controls: null == t ? true : t.input,
+            listProps: null == t ? true : t.listProps,
+            children: e.body
+          })
+        }, e.stepKey)
+      }), (0, r.jsx)(l.G, {
         leading: U,
         actionsFullWidth: N,
         actions: [...N ? [k] : [], p({}, M, T.nextButtonProps)]
