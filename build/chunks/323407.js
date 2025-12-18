@@ -11,7 +11,7 @@ var Chunk230367 = require("./230367.js"),
 class s extends Chunk495852.C {
   create(e) {
     let t = {
-      bodyKey: ""
+      body: ""
     };
     return globalThis.Object.defineProperty(t, a.C, {
       enumerable: false,
@@ -23,7 +23,7 @@ class s extends Chunk495852.C {
       o = e.pos + t;
     for (; e.pos < o;) {
       let [t, i] = e.tag();
-      if (1 === t) a.bodyKey = e.string();
+      if (1 === t) a.body = e.string();
       else {
         let o = n.readUnknownField;
         if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -34,14 +34,14 @@ class s extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    "" !== e.bodyKey && t.tag(1, r.TD.LengthDelimited).string(e.bodyKey);
+    "" !== e.body && t.tag(1, r.TD.LengthDelimited).string(e.body);
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
   constructor() {
     super("discord_protos.premium_marketing.v1.GiftReminderNagbar", [{
       no: 1,
-      name: "body_key",
+      name: "body",
       kind: "scalar",
       T: 9
     }])

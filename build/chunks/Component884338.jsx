@@ -174,7 +174,11 @@ class R extends(r = Chunk473749.PureComponent) {
     }
   }
   renderIcon() {
-    return this.props.renderIcon ? (0, Chunk54381.jsx)(Chunk481060.gj8, {
+    let {
+      renderLeadingIcon: e,
+      renderIcon: t
+    } = this.props;
+    return exports ? null != module ? module(Chunk608908.icon) : (0, Chunk54381.jsx)(Chunk481060.gj8, {
       size: "md",
       color: "currentColor",
       colorClass: Chunk608908.__invalid_foreground,

@@ -13,11 +13,11 @@ class l extends Chunk495852.C {
   create(e) {
     let t = {
       assetUrl: "",
-      headerKey: "",
-      bodyKey: "",
+      header: "",
+      body: "",
       backgroundAssetUrl: "",
       textColor: "",
-      additionalTermsKey: ""
+      additionalTerms: ""
     };
     return globalThis.Object.defineProperty(t, a.C, {
       enumerable: false,
@@ -34,10 +34,10 @@ class l extends Chunk495852.C {
           a.assetUrl = e.string();
           break;
         case 2:
-          a.headerKey = e.string();
+          a.header = e.string();
           break;
         case 3:
-          a.bodyKey = e.string();
+          a.body = e.string();
           break;
         case 4:
           a.backgroundAssetUrl = e.string();
@@ -49,7 +49,7 @@ class l extends Chunk495852.C {
           a.textColor = e.string();
           break;
         case 7:
-          a.additionalTermsKey = e.string();
+          a.additionalTerms = e.string();
           break;
         default:
           let o = n.readUnknownField;
@@ -61,7 +61,7 @@ class l extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    "" !== e.assetUrl && t.tag(1, r.TD.LengthDelimited).string(e.assetUrl), "" !== e.headerKey && t.tag(2, r.TD.LengthDelimited).string(e.headerKey), "" !== e.bodyKey && t.tag(3, r.TD.LengthDelimited).string(e.bodyKey), "" !== e.backgroundAssetUrl && t.tag(4, r.TD.LengthDelimited).string(e.backgroundAssetUrl), e.gradient && s.p.internalBinaryWrite(e.gradient, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), "" !== e.textColor && t.tag(6, r.TD.LengthDelimited).string(e.textColor), "" !== e.additionalTermsKey && t.tag(7, r.TD.LengthDelimited).string(e.additionalTermsKey);
+    "" !== e.assetUrl && t.tag(1, r.TD.LengthDelimited).string(e.assetUrl), "" !== e.header && t.tag(2, r.TD.LengthDelimited).string(e.header), "" !== e.body && t.tag(3, r.TD.LengthDelimited).string(e.body), "" !== e.backgroundAssetUrl && t.tag(4, r.TD.LengthDelimited).string(e.backgroundAssetUrl), e.gradient && s.p.internalBinaryWrite(e.gradient, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), "" !== e.textColor && t.tag(6, r.TD.LengthDelimited).string(e.textColor), "" !== e.additionalTerms && t.tag(7, r.TD.LengthDelimited).string(e.additionalTerms);
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -73,12 +73,12 @@ class l extends Chunk495852.C {
       T: 9
     }, {
       no: 2,
-      name: "header_key",
+      name: "header",
       kind: "scalar",
       T: 9
     }, {
       no: 3,
-      name: "body_key",
+      name: "body",
       kind: "scalar",
       T: 9
     }, {
@@ -98,7 +98,7 @@ class l extends Chunk495852.C {
       T: 9
     }, {
       no: 7,
-      name: "additional_terms_key",
+      name: "additional_terms",
       kind: "scalar",
       T: 9
     }])

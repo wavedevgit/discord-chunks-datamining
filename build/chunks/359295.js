@@ -11,8 +11,8 @@ var Chunk230367 = require("./230367.js"),
 class s extends Chunk495852.C {
   create(e) {
     let t = {
-      headerKey: "",
-      bodyKey: "",
+      header: "",
+      body: "",
       assetUrl: ""
     };
     return globalThis.Object.defineProperty(t, a.C, {
@@ -27,10 +27,10 @@ class s extends Chunk495852.C {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          a.headerKey = e.string();
+          a.header = e.string();
           break;
         case 2:
-          a.bodyKey = e.string();
+          a.body = e.string();
           break;
         case 3:
           a.assetUrl = e.string();
@@ -45,19 +45,19 @@ class s extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    "" !== e.headerKey && t.tag(1, r.TD.LengthDelimited).string(e.headerKey), "" !== e.bodyKey && t.tag(2, r.TD.LengthDelimited).string(e.bodyKey), "" !== e.assetUrl && t.tag(3, r.TD.LengthDelimited).string(e.assetUrl);
+    "" !== e.header && t.tag(1, r.TD.LengthDelimited).string(e.header), "" !== e.body && t.tag(2, r.TD.LengthDelimited).string(e.body), "" !== e.assetUrl && t.tag(3, r.TD.LengthDelimited).string(e.assetUrl);
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
   constructor() {
     super("discord_protos.premium_marketing.v1.GiftReminderCoachmark", [{
       no: 1,
-      name: "header_key",
+      name: "header",
       kind: "scalar",
       T: 9
     }, {
       no: 2,
-      name: "body_key",
+      name: "body",
       kind: "scalar",
       T: 9
     }, {

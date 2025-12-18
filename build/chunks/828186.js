@@ -13,8 +13,8 @@ class l extends Chunk495852.C {
   create(e) {
     let t = {
       assetUrl: "",
-      desktopBodyKey: "",
-      mobileBodyKey: "",
+      desktopBody: "",
+      mobileBody: "",
       backgroundAssetUrl: ""
     };
     return globalThis.Object.defineProperty(t, a.C, {
@@ -32,10 +32,10 @@ class l extends Chunk495852.C {
           a.assetUrl = e.string();
           break;
         case 2:
-          a.desktopBodyKey = e.string();
+          a.desktopBody = e.string();
           break;
         case 3:
-          a.mobileBodyKey = e.string();
+          a.mobileBody = e.string();
           break;
         case 4:
           a.gradient = s.p.internalBinaryRead(e, e.uint32(), n, a.gradient);
@@ -53,7 +53,7 @@ class l extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    "" !== e.assetUrl && t.tag(1, r.TD.LengthDelimited).string(e.assetUrl), "" !== e.desktopBodyKey && t.tag(2, r.TD.LengthDelimited).string(e.desktopBodyKey), "" !== e.mobileBodyKey && t.tag(3, r.TD.LengthDelimited).string(e.mobileBodyKey), e.gradient && s.p.internalBinaryWrite(e.gradient, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), "" !== e.backgroundAssetUrl && t.tag(5, r.TD.LengthDelimited).string(e.backgroundAssetUrl);
+    "" !== e.assetUrl && t.tag(1, r.TD.LengthDelimited).string(e.assetUrl), "" !== e.desktopBody && t.tag(2, r.TD.LengthDelimited).string(e.desktopBody), "" !== e.mobileBody && t.tag(3, r.TD.LengthDelimited).string(e.mobileBody), e.gradient && s.p.internalBinaryWrite(e.gradient, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), "" !== e.backgroundAssetUrl && t.tag(5, r.TD.LengthDelimited).string(e.backgroundAssetUrl);
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -65,12 +65,12 @@ class l extends Chunk495852.C {
       T: 9
     }, {
       no: 2,
-      name: "desktop_body_key",
+      name: "desktop_body",
       kind: "scalar",
       T: 9
     }, {
       no: 3,
-      name: "mobile_body_key",
+      name: "mobile_body",
       kind: "scalar",
       T: 9
     }, {
