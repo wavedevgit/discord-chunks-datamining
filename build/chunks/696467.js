@@ -72,7 +72,7 @@ let P = (t, e) => {
           }
         })
       } else {
-        let n = (0, T.gl)();
+        let n = (0, S.gl)();
         t ? n.delete(e) : n.add(e), d.zA.updateSetting(Array.from(n)), o.default.track(C.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
           action: A.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
           ingress: O.f4.USER_SETTINGS_PRIVACY_SAFETY,

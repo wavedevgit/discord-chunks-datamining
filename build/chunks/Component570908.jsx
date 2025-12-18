@@ -15,38 +15,41 @@ let l = Chunk473749.forwardRef((e, t) => {
     highlighted: i = false,
     avatar: a,
     decorators: l,
-    name: c,
-    subText: u,
-    avatarClassName: d,
-    innerClassName: f,
-    nameClassName: p,
-    subtextClassName: _,
-    withDisplayNameStyles: m = false,
-    fullWidth: h = false
+    rightDecorators: c,
+    name: u,
+    subText: d,
+    avatarClassName: f,
+    innerClassName: p,
+    nameClassName: _,
+    subtextClassName: m,
+    withDisplayNameStyles: h = false
   } = e;
   return (0, r.jsxs)("div", {
     ref: t,
-    className: o()(s.layout, f, {
+    className: o()(s.layout, p, {
       [s.muted]: n,
       [s.highlighted]: i,
-      [s.fullWidth]: h
+      [s.fullWidth]: null != c
     }),
     children: [(0, r.jsx)("div", {
-      className: o()(s.avatar, d),
+      className: o()(s.avatar, f),
       children: a
     }), (0, r.jsxs)("div", {
       className: o()(s.content, {
-        [s.withDisplayNameStyles]: m
+        [s.withDisplayNameStyles]: h
       }),
       children: [(0, r.jsxs)("div", {
         className: s.nameAndDecorators,
-        children: [(0, r.jsx)("div", {
-          className: o()(s.name, p),
-          children: c
-        }), l]
-      }), null != u ? (0, r.jsx)("div", {
-        className: o()(s.subText, _),
-        children: u
+        children: [(0, r.jsxs)("div", {
+          className: s.leftName,
+          children: [(0, r.jsx)("div", {
+            className: o()(s.name, _),
+            children: u
+          }), l]
+        }), c]
+      }), null != d ? (0, r.jsx)("div", {
+        className: o()(s.subText, m),
+        children: d
       }) : null]
     })]
   })

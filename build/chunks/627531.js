@@ -26,8 +26,8 @@ let g = (0, Chunk509613.qs)(Chunk313789.n.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVIT
     let e = a.xu.getState().selectedGuildId,
       n = (0, s._o)();
     t ? n.delete(e) : n.add(e), u.SE.updateSetting([...n]), l.default.track(c.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-      action: S.Y.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
-      ingress: T.f4.USER_SETTINGS_PRIVACY_SAFETY,
+      action: T.Y.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
+      ingress: S.f4.USER_SETTINGS_PRIVACY_SAFETY,
       guild_id: e
     })
   },

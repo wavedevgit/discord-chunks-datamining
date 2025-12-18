@@ -10,7 +10,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk246946 = require("./246946.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
-let S = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
+let T = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["yR/d2T"]),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.RiIiPw),
     useValue: () => (0, Chunk442837.e7)([Chunk246946.Z], () => {
@@ -23,7 +23,7 @@ let S = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
       hidePersonalInformation: t
     })
   }),
-  T = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_INVITE_LINKS, {
+  S = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_INVITE_LINKS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.uWBOri),
     useValue: () => (0, Chunk442837.e7)([Chunk246946.Z], () => {
       let {
@@ -79,5 +79,5 @@ let S = (0, Chunk509613.qs)(Chunk313789.n.STREAMER_MODE_HIDE_PERSONAL_INFORMATIO
   g = (0, Chunk509613.Uc)(Chunk313789.n.STREAMER_MODE_OPTIONS_LIST, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.UtW8R6),
     variant: "separators",
-    buildLayout: () => [S, T, c, E, d]
+    buildLayout: () => [T, S, c, E, d]
   })

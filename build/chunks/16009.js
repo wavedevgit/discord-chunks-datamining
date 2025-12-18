@@ -25,7 +25,7 @@ let c = (0, Chunk509613.qs)(Chunk313789.n.VOICE_PUSH_TO_TALK_LATCHING_SETTING, {
     })
   },
   setValue: function(t) {
-    l.Z.setMode(S.pM.PUSH_TO_TALK, {
+    l.Z.setMode(T.pM.PUSH_TO_TALK, {
       pttLatchingEnabled: t
     })
   },

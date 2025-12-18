@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 788391, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  S: () => S
+  S: () => T
 });
 var Chunk857595 = require("./857595.js"),
   Chunk607070 = require("./607070.js"),
@@ -10,7 +10,7 @@ var Chunk857595 = require("./857595.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let o = t => "".concat(t.toFixed(0), "px"),
-  S = (0, Chunk509613.UO)(Chunk313789.n.APPEARANCE_FONT_SCALING, {
+  T = (0, Chunk509613.UO)(Chunk313789.n.APPEARANCE_FONT_SCALING, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.qPOqoK),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.XrtbPo),
     markers: Chunk981631.yqN.FONT_SIZES,

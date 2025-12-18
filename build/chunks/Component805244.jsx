@@ -59,22 +59,23 @@ function E(e, t) {
 function b(e) {
   let {
     backupCodes: t,
-    currentUser: n
-  } = e, m = i.useCallback(e => {
+    hasTOTPEnabled: n,
+    currentUser: m
+  } = e, g = i.useCallback(e => {
     (0, a.h7j)(t => (0, r.jsx)(c.Z, E(h({}, t), {
       password: e
     })), {
       stackingBehavior: "stack"
     })
-  }, []), g = i.useCallback(() => {
+  }, []), b = i.useCallback(() => {
     (0, a.h7j)(e => (0, r.jsx)(d.default, E(h({}, e), {
       handleSubmit: e => o.Z.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
-        m(e)
+        g(e)
       }),
       title: _.intl.string(_.t.PsQmzU),
       actionText: _.intl.string(_.t.ajkYcF)
     })))
-  }, [m]), b = i.useCallback(() => {
+  }, [g]), y = i.useCallback(() => {
     let e = t.map(e => {
         let {
           consumed: t,
@@ -82,12 +83,12 @@ function b(e) {
         } = e;
         return "* ".concat(n.substr(0, 4), "-").concat(n.substr(4), " ").concat(t ? "(used)" : "")
       }).join("\r\n"),
-      r = _.intl.formatToPlainString(_.t["uYWwh/"], {
-        email: n.email
+      n = _.intl.formatToPlainString(_.t["uYWwh/"], {
+        email: m.email
       });
-    return "".concat(r, "\r\n\r\n").concat(e)
-  }, [t, n.email]), y = i.useMemo(() => t.length > 0 ? (0, r.jsx)(l.Z, {
-    fileContents: b,
+    return "".concat(n, "\r\n\r\n").concat(e)
+  }, [t, m.email]), O = i.useMemo(() => t.length > 0 ? (0, r.jsx)(l.Z, {
+    fileContents: y,
     contentType: "text/plain",
     fileName: "discord_backup_codes.txt",
     children: (0, r.jsx)(a.Button, {
@@ -101,9 +102,9 @@ function b(e) {
       variant: "primary",
       size: "sm",
       text: _.intl.string(_.t.xZEzbu),
-      onClick: g
+      onClick: b
     })
-  }), [t.length, b, g]), O = i.useCallback(() => {
+  }), [t.length, y, b]), v = i.useCallback(() => {
     s.Z.show({
       title: _.intl.string(_.t["D+aE7g"]),
       body: _.intl.string(_.t.EA4ZEk),
@@ -116,15 +117,15 @@ function b(e) {
     description: _.intl.string(_.t.bQwxib),
     children: (0, r.jsxs)(a.ButtonGroup, {
       size: "sm",
-      children: [y, (0, r.jsx)(u.F, {
+      children: [O, n && (0, r.jsx)(u.F, {
         setting: p.s6.ACCOUNT_REMOVE_2FA,
         children: (0, r.jsx)(a.Button, {
           variant: "critical-secondary",
           size: "sm",
           text: _.intl.string(_.t["D+aE7g"]),
-          onClick: O
+          onClick: v
         })
-      }), (0, r.jsx)(u.F, {
+      }), !n && (0, r.jsx)(u.F, {
         setting: p.s6.ACCOUNT_ENABLE_2FA,
         children: (0, r.jsx)(a.Button, {
           variant: "primary",

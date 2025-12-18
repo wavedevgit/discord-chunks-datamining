@@ -24,8 +24,8 @@ let d = Chunk473749.forwardRef(function(e, t) {
     innerClassName: y,
     className: b,
     redGlow: v,
-    orangeGlow: h,
-    tooltipClassName: O,
+    orangeGlow: O,
+    tooltipClassName: h,
     onMouseEnter: x,
     onMouseLeave: j,
     "aria-label": P,
@@ -46,7 +46,7 @@ let d = Chunk473749.forwardRef(function(e, t) {
   }) : p;
   return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
-    tooltipClassName: O,
+    tooltipClassName: h,
     text: n,
     "aria-label": P,
     color: E,
@@ -58,7 +58,7 @@ let d = Chunk473749.forwardRef(function(e, t) {
       var n, s, {
           onClick: p,
           onMouseEnter: g,
-          onMouseLeave: O
+          onMouseLeave: h
         } = e,
         P = function(e, t) {
           if (null == e) return {};
@@ -103,7 +103,7 @@ let d = Chunk473749.forwardRef(function(e, t) {
         wrapperClassName: a()(c.button, b),
         className: a()(c.button, b, {
           [c.redGlow]: v,
-          [c.orangeGlow]: h,
+          [c.orangeGlow]: O,
           [c.disabled]: f,
           [c.enabled]: !f,
           [c.plated]: w,
@@ -117,7 +117,7 @@ let d = Chunk473749.forwardRef(function(e, t) {
           null == g || g(), null == x || x()
         },
         onMouseLeave: () => {
-          null == O || O(), null == j || j()
+          null == h || h(), null == j || j()
         },
         onContextMenu: l,
         role: N,

@@ -3,7 +3,7 @@
 require.d(exports, {
   Qj: () => eb,
   RS: () => ev,
-  ZP: () => eh,
+  ZP: () => eO,
   bU: () => ef
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -191,8 +191,8 @@ let ed = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
       role: g,
       "aria-posinset": y,
       "aria-setsize": b,
-      listItemRef: h
-    } = e, O = ec(e, ["route", "selected", "icon", "iconClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
+      listItemRef: O
+    } = e, h = ec(e, ["route", "selected", "icon", "iconClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
     return (0, r.jsx)(k.Z, {
       className: a()(eo.channel, {
         [eo.fullWidth]: f.tq
@@ -204,7 +204,7 @@ let ed = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
       }, em),
       "aria-posinset": y,
       "aria-setsize": b,
-      ref: h,
+      ref: O,
       children: (0, r.jsx)(v.vjx, {
         as: "div",
         selected: n,
@@ -217,7 +217,7 @@ let ed = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
             state: d
           },
           className: eo.link
-        }, O), {
+        }, h), {
           children: [(0, r.jsx)(C.Z, {
             muted: false,
             avatar: (0, r.jsx)(i, {
@@ -249,14 +249,14 @@ function ev(e) {
     ref: ee,
     "aria-posinset": en,
     "aria-setsize": ei
-  } = e, [eb, ev] = i.useState(false), [eh, eO] = i.useState(false), [ex, ej] = i.useState(false), eP = i.useRef(null), eS = i.useRef(null), eN = null != ee ? ee : eS, {
+  } = e, [eb, ev] = i.useState(false), [eO, eh] = i.useState(false), [ex, ej] = i.useState(false), eP = i.useRef(null), eS = i.useRef(null), eN = null != ee ? ee : eS, {
     avatarSrc: eE,
     avatarDecorationSrc: eC,
     eventHandlers: eT
   } = (0, q.Z)({
     userId: null == s ? true : s.id,
     size: v.EFr.SIZE_32,
-    animateOnHover: !(l || eb || eh || ex)
+    animateOnHover: !(l || eb || eO || ex)
   }), eZ = t.isMultiUserDM(), eI = t.isSystemDM(), ew = !eZ && !eI && t.type === el.d4z.DM, ek = ew && (null == s ? true : s.primaryGuild) != null, eM = (0, g.e7)([et.ZP], () => et.ZP.isChannelMuted(t.getGuildId(), t.id)), {
     ignored: eD,
     blocked: e_
@@ -278,24 +278,24 @@ function ev(e) {
     autoTrackExposure: true
   }), {
     showMessagePreviews: eY,
-    prioritizeOverStatus: eW
+    prioritizeOverStatus: eK
   } = F.U.useConfig({
     location: "PrivateChannel"
-  }), eK = (0, g.e7)([$.Z], () => $.Z.hidePersonalInformation), eq = (0, W.l)({
+  }), eW = (0, g.e7)([$.Z], () => $.Z.hidePersonalInformation), eq = (0, K.l)({
     timestamp: er.default.extractTimestamp(null != eG ? eG : t.id)
   }), eV = i.useRef(null), eX = null != V && (l || eb || ex), eJ = () => {
     ev(true)
   }, eQ = () => {
     ev(false)
   }, e$ = () => {
-    eO(true)
+    eh(true)
   }, e0 = () => {
-    eO(false)
+    eh(false)
   }, e1 = function(e) {
     let n = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    null != e && (e.preventDefault(), e.stopPropagation()), h.Z.closePrivateChannel(t.id, l, n)
+    null != e && (e.preventDefault(), e.stopPropagation()), O.Z.closePrivateChannel(t.id, l, n)
   }, e5 = () => {
-    h.Z.preload(el.ME, t.id)
+    O.Z.preload(el.ME, t.id)
   }, e4 = e => {
     e.stopPropagation()
   }, e3 = e => {
@@ -307,7 +307,7 @@ function ev(e) {
     let i = "contextmenu" === e.type,
       a = ez && !i,
       o = i ? d.ImpressionNames.DM_LIST_RIGHT_CLICK_MENU_SHOWN : d.ImpressionNames.DM_LIST_KEBAB_MENU_SHOWN;
-    ej(true), t.isMultiUserDM() ? (0, O.jW)(e, async () => {
+    ej(true), t.isMultiUserDM() ? (0, h.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("90508"), n.e("25421"), n.e("89183")]).then(n.bind(n, 354741));
@@ -319,7 +319,7 @@ function ev(e) {
       impressionName: o,
       noBlurEvent: true,
       onClose: () => ej(false)
-    }) : (0, O.jW)(e, async () => {
+    }) : (0, h.jW)(e, async () => {
       let {
         default: e
       } = a ? await Promise.all([n.e("90508"), n.e("56167")]).then(n.bind(n, 416951)) : await Promise.all([n.e("79695"), n.e("90508"), n.e("66165"), n.e("6915"), n.e("56826"), n.e("15160")]).then(n.bind(n, 131404));
@@ -472,14 +472,14 @@ function ev(e) {
               muted: eA,
               subText: (() => {
                 let e = (null == f ? true : f.some(e => e.type !== el.IIU.CUSTOM_STATUS)) === true,
-                  n = eY && null != X && !eK ? (0, r.jsx)("div", {
+                  n = eY && null != X && !eW ? (0, r.jsx)("div", {
                     className: eo.subtext,
-                    children: (0, r.jsx)(K.o, {
+                    children: (0, r.jsx)(W.o, {
                       channel: t,
                       message: X
                     })
                   }) : null,
-                  i = null != X && null != n && (1 > (0, o.Z)(new Date, X.timestamp) || eW && !e || eL);
+                  i = null != X && null != n && (1 > (0, o.Z)(new Date, X.timestamp) || eK && !e || eL);
                 return t.isSystemDM() ? (0, r.jsx)("div", {
                   className: eo.subtext,
                   children: (0, T.Z)(t.id) ? ea.intl.string(ea.t.FL5T01) : ea.intl.string(ea.t.NnY5lc)
@@ -499,7 +499,7 @@ function ev(e) {
                   activities: f,
                   voiceChannel: S,
                   applicationStream: j,
-                  animateEmoji: eb || eh || ex,
+                  animateEmoji: eb || eO || ex,
                   textClassName: eo.activityStatusText,
                   iconClassName: eA ? eo.mutedIcon : true
                 }) : null != n ? n : null
@@ -512,15 +512,13 @@ function ev(e) {
                 }),
                 children: e9
               }),
-              decorators: (0, r.jsxs)(r.Fragment, {
-                children: [t.isSystemDM() ? (0, r.jsx)(E.Z, {
-                  className: eo.decorator,
-                  type: E.Z.Types.SYSTEM_DM,
-                  verified: true
-                }) : null, ti]
-              }),
-              withDisplayNameStyles: te,
-              fullWidth: true
+              decorators: t.isSystemDM() ? (0, r.jsx)(E.Z, {
+                className: eo.decorator,
+                type: E.Z.Types.SYSTEM_DM,
+                verified: true
+              }) : null,
+              rightDecorators: ti,
+              withDisplayNameStyles: te
             })
           })), (0, r.jsxs)("div", {
             className: a()(eo.iconsContainer, {
@@ -557,7 +555,7 @@ function ev(e) {
     }
   })
 }
-let eh = 12633 == require.j ? e => {
+let eO = 12633 == require.j ? e => {
   var {
     channel: t,
     selected: n

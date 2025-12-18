@@ -55,15 +55,15 @@ let O = (t, e) => {
           cancelText: A.intl.string(A.t.p89ACt),
           confirmButtonColor: i.zx.Colors.BRAND,
           onConfirm: () => {
-            S.gR.updateSetting(n), O(n, false)
+            T.gR.updateSetting(n), O(n, false)
           },
           onCancel: () => {
-            S.gR.updateSetting(n), S.h2.updateSetting(n ? u.Z.getGuildIds() : []), O(n, true)
+            T.gR.updateSetting(n), T.h2.updateSetting(n ? u.Z.getGuildIds() : []), O(n, true)
           }
         })
       } else {
         let n = (0, a.YK)();
-        t ? n.delete(e) : n.add(e), S.h2.updateSetting(Array.from(n)), r.default.track(N.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+        t ? n.delete(e) : n.add(e), T.h2.updateSetting(Array.from(n)), r.default.track(N.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
           action: _.Y.DIRECT_MESSAGES_TOGGLE,
           ingress: I.f4.USER_SETTINGS_PRIVACY_SAFETY,
           guild_id: e

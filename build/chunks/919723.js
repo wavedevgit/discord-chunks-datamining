@@ -19,7 +19,7 @@ let E = (0, Chunk509613.Em)(Chunk313789.n.VOICE_AUDIO_SUBSYSTEM_SETTING, {
     return (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getAudioSubsystem())
   },
   setValue: function(t) {
-    (0, S.Z)(c.intl.string(c.t.uY7AcQ), c.intl.string(c.t.gBqik6), () => s.Z.setAudioSubsystem(t))
+    (0, T.Z)(c.intl.string(c.t.uY7AcQ), c.intl.string(c.t.gBqik6), () => s.Z.setAudioSubsystem(t))
   },
   useOptions: function() {
     let {

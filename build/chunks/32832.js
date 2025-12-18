@@ -13,7 +13,7 @@ var Chunk292556 = require("./292556.js"),
   Chunk407458 = require("./407458.js"),
   Chunk388032 = require("./388032.jsx");
 require("./530049.js");
-let T = {
+let S = {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.jD1qzM),
     sound: "message1",
     useDisabled: Chunk734934.p,
@@ -43,5 +43,5 @@ let T = {
         (0, Chunk407458.WY)()
       }
     },
-    buildLayout: () => [(0, Chunk407458.j$)(T), E, (0, Chunk407458.j$)(c), d]
+    buildLayout: () => [(0, Chunk407458.j$)(S), E, (0, Chunk407458.j$)(c), d]
   })

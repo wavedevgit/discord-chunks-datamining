@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 947199, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => T
 });
 var Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
@@ -10,7 +10,7 @@ var Chunk509613 = require("./509613.js"),
   Chunk526761 = require("./526761.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let S = (0, Chunk509613.n4)(Chunk313789.n.DATA_USAGE_DISCLAIMER_SETTING, {
+let T = (0, Chunk509613.n4)(Chunk313789.n.DATA_USAGE_DISCLAIMER_SETTING, {
   useTitle: () => Chunk388032.intl.string(Chunk388032.t.D60Gfj),
   useSubtitle: () => Chunk388032.intl.format(Chunk388032.t.R5N31P, {
     onClick: () => {

@@ -22,12 +22,12 @@ let E = (0, Chunk509613.qs)(Chunk313789.n.DATA_USAGE_PERSONALIZATION_SETTING, {
     return (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION))
   },
   setValue: function(t) {
-    t ? (0, l.g)([T.pjP.PERSONALIZATION], []).catch(S.S) : (0, S.V)({
+    t ? (0, l.g)([S.pjP.PERSONALIZATION], []).catch(T.S) : (0, T.V)({
       header: c.intl.string(c.t["9SNpzv"]),
       confirmText: c.intl.string(c.t["9g5UGw"]),
       cancelText: c.intl.string(c.t["+ZLPw9"]),
       onConfirm: () => {
-        (0, l.g)([], [T.pjP.PERSONALIZATION]).catch(S.S)
+        (0, l.g)([], [S.pjP.PERSONALIZATION]).catch(T.S)
       },
       body: c.intl.string(c.t.gJvDDh)
     })

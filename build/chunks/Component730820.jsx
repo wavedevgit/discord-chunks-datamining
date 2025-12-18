@@ -56,7 +56,8 @@ class I extends Chunk473749.PureComponent {
     return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsx)(Chunk805244.Z, {
         backupCodes: module,
-        currentUser: require
+        currentUser: require,
+        hasTOTPEnabled: exports
       }), module.length > 0 && (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
         gap: 16,
         children: [(0, Chunk54381.jsx)(Chunk616495.Z, {
