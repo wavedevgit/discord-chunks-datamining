@@ -1128,6 +1128,7 @@ let y = {
     } = await require.e("26450").then(require.bind(require, 382927));
     return t => (0, a.jsx)(e, j(v({}, t), {
       premiumGroupSubscriptionId: "1234567890",
+      premiumGroupInviteId: "1234567890",
       isExistingSub: false,
       premiumGroupPrimaryName: "Test User"
     }))

@@ -57,6 +57,7 @@ function O() {
         onConfirm: e => {
           O(true), (0, p.h)(e).then(e => {
             null != e && null != e.body ? c.Z.show({
+              title: E.intl.string(E.t.i2iul5),
               body: E.intl.string(E.t["6Nmv4i"])
             }) : c.Z.show({
               title: E.intl.string(E.t.OjbtDm),

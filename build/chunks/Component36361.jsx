@@ -66,12 +66,12 @@ function O(e) {
       return (0, r.jsx)(p.I, {
         node: t
       });
-    case i.Jq.BUTTON:
-      return (0, r.jsx)(s.I, {
-        node: t
-      });
     case i.Jq.STATIC:
       return (0, r.jsx)(f.Z, {
+        node: t
+      });
+    case i.Jq.BUTTON:
+      return (0, r.jsx)(s.I, {
         node: t
       });
     case i.Jq.SELECT:

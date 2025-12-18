@@ -2,7 +2,7 @@
 /** chunk id: 703995, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => D
 }), require("./388685.js");
 var r, Chunk275726 = require("./275726.js"),
   Chunk442837 = require("./442837.js"),
@@ -20,132 +20,192 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let f = new Map,
-  p = false,
-  _ = false;
 
-function m() {
-  f = new Map, p = false, _ = false
+function f(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      d(e, t, n[t])
+    })
+  }
+  return e
 }
 
-function h() {
-  _ = true
+function p(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
 }
 
-function g(e) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+let m = new Map,
+  h = false,
+  g = false;
+
+function E() {
+  m = new Map, h = false, g = false
+}
+
+function b() {
+  g = true
+}
+
+function y(e) {
   let {
     invites: t
   } = e;
-  for (let e of (_ = false, p = true, t)) f.set(e.id, {
-    state: y(e),
+  for (let e of (g = false, h = true, t)) m.set(e.id, {
+    state: S(e),
     invite: e,
     errorStatus: null
   })
 }
 
-function E() {
-  _ = false
+function O() {
+  g = false
 }
 
-function b(e) {
+function v(e) {
   let {
-    inviteId: t
+    subscriptionGroupMemberId: t
   } = e;
-  f.set(t, {
+  m.set(t, {
     state: c.bZ.FETCHING,
     invite: null,
     errorStatus: null
   })
 }
 
-function y(e) {
+function S(e) {
   return null != e.removed_at ? c.bZ.REMOVED : null != e.accepted_at ? c.bZ.ACCEPTED : c.bZ.PENDING
 }
 
-function O(e) {
+function I(e) {
   let {
-    inviteId: t,
+    subscriptionGroupMemberId: t,
     invite: n
   } = e;
-  f.set(t, {
-    state: y(n),
+  m.set(t, {
+    state: S(n),
     invite: n,
     errorStatus: null
   })
 }
 
-function v(e) {
+function T(e) {
   let {
-    inviteId: t,
+    subscriptionGroupMemberId: t,
     status: n
   } = e, r = 404 === n ? c.bZ.NOT_FOUND : c.bZ.ERROR;
-  f.set(t, {
+  m.set(t, {
     state: r,
     invite: null,
     errorStatus: n
   })
 }
 
-function S(e) {
+function C(e) {
+  let {
+    subscriptionGroupMemberId: t
+  } = e, n = m.get(t);
+  if ((null == n ? true : n.invite) == null) returnfalse;
+  m.set(t, {
+    state: c.bZ.ACCEPTED,
+    invite: _(f({}, n.invite), {
+      accepted_at: new Date().toISOString()
+    }),
+    errorStatus: null
+  })
+}
+
+function A(e) {
+  let {
+    subscriptionGroupMemberId: t
+  } = e, n = m.get(t);
+  if ((null == n ? true : n.invite) == null) returnfalse;
+  m.set(t, {
+    state: c.bZ.PENDING,
+    invite: _(f({}, n.invite), {
+      accepted_at: null
+    }),
+    errorStatus: null
+  })
+}
+
+function N(e) {
   let {
     message: t
   } = e;
-  return T(t)
+  return R(t)
 }
 
-function I(e) {
+function P(e) {
   let {
     messages: t
   } = e;
-  return t.map(e => T(e)).some(Boolean)
+  return t.map(e => R(e)).some(Boolean)
 }
 
-function T(e) {
+function R(e) {
   if (e.type !== i.u.PREMIUM_GROUP_INVITE) returnfalse;
   let t = e.content;
   if (null == t || "" === t || !s.default.isProbablyAValidSnowflake(t)) returnfalse;
-  let n = f.get(t);
-  return (null == n || n.state === c.bZ.UNKNOWN) && (f.set(t, {
+  let n = m.get(t);
+  return (null == n || n.state === c.bZ.UNKNOWN) && (m.set(t, {
     state: c.bZ.FETCHING,
     invite: null,
     errorStatus: null
   }), o.Z.wait(() => (0, l.hH)(t).catch(u.VqG)), true)
 }
-class C extends(r = Chunk442837.ZP.Store) {
+class w extends(r = Chunk442837.ZP.Store) {
   getInvite(e) {
     var t;
-    return null != (t = f.get(e)) ? t : null
+    return null != (t = m.get(e)) ? t : null
   }
   getInviteState(e) {
     var t, n;
-    return null != (n = null == (t = f.get(e)) ? true : t.state) ? n : c.bZ.UNKNOWN
+    return null != (n = null == (t = m.get(e)) ? true : t.state) ? n : c.bZ.UNKNOWN
   }
   shouldFetch(e) {
-    let t = f.get(e);
+    let t = m.get(e);
     return null == t || t.state === c.bZ.UNKNOWN
   }
   isFetching(e) {
     var t;
-    return (null == (t = f.get(e)) ? true : t.state) === c.bZ.FETCHING
+    return (null == (t = m.get(e)) ? true : t.state) === c.bZ.FETCHING
   }
   hasFetchedAllInvites() {
-    return p
+    return h
   }
   isFetchingAllInvites() {
-    return _
+    return g
   }
 }
-d(C, "displayName", "PremiumGroupInviteStore");
-let A = new C(Chunk570140.Z, {
-  PREMIUM_GROUP_INVITES_FETCH_START: h,
-  PREMIUM_GROUP_INVITES_FETCH_SUCCESS: g,
-  PREMIUM_GROUP_INVITES_FETCH_FAIL: E,
-  PREMIUM_GROUP_INVITE_FETCH_START: b,
-  PREMIUM_GROUP_INVITE_FETCH_SUCCESS: O,
-  PREMIUM_GROUP_INVITE_FETCH_FAIL: v,
-  MESSAGE_CREATE: S,
-  LOCAL_MESSAGES_LOADED: I,
-  LOAD_MESSAGES_SUCCESS: I,
-  LOAD_MESSAGES_AROUND_SUCCESS: I,
-  LOGOUT: m
+d(w, "displayName", "PremiumGroupInviteStore");
+let D = new w(Chunk570140.Z, {
+  PREMIUM_GROUP_INVITES_FETCH_START: b,
+  PREMIUM_GROUP_INVITES_FETCH_SUCCESS: y,
+  PREMIUM_GROUP_INVITES_FETCH_FAIL: O,
+  PREMIUM_GROUP_INVITE_FETCH_START: v,
+  PREMIUM_GROUP_INVITE_FETCH_SUCCESS: I,
+  PREMIUM_GROUP_INVITE_FETCH_FAIL: T,
+  PREMIUM_GROUP_ACCEPT_INVITE_START: C,
+  PREMIUM_GROUP_ACCEPT_INVITE_FAIL: A,
+  MESSAGE_CREATE: N,
+  LOCAL_MESSAGES_LOADED: P,
+  LOAD_MESSAGES_SUCCESS: P,
+  LOAD_MESSAGES_AROUND_SUCCESS: P,
+  LOGOUT: E
 })

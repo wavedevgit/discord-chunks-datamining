@@ -4,19 +4,20 @@
 require.d(exports, {
   $l: () => O,
   CB: () => y,
-  Em: () => N,
+  Em: () => P,
   IC: () => E,
-  J9: () => P,
-  ON: () => w,
+  J9: () => R,
+  ON: () => D,
   Ql: () => f,
-  UO: () => A,
+  UO: () => N,
   US: () => v,
   Uc: () => S,
-  ax: () => T,
-  eD: () => R,
+  ax: () => C,
+  eD: () => w,
   k4: () => b,
   m7: () => h,
-  qs: () => C,
+  n4: () => T,
+  qs: () => A,
   so: () => _,
   vB: () => m,
   wf: () => g
@@ -157,29 +158,33 @@ function I(e, t, n) {
 }
 
 function T(e, t) {
-  return I(e, r.Jq.BUTTON, t)
+  return I(e, r.Jq.STATIC, t)
 }
 
 function C(e, t) {
-  return I(e, r.Jq.TOGGLE, t)
+  return I(e, r.Jq.BUTTON, t)
 }
 
 function A(e, t) {
-  return I(e, r.Jq.SLIDER, t)
+  return I(e, r.Jq.TOGGLE, t)
 }
 
 function N(e, t) {
-  return I(e, r.Jq.SELECT, t)
+  return I(e, r.Jq.SLIDER, t)
 }
 
 function P(e, t) {
-  return I(e, r.Jq.RADIO, t)
+  return I(e, r.Jq.SELECT, t)
 }
 
 function R(e, t) {
-  return I(e, r.Jq.NAVIGATOR, t)
+  return I(e, r.Jq.RADIO, t)
 }
 
 function w(e, t) {
+  return I(e, r.Jq.NAVIGATOR, t)
+}
+
+function D(e, t) {
   return I(e, r.Jq.CUSTOM, t)
 }

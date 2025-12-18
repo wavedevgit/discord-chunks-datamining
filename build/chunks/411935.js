@@ -2,11 +2,11 @@
 /** chunk id: 411935, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Xp: () => y,
-  YL: () => h,
-  g$: () => b,
-  m0: () => E,
-  y: () => g
+  Xp: () => O,
+  YL: () => g,
+  g$: () => y,
+  m0: () => b,
+  y: () => E
 }), require("./415506.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -55,8 +55,9 @@ function f(e, t) {
 }
 let p = 6,
   _ = 30 * Chunk70956.Z.Millis.SECOND,
-  m = 30 * Chunk70956.Z.Millis.MINUTE;
-async function h(e) {
+  m = 30 * Chunk70956.Z.Millis.MINUTE,
+  h = 5;
+async function g(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
     {
       eager: n = false,
@@ -93,7 +94,7 @@ async function h(e) {
     })
   }
 }
-async function g(e, t) {
+async function E(e, t) {
   try {
     i.Z.dispatch({
       type: "STORE_LISTINGS_FETCH_START",
@@ -128,7 +129,7 @@ async function g(e, t) {
   }
 }
 
-function E(e, t, n) {
+function b(e, t, n) {
   i.Z.dispatch({
     type: "SET_SOCIAL_LAYER_STOREFRONT_STATE",
     guildId: e,
@@ -136,7 +137,7 @@ function E(e, t, n) {
     skuId: n
   })
 }
-async function b(e) {
+async function y(e) {
   let {
     applicationId: t,
     userIds: n,
@@ -145,37 +146,39 @@ async function b(e) {
   } = e;
   if (0 === n.length) return;
   let d = s.Z.recommendationsByApplicationsAndUsers(t, n);
-  if (null == d || "error" !== d.state && "loading" !== d.state && ("success" !== d.state || !(d.data.numItemsRequested >= a))) try {
+  if (null != d && ("error" === d.state || "loading" === d.state || "success" === d.state && d.data.numItemsRequested >= a)) return;
+  let _ = n.slice(0, h);
+  try {
     i.Z.dispatch({
       type: "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_START",
       applicationId: t,
-      userIds: n
+      userIds: _
     });
     let e = await r.tn.get({
         url: l.ANM.SOCIAL_LAYER_APPLCIATION_RECOMMENDATIONS(t),
         rejectWithError: true,
         query: {
-          user_ids: n,
+          user_ids: _,
           max_recommendations: a,
           include_wishlists: c
         }
       }),
-      s = (0, o.X0)(e.body);
+      n = (0, o.X0)(e.body);
     return i.Z.dispatch(f(u({
       type: "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_SUCCESS"
-    }, s), {
-      userIds: n,
+    }, n), {
+      userIds: _,
       numItemsRequested: a
-    })), s
+    })), n
   } catch (e) {
     return i.Z.dispatch({
       type: "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_FAILURE",
       applicationId: t,
-      userIds: n
+      userIds: _
     }), null
   }
 }
-async function y(e) {
+async function O(e) {
   try {
     let t = (await r.tn.get({
       url: l.ANM.SOCIAL_LAYER_STOREFRONT_ANNOUNCEMENT(e),
