@@ -20,7 +20,7 @@ function c(e) {
     onAuthToken: u,
     onError: C,
     onClose: b
-  } = e, h = n ? (0, o.jsx)("img", {
+  } = e, p = n ? (0, o.jsx)("img", {
     src: d,
     width: "168",
     height: "124",
@@ -30,17 +30,17 @@ function c(e) {
     width: "152",
     height: "123",
     alt: ""
-  }), p = n ? a.intl.string(a.t.tZ6ze7) : a.intl.string(a.t.siPkNp), x = n ? a.intl.string(a.t.VgWnwP) : a.intl.string(a.t.oS4NEH);
+  }), h = n ? s.intl.string(s.t.tZ6ze7) : s.intl.string(s.t.siPkNp), x = n ? s.intl.string(s.t.VgWnwP) : s.intl.string(s.t.oS4NEH);
   return (0, o.jsx)(i.t, {
-    platformType: s.ABu.CRUNCHYROLL,
+    platformType: a.ABu.CRUNCHYROLL,
     isWaitingForConnection: n,
     onWaitingForConnection: t,
     expectedCallbackState: c,
     onAuthToken: u,
     onError: C,
     onClose: b,
-    img: h,
-    title: p,
+    img: p,
+    title: h,
     body: x,
     redirectDestination: r.pY
   })

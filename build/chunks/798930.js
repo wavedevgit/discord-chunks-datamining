@@ -1,6 +1,6 @@
 /** Chunk was on 51343 **/
 /** chunk id: 798930, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  O: () => n
+  O: () => r
 });
-var l, n = ((l = {}).LANDING = "landing", l.PRE_CONNECT = "pre-connect", l.PRE_CONNECT_WAITING = "pre-connect-waiting", l.DISCORD_CONSENT = "discord-consent", l.SUCCESS = "success", l.ERROR = "error", l)
+var n, r = ((n = {}).LANDING = "landing", n.PRE_CONNECT = "pre-connect", n.PRE_CONNECT_WAITING = "pre-connect-waiting", n.DISCORD_CONSENT = "discord-consent", n.SUCCESS = "success", n.ERROR = "error", n)

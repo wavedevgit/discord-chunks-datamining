@@ -1,7 +1,7 @@
 /** Chunk was on 15076 **/
 /** chunk id: 444899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  f: () => N
+  f: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk99079 = require("./99079.js");
 
-function f(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,7 +28,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class N extends Chunk473749.PureComponent {
+class b extends Chunk473749.PureComponent {
   highlight() {
     this.setState({
       highlight: true
@@ -163,18 +163,18 @@ class N extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "_timeout", true), f(this, "contentDomRef", s.createRef()), f(this, "state", {
+    super(...e), v(this, "_timeout", true), v(this, "contentDomRef", s.createRef()), v(this, "state", {
       highlight: false
-    }), f(this, "unhighlight", () => {
+    }), v(this, "unhighlight", () => {
       this.setState({
         highlight: false
       })
-    }), f(this, "handleMute", e => {
+    }), v(this, "handleMute", e => {
       let {
         messageNotifications: t
       } = this.props;
       this.setMessageNotification(null != t ? t : p.bL.NULL, e, x.UE.muted(e))
-    }), f(this, "handleDelete", () => {
+    }), v(this, "handleDelete", () => {
       let {
         onDelete: e,
         channel: t

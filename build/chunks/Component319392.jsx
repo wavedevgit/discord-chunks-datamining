@@ -2,7 +2,7 @@
 /** chunk id: 319392, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -53,7 +53,7 @@ function f() {
   })
 }
 
-function x(e) {
+function g(e) {
   let {
     onClose: t
   } = e;

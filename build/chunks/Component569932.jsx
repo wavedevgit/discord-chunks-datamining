@@ -24,10 +24,10 @@ function b(e) {
   }, {
     label: c.intl.string(c.t.ZH4QFa),
     icon: a.iWm
-  }], []), p = r.Z.getArticleURL(d.BhN.PS_CONNECTION), C = c.intl.format(c.t.kqZQNe, {
+  }], []), p = r.Z.getArticleURL(s.BhN.PS_CONNECTION), C = c.intl.format(c.t.kqZQNe, {
     helpdeskArticleUrl: p
   });
-  return (0, o.jsx)(s.m, {
+  return (0, o.jsx)(d.m, {
     platformType: t,
     headerConnect: c.intl.string(c.t.xAWHOy),
     headerReconnect: c.intl.string(c.t["ZJ/vBh"]),

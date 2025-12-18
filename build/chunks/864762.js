@@ -10,26 +10,26 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js");
 
 function o(e, t) {
-  let [a, o] = l.useState(r.O.LANDING), c = (0, n.Z)(a), [d, u] = l.useState(null), [x, m] = l.useState(null), [h, N] = l.useState(true), C = l.useCallback(() => {
+  let [a, o] = n.useState(l.O.LANDING), c = (0, r.Z)(a), [d, u] = n.useState(null), [x, m] = n.useState(null), [h, N] = n.useState(true), p = n.useCallback(() => {
     switch (a) {
-      case r.O.LANDING:
-        o(r.O.PRE_CONNECT);
+      case l.O.LANDING:
+        o(l.O.PRE_CONNECT);
         break;
-      case r.O.DISCORD_CONSENT:
-        o(r.O.SUCCESS);
+      case l.O.DISCORD_CONSENT:
+        o(l.O.SUCCESS);
         break;
-      case r.O.ERROR:
-        o(r.O.PRE_CONNECT)
+      case l.O.ERROR:
+        o(l.O.PRE_CONNECT)
     }
-  }, [a]), j = l.useCallback(e => {
-    u(null), N(e), o(r.O.ERROR)
-  }, []), p = l.useCallback(e => {
-    u(e), o(r.O.PRE_CONNECT_WAITING)
-  }, []), v = l.useCallback(e => {
-    u(null), m(e), o(r.O.DISCORD_CONSENT)
+  }, [a]), g = n.useCallback(e => {
+    u(null), N(e), o(l.O.ERROR)
+  }, []), C = n.useCallback(e => {
+    u(e), o(l.O.PRE_CONNECT_WAITING)
+  }, []), j = n.useCallback(e => {
+    u(null), m(e), o(l.O.DISCORD_CONSENT)
   }, []);
-  return l.useEffect(() => {
-    a !== c && s.default.track(i.rMx.ACCOUNT_LINK_STEP, {
+  return n.useEffect(() => {
+    a !== c && i.default.track(s.rMx.ACCOUNT_LINK_STEP, {
       location_stack: e,
       previous_step: c,
       current_step: a,
@@ -37,10 +37,10 @@ function o(e, t) {
     })
   }, [a, c, e, t]), {
     slide: a,
-    gotoNext: C,
-    gotoError: j,
-    handleWaitingForConnection: p,
-    handleAuthToken: v,
+    gotoNext: p,
+    gotoError: g,
+    handleWaitingForConnection: C,
+    handleAuthToken: j,
     expectedCallbackState: d,
     callbackData: x,
     errorCode: h

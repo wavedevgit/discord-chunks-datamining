@@ -32,6 +32,7 @@ function p(e) {
     errorCode: N
   } = (0, a.k)(p, C);
   return (0, o.jsx)(i.Y0X, {
+    "data-migration-pending": true,
     className: u.modal,
     transitionState: t,
     disableTrack: true,
@@ -41,7 +42,7 @@ function p(e) {
       width: 408,
       children: [(0, o.jsx)(i.Mi4, {
         id: b.O.LANDING,
-        children: (0, o.jsx)(d.A, {
+        children: (0, o.jsx)(s.A, {
           platformType: C,
           onContinue: f,
           onClose: n
@@ -77,7 +78,7 @@ function p(e) {
         })
       }), (0, o.jsx)(i.Mi4, {
         id: b.O.ERROR,
-        children: (0, o.jsx)(s.X, {
+        children: (0, o.jsx)(d.X, {
           onContinue: f,
           onClose: n,
           errorCode: N

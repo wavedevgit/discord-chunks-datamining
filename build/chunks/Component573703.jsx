@@ -34,7 +34,7 @@ function C(e) {
   let {
     onClose: n
   } = e;
-  return (0, o.jsx)(s.L, {
+  return (0, o.jsx)(a.L, {
     img: (0, o.jsx)("img", {
       src: c,
       width: "224",

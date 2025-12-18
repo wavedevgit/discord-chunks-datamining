@@ -1,7 +1,7 @@
 /** Chunk was on 10667 **/
 /** chunk id: 555638, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => d
+  A: () => s
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -10,17 +10,17 @@ var Chunk212598 = require("./212598.jsx"),
   Chunk60236 = require("./60236.js"),
   Chunk254564 = require("./254564.js");
 
-function d(e) {
+function s(e) {
   let {
     platformType: t,
     isWaitingForConnection: n,
-    onWaitingForConnection: d,
+    onWaitingForConnection: s,
     expectedCallbackState: c,
     onAuthToken: l,
     onError: b,
     onClose: u
   } = e, p = n ? (0, o.jsx)("img", {
-    src: s.Z,
+    src: d.Z,
     width: "231",
     height: "172",
     alt: ""
@@ -33,7 +33,7 @@ function d(e) {
   return (0, o.jsx)(i.t, {
     platformType: t,
     isWaitingForConnection: n,
-    onWaitingForConnection: d,
+    onWaitingForConnection: s,
     expectedCallbackState: c,
     onAuthToken: l,
     onError: b,

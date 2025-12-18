@@ -21,7 +21,7 @@ function p(e) {
   var t, n;
   let {
     guildId: s
-  } = e, p = (0, r.e7)([c.Z], () => c.Z.getGuild(s)), j = (0, r.e7)([u.ZP], () => u.ZP.isMuted(s)), v = (0, r.e7)([u.ZP], () => u.ZP.getMuteConfig(s));
+  } = e, p = (0, r.e7)([c.Z], () => c.Z.getGuild(s)), j = (0, r.e7)([u.ZP], () => u.ZP.isMuted(s)), f = (0, r.e7)([u.ZP], () => u.ZP.getMuteConfig(s));
   return null == p ? null : (0, i.jsxs)(o.C3N, {
     children: [(0, i.jsx)(o.rsf, {
       label: x.intl.format(x.t["J+7D9E"], {
@@ -36,7 +36,7 @@ function p(e) {
       }
     }), j && (0, i.jsx)(a.y6, {
       label: x.intl.string(x.t.Ztu2Yo),
-      description: null == (n = v) || null == n.end_time ? null : x.intl.formatToPlainString(x.t.j7h4AJ, {
+      description: null == (n = f) || null == n.end_time ? null : x.intl.formatToPlainString(x.t.j7h4AJ, {
         endTime: new Date(n.end_time).toLocaleString(x.intl.currentLocale, {
           month: "numeric",
           day: "numeric",
@@ -55,7 +55,7 @@ function p(e) {
         }, h.ZB.Muted)
       },
       options: (0, g.W9)(),
-      value: null != (t = null == v ? true : v.selected_time_window) ? t : m.Oe.ALWAYS
+      value: null != (t = null == f ? true : f.selected_time_window) ? t : m.Oe.ALWAYS
     })]
   })
 }

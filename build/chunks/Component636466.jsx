@@ -159,24 +159,23 @@ function L(e, t) {
     isSingleCard: o = false,
     profileOwner: s,
     wishlistId: l,
-    showTypeTooltip: c = false,
-    cardSize: d,
-    analyticsLocations: p
-  } = t, _ = null != i && i > 0, m = c && !_, h = _ ? v.intl.string(v.t.TxBQzD) : v.intl.string(v.t.pLPjsb), y = {
-    title: m ? v.intl.string(v.t["4yiU7x"]) : h,
-    body: m ? v.intl.string(v.t.ilhtIa) : true,
-    renderIcon: m ? f.Q : true,
+    cardSize: c,
+    analyticsLocations: d
+  } = t, p = null != i && i > 0, _ = {
+    title: p ? v.intl.string(v.t.TxBQzD) : v.intl.string(v.t["4yiU7x"]),
+    body: p ? true : v.intl.string(v.t.ilhtIa),
+    renderIcon: p ? true : f.Q,
     shouldShow: true
-  }, I = () => {
-    if (_) return void a();
+  }, m = () => {
+    if (p) return void a();
     (0, g.P)(e.sku, {
       isGift: true,
       giftRecipient: s,
       giftingOrigin: O.Wt.USER_PROFILE_WISHLIST
     }, {
-      analyticsLocations: [...p, u.Z.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
+      analyticsLocations: [...d, u.Z.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
     })
-  }, T = () => (0, r.jsx)(E.A, {
+  }, h = () => (0, r.jsx)(E.A, {
     containerClassName: S.card,
     backgroundImageClassName: S.cardBackgroundImage,
     foregroundImageClassName: S.cardImage,
@@ -185,16 +184,16 @@ function L(e, t) {
   });
   return (0, r.jsx)(x, {
     wishlistItem: e,
-    onCardClick: I,
-    tooltipConfig: y,
+    onCardClick: m,
+    tooltipConfig: _,
     shouldScalePreview: false,
-    renderPreview: T,
+    renderPreview: h,
     moreCount: i,
     isSingleCard: o,
     wishlistId: l,
     showPopover: 0 === n && e.sku.applicationId === b.t9,
     onViewWishlist: a,
-    cardSize: d
+    cardSize: c
   }, e.skuId)
 }
 

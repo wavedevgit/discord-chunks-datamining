@@ -16,11 +16,11 @@ function u(e) {
   let {
     onContinue: n,
     onClose: t
-  } = e, u = s.Z.getArticleURL(l.BhN.CRUNCHYROLL_CONNECTION), C = i.useMemo(() => [{
+  } = e, u = a.Z.getArticleURL(l.BhN.CRUNCHYROLL_CONNECTION), C = i.useMemo(() => [{
     label: d.intl.string(d.t["2TXHQd"]),
     icon: r.ARS
   }], []);
-  return (0, o.jsx)(a.m, {
+  return (0, o.jsx)(s.m, {
     platformType: l.ABu.CRUNCHYROLL,
     headerConnect: d.intl.string(d.t["Da+3NJ"]),
     body: d.intl.string(d.t.MaPpPL),

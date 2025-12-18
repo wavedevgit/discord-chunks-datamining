@@ -1,7 +1,7 @@
 /** Chunk was on 15076 **/
 /** chunk id: 74888, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => v
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -41,7 +41,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function f(e) {
   return (0, i.jsxs)("div", {
     children: [null != e.title && (0, i.jsx)(p, {
       title: e.title
@@ -55,7 +55,7 @@ function v(e) {
   })
 }
 
-function f(e) {
+function v(e) {
   var t, n, {
       guildId: s
     } = e,
@@ -98,19 +98,19 @@ function f(e) {
       text: m.intl.string(m.t.i4jeWR),
       onClick: l.onClose
     }],
-    children: [(0, i.jsx)(v, {
+    children: [(0, i.jsx)(f, {
       noPadding: true,
       noContainer: true,
       children: (0, i.jsx)(h.Z, {
         guildId: s
       })
-    }), (0, i.jsx)(v, {
+    }), (0, i.jsx)(f, {
       title: m.intl.string(m.t.R9Ej96),
       noPadding: true,
       children: (0, i.jsx)(g.Z, {
         guildId: s
       })
-    }), (0, i.jsx)(v, {
+    }), (0, i.jsx)(f, {
       title: m.intl.string(m.t["31DySj"]),
       children: (0, i.jsx)(d.Z, {
         guildId: s
@@ -120,7 +120,7 @@ function f(e) {
         title: m.intl.string(m.t.D9yVAH)
       }), (0, i.jsx)(j, {
         description: m.intl.string(m.t["0PhAOH"])
-      }), (0, i.jsx)(v, {
+      }), (0, i.jsx)(f, {
         children: (0, i.jsx)(u.Z, {
           guildId: s
         })

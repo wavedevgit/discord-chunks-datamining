@@ -18,11 +18,11 @@ function c(e) {
     onContinue: c,
     onError: l,
     onClose: b
-  } = e, u = t === s.ABu.PLAYSTATION_STAGING ? a.t.PLAYSTATION_STAGING_APPLICATION_ID : a.t.PLAYSTATION_APPLICATION_ID, p = t === s.ABu.PLAYSTATION_STAGING ? i.x.PLAYSTATION_STAGING : i.x.PLAYSTATION;
+  } = e, u = t === d.ABu.PLAYSTATION_STAGING ? a.t.PLAYSTATION_STAGING_APPLICATION_ID : a.t.PLAYSTATION_APPLICATION_ID, p = t === d.ABu.PLAYSTATION_STAGING ? i.x.PLAYSTATION_STAGING : i.x.PLAYSTATION;
   return (0, o.jsx)(r.h, {
     platformType: t,
     clientId: u,
-    scopes: d.KL,
+    scopes: s.KL,
     authToken: n,
     onContinue: c,
     onError: l,

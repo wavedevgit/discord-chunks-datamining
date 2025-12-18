@@ -21,69 +21,72 @@ function m(e) {
     onClose: m,
     img: h,
     headerConnect: N,
-    headerReconnect: C,
-    body: j,
-    learnMoreLink: p,
-    valueProps: v
-  } = e, f = (0, s.e7)([o.Z], () => {
+    headerReconnect: p,
+    body: g,
+    learnMoreLink: C,
+    valueProps: j
+  } = e, v = (0, i.e7)([o.Z], () => {
     let e = o.Z.getAccount(null, t);
     return (null == e ? true : e.twoWayLink) === false
   });
-  return (0, l.jsxs)(c.Z, {
-    children: [(0, l.jsxs)(r.xBx, {
-      direction: i.Z.Direction.VERTICAL,
+  return (0, n.jsxs)(c.Z, {
+    children: [(0, n.jsxs)(l.xBx, {
+      "data-migration-pending": true,
+      direction: s.Z.Direction.VERTICAL,
       className: x.header,
       separator: false,
-      children: [(0, l.jsxs)("div", {
+      children: [(0, n.jsxs)("div", {
         className: x.illustration,
         children: [h, " "]
-      }), (0, l.jsx)(r.Heading, {
+      }), (0, n.jsx)(l.Heading, {
         className: x.title,
         variant: "heading-xl/extrabold",
-        children: f && null != C ? C : N
-      }), (0, l.jsx)(r.olH, {
+        children: v && null != p ? p : N
+      }), (0, n.jsx)(l.olH, {
         className: x.closeButton,
         onClick: m
       })]
-    }), (0, l.jsxs)(r.hzk, {
+    }), (0, n.jsxs)(l.hzk, {
+      "data-migration-pending": true,
       className: x.body,
-      children: [(0, l.jsx)(r.Text, {
+      children: [(0, n.jsx)(l.Text, {
         tag: "p",
         variant: "text-md/normal",
         color: "text-default",
-        children: j
-      }), (0, l.jsx)("div", {
+        children: g
+      }), (0, n.jsx)("div", {
         className: x.valueProps,
-        children: v.map((e, t) => {
+        children: j.map((e, t) => {
           let {
             label: a,
-            subLabel: s,
-            icon: r
+            subLabel: i,
+            icon: l
           } = e;
-          return (0, l.jsxs)(n.Fragment, {
-            children: [(0, l.jsx)(d.Z, {
+          return (0, n.jsxs)(r.Fragment, {
+            children: [(0, n.jsx)(d.Z, {
               label: a,
-              subLabel: s,
-              icon: r
-            }, a), t !== v.length - 1 && (0, l.jsx)("div", {
+              subLabel: i,
+              icon: l
+            }, a), t !== j.length - 1 && (0, n.jsx)("div", {
               className: x.valuePropDivider
             })]
           }, a)
         })
-      }), null != p ? (0, l.jsx)(r.Text, {
+      }), null != C ? (0, n.jsx)(l.Text, {
         tag: "p",
         variant: "text-sm/normal",
         color: "text-default",
         children: u.intl.format(u.t["/l3n+1"], {
-          helpCenterLink: p
+          helpCenterLink: C
         })
       }) : null]
-    }), (0, l.jsx)(r.mzw, {
+    }), (0, n.jsx)(l.mzw, {
+      "data-migration-pending": true,
       className: x.footer,
-      children: (0, l.jsx)("div", {
+      children: (0, n.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: x.footerButton,
-        children: (0, l.jsx)(r.Button, {
+        children: (0, n.jsx)(l.Button, {
           variant: "primary",
           text: u.intl.string(u.t["3PatSz"]),
           onClick: a

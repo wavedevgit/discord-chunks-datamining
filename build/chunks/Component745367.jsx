@@ -1,7 +1,7 @@
 /** Chunk was on 4419 **/
 /** chunk id: 745367, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -16,27 +16,28 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk926375 = require("./926375.js");
 
-function h(e) {
+function p(e) {
   let {
     transitionState: n,
     onClose: t,
-    analyticsLocation: h
+    analyticsLocation: p
   } = e, {
-    slide: p,
+    slide: h,
     gotoNext: x,
     gotoError: g,
     handleWaitingForConnection: f,
     handleAuthToken: v,
     expectedCallbackState: _,
     callbackData: N
-  } = (0, r.k)(h, C.ABu.CRUNCHYROLL);
+  } = (0, r.k)(p, C.ABu.CRUNCHYROLL);
   return (0, o.jsx)(i.Y0X, {
+    "data-migration-pending": true,
     className: b.modal,
     transitionState: n,
     disableTrack: true,
     parentComponent: "CrunchyrollLinkModal",
     children: (0, o.jsxs)(i.MyZ, {
-      activeSlide: p,
+      activeSlide: h,
       width: 408,
       children: [(0, o.jsx)(i.Mi4, {
         id: u.O.LANDING,
@@ -64,7 +65,7 @@ function h(e) {
         })
       }), (0, o.jsx)(i.Mi4, {
         id: u.O.DISCORD_CONSENT,
-        children: (0, o.jsx)(s.Z, {
+        children: (0, o.jsx)(a.Z, {
           authToken: N,
           onContinue: x,
           onError: g,
@@ -72,7 +73,7 @@ function h(e) {
         })
       }), (0, o.jsx)(i.Mi4, {
         id: u.O.ERROR,
-        children: (0, o.jsx)(a.Z, {
+        children: (0, o.jsx)(s.Z, {
           onContinue: x,
           onClose: t
         })
