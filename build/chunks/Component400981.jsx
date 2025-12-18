@@ -29,7 +29,7 @@ function O(e) {
     selectedGiftingPromotionReward: O
   } = e, S = (0, a.e7)([y.default], () => y.default.getCurrentUser()), P = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), {
     analyticsLocations: x
-  } = (0, c.ZP)(), E = o.EFr.SIZE_32, w = (0, d.Z)(null == O ? true : O.assetId, E, !P), I = (0, g.Z)(), T = null == I ? true : I.giftPurchaseConfirmation, k = (null == O ? true : O.type) === i.Z.NAMEPLATE, [C, N] = l.useState(false), M = l.useMemo(() => {
+  } = (0, c.ZP)(), E = s.EFr.SIZE_32, w = (0, d.Z)(null == O ? true : O.assetId, E, !P), I = (0, g.Z)(), T = null == I ? true : I.giftPurchaseConfirmation, k = (null == O ? true : O.type) === i.Z.NAMEPLATE, [C, N] = l.useState(false), M = l.useMemo(() => {
     var e, t;
     return k && (null == O ? true : O.assetId) != null ? {
       src: O.assetId,
@@ -38,7 +38,7 @@ function O(e) {
     } : null
   }, [k, O]);
   return null == n || null == T ? null : (0, r.jsx)(j.O3, {
-    children: (0, r.jsx)(o.mzw, {
+    children: (0, r.jsx)(s.mzw, {
       align: m.Z.Align.CENTER,
       "data-migration-pending": true,
       children: (0, r.jsxs)("div", {
@@ -55,12 +55,12 @@ function O(e) {
             nameplatePreviewSize: "xsmall",
             isHighlighted: C
           })
-        }) : (0, r.jsx)(o.Xo$, {
+        }) : (0, r.jsx)(s.Xo$, {
           "aria-label": null == S ? true : S.username,
           size: E,
-          src: null == S ? true : S.getAvatarURL(true, (0, o.dcp)(E), !P),
+          src: null == S ? true : S.getAvatarURL(true, (0, s.dcp)(E), !P),
           avatarDecoration: w
-        }), (0, r.jsx)(s.zxk, {
+        }), (0, r.jsx)(o.zxk, {
           variant: "primary",
           text: T.collectRewardButtonText(),
           onClick: () => {

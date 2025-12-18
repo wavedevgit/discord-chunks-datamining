@@ -75,11 +75,14 @@ let h = e => {
           variant: "text-sm/medium",
           color: "text-strong",
           children: [g, !!n && " (".concat(f.intl.string(f.t.LuZzxn), ")")]
-        }), null != a && (0, r.jsx)(l.Text, {
+        }), null != a && (0, r.jsxs)(l.Text, {
           className: p.label,
           variant: "text-sm/medium",
           color: "text-subtle",
-          children: a
+          children: [(0, r.jsx)("span", {
+            className: p.separator,
+            children: "\xb7"
+          }), a]
         })]
       }), null != s && E && (0, r.jsx)("div", {
         className: p.textButtonContainer,

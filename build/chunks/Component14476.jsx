@@ -34,17 +34,17 @@ let f = e => {
       isHoveringOrFocusing: w
     } = (0, u.Z)(E),
     I = !y && w;
-  return P === s.Z.AVATAR_DECORATION ? (t = {
-    type: s.Z.AVATAR_DECORATION,
+  return P === o.Z.AVATAR_DECORATION ? (t = {
+    type: o.Z.AVATAR_DECORATION,
     label: b,
     asset: f
   }, n = (0, r.jsx)(d.R, {
     item: t,
     user: g,
     isHighlighted: I,
-    avatarSize: o.EFr.SIZE_96
-  })) : P === s.Z.NAMEPLATE && (t = {
-    type: s.Z.NAMEPLATE,
+    avatarSize: s.EFr.SIZE_96
+  })) : P === o.Z.NAMEPLATE && (t = {
+    type: o.Z.NAMEPLATE,
     label: b,
     asset: f,
     palette: null != x ? x : "none"
@@ -53,8 +53,8 @@ let f = e => {
     user: g,
     isHighlighted: I,
     size: "small"
-  })), (0, r.jsx)(o.tEY, {
-    children: (0, r.jsxs)(o.kL8, {
+  })), (0, r.jsx)(s.tEY, {
+    children: (0, r.jsxs)(s.kL8, {
       ref: E,
       "aria-label": null != v ? v : "",
       onClick: () => {
@@ -67,8 +67,8 @@ let f = e => {
       }),
       children: [(0, r.jsx)("div", {
         className: a()(h.preview, {
-          [h.avatarPreview]: P === s.Z.AVATAR_DECORATION,
-          [h.nameplatePreview]: P === s.Z.NAMEPLATE,
+          [h.avatarPreview]: P === o.Z.AVATAR_DECORATION,
+          [h.nameplatePreview]: P === o.Z.NAMEPLATE,
           [h.previewTrick]: S === c.KN.Trick,
           [h.previewTreat]: S === c.KN.Treat
         }),
@@ -78,20 +78,20 @@ let f = e => {
               [h.claimed]: y
             }),
             children: n
-          }), y && (0, r.jsx)(o.sV5, {
+          }), y && (0, r.jsx)(s.sV5, {
             size: "custom",
             width: 48,
             height: 48,
-            color: o.TVs.colors.INTERACTIVE_TEXT_ACTIVE,
+            color: s.TVs.colors.INTERACTIVE_TEXT_ACTIVE,
             className: h.claimedIcon
           })]
         }) : null
       }), (0, r.jsxs)("div", {
         className: h.productName,
-        children: [(0, r.jsx)(o.Heading, {
+        children: [(0, r.jsx)(s.Heading, {
           variant: "heading-md/extrabold",
           children: v
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           children: y ? m.intl.string(m.t["6cfuDj"]) : m.intl.string(m.t.QQsaCc)
         })]

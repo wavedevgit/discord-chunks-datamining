@@ -67,7 +67,7 @@ function B(e) {
     analyticsLocation: t,
     analyticsObject: n,
     analyticsSourceLocation: i,
-    onComplete: o,
+    onComplete: s,
     transitionState: c,
     initialPlanId: d,
     subscriptionTier: m,
@@ -92,36 +92,35 @@ function B(e) {
     analyticsLocations: B
   } = (0, u.ZP)();
   l.useEffect(() => {
-    h.Z.isLoadedForPremiumSKUs() || a.Z.wait(() => (0, s.Y2)())
+    h.Z.isLoadedForPremiumSKUs() || a.Z.wait(() => (0, o.Y2)())
   }, []);
   let {
     step: U,
-    wasTier2PremiumBeforePurchase: H,
-    selectedSkuId: z,
-    purchaseState: K
+    selectedSkuId: H,
+    purchaseState: z
   } = (0, j.JL)(), {
-    isGift: W,
-    giftMessage: V,
-    giftRecipient: Y
-  } = (0, y.wD)(), q = W && (0, g.pO)(Y) && U === v.h8.PLAN_SELECT, J = (0, p.P)(W, !!H, z), Q = K === O.A.PURCHASING;
+    isGift: K,
+    giftMessage: W,
+    giftRecipient: V
+  } = (0, y.wD)(), Y = K && (0, g.pO)(V) && U === v.h8.PLAN_SELECT, q = (0, p.I)(K, H), J = z === O.A.PURCHASING;
   return (0, r.jsx)(I.Z, {
     isConfirmationStep: U === v.h8.CONFIRM && null == G && null == T,
-    isEligibleForWowMoment: J,
-    shouldPrefetchWowMoment: Q,
+    isEligibleForWowMoment: q,
+    shouldPrefetchWowMoment: J,
     children: (0, r.jsx)(S.PaymentModal, {
       analyticsLocations: B,
       analyticsLocation: t,
       analyticsObject: n,
       analyticsSourceLocation: i,
       analyticsSubscriptionType: A.NYc.PREMIUM,
-      onComplete: o,
+      onComplete: s,
       transitionState: c,
       initialPlanId: d,
-      giftMessage: V,
+      giftMessage: W,
       subscriptionTier: m,
       onClose: f,
       trialId: b,
-      isGift: W,
+      isGift: K,
       trialFooterMessageOverride: P,
       reviewWarningMessage: x,
       planGroup: L.Y1,
@@ -136,7 +135,7 @@ function B(e) {
       referralTrialOfferId: R,
       skuId: Z,
       shakeWhilePurchasing: true,
-      isDynamicModal: q,
+      isDynamicModal: Y,
       returnRef: D,
       skipConfirm: F,
       continueSessionToInitialStep: G
@@ -151,21 +150,21 @@ function U(e) {
     handleStepChange: i,
     referralTrialOfferId: a
   } = e, {
-    paymentSources: s,
-    selectedSkuId: o,
+    paymentSources: o,
+    selectedSkuId: s,
     selectedPlan: u
   } = (0, j.JL)(), {
     isGift: c,
     claimableRewards: p
   } = (0, y.wD)(), m = (0, R.Z)({
     isGift: c,
-    skuId: o,
+    skuId: s,
     referralTrialOfferId: a
   }), h = (0, C.Fv)(m), f = (0, d.id)(u, c, p);
   return (0, r.jsx)(P.J, (t = F({}, e), n = n = {
     breadcrumbSteps: G,
     onReturn: () => {
-      let e = Object.values(s),
+      let e = Object.values(o),
         t = e.length < 1 && null == l ? v.h8.PLAN_SELECT : v.h8.REVIEW;
       h && (t = v.h8.REVIEW), f && e.length < 1 && (t = v.h8.SELECT_FREE_SKU), i(t, {
         trackedFromStep: v.h8.PAYMENT_TYPE
@@ -250,10 +249,10 @@ function K(e) {
     n = (0, c.Vi)() ? L.Xh.PREMIUM_MONTH_TIER_2 : true,
     {
       analyticsLocations: l
-    } = (0, u.ZP)(e.analyticsLocations, o.Z.PREMIUM_PAYMENT_MODAL),
+    } = (0, u.ZP)(e.analyticsLocations, s.Z.PREMIUM_PAYMENT_MODAL),
     {
       confirmationFooter: a,
-      defaultPlanId: s,
+      defaultPlanId: o,
       giftingOrigin: d,
       giftMessage: p,
       giftRecipient: h,
@@ -277,7 +276,7 @@ function K(e) {
       stepConfigs: H(x),
       skuIDs: [...L.YQ],
       isGift: v,
-      defaultPlanId: null != n ? n : s,
+      defaultPlanId: null != n ? n : o,
       referralCode: S,
       wasTier2PremiumBeforePurchase: e.wasTier2PremiumBeforePurchase,
       children: (0, r.jsx)(b.c1, {

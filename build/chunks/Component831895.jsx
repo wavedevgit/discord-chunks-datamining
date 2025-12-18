@@ -20,11 +20,11 @@ function m(e) {
     defaultCategory: h,
     onCategoryChange: f,
     className: g
-  } = e, [y, j] = l.useState(h), [v, b] = l.useState(null), O = (0, o.Z)(), S = l.useMemo(() => [{
+  } = e, [y, j] = l.useState(h), [v, b] = l.useState(null), O = (0, s.Z)(), S = l.useMemo(() => [{
     name: d.intl.string(d.t["6Zuivx"]),
     value: u.KN.Trick,
     key: "Trick",
-    icon: (0, r.jsx)(s.yDF, {
+    icon: (0, r.jsx)(o.yDF, {
       size: "sm",
       color: "currentColor"
     }),
@@ -34,7 +34,7 @@ function m(e) {
     name: d.intl.string(d.t["2UeOlY"]),
     value: u.KN.Treat,
     key: "Treat",
-    icon: (0, r.jsx)(s.sq, {
+    icon: (0, r.jsx)(o.sq, {
       size: "sm",
       color: "currentColor"
     }),
@@ -51,24 +51,24 @@ function m(e) {
       onChange: P
     }), v === u.KN.Trick && null != x && (0, r.jsx)("div", {
       className: a()(p.animationOverlay, p.trickAnimation),
-      children: (0, r.jsx)(s.Fmz, {
+      children: (0, r.jsx)(o.Fmz, {
         shouldAnimate: true,
         loop: true,
         autoplay: true,
         className: p.lottieAnimation,
         importData: x,
-        renderer: s.Fmz.Renderers.SVG,
+        renderer: o.Fmz.Renderers.SVG,
         versionKey: +(v === u.KN.Trick)
       })
     }), v === u.KN.Treat && null != E && (0, r.jsx)("div", {
       className: a()(p.animationOverlay, p.treatAnimation),
-      children: (0, r.jsx)(s.Fmz, {
+      children: (0, r.jsx)(o.Fmz, {
         shouldAnimate: true,
         loop: true,
         autoplay: true,
         className: p.lottieAnimation,
         importData: E,
-        renderer: s.Fmz.Renderers.SVG,
+        renderer: o.Fmz.Renderers.SVG,
         versionKey: +(v === u.KN.Treat)
       })
     })]

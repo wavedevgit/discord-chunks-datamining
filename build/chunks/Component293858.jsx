@@ -93,7 +93,7 @@ function I(e) {
   }, [i, T]);
   l.useEffect(() => {
     function e() {
-      U && null != F && F.hasAnyPremiumGroup && (0, o.ZDy)(async () => {
+      U && null != F && F.hasAnyPremiumGroup && (0, s.ZDy)(async () => {
         let {
           default: e
         } = await n.e("86948").then(n.bind(n, 153241));
@@ -122,7 +122,7 @@ function I(e) {
       onSubscriptionConfirmation: T
     })
   }, [Y, H, z, K, W, V, T]), l.useEffect(() => {
-    null != $ && null != $.reminderNotice && X && (0, u.wH)(s.z.GIFTING_PROMOTION_REMINDER, (0, p.m)(), {
+    null != $ && null != $.reminderNotice && X && (0, u.wH)(o.z.GIFTING_PROMOTION_REMINDER, (0, p.m)(), {
       dismissAction: E.L.INDIRECT_ACTION
     })
   }, [$, X]);

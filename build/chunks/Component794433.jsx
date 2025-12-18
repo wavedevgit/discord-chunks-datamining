@@ -2,9 +2,9 @@
 /** chunk id: 794433, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => g,
-  Z: () => m
+  Z: () => v
 }), require("./539854.js"), require("./388685.js");
-var r, l, Chunk54381 = require("./54381.js"),
+var r, s, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
@@ -26,7 +26,7 @@ let d = Object.freeze({
   MEDIUM: Chunk979322.medium,
   LARGE: Chunk979322.large
 });
-var g = ((l = {}).MEMBER = "MEMBER", l.ROLE = "ROLE", l.CHANNEL = "CHANNEL", l.USER = "USER", l);
+var g = ((s = {}).MEMBER = "MEMBER", s.ROLE = "ROLE", s.CHANNEL = "CHANNEL", s.USER = "USER", s);
 class b extends(r = Chunk473749.Component) {
   componentDidMount() {
     let e = this.containerRef.current;
@@ -45,8 +45,8 @@ class b extends(r = Chunk473749.Component) {
     let t = module.offsetHeight,
       n = exports - this.previousHeight;
     if (0 !== require) {
-      var r, l;
-      this.previousHeight = exports, null == (r = (l = this.props).onHeightChange) || r.call(l, require)
+      var r, s;
+      this.previousHeight = exports, null == (r = (s = this.props).onHeightChange) || r.call(s, require)
     }
   }
   handleKeyDownGrid(e) {
@@ -54,9 +54,9 @@ class b extends(r = Chunk473749.Component) {
       selectedRow: t,
       selectedColumn: n,
       sections: r,
-      query: l,
-      tags: a,
-      onSelectionChange: s,
+      query: s,
+      tags: l,
+      onSelectionChange: a,
       onSelect: i,
       onRemoveTag: o,
       preventEscapePropagation: c
@@ -64,7 +64,7 @@ class b extends(r = Chunk473749.Component) {
     if (0 !== r.length) {
       switch (e.key) {
         case u.vn.BACKSPACE:
-          (null == l || 0 === l.length) && null != a && a.length > 0 && (e.preventDefault(), e.stopPropagation(), null == o || o(a.length - 1));
+          (null == s || 0 === s.length) && null != l && l.length > 0 && (e.preventDefault(), e.stopPropagation(), null == o || o(l.length - 1));
           break;
         case u.vn.ARROW_DOWN:
           e.preventDefault(), e.stopPropagation(), false === t ? (t = 0, n = 0) : ((t += 1) >= r.length && (t = r.length - 1), n >= r[t] && (n = r[t] - 1));
@@ -88,7 +88,7 @@ class b extends(r = Chunk473749.Component) {
         default:
           return
       }
-      null != s && s(t, n)
+      null != a && a(t, n)
     }
   }
   handleKeyDownList(e) {
@@ -96,9 +96,9 @@ class b extends(r = Chunk473749.Component) {
       sections: t,
       selectedSection: n,
       selectedRow: r,
-      onSelect: l,
-      onSelectionChange: a,
-      query: s,
+      onSelect: s,
+      onSelectionChange: l,
+      query: a,
       tags: i,
       preventEscapePropagation: o
     } = this.props, {
@@ -106,22 +106,22 @@ class b extends(r = Chunk473749.Component) {
     } = this.ref;
     if (null != c) switch (e.key) {
       case u.vn.BACKSPACE:
-        if ((null == s || 0 === s.length) && null != i && i.length > 0) {
+        if ((null == a || 0 === a.length) && null != i && i.length > 0) {
           var p, f;
           e.preventDefault(), e.stopPropagation(), null == (p = (f = this.props).onRemoveTag) || p.call(f, i.length - 1)
         }
         break;
       case u.vn.ARROW_DOWN:
-        e.preventDefault(), e.stopPropagation(), t.length > n && ++r >= t[n] && (++n >= t.length && (n = 0), r = 0), null == a || a(n, r);
+        e.preventDefault(), e.stopPropagation(), t.length > n && ++r >= t[n] && (++n >= t.length && (n = 0), r = 0), null == l || l(n, r);
         break;
       case u.vn.ARROW_UP:
-        e.preventDefault(), e.stopPropagation(), --r < 0 && (--n < 0 && (n = t.length - 1), r = t[n] - 1), null == a || a(n, r);
+        e.preventDefault(), e.stopPropagation(), --r < 0 && (--n < 0 && (n = t.length - 1), r = t[n] - 1), null == l || l(n, r);
         break;
       case u.vn.ENTER:
-        e.preventDefault(), e.stopPropagation(), t.length > n && t[n] > r && (null == l || l(n, r, e));
+        e.preventDefault(), e.stopPropagation(), t.length > n && t[n] > r && (null == s || s(n, r, e));
         break;
       case u.vn.ESCAPE:
-        e.preventDefault(), o && e.stopPropagation(), null == l || l(null, null, e), c.blur()
+        e.preventDefault(), o && e.stopPropagation(), null == s || s(null, null, e), c.blur()
     }
   }
   render() {
@@ -130,43 +130,43 @@ class b extends(r = Chunk473749.Component) {
       query: t,
       placeholder: n = Chunk388032.intl.string(Chunk388032.t.LzcpeZ),
       themeOverride: r,
-      disabled: l,
-      size: s,
+      disabled: s,
+      size: a,
       maxHeight: i,
       tags: u,
       onActivate: d,
       className: g,
       inputProps: b,
-      focusAfterReady: m
-    } = this.props, v = false, y = [];
-    return null != Chunk295907 && Chunk295907.length > 0 && ("string" == typeof Chunk295907[0] ? Chunk295907.forEach((e, t) => y.push((0, a.jsxs)(c.Anchor, {
+      focusAfterReady: v
+    } = this.props, m = false, y = [];
+    return null != Chunk295907 && Chunk295907.length > 0 && ("string" == typeof Chunk295907[0] ? Chunk295907.forEach((e, t) => y.push((0, l.jsxs)(c.Anchor, {
       focusProps: {
         offset: 4
       },
       className: f.tag,
       onClick: this.handleRemoveTag.bind(this, t),
-      children: [e, (0, a.jsx)(c.Dio, {
+      children: [e, (0, l.jsx)(c.Dio, {
         size: "md",
         color: "currentColor",
         className: f.close,
         "aria-label": p.intl.string(p.t.N86XcP)
       })]
-    }, t))) : (v = true, Chunk295907.forEach((e, t) => y.push((0, a.jsxs)(c.Anchor, {
+    }, t))) : (m = true, Chunk295907.forEach((e, t) => y.push((0, l.jsxs)(c.Anchor, {
       className: o()(f.tag, f.richTag),
       onClick: this.handleRemoveTag.bind(this, t),
-      children: [("MEMBER" === e.type || "USER" === e.type) && null != e.avatar && (0, a.jsx)(c.qEK, {
+      children: [("MEMBER" === e.type || "USER" === e.type) && null != e.avatar && (0, l.jsx)(c.qEK, {
         src: e.avatar,
         "aria-hidden": true,
         size: c.EFr.SIZE_16
-      }), "ROLE" === e.type && null != e.color && (0, a.jsx)("span", {
+      }), "ROLE" === e.type && null != e.color && (0, l.jsx)("span", {
         className: f.tagRoleColor,
         style: {
           backgroundColor: e.color
         }
-      }), (0, a.jsx)("span", {
+      }), (0, l.jsx)("span", {
         className: f.tagLabel,
         children: e.label
-      }), (0, a.jsx)(c.Dio, {
+      }), (0, l.jsx)(c.Dio, {
         size: "md",
         color: "currentColor",
         className: f.close,
@@ -177,17 +177,17 @@ class b extends(r = Chunk473749.Component) {
       ringTarget: this.containerRef,
       children: (0, Chunk54381.jsx)(Chunk481060.f6W, {
         theme: r,
-        children: r => (0, a.jsx)("div", {
+        children: r => (0, l.jsx)("div", {
           ref: this.containerRef,
-          className: o()(g, f.container, s, r, {
-            [f.disabled]: l
+          className: o()(g, f.container, a, r, {
+            [f.disabled]: s
           }),
-          children: (0, a.jsxs)(c.zJl, {
+          children: (0, l.jsxs)(c.zJl, {
             className: f.inner,
             style: {
               maxHeight: i
             },
-            children: [y, (0, a.jsx)("input", function(e) {
+            children: [y, (0, l.jsx)("input", function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);
@@ -200,7 +200,7 @@ class b extends(r = Chunk473749.Component) {
               return e
             }({
               className: o()(f.input, {
-                [f.richTagInput]: v
+                [f.richTagInput]: m
               }),
               type: "text",
               ref: this.ref,
@@ -210,9 +210,9 @@ class b extends(r = Chunk473749.Component) {
               onChange: this.handleChange,
               onKeyDown: this.handleKeyDown,
               onFocus: this.handleFocus,
-              disabled: l,
-              "aria-disabled": l,
-              autoFocus: !m && e,
+              disabled: s,
+              "aria-disabled": s,
+              autoFocus: !v && e,
               onMouseDown: d
             }, this.defaultInputProps, b))]
           })
@@ -225,26 +225,26 @@ class b extends(r = Chunk473749.Component) {
       role: "combobox",
       "aria-haspopup": "listbox",
       "aria-autocomplete": "list"
-    }), h(this, "ref", s.createRef()), h(this, "containerRef", s.createRef()), h(this, "previousHeight", 0), h(this, "handleKeyDown", e => {
+    }), h(this, "ref", a.createRef()), h(this, "containerRef", a.createRef()), h(this, "previousHeight", 0), h(this, "handleKeyDown", e => {
       let {
         onActivate: t,
         onKeyDown: n,
         onQueryChange: r,
-        useKeyboardNavigation: l
+        useKeyboardNavigation: s
       } = this.props;
       null != n && n(e);
       let {
-        current: a
+        current: l
       } = this.ref;
-      if (null == a || null != t) {
+      if (null == l || null != t) {
         e.key !== u.vn.TAB && (null == t || t(e));
         return
       }
-      if (e.key === u.vn.ESCAPE && null != a.value && "" !== a.value && a.value.length > 0) {
-        a.value = "", null != r && r("");
+      if (e.key === u.vn.ESCAPE && null != l.value && "" !== l.value && l.value.length > 0) {
+        l.value = "", null != r && r("");
         return
       }
-      l && (this.props.gridResults ? this.handleKeyDownGrid(e) : this.handleKeyDownList(e))
+      s && (this.props.gridResults ? this.handleKeyDownGrid(e) : this.handleKeyDownList(e))
     }), h(this, "handleChange", e => {
       let {
         onQueryChange: t
@@ -281,4 +281,4 @@ h(b, "Sizes", d), h(b, "defaultProps", {
   preventEscapePropagation: true,
   useKeyboardNavigation: true
 });
-let m = b
+let v = b

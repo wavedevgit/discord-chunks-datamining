@@ -2,7 +2,8 @@
 /** chunk id: 116741, original params: e,t,n (module,exports,require) **/
 module.exports = {
   row: "_0a9b0194cff11111-row",
-  displayName: "_0a9b0194cff11111-displayName",
   error: "_0a9b0194cff11111-error",
-  erroredAvatar: "_0a9b0194cff11111-erroredAvatar"
+  content: "_0a9b0194cff11111-content",
+  displayName: "_0a9b0194cff11111-displayName",
+  errorText: "_0a9b0194cff11111-errorText"
 }
