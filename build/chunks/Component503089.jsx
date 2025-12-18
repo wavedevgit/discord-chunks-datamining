@@ -306,7 +306,7 @@ class P extends Chunk473749.PureComponent {
         id: i,
         onClick: c,
         className: p,
-        "aria-label": l,
+        "aria-label": null != l ? l : "",
         children: O
       }, i)
     })

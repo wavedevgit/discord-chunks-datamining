@@ -52,11 +52,11 @@ let P = (t, e) => {
       return module === Chunk997950.Th ? require || exports : Chunk755721
     },
     setValue: t => {
-      let e = _.xu.getState().selectedGuildId;
+      let e = g.xu.getState().selectedGuildId;
       if (!t && (0, c.S)()) return void l.Z.showAgeVerificationGetStartedModal({
         entryPoint: s.cU.MESSAGE_REQUESTS_SETTINGS
       });
-      if (e === _.Th) {
+      if (e === g.Th) {
         var n;
         n = !t, (0, N.V)({
           header: f.intl.string(f.t.yAfu1p),

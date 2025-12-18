@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 536527, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  r: () => g
+  r: () => _
 });
 var Chunk442837 = require("./442837.js"),
   Chunk493773 = require("./493773.js"),
@@ -18,7 +18,7 @@ let d = (0, Chunk972959.H)(() => ({
     syncEnabled: null,
     updateTimeout: null
   })),
-  g = (0, Chunk509613.qs)(Chunk313789.n.SYNC_FORCED_COLORS, {
+  _ = (0, Chunk509613.qs)(Chunk313789.n.SYNC_FORCED_COLORS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.cguiec),
     useSubtitle: () => Chunk388032.intl.format(Chunk388032.t.GwEVE2, {
       learnMoreLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.FORCED_COLORS)

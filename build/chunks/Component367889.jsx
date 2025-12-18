@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk684610 = require("./684610.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = (0, Chunk509613.wf)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
+let g = (0, Chunk509613.wf)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.trSpHX),
     StronglyDiscouragedCustomComponent: Chunk813732.Z,
     buildLayout: () => []
@@ -36,5 +36,5 @@ let _ = (0, Chunk509613.wf)(Chunk313789.n.SUBSCRIPTIONS_PANEL, {
         color: Chunk692547.Z.unsafe_rawColors.YELLOW_300
       }) : null
     },
-    buildLayout: () => (0, Chunk526665.Gl)("SubscriptionsPanel") ? [I] : [_]
+    buildLayout: () => (0, Chunk526665.Gl)("SubscriptionsPanel") ? [I] : [g]
   })

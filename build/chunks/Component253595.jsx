@@ -16,16 +16,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk710808 = require("./710808.jsx"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = (0, Chunk972959.H)(() => ({
+let g = (0, Chunk972959.H)(() => ({
   isUploading: false,
   isDisabled: false
 }));
 async function I() {
   await (0, Chunk710808.xI)({
-    onUploadStart: () => _.setState({
+    onUploadStart: () => g.setState({
       isUploading: true
     }),
-    onUploadFinish: () => _.setState({
+    onUploadFinish: () => g.setState({
       isUploading: false,
       isDisabled: true
     })
@@ -39,8 +39,8 @@ let N = (0, Chunk509613.ON)(Chunk313789.n.VOICE_AND_VIDEO_DEBUG_LOGGING, {
   },
   Component: function() {
     let t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getDebugLogging()),
-      e = _.useField("isUploading"),
-      n = _.useField("isDisabled"),
+      e = g.useField("isUploading"),
+      n = g.useField("isDisabled"),
       s = Chunk473749.useId();
     return (0, Chunk54381.jsxs)("fieldset", {
       children: [(0, Chunk54381.jsx)(Chunk793030.nn4, {

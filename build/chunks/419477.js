@@ -16,7 +16,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk435342 = require("./435342.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = (0, Chunk509613.k4)(Chunk313789.n.GIFT_INVENTORY_CATEGORY, {
+let g = (0, Chunk509613.k4)(Chunk313789.n.GIFT_INVENTORY_CATEGORY, {
     buildLayout: () => [Chunk12025.R, Chunk874235.n, Chunk501419.f, Chunk435342.Y]
   }),
   I = (0, Chunk509613.wf)(Chunk313789.n.GIFT_PANEL, {
@@ -28,7 +28,7 @@ let _ = (0, Chunk509613.k4)(Chunk313789.n.GIFT_INVENTORY_CATEGORY, {
   N = (0, Chunk509613.wf)(Chunk313789.n.GIFT_PANEL, {
     usePredicate: () => (0, Chunk526665.gN)("GiftPanel"),
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["jcSP+g"]),
-    buildLayout: () => [_]
+    buildLayout: () => [g]
   }),
   A = (0, Chunk509613.m7)(Chunk313789.n.GIFT_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["jcSP+g"]),

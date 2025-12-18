@@ -2,7 +2,8 @@
 /** chunk id: 901151, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => R,
+  e: () => P
 }), require("./642613.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -157,30 +158,55 @@ function C() {
 }
 
 function A() {
+  return (0, Chunk54381.jsxs)("div", {
+    className: Chunk285044.emptyContainer,
+    children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
+      variant: "text-md/medium",
+      color: "text-strong",
+      className: Chunk285044.noGamesConnectedText,
+      children: Chunk388032.intl.string(Chunk388032.t["+0U77d"])
+    }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+      variant: "text-sm/normal",
+      color: "text-muted",
+      children: Chunk388032.intl.format(Chunk388032.t.V8wClM, {
+        helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SOCIAL_LAYER_CONNECTIONS)
+      })
+    })]
+  })
+}
+
+function N(e) {
+  let {
+    applications: t
+  } = e;
+  return t.length > 0 ? (0, r.jsx)(I, {
+    applications: t
+  }) : (0, r.jsx)(A, {})
+}
+
+function P() {
+  let {
+    showLoadingIndicator: e,
+    slayerSdkApplications: t
+  } = (0, Chunk749876.Z)(true);
+  return module ? (0, Chunk54381.jsx)(Chunk481060.$jN, {}) : (0, Chunk54381.jsx)(N, {
+    applications: exports
+  })
+}
+
+function R() {
   let {
     showLoadingIndicator: e,
     slayerSdkApplications: t
   } = (0, Chunk749876.Z)(true);
   return (0, Chunk54381.jsx)(Chunk546957.Z, {
-    children: module ? (0, Chunk54381.jsx)(Chunk481060.$jN, {}) : exports.length > 0 ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(I, {
+    children: module ? (0, Chunk54381.jsx)(Chunk481060.$jN, {}) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      children: [(0, Chunk54381.jsx)(N, {
         applications: exports
-      }), (0, Chunk54381.jsx)(T, {}), (0, Chunk54381.jsx)("div", {
-        className: Chunk285044.divider
-      }), (0, Chunk54381.jsx)(C, {})]
-    }) : (0, Chunk54381.jsxs)("div", {
-      className: Chunk285044.emptyContainer,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
-        variant: "text-md/medium",
-        color: "text-strong",
-        className: Chunk285044.noGamesConnectedText,
-        children: Chunk388032.intl.string(Chunk388032.t["+0U77d"])
-      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
-        variant: "text-sm/normal",
-        color: "text-muted",
-        children: Chunk388032.intl.format(Chunk388032.t.V8wClM, {
-          helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SOCIAL_LAYER_CONNECTIONS)
-        })
+      }), exports.length > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+        children: [(0, Chunk54381.jsx)(T, {}), (0, Chunk54381.jsx)("div", {
+          className: Chunk285044.divider
+        }), (0, Chunk54381.jsx)(C, {})]
       })]
     })
   })

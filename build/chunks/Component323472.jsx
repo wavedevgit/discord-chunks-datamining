@@ -59,11 +59,11 @@ function d(t, e) {
   u()(s > 0, "[useSettingCollapsibleSubtitle] Limit must be greater than 0");
   let {
     visibleDirectory: d,
-    accessibleDirectory: g
-  } = (0, r.t)(), _ = null != (n = d.get(t)) ? n : g.get(t);
-  u()(null != _ && (_.type === a.Jq.ACCORDION || E(_)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
-  let I = E(_) && null != (i = _.collapseAfter) ? i : 0,
-    N = _.layout;
+    accessibleDirectory: _
+  } = (0, r.t)(), g = null != (n = d.get(t)) ? n : _.get(t);
+  u()(null != g && (g.type === a.Jq.ACCORDION || E(g)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
+  let I = E(g) && null != (i = g.collapseAfter) ? i : 0,
+    N = g.layout;
   return l.useMemo(() => {
     let t = I,
       e = [];

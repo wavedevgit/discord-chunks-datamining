@@ -48,7 +48,7 @@ let O = (t, e) => {
       let e = c.xu.getState().selectedGuildId;
       if (e === c.Th) {
         var n;
-        n = !t, (0, g.V)({
+        n = !t, (0, _.V)({
           header: A.intl.string(A.t["uUr+GR"]),
           body: A.intl.string(A.t.hjGJBp),
           confirmText: A.intl.string(A.t.gm1Vej),
@@ -64,7 +64,7 @@ let O = (t, e) => {
       } else {
         let n = (0, a.YK)();
         t ? n.delete(e) : n.add(e), T.h2.updateSetting(Array.from(n)), r.default.track(N.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-          action: _.Y.DIRECT_MESSAGES_TOGGLE,
+          action: g.Y.DIRECT_MESSAGES_TOGGLE,
           ingress: I.f4.USER_SETTINGS_PRIVACY_SAFETY,
           guild_id: e
         })

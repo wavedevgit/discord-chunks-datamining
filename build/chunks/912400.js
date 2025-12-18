@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 912400, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  h: () => g
+  h: () => _
 });
 var Chunk657707 = require("./657707.js"),
   Chunk384275 = require("./384275.js"),
@@ -33,7 +33,7 @@ let c = (0, Chunk509613.k4)(Chunk313789.n.AUTHORIZED_APPS_CATEGORY, {
     hideInStreamerMode: true,
     buildLayout: () => [c]
   }),
-  g = (0, Chunk509613.m7)(Chunk313789.n.AUTHORIZED_APPS_SIDEBAR_ITEM, {
+  _ = (0, Chunk509613.m7)(Chunk313789.n.AUTHORIZED_APPS_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["f6kk+r"]),
     getLegacySearchKey: () => (0, Chunk526665.Gl)("AuthorizedAppsPanel") ? true : Chunk726985.s6.AUTHORIZED_APPS,
     icon: Chunk657707.jje,

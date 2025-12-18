@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 305314, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  L: () => g
+  L: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -34,7 +34,7 @@ let E = (0, Chunk509613.UO)(Chunk313789.n.APPEARANCE_ZOOM, {
       })
     })
   }),
-  g = (0, Chunk509613.$l)(Chunk313789.n.APPEARANCE_ZOOM_LIST, {
+  _ = (0, Chunk509613.$l)(Chunk313789.n.APPEARANCE_ZOOM_LIST, {
     usePredicate: () => Chunk358085.isPlatformEmbedded,
     buildLayout: () => [E, d]
   })

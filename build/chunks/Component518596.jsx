@@ -134,7 +134,8 @@ function S(e) {
 
 function I() {
   let e = (0, Chunk526665.KV)("getWebUserSettingFromSection"),
-    t = new Map([
+    t = (0, Chunk526665.Gl)("getWebUserSettingFromSection"),
+    n = new Map([
       [Chunk981631.oAB.ACCOUNT, Chunk313789.n.ACCOUNT_PANEL],
       [Chunk981631.oAB.PROFILE_CUSTOMIZATION, Chunk313789.n.PROFILE_PANEL],
       [Chunk981631.oAB.CONTENT_AND_SOCIAL, Chunk313789.n.CONTENT_AND_SOCIAL_PANEL],
@@ -168,9 +169,10 @@ function I() {
       [Chunk981631.oAB.OVERLAY, Chunk313789.n.OVERLAY_PANEL],
       [Chunk981631.oAB.EXPERIMENTS, Chunk313789.n.EXPERIMENTS_PANEL],
       [Chunk981631.oAB.DEVELOPER_OPTIONS, Chunk313789.n.DEVELOPER_OPTIONS_PANEL],
-      [Chunk981631.oAB.ACCOUNT_STANDING, Chunk313789.n.ACCOUNT_STANDING_CATEGORY]
+      [Chunk981631.oAB.ACCOUNT_STANDING, Chunk313789.n.ACCOUNT_STANDING_CATEGORY],
+      [Chunk981631.oAB.CONNECTED_GAMES, Chunk313789.n.CONTENT_AND_SOCIAL_CONNECTED_GAMES_CATEGORY]
     ]);
-  return module && !(0, Chunk924557.w2)() && exports.delete(Chunk981631.oAB.CLIPS), exports
+  return module && !(0, Chunk924557.w2)() && require.delete(Chunk981631.oAB.CLIPS), exports || require.delete(Chunk981631.oAB.CONNECTED_GAMES), require
 }
 
 function T() {

@@ -1,7 +1,7 @@
 /** Chunk was on 77069 **/
 /** chunk id: 172320, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  z: () => g
+  z: () => _
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -29,6 +29,6 @@ let d = (0, Chunk509613.ON)(Chunk313789.n.ACCOUNT_PROFILE_SETTING, {
       })
     }
   }),
-  g = (0, Chunk509613.k4)(Chunk313789.n.ACCOUNT_PROFILE_CATEGORY, {
+  _ = (0, Chunk509613.k4)(Chunk313789.n.ACCOUNT_PROFILE_CATEGORY, {
     buildLayout: () => [d]
   })

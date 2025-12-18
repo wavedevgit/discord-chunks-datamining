@@ -17,10 +17,10 @@ var Chunk657707 = require("./657707.js"),
 let d = (0, Chunk509613.k4)(Chunk313789.n.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, {
     buildLayout: () => [Chunk984975.u]
   }),
-  g = (0, Chunk509613.k4)(Chunk313789.n.CONNECTIONS_CONNECTED_ACCOUNTS_CATEGORY, {
+  _ = (0, Chunk509613.k4)(Chunk313789.n.CONNECTIONS_CONNECTED_ACCOUNTS_CATEGORY, {
     buildLayout: () => [Chunk105429.T]
   }),
-  _ = (0, Chunk509613.wf)(Chunk313789.n.CONNECTIONS_PANEL, {
+  g = (0, Chunk509613.wf)(Chunk313789.n.CONNECTIONS_PANEL, {
     usePredicate: () => !(0, Chunk526665.gN)("LegacyConnectionsPanel"),
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["3fe7U5"]),
     hideInStreamerMode: true,
@@ -31,7 +31,7 @@ let d = (0, Chunk509613.k4)(Chunk313789.n.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, 
     usePredicate: () => (0, Chunk526665.gN)("ConnectionsPanel"),
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["3fe7U5"]),
     hideInStreamerMode: true,
-    buildLayout: () => [d, g]
+    buildLayout: () => [d, _]
   }),
   N = (0, Chunk509613.m7)(Chunk313789.n.CONNECTIONS_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["3fe7U5"]),
@@ -41,5 +41,5 @@ let d = (0, Chunk509613.k4)(Chunk313789.n.CONNECTIONS_ADD_CONNECTIONS_CATEGORY, 
       type: Chunk970013.W.BADGE_NEW,
       getDismissibleContentTypes: () => [Chunk704215.z.NEW_CRUNCHYROLL_CONNECTION]
     },
-    buildLayout: () => (0, Chunk526665.Gl)("ConnectionsPanel") ? [I] : [_]
+    buildLayout: () => (0, Chunk526665.Gl)("ConnectionsPanel") ? [I] : [g]
   })

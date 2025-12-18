@@ -16,7 +16,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk572161 = require("./572161.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = (0, Chunk509613.k4)(Chunk313789.n.SESSIONS_DESCRIPTION_CATEGORY, {
+let g = (0, Chunk509613.k4)(Chunk313789.n.SESSIONS_DESCRIPTION_CATEGORY, {
     buildLayout: () => [Chunk572161.Z]
   }),
   I = (0, Chunk509613.k4)(Chunk313789.n.SESSIONS_CATEGORY, {
@@ -36,7 +36,7 @@ let _ = (0, Chunk509613.k4)(Chunk313789.n.SESSIONS_DESCRIPTION_CATEGORY, {
     usePredicate: () => (0, Chunk526665.gN)("SessionsPanel"),
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
     hideInStreamerMode: true,
-    buildLayout: () => [_, I]
+    buildLayout: () => [g, I]
   }),
   O = (0, Chunk509613.m7)(Chunk313789.n.SESSIONS_SIDEBAR_ITEM, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
