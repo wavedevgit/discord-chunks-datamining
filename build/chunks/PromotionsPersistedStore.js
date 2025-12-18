@@ -175,6 +175,10 @@ class j extends(r = Chunk442837.ZP.PersistedStore) {
   get promotionsByType() {
     return b
   }
+  getPromotionByTypeAndId(e, t) {
+    var n;
+    return null == (n = b[e]) ? true : n[t]
+  }
   getState() {
     return p
   }
