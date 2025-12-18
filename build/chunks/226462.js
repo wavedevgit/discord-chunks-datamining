@@ -6,9 +6,10 @@ module.exports = {
   avatar: "_20a53846fe2e8513-avatar",
   highlighted: "_20a53846fe2e8513-highlighted",
   layout: "_20a53846fe2e8513-layout",
+  fullWidth: "_20a53846fe2e8513-fullWidth",
   content: "_20a53846fe2e8513-content",
-  name: "_20a53846fe2e8513-name",
   nameAndDecorators: "_20a53846fe2e8513-nameAndDecorators",
+  name: "_20a53846fe2e8513-name",
   subText: "_20a53846fe2e8513-subText",
   withDisplayNameStyles: "_20a53846fe2e8513-withDisplayNameStyles"
 }

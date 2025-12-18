@@ -20,20 +20,23 @@ let l = Chunk473749.forwardRef((e, t) => {
     avatarClassName: d,
     innerClassName: f,
     nameClassName: p,
-    withDisplayNameStyles: _ = false
+    subtextClassName: _,
+    withDisplayNameStyles: m = false,
+    fullWidth: h = false
   } = e;
   return (0, r.jsxs)("div", {
     ref: t,
     className: o()(s.layout, f, {
       [s.muted]: n,
-      [s.highlighted]: i
+      [s.highlighted]: i,
+      [s.fullWidth]: h
     }),
     children: [(0, r.jsx)("div", {
       className: o()(s.avatar, d),
       children: a
     }), (0, r.jsxs)("div", {
       className: o()(s.content, {
-        [s.withDisplayNameStyles]: _
+        [s.withDisplayNameStyles]: m
       }),
       children: [(0, r.jsxs)("div", {
         className: s.nameAndDecorators,
@@ -42,7 +45,7 @@ let l = Chunk473749.forwardRef((e, t) => {
           children: c
         }), l]
       }), null != u ? (0, r.jsx)("div", {
-        className: s.subText,
+        className: o()(s.subText, _),
         children: u
       }) : null]
     })]

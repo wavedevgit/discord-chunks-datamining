@@ -17,15 +17,15 @@ let d = Chunk473749.forwardRef(function(e, t) {
     children: i,
     onContextMenu: l,
     onClick: d,
-    onMouseDown: f,
-    disabled: m,
+    onMouseDown: m,
+    disabled: f,
     icon: p,
     iconForeground: g,
     innerClassName: y,
     className: b,
     redGlow: v,
-    orangeGlow: O,
-    tooltipClassName: h,
+    orangeGlow: h,
+    tooltipClassName: O,
     onMouseEnter: x,
     onMouseLeave: j,
     "aria-label": P,
@@ -46,7 +46,7 @@ let d = Chunk473749.forwardRef(function(e, t) {
   }) : p;
   return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
-    tooltipClassName: h,
+    tooltipClassName: O,
     text: n,
     "aria-label": P,
     color: E,
@@ -58,7 +58,7 @@ let d = Chunk473749.forwardRef(function(e, t) {
       var n, s, {
           onClick: p,
           onMouseEnter: g,
-          onMouseLeave: h
+          onMouseLeave: O
         } = e,
         P = function(e, t) {
           if (null == e) return {};
@@ -98,26 +98,26 @@ let d = Chunk473749.forwardRef(function(e, t) {
         buttonRef: t,
         look: o.zx.Looks.BLANK,
         size: o.zx.Sizes.NONE,
-        disabled: m,
+        disabled: f,
         innerClassName: y,
         wrapperClassName: a()(c.button, b),
         className: a()(c.button, b, {
           [c.redGlow]: v,
-          [c.orangeGlow]: O,
-          [c.disabled]: m,
-          [c.enabled]: !m,
+          [c.orangeGlow]: h,
+          [c.disabled]: f,
+          [c.enabled]: !f,
           [c.plated]: w,
           [c.plateMuted]: v && w
         }),
         onClick: e => {
           null != p && p(), null != d && d(e)
         },
-        onMouseDown: f,
+        onMouseDown: m,
         onMouseEnter: () => {
           null == g || g(), null == x || x()
         },
         onMouseLeave: () => {
-          null == h || h(), null == j || j()
+          null == O || O(), null == j || j()
         },
         onContextMenu: l,
         role: N,

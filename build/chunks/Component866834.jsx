@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk937889 = require("./937889.js"),
   Chunk28005 = require("./28005.js");
 
-function f(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,7 +32,7 @@ function f(e) {
   return e
 }
 
-function m(e) {
+function f(e) {
   var {
     icon: t
   } = e, n = function(e, t) {
@@ -52,21 +52,21 @@ function m(e) {
   }(e, ["icon"]);
   switch (t) {
     case "image":
-      return (0, r.jsx)(o.XBm, f({}, n));
+      return (0, r.jsx)(o.XBm, m({}, n));
     case "video":
-      return (0, r.jsx)(o.Odl, f({}, n));
+      return (0, r.jsx)(o.Odl, m({}, n));
     case "audio":
-      return (0, r.jsx)(o.RZG, f({}, n));
+      return (0, r.jsx)(o.RZG, m({}, n));
     case "attachment":
-      return (0, r.jsx)(o.Ujz, f({}, n));
+      return (0, r.jsx)(o.Ujz, m({}, n));
     case "link":
-      return (0, r.jsx)(o.xPt, f({}, n));
+      return (0, r.jsx)(o.xPt, m({}, n));
     case "sticker":
-      return (0, r.jsx)(o.SlE, f({}, n));
+      return (0, r.jsx)(o.SlE, m({}, n));
     case "call-active":
-      return (0, r.jsx)(o.Csw, f({}, n));
+      return (0, r.jsx)(o.Csw, m({}, n));
     case "call-ended":
-      return (0, r.jsx)(o.gkL, f({}, n))
+      return (0, r.jsx)(o.gkL, m({}, n))
   }
 }
 let p = Chunk473749.memo(function(e) {
@@ -113,7 +113,7 @@ function y(e) {
     children: [(0, r.jsxs)("span", {
       className: d.messageContent,
       children: [null != o && "".concat(o, ": "), t]
-    }), null != c && (0, r.jsx)(m, {
+    }), null != c && (0, r.jsx)(f, {
       icon: c,
       size: "xs",
       color: "currentColor",
