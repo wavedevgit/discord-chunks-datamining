@@ -2,63 +2,101 @@
 /** chunk id: 937615, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  T3: () => f,
-  T4: () => u,
-  og: () => d,
-  qr: () => m,
-  xg: () => p
+  T3: () => b,
+  T4: () => g,
+  og: () => E,
+  qr: () => v,
+  xg: () => y
 }), require("./415506.js"), require("./704826.js"), require("./35282.js");
 var Chunk221513 = require("./221513.js"),
   Chunk706454 = require("./706454.js"),
+  Chunk351402 = require("./351402.js"),
   Chunk358085 = require("./358085.js"),
   Chunk74538 = require("./74538.js"),
   Chunk474936 = require("./474936.js"),
+  Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx");
-let c = Object.freeze(["en-CA", "en-AU", "en-NZ"]);
-
-function u(e, t, n) {
-  var o;
-  let s = null != n ? n : {},
-    l = null != (o = null == n ? true : n.localeOverride) ? o : i.default.locale;
-  "en-US" === l && c.includes(i.default.systemLocale) && (s.currencyDisplay = "code"), "en-US" === l && (0, a.isWindows)() && "en-GB" === i.default.systemLocale && (s.currencyDisplay = "code");
-  let {
-    maximumFractionDigits: u,
-    minimumFractionDigits: d
-  } = s;
-  return 0 === u && null == d && (s.minimumFractionDigits = 0), (0, r.T4)(e, t, l, s)
-}
 
 function d(e, t, n) {
-  if (t === s.rV.YEAR) return l.intl.formatToPlainString(l.t["rS8FA+"], {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function f(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      d(e, t, n[t])
+    })
+  }
+  return e
+}
+let p = Object.freeze(["en-CA", "en-AU", "en-NZ"]),
+  _ = 1.95583;
+
+function m(e, t, n) {
+  var a;
+  let s = f({}, null != n ? n : {}),
+    l = null != (a = null == n ? true : n.localeOverride) ? a : i.default.locale;
+  "en-US" === l && p.includes(i.default.systemLocale) && (s.currencyDisplay = "code"), "en-US" === l && (0, o.isWindows)() && "en-GB" === i.default.systemLocale && (s.currencyDisplay = "code");
+  let {
+    maximumFractionDigits: c,
+    minimumFractionDigits: u
+  } = s;
+  return 0 === c && null == u && (s.minimumFractionDigits = 0), (0, r.T4)(e, t, l, s)
+}
+
+function h(e) {
+  return (!!(0, o.isDesktop)() || !!(0, o.isWeb)()) && "BG" === a.Z.ipCountryCode && (null == e ? true : e.toLowerCase()) === c.pK.EUR
+}
+
+function g(e, t, n) {
+  if (h(t)) {
+    let r = m(e, t, n),
+      i = m(e * _, c.pK.BGN, n);
+    return "".concat(r, " (").concat(i, ")")
+  }
+  return m(e, t, n)
+}
+
+function E(e, t, n) {
+  if (t === l.rV.YEAR) return u.intl.formatToPlainString(u.t["rS8FA+"], {
     price: e
   });
-  if (t === s.rV.MONTH && 1 === n) return l.intl.formatToPlainString(l.t.AbOLNu, {
+  if (t === l.rV.MONTH && 1 === n) return u.intl.formatToPlainString(u.t.AbOLNu, {
     price: e
   });
-  if (t === s.rV.MONTH && n > 1) return l.intl.formatToPlainString(l.t["Qc+9ww"], {
+  if (t === l.rV.MONTH && n > 1) return u.intl.formatToPlainString(u.t["Qc+9ww"], {
     price: e,
     intervalCount: n
   });
   throw Error("Unsupported interval type: ".concat(t, ", and interval count: ").concat(n))
 }
 
-function f(e, t) {
+function b(e, t) {
   return Intl.NumberFormat(e, {
     style: "percent",
     minimumFractionDigits: 0
   }).format(t)
 }
 
-function p(e) {
+function y(e) {
   let t = "interval_count" in e ? e.interval_count : e.intervalCount,
-    n = (0, o.aS)(e.id);
-  return d(u(n.amount, n.currency), e.interval, t)
+    n = (0, s.aS)(e.id);
+  return E(g(n.amount, n.currency), e.interval, t)
 }
 
-function _(e) {
-  return e.length > 5 ? e.replace(/\.00$/, "") : e
+function O(e) {
+  return e.length > 5 ? e.replace(/\.00(?=[\s)]|$)/g, "") : e
 }
 
-function m(e, t, n) {
-  return _(u(e, t, n))
+function v(e, t, n) {
+  return O(g(e, t, n))
 }
