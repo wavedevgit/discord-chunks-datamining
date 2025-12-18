@@ -247,18 +247,20 @@ async function G(e, t) {
   });
   try {
     let n = (0, v.jY)(t.questContent),
-      r = await i.tn.post({
+      r = (0, v.R_)(t.questContent),
+      o = await i.tn.post({
         url: T.ANM.QUESTS_ENROLL(e),
         body: R(N({
           location: t.questContent
         }, (0, v.qe)(e, t.questContent)), {
-          metadata_raw: null != n ? n : null
+          metadata_raw: null != n ? n : null,
+          metadata_sealed: null != r ? r : null
         }),
         rejectWithError: true
       });
     return a.Z.dispatch({
       type: "QUESTS_ENROLL_SUCCESS",
-      enrolledQuestUserStatus: (0, S.U3)(r.body)
+      enrolledQuestUserStatus: (0, S.U3)(o.body)
     }), {
       type: "success"
     }
@@ -281,26 +283,28 @@ async function Z(e, t, n) {
     });
     try {
       let r = (0, v.jY)(n),
-        o = await i.tn.post({
+        o = (0, v.R_)(n),
+        s = await i.tn.post({
           url: T.ANM.QUESTS_CLAIM_REWARD(e),
           body: R(N({
             platform: t,
             location: n
           }, (0, v.qe)(e, n)), {
-            metadata_raw: null != r ? r : null
+            metadata_raw: null != r ? r : null,
+            metadata_sealed: null != o ? o : null
           }),
           rejectWithError: false
         }),
-        s = (0, S.Xh)(o.body);
-      return 0 === s.errors.length ? a.Z.dispatch({
+        l = (0, S.Xh)(s.body);
+      return 0 === l.errors.length ? a.Z.dispatch({
         type: "QUESTS_CLAIM_REWARD_SUCCESS",
         questId: e,
-        entitlements: s
+        entitlements: l
       }) : a.Z.dispatch({
         type: "QUESTS_CLAIM_REWARD_FAILURE",
-        error: s.errors,
+        error: l.errors,
         questId: e
-      }), s
+      }), l
     } catch (t) {
       throw a.Z.dispatch({
         type: "QUESTS_CLAIM_REWARD_FAILURE",
