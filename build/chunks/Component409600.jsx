@@ -19,14 +19,14 @@ function g(e) {
   let {
     onClose: n,
     onComplete: t,
-    transitionState: l,
+    transitionState: a,
     applicationId: r,
     analyticsLocationObject: o,
     skuId: u
   } = e, {} = (0, s.JL)(), {
     analyticsLocations: d
-  } = (0, a.ZP)();
-  return (0, i.jsx)(c.PaymentModal, {
+  } = (0, i.ZP)();
+  return (0, l.jsx)(c.PaymentModal, {
     onClose: n,
     onComplete: t,
     applicationId: r,
@@ -34,7 +34,7 @@ function g(e) {
     initialPlanId: null,
     analyticsObject: o,
     analyticsLocations: d,
-    transitionState: l
+    transitionState: a
   })
 }
 
@@ -47,10 +47,10 @@ function p(e) {
     isGift: m = false
   } = e, {
     analyticsLocations: b
-  } = (0, a.ZP)(p, l.Z.PREMIUM_PAYMENT_MODAL);
-  return (0, i.jsx)(a.Gt, {
+  } = (0, i.ZP)(p, a.Z.PREMIUM_PAYMENT_MODAL);
+  return (0, l.jsx)(i.Gt, {
     value: b,
-    children: (0, i.jsx)(s.PaymentContextProvider, {
+    children: (0, l.jsx)(s.PaymentContextProvider, {
       loadId: n,
       stepConfigs: function() {
         let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
@@ -61,23 +61,23 @@ function p(e) {
       activeSubscription: null,
       purchaseType: f.GZ.ONE_TIME,
       isGift: m,
-      children: (0, i.jsx)(o.c1, {
-        children: (0, i.jsx)(r.KB, {
+      children: (0, l.jsx)(o.c1, {
+        children: (0, l.jsx)(r.KB, {
           isGift: m,
-          children: (0, i.jsx)(g, function(e) {
+          children: (0, l.jsx)(g, function(e) {
             for (var n = 1; n < arguments.length; n++) {
               var t = null != arguments[n] ? arguments[n] : {},
-                i = Object.keys(t);
-              "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+                l = Object.keys(t);
+              "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(t, e).enumerable
-              }))), i.forEach(function(n) {
-                var i;
-                i = t[n], n in e ? Object.defineProperty(e, n, {
-                  value: i,
+              }))), l.forEach(function(n) {
+                var l;
+                l = t[n], n in e ? Object.defineProperty(e, n, {
+                  value: l,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[n] = i
+                }) : e[n] = l
               })
             }
             return e

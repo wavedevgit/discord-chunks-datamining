@@ -137,7 +137,6 @@ let Y = e => {
   } = (0, _.JL)(), N = (0, s.e7)([S.default], () => S.default.getCurrentUser()), P = V(null == N ? true : N.id, o, b), x = (0, s.e7)([I.Z], () => null != v ? I.Z.get(v) : null, [v]), L = (0, A.Do)(x), G = (0, A.a7)(x), Z = (0, w.K)(x, {
     shouldFetchIfMissing: true
   }), F = async (e, t) => {}, B = () => (0, r.jsx)(g.Z, {
-    sectionTitle: k.intl.string(k.t.B3miE8),
     onTextChange: e => null == a ? true : a(e),
     pendingText: i,
     currentText: i,

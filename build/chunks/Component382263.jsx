@@ -25,20 +25,20 @@ var Chunk442837 = require("./442837.js"),
   Chunk321412 = require("./321412.js");
 let O = {
   key: Chunk409813.h8.GIFT_CUSTOMIZATION,
-  renderStep: e => (0, i.jsx)(k, function(e) {
+  renderStep: e => (0, l.jsx)(k, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
-        i = Object.keys(t);
-      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+        l = Object.keys(t);
+      "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
         return Object.getOwnPropertyDescriptor(t, e).enumerable
-      }))), i.forEach(function(n) {
-        var i;
-        i = t[n], n in e ? Object.defineProperty(e, n, {
-          value: i,
+      }))), l.forEach(function(n) {
+        var l;
+        l = t[n], n in e ? Object.defineProperty(e, n, {
+          value: l,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[n] = i
+        }) : e[n] = l
       })
     }
     return e
@@ -53,19 +53,19 @@ function C(e) {
   let {
     onStepChange: n,
     onBackClick: t,
-    showBackButton: l = false,
+    showBackButton: a = false,
     disabled: r = false,
     loading: s = false
   } = e, {
     hasPaymentSources: o
   } = (0, b.JL)(), c = o ? h.h8.REVIEW : h.h8.ADD_PAYMENT_STEPS;
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(a.Button, {
+  return (0, l.jsxs)(l.Fragment, {
+    children: [(0, l.jsx)(i.Button, {
       onClick: () => n(c),
       disabled: r,
       loading: s,
       text: v.intl.string(v.t.XiOHRX)
-    }), l ? (0, i.jsx)(u.Z, {
+    }), a ? (0, l.jsx)(u.Z, {
       onClick: t
     }) : null]
   })
@@ -78,35 +78,34 @@ function k(e) {
     handleClose: u
   } = e, {
     customGiftMessage: h = "",
-    setCustomGiftMessage: O,
-    giftRecipient: k
+    setCustomGiftMessage: v,
+    giftRecipient: O
   } = (0, m.wD)(), {
-    selectedSkuId: P
-  } = (0, b.JL)(), I = (0, l.e7)([d.default], () => d.default.getCurrentUser()), T = (0, l.e7)([f.Z], () => null != P ? f.Z.get(P) : null, [P]), E = (0, s.Z)({}), M = (0, l.e7)([g.Z], () => null != P ? g.Z.getForSKU(P) : null, [P]), Z = (null == M ? true : M.headerBackground) != null && (null == T ? true : T.applicationId) != null ? (0, p._W)(T.applicationId, M.headerBackground, 256) : true, S = async (e, n) => {};
-  return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(y.C3, {
-      children: (0, i.jsxs)("div", {
+    selectedSkuId: k
+  } = (0, b.JL)(), P = (0, a.e7)([d.default], () => d.default.getCurrentUser()), I = (0, a.e7)([f.Z], () => null != k ? f.Z.get(k) : null, [k]), T = (0, s.Z)({}), E = (0, a.e7)([g.Z], () => null != k ? g.Z.getForSKU(k) : null, [k]), M = (null == E ? true : E.headerBackground) != null && (null == I ? true : I.applicationId) != null ? (0, p._W)(I.applicationId, E.headerBackground, 256) : true, Z = async (e, n) => {};
+  return (0, l.jsxs)(l.Fragment, {
+    children: [(0, l.jsx)(y.C3, {
+      children: (0, l.jsxs)("div", {
         className: x.stepBody,
-        children: [(0, i.jsxs)("div", {
+        children: [(0, l.jsxs)("div", {
           className: x.bodyColumnLeft,
-          children: [(null == T ? true : T.name) != null && (0, i.jsx)(a.Heading, {
+          children: [(null == I ? true : I.name) != null && (0, l.jsx)(i.Heading, {
             variant: "heading-lg/semibold",
             color: "text-strong",
-            children: T.name
-          }), null != Z && (0, i.jsx)("img", {
-            src: Z,
-            alt: null != (n = null == T ? true : T.name) ? n : "",
+            children: I.name
+          }), null != M && (0, l.jsx)("img", {
+            src: M,
+            alt: null != (n = null == I ? true : I.name) ? n : "",
             className: x.skuImage
           })]
-        }), (0, i.jsxs)("div", {
+        }), (0, l.jsxs)("div", {
           className: x.bodyColumnRight,
-          children: [(0, i.jsx)(r.Z, {
-            recipients: E,
-            selectedSkuId: P,
-            validateSelectedGift: S
-          }), (0, i.jsx)(c.Z, {
-            sectionTitle: v.intl.string(v.t.B3miE8),
-            onTextChange: e => null == O ? true : O(e),
+          children: [(0, l.jsx)(r.Z, {
+            recipients: T,
+            selectedSkuId: k,
+            validateSelectedGift: Z
+          }), (0, l.jsx)(c.Z, {
+            onTextChange: e => null == v ? true : v(e),
             pendingText: h,
             currentText: h,
             disableThemedBackground: true,
@@ -115,15 +114,15 @@ function k(e) {
           })]
         })]
       })
-    }), (0, i.jsx)(y.O3, {
-      children: (0, i.jsx)(a.mzw, {
+    }), (0, l.jsx)(y.O3, {
+      children: (0, l.jsx)(i.mzw, {
         "data-migration-pending": true,
         justify: o.Z.Justify.BETWEEN,
         align: o.Z.Align.CENTER,
-        children: (0, i.jsx)(C, {
+        children: (0, l.jsx)(C, {
           onStepChange: t,
           onBackClick: u,
-          disabled: null == k || k.id === (null == I ? true : I.id) || h.length > j.$n
+          disabled: null == O || O.id === (null == P ? true : P.id) || h.length > j.$n
         })
       })
     })]
