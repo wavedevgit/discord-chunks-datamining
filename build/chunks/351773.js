@@ -6,14 +6,14 @@ require.d(exports, {
 });
 var Chunk473749 = require("./473749.js");
 
-function i(e, t) {
-  let n = r.useRef(e);
+function i(e, t, n) {
+  let i = r.useRef(e);
   return r.useEffect(() => {
     function e(e) {
-      null == n.current || n.current.contains(e.target) || t()
+      null == i.current || i.current.contains(e.target) || (null == n ? true : n.current) != null && n.current.contains(e.target) || t()
     }
     return document.addEventListener("mousedown", e), () => {
       document.removeEventListener("mousedown", e)
     }
-  }, [n, t]), n
+  }, [i, t, n]), i
 }

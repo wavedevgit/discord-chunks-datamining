@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 193910, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => D
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -59,22 +59,22 @@ function R() {
   })
 }
 
-function L(e) {
+function D(e) {
   let {
     channel: t,
     chatInputType: g,
     options: b,
     onFileUpload: O,
-    onClose: L,
-    onSelect: D,
+    onClose: D,
+    onSelect: L,
     draftType: k,
     editorTextContent: U,
     setValue: V,
-    openClips: F
+    openClips: H
   } = e, {
-    analyticsLocations: B,
-    newestAnalyticsLocation: H
-  } = (0, d.ZP)(), G = (0, C.Dt)({
+    analyticsLocations: F,
+    newestAnalyticsLocation: B
+  } = (0, d.ZP)(), G = (0, y.Dt)({
     channel: t
   }), W = (0, l.e7)([v.Z], () => v.Z.isInProgress());
 
@@ -87,7 +87,7 @@ function L(e) {
   }
 
   function K() {
-    F()
+    H()
   }
 
   function Y() {
@@ -147,7 +147,7 @@ function L(e) {
         type: "contextless"
       },
       openInPopout: false,
-      analyticsLocation: H
+      analyticsLocation: B
     }), (0, u.w1)({
       guildId: t.guild_id
     })
@@ -171,9 +171,9 @@ function L(e) {
       guild_id: t.guild_id
     })
   }, [t.guild_id, t.id]), (0, i.jsx)(s.v2r, {
-    onSelect: D,
+    onSelect: L,
     navId: "channel-attach",
-    onClose: L,
+    onClose: D,
     "aria-label": A.intl.string(A.t.Xm41aV),
     className: w.menu,
     children: b.map(function(e) {
@@ -228,7 +228,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.JOIN,
                 activity: n,
-                location: B[B.length - 1]
+                location: F[F.length - 1]
               })
             }
           }, "play");
@@ -242,7 +242,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.LISTEN,
                 activity: n,
-                location: B[B.length - 1]
+                location: F[F.length - 1]
               })
             }
           }, "listen");
@@ -256,7 +256,7 @@ function L(e) {
                 channelId: t.id,
                 type: Z.mFx.WATCH,
                 activity: n,
-                location: B[B.length - 1]
+                location: F[F.length - 1]
               })
             }
           }, "watch");
@@ -289,7 +289,7 @@ function L(e) {
           return (0, i.jsx)(s.sNh, {
             id: "scheduled_message",
             label: r,
-            action: () => (0, C.$f)({
+            action: () => (0, y.$f)({
               channel: t
             }),
             children: G
@@ -298,7 +298,7 @@ function L(e) {
           return (0, i.jsx)(s.sNh, {
             id: "summarize_thread",
             label: r,
-            action: () => y.Z.summarizeThread(t),
+            action: () => C.Z.summarizeThread(t),
             icon: W ? (0, i.jsx)(s.$jN, {
               type: s.RAz.PULSING_ELLIPSIS
             }) : null,
@@ -308,12 +308,12 @@ function L(e) {
                 id: "summarize_thread_for_everyone",
                 label: A.intl.string(A.t.eCzSdd),
                 iconLeft: s.BFJ,
-                action: () => y.Z.summarizeThread(t, false)
+                action: () => C.Z.summarizeThread(t, false)
               }, "summarize_thread_for_everyone"), (0, i.jsx)(s.sNh, {
                 id: "summarize_thread_for_me",
                 label: A.intl.string(A.t["HOe+Hq"]),
                 iconLeft: s.tBG,
-                action: () => y.Z.summarizeThread(t)
+                action: () => C.Z.summarizeThread(t)
               }, "summarize_thread_for_me")]
             })
           }, "summarize_thread");

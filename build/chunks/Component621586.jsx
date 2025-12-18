@@ -55,22 +55,22 @@ function I(e) {
     M = r.useMemo(() => Array.from(new Set(w.map(e => (0, E.Io)(e) || (0, E._5)(e) ? e.user.id : null).filter(g.lm))), [w]),
     {
       state: R,
-      recommendations: L
-    } = (0, C.Z)({
+      recommendations: D
+    } = (0, y.Z)({
       guildId: (0, b.ac)(),
       applicationId: v.t9,
-      numWishlistItems: C.W,
+      numWishlistItems: y.W,
       userIds: M,
       location: "Social Layer Gifting Mini Shelf",
       includeWishlists: true
     });
   return r.useEffect(() => {
-    0 !== L.length && m.default.track(x.rMx.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
+    0 !== D.length && m.default.track(x.rMx.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
       guild_id: T.guild_id,
       channel_id: T.id,
-      sku_ids: L.map(e => e.skuId)
+      sku_ids: D.map(e => e.skuId)
     })
-  }, [T.id, T.guild_id, L]), (0, i.jsx)(f.Z, {
+  }, [T.id, T.guild_id, D]), (0, i.jsx)(f.Z, {
     children: (0, i.jsx)(a.VqE, {
       "aria-labelledby": P,
       modal: false,
@@ -92,16 +92,16 @@ function I(e) {
           })
         }), (0, i.jsx)("div", {
           className: _.wishlistItemsContainer,
-          children: "loading" === R || 0 === L.length ? (0, i.jsx)(a.$jN, {
+          children: "loading" === R || 0 === D.length ? (0, i.jsx)(a.$jN, {
             className: _.loading
-          }) : L.map(e => (0, i.jsx)(s.i_, {
+          }) : D.map(e => (0, i.jsx)(s.i_, {
             body: S.intl.string(S.t["4yiU7x"]),
             asset: A,
             assetSize: h.EU,
             position: "top",
             asContainer: true,
             delay: h.rq,
-            children: (0, i.jsx)(y.Z, {
+            children: (0, i.jsx)(C.Z, {
               item: e,
               wishlistId: null,
               isOwner: false,

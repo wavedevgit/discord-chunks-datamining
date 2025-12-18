@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 111248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -18,22 +18,22 @@ var Chunk54381 = require("./54381.js"),
   Chunk354459 = require("./354459.js"),
   Chunk29005 = require("./29005.js"),
   Chunk533348 = require("./533348.js");
-let C = "CameraPreviewPosition";
+let y = "CameraPreviewPosition";
 
-function y(e) {
+function C(e) {
   let {
     width: t,
     onContextMenuParticipant: n,
     height: l,
-    channel: y,
+    channel: C,
     participants: v,
     onSelectParticipant: x
   } = e, [O, E] = function() {
-    let [e, t] = r.useState(() => s.K.get(C, h.VD2.BOTTOM_RIGHT));
+    let [e, t] = r.useState(() => s.K.get(y, h.VD2.BOTTOM_RIGHT));
     return [e, r.useCallback(e => {
-      s.K.set(C, e), t(e)
+      s.K.set(y, e), t(e)
     }, [])]
-  }(), j = r.useRef(null), S = null == y.getGuildId() ? 70 : 50, _ = (0, o.e7)([p.Z], () => p.Z.pipWidth(m.cL.CAMERA_PREVIEW)), P = v.length, I = _ * P + 8 * (P - 1), Z = r.useMemo(() => ({
+  }(), j = r.useRef(null), S = null == C.getGuildId() ? 70 : 50, _ = (0, o.e7)([p.Z], () => p.Z.pipWidth(m.cL.CAMERA_PREVIEW)), P = v.length, I = _ * P + 8 * (P - 1), Z = r.useMemo(() => ({
     minWidth: m.Rv[m.cL.CAMERA_PREVIEW] * P + 8 * (P - 1),
     maxWidth: m.$i[m.cL.CAMERA_PREVIEW] * P + 8 * (P - 1)
   }), [P]);
@@ -68,7 +68,7 @@ function y(e) {
         className: g.tileContainer,
         children: v.map(e => (0, i.jsx)(f.ZP, {
           participant: e,
-          channel: y,
+          channel: C,
           onContextMenu: n,
           className: a()(g.tile, b.elevationHigh),
           fit: f.BP.COVER,

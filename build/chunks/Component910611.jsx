@@ -1,8 +1,8 @@
 /** Chunk was on 40184 **/
 /** chunk id: 910611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  TS: () => F,
-  ud: () => D,
+  TS: () => H,
+  ud: () => L,
   v0: () => U
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -39,7 +39,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk978966 = require("./978966.js");
 
-function L(e) {
+function D(e) {
   var t;
   let {
     channel: n,
@@ -94,7 +94,7 @@ function L(e) {
   }, a)
 }
 
-function D(e) {
+function L(e) {
   let {
     channel: t,
     channelName: n,
@@ -107,8 +107,8 @@ function D(e) {
     handleParentContextMenu: m,
     renderFollowButton: g
   } = e, b = (0, h.KS)(t, o), {
-    prefix: C,
-    level: y
+    prefix: y,
+    level: C
   } = function(e, t) {
     var n, i;
     switch (e) {
@@ -145,14 +145,14 @@ function D(e) {
         }
     }
   }(t.type, o), v = (0, i.jsxs)(i.Fragment, {
-    children: [null != C ? (0, i.jsxs)(u.nn4, {
-      children: [C, ":"]
+    children: [null != y ? (0, i.jsxs)(u.nn4, {
+      children: [y, ":"]
     }) : null, " ", n]
   });
   switch (t.type) {
     case A.d4z.DM:
       return (0, i.jsx)(N.Z, {
-        level: y,
+        level: C,
         channel: t,
         handleClick: c,
         handleContextMenu: d
@@ -170,17 +170,17 @@ function D(e) {
     case A.d4z.GUILD_TEXT:
     case A.d4z.GUILD_FORUM:
     case A.d4z.GUILD_MEDIA:
-      return null != t.linkedLobby ? (0, i.jsxs)(L, {
+      return null != t.linkedLobby ? (0, i.jsxs)(D, {
         channel: t,
         children: [V(b, t.type === A.d4z.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(T.Z.Title, {
-          level: y,
+          level: C,
           onContextMenu: d,
           onClick: c,
           children: v
         })]
       }) : (0, i.jsxs)(r.Fragment, {
         children: [V(b, t.type === A.d4z.GUILD_ANNOUNCEMENT ? M.intl.string(M.t.l1dkSD) : M.intl.string(M.t.Pnajj0)), (0, i.jsx)(T.Z.Title, {
-          level: y,
+          level: C,
           onContextMenu: d,
           onClick: c,
           children: v
@@ -189,7 +189,7 @@ function D(e) {
     case A.d4z.GUILD_VOICE:
       return (0, i.jsxs)(r.Fragment, {
         children: [V(b, M.intl.string(M.t.BVZqJl)), (0, i.jsx)(T.Z.Title, {
-          level: y,
+          level: C,
           onContextMenu: d,
           onClick: c,
           children: v
@@ -198,7 +198,7 @@ function D(e) {
     case A.d4z.GUILD_STAGE_VOICE:
       return (0, i.jsxs)(r.Fragment, {
         children: [V(b, M.intl.string(M.t.EErMzA)), (0, i.jsx)(T.Z.Title, {
-          level: y,
+          level: C,
           onContextMenu: d,
           onClick: c,
           children: v
@@ -212,7 +212,7 @@ function D(e) {
         let e = (0, h.KS)(l, o);
         O = (0, i.jsxs)(r.Fragment, {
           children: [V(e, M.intl.string(M.t.Pnajj0)), (0, i.jsx)(T.Z.Title, {
-            level: y,
+            level: C,
             onContextMenu: m,
             onClick: p,
             className: a()(R.parentChannelName, R.cursorPointer),
@@ -223,7 +223,7 @@ function D(e) {
       let j = (null == l ? true : l.type) != null && A.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, i.jsxs)(r.Fragment, {
         children: [O, V(j ? null : b, M.intl.string(M.t["7Xm5QI"])), (0, i.jsx)(T.Z.Title, {
-          level: y,
+          level: C,
           onContextMenu: d,
           onClick: c,
           className: a()({
@@ -243,11 +243,11 @@ function D(e) {
           icon: b,
           "aria-hidden": true
         }) : null, (0, i.jsxs)(T.Z.Title, {
-          level: y,
+          level: C,
           onContextMenu: d,
           onClick: c,
-          children: [null != C ? (0, i.jsxs)(u.nn4, {
-            children: [C, ":"]
+          children: [null != y ? (0, i.jsxs)(u.nn4, {
+            children: [y, ":"]
           }) : null, " ", S]
         })]
       });
@@ -259,7 +259,7 @@ let k = e => {
   var t, n, l;
   let {
     channel: a
-  } = e, s = (0, o.e7)([E.default], () => E.default.getCurrentUser()), c = (0, o.e7)([E.default], () => E.default.getUser(a.getRecipientId())), u = (0, _.G)(), d = (0, o.e7)([y.Z], () => null != c ? y.Z.getUserProfile(c.id) : null), f = null != d && (null != (t = null == d ? true : d.fetchEndedAt) ? t : 0) > 0;
+  } = e, s = (0, o.e7)([E.default], () => E.default.getCurrentUser()), c = (0, o.e7)([E.default], () => E.default.getUser(a.getRecipientId())), u = (0, _.G)(), d = (0, o.e7)([C.Z], () => null != c ? C.Z.getUserProfile(c.id) : null), f = null != d && (null != (t = null == d ? true : d.fetchEndedAt) ? t : 0) > 0;
   return (r.useEffect(() => {
     (null == s ? true : s.isStaff()) && null != c && !c.isStaff() && (0, v.Z)(c.id, c.getAvatarURL(true, 80), {
       dispatchWait: true,
@@ -308,7 +308,7 @@ function V(e, t) {
   })
 }
 
-function F(e) {
+function H(e) {
   let {
     guild: t,
     channel: n,
@@ -321,7 +321,7 @@ function F(e) {
     position: "bottom",
     children: (0, i.jsxs)(u.P3F, {
       onClick: () => {
-        (0, C.XU)(t.id, n.id)
+        (0, y.XU)(t.id, n.id)
       },
       className: R.guildBreadcrumbContainer,
       children: ["left" === l && (0, i.jsx)(T.Z.Caret, {

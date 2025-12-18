@@ -58,11 +58,11 @@ function E(e, t) {
 function j(e) {
   var t, l, p;
   let {
-    userId: C,
-    channel: y
+    userId: y,
+    channel: C
   } = e, v = r.useRef(null), {
     analyticsLocations: j
-  } = (0, d.ZP)(u.Z.USERNAME), S = (0, o.e7)([g.default], () => g.default.getUser(C)), _ = (0, o.e7)([m.ZP], () => null != C ? m.ZP.getMember(y.guild_id, C) : null), P = (0, f.X7)(y.guild_id, null != C ? C : true, null != (t = null == _ ? true : _.colorStrings) ? t : null);
+  } = (0, d.ZP)(u.Z.USERNAME), S = (0, o.e7)([g.default], () => g.default.getUser(y)), _ = (0, o.e7)([m.ZP], () => null != y ? m.ZP.getMember(C.guild_id, y) : null), P = (0, f.X7)(C.guild_id, null != y ? y : true, null != (t = null == _ ? true : _.colorStrings) ? t : null);
 
   function I(e) {
     if (null == S) return null;
@@ -72,8 +72,8 @@ function j(e) {
       } = await Promise.all([n.e("79695"), n.e("70675"), n.e("66256")]).then(n.bind(n, 654663));
       return t => (0, i.jsx)(e, E(O({}, t), {
         user: S,
-        guildId: y.guild_id,
-        channel: y
+        guildId: C.guild_id,
+        channel: C
       }))
     })
   }
@@ -87,8 +87,8 @@ function j(e) {
     children: (0, i.jsx)(h.Z, {
       targetElementRef: v,
       user: S,
-      guildId: y.guild_id,
-      channelId: y.id,
+      guildId: C.guild_id,
+      channelId: C.id,
       roleId: null == _ ? true : _.colorRoleId,
       clickTrap: true,
       children: e => (0, i.jsx)(s.P3F, E(O({}, e), {
@@ -129,7 +129,7 @@ function S(e) {
           }, n)
         })
       })
-    }), t.type === y.d4z.PRIVATE_THREAD ? (0, i.jsx)(s.Text, {
+    }), t.type === C.d4z.PRIVATE_THREAD ? (0, i.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "text-default",
       children: v.intl.string(v.t["1awbZG"])
@@ -142,14 +142,14 @@ function _(e) {
   let {
     channel: n
   } = e, r = null != (t = (0, p.KS)(n)) ? t : s.or_;
-  return (0, i.jsxs)(C.ZP, {
+  return (0, i.jsxs)(y.ZP, {
     channelId: n.id,
     children: [(0, i.jsx)("div", {
       className: x.iconWrapper,
       children: (0, i.jsx)(r, {
         className: x.icon
       })
-    }), (0, i.jsx)(C.Ot, {
+    }), (0, i.jsx)(y.Ot, {
       children: n.name
     }), (0, i.jsx)(S, {
       channel: n

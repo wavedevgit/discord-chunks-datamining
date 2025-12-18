@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 644914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  TE: () => y,
+  TE: () => C,
   h_: () => v
 }), require("./388685.js");
 var Chunk473749 = require("./473749.js"),
@@ -21,12 +21,12 @@ var Chunk473749 = require("./473749.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js");
 
-function y(e, t) {
+function C(e, t) {
   return (0, a.cj)([g.Z], () => ({
     canInvite: (0, o.b)(g.Z, t, e),
-    canManageGuild: null != t && g.Z.can(C.Plq.MANAGE_GUILD, t),
-    canMessage: null != e && g.Z.can(C.Plq.SEND_MESSAGES, e),
-    canCreateChannel: null != t && g.Z.can(C.Plq.MANAGE_CHANNELS, t)
+    canManageGuild: null != t && g.Z.can(y.Plq.MANAGE_GUILD, t),
+    canMessage: null != e && g.Z.can(y.Plq.SEND_MESSAGES, e),
+    canCreateChannel: null != t && g.Z.can(y.Plq.MANAGE_CHANNELS, t)
   }), [t, e])
 }
 
@@ -38,7 +38,7 @@ function v(e) {
       return (0, a.e7)([p.Z], () => {
         var t;
         let i = null != (t = p.Z.getMemberCount(null == e ? true : e.id)) ? t : 0,
-          r = n.some(e => e.type === C.uaV.USER_JOIN);
+          r = n.some(e => e.type === y.uaV.USER_JOIN);
         return i > 1 || r
       }, [e, n])
     }(e),

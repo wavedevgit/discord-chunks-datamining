@@ -46,7 +46,7 @@ function j(e) {
     id: c
   } = t, {
     id: u
-  } = n, m = t.getGuildId(), g = (0, a.e7)([f.Z], () => f.Z.getGuild(m), [m]), C = t.type === v.d4z.GUILD_ANNOUNCEMENT, j = null != g && g.features.has(v.GuildFeatures.NEWS), _ = C && j, {
+  } = n, m = t.getGuildId(), g = (0, a.e7)([f.Z], () => f.Z.getGuild(m), [m]), y = t.type === v.d4z.GUILD_ANNOUNCEMENT, j = null != g && g.features.has(v.GuildFeatures.NEWS), _ = y && j, {
     editingMessage: P,
     editingTextValue: I,
     editingRichValue: Z
@@ -105,7 +105,7 @@ function j(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }, [u]);
-  return null != I && null != Z ? (0, i.jsx)(y.Z, {
+  return null != I && null != Z ? (0, i.jsx)(C.Z, {
     ref: true,
     channel: t,
     message: n,
@@ -163,7 +163,7 @@ function _(e, t, n) {
   return n ? (0, i.jsx)(j, {
     channel: l,
     message: r
-  }) : (0, i.jsx)(C.ZP, {
+  }) : (0, i.jsx)(y.ZP, {
     message: r,
     content: t,
     compact: null != a && a

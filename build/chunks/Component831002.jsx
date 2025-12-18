@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 831002, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $A: () => y,
+  $A: () => C,
   j8: () => v
 });
 var Chunk54381 = require("./54381.js");
@@ -24,7 +24,7 @@ var Chunk218035 = require("./218035.jsx"),
 require("./354459.js");
 var Chunk388032 = require("./388032.jsx");
 
-function y(e) {
+function C(e) {
   let t = (0, a.e7)([p.Z], () => p.Z.getChannel(e), [e]),
     n = (0, a.e7)([f.Z], () => f.Z.can(m.yP, t)),
     r = (0, b.sP)(),
@@ -32,13 +32,13 @@ function y(e) {
     s = (0, u.bp)();
   return (null == t ? true : t.isGuildStageVoice()) && n && !r ? null != l ? (0, i.jsx)(o.sNh, {
     id: "edit-stage",
-    label: C.intl.string(C.t["I+9bLx"]),
+    label: y.intl.string(y.t["I+9bLx"]),
     action: () => {
       null != t && (0, h.T)(t, s)
     }
   }) : (0, i.jsx)(o.sNh, {
     id: "start-stage",
-    label: C.intl.string(C.t.OYbHfv),
+    label: y.intl.string(y.t.OYbHfv),
     action: () => {
       null != t && (0, h.T)(t, s)
     }

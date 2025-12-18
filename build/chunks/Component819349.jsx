@@ -63,14 +63,14 @@ function _(e) {
   });
   let w = (0, c.e7)([g.Z], () => g.Z.can(v.Plq.CREATE_INSTANT_INVITE, t), [t]),
     [M, R] = r.useState(false),
-    [L, D] = r.useState("unknown"),
+    [D, L] = r.useState("unknown"),
     k = r.useRef(null),
     {
       isHoveringOrFocusing: U
-    } = (0, y.Tu)(w ? l : k),
-    [V, F] = r.useState(false),
-    B = U || V,
-    H = r.useCallback(function() {
+    } = (0, C.Tu)(w ? l : k),
+    [V, H] = r.useState(false),
+    F = U || V,
+    B = r.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "unknown";
       b.default.track(v.rMx.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
         reason: e,
@@ -93,12 +93,12 @@ function _(e) {
         clamp: true
       },
       onRest: () => {
-        M && H(L)
+        M && B(D)
       }
     }),
     W = r.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "unknown";
-      R(true), D(e)
+      R(true), L(e)
     }, []),
     z = r.useCallback(() => (null != I.current && clearTimeout(I.current), I.current = setTimeout(() => W("timeout"), 1e4), N(e => e + 1), () => {
       null != I.current && clearTimeout(I.current)
@@ -109,17 +109,17 @@ function _(e) {
       null != Z.current && clearTimeout(Z.current)
     }), []);
   (0, p.ZP)(z), r.useEffect(() => {
-    if (!B) {
+    if (!F) {
       z(), q();
       return
     }
     null != I.current && clearTimeout(I.current), null != Z.current && clearTimeout(Z.current), P(true)
-  }, [B, z, q]);
+  }, [F, z, q]);
   let K = r.useCallback(() => {
       P(true)
     }, []),
     Y = r.useCallback(() => {
-      P(false), F(false)
+      P(false), H(false)
     }, []);
   return w ? (0, i.jsx)(d.yRy, {
     targetElementRef: l,
@@ -128,9 +128,9 @@ function _(e) {
     align: "top",
     spacing: 8,
     popoutKey: "voice-invite-suggestions-button",
-    renderPopout: e => (0, i.jsx)(C.B, j({
+    renderPopout: e => (0, i.jsx)(y.B, j({
       channel: t,
-      onHoverOrFocus: F
+      onHoverOrFocus: H
     }, e)),
     onRequestOpen: K,
     onRequestClose: Y,
@@ -156,7 +156,7 @@ function _(e) {
               },
               children: [(0, i.jsxs)("svg", {
                 className: a()(O.timer, {
-                  [O.paused]: B
+                  [O.paused]: F
                 }),
                 viewBox: "0 0 ".concat(24, " ").concat(24),
                 style: {

@@ -25,8 +25,8 @@ function h(e) {
     channel: m,
     activities: g,
     newClipsCount: b,
-    canPostPolls: C,
-    canLaunchActivities: y,
+    canPostPolls: y,
+    canLaunchActivities: C,
     appContext: v,
     canSendScheduledMessages: x,
     canSummarizeThreads: O,
@@ -50,7 +50,7 @@ function h(e) {
     type: "CREATE_THREAD",
     icon: l.YPH,
     display: p.intl.string(p.t.rBIGBL)
-  }), C && j.push({
+  }), y && j.push({
     type: "POLL",
     icon: l.QDj,
     display: p.intl.string(p.t.Flr51u)
@@ -69,7 +69,7 @@ function h(e) {
     type: "SLASH_COMMAND",
     icon: l.jje,
     display: p.intl.string(S ? p.t["5Y0Fam"] : p.t.Bbvp6G)
-  }), y && j.push({
+  }), C && j.push({
     type: "ACTIVITY",
     icon: l.nG3,
     display: p.intl.string(p.t["16Lfrb"])

@@ -2,7 +2,7 @@
 /** chunk id: 493754, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   W: () => b,
-  Z: () => C
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -79,14 +79,14 @@ function b(e) {
   })
 }
 
-function C(e) {
+function y(e) {
   let {
     stream: t,
     applicationId: n,
     channel: r,
     exitFullScreen: a,
-    appContext: C,
-    analyticsLocation: y,
+    appContext: y,
+    analyticsLocation: C,
     className: v,
     size: x = "sm"
   } = e, O = null == r ? true : r.getGuildId(), E = null == r ? true : r.id, j = (0, s.e7)([p.Z], () => null != O ? p.Z.getGuild(O) : null, [O]), S = (0, s.e7)([u.ZP], () => u.ZP.getActiveEventByChannel(E), [E]);
@@ -105,9 +105,9 @@ function C(e) {
             channel: r,
             streamUserId: null == t ? true : t.ownerId,
             applicationId: n,
-            appContext: C,
+            appContext: y,
             exitFullScreen: a,
-            analyticsLocation: y,
+            analyticsLocation: C,
             guildScheduledEvent: S
           })
         }
@@ -115,10 +115,10 @@ function C(e) {
     }), (0, i.jsx)(d.Z, {
       channel: r,
       stream: t,
-      appContext: C,
+      appContext: y,
       className: l()(v, g.iconButton),
       exitFullScreen: a,
-      analyticsLocation: y,
+      analyticsLocation: C,
       guildScheduledEvent: S
     })]
   })

@@ -58,7 +58,7 @@ function T(e) {
   } = e, p = r.useRef(null), f = (0, E.Tu)(p), b = (0, E.j1)({
     channel: t
   }), {
-    analyticsLocations: C
+    analyticsLocations: y
   } = (0, m.ZP)(h.Z.VOICE_INVITE_SUGGESTIONS_POPOVER);
   (0, g.Z)({
     name: c.ImpressionNames.VOICE_INVITE_SUGGESTIONS_POPOVER,
@@ -66,7 +66,7 @@ function T(e) {
     properties: {
       voice_channel_id: t.id,
       voice_guild_id: t.guild_id,
-      location_stack: C
+      location_stack: y
     }
   }), r.useEffect(() => {
     null == o || o(p.current)
@@ -74,7 +74,7 @@ function T(e) {
     null == l || l(f.isHoveringOrFocusing)
   }, [l, f]);
   let v = r.useCallback(() => {
-    let e = y.Z.getGuild(t.guild_id);
+    let e = C.Z.getGuild(t.guild_id);
     s()(null != e, "VoiceInviteSuggestionsPopover must be used in context of a guild"), (0, d.ZDy)(async () => {
       let {
         default: r
@@ -135,7 +135,7 @@ function N(e) {
   let {
     channel: t,
     user: n
-  } = e, l = r.useRef(null), o = (0, u.e7)([C.ZP], () => C.ZP.getMember(t.guild_id, n.id), [t.guild_id, n.id]), {
+  } = e, l = r.useRef(null), o = (0, u.e7)([y.ZP], () => y.ZP.getMember(t.guild_id, n.id), [t.guild_id, n.id]), {
     isHoveringOrFocusing: s
   } = (0, E.Tu)(l), [c, h] = r.useState(null), m = "success" === c || "sending" === c, g = r.useCallback(async () => {
     if (m) return;
@@ -168,7 +168,7 @@ function N(e) {
       h(e ? "success" : null)
     })
   }, [m, n, t]), {
-    avatarDecorationSrc: y,
+    avatarDecorationSrc: C,
     avatarSrc: P,
     eventHandlers: T
   } = (0, b.Z)({
@@ -194,7 +194,7 @@ function N(e) {
       "aria-label": N,
       size: d.EFr.SIZE_24,
       src: P,
-      avatarDecoration: y
+      avatarDecoration: C
     }, T)), (0, i.jsx)(d.Text, {
       variant: "text-md/medium",
       className: _.name,

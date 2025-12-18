@@ -2,7 +2,7 @@
 /** chunk id: 541716, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ie: () => R,
+  Ie: () => w,
   OW: () => c,
   gy: () => u
 });
@@ -592,6 +592,35 @@ let d = {
     layout: 1
   },
   R = {
+    analyticsName: "forward_message_input",
+    drafts: {
+      type: Chunk703558.d.ChannelMessage
+    },
+    emojis: {
+      button: true
+    },
+    soundmoji: {
+      allowSending: true
+    },
+    permissions: {
+      requireSendMessages: true
+    },
+    submit: {
+      useDisabledStylesOnSubmit: true
+    },
+    users: {
+      allowMentioning: true
+    },
+    autocomplete: {
+      alwaysUseLayer: true,
+      small: true,
+      mentionSuggestions: true
+    },
+    disableAutoFocus: true,
+    showCharacterCount: true,
+    layout: 1
+  },
+  w = {
     NORMAL: d,
     OVERLAY: f,
     OVERLAY_INLINE_REPLY: v,
@@ -611,35 +640,7 @@ let d = {
     FORUM_CHANNEL_GUIDELINES: A,
     CHANNEL_TOPIC: N,
     ATOMIC_REACTOR_REPLY_INPUT: P,
-    FORWARD_MESSAGE_INPUT: {
-      analyticsName: "forward_message_input",
-      drafts: {
-        type: Chunk703558.d.ChannelMessage
-      },
-      emojis: {
-        button: true
-      },
-      soundmoji: {
-        allowSending: true
-      },
-      permissions: {
-        requireSendMessages: true
-      },
-      submit: {
-        useDisabledStylesOnSubmit: true
-      },
-      users: {
-        allowMentioning: true
-      },
-      autocomplete: {
-        alwaysUseLayer: true,
-        small: true,
-        mentionSuggestions: true
-      },
-      disableAutoFocus: true,
-      showCharacterCount: true,
-      layout: 1
-    },
+    FORWARD_MESSAGE_INPUT: R,
     SHARE_CUSTOM_CLIENT_THEME_INPUT: {
       analyticsName: "share_custom_client_theme_input",
       drafts: {
@@ -667,5 +668,56 @@ let d = {
       disableAutoFocus: true,
       showCharacterCount: true,
       layout: 1
+    },
+    HAVEN: {
+      analyticsName: "haven",
+      attachments: false,
+      autocomplete: {
+        addReactionShortcut: true,
+        forceChatLayer: true,
+        reactions: true
+      },
+      commands: {
+        enabled: false
+      },
+      confetti: {
+        button: false
+      },
+      drafts: {
+        type: Chunk703558.d.ChannelMessage,
+        commandType: Chunk703558.d.SlashCommand,
+        autoSave: false
+      },
+      emojis: {
+        button: true
+      },
+      gifs: true,
+      gifts: true,
+      permissions: {
+        requireSendMessages: true
+      },
+      showThreadPromptOnReply: false,
+      stickers: true,
+      soundmoji: {
+        allowSending: false
+      },
+      users: {
+        allowMentioning: true
+      },
+      submit: {
+        button: true,
+        ignorePreference: Chunk873546.tq,
+        disableEnterToSubmit: Chunk873546.tq,
+        clearOnSubmit: true,
+        useDisabledStylesOnSubmit: true
+      },
+      uploadLongMessages: true,
+      upsellLongMessages: {
+        iconOnly: false
+      },
+      showCharacterCount: true,
+      sedReplace: false,
+      showSlowmodeIndicator: true,
+      showTypingIndicator: false
     }
   }

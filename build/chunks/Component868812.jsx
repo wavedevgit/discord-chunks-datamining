@@ -24,8 +24,8 @@ function h(e) {
   } = e, {
     parentAnalyticsLocation: g
   } = (0, o.ZP)(), b = r.useRef(null), {
-    isHovered: C,
-    setIsHovered: y,
+    isHovered: y,
+    setIsHovered: C,
     onMouseEnter: v,
     onMouseLeave: x
   } = (0, c.Z)(200, 300), {
@@ -44,14 +44,14 @@ function h(e) {
   }, [v, x, g, E, m, h]);
   return (0, i.jsx)(a.y, {
     targetElementRef: b,
-    shouldShow: C && (h === p.D.GIFTING || null == h) || h === p.D.GIFTING,
+    shouldShow: y && (h === p.D.GIFTING || null == h) || h === p.D.GIFTING,
     animation: a.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      y(false), null == m || m(true)
+      C(false), null == m || m(true)
     },
     renderPopout: e => {
       let {
@@ -60,7 +60,7 @@ function h(e) {
       return (0, i.jsx)(u.Z, {
         channel: t,
         closePopout: n,
-        isHovered: C,
+        isHovered: y,
         onMouseEnter: v,
         onMouseLeave: x
       })
@@ -74,8 +74,8 @@ function h(e) {
       onClick: I,
       onMouseEnter: _,
       onMouseLeave: P,
-      isActive: C || h === p.D.GIFTING,
-      color: C || h === p.D.GIFTING ? "primaryDark" : true
+      isActive: y || h === p.D.GIFTING,
+      color: y || h === p.D.GIFTING ? "primaryDark" : true
     })
   })
 }

@@ -39,9 +39,9 @@ function Z() {
   let e = Chunk592125.Z.getChannel(_);
   if (0 === x.trim().length) return null != i && i.clearQuery(), E = function(e) {
     let t = b.Z.getFriendIDs(),
-      n = C.default.getCurrentUser();
-    return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ...C.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
-      let n = C.default.getUser(t);
+      n = y.default.getCurrentUser();
+    return (null == n ? true : n.isStaff()) && (t = Array.from(new Set([...t, ...y.default.filter(e => e.isStaff() && e.id !== n.id, false).map(e => e.id)]))), (null == e ? true : e.isPrivate()) && (t = t.filter(t => !e.recipients.includes(t))), t.reduce((e, t) => {
+      let n = y.default.getUser(t);
       return null == n || n.isProvisional || e.push({
         user: n,
         comparator: f.ZP.getName(n)
@@ -90,7 +90,7 @@ function T() {
 }
 
 function N(e, t) {
-  if (m.Z.hasConsented(y.pjP.PERSONALIZATION)) {
+  if (m.Z.hasConsented(C.pjP.PERSONALIZATION)) {
     var n, i, r, l;
     let a = null != (r = null == (n = u.Z.getUserAffinity(e.user.id)) ? true : n.communicationProbability) ? r : 0,
       o = null != (l = null == (i = u.Z.getUserAffinity(t.user.id)) ? true : i.communicationProbability) ? l : 0;
@@ -110,7 +110,7 @@ function A(e) {
       comparator: i
     }
     of t) {
-    let t = C.default.getUser(e);
+    let t = y.default.getUser(e);
     null != t && n.push({
       user: t,
       comparator: i
@@ -124,19 +124,19 @@ function w() {
 }
 
 function M(e) {
-  if (e.key !== y.vTt) returnfalse;
+  if (e.key !== C.vTt) returnfalse;
   v = true, T(), i = w(), _ = null, I("")
 }
 
 function R(e) {
-  if (e.key !== y.vTt) returnfalse;
-  L()
+  if (e.key !== C.vTt) returnfalse;
+  D()
 }
 
-function L() {
+function D() {
   null != i && (i.destroy(), i = null), P()
 }
-class D extends(r = Chunk442837.ZP.Store) {
+class L extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk480294.Z, Chunk353926.Z, Chunk580005.Z, Chunk699516.Z, Chunk752048.Z, Chunk594174.default), this.syncWith([Chunk594174.default, Chunk592125.Z], Z), this.syncWith([Chunk699516.Z], T)
   }
@@ -161,13 +161,13 @@ class D extends(r = Chunk442837.ZP.Store) {
       hasFriends: j
     }
   }
-}(l = "displayName") in D ? Object.defineProperty(D, l, {
+}(l = "displayName") in L ? Object.defineProperty(L, l, {
   value: "PrivateChannelRecipientsInviteStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : D[l] = "PrivateChannelRecipientsInviteStore";
-let k = new D(Chunk570140.Z, {
+}) : L[l] = "PrivateChannelRecipientsInviteStore";
+let k = new L(Chunk570140.Z, {
     CONNECTION_OPEN: function() {
       P()
     },
@@ -187,7 +187,7 @@ let k = new D(Chunk570140.Z, {
     },
     MODAL_POP: R,
     HIDE_ACTION_SHEET: R,
-    PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: L,
+    PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: D,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function(e) {
       _ = e.channelId, I(e.query)
     },

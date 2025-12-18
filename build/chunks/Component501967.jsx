@@ -28,7 +28,8 @@ let m = 3e3,
     [Chunk981631.AEg.NORMAL]: Chunk609541.normal,
     [Chunk981631.AEg.MINIMUM]: Chunk609541.minimum,
     [Chunk981631.AEg.NO_CHAT]: Chunk609541.noChat,
-    [Chunk981631.AEg.FULL_SCREEN]: Chunk609541.fullScreen
+    [Chunk981631.AEg.FULL_SCREEN]: Chunk609541.fullScreen,
+    [Chunk981631.AEg.HAVEN]: Chunk609541.haven
   };
 class g extends Chunk473749.PureComponent {
   componentDidAppear() {

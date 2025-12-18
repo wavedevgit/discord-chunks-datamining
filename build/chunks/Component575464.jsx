@@ -24,8 +24,8 @@ function m(e) {
     row: m,
     hideDiscriminator: g,
     comparator: b,
-    selected: C,
-    checked: y,
+    selected: y,
+    checked: C,
     disabled: v = false,
     inlineUsername: x = true,
     onClick: O,
@@ -63,14 +63,14 @@ function m(e) {
     }
   }, P), n = n = {
     role: "option",
-    "aria-selected": y,
+    "aria-selected": C,
     "aria-disabled": v,
     "aria-setsize": j,
     "aria-posinset": S,
     children: (0, i.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,
       className: l()(h.friend, {
-        [h.friendSelected]: C,
+        [h.friendSelected]: y,
         [h.twoRows]: !x
       }),
       children: [(0, i.jsx)(u.Z, {
@@ -100,7 +100,7 @@ function m(e) {
           })
         })]
       }), (0, i.jsx)(s.FZ5, {
-        checked: y,
+        checked: C,
         disabled: v
       })]
     })

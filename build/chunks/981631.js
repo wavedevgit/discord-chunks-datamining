@@ -1335,7 +1335,11 @@ let ep = "@me",
     GET_APPLICATION_TOKENS: e => "/oauth2/applications/".concat(e, "/tokens"),
     GUILD_MIGRATE_SLOWMODE_PERMISSION: e => "/guilds/".concat(e, "/migrate-bypass-slowmode-permission"),
     QUEST_PLACEMENT: "/quests/placement-alpha",
-    GAME_UPDATE: (e, t) => "/games/".concat(e, "/updates/").concat(t)
+    GAME_UPDATE: (e, t) => "/games/".concat(e, "/updates/").concat(t),
+    HAVEN_CONNECT: e => "/haven/".concat(e, "/connect"),
+    HAVEN_DISCONNECT: e => "/haven/".concat(e, "/disconnect"),
+    HAVEN_UPDATE: e => "/haven/".concat(e, "/update"),
+    HAVEN_GET_ASSETS: "/haven/assets"
   }),
   eS = Object.freeze({
     INDEX: "/",
@@ -1912,7 +1916,7 @@ let nb = Object.freeze({
   }),
   ny = 864e5;
 var nO = function(e) {
-    return e.NORMAL = "normal", e.MINIMUM = "minimum", e.NO_CHAT = "no-chat", e.FULL_SCREEN = "full-screen", e
+    return e.NORMAL = "normal", e.MINIMUM = "minimum", e.NO_CHAT = "no-chat", e.FULL_SCREEN = "full-screen", e.HAVEN = "haven", e
   }({}),
   nv = function(e) {
     return e.THEATRE = "theatre", e.FULL_SCREEN = "full-screen", e.PIP = "pip", e.POPOUT = "popout", e.PORTRAIT = "portrait", e.LANDSCAPE = "landscape", e.MINIMIZED = "minimized", e

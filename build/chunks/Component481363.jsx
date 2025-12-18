@@ -27,11 +27,11 @@ function c(e) {
       compact: m = false
     },
     messageWindow: g
-  } = e, b = p.state === o.yb.SENDING, C = p.id === h, y = (0, r.yE)(p.flags, o.iLy.EPHEMERAL), v = p.state === o.yb.SEND_FAILED;
-  return b || y && !v ? null : (0, i.jsx)(a.Z, {
+  } = e, b = p.state === o.yb.SENDING, y = p.id === h, C = (0, r.yE)(p.flags, o.iLy.EPHEMERAL), v = p.state === o.yb.SEND_FAILED;
+  return b || C && !v ? null : (0, i.jsx)(a.Z, {
     className: s.buttons,
     innerClassName: s.buttonsInner,
-    isHeader: !m && C && !(0, l.Z)(p),
+    isHeader: !m && y && !(0, l.Z)(p),
     isReply: !m && p.type === o.uaV.REPLY && null != p.messageReference,
     channel: f,
     message: p,

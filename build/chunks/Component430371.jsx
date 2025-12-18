@@ -71,15 +71,15 @@ function I(e) {
       inCall: w,
       channel: M,
       selectedParticipant: R,
-      showParticipants: L = true,
-      className: D,
+      showParticipants: D = true,
+      className: L,
       width: k,
       height: U,
       layout: V,
-      idle: F
+      idle: H
     } = e,
-    B = f.Z.getVideoComponent(),
-    H = p.default.getId(),
+    F = f.Z.getVideoComponent(),
+    B = p.default.getId(),
     [G, W] = r.useState(null),
     z = (0, c.Z)(G),
     [q, K] = r.useState(true),
@@ -88,7 +88,7 @@ function I(e) {
     Q = (0, u.Z)(J ? R.applicationId : true),
     $ = !J && null != R.streamId,
     ee = U <= 2 * P + 144,
-    et = L && !ee,
+    et = D && !ee,
     en = (0, c.Z)(et),
     ei = V === v.AEg.MINIMUM || V === v.AEg.NORMAL,
     er = !ee && (!ei || J),
@@ -131,13 +131,13 @@ function I(e) {
         clamp: true
       })
     }, em),
-    eC = (0, s.q_F)({
+    ey = (0, s.q_F)({
       value: eu,
       config: S(j({}, o.config.stiff), {
         clamp: true
       })
     }, en === et && eb.value.idle && !el || ea || eh ? "animate-never" : "animate-always"),
-    ey = (0, s.q_F)({
+    eC = (0, s.q_F)({
       value: n,
       config: S(j({}, o.config.stiff), {
         clamp: true
@@ -162,13 +162,13 @@ function I(e) {
     ex = r.useCallback(e => {
       W(e), K(false)
     }, []),
-    eO = et ? [] : (0, C.n3)(T, R, H),
+    eO = et ? [] : (0, y.n3)(T, R, B),
     {
       visibleParticipants: eE,
       participantTileWidth: ej
-    } = (0, y.ZB)(k, N);
+    } = (0, C.ZB)(k, N);
   return (0, i.jsxs)("div", {
-    className: a()(E.root, O.flexCenter, D),
+    className: a()(E.root, O.flexCenter, L),
     children: [(0, i.jsxs)("div", {
       className: E.tileWrapper,
       style: {
@@ -181,7 +181,7 @@ function I(e) {
         },
         children: [(0, i.jsx)(o.animated.div, {
           style: {
-            width: eC.value
+            width: ey.value
           },
           className: E.videoWrapper,
           children: (0, i.jsx)("div", {
@@ -201,7 +201,7 @@ function I(e) {
                   noBorder: eu >= k || ec >= U,
                   channel: M,
                   className: O.focusedVideo,
-                  videoComponent: B,
+                  videoComponent: F,
                   width: k,
                   participant: t,
                   onClick: l,
@@ -217,14 +217,14 @@ function I(e) {
           })
         }), er ? (0, i.jsx)(o.animated.div, {
           className: a()(E.actionRow, {
-            [E.idle]: F
+            [E.idle]: H
           }),
           style: {
-            bottom: ey.value
+            bottom: eC.value
           },
           children: (0, i.jsx)(d.Z, {
             channelId: M.id,
-            isParticipantsOpen: L,
+            isParticipantsOpen: D,
             isVertical: true
           })
         }) : null]
@@ -235,7 +235,7 @@ function I(e) {
           opacity: eg.value,
           visibility: eg.value.to(e => 0 === e ? "hidden" : "visible")
         },
-        children: (0, i.jsx)(y.ZP, {
+        children: (0, i.jsx)(C.ZP, {
           channel: M,
           onClick: l,
           onContextMenu: I,
@@ -245,7 +245,7 @@ function I(e) {
           selectedParticipantId: R.id,
           inCall: w,
           popoutType: A,
-          paused: Y || !L
+          paused: Y || !D
         })
       })]
     }), eO.length > 0 ? (0, i.jsx)(b.Z, {

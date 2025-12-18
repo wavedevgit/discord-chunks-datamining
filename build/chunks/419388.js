@@ -148,7 +148,7 @@ class E {
     }
     let a = e.messages.last(),
       o = t.last();
-    if (null != a && a.state === y.yb.SENDING && (null == o ? true : o.id) !== a.id) return void this.setScrollToBottom();
+    if (null != a && a.state === C.yb.SENDING && (null == o ? true : o.id) !== a.id) return void this.setScrollToBottom();
     let {
       focusId: s
     } = this.props;
@@ -158,7 +158,7 @@ class E {
         var c;
         null == (c = this.ref.current) || c.scrollIntoViewNode({
           node: e,
-          padding: C.kQ + this.props.additionalMessagePadding,
+          padding: y.kQ + this.props.additionalMessagePadding,
           callback: this.handleScroll
         });
         return
@@ -459,7 +459,7 @@ class E {
         preventScroll: true
       })), this.scrollCounter = 0, this.handleScroll(), this._scrollCompleteCallbacks.forEach(e => e())
     };
-    (0, a.kK)(i) ? this.scrollTo(this.getOffsetOrientationFromNode(i, "middle", this.props.hasUnreads ? this.newMessageBarBuffer() : C.kQ), t, r): this.scrollToNewMessages(t, "middle", r)
+    (0, a.kK)(i) ? this.scrollTo(this.getOffsetOrientationFromNode(i, "middle", this.props.hasUnreads ? this.newMessageBarBuffer() : y.kQ), t, r): this.scrollToNewMessages(t, "middle", r)
   }
   getOffsetToTriggerLoading(e, t) {
     let {
@@ -472,7 +472,7 @@ class E {
     } = this.props;
     if ("top" === e)
       if (!r.hasMoreBefore) return 0;
-      else return l ? a - C.D4 - 2 : a + 500;
+      else return l ? a - y.D4 - 2 : a + 500;
     return r.hasMoreAfter ? n - i - a - 500 : n - i
   }
   getOffsetToPreventLoading(e) {
@@ -555,7 +555,7 @@ class E {
           channelId: r.props.channel.id,
           before: e,
           after: t,
-          limit: y.AQB,
+          limit: C.AQB,
           truncate: true
         })
       }), v(this, "updateStoreDimensionsDebounced", l().debounce(this.updateStoreDimensions, 200)), this.props = e, this.loading = e.messages.loadingMore, null != e.messages.jumpTargetId) this.pinned = false;

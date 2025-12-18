@@ -3,6 +3,7 @@
 module.exports = {
   wrapper: "cb9592ad77576717-wrapper",
   normal: "cb9592ad77576717-normal",
+  haven: "cb9592ad77576717-haven",
   minimum: "cb9592ad77576717-minimum",
   video: "cb9592ad77576717-video",
   fullScreen: "cb9592ad77576717-fullScreen",

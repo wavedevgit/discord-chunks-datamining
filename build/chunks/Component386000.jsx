@@ -38,13 +38,13 @@ function d(e) {
     return r
   }(e, ["selfMute", "serverMute", "suppress", "centerButton", "awaitingRemote", "onMouseEnter", "onMouseLeave", "onClick"]);
   let {
-    parentAnalyticsLocation: C
-  } = (0, a.ZP)(), y = t || n || d, v = p ? u.d : u.Z, x = (0, o.Z)(t, n, d, f), {
+    parentAnalyticsLocation: y
+  } = (0, a.ZP)(), C = t || n || d, v = p ? u.d : u.Z, x = (0, o.Z)(t, n, d, f), {
     events: O,
     play: E,
     Component: j
-  } = (0, c.b)(y), S = n || d ? l.v0G : j;
-  return r.useEffect(() => () => E(), [E, y]), (0, i.jsx)(v, function(e) {
+  } = (0, c.b)(C), S = n || d ? l.v0G : j;
+  return r.useEffect(() => () => E(), [E, C]), (0, i.jsx)(v, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -64,8 +64,8 @@ function d(e) {
   }({
     iconComponent: S,
     isTrayButton: true,
-    caretColor: y ? "red" : "primaryDark",
-    color: y ? "red" : true,
+    caretColor: C ? "red" : "primaryDark",
+    color: C ? "red" : true,
     label: x,
     onMouseEnter: e => {
       null == h || h(e), O.onMouseEnter()
@@ -74,7 +74,7 @@ function d(e) {
       null == m || m(e), O.onMouseLeave()
     },
     onClick: e => {
-      null == g || g(e), (0, s.v)(C, s.d.MIC, t)
+      null == g || g(e), (0, s.v)(y, s.d.MIC, t)
     }
   }, b))
 }

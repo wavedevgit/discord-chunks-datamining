@@ -30,7 +30,7 @@ let O = Chunk473749.memo(function(e) {
     r.useEffect(() => {
       if (null == a ? true : a.displayed) return;
       p(false), setImmediate(() => {
-        p((null != a ? (0, C.Eo)(a.combo) : 0) > 0)
+        p((null != a ? (0, y.Eo)(a.combo) : 0) > 0)
       });
       let e = setTimeout(() => {
         p(false), null != a && (0, m.ew)(a)
@@ -51,7 +51,7 @@ let O = Chunk473749.memo(function(e) {
       children: (0, i.jsx)(c.Text, {
         className: x.comboScore,
         variant: "text-sm/bold",
-        children: (0, C.Eo)(a.combo)
+        children: (0, y.Eo)(a.combo)
       })
     })
   }),
@@ -63,7 +63,7 @@ let O = Chunk473749.memo(function(e) {
       color: l,
       square: o,
       flair: s
-    } = r.useMemo(() => (0, C.yz)(n), [n]);
+    } = r.useMemo(() => (0, y.yz)(n), [n]);
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(c.Text, {
         className: x.comboValue,
@@ -123,15 +123,15 @@ let O = Chunk473749.memo(function(e) {
     } = e, n = (0, s.e7)([p.default], () => p.default.getId()), l = (0, s.e7)([f.Z], () => f.Z.isTyping(t, n), [t, n]), a = (0, s.e7)([g.Z], () => g.Z.isEnabled()), d = (0, s.e7)([b.ZP], () => b.ZP.isComboing(n, t), [t, n]), {
       ref: h,
       width: m = 0
-    } = (0, u.ZP)(), [C, v] = r.useState(false), j = (0, y.Z)(t), S = a && d && l;
+    } = (0, u.ZP)(), [y, v] = r.useState(false), j = (0, C.Z)(t), S = a && d && l;
     r.useEffect(() => {
       S && v(true);
       let e = setTimeout(() => v(S), 1e3);
       return () => clearTimeout(e)
     }, [S]);
     let _ = (0, c.q_F)({
-        opacity: +!!C,
-        transform: C ? "translateY(0)" : "translateY(100%)",
+        opacity: +!!y,
+        transform: y ? "translateY(0)" : "translateY(100%)",
         pointerEvents: "none",
         config: o.config.stiff
       }),

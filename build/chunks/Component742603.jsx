@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 742603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => H
+  Z: () => B
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -58,7 +58,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function H(e) {
   let {
     user: t,
     channel: n,
@@ -80,7 +80,7 @@ function F(e) {
   })
 }
 
-function B(e) {
+function F(e) {
   let t, {
       focusedApplication: n,
       focusedParticipant: r,
@@ -91,7 +91,7 @@ function B(e) {
     c = null != o ? (0, b.DK)(o) : null,
     d = null != o;
   if ((null == r ? true : r.type) === M.fO.ACTIVITY) null != n && (t = (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(y.ZP.Divider, {
+    children: [(0, i.jsx)(C.ZP.Divider, {
       className: k.divider
     }), (0, i.jsx)(m.Z, {
       game: n,
@@ -110,9 +110,9 @@ function B(e) {
     let e = r.user,
       n = r.stream;
     t = (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(y.ZP.Divider, {
+      children: [(0, i.jsx)(C.ZP.Divider, {
         className: k.divider
-      }), (0, i.jsx)(F, {
+      }), (0, i.jsx)(H, {
         user: e,
         channel: l,
         stream: n,
@@ -122,7 +122,7 @@ function B(e) {
         focusedParticipant: r
       })]
     })
-  } else d && (t = (0, i.jsx)(C.Z, {
+  } else d && (t = (0, i.jsx)(y.Z, {
     guildEvent: o,
     recurrenceId: c
   }));
@@ -132,7 +132,7 @@ function B(e) {
   })
 }
 
-function H(e) {
+function B(e) {
   let {
     channel: t,
     guild: r,
@@ -145,14 +145,14 @@ function H(e) {
   } = (0, a.cj)([I.Z], () => ({
     focusedParticipant: I.Z.getSelectedParticipant(t.id),
     participantsOpen: I.Z.getParticipantsOpen(t.id)
-  }), [t.id]), C = (0, f.ZP)(t), O = (0, h.KS)(t), [_] = (0, d.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), P = D.intl.string(D.t.BVZqJl);
-  t.isDM() ? P = D.intl.string(D.t.jN2DfZ) : t.isGroupDM() && (P = D.intl.string(D.t["e5y+gm"]));
+  }), [t.id]), y = (0, f.ZP)(t), O = (0, h.KS)(t), [_] = (0, d.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), P = L.intl.string(L.t.BVZqJl);
+  t.isDM() ? P = L.intl.string(L.t.jN2DfZ) : t.isGroupDM() && (P = L.intl.string(L.t["e5y+gm"]));
   let T = (0, a.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     A = t.isGuildVoice() && u && null != T && T.length > 0,
     R = (0, Z.ZP)(t),
     V = A ? (0, i.jsx)(o.u, {
       asContainer: true,
-      text: D.intl.string(D.t.Mgpxiw),
+      text: L.intl.string(L.t.Mgpxiw),
       delay: 500,
       position: "bottom",
       shouldShow: R,
@@ -206,14 +206,14 @@ function H(e) {
         })]
       })
     }) : null,
-    F = (0, S.m$)({
+    H = (0, S.m$)({
       channelId: t.id
     });
   return (0, i.jsxs)("div", {
     className: k.subtitleContainer,
     children: [(0, i.jsx)(s.f6W, {
-      theme: L.BR.DARK,
-      children: e => (0, i.jsxs)(y.ZP, {
+      theme: D.BR.DARK,
+      children: e => (0, i.jsxs)(C.ZP, {
         onDoubleClick: v.O,
         transparent: true,
         className: l()(e, k.headerBar),
@@ -227,17 +227,17 @@ function H(e) {
           isChatOpen: m,
           exitFullScreen: g
         }),
-        children: [(0, i.jsx)(y.ZP.Title, {
+        children: [(0, i.jsx)(C.ZP.Title, {
           wrapperClassName: k.title,
           children: (0, i.jsxs)(i.Fragment, {
-            children: [null != O ? (0, i.jsx)(y.ZP.ChannelIcon, {
+            children: [null != O ? (0, i.jsx)(C.ZP.ChannelIcon, {
               icon: O,
               "aria-label": P
-            }) : null, C, F && (0, i.jsx)(o.u, {
-              text: D.intl.string(D.t.QyZ4Td),
+            }) : null, y, H && (0, i.jsx)(o.u, {
+              text: L.intl.string(L.t.QyZ4Td),
               children: (0, i.jsx)(s.tQf, {
                 size: "xs",
-                "aria-label": D.intl.string(D.t.VHXh8a),
+                "aria-label": L.intl.string(L.t.VHXh8a),
                 color: s.TVs.colors.INTERACTIVE_TEXT_DEFAULT,
                 className: k.secureFramesIcon
               })
@@ -246,7 +246,7 @@ function H(e) {
         }), (0, i.jsx)(x.TS, {
           channel: t,
           guild: r
-        }), (0, i.jsx)(B, {
+        }), (0, i.jsx)(F, {
           focusedApplication: _,
           focusedParticipant: b,
           channel: t

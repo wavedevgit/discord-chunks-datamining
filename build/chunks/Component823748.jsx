@@ -68,7 +68,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk754688 = require("./754688.js"),
   Chunk41776 = require("./41776.js"),
   Chunk370774 = require("./370774.js"),
-  Chunk535834 = require("./535834.jsx"),
+  Chunk471760 = require("./471760.jsx"),
   Chunk801604 = require("./801604.jsx"),
   Chunk703656 = require("./703656.js"),
   Chunk359110 = require("./359110.js"),
@@ -315,7 +315,7 @@ class tl extends Chunk473749.PureComponent {
     }, "private-channel-profile-".concat(module.id));
     else if (Chunk120356 === Chunk981631.ULH.MEMBERS) switch (module.type) {
       case Chunk981631.d4z.GROUP_DM:
-        return (0, Chunk54381.jsx)(Chunk535834.Z, {
+        return (0, Chunk54381.jsx)(Chunk471760.Z, {
           channel: module
         }, "private-channel-recipients-".concat(module.id));
       case Chunk981631.d4z.GUILD_DIRECTORY:

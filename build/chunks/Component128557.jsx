@@ -106,11 +106,11 @@ function w(e) {
 function M(e) {
   let {
     channel: t
-  } = e, l = (0, s.e7)([y.Z], () => null != t ? y.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && S.default.extractTimestamp(l.id) < Date.now() - P._8R, x = (0, s.e7)([C.default], () => (null == l ? true : l.ownerId) === C.default.getId(), [l]), {
+  } = e, l = (0, s.e7)([C.Z], () => null != t ? C.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && S.default.extractTimestamp(l.id) < Date.now() - P._8R, x = (0, s.e7)([y.default], () => (null == l ? true : l.ownerId) === y.default.getId(), [l]), {
     canInvite: M,
     canManageGuild: R,
-    canMessage: L
-  } = (0, h.TE)(t, l), D = (0, s.e7)([v.default], () => {
+    canMessage: D
+  } = (0, h.TE)(t, l), L = (0, s.e7)([v.default], () => {
     var e, t;
     return (null == (e = v.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = v.default.getCurrentUser()) ? true : t.mobile) === true
   }), {
@@ -118,9 +118,9 @@ function M(e) {
     guildMessaged: U,
     guildPersonalized: V
   } = (0, h.h_)(l), {
-    handleInvite: F,
-    handleMessage: B,
-    handlePersonalize: H,
+    handleInvite: H,
+    handleMessage: F,
+    handlePersonalize: B,
     handleDownload: G,
     handleAddApplication: W
   } = function(e) {
@@ -194,7 +194,7 @@ function M(e) {
         }))
       }, [e])
     }
-  }(l), z = !(D || k || U || V), {
+  }(l), z = !(L || k || U || V), {
     titleAnimatedStyle: q,
     opacities: K
   } = function(e) {
@@ -253,7 +253,7 @@ function M(e) {
       iconUrl: u.YvY,
       header: Z.intl.string(Z.t.q9n0Ta),
       completed: k,
-      onClick: F
+      onClick: H
     })
   }, "invite")), R && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -264,9 +264,9 @@ function M(e) {
       iconUrl: u.$_T,
       header: Z.intl.string(Z.t.c5kxPh),
       completed: V,
-      onClick: H
+      onClick: B
     })
-  }, "customize")), L && Q.push((0, i.jsx)(o.Z.div, {
+  }, "customize")), D && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
     style: z ? {
       opacity: K[Q.length]
@@ -275,7 +275,7 @@ function M(e) {
       iconUrl: u.qMX,
       header: Z.intl.string(Z.t["SoP7+l"]),
       completed: U,
-      onClick: B
+      onClick: F
     })
   }, "message")), (0, j.isWeb)() && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -285,7 +285,7 @@ function M(e) {
     children: (0, i.jsx)(w, {
       iconUrl: u.yIb,
       header: Z.intl.string(Z.t.pGVNI9),
-      completed: D,
+      completed: L,
       onClick: G
     })
   }, "download")), Q.push((0, i.jsx)(o.Z.div, {

@@ -540,6 +540,10 @@ let i = {
     actions: ["CONNECTION_OPEN_SUPPLEMENTAL", "CONNECTION_RESUMED", "GUILD_CREATE", "GUILD_DELETE", "LOAD_MESSAGES_SUCCESS", "LOCAL_MESSAGES_LOADED", "LOGOUT", "MESSAGE_CREATE", "MESSAGE_DELETE", "MESSAGE_UPDATE", "THREAD_LIST_SYNC"],
     inlineRequire: () => require("./983543.js").Z,
     neverLoadBeforeConnectionOpen: false
+  },
+  HavenManager: {
+    actions: ["HAVEN_DISCONNECT"],
+    inlineRequire: () => require("./652796.js").Z
   }
 };
 (0, Chunk132454.j)(i)

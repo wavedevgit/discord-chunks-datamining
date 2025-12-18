@@ -40,7 +40,7 @@ function w(e) {
   } = e, [n, l] = r.useState(false), o = (0, m.ZP)(t, true), w = t.guild_id, M = (0, u.e7)([x.Z], () => null != w ? x.Z.getSortedRoles(w) : true), R = (0, u.e7)([j.default, O.Z], () => {
     var e;
     return j.default.getUser(null == (e = O.Z.getGuild(w)) ? true : e.ownerId)
-  }), L = r.useMemo(() => null != M ? M.filter(e => !(0, v.fI)(e)) : [], [M]), D = r.useMemo(() => s()(L).filter(e => {
+  }), D = r.useMemo(() => null != M ? M.filter(e => !(0, v.fI)(e)) : [], [M]), L = r.useMemo(() => s()(D).filter(e => {
     if (null == w) returnfalse;
     let n = S.I0({
       forceRoles: {
@@ -49,7 +49,7 @@ function w(e) {
       context: t
     });
     return c.Db(n, c.$e(Z.Plq.ADMINISTRATOR, Z.Plq.VIEW_CHANNEL))
-  }).value(), [t, w, L]), k = (0, u.Wu)([j.default], () => {
+  }).value(), [t, w, D]), k = (0, u.Wu)([j.default], () => {
     let e = {};
     for (let n of (null != R && (e[R.id] = R), Object.values(t.permissionOverwrites))) {
       if (n.type !== h.BN.MEMBER || null != e[n.id]) continue;
@@ -81,7 +81,7 @@ function w(e) {
       className: A.markup,
       children: T.intl.format(T.t.QuwqjG, {
         channelName: o,
-        topicHook: () => y.Z.parseTopic(t.topic, true, {
+        topicHook: () => C.Z.parseTopic(t.topic, true, {
           channelId: t.id
         })
       })
@@ -105,7 +105,7 @@ function w(e) {
     }) : null, (0, i.jsxs)("div", {
       className: N.members,
       children: [function() {
-        if (1 !== k.length || D.length > 0) return (0, i.jsx)(d.Z, {
+        if (1 !== k.length || L.length > 0) return (0, i.jsx)(d.Z, {
           guildId: t.guild_id,
           className: N.avatars,
           maxUsers: 5,
@@ -131,24 +131,24 @@ function w(e) {
             children: T.intl.string(T.t.rt0ERW)
           })]
         })
-      }(), D.map((e, n) => {
+      }(), L.map((e, n) => {
         var r, l;
         let o = null != (l = e.colorString) ? l : Z.Pbq,
           s = (null == (r = e.tags) ? true : r.guild_connections) !== true;
         return U ? (0, i.jsx)(I.Z, {
           className: a()(N.role, {
-            [N.last]: n === D.length - 1
+            [N.last]: n === L.length - 1
           }),
           roleName: e.name,
           roleColor: o,
           disabled: !U,
           verified: s,
           onClick: () => {
-            C.Z.open(t.guild_id, Z.pNK.MEMBERS), C.Z.selectRole(e.id)
+            y.Z.open(t.guild_id, Z.pNK.MEMBERS), y.Z.selectRole(e.id)
           }
         }, e.id) : (0, i.jsx)(b.Z, {
           className: a()(N.role, {
-            [N.last]: n === D.length - 1
+            [N.last]: n === L.length - 1
           }),
           roleName: e.name,
           roleColor: o,

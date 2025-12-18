@@ -43,14 +43,14 @@ function j(e) {
   } = (0, o.j)(), A = t.getGuildId(), {
     mute: w,
     suppress: M
-  } = (0, C.Z)(t), R = (0, l.e7)([y.Z], () => y.Z.isDeaf()), L = w || M || R, D = (0, m.sR)({
-    isSoundboardButtonDisabled: L
-  }), [k, U] = (0, f.cv)(D), {
+  } = (0, y.Z)(t), R = (0, l.e7)([C.Z], () => C.Z.isDeaf()), D = w || M || R, L = (0, m.sR)({
+    isSoundboardButtonDisabled: D
+  }), [k, U] = (0, f.cv)(L), {
     analyticsLocations: V
   } = (0, u.ZP)(), {
-    isHovered: F,
-    setIsHovered: B,
-    onMouseEnter: H,
+    isHovered: H,
+    setIsHovered: F,
+    onMouseEnter: B,
     onMouseLeave: G
   } = (0, h.Z)(200, 300);
 
@@ -98,27 +98,27 @@ function j(e) {
   }
 
   function z() {
-    (0, d.v)(P, d.d.SOUNDBOARD), S === O.D.SOUNDBOARD ? (null == _ || _(true), G()) : (null != S ? (Z(), H()) : Z(), null == _ || _(O.D.SOUNDBOARD))
+    (0, d.v)(P, d.d.SOUNDBOARD), S === O.D.SOUNDBOARD ? (null == _ || _(true), G()) : (null != S ? (Z(), B()) : Z(), null == _ || _(O.D.SOUNDBOARD))
   }
   let q = r.useRef(null);
   return (0, i.jsx)(s.y, {
     targetElementRef: q,
-    shouldShow: F && (S === O.D.SOUNDBOARD || null == S) || S === O.D.SOUNDBOARD,
+    shouldShow: H && (S === O.D.SOUNDBOARD || null == S) || S === O.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
     position: "top",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      B(false), null == _ || _(true)
+      F(false), null == _ || _(true)
     },
     renderPopout: e => {
       let {
         closePopout: n
       } = e;
-      return L ? null : (0, i.jsx)(v.Z, {
+      return D ? null : (0, i.jsx)(v.Z, {
         children: (0, i.jsx)("div", {
-          onMouseEnter: H,
+          onMouseEnter: B,
           onMouseLeave: G,
           children: (0, i.jsx)(b.Z, {
             guildId: A,
@@ -139,17 +139,17 @@ function j(e) {
       themeable: j,
       label: w ? E.intl.string(E.t["Ox4/zU"]) : M ? E.intl.string(E.t["+YBKYI"]) : R ? E.intl.string(E.t.X1lQli) : true,
       iconComponent: I,
-      disabled: L,
+      disabled: D,
       onContextMenu: W,
       onClick: z,
       onMouseEnter: () => {
-        H(), T()
+        B(), T()
       },
       onMouseLeave: () => {
         null == S && (G(), N())
       },
-      isActive: F || S === O.D.SOUNDBOARD,
-      color: F || S === O.D.SOUNDBOARD ? "primaryDark" : true
+      isActive: H || S === O.D.SOUNDBOARD,
+      color: H || S === O.D.SOUNDBOARD ? "primaryDark" : true
     })
   })
 }

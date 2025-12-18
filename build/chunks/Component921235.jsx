@@ -32,13 +32,13 @@ function E(e) {
   r.useEffect(() => {
     (0, u.FQ)("847199849233514549", true)
   }, []);
-  let j = (0, o.e7)([h.Z, f.default], () => !!a()(h.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== f.default.getId() && e.state === y.yb.SENT && !(0, C.Z)(e))),
+  let j = (0, o.e7)([h.Z, f.default], () => !!a()(h.Z.getMessages(n.id).toArray()).reverse().find(e => e.author.id !== f.default.getId() && e.state === C.yb.SENT && !(0, y.Z)(e))),
     S = (0, o.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
     _ = null != (t = b.ZP.useName(S)) ? t : v.intl.string(v.t.y1Wu2f),
     P = (0, o.e7)([d.Z], () => d.Z.getStickerById(O)),
     I = r.useCallback(async () => {
       if (null == l || "" === l) try {
-        await c.Z.sendGreetMessage(n.id, O), g.default.track(y.rMx.DM_EMPTY_ACTION, {
+        await c.Z.sendGreetMessage(n.id, O), g.default.track(C.rMx.DM_EMPTY_ACTION, {
           channel_id: n.id,
           channel_type: n.type,
           source: "Wave",

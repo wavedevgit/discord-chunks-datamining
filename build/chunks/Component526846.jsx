@@ -51,17 +51,17 @@ function A(e) {
           activeState: e
         })
       }, [e]), {
-        fetchState: (0, c.e7)([C.Z], () => C.Z.getFetchState({
+        fetchState: (0, c.e7)([y.Z], () => y.Z.getFetchState({
           surface: T,
           activeState: e
         })),
-        voiceBannerCollection: (0, c.e7)([C.Z], () => C.Z.getCollections({
+        voiceBannerCollection: (0, c.e7)([y.Z], () => y.Z.getCollections({
           surface: T,
           activeState: e
         }))[0]
       }
     }(),
-    x = g === C.M.FETCHING,
+    x = g === y.M.FETCHING,
     E = r.useMemo(() => {
       let e = null == v ? true : v.application_directory_collection_items[0];
       return null == e ? null : e.type === s.C.APPLICATION_BANNER ? e : null
@@ -76,7 +76,7 @@ function A(e) {
       sectionOverallPosition: 0,
       promotionalLabel: null != E ? (0, f.dF)(E.application) : true
     });
-  return null == E || null == v || x ? null : (null != E.id && null != E.image_hash && (n = (0, y.$_)({
+  return null == E || null == v || x ? null : (null != E.id && null != E.image_hash && (n = (0, C.$_)({
     itemId: E.id,
     hash: E.image_hash,
     containerWidth: 584
@@ -117,22 +117,22 @@ let w = Chunk473749.forwardRef(function(e, t) {
     className: h
   } = e, {
     id: b,
-    guild_id: C
+    guild_id: y
   } = l;
   r.useEffect(() => {
     E.default.track(P.rMx.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
       channel_id: b,
-      guild_id: C
+      guild_id: y
     })
-  }, [b, C]), r.useEffect(() => {
+  }, [b, y]), r.useEffect(() => {
     a || o()
   }, [o, a]);
-  let y = (0, v.bp)(),
+  let C = (0, v.bp)(),
     {
       analyticsLocations: O,
       newestAnalyticsLocation: T
     } = (0, p.ZP)(d.Z.ACTIVITIES_MINI_SHELF),
-    w = y === P.IlC.POPOUT,
+    w = C === P.IlC.POPOUT,
     M = (n = l.getGuildId(), (0, S.Z)({
       guildId: n
     }).slice(0, 5));
@@ -152,7 +152,7 @@ let w = Chunk473749.forwardRef(function(e, t) {
         analyticsLocation: T
       }), c(), f()
     }, [l, T, f, c, w]),
-    L = r.useCallback(e => {
+    D = r.useCallback(e => {
       s(), E.default.track(P.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
         channel_id: l.id,
         guild_id: l.getGuildId()
@@ -175,7 +175,7 @@ let w = Chunk473749.forwardRef(function(e, t) {
           })
         }), (0, i.jsxs)("div", {
           className: Z.container,
-          onMouseEnter: L,
+          onMouseEnter: D,
           onMouseLeave: c,
           children: [(0, i.jsxs)("div", {
             className: Z.titleContainer,
