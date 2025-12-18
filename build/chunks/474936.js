@@ -588,6 +588,7 @@ let e6 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_ten
     premium_tenure_1_month_v2: {
       id: "premium_tenure_1_month_v2",
       nameUnformatted: Chunk388032.t.LR1C0a,
+      nameUnformattedNitro: Chunk388032.t.tx9Fvw,
       tenureReqNumMonths: 1,
       hasWideArt: false,
       glowColor: "#b54913"
@@ -595,6 +596,7 @@ let e6 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_ten
     premium_tenure_3_month_v2: {
       id: "premium_tenure_3_month_v2",
       nameUnformatted: Chunk388032.t["rI1/3H"],
+      nameUnformattedNitro: Chunk388032.t.xJNb5C,
       tenureReqNumMonths: 3,
       hasWideArt: false,
       glowColor: "#9e9e9e"
@@ -602,6 +604,7 @@ let e6 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_ten
     premium_tenure_6_month_v2: {
       id: "premium_tenure_6_month_v2",
       nameUnformatted: Chunk388032.t.VkhVKS,
+      nameUnformattedNitro: Chunk388032.t["4scBFY"],
       tenureReqNumMonths: 6,
       hasWideArt: false,
       glowColor: "#ffa813"
@@ -609,6 +612,7 @@ let e6 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_ten
     premium_tenure_12_month_v2: {
       id: "premium_tenure_12_month_v2",
       nameUnformatted: Chunk388032.t.gzUfNS,
+      nameUnformattedNitro: Chunk388032.t["83Jw2B"],
       tenureReqNumMonths: 12,
       hasWideArt: false,
       glowColor: "#5eacc2"
@@ -616,6 +620,7 @@ let e6 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_ten
     premium_tenure_24_month_v2: {
       id: "premium_tenure_24_month_v2",
       nameUnformatted: Chunk388032.t.fuwTPm,
+      nameUnformattedNitro: Chunk388032.t.vRSCKv,
       tenureReqNumMonths: 24,
       hasWideArt: false,
       glowColor: "#6d5cf2"
@@ -623,6 +628,7 @@ let e6 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_ten
     premium_tenure_36_month_v2: {
       id: "premium_tenure_36_month_v2",
       nameUnformatted: Chunk388032.t.qNhNk4,
+      nameUnformattedNitro: Chunk388032.t.mV86tk,
       tenureReqNumMonths: 36,
       hasWideArt: false,
       glowColor: "#32c102"
@@ -630,6 +636,7 @@ let e6 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_ten
     premium_tenure_60_month_v2: {
       id: "premium_tenure_60_month_v2",
       nameUnformatted: Chunk388032.t["wvX+eD"],
+      nameUnformattedNitro: Chunk388032.t.WcsLxW,
       tenureReqNumMonths: 60,
       hasWideArt: true,
       glowColor: "#f29cc3"
@@ -637,6 +644,7 @@ let e6 = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_ten
     premium_tenure_72_month_v2: {
       id: "premium_tenure_72_month_v2",
       nameUnformatted: Chunk388032.t["/menIw"],
+      nameUnformattedNitro: Chunk388032.t["Z/qgMK"],
       tenureReqNumMonths: 72,
       hasWideArt: true,
       glowColor: "#078292"

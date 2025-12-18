@@ -68,7 +68,7 @@ let g = e => {
     actions: S,
     onShow: I,
     estimatedTooltipHeight: T = 300
-  } = e, C = u.vK[t].nameUnformatted, A = (f.intl.string(f.t.lG6a5x) + " " + f.intl.string(C)).toLocaleUpperCase(), N = (0, o.Z)(t), P = (0, s.J)(t);
+  } = e, C = u.vK[t].nameUnformattedNitro, A = f.intl.string(C).toLocaleUpperCase(), N = (0, o.Z)(t), P = (0, s.J)(t);
   (0, i.useEffect)(() => {
     a.a[a.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE](), new Image().src = P
   }, [P]);

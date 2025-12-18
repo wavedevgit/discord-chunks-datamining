@@ -148,7 +148,7 @@ let A = (0, Chunk884697.IC)(90),
             className: I.heroHeaderBadgeLogoSummaryContainer
           }) : (0, r.jsxs)("div", {
             className: I.heroHeaderBadgeLogoSummaryContainer,
-            children: [null != U.unpublishedAt && (0, r.jsx)(d.IGR, {
+            children: [(0, C.L9)(U.unpublishedAt) && (0, r.jsx)(d.IGR, {
               disableColor: true,
               text: L.intl.string(L.t["h/uBCR"]),
               className: I.limitedTimeBadge
