@@ -100,7 +100,7 @@ function v(e) {
         return (0, r.jsxs)("div", {
           className: m.root,
           children: [(0, r.jsx)(l.Text, {
-            variant: "text-sm/medium",
+            variant: "text-sm/semibold",
             color: "text-default",
             className: m.rolesHeading,
             children: _.intl.string(_.t.stcSfI)
@@ -110,6 +110,7 @@ function v(e) {
             ref: t
           }, n), {
             children: O.map(e => (0, r.jsx)(c.UB, {
+              className: m.rolePill,
               role: e,
               canRemove: false,
               onRemove: () => {},
