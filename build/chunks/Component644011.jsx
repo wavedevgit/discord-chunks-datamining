@@ -61,14 +61,16 @@ function y(e) {
       cardSize: y
     }, e.skuId)
   }), [y, S, v, N, P]);
-  return (i.useEffect(() => {
+  i.useEffect(() => {
     0 !== N.length && u.default.track(h.rMx.COMMERCE_SHOP_GIFTING_BREADCRUMB_VIEWED, {
       guild_id: v,
       channel_id: S,
       sku_ids: N.map(e => e.skuId),
       location: O
     })
-  }, [v, S, N, O]), "loading" === A || 0 === N.length) ? null : (0, r.jsxs)("div", {
+  }, [v, S, N, O]);
+  let w = "loading" === A || 0 === N.length;
+  return (0, r.jsxs)("div", {
     className: o()(b.container, t),
     children: [(0, r.jsxs)("div", {
       className: b.header,
@@ -79,7 +81,10 @@ function y(e) {
       }), null != C ? C : null]
     }), (0, r.jsx)("div", {
       className: b.items,
-      children: R
+      children: w ? (0, r.jsx)(s.$jN, {
+        type: s.$jN.Type.SPINNING_CIRCLE,
+        className: b.spinner
+      }) : R
     })]
   })
 }
