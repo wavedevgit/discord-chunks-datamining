@@ -207,7 +207,7 @@ function ec(e) {
   } = e, [o] = (0, f.Wu)([D.ZP], () => {
     let e = D.ZP.getGuildsTree();
     return [e, e.version]
-  }), s = o.getRoots(), c = (0, f.Wu)([T.Z], () => T.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(z.Z, {
+  }), s = o.getRoots(), c = (0, f.Wu)([T.Z], () => T.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(W.Z, {
     id: e.id,
     name: e.name,
     icon: e.icon
@@ -254,7 +254,7 @@ function eu(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(B, ["ref"]), H = (0, b.mFp)(), [z, K] = i.useState(false), q = (0, b.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), J = (0, b.dQu)(g.Z.space.SPACE_XS), $ = (0, x.Z)(), {
+  }(B, ["ref"]), H = (0, b.mFp)(), [W, K] = i.useState(false), q = (0, b.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), J = (0, b.dQu)(g.Z.space.SPACE_XS), $ = (0, x.Z)(), {
     pathname: er
   } = (0, c.TH)(), {
     entrypoint: eu
@@ -345,7 +345,7 @@ function eu(e) {
           return null
       }
     }, [E, S, O, ef.setNodeRef]),
-    em = (0, r.jsx)(W.Z, {
+    em = (0, r.jsx)(z.Z, {
       selected: ep,
       className: en.discoveryIcon
     }),
@@ -377,7 +377,7 @@ function eu(e) {
               children: [(0, r.jsxs)(b.xVE, {
                 className: a()({
                   [en.scroller]: true,
-                  [en.scrolling]: z
+                  [en.scrolling]: W
                 }),
                 experimental_useStack: true,
                 gap: "xs",

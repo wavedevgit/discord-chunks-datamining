@@ -187,7 +187,7 @@ function V(e) {
             }), t.mentioned && s ? (0, r.jsx)(d.mAB, {
               className: U.mentionBadge,
               count: 1
-            }) : (0, r.jsx)(z, {
+            }) : (0, r.jsx)(W, {
               message: t
             })]
           })]
@@ -212,7 +212,7 @@ function V(e) {
             }),
             children: [b, !I && " \xb7 ".concat(O)]
           })]
-        }), (0, r.jsx)(W, {
+        }), (0, r.jsx)(z, {
           message: t,
           isUnread: s,
           isSelected: o,
@@ -255,7 +255,7 @@ function H(e) {
   })
 }
 
-function z(e) {
+function W(e) {
   let {
     message: t
   } = e, n = (0, E.a3)(t.timestamp.getTime());
@@ -268,7 +268,7 @@ function z(e) {
   })
 }
 
-function W(e) {
+function z(e) {
   let {
     message: t,
     channel: n,

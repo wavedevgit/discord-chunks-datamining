@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 644679, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk481060 = require("./481060.js"),
@@ -10,9 +10,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk19780 = require("./19780.js"),
   Chunk594174 = require("./594174.js"),
   Chunk960048 = require("./960048.js"),
+  Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js");
 
-function d(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -20,8 +21,8 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let p = "CollectiblesExpiryModal";
-class f extends Chunk317770.Z {
+let f = "CollectiblesExpiryModal";
+class g extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("POST_CONNECTION_OPEN", this.handleMaybeOpenModal), Chunk570140.Z.subscribe("CURRENT_USER_UPDATE", this.handleMaybeOpenModal)
   }
@@ -29,18 +30,19 @@ class f extends Chunk317770.Z {
     Chunk570140.Z.unsubscribe("POST_CONNECTION_OPEN", this.handleMaybeOpenModal), Chunk570140.Z.unsubscribe("CURRENT_USER_UPDATE", this.handleMaybeOpenModal), null != this.timeout && (clearTimeout(this.timeout), this.timeout = null)
   }
   constructor(...e) {
-    super(...e), d(this, "timeout", null), d(this, "handleMaybeOpenModal", () => {
+    super(...e), p(this, "timeout", null), p(this, "handleMaybeOpenModal", () => {
       var e;
       let t = s.default.getCurrentUser(),
         n = null == t || null == (e = t.avatarDecoration) ? true : e.expiresAt;
       null != n && (this.maybeOpenModal() || (null != this.timeout && clearTimeout(this.timeout), this.timeout = setTimeout(this.maybeOpenModal, 1e3 * n - Date.now() + 1e3)))
-    }), d(this, "maybeOpenModal", () => {
+    }), p(this, "maybeOpenModal", () => {
       var e, t;
       let l = s.default.getCurrentUser(),
         a = o.Z.getState(),
-        f = null == l || null == (e = l.avatarDecoration) ? true : e.skuId,
-        g = null == l || null == (t = l.avatarDecoration) ? true : t.expiresAt;
-      return null != l && !!(null != g && 1e3 * g < Date.now()) && a !== u.hes.RTC_CONNECTED && ((0, i.Mr3)(p), (0, i.ZDy)(async () => {
+        g = null == l || null == (e = l.avatarDecoration) ? true : e.skuId,
+        h = null == l || null == (t = l.avatarDecoration) ? true : t.expiresAt,
+        m = null != g && u.Hl.includes(g);
+      return null != l && !m && !!(null != h && 1e3 * h < Date.now()) && a !== d.hes.RTC_CONNECTED && ((0, i.Mr3)(f), (0, i.ZDy)(async () => {
         let {
           default: e
         } = await n.e("77370").then(n.bind(n, 83950));
@@ -62,17 +64,17 @@ class f extends Chunk317770.Z {
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              d(e, t, n[t])
+              p(e, t, n[t])
             })
           }
           return e
         }({}, t), {
-          skuId: f
+          skuId: g
         }))
       }, {
-        modalKey: p
+        modalKey: f
       }), c.Z.captureMessage("Collectible expiry modal shown"), true)
     })
   }
 }
-let g = new f
+let h = new g

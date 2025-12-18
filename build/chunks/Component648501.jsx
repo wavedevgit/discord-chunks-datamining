@@ -44,12 +44,12 @@ function P(e) {
     isNewChannel: D,
     muted: M,
     resolvedUnreadSetting: L
-  } = e, k = (0, i.e7)([b.ZP], () => b.ZP.getMentionCount(n.id)), G = (0, i.e7)([b.ZP], () => b.ZP.getIsMentionLowImportance(n.id)), U = (0, o.ZP)(n), B = (0, i.e7)([g.Z], () => !g.Z.can(S.Plq.CONNECT, n)), F = (0, s.P)(n), V = (0, i.e7)([m.Z], () => m.Z.hasVideo(n.id)), H = (0, f.PK)(n.id) && n.isGuildStageVoice(), z = (0, j.ZP)({
+  } = e, k = (0, i.e7)([b.ZP], () => b.ZP.getMentionCount(n.id)), G = (0, i.e7)([b.ZP], () => b.ZP.getIsMentionLowImportance(n.id)), U = (0, o.ZP)(n), B = (0, i.e7)([g.Z], () => !g.Z.can(S.Plq.CONNECT, n)), F = (0, s.P)(n), V = (0, i.e7)([m.Z], () => m.Z.hasVideo(n.id)), H = (0, f.PK)(n.id) && n.isGuildStageVoice(), W = (0, j.ZP)({
     channel: n,
     locked: B,
     video: (V || H) && null == F,
     selected: P
-  }), W = (0, i.e7)([h.Z], () => h.Z.getNewThreadCount(n.guild_id, n.id)), K = (0, u.n2)(n.guild_id, n.id), Y = (0, i.e7)([p.Z], () => {
+  }), z = (0, i.e7)([h.Z], () => h.Z.getNewThreadCount(n.guild_id, n.id)), K = (0, u.n2)(n.guild_id, n.id), Y = (0, i.e7)([p.Z], () => {
     var e, t;
     return null != (t = null == (e = p.Z.getGuild(n.guild_id)) ? true : e.features.has(S.GuildFeatures.COMMUNITY)) && t
   });
@@ -64,11 +64,11 @@ function P(e) {
     text: _.intl.string(_.t.y2b7CA),
     color: l.Z.colors.BADGE_BACKGROUND_DEFAULT.css
   });
-  if (!M && L === I.i.ALL_MESSAGES && n.isForumLikeChannel() && null != W && W > 0) return (0, r.jsx)(a.Text, {
+  if (!M && L === I.i.ALL_MESSAGES && n.isForumLikeChannel() && null != z && z > 0) return (0, r.jsx)(a.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
     children: _.intl.format(_.t.GkAbqY, {
-      count: (0, a.NGo)(W)
+      count: (0, a.NGo)(z)
     })
   });
   if (!M && n.isForumLikeChannel() && null != K && K > 0) return (0, r.jsx)(a.Text, {
@@ -77,7 +77,7 @@ function P(e) {
     children: (0, a.NGo)(K)
   });
   let q = null != (t = null == Z ? true : Z.length) ? t : 0;
-  return null != w && w && z ? (0, r.jsx)(x.Z, {
+  return null != w && w && W ? (0, r.jsx)(x.Z, {
     userCount: q,
     video: V || H,
     channel: n

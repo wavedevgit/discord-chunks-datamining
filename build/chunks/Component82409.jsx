@@ -136,8 +136,8 @@ function k(e) {
         message: n
       }]
     }), [G]),
-    z = U(_, l, o),
-    W = U(P, l, null);
+    W = U(_, l, o),
+    z = U(P, l, null);
   (0, h.ZP)(() => {
     var e;
     d.Z.dispatch({
@@ -177,7 +177,7 @@ function k(e) {
         },
         isUnread: null != (i = O.ZP.hasUnread(c)) && i
       }
-    }(z, W);
+    }(W, z);
     null != i && C.Z.inboxItemClick({
       message: i,
       channel: {
@@ -215,8 +215,8 @@ function k(e) {
       }), (0, r.jsx)(Z.Z, {
         className: R.messageList,
         renderMessageGroup: F,
-        messages: l === w.V5.BOOKMARKS ? H : z,
-        unreadMessages: l === w.V5.BOOKMARKS ? [] : W,
+        messages: l === w.V5.BOOKMARKS ? H : W,
+        unreadMessages: l === w.V5.BOOKMARKS ? [] : z,
         listName: "notifications-inbox",
         renderLoadingState: B,
         ignoreGrouping: l === w.V5.BOOKMARKS,

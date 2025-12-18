@@ -93,8 +93,8 @@ let L = Chunk473749.memo(function(e) {
     route: F,
     guild: V,
     animatable: H,
-    selected: z = false,
-    unread: W = false,
+    selected: W = false,
+    unread: z = false,
     mediaState: K,
     unavailable: Y = false,
     badge: q = 0,
@@ -176,7 +176,7 @@ let L = Chunk473749.memo(function(e) {
   let eN = ey || eb ? (0, r.jsx)(E.Z, {
       guild: V,
       show: ey,
-      active: z,
+      active: W,
       onAnimationStart: function() {
         em(ey)
       },
@@ -184,7 +184,7 @@ let L = Chunk473749.memo(function(e) {
         ey || em(false)
       }
     }) : (0, r.jsx)(f.aRk, {
-      selected: z,
+      selected: W,
       children: (0, r.jsx)("div", {
         ref: J ? e => {
           ed(e)
@@ -208,11 +208,11 @@ let L = Chunk473749.memo(function(e) {
           onContextMenu: eE,
           onKeyDown: eS,
           icon: (0, O.EB)(V, 2 * eP, eg && H, true),
-          selected: z || eg
+          selected: W || eg
         }, ef), {
           "aria-setsize": er,
           "aria-posinset": ei,
-          "aria-selected": z
+          "aria-selected": W
         }))
       })
     }),
@@ -225,11 +225,11 @@ let L = Chunk473749.memo(function(e) {
       className: a()(T.blobContainer, {
         [T.sorting]: $,
         [T.wobble]: ey,
-        [T.selected]: ey || z
+        [T.selected]: ey || W
       }),
       "data-drop-hovering": ey,
       children: (0, r.jsx)(f.aRk, {
-        selected: z,
+        selected: W,
         upperBadge: eo,
         lowerBadge: es,
         lowerBadgeSize: ec,
@@ -240,8 +240,8 @@ let L = Chunk473749.memo(function(e) {
     ref: e_,
     children: [(0, r.jsx)(x.Z, {
       hovered: !eu && eg,
-      selected: !eu && z,
-      unread: !eu && W,
+      selected: !eu && W,
+      unread: !eu && z,
       className: T.pill
     }), (0, r.jsx)(I.Z, {
       guild: V,

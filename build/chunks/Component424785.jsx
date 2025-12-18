@@ -46,7 +46,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk642915 = require("./642915.js"),
   Chunk257516 = require("./257516.js");
 
-function z(e, t, n) {
+function W(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -55,14 +55,14 @@ function z(e, t, n) {
   }) : e[t] = n, e
 }
 
-function W(e) {
+function z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      z(e, t, n[t])
+      W(e, t, n[t])
     })
   }
   return e
@@ -198,13 +198,13 @@ class Y extends Chunk98597.ZP {
     return Chunk146773 && (E = Chunk194983(Chunk427679)), Chunk239091 && (E = Chunk120356(Chunk442837(Chunk427679))), Chunk427679
   }
   constructor(...e) {
-    super(...e), z(this, "channelItemRef", i.createRef()), z(this, "state", {
+    super(...e), W(this, "channelItemRef", i.createRef()), W(this, "state", {
       shouldShowGuildVerificationPopout: false
-    }), z(this, "closeGuildVerificationPopout", () => {
+    }), W(this, "closeGuildVerificationPopout", () => {
       this.setState({
         shouldShowGuildVerificationPopout: false
       })
-    }), z(this, "handleClick", () => {
+    }), W(this, "handleClick", () => {
       let {
         channel: e,
         locked: t,
@@ -214,13 +214,13 @@ class Y extends Chunk98597.ZP {
       null != i && (0, m.n)(i) && (0, b.hk)(i), r && this.setState({
         shouldShowGuildVerificationPopout: true
       }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, j.Cq)(e), __OVERLAY__ || (0, v.Kh)(e.id)
-    }), z(this, "handleClickChat", () => {
+    }), W(this, "handleClickChat", () => {
       let {
         channel: e,
         locked: t
       } = this.props;
       __OVERLAY__ || t || (0, v.Kh)(e.id)
-    }), z(this, "handleContextMenu", e => {
+    }), W(this, "handleContextMenu", e => {
       let {
         channel: t
       } = this.props, i = N.Z.getGuild(t.getGuildId());
@@ -228,12 +228,12 @@ class Y extends Chunk98597.ZP {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("18320"), n.e("83331"), n.e("81070")]).then(n.bind(n, 213202));
-        return n => (0, r.jsx)(e, K(W({}, n), {
+        return n => (0, r.jsx)(e, K(z({}, n), {
           channel: t,
           guild: i
         }))
       })
-    }), z(this, "renderPopout", () => {
+    }), W(this, "renderPopout", () => {
       let {
         channel: e
       } = this.props, {
@@ -245,7 +245,7 @@ class Y extends Chunk98597.ZP {
         closePopout: this.closeGuildVerificationPopout
       });
       throw Error("VoiceChannel.renderPopout: There must always be something to render")
-    }), z(this, "renderOpenChatButton", () => {
+    }), W(this, "renderOpenChatButton", () => {
       let {
         channel: e,
         locked: t,
@@ -267,12 +267,12 @@ class Y extends Chunk98597.ZP {
           })
         })
       })
-    }), z(this, "getTooltipText", () => {
+    }), W(this, "getTooltipText", () => {
       let {
         connected: e
       } = this.props;
       return this.isFull() && !e ? F.intl.string(F.t.rZfiNq) : null
-    }), z(this, "renderSubtitle", () => {
+    }), W(this, "renderSubtitle", () => {
       var e;
       let t = null == (e = this.props.stageInstance) ? true : e.topic;
       return null == t ? null : (0, r.jsx)(s.Z, {
@@ -317,7 +317,7 @@ function Q(e) {
     needSubscriptionToAccess: m,
     enableConnectedUserLimit: v || n.userLimit > 0 && n.userLimit < U.xGv
   }), N = e.connected && null == j;
-  return (0, r.jsx)(q, K(W({
+  return (0, r.jsx)(q, K(z({
     categoryCollapsed: f,
     connectAction: h,
     numAudience: g,

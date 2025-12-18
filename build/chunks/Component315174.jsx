@@ -254,7 +254,7 @@ let w = Chunk473749.memo(function(e) {
   }, [L, n, H]), i.useEffect(() => {
     U.current = n
   }, [n]);
-  let z = () => {
+  let W = () => {
     let {
       renderBanner: t,
       guildBanner: n
@@ -265,12 +265,12 @@ let w = Chunk473749.memo(function(e) {
     theme: n ? v.BRd.DARK : true,
     children: e => (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        "data-has-banner": z(),
+        "data-has-banner": W(),
         "data-banner-visible": n,
         ref: F,
         className: a()(o, {
           [x.container]: true,
-          [x.hasBanner]: z(),
+          [x.hasBanner]: W(),
           [x.bannerVisible]: n,
           [e]: false,
           [x.communityInfoVisible]: M || w && D
@@ -306,7 +306,7 @@ let w = Chunk473749.memo(function(e) {
         }) : null, (0, r.jsx)(T, {
           controller: l
         })]
-      }), L && z() ? (0, r.jsx)("div", {
+      }), L && W() ? (0, r.jsx)("div", {
         className: x.animatedBannerHoverLayer,
         onMouseEnter: () => {
           G(true), clearTimeout(V.current)

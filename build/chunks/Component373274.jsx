@@ -573,7 +573,7 @@ class ep extends(r = Chunk473749.PureComponent) {
               withMargin: l.length > 1
             }, ei.z.GUILD_PREMIUM_PROGRESS_BAR);
           case ei.z.GUILD_HOME:
-            return (0, i.jsx)(W.Z, {
+            return (0, i.jsx)(z.Z, {
               guild: r,
               selected: o === eo.oC.GUILD_HOME
             }, ei.z.GUILD_HOME);
@@ -602,7 +602,7 @@ class ep extends(r = Chunk473749.PureComponent) {
               guild: r
             });
           case ei.z.CHANNELS_AND_ROLES:
-            return (0, i.jsx)(z.m, {
+            return (0, i.jsx)(W.m, {
               guild: r,
               selected: o === eo.oC.CHANNEL_BROWSER || o === eo.oC.CUSTOMIZE_COMMUNITY
             }, ei.z.CHANNELS_AND_ROLES);

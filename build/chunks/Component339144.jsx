@@ -59,8 +59,8 @@ let D = Chunk473749.memo(function(e) {
         frame: F,
         activity: V,
         application: H,
-        analyticsContext: z,
-        inviteButtonRef: W,
+        analyticsContext: W,
+        inviteButtonRef: z,
         accountLinkButtonRef: K,
         startAuthorization: Y,
         canStartAuthorization: q,
@@ -88,9 +88,9 @@ let D = Chunk473749.memo(function(e) {
         }), (0, m.v)($, m.d.INVITE), P.default.track(Z.rMx.OPEN_MODAL, {
           type: "Send Join Invite",
           application_id: V.application_id,
-          location: z.location
+          location: W.location
         }), (0, d.h7)(V, false)
-      }, [V, z, $, U]),
+      }, [V, W, $, U]),
       ei = i.useCallback((e, t) => () => {
         (0, m.v)($, m.d.LEAVE_ACTIVITY), p.Z.leaveActivity({
           location: t,
@@ -177,7 +177,7 @@ let D = Chunk473749.memo(function(e) {
         })
       })) : null,
       eh = en && null == B ? (0, r.jsx)(N.Z, {
-        ref: W,
+        ref: z,
         tooltipText: T.intl.string(T.t["hC/Zey"]),
         onClick: er,
         icon: u.ejJ

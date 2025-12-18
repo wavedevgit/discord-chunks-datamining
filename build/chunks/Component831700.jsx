@@ -353,7 +353,7 @@ class en extends Chunk98597.ZP {
       } = this.state;
       if (o && !n && !i && !s) {
         let n = R.SE.getSetting().includes(a.id);
-        return (0, r.jsx)(W.Z, {
+        return (0, r.jsx)(z.Z, {
           onAction: this.closePopout,
           guild: a,
           channel: e,
@@ -442,7 +442,7 @@ function ei(e) {
   }), {
     enableHighlight: M,
     enableWaveformIcon: F
-  } = (0, m.M)(t.id, "VoiceChannel"), V = null != c && c.length > 0, z = M && V, W = F && V, K = (0, H.Z)({
+  } = (0, m.M)(t.id, "VoiceChannel"), V = null != c && c.length > 0, W = M && V, z = F && V, K = (0, H.Z)({
     channel: n,
     isChannelSelected: a,
     isChannelCollapsed: s,
@@ -471,7 +471,7 @@ function ei(e) {
     enableOpenTIVForPing: R,
     hasChannelInfo: null != K,
     hasStartTime: v,
-    shouldHighlightChannel: z,
-    shouldUseAnimatedWaveform: W
+    shouldHighlightChannel: W,
+    shouldUseAnimatedWaveform: z
   }))
 }
