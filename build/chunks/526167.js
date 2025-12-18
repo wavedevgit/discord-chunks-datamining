@@ -5,8 +5,7 @@ require.d(exports, {
   G6: () => S,
   hY: () => g,
   og: () => v,
-  rO: () => T,
-  vU: () => I,
+  rO: () => I,
   vu: () => p
 });
 var r, i, a, o, s, l, Chunk525654 = require("./525654.js"),
@@ -49,11 +48,6 @@ function S() {
 }
 
 function I() {
-  let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : navigator.userAgent;
-  return false !== module.toLowerCase().indexOf("firefox")
-}
-
-function T() {
   var e;
   let t = window.navigator,
     n = (null == (e = exports.mediaCapabilities) ? true : module.decodingInfo) != null;

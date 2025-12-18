@@ -2,11 +2,13 @@
 /** chunk id: 572995, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  NA: () => ed,
-  ZP: () => ep,
-  y$: () => eu
+  NA: () => eg,
+  ZP: () => eb,
+  y$: () => eh
 });
-var Chunk473749 = require("./473749.js"),
+var Chunk54381 = require("./54381.js"),
+  Chunk473749 = require("./473749.js"),
+  Chunk952265 = require("./952265.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk550385 = require("./550385.js"),
@@ -18,13 +20,17 @@ var Chunk473749 = require("./473749.js"),
   Chunk526167 = require("./526167.js"),
   Chunk63063 = require("./63063.js"),
   Chunk283066 = require("./283066.js"),
+  Chunk241986 = require("./241986.js"),
   Chunk340625 = require("./340625.js"),
   Chunk469165 = require("./469165.jsx"),
+  Chunk282793 = require("./282793.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js"),
+  Chunk353149 = require("./353149.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk831989 = require("./831989.js"),
   Chunk143525 = require("./143525.js"),
+  Chunk261778 = require("./261778.js"),
   Chunk509614 = require("./509614.js"),
   Chunk880511 = require("./880511.js"),
   Chunk985443 = require("./985443.js"),
@@ -66,7 +72,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk222419 = require("./222419.js"),
   Chunk740778 = require("./740778.js");
 
-function el(e, t, n) {
+function e_(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -75,102 +81,108 @@ function el(e, t, n) {
   }) : e[t] = n, e
 }
 
-function ec(e) {
+function em(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      el(e, t, n[t])
+      e_(e, t, n[t])
     })
   }
   return e
 }
-var eu = function(e) {
+var eh = function(e) {
     return e.SMALL = "small", e.MEDIUM = "medium", e.LARGE = "large", e
   }({}),
-  ed = function(e) {
-    return e.REFERRAL_PROGRAM = "referralProgram", e.SERVER_PROFILES = "serverProfiles", e.SHOW_YOUR_STYLE = "showYourStyle", e.YOUR_SPACE = "yourSpace", e.EMOJIS = "emojis", e.NO_LIMITS = "noLimits", e.CUSTOM_THEMES = "customThemes", e.DISPLAY_NAME_STYLES = "displayNameStyles", e.RECURRING_3P_PROMOTIONS = "recurring3PPromotions", e
+  eg = function(e) {
+    return e.REFERRAL_PROGRAM = "referralProgram", e.SERVER_PROFILES = "serverProfiles", e.SHOW_YOUR_STYLE = "showYourStyle", e.YOUR_SPACE = "yourSpace", e.EMOJIS = "emojis", e.NO_LIMITS = "noLimits", e.CUSTOM_THEMES = "customThemes", e.DISPLAY_NAME_STYLES = "displayNameStyles", e.RECURRING_3P_PROMOTIONS = "recurring3PPromotions", e.PREMIUM_GROUP = "premiumGroup", e
   }({});
-let ef = (e, t) => ec({
+let eE = (e, t) => em({
+    premiumGroup: {
+      thumbnail: A,
+      assetUrl: A
+    },
     serverProfiles: {
-      thumbnail: C,
-      assetUrl: e ? en.ZP : er.ZP
+      thumbnail: D,
+      assetUrl: e ? el.ZP : ec.ZP
     },
     customThemes: {
-      thumbnail: K.Z,
-      assetUrl: e ? W.Z : z.Z
+      thumbnail: $.Z,
+      assetUrl: e ? J.Z : ee.Z
     },
     displayNameStyles: {
-      thumbnail: P.Z,
-      assetUrl: e ? N.Z : R.Z
+      thumbnail: j.Z,
+      assetUrl: e ? L.Z : M.Z
     },
     recurring3PPromotions: {
-      thumbnail: A.Z,
+      thumbnail: x.Z,
       assetUrl: " "
     }
   }, t ? {
     referralProgram: {
-      thumbnail: U.Z,
-      assetUrl: e ? k.Z : G.Z
-    },
-    showYourStyle: {
-      thumbnail: F.Z,
-      assetUrl: e ? Z.Z : B.Z
-    },
-    yourSpace: {
       thumbnail: H.Z,
       assetUrl: e ? V.Z : Y.Z
     },
+    showYourStyle: {
+      thumbnail: K.Z,
+      assetUrl: e ? W.Z : z.Z
+    },
+    yourSpace: {
+      thumbnail: Q.Z,
+      assetUrl: e ? q.Z : X.Z
+    },
     emojis: {
-      thumbnail: D.Z,
-      assetUrl: e ? w.Z : x.Z
+      thumbnail: U.Z,
+      assetUrl: e ? k.Z : G.Z
     },
     noLimits: {
-      thumbnail: j.Z,
-      assetUrl: e ? L.Z : M.Z
+      thumbnail: F.Z,
+      assetUrl: e ? Z.Z : B.Z
     }
   } : {
     referralProgram: {
-      thumbnail: ee.Z,
-      assetUrl: e ? $.ZP : et.ZP
+      thumbnail: eo.Z,
+      assetUrl: e ? ea.ZP : es.ZP
     },
     showYourStyle: {
-      thumbnail: T,
-      assetUrl: e ? ei.Z : ea.Z
+      thumbnail: w,
+      assetUrl: e ? eu.Z : ed.Z
     },
     yourSpace: {
-      thumbnail: I,
-      assetUrl: e ? eo.Z : es.Z
+      thumbnail: R,
+      assetUrl: e ? ef.Z : ep.Z
     },
     emojis: {
-      thumbnail: v,
-      assetUrl: e ? q.ZP : Q.ZP
+      thumbnail: N,
+      assetUrl: e ? et.ZP : en.ZP
     },
     noLimits: {
-      thumbnail: S,
-      assetUrl: e ? X.ZP : J.ZP
+      thumbnail: P,
+      assetUrl: e ? er.ZP : ei.ZP
     }
   }),
-  ep = () => {
+  eb = () => {
     let {
       analyticsLocations: e
     } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_MARKETING_BENTO_BOX), t = (0, Chunk300284.Z)({
       scrollPosition: Chunk526761.Y_.TRY_IT_OUT,
       analyticsLocations: module
-    }), v = Chunk594928.JH.useExperiment({
+    }), A = Chunk594928.JH.useExperiment({
       location: "useBentoBoxes"
-    }).enabled, S = Chunk340625.Z.useExperiment({
+    }).enabled, N = Chunk340625.Z.useExperiment({
       location: "useBentoBoxes"
-    }), I = (0, Chunk473749.useCallback)(() => {
+    }), P = (0, Chunk241986.Z)({
+      location: "useBentoBoxes"
+    }), R = (0, Chunk473749.useCallback)(() => {
       (0, Chunk518596.openUserSettings)(Chunk313789.n.PROFILE_PANEL, {
         section: Chunk981631.oAB.PROFILE_CUSTOMIZATION,
         analyticsLocations: module
       }, () => (0, Chunk829716.I)({
         analyticsLocations: module
       }))
-    }, [module]), T = () => {
+    }, [module]), w = () => {
       {
         letChunk518596 = require("./518596.jsx");
         exports(Chunk313789.n.APPEARANCE_PANEL, {
@@ -178,9 +190,9 @@ let ef = (e, t) => ec({
           analyticsLocations: module
         })
       }
-    }, C = (0, Chunk526167.rO)(), A = Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM), N = ef(Chunk872532, (0, Chunk283066.Z)({
+    }, D = (0, Chunk526167.rO)(), x = Chunk63063.Z.getArticleURL(Chunk981631.BhN.REFERRAL_PROGRAM), L = eE(Chunk872532, (0, Chunk283066.Z)({
       location: "useBentoBoxes"
-    })), P = {
+    })), j = {
       name: "serverProfiles",
       title: Chunk388032.intl.string(Chunk388032.t.I9TYMg),
       description: Chunk388032.intl.string(Chunk388032.t.HMSHeH),
@@ -188,7 +200,7 @@ let ef = (e, t) => ec({
       onClick: exports,
       previewImage: Chunk94314.serverProfiles.thumbnail,
       videoUrl: Chunk94314.serverProfiles.assetUrl
-    }, R = {
+    }, M = {
       name: "referralProgram",
       title: Chunk388032.intl.string(Chunk388032.t.tPY4o9),
       description: Chunk388032.intl.format(Chunk388032.t.jRPQUH, {
@@ -196,7 +208,7 @@ let ef = (e, t) => ec({
       }),
       previewImage: Chunk94314.referralProgram.thumbnail,
       videoUrl: Chunk94314.referralProgram.assetUrl
-    }, w = {
+    }, k = {
       name: "customThemes",
       title: Chunk388032.intl.string(Chunk831989.default.XokIHM),
       description: Chunk388032.intl.string(Chunk831989.default["7esQMC"]),
@@ -206,7 +218,7 @@ let ef = (e, t) => ec({
         (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME)
       },
       videoUrl: Chunk94314.customThemes.assetUrl
-    }, D = {
+    }, U = {
       name: "displayNameStyles",
       title: Chunk388032.intl.string(Chunk143525.default.ABtBDQ),
       description: Chunk388032.intl.string(Chunk143525.default.MFNXZh),
@@ -215,7 +227,29 @@ let ef = (e, t) => ec({
       onClick: Chunk985443,
       badgeText: Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase(),
       videoUrl: Chunk94314.displayNameStyles.assetUrl
-    }, x = {
+    }, G = {
+      name: "premiumGroup",
+      title: Chunk388032.intl.formatToPlainString(Chunk353149.default.VFEDDB, {
+        premiumGroupProductName: (0, Chunk282793.sO)()
+      }),
+      description: Chunk388032.intl.formatToPlainString(Chunk353149.default.WudmR3, {
+        totalSeats: Chunk282793.Q5,
+        premiumGroupProductName: (0, Chunk282793.sO)()
+      }),
+      descriptionCta: Chunk388032.intl.string(Chunk388032.t.hvVgAZ),
+      previewImage: Chunk94314.premiumGroup.thumbnail,
+      videoUrl: Chunk94314.premiumGroup.assetUrl,
+      onClick: () => {
+        (0, Chunk952265.openModalLazy)(async () => {
+          let {
+            default: e
+          } = await require.e("33638").then(require.bind(require, 837244));
+          return t => (0, r.jsx)(e, em({}, t))
+        })
+      },
+      badgeText: Chunk388032.intl.string(Chunk388032.t.oW0eUd).toLocaleUpperCase(),
+      badgeVariant: "expressive"
+    }, Z = {
       name: "recurring3PPromotions",
       title: Chunk388032.intl.string(Chunk388032.t.m7PucM),
       description: Chunk388032.intl.format(Chunk388032.t.mqSNPd, {}),
@@ -228,7 +262,7 @@ let ef = (e, t) => ec({
       badgeText: Chunk388032.intl.string(Chunk388032.t.oW0eUd).toLocaleUpperCase(),
       previewImage: Chunk94314.recurring3PPromotions.thumbnail,
       videoUrl: Chunk94314.recurring3PPromotions.thumbnail
-    }, L = {
+    }, F = {
       name: "showYourStyle",
       title: Chunk388032.intl.string(Chunk388032.t.Ij3Zmv),
       description: Chunk388032.intl.string(Chunk388032.t.UsOUxY),
@@ -236,7 +270,7 @@ let ef = (e, t) => ec({
       previewImage: Chunk94314.showYourStyle.thumbnail,
       onClick: exports,
       videoUrl: Chunk94314.showYourStyle.assetUrl
-    }, j = {
+    }, B = {
       name: "yourSpace",
       title: Chunk388032.intl.string(Chunk388032.t.Wme3nX),
       description: Chunk388032.intl.string(Chunk388032.t["/aAIqV"]),
@@ -244,13 +278,13 @@ let ef = (e, t) => ec({
       previewImage: Chunk94314.yourSpace.thumbnail,
       onClick: Chunk612253,
       videoUrl: Chunk94314.yourSpace.assetUrl
-    }, M = {
+    }, V = {
       name: "emojis",
       title: Chunk388032.intl.string(Chunk388032.t.zY5PPb),
       description: Chunk388032.intl.string(Chunk388032.t.R5Xag2),
       previewImage: Chunk94314.emojis.thumbnail,
       videoUrl: Chunk94314.emojis.assetUrl
-    }, k = {
+    }, H = {
       name: "noLimits",
       title: Chunk388032.intl.string(Chunk388032.t["6b3ydG"]),
       description: Chunk388032.intl.string(Chunk388032.t["Y+IJyg"]),
@@ -258,20 +292,23 @@ let ef = (e, t) => ec({
       videoUrl: Chunk94314.noLimits.assetUrl
     };
     return {
-      whatsNewBoxes: Chunk509614 ? [
+      whatsNewBoxes: Chunk880511 ? [
+        [Chunk91830],
+        [Chunk548475, Chunk967830]
+      ] : Chunk261778 ? [
         [Chunk406459],
         [Chunk742694, Chunk967830]
-      ] : Chunk880511.enabled ? [
-        [Chunk91830],
+      ] : Chunk509614.enabled ? [
+        [Chunk32357],
         [Chunk548475, Chunk967830]
       ] : [
         [Chunk742694],
         [Chunk548475, Chunk967830]
       ],
       bestOfBoxes: [
-        [Chunk32357],
         [Chunk147146],
-        [Chunk801794, Chunk739790]
+        [Chunk801794],
+        [Chunk739790, Chunk779235]
       ]
     }
   }

@@ -102,8 +102,6 @@ function Y(e) {
       return (0, r.jsx)(H, {
         Icon: i,
         text: a(),
-        className: Z.itemApplicationHome,
-        textVariant: "text-sm/normal",
         enablePremiumBrandRefresh: true,
         isApplicationHome: t
       }, n)

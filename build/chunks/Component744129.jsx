@@ -295,35 +295,43 @@ let Y = e => {
     let {
       isReducedMotion: t,
       className: n
-    } = e, i = () => {}, o = (0, r.jsx)("div", {
+    } = e, i = (0, r.jsx)("div", {
       className: L.CTAButton,
       children: (0, r.jsx)(l.zxk, {
         size: "md",
         fullWidth: true,
-        onClick: i,
         icon: u.SrA,
         text: x.intl.string(x.t["2pG5Ga"]),
         variant: "secondary"
       })
-    }), s = (0, r.jsx)("div", {
+    }), o = (0, r.jsx)("div", {
       className: a()({
         [L.premiumCardHover]: !t
       }),
       children: (0, r.jsx)(H, {
         className: a()(L.applicationHomeCard, L.narrow),
-        ctaButton: o,
+        ctaButton: i,
         isApplicationHome: true
       })
     });
-    return (0, r.jsx)("div", {
-      className: n,
-      children: (0, r.jsx)(u.P3F, {
-        onClick: i,
-        style: {
-          cursor: "pointer"
-        },
-        children: s
-      })
+    return (0, r.jsx)(S.Z, {
+      subscriptionTier: w.Si.TIER_2,
+      initialPlanId: w.Xh.PREMIUM_GROUP_MONTH,
+      children: e => {
+        let {
+          onClick: t
+        } = e;
+        return (0, r.jsx)("div", {
+          className: n,
+          children: (0, r.jsx)(u.P3F, {
+            onClick: t,
+            style: {
+              cursor: "pointer"
+            },
+            children: o
+          })
+        })
+      }
     })
   };
 
