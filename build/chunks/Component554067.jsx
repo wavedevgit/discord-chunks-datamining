@@ -87,32 +87,32 @@ function h(e) {
       onBlur: B,
       placeholder: "en-US" === x ? p.intl.string(p.t.arz34K) : p.intl.string(p.t["hIt/Nm"])
     }),
-    w = {
+    Z = {
       "--custom-search-bar-width": "".concat(g.Cs, "px"),
       "--custom-search-bar-icon-width": "".concat(g.wf, "px")
     };
   if (N) return (0, r.jsx)("div", {
-    style: w,
+    style: Z,
     children: R
   });
-  let Z = s()(m.searchBar, {
+  let w = s()(m.searchBar, {
     [m.searchFloating]: y
   });
   return y ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: m.searchIconContainerHidden,
-      style: w,
+      style: Z,
       children: R
     }), (0, r.jsx)(i.P3F, {
-      className: Z,
-      style: w,
+      className: w,
+      style: Z,
       onClick: I,
       ignoreKeyPress: true,
       children: P
     })]
   }) : (0, r.jsx)("div", {
-    className: Z,
-    style: w,
+    className: w,
+    style: Z,
     children: (0, r.jsx)(i.P3F, {
       ignoreKeyPress: true,
       onClick: I,

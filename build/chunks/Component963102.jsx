@@ -46,9 +46,9 @@ function N(e) {
   }), P = (0, m.Y)({
     location: "CollectiblesShopHeaderBar"
   }), {
-    searchQuery: w
-  } = (0, x.S)(), Z = l.useRef(null), [D, H] = l.useState(false);
-  (0, d.s)(Z, l.useCallback(e => {
+    searchQuery: Z
+  } = (0, x.S)(), w = l.useRef(null), [D, H] = l.useState(false);
+  (0, d.s)(w, l.useCallback(e => {
     H(e.contentRect.width < j.J)
   }, []));
   let M = (0, _.Pc)("CollectiblesShopHeaderBar"),
@@ -92,7 +92,7 @@ function N(e) {
   return (0, r.jsx)(u.f6W, {
     theme: a,
     children: e => (0, r.jsx)("div", {
-      ref: Z,
+      ref: w,
       children: (0, r.jsxs)(b.Z, {
         disableDoubleClick: true,
         className: s()(e, B.headerBar),
@@ -116,7 +116,7 @@ function N(e) {
             handleTransition: n,
             selectedTab: t,
             isNarrow: D,
-            hasText: "" !== w
+            hasText: "" !== Z
           }), P && (0, r.jsx)(u.P3F, {
             className: B.wishlistButton,
             onClick: Y,

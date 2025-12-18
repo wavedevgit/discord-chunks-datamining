@@ -52,10 +52,10 @@ let A = (0, Chunk884697.IC)(90),
       category: N,
       heroBlock: R,
       tab: P,
-      onVisibilityChange: w
-    } = e, Z = (0, E.W)("HeroBlock"), D = (0, o.O)(e => {
-      null == w || w(e)
-    }, .1, null != w), H = l.useRef(null), M = (0, O.B)("HeroBlock"), F = (0, u.e7)([p.default], () => p.default.getCurrentUser()), W = (0, h.sp)(), U = l.useMemo(() => {
+      onVisibilityChange: Z
+    } = e, w = (0, E.W)("HeroBlock"), D = (0, o.O)(e => {
+      null == Z || Z(e)
+    }, .1, null != Z), H = l.useRef(null), M = (0, O.B)("HeroBlock"), F = (0, u.e7)([p.default], () => p.default.getCurrentUser()), W = (0, h.sp)(), U = l.useMemo(() => {
       var e, t;
       return null != R ? R : null == N ? B : {
         rankedSkuIds: null != (e = N.heroRanking) ? e : [],
@@ -185,7 +185,7 @@ let A = (0, Chunk884697.IC)(90),
           heroBlockRecord: U,
           tab: P,
           isBlockLoading: n,
-          layout: P === T.AW.HOME ? Z ? "hscroll" : "row" : z ? "row" : "feed"
+          layout: P === T.AW.HOME ? w ? "hscroll" : "row" : z ? "row" : "feed"
         })]
       })]
     }) : null

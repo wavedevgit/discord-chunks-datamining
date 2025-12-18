@@ -41,8 +41,8 @@ function N(e) {
     isFetchingCategories: n,
     scrollerRef: N,
     tab: R
-  } = e, P = (0, f.sp)(), w = null != (t = null == P ? true : P.sessionId) ? t : "", {
-    noCache: Z,
+  } = e, P = (0, f.sp)(), Z = null != (t = null == P ? true : P.sessionId) ? t : "", {
+    noCache: w,
     includeUnpublished: D
   } = (0, v.Z)(), H = (0, s.e7)([u.default], () => u.default.getCurrentUser()), M = (0, s.e7)([g.Z], () => g.Z.productsWithVariantsAsGroup), [F, W] = l.useState(1), U = (0, c.Fg)(), z = (0, o.ap)(U), [V, G, K] = l.useMemo(() => {
     switch (R) {
@@ -66,21 +66,21 @@ function N(e) {
   })), [M, K, Y]), Q = (0, p.l)(q);
   return (l.useEffect(() => {
     (0, m.n)({
-      sessionId: w,
+      sessionId: Z,
       checkpoint: m.a.SHOP_MOUNTED,
       tab: R,
       unpublishedCategoriesShown: D,
-      cacheDisabled: Z
+      cacheDisabled: w
     })
   }, []), l.useEffect(() => {
     n || (0, m.n)({
-      sessionId: w,
+      sessionId: Z,
       checkpoint: m.a.SHOP_RENDERED,
       tab: R,
       unpublishedCategoriesShown: D,
-      cacheDisabled: Z
+      cacheDisabled: w
     })
-  }, [w, D, Z, n, R]), n || null == H) ? (0, r.jsx)(h.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  }, [Z, D, w, n, R]), n || null == H) ? (0, r.jsx)(h.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       style: {
         backgroundImage: "url(".concat(G, ")")

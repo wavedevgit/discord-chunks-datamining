@@ -73,7 +73,7 @@ let R = e => {
       return n
     })(Object(a)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
-    }), n), [w, Z] = l.useState(false), D = (0, g.sp)(), H = null != (t = null == D ? true : D.sessionId) ? t : "";
+    }), n), [Z, w] = l.useState(false), D = (0, g.sp)(), H = null != (t = null == D ? true : D.sessionId) ? t : "";
     l.useEffect(() => {
       (0, h.n)({
         sessionId: H,
@@ -185,13 +185,13 @@ let R = e => {
           case o.z.COUNTDOWN_TIMER:
             l = (0, r.jsx)(S.J, {
               countdownTimerBlock: e,
-              isVisible: w
+              isVisible: Z
             }, n), a = true;
             break;
           case o.z.IMMERSIVE_BANNER:
             l = (0, r.jsx)(y.Z, {
               immersiveBannerBlock: e,
-              onVisibilityChange: e => Z(!e)
+              onVisibilityChange: e => w(!e)
             }, n);
             break;
           case o.z.REWARD_HERO:

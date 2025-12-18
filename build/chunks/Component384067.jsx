@@ -46,9 +46,9 @@ let y = e => {
     {
       handleCardVisibilityChange: P
     } = (0, h.E)(R, "home", "marketing wide banner"),
-    w = (0, p.sp)(),
+    Z = (0, p.sp)(),
     {
-      bannerURL: Z
+      bannerURL: w
     } = (0, C.UI)(y),
     D = k === E.AW.ORBS,
     H = null != y.ctaRoute && "" !== y.ctaRoute,
@@ -65,16 +65,16 @@ let y = e => {
     }, [y.isDismissible, y.dismissibleContentVersion]),
     U = l.useCallback(e => {
       g.default.track(v.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == w ? true : w.sessionId,
+        collectibles_shop_session_id: null == Z ? true : Z.sessionId,
         sku_id: R,
         page_type: k,
-        page_section: null == w ? true : w.pageSection,
-        page_category: null == w ? true : w.pageCategory,
+        page_section: null == Z ? true : Z.pageSection,
+        page_category: null == Z ? true : Z.pageCategory,
         tile_type: "WIDE_BANNER",
-        tile_position: String(null == w ? true : w.tilePosition),
+        tile_position: String(null == Z ? true : Z.tilePosition),
         cta_name: e
       })
-    }, [w, R, k]),
+    }, [Z, R, k]),
     z = l.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : null;
       if (U(e), null != y.ctaRoute && "" !== y.ctaRoute) {
@@ -92,7 +92,7 @@ let y = e => {
         } else(0, d.uL)(e)
       }
     }, [y.ctaRoute, U]);
-  if (null == Z || B) return null;
+  if (null == w || B) return null;
   let V = s()(O.row, O.between, O.bannerBlockContainer, O.centeredSection, {
       [O.extraRounded]: D,
       [O.bannerBlockContainerClickable]: H
@@ -116,7 +116,7 @@ let y = e => {
         } : true,
         children: (0, r.jsx)("img", {
           ref: L,
-          src: Z,
+          src: w,
           alt: y.title,
           className: s()(O.wideBannerArt, {
             [O.wideBannerArtOrbs]: D

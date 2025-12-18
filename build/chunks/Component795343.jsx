@@ -43,15 +43,15 @@ function y(e) {
     currentPage: B,
     totalCount: N,
     isFetchingResults: R
-  } = (0, p.a)(), P = (0, o.Wu)([f.Z], () => f.Z.getProductsBySkus(A)), w = l.useCallback(() => {
+  } = (0, p.a)(), P = (0, o.Wu)([f.Z], () => f.Z.getProductsBySkus(A)), Z = l.useCallback(() => {
     var e;
     null == a || null == (e = a.current) || e.scrollToTop({
       animate: true
     })
-  }, [a]), Z = null == A ? true : A.join("");
+  }, [a]), w = null == A ? true : A.join("");
   l.useEffect(() => {
-    w()
-  }, [Z, w]);
+    Z()
+  }, [w, Z]);
   let D = (0, g.a)(),
     H = l.useMemo(() => D(P), [D, P]);
   l.useEffect(() => {

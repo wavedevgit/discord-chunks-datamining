@@ -127,8 +127,8 @@ let D = e => {
             onClose: P,
             shouldAddEventListener: false,
             children: (0, r.jsxs)("div", {
-              className: s()(w.shop, {
-                [Z.customCursors]: c
+              className: s()(Z.shop, {
+                [w.customCursors]: c
               }),
               ref: en,
               tabIndex: false,
@@ -136,10 +136,10 @@ let D = e => {
                 handleTransition: $,
                 selectedTab: J
               }), (0, r.jsx)("div", {
-                className: s()(w.shopViewWrapper, {
-                  [w.visible]: X === N.f7.VISIBLE,
-                  [w.in]: X === N.f7.IN,
-                  [w.out]: X === N.f7.OUT
+                className: s()(Z.shopViewWrapper, {
+                  [Z.visible]: X === N.f7.VISIBLE,
+                  [Z.in]: X === N.f7.IN,
+                  [Z.out]: X === N.f7.OUT
                 }),
                 children: (0, r.jsx)(T.Z, {
                   tab: J,
