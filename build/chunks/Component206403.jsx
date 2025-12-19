@@ -46,7 +46,6 @@ function c(e) {
       }), null != d && (0, r.jsx)(o.xvT, {
         variant: "text-sm/normal",
         color: "text-subtle",
-        className: l.baseControlItemDescription,
         children: d
       })]
     }), (null != i || null != c) && (0, r.jsxs)("div", {
