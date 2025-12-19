@@ -78,7 +78,7 @@ function L(e) {
   var {
     widget: t
   } = e, n = M(e, ["widget"]);
-  return t instanceof h.q ? (0, r.jsx)(I.Z, G({
+  return t instanceof h.q ? (0, r.jsx)(w.Z, G({
     widget: t
   }, n)) : t instanceof y.zy ? (0, r.jsx)(C.Z, G({
     widget: t
@@ -99,14 +99,14 @@ function B() {
   })
 }
 
-function U(e) {
+function F(e) {
   let {
     user: t
   } = e, {
     application: n
   } = (0, j.G)(), {
     token: i
-  } = (0, d.o)(null == n ? true : n.id), a = (0, w.Z)(t.id), l = (0, v.k)({
+  } = (0, d.o)(null == n ? true : n.id), a = (0, I.Z)(t.id), l = (0, v.k)({
     location: "ApplicationWidgetUpsell"
   }), o = a.some(e => e instanceof h.q && e.applicationId === (null == n ? true : n.id));
   return null == n || !l || null == i || o ? null : (0, r.jsx)(f.ZP, {
@@ -125,12 +125,12 @@ function U(e) {
   })
 }
 
-function F(e) {
+function U(e) {
   let {
     user: t,
     guildId: n,
     channelId: a
-  } = e, l = (0, w.Z)(t.id), c = (0, o.e7)([b.default], () => b.default.getId() === t.id), s = (() => {
+  } = e, l = (0, I.Z)(t.id), c = (0, o.e7)([b.default], () => b.default.getId() === t.id), s = (() => {
     let [e, t] = (0, o.Wu)([m.Z], () => [m.Z.ipCountryCode, m.Z.ipCountryCodeRequest]), n = (0, g.U)();
     return i.useEffect(() => {
       null == e && null == t && n && (0, u.GE)()
@@ -139,12 +139,12 @@ function F(e) {
     location: "UserProfileModalV2Widgets"
   }), f = 0 === l.length && c, j = i.useMemo(() => l.filter(y.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
   (0, O.J)(c, j);
-  var I = t.id;
+  var w = t.id;
   (0, P.s)(x);
   let {
     data: S,
     refetch: _
-  } = (0, p.O)(I), C = i.useRef(S);
+  } = (0, p.O)(w), C = i.useRef(S);
   C.current = S, i.useEffect(() => {
     null !== C.current && _()
   }, [_]);
@@ -152,7 +152,7 @@ function F(e) {
     children: [c && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(E.Z, {
         className: R.editingHeader
-      }), s && (0, r.jsx)(B, {}), (0, r.jsx)(U, {
+      }), s && (0, r.jsx)(B, {}), (0, r.jsx)(F, {
         user: t
       })]
     }), l.map((e, i) => (0, r.jsx)(L, {
@@ -189,7 +189,7 @@ function W(e) {
     fade: true,
     children: [(0, r.jsx)(_.Z, {
       scrollerRef: a
-    }), (0, r.jsx)(F, G({
+    }), (0, r.jsx)(U, G({
       user: t
     }, n))]
   })

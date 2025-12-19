@@ -41,15 +41,16 @@ function O(e) {
     buttonIcon: A,
     isOwned: N = false,
     renderSourceIcon: P,
-    giftingOrigin: R,
-    source: w
-  } = e, D = i.useRef(null), x = i.useRef(null), L = null != v ? v : x, {
-    trackUserProfileWishlistAction: j
-  } = (0, p.KZ)(), M = a && true === t.isOwned && null != t.gifterUserId, k = null != t.gifterUserId ? u.default.getUser(t.gifterUserId) : null, U = null != k ? f.ZP.getName(k) : null, G = M && null != k && null != U && "" !== U, Z = G ? (0, r.jsx)(l.qEK, {
-    src: k.getAvatarURL(true, 48),
+    dragHandle: R,
+    giftingOrigin: w,
+    source: D
+  } = e, x = i.useRef(null), L = i.useRef(null), j = null != v ? v : L, {
+    trackUserProfileWishlistAction: M
+  } = (0, p.KZ)(), k = a && true === t.isOwned && null != t.gifterUserId, U = null != t.gifterUserId ? u.default.getUser(t.gifterUserId) : null, G = null != U ? f.ZP.getName(U) : null, Z = k && null != U && null != G && "" !== G, F = Z ? (0, r.jsx)(l.qEK, {
+    src: U.getAvatarURL(true, 48),
     size: l.EFr.SIZE_48,
-    "aria-label": U
-  }) : true, F = (0, r.jsx)("div", {
+    "aria-label": G
+  }) : true, B = (0, r.jsx)("div", {
     className: b.cardStateIconWrapper,
     children: (0, r.jsx)(l.sV5, {
       size: "custom",
@@ -59,49 +60,49 @@ function O(e) {
       className: o()(b.cardStateIcon, b.checkmark),
       "aria-label": E.intl.string(E.t.L5Pt9L)
     })
-  }), B = (0, r.jsx)("div", {
+  }), V = (0, r.jsx)("div", {
     className: b.overlay,
     children: (0, r.jsx)(l.Button, {
       focusProps: {
-        ringTarget: L
+        ringTarget: j
       },
       variant: "primary",
       size: "sm",
       text: C,
       icon: A,
       onClick: e => {
-        e.stopPropagation(), V()
+        e.stopPropagation(), H()
       },
       fullWidth: true
     })
-  }), V = () => {
-    if (R === g.Wt.DM_CHANNEL_WISHLIST) {
-      let e = w === c.lr.WISHLIST ? "wishlist" : "shop";
+  }), H = () => {
+    if (w === g.Wt.DM_CHANNEL_WISHLIST) {
+      let e = D === c.lr.WISHLIST ? "wishlist" : "shop";
       d.default.track(h.rMx.GIFTING_ITEM_CLICKED, {
         sku_id: t.skuId,
         item_source: e,
-        wishlist_id: w === c.lr.WISHLIST ? n : null,
+        wishlist_id: D === c.lr.WISHLIST ? n : null,
         product_line: t.skuProductLine
       })
-    } else null != n && j({
+    } else null != n && M({
       wishlistId: n,
       action: m.NW.WISHLIST_ITEM_CLICKED,
       skuId: t.skuId,
       productLines: new Set([t.skuProductLine])
     });
     T()
-  }, H = (0, r.jsxs)("div", {
-    ref: D,
+  }, Y = (0, r.jsxs)("div", {
+    ref: x,
     className: b.container,
     children: [(0, r.jsxs)("div", {
-      ref: L,
+      ref: j,
       className: o()(b.card, {
         [b.isOwned]: N,
         [b.smallSquareCard]: "small-square" === y,
         [b.smallCard]: "small" === y,
         [b.largeCard]: "large" === y
       }),
-      onClick: V,
+      onClick: H,
       children: [(0, r.jsx)(l.nn4, {
         children: (0, r.jsx)(l.H, {
           children: I
@@ -109,29 +110,29 @@ function O(e) {
       }), (0, r.jsx)("div", {
         className: b.cardPreview,
         children: S()
-      }), N && F, O ? B : (0, r.jsx)(l.P3F, {
+      }), N && B, O ? V : (0, r.jsx)(l.P3F, {
         "aria-label": C,
         focusProps: {
-          ringTarget: L
+          ringTarget: j
         },
         onClick: e => {
-          e.stopPropagation(), V()
+          e.stopPropagation(), H()
         }
       })]
-    }), null != P && P(), a && null != n && (0, r.jsx)(_.Z, {
+    }), null != P && P(), R, a && null != n && (0, r.jsx)(_.Z, {
       iconSize: "sm",
       item: t,
       wishlistId: n,
       className: b.removeItemButton
     })]
   });
-  return G ? (0, r.jsx)(s.i_, {
+  return Z ? (0, r.jsx)(s.i_, {
     asContainer: true,
     title: E.intl.formatToPlainString(E.t.TL4ktE, {
-      username: U
+      username: G
     }),
     body: t.skuName,
-    asset: Z,
-    children: H
-  }) : H
+    asset: F,
+    children: Y
+  }) : Y
 }

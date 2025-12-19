@@ -145,20 +145,19 @@ async function y(e) {
     includeWishlists: c = false
   } = e;
   if (0 === n.length) return;
-  let d = s.Z.recommendationsByApplicationsAndUsers(t, n);
-  if (null != d && ("error" === d.state || "loading" === d.state || "success" === d.state && d.data.numItemsRequested >= a)) return;
-  let _ = n.slice(0, h);
-  try {
+  let d = n.slice(0, h),
+    _ = s.Z.recommendationsByApplicationsAndUsers(t, d);
+  if (null == _ || "error" !== _.state && "loading" !== _.state && ("success" !== _.state || !(_.data.numItemsRequested >= a))) try {
     i.Z.dispatch({
       type: "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_START",
       applicationId: t,
-      userIds: _
+      userIds: d
     });
     let e = await r.tn.get({
         url: l.ANM.SOCIAL_LAYER_APPLCIATION_RECOMMENDATIONS(t),
         rejectWithError: true,
         query: {
-          user_ids: _,
+          user_ids: d,
           max_recommendations: a,
           include_wishlists: c
         }
@@ -167,14 +166,14 @@ async function y(e) {
     return i.Z.dispatch(f(u({
       type: "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_SUCCESS"
     }, n), {
-      userIds: _,
+      userIds: d,
       numItemsRequested: a
     })), n
   } catch (e) {
     return i.Z.dispatch({
       type: "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_FAILURE",
       applicationId: t,
-      userIds: _
+      userIds: d
     }), null
   }
 }

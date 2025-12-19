@@ -32,10 +32,11 @@ function u(e) {
 let d = Chunk473749.memo(function(e) {
   var {
     item: t,
-    cardSize: r = a.U.MEDIUM,
+    cardSize: r = c.U.MEDIUM,
     showOverlayButton: i = true,
-    isDragging: d = false
-  } = e, f = function(e, t) {
+    isDragging: d = false,
+    dragHandle: f
+  } = e, m = function(e, t) {
     if (null == e) return {};
     var r, n, i = function(e, t) {
       if (null == e) return {};
@@ -49,15 +50,18 @@ let d = Chunk473749.memo(function(e) {
       for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
     }
     return i
-  }(e, ["item", "cardSize", "showOverlayButton", "isDragging"]);
-  return (0, o.Q)(t) ? (0, n.jsx)(c.ZP, u({
+  }(e, ["item", "cardSize", "showOverlayButton", "isDragging", "dragHandle"]);
+  return (0, o.Q)(t) ? (0, n.jsx)(a.ZP, u({
     item: t,
     cardSize: r,
     showOverlayButton: i,
-    isDragging: d
-  }, f)) : (0, s.F)(t) ? (0, n.jsx)(l.Z, u({
+    isDragging: d,
+    dragHandle: f
+  }, m)) : (0, s.F)(t) ? (0, n.jsx)(l.Z, u({
     item: t,
     cardSize: r,
-    showOverlayButton: i
-  }, f)) : null
+    showOverlayButton: i,
+    isDragging: d,
+    dragHandle: f
+  }, m)) : null
 })

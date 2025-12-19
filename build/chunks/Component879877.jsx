@@ -27,12 +27,12 @@ function h(e) {
     applicationId: s,
     className: u,
     disableInteraction: h = false
-  } = e, v = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], O = v.length > 0, P = o.qH, w = a && !h && (0, f.M8)(c) && v.length < P, {
-    trackUserProfileAction: I
+  } = e, v = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], O = v.length > 0, P = o.qH, I = a && !h && (0, f.M8)(c) && v.length < P, {
+    trackUserProfileAction: w
   } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), T = (0, i.useRef)(null), [_, C] = (0, i.useState)(0), [D, k] = (0, i.useState)(false), N = x(E, T, v, S, C);
   if ((0, i.useEffect)(() => (N(), window.addEventListener("resize", N), () => {
       window.removeEventListener("resize", N)
-    }), [N, null == v ? true : v.join("")]), !O && !w) return null;
+    }), [N, null == v ? true : v.join("")]), !O && !I) return null;
   let A = D ? v : v.slice(0, v.length - _);
   return (0, r.jsxs)("div", {
     className: l()(m.tagListContainer, u),
@@ -55,18 +55,18 @@ function h(e) {
         isExpanded: D,
         numberOfOverflowingTags: _,
         onExpandTags: () => {
-          k(true), I({
+          k(true), w({
             action: "EXPAND_GAME_TAGS"
           })
         },
         onCollapseTags: () => {
-          k(false), I({
+          k(false), w({
             action: "COLLAPSE_GAME_TAGS"
           })
         },
         disableInteraction: h
       })]
-    }), w && (0, r.jsx)(g.Z, {
+    }), I && (0, r.jsx)(g.Z, {
       tags: n,
       widgetType: c,
       applicationId: s,

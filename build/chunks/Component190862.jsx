@@ -93,15 +93,15 @@ function O(e) {
     handleDismissSuggestions: p
   } = (0, c.h)(t), O = (0, a.e7)([l.default], () => l.default.getId() === n.id), j = O && !i && g, x = (0, o.mR)(t), P = (0, o.Hy)(t, {
     isCurrentUser: O
-  }), w = (0, o.kQ)(t), I = 1 === (0, o.Gv)(t.type);
+  }), I = (0, o.kQ)(t), w = 1 === (0, o.Gv)(t.type);
   return (0, r.jsx)(v, h({
     widget: t,
     user: n,
     disableInteraction: i,
     headerTitle: x,
     headerSubtitle: P,
-    headerActionButtons: O && !I ? [(0, r.jsx)(s.yX, {
-      disabled: w,
+    headerActionButtons: O && !w ? [(0, r.jsx)(s.yX, {
+      disabled: I,
       widgetType: t.type,
       widget: t,
       onAddGame: () => f(true)

@@ -59,12 +59,12 @@ function x(e) {
     }),
     x = null != y,
     P = x && t < y,
-    w = x && t > y;
+    I = x && t > y;
   return (0, r.jsxs)("div", {
     ref: u,
     className: l()(j.dragAndDropTarget, {
       [j.dropIndicatorBefore]: P,
-      [j.dropIndicatorAfter]: w,
+      [j.dropIndicatorAfter]: I,
       [j.isDragging]: m
     }),
     "aria-label": O.intl.formatToPlainString(O.t.YLczh4, {
@@ -91,8 +91,8 @@ function P(e) {
     headerTitle: v,
     headerSubtitle: O,
     headerActionButtons: P,
-    headerClassName: w,
-    additionalManageWidgetMenuItems: I
+    headerClassName: I,
+    additionalManageWidgetMenuItems: w
   } = e, S = (0, s.Dt)(), E = (0, c.e7)([u.default], () => u.default.getId() === t), T = (0, m.b)(), {
     trackUserProfileAction: _
   } = (0, d.KZ)(), C = (0, p.Z)({
@@ -111,7 +111,7 @@ function P(e) {
         actionButtons: P,
         widget: n,
         disableInteraction: a,
-        className: w
+        className: I
       }), (0, r.jsxs)(o.y5t, {
         children: [i, h]
       })]
@@ -122,7 +122,7 @@ function P(e) {
     children: k ? (0, r.jsx)(x, {
       index: null != b ? b : 0,
       widget: n,
-      additionalManageWidgetMenuItems: I,
+      additionalManageWidgetMenuItems: w,
       children: N()
     }) : N()
   })

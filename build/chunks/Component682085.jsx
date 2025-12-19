@@ -29,8 +29,8 @@ function O() {
     application: x,
     config: P
   } = (0, Chunk50130.G)(), {
-    token: w,
-    fetched: I
+    token: I,
+    fetched: w
   } = (0, Chunk491662.o)(null == P ? true : P.application_id), S = Chunk473749.useMemo(() => (null == P ? true : P.application_id) != null ? new Chunk931847.q({
     type: Chunk296009.l.APPLICATION,
     applicationId: P.application_id
@@ -76,7 +76,7 @@ function O() {
     }, {
       stackingBehavior: "stack"
     })
-  }, [exports]), T = null == j || null == x || null == S || !I, _ = null != w;
+  }, [exports]), T = null == j || null == x || null == S || !w, _ = null != I;
   if (Chunk473749.useEffect(() => {
       !T && _ && (O.current || (module({
         action: "VIEW_APPLICATION_WIDGETS_EMPTY_STATE",

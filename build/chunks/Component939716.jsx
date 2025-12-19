@@ -174,7 +174,7 @@ let E = (0, Chunk112724.Z)(e => {
     onItemChange: i,
     isMuted: u = true,
     onTrackClick: d
-  } = e, [m, f] = (0, a.useState)(0), C = (0, a.useRef)(0), h = (0, a.useRef)(t.length), [k, S] = (0, a.useState)(true), [y, N] = (0, a.useState)(false), [E, R] = (0, a.useState)(false), [w, L] = (0, a.useState)(false), [A, B] = (0, a.useState)(false), Z = (0, a.useCallback)((e, n) => {
+  } = e, m = (0, a.useRef)(0), [f, C] = (0, a.useState)(0), [h, k] = (0, a.useState)(0), S = (0, a.useRef)(0), y = (0, a.useRef)(t.length), [N, E] = (0, a.useState)(true), [R, w] = (0, a.useState)(false), [L, A] = (0, a.useState)(false), [B, Z] = (0, a.useState)(false), [W, D] = (0, a.useState)(false), U = (0, a.useCallback)((e, n) => {
     var l;
     let a = null == (l = t[e]) ? true : l.backgroundSrc,
       r = n.interpolate({
@@ -194,57 +194,57 @@ let E = (0, Chunk112724.Z)(e => {
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat"
     }
-  }, [t]), W = (0, a.useCallback)(function(e) {
+  }, [t]), M = (0, a.useCallback)(function(e) {
     let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
-    N(false), R(t);
-    let n = h.current,
-      l = (0, g.gN)(C.current, n),
+    w(false), A(t);
+    let n = y.current,
+      l = (0, g.gN)(S.current, n),
       a = (0, g.gN)(e, n);
-    C.current = a, f(a), S(1 === Math.abs(a - l) || a === n - 1 && 0 === l || 0 === a && l === n - 1)
-  }, []), D = (0, a.useCallback)(() => {
-    W(C.current + 1, false)
-  }, [W]), U = (0, a.useCallback)(() => {
-    null == d || d(I.o4.CAROUSEL_NEXT), W(C.current + 1)
-  }, [W, d]), M = (0, a.useCallback)(() => {
-    null == d || d(I.o4.CAROUSEL_PREV), W(C.current - 1)
-  }, [W, d]), H = (0, a.useCallback)(e => {
-    N(true), R(!e)
-  }, []), F = (0, a.useCallback)(() => {
-    E || D()
-  }, [E, D]), z = (0, a.useCallback)(e => {
-    let t = C.current;
-    e < t ? L(true) : e > t && B(true)
-  }, []), Q = (0, a.useCallback)(() => {
-    L(false), B(false)
-  }, []), Y = (0, a.useCallback)((e, t, n) => (0, l.jsx)(T, {
+    S.current = a, k(a), m.current++, C(m.current), E(1 === Math.abs(a - l) || a === n - 1 && 0 === l || 0 === a && l === n - 1)
+  }, []), H = (0, a.useCallback)(() => {
+    M(S.current + 1, false)
+  }, [M]), F = (0, a.useCallback)(() => {
+    null == d || d(I.o4.CAROUSEL_NEXT), M(S.current + 1)
+  }, [M, d]), z = (0, a.useCallback)(() => {
+    null == d || d(I.o4.CAROUSEL_PREV), M(S.current - 1)
+  }, [M, d]), Q = (0, a.useCallback)(e => {
+    w(true), A(!e)
+  }, []), Y = (0, a.useCallback)(() => {
+    L || H()
+  }, [L, H]), G = (0, a.useCallback)(e => {
+    let t = S.current;
+    e < t ? Z(true) : e > t && D(true)
+  }, []), V = (0, a.useCallback)(() => {
+    Z(false), D(false)
+  }, []), X = (0, a.useCallback)((e, t, n) => (0, l.jsx)(T, {
     item: e,
     itemIndex: t,
     isCurrentItem: n,
     onSetItem: e => {
-      null == d || d(I.o4.CAROUSEL_ITEM), W(e)
+      null == d || d(I.o4.CAROUSEL_ITEM), M(e)
     },
-    setHasInteracted: R
-  }), [W, d]), G = (0, a.useCallback)((e, n, a) => {
-    let r = n === (0, g.gN)(m, t.length);
+    setHasInteracted: A
+  }), [M, d]), K = (0, a.useCallback)((e, n, a) => {
+    let r = n === (0, g.gN)(h, t.length);
     return (0, l.jsx)(c.Z.div, {
       className: s()(v.item, {
         [v.currentItem]: r
       }),
-      style: null != a ? Z(n, a) : null,
-      onMouseEnter: r ? null : () => z(n),
-      onMouseLeave: r ? null : Q,
+      style: null != a ? U(n, a) : null,
+      onMouseEnter: r ? null : () => G(n),
+      onMouseLeave: r ? null : V,
       children: "video" === e.type ? (0, l.jsx)(O, {
         item: e,
-        onPlay: H,
-        onEnded: F,
+        onPlay: Q,
+        onEnded: Y,
         playable: r,
         isMuted: u,
         onClick: () => {
-          null == d || d(I.o4.CAROUSEL_ITEM), W(n)
+          null == d || d(I.o4.CAROUSEL_ITEM), M(n)
         }
-      }) : Y(e, n, r)
+      }, f) : X(e, n, r)
     })
-  }, [m, t.length, Z, z, Q, H, F, W, Y, u, d]), V = (0, a.useCallback)(() => {
+  }, [h, t.length, U, G, V, Q, Y, M, X, u, d, f]), q = (0, a.useCallback)(() => {
     let e = (0, l.jsx)(g.ZP, {
       className: v.carousel,
       items: t,
@@ -252,27 +252,27 @@ let E = (0, Chunk112724.Z)(e => {
         width: j,
         margin: 0
       },
-      renderItem: G,
-      currentIndex: m,
-      animate: k,
+      renderItem: K,
+      currentIndex: h,
+      animate: N,
       edgeItems: 2
     });
     return t.length <= 1 ? e : (0, l.jsxs)("div", {
       className: v.carouselButtonsContainer,
       children: [e, (0, l.jsx)(p.am, {
-        onClick: M,
+        onClick: z,
         className: s()(v.arrow, {
-          [v.arrowHovered]: w
+          [v.arrowHovered]: B
         })
       }), (0, l.jsx)(p.Pz, {
-        onClick: U,
+        onClick: F,
         className: s()(v.arrow, {
-          [v.arrowHovered]: A
+          [v.arrowHovered]: W
         })
       })]
     })
-  }, [t, G, m, k, M, U, w, A]), X = (0, a.useCallback)((e, t) => {
-    let n = m === t;
+  }, [t, K, h, N, z, F, B, W]), $ = (0, a.useCallback)((e, t) => {
+    let n = h === t;
     return (0, l.jsx)("div", {
       className: s()(v.paginationItem, n ? v.selectedStorePaginationItem : v.unselectedStorePaginationItem),
       children: (0, l.jsx)("img", {
@@ -282,31 +282,31 @@ let E = (0, Chunk112724.Z)(e => {
         draggable: false
       })
     }, "page-".concat(t))
-  }, [m]);
-  (0, a.useEffect)(() => (_.S.subscribe(x.CkL.CAROUSEL_PREV, M), _.S.subscribe(x.CkL.CAROUSEL_NEXT, U), () => {
-    _.S.unsubscribe(x.CkL.CAROUSEL_PREV, M), _.S.unsubscribe(x.CkL.CAROUSEL_NEXT, U)
-  }), [M, U]), (0, a.useEffect)(() => {
-    h.current = t.length
+  }, [h]);
+  (0, a.useEffect)(() => (_.S.subscribe(x.CkL.CAROUSEL_PREV, z), _.S.subscribe(x.CkL.CAROUSEL_NEXT, F), () => {
+    _.S.unsubscribe(x.CkL.CAROUSEL_PREV, z), _.S.unsubscribe(x.CkL.CAROUSEL_NEXT, F)
+  }), [z, F]), (0, a.useEffect)(() => {
+    y.current = t.length
   }, [t]), (0, a.useEffect)(() => {
-    null == i || i(t[m], m)
-  }, [m, t, i]);
-  let K = (0, a.useCallback)(e => {
-    null == d || d(I.o4.CAROUSEL_ITEM), W(e)
-  }, [W, d]);
+    null == i || i(t[h], h)
+  }, [h, t, i]);
+  let J = (0, a.useCallback)(e => {
+    null == d || d(I.o4.CAROUSEL_ITEM), M(e)
+  }, [M, d]);
   return (0, l.jsxs)(b.Z, {
     pauseOnHover: true,
-    onInterval: D,
+    onInterval: H,
     interval: o,
     className: n,
-    disable: y || E || r,
-    children: [V(), (0, l.jsx)("div", {
+    disable: R || L || r,
+    children: [q(), (0, l.jsx)("div", {
       className: v.pagination,
       children: (0, l.jsx)(p.ZP, {
-        renderItem: X,
+        renderItem: $,
         scrollToPadding: 40,
         items: t,
-        selectedIndex: m,
-        onSetItem: K,
+        selectedIndex: h,
+        onSetItem: J,
         paginationContainerClass: v.scroller,
         align: p.ZP.Align.CENTER
       })

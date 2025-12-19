@@ -61,7 +61,7 @@ function x(e) {
     buttonRef: i,
     additionalMenuItems: l
   } = e, o = (0, b.mR)(t), c = (0, f.Dt)();
-  return (0, r.jsx)(w, {
+  return (0, r.jsx)(I, {
     targetRef: i,
     widget: t,
     additionalMenuItems: l,
@@ -121,7 +121,7 @@ let P = e => {
       children: t
     })
   },
-  w = e => {
+  I = e => {
     let {
       children: t,
       widget: i,

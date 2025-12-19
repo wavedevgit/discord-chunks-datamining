@@ -69,8 +69,8 @@ function O(e) {
     onRemoveGame: x,
     coverRef: P
   } = e, {
-    coverImageUrl: w,
-    gameName: I,
+    coverImageUrl: I,
+    gameName: w,
     isLoading: S
   } = (0, p.Z)(t.applicationId), {
     registerDragHandleRef: E
@@ -80,12 +80,12 @@ function O(e) {
     isDragging: e.isDragging()
   })), N = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.Z, {
-      imageSrc: w,
-      gameName: I,
+      imageSrc: I,
+      gameName: w,
       applicationId: t.applicationId,
       userId: n,
       disableInteraction: O,
-      className: a()(T ? y.socialProofBackdrop : true, null == w || O ? true : h.hoverActiveEffect),
+      className: a()(T ? y.socialProofBackdrop : true, null == I || O ? true : h.hoverActiveEffect),
       hideTooltip: k,
       coverRef: P
     }), D && (0, r.jsx)(s.e_, {
@@ -111,8 +111,8 @@ function O(e) {
     widgetType: i,
     index: null != j ? j : 0,
     game: t,
-    coverImageUrl: w,
-    gameName: I,
+    coverImageUrl: I,
+    gameName: w,
     children: N()
   }) : (0, r.jsx)("div", {
     className: y.container,

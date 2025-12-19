@@ -27,7 +27,7 @@ function f(e, t) {
           renderIcon: l.Q
         }
       }),
-      n = c.ZP.getName(t),
+      n = a.ZP.getName(t),
       {
         hasMultipleTypes: i,
         hasMultipleSources: o
@@ -43,7 +43,7 @@ function f(e, t) {
         }
       }(r);
     return i || o ? r.map(e => !i && o ? {
-      title: e.source === a.lr.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
+      title: e.source === c.lr.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
         username: n
       }) : d.intl.string(d.t.Ig6VDH),
       renderIcon: e.productLine !== u.POd.COLLECTIBLES ? e.renderIcon : true,
@@ -54,7 +54,7 @@ function f(e, t) {
       shouldShow: true
     } : {
       title: e.productLine === u.POd.SOCIAL_LAYER_GAME_ITEM ? d.intl.string(d.t["4yiU7x"]) : d.intl.string(d.t.HFhcqh),
-      body: e.source === a.lr.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
+      body: e.source === c.lr.WISHLIST ? d.intl.formatToPlainString(d.t.p3RmJF, {
         username: n
       }) : d.intl.string(d.t.Ig6VDH),
       renderIcon: e.renderIcon,
@@ -67,9 +67,9 @@ function f(e, t) {
 
 function m(e, t) {
   let r = (0, i.Wu)([o.default], () => e.map(e => o.default.getUser(e.gifterUserId)).filter(s.lm), [e]),
-    c = n.useMemo(() => r.reduce((e, t) => (e[t.id] = t, e), {}), [r]);
+    a = n.useMemo(() => r.reduce((e, t) => (e[t.id] = t, e), {}), [r]);
   return n.useMemo(() => new Set(e.map(e => e.skuProductLine)).size > 1 ? e.map(e => {
-    let r = t && e.isOwned && null != e.gifterUserId && null != c[e.gifterUserId];
+    let r = t && e.isOwned && null != e.gifterUserId && null != a[e.gifterUserId];
     return {
       title: e.skuProductLine === u.POd.SOCIAL_LAYER_GAME_ITEM ? d.intl.string(d.t["4yiU7x"]) : d.intl.string(d.t.HFhcqh),
       renderIcon: e.skuProductLine === u.POd.SOCIAL_LAYER_GAME_ITEM ? l.Q : true,
@@ -77,5 +77,5 @@ function m(e, t) {
     }
   }) : e.map(() => ({
     shouldShow: false
-  })), [e, t, c])
+  })), [e, t, a])
 }

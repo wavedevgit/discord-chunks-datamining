@@ -85,7 +85,7 @@ function b(e) {
   } = (0, d.j)(), v = y(f), {
     expanded: O,
     setExpanded: j
-  } = (0, c.g)(), x = O ? m : m.slice(0, 2), P = m.length > 2, w = (0, r.jsxs)(r.Fragment, {
+  } = (0, c.g)(), x = O ? m : m.slice(0, 2), P = m.length > 2, I = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p, (t = g({}, e), n = n = {
       games: x
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -108,7 +108,7 @@ function b(e) {
       gameCount: m.length
     }), (0, r.jsx)(l.d, {
       emptyListFallbackRef: v,
-      children: w
+      children: I
     })]
-  }) : w
+  }) : I
 }

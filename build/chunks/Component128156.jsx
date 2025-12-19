@@ -55,13 +55,13 @@ function S(e) {
   }), G = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), M = t.id === n.id, L = (0, i.e7)([u.Z, s.Z], () => {
     let e = M ? u.Z.getStatus() : s.Z.getStatus(t.id);
     return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
-  }), B = k.length > 0 || null != A, U = C && null == A && null == R && null != Z, F = !L && (B || U), W = N.length > 0;
-  if (!F && !W && G) return (0, r.jsx)("div", {
-    className: I.cards,
+  }), B = k.length > 0 || null != A, F = C && null == A && null == R && null != Z, U = !L && (B || F), W = N.length > 0;
+  if (!U && !W && G) return (0, r.jsx)("div", {
+    className: w.cards,
     children: Array.from({
       length: 8
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: I.loadingItem,
+      className: w.loadingItem,
       children: [(0, r.jsx)(c.ZT, {
         width: 60,
         opacity: .08
@@ -71,7 +71,7 @@ function S(e) {
       })]
     }, t))
   });
-  if (!F && !W && !G) {
+  if (!U && !W && !G) {
     var H;
     return M ? (0, r.jsx)(v.Uf, {
       onClose: _
@@ -83,13 +83,13 @@ function S(e) {
     })
   }
   return (0, r.jsxs)(j.F, {
-    className: I.scroller,
+    className: w.scroller,
     fade: true,
-    children: [F ? (0, r.jsx)(O.Z, {
-      heading: w.intl.string(w.t.J6STd9),
+    children: [U ? (0, r.jsx)(O.Z, {
+      heading: I.intl.string(I.t.J6STd9),
       children: (0, r.jsxs)("ul", {
-        className: I.cards,
-        children: [!D && U && (0, r.jsx)("li", {
+        className: w.cards,
+        children: [!D && F && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -110,7 +110,7 @@ function S(e) {
             activity: e,
             onClose: _
           })
-        }, "live-".concat(i))), D && U && (0, r.jsx)("li", {
+        }, "live-".concat(i))), D && F && (0, r.jsx)("li", {
           children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
@@ -120,8 +120,8 @@ function S(e) {
         })]
       })
     }) : null, W ? (0, r.jsx)(O.Z, {
-      heading: w.intl.string(w.t.jzgEoL),
-      introText: M ? w.intl.format(w.t["4bk9Ak"], {
+      heading: I.intl.string(I.t.jzgEoL),
+      introText: M ? I.intl.format(I.t["4bk9Ak"], {
         learnMoreHook: (e, t) => (0, r.jsx)(a.Anchor, {
           href: d.Z.getArticleURL(P.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
@@ -129,7 +129,7 @@ function S(e) {
       }) : true,
       scrollTargetId: x.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
-        className: I.cards,
+        className: w.cards,
         children: N.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(m.Z, {
             user: t,

@@ -1,7 +1,7 @@
 /** Chunk was on 39442 **/
 /** chunk id: 319396, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => w
+  Z: () => I
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -31,8 +31,7 @@ function x(e) {
     onReorder: a,
     children: l
   } = e, {
-    registerDragHandleRef: o,
-    manageFocusOnReorder: c
+    manageFocusOnReorder: o
   } = (0, y.C)();
   return (0, r.jsx)(h.yW, {
     index: n,
@@ -46,17 +45,14 @@ function x(e) {
       positionNumber: n + 1
     }),
     onReorder: a,
-    onEnd: () => c(String(t.skuId)),
+    onEnd: () => o(String(t.skuId)),
     className: j.dragAndDropContainer,
     dropBeforeClassName: j.dropIndicatorBefore,
     dropAfterClassName: j.dropIndicatorAfter,
     draggingClassName: j.isDragging,
-    children: (0, r.jsxs)("div", {
+    children: (0, r.jsx)("div", {
       className: j.dragHandleContainer,
-      children: [l, (0, r.jsx)(h.e_, {
-        buttonRef: o(String(t.skuId)),
-        className: j.dragHandle
-      })]
+      children: l
     })
   })
 }
@@ -71,45 +67,54 @@ let P = Chunk473749.memo(function(e) {
     tooltipConfig: u,
     isDragging: d,
     onReorder: g
-  } = e, p = (0, r.jsx)(v.Z, {
+  } = e, {
+    registerDragHandleRef: p
+  } = (0, y.C)(), b = s ? (0, r.jsx)(h.e_, {
+    buttonRef: p(String(t.skuId)),
+    className: j.dragHandle,
+    onFocus: e => e.stopPropagation()
+  }) : true, m = (0, r.jsx)(v.Z, {
     item: t,
     profileOwner: i,
     wishlistId: l,
     isOwner: a,
-    isDragging: d
-  }), b = p;
+    isDragging: d,
+    dragHandle: b
+  }), O = m;
   if (u.shouldShow && !d)
-    if (null != u.title && null == u.body && null == u.renderIcon) b = (0, r.jsx)(c.u, {
+    if (null != u.title && null == u.body && null == u.renderIcon) O = (0, r.jsx)(c.u, {
       text: u.title,
       position: "top",
       asContainer: true,
       delay: f.rq,
-      children: p
+      children: m
     });
     else {
-      var m, h;
-      b = (0, r.jsx)(o.i, {
+      var P, I;
+      O = (0, r.jsx)(o.i, {
         title: u.title,
-        body: null != (h = u.body) ? h : "",
-        asset: null == (m = u.renderIcon) ? true : m.call(u, t),
+        body: null != (I = u.body) ? I : "",
+        asset: null == (P = u.renderIcon) ? true : P.call(u, t),
         assetSize: f.EU,
         position: "top",
         asContainer: true,
         delay: f.rq,
-        children: p
+        children: m
       })
-    } return s && (b = (0, r.jsx)(x, {
-    item: t,
-    index: n,
-    wishlistId: l,
-    onReorder: g,
-    children: b
-  })), (0, r.jsx)("li", {
-    children: b
+    } return s ? (0, r.jsx)("li", {
+    children: (0, r.jsx)(x, {
+      item: t,
+      index: n,
+      wishlistId: l,
+      onReorder: g,
+      children: O
+    })
+  }) : (0, r.jsx)("li", {
+    children: O
   })
 });
 
-function w(e) {
+function I(e) {
   let {
     items: t,
     profileOwner: n,
@@ -141,7 +146,7 @@ function w(e) {
     })
   }, [f, t]);
   if (null == c || null == f) return null;
-  let w = (0, r.jsx)("ul", {
+  let I = (0, r.jsx)("ul", {
     className: j.grid,
     children: t.map((e, t) => (0, r.jsx)(P, {
       item: e,
@@ -157,6 +162,6 @@ function w(e) {
   });
   return v ? (0, r.jsx)(y.d, {
     emptyListFallbackRef: null,
-    children: w
-  }) : w
+    children: I
+  }) : I
 }

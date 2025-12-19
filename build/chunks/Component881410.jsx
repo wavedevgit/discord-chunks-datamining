@@ -76,7 +76,7 @@ function m(e) {
     } = (0, s.KZ)(),
     [j, x] = i.useState(""),
     P = i.useRef(""),
-    w = i.useCallback(e => {
+    I = i.useCallback(e => {
       (0, u.ES)({
         widgetType: t,
         game: {
@@ -89,15 +89,15 @@ function m(e) {
       }), null == m || m()
     }, [t, O, m]),
     {
-      options: I,
+      options: w,
       matchSorterOptions: S
     } = (0, c.h)(),
-    E = i.useMemo(() => I.map(e => ({
+    E = i.useMemo(() => w.map(e => ({
       id: String(e.value),
       value: String(e.value),
       label: e.label,
       disabled: v.has(e.value)
-    })), [I, v]),
+    })), [w, v]),
     T = i.useMemo(() => p(g({}, S), {
       threshold: a.Lu.rankings.CONTAINS,
       keys: ["label"]
@@ -138,7 +138,7 @@ function m(e) {
           selectionMode: "single",
           value: null,
           onSelectionChange: e => {
-            null != e && (w(e), t())
+            null != e && (I(e), t())
           },
           options: E,
           matchSorterOptions: T,
