@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./388685.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk236726 = require("./236726.js"),
+  Chunk807794 = require("./807794.js"),
   Chunk55160 = require("./55160.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -276,7 +276,7 @@ class eu extends Chunk473749.PureComponent {
       withBannerPadding: null != require && null != this.getGuildBannerHash()
     });
     {
-      if (require.features.has(Chunk981631.GuildFeatures.HUB) && !Chunk236726) return (0, Chunk54381.jsx)("div", {
+      if (require.features.has(Chunk981631.GuildFeatures.HUB) && !Chunk807794) return (0, Chunk54381.jsx)("div", {
         className: Chunk289033.hubContainer,
         children: (0, Chunk54381.jsx)(Chunk258871.Z, {
           guild: require,
