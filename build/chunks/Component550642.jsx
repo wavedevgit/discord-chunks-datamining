@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk264940 = require("./264940.js"),
   E = function(e) {
-    return e.POPULAR = "popular", e.WISHLIST = "wishlist", e
+    return e.POPULAR = "popular", e.WISHLIST = "wishlist", e.NO_ICON = "no_icon", e
   }({});
 let b = 3;
 
@@ -43,7 +43,7 @@ function y(e) {
   let T = (0, o.Wu)([d.default], () => Array.from(S).map(e => d.default.getUser(e)).filter(f.lm), [S]);
   return (0, r.jsxs)("div", {
     className: g.container,
-    children: [(0, r.jsx)(c.u, {
+    children: ["no_icon" === t ? null : (0, r.jsx)(c.u, {
       text: "popular" === t ? h.intl.string(h.t["DP0o+u"]) : h.intl.string(h.t["OnWY3/"]),
       position: "top",
       children: (0, r.jsx)("div", {

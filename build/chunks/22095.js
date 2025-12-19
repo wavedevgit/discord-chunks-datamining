@@ -6,19 +6,20 @@ require.d(exports, {
   Ag: () => q,
   CS: () => D,
   EW: () => K,
-  Kh: () => ei,
-  MG: () => en,
+  Kh: () => ea,
+  MG: () => er,
   OR: () => z,
   QB: () => Z,
   T0: () => W,
   Wf: () => H,
-  cT: () => $,
+  cT: () => ee,
   eT: () => Y,
-  gU: () => et,
+  gU: () => en,
   gl: () => B,
   is: () => x,
   it: () => L,
-  lL: () => ee,
+  jo: () => $,
+  lL: () => et,
   lx: () => X,
   m0: () => M,
   nE: () => V,
@@ -550,7 +551,17 @@ async function J(e, t) {
     })
   }
 }
-async function $(e, t) {
+
+function $(e, t) {
+  a.Z.dispatch({
+    type: "QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS",
+    quest: true,
+    placement: e,
+    fetchedAt: Date.now(),
+    responseTtlSeconds: t / 1e3
+  })
+}
+async function ee(e, t) {
   var n;
   await _.Z.post({
     url: T.ANM.QUESTS_VIDEO_PROGRESS(e),
@@ -568,7 +579,7 @@ async function $(e, t) {
     rejectWithError: false
   })
 }
-async function ee(e) {
+async function et(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = (0, O.fh)(e, O.eC.VIDEO_PLAYER_TRANSCRIPT, true, t);
   if (null == n) return void y.ZP.getState().setTranscriptAsset({
@@ -597,14 +608,14 @@ async function ee(e) {
     })
   }
 }
-async function et(e) {
+async function en(e) {
   let t = await i.tn.get({
     url: T.ANM.QUEST(e),
     rejectWithError: false
   });
   return (0, S.q6)(t.body)
 }
-async function en(e) {
+async function er(e) {
   if (!E.Z.isFetchingQuestPreview(e)) {
     a.Z.dispatch({
       type: "QUESTS_FETCH_PREVIEW_BEGIN",
@@ -629,11 +640,11 @@ async function en(e) {
     }
   }
 }
-let er = 5 * Chunk70956.Z.Millis.MINUTE;
-async function ei() {
+let ei = 5 * Chunk70956.Z.Millis.MINUTE;
+async function ea() {
   if (Chunk616022.Z.isFetchingQuestHomeTakeover()) return;
   let e = Chunk616022.Z.getLastFetchedQuestHomeTakeover();
-  if (!(null != module && Date.now() - module <= er)) {
+  if (!(null != module && Date.now() - module <= ei)) {
     Chunk570140.Z.dispatch({
       type: "QUESTS_FETCH_QUEST_HOME_TAKEOVER_BEGIN"
     });

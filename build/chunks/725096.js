@@ -19,7 +19,12 @@ function f(e) {
 }
 
 function p(e, t, n) {
-  if ("focused" !== a.Z.getState() || f(e) || l.Z.isFetchingQuestToDeliverByPlacement(t)) return;
+  if (f(e)) return;
+  if ("focused" !== a.Z.getState()) {
+    null != e && (0, s.jo)(t, e.ttlMillis);
+    return
+  }
+  if (l.Z.isFetchingQuestToDeliverByPlacement(t)) return;
   let {
     enableNewRequestBehavior: r
   } = c.Z.getConfig({

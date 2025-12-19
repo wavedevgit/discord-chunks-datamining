@@ -2,7 +2,7 @@
 /** chunk id: 955418, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => R
 }), require("./388685.js"), require("./781311.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,6 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk541716 = require("./541716.js"),
   Chunk752305 = require("./752305.js"),
   Chunk893718 = require("./893718.jsx"),
+  Chunk48854 = require("./48854.js"),
   Chunk795448 = require("./795448.js"),
   Chunk131704 = require("./131704.js"),
   Chunk5192 = require("./5192.js"),
@@ -26,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk15 = require("./15.js");
 
-function I(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,20 +36,20 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
 }
 
-function C(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -59,94 +60,101 @@ function C(e, t) {
   return n
 }
 
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
+function N(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = (0, Chunk131704.createChannelRecord)({
+let P = (0, Chunk131704.createChannelRecord)({
   id: "1",
   type: Chunk981631.d4z.DM
 });
 
-function P(e) {
+function R(e) {
   let {
     user: t,
     guildId: a,
-    channelId: m,
-    onClose: y,
-    disableAutoFocus: I = false,
-    upsell: C = false
+    channelId: h,
+    onClose: O,
+    disableAutoFocus: T = false,
+    upsell: A = false
   } = e, {
-    newestAnalyticsLocation: P,
-    analyticsLocations: R
+    newestAnalyticsLocation: R,
+    analyticsLocations: w
   } = (0, u.ZP)(), {
-    trackUserProfileAction: w
-  } = (0, g.KZ)(), [D, x] = i.useState(""), [L, j] = i.useState((0, f.JM)(D)), M = i.useRef(false), {
-    Component: k
-  } = (0, s.V)(), U = i.useMemo(() => A(T({}, d.Ie.USER_PROFILE), {
-    disableAutoFocus: I
-  }), [I]), G = i.useCallback(async () => {
-    (0, _.PV)(t.id), await c.Z.openPrivateChannel({
+    trackUserProfileAction: D
+  } = (0, E.KZ)(), [x, L] = i.useState(""), [j, M] = i.useState((0, f.JM)(x)), k = i.useRef(false), U = i.useRef(null), G = i.useRef(null), {
+    Component: Z
+  } = (0, s.V)(), F = i.useMemo(() => N(C({}, d.Ie.USER_PROFILE), {
+    disableAutoFocus: T
+  }), [T]), B = i.useCallback(async () => {
+    (0, m.PV)(t.id), await c.Z.openPrivateChannel({
       recipientIds: [t.id]
     }), (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("5890").then(n.bind(n, 171793));
-      return t => (0, r.jsx)(e, A(T({}, t), {
-        giftIntentType: O.hX.FRIEND_ANNIVERSARY,
-        analyticsLocationHistory: R
+      return t => (0, r.jsx)(e, N(C({}, t), {
+        giftIntentType: v.hX.FRIEND_ANNIVERSARY,
+        analyticsLocationHistory: w
       }))
     })
-  }, [t.id, R]), Z = i.useCallback(() => (0, r.jsxs)("div", {
-    className: S.buttons,
+  }, [t.id, w]), V = i.useCallback(() => (0, r.jsxs)("div", {
+    className: I.buttons,
     children: [(0, r.jsx)(l.hU, {
       size: "sm",
       variant: "icon-only",
-      icon: k,
-      "aria-label": v.intl.string(v.t.I61IsE),
-      onClick: G
-    }), (0, r.jsx)(b.Z, {
+      icon: Z,
+      "aria-label": S.intl.string(S.t.I61IsE),
+      onClick: B
+    }), (0, r.jsx)(y.Z, {
       user: t,
-      analyticsLocations: R
+      analyticsLocations: w
     })]
-  }), [k, G, t, R]);
+  }), [Z, B, t, w]);
   return (0, r.jsx)(p.ZP, {
-    className: o()(S.container, {
-      [S.upsell]: C
+    className: o()(I.container, {
+      [I.upsell]: A
     }),
-    editorClassName: S.editor,
-    type: U,
-    placeholder: v.intl.formatToPlainString(v.t["0ZQw/X"], {
-      name: h.ZP.getName(a, m, t)
+    editorClassName: I.editor,
+    type: F,
+    placeholder: S.intl.formatToPlainString(S.t["0ZQw/X"], {
+      name: g.ZP.getName(a, h, t)
     }),
-    channel: N,
-    textValue: D,
-    richValue: L,
+    channel: P,
+    textValue: x,
+    richValue: j,
     onChange: (e, t, n) => {
-      t !== D && (x(t), j(n))
+      t !== x && (L(t), M(n))
     },
-    focused: M.current,
+    focused: k.current,
     onFocus: () => {
-      M.current = true
+      k.current = true
     },
     onBlur: () => {
-      M.current = false
+      k.current = false
     },
     onSubmit: async e => {
       let {
         value: n
-      } = e;
+      } = e, r = n.trim();
+      if ("" === r) return {
+        shouldClear: false,
+        shouldRefocus: true
+      };
+      (U.current !== r || null == G.current) && (U.current = r, G.current = (0, _.r)());
       try {
-        return w({
+        var i;
+        return D({
           action: "SEND_DIRECT_MESSAGE"
-        }), await (0, E.Z)({
+        }), await (0, b.Z)({
           userId: t.id,
-          content: n.trim(),
+          content: r,
           openChannel: true,
           whenReady: true,
-          location: P
-        }), null == y || y(), {
+          location: R,
+          nonce: null != (i = G.current) ? i : true
+        }), U.current = null, G.current = null, null == O || O(), {
           shouldClear: true,
           shouldRefocus: false
         }
@@ -157,6 +165,6 @@ function P(e) {
         }
       }
     },
-    renderButtons: C ? Z : true
+    renderButtons: A ? V : true
   })
 }
