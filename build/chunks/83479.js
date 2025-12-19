@@ -1,7 +1,7 @@
 /** Chunk was on 8087 **/
 /** chunk id: 83479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G: () => u
+  G: () => s
 }), require("./539854.js"), require("./704826.js"), require("./35282.js");
 var Chunk473749 = require("./473749.js"),
   Chunk979554 = require("./979554.js"),
@@ -37,27 +37,22 @@ let o = function(e) {
     })
   },
   s = function(e) {
-    let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    return null == e ? "" : e.type === i.Z.BUNDLE ? o(e, t) : e.summary
-  },
-  c = function(e) {
-    let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    switch (null == e ? true : e.type) {
-      case i.Z.AVATAR_DECORATION:
-        return l.intl.string(l.t["3lv7q2"]);
-      case i.Z.PROFILE_EFFECT:
-        return l.intl.string(l.t.VhJL72);
-      case i.Z.NAMEPLATE:
-        return l.intl.string(l.t.ik37EZ);
-      case i.Z.BUNDLE:
-        return o(e, t);
-      default:
-        return ""
-    }
-  },
-  u = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      n = arguments.length > 2 ? arguments[2] : true,
-      i = (null == e ? true : e.skuId) != null && (0, a.o0)(null == e ? true : e.skuId);
-    return (0, r.useMemo)(() => null != n ? 3 === n ? l.intl.string(l.t.QUjmjp) : 7 === n ? l.intl.string(l.t.yPxJA2) : l.intl.string(l.t["o+VpXZ"]) : i ? s(e, t) : c(e, t), [i, e, t, n])
+      n = arguments.length > 2 ? arguments[2] : true;
+    return (0, r.useMemo)(() => {
+      if (null != n) return 3 === n ? l.intl.string(l.t.QUjmjp) : 7 === n ? l.intl.string(l.t.yPxJA2) : l.intl.string(l.t["o+VpXZ"]);
+      if (null != e && (0, a.o0)(e.skuId) && e.type !== i.Z.BUNDLE && null != e.summary && "" !== e.summary) return e.summary;
+      switch (null == e ? true : e.type) {
+        case i.Z.AVATAR_DECORATION:
+          return l.intl.string(l.t["3lv7q2"]);
+        case i.Z.PROFILE_EFFECT:
+          return l.intl.string(l.t.VhJL72);
+        case i.Z.NAMEPLATE:
+          return l.intl.string(l.t.ik37EZ);
+        case i.Z.BUNDLE:
+          return o(e, t);
+        default:
+          return ""
+      }
+    }, [e, t, n])
   }

@@ -87,6 +87,7 @@ class _ extends Chunk81825.Z {
     }))
   }
   constructor(e) {
-    super(), s(this, "storeListingId", true), s(this, "skuId", true), s(this, "name", true), s(this, "summary", true), s(this, "unpublishedAt", true), s(this, "styles", true), this.storeListingId = e.storeListingId, this.skuId = e.skuId, this.name = e.name, this.summary = e.summary.trim(), this.unpublishedAt = e.unpublishedAt, this.styles = e.styles
+    var t;
+    super(), s(this, "storeListingId", true), s(this, "skuId", true), s(this, "name", true), s(this, "summary", true), s(this, "unpublishedAt", true), s(this, "styles", true), this.storeListingId = e.storeListingId, this.skuId = e.skuId, this.name = e.name, this.summary = null == (t = e.summary) ? true : t.trim(), this.unpublishedAt = e.unpublishedAt, this.styles = e.styles
   }
 }

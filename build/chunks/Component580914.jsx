@@ -40,7 +40,7 @@ let A = (0, Chunk884697.IC)(90),
     logoUrl: "",
     categorySkuId: true,
     bannerAsset: true,
-    summary: "",
+    summary: true,
     type: Chunk685816.z.HERO,
     categoryStoreListingId: ""
   },
@@ -164,7 +164,7 @@ let A = (0, Chunk884697.IC)(90),
                 className: I.title,
                 color: "text-strong",
                 children: U.title
-              }), "" !== U.summary && (0, r.jsx)(d.Text, {
+              }), null != U.summary && "" !== U.summary && (0, r.jsx)(d.Text, {
                 variant: "text-md/normal",
                 className: ee ? I.orbsSubHeaderText : I.subHeaderText,
                 style: null != U.bannerTextColor ? {
