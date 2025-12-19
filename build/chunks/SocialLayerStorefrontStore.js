@@ -4,7 +4,7 @@
 let r;
 require.d(exports, {
   Z: () => P
-}), require("./415506.js"), require("./388685.js"), require("./642613.js");
+}), require("./415506.js"), require("./388685.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk706454 = require("./706454.js");
@@ -50,7 +50,7 @@ function d(e, t) {
 
 function f(e) {
   if (0 === e.length) throw Error("No user IDs provided");
-  return e.length > 1 ? [...e].sort().join(",") : e[0]
+  return e.length > 1 ? [...e].join(",") : e[0]
 }
 let p = {},
   _ = {},

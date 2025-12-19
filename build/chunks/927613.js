@@ -24,26 +24,26 @@ function _(e) {
     userIds: a,
     isEligible: s,
     includeWishlists: u
-  } = e, d = (0, i.e7)([c.Z], () => null != t ? c.Z.recommendationsByApplicationsAndUsers(t, a) : true);
+  } = e, d = null == a ? true : a.slice(0, l.JR), p = (0, i.e7)([c.Z], () => null != t ? c.Z.recommendationsByApplicationsAndUsers(t, d) : true);
   r.useEffect(() => {
-    s && null != t && null != a && 0 !== a.length && 0 !== n && (0, l.g$)({
+    s && null != t && null != d && 0 !== d.length && 0 !== n && (0, l.g$)({
       applicationId: t,
-      userIds: a,
+      userIds: d,
       maxRecommendations: n,
       includeWishlists: u
     })
-  }, [t, a, s, n, u]);
-  let p = r.useMemo(() => null == d || "success" !== d.state ? [] : d.data.skus.slice(0, n), [d, n]),
-    _ = r.useMemo(() => null == d || "success" !== d.state ? [] : p.map(e => new o.Z({
+  }, [t, d, s, n, u]);
+  let _ = r.useMemo(() => null == p || "success" !== p.state ? [] : p.data.skus.slice(0, n), [p, n]),
+    m = r.useMemo(() => null == p || "success" !== p.state ? [] : _.map(e => new o.Z({
       sku_id: e.id,
       sku_product_line: f.POd.SOCIAL_LAYER_GAME_ITEM,
       sku_name: e.name,
       sku: e
-    })), [p, d]);
+    })), [_, p]);
   return {
-    state: r.useMemo(() => null == d ? "loading" : d.state, [d]),
-    recommendations: _,
-    skuIdToUserIdsReasons: r.useMemo(() => null == d || "success" !== d.state ? {} : d.data.skusToRecommendationReasons, [d])
+    state: r.useMemo(() => null == p ? "loading" : p.state, [p]),
+    recommendations: m,
+    skuIdToUserIdsReasons: r.useMemo(() => null == p || "success" !== p.state ? {} : p.data.skusToRecommendationReasons, [p])
   }
 }
 

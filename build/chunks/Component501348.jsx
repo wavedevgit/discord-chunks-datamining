@@ -132,12 +132,12 @@ let W = {
     className: Chunk407626.themeTitle,
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk407626.themeTitleContainer,
-      children: [(0, Chunk54381.jsx)("div", {
-        className: Chunk407626.title,
-        children: Chunk388032.intl.string(Chunk388032.t["0EzVst"])
-      }), (0, Chunk54381.jsx)(Chunk481060.R94, {
-        type: Chunk481060.R94.Types.DESCRIPTION,
-        className: Chunk407626.subtext,
+      children: [(0, Chunk54381.jsxs)(Chunk481060.Text, {
+        variant: "text-md/medium",
+        children: [" ", Chunk388032.intl.string(Chunk388032.t["0EzVst"])]
+      }), (0, Chunk54381.jsx)(Chunk481060.Text, {
+        variant: "text-sm/normal",
+        color: "text-subtle",
         children: Chunk388032.intl.string(Chunk388032.t.PV3dGX)
       })]
     }), (0, Chunk54381.jsx)(Chunk329013.g, {})]
@@ -252,9 +252,8 @@ class et extends Chunk473749.Component {
       })
     }) : (0, Chunk54381.jsx)(Chunk481060.C3N, {
       label: Chunk388032.intl.string(Chunk388032.t.Ksh3ik),
-      children: (0, Chunk54381.jsx)(Chunk481060.xJW, {
-        title: (0, Chunk54381.jsx)(X, {}),
-        children: (0, Chunk54381.jsx)(Chunk329013.i, {})
+      children: (0, Chunk54381.jsxs)("div", {
+        children: [(0, Chunk54381.jsx)(X, {}), (0, Chunk54381.jsx)(Chunk329013.i, {})]
       })
     })
   }

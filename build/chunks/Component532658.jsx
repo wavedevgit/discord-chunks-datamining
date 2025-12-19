@@ -368,14 +368,17 @@ let q = Chunk473749.memo(function(e) {
         voiceBackgroundWidth: Y,
         rightAlign: true
       }), (0, r.jsx)(X, {
-        className: j.avatar,
+        className: o()(j.avatar, {
+          [j.avatarSpeakingOutline]: eE === false / 0
+        }),
         size: em,
         src: eg,
         isSpeaking: es,
         voiceDb: eE,
         speakingStylesConfig: {
           spreadDirection: E.h.OUTSET_ONLY,
-          maxOuterSpreadRadius: 4
+          maxOuterSpreadRadius: 4,
+          hideIfVolumeMissing: true
         },
         "aria-hidden": true
       }), (0, r.jsx)(Q, {
@@ -397,14 +400,17 @@ let q = Chunk473749.memo(function(e) {
       onMouseEnter: ep,
       onMouseLeave: eu,
       children: [(0, r.jsx)(X, {
-        className: j.avatar,
+        className: o()(j.avatar, {
+          [j.avatarSpeakingOutline]: eE === false / 0
+        }),
         size: em,
         src: eg,
         isSpeaking: es,
         voiceDb: eE,
         speakingStylesConfig: {
           spreadDirection: E.h.OUTSET_ONLY,
-          maxOuterSpreadRadius: 4
+          maxOuterSpreadRadius: 4,
+          hideIfVolumeMissing: true
         },
         "aria-hidden": true
       }), !V && (0, r.jsx)(q, {

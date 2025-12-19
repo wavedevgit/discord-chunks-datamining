@@ -2,6 +2,7 @@
 /** chunk id: 411935, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  JR: () => h,
   Xp: () => O,
   YL: () => g,
   g$: () => y,
@@ -145,35 +146,34 @@ async function y(e) {
     includeWishlists: c = false
   } = e;
   if (0 === n.length) return;
-  let d = n.slice(0, h),
-    _ = s.Z.recommendationsByApplicationsAndUsers(t, d);
-  if (null == _ || "error" !== _.state && "loading" !== _.state && ("success" !== _.state || !(_.data.numItemsRequested >= a))) try {
+  let d = s.Z.recommendationsByApplicationsAndUsers(t, n);
+  if (null == d || "error" !== d.state && "loading" !== d.state && ("success" !== d.state || !(d.data.numItemsRequested >= a))) try {
     i.Z.dispatch({
       type: "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_START",
       applicationId: t,
-      userIds: d
+      userIds: n
     });
     let e = await r.tn.get({
         url: l.ANM.SOCIAL_LAYER_APPLCIATION_RECOMMENDATIONS(t),
         rejectWithError: true,
         query: {
-          user_ids: d,
+          user_ids: n,
           max_recommendations: a,
           include_wishlists: c
         }
       }),
-      n = (0, o.X0)(e.body);
+      s = (0, o.X0)(e.body);
     return i.Z.dispatch(f(u({
       type: "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_SUCCESS"
-    }, n), {
-      userIds: d,
+    }, s), {
+      userIds: n,
       numItemsRequested: a
-    })), n
+    })), s
   } catch (e) {
     return i.Z.dispatch({
       type: "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_FAILURE",
       applicationId: t,
-      userIds: d
+      userIds: n
     }), null
   }
 }

@@ -32,22 +32,24 @@ function g(e) {
     voiceDb: u,
     spreadDirection: d = "BOTH",
     maxOuterSpreadRadius: h = f,
-    maxInnerSpreadRadius: g = p
+    maxInnerSpreadRadius: g = p,
+    hideIfVolumeMissing: E = false
   } = e, {
-    shouldReduceMotion: E,
-    isAppFocused: b
+    shouldReduceMotion: b,
+    isAppFocused: y
   } = (0, i.cj)([a.Z, o.Z], () => ({
     shouldReduceMotion: a.Z.useReducedMotion,
     isAppFocused: o.Z.isAppFocused()
   }));
   return r.useMemo(() => {
     let e = {};
+    if (u === false / 0 && E) return e;
     if (t) {
       let t = s,
         n = l,
         r = c;
-      u !== false / 0 && !E && b && (t = m(u, "INSET_ONLY" === d ? 0 : h), n = m(u, "OUTSET_ONLY" === d ? 0 : g), r = "OUTSET_ONLY" === d ? 0 : n + 1), e.boxShadow = ["0 0 0 ".concat(t, "px var(--status-speaking)"), "inset 0 0 0 ".concat(n, "px var(--status-speaking)"), "inset 0 0 0 ".concat(r, "px var(--background-base-lower)")].join(", ")
+      u !== false / 0 && !b && y && (t = m(u, "INSET_ONLY" === d ? 0 : h), n = m(u, "OUTSET_ONLY" === d ? 0 : g), r = "OUTSET_ONLY" === d ? 0 : n + 1), e.boxShadow = ["0 0 0 ".concat(t, "px var(--status-speaking)"), "inset 0 0 0 ".concat(n, "px var(--status-speaking)"), "inset 0 0 0 ".concat(r, "px var(--background-base-lower)")].join(", ")
     } else n && (e.boxShadow = _);
-    return b && (e.transition = "box-shadow 50ms ease-out"), e
-  }, [t, n, b, E, u, d, h, g])
+    return y && (e.transition = "box-shadow 50ms ease-out"), e
+  }, [t, n, y, b, u, d, h, g, E])
 }
