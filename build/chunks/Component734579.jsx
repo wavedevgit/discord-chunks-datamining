@@ -130,8 +130,8 @@ let N = Chunk473749.memo(function(e) {
       })
     }), [l.id, N, G, k, B, L]),
     H = i.useMemo(() => {
-      let e = null != R && null != R.assetId ? x.Z.toURLSafe((0, C._W)(R.applicationId, R.assetId, 512, "webp")) : true,
-        t = null != R && null != R.backgroundImageAssetId ? x.Z.toURLSafe((0, C._W)(R.applicationId, R.backgroundImageAssetId, 1024, "webp")) : true;
+      let e = null != R && null != R.assetId ? x.Z.toURLSafe((0, C._W)(R.applicationId, R.assetId, 128, "webp")) : true,
+        t = null != R && null != R.backgroundImageAssetId ? x.Z.toURLSafe((0, C._W)(R.applicationId, R.backgroundImageAssetId, 128, "webp")) : true;
       if (null != e) return {
         imageUrl: e,
         backgroundImageUrl: t
