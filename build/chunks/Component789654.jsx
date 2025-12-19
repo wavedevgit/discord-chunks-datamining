@@ -217,7 +217,7 @@ function N() {
     }), (0, Chunk54381.jsx)("div", {
       className: Chunk532255.tab,
       hidden: S !== Chunk500949.H8.TOKENS,
-      children: (0, Chunk54381.jsx)(w, {
+      children: (0, Chunk54381.jsx)(P, {
         state: exports,
         setState: require
       })
@@ -237,7 +237,7 @@ function N() {
   })
 }
 
-function w(e) {
+function P(e) {
   let {
     state: t,
     setState: n
@@ -325,7 +325,7 @@ function w(e) {
         let s = T(l.color),
           c = l.opacity,
           d = j.jC[t][i];
-        return (0, a.jsx)(P, {
+        return (0, a.jsx)(w, {
           title: E(t),
           subtitle: 1 === d.opacity ? T(d.raw) : "".concat(T(d.raw), " @ ").concat(100 * d.opacity, "%"),
           highlight: r.highlight,
@@ -432,7 +432,7 @@ function w(e) {
       className: y.rawOverrides,
       children: Object.entries(s).map(e => {
         let [t, r] = e;
-        return (0, a.jsxs)(P, {
+        return (0, a.jsxs)(w, {
           title: t,
           subtitle: u.b[t].hex,
           highlight: r.highlight,
@@ -504,7 +504,7 @@ function w(e) {
   })
 }
 
-function P(e) {
+function w(e) {
   let {
     title: t,
     subtitle: n,

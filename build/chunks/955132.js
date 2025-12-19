@@ -66,14 +66,17 @@ y.handleIdentify = () => {
   if (b.verbose("handleIdentify called", {
       hasToken: null != module
     }), null == module) return null;
-  let t = Chunk15624.Z.getState();
+  let t = Chunk15624.Z.getState(),
+    n = Chunk314897.default.getInstallationForTracking();
   return {
     token: module,
-    properties: E(h({}, Chunk626135.default.getSuperProperties()), {
+    properties: h(E(h({}, Chunk626135.default.getSuperProperties()), {
       client_app_state: exports,
       is_fast_connect: false,
       gateway_connect_reasons: Chunk866483.Pf()
-    }),
+    }), null != require ? {
+      installation_id: require
+    } : {}),
     presence: O.getInitialState()
   }
 }, (0, Chunk358085.isDesktop)() && Chunk579806.Z.remotePowerMonitor.on("resume", () => {

@@ -82,7 +82,7 @@ function A(e) {
   }, [i, h, f, l]), v = 2 !== x, j = (0, u.q_F)({
     opacity: +!!v,
     height: v ? p : 0,
-    config: w.Y
+    config: P.Y
   }), y = 0 === x ? u.Mgn : u.d3s, _ = u.TVs.unsafe_rawColors.RED_345.css, S = 0 === x ? _ : o ? u.TVs.colors.TEXT_DEFAULT : u.TVs.colors.WHITE;
   return (0, a.jsx)(s.animated.div, {
     style: j,
@@ -117,7 +117,7 @@ function Z(e) {
   var t, n, i, s, m;
   let {
     quest: C,
-    isHovering: w,
+    isHovering: P,
     errorHints: Z,
     warningHints: D,
     isVisibleInViewport: L,
@@ -125,7 +125,7 @@ function Z(e) {
     onCtxMenuOpen: U,
     onCtxMenuSelect: B,
     sourceQuestContent: F
-  } = e, G = (0, j.PB)(C), V = (0, p.ZP)(), H = ((0, d.wj)(V) ? P.BRd.DARK : P.BRd.LIGHT) === P.BRd.DARK, z = (0, g.tP)(C), W = (null == (t = C.userStatus) ? true : t.claimedAt) != null, K = (0, g.B6)(C.config.expiresAt, {
+  } = e, G = (0, j.PB)(C), V = (0, p.ZP)(), H = ((0, d.wj)(V) ? w.BRd.DARK : w.BRd.LIGHT) === w.BRd.DARK, z = (0, g.tP)(C), W = (null == (t = C.userStatus) ? true : t.claimedAt) != null, K = (0, g.B6)(C.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), q = (null == (n = C.userStatus) ? true : n.enrolledAt) != null, Y = (null == (i = C.userStatus) ? true : i.completedAt) != null, {
@@ -149,7 +149,7 @@ function Z(e) {
       className: k.heroAssetWrapper,
       children: (0, a.jsx)(_.Z, {
         quest: C,
-        isInteracting: w,
+        isInteracting: P,
         hideAssets: !L,
         imageSize: {
           width: 1320,
@@ -159,10 +159,10 @@ function Z(e) {
       })
     }), (0, a.jsx)("div", {
       className: l()(k.overlay, {
-        [k.lightThemeGradient]: V === P.BRd.LIGHT,
-        [k.darkThemeGradient]: V === P.BRd.DARK,
-        [k.darkerThemeGradient]: V === P.BRd.DARKER,
-        [k.midnightThemeGradient]: V === P.BRd.MIDNIGHT
+        [k.lightThemeGradient]: V === w.BRd.LIGHT,
+        [k.darkThemeGradient]: V === w.BRd.DARK,
+        [k.darkerThemeGradient]: V === w.BRd.DARKER,
+        [k.midnightThemeGradient]: V === w.BRd.MIDNIGHT
       })
     }), (0, a.jsxs)("div", {
       className: k.positionContentOverBackground,

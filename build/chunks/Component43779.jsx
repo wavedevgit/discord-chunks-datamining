@@ -29,9 +29,9 @@ var Chunk54381 = require("./54381.js"),
 let T = async () => await require.e("67963").then(require.t.bind(require, 145193, 19));
 
 function O(e) {
-  var t, n, i, O, w;
+  var t, n, i, O, P;
   let {
-    quest: P,
+    quest: w,
     questContent: I,
     isHovering: k,
     contentPosition: R,
@@ -39,7 +39,7 @@ function O(e) {
     isVisibleInViewport: Z,
     onReceiveErrorHints: D,
     sourceQuestContent: L
-  } = e, M = r.useRef(null), U = (0, x.w8)(P.config), B = (0, x.B3)(P.config), F = (null == (t = P.userStatus) ? true : t.enrolledAt) != null, {
+  } = e, M = r.useRef(null), U = (0, x.w8)(w.config), B = (0, x.B3)(w.config), F = (null == (t = w.userStatus) ? true : t.enrolledAt) != null, {
     ref: G,
     scrollHeight: V
   } = (0, d.kE)(), H = 104 !== V, {
@@ -65,48 +65,48 @@ function O(e) {
         })
       }
       return e
-    }({}, _.Y), w = w = {
+    }({}, _.Y), P = P = {
       clamp: true
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(O, Object.getOwnPropertyDescriptors(w)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(O, Object.getOwnPropertyDescriptors(P)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var a = Object.getOwnPropertySymbols(e);
         n.push.apply(n, a)
       }
       return n
-    })(Object(w)).forEach(function(e) {
-      Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(w, e))
+    })(Object(P)).forEach(function(e) {
+      Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(P, e))
     }), O)
-  }), K = (null == (n = P.userStatus) ? true : n.completedAt) != null, q = (null == (i = P.userStatus) ? true : i.claimedAt) != null, Y = (0, x.xN)(P.config), Q = (0, x.LM)(P.config), {
+  }), K = (null == (n = w.userStatus) ? true : n.completedAt) != null, q = (null == (i = w.userStatus) ? true : i.claimedAt) != null, Y = (0, x.xN)(w.config), Q = (0, x.LM)(w.config), {
     completedRatio: X,
     completedRatioDisplay: J
-  } = (0, h.I)(P), $ = (0, p.Bd)(P, L, M), ee = r.useMemo(() => q && Y ? S.intl.format(S.t["8Op4c4"], {
+  } = (0, h.I)(w), $ = (0, p.Bd)(w, L, M), ee = r.useMemo(() => q && Y ? S.intl.format(S.t["8Op4c4"], {
     balanceHook: () => (0, a.jsxs)(N, {
-      questId: P.id,
+      questId: w.id,
       children: [(0, a.jsx)(m.Z, {
         shouldUseThemeColor: true,
         className: E.orbsBalanceIcon,
         customSize: 14
       }), Q]
-    }, P.id)
+    }, w.id)
   }) : q ? (0, a.jsx)(N, {
-    questId: P.id,
+    questId: w.id,
     children: U
   }) : Y ? S.intl.format(S.t.ro1sze, {
     balanceHook: () => (0, a.jsxs)(N, {
-      questId: P.id,
+      questId: w.id,
       children: [(0, a.jsx)(m.Z, {
         shouldUseThemeColor: true,
         className: E.orbsBalanceIcon,
         customSize: 14
       }), Q]
-    }, P.id)
+    }, w.id)
   }) : S.intl.format(S.t["0IUT4Y"], {
     rewardWithArticleHook: () => (0, a.jsx)(N, {
-      questId: P.id,
+      questId: w.id,
       children: B
-    }, P.id)
-  }), [U, q, B, P.id, Q, Y]), et = r.useMemo(() => {
+    }, w.id)
+  }), [U, q, B, w.id, Q, Y]), et = r.useMemo(() => {
     if (null != $) return (0, a.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -139,14 +139,14 @@ function O(e) {
               autoplay: false,
               shouldAnimate: !en
             }), (0, a.jsx)(b.Z, {
-              quest: P,
+              quest: w,
               size: 76,
               percentComplete: X,
-              percentCompleteText: k && !(0, f.zi)(P) ? J : true,
+              percentCompleteText: k && !(0, f.zi)(w) ? J : true,
               children: (0, a.jsx)("div", {
                 className: E.circularRewardTileWrapper,
                 children: (0, a.jsx)(g.Z, {
-                  quest: P,
+                  quest: w,
                   questContent: I,
                   className: E.circularQuestRewardTileAsset,
                   location: C.dr.QUEST_HOME_DESKTOP,
@@ -158,7 +158,7 @@ function O(e) {
               })
             })]
           }) : (0, a.jsx)(g.Z, {
-            quest: P,
+            quest: w,
             autoplay: k,
             questContent: I,
             className: E.questRewardTileAsset,
@@ -178,7 +178,7 @@ function O(e) {
           color: "text-brand",
           className: E.questName,
           children: S.intl.format(S.t.EAYZAr, {
-            questName: P.config.messages.questName
+            questName: w.config.messages.questName
           })
         }), (0, a.jsx)(c.Text, {
           variant: "text-md/semibold",
@@ -193,7 +193,7 @@ function O(e) {
         className: E.textOverflowBlur
       })]
     }), (0, a.jsx)(y.Z, {
-      quest: P,
+      quest: w,
       questContent: I,
       contentPosition: R,
       rowIndex: A,

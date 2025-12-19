@@ -56,7 +56,7 @@ function d(e) {
 
 function f() {
   (0, Chunk473749.useEffect)(() => {
-    (0, Chunk872780.e)(Chunk588486.dR.APP)
+    (0, Chunk872780.e$)(Chunk588486.dR.APP)
   }, []);
   let e = (0, Chunk442837.e7)([Chunk633289.Z], () => Chunk633289.Z.getExperimentsMetadata()),
     t = (0, Chunk442837.e7)([Chunk633289.Z], () => Chunk633289.Z.getRegisteredExperiments()),

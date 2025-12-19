@@ -32,16 +32,16 @@ let j = e => {
       isPurchased: y,
       isPartiallyOwnedBundle: C
     } = (0, p.L)(t), _ = (0, m.G1)(t), S = (0, l.e7)([d.Z], () => d.Z.getCategoryForProduct(t.skuId)), E = (null == S ? true : S.unpublishedAt) != null ? (0, m.OT)(S.unpublishedAt) : null, T = (0, l.e7)([o.default], () => o.default.getCurrentUser()), O = c.ZP.canUseCollectibles(T), N = (0, x.Iw)(t), {
-      isOrbExclusive: w
+      isOrbExclusive: P
     } = (0, b.Ip)({
       product: t,
       isPremiumUser: O,
       prioritizedCurrency: f,
       hasDiscountOffer: null != N
-    }), P = n;
-    if (null == P && (!r && (0, m.L9)(null == S ? true : S.unpublishedAt) ? P = h.Zh.LIMITED_TIME : !C && !y && (0, m.Yq)(t.skuId) ? P = h.Zh.NEW : null != j && 3 === j ? P = h.Zh.THREE_DAY_RENTAL : null != j && 7 === j ? P = h.Zh.SEVEN_DAY_RENTAL : null != j ? P = h.Zh.RENTAL : w ? P = h.Zh.ORBS_EXCLUSIVE : _ && (P = h.Zh.NITRO_EXCLUSIVE)), null == P || P === h.Zh.NONE) return null;
+    }), w = n;
+    if (null == w && (!r && (0, m.L9)(null == S ? true : S.unpublishedAt) ? w = h.Zh.LIMITED_TIME : !C && !y && (0, m.Yq)(t.skuId) ? w = h.Zh.NEW : null != j && 3 === j ? w = h.Zh.THREE_DAY_RENTAL : null != j && 7 === j ? w = h.Zh.SEVEN_DAY_RENTAL : null != j ? w = h.Zh.RENTAL : P ? w = h.Zh.ORBS_EXCLUSIVE : _ && (w = h.Zh.NITRO_EXCLUSIVE)), null == w || w === h.Zh.NONE) return null;
     let I = null;
-    switch (P) {
+    switch (w) {
       case h.Zh.LIMITED_TIME:
         I = null != E ? E > 1 ? g.intl.formatToPlainString(g.t.Io7ozn, {
           days: E

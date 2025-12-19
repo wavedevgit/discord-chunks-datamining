@@ -30,8 +30,8 @@ function v(e) {
     rowIndex: j,
     impressionRef: y,
     sourceQuestContent: C
-  } = e, [_, S] = r.useState(false), [E, T] = r.useState([]), O = (0, c.qb)(i), N = r.useMemo(() => (0, d.q8)(i), [i]), w = (0, s._F)(), P = r.useCallback(() => {
-    S(true), w({
+  } = e, [_, S] = r.useState(false), [E, T] = r.useState([]), O = (0, c.qb)(i), N = r.useMemo(() => (0, d.q8)(i), [i]), P = (0, s._F)(), w = r.useCallback(() => {
+    S(true), P({
       questId: i.id,
       event: b.rMx.QUEST_HOVER,
       properties: {
@@ -41,8 +41,8 @@ function v(e) {
       },
       sourceQuestContent: C
     }), N && (0, m.loadVideoQuestModal)()
-  }, [w, i.id, u, N, C, v]), I = r.useCallback(() => {
-    S(false), w({
+  }, [P, i.id, u, N, C, v]), I = r.useCallback(() => {
+    S(false), P({
       questId: i.id,
       event: b.rMx.QUEST_HOVER_OFF,
       properties: {
@@ -52,7 +52,7 @@ function v(e) {
       },
       sourceQuestContent: C
     })
-  }, [w, i.id, u, C, v]), k = r.useContext(h.t), {
+  }, [P, i.id, u, C, v]), k = r.useContext(h.t), {
     visibilityElementRef: R,
     almostVisibleInViewport: A
   } = function(e) {
@@ -74,9 +74,9 @@ function v(e) {
       y.current = e, R.current = e
     },
     className: l()(g.container, o),
-    onMouseEnter: P,
+    onMouseEnter: w,
     onMouseLeave: I,
-    onFocus: P,
+    onFocus: w,
     onBlur: I,
     children: [(0, a.jsx)(f.Z, {
       quest: i,

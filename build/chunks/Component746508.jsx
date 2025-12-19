@@ -239,7 +239,6 @@ function e$() {
     parentAnalyticsLocation: e
   } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk754277.Z], () => Chunk754277.Z.isMuted()), n = exports ? Chunk388032.intl.string(Chunk388032.t.ScHlfl) : Chunk388032.intl.string(Chunk388032.t.zqxfrf);
   return (0, Chunk54381.jsx)(Chunk870569.Z, {
-    "aria-label": require,
     tooltipText: require,
     icon: exports ? Chunk481060.xjP : Chunk481060.RZG,
     onClick: () => {

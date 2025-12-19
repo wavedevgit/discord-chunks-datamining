@@ -32,7 +32,7 @@ let y = e => {
       isPartiallyOwnedBundle: S,
       isRented: E,
       rentalExpiresAt: T
-    } = (0, p.L)(t), O = (0, u.G1)(t), N = (0, u.rN)(t), w = r.useMemo(() => (0, u.BH)(t, y), [t, y]), P = (0, b.Iw)(t), {
+    } = (0, p.L)(t), O = (0, u.G1)(t), N = (0, u.rN)(t), P = r.useMemo(() => (0, u.BH)(t, y), [t, y]), w = (0, b.Iw)(t), {
       checkoutEligiblePrices: I,
       hasSufficientOrbs: k,
       shouldCheckoutWithOrbs: R
@@ -40,7 +40,7 @@ let y = e => {
       product: t,
       isPremiumUser: y,
       prioritizedCurrency: n,
-      hasDiscountOffer: null != P,
+      hasDiscountOffer: null != w,
       isRental: null != x
     }), A = O && !y;
     if (C) return (0, a.jsx)(l.Text, {
@@ -83,10 +83,10 @@ let y = e => {
       children: v.intl.string(v.t.rt69oo)
     }) : 0 === I.length ? null : (0, a.jsx)(h.F, {
       price: I[0],
-      discount: w,
+      discount: P,
       nitroIconType: y ? "default" : true,
       nitroIconSize: "sm",
-      discountOfferAmount: P,
+      discountOfferAmount: w,
       className: R && !k ? j.insufficientOrbs : true,
       variant: "text-md/bold"
     })

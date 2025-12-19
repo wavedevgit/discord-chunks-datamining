@@ -67,14 +67,14 @@ function B(e) {
     analyticsLocation: t,
     analyticsObject: n,
     analyticsSourceLocation: i,
-    onComplete: s,
+    onComplete: o,
     transitionState: c,
     initialPlanId: d,
     subscriptionTier: m,
     onClose: f,
     trialId: b,
-    trialFooterMessageOverride: P,
-    reviewWarningMessage: x,
+    trialFooterMessageOverride: x,
+    reviewWarningMessage: P,
     openInvoiceId: E,
     onSubscriptionConfirmation: w,
     renderPurchaseConfirmation: T,
@@ -83,7 +83,7 @@ function B(e) {
     renderHeader: N,
     applicationId: M,
     guildId: _,
-    referralTrialOfferId: R,
+    referralTrialOfferId: A,
     skuId: Z,
     returnRef: D,
     skipConfirm: F = false,
@@ -92,7 +92,7 @@ function B(e) {
     analyticsLocations: B
   } = (0, u.ZP)();
   l.useEffect(() => {
-    h.Z.isLoadedForPremiumSKUs() || a.Z.wait(() => (0, o.Y2)())
+    h.Z.isLoadedForPremiumSKUs() || a.Z.wait(() => (0, s.Y2)())
   }, []);
   let {
     step: U,
@@ -112,8 +112,8 @@ function B(e) {
       analyticsLocation: t,
       analyticsObject: n,
       analyticsSourceLocation: i,
-      analyticsSubscriptionType: A.NYc.PREMIUM,
-      onComplete: s,
+      analyticsSubscriptionType: R.NYc.PREMIUM,
+      onComplete: o,
       transitionState: c,
       initialPlanId: d,
       giftMessage: W,
@@ -121,8 +121,8 @@ function B(e) {
       onClose: f,
       trialId: b,
       isGift: K,
-      trialFooterMessageOverride: P,
-      reviewWarningMessage: x,
+      trialFooterMessageOverride: x,
+      reviewWarningMessage: P,
       planGroup: L.Y1,
       openInvoiceId: E,
       onSubscriptionConfirmation: w,
@@ -132,7 +132,7 @@ function B(e) {
       renderHeader: N,
       applicationId: M,
       guildId: _,
-      referralTrialOfferId: R,
+      referralTrialOfferId: A,
       skuId: Z,
       shakeWhilePurchasing: true,
       isDynamicModal: Y,
@@ -150,21 +150,21 @@ function U(e) {
     handleStepChange: i,
     referralTrialOfferId: a
   } = e, {
-    paymentSources: o,
-    selectedSkuId: s,
+    paymentSources: s,
+    selectedSkuId: o,
     selectedPlan: u
   } = (0, j.JL)(), {
     isGift: c,
     claimableRewards: p
-  } = (0, y.wD)(), m = (0, R.Z)({
+  } = (0, y.wD)(), m = (0, A.Z)({
     isGift: c,
-    skuId: s,
+    skuId: o,
     referralTrialOfferId: a
   }), h = (0, C.Fv)(m), f = (0, d.id)(u, c, p);
-  return (0, r.jsx)(P.J, (t = F({}, e), n = n = {
+  return (0, r.jsx)(x.J, (t = F({}, e), n = n = {
     breadcrumbSteps: G,
     onReturn: () => {
-      let e = Object.values(o),
+      let e = Object.values(s),
         t = e.length < 1 && null == l ? v.h8.PLAN_SELECT : v.h8.REVIEW;
       h && (t = v.h8.REVIEW), f && e.length < 1 && (t = v.h8.SELECT_FREE_SKU), i(t, {
         trackedFromStep: v.h8.PAYMENT_TYPE
@@ -249,10 +249,10 @@ function K(e) {
     n = (0, c.Vi)() ? L.Xh.PREMIUM_MONTH_TIER_2 : true,
     {
       analyticsLocations: l
-    } = (0, u.ZP)(e.analyticsLocations, s.Z.PREMIUM_PAYMENT_MODAL),
+    } = (0, u.ZP)(e.analyticsLocations, o.Z.PREMIUM_PAYMENT_MODAL),
     {
       confirmationFooter: a,
-      defaultPlanId: o,
+      defaultPlanId: s,
       giftingOrigin: d,
       giftMessage: p,
       giftRecipient: h,
@@ -260,10 +260,10 @@ function K(e) {
       isGift: v,
       loadId: O,
       referralCode: S,
-      subscriptionTier: P
+      subscriptionTier: x
     } = e;
-  if (null != P && !Object.values(L.Si).includes(P)) throw Error("subscriptionTier must be a premium subscription");
-  let x = (0, m.ao)({
+  if (null != x && !Object.values(L.Si).includes(x)) throw Error("subscriptionTier must be a premium subscription");
+  let P = (0, m.ao)({
     location: "PremiumPaymentSelect",
     giftRecipient: h,
     isGift: null != v && v
@@ -273,10 +273,10 @@ function K(e) {
     children: (0, r.jsx)(j.PaymentContextProvider, {
       loadId: O,
       activeSubscription: null != e.subscription ? e.subscription : t,
-      stepConfigs: H(x),
+      stepConfigs: H(P),
       skuIDs: [...L.YQ],
       isGift: v,
-      defaultPlanId: null != n ? n : o,
+      defaultPlanId: null != n ? n : s,
       referralCode: S,
       wasTier2PremiumBeforePurchase: e.wasTier2PremiumBeforePurchase,
       children: (0, r.jsx)(b.c1, {

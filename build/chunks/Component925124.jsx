@@ -70,7 +70,7 @@ let E = async () => {
       discount: []
     }
   }
-}, w = async () => {
+}, P = async () => {
   try {
     await Chunk544891.tn.del({
       url: Chunk981631.ANM.USER_OFFERS,
@@ -79,7 +79,7 @@ let E = async () => {
   } catch (e) {} finally {
     await Chunk431.Z.forceReset(), await (0, Chunk937579.Tf)()
   }
-}, P = async e => {
+}, w = async e => {
   await s.tn.post({
     url: y.ANM.CREATE_REVERSE_TRIAL,
     body: {
@@ -95,11 +95,11 @@ function I(e) {
     offer: p,
     offerOptions: h,
     forceRefetch: g
-  } = e, [v, j] = r.useState(false), [S, E] = r.useState(false), [T, N] = r.useState(false), [w, P] = r.useState(false);
+  } = e, [v, j] = r.useState(false), [S, E] = r.useState(false), [T, N] = r.useState(false), [P, w] = r.useState(false);
   r.useEffect(() => {
-    T && P(true);
+    T && w(true);
     let e = setTimeout(() => {
-      P(false)
+      w(false)
     }, 500);
     return () => {
       clearTimeout(e)
@@ -294,7 +294,7 @@ function I(e) {
       })
     }), (0, a.jsx)("div", {
       className: l()(_.loadingContainer, {
-        [_.isLoading]: T || w
+        [_.isLoading]: T || P
       }),
       children: (0, a.jsx)(d.$jN, {})
     })]
@@ -321,13 +321,13 @@ function k(e) {
     id: E,
     expires_at: T,
     applied_at: N,
-    discount_id: w,
-    discount: P
+    discount_id: P,
+    discount: w
   } = i, I = null != (n = null == (t = o.find(e => {
     let {
       value: t
     } = e;
-    return t === w
+    return t === P
   })) ? true : t.label) ? n : "Unknown", k = null != T, R = null != T && new Date(T).getTime() < Date.now(), A = async () => {
     j(true), k ? await Z({
       expiresAt: null
@@ -407,12 +407,12 @@ function k(e) {
     }), (0, a.jsxs)(d.P3F, {
       className: l()(_.row, _.idRow),
       onClick: () => {
-        (0, f.JG)(w, () => g(true))
+        (0, f.JG)(P, () => g(true))
       },
       children: [(0, a.jsxs)(d.Text, {
         variant: "eyebrow",
         color: "text-default",
-        children: ["Discount: ", w]
+        children: ["Discount: ", P]
       }), b ? (0, a.jsx)(d.dz2, {
         size: "md",
         color: "currentColor",
@@ -422,11 +422,11 @@ function k(e) {
         color: "currentColor",
         className: _.icon
       })]
-    }), (null == P ? true : P.amount) != null && (0, a.jsx)("div", {
+    }), (null == w ? true : w.amount) != null && (0, a.jsx)("div", {
       children: (0, a.jsxs)(d.Text, {
         variant: "eyebrow",
         color: "text-default",
-        children: [P.amount, "% off"]
+        children: [w.amount, "% off"]
       })
     }), (0, a.jsxs)("div", {
       className: _.row,
@@ -503,10 +503,10 @@ function R() {
   }, V = async () => {
     null != Chunk105713 && (await T(Chunk105713, "discount"), A(true))
   }, H = async () => {
-    await w(), A(true)
+    await P(), A(true)
   }, z = async () => {
     let e = new Date(Date.now() + 60 * Z * 1e3).toISOString();
-    await P(module), F()
+    await w(module), F()
   };
   return (0, Chunk54381.jsx)(Chunk481060.zJl, {
     className: Chunk663618.panel,

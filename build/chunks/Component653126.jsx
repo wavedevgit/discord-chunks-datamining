@@ -34,8 +34,8 @@ let O = Chunk473749.memo(function(e) {
       hideProductName: i,
       hideVariantSwitcher: O,
       hidePrice: N,
-      hidePrimaryCTA: w,
-      hideSecondaryCTA: P,
+      hidePrimaryCTA: P,
+      hideSecondaryCTA: w,
       badgeOverride: I,
       skipLimitedTimeCheck: k,
       onClickCard: R,
@@ -60,7 +60,7 @@ let O = Chunk473749.memo(function(e) {
       isHoveringOrFocusing: et
     } = (0, u.Z)(ee), {
       handleCardVisibilityChange: en
-    } = (0, p.E)(t.skuId, J === E.AW.CATALOG ? "full" : J), ea = (0, j.J7)(t, d.Z.COLLECTIBLES_SHOP_CARD, W, Q), er = t.type === s.Z.VARIANTS_GROUP && !O, ei = !w || !P, el = !(N && i) || er, es = el || ei, eo = ei || er;
+    } = (0, p.E)(t.skuId, J === E.AW.CATALOG ? "full" : J), ea = (0, j.J7)(t, d.Z.COLLECTIBLES_SHOP_CARD, W, Q), er = t.type === s.Z.VARIANTS_GROUP && !O, ei = !P || !w, el = !(N && i) || er, es = el || ei, eo = ei || er;
     return (0, a.jsx)(o.$, {
       innerRef: ee,
       onChange: en,
@@ -131,14 +131,14 @@ let O = Chunk473749.memo(function(e) {
                   wrap: false,
                   className: T.footerButtonGroup,
                   fullWidth: true,
-                  children: [!w && (0, a.jsx)(g.Z, {
+                  children: [!P && (0, a.jsx)(g.Z, {
                     skuId: t.skuId,
                     cardRef: ee,
                     onClick: A,
                     text: B,
                     prioritizedCurrency: z,
                     onClickAnalytics: W
-                  }), !P && (0, a.jsx)(v.Z, {
+                  }), !w && (0, a.jsx)(v.Z, {
                     skuId: t.skuId,
                     cardRef: ee,
                     onClick: Z,

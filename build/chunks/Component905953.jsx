@@ -33,16 +33,16 @@ function _(e) {
     trackUserProfileEditAction: T
   } = (0, m.KZ)(), O = (0, l.e7)([v.default], () => v.default.getId()), {
     config: N,
-    application: w
+    application: P
   } = (0, f.G)(), {
-    fetched: P,
+    fetched: w,
     hasAlreadyLinked: I,
     canStartAuthorization: k,
     startAuthorization: R
-  } = (0, d.FG)(w), A = (0, x.ZP)(O), {
+  } = (0, d.FG)(P), A = (0, x.ZP)(O), {
     analyticsLocations: Z
-  } = (0, c.ZP)(), D = null == A || null == (t = A.widgets) ? true : t.some(e => e instanceof p.q && e.applicationId === (null == w ? true : w.id));
-  return null != N && null != N.edit_profile_upsell_image && null != w && P ? (0, a.jsx)(u.ZP, {
+  } = (0, c.ZP)(), D = null == A || null == (t = A.widgets) ? true : t.some(e => e instanceof p.q && e.applicationId === (null == P ? true : P.id));
+  return null != N && null != N.edit_profile_upsell_image && null != P && w ? (0, a.jsx)(u.ZP, {
     contentTypes: I ? D ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : k ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
@@ -60,7 +60,7 @@ function _(e) {
           src: N.edit_profile_upsell_image
         },
         title: C.intl.format(C.t.TXDztH, {
-          applicationName: w.name
+          applicationName: P.name
         }),
         body: l ? C.intl.string(C.t["63Kso0"]) : C.intl.string(C.t.HwXoeC),
         onRequestClose: () => {
@@ -75,7 +75,7 @@ function _(e) {
             }).then(() => {
               r(j.L.TAKE_ACTION), _();
               let e = new p.q({
-                applicationId: w.id,
+                applicationId: P.id,
                 type: i.l.APPLICATION
               });
               (0, h.qH)(e.type, e), T(function(e) {

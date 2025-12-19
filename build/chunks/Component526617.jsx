@@ -252,11 +252,13 @@ function ed(e) {
     return P.Z.getVoiceState(t, null != (e = null == eI ? true : eI.id) ? e : Y.lds)
   }), eA = (null == eC ? true : eC.selfDeaf) || (null == eC ? true : eC.mute) || (null == eC ? true : eC.suppress), eN = (0, b.Iu)(e => e.searchQuery), eP = null != eN && "" !== eN, eR = (0, h.Dt)(), ew = j.V.useConfig({
     location: "SoundboardSoundGrid"
-  }).enabled, {
+  }), {
     categories: eD,
     availableSounds: ex,
     soundCounts: eL
-  } = (0, Z.ZP)(a, {}, ep), [ej, eM] = i.useState([]), ek = (0, Z.FS)(eD, ej, eN), eU = (0, b.Iu)(e => e.isNitroLockedSectionVisible), eG = i.useMemo(() => ek.filter(e => e.items.length > 0), [ek]), eZ = i.useMemo(() => eG.findLastIndex(e => !!(0, D._O)(e.categoryInfo) && e.categoryInfo.isNitroLocked), [eG]), eF = !eT && J && false !== eZ, eB = i.useMemo(() => eF ? [0, 0, 8, 0] : [0, 0, 0, 0], [eF]), eV = C.T4.useSetting(), eH = i.useMemo(() => new Set(eV), [eV]), eY = null == a, eW = D.ZP.canUseCustomCallSounds(eI), eK = i.useCallback(e => {
+  } = (0, Z.ZP)(a, {
+    moveDefaultsToBottom: ew.enabled
+  }, ep), [ej, eM] = i.useState([]), ek = (0, Z.FS)(eD, ej, eN), eU = (0, b.Iu)(e => e.isNitroLockedSectionVisible), eG = i.useMemo(() => ek.filter(e => e.items.length > 0), [ek]), eZ = i.useMemo(() => eG.findLastIndex(e => !!(0, D._O)(e.categoryInfo) && e.categoryInfo.isNitroLocked), [eG]), eF = !eT && J && false !== eZ, eB = !eT && ew.enabled && !ew.bottomBar && eD.length > 6, eV = C.T4.useSetting(), eH = i.useMemo(() => new Set(eV), [eV]), eY = null == a, eW = D.ZP.canUseCustomCallSounds(eI), eK = i.useCallback(e => {
     eH.has(e) ? eH.delete(e) : eH.add(e), C.T4.updateSetting(Array.from(eH))
   }, [eH]), ez = i.useCallback((e, t, n, r) => {
     if (null != S && !R) return S(e, n);
@@ -331,7 +333,7 @@ function ed(e) {
     })
   }, [eJ]), e0 = i.useCallback(e => eX(e, t) ? ei : en, [t, eX]), e1 = i.useCallback(e => {
     let t = e === eG.length - 1;
-    return eF && t ? 50 : eF && e === eZ ? 20 : 0
+    return eF && t ? 70 : eF && e === eZ ? 20 : 0
   }, [eG.length, eF, eZ]), e3 = i.useCallback((e, t) => (0, r.jsx)("div", {
     children: t
   }, e), []), e2 = i.useCallback((e, n) => {
@@ -402,17 +404,21 @@ function ed(e) {
       color: "currentColor",
       className: q.settingsIcon
     })
-  }), [e_, e8]), e7 = i.useCallback(e => (0, r.jsx)(F.Z, {
-    soundboardListRef: e,
-    categories: eD,
-    shouldUpsellLockedCategories: eF,
-    listPadding: ed,
-    guildId: t,
-    inExpressionPicker: e_
-  }), [eD, eF, ed, t, e_]), e9 = i.useCallback(() => {
+  }), [e_, e8]), e7 = i.useCallback(e => {
+    let n = eD.filter(e => !eB || e.categoryInfo.type !== L.bg.DEFAULTS);
+    return (0, r.jsx)(F.Z, {
+      soundboardListRef: e,
+      categories: n,
+      shouldUpsellLockedCategories: eF,
+      listPadding: ed,
+      guildId: t,
+      inExpressionPicker: e_,
+      showPinnedDefaultsShortcut: eB
+    })
+  }, [eD, eF, ed, t, e_, eB]), e9 = i.useCallback(() => {
     if (eF) {
       let e = eU;
-      return ew && (e = true), (0, r.jsx)(v.p, {
+      return ew.enabled && (e = true), (0, r.jsx)(v.p, {
         showUpsell: e,
         text: e$(),
         button: z.intl.string(z.t.pj0XBN),
@@ -422,7 +428,7 @@ function ed(e) {
       })
     }
     return null
-  }, [e$, eF, ew, eU]), te = i.useCallback(e => {
+  }, [e$, eF, ew.enabled, eU]), te = i.useCallback(e => {
     var t;
     return (null == e ? true : e.item.type) !== L.vB.SOUND ? null : (0, r.jsx)(B.Z, {
       closePicker: g,
@@ -487,7 +493,6 @@ function ed(e) {
       rowHeight: et,
       sectionHeaderHeight: e0,
       sectionFooterHeight: e1,
-      listPadding: eB,
       itemNodeWidth: ea,
       gridNavigatorId: eR,
       renderEmptySearchState: eu,

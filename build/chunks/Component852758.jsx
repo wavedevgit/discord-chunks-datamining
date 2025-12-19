@@ -52,7 +52,7 @@ function T() {
   } = (0, Chunk442837.cj)([Chunk23434.Z, Chunk210887.Z], () => ({
     action: Chunk23434.Z.getAction(),
     theme: Chunk210887.Z.theme
-  })), T = Chunk1964.Z.getVerificationTypes(module), [O, N] = Chunk473749.useState(0), w = (0, Chunk110924.Z)(T);
+  })), T = Chunk1964.Z.getVerificationTypes(module), [O, N] = Chunk473749.useState(0), P = (0, Chunk110924.Z)(T);
   (0, Chunk213609.Z)({
     type: Chunk990547.ImpressionTypes.MODAL,
     name: Chunk990547.ImpressionNames.USER_ACTION_REQUIRED,
@@ -61,7 +61,7 @@ function T() {
       verification_types: T
     }
   }, {}, [T.toString()]);
-  let P = () => {
+  let w = () => {
     (0, Chunk809206.FD)(), (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
@@ -75,7 +75,7 @@ function T() {
   return Chunk473749.useEffect(() => (Chunk714338.Z.disable(), () => {
     Chunk714338.Z.enable()
   }), []), Chunk473749.useEffect(() => {
-    (null == w ? true : w[0]) === Chunk981631.PUi.PHONE && (null == T ? true : T[0]) === Chunk981631.PUi.EMAIL && (0, Chunk481060.ZDy)(async () => {
+    (null == P ? true : P[0]) === Chunk981631.PUi.PHONE && (null == T ? true : T[0]) === Chunk981631.PUi.EMAIL && (0, Chunk481060.ZDy)(async () => {
       let {
         default: e
       } = await require.e("84112").then(require.bind(require, 273352));
@@ -99,9 +99,9 @@ function T() {
     }, {
       modalKey: Chunk308569.HR,
       Layer: Chunk429142.ZP,
-      onCloseCallback: P
+      onCloseCallback: w
     })
-  }, [T, w]), (0, Chunk54381.jsx)(Chunk762756.Z, {
+  }, [T, P]), (0, Chunk54381.jsx)(Chunk762756.Z, {
     types: T,
     captchaKey: O,
     onCaptchaVerify: e => {
@@ -118,7 +118,7 @@ function T() {
     },
     theme: exports,
     onClick: e => {
-      e === C.PUi.EMAIL_OR_PHONE || e === C.PUi.EMAIL || e === C.PUi.REVERIFY_EMAIL ? P() : (0, o.ZDy)(async () => {
+      e === C.PUi.EMAIL_OR_PHONE || e === C.PUi.EMAIL || e === C.PUi.REVERIFY_EMAIL ? w() : (0, o.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));

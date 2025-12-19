@@ -35,13 +35,13 @@ let j = ["#51BC9D"],
     } = r.useContext(h.xo), {
       completionSpring: E,
       startCompletionAnimation: T
-    } = (0, x.GX)(), O = (null == (t = C.userStatus) ? true : t.completedAt) != null, N = r.useRef(false), w = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), P = r.useRef(null), I = (0, d.e7)([p.Z], () => p.Z.hasLayers()), k = (0, u.Z)(I), [R, A] = r.useState(null), [Z, D] = r.useState(null), L = r.useRef(new s.qA({
+    } = (0, x.GX)(), O = (null == (t = C.userStatus) ? true : t.completedAt) != null, N = r.useRef(false), P = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), w = r.useRef(null), I = (0, d.e7)([p.Z], () => p.Z.hasLayers()), k = (0, u.Z)(I), [R, A] = r.useState(null), [Z, D] = r.useState(null), L = r.useRef(new s.qA({
       gravity: 0,
       wind: 0
     })), M = (0, s.uR)(R, Z), U = r.useCallback(() => {
-      if (w) return;
+      if (P) return;
       let e = i.current,
-        t = P.current;
+        t = w.current;
       if (null != t && null != e && M.isReady) {
         var n, a, r, l, s, o;
         let {
@@ -116,7 +116,7 @@ let j = ["#51BC9D"],
           Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(o, e))
         }), s), 100)
       }
-    }, [i, P, M, w]), B = (0, u.Z)(_);
+    }, [i, w, M, P]), B = (0, u.Z)(_);
     return (r.useEffect(() => {
       O && _ && !B && (T(), U())
     }, [_, O, T, U, B]), r.useEffect(() => {
@@ -127,10 +127,10 @@ let j = ["#51BC9D"],
       M.isReady && (!N.current && O && (T(), U()), N.current = O)
     }, [O, N, U, T, M]), r.useEffect(() => {
       y && O && (T(), U())
-    }, [y, O, T, U]), w) ? null : (0, a.jsxs)("div", {
+    }, [y, O, T, U]), P) ? null : (0, a.jsxs)("div", {
       className: g.wrapper,
       "aria-hidden": "true",
-      ref: P,
+      ref: w,
       children: [(0, a.jsx)(c.animated.div, {
         className: g.background,
         style: {

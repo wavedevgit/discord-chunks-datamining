@@ -86,7 +86,7 @@ function C() {
     deleteFractionalPremium: T,
     triggerNextEntitlementFulfillment: O,
     entitlements: N,
-    loading: w
+    loading: P
   } = (0, Chunk232867.m)();
   return Chunk473749.useEffect(() => {
     S()
@@ -170,21 +170,21 @@ function C() {
           }), (0, Chunk54381.jsxs)("div", {
             className: Chunk557919.buttonGroup,
             children: [(0, Chunk54381.jsx)(Chunk755721.zx, {
-              disabled: w,
+              disabled: P,
               size: Chunk755721.zx.Sizes.TINY,
               color: Chunk755721.zx.Colors.PRIMARY,
               look: Chunk755721.zx.Looks.OUTLINED,
               onClick: () => O(),
               children: "Run fulfillment"
             }), (0, Chunk54381.jsx)(Chunk755721.zx, {
-              disabled: w,
+              disabled: P,
               size: Chunk755721.zx.Sizes.TINY,
               color: Chunk755721.zx.Colors.RED,
               look: Chunk755721.zx.Looks.OUTLINED,
               onClick: () => T(),
               children: "Delete all"
             }), (0, Chunk54381.jsx)(Chunk755721.zx, {
-              disabled: w,
+              disabled: P,
               look: Chunk755721.zx.Looks.BLANK,
               size: Chunk755721.zx.Sizes.ICON,
               onClick: S,

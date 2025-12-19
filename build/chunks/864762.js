@@ -10,7 +10,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk981631 = require("./981631.js");
 
 function o(e, t) {
-  let [a, o] = n.useState(l.O.LANDING), c = (0, r.Z)(a), [d, u] = n.useState(null), [x, m] = n.useState(null), [h, N] = n.useState(true), p = n.useCallback(() => {
+  let [a, o] = n.useState(l.O.LANDING), c = (0, i.Z)(a), [d, u] = n.useState(null), [x, m] = n.useState(null), [h, p] = n.useState(true), N = n.useCallback(() => {
     switch (a) {
       case l.O.LANDING:
         o(l.O.PRE_CONNECT);
@@ -22,14 +22,14 @@ function o(e, t) {
         o(l.O.PRE_CONNECT)
     }
   }, [a]), g = n.useCallback(e => {
-    u(null), N(e), o(l.O.ERROR)
+    u(null), p(e), o(l.O.ERROR)
   }, []), C = n.useCallback(e => {
     u(e), o(l.O.PRE_CONNECT_WAITING)
   }, []), j = n.useCallback(e => {
     u(null), m(e), o(l.O.DISCORD_CONSENT)
   }, []);
   return n.useEffect(() => {
-    a !== c && i.default.track(s.rMx.ACCOUNT_LINK_STEP, {
+    a !== c && r.default.track(s.rMx.ACCOUNT_LINK_STEP, {
       location_stack: e,
       previous_step: c,
       current_step: a,
@@ -37,7 +37,7 @@ function o(e, t) {
     })
   }, [a, c, e, t]), {
     slide: a,
-    gotoNext: p,
+    gotoNext: N,
     gotoError: g,
     handleWaitingForConnection: C,
     handleAuthToken: j,

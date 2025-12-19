@@ -58,7 +58,7 @@ function T(e) {
     afterRequest: d.stopAnimation
   }), {
     header: N,
-    renderBody: w
+    renderBody: P
   } = r.useMemo(() => {
     let e = C.length > 0,
       n = t.config.messages.gameTitle;
@@ -129,7 +129,7 @@ function T(e) {
       className: l()({
         [S.opacity_50]: T
       }),
-      children: [w(), 0 === C.length ? null : (0, a.jsx)(E, {
+      children: [P(), 0 === C.length ? null : (0, a.jsx)(E, {
         children: o
       })]
     })]

@@ -1,7 +1,7 @@
 /** Chunk was on 6043 **/
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => P,
+  default: () => w,
   openDevToolsPopout: () => T
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -50,7 +50,7 @@ function T() {
     windowKey: Chunk981631.KJ3.DEVTOOLS_POPOUT,
     title: "DevTools",
     withTitleBar: true,
-    children: (0, Chunk54381.jsx)(P, {
+    children: (0, Chunk54381.jsx)(w, {
       mobile: false,
       isPopout: true
     })
@@ -137,7 +137,7 @@ function N() {
   })
 }
 
-function w() {
+function P() {
   return (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.displayTools) ? (0, Chunk54381.jsx)("div", {
     className: l()(Chunk718728.container, Chunk718728.mobileContainerExpanded),
     children: (0, Chunk54381.jsx)("div", {
@@ -164,12 +164,12 @@ function w() {
   })
 }
 
-function P(e) {
+function w(e) {
   let {
     mobile: t,
     isPopout: n = false
   } = e;
-  return t ? (0, a.jsx)(w, {}) : n ? (0, a.jsx)("div", {
+  return t ? (0, a.jsx)(P, {}) : n ? (0, a.jsx)("div", {
     className: _.popoutContainer,
     children: (0, a.jsx)(O, {
       isPopout: true

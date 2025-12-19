@@ -13,7 +13,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk937889 = require("./937889.js"),
   Chunk28005 = require("./28005.js");
 
-function m(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,7 +32,7 @@ function m(e) {
   return e
 }
 
-function f(e) {
+function p(e) {
   var {
     icon: t
   } = e, n = function(e, t) {
@@ -52,24 +52,24 @@ function f(e) {
   }(e, ["icon"]);
   switch (t) {
     case "image":
-      return (0, r.jsx)(o.XBm, m({}, n));
+      return (0, r.jsx)(o.XBm, f({}, n));
     case "video":
-      return (0, r.jsx)(o.Odl, m({}, n));
+      return (0, r.jsx)(o.Odl, f({}, n));
     case "audio":
-      return (0, r.jsx)(o.RZG, m({}, n));
+      return (0, r.jsx)(o.RZG, f({}, n));
     case "attachment":
-      return (0, r.jsx)(o.Ujz, m({}, n));
+      return (0, r.jsx)(o.Ujz, f({}, n));
     case "link":
-      return (0, r.jsx)(o.xPt, m({}, n));
+      return (0, r.jsx)(o.xPt, f({}, n));
     case "sticker":
-      return (0, r.jsx)(o.SlE, m({}, n));
+      return (0, r.jsx)(o.SlE, f({}, n));
     case "call-active":
-      return (0, r.jsx)(o.Csw, m({}, n));
+      return (0, r.jsx)(o.Csw, f({}, n));
     case "call-ended":
-      return (0, r.jsx)(o.gkL, m({}, n))
+      return (0, r.jsx)(o.gkL, f({}, n))
   }
 }
-let p = Chunk473749.memo(function(e) {
+let m = Chunk473749.memo(function(e) {
     let {
       message: t
     } = e;
@@ -104,7 +104,7 @@ function y(e) {
   return "text" === l.type ? t = l.text : "markup" === l.type ? t = (0, r.jsx)(g, {
     markup: l.markup,
     channelId: i.channel_id
-  }) : "message" === l.type && (t = (0, r.jsx)(p, {
+  }) : "message" === l.type && (t = (0, r.jsx)(m, {
     message: l.message
   })), (0, r.jsxs)("div", {
     className: a()(d.messagePreviewLine, {
@@ -113,7 +113,7 @@ function y(e) {
     children: [(0, r.jsxs)("span", {
       className: d.messageContent,
       children: [null != o && "".concat(o, ": "), t]
-    }), null != c && (0, r.jsx)(f, {
+    }), null != c && (0, r.jsx)(p, {
       icon: c,
       size: "xs",
       color: "currentColor",

@@ -127,7 +127,7 @@ function W(e) {
     taskDetails: b
   } = r.useContext(Z.A), {
     expansionSpring: j
-  } = r.useContext(P.xo), C = r.useRef(null), S = (0, c.e7)([g.Z], () => g.Z.isEnrolling(o.id), [o]), E = r.useMemo(() => (0, _.fh)(o, _.eC.QUEST_BAR_HERO), [o]), T = (0, c.e7)([h.Z], () => h.Z.useReducedMotion), N = (0, y.CR)({
+  } = r.useContext(w.xo), C = r.useRef(null), S = (0, c.e7)([g.Z], () => g.Z.isEnrolling(o.id), [o]), E = r.useMemo(() => (0, _.fh)(o, _.eC.QUEST_BAR_HERO), [o]), T = (0, c.e7)([h.Z], () => h.Z.useReducedMotion), N = (0, y.CR)({
     quest: o
   }), I = r.useMemo(() => (0, _.fh)(o, _.eC.HERO_IMAGE), [o]), k = r.useMemo(() => null == I ? {} : {
     backgroundImage: "url(".concat(I.url, ")")
@@ -171,7 +171,7 @@ function W(e) {
             loading: S,
             text: N,
             size: "sm",
-            icon: (0, w.getPrimaryCtaIcon)(o),
+            icon: (0, P.getPrimaryCtaIcon)(o),
             fullWidth: true
           })
         })]
@@ -254,10 +254,10 @@ function q(e) {
     isExpanded: u
   } = r.useContext(Z.A), {
     expansionSpring: m
-  } = r.useContext(P.xo), p = (null == (t = c.userStatus) ? true : t.completedAt) != null, h = d.percentComplete > 0, f = (0, C.z)(c), [x, g, j] = (0, C.me)(c, d), y = r.useRef(null), _ = r.useRef(null), T = (0, C._s)({
+  } = r.useContext(w.xo), p = (null == (t = c.userStatus) ? true : t.completedAt) != null, h = d.percentComplete > 0, f = (0, C.z)(c), [x, g, j] = (0, C.me)(c, d), y = r.useRef(null), _ = r.useRef(null), T = (0, C._s)({
     quest: c
   }), O = (0, E.q8)(c), N = (0, C.Jf)(c), G = r.useCallback(() => {
-    (0, w.openVideoQuestModal)({
+    (0, P.openVideoQuestModal)({
       quest: c,
       questContent: v.jn.QUEST_BAR_V2,
       sourceQuestContent: v.jn.QUEST_BAR_V2,
@@ -325,7 +325,7 @@ function q(e) {
   })
 }
 async function Y(e, t, n, a) {
-  return (0, E.q8)(e) ? void await (0, w.enrollAndStartVideoQuestWithErrorHandling)(e, {
+  return (0, E.q8)(e) ? void await (0, P.enrollAndStartVideoQuestWithErrorHandling)(e, {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: a,
@@ -353,7 +353,7 @@ let Q = Chunk473749.forwardRef(function(e, t) {
     quest: p
   } = r.useContext(Z.A), {
     expansionSpring: h
-  } = r.useContext(P.xo), {
+  } = r.useContext(w.xo), {
     launchInGameActivity: f
   } = (0, C.zB)(p), x = (0, T.Rt)(p), g = r.useCallback(async () => {
     let e = x ? b.jZ.START_QUEST : b.jZ.ACCEPT_QUEST;

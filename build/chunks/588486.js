@@ -13,7 +13,7 @@ var Chunk230367 = require("./230367.js"),
   Chunk381499 = require("./381499.js"),
   Chunk835913 = require("./835913.js"),
   u = function(e) {
-    return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.USER = 1] = "USER", e
+    return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.USER = 1] = "USER", e[e.INSTALLATION = 2] = "INSTALLATION", e
   }({}),
   d = function(e) {
     return e[e.SURFACE_UNSPECIFIED = 0] = "SURFACE_UNSPECIFIED", e[e.API = 1] = "API", e[e.APP = 2] = "APP", e[e.DEVELOPER_PORTAL = 3] = "DEVELOPER_PORTAL", e[e.ADMIN_PANEL = 4] = "ADMIN_PANEL", e[e.ADS_BUDGET_AB = 5] = "ADS_BUDGET_AB", e

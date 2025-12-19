@@ -14,20 +14,20 @@ let l = function(e) {
     icon: l
   } = e;
   return (0, n.jsxs)("div", {
-    className: i.valueProp,
+    className: r.valueProp,
     children: [(0, n.jsx)("div", {
-      className: i.valuePropIconContainer,
+      className: r.valuePropIconContainer,
       children: (0, n.jsx)(l, {
         size: "md",
         color: "currentColor"
       })
     }), (0, n.jsxs)("div", {
-      className: i.valuePropText,
-      children: [(0, n.jsx)(r.Text, {
+      className: r.valuePropText,
+      children: [(0, n.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-default",
         children: t
-      }), null != a && (0, n.jsx)(r.Text, {
+      }), null != a && (0, n.jsx)(i.Text, {
         variant: "text-xs/normal",
         color: "text-subtle",
         children: a

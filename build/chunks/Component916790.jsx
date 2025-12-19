@@ -30,10 +30,10 @@ var Chunk54381 = require("./54381.js"),
   Chunk461015 = require("./461015.js"),
   Chunk663618 = require("./663618.js");
 
-function w(e) {
+function P(e) {
   return parseFloat(e.toFixed(3))
 }
-let P = [{
+let w = [{
   key: "store",
   cellClassName: Chunk461015.actionColumn,
   render(e) {
@@ -49,7 +49,7 @@ let P = [{
     let {
       trace: t
     } = e;
-    return "".concat(w(t.time), " ms")
+    return "".concat(P(t.time), " ms")
   }
 }];
 
@@ -62,7 +62,7 @@ function I(e) {
   })), [t]);
   return (0, a.jsx)(p.zJl, {
     children: (0, a.jsx)(S.Z, {
-      columns: P,
+      columns: w,
       data: n
     })
   })
@@ -88,7 +88,7 @@ let k = [{
           })
         }), (0, a.jsxs)(C.Z9, {
           name: "Total Time",
-          children: [w(n.totalTime), " ms"]
+          children: [P(n.totalTime), " ms"]
         })]
       }), (0, a.jsx)(p.zJl, {
         className: O.inspectorContainer,
@@ -208,7 +208,7 @@ let A = [{
       let {
         actionLog: t
       } = e;
-      return "".concat(w(t.totalTime), " ms")
+      return "".concat(P(t.totalTime), " ms")
     }
   }, {
     key: "timestamp",

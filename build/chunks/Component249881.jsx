@@ -2,63 +2,60 @@
 /** chunk id: 249881, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  t: () => f
+  t: () => d
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk536780 = require("./536780.js");
-let d = e => {
+let u = e => {
     let {
       markAsDismissed: t
     } = e;
-    return i.useEffect(() => t(l.L.UNKNOWN), [t]), (0, r.jsx)(o.IGR, {
-      className: u.newBadge,
-      text: c.intl.string(c.t.y2b7CA)
+    return i.useEffect(() => t(s.L.UNKNOWN), [t]), (0, r.jsx)(a.IGR, {
+      className: c.newBadge,
+      text: l.intl.string(l.t.y2b7CA)
     })
   },
-  f = e => {
+  d = e => {
     let {
       title: t,
       body: n,
       img: i,
-      newIndicatorDismissibleContent: l,
-      onClick: f
+      newIndicatorDismissibleContent: s,
+      onClick: d
     } = e;
     return (0, r.jsxs)("div", {
-      className: u.container,
+      className: c.container,
       children: [i, (0, r.jsxs)("div", {
-        className: u.textContainer,
+        className: c.textContainer,
         children: [(0, r.jsxs)("div", {
-          className: u.headerText,
-          children: [(0, r.jsx)(s.ZP, {
-            contentTypes: [l],
+          className: c.headerText,
+          children: [(0, r.jsx)(o.ZP, {
+            contentTypes: [s],
             children: e => {
               let {
                 visibleContent: t,
                 markAsDismissed: n
               } = e;
-              return t === l ? (0, r.jsx)(d, {
+              return t === s ? (0, r.jsx)(u, {
                 markAsDismissed: n
               }) : null
             }
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(a.Text, {
             variant: "text-md/semibold",
             children: t
           })]
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           children: n
         })]
-      }), (0, r.jsx)(a.zx, {
-        size: a.Ph.MEDIUM,
-        onClick: f,
-        className: u.reconnectButton,
-        children: c.intl.string(c.t.vD60Pv)
+      }), (0, r.jsx)(a.Button, {
+        text: l.intl.string(l.t.vD60Pv),
+        onClick: d
       })]
     })
   }

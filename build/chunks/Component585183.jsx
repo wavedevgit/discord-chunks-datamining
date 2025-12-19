@@ -1,7 +1,7 @@
 /** Chunk was on 51343 **/
 /** chunk id: 585183, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
-  h: () => p
+  h: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,48 +15,48 @@ var Chunk54381 = require("./54381.js"),
   Chunk424071 = require("./424071.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk926375 = require("./926375.js");
-let N = new Chunk710845.Z("TwoWayLinkDiscordConsentWeb");
+let p = new Chunk710845.Z("TwoWayLinkDiscordConsentWeb");
 
-function p(e) {
+function N(e) {
   let {
     platformType: t,
     clientId: a,
-    scopes: i,
+    scopes: r,
     authToken: d,
-    onContinue: p,
+    onContinue: N,
     onError: g,
     onClose: C,
     redirectUri: j
-  } = e, [v, f] = r.useState(false), b = r.useCallback(async e => {
+  } = e, [v, f] = i.useState(false), k = i.useCallback(async e => {
     let a, n, {
-        location: r
+        location: i
       } = e,
       {
-        callbackCode: i,
+        callbackCode: r,
         callbackState: l
       } = d;
     try {
-      a = await o.Z.completeTwoWayLink(t, r, i, l)
+      a = await o.Z.completeTwoWayLink(t, i, r, l)
     } catch (e) {
       var s;
-      N.error("".concat(t, " link error:"), e), n = null == (s = e.body) ? true : s.code
+      p.error("".concat(t, " link error:"), e), n = null == (s = e.body) ? true : s.code
     }
-    null != a ? p() : g(n)
-  }, [t, d, p, g]), {
-    header: k,
+    null != a ? N() : g(n)
+  }, [t, d, N, g]), {
+    header: b,
     body: E,
     appDetails: T,
     sendAuthorize: O
   } = (0, u.useOAuth2AuthorizeForm)({
     clientId: a,
-    scopes: i,
+    scopes: r,
     responseType: "code",
-    callback: b,
+    callback: k,
     isTrustedName: true,
     isEmbeddedFlow: true,
     redirectUri: j,
     isTwoWayLinkDiscordConsent: true
-  }), R = r.useCallback(() => {
+  }), w = i.useCallback(() => {
     l()(null != O, "sendAuthorize not available"), f(true), O(true)
   }, [O]);
   return (0, n.jsxs)(x.Z, {
@@ -83,7 +83,7 @@ function p(e) {
       paddingFix: false,
       children: [(0, n.jsx)("div", {
         className: h.consentHeader,
-        children: k
+        children: b
       }), E, T]
     }), (0, n.jsx)(s.mzw, {
       "data-migration-pending": true,
@@ -95,7 +95,7 @@ function p(e) {
           variant: "primary",
           text: m.intl.string(m.t.ZN4hkc),
           loading: v,
-          onClick: R
+          onClick: w
         })
       })
     })]

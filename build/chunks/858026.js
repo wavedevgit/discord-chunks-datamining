@@ -1,7 +1,7 @@
 /** Chunk was on 23242 **/
 /** chunk id: 858026, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk473749 = require("./473749.js"),
   Chunk699758 = require("./699758.js");
@@ -38,20 +38,20 @@ function a(e, t) {
   }), e
 }
 
-function o(e) {
+function s(e) {
   var t;
   let {
     claimableVariants: n,
-    defaultSelection: o,
-    selectedGiftingPromotionReward: s,
+    defaultSelection: s,
+    selectedGiftingPromotionReward: o,
     setSelectedGiftingPromotionReward: u,
     hasUserMadeSelection: c
-  } = e, d = null != n && n.length > 0, [p, m] = r.useState(null != (t = null == o ? true : o.defaultCategory) ? t : l.KN.Trick), h = r.useRef(p), f = r.useMemo(() => d ? n.flatMap(e => e.variants.length < l.mo ? [] : a(i({}, e.variants[p]), {
+  } = e, d = null != n && n.length > 0, [p, m] = r.useState(null != (t = null == s ? true : s.defaultCategory) ? t : l.KN.Trick), h = r.useRef(p), f = r.useMemo(() => d ? n.flatMap(e => e.variants.length < l.mo ? [] : a(i({}, e.variants[p]), {
     name: e.name
-  })) : [], [n, p, d]), g = r.useMemo(() => null != s && f.some(e => e.skuId === s.skuId), [f, s]);
+  })) : [], [n, p, d]), g = r.useMemo(() => null != o && f.some(e => e.skuId === o.skuId), [f, o]);
   if (r.useEffect(() => {
-      d && ((null == o ? true : o.defaultCategory) == null || c || m(o.defaultCategory))
-    }, [null == o ? true : o.defaultCategory, c, d]), r.useEffect(() => {
+      d && ((null == s ? true : s.defaultCategory) == null || c || m(s.defaultCategory))
+    }, [null == s ? true : s.defaultCategory, c, d]), r.useEffect(() => {
       d && (h.current === p || g || u(true), h.current = p)
     }, [p, g, u, d]), !d) return null;
   let y = n.length > 1;

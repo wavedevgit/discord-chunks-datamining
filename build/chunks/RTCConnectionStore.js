@@ -279,8 +279,8 @@ function W(e) {
 function K(e) {
   let {
     streamId: t,
-    width: n,
-    height: i
+    dimensions: n,
+    zoom: i
   } = e;
   null == r || r.setVideoSize(t, n, i)
 }

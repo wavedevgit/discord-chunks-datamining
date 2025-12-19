@@ -1,7 +1,7 @@
 /** Chunk was on 23242 **/
 /** chunk id: 400981, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -12,6 +12,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk607070 = require("./607070.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk821982 = require("./821982.js"),
+  Chunk583434 = require("./583434.js"),
   Chunk832149 = require("./832149.jsx"),
   Chunk600164 = require("./600164.jsx"),
   Chunk4242 = require("./4242.js"),
@@ -22,54 +23,58 @@ var Chunk54381 = require("./54381.js"),
   Chunk215023 = require("./215023.js"),
   Chunk350928 = require("./350928.js");
 
-function O(e) {
+function S(e) {
   let {
-    onClose: t,
-    selectedPromotionalDecoPurchaseRecord: n,
-    selectedGiftingPromotionReward: O
-  } = e, S = (0, a.e7)([y.default], () => y.default.getCurrentUser()), P = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), {
-    analyticsLocations: x
-  } = (0, c.ZP)(), E = s.EFr.SIZE_32, w = (0, d.Z)(null == O ? true : O.assetId, E, !P), I = (0, g.Z)(), T = null == I ? true : I.giftPurchaseConfirmation, k = (null == O ? true : O.type) === i.Z.NAMEPLATE, [C, N] = l.useState(false), M = l.useMemo(() => {
-    var e, t;
-    return k && (null == O ? true : O.assetId) != null ? {
-      src: O.assetId,
-      palette: (0, h.t1)(null != (t = O.palette) ? t : "sky"),
-      imgAlt: null == (e = O.a11yLabel) ? true : e.call(O)
+    reward: t,
+    purchase: n,
+    onClose: S
+  } = e, x = (0, a.e7)([j.default], () => j.default.getCurrentUser()), P = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), {
+    analyticsLocations: E
+  } = (0, c.ZP)(), w = o.EFr.SIZE_32, I = (0, d.Z)(t.assetId, w, !P), T = (0, y.Z)(), k = null == T ? true : T.giftPurchaseConfirmation, {
+    product: C,
+    isFetching: N
+  } = (0, p.T)(n.skuId), M = t.type === i.Z.NAMEPLATE, [_, A] = l.useState(false), R = l.useMemo(() => {
+    var e, n;
+    return M && null != t.assetId ? {
+      src: t.assetId,
+      palette: (0, f.t1)(null != (n = t.palette) ? n : "sky"),
+      imgAlt: null == (e = t.a11yLabel) ? true : e.call(t)
     } : null
-  }, [k, O]);
-  return null == n || null == T ? null : (0, r.jsx)(j.O3, {
-    children: (0, r.jsx)(s.mzw, {
-      align: m.Z.Align.CENTER,
+  }, [M, t]);
+  return null == k ? null : (0, r.jsx)(v.O3, {
+    children: (0, r.jsx)(o.mzw, {
+      align: h.Z.Align.CENTER,
       "data-migration-pending": true,
       children: (0, r.jsxs)("div", {
-        className: b.promotionalFooter,
-        children: [k && null != M ? (0, r.jsx)("div", {
-          className: b.nameplatePreviewContainer,
-          onMouseEnter: () => N(true),
-          onMouseLeave: () => N(false),
-          children: (0, r.jsx)(f.R, {
-            user: S,
+        className: O.promotionalFooter,
+        children: [M && null != R ? (0, r.jsx)("div", {
+          className: O.nameplatePreviewContainer,
+          onMouseEnter: () => A(true),
+          onMouseLeave: () => A(false),
+          children: (0, r.jsx)(g.R, {
+            user: x,
             nameplate: null,
-            nameplateData: M,
+            nameplateData: R,
             showPlaceholderUser: true,
             nameplatePreviewSize: "xsmall",
-            isHighlighted: C
+            isHighlighted: _
           })
-        }) : (0, r.jsx)(s.Xo$, {
-          "aria-label": null == S ? true : S.username,
-          size: E,
-          src: null == S ? true : S.getAvatarURL(true, (0, s.dcp)(E), !P),
-          avatarDecoration: w
-        }), (0, r.jsx)(o.zxk, {
+        }) : (0, r.jsx)(o.Xo$, {
+          "aria-label": null == x ? true : x.username,
+          size: w,
+          src: null == x ? true : x.getAvatarURL(true, (0, o.dcp)(w), !P),
+          avatarDecoration: I
+        }), (0, r.jsx)(s.zxk, {
           variant: "primary",
-          text: T.collectRewardButtonText(),
+          text: k.collectRewardButtonText(),
+          loading: N,
           onClick: () => {
-            t(), (0, p.Z)({
-              product: n,
+            null != C && (S(), (0, m.Z)({
+              product: C,
               shouldShowPromotionalExperience: true,
-              analyticsLocations: x,
-              purchaseType: v.o8.PROMOTIONAL
-            })
+              analyticsLocations: E,
+              purchaseType: b.o8.PROMOTIONAL
+            }))
           }
         })]
       })

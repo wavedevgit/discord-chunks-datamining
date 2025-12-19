@@ -59,7 +59,7 @@ function y() {
     removeToolsCache: O
   } = (0, Chunk396821.L3)(), {
     setImgCache: N
-  } = (0, Chunk396821.W_)(), w = (0, Chunk473749.useCallback)(e => {
+  } = (0, Chunk396821.W_)(), P = (0, Chunk473749.useCallback)(e => {
     let t = y[e];
     null != t && x({
       src: t.url,
@@ -73,7 +73,7 @@ function y() {
       src: e,
       preview: true
     }))
-  }, [y]), P = (0, Chunk473749.useCallback)(e => {
+  }, [y]), w = (0, Chunk473749.useCallback)(e => {
     x(t => null == t ? null : j(v({}, t), {
       palette: e,
       preview: true
@@ -106,7 +106,7 @@ function y() {
         children: [require && (0, Chunk54381.jsx)(Chunk329013.i, {}), Chunk276264 && (0, Chunk54381.jsx)(Chunk711325.Z, {
           selected: null == Chunk996746 || null == (e = Chunk996746.palette) ? true : module.name,
           onSelect: e => {
-            (null == h ? true : h.src) != null && T(h.src, h.src, e), P(e)
+            (null == h ? true : h.src) != null && T(h.src, h.src, e), w(e)
           }
         })]
       })]
@@ -137,13 +137,13 @@ function y() {
             } = e;
             return (0, a.jsx)(_, {
               src: t,
-              onSetStatic: w,
+              onSetStatic: P,
               removeAsset: I
             }, t)
           })
         }), (0, Chunk54381.jsx)(E, {
           label: "gradient override",
-          onChange: e => P({
+          onChange: e => w({
             name: m._j,
             darkBackground: e,
             lightBackground: e

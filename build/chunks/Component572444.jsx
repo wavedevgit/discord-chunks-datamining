@@ -104,8 +104,8 @@ function _() {
   let {
     name: e
   } = (0, Chunk72897.p6)(Chunk65154.h7.AUDIO_INPUT), [t, n] = Chunk473749.useState(false), [i, l] = Chunk473749.useState([]), y = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getKrispSuppressionLevel()), [_, S] = Chunk473749.useState(null), E = Chunk473749.useRef(null), T = Chunk473749.useRef(null), [O, N] = Chunk473749.useState(.5), {
-    krispModels: w,
-    krispModelOverride: P,
+    krispModels: P,
+    krispModelOverride: w,
     inputMode: I,
     echoCancellation: k,
     autoThreshold: R,
@@ -195,8 +195,8 @@ function _() {
           clear: () => {
             Chunk846027.Z.setKrispModelOverride("")
           },
-          isSelected: e => e === P,
-          options: w.map(e => ({
+          isSelected: e => e === w,
+          options: P.map(e => ({
             label: e,
             value: e
           })),

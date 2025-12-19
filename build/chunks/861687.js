@@ -336,11 +336,7 @@ class eN extends Chunk47770.Z {
   }
   setVideoSize(e, t, n) {
     var r, i;
-    null == (r = this._localMediaSinkWantsManager) || r.setVideoSize(e, t * n), null == (i = this._goLiveQualityManager) || i.setVideoSize(e, t, n)
-  }
-  setVideoZoom(e, t) {
-    var n;
-    null == (n = this._goLiveQualityManager) || n.setVideoZoom(e, t)
+    null == t || (0, Y.isAndroid)() || (0, Y.isIOS)() || null == (i = this._localMediaSinkWantsManager) || i.setVideoSize(e, t.width * t.height), null == (r = this._goLiveQualityManager) || r.setVideoSize(e, t, n)
   }
   clearJoinVoiceId() {
     this.joinVoiceId = null

@@ -118,8 +118,8 @@ function ec(e) {
     eT = (0, b.p)(),
     eO = F.Sb.useSetting(),
     eN = (0, ee.I)(eC),
-    ew = (0, Y.g)(n),
-    eP = (0, v.Z)({
+    eP = (0, Y.g)(n),
+    ew = (0, v.Z)({
       analyticsLocations: ex
     }),
     eI = (0, W.I5)(t),
@@ -156,8 +156,8 @@ function ec(e) {
       ez(ea.L.USER_DISMISS), n()
     }, [ez, n]),
     eq = r.useCallback(() => {
-      ep && null != em || (eP(), eK())
-    }, [eP, eK, ep, em]),
+      ep && null != em || (ew(), eK())
+    }, [ew, eK, ep, em]),
     eY = ep && null != em,
     eQ = (0, q.K)(em, ex, eW, n, eK),
     eX = (0, _.k)({
@@ -190,7 +190,7 @@ function ec(e) {
           themeType: er.l.POPOUT,
           children: [(0, a.jsxs)("div", {
             className: es.header,
-            children: [(0, a.jsx)(P.Z, {
+            children: [(0, a.jsx)(w.Z, {
               user: t,
               displayProfile: ef,
               themeType: er.l.POPOUT
@@ -219,7 +219,7 @@ function ec(e) {
               nickname: z.ZP.getName(em, null, t),
               onOpenProfile: eh ? true : eB,
               pronouns: null == ef ? true : ef.pronouns,
-              tags: (0, a.jsx)(w.Z, {
+              tags: (0, a.jsx)(P.Z, {
                 displayProfile: ef,
                 themeType: er.l.POPOUT,
                 onClose: n,
@@ -366,7 +366,7 @@ function ec(e) {
                         navId: "switch-accounts-submenu",
                         "aria-label": ei.intl.string(ei.t.wFhVqL),
                         onClose: t,
-                        children: ew
+                        children: eP
                       })
                     }
                   }), !__OVERLAY__ && H.wS && eO && (0, a.jsx)(X.V4, {

@@ -30,12 +30,12 @@ let g = Chunk473749.forwardRef(function(e, t) {
     taskDetails: C,
     isExpanded: _,
     isExpansionAnimationComplete: S
-  } = r.useContext(p.A), E = (null == (n = y.userStatus) ? true : n.completedAt) != null, T = (0, c.Jf)(y), O = r.useRef(null), N = (null == (i = y.userStatus) ? true : i.enrolledAt) != null, w = null != T ? T.percentComplete : C.percentComplete, [P, I] = r.useState(false);
+  } = r.useContext(p.A), E = (null == (n = y.userStatus) ? true : n.completedAt) != null, T = (0, c.Jf)(y), O = r.useRef(null), N = (null == (i = y.userStatus) ? true : i.enrolledAt) != null, P = null != T ? T.percentComplete : C.percentComplete, [w, I] = r.useState(false);
   return (0, a.jsxs)(a.Fragment, {
     children: [E && (0, a.jsx)(m.Z, {
       overlayRef: v,
       progressBarRef: O,
-      isHovered: P
+      isHovered: w
     }), (0, a.jsx)(s.animated.div, {
       ref: t,
       "aria-hidden": _ && S,
@@ -62,7 +62,7 @@ let g = Chunk473749.forwardRef(function(e, t) {
           contentLocation: "collapsed",
           progressBarRef: O,
           isExpanded: false,
-          percentComplete: w
+          percentComplete: P
         }) : null, E && (0, a.jsx)(u.r, {
           isExpanded: false,
           awaitingConsoleConnections: false,

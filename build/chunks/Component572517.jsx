@@ -35,13 +35,13 @@ function h() {
     S = (0, Chunk717401.Tl)(O, {
       colorStops: [0, 12, 100]
     }),
-    P = (0, Chunk717401.$q)(b, S, {
+    x = (0, Chunk717401.$q)(b, S, {
       backgroundSize: "cover, auto",
       backgroundPosition: "right center, 0% 0%"
     });
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk325117.promotionalFooterBanner,
-    style: P,
+    style: x,
     children: [(0, Chunk54381.jsx)("div", {
       className: Chunk325117.avatar,
       children: (0, Chunk54381.jsx)(Chunk897942.Z, {

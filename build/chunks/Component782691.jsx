@@ -63,7 +63,7 @@ let C = {
       effect: t
     } = e, {
       upsertConfig: n
-    } = (0, h.n6)(), i = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = r.useState(true), T = r.useRef({}), [O, N] = r.useState(false), [w, P] = r.useState(false), [I, k] = r.useState([]), [R, A] = r.useState(C), Z = r.useRef([]), [D, L] = r.useState(t.name), M = D.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
+    } = (0, h.n6)(), i = (0, o.e7)([p.default], () => p.default.getCurrentUser()), [S, E] = r.useState(true), T = r.useRef({}), [O, N] = r.useState(false), [P, w] = r.useState(false), [I, k] = r.useState([]), [R, A] = r.useState(C), Z = r.useRef([]), [D, L] = r.useState(t.name), M = D.toLowerCase().replace(/\s+/g, "_"), U = r.useMemo(() => ({
       id: _,
       skuId: _,
       title: _,
@@ -214,10 +214,10 @@ let C = {
                 children: "Show User Profile"
               }), (0, a.jsx)("input", {
                 type: "checkbox",
-                checked: w,
+                checked: P,
                 className: b.checkBox,
                 onChange: () => {
-                  P(!w)
+                  w(!P)
                 }
               })]
             })]
@@ -358,7 +358,7 @@ let C = {
               })]
             })]
           }), (0, a.jsx)("div", {
-            children: w && (0, a.jsxs)("div", {
+            children: P && (0, a.jsxs)("div", {
               className: l()(b.userProfilePreview, b.preview),
               children: [(0, a.jsx)(m.Z, {
                 user: i,

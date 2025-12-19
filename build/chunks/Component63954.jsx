@@ -294,13 +294,13 @@ function V() {
       children: (0, Chunk54381.jsx)(Chunk916028.Z, {
         onSelect: function(e) {
           J(e), null != e && (W(function(e) {
-            if (null == e.userStatus) return P.a.UNENROLLED;
-            if (null != e.userStatus.claimedAt) return P.a.CLAIMED;
-            if (null != e.userStatus.completedAt) return P.a.COMPLETED_100;
+            if (null == e.userStatus) return w.a.UNENROLLED;
+            if (null != e.userStatus.claimedAt) return w.a.CLAIMED;
+            if (null != e.userStatus.completedAt) return w.a.COMPLETED_100;
             let t = (0, f.il)(e),
               n = t.progressSeconds,
               a = t.targetSeconds;
-            return n / a >= 1 ? P.a.COMPLETED_100 : n / a >= .75 ? P.a.COMPLETED_75 : n / a >= .5 ? P.a.COMPLETED_50 : n / a >= .25 ? P.a.COMPLETED_25 : P.a.ENROLLED
+            return n / a >= 1 ? w.a.COMPLETED_100 : n / a >= .75 ? w.a.COMPLETED_75 : n / a >= .5 ? w.a.COMPLETED_50 : n / a >= .25 ? w.a.COMPLETED_25 : w.a.ENROLLED
           }(e)), H(e))
         },
         quest: X
@@ -510,19 +510,19 @@ function V() {
       }), (0, Chunk54381.jsx)(Chunk899457.Z, {
         onChange: function(e) {
           switch (W(e), e) {
-            case P.a.UNENROLLED:
+            case w.a.UNENROLLED:
               H(D(Z({}, F), {
                 userStatus: null
               }));
               break;
-            case P.a.ENROLLED:
+            case w.a.ENROLLED:
               H(D(Z({}, F), {
                 userStatus: B({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
-            case P.a.COMPLETED_25:
+            case w.a.COMPLETED_25:
               H(D(Z({}, F), {
                 userStatus: B({
                   enrolledAt: new Date().toISOString(),
@@ -530,7 +530,7 @@ function V() {
                 })
               }));
               break;
-            case P.a.COMPLETED_50:
+            case w.a.COMPLETED_50:
               H(D(Z({}, F), {
                 userStatus: B({
                   enrolledAt: new Date().toISOString(),
@@ -538,7 +538,7 @@ function V() {
                 })
               }));
               break;
-            case P.a.COMPLETED_75:
+            case w.a.COMPLETED_75:
               H(D(Z({}, F), {
                 userStatus: B({
                   enrolledAt: new Date().toISOString(),
@@ -546,7 +546,7 @@ function V() {
                 })
               }));
               break;
-            case P.a.COMPLETED_100:
+            case w.a.COMPLETED_100:
               H(D(Z({}, F), {
                 userStatus: B({
                   completedAt: new Date().toISOString(),
@@ -555,7 +555,7 @@ function V() {
                 })
               }));
               break;
-            case P.a.CLAIMED:
+            case w.a.CLAIMED:
               H(D(Z({}, F), {
                 userStatus: B({
                   claimedAt: new Date().toISOString(),

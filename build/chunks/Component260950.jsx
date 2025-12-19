@@ -83,7 +83,7 @@ function S() {
         },
         rejectWithError: false
       }), await T()
-    }, w = async () => {
+    }, P = async () => {
       await Chunk544891.tn.del({
         url: "/debug/subscription",
         rejectWithError: false
@@ -136,7 +136,7 @@ function S() {
           variant: "primary",
           size: "sm",
           text: "End All Subscriptions",
-          onClick: w
+          onClick: P
         })
       }), O.length > 0 && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {

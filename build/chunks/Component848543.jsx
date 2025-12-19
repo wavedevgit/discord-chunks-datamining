@@ -130,6 +130,7 @@ function A(e) {
       targetElementRef: A,
       text: Z ? N.intl.string(N.t["Ox4/zU"]) : w ? N.intl.string(N.t["+YBKYI"]) : L ? N.intl.string(N.t.X1lQli) : N.intl.string(N.t["6EJvHt"]),
       asContainer: true,
+      shouldShow: !D,
       children: (0, r.jsx)(p.yRy, {
         targetElementRef: A,
         animation: p.yRy.Animation.FADE,

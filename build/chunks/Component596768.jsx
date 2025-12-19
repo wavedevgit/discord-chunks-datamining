@@ -140,25 +140,25 @@ function N() {
     renderSelectedTab: v
   } = (0, Chunk621060.ZP)({
     tabs: O
-  }, []), N = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), w = Chunk473749.useCallback(e => {
+  }, []), N = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk473749.useCallback(e => {
     h.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
     })
-  }, []), P = N ? "Stop Tracking" : "Start Tracking";
+  }, []), w = N ? "Stop Tracking" : "Start Tracking";
   return (0, Chunk54381.jsxs)("div", {
     ref: require,
     className: l()(Chunk663618.panel, Chunk865362.panel),
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk865362.toolbar,
       children: [(0, Chunk54381.jsx)(Chunk681715.u, {
-        text: P,
+        text: w,
         children: (0, Chunk54381.jsx)(Chunk481060.hU, {
           size: "sm",
           variant: N ? "active" : "primary",
           icon: N ? Chunk481060.fpf : Chunk481060.o1U,
-          "aria-label": P,
-          onClick: () => w(!N)
+          "aria-label": w,
+          onClick: () => P(!N)
         })
       }), (0, Chunk54381.jsx)(Chunk481060.E1j, {
         size: "sm",

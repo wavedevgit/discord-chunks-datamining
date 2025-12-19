@@ -19,12 +19,11 @@ let E = (0, Chunk509613.ON)(Chunk313789.n.APPEARANCE_CLIENT_THEMES, {
     let t = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useForcedColors);
     return (0, Chunk54381.jsx)(Chunk481060.C3N, {
       label: Chunk388032.intl.string(Chunk388032.t.Ksh3ik),
-      children: module ? (0, Chunk54381.jsx)(Chunk481060.Wn, {
-        messageType: Chunk481060.QYI.INFO,
+      children: module ? (0, Chunk54381.jsx)(Chunk481060.M14, {
+        type: "info",
         children: (0, Chunk627845.b)() ? (0, Chunk54381.jsx)(Chunk501348.hU, {}) : Chunk388032.intl.string(Chunk388032.t.AUMSZP)
-      }) : (0, Chunk54381.jsx)(Chunk481060.xJW, {
-        title: (0, Chunk54381.jsx)(Chunk501348.n6, {}),
-        children: (0, Chunk54381.jsx)(Chunk329013.i, {})
+      }) : (0, Chunk54381.jsxs)("div", {
+        children: [(0, Chunk54381.jsx)(Chunk501348.n6, {}), (0, Chunk54381.jsx)(Chunk329013.i, {})]
       })
     })
   }

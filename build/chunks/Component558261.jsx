@@ -78,7 +78,7 @@ let R = e => {
       textOptions: {
         textOverride: null != n ? n : I.intl.string(I.t.sEAnVH)
       },
-      subscriptionTier: P.Si.TIER_2,
+      subscriptionTier: w.Si.TIER_2,
       showGradient: true
     })
   },
@@ -139,7 +139,7 @@ let R = e => {
       null == o || o("claim premium product button"), await (0, x.fK)(t.skuId), (0, N.Z)({
         product: t,
         analyticsLocations: i,
-        purchaseType: w.o8.PREMIUM_PURCHASE
+        purchaseType: P.o8.PREMIUM_PURCHASE
       })
     };
     return (0, a.jsx)(l.Button, {
@@ -164,7 +164,7 @@ let R = e => {
     return (0, a.jsx)(l.Button, {
       variant: "primary",
       text: I.intl.format(I.t["4NKuqc"], {
-        orbPrice: w.As,
+        orbPrice: P.As,
         orbIconHook: () => (0, a.jsx)(m.Z, {
           className: k.orbIconAligned
         })
@@ -193,7 +193,7 @@ let R = e => {
               product: t,
               analyticsLocations: n,
               itemConsumed: null == (i = l[0]) ? true : i.consumed,
-              purchaseType: w.o8.ORB,
+              purchaseType: P.o8.ORB,
               rentalDuration: o,
               rentalExpiresAt: s
             })
@@ -202,7 +202,7 @@ let R = e => {
         })
       },
       "aria-label": I.intl.formatToPlainString(I.t.DlNs2T, {
-        orbPrice: w.As
+        orbPrice: P.As
       }),
       fullWidth: true
     })
@@ -241,7 +241,7 @@ let R = e => {
               product: t,
               analyticsLocations: i,
               itemConsumed: null == (n = a[0]) ? true : n.consumed,
-              purchaseType: w.o8.ORB
+              purchaseType: P.o8.ORB
             })
           },
           analyticsLocations: i
@@ -280,8 +280,8 @@ let R = e => {
       isPurchased: g,
       isPartiallyOwnedBundle: S
     } = (0, C.L)(t), E = (0, v.G1)(t), N = (0, v.rN)(t), {
-      isDisabled: w
-    } = (0, y.G)(t.skuId), P = (0, v.ne)({
+      isDisabled: P
+    } = (0, y.G)(t.skuId), w = (0, v.ne)({
       product: t,
       isPartiallyOwnedBundle: S,
       isPurchased: g
@@ -312,7 +312,7 @@ let R = e => {
       isClaimPremiumProductDisabled: q,
       text: c
     });
-    if (!P || w) return (0, a.jsx)(Z, {
+    if (!w || P) return (0, a.jsx)(Z, {
       handlePreviewButtonClick: W,
       text: c
     });

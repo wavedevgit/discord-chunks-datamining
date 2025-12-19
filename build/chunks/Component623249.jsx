@@ -36,10 +36,10 @@ function T(e) {
     transitionState: y,
     onClose: T,
     sourceQuestContent: N
-  } = e, [w, P] = (0, r.useState)(i), I = (0, b.KX)(), k = (0, h.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), A = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), Z = (0, C.g2)({
+  } = e, [P, w] = (0, r.useState)(i), I = (0, b.KX)(), k = (0, h.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), A = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), Z = (0, C.g2)({
     useReducedMotion: A,
     className: E.colorTransition
-  }), D = w.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.Bz)(n), M = (0, o.e7)([p.Z], () => p.Z.getState().theme), U = (0, d.wj)(M) ? _.BR.DARK : _.BR.LIGHT, {
+  }), D = P.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.Bz)(n), M = (0, o.e7)([p.Z], () => p.Z.getState().theme), U = (0, d.wj)(M) ? _.BR.DARK : _.BR.LIGHT, {
     startConsoleQuest: B,
     startingConsoleQuest: F
   } = (0, b.GI)({
@@ -53,7 +53,7 @@ function T(e) {
       })
     },
     afterRequest: e => {
-      Z.stopAnimation(), P(e)
+      Z.stopAnimation(), w(e)
     }
   });
   return (0, a.jsx)(s.Modal, {

@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => $
+  Z: () => J
 }), require("./388685.js");
 var i, Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
@@ -141,7 +141,7 @@ function G(e) {
     let e = new p.A({
       streamRegion: i,
       streamApplication: C[t],
-      streamSourceType: X(N[t]),
+      streamSourceType: Q(N[t]),
       actionContext: null == (l = T[t]) ? true : l.appContext,
       numViewers: null != a ? a.length : 0,
       goLiveModalDurationMs: P[t],
@@ -240,8 +240,8 @@ function z(e) {
 function q(e) {
   let {
     streamId: t,
-    width: n,
-    height: r
+    dimensions: n,
+    zoom: r
   } = e;
   l().forEach(D, e => {
     null == e || e.setVideoSize(t, n, r)
@@ -249,16 +249,6 @@ function q(e) {
 }
 
 function Q(e) {
-  let {
-    streamId: t,
-    zoom: n
-  } = e;
-  l().forEach(D, e => {
-    null == e || e.setVideoZoom(t, n)
-  })
-}
-
-function X(e) {
   var t, n, r;
   if (null == e) return "unknown";
   if (g.isPlatformEmbedded || (null == (t = platform) ? true : t.name) === "Chrome") {
@@ -271,7 +261,7 @@ function X(e) {
   else if ((null == (r = platform) ? true : r.name) === "Safari") return "window";
   return "unknown"
 }
-class J extends(i = Chunk442837.ZP.Store) {
+class X extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk131951.Z, Chunk19780.Z, Chunk594190.ZP)
   }
@@ -342,8 +332,8 @@ class J extends(i = Chunk442837.ZP.Store) {
     return null == r ? true : r.get(t)
   }
 }
-I(J, "displayName", "StreamRTCConnectionStore");
-let $ = new J(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : {
+I(X, "displayName", "StreamRTCConnectionStore");
+let J = new X(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : {
   CONNECTION_OPEN: j,
   CONNECTION_CLOSED: M,
   RTC_CONNECTION_STATE: Y,
@@ -361,6 +351,5 @@ let $ = new J(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : 
   MEDIA_ENGINE_CONNECTION_STATS: F,
   STREAM_LAYOUT_UPDATE: H,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: z,
-  VIDEO_SIZE_UPDATE: q,
-  VIDEO_ZOOM_UPDATE: Q
+  VIDEO_SIZE_UPDATE: q
 })

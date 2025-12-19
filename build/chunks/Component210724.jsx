@@ -119,7 +119,7 @@ function G(e) {
     }), ea.current = true, eE({
       withDelay: true
     })
-  }, [eE, i]), ew = r.useCallback(() => {
+  }, [eE, i]), eP = r.useCallback(() => {
     var e;
     (0, x.dA)({
       questId: i.id,
@@ -133,22 +133,22 @@ function G(e) {
     }), ea.current = false, eO()
   }, [eO, i]);
   r.useEffect(() => {
-    el && ew()
-  }, [el, ew]), r.useLayoutEffect(() => {
+    el && eP()
+  }, [el, eP]), r.useLayoutEffect(() => {
     Y && !Q && ea.current && ev()
   }, [ev, Y, Q]), r.useLayoutEffect(() => {
     X || !Y || Q || ea.current || eg(false)
   }, [Y, X, Q, eg]), r.useLayoutEffect(() => {
     ee !== et.current && ep(false), et.current = ee
   }, [ee]);
-  let eP = Y ? L.XZ : L.R4,
+  let ew = Y ? L.XZ : L.R4,
     [{
       expansionSpring: eI
     }, ek] = (0, d.q_F)(() => ({
       from: {
         expansionSpring: 0
       },
-      config: eP,
+      config: ew,
       onRest: () => {
         eu(true)
       },
@@ -251,7 +251,7 @@ function G(e) {
         }), (0, a.jsx)(F, {})]
       }), (0, a.jsx)(s.animated.div, {
         "aria-hidden": !ee,
-        onMouseLeave: ew,
+        onMouseLeave: eP,
         onMouseEnter: eN,
         onFocus: eT,
         onBlur: eO,
@@ -271,9 +271,9 @@ function G(e) {
             [U.contentWrapperAccepted]: Y
           }),
           children: (0, a.jsx)(R.t, {
-            springConfig: eP,
+            springConfig: ew,
             isExpanded: eo,
-            children: (0, a.jsx)(P.iQ, {
+            children: (0, a.jsx)(w.iQ, {
               expandedContentRef: eh,
               collapsedContentRef: ef,
               expansionSpring: eI,
@@ -297,7 +297,7 @@ function G(e) {
                   overlayRef: ex,
                   ref: eh,
                   children: (0, a.jsxs)(a.Fragment, {
-                    children: [(0, a.jsx)(D.Z, {}), !Y && (0, a.jsx)(w.Z, {})]
+                    children: [(0, a.jsx)(D.Z, {}), !Y && (0, a.jsx)(P.Z, {})]
                   })
                 }), (0, a.jsx)("div", {
                   ref: ex,

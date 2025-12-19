@@ -135,7 +135,7 @@ let _ = e => {
     })
   },
   S = () => {
-    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [S, E] = Chunk473749.useState(false), [T, O] = Chunk473749.useState(5e3), [N, w] = Chunk473749.useState(false), P = Chunk473749.useRef(null), I = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), k = (0, Chunk848984.u)(), [R] = Chunk473749.useState(() => (0, Chunk773275.o8)({
+    let [e, t] = Chunk473749.useState(false), [n, s] = Chunk473749.useState(false), [S, E] = Chunk473749.useState(false), [T, O] = Chunk473749.useState(5e3), [N, P] = Chunk473749.useState(false), w = Chunk473749.useRef(null), I = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), k = (0, Chunk848984.u)(), [R] = Chunk473749.useState(() => (0, Chunk773275.o8)({
       finishSetup: async () => true,
       perkAvailableToUser: k
     })), {
@@ -363,16 +363,16 @@ let _ = e => {
           }), (0, Chunk54381.jsx)(Chunk159691.zxk, {
             text: "Show exit modal",
             onClick: () => {
-              w(true)
+              P(true)
             }
           }), N && (0, Chunk54381.jsx)(Chunk720553.default, {
             url: "https://www.discord.com",
             trustUrl: () => false,
-            onCancel: () => w(false),
+            onCancel: () => P(false),
             isProtocol: false,
             onConfirm: () => {},
             onClose: async () => {
-              w(false)
+              P(false)
             },
             transitionState: Chunk481060.Dvm.ENTERED
           })]
@@ -383,7 +383,7 @@ let _ = e => {
           }), (0, Chunk54381.jsx)(_, {
             onSuccess: () => {
               var e;
-              null == (e = P.current) || module.refresh()
+              null == (e = w.current) || module.refresh()
             }
           })]
         }), (0, Chunk54381.jsxs)(Chunk261538.$0, {
@@ -391,7 +391,7 @@ let _ = e => {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk WARP License Info"
           }), (0, Chunk54381.jsx)(C, {
-            ref: P
+            ref: w
           })]
         })]
       })]

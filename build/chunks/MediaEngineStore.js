@@ -786,8 +786,10 @@ function t9() {
     S.Z.wait(() => S.Z.dispatch({
       type: "VIDEO_SIZE_UPDATE",
       streamId: e,
-      width: t,
-      height: n
+      dimensions: {
+        width: t,
+        height: n
+      }
     }))
   }), n1(), n2(), e4.supports(Chunk65154.AN.ASYNC_CLIPS_SOURCE_DEINIT) && e4.setAsyncClipsSourceDeinit((0, Chunk502450.C)("setupMediaEngine").enabled), na.reset(), (0, Chunk704806.q)().then(e => {
     null != e && (tF = e.gpu_brand)

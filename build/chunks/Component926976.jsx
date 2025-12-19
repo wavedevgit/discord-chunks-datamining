@@ -48,7 +48,7 @@ let N = [{
   }
 }];
 
-function w(e) {
+function P(e) {
   let {
     children: t
   } = e;
@@ -60,7 +60,7 @@ function w(e) {
   })
 }
 
-function P(e) {
+function w(e) {
   let {
     name: t,
     children: n,
@@ -182,7 +182,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
               children: i
             })
           })]
-        }), (0, a.jsx)(w, {
+        }), (0, a.jsx)(P, {
           children: Object.entries(n).map(e => {
             let [n, r] = e, i = I.has(n) ? ((e, t, n) => {
               let a = e.filter(e => e.event === t);
@@ -202,7 +202,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
               }
             })(c, t, n) : null;
             return (0, a.jsxs)("div", {
-              children: [(0, a.jsx)(P, {
+              children: [(0, a.jsx)(w, {
                 name: "".concat(n, ":"),
                 copyValue: {
                   [n]: r || null
@@ -213,7 +213,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
                   className: T.emptyProperty,
                   children: "null"
                 })
-              }, n), null !== i && null !== i.average && (0, a.jsx)(P, {
+              }, n), null !== i && null !== i.average && (0, a.jsx)(w, {
                 name: "".concat(n, "_avg:"),
                 copyValue: {
                   [n]: r || null
@@ -284,8 +284,8 @@ function Z() {
     [b, g] = Chunk473749.useState(true),
     y = Chunk594174.find(e => e.key === b),
     {
-      TabBar: w,
-      renderSelectedTab: P
+      TabBar: P,
+      renderSelectedTab: w
     } = (0, Chunk621060.ZP)({
       tabs: k
     }, []);
@@ -340,7 +340,7 @@ function Z() {
       className: Chunk865362.subPanel,
       minHeight: 100,
       initialHeight: null != module.current ? module.current.clientHeight / 2 : 300,
-      children: [(0, Chunk54381.jsx)(w, {}), P({
+      children: [(0, Chunk54381.jsx)(P, {}), w({
         loggedEvent: Chunk257785,
         onClose: () => Chunk55935(true),
         filteredEvents: Chunk594174

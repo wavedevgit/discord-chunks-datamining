@@ -182,7 +182,7 @@ function w(e) {
       } = e, c = O(e, ["setPopoutRef", "position", "nudge"]);
       return ee(i), a !== K.current && (K.current = a, null == k || k(a)), er((e, i) => {
         if (!i) return null;
-        let a = (0, r.jsx)(l.VqE, y(E({}, c), {
+        let u = (0, r.jsx)(l.VqE, y(E({}, c), {
           setDialogRef: t,
           modal: G,
           className: o()(null != L ? h.popoverContentWithGradient : h.popover, {
@@ -200,14 +200,15 @@ function w(e) {
           style: y(E({}, e), {
             "--custom-caret-edge-offset-horizontal": "".concat(I, "px"),
             "--custom-caret-edge-offset-vertical": "".concat(T, "px"),
+            "--custom-caret-edge-offset-horizontal-nudge": "".concat(a, "px"),
             "--custom-popover-width": "".concat(C, "px")
           }),
           children: null != L ? (0, r.jsx)(l.$1m, {
             offsetBottom: j,
             color: L,
             className: h.popoverGradientWrapper,
-            children: a
-          }) : a
+            children: u
+          }) : u
         })
       })
     };
