@@ -40,7 +40,7 @@ function T() {
         let t = x.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
-          label: null != t ? (0, h.F6)(t, g.default, b.Z) : e.channelId
+          label: null != t ? (0, f.F6)(t, g.default, b.Z) : e.channelId
         }
       })
     })),
@@ -50,7 +50,7 @@ function T() {
       let t = (0, Chunk95015.x9)(null != (e = l.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
       Chunk258732.Z.updatePrivateChannelRecipientFlags(l.id, exports)
     }, [l]),
-    y = null != l && !!l.isPrivate() && (0, Chunk95015.yE)(null != (e = l.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+    C = null != l && !!l.isPrivate() && (0, Chunk95015.yE)(null != (e = l.recipientFlags) ? module : 0, Chunk602715.V.DISMISSED_IN_GAME_MESSAGE_NUX);
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/semibold",

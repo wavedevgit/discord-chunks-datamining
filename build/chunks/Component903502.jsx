@@ -1,7 +1,7 @@
 /** Chunk was on 6043 **/
 /** chunk id: 903502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,7 +14,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk246992 = require("./246992.js"),
   Chunk531578 = require("./531578.js"),
   Chunk746234 = require("./746234.js");
-let h = [{
+let f = [{
   label: "second(s)",
   value: 1e3
 }, {
@@ -28,11 +28,11 @@ let h = [{
   value: 864e5
 }];
 
-function f() {
-  let [e, t] = Chunk473749.useState(null), [n, f] = Chunk473749.useState(0), [x, b] = Chunk473749.useState(1e3), [g, v] = Chunk473749.useState(0), j = (0, Chunk442837.e7)([Chunk115470.Z], () => {
+function h() {
+  let [e, t] = Chunk473749.useState(null), [n, h] = Chunk473749.useState(0), [x, b] = Chunk473749.useState(1e3), [g, v] = Chunk473749.useState(0), j = (0, Chunk442837.e7)([Chunk115470.Z], () => {
     var t;
     return null === module ? null : null != (t = Chunk115470.Z.getFeedbackConfig(Chunk531578.nw[module])) ? exports : Chunk178635.R[Chunk531578.nw[module]]
-  }), y = Object.entries(Chunk531578.nw), C = y.slice(y.length / 2).map(e => {
+  }), C = Object.entries(Chunk531578.nw), y = C.slice(C.length / 2).map(e => {
     let [t] = e;
     return {
       label: t,
@@ -45,7 +45,7 @@ function f() {
       gap: 32,
       children: [(0, Chunk54381.jsx)(Chunk199849.y6, {
         label: "Feedback Survey",
-        options: C,
+        options: y,
         value: module,
         onChange: e => {
           t(e)
@@ -80,9 +80,9 @@ function f() {
             value: require.toString(),
             type: "number",
             placeholder: "Duration length",
-            onChange: e => f(parseFloat(e))
+            onChange: e => h(parseFloat(e))
           }), (0, Chunk54381.jsx)(Chunk199849.y6, {
-            options: h,
+            options: f,
             value: x,
             onChange: e => {
               b(e)

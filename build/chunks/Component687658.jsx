@@ -1,7 +1,7 @@
 /** Chunk was on 6043 **/
 /** chunk id: 687658, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -19,7 +19,7 @@ let p = (0, Chunk972959.H)(() => ({
   subsection: true
 }));
 
-function h() {
+function f() {
   let e = p.useField("setting"),
     t = p.useField("section"),
     n = p.useField("subsection"),
@@ -29,11 +29,11 @@ function h() {
         subsection: require
       })
     }, [module, exports, require]),
-    h = Chunk473749.useMemo(() => Object.values(Chunk313789.n).map(e => ({
+    f = Chunk473749.useMemo(() => Object.values(Chunk313789.n).map(e => ({
       label: e,
       value: e
     })), []),
-    f = Chunk473749.useMemo(() => Object.values(Chunk981631.oAB).map(e => ({
+    h = Chunk473749.useMemo(() => Object.values(Chunk981631.oAB).map(e => ({
       label: e,
       value: e
     })), []);
@@ -46,7 +46,7 @@ function h() {
       onChange: e => p.setState({
         setting: e
       }),
-      options: h,
+      options: f,
       popoutLayerContext: Chunk246992.O$
     }), (0, Chunk54381.jsx)(Chunk668339.d, {
       label: "Setting Section (Legacy)",
@@ -54,7 +54,7 @@ function h() {
       onChange: e => p.setState({
         section: e
       }),
-      options: f,
+      options: h,
       popoutLayerContext: Chunk246992.O$
     }), (0, Chunk54381.jsx)(Chunk481060.oil, {
       label: "Setting Subsection (Legacy)",

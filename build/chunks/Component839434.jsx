@@ -224,13 +224,13 @@ class es extends(i = Chunk473749.PureComponent) {
         }),
         children: [(0, Chunk54381.jsx)(Chunk481060.Vni, {
           size: "custom",
-          color: Chunk692547.Z.unsafe_rawColors.WHITE_500.css,
+          color: Chunk692547.Z.unsafe_rawColors.WHITE.css,
           width: 20,
           height: 20,
           className: o()(Chunk732113.icon, Chunk732113.faded, Chunk732113.dragIcon)
         }), (0, Chunk54381.jsx)(Chunk481060.gj8, {
           size: "custom",
-          color: Chunk692547.Z.unsafe_rawColors.WHITE_500.css,
+          color: Chunk692547.Z.unsafe_rawColors.WHITE.css,
           width: 20,
           height: 20,
           className: o()(Chunk732113.icon, Chunk732113.faded, Chunk732113.speakerIcon)

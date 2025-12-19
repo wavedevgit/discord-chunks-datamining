@@ -55,7 +55,7 @@ let x = (0, Chunk663993.Un)({
 });
 
 function j(e) {
-  return (0, s.Bd)(e) > .25 ? o.Z.unsafe_rawColors.WHITE_500.css : o.Z.unsafe_rawColors.PRIMARY_530.css
+  return (0, s.Bd)(e) > .25 ? o.Z.unsafe_rawColors.WHITE.css : o.Z.unsafe_rawColors.PRIMARY_530.css
 }
 
 function v(e) {

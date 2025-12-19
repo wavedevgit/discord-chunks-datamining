@@ -178,7 +178,7 @@ let z = Chunk473749.forwardRef(function(e, t) {
     Z = (0, m.dQu)(_.Z.unsafe_rawColors.PRIMARY_300).hsl(),
     V = null != (s = E.colorString) ? s : Z,
     H = null != (l = (0, f.wK)(V, .6)) ? l : true,
-    Y = _.Z.unsafe_rawColors.WHITE_500.css,
+    Y = _.Z.unsafe_rawColors.WHITE.css,
     W = (0, f._i)(V);
   null != W && .3 > (0, f.Bd)(W) && (Y = _.Z.unsafe_rawColors.PRIMARY_630.css), c = j ? (0, r.jsx)(y.Z, {
     className: k.roleFlowerStar,

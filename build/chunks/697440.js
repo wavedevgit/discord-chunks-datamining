@@ -1,10 +1,10 @@
-/** Chunk was on 23032 **/
+/** Chunk was on 23706 **/
 /** chunk id: 697440, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => a
+  Z: () => n
 });
-let a = {
+let n = {
   scheme: "solarized",
   author: "ethan schoonover (http://ethanschoonover.com/solarized)",
   base00: "#002b36",

@@ -24,7 +24,7 @@ function m(e) {
   } = e, m = (0, i.e7)([s.Z], () => s.Z.isAdvancedMode(t)), b = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [p, h] = (0, o.VF)(t, b), [x, j] = (0, d.OA)(t, [...b]), v = m ? j.length : h.length, O = m ? x.length : p.length, C = O >= u.X, y = j.length - h.length, N = (0, r.jsx)(a.owK, {
     size: "sm",
     color: l.Z.unsafe_rawColors.BRAND_500.css,
-    secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css,
+    secondaryColor: l.Z.unsafe_rawColors.WHITE.css,
     className: f.icon
   }), E = (0, r.jsx)(a.k$p, {
     size: "sm",

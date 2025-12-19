@@ -35,7 +35,7 @@ function g(e) {
     isAdopting: n,
     onAdoptTag: r,
     onEditProfile: i
-  } = (0, h.Z)(e.guild.id, () => t(f.L.TAKE_ACTION)), c = [{
+  } = (0, f.Z)(e.guild.id, () => t(h.L.TAKE_ACTION)), c = [{
     text: x.intl.string(x.t.jwEaiX),
     loading: n,
     onClick: r,
@@ -64,7 +64,7 @@ function g(e) {
       body: x.intl.string(x.t.DrAXIr),
       actions: c,
       size: "md",
-      onRequestClose: () => t(f.L.USER_DISMISS)
+      onRequestClose: () => t(h.L.USER_DISMISS)
     })]
   })
 }
@@ -78,13 +78,13 @@ function v(e) {
       lastSeenInfo: {
         tag: e.guild.profile.tag
       }
-    }), (0, d.Qd)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guild.id, true, f.L.DISMISS), null == (n = e.onDismiss) || n.call(e, t)
+    }), (0, d.Qd)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guild.id, true, h.L.DISMISS), null == (n = e.onDismiss) || n.call(e, t)
   }
   let {
     isAdopting: n,
     onAdoptTag: r,
     onEditProfile: c
-  } = (0, h.Z)(e.guild.id, () => t(f.L.TAKE_ACTION)), u = [{
+  } = (0, f.Z)(e.guild.id, () => t(h.L.TAKE_ACTION)), u = [{
     text: x.intl.string(x.t.jwEaiX),
     loading: n,
     onClick: r,
@@ -113,7 +113,7 @@ function v(e) {
       body: x.intl.string(x.t.DrAXIr),
       actions: u,
       size: "md",
-      onRequestClose: () => t(f.L.USER_DISMISS)
+      onRequestClose: () => t(h.L.USER_DISMISS)
     })]
   })
 }

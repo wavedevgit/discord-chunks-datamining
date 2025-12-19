@@ -29,7 +29,7 @@ function g(e) {
     }), t ? (0, r.jsx)(c.owK, {
       size: "md",
       color: "currentColor",
-      secondaryColor: o.Z.unsafe_rawColors.WHITE_500.css,
+      secondaryColor: o.Z.unsafe_rawColors.WHITE.css,
       className: a()(u.rowIcon, u.rowIconChecked)
     }) : (0, r.jsx)("div", {
       className: a()(u.rowIcon, u.rowIconEmpty)

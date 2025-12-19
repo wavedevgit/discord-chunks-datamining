@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk393951 = require("./393951.js"),
   Chunk319796 = require("./319796.js");
 let p = Chunk692547.Z.unsafe_rawColors.PRIMARY_300,
-  _ = Chunk692547.Z.unsafe_rawColors.WHITE_500,
+  _ = Chunk692547.Z.unsafe_rawColors.WHITE,
   m = Chunk692547.Z.unsafe_rawColors.PRIMARY_630;
 
 function h(e) {

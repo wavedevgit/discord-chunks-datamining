@@ -1,4 +1,4 @@
-/** Chunk was on 23032 **/
+/** Chunk was on 23706 **/
 /** chunk id: 913731, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -18,8 +18,8 @@ function l(e) {
 }
 var f = function(e) {
   var t = e.data,
-    r = (0, n.Z)(e, u);
-  return o.createElement(c.Z, (0, a.Z)({}, r, {
+    r = (0, a.Z)(e, u);
+  return o.createElement(c.Z, (0, n.Z)({}, r, {
     data: t,
     nodeType: "Object",
     nodeTypeIndicator: "Error" === r.nodeType ? "Error()" : "{}",

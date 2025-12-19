@@ -33,31 +33,31 @@ function T(e) {
   let {
     quest: n,
     errorHints: i,
-    transitionState: y,
+    transitionState: C,
     onClose: T,
     sourceQuestContent: N
-  } = e, [P, w] = (0, r.useState)(i), I = (0, b.KX)(), k = (0, h.O5)(), R = null == (t = (0, f.WD)()) ? true : t.getId(), A = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), Z = (0, C.g2)({
+  } = e, [P, w] = (0, r.useState)(i), I = (0, b.KX)(), k = (0, f.O5)(), R = null == (t = (0, h.WD)()) ? true : t.getId(), A = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), D = (0, y.g2)({
     useReducedMotion: A,
     className: E.colorTransition
-  }), D = P.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.Bz)(n), M = (0, o.e7)([p.Z], () => p.Z.getState().theme), U = (0, d.wj)(M) ? _.BR.DARK : _.BR.LIGHT, {
+  }), Z = P.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), L = (0, j.Bz)(n), M = (0, o.e7)([p.Z], () => p.Z.getState().theme), U = (0, d.wj)(M) ? _.BR.DARK : _.BR.LIGHT, {
     startConsoleQuest: B,
     startingConsoleQuest: F
   } = (0, b.GI)({
     questId: n.id,
     beforeRequest: () => {
-      Z.startAnimation(), k({
+      D.startAnimation(), k({
         questId: n.id,
         questContent: x.jn.CONNECTIONS_MODAL,
-        questContentCTA: h.jZ.DEFIBRILLATOR,
+        questContentCTA: f.jZ.DEFIBRILLATOR,
         sourceQuestContent: N
       })
     },
     afterRequest: e => {
-      Z.stopAnimation(), w(e)
+      D.stopAnimation(), w(e)
     }
   });
   return (0, a.jsx)(s.Modal, {
-    transitionState: y,
+    transitionState: C,
     onClose: T,
     title: S.intl.string(S.t.W5lmKt),
     subtitle: I.message,
@@ -67,7 +67,7 @@ function T(e) {
         quest: n
       }, {
         content: x.jn.CONNECTIONS_MODAL,
-        ctaContent: h.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
+        ctaContent: f.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
         impressionId: R,
         sourceQuestContent: N
       })),
@@ -89,7 +89,7 @@ function T(e) {
             [E.disabled]: F
           }),
           onClick: B,
-          children: [Z.render(), (0, a.jsx)(u.Text, {
+          children: [D.render(), (0, a.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
             className: E.colorTransition,
@@ -108,7 +108,7 @@ function T(e) {
             size: "sm"
           }),
           text: S.intl.string(S.t.XF4wuA),
-          errors: L ? true : D.map(e => e.message),
+          errors: L ? true : Z.map(e => e.message),
           gameTile: L ? (0, a.jsx)(c.u, {
             "aria-label": n.config.messages.gameTitle,
             __unsupportedReactNodeAsText: (0, a.jsxs)("div", {
@@ -189,7 +189,7 @@ function N(e) {
       default: t
     } = await Promise.resolve().then(n.bind(n, 623249));
     return function(n) {
-      return (0, a.jsx)(y.A, {
+      return (0, a.jsx)(C.A, {
         overrideVisibility: true,
         questOrQuests: e.quest,
         questContent: x.jn.CONNECTIONS_MODAL,

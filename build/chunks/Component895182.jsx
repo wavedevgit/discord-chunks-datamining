@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk914010 = require("./914010.js"),
   Chunk510726 = require("./510726.js");
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -34,7 +34,7 @@ function h(e) {
   return e
 }
 
-function f(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function x() {
       null != x && null != e && o.Z.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
         guildId: e,
-        instance: f(h({}, x), {
+        instance: h(f({}, x), {
           status: t
         })
       })
@@ -78,7 +78,7 @@ function x() {
       null != x && null != module && Chunk570140.Z.dispatch({
         type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
         guildId: module,
-        instance: f(h({}, x), {
+        instance: h(f({}, x), {
           serverIP: true,
           port: true,
           gameServerPanelUrl: true

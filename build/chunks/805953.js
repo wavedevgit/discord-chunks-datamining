@@ -1,5 +1,5 @@
-/** Chunk was on 50751 **/
-/** chunk id: 805953, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 27278 **/
+/** chunk id: 805953, original params: e,n,t (module,exports,require) **/
 module.exports = {
   recentChannelsMenu: "_711d3bfd02a655e2-recentChannelsMenu",
   recentChannelsMenuHeader: "_711d3bfd02a655e2-recentChannelsMenuHeader",

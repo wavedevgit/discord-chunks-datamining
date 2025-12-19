@@ -1,7 +1,7 @@
 /** Chunk was on 6043 **/
 /** chunk id: 926976, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => D
 }), require("./388685.js"), require("./49124.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -107,7 +107,7 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
         },
         onClose: s,
         filteredEvents: c
-      } = e, d = x.default.getUser(i), h = o()(r);
+      } = e, d = x.default.getUser(i), f = o()(r);
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, a.jsxs)(p.ZP, {
@@ -159,23 +159,23 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
             tooltip: "Close",
             onClick: s
           })]
-        }), (0, a.jsxs)(y.E, {
+        }), (0, a.jsxs)(C.E, {
           className: T.commonProperties,
-          children: [(0, a.jsx)(y.Z9, {
+          children: [(0, a.jsx)(C.Z9, {
             name: "Timestamp (local)",
             copyValue: r.toISOString(),
             children: (0, a.jsxs)("time", {
               dateTime: r.toISOString(),
-              title: (0, g.vc)(h, "LLLL"),
-              children: ["(", o().locale(), ") ", (0, g.Y4)(h)]
+              title: (0, g.vc)(f, "LLLL"),
+              children: ["(", o().locale(), ") ", (0, g.Y4)(f)]
             })
-          }), null != d && (0, a.jsx)(y.Z9, {
+          }), null != d && (0, a.jsx)(C.Z9, {
             name: "User",
             copyValue: d.id,
             children: (0, a.jsx)(m.Z, {
               user: d
             })
-          }), (0, a.jsx)(y.Z9, {
+          }), (0, a.jsx)(C.Z9, {
             name: "Fingerprint",
             copyValue: i,
             children: (0, a.jsx)("code", {
@@ -266,13 +266,13 @@ let I = new Set(["client_performance_cpu", "client_performance_memory"]),
     throttleMs: 100
   };
 
-function Z() {
+function D() {
   let e = Chunk473749.useRef(null),
     [t, n] = Chunk473749.useState(""),
     i = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.loggedEventsVersion),
     [s, o] = Chunk473749.useState(() => Object.keys(R)),
     [m, p] = Chunk473749.useState(Chunk120816.Z.loggedEvents),
-    h = Chunk473749.useCallback(e => {
+    f = Chunk473749.useCallback(e => {
       p(e)
     }, []);
   (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, A, [Chunk120356]);
@@ -282,7 +282,7 @@ function Z() {
       returnfalse
     }),
     [b, g] = Chunk473749.useState(true),
-    y = Chunk594174.find(e => e.key === b),
+    C = Chunk594174.find(e => e.key === b),
     {
       TabBar: P,
       renderSelectedTab: w

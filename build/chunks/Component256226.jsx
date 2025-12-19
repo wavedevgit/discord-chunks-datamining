@@ -117,7 +117,7 @@ let N = Chunk473749.forwardRef(function(e, t) {
     B = (0, p.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(),
     V = null != (v = R.colorString) ? v : B,
     H = null != (I = (0, l.wK)(V, .6)) ? I : true,
-    Y = u.Z.unsafe_rawColors.WHITE_500.css,
+    Y = u.Z.unsafe_rawColors.WHITE.css,
     W = (0, l._i)(V);
   null != W && .3 > (0, l.Bd)(W) && (Y = u.Z.unsafe_rawColors.PRIMARY_630.css);
   let K = (0, E._f)(D, R, R.colorStrings);

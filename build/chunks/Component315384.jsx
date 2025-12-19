@@ -19,17 +19,17 @@ let u = "/users/@me/debug/consumables/",
 
 function p() {
   let e, [t, n] = (0, Chunk473749.useState)([]),
-    [p, h] = (0, Chunk473749.useState)(null),
-    [f, x] = (0, Chunk473749.useState)(false);
+    [p, f] = (0, Chunk473749.useState)(null),
+    [h, x] = (0, Chunk473749.useState)(false);
   return (0, Chunk473749.useEffect)(() => ((async () => {
     try {
       let e = (await Chunk544891.tn.get(u)).body.entitlements.map(e => c.Z.createFromServer(e));
       require(module)
     } catch (e) {
-      h("Failed to fetch entitlements")
+      f("Failed to fetch entitlements")
     }
   })(), () => {
-    require([]), h(null)
+    require([]), f(null)
   }), []), (0, Chunk54381.jsx)("div", {
     className: Chunk462914.panel,
     children: null != p ? (0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -53,7 +53,7 @@ function p() {
               r = new Chunk959546.Z(Chunk54381.body.entitlement);
             require([...exports, Chunk473749])
           } catch (e) {
-            h("Failed to create entitlement")
+            f("Failed to create entitlement")
           } finally {
             x(false)
           }
@@ -62,7 +62,7 @@ function p() {
         look: Chunk755721.iL.OUTLINED,
         color: Chunk755721.Tt.PRIMARY,
         children: "Create Confetti Entitlement"
-      }), f && (0, Chunk54381.jsx)(Chunk481060.$jN, {})]
+      }), h && (0, Chunk54381.jsx)(Chunk481060.$jN, {})]
     }) : (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsxs)("div", {
         className: Chunk462914.title,

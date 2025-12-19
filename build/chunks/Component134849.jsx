@@ -20,30 +20,30 @@ var Chunk54381 = require("./54381.js"),
   Chunk782621 = require("./782621.js");
 let y = [];
 
-function O(e) {
+function E(e) {
   return e.notification.id
 }
 
 function v(e, t, n, r) {
   let {
-    index: a,
-    notification: l,
-    locked: o,
+    index: l,
+    notification: o,
+    locked: a,
     pinned: s
   } = t;
   return (0, i.jsx)(d.Z, {
-    index: a,
-    notification: l,
-    locked: o,
+    index: l,
+    notification: o,
+    locked: a,
     pinned: s,
     transitionState: n,
     cleanUp: r
   }, e)
 }
 
-function E(e) {
+function b(e) {
   return (0, i.jsx)("div", {
-    className: b.container,
+    className: O.container,
     children: e
   })
 }
@@ -52,11 +52,11 @@ let S = Chunk473749.memo(function(e) {
     locked: t,
     pinned: n,
     showEmpty: d = true
-  } = e, b = (0, a.e7)([h.Z, s.Z], () => {
-    if (s.Z.isNotificationDisabled(p.n0.TextChat)) return y;
+  } = e, O = (0, l.e7)([p.Z, s.Z], () => {
+    if (s.Z.isNotificationDisabled(f.n0.TextChat)) return y;
     let e = [],
       i = 0;
-    for (let r of h.Z.getNotifications()) {
+    for (let r of p.Z.getNotifications()) {
       if (i > 4) break;
       (!t || r.status !== m._1z.TIMED_OUT) && (e.push({
         index: i,
@@ -66,18 +66,18 @@ let S = Chunk473749.memo(function(e) {
       }), i++)
     }
     return e
-  }, [t, n], c.E6), S = r.useState(() => new f.AS(t))[0];
-  return (r.useLayoutEffect(() => S.updateState(b, t)), r.useLayoutEffect(() => (S.initialize((0, u.i)()), () => S.cleanUp()), [S]), 0 !== b.length || t) ? (0, i.jsx)(f.S4.Provider, {
+  }, [t, n], u.E6), S = r.useState(() => new h.AS(t))[0];
+  return (r.useLayoutEffect(() => S.updateState(O, t)), r.useLayoutEffect(() => (S.initialize((0, c.i)()), () => S.cleanUp()), [S]), 0 !== O.length || t) ? (0, i.jsx)(h.S4.Provider, {
     value: S,
-    children: (0, i.jsx)(l.W3x, {
-      items: b,
+    children: (0, i.jsx)(o.W3x, {
+      items: O,
       renderItem: v,
-      getItemKey: O,
-      wrapChildren: E
+      getItemKey: E,
+      wrapChildren: b
     })
-  }) : d ? t ? null : (0, i.jsx)(o.E, {
+  }) : d ? t ? null : (0, i.jsx)(a.E, {
     emptyText: g.intl.string(g.t.O1Nbjq),
-    icon: l.Dkj,
+    icon: o.Dkj,
     absolute: true
   }) : null
 })

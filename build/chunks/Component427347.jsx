@@ -26,7 +26,7 @@ function v(e) {
     dismissibleContent: t,
     backgroundColor: n,
     specialTextColor: m
-  } = e, v = p.Z.useIsEligible(), j = (0, s.Nj)(t), y = null != n, C = null != m ? {
+  } = e, v = p.Z.useIsEligible(), j = (0, s.Nj)(t), C = null != n, y = null != m ? {
     color: m
   } : true, {
     analyticsLocations: _
@@ -37,7 +37,7 @@ function v(e) {
   }, E = () => {
     let e = (0, d.KV)("HolidayCoachmark");
     (0, u.openUserSettings)(e ? c.n.NOTIFICATIONS_PANEL : c.n.LEGACY_NOTIFICATIONS_SETTINGS_PANEL, {
-      section: f.oAB.NOTIFICATIONS,
+      section: h.oAB.NOTIFICATIONS,
       analyticsLocations: _
     }), S(x.L.TAKE_ACTION)
   };
@@ -45,11 +45,11 @@ function v(e) {
     children: (0, a.jsxs)("div", {
       className: g.wrapper,
       style: {
-        backgroundColor: y ? n : true
+        backgroundColor: C ? n : true
       },
-      children: [!y && (0, a.jsxs)("div", {
+      children: [!C && (0, a.jsxs)("div", {
         className: g.backgroundWrapper,
-        children: [(0, a.jsx)(h.Z, {
+        children: [(0, a.jsx)(f.Z, {
           className: g.backgroundImage,
           pageMultiplier: 5
         }), (0, a.jsx)("div", {
@@ -62,8 +62,8 @@ function v(e) {
         children: [(0, a.jsxs)("div", {
           children: [(0, a.jsx)(r.Heading, {
             variant: "heading-md/bold",
-            color: null != C ? true : "always-white",
-            style: C,
+            color: null != y ? true : "always-white",
+            style: y,
             children: b.intl.string(b.t["6CxPoB"])
           }), (0, a.jsx)(r.Text, {
             variant: "text-xs/normal",
@@ -72,7 +72,7 @@ function v(e) {
               settingsHook: (e, t) => (0, a.jsx)(r.P3F, {
                 tag: "span",
                 className: g.link,
-                style: C,
+                style: y,
                 onClick: E,
                 children: e
               }, t)

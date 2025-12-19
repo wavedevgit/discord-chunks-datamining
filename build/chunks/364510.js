@@ -1,4 +1,4 @@
-/** Chunk was on 23032 **/
+/** Chunk was on 23706 **/
 /** chunk id: 364510, original params: e,t,r (module,exports,require) **/
 var Chunk33608 = require("./33608.js"),
   Chunk405458 = require("./405458.js"),
@@ -36,16 +36,16 @@ c.get = function(e) {
   } : null
 }, c.get.rgb = function(e) {
   if (!e) return null;
-  var t, r, n, s = [0, 0, 0, 1];
+  var t, r, a, s = [0, 0, 0, 1];
   if (t = e.match(/^#([a-f0-9]{6})([a-f0-9]{2})?$/i)) {
-    for (r = 0, n = t[2], t = t[1]; r < 3; r++) {
+    for (r = 0, a = t[2], t = t[1]; r < 3; r++) {
       var i = 2 * r;
       s[r] = parseInt(t.slice(i, i + 2), 16)
     }
-    n && (s[3] = parseInt(n, 16) / 255)
+    a && (s[3] = parseInt(a, 16) / 255)
   } else if (t = e.match(/^#([a-f0-9]{3,4})$/i)) {
-    for (r = 0, n = (t = t[1])[3]; r < 3; r++) s[r] = parseInt(t[r] + t[r], 16);
-    n && (s[3] = parseInt(n + n, 16) / 255)
+    for (r = 0, a = (t = t[1])[3]; r < 3; r++) s[r] = parseInt(t[r] + t[r], 16);
+    a && (s[3] = parseInt(a + a, 16) / 255)
   } else if (t = e.match(/^rgba?\(\s*([+-]?\d+)(?=[\s,])\s*(?:,\s*)?([+-]?\d+)(?=[\s,])\s*(?:,\s*)?([+-]?\d+)\s*(?:[,|\/]\s*([+-]?[\d\.]+)(%?)\s*)?\)$/)) {
     for (r = 0; r < 3; r++) s[r] = parseInt(t[r + 1], 0);
     t[4] && (t[5] ? s[3] = .01 * parseFloat(t[4]) : s[3] = parseFloat(t[4]))
@@ -53,7 +53,7 @@ c.get = function(e) {
     for (r = 0; r < 3; r++) s[r] = Math.round(2.55 * parseFloat(t[r + 1]));
     t[4] && (t[5] ? s[3] = .01 * parseFloat(t[4]) : s[3] = parseFloat(t[4]))
   } else if (!(t = e.match(/^(\w+)$/))) return null;
-  else return "transparent" === t[1] ? [0, 0, 0, 0] : o.call(a, t[1]) ? ((s = a[t[1]])[3] = 1, s) : null;
+  else return "transparent" === t[1] ? [0, 0, 0, 0] : o.call(n, t[1]) ? ((s = n[t[1]])[3] = 1, s) : null;
   for (r = 0; r < 3; r++) s[r] = u(s[r], 0, 255);
   return s[3] = u(s[3], 0, 1), s
 }, c.get.hsl = function(e) {
@@ -82,7 +82,7 @@ c.get = function(e) {
   var e = Chunk405458(arguments),
     t = Math.round(module[0] / 255 * 100),
     r = Math.round(module[1] / 255 * 100),
-    a = Math.round(module[2] / 255 * 100);
+    n = Math.round(module[2] / 255 * 100);
   return module.length < 4 || 1 === module[3] ? "rgb(" + exports + "%, " + require + "%, " + Chunk33608 + "%)" : "rgba(" + exports + "%, " + require + "%, " + Chunk33608 + "%, " + module[3] + ")"
 }, c.to.hsl = function() {
   var e = Chunk405458(arguments);

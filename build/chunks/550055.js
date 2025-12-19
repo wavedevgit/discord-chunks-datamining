@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 550055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => u
 });
 var Chunk768581 = require("./768581.js"),
   Chunk624864 = require("./624864.js"),
@@ -10,33 +10,33 @@ var Chunk768581 = require("./768581.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function c(e, t) {
-  if (r.Z.isNotificationDisabled(l.n0.ActivityUserJoin)) return null;
+function u(e, t) {
+  if (r.Z.isNotificationDisabled(o.n0.ActivityUserJoin)) return null;
   let n = e.username,
-    c = s.intl.format(s.t["Yk+uYG"], {
+    u = s.intl.format(s.t["Yk+uYG"], {
       username: ""
     }),
-    u = (0, i.ov)(e),
+    c = (0, i.ov)(e),
     d = s.intl.string(s.t.WRj1Wn),
     {
-      trackView: f,
-      trackClick: h
-    } = (0, a.Rg)(l.n0.ActivityUserJoin, {
-      notif_type: l.n0.ActivityUserJoin,
+      trackView: h,
+      trackClick: p
+    } = (0, l.Rg)(o.n0.ActivityUserJoin, {
+      notif_type: o.n0.ActivityUserJoin,
       notif_user_id: e.id,
-      activity_type: o.mFx.JOIN,
+      activity_type: a.mFx.JOIN,
       activity_name: t.name
     });
   return {
-    icon: u,
+    icon: c,
     title: n,
-    body: c,
+    body: u,
     hint: d,
     onNotificationShow: () => {
-      f()
+      h()
     },
     onDismissClick: () => {
-      h("dismiss")
+      p("dismiss")
     }
   }
 }

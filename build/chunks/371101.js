@@ -1,4 +1,4 @@
-/** Chunk was on 23032 **/
+/** Chunk was on 23706 **/
 /** chunk id: 371101, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -8,7 +8,7 @@ var Chunk279965 = require("./279965.js"),
   Chunk455412 = require("./455412.js");
 
 function o(e, t) {
-  if (t && ("object" == (0, a.Z)(t) || "function" == typeof t)) return t;
+  if (t && ("object" == (0, n.Z)(t) || "function" == typeof t)) return t;
   if (true !== t) throw TypeError("Derived constructors may only return object or undefined");
-  return (0, n.Z)(e)
+  return (0, a.Z)(e)
 }

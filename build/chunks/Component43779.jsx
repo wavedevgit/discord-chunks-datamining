@@ -36,16 +36,16 @@ function O(e) {
     isHovering: k,
     contentPosition: R,
     rowIndex: A,
-    isVisibleInViewport: Z,
-    onReceiveErrorHints: D,
+    isVisibleInViewport: D,
+    onReceiveErrorHints: Z,
     sourceQuestContent: L
   } = e, M = r.useRef(null), U = (0, x.w8)(w.config), B = (0, x.B3)(w.config), F = (null == (t = w.userStatus) ? true : t.enrolledAt) != null, {
     ref: G,
     scrollHeight: V
-  } = (0, d.kE)(), H = 104 !== V, {
-    onAssetLoadComplete: z
+  } = (0, d.kE)(), z = 104 !== V, {
+    onAssetLoadComplete: W
   } = r.useContext(v.k), {
-    expansionSpring: W
+    expansionSpring: H
   } = (0, c.q_F)({
     expansionSpring: +!!k,
     config: (O = function(e) {
@@ -77,10 +77,10 @@ function O(e) {
     })(Object(P)).forEach(function(e) {
       Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(P, e))
     }), O)
-  }), K = (null == (n = w.userStatus) ? true : n.completedAt) != null, q = (null == (i = w.userStatus) ? true : i.claimedAt) != null, Y = (0, x.xN)(w.config), Q = (0, x.LM)(w.config), {
+  }), q = (null == (n = w.userStatus) ? true : n.completedAt) != null, K = (null == (i = w.userStatus) ? true : i.claimedAt) != null, Y = (0, x.xN)(w.config), Q = (0, x.LM)(w.config), {
     completedRatio: X,
     completedRatioDisplay: J
-  } = (0, h.I)(w), $ = (0, p.Bd)(w, L, M), ee = r.useMemo(() => q && Y ? S.intl.format(S.t["8Op4c4"], {
+  } = (0, f.I)(w), $ = (0, p.Bd)(w, L, M), ee = r.useMemo(() => K && Y ? S.intl.format(S.t["8Op4c4"], {
     balanceHook: () => (0, a.jsxs)(N, {
       questId: w.id,
       children: [(0, a.jsx)(m.Z, {
@@ -89,7 +89,7 @@ function O(e) {
         customSize: 14
       }), Q]
     }, w.id)
-  }) : q ? (0, a.jsx)(N, {
+  }) : K ? (0, a.jsx)(N, {
     questId: w.id,
     children: U
   }) : Y ? S.intl.format(S.t.ro1sze, {
@@ -106,7 +106,7 @@ function O(e) {
       questId: w.id,
       children: B
     }, w.id)
-  }), [U, q, B, w.id, Q, Y]), et = r.useMemo(() => {
+  }), [U, K, B, w.id, Q, Y]), et = r.useMemo(() => {
     if (null != $) return (0, a.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -119,20 +119,20 @@ function O(e) {
     ref: M,
     children: [(0, a.jsxs)(s.animated.div, {
       style: {
-        maxHeight: W.to([0, 1], [104, (null != V ? V : 0) + 12])
+        maxHeight: H.to([0, 1], [104, (null != V ? V : 0) + 12])
       },
       className: E.rewardDescriptionContainer,
       children: [(0, a.jsx)(j.E, {
-        showPlaceholder: !Z,
+        showPlaceholder: !D,
         width: 80,
         height: 80,
         children: (0, a.jsxs)("div", {
           className: E.assetWrapper,
-          children: [!q && K && (0, a.jsx)("div", {
+          children: [!K && q && (0, a.jsx)("div", {
             className: E.completionAnimation
           }), F ? (0, a.jsxs)("div", {
             className: E.progressWrapper,
-            children: [K && (0, a.jsx)(c.Fmz, {
+            children: [q && (0, a.jsx)(c.Fmz, {
               importData: T,
               className: E.confetti,
               loop: false,
@@ -142,16 +142,16 @@ function O(e) {
               quest: w,
               size: 76,
               percentComplete: X,
-              percentCompleteText: k && !(0, f.zi)(w) ? J : true,
+              percentCompleteText: k && !(0, h.zi)(w) ? J : true,
               children: (0, a.jsx)("div", {
                 className: E.circularRewardTileWrapper,
                 children: (0, a.jsx)(g.Z, {
                   quest: w,
                   questContent: I,
                   className: E.circularQuestRewardTileAsset,
-                  location: C.dr.QUEST_HOME_DESKTOP,
+                  location: y.dr.QUEST_HOME_DESKTOP,
                   autoplay: k,
-                  onLoadComplete: z,
+                  onLoadComplete: W,
                   lazyLoad: true,
                   sourceQuestContent: L
                 })
@@ -162,8 +162,8 @@ function O(e) {
             autoplay: k,
             questContent: I,
             className: E.questRewardTileAsset,
-            location: C.dr.QUEST_HOME_DESKTOP,
-            onLoadComplete: z,
+            location: y.dr.QUEST_HOME_DESKTOP,
+            onLoadComplete: W,
             lazyLoad: true,
             sourceQuestContent: L
           })]
@@ -171,7 +171,7 @@ function O(e) {
       }), (0, a.jsxs)("div", {
         ref: G,
         className: l()(E.textContainer, {
-          [E.justifyCenter]: !H
+          [E.justifyCenter]: !z
         }),
         children: [(0, a.jsx)(c.Heading, {
           variant: "eyebrow",
@@ -186,18 +186,18 @@ function O(e) {
           className: E.header,
           children: ee
         }), et]
-      }), H && (0, a.jsx)(s.animated.div, {
+      }), z && (0, a.jsx)(s.animated.div, {
         style: {
-          opacity: W.to([0, 1], [1, 0])
+          opacity: H.to([0, 1], [1, 0])
         },
         className: E.textOverflowBlur
       })]
-    }), (0, a.jsx)(y.Z, {
+    }), (0, a.jsx)(C.Z, {
       quest: w,
       questContent: I,
       contentPosition: R,
       rowIndex: A,
-      onReceiveErrorHints: D,
+      onReceiveErrorHints: Z,
       sourceQuestContent: L
     })]
   })

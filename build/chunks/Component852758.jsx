@@ -106,7 +106,7 @@ function T() {
     captchaKey: O,
     onCaptchaVerify: e => {
       s.tn.post({
-        url: C.ANM.CAPTCHA,
+        url: y.ANM.CAPTCHA,
         body: {
           captcha_key: e
         },
@@ -118,17 +118,17 @@ function T() {
     },
     theme: exports,
     onClick: e => {
-      e === C.PUi.EMAIL_OR_PHONE || e === C.PUi.EMAIL || e === C.PUi.REVERIFY_EMAIL ? w() : (0, o.ZDy)(async () => {
+      e === y.PUi.EMAIL_OR_PHONE || e === y.PUi.EMAIL || e === y.PUi.REVERIFY_EMAIL ? w() : (0, o.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 607018));
         return t => (0, a.jsx)(e, E({
-          layerContext: f.mK,
+          layerContext: h.mK,
           reason: x.L.USER_ACTION_REQUIRED
         }, t))
       }, {
         modalKey: _.M,
-        Layer: f.ZP
+        Layer: h.ZP
       })
     },
     onLogout: () => {

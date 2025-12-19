@@ -87,50 +87,50 @@ function w(e, t) {
 let D = {
   [Chunk284363.Q.STAFF]: {
     IconComponent: Chunk481060.Ymb,
-    foregroundDarkColor: Chunk692547.Z.unsafe_rawColors.WHITE_400.css,
-    foregroundLightColor: Chunk692547.Z.unsafe_rawColors.WHITE_400.css,
+    foregroundDarkColor: Chunk692547.Z.unsafe_rawColors.WHITE.css,
+    foregroundLightColor: Chunk692547.Z.unsafe_rawColors.WHITE.css,
     backgroundDarkColor: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
     backgroundLightColor: Chunk692547.Z.unsafe_rawColors.GREEN_360.css
   },
   [Chunk284363.Q.VERIFIED_AND_PARTNERED]: {
     IconComponent: Chunk481060.kmB,
-    foregroundDarkColor: Chunk692547.Z.unsafe_rawColors.WHITE_400.css,
-    foregroundLightColor: Chunk692547.Z.unsafe_rawColors.WHITE_400.css,
+    foregroundDarkColor: Chunk692547.Z.unsafe_rawColors.WHITE.css,
+    foregroundLightColor: Chunk692547.Z.unsafe_rawColors.WHITE.css,
     backgroundDarkColor: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
     backgroundLightColor: Chunk692547.Z.unsafe_rawColors.GREEN_360.css
   },
   [Chunk284363.Q.VERIFIED]: {
     IconComponent: Chunk481060.kmB,
-    foregroundDarkColor: Chunk692547.Z.unsafe_rawColors.WHITE_400.css,
-    foregroundLightColor: Chunk692547.Z.unsafe_rawColors.WHITE_400.css,
+    foregroundDarkColor: Chunk692547.Z.unsafe_rawColors.WHITE.css,
+    foregroundLightColor: Chunk692547.Z.unsafe_rawColors.WHITE.css,
     backgroundDarkColor: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
     backgroundLightColor: Chunk692547.Z.unsafe_rawColors.GREEN_360.css
   },
   [Chunk284363.Q.PARTNERED]: {
     IconComponent: (0, Chunk481060.GSL)(Chunk665786.Z),
-    foregroundDarkColor: Chunk692547.Z.unsafe_rawColors.WHITE_400.css,
-    foregroundLightColor: Chunk692547.Z.unsafe_rawColors.WHITE_400.css,
+    foregroundDarkColor: Chunk692547.Z.unsafe_rawColors.WHITE.css,
+    foregroundLightColor: Chunk692547.Z.unsafe_rawColors.WHITE.css,
     backgroundDarkColor: Chunk692547.Z.unsafe_rawColors.BRAND_500.css,
     backgroundLightColor: Chunk692547.Z.unsafe_rawColors.BRAND_500.css
   },
   [Chunk284363.Q.COMMUNITY]: {
     IconComponent: Chunk481060.tvw,
     foregroundDarkColor: Chunk692547.Z.unsafe_rawColors.PRIMARY_500.css,
-    foregroundLightColor: Chunk692547.Z.unsafe_rawColors.WHITE_400.css,
-    backgroundDarkColor: Chunk692547.Z.unsafe_rawColors.WHITE_400.css,
+    foregroundLightColor: Chunk692547.Z.unsafe_rawColors.WHITE.css,
+    backgroundDarkColor: Chunk692547.Z.unsafe_rawColors.WHITE.css,
     backgroundLightColor: Chunk692547.Z.unsafe_rawColors.PRIMARY_500.css,
     premiumBackgroundColor: Chunk436774.JX.PREMIUM_GUILD_BADGE_V2_BACKGROUND,
-    premiumForegroundColor: Chunk692547.Z.unsafe_rawColors.WHITE_400.css,
+    premiumForegroundColor: Chunk692547.Z.unsafe_rawColors.WHITE.css,
     sizeAdjustment: 2
   },
   [Chunk284363.Q.DISCOVERABLE]: {
     IconComponent: Chunk481060.enf,
     foregroundDarkColor: Chunk692547.Z.unsafe_rawColors.PRIMARY_500.css,
-    foregroundLightColor: Chunk692547.Z.unsafe_rawColors.WHITE_400.css,
-    backgroundDarkColor: Chunk692547.Z.unsafe_rawColors.WHITE_400.css,
+    foregroundLightColor: Chunk692547.Z.unsafe_rawColors.WHITE.css,
+    backgroundDarkColor: Chunk692547.Z.unsafe_rawColors.WHITE.css,
     backgroundLightColor: Chunk692547.Z.unsafe_rawColors.PRIMARY_500.css,
     premiumBackgroundColor: Chunk436774.JX.PREMIUM_GUILD_BADGE_V2_BACKGROUND,
-    premiumForegroundColor: Chunk692547.Z.unsafe_rawColors.WHITE_400.css,
+    premiumForegroundColor: Chunk692547.Z.unsafe_rawColors.WHITE.css,
     sizeAdjustment: 2
   },
   [Chunk284363.Q.NONE]: {}

@@ -1,9 +1,9 @@
 /** Chunk was on 6043 **/
 /** chunk id: 319738, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  KZ: () => f,
+  KZ: () => h,
   TA: () => p,
-  UK: () => h
+  UK: () => f
 }), require("./415506.js");
 var Chunk990547 = require("./990547.js"),
   Chunk570140 = require("./570140.js"),
@@ -30,7 +30,7 @@ function p(e, t) {
     source: "generated_test_user"
   }).catch(() => (l.Z.showFailedToast(m.wQ.GENERIC_ERROR), null))
 }
-async function h(e, t) {
+async function f(e, t) {
   return await o.Z.get({
     url: u.ANM.GENERATED_POOL_BY_ID(e),
     trackedActionData: {
@@ -55,7 +55,7 @@ async function h(e, t) {
   }).catch(() => (l.Z.showFailedToast(m.wQ.GENERIC_ERROR), null))
 }
 
-function f(e) {
+function h(e) {
   r.Z.dispatch({
     type: "GENERATED_POOL_REMOVE_FROM_LIST",
     poolId: e

@@ -63,8 +63,8 @@ let u = Chunk473749.createContext({
       isTextTransition: m = false
     } = e, {
       recalculateAnimationPositions: p,
-      registerComponent: h,
-      unregisterComponent: f,
+      registerComponent: f,
+      unregisterComponent: h,
       expansionSpring: x,
       mountPoints: b
     } = r.useContext(u), g = r.useRef(null), v = r.useRef(null), j = r.useRef(true);
@@ -72,20 +72,20 @@ let u = Chunk473749.createContext({
       p()
     }, [p]), r.useLayoutEffect(() => {
       let e = g.current;
-      return null != e && h(e, c, d), () => {
-        null != e && f(c, d)
+      return null != e && f(e, c, d), () => {
+        null != e && h(c, d)
       }
-    }, [c, d, h, f]);
-    let y = r.useCallback(e => {
+    }, [c, d, f, h]);
+    let C = r.useCallback(e => {
       let {
         height: t
       } = e;
       j.current !== t && (p(), j.current = t)
     }, [p]);
-    (0, s.PM)(g, y);
-    let C = null == (n = b.get(c)) ? true : n.current,
+    (0, s.PM)(g, C);
+    let y = null == (n = b.get(c)) ? true : n.current,
       _ = null;
-    return null == C ? _ = null : m && null != x ? _ = (0, a.jsxs)(a.Fragment, {
+    return null == y ? _ = null : m && null != x ? _ = (0, a.jsxs)(a.Fragment, {
       children: ["collapsed" === d && (0, i.createPortal)((0, a.jsx)(l.animated.div, {
         style: {
           position: "absolute",
@@ -95,7 +95,7 @@ let u = Chunk473749.createContext({
           })
         },
         children: o(v)
-      }), C), "expanded" === d && (0, i.createPortal)((0, a.jsx)(l.animated.div, {
+      }), y), "expanded" === d && (0, i.createPortal)((0, a.jsx)(l.animated.div, {
         style: {
           position: "absolute",
           opacity: x.to({
@@ -104,10 +104,10 @@ let u = Chunk473749.createContext({
           })
         },
         children: o(v)
-      }), C)]
-    }) : "collapsed" === d && (_ = (0, i.createPortal)(o(v), C)), (0, a.jsxs)("div", {
+      }), y)]
+    }) : "collapsed" === d && (_ = (0, i.createPortal)(o(v), y)), (0, a.jsxs)("div", {
       style: {
-        opacity: +(null == _ && "collapsed" === d || null == C)
+        opacity: +(null == _ && "collapsed" === d || null == y)
       },
       ref: t,
       children: [o(g), _]
@@ -119,7 +119,7 @@ let u = Chunk473749.createContext({
       expandedContentRef: n,
       collapsedContentRef: i,
       expansionSpring: l
-    } = e, [s, m] = r.useState({}), [p, h] = r.useState([]), [f, x] = r.useState(() => new Map), b = r.useCallback((e, t, n) => {
+    } = e, [s, m] = r.useState({}), [p, f] = r.useState([]), [h, x] = r.useState(() => new Map), b = r.useCallback((e, t, n) => {
       m(a => {
         var r;
         let i = null != (r = a[t]) ? r : {
@@ -163,14 +163,14 @@ let u = Chunk473749.createContext({
           u = i.current.getBoundingClientRect(),
           m = l.top - c.top + o.jK,
           p = d.top - u.top,
-          h = l.left - c.left + o.jK,
-          f = d.left - u.left,
+          f = l.left - c.left + o.jK,
+          h = d.left - u.left,
           x = -l.right + c.right + o.jK,
           b = -d.right + u.right;
         e.push({
           id: t,
-          collapsedLeft: f,
-          expandedLeft: h,
+          collapsedLeft: h,
+          expandedLeft: f,
           collapsedRight: b,
           expandedRight: x,
           collapsedTop: p,
@@ -178,8 +178,8 @@ let u = Chunk473749.createContext({
           width: l.width
         })
       }
-      h(e)
-    }, [s, n, i, h]);
+      f(e)
+    }, [s, n, i, f]);
     return (0, a.jsx)(u.Provider, {
       value: {
         registerComponent: b,
@@ -190,7 +190,7 @@ let u = Chunk473749.createContext({
         recalculateAnimationPositions: v,
         animatedComponentProps: p,
         expansionSpring: l,
-        mountPoints: f
+        mountPoints: h
       },
       children: t
     })

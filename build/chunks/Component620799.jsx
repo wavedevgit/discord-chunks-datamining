@@ -1,7 +1,7 @@
 /** Chunk was on 6043 **/
 /** chunk id: 620799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk442837 = require("./442837.js"),
@@ -15,16 +15,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function f(e) {
   let {
     targetElementRef: t,
     markAsDismissed: n,
-    children: h
-  } = e, f = (0, r.e7)([o.default], () => o.default.getId()), x = (0, r.e7)([l.Z], () => l.Z.useReducedMotion), b = (0, c.bg)({
+    children: f
+  } = e, h = (0, r.e7)([o.default], () => o.default.getId()), x = (0, r.e7)([l.Z], () => l.Z.useReducedMotion), b = (0, c.bg)({
     location: "GameWidgetsPopover"
   });
   return (0, a.jsxs)(a.Fragment, {
-    children: [h, (0, a.jsx)(i.J2, {
+    children: [f, (0, a.jsx)(i.J2, {
       targetElementRef: t,
       badge: b ? {
         type: "early_access",
@@ -51,7 +51,7 @@ function h(e) {
         variant: "primary",
         onClick: () => {
           n(m.L.TAKE_ACTION), (0, d.openUserProfileModal)({
-            userId: f,
+            userId: h,
             sourceAnalyticsLocations: [s.Z.ACCOUNT],
             hideRestrictedProfile: true,
             tabSection: u.oh.WIDGETS

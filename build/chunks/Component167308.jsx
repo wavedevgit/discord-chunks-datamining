@@ -1,7 +1,7 @@
 /** Chunk was on 6043 **/
 /** chunk id: 167308, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,19 +14,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk526188 = require("./526188.jsx"),
   Chunk324805 = require("./324805.js"),
   Chunk674293 = require("./674293.js");
-let h = e => {
+let f = e => {
   let {
     isExpanded: t,
     contentLocation: n,
-    progressBarRef: h,
-    percentComplete: f,
+    progressBarRef: f,
+    percentComplete: h,
     activeScreen: x,
     popoutTargetElementRef: b
   } = e, {
     quest: g,
     onGameSheetOpen: v,
     onGameSheetClose: j
-  } = r.useContext(u.A), y = (0, s.eQ)(g), C = (0, s.vf)({
+  } = r.useContext(u.A), C = (0, s.eQ)(g), y = (0, s.vf)({
     quest: g,
     isExpanded: t,
     activeScreen: x,
@@ -40,11 +40,11 @@ let h = e => {
     children: [(0, a.jsx)(c.JC, {
       inState: n,
       id: "progress-bar",
-      ref: h,
+      ref: f,
       children: e => (0, a.jsx)(d.Z, {
         ref: e,
         quest: g,
-        percentComplete: f,
+        percentComplete: h,
         size: 42,
         strokeWidth: 3,
         children: (0, a.jsx)(o.Z, {
@@ -66,7 +66,7 @@ let h = e => {
           className: p.questProgressHint,
           color: "text-strong",
           variant: "text-sm/semibold",
-          children: y
+          children: C
         })
       }), (0, a.jsx)(c.JC, {
         inState: n,
@@ -77,7 +77,7 @@ let h = e => {
           className: p.questProgressHint,
           color: "text-muted",
           variant: "text-xs/normal",
-          children: C
+          children: y
         })
       })]
     })]

@@ -71,7 +71,7 @@ function v() {
       color: "currentColor",
       className: Chunk236510.checkmarkCircle,
       colorClass: Chunk236510.checkmark,
-      secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
+      secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE.css
     })
   })
 }

@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk206878 = require("./206878.js"),
   Chunk414648 = require("./414648.js");
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -34,7 +34,7 @@ function h(e) {
   }
   return e
 }
-let f = Chunk473749.createContext({
+let h = Chunk473749.createContext({
     setDropHandler: () => {}
   }),
   x = [{
@@ -57,7 +57,7 @@ let f = Chunk473749.createContext({
       let {
         ShopAssetsPreviewInstructionModal: e
       } = await Promise.resolve().then(require.bind(require, 637443));
-      return t => (0, a.jsx)(e, h({}, t))
+      return t => (0, a.jsx)(e, f({}, t))
     }, {
       modalKey: Chunk637443.g,
       onCloseRequest: () => (0, Chunk481060.Mr3)(Chunk637443.g)
@@ -68,13 +68,13 @@ let f = Chunk473749.createContext({
       let {
         ShopPFXPreviewInstructionModal: e
       } = await Promise.resolve().then(require.bind(require, 637443));
-      return t => (0, a.jsx)(e, h({}, t))
+      return t => (0, a.jsx)(e, f({}, t))
     }, {
       modalKey: Chunk637443.c,
       onCloseRequest: () => (0, Chunk481060.Mr3)(Chunk637443.c)
     })
   },
-  y = () => {
+  C = () => {
     let e = (0, Chunk373071.lb)(),
       {
         previewProfileEffectSkuId: t,
@@ -108,7 +108,7 @@ let f = Chunk473749.createContext({
       })]
     })
   },
-  C = () => {
+  y = () => {
     let {
       previewAvatarDecorationSkuId: e,
       setPreviewAvatarDecorationSkuId: t
@@ -217,13 +217,13 @@ let f = Chunk473749.createContext({
       warnings: i,
       errors: s
     } = (0, Chunk206878.g)(), o = Object.entries(Chunk373071), c = Object.entries(Chunk199849), d = Chunk637443.length > 0, u = Chunk619899.length > 0, {
-      setDropHandler: h
-    } = Chunk473749.useContext(f), x = Chunk473749.useCallback(n => {
+      setDropHandler: f
+    } = Chunk473749.useContext(h), x = Chunk473749.useCallback(n => {
       t(), e(n)
     }, [module, exports]);
     return Chunk473749.useEffect(() => {
-      h(x)
-    }, [x, h]), (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      f(x)
+    }, [x, f]), (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [require ? (0, Chunk54381.jsxs)("div", {
         className: Chunk414648.validationSummary,
         children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
@@ -316,12 +316,12 @@ let f = Chunk473749.createContext({
       processAndUpsertAssets: d
     } = (0, Chunk281598.hm)(), {
       setDropHandler: m
-    } = Chunk473749.useContext(f), h = Chunk473749.useCallback(e => {
+    } = Chunk473749.useContext(h), f = Chunk473749.useCallback(e => {
       n(), d(e)
     }, [Chunk18868, require]);
     return Chunk473749.useEffect(() => {
-      Chunk206878(h)
-    }, [h, Chunk206878]), (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
+      Chunk206878(f)
+    }, [f, Chunk206878]), (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
       children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: "Drop files in this panel to begin preview."
@@ -340,7 +340,7 @@ let f = Chunk473749.createContext({
           icon: Chunk481060.idN,
           "aria-label": "Open preview instructions"
         })]
-      }), (0, Chunk54381.jsx)(y, {}), (0, Chunk54381.jsx)(C, {}), (0, Chunk54381.jsx)(_, {
+      }), (0, Chunk54381.jsx)(C, {}), (0, Chunk54381.jsx)(y, {}), (0, Chunk54381.jsx)(_, {
         clearAssets: Chunk373071,
         clearIgnoredFiles: Chunk637443
       }), (0, Chunk54381.jsx)(S, {
@@ -377,7 +377,7 @@ let f = Chunk473749.createContext({
     } = e, [n, i] = r.useState(() => () => {}), l = r.useMemo(() => ({
       setDropHandler: e => i(() => e)
     }), []);
-    return (0, a.jsx)(f.Provider, {
+    return (0, a.jsx)(h.Provider, {
       value: l,
       children: (0, a.jsx)(d.L, {
         onDrop: n,

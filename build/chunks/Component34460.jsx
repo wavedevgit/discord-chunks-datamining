@@ -51,7 +51,7 @@ function I(e) {
         children: t
       }), r && (0, n.jsx)(m.owK, {
         size: "md",
-        secondaryColor: o.Z.unsafe_rawColors.WHITE_500.css,
+        secondaryColor: o.Z.unsafe_rawColors.WHITE.css,
         color: o.Z.unsafe_rawColors.BRAND_500.css
       })]
     })]
@@ -90,14 +90,14 @@ function R(e) {
     showPriceReselection: o,
     setShowPriceReselection: d,
     handleCreateTierFromTemplate: m
-  } = e, f = (0, _.g4)(i, c, null != l ? null == (a = l[s]) || null == (t = a.listings[0]) ? true : t.price_tier : true), x = null != f && f.length > 0, u = r.useCallback(e => {
+  } = e, f = (0, v.g4)(i, c, null != l ? null == (a = l[s]) || null == (t = a.listings[0]) ? true : t.price_tier : true), x = null != f && f.length > 0, u = r.useCallback(e => {
     x ? d(true) : m(e)
   }, [m, x, d]);
   return null == l || 0 === l.length ? null : o && x ? (0, n.jsx)(C.Z, {
     selectedTemplate: l[s],
     handleSelectTemplate: m,
     newPricesToPick: f
-  }) : (0, n.jsx)(v.Z, {
+  }) : (0, n.jsx)(_.Z, {
     selectedTemplate: l[s],
     handleSelectTemplate: u
   })
@@ -111,13 +111,13 @@ function w(e) {
     addNewEditStateFromTemplate: l,
     addNewEditStateFromScratch: o,
     priceTiers: d
-  } = e, p = (0, c.e7)([T.Z], () => T.Z.getTemplates(i)), [_, {
-    loading: v,
+  } = e, p = (0, c.e7)([T.Z], () => T.Z.getTemplates(i)), [v, {
+    loading: _,
     error: C
   }] = (0, f.Z)(j.u), I = r.useRef("voluntarily_exit");
   r.useEffect(() => {
-    (null == p || 0 === p.length) && _(i)
-  }, [_, i, p]), r.useEffect(() => {
+    (null == p || 0 === p.length) && v(i)
+  }, [v, i, p]), r.useEffect(() => {
     t === m.Dvm.EXITING && h.default.track(N.rMx.ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR_EXITED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var a = null != arguments[t] ? arguments[t] : {},
@@ -192,7 +192,7 @@ function w(e) {
           }), (0, n.jsx)("div", {
             className: y.templatesContentContainer,
             children: (0, n.jsx)(O, {
-              loading: v,
+              loading: _,
               error: C,
               templates: p,
               selectedTemplateIndex: w,

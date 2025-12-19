@@ -49,8 +49,8 @@ function j() {
     n = (0, Chunk442837.e7)([Chunk592125.Z], () => Chunk592125.Z.getChannel(module)),
     r = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports)),
     j = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.computePermissions(require)),
-    y = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.computePermissions(Chunk120356)),
-    C = (0, Chunk933557.ZP)(require, true),
+    C = (0, Chunk442837.e7)([Chunk496675.Z], () => Chunk496675.Z.computePermissions(Chunk120356)),
+    y = (0, Chunk933557.ZP)(require, true),
     _ = null != require ? (0, Chunk71080.IG)(require, false) : null,
     S = null != Chunk120356 ? Chunk233608.Z.getGuildPermissionSpecMap(Chunk120356) : null,
     E = Object.values(null != _ ? _ : {}).map(e => {
@@ -67,7 +67,7 @@ function j() {
       let {
         title: t,
         flag: n
-      } = e, r = l.e$(y, n);
+      } = e, r = l.e$(C, n);
       return (0, a.jsx)(v, {
         title: t,
         can: r
@@ -81,7 +81,7 @@ function j() {
         className: Chunk295532.section,
         children: [(0, Chunk54381.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
-          children: null != C ? "Permissions in ".concat(C) : "No channel selected"
+          children: null != y ? "Permissions in ".concat(y) : "No channel selected"
         }), E]
       }), (0, Chunk54381.jsxs)("section", {
         className: Chunk295532.section,

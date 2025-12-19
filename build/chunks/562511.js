@@ -1,8 +1,8 @@
 /** Chunk was on 6043 **/
 /** chunk id: 562511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A2: () => f,
-  S3: () => h
+  A2: () => h,
+  S3: () => f
 });
 var Chunk473749 = require("./473749.js"),
   Chunk442837 = require("./442837.js"),
@@ -16,7 +16,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk864133 = require("./864133.js"),
   Chunk981631 = require("./981631.js");
 
-function h(e) {
+function f(e) {
   let t = function(e) {
     let t = (0, s.FT)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : p.lds);
     return (0, r.e7)([c.Z, d.default, o.ZP], () => {
@@ -50,12 +50,12 @@ function h(e) {
           }
         })
       }, [e, u, t, n]), null == u || (null == o ? true : o.identityGuildId) === e && (null == o ? true : o.tag) === u) returnfalse;
-    let h = (null == o ? true : o.identityGuildId) === e && (null == o ? true : o.tag) === null,
-      f = null === n || (null == n ? true : n.tag) === u;
-    return h && !f && t
+    let f = (null == o ? true : o.identityGuildId) === e && (null == o ? true : o.tag) === null,
+      h = null === n || (null == n ? true : n.tag) === u;
+    return f && !h && t
   }(e) ? t ? "available" : null : "changed"
 }
 
-function f(e) {
-  return null !== h(e)
+function h(e) {
+  return null !== f(e)
 }

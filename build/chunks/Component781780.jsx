@@ -1,7 +1,7 @@
 /** Chunk was on 27278 **/
 /** chunk id: 781780, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => l
 });
 var Chunk54381 = require("./54381.js"),
   Chunk963614 = require("./963614.js"),
@@ -9,26 +9,26 @@ var Chunk54381 = require("./54381.js"),
   Chunk701488 = require("./701488.js"),
   Chunk968352 = require("./968352.js");
 
-function c(e) {
-  var n, t, c;
+function l(e) {
+  var n, t, l;
   let {
-    channelId: u,
-    guildId: s,
-    embeddedActivity: d,
-    application: p
+    channelId: d,
+    guildId: u,
+    embeddedActivity: s,
+    application: b
   } = e, f = {
-    instance_id: null != (c = null != (t = d.compositeInstanceId) ? t : d.launchId) ? c : "",
-    location_id: null == (n = d.location) ? true : n.id,
-    launch_id: d.launchId,
-    referrer_id: d.referrerId,
-    custom_id: d.customId
+    instance_id: null != (l = null != (t = s.compositeInstanceId) ? t : s.launchId) ? l : "",
+    location_id: null == (n = s.location) ? true : n.id,
+    launch_id: s.launchId,
+    referrer_id: s.referrerId,
+    custom_id: s.customId
   };
-  return null != s && "" !== s && (f.guild_id = s), null != u && "" !== u && (f.channel_id = u), (0, r.jsx)(i.J, {
-    allowPopups: (0, o.h)(p),
-    referrerPolicy: l.um.has(d.applicationId) ? "no-referrer" : "origin",
-    url: d.url,
+  return null != u && "" !== u && (f.guild_id = u), null != d && "" !== d && (f.channel_id = d), (0, a.jsx)(c.J, {
+    allowPopups: (0, o.h)(b),
+    referrerPolicy: r.um.has(s.applicationId) ? "no-referrer" : "origin",
+    url: s.url,
     queryParams: f,
-    className: a.iframe,
+    className: i.iframe,
     shouldRefocus: false
   })
 }

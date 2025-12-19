@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function E(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -60,19 +60,19 @@ let x = {
         widget: t,
         locked: n,
         size: r,
-        padding: a,
-        borderWidth: l,
-        showEmpty: o
+        padding: l,
+        borderWidth: o,
+        showEmpty: a
       } = e;
-      return (0, d.js)(t) ? (0, i.jsx)(p.Z, {
+      return (0, d.js)(t) ? (0, i.jsx)(f.Z, {
         id: t.id,
         locked: n,
         widget: t,
-        height: "auto" === r.height ? 0 : r.height - 2 * a - 2 * l,
-        width: "auto" === r.width ? 0 : r.width - 2 * a - 2 * l,
-        showEmpty: o,
-        padding: a,
-        borderWidth: l
+        height: "auto" === r.height ? 0 : r.height - 2 * l - 2 * o,
+        width: "auto" === r.width ? 0 : r.width - 2 * l - 2 * o,
+        showEmpty: a,
+        padding: l,
+        borderWidth: o
       }) : null
     },
     renderTitle: () => (0, Chunk54381.jsx)(Chunk430561.PI, {
@@ -85,7 +85,7 @@ let x = {
             let {
               default: t
             } = await n.e("26775").then(n.bind(n, 740579));
-            return n => (0, i.jsx)(t, S(E({}, n), {
+            return n => (0, i.jsx)(t, S(b({}, n), {
               widget: e
             }))
           })
@@ -103,18 +103,18 @@ let x = {
       let {
         widget: n,
         anchorLeft: r,
-        locked: a,
-        showEmpty: l
+        locked: l,
+        showEmpty: o
       } = e;
       return (0, d.Aw)(n) ? (0, i.jsx)(m.ZP, {
         anchorLeft: r,
         id: n.id,
-        locked: a,
+        locked: l,
         pinned: n.pinned,
-        widget: O.Odu.VOICE_V3,
+        widget: E.Odu.VOICE_V3,
         maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : y.At,
         isPreviewingInGame: false,
-        showEmpty: l
+        showEmpty: o
       }) : null
     },
     renderTitle: () => (0, Chunk54381.jsx)(Chunk430561.PI, {
@@ -127,7 +127,7 @@ let x = {
             let {
               default: e
             } = await n.e("32382").then(n.bind(n, 955280));
-            return t => (0, i.jsx)(e, E({}, t))
+            return t => (0, i.jsx)(e, b({}, t))
           })
         }
       }), (0, i.jsx)(g.RT, {
@@ -142,7 +142,7 @@ let x = {
         widget: t,
         locked: n
       } = e;
-      return (0, i.jsx)(o.Z, {
+      return (0, i.jsx)(a.Z, {
         id: t.id,
         locked: n,
         pinned: t.pinned
@@ -158,7 +158,7 @@ let x = {
             let {
               default: e
             } = await n.e("38813").then(n.bind(n, 541501));
-            return t => (0, i.jsx)(e, E({}, t))
+            return t => (0, i.jsx)(e, b({}, t))
           })
         }
       }), (0, i.jsx)(g.RT, {
@@ -174,7 +174,7 @@ let x = {
         locked: n,
         anchorLeft: r
       } = e;
-      return (0, i.jsx)(f.Z, {
+      return (0, i.jsx)(h.Z, {
         id: t.id,
         anchorLeft: r,
         locked: n,
@@ -195,29 +195,29 @@ let x = {
       let {
         widget: n,
         locked: r,
-        size: a,
-        dragStart: l,
-        anchorTop: o,
+        size: l,
+        dragStart: o,
+        anchorTop: a,
         anchorLeft: s,
-        showEmpty: u,
-        padding: f,
-        borderWidth: h
+        showEmpty: c,
+        padding: h,
+        borderWidth: p
       } = e;
-      return (0, d.ZL)(n) ? (0, i.jsx)(c.Z, {
+      return (0, d.ZL)(n) ? (0, i.jsx)(u.Z, {
         id: n.id,
         locked: r,
         pinned: n.pinned,
         opacity: n.opacity,
-        size: a,
-        anchorTop: o,
+        size: l,
+        anchorTop: a,
         anchorLeft: s,
         widget: n,
         isPreviewingInGame: false,
-        dragStart: l,
+        dragStart: o,
         horizontal: null != (t = n.meta.horizontal) && t,
-        padding: f,
-        borderWidth: h,
-        showEmpty: u
+        padding: h,
+        borderWidth: p,
+        showEmpty: c
       }) : null
     },
     renderTitle: e => (0, i.jsx)(g.XM, {
@@ -233,7 +233,7 @@ let x = {
               let {
                 default: t
               } = await n.e("34684").then(n.bind(n, 68738));
-              return n => (0, i.jsx)(t, S(E({}, n), {
+              return n => (0, i.jsx)(t, S(b({}, n), {
                 widget: e
               }))
             })
@@ -254,7 +254,7 @@ let x = {
       let {
         locked: t
       } = e;
-      return (0, i.jsx)(h.Z, {
+      return (0, i.jsx)(p.Z, {
         locked: t
       })
     }
@@ -266,7 +266,7 @@ let x = {
         showEmpty: n,
         widget: r
       } = e;
-      return (0, i.jsx)(b.Z, {
+      return (0, i.jsx)(O.Z, {
         pinned: r.pinned,
         locked: t,
         showEmpty: n
@@ -282,7 +282,7 @@ let x = {
             let {
               default: e
             } = await n.e("94706").then(n.bind(n, 168133));
-            return t => (0, i.jsx)(e, E({}, t))
+            return t => (0, i.jsx)(e, b({}, t))
           })
         }
       }), (0, i.jsx)(g.RT, {
@@ -296,7 +296,7 @@ let x = {
       let {
         locked: t
       } = e;
-      return (0, i.jsx)(l.ZP, {
+      return (0, i.jsx)(o.ZP, {
         locked: t
       })
     },

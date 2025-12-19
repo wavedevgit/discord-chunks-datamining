@@ -28,8 +28,8 @@ function v(e) {
     questContent: u,
     contentPosition: v,
     rowIndex: j,
-    impressionRef: y,
-    sourceQuestContent: C
+    impressionRef: C,
+    sourceQuestContent: y
   } = e, [_, S] = r.useState(false), [E, T] = r.useState([]), O = (0, c.qb)(i), N = r.useMemo(() => (0, d.q8)(i), [i]), P = (0, s._F)(), w = r.useCallback(() => {
     S(true), P({
       questId: i.id,
@@ -39,9 +39,9 @@ function v(e) {
         content_name: (0, s._b)(u),
         content_position: v
       },
-      sourceQuestContent: C
+      sourceQuestContent: y
     }), N && (0, m.loadVideoQuestModal)()
-  }, [P, i.id, u, N, C, v]), I = r.useCallback(() => {
+  }, [P, i.id, u, N, y, v]), I = r.useCallback(() => {
     S(false), P({
       questId: i.id,
       event: b.rMx.QUEST_HOVER_OFF,
@@ -50,9 +50,9 @@ function v(e) {
         content_name: (0, s._b)(u),
         content_position: v
       },
-      sourceQuestContent: C
+      sourceQuestContent: y
     })
-  }, [P, i.id, u, C, v]), k = r.useContext(h.t), {
+  }, [P, i.id, u, y, v]), k = r.useContext(f.t), {
     visibilityElementRef: R,
     almostVisibleInViewport: A
   } = function(e) {
@@ -71,20 +71,20 @@ function v(e) {
   return (0, a.jsxs)("div", {
     id: "quest-tile-".concat(i.id),
     ref: e => {
-      y.current = e, R.current = e
+      C.current = e, R.current = e
     },
     className: l()(g.container, o),
     onMouseEnter: w,
     onMouseLeave: I,
     onFocus: w,
     onBlur: I,
-    children: [(0, a.jsx)(f.Z, {
+    children: [(0, a.jsx)(h.Z, {
       quest: i,
       isHovering: _,
       errorHints: E,
       warningHints: O,
       isVisibleInViewport: A,
-      sourceQuestContent: C
+      sourceQuestContent: y
     }), (0, a.jsx)(x.Z, {
       quest: i,
       questContent: u,
@@ -93,7 +93,7 @@ function v(e) {
       rowIndex: j,
       onReceiveErrorHints: T,
       isVisibleInViewport: A,
-      sourceQuestContent: C
+      sourceQuestContent: y
     })]
   })
 }

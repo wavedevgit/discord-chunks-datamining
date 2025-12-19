@@ -59,7 +59,7 @@ function p() {
     emotion: window.__CLIPS_DEBUG__.emotion,
     yell: window.__CLIPS_DEBUG__.yell,
     whisper: window.__CLIPS_DEBUG__.whisper
-  })), [p, h] = Chunk473749.useState(Chunk894694.x0.KILL), [f, x] = Chunk473749.useState(1), [b, g] = Chunk473749.useState(""), [v, j] = Chunk473749.useState(""), y = Chunk473749.useCallback(e => {
+  })), [p, f] = Chunk473749.useState(Chunk894694.x0.KILL), [h, x] = Chunk473749.useState(1), [b, g] = Chunk473749.useState(""), [v, j] = Chunk473749.useState(""), C = Chunk473749.useCallback(e => {
     let a = !t[e];
     true === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
       emotion: false,
@@ -107,7 +107,7 @@ function p() {
           children: [(0, Chunk54381.jsx)(Chunk199849.y6, {
             label: "Event Type",
             value: p,
-            onChange: e => h(e),
+            onChange: e => f(e),
             options: [{
               label: "Kill",
               value: Chunk894694.x0.KILL
@@ -141,7 +141,7 @@ function p() {
             }]
           }), (0, Chunk54381.jsx)(Chunk199849.y6, {
             label: "Importance",
-            value: f,
+            value: h,
             onChange: x,
             options: [{
               label: "Low",
@@ -170,7 +170,7 @@ function p() {
             Chunk39604.XK({
               type: Chunk894694.Bs.GAME_EVENT,
               eventType: p,
-              importance: f,
+              importance: h,
               title: b,
               description: v
             })
@@ -209,22 +209,22 @@ function p() {
           label: "Wake Word Debug",
           description: "Log wake word detection events to console",
           checked: exports.wakeWord,
-          onChange: () => y("wakeWord")
+          onChange: () => C("wakeWord")
         }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Emotion Debug",
           description: "Log emotion classification events to console",
           checked: exports.emotion,
-          onChange: () => y("emotion")
+          onChange: () => C("emotion")
         }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Yell Debug",
           description: "Show yell classification events to console",
           checked: exports.yell,
-          onChange: () => y("yell")
+          onChange: () => C("yell")
         }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Whisper Debug",
           description: "Log whisper transcription events to console",
           checked: exports.whisper,
-          onChange: () => y("whisper")
+          onChange: () => C("whisper")
         })]
       })]
     })

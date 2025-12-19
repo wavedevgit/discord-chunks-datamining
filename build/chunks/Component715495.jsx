@@ -1,7 +1,7 @@
 /** Chunk was on 6043 **/
 /** chunk id: 715495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -52,15 +52,15 @@ function j(e, t) {
   }), e
 }
 
-function y() {
+function C() {
   var e, t;
-  let [n, i] = (0, Chunk473749.useState)(false), [s, d] = (0, Chunk473749.useState)(false), [h, x] = (0, Chunk473749.useState)(null), y = (0, Chunk396821.ZP)(e => e.toolsCache), {
+  let [n, i] = (0, Chunk473749.useState)(false), [s, d] = (0, Chunk473749.useState)(false), [f, x] = (0, Chunk473749.useState)(null), C = (0, Chunk396821.ZP)(e => e.toolsCache), {
     setToolsCache: T,
     removeToolsCache: O
   } = (0, Chunk396821.L3)(), {
     setImgCache: N
   } = (0, Chunk396821.W_)(), P = (0, Chunk473749.useCallback)(e => {
-    let t = y[e];
+    let t = C[e];
     null != t && x({
       src: t.url,
       palette: t.palette,
@@ -73,7 +73,7 @@ function y() {
       src: e,
       preview: true
     }))
-  }, [y]), w = (0, Chunk473749.useCallback)(e => {
+  }, [C]), w = (0, Chunk473749.useCallback)(e => {
     x(t => null == t ? null : j(v({}, t), {
       palette: e,
       preview: true
@@ -106,13 +106,13 @@ function y() {
         children: [require && (0, Chunk54381.jsx)(Chunk329013.i, {}), Chunk276264 && (0, Chunk54381.jsx)(Chunk711325.Z, {
           selected: null == Chunk996746 || null == (e = Chunk996746.palette) ? true : module.name,
           onSelect: e => {
-            (null == h ? true : h.src) != null && T(h.src, h.src, e), w(e)
+            (null == f ? true : f.src) != null && T(f.src, f.src, e), w(e)
           }
         })]
       })]
     }), (0, Chunk54381.jsxs)("div", {
       className: Chunk337555.main,
-      children: [(0, Chunk54381.jsx)(C, {
+      children: [(0, Chunk54381.jsx)(y, {
         nameplate: Chunk996746
       }, null == Chunk996746 || null == (t = Chunk996746.palette) ? true : exports.name), (0, Chunk54381.jsxs)("div", {
         className: Chunk337555.buttons,
@@ -131,7 +131,7 @@ function y() {
           }
         }), (0, Chunk54381.jsx)("div", {
           className: Chunk337555.uploadedArea,
-          children: Object.values(y).map(e => {
+          children: Object.values(C).map(e => {
             let {
               url: t
             } = e;
@@ -157,7 +157,7 @@ function y() {
   })
 }
 
-function C(e) {
+function y(e) {
   let {
     nameplate: t
   } = e, [n, i] = (0, r.useState)(320), s = (0, r.useRef)(null), o = (0, r.useRef)(null), c = (0, r.useRef)(null), d = (0, r.useRef)(document), u = (0, r.useCallback)(e => {
@@ -358,7 +358,7 @@ function N(e) {
     className: g.preview,
     children: (0, a.jsx)("div", {
       className: g.rtcSim,
-      children: (0, a.jsx)(h.Z, {
+      children: (0, a.jsx)(f.Z, {
         nameplate: t
       })
     })

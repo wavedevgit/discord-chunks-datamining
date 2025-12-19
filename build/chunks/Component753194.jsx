@@ -28,7 +28,7 @@ function f(e) {
     b = (0, l.dQu)(o.Z.unsafe_rawColors.PRIMARY_300).hex(),
     y = (0, i._i)(null != n ? n : b),
     O = (0, i.ho)(y, false, g ? E : null);
-  return t = null != p ? p : .3 > (0, i.Bd)(y) ? o.Z.unsafe_rawColors.PRIMARY_630.css : o.Z.unsafe_rawColors.WHITE_500.css, (0, r.jsx)(s.u, {
+  return t = null != p ? p : .3 > (0, i.Bd)(y) ? o.Z.unsafe_rawColors.PRIMARY_630.css : o.Z.unsafe_rawColors.WHITE.css, (0, r.jsx)(s.u, {
     text: null != h ? h : d.intl.string(d.t.T3PvV4),
     children: (0, r.jsx)(u.Z, {
       className: _,

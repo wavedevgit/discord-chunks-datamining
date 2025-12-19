@@ -1,4 +1,4 @@
-/** Chunk was on 23032 **/
+/** Chunk was on 23706 **/
 /** chunk id: 697939, original params: e,t,r (module,exports,require) **/
 "use strict";
 var Chunk364510 = require("./364510.js"),
@@ -7,21 +7,21 @@ var Chunk364510 = require("./364510.js"),
   s = ["keyword", "gray", "hex"],
   i = {};
 Object.keys(Chunk114170).forEach(function(e) {
-  i[o.call(n[e].labels).sort().join("")] = e
+  i[o.call(a[e].labels).sort().join("")] = e
 });
 var c = {};
 
 function u(e, t) {
   if (!(this instanceof u)) return new u(e, t);
-  if (t && t in s && (t = null), t && !(t in n)) throw Error("Unknown model: " + t);
+  if (t && t in s && (t = null), t && !(t in a)) throw Error("Unknown model: " + t);
   if (null == e) this.model = "rgb", this.color = [0, 0, 0], this.valpha = 1;
   else if (e instanceof u) this.model = e.model, this.color = e.color.slice(), this.valpha = e.valpha;
   else if ("string" == typeof e) {
-    var r, l, f = a.get(e);
+    var r, l, f = n.get(e);
     if (null === f) throw Error("Unable to parse color from string: " + e);
-    this.model = f.model, l = n[this.model].channels, this.color = f.value.slice(0, l), this.valpha = "number" == typeof f.value[l] ? f.value[l] : 1
+    this.model = f.model, l = a[this.model].channels, this.color = f.value.slice(0, l), this.valpha = "number" == typeof f.value[l] ? f.value[l] : 1
   } else if (e.length) {
-    this.model = t || "rgb", l = n[this.model].channels;
+    this.model = t || "rgb", l = a[this.model].channels;
     var d = o.call(e, 0, l);
     this.color = b(d, l), this.valpha = "number" == typeof e[l] ? e[l] : 1
   } else if ("number" == typeof e) e &= 0xffffff, this.model = "rgb", this.color = [e >> 16 & 255, e >> 8 & 255, 255 & e], this.valpha = 1;
@@ -32,15 +32,15 @@ function u(e, t) {
     var p = h.sort().join("");
     if (!(p in i)) throw Error("Unable to parse color from object: " + JSON.stringify(e));
     this.model = i[p];
-    var m = n[this.model].labels,
+    var y = a[this.model].labels,
       g = [];
-    for (r = 0; r < m.length; r++) g.push(e[m[r]]);
+    for (r = 0; r < y.length; r++) g.push(e[y[r]]);
     this.color = b(g)
   }
   if (c[this.model])
-    for (r = 0, l = n[this.model].channels; r < l; r++) {
-      var y = c[this.model][r];
-      y && (this.color[r] = y(this.color[r]))
+    for (r = 0, l = a[this.model].channels; r < l; r++) {
+      var v = c[this.model][r];
+      v && (this.color[r] = v(this.color[r]))
     }
   this.valpha = Math.max(0, Math.min(1, this.valpha)), Object.freeze && Object.freeze(this)
 }
@@ -49,9 +49,9 @@ function l(e, t, r) {
   return (e = Array.isArray(e) ? e : [e]).forEach(function(e) {
       (c[e] || (c[e] = []))[t] = r
     }), e = e[0],
-    function(a) {
-      var n;
-      return arguments.length ? (r && (a = r(a)), (n = this[e]()).color[t] = a) : (n = this[e]().color[t], r && (n = r(n))), n
+    function(n) {
+      var a;
+      return arguments.length ? (r && (n = r(n)), (a = this[e]()).color[t] = n) : (a = this[e]().color[t], r && (a = r(a))), a
     }
 }
 
@@ -73,20 +73,20 @@ u.prototype = {
     return this[this.model]()
   },
   string: function(e) {
-    var t = this.model in a.to ? this : this.rgb(),
+    var t = this.model in n.to ? this : this.rgb(),
       r = 1 === (t = t.round("number" == typeof e ? e : 1)).valpha ? t.color : t.color.concat(this.valpha);
-    return a.to[t.model](r)
+    return n.to[t.model](r)
   },
   percentString: function(e) {
     var t = this.rgb().round("number" == typeof e ? e : 1),
       r = 1 === t.valpha ? t.color : t.color.concat(this.valpha);
-    return a.to.rgb.percent(r)
+    return n.to.rgb.percent(r)
   },
   array: function() {
     return 1 === this.valpha ? this.color.slice() : this.color.concat(this.valpha)
   },
   object: function() {
-    for (var e = {}, t = Chunk114170[this.model].channels, r = Chunk114170[this.model].labels, a = 0; Chunk364510 < exports; Chunk364510++) module[require[Chunk364510]] = this.color[Chunk364510];
+    for (var e = {}, t = Chunk114170[this.model].channels, r = Chunk114170[this.model].labels, n = 0; Chunk364510 < exports; Chunk364510++) module[require[Chunk364510]] = this.color[Chunk364510];
     return 1 !== this.valpha && (module.alpha = this.valpha), module
   },
   unitArray: function() {
@@ -131,10 +131,10 @@ u.prototype = {
   a: l("lab", 1),
   b: l("lab", 2),
   keyword: function(e) {
-    return arguments.length ? new u(e) : n[this.model].keyword(this.color)
+    return arguments.length ? new u(e) : a[this.model].keyword(this.color)
   },
   hex: function(e) {
-    return arguments.length ? new u(e) : a.to.hex(this.rgb().round().color)
+    return arguments.length ? new u(e) : n.to.hex(this.rgb().round().color)
   },
   rgbNumber: function() {
     var e = this.rgb().color;
@@ -142,7 +142,7 @@ u.prototype = {
   },
   luminosity: function() {
     for (var e = this.rgb().color, t = [], r = 0; require < module.length; require++) {
-      var a = module[require] / 255;
+      var n = module[require] / 255;
       exports[require] = Chunk364510 <= .03928 ? Chunk364510 / 12.92 : Math.pow((Chunk364510 + .055) / 1.055, 2.4)
     }
     return .2126 * exports[0] + .7152 * exports[1] + .0722 * exports[2]
@@ -210,22 +210,22 @@ u.prototype = {
   mix: function(e, t) {
     if (!e || !e.rgb) throw Error('Argument to "mix" was not a Color instance, but rather an instance of ' + typeof e);
     var r = e.rgb(),
-      a = this.rgb(),
-      n = true === t ? .5 : t,
-      o = 2 * n - 1,
-      s = r.alpha() - a.alpha(),
+      n = this.rgb(),
+      a = true === t ? .5 : t,
+      o = 2 * a - 1,
+      s = r.alpha() - n.alpha(),
       i = ((o * s == false ? o : (o + s) / (1 + o * s)) + 1) / 2,
       c = 1 - i;
-    return u.rgb(i * r.red() + c * a.red(), i * r.green() + c * a.green(), i * r.blue() + c * a.blue(), r.alpha() * n + a.alpha() * (1 - n))
+    return u.rgb(i * r.red() + c * n.red(), i * r.green() + c * n.green(), i * r.blue() + c * n.blue(), r.alpha() * a + n.alpha() * (1 - a))
   }
 }, Object.keys(Chunk114170).forEach(function(e) {
   if (false === s.indexOf(e)) {
-    var t = n[e].channels;
+    var t = a[e].channels;
     u.prototype[e] = function() {
       if (this.model === e) return new u(this);
       if (arguments.length) return new u(arguments, e);
-      var r, a = "number" == typeof arguments[t] ? t : this.valpha;
-      return new u((Array.isArray(r = n[this.model][e].raw(this.color)) ? r : [r]).concat(a), e)
+      var r, n = "number" == typeof arguments[t] ? t : this.valpha;
+      return new u((Array.isArray(r = a[this.model][e].raw(this.color)) ? r : [r]).concat(n), e)
     }, u[e] = function(r) {
       return "number" == typeof r && (r = b(o.call(arguments), t)), new u(r, e)
     }

@@ -21,7 +21,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk431135 = require("./431135.js");
 
 function g() {
-  var e, t, n, g, v, j, y, C;
+  var e, t, n, g, v, j, C, y;
   (0, Chunk223143.mw)();
   let _ = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     S = Chunk695346.L1.useSetting(),
@@ -35,8 +35,8 @@ function g() {
     k = null != w && null != (v = N.find(e => e.skuId === w)) ? v : null,
     R = null != I && null != (j = P.find(e => e.skuId === I)) ? j : null,
     A = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == k ? true : k.skuId)),
-    Z = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == R ? true : R.skuId)),
-    D = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.fontSize),
+    D = (0, Chunk442837.e7)([Chunk597688.Z], () => Chunk597688.Z.getProduct(null == R ? true : R.skuId)),
+    Z = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.fontSize),
     L = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.messageGroupSpacing),
     M = Chunk695346.YC.useSetting();
   return (0, Chunk176038.ub)(), (0, Chunk54381.jsxs)("div", {
@@ -76,13 +76,13 @@ function g() {
         children: ["Client Theme ID:", " ", null != T ? null == (g = Chunk469115.qt[T]) ? true : g.getName() : "None"]
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Avatar Decoration: ", null != (y = null == A ? true : A.name) ? y : "None"]
+        children: ["Avatar Decoration: ", null != (C = null == A ? true : A.name) ? C : "None"]
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Nameplate: ", null != (C = null == Z ? true : Z.name) ? C : "None"]
+        children: ["Nameplate: ", null != (y = null == D ? true : D.name) ? y : "None"]
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Font Size: ", D, "px"]
+        children: ["Font Size: ", Z, "px"]
       }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Message Spacing: ", L]

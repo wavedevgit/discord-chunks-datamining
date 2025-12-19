@@ -26,7 +26,7 @@ let g = "Make sure you're only uploading text files!",
       onClick: l
     } = e, {
       deleteConfig: s
-    } = (0, f.n6)();
+    } = (0, h.n6)();
     return (0, a.jsxs)(c.P3F, {
       className: b.previewCard,
       onClick: () => {
@@ -58,15 +58,15 @@ function j() {
     profileEffects: e,
     upsertConfig: t,
     clearAll: n
-  } = (0, Chunk373071.n6)(), [i, j] = Chunk473749.useState(), y = Chunk473749.useRef(null), C = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects());
+  } = (0, Chunk373071.n6)(), [i, j] = Chunk473749.useState(), C = Chunk473749.useRef(null), y = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects());
   (0, Chunk267097.Z)();
-  let [_, S] = Chunk473749.useState(""), E = Chunk473749.useMemo(() => "" === _ ? C : C.filter(e => {
+  let [_, S] = Chunk473749.useState(""), E = Chunk473749.useMemo(() => "" === _ ? y : y.filter(e => {
     var t, n, a, r;
     let i = _.toLowerCase(),
       l = null != (a = null == (t = e.config.title) ? true : t.toLowerCase()) ? a : "",
       s = null != (r = null == (n = e.config.description) ? true : n.toLowerCase()) ? r : "";
     return l.includes(i) || s.includes(i)
-  }), [_, C]), T = Chunk473749.useCallback((e, n) => {
+  }), [_, y]), T = Chunk473749.useCallback((e, n) => {
     if (null == n || !e.type.startsWith("text/")) return (0, p.Eo)(g);
     let [a, r] = n.split(",");
     if (!a.includes("text/plain")) return (0, p.Eo)(g);
@@ -117,7 +117,7 @@ function j() {
             color: "always-white",
             children: "Import Shared Config"
           }), (0, Chunk54381.jsx)(Chunk53281.Z, {
-            ref: y,
+            ref: C,
             onChange: O,
             multiple: false
           })]

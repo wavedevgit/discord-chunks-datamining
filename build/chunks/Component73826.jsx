@@ -23,22 +23,22 @@ let v = e => {
   let {
     isFullyExpanded: t,
     partnerBranding: n
-  } = e, i = (0, f.qe)().label, v = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), {
+  } = e, i = (0, h.qe)().label, v = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), {
     quest: j
-  } = r.useContext(h.A), {
-    expansionSpring: y
-  } = r.useContext(p.xo), C = i ? false : 6;
+  } = r.useContext(f.A), {
+    expansionSpring: C
+  } = r.useContext(p.xo), y = i ? false : 6;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.animated.div, {
       className: g.rewardTileContainer,
       style: {
-        transform: (0, s.to)([y.to({
+        transform: (0, s.to)([C.to({
           range: [0, 1],
           output: [0, 0]
-        }), y.to({
+        }), C.to({
           range: [0, 1],
           output: [0, 82]
-        }), y.to({
+        }), C.to({
           range: [0, 1],
           output: [1, 64 / 48]
         })], (e, t, n) => "translate(".concat(e, "px, ").concat(t, "px) scale(").concat(n, ")"))
@@ -63,12 +63,12 @@ let v = e => {
         [g.rewardHighlightLogoCTALabel]: i
       }),
       style: {
-        transform: (0, s.to)([y.to({
+        transform: (0, s.to)([C.to({
           range: [0, 1],
           output: [0, false]
-        }), y.to({
+        }), C.to({
           range: [0, 1],
-          output: [0, C]
+          output: [0, y]
         })], (e, t) => "translate(".concat(e, "px, ").concat(t, "px)"))
       },
       children: [(0, a.jsx)("div", {
@@ -81,7 +81,7 @@ let v = e => {
           [g.rewardHighlightCTALabel]: i
         }),
         style: {
-          opacity: y.to({
+          opacity: C.to({
             range: [0, 1],
             output: [i ? 1 : .7, 0]
           })

@@ -64,7 +64,7 @@ function O() {
       canDeauthorize: R,
       deauthorize: A
     } = function(e) {
-      let t = (0, s.e7)([y.default], () => y.default.getNewestTokenForApplication(e)),
+      let t = (0, s.e7)([C.default], () => C.default.getNewestTokenForApplication(e)),
         n = r.useCallback(() => {
           null != t && u.Z.delete(t.id)
         }, [t]);
@@ -109,7 +109,7 @@ function O() {
         variant: "text-md/normal",
         children: ["Linked Games:", " ", P.length > 0 ? P.map(e => {
           var t;
-          return (null == (t = (0, h.r)(N)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
+          return (null == (t = (0, f.r)(N)) ? true : t.id) === e.id ? "".concat(e.name, "*") : e.name
         }).join(", ") : "N/A"]
       })]
     }), (0, Chunk54381.jsxs)("div", {

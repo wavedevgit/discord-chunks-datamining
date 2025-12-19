@@ -241,7 +241,7 @@ O(D, "Sizes", A), O(D, "defaultProps", {
   showTooltip: false,
   active: false,
   tooltipPosition: "top",
-  badgeStrokeColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css,
+  badgeStrokeColor: Chunk692547.Z.unsafe_rawColors.WHITE.css,
   animate: false
 });
 let x = D

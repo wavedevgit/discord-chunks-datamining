@@ -40,7 +40,7 @@ let E = async () => {
 }, T = async (e, t) => {
   try {
     await s.tn.post({
-      url: y.ANM.CREATE_USER_OFFER(e, t),
+      url: C.ANM.CREATE_USER_OFFER(e, t),
       rejectWithError: true
     })
   } catch (e) {} finally {
@@ -49,7 +49,7 @@ let E = async () => {
 }, O = async (e, t) => {
   try {
     await s.tn.del({
-      url: y.ANM.UPDATE_USER_OFFER(e, t),
+      url: C.ANM.UPDATE_USER_OFFER(e, t),
       rejectWithError: true
     })
   } catch (e) {} finally {
@@ -81,7 +81,7 @@ let E = async () => {
   }
 }, w = async e => {
   await s.tn.post({
-    url: y.ANM.CREATE_REVERSE_TRIAL,
+    url: C.ANM.CREATE_REVERSE_TRIAL,
     body: {
       ends_at: e
     },
@@ -93,7 +93,7 @@ function I(e) {
   var t, n, i, o, c;
   let {
     offer: p,
-    offerOptions: h,
+    offerOptions: f,
     forceRefetch: g
   } = e, [v, j] = r.useState(false), [S, E] = r.useState(false), [T, N] = r.useState(false), [P, w] = r.useState(false);
   r.useEffect(() => {
@@ -110,18 +110,18 @@ function I(e) {
     expires_at: k,
     redeemed_at: R,
     trial_id: A,
-    subscription_trial: Z,
-    referrer: D
-  } = p, L = null != (n = null == (t = h.find(e => {
+    subscription_trial: D,
+    referrer: Z
+  } = p, L = null != (n = null == (t = f.find(e => {
     let {
       value: t
     } = e;
     return t === A
   })) ? true : t.label) ? n : "Unknown";
-  null != D && (L = "".concat(L, " from @").concat(D.username));
+  null != Z && (L = "".concat(L, " from @").concat(Z.username));
   let M = null != k,
     U = null != k && new Date(k).getTime() < Date.now(),
-    B = (null == Z ? true : Z.sku_id) === C.Si.TIER_0,
+    B = (null == D ? true : D.sku_id) === y.Si.TIER_0,
     F = async () => {
       N(true), M ? await G({
         expiresAt: null
@@ -130,7 +130,7 @@ function I(e) {
       N(true);
       try {
         await s.tn.patch({
-          url: y.ANM.UPDATE_USER_OFFER(I, "trial"),
+          url: C.ANM.UPDATE_USER_OFFER(I, "trial"),
           body: function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -190,7 +190,7 @@ function I(e) {
     }), (0, a.jsxs)(d.P3F, {
       className: l()(_.row, _.idRow),
       onClick: () => {
-        (0, f.JG)(I, () => j(true))
+        (0, h.JG)(I, () => j(true))
       },
       children: [(0, a.jsxs)(d.Text, {
         variant: "eyebrow",
@@ -208,7 +208,7 @@ function I(e) {
     }), (0, a.jsxs)(d.P3F, {
       className: l()(_.row, _.idRow),
       onClick: () => {
-        (0, f.JG)(A, () => E(true))
+        (0, h.JG)(A, () => E(true))
       },
       children: [(0, a.jsxs)(d.Text, {
         variant: "eyebrow",
@@ -229,8 +229,8 @@ function I(e) {
         variant: "eyebrow",
         color: "always-white",
         children: ["Trial Length:", " ", (0, b.if)({
-          intervalType: null != (i = null == Z ? true : Z.interval) ? i : C.rV.MONTH,
-          intervalCount: null != (o = null == Z ? true : Z.interval_count) ? o : 1,
+          intervalType: null != (i = null == D ? true : D.interval) ? i : y.rV.MONTH,
+          intervalCount: null != (o = null == D ? true : D.interval_count) ? o : 1,
           capitalize: false
         })]
       })
@@ -257,7 +257,7 @@ function I(e) {
         children: "Referrer ID:"
       }), (0, a.jsx)("input", {
         type: "text",
-        value: null != (c = null == D ? true : D.id) ? c : "",
+        value: null != (c = null == Z ? true : Z.id) ? c : "",
         onChange: e => G({
           referrerId: e.target.value
         })
@@ -307,7 +307,7 @@ function k(e) {
     offer: i,
     offerOptions: o,
     forceRefetch: c
-  } = e, [p, h] = r.useState(false), [b, g] = r.useState(false), [v, j] = r.useState(false), [C, S] = r.useState(false);
+  } = e, [p, f] = r.useState(false), [b, g] = r.useState(false), [v, j] = r.useState(false), [y, S] = r.useState(false);
   r.useEffect(() => {
     v && S(true);
     let e = setTimeout(() => {
@@ -329,17 +329,17 @@ function k(e) {
     } = e;
     return t === P
   })) ? true : t.label) ? n : "Unknown", k = null != T, R = null != T && new Date(T).getTime() < Date.now(), A = async () => {
-    j(true), k ? await Z({
+    j(true), k ? await D({
       expiresAt: null
     }) : await (0, m.ab)(true, i), c(), j(false)
-  }, Z = async e => {
+  }, D = async e => {
     let {
       expiresAt: t
     } = e;
     j(true);
     try {
       await s.tn.patch({
-        url: y.ANM.UPDATE_USER_OFFER(E, "discount"),
+        url: C.ANM.UPDATE_USER_OFFER(E, "discount"),
         body: {
           expires_at: t
         },
@@ -352,7 +352,7 @@ function k(e) {
   r.useEffect(() => {
     if (p) {
       let e = setTimeout(() => {
-        h(false)
+        f(false)
       }, 3e3);
       return () => {
         clearTimeout(e)
@@ -367,8 +367,8 @@ function k(e) {
       }
     }
   }, [p, b]);
-  let D = "Active";
-  return R && (D = "Expired"), k && (D = "Acked"), (0, a.jsxs)("div", {
+  let Z = "Active";
+  return R && (Z = "Expired"), k && (Z = "Acked"), (0, a.jsxs)("div", {
     className: l()(_.card, _.discount),
     children: [(0, a.jsxs)("div", {
       className: l()(_.row, _.nameRow),
@@ -389,7 +389,7 @@ function k(e) {
     }), (0, a.jsxs)(d.P3F, {
       className: l()(_.row, _.idRow),
       onClick: () => {
-        (0, f.JG)(E, () => h(true))
+        (0, h.JG)(E, () => f(true))
       },
       children: [(0, a.jsxs)(d.Text, {
         variant: "eyebrow",
@@ -407,7 +407,7 @@ function k(e) {
     }), (0, a.jsxs)(d.P3F, {
       className: l()(_.row, _.idRow),
       onClick: () => {
-        (0, f.JG)(P, () => g(true))
+        (0, h.JG)(P, () => g(true))
       },
       children: [(0, a.jsxs)(d.Text, {
         variant: "eyebrow",
@@ -437,7 +437,7 @@ function k(e) {
       }), (0, a.jsx)("input", {
         type: "datetime-local",
         value: (0, x.mm)(T),
-        onChange: e => Z({
+        onChange: e => D({
           expiresAt: "" !== e.target.value ? new Date(e.target.value).toISOString() : null
         })
       })]
@@ -451,8 +451,8 @@ function k(e) {
         }),
         children: (0, a.jsx)(d.Text, {
           variant: "eyebrow",
-          color: "Acked" === D ? true : "always-white",
-          children: D
+          color: "Acked" === Z ? true : "always-white",
+          children: Z
         })
       }), null != N && (0, a.jsx)("div", {
         className: l()(_.badge, _.redeemed),
@@ -464,7 +464,7 @@ function k(e) {
       })]
     }), (0, a.jsx)("div", {
       className: l()(_.loadingContainer, {
-        [_.isLoading]: v || C
+        [_.isLoading]: v || y
       }),
       children: (0, a.jsx)(d.$jN, {})
     })]
@@ -472,7 +472,7 @@ function k(e) {
 }
 
 function R() {
-  let [e, t] = Chunk473749.useState([]), [n, i] = Chunk473749.useState([]), [l, s] = Chunk473749.useState(), [u, f] = Chunk473749.useState(), [x, b] = Chunk473749.useState([]), [C, O] = Chunk473749.useState([]), [R, A] = Chunk473749.useState(true), [Z, D] = Chunk473749.useState(10080), [L, M] = Chunk473749.useState([]), {
+  let [e, t] = Chunk473749.useState([]), [n, i] = Chunk473749.useState([]), [l, s] = Chunk473749.useState(), [u, h] = Chunk473749.useState(), [x, b] = Chunk473749.useState([]), [y, O] = Chunk473749.useState([]), [R, A] = Chunk473749.useState(true), [D, Z] = Chunk473749.useState(10080), [L, M] = Chunk473749.useState([]), {
     entitlements: U,
     deleteFractionalPremium: B,
     refreshEntitlementList: F
@@ -480,7 +480,7 @@ function R() {
   Chunk473749.useEffect(() => {
     F()
   }, [F]), Chunk473749.useEffect(() => {
-    M(U.filter(e => e.sourceType === y.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
+    M(U.filter(e => e.sourceType === C.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
   }, [U]), Chunk473749.useEffect(() => {
     (0 === module.length || 0 === require.length || R) && E().then(e => {
       let n = Object.keys(e.trial).map(t => ({
@@ -491,7 +491,7 @@ function R() {
           label: t,
           value: e.discount[t]
         }));
-      t(n), i(a), null == l && s(n[0].value), null == u && f(a[0].value)
+      t(n), i(a), null == l && s(n[0].value), null == u && h(a[0].value)
     })
   }, [module, require, l, Chunk105713, R]), Chunk473749.useEffect(() => {
     R && (A(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), N().then(e => {
@@ -502,10 +502,10 @@ function R() {
     null != l && (await T(l, "trial"), A(true))
   }, V = async () => {
     null != Chunk105713 && (await T(Chunk105713, "discount"), A(true))
-  }, H = async () => {
-    await P(), A(true)
   }, z = async () => {
-    let e = new Date(Date.now() + 60 * Z * 1e3).toISOString();
+    await P(), A(true)
+  }, W = async () => {
+    let e = new Date(Date.now() + 60 * D * 1e3).toISOString();
     await w(module), F()
   };
   return (0, Chunk54381.jsx)(Chunk481060.zJl, {
@@ -523,7 +523,7 @@ function R() {
             variant: "primary",
             size: "sm",
             text: "Clear all User Offers",
-            onClick: H
+            onClick: z
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             size: "sm",
@@ -575,7 +575,7 @@ function R() {
             isSelected: e => u === e,
             placeholder: "Discount Type",
             serialize: e => String(e),
-            select: e => f(e),
+            select: e => h(e),
             popoutLayerContext: Chunk246992.O$
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
@@ -625,15 +625,15 @@ function R() {
               label: "1 week",
               value: 10080
             }],
-            isSelected: e => Z === e,
+            isSelected: e => D === e,
             placeholder: "Reverse Trial Length",
             serialize: e => String(e),
-            select: e => D(e),
+            select: e => Z(e),
             popoutLayerContext: Chunk246992.O$
           }), (0, Chunk54381.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Create",
-            onClick: z
+            onClick: W
           })]
         })]
       }), L.length > 0 && (0, Chunk54381.jsxs)("div", {

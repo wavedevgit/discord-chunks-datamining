@@ -22,7 +22,7 @@ function x(e) {
     id: t
   } = e, n = (0, r.e7)([o.default], () => o.default.getUser(t));
   return null == n ? null : (0, a.jsx)(i.P3F, {
-    className: f.entryAuthor,
+    className: h.entryAuthor,
     onClick: function() {
       (0, s.openUserProfileModal)({
         sourceAnalyticsLocations: [l.Z.DEV_TOOLS],
@@ -55,7 +55,7 @@ function b() {
     if (!(0, m.g)(n, t)) return [];
     let r = l[(0, c.T)(t)];
     return (0, a.jsxs)("li", {
-      className: f.locatorEntry,
+      className: h.locatorEntry,
       children: [(0, a.jsx)(x, {
         type: t.author_type,
         id: t.author_id

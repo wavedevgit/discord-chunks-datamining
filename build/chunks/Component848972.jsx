@@ -437,7 +437,7 @@ let Q = e => {
               size: "md",
               className: A.checklistIcon,
               color: o.Z.unsafe_rawColors.GREEN_360.css,
-              secondaryColor: o.Z.unsafe_rawColors.WHITE_500.css
+              secondaryColor: o.Z.unsafe_rawColors.WHITE.css
             }), (0, l.jsx)(x.Text, {
               variant: "text-md/normal",
               children: R.intl.format(R.t.K8Eg4P, {
@@ -458,7 +458,7 @@ let Q = e => {
               size: "md",
               className: A.checklistIcon,
               color: o.Z.unsafe_rawColors.GREEN_360.css,
-              secondaryColor: o.Z.unsafe_rawColors.WHITE_500.css
+              secondaryColor: o.Z.unsafe_rawColors.WHITE.css
             }), (0, l.jsx)(x.Text, {
               variant: "text-md/normal",
               children: R.intl.string(R.t.LfeFFr)

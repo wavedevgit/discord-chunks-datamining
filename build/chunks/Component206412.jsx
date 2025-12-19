@@ -47,9 +47,9 @@ function d(e) {
     initExpanded: n,
     highlightMode: d = "none",
     children: u
-  } = e, [m, p] = r.useState(n), h = r.useCallback(() => {
+  } = e, [m, p] = r.useState(n), f = r.useCallback(() => {
     p(!m)
-  }, [m]), f = "root" === d ? "status-warning" : "status-positive", x = e => "migrated" === d ? (0, a.jsx)(i.Text, {
+  }, [m]), h = "root" === d ? "status-warning" : "status-positive", x = e => "migrated" === d ? (0, a.jsx)(i.Text, {
     variant: e,
     children: (0, a.jsx)(o, {
       text: t
@@ -61,7 +61,7 @@ function d(e) {
     })
   }) : (0, a.jsx)(i.Text, {
     variant: e,
-    color: f,
+    color: h,
     children: t
   });
   return null == u ? (0, a.jsx)("div", {
@@ -71,7 +71,7 @@ function d(e) {
     className: s.settingNode,
     children: [(0, a.jsxs)(i.P3F, {
       className: s.headerBar,
-      onClick: h,
+      onClick: f,
       children: [x("text-md/bold"), (0, a.jsx)(l.Z, {
         direction: m ? l.Z.Directions.DOWN : l.Z.Directions.RIGHT,
         className: s.headerCaret

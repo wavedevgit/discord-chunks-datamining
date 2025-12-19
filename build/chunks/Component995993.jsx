@@ -76,7 +76,7 @@ function x(e) {
     })
   }, [t]), T = null;
   return S && !_ && !P || x || N || (T = (0, r.jsx)(s.IGR, {
-    color: o.Z.colors.BADGE_BACKGROUND_DEFAULT.css,
+    color: o.Z.colors.BADGE_BACKGROUND_BRAND.css,
     text: C.intl.string(C.t.y2b7CA)
   })), (0, r.jsx)(y.m, {
     id: "channels-".concat(t.id),

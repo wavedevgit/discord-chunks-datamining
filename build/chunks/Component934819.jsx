@@ -50,7 +50,7 @@ function m() {
         })
       }
     }, []),
-    h = Chunk473749.useMemo(() => module.map(e => {
+    f = Chunk473749.useMemo(() => module.map(e => {
       let t = o.default.getUser(e),
         n = null != t ? c.ZP.getName(t) : "Unknown";
       return (0, a.jsx)("div", {
@@ -86,7 +86,7 @@ function m() {
             children: "User IDs missing from Worker:"
           }), (0, Chunk54381.jsx)("div", {
             className: Chunk605716.nestedDetailsList,
-            children: h
+            children: f
           })]
         }), require && 0 === module.length && (0, Chunk54381.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",

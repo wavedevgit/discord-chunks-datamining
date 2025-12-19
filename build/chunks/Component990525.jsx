@@ -137,7 +137,7 @@ let E = e => {
               size: "md",
               color: "currentColor",
               colorClass: P.checkmark,
-              secondaryColor: s.Z.unsafe_rawColors.WHITE_500.css
+              secondaryColor: s.Z.unsafe_rawColors.WHITE.css
             })
           }), S && !T && (0, r.jsx)("div", {
             className: l()([P.iconCircle, P.lockedCircle]),

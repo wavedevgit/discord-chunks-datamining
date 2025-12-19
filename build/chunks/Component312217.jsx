@@ -46,7 +46,7 @@ function d(e) {
   var {
     width: t = 255,
     height: r = 178,
-    color: d = i.Z.unsafe_rawColors.WHITE_500.css
+    color: d = i.Z.unsafe_rawColors.WHITE.css
   } = e, u = function(e, t) {
     if (null == e) return {};
     var r, n, i = function(e, t) {

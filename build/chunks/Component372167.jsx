@@ -1,7 +1,7 @@
 /** Chunk was on 6043 **/
 /** chunk id: 372167, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk793030 = require("./793030.js"),
@@ -20,7 +20,7 @@ function p() {
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     handleOpenUserProfileModal: t,
     markAsDismissed: n

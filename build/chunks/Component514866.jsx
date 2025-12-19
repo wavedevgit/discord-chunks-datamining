@@ -1,7 +1,7 @@
 /** Chunk was on 6043 **/
 /** chunk id: 514866, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -24,7 +24,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk293717 = require("./293717.js"),
   Chunk478411 = require("./478411.js");
 
-function C() {
+function y() {
   let e = Chunk594174.default.getCurrentUser(),
     t = null == module ? true : module.isStaff(),
     r = Chunk695346.Rt.useSetting();
@@ -131,7 +131,7 @@ function C() {
         children: (0, Chunk54381.jsx)(Chunk481060.rsf, {
           label: "Ignore profile speedbump disabled",
           checked: Chunk120356,
-          onChange: e => h.Rt.updateSetting(e)
+          onChange: e => f.Rt.updateSetting(e)
         })
       })]
     })]

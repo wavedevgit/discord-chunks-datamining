@@ -1,7 +1,7 @@
 /** Chunk was on 6043 **/
 /** chunk id: 74650, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  U: () => f
+  U: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,11 +17,11 @@ var Chunk442837 = require("./442837.js"),
   Chunk289630 = require("./289630.js"),
   Chunk217379 = require("./217379.js");
 
-function f(e) {
+function h(e) {
   let {
     markAsDismissed: t,
     onCTA: n
-  } = e, f = (0, r.e7)([o.default], () => o.default.getCurrentUser()), x = (0, c.M5)(f, u.PremiumTypes.TIER_2);
+  } = e, h = (0, r.e7)([o.default], () => o.default.getCurrentUser()), x = (0, c.M5)(h, u.PremiumTypes.TIER_2);
   return (0, a.jsx)("div", {
     className: p.popup,
     children: (0, a.jsxs)("div", {
@@ -33,7 +33,7 @@ function f(e) {
           size: "xs"
         })
       }), (0, a.jsx)("img", {
-        src: h,
+        src: f,
         alt: "",
         className: p.asset
       }), (0, a.jsxs)("div", {

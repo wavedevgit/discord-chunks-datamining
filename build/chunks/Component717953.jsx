@@ -79,7 +79,7 @@ function v(e) {
     return e.length > 1 && (n = "linear-gradient(".concat(t, "deg, ").concat(e.join(", "), ")")), {
       background: "var(--background-gradient), ".concat(n)
     }
-  }, [A, a, N]), D = R ? u.Z.unsafe_rawColors.WHITE_500.css : true, x = i.useCallback(() => {
+  }, [A, a, N]), D = R ? u.Z.unsafe_rawColors.WHITE.css : true, x = i.useCallback(() => {
     v && S(), null == n || n()
   }, [v, S, n]);
   return (0, r.jsxs)("div", {

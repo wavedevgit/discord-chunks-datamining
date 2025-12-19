@@ -1,4 +1,4 @@
-/** Chunk was on 43778 **/
+/** Chunk was on 83203 **/
 /** chunk id: 346592, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -18,14 +18,14 @@ let c = function(e) {
     quest: l,
     questContent: c,
     taskDetails: d,
-    location: m,
-    sourceQuestContent: f
-  } = e, E = (0, a.DD)({
+    location: E,
+    sourceQuestContent: m
+  } = e, f = (0, a.DD)({
     quest: l,
     taskDetails: d,
-    location: m,
+    location: E,
     questContent: c,
-    sourceQuestContent: f
+    sourceQuestContent: m
   });
   return (0, r.jsxs)("div", {
     className: s()(u.wrapper, t),
@@ -34,14 +34,14 @@ let c = function(e) {
       className: u.rewardTile,
       quest: l,
       questContent: c,
-      location: m,
-      sourceQuestContent: f
+      location: E,
+      sourceQuestContent: m
     }), (0, r.jsx)("div", {
       className: u.copy,
       children: (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: E
+        children: f
       })
     })]
   })

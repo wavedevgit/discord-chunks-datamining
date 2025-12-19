@@ -27,8 +27,8 @@ function v(e) {
     children: o
   } = e, {
     analyticsLocations: v
-  } = (0, s.ZP)(), j = (0, r.useRef)(null), y = (0, i.e7)([u.Z], () => u.Z.isFocused()), C = (0, r.useCallback)(() => {
-    t(h.L.TAKE_ACTION), (0, d.openUserSettings)(c.n.PROFILE_PANEL, {
+  } = (0, s.ZP)(), j = (0, r.useRef)(null), C = (0, i.e7)([u.Z], () => u.Z.isFocused()), y = (0, r.useCallback)(() => {
+    t(f.L.TAKE_ACTION), (0, d.openUserSettings)(c.n.PROFILE_PANEL, {
       section: p.oAB.PROFILE_CUSTOMIZATION,
       analyticsLocations: v
     }, () => {
@@ -37,12 +37,12 @@ function v(e) {
       })
     })
   }, [t, v]), _ = (0, r.useCallback)(() => {
-    t(h.L.USER_DISMISS)
+    t(f.L.USER_DISMISS)
   }, [t]);
   return (0, r.useEffect)(() => {
     var e, t, n;
-    y && (null == (e = j.current) ? true : e.paused) ? null == (t = j.current) || t.play().catch(g.error) : y || null == (n = j.current) || n.pause()
-  }, [y]), (0, a.jsxs)(a.Fragment, {
+    C && (null == (e = j.current) ? true : e.paused) ? null == (t = j.current) || t.play().catch(g.error) : C || null == (n = j.current) || n.pause()
+  }, [C]), (0, a.jsxs)(a.Fragment, {
     children: [o, (0, a.jsx)(l.J, {
       targetElementRef: n,
       shouldShow: true,
@@ -61,12 +61,12 @@ function v(e) {
         loop: true
       },
       size: "lg",
-      title: x.intl.string(f.default["1AE464"]),
-      body: [x.intl.string(f.default.cNc1g9), x.intl.string(x.t["4JNXHG"])],
+      title: x.intl.string(h.default["1AE464"]),
+      body: [x.intl.string(h.default.cNc1g9), x.intl.string(x.t["4JNXHG"])],
       actions: [{
         text: x.intl.string(x.t.uw9zI7),
         variant: "primary",
-        onClick: C
+        onClick: y
       }]
     })]
   })

@@ -22,7 +22,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk594174 = require("./594174.js"),
   Chunk246992 = require("./246992.js"),
   Chunk474936 = require("./474936.js");
-let C = Chunk473749.forwardRef((e, t) => {
+let y = Chunk473749.forwardRef((e, t) => {
   let [n, i] = r.useState(null), [l, o] = r.useState(null), [d, u] = r.useState(false), m = r.useCallback(async () => {
     u(true), o(null), i(null);
     try {
@@ -82,7 +82,7 @@ let C = Chunk473749.forwardRef((e, t) => {
     })]
   })
 });
-C.displayName = "DebugWarpLicenseInfo";
+y.displayName = "DebugWarpLicenseInfo";
 let _ = e => {
     let {
       onSuccess: t
@@ -140,8 +140,8 @@ let _ = e => {
       perkAvailableToUser: k
     })), {
       installationStatus: A,
-      setInstallationStatus: Z,
-      connectionStatus: D,
+      setInstallationStatus: D,
+      connectionStatus: Z,
       setConnectionStatus: L,
       setConnect: M,
       setDisconnect: U,
@@ -149,40 +149,40 @@ let _ = e => {
       setIsWeb: F,
       setIsSupportedPrivateBrowsingPerkPlatform: G,
       isWeb: V,
-      isSupportedPrivateBrowsingPerkPlatform: H,
-      setGetWarpInstallationStatus: z,
-      perkAvailableToUser: W,
-      setPerkAvailableToUser: K
-    } = (0, Chunk663042.o)(R), q = Chunk473749.useCallback(async () => (L(Chunk5900.Ij.INITIALIZING), exports(setTimeout(() => {
+      isSupportedPrivateBrowsingPerkPlatform: z,
+      setGetWarpInstallationStatus: W,
+      perkAvailableToUser: H,
+      setPerkAvailableToUser: q
+    } = (0, Chunk663042.o)(R), K = Chunk473749.useCallback(async () => (L(Chunk5900.Ij.INITIALIZING), exports(setTimeout(() => {
       L(Chunk5900.Ij.CONNECTED)
     }, 1e3)), true), [L, exports]);
     Chunk473749.useEffect(() => {
-      M(q)
-    }, [q, M]);
+      M(K)
+    }, [K, M]);
     let Y = Chunk473749.useCallback(async () => Chunk5900._n.INSTALLING, []);
     Chunk473749.useEffect(() => {
-      K(k)
-    }, [k, K]), Chunk473749.useEffect(() => {
-      z(Y)
-    }, [z, Y]);
+      q(k)
+    }, [k, q]), Chunk473749.useEffect(() => {
+      W(Y)
+    }, [W, Y]);
     let Q = Chunk473749.useCallback(async () => (clearTimeout(module), L(Chunk5900.Ij.DISCONNECTED), true), [module, L]),
       X = Chunk473749.useCallback(() => new Promise((e, t) => {
-        Z(p._n.INSTALLING), s(setTimeout(() => {
+        D(p._n.INSTALLING), s(setTimeout(() => {
           if (S) return void t(Error("Installation failed"));
           e()
         }, T))
-      }), [S, T, Z, Chunk544891]);
+      }), [S, T, D, Chunk544891]);
     Chunk473749.useEffect(() => {
-      V && A !== Chunk5900._n.UNKNOWN && Z(Chunk5900._n.UNKNOWN)
-    }, [V, Z, A]), Chunk473749.useEffect(() => {
+      V && A !== Chunk5900._n.UNKNOWN && D(Chunk5900._n.UNKNOWN)
+    }, [V, D, A]), Chunk473749.useEffect(() => {
       U(Q)
     }, [Q, U]), Chunk473749.useEffect(() => {
       B(X)
     }, [X, B]), Chunk473749.useEffect(() => {
       A !== Chunk5900._n.INSTALLING && clearTimeout(require)
     }, [require, A]), Chunk473749.useEffect(() => {
-      if (A !== Chunk5900._n.INSTALLED && D !== Chunk5900.Ij.INITIALIZING) return void L(Chunk5900.Ij.INITIALIZING)
-    }, [A, D, L]);
+      if (A !== Chunk5900._n.INSTALLED && Z !== Chunk5900.Ij.INITIALIZING) return void L(Chunk5900.Ij.INITIALIZING)
+    }, [A, Z, L]);
     let {
       enabled: J
     } = Chunk299886.H.useConfig({
@@ -210,9 +210,9 @@ let _ = e => {
               },
               children: (0, Chunk54381.jsx)(Chunk159691.rsf, {
                 onChange: () => {
-                  W ? (0, Chunk535664.C)(null, I) : (0, Chunk535664.C)(Chunk474936.F_, I)
+                  H ? (0, Chunk535664.C)(null, I) : (0, Chunk535664.C)(Chunk474936.F_, I)
                 },
-                checked: W
+                checked: H
               })
             })]
           }), (0, Chunk54381.jsxs)(Chunk261538.BZ, {
@@ -237,8 +237,8 @@ let _ = e => {
                 width: "45px"
               },
               children: (0, Chunk54381.jsx)(Chunk159691.rsf, {
-                onChange: () => G(!H),
-                checked: H
+                onChange: () => G(!z),
+                checked: z
               })
             })]
           }), (0, Chunk54381.jsxs)(Chunk261538.BZ, {
@@ -246,7 +246,7 @@ let _ = e => {
               variant: "text-md/semibold",
               children: "Installation Status"
             }), (0, Chunk54381.jsx)(Chunk199849.B6, {
-              select: e => Z(e),
+              select: e => D(e),
               isSelected: e => e === A,
               serialize: e => "".concat(e),
               disabled: V,
@@ -286,7 +286,7 @@ let _ = e => {
               children: "Connection Status"
             }), (0, Chunk54381.jsx)(Chunk199849.B6, {
               select: e => L(e),
-              isSelected: e => e === D,
+              isSelected: e => e === Z,
               serialize: e => "".concat(e),
               options: [{
                 label: "Initializing",
@@ -390,7 +390,7 @@ let _ = e => {
           children: [(0, Chunk54381.jsx)(Chunk159691.X6q, {
             variant: "heading-lg/medium",
             children: "Private Browsing Perk WARP License Info"
-          }), (0, Chunk54381.jsx)(C, {
+          }), (0, Chunk54381.jsx)(y, {
             ref: w
           })]
         })]

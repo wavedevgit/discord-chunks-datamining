@@ -136,7 +136,7 @@ function C(e) {
 function A(e, t) {
   if (null == e) return;
   let n = {};
-  return "Selected" === t ? (n.backgroundColor = e, n.color = d.Z.unsafe_rawColors.WHITE_500.css) : ("Hover" === t && (n.backgroundColor = (0, u.wK)(e, .1)), n.color = e), n
+  return "Selected" === t ? (n.backgroundColor = e, n.color = d.Z.unsafe_rawColors.WHITE.css) : ("Hover" === t && (n.backgroundColor = (0, u.wK)(e, .1)), n.color = e), n
 }
 class N extends(r = Chunk473749.Component) {
   getStyle() {
@@ -171,7 +171,7 @@ class N extends(r = Chunk473749.Component) {
         };
         else return {
           backgroundColor: module,
-          color: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
+          color: Chunk692547.Z.unsafe_rawColors.WHITE.css
         }
     }
   }

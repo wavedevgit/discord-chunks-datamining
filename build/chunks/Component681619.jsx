@@ -41,13 +41,13 @@ function c(e) {
       variant: "text-sm/semibold",
       children: e.key
     })
-  }, e)), [t]), h = 0 === n.length ? [1] : [n.length];
+  }, e)), [t]), f = 0 === n.length ? [1] : [n.length];
   return (0, a.jsx)("div", {
     className: o.tableContainer,
     children: (0, a.jsx)(s.Tvr, {
       className: i,
       innerClassName: o.table,
-      sections: h,
+      sections: f,
       sectionHeight: 40,
       renderSection: e => {
         let {
@@ -76,12 +76,12 @@ function c(e) {
         } = e, r = n[t];
         if (null == r) return null;
         let i = r.key,
-          h = l()(o.tableRow, {
+          f = l()(o.tableRow, {
             [o.selectedTableRow]: i === u,
             rowClassName: c
           });
         return (0, a.jsx)(s.P3F, {
-          className: h,
+          className: f,
           onClick: () => null == d ? true : d(r),
           children: p.map(e => {
             var n, i;

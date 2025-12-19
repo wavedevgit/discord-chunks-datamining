@@ -1,4 +1,4 @@
-/** Chunk was on 23032 **/
+/** Chunk was on 23706 **/
 /** chunk id: 22356, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -14,9 +14,9 @@ var Chunk44837 = require("./44837.js"),
       o = e.expanded,
       s = e.nodeType,
       i = e.onClick;
-    return n.createElement("div", (0, a.Z)({}, t("arrowContainer", r), {
+    return a.createElement("div", (0, n.Z)({}, t("arrowContainer", r), {
       onClick: i
-    }), n.createElement("div", t(["arrow", "arrowSign"], s, o, r), "▶", "double" === r && n.createElement("div", t(["arrowSign", "arrowSignInner"]), "▶")))
+    }), a.createElement("div", t(["arrow", "arrowSign"], s, o, r), "▶", "double" === r && a.createElement("div", t(["arrowSign", "arrowSignInner"]), "▶")))
   };
 i.propTypes = {
   styling: s().func.isRequired,

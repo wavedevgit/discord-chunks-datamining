@@ -1,7 +1,7 @@
 /** Chunk was on 6043 **/
 /** chunk id: 26275, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,20 +15,20 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk782589 = require("./782589.js");
 
-function h() {
+function f() {
   let {
     quest: e,
     onCtxMenuOpen: t,
     onCtxMenuClose: n,
     onCtxMenuSelect: i
-  } = Chunk473749.useContext(Chunk526188.A), h = (0, Chunk968843.B6)(module.config.expiresAt);
+  } = Chunk473749.useContext(Chunk526188.A), f = (0, Chunk968843.B6)(module.config.expiresAt);
   return (0, Chunk54381.jsxs)("div", {
     className: Chunk782589.questAcceptedHeader,
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-xxs/medium",
       className: l()(Chunk782589.flex, Chunk782589.headerText),
       children: Chunk388032.intl.format(Chunk388032.t["pX+fmn"], {
-        expirationDate: h
+        expirationDate: f
       })
     }), (0, Chunk54381.jsx)(Chunk698716.i, {
       onOpen: exports,

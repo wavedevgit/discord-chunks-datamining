@@ -1,4 +1,4 @@
-/** Chunk was on 23032 **/
+/** Chunk was on 23706 **/
 /** chunk id: 309445, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -33,7 +33,7 @@ var Chunk44837 = require("./44837.js"),
 
     function b(e) {
       var t;
-      return (0, n.Z)(this, b), t = r.call(this, e), (0, l.Z)((0, s.Z)(t), "handleClick", function() {
+      return (0, a.Z)(this, b), t = r.call(this, e), (0, l.Z)((0, s.Z)(t), "handleClick", function() {
         t.setState({
           expanded: !t.state.expanded
         })
@@ -47,10 +47,10 @@ var Chunk44837 = require("./44837.js"),
         var e = this.props,
           t = e.styling,
           r = e.from,
-          n = e.to,
+          a = e.to,
           o = e.renderChildNodes,
           s = e.nodeType;
-        return this.state.expanded ? f.createElement("div", t("itemRange", this.state.expanded), o(this.props, r, n)) : f.createElement("div", (0, a.Z)({}, t("itemRange", this.state.expanded), {
+        return this.state.expanded ? f.createElement("div", t("itemRange", this.state.expanded), o(this.props, r, a)) : f.createElement("div", (0, n.Z)({}, t("itemRange", this.state.expanded), {
           onClick: this.handleClick
         }), f.createElement(h.Z, {
           nodeType: s,
@@ -58,7 +58,7 @@ var Chunk44837 = require("./44837.js"),
           expanded: false,
           onClick: this.handleClick,
           arrowStyle: "double"
-        }), "".concat(r, " ... ").concat(n))
+        }), "".concat(r, " ... ").concat(a))
       }
     }]), b
   }(Chunk473749.Component);

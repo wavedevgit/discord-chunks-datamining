@@ -93,7 +93,7 @@ function O(e) {
           onClick: T
         }), (0, a.jsx)(m.ZP.Icon, {
           icon: c.Dio,
-          tooltip: C.intl.string(C.t.cpT0Cq),
+          tooltip: y.intl.string(y.t.cpT0Cq),
           onClick: x.SO
         })]
       }),

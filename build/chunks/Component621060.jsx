@@ -27,8 +27,8 @@ let b = ["Experiments", "Dismissible Content", "Events", "Premium", "Quests", "B
       children: l
     } = e;
     return (0, r.jsx)(c.P3F, {
-      className: s()(f.tabItem, {
-        [f.selected]: a
+      className: s()(h.tabItem, {
+        [h.selected]: a
       }),
       "data-tab-id": n,
       innerRef: t,
@@ -45,7 +45,7 @@ function v(e) {
   } = e, l = i.useRef(new Map), [s, x] = i.useState(() => new Set), {
     ref: b,
     width: v
-  } = (0, d.ZP)(), j = i.useRef(null), y = (0, h.F)(t, a);
+  } = (0, d.ZP)(), j = i.useRef(null), C = (0, f.F)(t, a);
   i.useEffect(() => {
     var e, a, r, i;
     if (null == v) return;
@@ -54,7 +54,7 @@ function v(e) {
     for (let c of (o -= null != (a = null == (e = l.current.get(n)) ? true : e.getBoundingClientRect().width) ? a : 0, t)) c.id !== n && (o -= null != (i = null == (r = l.current.get(c.id)) ? true : r.getBoundingClientRect().width) ? i : 0) < 0 && s.add(c.id);
     x(s)
   }, [t, v, b, n]);
-  let C = i.useCallback(e => {
+  let y = i.useCallback(e => {
     let {
       closePopout: t
     } = e;
@@ -64,13 +64,13 @@ function v(e) {
       onClose: t,
       "aria-label": "Overflowed DevTools Tabs",
       onSelect: t,
-      children: y
+      children: C
     })
-  }, [y]);
+  }, [C]);
   return (0, r.jsxs)("div", {
-    className: f.tabBarContainer,
+    className: h.tabBarContainer,
     children: [(0, r.jsxs)("div", {
-      className: f.tabBar,
+      className: h.tabBar,
       ref: b,
       children: [t.map(e => {
         let {
@@ -84,7 +84,7 @@ function v(e) {
           children: i
         }, t)
       }).filter(m.lm), (0, r.jsx)("div", {
-        className: f.tabMeasurer,
+        className: h.tabMeasurer,
         children: t.map(e => {
           let {
             id: t,
@@ -102,11 +102,11 @@ function v(e) {
         })
       })]
     }), (0, r.jsx)("div", {
-      className: f.menu,
+      className: h.menu,
       children: s.size > 0 && (0, r.jsx)(c.yRy, {
         targetElementRef: j,
         layerContext: p.O$,
-        renderPopout: C,
+        renderPopout: y,
         position: "bottom",
         align: "right",
         autoInvert: false,
@@ -132,11 +132,11 @@ function v(e) {
             return e
           }({}, e), n = n = {
             buttonRef: j,
-            className: f.overflowChevron,
+            className: h.overflowChevron,
             size: o.zx.Sizes.ICON,
             look: o.zx.Looks.BLANK,
             children: (0, r.jsx)(u.Z, {
-              className: f.__invalid_overflowIcon,
+              className: h.__invalid_overflowIcon,
               width: 16,
               height: 16
             })

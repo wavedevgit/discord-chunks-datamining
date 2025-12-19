@@ -1,12 +1,12 @@
 /** Chunk was on 6043 **/
 /** chunk id: 620481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  FB: () => y,
+  FB: () => C,
   Jt: () => E,
   OC: () => S,
   Sr: () => _,
   V_: () => O,
-  lG: () => C,
+  lG: () => y,
   mo: () => j,
   tb: () => T
 }), require("./539854.js"), require("./388685.js"), require("./415506.js");
@@ -62,7 +62,7 @@ function j() {
   }), g.info("END Logging DM Channels\n")
 }
 
-function y() {
+function C() {
   let e = Chunk592125.Z.getMutablePrivateChannels(),
     t = [],
     n = [];
@@ -93,7 +93,7 @@ function y() {
   }), g.info("END Logging DM Channels\n")
 }
 
-function C() {
+function y() {
   let e = Chunk699516.Z.getFriendIDs();
   g.info("START Discord Friends"), module.forEach(e => {
     let t = p.default.getUser(e);
@@ -113,7 +113,7 @@ function _() {
     a = [],
     i = [];
   module.forEach(e => {
-    (0, h.lM)(e) ? t.push(e): e.isDM() ? a.push(e) : e.isMultiUserDM() ? i.push(e) : n.push(e)
+    (0, f.lM)(e) ? t.push(e): e.isDM() ? a.push(e) : e.isMultiUserDM() ? i.push(e) : n.push(e)
   }), g.info("START Frecency"), g.info("Guilds"), exports.forEach(e => {
     let t = o.Z.getScoreWithoutFetchingLatest(e.id);
     g.info("id: ".concat(e.id, " - name: ").concat(e.name, " - Frecency Score: ").concat(t))

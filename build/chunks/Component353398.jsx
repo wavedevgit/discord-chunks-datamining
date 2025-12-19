@@ -180,7 +180,7 @@ function R() {
           size: "md",
           className: Chunk865062.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
-          secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
+          secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE.css
         }), Chunk388032.intl.string(Chunk388032.t.K2tn16)]
       }), (0, Chunk54381.jsxs)("div", {
         className: Chunk865062.descriptionRow,
@@ -188,7 +188,7 @@ function R() {
           size: "md",
           className: Chunk865062.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
-          secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
+          secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE.css
         }), Chunk388032.intl.string(Chunk388032.t.om5gNq)]
       }), (0, Chunk54381.jsxs)("div", {
         className: Chunk865062.descriptionRow,
@@ -196,7 +196,7 @@ function R() {
           size: "md",
           className: Chunk865062.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
-          secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
+          secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE.css
         }), Chunk388032.intl.string(Chunk388032.t["/VNqdD"])]
       })]
     }), (0, Chunk54381.jsxs)("div", {
@@ -210,7 +210,7 @@ function R() {
           size: "md",
           className: Chunk865062.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.RED_400.css,
-          secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
+          secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE.css
         }), Chunk388032.intl.string(Chunk388032.t.WOKI6t)]
       }), (0, Chunk54381.jsxs)("div", {
         className: Chunk865062.descriptionRow,
@@ -218,7 +218,7 @@ function R() {
           size: "md",
           className: Chunk865062.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.RED_400.css,
-          secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
+          secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE.css
         }), Chunk388032.intl.string(Chunk388032.t.ddhDJH)]
       }), (0, Chunk54381.jsxs)("div", {
         className: Chunk865062.descriptionRow,
@@ -226,7 +226,7 @@ function R() {
           size: "md",
           className: Chunk865062.descriptionIcon,
           color: Chunk692547.Z.unsafe_rawColors.RED_400.css,
-          secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
+          secondaryColor: Chunk692547.Z.unsafe_rawColors.WHITE.css
         }), Chunk388032.intl.string(Chunk388032.t["6Q/DHk"])]
       })]
     })]

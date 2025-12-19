@@ -22,19 +22,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk58201 = require("./58201.js"),
   Chunk201964 = require("./201964.js"),
   Chunk635492 = require("./635492.js");
-let C = e => {
+let y = e => {
     let {
       product: t,
       isCardHovered: n
-    } = e, r = (0, h.rC)(t), {
+    } = e, r = (0, f.rC)(t), {
       isPurchased: s,
       isPartiallyOwnedBundle: o
     } = (0, p.L)(t), c = r === l.Z.PROFILE_EFFECT;
     return (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)("div", {
-        className: i()(y.productPreview, {
-          [y.faded]: (s || o) && !n,
-          [y.fullPreview]: c
+        className: i()(C.productPreview, {
+          [C.faded]: (s || o) && !n,
+          [C.fullPreview]: c
         }),
         children: (0, a.jsx)(_, {
           product: t,
@@ -49,7 +49,7 @@ let C = e => {
     let {
       product: t,
       isCardHovered: n
-    } = e, r = (0, o.e7)([u.default], () => u.default.getCurrentUser()), i = (0, h.rC)(t), s = (0, j.o)(t);
+    } = e, r = (0, o.e7)([u.default], () => u.default.getCurrentUser()), i = (0, f.rC)(t), s = (0, j.o)(t);
     switch (i) {
       case l.Z.PROFILE_EFFECT:
         return (0, a.jsx)(d.Z, {
@@ -77,7 +77,7 @@ let C = e => {
           isHighlighted: n
         });
       case l.Z.EXTERNAL_SKU:
-        return (0, a.jsx)(f.b, {
+        return (0, a.jsx)(h.b, {
           product: t,
           animationState: n ? "on" : "off"
         });
@@ -94,8 +94,8 @@ let C = e => {
       color: c.TVs.colors.INTERACTIVE_TEXT_ACTIVE,
       width: 40,
       height: 40,
-      className: i()(y.productPreviewIconOverlay, {
-        [y.hidden]: t
+      className: i()(C.productPreviewIconOverlay, {
+        [C.hidden]: t
       })
     })
   },
@@ -104,10 +104,10 @@ let C = e => {
       skuId: t,
       isCardHovered: n,
       overrideVariantIndex: r
-    } = e, i = (0, h.LJ)(t), l = (0, m.o)(i);
+    } = e, i = (0, f.LJ)(t), l = (0, m.o)(i);
     if (null == i) return null;
     let s = (0, v.W)(i, null != r ? r : l);
-    return (0, a.jsx)(C, {
+    return (0, a.jsx)(y, {
       product: s,
       isCardHovered: n
     })

@@ -8,10 +8,10 @@ var Chunk979590 = require("./979590.js"),
   i = require.n(Chunk979590),
   Chunk692547 = require("./692547.js"),
   Chunk764707 = require("./764707.js");
-let s = i()(Chunk692547.Z.unsafe_rawColors.WHITE_500.resolve({
+let s = i()(Chunk692547.Z.unsafe_rawColors.WHITE.resolve({
     saturation: 1
   }).hex()),
-  l = i()(Chunk692547.Z.unsafe_rawColors.BLACK_500.resolve({
+  l = i()(Chunk692547.Z.unsafe_rawColors.BLACK.resolve({
     saturation: 1
   }).hex()),
   c = (0, Chunk764707.Z)({

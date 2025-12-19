@@ -1,7 +1,7 @@
 /** Chunk was on 6043 **/
 /** chunk id: 551097, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,8 +21,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk73826 = require("./73826.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk952334 = require("./952334.js");
-let y = (0, Chunk620792.animated)(Chunk685613.ZP),
-  C = () => {
+let C = (0, Chunk620792.animated)(Chunk685613.ZP),
+  y = () => {
     let e = (0, Chunk915750.aM)(),
       {
         expansionSpring: t
@@ -30,8 +30,8 @@ let y = (0, Chunk620792.animated)(Chunk685613.ZP),
       {
         onCtxMenuOpen: n,
         onCtxMenuClose: i,
-        onCtxMenuSelect: h,
-        isExpanded: C,
+        onCtxMenuSelect: f,
+        isExpanded: y,
         isExpansionAnimationComplete: _,
         quest: S
       } = Chunk473749.useContext(Chunk526188.A),
@@ -50,13 +50,13 @@ let y = (0, Chunk620792.animated)(Chunk685613.ZP),
           sourceQuestContent: Chunk49436.jn.QUEST_BAR_V2
         })
       }, [module, S]),
-      O = C && _,
+      O = y && _,
       N = (0, Chunk54381.jsx)(Chunk481060.P3F, {
         onClick: T,
         className: l()(Chunk952334.clickable, {
           [Chunk952334.logo]: O
         }),
-        children: (0, Chunk54381.jsx)(y, {
+        children: (0, Chunk54381.jsx)(C, {
           quest: S,
           withGameTile: false,
           logotypeClassName: Chunk952334.partnerBranding,

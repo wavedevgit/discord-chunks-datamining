@@ -1,4 +1,4 @@
-/** Chunk was on 43778 **/
+/** Chunk was on 83203 **/
 /** chunk id: 340100, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -18,12 +18,12 @@ let d = function(e) {
     color: n = i.Z.colors.WHITE,
     quest: l,
     isInventory: d
-  } = e, m = (0, o.qb)(e.quest), {
-    percentComplete: f,
-    completedRatioDisplay: E
+  } = e, E = (0, o.qb)(e.quest), {
+    percentComplete: m,
+    completedRatioDisplay: f
   } = (0, o.I)(l);
-  return !d && m.length > 0 ? (0, r.jsx)(u.Z, {
-    children: m.at(0)
+  return !d && E.length > 0 ? (0, r.jsx)(u.Z, {
+    children: E.at(0)
   }) : (0, r.jsxs)("div", {
     className: s()(c.wrapper, t),
     style: {
@@ -35,26 +35,26 @@ let d = function(e) {
         variant: "text-xs/semibold",
         className: c.percentCompleteLabel,
         color: "none",
-        children: E
+        children: f
       }), (0, r.jsx)("div", {
         className: c.percentCompleteLabelOffset,
         style: {
-          width: "".concat(100 - f, "%")
+          width: "".concat(100 - m, "%")
         }
       })]
     }), (0, r.jsx)("div", {
       className: c.progressBar,
       role: "progressbar",
-      "aria-valuenow": f,
+      "aria-valuenow": m,
       children: (0, r.jsx)("div", {
         className: c.progressBarFill,
         style: {
-          width: "".concat(f, "%")
+          width: "".concat(m, "%")
         }
       })
-    }), m.length > 0 && (0, r.jsx)(u.Z, {
+    }), E.length > 0 && (0, r.jsx)(u.Z, {
       isInventory: d,
-      children: m.at(0)
+      children: E.at(0)
     })]
   })
 }

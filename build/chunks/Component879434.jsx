@@ -19,15 +19,15 @@ var Chunk54381 = require("./54381.js"),
 let x = e => {
     let {
       setTab: t
-    } = e, n = (0, o.e7)([u.Z], () => u.Z.getWindowOpen(h.KJ3.DEVTOOLS_POPOUT));
+    } = e, n = (0, o.e7)([u.Z], () => u.Z.getWindowOpen(f.KJ3.DEVTOOLS_POPOUT));
     return (0, a.jsxs)("div", {
-      className: f.content,
+      className: h.content,
       children: [(0, a.jsx)(s.P3F, {
         onClick: () => {
           t(1)
         },
         children: (0, a.jsx)("div", {
-          className: l()(f.banner, f.pfxBanner),
+          className: l()(h.banner, h.pfxBanner),
           children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
@@ -39,7 +39,7 @@ let x = e => {
           t(2)
         },
         children: (0, a.jsx)("div", {
-          className: l()(f.banner, f.nameplateBanner),
+          className: l()(h.banner, h.nameplateBanner),
           children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",
@@ -51,7 +51,7 @@ let x = e => {
           t(3)
         },
         children: (0, a.jsx)("div", {
-          className: l()(f.banner, f.bundlesBanner),
+          className: l()(h.banner, h.bundlesBanner),
           children: (0, a.jsx)(s.xvT, {
             variant: "text-md/bold",
             color: "always-white",

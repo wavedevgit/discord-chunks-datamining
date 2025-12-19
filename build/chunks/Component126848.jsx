@@ -55,7 +55,7 @@ function v(e) {
     isSelected: s
   } = e, d = (0, f.Vi)(), p = null != (n = null != (t = O(s)) ? t : i) ? n : (0, r.jsx)(c.SrA, {
     size: "sm",
-    color: s ? l.Z.unsafe_rawColors.WHITE_500.css : u.JX.PREMIUM_TIER_2
+    color: s ? l.Z.unsafe_rawColors.WHITE.css : u.JX.PREMIUM_TIER_2
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {

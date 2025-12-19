@@ -15,7 +15,7 @@ let c = () => (0, Chunk54381.jsx)(Chunk28664.u, {
   children: (0, Chunk54381.jsx)("div", {
     className: Chunk402844.container,
     children: (0, Chunk54381.jsx)(Chunk311888.Z, {
-      color: Chunk692547.Z.unsafe_rawColors.WHITE_500.css
+      color: Chunk692547.Z.unsafe_rawColors.WHITE.css
     })
   })
 })

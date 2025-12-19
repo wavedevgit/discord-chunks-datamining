@@ -86,7 +86,7 @@ function b(e) {
       guild: b,
       showBadge: true,
       className: null != b.icon ? p.icon : p.noIcon,
-      badgeStrokeColor: (0, a.wj)(O) ? i.Z.unsafe_rawColors.PRIMARY_600.css : i.Z.unsafe_rawColors.WHITE_500.css,
+      badgeStrokeColor: (0, a.wj)(O) ? i.Z.unsafe_rawColors.PRIMARY_600.css : i.Z.unsafe_rawColors.WHITE.css,
       badgeTooltipColor: o.r6K.PRIMARY,
       badgeTooltipDelay: f.vB,
       size: c.Z.Sizes.MEDIUM,

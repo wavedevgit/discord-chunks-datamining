@@ -12,8 +12,8 @@ var a, r, Chunk772848 = require("./772848.js"),
 let u = 0,
   m = [],
   p = 0,
-  h = [],
-  f = false;
+  f = [],
+  h = false;
 class x extends(a = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk906467.Z)
@@ -25,10 +25,10 @@ class x extends(a = Chunk442837.ZP.Store) {
     return p
   }
   get loggedTriggers() {
-    return h
+    return f
   }
   get trackTriggers() {
-    return f
+    return h
   }
 }(r = "displayName") in x ? Object.defineProperty(x, r, {
   value: "AnalyticsLogStore",
@@ -60,7 +60,7 @@ let b = new x(Chunk570140.Z, {
       location: l,
       previouslyTracked: s
     } = e;
-    d.Z.isDeveloper && f && (h = [...h, {
+    d.Z.isDeveloper && h && (f = [...f, {
       key: (0, i.Z)(),
       experimentId: t,
       descriptor: n,
@@ -69,15 +69,15 @@ let b = new x(Chunk570140.Z, {
       location: l,
       previouslyTracked: s,
       timestamp: new Date
-    }]).length > 500 && h.shift()
+    }]).length > 500 && f.shift()
   },
   SET_TRACK_TRIGGERS: function(e) {
     let {
       enabled: t
     } = e;
-    f = t
+    h = t
   },
   ANALYTICS_LOG_CLEAR: function() {
-    m = [], p++, h = []
+    m = [], p++, f = []
   }
 })

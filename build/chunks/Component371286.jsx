@@ -20,17 +20,17 @@ function p(e) {
     heading: n,
     subheading: i,
     children: p,
-    height: h,
-    className: f,
+    height: f,
+    className: h,
     contentClassName: x
   } = e, b = (0, c.Dt)(), g = r.useRef(null), v = (0, o.q_F)({
     from: {
       transform: "translate3d(-110%, 0, 0)",
-      height: h
+      height: f
     },
     to: {
       transform: "translate3d(0, 0, 0)",
-      height: h
+      height: f
     },
     config: {
       mass: 1,
@@ -42,7 +42,7 @@ function p(e) {
     }
   });
   return (0, a.jsx)(s.animated.div, {
-    className: l()(m.container, f),
+    className: l()(m.container, h),
     style: v,
     children: (0, a.jsxs)("aside", {
       "aria-labelledby": b,

@@ -1,8 +1,8 @@
-/** Chunk was on 23032 **/
+/** Chunk was on 23706 **/
 /** chunk id: 686225, original params: e,t,r (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  L: () => k
+  L: () => x
 });
 var Chunk44837 = require("./44837.js"),
   Chunk381537 = require("./381537.js"),
@@ -19,36 +19,36 @@ var Chunk44837 = require("./44837.js"),
   Chunk558876 = require("./558876.js"),
   Chunk59295 = require("./59295.js"),
   Chunk667929 = require("./667929.js"),
-  y = ["data", "keyPath", "postprocessValue", "hideRoot", "theme", "invertTheme"];
+  v = ["data", "keyPath", "postprocessValue", "hideRoot", "theme", "invertTheme"];
 
-function v(e, t) {
+function m(e, t) {
   var r = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    t && (a = a.filter(function(t) {
+    var n = Object.getOwnPropertySymbols(e);
+    t && (n = n.filter(function(t) {
       return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), r.push.apply(r, a)
+    })), r.push.apply(r, n)
   }
   return r
 }
 
-function Z(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? v(Object(r), true).forEach(function(t) {
+    t % 2 ? m(Object(r), true).forEach(function(t) {
       (0, l.Z)(e, t, r[t])
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : v(Object(r)).forEach(function(t) {
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : m(Object(r)).forEach(function(t) {
       Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
     })
   }
   return e
 }
-var w = function(e) {
+var O = function(e) {
   return e
 };
 
-function M(e) {
-  var t, r, a, n = (t = e.theme, (a = Object.keys(r = {
+function k(e) {
+  var t, r, n, a = (t = e.theme, (n = Object.keys(r = {
     getArrowStyle: "arrow",
     getListStyle: "nestedNodeChildren",
     getItemStringStyle: "nestedNodeItemString",
@@ -58,19 +58,19 @@ function M(e) {
     return e[t]
   })).length > 0 && (t = "string" == typeof t ? {
     extend: t
-  } : Z({}, t), a.forEach(function(a) {
-    console.error('Styling method "'.concat(a, '" is deprecated, use "theme" property instead')), t[r[a]] = function(t) {
-      for (var r = t.style, n = arguments.length, o = Array(n > 1 ? n - 1 : 0), s = 1; s < n; s++) o[s - 1] = arguments[s];
+  } : w({}, t), n.forEach(function(n) {
+    console.error('Styling method "'.concat(n, '" is deprecated, use "theme" property instead')), t[r[n]] = function(t) {
+      for (var r = t.style, a = arguments.length, o = Array(a > 1 ? a - 1 : 0), s = 1; s < a; s++) o[s - 1] = arguments[s];
       return {
-        style: Z(Z({}, r), e[a].apply(e, o))
+        style: w(w({}, r), e[n].apply(e, o))
       }
     }
   })), t);
-  return e.invertTheme && (n = (0, g.y7)(n)), {
-    styling: (0, m.Z)(n)
+  return e.invertTheme && (a = (0, g.y7)(a)), {
+    styling: (0, y.Z)(a)
   }
 }
-var k = function(e) {
+var x = function(e) {
   (0, i.Z)(l, e);
   var t, r = (t = function() {
     if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) returnfalse;
@@ -87,7 +87,7 @@ var k = function(e) {
 
   function l(e) {
     var t;
-    return (0, o.Z)(this, l), (t = r.call(this, e)).state = M(e), t
+    return (0, o.Z)(this, l), (t = r.call(this, e)).state = k(e), t
   }
   return (0, s.Z)(l, [{
     key: "UNSAFE_componentWillReceiveProps",
@@ -95,7 +95,7 @@ var k = function(e) {
       var t = this;
       ["theme", "invertTheme"].find(function(r) {
         return e[r] !== t.props[r]
-      }) && this.setState(M(e))
+      }) && this.setState(k(e))
     }
   }, {
     key: "shouldComponentUpdate",
@@ -113,9 +113,9 @@ var k = function(e) {
         r = e.keyPath,
         o = e.postprocessValue,
         s = e.hideRoot,
-        i = (e.theme, e.invertTheme, (0, n.Z)(e, y)),
+        i = (e.theme, e.invertTheme, (0, a.Z)(e, v)),
         c = this.state.styling;
-      return b.createElement("ul", c("tree"), b.createElement(p.Z, (0, a.Z)({}, Z({
+      return b.createElement("ul", c("tree"), b.createElement(p.Z, (0, n.Z)({}, w({
         postprocessValue: o,
         hideRoot: s,
         styling: c
@@ -126,7 +126,7 @@ var k = function(e) {
     }
   }]), l
 }(Chunk473749.Component);
-(0, Chunk565294.Z)(k, "propTypes", {
+(0, Chunk565294.Z)(x, "propTypes", {
   data: h().any,
   hideRoot: h().bool,
   theme: h().oneOfType([h().object, h().string]),
@@ -134,21 +134,21 @@ var k = function(e) {
   keyPath: h().arrayOf(h().oneOfType([h().string, h().number])),
   postprocessValue: h().func,
   sortObjectKeys: h().oneOfType([h().func, h().bool])
-}), (0, Chunk565294.Z)(k, "defaultProps", {
+}), (0, Chunk565294.Z)(x, "defaultProps", {
   shouldExpandNode: function(e, t, r) {
     return 0 === r
   },
   hideRoot: false,
   keyPath: ["root"],
-  getItemString: function(e, t, r, a) {
-    return b.createElement("span", null, r, " ", a)
+  getItemString: function(e, t, r, n) {
+    return b.createElement("span", null, r, " ", n)
   },
   labelRenderer: function(e) {
     var t = (0, f.Z)(e, 1)[0];
     return b.createElement("span", null, t, ":")
   },
-  valueRenderer: w,
-  postprocessValue: w,
+  valueRenderer: O,
+  postprocessValue: O,
   isCustomNode: function() {
     returnfalse
   },

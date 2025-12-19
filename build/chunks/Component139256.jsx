@@ -352,8 +352,8 @@ function F(e) {
     isExpired: true,
     isVictor: true
   }, () => ({
-    color: l.Z.colors.CONTROL_CONNECT_BACKGROUND_DEFAULT.css,
-    backgroundColor: l.Z.unsafe_rawColors.WHITE_500.css
+    color: l.Z.colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT.css,
+    backgroundColor: l.Z.unsafe_rawColors.WHITE.css
   })).with({
     isExpired: true,
     isVictor: false
@@ -362,7 +362,7 @@ function F(e) {
     backgroundColor: l.Z.colors.BACKGROUND_MOD_MUTED.css
   })).otherwise(() => ({
     color: l.Z.unsafe_rawColors.BRAND_500.css,
-    backgroundColor: l.Z.unsafe_rawColors.WHITE_500.css
+    backgroundColor: l.Z.unsafe_rawColors.WHITE.css
   }));
   return (0, r.jsx)(u.owK, {
     size: "custom",
@@ -413,7 +413,7 @@ function V(e) {
       size: "custom",
       width: a,
       height: a,
-      color: l.Z.unsafe_rawColors.WHITE_500.css
+      color: l.Z.unsafe_rawColors.WHITE.css
     })
   })
 }

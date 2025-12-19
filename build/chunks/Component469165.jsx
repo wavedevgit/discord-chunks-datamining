@@ -99,7 +99,7 @@ let D = {
     let {
       recurrence: t
     } = e, n = (0, r.jsx)(a.sV5, {
-      color: s.TVs.colors.CONTROL_CONNECT_BACKGROUND_DEFAULT
+      color: s.TVs.colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT
     }), o = (0, r.jsx)(a.hU, {
       icon: a.TIy,
       size: "sm",

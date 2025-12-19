@@ -21,64 +21,64 @@ var Chunk54381 = require("./54381.js"),
 
 function y(e, t, n) {
   var y;
-  if (h.Z.isNotificationDisabled(m.n0.NowPlayingNotification)) return null;
-  let O = d.default.getUser(e);
-  if (null == O) return null;
-  let v = u.Z.getCurrentlySelectedChannelId(),
-    E = c.Z.getChannel(v),
-    S = l.Z.getApplication(t),
-    x = o.ZP.getRunningGames().find(e => e.id === t),
-    I = null != (y = null == x ? true : x.name) ? y : null == S ? true : S.name,
-    C = (0, f.oY)(null == E ? true : E.guild_id, null == E ? true : E.id, O),
-    j = (0, i.jsxs)("div", {
-      className: b.nowPlayingNotification,
+  if (p.Z.isNotificationDisabled(m.n0.NowPlayingNotification)) return null;
+  let E = d.default.getUser(e);
+  if (null == E) return null;
+  let v = c.Z.getCurrentlySelectedChannelId(),
+    b = u.Z.getChannel(v),
+    S = o.Z.getApplication(t),
+    x = a.ZP.getRunningGames().find(e => e.id === t),
+    j = null != (y = null == x ? true : x.name) ? y : null == S ? true : S.name,
+    I = (0, h.oY)(null == b ? true : b.guild_id, null == b ? true : b.id, E),
+    C = (0, i.jsxs)("div", {
+      className: O.nowPlayingNotification,
       children: [(0, i.jsx)("div", {
-        className: b.nowPlayingNotificationIcon,
-        children: (0, i.jsx)(a.Z, {
-          user: O,
+        className: O.nowPlayingNotificationIcon,
+        children: (0, i.jsx)(l.Z, {
+          user: E,
           "aria-hidden": true,
           size: r.EFr.SIZE_24
         })
       }), (0, i.jsx)("div", {
-        className: b.body,
+        className: O.body,
         children: (0, i.jsx)(r.Text, {
           variant: "text-sm/medium",
           color: "interactive-text-default",
-          className: b.bodyText,
+          className: O.bodyText,
           children: g.intl.format(g.t["q7/rgv"], {
-            username: null != C ? C : O.username,
-            gameName: I,
+            username: null != I ? I : E.username,
+            gameName: j,
             gameIcon: () => null != S || null != x ? (0, i.jsx)(s.Z, {
               game: S,
               pid: null == x ? true : x.pid,
               size: s.A.XSMALL,
-              className: b.gameIcon
+              className: O.gameIcon
             }) : null
           })
         })
       })]
     }),
     {
-      trackView: _,
-      trackClick: Z
-    } = (0, p.Rg)(m.n0.NowPlayingNotification, {
+      trackView: Z,
+      trackClick: N
+    } = (0, f.Rg)(m.n0.NowPlayingNotification, {
       notif_type: m.n0.NowPlayingNotification,
-      notif_user_id: O.id,
+      notif_user_id: E.id,
       activity_type: n.type,
-      activity_name: null != I ? I : n.name
+      activity_name: null != j ? j : n.name
     });
   return {
-    body: j,
-    className: b.nowPlayingNotificationContainer,
-    wrapperClassName: b.nowPlayingNotificationWrapper,
-    animationWrapperClassName: b.nowPlayingNotificationAnimationWrapper,
+    body: C,
+    className: O.nowPlayingNotificationContainer,
+    wrapperClassName: O.nowPlayingNotificationWrapper,
+    animationWrapperClassName: O.nowPlayingNotificationAnimationWrapper,
     maxBodyLines: 1,
     disableClickableRegions: true,
     onNotificationShow: () => {
-      _()
+      Z()
     },
     onDismissClick: () => {
-      Z("dismiss")
+      N("dismiss")
     }
   }
 }

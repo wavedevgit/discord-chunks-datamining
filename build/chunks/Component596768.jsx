@@ -71,12 +71,12 @@ let T = [{
         }
       } = e, u = d()(s);
       return (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsxs)(f.ZP, {
+        children: [(0, a.jsxs)(h.ZP, {
           className: l()(E.headerBar, S.subPanelHeaderBar),
-          children: [(0, a.jsx)(f.ZP.Icon, {
+          children: [(0, a.jsx)(h.ZP.Icon, {
             icon: p.IeX,
             tooltip: t
-          }), (0, a.jsx)(f.ZP.Title, {
+          }), (0, a.jsx)(h.ZP.Title, {
             children: t
           })]
         }), (0, a.jsxs)(v.E, {
@@ -135,13 +135,13 @@ let T = [{
   }];
 
 function N() {
-  let [e, t] = Chunk473749.useState(""), n = Chunk473749.useRef(null), i = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk473749.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk473749.useState(true), f = Chunk658722.find(e => e.key === c), {
+  let [e, t] = Chunk473749.useState(""), n = Chunk473749.useRef(null), i = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), s = Chunk473749.useMemo(() => Chunk120356.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk473749.useState(true), h = Chunk658722.find(e => e.key === c), {
     TabBar: x,
     renderSelectedTab: v
   } = (0, Chunk621060.ZP)({
     tabs: O
   }, []), N = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.trackTriggers), P = Chunk473749.useCallback(e => {
-    h.Z.dispatch({
+    f.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
       enabled: e
     })

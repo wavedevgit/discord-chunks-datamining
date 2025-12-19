@@ -65,29 +65,29 @@ function G(e) {
   var t, n;
   let {
     quest: i
-  } = e, p = (0, C.T)({
+  } = e, p = (0, y.T)({
     quest: i,
     location: L.dr.QUESTS_BAR
-  }), j = (0, y.Z)({
+  }), j = (0, C.Z)({
     location: L.dr.QUESTS_BAR
   }), G = (0, c.e7)([g.Z], () => null != g.Z.questEnrollmentBlockedUntil), {
     isQuestBarVisible: V,
-    reason: H
+    reason: z
   } = (0, O.qN)({
     quest: i,
     location: L.dr.QUESTS_BAR
-  }), z = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), W = (0, c.e7)([f.Z], () => f.Z.hasLayers()), K = r.useRef(null), q = r.useMemo(() => (0, S.q8)(i), [i]), Y = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, Q = (0, u.Z)(Y), X = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
+  }), W = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), H = (0, c.e7)([h.Z], () => h.Z.hasLayers()), q = r.useRef(null), K = r.useMemo(() => (0, S.q8)(i), [i]), Y = (null == (t = i.userStatus) ? true : t.enrolledAt) != null, Q = (0, u.Z)(Y), X = (null == (n = i.userStatus) ? true : n.completedAt) != null, {
     hasError: J,
     isLoading: $
-  } = (0, E.kC)(), ee = r.useContext(Z.T) || j && V && !$ && !G, et = r.useRef(ee), en = r.useRef(false), ea = r.useRef(false), [er, ei] = r.useState(false), [el, es] = r.useState(false), [eo, ec] = r.useState(false), [ed, eu] = r.useState(true), [em, ep] = r.useState(true), eh = r.useRef(null), ef = r.useRef(null), ex = r.useRef(null), eb = (0, _.Rf)(i), eg = r.useCallback(e => {
+  } = (0, E.kC)(), ee = r.useContext(D.T) || j && V && !$ && !G, et = r.useRef(ee), en = r.useRef(false), ea = r.useRef(false), [er, ei] = r.useState(false), [el, es] = r.useState(false), [eo, ec] = r.useState(false), [ed, eu] = r.useState(true), [em, ep] = r.useState(true), ef = r.useRef(null), eh = r.useRef(null), ex = r.useRef(null), eb = (0, _.Rf)(i), eg = r.useCallback(e => {
     X || (eu(false), ec(e))
   }, [X]), ev = r.useCallback(() => {
     eg(true)
   }, [eg]), ej = r.useCallback(() => {
     ei(true)
-  }, []), ey = r.useCallback(() => {
+  }, []), eC = r.useCallback(() => {
     ei(false), ea.current || X || eg(false)
-  }, [X, eg]), eC = r.useCallback(() => {
+  }, [X, eg]), ey = r.useCallback(() => {
     ei(false), X || eg(false), ea.current = false
   }, [X, eg]), e_ = r.useCallback(() => {
     es(true)
@@ -112,7 +112,7 @@ function G(e) {
       properties: {
         content_id: v.jn.QUEST_BAR,
         content_name: (0, x._b)(v.jn.QUEST_BAR),
-        impression_id: null == (e = K.current) ? true : e.getId()
+        impression_id: null == (e = q.current) ? true : e.getId()
       },
       shouldExtendSession: true,
       sourceQuestContent: v.jn.QUEST_BAR_V2
@@ -127,7 +127,7 @@ function G(e) {
       properties: {
         content_id: v.jn.QUEST_BAR,
         content_name: (0, x._b)(v.jn.QUEST_BAR),
-        impression_id: null == (e = K.current) ? true : e.getId()
+        impression_id: null == (e = q.current) ? true : e.getId()
       },
       sourceQuestContent: v.jn.QUEST_BAR_V2
     }), ea.current = false, eO()
@@ -159,9 +159,9 @@ function G(e) {
   r.useEffect(() => {
     ek({
       expansionSpring: +!!eo,
-      immediate: z
+      immediate: W
     })
-  }, [eo, ek, z]);
+  }, [eo, ek, W]);
   let {
     visibilitySpring: eR
   } = (0, d.q_F)({
@@ -184,8 +184,8 @@ function G(e) {
     }
   });
   if (r.useEffect(() => {
-      q && (0, N.loadVideoQuestModal)()
-    }, [q]), r.useEffect(() => {
+      K && (0, N.loadVideoQuestModal)()
+    }, [K]), r.useEffect(() => {
       if (J) {
         var e;
         (0, x.dA)({
@@ -195,10 +195,10 @@ function G(e) {
             content_id: v.jn.QUEST_BAR,
             content_name: (0, x._b)(v.jn.QUEST_BAR),
             reason: "asset_loading_error",
-            impression_id: null == (e = K.current) ? true : e.getId()
+            impression_id: null == (e = q.current) ? true : e.getId()
           },
           sourceQuestContent: v.jn.QUEST_BAR_V2
-        }), h.Z.increment({
+        }), f.Z.increment({
           name: o.V.QUEST_CONTENT_RENDERING_FAILURE,
           tags: ["quest_id:".concat(i.id), "reason:asset_loading_error"]
         })
@@ -213,7 +213,7 @@ function G(e) {
             content_id: v.jn.QUEST_BAR,
             content_name: (0, x._b)(v.jn.QUEST_BAR),
             reason: "not_eligible_for_quest",
-            impression_id: null == (e = K.current) ? true : e.getId()
+            impression_id: null == (e = q.current) ? true : e.getId()
           },
           sourceQuestContent: v.jn.QUEST_BAR_V2
         })
@@ -227,22 +227,22 @@ function G(e) {
           properties: {
             content_id: v.jn.QUEST_BAR,
             content_name: (0, x._b)(v.jn.QUEST_BAR),
-            reason: H,
-            impression_id: null == (e = K.current) ? true : e.getId()
+            reason: z,
+            impression_id: null == (e = q.current) ? true : e.getId()
           },
           sourceQuestContent: v.jn.QUEST_BAR_V2
         })
       }
-    }, [ee, em, $, i.id, H]), r.useEffect(() => {
+    }, [ee, em, $, i.id, z]), r.useEffect(() => {
       (!V || G) && b.Z.clearTracking(), ee && em && !$ && !J && j && b.Z.stopTracking(i.id)
     }, [V, G, ee, em, $, J, j, i.id]), !j || !ee && em && !$ || J) return J ? p.log("Not rendered due to asset error") : j || p.log("Not rendered due to ineligibility"), null;
   let eA = 70 + 78 * !!X;
   return (0, a.jsx)(T.A, {
     questOrQuests: i,
     questContent: v.jn.QUEST_BAR_V2,
-    overrideVisibility: !W && ee,
+    overrideVisibility: !H && ee,
     sourceQuestContent: v.jn.QUEST_BAR_V2,
-    children: (e, t) => (K.current = t.current, (0, a.jsxs)("div", {
+    children: (e, t) => (q.current = t.current, (0, a.jsxs)("div", {
       className: U.mask,
       children: [ee && (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(B, {
@@ -274,30 +274,30 @@ function G(e) {
             springConfig: ew,
             isExpanded: eo,
             children: (0, a.jsx)(w.iQ, {
-              expandedContentRef: eh,
-              collapsedContentRef: ef,
+              expandedContentRef: ef,
+              collapsedContentRef: eh,
               expansionSpring: eI,
               children: (0, a.jsxs)(A.g, {
                 quest: i,
                 taskDetails: eb,
                 isExpanded: eo,
                 isExpansionAnimationComplete: ed,
-                onCtxMenuClose: ey,
+                onCtxMenuClose: eC,
                 onCtxMenuOpen: ej,
-                onCtxMenuSelect: eC,
+                onCtxMenuSelect: ey,
                 onGameSheetOpen: e_,
                 onGameSheetClose: eS,
                 collapsedHeight: eA,
                 children: [(0, a.jsx)(I.Z, {
-                  ref: ef,
+                  ref: eh,
                   className: U.content,
                   overlayRef: ex
                 }, X ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(k.Z, {
                   className: U.content,
                   overlayRef: ex,
-                  ref: eh,
+                  ref: ef,
                   children: (0, a.jsxs)(a.Fragment, {
-                    children: [(0, a.jsx)(D.Z, {}), !Y && (0, a.jsx)(P.Z, {})]
+                    children: [(0, a.jsx)(Z.Z, {}), !Y && (0, a.jsx)(P.Z, {})]
                   })
                 }), (0, a.jsx)("div", {
                   ref: ex,

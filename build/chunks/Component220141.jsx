@@ -17,9 +17,9 @@ var Chunk54381 = require("./54381.js"),
 function p(e) {
   var t, n, {
       handleOpenUserProfileModal: p,
-      markAsDismissed: h
+      markAsDismissed: f
     } = e,
-    f = function(e, t) {
+    h = function(e, t) {
       if (null == e) return {};
       var n, a, r = function(e, t) {
         if (null == e) return {};
@@ -37,10 +37,10 @@ function p(e) {
   let {
     trackUserProfileEditAction: x
   } = (0, l.KZ)(), b = c.rR.filter(e => s.Ki.includes(e)), g = r.useCallback(() => {
-    h(d.L.TAKE_ACTION), x({
+    f(d.L.TAKE_ACTION), x({
       action: "PRESS_ADD_WIDGET"
     }), p()
-  }, [p, h, x]);
+  }, [p, f, x]);
   return (0, a.jsx)(i.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -61,8 +61,8 @@ function p(e) {
   }({
     heading: u.intl.string(u.t["oqalC+"]),
     subheading: u.intl.string(u.t.O9SQ1c),
-    markAsDismissed: h
-  }, f), n = n = {
+    markAsDismissed: f
+  }, h), n = n = {
     children: (0, a.jsx)("ul", {
       "aria-label": u.intl.string(u.t["+EIBSA"]),
       className: m.options,

@@ -30,8 +30,8 @@ function p() {
     n = m.useField("includeDMs"),
     s = m.useField("includeGDMs"),
     p = m.useField("includeQuickSwitcherState"),
-    h = m.useField("includeUserSearchWorkerState"),
-    f = m.useField("isUploading"),
+    f = m.useField("includeUserSearchWorkerState"),
+    h = m.useField("isUploading"),
     x = m.useField("isSuccess"),
     b = m.useField("errorMessage"),
     g = Chunk473749.useCallback(async () => {
@@ -105,12 +105,12 @@ function p() {
     }), (0, Chunk54381.jsx)(Chunk481060.rsf, {
       label: "User Search Worker",
       description: "Includes all users that your client knows about. For each user, includes the user id, username, nickname, and any guild nicknames.",
-      checked: h,
+      checked: f,
       onChange: () => m.setState({
-        includeUserSearchWorkerState: !h
+        includeUserSearchWorkerState: !f
       })
     }), (0, Chunk54381.jsx)(Chunk608934.a, {
-      isUploading: f,
+      isUploading: h,
       isSuccess: x,
       errorMessage: b,
       onClick: g,

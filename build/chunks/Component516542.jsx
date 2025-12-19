@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 516542, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => E
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,59 +20,59 @@ var Chunk54381 = require("./54381.js"),
   Chunk959517 = require("./959517.js"),
   Chunk198201 = require("./198201.js");
 
-function O(e) {
+function E(e) {
   let {
     id: t,
     replyToMessageId: n,
-    channel: O,
+    channel: E,
     onSend: v
-  } = e, E = (0, p.Z)(), {
+  } = e, b = (0, f.Z)(), {
     placeholder: S,
     accessibilityLabel: x
-  } = (0, c.Z)({
-    channel: O
-  }), [I, C] = r.useState(() => (0, d.H2)()), {
-    textValue: j,
-    richValue: _
-  } = I, [Z, N] = r.useState(false), w = r.useCallback(() => N(true), []), T = r.useCallback(() => N(false), []);
+  } = (0, u.Z)({
+    channel: E
+  }), [j, I] = r.useState(() => (0, d.H2)()), {
+    textValue: C,
+    richValue: Z
+  } = j, [N, w] = r.useState(false), T = r.useCallback(() => w(true), []), _ = r.useCallback(() => w(false), []);
   (0, s.ZP)(() => {
-    (0, o.ack)(O.id, {
+    (0, a.ack)(E.id, {
       section: g.jXE.OVERLAY,
       object: g.qAy.ACK_INLINE_REPLY,
       objectType: g.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
     }, true, true, n)
   });
   let P = r.useCallback((e, t, n) => {
-      C({
+      I({
         textValue: t,
         richValue: n
       })
     }, []),
     A = r.useCallback(e => {
-      "Escape" === e.key && l.Z.updateNotificationStatus(t, g._1z.ACTIVE)
+      "Escape" === e.key && o.Z.updateNotificationStatus(t, g._1z.ACTIVE)
     }, [t]),
-    k = r.useCallback(() => (j.length > E || (a.Z.sendMessage(O.id, h.ZP.parse(O, j), false, {
-      location: b.dy.OVERLAY
-    }), l.Z.setInputLocked(true, m.Z.getTargetPID()), l.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == v || v(j)), Promise.resolve({
+    D = r.useCallback(() => (C.length > b || (l.Z.sendMessage(E.id, p.ZP.parse(E, C), false, {
+      location: O.dy.OVERLAY
+    }), o.Z.setInputLocked(true, m.Z.getTargetPID()), o.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == v || v(C)), Promise.resolve({
       shouldClear: false,
       shouldRefocus: true
-    })), [j, E, O, t, v]);
+    })), [C, b, E, t, v]);
   return (0, i.jsx)("div", {
     className: y.container,
-    children: (0, i.jsx)(f.ZP, {
+    children: (0, i.jsx)(h.ZP, {
       innerClassName: y.textArea,
       onChange: P,
       placeholder: S,
       accessibilityLabel: x,
-      channel: O,
-      textValue: j,
-      richValue: _,
-      type: u.Ie.OVERLAY_INLINE_REPLY,
+      channel: E,
+      textValue: C,
+      richValue: Z,
+      type: c.Ie.OVERLAY_INLINE_REPLY,
       allowNewLines: false,
-      onBlur: T,
-      onFocus: w,
-      focused: Z,
-      onSubmit: k,
+      onBlur: _,
+      onFocus: T,
+      focused: N,
+      onSubmit: D,
       onKeyDown: A,
       autoCompletePosition: "bottom",
       disableThemedBackground: true

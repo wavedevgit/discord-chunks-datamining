@@ -19,52 +19,52 @@ var Chunk13245 = require("./13245.js"),
 
 function g(e, t, n, g) {
   if (s.Z.isNotificationDisabled(d.n0.RequestToStream)) return null;
-  let b = t.username,
-    y = p.intl.format(m.default.jTbTAF, {
+  let O = t.username,
+    y = f.intl.format(m.default.jTbTAF, {
       username: "",
       game: n.name
     }),
-    O = t.getAvatarURL(e.guild_id, 80),
+    E = t.getAvatarURL(e.guild_id, 80),
     {
       trackView: v,
-      trackClick: E
-    } = (0, u.Rg)(d.n0.RequestToStream, {
+      trackClick: b
+    } = (0, c.Rg)(d.n0.RequestToStream, {
       notif_type: d.n0.RequestToStream,
       notif_user_id: t.id,
-      activity_type: f.mFx.STREAM_REQUEST,
+      activity_type: h.mFx.STREAM_REQUEST,
       activity_name: g.name
     });
   return {
-    icon: O,
-    title: b,
+    icon: E,
+    title: O,
     body: y,
-    confirmText: p.intl.string(m.default.UGbmBp),
-    cancelText: p.intl.string(p.t["tpXzJ+"]),
+    confirmText: f.intl.string(m.default.UGbmBp),
+    cancelText: f.intl.string(f.t["tpXzJ+"]),
     onNotificationShow: () => {
       v()
     },
     onConfirmClick: (e, t) => {
-      let n = o.Z.getState().preset;
-      if (n === h.ApplicationStreamPresets.PRESET_DOCUMENTS) {
+      let n = a.Z.getState().preset;
+      if (n === p.ApplicationStreamPresets.PRESET_DOCUMENTS) {
         let {
           allowAutoQuality: e
-        } = (0, a.IK)({
+        } = (0, l.IK)({
           location: "requestToStreamNotification"
         });
-        n = e ? h.ApplicationStreamPresets.PRESET_AUTO : h.ApplicationStreamPresets.PRESET_VIDEO
-      }(0, l.Z)(c.Z.getTargetPID(), {
+        n = e ? p.ApplicationStreamPresets.PRESET_AUTO : p.ApplicationStreamPresets.PRESET_VIDEO
+      }(0, o.Z)(u.Z.getTargetPID(), {
         preset: n
-      }), E("request-to-stream"), i.Z.updateNotificationStatus(t)
+      }), b("request-to-stream"), i.Z.updateNotificationStatus(t)
     },
     onCancelClick: (t, n) => {
       (0, r.ack)(e.id, {
-        section: f.jXE.OVERLAY,
-        object: f.qAy.ACK_DECLINE_REQUEST_TO_STREAM,
-        objectType: f.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
-      }, true, true), i.Z.updateNotificationStatus(n), E("decline")
+        section: h.jXE.OVERLAY,
+        object: h.qAy.ACK_DECLINE_REQUEST_TO_STREAM,
+        objectType: h.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
+      }, true, true), i.Z.updateNotificationStatus(n), b("decline")
     },
     onDismissClick: () => {
-      E("dismiss")
+      b("dismiss")
     }
   }
 }

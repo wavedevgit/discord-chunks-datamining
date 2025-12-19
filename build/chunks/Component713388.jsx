@@ -26,14 +26,14 @@ function p(e) {
   return !!m(e) || !!(0, s.Lk)(e) && e.layout.some(e => p(e))
 }
 
-function h(e) {
+function f(e) {
   var t;
   let {
     setting: n,
     depth: i,
     highlightMode: l
   } = e, s = null == (t = r.useContext(x)) ? true : t.get(n), o = null;
-  return null != s && s.length > 0 && (o = s.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(h, {
+  return null != s && s.length > 0 && (o = s.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(f, {
     setting: e,
     depth: i + 1,
     highlightMode: l
@@ -45,7 +45,7 @@ function h(e) {
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     setting: t,
     depth: n,
@@ -67,11 +67,11 @@ function f(e) {
   if ((0, s.Lk)(t)) {
     var d, u, x;
     let e = null == (x = t.parent) || null == (u = x.parent) || null == (d = u.getLegacySearchKey) ? true : d.call(u);
-    0 === t.layout.length && null != e ? o = (0, a.jsx)(h, {
+    0 === t.layout.length && null != e ? o = (0, a.jsx)(f, {
       setting: e,
       depth: n + 1,
       highlightMode: null != l ? l : "legacy"
-    }) : t.layout.length > 0 && (o = t.layout.map(e => (0, a.jsx)(f, {
+    }) : t.layout.length > 0 && (o = t.layout.map(e => (0, a.jsx)(h, {
       setting: e,
       depth: n + 1,
       inheritedHighlightMode: l
@@ -107,10 +107,10 @@ function b() {
       value: require,
       children: (0, Chunk54381.jsxs)("div", {
         className: Chunk478152.tree,
-        children: [module && (0, Chunk54381.jsx)(h, {
+        children: [module && (0, Chunk54381.jsx)(f, {
           setting: "root",
           depth: 1
-        }, "root"), !module && (0, Chunk54381.jsx)(f, {
+        }, "root"), !module && (0, Chunk54381.jsx)(h, {
           setting: Chunk28682,
           depth: 1
         }, Chunk28682.key)]

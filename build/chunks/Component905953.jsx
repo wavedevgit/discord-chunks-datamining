@@ -34,16 +34,16 @@ function _(e) {
   } = (0, m.KZ)(), O = (0, l.e7)([v.default], () => v.default.getId()), {
     config: N,
     application: P
-  } = (0, f.G)(), {
+  } = (0, h.G)(), {
     fetched: w,
     hasAlreadyLinked: I,
     canStartAuthorization: k,
     startAuthorization: R
   } = (0, d.FG)(P), A = (0, x.ZP)(O), {
-    analyticsLocations: Z
-  } = (0, c.ZP)(), D = null == A || null == (t = A.widgets) ? true : t.some(e => e instanceof p.q && e.applicationId === (null == P ? true : P.id));
+    analyticsLocations: D
+  } = (0, c.ZP)(), Z = null == A || null == (t = A.widgets) ? true : t.some(e => e instanceof p.q && e.applicationId === (null == P ? true : P.id));
   return null != N && null != N.edit_profile_upsell_image && null != P && w ? (0, a.jsx)(u.ZP, {
-    contentTypes: I ? D ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : k ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
+    contentTypes: I ? Z ? [] : [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : k ? [s.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
         visibleContent: t,
@@ -59,26 +59,26 @@ function _(e) {
           type: "image",
           src: N.edit_profile_upsell_image
         },
-        title: C.intl.format(C.t.TXDztH, {
+        title: y.intl.format(y.t.TXDztH, {
           applicationName: P.name
         }),
-        body: l ? C.intl.string(C.t["63Kso0"]) : C.intl.string(C.t.HwXoeC),
+        body: l ? y.intl.string(y.t["63Kso0"]) : y.intl.string(y.t.HwXoeC),
         onRequestClose: () => {
           r(j.L.USER_DISMISS)
         },
         actions: [l ? {
-          text: C.intl.string(C.t.VSLDly),
+          text: y.intl.string(y.t.VSLDly),
           onClick: () => {
             E(true), (0, b.openUserProfileModal)({
               userId: O,
-              tabSection: y.oh.WIDGETS
+              tabSection: C.oh.WIDGETS
             }).then(() => {
               r(j.L.TAKE_ACTION), _();
               let e = new p.q({
                 applicationId: P.id,
                 type: i.l.APPLICATION
               });
-              (0, h.qH)(e.type, e), T(function(e) {
+              (0, f.qH)(e.type, e), T(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     a = Object.keys(n);
@@ -97,23 +97,23 @@ function _(e) {
                 return e
               }({
                 action: "WIDGET_ADDED"
-              }, e.getProfileEditAnalyticsOptions())), (0, g.L$)(y.qb.WIDGET_ADDED)
+              }, e.getProfileEditAnalyticsOptions())), (0, g.L$)(C.qb.WIDGET_ADDED)
             }).finally(() => E(false))
           },
           loading: S
         } : {
-          text: C.intl.string(C.t["DSJi3+"]),
+          text: y.intl.string(y.t["DSJi3+"]),
           onClick: () => {
             R({
               onConfirm: () => {
                 E(true), (0, b.openUserProfileModal)({
                   userId: O,
-                  tabSection: y.oh.WIDGETS
+                  tabSection: C.oh.WIDGETS
                 }).then(() => {
                   r(j.L.TAKE_ACTION), _()
                 }).finally(() => E(false))
               },
-              analyticsLocations: Z
+              analyticsLocations: D
             })
           },
           loading: S

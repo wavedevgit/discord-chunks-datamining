@@ -113,7 +113,7 @@ function x(e) {
           size: "custom",
           width: 10,
           height: 10,
-          color: s.Z.unsafe_rawColors.WHITE_500.css
+          color: s.Z.unsafe_rawColors.WHITE.css
         })
       }), R((e, t) => k > 0 && t && (0, l.jsx)(a.animated.div, {
         className: j.memberCount,

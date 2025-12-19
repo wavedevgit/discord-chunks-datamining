@@ -1,8 +1,8 @@
-/** Chunk was on 23032 **/
+/** Chunk was on 23706 **/
 /** chunk id: 553616, original params: e,t,r (module,exports,require) **/
 var Chunk296585 = require("./296585.js"),
-  n = {};
-for (var o in Chunk296585) Chunk296585.hasOwnProperty(o) && (n[Chunk296585[o]] = o);
+  a = {};
+for (var o in Chunk296585) Chunk296585.hasOwnProperty(o) && (a[Chunk296585[o]] = o);
 var s = module.exports = {
   rgb: {
     channels: 3,
@@ -78,15 +78,15 @@ for (var i in s)
       value: u
     })
   } s.rgb.hsl = function(e) {
-  var t, r, a = e[0] / 255,
-    n = e[1] / 255,
+  var t, r, n = e[0] / 255,
+    a = e[1] / 255,
     o = e[2] / 255,
-    s = Math.min(a, n, o),
-    i = Math.max(a, n, o),
+    s = Math.min(n, a, o),
+    i = Math.max(n, a, o),
     c = i - s;
-  return i === s ? t = 0 : a === i ? t = (n - o) / c : n === i ? t = 2 + (o - a) / c : o === i && (t = 4 + (a - n) / c), (t = Math.min(60 * t, 360)) < 0 && (t += 360), r = (s + i) / 2, [t, 100 * (i === s ? 0 : r <= .5 ? c / (i + s) : c / (2 - i - s)), 100 * r]
+  return i === s ? t = 0 : n === i ? t = (a - o) / c : a === i ? t = 2 + (o - n) / c : o === i && (t = 4 + (n - a) / c), (t = Math.min(60 * t, 360)) < 0 && (t += 360), r = (s + i) / 2, [t, 100 * (i === s ? 0 : r <= .5 ? c / (i + s) : c / (2 - i - s)), 100 * r]
 }, s.rgb.hsv = function(e) {
-  var t, r, a, n, o, s = e[0] / 255,
+  var t, r, n, a, o, s = e[0] / 255,
     i = e[1] / 255,
     c = e[2] / 255,
     u = Math.max(s, i, c),
@@ -94,160 +94,160 @@ for (var i in s)
     f = function(e) {
       return (u - e) / 6 / l + .5
     };
-  return 0 === l ? n = o = 0 : (o = l / u, t = f(s), r = f(i), a = f(c), s === u ? n = a - r : i === u ? n = 1 / 3 + t - a : c === u && (n = 2 / 3 + r - t), n < 0 ? n += 1 : n > 1 && (n -= 1)), [360 * n, 100 * o, 100 * u]
+  return 0 === l ? a = o = 0 : (o = l / u, t = f(s), r = f(i), n = f(c), s === u ? a = n - r : i === u ? a = 1 / 3 + t - n : c === u && (a = 2 / 3 + r - t), a < 0 ? a += 1 : a > 1 && (a -= 1)), [360 * a, 100 * o, 100 * u]
 }, s.rgb.hwb = function(e) {
   var t = e[0],
     r = e[1],
-    a = e[2];
-  return [s.rgb.hsl(e)[0], 1 / 255 * Math.min(t, Math.min(r, a)) * 100, 100 * (a = 1 - 1 / 255 * Math.max(t, Math.max(r, a)))]
+    n = e[2];
+  return [s.rgb.hsl(e)[0], 1 / 255 * Math.min(t, Math.min(r, n)) * 100, 100 * (n = 1 - 1 / 255 * Math.max(t, Math.max(r, n)))]
 }, s.rgb.cmyk = function(e) {
   var t, r = e[0] / 255,
-    a = e[1] / 255,
-    n = e[2] / 255;
-  return t = Math.min(1 - r, 1 - a, 1 - n), [100 * ((1 - r - t) / (1 - t) || 0), 100 * ((1 - a - t) / (1 - t) || 0), 100 * ((1 - n - t) / (1 - t) || 0), 100 * t]
+    n = e[1] / 255,
+    a = e[2] / 255;
+  return t = Math.min(1 - r, 1 - n, 1 - a), [100 * ((1 - r - t) / (1 - t) || 0), 100 * ((1 - n - t) / (1 - t) || 0), 100 * ((1 - a - t) / (1 - t) || 0), 100 * t]
 }, s.rgb.keyword = function(e) {
-  var t, r = n[e];
+  var t, r = a[e];
   if (r) return r;
   var o = 1 / 0;
-  for (var s in a)
-    if (a.hasOwnProperty(s)) {
-      var i = a[s],
+  for (var s in n)
+    if (n.hasOwnProperty(s)) {
+      var i = n[s],
         c = Math.pow(e[0] - i[0], 2) + Math.pow(e[1] - i[1], 2) + Math.pow(e[2] - i[2], 2);
       c < o && (o = c, t = s)
     } return t
 }, s.keyword.rgb = function(e) {
-  return a[e]
+  return n[e]
 }, s.rgb.xyz = function(e) {
   var t = e[0] / 255,
     r = e[1] / 255,
-    a = e[2] / 255;
-  return [100 * (.4124 * (t = t > .04045 ? Math.pow((t + .055) / 1.055, 2.4) : t / 12.92) + .3576 * (r = r > .04045 ? Math.pow((r + .055) / 1.055, 2.4) : r / 12.92) + .1805 * (a = a > .04045 ? Math.pow((a + .055) / 1.055, 2.4) : a / 12.92)), 100 * (.2126 * t + .7152 * r + .0722 * a), 100 * (.0193 * t + .1192 * r + .9505 * a)]
+    n = e[2] / 255;
+  return [100 * (.4124 * (t = t > .04045 ? Math.pow((t + .055) / 1.055, 2.4) : t / 12.92) + .3576 * (r = r > .04045 ? Math.pow((r + .055) / 1.055, 2.4) : r / 12.92) + .1805 * (n = n > .04045 ? Math.pow((n + .055) / 1.055, 2.4) : n / 12.92)), 100 * (.2126 * t + .7152 * r + .0722 * n), 100 * (.0193 * t + .1192 * r + .9505 * n)]
 }, s.rgb.lab = function(e) {
   var t = s.rgb.xyz(e),
     r = t[0],
-    a = t[1],
-    n = t[2];
-  return r /= 95.047, a /= 100, n /= 108.883, r = r > .008856 ? Math.pow(r, 1 / 3) : 7.787 * r + 16 / 116, [116 * (a = a > .008856 ? Math.pow(a, 1 / 3) : 7.787 * a + 16 / 116) - 16, 500 * (r - a), 200 * (a - (n = n > .008856 ? Math.pow(n, 1 / 3) : 7.787 * n + 16 / 116))]
+    n = t[1],
+    a = t[2];
+  return r /= 95.047, n /= 100, a /= 108.883, r = r > .008856 ? Math.pow(r, 1 / 3) : 7.787 * r + 16 / 116, [116 * (n = n > .008856 ? Math.pow(n, 1 / 3) : 7.787 * n + 16 / 116) - 16, 500 * (r - n), 200 * (n - (a = a > .008856 ? Math.pow(a, 1 / 3) : 7.787 * a + 16 / 116))]
 }, s.hsl.rgb = function(e) {
-  var t, r, a, n, o, s = e[0] / 360,
+  var t, r, n, a, o, s = e[0] / 360,
     i = e[1] / 100,
     c = e[2] / 100;
   if (0 === i) return [o = 255 * c, o, o];
-  r = c < .5 ? c * (1 + i) : c + i - c * i, t = 2 * c - r, n = [0, 0, 0];
-  for (var u = 0; u < 3; u++)(a = s + -(1 / 3 * (u - 1))) < 0 && a++, a > 1 && a--, o = 6 * a < 1 ? t + (r - t) * 6 * a : 2 * a < 1 ? r : 3 * a < 2 ? t + (r - t) * (2 / 3 - a) * 6 : t, n[u] = 255 * o;
-  return n
+  r = c < .5 ? c * (1 + i) : c + i - c * i, t = 2 * c - r, a = [0, 0, 0];
+  for (var u = 0; u < 3; u++)(n = s + -(1 / 3 * (u - 1))) < 0 && n++, n > 1 && n--, o = 6 * n < 1 ? t + (r - t) * 6 * n : 2 * n < 1 ? r : 3 * n < 2 ? t + (r - t) * (2 / 3 - n) * 6 : t, a[u] = 255 * o;
+  return a
 }, s.hsl.hsv = function(e) {
   var t, r = e[0],
-    a = e[1] / 100,
-    n = e[2] / 100,
-    o = a,
-    s = Math.max(n, .01);
-  return n *= 2, a *= n <= 1 ? n : 2 - n, o *= s <= 1 ? s : 2 - s, t = (n + a) / 2, [r, 100 * (0 === n ? 2 * o / (s + o) : 2 * a / (n + a)), 100 * t]
+    n = e[1] / 100,
+    a = e[2] / 100,
+    o = n,
+    s = Math.max(a, .01);
+  return a *= 2, n *= a <= 1 ? a : 2 - a, o *= s <= 1 ? s : 2 - s, t = (a + n) / 2, [r, 100 * (0 === a ? 2 * o / (s + o) : 2 * n / (a + n)), 100 * t]
 }, s.hsv.rgb = function(e) {
   var t = e[0] / 60,
     r = e[1] / 100,
-    a = e[2] / 100,
-    n = Math.floor(t) % 6,
+    n = e[2] / 100,
+    a = Math.floor(t) % 6,
     o = t - Math.floor(t),
-    s = 255 * a * (1 - r),
-    i = 255 * a * (1 - r * o),
-    c = 255 * a * (1 - r * (1 - o));
-  switch (a *= 255, n) {
+    s = 255 * n * (1 - r),
+    i = 255 * n * (1 - r * o),
+    c = 255 * n * (1 - r * (1 - o));
+  switch (n *= 255, a) {
     case 0:
-      return [a, c, s];
+      return [n, c, s];
     case 1:
-      return [i, a, s];
+      return [i, n, s];
     case 2:
-      return [s, a, c];
+      return [s, n, c];
     case 3:
-      return [s, i, a];
+      return [s, i, n];
     case 4:
-      return [c, s, a];
+      return [c, s, n];
     case 5:
-      return [a, s, i]
+      return [n, s, i]
   }
 }, s.hsv.hsl = function(e) {
-  var t, r, a, n = e[0],
+  var t, r, n, a = e[0],
     o = e[1] / 100,
     s = e[2] / 100,
     i = Math.max(s, .01);
-  return a = (2 - o) * s, t = (2 - o) * i, [n, 100 * (r = (r = o * i / (t <= 1 ? t : 2 - t)) || 0), 100 * (a /= 2)]
+  return n = (2 - o) * s, t = (2 - o) * i, [a, 100 * (r = (r = o * i / (t <= 1 ? t : 2 - t)) || 0), 100 * (n /= 2)]
 }, s.hwb.rgb = function(e) {
-  var t, r, a, n, o, s, i, c = e[0] / 360,
+  var t, r, n, a, o, s, i, c = e[0] / 360,
     u = e[1] / 100,
     l = e[2] / 100,
     f = u + l;
-  switch (f > 1 && (u /= f, l /= f), t = Math.floor(6 * c), r = 1 - l, a = 6 * c - t, (1 & t) != 0 && (a = 1 - a), n = u + a * (r - u), t) {
+  switch (f > 1 && (u /= f, l /= f), t = Math.floor(6 * c), r = 1 - l, n = 6 * c - t, (1 & t) != 0 && (n = 1 - n), a = u + n * (r - u), t) {
     default:
     case 6:
     case 0:
-      o = r, s = n, i = u;
+      o = r, s = a, i = u;
       break;
     case 1:
-      o = n, s = r, i = u;
+      o = a, s = r, i = u;
       break;
     case 2:
-      o = u, s = r, i = n;
+      o = u, s = r, i = a;
       break;
     case 3:
-      o = u, s = n, i = r;
+      o = u, s = a, i = r;
       break;
     case 4:
-      o = n, s = u, i = r;
+      o = a, s = u, i = r;
       break;
     case 5:
-      o = r, s = u, i = n
+      o = r, s = u, i = a
   }
   return [255 * o, 255 * s, 255 * i]
 }, s.cmyk.rgb = function(e) {
   var t = e[0] / 100,
     r = e[1] / 100,
-    a = e[2] / 100,
-    n = e[3] / 100;
-  return [255 * (1 - Math.min(1, t * (1 - n) + n)), 255 * (1 - Math.min(1, r * (1 - n) + n)), 255 * (1 - Math.min(1, a * (1 - n) + n))]
+    n = e[2] / 100,
+    a = e[3] / 100;
+  return [255 * (1 - Math.min(1, t * (1 - a) + a)), 255 * (1 - Math.min(1, r * (1 - a) + a)), 255 * (1 - Math.min(1, n * (1 - a) + a))]
 }, s.xyz.rgb = function(e) {
-  var t, r, a, n = e[0] / 100,
+  var t, r, n, a = e[0] / 100,
     o = e[1] / 100,
     s = e[2] / 100;
-  return t = 3.2406 * n + false * o + false * s, r = false * n + 1.8758 * o + .0415 * s, a = .0557 * n + false * o + 1.057 * s, t = t > .0031308 ? 1.055 * Math.pow(t, 1 / 2.4) - .055 : 12.92 * t, r = r > .0031308 ? 1.055 * Math.pow(r, 1 / 2.4) - .055 : 12.92 * r, a = a > .0031308 ? 1.055 * Math.pow(a, 1 / 2.4) - .055 : 12.92 * a, [255 * (t = Math.min(Math.max(0, t), 1)), 255 * (r = Math.min(Math.max(0, r), 1)), 255 * (a = Math.min(Math.max(0, a), 1))]
+  return t = 3.2406 * a + false * o + false * s, r = false * a + 1.8758 * o + .0415 * s, n = .0557 * a + false * o + 1.057 * s, t = t > .0031308 ? 1.055 * Math.pow(t, 1 / 2.4) - .055 : 12.92 * t, r = r > .0031308 ? 1.055 * Math.pow(r, 1 / 2.4) - .055 : 12.92 * r, n = n > .0031308 ? 1.055 * Math.pow(n, 1 / 2.4) - .055 : 12.92 * n, [255 * (t = Math.min(Math.max(0, t), 1)), 255 * (r = Math.min(Math.max(0, r), 1)), 255 * (n = Math.min(Math.max(0, n), 1))]
 }, s.xyz.lab = function(e) {
   var t = e[0],
     r = e[1],
-    a = e[2];
-  return t /= 95.047, r /= 100, a /= 108.883, t = t > .008856 ? Math.pow(t, 1 / 3) : 7.787 * t + 16 / 116, [116 * (r = r > .008856 ? Math.pow(r, 1 / 3) : 7.787 * r + 16 / 116) - 16, 500 * (t - r), 200 * (r - (a = a > .008856 ? Math.pow(a, 1 / 3) : 7.787 * a + 16 / 116))]
+    n = e[2];
+  return t /= 95.047, r /= 100, n /= 108.883, t = t > .008856 ? Math.pow(t, 1 / 3) : 7.787 * t + 16 / 116, [116 * (r = r > .008856 ? Math.pow(r, 1 / 3) : 7.787 * r + 16 / 116) - 16, 500 * (t - r), 200 * (r - (n = n > .008856 ? Math.pow(n, 1 / 3) : 7.787 * n + 16 / 116))]
 }, s.lab.xyz = function(e) {
-  var t, r, a, n = e[0],
+  var t, r, n, a = e[0],
     o = e[1],
     s = e[2];
-  t = o / 500 + (r = (n + 16) / 116), a = r - s / 200;
+  t = o / 500 + (r = (a + 16) / 116), n = r - s / 200;
   var i = Math.pow(r, 3),
     c = Math.pow(t, 3),
-    u = Math.pow(a, 3);
-  return r = (i > .008856 ? i : (r - 16 / 116) / 7.787) * 100, [t = (c > .008856 ? c : (t - 16 / 116) / 7.787) * 95.047, r, a = (u > .008856 ? u : (a - 16 / 116) / 7.787) * 108.883]
+    u = Math.pow(n, 3);
+  return r = (i > .008856 ? i : (r - 16 / 116) / 7.787) * 100, [t = (c > .008856 ? c : (t - 16 / 116) / 7.787) * 95.047, r, n = (u > .008856 ? u : (n - 16 / 116) / 7.787) * 108.883]
 }, s.lab.lch = function(e) {
   var t, r = e[0],
-    a = e[1],
-    n = e[2];
-  return (t = 360 * Math.atan2(n, a) / 2 / Math.PI) < 0 && (t += 360), [r, Math.sqrt(a * a + n * n), t]
+    n = e[1],
+    a = e[2];
+  return (t = 360 * Math.atan2(a, n) / 2 / Math.PI) < 0 && (t += 360), [r, Math.sqrt(n * n + a * a), t]
 }, s.lch.lab = function(e) {
   var t, r = e[0],
-    a = e[1];
-  return [r, a * Math.cos(t = e[2] / 360 * 2 * Math.PI), a * Math.sin(t)]
+    n = e[1];
+  return [r, n * Math.cos(t = e[2] / 360 * 2 * Math.PI), n * Math.sin(t)]
 }, s.rgb.ansi16 = function(e) {
   var t = e[0],
     r = e[1],
-    a = e[2],
-    n = 1 in arguments ? arguments[1] : s.rgb.hsv(e)[2];
-  if (0 === (n = Math.round(n / 50))) return 30;
-  var o = 30 + (Math.round(a / 255) << 2 | Math.round(r / 255) << 1 | Math.round(t / 255));
-  return 2 === n && (o += 60), o
+    n = e[2],
+    a = 1 in arguments ? arguments[1] : s.rgb.hsv(e)[2];
+  if (0 === (a = Math.round(a / 50))) return 30;
+  var o = 30 + (Math.round(n / 255) << 2 | Math.round(r / 255) << 1 | Math.round(t / 255));
+  return 2 === a && (o += 60), o
 }, s.hsv.ansi16 = function(e) {
   return s.rgb.ansi16(s.hsv.rgb(e), e[2])
 }, s.rgb.ansi256 = function(e) {
   var t = e[0],
     r = e[1],
-    a = e[2];
-  return t === r && r === a ? t < 8 ? 16 : t > 248 ? 231 : Math.round((t - 8) / 247 * 24) + 232 : 16 + 36 * Math.round(t / 255 * 5) + 6 * Math.round(r / 255 * 5) + Math.round(a / 255 * 5)
+    n = e[2];
+  return t === r && r === n ? t < 8 ? 16 : t > 248 ? 231 : Math.round((t - 8) / 247 * 24) + 232 : 16 + 36 * Math.round(t / 255 * 5) + 6 * Math.round(r / 255 * 5) + Math.round(n / 255 * 5)
 }, s.ansi16.rgb = function(e) {
   var t = e % 10;
   if (0 === t || 7 === t) return e > 50 && (t += 3.5), [t = t / 10.5 * 255, t, t];
@@ -269,68 +269,68 @@ for (var i in s)
   3 === t[0].length && (r = r.split("").map(function(e) {
     return e + e
   }).join(""));
-  var a = parseInt(r, 16);
-  return [a >> 16 & 255, a >> 8 & 255, 255 & a]
+  var n = parseInt(r, 16);
+  return [n >> 16 & 255, n >> 8 & 255, 255 & n]
 }, s.rgb.hcg = function(e) {
   var t, r = e[0] / 255,
-    a = e[1] / 255,
-    n = e[2] / 255,
-    o = Math.max(Math.max(r, a), n),
-    s = Math.min(Math.min(r, a), n),
+    n = e[1] / 255,
+    a = e[2] / 255,
+    o = Math.max(Math.max(r, n), a),
+    s = Math.min(Math.min(r, n), a),
     i = o - s;
-  return t = i < 1 ? s / (1 - i) : 0, [360 * ((i <= 0 ? 0 : o === r ? (a - n) / i % 6 : o === a ? 2 + (n - r) / i : 4 + (r - a) / i + 4) / 6 % 1), 100 * i, 100 * t]
+  return t = i < 1 ? s / (1 - i) : 0, [360 * ((i <= 0 ? 0 : o === r ? (n - a) / i % 6 : o === n ? 2 + (a - r) / i : 4 + (r - n) / i + 4) / 6 % 1), 100 * i, 100 * t]
 }, s.hsl.hcg = function(e) {
   var t = e[1] / 100,
     r = e[2] / 100,
-    a = 1,
-    n = 0;
-  return (a = r < .5 ? 2 * t * r : 2 * t * (1 - r)) < 1 && (n = (r - .5 * a) / (1 - a)), [e[0], 100 * a, 100 * n]
+    n = 1,
+    a = 0;
+  return (n = r < .5 ? 2 * t * r : 2 * t * (1 - r)) < 1 && (a = (r - .5 * n) / (1 - n)), [e[0], 100 * n, 100 * a]
 }, s.hsv.hcg = function(e) {
   var t = e[1] / 100,
     r = e[2] / 100,
-    a = t * r,
-    n = 0;
-  return a < 1 && (n = (r - a) / (1 - a)), [e[0], 100 * a, 100 * n]
+    n = t * r,
+    a = 0;
+  return n < 1 && (a = (r - n) / (1 - n)), [e[0], 100 * n, 100 * a]
 }, s.hcg.rgb = function(e) {
   var t = e[0] / 360,
     r = e[1] / 100,
-    a = e[2] / 100;
-  if (0 === r) return [255 * a, 255 * a, 255 * a];
-  var n = [0, 0, 0],
+    n = e[2] / 100;
+  if (0 === r) return [255 * n, 255 * n, 255 * n];
+  var a = [0, 0, 0],
     o = t % 1 * 6,
     s = o % 1,
     i = 1 - s,
     c = 0;
   switch (Math.floor(o)) {
     case 0:
-      n[0] = 1, n[1] = s, n[2] = 0;
+      a[0] = 1, a[1] = s, a[2] = 0;
       break;
     case 1:
-      n[0] = i, n[1] = 1, n[2] = 0;
+      a[0] = i, a[1] = 1, a[2] = 0;
       break;
     case 2:
-      n[0] = 0, n[1] = 1, n[2] = s;
+      a[0] = 0, a[1] = 1, a[2] = s;
       break;
     case 3:
-      n[0] = 0, n[1] = i, n[2] = 1;
+      a[0] = 0, a[1] = i, a[2] = 1;
       break;
     case 4:
-      n[0] = s, n[1] = 0, n[2] = 1;
+      a[0] = s, a[1] = 0, a[2] = 1;
       break;
     default:
-      n[0] = 1, n[1] = 0, n[2] = i
+      a[0] = 1, a[1] = 0, a[2] = i
   }
-  return c = (1 - r) * a, [(r * n[0] + c) * 255, (r * n[1] + c) * 255, (r * n[2] + c) * 255]
+  return c = (1 - r) * n, [(r * a[0] + c) * 255, (r * a[1] + c) * 255, (r * a[2] + c) * 255]
 }, s.hcg.hsv = function(e) {
   var t = e[1] / 100,
     r = t + e[2] / 100 * (1 - t),
-    a = 0;
-  return r > 0 && (a = t / r), [e[0], 100 * a, 100 * r]
+    n = 0;
+  return r > 0 && (n = t / r), [e[0], 100 * n, 100 * r]
 }, s.hcg.hsl = function(e) {
   var t = e[1] / 100,
     r = e[2] / 100 * (1 - t) + .5 * t,
-    a = 0;
-  return r > 0 && r < .5 ? a = t / (2 * r) : r >= .5 && r < 1 && (a = t / (2 * (1 - r))), [e[0], 100 * a, 100 * r]
+    n = 0;
+  return r > 0 && r < .5 ? n = t / (2 * r) : r >= .5 && r < 1 && (n = t / (2 * (1 - r))), [e[0], 100 * n, 100 * r]
 }, s.hcg.hwb = function(e) {
   var t = e[1] / 100,
     r = t + e[2] / 100 * (1 - t);
@@ -338,9 +338,9 @@ for (var i in s)
 }, s.hwb.hcg = function(e) {
   var t = e[1] / 100,
     r = 1 - e[2] / 100,
-    a = r - t,
-    n = 0;
-  return a < 1 && (n = (r - a) / (1 - a)), [e[0], 100 * a, 100 * n]
+    n = r - t,
+    a = 0;
+  return n < 1 && (a = (r - n) / (1 - n)), [e[0], 100 * n, 100 * a]
 }, s.apple.rgb = function(e) {
   return [e[0] / 65535 * 255, e[1] / 65535 * 255, e[2] / 65535 * 255]
 }, s.rgb.apple = function(e) {
