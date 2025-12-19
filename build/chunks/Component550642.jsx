@@ -2,11 +2,13 @@
 /** chunk id: 550642, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => E,
-  Z: () => y
+  B: () => y,
+  Z: () => v
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk902704 = require("./902704.js"),
@@ -20,60 +22,62 @@ var Chunk54381 = require("./54381.js"),
   Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk264940 = require("./264940.js"),
-  E = function(e) {
+  y = function(e) {
     return e.POPULAR = "popular", e.WISHLIST = "wishlist", e.NO_ICON = "no_icon", e
   }({});
-let b = 3;
+let O = 3;
 
-function y(e) {
+function v(e) {
   let {
     variant: t,
     wishlistItem: n,
-    userIds: E,
+    userIds: a,
     guildId: y,
-    channelId: O,
-    cardSize: v = u.U.SMALL
-  } = e, [S, I] = i.useState(new Set(E));
+    channelId: v,
+    cardSize: S = f.U.SMALL,
+    contextContainerClassName: I
+  } = e, [T, C] = i.useState(new Set(a));
   i.useEffect(() => {
-    I(e => {
-      let t = new Set(E);
-      return (0, s.E)(Array.from(e), Array.from(t)) ? e : t
+    C(e => {
+      let t = new Set(a);
+      return (0, c.E)(Array.from(e), Array.from(t)) ? e : t
     })
-  }, [E]);
-  let T = (0, o.Wu)([d.default], () => Array.from(S).map(e => d.default.getUser(e)).filter(f.lm), [S]);
+  }, [a]);
+  let A = (0, l.Wu)([p.default], () => Array.from(T).map(e => p.default.getUser(e)).filter(_.lm), [T]);
   return (0, r.jsxs)("div", {
-    className: g.container,
-    children: ["no_icon" === t ? null : (0, r.jsx)(c.u, {
-      text: "popular" === t ? h.intl.string(h.t["DP0o+u"]) : h.intl.string(h.t["OnWY3/"]),
+    className: b.container,
+    children: ["no_icon" === t ? null : (0, r.jsx)(d.u, {
+      text: "popular" === t ? E.intl.string(E.t["DP0o+u"]) : E.intl.string(E.t["OnWY3/"]),
       position: "top",
       children: (0, r.jsx)("div", {
-        className: g.contextContainer,
-        children: "popular" === t || 0 === T.length ? (0, r.jsx)("div", {
-          className: g.contextIcon,
-          children: (0, r.jsx)(a.YqE, {
+        className: o()(b.contextContainer, I),
+        children: "popular" === t || 0 === A.length ? (0, r.jsx)("div", {
+          className: b.contextIcon,
+          children: (0, r.jsx)(s.YqE, {
             size: "sm",
-            color: "currentColor"
+            color: "currentColor",
+            className: b.fireIcon
           })
-        }) : (0, r.jsx)(l.g, {
-          users: T,
+        }) : (0, r.jsx)(u.g, {
+          users: A,
           guildId: null != y ? y : true,
-          channelId: null != O ? O : true,
-          maxUsers: b,
-          size: m.EF.SIZE_20
+          channelId: null != v ? v : true,
+          maxUsers: O,
+          size: g.EF.SIZE_20
         })
       })
-    }), (0, r.jsx)(p.Z, {
+    }), (0, r.jsx)(m.Z, {
       item: n,
       wishlistId: null,
       isOwner: false,
-      cardSize: v,
+      cardSize: S,
       showOverlayButton: true,
       hideButtonIcon: true,
       showPrice: true,
       showIcons: false,
-      giftingOrigin: _.Wt.SHOP_PAGE,
-      profileOwner: 1 === T.length ? T[0] : true,
-      additionalUserIds: T.length > 1 ? T.map(e => e.id) : true
+      giftingOrigin: h.Wt.SHOP_PAGE,
+      profileOwner: 1 === A.length ? A[0] : true,
+      additionalUserIds: A.length > 1 ? A.map(e => e.id) : true
     })]
   })
 }

@@ -5,5 +5,6 @@ module.exports = {
   title: "faf161c899802d90-title",
   subtitle: "faf161c899802d90-subtitle",
   wishlistItemsContainer: "faf161c899802d90-wishlistItemsContainer",
-  loading: "faf161c899802d90-loading"
+  loading: "faf161c899802d90-loading",
+  contextContainer: "faf161c899802d90-contextContainer"
 }

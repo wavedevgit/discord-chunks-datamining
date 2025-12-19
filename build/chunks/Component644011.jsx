@@ -63,7 +63,8 @@ function y(e) {
         userIds: a,
         guildId: v,
         channelId: S,
-        cardSize: y
+        cardSize: y,
+        contextContainerClassName: b.contextContainer
       }, t.skuId)
     })
   }, [y, S, v, N, P, w, a, R]);

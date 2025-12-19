@@ -82,7 +82,8 @@ function _(e) {
           wishlistItem: t,
           userIds: l,
           guildId: I.guild_id,
-          channelId: I.id
+          channelId: I.id,
+          contextContainerClassName: j.contextContainer
         }, t.skuId)
       })
     }, [I.guild_id, I.id, M, R, A]);
