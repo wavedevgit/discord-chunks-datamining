@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   u: () => g
-}), require("./415506.js");
+}), require("./388685.js"), require("./415506.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk635041 = require("./635041.jsx"),
@@ -84,11 +84,9 @@ function g(e) {
     asContainer: g,
     containerTag: E,
     ariaHidden: A
-  }, N)), x = (0, u.Q)({
-    shouldShow: R
-  }), {
-    defaultLayerContext: L
-  } = (0, o.ZFG)(), j = i.useMemo(() => null != h ? h : null == n || "" === n ? null : null != p && "" !== p ? (0, r.jsxs)("div", {
+  }, N)), [x, L] = i.useState(false), {
+    defaultLayerContext: j
+  } = (0, o.ZFG)(), M = i.useMemo(() => null != h ? h : null == n || "" === n ? null : null != p && "" !== p ? (0, r.jsxs)("div", {
     className: f.tooltipWithShortcut,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
@@ -96,29 +94,39 @@ function g(e) {
     }), (0, r.jsx)(s.M2$, {
       shortcut: p
     })]
-  }) : n, [n, p, h]);
-  if (null == j || "string" == typeof j && "" === j) return t;
+  }) : n, [n, p, h]), k = null != M && ("string" != typeof M || "" !== M), U = R || x;
+  i.useEffect(() => {
+    R && k ? L(true) : k || L(false)
+  }, [R, k]);
+  let G = i.useCallback(() => {
+      L(false)
+    }, []),
+    Z = (0, u.Q)({
+      shouldShow: R,
+      onExitComplete: G
+    });
+  if (!k && (R || !x)) return t;
   if (null == t || !g && !i.isValidElement(t)) return null;
-  let M = null != C ? C : (0, c.Sw)(n),
-    k = x((e, t) => t ? (0, r.jsx)(l.N, {
+  let F = null != C ? C : (0, c.Sw)(n),
+    B = Z((e, t) => t ? (0, r.jsx)(l.N, {
       isVisible: R,
-      isRendered: true,
+      isRendered: U,
       targetElementRef: w,
       anchorRef: I,
       id: P,
-      content: j,
+      content: M,
       position: b,
       align: y,
       spacing: O,
       caretConfig: T,
-      layerContext: null != v ? v : L,
+      layerContext: null != v ? v : j,
       animationStyle: e,
-      positionKey: M
+      positionKey: F
     }) : null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [D, A || null == j || "" === j ? null : (0, r.jsx)(a.n, {
+    children: [D, A || null == M || "" === M ? null : (0, r.jsx)(a.n, {
       id: P,
-      children: j
-    }), k]
+      children: M
+    }), B]
   })
 }
