@@ -74,8 +74,8 @@ let g = Chunk473749.forwardRef(function(e, t) {
       redGlow: y,
       onMouseEnter: b,
       onMouseLeave: h,
-      "aria-label": v,
-      "aria-checked": O,
+      "aria-label": O,
+      "aria-checked": v,
       role: x,
       plated: j
     } = e, P = "function" == typeof f ? (0, r.jsx)(f, {
@@ -87,7 +87,7 @@ let g = Chunk473749.forwardRef(function(e, t) {
     }) : f;
     return (0, r.jsxs)(s.zx, {
       "data-migration-pending": true,
-      "aria-label": v,
+      "aria-label": O,
       buttonRef: t,
       look: s.zx.Looks.BLANK,
       size: s.zx.Sizes.NONE,
@@ -109,7 +109,7 @@ let g = Chunk473749.forwardRef(function(e, t) {
       onMouseLeave: h,
       onContextMenu: i,
       role: x,
-      "aria-checked": O,
+      "aria-checked": v,
       focusProps: {
         offset: {
           left: false,
@@ -155,13 +155,13 @@ let g = Chunk473749.forwardRef(function(e, t) {
         onContextMenu: y,
         onFocus: b,
         onBlur: h,
-        "aria-label": v
-      } = e, O = m(e, ["tooltipText", "tooltipForceOpen", "tooltipShouldShow", "tooltipPositionKey", "onClick", "onMouseEnter", "onMouseLeave", "onContextMenu", "onFocus", "onBlur", "aria-label"]);
+        "aria-label": O
+      } = e, v = m(e, ["tooltipText", "tooltipForceOpen", "tooltipShouldShow", "tooltipPositionKey", "onClick", "onMouseEnter", "onMouseLeave", "onContextMenu", "onFocus", "onBlur", "aria-label"]);
       return (0, r.jsx)(u.aML, {
         "data-migration-pending": true,
         tooltipClassName: d.greenTooltip,
         tooltipContentClassName: d.greenTooltipContent,
-        "aria-label": v,
+        "aria-label": O,
         forceOpen: i,
         shouldShow: l,
         color: u.r6K.GREEN,
@@ -197,7 +197,7 @@ let g = Chunk473749.forwardRef(function(e, t) {
               null == d || d(), null == h || h()
             },
             "aria-label": m
-          }, O), {
+          }, v), {
             ref: t
           }))
         }

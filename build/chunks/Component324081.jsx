@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk468363 = require("./468363.js"),
   Chunk326255 = require("./326255.js"),
   Chunk956221 = require("./956221.js"),
-  Chunk771173 = require("./771173.jsx"),
+  Chunk747017 = require("./747017.jsx"),
   Chunk367907 = require("./367907.js"),
   Chunk43267 = require("./43267.js"),
   Chunk933557 = require("./933557.js"),
@@ -260,7 +260,6 @@ function k(e) {
     applicationStream: a,
     voiceChannel: u
   }) ? (0, r.jsx)(p.Z, {
-    location: "RecentsChannelHeader",
     user: n,
     activities: l,
     applicationStream: a,

@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk468363 = require("./468363.js"),
   Chunk326255 = require("./326255.js"),
   Chunk956221 = require("./956221.js"),
-  Chunk771173 = require("./771173.jsx"),
+  Chunk747017 = require("./747017.jsx"),
   Chunk385499 = require("./385499.jsx"),
   Chunk693728 = require("./693728.jsx"),
   Chunk554300 = require("./554300.jsx"),
@@ -266,7 +266,6 @@ let B = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       channel: u
     }), [a, c, u]);
     return t || !m ? null : (0, r.jsx)(_.Z, {
-      location: "MemberListSubtext",
       user: c,
       activities: a,
       applicationStream: s,

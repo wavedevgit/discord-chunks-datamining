@@ -209,7 +209,7 @@ function L(e) {
     case "SEPARATOR":
       return (0, r.jsx)(q, A({}, t));
     case "SOCIAL_PROOF":
-      return (0, r.jsx)(V, {})
+      return (0, r.jsx)(Y, {})
   }
 }
 
@@ -344,7 +344,7 @@ function q(e) {
   })
 }
 
-function V() {
+function Y() {
   let e = function() {
       let e = Chunk473749.useContext(Q);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
@@ -361,7 +361,7 @@ function V() {
   })
 }
 
-function Y(e, t) {
+function V(e, t) {
   if (null == e) return null;
   let n = e.split(R);
   if (1 === n.length) return n[0];
@@ -549,7 +549,7 @@ let et = Object.assign(function(e) {
         case "HERO":
           var r;
           return {
-            type: "HERO", body: n.body.map(t), title: Y(n.title, e), image: X(n.image, e), imagePlaceholder: null == (r = e.config) ? true : r.hero_placeholder_image
+            type: "HERO", body: n.body.map(t), title: V(n.title, e), image: X(n.image, e), imagePlaceholder: null == (r = e.config) ? true : r.hero_placeholder_image
           };
         case "GRID":
           return {
@@ -561,11 +561,11 @@ let et = Object.assign(function(e) {
           };
         case "TEXT":
           return {
-            type: "TEXT", content: Y(n.content, e)
+            type: "TEXT", content: V(n.content, e)
           };
         case "TEXT_WITH_IMAGE":
           return {
-            type: "TEXT_WITH_IMAGE", content: Y(n.content, e), image: X(n.image, e), imagePosition: n.imagePosition
+            type: "TEXT_WITH_IMAGE", content: V(n.content, e), image: X(n.image, e), imagePosition: n.imagePosition
           };
         case "SEPARATOR":
         case "SOCIAL_PROOF":

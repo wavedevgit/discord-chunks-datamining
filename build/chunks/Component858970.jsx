@@ -53,7 +53,7 @@ function Z(e) {
     openedAt: A,
     onHide: P,
     sourceAnalyticsLocations: E = []
-  } = e, _ = t === b.ME ? true : t, C = (0, i.e7)([s.Z], () => s.Z.isBlocked(n.id)), {
+  } = e, _ = t === v.ME ? true : t, C = (0, i.e7)([s.Z], () => s.Z.isBlocked(n.id)), {
     analyticsLocations: S
   } = (0, a.ZP)([...E, C ? r.Z.BLOCKED_PROFILE_MODAL : r.Z.IGNORED_PROFILE_MODAL]), w = (0, u.ZB)({
     layout: "MODAL_V2",
@@ -89,7 +89,7 @@ function Z(e) {
         children: (0, l.jsxs)(x.Z, {
           user: n,
           displayProfile: L,
-          themeType: j.l.MODAL_V2,
+          themeType: b.l.MODAL_V2,
           children: [(0, l.jsx)("div", {
             className: I.background
           }), (0, l.jsxs)("div", {
@@ -126,7 +126,7 @@ function Z(e) {
               })
             }), (0, l.jsxs)(o.Kqy, {
               align: "center",
-              children: [(0, l.jsx)(v.Z, {
+              children: [(0, l.jsx)(j.Z, {
                 size: "md",
                 isBlocked: C,
                 onClick: () => {

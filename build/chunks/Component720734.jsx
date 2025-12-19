@@ -25,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk980591 = require("./980591.js"),
   Chunk468363 = require("./468363.js"),
   Chunk326255 = require("./326255.js"),
-  Chunk771173 = require("./771173.jsx"),
+  Chunk747017 = require("./747017.jsx"),
   Chunk963056 = require("./963056.jsx"),
   Chunk570928 = require("./570928.jsx"),
   Chunk100527 = require("./100527.js"),
@@ -333,8 +333,7 @@ class tc extends Chunk473749.PureComponent {
       })) return (0, Chunk54381.jsx)(Chunk570928.Z, {
       hoverText: l,
       forceHover: module,
-      children: (0, Chunk54381.jsx)(Chunk771173.Z, {
-        location: "Account",
+      children: (0, Chunk54381.jsx)(Chunk747017.Z, {
         user: Chunk473749,
         activities: exports,
         applicationStream: require,
@@ -845,7 +844,7 @@ function tm() {
       hidePrivateData: Chunk239091,
       occluded: Chunk855844,
       premiumSubscription: Chunk1585,
-      selfDeaf: Chunk771173,
+      selfDeaf: Chunk747017,
       selfMute: Chunk980591,
       serverDeaf: Chunk963056,
       serverMute: Chunk493773,

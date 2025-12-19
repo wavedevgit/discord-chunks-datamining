@@ -1,7 +1,7 @@
 /** Chunk was on 39442 **/
 /** chunk id: 128156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => w
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -13,7 +13,6 @@ var Chunk442837 = require("./442837.js"),
   Chunk158776 = require("./158776.js"),
   Chunk885110 = require("./885110.js"),
   Chunk63063 = require("./63063.js"),
-  Chunk209698 = require("./209698.js"),
   Chunk369566 = require("./369566.js"),
   Chunk29899 = require("./29899.js"),
   Chunk151545 = require("./151545.jsx"),
@@ -28,40 +27,38 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk644773 = require("./644773.js");
 
-function S(e) {
+function w(e) {
   let {
     user: t,
     currentUser: n,
-    displayProfile: S,
-    guildId: E,
-    channelId: T,
-    onClose: _
+    displayProfile: w,
+    guildId: S,
+    channelId: E,
+    onClose: T
   } = e, {
-    voiceActivityStatusEnabled: C
+    voiceActivityStatusEnabled: _
   } = (0, l.U)({
     location: "UserProfileModalV2Activity"
-  }), D = (0, f.b)({
-    location: "UserProfileModalV2Activity"
   }), {
-    live: k,
-    recent: N,
-    stream: A
-  } = (0, g.Z)(t.id), {
-    voiceChannel: Z,
-    voiceActivity: R
-  } = (0, p.Z)({
+    live: C,
+    recent: D,
+    stream: k
+  } = (0, f.Z)(t.id), {
+    voiceChannel: N,
+    voiceActivity: A
+  } = (0, g.Z)({
     userId: t.id,
-    guildId: E
-  }), G = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), M = t.id === n.id, L = (0, i.e7)([u.Z, s.Z], () => {
-    let e = M ? u.Z.getStatus() : s.Z.getStatus(t.id);
+    guildId: S
+  }), Z = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), R = t.id === n.id, G = (0, i.e7)([u.Z, s.Z], () => {
+    let e = R ? u.Z.getStatus() : s.Z.getStatus(t.id);
     return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
-  }), B = k.length > 0 || null != A, F = C && null == A && null == R && null != Z, U = !L && (B || F), W = N.length > 0;
-  if (!U && !W && G) return (0, r.jsx)("div", {
-    className: w.cards,
+  }), M = C.length > 0 || null != k, L = _ && null == k && null == A && null != N, B = !G && (M || L), F = D.length > 0;
+  if (!B && !F && Z) return (0, r.jsx)("div", {
+    className: I.cards,
     children: Array.from({
       length: 8
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: w.loadingItem,
+      className: I.loadingItem,
       children: [(0, r.jsx)(c.ZT, {
         width: 60,
         opacity: .08
@@ -71,70 +68,63 @@ function S(e) {
       })]
     }, t))
   });
-  if (!U && !W && !G) {
-    var H;
-    return M ? (0, r.jsx)(v.Uf, {
-      onClose: _
-    }) : (0, r.jsx)(v.P9, {
+  if (!B && !F && !Z) {
+    var U;
+    return R ? (0, r.jsx)(y.Uf, {
+      onClose: T
+    }) : (0, r.jsx)(y.P9, {
       user: t,
-      guildId: null != (H = null == S ? true : S.guildId) ? H : E,
-      channelId: T,
-      onClose: _
+      guildId: null != (U = null == w ? true : w.guildId) ? U : S,
+      channelId: E,
+      onClose: T
     })
   }
-  return (0, r.jsxs)(j.F, {
-    className: w.scroller,
+  return (0, r.jsxs)(O.F, {
+    className: I.scroller,
     fade: true,
-    children: [U ? (0, r.jsx)(O.Z, {
-      heading: I.intl.string(I.t.J6STd9),
+    children: [B ? (0, r.jsx)(v.Z, {
+      heading: P.intl.string(P.t.J6STd9),
       children: (0, r.jsxs)("ul", {
-        className: w.cards,
-        children: [!D && F && (0, r.jsx)("li", {
-          children: (0, r.jsx)(y.Z, {
+        className: I.cards,
+        children: [null != k && (0, r.jsx)("li", {
+          children: (0, r.jsx)(m.Z, {
             user: t,
             currentUser: n,
-            voiceChannel: Z,
-            onClose: _
+            stream: k,
+            onClose: T
           })
-        }), null != A && (0, r.jsx)("li", {
-          children: (0, r.jsx)(h.Z, {
-            user: t,
-            currentUser: n,
-            stream: A,
-            onClose: _
-          })
-        }), k.map((e, i) => (0, r.jsx)("li", {
-          children: (0, r.jsx)(b.Z, {
+        }), C.map((e, i) => (0, r.jsx)("li", {
+          children: (0, r.jsx)(p.Z, {
             user: t,
             currentUser: n,
             activity: e,
-            onClose: _
+            onClose: T
           })
-        }, "live-".concat(i))), D && F && (0, r.jsx)("li", {
-          children: (0, r.jsx)(y.Z, {
+        }, "live-".concat(i))), L && (0, r.jsx)("li", {
+          children: (0, r.jsx)(h.Z, {
             user: t,
             currentUser: n,
-            voiceChannel: Z,
-            onClose: _
+            voiceChannel: N,
+            onClose: T
           })
         })]
       })
-    }) : null, W ? (0, r.jsx)(O.Z, {
-      heading: I.intl.string(I.t.jzgEoL),
-      introText: M ? I.intl.format(I.t["4bk9Ak"], {
+    }) : null, F ? (0, r.jsx)(v.Z, {
+      heading: P.intl.string(P.t.jzgEoL),
+      introText: R ? P.intl.format(P.t["4bk9Ak"], {
         learnMoreHook: (e, t) => (0, r.jsx)(a.Anchor, {
-          href: d.Z.getArticleURL(P.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: d.Z.getArticleURL(x.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)
       }) : true,
-      scrollTargetId: x.Tb.RECENT_ACTIVITY,
+      scrollTargetId: j.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
-        className: w.cards,
-        children: N.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(m.Z, {
+        className: I.cards,
+        children: D.map(e => (0, r.jsx)("li", {
+          children: (0, r.jsx)(b.Z, {
             user: t,
             entry: e,
-            onClose: _
+            onClose: T
           })
         }, e.id))
       })

@@ -43,11 +43,11 @@ function O(e) {
     children: [(null == O ? true : O.bio) != null && (null == O ? true : O.bio) !== "" && !E && (0, l.jsx)(p.Z, {
       userBio: O.bio,
       setLineClamp: false
-    }), (null == O ? true : O.guildId) != null && (0, l.jsx)(j.Z, {
+    }), (null == O ? true : O.guildId) != null && (0, l.jsx)(b.Z, {
       user: n,
       currentUser: t,
       guildId: O.guildId
-    }), n.isProvisional && (0, l.jsx)(b.Z, {
+    }), n.isProvisional && (0, l.jsx)(v.Z, {
       heading: y.intl.string(y.t.Iyka0U),
       headingIcon: (0, l.jsx)(o.Mgn, {
         size: "xxs",
@@ -57,19 +57,19 @@ function O(e) {
       children: (0, l.jsx)(a.n, {
         userId: n.id
       })
-    }), P.length > 0 && (0, l.jsx)(b.Z, {
+    }), P.length > 0 && (0, l.jsx)(v.Z, {
       heading: y.intl.string(y.t["Uv/eTx"]),
       children: (0, l.jsx)(h.Z, {
         applicationIds: P
       })
-    }), (0, l.jsx)(b.Z, {
+    }), (0, l.jsx)(v.Z, {
       heading: y.intl.string(y.t.a6XYD9),
-      children: (0, l.jsx)(v.Z, {
+      children: (0, l.jsx)(j.Z, {
         userId: n.id,
         guildId: null == O ? true : O.guildId,
         tooltipDelay: I.vB
       })
-    }), C.length > 0 && (0, l.jsx)(b.Z, {
+    }), C.length > 0 && (0, l.jsx)(v.Z, {
       heading: y.intl.string(y.t["3fe7U5"]),
       scrollTargetId: I.Tb.CONNECTIONS,
       children: (0, l.jsx)(x.ZP, {
@@ -78,7 +78,7 @@ function O(e) {
         userId: n.id,
         locale: _
       })
-    }), S.length > 0 && (0, l.jsx)(b.Z, {
+    }), S.length > 0 && (0, l.jsx)(v.Z, {
       heading: y.intl.string(y.t.PHjkRE),
       children: S.map(e => (0, l.jsx)(x.tH, {
         className: Z.appsConnections,

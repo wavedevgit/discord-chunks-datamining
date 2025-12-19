@@ -135,7 +135,7 @@ function A(e) {
     wishlistId: E,
     onAction: K,
     productLines: null != (t = null == W ? true : W.getProductLines()) ? t : null
-  }), V = i.useCallback(() => {
+  }), Y = i.useCallback(() => {
     if (null == E) return;
     let e = F ? a.f.PRIVATE : a.f.PUBLIC;
     U(!F), m.Z.updateWishlistVisibility(E, e), G({
@@ -143,7 +143,7 @@ function A(e) {
       action: F ? T.NW.WISHLIST_TOGGLE_PRIVATE : T.NW.WISHLIST_TOGGLE_PUBLIC,
       productLines: null == W ? true : W.getProductLines()
     })
-  }, [E, F, G, W]), Y = i.useCallback(() => {
+  }, [E, F, G, W]), V = i.useCallback(() => {
     (0, o.closeAllModals)(), (0, f.mK)({
       analyticsLocations: R,
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
@@ -179,7 +179,7 @@ function A(e) {
           size: "sm",
           icon: s.EOn,
           text: C.intl.string(C.t.ZbS4QB),
-          onClick: Y
+          onClick: V
         }), z && (0, r.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
@@ -239,13 +239,13 @@ function A(e) {
       }), M ? (0, r.jsx)(N, {
         isSocialLayerStorefrontEnabled: z,
         isWishlistPublic: F,
-        handleOpenShop: Y,
+        handleOpenShop: V,
         handleOpenGameShop: Q,
-        handleToggleWishlistVisibility: V,
+        handleToggleWishlistVisibility: Y,
         socialLayerStorefrontApplicationId: B
       }) : (0, r.jsx)(k, {
         isSocialLayerStorefrontEnabled: z,
-        handleOpenShop: Y,
+        handleOpenShop: V,
         handleOpenGameShop: Q
       })]
     }), (0, r.jsx)(w.Z, {

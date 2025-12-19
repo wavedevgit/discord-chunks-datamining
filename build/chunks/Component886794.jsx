@@ -137,13 +137,13 @@ function C(e) {
                 }), (0, l.jsxs)(o.zJl, {
                   fade: true,
                   className: E.scroller,
-                  children: [(0, l.jsx)(v.Z, {
+                  children: [(0, l.jsx)(j.Z, {
                     userId: t.id,
                     userBio: null == G ? true : G.bio,
                     setLineClamp: false
-                  }), (0, l.jsx)(j.Z, {
+                  }), (0, l.jsx)(b.Z, {
                     heading: A.intl.string(A.t["A//N4k"]),
-                    children: (0, l.jsx)(b.Z, {
+                    children: (0, l.jsx)(v.Z, {
                       userId: t.id,
                       guildId: k,
                       tooltipDelay: O.vB

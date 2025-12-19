@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk940640 = require("./940640.js"),
   Chunk9113 = require("./9113.js");
 
-function j(e) {
+function b(e) {
   let {
     section: n,
     user: t,
@@ -89,20 +89,20 @@ function g(e) {
     }), y(e)
   }, [p]);
   return g ? (0, l.jsx)("div", {
-    className: b.container,
+    className: v.container,
     children: (0, l.jsxs)("div", {
-      className: v.empty,
+      className: j.empty,
       children: [(0, l.jsx)("div", {
-        className: v.emptyIconStreamerMode
+        className: j.emptyIconStreamerMode
       }), (0, l.jsx)("div", {
-        className: v.emptyText,
+        className: j.emptyText,
         children: h.intl.string(h.t.Br1ls3)
       })]
     })
   }) : (0, l.jsxs)("div", {
-    className: b.container,
+    className: v.container,
     children: [(0, l.jsx)(r.njP, {
-      className: b.tabBar,
+      className: v.tabBar,
       type: "top",
       selectedItem: I,
       onItemSelect: Z,
@@ -112,7 +112,7 @@ function g(e) {
           text: t
         } = e;
         return (0, l.jsx)(r.njP.Item, {
-          className: b.tabBarItem,
+          className: v.tabBarItem,
           id: n,
           "aria-label": t,
           children: (0, l.jsx)(r.Text, {
@@ -121,7 +121,7 @@ function g(e) {
           })
         }, n)
       })
-    }), (0, l.jsx)(j, {
+    }), (0, l.jsx)(b, {
       items: u,
       section: I,
       user: n,

@@ -34,9 +34,9 @@ var Chunk120356 = require("./120356.js"),
 
 function P(e) {
   var n, t;
-  let i, d, v, {
-    connectedAccount: b,
-    theme: j,
+  let i, d, j, {
+    connectedAccount: v,
+    theme: b,
     locale: y,
     userId: T,
     className: P,
@@ -44,11 +44,11 @@ function P(e) {
     showInvisibleIcon: _
   } = e;
   null == E && (E = true);
-  let C = null != (t = b.metadata) ? t : {},
+  let C = null != (t = v.metadata) ? t : {},
     S = E ? (0, p.FI)(C[O.PC.CREATED_AT], y) : null,
     w = (0, s.dQu)(r.Z.unsafe_rawColors.TWITTER).hex(),
     D = N.intl.string(N.t["6H6h1r"]);
-  if (E) switch (b.type) {
+  if (E) switch (v.type) {
     case Z.ABu.REDDIT:
       i = (0, x.oP)(C);
       break;
@@ -69,18 +69,18 @@ function P(e) {
     case Z.ABu.TIKTOK:
       i = (0, x.hf)(C)
   }
-  let L = u.Z.get((0, m.rR)(b.type)),
-    R = null == L || null == (n = L.getPlatformUserUrl) ? true : n.call(L, b);
-  null != _ && _ ? v = (0, l.jsx)(s.kZF, {
+  let L = u.Z.get((0, m.rR)(v.type)),
+    R = null == L || null == (n = L.getPlatformUserUrl) ? true : n.call(L, v);
+  null != _ && _ ? j = (0, l.jsx)(s.kZF, {
     size: "md",
     color: "currentColor",
     className: o()(A.__invalid_connectedAccountOpenIconContainer, A.connectedAccountHideIcon)
-  }) : null != R && (v = (0, l.jsx)(s.Anchor, {
+  }) : null != R && (j = (0, l.jsx)(s.Anchor, {
     href: R,
-    "aria-label": (null == L ? true : L.name) != null ? "".concat(L.name, ", ").concat(b.name, ", ").concat(N.intl.string(N.t.q5jLJB)) : "".concat(b.name, ", ").concat(N.intl.string(N.t.q5jLJB)),
+    "aria-label": (null == L ? true : L.name) != null ? "".concat(L.name, ", ").concat(v.name, ", ").concat(N.intl.string(N.t.q5jLJB)) : "".concat(v.name, ", ").concat(N.intl.string(N.t.q5jLJB)),
     onClick: e => {
       var n;
-      n = b.type, (0, f.yw)(Z.rMx.CONNECTED_ACCOUNT_VIEWED, {
+      n = v.type, (0, f.yw)(Z.rMx.CONNECTED_ACCOUNT_VIEWED, {
         platform_type: n,
         other_user_id: T
       }), (0, I.q)({
@@ -95,7 +95,7 @@ function P(e) {
   }));
   let M = (0, s.dQu)(r.Z.colors.INTERACTIVE_MUTED).hex(),
     B = (0, s.dQu)(r.Z.colors.INTERACTIVE_TEXT_ACTIVE).hex(),
-    U = b.verified ? (0, l.jsx)(h.Z, {
+    U = v.verified ? (0, l.jsx)(h.Z, {
       className: A.connectedAccountVerifiedIcon,
       color: null != d ? d : M,
       forcedIconColor: B,
@@ -113,7 +113,7 @@ function P(e) {
             name: null == L ? true : L.name
           }),
           className: A.connectedAccountIcon,
-          src: (0, c.wj)(j) ? null == L ? true : L.icon.darkSVG : null == L ? true : L.icon.lightSVG
+          src: (0, c.wj)(b) ? null == L ? true : L.icon.darkSVG : null == L ? true : L.icon.lightSVG
         })
       }), (0, l.jsxs)("div", {
         className: A.connectedAccountNameContainer,
@@ -123,15 +123,15 @@ function P(e) {
             className: A.connectedAccountNameTextContainer,
             children: [(0, l.jsx)(a.u, {
               overflowOnly: true,
-              text: b.name,
+              text: v.name,
               children: (0, l.jsx)(s.Text, {
                 variant: "text-sm/medium",
                 color: "interactive-text-active",
                 className: A.connectedAccountNameText,
-                children: b.name
+                children: v.name
               })
             }), U]
-          }), v]
+          }), j]
         }), null != S ? (0, l.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-default",
@@ -155,12 +155,12 @@ function E(e) {
     onApplicationClicked: r,
     selectedGuildId: a
   } = e, c = (0, x.rm)(n, i), u = () => {
-    null == r || r(), (0, v.transitionToGlobalDiscovery)({
+    null == r || r(), (0, j.transitionToGlobalDiscovery)({
       tab: T.GlobalDiscoveryTab.APPS,
       applicationId: n.application.id,
       newSessionState: {
         entrypoint: {
-          name: b.xF.APPLICATION_DIRECTORY_URL
+          name: v.xF.APPLICATION_DIRECTORY_URL
         },
         guildId: a
       }
@@ -204,7 +204,7 @@ function E(e) {
             applicationHook: () => (0, l.jsxs)("div", {
               className: A.connectedAccountPoweredByText,
               children: [null != n.application.bot ? (0, l.jsx)(d.Z, {
-                user: new j.Z(n.application.bot),
+                user: new b.Z(n.application.bot),
                 size: s.EFr.SIZE_16
               }) : null, (0, l.jsx)(s.Text, {
                 variant: "text-xs/normal",

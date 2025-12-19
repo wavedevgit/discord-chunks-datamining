@@ -1,7 +1,7 @@
 /** Chunk was on 93979 **/
 /** chunk id: 768111, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => b
 }), require("./539854.js");
 var Chunk370523 = require("./370523.js"),
   Chunk607550 = require("./607550.js"),
@@ -20,12 +20,12 @@ var Chunk370523 = require("./370523.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx");
 
-function j(e) {
+function b(e) {
   let {
     user: n,
     currentUser: t
   } = e, {
-    mutualFriendsCount: j,
+    mutualFriendsCount: b,
     mutualGuilds: g
   } = (0, m.Z)(n), I = null == g ? true : g.length, y = (0, f.Z)(n), Z = (0, d.Z)({
     location: "useUserProfileModalV2TabBarItems"
@@ -37,23 +37,23 @@ function j(e) {
     location: "useUserProfileModalV2TabBarItems"
   }), P = (0, s.Z)(n.id), E = [], _ = n.id === (null == t ? true : t.id), C = r.Z.getFirstWishlistId(n.id), S = null != C, w = S ? r.Z.getWishlistSettings(n.id, C) : null, D = (S ? i.Z.getWishlistItems(C) : []).length > 0, L = T.length > 0;
   (_ && Z || L && O) && E.push({
-    text: b.intl.string(b.t.laViwx),
-    section: v.oh.WIDGETS
+    text: v.intl.string(v.t.laViwx),
+    section: j.oh.WIDGETS
   }), E.push({
-    text: b.intl.string(b.t.chq59f),
-    section: v.oh.ACTIVITY
+    text: v.intl.string(v.t.chq59f),
+    section: j.oh.ACTIVITY
   });
   let R = false === n.nsfwAllowed,
     M = o.Z.isFriend(n.id),
     B = (null == w ? true : w.visibility) === l.f.PUBLIC;
   return (_ && N || !_ && A && D && B && P && (!R || R && M)) && E.push({
-    text: b.intl.string(b.t["7lZ31J"]),
-    section: v.oh.WISHLIST
+    text: v.intl.string(v.t["7lZ31J"]),
+    section: j.oh.WISHLIST
   }), n.id !== (null == t ? true : t.id) && y && (E.push({
-    text: (0, x.Z)(j),
-    section: v.oh.MUTUAL_FRIENDS
+    text: (0, x.Z)(b),
+    section: j.oh.MUTUAL_FRIENDS
   }), E.push({
     text: (0, h.Z)(I),
-    section: v.oh.MUTUAL_GUILDS
+    section: j.oh.MUTUAL_GUILDS
   })), E
 }

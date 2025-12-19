@@ -23,16 +23,16 @@ function p(e) {
     guildId: p,
     channelId: x,
     displayProfile: h,
-    relationshipType: v,
-    onClose: b
+    relationshipType: j,
+    onClose: v
   } = e, {
-    newestAnalyticsLocation: j
+    newestAnalyticsLocation: b
   } = (0, o.ZP)(), g = (0, r.Z)({
     user: n,
     guildId: p,
     channelId: x,
     displayProfile: h,
-    onClose: b
+    onClose: v
   }), {
     gameFriends: I,
     hasOutgoingPendingGameFriends: y,
@@ -40,13 +40,13 @@ function p(e) {
   } = (0, f.H)({
     userId: n.id
   }), O = I.length > 0 || y || Z;
-  return v === m.OGo.BLOCKED ? null : n.id === t.id ? (0, l.jsxs)(l.Fragment, {
+  return j === m.OGo.BLOCKED ? null : n.id === t.id ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(a.Z, {
       user: n,
       guildId: p,
-      onClose: b
+      onClose: v
     }), (0, l.jsx)(d.Z, {
-      onClose: b
+      onClose: v
     }), (0, l.jsx)(s.wV, {
       user: n,
       guildId: p,
@@ -62,7 +62,7 @@ function p(e) {
       guildId: p,
       viewProfileItem: g
     })]
-  }) : v === m.OGo.PENDING_INCOMING ? (0, l.jsxs)(l.Fragment, {
+  }) : j === m.OGo.PENDING_INCOMING ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(c.H, {
       userId: n.id,
       onClose: i.Z.popAll,
@@ -71,28 +71,28 @@ function p(e) {
       user: n,
       guildId: p
     })]
-  }) : v === m.OGo.FRIEND || v === m.OGo.PENDING_OUTGOING ? (0, l.jsxs)(l.Fragment, {
+  }) : j === m.OGo.FRIEND || j === m.OGo.PENDING_OUTGOING ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(c.H, {
       userId: n.id,
       onClose: i.Z.popAll,
       autoFocus: true
     }), (0, l.jsx)(u.n1, {
       user: n,
-      relationshipType: v,
-      analyticsLocation: j
+      relationshipType: j,
+      analyticsLocation: b
     }), (0, l.jsx)(s.wV, {
       user: n,
       guildId: p,
       viewProfileItem: g
     })]
-  }) : v === m.OGo.NONE && O ? (0, l.jsxs)(l.Fragment, {
+  }) : j === m.OGo.NONE && O ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(c.H, {
       userId: n.id,
       onClose: i.Z.popAll,
       autoFocus: true
     }), (0, l.jsx)(u.C0, {
       user: n,
-      analyticsLocation: j,
+      analyticsLocation: b,
       gameFriends: I,
       tooltipPosition: "top",
       tooltipAlign: "center",
@@ -107,7 +107,7 @@ function p(e) {
     children: [(0, l.jsx)(u.Z7, {
       variant: "primary",
       userId: n.id,
-      analyticsLocation: j,
+      analyticsLocation: b,
       autoFocus: true
     }), (0, l.jsx)(c.v, {
       userId: n.id,

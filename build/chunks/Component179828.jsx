@@ -85,8 +85,8 @@ function P(e) {
     canManageRoles: f,
     onAddRole: m,
     onRemoveRole: p
-  } = e, h = f && null != s, v = i.useRef(null), j = i.useMemo(() => "roles-".concat((0, o.Z)()), []), I = (0, r.ZP)({
-    id: j,
+  } = e, h = f && null != s, j = i.useRef(null), b = i.useMemo(() => "roles-".concat((0, o.Z)()), []), I = (0, r.ZP)({
+    id: b,
     isEnabled: true,
     scrollToStart: y.Cyb,
     scrollToEnd: y.Cyb,
@@ -95,7 +95,7 @@ function P(e) {
     numRoles: P
   }), _ = d.map(e => {
     var i;
-    return (0, l.jsx)(b.Z, {
+    return (0, l.jsx)(v.Z, {
       role: e,
       guildId: c.id,
       disableBorderColor: true,
@@ -116,7 +116,7 @@ function P(e) {
           ref: n
         }, t), {
           children: [_, h && (0, l.jsx)(g.Z, {
-            buttonRef: v,
+            buttonRef: j,
             guild: c,
             guildMember: s,
             numRoles: P,
@@ -137,7 +137,7 @@ function E(e) {
   } = e, r = A(e, ["user", "currentUser", "guildId"]);
   let {
     trackUserProfileAction: a
-  } = (0, h.KZ)(), b = (0, c.e7)([m.Z], () => m.Z.getGuild(o)), g = (0, c.e7)([u.ZP], () => u.ZP.getMember(o, n.id)), O = null == g ? true : g.roles, E = (0, c.Wu)([f.Z], () => f.Z.getManyRoles(o, null != O ? O : []).sort(v.Z), [O, o]), [_] = (0, c.Wu)([p.Z], () => [p.Z.can(y.Plq.MANAGE_ROLES, b), p.Z.getGuildVersion(o)]), C = i.useCallback(e => {
+  } = (0, h.KZ)(), v = (0, c.e7)([m.Z], () => m.Z.getGuild(o)), g = (0, c.e7)([u.ZP], () => u.ZP.getMember(o, n.id)), O = null == g ? true : g.roles, E = (0, c.Wu)([f.Z], () => f.Z.getManyRoles(o, null != O ? O : []).sort(j.Z), [O, o]), [_] = (0, c.Wu)([p.Z], () => [p.Z.can(y.Plq.MANAGE_ROLES, v), p.Z.getGuildVersion(o)]), C = i.useCallback(e => {
     var t, l;
     a({
       action: "REMOVE_ROLE"
@@ -151,19 +151,19 @@ function E(e) {
     let t = null != O ? O : [];
     t.includes(e) || (t = [...t, e]), d.Z.updateMemberRoles(o, n.id, t, [e], [])
   }, [O, o, n.id, a]);
-  if (null == b) return null;
+  if (null == v) return null;
   let w = _ && null != g;
-  return 0 !== E.length || w ? (0, l.jsx)(j.Z, N(T({
+  return 0 !== E.length || w ? (0, l.jsx)(b.Z, N(T({
     heading: Z.intl.string(Z.t["LPJmL/"]),
     scrollTargetId: I.Tb.ROLES
   }, r), {
     children: (0, l.jsx)(P, {
       user: n,
       currentUser: t,
-      guild: b,
+      guild: v,
       guildMember: g,
       roles: E,
-      highestRole: x.e9(b, t.id),
+      highestRole: x.e9(v, t.id),
       canManageRoles: _,
       onAddRole: S,
       onRemoveRole: C

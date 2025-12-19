@@ -2,8 +2,8 @@
 /** chunk id: 515753, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Qj: () => eh,
-  RS: () => ev,
-  ZP: () => eO,
+  RS: () => eO,
+  ZP: () => ev,
   bU: () => em
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk468363 = require("./468363.js"),
   Chunk326255 = require("./326255.js"),
   Chunk956221 = require("./956221.js"),
-  Chunk771173 = require("./771173.jsx"),
+  Chunk747017 = require("./747017.jsx"),
   Chunk385499 = require("./385499.jsx"),
   Chunk570908 = require("./570908.jsx"),
   Chunk702321 = require("./702321.js"),
@@ -192,8 +192,8 @@ let ef = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
       role: g,
       "aria-posinset": y,
       "aria-setsize": b,
-      listItemRef: v
-    } = e, O = ed(e, ["route", "selected", "icon", "iconClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
+      listItemRef: O
+    } = e, v = ed(e, ["route", "selected", "icon", "iconClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
     return (0, r.jsx)(k.Z, {
       className: a()(es.channel, {
         [es.fullWidth]: p.tq
@@ -205,7 +205,7 @@ let ef = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
       }, ep),
       "aria-posinset": y,
       "aria-setsize": b,
-      ref: v,
+      ref: O,
       children: (0, r.jsx)(h.vjx, {
         as: "div",
         selected: n,
@@ -218,7 +218,7 @@ let ef = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
             state: d
           },
           className: es.link
-        }, O), {
+        }, v), {
           children: [(0, r.jsx)(C.Z, {
             muted: false,
             avatar: (0, r.jsx)(i, {
@@ -234,7 +234,7 @@ let ef = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chun
     })
   };
 
-function ev(e) {
+function eO(e) {
   let {
     channel: t,
     selected: l = false,
@@ -250,21 +250,21 @@ function ev(e) {
     ref: er,
     "aria-posinset": el,
     "aria-setsize": eh
-  } = e, [ev, eO] = i.useState(false), [ex, ej] = i.useState(false), [eP, eS] = i.useState(false), eN = i.useRef(null), eE = i.useRef(null), eC = null != er ? er : eE, {
+  } = e, [eO, ev] = i.useState(false), [ex, ej] = i.useState(false), [eP, eS] = i.useState(false), eN = i.useRef(null), eE = i.useRef(null), eC = null != er ? er : eE, {
     avatarSrc: eT,
     avatarDecorationSrc: eZ,
     eventHandlers: ew
   } = (0, q.Z)({
     userId: null == s ? true : s.id,
     size: h.EFr.SIZE_32,
-    animateOnHover: !(l || ev || ex || eP)
+    animateOnHover: !(l || eO || ex || eP)
   }), eI = t.isMultiUserDM(), ek = t.isSystemDM(), eM = !eI && !ek && t.type === ea.d4z.DM, eD = eM && (null == s ? true : s.primaryGuild) != null, e_ = (0, g.e7)([en.ZP], () => en.ZP.isChannelMuted(t.getGuildId(), t.id)), {
     ignored: eU,
     blocked: eR
   } = (0, g.cj)([$.Z], () => ({
     ignored: $.Z.isIgnored(t.getRecipientId()),
     blocked: $.Z.isBlocked(t.getRecipientId())
-  })), eL = eM && eU, eA = eM && eR, eF = (e_ || eL || eA) && !(l || ev), {
+  })), eL = eM && eU, eA = eM && eR, eF = (e_ || eL || eA) && !(l || eO), {
     hasUnreadMessages: eG,
     lastMessageId: eH
   } = (0, g.cj)([Q.ZP], () => ({
@@ -284,19 +284,19 @@ function ev(e) {
     location: "PrivateChannel"
   }), eq = (0, g.e7)([ee.Z], () => ee.Z.hidePersonalInformation), eV = (0, G.X)(t.guild_id), eJ = (0, W.l)({
     timestamp: ei.default.extractTimestamp(null != eH ? eH : t.id)
-  }), eQ = i.useRef(null), e$ = null != J && (l || ev || eP), e0 = () => {
-    eO(true)
+  }), eQ = i.useRef(null), e$ = null != J && (l || eO || eP), e0 = () => {
+    ev(true)
   }, e1 = () => {
-    eO(false)
+    ev(false)
   }, e5 = () => {
     ej(true)
   }, e4 = () => {
     ej(false)
-  }, e3 = function(e) {
+  }, e6 = function(e) {
     let n = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    null != e && (e.preventDefault(), e.stopPropagation()), v.Z.closePrivateChannel(t.id, l, n)
-  }, e6 = () => {
-    v.Z.preload(ea.ME, t.id)
+    null != e && (e.preventDefault(), e.stopPropagation()), O.Z.closePrivateChannel(t.id, l, n)
+  }, e3 = () => {
+    O.Z.preload(ea.ME, t.id)
   }, e8 = e => {
     e.stopPropagation()
   }, e7 = e => {
@@ -308,7 +308,7 @@ function ev(e) {
     let i = "contextmenu" === e.type,
       a = eY && !i,
       o = i ? d.ImpressionNames.DM_LIST_RIGHT_CLICK_MENU_SHOWN : d.ImpressionNames.DM_LIST_KEBAB_MENU_SHOWN;
-    eS(true), t.isMultiUserDM() ? (0, O.jW)(e, async () => {
+    eS(true), t.isMultiUserDM() ? (0, v.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("90508"), n.e("25421"), n.e("89183")]).then(n.bind(n, 354741));
@@ -320,7 +320,7 @@ function ev(e) {
       impressionName: o,
       noBlurEvent: true,
       onClose: () => eS(false)
-    }) : (0, O.jW)(e, async () => {
+    }) : (0, v.jW)(e, async () => {
       let {
         default: e
       } = a ? await Promise.all([n.e("90508"), n.e("56167")]).then(n.bind(n, 416951)) : await Promise.all([n.e("79695"), n.e("90508"), n.e("66165"), n.e("6915"), n.e("56826"), n.e("15160")]).then(n.bind(n, 131404));
@@ -352,14 +352,14 @@ function ev(e) {
       return t => (0, r.jsx)(e, eu({
         header: i,
         body: l,
-        onSubmit: e3
+        onSubmit: e6
       }, t))
     })
   }, te = (0, r.jsx)(_.Z, {
     userName: eB,
     displayNameStyles: null == s ? true : s.displayNameStyles,
-    effectDisplayType: ev || l || eP ? D.F.ANIMATED : D.F.PLAIN,
-    loop: ev,
+    effectDisplayType: eO || l || eP ? D.F.ANIMATED : D.F.PLAIN,
+    loop: eO,
     boldFontOpacity: .9
   }), tt = eD ? (0, r.jsxs)(r.Fragment, {
     children: [te, (0, r.jsx)(A.ZP, {
@@ -407,7 +407,7 @@ function ev(e) {
         ref: eC,
         onMouseEnter: e0,
         onMouseLeave: e1,
-        onMouseDown: e6,
+        onMouseDown: e3,
         onFocus: e5,
         onBlur: e4,
         onContextMenu: e9,
@@ -428,7 +428,7 @@ function ev(e) {
           children: [(0, r.jsx)(Y.Z, {
             nameplate: e$ ? J : true,
             selected: l,
-            hovered: ev,
+            hovered: eO,
             content: tn,
             placement: K.i.CHANNEL
           }), (0, r.jsx)(c.rU, ec(eu({
@@ -495,12 +495,11 @@ function ev(e) {
                   applicationStream: j,
                   voiceChannel: S
                 }) ? (0, r.jsx)(N.Z, {
-                  location: "PrivateChannel",
                   user: s,
                   activities: p,
                   voiceChannel: S,
                   applicationStream: j,
-                  animateEmoji: ev || ex || eP,
+                  animateEmoji: eO || ex || eP,
                   textClassName: es.activityStatusText,
                   iconClassName: eF ? es.mutedIcon : true
                 }) : null != n ? n : null
@@ -547,7 +546,7 @@ function ev(e) {
             }) : (0, r.jsx)(em, {
               icon: h.Dio,
               "aria-label": eI ? eo.intl.string(eo.t["26C4oi"]) : eo.intl.string(eo.t.jsvgc3),
-              onClick: eI ? e2 : e3,
+              onClick: eI ? e2 : e6,
               onMouseDown: e8,
               nameplate: J,
               reducedClickTarget: true,
@@ -559,7 +558,7 @@ function ev(e) {
     }
   })
 }
-let eO = 12633 == require.j ? e => {
+let ev = 12633 == require.j ? e => {
   var {
     channel: t,
     selected: n
@@ -604,13 +603,13 @@ let eO = 12633 == require.j ? e => {
     p = (0, G.Z)(t, {
       disabled: !f
     });
-  return t.isMultiUserDM() ? (0, r.jsx)(ev, eu({
+  return t.isMultiUserDM() ? (0, r.jsx)(eO, eu({
     channel: t,
     selected: n,
     isTyping: d,
     status: o.status === ea.Skl.ONLINE ? ea.Skl.ONLINE : true,
     latestMessage: p
-  }, i)) : (0, r.jsx)(ev, eu({
+  }, i)) : (0, r.jsx)(eO, eu({
     channel: t,
     selected: n,
     user: l,

@@ -94,7 +94,7 @@ function w(e) {
                 })
               })
             }),
-            children: (0, l.jsxs)(b.Z, {
+            children: (0, l.jsxs)(v.Z, {
               user: n,
               displayProfile: H,
               themeType: _.l.MODAL,
@@ -147,12 +147,12 @@ function w(e) {
                     })]
                   })]
                 })]
-              }), (0, l.jsx)(v.Z, {
+              }), (0, l.jsx)(j.Z, {
                 userId: n.id,
                 className: S.fetchError
               }), (0, l.jsxs)("div", {
                 className: S.body,
-                children: [(0, l.jsx)(j.Z, {
+                children: [(0, l.jsx)(b.Z, {
                   className: S.username,
                   user: n,
                   guildId: z,

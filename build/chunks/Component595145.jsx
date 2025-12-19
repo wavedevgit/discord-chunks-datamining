@@ -75,9 +75,9 @@ function ec(e) {
     sessionId: ep,
     initialTabSection: ex,
     initialScrollTarget: eh,
-    transitionState: ev,
-    customStatusPrompt: eb,
-    openedAt: ej,
+    transitionState: ej,
+    customStatusPrompt: ev,
+    openedAt: eb,
     onClose: eg,
     showGuildProfile: eI = true,
     sourceAnalyticsLocations: ey = [],
@@ -98,7 +98,7 @@ function ec(e) {
   } = (0, r.cj)([N.Z], () => ({
     defaultWishlistId: N.Z.getFirstWishlistId(ec.id)
   }));
-  (0, j.kZ)({
+  (0, b.kZ)({
     wishlistId: e_,
     userId: ec.id
   });
@@ -130,7 +130,7 @@ function ec(e) {
     ek = (0, m.p)({
       location: "UserProfileModalV2"
     }),
-    eG = i.useMemo(() => null != eb ? eb : (0, p.Z)(), [eb]),
+    eG = i.useMemo(() => null != ev ? ev : (0, p.Z)(), [ev]),
     eF = (0, et.Z)({
       user: ec,
       currentUser: es
@@ -158,7 +158,7 @@ function ec(e) {
     value: eO,
     children: (0, l.jsx)(T.Mt, {
       value: eT,
-      openedAt: ej,
+      openedAt: eb,
       fetchStartedAt: null == eD ? true : eD.fetchStartedAt,
       fetchEndedAt: null == eD ? true : eD.fetchEndedAt,
       isLoaded: null == eD ? true : eD.isLoaded,
@@ -170,7 +170,7 @@ function ec(e) {
             "data-migration-pending": true,
             hideShadow: true,
             className: ea.root,
-            transitionState: ev,
+            transitionState: ej,
             "aria-labelledby": eY,
             parentComponent: "UserProfileModalV2",
             children: [(0, l.jsxs)(a.UkV, {
@@ -241,7 +241,7 @@ function ec(e) {
                         guildId: ed,
                         channelId: eu,
                         themeType: eo.l.MODAL_V2,
-                        hasEntered: ev === a.Dvm.ENTERED,
+                        hasEntered: ej === a.Dvm.ENTERED,
                         prompt: ek && ec.id === es.id ? eG : null,
                         disableToolbar: eZ
                       })]
@@ -297,7 +297,7 @@ function ec(e) {
                             color: "currentColor"
                           }),
                           className: ea.profileBanner,
-                          children: (0, l.jsx)(b.n, {
+                          children: (0, l.jsx)(v.n, {
                             userId: ec.id,
                             variant: "text-sm/normal"
                           })
@@ -360,7 +360,7 @@ function ec(e) {
                       }), (0, l.jsx)(X.Z, {
                         userId: ec.id
                       })]
-                    }), (null == eD ? true : eD.profileEffect) != null && (0, l.jsx)(v.Z, {
+                    }), (null == eD ? true : eD.profileEffect) != null && (0, l.jsx)(j.Z, {
                       skuId: null == eD ? true : eD.profileEffect.skuId,
                       isHovering: eA
                     })]

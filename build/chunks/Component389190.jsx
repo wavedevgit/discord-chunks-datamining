@@ -23,11 +23,11 @@ function x(e) {
     channelId: x,
     onClose: h
   } = e, {
-    mutualFriends: v
+    mutualFriends: j
   } = (0, s.Z)(n), {
-    analyticsLocations: b
+    analyticsLocations: v
   } = (0, a.ZP)(), {
-    context: j,
+    context: b,
     trackUserProfileAction: g
   } = (0, c.KZ)(), I = (0, r.Z)();
   return i.useEffect(() => {
@@ -35,10 +35,10 @@ function x(e) {
   }, [n.id, I]), (0, l.jsx)(o.zJl, {
     className: p.listScroller,
     fade: true,
-    children: null == v ? (0, l.jsx)("div", {
+    children: null == j ? (0, l.jsx)("div", {
       className: p.empty,
       children: (0, l.jsx)(o.$jN, {})
-    }) : 0 === v.length ? (0, l.jsxs)("div", {
+    }) : 0 === j.length ? (0, l.jsxs)("div", {
       className: p.empty,
       children: [(0, l.jsx)("div", {
         className: p.emptyIconFriends
@@ -46,7 +46,7 @@ function x(e) {
         className: p.emptyText,
         children: m.intl.string(m.t["/5p4gx"])
       })]
-    }) : v.map(e => {
+    }) : j.map(e => {
       let {
         key: n,
         user: i,
@@ -78,9 +78,9 @@ function x(e) {
               })
             }
             return e
-          }({}, j), t = t = {
+          }({}, b), t = t = {
             userId: e,
-            sourceAnalyticsLocations: b
+            sourceAnalyticsLocations: v
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
             var t = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

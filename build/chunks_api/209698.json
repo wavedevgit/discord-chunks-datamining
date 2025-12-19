@@ -1,1 +1,0 @@
-{"id":"209698","type":"experiment","data":{"kind":"user","id":"2025-04_stacked_activity_cards","label":"User Profile Stacked Activity Cards","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable stacked activity cards on user profile","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}

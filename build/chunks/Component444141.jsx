@@ -53,10 +53,10 @@ function m(e) {
     onClose: x
   } = e, {
     analyticsLocations: h,
-    sourceAnalyticsLocations: v
+    sourceAnalyticsLocations: j
   } = (0, o.ZP)(), {
-    context: b,
-    trackUserProfileAction: j
+    context: v,
+    trackUserProfileAction: b
   } = (0, a.KZ)(), g = (0, s.ZP)(n.id, t);
   return (null == g ? true : g.guildId) == null ? null : (null == p ? true : p.guildId) != null ? (0, l.jsx)(i.sNh, {
     id: "view-main-profile",
@@ -68,13 +68,13 @@ function m(e) {
       null == x || x(), (0, c.openUserProfileModal)(f(u({
         userId: n.id,
         guildId: t
-      }, b), {
+      }, v), {
         showGuildProfile: false,
-        sourceAnalyticsLocations: v
-      })), j(u({
+        sourceAnalyticsLocations: j
+      })), b(u({
         action: "PRESS_VIEW_MAIN_PROFILE",
         analyticsLocations: h
-      }, b))
+      }, v))
     }
   }) : (0, l.jsx)(i.sNh, {
     id: "view-server-profile",
@@ -86,13 +86,13 @@ function m(e) {
       null == x || x(), (0, c.openUserProfileModal)(f(u({
         userId: n.id,
         guildId: t
-      }, b), {
+      }, v), {
         showGuildProfile: true,
-        sourceAnalyticsLocations: v
-      })), j(u({
+        sourceAnalyticsLocations: j
+      })), b(u({
         action: "PRESS_VIEW_SERVER_PROFILE",
         analyticsLocations: h
-      }, b))
+      }, v))
     }
   })
 }

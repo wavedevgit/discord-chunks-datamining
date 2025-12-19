@@ -24,7 +24,7 @@ function y(e, t) {
   } = (0, l.cj)([d.Z], () => ({
     isBlocked: d.Z.isBlocked(e.author.id),
     isIgnored: d.Z.isIgnored(e.author.id)
-  }), [e.author.id]), b = (0, a.ZP)(t.id, e.id), h = (0, l.e7)([c.default], () => c.default.getId()), v = (0, u.ZP)(e).nick, O = e.author.id === h ? g.intl.string(g.t.LuZzxn) : v, x = (0, l.e7)([f.default], () => e.mentions.length > 0 ? f.default.getUser(e.mentions[0]) : true), j = (0, u.Sw)(x, t).nick;
+  }), [e.author.id]), b = (0, a.ZP)(t.id, e.id), h = (0, l.e7)([c.default], () => c.default.getId()), O = (0, u.ZP)(e).nick, v = e.author.id === h ? g.intl.string(g.t.LuZzxn) : O, x = (0, l.e7)([f.default], () => e.mentions.length > 0 ? f.default.getUser(e.mentions[0]) : true), j = (0, u.Sw)(x, t).nick;
   return function(e, t) {
     let {
       isBlocked: n,
@@ -266,7 +266,7 @@ function y(e, t) {
     message: e,
     channel: t,
     currentUserId: h,
-    authorNick: O,
+    authorNick: v,
     otherUser: x,
     otherUserNick: j,
     isBlocked: n,

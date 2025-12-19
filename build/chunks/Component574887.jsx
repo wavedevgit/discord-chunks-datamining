@@ -29,7 +29,7 @@ function I(e) {
     account: t,
     locale: i,
     userId: o
-  } = e, r = null != (n = t.metadata) ? n : {}, x = (0, f.FI)(r[b.PC.CREATED_AT], i), I = s.Z.get((0, u.rR)(t.type));
+  } = e, r = null != (n = t.metadata) ? n : {}, x = (0, f.FI)(r[v.PC.CREATED_AT], i), I = s.Z.get((0, u.rR)(t.type));
   return (0, l.jsxs)("li", {
     className: g.connection,
     children: [(0, l.jsx)(a.u, {
@@ -37,7 +37,7 @@ function I(e) {
       children: (0, l.jsx)("div", {
         className: g.platformIconContainer,
         children: (0, l.jsx)("img", {
-          alt: j.intl.formatToPlainString(j.t.rtm15P, {
+          alt: b.intl.formatToPlainString(b.t.rtm15P, {
             name: null == I ? true : I.name
           }),
           className: g.platformIcon,
@@ -62,14 +62,14 @@ function I(e) {
             href: n,
             className: g.platformUrlAnchor,
             useDefaultUnderlineStyles: false,
-            "aria-label": (null == I ? true : I.name) != null ? "".concat(I.name, ", ").concat(t.name, ", ").concat(j.intl.string(j.t.q5jLJB)) : "".concat(t.name, ", ").concat(j.intl.string(j.t.q5jLJB)),
+            "aria-label": (null == I ? true : I.name) != null ? "".concat(I.name, ", ").concat(t.name, ", ").concat(b.intl.string(b.t.q5jLJB)) : "".concat(t.name, ", ").concat(b.intl.string(b.t.q5jLJB)),
             onClick: e => {
-              (0, d.yw)(v.rMx.CONNECTED_ACCOUNT_VIEWED, {
+              (0, d.yw)(j.rMx.CONNECTED_ACCOUNT_VIEWED, {
                 platform_type: t.type,
                 other_user_id: o
               }), (0, h.q)({
                 href: n,
-                trusted: (null == I ? true : I.type) !== v.ABu.DOMAIN
+                trusted: (null == I ? true : I.type) !== j.ABu.DOMAIN
               }, e)
             },
             children: (0, l.jsxs)("div", {
@@ -90,13 +90,13 @@ function I(e) {
           })
         })(), null != x && (0, l.jsx)(c.Text, {
           variant: "text-xs/normal",
-          children: j.intl.format(j.t["9rfonh"], {
+          children: b.intl.format(b.t["9rfonh"], {
             date: x
           })
         })]
       }), (0, l.jsx)("div", {
         className: g.metadata,
-        children: t.type === v.ABu.REDDIT ? (0, m.oP)(r) : t.type === v.ABu.STEAM ? (0, m.Dq)(r) : t.type === v.ABu.BLUESKY || t.type === v.ABu.MASTODON || t.type === v.ABu.TWITTER ? (0, m.rJ)(r) : t.type === v.ABu.PAYPAL ? (0, m.li)(r) : t.type === v.ABu.EBAY ? (0, m.ul)(r) : t.type === v.ABu.TIKTOK ? (0, m.hf)(r) : null
+        children: t.type === j.ABu.REDDIT ? (0, m.oP)(r) : t.type === j.ABu.STEAM ? (0, m.Dq)(r) : t.type === j.ABu.BLUESKY || t.type === j.ABu.MASTODON || t.type === j.ABu.TWITTER ? (0, m.rJ)(r) : t.type === j.ABu.PAYPAL ? (0, m.li)(r) : t.type === j.ABu.EBAY ? (0, m.ul)(r) : t.type === j.ABu.TIKTOK ? (0, m.hf)(r) : null
       })]
     })]
   })

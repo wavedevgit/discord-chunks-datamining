@@ -1,7 +1,7 @@
 /** Chunk was on 93979 **/
 /** chunk id: 323090, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => v
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -20,12 +20,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk199912 = require("./199912.js");
 
-function b(e) {
+function v(e) {
   let {
     user: n,
     currentUser: t,
-    displayProfile: b,
-    guildId: j,
+    displayProfile: v,
+    guildId: b,
     onClose: g
   } = e, I = (0, i.e7)([c.Z], () => {
     var e;
@@ -33,25 +33,25 @@ function b(e) {
   }), y = (0, i.e7)([r.Z, a.Z], () => r.Z.getChannel(a.Z.getChannelId()));
   return (0, l.jsxs)(o.zJl, {
     fade: true,
-    className: v.scroller,
-    children: [(null == b ? true : b.bio) != null && (null == b ? true : b.bio) !== "" && (0, l.jsx)(d.Z, {
-      userBio: b.bio,
+    className: j.scroller,
+    children: [(null == v ? true : v.bio) != null && (null == v ? true : v.bio) !== "" && (0, l.jsx)(d.Z, {
+      userBio: v.bio,
       setLineClamp: false
     }), (null == I ? true : I.popularApplicationCommandIds) != null && null != y && (0, l.jsx)(s.Z, {
       applicationId: I.id,
       commandIds: I.popularApplicationCommandIds,
       channel: y,
-      guildId: j,
+      guildId: b,
       onClick: g
-    }), (null == b ? true : b.guildId) != null && (0, l.jsx)(m.Z, {
+    }), (null == v ? true : v.guildId) != null && (0, l.jsx)(m.Z, {
       user: n,
       currentUser: t,
-      guildId: b.guildId
+      guildId: v.guildId
     }), (0, l.jsx)(f.Z, {
       heading: h.intl.string(h.t["A//N4k"]),
       children: (0, l.jsx)(u.Z, {
         userId: n.id,
-        guildId: j,
+        guildId: b,
         tooltipDelay: x.vB
       })
     }), (0, l.jsx)(p.Z, {

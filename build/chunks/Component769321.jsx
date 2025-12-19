@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk980120 = require("./980120.js");
 
-function j(e) {
+function b(e) {
   let {
     applicationRoleConnection: n,
     locale: t,
@@ -30,7 +30,7 @@ function j(e) {
   } = e, r = (0, s.rm)(n, t);
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)("div", {
-      className: b.platformIconContainer,
+      className: v.platformIconContainer,
       children: null != n.application.bot ? (0, l.jsx)(c.Z, {
         user: new m.Z(n.application.bot),
         size: a.EFr.SIZE_16
@@ -39,9 +39,9 @@ function j(e) {
         size: "sm"
       })
     }), (0, l.jsxs)("div", {
-      className: b.connectionInfo,
+      className: v.connectionInfo,
       children: [(0, l.jsxs)(a.P3F, {
-        className: b.connectedAppRoleAccountClickable,
+        className: v.connectedAppRoleAccountClickable,
         onClick: () => {
           null == i || i(), (0, d.transitionToGlobalDiscovery)({
             tab: h.GlobalDiscoveryTab.APPS,
@@ -65,13 +65,13 @@ function j(e) {
         }) : null, (0, l.jsx)(a.Text, {
           variant: "text-xxs/normal",
           color: "text-default",
-          className: b.connectedAppRoleAccountPoweredBy,
-          children: v.intl.format(v.t.zIT9YA, {
+          className: v.connectedAppRoleAccountPoweredBy,
+          children: j.intl.format(j.t.zIT9YA, {
             applicationHook: () => n.application.name
           })
         })]
       }), null != r && r.length > 0 ? (0, l.jsx)("div", {
-        className: b.metadata,
+        className: v.metadata,
         children: r
       }) : null]
     })]
@@ -87,10 +87,10 @@ function g(e) {
     trackUserProfileAction: a
   } = (0, x.KZ)(), c = (0, r.e7)([f.default], () => f.default.locale), s = (0, r.e7)([p.Z], () => p.Z.getGuildId());
   return 0 === n.length ? null : (0, l.jsx)("ul", {
-    className: o()(b.container, t),
+    className: o()(v.container, t),
     children: n.map((e, n) => (0, l.jsx)("li", {
-      className: b.connection,
-      children: (0, l.jsx)(j, {
+      className: v.connection,
+      children: (0, l.jsx)(b, {
         applicationRoleConnection: e,
         locale: c,
         onApplicationClicked: () => {

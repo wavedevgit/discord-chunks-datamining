@@ -24,7 +24,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk420660 = require("./420660.js"),
   Chunk326255 = require("./326255.js"),
   Chunk956221 = require("./956221.js"),
-  Chunk771173 = require("./771173.jsx"),
+  Chunk747017 = require("./747017.jsx"),
   Chunk297781 = require("./297781.jsx"),
   Chunk82295 = require("./82295.jsx"),
   Chunk554300 = require("./554300.jsx"),
@@ -212,7 +212,6 @@ let ei = Chunk473749.memo(e => {
         user: t
       });
       return (0, i.jsx)(v.Z, {
-        location: "FriendsPopout",
         user: t,
         activities: r,
         applicationStream: em,

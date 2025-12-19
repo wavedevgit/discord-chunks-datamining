@@ -8,7 +8,7 @@ require("./473749.js");
 var Chunk468363 = require("./468363.js"),
   Chunk326255 = require("./326255.js"),
   Chunk956221 = require("./956221.js"),
-  Chunk771173 = require("./771173.jsx"),
+  Chunk747017 = require("./747017.jsx"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk768142 = require("./768142.js");
@@ -38,7 +38,6 @@ let d = function(e) {
     applicationStream: d,
     voiceChannel: b
   }) ? (0, r.jsx)(o.Z, {
-    location: "StatusText",
     textClassName: u.statusText,
     activities: n,
     applicationStream: d,
