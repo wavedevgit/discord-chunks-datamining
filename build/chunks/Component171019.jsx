@@ -23,26 +23,26 @@ let m = e => {
       n = o.Z.getPurchase(t);
     return null != n ? (0, c.qS)(n) : (0, c.G1)(e)
   });
-  return m || p && n ? null : h ? (0, r.jsx)(l.lBU, {
+  return m || p && n ? null : h ? (0, r.jsx)(a.lBU, {
     className: u.newBadge,
     text: (0, r.jsxs)("div", {
       className: u.newBadgeText,
-      children: [(0, r.jsx)(l.mBM, {
+      children: [(0, r.jsx)(a.mBM, {
         size: "xxs",
         color: "currentColor"
       }), d.intl.string(d.t.y2b7CA)]
     })
-  }) : (0, r.jsx)(l.G2e, {
-    icon: v ? () => (0, r.jsx)(l.SrA, {
+  }) : (0, r.jsx)(a.G2e, {
+    icon: v ? () => (0, r.jsx)(a.SrA, {
       size: "custom",
       color: "currentColor",
       width: 14,
       height: 14
-    }) : () => (0, r.jsx)(l.mBM, {
+    }) : () => (0, r.jsx)(a.mBM, {
       size: "xxs",
       color: "currentColor"
     }),
-    color: a.Z.colors.BACKGROUND_ACCENT.css,
+    color: l.Z.colors.BACKGROUND_ACCENT.css,
     className: u.iconBadge
   })
 }

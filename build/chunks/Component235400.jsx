@@ -39,7 +39,7 @@ function E(e) {
     onClose: j,
     initialSelectedDecoration: w,
     guild: E
-  } = e, A = (0, a.e7)([f.ZP], () => null != E ? f.ZP.getMember(E.id, n.id) : null), T = null != A ? A.avatarDecoration : n.avatarDecoration, {
+  } = e, A = (0, l.e7)([f.ZP], () => null != E ? f.ZP.getMember(E.id, n.id) : null), T = null != A ? A.avatarDecoration : n.avatarDecoration, {
     pendingAvatarDecoration: _,
     setPendingAvatarDecoration: D
   } = (0, g.Z)({
@@ -69,19 +69,19 @@ function E(e) {
     })
   }, [b, j]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(l.xBx, {
+    children: [(0, r.jsxs)(a.xBx, {
       "data-migration-pending": true,
       separator: false,
       className: I.modalHeader,
-      children: [(0, r.jsx)(l.Heading, {
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
         children: C.intl.string(C.t.HykynS)
-      }), (0, r.jsx)(l.olH, {
+      }), (0, r.jsx)(a.olH, {
         "data-migration-pending": true,
         className: I.modalCloseButton,
         onClick: j
       })]
-    }), (0, r.jsxs)(l.hzk, {
+    }), (0, r.jsxs)(a.hzk, {
       "data-migration-pending": true,
       className: I.modalContent,
       scrollbarType: "none",
@@ -100,17 +100,17 @@ function E(e) {
         guildId: null == E ? true : E.id,
         avatarDecoration: k
       })]
-    }), (0, r.jsxs)(l.mzw, {
+    }), (0, r.jsxs)(a.mzw, {
       "data-migration-pending": true,
       className: I.modalFooter,
-      children: [null != L && (M || !U) || null === Z ? (0, r.jsx)(l.Button, {
+      children: [null != L && (M || !U) || null === Z ? (0, r.jsx)(a.Button, {
         variant: "primary",
         text: C.intl.string(C.t.Jh8fJz),
         onClick: () => {
           D(Z), j()
         },
         disabled: z
-      }) : null == L && (M || !U) ? (0, r.jsx)(l.Button, {
+      }) : null == L && (M || !U) ? (0, r.jsx)(a.Button, {
         variant: "primary",
         onClick: () => G(null == R ? true : R.skuId),
         text: C.intl.string(C.t.fYfGgK)
@@ -123,7 +123,7 @@ function E(e) {
       }), !M && U ? (0, r.jsx)(h.Z, {
         itemType: null != (t = null == L ? true : L.type) ? t : null == R ? true : R.type,
         onClose: j
-      }) : (0, r.jsx)(l.Button, {
+      }) : (0, r.jsx)(a.Button, {
         variant: "secondary",
         text: C.intl.string(C.t["ETE/oC"]),
         onClick: j
@@ -140,7 +140,7 @@ function A(e) {
     onCloseModal: d,
     initialSelectedDecoration: u,
     guild: p
-  } = e, h = (0, a.e7)([b.default], () => b.default.getCurrentUser()), {
+  } = e, h = (0, l.e7)([b.default], () => b.default.getCurrentUser()), {
     analyticsLocations: v
   } = (0, o.ZP)(n, s.Z.EDIT_AVATAR_DECORATION_MODAL), {
     categories: x,
@@ -155,15 +155,15 @@ function A(e) {
     })
   }, [v]), null == h ? null : (0, r.jsx)(o.Gt, {
     value: v,
-    children: (0, r.jsx)(l.Y0X, {
+    children: (0, r.jsx)(a.Y0X, {
       transitionState: t,
       className: I.modal,
-      size: y ? l.CgR.DYNAMIC : l.CgR.MEDIUM,
+      size: y ? a.CgR.DYNAMIC : a.CgR.MEDIUM,
       parentComponent: "AvatarDecorationModal",
       "data-migration-pending": true,
-      children: y ? (0, r.jsx)(l.$jN, {
+      children: y ? (0, r.jsx)(a.$jN, {
         className: I.spinner,
-        type: l.$jN.Type.SPINNING_CIRCLE
+        type: a.$jN.Type.SPINNING_CIRCLE
       }) : (0, r.jsx)(E, {
         user: h,
         guild: p,

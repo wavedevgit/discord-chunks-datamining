@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk278074 = require("./278074.js"),
   Chunk481060 = require("./481060.js"),
   Chunk171019 = require("./171019.jsx"),
@@ -55,13 +55,13 @@ function b(e, t) {
   var n, r, i = function(e, t) {
     if (null == e) return {};
     var n, r, i = {},
-      a = Object.keys(e);
-    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      l = Object.keys(e);
+    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var l = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -71,10 +71,10 @@ let j = () => 80,
       children: t,
       className: n,
       onSelect: i,
-      isSelected: a = false
+      isSelected: l = false
     } = e, s = b(e, ["children", "className", "onSelect", "isSelected"]);
     return (0, r.jsx)(o.P3F, f(g({
-      className: l()(x.decorationGridItem, a ? x.selected : true, n)
+      className: a()(x.decorationGridItem, l ? x.selected : true, n)
     }, s), {
       onClick: i,
       children: t
@@ -84,15 +84,15 @@ let j = () => 80,
     var {
       user: t,
       avatarDecoration: n,
-      innerRef: a,
-      section: l,
+      innerRef: l,
+      section: a,
       canUsePremiumCollectibles: s,
       isSelected: o = false
     } = e, u = b(e, ["user", "avatarDecoration", "innerRef", "section", "canUsePremiumCollectibles", "isSelected"]);
     let m = i.useRef(null),
       {
         isHoveringOrFocusing: v
-      } = (0, d.Z)(null != a ? a : m),
+      } = (0, d.Z)(null != l ? l : m),
       {
         avatarDecorationSrc: j
       } = (0, h.Z)({
@@ -102,7 +102,7 @@ let j = () => 80,
         onlyAnimateOnHoverOrFocus: !v
       });
     return (0, r.jsxs)(P, f(g({
-      innerRef: null != a ? a : m,
+      innerRef: null != l ? l : m,
       isSelected: o
     }, u), {
       children: [(0, r.jsx)("img", {
@@ -112,8 +112,8 @@ let j = () => 80,
       }), (0, r.jsx)(c.Z, {
         skuId: n.skuId,
         canUsePremiumCollectibles: s,
-        isPurchaseSection: l === p.$0.PURCHASE,
-        isPremiumSection: l === p.$0.PREMIUM_PURCHASE
+        isPurchaseSection: a === p.$0.PURCHASE,
+        isPremiumSection: a === p.$0.PREMIUM_PURCHASE
       })]
     }))
   },
@@ -122,8 +122,8 @@ let j = () => 80,
       user: t,
       guild: n,
       pendingAvatarDecoration: i,
-      selectedAvatarDecorationRef: a,
-      onSelect: l,
+      selectedAvatarDecorationRef: l,
+      onSelect: a,
       onOpenShop: c
     } = e, d = (0, p.ZP)(), h = u.ZP.canUseCollectibles(t);
     return (0, r.jsx)(o.GMG, {
@@ -149,7 +149,7 @@ let j = () => 80,
         return (0, s.EQ)(O[u]).with(p.Tm, () => (0, r.jsxs)(P, {
           style: g({}, f),
           isSelected: null === i,
-          onSelect: () => l(null),
+          onSelect: () => a(null),
           children: [(0, r.jsx)(o.t6m, {
             size: "md",
             color: "currentColor",
@@ -180,10 +180,10 @@ let j = () => 80,
             user: t,
             avatarDecoration: e,
             section: j,
-            innerRef: n ? a : true,
+            innerRef: n ? l : true,
             canUsePremiumCollectibles: h,
             isSelected: n,
-            onSelect: () => l(e)
+            onSelect: () => a(e)
           }, b)
         })
       },
