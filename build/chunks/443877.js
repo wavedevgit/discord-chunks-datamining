@@ -18,11 +18,11 @@ function f(e) {
   var t, n;
   let f = null == e ? true : e.guild_id,
     O = (0, i.e7)([c.Z], () => null == f || c.Z.canChatInGuild(f), [f]),
-    b = (0, i.e7)([l.Z], () => null != f && l.Z.isLurking(f), [f]),
+    b = (0, i.e7)([o.Z], () => null != f && o.Z.isLurking(f), [f]),
     h = (0, i.e7)([a.ZP], () => null != f && a.ZP.isCurrentUserGuest(f), [f]),
     m = (0, i.e7)([u.Z], () => O && u.Z.can(p.Plq.ADD_REACTIONS, e), [O, e]),
     g = (0, r.ux)(f),
-    [, y] = (0, o.AB)(f),
+    [, y] = (0, l.AB)(f),
     v = (0, s.$R)(e);
   return null == e ? {
     disableReactionReads: true,

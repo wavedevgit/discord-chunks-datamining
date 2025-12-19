@@ -6,7 +6,7 @@ require.d(exports, {
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function l(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -26,7 +26,7 @@ class a extends(i = Chunk442837.ZP.PersistedStore) {
     returntrue !== s[e]
   }
 }
-l(a, "displayName", "ActivityInviteEducationStore"), l(a, "persistKey", "ActivityInviteEducationExperimentStore");
+o(a, "displayName", "ActivityInviteEducationStore"), o(a, "persistKey", "ActivityInviteEducationExperimentStore");
 let c = new a(Chunk570140.Z, {
   ACTIVITY_INVITE_EDUCATION_DISMISS: function(e) {
     return s[e.key] = e.value, true
