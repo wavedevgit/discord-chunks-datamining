@@ -34,23 +34,23 @@ function u(e) {
 
 function m(e) {
   let {
-    product: t,
+    itemType: t,
     onClose: m
   } = e, {
     newestAnalyticsLocation: p
-  } = (0, a.ZP)(), h = null == t ? null : t.type === i.Z.AVATAR_DECORATION ? o.cd.AVATAR_DECORATION_MODAL_UPSELL : t.type === i.Z.PROFILE_EFFECT ? o.cd.PROFILE_EFFECT_MODAL_UPSELL : t.type === i.Z.NAMEPLATE ? o.cd.NAMEPLATE_MODAL_UPSELL : null;
+  } = (0, l.ZP)(), h = t === i.Z.AVATAR_DECORATION ? o.cd.AVATAR_DECORATION_MODAL_UPSELL : t === i.Z.PROFILE_EFFECT ? o.cd.PROFILE_EFFECT_MODAL_UPSELL : t === i.Z.NAMEPLATE ? o.cd.NAMEPLATE_MODAL_UPSELL : null;
   return null == h ? null : (0, r.jsxs)("div", {
     className: d.nitroUpsellContainer,
-    children: [(0, r.jsx)(l.SrA, {
+    children: [(0, r.jsx)(a.SrA, {
       className: d.nitroWheel,
       size: "md",
       color: s.JX.PREMIUM_TIER_2
-    }), (0, r.jsx)(l.Text, {
+    }), (0, r.jsx)(a.Text, {
       className: d.nitroText,
       variant: "text-md/medium",
       children: h === o.cd.AVATAR_DECORATION_MODAL_UPSELL ? c.intl.format(c.t["aFR/EI"], {
         onClick: () => {
-          (0, l.ZDy)(async () => {
+          (0, a.ZDy)(async () => {
             let {
               default: e
             } = await n.e("43360").then(n.bind(n, 73415));
@@ -66,7 +66,7 @@ function m(e) {
         }
       }) : h === o.cd.PROFILE_EFFECT_MODAL_UPSELL ? c.intl.format(c.t.eWNONM, {
         onClick: () => {
-          (0, l.ZDy)(async () => {
+          (0, a.ZDy)(async () => {
             let {
               default: e
             } = await n.e("43360").then(n.bind(n, 73415));
@@ -82,7 +82,7 @@ function m(e) {
         }
       }) : h === o.cd.NAMEPLATE_MODAL_UPSELL ? c.intl.format(c.t.G6b8TF, {
         onClick: () => {
-          (0, l.ZDy)(async () => {
+          (0, a.ZDy)(async () => {
             let {
               default: e
             } = await n.e("43360").then(n.bind(n, 73415));

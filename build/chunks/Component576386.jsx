@@ -22,12 +22,12 @@ let h = e => {
       currentUser: n,
       nameplate: i,
       section: o,
-      canUsePremiumCollectibles: d,
+      canUsePremiumCollectibles: u,
       isSelected: h,
       onClick: v
     } = e, f = (0, r.useRef)(null), {
       isHoveringOrFocusing: b
-    } = (0, u.Z)(f);
+    } = (0, d.Z)(f);
     return (0, l.jsxs)(s.P3F, {
       innerRef: f,
       "aria-label": null != (t = i.label) ? t : x.intl.string(x.t.x5CoXR),
@@ -45,7 +45,7 @@ let h = e => {
       }), (0, l.jsx)(c.Z, {
         isPurchaseSection: o === p.$0.PURCHASE,
         isPremiumSection: o === p.$0.PREMIUM_PURCHASE,
-        canUsePremiumCollectibles: d,
+        canUsePremiumCollectibles: u,
         skuId: i.skuId
       })]
     })
@@ -57,7 +57,7 @@ let h = e => {
       guildId: r,
       onSelect: i,
       onOpenShop: c
-    } = e, u = d.ZP.canUseCollectibles(t), m = (0, p.ZP)();
+    } = e, d = u.ZP.canUseCollectibles(t), m = (0, p.ZP)();
     return (0, l.jsx)(s.u2D, {
       className: g.inventory,
       children: m.map(e => (0, l.jsxs)(s.Kqy, {
@@ -96,7 +96,7 @@ let h = e => {
             currentUser: t,
             nameplate: r,
             section: e.section,
-            canUsePremiumCollectibles: u,
+            canUsePremiumCollectibles: d,
             isSelected: (null == n ? true : n.skuId) === r.skuId,
             onClick: () => i(r)
           }, r.skuId))

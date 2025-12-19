@@ -2,11 +2,16 @@
 /** chunk id: 161226, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => f
 });
-var Chunk778787 = require("./778787.js");
+var Chunk587177 = require("./587177.js"),
+  Chunk718424 = require("./718424.js"),
+  Chunk311850 = require("./311850.js"),
+  Chunk778787 = require("./778787.js"),
+  Chunk215023 = require("./215023.js"),
+  Chunk981631 = require("./981631.js");
 
-function i(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -15,39 +20,9 @@ function i(e, t, n) {
   }) : e[t] = n, e
 }
 
-function a(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      i(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function o(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function s(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function l(e, t) {
+function u(e, t) {
   if (null == e) return {};
-  var n, r, i = c(e, t);
+  var n, r, i = d(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -55,27 +30,60 @@ function l(e, t) {
   return i
 }
 
-function c(e, t) {
+function d(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class u extends Chunk778787.q {
+class f {
   static fromServer(e) {
     var {
-      purchased_at: t,
-      purchase_type: n,
-      expires_at: r
-    } = e, i = l(e, ["purchased_at", "purchase_type", "expires_at"]);
-    return new u(s(a({}, super.fromServer(i)), {
-      purchaseType: n,
-      purchasedAt: null != t ? new Date(t) : t,
-      expiresAt: null != r ? new Date(r) : null
-    }))
+      type: t,
+      sku_id: n,
+      name: c,
+      premium_type: d,
+      category_sku_id: p,
+      prices: _,
+      bundled_products: m,
+      variants: h,
+      base_variant_name: g,
+      base_variant_sku_id: E,
+      variant_label: b,
+      variant_value: y,
+      purchased_at: O,
+      purchase_type: v,
+      expires_at: S
+    } = e, I = u(e, ["type", "sku_id", "name", "premium_type", "category_sku_id", "prices", "bundled_products", "variants", "base_variant_name", "base_variant_sku_id", "variant_label", "variant_value", "purchased_at", "purchase_type", "expires_at"]);
+    return new f({
+      type: t,
+      name: c,
+      skuId: n,
+      premiumType: d === l.WND ? null : d,
+      categorySkuId: p,
+      isCategoryReward: s.y8.some(e => {
+        let {
+          rewardSkuId: t
+        } = e;
+        return t === n
+      }),
+      prices: (0, a.l)(_),
+      items: (0, i.i)(I.items),
+      bundledProducts: null == m ? true : m.map(r.Z.fromServer),
+      variants: null == h ? true : h.map(o.q.fromServer),
+      googleSkuIds: I.google_sku_ids,
+      eligibleOffers: I.eligible_offers,
+      baseVariantName: g,
+      baseVariantSkuId: E,
+      variantLabel: b,
+      variantValue: y,
+      purchaseType: v,
+      purchasedAt: null != O ? new Date(O) : O,
+      expiresAt: null != S ? new Date(S) : null
+    })
   }
   constructor(e) {
-    super(e), i(this, "purchaseType", true), i(this, "purchasedAt", true), i(this, "expiresAt", true), this.purchasedAt = e.purchasedAt, this.purchaseType = e.purchaseType, this.expiresAt = e.expiresAt
+    c(this, "skuId", true), c(this, "name", true), c(this, "type", true), c(this, "premiumType", true), c(this, "items", true), c(this, "categorySkuId", true), c(this, "isCategoryReward", true), c(this, "prices", true), c(this, "bundledProducts", true), c(this, "variants", true), c(this, "variantGroupStoreListingId", true), c(this, "googleSkuIds", true), c(this, "eligibleOffers", true), c(this, "baseVariantName", true), c(this, "baseVariantSkuId", true), c(this, "variantLabel", true), c(this, "variantValue", true), c(this, "purchaseType", true), c(this, "purchasedAt", true), c(this, "expiresAt", true), this.skuId = e.skuId, this.name = e.name, this.type = e.type, this.premiumType = e.premiumType, this.items = e.items, this.categorySkuId = e.categorySkuId, this.isCategoryReward = e.isCategoryReward, this.prices = e.prices, this.bundledProducts = e.bundledProducts, this.googleSkuIds = e.googleSkuIds, this.variants = e.variants, this.eligibleOffers = e.eligibleOffers, this.baseVariantName = e.baseVariantName, this.baseVariantSkuId = e.baseVariantSkuId, this.variantLabel = e.variantLabel, this.variantValue = e.variantValue, this.purchasedAt = e.purchasedAt, this.purchaseType = e.purchaseType, this.expiresAt = e.expiresAt
   }
 }

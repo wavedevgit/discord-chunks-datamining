@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk278074 = require("./278074.js"),
   Chunk442837 = require("./442837.js"),
@@ -38,7 +38,7 @@ let y = [{
   O = e => {
     let {
       purchase: t
-    } = e, n = (0, c.e7)([x.default], () => x.default.locale), i = (0, u.qS)(t), l = null != t.expiresAt ? (0, f.TD)(Date.now(), t.expiresAt) : null, a = (0, p.ag)(t), s = t.purchasedAt.toLocaleDateString(n, {
+    } = e, n = (0, c.e7)([v.default], () => v.default.locale), i = (0, u.qS)(t), a = null != t.expiresAt ? (0, g.TD)(Date.now(), t.expiresAt) : null, l = (0, p.ag)(t), s = t.purchasedAt.toLocaleDateString(n, {
       month: "long",
       year: "numeric"
     });
@@ -47,12 +47,12 @@ let y = [{
       children: [(0, r.jsx)(d.Text, {
         variant: "text-sm/semibold",
         color: "text-strong",
-        children: a
-      }), null != l && (0, r.jsx)(d.Text, {
+        children: l
+      }), null != a && (0, r.jsx)(d.Text, {
         variant: "text-xxs/normal",
         color: "text-muted",
         children: j.intl.format(j.t.Io7ozn, {
-          days: l.days.toString()
+          days: a.days.toString()
         })
       }), (0, r.jsxs)(d.Text, {
         variant: "text-xxs/normal",
@@ -81,20 +81,20 @@ let y = [{
     let {
       user: t,
       guildId: n,
-      avatarDecoration: l,
-      className: x
-    } = e, f = (0, c.e7)([g.Z], () => g.Z.getStatus(t.id)), {
+      avatarDecoration: a,
+      className: v
+    } = e, g = (0, c.e7)([x.Z], () => x.Z.getStatus(t.id)), {
       product: w,
       purchase: S
-    } = (0, m.Z)(null == l ? true : l.skuId), C = v.ZP.canUseCollectibles(t), I = null != S ? (0, u.qS)(S) : (0, u.G1)(w), E = !C && (0, u.qS)(S), A = (0, h.M)(!I || C), T = (0, p.ag)(S), _ = (0, p.kd)(w), D = i.useMemo(() => E ? j.intl.string(j.t["7vkeu5"]) : (0, o.EQ)([I, C, A]).with([true, true, false], () => j.intl.string(j.t.hmyYK8)).with([true, false, true], () => j.intl.string(j.t.q0PlFn)).with([true, false, false], () => j.intl.string(j.t["0xs2sA"])).otherwise(() => j.intl.string(j.t.fEGjVQ)), [E, I, C, A]);
+    } = (0, m.Z)(null == a ? true : a.skuId), C = f.ZP.canUseCollectibles(t), I = null != S ? (0, u.qS)(S) : (0, u.G1)(w), E = !C && (0, u.qS)(S), A = (0, h.M)(!I || C), T = (0, p.ag)(S), _ = (0, p.kd)(w), D = i.useMemo(() => E ? j.intl.string(j.t["7vkeu5"]) : (0, o.EQ)([I, C, A]).with([true, true, false], () => j.intl.string(j.t.hmyYK8)).with([true, false, true], () => j.intl.string(j.t.q0PlFn)).with([true, false, false], () => j.intl.string(j.t["0xs2sA"])).otherwise(() => j.intl.string(j.t.fEGjVQ)), [E, I, C, A]);
     return null == S || E ? (0, r.jsxs)("div", {
-      className: a()(P.modalPreview, P.shopPreviewContainer, x),
+      className: l()(P.modalPreview, P.shopPreviewContainer, v),
       children: [(0, r.jsx)("div", {
         className: P.shopPreviewBanner,
         children: (0, r.jsx)(b.Z, {
           user: t,
           guildId: n,
-          avatarDecorationOverride: l
+          avatarDecorationOverride: a
         })
       }), (0, r.jsxs)("div", {
         className: P.shopPreviewTextContainer,
@@ -107,7 +107,7 @@ let y = [{
         })]
       })]
     }) : (0, r.jsxs)("div", {
-      className: a()(P.modalPreview, x),
+      className: l()(P.modalPreview, v),
       children: [(0, r.jsxs)("div", {
         className: P.previewSections,
         children: [(0, r.jsx)("div", {
@@ -115,14 +115,14 @@ let y = [{
           children: (0, r.jsx)(b.Z, {
             user: t,
             guildId: n,
-            avatarDecorationOverride: l
+            avatarDecorationOverride: a
           })
         }), (0, r.jsx)("div", {
           className: P.smallDecorationPreviewsContainer,
           children: y.map(e => {
             let {
               avatarSize: i,
-              showStatus: a
+              showStatus: l
             } = e;
             return (0, r.jsx)("div", {
               className: P.smallDecorationPreview,
@@ -130,11 +130,11 @@ let y = [{
                 user: t,
                 guildId: n,
                 avatarSize: i,
-                avatarDecorationOverride: l,
-                status: a ? f : true,
+                avatarDecorationOverride: a,
+                status: l ? g : true,
                 "aria-hidden": true
               })
-            }, "".concat(i).concat(a))
+            }, "".concat(i).concat(l))
           })
         })]
       }), null != S && (0, r.jsx)(O, {

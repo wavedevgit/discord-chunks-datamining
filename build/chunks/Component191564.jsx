@@ -27,43 +27,44 @@ var Chunk54381 = require("./54381.js"),
   Chunk930796 = require("./930796.js");
 
 function C(e) {
+  var t;
   let {
-    user: t,
-    product: n,
-    purchase: i,
-    onApply: l,
-    onClose: s,
-    onOpenShop: c,
-    disableApplyButton: a,
-    canUsePremiumCollectibles: d,
-    selectedProfileEffect: f
-  } = e, g = null != i ? (0, u.qS)(i) : (0, u.G1)(n);
+    user: n,
+    product: i,
+    purchase: l,
+    onApply: s,
+    onClose: c,
+    onOpenShop: a,
+    disableApplyButton: d,
+    canUsePremiumCollectibles: f,
+    selectedProfileEffect: g
+  } = e, b = null != l ? (0, u.qS)(l) : (0, u.G1)(i);
   return (0, r.jsx)(r.Fragment, {
     children: (0, r.jsxs)(o.mzw, {
       "data-migration-pending": true,
       className: E.modalFooter,
-      children: [null != i && (d || !g) || null === f ? (0, r.jsx)(o.Button, {
+      children: [null != l && (f || !b) || null === g ? (0, r.jsx)(o.Button, {
         variant: "primary",
         text: O.intl.string(O.t.Jh8fJz),
-        onClick: l,
-        disabled: a
-      }) : null == i && (d || !g) ? (0, r.jsx)(o.Button, {
+        onClick: s,
+        disabled: d
+      }) : null == l && (f || !b) ? (0, r.jsx)(o.Button, {
         variant: "primary",
         text: O.intl.string(O.t.fYfGgK),
-        onClick: () => c(null == f ? true : f.skuId)
+        onClick: () => a(null == g ? true : g.skuId)
       }) : (0, r.jsx)(m.Z, {
-        subscriptionTier: v.Si.TIER_2,
-        showGradient: !d,
+        subscriptionTier: P.Si.TIER_2,
+        showGradient: !f,
         textOptions: {
-          textOverride: h.ZP.isPremium(t) ? O.intl.string(O.t.KXLX7l) : d ? O.intl.string(O.t.mr4K7D) : O.intl.string(O.t.pj0XBN)
+          textOverride: h.ZP.isPremium(n) ? O.intl.string(O.t.KXLX7l) : f ? O.intl.string(O.t.mr4K7D) : O.intl.string(O.t.pj0XBN)
         }
-      }), !d && g ? (0, r.jsx)(p.Z, {
-        product: null != i ? i : n,
-        onClose: s
+      }), !f && b ? (0, r.jsx)(p.Z, {
+        itemType: null != (t = null == l ? true : l.type) ? t : null == i ? true : i.type,
+        onClose: c
       }) : (0, r.jsx)(o.Button, {
         variant: "secondary",
         text: O.intl.string(O.t["ETE/oC"]),
-        onClick: s
+        onClick: c
       })]
     })
   })
@@ -81,24 +82,24 @@ function I(e) {
     onClose: b
   } = e, {
     pendingProfileEffect: x
-  } = (0, g.xZ)(null == n ? true : n.id), [P, v] = i.useMemo(() => {
+  } = (0, g.xZ)(null == n ? true : n.id), [v, P] = i.useMemo(() => {
     let e = (0, u.bl)(l, c);
     return [e.purchased, e.shopPreviews]
   }, [l, c]), [I, S] = i.useState(() => null != f ? f : true !== x ? x : null == p ? null : null != p ? p : null), w = i.useMemo(() => {
     var e;
-    let t = P.find(e => {
+    let t = v.find(e => {
       let {
         skuId: t
       } = e;
       return t === (null == I ? true : I.skuId)
     });
-    return null != (e = null != t ? t : v.find(e => {
+    return null != (e = null != t ? t : P.find(e => {
       let {
         skuId: t
       } = e;
       return t === (null == I ? true : I.skuId)
     })) ? e : null
-  }, [I, P, v]), {
+  }, [I, v, P]), {
     product: _,
     purchase: A
   } = (0, d.Z)(null == w ? true : w.skuId), Z = i.useRef(null), k = h.ZP.canUseCollectibles(t), N = true === x ? (null == I ? true : I.skuId) === (null == p ? true : p.skuId) : (null == I ? true : I.skuId) === (null == x ? true : x.skuId), T = i.useCallback(e => {
@@ -169,13 +170,13 @@ function S(e) {
     purchases: h
   } = (0, f.ZP)(), j = (0, l.e7)([b.default], () => b.default.getCurrentUser()), {
     analyticsLocations: y
-  } = (0, c.ZP)(n, s.Z.EDIT_PROFILE_EFFECT_MODAL), v = (0, g.nh)({
+  } = (0, c.ZP)(n, s.Z.EDIT_PROFILE_EFFECT_MODAL), P = (0, g.nh)({
     user: j,
     guildId: null == u ? true : u.id
   });
   return i.useEffect(() => {
-    x.default.track(P.rMx.OPEN_MODAL, {
-      type: P.jXE.PROFILE_EFFECT_CUSTOMIZATION,
+    x.default.track(v.rMx.OPEN_MODAL, {
+      type: v.jXE.PROFILE_EFFECT_CUSTOMIZATION,
       location_stack: y
     })
   }, [y]), (0, r.jsx)(c.Gt, {
@@ -195,7 +196,7 @@ function S(e) {
         categories: m,
         purchases: h,
         initialSelectedProfileEffect: a,
-        currentSavedEffect: v,
+        currentSavedEffect: P,
         onClose: d,
         analyticsLocations: y
       })

@@ -66,7 +66,7 @@ function j(e, t) {
   return i
 }
 let y = () => 80,
-  P = e => {
+  v = e => {
     var {
       children: t,
       className: n,
@@ -81,7 +81,7 @@ let y = () => 80,
       children: t
     }))
   },
-  v = e => {
+  P = e => {
     var t, {
         profileEffect: n,
         innerRef: l,
@@ -93,18 +93,18 @@ let y = () => 80,
     let m = (0, f.V)(n.skuId),
       y = i.useRef(null),
       {
-        accessibilityLabel: v,
+        accessibilityLabel: P,
         thumbnailPreviewSrc: O,
         title: E
       } = null != (t = null == m ? true : m.config) ? t : {},
       C = i.useMemo(() => (0, a.JE)(O), [O]);
-    return (0, r.jsxs)(P, h(x({
+    return (0, r.jsxs)(v, h(x({
       innerRef: null != l ? l : y,
       isSelected: s
     }, d), {
       children: [(0, r.jsx)("img", {
         src: b,
-        alt: v,
+        alt: P,
         className: g.presetEffectBackground
       }), (0, r.jsx)("img", {
         className: g.presetEffectImg,
@@ -148,7 +148,7 @@ let y = () => 80,
             section: j,
             items: y
           } = u[e];
-          return (0, s.EQ)(y[t]).with(p.Tm, () => (0, r.jsxs)(P, {
+          return (0, s.EQ)(y[t]).with(p.Tm, () => (0, r.jsxs)(v, {
             style: x({}, d),
             isSelected: !f,
             onSelect: () => o(null),
@@ -161,7 +161,7 @@ let y = () => 80,
               color: "text-strong",
               children: null != n ? m.intl.string(m.t.CHf9iJ) : m.intl.string(m.t.PoWNfe)
             })]
-          }, h)).with(p.oT, () => (0, r.jsxs)(P, {
+          }, h)).with(p.oT, () => (0, r.jsxs)(v, {
             style: d,
             onSelect: a,
             children: [(0, r.jsx)(c.EOn, {
@@ -177,7 +177,7 @@ let y = () => 80,
             })]
           }, h)).otherwise(e => {
             let t = (null == i ? true : i.skuId) === e.skuId;
-            return (0, r.jsx)(v, {
+            return (0, r.jsx)(P, {
               style: x({}, d),
               section: j,
               profileEffect: e,

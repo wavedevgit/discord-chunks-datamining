@@ -18,31 +18,31 @@ let m = e => {
     canUsePremiumCollectibles: n,
     isPurchaseSection: m,
     isPremiumSection: p
-  } = e, h = (0, c.Yq)(t), x = (0, i.e7)([s.Z, o.Z], () => {
+  } = e, h = (0, c.Yq)(t), v = (0, i.e7)([s.Z, o.Z], () => {
     let e = s.Z.getProduct(t),
       n = o.Z.getPurchase(t);
     return null != n ? (0, c.qS)(n) : (0, c.G1)(e)
   });
-  return m || p && n ? null : h ? (0, r.jsx)(a.lBU, {
+  return m || p && n ? null : h ? (0, r.jsx)(l.lBU, {
     className: u.newBadge,
     text: (0, r.jsxs)("div", {
       className: u.newBadgeText,
-      children: [(0, r.jsx)(a.mBM, {
+      children: [(0, r.jsx)(l.mBM, {
         size: "xxs",
         color: "currentColor"
       }), d.intl.string(d.t.y2b7CA)]
     })
-  }) : (0, r.jsx)(a.G2e, {
-    icon: x ? () => (0, r.jsx)(a.SrA, {
+  }) : (0, r.jsx)(l.G2e, {
+    icon: v ? () => (0, r.jsx)(l.SrA, {
       size: "custom",
       color: "currentColor",
       width: 14,
       height: 14
-    }) : () => (0, r.jsx)(a.mBM, {
+    }) : () => (0, r.jsx)(l.mBM, {
       size: "xxs",
       color: "currentColor"
     }),
-    color: l.Z.colors.BACKGROUND_ACCENT.css,
+    color: a.Z.colors.BACKGROUND_ACCENT.css,
     className: u.iconBadge
   })
 }

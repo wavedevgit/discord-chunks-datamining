@@ -9,6 +9,6 @@ function l() {
   let {
     showLoadingIndicator: t,
     slayerSdkApplications: e
-  } = (0, Chunk749876.Z)(true);
+  } = (0, Chunk749876.Z)(true, true);
   return !module && exports.length > 0
 }
