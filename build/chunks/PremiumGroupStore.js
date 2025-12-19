@@ -2,7 +2,7 @@
 /** chunk id: 643281, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -81,18 +81,27 @@ function O(e) {
   a.Z.wait(() => (0, s.i1)(t).catch(c.VqG)), d.membersData.isUpdating = false
 }
 
-function v() {
+function v(e) {
+  let {
+    errorCode: t,
+    subscriptionId: n
+  } = e;
+  if (t === l.YW.BILLING_SUBSCRIPTION_GROUP_INVITE_ALREADY_ACCEPTED) return a.Z.wait(() => (0, s.i1)(n).catch(c.VqG)), d.membersData.isUpdating = false, true;
+  S()
+}
+
+function S() {
   d.membersData.isUpdating = false
 }
 
-function S(e) {
+function I(e) {
   let {
     subscriptionId: t
   } = e;
   return !d.membersData.isFetching && (a.Z.wait(() => (0, s.i1)(t).catch(c.VqG)), true)
 }
 
-function I() {
+function T() {
   d = {
     membersData: {
       data: null,
@@ -106,7 +115,7 @@ function I() {
     }
   }
 }
-class T extends(r = Chunk442837.ZP.Store) {
+class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk78839.Z)
   }
@@ -160,9 +169,9 @@ class T extends(r = Chunk442837.ZP.Store) {
     return Chunk282793.v$
   }
 }
-u(T, "displayName", "PremiumGroupStore");
-let C = new T(Chunk570140.Z, {
-  PREMIUM_GROUP_MEMBERS_REQUEST: S,
+u(C, "displayName", "PremiumGroupStore");
+let A = new C(Chunk570140.Z, {
+  PREMIUM_GROUP_MEMBERS_REQUEST: I,
   PREMIUM_GROUP_MEMBERS_FETCH_START: f,
   PREMIUM_GROUP_MEMBERS_FETCH_SUCCESS: p,
   PREMIUM_GROUP_MEMBERS_FETCH_FAILURE: _,
@@ -173,12 +182,12 @@ let C = new T(Chunk570140.Z, {
   PREMIUM_GROUP_MEMBERSHIP_FETCH_FAILURE: E,
   PREMIUM_GROUP_INVITE_USERS_START: y,
   PREMIUM_GROUP_INVITE_USERS_SUCCESS: O,
-  PREMIUM_GROUP_INVITE_USERS_FAILURE: v,
+  PREMIUM_GROUP_INVITE_USERS_FAILURE: S,
   PREMIUM_GROUP_REMOVE_MEMBER_START: y,
   PREMIUM_GROUP_REMOVE_MEMBER_SUCCESS: O,
-  PREMIUM_GROUP_REMOVE_MEMBER_FAILURE: v,
+  PREMIUM_GROUP_REMOVE_MEMBER_FAILURE: S,
   PREMIUM_GROUP_REMOVE_INVITE_START: y,
   PREMIUM_GROUP_REMOVE_INVITE_SUCCESS: O,
   PREMIUM_GROUP_REMOVE_INVITE_FAILURE: v,
-  LOGOUT: I
+  LOGOUT: T
 })

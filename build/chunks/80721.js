@@ -104,7 +104,7 @@ async function _(e, t) {
   } catch (e) {
     return o.Z.dispatch({
       type: "PREMIUM_GROUP_REMOVE_MEMBER_FAILURE"
-    }), null
+    }), e
   }
 }
 async function m(e) {
@@ -137,15 +137,16 @@ async function h(e, t, n) {
     subscriptionGroupMemberId: n
   });
   try {
-    await a.tn.patch({
+    let r = await a.tn.patch({
       url: c.ANM.BILLING_SUBSCRIPTION_INVITE(e, t),
       rejectWithError: true
-    }), o.Z.dispatch({
+    });
+    return o.Z.dispatch({
       type: "PREMIUM_GROUP_ACCEPT_INVITE_SUCCESS",
       subscriptionGroupMemberId: n
-    })
+    }), r
   } catch (e) {
-    throw o.Z.dispatch({
+    return o.Z.dispatch({
       type: "PREMIUM_GROUP_ACCEPT_INVITE_FAIL",
       subscriptionGroupMemberId: n
     }), e
@@ -166,11 +167,14 @@ async function g(e, t, n) {
       subscriptionId: e,
       subscriptionGroupMemberId: n
     }), r
-  } catch (e) {
+  } catch (t) {
+    var r;
     return o.Z.dispatch({
       type: "PREMIUM_GROUP_REMOVE_INVITE_FAILURE",
-      subscriptionGroupMemberId: n
-    }), null
+      subscriptionGroupMemberId: n,
+      errorCode: null == (r = t.body) ? true : r.code,
+      subscriptionId: e
+    }), t
   }
 }
 async function E(e) {

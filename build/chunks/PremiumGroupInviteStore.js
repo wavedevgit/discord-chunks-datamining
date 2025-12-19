@@ -162,18 +162,24 @@ function N(e) {
 
 function P(e) {
   let {
-    subscriptionGroupMemberId: t
+    subscriptionGroupMemberId: t,
+    errorCode: n
   } = e;
   if (null == t) returnfalse;
-  let n = m.get(t);
-  if ((null == n ? true : n.invite) == null) returnfalse;
-  m.set(t, {
+  let r = m.get(t);
+  return (null == r ? true : r.invite) != null && (n === c.YW.BILLING_SUBSCRIPTION_GROUP_INVITE_ALREADY_ACCEPTED ? (m.set(t, {
+    state: c.bZ.ACCEPTED,
+    invite: _(f({}, r.invite), {
+      accepted_at: new Date().toISOString()
+    }),
+    errorStatus: null
+  }), true) : void m.set(t, {
     state: c.bZ.PENDING,
-    invite: _(f({}, n.invite), {
+    invite: _(f({}, r.invite), {
       removed_at: null
     }),
     errorStatus: null
-  })
+  }))
 }
 
 function R(e) {
