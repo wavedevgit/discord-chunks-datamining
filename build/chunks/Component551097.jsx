@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
-  Chunk807794 = require("./807794.js"),
+  Chunk620792 = require("./620792.js"),
   Chunk481060 = require("./481060.js"),
   Chunk617136 = require("./617136.js"),
   Chunk915750 = require("./915750.jsx"),
@@ -21,7 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk73826 = require("./73826.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk952334 = require("./952334.js");
-let y = (0, Chunk807794.animated)(Chunk685613.ZP),
+let y = (0, Chunk620792.animated)(Chunk685613.ZP),
   C = () => {
     let e = (0, Chunk915750.aM)(),
       {
@@ -63,24 +63,24 @@ let y = (0, Chunk807794.animated)(Chunk685613.ZP),
           logotypeStyle: {
             height: 24,
             maxWidth: 92,
-            transform: (0, Chunk807794.to)([exports.to({
+            transform: (0, Chunk620792.to)([exports.to({
               range: [0, 1],
               output: [1, 1]
             })], e => "scale(".concat(e, ")"))
           }
         })
       });
-    return (0, Chunk54381.jsxs)(Chunk807794.animated.div, {
+    return (0, Chunk54381.jsxs)(Chunk620792.animated.div, {
       className: l()(Chunk952334.wrapper, Chunk952334.rewardHighlightWrapper, {
         [Chunk952334.interactable]: O
       }),
       style: {
-        transform: (0, Chunk807794.to)([exports.to({
+        transform: (0, Chunk620792.to)([exports.to({
           range: [0, 1],
           output: [6, 0]
         })], e => "translateY(".concat(e, "px)"))
       },
-      children: [(0, Chunk54381.jsx)(Chunk807794.animated.div, {
+      children: [(0, Chunk54381.jsx)(Chunk620792.animated.div, {
         className: Chunk952334.opaqueExpandedBackground,
         style: {
           opacity: exports.to({
@@ -91,7 +91,7 @@ let y = (0, Chunk807794.animated)(Chunk685613.ZP),
       }), (0, Chunk54381.jsx)(Chunk73826.Z, {
         isFullyExpanded: O,
         partnerBranding: N
-      }), (0, Chunk54381.jsxs)(Chunk807794.animated.div, {
+      }), (0, Chunk54381.jsxs)(Chunk620792.animated.div, {
         className: Chunk952334.promotedBadgeWrapper,
         style: {
           opacity: exports.to({

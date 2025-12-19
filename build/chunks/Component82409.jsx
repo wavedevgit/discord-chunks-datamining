@@ -7,7 +7,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
-  Chunk807794 = require("./807794.js"),
+  Chunk620792 = require("./620792.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js");
 require("./28664.jsx");
@@ -58,7 +58,7 @@ function D(e) {
 }
 let M = [],
   L = {
-    controller: new Chunk807794.Controller({
+    controller: new Chunk620792.Controller({
       value: 1,
       immediate: true
     }),
