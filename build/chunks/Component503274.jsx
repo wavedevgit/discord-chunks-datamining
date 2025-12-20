@@ -26,13 +26,13 @@ function _(e) {
     cost: i
   } = e;
   return (0, l.jsx)(u.i_, {
-    "aria-label": p.intl.string(g.default.TZsu1U),
-    title: p.intl.string(g.default.TZsu1U),
-    body: p.intl.formatToPlainString(g.default["5HQUzD"], {
+    "aria-label": b.intl.string(g.default.TZsu1U),
+    title: b.intl.string(g.default.TZsu1U),
+    body: b.intl.formatToPlainString(g.default["5HQUzD"], {
       boostCount: i
     }),
     children: (0, l.jsx)("div", {
-      className: b.disableButton,
+      className: p.disableButton,
       children: (0, l.jsx)(o.Button, {
         icon: {
           type: "icon",
@@ -41,7 +41,7 @@ function _(e) {
         text: i.toString(),
         variant: "secondary",
         size: "sm",
-        "aria-label": p.intl.string(g.default.TZsu1U),
+        "aria-label": b.intl.string(g.default.TZsu1U),
         onClick: e => {
           e.stopPropagation(), (0, f.x)(n, t)
         }
@@ -61,24 +61,24 @@ function x(e) {
     return null == E || null == (e = E.entitlements) ? true : e[x.entitlementId]
   }, [null == E ? true : E.entitlements, x.entitlementId]), S = (null == h ? true : h.ends_at) != null, y = null == h || null == (u = h.sku) || null == (a = u.tenant_metadata) || null == (t = a.guild_monetization) || null == (n = t.game_server) ? true : n.boost_price, O = (0, v.Z)(x.gameId, "icon"), k = (0, c.Z)(f);
   return null == y ? null : (0, l.jsxs)(o.P3F, {
-    className: r()(b.game, {
-      [b.disabled]: !k
+    className: r()(p.game, {
+      [p.disabled]: !k
     }),
     onClick: k ? () => j(x) : true,
     "aria-disabled": !k,
     children: [(0, l.jsx)("img", {
-      className: b.image,
+      className: p.image,
       alt: "",
       src: O
     }), (0, l.jsxs)("div", {
-      className: b.textContainer,
+      className: p.textContainer,
       children: [(0, l.jsx)(o.Heading, {
         variant: "heading-sm/semibold",
         children: x.name
       }), S ? (0, l.jsx)(d.rL, {
         dateString: h.ends_at
       }) : (0, l.jsx)(d.P2, {
-        text: p.intl.string(g.default.FFLkmx)
+        text: b.intl.string(g.default.FFLkmx)
       })]
     }), k && (0, l.jsx)(_, {
       guildId: f,

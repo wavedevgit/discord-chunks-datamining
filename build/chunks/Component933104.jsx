@@ -20,9 +20,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk703656 = require("./703656.js"),
   Chunk430824 = require("./430824.js"),
   Chunk326660 = require("./326660.js"),
-  Chunk473952 = require("./473952.js"),
   Chunk156732 = require("./156732.js"),
   Chunk448222 = require("./448222.js"),
+  Chunk317169 = require("./317169.js"),
   Chunk639777 = require("./639777.js"),
   Chunk441536 = require("./441536.js"),
   Chunk795338 = require("./795338.jsx"),
@@ -107,7 +107,7 @@ function R(e) {
     return null == (e = f.Z.getGuild(t)) ? true : e.name
   }), {
     onActivate: c
-  } = (0, b.Z)(t, n[0]), d = (0, g.Z)(n[0], true);
+  } = (0, g.Z)(t, n[0]), d = (0, p.Z)(n[0], true);
   if (0 === n.length) return;
   let h = n.length >= 3 ? I.intl.formatToPlainString(S.default["6Sv+3M"], {
       perk: n[0].title,
@@ -118,7 +118,7 @@ function R(e) {
     }) : I.intl.formatToPlainString(S.default.ZF8NT6, {
       perk: n[0].title
     }),
-    p = 1 === n.length;
+    b = 1 === n.length;
   return (0, r.jsx)(k, {
     size: 1 === n.length ? "video" : "lg",
     asset: n.length > 1 ? (0, r.jsx)(O.g, {
@@ -133,10 +133,10 @@ function R(e) {
     }),
     body: h,
     actions: [{
-      text: p ? I.intl.string(S.default.gSxlHf) : I.intl.string(I.t.RzWDqY),
+      text: b ? I.intl.string(S.default.gSxlHf) : I.intl.string(I.t.RzWDqY),
       variant: "primary",
       onClick: e => {
-        e.stopPropagation(), p ? c() : (0, y.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_PURCHASEABLE_PERKS)
+        e.stopPropagation(), b ? c() : (0, y.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_PURCHASEABLE_PERKS)
       }
     }],
     targetElementRef: i,
@@ -193,7 +193,9 @@ function M(e) {
     type: n,
     markAsDismissed: i,
     channelRowRef: a
-  } = e, o = (0, p.Z)(t, true);
+  } = e, {
+    available: o
+  } = (0, b.Z)(t);
   return (0, r.jsx)(k, {
     targetElementRef: a,
     asset: (0, r.jsx)("img", {

@@ -44,17 +44,20 @@ function u(e) {
       t(n, e)
     }, [t, e]),
     b = (0, i.Wu)([l.Z], () => g.map(e => l.Z.isFetching(e)));
-  return r.useEffect(() => {
+  r.useEffect(() => {
     let t = g.filter(e => {
       let t = !l.Z.canFetch(e) && !l.Z.isFetching(e),
         n = null != l.Z.getCoverImageUrl(e);
       return t && !n
     });
     t.length > 0 && n(t, e)
-  }, [g, e, n, b]), {
-    games: r.useMemo(() => g.map(e => ({
-      applicationId: e
-    })), [g]),
+  }, [g, e, n, b]);
+  let m = r.useMemo(() => g.map(e => ({
+    applicationId: e
+  })), [g]);
+  return {
+    applicationIds: g,
+    games: m,
     onAddGame: p
   }
 }

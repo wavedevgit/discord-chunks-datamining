@@ -1,7 +1,7 @@
 /** Chunk was on 67365 **/
 /** chunk id: 30910, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  $b: () => b,
+  $b: () => p,
   c_: () => _,
   o2: () => x
 });
@@ -50,7 +50,7 @@ function g(e) {
   }, e))
 }
 
-function p(e) {
+function b(e) {
   let {
     onNext: n,
     stepLoading: t,
@@ -68,7 +68,7 @@ function p(e) {
   }, e))
 }
 
-function b(e) {
+function p(e) {
   var n;
   let {
     stepAction: t
@@ -77,7 +77,7 @@ function b(e) {
     case "go-to-step":
       return (0, l.jsx)(g, f({}, e));
     case "save":
-      return (0, l.jsx)(p, f({}, e));
+      return (0, l.jsx)(b, f({}, e));
     default:
       s()(null != i, "Invalid stepType ".concat(i))
   }

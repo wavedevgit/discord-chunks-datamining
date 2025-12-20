@@ -38,7 +38,8 @@ let p = f(),
     [Chunk397047.$k.BOGO]: {},
     [Chunk397047.$k.MARKETING_MOMENT]: {},
     [Chunk397047.$k.THIRD_PARTY_INBOUND]: {},
-    [Chunk397047.$k.THIRD_PARTY_OUTBOUND]: {}
+    [Chunk397047.$k.THIRD_PARTY_OUTBOUND]: {},
+    [Chunk397047.$k.GIFT_PROMOTION]: {}
   },
   y = {},
   O = null,
@@ -92,7 +93,8 @@ function N() {
     [Chunk397047.$k.BOGO]: {},
     [Chunk397047.$k.MARKETING_MOMENT]: {},
     [Chunk397047.$k.THIRD_PARTY_INBOUND]: {},
-    [Chunk397047.$k.THIRD_PARTY_OUTBOUND]: {}
+    [Chunk397047.$k.THIRD_PARTY_OUTBOUND]: {},
+    [Chunk397047.$k.GIFT_PROMOTION]: {}
   }, g = false, y = {}
 }
 
@@ -127,7 +129,8 @@ function x() {
     [Chunk397047.$k.BOGO]: {},
     [Chunk397047.$k.MARKETING_MOMENT]: {},
     [Chunk397047.$k.THIRD_PARTY_INBOUND]: {},
-    [Chunk397047.$k.THIRD_PARTY_OUTBOUND]: {}
+    [Chunk397047.$k.THIRD_PARTY_OUTBOUND]: {},
+    [Chunk397047.$k.GIFT_PROMOTION]: {}
   }, _ = null, y = {}, v.clear()
 }
 

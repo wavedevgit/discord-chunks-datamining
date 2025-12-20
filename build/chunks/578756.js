@@ -4,12 +4,12 @@ require.d(exports, {
   $M: () => _,
   Dk: () => m,
   GA: () => f,
-  Se: () => b,
+  Se: () => p,
   cX: () => v,
   cq: () => d,
   g$: () => g,
   lY: () => c,
-  wz: () => p
+  wz: () => b
 });
 var Chunk473749 = require("./473749.js"),
   Chunk660815 = require("./660815.js"),
@@ -101,7 +101,7 @@ function g(e) {
   })
 }
 
-function p(e, n, t, l) {
+function b(e, n, t, l) {
   r.default.track(o.rMx.GAME_SERVER_JOIN_CLICKED, {
     guild_id: e,
     game_id: n,
@@ -110,7 +110,7 @@ function p(e, n, t, l) {
   })
 }
 
-function b(e, n, t) {
+function p(e, n, t) {
   r.default.track(o.rMx.GAME_SERVER_COPY_IP_CLICKED, {
     guild_id: e,
     game_server_id: n,

@@ -23,22 +23,22 @@ function m(e) {
     imageClassName: v,
     titleClassName: f,
     disabled: g = false,
-    location: p
-  } = e, b = (0, u.Z)(i.gameId, "cover");
+    location: b
+  } = e, p = (0, u.Z)(i.gameId, "cover");
   return (0, l.jsxs)(r.P3F, {
     "aria-disabled": g,
     className: a()(d.game, {
       [d.disabled]: g
     }, n),
     onClick: g ? true : () => {
-      (0, s.GA)(t, i.id, i.name, p), m(i)
+      (0, s.GA)(t, i.id, i.name, b), m(i)
     },
     children: [(0, l.jsxs)("div", {
       className: a()(d.gameImageContainer, v),
       children: [(0, l.jsx)("img", {
         className: d.image,
         alt: "",
-        src: null != b ? b : ""
+        src: null != p ? p : ""
       }), (0, l.jsx)("div", {
         className: d.gameImageBorder
       }), (0, l.jsx)("div", {
