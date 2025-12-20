@@ -108,9 +108,13 @@ function f(e) {
       }
     }
   }, [k, y, w.reducedMotion.enabled]), i.useLayoutEffect(() => {
-    null != k && "layout" === m && (k.resizeDrawingSurfaceToCanvas(), setTimeout(() => {
-      k.resizeDrawingSurfaceToCanvas()
-    }, 100))
+    if (null != k && "layout" === m) {
+      k.resizeDrawingSurfaceToCanvas();
+      let e = setTimeout(() => {
+        null != k.canvas && k.resizeDrawingSurfaceToCanvas()
+      }, 100);
+      return () => clearTimeout(e)
+    }
   }, [k, m]), i.useEffect(() => {
     null != k && null == L && (j(k.stateMachineNames), k.reset({
       stateMachines: k.stateMachineNames,

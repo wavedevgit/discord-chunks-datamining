@@ -37,7 +37,7 @@ function s(e) {
     onDataBindingChange: f
   }), r.useEffect(() => {
     let e = new AbortController;
-    return async function() {
+    return (async function() {
       if (null == t || null == t.viewModelInstance || null == p) return;
       let r = s[null != n ? n : ""];
       for (let n of Object.entries(p)) {
@@ -99,7 +99,9 @@ function s(e) {
             console.warn("Unknown property type: ".concat(C))
         }
       }
-    }(), () => {
+    })().catch(e => {
+      if ("AbortError" !== e.name) throw e
+    }), () => {
       e.abort("New data binding applied - aborting previous image fetches."), E.current = p
     }
   }, [y, p, t, n, s, m, null == t ? true : t.viewModelInstance, h, g, b])
