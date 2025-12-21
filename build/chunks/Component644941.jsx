@@ -371,6 +371,7 @@ function er(e) {
       officialGuildId: null == S || null == (e = S.guild) ? true : e.id
     })
   }), null == _ || null == T) ? null : (0, a.jsxs)(g.Y0X, {
+    "data-migration-pending": true,
     transitionState: s,
     size: g.CgR.DYNAMIC,
     className: l()(f, q.gameProfileModal),
@@ -420,6 +421,7 @@ function el(e) {
     clientThemesClassName: i
   } = (0, O.ZP)(), r = (0, I.q)(t), l = (0, m.e7)([w.Z], () => w.Z.getGame(t));
   return null == r || null == l ? null : (0, a.jsxs)(g.Y0X, {
+    "data-migration-pending": true,
     transitionState: n,
     size: g.CgR.DYNAMIC,
     className: i,
