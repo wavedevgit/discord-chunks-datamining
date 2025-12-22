@@ -73,7 +73,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk703656 = require("./703656.js"),
   Chunk359110 = require("./359110.js"),
   Chunk607802 = require("./607802.js"),
-  Chunk14091 = require("./14091.jsx"),
+  Chunk673676 = require("./673676.jsx"),
   Chunk6025 = require("./6025.js"),
   Chunk897473 = require("./897473.js"),
   Chunk922482 = require("./922482.js"),
@@ -339,7 +339,7 @@ class tl extends Chunk473749.PureComponent {
           channel: module,
           guild: require
         }, "channel-members-".concat(module.id))
-    } else if (Chunk120356 === Chunk981631.ULH.SEARCH) return (0, Chunk54381.jsx)(Chunk14091.Z, {
+    } else if (Chunk120356 === Chunk981631.ULH.SEARCH) return (0, Chunk54381.jsx)(Chunk673676.Z, {
       guildId: null == require ? true : require.id,
       channelId: module.id
     });
@@ -562,7 +562,7 @@ class tl extends Chunk473749.PureComponent {
         selectedParticipant: e,
         premiumIndicatorEnabled: t
       } = this.props;
-      return (null == e ? true : e.type) !== e7.fO.STREAM ? null : (0, r.jsx)(V.Z, {
+      return (null == e ? true : e.type) !== e3.fO.STREAM ? null : (0, r.jsx)(V.Z, {
         size: e0.ZP.Sizes.LARGE,
         participant: e,
         showQuality: true,
@@ -817,7 +817,7 @@ let ta = (0, Chunk112724.Z)(tl),
     }, [D, c, P, R]);
     let L = (0, p.e7)([I.ZP], () => I.ZP.getCurrentEmbeddedActivity()),
       M = (0, p.e7)([I.ZP], () => I.ZP.getActivityPanelMode()),
-      k = null != L && !(0, S.Z)(null == c ? true : c.id) && M === e3.Ez.PANEL,
+      k = null != L && !(0, S.Z)(null == c ? true : c.id) && M === e7.Ez.PANEL,
       G = (0, p.e7)([eY.Z], () => null != c && c.isVocalThread() && !d().isEmpty(eY.Z.getVoiceStatesForChannel(c.id)), [c]),
       H = null != c && c.isPrivate() && !k && j,
       V = (null == c ? true : c.isGuildVocal()) || H || G,
@@ -827,7 +827,7 @@ let ta = (0, Chunk112724.Z)(tl),
       } = (0, u.TH)(),
       Y = (0, p.e7)([ep.Z], () => null != c && ep.Z.isLurking(c.guild_id), [c]),
       q = (0, p.e7)([eD.Z], () => eD.Z.hasSeen(null == c ? true : c.guild_id, Y), [c, Y]),
-      Q = (0, p.e7)([N.Z, I.ZP], () => null != I.ZP.getConnectedActivityLocation() && I.ZP.getActivityPanelMode() === e3.Ez.PANEL ? I.ZP.getFocusedLayout() === e3.MI.NO_CHAT ? e4.AEg.NO_CHAT : e4.AEg.NORMAL : null != s ? N.Z.getLayout(s) : e4.AEg.NORMAL, [s]),
+      Q = (0, p.e7)([N.Z, I.ZP], () => null != I.ZP.getConnectedActivityLocation() && I.ZP.getActivityPanelMode() === e7.Ez.PANEL ? I.ZP.getFocusedLayout() === e7.MI.NO_CHAT ? e4.AEg.NO_CHAT : e4.AEg.NORMAL : null != s ? N.Z.getLayout(s) : e4.AEg.NORMAL, [s]),
       X = (0, p.e7)([N.Z], () => null != c ? N.Z.getSelectedParticipant(c.id) : null),
       J = (0, Z.$5)(c),
       $ = (0, ed.Z)(null == O ? true : O.id),
