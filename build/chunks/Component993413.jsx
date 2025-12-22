@@ -68,10 +68,12 @@ let _ = Chunk473749.forwardRef(function(e, t) {
       children: [(0, r.jsxs)(s.vwX, {
         className: d.title,
         id: a,
+        "data-migration-pending": true,
         children: [n, v && (0, r.jsx)(c.Z, {}), i]
       }), null != l ? (0, r.jsx)(s.R94, {
         type: s.R94.Types.DESCRIPTION,
         className: d.sectionDescription,
+        "data-migration-pending": true,
         children: l
       }) : null, f, null != m && (0, r.jsx)(p, {
         errors: m
