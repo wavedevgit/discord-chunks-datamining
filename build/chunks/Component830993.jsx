@@ -55,8 +55,8 @@ function A(e) {
     }
   }, [a, y]);
   (0, c.$)(S, "VoiceChannelActivities");
-  let I = (0, u.ZP)(a),
-    _ = Array.from((0, u.uF)(I).values()),
+  let _ = (0, u.ZP)(a),
+    I = Array.from((0, u.uF)(_).values()),
     T = null != (t = null == y ? true : y.filter(C.lm)) ? t : [],
     A = () => e => [P.IIU.PLAYING, P.IIU.WATCHING].includes(e.type) && (null != e.assets || null != e.state || null != e.details || null != e.party) || e.type === P.IIU.LISTENING,
     D = (0, o.e7)([v.Z, O.Z, b.default], () => {
@@ -77,7 +77,7 @@ function A(e) {
     M = (0, p.p)({
       location: "voice_channel_activities"
     });
-  if (D.length + _.length === 0) return null;
+  if (D.length + I.length === 0) return null;
   let L = false;
   return (0, r.jsxs)(s.Ttm, {
     className: w.container,
@@ -87,7 +87,7 @@ function A(e) {
       voiceStatesCount: null != (l = null == y ? true : y.length) ? l : 0
     }), (0, r.jsx)("div", {
       className: w.headerDivider
-    }), _.map((e, t) => {
+    }), I.map((e, t) => {
       var n;
       return (0, r.jsx)(E.Z, {
         embeddedApp: e,
@@ -190,11 +190,11 @@ function R(e) {
     className: a()(w.popoutHeaderContainer, T.popoutHeaderContainer),
     children: [(0, r.jsx)(S.Z, {
       channel: t
-    }), c ? (0, r.jsx)(I.Z, {
+    }), c ? (0, r.jsx)(_.Z, {
       userCount: i,
       video: s,
       channel: t
-    }) : (0, r.jsx)(_.Z, {
+    }) : (0, r.jsx)(I.Z, {
       userCount: i
     })]
   })

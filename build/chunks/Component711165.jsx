@@ -139,7 +139,7 @@ function A(e) {
         className: N.channelRow,
         children: [(0, r.jsx)(S.Z, {
           channel: n,
-          gotoChannel: () => (0, g.uL)(_.Z5c.CHANNEL(n.getGuildId(), n.id)),
+          gotoChannel: () => (0, g.uL)(I.Z5c.CHANNEL(n.getGuildId(), n.id)),
           children: null
         }), i.map(e => {
           let t = l.has(e.scheduledMessageId);

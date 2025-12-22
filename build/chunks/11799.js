@@ -42,7 +42,7 @@ let f = () => {
       errored: c.Z.errored
     })), {
       roleFilter: S,
-      everyoneFilter: I
+      everyoneFilter: _
     } = (0, i.cj)([o.ZP], () => ({
       everyoneFilter: o.ZP.everyoneFilter,
       roleFilter: o.ZP.roleFilter
@@ -50,29 +50,29 @@ let f = () => {
     r.useEffect(() => ((0, s.Vk)(true), () => (0, s.Vk)(false)), []), r.useEffect(() => {
       O && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
     }, [t, O]);
-    let _ = (0, a.Z)();
+    let I = (0, a.Z)();
     r.useEffect(() => () => {
-      f ? !_() && (E || j.length > 100) && (0, s.jF)() : n && j.length > 100 && (0, s.jF)()
-    }, [n, j, f, _, E]), r.useEffect(() => {
+      f ? !I() && (E || j.length > 100) && (0, s.jF)() : n && j.length > 100 && (0, s.jF)()
+    }, [n, j, f, I, E]), r.useEffect(() => {
       let e = g && t;
       (!O || e) && (0, s.jk)({
         limit: null != p ? p : h ? 8 : 20,
         with_mentions: h,
         roles_filter: S,
-        everyone_filter: I
+        everyone_filter: _
       })
-    }, [O, g, t, h, S, I, p]);
+    }, [O, g, t, h, S, _, p]);
     let P = r.useCallback(async e => {
       !b.current && O && C && null != x && (e || !E) && (b.current = true, y(true), await (0, s.jk)({
         after: x,
         with_mentions: h,
         roles_filter: S,
-        everyone_filter: I,
+        everyone_filter: _,
         limit: h ? 8 : 20
       }, () => {
         b.current = false
       }), y(false))
-    }, [O, C, x, E, h, S, I]);
+    }, [O, C, x, E, h, S, _]);
     return {
       initialized: O,
       loading: v,

@@ -58,7 +58,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function _(e) {
   let {
     channel: t
   } = e, n = t.id, {
@@ -105,15 +105,15 @@ function I(e) {
     icon: c.nG3,
     users: l
   }), {
-    isMuted: I,
-    muteConfig: _
+    isMuted: _,
+    muteConfig: I
   } = (0, o.cj)([O.ZP], () => ({
     isMuted: O.ZP.isChannelMuted(null, n),
     muteConfig: O.ZP.getChannelMuteConfig(null, n)
   }), [n]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [h, p, C, I ? (0, r.jsx)(S, {
-      muteConfig: _,
+    children: [h, p, C, _ ? (0, r.jsx)(S, {
+      muteConfig: I,
       className: a()(x.muteText, {
         [x.muteTextWithActivity]: null != h || null != p
       })
@@ -121,7 +121,7 @@ function I(e) {
   })
 }
 
-function _(e) {
+function I(e) {
   let {
     channel: t
   } = e, n = (0, h.ZP)(t);
@@ -132,7 +132,7 @@ function _(e) {
         className: a()(x.guildNameText, x.guildNameTextLimitedSize),
         children: n
       })
-    }), (0, r.jsx)(I, {
+    }), (0, r.jsx)(_, {
       channel: t
     })]
   })
@@ -144,7 +144,7 @@ function P(e) {
     children: n
   } = e, l = (0, h.ZP)(t), a = i.useMemo(() => (0, r.jsx)("div", {
     className: x.guildTooltipWrapper,
-    children: (0, r.jsx)(_, {
+    children: (0, r.jsx)(I, {
       channel: t
     })
   }), [t]);

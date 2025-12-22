@@ -107,7 +107,7 @@ class L extends Chunk98597.ZP {
       resolvedUnreadSetting: C,
       withGuildIcon: x,
       enableActivities: E
-    } = this.props, S = Chunk9156 && null != Chunk430824 && Chunk430824.length > 0, I = (0, Chunk873696.D)(Chunk665906), _ = (0, Chunk54381.jsx)("li", {
+    } = this.props, S = Chunk9156 && null != Chunk430824 && Chunk430824.length > 0, _ = (0, Chunk873696.D)(Chunk665906), I = (0, Chunk54381.jsx)("li", {
       className: a()(this.getClassName(), {
         [Chunk642915.disabled]: this.isDisabled(),
         [Chunk642915.selected]: require
@@ -204,7 +204,7 @@ class L extends Chunk98597.ZP {
       return t.isModeratorReportChannel() || l ? null : null != i && i.length > 0 && a && !n ? (0, r.jsx)(Z.Z, {
         onAction: this.handleActivitiesPopoutClose,
         channel: t
-      }) : (0, r.jsx)(I.Z, M(D({}, e), {
+      }) : (0, r.jsx)(_.Z, M(D({}, e), {
         channel: this.props.channel
       }))
     }), R(this, "handleContextMenu", e => {
@@ -280,12 +280,12 @@ function G(e) {
     }
   }), j = (0, o.e7)([y.Z], () => y.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: S,
-    isSubscriptionGated: I
-  } = (0, m.Z)(t.id), _ = (0, o.e7)([E.ZP], () => E.ZP.isFavorite(n.id, t.id)), N = (0, p.$5)(t), Z = (0, f.NX)(t.id), A = (0, P.Z)({
+    isSubscriptionGated: _
+  } = (0, m.Z)(t.id), I = (0, o.e7)([E.ZP], () => E.ZP.isFavorite(n.id, t.id)), N = (0, p.$5)(t), Z = (0, f.NX)(t.id), A = (0, P.Z)({
     channel: t,
     isChannelCollapsed: false,
     isChannelSelected: s,
-    isSubscriptionGated: I,
+    isSubscriptionGated: _,
     needSubscriptionToAccess: S,
     isNewChannel: j,
     muted: a,
@@ -295,10 +295,10 @@ function G(e) {
   return (0, r.jsx)(k, M(D({}, d, b, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,
-    isSubscriptionGated: I,
+    isSubscriptionGated: _,
     needSubscriptionToAccess: S,
     isNewChannel: j && e.canBeNewChannel,
-    isFavoriteSuggestion: l && !_,
+    isFavoriteSuggestion: l && !I,
     channelIsContentGated: N,
     channelInfo: A,
     embeddedApps: R,

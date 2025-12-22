@@ -2,10 +2,9 @@
 /** chunk id: 506802, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  aM: () => k,
-  gq: () => D,
-  jS: () => U,
-  r6: () => T
+  aM: () => M,
+  gq: () => w,
+  r6: () => I
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -57,14 +56,8 @@ function O(e, t) {
 }
 
 function v(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-
-function S(e, t) {
   if (null == e) return {};
-  var n, r, i = I(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -72,21 +65,21 @@ function S(e, t) {
   return i
 }
 
-function I(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var T = function(e) {
+var I = function(e) {
   return e.PRIMARY = "primary", e.GREY = "grey", e.BRAND = "brand", e.GREEN = "green", e.RED = "red", e
 }({});
-let C = 16,
-  A = 10,
-  N = 8,
-  P = Object.freeze({}),
-  R = Object.freeze({
+let T = 16,
+  C = 10,
+  A = 8,
+  N = Object.freeze({}),
+  P = Object.freeze({
     top: Chunk343978.tooltipTop,
     bottom: Chunk343978.tooltipBottom,
     left: Chunk343978.tooltipLeft,
@@ -100,18 +93,18 @@ let C = 16,
     red: Chunk343978.tooltipRed
   });
 
-function w(e, t, n) {
+function R(e, t, n) {
   let r = "left" === e || "right" === e,
     i = r ? "top" : "left",
     a = r ? "top" : "left",
     o = r ? "bottom" : "right",
     s = "50%",
     l = n;
-  return t === a ? (s = "0%", l += C) : t === o && (s = "100%", l -= A + A), {
+  return t === a ? (s = "0%", l += T) : t === o && (s = "100%", l -= C + C), {
     [i]: "calc(".concat(s, " + ").concat(l, "px)")
   }
 }
-let D = e => {
+let w = e => {
     let {
       targetElementRef: t,
       align: n = "center",
@@ -122,7 +115,7 @@ let D = e => {
       tooltipClassName: u,
       tooltipStyle: d,
       tooltipContentClassName: f,
-      spacing: p = N,
+      spacing: p = A,
       animationStyle: _,
       disableTooltipPointerEvents: m = false,
       allowOverflow: h = false,
@@ -146,17 +139,17 @@ let D = e => {
         } = e;
         return (0, i.jsxs)(c.animated.div, {
           onClick: l,
-          className: s()(E.tooltip, R[null != t ? t : r], R[a], {
+          className: s()(E.tooltip, P[null != t ? t : r], P[a], {
             [E.tooltipDisablePointerEvents]: m
           }, u),
           style: y({}, _, d),
           "data-mtctest-ignore": v,
           children: [(0, i.jsx)("div", {
             className: s()(E.tooltipPointer, E.tooltipPointerBg, b),
-            style: w(null != t ? t : r, n, p)
+            style: R(null != t ? t : r, n, p)
           }), (0, i.jsx)("div", {
             className: s()(E.tooltipPointer, b),
-            style: w(null != t ? t : r, n, p)
+            style: R(null != t ? t : r, n, p)
           }), (0, i.jsx)("div", {
             className: s()(E.tooltipContent, {
               [E.tooltipContentAllowOverflow]: h
@@ -167,41 +160,41 @@ let D = e => {
       }
     })
   },
-  x = {
+  D = {
     scale: .95,
+    opacity: 0
+  },
+  x = {
+    scale: 1,
     opacity: 0
   },
   L = {
     scale: 1,
-    opacity: 0
-  },
-  j = {
-    scale: 1,
     opacity: 1
   },
-  M = e => {
+  j = e => {
     var {
       isVisible: t,
       onAnimationRest: n,
       targetElementRef: r
-    } = e, o = S(e, ["isVisible", "onAnimationRest", "targetElementRef"]);
+    } = e, o = v(e, ["isVisible", "onAnimationRest", "targetElementRef"]);
     let {
       reducedMotion: s
     } = a.useContext(f.Sfi);
     return (0, m.Yzy)(t, {
       keys: e => e ? "tooltip" : "empty",
       config: _.F,
-      from: s.enabled ? L : x,
-      enter: j,
-      leave: s.enabled ? L : x,
+      from: s.enabled ? x : D,
+      enter: L,
+      leave: s.enabled ? x : D,
       onRest: n
-    }, "animate-always")((e, t) => t ? (0, i.jsx)(D, y({
+    }, "animate-always")((e, t) => t ? (0, i.jsx)(w, y({
       "data-migration-pending": true,
       animationStyle: e,
       targetElementRef: r
     }, o)) : null)
   };
-class k extends(r = Chunk473749.Component) {
+class M extends(r = Chunk473749.Component) {
   static getDerivedStateFromProps(e, t) {
     return t.shouldShowTooltip && null == e.text ? {
       shouldShowTooltip: false
@@ -235,7 +228,7 @@ class k extends(r = Chunk473749.Component) {
       text: n,
       "aria-label": r
     } = this.props;
-    if (null == require) return exports(P);
+    if (null == require) return exports(N);
     "string" == typeof r ? e = r : "string" == typeof require && false !== r && (e = require);
     let o = {
       onClick: this.handleClick,
@@ -276,7 +269,7 @@ class k extends(r = Chunk473749.Component) {
       tooltipPointerClassName: m,
       dataMeticulousIgnore: h
     } = this.props, g = (Chunk873546.tq || Chunk873546.Em) && true === Chunk846519 && Chunk377527, E = false !== Chunk620792 && !Chunk314910 || true === Chunk620792, b = this.shouldShowTooltip(this.props, this.state) && this.hasDomElement, y = null;
-    return y = module instanceof Function ? b ? module() : null : module, (0, Chunk54381.jsx)(M, {
+    return y = module instanceof Function ? b ? module() : null : module, (0, Chunk54381.jsx)(j, {
       disableTooltipPointerEvents: Chunk343978,
       targetElementRef: this.domElementRef,
       tooltipStyle: s,
@@ -341,27 +334,13 @@ class k extends(r = Chunk473749.Component) {
     })
   }
 }
-b(k, "Colors", T), b(k, "defaultProps", {
+b(M, "Colors", I), b(M, "defaultProps", {
   hideOnClick: true,
   position: "top",
   color: "primary",
   forceOpen: false,
-  spacing: N,
+  spacing: A,
   shouldShow: true,
   allowOverflow: false,
   overflowOnly: false
-});
-let U = e => {
-  var {
-    children: t,
-    className: n,
-    element: r = "div"
-  } = e, o = S(e, ["children", "className", "element"]);
-  return (0, i.jsx)(k, v(y({
-    "data-migration-pending": true
-  }, o), {
-    children: e => a.createElement(r, null != n ? v(y({}, e), {
-      className: n
-    }) : e, t)
-  }))
-}
+})

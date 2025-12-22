@@ -427,9 +427,9 @@ let B = e => {
     showDMHeader: o,
     listScrollerRef: d,
     hideAllDMs: h
-  } = e, b = l.Children.count(a), y = N.Z.getMutablePrivateChannels(), O = h ? {} : (0, I.k1)(y), v = (0, u.Wu)([w.Z, S.Z, _.Z], () => {
+  } = e, b = l.Children.count(a), y = N.Z.getMutablePrivateChannels(), O = h ? {} : (0, _.k1)(y), v = (0, u.Wu)([w.Z, S.Z, I.Z], () => {
     let e = w.Z.getPrivateChannelIds(),
-      t = (0, I.tU)(e, [S.Z, _.Z]);
+      t = (0, _.tU)(e, [S.Z, I.Z]);
     return h ? [] : t
   }, [h]);
   (0, x.z)(C.R);

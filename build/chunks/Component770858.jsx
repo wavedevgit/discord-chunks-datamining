@@ -1,7 +1,7 @@
 /** Chunk was on 67000 **/
 /** chunk id: 770858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -37,7 +37,7 @@ function S(e) {
     selectedOverride: f = false,
     popoutProps: p,
     ref: y
-  } = e, C = (0, l.Ie)("notifications-inbox"), [S, I] = i.useState(false), _ = (0, b.D)(), P = f || _, {
+  } = e, C = (0, l.Ie)("notifications-inbox"), [S, _] = i.useState(false), I = (0, b.D)(), P = f || I, {
     notificationCenterVariant: N
   } = (0, g.pN)({
     location: "NotificationsInboxButtonInner"
@@ -114,8 +114,8 @@ function S(e) {
           onClick: d,
           to: D,
           selected: P || S,
-          onMouseEnter: () => I(true),
-          onMouseLeave: () => I(false),
+          onMouseEnter: () => _(true),
+          onMouseLeave: () => _(false),
           children: (0, r.jsx)(A, {
             size: "custom",
             color: "currentColor",
@@ -138,7 +138,7 @@ function S(e) {
   })
 }
 
-function I() {
+function _() {
   let e = Chunk473749.useRef(null),
     {
       notificationCenterVariant: t

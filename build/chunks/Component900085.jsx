@@ -118,7 +118,7 @@ let W = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
     } = e;
     if (null == t.guild_id) throw Error("ConnectedVoiceChannel - somehow we got a voice channel with no guild_id...");
     return {
-      voiceStates: _.ZP.getVoiceStates(t.guild_id)[t.id]
+      voiceStates: I.ZP.getVoiceStates(t.guild_id)[t.id]
     }
   })(H),
   K = Chunk442837.ZP.connectStores([Chunk888369.default], e => {
@@ -406,7 +406,7 @@ class X extends Chunk473749.PureComponent {
             } = await Promise.all([n.e("79695"), n.e("25421")]).then(n.bind(n, 354741));
             return n => (0, i.jsx)(e, F(B({}, n), {
               channel: t.record,
-              selected: I.Z.getChannelId() === t.record.id,
+              selected: _.Z.getChannelId() === t.record.id,
               onSelect: T.Cp
             }))
           });

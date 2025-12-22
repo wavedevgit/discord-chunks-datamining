@@ -23,14 +23,14 @@ let m = Chunk473749.memo(function(e) {
     guildNode: m,
     lowerBadge: y
   } = e, O = m.id, v = (0, l.e7)([f.Z], () => f.Z.getGuild(O)), j = (0, o.E)(v), C = (0, l.e7)([h.Z], () => h.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(O)), E = (0, c.Z)(e => e.guildId), S = (0, p.Z)(O), {
-    badge: I,
-    unread: _,
+    badge: _,
+    unread: I,
     isMentionLowImportance: P
   } = (0, l.cj)([d.default], () => ({
     badge: d.default.getMentionCount(O),
     isMentionLowImportance: d.default.getIsMentionLowImportance(O),
     unread: d.default.hasUnread(O)
-  })), N = (0, s.Ij)(v) && 0 === I, Z = i.useMemo(() => null != y ? y : N ? (0, r.jsx)("div", {
+  })), N = (0, s.Ij)(v) && 0 === _, Z = i.useMemo(() => null != y ? y : N ? (0, r.jsx)("div", {
     className: b.pauseBackground,
     children: (0, r.jsx)(a.fpf, {
       size: "custom",
@@ -62,10 +62,10 @@ let m = Chunk473749.memo(function(e) {
     unavailable: x,
     animatable: C,
     selected: E === O,
-    badge: I,
+    badge: _,
     isMentionLowImportance: P,
     lowerBadge: Z,
-    unread: _,
+    unread: I,
     mediaState: S,
     guildJoinRequestStatus: j
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

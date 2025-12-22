@@ -68,19 +68,19 @@ function g(e) {
   } = e, S = {
     width: (0, s.dcp)(n),
     height: (0, s.dcp)(n)
-  }, I = (0, i.useId)(), _ = v.size * u.hs, P = null != y && (0, r.jsxs)("svg", {
-    width: _,
-    height: _,
-    viewBox: "0 0 ".concat(_, " ").concat(_),
+  }, _ = (0, i.useId)(), I = v.size * u.hs, P = null != y && (0, r.jsxs)("svg", {
+    width: I,
+    height: I,
+    viewBox: "0 0 ".concat(I, " ").concat(I),
     className: f.avatarDecoration,
     "aria-hidden": true,
     children: [(0, r.jsxs)("mask", {
-      id: I,
+      id: _,
       children: [(0, r.jsx)("rect", {
         x: 0,
         y: 0,
-        width: _,
-        height: _,
+        width: I,
+        height: I,
         fill: "white"
       }), null != j && function(e, t) {
         let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : 0,
@@ -113,13 +113,13 @@ function g(e) {
           rx: e.stroke,
           fill: "black"
         })
-      }(v, _, C, x)]
+      }(v, I, C, x)]
     }), (0, r.jsx)("foreignObject", {
       x: 0,
       y: 0,
-      width: _,
-      height: _,
-      mask: "url(#".concat(I, ")"),
+      width: I,
+      height: I,
+      mask: "url(#".concat(_, ")"),
       children: (0, r.jsx)("div", {
         className: f.avatarStack,
         children: (0, r.jsx)("img", {

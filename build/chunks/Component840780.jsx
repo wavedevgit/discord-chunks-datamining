@@ -81,7 +81,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk436323 = require("./436323.js");
 
-function eI(e, t, n) {
+function e_(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -90,14 +90,14 @@ function eI(e, t, n) {
   }) : e[t] = n, e
 }
 
-function e_(e) {
+function eI(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      eI(e, t, n[t])
+      e_(e, t, n[t])
     })
   }
   return e
@@ -144,7 +144,7 @@ class eZ extends Chunk473749.PureComponent {
     })
   }
   renderActions() {
-    return (0, Chunk54381.jsx)(Chunk339144.J, eP(e_({}, this.props), {
+    return (0, Chunk54381.jsx)(Chunk339144.J, eP(eI({}, this.props), {
       inviteButtonRef: this.inviteButtonRef
     }))
   }
@@ -430,14 +430,14 @@ class eZ extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), eI(this, "activityPopoutTargetRef", i.createRef()), eI(this, "accountLinkUpsellTargetRef", i.createRef()), eI(this, "inviteButtonRef", i.createRef()), eI(this, "handleApplicationLinkClick", () => {
+    super(...e), e_(this, "activityPopoutTargetRef", i.createRef()), e_(this, "accountLinkUpsellTargetRef", i.createRef()), e_(this, "inviteButtonRef", i.createRef()), e_(this, "handleApplicationLinkClick", () => {
       let {
         isActivityPopoutOpen: e
       } = this.props;
       this.handleChannelLinkClick(), e && g.Z.dispatch({
         type: "ACTIVITY_POPOUT_WINDOW_OPEN"
       })
-    }), eI(this, "handleChannelLinkClick", () => {
+    }), e_(this, "handleChannelLinkClick", () => {
       var e;
       let {
         channel: t,
@@ -448,7 +448,7 @@ class eZ extends Chunk473749.PureComponent {
         applicationId: n.applicationId,
         instanceId: n.compositeInstanceId
       })), (0, J.Qm)(t.type) && (0, E.tg)(ev.Ez.PANEL))
-    }), eI(this, "handleFrameLinkClick", () => {
+    }), e_(this, "handleFrameLinkClick", () => {
       let {
         frame: e
       } = this.props;
@@ -491,8 +491,8 @@ let ew = (0, Chunk730749.Z)(function(e) {
     O = (0, u.e7)([er.Z, el.Z, en.ZP], () => null != s ? F.JL(s, er.Z, el.Z, false) : null != n && F.h_(en.ZP.getChannels(n), er.Z, el.Z).length > 0),
     [v] = (0, Z.Z)([null != (t = null != g && null != g.id ? g.id : null != o && null != o.id ? o.id : null != m ? m.applicationId : null != y ? y.applicationId : true) ? t : ""]),
     E = (0, u.e7)([D.Z], () => D.Z.getFakeGameData()),
-    _ = (0, u.e7)([S.ZP], () => S.ZP.getCurrentEmbeddedActivity()),
-    w = (0, I.Z)() && null != _ && (0, x.R)(),
+    I = (0, u.e7)([S.ZP], () => S.ZP.getCurrentEmbeddedActivity()),
+    w = (0, _.Z)() && null != I && (0, x.R)(),
     T = (0, u.e7)([ei.Z], () => (0, V.Z)(ei.Z) && (0, eh.isWindows)()),
     R = (0, u.e7)([ea.Z], () => null != a ? ea.Z.findActivity(a, e => e.type === eO.IIU.PLAYING) : null),
     M = null != p && p.ownerId === a && p.state !== eO.jm8.ENDED,
@@ -532,7 +532,7 @@ let ew = (0, Chunk730749.Z)(function(e) {
       })
     }
   });
-  return (0, r.jsx)(eZ, eP(e_({}, l), {
+  return (0, r.jsx)(eZ, eP(eI({}, l), {
     guildId: n,
     canGoLive: T || w || true !== E,
     activity: R,

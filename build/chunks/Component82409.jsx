@@ -76,19 +76,19 @@ function k(e) {
     includePanelSpacing: t
   } = e, n = (0, x.fJ)(), {
     selectedFilter: l
-  } = (0, E.Z)(), o = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), c = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), _ = (0, s.Wu)([O.ZP, m.Z, S.Z], () => c.filter(e => !(0, I.YH)({
+  } = (0, E.Z)(), o = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), c = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), I = (0, s.Wu)([O.ZP, m.Z, S.Z], () => c.filter(e => !(0, _.YH)({
     messageId: e.id,
     channelId: e.channelId,
     guildId: e.guildId,
     ReadStateStore_: O.ZP,
     GuildStore_: m.Z
-  }) && !(0, I.Tj)(e, S.Z.selectedItemInfo))), P = (0, s.Wu)([O.ZP, m.Z, S.Z], () => c.filter(e => (0, I.YH)({
+  }) && !(0, _.Tj)(e, S.Z.selectedItemInfo))), P = (0, s.Wu)([O.ZP, m.Z, S.Z], () => c.filter(e => (0, _.YH)({
     messageId: e.id,
     channelId: e.channelId,
     guildId: e.guildId,
     ReadStateStore_: O.ZP,
     GuildStore_: m.Z
-  }) || (0, I.Tj)(e, S.Z.selectedItemInfo))), N = i.useCallback(e => {
+  }) || (0, _.Tj)(e, S.Z.selectedItemInfo))), N = i.useCallback(e => {
     l !== w.V5.BOOKMARKS && C.Z.loadMoreInbox({
       viewId: n,
       loadingTrigger: e
@@ -106,7 +106,7 @@ function k(e) {
     function(e) {
       let {
         unreadChannelIds: t
-      } = (0, I.O4)();
+      } = (0, _.O4)();
       i.useEffect(() => {
         null != e && t.forEach(e => {
           var t;
@@ -136,7 +136,7 @@ function k(e) {
         message: n
       }]
     }), [G]),
-    W = U(_, l, o),
+    W = U(I, l, o),
     z = U(P, l, null);
   (0, h.ZP)(() => {
     var e;
@@ -256,7 +256,7 @@ function F(e, t) {
 function V(e) {
   let {
     hideBanner: t
-  } = e, n = (0, _.d)(e => e.shouldHide());
+  } = e, n = (0, I.d)(e => e.shouldHide());
   return (0, r.jsx)("div", {
     className: a()(R.caughtUpContainer, {
       [R.hide]: n || t

@@ -61,13 +61,13 @@ function P(e) {
     locked: R
   });
   if (D) return (0, r.jsx)(a.IGR, {
-    text: _.intl.string(_.t.y2b7CA),
+    text: I.intl.string(I.t.y2b7CA),
     color: l.Z.colors.BADGE_BACKGROUND_BRAND.css
   });
-  if (!M && L === I.i.ALL_MESSAGES && n.isForumLikeChannel() && null != z && z > 0) return (0, r.jsx)(a.Text, {
+  if (!M && L === _.i.ALL_MESSAGES && n.isForumLikeChannel() && null != z && z > 0) return (0, r.jsx)(a.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
-    children: _.intl.format(_.t.GkAbqY, {
+    children: I.intl.format(I.t.GkAbqY, {
       count: (0, a.NGo)(z)
     })
   });
@@ -82,7 +82,7 @@ function P(e) {
     video: V || H,
     channel: n
   }) : N && (0, y.a)(Z) && Y ? (0, r.jsx)(a.IGR, {
-    text: _.intl.string(_.t.dI3q4h),
+    text: I.intl.string(I.t.dI3q4h),
     color: l.Z.unsafe_rawColors.RED_400.css
   }) : null != F ? (0, r.jsx)(c.x3, {
     textColor: "text-feedback-positive",

@@ -80,7 +80,7 @@ function U(e) {
     embeddedActivitiesUsers: b
   } = function(e) {
     let t = e.id,
-      n = (0, c.Wu)([Z.ZP, I.Z], () => [...Z.ZP.getChannels(t)[Z.Zb].filter(e => {
+      n = (0, c.Wu)([Z.ZP, _.Z], () => [...Z.ZP.getChannels(t)[Z.Zb].filter(e => {
         let {
           channel: t
         } = e;
@@ -90,7 +90,7 @@ function U(e) {
           channel: t
         } = e;
         return t.id
-      }), ...Object.values(I.Z.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]),
+      }), ...Object.values(_.Z.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]),
       r = (0, S.ZP)(t),
       l = i.useMemo(() => r.map(e => e.id), [r]),
       a = (0, c.e7)([R.ZP], () => R.ZP.getVoiceStates(t), [t]),
@@ -137,7 +137,7 @@ function U(e) {
       O = u.filter(e => !g.includes(e.id) && !b.includes(e.id)),
       v = (0, p.dq)(O),
       j = y.filter(e => null != e && !b.includes(e.id)),
-      C = (0, c.e7)([_.Z], () => _.Z.getUserAffinitiesMap(), []),
+      C = (0, c.e7)([I.Z], () => I.Z.getUserAffinitiesMap(), []),
       T = i.useMemo(() => (0, P.C)(v, C, "GuildTooltip - nonBlockedUsers"), [v, C]),
       M = i.useMemo(() => (0, P.C)(d, C, "GuildTooltip - stageSpeakers"), [d, C]),
       L = i.useMemo(() => (0, P.C)(j, C, "GuildTooltip - streamUsers"), [j, C]);

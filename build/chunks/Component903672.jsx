@@ -79,10 +79,10 @@ function Z(e) {
   }, []);
   let Z = i.useCallback(() => null, []);
   return (0, r.jsx)(g.ZP, {
-    className: a()(_.recentMentionsPopout, {
-      [_.widerInbox]: C
+    className: a()(I.recentMentionsPopout, {
+      [I.widerInbox]: C
     }),
-    scrollerClassName: _.scroller,
+    scrollerClassName: I.scroller,
     onFetch: () => null,
     onJump: t,
     onCloseMessage: function(e) {
@@ -100,7 +100,7 @@ function Z(e) {
     renderHeader: Z,
     renderEmptyState: A,
     renderMessage: w,
-    "aria-label": I.intl.string(I.t.jbV6MM),
+    "aria-label": _.intl.string(_.t.jbV6MM),
     listName: "recents"
   })
 }
@@ -125,7 +125,7 @@ function T(e) {
   let a = O.Z.didAgree(l.getGuildId()),
     o = !!(0, f.qF)(l) && !a;
   return (0, r.jsxs)("div", {
-    className: _.container,
+    className: I.container,
     children: [(0, r.jsx)(x.Z, {
       channel: l,
       gotoChannel: n,
@@ -134,14 +134,14 @@ function T(e) {
         onClick: () => c.Z.deleteRecentMention(t.id)
       }) : null
     }), (0, r.jsxs)("div", {
-      className: _.messageContainer,
+      className: I.messageContainer,
       children: [(0, r.jsx)(C.Z, {
-        className: _.jumpMessageButton,
+        className: I.jumpMessageButton,
         onJump: n
       }), (0, r.jsx)(p.Z, {
         message: t,
         channel: l,
-        className: _.message,
+        className: I.message,
         hideAccessories: o,
         compact: m.jU.getSetting(),
         animateAvatar: false,

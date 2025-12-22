@@ -54,9 +54,9 @@ function O(e, t) {
     x = null != (O = (0, f.Z)(e)) && O,
     E = (0, c.q8)(e, t),
     S = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
-    I = null == S || null == (n = S.allPowerups) ? true : n[i.A$],
-    _ = (0, h.ZP)(e, I),
-    P = null == I ? true : I.storeRemovalDate,
+    _ = null == S || null == (n = S.allPowerups) ? true : n[i.A$],
+    I = (0, h.ZP)(e, _),
+    P = null == _ ? true : _.storeRemovalDate,
     N = null == S || null == (y = S.allPowerups) ? true : y[i.XW],
     Z = (0, l.e7)([a.Z], () => {
       var t;
@@ -66,7 +66,7 @@ function O(e, t) {
     {
       onActivate: T
     } = (0, d._C)(e, N),
-    A = !C && x && E && null != I && !w && _.type === p.A3.POWERUP_ACTIVATED && null != P && null != N && null != j,
+    A = !C && x && E && null != _ && !w && I.type === p.A3.POWERUP_ACTIVATED && null != P && null != N && null != j,
     R = r.useCallback(e => {
       e.stopPropagation(), T()
     }, [T]),
@@ -75,7 +75,7 @@ function O(e, t) {
       let e = (0, u.Z)(P),
         t = j.premiumTier === g.Eu4.TIER_2 ? m.intl.string(b.default["0uo/LD"]) : true;
       return {
-        firstHeader: I.title,
+        firstHeader: _.title,
         secondHeader: m.intl.formatToPlainString(b.default["8imxAq"], {
           dateString: e
         }),
@@ -84,13 +84,13 @@ function O(e, t) {
         }),
         secondBody: m.intl.formatToPlainString(b.default.D09fdi, {
           dateString: e,
-          boostCount: I.cost
+          boostCount: _.cost
         }),
         thirdBody: m.intl.string(b.default["+zvKPr"]),
         primaryButtonText: t,
         onPrimaryClick: null != t ? R : true
       }
-    }, [A, I, P, j, R]);
+    }, [A, _, P, j, R]);
   return {
     shouldShow: A,
     modalConfig: D

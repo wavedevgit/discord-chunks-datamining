@@ -42,11 +42,11 @@ let N = Chunk473749.memo(function(e) {
     [D, M] = (0, h.TE)((null == R ? true : R.id) != null ? s.z.GAME_SHOP_NEW_BADGE : null, null != (t = null == R ? true : R.id) ? t : ""),
     L = D === s.z.GAME_SHOP_NEW_BADGE;
   i.useEffect(() => {
-    N && L && M(I.L.INDIRECT_ACTION)
+    N && L && M(_.L.INDIRECT_ACTION)
   }, [M, N, L]);
   let k = i.useCallback(() => {
       var e, t;
-      M(I.L.TAKE_ACTION);
+      M(_.L.TAKE_ACTION);
       let n = null != (t = null == (e = m.Z.getStorefrontState(l.id)) ? true : e.activePage) ? t : 0;
       (0, p.uL)(S.Z5c.CHANNELS_GAME_SHOP(l.id, n))
     }, [l.id, M]),
@@ -57,7 +57,7 @@ let N = Chunk473749.memo(function(e) {
       })
     }, [l.id, L]),
     U = i.useCallback(() => {
-      M(I.L.USER_DISMISS)
+      M(_.L.USER_DISMISS)
     }, [M]),
     B = i.useCallback(e => {
       null != l && (0, f.jW)(e, async () => {
@@ -116,7 +116,7 @@ let N = Chunk473749.memo(function(e) {
       text: (0, r.jsx)(d.Text, {
         variant: "text-md/medium",
         className: a()(P.name, t),
-        children: (null == l ? true : l.id) === (0, g.ac)() ? _.intl.string(_.t.xFQAPs) : _.intl.string(_.t.vyaWs7)
+        children: (null == l ? true : l.id) === (0, g.ac)() ? I.intl.string(I.t.xFQAPs) : I.intl.string(I.t.vyaWs7)
       }),
       selected: N,
       onMouseDown: G,
@@ -124,7 +124,7 @@ let N = Chunk473749.memo(function(e) {
       onContextMenu: B,
       trailing: (0, r.jsxs)(r.Fragment, {
         children: [L && (0, r.jsx)(d.IGR, {
-          text: _.intl.string(_.t.y2b7CA),
+          text: I.intl.string(I.t.y2b7CA),
           color: c.Z.colors.BACKGROUND_BRAND.css
         }), i]
       })
@@ -148,8 +148,8 @@ let N = Chunk473749.memo(function(e) {
       onRequestClose: U,
       targetElementRef: w,
       skuImageDetails: H,
-      title: _.intl.string(_.t["7PvvS9"]),
-      body: _.intl.formatToPlainString(_.t["9J4h1a"], {
+      title: I.intl.string(I.t["7PvvS9"]),
+      body: I.intl.formatToPlainString(I.t["9J4h1a"], {
         applicationName: R.applicationName
       })
     })]

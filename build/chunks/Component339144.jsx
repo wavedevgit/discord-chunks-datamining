@@ -107,7 +107,7 @@ let D = Chunk473749.memo(function(e) {
         (0, C.Z)(E)
       }, [E]),
       eo = i.useCallback(() => {
-        let e = null != k && (0, I.vd)(k.type) ? k : null,
+        let e = null != k && (0, _.vd)(k.type) ? k : null,
           t = null != e ? e.getGuildId() : w;
         (0, u.ZDy)(async () => {
           let {
@@ -134,7 +134,7 @@ let D = Chunk473749.memo(function(e) {
               return e
             }({}, n), l = l = {
               sourcePID: null == U ? true : U.pid,
-              selectSource: !!J && null != _.Z.getVoiceChannelId(),
+              selectSource: !!J && null != I.Z.getVoiceChannelId(),
               guildId: t,
               analyticsLocation: Z.Sbl.ACTIVITY_PANEL
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
@@ -167,7 +167,7 @@ let D = Chunk473749.memo(function(e) {
         eo(), (0, m.v)($, m.d.STREAM, true)
       }, h = u.hGI, O = null != U ? T.intl.formatToPlainString(T.t.AB5gTy, {
         game: U.name
-      }) : T.intl.string(T.t.FeUKeA)) : (o = true, s = null, h = u.hGI, O = null != k && (0, I.vd)(k.type) ? T.intl.string(T.t.uQn9B8) : null != w ? T.intl.string(T.t.fBXEoJ) : T.intl.string(T.t.n3feNG)), (0, r.jsx)("div", {
+      }) : T.intl.string(T.t.FeUKeA)) : (o = true, s = null, h = u.hGI, O = null != k && (0, _.vd)(k.type) ? T.intl.string(T.t.uQn9B8) : null != w ? T.intl.string(T.t.fBXEoJ) : T.intl.string(T.t.n3feNG)), (0, r.jsx)("div", {
         className: A.panelButtonContainer,
         children: (0, r.jsx)(N.Z, {
           tooltipText: O,

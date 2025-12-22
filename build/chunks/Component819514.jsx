@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk792389 = require("./792389.js"),
   Chunk552593 = require("./552593.js");
 
-function I(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,14 +36,14 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -100,13 +100,13 @@ class P extends Chunk473749.PureComponent {
         }), exports, module]
       });
     if ((null == Chunk904245 ? true : Chunk904245.moderatorReportChannelId) != null) {
-      var O, I;
+      var O, _;
       let {
         isFlagResolved: e
       } = Chunk904245;
       return (0, Chunk54381.jsx)(Chunk372900.Z.Provider, {
         value: a.guild_id,
-        children: (0, Chunk54381.jsx)(Chunk793030.Modal, (O = _({
+        children: (0, Chunk54381.jsx)(Chunk793030.Modal, (O = I({
           title: Chunk388032.intl.string(Chunk388032.t.MWMcg7),
           subtitle: Chunk501517,
           actions: [{
@@ -119,17 +119,17 @@ class P extends Chunk473749.PureComponent {
             label: Chunk388032.intl.string(Chunk792389.default["8yIKem"]),
             onChange: e => this.handleToggleResolveFlag(e)
           })
-        }, Chunk933557), I = I = {
+        }, Chunk933557), _ = _ = {
           children: Chunk699516
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(Chunk594174, Object.getOwnPropertyDescriptors(I)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(Chunk594174, Object.getOwnPropertyDescriptors(_)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(I)).forEach(function(e) {
-          Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(I, e))
+        })(Object(_)).forEach(function(e) {
+          Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(_, e))
         }), Chunk594174))
       })
     }
@@ -154,10 +154,10 @@ class P extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), I(this, "state", {
+    super(...e), _(this, "state", {
       report: false,
       resolveFlag: false
-    }), I(this, "handleDelete", () => {
+    }), _(this, "handleDelete", () => {
       let {
         report: e,
         resolveFlag: t
@@ -180,14 +180,14 @@ class P extends Chunk473749.PureComponent {
           t && !a && m.Z.resolveFlag(l), null == (e = (n = this.props).onClose) || e.call(n)
         }
       })
-    }), I(this, "handleDeleteMana", () => {
+    }), _(this, "handleDeleteMana", () => {
       var e, t;
       this.handleDelete(), null == (e = (t = this.props).onClose) || e.call(t)
-    }), I(this, "handleToggleReport", e => {
+    }), _(this, "handleToggleReport", e => {
       this.setState({
         report: e
       })
-    }), I(this, "handleToggleResolveFlag", e => {
+    }), _(this, "handleToggleResolveFlag", e => {
       this.setState({
         resolveFlag: e
       })
@@ -246,7 +246,7 @@ let N = {
   confirmDelete: function(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
       i = arguments.length > 3 && true !== arguments[3] ? arguments[3] : true;
-    (0, u.h7j)(l => (0, r.jsx)(P, _({
+    (0, u.h7j)(l => (0, r.jsx)(P, I({
       channel: e,
       message: t,
       showContextMenuHint: n,

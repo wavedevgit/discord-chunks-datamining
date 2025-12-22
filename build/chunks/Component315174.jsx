@@ -82,7 +82,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function _(e) {
   let {
     guild: t,
     controller: n,
@@ -125,7 +125,7 @@ function I(e) {
   })
 }
 
-function _() {
+function I() {
   return (0, Chunk54381.jsx)(Chunk481060.r7p, {
     size: "custom",
     color: "currentColor",
@@ -201,7 +201,7 @@ function Z(e) {
         children: [(0, r.jsx)(O.Z, {
           guild: a,
           isBannerVisible: l
-        }), a.id === j._ && (0, r.jsx)(_, {}), (0, r.jsx)(P, {
+        }), a.id === j._ && (0, r.jsx)(I, {}), (0, r.jsx)(P, {
           guild: a
         })]
       }), (0, r.jsx)("div", {
@@ -240,7 +240,7 @@ let w = Chunk473749.memo(function(e) {
     guild: j,
     guildBanner: C,
     animationOverlayHeight: E,
-    children: _,
+    children: I,
     headerClassName: P,
     communityInfoVisible: N,
     hasSubheader: w
@@ -290,9 +290,9 @@ let w = Chunk473749.memo(function(e) {
               onContextMenu: u,
               ariaControls: O,
               ariaExpanded: b,
-              children: _
+              children: I
             })
-          }), D && (0, r.jsx)(I, {
+          }), D && (0, r.jsx)(_, {
             guild: j,
             controller: l,
             hasBanner: null != C,

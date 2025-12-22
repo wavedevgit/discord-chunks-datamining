@@ -100,7 +100,7 @@ let B = Chunk473749.memo(function e(t) {
       content: er,
       hasSpoilerEmbeds: ei,
       hasBailedAst: el
-    } = (0, _.Z)(s, {
+    } = (0, I.Z)(s, {
       hideSimpleEmbedContent: X && J,
       allowList: ee,
       allowHeading: ee,
@@ -141,7 +141,7 @@ let B = Chunk473749.memo(function e(t) {
       author: ea,
       guildId: l.guild_id
     })),
-    childrenAccessories: (0, r.jsx)(I.BB, {
+    childrenAccessories: (0, r.jsx)(_.BB, {
       channel: l,
       message: s,
       hasSpoilerEmbeds: ei,

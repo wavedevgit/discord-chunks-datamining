@@ -70,31 +70,31 @@ function Z(e) {
   } = e, u = (0, p.RF)(t, "guild_shop_channel_row"), g = (0, a.e7)([v.Z], () => v.Z.getGuild(t)), E = (null == g ? true : g.features.has(x.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, Z = "false" === s.K.get(S.tM, "false"), w = (0, a.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, r.jsx)(C.m, {
     id: "shop-".concat(t),
-    className: l()(_.previewChannelRow, {
-      [_.selected]: n,
-      [_.phantomPreview]: Z
+    className: l()(I.previewChannelRow, {
+      [I.selected]: n,
+      [I.phantomPreview]: Z
     }),
-    innerClassName: _.previewChannelRowContent,
+    innerClassName: I.previewChannelRowContent,
     renderIcon: e => (0, r.jsx)(b.Z, {
       width: 20,
       height: 20,
-      className: l()([e, _.shopIcon])
+      className: l()([e, I.shopIcon])
     }),
-    text: I.intl.string(I.t.al5EXL),
+    text: _.intl.string(_.t.al5EXL),
     selected: n,
     onClick: i,
     trailing: (0, r.jsxs)("div", {
-      className: _.gifSection,
+      className: I.gifSection,
       children: [w ? (0, r.jsx)(c.IGR, {
         color: c.TVs.unsafe_rawColors.BRAND_260.css,
-        text: I.intl.string(I.t.y2b7CA),
-        className: _.newBadge
+        text: _.intl.string(_.t.y2b7CA),
+        className: I.newBadge
       }) : (0, r.jsx)("img", {
         src: (0, h.b)("server_products/storefront/money.gif"),
-        className: _.money,
+        className: I.money,
         alt: ""
       }), n && (0, r.jsx)(c.P3F, {
-        className: _.closeButton,
+        className: I.closeButton,
         onClick: e => {
           if (e.stopPropagation(), (0, m.Q3)(o.z.SERVER_SHOP_PHANTOM_PREVIEW), j.default.track(x.rMx.GUILD_SHOP_PREVIEW_CLICK, N(P({}, (0, f.hH)(t)), {
               action_taken: S.mz.DISMISS_CHANNEL_ROW
@@ -103,7 +103,7 @@ function Z(e) {
             (0, y.dL)(x.Z5c.CHANNEL(t, null == (n = O.ZP.getDefaultChannel(t)) ? true : n.id))
           }
         },
-        "aria-label": I.intl.string(I.t.cpT0Cq),
+        "aria-label": _.intl.string(_.t.cpT0Cq),
         children: (0, r.jsx)(c.k$p, {
           size: "xs",
           color: "currentColor"
@@ -131,7 +131,7 @@ function w(e) {
       height: 20,
       className: e
     }),
-    text: I.intl.string(I.t.al5EXL),
+    text: _.intl.string(_.t.al5EXL),
     selected: i,
     onClick: a,
     onContextMenu: e => {

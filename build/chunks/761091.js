@@ -32,8 +32,8 @@ function C(e) {
     S = (0, y.cZ)({
       location: "guild-action-rows"
     }),
-    I = (0, c.g)(e.id),
-    _ = (0, r.e7)([o.Z], () => o.Z.getNewMemberActions(e.id), [e.id]),
+    _ = (0, c.g)(e.id),
+    I = (0, r.e7)([o.Z], () => o.Z.getNewMemberActions(e.id), [e.id]),
     P = (0, u.Z)(e.id),
     N = (0, s.PE)(e.id),
     Z = (0, a.n2)(e.id),
@@ -46,5 +46,5 @@ function C(e) {
   (0, g.e)(e.id, "useGuildActionRows", true);
   let L = (0, p.BU)(e.id, "useGuildActionRows"),
     k = e.features.has(j.GuildFeatures.GAME_SERVERS);
-  return T && w.push(v.z.GUILD_HUB_HEADER_OPTIONS), !N && I && P && null != _ && _.length > 0 ? w.push(v.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && w.push(v.z.GUILD_PREMIUM_PROGRESS_BAR), !T && I && w.push(v.z.GUILD_HOME), t && w.push(v.z.GUILD_SCHEDULED_EVENTS), !T && A && R && w.push(v.z.CHANNELS_AND_ROLES), C && w.push(v.z.GUILD_ROLE_SUBSCRIPTIONS), x && w.push(v.z.GUILD_SHOP), E && S && w.push(v.z.GUILD_GAME_SHOP), (Z && (A || D) || n && e.features.has(j.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && w.push(v.z.GUILD_MOD_DASH_MEMBER_SAFETY), M && w.push(v.z.GUILD_BOOSTS), L && k && w.push(v.z.GAME_SERVERS), w
+  return T && w.push(v.z.GUILD_HUB_HEADER_OPTIONS), !N && _ && P && null != I && I.length > 0 ? w.push(v.z.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : e.premiumProgressBarEnabled && w.push(v.z.GUILD_PREMIUM_PROGRESS_BAR), !T && _ && w.push(v.z.GUILD_HOME), t && w.push(v.z.GUILD_SCHEDULED_EVENTS), !T && A && R && w.push(v.z.CHANNELS_AND_ROLES), C && w.push(v.z.GUILD_ROLE_SUBSCRIPTIONS), x && w.push(v.z.GUILD_SHOP), E && S && w.push(v.z.GUILD_GAME_SHOP), (Z && (A || D) || n && e.features.has(j.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && w.push(v.z.GUILD_MOD_DASH_MEMBER_SAFETY), M && w.push(v.z.GUILD_BOOSTS), L && k && w.push(v.z.GAME_SERVERS), w
 }

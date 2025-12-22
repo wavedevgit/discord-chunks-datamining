@@ -46,7 +46,7 @@ function S(e) {
   }
   return e
 }
-let I = {
+let _ = {
   [Chunk981631.vxO.INSTALLING]: {
     [Chunk707409.J6.NONE]: (e, t) => C.intl.formatToPlainString(C.t["p+2sE+"], {
       name: e
@@ -99,7 +99,7 @@ let I = {
     })
   }
 };
-class _ extends Chunk473749.PureComponent {
+class I extends Chunk473749.PureComponent {
   renderText() {
     let {
       state: e,
@@ -133,7 +133,7 @@ class _ extends Chunk473749.PureComponent {
       if (null == l || null == a || null == i) return null;
       let s = e[e.length - 1] / t * 1e3,
         c = 0 !== s ? Math.max(1, (a - l) / s) : null,
-        u = I[o],
+        u = _[o],
         d = null != u ? Object.keys(u) : [],
         {
           unit: f,
@@ -169,7 +169,7 @@ class P extends(r = Chunk473749.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == module || null == exports ? Chunk388032.intl.string(Chunk388032.t.cw57ar) : (0, Chunk54381.jsx)(_, {
+    return null == module || null == exports ? Chunk388032.intl.string(Chunk388032.t.cw57ar) : (0, Chunk54381.jsx)(I, {
       application: module,
       state: exports,
       isPaused: require

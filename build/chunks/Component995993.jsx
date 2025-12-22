@@ -28,7 +28,7 @@ function x(e) {
   let {
     guild: t,
     selected: x
-  } = e, E = (0, f.Z)(t), S = (0, u.Nj)(a.z.CHANNEL_BROWSER_NEW_BADGE_NUX), I = (0, l.Wu)([h.Z], () => Array.from(h.Z.getNewChannelIds(t.id)).filter(e => h.Z.shouldIndicateNewChannel(t.id, e))), _ = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, j.W.GUILD_ONBOARDING_QUESTION)), P = I.length > m.Cb, N = (0, l.e7)([d.Z, g.ZP], () => {
+  } = e, E = (0, f.Z)(t), S = (0, u.Nj)(a.z.CHANNEL_BROWSER_NEW_BADGE_NUX), _ = (0, l.Wu)([h.Z], () => Array.from(h.Z.getNewChannelIds(t.id)).filter(e => h.Z.shouldIndicateNewChannel(t.id, e))), I = (0, l.e7)([g.ZP], () => g.ZP.hasUnread(t.id, j.W.GUILD_ONBOARDING_QUESTION)), P = _.length > m.Cb, N = (0, l.e7)([d.Z, g.ZP], () => {
     let e = d.Z.lastFetchedAt(t.id),
       n = g.ZP.lastMessageId(t.id, j.W.GUILD_ONBOARDING_QUESTION);
     if (null == n) returnfalse;
@@ -75,7 +75,7 @@ function x(e) {
       }
     })
   }, [t]), T = null;
-  return S && !_ && !P || x || N || (T = (0, r.jsx)(s.IGR, {
+  return S && !I && !P || x || N || (T = (0, r.jsx)(s.IGR, {
     color: o.Z.colors.BADGE_BACKGROUND_BRAND.css,
     text: C.intl.string(C.t.y2b7CA)
   })), (0, r.jsx)(y.m, {

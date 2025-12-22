@@ -290,7 +290,7 @@ function E(e) {
     })
   }
   let {
-    children: I
+    children: _
   } = O;
   return (0, i.jsx)(s.yRy, {
     targetElementRef: y,
@@ -302,7 +302,7 @@ function E(e) {
       let {
         closePopout: t
       } = e;
-      return (0, i.jsx)(I, {
+      return (0, i.jsx)(_, {
         closePopout: t
       })
     },

@@ -36,9 +36,9 @@ function S(e) {
     r = (0, c.k5)(e),
     x = (0, i.Wu)([a.ZP, y.Z], () => a.ZP.getEmbeddedActivitiesForGuild(e).filter(e => !(0, s.BA)([...e.userIds], y.Z.getBlockedOrIgnoredIDs()))),
     S = (0, o.p)(null == (t = x[0]) ? true : t.location),
-    I = (0, l.NX)(S),
+    _ = (0, l.NX)(S),
     {
-      guildHasVoice: _,
+      guildHasVoice: I,
       guildHasVideo: P,
       selectedVoiceChannelHasVideo: N
     } = (0, i.cj)([O.Z, j.Z, b.Z, m.Z, g.Z], () => {
@@ -94,7 +94,7 @@ function S(e) {
       R = (0, s.aK)(h.Z.getAllApplicationStreams()).some(t => t.guildId === e),
       D = p && N,
       M = (() => {
-        if (I) return x.length > 0;
+        if (_) return x.length > 0;
         for (let e of x) {
           let t = g.Z.getChannel((0, o.p)(e.location));
           if (null != t && (0, f.vd)(t.type)) returntrue
@@ -102,7 +102,7 @@ function S(e) {
         returnfalse
       })(),
       L = a.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
-    return p ? (b = true, y = (null == r ? true : r.channel_id) === c, v = T, j = D, E = A, S = L) : (b = _, y = null != r, v = w, j = P, E = R, S = M), {
+    return p ? (b = true, y = (null == r ? true : r.channel_id) === c, v = T, j = D, E = A, S = L) : (b = I, y = null != r, v = w, j = P, E = R, S = M), {
       audio: b,
       video: j,
       screenshare: E,
@@ -111,5 +111,5 @@ function S(e) {
       activity: S,
       isCurrentUserConnected: p || T
     }
-  }, [e, n, N, Z, I, x, r, _, P])
+  }, [e, n, N, Z, _, x, r, I, P])
 }

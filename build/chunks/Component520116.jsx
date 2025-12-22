@@ -1,7 +1,7 @@
 /** Chunk was on 67000 **/
 /** chunk id: 520116, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => _
 }), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -94,7 +94,7 @@ function S(e) {
   })
 }
 
-function I(e) {
+function _(e) {
   var t, n;
   let {
     channel: i,
@@ -106,13 +106,13 @@ function I(e) {
     location: "20e3b0_1"
   }, {
     autoTrackExposure: false
-  }), y = p.jU.useSetting(), x = (0, d.P1)(l), E = false, I = 0 === i.messages.length || a()(i.messages[0].timestamp).isSame(a()(), "day"), _ = null != (n = null == (t = b.default.getUser(g.default.getId())) ? true : t.hasFlag(v.xW$.SPAMMER)) && n, P = [];
+  }), y = p.jU.useSetting(), x = (0, d.P1)(l), E = false, _ = 0 === i.messages.length || a()(i.messages[0].timestamp).isSame(a()(), "day"), I = null != (n = null == (t = b.default.getUser(g.default.getId())) ? true : t.hasFlag(v.xW$.SPAMMER)) && n, P = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
       n = i.messages.slice(0, O.hC);
     n.forEach(n => {
-      if (!I && (null == e || !e.isSame(n.timestamp, "day"))) {
+      if (!_ && (null == e || !e.isSame(n.timestamp, "day"))) {
         let t = (0, m.vc)(n.timestamp, "LL");
         P.push((0, r.jsx)(f.Z, {
           className: C.divider,
@@ -125,7 +125,7 @@ function I(e) {
         message: n,
         compact: y,
         isGroupStart: i,
-        treatSpam: !_ && h && (0, d.DQ)(n) && x,
+        treatSpam: !I && h && (0, d.DQ)(n) && x,
         gotoChannel: o
       }, n.id))
     }), i.messages.length >= O.hC && P.push((0, r.jsx)("div", {

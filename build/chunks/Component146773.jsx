@@ -1,7 +1,7 @@
 /** Chunk was on 67000 **/
 /** chunk id: 146773, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => I
+  B: () => _
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -54,7 +54,7 @@ function S(e, t) {
   return null == l ? true : l.channel
 }
 
-function I(e) {
+function _(e) {
   return (0, i.G)(E, {
     drop(e, t) {
       let n, i = O.Z.getGuildId(),

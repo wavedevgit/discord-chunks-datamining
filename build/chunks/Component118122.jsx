@@ -65,8 +65,8 @@ function E(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, o = (0, l.Wu)([p.Z], () => p.Z.getGuildsArray()), E = (0, l.e7)([g.default], () => g.default.getCurrentUser()), S = i.useMemo(() => o.some(e => (0, h.eM)(e, E)), [o, E]), I = (0, a.s9z)(e => (0, a.DEQ)(e, O.PU)), {
-    analyticsLocations: _
+  } = e, o = (0, l.Wu)([p.Z], () => p.Z.getGuildsArray()), E = (0, l.e7)([g.default], () => g.default.getCurrentUser()), S = i.useMemo(() => o.some(e => (0, h.eM)(e, E)), [o, E]), _ = (0, a.s9z)(e => (0, a.DEQ)(e, O.PU)), {
+    analyticsLocations: I
   } = (0, s.ZP)(), P = (0, r.jsx)(m.Z, {
     showPill: false,
     id: "create-join-button",
@@ -79,12 +79,12 @@ function E(e) {
           page: y.Sbl.CREATE_JOIN_GUILD_MODAL,
           section: y.jXE.GUILD_CAP_UPSELL_MODAL
         },
-        analyticsLocations: _
+        analyticsLocations: I
       }) : c.Z.openCreateGuildModal({
         location: "Guild List"
       })
     },
-    selected: I,
+    selected: _,
     onContextMenu: x,
     tooltip: v.intl.string(v.t.l5WIbf),
     icon: a.oFk

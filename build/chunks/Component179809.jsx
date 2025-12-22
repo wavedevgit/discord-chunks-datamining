@@ -102,7 +102,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         hovered: K,
         selected: l,
         unread: w,
-        className: _.pill
+        className: I.pill
       }), (0, r.jsx)(x.Z, {
         text: er,
         disabled: R,
@@ -112,9 +112,9 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
           ref: A ? e => {
             ee(e)
           } : true,
-          className: a()(I.folderHeader, {
-            [I.folderHeaderSmall]: "icon" === U || J,
-            [_.wobble]: !$ && q && !s
+          className: a()(_.folderHeader, {
+            [_.folderHeaderSmall]: "icon" === U || J,
+            [I.wobble]: !$ && q && !s
           }),
           "data-dnd-name": er,
           children: $ ? (0, r.jsx)(j.Z, {
@@ -146,16 +146,16 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
     }), eu = null != t.color ? t.color : E.Wy, ed = eu === E.Wy ? true : (0, u.Rf)(eu);
     return (0, r.jsxs)("div", {
       ref: es,
-      className: a()(I.folderGroup, {
-        [I.isExpanded]: s,
-        [I.isHovering]: X
+      className: a()(_.folderGroup, {
+        [_.isExpanded]: s,
+        [_.isHovering]: X
       }),
       style: {
         "--custom-folder-color": null != ed ? ed : ""
       },
       "data-drop-hovering": q,
       children: [!$ && s && (0, r.jsx)("span", {
-        className: I.folderGroupBackground
+        className: _.folderGroupBackground
       }), ec, eo((e, n, i) => {
         let {
           key: l
@@ -165,7 +165,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
           role: "group",
           as: "ul",
           gap: "xs",
-          className: I.folderGuildsList,
+          className: _.folderGuildsList,
           style: {
             height: e.height.to(e => e * ea)
           },

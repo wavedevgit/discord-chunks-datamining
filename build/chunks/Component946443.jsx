@@ -2,7 +2,7 @@
 /** chunk id: 946443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   QP: () => N,
-  ZP: () => I,
+  ZP: () => _,
   h6: () => P
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -29,8 +29,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk97916 = require("./97916.js");
 
-function I(e) {
-  var t, n, l, o, O, I, P;
+function _(e) {
+  var t, n, l, o, O, _, P;
   let {
     onJump: N,
     showTutorial: Z,
@@ -71,14 +71,14 @@ function I(e) {
     return m.S.subscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
       m.S.unsubscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
-  }, [O, o.channels]), I = D, i.useEffect(() => {
+  }, [O, o.channels]), _ = D, i.useEffect(() => {
     let e = e => {
-      ((0, y.isMac)() || (0, y.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && I.undoMarkChannelRead()
+      ((0, y.isMac)() || (0, y.isMacWeb)() ? e.metaKey : e.ctrlKey) && !e.shiftKey && !e.altKey && "z" === e.key && _.undoMarkChannelRead()
     };
     return document.addEventListener("keydown", e), () => {
       document.removeEventListener("keydown", e)
     }
-  }, [I]), i.useEffect(() => {
+  }, [_]), i.useEffect(() => {
     b.default.track(x.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
@@ -142,7 +142,7 @@ function I(e) {
         }, l), n = n = {
           onScroll: M === C.jd.Done ? true : k,
           className: a()(S.scroller, "group-spacing-".concat(G)),
-          children: [Z ? (0, r.jsx)(_, {
+          children: [Z ? (0, r.jsx)(I, {
             setSeenTutorial: w
           }) : null, (0, j.Z)(L, D, N), M === C.jd.Done ? null : (0, r.jsx)(d.$jN, {
             className: S.spinner
@@ -162,7 +162,7 @@ function I(e) {
   })
 }
 
-function _(e) {
+function I(e) {
   let {
     setSeenTutorial: t
   } = e;

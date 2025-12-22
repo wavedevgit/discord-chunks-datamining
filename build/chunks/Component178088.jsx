@@ -100,11 +100,11 @@ function P(e) {
       onRequestClose: B,
       renderPopout: function() {
         return (0, r.jsx)(u.VqE, {
-          "aria-label": I.intl.string(I.t.GSmTKJ),
+          "aria-label": _.intl.string(_.t.GSmTKJ),
           className: A,
           children: (0, r.jsx)("div", {
-            className: a()(_.container, {
-              [_.widerInbox]: K
+            className: a()(I.container, {
+              [I.widerInbox]: K
             }),
             children: (0, r.jsx)(u.y5t, {
               component: (0, r.jsx)(C.Z, {

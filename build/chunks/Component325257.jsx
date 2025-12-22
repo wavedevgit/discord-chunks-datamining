@@ -164,11 +164,11 @@ let L = Chunk473749.memo(function(e) {
         null == (t = document.querySelector("[aria-owns=folder-items-".concat(ea, "]"))) || t.focus()
       }
     }, [ea]),
-    eI = i.useCallback(e => {
+    e_ = i.useCallback(e => {
       if (e) return void ev.delay();
       ev.cancel(), eO(false)
     }, [ev]),
-    e_ = i.useCallback(e => {
+    eI = i.useCallback(e => {
       null == G || G(el, e)
     }, [el, G]),
     eP = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE);
@@ -217,7 +217,7 @@ let L = Chunk473749.memo(function(e) {
       })
     }),
     eZ = eu ? (0, r.jsx)(S.OG, {
-      children: (0, r.jsx)(_.Z, {})
+      children: (0, r.jsx)(I.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
       style: {
         scale: null == en ? 1 : en
@@ -237,13 +237,13 @@ let L = Chunk473749.memo(function(e) {
       })
     });
   return (0, r.jsxs)(P.H, {
-    ref: e_,
+    ref: eI,
     children: [(0, r.jsx)(x.Z, {
       hovered: !eu && eg,
       selected: !eu && W,
       unread: !eu && z,
       className: T.pill
-    }), (0, r.jsx)(I.Z, {
+    }), (0, r.jsx)(_.Z, {
       guild: V,
       disabled: $,
       isDragging: eu,
@@ -251,7 +251,7 @@ let L = Chunk473749.memo(function(e) {
     }), J ? (0, r.jsx)(S.ZP, {
       name: V.name,
       targetNode: k,
-      onDragOverChanged: eI
+      onDragOverChanged: e_
     }) : null]
   })
 })

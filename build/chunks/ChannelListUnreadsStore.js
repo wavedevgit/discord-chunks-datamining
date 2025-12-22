@@ -31,8 +31,8 @@ let E = {
     topBar: E,
     bottomBar: E
   },
-  I = {},
-  _ = {};
+  _ = {},
+  I = {};
 
 function P(e) {
   let t = p.Z.getChannel(e);
@@ -57,7 +57,7 @@ function w(e) {
   var t, n, r;
   let {
     guildChannels: i
-  } = j.Z.getGuildWithoutChangingGuildActionRows(e), l = i.getChannels(null != (t = _[e]) ? t : []);
+  } = j.Z.getGuildWithoutChangingGuildActionRows(e), l = i.getChannels(null != (t = I[e]) ? t : []);
   if (null == l || 0 === l.length) returnfalse;
   let a = null,
     s = null,
@@ -114,7 +114,7 @@ function w(e) {
   });
   let R = null != T && (null == w || "mentions" !== w.mode && "mentions" === T.mode),
     D = null != w && ("mentions" === w.mode || !R);
-  return I[e] = {
+  return _[e] = {
     topBar: R && null != T ? T : E,
     bottomBar: D && null != w ? w : E
   }, true
@@ -167,7 +167,7 @@ class k extends(r = Chunk442837.ZP.Store) {
   }
   getUnreadStateForGuildId(e) {
     var t;
-    return null != (t = I[e]) ? t : S
+    return null != (t = _[e]) ? t : S
   }
 }(l = "displayName") in k ? Object.defineProperty(k, l, {
   value: "ChannelListUnreadsStore",
@@ -181,7 +181,7 @@ let G = new k(Chunk570140.Z, {
       guildId: t,
       channelIds: n
     } = e, r = g.Z.getGuild(t);
-    return null != r && !!r.features.has(C.GuildFeatures.COMMUNITY) && null != n && !o().isEqual(_[t], n) && (_[t] = n, w(t))
+    return null != r && !!r.features.has(C.GuildFeatures.COMMUNITY) && null != n && !o().isEqual(I[t], n) && (I[t] = n, w(t))
   },
   BULK_ACK: function(e) {
     let {
@@ -224,7 +224,7 @@ let G = new k(Chunk570140.Z, {
       voiceStates: t
     } = e, n = m.Z.getGuildId();
     if (null == n || !new Set(t.map(e => e.guildId)).has(n)) returnfalse;
-    let r = I[n];
+    let r = _[n];
     return null != r && "voice-channels" === r.bottomBar.mode && T(n)
   },
   USER_GUILD_SETTINGS_CHANNEL_UPDATE: L,

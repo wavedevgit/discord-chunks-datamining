@@ -80,7 +80,7 @@ function O(e) {
       transform: E ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: m
-  }, v ? "respect-motion-settings" : "animate-never"), I = i.useCallback(e => {
+  }, v ? "respect-motion-settings" : "animate-never"), _ = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), null != x && d(x)
   }, [d, x]);
   return (0, r.jsx)("div", {
@@ -96,7 +96,7 @@ function O(e) {
         className: a()(b.bar, b.emptyBar)
       }) : j === p.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: b.bar,
-        onClick: I,
+        onClick: _,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
           size: "custom",
           color: "currentColor",
@@ -117,7 +117,7 @@ function O(e) {
         })]
       }) : j === p.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: a()(b.bar, b.mentionsBar),
-        onClick: I,
+        onClick: _,
         children: (0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
           color: "badge-text-brand",

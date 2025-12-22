@@ -183,13 +183,13 @@ function es(e) {
     lurkingGuildIds: i
   } = e, l = (0, x.Z)(), a = (0, f.Wu)([R.Z, A.ZP], () => R.Z.getGuildIds().filter(e => A.ZP.isCurrentUserGuest(e))), o = i.concat(a), {
     entrypoint: s
-  } = (0, _.pN)({
+  } = (0, I.pN)({
     location: "GuildsBar"
   }), c = N.o.useConfig({
     location: "guildsbar"
   }).dmsTab;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(K.u, {}), c && (0, r.jsx)(H.Z, {}), s === _.u3.SERVER_RAIL_TOP && (0, r.jsx)(P.Z, {}), l ? (0, r.jsx)(E.Z, {}) : null, !t && (0, r.jsx)(B.Z, {}), o.map(e => (0, r.jsx)($.Z, {
+    children: [(0, r.jsx)(K.u, {}), c && (0, r.jsx)(H.Z, {}), s === I.u3.SERVER_RAIL_TOP && (0, r.jsx)(P.Z, {}), l ? (0, r.jsx)(E.Z, {}) : null, !t && (0, r.jsx)(B.Z, {}), o.map(e => (0, r.jsx)($.Z, {
       guildId: e
     }, e)), (0, r.jsx)(J.Z, {
       onActivate: n
@@ -234,7 +234,7 @@ function eu(e) {
   } = e, [s] = (0, f.Wu)([D.ZP], () => {
     let e = D.ZP.getGuildsTree();
     return [e, e.version]
-  }), d = (0, f.e7)([I.Z], () => I.Z.lurkingGuildIds()), h = i.useMemo(() => n ? [] : d, [d, n]), m = (0, f.e7)([C.Z], () => C.Z.isFullscreenInContext()), {
+  }), d = (0, f.e7)([_.Z], () => _.Z.lurkingGuildIds()), h = i.useMemo(() => n ? [] : d, [d, n]), m = (0, f.e7)([C.Z], () => C.Z.isFullscreenInContext()), {
     isSorting: O,
     startSorting: E,
     stopSorting: S
@@ -258,9 +258,9 @@ function eu(e) {
     pathname: er
   } = (0, c.TH)(), {
     entrypoint: eu
-  } = (0, _.pN)({
+  } = (0, I.pN)({
     location: "GuildsBar"
-  }), ed = +!!$ + +(eu === _.u3.SERVER_RAIL_TOP), ef = i.useMemo(() => {
+  }), ed = +!!$ + +(eu === I.u3.SERVER_RAIL_TOP), ef = i.useMemo(() => {
     let e = function(e, t, n) {
       let r = e + t,
         i = 2 + t;
@@ -349,7 +349,7 @@ function eu(e) {
       selected: ep,
       className: en.discoveryIcon
     }),
-    ey = eu === _.u3.SERVER_RAIL_BOTTOM;
+    ey = eu === I.u3.SERVER_RAIL_BOTTOM;
   return (0, r.jsx)(j.Gt, {
     value: eh,
     children: (0, r.jsx)(b.f6W, {

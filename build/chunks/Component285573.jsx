@@ -33,7 +33,7 @@ let y = (0, Chunk146773.B)(function(e) {
   } = e, S = (0, o.e7)([u.Z, d.ZP], () => {
     let e = d.ZP.getDirectoryChannelIds(t.id);
     return 0 === e.length ? null : u.Z.getChannel(e[0])
-  }), I = (0, o.e7)([u.Z], () => u.Z.getChannel(null == S ? true : S.parent_id)), _ = l === (null == S ? true : S.id), P = (0, o.e7)([f.Z], () => null != I ? f.Z.can(g.Plq.MANAGE_CHANNELS, I) : null != t && f.Z.can(g.Plq.MANAGE_CHANNELS, t)), N = i.useCallback(e => {
+  }), _ = (0, o.e7)([u.Z], () => u.Z.getChannel(null == S ? true : S.parent_id)), I = l === (null == S ? true : S.id), P = (0, o.e7)([f.Z], () => null != _ ? f.Z.can(g.Plq.MANAGE_CHANNELS, _) : null != t && f.Z.can(g.Plq.MANAGE_CHANNELS, t)), N = i.useCallback(e => {
     null != S && (0, s.jW)(e, async () => {
       let {
         default: e
@@ -78,14 +78,14 @@ let y = (0, Chunk146773.B)(function(e) {
     T = (0, r.jsx)("div", {
       className: a()(Z, {
         [m.disabled]: w,
-        [m.selected]: _
+        [m.selected]: I
       }),
       "data-dnd-name": S.name,
       children: (0, r.jsxs)(p.ZP, {
         className: m.iconVisibility,
         channel: S,
         guild: t,
-        selected: _,
+        selected: I,
         onContextMenu: N,
         forceInteractable: true,
         resolvedUnreadSetting: b.i.ONLY_MENTIONS,

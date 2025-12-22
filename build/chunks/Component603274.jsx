@@ -27,7 +27,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk998081 = require("./998081.js");
 
-function I(e, t) {
+function _(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
     className: S.row,
     children: [(0, r.jsx)(e, {
@@ -41,7 +41,7 @@ function I(e, t) {
   })
 }
 
-function _() {
+function I() {
   let e = (0, Chunk442837.Wu)([Chunk853856.Z, Chunk592125.Z], () => Chunk709054.default.keys(Chunk853856.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(Chunk823379.lm)),
     t = module.map(e => e.id),
     n = module.filter(e => e.type === x.d4z.GUILD_VOICE),
@@ -73,9 +73,9 @@ function _() {
       }
       return require
     }, [exports]),
-    _ = (0, Chunk442837.Wu)([Chunk594174.default], () => Chunk388032.map(e => y.default.getUser(e)), [Chunk388032]),
+    I = (0, Chunk442837.Wu)([Chunk594174.default], () => Chunk388032.map(e => y.default.getUser(e)), [Chunk388032]),
     P = (0, Chunk442837.Wu)([Chunk594174.default], () => Chunk681715.map(e => y.default.getUser(e)), [Chunk681715]),
-    N = I(Chunk481060.gj8, Chunk120356.filter(e => !u.includes(e.id) && !E.includes(e.id))),
+    N = _(Chunk481060.gj8, Chunk120356.filter(e => !u.includes(e.id) && !E.includes(e.id))),
     Z = 0 === a.length ? null : (0, Chunk54381.jsxs)("div", {
       className: Chunk998081.row,
       children: [(0, Chunk54381.jsx)(Chunk481060.ewx, {
@@ -99,8 +99,8 @@ function _() {
         })]
       })]
     }),
-    w = I(Chunk481060.hGI, P.filter(e => null != e && !E.includes(e.id))),
-    T = I(Chunk481060.nG3, _);
+    w = _(Chunk481060.hGI, P.filter(e => null != e && !E.includes(e.id))),
+    T = _(Chunk481060.nG3, I);
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [Z, N, w, T]
   })
@@ -114,7 +114,7 @@ function P() {
         className: a()(Chunk998081.guildNameText, Chunk998081.guildNameTextLimitedSize),
         children: Chunk388032.intl.string(Chunk388032.t.wMWyci)
       })
-    }), (0, Chunk54381.jsx)(_, {})]
+    }), (0, Chunk54381.jsx)(I, {})]
   })
 }
 

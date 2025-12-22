@@ -78,40 +78,40 @@ let x = {
     } = e, E = (0, p.ZP)(t), S = i.useCallback(() => {
       var e;
       (0, f.jd)(t), (0, g.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == E || null == (e = E.popout) || e.markAsDismissed(m.L.INDIRECT_ACTION)
-    }, [t, E]), I = i.useRef(null), _ = (0, s.s9z)(s.JQI), P = (0, o.e7)([d.Z], () => d.Z.hasLayers()), N = _ || P, Z = i.useCallback(() => {
+    }, [t, E]), _ = i.useRef(null), I = (0, s.s9z)(s.JQI), P = (0, o.e7)([d.Z], () => d.Z.hasLayers()), N = I || P, Z = i.useCallback(() => {
       var e;
       if ((null == E ? true : E.popout) == null || N) return null;
       switch (null == E || null == (e = E.popout) ? true : e.type) {
         case h.Jk.LEVEL_REACHED:
           return (0, r.jsx)(b.jG, j({
             guildId: t,
-            channelRowRef: I
+            channelRowRef: _
           }, E.popout));
         case h.Jk.PERKS_AVAILABLE:
           return (0, r.jsx)(b.$h, j({
             guildId: t,
-            channelRowRef: I
+            channelRowRef: _
           }, E.popout));
         case h.Jk.PERKS_PURCHASABLE:
           return (0, r.jsx)(b.yI, j({
             guildId: t,
-            channelRowRef: I
+            channelRowRef: _
           }, E.popout));
         case h.Jk.NEW_PERK_AVAILABLE:
           return (0, r.jsx)(b.cO, j({
             guildId: t,
-            channelRowRef: I
+            channelRowRef: _
           }, E.popout));
         case h.Jk.GAME_SERVER_HOSTING_AVAILABLE:
         case h.Jk.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
           return (0, r.jsx)(b.dJ, j({
             guildId: t,
-            channelRowRef: I
+            channelRowRef: _
           }, E.popout));
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == E ? true : E.popout, I, N]), [w, T] = i.useState(null);
+    }, [t, null == E ? true : E.popout, _, N]), [w, T] = i.useState(null);
     i.useEffect(() => {
       (null == E ? true : E.popout) == null && T(null)
     }, [null == E ? true : E.popout]);
@@ -120,7 +120,7 @@ let x = {
     }, []);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.m, {
-        ref: I,
+        ref: _,
         className: v.container,
         id: "skill-trees-".concat(t),
         renderIcon: e => (0, r.jsx)(s.Ucv, {

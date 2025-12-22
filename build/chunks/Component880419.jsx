@@ -32,8 +32,8 @@ function m(e) {
   } = e, {
     onActivate: E,
     isLoading: S,
-    error: I,
-    onShowDeactivate: _
+    error: _,
+    onShowDeactivate: I
   } = (0, d.Z)(l, m), P = (0, f.ZP)(l, m), N = P.type !== h.A3.INACTIVE, {
     disabled: Z,
     reason: w
@@ -58,8 +58,8 @@ function m(e) {
     } : null
   }(P, m);
   return i.useEffect(() => {
-    null == x || x(I)
-  }, [I, x]), (0, r.jsx)(o.i_, {
+    null == x || x(_)
+  }, [_, x]), (0, r.jsx)(o.i_, {
     body: null != (t = null == T ? true : T.body) ? t : "",
     title: null != (n = null == T ? true : T.title) ? n : true,
     shouldShow: null != T,
@@ -126,7 +126,7 @@ function m(e) {
           "aria-label": g.intl.string(N ? p.default.TZsu1U : p.default.gSxlHf),
           disabled: Z,
           onClick: e => {
-            e.stopPropagation(), N ? _() : E()
+            e.stopPropagation(), N ? I() : E()
           },
           loading: S,
           fullWidth: j,

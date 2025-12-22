@@ -110,7 +110,7 @@ let G = Chunk473749.memo(function(e) {
       ackedBeforeId: s
     } = e, {
       analyticsLocations: u
-    } = (0, c.ZP)(), h = (0, I.I)(l, s), g = i.useCallback(async () => {
+    } = (0, c.ZP)(), h = (0, _.I)(l, s), g = i.useCallback(async () => {
       if (h || (0, j.wt)(l), null != l.item_enum && l.item_enum === C.AM.FIND_FRIENDS) return void(0, a.ZDy)(async () => {
         let {
           default: e
@@ -194,7 +194,7 @@ let G = Chunk473749.memo(function(e) {
         onClick: g,
         children: [h ? null : (0, r.jsx)("div", {
           className: T.unread
-        }), (0, r.jsx)(_.U, {
+        }), (0, r.jsx)(I.U, {
           item: l
         }), (0, r.jsxs)("div", {
           className: T.body,

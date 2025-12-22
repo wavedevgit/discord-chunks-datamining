@@ -305,7 +305,7 @@ function Q(e) {
       bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), f = (0, o.e7)([_.Z], () => _.Z.isCollapsed(n.parent_id)), h = (0, I.ZP)(n.id), p = (0, o.e7)([E.Z], () => E.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, C.Rk)(n.id, x.pV.AUDIENCE), {
+  }), f = (0, o.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), h = (0, _.ZP)(n.id), p = (0, o.e7)([E.Z], () => E.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, C.Rk)(n.id, x.pV.AUDIENCE), {
     isSubscriptionGated: b,
     needSubscriptionToAccess: m
   } = (0, y.Z)(n.id), O = (0, o.e7)([A.ZP], () => A.ZP.isFavorite(t.id, n.id)), v = (0, S.xJ)(n.id), j = (0, L.Z)({

@@ -36,9 +36,9 @@ function C(e) {
   i.useEffect(() => {
     S !== t.premiumSubscriberCount && (0, h.v)(t.id, t.premiumSubscriberCount)
   }, [t.id, S, t.premiumSubscriberCount]);
-  let I = Math.min(S / C * 100, 100),
-    [_, P] = (0, u.q_F)(() => ({
-      width: S === t.premiumSubscriberCount ? "calc(".concat(I, "% - 4px)") : "0%",
+  let _ = Math.min(S / C * 100, 100),
+    [I, P] = (0, u.q_F)(() => ({
+      width: S === t.premiumSubscriberCount ? "calc(".concat(_, "% - 4px)") : "0%",
       config: {
         tension: 250,
         damping: 5,
@@ -47,9 +47,9 @@ function C(e) {
     }), "respect-motion-settings", [S, t.premiumSubscriberCount]);
   i.useEffect(() => {
     P({
-      width: "calc(".concat(I, "% - 4px)")
+      width: "calc(".concat(_, "% - 4px)")
     })
-  }, [I, P]);
+  }, [_, P]);
   let N = S >= C;
   return (0, r.jsx)(u.P3F, {
     "aria-label": true,
@@ -111,9 +111,9 @@ function C(e) {
         className: j.progressContainer
       }), (0, r.jsx)(o.animated.div, {
         className: a()(j.progress, {
-          [j.progressLow]: I <= 5
+          [j.progressLow]: _ <= 5
         }),
-        style: _
+        style: I
       }), (0, r.jsxs)("div", {
         className: j.textContainer,
         children: [(0, r.jsxs)("div", {

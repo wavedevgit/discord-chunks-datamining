@@ -31,8 +31,8 @@ function j(e) {
     onSelect: E
   } = e, {
     theme: S,
-    themeType: I
-  } = (0, g.z)(), _ = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, x), [t, x]), {
+    themeType: _
+  } = (0, g.z)(), I = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, x), [t, x]), {
     activities: P,
     isMobileOnline: N
   } = (0, l.cj)([p.Z], () => ({
@@ -49,7 +49,7 @@ function j(e) {
     guildId: C
   });
   return (0, r.jsxs)(a.P3F, {
-    focusProps: I === m.l.MODAL_V2 ? {
+    focusProps: _ === m.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -105,8 +105,8 @@ function j(e) {
       src: t.getAvatarURL(C, v),
       "aria-label": t.username,
       size: O,
-      status: _ ? b.Skl.UNKNOWN : j,
-      statusBackdropColor: _ ? true : (0, a.QFD)(S),
+      status: I ? b.Skl.UNKNOWN : j,
+      statusBackdropColor: I ? true : (0, a.QFD)(S),
       isMobile: N,
       className: y.avatar
     }), (0, r.jsxs)("div", {

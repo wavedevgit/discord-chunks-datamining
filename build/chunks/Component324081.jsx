@@ -60,7 +60,7 @@ function T(e) {
           is_now_collapsed: !t.collapsed
         }))
       },
-      children: (0, r.jsx)(_.Z, {
+      children: (0, r.jsx)(I.Z, {
         width: 16,
         height: 16
       })
@@ -152,7 +152,7 @@ function D(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, o.e7)([I.default], () => t.isDM() ? I.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, b.x)(t) : i.getAvatarURL(true, 40);
+  } = e, i = (0, o.e7)([_.default], () => t.isDM() ? _.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, b.x)(t) : i.getAvatarURL(true, 40);
   return (0, r.jsx)(u.P3F, {
     onClick: n,
     tabIndex: false,
@@ -237,8 +237,8 @@ function k(e) {
     status: i,
     activities: l,
     applicationStream: a
-  } = (0, o.cj)([I.default, E.Z, j.Z], () => {
-    let e = I.default.getUser(t.getRecipientId());
+  } = (0, o.cj)([_.default, E.Z, j.Z], () => {
+    let e = _.default.getUser(t.getRecipientId());
     return {
       user: e,
       status: null != e ? E.Z.getStatus(e.id) : null,

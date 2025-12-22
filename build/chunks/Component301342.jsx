@@ -31,7 +31,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk577022 = require("./577022.js");
 
-function I(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function I(e) {
   return e
 }
 
-function _(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -91,7 +91,7 @@ let N = Chunk473749.memo(function(e) {
             let {
               default: e
             } = await Promise.all([n.e("8965"), n.e("14280")]).then(n.bind(n, 139035));
-            return n => (0, r.jsx)(e, _(I({}, n), {
+            return n => (0, r.jsx)(e, I(_({}, n), {
               channel: l,
               guild: t
             }))
@@ -105,7 +105,7 @@ let N = Chunk473749.memo(function(e) {
           let {
             default: i
           } = await Promise.all([n.e("29497"), n.e("59679")]).then(n.bind(n, 241865));
-          return n => (0, r.jsx)(i, _(I({}, n), {
+          return n => (0, r.jsx)(i, I(_({}, n), {
             channelType: e,
             guildId: t,
             categoryId: "null" !== l.id ? l.id : null
@@ -152,7 +152,7 @@ let N = Chunk473749.memo(function(e) {
               [S.clickable]: true
             }),
             onContextMenu: M,
-            children: [(0, r.jsxs)(f.P3F, _(I({
+            children: [(0, r.jsxs)(f.P3F, I(_({
               innerRef: F,
               className: S.mainContent,
               tabIndex: U

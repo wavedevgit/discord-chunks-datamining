@@ -120,15 +120,15 @@ function v(e) {
   i.useEffect(() => {
     n && !C && s.Z.fetchRequestToJoinGuilds()
   }, [n, C]);
-  let I = null != j && x.includes(j);
+  let _ = null != j && x.includes(j);
   return (i.useEffect(() => {
-    !n && I && E !== j && v(true)
-  }, [n, I, E, j]), 0 === x.length) ? null : (0, r.jsx)(O, {
+    !n && _ && E !== j && v(true)
+  }, [n, _, E, j]), 0 === x.length) ? null : (0, r.jsx)(O, {
     onActivate: t,
     children: (0, r.jsx)(g.Z, {
       folderNode: S,
       expanded: n,
-      selected: I,
+      selected: _,
       draggable: false,
       sorting: false,
       onExpandCollapse: () => {

@@ -31,12 +31,12 @@ let O = e => {
     notPhoneVerified: C,
     newAccount: x,
     newMember: E
-  } = (0, l.e7)([f.Z], () => f.Z.getCheck(r), [r]), S = 0 === t ? b.intl.string(b.t["6zY8BI"]) : null, I = null, _ = null;
-  return (0 === t && (v ? (I = b.intl.string(b.t.IRxUlG), _ = b.intl.string(b.t.fiNVin)) : C ? (I = b.intl.string(b.t.vW8iUF), _ = b.intl.string(b.t["50gfOv"])) : j ? (I = b.intl.string(b.t.vdSOpz), _ = b.intl.string(b.t.lm1UKt)) : E ? (I = b.intl.formatToPlainString(b.t.v1ktYb, {
+  } = (0, l.e7)([f.Z], () => f.Z.getCheck(r), [r]), S = 0 === t ? b.intl.string(b.t["6zY8BI"]) : null, _ = null, I = null;
+  return (0 === t && (v ? (_ = b.intl.string(b.t.IRxUlG), I = b.intl.string(b.t.fiNVin)) : C ? (_ = b.intl.string(b.t.vW8iUF), I = b.intl.string(b.t["50gfOv"])) : j ? (_ = b.intl.string(b.t.vdSOpz), I = b.intl.string(b.t.lm1UKt)) : E ? (_ = b.intl.formatToPlainString(b.t.v1ktYb, {
     min: p.YeM.MEMBER_AGE
-  }), _ = b.intl.string(b.t.BddRzS)) : x && (I = b.intl.formatToPlainString(b.t.sncw41, {
+  }), I = b.intl.string(b.t.BddRzS)) : x && (_ = b.intl.formatToPlainString(b.t.sncw41, {
     min: p.YeM.ACCOUNT_AGE
-  }), _ = b.intl.string(b.t.BddRzS))), null == S || null == I) ? null : (0, i.jsxs)(o.VqE, {
+  }), I = b.intl.string(b.t.BddRzS))), null == S || null == _) ? null : (0, i.jsxs)(o.VqE, {
     className: m.container,
     "aria-labelledby": O,
     children: [(0, i.jsx)("img", {
@@ -52,15 +52,15 @@ let O = e => {
       }), (0, i.jsx)(o.Text, {
         color: "text-default",
         variant: "text-sm/normal",
-        children: I
+        children: _
       }), (0, i.jsxs)("div", {
         className: m.buttonContainer,
-        children: [null != _ ? (0, i.jsx)("div", {
+        children: [null != I ? (0, i.jsx)("div", {
           "data-button-hoisted-classname-wrapper": true,
           className: m.primaryButton,
           children: (0, i.jsx)(o.Button, {
             variant: "primary",
-            text: _,
+            text: I,
             onClick: () => {
               if (v) c.j();
               else if (C)(0, o.ZDy)(async () => {

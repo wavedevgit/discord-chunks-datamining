@@ -180,8 +180,8 @@ let T = Chunk473749.memo(function(e) {
   });
   return (0, r.jsxs)("li", {
     role: W,
-    className: a()(I.containerDefault, {
-      [I.selected]: l
+    className: a()(_.containerDefault, {
+      [_.selected]: l
     }),
     children: [(0, r.jsx)(w, {
       withGuildIcon: A
@@ -200,32 +200,32 @@ let T = Chunk473749.memo(function(e) {
         right: 4
       },
       children: (0, r.jsxs)("div", {
-        className: a()(I.iconVisibility, _.wrapper, _.typeThread, {
-          [_.modeSelected]: l,
-          [_.modeMuted]: !l && G,
-          [_.modeUnreadImportant]: !G && !l && M,
-          [_.withGuildIcon]: A
+        className: a()(_.iconVisibility, I.wrapper, I.typeThread, {
+          [I.modeSelected]: l,
+          [I.modeMuted]: !l && G,
+          [I.modeUnreadImportant]: !G && !l && M,
+          [I.withGuildIcon]: A
         }),
         onMouseDown: B,
         onContextMenu: F,
         children: [!M || G || l ? null : (0, r.jsx)("div", {
-          className: a()(_.unread, _.unreadImportant)
+          className: a()(I.unread, I.unreadImportant)
         }), (0, r.jsx)(u.P3F, Z(N({}, z), {
           innerRef: K,
-          className: _.link,
+          className: I.link,
           onClick: U,
           "aria-label": Y,
           focusProps: {
             enabled: false
           },
           children: (0, r.jsxs)("div", {
-            className: a()(_.linkTop, _.__invalid_threadMainContent),
+            className: a()(I.linkTop, I.__invalid_threadMainContent),
             children: [(0, r.jsx)(c.Z, {
-              className: _.name,
+              className: I.name,
               "aria-hidden": true,
               children: t.name
             }), (0, r.jsxs)("div", {
-              className: _.children,
+              className: I.children,
               children: [V > 0 && t.userLimit > 0 ? (0, r.jsx)(v.Z, {
                 userCount: V,
                 video: D,

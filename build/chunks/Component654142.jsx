@@ -71,7 +71,7 @@ let y = Chunk473749.memo(function(e) {
     name: v,
     color: j,
     children: C
-  } = t, x = C.map(e => e.id), E = (0, s.Z)(e => e.guildId), S = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(O)), I = function(e) {
+  } = t, x = C.map(e => e.id), E = (0, s.Z)(e => e.guildId), S = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(O)), _ = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -81,7 +81,7 @@ let y = Chunk473749.memo(function(e) {
       r = [];
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
-  }(t), _ = (0, p.Z)(t), {
+  }(t), I = (0, p.Z)(t), {
     mentionCount: P,
     isMentionLowImportance: N,
     unread: Z
@@ -111,8 +111,8 @@ let y = Chunk473749.memo(function(e) {
     mentionCount: P,
     isMentionLowImportance: N,
     unread: Z,
-    mediaState: _,
-    defaultFolderName: I,
+    mediaState: I,
+    defaultFolderName: _,
     onExpandCollapse: w,
     onContextMenu: T
   }))

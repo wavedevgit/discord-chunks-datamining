@@ -107,7 +107,7 @@ function R(e) {
     renderLoadingState: o,
     renderMessageGroup: h,
     scrollerClassName: p,
-    className: _,
+    className: I,
     listName: P,
     ignoreGrouping: R = false
   } = e, D = (0, O.fJ)(), M = i.useRef(null), L = (0, f.Z)(P, M), {
@@ -155,8 +155,8 @@ function R(e) {
         animate: true
       })
     }
-    return b.S.subscribe(I.CkL.SCROLL_PAGE_DOWN, t), b.S.subscribe(I.CkL.SCROLL_PAGE_UP, e), () => {
-      b.S.unsubscribe(I.CkL.SCROLL_PAGE_DOWN, t), b.S.unsubscribe(I.CkL.SCROLL_PAGE_UP, e)
+    return b.S.subscribe(_.CkL.SCROLL_PAGE_DOWN, t), b.S.subscribe(_.CkL.SCROLL_PAGE_UP, e), () => {
+      b.S.unsubscribe(_.CkL.SCROLL_PAGE_DOWN, t), b.S.unsubscribe(_.CkL.SCROLL_PAGE_UP, e)
     }
   }, []);
   let K = i.useCallback(() => {
@@ -260,7 +260,7 @@ function R(e) {
     messagesByCategory: Y,
     viewId: D
   }), (0, r.jsx)("div", {
-    className: a()(_, N.messagesPopoutWrap),
+    className: a()(I, N.messagesPopoutWrap),
     onClick: Z,
     onDoubleClick: Z,
     "aria-label": e["aria-label"],

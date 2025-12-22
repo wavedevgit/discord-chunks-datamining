@@ -32,33 +32,33 @@ function p(e) {
 }
 
 function g(e) {
-  var t, n, r, g, b, m, y, O, v, j, C, x, E, S, I;
+  var t, n, r, g, b, m, y, O, v, j, C, x, E, S, _;
   let {
-    item: _,
+    item: I,
     renderApplication: P
-  } = e, N = null != (r = null == (t = _.other_user) ? true : t.id) ? r : f.lds, Z = u.ZP.getName(s.default.getUser(null == (n = _.other_user) ? true : n.id)), w = _.applicationId;
-  switch (_.type) {
+  } = e, N = null != (r = null == (t = I.other_user) ? true : t.id) ? r : f.lds, Z = u.ZP.getName(s.default.getUser(null == (n = I.other_user) ? true : n.id)), w = I.applicationId;
+  switch (I.type) {
     case d.O7.FRIEND_REQUESTS_GROUPED:
-      let T = u.ZP.getName(s.default.getUser(null == (b = _.other_users) || null == (g = b[0]) ? true : g.id)),
-        A = u.ZP.getName(s.default.getUser(null == (y = _.other_users) || null == (m = y[1]) ? true : m.id)),
-        R = Math.max((null != (v = null == (O = _.other_users) ? true : O.length) ? v : 0) - 2, 0);
+      let T = u.ZP.getName(s.default.getUser(null == (b = I.other_users) || null == (g = b[0]) ? true : g.id)),
+        A = u.ZP.getName(s.default.getUser(null == (y = I.other_users) || null == (m = y[1]) ? true : m.id)),
+        R = Math.max((null != (v = null == (O = I.other_users) ? true : O.length) ? v : 0) - 2, 0);
       return h.intl.format(h.t.g5xyIC, {
         user: T,
         user2: A,
         count: R
       });
     case d.O7.MOBILE_NATIVE_UPDATE_AVAILABLE:
-      let D = null != (C = null == (j = _.local_id) ? true : j.split("_").pop()) ? C : "unknown";
+      let D = null != (C = null == (j = I.local_id) ? true : j.split("_").pop()) ? C : "unknown";
       return "Update to build ".concat(D, " available!");
     case d.DY.FRIEND_SUGGESTION_CREATED:
-      return o.Z.getRelationshipType(N), f.OGo.PENDING_OUTGOING, null != (x = _.body) ? x : "";
+      return o.Z.getRelationshipType(N), f.OGo.PENDING_OUTGOING, null != (x = I.body) ? x : "";
     case d.DY.GUILD_SCHEDULED_EVENT_STARTED:
-      let M = _.guild_scheduled_event_id,
+      let M = I.guild_scheduled_event_id,
         L = null != M ? l.ZP.getGuildScheduledEvent(M) : null,
         k = null == L ? true : L.name,
         G = null == (E = a.Z.getGuild(null == L ? true : L.guild_id)) ? true : E.name,
         U = (0, l.Z2)(null != L ? L : true);
-      return (0, c.Ew)(G) || (0, c.Ew)(k) || !U ? null != (S = _.body) ? S : "" : h.intl.format(h.t.AyvfXR, {
+      return (0, c.Ew)(G) || (0, c.Ew)(k) || !U ? null != (S = I.body) ? S : "" : h.intl.format(h.t.AyvfXR, {
         event_name: k,
         guild_name: G
       });
@@ -87,21 +87,21 @@ function g(e) {
         withDefault: h.t.McYRBk
       });
     case d.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:
-      return i()(null != w, "Expected application id for ".concat(_.type)), h.intl.format(h.t["BB/0vn"], {
+      return i()(null != w, "Expected application id for ".concat(I.type)), h.intl.format(h.t["BB/0vn"], {
         username: Z,
         applicationName: () => P(w)
       });
     case d.O7.INCOMING_GAME_FRIEND_REQUESTS:
-      return i()(null != w, "Expected application id for ".concat(_.type)), h.intl.format(h.t["7cqOLI"], {
+      return i()(null != w, "Expected application id for ".concat(I.type)), h.intl.format(h.t["7cqOLI"], {
         username: Z,
         applicationName: () => P(w)
       });
     case d.DY.GAME_FRIEND_REQUEST_ACCEPTED:
-      if (null == w) return _.body;
+      if (null == w) return I.body;
       return h.intl.format(h.t.Wi64vN, {
         username: Z,
         applicationName: () => P(w)
       })
   }
-  return null != (I = _.body) ? I : ""
+  return null != (_ = I.body) ? _ : ""
 }

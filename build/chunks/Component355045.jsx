@@ -101,7 +101,9 @@ let I = function(e) {
           numSubscriptions: P
         })
       }) : null]
-    }), A ? (0, r.jsx)(m.Z, {}) : null, (0, r.jsxs)("div", {
+    }), A ? (0, r.jsx)(m.Z, {
+      alwaysWhite: true
+    }) : null, (0, r.jsxs)("div", {
       className: S.guildBoostCtas,
       children: [(0, r.jsx)(l.$, {
         innerRef: I,

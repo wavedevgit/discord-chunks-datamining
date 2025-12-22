@@ -79,19 +79,19 @@ let x = Chunk473749.memo(function(e) {
   } = e, {
     hasDivider: E,
     canHaveVoiceSummary: S
-  } = i.useMemo(() => (0, g.ie)(n, x, t), [n, x, t, l]), I = i.useMemo(() => t === p.wZ ? null : n.getCategoryFromSection(t), [n, t, l]), _ = (0, d.DM)(m), {
+  } = i.useMemo(() => (0, g.ie)(n, x, t), [n, x, t, l]), _ = i.useMemo(() => t === p.wZ ? null : n.getCategoryFromSection(t), [n, t, l]), I = (0, d.DM)(m), {
     enableWaveformIcon: P
   } = (0, c.M)(m, "ChannelListSectionFooter"), N = (0, o.Wu)([f.ZP], () => {
-    if (null == I || !I.isCollapsed || !S) return [];
-    let e = I.getChannelRecords(),
+    if (null == _ || !_.isCollapsed || !S) return [];
+    let e = _.getChannelRecords(),
       t = [];
     for (let n of e) {
       if (!n.isGuildVocal()) continue;
       let e = f.ZP.isChannelOrParentOptedIn(m, n.id);
-      (!_ || e) && t.push(n)
+      (!I || e) && t.push(n)
     }
     return t
-  }, [I, S, m, _]), Z = i.useMemo(() => (0, h.c4)({
+  }, [_, S, m, I]), Z = i.useMemo(() => (0, h.c4)({
     channels: N,
     selectedChannelId: j,
     selectedVoiceChannelId: C,

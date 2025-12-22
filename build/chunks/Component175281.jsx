@@ -34,14 +34,14 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let I = {
+let _ = {
   UP: u().throttle(() => (0, Chunk460181.GN)("ddr-up"), 100),
   DOWN: u().throttle(() => (0, Chunk460181.GN)("ddr-down"), 100),
   LEFT: u().throttle(() => (0, Chunk460181.GN)("ddr-left"), 100),
   RIGHT: u().throttle(() => (0, Chunk460181.GN)("ddr-right"), 100)
 };
 
-function _(e) {
+function I(e) {
   switch (e.keyCode) {
     case C.yXg.ARROW_UP:
       return "UP";
@@ -209,7 +209,7 @@ class w extends Chunk473749.PureComponent {
       let {
         direction: t
       } = e;
-      I[t](), this.setState({
+      _[t](), this.setState({
         [t]: true
       })
     }), S(this, "componentWillLeave", e => {
@@ -240,13 +240,13 @@ class w extends Chunk473749.PureComponent {
       }]
     })), S(this, "handleKeyDown", e => {
       if (this.lastInputedKeys.push(e.keyCode), this.lastInputedKeys = this.lastInputedKeys.slice(false), this.lastInputedKeys[0] === C.yXg.H && this.lastInputedKeys[1] === C.yXg.H && this.lastInputedKeys[2] === C.yXg.ARROW_RIGHT && this.lastInputedKeys[3] === C.yXg.N && this.lastInputedKeys[4] === C.yXg.K && this.props.activateRagingDemon(), this.props.keyboardModeEnabled) return;
-      let t = _(e);
+      let t = I(e);
       null !== t && (e.stopPropagation(), e.preventDefault(), this.arrowDown({
         direction: t
       }))
     }), S(this, "handleKeyUp", e => {
       if (this.props.keyboardModeEnabled) return;
-      let t = _(e);
+      let t = I(e);
       null !== t && (e.stopPropagation(), e.preventDefault(), this.arrowUp({
         direction: t
       }))
@@ -265,7 +265,7 @@ function T(e) {
     className: l,
     children: o
   } = e, [s, c] = i.useState(t), u = i.useCallback(() => {
-    I[n](), c(true)
+    _[n](), c(true)
   }, [n]);
   return i.useEffect(() => {
     if (s) {

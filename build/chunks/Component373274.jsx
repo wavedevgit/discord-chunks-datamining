@@ -183,7 +183,7 @@ class ep extends(r = Chunk473749.PureComponent) {
         channel: a,
         category: o
       } = l;
-      return !!(0, Z.vc)(a.record.type) && (!o.isCollapsed || !o.isMuted) && !a.isMuted && !!t.isItemVisible(r, i, true) && (0, _.d)(a.record)
+      return !!(0, Z.vc)(a.record.type) && (!o.isCollapsed || !o.isMuted) && !a.isMuted && !!t.isItemVisible(r, i, true) && (0, I.d)(a.record)
     })
   }
   renderTopUnread() {
@@ -568,7 +568,7 @@ class ep extends(r = Chunk473749.PureComponent) {
             }, ei.z.GUILD_HUB_HEADER_OPTIONS);
           case ei.z.GUILD_PREMIUM_PROGRESS_BAR:
             let l = e.getRows();
-            return (0, i.jsx)(I.Z, {
+            return (0, i.jsx)(_.Z, {
               guild: r,
               withMargin: l.length > 1
             }, ei.z.GUILD_PREMIUM_PROGRESS_BAR);
@@ -666,7 +666,7 @@ class ep extends(r = Chunk473749.PureComponent) {
             }) : null]
           }, x);
         case ea.d4z.GUILD_STAGE_VOICE:
-          var _, P;
+          var I, P;
           return (0, i.jsx)(X.Z, {
             channel: C,
             guild: r,
@@ -674,7 +674,7 @@ class ep extends(r = Chunk473749.PureComponent) {
             selected: o === y.id,
             connected: c === y.id,
             collapsed: y.isCollapsed || m.isCollapsed,
-            voiceStates: null != (_ = d[y.id]) ? _ : [],
+            voiceStates: null != (I = d[y.id]) ? I : [],
             speakerVoiceStates: null != (P = h[y.id]) ? P : [],
             disableManageChannels: f,
             isFavoriteCategory: O
@@ -813,7 +813,7 @@ let eg = e => {
   l.useEffect(() => {
     null != n && S(n)
   }, [n, S]);
-  let I = (0, P.Z)(t);
+  let _ = (0, P.Z)(t);
   return (0, i.jsx)(m.Gt, {
     value: o,
     children: (0, i.jsx)(p.Z, {
@@ -825,7 +825,7 @@ let eg = e => {
           ref: O,
           selectedChannel: d,
           selectedVoiceChannel: f,
-          stageChannelSpeakerVoiceStates: I,
+          stageChannelSpeakerVoiceStates: _,
           selectedGuildId: h,
           optInEnabled: y
         }))

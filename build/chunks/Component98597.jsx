@@ -30,7 +30,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk642915 = require("./642915.js");
 
-function I(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,14 +39,14 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
@@ -95,7 +95,7 @@ function w(e) {
     tabIndex: d,
     forceShowButtons: p,
     hasChannelInfo: m = false
-  } = e, j = (0, s.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), C = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), I = (0, s.e7)([f.ZP], () => f.ZP.getActiveEventByChannel(t.id), [t.id]), P = (0, s.e7)([v.Z], () => (0, h.b)(v.Z, j, t, C)), N = (0, s.e7)([], () => (null == t ? true : t.type) === x.d4z.GUILD_VOICE ? E.intl.string(E.t["EE+P0H"]) : E.intl.string(E.t["0jeAXt"])), Z = l.useRef(null);
+  } = e, j = (0, s.e7)([O.Z], () => O.Z.getGuild(t.getGuildId())), C = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), _ = (0, s.e7)([f.ZP], () => f.ZP.getActiveEventByChannel(t.id), [t.id]), P = (0, s.e7)([v.Z], () => (0, h.b)(v.Z, j, t, C)), N = (0, s.e7)([], () => (null == t ? true : t.type) === x.d4z.GUILD_VOICE ? E.intl.string(E.t["EE+P0H"]) : E.intl.string(E.t["0jeAXt"])), Z = l.useRef(null);
   if (a || !P || t.isModeratorReportChannel()) return null;
   let w = (0, i.jsx)(u.oLu, {
     size: "xs",
@@ -125,12 +125,12 @@ function w(e) {
             } = await Promise.all([n.e("7654"), n.e("45965")]).then(n.bind(n, 560114));
             return n => {
               var l, a;
-              return (0, i.jsx)(r, (l = _({}, n), a = a = {
+              return (0, i.jsx)(r, (l = I({}, n), a = a = {
                 guild: j,
                 channel: t,
                 streamUserId: 1 === e.length ? e[0].ownerId : null,
                 source: x.t4x.GUILD_CHANNELS,
-                guildScheduledEvent: I
+                guildScheduledEvent: _
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -199,16 +199,16 @@ function A(e) {
 }
 class R extends(r = Chunk473749.PureComponent) {
   renderEditButton() {
-    return (0, Chunk54381.jsx)(Z, _({}, this.props))
+    return (0, Chunk54381.jsx)(Z, I({}, this.props))
   }
   renderInviteButton() {
-    return (0, Chunk54381.jsx)(w, _({}, this.props))
+    return (0, Chunk54381.jsx)(w, I({}, this.props))
   }
   renderRemoveSuggestionButton() {
-    return (0, Chunk54381.jsx)(T, _({}, this.props))
+    return (0, Chunk54381.jsx)(T, I({}, this.props))
   }
   renderAcceptSuggestionButton() {
-    return (0, Chunk54381.jsx)(A, _({}, this.props))
+    return (0, Chunk54381.jsx)(A, I({}, this.props))
   }
   getClassName() {
     let {
@@ -226,6 +226,6 @@ class R extends(r = Chunk473749.PureComponent) {
     return P(module, exports, require)
   }
 }
-I(R, "defaultProps", {
+_(R, "defaultProps", {
   isDefaultChannel: false
 })

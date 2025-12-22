@@ -306,9 +306,9 @@ function K() {
     }(),
     t = function(e) {
       let t = [];
-      return I.Z.getSortedPrivateChannels().forEach(n => Y(e, t, null, n.id)), T.ZP.getFlattenedGuildIds().forEach(n => {
+      return _.Z.getSortedPrivateChannels().forEach(n => Y(e, t, null, n.id)), T.ZP.getFlattenedGuildIds().forEach(n => {
         if (null == n) return;
-        let r = _.ZP.getSelectableChannelIds(n),
+        let r = I.ZP.getSelectableChannelIds(n),
           i = O.Z.getActiveJoinedUnreadThreadsForGuild(n);
         r.forEach(r => {
           var l;
@@ -332,7 +332,7 @@ function K() {
 
 function Y(e, t, n, r) {
   if (null == r) return;
-  let i = I.Z.getChannel(r);
+  let i = _.Z.getChannel(r);
   if (null == i || !S.Ec.has(i.type) && A.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
   if (i.isPrivate()) {
     if (0 === w.ZP.getMentionCount(r)) return
@@ -363,7 +363,7 @@ function Y(e, t, n, r) {
     hasMentionsOrUnreads: c,
     mentionCount: s,
     sortOrder: function(e, t, n) {
-      let r = I.Z.getChannel(t);
+      let r = _.Z.getChannel(t);
       if (b.Z.isFavorite(t)) return 0;
       if (r.isPrivate()) return 1;
       if (w.ZP.getMentionCount(t) > 0) return w.ZP.getIsMentionLowImportance(t) ? 3 : 2;

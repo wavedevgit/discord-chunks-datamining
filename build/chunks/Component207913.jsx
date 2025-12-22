@@ -93,7 +93,7 @@ function V(e) {
     size: d.EFr.SIZE_32,
     guildId: null == m ? true : m.id,
     animateOnHover: true
-  }), I = n.type !== L.d4z.GUILD_ANNOUNCEMENT || null == m, P = (0, j.x)({
+  }), _ = n.type !== L.d4z.GUILD_ANNOUNCEMENT || null == m, P = (0, j.x)({
     channel: n,
     message: t,
     user: t.author,
@@ -125,16 +125,16 @@ function V(e) {
           width: "fit-content",
           marginTop: "4px"
         },
-        children: I ? (0, r.jsx)(M.q, {
+        children: _ ? (0, r.jsx)(M.q, {
           "aria-label": "User Avatar",
           src: x,
           size: d.EFr.SIZE_32,
-          cornerIconUrl: null != m ? (0, _.EB)(m, 24) : true,
+          cornerIconUrl: null != m ? (0, I.EB)(m, 24) : true,
           cornerIconOffsetX: 4,
           cornerIconOffsetY: 3
         }) : (0, r.jsx)(M.E, {
           "aria-label": "Guild Icon",
-          src: (0, _.EB)(m, 32),
+          src: (0, I.EB)(m, 32),
           size: d.EFr.SIZE_32,
           cornerIconUrl: t.author.getAvatarURL(m.id, 24),
           cornerIconOffsetX: 4,
@@ -153,7 +153,7 @@ function V(e) {
             minWidth: 0,
             justifyContent: "space-between"
           },
-          children: [I ? (0, r.jsxs)("div", {
+          children: [_ ? (0, r.jsxs)("div", {
             className: U.usernameOuterContainer,
             children: [(0, r.jsx)("div", {
               className: U.username,
@@ -210,7 +210,7 @@ function V(e) {
               [U.unread]: s,
               [U.selected]: o
             }),
-            children: [b, !I && " \xb7 ".concat(O)]
+            children: [b, !_ && " \xb7 ".concat(O)]
           })]
         }), (0, r.jsx)(z, {
           message: t,
@@ -374,7 +374,7 @@ let K = (0, Chunk473749.memo)(function(e) {
   } = (0, s.$B)(), b = (0, c.e7)([P.Z], () => {
     if (null == h) return null;
     let e = P.Z.getChannel(l.channelId);
-    return null != e ? e : new I.nl({
+    return null != e ? e : new _.nl({
       id: l.channelId,
       guild_id: l.guildId,
       type: L.d4z.UNKNOWN,

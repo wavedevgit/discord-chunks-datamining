@@ -93,7 +93,7 @@ function b(e) {
     },
     "aria-setsize": E,
     "aria-posinset": S
-  } = e, I = function(e, t) {
+  } = e, _ = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -107,7 +107,7 @@ function b(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e.treeItemProps, ["onFocus"]), [_, P] = i.useState(false), N = i.useCallback(() => {
+  }(e.treeItemProps, ["onFocus"]), [I, P] = i.useState(false), N = i.useCallback(() => {
     o || P(true), null == j || j(true)
   }, [o, j]), Z = i.useCallback(() => {
     o || P(false), null == j || j(false)
@@ -141,7 +141,7 @@ function b(e) {
       focusProps: {
         enabled: false
       }
-    }, I), n = n = {
+    }, _), n = n = {
       role: "treeitem",
       "aria-setsize": E,
       "aria-posinset": S,
@@ -167,7 +167,7 @@ function b(e) {
             children: y
           }) : (0, r.jsx)(g, {
             folderNode: l,
-            hovered: _,
+            hovered: I,
             sorting: o
           })
         })

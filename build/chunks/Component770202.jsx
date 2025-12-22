@@ -1,7 +1,7 @@
 /** Chunk was on 67000 **/
 /** chunk id: 770202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => _
 }), require("./415506.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -123,7 +123,7 @@ class E extends Chunk98597.ZP {
   }
 }
 let S = (0, Chunk146773.B)(E),
-  I = Chunk473749.memo(function(e) {
+  _ = Chunk473749.memo(function(e) {
     let {
       channel: t,
       guild: n,

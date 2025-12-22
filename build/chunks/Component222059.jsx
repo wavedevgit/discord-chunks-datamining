@@ -139,8 +139,8 @@ function M(e) {
       inlineSpecs: D,
       tutorialId: "friends-list",
       position: "right",
-      children: (0, r.jsxs)(_.H, {
-        children: [(0, r.jsx)(I.Z, {
+      children: (0, r.jsxs)(I.H, {
+        children: [(0, r.jsx)(_.Z, {
           selected: a,
           hovered: O,
           className: R.pill
@@ -181,8 +181,8 @@ function L() {
     p = (0, Chunk899740.q)(),
     b = require + Chunk864682 + Chunk365113,
     m = Chunk460181 === Chunk864682 && Chunk864682 > 0 && require + Chunk365113 === 0,
-    I = Chunk774343.Z.getHomeLink();
-  return Chunk155409 && (I = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk54381.jsx)(M, {
+    _ = Chunk774343.Z.getHomeLink();
+  return Chunk155409 && (_ = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk54381.jsx)(M, {
     selected: module,
     user: Chunk550385,
     selectedChannelId: Chunk944486.Z.getChannelId(Chunk981631.ME),

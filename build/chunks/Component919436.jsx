@@ -278,9 +278,9 @@ let L = Chunk473749.forwardRef(function(e, t) {
     }),
     E = a === n,
     S = false,
-    I = false;
-  (E || x && p) && (S = u === P.WtW.VOICE, I = u === P.WtW.VIDEO);
-  let _ = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
+    _ = false;
+  (E || x && p) && (S = u === P.WtW.VOICE, _ = u === P.WtW.VIDEO);
+  let I = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
   return (0, i.jsx)(M, A(T({}, e), {
     ref: t,
     channelName: r,
@@ -288,10 +288,10 @@ let L = Chunk473749.forwardRef(function(e, t) {
     selected: O === n,
     badge: j,
     audio: S,
-    video: I,
+    video: _,
     stream: f,
     isCurrentUserInThisDMCall: E,
-    size: _,
+    size: I,
     treeItemProps: l,
     statusIndicatorsEnabled: x
   }))
