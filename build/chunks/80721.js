@@ -34,7 +34,7 @@ async function d() {
         subscriptionId: module.subscription_id,
         memberType: module.member_type,
         subscriptionStatus: module.subscription_status,
-        currentPeriodEnd: module.current_period_end
+        currentPeriodEnd: new Date(module.current_period_end)
       }
     }) : Chunk570140.Z.dispatch({
       type: "PREMIUM_GROUP_MEMBERSHIP_NOT_FOUND"

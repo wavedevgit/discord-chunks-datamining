@@ -203,7 +203,7 @@ let I = e => {
     if (d || l === m.bZ.FETCHING || l === m.bZ.UNKNOWN) return (0, r.jsx)(s.OR, {
       isHorizontal: true
     });
-    let y = (0, _.x)({
+    let y = (0, _.xf)({
       sender: E,
       channel: n,
       isSender: b,

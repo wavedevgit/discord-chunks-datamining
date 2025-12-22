@@ -13,8 +13,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk594928 = require("./594928.js"),
   Chunk172416 = require("./172416.js"),
   Chunk695349 = require("./695349.js"),
-  Chunk241986 = require("./241986.js"),
   Chunk340625 = require("./340625.js"),
+  Chunk260720 = require("./260720.js"),
   Chunk119850 = require("./119850.js"),
   Chunk22189 = require("./22189.jsx"),
   Chunk391110 = require("./391110.js"),
@@ -111,12 +111,10 @@ let I = e => {
       j = c.JH.useExperiment({
         location: "PremiumPerks"
       }).enabled,
-      M = p.Z.useExperiment({
+      M = f.Z.useExperiment({
         location: "PremiumPerks"
       }).enabled,
-      k = (0, f.Z)({
-        location: "PremiumPerks"
-      }),
+      k = (0, p.QL)(),
       U = (0, g.ZM)({
         perksCards: R,
         variant: n,
@@ -127,7 +125,7 @@ let I = e => {
         showProfileWidgets: L,
         showDisplayNameStyles: j,
         recurring3PPromotionExperiment: M,
-        premiumGroupExperiment: k
+        showPremiumGroup: k
       }),
       G = U.some(e => null != e.pillText);
     return (0, r.jsxs)("div", {

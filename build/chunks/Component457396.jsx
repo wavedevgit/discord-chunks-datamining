@@ -28,13 +28,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk367074 = require("./367074.js"),
   Chunk695349 = require("./695349.js"),
   Chunk931118 = require("./931118.js"),
-  Chunk241986 = require("./241986.js"),
   Chunk963590 = require("./963590.js"),
   Chunk767870 = require("./767870.jsx"),
   Chunk331972 = require("./331972.js"),
   Chunk622909 = require("./622909.js"),
   Chunk639119 = require("./639119.js"),
   Chunk715130 = require("./715130.js"),
+  Chunk260720 = require("./260720.js"),
   Chunk498920 = require("./498920.jsx"),
   Chunk655525 = require("./655525.jsx"),
   Chunk244989 = require("./244989.jsx"),
@@ -56,7 +56,7 @@ var Chunk54381 = require("./54381.js"),
 let X = e => {
     let {
       selected: t
-    } = e, n = (0, o.e7)([_.default], () => _.default.getCurrentUser()), r = (0, o.e7)([E.Z], () => E.Z.getPremiumTypeSubscription()), i = (0, Z.N)(), l = (0, A.N)(), a = (0, C.Vi)(), s = (0, z.V)(), c = (0, y.Qo)(n, r), u = (0, o.e7)([I.Z], () => I.Z.getCreatedAtOverride()), d = t || null != i || null != l || a || null != s || c, p = null != u ? u : null == n ? true : n.createdAt;
+    } = e, n = (0, o.e7)([_.default], () => _.default.getCurrentUser()), r = (0, o.e7)([E.Z], () => E.Z.getPremiumTypeSubscription()), i = (0, A.N)(), l = (0, x.N)(), a = (0, C.Vi)(), s = (0, z.V)(), c = (0, y.Qo)(n, r), u = (0, o.e7)([I.Z], () => I.Z.getCreatedAtOverride()), d = t || null != i || null != l || a || null != s || c, p = null != u ? u : null == n ? true : n.createdAt;
     return d || null != n && null != p && Date.now() - p.getTime() > 12096e5
   },
   $ = e => {
@@ -91,17 +91,15 @@ let X = e => {
       ed = (0, y.Qo)(eo, es),
       ep = (0, y.M5)(eo, q.PremiumTypes.TIER_2),
       ef = (0, l.JA)("nitro"),
-      eg = (0, Z.N)(),
-      eh = (0, A.N)(),
-      em = (0, x.$)(),
+      eg = (0, A.N)(),
+      eh = (0, x.N)(),
+      em = (0, P.$)(),
       eb = (0, S.W)(),
       e_ = (0, C.Vi)(),
       eE = (0, k.HI)({
         trialOffer: eg
       }),
-      eO = (0, N.Z)({
-        location: "NitroTabButton"
-      }),
+      eO = (0, w.QL)(),
       ev = (0, z.V)(),
       ey = (0, k.eW)(),
       eI = (0, M._h)(),
@@ -122,7 +120,7 @@ let X = e => {
         showAfterTimestamp: eA.valueOf(),
         cooldownDurationMs: 0
       }),
-      eR = (0, j.Z)({
+      eR = (0, N.Z)({
         location: "NitroTabButton"
       }),
       eD = (null == eg ? true : eg.trial_id) === q.a7,
@@ -134,7 +132,7 @@ let X = e => {
     (0, g.Kl)() && ((ej || eT && !eD) && ek.push(s.z.NITRO_TAB_BADGE_OFFER_REMINDER), eI && ek.push(s.z.RECURRING_3P_PROMOTION_POPOVER), e_ && ek.push(s.z.BOGO_2025_NITRO_TAB_BADGE), eR && ek.push(s.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), eb && ek.push(s.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eM && ek.push(s.z.GAME_WIDGETS_PREMIUM_TAB_BADGE));
     let [eG, eH] = (0, m.US)(ek, true, true);
     eP && eU.push(s.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), eO && eU.push(s.z.PREMIUM_GROUP_POPOVER);
-    let [eB, eV] = (0, m.US)(eU, true, true), eF = (0, w.H)(a.I.PREMIUM_TAB), [ez, eY] = (0, m.TE)(null != eF && "premiumTab" === eF.properties.properties.oneofKind ? s.z.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, null != (et = null == eF ? true : eF.id) ? et : "", true, true);
+    let [eB, eV] = (0, m.US)(eU, true, true), eF = (0, Z.H)(a.I.PREMIUM_TAB), [ez, eY] = (0, m.TE)(null != eF && "premiumTab" === eF.properties.properties.oneofKind ? s.z.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, null != (et = null == eF ? true : eF.id) ? et : "", true, true);
     if (i.useEffect(() => {
         true === en && null != eG && eH(Q.L.AUTO_DISMISS), true === en && null != eB && eV(Q.L.AUTO_DISMISS), true === en && null != ez && eY(Q.L.AUTO_DISMISS)
       }, [eH, en, eG, eV, eB, ez, eY]), !X({
@@ -146,7 +144,7 @@ let X = e => {
         has_premium: ed
       }), null != eG && eH(Q.L.USER_DISMISS), null != ez && eY(Q.L.USER_DISMISS)
     };
-    if (ex === q.a$.NONE || eb || (I = 7, n = (0, r.jsx)(P.Z, {
+    if (ex === q.a$.NONE || eb || (I = 7, n = (0, r.jsx)(j.Z, {
         className: "",
         startsAt: eA,
         endsAt: eZ,

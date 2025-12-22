@@ -7,8 +7,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
-  Chunk241986 = require("./241986.js"),
   Chunk639119 = require("./639119.js"),
+  Chunk260720 = require("./260720.js"),
   Chunk973007 = require("./973007.jsx"),
   Chunk74538 = require("./74538.js"),
   Chunk987209 = require("./987209.jsx"),
@@ -28,7 +28,7 @@ function v(e) {
   } = e, {
     setSelectedSkuId: i,
     activeSubscription: a,
-    startedPaymentFlowWithPaymentSourcesRef: s,
+    startedPaymentFlowWithPaymentSourcesRef: o,
     setSelectedPlanId: u,
     priceOptions: y,
     defaultPlanId: j,
@@ -36,7 +36,7 @@ function v(e) {
   } = (0, p.JL)(), {
     isGift: O,
     claimableRewards: S
-  } = (0, d.wD)(), x = O && null != S && S.length > 0, P = (0, o.N)(l);
+  } = (0, d.wD)(), x = O && null != S && S.length > 0, P = (0, s.N)(l);
   return (0, r.jsx)(b, {
     selectSku: e => (function(e) {
       let {
@@ -77,7 +77,7 @@ function v(e) {
       handleStepChange: t,
       isGift: O,
       userTrialOffer: P,
-      startedPaymentFlowWithPaymentSources: s.current,
+      startedPaymentFlowWithPaymentSources: o.current,
       setSelectedPlanId: u,
       defaultPlanId: j
     }),
@@ -111,12 +111,10 @@ function b(e) {
     selectSku: t,
     onClose: n,
     isGift: l,
-    priceOptions: o,
+    priceOptions: s,
     showPromotionalGiftBanner: d,
     onSelectPremiumGroup: p
-  } = e, m = (0, s.Z)({
-    location: "PremiumPaymentSKUSelectStep"
-  }) && !l;
+  } = e, m = (0, o.x9)() && !l;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.xBx, {
       "data-migration-pending": true,
@@ -141,7 +139,7 @@ function b(e) {
       children: (0, r.jsx)(u.wz, {
         onSelectSku: e => t((0, c.Wz)(e)),
         onSelectPremiumGroup: p,
-        priceOptions: o,
+        priceOptions: s,
         showPromotionalGiftBanner: d
       })
     }) : (0, r.jsx)(a.hzk, {
@@ -150,7 +148,7 @@ function b(e) {
       children: (0, r.jsx)(u.ZP, {
         onSelectSku: e => t((0, c.Wz)(e)),
         isGift: l,
-        priceOptions: o,
+        priceOptions: s,
         showPromotionalGiftBanner: d
       })
     })]

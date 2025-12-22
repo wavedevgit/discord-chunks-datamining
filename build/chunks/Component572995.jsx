@@ -20,8 +20,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk526167 = require("./526167.js"),
   Chunk63063 = require("./63063.js"),
   Chunk283066 = require("./283066.js"),
-  Chunk241986 = require("./241986.js"),
   Chunk340625 = require("./340625.js"),
+  Chunk260720 = require("./260720.js"),
   Chunk469165 = require("./469165.jsx"),
   Chunk282793 = require("./282793.js"),
   Chunk981631 = require("./981631.js"),
@@ -173,9 +173,7 @@ let eE = (e, t) => em({
       location: "useBentoBoxes"
     }).enabled, N = Chunk340625.Z.useExperiment({
       location: "useBentoBoxes"
-    }), P = (0, Chunk241986.Z)({
-      location: "useBentoBoxes"
-    }), R = (0, Chunk473749.useCallback)(() => {
+    }), P = (0, Chunk260720.QL)(), R = (0, Chunk473749.useCallback)(() => {
       (0, Chunk518596.openUserSettings)(Chunk313789.n.PROFILE_PANEL, {
         section: Chunk981631.oAB.PROFILE_CUSTOMIZATION,
         analyticsLocations: module

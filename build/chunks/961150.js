@@ -42,7 +42,10 @@ let p = e => {
   }),
   g = (e, t) => {
     let n = e === i.bF.MEMBER,
-      a = (0, c.Z)(n),
+      a = (0, c.Z)({
+        useCachedData: true,
+        fetch: n
+      }),
       s = (0, r.e7)([o.Z], () => o.Z.getPremiumGroupSubscription());
     return e === i.bF.UNSPECIFIED ? null : {
       subheaderString: m(e, a, s),

@@ -2,106 +2,128 @@
 /** chunk id: 260720, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  x: () => f
+  QL: () => E,
+  x9: () => g,
+  xf: () => h
 });
-var Chunk313789 = require("./313789.js"),
+var Chunk442837 = require("./442837.js"),
+  Chunk313789 = require("./313789.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk594174 = require("./594174.js"),
+  Chunk78839 = require("./78839.js"),
   Chunk51144 = require("./51144.js"),
+  Chunk241986 = require("./241986.js"),
+  Chunk474936 = require("./474936.js"),
   Chunk282793 = require("./282793.js"),
   Chunk981631 = require("./981631.js"),
   Chunk353149 = require("./353149.js"),
   Chunk388032 = require("./388032.jsx");
-let d = (e, t) => {
+let m = (e, t) => {
     var n;
     if (null == t) return null;
     let r = null == (n = t.recipients) ? true : n.find(t => t !== e.id),
-      i = a.default.getUser(r);
-    return null == i ? null : (0, o.XM)(i)
+      i = o.default.getUser(r);
+    return null == i ? null : (0, l.XM)(i)
   },
-  f = e => {
+  h = e => {
     let t, n, {
-        sender: a,
-        channel: f,
-        isSender: p,
-        inviteState: _
+        sender: r,
+        channel: o,
+        isSender: s,
+        inviteState: c
       } = e,
-      m = (0, s.sO)();
-    if (p) {
-      let e = d(a, f);
+      u = (0, d.sO)();
+    if (s) {
+      let e = m(r, o);
       if (null == e) return null;
-      let o = u.intl.format(c.default.MkcFjx, {
+      let s = _.intl.format(p.default.MkcFjx, {
         receiverName: e,
-        premiumGroupProductName: m
+        premiumGroupProductName: u
       });
-      switch (_) {
-        case s.bZ.ACCEPTED:
-          t = u.intl.formatToPlainString(c.default["5uwv8J"], {
-            premiumGroupProductName: m
-          }), n = u.intl.formatToPlainString(c.default["W7e/z1"], {
+      switch (c) {
+        case d.bZ.ACCEPTED:
+          t = _.intl.formatToPlainString(p.default["5uwv8J"], {
+            premiumGroupProductName: u
+          }), n = _.intl.formatToPlainString(p.default["W7e/z1"], {
             receiverName: e
           });
           break;
-        case s.bZ.REMOVED:
-        case s.bZ.NOT_FOUND:
-        case s.bZ.ERROR:
-          t = u.intl.formatToPlainString(c.default.YLvraS, {
-            premiumGroupProductName: m
-          }), n = u.intl.format(c.default.BHxlIR, {
-            premiumGroupProductName: m,
+        case d.bZ.REMOVED:
+        case d.bZ.NOT_FOUND:
+        case d.bZ.ERROR:
+          t = _.intl.formatToPlainString(p.default.YLvraS, {
+            premiumGroupProductName: u
+          }), n = _.intl.format(p.default.BHxlIR, {
+            premiumGroupProductName: u,
             onClick: () => {
-              (0, i.openUserSettings)(r.n.SUBSCRIPTIONS_PANEL, {
-                section: l.oAB.SUBSCRIPTIONS
+              (0, a.openUserSettings)(i.n.SUBSCRIPTIONS_PANEL, {
+                section: f.oAB.SUBSCRIPTIONS
               })
             }
           });
           break;
-        case s.bZ.PENDING:
+        case d.bZ.PENDING:
         default:
-          t = u.intl.formatToPlainString(c.default["5uwv8J"], {
-            premiumGroupProductName: m
-          }), n = u.intl.formatToPlainString(c.default["AmE0B/"], {
+          t = _.intl.formatToPlainString(p.default["5uwv8J"], {
+            premiumGroupProductName: u
+          }), n = _.intl.formatToPlainString(p.default["AmE0B/"], {
             receiverName: e
           })
       }
       return {
-        message: o,
+        message: s,
         header: t,
         body: n
       }
     } else {
-      let e = (0, o.XM)(a),
-        r = u.intl.format(c.default["51Kv/4"], {
+      let e = (0, l.XM)(r),
+        i = _.intl.format(p.default["51Kv/4"], {
           senderName: e,
-          premiumGroupProductName: m,
-          helpCenterLink: s.j3
+          premiumGroupProductName: u,
+          helpCenterLink: d.j3
         });
-      switch (_) {
-        case s.bZ.ACCEPTED:
-          t = u.intl.string(c.default.ssge1y), n = u.intl.formatToPlainString(c.default.fTAcw3, {
+      switch (c) {
+        case d.bZ.ACCEPTED:
+          t = _.intl.string(p.default.ssge1y), n = _.intl.formatToPlainString(p.default.fTAcw3, {
             senderName: e
           });
           break;
-        case s.bZ.REMOVED:
-        case s.bZ.NOT_FOUND:
-        case s.bZ.ERROR:
-          t = u.intl.formatToPlainString(c.default["AmLUw+"], {
-            premiumGroupProductName: m
-          }), n = u.intl.formatToPlainString(c.default["7XAuyg"], {
-            premiumGroupProductName: m
+        case d.bZ.REMOVED:
+        case d.bZ.NOT_FOUND:
+        case d.bZ.ERROR:
+          t = _.intl.formatToPlainString(p.default["AmLUw+"], {
+            premiumGroupProductName: u
+          }), n = _.intl.formatToPlainString(p.default["7XAuyg"], {
+            premiumGroupProductName: u
           });
           break;
-        case s.bZ.PENDING:
+        case d.bZ.PENDING:
         default:
-          t = u.intl.string(c.default.ssge1y), n = u.intl.formatToPlainString(c.default.MkcdX8, {
+          t = _.intl.string(p.default.ssge1y), n = _.intl.formatToPlainString(p.default.MkcdX8, {
             senderName: e,
-            premiumGroupProductName: m
+            premiumGroupProductName: u
           })
       }
       return {
-        message: r,
+        message: i,
         header: t,
         body: n
       }
     }
+  },
+  g = () => {
+    var e;
+    let t = (0, Chunk241986.Z)({
+        location: "PremiumGroupPurchase"
+      }),
+      n = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumSubscription());
+    return !!exports && (null == require || Chunk474936.No.has(null != (e = require.premiumPlanIdFromItems) ? module : "") && !require.isPurchasedExternally)
+  },
+  E = () => {
+    let e = (0, Chunk241986.Z)({
+        location: "PremiumGroupPurchase"
+      }),
+      t = g(),
+      n = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
+    return !!module && !!exports && (null == require || !require.isPremiumWithPremiumGroup())
   }

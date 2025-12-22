@@ -67,7 +67,7 @@ function E() {
 }
 
 function b() {
-  return !d.membershipData.isFetching && !d.membershipData.hasFetched && (Chunk570140.Z.wait(() => (0, Chunk80721.WH)().catch(Chunk981631.VqG)), true)
+  return !d.membershipData.isFetching && (Chunk570140.Z.wait(() => (0, Chunk80721.WH)().catch(Chunk981631.VqG)), true)
 }
 
 function y() {
@@ -139,23 +139,6 @@ class C extends(r = Chunk442837.ZP.Store) {
   }
   hasFetchedMembership() {
     return null !== d.membershipData.data
-  }
-  getPremiumGroupSubscriptionId() {
-    var e, t, n;
-    let r = null == (e = Chunk78839.Z.getPremiumGroupSubscription()) ? true : module.id;
-    return null != r ? r : null != (n = null == (t = d.membershipData.data) ? true : exports.subscriptionId) ? require : null
-  }
-  getPremiumGroupSubscriptionStatus() {
-    var e, t, n;
-    let r = null == (e = Chunk78839.Z.getPremiumGroupSubscription()) ? true : module.status;
-    return null != r ? r : null != (n = null == (t = d.membershipData.data) ? true : exports.subscriptionStatus) ? require : null
-  }
-  getPremiumGroupCurrentPeriodEnd() {
-    var e, t;
-    let n = null == (e = Chunk78839.Z.getPremiumGroupSubscription()) ? true : module.currentPeriodEnd;
-    if (null != require) return require;
-    let r = null == (t = d.membershipData.data) ? true : exports.currentPeriodEnd;
-    return null != r && "" !== r ? new Date(r) : null
   }
   getNumUsedSeats() {
     return null == d.membersData.data ? 0 : d.membersData.data.members.length
