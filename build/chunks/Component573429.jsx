@@ -36,7 +36,7 @@ function c(e) {
         } = e;
         return (0, r.jsx)(s.ZP, {
           onClose: t,
-          onSelect: t
+          onSelect: true
         })
       },
       children: e => (0, r.jsx)(l.hU, function(e) {
