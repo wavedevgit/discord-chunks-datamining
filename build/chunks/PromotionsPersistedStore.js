@@ -69,7 +69,7 @@ function C(e) {
     promotions: t,
     consumedInboundPromotionId: n
   } = e;
-  t.forEach(e => {
+  y = {}, t.forEach(e => {
     let t = s.Z.createFromServer(e);
     if (true === (0, c.pD)({
         promotionPartner: t.outboundTitle
