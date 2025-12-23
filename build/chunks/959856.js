@@ -179,9 +179,6 @@ class N extends Chunk47770.Z {
   }
   setAsyncVideoInputDeviceInit(e) {}
   setAsyncClipsSourceDeinit(e) {}
-  getSupportedVideoCodecs(e) {
-    e([])
-  }
   getCodecCapabilities(e) {
     e("")
   }
@@ -253,9 +250,6 @@ class N extends Chunk47770.Z {
   getLoopback() {
     return null != this.loopback
   }
-  setH264Enabled(e) {}
-  setAv1Enabled(e) {}
-  setH265Enabled(e) {}
   getCodecSurvey() {
     return Promise.reject(Error("getCodecSurvey is not implemented on MediaEngine of browsers."))
   }

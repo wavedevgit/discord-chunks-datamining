@@ -271,9 +271,6 @@ class S extends Chunk47770.Z {
     var t, n;
     null == (t = (n = (0, d.zS)()).setAsyncClipsSourceDeinit) || t.call(n, e)
   }
-  getSupportedVideoCodecs(e) {
-    (0, d.zS)().getSupportedVideoCodecs(e)
-  }
   getCodecCapabilities(e) {
     (0, d.zS)().getCodecCapabilities(e)
   }
@@ -451,21 +448,6 @@ class S extends Chunk47770.Z {
   }
   getLoopback() {
     returnfalse
-  }
-  setH264Enabled(e) {
-    (0, d.zS)().setTransportOptions({
-      h264Enabled: e
-    })
-  }
-  setAv1Enabled(e) {
-    (0, d.zS)().setTransportOptions({
-      av1Enabled: e
-    })
-  }
-  setH265Enabled(e) {
-    (0, d.zS)().setTransportOptions({
-      h265Enabled: e
-    })
   }
   getCodecSurvey() {
     return null != this.codecSurvey ? Promise.resolve(this.codecSurvey) : new Promise((e, t) => {

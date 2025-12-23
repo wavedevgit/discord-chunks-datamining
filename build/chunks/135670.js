@@ -61,9 +61,6 @@ class c extends Chunk47770.Z {
   }
   setAsyncVideoInputDeviceInit(e) {}
   setAsyncClipsSourceDeinit(e) {}
-  getSupportedVideoCodecs(e) {
-    e([])
-  }
   getCodecCapabilities(e) {
     e("")
   }
@@ -126,9 +123,6 @@ class c extends Chunk47770.Z {
   getLoopback() {
     returnfalse
   }
-  setH264Enabled(e) {}
-  setAv1Enabled(e) {}
-  setH265Enabled(e) {}
   setExperimentFlag(e, t) {}
   startAecDump() {}
   stopAecDump() {}

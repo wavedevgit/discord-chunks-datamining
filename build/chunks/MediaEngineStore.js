@@ -874,7 +874,7 @@ function nl() {
 
 function nc() {
   let e = tX();
-  e4.setAudioInputDevice(module.inputDeviceId), e4.setAudioOutputDevice(module.outputDeviceId), t3(), e4.setInputVolume(module.inputVolume), e4.setOutputVolume(module.outputVolume), e4.setH264Enabled(e$), e4.setAv1Enabled(e$), e4.setH265Enabled(e$), e4.setAecDump(module.aecDumpEnabled), e4.setSidechainCompression(module.sidechainCompression), e4.setSidechainCompressionStrength(module.sidechainCompressionStrength), e4.setAudioInputBypassSystemProcessing(module.bypassSystemInputProcessing)
+  e4.setAudioInputDevice(module.inputDeviceId), e4.setAudioOutputDevice(module.outputDeviceId), t3(), e4.setInputVolume(module.inputVolume), e4.setOutputVolume(module.outputVolume), e4.setAecDump(module.aecDumpEnabled), e4.setSidechainCompression(module.sidechainCompression), e4.setSidechainCompressionStrength(module.sidechainCompressionStrength), e4.setAudioInputBypassSystemProcessing(module.bypassSystemInputProcessing)
 }
 
 function nu() {
