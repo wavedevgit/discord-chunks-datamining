@@ -101,8 +101,8 @@ function I(e) {
     })) ? e : null
   }, [I, v, P]), {
     product: _,
-    purchase: A
-  } = (0, d.Z)(null == w ? true : w.skuId), Z = i.useRef(null), k = h.ZP.canUseCollectibles(t), N = true === x ? (null == I ? true : I.skuId) === (null == p ? true : p.skuId) : (null == I ? true : I.skuId) === (null == x ? true : x.skuId), T = i.useCallback(e => {
+    purchase: Z
+  } = (0, d.Z)(null == w ? true : w.skuId), A = i.useRef(null), k = h.ZP.canUseCollectibles(t), N = true === x ? (null == I ? true : I.skuId) === (null == p ? true : p.skuId) : (null == I ? true : I.skuId) === (null == x ? true : x.skuId), T = i.useCallback(e => {
     S(e)
   }, [S]), D = i.useCallback(e => {
     b(), (0, a.mK)({
@@ -131,14 +131,14 @@ function I(e) {
         user: t,
         guild: n,
         pendingProfileEffect: I,
-        selectedProfileEffectRef: Z,
+        selectedProfileEffectRef: A,
         onSelect: T,
         onOpenShop: D
       }), (0, r.jsx)(j.Z, {
         user: t,
         pendingProfileEffectRecord: w,
         product: _,
-        purchase: A,
+        purchase: Z,
         guild: n
       })]
     }), (0, r.jsx)(C, {
@@ -149,7 +149,7 @@ function I(e) {
       onClose: b,
       onOpenShop: D,
       product: _,
-      purchase: A,
+      purchase: Z,
       canUsePremiumCollectibles: k,
       selectedProfileEffect: I,
       disableApplyButton: N

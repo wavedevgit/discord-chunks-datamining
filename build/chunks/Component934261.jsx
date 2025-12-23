@@ -18,8 +18,8 @@ var Chunk392711 = require("./392711.js"),
   Chunk643879 = require("./643879.js"),
   Chunk350327 = require("./350327.js"),
   Chunk687158 = require("./687158.js"),
+  Chunk113334 = require("./113334.js"),
   Chunk706454 = require("./706454.js"),
-  Chunk695346 = require("./695346.js"),
   Chunk265159 = require("./265159.jsx"),
   Chunk25990 = require("./25990.js"),
   Chunk594174 = require("./594174.js"),
@@ -51,19 +51,19 @@ let S = e => {
       pendingProfileEffectRecord: t,
       product: n,
       purchase: u
-    } = e, d = (0, l.e7)([v.default], () => v.default.getCurrentUser()), p = (0, l.e7)([s.Z], () => s.Z.getProduct(null == t ? true : t.skuId)), m = (0, l.e7)([x.default], () => x.default.locale), g = O.ZP.canUseCollectibles(d), b = (0, c.qS)(u), h = (0, c.G1)(n), j = !g && b, y = (null == u ? true : u.expiresAt) != null ? (0, P.TD)(Date.now(), u.expiresAt) : null, I = (0, a.ag)(u), S = (0, a.kd)(p), _ = (0, f.M)(!h || g), A = w(j, h, g, _), Z = null == u || j;
+    } = e, d = (0, l.e7)([v.default], () => v.default.getCurrentUser()), p = (0, l.e7)([s.Z], () => s.Z.getProduct(null == t ? true : t.skuId)), m = (0, l.e7)([h.default], () => h.default.locale), g = O.ZP.canUseCollectibles(d), b = (0, c.qS)(u), x = (0, c.G1)(n), j = !g && b, y = (null == u ? true : u.expiresAt) != null ? (0, P.TD)(Date.now(), u.expiresAt) : null, I = (0, a.ag)(u), S = (0, a.kd)(p), _ = (0, f.M)(!x || g), Z = w(j, x, g, _), A = null == u || j;
     return null != t ? (0, r.jsx)("div", {
-      className: Z ? C.effectDescriptionBorderWithGradient : C.effectDescriptionNoGradient,
+      className: A ? C.effectDescriptionBorderWithGradient : C.effectDescriptionNoGradient,
       children: (0, r.jsxs)("div", {
         className: C.effectDescriptionContainer,
         children: [(0, r.jsx)(o.Text, {
           color: "text-strong",
           variant: "text-sm/semibold",
           children: (0, i.isEmpty)(I) ? S : I
-        }), Z ? (0, r.jsx)(o.Text, {
+        }), A ? (0, r.jsx)(o.Text, {
           color: "text-default",
           variant: "text-sm/normal",
-          children: A
+          children: Z
         }) : (0, r.jsxs)(r.Fragment, {
           children: [null != y && (0, r.jsx)(o.Text, {
             variant: "text-xxs/normal",
@@ -110,14 +110,14 @@ let S = e => {
       guild: a
     } = e, {
       pendingGlobalName: f,
-      pendingNickname: x,
+      pendingNickname: h,
       pendingPronouns: v,
       pendingBio: P,
       pendingBanner: E,
       pendingAvatar: w,
       pendingAvatarDecoration: _,
-      pendingThemeColors: A,
-      pendingAccentColor: Z
+      pendingThemeColors: Z,
+      pendingAccentColor: A
     } = (0, l.cj)([u.Z, y.Z], () => I({
       pendingNickname: true,
       pendingGlobalName: true,
@@ -126,9 +126,9 @@ let S = e => {
       user: i,
       guild: a,
       pendingGlobalName: f,
-      pendingNickname: x,
+      pendingNickname: h,
       pendingPronouns: v,
-      pendingBio: h.dN.useSetting() && null != P ? d.ZP.parse(true, P).content : P,
+      pendingBio: (0, x.Z)() && null != P ? d.ZP.parse(true, P).content : P,
       pendingBanner: E,
       useLargeBanner: true,
       pendingAvatar: (0, m.SD)({
@@ -136,8 +136,8 @@ let S = e => {
         image: w
       }),
       pendingAvatarDecoration: _,
-      pendingThemeColors: A,
-      pendingAccentColor: Z,
+      pendingThemeColors: Z,
+      pendingAccentColor: A,
       pendingProfileEffect: null != o ? o : null,
       hideFakeActivity: D,
       canUsePremiumCustomization: N,
