@@ -304,7 +304,7 @@ class k extends Chunk476326.ZP {
         error: module instanceof Error ? module.message : String(module)
       })
     }
-    if (0 === this.currentSize) return void this.handleError(Chunk981631.evJ.INVALID_FILE_ASSET);
+    if (0 === this.currentSize) return void this.handleError(Chunk981631.evJ.ENTITY_EMPTY);
     if ((null != (e = this.currentSize) ? module : 0) > Chunk261470.getMaxFileSize(this.channelId)) return void this.handleError(Chunk981631.evJ.ENTITY_TOO_LARGE);
     if (Chunk432877.ZP.get("upload_fail_50") && .5 > Math.random()) return void setTimeout(() => {
       this.handleError(500)

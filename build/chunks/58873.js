@@ -28,8 +28,11 @@ function s(e) {
     body: o.intl.formatToPlainString(o.t["qqyp/e"], {
       limit: a.dN1
     })
-  }), true) : (n === a.evJ.ENTITY_EMPTY && r.Z.show({
+  }), true) : n === a.evJ.ENTITY_EMPTY ? (r.Z.show({
     title: o.intl.string(o.t.B3vFdU),
     body: o.intl.string(o.t["9ZpT2C"])
-  }), false)
+  }), true) : n === a.evJ.INVALID_FILE_ASSET && (r.Z.show({
+    title: o.intl.string(o.t.B3vFdU),
+    body: o.intl.string(o.t.zMEjJg)
+  }), true)
 }
