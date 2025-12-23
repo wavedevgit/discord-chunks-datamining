@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk663389 = require("./663389.js"),
   Chunk309739 = require("./309739.jsx"),
   Chunk293389 = require("./293389.jsx"),
-  Chunk327885 = require("./327885.jsx"),
+  Chunk794704 = require("./794704.jsx"),
   Chunk326528 = require("./326528.js"),
   Chunk332325 = require("./332325.js"),
   Chunk981631 = require("./981631.js"),
@@ -32,10 +32,7 @@ function g() {
         case Chunk332325.Z.CLIPS:
           return (0, Chunk54381.jsx)(Chunk574755.Z, {});
         case Chunk332325.Z.OVERLAY:
-          return (0, Chunk54381.jsx)(Chunk327885.Z, {
-            className: Chunk103554.body,
-            showHeader: false
-          });
+          return (0, Chunk54381.jsx)(Chunk794704.ZP, {});
         case Chunk332325.Z.ACTIVITY_PRIVACY:
           return (0, Chunk54381.jsx)(Chunk309739.ZP, {});
         case Chunk332325.Z.MY_GAMES:

@@ -75,7 +75,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk389650 = require("./389650.jsx"),
   Chunk649157 = require("./649157.jsx"),
   Chunk593648 = require("./593648.jsx"),
-  Chunk327885 = require("./327885.jsx"),
+  Chunk794704 = require("./794704.jsx"),
   Chunk595242 = require("./595242.jsx"),
   Chunk463153 = require("./463153.jsx"),
   Chunk36192 = require("./36192.jsx"),
@@ -1613,7 +1613,7 @@ let eZ = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eD.oAB.OVERLAY,
         searchableTitles: [eL.intl.string(eL.t["9cb1Uz"]), eL.intl.string(eL.t.HcoRu0)],
         label: eL.intl.string(eL.t["9cb1Uz"]),
-        element: eh.Z,
+        element: eh.ZP,
         predicate: () => !eq && eK
       },
       [eR.s6.CHANGELOG]: {

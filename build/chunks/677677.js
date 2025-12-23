@@ -33,6 +33,7 @@ module.exports = {
   keybindContainer: "_9d98d3a9398a6f7d-keybindContainer",
   voiceSettingsContainer: "_9d98d3a9398a6f7d-voiceSettingsContainer",
   voiceWidgetContainer: "_9d98d3a9398a6f7d-voiceWidgetContainer",
+  widgetSettingsContainer: "_9d98d3a9398a6f7d-widgetSettingsContainer",
   widgetContainer: "_9d98d3a9398a6f7d-widgetContainer",
   select: "_9d98d3a9398a6f7d-select",
   widgetHeaderContainer: "_9d98d3a9398a6f7d-widgetHeaderContainer",
