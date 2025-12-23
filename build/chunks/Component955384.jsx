@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 955384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => g
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -25,7 +25,27 @@ function p(e, t, n) {
 function f(e) {
   e.stopPropagation()
 }
-class h extends Chunk473749.PureComponent {
+
+function h() {
+  let e = window.getSelection();
+  if (null == module) return {
+    selection: null,
+    rangeStartContainer: null,
+    rangeStartOffset: null
+  };
+  let t = module.getRangeAt(0);
+  return {
+    selection: module,
+    rangeStartContainer: exports.startContainer,
+    rangeStartOffset: exports.startOffset
+  }
+}
+
+function m(e, t, n) {
+  let i = document.createRange();
+  i.setStart(t, n), i.collapse(true), e.removeAllRanges(), e.addRange(i)
+}
+class g extends Chunk473749.PureComponent {
   render() {
     let {
       className: e,
@@ -120,6 +140,28 @@ class h extends Chunk473749.PureComponent {
           onCancel: n
         } = this.props;
         e.preventDefault(), e.stopPropagation(), n(t.id)
+      }
+      if (e.key === c.vn.HOME && !e.shiftKey) {
+        e.preventDefault();
+        let {
+          selection: t,
+          rangeStartContainer: n,
+          rangeStartOffset: i
+        } = h();
+        if (null == t || null == n || null == i) return;
+        m(t, n, 0)
+      }
+      if (e.key === c.vn.END && !e.shiftKey) {
+        e.preventDefault();
+        let {
+          selection: t,
+          rangeStartContainer: n,
+          rangeStartOffset: i
+        } = h();
+        if (null == t || null == n || null == i) return;
+        let r = n.textContent;
+        if (null == r) return;
+        m(t, n, r.length)
       }
     })
   }
