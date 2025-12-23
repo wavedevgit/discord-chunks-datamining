@@ -551,7 +551,7 @@ function t9() {
       } = (0, Y.A)("MediaEngineStore");
       e.setExperimentFlag(eL.V8.BROWSER_HEVC, t)
     }
-    if ((0, eh.isWindows)() && (0, en.C)("MediaEngineStore").enabled && e.setExperimentFlag(eL.V8.WMF_GPU_ENCODE, true), e4.setHasFullbandPerformance((0, w.Z)()), e.setRemoteAudioHistory(1e3), (0, N.Z)(r)) {
+    if ((0, eh.isWindows)() && (null == tF ? true : tF.startsWith("AMD")) && (0, en.C)("MediaEngineStore").enabled && e.setExperimentFlag(eL.V8.WMF_GPU_ENCODE, true), e4.setHasFullbandPerformance((0, w.Z)()), e.setRemoteAudioHistory(1e3), (0, N.Z)(r)) {
       let {
         enableViewerClipping: t
       } = et.Z.getCurrentConfig({
