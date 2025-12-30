@@ -9,7 +9,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
-  Chunk620792 = require("./620792.js"),
+  Chunk554916 = require("./554916.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk930295 = require("./930295.jsx"),
@@ -97,9 +97,9 @@ function R() {
   let s = Chunk120356 / 2 - o;
   switch (module) {
     case "start":
-      return Chunk620792;
+      return Chunk554916;
     case "end":
-      return -Chunk620792;
+      return -Chunk554916;
     default:
       return 0
   }

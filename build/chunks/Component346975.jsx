@@ -504,8 +504,8 @@ function eP(e) {
     getItemKey: e8,
     renderGridSection: e9,
     renderGridItem: e2,
-    getGridSectionHeight: e7,
-    getSectionProps: e5,
+    getGridSectionHeight: e5,
+    getSectionProps: e7,
     handleGridFocus: te
   } = function(e) {
     let {
@@ -714,11 +714,11 @@ function eP(e) {
             columns: eA,
             sections: eU,
             getItemKey: e8,
-            getSectionHeight: e7,
+            getSectionHeight: e5,
             getItemHeight: tl,
             renderSection: e9,
             renderItem: e2,
-            getSectionProps: e5,
+            getSectionProps: e7,
             onScroll: y ? tt : true,
             chunkSize: 350
           }, tc, e), B)

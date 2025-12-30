@@ -894,10 +894,10 @@ function tp(e) {
     j = !v && (h || b),
     {
       name: C
-    } = (0, X.p6)(e6.h7.AUDIO_INPUT),
+    } = (0, X.p6)(e2.h7.AUDIO_INPUT),
     {
       name: y
-    } = (0, X.p6)(e6.h7.AUDIO_OUTPUT);
+    } = (0, X.p6)(e2.h7.AUDIO_OUTPUT);
   !v && h ? (t = e9.intl.format(e9.t["18wnuD"], {
     inputDeviceName: C
   }), n = e9.intl.formatToPlainString(e9.t["18wnuD"], {
@@ -1022,7 +1022,7 @@ function tf(e) {
     }),
     {
       name: ea
-    } = (0, X.p6)(e6.h7.AUDIO_INPUT),
+    } = (0, X.p6)(e2.h7.AUDIO_INPUT),
     {
       showRefreshedAudioContextMenu: ei
     } = (0, e$.e)({
@@ -1289,7 +1289,7 @@ function th(e) {
     }
   } = (0, p.l)(f ? "undeafen" : "deafen"), j = n ? x.Vm4 : h, {
     name: C
-  } = (0, X.p6)(e6.h7.AUDIO_OUTPUT), {
+  } = (0, X.p6)(e2.h7.AUDIO_OUTPUT), {
     showRefreshedAudioContextMenu: y
   } = (0, e$.e)({
     location: "HeadphonesButton"
