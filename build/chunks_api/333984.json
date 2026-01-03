@@ -1,1 +1,1 @@
-{"id":"333984","type":"store","data":{"name":"SpamMessageRequestStore","functions":[],"events":[]},"fromModule":{"id":"web.js"}}
+{"id":"333984","type":"store","data":{"name":"SpamMessageRequestStore","functions":[{"name":"initialize","args":[]},{"name":"loadCache","args":[]},{"name":"takeSnapshot","args":[]},{"name":"getSpamChannelIds","args":[]},{"name":"getSpamChannelsCount","args":[]},{"name":"isSpam","args":["e"]},{"name":"isAcceptedOptimistic","args":["e"]},{"name":"isReady","args":[]},{"name":"constructor","args":[]}],"events":[]},"fromModule":{"id":"web.js"}}
