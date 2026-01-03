@@ -16,7 +16,7 @@ function getStoreClassFunctionsAndDispatchEvents(code) {
       // get functions of the store
       ClassDeclaration(node) {
         // check if it's store class
-        if (node?.superClass?.right?.property?.name?.endsWith?.("Store") || node?.superClass?.right?.property?.name?.endsWith?.("Z")) {
+        if (node?.superClass?.right?.property?.name?.endsWith?.("Store") || node?.superClass?.right?.property?.name === "Z") {
           for (let defintion of node.body.body) {
             functions.push({
               name: defintion.key.name,
