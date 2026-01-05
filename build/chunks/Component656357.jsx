@@ -98,7 +98,7 @@ function Q(e) {
       timestampSec: 0,
       duration: 10
     }
-  }, s.X), e$ = (0, S.km)(e => e.setVideoProgress), eJ = (0, S.km)(e => e.muted), e0 = (0, S.km)(e => e.volume), e1 = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), e2 = (0, o.useRef)(null), e4 = (0, o.useRef)(null), e8 = o.useRef(true), e3 = (null == (t = en.userStatus) ? true : t.completedAt) != null, [e9, e7] = o.useState(null), [e6, e5] = o.useState(false), [te, tt] = o.useState(false), [tn, tr] = o.useState(null), to = e3 ? null != (v = null == (n = e2.current) ? true : n.duration) ? v : 0 : Math.max(eX.maxTimestampSec, ey.progressSeconds), tl = o.useMemo(() => (0, _.T)({
+  }, s.X), e$ = (0, S.km)(e => e.setVideoProgress), eJ = (0, S.km)(e => e.muted), e0 = (0, S.km)(e => e.volume), e1 = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), e2 = (0, o.useRef)(null), e4 = (0, o.useRef)(null), e8 = o.useRef(true), e3 = (null == (t = en.userStatus) ? true : t.completedAt) != null, [e9, e6] = o.useState(null), [e7, e5] = o.useState(false), [te, tt] = o.useState(false), [tn, tr] = o.useState(null), to = e3 ? null != (v = null == (n = e2.current) ? true : n.duration) ? v : 0 : Math.max(eX.maxTimestampSec, ey.progressSeconds), tl = o.useMemo(() => (0, _.T)({
     quest: en,
     location: F.dr.VIDEO_MODAL
   }), [en]), ti = (0, k.$R)(e3, eX, ey), [ta, ts] = o.useState(w._H.MD), tc = {
@@ -153,7 +153,7 @@ function Q(e) {
     } = (0, y.Z)({
       getCurrentVideoTime: tD,
       isPlaying: eO === w.rq.PLAYING,
-      isMetadataLoaded: e6,
+      isMetadataLoaded: e7,
       isInitialSeekComplete: te,
       onAnalytics: t_,
       emitIntervalMs: 4e3,
@@ -162,7 +162,7 @@ function Q(e) {
     tR = o.useCallback(e => {
       if (tl.info("[QV] | updatePlayerState | playerState: ".concat(e)), eh(e), null != e2.current) switch (e) {
         case w.rq.PLAYING:
-          e2.current.paused && tg(e9), e7(null), e2.current.play();
+          e2.current.paused && tg(e9), e6(null), e2.current.play();
           break;
         case w.rq.PAUSED:
           e2.current.paused || tT(), e2.current.pause(), eK.current = false;
@@ -181,7 +181,7 @@ function Q(e) {
     e3 || (null == (t = en.userStatus) ? true : t.enrolledAt) == null || (tl.info("[QV] sendServerProgressUpdate: ".concat(e)), (0, P.FI)(en, e)), tE()
   }, [e3, en, tl, tE]);
   o.useEffect(() => {
-    $ !== d.Dvm.HIDDEN && $ !== d.Dvm.EXITING && $ !== d.Dvm.EXITED && (null == $ || !eE || ev || e3) && (!ep || ef || e3) || null == e2.current || eO !== w.rq.PLAYING || (tl.info("[QV] | Pausing video | playerState: ".concat(eO, ", parentTransitionState: ").concat($, ", visible: ").concat(ev, ", focused: ").concat(ef, ", isQuestCompleted: ").concat(e3)), tR(w.rq.PAUSED), e3 || e7(b.yE.LOST_FOCUS))
+    $ !== d.Dvm.HIDDEN && $ !== d.Dvm.EXITING && $ !== d.Dvm.EXITED && (null == $ || !eE || ev || e3) && (!ep || ef || e3) || null == e2.current || eO !== w.rq.PLAYING || (tl.info("[QV] | Pausing video | playerState: ".concat(eO, ", parentTransitionState: ").concat($, ", visible: ").concat(ev, ", focused: ").concat(ef, ", isQuestCompleted: ").concat(e3)), tR(w.rq.PAUSED), e3 || e6(b.yE.LOST_FOCUS))
   }, [$, ef, ep, ev, eE, eO, e3, tR, tI, tl]);
   let [tN, tA] = o.useState(false), tw = o.useRef(null), tk = o.useRef(performance.now()), tL = o.useCallback(() => {
     null != tw.current && clearTimeout(tw.current), eO === w.rq.PLAYING && (tw.current = setTimeout(() => {
@@ -233,7 +233,7 @@ function Q(e) {
           tU(0), tR(w.rq.PLAYING);
           break;
         case w.rq.PLAYING:
-          tR(w.rq.PAUSED), e7(b.yE.PAUSE_BUTTON);
+          tR(w.rq.PAUSED), e6(b.yE.PAUSE_BUTTON);
           break;
         default:
           tR(w.rq.PLAYING)
