@@ -562,7 +562,7 @@ class tl extends Chunk473749.PureComponent {
         selectedParticipant: e,
         premiumIndicatorEnabled: t
       } = this.props;
-      return (null == e ? true : e.type) !== e7.fO.STREAM ? null : (0, r.jsx)(V.Z, {
+      return (null == e ? true : e.type) !== e3.fO.STREAM ? null : (0, r.jsx)(V.Z, {
         size: e0.ZP.Sizes.LARGE,
         participant: e,
         showQuality: true,
@@ -817,7 +817,7 @@ let ta = (0, Chunk112724.Z)(tl),
     }, [D, c, P, R]);
     let L = (0, p.e7)([I.ZP], () => I.ZP.getCurrentEmbeddedActivity()),
       M = (0, p.e7)([I.ZP], () => I.ZP.getActivityPanelMode()),
-      k = null != L && !(0, S.Z)(null == c ? true : c.id) && M === e3.Ez.PANEL,
+      k = null != L && !(0, S.Z)(null == c ? true : c.id) && M === e7.Ez.PANEL,
       G = (0, p.e7)([eY.Z], () => null != c && c.isVocalThread() && !d().isEmpty(eY.Z.getVoiceStatesForChannel(c.id)), [c]),
       H = null != c && c.isPrivate() && !k && j,
       V = (null == c ? true : c.isGuildVocal()) || H || G,
@@ -827,7 +827,7 @@ let ta = (0, Chunk112724.Z)(tl),
       } = (0, u.TH)(),
       Y = (0, p.e7)([ep.Z], () => null != c && ep.Z.isLurking(c.guild_id), [c]),
       q = (0, p.e7)([eD.Z], () => eD.Z.hasSeen(null == c ? true : c.guild_id, Y), [c, Y]),
-      Q = (0, p.e7)([N.Z, I.ZP], () => null != I.ZP.getConnectedActivityLocation() && I.ZP.getActivityPanelMode() === e3.Ez.PANEL ? I.ZP.getFocusedLayout() === e3.MI.NO_CHAT ? e4.AEg.NO_CHAT : e4.AEg.NORMAL : null != s ? N.Z.getLayout(s) : e4.AEg.NORMAL, [s]),
+      Q = (0, p.e7)([N.Z, I.ZP], () => null != I.ZP.getConnectedActivityLocation() && I.ZP.getActivityPanelMode() === e7.Ez.PANEL ? I.ZP.getFocusedLayout() === e7.MI.NO_CHAT ? e4.AEg.NO_CHAT : e4.AEg.NORMAL : null != s ? N.Z.getLayout(s) : e4.AEg.NORMAL, [s]),
       X = (0, p.e7)([N.Z], () => null != c ? N.Z.getSelectedParticipant(c.id) : null),
       J = (0, Z.$5)(c),
       $ = (0, ed.Z)(null == O ? true : O.id),

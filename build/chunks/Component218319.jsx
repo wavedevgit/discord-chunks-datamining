@@ -18,13 +18,13 @@ var Chunk54381 = require("./54381.js"),
   Chunk174604 = require("./174604.jsx"),
   Chunk302175 = require("./302175.jsx"),
   Chunk626135 = require("./626135.js"),
-  Chunk724884 = require("./724884.jsx"),
   Chunk355045 = require("./355045.jsx"),
   Chunk394769 = require("./394769.jsx"),
   Chunk555932 = require("./555932.jsx"),
   Chunk808189 = require("./808189.jsx"),
   Chunk362948 = require("./362948.jsx"),
   Chunk383881 = require("./383881.jsx"),
+  Chunk998857 = require("./998857.jsx"),
   Chunk917699 = require("./917699.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -105,16 +105,16 @@ function N(e) {
             color: "always-white",
             variant: "display-lg",
             children: C.intl.string(C.t.N4sqzL)
-          }), (0, r.jsx)(E.Z, {
+          }), (0, r.jsx)(g.Z, {
             guild: n,
             closeLayer: U,
             onCtaVisibilityChange: R
+          }), (0, r.jsx)(b.Z, {
+            guild: n
           }), (0, r.jsx)(y.Z, {
             guild: n
-          }), (0, r.jsx)(O.Z, {
-            guild: n
           })]
-        }), (0, r.jsx)(S.O, {})]
+        }), (0, r.jsx)(v.O, {})]
       }), (0, r.jsx)("div", {
         className: A.middleBodyContentWrapper,
         children: (0, r.jsx)(m.Z, {
@@ -126,11 +126,11 @@ function N(e) {
         className: A.lowerBody,
         children: [(0, r.jsxs)("div", {
           className: A.lowerBodyContentWrapper,
-          children: [(0, r.jsx)(v.Z, {
+          children: [(0, r.jsx)(O.Z, {
             className: A.tierComparisonTable,
             guild: n
-          }), (0, r.jsx)(g.Z, {}), (0, r.jsx)(I.Z, {})]
-        }), (0, r.jsx)(S.A, {}), (0, r.jsx)("div", {
+          }), (0, r.jsx)(S.Z, {}), (0, r.jsx)(I.Z, {})]
+        }), (0, r.jsx)(v.A, {}), (0, r.jsx)("div", {
           className: A.lowerBodyBackgroundImage
         })]
       }), (0, r.jsx)(o.$, {
@@ -141,7 +141,7 @@ function N(e) {
           className: A.persistentCtaSpacer
         })
       })]
-    }), (0, r.jsx)(b.Z, {
+    }), (0, r.jsx)(E.Z, {
       guild: n,
       isVisible: !P,
       closeLayer: U
