@@ -115,7 +115,7 @@ function eg(e, t) {
   }
   return i
 }
-let em = e => {
+let eh = e => {
     var {
       selected: t
     } = e, n = eg(e, ["selected"]);
@@ -136,7 +136,7 @@ let em = e => {
       }, n, l))
     }) : null
   },
-  eh = e => {
+  em = e => {
     var {
       selected: t
     } = e, n = eg(e, ["selected"]);
@@ -149,10 +149,10 @@ let em = e => {
       } = k.w.useConfig({
         location: "Friends Tab"
       }),
-      [m, h] = (0, P.bf)(o && f ? p.z.GIFTING_INTENT_FRIENDS_TAB_BADGE : null, {
+      [h, m] = (0, P.bf)(o && f ? p.z.GIFTING_INTENT_FRIENDS_TAB_BADGE : null, {
         cooldownDurationMs: U.n3
       }),
-      E = m === p.z.GIFTING_INTENT_FRIENDS_TAB_BADGE;
+      E = h === p.z.GIFTING_INTENT_FRIENDS_TAB_BADGE;
     i.useEffect(() => {
       E && (0, T.h)({
         name: s.ImpressionNames.GIFT_INTENT_BADGE,
@@ -166,7 +166,7 @@ let em = e => {
         let e;
         E ? (er.default.track(el.rMx.GIFT_INTENT_BADGE_CLICKED, {
           gift_intent_type: es.hX.FRIEND_ANNIVERSARY
-        }), e = el.pJs.ALL, O.Z.setSection(el.pJs.ALL), h(eo.L.TAKE_ACTION)) : e = en.ZP.getState().section, (0, S.Z)({
+        }), e = el.pJs.ALL, O.Z.setSection(el.pJs.ALL), m(eo.L.TAKE_ACTION)) : e = en.ZP.getState().section, (0, S.Z)({
           tab_opened: e
         })
       },
@@ -299,7 +299,7 @@ let em = e => {
       className: ed.familyCenterButtonContainer,
       children: (0, r.jsx)(v.bU, {
         onClick: () => {
-          (0, m.openModalLazy)(async () => {
+          (0, h.openModalLazy)(async () => {
             let {
               default: e
             } = await n.e("44153").then(n.bind(n, 760949));
@@ -355,7 +355,7 @@ let eC = Chunk473749.memo(function(e) {
     shouldShowMessageRequestsRow: p,
     shouldShowFamilyCenterRow: f,
     selectedChannelId: g,
-    path: m
+    path: h
   } = e, b = i.useRef(null), E = i.useRef(null), O = i.useRef(null), v = i.useRef(null), I = (0, A.b5)("PrivateChannels"), C = null;
   return c ? C = (0, r.jsx)(V.F, {
     targetElementRef: v
@@ -380,29 +380,29 @@ let eC = Chunk473749.memo(function(e) {
           size: "sm",
           onClick: ey,
           text: ec.intl.format(ec.t.fH9FBy, {
-            tooltipHook: (e, t) => (0, r.jsx)(h.Z, {
+            tooltipHook: (e, t) => (0, r.jsx)(m.Z, {
               children: e
             }, t)
           })
         })
       })
     }), (0, r.jsxs)(y.Z, ef(ep({}, e), {
-      version: m,
+      version: h,
       selectedChannelId: g,
       listScrollerRef: O,
-      children: [(0, r.jsx)(eh, {
-        selected: null != m ? m === el.Z5c.FRIENDS : l === el.Z5c.FRIENDS
-      }, "friends"), I ? (0, r.jsx)(em, {
-        selected: null != m ? m === el.Z5c.ICYMI : l === el.Z5c.ICYMI
+      children: [(0, r.jsx)(em, {
+        selected: null != h ? h === el.Z5c.FRIENDS : l === el.Z5c.FRIENDS
+      }, "friends"), I ? (0, r.jsx)(eh, {
+        selected: null != h ? h === el.Z5c.ICYMI : l === el.Z5c.ICYMI
       }, "icymi") : null, n && t ? (0, r.jsx)(eb, {
-        selected: null == m ? null != l && l.startsWith(el.Z5c.APPLICATION_LIBRARY) : m.startsWith(el.Z5c.APPLICATION_LIBRARY),
+        selected: null == h ? null != l && l.startsWith(el.Z5c.APPLICATION_LIBRARY) : h.startsWith(el.Z5c.APPLICATION_LIBRARY),
         hideGameUpdateProgressIndicator: l === el.Z5c.APPLICATION_LIBRARY
       }, "library") : null, p ? (0, r.jsx)(eE, {
-        selected: null == m ? null != l && l.startsWith(el.Z5c.MESSAGE_REQUESTS) : m === el.Z5c.MESSAGE_REQUESTS
+        selected: null == h ? null != l && l.startsWith(el.Z5c.MESSAGE_REQUESTS) : h === el.Z5c.MESSAGE_REQUESTS
       }, "message-requests") : null, s ? (0, r.jsxs)("div", {
         children: [(0, r.jsx)(F.g, {
           nitroTabButtonRef: v,
-          selected: null == m ? o : m.startsWith(el.Z5c.APPLICATION_STORE),
+          selected: null == h ? o : h.startsWith(el.Z5c.APPLICATION_STORE),
           route: el.Z5c.APPLICATION_STORE,
           locationState: {
             analyticsSource: {
@@ -413,7 +413,7 @@ let eC = Chunk473749.memo(function(e) {
           }
         }), C]
       }, "nitro-tab-group") : null, (0, r.jsx)(N.i, {
-        selected: m === el.Z5c.COLLECTIBLES_SHOP || (null == l ? true : l.startsWith(el.Z5c.COLLECTIBLES_SHOP)),
+        selected: h === el.Z5c.COLLECTIBLES_SHOP || (null == l ? true : l.startsWith(el.Z5c.COLLECTIBLES_SHOP)),
         listItemRef: E,
         locationState: {
           analyticsSource: {
@@ -423,9 +423,9 @@ let eC = Chunk473749.memo(function(e) {
           }
         }
       }, "discord-shop"), f ? (0, r.jsx)(eO, {
-        selected: null != l && l.startsWith(el.Z5c.FAMILY_CENTER) || null != m && m.startsWith(el.Z5c.FAMILY_CENTER)
+        selected: null != l && l.startsWith(el.Z5c.FAMILY_CENTER) || null != h && h.startsWith(el.Z5c.FAMILY_CENTER)
       }, "family-center") : null, (0, r.jsx)(Y.Z, {
-        selected: null == m ? null != l && l.startsWith(el.Z5c.QUEST_HOME_V2) : m === el.Z5c.QUEST_HOME_V2
+        selected: null == h ? null != l && l.startsWith(el.Z5c.QUEST_HOME_V2) : h === el.Z5c.QUEST_HOME_V2
       }, "quests"), (0, r.jsx)(eS, {}, "section-divider-top"), (0, r.jsx)(x.Z, {}, "frequent-friends")]
     }))]
   })
@@ -468,9 +468,9 @@ function eT() {
     }),
     f = (0, Chunk93237.eW)(),
     g = (0, Chunk675957._h)(),
-    m = [];
+    h = [];
   (0, Chunk211644.Kl)() && (Chunk692547 && Chunk952265.push(Chunk704215.z.REFERRAL_PROGRAM_POPOVER), Chunk970683 && Chunk952265.push(Chunk704215.z.RECURRING_3P_PROMOTION_POPOVER));
-  let [h, b] = (0, Chunk243778.US)(Chunk952265, true, true), _ = (0, Chunk28476.a)(), E = function() {
+  let [m, b] = (0, Chunk243778.US)(Chunk952265, true, true), _ = (0, Chunk28476.a)(), E = function() {
     let e = Chunk695346.Ex.useSetting(),
       t = (0, Chunk880257.Z)();
     returntrue === module && true === exports

@@ -582,7 +582,7 @@ class eu extends(i = Chunk473749.PureComponent) {
     })
   }
   handleAddFriend(e) {
-    this.props.onClose(), C.Z.sendRequest({
+    this.props.onClose(), y.Z.sendRequest({
       discordTag: Y.ZP.getUserTag(e, {
         identifiable: "always"
       }),
@@ -670,15 +670,15 @@ class eu extends(i = Chunk473749.PureComponent) {
       let e = this.searchBarRef.current;
       null == e || e.focus()
     }), ei(this, "focusResult", e => {
-      y.Z.select(e)
+      C.Z.select(e)
     }), ei(this, "handleSelect", e => {
       let {
         results: t,
         channel: n
       } = this.props;
-      null == e ? y.Z.clear(null == n ? true : n.id) : null != t && this.handleClick(t[e].user.id)
+      null == e ? C.Z.clear(null == n ? true : n.id) : null != t && this.handleClick(t[e].user.id)
     }), ei(this, "handleSelectionChange", e => {
-      y.Z.select(e);
+      C.Z.select(e);
       let t = this.scrollerRef.current;
       null != t && t.scrollToIndex({
         section: 0,
@@ -689,7 +689,7 @@ class eu extends(i = Chunk473749.PureComponent) {
       let {
         channel: t
       } = this.props, n = (0, E.v_)(t);
-      y.Z.search(e, null == t ? true : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
+      C.Z.search(e, null == t ? true : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
         G.default.track($.rMx.SEARCH_USER_LIST_STARTED, el(er({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
           entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -698,10 +698,10 @@ class eu extends(i = Chunk473749.PureComponent) {
       }, 500)
     }), ei(this, "handleRemoveTag", e => {
       let t = Array.from(this.props.selectedUsers);
-      y.Z.removeUser(t[e])
+      C.Z.removeUser(t[e])
     }), ei(this, "handleRemoveUser", e => {
       e.forEach(e => {
-        y.Z.removeUser(e)
+        C.Z.removeUser(e)
       }), this.forceFocus()
     }), ei(this, "handleClick", e => {
       let {
@@ -709,7 +709,7 @@ class eu extends(i = Chunk473749.PureComponent) {
         query: n,
         channel: i
       } = this.props;
-      t.has(e) ? y.Z.removeUser(e) : this.getRemaining() > 0 && (y.Z.addUser(e), n.length > 0 && y.Z.clear(null == i ? true : i.id)), this.forceFocus()
+      t.has(e) ? C.Z.removeUser(e) : this.getRemaining() > 0 && (C.Z.addUser(e), n.length > 0 && C.Z.clear(null == i ? true : i.id)), this.forceFocus()
     }), ei(this, "handleAddFriendNavigation", () => {
       g.Z.transitionToSection($.pJs.ADD_FRIEND, {
         explicit: true
@@ -839,7 +839,7 @@ function ed(e) {
     analyticsLocations: s
   } = (0, j.ZP)(O.Z.NEW_GROUP_DM_INVITE_MODAL);
   if (!(0, I.a)(O.Z.NEW_GROUP_DM_INVITE_MODAL)) return null;
-  let c = (0, _.pT)(Array.from(t), B.default, H.Z);
+  let c = (0, _.pT)(Array.from(t), B.default, F.Z);
   return (0, r.jsxs)("div", {
     className: en.customizationContainer,
     children: [(0, r.jsx)(Z.B, {
@@ -870,12 +870,12 @@ function ep(e) {
   var {
     channel: t
   } = e, n = ea(e, ["channel"]);
-  let i = (0, u.cj)([L.Z, k.Z, F.Z], () => {
+  let i = (0, u.cj)([k.Z, L.Z, H.Z], () => {
       let e;
-      return null != t && null != (e = k.Z.getInvite(t.id)) && e.isExpired() && (e = null), el(er({}, L.Z.getState()), {
+      return null != t && null != (e = L.Z.getInvite(t.id)) && e.isExpired() && (e = null), el(er({}, k.Z.getState()), {
         invite: e,
-        hideDiscriminator: F.Z.hidePersonalInformation,
-        hideInstantInvites: F.Z.hideInstantInvites
+        hideDiscriminator: H.Z.hidePersonalInformation,
+        hideInstantInvites: H.Z.hideInstantInvites
       })
     }),
     l = (0, u.e7)([B.default], () => {
@@ -934,8 +934,8 @@ function eh(e) {
     popoutAlign: h = "right",
     subscribeToGlobalHotkey: m = false,
     location: g
-  } = e, b = l.useRef(null), y = null != s ? s : null == i ? p.kL_ : p.ejJ, {
-    showModal: C,
+  } = e, b = l.useRef(null), C = null != s ? s : null == i ? p.kL_ : p.ejJ, {
+    showModal: y,
     renderPopout: v,
     toggleVisible: x,
     popoutOpen: O,
@@ -949,8 +949,8 @@ function eh(e) {
   }), S = (0, u.e7)([B.default], () => B.default.getUser(null == i ? true : i.getRecipientId()));
   return null != (t = null == S ? true : S.bot) && t || null != (n = null == S ? true : S.isProvisional) && n ? null : j ? (0, r.jsx)(J.ZP.Icon, {
     ref: b,
-    onClick: C,
-    icon: y,
+    onClick: y,
+    icon: C,
     className: o,
     iconClassName: a,
     tooltip: c,
@@ -970,7 +970,7 @@ function eh(e) {
     children: e => (0, r.jsx)(J.ZP.Icon, el(er({}, e), {
       ref: b,
       onClick: x,
-      icon: y,
+      icon: C,
       className: o,
       iconClassName: a,
       tooltip: c,
@@ -996,14 +996,14 @@ function em(e) {
       toggleVisible: m,
       popoutOpen: g,
       setPopoutOpen: b,
-      inBornThisNamedExperiment: y
+      inBornThisNamedExperiment: C
     } = ef({
       initialPopoutOpen: false,
       channel: t,
       location: "PrivateChannelRecipientsInviteTextButton",
       subscribeToGlobalHotkey: c
     });
-  return y ? (0, r.jsx)(p.Button, el(er({}, u), {
+  return C ? (0, r.jsx)(p.Button, el(er({}, u), {
     onClick: f,
     variant: "primary",
     buttonRef: d,

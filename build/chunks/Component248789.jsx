@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 248789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Y: () => y
+  Y: () => C
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -49,19 +49,19 @@ function b(e, t) {
   }), e
 }
 
-function y(e) {
+function C(e) {
   let {
     channelId: t,
-    warningId: y,
-    senderId: C
+    warningId: C,
+    senderId: y
   } = e, v = r.useCallback(() => {
-    (0, u.T)(t, [y])
-  }, [t, y]), x = (0, a.e7)([c.Z], () => c.Z.isBlocked(C)), O = r.useMemo(() => ({
+    (0, u.T)(t, [C])
+  }, [t, C]), x = (0, a.e7)([c.Z], () => c.Z.isBlocked(y)), O = r.useMemo(() => ({
     channelId: t,
-    warningId: y,
-    senderId: C,
+    warningId: C,
+    senderId: y,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2
-  }), [t, y, C]);
+  }), [t, C, y]);
   r.useEffect(() => {
     (0, p.KQ)(b(g({}, O), {
       viewName: p.pb.SAFETY_WARNING_BANNER
@@ -85,9 +85,9 @@ function y(e) {
             onClose: l
           } = n;
           return (0, i.jsx)(e, {
-            otherUserId: C,
+            otherUserId: y,
             channelId: t,
-            warningId: y,
+            warningId: C,
             warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
             transitionState: r,
             onClose: l
@@ -96,7 +96,7 @@ function y(e) {
       }, {
         modalKey: h.X_
       }), E(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
-    }, [t, C, y, E]),
+    }, [t, y, C, E]),
     S = r.useCallback(() => {
       v(), E(p.NM.USER_BANNER_BLOCK_CONFIRM)
     }, [v, E]),
@@ -121,16 +121,16 @@ function y(e) {
               null == l || l(), E(p.NM.USER_BANNER_BLOCK_CANCEL)
             },
             onClose: l,
-            userId: C,
+            userId: y,
             channelId: t
           })
         }
       })
-    }, [S, _, C, t, E]);
+    }, [S, _, y, t, E]);
   return (0, i.jsx)(f.Q, {
     channelId: t,
-    warningId: y,
-    senderId: C,
+    warningId: C,
+    senderId: y,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
     header: m.intl.string(m.t.ZzlB5p),
     description: m.intl.string(m.t["D1aU+h"]),

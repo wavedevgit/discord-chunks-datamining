@@ -1,12 +1,13 @@
-/** Chunk was on 40184 **/
-/** chunk id: 996606, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 996606, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./388685.js"), require("./472816.js"), require("./794429.js"), require("./361932.js"), require("./187205.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk70097 = require("./70097.jsx"),
   Chunk785925 = require("./785925.js"),
@@ -15,117 +16,120 @@ var Chunk54381 = require("./54381.js"),
   Chunk130692 = require("./130692.js"),
   Chunk354459 = require("./354459.js"),
   Chunk246447 = require("./246447.js");
-let m = e => {
-  let {
-    seats: t,
-    claimedSeat: n,
-    participant: l,
-    participants: m,
-    channel: g,
-    flip: b,
-    handleHover: y
-  } = e, C = r.useRef(null), v = r.useRef(new Set), x = (0, p.Z)(l), {
-    setAsset: O,
-    sampleAsset: E,
-    animationState: j,
-    updateAnimationState: S,
-    characterAssets: _
-  } = (0, u.o)(null == x ? true : x.name), P = r.useMemo(() => Object.values(null != _ ? _ : {}).flat(), [_]), I = m.find(e => e.type === f.fO.USER && e.user.id === l.userId), Z = r.useMemo(() => m.filter(e => {
-    let t;
-    return t = l.userId, e.type === f.fO.USER && e.speaking && e.user.id !== t
-  }), [m, l.userId]), T = r.useMemo(() => Z.flatMap(e => {
-    let n = t.find(t => t.claimedBy === e.user.id);
-    return null != n ? [n] : []
-  }), [Z, t]), [N, A] = r.useState(false), [w, M] = r.useState(0), [R, D] = r.useState(0);
-  return r.useEffect(() => {
-    A(false)
-  }, [x, P]), r.useEffect(() => {
-    let e = v.current;
-    return () => {
-      [...e].forEach(e => window.clearTimeout(e))
-    }
-  }, []), r.useEffect(() => {
-    let e = C.current;
-    if (null == e || true === N) return;
-    let t = E(),
-      n = P.findIndex(e => e === t);
-    O(t), D(n), [...e.children].forEach((e, t) => {
-      "VIDEO" === e.nodeName && (e.currentTime = 0, t === n && (e.play(), A(true)))
-    })
-  }, [N, P, E, O]), r.useEffect(() => {
-    (null == I ? true : I.speaking) ? S(u.O.TALKING): j === u.O.TALKING && S(u.O.IDLE)
-  }, [I, j, S]), r.useEffect(() => {
-    T.some(e => {
-      switch (n.id) {
-        case 1:
-        case 2:
-        case 3:
-          return (null == e ? true : e.id) < n.id;
-        case 4:
-        case 5:
-        case 6:
-          return (null == e ? true : e.id) > n.id;
-        default:
-          returnfalse
+let m = 13e3,
+  h = (e, t) => e.type === p.fO.USER && e.speaking && e.user.id !== t,
+  g = e => {
+    let {
+      seats: t,
+      claimedSeat: n,
+      participant: a,
+      participants: g,
+      channel: E,
+      flip: b,
+      handleHover: y,
+      enableAnimations: O = true
+    } = e, v = i.useRef(null), S = i.useRef(new Set), I = (0, f.Z)(a), {
+      setAsset: T,
+      sampleAsset: C,
+      animationState: A,
+      updateAnimationState: N,
+      characterAssets: P
+    } = (0, u.o)(null == I ? true : I.name), R = i.useMemo(() => Object.values(null != P ? P : {}).flat(), [P]), w = g.find(e => e.type === p.fO.USER && e.user.id === a.userId), D = i.useMemo(() => g.filter(e => h(e, a.userId)), [g, a.userId]), x = i.useMemo(() => D.flatMap(e => {
+      let n = t.find(t => t.claimedBy === e.user.id);
+      return null != n ? [n] : []
+    }), [D, t]), [L, j] = i.useState(false), [M, k] = i.useState(0), [U, G] = i.useState(0);
+    return i.useEffect(() => {
+      j(false)
+    }, [I, R]), i.useEffect(() => {
+      let e = S.current;
+      return () => {
+        [...e].forEach(e => window.clearTimeout(e))
       }
-    }) && w + 13e3 < Date.now() && (S(u.O.HEAD_TURN), M(Date.now()))
-  }, [T, n, w, S]), (0, i.jsxs)(o.P3F, {
-    className: h.wrapper,
-    style: {
-      width: x.width,
-      top: x.offset.top,
-      left: b ? -x.offset.left : x.offset.left
-    },
-    onMouseEnter: () => y(true),
-    onMouseLeave: () => y(false),
-    onClick: e => {
-      e.preventDefault(), e.stopPropagation();
-      let t = (l.avatar + 1) % d.eJ.length;
-      0 === t && (t = 1), c.ZP.update(g.id, {
-        avatar: t,
-        seat: null == n ? true : n.id
+    }, []), i.useEffect(() => {
+      if (!O) return;
+      let e = v.current;
+      if (null == e || true === L) return;
+      let t = C(),
+        n = R.findIndex(e => e === t);
+      T(t), G(n), [...e.children].forEach((e, t) => {
+        if ("VIDEO" !== e.nodeName) return;
+        let r = e;
+        r.currentTime = 0, t === n && (r.play(), j(true))
       })
-    },
-    children: [(0, i.jsx)("div", {
-      className: h.vingette,
+    }, [L, R, C, T, O]), i.useEffect(() => {
+      O && ((null == w ? true : w.speaking) ? N(u.O.TALKING) : A === u.O.TALKING && N(u.O.IDLE))
+    }, [w, A, N, O]), i.useEffect(() => {
+      O && x.some(e => {
+        switch (n.id) {
+          case 1:
+          case 2:
+          case 3:
+            return (null == e ? true : e.id) < n.id;
+          case 4:
+          case 5:
+          case 6:
+            return (null == e ? true : e.id) > n.id;
+          default:
+            returnfalse
+        }
+      }) && M + m < Date.now() && (N(u.O.HEAD_TURN), k(Date.now()))
+    }, [x, n, M, N, O]), (0, r.jsxs)(s.P3F, {
+      className: _.wrapper,
       style: {
-        height: 1.25 * x.height,
-        width: 1.25 * x.width
-      }
-    }), (null == _ ? true : _.decoration) != null && (0, i.jsx)(s.Z, {
-      src: _.decoration[0],
-      className: a()(h.character, {
-        [h.flip]: b
-      }),
-      autoPlay: true,
-      loop: true,
-      style: {
-        width: x.width
-      }
-    }), (0, i.jsx)("div", {
-      ref: C,
-      children: P.map((e, t) => (0, i.jsx)(s.Z, {
+        width: I.width,
+        top: I.offset.top,
+        left: b ? -I.offset.left : I.offset.left
+      },
+      onMouseEnter: () => y(true),
+      onMouseLeave: () => y(false),
+      onClick: e => {
+        e.preventDefault(), e.stopPropagation();
+        let t = (a.avatar + 1) % d.eJ.length;
+        0 === t && (t = 1), c.ZP.update(E.id, {
+          avatar: t,
+          seat: null == n ? true : n.id
+        })
+      },
+      children: [(0, r.jsx)("div", {
+        className: _.vingette,
         style: {
-          opacity: +(t === R),
-          width: x.width
-        },
-        src: e,
-        className: a()(h.character, {
-          [h.flip]: b
+          height: 1.25 * I.height,
+          width: 1.25 * I.width
+        }
+      }), (null == P ? true : P.decoration) != null && (0, r.jsx)(l.Z, {
+        src: P.decoration[0],
+        className: o()(_.character, {
+          [_.flip]: b
         }),
-        onEnded: () => {
-          var t, n;
-          if (j === u.O.HEAD_TURN && (null == _ || null == (t = _.headTurn) ? true : t.includes(e))) {
-            S(u.O.HEAD_TURN_BACK);
-            let e = setTimeout(() => {
-              A(false), v.current.delete(e)
-            }, 2e3);
-            v.current.add(e)
-          } else j === u.O.HEAD_TURN_BACK && (null == _ || null == (n = _.headTurnBack) ? true : n.includes(e)) && S(u.O.IDLE), A(false)
-        },
-        autoPlay: false,
-        loop: false
-      }, e))
-    })]
-  })
-}
+        autoPlay: O,
+        loop: O,
+        style: {
+          width: I.width
+        }
+      }), (0, r.jsx)("div", {
+        ref: v,
+        children: R.map((e, t) => (0, r.jsx)(l.Z, {
+          style: {
+            opacity: +(t === U),
+            width: I.width
+          },
+          src: e,
+          className: o()(_.character, {
+            [_.flip]: b
+          }),
+          onEnded: () => {
+            var t, n;
+            if (A === u.O.HEAD_TURN && (null == P || null == (t = P.headTurn) ? true : t.includes(e))) {
+              N(u.O.HEAD_TURN_BACK);
+              let e = setTimeout(() => {
+                j(false), S.current.delete(e)
+              }, 2e3);
+              S.current.add(e)
+            } else A === u.O.HEAD_TURN_BACK && (null == P || null == (n = P.headTurnBack) ? true : n.includes(e)) && N(u.O.IDLE), j(false)
+          },
+          autoPlay: false,
+          loop: false
+        }, e))
+      })]
+    })
+  }

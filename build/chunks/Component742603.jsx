@@ -58,7 +58,7 @@ function V(e) {
   })
 }
 
-function H(e) {
+function F(e) {
   let {
     user: t,
     channel: n,
@@ -67,12 +67,12 @@ function H(e) {
   } = e, a = (0, _.Z)(n, t, r);
   return null == t || null == r ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(c.Z, {
-      className: L.avatar,
+      className: k.avatar,
       size: s.EFr.SIZE_24,
       user: t,
       animate: false
     }), (0, i.jsx)(s.Text, {
-      className: L.playingText,
+      className: k.playingText,
       variant: "text-md/medium",
       color: l,
       children: a
@@ -80,7 +80,7 @@ function H(e) {
   })
 }
 
-function F(e) {
+function H(e) {
   let t, {
       focusedApplication: n,
       focusedParticipant: r,
@@ -91,13 +91,13 @@ function F(e) {
     c = null != o ? (0, b.DK)(o) : null,
     d = null != o;
   if ((null == r ? true : r.type) === M.fO.ACTIVITY) null != n && (t = (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(C.ZP.Divider, {
-      className: L.divider
+    children: [(0, i.jsx)(y.ZP.Divider, {
+      className: k.divider
     }), (0, i.jsx)(m.Z, {
       game: n,
-      className: L.activityIcon
+      className: k.activityIcon
     }), (0, i.jsx)(s.Text, {
-      className: L.playingText,
+      className: k.playingText,
       variant: "text-md/normal",
       color: "none",
       children: (0, u.Z)(n.name)
@@ -110,9 +110,9 @@ function F(e) {
     let e = r.user,
       n = r.stream;
     t = (0, i.jsxs)(i.Fragment, {
-      children: [(0, i.jsx)(C.ZP.Divider, {
-        className: L.divider
-      }), (0, i.jsx)(H, {
+      children: [(0, i.jsx)(y.ZP.Divider, {
+        className: k.divider
+      }), (0, i.jsx)(F, {
         user: e,
         channel: l,
         stream: n,
@@ -122,12 +122,12 @@ function F(e) {
         focusedParticipant: r
       })]
     })
-  } else d && (t = (0, i.jsx)(y.Z, {
+  } else d && (t = (0, i.jsx)(C.Z, {
     guildEvent: o,
     recurrenceId: c
   }));
   return (0, i.jsx)("div", {
-    className: L.container,
+    className: k.container,
     children: t
   })
 }
@@ -145,20 +145,20 @@ function B(e) {
   } = (0, a.cj)([I.Z], () => ({
     focusedParticipant: I.Z.getSelectedParticipant(t.id),
     participantsOpen: I.Z.getParticipantsOpen(t.id)
-  }), [t.id]), y = (0, f.ZP)(t), O = (0, h.KS)(t), [_] = (0, d.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), P = k.intl.string(k.t.BVZqJl);
-  t.isDM() ? P = k.intl.string(k.t.jN2DfZ) : t.isGroupDM() && (P = k.intl.string(k.t["e5y+gm"]));
+  }), [t.id]), C = (0, f.ZP)(t), O = (0, h.KS)(t), [_] = (0, d.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), P = L.intl.string(L.t.BVZqJl);
+  t.isDM() ? P = L.intl.string(L.t.jN2DfZ) : t.isGroupDM() && (P = L.intl.string(L.t["e5y+gm"]));
   let T = (0, a.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     A = t.isGuildVoice() && u && null != T && T.length > 0,
     R = (0, Z.ZP)(t),
     V = A ? (0, i.jsx)(o.u, {
       asContainer: true,
-      text: k.intl.string(k.t.Mgpxiw),
+      text: L.intl.string(L.t.Mgpxiw),
       delay: 500,
       position: "bottom",
       shouldShow: R,
       children: (0, i.jsxs)(s.P3F, {
-        className: l()(L.channelStatusClickable, {
-          [L.hoverable]: R
+        className: l()(k.channelStatusClickable, {
+          [k.hoverable]: R
         }),
         onClick: R ? function() {
           (0, s.ZDy)(async () => {
@@ -191,8 +191,8 @@ function B(e) {
         } : true,
         children: [(0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
-          className: l()(L.channelStatus, U.markup, {
-            [L.hoverable]: R
+          className: l()(k.channelStatus, U.markup, {
+            [k.hoverable]: R
           }),
           children: E.Z.parseVoiceChannelStatus(T, true, {
             channelId: t.id
@@ -200,25 +200,25 @@ function B(e) {
         }), R && (0, i.jsx)(s.vdY, {
           size: "custom",
           color: "currentColor",
-          className: l()(L.pencilIcon, L.hoverable),
+          className: l()(k.pencilIcon, k.hoverable),
           width: 14,
           height: 14
         })]
       })
     }) : null,
-    H = (0, S.m$)({
+    F = (0, S.m$)({
       channelId: t.id
     });
   return (0, i.jsxs)("div", {
-    className: L.subtitleContainer,
+    className: k.subtitleContainer,
     children: [(0, i.jsx)(s.f6W, {
       theme: D.BR.DARK,
-      children: e => (0, i.jsxs)(C.ZP, {
+      children: e => (0, i.jsxs)(y.ZP, {
         onDoubleClick: v.O,
         transparent: true,
-        className: l()(e, L.headerBar),
-        innerClassName: L.headerBarChildren,
-        toolbarClassName: L.toolbar,
+        className: l()(e, k.headerBar),
+        innerClassName: k.headerBarChildren,
+        toolbarClassName: k.toolbar,
         childrenBottom: V,
         toolbar: (0, i.jsx)(N.Z, {
           channel: t,
@@ -227,26 +227,26 @@ function B(e) {
           isChatOpen: m,
           exitFullScreen: g
         }),
-        children: [(0, i.jsx)(C.ZP.Title, {
-          wrapperClassName: L.title,
+        children: [(0, i.jsx)(y.ZP.Title, {
+          wrapperClassName: k.title,
           children: (0, i.jsxs)(i.Fragment, {
-            children: [null != O ? (0, i.jsx)(C.ZP.ChannelIcon, {
+            children: [null != O ? (0, i.jsx)(y.ZP.ChannelIcon, {
               icon: O,
               "aria-label": P
-            }) : null, y, H && (0, i.jsx)(o.u, {
-              text: k.intl.string(k.t.QyZ4Td),
+            }) : null, C, F && (0, i.jsx)(o.u, {
+              text: L.intl.string(L.t.QyZ4Td),
               children: (0, i.jsx)(s.tQf, {
                 size: "xs",
-                "aria-label": k.intl.string(k.t.VHXh8a),
+                "aria-label": L.intl.string(L.t.VHXh8a),
                 color: s.TVs.colors.INTERACTIVE_TEXT_DEFAULT,
-                className: L.secureFramesIcon
+                className: k.secureFramesIcon
               })
             })]
           })
         }), (0, i.jsx)(x.TS, {
           channel: t,
           guild: r
-        }), (0, i.jsx)(F, {
+        }), (0, i.jsx)(H, {
           focusedApplication: _,
           focusedParticipant: b,
           channel: t

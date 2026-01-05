@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 786915, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => y
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -20,7 +20,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function y(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -39,11 +39,11 @@ function y(e) {
   return e
 }
 
-function C(e) {
+function y(e) {
   var {
     applicationId: t,
     stream: r,
-    channel: C,
+    channel: y,
     exitFullScreen: v,
     appContext: x,
     analyticsLocation: O,
@@ -74,25 +74,25 @@ function C(e) {
     {
       parentAnalyticsLocation: w
     } = (0, c.ZP)(),
-    M = null == C ? true : C.getGuildId(),
+    M = null == y ? true : y.getGuildId(),
     R = (0, a.e7)([p.Z], () => null != M ? p.Z.getGuild(M) : null, [M]),
     D = (0, a.e7)([f.Z], () => null != t ? f.Z.getApplicationActivity(t) : true),
-    k = null == t || j ? o.ejJ : o.gQj,
-    L = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
+    L = null == t || j ? o.ejJ : o.gQj,
+    k = null != t ? b.intl.string(b.t["OzOM/q"]) : b.intl.string(b.t["6F9ivu"]);
   return null != D && S ? (0, i.jsx)(m.Z, {
     onClick: () => {
       null != w && (0, u.v)(w, u.d.INVITE), s.h7(D, false, A)
     },
-    iconComponent: k,
-    label: L,
+    iconComponent: L,
+    label: k,
     iconClassName: _,
     look: P,
     size: I,
     buttonText: Z,
     color: null != T ? T : true
-  }) : null != R && null != C && h.Z.can(g.Plq.CREATE_INSTANT_INVITE, C) ? (0, i.jsx)(m.Z, y({
+  }) : null != R && null != y && h.Z.can(g.Plq.CREATE_INSTANT_INVITE, y) ? (0, i.jsx)(m.Z, C({
     onClick: () => {
-      l()(null != R, "guild cannot be null"), l()(null != C, "channel cannot be null"), null != w && (0, u.v)(w, u.d.INVITE),
+      l()(null != R, "guild cannot be null"), l()(null != y, "channel cannot be null"), null != w && (0, u.v)(w, u.d.INVITE),
         function(e) {
           let {
             guild: t,
@@ -110,7 +110,7 @@ function C(e) {
             } = await Promise.all([n.e("49049"), n.e("7654"), n.e("97016")]).then(n.bind(n, 560114));
             return n => {
               var o, s;
-              return (0, i.jsx)(e, (o = y({}, n), s = s = {
+              return (0, i.jsx)(e, (o = C({}, n), s = s = {
                 guild: t,
                 channel: r,
                 streamUserId: l,
@@ -135,7 +135,7 @@ function C(e) {
           })
         }({
           guild: R,
-          channel: C,
+          channel: y,
           streamUserId: null == r ? true : r.ownerId,
           applicationId: t,
           appContext: null != x ? x : A,
@@ -144,8 +144,8 @@ function C(e) {
           guildScheduledEvent: E
         })
     },
-    iconComponent: k,
-    label: L,
+    iconComponent: L,
+    label: k,
     iconClassName: _,
     look: P,
     size: I,

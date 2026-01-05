@@ -33,7 +33,7 @@ function O(e) {
     avatarDecorationSrc: _,
     eventHandlers: P,
     isAnimating: I
-  } = (0, y.Z)({
+  } = (0, C.Z)({
     userId: null == E ? true : E.id,
     size: o.EFr.SIZE_80,
     animateOnHover: true
@@ -42,7 +42,7 @@ function O(e) {
   }, [P]), A = r.useCallback(() => {
     P.onMouseLeave(), T(false)
   }, [P]), w = !n.isMultiUserDM() && (null == E ? true : E.displayNameStyles) != null;
-  return (0, i.jsxs)(C.ZP, {
+  return (0, i.jsxs)(y.ZP, {
     channelId: n.id,
     onMouseEnter: N,
     onMouseLeave: A,
@@ -64,14 +64,14 @@ function O(e) {
         src: (0, u.x)(n, 80, e),
         avatarDecoration: _
       })
-    })(), (0, i.jsx)(C.Ot, {
+    })(), (0, i.jsx)(y.Ot, {
       children: w ? (0, i.jsx)(f.Z, {
         userName: S,
         displayNameStyles: null == E ? true : E.displayNameStyles,
         effectDisplayType: Z ? p.F.ANIMATED : p.F.STATIC,
         loop: true
       }) : S
-    }), (0, i.jsx)(C.jz, {
+    }), (0, i.jsx)(y.jz, {
       children: O
     }), n.isMultiUserDM() && (0, i.jsxs)(a.hE2, {
       className: x.buttonContainer,

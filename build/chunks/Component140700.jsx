@@ -30,9 +30,9 @@ function f(e) {
 function g(e) {
   let {
     loadId: t
-  } = e, n = o.Z.useField("categoryId"), g = (0, c.q)(), m = (0, s.E)({
+  } = e, n = o.Z.useField("categoryId"), g = (0, c.q)(), h = (0, s.E)({
     categoryId: n
-  }), h = i.useCallback(e => {
+  }), m = i.useCallback(e => {
     (0, u.I)({
       loadId: t,
       categoryId: Number(e)
@@ -55,8 +55,8 @@ function g(e) {
       children: d.intl.string(d.t.f09BQJ)
     }), (0, r.jsx)(a.ZP, {
       items: b,
-      title: m,
-      onSelect: h,
+      title: h,
+      onSelect: m,
       selected: "".concat(n),
       "aria-label": d.intl.string(d.t.Ng5cTK),
       variant: a.PA.FILLED

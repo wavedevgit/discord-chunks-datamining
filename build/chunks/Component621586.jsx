@@ -64,10 +64,10 @@ function _(e) {
       state: w,
       recommendations: M,
       skuIdToUserIdsReasons: R
-    } = (0, y.Z)({
+    } = (0, C.Z)({
       guildId: (0, g.ac)(),
       applicationId: v.t9,
-      numWishlistItems: y.W,
+      numWishlistItems: C.W,
       userIds: A,
       location: "Social Layer Gifting Mini Shelf",
       includeWishlists: true
@@ -77,8 +77,8 @@ function _(e) {
       return M.map(t => {
         var n, r;
         let l = null != (r = null == (n = R[t.skuId]) ? true : n.filter(t => t.reason === b.g.WISHLIST && e.has(t.userId)).map(e => e.userId).filter(m.lm)) ? r : [];
-        return (0, i.jsx)(C.Z, {
-          variant: l.length > 0 ? C.B.WISHLIST : C.B.POPULAR,
+        return (0, i.jsx)(y.Z, {
+          variant: l.length > 0 ? y.B.WISHLIST : y.B.POPULAR,
           wishlistItem: t,
           userIds: l,
           guildId: I.guild_id,

@@ -21,9 +21,9 @@ let g = function(e) {
     participants: t,
     channel: n,
     hasConnectPermission: g
-  } = e, b = t.filter(f.Io), y = (0, c.J)(n.guild_id), C = r.useCallback(() => {
-    y ? (0, s.hk)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
-  }, [n.id, n.guild_id, y]), v = 4 === b.length ? 2 : 3;
+  } = e, b = t.filter(f.Io), C = (0, c.J)(n.guild_id), y = r.useCallback(() => {
+    C ? (0, s.hk)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
+  }, [n.id, n.guild_id, C]), v = 4 === b.length ? 2 : 3;
   return (0, i.jsxs)("div", {
     className: m.container,
     children: [(0, i.jsx)(p.Z, {}), (0, i.jsx)("div", {
@@ -65,7 +65,7 @@ let g = function(e) {
       children: (0, i.jsx)(l.Button, {
         variant: "overlay-primary",
         text: g ? h.intl.string(h.t["96ANUN"]) : h.intl.string(h.t.TVBCKZ),
-        onClick: C,
+        onClick: y,
         disabled: !g
       })
     })]

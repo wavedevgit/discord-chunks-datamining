@@ -23,16 +23,16 @@ function m(e) {
     setStatus: l,
     isFavorited: m,
     onFavoriteClick: g
-  } = e, [b, y] = r.useState(false), C = (0, o.e7)([d.Z], () => d.Z.getFavoritedStatuses().length >= d.o), v = null != g, x = r.useCallback(e => {
+  } = e, [b, C] = r.useState(false), y = (0, o.e7)([d.Z], () => d.Z.getFavoritedStatuses().length >= d.o), v = null != g, x = r.useCallback(e => {
     e.stopPropagation(), null == g || g()
   }, [g]), O = m ? u.r7p : u.vxU;
   return (0, i.jsxs)(u.P3F, {
     onClick: l,
     onMouseEnter: () => {
-      y(true)
+      C(true)
     },
     onMouseLeave: () => {
-      y(false)
+      C(false)
     },
     className: a()(h.item, h.labelContainer, f.container),
     children: [(0, i.jsx)("div", {
@@ -42,7 +42,7 @@ function m(e) {
       className: f.itemText,
       children: t
     }), b && v && (0, i.jsx)(c.u, {
-      text: C && !m ? p.intl.string(p.t.YSDH9n) : true,
+      text: y && !m ? p.intl.string(p.t.YSDH9n) : true,
       children: (0, i.jsx)(u.P3F, {
         className: a()(f.centerAlign, f.favoriteIcon),
         onClick: x,

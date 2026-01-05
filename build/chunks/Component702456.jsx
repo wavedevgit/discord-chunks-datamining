@@ -59,10 +59,10 @@ function Z(e) {
     var e, t;
     await p.Z.openPrivateChannel({
       recipientIds: [i.id],
-      location: m.Z.FREQUENT_FRIENDS_ROW
+      location: h.Z.FREQUENT_FRIENDS_ROW
     });
     let n = O.Z.getDMFromUserId(i.id);
-    null != n && (0, h.yw)(P.rMx.CHANNEL_OPENED, (e = function(e) {
+    null != n && (0, m.yw)(P.rMx.CHANNEL_OPENED, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -79,8 +79,8 @@ function Z(e) {
         })
       }
       return e
-    }({}, (0, h.$H)(n)), t = t = {
-      location: "".concat(m.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
+    }({}, (0, m.$H)(n)), t = t = {
+      location: "".concat(h.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -145,11 +145,11 @@ function w() {
   }(), n = (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)), l = (0, Chunk442837.e7)([Chunk594174.default], () => {
     var e, t;
     return null != (t = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.nsfwAllowed) && exports
-  }), [p, m] = Chunk473749.useState({
+  }), [p, h] = Chunk473749.useState({
     scrollLeft: 0,
     scrollWidth: 0,
     clientWidth: 0
-  }), h = Chunk473749.useRef(null), E = (0, Chunk442837.e7)([Chunk351402.Z], () => Chunk351402.Z.ipCountryCode), O = (0, Chunk81643.gD)(), y = Chunk473749.useCallback(() => {
+  }), m = Chunk473749.useRef(null), E = (0, Chunk442837.e7)([Chunk351402.Z], () => Chunk351402.Z.ipCountryCode), O = (0, Chunk81643.gD)(), y = Chunk473749.useCallback(() => {
     var e;
     let t = null == (e = Chunk367907.current) ? true : module.getScrollerNode();
     null != exports && Chunk100527({
@@ -164,7 +164,7 @@ function w() {
   let C = (0, Chunk393903.y)(Chunk158776, []),
     w = Chunk473749.useCallback(e => {
       let t = e.currentTarget;
-      m({
+      h({
         scrollLeft: t.scrollLeft,
         scrollWidth: t.scrollWidth,
         clientWidth: t.clientWidth
@@ -194,7 +194,7 @@ function w() {
         })]
       }), (0, Chunk54381.jsx)(Chunk481060.xVE, {
         ref: e => {
-          h.current = e, C.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
+          m.current = e, C.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
         },
         className: a()(Chunk938359.frequentFriendsAvatars, {
           [Chunk938359.scrollMaskLeft]: U && G,

@@ -92,8 +92,8 @@ let X = e => {
       ep = (0, y.M5)(eo, q.PremiumTypes.TIER_2),
       ef = (0, l.JA)("nitro"),
       eg = (0, A.N)(),
-      em = (0, x.N)(),
-      eh = (0, P.$)(),
+      eh = (0, x.N)(),
+      em = (0, P.$)(),
       eb = (0, S.W)(),
       e_ = (0, C.Vi)(),
       eE = (0, k.HI)({
@@ -107,8 +107,8 @@ let X = e => {
       eS = O.Z.getAlmostExpiringTrialOffers([q.Si.TIER_2]),
       eT = eu && eS.length > 0 && null != eg && null != eg.expires_at,
       eN = O.Z.getAlmostExpiringDiscountOffers([q.Si.TIER_2]),
-      ej = eu && eN.length > 0 && null != em && null != em.expires_at,
-      eP = null != eh && null != es && es.status === K.O0b.CANCELED,
+      ej = eu && eN.length > 0 && null != eh && null != eh.expires_at,
+      eP = null != em && null != es && es.status === K.O0b.CANCELED,
       {
         fractionalState: ex,
         startsAt: eA,
@@ -116,7 +116,7 @@ let X = e => {
       } = (0, f.Z)({
         forceFetch: true
       }),
-      [ew, eL] = (0, h.bf)(ex !== q.a$.NONE ? s.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
+      [ew, eL] = (0, m.bf)(ex !== q.a$.NONE ? s.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
         showAfterTimestamp: eA.valueOf(),
         cooldownDurationMs: 0
       }),
@@ -130,9 +130,9 @@ let X = e => {
       ek = [],
       eU = [];
     (0, g.Kl)() && ((ej || eT && !eD) && ek.push(s.z.NITRO_TAB_BADGE_OFFER_REMINDER), eI && ek.push(s.z.RECURRING_3P_PROMOTION_POPOVER), e_ && ek.push(s.z.BOGO_2025_NITRO_TAB_BADGE), eR && ek.push(s.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), eb && ek.push(s.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eM && ek.push(s.z.GAME_WIDGETS_PREMIUM_TAB_BADGE));
-    let [eG, eB] = (0, h.US)(ek, true, true);
+    let [eG, eB] = (0, m.US)(ek, true, true);
     eP && eU.push(s.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), eO && eU.push(s.z.PREMIUM_GROUP_POPOVER);
-    let [eH, eV] = (0, h.US)(eU, true, true), eF = (0, Z.H)(a.I.PREMIUM_TAB), [ez, eY] = (0, h.TE)(null != eF && "premiumTab" === eF.properties.properties.oneofKind ? s.z.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, null != (et = null == eF ? true : eF.id) ? et : "", true, true);
+    let [eH, eV] = (0, m.US)(eU, true, true), eF = (0, Z.H)(a.I.PREMIUM_TAB), [ez, eY] = (0, m.TE)(null != eF && "premiumTab" === eF.properties.properties.oneofKind ? s.z.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, null != (et = null == eF ? true : eF.id) ? et : "", true, true);
     if (i.useEffect(() => {
         true === en && null != eG && eB(Q.L.AUTO_DISMISS), true === en && null != eH && eV(Q.L.AUTO_DISMISS), true === en && null != ez && eY(Q.L.AUTO_DISMISS)
       }, [eB, en, eG, eV, eH, ez, eY]), !X({
@@ -181,21 +181,21 @@ let X = e => {
     }), I = 4) : null != ev ? (n = (0, r.jsx)(W.Z, {
       copy: ev,
       showStars: false
-    }), I = 1) : null != em ? (n = ec === T.tE.OFFER_COUNTDOWN && ej ? (0, r.jsx)(H.a, {
-      discountOffer: em
+    }), I = 1) : null != eh ? (n = ec === T.tE.OFFER_COUNTDOWN && ej ? (0, r.jsx)(H.a, {
+      discountOffer: eh
     }) : (0, r.jsx)(B.GN, {
-      userDiscount: em,
+      userDiscount: eh,
       isTabSelected: en,
       includesAmountOff: false,
       shouldShowOfferReminder: ej
     }), I = 3) : null == eg || eD ? eC ? (n = (0, r.jsx)(V.l, {
       isSelected: en,
-      onSelect: () => (0, m.Q3)(s.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
+      onSelect: () => (0, h.Q3)(s.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
         dismissAction: Q.L.TAKE_ACTION
       })
     }), I = 6) : eP && (n = (0, r.jsx)(G.Z, {
       isSelected: en,
-      discountOffer: eh
+      discountOffer: em
     }), I = 8) : (n = ec === T.tE.OFFER_COUNTDOWN && eT ? (0, r.jsx)(H.F, {
       trialOffer: eg
     }) : (0, r.jsx)(B.$H, {
@@ -257,7 +257,7 @@ let X = e => {
       children: eq
     }) : eP && eH === s.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK && 8 === I ? (0, r.jsx)(U.Z, {
       targetElementRef: er,
-      discountOffer: eh,
+      discountOffer: em,
       premiumSubscription: es,
       dismissCoachmark: eV,
       children: eq

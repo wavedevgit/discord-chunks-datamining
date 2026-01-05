@@ -42,12 +42,12 @@ let x = (0, Chunk112724.Z)(e => {
     mode: M,
     popoutType: R,
     awaitingRemoteSessionInfo: D,
-    callContainerDimensions: k
+    callContainerDimensions: L
   } = e;
   r.useEffect(() => {
-    p.S.dispatch(y.CkL.REMEASURE_TARGET)
-  }, [N, A, k.width, k.height]);
-  let L = r.useMemo(() => n.filter(e => e.type !== C.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, x]),
+    p.S.dispatch(C.CkL.REMEASURE_TARGET)
+  }, [N, A, L.width, L.height]);
+  let k = r.useMemo(() => n.filter(e => e.type !== y.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, x]),
     U = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(_.id), [_.id]);
   if ((null == D ? true : D.channelId) === _.id) return (0, i.jsx)(h.Z, {
     height: A
@@ -57,12 +57,12 @@ let x = (0, Chunk112724.Z)(e => {
     participants: t,
     hasConnectPermission: P
   });
-  if (n = Z ? n : t, O === y.AEg.HAVEN) return (0, i.jsx)(d.Z, {
+  if (n = Z ? n : t, O === C.AEg.HAVEN) return (0, i.jsx)(d.Z, {
     participants: n,
     channel: _,
     idle: w
   });
-  if (M === y.WtW.VOICE) return (0, i.jsx)(c.Z, {
+  if (M === C.WtW.VOICE) return (0, i.jsx)(c.Z, {
     guildId: _.guild_id,
     width: N,
     className: v.voiceCallWrapper,
@@ -84,7 +84,7 @@ let x = (0, Chunk112724.Z)(e => {
       children: (0, i.jsx)(m.Z, {
         channel: _,
         className: v.videoGrid,
-        participants: L,
+        participants: k,
         totalNumberOfParticipants: t.length,
         onClick: E,
         onDoubleClick: S,
@@ -99,7 +99,7 @@ let x = (0, Chunk112724.Z)(e => {
     onContextMenuParticipant: j,
     onSelectParticipant: E,
     selectedParticipant: a,
-    filteredParticipants: L,
+    filteredParticipants: k,
     participants: t,
     popoutType: R,
     className: I,

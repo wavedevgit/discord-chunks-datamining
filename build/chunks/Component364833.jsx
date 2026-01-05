@@ -52,13 +52,13 @@ function P(e) {
   var t;
   let {
     quest: n
-  } = e, i = (0, m.B6)(n.config.expiresAt), l = (0, m.B6)(n.config.rewardsConfig.rewardsExpireAt), a = (0, o.e7)([c.Z], () => c.Z.getState().theme), u = (0, s.wjy)(a) ? S.BRd.DARK : S.BRd.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
+  } = e, i = (0, h.B6)(n.config.expiresAt), l = (0, h.B6)(n.config.rewardsConfig.rewardsExpireAt), a = (0, o.e7)([c.Z], () => c.Z.getState().theme), u = (0, s.wjy)(a) ? S.BRd.DARK : S.BRd.LIGHT, d = (null == (t = n.userStatus) ? true : t.completedAt) != null;
   return (0, r.jsxs)("div", {
     className: N.heading,
     children: [(0, r.jsx)("img", {
       className: N.headingGameTile,
       alt: "",
-      src: (0, h.fh)(n, h.eC.GAME_TILE, u).url
+      src: (0, m.fh)(n, m.eC.GAME_TILE, u).url
     }), (0, r.jsxs)("div", {
       className: N.headingCopy,
       children: [(0, r.jsx)(s.Heading, {
@@ -84,49 +84,49 @@ function x(e) {
   var t, n, l;
   let {
     nodeRef: c,
-    quest: h
-  } = e, _ = (0, d.O5)(), S = (0, o.e7)([p.Z], () => p.Z.isEnrolling(h.id), [h]), [x, A] = i.useState(false), Z = i.useCallback(() => A(true), []), w = i.useCallback(() => A(false), []), {
+    quest: m
+  } = e, _ = (0, d.O5)(), S = (0, o.e7)([p.Z], () => p.Z.isEnrolling(m.id), [m]), [x, A] = i.useState(false), Z = i.useCallback(() => A(true), []), w = i.useCallback(() => A(false), []), {
     launchInGameActivity: L
-  } = (0, m.zB)(h), R = i.useCallback(e => {
+  } = (0, h.zB)(m), R = i.useCallback(e => {
     e.stopPropagation()
   }, []), D = i.useCallback(() => {
-    (0, u.AH)(h.id, {
+    (0, u.AH)(m.id, {
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: d.jZ.ACCEPT_QUEST,
       sourceQuestContent: f.jn.ACTIVITY_PANEL
-    }), (0, b.Rt)(h) && L()
-  }, [h, L]), M = i.useCallback(() => {
-    null != h && (_({
-      questId: h.id,
+    }), (0, b.Rt)(m) && L()
+  }, [m, L]), M = i.useCallback(() => {
+    null != m && (_({
+      questId: m.id,
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: d.jZ.TRACK_PROGRESS,
       sourceQuestContent: f.jn.ACTIVITY_PANEL
     }), (0, I.navigateToQuestHome)({
       fromContent: f.jn.ACTIVITY_PANEL,
-      questId: h.id
+      questId: m.id
     }))
-  }, [h, _]), k = i.useCallback(() => {
+  }, [m, _]), k = i.useCallback(() => {
     _({
-      questId: h.id,
+      questId: m.id,
       questContent: f.jn.ACTIVITY_PANEL,
       questContentCTA: d.jZ.LEARN_MORE,
       sourceQuestContent: f.jn.ACTIVITY_PANEL
     }), (0, I.navigateToQuestHome)({
       fromContent: f.jn.ACTIVITY_PANEL,
-      questId: h.id
+      questId: m.id
     })
-  }, [h.id, _]), U = (0, O.hf)({
-    quest: h,
+  }, [m.id, _]), U = (0, O.hf)({
+    quest: m,
     questContent: f.jn.ACTIVITY_PANEL,
     sourceQuestContent: f.jn.ACTIVITY_PANEL
-  }), G = (null == (t = h.userStatus) ? true : t.enrolledAt) != null, B = (null == (n = h.userStatus) ? true : n.completedAt) != null, H = (0, m.Rf)(h), V = (0, g.DD)({
-    quest: h,
+  }), G = (null == (t = m.userStatus) ? true : t.enrolledAt) != null, B = (null == (n = m.userStatus) ? true : n.completedAt) != null, H = (0, h.Rf)(m), V = (0, g.DD)({
+    quest: m,
     taskDetails: H,
     location: C.dr.ACTIVITY_PANEL,
     questContent: f.jn.ACTIVITY_PANEL,
     sourceQuestContent: f.jn.ACTIVITY_PANEL
-  }), F = (0, b.Rt)(h), z = (0, g.CR)({
-    quest: h
+  }), F = (0, b.Rt)(m), z = (0, g.CR)({
+    quest: m
   }), Y = F ? z : T.intl.string(T.t.l7E81v);
   return (0, r.jsxs)("div", {
     ref: e => {
@@ -144,11 +144,11 @@ function x(e) {
     children: [(0, r.jsxs)("div", {
       className: N.utils,
       children: [G ? (0, r.jsx)(P, {
-        quest: h
+        quest: m
       }) : (0, r.jsx)(v.Z, {}), (0, r.jsx)(E.i, {
-        quest: h,
+        quest: m,
         questContent: f.jn.ACTIVITY_PANEL,
-        shouldShowDisclosure: (null == (l = h.userStatus) ? true : l.enrolledAt) == null,
+        shouldShowDisclosure: (null == (l = m.userStatus) ? true : l.enrolledAt) == null,
         showShareLink: true,
         sourceQuestContent: f.jn.ACTIVITY_PANEL,
         children: e => {
@@ -174,7 +174,7 @@ function x(e) {
       })]
     }), !G && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(P, {
-        quest: h
+        quest: m
       }), (0, r.jsx)("div", {
         className: N.instructions,
         children: (0, r.jsx)(s.Text, {
@@ -186,7 +186,7 @@ function x(e) {
     }), G && !B && (0, r.jsx)(y.Z, {
       autoplay: x,
       className: N.rewardTileWithInstructions,
-      quest: h,
+      quest: m,
       questContent: f.jn.ACTIVITY_PANEL,
       location: C.dr.ACTIVITY_PANEL,
       taskDetails: H,
@@ -206,7 +206,7 @@ function x(e) {
           text: Y,
           onClick: D,
           loading: S,
-          icon: (0, I.getPrimaryCtaIcon)(h)
+          icon: (0, I.getPrimaryCtaIcon)(m)
         })]
       }), G && !B && (0, r.jsx)(s.Button, {
         variant: "primary",

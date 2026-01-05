@@ -47,7 +47,7 @@ let _ = e => {
     }), {
       avatarSrc: p,
       avatarDecorationSrc: g
-    } = (0, y.Z)({
+    } = (0, C.Z)({
       userId: c.id,
       guildId: t.guild_id,
       size: 48
@@ -96,7 +96,7 @@ let _ = e => {
       channel: t,
       idle: n,
       showChat: l
-    } = e, f = r.useRef(new Set), [h, m] = r.useState([]), [b, y] = r.useState(0), O = r.useRef(null), j = r.useRef(false), [P, I] = r.useState(true), [Z, T] = r.useState(""), [N, A] = r.useState((0, d.JM)(Z));
+    } = e, f = r.useRef(new Set), [h, m] = r.useState([]), [b, C] = r.useState(0), O = r.useRef(null), j = r.useRef(false), [P, I] = r.useState(true), [Z, T] = r.useState(""), [N, A] = r.useState((0, d.JM)(Z));
     r.useEffect(() => {
       let e = f.current;
       return () => {
@@ -134,7 +134,7 @@ let _ = e => {
         let t = Date.now() > e.timestamp.getTime() + 5e3;
         if (!t) {
           let e = setTimeout(() => {
-            y(Date.now()), f.current.delete(e)
+            C(Date.now()), f.current.delete(e)
           }, 5500);
           f.current.add(e)
         }
@@ -172,7 +172,7 @@ let _ = e => {
       onScroll: e => {
         e.preventDefault(), e.stopPropagation()
       },
-      children: [(0, i.jsx)(C.Z, {
+      children: [(0, i.jsx)(y.Z, {
         children: (0, i.jsx)("div", {
           className: a()(S.chat, {
             [S.idle]: n

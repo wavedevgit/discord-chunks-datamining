@@ -106,7 +106,7 @@ function B(e) {
 function H(e, t) {
   let n = [],
     r = e.getGuildId();
-  return [A.d4z.GUILD_CATEGORY, ...m.tx].includes(e.type) || n.push(new Promise(t => {
+  return [A.d4z.GUILD_CATEGORY, ...h.tx].includes(e.type) || n.push(new Promise(t => {
     O.Z.whenReady(e.id, () => t()), c.Z.fetchMessages({
       channelId: e.id,
       limit: A.AQB
@@ -135,7 +135,7 @@ function V(e) {
       channelId: e.channel_id
     }).map(U),
     n = b.Z.getChannel(e.channel_id),
-    r = null != e.author ? new h.Z(e.author) : true,
+    r = null != e.author ? new m.Z(e.author) : true,
     i = null != e.author ? (0, f.ij)(r, n) : true;
   return {
     id: e.id,

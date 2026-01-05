@@ -70,7 +70,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk445620 = require("./445620.js"),
   Chunk120550 = require("./120550.js");
 
-function em(e) {
+function eh(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -88,7 +88,7 @@ function em(e) {
   }
   return e
 }
-let eh = Chunk473749.createContext({});
+let em = Chunk473749.createContext({});
 
 function eb(e) {
   let {
@@ -164,13 +164,13 @@ function eE(e) {
     onSelectTab: u,
     scrollerRef: d,
     selectedTab: p
-  } = i.useContext(eh), f = (0, G._)({
+  } = i.useContext(em), f = (0, G._)({
     location: er.dr.QUEST_HOME_DESKTOP
   }) ? J.Z : J.j, {
     takeover: g,
-    isLoading: m
+    isLoading: h
   } = (0, z.Nm)(), {
-    enabled: h
+    enabled: m
   } = (0, Z.W)({
     location: er.dr.QUEST_HOME_DESKTOP
   }), {
@@ -189,7 +189,7 @@ function eE(e) {
       children: [function() {
         if (!s && b) {
           if (p !== z.e5.ALL) return null;
-          if (m) return (0, r.jsx)(et.o, {});
+          if (h) return (0, r.jsx)(et.o, {});
           if (null != g) return (0, r.jsx)(et.Z, {
             config: g,
             onQuestCtaClick: E
@@ -199,7 +199,7 @@ function eE(e) {
       }(), (0, r.jsx)(T.Z, {
         children: (0, r.jsxs)("div", {
           className: a()(es.content, {
-            [es.contentWithExtraPadding]: b && !h && p !== z.e5.ALL
+            [es.contentWithExtraPadding]: b && !m && p !== z.e5.ALL
           }),
           children: [n, o ? p === z.e5.CLAIMED ? (0, r.jsx)(f, {
             onSelectTab: u
@@ -239,7 +239,7 @@ let eO = function(e) {
     let {
       current: e
     } = K;
-    (0, h.h)({
+    (0, m.h)({
       name: c.ImpressionNames.QUEST_HOME,
       type: c.ImpressionTypes.VIEW,
       properties: {
@@ -273,7 +273,7 @@ let eO = function(e) {
       }), (0, E.mK)({
         tab: el.AW.ORBS,
         analyticsLocations: [],
-        analyticsSource: m.Z.ORBS_BALANCE_MENU
+        analyticsSource: h.Z.ORBS_BALANCE_MENU
       })
     }, []);
   i.useEffect(() => {
@@ -319,7 +319,7 @@ let eO = function(e) {
   let ep = i.useCallback(() => {
       (0, W.navigateToQuestHome)({
         fromContent: B.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER
-      }), R.default.track(ei.rMx.QUEST_CONTENT_CLICKED, em({
+      }), R.default.track(ei.rMx.QUEST_CONTENT_CLICKED, eh({
         cta_name: U.jZ.VIEW_QUESTS,
         click_id: (0, s.Z)(),
         is_targeted: false
@@ -327,7 +327,7 @@ let eO = function(e) {
     }, []),
     ef = i.useCallback(e => {
       var t, n, r;
-      l.replace((n = em({}, l.location), r = r = {
+      l.replace((n = eh({}, l.location), r = r = {
         hash: true
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
@@ -346,7 +346,7 @@ let eO = function(e) {
     value: {
       onAssetLoadComplete: Y
     },
-    children: (0, r.jsx)(eh.Provider, {
+    children: (0, r.jsx)(em.Provider, {
       value: i.useMemo(() => ({
         isInDiscoverQuestHomeTab: g,
         onScroll: D,
@@ -406,7 +406,7 @@ let eO = function(e) {
                 onClick: () => (0, E.mK)({
                   tab: el.AW.ORBS,
                   analyticsLocations: [],
-                  analyticsSource: m.Z.INTRO_TO_ORBS_QUEST_BANNER
+                  analyticsSource: h.Z.INTRO_TO_ORBS_QUEST_BANNER
                 })
               }), (0, r.jsx)(p.Button, {
                 variant: "overlay-secondary",

@@ -60,7 +60,7 @@ function v(e) {
           children: e.libraryApplication.getBranchedName(e.application)
         }), null != t ? (0, r.jsx)("div", {
           className: _.applicationSubText,
-          children: h.EOG[t]
+          children: m.EOG[t]
         }) : null]
       }), (0, r.jsx)(o.P3F, {
         className: _.restoreButton,
@@ -90,7 +90,7 @@ class y extends Chunk473749.PureComponent {
     u.Pe.updateSetting(e)
   }
   trackRestoreApplication(e, t) {
-    p.default.track(h.rMx.APPLICATION_SETTINGS_UPDATED, O({
+    p.default.track(m.rMx.APPLICATION_SETTINGS_UPDATED, O({
       hidden_enabled: t
     }, e.getAnalyticsData()))
   }
@@ -133,8 +133,8 @@ class y extends Chunk473749.PureComponent {
   }
   constructor(...e) {
     super(...e), E(this, "handleRestoreHiddenLibraryApplication", e => {
-      let t = l.x9(e.getFlags(), h.eHb.HIDDEN);
-      s.h(e.id, e.branchId, t), this.trackRestoreApplication(e, l.yE(t, h.eHb.HIDDEN))
+      let t = l.x9(e.getFlags(), m.eHb.HIDDEN);
+      s.h(e.id, e.branchId, t), this.trackRestoreApplication(e, l.yE(t, m.eHb.HIDDEN))
     })
   }
 }

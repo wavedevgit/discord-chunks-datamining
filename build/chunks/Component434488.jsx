@@ -269,9 +269,9 @@ function Z(e) {
             tile_type: "activity suggestion",
             close_type: "permanent",
             n_participants: c
-          }), (0, y.Q3)(o.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
+          }), (0, C.Q3)(o.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
         },
-        children: [(0, i.jsx)(C.Z, {}), (0, i.jsx)(u.Text, {
+        children: [(0, i.jsx)(y.Z, {}), (0, i.jsx)(u.Text, {
           variant: "text-sm/medium",
           children: E.intl.string(E.t["5E9SB9"])
         })]

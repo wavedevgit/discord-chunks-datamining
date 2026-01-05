@@ -96,7 +96,7 @@ function A(e) {
     {
       analyticsLocations: H,
       parentAnalyticsLocation: V
-    } = (0, m.ZP)(g.Z.SOUNDBOARD_BUTTON);
+    } = (0, h.ZP)(g.Z.SOUNDBOARD_BUTTON);
 
   function F(e) {
     null != k && (0, f.jW)(e, async () => {
@@ -124,7 +124,7 @@ function A(e) {
   return (0, v.yp)({
     event: S.CkL.TOGGLE_SOUNDBOARD,
     handler: K
-  }), (0, r.jsx)(m.Gt, {
+  }), (0, r.jsx)(h.Gt, {
     value: H,
     children: (0, r.jsx)(u.u, {
       targetElementRef: A,
@@ -165,7 +165,7 @@ function A(e) {
             innerClassName: j.buttonContents,
             disabled: R,
             onClick: () => {
-              null != G && G !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && B(T.L.UNKNOWN), M(!D), Y(), (0, h.v)(V, h.d.SOUNDBOARD)
+              null != G && G !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && B(T.L.UNKNOWN), M(!D), Y(), (0, m.v)(V, m.d.SOUNDBOARD)
             },
             onMouseEnter: e => {
               var t;

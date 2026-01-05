@@ -102,15 +102,15 @@ let b = [],
       }
     }), [P, I]), (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: h.headingWrapper,
+        className: m.headingWrapper,
         children: [(0, r.jsx)(a.Heading, {
           variant: "heading-lg/medium",
-          children: m.intl.string(m.t.giYD00)
+          children: h.intl.string(h.t.giYD00)
         }), (0, r.jsxs)("div", {
-          className: h.headingControls,
+          className: m.headingControls,
           children: [(0, r.jsx)(d.Z, {
             onChange: I,
-            optionClassName: h.filterSortOption,
+            optionClassName: m.filterSortOption,
             selectedSortMethod: v
           }), (0, r.jsx)(u.Z, {
             onChange: C,

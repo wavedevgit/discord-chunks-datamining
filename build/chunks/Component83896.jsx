@@ -83,7 +83,7 @@ function P(e) {
     }, [Z, T, n.id, l]),
     w = r.useCallback(() => {
       if (!Z || !N || null == t.state) return;
-      let [e] = (0, y.F)(l, t.state);
+      let [e] = (0, C.F)(l, t.state);
       if (null != e) {
         if (e === v.tN.CUSTOM) {
           if (null == t.details || null == t.emoji) return;
@@ -100,7 +100,7 @@ function P(e) {
   return (0, i.jsxs)("div", {
     ref: I,
     className: a()(j.popover, E.container),
-    children: [(0, i.jsx)(C.Z, {
+    children: [(0, i.jsx)(y.Z, {
       userId: l,
       size: 32,
       className: E.icon,

@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 459502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -20,13 +20,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk144914 = require("./144914.js");
 
-function y(e) {
+function C(e) {
   let {
     channelId: t,
-    showDismiss: y = true
-  } = e, C = (0, r.e7)([s.Z], () => s.Z.getChannel(t), [t]), v = (0, f.sz)(t), x = null != (0, f.qY)(t), {
+    showDismiss: C = true
+  } = e, y = (0, r.e7)([s.Z], () => s.Z.getChannel(t), [t]), v = (0, f.sz)(t), x = null != (0, f.qY)(t), {
     canManageGuildEvent: O
-  } = (0, o.XJ)(C), E = (0, r.e7)([c.Z], () => v.filter(e => !c.Z.isEventDismissed(e.id)), [v]), j = (0, r.cj)([d.ZP], () => E.reduce((e, t) => (e[t.id] = d.ZP.getUserCount(t.id, (0, h.DK)(t)), e), {}), [E]);
+  } = (0, o.XJ)(y), E = (0, r.e7)([c.Z], () => v.filter(e => !c.Z.isEventDismissed(e.id)), [v]), j = (0, r.cj)([d.ZP], () => E.reduce((e, t) => (e[t.id] = d.ZP.getUserCount(t.id, (0, h.DK)(t)), e), {}), [E]);
   return E.length < 1 || x ? null : (0, i.jsx)(i.Fragment, {
     children: E.map(e => (0, i.jsx)(m.Z, {
       icon: (0, i.jsx)(a.Que, {
@@ -83,7 +83,7 @@ function y(e) {
           eventId: e.id
         })
       },
-      onDismiss: y ? () => {
+      onDismiss: C ? () => {
         var t;
         return t = e.id, void(0, p.Xy)(t)
       } : true,

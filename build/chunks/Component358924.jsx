@@ -144,7 +144,7 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
       hasButton: i
     }
   },
-  em = e => {
+  eh = e => {
     let {
       activity: t,
       user: n
@@ -181,7 +181,7 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
     }
     return null
   },
-  eh = e => {
+  em = e => {
     let {
       activity: t,
       analyticsLocations: n
@@ -381,7 +381,7 @@ eO.Header = eE, eO.Body = e => {
     partySize: a,
     members: s,
     onChannelContextMenu: c
-  } = e, u = l.useRef(null), d = (0, A.ZP)(r, true), p = (0, q.EB)(n, 32), m = (0, q.gM)(n);
+  } = e, u = l.useRef(null), d = (0, A.ZP)(r, true), p = (0, q.EB)(n, 32), h = (0, q.gM)(n);
   return (0, i.jsx)(ed, {
     children: (0, i.jsxs)("div", {
       className: ea.voiceSection,
@@ -402,9 +402,9 @@ eO.Header = eE, eO.Body = e => {
             children: (0, i.jsx)("div", {
               className: ea.voiceSectionNoGuildImage,
               style: {
-                fontSize: null != (t = eo[m.length]) ? t : eo[eo.length - 1]
+                fontSize: null != (t = eo[h.length]) ? t : eo[eo.length - 1]
               },
-              children: m
+              children: h
             })
           }), (0, i.jsx)("div", {
             className: ea.voiceSectionIconWrapper,
@@ -458,7 +458,7 @@ eO.Header = eE, eO.Body = e => {
         partySize: r,
         members: l
       })]
-    }), (0, i.jsx)(eh, {
+    }), (0, i.jsx)(em, {
       activity: a,
       analyticsLocations: o
     })]
@@ -475,8 +475,8 @@ eO.Header = eE, eO.Body = e => {
     data: f
   } = (0, P.IX)(c.application_id), {
     assets: g,
-    details: m,
-    state: h,
+    details: h,
+    state: m,
     application_id: b
   } = c, {
     hasButton: _
@@ -514,7 +514,7 @@ eO.Header = eE, eO.Body = e => {
         })
       }), (0, i.jsxs)("div", {
         className: ea.activitySectionDetails,
-        children: [es(null != m && "" !== m ? m : c.name), null != h ? ec(h) : null, (() => {
+        children: [es(null != h && "" !== h ? h : c.name), null != m ? ec(m) : null, (() => {
           let {
             timestamps: e
           } = c;
@@ -527,11 +527,11 @@ eO.Header = eE, eO.Body = e => {
             className: ea.__invalid_playTime
           }))
         })()]
-      }), (0, i.jsx)(em, {
+      }), (0, i.jsx)(eh, {
         activity: c,
         user: d
       })]
-    }), (0, i.jsx)(eh, {
+    }), (0, i.jsx)(em, {
       activity: c,
       analyticsLocations: p
     })]
@@ -663,11 +663,11 @@ eO.Header = eE, eO.Body = e => {
       color: "always-white",
       children: (0, G.P9)(p)
     })]
-  }), m = null != (n = null == (t = (0, C.Z)(r, a)) ? true : t.activityText) ? n : el.intl.string(el.t.eXan7B), h = (0, M.Z)({
+  }), h = null != (n = null == (t = (0, C.Z)(r, a)) ? true : t.activityText) ? n : el.intl.string(el.t.eXan7B), m = (0, M.Z)({
     userId: l.id,
     guildId: s
   }), b = (0, k.j)({
-    displayNameStyles: h
+    displayNameStyles: m
   });
   return (0, i.jsxs)(ed, {
     children: [(0, i.jsxs)("div", {
@@ -678,7 +678,7 @@ eO.Header = eE, eO.Body = e => {
         "aria-label": l.username,
         className: ea.applicationStreamingAvatar
       }), (0, i.jsxs)("div", {
-        children: [es(en.ZP.getName(l), b), ec(m)]
+        children: [es(en.ZP.getName(l), b), ec(h)]
       }), (0, i.jsx)(Z.ZP, {
         size: Z.ZP.Sizes.SMALL
       })]
@@ -698,29 +698,29 @@ eO.Header = eE, eO.Body = e => {
     })
   }, [u]);
   let d = (0, c.Wu)([J.default, K.default], () => Array.from(a).map(e => K.default.getId() === e ? null : J.default.getUser(e)).filter(et.lm)),
-    p = (0, h.O)(),
+    p = (0, m.O)(),
     {
       analyticsLocations: g
     } = (0, N.ZP)();
   if (null == u) return null;
-  let m = x.Z.getApplication(u);
-  if (null == m) return null;
+  let h = x.Z.getApplication(u);
+  if (null == h) return null;
   let b = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at
     } : true,
-    E = (0, ee.xF)(m.id, o, 300);
+    E = (0, ee.xF)(h.id, o, 300);
   return (0, i.jsxs)(ed, {
     children: [(0, i.jsxs)("div", {
       className: ea.embeddedActivityTopRow,
       children: [(0, i.jsx)(U.Z, {
-        game: m,
+        game: h,
         size: U.A.XSMALL,
         className: ea.embeddedActivityIcon
       }), (0, i.jsx)("div", {
         className: ea.embeddedActivityName,
         children: (0, i.jsx)(f.Text, {
           variant: "text-sm/semibold",
-          children: m.name
+          children: h.name
         })
       }), null != b ? (0, i.jsx)("div", {
         className: ea.embeddedActivityTimeElapsed,
@@ -736,7 +736,7 @@ eO.Header = eE, eO.Body = e => {
       className: ea.embeddedActivityPlayerContainer,
       children: [null != E ? (0, i.jsx)("img", {
         src: E,
-        alt: m.name,
+        alt: h.name,
         className: ea.embeddedActivityImage
       }) : null, (0, i.jsxs)("div", {
         className: ea.embeddedActivityImageOverlay,

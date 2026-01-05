@@ -96,7 +96,7 @@ function Z(e) {
   let p = i.useRef(null),
     {
       parentAnalyticsLocation: f
-    } = (0, m.ZP)(),
+    } = (0, h.ZP)(),
     {
       channel: v,
       user: Z,
@@ -171,10 +171,10 @@ function Z(e) {
     })
   }
   let q = (0, o.e7)([I.Z], () => I.Z.getVoiceVolume(Z.id)),
-    K = (0, h._)({
+    K = (0, m._)({
       isSpeaking: U,
       voiceDb: q,
-      spreadDirection: h.h.INSET_ONLY,
+      spreadDirection: m.h.INSET_ONLY,
       maxInnerSpreadRadius: 5
     });
   return (0, r.jsx)(O.Z, {
@@ -222,8 +222,8 @@ function w(e) {
     channel: n,
     className: l
   } = e, [u, d] = i.useState(false), g = (0, o.e7)([v.default], () => v.default.getId()), {
-    containerRef: m,
-    maxVisibleAvatars: h
+    containerRef: h,
+    maxVisibleAvatars: m
   } = function(e) {
     let [t, n] = i.useState(7), r = (0, f.Z)(() => {
       let t = null == l ? true : l.current;
@@ -245,7 +245,7 @@ function w(e) {
         if (r.length >= n) return [r, true];
         r.push(i)
       } return [r, false]
-  }(t, g, h), E = u ? c.V_R : c.qJs, O = u ? T.intl.string(T.t["Z/Tya5"]) : T.intl.string(T.t.XR5BAc), y = (0, r.jsx)(s.u, {
+  }(t, g, m), E = u ? c.V_R : c.qJs, O = u ? T.intl.string(T.t["Z/Tya5"]) : T.intl.string(T.t.XR5BAc), y = (0, r.jsx)(s.u, {
     text: O,
     ariaHidden: true,
     children: (0, r.jsx)(c.hU, {
@@ -262,7 +262,7 @@ function w(e) {
     className: a()(N.scroller, l),
     fade: true,
     children: (0, r.jsxs)("div", {
-      ref: m,
+      ref: h,
       className: a()(N.voiceUsers, !u && N.collapsed),
       role: "group",
       "aria-label": T.intl.string(T.t["/ZgaVU"]),

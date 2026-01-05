@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 935261, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk479157 = require("./479157.js");
 
-function m(e) {
+function h(e) {
   let {
     platform: t
   } = e;
@@ -28,7 +28,7 @@ function m(e) {
   }) : null
 }
 
-function h(e) {
+function m(e) {
   let {
     voiceState: t,
     awaitingRemoteSessionInfo: n
@@ -37,14 +37,14 @@ function h(e) {
     return null == (e = s.Z.getSessionById(null != (n = null == t ? true : t.sessionId) ? n : "")) ? true : e.clientInfo.os
   }), u = null != i ? i : c;
   if (null == u || !p.al.has(u)) return null;
-  let h = null != n,
-    b = h ? u === p.YE.XBOX ? f.intl.string(f.t.UjA4HX) : f.intl.string(f.t.QCw1oW) : u === p.YE.XBOX ? f.intl.format(f.t["ynEs/Y"], {}) : f.intl.format(f.t.TZ17Bg, {});
+  let m = null != n,
+    b = m ? u === p.YE.XBOX ? f.intl.string(f.t.UjA4HX) : f.intl.string(f.t.QCw1oW) : u === p.YE.XBOX ? f.intl.format(f.t["ynEs/Y"], {}) : f.intl.format(f.t.TZ17Bg, {});
   return (0, r.jsxs)("div", {
-    className: l()(g.root, h ? g.connecting : g.connected),
-    children: [(0, r.jsx)(m, {
+    className: l()(g.root, m ? g.connecting : g.connected),
+    children: [(0, r.jsx)(h, {
       platform: u
     }), (0, r.jsx)(o.Text, {
-      color: h ? "text-strong" : "always-white",
+      color: m ? "text-strong" : "always-white",
       variant: "text-xs/medium",
       children: b
     })]

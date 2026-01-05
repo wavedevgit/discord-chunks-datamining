@@ -1,71 +1,80 @@
-/** Chunk was on 40184 **/
-/** chunk id: 368835, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 368835, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => d
+  Z: () => _
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk390551 = require("./390551.js"),
   Chunk130692 = require("./130692.js"),
   Chunk996606 = require("./996606.jsx"),
   Chunk72743 = require("./72743.js");
-let d = e => {
-  let {
-    seats: t,
-    participant: n,
-    participants: l,
-    channel: d,
-    idle: p
-  } = e, f = t.find(e => e.claimedBy === n.userId), h = null != f, [m, g] = r.useState(false), b = (0, s.Z)(n), {
-    x: y,
-    y: C
-  } = r.useMemo(() => {
-    let e = function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          var i;
-          i = n[t], t in e ? Object.defineProperty(e, t, {
-            value: i,
-            enumerable: true,
-            configurable: true,
-            writable: true
-          }) : e[t] = i
-        })
+
+function d(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
+function f(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      d(e, t, n[t])
+    })
+  }
+  return e
+}
+let p = 1080,
+  _ = e => {
+    let {
+      seats: t,
+      participant: n,
+      participants: a,
+      channel: d,
+      idle: _,
+      enableAnimations: m = true
+    } = e, h = t.find(e => e.claimedBy === n.userId), g = null != h, [E, b] = i.useState(false), y = (0, l.Z)(n), {
+      x: O,
+      y: v
+    } = i.useMemo(() => {
+      let e = f({}, n.position);
+      if (g) {
+        let t = s.Is[h.id - 1];
+        null != t && (e.x = t.x + t.player.x, e.y = t.y + t.player.y - y.height)
       }
       return e
-    }({}, n.position);
-    if (h) {
-      let t = o.Is[f.id - 1];
-      null != t && (e.x = t.x + t.player.x, e.y = t.y + t.player.y - b.height)
-    }
-    return e
-  }, [n.position, f, h, b]);
-  return (0, i.jsx)("div", {
-    className: a()(u.participant, {
-      [u.hovering]: m
-    }),
-    style: {
-      transform: "translate3d(".concat(y, "px, ").concat(C, "px, 0)"),
-      zIndex: C
-    },
-    children: h && (0, i.jsx)("div", {
-      className: u.avatar,
-      children: (0, i.jsx)(c.Z, {
-        seats: t,
-        claimedSeat: f,
-        participant: n,
-        participants: l,
-        channel: d,
-        idle: p,
-        flip: y > 1080,
-        handleHover: e => g(e)
+    }, [n.position, h, g, y]);
+    return (0, r.jsx)("div", {
+      className: o()(u.participant, {
+        [u.hovering]: E
+      }),
+      style: {
+        transform: "translate3d(".concat(O, "px, ").concat(v, "px, 0)"),
+        zIndex: v
+      },
+      children: g && (0, r.jsx)("div", {
+        className: u.avatar,
+        children: (0, r.jsx)(c.Z, {
+          seats: t,
+          claimedSeat: h,
+          participant: n,
+          participants: a,
+          channel: d,
+          idle: _,
+          flip: O > p,
+          handleHover: e => b(e),
+          enableAnimations: m
+        })
       })
     })
-  })
-}
+  }

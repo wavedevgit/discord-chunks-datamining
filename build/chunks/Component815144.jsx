@@ -30,7 +30,7 @@ let g = Chunk473749.memo(function(e) {
   if (null == l) return null;
   let g = s.EFr.SIZE_32,
     b = s.ny6[g].size,
-    y = l.getAvatarURL(t.guild_id, b);
+    C = l.getAvatarURL(t.guild_id, b);
   return (0, i.jsxs)("div", {
     className: a()(m.participantItem, {
       [m.speaking]: f
@@ -38,7 +38,7 @@ let g = Chunk473749.memo(function(e) {
     children: [(0, i.jsx)(s.qEK, {
       className: m.avatar,
       size: g,
-      src: y,
+      src: C,
       "aria-hidden": true
     }), (0, i.jsx)("div", {
       className: m.username,

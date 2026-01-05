@@ -1,5 +1,6 @@
-/** Chunk was on 40184 **/
-/** chunk id: 663537, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 663537, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   seat: "_68e91bfe440e16fa-seat",
   claimed: "_68e91bfe440e16fa-claimed",

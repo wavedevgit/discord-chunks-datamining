@@ -58,7 +58,7 @@ function Z(e) {
     trailingIconClass: P.messageContentTrailingIcon,
     leadingIconClass: P.messageContentLeadingIcon,
     iconSize: _.WW
-  }), A = (0, y.cv)(n), w = A.length > 0 ? A.map(e => (0, i.jsx)(C.Z, {
+  }), A = (0, C.cv)(n), w = A.length > 0 ? A.map(e => (0, i.jsx)(y.Z, {
     className: P.sticker,
     size: 128,
     sticker: e,
@@ -139,11 +139,11 @@ function T(e) {
     isFrozen: l,
     count: 3,
     lingerMs: I
-  }), m = r.useRef({}), [g, b] = r.useState({}), y = r.useCallback((e, t) => {
+  }), m = r.useRef({}), [g, b] = r.useState({}), C = r.useCallback((e, t) => {
     null == t ? delete m.current[e] : m.current[e] = t
-  }, []), C = r.useRef(g);
+  }, []), y = r.useRef(g);
   r.useLayoutEffect(() => {
-    C.current = g
+    y.current = g
   }), r.useLayoutEffect(() => {
     let e = {},
       t = 0;
@@ -151,7 +151,7 @@ function T(e) {
       var n;
       let r = null != (n = m.current[i.id]) ? n : 0;
       e[i.id] = t, t += r + 8
-    }(0, o.isEqual)(e, C.current) || b(e)
+    }(0, o.isEqual)(e, y.current) || b(e)
   }, [h]);
   let x = h.map(e => ({
       message: e,
@@ -203,7 +203,7 @@ function T(e) {
         p(false)
       },
       children: O((e, t) => (0, i.jsx)(s.animated.div, {
-        ref: e => y(t.message.id, null != e ? e.offsetHeight : null),
+        ref: e => C(t.message.id, null != e ? e.offsetHeight : null),
         className: P.toastWrapper,
         style: e,
         children: (0, i.jsx)(Z, {

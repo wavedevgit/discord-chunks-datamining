@@ -19,9 +19,9 @@ let g = e => {
     displayOptions: t,
     targetElementRef: n,
     onRequestClose: g,
-    onClick: m
+    onClick: h
   } = e, {
-    analyticsLocations: h
+    analyticsLocations: m
   } = (0, c.ZP)(s.Z.HOME_PAGE_SHOP_TAB), b = (0, o.ZP)(), _ = (0, a.wj)(b) ? t.assetDark : t.assetLight, E = i.useRef(g);
   return E.current = g, i.useEffect(() => () => {
     var e;
@@ -44,8 +44,8 @@ let g = e => {
       text: f.intl.string(f.t.fYfGgK),
       variant: "primary",
       onClick: () => {
-        null == m || m(), (0, u.uL)(p.Z5c.COLLECTIBLES_SHOP), (0, d.mK)({
-          analyticsLocations: h,
+        null == h || h(), (0, u.uL)(p.Z5c.COLLECTIBLES_SHOP), (0, d.mK)({
+          analyticsLocations: m,
           analyticsSource: s.Z.HOME_PAGE_SHOP_TAB
         })
       }

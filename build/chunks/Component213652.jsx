@@ -71,13 +71,13 @@ function v(e) {
     }), t))
   }, []);
   return (0, i.jsx)(p.Z, {
-    className: C.actionBarButton,
+    className: y.actionBarButton,
     onClick: () => {
       I || ((0, g.v)(n, g.d.CLIP), P ? (0, u.br)() : (0, u.C1)(v.id))
     },
     disabled: I,
     iconComponent: Z,
-    label: null == O ? y.intl.string(y.t.eg5qtV) : P || j ? _ ? S ? true : y.intl.string(y.t.U4URzP) : y.intl.string(y.t.wSS1yN) : y.intl.string(y.t.aRifJX),
+    label: null == O ? C.intl.string(C.t.eg5qtV) : P || j ? _ ? S ? true : C.intl.string(C.t.U4URzP) : C.intl.string(C.t.wSS1yN) : C.intl.string(C.t.aRifJX),
     grow: false
   })
 }

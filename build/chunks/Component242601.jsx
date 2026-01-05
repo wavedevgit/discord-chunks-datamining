@@ -460,16 +460,16 @@ function ed(e) {
     } = (0, j.s)(u),
     Y = (0, E.ZP)(e => e.currentlyShown.has(s.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION)),
     [W, q] = i.useState(!Y),
-    K = (0, m.Z)(n),
+    K = (0, h.Z)(n),
     {
       analyticsLocations: Q
-    } = (0, b.ZP)(h.Z.GUILD_HEADER);
+    } = (0, b.ZP)(m.Z.GUILD_HEADER);
   i.useEffect(() => {
     n !== K && q(!Y)
   }, [n, K, Y]);
   let [J, et] = (0, E.ZP)(e => [$.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ee.R.GUILD_HEADER_TOOLTIPS)], a.X), en = (0, _.Z)(u), er = (0, d.s9z)(d.JQI), ei = (0, o.e7)([G.Z], () => G.Z.hasLayers()), el = (0, o.e7)([L.Z], () => L.Z.shouldShow(es)), ea = (0, S.Z)(n), eo = (null == u ? true : u.features.has(X.GuildFeatures.HUB)) === true, ec = P && (null == u ? true : u.features.has(X.GuildFeatures.DISCOVERABLE)) === true, ed = (0, o.e7)([N.Z, G.Z], () => null != u && null != w && P && !G.Z.hasLayers() && N.Z.shouldShowGuildTemplateDirtyTooltip(n)), ep = (0, o.e7)([R.Z], () => R.Z.getChannel(c)), {
     isPopoutOpen: ef
-  } = (0, y.y)(), eg = null != (t = null == u ? true : u.features.has(X.GuildFeatures.COMMUNITY)) && t, em = z.ZP.isNewUser(w), eh = W && !em;
+  } = (0, y.y)(), eg = null != (t = null == u ? true : u.features.has(X.GuildFeatures.COMMUNITY)) && t, eh = z.ZP.isNewUser(w), em = W && !eh;
   (0, I.Z)(u);
   let eb = (0, O.Nj)(s.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     e_ = (0, x.Z)(n),
@@ -506,7 +506,7 @@ function ed(e) {
     canShowCoachMarkAtBottom: W,
     headerAnalyticsLocations: Q,
     isTutorialHighlightDismissed: eb,
-    shouldRenderBurstCoachmark: eh,
+    shouldRenderBurstCoachmark: em,
     shouldRenderGuildPowerupPerkCoachmark: false === ey
   })
 }

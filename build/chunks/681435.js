@@ -18,8 +18,8 @@ let g = () => {
   var e;
   let t = (0, Chunk442837.e7)([Chunk874703.Z], () => Chunk874703.Z.getMarketingBySurface(Chunk115434.K.DESKTOP_SHOP_BUTTON)),
     n = !(0, Chunk481060.$sL)(),
-    [g, m] = (0, Chunk243778.XR)(require ? Chunk704215.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == exports ? true : exports.version) ? module : 0, true, true),
-    h = (0, Chunk794324.mB)(exports),
+    [g, h] = (0, Chunk243778.XR)(require ? Chunk704215.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == exports ? true : exports.version) ? module : 0, true, true),
+    m = (0, Chunk794324.mB)(exports),
     b = null != g ? ((e, t) => {
       var n, r, i, a, o, s, c, u;
       if ((null == t ? true : t.type) === l.Z.COACHTIP || e.hasPreviewAssets) {
@@ -86,10 +86,10 @@ let g = () => {
         }
       }
       return null
-    })(h, exports) : null,
+    })(m, exports) : null,
     _ = Chunk473749.useCallback(() => {
-      null != b && m(Chunk921944.L.AUTO)
-    }, [b, m]);
+      null != b && h(Chunk921944.L.AUTO)
+    }, [b, h]);
   return {
     shopButtonDisplayOptions: b,
     dismissShopButtonDC: _

@@ -99,7 +99,7 @@ function x(e) {
       })
     },
     z = () => U === S.hX.FRIEND_ANNIVERSARY ? j.intl.string(j.t.OrwKgi) : true;
-  return (0, r.jsx)(m.Z, {
+  return (0, r.jsx)(h.Z, {
     ref: t,
     isFocused: l,
     isActive: x,
@@ -115,7 +115,7 @@ function x(e) {
         status: A,
         isMobile: R,
         subText: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(h.Z, {
+          children: [(0, r.jsx)(m.Z, {
             hovered: e,
             activities: Z,
             applicationStream: w,

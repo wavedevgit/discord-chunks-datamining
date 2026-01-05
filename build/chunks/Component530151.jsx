@@ -546,7 +546,7 @@ class X extends Chunk473749.PureComponent {
       applications: e
     } = this.props;
     module.forEach(e => {
-      e.finished && m.Z.wait(() => {
+      e.finished && h.Z.wait(() => {
         b.wi(e.applicationId, e.branchId)
       })
     }), window.removeEventListener("resize", this.throttledUpdateHeight), this.isUnmounted = true
@@ -594,7 +594,7 @@ class X extends Chunk473749.PureComponent {
         },
         rowProps: {
           onContextMenu: (e, t) => {
-            h.jW(e, async () => {
+            m.jW(e, async () => {
               let {
                 default: e
               } = await n.e("98335").then(n.bind(n, 485292));

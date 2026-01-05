@@ -185,7 +185,7 @@ let k = function(e) {
             let e = [];
             return Q.forEach(t => {
               t.giftIntentType === P.hX.FRIEND_ANNIVERSARY && e.push(t)
-            }), e.sort((e, t) => h.Z.compareByDmProbability(e.userId, t.userId)), [F ? e : e.slice(0, m.nN), Q]
+            }), e.sort((e, t) => m.Z.compareByDmProbability(e.userId, t.userId)), [F ? e : e.slice(0, h.nN), Q]
           }
         default:
           return [Q]
@@ -253,7 +253,7 @@ let k = function(e) {
         })
       }, i)
     }, [ee, R, t, en, er]),
-    ea = i.useCallback(e => R === j.pJs.ALL && 0 === e && V && $ > m.nN ? (0, r.jsx)("div", {
+    ea = i.useCallback(e => R === j.pJs.ALL && 0 === e && V && $ > h.nN ? (0, r.jsx)("div", {
       className: A.sectionFooter,
       children: (0, r.jsx)(a.Button, {
         icon: F ? a.u04 : a.CJ0,

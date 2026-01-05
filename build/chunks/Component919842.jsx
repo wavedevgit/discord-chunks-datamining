@@ -33,7 +33,7 @@ function v(e) {
       ref: y,
       className: t,
       onClick: () => {
-        (0, m.Z)("header_bar"), I && l(b.L.INDIRECT_ACTION)
+        (0, h.Z)("header_bar"), I && l(b.L.INDIRECT_ACTION)
       },
       icon: o.d5i,
       tooltip: E.intl.string(_.default["CdU/PF"]),
@@ -47,7 +47,7 @@ function v(e) {
         text: E.intl.string(E.t["NX+WJN"]),
         onClick: C
       }]
-    }), I && (0, r.jsx)(h.Z, {
+    }), I && (0, r.jsx)(m.Z, {
       markAsDismissed: l
     })]
   })

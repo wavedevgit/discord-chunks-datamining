@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 766241, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => C
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -40,15 +40,15 @@ let b = e => {
       })]
     })
   },
-  y = e => {
+  C = e => {
     let {
       open: t,
       close: n,
       style: l,
       triggerRef: p
-    } = e, y = (0, c.Z)(null, n, p), C = (0, u.O)(e => e.globalMute), v = (0, u.O)(e => e.setGlobalMute), x = (0, u.O)(e => e.genre), O = (0, u.O)(e => e.setGenre), E = (0, u.O)(e => e.songIndex), j = (0, u.O)(e => e.playRadio), S = (0, u.O)(e => e.setPlayRadio), _ = (0, u.O)(e => e.playPrevSong), P = (0, u.O)(e => e.playNextSong), I = (0, o.e7)([d.Z], () => d.Z.assets), Z = r.useMemo(() => f.at[x][E], [x, E]), T = !C && j;
+    } = e, C = (0, c.Z)(null, n, p), y = (0, u.O)(e => e.globalMute), v = (0, u.O)(e => e.setGlobalMute), x = (0, u.O)(e => e.genre), O = (0, u.O)(e => e.setGenre), E = (0, u.O)(e => e.songIndex), j = (0, u.O)(e => e.playRadio), S = (0, u.O)(e => e.setPlayRadio), _ = (0, u.O)(e => e.playPrevSong), P = (0, u.O)(e => e.playNextSong), I = (0, o.e7)([d.Z], () => d.Z.assets), Z = r.useMemo(() => f.at[x][E], [x, E]), T = !y && j;
     return (0, i.jsxs)("div", {
-      ref: y,
+      ref: C,
       className: a()(g.controlPopout, {
         [g.hidden]: !t
       }),
@@ -154,14 +154,14 @@ let b = e => {
           children: m.intl.string(h.default.IWSNp9)
         }), (0, i.jsx)("div", {
           className: a()({
-            [g.muted]: C
+            [g.muted]: y
           }),
           children: (0, i.jsx)(s.hU, {
             variant: "icon-only",
             "aria-label": m.intl.string(h.default.Tf8XqQ),
-            icon: C ? s.OyP : s.gj8,
+            icon: y ? s.OyP : s.gj8,
             onClick: e => {
-              e.preventDefault(), e.stopPropagation(), v(!C)
+              e.preventDefault(), e.stopPropagation(), v(!y)
             }
           })
         })]
@@ -169,13 +169,13 @@ let b = e => {
         gap: 8,
         children: [(0, i.jsx)(b, {
           soundKey: f.Yg.RADIO,
-          globalMute: C
+          globalMute: y
         }), (0, i.jsx)(b, {
           soundKey: f.Yg.ENVIRONMENT,
-          globalMute: C
+          globalMute: y
         }), (0, i.jsx)(b, {
           soundKey: f.Yg.CAMPFIRE,
-          globalMute: C
+          globalMute: y
         })]
       })]
     })

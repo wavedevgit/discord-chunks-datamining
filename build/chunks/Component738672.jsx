@@ -20,14 +20,14 @@ function d(e) {
     renderComponent: p,
     nudgeAlignIntoViewport: f = false,
     skipForceHide: h = false
-  } = e, m = r.useContext(c.h9), [g, b] = r.useState(""), [y, C] = r.useState(false), v = (0, l.e7)([s.ZP], () => s.ZP.callHeaderHeight), x = r.useRef(null), O = r.useRef(0);
+  } = e, m = r.useContext(c.h9), [g, b] = r.useState(""), [C, y] = r.useState(false), v = (0, l.e7)([s.ZP], () => s.ZP.callHeaderHeight), x = r.useRef(null), O = r.useRef(0);
   r.useEffect(() => {
     let e = t.current;
     if (null != e) return e.addEventListener("click", d), () => e.removeEventListener("click", d)
   }), r.useEffect(() => {
     if (!h) {
       var e, t;
-      b(String(O.current)), C(true !== v && v < (null != (t = null == (e = x.current) ? true : e.clientHeight) ? t : 300) + 24), O.current += 1
+      b(String(O.current)), y(true !== v && v < (null != (t = null == (e = x.current) ? true : e.clientHeight) ? t : 300) + 24), O.current += 1
     }
   }, [v, x, h]);
   let {
@@ -49,7 +49,7 @@ function d(e) {
         onBlur: j,
         onMouseLeave: j,
         children: p({
-          hidden: y || m || n,
+          hidden: C || m || n,
           onDismiss: d
         })
       })

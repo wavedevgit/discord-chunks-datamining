@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 97375, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk24917 = require("./24917.js"),
   Chunk106351 = require("./106351.js"),
@@ -15,7 +15,7 @@ var Chunk24917 = require("./24917.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js");
-let m = {
+let h = {
   [Chunk231338.Et.INVITE_USER_EMBEDDED]: (0, Chunk45792.S)(Chunk231338.Et.INVITE_USER_EMBEDDED, {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RELATIONSHIPS_READ]
@@ -32,25 +32,25 @@ let m = {
       if (null == p) throw new r.O({
         errorCode: g.lT.INVALID_COMMAND
       }, "No application.");
-      let m = c.ZP.getConnectedActivityLocation();
-      if (null == m) throw new r.O({
+      let h = c.ZP.getConnectedActivityLocation();
+      if (null == h) throw new r.O({
         errorCode: g.lT.NO_ELIGIBLE_ACTIVITY
       }, "No eligible activity for application. Ensure an activity was set using setActivity.");
-      switch (m.kind) {
+      switch (h.kind) {
         case l.E.GUILD_CHANNEL:
         case l.E.GUILD_CHANNEL_MESSAGE:
           t = (0, d.T)().channel;
           break;
         case l.E.PRIVATE_CHANNEL:
         case l.E.PRIVATE_CHANNEL_MESSAGE:
-          let h = u.Z.getChannel(m.channel_id);
-          if (null == h) throw new r.O({
+          let m = u.Z.getChannel(h.channel_id);
+          if (null == m) throw new r.O({
             errorCode: g.lT.INVALID_CHANNEL
           }, "Invalid channel");
-          if (h.type === i.d.DM) throw new r.O({
+          if (m.type === i.d.DM) throw new r.O({
             errorCode: g.lT.INVALID_CHANNEL
           }, "Cannot send invite to a DM");
-          t = h;
+          t = m;
           break;
         default:
           throw new r.O({

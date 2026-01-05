@@ -106,20 +106,20 @@ function w(e) {
 function M(e) {
   let {
     channel: t
-  } = e, l = (0, s.e7)([C.Z], () => null != t ? C.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && S.default.extractTimestamp(l.id) < Date.now() - P._8R, x = (0, s.e7)([y.default], () => (null == l ? true : l.ownerId) === y.default.getId(), [l]), {
+  } = e, l = (0, s.e7)([y.Z], () => null != t ? y.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && S.default.extractTimestamp(l.id) < Date.now() - P._8R, x = (0, s.e7)([C.default], () => (null == l ? true : l.ownerId) === C.default.getId(), [l]), {
     canInvite: M,
     canManageGuild: R,
     canMessage: D
-  } = (0, h.TE)(t, l), k = (0, s.e7)([v.default], () => {
+  } = (0, h.TE)(t, l), L = (0, s.e7)([v.default], () => {
     var e, t;
     return (null == (e = v.default.getCurrentUser()) ? true : e.desktop) === true || (null == (t = v.default.getCurrentUser()) ? true : t.mobile) === true
   }), {
-    guildPopulated: L,
+    guildPopulated: k,
     guildMessaged: U,
     guildPersonalized: V
   } = (0, h.h_)(l), {
-    handleInvite: H,
-    handleMessage: F,
+    handleInvite: F,
+    handleMessage: H,
     handlePersonalize: B,
     handleDownload: G,
     handleAddApplication: W
@@ -194,7 +194,7 @@ function M(e) {
         }))
       }, [e])
     }
-  }(l), z = !(k || L || U || V), {
+  }(l), z = !(L || k || U || V), {
     titleAnimatedStyle: q,
     opacities: K
   } = function(e) {
@@ -252,8 +252,8 @@ function M(e) {
     children: (0, i.jsx)(w, {
       iconUrl: u.YvY,
       header: Z.intl.string(Z.t.q9n0Ta),
-      completed: L,
-      onClick: H
+      completed: k,
+      onClick: F
     })
   }, "invite")), R && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -275,7 +275,7 @@ function M(e) {
       iconUrl: u.qMX,
       header: Z.intl.string(Z.t["SoP7+l"]),
       completed: U,
-      onClick: F
+      onClick: H
     })
   }, "message")), (0, j.isWeb)() && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -285,7 +285,7 @@ function M(e) {
     children: (0, i.jsx)(w, {
       iconUrl: u.yIb,
       header: Z.intl.string(Z.t.pGVNI9),
-      completed: k,
+      completed: L,
       onClick: G
     })
   }, "download")), Q.push((0, i.jsx)(o.Z.div, {

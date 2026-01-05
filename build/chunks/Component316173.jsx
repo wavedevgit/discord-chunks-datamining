@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 316173, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,19 +15,19 @@ var Chunk54381 = require("./54381.js"),
   Chunk820254 = require("./820254.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk187794 = require("./187794.js");
-let m = "isHideDevBanner",
-  h = () => {
+let h = "isHideDevBanner",
+  m = () => {
     var e;
-    let [t, n] = (0, Chunk473749.useState)((null == (e = Chunk433517.K.get(m, "false")) ? true : module.toString()) === "true"), l = (0, Chunk442837.e7)([Chunk304761.C], () => {
+    let [t, n] = (0, Chunk473749.useState)((null == (e = Chunk433517.K.get(h, "false")) ? true : module.toString()) === "true"), l = (0, Chunk442837.e7)([Chunk304761.C], () => {
       var e;
       return (0, Chunk865427.fD)() ? null == (e = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : module.discord_web : null
     });
     if (exports) return null;
-    let h = () => {
-        Chunk433517.K.set(m, true), require(true)
+    let m = () => {
+        Chunk433517.K.set(h, true), require(true)
       },
       b = () => (0, Chunk54381.jsx)(Chunk481060.P3F, {
-        onClick: h,
+        onClick: m,
         className: Chunk187794.closeButton,
         "aria-label": Chunk388032.intl.string(Chunk388032.t.WAI6xu),
         children: (0, Chunk54381.jsx)(Chunk481060.Dio, {
@@ -46,7 +46,7 @@ let m = "isHideDevBanner",
       children: [(0, Chunk54381.jsx)(Chunk820254.Z, {
         className: Chunk187794.icon
       }), Chunk388032.intl.format(Chunk388032.t.uyrfYF, {
-        buildNumber: "482891"
+        buildNumber: "482911"
       }), (0, Chunk54381.jsx)(b, {})]
     }) : null
   }

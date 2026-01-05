@@ -39,29 +39,29 @@ function P(e) {
     setIsHovered: M,
     onMouseEnter: R,
     onMouseLeave: D
-  } = (0, x.Z)(200, 300), k = (0, d.p)({
+  } = (0, x.Z)(200, 300), L = (0, d.p)({
     surface: c.eR.VOICE_LAUNCHER
-  }), L = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), U = !A, V = r.useCallback(e => {
+  }), k = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), U = !A, V = r.useCallback(e => {
     "focus" !== e.type && R()
-  }, [R]), H = (0, v.bp)() === j.IlC.POPOUT, {
-    parentAnalyticsLocation: F,
+  }, [R]), F = (0, v.bp)() === j.IlC.POPOUT, {
+    parentAnalyticsLocation: H,
     newestAnalyticsLocation: B
   } = (0, g.ZP)(), G = r.useCallback(() => {
-    (0, y.v)(F, y.d.ACTIVITY), (0, b.Z)({
+    (0, C.v)(H, C.d.ACTIVITY), (0, b.Z)({
       context: null != t ? {
         type: "channel",
         channel: t
       } : {
         type: "contextless"
       },
-      openInPopout: H,
+      openInPopout: F,
       analyticsLocation: B
     })
-  }, [t, H, B, F]), W = [];
+  }, [t, F, B, H]), W = [];
   A || W.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, f.Z)(t.id) && !A && W.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), A || W.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let z = r.useRef(false),
     q = r.useRef(null);
-  return (0, i.jsx)(C.ZP, {
+  return (0, i.jsx)(y.ZP, {
     contentTypes: W,
     children: e => {
       let {
@@ -97,9 +97,9 @@ function P(e) {
             onClick: () => l(S.L.UNKNOWN)
           }) : (0, i.jsx)(i.Fragment, {})
         },
-        children: () => (0, i.jsx)(C.Xf, {
+        children: () => (0, i.jsx)(y.Xf, {
           contentType: a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE,
-          latestVersion: k,
+          latestVersion: L,
           children: e => {
             let {
               visibleContent: t,
@@ -116,7 +116,7 @@ function P(e) {
                     disabled: A,
                     "aria-label": N,
                     label: U ? true : N,
-                    isActivityActive: L,
+                    isActivityActive: k,
                     onClick: () => {
                       G(), (r === a.z.ACTIVITIES_MINI_SHELF_SPARKLES || r === a.z.ACTIVITY_GDM_ROCKET_SPARKLE || r === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || r === a.z.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || r === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(S.L.TAKE_ACTION), t === a.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(S.L.TAKE_ACTION)
                     },

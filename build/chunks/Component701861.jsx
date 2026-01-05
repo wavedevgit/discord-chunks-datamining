@@ -63,7 +63,7 @@ function A(e) {
       applicationId: l ? n : null,
       location: "Friends"
     })
-  }, [n, l, t.id]), m = i.useCallback(() => {
+  }, [n, l, t.id]), h = i.useCallback(() => {
     let e = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
     c.Z.show({
       title: j.intl.formatToPlainString(j.t.fPLvZd, {
@@ -77,13 +77,13 @@ function A(e) {
       cancelText: j.intl.string(j.t["ETE/oC"]),
       onConfirm: g
     })
-  }, [g, l, t]), h = (0, o.e7)([b.Z], () => b.Z.supports(N.AN.VIDEO)), _ = t.isProvisional, v = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
+  }, [g, l, t]), m = (0, o.e7)([b.Z], () => b.Z.supports(N.AN.VIDEO)), _ = t.isProvisional, v = l ? j.intl.string(j.t.RLcE6x) : j.intl.string(j.t.cvSt1J);
   return (0, r.jsxs)(s.v2r, {
     navId: "friend-row",
     "aria-label": j.intl.string(j.t.liqwPJ),
     onClose: d.Zy,
     onSelect: a,
-    children: [!_ && h ? (0, r.jsx)(s.sNh, {
+    children: [!_ && m ? (0, r.jsx)(s.sNh, {
       id: "start-video-call",
       label: j.intl.string(j.t.oCqlGG),
       action: f
@@ -94,7 +94,7 @@ function A(e) {
     }), (0, r.jsx)(s.sNh, {
       id: "remove-friend",
       label: v,
-      action: m,
+      action: h,
       color: "danger"
     })]
   })
@@ -117,9 +117,9 @@ class Z extends Chunk473749.PureComponent {
       isGameRelationship: o,
       giftIntentType: c,
       hasFriendAnniversarySection: u,
-      sectionIndex: m
+      sectionIndex: h
     } = this.props, {
-      isActiveRow: h
+      isActiveRow: m
     } = this.state;
     return (0, Chunk522558.i)(Chunk100527.Z.FRIENDS_LIST) && Chunk668781 === Chunk474936.hX.FRIEND_ANNIVERSARY && Chunk493683 && 0 === Chunk703656 ? (0, Chunk54381.jsx)(Chunk762500.Z, {
       ref: this.peopleListItemRef,
@@ -182,8 +182,8 @@ class Z extends Chunk473749.PureComponent {
         user: t
       } = this.props;
       e.stopPropagation();
-      let n = a().find(h.Z.getMutablePrivateChannels(), e => e.type === S.d4z.DM && e.getRecipientId() === t.id);
-      null != n ? (0, m.uL)(S.Z5c.CHANNEL(S.ME, n.id)) : u.Z.openPrivateChannel({
+      let n = a().find(m.Z.getMutablePrivateChannels(), e => e.type === S.d4z.DM && e.getRecipientId() === t.id);
+      null != n ? (0, h.uL)(S.Z5c.CHANNEL(S.ME, n.id)) : u.Z.openPrivateChannel({
         recipientIds: t.id
       })
     }), x(this, "handleOpenActionsMenu", e => {

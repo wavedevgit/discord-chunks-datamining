@@ -50,7 +50,7 @@ class O extends Chunk473749.PureComponent {
           connected: r,
           unread: i
         } = this.props, l = E;
-        return (0, h.isMac)() && !r ? l : (0, h.isLinux)() || !r ? (i && (l = "UNREAD"), l) : l = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
+        return (0, m.isMac)() && !r ? l : (0, m.isLinux)() || !r ? (i && (l = "UNREAD"), l) : l = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
       })
   }
 }

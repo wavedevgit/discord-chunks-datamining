@@ -66,16 +66,16 @@ function f(e) {
   let {
     className: t,
     focusSectionProps: n
-  } = e, [a, o] = i.useState(false), [f, g] = i.useState(0), m = i.useRef(null), h = e => {
+  } = e, [a, o] = i.useState(false), [f, g] = i.useState(0), h = i.useRef(null), m = e => {
     clearTimeout(f), g(setTimeout(() => {
       o(e)
     }, 100))
   };
   return (0, r.jsx)("div", {
-    onMouseEnter: () => h(true),
-    onMouseLeave: () => h(false),
+    onMouseEnter: () => m(true),
+    onMouseLeave: () => m(false),
     children: (0, r.jsx)(l.yRy, {
-      targetElementRef: m,
+      targetElementRef: h,
       shouldShow: a,
       animation: l.yRy.Animation.NONE,
       position: "bottom",
@@ -91,7 +91,7 @@ function f(e) {
           isShown: a
         } = i;
         return (0, r.jsx)(s.JO, u({
-          ref: m,
+          ref: h,
           onClick: d,
           icon: l.nnZ,
           "aria-label": c.intl.string(c.t["5LqopY"]),

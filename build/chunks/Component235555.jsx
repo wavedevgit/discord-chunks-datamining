@@ -85,7 +85,7 @@ class E extends Chunk473749.PureComponent {
       let {
         party: e
       } = this.props;
-      return (0, r.jsx)(h.Z, {
+      return (0, r.jsx)(m.Z, {
         party: e,
         header: b.intl.formatToPlainString(b.t.I9et1z, {
           count: e.length

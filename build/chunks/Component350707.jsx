@@ -3,7 +3,7 @@
 require.d(exports, {
   ZP: () => O,
   cy: () => v,
-  iu: () => C
+  iu: () => y
 }), require("./388685.js");
 var i, r, l, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -38,7 +38,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +50,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var C = ((r = {}).CENTER = "center", r.LEFT = "left", r),
+var y = ((r = {}).CENTER = "center", r.LEFT = "left", r),
   v = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
 class x extends Chunk473749.PureComponent {
   componentDidMount() {
@@ -157,7 +157,7 @@ class O extends(i = Chunk473749.PureComponent) {
         return r
       }(module, ["renderMedia", "textAlign", "onComplete", "onSkipAll", "isLongText", "title", "body", "children", "spacing", "forceTheme", "innerRef"]),
       m = "top" === Chunk388032.position || "bottom" === Chunk388032.position ? "center" : "top";
-    return (0, Chunk54381.jsx)(Chunk481060.yRy, y(b({
+    return (0, Chunk54381.jsx)(Chunk481060.yRy, C(b({
       targetElementRef: Chunk981631
     }, Chunk388032), {
       align: Chunk308779,
@@ -190,7 +190,7 @@ class O extends(i = Chunk473749.PureComponent) {
       } = this.props, s = null != o;
       return (0, a.jsx)(u.f6W, {
         theme: i,
-        children: e => (0, a.jsx)(x, y(b({}, this.props), {
+        children: e => (0, a.jsx)(x, C(b({}, this.props), {
           className: c()({
             [m.bottom]: "bottom" === n,
             [m.contentNarrowNoMedia]: !r && !s,
@@ -211,6 +211,6 @@ class O extends(i = Chunk473749.PureComponent) {
     })
   }
 }
-g(O, "TextAlignments", C), g(O, "defaultProps", {
+g(O, "TextAlignments", y), g(O, "defaultProps", {
   textAlign: "left"
 })

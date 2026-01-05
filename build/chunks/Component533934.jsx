@@ -184,7 +184,7 @@ let eR = (0, Chunk608787.Un)({
     } = i.params, f = null != c ? c : true;
     null == f && null != i.params.gameShopPageIndex && (f = eP.oC.GAME_SHOP);
     let g = (0, p.e7)([ev.Z], () => ev.Z.getGuild(o)),
-      m = (0, p.e7)([eO.ZP], () => null == o ? null : eO.ZP.getSelfMember(o)),
+      h = (0, p.e7)([eO.ZP], () => null == o ? null : eO.ZP.getSelfMember(o)),
       b = (0, eo.BU)(o, "ChannelRenderer"),
       _ = (null == g || null == (t = g.features) ? true : t.has(ej.GuildFeatures.GAME_SERVERS)) === true,
       E = (0, p.e7)([K.Z], () => {
@@ -199,7 +199,7 @@ let eR = (0, Chunk608787.Un)({
             return
         }
       });
-    (0, ed.WF)(f) && (0, ed.WF)(d) || (null != g && (0, eh.uL)(ej.Z5c.CHANNEL(g.id, (0, ep.Z)(g))), (0, J.V)());
+    (0, ed.WF)(f) && (0, ed.WF)(d) || (null != g && (0, em.uL)(ej.Z5c.CHANNEL(g.id, (0, ep.Z)(g))), (0, J.V)());
     let O = (0, w.C4)(o, "channel_renderer");
     if (null != o && null != f && (0, eP.AB)(f)) switch (f) {
       case eP.oC.ROLE_SUBSCRIPTIONS:
@@ -264,13 +264,13 @@ let eR = (0, Chunk608787.Un)({
       default:
         (0, eS.vE)(f)
     }
-    if ((0, H.p3)(g, m)) return (0, r.jsx)(V.Z, {
+    if ((0, H.p3)(g, h)) return (0, r.jsx)(V.Z, {
       guildId: o,
       channelId: f
     });
     if ((null == a ? true : a.type) === ej.d4z.GUILD_STORE) {
       let e = eT.default.cast(i.params.messageId);
-      return (0, r.jsx)(h.Z, {
+      return (0, r.jsx)(m.Z, {
         channel: a,
         inputSkuId: e
       }, a.id)
@@ -302,7 +302,7 @@ let eR = (0, Chunk608787.Un)({
       messageId: n
     } = e.match.params;
     return (i.useEffect(() => {
-      null != t && null != n && m.Z.jumpToMessage({
+      null != t && null != n && h.Z.jumpToMessage({
         channelId: t,
         messageId: n,
         flash: true,
@@ -322,7 +322,7 @@ let eR = (0, Chunk608787.Un)({
     let {
       match: t
     } = e;
-    return (0, eh.uL)(ej.Z5c.ME), (0, W.Z)(t.params.inviteCode), null
+    return (0, em.uL)(ej.Z5c.ME), (0, W.Z)(t.params.inviteCode), null
   },
   e0 = () => (0, Chunk54381.jsx)(Chunk425369.Z, {}),
   e1 = () => (0, Chunk54381.jsx)(Chunk715702.Z, {}),
@@ -343,8 +343,8 @@ function e3() {
 let e8 = e => (0, r.jsx)(T.Z, eL({}, e)),
   e5 = () => (0, Chunk54381.jsx)(Chunk270759.Z, {}),
   e2 = () => (0, Chunk54381.jsx)(Chunk927220.Z, {}),
-  e7 = () => (0, Chunk54381.jsx)(Chunk745052.Z, {}),
-  e9 = () => (0, Chunk54381.jsx)(Chunk179742.Z, {}),
+  e9 = () => (0, Chunk54381.jsx)(Chunk745052.Z, {}),
+  e7 = () => (0, Chunk54381.jsx)(Chunk179742.Z, {}),
   e6 = e => {
     let t = e.location.pathname;
     return (0, r.jsx)(O.Z, {
@@ -457,13 +457,13 @@ function tt(e) {
     location: c
   });
   let u = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()),
-    m = (0, R.T)("ChannelSidebar"),
-    h = (0, Z.useAppSidebarState)(e => !e.isOpen) && m;
+    h = (0, R.T)("ChannelSidebar"),
+    m = (0, Z.useAppSidebarState)(e => !e.isOpen) && h;
   i.useLayoutEffect(() => {
-    if (m) {
+    if (h) {
       var e;
       let t = parseInt(null != (e = f.K.get(b.nT)) ? e : "");
-      Number.isNaN(t) && (t = b.qO), t = Math.min(Math.max(t, b.li), b.zx), !m && t <= b.p8 && (t = b.qO), te(t);
+      Number.isNaN(t) && (t = b.qO), t = Math.min(Math.max(t, b.li), b.zx), !h && t <= b.p8 && (t = b.qO), te(t);
       let n = e => {
         e.metaKey && "b" === e.key && Z.useAppSidebarState.setState(e => ({
           isOpen: !e.isOpen
@@ -473,14 +473,14 @@ function tt(e) {
         document.removeEventListener("keydown", n)
       }
     }
-  }, [m]), i.useLayoutEffect(() => {
-    if (h) te(b.p8);
+  }, [h]), i.useLayoutEffect(() => {
+    if (m) te(b.p8);
     else {
       var e;
       let t = parseInt(null != (e = f.K.get(b.nT)) ? e : "");
       Number.isNaN(t) && (t = b.qO), te(t)
     }
-  }, [h]);
+  }, [m]);
   let _ = i.useRef(null),
     E = i.useCallback((e, t) => {
       var n;
@@ -488,10 +488,10 @@ function tt(e) {
       let r = t < b.li / 3;
       t <= b.li ? document.body.classList.add(ew.draggingMin) : document.body.classList.remove(ew.draggingMin), t >= b.zx ? document.body.classList.add(ew.draggingMax) : document.body.classList.remove(ew.draggingMax);
       let i = t - e;
-      null == (n = _.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / b.p8), .25))), m && (Z.useAppSidebarState.setState({
+      null == (n = _.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / b.p8), .25))), h && (Z.useAppSidebarState.setState({
         isOpen: !r
       }), r && te(b.p8))
-    }, [m]),
+    }, [h]),
     O = i.useCallback(() => {
       document.body.classList.add(ew.dragging)
     }, []),
@@ -517,8 +517,8 @@ function tt(e) {
       }))
     }, []);
   if (i.useLayoutEffect(() => {
-      h && te(b.p8)
-    }, [h]), l) return null;
+      m && te(b.p8)
+    }, [m]), l) return null;
   let N = {
     className: a()(ew.sidebarList, {
       [ew.sidebarListRounded]: !t
@@ -530,7 +530,7 @@ function tt(e) {
       var t, i;
       return (0, r.jsxs)("div", {
         ref: _,
-        "data-collapsed": h,
+        "data-collapsed": m,
         className: a()(ew.sidebar, e, {
           [ew.fullWidth]: d.tq,
           [ew.hidden]: u,
@@ -588,8 +588,8 @@ function tn() {
       optional: true
     }), ":messageId?")]),
     g = (null == Chunk433517 || null == (e = Chunk433517.params) ? true : module.channelId) === Chunk176505.oC.GUILD_ONBOARDING,
-    m = Chunk473749.useCallback(() => Chunk285865.Z.openSidebar(), []),
-    h = (0, Chunk540059.T)("AppView"),
+    h = Chunk473749.useCallback(() => Chunk285865.Z.openSidebar(), []),
+    m = (0, Chunk540059.T)("AppView"),
     b = (0, Chunk267161.useAppSidebarState)(e => !e.isOpen),
     _ = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
     E = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
@@ -660,11 +660,11 @@ function tn() {
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.MESSAGE_REQUESTS,
-                  render: e7,
+                  render: e9,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.FAMILY_CENTER,
-                  render: e9,
+                  render: e7,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.ME,

@@ -23,10 +23,10 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = {
+let h = {
     ignoredDevices: {}
   },
-  h = m,
+  m = h,
   b = false,
   _ = {},
   E = {},
@@ -60,10 +60,10 @@ function S(e, t, n) {
 }
 class T extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
-    this.waitFor(u.Z, c.Z), h = null != e ? e : m
+    this.waitFor(u.Z, c.Z), m = null != e ? e : h
   }
   getUserAgnosticState() {
-    return h
+    return m
   }
   get initialized() {
     return b
@@ -179,9 +179,9 @@ let N = new T(Chunk570140.Z, {
     let {
       displayName: t
     } = e;
-    h.ignoredDevices[t] = true, delete O[t]
+    m.ignoredDevices[t] = true, delete O[t]
   },
   CONNECTED_DEVICE_NEVER_SHOW_MODAL: function() {
-    O = {}, h.neverShowModal = true
+    O = {}, m.neverShowModal = true
   }
 })

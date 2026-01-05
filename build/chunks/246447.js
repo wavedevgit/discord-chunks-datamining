@@ -1,5 +1,6 @@
-/** Chunk was on 40184 **/
-/** chunk id: 246447, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 246447, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   wrapper: "_49d3a4be7924861a-wrapper",
   vingette: "_49d3a4be7924861a-vingette",

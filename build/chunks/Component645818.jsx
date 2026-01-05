@@ -15,8 +15,8 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let g = (0, Chunk481060.GSL)(Chunk863969.Z),
-  m = (0, Chunk481060.GSL)(Chunk563593.Z),
-  h = new Set([Chunk981631.TzF.PUSHING, Chunk981631.TzF.PULLING]),
+  h = (0, Chunk481060.GSL)(Chunk563593.Z),
+  m = new Set([Chunk981631.TzF.PUSHING, Chunk981631.TzF.PULLING]),
   b = Object.freeze({
     [Chunk981631.TzF.DONE]: g,
     [Chunk981631.TzF.PLANNING]: g,
@@ -88,8 +88,8 @@ class _ extends Chunk473749.PureComponent {
     } = this.props, i = null == module ? {
       type: Chunk981631.TzF.DONE
     } : module, l = this.getIsRecentlySynced();
-    (h.has(Chunk473749.type) || Chunk442837) && (exports.id, this.getStop(Chunk473749, Chunk442837));
-    let a = Chunk442837 ? m : b[Chunk473749.type];
+    (m.has(Chunk473749.type) || Chunk442837) && (exports.id, this.getStop(Chunk473749, Chunk442837));
+    let a = Chunk442837 ? h : b[Chunk473749.type];
     return (0, Chunk54381.jsx)(Chunk28664.u, {
       text: this.getTooltip(Chunk473749, Chunk442837),
       children: (0, Chunk54381.jsx)(Chunk846519, {

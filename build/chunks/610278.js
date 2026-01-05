@@ -35,7 +35,7 @@ function g() {
   return Chunk570140.Z.wait(() => Chunk519938.bA(exports, Chunk981631.NYg.FRAME, {})), void(p = exports)
 }
 
-function m() {
+function h() {
   if ((0, Chunk958185.Z)({
       LayerStore: Chunk819640.Z,
       PopoutWindowStore: Chunk928518.Z
@@ -47,12 +47,12 @@ function m() {
   let e = p;
   null != module && Chunk366050.Z.isOpen(module) && Chunk570140.Z.wait(() => Chunk519938.$Z(module))
 }
-class h extends Chunk317770.Z {
+class m extends Chunk317770.Z {
   _initialize() {
-    Chunk591472.Z.addChangeListener(g), Chunk819640.Z.addChangeListener(m)
+    Chunk591472.Z.addChangeListener(g), Chunk819640.Z.addChangeListener(h)
   }
   _terminate() {
-    Chunk591472.Z.removeChangeListener(g), Chunk819640.Z.removeChangeListener(m)
+    Chunk591472.Z.removeChangeListener(g), Chunk819640.Z.removeChangeListener(h)
   }
 }
-let b = new h
+let b = new m

@@ -64,7 +64,7 @@ function E(e) {
   let l = (0, a.e7)([d.Z], () => d.Z.getChannel(t), [t]),
     o = (0, a.e7)([p.Z], () => p.Z.getGuild(null == l ? true : l.getGuildId()));
   return (r.useEffect(() => {
-    f.default.track(y.rMx.OPEN_MODAL, {
+    f.default.track(C.rMx.OPEN_MODAL, {
       type: "Grant Channel Access"
     })
   }, []), null == l || null == o) ? null : (0, i.jsx)(j, x({
@@ -79,7 +79,7 @@ function j(e) {
       channel: d,
       onClose: p,
       newChannel: f,
-      inSettings: y
+      inSettings: C
     } = e,
     E = O(e, ["guild", "channel", "onClose", "newChannel", "inSettings"]);
   let [j, S] = r.useState(""), [_, P] = r.useState({}), [I, Z] = r.useState(false), [T, N] = r.useState(null), A = r.useRef(null), {
@@ -89,8 +89,8 @@ function j(e) {
   } = (0, g.Q)(a, d, d.accessPermissions, j), D = m.Z.useSections({
     roles: w,
     members: M
-  }), k = f && 0 === Object.keys(_).length;
-  async function L() {
+  }), L = f && 0 === Object.keys(_).length;
+  async function k() {
     if (null == d || 0 === Object.keys(_).length) return void p();
     Z(true);
     try {
@@ -103,7 +103,7 @@ function j(e) {
           } = t;
           null != n.id && "" !== n.id && (n.rowType === b.aC.ROLE ? i.push((0, h.rX)(n.id, e.type)) : n.rowType === b.aC.MEMBER && i.push((0, h.jZ)(n.id, e.type)))
         }), (0, s.hw)(e.id, i, n)
-      }(d, _, y), p(), Z(false)
+      }(d, _, C), p(), Z(false)
     } catch (t) {
       let e = new c.Hx(t);
       Z(false), N(e)
@@ -120,7 +120,7 @@ function j(e) {
     members: M,
     getRichTag: R,
     children: (0, i.jsx)(l.Modal, (t = x({}, E), n = n = {
-      title: C.intl.string(C.t.dMJ3Y6),
+      title: y.intl.string(y.t.dMJ3Y6),
       onClose: p,
       input: (0, i.jsxs)("div", {
         children: [(0, i.jsxs)(o.Text, {
@@ -136,13 +136,13 @@ function j(e) {
           color: "text-default",
           className: v.description,
           variant: "text-sm/normal",
-          children: C.intl.string(C.t.f7VbhF)
+          children: y.intl.string(y.t.f7VbhF)
         }), (0, i.jsx)(m.Z.SearchBox, {
-          placeholderText: C.intl.string(C.t.iezLLn)
+          placeholderText: y.intl.string(y.t.iezLLn)
         }), (0, i.jsx)(o.Text, {
           className: v.subtext,
           variant: "text-xs/normal",
-          children: C.intl.string(C.t.rwFx85)
+          children: y.intl.string(y.t.rwFx85)
         }), null != T ? (0, i.jsx)(o.Text, {
           className: v.subtext,
           variant: "text-xs/normal",
@@ -158,18 +158,18 @@ function j(e) {
         renderRow: m.Z.renderRow,
         sections: D
       },
-      actions: k ? [{
+      actions: L ? [{
         variant: "secondary",
-        text: C.intl.string(C.t.u46sxe),
+        text: y.intl.string(y.t.u46sxe),
         onClick: p
       }] : [{
         variant: "secondary",
-        text: C.intl.string(C.t["ETE/oC"]),
+        text: y.intl.string(y.t["ETE/oC"]),
         onClick: p
       }, {
         variant: "primary",
-        text: C.intl.string(C.t.i4jeWR),
-        onClick: L,
+        text: y.intl.string(y.t.i4jeWR),
+        onClick: k,
         loading: I
       }]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

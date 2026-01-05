@@ -21,14 +21,14 @@ let b = e => {
   var t;
   let {
     targetElementRef: n
-  } = e, b = (0, i.e7)([c.default], () => c.default.getCurrentUser()), _ = false === u.ZP.isPremiumExactly(b, f.PremiumTypes.TIER_2), E = (null == b || null == (t = b.premiumState) ? true : t.premiumSource) === l.d3.FRACTIONAL_NITRO && (null == b ? true : b.premiumState.premiumSubscriptionType) !== l.W$.TIER_2, O = true === (null == b || _ || E) ? m.intl.string(m.t.E1ONHQ) : m.intl.string(m.t.CMKNhr);
+  } = e, b = (0, i.e7)([c.default], () => c.default.getCurrentUser()), _ = false === u.ZP.isPremiumExactly(b, f.PremiumTypes.TIER_2), E = (null == b || null == (t = b.premiumState) ? true : t.premiumSource) === l.d3.FRACTIONAL_NITRO && (null == b ? true : b.premiumState.premiumSubscriptionType) !== l.W$.TIER_2, O = true === (null == b || _ || E) ? h.intl.string(h.t.E1ONHQ) : h.intl.string(h.t.CMKNhr);
   return (0, r.jsx)(a.J2, {
     targetElementRef: n,
-    title: m.intl.string(m.t["V8J+16"]),
+    title: h.intl.string(h.t["V8J+16"]),
     body: O,
     graphic: {
       type: "image",
-      src: h.Z
+      src: m.Z
     },
     badge: {
       type: "beta",
@@ -42,7 +42,7 @@ let b = e => {
       align: "start"
     },
     actions: [{
-      text: m.intl.string(m.t["CDdYB/"]),
+      text: h.intl.string(h.t["CDdYB/"]),
       onClick: () => {
         (0, s.Z)(g.Z5c.NITRO_HOME), (0, d.wQ)({
           analyticsLocations: [o.Z.HOME_PAGE_PREMIUM_TAB]

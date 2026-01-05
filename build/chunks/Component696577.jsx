@@ -33,7 +33,7 @@ function y(e) {
   } = e, u = (null == (t = f.default.getCurrentUser()) ? true : t.isStaff()) && (null == n ? true : n.isStaff()), {
     acceptFriendRequest: d,
     cancelFriendRequest: p
-  } = (0, m.u)({
+  } = (0, h.u)({
     userId: n.id,
     applicationId: l,
     isGameRelationship: s,
@@ -50,15 +50,15 @@ function y(e) {
         color: a.Z.unsafe_rawColors.BRAND_500.css,
         text: O.intl.string(O.t.oMx98L)
       })
-    }), (0, r.jsx)(h.Z, {
+    }), (0, r.jsx)(m.Z, {
       icon: o.dz2,
-      actionType: h.Z.ActionTypes.ACCEPT,
+      actionType: m.Z.ActionTypes.ACCEPT,
       tooltip: O.intl.string(O.t.Zcibdf),
       onClick: g,
       shouldHighlight: c
-    }), (0, r.jsx)(h.Z, {
+    }), (0, r.jsx)(m.Z, {
       icon: o.Dio,
-      actionType: h.Z.ActionTypes.DENY,
+      actionType: m.Z.ActionTypes.DENY,
       tooltip: O.intl.string(O.t.xuio0C),
       onClick: b,
       shouldHighlight: c
@@ -74,7 +74,7 @@ function I(e) {
     active: a
   } = e, {
     cancelFriendRequest: s
-  } = (0, m.u)({
+  } = (0, h.u)({
     userId: t,
     applicationId: n,
     isGameRelationship: l,
@@ -82,9 +82,9 @@ function I(e) {
   }), c = i.useCallback(e => {
     e.stopPropagation(), s()
   }, [s]);
-  return (0, r.jsx)(h.Z, {
+  return (0, r.jsx)(m.Z, {
     icon: o.Dio,
-    actionType: h.Z.ActionTypes.DENY,
+    actionType: m.Z.ActionTypes.DENY,
     tooltip: O.intl.string(O.t.eaq81S),
     onClick: c,
     shouldHighlight: a

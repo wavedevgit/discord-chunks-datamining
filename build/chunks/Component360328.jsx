@@ -16,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
 function p(e, t, p, f) {
   let [h, m] = r.useState(false), g = (0, l.e7)([s.Z], () => s.Z.getChannel(f)), b = r.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(d.intl.string(d.t.R0RpRX), a.ToastType.FAILURE))
-  }, []), y = r.useCallback(async () => {
+  }, []), C = r.useCallback(async () => {
     if (!h && null != e && null != t && null != p) {
       if (null != g) return void o.default.selectPrivateChannel(g.id);
       if (!h) {
@@ -59,6 +59,6 @@ function p(e, t, p, f) {
       })
     },
     submitting: h,
-    handleOpenInterview: y
+    handleOpenInterview: C
   }
 }

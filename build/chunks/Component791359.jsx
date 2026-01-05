@@ -50,20 +50,20 @@ let Z = 15 * Chunk70956.Z.Millis.MINUTE,
       partiedMembers: p,
       applicationStreams: f,
       currentActivities: g,
-      voiceChannels: m
-    } = t, h = p.length, b = f.length, _ = g.length, E = m.length > 0, v = i.useCallback(() => {
+      voiceChannels: h
+    } = t, m = p.length, b = f.length, _ = g.length, E = h.length > 0, v = i.useCallback(() => {
       let e = g.filter(e => {
         var t, n;
         return (null == (t = e.game) ? true : t.name) != null && (0, O.isGameApplicationType)(null == (n = e.game) ? true : n.type)
       }).map(e => e.game.name);
       O.default.track(j.rMx.NOW_PLAYING_CARD_HOVERED, {
-        num_users: h,
+        num_users: m,
         num_streams: b,
         num_activities: _,
         in_voice_channel: E,
         games_detected: e
       })
-    }, [h, b, _, E, g]), y = i.useMemo(() => s()(v, Z), [v]);
+    }, [m, b, _, E, g]), y = i.useMemo(() => s()(v, Z), [v]);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",
@@ -140,7 +140,7 @@ function R() {
   Chunk473749.useEffect(() => (Chunk570140.Z.wait(() => Chunk225559.L()), () => Chunk570140.Z.wait(() => Chunk225559.v())), [null == a ? true : a.id]), Chunk473749.useEffect(() => {
     require && !Chunk392711 && L()
   }, [require, Chunk392711]);
-  let h = Chunk473749.useMemo(() => {
+  let m = Chunk473749.useMemo(() => {
       let t = new Map,
         n = new Set,
         r = (0, Chunk283689.NI)(Chunk954955, Chunk324805.l$);
@@ -161,7 +161,7 @@ function R() {
     } = e;
     return (0, r.jsx)(w, {
       party: t,
-      quest: h.get(t.id)
+      quest: m.get(t.id)
     }, t.id)
   }) : (0, Chunk54381.jsxs)("div", {
     className: Chunk121748.emptyCard,

@@ -17,7 +17,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,27 +56,27 @@ function _(e) {
   return null == n ? null : [(0, r.jsx)(a.sNh, {
     id: "join-voice",
     action: function() {
-      (0, c.Kh)(n.channel.id), o.default.selectVoiceChannel(n.channel.id), s.ZP.trackWithMetadata(g.rMx.ACTIVITY_FEED_VOICE_CHANNEL_VISITED, h({
-        source: b(h({}, t.location), {
+      (0, c.Kh)(n.channel.id), o.default.selectVoiceChannel(n.channel.id), s.ZP.trackWithMetadata(g.rMx.ACTIVITY_FEED_VOICE_CHANNEL_VISITED, m({
+        source: b(m({}, t.location), {
           object: g.qAy.LIST_ITEM
         }),
         guild_id: n.guild.id,
         channel_id: n.channel.id
       }, (0, p.y)(e)))
     },
-    label: m.intl.string(m.t["8yOlh9"]),
+    label: h.intl.string(h.t["8yOlh9"]),
     disabled: !_
   }, "join-voice"), (0, r.jsx)(a.sNh, {
     id: "goto-server",
     action: function() {
-      (0, u.X)(n.guild.id), s.ZP.trackWithMetadata(g.rMx.ACTIVITY_FEED_GUILD_VISITED, h({
-        source: b(h({}, t.location), {
+      (0, u.X)(n.guild.id), s.ZP.trackWithMetadata(g.rMx.ACTIVITY_FEED_GUILD_VISITED, m({
+        source: b(m({}, t.location), {
           object: g.qAy.LIST_ITEM
         }),
         guild_id: n.guild.id,
         af_recently_played: false
       }, (0, p.y)(e)))
     },
-    label: m.intl.string(m.t.RGgqm1)
+    label: h.intl.string(h.t.RGgqm1)
   }, "goto-server")]
 }

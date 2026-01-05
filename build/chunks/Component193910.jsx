@@ -66,15 +66,15 @@ function D(e) {
     options: b,
     onFileUpload: O,
     onClose: D,
-    onSelect: k,
-    draftType: L,
+    onSelect: L,
+    draftType: k,
     editorTextContent: U,
     setValue: V,
-    openClips: H
+    openClips: F
   } = e, {
-    analyticsLocations: F,
+    analyticsLocations: H,
     newestAnalyticsLocation: B
-  } = (0, d.ZP)(), G = (0, y.Dt)({
+  } = (0, d.ZP)(), G = (0, C.Dt)({
     channel: t
   }), W = (0, l.e7)([v.Z], () => v.Z.isInProgress());
 
@@ -87,7 +87,7 @@ function D(e) {
   }
 
   function K() {
-    H()
+    F()
   }
 
   function Y() {
@@ -160,7 +160,7 @@ function D(e) {
       r = U.match(M);
     null != r && (i = r[1], n = r[2], e = r[3], i += r[4]), (0, _.d)([(0, S.dp)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, L), j.S.dispatchToLastSubscribed(Z.CkL.CLEAR_TEXT), "" !== i && j.S.dispatchToLastSubscribed(Z.CkL.INSERT_TEXT, {
+    }), "message.".concat(n), "text/plain")], t, k), j.S.dispatchToLastSubscribed(Z.CkL.CLEAR_TEXT), "" !== i && j.S.dispatchToLastSubscribed(Z.CkL.INSERT_TEXT, {
       plainText: i
     })
   }
@@ -171,7 +171,7 @@ function D(e) {
       guild_id: t.guild_id
     })
   }, [t.guild_id, t.id]), (0, i.jsx)(s.v2r, {
-    onSelect: k,
+    onSelect: L,
     navId: "channel-attach",
     onClose: D,
     "aria-label": A.intl.string(A.t.Xm41aV),
@@ -228,7 +228,7 @@ function D(e) {
                 channelId: t.id,
                 type: Z.mFx.JOIN,
                 activity: n,
-                location: F[F.length - 1]
+                location: H[H.length - 1]
               })
             }
           }, "play");
@@ -242,7 +242,7 @@ function D(e) {
                 channelId: t.id,
                 type: Z.mFx.LISTEN,
                 activity: n,
-                location: F[F.length - 1]
+                location: H[H.length - 1]
               })
             }
           }, "listen");
@@ -256,7 +256,7 @@ function D(e) {
                 channelId: t.id,
                 type: Z.mFx.WATCH,
                 activity: n,
-                location: F[F.length - 1]
+                location: H[H.length - 1]
               })
             }
           }, "watch");
@@ -289,7 +289,7 @@ function D(e) {
           return (0, i.jsx)(s.sNh, {
             id: "scheduled_message",
             label: r,
-            action: () => (0, y.$f)({
+            action: () => (0, C.$f)({
               channel: t
             }),
             children: G
@@ -298,7 +298,7 @@ function D(e) {
           return (0, i.jsx)(s.sNh, {
             id: "summarize_thread",
             label: r,
-            action: () => C.Z.summarizeThread(t),
+            action: () => y.Z.summarizeThread(t),
             icon: W ? (0, i.jsx)(s.$jN, {
               type: s.RAz.PULSING_ELLIPSIS
             }) : null,
@@ -308,12 +308,12 @@ function D(e) {
                 id: "summarize_thread_for_everyone",
                 label: A.intl.string(A.t.eCzSdd),
                 iconLeft: s.BFJ,
-                action: () => C.Z.summarizeThread(t, false)
+                action: () => y.Z.summarizeThread(t, false)
               }, "summarize_thread_for_everyone"), (0, i.jsx)(s.sNh, {
                 id: "summarize_thread_for_me",
                 label: A.intl.string(A.t["HOe+Hq"]),
                 iconLeft: s.tBG,
-                action: () => C.Z.summarizeThread(t)
+                action: () => y.Z.summarizeThread(t)
               }, "summarize_thread_for_me")]
             })
           }, "summarize_thread");

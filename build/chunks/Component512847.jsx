@@ -105,11 +105,11 @@ function w() {
       connectedRemote: a
     } = t, o = e.channelType, s = e.connectedRemote, c = e.connected;
     if (!e.connectHasStarted && i || a && !s) {
-      if (null != n && h.Lr.has(n)) return;
+      if (null != n && m.Lr.has(n)) return;
       return "user_join"
     }
     if (c && !r) {
-      if (l || a || null != o && h.Lr.has(o)) return;
+      if (l || a || null != o && m.Lr.has(o)) return;
       return "disconnect"
     }
   }), null
@@ -163,7 +163,7 @@ function U() {
     let t = Chunk979651.Z.getVoiceStateForChannel(module);
     return (0, Chunk590415.gf)(exports)
   }, (e, t) => {
-    if (e !== t && t === m.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
+    if (e !== t && t === h.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
   }), null
 }
 
@@ -207,7 +207,7 @@ function G() {
         if (null == n) returnfalse;
         let r = O.Z.getGuild(n);
         return null != r && r.afkChannelId === t.id
-      }(r) || null != n && h.Lr.has(n)) return;
+      }(r) || null != n && m.Lr.has(n)) return;
     let c = null != a && e.singleActiveStreamKey === a,
       u = l.some(t => !e.streamingUserIds.includes(t)),
       d = e.allActiveStreams.map(e => e.ownerId),

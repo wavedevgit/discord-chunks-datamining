@@ -179,9 +179,9 @@ class O extends Chunk473749.PureComponent {
       })
     }), E(this, "handleRemoveLocation", () => {
       (0, a.Z)({
-        title: h.intl.string(h.t.iBUzS5),
-        subtitle: h.intl.string(h.t["1XqeW2"]),
-        confirmText: h.intl.string(h.t.iBUzS5),
+        title: m.intl.string(m.t.iBUzS5),
+        subtitle: m.intl.string(m.t["1XqeW2"]),
+        confirmText: m.intl.string(m.t.iBUzS5),
         onConfirm: () => {
           this.handleStopEditing(), (0, s.iD)(this.props.path)
         }
@@ -254,7 +254,7 @@ class v extends Chunk473749.PureComponent {
     super(...e), E(this, "state", {
       editingPath: null
     }), E(this, "handleAddInstallationLocation", () => {
-      m.ZP.showOpenDialog(["openDirectory"]).then(e => {
+      h.ZP.showOpenDialog(["openDirectory"]).then(e => {
         null != e && 0 !== e.length && null != e[0] && "undefined" !== e[0] && (0, s.RY)(e[0])
       })
     }), E(this, "handleToggleEditing", e => {

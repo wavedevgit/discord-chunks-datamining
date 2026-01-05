@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 276792, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => m
+  N: () => h
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,8 +17,8 @@ var Chunk657707 = require("./657707.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk256465 = require("./256465.js");
 
-function m(e) {
-  var t, n, m, h;
+function h(e) {
+  var t, n, h, m;
   let {
     componentId: b,
     promotionId: _,
@@ -29,8 +29,8 @@ function m(e) {
     isLightTheme: I
   } = e, C = "AnnouncementModalVariant1_".concat(b), {
     onClose: S
-  } = O, T = null != (h = null == (t = E.button) ? true : t.copy) ? h : f.intl.string(f.t.YScQSF), N = (null == (n = E.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", j = (0, d.K)({
-    buttonAction: null == (m = E.button) ? true : m.buttonAction,
+  } = O, T = null != (m = null == (t = E.button) ? true : t.copy) ? m : f.intl.string(f.t.YScQSF), N = (null == (n = E.button) ? true : n.buttonAction) === l.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", j = (0, d.K)({
+    buttonAction: null == (h = E.button) ? true : h.buttonAction,
     analyticsLocations: v,
     analyticsLocation: y,
     onClose: S

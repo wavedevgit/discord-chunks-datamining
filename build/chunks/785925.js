@@ -1,56 +1,57 @@
-/** Chunk was on 40184 **/
-/** chunk id: 785925, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 785925, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  ZP: () => s
+  ZP: () => l
 });
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
   Chunk960048 = require("./960048.js"),
   Chunk535834 = require("./535834.js"),
   Chunk981631 = require("./981631.js");
-let s = {
+let l = {
   connect: async e => {
     try {
-      let t = await i.tn.post({
-        url: o.ANM.HAVEN_CONNECT(e),
+      let t = await r.tn.post({
+        url: s.ANM.HAVEN_CONNECT(e),
         rejectWithError: true
       });
-      return r.Z.dispatch({
+      return i.Z.dispatch({
         type: "HAVEN_CONNECT",
-        room: (0, a.CK)(t.body)
+        room: (0, o.CK)(t.body)
       }), t
     } catch (e) {
-      l.Z.captureException(e)
+      a.Z.captureException(e)
     }
   },
   disconnect: async e => {
     try {
-      await i.tn.post({
-        url: o.ANM.HAVEN_DISCONNECT(e),
+      await r.tn.post({
+        url: s.ANM.HAVEN_DISCONNECT(e),
         rejectWithError: true
       })
     } catch (e) {
-      l.Z.captureException(e)
+      a.Z.captureException(e)
     }
   },
   update: async (e, t) => {
     let {
       position: n,
-      avatar: r,
-      seat: a
+      avatar: i,
+      seat: o
     } = t;
     try {
-      await i.tn.post({
-        url: o.ANM.HAVEN_UPDATE(e),
+      await r.tn.post({
+        url: s.ANM.HAVEN_UPDATE(e),
         body: {
           position: n,
-          avatar: r,
-          seat: a
+          avatar: i,
+          seat: o
         },
         rejectWithError: true
       })
     } catch (e) {
-      l.Z.captureException(e)
+      a.Z.captureException(e)
     }
   },
   getAssets: async () => {

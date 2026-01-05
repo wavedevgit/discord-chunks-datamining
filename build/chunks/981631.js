@@ -2039,7 +2039,7 @@ var nj = function(e) {
     return e.TOP_LEFT = "top-left", e.TOP_RIGHT = "top-right", e.BOTTOM_LEFT = "bottom-left", e.BOTTOM_RIGHT = "bottom-right", e
   }({}),
   nU = function(e) {
-    return e.VIDEO = "VIDEO", e.ACTIVITY = "ACTIVITY", e.FRAME = "FRAME", e
+    return e.VIDEO = "VIDEO", e.ACTIVITY = "ACTIVITY", e.FRAME = "FRAME", e.HAVEN = "HAVEN", e
   }({}),
   nG = function(e) {
     return e.GIF = "GIF", e.STICKER = "STICKER", e

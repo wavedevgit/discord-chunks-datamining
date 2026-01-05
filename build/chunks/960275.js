@@ -49,14 +49,14 @@ class f extends Chunk317770.Z {
       if ((null == d ? true : d.find(e => e.id === f)) != null ? (0, a.T)(s.hn.PING_ME) : (null != (t = null == d ? true : d.length) ? t : 0) > 0 && (null == r ? true : r.id) === f && (0, a.T)(s.hn.PING_SOMEONE), !(0, u.wU)(null == r ? true : r.id, f, i, p)) returnfalse;
       let g = u.ZP.getMostRecentMessageCombo(n),
         {
-          combo: m
+          combo: h
         } = null != g ? g : {};
-      if (null == m) returnfalse;
+      if (null == h) returnfalse;
       Object.values(s.hn).forEach(e => {
         if (null != o.Z.getUnlocked(e)) return;
         let t = (0, s.oX)(e),
           n = null == t ? true : t.checkUnlock;
-        null != n && false !== n(m) && (0, a.T)(e)
+        null != n && false !== n(h) && (0, a.T)(e)
       })
     })
   }

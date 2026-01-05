@@ -63,13 +63,13 @@ function _(e) {
   });
   let w = (0, c.e7)([g.Z], () => g.Z.can(v.Plq.CREATE_INSTANT_INVITE, t), [t]),
     [M, R] = r.useState(false),
-    [D, k] = r.useState("unknown"),
-    L = r.useRef(null),
+    [D, L] = r.useState("unknown"),
+    k = r.useRef(null),
     {
       isHoveringOrFocusing: U
-    } = (0, C.Tu)(w ? l : L),
-    [V, H] = r.useState(false),
-    F = U || V,
+    } = (0, y.Tu)(w ? l : k),
+    [V, F] = r.useState(false),
+    H = U || V,
     B = r.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "unknown";
       b.default.track(v.rMx.VOICE_INVITE_SUGGESTIONS_ENTRYPOINT_CLOSED, {
@@ -98,7 +98,7 @@ function _(e) {
     }),
     W = r.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : "unknown";
-      R(true), k(e)
+      R(true), L(e)
     }, []),
     z = r.useCallback(() => (null != I.current && clearTimeout(I.current), I.current = setTimeout(() => W("timeout"), 1e4), N(e => e + 1), () => {
       null != I.current && clearTimeout(I.current)
@@ -109,17 +109,17 @@ function _(e) {
       null != Z.current && clearTimeout(Z.current)
     }), []);
   (0, p.ZP)(z), r.useEffect(() => {
-    if (!F) {
+    if (!H) {
       z(), q();
       return
     }
     null != I.current && clearTimeout(I.current), null != Z.current && clearTimeout(Z.current), P(true)
-  }, [F, z, q]);
+  }, [H, z, q]);
   let K = r.useCallback(() => {
       P(true)
     }, []),
     Y = r.useCallback(() => {
-      P(false), H(false)
+      P(false), F(false)
     }, []);
   return w ? (0, i.jsx)(d.yRy, {
     targetElementRef: l,
@@ -128,9 +128,9 @@ function _(e) {
     align: "top",
     spacing: 8,
     popoutKey: "voice-invite-suggestions-button",
-    renderPopout: e => (0, i.jsx)(y.B, j({
+    renderPopout: e => (0, i.jsx)(C.B, j({
       channel: t,
-      onHoverOrFocus: H
+      onHoverOrFocus: F
     }, e)),
     onRequestOpen: K,
     onRequestClose: Y,
@@ -156,7 +156,7 @@ function _(e) {
               },
               children: [(0, i.jsxs)("svg", {
                 className: a()(O.timer, {
-                  [O.paused]: F
+                  [O.paused]: H
                 }),
                 viewBox: "0 0 ".concat(24, " ").concat(24),
                 style: {

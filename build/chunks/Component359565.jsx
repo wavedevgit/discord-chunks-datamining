@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 359565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => y,
+  q: () => C,
   s: () => b
 });
 var Chunk54381 = require("./54381.js"),
@@ -81,7 +81,7 @@ function b(e) {
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     channel: t,
     narrow: n

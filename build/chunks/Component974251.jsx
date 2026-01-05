@@ -94,9 +94,9 @@ let z = Chunk473749.memo(function(e) {
     autoTrackExposure: false
   }), {
     onShareClick: es
-  } = (0, C.Z)(q.id), ec = (0, o.e7)([x.qc], () => x.qc.hasHotspot(x.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), eu = (0, c.s9z)(e => (0, c.DEQ)(e, V.Qr)), ed = (0, o.e7)([I.Z], () => I.Z.hasLayers()), ep = (0, o.e7)([g.Z], () => g.Z.hasClips()), [ef, eh] = r.useState(null), em = (0, m.w9)() && (ei || ep), eg = q.isPrivate(), eb = (0, o.e7)([T.Z], () => eg || T.Z.can(U.Plq.ATTACH_FILES, q) && T.Z.can(U.Plq.SEND_MESSAGES, q)), ey = (0, d.Z)(er);
-  (null == ey ? true : ey.newClipIds.length) !== (null == er ? true : er.newClipIds.length) && (null != (t = null == er ? true : er.newClipIds.length) ? t : 0) > 0 && null == ef && ec && ea && !eu && !eo && !ed && eh("recentClips");
-  let eC = (0, o.e7)([Z.Z], () => Z.Z.hasCurrentUserSentMessageSinceAppStart());
+  } = (0, y.Z)(q.id), ec = (0, o.e7)([x.qc], () => x.qc.hasHotspot(x.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), eu = (0, c.s9z)(e => (0, c.DEQ)(e, V.Qr)), ed = (0, o.e7)([I.Z], () => I.Z.hasLayers()), ep = (0, o.e7)([g.Z], () => g.Z.hasClips()), [ef, eh] = r.useState(null), em = (0, m.w9)() && (ei || ep), eg = q.isPrivate(), eb = (0, o.e7)([T.Z], () => eg || T.Z.can(U.Plq.ATTACH_FILES, q) && T.Z.can(U.Plq.SEND_MESSAGES, q)), eC = (0, d.Z)(er);
+  (null == eC ? true : eC.newClipIds.length) !== (null == er ? true : er.newClipIds.length) && (null != (t = null == er ? true : er.newClipIds.length) ? t : 0) > 0 && null == ef && ec && ea && !eu && !eo && !ed && eh("recentClips");
+  let ey = (0, o.e7)([Z.Z], () => Z.Z.hasCurrentUserSentMessageSinceAppStart());
 
   function ev() {
     (0, c.ZDy)(async () => {
@@ -141,7 +141,7 @@ let z = Chunk473749.memo(function(e) {
     }),
     eI = (0, f.o)(),
     eZ = null != (l = null == el ? true : el.length) ? l : 0,
-    eT = (0, L.Z)({
+    eT = (0, k.Z)({
       canAttachFiles: eb,
       canStartThreads: ex || eO,
       useSlate: eE,
@@ -171,24 +171,24 @@ let z = Chunk473749.memo(function(e) {
       position: "top",
       positionKey: null != ef ? ef : "null",
       onRequestOpen: () => {
-        eC && (0, v.Q3)(s.z.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
-          dismissAction: H.L.TAKE_ACTION
+        ey && (0, v.Q3)(s.z.ACTIVITIES_CHAT_BUTTON_NUX_V2, {
+          dismissAction: F.L.TAKE_ACTION
         }), eh("attachMenu")
       },
       onRequestClose: () => {
-        (0, c.$sL)() || (eC && (0, v.Q3)(s.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
-          dismissAction: H.L.TAKE_ACTION
+        (0, c.$sL)() || (ey && (0, v.Q3)(s.z.ACTIVITIES_CHAT_MENU_NEW_BADGE, {
+          dismissAction: F.L.TAKE_ACTION
         }), eh(null))
       },
       renderPopout: e => {
         switch (ef) {
           case "recentClips":
-            return (0, i.jsx)(y.Z, W(G({}, e), {
+            return (0, i.jsx)(C.Z, W(G({}, e), {
               onOpenClips: ev,
               lastClipsSession: er
             }));
           case "attachMenu":
-            return (0, i.jsx)(k.Z, W(G({}, e), {
+            return (0, i.jsx)(L.Z, W(G({}, e), {
               onClose: () => eh(null),
               options: eT,
               channel: q,
@@ -211,7 +211,7 @@ let z = Chunk473749.memo(function(e) {
         className: a()(B.attachButton, z),
         childClassName: B.attachButtonInner,
         isActive: false,
-        "aria-label": F.intl.string(F.t.d56gCa),
+        "aria-label": H.intl.string(H.t.d56gCa),
         onDoubleClick: eb ? () => {
           var e;
           return null == (e = ee.current) ? true : e.activateUploadDialogue()

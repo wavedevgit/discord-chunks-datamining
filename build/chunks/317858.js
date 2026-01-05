@@ -22,7 +22,7 @@ var Chunk473749 = require("./473749.js"),
   Chunk388032 = require("./388032.jsx");
 let O = new Set(["Blink", "Gecko", "WebKit"]),
   v = Chunk981631.dG4;
-if (Chunk358085.isPlatformEmbedded) v = e => h.ZP.setBadge(e);
+if (Chunk358085.isPlatformEmbedded) v = e => m.ZP.setBadge(e);
 else if (O.has(o().layout)) {
   let e = new(l())({
     animation: "none"

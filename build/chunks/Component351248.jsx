@@ -20,7 +20,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk727829 = require("./727829.js"),
   Chunk982681 = require("./982681.js");
 
-function C(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -141,7 +141,7 @@ class x extends Chunk473749.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), C(this, "scaleAnimation", new o.Z.Value(0)), C(this, "spriteAnimation", new o.Z.Value(0)), C(this, "spriteOpacity", new o.Z.Value(0)), C(this, "widthAnimation", new o.Z.Value(0))
+    super(...e), y(this, "scaleAnimation", new o.Z.Value(0)), y(this, "spriteAnimation", new o.Z.Value(0)), y(this, "spriteOpacity", new o.Z.Value(0)), y(this, "widthAnimation", new o.Z.Value(0))
   }
 }
 
@@ -154,7 +154,7 @@ function O(e) {
     onClick: o,
     width: u,
     guildId: b
-  } = e, y = (0, p.ZP)(), C = (t = n.length, ((0, d.dcp)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), v = (0, s.e7)([f.Z], () => f.Z.isFocused()), O = n.map(e => {
+  } = e, C = (0, p.ZP)(), y = (t = n.length, ((0, d.dcp)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), v = (0, s.e7)([f.Z], () => f.Z.isFocused()), O = n.map(e => {
     var t, n;
     if (e.type !== m.fO.USER) return null;
     let {
@@ -167,16 +167,16 @@ function O(e) {
     } = e;
     return (0, i.jsx)(x, {
       className: g.participant,
-      width: (0, d.dcp)(C),
-      theme: y,
+      width: (0, d.dcp)(y),
+      theme: C,
       children: (0, i.jsx)(d.kL8, {
         "aria-label": l.username,
         onClick: t => null == o ? true : o(e, t),
         onContextMenu: t => null == r ? true : r(e, t),
         children: (0, i.jsx)(h.Z, {
           userId: l.id,
-          src: l.getAvatarURL(b, (0, d.dcp)(C), s && v),
-          size: C,
+          src: l.getAvatarURL(b, (0, d.dcp)(y), s && v),
+          size: y,
           muted: null != (t = null == a ? true : a.isVoiceMuted()) && t,
           deafen: null != (n = null == a ? true : a.isVoiceDeafened()) && n,
           speaking: s,

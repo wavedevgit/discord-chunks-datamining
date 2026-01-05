@@ -205,9 +205,9 @@ function ep(e) {
       isFocused: s
     } = e, {
       author: d
-    } = n, p = (0, u.e7)([H.Z], () => H.Z.getGuild(t.guild_id), [t.guild_id]), m = (0, u.e7)([L.default], () => L.default.getId()), g = (0, D.$R)(t), b = (0, D.Gu)(t), {
+    } = n, p = (0, u.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), m = (0, u.e7)([k.default], () => k.default.getId()), g = (0, D.$R)(t), b = (0, D.Gu)(t), {
       firstMessage: v
-    } = (0, u.e7)([y.Z], () => y.Z.getMessage(t.id), [t.id]), x = k.nc.useSetting(), O = k.Sb.useSetting(), j = (0, u.e7)([F.Z], () => null == t.guild_id || F.Z.canChatInGuild(t.guild_id), [t]), {
+    } = (0, u.e7)([C.Z], () => C.Z.getMessage(t.id), [t.id]), x = L.nc.useSetting(), O = L.Sb.useSetting(), j = (0, u.e7)([H.Z], () => null == t.guild_id || H.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: S,
       canAddNewReactions: _
     } = (0, u.cj)([B.Z], () => ({
@@ -234,7 +234,7 @@ function ep(e) {
       en = null != et && n.type === ei.uaV.USER_JOIN && B.Z.canWithPartialContext(ei.Plq.MANAGE_GUILD, {
         guildId: et
       }),
-      er = (0, C.a)(n),
+      er = (0, y.a)(n),
       {
         enabled: el
       } = M.Z.useExperiment({
@@ -280,7 +280,7 @@ function ep(e) {
     er({
       emojiPicker: !z
     })
-  }, [z, er]), eh = (0, D.$R)(t), eg = n.hasFlag(ei.iLy.CROSSPOSTED), eb = (0, Z.Z)(t), ey = (0, I.Nt)(), eC = eb && ey && !n.hasPotions(), ev = r.useCallback(e => {
+  }, [z, er]), eh = (0, D.$R)(t), eg = n.hasFlag(ei.iLy.CROSSPOSTED), eb = (0, Z.Z)(t), eC = (0, I.Nt)(), ey = eb && eC && !n.hasPotions(), ev = r.useCallback(e => {
     try {
       (0, j.qc)(t.id, n.id, e)
     } catch (e) {
@@ -335,7 +335,7 @@ function ep(e) {
         isFocused: es,
         channel: t,
         message: n
-      }), eC ? (0, i.jsx)($.sF, {
+      }), ey ? (0, i.jsx)($.sF, {
         label: el.intl.string(el.t.icaJW5),
         icon: d.l22,
         onClick: () => {

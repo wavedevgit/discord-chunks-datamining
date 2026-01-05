@@ -27,7 +27,7 @@ function o(e) {
     u(e, f)
   }
 
-  function m() {
+  function h() {
     f = true
   }(0, i.ZDy)(async () => {
     let {
@@ -55,7 +55,7 @@ function o(e) {
       customId: o,
       linkId: s,
       message: c,
-      onCopyLink: m,
+      onCopyLink: h,
       onShare: g
     }, n))
   }, {

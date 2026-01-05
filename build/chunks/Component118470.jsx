@@ -20,16 +20,16 @@ function g(e) {
       guild: n
     } = e,
     g = (0, u.h6)(n),
-    m = () => (0, c.sB)(n.id),
-    h = i.useMemo(() => new Set(g.map(e => e.applicationId)), [g]),
+    h = () => (0, c.sB)(n.id),
+    m = i.useMemo(() => new Set(g.map(e => e.applicationId)), [g]),
     b = (0, l.Wu)([a.Z], () => {
       let e = [];
-      for (let t of h) {
+      for (let t of m) {
         let n = a.Z.getApplication(t);
         null != n && e.push(n)
       }
       return e
-    }, [h]);
+    }, [m]);
   return 0 === b.length ? null : (t = 1 === b.length ? p.intl.formatToPlainString(p.t["Egq+G/"], {
     a: b[0].name
   }) : 2 === b.length ? p.intl.formatToPlainString(p.t.LxU9R3, {
@@ -41,12 +41,12 @@ function g(e) {
     c: b[2].name
   }) : p.intl.string(p.t.MvfowF), (0, r.jsx)(o.Z, {
     guild: n,
-    onDismissed: m,
+    onDismissed: h,
     message: t,
     type: d.vID.APPLICATION_SUBSCRIPTION_EXPIRATION,
     image: f,
     onClick: () => {
-      m(), s.Z.open(n.id, d.pNK.INTEGRATIONS)
+      h(), s.Z.open(n.id, d.pNK.INTEGRATIONS)
     },
     imageMarginTop: 6,
     imageMarginX: 46,

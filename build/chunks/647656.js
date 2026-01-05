@@ -24,19 +24,19 @@ let _ = ["1402418171662569542"],
       scope: {
         [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_ACTIVITIES_WRITE, Chunk186901.lH]
       },
-      validation: e => (0, m.Z)(e).required().keys({
+      validation: e => (0, h.Z)(e).required().keys({
         pid: e.number().min(0),
-        activity: (0, m.Z)(e).keys({
+        activity: (0, h.Z)(e).keys({
           name: e.string().min(1).max(128),
           state: e.string().min(2).max(128),
           state_url: e.string().uri().min(1).max(256),
           details: e.string().min(2).max(128),
           details_url: e.string().uri().min(1).max(256),
-          timestamps: (0, m.Z)(e).keys({
+          timestamps: (0, h.Z)(e).keys({
             start: e.number().min(1),
             end: e.number().min(1)
           }),
-          assets: (0, m.Z)(e).keys({
+          assets: (0, h.Z)(e).keys({
             large_image: e.string().min(1).max(300),
             large_text: e.string().min(2).max(128),
             large_url: e.string().uri().min(1).max(256),
@@ -45,17 +45,17 @@ let _ = ["1402418171662569542"],
             small_url: e.string().uri().min(1).max(256),
             invite_cover_image: e.string().min(1).max(300)
           }),
-          party: (0, m.Z)(e).keys({
+          party: (0, h.Z)(e).keys({
             id: e.string().min(2).max(128),
             size: e.array().items(e.number().min(0)).length(2),
             privacy: e.number().default(b.RYY.PRIVATE).valid([b.RYY.PRIVATE, b.RYY.PUBLIC])
           }),
-          secrets: (0, m.Z)(e).keys({
+          secrets: (0, h.Z)(e).keys({
             match: e.string().min(2).max(128),
             join: e.string().min(2).max(128),
             spectate: e.string().min(2).max(128)
           }),
-          buttons: e.array().items((0, m.Z)(e).keys({
+          buttons: e.array().items((0, h.Z)(e).keys({
             label: e.string().min(1).max(32).required(),
             url: e.string().uri().min(1).max(512).required()
           })).min(1).max(2),
@@ -70,28 +70,28 @@ let _ = ["1402418171662569542"],
         let l, {
           socket: a,
           args: {
-            pid: m,
+            pid: h,
             activity: E
           },
           isSocketConnected: O
         } = e;
-        if (![h.He.IPC, h.He.WEBSOCKET, h.He.POST_MESSAGE].includes(a.transport)) throw new g.Z({
+        if (![m.He.IPC, m.He.WEBSOCKET, m.He.POST_MESSAGE].includes(a.transport)) throw new g.Z({
           errorCode: b.lTL.INVALID_COMMAND
         }, 'command not available from "'.concat(a.transport, '" transport'));
-        if (null == m && h.He.IPC === a.transport) throw new g.Z({
+        if (null == h && m.He.IPC === a.transport) throw new g.Z({
           errorCode: b.lTL.INVALID_COMMAND
         }, "nonzero pid required");
         if (null == E) return o.Z.dispatch({
           type: "LOCAL_ACTIVITY_UPDATE",
           socketId: a.id,
-          pid: m,
+          pid: h,
           activity: E
         }), Promise.resolve(E);
         let v = {};
         E.name || (E.name = a.application.name);
         let y = a.application.id;
         E.application_id = y;
-        let I = a.transport === h.He.POST_MESSAGE;
+        let I = a.transport === m.He.POST_MESSAGE;
         E.platform = I ? b.M7m.EMBEDDED : b.M7m.DESKTOP;
         let C = c.Z.getApplication(null != y ? y : true),
           S = null != (r = E.instance) && r,
@@ -133,7 +133,7 @@ let _ = ["1402418171662569542"],
           o.Z.dispatch({
             type: "LOCAL_ACTIVITY_UPDATE",
             socketId: a.id,
-            pid: m,
+            pid: h,
             activity: E,
             partyPrivacy: T
           });

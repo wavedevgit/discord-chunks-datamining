@@ -249,7 +249,7 @@ class B extends(r = Chunk473749.PureComponent) {
     let t = this.props.activeRowKey;
     if (null != t && e.activeRowKey !== t && this.props.isNavigatingByKeyboard) {
       let e = this._rowRefs[t];
-      null != e && (m.Z.wait(h.Zy), this.props.scrollToRow(e, R))
+      null != e && (h.Z.wait(m.Zy), this.props.scrollToRow(e, R))
     }
   }
   handleHighlightedApplicationKey() {
@@ -411,7 +411,7 @@ class B extends(r = Chunk473749.PureComponent) {
       let {
         analyticsContext: r
       } = this.props;
-      (0, h.jW)(e, async () => {
+      (0, m.jW)(e, async () => {
         let {
           default: e
         } = await n.e("98335").then(n.bind(n, 485292));

@@ -116,7 +116,7 @@ class q extends Chunk473749.PureComponent {
       showLurkerModeUpsellPopout: m,
       showMemberVerificationModal: g,
       useReducedMotion: b,
-      isStaff: y,
+      isStaff: C,
       guildJoinRequest: v,
       showLinkedLobbyApplicationLoadingIndicator: x,
       requiredLinkedLobbyApplication: O
@@ -166,7 +166,7 @@ class q extends Chunk473749.PureComponent {
         shouldShowLurkerModeSuccessPopout: false
       }),
       renderPopout: this.renderSuccessPopout,
-      children: e => (0, i.jsx)(L.Z, z(W({}, S), {
+      children: e => (0, i.jsx)(k.Z, z(W({}, S), {
         children: (0, i.jsxs)("div", {
           ref: this.textAreaContainerRef,
           children: [this.renderMemberVerificationSuccessModal(), m ? (0, i.jsx)(u.yRy, {
@@ -206,10 +206,10 @@ class q extends Chunk473749.PureComponent {
         guild: e
       } = this.props;
       null != e && (0, c.Z)({
-        title: F.intl.string(F.t.aIz1oV),
-        subtitle: F.intl.string(F.t["13tjTU"]),
+        title: H.intl.string(H.t.aIz1oV),
+        subtitle: H.intl.string(H.t["13tjTU"]),
         variant: "primary",
-        confirmText: F.intl.string(F.t["cY+Oob"]),
+        confirmText: H.intl.string(H.t["cY+Oob"]),
         onConfirm: () => g.Z.removeGuildJoinRequest(e.id)
       })
     }), G(this, "handleViewApplicationRejection", () => {
@@ -228,7 +228,7 @@ class q extends Chunk473749.PureComponent {
       let {
         guild: e
       } = this.props;
-      null != e && (0, y.hk)(e.id)
+      null != e && (0, C.hk)(e.id)
     }), G(this, "handleClaimAccount", () => {
       m.j()
     }), G(this, "handleVerifyPhone", () => {
@@ -240,15 +240,15 @@ class q extends Chunk473749.PureComponent {
           reason: P.L.GUILD_PHONE_REQUIRED
         }, t))
       }, {
-        modalKey: H.M
+        modalKey: F.M
       })
     }), G(this, "handleResendVerification", () => {
       var e;
       d.Z.verifyResend();
       let t = null == (e = R.default.getCurrentUser()) ? true : e.email;
       null != t && (0, s.Z)({
-        title: F.intl.string(F.t.LykQYk),
-        subtitle: F.intl.format(F.t.azKEPy, {
+        title: H.intl.string(H.t.LykQYk),
+        subtitle: H.intl.format(H.t.azKEPy, {
           email: t
         })
       })
@@ -306,7 +306,7 @@ class q extends Chunk473749.PureComponent {
       let {
         guild: e,
         guildJoinRequest: t
-      } = this.props, n = (null == t ? true : t.applicationStatus) === C.wB.APPROVED;
+      } = this.props, n = (null == t ? true : t.applicationStatus) === y.wB.APPROVED;
       if (null == e || null == t || !n || (0, b.d3)(t)) return null;
       let r = () => {
         g.Z.ackUserGuildJoinRequest(e.id, t.joinRequestId)
@@ -330,21 +330,21 @@ function K(e) {
   } = e, a = r.getGuildId(), s = (0, o.e7)([A.Z], () => A.Z.getGuild(a)), c = (0, o.e7)([w.Z], () => w.Z.getCheck(a)), u = r.type === U.d4z.GUILD_ANNOUNCEMENT && null != s && s.features.has(U.GuildFeatures.NEWS), d = (0, o.e7)([T.Z], () => u ? T.Z.getFollowerStatsForChannel(r.id) : null), p = (0, o.e7)([j.Z], () => j.Z.isLurking(a)), f = (0, o.e7)([R.default], () => R.default.getCurrentUser()), m = null != (t = null == f ? true : f.isStaff()) && t, g = (0, o.e7)([N.ZP], () => {
     var e, t;
     return null != f && null != (t = null == (e = N.ZP.getMember(a, f.id)) ? true : e.isPending) && t
-  }), b = !!(0, v.Dc)(s), y = (0, o.e7)([E.Z], () => E.Z.shouldShowPopout(a)), O = (0, o.e7)([M.Z], () => M.Z.can(U.Plq.SEND_MESSAGES, r)), S = (0, o.e7)([x.Z], () => x.Z.getRequest(a)), {
+  }), b = !!(0, v.Dc)(s), C = (0, o.e7)([E.Z], () => E.Z.shouldShowPopout(a)), O = (0, o.e7)([M.Z], () => M.Z.can(U.Plq.SEND_MESSAGES, r)), S = (0, o.e7)([x.Z], () => x.Z.getRequest(a)), {
     showLinkedLobbyApplicationLoadingIndicator: _,
     requiredLinkedLobbyApplication: P
-  } = (0, k.Z)(r.linkedLobby), I = z(W({}, c), {
+  } = (0, L.Z)(r.linkedLobby), I = z(W({}, c), {
     guild: s,
     isLurking: p,
     isFollowable: u,
-    shouldShowLurkerModeSuccessPopout: y,
+    shouldShowLurkerModeSuccessPopout: C,
     showLurkerModeUpsellPopout: p && null != s && D.Uu(U.Plq.SEND_MESSAGES, r),
     theme: Z.Z.theme,
     canSendMessages: O,
     channelFollowingUsersSeen: null != d ? d.usersSeenEver : null,
     hasVerificationGate: b,
     showMemberVerificationModal: g && b,
-    guildJoinRequestStatus: null != (n = null == S ? true : S.applicationStatus) ? n : C.wB.STARTED,
+    guildJoinRequestStatus: null != (n = null == S ? true : S.applicationStatus) ? n : y.wB.STARTED,
     guildJoinRequest: S,
     showLinkedLobbyApplicationLoadingIndicator: _,
     requiredLinkedLobbyApplication: P,

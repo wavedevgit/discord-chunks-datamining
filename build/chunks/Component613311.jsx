@@ -138,7 +138,7 @@ class ef extends Chunk473749.PureComponent {
         slug: a
       }), (t !== e.locale || i !== e.skuId) && s(), r && !e.shouldFetchStatistics) {
       if (null == n) throw Error("Unexpected missing sku");
-      g.Z.wait(() => (0, m.$)(n.applicationId))
+      g.Z.wait(() => (0, h.$)(n.applicationId))
     }(i !== e.skuId || l !== e.storeListingId) && (this._trackedViewed = false), this.trackViewed(), this.replaceUrlWithSlug()
   }
   componentWillUnmount() {
