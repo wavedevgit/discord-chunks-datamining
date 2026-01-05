@@ -26,9 +26,9 @@ function h() {
     sourceQuestContent: t,
     isPortrait: n,
     onClose: l
-  } = Chunk473749.useContext(Chunk215113.VideoQuestModalContext), h = (0, Chunk915750.aM)(), b = (0, Chunk968843.tP)(module), S = Chunk473749.useRef(null), {
-    isHoveringOrFocusing: C
-  } = (0, Chunk104505.Z)(S), _ = (0, Chunk684245.e)({
+  } = Chunk473749.useContext(Chunk215113.VideoQuestModalContext), h = (0, Chunk915750.aM)(), C = (0, Chunk968843.tP)(module), b = Chunk473749.useRef(null), {
+    isHoveringOrFocusing: S
+  } = (0, Chunk104505.Z)(b), _ = (0, Chunk684245.e)({
     quest: module,
     onClose: Chunk120356,
     sourceQuestContent: exports,
@@ -41,9 +41,9 @@ function h() {
       className: Chunk209668.adInfoClickable,
       children: (0, Chunk54381.jsxs)("div", {
         className: i()(Chunk209668.contentHeaderGameInfo, Chunk209668.contentHeaderGameInfoHoverable, {
-          [Chunk209668.contentHeaderGameInfoHoverableExpired]: b
+          [Chunk209668.contentHeaderGameInfoHoverableExpired]: C
         }),
-        ref: S,
+        ref: b,
         children: [(0, Chunk54381.jsx)("div", {
           className: Chunk209668.contentFooterAdDetailedInfo,
           children: (0, Chunk54381.jsx)(Chunk481060.Heading, {
@@ -68,7 +68,7 @@ function h() {
             }),
             children: (0, Chunk54381.jsx)(Chunk481060.owK, {
               size: "xs",
-              color: C ? Chunk481060.TVs.colors.ICON_STRONG.css : Chunk481060.TVs.colors.ICON_MUTED.css
+              color: S ? Chunk481060.TVs.colors.ICON_STRONG.css : Chunk481060.TVs.colors.ICON_MUTED.css
             })
           }), (0, Chunk54381.jsx)(Chunk481060.Heading, {
             variant: "heading-sm/medium",
@@ -76,7 +76,7 @@ function h() {
               [Chunk209668.adDetailsTextPrimaryPortrait]: require,
               [Chunk209668.addFourPxMarginRight]: require
             }),
-            color: C ? "text-strong" : "text-subtle",
+            color: S ? "text-strong" : "text-subtle",
             lineClamp: 1,
             children: module.config.messages.gamePublisher
           }), x ? (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
@@ -91,7 +91,7 @@ function h() {
               }),
               variant: "heading-sm/medium",
               lineClamp: require ? true : 1,
-              color: C ? "text-strong" : "text-subtle",
+              color: S ? "text-strong" : "text-subtle",
               children: y
             })]
           }) : null]

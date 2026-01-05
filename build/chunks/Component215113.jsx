@@ -90,15 +90,15 @@ function U(e) {
     onClose: a,
     quest: g,
     autoplay: y,
-    videoSessionId: N,
+    videoSessionId: I,
     impressionRef: B,
     parentModalOpenStartClockTime: U,
     sourceQuestContent: q
-  } = e, Y = (0, C.il)(g), H = (0, b.tP)(g), Q = (0, E.aM)(), [G, K] = o.useState(Y.progressSeconds), [W, z] = o.useState(142), {
+  } = e, H = (0, S.il)(g), Y = (0, C.tP)(g), Q = (0, E.aM)(), [G, K] = o.useState(H.progressSeconds), [W, z] = o.useState(142), {
     variant: X,
     enabled: $
   } = h.EO.useConfig({
-    location: w.dr.VIDEO_MODAL
+    location: L.dr.VIDEO_MODAL
   }), J = null == (n = g.config.taskConfigV2) || null == (t = n.tasks) ? true : t[c.X.WATCH_VIDEO];
   s()(null != J, "VideoQuestModal: videoTask must not be null");
   let ee = (0, _.ZS)(J),
@@ -115,14 +115,14 @@ function U(e) {
       impressionId: Q
     }),
     ei = (0, u.e7)([p.Z], () => p.Z.getState().theme),
-    ea = (0, d.wjy)(ei) ? k.BR.DARK : k.BR.LIGHT,
+    ea = (0, d.wjy)(ei) ? w.BR.DARK : w.BR.LIGHT,
     es = o.useMemo(() => ({
       quest: g,
       sourceQuestContent: q,
-      videoSessionId: N,
+      videoSessionId: I,
       isPortrait: et,
       onClose: a
-    }), [g, q, N, et, a]);
+    }), [g, q, I, et, a]);
   return (0, r.jsx)(F.Provider, {
     value: es,
     children: (0, r.jsxs)(d.Y0X, {
@@ -143,7 +143,7 @@ function U(e) {
           icon: e => (0, r.jsx)(d.Dio, Z(V({}, e), {
             color: d.TVs.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT
           })),
-          "aria-label": L.intl.string(L.t.cpT0Cq),
+          "aria-label": k.intl.string(k.t.cpT0Cq),
           onClick: a
         })
       }), (0, r.jsx)("div", {
@@ -174,13 +174,13 @@ function U(e) {
                 children: [(0, r.jsx)("img", {
                   alt: g.config.messages.gameTitle,
                   className: i()(M.contentHeaderLogotype, M.accentOnHover),
-                  src: (0, S.fh)(g, S.eC.LOGO_TYPE, ea).url
+                  src: (0, b.fh)(g, b.eC.LOGO_TYPE, ea).url
                 }), (0, r.jsx)(R.Z, {}), (0, r.jsxs)("div", {
                   className: M.questHeading,
                   children: [(0, r.jsx)(d.Heading, {
                     variant: "heading-md/semibold",
                     color: "text-strong",
-                    children: L.intl.format(L.t.EQa7os, {
+                    children: k.intl.format(k.t.EQa7os, {
                       questName: g.config.messages.questName
                     })
                   }), (0, r.jsx)(d.Text, {
@@ -189,10 +189,10 @@ function U(e) {
                     children: g.config.messages.gameTitle
                   })]
                 })]
-              }), !H && (0, r.jsx)(D.Z, {
+              }), !Y && (0, r.jsx)(P.Z, {
                 tooltipPosition: "left"
               })]
-            }), (0, r.jsx)(I.Z, {
+            }), (0, r.jsx)(N.Z, {
               videoTask: J,
               parentTransitionState: l,
               onOptimisticProgressUpdate: K,
@@ -204,9 +204,9 @@ function U(e) {
               className: $ ? M.contentFooterPortraitV2 : M.contentFooterPortraitV1,
               children: [$ ? (0, r.jsxs)("div", {
                 className: M.portraitContentRow,
-                children: [H ? null : (0, r.jsx)(D.Z, {
+                children: [Y ? null : (0, r.jsx)(P.Z, {
                   tooltipPosition: "top"
-                }), (0, r.jsx)(P.Z, {}), !eo && (0, r.jsx)(T.Z, {
+                }), (0, r.jsx)(D.Z, {}), !eo && (0, r.jsx)(T.Z, {
                   floatRight: true
                 })]
               }) : null, (0, r.jsxs)("div", {
@@ -227,12 +227,12 @@ function U(e) {
               className: i()(M.contentFooter, $ ? M.contentFooterV2 : M.contentFooterV1),
               children: [$ ? (0, r.jsxs)("div", {
                 className: M.contentFooterAdInfo,
-                children: [H ? null : (0, r.jsx)(D.Z, {
+                children: [Y ? null : (0, r.jsx)(P.Z, {
                   tooltipPosition: "top"
-                }), (0, r.jsx)(P.Z, {})]
+                }), (0, r.jsx)(D.Z, {})]
               }) : (0, r.jsx)(d.Button, {
                 variant: "secondary",
-                text: L.intl.string(L.t.cpT0Cq),
+                text: k.intl.string(k.t.cpT0Cq),
                 onClick: a
               }), (0, r.jsxs)("div", {
                 className: i()(M.contentFooterButtonCont, {
@@ -283,7 +283,7 @@ function q(e) {
     children: (0, r.jsx)(y.A, {
       questOrQuests: d,
       questContent: O.jn.VIDEO_MODAL,
-      minViewTimeSeconds: N.zw,
+      minViewTimeSeconds: I.zw,
       trackGuildAndChannelMetadata: true,
       sourceQuestContent: a.sourceQuestContent,
       children: e => (0, r.jsx)(U, Z(V({}, a), {

@@ -124,63 +124,64 @@ function w(e) {
     scrollBehavior: U = "sticky",
     modal: G = false,
     returnRef: Z,
-    experimental_ignoreModalClicks: F = true
-  } = e, [B, V] = i.useState(m), [H, Y] = i.useState(b), W = i.useRef(b), K = i.useRef(0), {
-    ref: z,
-    width: q,
-    height: Q
-  } = (0, d.ZP)(), X = (0, c.e7)([f.Z], () => f.Z.getLayers()), J = null != (t = X[X.length - 1]) ? t : "base", $ = i.useRef(M);
+    experimental_ignoreModalClicks: F = true,
+    closeOnClickOutside: B = false
+  } = e, [V, H] = i.useState(m), [Y, W] = i.useState(b), K = i.useRef(b), z = i.useRef(0), {
+    ref: q,
+    width: Q,
+    height: X
+  } = (0, d.ZP)(), J = (0, c.e7)([f.Z], () => f.Z.getLayers()), $ = null != (t = J[J.length - 1]) ? t : "base", ee = i.useRef(M);
   i.useEffect(() => {
-    $.current = M
+    ee.current = M
   }, [M]);
-  let ee = i.useCallback(e => {
+  let et = i.useCallback(e => {
       var t;
-      null != e && e !== W.current && (W.current = e, Y(e), null == (t = $.current) || t.call($, e))
+      null != e && e !== K.current && (K.current = e, W(e), null == (t = ee.current) || t.call(ee, e))
     }, []),
-    et = i.useMemo(() => {
+    en = i.useMemo(() => {
       var e, t;
-      return null == a.current || (null != (t = null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) ? t : "base") === J
-    }, [a, J]);
+      return null == a.current || (null != (t = null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) ? t : "base") === $
+    }, [a, $]);
   i.useEffect(() => {
-    et && m ? V(true) : et || V(false)
-  }, [et, m]), i.useEffect(() => {
-    ee(b)
-  }, [b, ee]);
-  let en = () => {
-      V(false)
+    en && m ? H(true) : en || H(false)
+  }, [en, m]), i.useEffect(() => {
+    et(b)
+  }, [b, et]);
+  let er = () => {
+      H(false)
     },
-    er = (0, _.i)({
+    ei = (0, _.i)({
       shouldShow: m,
-      caretPosition: (0, p.z)(H),
-      onExitComplete: en
+      caretPosition: (0, p.z)(Y),
+      onExitComplete: er
     }),
-    ei = i.useMemo(() => {
+    ea = i.useMemo(() => {
       if ("edge" === w && null != v) {
-        let e = "top" === H || "bottom" === H,
-          t = "left" === H || "right" === H;
+        let e = "top" === Y || "bottom" === Y,
+          t = "left" === Y || "right" === Y;
         if (e) {
           if ("left" === v || "center" === v || "right" === v) return v
         } else if (t && ("top" === v || "center" === v || "bottom" === v)) return v;
       }
       return "center"
-    }, [w, v, H]),
-    ea = i.useMemo(() => {
+    }, [w, v, Y]),
+    eo = i.useMemo(() => {
       var e;
-      if ("edge" !== w) return R(null != (e = null == D ? true : D.align) ? e : "center", H, q, Q)
-    }, [w, D, H, q, Q]),
-    eo = i.useMemo(() => ({
-      position: H,
+      if ("edge" !== w) return R(null != (e = null == D ? true : D.align) ? e : "center", Y, Q, X)
+    }, [w, D, Y, Q, X]),
+    es = i.useMemo(() => ({
+      position: Y,
       caretConfig: null != D ? D : {
         align: "center"
       }
-    }), [H, D]),
-    es = e => {
+    }), [Y, D]),
+    el = e => {
       var {
         setPopoutRef: t,
         position: i,
         nudge: a
       } = e, c = O(e, ["setPopoutRef", "position", "nudge"]);
-      return ee(i), a !== K.current && (K.current = a, null == k || k(a)), er((e, i) => {
+      return et(i), a !== z.current && (z.current = a, null == k || k(a)), ei((e, i) => {
         if (!i) return null;
         let u = (0, r.jsx)(l.VqE, y(E({}, c), {
           setDialogRef: t,
@@ -190,12 +191,12 @@ function w(e) {
           }),
           returnRef: Z,
           children: (0, r.jsx)(S.Provider, {
-            value: eo,
+            value: es,
             children: n
           })
         }));
         return (0, r.jsx)(s.animated.div, {
-          ref: z,
+          ref: q,
           "data-mana-component": "popover",
           style: y(E({}, e), {
             "--custom-caret-edge-offset-horizontal": "".concat(I, "px"),
@@ -214,22 +215,22 @@ function w(e) {
     };
   return (0, r.jsx)(u.H, {
     targetElementRef: a,
-    shouldShow: B,
+    shouldShow: V,
     onRequestClose: g,
-    position: H,
-    align: ei,
+    position: Y,
+    align: ea,
     spacing: A + N,
-    offset: ea,
+    offset: eo,
     layerContext: true,
-    positionKey: null != ea ? "".concat(H, "-").concat(ea) : true,
+    positionKey: null != eo ? "".concat(Y, "-").concat(eo) : true,
     popoutKey: true,
     fixed: false,
     autoInvert: true,
-    nudgeAlignIntoViewport: "top" === H || "bottom" === H,
-    closeOnClickOutside: false,
+    nudgeAlignIntoViewport: "top" === Y || "bottom" === Y,
+    closeOnClickOutside: B,
     ignoreModalClicks: F,
     scrollBehavior: U,
-    renderPopout: es,
+    renderPopout: el,
     children: P
   })
 }

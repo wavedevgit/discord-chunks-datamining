@@ -1,5 +1,5 @@
 /** Chunk was on 87766 **/
-/** chunk id: 969937, original params: e,o,t (module,exports,require) **/
+/** chunk id: 969937, original params: e,t,o (module,exports,require) **/
 module.exports = {
   progressWrapper: "_4264a6cbfca931e2-progressWrapper",
   confetti: "_4264a6cbfca931e2-confetti",

@@ -18,22 +18,22 @@ let p = Chunk473749.forwardRef((e, t) => {
     percentComplete: n,
     size: a = 42,
     strokeWidth: p = 3,
-    glowBlur: u = .4,
-    percentCompleteText: _,
-    percentCompleteTextVariant: f = "text-lg/medium",
-    children: C
-  } = e, v = (0, b.EK)(o, n > 0), g = a / 2, m = a / 2 - p / 2, x = 2 * Math.PI * m, B = x - n * x, y = {
+    glowBlur: _ = .4,
+    percentCompleteText: u,
+    percentCompleteTextVariant: C = "text-lg/medium",
+    children: f
+  } = e, v = (0, b.EK)(o, n > 0), g = a / 2, m = a / 2 - p / 2, x = 2 * Math.PI * m, S = x - n * x, B = {
     strokeDasharray: "".concat(x, " ").concat(x),
-    strokeDashoffset: B
+    strokeDashoffset: S
   }, P = {
     strokeDasharray: "".concat(x, " ").concat(x),
     strokeDashoffset: -n * x
-  }, T = {
+  }, y = {
     boxShadow: "0 0 20px 0px ".concat(v.glow)
   }, {
-    progressTextAnimation: S
+    progressTextAnimation: T
   } = (0, i.q_F)({
-    progressTextAnimation: +(null != _ && 1 !== n),
+    progressTextAnimation: +(null != u && 1 !== n),
     config: s.Y
   });
   return (0, r.jsxs)("div", {
@@ -41,19 +41,19 @@ let p = Chunk473749.forwardRef((e, t) => {
     ref: t,
     children: [(0, r.jsxs)("div", {
       className: l.inner,
-      style: T,
-      children: [C, (0, r.jsxs)(c.animated.div, {
+      style: y,
+      children: [f, (0, r.jsxs)(c.animated.div, {
         style: {
-          opacity: S
+          opacity: T
         },
         className: d()(l.coverContent, l.progressTextWrapper),
         children: [(0, r.jsx)("div", {
           className: d()(l.coverContent, l.progressTextOverlay)
         }), (0, r.jsx)(i.Text, {
-          variant: f,
+          variant: C,
           color: "text-strong",
           className: l.progressText,
-          children: _
+          children: u
         })]
       })]
     }), (0, r.jsxs)("svg", {
@@ -65,7 +65,7 @@ let p = Chunk473749.forwardRef((e, t) => {
           id: "glow",
           children: [(0, r.jsx)("feGaussianBlur", {
             result: "coloredBlur",
-            stdDeviation: u
+            stdDeviation: _
           }), (0, r.jsxs)("feMerge", {
             children: [(0, r.jsx)("feMergeNode", {
               in: "coloredBlur"
@@ -108,7 +108,7 @@ let p = Chunk473749.forwardRef((e, t) => {
         cx: g,
         cy: g,
         stroke: v.foreground,
-        style: y
+        style: B
       })]
     })]
   })

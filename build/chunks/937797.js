@@ -4,6 +4,7 @@
 require.d(exports, {
   DL: () => i,
   EO: () => o,
+  VG: () => d,
   eC: () => l,
   m_: () => a,
   n0: () => c,
@@ -100,6 +101,18 @@ let o = (0, Chunk427164.le)({
   }),
   u = (0, Chunk427164.le)({
     name: "2025-11-quest-bar-listen-for-source-error",
+    kind: "user",
+    defaultConfig: {
+      enabled: false
+    },
+    variations: {
+      1: {
+        enabled: true
+      }
+    }
+  }),
+  d = (0, Chunk427164.le)({
+    name: "2025-11-video-end-card-v2",
     kind: "user",
     defaultConfig: {
       enabled: false

@@ -1,5 +1,5 @@
 /** Chunk was on 87766 **/
-/** chunk id: 209668, original params: e,o,t (module,exports,require) **/
+/** chunk id: 209668, original params: e,t,o (module,exports,require) **/
 module.exports = {
   modalRoot: "_4577670752bdbe9c-modalRoot",
   modalRootV2: "_4577670752bdbe9c-modalRootV2",
@@ -93,5 +93,19 @@ module.exports = {
   portraitButtonsContainer: "_4577670752bdbe9c-portraitButtonsContainer",
   portraitButtonRow: "_4577670752bdbe9c-portraitButtonRow",
   contentFooterAdDetailedInfo: "_4577670752bdbe9c-contentFooterAdDetailedInfo",
-  contentFooterAdDetailedInfoPortrait: "_4577670752bdbe9c-contentFooterAdDetailedInfoPortrait"
+  contentFooterAdDetailedInfoPortrait: "_4577670752bdbe9c-contentFooterAdDetailedInfoPortrait",
+  endScreenOverlay: "_4577670752bdbe9c-endScreenOverlay",
+  endScreenImageBackground: "_4577670752bdbe9c-endScreenImageBackground",
+  endScreenContainer: "_4577670752bdbe9c-endScreenContainer",
+  endScreenContainerPortrait: "_4577670752bdbe9c-endScreenContainerPortrait",
+  endScreenCard: "_4577670752bdbe9c-endScreenCard",
+  endScreenCardPortrait: "_4577670752bdbe9c-endScreenCardPortrait",
+  endScreenCtaContainer: "_4577670752bdbe9c-endScreenCtaContainer",
+  endScreenCtaContainerPortrait: "_4577670752bdbe9c-endScreenCtaContainerPortrait",
+  endScreenCtaTitleContainer: "_4577670752bdbe9c-endScreenCtaTitleContainer",
+  endScreenCtaBtnTitle: "_4577670752bdbe9c-endScreenCtaBtnTitle",
+  endScreenCtaTitle: "_4577670752bdbe9c-endScreenCtaTitle",
+  endScreenCtaSubtitle: "_4577670752bdbe9c-endScreenCtaSubtitle",
+  endScreenCtaBtn: "_4577670752bdbe9c-endScreenCtaBtn",
+  shine: "_4577670752bdbe9c-shine"
 }
