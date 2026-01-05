@@ -21,14 +21,14 @@ let d = function(e) {
     user: f,
     userIgnored: g
   } = e, {
-    voiceActivityStatusEnabled: h
+    voiceActivityStatusEnabled: m
   } = (0, i.U)({
     location: "StatusText"
   }), {
-    voiceChannel: m
+    voiceChannel: h
   } = (0, a.Z)({
     userId: null == f ? true : f.id
-  }), b = h ? m : true;
+  }), b = m ? h : true;
   return g ? (0, r.jsx)("div", {
     className: u.text,
     children: c.intl.string(c.t.tFY5Zb)

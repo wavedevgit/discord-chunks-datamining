@@ -330,12 +330,7 @@ class U extends(r = Chunk473749.Component) {
         visible_user_ids: s.filter(e => null != e),
         changelog_dm_visible: c
       }))
-    }), M(this, "getSectionHeight", e => {
-      let {
-        showDMHeader: t
-      } = this.props;
-      return 0 === e ? 0 : 24 * !!t
-    }), M(this, "handleScroll", o()(() => {
+    }), M(this, "getSectionHeight", e => 24 * (0 !== e)), M(this, "handleScroll", o()(() => {
       if (null != this._list) {
         let e = this._list.getScrollerNode();
         null != e && h.Z.updateChannelListScroll(A.ME, e.scrollTop)
@@ -370,17 +365,14 @@ class U extends(r = Chunk473749.Component) {
         section: t,
         row: n
       } = e, {
-        privateChannelIds: r,
-        hideAllDMs: l
+        privateChannelIds: r
       } = this.props;
-      return 0 === t ? this.renderChild(n) : 0 !== n || 0 !== r.length || l ? this.renderDM(t, n) : (0, i.jsx)(G, {}, "no-private-channels")
+      return 0 === t ? this.renderChild(n) : 0 === n && 0 === r.length ? (0, i.jsx)(G, {}, "no-private-channels") : this.renderDM(t, n)
     }), M(this, "renderSection", e => {
       let {
         section: t
-      } = e, {
-        showDMHeader: n
-      } = this.props;
-      return 0 !== t && n ? (0, i.jsxs)(v.Z, {
+      } = e;
+      return 0 === t ? null : (0, i.jsxs)(v.Z, {
         className: D.privateChannelsHeaderContainer,
         children: [(0, i.jsx)("span", {
           className: D.headerText,
@@ -395,7 +387,7 @@ class U extends(r = Chunk473749.Component) {
           icon: f.BRu,
           subscribeToGlobalHotkey: true
         })]
-      }, t) : null
+      }, t)
     }), M(this, "getRowHeight", (e, t) => {
       let {
         privateChannelIds: n,
@@ -424,25 +416,22 @@ let B = e => {
     version: n,
     theme: r,
     children: a,
-    showDMHeader: o,
-    listScrollerRef: d,
-    hideAllDMs: h
-  } = e, b = l.Children.count(a), y = N.Z.getMutablePrivateChannels(), O = h ? {} : (0, _.k1)(y), v = (0, u.Wu)([w.Z, S.Z, I.Z], () => {
-    let e = w.Z.getPrivateChannelIds(),
-      t = (0, _.tU)(e, [S.Z, I.Z]);
-    return h ? [] : t
-  }, [h]);
+    listScrollerRef: o
+  } = e, d = l.Children.count(a), h = N.Z.getMutablePrivateChannels(), b = (0, _.k1)(h), y = (0, u.Wu)([w.Z, S.Z, I.Z], () => {
+    let e = w.Z.getPrivateChannelIds();
+    return (0, _.tU)(e, [S.Z, I.Z])
+  });
   (0, x.z)(C.R);
   let {
-    analyticsLocations: E
-  } = (0, m.ZP)(g.Z.CONTACTS_LIST), Z = (0, P.Ll)(), {
-    keyboardModeEnabled: T,
-    version: A
+    analyticsLocations: O
+  } = (0, m.ZP)(g.Z.CONTACTS_LIST), v = (0, P.Ll)(), {
+    keyboardModeEnabled: E,
+    version: Z
   } = (0, u.cj)([p.Z, N.Z], () => ({
     keyboardModeEnabled: p.Z.keyboardModeEnabled,
     version: null != n ? "".concat(n, ":").concat(N.Z.getPrivateChannelsVersion()) : N.Z.getPrivateChannelsVersion()
-  })), R = l.useRef(null), D = null != d ? d : R, M = l.useCallback(e => {
-    let t = D.current,
+  })), T = l.useRef(null), A = null != o ? o : T, R = l.useCallback(e => {
+    let t = A.current,
       n = document.querySelector(e);
     null != t && null != n && t.scrollIntoViewNode({
       node: n,
@@ -455,39 +444,39 @@ let B = e => {
         })
       }
     })
-  }, [D]), G = l.useCallback(() => new Promise(e => {
-    let t = D.current;
+  }, [A]), D = l.useCallback(() => new Promise(e => {
+    let t = A.current;
     if (null == t) return e();
     t.scrollToTop({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), [D]), B = l.useCallback(() => new Promise(e => {
-    let t = D.current;
+  }), [A]), M = l.useCallback(() => new Promise(e => {
+    let t = A.current;
     if (null == t) return e();
     t.scrollToBottom({
       callback() {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [D]), F = (0, j.Dt)(), V = (0, c.ZP)({
-    id: "private-channels-".concat(F),
-    isEnabled: T,
-    scrollToStart: G,
-    scrollToEnd: B,
-    defaultFocused: (b + +!!o).toString(),
-    setFocus: M
+  }), [A]), G = (0, j.Dt)(), B = (0, c.ZP)({
+    id: "private-channels-".concat(G),
+    isEnabled: E,
+    scrollToStart: D,
+    scrollToEnd: M,
+    defaultFocused: (d + 1).toString(),
+    setFocus: R
   });
   return (0, i.jsx)(m.Gt, {
-    value: E,
+    value: O,
     children: (0, i.jsx)(s.bG, {
-      navigator: V,
+      navigator: B,
       children: (0, i.jsx)(U, k(L({}, e), {
         density: t,
-        channels: O,
-        privateChannelIds: v,
-        listRef: D,
-        theme: null != Z ? Z : r,
-        version: A
+        channels: b,
+        privateChannelIds: y,
+        listRef: A,
+        theme: null != v ? v : r,
+        version: Z
       }))
     })
   })

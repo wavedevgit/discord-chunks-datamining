@@ -1,7 +1,7 @@
 /** Chunk was on 67000 **/
 /** chunk id: 222059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  u: () => L
+  u: () => M
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -14,7 +14,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk975298 = require("./975298.js"),
   Chunk550385 = require("./550385.js"),
   Chunk899740 = require("./899740.js"),
-  Chunk365113 = require("./365113.js"),
   Chunk849862 = require("./849862.js"),
   Chunk460181 = require("./460181.js"),
   Chunk155409 = require("./155409.jsx"),
@@ -35,7 +34,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk871465 = require("./871465.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk992397 = require("./992397.js");
-let D = {
+let R = {
   origin: {
     x: false,
     y: 0
@@ -48,32 +47,30 @@ let D = {
   }
 };
 
-function M(e) {
+function D(e) {
   var t, n;
   let {
     selected: a,
     user: d,
     badge: h,
-    link: g,
-    showProgressBadge: y
-  } = e, [O, v] = i.useState(false), [j, C] = i.useState(false), [x, E] = i.useState(null), [S, w] = i.useState(0), M = (0, l.Ie)("home"), L = (0, f.oq)().activePanel === f.wh.APP_ICON, k = () => {
-    E(null), w(0), clearTimeout(x)
-  }, G = p.o.useConfig({
-    location: "home button"
-  }).dmsTab;
+    link: p,
+    showProgressBadge: m
+  } = e, [y, O] = i.useState(false), [v, j] = i.useState(false), [C, x] = i.useState(null), [E, Z] = i.useState(0), D = (0, l.Ie)("home"), M = (0, f.oq)().activePanel === f.wh.APP_ICON, L = () => {
+    x(null), Z(0), clearTimeout(C)
+  };
   if (null == d) return null;
-  let U = G ? A.intl.string(A.t.Ym2Ri6) : A.intl.string(A.t.YUU0RF);
-  j && (U = o.K.get(Z.wli) ? A.intl.string(A.t["nkq1l+"]) : A.intl.string(A.t.Be8Q5E));
-  let B = null;
-  !a && y && (B = (0, r.jsx)(c.Z, {
-    className: R.downloadProgress,
+  let k = T.intl.string(T.t.YUU0RF);
+  v && (k = o.K.get(N.wli) ? T.intl.string(T.t["nkq1l+"]) : T.intl.string(T.t.Be8Q5E));
+  let G = null;
+  !a && m && (G = (0, r.jsx)(c.Z, {
+    className: A.downloadProgress,
     determineOwnVisibility: false
   }));
-  let F = a || O || L,
-    V = (0, r.jsx)(s.aRk, {
+  let U = a || y || M,
+    B = (0, r.jsx)(s.aRk, {
       selected: true,
-      lowerBadge: h > 0 ? (0, N.Ne)(h) : null,
-      upperBadge: B,
+      lowerBadge: h > 0 ? (0, P.Ne)(h) : null,
+      upperBadge: G,
       lowerBadgeSize: {
         width: (0, s.OVM)(h)
       },
@@ -95,29 +92,29 @@ function M(e) {
         }
         return e
       }({
-        onMouseEnter: () => v(true),
-        onMouseLeave: () => v(false),
+        onMouseEnter: () => O(true),
+        onMouseLeave: () => O(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != x && clearTimeout(x), E(setTimeout(k, 500)), w(S + 1), 15 === S)) {
-            k();
-            let e = !o.K.get(Z.wli);
-            o.K.set(Z.wli, e), e && o.K.set(T.O, true), e ? (0, b.GN)("discodo") : (0, b.GN)("user_leave"), C(true), setTimeout(() => {
-              C(false)
+          if (!__OVERLAY__ && (null != C && clearTimeout(C), x(setTimeout(L, 500)), Z(E + 1), 15 === E)) {
+            L();
+            let e = !o.K.get(N.wli);
+            o.K.set(N.wli, e), e && o.K.set(w.O, true), e ? (0, g.GN)("discodo") : (0, g.GN)("user_leave"), j(true), setTimeout(() => {
+              j(false)
             }, 1e3)
           }
         },
-        selected: F,
-        ariaLabel: A.intl.string(A.t.YUU0RF),
+        selected: U,
+        ariaLabel: T.intl.string(T.t.YUU0RF),
         "aria-owns": "guild-list-unread-dms",
         "aria-selected": a
-      }, M), n = n = {
+      }, D), n = n = {
         to: {
-          pathname: g,
+          pathname: p,
           state: {
             analyticsSource: {
-              page: Z.ZY5.GUILD_CHANNEL,
-              section: Z.jXE.NAVIGATION,
-              object: Z.qAy.BUTTON_HOME
+              page: N.ZY5.GUILD_CHANNEL,
+              section: N.jXE.NAVIGATION,
+              object: N.qAy.BUTTON_HOME
             }
           }
         },
@@ -134,28 +131,28 @@ function M(e) {
       }), t))
     });
   return (0, r.jsx)("div", {
-    className: R.tutorialContainer,
-    children: (0, r.jsx)(m.Z, {
-      inlineSpecs: D,
+    className: A.tutorialContainer,
+    children: (0, r.jsx)(b.Z, {
+      inlineSpecs: R,
       tutorialId: "friends-list",
       position: "right",
-      children: (0, r.jsxs)(I.H, {
-        children: [(0, r.jsx)(_.Z, {
+      children: (0, r.jsxs)(_.H, {
+        children: [(0, r.jsx)(S.Z, {
           selected: a,
-          hovered: O,
-          className: R.pill
-        }), (0, r.jsx)(P.Z, {
+          hovered: y,
+          className: A.pill
+        }), (0, r.jsx)(I.Z, {
           hideOnClick: true,
-          text: U,
+          text: k,
           selected: a,
-          children: V
+          children: B
         })]
       })
     })
   })
 }
 
-function L() {
+function M() {
   let e = (0, Chunk278464.n)(),
     t = (0, Chunk442837.e7)([Chunk941128.Z, Chunk417363.Z], () => {
       let e = (0, Chunk339149.E)(Chunk941128.Z.activeItems, Chunk417363.Z),
@@ -178,16 +175,16 @@ function L() {
     })),
     u = Chunk91192.fractionalState === Chunk474936.a$.NONE ? Chunk433517 + Chunk481060 : 0,
     f = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
-    p = (0, Chunk899740.q)(),
-    b = require + Chunk864682 + Chunk365113,
-    m = Chunk460181 === Chunk864682 && Chunk864682 > 0 && require + Chunk365113 === 0,
+    g = (0, Chunk899740.q)(),
+    b = require + Chunk864682 + Chunk460181,
+    S = Chunk155409 === Chunk864682 && Chunk864682 > 0 && require + Chunk460181 === 0,
     _ = Chunk774343.Z.getHomeLink();
-  return Chunk155409 && (_ = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk54381.jsx)(M, {
+  return Chunk276952 && (_ = Chunk981631.Z5c.APPLICATION_STORE), (0, Chunk54381.jsx)(D, {
     selected: module,
     user: Chunk550385,
     selectedChannelId: Chunk944486.Z.getChannelId(Chunk981631.ME),
-    badge: Chunk460181,
-    link: Chunk276952,
+    badge: Chunk155409,
+    link: Chunk682662,
     showProgressBadge: exports
   })
 }

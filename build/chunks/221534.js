@@ -9,6 +9,5 @@ module.exports = {
   badge: "_133bf5eea8e33a34-badge",
   item: "_133bf5eea8e33a34-item",
   addFriend: "_133bf5eea8e33a34-addFriend",
-  tabBody: "_133bf5eea8e33a34-tabBody",
-  nowPlayingColumnFullWidth: "_133bf5eea8e33a34-nowPlayingColumnFullWidth"
+  tabBody: "_133bf5eea8e33a34-tabBody"
 }

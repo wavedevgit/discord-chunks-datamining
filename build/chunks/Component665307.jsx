@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 665307, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => B
+  Z: () => H
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -234,7 +234,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       children: (0, i.jsx)("div", w({}, u))
     })
   };
-class H extends(r = Chunk473749.PureComponent) {
+class B extends(r = Chunk473749.PureComponent) {
   componentDidMount() {
     let {
       fetched: e
@@ -249,7 +249,7 @@ class H extends(r = Chunk473749.PureComponent) {
     let t = this.props.activeRowKey;
     if (null != t && e.activeRowKey !== t && this.props.isNavigatingByKeyboard) {
       let e = this._rowRefs[t];
-      null != e && (h.Z.wait(m.Zy), this.props.scrollToRow(e, R))
+      null != e && (m.Z.wait(h.Zy), this.props.scrollToRow(e, R))
     }
   }
   handleHighlightedApplicationKey() {
@@ -411,7 +411,7 @@ class H extends(r = Chunk473749.PureComponent) {
       let {
         analyticsContext: r
       } = this.props;
-      (0, m.jW)(e, async () => {
+      (0, h.jW)(e, async () => {
         let {
           default: e
         } = await n.e("98335").then(n.bind(n, 485292));
@@ -427,7 +427,7 @@ class H extends(r = Chunk473749.PureComponent) {
   }
 }
 
-function B(e) {
+function H(e) {
   let t = l.useContext(S.AnalyticsContext),
     n = (0, s.TH)(),
     {
@@ -450,7 +450,7 @@ function B(e) {
       activeRowKey: C.Z.activeRowKey,
       isNavigatingByKeyboard: C.Z.isNavigatingByKeyboard
     }));
-  return (0, i.jsx)(H, L(w({}, e), {
+  return (0, i.jsx)(B, L(w({}, e), {
     analyticsContext: t,
     location: n,
     applicationViewItems: r,
@@ -462,6 +462,6 @@ function B(e) {
     isNavigatingByKeyboard: f
   }))
 }
-Z(H, "defaultProps", {
+Z(B, "defaultProps", {
   stickyHeader: false
 })

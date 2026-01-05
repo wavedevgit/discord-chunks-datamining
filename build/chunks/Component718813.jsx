@@ -314,7 +314,7 @@ class M extends Chunk473749.PureComponent {
 function k(e) {
   let t = (0, b.Ll)(),
     n = (0, c.e7)([_.Z], () => _.Z.getLayers()),
-    r = (0, m.QP)(e => e.fullScreenLayers.length > 0 && !e.fullScreenLayers.some(e => e.options.showAppUnderLayer));
+    r = (0, h.QP)(e => e.fullScreenLayers.length > 0 && !e.fullScreenLayers.some(e => e.options.showAppUnderLayer));
   return (0, i.jsx)(M, S(C({}, e), {
     sidebarTheme: t,
     layers: n,

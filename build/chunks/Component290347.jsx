@@ -121,8 +121,8 @@ function Z(e) {
     subHeaderExtra: k,
     featureCards: U,
     changeLogId: G,
-    button: H,
-    body: B
+    button: B,
+    body: H
   } = e, {
     onClose: V,
     transitionState: F
@@ -246,13 +246,13 @@ function Z(e) {
               default: e.isDefault
             }, e.locale)
           })
-        }) : "embed" === Z.type ? (0, r.jsx)(h.BC, {
+        }) : "embed" === Z.type ? (0, r.jsx)(m.BC, {
           className: a()(T.video, w),
           allowFullScreen: false,
           href: Z.href,
           thumbnail: Z.thumbnail,
           video: Z.embed,
-          provider: m.pn.YOUTUBE,
+          provider: h.pn.YOUTUBE,
           maxWidth: Z.embed.width,
           maxHeight: Z.embed.height,
           renderVideoComponent: O.lV,
@@ -276,10 +276,10 @@ function Z(e) {
           color: "text-subtle",
           className: T.subHeader,
           children: [M, null == k ? true : k()]
-        }), null != B && "" !== B && (0, r.jsx)(p.Heading, {
+        }), null != H && "" !== H && (0, r.jsx)(p.Heading, {
           variant: "heading-lg/semibold",
           className: T.bodyText,
-          children: B
+          children: H
         }), U.length > 0 && (0, r.jsx)("div", {
           className: a()(T.featureCardGroup, {
             [T.wideStyle]: Y
@@ -289,7 +289,7 @@ function Z(e) {
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {
           className: T.buttonContainer,
-          children: H()
+          children: B()
         })]
       })]
     })

@@ -19,7 +19,7 @@ let g = function(e) {
     scrollContainerRef: t
   } = e, n = (0, l.e7)([a.Z], () => a.Z.notificationItem(), []), {
     showDot: g
-  } = (0, c.Z)(), h = i.useRef(null), [m, b] = i.useState(false), {
+  } = (0, c.Z)(), m = i.useRef(null), [h, b] = i.useState(false), {
     data: _,
     loading: E,
     isRefreshing: O,
@@ -44,12 +44,12 @@ let g = function(e) {
       let e = t.current;
       if (null == e) return;
       let n = e.scrollHeight;
-      !(n - e.scrollTop - e.clientHeight < 300) || m || E || S || (b(true), (0, o.es)().finally(() => {
+      !(n - e.scrollTop - e.clientHeight < 300) || h || E || S || (b(true), (0, o.es)().finally(() => {
         setTimeout(() => {
           b(false)
         }, 300)
       }))
-    }, [E, m, S, j, t]);
+    }, [E, h, S, j, t]);
   i.useEffect(() => {
     let e = t.current;
     if (null != e) return e.addEventListener("scroll", P), () => {
@@ -131,9 +131,9 @@ let g = function(e) {
         children: "New content available"
       })
     }), (0, r.jsxs)("div", {
-      ref: h,
+      ref: m,
       className: f.scrollContainer,
-      children: [_.map(e => Z(e)), !j && (m || S) && (0, r.jsx)("div", {
+      children: [_.map(e => Z(e)), !j && (h || S) && (0, r.jsx)("div", {
         style: {
           padding: "16px",
           textAlign: "center"

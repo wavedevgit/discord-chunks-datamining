@@ -16,7 +16,7 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk701488 = require("./701488.js"),
   Chunk231338 = require("./231338.js");
-let m = new Set([Chunk701488.Fu, Chunk701488.JT]),
+let h = new Set([Chunk701488.Fu, Chunk701488.JT]),
   b = {
     [Chunk231338.Et.GET_PROVIDER_ACCESS_TOKEN]: {
       scope: {
@@ -38,14 +38,14 @@ let m = new Set([Chunk701488.Fu, Chunk701488.JT]),
         let p = (0, u._f)(t.application),
           g = l.Z.get(n);
         if (null == g) throw new c.Z({
-          errorCode: h.lT.INVALID_PROVIDER
+          errorCode: m.lT.INVALID_PROVIDER
         }, 'Platform not found for provider "'.concat(n, '"'));
         if (n === f.ABu.AMAZON_MUSIC) {
-          if (!m.has(p)) throw new c.Z({
-            errorCode: h.lT.UNAUTHORIZED_FOR_APPLICATION
+          if (!h.has(p)) throw new c.Z({
+            errorCode: m.lT.UNAUTHORIZED_FOR_APPLICATION
           }, "Command not available for this application")
         } else throw new c.Z({
-          errorCode: h.lT.UNAUTHORIZED_FOR_APPLICATION
+          errorCode: m.lT.UNAUTHORIZED_FOR_APPLICATION
         }, "Command not available for this application");
         return new Promise(async (e, t) => {
           let l = o.Z.getAccount(null, n);
@@ -56,16 +56,16 @@ let m = new Set([Chunk701488.Fu, Chunk701488.JT]),
               let r = (null != (n = t.accounts) ? n : []).find(e => e.type === g.type);
               null != r && (e({
                 access_token: r.access_token
-              }), m())
+              }), h())
             }
 
             function p() {
               t(new c.Z({
-                errorCode: h.lT.OAUTH2_ERROR
-              }, 'OAuth2 setup for "'.concat(n, '" failed'))), m()
+                errorCode: m.lT.OAUTH2_ERROR
+              }, 'OAuth2 setup for "'.concat(n, '" failed'))), h()
             }
 
-            function m() {
+            function h() {
               r.Z.unsubscribe("USER_CONNECTIONS_UPDATE", u), s.S.unsubscribe(f.CkL.CONNECTIONS_CALLBACK_ERROR, p)
             }
             r.Z.subscribe("USER_CONNECTIONS_UPDATE", u), s.S.subscribe(f.CkL.CONNECTIONS_CALLBACK_ERROR, p), (0, a.Z)({
@@ -76,7 +76,7 @@ let m = new Set([Chunk701488.Fu, Chunk701488.JT]),
           } else try {
             let t = await i.Z.refreshAccessToken(g.type, l.id);
             if (null == t) throw new c.Z({
-              errorCode: h.lT.OAUTH2_ERROR
+              errorCode: m.lT.OAUTH2_ERROR
             }, "Refreshing access token did not return a new access token");
             e({
               access_token: t
@@ -105,22 +105,22 @@ let m = new Set([Chunk701488.Fu, Chunk701488.JT]),
         let r = (0, u._f)(t.application),
           a = l.Z.get(n);
         if (null == a) throw new c.Z({
-          errorCode: h.lT.INVALID_PROVIDER
+          errorCode: m.lT.INVALID_PROVIDER
         }, 'Platform not found for provider "'.concat(n, '"'));
         if (n === f.ABu.AMAZON_MUSIC) {
-          if (!m.has(r)) throw new c.Z({
-            errorCode: h.lT.UNAUTHORIZED_FOR_APPLICATION
+          if (!h.has(r)) throw new c.Z({
+            errorCode: m.lT.UNAUTHORIZED_FOR_APPLICATION
           }, "Command not available for this application")
         } else throw new c.Z({
-          errorCode: h.lT.UNAUTHORIZED_FOR_APPLICATION
+          errorCode: m.lT.UNAUTHORIZED_FOR_APPLICATION
         }, "Command not available for this application");
         let s = o.Z.getAccount(null, n);
         if (null == s) throw new c.Z({
-          errorCode: h.lT.NO_CONNECTION_FOUND
+          errorCode: m.lT.NO_CONNECTION_FOUND
         }, "No connection found");
         let d = await i.Z.refreshAccessToken(a.type, s.id);
         if (null == d) throw new c.Z({
-          errorCode: h.lT.OAUTH2_ERROR
+          errorCode: m.lT.OAUTH2_ERROR
         }, "Refreshing access token did not return a new access token");
         return {
           access_token: d

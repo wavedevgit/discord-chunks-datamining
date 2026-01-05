@@ -1368,9 +1368,7 @@ let ep = "@me",
     BILLING_PROMOTION_DIRECT_FULFILLMENT_REDEMPTION: (e, t) => "/billing/partner-promotions/".concat(e, "/").concat(t),
     NOTIFICATIONS: "/notifications",
     FRIENDS: "/channels/@me",
-    ME_ACTIVITY: "/channels/@me/activity",
     ME: "/channels/@me",
-    ME_DMS: "/channels/@me/dms",
     MESSAGE_REQUESTS: "/message-requests",
     CHANNEL: (e, t, n) => {
       let r = null == t ? "/channels/".concat(e || ep) : "/channels/".concat(e || ep, "/").concat(t);

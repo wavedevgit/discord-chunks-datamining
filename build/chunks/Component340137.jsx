@@ -46,7 +46,7 @@ function N(e) {
     onClick: l,
     selectedOverride: o = false,
     popoutProps: s,
-    ref: h,
+    ref: m,
     focusSectionProps: b
   } = e, [O, v] = i.useState(false), N = (0, _.D)(), j = o || N, P = o || j, {
     backForwardButtons: x,
@@ -63,7 +63,7 @@ function N(e) {
     badgeType: R
   } = (0, E.h6)({
     isSelected: j
-  }), D = (0, m.isDesktop)() && x, M = (0, g.A)(), k = (0, m.isMac)() ? C[M] : D ? S[M] : T[M];
+  }), D = (0, h.isDesktop)() && x, M = (0, g.A)(), k = (0, h.isMac)() ? C[M] : D ? S[M] : T[M];
   return (0, r.jsxs)(d.Kqy, {
     gap: 0,
     direction: "horizontal",
@@ -92,7 +92,7 @@ function N(e) {
         }
         return e
       }({
-        innerRef: h,
+        innerRef: m,
         className: a()(I.clickableContainer, {
           [I.withHoverHighlight]: Z
         })

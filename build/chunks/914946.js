@@ -3,7 +3,7 @@
 require.d(exports, {
   FJ: () => en,
   RE: () => G,
-  T5: () => B,
+  T5: () => H,
   Xb: () => V,
   YK: () => ee,
   YS: () => X,
@@ -98,15 +98,15 @@ function G(e) {
   return /^http/.test(e) ? e : "".concat(location.protocol, "//").concat(location.host).concat("/" === e.charAt(0) ? "" : "/").concat(e)
 }
 
-function H(e) {
+function B(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
   return t.indexOf(e) > false
 }
 
-function B(e, t) {
+function H(e, t) {
   let n = [],
     r = e.getGuildId();
-  return [A.d4z.GUILD_CATEGORY, ...h.tx].includes(e.type) || n.push(new Promise(t => {
+  return [A.d4z.GUILD_CATEGORY, ...m.tx].includes(e.type) || n.push(new Promise(t => {
     O.Z.whenReady(e.id, () => t()), c.Z.fetchMessages({
       channelId: e.id,
       limit: A.AQB
@@ -135,7 +135,7 @@ function V(e) {
       channelId: e.channel_id
     }).map(U),
     n = b.Z.getChannel(e.channel_id),
-    r = null != e.author ? new m.Z(e.author) : true,
+    r = null != e.author ? new h.Z(e.author) : true,
     i = null != e.author ? (0, f.ij)(r, n) : true;
   return {
     id: e.id,
@@ -260,12 +260,12 @@ async function X(e, t, n) {
   if ("string" == typeof n)
     if (e.transport === x.He.POST_MESSAGE) {
       let e = (0, u.ZP)(t);
-      if (null == e || !H(n, [e])) throw new j.Z({
+      if (null == e || !B(n, [e])) throw new j.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } else {
       let e = await J(t);
-      if (r = g.ZP.createFromServer(e), !H(n, e.rpc_origins)) throw new j.Z({
+      if (r = g.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new j.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } null == r && (r = g.ZP.createFromServer(await J(t)));

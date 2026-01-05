@@ -65,7 +65,7 @@ function g(e) {
   }), t))
 }
 
-function h(e) {
+function m(e) {
   let {
     channel: t
   } = e;
@@ -78,7 +78,7 @@ function h(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     channel: t
   } = e;
@@ -95,9 +95,9 @@ function b(e) {
   let {
     channel: t
   } = e;
-  return t.isGuildStageVoice() ? (0, r.jsx)(h, {
+  return t.isGuildStageVoice() ? (0, r.jsx)(m, {
     channel: t
-  }) : (0, r.jsx)(m, {
+  }) : (0, r.jsx)(h, {
     channel: t
   })
 }

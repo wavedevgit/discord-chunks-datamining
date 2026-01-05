@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 6809, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,29 +15,29 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk969373 = require("./969373.js");
-let h = function() {
+let m = function() {
   let {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme), n = Chunk473749.useRef(null);
   Chunk473749.useEffect(() => {
     null == require.current && (require.current = exports)
   }, [exports]);
-  let h = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.LIGHT),
-    m = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.DARKER),
+  let m = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.LIGHT),
+    h = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.DARKER),
     b = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.MIDNIGHT),
     _ = Chunk473749.useMemo(() => [{
       theme: Chunk981631.BRd.LIGHT,
       label: Chunk388032.t.K2sFfo,
-      color: h.hex()
+      color: m.hex()
     }, {
       theme: Chunk981631.BRd.DARKER,
       label: Chunk388032.t.b8Cei3,
-      color: m.hex()
+      color: h.hex()
     }, {
       theme: Chunk981631.BRd.MIDNIGHT,
       label: Chunk388032.t.Do4ZJx,
       color: b.hex()
-    }], [h, m, b]),
+    }], [m, h, b]),
     E = Chunk473749.useCallback(t => {
       (0, u.Yk)({
         isPersisted: true,

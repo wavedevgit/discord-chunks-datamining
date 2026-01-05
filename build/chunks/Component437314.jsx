@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 var g = ((r = {}).SECTION_NO_RESULTS = "SECTION_NO_RESULTS", r);
-let h = Object.freeze({
+let m = Object.freeze({
     SECTION_ALL: {
       lightSrc: require("./900933.js"),
       darkSrc: require("./67764.js"),
@@ -97,7 +97,7 @@ let h = Object.freeze({
       })
     }
   }),
-  m = e => {
+  h = e => {
     let {
       theme: t
     } = e, n = d.intl.string(d.t["oi+B4p"]);
@@ -120,15 +120,15 @@ class b extends Chunk473749.PureComponent {
       switch (e) {
         case u.pJs.ADD_FRIEND:
         case u.pJs.ALL:
-          return h.SECTION_ALL;
+          return m.SECTION_ALL;
         case u.pJs.ONLINE:
-          return h.SECTION_ONLINE;
+          return m.SECTION_ONLINE;
         case u.pJs.PENDING:
-          return h.SECTION_PENDING;
+          return m.SECTION_PENDING;
         case u.pJs.SUGGESTIONS:
-          return h.SECTION_SUGGESTIONS;
+          return m.SECTION_SUGGESTIONS;
         case "SECTION_NO_RESULTS":
-          return h.SECTION_NO_RESULTS;
+          return m.SECTION_NO_RESULTS;
         default:
           throw Error("FriendsEmptyState: Invalid empty state")
       }
@@ -136,7 +136,7 @@ class b extends Chunk473749.PureComponent {
     return module === Chunk981631.pJs.ADD_FRIEND ? (0, Chunk54381.jsx)(Chunk748780.Z.div, {
       className: Chunk397977.friendsEmpty,
       style: r,
-      children: (0, Chunk54381.jsx)(m, {
+      children: (0, Chunk54381.jsx)(h, {
         theme: require
       })
     }) : (0, Chunk54381.jsx)(Chunk748780.Z.div, {

@@ -138,7 +138,7 @@ class ef extends Chunk473749.PureComponent {
         slug: a
       }), (t !== e.locale || i !== e.skuId) && s(), r && !e.shouldFetchStatistics) {
       if (null == n) throw Error("Unexpected missing sku");
-      g.Z.wait(() => (0, h.$)(n.applicationId))
+      g.Z.wait(() => (0, m.$)(n.applicationId))
     }(i !== e.skuId || l !== e.storeListingId) && (this._trackedViewed = false), this.trackViewed(), this.replaceUrlWithSlug()
   }
   componentWillUnmount() {
@@ -442,7 +442,7 @@ class ef extends Chunk473749.PureComponent {
       let {
         sku: r
       } = this.props;
-      null != r && B.default.track(ea.rMx.STORE_LISTING_MEDIA_SCROLLED, ep(ed({}, (0, j.Z)(r)), {
+      null != r && H.default.track(ea.rMx.STORE_LISTING_MEDIA_SCROLLED, ep(ed({}, (0, j.Z)(r)), {
         card_index: n,
         card_type: e.type === ea.s9s.IMG ? "image" : "video"
       }))
@@ -617,7 +617,7 @@ let eg = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
     didFetchEntitlements: null != l && M.Z.applicationIdsFetched.has(l),
     shouldFetchStatistics: s && null != l && R.Z.shouldFetchStatisticsForApplication(l),
     sku: n,
-    isFocused: H.Z.isFocused(),
+    isFocused: B.Z.isFocused(),
     storeListing: U.Z.getStoreListing({
       storeListingId: a,
       skuId: t,

@@ -106,8 +106,8 @@ let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         section: t
       } = e;
-      if (t !== m.CoT.INTEGRATIONS) returnfalse;
-      if (l = m.b4C.OVERVIEW, null == r) {
+      if (t !== h.CoT.INTEGRATIONS) returnfalse;
+      if (l = h.b4C.OVERVIEW, null == r) {
         let e = p.Z.getChannel(),
           t = null == e ? true : e.getGuildId();
         null != e && null != t && (d.Z.fetchForChannel(t, e.id), v = true), T()
@@ -146,7 +146,7 @@ let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
         channelId: n,
         webhooks: l
       } = e;
-      if (v = false, null != r && t === r.id && null != i && n === i.id && null != l && y !== m.QZA.SUBMITTING) {
+      if (v = false, null != r && t === r.id && null != i && n === i.id && null != l && y !== h.QZA.SUBMITTING) {
         for (let e = E.length - 1; e >= 0; e--) {
           let t = E[e];
           if (null != n && (null == t ? true : t.channel_id) !== n) continue;
@@ -175,8 +175,8 @@ let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
     },
     INTEGRATION_SETTINGS_SAVE_FAILURE: function(e) {
       var t;
-      if (y !== m.QZA.SUBMITTING) returnfalse;
-      y = m.QZA.OPEN, I = null != (t = e.errors) ? t : {}
+      if (y !== h.QZA.SUBMITTING) returnfalse;
+      y = h.QZA.OPEN, I = null != (t = e.errors) ? t : {}
     }
   }),
   A = x

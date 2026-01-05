@@ -28,7 +28,7 @@ class O extends Chunk473749.Component {
         className: E.sectionContent,
         children: [e.map(e => (0, r.jsx)("div", {
           className: E.unit,
-          children: (0, r.jsx)(m.Z, {
+          children: (0, r.jsx)(h.Z, {
             reason: e,
             hidePersonalInformation: n
           })
@@ -77,8 +77,8 @@ let v = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk594174.default, Chunk55
     sku: t
   } = e;
   return {
-    socialReasons: (0, h.Gg)(t.id, f.Z, d.default, c.Z, p.Z),
-    nonSocialReasons: (0, h.Ww)(t.id, f.Z, g.Z),
+    socialReasons: (0, m.Gg)(t.id, f.Z, d.default, c.Z, p.Z),
+    nonSocialReasons: (0, m.Ww)(t.id, f.Z, g.Z),
     hidePersonalInformation: u.Z.hidePersonalInformation
   }
 })(O)

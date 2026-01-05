@@ -143,7 +143,7 @@ function tt(e) {
 require("./117240.js"), require("./801077.js"), require("./967368.js"), require("./272053.js"), require("./974180.js"), require("./574254.js"), require("./551428.js"), require("./55563.js"), require("./882029.js"), require("./959457.js"), require("./653255.js"), require("./663389.js"), require("./25990.js"), require("./778825.js"), require("./999382.js"), require("./388610.js"), require("./533947.js"), require("./277053.js"), require("./371398.js"), require("./141233.js"), require("./471073.js"), require("./606206.js");
 let tn = false;
 (0, Chunk912471.DL)(), Chunk442837.ZP.initialize(), Chunk298969.Z.loadServer(), Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("USER_SETTINGS_OPEN", (e, t) => {
-  eK.Z.getLayers().includes(e2.S9g.USER_SETTINGS) || (0, eH.openUserSettings)()
+  eK.Z.getLayers().includes(e2.S9g.USER_SETTINGS) || (0, eB.openUserSettings)()
 }), Chunk998502.ZP.on("LAUNCH_APPLICATION", (e, t) => {
   let n = eQ.Z.getActiveLibraryApplication(t);
   e5.playApplication(t, n, {
@@ -160,11 +160,11 @@ let tr = (0, Chunk951752.l)(e => {
       location: t
     } = e, n = (0, eG.default)(t.pathname);
     return null != n && (0, Q.h)(() => {
-      (0, eH.openUserSettingsFromParsedUrl)({
+      (0, eB.openUserSettingsFromParsedUrl)({
         match: n,
         urlOrigin: "deeplink"
       })
-    }), (0, r.jsx)(h.Z, {
+    }), (0, r.jsx)(m.Z, {
       deepLinkType: e6.jE.USER_SETTINGS,
       path: t.pathname,
       search: t.search,
@@ -566,12 +566,12 @@ class tp extends Chunk473749.PureComponent {
         channelId: i,
         messageId: o,
         threadId: s
-      } = ts(n), c = (0, eI.Ss)(r), u = (0, eI.cq)(i), d = (0, eI.cq)(s), g = eX.Z.getGuildId(), h = g !== r;
-      if (c && h && p.Z.selectGuild(r), c && u) {
+      } = ts(n), c = (0, eI.Ss)(r), u = (0, eI.cq)(i), d = (0, eI.cq)(s), g = eX.Z.getGuildId(), m = g !== r;
+      if (c && m && p.Z.selectGuild(r), c && u) {
         let n = eJ.Z.getChannelId(g),
           a = n !== i,
           c = null != ez.ZP.getGuildSidebarState(r);
-        if (!tn || h || a || null != o) {
+        if (!tn || m || a || null != o) {
           tn = true, f.default.selectChannel({
             guildId: r,
             channelId: i,
@@ -602,11 +602,11 @@ class tp extends Chunk473749.PureComponent {
         } else null == i || a || eN.Z.closeChannelSidebar(i);
         let u = ec.Z.getIsOpen();
         if (i === e7.oC.ROLE_SUBSCRIPTIONS) es.Z.closeSidebar();
-        else if (h && u) {
+        else if (m && u) {
           let t = null == g && r === e2.ME,
             n = e === e2.Z5c.GUILD_DISCOVERY;
           t || n ? es.Z.closeSidebar() : es.Z.openSidebar()
-        } else(a && u || !h && !a) && es.Z.closeSidebar()
+        } else(a && u || !m && !a) && es.Z.closeSidebar()
       } else to.some(t => {
         var n;
         return (null == (n = (0, a.LX)(e, t)) ? true : n.isExact) === true

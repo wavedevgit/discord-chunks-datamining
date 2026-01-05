@@ -95,7 +95,7 @@ let G = e => {
       text: R.intl.string(R.t.y2b7CA)
     })
   },
-  H = () => {
+  B = () => {
     let {
       noCache: e,
       includeUnpublished: t
@@ -106,7 +106,7 @@ let G = e => {
       includeBundles: true
     }, true, true), null
   },
-  B = e => {
+  H = e => {
     var {
       selected: t,
       locationState: n,
@@ -117,31 +117,31 @@ let G = e => {
       onMouseLeave: u,
       children: d
     } = e, f = U(e, ["selected", "locationState", "icon", "onClick", "collectibleShopTab", "onMouseEnter", "onMouseLeave", "children"]);
-    let h = (0, o.JA)("shop"),
-      m = b.Z.HOME_PAGE_SHOP_TAB,
+    let m = (0, o.JA)("shop"),
+      h = b.Z.HOME_PAGE_SHOP_TAB,
       {
         analyticsLocations: E
-      } = (0, _.ZP)(m),
+      } = (0, _.ZP)(h),
       [O, v] = i.useState(false),
       y = i.useCallback(() => {
         true !== a && a(), true !== s && (0, C.mK)({
           tab: s,
           analyticsLocations: E,
-          analyticsSource: m
+          analyticsSource: h
         }), v(true), (0, C.Sm)({
-          analyticsSource: m,
+          analyticsSource: h,
           analyticsLocations: E
         })
-      }, [m, E, a, v, s]),
+      }, [h, E, a, v, s]),
       I = w.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
-      children: [O && (0, r.jsx)(H, {}), (0, r.jsx)(g.Qj, k(M({
+      children: [O && (0, r.jsx)(B, {}), (0, r.jsx)(g.Qj, k(M({
         selected: t,
         route: I,
         icon: null != l ? l : p.EOn,
         text: R.intl.string(R.t.pWG4ze),
         locationState: n
-      }, h, f), {
+      }, m, f), {
         onMouseEnter: c,
         onMouseLeave: u,
         onClick: y,
@@ -149,7 +149,7 @@ let G = e => {
       }))]
     })
   },
-  V = e => (0, r.jsx)(B, k(M({}, e), {
+  V = e => (0, r.jsx)(H, k(M({}, e), {
     children: (0, r.jsx)(G, {})
   })),
   F = Chunk473749.memo(function(e) {
@@ -194,13 +194,13 @@ let G = e => {
         displayOptions: C
       } = e,
       T = U(e, ["displayOptions"]);
-    let N = (0, s.e7)([m.Z], () => m.Z.useReducedMotion),
+    let N = (0, s.e7)([h.Z], () => h.Z.useReducedMotion),
       [j, P] = i.useState(0),
       [x, A] = i.useState(false),
       [Z, w] = i.useState(false),
       L = i.useRef(null),
-      H = i.useRef(null),
-      V = (0, h.ZP)(),
+      B = i.useRef(null),
+      V = (0, m.ZP)(),
       Y = (0, d.wj)(V),
       W = (0, S.p)({
         location: "CollectiblesShopButton"
@@ -212,13 +212,13 @@ let G = e => {
         let t = () => {
           w(W.useNewHoverStyle && z(L))
         };
-        t(), H.current = requestAnimationFrame(t), null == e || e()
+        t(), B.current = requestAnimationFrame(t), null == e || e()
       }, [C.assetIds.length, W.useNewHoverStyle]),
       Q = i.useCallback(e => {
-        A(false), w(false), null != H.current && (cancelAnimationFrame(H.current), H.current = null), null == e || e()
+        A(false), w(false), null != B.current && (cancelAnimationFrame(B.current), B.current = null), null == e || e()
       }, []);
     i.useEffect(() => () => {
-      null != H.current && cancelAnimationFrame(H.current)
+      null != B.current && cancelAnimationFrame(B.current)
     }, []);
     let J = C.title();
     return (0, r.jsx)(p.aML, {
@@ -234,7 +234,7 @@ let G = e => {
       allowOverflow: true,
       hideOnClick: false,
       "aria-label": "string" == typeof J ? J : R.intl.string(R.t.rSXaxY),
-      children: e => (0, r.jsxs)(B, k(M(k(M({
+      children: e => (0, r.jsxs)(H, k(M(k(M({
         className: null != C.entryPointClassName ? (0, I.l)(D, C.entryPointClassName) : true
       }, T), {
         icon: C.entryPointIcon
@@ -281,7 +281,7 @@ let G = e => {
       delay: 100,
       hideOnClick: false,
       "aria-label": t.title(),
-      children: e => (0, r.jsx)(B, k(M({}, n, e), {
+      children: e => (0, r.jsx)(H, k(M({}, n, e), {
         children: (0, r.jsx)(G, {
           color: t.badgeColor
         })
@@ -297,16 +297,16 @@ let G = e => {
     let c = i.useRef(null),
       u = i.useRef(null),
       [p, f] = i.useState(false),
-      g = (0, h.ZP)(),
-      m = (0, d.wj)(g),
+      g = (0, m.ZP)(),
+      h = (0, d.wj)(g),
       b = (0, S.p)({
         location: "CollectiblesShopButton"
       }),
       _ = b.useNewHoverStyle ? D.marketingButtonBackgroundNew : D.marketingButtonBackground,
       E = l.entryPointBackgroundAssets,
       O = l.entrypointBackgroundStyle,
-      v = m ? null == E ? true : E.srcDarkHovered : null == E ? true : E.srcLightHovered,
-      y = m ? null == O || null == (t = O.hovered) ? true : t.dark : null == O || null == (n = O.hovered) ? true : n.light;
+      v = h ? null == E ? true : E.srcDarkHovered : null == E ? true : E.srcLightHovered,
+      y = h ? null == O || null == (t = O.hovered) ? true : t.dark : null == O || null == (n = O.hovered) ? true : n.light;
     return i.useEffect(() => {
       if (null == v || "" === v) return void f(false);
       let e = () => {
@@ -318,7 +318,7 @@ let G = e => {
         cancelAnimationFrame(t)
       }
     }, [v, b.useNewHoverStyle]), (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(B, k(M({}, s), {
+      children: [(0, r.jsxs)(H, k(M({}, s), {
         onClick: () => o(L.L.TAKE_ACTION),
         listItemRef: c,
         children: [(0, r.jsx)("div", {
@@ -348,7 +348,7 @@ let G = e => {
     } = e, n = U(e, ["dismissContent"]);
     let l = i.useRef(null);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(B, k(M({}, n), {
+      children: [(0, r.jsx)(H, k(M({}, n), {
         onClick: () => t(L.L.TAKE_ACTION),
         listItemRef: l
       })), (0, r.jsx)(j.Z, {
@@ -397,5 +397,5 @@ let G = e => {
     }
     return d === c.z.WISHLIST_SHOP_BUTTON_POPOVER ? (0, r.jsx)(K, k(M({}, g), {
       dismissContent: f
-    })) : (0, r.jsx)(B, M({}, g))
+    })) : (0, r.jsx)(H, M({}, g))
   }

@@ -23,11 +23,11 @@ let _ = function() {
     t = Chunk836768.Z.useField("selectedTab"),
     n = function(e) {
       switch (e) {
-        case m.GlobalDiscoveryTab.SERVERS:
+        case h.GlobalDiscoveryTab.SERVERS:
           return (0, r.jsx)(u.Z, {});
-        case m.GlobalDiscoveryTab.APPS:
+        case h.GlobalDiscoveryTab.APPS:
           return (0, r.jsx)(c.default, {});
-        case m.GlobalDiscoveryTab.QUESTS:
+        case h.GlobalDiscoveryTab.QUESTS:
           return (0, r.jsx)(d.Z, {
             topLevelRoute: false
           });

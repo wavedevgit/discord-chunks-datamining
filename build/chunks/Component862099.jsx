@@ -4,7 +4,7 @@ require.d(exports, {
   Co: () => Q,
   ZP: () => J,
   bZ: () => K,
-  gt: () => H
+  gt: () => B
 }), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -43,7 +43,7 @@ var r, Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk439738 = require("./439738.js");
-let H = Chunk473749.memo(function(e) {
+let B = Chunk473749.memo(function(e) {
   let {
     heading: t,
     location: n,
@@ -103,7 +103,7 @@ let H = Chunk473749.memo(function(e) {
   })
 });
 
-function B(e) {
+function H(e) {
   let {
     guildEvent: t,
     channel: n
@@ -113,7 +113,7 @@ function B(e) {
     } = e;
     return t
   }), [n]), l = (0, d.KS)(n);
-  return (0, i.jsx)(H, {
+  return (0, i.jsx)(B, {
     onClickCloseIcon: () => (0, N.ji)({
       eventId: null == t ? true : t.id
     }),
@@ -162,13 +162,13 @@ function F(e) {
     startTime: f,
     endTime: g
   } = (0, Z.ZP)(n), {
-    startDateTimeString: h,
-    upcomingEvent: m,
+    startDateTimeString: m,
+    upcomingEvent: h,
     diffMinutes: b
-  } = (0, R.ub)(f.toISOString(), null == g ? true : g.toISOString()), _ = m ? b > 0 ? U.intl.formatToPlainString(U.t.PQlCWk, {
+  } = (0, R.ub)(f.toISOString(), null == g ? true : g.toISOString()), _ = h ? b > 0 ? U.intl.formatToPlainString(U.t.PQlCWk, {
     minutes: b
   }) : U.intl.string(U.t.WINqKV) : U.intl.formatToPlainString(U.t.DC6h3G, {
-    date: h
+    date: m
   });
   return l.useEffect(() => {
     I.default.track(k.rMx.CHANNEL_NOTICE_VIEWED, {
@@ -247,7 +247,7 @@ function z(e) {
   let {
     guildEvent: t
   } = e, n = (0, L.cS)(t);
-  return null == n ? null : (0, i.jsx)(H, {
+  return null == n ? null : (0, i.jsx)(B, {
     onClickCloseIcon: () => (0, N.ji)({
       eventId: null == t ? true : t.id
     }),
@@ -302,7 +302,7 @@ function W(e) {
       text: n,
       fullWidth: true,
       onClick: () => {
-        null != t && null != t.getGuildId() && ((0, h.Cq)(t), (0, g.XU)(t.getGuildId(), t.id))
+        null != t && null != t.getGuildId() && ((0, m.Cq)(t), (0, g.XU)(t.getGuildId(), t.id))
       }
     })
   })
@@ -312,10 +312,10 @@ function q(e) {
   let {
     stageInstance: t,
     channel: n
-  } = e, r = (0, s.Wu)([m.Z], () => [...new Set(m.Z.getMutableParticipants(n.id, b.pV.SPEAKER).map(e => e.user))], [n.id]), l = (0, s.e7)([m.Z], () => m.Z.getParticipantCount(n.id, b.pV.AUDIENCE), [n.id]), a = U.intl.formatToPlainString(U.t["+v2pN2"], {
+  } = e, r = (0, s.Wu)([h.Z], () => [...new Set(h.Z.getMutableParticipants(n.id, b.pV.SPEAKER).map(e => e.user))], [n.id]), l = (0, s.e7)([h.Z], () => h.Z.getParticipantCount(n.id, b.pV.AUDIENCE), [n.id]), a = U.intl.formatToPlainString(U.t["+v2pN2"], {
     count: "".concat(l)
   });
-  return (0, i.jsx)(H, {
+  return (0, i.jsx)(B, {
     onClickCloseIcon: () => (0, N.ji)({
       stageId: null == t ? true : t.id
     }),
@@ -412,12 +412,12 @@ let J = Chunk473749.memo(function(e) {
     channel: r
   }) : l.entity_type === M.WX.EXTERNAL ? d = (0, i.jsx)(z, {
     guildEvent: l
-  }) : l.entity_type === M.WX.VOICE && null != r && (d = (0, i.jsx)(B, {
+  }) : l.entity_type === M.WX.VOICE && null != r && (d = (0, i.jsx)(H, {
     guildEvent: l,
     channel: r
   }));
-  let h = t.features.has(k.GuildFeatures.COMMUNITY);
-  if (null == d && null != a && !h) {
+  let m = t.features.has(k.GuildFeatures.COMMUNITY);
+  if (null == d && null != a && !m) {
     let {
       upcomingEvent: e,
       noticeType: t

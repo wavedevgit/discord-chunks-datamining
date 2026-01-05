@@ -108,7 +108,7 @@ let k = function(e) {
   } = (0, l.cj)([b.Z], () => ({
     relationshipCount: b.Z.getRelationshipCount(),
     hasBlockedOrIgnored: b.Z.getBlockedOrIgnoredIDs().length > 0
-  })), [H, B] = i.useState(() => {
+  })), [B, H] = i.useState(() => {
     let e = {};
     for (let t of Object.values(j.pJs)) e[t] = "";
     return e
@@ -152,14 +152,14 @@ let k = function(e) {
         }), n)
     }
   }, [k, R, V]), W = i.useCallback(e => {
-    B(w(Z({}, H), {
+    H(w(Z({}, B), {
       [R]: e
     }))
-  }, [H, R]), q = i.useCallback(() => {
-    B(w(Z({}, H), {
+  }, [B, R]), q = i.useCallback(() => {
+    H(w(Z({}, B), {
       [R]: ""
     }))
-  }, [H, R]), K = i.useMemo(() => R === j.pJs.PENDING && (o.filter(j.pJs.SPAM).length > 0 || o.filter(j.pJs.PENDING_IGNORED).length > 0), [o, R]), Q = i.useMemo(() => o.filter(R, H[R]), [o, H, R]), J = R === j.pJs.PENDING, X = i.useMemo(() => {
+  }, [B, R]), K = i.useMemo(() => R === j.pJs.PENDING && (o.filter(j.pJs.SPAM).length > 0 || o.filter(j.pJs.PENDING_IGNORED).length > 0), [o, R]), Q = i.useMemo(() => o.filter(R, B[R]), [o, B, R]), J = R === j.pJs.PENDING, X = i.useMemo(() => {
     if (!J) return L;
     let e = [];
     return Q.forEach(t => {
@@ -185,7 +185,7 @@ let k = function(e) {
             let e = [];
             return Q.forEach(t => {
               t.giftIntentType === P.hX.FRIEND_ANNIVERSARY && e.push(t)
-            }), e.sort((e, t) => m.Z.compareByDmProbability(e.userId, t.userId)), [F ? e : e.slice(0, h.nN), Q]
+            }), e.sort((e, t) => h.Z.compareByDmProbability(e.userId, t.userId)), [F ? e : e.slice(0, m.nN), Q]
           }
         default:
           return [Q]
@@ -253,7 +253,7 @@ let k = function(e) {
         })
       }, i)
     }, [ee, R, t, en, er]),
-    ea = i.useCallback(e => R === j.pJs.ALL && 0 === e && V && $ > h.nN ? (0, r.jsx)("div", {
+    ea = i.useCallback(e => R === j.pJs.ALL && 0 === e && V && $ > m.nN ? (0, r.jsx)("div", {
       className: A.sectionFooter,
       children: (0, r.jsx)(a.Button, {
         icon: F ? a.u04 : a.CJ0,
@@ -268,11 +268,11 @@ let k = function(e) {
       R === j.pJs.ALL && (0, g.d$)()
     }, [R]), i.useEffect(() => {
       z(false)
-    }, [R, $]), 0 === Q.length && "" === H[R]) return (0, r.jsx)(M, {
+    }, [R, $]), 0 === Q.length && "" === B[R]) return (0, r.jsx)(M, {
     section: R,
     showSpamCta: K
   });
-  let eo = "" !== H[R],
+  let eo = "" !== B[R],
     es = 0 === Q.length && eo;
   return (0, r.jsx)(d.Gt, {
     value: n,
@@ -281,7 +281,7 @@ let k = function(e) {
       children: [G && (0, r.jsx)(C.R, {}), (0, r.jsx)("div", {
         className: A.searchBar,
         children: (0, r.jsx)(a.E1j, {
-          query: H[R],
+          query: B[R],
           onChange: W,
           onClear: q
         })

@@ -53,7 +53,7 @@ class C extends Chunk131468.Z {
         r = arguments.length > 2 ? arguments[2] : true,
         i = arguments.length > 3 ? arguments[3] : true,
         l = null != i && d.Z.getVoiceChannelId() === i;
-      if ((null == i || l) && !u.Z.isDeaf() && !h.Z.isLocalSoundboardMuted(r)) try {
+      if ((null == i || l) && !u.Z.isDeaf() && !m.Z.isLocalSoundboardMuted(r)) try {
         let i = {
           soundKey: "".concat(r, "-").concat(e),
           soundURL: (0, b.Z)(e),
@@ -72,7 +72,7 @@ class C extends Chunk131468.Z {
       if (null == e) return;
       let l = c.Z.getChannel(t),
         a = p.ZP.getKeybindForAction(O.kg4.SOUNDBOARD_HOLD);
-      null != l && (0, m.Z)(l) && null != a && s.Z.hasHotspot(o.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.ZDy)(async () => {
+      null != l && (0, h.Z)(l) && null != a && s.Z.hasHotspot(o.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.ZDy)(async () => {
         let {
           default: t
         } = await n.e("69208").then(n.bind(n, 490166));

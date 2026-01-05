@@ -60,26 +60,26 @@ let O = 10 * Chunk70956.Z.Millis.SECOND,
           socket: t
         } = e, i = t.application.id;
         try {
-          if (null == i) throw new h.Z({
+          if (null == i) throw new m.Z({
             errorCode: b.lTL.INVALID_COMMAND
           }, "No application.");
           let e = c.Z.getApplication(i);
-          if (null == e) throw new h.Z({
+          if (null == e) throw new m.Z({
             errorCode: b.lTL.INVALID_ENTITLEMENT
           }, "SKU does not exist.");
           let t = e.primarySkuId;
-          if (null == t) throw new h.Z({
+          if (null == t) throw new m.Z({
             errorCode: b.lTL.INVALID_ENTITLEMENT
           }, "SKU does not exist.");
           return Promise.race([(function(e, t) {
             let n = d.Z.isEntitledToSku(u.default.getCurrentUser(), e, t);
             return null != n ? Promise.resolve(n) : (0, o.yD)(t).then(() => true === d.Z.isEntitledToSku(u.default.getCurrentUser(), e, t))
           })(t, e.id).then(e => {
-            if (!e) throw new h.Z({
+            if (!e) throw new m.Z({
               errorCode: b.lTL.INVALID_ENTITLEMENT
             }, "User does not have entitlement.")
           }), (0, l.GR)(O).then(() => {
-            throw new h.Z({
+            throw new m.Z({
               errorCode: b.lTL.INVALID_ENTITLEMENT
             }, "Timed out fetching entitlement.")
           })])
@@ -101,7 +101,7 @@ let O = 10 * Chunk70956.Z.Millis.SECOND,
         let {
           socket: t
         } = e, l = t.application.id;
-        if (null == l) throw new h.Z({
+        if (null == l) throw new m.Z({
           errorCode: b.lTL.INVALID_COMMAND
         }, "No application.");
         return i.tn.post({

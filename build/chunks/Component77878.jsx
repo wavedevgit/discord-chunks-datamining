@@ -16,8 +16,8 @@ let s = "1",
   p = "5",
   f = "6",
   g = "1",
-  h = "2",
-  m = "3",
+  m = "2",
+  h = "3",
   b = "4",
   _ = "5",
   E = {
@@ -31,8 +31,8 @@ let s = "1",
     },
     [Chunk981631.aIt.PEGI]: {
       [g]: Chunk136569.pegiThree,
-      [h]: Chunk136569.pegiSeven,
-      [m]: Chunk136569.pegiTwelve,
+      [m]: Chunk136569.pegiSeven,
+      [h]: Chunk136569.pegiTwelve,
       [b]: Chunk136569.pegiSixteen,
       [_]: Chunk136569.pegiEighteen
     }

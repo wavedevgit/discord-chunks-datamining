@@ -48,8 +48,8 @@ function x(e) {
   } = e, {
     analyticsLocations: G
   } = (0, p.ZP)(d.Z.PREMIUM_GIFT_INTENT_FRIEND_ROW), {
-    Component: H
-  } = (0, c.V)(), B = (0, s.e7)([C.ZP], () => C.ZP.getFriendAnniversaryYears(k.id)), V = (0, E.ao)({
+    Component: B
+  } = (0, c.V)(), H = (0, s.e7)([C.ZP], () => C.ZP.getFriendAnniversaryYears(k.id)), V = (0, E.ao)({
     location: "gift-intent-friend-row",
     isGift: true,
     giftRecipient: k
@@ -99,7 +99,7 @@ function x(e) {
       })
     },
     z = () => U === S.hX.FRIEND_ANNIVERSARY ? j.intl.string(j.t.OrwKgi) : true;
-  return (0, r.jsx)(h.Z, {
+  return (0, r.jsx)(m.Z, {
     ref: t,
     isFocused: l,
     isActive: x,
@@ -115,7 +115,7 @@ function x(e) {
         status: A,
         isMobile: R,
         subText: (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(m.Z, {
+          children: [(0, r.jsx)(h.Z, {
             hovered: e,
             activities: Z,
             applicationStream: w,
@@ -131,7 +131,7 @@ function x(e) {
               variant: "text-xs/normal",
               color: "text-subtle",
               children: j.intl.formatToPlainString(j.t.S3fdq7, {
-                numberOfYears: B
+                numberOfYears: H
               })
             })]
           })]
@@ -143,7 +143,7 @@ function x(e) {
         children: [(0, r.jsx)(u.hU, {
           size: "sm",
           variant: "secondary",
-          icon: H,
+          icon: B,
           "aria-label": j.intl.string(j.t.I61IsE),
           onClick: () => {
             v.default.track(T.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {

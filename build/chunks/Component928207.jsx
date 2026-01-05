@@ -39,10 +39,10 @@ let _ = Chunk442837.ZP.connectStores([Chunk594174.default], () => ({
           className: b.spinner
         })
       }) : (0, r.jsx)(p.Z, {
-        entrypoint: m.EZ.ApplicationStoreHome
+        entrypoint: h.EZ.ApplicationStoreHome
       })
     })]
   }) : (0, r.jsx)(i.l_, {
-    to: h.Z5c.LOGIN
+    to: m.Z5c.LOGIN
   })
 })))

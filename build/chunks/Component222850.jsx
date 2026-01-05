@@ -35,7 +35,7 @@ let I = Math.ceil(Math.sqrt(115200)),
       dismissContent: P
     } = function() {
       let e = (0, u.useHasAnyModalOpen)(),
-        [t, n] = (0, h.US)(e ? [] : [c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING], O.R.PRIVATE_CHANNELS_LIST, true),
+        [t, n] = (0, m.US)(e ? [] : [c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING], O.R.PRIVATE_CHANNELS_LIST, true),
         r = i.useCallback(() => {
           n(O.L.TAKE_ACTION)
         }, [n]);
@@ -94,10 +94,10 @@ let I = Math.ceil(Math.sqrt(115200)),
       }), Z({
         glowSpring: 1,
         delay: 700
-      }), m.default.track(E.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
+      }), h.default.track(E.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
     }, [L, Z]), [k, U] = i.useState(false), G = i.useCallback(e => {
       U(e.contentRect.width)
-    }, []), H = (0, f.y)(G, [], {
+    }, []), B = (0, f.y)(G, [], {
       fireOnMount: true
     });
     return (0, r.jsxs)(r.Fragment, {
@@ -107,7 +107,7 @@ let I = Math.ceil(Math.sqrt(115200)),
         onMouseLeave: D,
         onFocus: R,
         onBlur: D,
-        ref: H,
+        ref: B,
         style: {
           "--custom-shine-dimensions": "".concat(240, "px"),
           "--custom-shine-rotated-dimensions-delta": "".concat(C, "px")

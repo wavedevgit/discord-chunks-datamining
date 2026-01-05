@@ -28,7 +28,7 @@ function f(e) {
   }), f = (0, i.e7)([s.Z], () => {
     var e;
     return null != (e = s.Z.getIsFetching(u)) && e
-  }), g = c.Z.useField("resultsQuery"), h = g !== n, m = r.useCallback(() => {
+  }), g = c.Z.useField("resultsQuery"), m = g !== n, h = r.useCallback(() => {
     let e = s.Z.getGuildIds(u),
       n = s.Z.getTotal(u);
     if (null == e || null == n) return;
@@ -44,11 +44,11 @@ function f(e) {
   }, [t, u]);
   return r.useMemo(() => ({
     guildIds: d,
-    loading: h || f,
+    loading: m || f,
     searchResultsQuery: g,
-    loadMore: m,
+    loadMore: h,
     searchCategoryId: l
-  }), [d, h, f, g, m, l])
+  }), [d, m, f, g, h, l])
 }
 
 function g(e) {

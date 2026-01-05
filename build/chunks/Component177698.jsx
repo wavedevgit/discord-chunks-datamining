@@ -77,7 +77,7 @@ let E = (0, Chunk703912.Z)(e => {
     null != L && null != (0, l.ZP)({
       application: L,
       channelId: S
-    }) ? w = i.u1M : a.context === h.IlC.POPOUT && (w = i.u1M);
+    }) ? w = i.u1M : a.context === m.IlC.POPOUT && (w = i.u1M);
     let R = false,
       D = l => {
         let {
@@ -87,7 +87,7 @@ let E = (0, Chunk703912.Z)(e => {
         if (null == o || o === n) {
           if (R = true, null == s) {
             t(new p.Z({
-              errorCode: h.lTL.OAUTH2_ERROR
+              errorCode: m.lTL.OAUTH2_ERROR
             }, "OAuth2 Error: No location provided")), a.lock();
             return
           }
@@ -110,10 +110,10 @@ let E = (0, Chunk703912.Z)(e => {
       } = function(e, t) {
         function n() {
           (0, i.Mr3)(e) && (0, i.h7j)(e => (0, r.jsx)(s.j, _(b({}, e), {
-            title: m.intl.string(m.t.j2d6Km),
-            subtitle: m.intl.string(m.t["4LKmN5"]),
+            title: h.intl.string(h.t.j2d6Km),
+            subtitle: h.intl.string(h.t["4LKmN5"]),
             actions: [{
-              text: m.intl.string(m.t.cpT0Cq),
+              text: h.intl.string(h.t.cpT0Cq),
               onClick: e.onClose
             }]
           })))
@@ -146,7 +146,7 @@ let E = (0, Chunk703912.Z)(e => {
       modalKey: Z,
       onCloseCallback: () => {
         M(), R || (t(new p.Z({
-          errorCode: h.lTL.OAUTH2_ERROR
+          errorCode: m.lTL.OAUTH2_ERROR
         }, "User cancelled authorization")), a.lock())
       }
     }, w)

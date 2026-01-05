@@ -24,7 +24,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
   O = {
     [Chunk981631.Etm.SET_OVERLAY_LOCKED]: {
       scope: Chunk186901.lH,
-      validation: e => (0, h.Z)(e).required().keys({
+      validation: e => (0, m.Z)(e).required().keys({
         locked: e.boolean().required(),
         pid: e.number().min(0).required()
       }),
@@ -49,7 +49,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
     },
     [Chunk981631.Etm.OPEN_OVERLAY_ACTIVITY_INVITE]: {
       scope: Chunk186901.lH,
-      validation: e => (0, h.Z)(e).required().keys({
+      validation: e => (0, m.Z)(e).required().keys({
         type: e.number().required().valid([_.mFx.JOIN]),
         pid: e.number().min(0).required()
       }),
@@ -71,7 +71,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
         let {
           lock: o,
           context: s
-        } = (0, m.jU)(r), u = (0, c.Z)(l, p.Z);
+        } = (0, h.jU)(r), u = (0, c.Z)(l, p.Z);
         return (0, a.h7)(l, u, s).then(() => {
           if (o(), u) throw new f.Z({
             errorCode: _.lTL.NO_ELIGIBLE_ACTIVITY
@@ -81,7 +81,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
     },
     [Chunk981631.Etm.OPEN_OVERLAY_GUILD_INVITE]: {
       scope: Chunk186901.lH,
-      validation: e => (0, h.Z)(e).required().keys({
+      validation: e => (0, m.Z)(e).required().keys({
         code: e.string().required(),
         pid: e.number().min(0).required()
       }),
@@ -107,7 +107,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
           let {
             context: i,
             lock: a
-          } = (0, m.jU)(n);
+          } = (0, h.jU)(n);
           return new Promise(e => {
             l.Z.dispatch({
               type: "INVITE_MODAL_OPEN",
@@ -122,7 +122,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
     },
     [Chunk981631.Etm.OPEN_OVERLAY_VOICE_SETTINGS]: {
       scope: Chunk186901.lH,
-      validation: e => (0, h.Z)(e).required().keys({
+      validation: e => (0, m.Z)(e).required().keys({
         pid: e.number().min(0).required()
       }),
       handler(e) {
@@ -138,7 +138,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
         let {
           lock: o,
           context: s
-        } = (0, m.jU)(t);
+        } = (0, h.jU)(t);
         return new Promise(e => {
           (0, i.ZDy)(async () => {
             let {

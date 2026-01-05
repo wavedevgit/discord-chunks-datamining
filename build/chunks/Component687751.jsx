@@ -69,8 +69,8 @@ class E extends Chunk317770.Z {
         source: t
       }, n))
     }, {
-      modalKey: h.dG,
-      onCloseRequest: m.dG4,
+      modalKey: m.dG,
+      onCloseRequest: h.dG4,
       backdropStyle: (0, o.bj)(t) ? i.fCB.LIGHTBOX : true
     })
   }
@@ -81,7 +81,7 @@ class E extends Chunk317770.Z {
     let {
       underageMessage: t
     } = e;
-    (0, i.oav)(h.dG, e => (0, r.jsx)(g.default, _({
+    (0, i.oav)(m.dG, e => (0, r.jsx)(g.default, _({
       underageMessage: t
     }, e)))
   }
@@ -92,7 +92,7 @@ class E extends Chunk317770.Z {
     let {
       guild: t
     } = e, n = d.Z.getGuildId();
-    if (null != n && t.id === n && (t.owner_configured_content_level === m.V_K.AGE_RESTRICTED || (0, f.X)("age_gate_manager") && c.Ov.has(t.nsfw_level))) return void(0, p.I8)(t.id, null)
+    if (null != n && t.id === n && (t.owner_configured_content_level === h.V_K.AGE_RESTRICTED || (0, f.X)("age_gate_manager") && c.Ov.has(t.nsfw_level))) return void(0, p.I8)(t.id, null)
   }
 }
 let O = new E

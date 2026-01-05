@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 767870, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -35,7 +35,7 @@ function p(e) {
 let f = "premium_tier_gradient",
   g = "smaller_sparkle_gradient";
 
-function h(e) {
+function m(e) {
   var t, n, {
       width: i = 14,
       height: l = 15,
@@ -114,25 +114,25 @@ function h(e) {
   }), t))
 }
 
-function m(e) {
+function h(e) {
   let {
     className: t,
     startsAt: n,
     endsAt: i,
     messageStyle: c,
     upperCase: p,
-    showSparkles: m
+    showSparkles: h
   } = e, [b] = (0, s.Tt)(a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
     showAfterTimestamp: n.valueOf(),
     cooldownDurationMs: 0
   }), _ = (0, o.ZP)(i, c);
   return "" === _ ? null : (p && (_ = _.toUpperCase()), (0, r.jsxs)("div", {
     className: l()(t, d.countDown),
-    children: [m ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(h, {
+    children: [h ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(m, {
         foreground: d.sparkleStar1,
         color: "url(#".concat(g, ")")
-      }), (0, r.jsx)(h, {
+      }), (0, r.jsx)(m, {
         foreground: d.sparkleStar2,
         color: "url(#".concat(f, ")")
       })]

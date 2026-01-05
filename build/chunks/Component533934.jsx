@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 533934, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => to
+  Z: () => tn
 }), require("./35282.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -60,8 +60,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk147341 = require("./147341.jsx"),
   Chunk82409 = require("./82409.jsx"),
   Chunk179742 = require("./179742.jsx"),
-  Chunk365113 = require("./365113.js"),
-  Chunk779715 = require("./779715.jsx"),
   Chunk270759 = require("./270759.jsx"),
   Chunk755458 = require("./755458.js"),
   Chunk791250 = require("./791250.jsx"),
@@ -73,14 +71,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk304445 = require("./304445.js"),
   Chunk893607 = require("./893607.js"),
   Chunk703656 = require("./703656.js"),
-  Chunk166484 = require("./166484.js"),
   Chunk984802 = require("./984802.js"),
   Chunk592125 = require("./592125.js"),
   Chunk896797 = require("./896797.js"),
   Chunk271383 = require("./271383.js"),
   Chunk430824 = require("./430824.js"),
   Chunk944486 = require("./944486.js"),
-  Chunk55589 = require("./55589.js"),
   Chunk933429 = require("./933429.js"),
   Chunk626135 = require("./626135.js"),
   Chunk823379 = require("./823379.js"),
@@ -93,7 +89,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk186901 = require("./186901.js"),
   Chunk566888 = require("./566888.js");
 
-function ek(e) {
+function eL(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -111,86 +107,86 @@ function ek(e) {
   }
   return e
 }
-let eU = (0, Chunk608787.Un)({
+let eR = (0, Chunk608787.Un)({
     createPromise: () => Promise.resolve().then(require.bind(require, 267161)),
     webpackId: 267161
   }),
-  eG = () => (0, Chunk54381.jsx)("div", {
+  eD = () => (0, Chunk54381.jsx)("div", {
     className: Chunk566888.loader,
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   }),
-  eH = (0, Chunk608787.Un)({
+  eM = (0, Chunk608787.Un)({
     createPromise: () => require.e("78431").then(require.bind(require, 650788)),
     webpackId: 650788,
     name: "GuildShopPage",
-    renderLoader: eG
+    renderLoader: eD
   }),
-  eB = (0, Chunk608787.Un)({
+  ek = (0, Chunk608787.Un)({
     createPromise: () => require.e("77033").then(require.bind(require, 457489)),
     webpackId: 457489,
     name: "SocialLayerStorefront",
-    renderLoader: eG
+    renderLoader: eD
   }),
-  eV = (0, Chunk608787.Un)({
+  eU = (0, Chunk608787.Un)({
     createPromise: () => require.e("55942").then(require.bind(require, 464760)),
     webpackId: 464760,
     name: "ServerMonetizationOnboardingForwarder",
-    renderLoader: eG
+    renderLoader: eD
   }),
-  eF = (0, Chunk608787.Un)({
+  eG = (0, Chunk608787.Un)({
     createPromise: () => require.e("12009").then(require.bind(require, 231588)),
     webpackId: 231588,
     name: "GuildHomePage",
-    renderLoader: eG
+    renderLoader: eD
   }),
-  ez = (0, Chunk608787.Un)({
+  eB = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("6850"), require.e("9924")]).then(require.bind(require, 545918)),
     webpackId: 545918,
     name: "MemberSafetyPage",
-    renderLoader: eG
+    renderLoader: eD
   }),
-  eY = (0, Chunk608787.Un)({
+  eH = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("58227"), require.e("26494"), require.e("58121")]).then(require.bind(require, 603072)),
     webpackId: 603072,
     name: "ChannelsAndRolesPage",
-    renderLoader: eG
+    renderLoader: eD
   }),
-  eW = (0, Chunk608787.Un)({
+  eV = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("26494"), require.e("37709")]).then(require.bind(require, 599263)),
     webpackId: 599263,
     name: "GuildOnboardingPage",
-    renderLoader: eG
+    renderLoader: eD
   }),
-  eq = (0, Chunk608787.Un)({
+  eF = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("76692"), require.e("44799")]).then(require.bind(require, 393357)),
     webpackId: 393357,
     name: "GuildPowerupsPage",
-    renderLoader: eG
+    renderLoader: eD
   }),
-  eK = (0, Chunk608787.Un)({
+  ez = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("67365"), require.e("62934")]).then(require.bind(require, 109838)),
     webpackId: 109838,
     name: "GameServerPage",
-    renderLoader: eG
+    renderLoader: eD
   }),
-  eQ = e => {
+  eY = e => {
     var t, n;
     let {
       match: i
-    } = e, l = (0, C.l)(), a = (0, p.e7)([ev.Z, eS.Z], () => {
-      let e = eS.Z.getChannelId();
-      return ev.Z.getChannel(e)
+    } = e, l = (0, C.l)(), a = (0, p.e7)([e_.Z, ey.Z], () => {
+      let e = ey.Z.getChannelId();
+      return e_.Z.getChannel(e)
     }), {
       guildId: o,
       channelId: c,
       messageId: u,
       threadId: d
     } = i.params, f = null != c ? c : true;
-    null == f && null != i.params.gameShopPageIndex && (f = ew.oC.GAME_SHOP);
-    let g = (0, p.e7)([eC.Z], () => eC.Z.getGuild(o)),
-      h = (0, p.e7)([eI.ZP], () => null == o ? null : eI.ZP.getSelfMember(o)),
-      b = (0, ec.BU)(o, "ChannelRenderer"),
-      _ = (null == g || null == (t = g.features) ? true : t.has(eZ.GuildFeatures.GAME_SERVERS)) === true,
+    null == f && null != i.params.gameShopPageIndex && (f = eP.oC.GAME_SHOP);
+    let g = (0, p.e7)([ev.Z], () => ev.Z.getGuild(o)),
+      m = (0, p.e7)([eO.ZP], () => null == o ? null : eO.ZP.getSelfMember(o)),
+      b = (0, eo.BU)(o, "ChannelRenderer"),
+      _ = (null == g || null == (t = g.features) ? true : t.has(ej.GuildFeatures.GAME_SERVERS)) === true,
       E = (0, p.e7)([K.Z], () => {
         if (null == o) return;
         let e = K.Z.getData(o);
@@ -203,85 +199,85 @@ let eU = (0, Chunk608787.Un)({
             return
         }
       });
-    (0, ef.WF)(f) && (0, ef.WF)(d) || (null != g && (0, e_.uL)(eZ.Z5c.CHANNEL(g.id, (0, eg.Z)(g))), (0, J.V)());
+    (0, ed.WF)(f) && (0, ed.WF)(d) || (null != g && (0, eh.uL)(ej.Z5c.CHANNEL(g.id, (0, ep.Z)(g))), (0, J.V)());
     let O = (0, w.C4)(o, "channel_renderer");
-    if (null != o && null != f && (0, ew.AB)(f)) switch (f) {
-      case ew.oC.ROLE_SUBSCRIPTIONS:
-        return O ? (0, r.jsx)(eH, {
+    if (null != o && null != f && (0, eP.AB)(f)) switch (f) {
+      case eP.oC.ROLE_SUBSCRIPTIONS:
+        return O ? (0, r.jsx)(eM, {
           guildId: o,
           initialTab: L.y.GUILD_ROLE_SUBSCRIPTIONS
         }) : (0, r.jsx)(F.Z, {
           guildId: o
         });
-      case ew.oC.SERVER_MONETIZATION_ONBOARDING:
-        return (0, r.jsx)(eV, {
+      case eP.oC.SERVER_MONETIZATION_ONBOARDING:
+        return (0, r.jsx)(eU, {
           guildId: o
         });
-      case ew.oC.GAME_SHOP:
-        return (0, r.jsx)(eB, ek({}, e));
-      case ew.oC.GUILD_SHOP:
-        return (0, r.jsx)(eH, {
+      case eP.oC.GAME_SHOP:
+        return (0, r.jsx)(ek, eL({}, e));
+      case eP.oC.GUILD_SHOP:
+        return (0, r.jsx)(eM, {
           guildId: o,
           productId: u,
           initialTab: E
         });
-      case ew.oC.MEMBER_APPLICATIONS:
+      case eP.oC.MEMBER_APPLICATIONS:
         return (0, r.jsx)(s.l_, {
-          to: eZ.Z5c.CHANNEL(o, ew.oC.MEMBER_SAFETY)
+          to: ej.Z5c.CHANNEL(o, eP.oC.MEMBER_SAFETY)
         });
-      case ew.oC.GUILD_HOME:
+      case eP.oC.GUILD_HOME:
+        return (0, r.jsx)(eG, {
+          guildId: o
+        });
+      case eP.oC.CHANNEL_BROWSER:
+        return (0, r.jsx)(eH, {
+          guildId: o,
+          selectedSection: eA.l7.BROWSE
+        });
+      case eP.oC.GUILD_ONBOARDING:
+        return (0, r.jsx)(eV, {
+          guildId: o
+        });
+      case eP.oC.CUSTOMIZE_COMMUNITY:
+        return (0, r.jsx)(eH, {
+          guildId: o,
+          selectedSection: eA.l7.CUSTOMIZE
+        });
+      case eP.oC.MEMBER_SAFETY:
+        return (0, r.jsx)(eB, {
+          guildId: o
+        });
+      case eP.oC.GUILD_BOOSTS:
         return (0, r.jsx)(eF, {
-          guildId: o
-        });
-      case ew.oC.CHANNEL_BROWSER:
-        return (0, r.jsx)(eY, {
-          guildId: o,
-          selectedSection: eR.l7.BROWSE
-        });
-      case ew.oC.GUILD_ONBOARDING:
-        return (0, r.jsx)(eW, {
-          guildId: o
-        });
-      case ew.oC.CUSTOMIZE_COMMUNITY:
-        return (0, r.jsx)(eY, {
-          guildId: o,
-          selectedSection: eR.l7.CUSTOMIZE
-        });
-      case ew.oC.MEMBER_SAFETY:
-        return (0, r.jsx)(ez, {
-          guildId: o
-        });
-      case ew.oC.GUILD_BOOSTS:
-        return (0, r.jsx)(eq, {
           guildId: o,
           powerupListingId: null != (n = l.get("powerupId")) ? n : l.get("powerupSkuId")
         });
-      case ew.oC.GAME_SERVERS:
+      case eP.oC.GAME_SERVERS:
         if (!b || !_) return (0, r.jsx)(s.l_, {
-          to: eZ.Z5c.CHANNEL(o)
+          to: ej.Z5c.CHANNEL(o)
         });
-        return (0, r.jsx)(eK, {
+        return (0, r.jsx)(ez, {
           guildId: o
         });
-      case ew.oC.REPORT_TO_MOD:
+      case eP.oC.REPORT_TO_MOD:
         return (0, r.jsx)(P.Z, {});
       default:
-        (0, eP.vE)(f)
+        (0, eS.vE)(f)
     }
-    if ((0, B.p3)(g, h)) return (0, r.jsx)(V.Z, {
+    if ((0, H.p3)(g, m)) return (0, r.jsx)(V.Z, {
       guildId: o,
       channelId: f
     });
-    if ((null == a ? true : a.type) === eZ.d4z.GUILD_STORE) {
-      let e = ex.default.cast(i.params.messageId);
-      return (0, r.jsx)(m.Z, {
+    if ((null == a ? true : a.type) === ej.d4z.GUILD_STORE) {
+      let e = eT.default.cast(i.params.messageId);
+      return (0, r.jsx)(h.Z, {
         channel: a,
         inputSkuId: e
       }, a.id)
     }
     return (0, r.jsx)(P.Z, {})
   },
-  eJ = Chunk473749.memo(function() {
+  eW = Chunk473749.memo(function() {
     let {
       guildId: e,
       channelId: t
@@ -290,77 +286,69 @@ let eU = (0, Chunk608787.Un)({
     } = (0, Chunk821020.pN)({
       location: "Sidebar"
     }), i = (0, Chunk442837.e7)([Chunk944486.Z], () => null != exports ? exports : Chunk944486.Z.getChannelId(module));
-    if (window.location.pathname.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.STv))) return "sidebar" !== require && (0, Chunk703656.dL)(Chunk896797.Z.defaultRoute), (0, Chunk54381.jsx)(Chunk82409.Z, {
+    return window.location.pathname.startsWith(Chunk981631.Z5c.CHANNEL(Chunk981631.STv)) ? ("sidebar" !== require && (0, Chunk703656.dL)(Chunk896797.Z.defaultRoute), (0, Chunk54381.jsx)(Chunk82409.Z, {
       includePanelSpacing: true
-    });
-    if (window.location.pathname.startsWith(Chunk981631.Z5c.ME_DMS)) {
-      var l;
-      let e = Chunk55589.Z.getPrivateChannelIds()[0],
-        t = null != (l = Chunk944486.Z.getChannelId(Chunk981631.ME)) ? Chunk120356 : module;
-      return (0, Chunk703656.dL)(Chunk981631.Z5c.CHANNEL(Chunk981631.ME, exports)), (0, Chunk54381.jsx)(Chunk791250.Z, {})
-    }
-    return window.location.pathname.startsWith(Chunk981631.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(Chunk981631.Z5c.GUILD_DISCOVERY) || (0, Chunk862657.$V)() ? (0, Chunk54381.jsx)(Chunk135864.Z, {}) : null != module ? (0, Chunk54381.jsx)(Chunk242601.Z, {
+    })) : window.location.pathname.startsWith(Chunk981631.Z5c.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(Chunk981631.Z5c.GUILD_DISCOVERY) || (0, Chunk862657.$V)() ? (0, Chunk54381.jsx)(Chunk135864.Z, {}) : null != module ? (0, Chunk54381.jsx)(Chunk242601.Z, {
       selectedChannelId: Chunk473749,
       guildId: module
     }, module) : (0, Chunk54381.jsx)(Chunk791250.Z, {})
   }),
-  eX = e => (0, r.jsx)(eQ, ek({}, e)),
-  e$ = () => (0, Chunk54381.jsx)(Chunk724383.Z, {}),
-  e0 = e => (0, r.jsx)(e1, ek({}, e)),
-  e1 = e => {
+  eq = e => (0, r.jsx)(eY, eL({}, e)),
+  eK = () => (0, Chunk54381.jsx)(Chunk724383.Z, {}),
+  eQ = e => (0, r.jsx)(eJ, eL({}, e)),
+  eJ = e => {
     let {
       channelId: t,
       messageId: n
     } = e.match.params;
     return (i.useEffect(() => {
-      null != t && null != n && h.Z.jumpToMessage({
+      null != t && null != n && m.Z.jumpToMessage({
         channelId: t,
         messageId: n,
         flash: true,
         context: "notification_center_navigation"
       })
-    }, [t, n]), null == t) ? (0, r.jsx)(er.Z, {}) : eX(e)
+    }, [t, n]), null == t) ? (0, r.jsx)(er.Z, {}) : eq(e)
   },
-  e4 = e => {
+  eX = e => {
     let {
       match: t
     } = e;
-    return null != t.params.guildId ? (0, r.jsx)(H.Z, {
+    return null != t.params.guildId ? (0, r.jsx)(B.Z, {
       guildId: t.params.guildId
     }) : null
   },
-  e3 = e => {
+  e$ = e => {
     let {
       match: t
     } = e;
-    return (0, e_.uL)(eZ.Z5c.ME), (0, W.Z)(t.params.inviteCode), null
+    return (0, eh.uL)(ej.Z5c.ME), (0, W.Z)(t.params.inviteCode), null
   },
-  e8 = () => (0, Chunk54381.jsx)(Chunk425369.Z, {}),
-  e5 = () => (0, Chunk54381.jsx)(Chunk715702.Z, {}),
-  e2 = () => function(e) {
+  e0 = () => (0, Chunk54381.jsx)(Chunk425369.Z, {}),
+  e1 = () => (0, Chunk54381.jsx)(Chunk715702.Z, {}),
+  e4 = () => function(e) {
     let {
       tab: t
     } = (0, o.parse)(e.location.search);
-    return Object.values(eL.AW).includes(t) ? (0, r.jsx)(A.Z, ek({
+    return Object.values(ex.AW).includes(t) ? (0, r.jsx)(A.Z, eL({
       tab: t
-    }, e)) : (0, r.jsx)(A.Z, ek({}, e))
+    }, e)) : (0, r.jsx)(A.Z, eL({}, e))
   };
 
-function e7() {
+function e3() {
   return (0, Chunk54381.jsx)(Chunk121711.Z, {
     topLevelRoute: true
   })
 }
-let e9 = e => (0, r.jsx)(T.Z, ek({}, e)),
-  e6 = () => (0, Chunk54381.jsx)(Chunk270759.Z, {}),
-  te = () => (0, Chunk54381.jsx)(Chunk779715.Z, {}),
-  tt = () => (0, Chunk54381.jsx)(Chunk927220.Z, {}),
-  tn = () => (0, Chunk54381.jsx)(Chunk745052.Z, {}),
-  tr = () => (0, Chunk54381.jsx)(Chunk179742.Z, {}),
-  ti = e => {
+let e8 = e => (0, r.jsx)(T.Z, eL({}, e)),
+  e5 = () => (0, Chunk54381.jsx)(Chunk270759.Z, {}),
+  e2 = () => (0, Chunk54381.jsx)(Chunk927220.Z, {}),
+  e7 = () => (0, Chunk54381.jsx)(Chunk745052.Z, {}),
+  e9 = () => (0, Chunk54381.jsx)(Chunk179742.Z, {}),
+  e6 = e => {
     let t = e.location.pathname;
     return (0, r.jsx)(O.Z, {
-      deepLinkType: eD.jE.FEATURES,
+      deepLinkType: eZ.jE.FEATURES,
       path: t,
       children: (e => {
         let {
@@ -368,90 +356,90 @@ let e9 = e => (0, r.jsx)(T.Z, ek({}, e)),
         } = e;
         switch (t.params.feature) {
           case "friends":
-            return (0, r.jsx)(es.Z, {
-              initialSection: eZ.pJs.ONLINE
+            return (0, r.jsx)(ea.Z, {
+              initialSection: ej.pJs.ONLINE
             });
           case "addFriends":
-            return (0, r.jsx)(es.Z, {
-              initialSection: eZ.pJs.ADD_FRIEND
+            return (0, r.jsx)(ea.Z, {
+              initialSection: ej.pJs.ADD_FRIEND
             });
           case "pendingFriends":
-            return (0, r.jsx)(es.Z, {
-              initialSection: eZ.pJs.PENDING
+            return (0, r.jsx)(ea.Z, {
+              initialSection: ej.pJs.PENDING
             });
           case "sessionManagement":
             return (0, r.jsx)(s.l_, {
-              to: eZ.Z5c.SETTINGS("sessions")
+              to: ej.Z5c.SETTINGS("sessions")
             });
           case "connections":
             return (0, r.jsx)(s.l_, {
               to: {
-                pathname: eZ.Z5c.SETTINGS("connections"),
+                pathname: ej.Z5c.SETTINGS("connections"),
                 search: e.location.search
               }
             });
           case "family-center":
             return (0, r.jsx)(s.l_, {
-              to: eZ.Z5c.FAMILY_CENTER
+              to: ej.Z5c.FAMILY_CENTER
             });
           case "account-standing":
             return (0, r.jsx)(s.l_, {
-              to: eZ.Z5c.SETTINGS("account", "account-standing")
+              to: ej.Z5c.SETTINGS("account", "account-standing")
             });
           case "authorized-apps":
             return (0, r.jsx)(s.l_, {
-              to: eZ.Z5c.SETTINGS("authorized-apps")
+              to: ej.Z5c.SETTINGS("authorized-apps")
             });
           case "open-shop":
             let {
               tab: n
             } = (0, o.parse)(e.location.search);
-            if (Object.values(eL.AW).includes(n)) return (0, r.jsx)(s.l_, {
-              to: eZ.Z5c.COLLECTIBLES_SHOP_WITH_TAB(n)
+            if (Object.values(ex.AW).includes(n)) return (0, r.jsx)(s.l_, {
+              to: ej.Z5c.COLLECTIBLES_SHOP_WITH_TAB(n)
             });
             return (0, r.jsx)(s.l_, {
-              to: eZ.Z5c.COLLECTIBLES_SHOP
+              to: ej.Z5c.COLLECTIBLES_SHOP
             });
           case "editProfile":
             return (0, r.jsx)(s.l_, {
               to: {
-                pathname: eZ.Z5c.SETTINGS("profile-customization")
+                pathname: ej.Z5c.SETTINGS("profile-customization")
               }
             });
           case "gift":
           case "store":
             return (0, r.jsx)(s.l_, {
               to: {
-                pathname: eZ.Z5c.NITRO_HOME
+                pathname: ej.Z5c.NITRO_HOME
               }
             });
           case "connected-games":
             return (0, r.jsx)(s.l_, {
-              to: eZ.Z5c.SETTINGS("content-and-social", "connected-games")
+              to: ej.Z5c.SETTINGS("content-and-social", "connected-games")
             });
           case "boost":
             let i = t.params.guildId;
             return (0, r.jsx)(s.l_, {
-              to: eZ.Z5c.POWERUP_STORE(i)
+              to: ej.Z5c.POWERUP_STORE(i)
             });
           case "boost-settings":
             return (0, r.jsx)(s.l_, {
-              to: eZ.Z5c.SETTINGS("guild-boosting")
+              to: ej.Z5c.SETTINGS("guild-boosting")
             });
           default:
             return (0, r.jsx)(s.l_, {
-              to: eZ.Z5c.ME
+              to: ej.Z5c.ME
             })
         }
       })(e)
     })
   };
 
-function tl(e) {
+function te(e) {
   document.body.style.setProperty("--custom-guild-sidebar-width", "".concat(e, "px"))
 }
 
-function ta(e) {
+function tt(e) {
   let {
     hasNotice: t,
     sidebarTheme: n,
@@ -469,13 +457,13 @@ function ta(e) {
     location: c
   });
   let u = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()),
-    h = (0, R.T)("ChannelSidebar"),
-    m = (0, Z.useAppSidebarState)(e => !e.isOpen) && h;
+    m = (0, R.T)("ChannelSidebar"),
+    h = (0, Z.useAppSidebarState)(e => !e.isOpen) && m;
   i.useLayoutEffect(() => {
-    if (h) {
+    if (m) {
       var e;
       let t = parseInt(null != (e = f.K.get(b.nT)) ? e : "");
-      Number.isNaN(t) && (t = b.qO), t = Math.min(Math.max(t, b.li), b.zx), !h && t <= b.p8 && (t = b.qO), tl(t);
+      Number.isNaN(t) && (t = b.qO), t = Math.min(Math.max(t, b.li), b.zx), !m && t <= b.p8 && (t = b.qO), te(t);
       let n = e => {
         e.metaKey && "b" === e.key && Z.useAppSidebarState.setState(e => ({
           isOpen: !e.isOpen
@@ -485,31 +473,31 @@ function ta(e) {
         document.removeEventListener("keydown", n)
       }
     }
-  }, [h]), i.useLayoutEffect(() => {
-    if (m) tl(b.p8);
+  }, [m]), i.useLayoutEffect(() => {
+    if (h) te(b.p8);
     else {
       var e;
       let t = parseInt(null != (e = f.K.get(b.nT)) ? e : "");
-      Number.isNaN(t) && (t = b.qO), tl(t)
+      Number.isNaN(t) && (t = b.qO), te(t)
     }
-  }, [m]);
+  }, [h]);
   let _ = i.useRef(null),
     E = i.useCallback((e, t) => {
       var n;
-      tl(e);
+      te(e);
       let r = t < b.li / 3;
-      t <= b.li ? document.body.classList.add(eM.draggingMin) : document.body.classList.remove(eM.draggingMin), t >= b.zx ? document.body.classList.add(eM.draggingMax) : document.body.classList.remove(eM.draggingMax);
+      t <= b.li ? document.body.classList.add(ew.draggingMin) : document.body.classList.remove(ew.draggingMin), t >= b.zx ? document.body.classList.add(ew.draggingMax) : document.body.classList.remove(ew.draggingMax);
       let i = t - e;
-      null == (n = _.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / b.p8), .25))), h && (Z.useAppSidebarState.setState({
+      null == (n = _.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / b.p8), .25))), m && (Z.useAppSidebarState.setState({
         isOpen: !r
-      }), r && tl(b.p8))
-    }, [h]),
+      }), r && te(b.p8))
+    }, [m]),
     O = i.useCallback(() => {
-      document.body.classList.add(eM.dragging)
+      document.body.classList.add(ew.dragging)
     }, []),
     C = i.useCallback(e => {
       var t;
-      document.body.classList.remove(eM.dragging), document.body.classList.remove(eM.draggingMin), document.body.classList.remove(eM.draggingMax), document.body.classList.remove(eM.collapsing), null == (t = _.current) || t.style.setProperty("--custom-overdrag", "0px"), f.K.set(b.nT, e), ej.default.track(eZ.rMx.CHANNEL_SIDEBAR_RESIZED, {
+      document.body.classList.remove(ew.dragging), document.body.classList.remove(ew.draggingMin), document.body.classList.remove(ew.draggingMax), document.body.classList.remove(ew.collapsing), null == (t = _.current) || t.style.setProperty("--custom-overdrag", "0px"), f.K.set(b.nT, e), eC.default.track(ej.rMx.CHANNEL_SIDEBAR_RESIZED, {
         width: e
       })
     }, []),
@@ -529,11 +517,11 @@ function ta(e) {
       }))
     }, []);
   if (i.useLayoutEffect(() => {
-      m && tl(b.p8)
-    }, [m]), l) return null;
+      h && te(b.p8)
+    }, [h]), l) return null;
   let N = {
-    className: a()(eM.sidebarList, {
-      [eM.sidebarListRounded]: !t
+    className: a()(ew.sidebarList, {
+      [ew.sidebarListRounded]: !t
     })
   };
   return (0, r.jsx)(g.f6W, {
@@ -542,18 +530,18 @@ function ta(e) {
       var t, i;
       return (0, r.jsxs)("div", {
         ref: _,
-        "data-collapsed": m,
-        className: a()(eM.sidebar, e, {
-          [eM.fullWidth]: d.tq,
-          [eM.hidden]: u,
-          [eM.channelListHidden]: o
+        "data-collapsed": h,
+        className: a()(ew.sidebar, e, {
+          [ew.fullWidth]: d.tq,
+          [ew.hidden]: u,
+          [ew.channelListHidden]: o
         }),
         children: [s && (0, r.jsx)(Y.Z, {
-          className: eM.guilds,
+          className: ew.guilds,
           themeOverride: n
         }), !o && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("div", (t = ek({}, N), i = i = {
-            children: (0, r.jsx)(eJ, {})
+          children: [(0, r.jsx)("div", (t = eL({}, N), i = i = {
+            children: (0, r.jsx)(eW, {})
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -566,23 +554,23 @@ function ta(e) {
           }), t)), (0, r.jsx)(g.P3F, {
             onClick: T,
             "aria-label": "Resize Sidebar",
-            className: eM.sidebarResizeHandle,
+            className: ew.sidebarResizeHandle,
             onMouseDown: S
-          }), (0, r.jsx)(eA.b, {})]
+          }), (0, r.jsx)(eN.b, {})]
         })]
       })
     }
   })
 }
 
-function to() {
+function tn() {
   var e;
   let t = (0, Chunk442837.e7)([Chunk933429.ZP], () => Chunk933429.ZP.hasNotice()),
     n = (0, Chunk984802.Ll)(),
     l = function() {
       let [e, t] = Chunk473749.useState(() => window.location.pathname.startsWith(Chunk981631.Z5c.GUILD_MEMBER_VERIFICATION("")));
       return Chunk473749.useEffect(() => Chunk304445.Z.addRouteChangeListener(e => {
-        t(e.pathname.startsWith(eZ.Z5c.GUILD_MEMBER_VERIFICATION("")))
+        t(e.pathname.startsWith(ej.Z5c.GUILD_MEMBER_VERIFICATION("")))
       }), []), module
     }(),
     a = function() {
@@ -596,42 +584,35 @@ function to() {
     } = (0, Chunk821020.pN)({
       location: "Sidebar"
     }),
-    f = Chunk365113.o.useConfig({
-      location: "AppView"
-    }).trackFirstPages,
-    g = (0, Chunk828700.TH)();
-  Chunk473749.useEffect(() => {
-    Chunk433517 && Chunk166484.Z.trackPageView(Chunk481060.pathname)
-  }, [Chunk433517, Chunk481060.pathname]);
-  let h = (0, Chunk828700.$B)([Chunk981631.Z5c.CHANNEL(Chunk981631.ME, Chunk893607.Hw.channelId()), Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
+    f = (0, Chunk828700.$B)([Chunk981631.Z5c.CHANNEL(Chunk981631.ME, Chunk893607.Hw.channelId()), Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
       optional: true
     }), ":messageId?")]),
-    m = (null == Chunk904245 || null == (e = Chunk904245.params) ? true : module.channelId) === Chunk176505.oC.GUILD_ONBOARDING,
-    b = Chunk473749.useCallback(() => Chunk285865.Z.openSidebar(), []),
-    _ = (0, Chunk540059.T)("AppView"),
-    E = (0, Chunk267161.useAppSidebarState)(e => !e.isOpen),
-    O = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
-    v = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
+    g = (null == Chunk433517 || null == (e = Chunk433517.params) ? true : module.channelId) === Chunk176505.oC.GUILD_ONBOARDING,
+    m = Chunk473749.useCallback(() => Chunk285865.Z.openSidebar(), []),
+    h = (0, Chunk540059.T)("AppView"),
+    b = (0, Chunk267161.useAppSidebarState)(e => !e.isOpen),
+    _ = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
+    E = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
   return (0, Chunk54381.jsx)("div", {
     className: Chunk566888.container,
     children: (0, Chunk54381.jsx)(Chunk372900.Z.Provider, {
-      value: (null == Chunk904245 ? true : Chunk904245.params.guildId) === Chunk981631.ME || null == Chunk904245 ? true : Chunk904245.params.guildId,
+      value: (null == Chunk433517 ? true : Chunk433517.params.guildId) === Chunk981631.ME || null == Chunk433517 ? true : Chunk433517.params.guildId,
       children: (0, Chunk54381.jsxs)("div", {
         className: Chunk566888.base,
-        "data-fullscreen": Chunk773244,
-        children: [!Chunk773244 && (0, Chunk54381.jsx)(eU, {}), Chunk873546.tq ? null : (0, Chunk54381.jsx)(Chunk369664.Z, {}), (0, Chunk54381.jsxs)("div", {
+        "data-fullscreen": Chunk425369,
+        children: [!Chunk425369 && (0, Chunk54381.jsx)(eR, {}), Chunk873546.tq ? null : (0, Chunk54381.jsx)(Chunk369664.Z, {}), (0, Chunk54381.jsxs)("div", {
           className: Chunk566888.content,
-          children: [(0, Chunk54381.jsx)(Chunk626421.Z, {}), (0, Chunk54381.jsx)(ta, {
+          children: [(0, Chunk54381.jsx)(Chunk626421.Z, {}), (0, Chunk54381.jsx)(tt, {
             isSidebarOpen: Chunk593473,
             hasNotice: exports,
             sidebarTheme: require,
-            hideChannelList: Chunk120356 || a || Chunk409292,
+            hideChannelList: Chunk120356 || a || Chunk481060,
             hideSidebar: !Chunk593473
           }), (0, Chunk54381.jsx)("div", {
             className: Chunk566888.page,
-            "data-collapsed": !!Chunk425369 && Chunk715702,
+            "data-collapsed": !!Chunk409292 && Chunk697309,
             children: (0, Chunk54381.jsxs)(Chunk290297.Z.Provider, {
-              value: Chunk697309,
+              value: Chunk904245,
               children: [(0, Chunk54381.jsxs)(Chunk828700.rs, {
                 children: [(0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.ACTIVITY,
@@ -641,7 +622,7 @@ function to() {
                   })
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.ACTIVITY_DETAILS(":applicationId"),
-                  render: e9,
+                  render: e8,
                   impressionName: Chunk990547.ImpressionNames.ACTIVITY_DETAILS,
                   impressionProperties: e => {
                     let {
@@ -653,120 +634,108 @@ function to() {
                   }
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.APPLICATION_LIBRARY,
-                  render: e8,
+                  render: e0,
                   impressionName: Chunk990547.ImpressionNames.APPLICATION_LIBRARY,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.APPLICATION_STORE,
-                  render: e5,
+                  render: e1,
                   impressionName: Chunk990547.ImpressionNames.APPLICATION_STORE,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.COLLECTIBLES_SHOP_WITH_TAB(":tab"),
-                  render: e2(),
+                  render: e4(),
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.COLLECTIBLES_SHOP,
-                  render: e2(),
+                  render: e4(),
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"),
-                  render: e2(),
+                  render: e4(),
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.ICYMI,
-                  render: tt,
+                  render: e2,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.MESSAGE_REQUESTS,
-                  render: tn,
+                  render: e7,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.FAMILY_CENTER,
-                  render: tr,
-                  disableTrack: true
-                }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-                  path: Chunk981631.Z5c.ME_ACTIVITY,
-                  exact: true,
-                  render: te,
-                  impressionName: Chunk990547.ImpressionNames.ACTIVITIES,
+                  render: e9,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.ME,
                   exact: true,
-                  render: e6,
+                  render: e5,
                   impressionName: Chunk990547.ImpressionNames.FRIENDS,
-                  disableTrack: true
-                }), (0, Chunk54381.jsx)(Chunk765717.Z, {
-                  path: Chunk981631.Z5c.ME_DMS,
-                  exact: true,
-                  render: eX,
-                  impressionName: Chunk990547.ImpressionNames.GUILD_CHANNEL,
                   disableTrack: true
                 }), Chunk608787 === Chunk821020.jP.SIDEBAR && (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.CHANNEL(Chunk981631.STv, Chunk893607.Hw.channelId({
                     optional: true
                   }), ":messageId?"),
-                  render: e0,
+                  render: eQ,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: [Chunk981631.Z5c.CHANNEL_THREAD_VIEW(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId(), ":threadId", ":messageId?"), Chunk981631.Z5c.CHANNELS_GAME_SHOP(Chunk893607.Hw.guildId(), ":gameShopPageIndex", ":gameShopSkuId?", ":gameShopSlug?"), Chunk981631.Z5c.CHANNEL(Chunk981631.ME, Chunk893607.Hw.channelId()), Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
                     optional: true
                   }), ":messageId?")],
-                  render: eX,
+                  render: eq,
                   impressionName: Chunk990547.ImpressionNames.GUILD_CHANNEL,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.GLOBAL_DISCOVERY,
-                  render: e$,
+                  render: eK,
                   impressionName: Chunk990547.ImpressionNames.GLOBAL_DISCOVERY,
                   disableTrack: true,
                   exact: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.GLOBAL_DISCOVERY_SERVERS,
-                  render: e$,
+                  render: eK,
                   impressionName: Chunk990547.ImpressionNames.GLOBAL_DISCOVERY,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.GLOBAL_DISCOVERY_APPS,
-                  render: e$,
+                  render: eK,
                   impressionName: Chunk990547.ImpressionNames.GLOBAL_DISCOVERY_APPS,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.QUEST_HOME,
-                  render: e$,
+                  render: eK,
                   impressionName: Chunk990547.ImpressionNames.QUEST_HOME,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.QUEST_HOME_V2,
-                  render: e7,
+                  render: e3,
                   impressionName: Chunk990547.ImpressionNames.QUEST_HOME,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.GUILD_DISCOVERY,
-                  render: e$,
+                  render: eK,
                   impressionName: Chunk990547.ImpressionNames.GUILD_DISCOVERY,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.GUILD_MEMBER_VERIFICATION(Chunk893607.Hw.guildId()),
-                  render: e4,
+                  render: eX,
                   impressionName: Chunk990547.ImpressionNames.GUILD_MEMBER_VERIFICATION,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB(Chunk893607.Hw.guildId(), ":inviteCode?"),
-                  render: e3
+                  render: e$
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.GUILD_FEATURE(":feature", Chunk893607.Hw.guildId()),
                   exact: true,
-                  render: ti,
+                  render: e6,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.FEATURE(":feature"),
                   exact: true,
-                  render: ti,
+                  render: e6,
                   disableTrack: true
                 })]
-              }), Chunk711237 && (0, Chunk54381.jsx)(Chunk351051.Z, {})]
+              }), Chunk715702 && (0, Chunk54381.jsx)(Chunk351051.Z, {})]
             })
           })]
         })]

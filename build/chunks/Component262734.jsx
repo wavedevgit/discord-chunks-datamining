@@ -41,7 +41,7 @@ function j(e) {
   } = (0, o.cj)([_.Z], () => ({
     selectedChannelId: _.Z.getChannelId(),
     selectedVoiceChannelId: _.Z.getVoiceChannelId()
-  })), x = (0, o.e7)([g.Z], () => null != P && j === P && g.Z.getChatOpen(P), [j, P]), A = (0, o.e7)([h.ZP], () => h.ZP.callChatSidebarWidth), Z = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
+  })), x = (0, o.e7)([g.Z], () => null != P && j === P && g.Z.getChatOpen(P), [j, P]), A = (0, o.e7)([m.ZP], () => m.ZP.callChatSidebarWidth), Z = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
     width: 0,
     height: 0
   }), M = i.useCallback(() => {
@@ -77,12 +77,12 @@ function j(e) {
   }, [t.applicationId, l]);
   let U = R.width / Math.max(R.height, 1) < C.I0,
     G = 0,
-    H = 0,
-    B = (0, p.Z)(null == n ? true : n.id);
-  if (!B) {
+    B = 0,
+    H = (0, p.Z)(null == n ? true : n.id);
+  if (!H) {
     let e = R.width,
       t = R.height;
-    U ? ((t = R.width / C.I0) > R.height && (e = (t = R.height) * C.I0), H = (R.height - t) / 2) : ((e = Math.min(R.height * C.I0)) > R.width && (t = (e = R.width) / C.I0), G = (R.width - e) / 2)
+    U ? ((t = R.width / C.I0) > R.height && (e = (t = R.height) * C.I0), B = (R.height - t) / 2) : ((e = Math.min(R.height * C.I0)) > R.width && (t = (e = R.width) / C.I0), G = (R.width - e) / 2)
   }
   let V = C.MI.NO_CHAT;
   if (null == n) return null;
@@ -100,13 +100,13 @@ function j(e) {
         className: T.activityPanelContainer,
         children: (0, r.jsx)("div", {
           className: a()(T.activityContainer, {
-            [T.activityContainerNoMargin]: B
+            [T.activityContainerNoMargin]: H
           }),
           style: {
             paddingLeft: G,
             paddingRight: G,
-            paddingTop: H,
-            paddingBottom: H
+            paddingTop: B,
+            paddingBottom: B
           },
           ref: L,
           children: (0, r.jsx)(O.Z, {
@@ -130,14 +130,14 @@ function j(e) {
           className: T.footerButtons,
           children: [(0, r.jsx)("div", {
             className: T.buttonSection,
-            children: (0, r.jsx)(m.d, {
+            children: (0, r.jsx)(h.d, {
               isTrayButton: true,
               label: S.intl.string(S.t.brPQ5U),
               onClick: M,
               iconComponent: u.dOc,
               themeable: true
             })
-          }), (0, r.jsx)(m.d, {
+          }), (0, r.jsx)(h.d, {
             isTrayButton: false,
             label: S.intl.string(S.t["R/FK4A"]),
             onClick: k,

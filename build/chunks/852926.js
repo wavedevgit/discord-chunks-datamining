@@ -2,9 +2,9 @@
 /** chunk id: 852926, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   GC: () => b,
-  _X: () => m,
+  _X: () => h,
   br: () => f,
-  em: () => h,
+  em: () => m,
   jU: () => g
 });
 var Chunk13245 = require("./13245.js"),
@@ -38,14 +38,14 @@ function g(e) {
     context: d.IlC.APP
   })
 }
-let h = async (e, t, n) => {
+let m = async (e, t, n) => {
   if ((0, c.YK)(e, t), (null == n || "" === n) && (0, c.s9)(t)) return e.authorization.scopes = [u.cE, u.CN], Promise.resolve();
   if (null == n || "" === n) return Promise.reject(new s.Z({
     closeCode: d.$VG.INVALID_CLIENTID
   }, "No Client ID Specified"));
   let r = a.ZP.releaseChannel !== d.R5N.CANARY && !p.includes(n) && e.transport !== u.He.POST_MESSAGE;
   return await (0, c.vv)(n, r), (0, c.YS)(e, n, t)
-}, m = () => (0, Chunk914946.tr)(e => {
+}, h = () => (0, Chunk914946.tr)(e => {
   let t = [];
   return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = e.modeOptions.shortcut.map(e => {
     var t;

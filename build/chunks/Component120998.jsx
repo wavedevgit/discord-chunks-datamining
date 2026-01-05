@@ -73,18 +73,18 @@ class d extends(r = Chunk473749.PureComponent) {
         f = r.getContext("2d"),
         g = this.maxValue;
       f.strokeStyle = a, f.lineWidth = c;
-      let h = r.height - f.lineWidth,
-        m = f.createLinearGradient(0, 0, 0, h);
-      if (null != d) m.addColorStop(0, d);
+      let m = r.height - f.lineWidth,
+        h = f.createLinearGradient(0, 0, 0, m);
+      if (null != d) h.addColorStop(0, d);
       else {
         let {
           r: e,
           g: t,
           b: n
         } = s.oo(a);
-        m.addColorStop(0, "rgba(".concat(e, ", ").concat(t, ", ").concat(n, ", 0)"))
+        h.addColorStop(0, "rgba(".concat(e, ", ").concat(t, ", ").concat(n, ", 0)"))
       }
-      m.addColorStop(1, this.fillColor), f.fillStyle = m;
+      h.addColorStop(1, this.fillColor), f.fillStyle = h;
       let b = i.length >= o ? o : i.length;
       f.setTransform(1, 0, 0, false, 0, r.height), f.clearRect(0, 0, r.width, r.height), f.translate(0, .5 * f.lineWidth);
       let _ = Math.floor(r.width / (b - 3)),
@@ -94,7 +94,7 @@ class d extends(r = Chunk473749.PureComponent) {
       i.forEach((e, r) => {
         t = {
           x: O,
-          y: h * e / g
+          y: m * e / g
         }, 0 === r ? f.moveTo(t.x, t.y) : f.bezierCurveTo(n.x + E, n.y, t.x - E, t.y, t.x, t.y), n = t, O += _
       }), f.stroke(), f.lineTo(O - _, 0), f.lineTo(0, 0), f.fill(), u && p < 1 && (this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation))
     })

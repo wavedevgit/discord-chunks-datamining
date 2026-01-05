@@ -18,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
 function g(e) {
   let {
     loadId: t
-  } = e, n = (0, l.e7)([o.default], () => (0, d.Xp)([o.default])), g = u.Z.useField("languageCode"), h = null != g ? g : n, m = i.useCallback(e => {
+  } = e, n = (0, l.e7)([o.default], () => (0, d.Xp)([o.default])), g = u.Z.useField("languageCode"), m = null != g ? g : n, h = i.useCallback(e => {
     u.Z.setState({
       languageCode: e
     });
@@ -36,14 +36,14 @@ function g(e) {
     label: e.name
   })), []), _ = i.useMemo(() => {
     var e;
-    let t = (0, p.Cf)().find(e => e.code === h);
+    let t = (0, p.Cf)().find(e => e.code === m);
     return null != (e = null == t ? true : t.name) ? e : f.intl.string(f.t.LQLMGP)
-  }, [h]);
+  }, [m]);
   return (0, r.jsx)(a.ZP, {
     items: b,
     title: _,
-    onSelect: m,
-    selected: h,
+    onSelect: h,
+    selected: m,
     "aria-label": f.intl.string(f.t.Ng5cTK)
   })
 }

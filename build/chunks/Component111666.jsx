@@ -59,7 +59,7 @@ function C(e, t) {
 function S(e) {
   let {
     className: t
-  } = e, n = (0, a.e7)([h.Z], () => h.Z.getPendingCount() > 0), b = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE), S = function() {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getPendingCount() > 0), b = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE), S = function() {
     let [e, t] = i.useState(null), {
       showActivityTicker: n
     } = (0, E.Z)(), r = i.useRef({}), l = i.useRef(null);
@@ -73,8 +73,8 @@ function S(e) {
         },
         i = (n, i, a) => {
           var o, s, c, u, d, p, g, b, _;
-          if (!h.Z.isFriend(n)) returnfalse;
-          let E = m.default.getUser(n);
+          if (!m.Z.isFriend(n)) returnfalse;
+          let E = h.default.getUser(n);
           if (null == E) returnfalse;
           let v = false,
             y = null;

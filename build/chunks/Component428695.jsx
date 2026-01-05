@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 428695, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,14 +15,14 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk156132 = require("./156132.js");
-let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
-  m = function(e) {
+let m = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
+  h = function(e) {
     let {
       guild: t,
       title: n,
       message: l,
       image: o,
-      type: m,
+      type: h,
       imageStyles: b,
       imageMarginX: _,
       imageMarginTop: E,
@@ -36,21 +36,21 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       className: N
     } = e;
     i.useEffect(() => {
-      h(p.rMx.CHANNEL_NOTICE_VIEWED, {
-        notice_type: m,
+      m(p.rMx.CHANNEL_NOTICE_VIEWED, {
+        notice_type: h,
         guild_id: t.id
       })
-    }, [t.id, m]);
+    }, [t.id, h]);
     let j = null;
     "function" == typeof C ? j = C() : null != C && (j = (0, r.jsx)(s.zx, {
       "data-migration-pending": true,
       className: g.button,
       size: s.zx.Sizes.SMALL,
       onClick: () => {
-        null != m && d.default.track(p.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
+        null != h && d.default.track(p.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
           source: O,
           guild_id: t.id,
-          notice_type: m
+          notice_type: h
         }), null == I || I()
       },
       fullWidth: true,
@@ -83,7 +83,7 @@ let h = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       children: [true === v ? null : (0, r.jsx)(c.P3F, {
         onClick: () => {
           u.ZP.trackWithMetadata(p.rMx.CHANNEL_NOTICE_CLOSED, {
-            notice_type: m
+            notice_type: h
           }), null == y || y()
         },
         className: g.close,

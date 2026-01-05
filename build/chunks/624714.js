@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 624714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js"), require("./997841.js");
 var Chunk95015 = require("./95015.js"),
   Chunk544891 = require("./544891.js"),
@@ -16,7 +16,7 @@ var Chunk95015 = require("./95015.js"),
   Chunk561205 = require("./561205.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
-let m = {
+let h = {
   [Chunk981631.Etm.SEND_ANALYTICS_EVENT]: {
     validation: e => (0, p.Z)(e).required().keys({
       event_name: e.string().required(),
@@ -35,9 +35,9 @@ let m = {
       let s = n.application.id,
         p = (0, f.Z)(),
         g = null == p ? true : p.getGuildId(),
-        m = o.Z.getApplication(s);
-      if (!(0, r.yE)(null != (t = null == m ? true : m.flags) ? t : 0, h.udG.EMBEDDED_FIRST_PARTY)) throw new u.Z({
-        errorCode: h.lTL.INVALID_COMMAND
+        h = o.Z.getApplication(s);
+      if (!(0, r.yE)(null != (t = null == h ? true : h.flags) ? t : 0, m.udG.EMBEDDED_FIRST_PARTY)) throw new u.Z({
+        errorCode: m.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
       let b = (0, a.U)(s),
         _ = {
@@ -73,10 +73,10 @@ let m = {
         socket: t
       } = e, n = t.application.id;
       if (null == n) throw new u.Z({
-        errorCode: h.lTL.INVALID_COMMAND
+        errorCode: m.lTL.INVALID_COMMAND
       }, "No application.");
       return i.tn.post({
-        url: h.ANM.APPLICATION_TICKET(n),
+        url: m.ANM.APPLICATION_TICKET(n),
         body: {
           test_mode: s.Z.inTestModeForApplication(n) || l.Z.inDevModeForApplication(n)
         },

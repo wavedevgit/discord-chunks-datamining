@@ -44,14 +44,14 @@ function D(e) {
   } = e, l = (0, _.y)(t.id), d = (0, E.k5)(t.id), j = (0, o.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
     isStageNoticeHidden: D,
     isEventNoticeHidden: k
-  } = (0, o.cj)([m.Z], () => ({
-    isStageNoticeHidden: m.Z.isLiveChannelNoticeHidden({
+  } = (0, o.cj)([h.Z], () => ({
+    isStageNoticeHidden: h.Z.isLiveChannelNoticeHidden({
       stageId: null == j ? true : j.id
     }),
-    isEventNoticeHidden: m.Z.isLiveChannelNoticeHidden({
+    isEventNoticeHidden: h.Z.isLiveChannelNoticeHidden({
       eventId: null == d ? true : d.id
     })
-  }), [j, d]), U = null == l ? true : l.id, G = (0, o.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), H = (0, o.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), B = (0, o.e7)([P.Z], () => P.Z.can(Z.Plq.CONNECT, l)), V = (0, N.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, o.e7)([x.default], () => x.default.getUser(F), [F]);
+  }), [j, d]), U = null == l ? true : l.id, G = (0, o.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), B = (0, o.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), H = (0, o.e7)([P.Z], () => P.Z.can(Z.Plq.CONNECT, l)), V = (0, N.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, o.e7)([x.default], () => x.default.getUser(F), [F]);
   i.useEffect(() => {
     null != F && (0, u.PR)(F)
   }, [F]);
@@ -77,9 +77,9 @@ function D(e) {
       listenerCount: u,
       isEventNoticeHidden: d,
       isStageNoticeHidden: f,
-      isStudyRoomNotice: m
+      isStudyRoomNotice: h
     } = e, _ = null != n && null != i && !f, E = null != t ? (0, v.DK)(t) : null;
-    if (m && null != i) {
+    if (h && null != i) {
       let e = (0, p.KS)(i);
       return {
         noticeType: 3,
@@ -112,7 +112,7 @@ function D(e) {
           }),
           canListenIn: l,
           buttonText: e,
-          onClose: () => (0, h.ji)({
+          onClose: () => (0, m.ji)({
             stageId: null == n ? true : n.id
           }),
           users: s.length > 5 ? s.slice(0, 5) : s,
@@ -148,7 +148,7 @@ function D(e) {
         }),
         canListenIn: l,
         buttonText: e,
-        onClose: () => (0, h.ji)({
+        onClose: () => (0, m.ji)({
           stageId: null == n ? true : n.id
         }),
         users: s.length > 5 ? s.slice(0, 5) : s,
@@ -187,7 +187,7 @@ function D(e) {
         }),
         canListenIn: false,
         buttonText: L.intl.string(L.t.iW6Xuo),
-        onClose: () => (0, h.ji)({
+        onClose: () => (0, m.ji)({
           eventId: null == t ? true : t.id
         }),
         users: null == o ? [] : [o],
@@ -221,7 +221,7 @@ function D(e) {
         }) : null,
         canListenIn: l,
         buttonText: L.intl.string(L.t.nxUtoQ),
-        onClose: () => (0, h.ji)({
+        onClose: () => (0, m.ji)({
           eventId: null == t ? true : t.id
         }),
         users: null == o ? [] : [o],
@@ -249,15 +249,15 @@ function D(e) {
     guildEvent: d,
     stageInstance: j,
     activeChannel: l,
-    canConnect: B,
+    canConnect: H,
     myRole: V,
     eventCreator: z,
     speakers: G,
-    listenerCount: H,
+    listenerCount: B,
     isEventNoticeHidden: k,
     isStageNoticeHidden: D,
     isStudyRoomNotice: n
-  }), [d, j, l, B, V, z, G, H, k, D, n]);
+  }), [d, j, l, H, V, z, G, B, k, D, n]);
   return null == Y ? null : (0, r.jsxs)("div", {
     className: R.container,
     children: [null != ee ? (0, r.jsx)(c.P3F, {

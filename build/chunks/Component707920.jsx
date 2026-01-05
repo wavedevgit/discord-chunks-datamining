@@ -1,7 +1,7 @@
 /** Chunk was on 40184 **/
 /** chunk id: 707920, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -21,6 +21,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk219226 = require("./219226.jsx"),
   Chunk292914 = require("./292914.jsx"),
   Chunk766241 = require("./766241.jsx"),
+  Chunk815144 = require("./815144.jsx"),
   Chunk368835 = require("./368835.jsx"),
   Chunk911397 = require("./911397.jsx"),
   Chunk882354 = require("./882354.jsx"),
@@ -28,7 +29,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk263731 = require("./263731.js");
 
-function P(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -46,12 +47,12 @@ function P(e) {
   }
   return e
 }
-let I = {
+let Z = {
     roomId: Chunk333023.V,
     participants: [],
     seats: []
   },
-  Z = e => {
+  T = e => {
     let {
       channel: t,
       idle: n,
@@ -62,43 +63,43 @@ let I = {
     } = (0, o.cj)([m.Z], () => {
       var e;
       return {
-        room: null != (e = m.Z.getRoom(t.id)) ? e : I,
+        room: null != (e = m.Z.getRoom(t.id)) ? e : Z,
         isConnected: m.Z.isUserConnected(t.id)
       }
-    }), [Z, T] = r.useState(false), N = (0, b.Z)(), [A, w] = (0, c.R)("haven-show-chat", false);
+    }), [T, N] = r.useState(false), A = (0, b.Z)(), [w, M] = (0, c.R)("haven-show-chat", false);
     r.useEffect(() => {
-      null != N && T(true)
-    }, [N]);
-    let [M, R] = r.useState(.65), [D, k] = r.useState(.65), [L, U] = r.useState(.65), [V, H] = r.useState({
+      null != A && N(true)
+    }, [A]);
+    let [R, D] = r.useState(.65), [k, L] = r.useState(.65), [U, V] = r.useState(.65), [H, F] = r.useState({
       x: 0,
       y: 0
-    }), [F, B] = r.useState(false), [G, W] = r.useState(0), [z, q] = r.useState({
+    }), [B, G] = r.useState(false), [W, z] = r.useState(0), [q, K] = r.useState({
       x: 0,
       y: 0
-    }), [K, Y] = r.useState({
+    }), [Y, X] = r.useState({
       x: 0,
       y: 0
-    }), [X, J] = r.useState(false), Q = r.useRef(null), [$, ee] = r.useState(null), et = (0, u.y)(e => {
+    }), [J, Q] = r.useState(false), $ = r.useRef(null), [ee, et] = r.useState(null), en = (0, u.y)(e => {
       let {
         contentRect: t,
         target: n
       } = e, i = n.getBoundingClientRect(), r = t.width, l = t.height;
-      q({
+      K({
         x: r / 2 + i.x,
         y: l / 2 + i.y
       });
       let a = Math.max(r / 2180 * 1.5, l / 1536 * 1.5);
-      if (R(Math.max(r / 2180 * 1.1, l / 1536 * 1.1)), U(a), null != Q.current) {
-        let e = Q.current.getBoundingClientRect();
-        ee({
+      if (D(Math.max(r / 2180 * 1.1, l / 1536 * 1.1)), V(a), null != $.current) {
+        let e = $.current.getBoundingClientRect();
+        et({
           x: e.left - i.left,
           y: e.top - i.top
         })
       }
-    }), en = r.useCallback(e => {
+    }), ei = r.useCallback(e => {
       var t;
-      let n = Math.max(e, M),
-        i = null == (t = et.current) ? true : t.getBoundingClientRect();
+      let n = Math.max(e, R),
+        i = null == (t = en.current) ? true : t.getBoundingClientRect();
       if (null == i) return;
       let r = {
           x: 1156,
@@ -112,102 +113,102 @@ let I = {
         c = r.y * n,
         u = i.width / 2 - s,
         d = i.height / 2 - c;
-      k(n), H({
+      L(n), F({
         x: u,
         y: d
       })
-    }, [et, M]);
+    }, [en, R]);
     r.useEffect(() => {
-      en(L)
-    }, [L, en]);
-    let ei = r.useCallback(e => {
+      ei(U)
+    }, [U, ei]);
+    let er = r.useCallback(e => {
       var t;
-      let n = null == (t = et.current) ? true : t.getBoundingClientRect();
+      let n = null == (t = en.current) ? true : t.getBoundingClientRect();
       if (null == n) return;
-      let i = n.height / D,
-        r = n.width / D,
+      let i = n.height / k,
+        r = n.width / k,
         l = {
-          x: e.x / D,
-          y: e.y / D
+          x: e.x / k,
+          y: e.y / k
         },
-        a = e.y / D > 0,
-        o = e.x / D > 0,
+        a = e.y / k > 0,
+        o = e.x / k > 0,
         s = l.y - i < false,
         c = l.x - r < false;
-      s || a || o || c || H(e)
-    }, [et, D]);
+      s || a || o || c || F(e)
+    }, [en, k]);
     return (0, i.jsx)(s.tEY, {
       children: (0, i.jsxs)("div", {
-        ref: et,
-        className: a()(_.havenWrapper, l),
+        ref: en,
+        className: a()(P.havenWrapper, l),
         onClick: () => {
-          W(0)
+          z(0)
         },
-        onMouseDown: () => B(Date.now()),
+        onMouseDown: () => G(Date.now()),
         onMouseUp: e => {
-          if (null != et.current) {
-            if (G < 2) {
+          if (null != en.current) {
+            if (W < 2) {
               let n = Date.now(),
-                i = et.current.getBoundingClientRect(),
+                i = en.current.getBoundingClientRect(),
                 r = {
-                  x: (e.pageX - i.x - V.x) / D,
-                  y: (e.pageY - i.y - V.y) / D
+                  x: (e.pageX - i.x - H.x) / k,
+                  y: (e.pageY - i.y - H.y) / k
                 };
-              false !== F && n - F > 250 && f.ZP.update(t.id, {
+              false !== B && n - B > 250 && f.ZP.update(t.id, {
                 position: r
               })
             }
-            B(false)
+            G(false)
           }
         },
         onMouseMove: e => {
-          false !== F && (W(G + Math.abs(e.movementX) + Math.abs(e.movementY)), ei({
-            x: V.x + e.movementX,
-            y: V.y + e.movementY
-          })), Y({
+          false !== B && (z(W + Math.abs(e.movementX) + Math.abs(e.movementY)), er({
+            x: H.x + e.movementX,
+            y: H.y + e.movementY
+          })), X({
             x: e.pageX,
             y: e.pageY
           })
         },
         children: [(0, i.jsx)("div", {
-          className: _.haven,
+          className: P.haven,
           style: {
-            transform: "translate(".concat(V.x, "px, ").concat(V.y, "px) scale(").concat(D, ") ")
+            transform: "translate(".concat(H.x, "px, ").concat(H.y, "px) scale(").concat(k, ") ")
           },
-          children: null != N && (0, i.jsxs)("div", {
-            className: _.environment,
+          children: null != A && (0, i.jsxs)("div", {
+            className: P.environment,
             children: [(0, i.jsx)("img", {
-              className: _.background,
-              src: N.backgrounds.sky.static,
+              className: P.background,
+              src: A.backgrounds.sky.static,
               alt: "",
               draggable: false
-            }), (0, i.jsx)(E.Z, {}), (0, i.jsx)("img", {
-              className: _.background,
-              src: N.backgrounds.mountains.static,
+            }), (0, i.jsx)(j.Z, {}), (0, i.jsx)("img", {
+              className: P.background,
+              src: A.backgrounds.mountains.static,
               alt: "",
               draggable: false
             }), (0, i.jsx)(C.Z, {}), (0, i.jsx)("img", {
-              className: _.background,
-              src: N.backgrounds.river.static,
+              className: P.background,
+              src: A.backgrounds.river.static,
               alt: "",
               draggable: false
             }), (0, i.jsx)(p.Z, {
-              className: _.video,
+              className: P.video,
               style: {
                 transform: "translate(779px, 1009px)"
               },
-              src: N.ambience.river.animated,
+              src: A.ambience.river.animated,
               autoPlay: true,
               controls: false,
               loop: true
             }), (0, i.jsx)("img", {
-              className: _.background,
-              src: N.backgrounds.camp.static,
+              className: P.background,
+              src: A.backgrounds.camp.static,
               alt: "",
               draggable: false
             }), g.Is.map(e => {
               var n, r, l;
-              return (0, i.jsx)(O.Z, (r = P({
+              return (0, i.jsx)(E.Z, (r = I({
                 onClick: e => {
                   f.ZP.update(t.id, {
                     seat: e
@@ -226,35 +227,35 @@ let I = {
               })(Object(l)).forEach(function(e) {
                 Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
               }), r), e.id)
-            }), h.participants.map(e => (0, i.jsx)(x.Z, {
+            }), h.participants.map(e => (0, i.jsx)(O.Z, {
               seats: h.seats,
               participant: e,
               participants: d,
               channel: t,
               idle: n
             }, e.userId)), (0, i.jsxs)("div", {
-              className: a()(_.environment, _.noInteract),
+              className: a()(P.environment, P.noInteract),
               children: [(0, i.jsx)(p.Z, {
-                className: _.video,
+                className: P.video,
                 style: {
                   transform: "translate(1014px, 773px)"
                 },
-                src: N.ambience.fire.animated,
+                src: A.ambience.fire.animated,
                 autoPlay: true,
                 controls: false,
                 loop: true
               }), (0, i.jsx)(p.Z, {
-                className: _.video,
-                src: N.ambience.fireflies.animated,
+                className: P.video,
+                src: A.ambience.fireflies.animated,
                 autoPlay: true,
                 controls: false,
                 loop: true
               }), (0, i.jsx)(p.Z, {
-                className: _.video,
+                className: P.video,
                 style: {
                   transform: "translate(0, 1216px)"
                 },
-                src: N.ambience.foliage_front.animated,
+                src: A.ambience.foliage_front.animated,
                 autoPlay: true,
                 controls: false,
                 loop: true
@@ -262,38 +263,38 @@ let I = {
             })]
           })
         }), (0, i.jsxs)("div", {
-          className: a()(_.row, _.bottomActions),
+          className: a()(P.row, P.bottomActions),
           children: [(0, i.jsxs)("div", {
-            className: a()(_.row, {
-              [_.hidden]: n
+            className: a()(P.row, {
+              [P.hidden]: n
             }),
             children: [(0, i.jsx)("div", {
-              ref: Q,
+              ref: $,
               children: (0, i.jsx)(s.hU, {
                 variant: "icon-only",
-                "aria-label": S.intl.string(j.default.W7TAH4),
+                "aria-label": _.intl.string(S.default.W7TAH4),
                 icon: s.RZG,
                 disabled: n,
                 onClick: e => {
-                  e.preventDefault(), e.stopPropagation(), J(!X)
+                  e.preventDefault(), e.stopPropagation(), Q(!J)
                 }
               })
             }), (0, i.jsx)(s.hU, {
               variant: "icon-only",
-              "aria-label": S.intl.string(j.default.O7EDNk),
-              icon: A ? s.ics : s.kBi,
+              "aria-label": _.intl.string(S.default.O7EDNk),
+              icon: w ? s.ics : s.kBi,
               disabled: n,
               onClick: e => {
-                e.preventDefault(), e.stopPropagation(), w(!A)
+                e.preventDefault(), e.stopPropagation(), M(!w)
               }
             })]
           }), (0, i.jsx)(y.Z, {
             channel: t,
             idle: n,
-            showChat: null != A && A
+            showChat: null != w && w
           }), (0, i.jsxs)("div", {
-            className: a()(_.row, {
-              [_.hidden]: n
+            className: a()(P.row, {
+              [P.hidden]: n
             }),
             children: [(0, i.jsx)(s.hU, {
               variant: "icon-only",
@@ -301,7 +302,7 @@ let I = {
               icon: s.BlJ,
               disabled: n,
               onClick: e => {
-                e.preventDefault(), e.stopPropagation(), en(D - .05)
+                e.preventDefault(), e.stopPropagation(), ei(k - .05)
               }
             }), (0, i.jsx)(s.hU, {
               variant: "icon-only",
@@ -309,24 +310,27 @@ let I = {
               icon: s.OyE,
               disabled: n,
               onClick: e => {
-                e.preventDefault(), e.stopPropagation(), en(D + .05)
+                e.preventDefault(), e.stopPropagation(), ei(k + .05)
               }
             })]
           })]
+        }), (0, i.jsx)(x.Z, {
+          channel: t,
+          participants: d
         }), (0, i.jsx)(v.Z, {
-          open: X,
-          close: () => J(false),
-          triggerRef: Q,
-          style: null != $ ? {
-            left: $.x,
-            top: $.y
+          open: J,
+          close: () => Q(false),
+          triggerRef: $,
+          style: null != ee ? {
+            left: ee.x,
+            top: ee.y
           } : true
         }), (0, i.jsx)("div", {
-          className: a()(_.overlay, {
-            [_.out]: Z
+          className: a()(P.overlay, {
+            [P.out]: T
           }),
           children: (0, i.jsx)("div", {
-            className: _.welcome,
+            className: P.welcome,
             children: (0, i.jsx)(s.Text, {
               variant: "display-lg",
               children: "Welcome to Haven"
@@ -336,12 +340,12 @@ let I = {
       })
     })
   },
-  T = e => {
+  N = e => {
     let t = h.t.useConfig({
         location: "Haven"
       }).enabled,
       n = (0, o.e7)([m.Z], () => m.Z.isUserConnected(e.channel.id));
     return (r.useEffect(() => {
       t && (n || f.ZP.connect(e.channel.id))
-    }, [e.channel.id, n, t]), t) ? (0, i.jsx)(Z, P({}, e)) : null
+    }, [e.channel.id, n, t]), t) ? (0, i.jsx)(T, I({}, e)) : null
   }

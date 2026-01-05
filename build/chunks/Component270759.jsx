@@ -1,8 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 270759, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => x,
-  Z: () => A
+  Z: () => x
 }), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js"), require("./704826.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -23,7 +22,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk108427 = require("./108427.js"),
   Chunk210887 = require("./210887.js"),
   Chunk974042 = require("./974042.js"),
-  Chunk365113 = require("./365113.js"),
   Chunk849862 = require("./849862.js"),
   Chunk666286 = require("./666286.jsx"),
   Chunk596957 = require("./596957.jsx"),
@@ -32,7 +30,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk221534 = require("./221534.js");
 
-function x() {
+function P() {
   return (0, Chunk54381.jsx)("div", {
     className: Chunk221534.inviteToolbar,
     children: (0, Chunk54381.jsx)(Chunk518311.Z, {
@@ -41,119 +39,116 @@ function x() {
     })
   })
 }
-let A = function(e) {
+let x = function(e) {
   let {
     initialSection: t
   } = e, n = (0, o.TH)(), l = (0, o.k6)();
   i.useEffect(() => {
     "true" === new URLSearchParams(n.search).get("confirm-age") && u.Z.dispatch({
       type: "AGE_GATE_MODAL_OPEN",
-      source: N.L0.DEEP_LINK_PROMPT
+      source: T.L0.DEEP_LINK_PROMPT
     }).then(() => {
-      l.replace(T.Z5c.ME)
+      l.replace(S.Z5c.ME)
     })
   }, [l, n]), i.useEffect(() => {
-    d.Y(T.Z5c.FRIENDS), (0, E.e)("friends")
+    d.Y(S.Z5c.FRIENDS), (0, E.e)("friends")
   }, []);
   let b = (0, s.e7)([O.Z], () => O.Z.theme),
-    A = (0, I.If)(),
+    x = (0, y.If)(),
     {
-      section: Z,
-      rows: w
+      section: A,
+      rows: Z
     } = (0, s.cj)([v.ZP], () => v.ZP.getState()),
-    L = (0, s.e7)([h.Z], () => h.Z.getSuggestionCount()),
-    R = i.useMemo(() => w.getRelationshipCounts(), [w]);
+    w = (0, s.e7)([m.Z], () => m.Z.getSuggestionCount()),
+    L = i.useMemo(() => Z.getRelationshipCounts(), [Z]);
   i.useEffect(() => {
-    null != t && p.Z.setInitialSection(t), 0 === R[T.OGo.FRIEND] && 0 === R[T.OGo.PENDING_INCOMING] && 0 === R[T.OGo.PENDING_OUTGOING] && 0 === R[T.OGo.BLOCKED] && p.Z.transitionToSection(T.pJs.ADD_FRIEND)
-  }, [t, R]);
-  let D = e => {
+    null != t && p.Z.setInitialSection(t), 0 === L[S.OGo.FRIEND] && 0 === L[S.OGo.PENDING_INCOMING] && 0 === L[S.OGo.PENDING_OUTGOING] && 0 === L[S.OGo.BLOCKED] && p.Z.transitionToSection(S.pJs.ADD_FRIEND)
+  }, [t, L]);
+  let R = e => {
       p.Z.transitionToSection(e, {
         explicit: true
       })
     },
+    D = (0, g.Dt)(),
     M = (0, g.Dt)(),
-    k = (0, g.Dt)(),
-    U = [{
-      id: T.pJs.ONLINE,
-      show: w.filter(T.pJs.ONLINE).length > 0,
-      content: j.intl.string(j.t.b9w3bO),
-      className: P.item
+    k = [{
+      id: S.pJs.ONLINE,
+      show: Z.filter(S.pJs.ONLINE).length > 0,
+      content: N.intl.string(N.t.b9w3bO),
+      className: j.item
     }, {
-      id: T.pJs.ALL,
-      show: R[T.OGo.FRIEND] > 0,
-      content: j.intl.string(j.t.PfjFjR),
-      className: P.item
+      id: S.pJs.ALL,
+      show: L[S.OGo.FRIEND] > 0,
+      content: N.intl.string(N.t.PfjFjR),
+      className: j.item
     }, {
-      id: T.pJs.PENDING,
-      show: w.filter(T.pJs.PENDING).length > 0,
+      id: S.pJs.PENDING,
+      show: Z.filter(S.pJs.PENDING).length > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [j.intl.string(j.t.p6IHGE), A > 0 && (0, r.jsx)(c.mAB, {
-          count: A,
-          className: P.badge
+        children: [N.intl.string(N.t.p6IHGE), x > 0 && (0, r.jsx)(c.mAB, {
+          count: x,
+          className: j.badge
         })]
       }),
-      ariaLabel: j.intl.formatToPlainString(j.t.OAC0Z4, {
-        count: A.toString()
+      ariaLabel: N.intl.formatToPlainString(N.t.OAC0Z4, {
+        count: x.toString()
       }),
-      className: P.item
+      className: j.item
     }, {
-      id: T.pJs.SUGGESTIONS,
-      show: L > 0,
+      id: S.pJs.SUGGESTIONS,
+      show: w > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [j.intl.string(j.t["8rSi1/"]), (0, r.jsx)(c.mAB, {
-          count: L,
-          className: P.badge
+        children: [N.intl.string(N.t["8rSi1/"]), (0, r.jsx)(c.mAB, {
+          count: w,
+          className: j.badge
         })]
       }),
-      ariaLabel: j.intl.formatToPlainString(j.t.AbMQp7, {
-        count: L.toString()
+      ariaLabel: N.intl.formatToPlainString(N.t.AbMQp7, {
+        count: w.toString()
       }),
-      className: P.item
+      className: j.item
     }, {
-      id: T.pJs.ADD_FRIEND,
+      id: S.pJs.ADD_FRIEND,
       show: true,
       content: (0, r.jsx)("span", {
-        children: j.intl.string(j.t.j0wbE5)
+        children: N.intl.string(N.t.j0wbE5)
       }),
-      ariaLabel: j.intl.string(j.t.j0wbE5),
-      className: a()(P.item, P.addFriend)
+      ariaLabel: N.intl.string(N.t.j0wbE5),
+      className: a()(j.item, j.addFriend)
     }],
-    G = y.o.useConfig({
-      location: "people page"
-    }).friendsTab,
-    H = null,
-    B = G ? null : (0, r.jsx)("div", {
-      className: P.nowPlayingColumn,
+    U = null,
+    G = (0, r.jsx)("div", {
+      className: j.nowPlayingColumn,
       children: (0, r.jsx)(_.Z, {})
     });
-  return H = Z === T.pJs.ADD_FRIEND ? (0, r.jsx)(C.Z, {}) : (0, r.jsx)(S.Z, {
-    titleId: k
+  return U = A === S.pJs.ADD_FRIEND ? (0, r.jsx)(I.Z, {}) : (0, r.jsx)(C.Z, {
+    titleId: M
   }), (0, r.jsxs)("main", {
-    className: P.container,
-    "aria-label": j.intl.string(j.t.TdEu5X),
+    className: j.container,
+    "aria-label": N.intl.string(N.t.TdEu5X),
     children: [(0, r.jsx)(f.yY, {
-      location: j.intl.string(j.t.TdEu5X)
+      location: N.intl.string(N.t.TdEu5X)
     }), (0, r.jsx)(c.f6W, {
       theme: b,
-      children: e => (0, r.jsxs)(m.Z, {
+      children: e => (0, r.jsxs)(h.Z, {
         className: e,
-        toolbar: (0, r.jsx)(x, {}),
+        toolbar: (0, r.jsx)(P, {}),
         role: "navigation",
-        "aria-labelledby": M,
+        "aria-labelledby": D,
         scrollable: true,
-        children: [(0, r.jsx)(m.Z.Icon, {
+        children: [(0, r.jsx)(h.Z.Icon, {
           icon: c.iFz,
           "aria-hidden": true
-        }), (0, r.jsx)(m.Z.Title, {
-          id: M,
-          children: j.intl.string(j.t.TdEu5X)
-        }), (0, r.jsx)(m.Z.Divider, {}), (0, r.jsx)(c.njP, {
-          "aria-label": j.intl.string(j.t.TdEu5X),
-          selectedItem: Z,
+        }), (0, r.jsx)(h.Z.Title, {
+          id: D,
+          children: N.intl.string(N.t.TdEu5X)
+        }), (0, r.jsx)(h.Z.Divider, {}), (0, r.jsx)(c.njP, {
+          "aria-label": N.intl.string(N.t.TdEu5X),
+          selectedItem: A,
           type: "top-pill",
-          onItemSelect: D,
-          className: P.tabBar,
-          children: U.filter(e => e.show).map(e => (0, r.jsx)(c.njP.Item, {
+          onItemSelect: R,
+          className: j.tabBar,
+          children: k.filter(e => e.show).map(e => (0, r.jsx)(c.njP.Item, {
             id: e.id,
             className: e.className,
             "aria-label": e.ariaLabel,
@@ -162,13 +157,13 @@ let A = function(e) {
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: P.tabBody,
+      className: j.tabBody,
       children: [(0, r.jsx)(c.njP.Panel, {
-        id: Z,
-        className: P.peopleColumn,
-        "aria-labelledby": k,
-        children: H
-      }), B]
+        id: A,
+        className: j.peopleColumn,
+        "aria-labelledby": M,
+        children: U
+      }), G]
     })]
   })
 }

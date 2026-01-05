@@ -43,9 +43,9 @@ let u = {
       onRest: () => {
         d()
       }
-    }, [t, d, f, n]), h = (0, o.q_F)(g);
+    }, [t, d, f, n]), m = (0, o.q_F)(g);
     return (0, r.jsx)(l.animated.div, {
-      style: h,
+      style: m,
       className: c.transitionItem,
       children: p
     })

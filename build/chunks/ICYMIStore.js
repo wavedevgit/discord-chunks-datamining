@@ -72,8 +72,8 @@ let D = +Chunk70956.Z.Millis.DAY,
   k = [],
   U = null,
   G = 0,
-  H = [],
   B = [],
+  H = [],
   V = {},
   F = {},
   z = {},
@@ -108,17 +108,17 @@ function eg(e, t) {
   returnfalse
 }
 
-function eh(e) {
+function em(e) {
   if (!N.Z.filterStaffContent()) returntrue;
   if ((0, x._e)(e)) {
     if (e.data.guild_id === j.KF) returntrue;
-    let t = m.Z.getGuild(e.data.guild_id);
+    let t = h.Z.getGuild(e.data.guild_id);
     if (null == t || t.features.has(A.GuildFeatures.INTERNAL_EMPLOYEE_ONLY)) returnfalse
   }
   returntrue
 }
 
-function em(e, t, n, r) {
+function eh(e, t, n, r) {
   let i = e.filter(e => e.type !== n);
   return t.forEach((e, t) => {
     (t + 1) * r < i.length ? i.splice((t + 1) * r, 0, e) : i.push(e)
@@ -146,28 +146,28 @@ function eb() {
 
 function e_() {
   let e = new Set;
-  if (H.forEach(t => {
+  if (B.forEach(t => {
       e.add(t.id)
     }), null != ee)
     if (module.has(ee.id)) {
       let e = ee.id,
         t = ee.type,
-        n = H.findIndex(n => n.id === e && n.type === t);
-      false !== require && (ee = H[require], H = H.filter(t => t.id !== e), H = [ee, ...H])
-    } else H = [ee, ...H], module.add(ee.id);
-  H.forEach(e => {
+        n = B.findIndex(n => n.id === e && n.type === t);
+      false !== require && (ee = B[require], B = B.filter(t => t.id !== e), B = [ee, ...B])
+    } else B = [ee, ...B], module.add(ee.id);
+  B.forEach(e => {
     F[e.id] = e, e.type === j.Ni.CUSTOM_STATUS && (O.Z.isBlockedOrIgnored(e.data.user_id) ? Y[e.id] = true : z[e.id] = (0, x.mV)(e))
   })
 }
 
 function eE(e) {
-  if (H.length > 0 && (k = H, H = [], B = []), K++, null != e) en = e.newUnread, er = e.newRead;
+  if (B.length > 0 && (k = B, B = [], H = []), K++, null != e) en = e.newUnread, er = e.newRead;
   else {
     let [e, t] = eO(k);
     en = e, er = t
   }
   if (N.Z.onlyShowRecentGeneratedCandidates() || (function() {
-      let e = m.Z.getGuildIds(),
+      let e = h.Z.getGuildIds(),
         t = [];
       for (let r of e) {
         if (null != W[r] && W[r] < 0) continue;
@@ -200,15 +200,15 @@ function eE(e) {
           }
       }
       t.sort((e, t) => {
-        let n = h.Z.getGuildAffinity(e.data.guild_id),
-          r = h.Z.getGuildAffinity(t.data.guild_id);
+        let n = m.Z.getGuildAffinity(e.data.guild_id),
+          r = m.Z.getGuildAffinity(t.data.guild_id);
         return (null != r ? r.score : 0) - (null != n ? n.score : 0)
       });
       let r = [],
         i = [];
       t.forEach(e => {
         F[e.id] = e, null != P.Z.getReadTimestamp(e.id) ? i.push(e) : r.push(e)
-      }), en = em(en, r, j.Ni.GUILD_EVENT, 7), er = em(er, i, j.Ni.GUILD_EVENT, 7)
+      }), en = eh(en, r, j.Ni.GUILD_EVENT, 7), er = eh(er, i, j.Ni.GUILD_EVENT, 7)
     }(), function() {
       var e, t;
       let n = new Set,
@@ -238,7 +238,7 @@ function eE(e) {
           }
         };
         n.add(e.content.id), F[t.id] = t, null != P.Z.getReadTimestamp(t.id) ? a.push(t) : l.push(t)
-      }), en = em(en, l, j.Ni.ACTIVITY, 5), er = em(er, a, j.Ni.ACTIVITY, 5)
+      }), en = eh(en, l, j.Ni.ACTIVITY, 5), er = eh(er, a, j.Ni.ACTIVITY, 5)
     }(), eb()), null != V.load_id && U !== V.load_id) {
     var t;
     S.m.trackFeedLoaded({
@@ -280,7 +280,7 @@ function ey(e, t) {
 }
 
 function eI(e, t) {
-  (0, x.jv)(t) === x.aL.MUTED && (k = ey(k, e), en = ey(en, e), er = ey(er, e), H = ey(H, e), B = ey(B, e))
+  (0, x.jv)(t) === x.aL.MUTED && (k = ey(k, e), en = ey(en, e), er = ey(er, e), B = ey(B, e), H = ey(H, e))
 }
 
 function eC(e, t) {
@@ -288,7 +288,7 @@ function eC(e, t) {
 }
 
 function eS(e, t) {
-  (0, x.jv)(t) === x.aL.MUTED && (k = eC(k, e), en = eC(en, e), er = eC(er, e), H = eC(H, e), B = eC(B, e))
+  (0, x.jv)(t) === x.aL.MUTED && (k = eC(k, e), en = eC(en, e), er = eC(er, e), B = eC(B, e), H = eC(H, e))
 }
 
 function eT(e) {
@@ -312,13 +312,13 @@ function eN(e) {
     (i > ei || !X) && e.type === j.Ni.MESSAGE && e.data.channel_id === t ? n.push(e) : r.push(e)
   });
   let i = J,
-    [l, a] = eO(H);
-  if (B = ev(l, t), J = X ? i && B.length >= j.Lb : i && eg(r, H), 0 === n.length && i === J) returnfalse;
+    [l, a] = eO(B);
+  if (H = ev(l, t), J = X ? i && H.length >= j.Lb : i && eg(r, B), 0 === n.length && i === J) returnfalse;
   0 !== n.length && (en = r, er = [...er, ...n])
 }
 class ej extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(f.default, g.Z, o.Z, u.Z, h.Z, d.ZP, m.Z, N.Z, P.Z, b.Z, _.Z, E.ZP, O.Z, v.ZP), null != e) {
+    if (this.waitFor(f.default, g.Z, o.Z, u.Z, m.Z, d.ZP, h.Z, N.Z, P.Z, b.Z, _.Z, E.ZP, O.Z, v.ZP), null != e) {
       var t, n, r, i, l, a, s;
       (k = null != (t = e.dehydratedItems) ? t : []).forEach(e => {
         F[e.id] = e
@@ -332,7 +332,7 @@ class ej extends(r = Chunk442837.ZP.PersistedStore) {
     return k
   }
   getNewDehydratedItems() {
-    return H
+    return B
   }
   getDehydratedItem(e) {
     var t;
@@ -353,7 +353,7 @@ class ej extends(r = Chunk442837.ZP.PersistedStore) {
     return en
   }
   getNewUnreadDehydratedItems() {
-    return B
+    return H
   }
   getReadDisplayItems() {
     return er
@@ -437,14 +437,14 @@ class ej extends(r = Chunk442837.ZP.PersistedStore) {
 w(ej, "displayName", "ICYMIStore"), w(ej, "persistKey", "ICYMIStore");
 let eP = new ej(Chunk570140.Z, {
   LOGOUT: function() {
-    k = [], H = [], B = [], F = {}, V = {}, z = {}, Y = {}, U = null, W = {}, q = {}, K = 0, Q = false, J = false, X = false, en = [], er = [], ei = 0, G = 0, ea = 0, eo = true, es = false, ec = new Set, ee = null, eu = false, ed = false, $ = null, ep = 0
+    k = [], B = [], H = [], F = {}, V = {}, z = {}, Y = {}, U = null, W = {}, q = {}, K = 0, Q = false, J = false, X = false, en = [], er = [], ei = 0, G = 0, ea = 0, eo = true, es = false, ec = new Set, ee = null, eu = false, ed = false, $ = null, ep = 0
   },
   LOAD_ICYMI_FROM_NOTIFICATION: function(e) {
     let {
       messageItem: t,
       customStatusItem: n
     } = e;
-    if (null != n) return ee = n, null != U && (H = H.length > 0 ? H : [...k], e_(), eE()), true;
+    if (null != n) return ee = n, null != U && (B = B.length > 0 ? B : [...k], e_(), eE()), true;
     if (null != t) {
       let e = {
         id: t.message.id,
@@ -462,7 +462,7 @@ let eP = new ej(Chunk570140.Z, {
         }), null == U && null == V) {
         let [t, n] = eO(k = [e, ...k]);
         en = t, er = n
-      } else H = [e, ...H], eE();
+      } else B = [e, ...B], eE();
       returntrue
     }
     returnfalse
@@ -475,12 +475,12 @@ let eP = new ej(Chunk570140.Z, {
       isInitialLoad: i,
       isReloading: l
     } = e;
-    H = function(e) {
+    B = function(e) {
       let {
         contentGenerationEnabled: t
       } = (0, T.q3)("processRawItems", false), n = N.Z.onlyShowRecentGeneratedCandidates(), r = new Set(j.zd);
       n ? r = new Set([j.Ni.GENERATED_CANDIDATE]) : t && r.add(j.Ni.GENERATED_CANDIDATE);
-      let i = e.filter(e => r.has(e.type)).filter(eh);
+      let i = e.filter(e => r.has(e.type)).filter(em);
       return n && i.sort((e, t) => C.default.extractTimestamp(t.id) - C.default.extractTimestamp(e.id)), i.map(e => {
         if (e.type === j.Ni.MESSAGE && null != e.data.message_context) {
           let t = {};
@@ -491,16 +491,16 @@ let eP = new ej(Chunk570140.Z, {
     }(t), e_(), V = {
       load_id: n,
       load_time_millis: Date.now() - r,
-      feed_item_ids: H.map(e => e.id)
+      feed_item_ids: B.map(e => e.id)
     };
-    let [a, o] = eO(H);
-    if (B = ev(a), !X || 0 === K || i) K = 0, !eu && eg(a, H) ? (J = true, Q = true) : J = false, eE({
+    let [a, o] = eO(B);
+    if (H = ev(a), !X || 0 === K || i) K = 0, !eu && eg(a, B) ? (J = true, Q = true) : J = false, eE({
       newUnread: a,
       newRead: o
     });
     else {
       K > 0 && (ee = null);
-      let e = B.length > j.Lb;
+      let e = H.length > j.Lb;
       l || (J = e), e && ((0, x.em)([...a, ...o], 0, j.xy), a.length + o.length === 0 && (ed = true))
     }
     S.m.trackFeedLoaded({
@@ -611,7 +611,7 @@ let eP = new ej(Chunk570140.Z, {
     })
   },
   RELOAD_ICYMI: function() {
-    if (0 === H.length) returnfalse;
+    if (0 === B.length) returnfalse;
     eE(), J = false
   },
   ICYMI_TAB_OPENED: function() {

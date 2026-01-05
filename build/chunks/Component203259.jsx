@@ -22,7 +22,7 @@ function p(e) {
     var e;
     let t = null == (e = o.Z.getLastClipsSession()) ? true : e.newClipIds;
     return null == t ? null : o.Z.getClips().filter(e => t.includes(e.id))[0]
-  }), g = (0, u.l)(f), h = i.useCallback(() => {
+  }), g = (0, u.l)(f), m = i.useCallback(() => {
     (0, c.eL)()
   }, []);
   return null == f ? null : f.type !== s.NJ.SCREENSHOT && f.type !== s.NJ.VOICE_CLIP && null != g ? (0, r.jsx)(a.Mb, {
@@ -43,7 +43,7 @@ function p(e) {
       text: d.intl.string(d.t.tQPBml),
       onClick: t
     },
-    onRequestClose: h
+    onRequestClose: m
   }) : (0, r.jsx)(a.J2, {
     targetElementRef: {
       current: n
@@ -64,6 +64,6 @@ function p(e) {
       text: d.intl.string(d.t.tQPBml),
       onClick: t
     }],
-    onRequestClose: h
+    onRequestClose: m
   })
 }
