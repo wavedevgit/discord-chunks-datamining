@@ -109,43 +109,43 @@ function D() {
       })
     }], [U]),
     Z = Chunk473749.useMemo(() => [{
-      value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_480,
+      value: Chunk37113.LY.RESOLUTION_480,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
-        resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_480
+        resolution: Chunk37113.LY.RESOLUTION_480
       })
     }, {
-      value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_720,
+      value: Chunk37113.LY.RESOLUTION_720,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
-        resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_720
+        resolution: Chunk37113.LY.RESOLUTION_720
       })
     }, {
-      value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1080,
+      value: Chunk37113.LY.RESOLUTION_1080,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
-        resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1080
+        resolution: Chunk37113.LY.RESOLUTION_1080
       })
     }, {
-      value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1440,
+      value: Chunk37113.LY.RESOLUTION_1440,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
-        resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1440
+        resolution: Chunk37113.LY.RESOLUTION_1440
       })
     }, {
-      value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE,
+      value: Chunk37113.LY.RESOLUTION_SOURCE,
       label: Chunk388032.intl.string(Chunk388032.t.XjXqzh)
     }], [U]),
     F = Chunk473749.useMemo(() => [{
-      value: Chunk37113.ApplicationStreamFPS.FPS_15,
+      value: Chunk37113.ws.FPS_15,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XH, {
-        fps: Chunk37113.ApplicationStreamFPS.FPS_15
+        fps: Chunk37113.ws.FPS_15
       })
     }, {
-      value: Chunk37113.ApplicationStreamFPS.FPS_30,
+      value: Chunk37113.ws.FPS_30,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XH, {
-        fps: Chunk37113.ApplicationStreamFPS.FPS_30
+        fps: Chunk37113.ws.FPS_30
       })
     }, {
-      value: Chunk37113.ApplicationStreamFPS.FPS_60,
+      value: Chunk37113.ws.FPS_60,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XH, {
-        fps: Chunk37113.ApplicationStreamFPS.FPS_60
+        fps: Chunk37113.ws.FPS_60
       })
     }], [U]),
     B = Chunk473749.useCallback(e => {

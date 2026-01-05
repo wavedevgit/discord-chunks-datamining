@@ -9,7 +9,7 @@ var Chunk580991 = require("./580991.js"),
   Chunk37113 = require("./37113.js");
 
 function o(e, t, n, o, s, l) {
-  if (e === a.ApplicationStreamPresets.PRESET_AUTO) return (0, r.IK)({
+  if (e === a.tI.PRESET_AUTO) return (0, r.IK)({
     location: "canStreamWithSettings"
   }).allowAutoQuality;
   for (let r of a.ND)

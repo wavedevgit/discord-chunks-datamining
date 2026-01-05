@@ -1,4 +1,4 @@
-/** Chunk was on 44183 **/
+/** Chunk was on 46746 **/
 /** chunk id: 215915, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => u
@@ -7,13 +7,13 @@ var r, i, Chunk442837 = require("./442837.js"),
   Chunk722733 = require("./722733.js"),
   Chunk633289 = require("./633289.js"),
   Chunk751823 = require("./751823.js");
-let c = {
+let a = {
     smarterSourceOrdering: false
   },
   d = (0, Chunk722733.Z)({
     name: "2025-08-go-live-source-ordering",
     kind: "user",
-    defaultConfig: c,
+    defaultConfig: a,
     variations: {
       1: (r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -32,7 +32,7 @@ let c = {
           })
         }
         return e
-      }({}, c), i = i = {
+      }({}, a), i = i = {
         smarterSourceOrdering: true
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
@@ -51,12 +51,12 @@ function u(e) {
   let {
     location: t
   } = e;
-  return (0, l.e7)([o.Z], () => (function(e) {
+  return (0, s.e7)([o.Z], () => (function(e) {
     let {
       location: t
     } = e, {
       isInHoldout: n
-    } = a.L.getCurrentConfig({
+    } = c.L.getCurrentConfig({
       location: t
     }, {
       autoTrackExposure: true

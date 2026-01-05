@@ -2,7 +2,7 @@
 /** chunk id: 624453, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   M: () => A,
-  Z: () => I
+  Z: () => O
 }), require("./388685.js"), require("./290780.js");
 var i, l, s, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -37,20 +37,20 @@ function p() {
     }), e.items = e.items.slice()
   })
 }
-class O extends(i = Chunk442837.ZP.Store) {
+class I extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk271383.ZP, Chunk430824.Z, Chunk706454.default, Chunk375954.Z, Chunk699516.Z, Chunk594174.default)
   }
   getPins(e) {
     return D[e]
   }
-}(s = "displayName") in O ? Object.defineProperty(O, s, {
+}(s = "displayName") in I ? Object.defineProperty(I, s, {
   value: "ChannelPinsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : O[s] = "ChannelPinsStore";
-let I = new O(Chunk570140.Z, {
+}) : I[s] = "ChannelPinsStore";
+let O = new I(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
     D = {}
   },

@@ -311,10 +311,10 @@ class K extends Chunk473749.PureComponent {
       let {
         searchContext: e
       } = this.props;
-      this.setState({
+      P.Z.setFocused(e, false), this.setState({
         focused: false
       }, () => {
-        P.Z.setFocused(e, false), v.xb(this.props.editorState) && this.clearSearch()
+        v.xb(this.props.editorState) && this.clearSearch()
       })
     }), V(this, "onBlur", e => {
       this.handleBlur()

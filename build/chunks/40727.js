@@ -25,21 +25,21 @@ let T = (0, Chunk509613.Em)(Chunk313789.n.CLIPS_FRAME_RATE, {
   },
   useOptions: () => [{
     id: "15",
-    value: Chunk37113.ApplicationStreamFPS.FPS_15,
+    value: Chunk37113.ws.FPS_15,
     label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XH, {
-      fps: Chunk37113.ApplicationStreamFPS.FPS_15
+      fps: Chunk37113.ws.FPS_15
     })
   }, {
     id: "30",
-    value: Chunk37113.ApplicationStreamFPS.FPS_30,
+    value: Chunk37113.ws.FPS_30,
     label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XH, {
-      fps: Chunk37113.ApplicationStreamFPS.FPS_30
+      fps: Chunk37113.ws.FPS_30
     })
   }, {
     id: "60",
-    value: Chunk37113.ApplicationStreamFPS.FPS_60,
+    value: Chunk37113.ws.FPS_60,
     label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XH, {
-      fps: Chunk37113.ApplicationStreamFPS.FPS_60
+      fps: Chunk37113.ws.FPS_60
     })
   }]
 })

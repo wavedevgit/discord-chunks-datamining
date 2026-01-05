@@ -343,8 +343,8 @@ function e3() {
 let e8 = e => (0, r.jsx)(T.Z, eL({}, e)),
   e5 = () => (0, Chunk54381.jsx)(Chunk270759.Z, {}),
   e2 = () => (0, Chunk54381.jsx)(Chunk927220.Z, {}),
-  e9 = () => (0, Chunk54381.jsx)(Chunk745052.Z, {}),
-  e7 = () => (0, Chunk54381.jsx)(Chunk179742.Z, {}),
+  e7 = () => (0, Chunk54381.jsx)(Chunk745052.Z, {}),
+  e9 = () => (0, Chunk54381.jsx)(Chunk179742.Z, {}),
   e6 = e => {
     let t = e.location.pathname;
     return (0, r.jsx)(O.Z, {
@@ -660,11 +660,11 @@ function tn() {
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.MESSAGE_REQUESTS,
-                  render: e9,
+                  render: e7,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.FAMILY_CENTER,
-                  render: e7,
+                  render: e9,
                   disableTrack: true
                 }), (0, Chunk54381.jsx)(Chunk765717.Z, {
                   path: Chunk981631.Z5c.ME,

@@ -31,22 +31,21 @@ function b(e) {
     onBeforeShowModal: o,
     onOneClickGoLive: a,
     appContext: c
-  } = e, d = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), y = (0, l.e7)([h.Z], () => h.Z.getChannel(d), [d]), E = (0, l.e7)([O.default], () => O.default.getCurrentUser()), v = null == y ? true : y.getGuildId(), b = (0, l.e7)([f.Z], () => (0, u.Z)(f.Z)), S = (0, l.e7)([p.Z, m.Z], () => null != y && (0, s.JL)(y, p.Z, m.Z));
+  } = e, d = (0, l.e7)([g.Z], () => g.Z.getVoiceChannelId()), y = (0, l.e7)([h.Z], () => h.Z.getChannel(d), [d]), E = (0, l.e7)([O.default], () => O.default.getCurrentUser()), v = (0, l.e7)([f.Z], () => (0, u.Z)(f.Z)), b = (0, l.e7)([p.Z, m.Z], () => null != y && (0, s.JL)(y, p.Z, m.Z));
   return r.useCallback(async () => {
     await x({
       pid: t,
       voiceChannelId: d,
       user: E,
-      targetGuildId: v,
-      canGoLive: b,
-      canStream: S,
+      canGoLive: v,
+      canStream: b,
       analyticsLocation: n,
       allowOneClickGoLive: i,
       onBeforeShowModal: o,
       onOneClickGoLive: a,
       appContext: c
     })
-  }, [t, d, E, v, b, S, n, i, o, a, c])
+  }, [t, d, E, v, b, n, i, o, a, c])
 }
 async function S(e) {
   let {
@@ -56,14 +55,13 @@ async function S(e) {
     onBeforeShowModal: r,
     onOneClickGoLive: l,
     appContext: o
-  } = e, a = g.Z.getVoiceChannelId(), c = h.Z.getChannel(a), d = O.default.getCurrentUser(), y = null == c ? true : c.getGuildId(), E = null != c && (0, s.JL)(c, p.Z, m.Z), v = (0, u.Z)(f.Z);
+  } = e, a = g.Z.getVoiceChannelId(), c = h.Z.getChannel(a), d = O.default.getCurrentUser(), y = null != c && (0, s.JL)(c, p.Z, m.Z), E = (0, u.Z)(f.Z);
   await x({
     pid: t,
     voiceChannelId: a,
     user: d,
-    targetGuildId: y,
-    canGoLive: v,
-    canStream: E,
+    canGoLive: E,
+    canStream: y,
     analyticsLocation: n,
     allowOneClickGoLive: i,
     onBeforeShowModal: r,
@@ -76,41 +74,39 @@ async function x(e) {
     pid: t,
     voiceChannelId: r,
     user: l,
-    targetGuildId: s,
-    canGoLive: u,
-    canStream: h,
-    analyticsLocation: p,
-    allowOneClickGoLive: f,
-    onBeforeShowModal: m,
-    onOneClickGoLive: g,
-    appContext: O
+    canGoLive: s,
+    canStream: u,
+    allowOneClickGoLive: h,
+    onBeforeShowModal: p,
+    onOneClickGoLive: f,
+    appContext: m
   } = e;
-  if (u && h) {
-    if (f && null !== r) {
+  if (s && u) {
+    if (h && null !== r) {
       let e = d.Z.getState().preset;
-      if (e === E.ApplicationStreamPresets.PRESET_DOCUMENTS) {
+      if (e === E.tI.PRESET_DOCUMENTS) {
         let {
           allowAutoQuality: t
         } = (0, a.IK)({
           location: "overlay _goLive"
         });
-        e = t ? E.ApplicationStreamPresets.PRESET_AUTO : E.ApplicationStreamPresets.PRESET_VIDEO
+        e = t ? E.tI.PRESET_AUTO : E.tI.PRESET_VIDEO
       }
       let [n] = await (0, c.Z)(t, {
         preset: e
       });
       if (n) {
-        null == g || g();
+        null == f || f();
         return
       }
     }
     if (null == l) return void(0, o.showToast)((0, o.createToast)(v.intl.string(v.t.OKnWyb), o.ToastType.FAILURE, {
       appContext: y.IlC.OVERLAY
     }));
-    null == m || m(), (0, o.ZDy)(async () => {
+    null == p || p(), (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("38697"), n.e("4093"), n.e("44183"), n.e("59416")]).then(n.bind(n, 60594));
+      } = await Promise.all([n.e("46746"), n.e("84064")]).then(n.bind(n, 60594));
       return n => {
         var r, l;
         return (0, i.jsx)(e, (r = function(e) {
@@ -132,10 +128,7 @@ async function x(e) {
           return e
         }({}, n), l = l = {
           sourcePID: t,
-          selectSource: false,
-          guildId: s,
-          selectGuild: null == s,
-          analyticsLocation: p
+          selectSource: false
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -148,7 +141,7 @@ async function x(e) {
         }), r))
       }
     }, {
-      contextKey: null != O ? (0, o.VnL)(O) : true
+      contextKey: null != m ? (0, o.VnL)(m) : true
     })
   }
 }

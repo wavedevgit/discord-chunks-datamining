@@ -436,45 +436,6 @@ let C = {
       onConfirmSecondary: () => console.log("AlertModalWithSecondary: Secondary action confirmed")
     }))
   },
-  GoLiveConfirmModal: async () => {
-    let {
-      default: e
-    } = await Promise.all([require.e("38697"), require.e("4093"), require.e("8218")]).then(require.bind(require, 504580)), {
-      ApplicationStreamPresets: t,
-      ApplicationStreamResolutions: r,
-      ApplicationStreamFPS: i
-    } = await Promise.resolve().then(require.bind(require, 37113)), l = {
-      id: "screen:0:0",
-      name: "Entire Screen",
-      thumbnail: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
-      url: "screen:0:0"
-    };
-    return n => (0, a.jsx)(e, j(v({}, n), {
-      selectedSource: l,
-      selectedPreset: t.PRESET_VIDEO,
-      selectedResolution: r.RESOLUTION_1080,
-      selectedFPS: i.FPS_60,
-      sound: true,
-      previewDisabled: false,
-      selectedChannelId: "987654321",
-      sourceChanged: false,
-      selectGuild: false,
-      selectSource: false,
-      selectedGuildId: "123456789",
-      targetGuildPremiumTier: 2,
-      onChangeSelectedChannelId: e => console.log("Channel changed:", e),
-      onChangeSelectedFPS: e => console.log("FPS changed:", e),
-      onChangeSelectedPreset: e => console.log("Preset changed:", e),
-      onChangeSelectedResolution: e => console.log("Resolution changed:", e),
-      onChangeSelectedSource: (e, t) => console.log("Source changed:", e, t),
-      onChangeSource: () => console.log("Change source clicked"),
-      onChangeAudioDevice: e => console.log("Audio device changed:", e),
-      onChangeGuild: () => console.log("Change guild clicked"),
-      onChangeSound: e => console.log("Sound changed:", e),
-      onChangePreviewDisabled: e => console.log("Preview disabled changed:", e),
-      onClose: () => console.log("Go Live Confirm modal closed")
-    }))
-  },
   GuildDisableCommunicationModal: async () => {
     let {
       Button: e,

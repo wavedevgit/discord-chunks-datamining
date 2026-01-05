@@ -17,9 +17,9 @@ function l(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let c = Chunk37113.ApplicationStreamPresets.PRESET_VIDEO,
-  u = Chunk37113.ApplicationStreamResolutions.RESOLUTION_720,
-  d = Chunk37113.ApplicationStreamFPS.FPS_30,
+let c = Chunk37113.tI.PRESET_VIDEO,
+  u = Chunk37113.LY.RESOLUTION_720,
+  d = Chunk37113.ws.FPS_30,
   f = true;
 
 function p(e) {
@@ -44,7 +44,7 @@ class m extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t, n;
-      c = null != (t = e.preset) ? t : o.ApplicationStreamPresets.PRESET_VIDEO, u = e.resolution, d = e.fps, f = null == (n = e.soundshareEnabled) || n
+      c = null != (t = e.preset) ? t : o.tI.PRESET_VIDEO, u = e.resolution, d = e.fps, f = null == (n = e.soundshareEnabled) || n
     }
   }
   getState() {

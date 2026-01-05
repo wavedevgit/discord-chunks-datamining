@@ -108,9 +108,9 @@ function O() {
     n = Number(null != (e = Chunk433517.K.get(h)) ? module : 0);
   if (!exports || require >= g) return;
   let r = Chunk361291.Z.getState();
-  if (Chunk442837.preset !== Chunk37113.ApplicationStreamPresets.PRESET_CUSTOM) {
+  if (Chunk442837.preset !== Chunk37113.tI.PRESET_CUSTOM) {
     (0, Chunk872810.Rc)({
-      preset: Chunk37113.ApplicationStreamPresets.PRESET_AUTO,
+      preset: Chunk37113.tI.PRESET_AUTO,
       resolution: Chunk442837.resolution,
       frameRate: Chunk442837.fps,
       soundshareEnabled: Chunk442837.soundshareEnabled,

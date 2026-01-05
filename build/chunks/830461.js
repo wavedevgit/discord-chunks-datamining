@@ -1,12 +1,12 @@
-/** Chunk was on 44183 **/
+/** Chunk was on 46746 **/
 /** chunk id: 830461, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  _: () => s
+  _: () => l
 }), require("./388685.js");
 var Chunk224706 = require("./224706.js"),
   Chunk594190 = require("./594190.js"),
   Chunk823379 = require("./823379.js");
-async function s() {
+async function l() {
   let e = Chunk594190.ZP.getRunningGames();
   return (await Promise.all(module.map(async e => {
     let t;
@@ -18,11 +18,11 @@ async function s() {
     }
     let n = e.windowHandle,
       i = e.name,
-      l = t.icon;
-    return null != n && null != i && null != l ? {
+      s = t.icon;
+    return null != n && null != i && null != s ? {
       id: "window:".concat(n),
       name: i,
-      url: "data:image/bmp;base64,".concat(l)
+      url: "data:image/bmp;base64,".concat(s)
     } : null
   }))).filter(Chunk823379.lm)
 }

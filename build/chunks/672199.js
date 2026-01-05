@@ -45,13 +45,13 @@ function g(e, t, n, g) {
     },
     onConfirmClick: (e, t) => {
       let n = a.Z.getState().preset;
-      if (n === p.ApplicationStreamPresets.PRESET_DOCUMENTS) {
+      if (n === p.tI.PRESET_DOCUMENTS) {
         let {
           allowAutoQuality: e
         } = (0, l.IK)({
           location: "requestToStreamNotification"
         });
-        n = e ? p.ApplicationStreamPresets.PRESET_AUTO : p.ApplicationStreamPresets.PRESET_VIDEO
+        n = e ? p.tI.PRESET_AUTO : p.tI.PRESET_VIDEO
       }(0, o.Z)(u.Z.getTargetPID(), {
         preset: n
       }), b("request-to-stream"), i.Z.updateNotificationStatus(t)

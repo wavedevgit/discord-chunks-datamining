@@ -176,7 +176,8 @@ function ee(e) {
       onChange: g,
       permissionRender: m,
       className: J.permissionsForm,
-      hasBypassSlowmodePermission: s
+      hasBypassSlowmodePermission: s,
+      guildId: o
     }, n)), o === t.id ? null : (0, i.jsx)(f.Button, {
       variant: "critical-secondary",
       text: q.intl.format(q.t.txPV7k, {

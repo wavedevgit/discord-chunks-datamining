@@ -2,19 +2,16 @@
 /** chunk id: 37113, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ApplicationStreamFPS: () => l,
-  ApplicationStreamPresets: () => c,
-  ApplicationStreamResolutions: () => o,
   L9: () => u,
+  LY: () => o,
   ND: () => f,
-  WC: () => _,
   aW: () => s,
-  af: () => b,
-  k0: () => E,
-  km: () => g,
+  af: () => h,
+  km: () => m,
   no: () => d,
-  o6: () => h,
-  z8: () => m
+  o6: () => _,
+  tI: () => c,
+  ws: () => l
 }), require("./415506.js");
 var Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
@@ -168,17 +165,16 @@ function p(e, t) {
     }
   }
 }
-let _ = [p(720), p(1080), p(1440), p(0, () => Chunk388032.intl.string(Chunk388032.t.XjXqzh))],
-  m = [p(720), p(1080), p(1440)],
-  h = e => 0 === e ? a.intl.string(a.t.XjXqzh) : a.intl.formatToPlainString(a.t.TEOC0I, {
+p(720), p(1080), p(1440), p(0, () => Chunk388032.intl.string(Chunk388032.t.XjXqzh)), p(720), p(1080), p(1440);
+let _ = e => 0 === e ? a.intl.string(a.t.XjXqzh) : a.intl.formatToPlainString(a.t.TEOC0I, {
     resolution: e
   }),
-  g = [p(480, () => h(480)), p(720, () => h(720)), p(1080, () => h(1080)), p(1440, () => h(1440)), p(0, () => h(0))],
-  E = [p(15), p(30), p(60)],
-  b = [p(15, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["bW+JCW"], {
-    value: 15
-  })), p(30, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["bW+JCW"], {
-    value: 30
-  })), p(60, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["bW+JCW"], {
-    value: 60
-  }))]
+  m = [p(480, () => _(480)), p(720, () => _(720)), p(1080, () => _(1080)), p(1440, () => _(1440)), p(0, () => _(0))];
+p(15), p(30), p(60);
+let h = [p(15, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["bW+JCW"], {
+  value: 15
+})), p(30, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["bW+JCW"], {
+  value: 30
+})), p(60, () => Chunk388032.intl.formatToPlainString(Chunk388032.t["bW+JCW"], {
+  value: 60
+}))]

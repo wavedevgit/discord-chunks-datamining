@@ -24,7 +24,6 @@ require.d(exports, {
   Rd: () => en,
   Rt: () => eY,
   T4: () => K,
-  U2: () => B,
   UV: () => tU,
   UX: () => Q,
   Ue: () => eX,

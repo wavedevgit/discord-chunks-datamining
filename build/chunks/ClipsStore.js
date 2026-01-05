@@ -73,8 +73,8 @@ let y = "default",
     clipsEnabled: false,
     storageLocation: y,
     clipsQuality: {
-      resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1080,
-      frameRate: Chunk37113.ApplicationStreamFPS.FPS_30
+      resolution: Chunk37113.LY.RESOLUTION_1080,
+      frameRate: Chunk37113.ws.FPS_30
     },
     clipsLength: Chunk356659.OT.SECONDS_30,
     remindersEnabled: true,

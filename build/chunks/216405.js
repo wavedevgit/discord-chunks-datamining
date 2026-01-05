@@ -44,26 +44,26 @@ class T extends Chunk147913.Z {
       b = Chunk131951.Z.getGoLiveSource();
     if (null == Chunk580991 || null == b || !Chunk580991.hasActiveRemoteWants()) return;
     let T = Chunk361291.Z.getState();
-    if (T.preset !== Chunk37113.ApplicationStreamPresets.PRESET_AUTO) return;
+    if (T.preset !== Chunk37113.tI.PRESET_AUTO) return;
     if ((null == (e = Chunk199902.Z.getStreamerActiveStreamMetadata()) ? true : module.id) != null) return void S.info("Skipping auto quality checker for game stream.");
     let C = Chunk450109.Z.getAccumulatedPerformanceStats(Chunk580991.getMediaEngineConnectionId(), Chunk147913.ownerId, "long"),
       A = (null != (t = Chunk580991.analyticsContext.getDuration()) ? exports : 30) >= 30 * Chunk70956.Z.Millis.SECOND ? 30 : 15;
     if (null == C || C.numDatapoints < A) return;
     let N = Chunk594174.default.getCurrentUser(),
       P = Chunk430824.Z.getGuild(Chunk147913.guildId),
-      [R, w] = null != (n = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_DOCUMENTS, N, null == P ? true : P.premiumTier)) ? require : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE, Chunk37113.ApplicationStreamFPS.FPS_5],
-      [D, x] = null != (r = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_VIDEO, N, null == P ? true : P.premiumTier)) ? Chunk579092 : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_720, Chunk37113.ApplicationStreamFPS.FPS_30],
+      [R, w] = null != (n = (0, Chunk537413.Z)(Chunk37113.tI.PRESET_DOCUMENTS, N, null == P ? true : P.premiumTier)) ? require : [Chunk37113.LY.RESOLUTION_SOURCE, Chunk37113.ws.FPS_5],
+      [D, x] = null != (r = (0, Chunk537413.Z)(Chunk37113.tI.PRESET_VIDEO, N, null == P ? true : P.premiumTier)) ? Chunk579092 : [Chunk37113.LY.RESOLUTION_720, Chunk37113.ws.FPS_30],
       L = null;
     if (C.entropy < y && (T.resolution !== R || T.fps !== w) ? (S.info("Low entropy average, switching to screenshare preset."), L = {
         qualityOptions: {
-          preset: Chunk37113.ApplicationStreamPresets.PRESET_AUTO,
+          preset: Chunk37113.tI.PRESET_AUTO,
           resolution: R,
           frameRate: w
         },
         context: Chunk46973.Yn.STREAM
       }) : C.entropy > O && (T.resolution !== D || T.fps !== x) && (S.info("High entropy average, switching to video preset."), L = {
         qualityOptions: {
-          preset: Chunk37113.ApplicationStreamPresets.PRESET_AUTO,
+          preset: Chunk37113.tI.PRESET_AUTO,
           resolution: D,
           frameRate: x
         },

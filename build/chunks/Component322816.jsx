@@ -130,7 +130,7 @@ function w(e) {
       guild: t,
       role: n,
       locked: l
-    }), i.map((e, t) => (0, r.jsx)(g.Z, {
+    }), i.map((e, i) => (0, r.jsx)(g.Z, {
       className: I.permissionsForm,
       spec: e,
       permissions: n.permissions,
@@ -140,8 +140,9 @@ function w(e) {
         (0, x.lO)(n.id, e, t)
       },
       permissionRender: o,
-      hasBypassSlowmodePermission: a
-    }, t))]
+      hasBypassSlowmodePermission: a,
+      guildId: t.id
+    }, i))]
   })
 }
 

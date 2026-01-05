@@ -1,4 +1,4 @@
-/** Chunk was on 44183 **/
+/** Chunk was on 46746 **/
 /** chunk id: 152165, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk607070 = require("./607070.js"),
   Chunk766962 = require("./766962.js");
@@ -14,18 +14,18 @@ let d = Chunk473749.memo(function(e) {
   let {
     className: t,
     animated: n = false
-  } = e, l = i.useId();
+  } = e, s = i.useId();
 
   function d(e) {
-    return "".concat(l, "-").concat(e)
+    return "".concat(s, "-").concat(e)
   }
 
   function u(e) {
     return "url(#".concat(d(e), ")")
   }
-  let f = (0, o.e7)([a.Z], () => a.Z.useReducedMotion);
+  let f = (0, o.e7)([c.Z], () => c.Z.useReducedMotion);
   return (0, r.jsx)("svg", {
-    className: s()(c.nativePickerGuide, t),
+    className: l()(a.nativePickerGuide, t),
     width: "392",
     height: "254",
     viewBox: "0 0 392 254",
@@ -360,11 +360,11 @@ let d = Chunk473749.memo(function(e) {
           gradientUnits: "objectBoundingBox",
           gradientTransform: "translate(0 0)",
           children: [(0, r.jsx)("stop", {
-            className: c.screenIconHighlight_fill_g1_0,
+            className: a.screenIconHighlight_fill_g1_0,
             offset: "0%",
             stopColor: "#5f6be9"
           }), (0, r.jsx)("stop", {
-            className: c.screenIconHighlight_fill_g1_1,
+            className: a.screenIconHighlight_fill_g1_1,
             offset: "100%",
             stopColor: "#4d58ce"
           })]
@@ -483,11 +483,11 @@ let d = Chunk473749.memo(function(e) {
           gradientUnits: "objectBoundingBox",
           gradientTransform: "translate(0 0)",
           children: [(0, r.jsx)("stop", {
-            className: c.buttonOverWindowHighlight_fill_g1_0,
+            className: a.buttonOverWindowHighlight_fill_g1_0,
             offset: "0%",
             stopColor: "#606ceb"
           }), (0, r.jsx)("stop", {
-            className: c.buttonOverWindowHighlight_fill_g1_1,
+            className: a.buttonOverWindowHighlight_fill_g1_1,
             offset: "100%",
             stopColor: "#4b56cb"
           })]
@@ -543,13 +543,13 @@ let d = Chunk473749.memo(function(e) {
             })
           })]
         }), (0, r.jsx)("g", {
-          className: c.windowIcon_to,
+          className: a.windowIcon_to,
           transform: "translate(195.557999,127)",
           children: (0, r.jsx)("g", {
-            className: c.windowIcon_ts,
+            className: a.windowIcon_ts,
             transform: "scale(1,1)",
             children: (0, r.jsxs)("g", {
-              className: c.windowIcon,
+              className: a.windowIcon,
               transform: "translate(-195.557999,-127)",
               filter: u("filter4"),
               children: [(0, r.jsx)("rect", {
@@ -572,13 +572,13 @@ let d = Chunk473749.memo(function(e) {
             })
           })
         }), (0, r.jsx)("g", {
-          className: c.clydeIcon_to,
+          className: a.clydeIcon_to,
           transform: "translate(87,127)",
           children: (0, r.jsx)("g", {
-            className: c.clydeIcon_ts,
+            className: a.clydeIcon_ts,
             transform: "scale(1,1)",
             children: (0, r.jsxs)("g", {
-              className: c.clydeIcon,
+              className: a.clydeIcon,
               transform: "translate(-87,-127)",
               children: [(0, r.jsx)("rect", {
                 width: "86",
@@ -596,16 +596,16 @@ let d = Chunk473749.memo(function(e) {
             })
           })
         }), (0, r.jsx)("g", {
-          className: c.screenIcon_to,
+          className: a.screenIcon_to,
           transform: "translate(304,127)",
           children: (0, r.jsx)("g", {
-            className: c.screenIcon_ts,
+            className: a.screenIcon_ts,
             transform: "scale(1,1)",
             children: (0, r.jsxs)("g", {
-              className: c.screenIcon,
+              className: a.screenIcon,
               transform: "translate(-304,-127)",
               children: [(0, r.jsx)("rect", {
-                className: c.screenIconHighlight,
+                className: a.screenIconHighlight,
                 width: "86",
                 height: "86",
                 rx: "24",
@@ -626,10 +626,10 @@ let d = Chunk473749.memo(function(e) {
             })
           })
         }), (0, r.jsx)("g", {
-          className: c.windowCard_ts,
+          className: a.windowCard_ts,
           transform: "translate(194.2121,124.850005) scale(0.5,0.5)",
           children: (0, r.jsxs)("g", {
-            className: c.windowCard,
+            className: a.windowCard,
             transform: "translate(-109,-73.046998)",
             opacity: "0",
             children: [(0, r.jsxs)("g", {
@@ -737,14 +737,14 @@ let d = Chunk473749.memo(function(e) {
             })]
           })
         }), (0, r.jsx)("g", {
-          className: c.buttonOverWindow_ts,
+          className: a.buttonOverWindow_ts,
           transform: "translate(197,127) scale(0.8,0.8)",
           children: (0, r.jsxs)("g", {
-            className: c.buttonOverWindow,
+            className: a.buttonOverWindow,
             transform: "translate(-87,-127)",
             opacity: "0",
             children: [(0, r.jsx)("rect", {
-              className: c.buttonOverWindowHighlight,
+              className: a.buttonOverWindowHighlight,
               width: "86",
               height: "86",
               rx: "24",
@@ -764,13 +764,13 @@ let d = Chunk473749.memo(function(e) {
             })]
           })
         }), (0, r.jsx)("g", {
-          className: c.cursor_to,
+          className: a.cursor_to,
           transform: "translate(206.707,213.525767)",
           children: (0, r.jsx)("g", {
-            className: c.cursor_ts,
+            className: a.cursor_ts,
             transform: "scale(1,1)",
             children: (0, r.jsxs)("g", {
-              className: c.cursor,
+              className: a.cursor,
               transform: "translate(-206.5,-172.653503)",
               children: [(0, r.jsx)("path", {
                 d: "M194,187.542L194,153l25,25.06h-14.626l-.886.268L194,187.542Z",

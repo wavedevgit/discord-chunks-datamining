@@ -25,31 +25,31 @@ let T = (0, Chunk509613.Em)(Chunk313789.n.CLIPS_RESOLUTION, {
   },
   useOptions: () => [{
     id: "480p",
-    value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_480,
+    value: Chunk37113.LY.RESOLUTION_480,
     label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
-      resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_480
+      resolution: Chunk37113.LY.RESOLUTION_480
     })
   }, {
     id: "720p",
-    value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_720,
+    value: Chunk37113.LY.RESOLUTION_720,
     label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
-      resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_720
+      resolution: Chunk37113.LY.RESOLUTION_720
     })
   }, {
     id: "1080p",
-    value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1080,
+    value: Chunk37113.LY.RESOLUTION_1080,
     label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
-      resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1080
+      resolution: Chunk37113.LY.RESOLUTION_1080
     })
   }, {
     id: "1440p",
-    value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1440,
+    value: Chunk37113.LY.RESOLUTION_1440,
     label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
-      resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1440
+      resolution: Chunk37113.LY.RESOLUTION_1440
     })
   }, {
     id: "source",
-    value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE,
+    value: Chunk37113.LY.RESOLUTION_SOURCE,
     label: Chunk388032.intl.string(Chunk388032.t.XjXqzh)
   }]
 })

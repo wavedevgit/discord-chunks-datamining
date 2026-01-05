@@ -52,32 +52,33 @@ class m extends Chunk473749.PureComponent {
       permissions: a,
       locked: c,
       permissionRender: u,
-      hasBypassSlowmodePermission: m
-    } = this.props, b = null == u ? true : u(l), p = !!(c || b), g = "string" == typeof b && "" !== b ? o.t6m : true, f = null == a ? (0, i.jsx)(d.Z, {
+      hasBypassSlowmodePermission: m,
+      guildId: b
+    } = this.props, p = null == u ? true : u(l), g = !!(c || p), f = "string" == typeof p && "" !== p ? o.t6m : true, h = null == a ? (0, i.jsx)(d.Z, {
       label: n,
       description: (0, s._u)(r),
-      icon: g,
-      disabled: p,
+      icon: f,
+      disabled: g,
       value: this.getOverwriteValue(l),
       onChange: e => this.handleChange(l, e)
     }, String(l)) : (0, i.jsx)(o.rsf, {
       label: n,
       description: (0, s._u)(r),
-      icon: g,
-      disabled: p,
+      icon: f,
+      disabled: g,
       checked: this.getPermissionValue(l, a),
       onChange: e => this.handleChange(l, e)
-    }, String(l)), h = (0, s.ih)(l, m);
+    }, String(l)), x = (0, s.ih)(l, m, b);
     return (0, i.jsxs)(i.Fragment, {
       children: [t > 0 && (0, i.jsx)(o.izJ, {}), (0, i.jsxs)(o.Kqy, {
         gap: 8,
-        children: [f, null != h && (0, i.jsx)(o.Wn, {
+        children: [h, null != x && (0, i.jsx)(o.Wn, {
           messageType: o.QYI.WARNING,
-          children: h
-        }), "string" == typeof b && "" !== b && (0, i.jsx)(o.Text, {
+          children: x
+        }), "string" == typeof p && "" !== p && (0, i.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "text-feedback-critical",
-          children: b
+          children: p
         })]
       })]
     })

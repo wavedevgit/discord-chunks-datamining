@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 197941, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => O
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -9,6 +9,7 @@ var Chunk243814 = require("./243814.js"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
   Chunk872810 = require("./872810.js"),
+  Chunk100527 = require("./100527.js"),
   Chunk594190 = require("./594190.js"),
   Chunk989941 = require("./989941.js"),
   Chunk173507 = require("./173507.jsx"),
@@ -20,7 +21,7 @@ var Chunk243814 = require("./243814.js"),
   Chunk736045 = require("./736045.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
-let E = {
+let O = {
   [Chunk981631.Etm.TOGGLE_VIDEO]: {
     scope: {
       [Chunk186901.Gp.ALL]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VIDEO_WRITE]
@@ -34,7 +35,7 @@ let E = {
     scope: {
       [Chunk186901.Gp.ALL]: [Chunk243814.x.RPC, Chunk243814.x.RPC_SCREENSHARE_WRITE]
     },
-    validation: e => (0, h.Z)(e).optional().keys({
+    validation: e => (0, m.Z)(e).optional().keys({
       pid: e.number().optional().min(0)
     }),
     handler(e) {
@@ -42,17 +43,17 @@ let E = {
         args: {
           pid: t
         }
-      } = e, i = d.Z.getCurrentUserActiveStream(), a = d.Z.getStreamerActiveStreamMetadata(), u = (0, c.Z)(s.ZP, f.Z), p = (0, m.Z)();
-      null != p && (null != t && null != a && a.pid !== t && (0, g.isWindows)() ? (0, o.WH)(p.guild_id, p.id, {
+      } = e, i = p.Z.getCurrentUserActiveStream(), a = p.Z.getStreamerActiveStreamMetadata(), d = (0, u.Z)(c.ZP, g.Z), f = (0, b.Z)();
+      null != f && (null != t && null != a && a.pid !== t && (0, h.isWindows)() ? (0, o.WH)(f.guild_id, f.id, {
         pid: t
-      }) : null != i ? (0, o.L6)(false) : null != t && (0, g.isWindows)() ? (0, o.WH)(p.guild_id, p.id, {
+      }) : null != i ? (0, o.L6)(false) : null != t && (0, h.isWindows)() ? (0, o.WH)(f.guild_id, f.id, {
         pid: t
-      }) : null != u ? (0, o.WH)(p.guild_id, p.id, {
-        pid: u.pid
+      }) : null != d ? (0, o.WH)(f.guild_id, f.id, {
+        pid: d.pid
       }) : (0, l.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("4093"), n.e("44183")]).then(n.bind(n, 60594));
+        } = await n.e("46746").then(n.bind(n, 60594));
         return t => {
           var n, i;
           return (0, r.jsx)(e, (n = function(e) {
@@ -73,8 +74,7 @@ let E = {
             }
             return e
           }({}, t), i = i = {
-            guildId: p.guild_id,
-            analyticsLocation: _.Sbl.ACTIVITY_RPC
+            analyticsLocations: [s.Z.RPC]
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

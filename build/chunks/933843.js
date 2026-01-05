@@ -6,5 +6,5 @@ require.d(exports, {
 var Chunk37113 = require("./37113.js");
 
 function i(e, t) {
-  return e === r.ApplicationStreamResolutions.RESOLUTION_720 && t !== r.ApplicationStreamFPS.FPS_60
+  return e === r.LY.RESOLUTION_720 && t !== r.ws.FPS_60
 }
