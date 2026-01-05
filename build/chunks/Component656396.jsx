@@ -1,7 +1,7 @@
 /** Chunk was on 41700 **/
 /** chunk id: 656396, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => S
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,7 +15,6 @@ var Chunk54381 = require("./54381.js"),
   Chunk695346 = require("./695346.js"),
   Chunk63063 = require("./63063.js"),
   Chunk607802 = require("./607802.js"),
-  Chunk945577 = require("./945577.js"),
   Chunk28964 = require("./28964.js"),
   Chunk611004 = require("./611004.jsx"),
   Chunk770092 = require("./770092.js"),
@@ -26,7 +25,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk560911 = require("./560911.js");
 
-function _(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -45,7 +44,7 @@ function _(e) {
   return e
 }
 
-function S(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,7 +57,7 @@ function S(e, t) {
   }), e
 }
 
-function E(e) {
+function S(e) {
   let {
     searchContext: t,
     searchMode: n,
@@ -67,118 +66,84 @@ function E(e) {
     isIndexing: c,
     isSearching: p,
     documentsIndexed: h,
-    selectedChannelId: O
-  } = e, _ = (0, m.kU)({
+    selectedChannelId: y
+  } = e, I = (0, g.kU)({
     location: "SearchHeader"
-  }), S = (0, y.I)(t), {
-    totalFilters: E
-  } = (0, x.p4)(S, t), P = i.useMemo(() => {
-    if (t.type === j.aib.DMS) {
+  }), _ = (0, b.I)(t), {
+    totalFilters: S
+  } = (0, O.p4)(_, t), Z = i.useMemo(() => {
+    if (t.type === x.aib.DMS) {
       var e, n;
-      let t = null != (n = null == (e = (0, f.$G)(S).channel_id) ? true : e.length) ? n : 0;
-      return t > 0 ? C.intl.format(C.t.A2dqWG, {
+      let t = null != (n = null == (e = (0, f.$G)(_).channel_id) ? true : e.length) ? n : 0;
+      return t > 0 ? v.intl.format(v.t.A2dqWG, {
         filterCount: t
-      }) : C.intl.string(C.t.tc619d)
+      }) : v.intl.string(v.t.tc619d)
     }
     return null
-  }, [t.type, S]), [T, N] = i.useState(null), R = i.useMemo(() => p ? [] : [s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [p]), [D, L] = (0, u.US)(R), M = D === s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, k = i.useCallback(e => {
-    null != e && M && L(v.L.USER_DISMISS), N(e)
-  }, [L, M]), U = i.useCallback(e => {
-    L("user:explicit" === e ? v.L.USER_DISMISS : v.L.AUTO_DISMISS)
-  }, [L]), G = i.useCallback(() => {
-    k(null), b.Z.openSearchFiltersModal(t)
-  }, [t, k]), H = i.useMemo(() => E > 0 ? C.intl.format(C.t.uaR4sI, {
-    filterCount: E
-  }) : C.intl.string(C.t.UdhTtk), [E]), F = (0, g.U)({
-    location: "SearchHeader"
-  }), B = t.type === j.aib.DMS || t.type === j.aib.CHANNEL, V = i.useMemo(() => _ && F ? (0, r.jsxs)("div", {
-    className: I.searchModeAndFiltersContainer,
+  }, [t.type, _]), [P, T] = i.useState(null), N = i.useMemo(() => p ? [] : [s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [p]), [A, D] = (0, u.US)(N), L = A === s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, M = i.useCallback(e => {
+    null != e && L && D(j.L.USER_DISMISS), T(e)
+  }, [D, L]), k = i.useCallback(e => {
+    D("user:explicit" === e ? j.L.USER_DISMISS : j.L.AUTO_DISMISS)
+  }, [D]), U = i.useCallback(() => {
+    M(null), m.Z.openSearchFiltersModal(t)
+  }, [t, M]), G = i.useMemo(() => S > 0 ? v.intl.format(v.t.uaR4sI, {
+    filterCount: S
+  }) : v.intl.string(v.t.UdhTtk), [S]), H = t.type === x.aib.DMS || t.type === x.aib.CHANNEL, F = i.useMemo(() => I ? (0, r.jsxs)("div", {
+    className: C.searchModeAndFiltersContainer,
     children: [(0, r.jsx)(d.Button, {
       variant: "secondary",
-      onClick: G,
-      text: H,
+      onClick: U,
+      text: G,
       icon: d.gXV,
       size: "sm"
-    }), (0, r.jsx)(A, {
+    }), (0, r.jsx)(w, {
       searchMode: n,
       onSearchModeChange: l,
-      isPopoutOpen: "sort" === T,
-      setOpenPopout: k
-    }), B && (0, r.jsx)(w, {
+      isPopoutOpen: "sort" === P,
+      setOpenPopout: M
+    }), H && (0, r.jsx)(R, {
       searchContext: t,
-      selectedChannelId: O,
-      isPopoutOpen: "settings" === T,
-      setOpenPopout: k,
-      isPopoverVisible: M,
-      onPopoverRequestClose: U
+      selectedChannelId: y,
+      isPopoutOpen: "settings" === P,
+      setOpenPopout: M,
+      isPopoverVisible: L,
+      onPopoverRequestClose: k
     })]
-  }) : _ ? (0, r.jsxs)("div", {
-    className: I.searchModeAndFiltersContainer,
-    children: [(0, r.jsx)(d.Button, {
-      variant: "secondary",
-      onClick: G,
-      text: H,
-      icon: d.gXV,
-      size: "sm"
-    }), (0, r.jsx)(A, {
+  }) : (0, r.jsxs)("div", {
+    className: C.searchModeAndFiltersContainer,
+    children: [(0, r.jsx)(w, {
       searchMode: n,
       onSearchModeChange: l,
-      isPopoutOpen: "sort" === T,
-      setOpenPopout: k
-    })]
-  }) : F ? (0, r.jsxs)("div", {
-    className: I.searchModeAndFiltersContainer,
-    children: [(0, r.jsx)(A, {
-      searchMode: n,
-      onSearchModeChange: l,
-      isPopoutOpen: "sort" === T,
-      setOpenPopout: k
-    }), B && (0, r.jsx)(w, {
+      isPopoutOpen: "sort" === P,
+      setOpenPopout: M
+    }), H && (0, r.jsx)(R, {
       searchContext: t,
-      selectedChannelId: O,
-      isPopoutOpen: "settings" === T,
-      setOpenPopout: k,
-      isPopoverVisible: M,
-      onPopoverRequestClose: U
+      selectedChannelId: y,
+      isPopoutOpen: "settings" === P,
+      setOpenPopout: M,
+      isPopoverVisible: L,
+      onPopoverRequestClose: k
     })]
-  }) : (0, r.jsxs)(d.njP, {
-    orientation: "horizontal",
-    className: I.searchHeaderTabList,
-    selectedItem: n,
-    onItemSelect: l,
-    children: [(0, r.jsx)(d.njP.Item, {
-      className: I.searchHeaderTab,
-      id: j.QIO.NEWEST,
-      children: C.intl.string(C.t.rLjqbS)
-    }), (0, r.jsx)(d.njP.Item, {
-      className: I.searchHeaderTab,
-      id: j.QIO.OLDEST,
-      children: C.intl.string(C.t.a1BaUr)
-    }), (0, r.jsx)(d.njP.Item, {
-      className: I.searchHeaderTab,
-      id: j.QIO.MOST_RELEVANT,
-      children: C.intl.string(C.t.FtR97k)
-    })]
-  }), [H, G, _, T, F, B, l, t, n, O, M, k, U]);
+  }), [G, U, I, P, H, l, t, n, y, L, M, k]);
   return (0, r.jsxs)("header", {
-    className: a()(I.searchHeader, {
-      [I.searchHeaderWithSubtitle]: null != P
+    className: a()(C.searchHeader, {
+      [C.searchHeaderWithSubtitle]: null != Z
     }),
     children: [(0, r.jsx)("div", {
-      className: I.totalResults,
+      className: C.totalResults,
       role: "status",
-      children: (0, r.jsx)(Z, {
+      children: (0, r.jsx)(E, {
         totalResults: o,
-        subtitle: P,
+        subtitle: Z,
         isIndexing: c,
         isSearching: p,
         documentsIndexed: h
       })
-    }), V]
+    }), F]
   })
 }
 
-function Z(e) {
+function E(e) {
   let {
     totalResults: t,
     subtitle: n,
@@ -186,15 +151,15 @@ function Z(e) {
     isIndexing: l,
     documentsIndexed: a
   } = e;
-  return l ? (0, r.jsx)(T, {
+  return l ? (0, r.jsx)(P, {
     documentsIndexed: a
-  }) : i ? (0, r.jsx)(N, {}) : (0, r.jsx)(R, {
+  }) : i ? (0, r.jsx)(T, {}) : (0, r.jsx)(N, {
     totalResults: t,
     subtitle: n
   })
 }
 
-function P() {
+function Z() {
   return (0, Chunk54381.jsx)("div", {
     className: Chunk560911.spinnerWrapper,
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {
@@ -205,53 +170,53 @@ function P() {
   })
 }
 
-function T(e) {
+function P(e) {
   let {
     documentsIndexed: t
   } = e;
   return (0, r.jsx)(c.u, {
     asContainer: true,
-    text: C.intl.formatToPlainString(C.t["4Y3O+O"], {
+    text: v.intl.formatToPlainString(v.t["4Y3O+O"], {
       count: null != t ? t : ""
     }),
     children: (0, r.jsxs)("div", {
-      className: I.totalResultsWrapper,
+      className: C.totalResultsWrapper,
       children: [(0, r.jsx)(d.Text, {
         variant: "text-md/medium",
         color: "text-muted",
         children: (0, r.jsx)(d.Anchor, {
-          className: I.helpdeskLink,
-          href: h.Z.getArticleURL(j.BhN.SEARCH_INDEXING),
-          children: C.intl.string(C.t["G3EA+4"])
+          className: C.helpdeskLink,
+          href: h.Z.getArticleURL(x.BhN.SEARCH_INDEXING),
+          children: v.intl.string(v.t["G3EA+4"])
         })
-      }), (0, r.jsx)(P, {})]
+      }), (0, r.jsx)(Z, {})]
     })
   })
 }
 
-function N() {
+function T() {
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       color: "text-default",
       children: Chunk388032.intl.string(Chunk388032.t.uixzLf)
-    }), (0, Chunk54381.jsx)(P, {})]
+    }), (0, Chunk54381.jsx)(Z, {})]
   })
 }
 
-function R(e) {
+function N(e) {
   let {
     totalResults: t,
     subtitle: n
   } = e, i = (0, r.jsx)(d.Text, {
     variant: "text-md/medium",
     color: "text-strong",
-    children: C.intl.format(C.t.ZGVL3g, {
+    children: v.intl.format(v.t.ZGVL3g, {
       count: t
     })
   });
   return null != n ? (0, r.jsxs)("div", {
-    className: I.totalResultsWithSubtitle,
+    className: C.totalResultsWithSubtitle,
     children: [i, (0, r.jsx)(d.Text, {
       variant: "text-xs/medium",
       color: "text-subtle",
@@ -260,7 +225,7 @@ function R(e) {
   }) : i
 }
 
-function w(e) {
+function R(e) {
   let {
     searchContext: t,
     selectedChannelId: n,
@@ -270,26 +235,26 @@ function w(e) {
     isPopoverVisible: c
   } = e, u = i.useRef(null), h = p.rR.useSetting(), f = i.useCallback(e => {
     if (h !== e) {
-      if ((0, O.yn)({
+      if ((0, y.yn)({
           searchContext: t,
           prevIsCrossDMSettingEnabled: p.rR.getSetting(),
           isCrossDMSettingEnabled: e,
-          location: O.Ix.SEARCH_HEADER
+          location: y.Ix.SEARCH_HEADER
         }), e) {
         let e = {
-          type: j.aib.DMS
+          type: x.aib.DMS
         };
-        b.Z.transitionStateToSearchContext(t, e, b.Z.cleanUpPrivateChannelSearchState)
+        m.Z.transitionStateToSearchContext(t, e, m.Z.cleanUpPrivateChannelSearchState)
       } else {
         let e = {
-          type: j.aib.CHANNEL,
+          type: x.aib.CHANNEL,
           channelId: n
         };
-        b.Z.transitionStateToSearchContext(t, e)
+        m.Z.transitionStateToSearchContext(t, e)
       }
       a(null), p.rR.updateSetting(e)
     }
-  }, [h, a, t, n]), [g, m] = i.useMemo(() => [h ? C.intl.string(C.t["8lklch"]) : C.intl.string(C.t.ji3jTF), h ? C.intl.string(C.t.RMQZCa) : C.intl.string(C.t["v/PagC"])], [h]), y = i.useMemo(() => ({
+  }, [h, a, t, n]), [g, b] = i.useMemo(() => [h ? v.intl.string(v.t["8lklch"]) : v.intl.string(v.t.ji3jTF), h ? v.intl.string(v.t.RMQZCa) : v.intl.string(v.t["v/PagC"])], [h]), O = i.useMemo(() => ({
     align: "end"
   }), []);
   return (0, r.jsxs)(r.Fragment, {
@@ -307,34 +272,34 @@ function w(e) {
         return (0, r.jsx)(d.v2r, {
           navId: "search-settings-cog",
           onClose: t,
-          "aria-label": C.intl.string(C.t.fb59v0),
+          "aria-label": v.intl.string(v.t.fb59v0),
           onSelect: () => a(null),
           children: (0, r.jsxs)(d.kSQ, {
-            label: C.intl.string(C.t["/tMwrA"]),
+            label: v.intl.string(v.t["/tMwrA"]),
             children: [(0, r.jsx)(d.k5B, {
               id: "xdm-search-disabled",
               group: "xdm-search-items",
-              label: C.intl.string(C.t.jRkYAh),
+              label: v.intl.string(v.t.jRkYAh),
               checked: !h,
               action: () => f(false)
             }), (0, r.jsx)(d.k5B, {
               id: "xdm-search-enabled",
               group: "xdm-search-items",
-              label: C.intl.string(C.t["lWpJ/t"]),
+              label: v.intl.string(v.t["lWpJ/t"]),
               checked: h,
               action: () => f(true)
             })]
           }, "xdm-search-items")
         })
       },
-      children: e => (0, r.jsx)(d.hU, S(_({}, e), {
+      children: e => (0, r.jsx)(d.hU, _(I({}, e), {
         buttonRef: u,
         variant: "secondary",
         icon: d.ewm,
         onClick: () => {
           a(l ? null : "settings")
         },
-        "aria-label": C.intl.string(C.t["3D5yo/"]),
+        "aria-label": v.intl.string(v.t["3D5yo/"]),
         size: "sm"
       }))
     }), (0, r.jsx)(o.J2, {
@@ -342,28 +307,28 @@ function w(e) {
       shouldShow: c,
       onRequestClose: s,
       title: g,
-      body: m,
-      caretConfig: y,
+      body: b,
+      caretConfig: O,
       badge: "new"
     })]
   })
 }
 
-function A(e) {
+function w(e) {
   let {
     searchMode: t,
     onSearchModeChange: n,
     isPopoutOpen: l,
     setOpenPopout: a
   } = e, s = i.useRef(null), o = i.useMemo(() => [{
-    label: C.intl.string(C.t.CbaapP),
-    value: j.QIO.NEWEST
+    label: v.intl.string(v.t.CbaapP),
+    value: x.QIO.NEWEST
   }, {
-    label: C.intl.string(C.t.OukXZj),
-    value: j.QIO.OLDEST
+    label: v.intl.string(v.t.OukXZj),
+    value: x.QIO.OLDEST
   }, {
-    label: C.intl.string(C.t.q8gB52),
-    value: j.QIO.MOST_RELEVANT
+    label: v.intl.string(v.t.q8gB52),
+    value: x.QIO.MOST_RELEVANT
   }], []), c = i.useCallback(e => {
     a(null), n(e)
   }, [a, n]);
@@ -381,7 +346,7 @@ function A(e) {
       return (0, r.jsx)(d.v2r, {
         navId: "search-result-sort-menu",
         onClose: n,
-        "aria-label": C.intl.string(C.t.utp2hS),
+        "aria-label": v.intl.string(v.t.utp2hS),
         onSelect: () => a(null),
         children: (0, r.jsx)(d.kSQ, {
           children: o.map(e => {
@@ -400,15 +365,15 @@ function A(e) {
         }, "sort-by")
       })
     },
-    children: e => (0, r.jsx)(d.Button, S(_({}, e), {
+    children: e => (0, r.jsx)(d.Button, _(I({}, e), {
       buttonRef: s,
       variant: "secondary",
       icon: d.uVW,
       onClick: () => {
         a(l ? null : "sort")
       },
-      text: C.intl.string(C.t.XvNMNk),
-      "aria-label": C.intl.string(C.t.XvNMNk),
+      text: v.intl.string(v.t.XvNMNk),
+      "aria-label": v.intl.string(v.t.XvNMNk),
       size: "sm"
     }))
   })

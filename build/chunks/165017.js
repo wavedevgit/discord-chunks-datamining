@@ -2,7 +2,7 @@
 /** chunk id: 165017, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => f
+  H: () => d
 });
 var Chunk498607 = require("./498607.js"),
   i = require.n(Chunk498607),
@@ -11,29 +11,26 @@ var Chunk498607 = require("./498607.js"),
   Chunk592125 = require("./592125.js"),
   Chunk430824 = require("./430824.js"),
   Chunk914010 = require("./914010.js"),
-  Chunk945577 = require("./945577.js"),
   Chunk981631 = require("./981631.js");
 
-function f(e) {
+function d(e) {
   let {
     guildId: t,
     channelId: n
-  } = e, r = (0, u.U)({
-    location: "useDesktopSearchContext"
-  }), f = o.rR.useSetting(), p = r && f;
+  } = e, r = o.rR.useSetting();
   return (0, a.e7)([l.Z, s.Z, c.Z], () => {
     let e = l.Z.getGuild(t),
-      r = s.Z.getChannel(n);
-    return c.Z.getGuildId() === d.I_8 ? {
-      type: d.aib.FAVORITES
+      i = s.Z.getChannel(n);
+    return c.Z.getGuildId() === u.I_8 ? {
+      type: u.aib.FAVORITES
     } : null != t && null != e ? {
-      type: d.aib.GUILD,
+      type: u.aib.GUILD,
       guildId: t
-    } : null != n && null != r && r.isPrivate() ? p ? {
-      type: d.aib.DMS
+    } : null != n && null != i && i.isPrivate() ? r ? {
+      type: u.aib.DMS
     } : {
-      type: d.aib.CHANNEL,
+      type: u.aib.CHANNEL,
       channelId: n
     } : null
-  }, [n, t, p], i())
+  }, [n, t, r], i())
 }

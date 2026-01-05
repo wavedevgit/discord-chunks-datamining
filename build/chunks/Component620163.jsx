@@ -163,9 +163,8 @@ let eZ = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
       activeInputProfile: tt,
       isInputProfileCustom: tn,
       isChatMentionSuggestionsSettingEnabled: tr,
-      isCrossDMSearchEnabledSettingVisible: ti,
-      isRedesignedNotificationsEnabled: ta,
-      isHDRAccessibilitySettingExperimentEnabled: to
+      isRedesignedNotificationsEnabled: ti,
+      isHDRAccessibilitySettingExperimentEnabled: ta
     } = e;
     return Object.freeze({
       [eR.s6.SEARCH_NO_RESULTS]: {
@@ -886,7 +885,7 @@ let eZ = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eD.oAB.ACCESSIBILITY,
         searchableTitles: [eL.intl.string(eL.t.qvTIwX)],
         parent: eR.s6.ACCESSIBILITY_TEXT_TO_SPEECH,
-        predicate: () => !ta
+        predicate: () => !ti
       },
       [eR.s6.ACCESSIBILITY_TEXT_TO_SPEECH_RATE]: {
         section: eD.oAB.ACCESSIBILITY,
@@ -897,7 +896,7 @@ let eZ = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
         section: eD.oAB.ACCESSIBILITY,
         searchableTitles: [eL.intl.string(eL.t.nemtgW), "HDR", eL.intl.string(eL.t["O/Gjvn"])],
         parent: eR.s6.ACCESSIBILITY,
-        predicate: () => to
+        predicate: () => ta
       },
       [eR.s6.ACCESSIBILITY_APPEARANCE_UPSELL]: {
         section: eD.oAB.ACCESSIBILITY,
@@ -1186,14 +1185,12 @@ let eZ = () => [Chunk704215.z.CLIENT_THEMES_SETTINGS_BADGE, Chunk704215.z.DEKSTO
       [eR.s6.MESSAGE_SEARCH]: {
         section: eD.oAB.TEXT,
         searchableTitles: [eL.intl.string(eL.t.VYODPD)],
-        parent: eR.s6.CHAT,
-        predicate: () => ti
+        parent: eR.s6.CHAT
       },
       [eR.s6.MESSAGE_SEARCH_ALL_DMS]: {
         section: eD.oAB.TEXT,
         searchableTitles: [eL.intl.string(eL.t["t4+fbe"])],
-        parent: eR.s6.MESSAGE_SEARCH,
-        predicate: () => ti
+        parent: eR.s6.MESSAGE_SEARCH
       },
       [eR.s6.CHAT_INLINE_MEDIA]: {
         section: eD.oAB.TEXT,
