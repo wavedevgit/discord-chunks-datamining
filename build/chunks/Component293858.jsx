@@ -64,8 +64,8 @@ function T(e) {
       selectedPlan: Z,
       selectedSkuId: D,
       step: F,
-      updatedSubscription: G,
-      startingPremiumSubscriptionPlanIdRef: B,
+      updatedSubscription: B,
+      startingPremiumSubscriptionPlanIdRef: G,
       startingFractionalPremiumEndsAtRef: U,
       isPremiumGroupPurchase: H
     } = (0, v.JL)(),
@@ -94,14 +94,14 @@ function T(e) {
   }, [i, k]);
   l.useEffect(() => {
     function e() {
-      H && null != G && G.hasAnyPremiumGroup && (0, o.ZDy)(async () => {
+      H && null != B && B.hasAnyPremiumGroup && (0, o.ZDy)(async () => {
         let {
           default: e
         } = await n.e("86948").then(n.bind(n, 153241));
         return t => {
           var n, l;
           return (0, r.jsx)(e, (n = I({}, t), l = l = {
-            subscription: G
+            subscription: B
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -118,7 +118,7 @@ function T(e) {
     return f.S.subscribe(E.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
       f.S.unsubscribe(E.CkL.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
     }
-  }, [H, G]), l.useEffect(() => {
+  }, [H, B]), l.useEffect(() => {
     !z || null == K || null == W || V || Y || (0, g.pO)(K) || q({
       onSubscriptionConfirmation: k
     })
@@ -128,17 +128,17 @@ function T(e) {
     })
   }, [ee, $]);
   let ea = null != _ ? h.PI.DEEPLINK_TO_DESKTOP_APP : true;
-  if (null != C) t = C(Z, ei, G);
+  if (null != C) t = C(Z, ei, B);
   else if (z) t = (0, r.jsx)(h.TB, {
     planId: Z.id,
     onClose: ei
   });
   else {
-    let e = B.current === Z.id ? {
+    let e = G.current === Z.id ? {
       postSuccessGuild: N
     } : {
       followupSKUInfo: M,
-      startingPremiumSubscriptionPlanId: B.current,
+      startingPremiumSubscriptionPlanId: G.current,
       isDowngrade: null != A && (0, y.GY)(A, Z.id, T)
     };
     t = (0, r.jsx)(h.ZP, I({

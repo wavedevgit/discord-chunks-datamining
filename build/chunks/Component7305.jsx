@@ -60,9 +60,9 @@ function F(e) {
   }
   return e
 }
-let G = [Chunk409813.h8.PLAN_SELECT, Chunk409813.h8.ADD_PAYMENT_STEPS, Chunk409813.h8.REVIEW, Chunk409813.h8.CONFIRM];
+let B = [Chunk409813.h8.PLAN_SELECT, Chunk409813.h8.ADD_PAYMENT_STEPS, Chunk409813.h8.REVIEW, Chunk409813.h8.CONFIRM];
 
-function B(e) {
+function G(e) {
   let {
     analyticsLocation: t,
     analyticsObject: n,
@@ -87,9 +87,9 @@ function B(e) {
     skuId: Z,
     returnRef: D,
     skipConfirm: F = false,
-    continueSessionToInitialStep: G
+    continueSessionToInitialStep: B
   } = e, {
-    analyticsLocations: B
+    analyticsLocations: G
   } = (0, u.ZP)();
   l.useEffect(() => {
     h.Z.isLoadedForPremiumSKUs() || a.Z.wait(() => (0, s.Y2)())
@@ -104,11 +104,11 @@ function B(e) {
     giftRecipient: V
   } = (0, y.wD)(), Y = K && (0, g.pO)(V) && U === v.h8.PLAN_SELECT, q = (0, p.I)(K, H), J = z === O.A.PURCHASING;
   return (0, r.jsx)(I.Z, {
-    isConfirmationStep: U === v.h8.CONFIRM && null == G && null == T,
+    isConfirmationStep: U === v.h8.CONFIRM && null == B && null == T,
     isEligibleForWowMoment: q,
     shouldPrefetchWowMoment: J,
     children: (0, r.jsx)(S.PaymentModal, {
-      analyticsLocations: B,
+      analyticsLocations: G,
       analyticsLocation: t,
       analyticsObject: n,
       analyticsSourceLocation: i,
@@ -138,7 +138,7 @@ function B(e) {
       isDynamicModal: Y,
       returnRef: D,
       skipConfirm: F,
-      continueSessionToInitialStep: G
+      continueSessionToInitialStep: B
     })
   })
 }
@@ -162,7 +162,7 @@ function U(e) {
     referralTrialOfferId: a
   }), h = (0, C.Fv)(m), f = (0, d.id)(u, c, p);
   return (0, r.jsx)(x.J, (t = F({}, e), n = n = {
-    breadcrumbSteps: G,
+    breadcrumbSteps: B,
     onReturn: () => {
       let e = Object.values(s),
         t = e.length < 1 && null == l ? v.h8.PLAN_SELECT : v.h8.REVIEW;
@@ -260,10 +260,11 @@ function K(e) {
       isGift: v,
       loadId: O,
       referralCode: S,
-      subscriptionTier: x
+      subscriptionTier: x,
+      referralTrialOfferId: P
     } = e;
   if (null != x && !Object.values(L.Si).includes(x)) throw Error("subscriptionTier must be a premium subscription");
-  let P = (0, m.ao)({
+  let E = (0, m.ao)({
     location: "PremiumPaymentSelect",
     giftRecipient: h,
     isGift: null != v && v
@@ -273,12 +274,13 @@ function K(e) {
     children: (0, r.jsx)(j.PaymentContextProvider, {
       loadId: O,
       activeSubscription: null != e.subscription ? e.subscription : t,
-      stepConfigs: H(P),
+      stepConfigs: H(E),
       skuIDs: [...L.YQ],
       isGift: v,
       defaultPlanId: null != n ? n : s,
       referralCode: S,
       wasTier2PremiumBeforePurchase: e.wasTier2PremiumBeforePurchase,
+      referralTrialOfferId: P,
       children: (0, r.jsx)(b.c1, {
         confirmationFooter: a,
         children: (0, r.jsx)(y.KB, {
@@ -287,7 +289,7 @@ function K(e) {
           giftMessage: p,
           giftStyle: g,
           giftingOrigin: d,
-          children: (0, r.jsx)(B, F({}, e))
+          children: (0, r.jsx)(G, F({}, e))
         })
       })
     })

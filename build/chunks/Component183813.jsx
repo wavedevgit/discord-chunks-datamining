@@ -39,13 +39,13 @@ function P(e) {
     selectedGiftingPromotionReward: _,
     claimableRewards: A,
     claimableVariants: R
-  } = (0, j.wD)(), L = (0, d.Z)(), Z = (0, s.e7)([g.default], () => g.default.getCurrentUser()), D = (0, p.ZP)(A, R, _), [F, G] = l.useState(null == D || null == (t = D.defaultHighlightedReward) ? true : t.skuId), [B, U] = l.useState(false), H = (0, m.Z)({
+  } = (0, j.wD)(), L = (0, d.Z)(), Z = (0, s.e7)([g.default], () => g.default.getCurrentUser()), D = (0, p.ZP)(A, R, _), [F, B] = l.useState(null == D || null == (t = D.defaultHighlightedReward) ? true : t.skuId), [G, U] = l.useState(false), H = (0, m.Z)({
     claimableVariants: R,
     claimableRewards: A,
     defaultSelection: D,
     selectedGiftingPromotionReward: _,
     setSelectedGiftingPromotionReward: M,
-    hasUserMadeSelection: B
+    hasUserMadeSelection: G
   }), z = l.useMemo(() => {
     var e, t;
     if (null == R || 0 === R.length) return null != (e = null == L ? true : L.rewards) ? e : [];
@@ -85,20 +85,20 @@ function P(e) {
   }, [R, null == L ? true : L.rewards, null == H ? true : H.selectedCategory]);
   l.useEffect(() => {
     let e = null == D ? true : D.defaultHighlightedReward;
-    !B && null == _ && null != e && null != e && z.some(t => t.skuId === e.skuId) && (M(e), G(e.skuId))
-  }, [D, B, _, z, M]), a()(null != k, "Expected plan to selected"), a()(null != C, "Expected selectedSkuId"), a()(null != N, "Step should be set");
+    !G && null == _ && null != e && null != e && z.some(t => t.skuId === e.skuId) && (M(e), B(e.skuId))
+  }, [D, G, _, z, M]), a()(null != k, "Expected plan to selected"), a()(null != C, "Expected selectedSkuId"), a()(null != N, "Step should be set");
   let K = l.useMemo(() => null != F && (null != A ? A : []).some(e => e.skuId === F), [F, A]),
     W = l.useMemo(() => null != _ && z.some(e => e.skuId === _.skuId), [z, _]),
     V = l.useMemo(() => 0 === z.length || null == F || !W || !K, [z, F, K, W]);
   l.useEffect(() => {
     if (0 === z.length) {
-      G(true), M(true);
+      B(true), M(true);
       return
     }
-    K && z.some(e => e.skuId === F) || null == F || (G(true), M(true))
+    K && z.some(e => e.skuId === F) || null == F || (B(true), M(true))
   }, [z, K, F, M]);
   let Y = e => {
-      M(z.find(t => t.skuId === e)), G(e), U(true)
+      M(z.find(t => t.skuId === e)), B(e), U(true)
     },
     q = z.map(e => {
       var t, n;
