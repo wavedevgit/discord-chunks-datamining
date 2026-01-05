@@ -47,7 +47,7 @@ let _ = {
       r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {},
       a = u.Z.getChannel(e),
       o = null == a ? true : a.getGuildId();
-    if ((null == a ? true : a.isGuildVocal()) && (0, i.Y3)(a)) return void(0, l.uL)(p.Z5c.CHANNEL(o, e));
+    if ((null == a ? true : a.isGuildVocalOrThread()) && (0, i.Y3)(a)) return void(0, l.uL)(p.Z5c.CHANNEL(o, e));
     d.Z.isSupported() && (null != e && d.Z.getMediaEngine().interact(), (0, f.h)(e, o, t, n, r))
   },
   disconnect() {

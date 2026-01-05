@@ -131,7 +131,7 @@ function ep(e, t) {
 function e_(e, t, n) {
   var r, i;
   if ((null == n ? true : n.targetType) === ei.Iq.ROLE_SUBSCRIPTIONS_PURCHASE) return en.oC.ROLE_SUBSCRIPTIONS;
-  if ((null == n ? true : n.targetType) == null && !k.tx.has(t.type) && (0, C.s)(e)) return en.oC.GUILD_HOME;
+  if ((null == n ? true : n.targetType) == null && !(0, k.tW)(t.type) && (0, C.s)(e)) return en.oC.GUILD_HOME;
   let a = G.Z.getChannel(t.id);
   return H.Z.can(ee.Plq.VIEW_CHANNEL, a) ? t.id : null != (i = null == (r = Z.ZP.getDefaultChannel(e, true, ee.Plq.CREATE_INSTANT_INVITE)) ? true : r.id) ? i : t.id
 }
@@ -167,7 +167,7 @@ function eh(e) {
   let {
     type: _
   } = r, m = G.Z.getChannel(r.id), h = e_(t, r, i), b = _ === ee.d4z.GUILD_STAGE_VOICE, y = ee.Z5c.CHANNEL(t, h);
-  k.tx.has(_) ? (0, S.h)(() => {
+  (0, k.tW)(_) ? (0, S.h)(() => {
     Promise.resolve().then(n.bind(n, 287734)).then(e => {
       let {
         default: n
@@ -244,7 +244,7 @@ let eb = function(e, t) {
       var r;
       let i = G.Z.getChannel(e),
         a = W.default.getCurrentUser();
-      return null == i || null == a || !(i.nsfw && !a.nsfwAllowed || i.isGuildVocal() && (0, y.RW)(e)) && ((null == t ? true : t.guildScheduledEvent) != null ? eg(t) : eh({
+      return null == i || null == a || !(i.nsfw && !a.nsfwAllowed || i.isGuildVocalOrThread() && (0, y.RW)(e)) && ((null == t ? true : t.guildScheduledEvent) != null ? eg(t) : eh({
         guildId: null != (r = i.getGuildId()) ? r : ee.ME,
         channel: i,
         options: t,

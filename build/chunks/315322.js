@@ -27,7 +27,7 @@ var Chunk367907 = require("./367907.js"),
   Chunk626135 = require("./626135.js"),
   Chunk171900 = require("./171900.js"),
   Chunk607802 = require("./607802.js"),
-  Chunk971128 = require("./971128.js"),
+  Chunk423880 = require("./423880.js"),
   Chunk981631 = require("./981631.js");
 
 function u(e) {
@@ -172,9 +172,7 @@ function E(e) {
   let {
     searchContext: t
   } = e;
-  l.Z.initialize({
-    searchContext: t
-  }), r.ZP.trackWithMetadata(c.rMx.SEARCH_OPENED, {
+  l.Z.initialize(t), r.ZP.trackWithMetadata(c.rMx.SEARCH_OPENED, {
     search_id: f(t),
     search_session_id: l.Z.getSessionId(t),
     search_type: t.type
@@ -299,12 +297,12 @@ function T(e) {
   let {
     searchContext: t
   } = e;
-  l.Z.initialize({
-    searchContext: t
-  }), r.ZP.trackWithMetadata(c.rMx.SEARCH_MESSAGES_CHANNEL_PREFILL, {
-    search_type: t.type,
-    search_id: f(t),
-    search_session_id: l.Z.getSessionId(t)
+  l.Z.enqueueEvent(t, () => {
+    r.ZP.trackWithMetadata(c.rMx.SEARCH_MESSAGES_CHANNEL_PREFILL, {
+      search_type: t.type,
+      search_id: f(t),
+      search_session_id: l.Z.getSessionId(t)
+    })
   })
 }
 new Chunk710845.Z("SearchTracking");

@@ -141,7 +141,7 @@ function k(e) {
         roles: a,
         checkElevated: o,
         excludeGuildPermissions: s
-      }), false)
+      }), false, false)
     }
     l = null != (c = r.computeLurkerPermissionsAllowList()) ? c : l, i = null != i ? T({}, r.permissionOverwrites, i) : r.permissionOverwrites;
     let e = r.getGuildId();
@@ -200,7 +200,7 @@ function U(e) {
         roles: l,
         checkElevated: u,
         excludeGuildPermissions: _
-      }), t)
+      }), t, g.ZP.isCurrentUserGuest(o.guild_id))
     }
     E = null != (r = o.computeLurkerPermissionsAllowList()) ? r : E, s = null != s ? T({}, o.permissionOverwrites, s) : o.permissionOverwrites;
     let e = o.getGuildId();
@@ -221,8 +221,8 @@ function U(e) {
   })
 }
 
-function G(e, t, n) {
-  return e.type !== S.d4z.PRIVATE_THREAD || n || a.e$(t, S.Plq.MANAGE_THREADS) ? a.e$(t, S.Plq.SEND_MESSAGES_IN_THREADS) ? e.isLockedThread() && !a.e$(t, S.Plq.MANAGE_THREADS) ? a.Od(t, S.Plq.SEND_MESSAGES) : a.$e(t, S.Plq.SEND_MESSAGES) : a.Od(t, S.Plq.SEND_MESSAGES) : C
+function G(e, t, n, r) {
+  return e.type !== S.d4z.PRIVATE_THREAD || n || r || a.e$(t, S.Plq.MANAGE_THREADS) ? a.e$(t, S.Plq.SEND_MESSAGES_IN_THREADS) ? e.isLockedThread() && !a.e$(t, S.Plq.MANAGE_THREADS) ? a.Od(t, S.Plq.SEND_MESSAGES) : a.$e(t, S.Plq.SEND_MESSAGES) : a.Od(t, S.Plq.SEND_MESSAGES) : C
 }
 
 function Z(e, t) {
