@@ -275,6 +275,7 @@ let G = e => {
       })
     }, [t]);
     return (0, r.jsx)(p.aML, {
+      "data-migration-pending": true,
       text: l,
       tooltipClassName: D.marketingBadgeTooltip,
       position: "right",
