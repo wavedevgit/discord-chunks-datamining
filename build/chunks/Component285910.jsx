@@ -28,7 +28,7 @@ function m(e) {
     }],
     onClose: t,
     transitionState: n,
-    children: (0, a.jsx)(o.Text, {
+    children: (0, a.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "text-subtle",
       children: d.intl.string(d.t.Ij97SL)
@@ -46,7 +46,7 @@ function f(e) {
     isRewardContentLoading: x,
     rewardContentHasError: p,
     location: C
-  } = e, g = s.jn.REWARD_MODAL, [h, j] = r.useState(true);
+  } = e, g = o.jn.REWARD_MODAL, [h, j] = r.useState(true);
   if (p) return (0, a.jsx)(m, {
     onClose: d,
     transitionState: i
@@ -57,21 +57,21 @@ function f(e) {
     questContent: g,
     sourceQuestContent: n,
     children: e => (0, a.jsxs)(a.Fragment, {
-      children: [b ? (0, a.jsx)(o.$jN, {
+      children: [b ? (0, a.jsx)(s.$jN, {
         className: u.spinner,
-        type: o.$jN.Type.WANDERING_CUBES
+        type: s.$jN.Type.WANDERING_CUBES
       }) : null, (0, a.jsx)("div", {
         ref: e,
         style: {
           visibility: b ? "hidden" : "visible"
         },
-        children: (0, a.jsxs)(o.Y0X, {
+        children: (0, a.jsxs)(s.Y0X, {
           "data-migration-pending": true,
-          transitionState: b ? o.Dvm.HIDDEN : i,
-          size: o.CgR.DYNAMIC,
+          transitionState: b ? s.Dvm.HIDDEN : i,
+          size: s.CgR.DYNAMIC,
           className: u.modal,
           parentComponent: "QuestRewardModalBase",
-          children: [(0, a.jsx)(o.olH, {
+          children: [(0, a.jsx)(s.olH, {
             "data-migration-pending": true,
             className: u.closeButton,
             onClick: d,

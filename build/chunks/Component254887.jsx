@@ -2,23 +2,24 @@
 /** chunk id: 254887, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => S
 }), require("./642613.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk924826 = require("./924826.js"),
   Chunk91192 = require("./91192.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk412899 = require("./412899.jsx"),
   Chunk635042 = require("./635042.js"),
-  Chunk411198 = require("./411198.js"),
   Chunk539600 = require("./539600.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk122316 = require("./122316.js");
 
-function h(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,20 +28,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
 }
 
-function E(e, t) {
+function b(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,15 +52,15 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+function y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e, t) {
+function O(e, t) {
   if (null == e) return {};
-  var n, r, i = O(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -67,7 +68,7 @@ function y(e, t) {
   return i
 }
 
-function O(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -75,47 +76,49 @@ function O(e, t) {
   return i
 }
 
-function v(e) {
+function S(e) {
   let {
-    invite: t
-  } = e, n = i.useMemo(() => "invite-roles-".concat((0, a.Z)()), []), h = (0, o.ZP)({
-    id: n,
+    guild: t,
+    roles: n,
+    className: a
+  } = e, g = i.useMemo(() => "invite-roles-".concat((0, s.Z)()), []), b = (0, l.ZP)({
+    id: g,
     isEnabled: true,
-    scrollToStart: p.Cyb,
-    scrollToEnd: p.Cyb,
+    scrollToStart: _.Cyb,
+    scrollToEnd: _.Cyb,
     wrap: true
-  }), E = i.useMemo(() => null != t.guild ? (0, d.Qs)(t.guild) : null, [t.guild]), O = i.useMemo(() => null == t.guild || null == t.roles || 0 === t.roles.length ? [] : t.roles.map(e => (0, f.wD)(t.guild.id, e)).sort(u.Z), [t]);
-  if (0 === O.length || null == E) return null;
-  let v = O.length,
-    S = _.intl.formatToPlainString(_.t.PCs0oo, {
-      numRoles: v
+  }), v = i.useMemo(() => null == t || null == n || 0 === n.length ? [] : n.map(e => (0, p.wD)(t.id, e)).sort(f.Z), [t, n]);
+  if (null == t || 0 === v.length) return null;
+  let S = v.length,
+    I = m.intl.formatToPlainString(m.t.PCs0oo, {
+      numRoles: S
     });
-  return (0, r.jsx)(s.bG, {
-    navigator: h,
-    children: (0, r.jsx)(s.SJ, {
+  return (0, r.jsx)(c.bG, {
+    navigator: b,
+    children: (0, r.jsx)(c.SJ, {
       children: e => {
         var {
-          ref: t
-        } = e, n = y(e, ["ref"]);
+          ref: n
+        } = e, i = O(e, ["ref"]);
         return (0, r.jsxs)("div", {
-          className: m.root,
-          children: [(0, r.jsx)(l.Text, {
+          className: o()(h.root, a),
+          children: [(0, r.jsx)(u.Text, {
             variant: "text-sm/semibold",
             color: "text-default",
-            className: m.rolesHeading,
-            children: _.intl.string(_.t.stcSfI)
-          }), (0, r.jsx)("div", b(g({
-            className: m.rolesList,
-            "aria-label": S,
-            ref: t
-          }, n), {
-            children: O.map(e => (0, r.jsx)(c.UB, {
-              className: m.rolePill,
+            className: h.rolesHeading,
+            children: m.intl.string(m.t.stcSfI)
+          }), (0, r.jsx)("div", y(E({
+            className: h.rolesList,
+            "aria-label": I,
+            ref: n
+          }, i), {
+            children: v.map(e => (0, r.jsx)(d.UB, {
+              className: h.rolePill,
               role: e,
               canRemove: false,
               onRemove: () => {},
-              guildId: E.id,
-              guild: E,
+              guildId: t.id,
+              guild: t,
               disableBorderColor: false
             }, e.id))
           }))]

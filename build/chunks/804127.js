@@ -18,13 +18,13 @@ function l(e) {
     quest: o,
     rewardCode: l,
     preview: c
-  } = e, [d, u] = r.useState(false), [m, p] = r.useState(false), C = r.useCallback(async (e, t, n) => {
+  } = e, [d, u] = r.useState(false), [m, p] = r.useState(false), f = r.useCallback(async (e, t, n) => {
     try {
       p(true), await (0, i.QB)(e, t, n), u(false), p(false)
     } catch (e) {
       u(true), p(false)
     }
-  }, []), f = r.useCallback(e => {
+  }, []), C = r.useCallback(e => {
     try {
       (0, i.pf)(e)
     } catch (e) {
@@ -33,10 +33,10 @@ function l(e) {
   }, []);
   return r.useEffect(() => {
     var e, r;
-    true === c || null != l || d || t || m || n || (u(false), (null == (e = o.userStatus) ? true : e.claimedAt) == null ? C(o.id, s.y$.CROSS_PLATFORM, a) : (null == (r = o.userStatus) ? true : r.claimedAt) != null && f(o.id))
-  }, [C, f, d, t, m, n, a, o, l, c]), {
-    claimCode: C,
-    fetchCode: f,
+    true === c || null != l || d || t || m || n || (u(false), (null == (e = o.userStatus) ? true : e.claimedAt) == null ? f(o.id, s.y$.CROSS_PLATFORM, a) : (null == (r = o.userStatus) ? true : r.claimedAt) != null && C(o.id))
+  }, [f, C, d, t, m, n, a, o, l, c]), {
+    claimCode: f,
+    fetchCode: C,
     hasError: d,
     setHasError: u
   }

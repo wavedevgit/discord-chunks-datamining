@@ -18,12 +18,12 @@ let d = function(e) {
     color: n = i.Z.colors.WHITE,
     quest: l,
     isInventory: d
-  } = e, E = (0, o.qb)(e.quest), {
-    percentComplete: m,
+  } = e, m = (0, o.qb)(e.quest), {
+    percentComplete: E,
     completedRatioDisplay: f
   } = (0, o.I)(l);
-  return !d && E.length > 0 ? (0, r.jsx)(u.Z, {
-    children: E.at(0)
+  return !d && m.length > 0 ? (0, r.jsx)(u.Z, {
+    children: m.at(0)
   }) : (0, r.jsxs)("div", {
     className: s()(c.wrapper, t),
     style: {
@@ -39,22 +39,22 @@ let d = function(e) {
       }), (0, r.jsx)("div", {
         className: c.percentCompleteLabelOffset,
         style: {
-          width: "".concat(100 - m, "%")
+          width: "".concat(100 - E, "%")
         }
       })]
     }), (0, r.jsx)("div", {
       className: c.progressBar,
       role: "progressbar",
-      "aria-valuenow": m,
+      "aria-valuenow": E,
       children: (0, r.jsx)("div", {
         className: c.progressBarFill,
         style: {
-          width: "".concat(m, "%")
+          width: "".concat(E, "%")
         }
       })
-    }), E.length > 0 && (0, r.jsx)(u.Z, {
+    }), m.length > 0 && (0, r.jsx)(u.Z, {
       isInventory: d,
-      children: E.at(0)
+      children: m.at(0)
     })]
   })
 }

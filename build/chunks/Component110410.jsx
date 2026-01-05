@@ -1,7 +1,7 @@
 /** Chunk was on 97158 **/
 /** chunk id: 110410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => _
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,12 +24,12 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk556463 = require("./556463.js");
 
-function _(e) {
+function y(e) {
   let {
     quest: t,
     sourceQuestContent: n,
-    onLoadComplete: _
-  } = e, y = (0, l.ZP)(), w = (0, o.wjy)(y) ? b.BR.DARK : b.BR.LIGHT, A = (0, f.V_)(t), T = (0, d.aM)(), P = (0, p.VB)(t.config), D = r.useMemo(() => {
+    onLoadComplete: y
+  } = e, _ = (0, l.ZP)(), w = (0, s.wjy)(_) ? b.BR.DARK : b.BR.LIGHT, T = (0, f.V_)(t), P = (0, d.aM)(), A = (0, p.VB)(t.config), D = r.useMemo(() => {
     var e;
     let n = null == (e = t.config.ctaConfig) ? true : e.subtitle;
     return null != n ? n : (0, p.BI)(t.config) !== i.W.GAMEPLAY || t.config.features.includes(j.S7.NON_GAMING_PLAY_QUEST) || (0, p.Pb)(t) ? v.intl.string(v.t.y8Xf3k) : v.intl.string(v.t["wirwN+"])
@@ -37,17 +37,17 @@ function _(e) {
     isLoading: E
   } = (0, C.kC)();
   r.useEffect(() => {
-    E || _()
-  }, [E, _]);
+    E || y()
+  }, [E, y]);
   let L = (0, h.yc)({
-    isShareable: P,
+    isShareable: A,
     questId: t.id,
     trackingCtx: r.useMemo(() => ({
       content: u.jn.REWARD_MODAL,
       ctaContent: c.jZ.REWARD_MODAL_COPY_LINK,
-      impressionId: T,
+      impressionId: P,
       sourceQuestContent: n
-    }), [T, n])
+    }), [P, n])
   });
   return (0, a.jsxs)("div", {
     className: N.container,
@@ -80,14 +80,14 @@ function _(e) {
       className: N.partnerContentContainer,
       children: [(0, a.jsxs)("div", {
         className: N.partnerCopyContainer,
-        children: [(0, a.jsx)(o.X6q, {
+        children: [(0, a.jsx)(s.X6q, {
           variant: "heading-md/semibold",
           color: "text-strong",
           className: N.partnerTitle,
           children: v.intl.format(v.t.EAYZAr, {
             questName: t.config.messages.questName
           })
-        }), (0, a.jsx)(o.xvT, {
+        }), (0, a.jsx)(s.xvT, {
           variant: "text-sm/medium",
           color: "text-subtle",
           children: D
@@ -105,32 +105,32 @@ function _(e) {
       })]
     }), (0, a.jsx)("div", {
       className: N.bottomContainer,
-      children: (0, a.jsxs)(o.hE2, {
+      children: (0, a.jsxs)(s.hE2, {
         size: "sm",
         direction: "horizontal",
         fullWidth: true,
         fullWidthContainer: true,
-        children: [P && (0, a.jsx)(s.u, {
+        children: [A && (0, a.jsx)(o.u, {
           text: v.intl.string(v.t.WmfZHZ),
-          children: (0, a.jsx)(o.hU, {
-            icon: o.xPt,
+          children: (0, a.jsx)(s.hU, {
+            icon: s.xPt,
             onClick: L,
             "aria-label": v.intl.string(v.t.WmfZHZ),
             variant: "secondary"
           })
-        }), (0, a.jsx)(o.zxk, {
+        }), (0, a.jsx)(s.zxk, {
           variant: "primary",
-          text: A,
+          text: T,
           onClick: () => {
             (0, x.nc)(t, {
               content: u.jn.REWARD_MODAL,
               ctaContent: c.jZ.OPEN_GAME_LINK,
-              impressionId: T,
+              impressionId: P,
               sourceQuestContent: n
             })
           },
           fullWidth: true,
-          icon: o.zFc,
+          icon: s.zFc,
           iconPosition: "end"
         })]
       })
@@ -138,7 +138,7 @@ function _(e) {
   })
 }
 
-function y(e) {
+function _(e) {
   let {
     quest: t,
     location: n
@@ -147,7 +147,7 @@ function y(e) {
     source: n,
     questId: t.id,
     isPreview: t.preview,
-    children: (0, a.jsx)(_, function(e) {
+    children: (0, a.jsx)(y, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           a = Object.keys(n);

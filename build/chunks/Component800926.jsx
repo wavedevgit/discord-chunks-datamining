@@ -64,7 +64,6 @@ let g = Chunk473749.forwardRef(function(e, t) {
           isExpanded: false,
           percentComplete: P
         }) : null, E && (0, a.jsx)(u.r, {
-          isExpanded: false,
           awaitingConsoleConnections: false,
           hasMadeProgress: true,
           isProgressing: false,

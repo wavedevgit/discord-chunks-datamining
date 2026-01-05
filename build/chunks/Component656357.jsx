@@ -86,13 +86,13 @@ function Q(e) {
   }), em = ed === C.m_.OVERLAY_SHARE_ON_VIDEO, {
     focused: ef,
     focusedChanged: ep
-  } = (0, k.xU)(), {
+  } = (0, L.xU)(), {
     visible: ev,
     visibleChanged: eE,
     targetRef: eg
-  } = (0, k.Yy)(), [eO, eh] = o.useState(true === X ? w.rq.PLAYING : w.rq.PAUSED), [eb, eS] = o.useState(false), [eC, e_] = o.useState(false), ey = (0, j.il)(en), [ex, ej] = o.useState(ey.percentComplete), eP = o.useCallback(e => {
+  } = (0, L.Yy)(), [eO, eh] = o.useState(true === X ? w.rq.PLAYING : w.rq.PAUSED), [eb, eS] = o.useState(false), [eC, e_] = o.useState(false), ey = (0, j.il)(en), [ex, ej] = o.useState(ey.percentComplete), eP = o.useCallback(e => {
     eG(null), ej(e)
-  }, []), [eD, eT] = o.useState(false), [eR, eI] = o.useState(true), [eN, eA] = o.useState(false), [ew, eL] = o.useState([]), [ek, eM] = o.useState(E.Z.getEffectiveConnectionSpeed()), [eV, eZ] = o.useState(0), [eF, eB] = o.useState(0), [eU, eq] = o.useState(false), [eY, eH] = o.useState(false), [eQ, eG] = o.useState(null), eK = o.useRef(true), eW = o.useRef(null), ez = o.useRef(null), eX = (0, S.km)(e => {
+  }, []), [eD, eT] = o.useState(false), [eR, eI] = o.useState(true), [eN, eA] = o.useState(false), [ew, ek] = o.useState([]), [eL, eM] = o.useState(E.Z.getEffectiveConnectionSpeed()), [eV, eZ] = o.useState(0), [eF, eB] = o.useState(0), [eU, eq] = o.useState(false), [eY, eH] = o.useState(false), [eQ, eG] = o.useState(null), eK = o.useRef(true), eW = o.useRef(null), ez = o.useRef(null), eX = (0, S.km)(e => {
     var t;
     return null != (t = e.videoProgress[en.id]) ? t : {
       timestampSec: 0,
@@ -101,7 +101,7 @@ function Q(e) {
   }, s.X), e$ = (0, S.km)(e => e.setVideoProgress), eJ = (0, S.km)(e => e.muted), e0 = (0, S.km)(e => e.volume), e1 = (0, c.e7)([f.Z], () => f.Z.useReducedMotion), e2 = (0, o.useRef)(null), e4 = (0, o.useRef)(null), e8 = o.useRef(true), e3 = (null == (t = en.userStatus) ? true : t.completedAt) != null, [e9, e7] = o.useState(null), [e6, e5] = o.useState(false), [te, tt] = o.useState(false), [tn, tr] = o.useState(null), to = e3 ? null != (v = null == (n = e2.current) ? true : n.duration) ? v : 0 : Math.max(eX.maxTimestampSec, ey.progressSeconds), tl = o.useMemo(() => (0, _.T)({
     quest: en,
     location: F.dr.VIDEO_MODAL
-  }), [en]), ti = (0, L.$R)(e3, eX, ey), [ta, ts] = o.useState(w._H.MD), tc = {
+  }), [en]), ti = (0, k.$R)(e3, eX, ey), [ta, ts] = o.useState(w._H.MD), tc = {
     [w._H.MD]: 50,
     [w._H.LG]: 58
   };
@@ -113,7 +113,7 @@ function Q(e) {
     videoAssetType: td,
     hlsRef: tm,
     onFirstChunkLoaded: tf
-  } = (0, M.Z)(e2, ek, ti), {
+  } = (0, M.Z)(e2, eL, ti), {
     trackQuestVideoLoadingStarted: tp,
     trackQuestVideoLoadingEnded: tv,
     trackQuestVideoProgressed: tE,
@@ -183,22 +183,22 @@ function Q(e) {
   o.useEffect(() => {
     $ !== d.Dvm.HIDDEN && $ !== d.Dvm.EXITING && $ !== d.Dvm.EXITED && (null == $ || !eE || ev || e3) && (!ep || ef || e3) || null == e2.current || eO !== w.rq.PLAYING || (tl.info("[QV] | Pausing video | playerState: ".concat(eO, ", parentTransitionState: ").concat($, ", visible: ").concat(ev, ", focused: ").concat(ef, ", isQuestCompleted: ").concat(e3)), tR(w.rq.PAUSED), e3 || e7(b.yE.LOST_FOCUS))
   }, [$, ef, ep, ev, eE, eO, e3, tR, tI, tl]);
-  let [tN, tA] = o.useState(false), tw = o.useRef(null), tL = o.useRef(performance.now()), tk = o.useCallback(() => {
+  let [tN, tA] = o.useState(false), tw = o.useRef(null), tk = o.useRef(performance.now()), tL = o.useCallback(() => {
     null != tw.current && clearTimeout(tw.current), eO === w.rq.PLAYING && (tw.current = setTimeout(() => {
       eO === w.rq.PLAYING && tA(true)
-    }, Math.max(0, 3e3 - (performance.now() - tL.current))))
+    }, Math.max(0, 3e3 - (performance.now() - tk.current))))
   }, [eO]), tM = () => {
-    tA(false), tL.current = performance.now(), tk()
+    tA(false), tk.current = performance.now(), tL()
   };
   o.useEffect(() => {
     if (eO !== w.rq.PLAYING) {
       tA(false), null != tw.current && clearTimeout(tw.current);
       return
     }
-    return tk(), () => {
+    return tL(), () => {
       null != tw.current && clearTimeout(tw.current)
     }
-  }, [eO, tk]);
+  }, [eO, tL]);
   let tV = !tN && (eC || eb || eO === w.rq.ENDED),
     tZ = o.useCallback(() => {
       var e;
@@ -251,7 +251,7 @@ function Q(e) {
       if (e.mode = "hidden", null != e.cues)
         for (let t = 0; t < e.cues.length; t++) {
           let n = e.cues[t];
-          (0, L.JC)(n) && (n.id = "cue-".concat(t), n.onenter = () => tY(n), n.onexit = () => tH(n))
+          (0, k.JC)(n) && (n.id = "cue-".concat(t), n.onenter = () => tY(n), n.onexit = () => tH(n))
         }
     }, [e2, tl]);
   o.useEffect(() => {
@@ -263,8 +263,8 @@ function Q(e) {
   }, [e4, tQ]);
   let tG = o.useCallback(e => {
       var t;
-      tl.info("[QV] | logVideoError: errorType: ".concat(e, ", videoProgress: ").concat(null == (t = e2.current) ? true : t.currentTime, ", videoAssetId: ").concat(td, ", connectionSpeed: ").concat(ek)), tj(e)
-    }, [ek, tj, e2, td, tl]),
+      tl.info("[QV] | logVideoError: errorType: ".concat(e, ", videoProgress: ").concat(null == (t = e2.current) ? true : t.currentTime, ", videoAssetId: ").concat(td, ", connectionSpeed: ").concat(eL)), tj(e)
+    }, [eL, tj, e2, td, tl]),
     tK = e => {
       tl.info("[QV] | handleCanPlay: playerState: ".concat(eO)), null != e2.current && eO === w.rq.PLAYING && (tl.info("[QV] | handleCanPlay: did NOT early return"), eR && (tl.info("[QV] | handleCanPlay: loadingFirstChunk: ".concat(eR)), eI(false)), eN && (tl.info("[QV] | handleCanPlay: waitingForChunk: ".concat(eN)), tC(null != ez.current ? performance.now() - ez.current : null), eA(false)), tl.info("[QV] | handleCanPlay: updating player state to playing"), tR(w.rq.PLAYING))
     };
@@ -332,7 +332,7 @@ function Q(e) {
     "data-fullscreen": es,
     tabIndex: false,
     onMouseEnter: () => {
-      eS(true), tA(false), tL.current = performance.now(), null != tw.current && clearTimeout(tw.current)
+      eS(true), tA(false), tk.current = performance.now(), null != tw.current && clearTimeout(tw.current)
     },
     onMouseLeave: () => {
       eS(false), tA(false)
@@ -376,7 +376,7 @@ function Q(e) {
           null != e2.current && (tl.info("[QV] | handleLoadedMetadata | videoAssetId: ".concat(td)), e5(true), td !== x.eC.VIDEO_PLAYER_VIDEO_HLS && tU(ti), eJ ? e2.current.volume = 0 : e2.current.volume = e0)
         },
         onLoadStart: () => {
-          eW.current = performance.now(), tp(ek), tl.info("[QV] | handleLoadStart | loadingStartTime: ".concat(eW.current))
+          eW.current = performance.now(), tp(eL), tl.info("[QV] | handleLoadStart | loadingStartTime: ".concat(eW.current))
         },
         onPlaying: () => {
           if (!eK.current) return;
@@ -398,7 +398,7 @@ function Q(e) {
               size: (r - n) / e2.current.duration
             })
           }
-          eL(t)
+          ek(t)
         },
         onCanPlay: tK,
         onCanPlayThrough: tK,

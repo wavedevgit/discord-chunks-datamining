@@ -271,7 +271,6 @@ function U(e) {
               quest: Z,
               questContent: b.jn.MEMBERS_LIST,
               learnMoreStyle: "icon",
-              location: N.dr.MEMBERS_LIST,
               onClick: eu,
               sourceQuestContent: b.jn.MEMBERS_LIST
             })]

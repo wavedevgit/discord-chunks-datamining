@@ -1,7 +1,7 @@
 /** Chunk was on 6043 **/
 /** chunk id: 73826, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -16,29 +16,28 @@ var Chunk54381 = require("./54381.js"),
   Chunk444134 = require("./444134.jsx"),
   Chunk526188 = require("./526188.jsx"),
   Chunk617889 = require("./617889.js"),
-  Chunk324805 = require("./324805.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk964907 = require("./964907.js");
-let v = e => {
+let g = e => {
   let {
     isFullyExpanded: t,
     partnerBranding: n
-  } = e, i = (0, h.qe)().label, v = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), {
-    quest: j
+  } = e, i = (0, h.qe)().label, g = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), {
+    quest: v
   } = r.useContext(f.A), {
-    expansionSpring: C
-  } = r.useContext(p.xo), y = i ? false : 6;
+    expansionSpring: j
+  } = r.useContext(p.xo), C = i ? false : 6;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.animated.div, {
-      className: g.rewardTileContainer,
+      className: b.rewardTileContainer,
       style: {
-        transform: (0, s.to)([C.to({
+        transform: (0, s.to)([j.to({
           range: [0, 1],
           output: [0, 0]
-        }), C.to({
+        }), j.to({
           range: [0, 1],
           output: [0, 82]
-        }), C.to({
+        }), j.to({
           range: [0, 1],
           output: [1, 64 / 48]
         })], (e, t, n) => "translate(".concat(e, "px, ").concat(t, "px) scale(").concat(n, ")"))
@@ -46,10 +45,9 @@ let v = e => {
       children: (0, a.jsx)(m.Z, {
         learnMoreStyle: "text",
         learnMoreFontSize: t ? 9 : true,
-        quest: j,
+        quest: v,
         questContent: u.jn.QUEST_BAR_V2,
-        location: x.dr.QUESTS_BAR,
-        autoplay: t && !v,
+        autoplay: t && !g,
         sourceQuestContent: u.jn.QUEST_BAR_V2,
         style: {
           width: 48,
@@ -59,29 +57,29 @@ let v = e => {
         }
       })
     }), (0, a.jsxs)(s.animated.div, {
-      className: l()(g.rewardHighlightLogoCTA, {
-        [g.rewardHighlightLogoCTALabel]: i
+      className: l()(b.rewardHighlightLogoCTA, {
+        [b.rewardHighlightLogoCTALabel]: i
       }),
       style: {
-        transform: (0, s.to)([C.to({
+        transform: (0, s.to)([j.to({
           range: [0, 1],
           output: [0, false]
-        }), C.to({
+        }), j.to({
           range: [0, 1],
-          output: [0, y]
+          output: [0, C]
         })], (e, t) => "translate(".concat(e, "px, ").concat(t, "px)"))
       },
       children: [(0, a.jsx)("div", {
         className: l()({
-          [g.partnerBranding]: !i
+          [b.partnerBranding]: !i
         }),
         children: n
       }), (0, a.jsx)(s.animated.div, {
-        className: l()(g.rewardHighlightCTA, {
-          [g.rewardHighlightCTALabel]: i
+        className: l()(b.rewardHighlightCTA, {
+          [b.rewardHighlightCTALabel]: i
         }),
         style: {
-          opacity: C.to({
+          opacity: j.to({
             range: [0, 1],
             output: [i ? 1 : .7, 0]
           })
@@ -90,7 +88,7 @@ let v = e => {
           color: "always-white",
           lineClamp: 1,
           variant: "text-xs/medium",
-          children: b.intl.string(b.t["3mgEQf"])
+          children: x.intl.string(x.t["3mgEQf"])
         })
       })]
     })]

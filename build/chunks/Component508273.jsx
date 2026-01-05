@@ -2,7 +2,7 @@
 /** chunk id: 508273, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => A
+  Z: () => N
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,91 +20,94 @@ var Chunk54381 = require("./54381.js"),
   Chunk708321 = require("./708321.jsx"),
   Chunk174161 = require("./174161.jsx"),
   Chunk798476 = require("./798476.jsx"),
+  Chunk411198 = require("./411198.js"),
   Chunk254887 = require("./254887.jsx"),
   Chunk358595 = require("./358595.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk642438 = require("./642438.js");
-let I = 292,
-  T = 36,
-  C = 48;
+let T = 292,
+  C = 36,
+  A = 48;
 
-function A(e) {
+function N(e) {
   let {
     invite: t,
     isMemberOfGuild: n,
     message: a,
     onTransitionToInviteChannel: c,
     onAcceptInstantInvite: d
-  } = e, f = i.useRef(null), [_, h] = i.useState(true), [A, P] = i.useState(false), R = t.state === O.r2o.ACCEPTING, w = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
+  } = e, f = i.useRef(null), [_, h] = i.useState(true), [N, R] = i.useState(false), w = t.state === v.r2o.ACCEPTING, D = (0, s.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
-    P((null != (t = null == (e = f.current) ? true : e.clientHeight) ? t : 0) > I)
-  }, [P]);
-  let D = (0, p.PC)(t),
-    x = i.useCallback(() => {
-      A && _ && h(false)
-    }, [_, A]),
+    R((null != (t = null == (e = f.current) ? true : e.clientHeight) ? t : 0) > T)
+  }, [R]);
+  let x = (0, p.PC)(t),
     L = i.useCallback(() => {
-      A && (_ || h(true))
-    }, [_, A]),
-    j = i.useMemo(() => {
+      N && _ && h(false)
+    }, [_, N]),
+    j = i.useCallback(() => {
+      N && (_ || h(true))
+    }, [_, N]),
+    M = i.useMemo(() => {
       var e;
-      return A && (null == (e = f.current) ? true : e.clientHeight) != null ? {
-        height: _ ? I : f.current.clientHeight + T + C,
-        transition: w ? true : "height 0.2s ease"
+      return N && (null == (e = f.current) ? true : e.clientHeight) != null ? {
+        height: _ ? T : f.current.clientHeight + C + A,
+        transition: D ? true : "height 0.2s ease"
       } : {}
-    }, [_, A, w]);
-  return null == D ? (0, r.jsx)(y.Z, {}) : (0, r.jsxs)(l.kL8, {
-    className: o()(S.guildInviteContainer, {
-      [S.clickable]: A && _
+    }, [_, N, D]);
+  return null == x ? (0, r.jsx)(O.Z, {}) : (0, r.jsxs)(l.kL8, {
+    className: o()(I.guildInviteContainer, {
+      [I.clickable]: N && _
     }),
-    onClick: x,
-    style: j,
-    "aria-label": v.intl.string(v.t.dcl9MQ),
+    onClick: L,
+    style: M,
+    "aria-label": S.intl.string(S.t.dcl9MQ),
     children: [(0, r.jsxs)("div", {
-      className: S.cardHeightMeasure,
+      className: I.cardHeightMeasure,
       ref: f,
       children: [(0, r.jsx)(E.Z7, {
-        profile: D,
-        className: S.banner
+        profile: x,
+        className: I.banner
       }), (0, r.jsx)(E.N3, {
-        profile: D
+        profile: x
       }), (0, r.jsx)(g.Z, {
-        profile: D
+        profile: x
       }), (0, r.jsx)(m.E, {
-        profile: D,
-        className: S.mainContent
-      }), (0, r.jsx)(b.Z, {
-        invite: t
+        profile: x,
+        className: I.mainContent
+      }), (0, r.jsx)(y.Z, {
+        guild: null != t.guild ? (0, b.Qs)(t.guild) : null,
+        roles: t.roles,
+        className: I.rolesList
       })]
-    }), A && !_ ? (0, r.jsx)("div", {
-      className: S.hideDetailsButtonContainer,
+    }), N && !_ ? (0, r.jsx)("div", {
+      className: I.hideDetailsButtonContainer,
       children: (0, r.jsx)(l.Avr, {
         textVariant: "text-xs/medium",
         variant: "secondary",
         size: "sm",
-        onClick: L,
-        text: v.intl.string(v.t.xdCLeM)
+        onClick: j,
+        text: S.intl.string(S.t.xdCLeM)
       })
     }) : null, (0, r.jsxs)("div", {
-      className: o()(S.footer, {
-        [S.floatingFooter]: A
+      className: o()(I.footer, {
+        [I.floatingFooter]: N
       }),
-      children: [A && _ ? (0, r.jsx)("div", {
-        className: S.gradient
+      children: [N && _ ? (0, r.jsx)("div", {
+        className: I.gradient
       }) : null, (0, r.jsx)("div", {
-        className: o()(S.footerContent, {
-          [S.collapsedFooterContent]: A && _
+        className: o()(I.footerContent, {
+          [I.collapsedFooterContent]: N && _
         }),
         children: (0, r.jsx)("div", {
-          className: S.buttonContainer,
-          children: (0, r.jsx)(N, {
+          className: I.buttonContainer,
+          children: (0, r.jsx)(P, {
             invite: t,
-            profile: D,
+            profile: x,
             isMemberOfGuild: n,
             message: a,
-            submitting: R,
+            submitting: w,
             onTransitionToInviteChannel: c,
             onAcceptInstantInvite: d
           })
@@ -114,7 +117,7 @@ function A(e) {
   })
 }
 
-function N(e) {
+function P(e) {
   let {
     invite: t,
     profile: n,

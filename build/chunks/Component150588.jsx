@@ -158,7 +158,6 @@ let D = (0, Chunk554916.animated)(Chunk481060.CJ0),
                   quest: a,
                   questContent: N,
                   className: A.headerCollapsedRewardTile,
-                  location: I.dr.QUESTS_CARD,
                   sourceQuestContent: G
                 })
               }), (0, r.jsxs)("div", {

@@ -1,5 +1,5 @@
 /** Chunk was on 74705 **/
-/** chunk id: 590149, original params: e,n,t (module,exports,require) **/
+/** chunk id: 590149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 }), require("./388685.js");
@@ -13,8 +13,8 @@ var Chunk54381 = require("./54381.js"),
 
 function d(e) {
   let {
-    icon: n,
-    title: t,
+    icon: t,
+    title: n,
     subtitle: i,
     children: d,
     className: s,
@@ -48,15 +48,15 @@ function d(e) {
     children: [(0, a.jsxs)(o.P3F, {
       className: p.header,
       onClick: k,
-      children: [null != n && (0, a.jsx)("div", {
+      children: [null != t && (0, a.jsx)("div", {
         className: p.headerIconWrapper,
-        children: n
+        children: t
       }), (0, a.jsxs)("div", {
         className: p.title,
         children: [(0, a.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: t
+          children: n
         }), null != i && "" !== i && (0, a.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "text-subtle",

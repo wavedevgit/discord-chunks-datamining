@@ -33,12 +33,12 @@ function u(e) {
     color: u,
     listType: c = "icon",
     completed: d = false,
-    index: E
+    index: m
   } = e;
   return (0, r.jsxs)("div", {
     className: a.cell,
     children: [(() => {
-      if ("numbered" === c && null != E)
+      if ("numbered" === c && null != m)
         if (d) return (0, r.jsx)("div", {
           className: a.number,
           children: (0, r.jsx)(i.sV5, {
@@ -50,7 +50,7 @@ function u(e) {
           variant: "heading-md/semibold",
           color: "text-brand",
           className: a.number,
-          children: E + 1
+          children: m + 1
         });
       if (null != t) return (0, r.jsx)("div", {
         className: a.iconContainer,

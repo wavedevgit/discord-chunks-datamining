@@ -19,7 +19,7 @@ let v = () => (0, Chunk54381.jsx)("div", {
   className: Chunk804665.separator
 });
 
-function h(e) {
+function j(e) {
   let {
     label: l,
     children: n
@@ -35,7 +35,7 @@ function h(e) {
   })
 }
 
-function j(e) {
+function h(e) {
   let {
     label: l,
     checked: n,
@@ -49,7 +49,7 @@ function j(e) {
       variant: "text-sm/medium",
       color: "text-default",
       children: l
-    }), (0, t.jsx)(d.ZP, {
+    }), (0, t.jsx)(o.ZP, {
       value: n,
       onChange: i,
       title: ""
@@ -61,7 +61,7 @@ let E = () => {
   let l = Chunk695346.G6.useSetting(),
     {
       nickname: n,
-      dmsAllowed: d,
+      dmsAllowed: o,
       showActivity: g,
       setNickname: E,
       setDmsAllowed: p,
@@ -85,7 +85,7 @@ let E = () => {
     onOpen: S,
     maxHeight: f ? 220 : 130,
     children: [f && (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
-      children: [(0, Chunk54381.jsx)(h, {
+      children: [(0, Chunk54381.jsx)(j, {
         label: Chunk388032.intl.string(Chunk388032.t.me1lRk),
         children: (0, Chunk54381.jsx)(Chunk481060.oil, {
           placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8yp"]),
@@ -94,11 +94,11 @@ let E = () => {
           onChange: E
         })
       }), (0, Chunk54381.jsx)(v, {})]
-    }), (0, Chunk54381.jsx)(j, {
+    }), (0, Chunk54381.jsx)(h, {
       label: Chunk388032.intl.string(Chunk388032.t["/2ed37"]),
       checked: Chunk51331,
       onChange: p
-    }), (0, Chunk54381.jsx)(v, {}), exports && (0, Chunk54381.jsx)(j, {
+    }), (0, Chunk54381.jsx)(v, {}), exports && (0, Chunk54381.jsx)(h, {
       label: Chunk388032.intl.string(Chunk388032.t.bN4m1G),
       checked: Chunk804665,
       onChange: _

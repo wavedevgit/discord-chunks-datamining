@@ -21,7 +21,7 @@ function p(e) {
     quest: t,
     rewardName: n,
     location: r,
-    sourceQuestContent: o
+    sourceQuestContent: s
   } = e;
   return (0, a.jsxs)("div", {
     className: x.contentContainer,
@@ -33,8 +33,7 @@ function p(e) {
         learnMoreStyle: null,
         quest: t,
         questContent: r,
-        location: m.dr.INGAME_REWARD_MODAL,
-        sourceQuestContent: o
+        sourceQuestContent: s
       })
     }), (0, a.jsxs)("div", {
       className: x.copyContainer,
@@ -68,14 +67,14 @@ function C(e) {
     transitionState: f,
     location: x,
     sourceQuestContent: C
-  } = e, g = null != (n = (0, s.B4)(i.id)) ? n : i, h = r.useMemo(() => (0, l.K)(g.config), [g]), j = (null == (t = g.userStatus) ? true : t.claimedAt) != null, b = !g.preview && !j, [v, N] = r.useState(b ? "loading" : "claimed");
+  } = e, g = null != (n = (0, o.B4)(i.id)) ? n : i, h = r.useMemo(() => (0, l.K)(g.config), [g]), j = (null == (t = g.userStatus) ? true : t.claimedAt) != null, b = !g.preview && !j, [v, N] = r.useState(b ? "loading" : "claimed");
   r.useEffect(() => {
     if (b) {
       let e = (0, l.zG)(g.config);
-      (0, o.QB)(g.id, e, x).then(() => N("claimed")).catch(() => N("error"))
+      (0, s.QB)(g.id, e, x).then(() => N("claimed")).catch(() => N("error"))
     }
   }, [g, x, b]);
-  let _ = "error" === v || null == h;
+  let y = "error" === v || null == h;
   return (0, a.jsx)(u.Z, {
     onClose: c,
     transitionState: f,
@@ -83,8 +82,8 @@ function C(e) {
     sourceQuestContent: C,
     location: m.dr.INGAME_REWARD_MODAL,
     isRewardContentLoading: "loading" === v,
-    rewardContentHasError: _,
-    rewardContent: _ ? null : (0, a.jsx)(d.Z, {
+    rewardContentHasError: y,
+    rewardContent: y ? null : (0, a.jsx)(d.Z, {
       rewardName: h.messages.name,
       children: (0, a.jsx)(p, {
         quest: g,

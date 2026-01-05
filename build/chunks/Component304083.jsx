@@ -109,7 +109,6 @@ function W(e) {
     learnMoreStyle: "text",
     quest: t,
     questContent: v.jn.QUEST_BAR_V2,
-    location: B.dr.QUESTS_BAR,
     sourceQuestContent: v.jn.QUEST_BAR_V2
   })
 }
@@ -250,26 +249,25 @@ function K(e) {
     containerRef: i
   } = e, {
     quest: c,
-    taskDetails: d,
-    isExpanded: u
+    taskDetails: d
   } = r.useContext(D.A), {
-    expansionSpring: m
-  } = r.useContext(w.xo), p = (null == (t = c.userStatus) ? true : t.completedAt) != null, f = d.percentComplete > 0, h = (0, y.z)(c), [x, g, j] = (0, y.me)(c, d), C = r.useRef(null), _ = r.useRef(null), T = (0, y._s)({
+    expansionSpring: u
+  } = r.useContext(w.xo), m = (null == (t = c.userStatus) ? true : t.completedAt) != null, p = d.percentComplete > 0, f = (0, y.z)(c), [h, x, g] = (0, y.me)(c, d), j = r.useRef(null), C = r.useRef(null), _ = (0, y._s)({
     quest: c
-  }), O = (0, E.q8)(c), N = (0, y.Jf)(c), G = r.useCallback(() => {
+  }), T = (0, E.q8)(c), O = (0, y.Jf)(c), N = r.useCallback(() => {
     (0, P.openVideoQuestModal)({
       quest: c,
       questContent: v.jn.QUEST_BAR_V2,
       sourceQuestContent: v.jn.QUEST_BAR_V2,
       sourceQuestContentCTA: b.jZ.QUEST_BAR_VIDEO_QUEST_PREVIEW
     })
-  }, [c]), W = null != N ? N.percentComplete : d.percentComplete;
+  }, [c]), G = null != O ? O.percentComplete : d.percentComplete;
   return (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)(s.animated.div, {
       className: l()(V.postEnrollmentBackground, V.postEnrollmentBackgroundCollapsed),
       style: {
         backgroundImage: "linear-gradient(90deg, ".concat(F.cd, ", ").concat(F.v$, ")"),
-        opacity: m.to({
+        opacity: u.to({
           range: [0, 1],
           output: [1, 0]
         })
@@ -277,25 +275,25 @@ function K(e) {
     }), (0, a.jsxs)("div", {
       className: V.questAcceptedContent,
       ref: e => {
-        "function" == typeof i ? i(e) : null != i && (i.current = e), null != e && (_.current = e)
+        "function" == typeof i ? i(e) : null != i && (i.current = e), null != e && (C.current = e)
       },
       children: [(0, a.jsx)(M.Z, {}), (0, a.jsx)("div", {
         className: V.divider
       }), (0, a.jsx)(k.Z, {
         overlayRef: n,
-        progressBarRef: C,
+        progressBarRef: j,
         isHovered: false
       }), (0, a.jsx)(L.Z, {
         contentLocation: "expanded",
-        progressBarRef: C,
+        progressBarRef: j,
         isExpanded: true,
-        percentComplete: W,
-        activeScreen: x,
-        popoutTargetElementRef: _
+        percentComplete: G,
+        activeScreen: h,
+        popoutTargetElementRef: C
       }), (0, a.jsx)(A.n, {
-        children: !p && !(0, S.Gd)(c) && (0, o.EQ)(x).with(v.LI.SELECT, () => (0, a.jsx)(U.Z, {
-          onConsole: () => j(B.cd.CONSOLE),
-          onDesktop: () => j(B.cd.DESKTOP)
+        children: !m && !(0, S.Gd)(c) && (0, o.EQ)(h).with(v.LI.SELECT, () => (0, a.jsx)(U.Z, {
+          onConsole: () => g(B.cd.CONSOLE),
+          onDesktop: () => g(B.cd.DESKTOP)
         })).with(v.LI.DESKTOP, () => (0, a.jsx)(Z.Z, {
           quest: c
         })).with(v.LI.CONSOLE, () => (0, a.jsx)(R.Z, {
@@ -303,16 +301,15 @@ function K(e) {
           taskDetails: d
         })).exhaustive()
       }), (0, a.jsxs)(A.n, {
-        children: [O && (0, a.jsx)(z, {
-          onClick: G
+        children: [T && (0, a.jsx)(z, {
+          onClick: N
         }), (0, a.jsx)(I.r, {
-          isExpanded: u,
-          awaitingConsoleConnections: T,
-          hasMadeProgress: f,
-          isProgressing: h,
-          activeScreen: x,
-          showBackButton: x !== v.LI.SELECT && g.length > 1 && !f && !h,
-          onBack: () => j(null),
+          awaitingConsoleConnections: _,
+          hasMadeProgress: p,
+          isProgressing: f,
+          activeScreen: h,
+          showBackButton: h !== v.LI.SELECT && x.length > 1 && !p && !f,
+          onBack: () => g(null),
           sourceQuestContent: v.jn.QUEST_BAR_V2
         })]
       })]

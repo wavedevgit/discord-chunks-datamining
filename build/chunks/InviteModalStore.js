@@ -2,7 +2,7 @@
 /** chunk id: 590965, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
-  Z: () => T
+  Z: () => Z
 }), require("./388685.js"), require("./539854.js");
 var i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -12,6 +12,7 @@ var i, Chunk442837 = require("./442837.js"),
   Chunk131704 = require("./131704.js"),
   Chunk314897 = require("./314897.js"),
   Chunk592125 = require("./592125.js"),
+  Chunk271383 = require("./271383.js"),
   Chunk430824 = require("./430824.js"),
   Chunk701190 = require("./701190.js"),
   Chunk496675 = require("./496675.js"),
@@ -23,7 +24,7 @@ var i, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 
-function m(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,77 +40,87 @@ function A(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
 }
 let E = Chunk981631.IlC.APP,
-  P = false,
   j = false,
-  _ = [];
+  _ = false,
+  C = [];
 
-function C() {
-  P = true
+function N() {
+  j = true
 }
-class N extends(i = Chunk442837.ZP.Store) {
+class T extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk430824.Z, Chunk701190.Z, Chunk496675.Z, Chunk699516.Z, Chunk594174.default)
+    this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk271383.ZP, Chunk430824.Z, Chunk701190.Z, Chunk496675.Z, Chunk699516.Z, Chunk594174.default)
   }
   isOpen() {
     let e = __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP;
-    return !!(P && _.length > 0 && E === module)
+    return !!(j && C.length > 0 && E === module)
   }
   getProps() {
     return {
-      invite: _.length > 0 ? _[0][0] : null,
+      invite: C.length > 0 ? C[0][0] : null,
       error: null != r && "" !== r ? r : null,
-      submitting: j
+      submitting: _
     }
   }
 }
-m(N, "displayName", "InviteModalStore");
-let T = new N(Chunk570140.Z, {
-  OVERLAY_INITIALIZE: C,
-  CONNECTION_OPEN: C,
+P(T, "displayName", "InviteModalStore");
+let Z = new T(Chunk570140.Z, {
+  OVERLAY_INITIALIZE: N,
+  CONNECTION_OPEN: N,
   CONNECTION_CLOSED: function() {
-    P = false
+    j = false
   },
   INVITE_MODAL_OPEN: function(e) {
     let t = e.invite;
     if (null == t) returnfalse;
-    if (t.state !== I.r2o.EXPIRED && t.state !== I.r2o.BANNED && t.state !== I.r2o.ERROR) {
+    if (t.state !== S.r2o.EXPIRED && t.state !== S.r2o.BANNED && t.state !== S.r2o.ERROR) {
       let {
         channel: e,
-        guild: n
+        guild: r
       } = t;
       if (null == e) returnfalse;
-      if ((0, s.bc)(e.type)) {
-        if (null != f.Z.getChannel(e.id)) return (0, d.XU)(I.ME, e.id), h.ZP.focus(), false
+      if ((0, d.bc)(e.type)) {
+        if (null != f.Z.getChannel(e.id)) return (0, s.XU)(S.ME, e.id), w.ZP.focus(), false
       } else {
-        if (null == n) returnfalse;
-        if (null != O.Z.getGuild(n.id) && !(0, c.TY)(t)) {
-          let e = function(e) {
-            if ((0, c.W6)(e)) return S.oC.ROLE_SUBSCRIPTIONS;
-            let {
-              channel: t
-            } = e;
-            if (null != t) {
-              let e = f.Z.getChannel(t.id);
-              if (g.Z.can(I.Plq.VIEW_CHANNEL, e)) return t.id
-            }
-            return null
-          }(t);
-          return (0, d.XU)(n.id, e), h.ZP.focus(), false
+        if (null == r) returnfalse;
+        if (null != g.Z.getGuild(r.id) && !(0, c.TY)(t)) {
+          let e = false;
+          if (null != t.roles && t.roles.length > 0) {
+            var n;
+            let i = a.default.getId(),
+              l = O.ZP.getMember(r.id, i),
+              o = new Set(null != (n = null == l ? true : l.roles) ? n : []);
+            e = t.roles.some(e => !o.has(e.id))
+          }
+          if (!e) {
+            let e = function(e) {
+              if ((0, c.W6)(e)) return m.oC.ROLE_SUBSCRIPTIONS;
+              let {
+                channel: t
+              } = e;
+              if (null != t) {
+                let e = f.Z.getChannel(t.id);
+                if (v.Z.can(S.Plq.VIEW_CHANNEL, e)) return t.id
+              }
+              return null
+            }(t);
+            return (0, s.XU)(r.id, e), w.ZP.focus(), false
+          }
         }
       }
     }
-    if (_.some(e => {
+    if (C.some(e => {
         let [n] = e;
         return n.code === t.code
       })) returnfalse;
-    E = e.context, j = false;
-    let n = function(e) {
+    E = e.context, _ = false;
+    let r = function(e) {
       let {
         approximate_member_count: t,
         approximate_presence_count: n,
@@ -119,8 +130,8 @@ let T = new N(Chunk570140.Z, {
         target_user: o,
         target_application: u,
         type: c,
-        channel: d,
-        guild: s,
+        channel: s,
+        guild: d,
         is_nickname_changeable: a
       } = e, f = {
         code: r,
@@ -133,27 +144,27 @@ let T = new N(Chunk570140.Z, {
         type: c,
         is_nickname_changeable: a
       };
-      return null != d && (f.channel = A({}, d)), null != s && (f.guild = (0, y.Qs)(s)), null != e.inviter && (f.inviter = A({}, e.inviter)), f
+      return null != s && (f.channel = A({}, s)), null != d && (f.guild = (0, h.Qs)(d)), null != e.inviter && (f.inviter = A({}, e.inviter)), null != e.roles && (f.roles = e.roles), f
     }(t);
-    _.push([n, e.resolve]), (0, w.Lz)({
+    C.push([r, e.resolve]), (0, I.Lz)({
       location: "accept_invite_modal",
       autoTrackExposure: true,
       guild: t.guild
     }).showFriendsInServer && u.ZP.fetchFriendMembers(t.code)
   },
   INVITE_MODAL_CLOSE: function() {
-    if (r = null, j = false, _.length > 0) {
-      let [, e] = _.shift();
+    if (r = null, _ = false, C.length > 0) {
+      let [, e] = C.shift();
       null != module && module()
     }
   },
   INVITE_ACCEPT: function() {
-    j = true
+    _ = true
   },
   INVITE_MODAL_ERROR: function(e) {
     let {
       message: t
     } = e;
-    r = t, j = false
+    r = t, _ = false
   }
 })

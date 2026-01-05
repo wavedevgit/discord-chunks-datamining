@@ -1,12 +1,12 @@
 /** Chunk was on 13873 **/
 /** chunk id: 978986, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  NQ: () => v,
+  NQ: () => p,
   U1: () => w,
   XW: () => a,
-  _J: () => p,
-  aP: () => b,
-  e7: () => g,
+  _J: () => v,
+  aP: () => g,
+  e7: () => b,
   h6: () => y,
   oE: () => O,
   pB: () => f,
@@ -49,18 +49,18 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let d = {
+let s = {
   nickname: true,
   dmsAllowed: !Chunk695346.iG.getSetting()
 };
 
-function s(e) {
+function d(e) {
   let t = l.no.getSetting();
   return t !== i.GI.ACTIVITY_STATUS_ON && (t !== i.GI.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS || null == e || !(e > 200))
 }
 let a = (0, Chunk663042.U)(e => ({
-    nickname: d.nickname,
-    dmsAllowed: d.dmsAllowed,
+    nickname: s.nickname,
+    dmsAllowed: s.dmsAllowed,
     showActivity: true,
     inviteCode: true,
     guildId: true,
@@ -89,14 +89,14 @@ let a = (0, Chunk663042.U)(e => ({
       guildSize: t,
       inviteCode: n,
       guildId: r,
-      showActivity: s(t),
+      showActivity: d(t),
       dmsAllowed: !l.iG.getSetting(),
       touched: false
     })),
     reset: () => e(e => ({
-      nickname: d.nickname,
-      dmsAllowed: d.dmsAllowed,
-      showActivity: s(e.guildSize),
+      nickname: s.nickname,
+      dmsAllowed: s.dmsAllowed,
+      showActivity: d(e.guildSize),
       inviteCode: true,
       guildId: true,
       guildSize: e.guildSize,
@@ -109,13 +109,13 @@ let a = (0, Chunk663042.U)(e => ({
   O = () => {
     a.getState().reset()
   },
-  b = () => {
+  g = () => {
     let e = a.getState();
-    return module.nickname !== d.nickname || module.dmsAllowed !== d.dmsAllowed || module.showActivity !== s(module.guildSize)
+    return module.nickname !== s.nickname || module.dmsAllowed !== s.dmsAllowed || module.showActivity !== d(module.guildSize)
   },
-  g = () => a.getState().inviteCode,
-  p = () => a.getState().guildId,
-  v = () => a.getState().touched,
+  b = () => a.getState().inviteCode,
+  v = () => a.getState().guildId,
+  p = () => a.getState().touched,
   y = () => a.getState().dmsAllowed,
   h = () => a.getState().nickname,
   w = () => a.getState().showActivity,

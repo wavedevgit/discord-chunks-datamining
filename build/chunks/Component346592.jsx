@@ -18,14 +18,14 @@ let c = function(e) {
     quest: l,
     questContent: c,
     taskDetails: d,
-    location: E,
-    sourceQuestContent: m
+    location: m,
+    sourceQuestContent: E
   } = e, f = (0, a.DD)({
     quest: l,
     taskDetails: d,
-    location: E,
+    location: m,
     questContent: c,
-    sourceQuestContent: m
+    sourceQuestContent: E
   });
   return (0, r.jsxs)("div", {
     className: s()(u.wrapper, t),
@@ -34,8 +34,7 @@ let c = function(e) {
       className: u.rewardTile,
       quest: l,
       questContent: c,
-      location: E,
-      sourceQuestContent: m
+      sourceQuestContent: E
     }), (0, r.jsx)("div", {
       className: u.copy,
       children: (0, r.jsx)(i.Text, {

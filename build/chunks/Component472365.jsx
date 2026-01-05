@@ -86,7 +86,7 @@ function U(e) {
     className: r()(b.iconContainer, l),
     children: [(0, t.jsx)(S.Z, {
       className: b.iconSparklePlus
-    }), (0, t.jsx)(o.xPt, {
+    }), (0, t.jsx)(d.xPt, {
       size: "custom",
       color: "currentColor",
       className: b.iconLink,
@@ -101,7 +101,7 @@ function U(e) {
 function z(e) {
   let {
     transitionState: l
-  } = e, n = (0, h.Dt)(), {
+  } = e, n = (0, j.Dt)(), {
     analyticsLocations: i
   } = (0, g.ZP)(x.Z.INVITE_MODAL);
   return (0, t.jsx)(g.Gt, {
@@ -115,7 +115,7 @@ function z(e) {
         className: b.errorContent,
         children: [(0, t.jsx)(U, {
           className: b.errorImage
-        }), (0, t.jsx)(o.Heading, {
+        }), (0, t.jsx)(d.Heading, {
           id: n,
           variant: "heading-xl/semibold",
           color: "text-strong",
@@ -139,27 +139,27 @@ function y(e) {
   let S, T, k, {
     transitionState: U
   } = e;
-  (0, d.e7)([f.default], () => {
+  (0, o.e7)([f.default], () => {
     var e;
     return null == (e = f.default.getCurrentUser()) ? true : e.premiumType
   });
-  let y = (0, d.e7)([f.default], () => f.default.getCurrentUser()),
+  let y = (0, o.e7)([f.default], () => f.default.getCurrentUser()),
     {
       invite: V,
       error: w,
       submitting: H
-    } = (0, d.cj)([R.Z], () => R.Z.getProps()),
-    K = (0, d.e7)([N.Z], () => {
+    } = (0, o.cj)([R.Z], () => R.Z.getProps()),
+    K = (0, o.e7)([N.Z], () => {
       var e;
       return N.Z.getFriendMemberIds(null != (e = null == V ? true : V.code) ? e : "")
     });
   i.useEffect(() => {
     if (null != V && null != V.guild) {
       var e;
-      (0, j.pB)(null != (e = V.approximate_member_count) ? e : 0, V.code, V.guild.id)
+      (0, h.pB)(null != (e = V.approximate_member_count) ? e : 0, V.code, V.guild.id)
     }
   }, [V, null == V ? true : V.approximate_member_count, null == V ? true : V.code, null == V || null == (l = V.guild) ? true : l.id]);
-  let W = (0, j.yr)(),
+  let W = (0, h.yr)(),
     {
       showFriendsInServer: G,
       showInviter: X
@@ -172,7 +172,7 @@ function y(e) {
   i.useEffect(() => {
     !__OVERLAY__ && L.isPlatformEmbedded && ((0, L.isWindows)() ? Z.ZP.minimize() : Z.ZP.restore(), Z.ZP.focus())
   }, []);
-  let B = (0, h.Dt)(),
+  let B = (0, j.Dt)(),
     {
       analyticsLocations: Q
     } = (0, g.ZP)(x.Z.INVITE_MODAL),
@@ -246,13 +246,13 @@ function y(e) {
             className: b.inviterContainer,
             children: [(0, t.jsx)(m.Z, {
               user: new I.Z(et),
-              size: o.EFr.SIZE_20
-            }), (0, t.jsx)(o.Text, {
+              size: d.EFr.SIZE_20
+            }), (0, t.jsx)(d.Text, {
               tag: "span",
               variant: "text-md/medium",
               color: "text-subtle",
               children: O.intl.format(O.t.ri1ubC, {
-                usernameHook: (e, l) => (0, t.jsx)(o.Text, {
+                usernameHook: (e, l) => (0, t.jsx)(d.Text, {
                   variant: "text-md/semibold",
                   color: "text-default",
                   tag: "span",
@@ -284,7 +284,7 @@ function y(e) {
                   text: eu ? O.intl.string(O.t.ZNCziL) : k,
                   icon: eu || null == y ? true : () => (0, t.jsx)(m.Z, {
                     "aria-hidden": true,
-                    size: o.EFr.SIZE_16,
+                    size: d.EFr.SIZE_16,
                     user: y,
                     className: b.acceptAsAvatar
                   })

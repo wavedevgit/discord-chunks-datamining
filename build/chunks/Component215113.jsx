@@ -115,7 +115,7 @@ function U(e) {
       impressionId: Q
     }),
     ei = (0, u.e7)([p.Z], () => p.Z.getState().theme),
-    ea = (0, d.wjy)(ei) ? L.BR.DARK : L.BR.LIGHT,
+    ea = (0, d.wjy)(ei) ? k.BR.DARK : k.BR.LIGHT,
     es = o.useMemo(() => ({
       quest: g,
       sourceQuestContent: q,
@@ -143,7 +143,7 @@ function U(e) {
           icon: e => (0, r.jsx)(d.Dio, Z(V({}, e), {
             color: d.TVs.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT
           })),
-          "aria-label": k.intl.string(k.t.cpT0Cq),
+          "aria-label": L.intl.string(L.t.cpT0Cq),
           onClick: a
         })
       }), (0, r.jsx)("div", {
@@ -180,7 +180,7 @@ function U(e) {
                   children: [(0, r.jsx)(d.Heading, {
                     variant: "heading-md/semibold",
                     color: "text-strong",
-                    children: k.intl.format(k.t.EQa7os, {
+                    children: L.intl.format(L.t.EQa7os, {
                       questName: g.config.messages.questName
                     })
                   }), (0, r.jsx)(d.Text, {
@@ -232,7 +232,7 @@ function U(e) {
                 }), (0, r.jsx)(P.Z, {})]
               }) : (0, r.jsx)(d.Button, {
                 variant: "secondary",
-                text: k.intl.string(k.t.cpT0Cq),
+                text: L.intl.string(L.t.cpT0Cq),
                 onClick: a
               }), (0, r.jsxs)("div", {
                 className: i()(M.contentFooterButtonCont, {
