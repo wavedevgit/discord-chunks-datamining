@@ -35,7 +35,7 @@ function h(e) {
   if (null == t || null == P || null == j || y.speaker) return null;
   let _ = () => {
     if (v) {
-      if ((0, O.u1)()) return void a.Z.showAgeVerificationGetStartedModal({
+      if ((0, O.u1)(t.id)) return void a.Z.showAgeVerificationGetStartedModal({
         entryPoint: o.cU.STAGE_CHANNEL_RAISE_HAND
       });
       (0, c.RK)(t, false)

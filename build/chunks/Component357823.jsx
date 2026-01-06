@@ -24,8 +24,8 @@ let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     user: t,
     channel: n,
     guildId: a,
-    onSelect: u,
-    onInteraction: d,
+    onSelect: d,
+    onInteraction: u,
     context: g
   } = e, v = n.id, C = t.isNonUserBot(), M = t.id === E.default.getId(), b = (0, _.Z)(t), O = (0, s.Z)(t, a, v), I = (0, A.Y)({
     isOwnSettings: M,
@@ -41,8 +41,8 @@ let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     navId: "user-context",
     onClose: r.Zy,
     "aria-label": S.intl.string(S.t.liqwPJ),
-    onSelect: u,
-    onInteraction: d,
+    onSelect: d,
+    onInteraction: u,
     variant: "fixed",
     children: !C && (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)(l.kSQ, {

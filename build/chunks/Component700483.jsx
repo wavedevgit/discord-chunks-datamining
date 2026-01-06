@@ -144,7 +144,7 @@ function eh(e) {
   return (0, r.jsx)(L.d, {
     isTrayButton: true,
     onClick: () => {
-      if ((0, y.v)(n, y.d.SPEAK_ON_STAGE), (0, ei.u1)()) return void d.Z.showAgeVerificationGetStartedModal({
+      if ((0, y.v)(n, y.d.SPEAK_ON_STAGE), (0, ei.u1)(t.id)) return void d.Z.showAgeVerificationGetStartedModal({
         entryPoint: u.cU.STAGE_CHANNEL_RAISE_HAND
       });
       (0, W.RK)(t, false)
