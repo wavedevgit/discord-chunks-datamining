@@ -12,7 +12,7 @@ var Chunk992774 = require("./992774.js"),
       if (__OVERLAY__);
       else if (Chunk358085.isPlatformEmbedded) {
         let e = (0, Chunk992774.zS)();
-        if (null == module.VoiceConnection || null == module.setVideoOutputSink && null == module.addVideoOutputSink) throw Error("voe function missing");
+        if (null == module.VoiceConnection) throw Error("voe function missing");
         returntrue
       }
     } catch (e) {

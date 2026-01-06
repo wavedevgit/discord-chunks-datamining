@@ -93,8 +93,7 @@ function g(e) {
           }, e), {
             size: n,
             shouldLoadVideo: a,
-            isReducedMotion: u,
-            enablePremiumBrandRefreshDesign: g
+            isReducedMotion: u
           }), e.name))
         })
       })
