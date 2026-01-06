@@ -13,13 +13,13 @@ var Chunk481060 = require("./481060.js"),
 function o(t) {
   let n = (0, r.Xb)(t),
     e = t.isLockedThread();
-  if (!(!n || t.isModeratorReportChannel())) return e ? (0, i.jsx)(a.sNh, {
+  if (!(!n || t.isModeratorReportChannel())) return e ? (0, i.jsx)(l.sNh, {
     id: "unlock-thread",
     label: t.isForumPost() ? s.intl.string(s.t["/OKSxp"]) : s.intl.string(s.t["jeyb/W"]),
-    action: () => l.Z.unlockThread(t)
-  }) : (0, i.jsx)(a.sNh, {
+    action: () => a.Z.unlockThread(t)
+  }) : (0, i.jsx)(l.sNh, {
     id: "lock-thread",
     label: t.isForumPost() ? s.intl.string(s.t["Ur/0Na"]) : s.intl.string(s.t.HoCqm8),
-    action: () => l.Z.lockThread(t)
+    action: () => a.Z.lockThread(t)
   })
 }

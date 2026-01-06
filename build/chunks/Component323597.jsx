@@ -21,26 +21,26 @@ var Chunk442837 = require("./442837.js"),
 
 function m(t) {
   let n = t.isForumPost(),
-    e = (0, a.e7)([h.default], () => t.isOwner(h.default.getId()), [t]),
+    e = (0, l.e7)([h.default], () => t.isOwner(h.default.getId()), [t]),
     m = (0, u.HL)(t),
     {
       canManageChannel: b,
       canAccessChannel: p
-    } = (0, a.cj)([f.Z], () => ({
+    } = (0, l.cj)([f.Z], () => ({
       canAccessChannel: f.Z.can(t.accessPermissions, t),
       canManageChannel: f.Z.can(t.isThread() ? v.Plq.MANAGE_THREADS : v.Plq.MANAGE_CHANNELS, t)
     }), [t]),
-    C = (0, a.e7)([c.Z], () => {
+    C = (0, l.e7)([c.Z], () => {
       var n;
       return null != (n = c.Z.getCount(t.id)) ? n : 0
     }, [t.id]),
     {
       firstMessage: _
-    } = (0, a.e7)([d.Z], () => d.Z.getMessage(t.id), [t.id]),
+    } = (0, l.e7)([d.Z], () => d.Z.getMessage(t.id), [t.id]),
     O = m && b && null == _,
     N = n && (b || e && C < 1 || O),
     j = n && e && !b && C > 0 && null != _;
-  return p && (!m || O) && (b || N || j) ? (0, i.jsx)(l.sNh, {
+  return p && (!m || O) && (b || N || j) ? (0, i.jsx)(a.sNh, {
     id: "delete-channel",
     label: t.type === v.d4z.GUILD_CATEGORY ? Z.intl.string(Z.t.ifbXnL) : t.isForumPost() ? N ? Z.intl.string(Z.t.nEOg1N) : Z.intl.string(Z.t.xwMqD7) : t.isThread() ? Z.intl.string(Z.t.H7vTe2) : Z.intl.string(Z.t["8D8Rsb"]),
     color: "danger",

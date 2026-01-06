@@ -189,7 +189,7 @@ function B(e) {
         className: U.buttons,
         children: [et ? (0, i.jsx)(H, {
           channel: q
-        }) : (0, i.jsx)(c.u, {
+        }) : !Q && (0, i.jsx)(c.u, {
           text: L.intl.string(L.t.F7oeDv),
           children: (0, i.jsx)(u.Button, {
             icon: eu,

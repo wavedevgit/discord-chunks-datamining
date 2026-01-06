@@ -14,11 +14,11 @@ function o(t) {
   let n = (0, r.C7)(t),
     e = (0, r.$R)(t),
     o = (0, r.Gu)(t);
-  return !n || !e || o || t.isModeratorReportChannel() || __OVERLAY__ ? null : (0, i.jsx)(a.sNh, {
+  return !n || !e || o || t.isModeratorReportChannel() || __OVERLAY__ ? null : (0, i.jsx)(l.sNh, {
     id: "edit-thread",
     label: t.isForumPost() ? s.intl.string(s.t.NP1yHG) : s.intl.string(s.t["2Mk1TP"]),
     action: () => {
-      (0, a.pTH)(), l.ZP.open(t.id)
+      (0, l.pTH)(), a.ZP.open(t.id)
     }
   })
 }

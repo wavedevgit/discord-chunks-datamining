@@ -23,13 +23,13 @@ function Z(t) {
     tag: n
   } = t, {
     name: e,
-    emojiId: l,
+    emojiId: a,
     emojiName: r
-  } = n, d = (0, a.e7)([o.ZP], () => null != l ? o.ZP.getUsableCustomEmojiById(l) : null);
+  } = n, d = (0, l.e7)([o.ZP], () => null != a ? o.ZP.getUsableCustomEmojiById(a) : null);
   return (0, i.jsxs)(i.Fragment, {
-    children: [null != r || null != l ? (0, i.jsx)(s.Z, {
+    children: [null != r || null != a ? (0, i.jsx)(s.Z, {
       className: v.emoji,
-      emojiId: l,
+      emojiId: a,
       emojiName: r,
       animated: !!(null == d ? true : d.animated)
     }) : null, e]
@@ -37,9 +37,9 @@ function Z(t) {
 }
 
 function m(t) {
-  let n = (0, a.e7)([h.Z], () => h.Z.getChannel(t), [t]),
+  let n = (0, l.e7)([h.Z], () => h.Z.getChannel(t), [t]),
     e = (0, c.C7)(n),
-    s = (0, a.e7)([h.Z], () => h.Z.getChannel(null == n ? true : n.parent_id), [n]),
+    s = (0, l.e7)([h.Z], () => h.Z.getChannel(null == n ? true : n.parent_id), [n]),
     o = (0, u.Vm)(s),
     v = (0, u.eV)(n),
     m = v.length >= f.Cn,
@@ -48,7 +48,7 @@ function m(t) {
   if (!e || __OVERLAY__ || !n.isForumPost() || (null == o ? true : o.length) === 0 || !b || n.isModeratorReportChannel()) return null;
   let p = null == o ? true : o.map(t => {
     let e = v.includes(t);
-    return (0, i.jsx)(l.S89, {
+    return (0, i.jsx)(a.S89, {
       id: t.id,
       label: (0, i.jsx)(Z, {
         tag: t
@@ -67,7 +67,7 @@ function m(t) {
       checked: e
     }, t.id)
   });
-  return (0, i.jsx)(l.sNh, {
+  return (0, i.jsx)(a.sNh, {
     id: "edit-tags",
     label: g.intl.string(g.t["436ZFw"]),
     children: p

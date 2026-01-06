@@ -1,12 +1,14 @@
 /** Chunk was on 41700 **/
 /** chunk id: 739830, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk665149 = require("./665149.jsx"),
+  Chunk41776 = require("./41776.js"),
   Chunk585483 = require("./585483.js"),
   Chunk723170 = require("./723170.js"),
   Chunk64247 = require("./64247.jsx"),
@@ -14,7 +16,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -33,7 +35,7 @@ function h(e) {
   return e
 }
 
-function f(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,40 +48,40 @@ function f(e, t) {
   }), e
 }
 
-function g(e) {
+function b(e) {
   let {
     channel: t
-  } = e, n = (0, o.B)(t), [g, m] = i.useState(false), b = i.useRef(null);
-  i.useEffect(() => {
-    let e = () => m(true);
-    return s.S.subscribe(u.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-      s.S.unsubscribe(u.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
-    }
-  }, []);
-  let y = p.intl.string(p.t.h850Ss);
-  return (0, r.jsx)(l.yRy, {
-    targetElementRef: b,
-    shouldShow: g,
-    animation: l.yRy.Animation.NONE,
+  } = e, n = (0, d.B)(t), [b, y] = i.useState(false), O = i.useRef(null), x = (0, l.e7)([o.Z], () => null != t.guild_id && o.Z.isLurking(t.guild_id));
+  if (i.useEffect(() => {
+      let e = () => y(true);
+      return c.S.subscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+        c.S.unsubscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+      }
+    }, []), x) return null;
+  let j = f.intl.string(f.t.h850Ss);
+  return (0, r.jsx)(a.yRy, {
+    targetElementRef: O,
+    shouldShow: b,
+    animation: a.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: false,
-    onRequestClose: () => m(false),
-    renderPopout: e => (0, r.jsx)(c.Z, f(h({}, e), {
+    onRequestClose: () => y(false),
+    renderPopout: e => (0, r.jsx)(u.Z, m(g({}, e), {
       channel: t,
       navId: "thread-context",
-      label: p.intl.string(p.t["1NBjqb"])
+      label: f.intl.string(f.t["1NBjqb"])
     })),
     children: (e, t) => {
       let {
         isShown: i
       } = t;
-      return (0, r.jsx)(a.ZP.Icon, f(h({}, e), {
-        ref: b,
-        onClick: () => m(e => !e),
-        tooltip: i ? null : y,
-        icon: n === d.iN.NO_MESSAGES ? l.owu : l.Dkj,
-        "aria-label": y,
+      return (0, r.jsx)(s.ZP.Icon, m(g({}, e), {
+        ref: O,
+        onClick: () => y(e => !e),
+        tooltip: i ? null : j,
+        icon: n === p.iN.NO_MESSAGES ? a.owu : a.Dkj,
+        "aria-label": j,
         selected: i
       }))
     }

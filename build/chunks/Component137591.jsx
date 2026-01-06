@@ -15,10 +15,10 @@ function d(t) {
   var n, e;
   if (!(0, r.Xb)(t) || t.type !== s.d4z.PRIVATE_THREAD) return null;
   let d = null == (e = null == (n = t.threadMetadata) ? true : n.invitable) || e;
-  return (0, i.jsx)(a.S89, {
+  return (0, i.jsx)(l.S89, {
     id: "toggle-thread-invitable",
     label: o.intl.string(o.t.s2rpNf),
     checked: d,
-    action: () => l.Z.setInvitable(t, !d)
+    action: () => a.Z.setInvitable(t, !d)
   })
 }

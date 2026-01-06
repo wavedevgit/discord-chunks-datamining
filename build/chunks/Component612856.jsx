@@ -15,25 +15,25 @@ var Chunk442837 = require("./442837.js"),
 
 function c(t) {
   let n = (0, o.B)(t);
-  return (0, a.e7)([r.Z], () => r.Z.hasJoined(t.id)) ? (0, i.jsx)(l.sNh, {
+  return (0, l.e7)([r.Z], () => r.Z.hasJoined(t.id)) ? (0, i.jsx)(a.sNh, {
     id: "thread-notifications",
     label: u.intl.string(u.t.h850Ss),
     children: (0, d.zb)().map(e => {
       let {
-        setting: a,
+        setting: l,
         label: r
       } = e;
-      return (0, i.jsx)(l.k5B, {
+      return (0, i.jsx)(a.k5B, {
         group: "thread-notifications",
-        id: "".concat(a),
+        id: "".concat(l),
         label: r,
         action: () => s.Z.setNotificationSettings(t, {
-          flags: a
+          flags: l
         }),
-        checked: a === n
-      }, a)
+        checked: l === n
+      }, l)
     })
-  }) : (0, i.jsx)(l.sNh, {
+  }) : (0, i.jsx)(a.sNh, {
     id: "notifications-disabled",
     label: u.intl.string(u.t.h850Ss),
     disabled: true
