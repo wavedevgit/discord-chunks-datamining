@@ -400,7 +400,7 @@ function e1(e) {
               },
               openInPopout: s,
               analyticsLocation: o
-            }), (0, D.v)(l, D.d.ACTIVITY), n === d.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && i(eB.L.TAKE_ACTION)
+            }), (0, D.v)(l, D.d.ACTIVITY), n === d.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && i(eH.L.TAKE_ACTION)
           },
           onMouseEnter: () => {
             O.onMouseEnter()
@@ -454,7 +454,7 @@ function e4(e) {
       isHovered: h
     })
   }, [t, h]), C = i.useCallback(() => {
-    c(), h ? m(false) : m(true), (0, D.v)(l, D.d.GIFTING), O === d.z.GAME_SHOP_RTC_GIFTING_NEW_BADGE && v(eB.L.TAKE_ACTION)
+    c(), h ? m(false) : m(true), (0, D.v)(l, D.d.GIFTING), O === d.z.GAME_SHOP_RTC_GIFTING_NEW_BADGE && v(eH.L.TAKE_ACTION)
   }, [l, c, h, O, v]);
   return (0, r.jsx)(E.yRy, {
     targetElementRef: n,
@@ -787,7 +787,7 @@ class e8 extends Chunk473749.PureComponent {
         })
       })
     }), eY(this, "handleCloseVoicePanelIntroduction", () => {
-      Y.Kw(eH.v.VOICE_PANEL_INTRODUCTION)
+      Y.Kw(eB.v.VOICE_PANEL_INTRODUCTION)
     }), eY(this, "renderVoicePanelIntroduction", () => (0, r.jsxs)("div", {
       className: a()(ez.voicePanelIntroductionWrapper, "theme-light"),
       children: [(0, r.jsx)(E.Heading, {
@@ -840,8 +840,8 @@ function e5(e) {
   }))
 }
 let e2 = (0, Chunk730749.Z)(function(e) {
-  let t = (0, H.Z)(),
-    n = (0, u.e7)([B.default], () => B.default.getAwaitingRemoteSessionInfo()),
+  let t = (0, B.Z)(),
+    n = (0, u.e7)([H.default], () => H.default.getAwaitingRemoteSessionInfo()),
     l = (0, u.e7)([eP.default], () => eP.default.getCurrentUser()),
     a = (0, u.cj)([eN.Z], () => null != t ? {
       channelId: t.channelId,
@@ -867,7 +867,7 @@ let e2 = (0, Chunk730749.Z)(function(e) {
       noiseCancellationError: eS.Z.isNoiseCancellationError(),
       canGoLive: (0, F.Z)(eS.Z)
     })),
-    g = (0, u.e7)([eS.Z, W.Z], () => W.Z.hasHotspot(eH.v.VOICE_PANEL_INTRODUCTION) && (0, eL.EO)(l) && !eS.Z.isInteractionRequired() && !(null == c ? true : c.isGuildStageVoice())),
+    g = (0, u.e7)([eS.Z, W.Z], () => W.Z.hasHotspot(eB.v.VOICE_PANEL_INTRODUCTION) && (0, eL.EO)(l) && !eS.Z.isInteractionRequired() && !(null == c ? true : c.isGuildStageVoice())),
     h = (0, u.e7)([ex.Z], () => null != o && ex.Z.hasVideo(o), [o]),
     m = (0, u.e7)([eO.Z], () => eO.Z.getCurrentUserActiveStream()),
     b = (0, u.e7)([eC.Z], () => eC.Z.hasLayers()),

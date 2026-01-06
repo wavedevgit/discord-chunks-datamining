@@ -112,8 +112,8 @@ function Z(e) {
       checkSoundSharing: true
     }),
     G = null != (t = v.getGuildId()) ? t : true,
-    B = Z.getAvatarURL(v.guild_id, 24),
-    H = null != w ? w : C.ZP.getName(Z),
+    H = Z.getAvatarURL(v.guild_id, 24),
+    B = null != w ? w : C.ZP.getName(Z),
     {
       icon: V,
       colorize: F,
@@ -139,9 +139,9 @@ function Z(e) {
       localMute: k
     })) ? l : {},
     Y = null != z ? T.intl.formatToPlainString(T.t["1+MVBP"], {
-      userName: H,
+      userName: B,
       status: z()
-    }) : H;
+    }) : B;
 
   function W(e) {
     null != G ? (0, u.jW)(e, async () => {
@@ -200,7 +200,7 @@ function Z(e) {
           children: (0, r.jsx)("div", {
             className: N.avatar,
             style: j({
-              backgroundImage: "url(".concat(B, ")")
+              backgroundImage: "url(".concat(H, ")")
             }, K),
             children: null != V ? (0, r.jsx)(V, {
               className: a()(N.avatarIconOverlay, {

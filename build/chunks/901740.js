@@ -23,7 +23,6 @@ module.exports = {
   nameCellInfo: "adb41f8099151bc8-nameCellInfo",
   lastPlayedCellNew: "adb41f8099151bc8-lastPlayedCellNew",
   gameIcon: "adb41f8099151bc8-gameIcon",
-  actionButtonSize: "adb41f8099151bc8-actionButtonSize",
   hidden: "adb41f8099151bc8-hidden",
   settingIcons: "adb41f8099151bc8-settingIcons",
   settingIcon: "adb41f8099151bc8-settingIcon adb41f8099151bc8-icon",

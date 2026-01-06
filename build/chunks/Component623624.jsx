@@ -2,13 +2,11 @@
 /** chunk id: 623624, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  f: () => g
+  f: () => m
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
-var Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
-  Chunk442837 = require("./442837.js"),
+var Chunk442837 = require("./442837.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk84615 = require("./84615.jsx"),
@@ -17,46 +15,42 @@ var Chunk512722 = require("./512722.js"),
   Chunk594174 = require("./594174.js"),
   Chunk443002 = require("./443002.jsx"),
   Chunk218319 = require("./218319.jsx");
-let m = "BoostedGuildPerksModalConnected",
-  h = e => {
+let p = "BoostedGuildPerksModalConnected",
+  _ = e => {
     let {
       guildId: t,
       close: n,
-      location: i
-    } = e, c = (0, o.e7)([f.default], () => f.default.getCurrentUser());
-    a()(null != c, "PremiumGuildPerksModalConnected: currentUser cannot be undefined");
-    let m = (0, o.e7)([d.Z], () => d.Z.getGuild(t), [t]),
-      {
-        analyticsLocations: h
-      } = (0, l.ZP)(s.Z.BOOSTED_GUILD_PERKS_MODAL),
-      g = (0, u.$)("BoostedGuildPerksModal");
-    if (null == m) return null;
-    let E = g ? _.Z : p.Z;
-    return (0, r.jsx)(l.Gt, {
-      value: h,
-      children: (0, r.jsx)(E, {
-        analyticsLocation: i,
+      location: s
+    } = e, p = (0, i.e7)([u.default], () => u.default.getCurrentUser()), _ = (0, i.e7)([c.Z], () => c.Z.getGuild(t), [t]), {
+      analyticsLocations: m
+    } = (0, o.ZP)(a.Z.BOOSTED_GUILD_PERKS_MODAL), h = (0, l.$)("BoostedGuildPerksModal");
+    if (null == p || null == _) return null;
+    let g = h ? f.Z : d.Z;
+    return (0, r.jsx)(o.Gt, {
+      value: m,
+      children: (0, r.jsx)(g, {
+        analyticsLocation: s,
         onClose: n,
-        guild: m
+        guild: _
       })
     })
   };
 
-function g(e) {
+function m(e) {
   let {
     guildId: t,
     location: n
   } = e;
-  (0, c.q4)(e => {
+  (0, s.q4)(e => {
     let {
       closeLayer: i
     } = e;
-    return (0, r.jsx)(h, {
+    return (0, r.jsx)(_, {
       close: i,
       guildId: t,
       location: n
     })
   }, {
-    layerKey: m
+    layerKey: p
   })
 }

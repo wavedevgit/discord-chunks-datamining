@@ -32,8 +32,8 @@ let j = (0, Chunk473749.memo)(function(e) {
   var t, n, l, j, P, x;
   let {
     quest: A
-  } = e, [Z, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, M] = (0, i.useState)(false), k = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
-    ref: H,
+  } = e, [Z, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, M] = (0, i.useState)(false), k = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), H = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
+    ref: B,
     height: V = 0
   } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, O.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
     month: "numeric",
@@ -116,7 +116,7 @@ let j = (0, Chunk473749.memo)(function(e) {
       className: a()(N.container, {
         [N.hovered]: Z
       }),
-      children: [null != B && K && null != X && (0, r.jsx)("div", {
+      children: [null != H && K && null != X && (0, r.jsx)("div", {
         ref: G,
         className: N.decoWrapper,
         style: {
@@ -124,7 +124,7 @@ let j = (0, Chunk473749.memo)(function(e) {
         },
         children: (0, r.jsx)(g.Z, {
           avatarDecorationOverride: X,
-          user: B,
+          user: H,
           guildId: null,
           animateOnHover: !Z
         })
@@ -166,7 +166,7 @@ let j = (0, Chunk473749.memo)(function(e) {
           withGameTile: false
         })
       }), (0, r.jsxs)("div", {
-        ref: H,
+        ref: B,
         className: N.details,
         children: [(0, r.jsx)(d.Heading, {
           className: N.title,

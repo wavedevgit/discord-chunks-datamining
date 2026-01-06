@@ -92,9 +92,9 @@ function A(e) {
     U = (0, y.sR)({
       isSoundboardButtonDisabled: R
     }),
-    [G, B] = (0, _.cv)(U),
+    [G, H] = (0, _.cv)(U),
     {
-      analyticsLocations: H,
+      analyticsLocations: B,
       parentAnalyticsLocation: V
     } = (0, h.ZP)(g.Z.SOUNDBOARD_BUTTON);
 
@@ -105,7 +105,7 @@ function A(e) {
       } = await n.e("56049").then(n.bind(n, 338991));
       return t => (0, r.jsx)(e, x(P({
         guildId: k,
-        sourceAnalyticsLocations: H
+        sourceAnalyticsLocations: B
       }, t), {
         onInteraction: (0, b.u)("SoundboardContextMenu", g.Z.RTC_PANEL)
       }))
@@ -125,7 +125,7 @@ function A(e) {
     event: S.CkL.TOGGLE_SOUNDBOARD,
     handler: K
   }), (0, r.jsx)(h.Gt, {
-    value: H,
+    value: B,
     children: (0, r.jsx)(u.u, {
       targetElementRef: A,
       text: Z ? N.intl.string(N.t["Ox4/zU"]) : w ? N.intl.string(N.t["+YBKYI"]) : L ? N.intl.string(N.t.X1lQli) : N.intl.string(N.t["6EJvHt"]),
@@ -147,7 +147,7 @@ function A(e) {
             onClose: n,
             gridNotice: G === s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(I.o, {
               onClose: n,
-              markAsDismissed: B
+              markAsDismissed: H
             }),
             analyticsSource: "rtc panel"
           })
@@ -165,7 +165,7 @@ function A(e) {
             innerClassName: j.buttonContents,
             disabled: R,
             onClick: () => {
-              null != G && G !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && B(T.L.UNKNOWN), M(!D), Y(), (0, m.v)(V, m.d.SOUNDBOARD)
+              null != G && G !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && H(T.L.UNKNOWN), M(!D), Y(), (0, m.v)(V, m.d.SOUNDBOARD)
             },
             onMouseEnter: e => {
               var t;

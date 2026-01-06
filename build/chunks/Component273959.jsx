@@ -51,7 +51,7 @@ function j(e) {
     }),
     {
       application: G,
-      isFrameInFocusedMode: B
+      isFrameInFocusedMode: H
     } = (0, s.cj)([d.Z, g.Z], () => {
       let e = g.Z.getConnectedFrame();
       return {
@@ -59,16 +59,16 @@ function j(e) {
         isFrameInFocusedMode: g.Z.getFrameLayoutMode() === C.U.FOCUSED
       }
     }),
-    H = null != G ? y.ZP.getApplicationIconURL({
+    B = null != G ? y.ZP.getApplicationIconURL({
       id: G.id,
       icon: G.icon,
       bot: G.bot
     }) : true,
     V = null;
-  null != G && B ? (l = G.name, V = (0, r.jsx)("img", {
+  null != G && H ? (l = G.name, V = (0, r.jsx)("img", {
     className: N.appIcon,
     alt: S.intl.string(S.t.X4IxWL),
-    src: H,
+    src: B,
     "aria-hidden": true,
     draggable: false
   })) : M ? (l = S.intl.string(S.t.HcoRu0), V = (0, r.jsx)(u.Dkj, {

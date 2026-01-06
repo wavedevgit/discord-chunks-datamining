@@ -176,7 +176,7 @@ function w() {
   let {
     frequentFriends: L,
     showCompetitiveSpot: R
-  } = exports, D = (Chunk518950 === Chunk742280.S.AU || Chunk518950 === Chunk742280.S.GB) && !Chunk592125, M = null != Chunk518950 && Chunk742280.M.EU_COUNTRIES.has(Chunk518950) && !Chunk120356, k = !D && !M && null != Chunk518950 && R, U = Chunk493683.scrollWidth > Chunk493683.clientWidth, G = Chunk493683.scrollLeft > 0, B = Chunk493683.scrollLeft < Chunk493683.scrollWidth - Chunk493683.clientWidth - 2;
+  } = exports, D = (Chunk518950 === Chunk742280.S.AU || Chunk518950 === Chunk742280.S.GB) && !Chunk592125, M = null != Chunk518950 && Chunk742280.M.EU_COUNTRIES.has(Chunk518950) && !Chunk120356, k = !D && !M && null != Chunk518950 && R, U = Chunk493683.scrollWidth > Chunk493683.clientWidth, G = Chunk493683.scrollLeft > 0, H = Chunk493683.scrollLeft < Chunk493683.scrollWidth - Chunk493683.clientWidth - 2;
   return (0, Chunk54381.jsxs)(Chunk54381.Fragment, {
     children: [(0, Chunk54381.jsxs)("div", {
       className: Chunk938359.frequentFriendsRow,
@@ -198,7 +198,7 @@ function w() {
         },
         className: a()(Chunk938359.frequentFriendsAvatars, {
           [Chunk938359.scrollMaskLeft]: U && G,
-          [Chunk938359.scrollMaskRight]: U && B
+          [Chunk938359.scrollMaskRight]: U && H
         }),
         orientation: "horizontal",
         onScroll: w,

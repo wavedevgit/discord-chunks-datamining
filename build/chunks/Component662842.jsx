@@ -51,7 +51,7 @@ function D(e) {
     isEventNoticeHidden: m.Z.isLiveChannelNoticeHidden({
       eventId: null == d ? true : d.id
     })
-  }), [j, d]), U = null == l ? true : l.id, G = (0, o.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), B = (0, o.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), H = (0, o.e7)([P.Z], () => P.Z.can(Z.Plq.CONNECT, l)), V = (0, N.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, o.e7)([x.default], () => x.default.getUser(F), [F]);
+  }), [j, d]), U = null == l ? true : l.id, G = (0, o.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), H = (0, o.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), B = (0, o.e7)([P.Z], () => P.Z.can(Z.Plq.CONNECT, l)), V = (0, N.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, o.e7)([x.default], () => x.default.getUser(F), [F]);
   i.useEffect(() => {
     null != F && (0, u.PR)(F)
   }, [F]);
@@ -249,15 +249,15 @@ function D(e) {
     guildEvent: d,
     stageInstance: j,
     activeChannel: l,
-    canConnect: H,
+    canConnect: B,
     myRole: V,
     eventCreator: z,
     speakers: G,
-    listenerCount: B,
+    listenerCount: H,
     isEventNoticeHidden: k,
     isStageNoticeHidden: D,
     isStudyRoomNotice: n
-  }), [d, j, l, H, V, z, G, B, k, D, n]);
+  }), [d, j, l, B, V, z, G, H, k, D, n]);
   return null == Y ? null : (0, r.jsxs)("div", {
     className: R.container,
     children: [null != ee ? (0, r.jsx)(c.P3F, {

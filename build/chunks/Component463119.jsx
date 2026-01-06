@@ -95,7 +95,7 @@ let G = e => {
       text: R.intl.string(R.t.y2b7CA)
     })
   },
-  B = () => {
+  H = () => {
     let {
       noCache: e,
       includeUnpublished: t
@@ -106,7 +106,7 @@ let G = e => {
       includeBundles: true
     }, true, true), null
   },
-  H = e => {
+  B = e => {
     var {
       selected: t,
       locationState: n,
@@ -135,7 +135,7 @@ let G = e => {
       }, [m, E, a, v, s]),
       I = w.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
-      children: [O && (0, r.jsx)(B, {}), (0, r.jsx)(g.Qj, k(M({
+      children: [O && (0, r.jsx)(H, {}), (0, r.jsx)(g.Qj, k(M({
         selected: t,
         route: I,
         icon: null != l ? l : p.EOn,
@@ -149,7 +149,7 @@ let G = e => {
       }))]
     })
   },
-  V = e => (0, r.jsx)(H, k(M({}, e), {
+  V = e => (0, r.jsx)(B, k(M({}, e), {
     children: (0, r.jsx)(G, {})
   })),
   F = Chunk473749.memo(function(e) {
@@ -199,7 +199,7 @@ let G = e => {
       [x, A] = i.useState(false),
       [Z, w] = i.useState(false),
       L = i.useRef(null),
-      B = i.useRef(null),
+      H = i.useRef(null),
       V = (0, h.ZP)(),
       Y = (0, d.wj)(V),
       W = (0, S.p)({
@@ -212,13 +212,13 @@ let G = e => {
         let t = () => {
           w(W.useNewHoverStyle && z(L))
         };
-        t(), B.current = requestAnimationFrame(t), null == e || e()
+        t(), H.current = requestAnimationFrame(t), null == e || e()
       }, [C.assetIds.length, W.useNewHoverStyle]),
       Q = i.useCallback(e => {
-        A(false), w(false), null != B.current && (cancelAnimationFrame(B.current), B.current = null), null == e || e()
+        A(false), w(false), null != H.current && (cancelAnimationFrame(H.current), H.current = null), null == e || e()
       }, []);
     i.useEffect(() => () => {
-      null != B.current && cancelAnimationFrame(B.current)
+      null != H.current && cancelAnimationFrame(H.current)
     }, []);
     let J = C.title();
     return (0, r.jsx)(p.aML, {
@@ -234,7 +234,7 @@ let G = e => {
       allowOverflow: true,
       hideOnClick: false,
       "aria-label": "string" == typeof J ? J : R.intl.string(R.t.rSXaxY),
-      children: e => (0, r.jsxs)(H, k(M(k(M({
+      children: e => (0, r.jsxs)(B, k(M(k(M({
         className: null != C.entryPointClassName ? (0, I.l)(D, C.entryPointClassName) : true
       }, T), {
         icon: C.entryPointIcon
@@ -282,7 +282,7 @@ let G = e => {
       delay: 100,
       hideOnClick: false,
       "aria-label": t.title(),
-      children: e => (0, r.jsx)(H, k(M({}, n, e), {
+      children: e => (0, r.jsx)(B, k(M({}, n, e), {
         children: (0, r.jsx)(G, {
           color: t.badgeColor
         })
@@ -319,7 +319,7 @@ let G = e => {
         cancelAnimationFrame(t)
       }
     }, [v, b.useNewHoverStyle]), (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(H, k(M({}, s), {
+      children: [(0, r.jsxs)(B, k(M({}, s), {
         onClick: () => o(L.L.TAKE_ACTION),
         listItemRef: c,
         children: [(0, r.jsx)("div", {
@@ -349,7 +349,7 @@ let G = e => {
     } = e, n = U(e, ["dismissContent"]);
     let l = i.useRef(null);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(H, k(M({}, n), {
+      children: [(0, r.jsx)(B, k(M({}, n), {
         onClick: () => t(L.L.TAKE_ACTION),
         listItemRef: l
       })), (0, r.jsx)(j.Z, {
@@ -398,5 +398,5 @@ let G = e => {
     }
     return d === c.z.WISHLIST_SHOP_BUTTON_POPOVER ? (0, r.jsx)(K, k(M({}, g), {
       dismissContent: f
-    })) : (0, r.jsx)(H, M({}, g))
+    })) : (0, r.jsx)(B, M({}, g))
   }

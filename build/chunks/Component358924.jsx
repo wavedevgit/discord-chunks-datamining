@@ -520,10 +520,10 @@ eO.Header = eE, eO.Body = e => {
           } = c;
           return null == e || !(0, v.Z)(c) || (0, y.Z)(c) ? null : ec((0, O.Z)(c) ? (0, i.jsx)(eu, {
             timestamps: e
-          }) : (0, i.jsx)(H.ZP, {
+          }) : (0, i.jsx)(B.ZP, {
             start: e.start,
             end: e.end,
-            location: H.ZP.Locations.USER_ACTIVITY,
+            location: B.ZP.Locations.USER_ACTIVITY,
             className: ea.__invalid_playTime
           }))
         })()]
@@ -654,7 +654,7 @@ eO.Header = eE, eO.Body = e => {
   } = e, u = (0, c.e7)([Q.Z], () => Q.Z.getChannel(a.channelId)), [d, p] = (0, G.wq)(u), g = (0, i.jsxs)(f.P3F, {
     onClick: d ? o : true,
     className: ea.applicationStreamingPreviewWrapper,
-    children: [(0, i.jsx)(B.Z, {
+    children: [(0, i.jsx)(H.Z, {
       stream: a,
       className: ea.applicationStreamingPreviewSize
     }), (0, i.jsx)(f.Text, {

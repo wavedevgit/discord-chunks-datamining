@@ -139,7 +139,7 @@ class er extends Chunk473749.PureComponent {
       runningGamePid: Z,
       runningNonGame: M,
       selectedChannelId: U,
-      selectedGuildId: H,
+      selectedGuildId: B,
       connected: V
     } = this.props;
     if (e.voiceChannelId !== m && null != e.voiceChannelId) {
@@ -147,7 +147,7 @@ class er extends Chunk473749.PureComponent {
         n = null != t ? t.name : "",
         r = w.Z.getStageInstanceByChannel(e.voiceChannelId),
         i = S.ZP.getActiveEventByChannel(e.voiceChannelId),
-        a = B.Z.getLastRTCConnectionState();
+        a = H.Z.getLastRTCConnectionState();
       (null == a ? true : a.channelId) !== e.voiceChannelId && (a = null), Q.default.track(X.rMx.LEAVE_VOICE_CHANNEL, et({
         channel_id: e.voiceChannelId,
         channel_type: e.voiceChannelType,
@@ -184,8 +184,8 @@ class er extends Chunk473749.PureComponent {
         game_id: this.props.gameId,
         stage_instance_id: null == n ? true : n.id,
         guild_scheduled_event_id: null == r ? true : r.id,
-        was_moved: B.Z.getWasMoved(),
-        join_voice_id: B.Z.getJoinVoiceId()
+        was_moved: H.Z.getWasMoved(),
+        join_voice_id: H.Z.getJoinVoiceId()
       }, (0, f.oG)(I, m), (0, f.kO)(I, m, N)))
     }
     let z = (null == A ? true : A.distributor) === (null == (t = e.runningGame) ? true : t.distributor) && (null == A ? true : A.sku) === (null == (n = e.runningGame) ? true : n.sku) && (null == A ? true : A.name) === (null == (r = e.runningGame) ? true : r.name),
@@ -252,7 +252,7 @@ class er extends Chunk473749.PureComponent {
         preview_enabled: L.qF.getSetting()
       }, n, this.getGameMetadata(), (0, f.AB)(m)))
     }
-    if (V && null != U && (!e.connected || U !== e.selectedChannelId || H !== e.selectedGuildId)) {
+    if (V && null != U && (!e.connected || U !== e.selectedChannelId || B !== e.selectedGuildId)) {
       let t = e.selectedChannelId,
         n = R.Z.getChannel(t),
         r = k.Z.getGuild(null == n ? true : n.getGuildId());
@@ -327,7 +327,7 @@ function ei() {
   }, [Chunk695346]);
   let {
     connected: G,
-    friendsTabSection: B,
+    friendsTabSection: H,
     homeLink: K,
     isMemberPending: J,
     selectedChannelId: $,

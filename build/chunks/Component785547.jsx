@@ -6,10 +6,10 @@ require.d(exports, {
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk58642 = require("./58642.js"),
   Chunk2052 = require("./2052.js"),
@@ -134,52 +134,51 @@ class M extends(r = Chunk473749.Component) {
       libraryApplication: e,
       fullWidth: t,
       size: n,
-      color: r,
-      customDisabledColor: a,
-      isPlayShiny: o,
-      onDropdownOpen: s,
-      onDropdownClose: l,
-      analyticsListSort: c,
-      analyticsListIndex: u
+      playButtonVariant: r = "secondary",
+      disabledVariant: a,
+      onDropdownOpen: o,
+      onDropdownClose: s,
+      analyticsListSort: l,
+      analyticsListIndex: c
     } = this.props;
     return (0, Chunk54381.jsx)(Chunk701560.Z, {
       applicationId: module.id,
       libraryApplication: module,
       fullWidth: exports,
       size: require,
-      color: r,
-      customDisabledColor: Chunk473749,
-      isShiny: Chunk442837,
-      onDropdownOpen: Chunk692547,
-      onDropdownClose: Chunk28664,
-      analyticsListSort: Chunk755721,
-      analyticsListIndex: Chunk481060
+      variant: r,
+      disabledVariant: Chunk473749,
+      onDropdownOpen: Chunk793030,
+      onDropdownClose: Chunk442837,
+      analyticsListSort: Chunk692547,
+      analyticsListIndex: Chunk28664
     })
   }
   renderDisabledButton(e, t) {
     let {
-      className: n,
-      fullWidth: r,
-      size: a,
-      customDisabledColor: o,
+      fullWidth: n,
+      size: r,
+      disabledVariant: a = "secondary",
       tooltipPosition: s
-    } = this.props;
+    } = this.props, l = this.renderProgressBar();
     return (0, i.jsxs)("div", {
-      className: A.disabledButtonWrapper,
-      children: [(0, i.jsxs)(c.zx, {
-        className: n,
-        fullWidth: r,
-        size: a,
-        color: null != o ? o : A.disabledButtonColor,
-        disabled: true,
-        children: [this.getText(e), this.renderProgressBar()]
-      }), (0, i.jsx)(l.u, {
-        text: t,
-        position: s,
-        children: (0, i.jsx)("div", {
-          className: A.disabledButtonOverlay
-        })
-      })]
+      className: null != l ? A.buttonWithProgress : true,
+      children: [(0, i.jsxs)("div", {
+        className: A.disabledButtonWrapper,
+        children: [(0, i.jsx)(o.zxk, {
+          text: this.getText(e),
+          fullWidth: n,
+          size: r,
+          variant: a,
+          disabled: true
+        }), (0, i.jsx)(c.u, {
+          text: t,
+          position: s,
+          children: (0, i.jsx)("div", {
+            className: A.disabledButtonOverlay
+          })
+        })]
+      }), l]
     })
   }
   renderProgressBar() {
@@ -201,20 +200,21 @@ class M extends(r = Chunk473749.Component) {
   }
   renderActionButton(e, t) {
     let {
-      className: n,
-      fullWidth: r,
-      size: a,
-      color: o,
+      fullWidth: n,
+      size: r,
+      actionButtonVariant: a = "primary",
       isCloudSyncing: s
-    } = this.props;
-    return (0, i.jsxs)(c.zx, {
-      className: n,
-      fullWidth: r,
-      size: a,
-      color: null != o ? o : c.zx.Colors.GREEN,
-      submitting: "uninstalling" === e || s,
-      onClick: e => this.handleClick(e, t),
-      children: [this.getText(e), this.renderProgressBar()]
+    } = this.props, l = this.renderProgressBar();
+    return (0, i.jsxs)("div", {
+      className: null != l ? A.buttonWithProgress : true,
+      children: [(0, i.jsx)(o.zxk, {
+        text: this.getText(e),
+        fullWidth: n,
+        size: r,
+        variant: a,
+        loading: "uninstalling" === e || s,
+        onClick: e => this.handleClick(e, t)
+      }), l]
     })
   }
   render() {
@@ -268,19 +268,18 @@ class M extends(r = Chunk473749.Component) {
 function k(e) {
   let {
     libraryApplication: t
-  } = e, n = (0, f.O)(), [r, a] = (0, o.Wu)([E.Z, b.Z], () => [(0, h.i)(t, E.Z, b.Z), E.Z.getState(t.id, t.branchId)], [t]), s = (0, o.e7)([g.Z], () => g.Z.isSyncing(t.id, t.branchId), [t]), l = (0, o.e7)([m.Z], () => m.Z.hasNoBuild(t.id, t.branchId), [t]);
+  } = e, n = (0, f.O)(), [r, a] = (0, s.Wu)([E.Z, b.Z], () => [(0, h.i)(t, E.Z, b.Z), E.Z.getState(t.id, t.branchId)], [t]), o = (0, s.e7)([g.Z], () => g.Z.isSyncing(t.id, t.branchId), [t]), l = (0, s.e7)([m.Z], () => m.Z.hasNoBuild(t.id, t.branchId), [t]);
   return (0, i.jsx)(M, w(P({}, e), {
     analyticsContext: n,
     actionState: r,
     dispatchState: a,
-    isCloudSyncing: s,
+    isCloudSyncing: o,
     hasNoBuild: l
   }))
 }
 N(M, "defaultProps", {
   fullWidth: false,
-  size: Chunk755721.zx.Sizes.LARGE,
+  size: "md",
   hideProgress: false,
-  isPlayShiny: false,
   tooltipPosition: "top"
 }), N(M, "ButtonStates", D)

@@ -72,8 +72,8 @@ let D = +Chunk70956.Z.Millis.DAY,
   k = [],
   U = null,
   G = 0,
-  B = [],
   H = [],
+  B = [],
   V = {},
   F = {},
   z = {},
@@ -146,22 +146,22 @@ function eb() {
 
 function e_() {
   let e = new Set;
-  if (B.forEach(t => {
+  if (H.forEach(t => {
       e.add(t.id)
     }), null != ee)
     if (module.has(ee.id)) {
       let e = ee.id,
         t = ee.type,
-        n = B.findIndex(n => n.id === e && n.type === t);
-      false !== require && (ee = B[require], B = B.filter(t => t.id !== e), B = [ee, ...B])
-    } else B = [ee, ...B], module.add(ee.id);
-  B.forEach(e => {
+        n = H.findIndex(n => n.id === e && n.type === t);
+      false !== require && (ee = H[require], H = H.filter(t => t.id !== e), H = [ee, ...H])
+    } else H = [ee, ...H], module.add(ee.id);
+  H.forEach(e => {
     F[e.id] = e, e.type === j.Ni.CUSTOM_STATUS && (O.Z.isBlockedOrIgnored(e.data.user_id) ? Y[e.id] = true : z[e.id] = (0, x.mV)(e))
   })
 }
 
 function eE(e) {
-  if (B.length > 0 && (k = B, B = [], H = []), K++, null != e) en = e.newUnread, er = e.newRead;
+  if (H.length > 0 && (k = H, H = [], B = []), K++, null != e) en = e.newUnread, er = e.newRead;
   else {
     let [e, t] = eO(k);
     en = e, er = t
@@ -280,7 +280,7 @@ function ey(e, t) {
 }
 
 function eI(e, t) {
-  (0, x.jv)(t) === x.aL.MUTED && (k = ey(k, e), en = ey(en, e), er = ey(er, e), B = ey(B, e), H = ey(H, e))
+  (0, x.jv)(t) === x.aL.MUTED && (k = ey(k, e), en = ey(en, e), er = ey(er, e), H = ey(H, e), B = ey(B, e))
 }
 
 function eC(e, t) {
@@ -288,7 +288,7 @@ function eC(e, t) {
 }
 
 function eS(e, t) {
-  (0, x.jv)(t) === x.aL.MUTED && (k = eC(k, e), en = eC(en, e), er = eC(er, e), B = eC(B, e), H = eC(H, e))
+  (0, x.jv)(t) === x.aL.MUTED && (k = eC(k, e), en = eC(en, e), er = eC(er, e), H = eC(H, e), B = eC(B, e))
 }
 
 function eT(e) {
@@ -312,8 +312,8 @@ function eN(e) {
     (i > ei || !X) && e.type === j.Ni.MESSAGE && e.data.channel_id === t ? n.push(e) : r.push(e)
   });
   let i = J,
-    [l, a] = eO(B);
-  if (H = ev(l, t), J = X ? i && H.length >= j.Lb : i && eg(r, B), 0 === n.length && i === J) returnfalse;
+    [l, a] = eO(H);
+  if (B = ev(l, t), J = X ? i && B.length >= j.Lb : i && eg(r, H), 0 === n.length && i === J) returnfalse;
   0 !== n.length && (en = r, er = [...er, ...n])
 }
 class ej extends(r = Chunk442837.ZP.PersistedStore) {
@@ -332,7 +332,7 @@ class ej extends(r = Chunk442837.ZP.PersistedStore) {
     return k
   }
   getNewDehydratedItems() {
-    return B
+    return H
   }
   getDehydratedItem(e) {
     var t;
@@ -353,7 +353,7 @@ class ej extends(r = Chunk442837.ZP.PersistedStore) {
     return en
   }
   getNewUnreadDehydratedItems() {
-    return H
+    return B
   }
   getReadDisplayItems() {
     return er
@@ -437,14 +437,14 @@ class ej extends(r = Chunk442837.ZP.PersistedStore) {
 w(ej, "displayName", "ICYMIStore"), w(ej, "persistKey", "ICYMIStore");
 let eP = new ej(Chunk570140.Z, {
   LOGOUT: function() {
-    k = [], B = [], H = [], F = {}, V = {}, z = {}, Y = {}, U = null, W = {}, q = {}, K = 0, Q = false, J = false, X = false, en = [], er = [], ei = 0, G = 0, ea = 0, eo = true, es = false, ec = new Set, ee = null, eu = false, ed = false, $ = null, ep = 0
+    k = [], H = [], B = [], F = {}, V = {}, z = {}, Y = {}, U = null, W = {}, q = {}, K = 0, Q = false, J = false, X = false, en = [], er = [], ei = 0, G = 0, ea = 0, eo = true, es = false, ec = new Set, ee = null, eu = false, ed = false, $ = null, ep = 0
   },
   LOAD_ICYMI_FROM_NOTIFICATION: function(e) {
     let {
       messageItem: t,
       customStatusItem: n
     } = e;
-    if (null != n) return ee = n, null != U && (B = B.length > 0 ? B : [...k], e_(), eE()), true;
+    if (null != n) return ee = n, null != U && (H = H.length > 0 ? H : [...k], e_(), eE()), true;
     if (null != t) {
       let e = {
         id: t.message.id,
@@ -462,7 +462,7 @@ let eP = new ej(Chunk570140.Z, {
         }), null == U && null == V) {
         let [t, n] = eO(k = [e, ...k]);
         en = t, er = n
-      } else B = [e, ...B], eE();
+      } else H = [e, ...H], eE();
       returntrue
     }
     returnfalse
@@ -475,7 +475,7 @@ let eP = new ej(Chunk570140.Z, {
       isInitialLoad: i,
       isReloading: l
     } = e;
-    B = function(e) {
+    H = function(e) {
       let {
         contentGenerationEnabled: t
       } = (0, T.q3)("processRawItems", false), n = N.Z.onlyShowRecentGeneratedCandidates(), r = new Set(j.zd);
@@ -491,16 +491,16 @@ let eP = new ej(Chunk570140.Z, {
     }(t), e_(), V = {
       load_id: n,
       load_time_millis: Date.now() - r,
-      feed_item_ids: B.map(e => e.id)
+      feed_item_ids: H.map(e => e.id)
     };
-    let [a, o] = eO(B);
-    if (H = ev(a), !X || 0 === K || i) K = 0, !eu && eg(a, B) ? (J = true, Q = true) : J = false, eE({
+    let [a, o] = eO(H);
+    if (B = ev(a), !X || 0 === K || i) K = 0, !eu && eg(a, H) ? (J = true, Q = true) : J = false, eE({
       newUnread: a,
       newRead: o
     });
     else {
       K > 0 && (ee = null);
-      let e = H.length > j.Lb;
+      let e = B.length > j.Lb;
       l || (J = e), e && ((0, x.em)([...a, ...o], 0, j.xy), a.length + o.length === 0 && (ed = true))
     }
     S.m.trackFeedLoaded({
@@ -611,7 +611,7 @@ let eP = new ej(Chunk570140.Z, {
     })
   },
   RELOAD_ICYMI: function() {
-    if (0 === B.length) returnfalse;
+    if (0 === H.length) returnfalse;
     eE(), J = false
   },
   ICYMI_TAB_OPENED: function() {

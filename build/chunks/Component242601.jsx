@@ -452,7 +452,7 @@ function ed(e) {
   let p = (0, v.Z)(n),
     f = (0, o.e7)([D.Z], () => D.Z.getGuildDimensions(n).scrollTo),
     T = (0, o.e7)([V.Z], () => V.Z.getChannelId()),
-    P = (0, o.e7)([B.Z], () => B.Z.can(X.Plq.MANAGE_GUILD, u)),
+    P = (0, o.e7)([H.Z], () => H.Z.can(X.Plq.MANAGE_GUILD, u)),
     Z = (0, o.e7)([M.Z], () => M.Z.isUnavailable(n)),
     w = (0, o.e7)([F.default], () => F.default.getCurrentUser()),
     {
@@ -475,7 +475,7 @@ function ed(e) {
     e_ = (0, x.Z)(n),
     eE = (0, C.Z)(n),
     eO = (0, o.e7)([V.Z], () => V.Z.getChannelId()),
-    ev = (0, o.e7)([H.Z], () => H.Z.desyncedVoiceStatesCount),
+    ev = (0, o.e7)([B.Z], () => B.Z.desyncedVoiceStatesCount),
     ey = (0, A.Z)(n);
   return (0, r.jsx)(eu, {
     guildId: n,

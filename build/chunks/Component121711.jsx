@@ -225,7 +225,7 @@ let eO = function(e) {
     withClaimedQuestsTab: !g
   });
   i.useLayoutEffect(() => {
-    g && T === z.e5.CLAIMED && H.Z.setState({
+    g && T === z.e5.CLAIMED && B.Z.setState({
       tab: z.e5.ALL
     })
   }, [g, T]);
@@ -318,12 +318,12 @@ let eO = function(e) {
   }, [t]);
   let ep = i.useCallback(() => {
       (0, W.navigateToQuestHome)({
-        fromContent: B.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER
+        fromContent: H.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER
       }), R.default.track(ei.rMx.QUEST_CONTENT_CLICKED, eh({
         cta_name: U.jZ.VIEW_QUESTS,
         click_id: (0, s.Z)(),
         is_targeted: false
-      }, (0, U.mH)(B.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER)))
+      }, (0, U.mH)(H.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER)))
     }, []),
     ef = i.useCallback(e => {
       var t, n, r;

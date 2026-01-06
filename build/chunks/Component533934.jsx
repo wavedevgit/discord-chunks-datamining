@@ -139,13 +139,13 @@ let eR = (0, Chunk608787.Un)({
     name: "GuildHomePage",
     renderLoader: eD
   }),
-  eB = (0, Chunk608787.Un)({
+  eH = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("6850"), require.e("9924")]).then(require.bind(require, 545918)),
     webpackId: 545918,
     name: "MemberSafetyPage",
     renderLoader: eD
   }),
-  eH = (0, Chunk608787.Un)({
+  eB = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("58227"), require.e("26494"), require.e("58121")]).then(require.bind(require, 603072)),
     webpackId: 603072,
     name: "ChannelsAndRolesPage",
@@ -230,7 +230,7 @@ let eR = (0, Chunk608787.Un)({
           guildId: o
         });
       case eP.oC.CHANNEL_BROWSER:
-        return (0, r.jsx)(eH, {
+        return (0, r.jsx)(eB, {
           guildId: o,
           selectedSection: eA.l7.BROWSE
         });
@@ -239,12 +239,12 @@ let eR = (0, Chunk608787.Un)({
           guildId: o
         });
       case eP.oC.CUSTOMIZE_COMMUNITY:
-        return (0, r.jsx)(eH, {
+        return (0, r.jsx)(eB, {
           guildId: o,
           selectedSection: eA.l7.CUSTOMIZE
         });
       case eP.oC.MEMBER_SAFETY:
-        return (0, r.jsx)(eB, {
+        return (0, r.jsx)(eH, {
           guildId: o
         });
       case eP.oC.GUILD_BOOSTS:
@@ -264,7 +264,7 @@ let eR = (0, Chunk608787.Un)({
       default:
         (0, eS.vE)(f)
     }
-    if ((0, H.p3)(g, h)) return (0, r.jsx)(V.Z, {
+    if ((0, B.p3)(g, h)) return (0, r.jsx)(V.Z, {
       guildId: o,
       channelId: f
     });
@@ -314,7 +314,7 @@ let eR = (0, Chunk608787.Un)({
     let {
       match: t
     } = e;
-    return null != t.params.guildId ? (0, r.jsx)(B.Z, {
+    return null != t.params.guildId ? (0, r.jsx)(H.Z, {
       guildId: t.params.guildId
     }) : null
   },

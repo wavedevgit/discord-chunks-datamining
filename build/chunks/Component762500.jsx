@@ -48,8 +48,8 @@ function x(e) {
   } = e, {
     analyticsLocations: G
   } = (0, p.ZP)(d.Z.PREMIUM_GIFT_INTENT_FRIEND_ROW), {
-    Component: B
-  } = (0, c.V)(), H = (0, s.e7)([C.ZP], () => C.ZP.getFriendAnniversaryYears(k.id)), V = (0, E.ao)({
+    Component: H
+  } = (0, c.V)(), B = (0, s.e7)([C.ZP], () => C.ZP.getFriendAnniversaryYears(k.id)), V = (0, E.ao)({
     location: "gift-intent-friend-row",
     isGift: true,
     giftRecipient: k
@@ -131,7 +131,7 @@ function x(e) {
               variant: "text-xs/normal",
               color: "text-subtle",
               children: j.intl.formatToPlainString(j.t.S3fdq7, {
-                numberOfYears: H
+                numberOfYears: B
               })
             })]
           })]
@@ -143,7 +143,7 @@ function x(e) {
         children: [(0, r.jsx)(u.hU, {
           size: "sm",
           variant: "secondary",
-          icon: B,
+          icon: H,
           "aria-label": j.intl.string(j.t.I61IsE),
           onClick: () => {
             v.default.track(T.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {

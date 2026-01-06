@@ -121,8 +121,8 @@ function Z(e) {
     subHeaderExtra: k,
     featureCards: U,
     changeLogId: G,
-    button: B,
-    body: H
+    button: H,
+    body: B
   } = e, {
     onClose: V,
     transitionState: F
@@ -276,10 +276,10 @@ function Z(e) {
           color: "text-subtle",
           className: T.subHeader,
           children: [M, null == k ? true : k()]
-        }), null != H && "" !== H && (0, r.jsx)(p.Heading, {
+        }), null != B && "" !== B && (0, r.jsx)(p.Heading, {
           variant: "heading-lg/semibold",
           className: T.bodyText,
-          children: H
+          children: B
         }), U.length > 0 && (0, r.jsx)("div", {
           className: a()(T.featureCardGroup, {
             [T.wideStyle]: Y
@@ -289,7 +289,7 @@ function Z(e) {
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {
           className: T.buttonContainer,
-          children: B()
+          children: H()
         })]
       })]
     })

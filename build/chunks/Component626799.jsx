@@ -189,17 +189,17 @@ class R extends(r = Chunk473749.Component) {
       });
       if (null == n) return null;
       let s = null != n && n.primarySkuId === r,
-        c = null != a && a.hasFlag(S.eHb.HIDDEN);
+        l = null != a && a.hasFlag(S.eHb.HIDDEN);
       return (0, i.jsxs)("div", {
         className: T.tileActions,
-        children: [!s || c ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {
+        children: [!s || l ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {
           application: n,
-          customDisabledColor: l.zx.Colors.PRIMARY,
-          size: l.zx.Sizes.SMALL,
+          disabledVariant: "primary",
+          size: "sm",
           className: T.actionButton,
           source: S.Sbl.MESSAGE_EMBED,
           onClick: this.handleActionButtonClick
-        }), t && !c || e.premium ? null : (0, i.jsx)(f.Z, {
+        }), t && !l || e.premium ? null : (0, i.jsx)(f.Z, {
           type: f.Z.Types.EMBED,
           sku: e,
           inLibrary: false
