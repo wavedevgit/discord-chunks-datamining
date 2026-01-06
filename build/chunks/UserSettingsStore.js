@@ -178,10 +178,6 @@ class A extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     var e;
     return null == (e = y.saveCameraUploadsToDevice) || module
   }
-  get showPlayAgain() {
-    var e;
-    return null == (e = y.showPlayAgain) || module
-  }
   isVisualRefreshDisabled(e) {
     var t;
     return null != (t = y.disableVisualRefresh) ? t : e
@@ -197,7 +193,7 @@ class A extends(r = Chunk442837.ZP.DeviceSettingsStore) {
 }
 _(A, "displayName", "UnsyncedUserSettingsStore"), _(A, "persistKey", "UnsyncedUserSettingsStore"), _(A, "migrations", [() => {
   let e = Chunk433517.K.get("UserSettingsStore");
-  return Chunk433517.K.remove("UserSettingsStore"), a().pick(module, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations", "showPlayAgain")
+  return Chunk433517.K.remove("UserSettingsStore"), a().pick(module, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations")
 }, e => {
   delete e.disableVisualRefresh
 }]);
