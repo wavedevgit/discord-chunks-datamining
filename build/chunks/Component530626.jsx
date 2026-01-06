@@ -1,5 +1,5 @@
 /** Chunk was on 46746 **/
-/** chunk id: 530626, original params: e,t,n (module,exports,require) **/
+/** chunk id: 530626, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => M
 }), require("./35282.js"), require("./388685.js"), require("./642613.js");
@@ -32,16 +32,16 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk605144 = require("./605144.js");
 
-function N(e, t, n, r) {
+function N(e, t, r, n) {
   let i = (0, j.isWindows)() ? (0, w.Z)(h.ZP, g.Z) : null,
     s = h.ZP.getRunningGames(),
-    l = null == n ? true : n.split(":")[1],
+    l = null == r ? true : r.split(":")[1],
     o = e.id.split(":")[1];
   if (null != l && l === o) return 0;
   if (null != t && t === e.id) return 5;
   if (null != i && (0, y.Z)(e.id, i.windowHandle)) return 4;
   if (null != s.find(t => (0, y.Z)(e.id, t.windowHandle))) return 3;
-  let c = null == r ? true : r[o];
+  let c = null == n ? true : n[o];
   return null != c && S.Mm.has(c) ? 2 : 1
 }
 
@@ -49,15 +49,15 @@ function T(e) {
   let {
     source: t
   } = e;
-  return t.id.startsWith(a.vA.SCREEN) ? (0, r.jsx)(u.pzj, {
+  return t.id.startsWith(a.vA.SCREEN) ? (0, n.jsx)(u.pzj, {
     size: "xs"
-  }) : t.id.startsWith(a.vA.WINDOW) ? null != t.icon && "" !== t.icon ? (0, r.jsx)("img", {
+  }) : t.id.startsWith(a.vA.WINDOW) ? null != t.icon && "" !== t.icon ? (0, n.jsx)("img", {
     src: t.icon,
     className: P.sourceIcon,
     alt: ""
-  }) : (0, r.jsx)(u.GON, {
+  }) : (0, n.jsx)(u.GON, {
     size: "xs"
-  }) : (0, r.jsx)(u.Odl, {
+  }) : (0, n.jsx)(u.Odl, {
     size: "xs"
   })
 }
@@ -65,30 +65,30 @@ function T(e) {
 function R(e) {
   let {
     source: t,
-    selected: n,
+    selected: r,
     onClick: i
   } = e, {
     url: s,
     name: o
   } = t;
-  return (0, r.jsxs)(u.P3F, {
+  return (0, n.jsxs)(u.P3F, {
     onClick: () => i(t),
     className: l()(P.source, {
-      [P.selectedSource]: n
+      [P.selectedSource]: r
     }),
-    children: [(0, r.jsx)("div", {
+    children: [(0, n.jsx)("div", {
       className: P.sourcePreviewContainer,
-      children: (0, r.jsxs)("div", {
+      children: (0, n.jsxs)("div", {
         className: P.sourcePreview,
-        children: [(0, r.jsx)("img", {
+        children: [(0, n.jsx)("img", {
           src: s,
           className: P.sourcePreviewImage,
           alt: ""
-        }), (0, r.jsx)("div", {
+        }), (0, n.jsx)("div", {
           className: P.sourceOverlay,
-          children: (0, r.jsx)("div", {
+          children: (0, n.jsx)("div", {
             className: P.sourceOverlayCTA,
-            children: (0, r.jsx)(u.Text, {
+            children: (0, n.jsx)(u.Text, {
               variant: "text-sm/medium",
               color: "currentColor",
               children: E.intl.string(E.t.z7WGhv)
@@ -96,11 +96,11 @@ function R(e) {
           })
         })]
       })
-    }), (0, r.jsxs)("div", {
+    }), (0, n.jsxs)("div", {
       className: P.sourceNameContainer,
-      children: [(0, r.jsx)(T, {
+      children: [(0, n.jsx)(T, {
         source: t
-      }), (0, r.jsx)(u.Text, {
+      }), (0, n.jsx)(u.Text, {
         variant: "text-sm/medium",
         className: P.sourceName,
         children: o
@@ -113,7 +113,7 @@ function M(e) {
   let {
     onClick: t
   } = e, [{
-    windowSources: n,
+    windowSources: r,
     deviceSources: s,
     screenSources: l,
     sourceType: o,
@@ -128,27 +128,27 @@ function M(e) {
   }), T = (0, d.e7)([h.ZP], () => h.ZP.getRunningGames()), M = (0, d.cj)([h.ZP], () => {
     let e = h.ZP.getCandidateGames(),
       t = {};
-    for (let n of e) null != n.windowHandle && (t[n.windowHandle] = n.exeName);
+    for (let r of e) null != r.windowHandle && (t[r.windowHandle] = r.exeName);
     return t
-  }), L = (0, d.e7)([m.Z], () => m.Z.quests), U = (0, C.Z)(L, T, n);
+  }), L = (0, d.e7)([m.Z], () => m.Z.quests), U = (0, C.Z)(L, T, r);
   i.useEffect(() => ((0, p.Ky)(), p.P7), []);
-  let D = i.useMemo(() => Z ? [...n].sort((e, t) => N(t, null == U ? true : U.source.id, w, M) - N(e, null == U ? true : U.source.id, w, M)) : n, [U, Z, n, w, M]);
+  let G = i.useMemo(() => Z ? [...r].sort((e, t) => N(t, null == U ? true : U.source.id, w, M) - N(e, null == U ? true : U.source.id, w, M)) : r, [U, Z, r, w, M]);
   if (g) {
     if (false === S) {
       let e = false;
       if ((0, j.isMac)()) {
-        var G, H;
-        let t = null === f.Z || true === f.Z || null == (H = f.Z.remoteApp) || null == (G = H.getVersion) ? true : G.call(H);
+        var D, H;
+        let t = null === f.Z || true === f.Z || null == (H = f.Z.remoteApp) || null == (D = H.getVersion) ? true : D.call(H);
         e = !_.o || "0.0.0" === t || c().satisfies(t, "0.0.363")
       }
-      return (0, r.jsxs)("div", {
+      return (0, n.jsxs)("div", {
         className: P.errorBox,
-        children: [(0, r.jsxs)(u.Text, {
+        children: [(0, n.jsxs)(u.Text, {
           className: P.errorText,
           variant: "text-md/normal",
           color: "text-feedback-critical",
-          children: [E.intl.string(E.t["kW5h/W"]), (0, r.jsx)("br", {}), E.intl.string(E.t["5Jvu1R"])]
-        }), e && (0, r.jsx)(u.Button, {
+          children: [E.intl.string(E.t["kW5h/W"]), (0, n.jsx)("br", {}), E.intl.string(E.t["5Jvu1R"])]
+        }), e && (0, n.jsx)(u.Button, {
           text: E.intl.string(E.t["XgZk+u"]),
           onClick: () => {
             x.Z.openSettings(I.Eu.SCREEN_RECORDING)
@@ -156,15 +156,15 @@ function M(e) {
         })]
       })
     }
-    return (0, r.jsx)("div", {
+    return (0, n.jsx)("div", {
       className: P.loading,
-      children: (0, r.jsx)(u.$jN, {})
+      children: (0, n.jsx)(u.$jN, {})
     })
   }
   let B = [];
-  return (B = o === a.vA.WINDOW ? D : o === a.vA.SCREEN ? l : s, o === a.vA.CAMERA && 0 === B.length) ? (0, r.jsx)(A, {}) : (0, r.jsx)("div", {
+  return (B = o === a.vA.WINDOW ? G : o === a.vA.SCREEN ? l : s, o === a.vA.CAMERA && 0 === B.length) ? (0, n.jsx)(A, {}) : (0, n.jsx)("div", {
     className: P.root,
-    children: B.map(e => (0, r.jsx)(R, {
+    children: B.map(e => (0, n.jsx)(R, {
       onClick: t,
       source: e,
       selected: null != v && "windowHandle" in v ? (0, y.Z)(e.id, v.windowHandle) : (null == v ? true : v.id) === e.id

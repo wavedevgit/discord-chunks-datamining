@@ -1,5 +1,5 @@
 /** Chunk was on 46746 **/
-/** chunk id: 741127, original params: e,t,n (module,exports,require) **/
+/** chunk id: 741127, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => y
 }), require("./388685.js");
@@ -26,12 +26,12 @@ var Chunk120356 = require("./120356.js"),
 function b(e) {
   let {
     id: t,
-    text: n,
+    text: r,
     icon: i,
     selected: l,
     onClick: o
   } = e;
-  return (0, r.jsx)(a.P3F, {
+  return (0, n.jsx)(a.P3F, {
     role: "radio",
     "aria-checked": l,
     onClick: () => o(t),
@@ -39,14 +39,14 @@ function b(e) {
     className: s()(_.nativeSourceTypeButton, _.nativePickerRadioItem, {
       [_.selected]: l
     }),
-    children: (0, r.jsxs)("div", {
+    children: (0, n.jsxs)("div", {
       className: _.nativeSourceTypeButtonInner,
-      children: [(0, r.jsx)(i, {
+      children: [(0, n.jsx)(i, {
         size: "lg"
-      }), (0, r.jsx)(c.xvT, {
+      }), (0, n.jsx)(c.xvT, {
         variant: "text-sm/medium",
         color: "none",
-        children: n
+        children: r
       })]
     })
   })
@@ -58,28 +58,28 @@ function y(e) {
   } = e;
   (0, h.UB)(), (0, p.Z)(t, v.Vq);
   let [{
-    nativeSourceType: n
+    nativeSourceType: r
   }, i] = (0, x.E_)(), s = (0, f.isMac)() && o().satisfies(null === d.Z || true === d.Z ? true : d.Z.os.release, g.jR), l = u.Z.getUseGamescopeCapture(), y = l ? "gamescope" : "screen";
-  return (0, r.jsxs)("div", {
+  return (0, n.jsxs)("div", {
     className: _.root,
-    children: [(0, r.jsx)(c.X6q, {
+    children: [(0, n.jsx)(c.X6q, {
       className: _.header,
       variant: "heading-lg/semibold",
       color: "text-default",
       children: j.intl.string(j.t.XyYoFc)
-    }), s ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(c.xvT, {
+    }), s ? (0, n.jsxs)(n.Fragment, {
+      children: [(0, n.jsx)(c.xvT, {
         className: _.body,
         variant: "text-sm/medium",
         color: "text-subtle",
         children: j.intl.format(j.t.sbbPhW, {
           buttonName: j.intl.string(j.t.FiBjwU)
         })
-      }), (0, r.jsx)(m.Z, {})]
-    }) : (0, r.jsxs)("div", {
+      }), (0, n.jsx)(m.Z, {})]
+    }) : (0, n.jsxs)("div", {
       className: _.sourceTypeButtons,
-      children: [(0, r.jsx)(b, {
-        selected: n === y,
+      children: [(0, n.jsx)(b, {
+        selected: r === y,
         onClick: () => {
           i({
             type: "set_native_source_type",
@@ -89,8 +89,8 @@ function y(e) {
         id: "screen",
         text: j.intl.string(j.t.cVUFXY),
         icon: a.pzj
-      }), !l && (0, r.jsx)(b, {
-        selected: "window" === n,
+      }), !l && (0, n.jsx)(b, {
+        selected: "window" === r,
         onClick: () => {
           i({
             type: "set_native_source_type",

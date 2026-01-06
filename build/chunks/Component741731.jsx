@@ -1,5 +1,5 @@
 /** Chunk was on 46746 **/
-/** chunk id: 741731, original params: e,t,n (module,exports,require) **/
+/** chunk id: 741731, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -15,9 +15,9 @@ function a(e) {
   let {
     onClose: t
   } = e, {
-    analyticsLocations: n
+    analyticsLocations: r
   } = (0, l.ZP)(s.Z.GO_LIVE_MODAL_V2);
-  return (0, r.jsx)(i.sY7, {
+  return (0, n.jsx)(i.sY7, {
     options: [{
       name: "SD",
       value: "sd"
@@ -31,7 +31,7 @@ function a(e) {
     look: "pill",
     onChange: function(e) {
       "hd" === e.value && (0, o.E)({
-        analyticsLocation: null == n ? true : n[0],
+        analyticsLocation: null == r ? true : r[0],
         onClose: t
       })
     }

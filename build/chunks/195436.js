@@ -1,5 +1,5 @@
 /** Chunk was on 46746 **/
-/** chunk id: 195436, original params: e,t,n (module,exports,require) **/
+/** chunk id: 195436, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
@@ -13,14 +13,14 @@ let a = [Chunk268146.vA.CAMERA],
   d = [Chunk268146.vA.SCREEN, Chunk268146.vA.WINDOW, Chunk268146.vA.CAMERA];
 
 function u(e, t) {
-  let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
+  let r = arguments.length > 2 && true !== arguments[2] && arguments[2],
     i = (0, s.e7)([o.ZP], () => o.ZP.getRunningGames().length > 0),
-    u = r.useRef(0),
+    u = n.useRef(0),
     f = i ? 2e3 : 1e3,
-    h = r.useRef(new l.V7);
-  r.useEffect(() => {
-    if (n) return;
-    let r = h.current,
+    h = n.useRef(new l.V7);
+  n.useEffect(() => {
+    if (r) return;
+    let n = h.current,
       i = u.current,
       s = {
         width: 447,
@@ -30,18 +30,18 @@ function u(e, t) {
     async function l() {
       let {
         screenSources: e,
-        windowSources: n,
+        windowSources: r,
         cameraSources: o
       } = await (0, c.t)(s);
       u.current > i || (t({
         type: "set_source_candidates",
         screenSources: e,
-        windowSources: n,
+        windowSources: r,
         deviceSources: o
-      }), r.start(f, l))
+      }), n.start(f, l))
     }
     return l(), () => {
-      u.current += 1, r.stop()
+      u.current += 1, n.stop()
     }
-  }, [t, f, e, n])
+  }, [t, f, e, r])
 }

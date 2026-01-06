@@ -1,5 +1,5 @@
 /** Chunk was on 46746 **/
-/** chunk id: 914241, original params: e,t,n (module,exports,require) **/
+/** chunk id: 914241, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 }), require("./388685.js");
@@ -15,7 +15,7 @@ var Chunk54381 = require("./54381.js"),
 function u() {
   let [{
     selectedSource: e
-  }] = (0, Chunk443762.E_)(), [t, n] = Chunk473749.useState(null);
+  }] = (0, Chunk443762.E_)(), [t, r] = Chunk473749.useState(null);
   return Chunk473749.useEffect(() => {
     var t;
     if (null != module) {
@@ -27,12 +27,12 @@ function u() {
         height: 540,
         types: [Chunk268146.vA.SCREEN, Chunk268146.vA.WINDOW]
       }).then(t => {
-        var r;
+        var n;
         let {
           screenSources: i,
           windowSources: s
-        } = t, l = null != (r = s.find(t => "windowHandle" in e ? (0, o.Z)(t.id, e.windowHandle) : t.id === e.id)) ? r : i.find(t => e.id === t.id);
-        null != l && n(l.url)
+        } = t, l = null != (n = s.find(t => "windowHandle" in e ? (0, o.Z)(t.id, e.windowHandle) : t.id === e.id)) ? n : i.find(t => e.id === t.id);
+        null != l && r(l.url)
       })
     }
   }, [module]), (0, Chunk54381.jsx)("div", {

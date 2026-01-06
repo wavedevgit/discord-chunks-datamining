@@ -1,5 +1,5 @@
 /** Chunk was on 46746 **/
-/** chunk id: 443762, original params: e,t,n (module,exports,require) **/
+/** chunk id: 443762, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   E_: () => I,
   Ti: () => S,
@@ -24,18 +24,18 @@ var Chunk54381 = require("./54381.js"),
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = r
+      }) : e[t] = n
     })
   }
   return e
@@ -43,14 +43,14 @@ function j(e) {
 
 function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
+    var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
+      var n = Object.getOwnPropertySymbols(e);
+      r.push.apply(r, n)
     }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    return r
+  })(Object(t)).forEach(function(r) {
+    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
   }), e
 }
 let b = {
@@ -78,7 +78,7 @@ let b = {
   });
 
 function O(e, t) {
-  var n, r, i;
+  var r, n, i;
   switch (t.type) {
     case "set_mute_audio":
       return _(j({}, e), {
@@ -131,9 +131,9 @@ function O(e, t) {
           selectedSource: i
         }),
         a = null == i ? true : i.name;
-      if (null != i && (null == (n = i.id) ? true : n.startsWith(c.vA.CAMERA)) && null != a) {
+      if (null != i && (null == (r = i.id) ? true : r.startsWith(c.vA.CAMERA)) && null != a) {
         let e = l().maxBy(Object.values(p.Z.getInputDevices()), e => (0, o.default)(a, e.name));
-        s.audioSourceId = null != (r = null == e ? true : e.id) ? r : p.Z.getInputDeviceId()
+        s.audioSourceId = null != (n = null == e ? true : e.id) ? n : p.Z.getInputDeviceId()
       }
       return s
     }
@@ -157,20 +157,20 @@ function O(e, t) {
 function C(e) {
   let {
     dispatch: t,
-    state: n,
+    state: r,
     children: i
   } = e;
-  return (0, r.jsx)(w.Provider, {
+  return (0, n.jsx)(w.Provider, {
     value: t,
-    children: (0, r.jsx)(y.Provider, {
-      value: n,
+    children: (0, n.jsx)(y.Provider, {
+      value: r,
       children: i
     })
   })
 }
 
-function S(e, t, n) {
-  var r, s;
+function S(e, t, r) {
+  var n, s;
   let {
     defaultAutoQuality: l,
     allowAutoQuality: o
@@ -184,9 +184,9 @@ function S(e, t, n) {
   } = (0, a.cj)([h.Z], () => h.Z.getState());
   l && (c = g.tI.PRESET_AUTO);
   let S = (0, a.e7)([p.Z], () => p.Z.getInputDeviceId()),
-    I = null != (r = f.I0.useSetting()) && r,
+    I = null != (n = f.I0.useSetting()) && n,
     Z = null != (s = f.eo.useSetting()) && s;
-  c in g.tI && (c !== g.tI.PRESET_AUTO || o) || (c = g.tI.PRESET_VIDEO), (0, m.Z)(g.tI.PRESET_CUSTOM, y, w, t, n) || (y = g.LY.RESOLUTION_720, w = g.ws.FPS_30);
+  c in g.tI && (c !== g.tI.PRESET_AUTO || o) || (c = g.tI.PRESET_VIDEO), (0, m.Z)(g.tI.PRESET_CUSTOM, y, w, t, r) || (y = g.LY.RESOLUTION_720, w = g.ws.FPS_30);
   let [E, P] = i.useReducer(O, _(j({}, b), {
     muteStreamAudio: !C,
     preset: c,

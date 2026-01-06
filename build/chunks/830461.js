@@ -1,5 +1,5 @@
 /** Chunk was on 46746 **/
-/** chunk id: 830461, original params: e,t,n (module,exports,require) **/
+/** chunk id: 830461, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   _: () => l
 }), require("./388685.js");
@@ -12,15 +12,15 @@ async function l() {
     let t;
     if (null == e.name) return null;
     try {
-      t = await r.Z.identifyGame(e.pid, e.name)
+      t = await n.Z.identifyGame(e.pid, e.name)
     } catch (e) {
       return null
     }
-    let n = e.windowHandle,
+    let r = e.windowHandle,
       i = e.name,
       s = t.icon;
-    return null != n && null != i && null != s ? {
-      id: "window:".concat(n),
+    return null != r && null != i && null != s ? {
+      id: "window:".concat(r),
       name: i,
       url: "data:image/bmp;base64,".concat(s)
     } : null
