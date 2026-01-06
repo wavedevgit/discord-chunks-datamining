@@ -22,31 +22,32 @@ function f(e) {
   let {
     embedId: t,
     className: n,
-    style: a
-  } = e, o = (0, l.e7)([c.Z], () => c.Z.getConnectedFrame()), f = ((0, l.e7)([c.Z], () => c.Z.getFrameLayoutMode()), null != o && u.U.FOCUSED, window), g = i.useRef(null), h = i.useCallback(() => {
-    null != g.current && p(t, g.current.getBoundingClientRect())
+    style: a,
+    currentWindow: o
+  } = e, f = (0, l.e7)([c.Z], () => c.Z.getConnectedFrame()), g = (0, l.e7)([c.Z], () => c.Z.getFrameLayoutMode()), h = null != f && g === u.U.FOCUSED ? window : null != o ? o : window, m = i.useRef(null), b = i.useCallback(() => {
+    null != m.current && p(t, m.current.getBoundingClientRect())
   }, [t]);
   i.useLayoutEffect(() => {
-    h()
+    b()
   });
-  let m = i.useMemo(() => new ResizeObserver(() => {
-    h()
-  }), [h]);
+  let _ = i.useMemo(() => new ResizeObserver(() => {
+    b()
+  }), [b]);
   return i.useLayoutEffect(() => {
-    let e = g.current;
-    if (null != e) return m.observe(e), () => m.unobserve(e)
-  }, [m]), i.useLayoutEffect(() => {
-    let e = () => h(),
-      t = () => h();
-    return f.addEventListener("scroll", e, true), f.addEventListener("resize", t), () => {
-      f.removeEventListener("scroll", e, true), f.removeEventListener("resize", t)
+    let e = m.current;
+    if (null != e) return _.observe(e), () => _.unobserve(e)
+  }, [_]), i.useLayoutEffect(() => {
+    let e = () => b(),
+      t = () => b();
+    return h.addEventListener("scroll", e, true), h.addEventListener("resize", t), () => {
+      h.removeEventListener("scroll", e, true), h.removeEventListener("resize", t)
     }
-  }, [h, f]), i.useLayoutEffect(() => (s.S.subscribe(d.CkL.MANUAL_IFRAME_RESIZING, h), () => {
-    s.S.unsubscribe(d.CkL.MANUAL_IFRAME_RESIZING, h)
-  }), [h]), i.useLayoutEffect(() => () => {
+  }, [b, h]), i.useLayoutEffect(() => (s.S.subscribe(d.CkL.MANUAL_IFRAME_RESIZING, b), () => {
+    s.S.unsubscribe(d.CkL.MANUAL_IFRAME_RESIZING, b)
+  }), [b]), i.useLayoutEffect(() => () => {
     p(t, null)
   }, [t]), (0, r.jsx)("div", {
-    ref: g,
+    ref: m,
     className: n,
     style: a
   })

@@ -82,7 +82,7 @@ function j(e) {
   if (!H) {
     let e = R.width,
       t = R.height;
-    U ? ((t = R.width / C.I0) > R.height && (e = (t = R.height) * C.I0), B = (R.height - t) / 2) : ((e = Math.min(R.height * C.I0)) > R.width && (t = (e = R.width) / C.I0), G = (R.width - e) / 2)
+    U ? ((t = R.width / C.I0) > R.height && (e = (t = R.height) * C.I0), B = (R.height - t) / 2) : ((e = Math.min(R.height * C.I0, R.width)) > R.width && (t = (e = R.width) / C.I0), G = (R.width - e) / 2)
   }
   let V = C.MI.NO_CHAT;
   if (null == n) return null;

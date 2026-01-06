@@ -63,7 +63,7 @@ function m(e) {
     proxyTicket: n
   } = e, r = (0, o.ZP)(t);
   if (null == r) return void p.delete(t);
-  p.delete(t), null != f && (f = null), f = {
+  p.delete(t), f = {
     applicationId: t,
     url: r,
     connectedSince: Date.now(),
