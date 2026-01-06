@@ -58,14 +58,15 @@ function _(e) {
     guildId: t,
     onComplete: n,
     isLastStep: _,
-    disableTracking: y
-  } = e, N = i.useRef(false), {
-    onboardingConnections: P,
-    isLoading: C
+    isSubmitting: y = false,
+    disableTracking: N
+  } = e, P = i.useRef(false), {
+    onboardingConnections: C,
+    isLoading: E
   } = (0, o.cj)([f.Z], () => ({
     onboardingConnections: f.Z.getConnections(t),
     isLoading: f.Z.isLoading()
-  })), E = (0, o.e7)([c.default, d.Z], () => P.some(e => {
+  })), D = (0, o.e7)([c.default, d.Z], () => C.some(e => {
     if (e.connection_type === g.zz.APPLICATION && null != e.application_id) {
       let t = c.default.getNewestTokenForApplication(e.application_id);
       return c.default.getFetchStateForApplication(e.application_id) === c.FetchState.FETCHED && null != t
@@ -75,11 +76,11 @@ function _(e) {
       return null != t && !t.revoked
     }
     returnfalse
-  }), [P]);
+  }), [C]);
   i.useEffect(() => {
-    if (y || C || 0 === P.length || N.current) return;
-    let e = (0, m.OZ)(P),
-      n = (0, m.N4)(P);
+    if (N || E || 0 === C.length || P.current) return;
+    let e = (0, m.OZ)(C),
+      n = (0, m.N4)(C);
     u.default.track(h.rMx.GUILD_ONBOARDING_STEP_VIEWED, j(O({}, (0, s.hH)(t)), {
       step: p.Xx,
       required: false,
@@ -87,15 +88,15 @@ function _(e) {
       provider_connections_not_connected: e.notConnected,
       application_connections_connected: n.connected,
       application_connections_not_connected: n.notConnected
-    })), N.current = true
-  }, [t, C, P, y]);
-  let D = i.useCallback(() => {
-    if (!y) {
-      let e = (0, m.OZ)(P),
-        n = (0, m.N4)(P);
+    })), P.current = true
+  }, [t, E, C, N]);
+  let I = i.useCallback(() => {
+    if (!N) {
+      let e = (0, m.OZ)(C),
+        n = (0, m.N4)(C);
       u.default.track(h.rMx.GUILD_ONBOARDING_STEP_COMPLETED, j(O({}, (0, s.hH)(t)), {
         step: p.Xx,
-        skipped: !E,
+        skipped: !D,
         back: false,
         options_selected: 0,
         in_onboarding: true,
@@ -107,8 +108,8 @@ function _(e) {
       }))
     }
     n()
-  }, [n, y, t, P, E, _]);
-  return C ? (0, r.jsxs)("div", {
+  }, [n, N, t, C, D, _]);
+  return E ? (0, r.jsxs)("div", {
     className: v.loadingContainer,
     children: [(0, r.jsx)(a.$jN, {}), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
@@ -141,7 +142,7 @@ function _(e) {
           className: v.connectionsListScroller,
           children: (0, r.jsx)("div", {
             className: v.connectionsList,
-            children: P.map((e, n) => (0, r.jsx)(b.Z, {
+            children: C.map((e, n) => (0, r.jsx)(b.Z, {
               connection: e,
               guildId: t,
               location: l.Z.GUILD_ONBOARDING
@@ -155,9 +156,11 @@ function _(e) {
           children: [(0, r.jsx)("div", {}), (0, r.jsx)("div", {
             className: v.primaryActions,
             children: (0, r.jsx)(a.Button, {
-              variant: E ? "primary" : "secondary",
-              onClick: D,
-              text: E ? _ ? "".concat(x.intl.string(x.t["8SuVoE"]), " \uD83C\uDF89") : x.intl.string(x.t.PDTjLN) : x.intl.string(x.t["5Wxrcd"]),
+              variant: D ? "primary" : "secondary",
+              onClick: I,
+              text: D ? _ ? "".concat(x.intl.string(x.t["8SuVoE"]), " \uD83C\uDF89") : x.intl.string(x.t.PDTjLN) : x.intl.string(x.t["5Wxrcd"]),
+              disabled: y,
+              loading: y,
               icon: _ ? true : a.d4D,
               iconPosition: "end"
             })

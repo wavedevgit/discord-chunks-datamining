@@ -201,7 +201,7 @@ let M = {
         case Z.jE.QUEST_HOME:
           if (null != n) {
             let e = new URLSearchParams;
-            null != n.sort && e.set(y.tR.SORT, n.sort), null != n.filter && e.set(y.tR.FILTER, n.filter), (0, I.dL)({
+            null != n.sort && e.set(y.tR.SORT, n.sort), null != n.filter && e.set(y.tR.FILTER, n.filter), null != n.tab && e.set(y.tR.TAB, n.tab), (0, I.dL)({
               pathname: w.Z5c.QUEST_HOME_V2,
               hash: n.questId,
               search: "?".concat(e.toString())

@@ -168,7 +168,7 @@ class S extends(r = Chunk473749.PureComponent) {
     } = this.props, {
       fieldProps: F
     } = (0, Chunk793030.XF_)(this.props), B = 0;
-    y ? null != Chunk120356 && (null != c ? B = Chunk120356[c] : null != Chunk392711 && (B = Chunk120356[Chunk392711])) : B = this.scaleValue(exports);
+    y ? null != Chunk120356 && (null != c ? B = Chunk120356[c] : null != Chunk392711 && (B = Chunk120356[Chunk392711])) : B = this.scaleValue(exports), B = Math.min(Math.max(B, 0), 100);
     let V = "".concat(B, "%"),
       H = null != Chunk120356 && null != Chunk473749 ? Chunk120356.map((e, t) => {
         let n = a[t],

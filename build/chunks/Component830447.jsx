@@ -315,7 +315,8 @@ function A(e) {
     children: (0, r.jsx)("div", v(y({
       className: o()(E.menu, E[a], _),
       style: {
-        "--custom-menu-viewport-padding": D ? "".concat(g.sb, "px") : "".concat(g.F3, "px")
+        "--custom-menu-viewport-padding": D ? "".concat(g.sb, "px") : "".concat(g.F3, "px"),
+        "--custom-menu-flexible-min-width": D ? "144px" : "188px"
       }
     }, L.getContainerProps()), {
       ref: j,
