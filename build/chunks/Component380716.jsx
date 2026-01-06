@@ -63,7 +63,7 @@ function w(e, n) {
   }), e
 }
 
-function M(e, n) {
+function Z(e, n) {
   switch (e) {
     case p.NewMemberActionTypes.VIEW:
       return C.Uu(O.Plq.VIEW_CHANNEL, n);
@@ -75,7 +75,7 @@ function M(e, n) {
   }
 }
 
-function Z() {
+function M() {
   return {
     channelId: [],
     title: [],
@@ -87,11 +87,11 @@ function Z() {
 }
 
 function A(e) {
-  let n = Z(),
+  let n = M(),
     l = j.Z.getChannel(e.channelId);
   return (null == e.title || e.title.length < p.Wz) && n.title.push(P.intl.formatToPlainString(P.t.iu6AGk, {
     minLength: p.Wz
-  })), null == e.actionType || null == l || M(e.actionType, l) || n.actionType.push(function(e) {
+  })), null == e.actionType || null == l || Z(e.actionType, l) || n.actionType.push(function(e) {
     switch (e) {
       case p.NewMemberActionTypes.VIEW:
         return P.intl.string(P.t.lD7FOX);
@@ -107,9 +107,9 @@ function D(e) {
   var n, l, a, y, C, D;
   let {
     transitionState: _,
-    onClose: L,
-    guildId: R,
-    action: H,
+    onClose: R,
+    guildId: H,
+    action: L,
     onSave: G,
     onDelete: U
   } = e, F = i.useRef(null), z = i.useRef(null), [W] = i.useState(function(e) {
@@ -119,24 +119,24 @@ function D(e) {
       value: e.channelId,
       label: n.name
     }
-  }(H)), [V, Y] = i.useState(W), q = (0, s.e7)([j.Z], () => j.Z.getChannel(null == V ? true : V.value)), X = (null == q ? true : q.isMediaChannel()) === true, B = i.useMemo(() => [{
+  }(L)), [V, Y] = i.useState(W), q = (0, s.e7)([j.Z], () => j.Z.getChannel(null == V ? true : V.value)), X = (null == q ? true : q.isMediaChannel()) === true, B = i.useMemo(() => [{
     value: p.NewMemberActionTypes.VIEW,
     name: P.intl.string(P.t.jfieRw)
   }, {
     value: p.NewMemberActionTypes.CHAT,
     name: (null == q ? true : q.type) === O.d4z.GUILD_FORUM ? X ? P.intl.string(P.t["1EgDpA"]) : P.intl.string(P.t.x5Di7M) : P.intl.string(P.t["R+dC4C"])
-  }], [null == q ? true : q.type, X]), [K, Q] = i.useState(Z()), [J, $] = i.useState(null != (n = null == H ? true : H.title) ? n : ""), ee = (0, s.e7)([S.Z], () => {
+  }], [null == q ? true : q.type, X]), [K, Q] = i.useState(M()), [J, $] = i.useState(null != (n = null == L ? true : L.title) ? n : ""), ee = (0, s.e7)([S.Z], () => {
     let e = S.Z.getSettings();
     if (null == e.newMemberActions) return new Set;
     let n = new Set(e.newMemberActions.map(e => e.channelId));
     return null != W && n.delete(W.value), n
-  }), [en, el] = i.useState(null == H ? null : null != (D = null == (C = B.find(e => e.value === H.actionType)) ? true : C.value) ? D : null), [et, ei] = i.useState(null != (l = null == H ? true : H.emoji) ? l : null), ea = (0, s.e7)([S.Z], () => {
+  }), [en, el] = i.useState(null == L ? null : null != (D = null == (C = B.find(e => e.value === L.actionType)) ? true : C.value) ? D : null), [et, ei] = i.useState(null != (l = null == L ? true : L.emoji) ? l : null), ea = (0, s.e7)([S.Z], () => {
     var e;
-    return null == (e = S.Z.getNewMemberAction(null == H ? true : H.channelId)) ? true : e.icon
-  }), er = null == H ? true : H.channelId, eo = (0, s.e7)([S.Z], () => S.Z.getPendingIconDataForChannel(er), [er]), [es, eu] = i.useState(null != eo && null != eo.iconData ? eo.iconData : null != ea && null != V ? f.ZP.getNewMemberActionIconURL({
+    return null == (e = S.Z.getNewMemberAction(null == L ? true : L.channelId)) ? true : e.icon
+  }), er = null == L ? true : L.channelId, eo = (0, s.e7)([S.Z], () => S.Z.getPendingDataForChannel(er), [er]), [es, eu] = i.useState(null != eo && null != eo.iconData ? eo.iconData : null != ea && null != V ? f.ZP.getNewMemberActionIconURL({
     channelId: V.value,
     icon: ea
-  }) : null), ec = (0, m.Z)(es), ed = null == J || 0 === J.length || null == en || null == V, em = Object.values(K).flat().length > 0, eh = i.useCallback(() => {
+  }) : null), ec = (0, m.Z)(et), ed = (0, m.Z)(es), em = null == J || 0 === J.length || null == en || null == V, eh = Object.values(K).flat().length > 0, ev = i.useCallback(() => {
     if (null == V || null == en || J.length <= 0) return;
     let e = {
         channelId: V.value,
@@ -146,13 +146,19 @@ function D(e) {
         emoji: null != et ? et : null,
         icon: null != ea ? ea : null
       },
-      n = true !== er && V.value !== er;
-    null != et ? (0, N.Lt)(er) : (n || true !== eo && true !== es) && (true !== eo && (0, N.Lt)(er), (0, N.Di)(V.value, null != es ? es : null));
-    let l = es !== ec;
-    G(e, null != es ? es : null, l && !n), L()
-  }, [G, L, J, en, V, et, ea, es, ec, er, eo]), ev = i.useCallback(() => {
-    null == U || U(), L()
-  }, [U, L]), ep = i.useCallback(e => {
+      n = true !== er && V.value !== er,
+      l = true !== eo,
+      t = null != et || true !== es,
+      i = {
+        icon: null != es ? es : null,
+        emoji: et
+      };
+    (n || l && t) && (l && (0, N.Lo)(er), (0, N.Wp)(V.value, i));
+    let a = es !== ed;
+    G(e, i, (et !== ec || a) && !n), R()
+  }, [G, R, J, en, V, et, ea, es, ec, ed, er, eo]), ep = i.useCallback(() => {
+    null == U || U(), R()
+  }, [U, R]), eg = i.useCallback(e => {
     $(e), Q(A({
       channelId: null == V ? true : V.value,
       title: e,
@@ -160,7 +166,7 @@ function D(e) {
       actionType: null != en ? en : true,
       emoji: null != et ? et : true
     }))
-  }, [$, Q, V, en, et]), eg = i.useCallback(e => {
+  }, [$, Q, V, en, et]), ej = i.useCallback(e => {
     Y(e), Q(A({
       channelId: null == e ? true : e.value,
       title: J,
@@ -168,7 +174,7 @@ function D(e) {
       actionType: null != en ? en : true,
       emoji: null != et ? et : true
     }))
-  }, [Y, Q, J, en, et]), ej = i.useCallback(e => {
+  }, [Y, Q, J, en, et]), ex = i.useCallback(e => {
     el(e), Q(A({
       channelId: null == V ? true : V.value,
       title: J,
@@ -176,13 +182,13 @@ function D(e) {
       actionType: e,
       emoji: null != et ? et : true
     }))
-  }, [el, Q, V, J, et]), ex = i.useCallback(e => Promise.resolve(x.ZP.getSelectableChannels(R).filter(n => !ee.has(n.channel.id) && (0, p.kb)(n.channel) && r()(e, n.channel.name)).map(e => ({
+  }, [el, Q, V, J, et]), eb = i.useCallback(e => Promise.resolve(x.ZP.getSelectableChannels(H).filter(n => !ee.has(n.channel.id) && (0, p.kb)(n.channel) && r()(e, n.channel.name)).map(e => ({
     value: e.channel.id,
     label: e.channel.name
-  }))), [R, ee]), eb = i.useCallback(e => {
-    if (null == e || null == R) return null;
+  }))), [H, ee]), ef = i.useCallback(e => {
+    if (null == e || null == H) return null;
     let n = j.Z.getChannel(e.value),
-      l = b.Z.getGuild(R);
+      l = b.Z.getGuild(H);
     if (null == n || null == l) return null;
     let i = (0, h.KS)(n, l);
     return null == i ? null : (0, t.jsx)(i, {
@@ -190,15 +196,15 @@ function D(e) {
       color: "customColor",
       className: k.channelIcon
     })
-  }, [R]), ef = i.useCallback(function(e) {
+  }, [H]), ey = i.useCallback(function(e) {
     let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
     ei(n), eu(e)
-  }, []), ey = i.useCallback(() => null != es ? es : null, [es, et])(), eC = i.useCallback(e => {
-    null != e && ef(e, null)
-  }, [ef]), eN = null;
-  eN = null != ey ? (0, t.jsxs)(t.Fragment, {
+  }, []), eC = i.useCallback(() => null != es ? es : null, [es, et])(), eN = i.useCallback(e => {
+    null != e && ey(e, null)
+  }, [ey]), eS = null;
+  eS = null != eC ? (0, t.jsxs)(t.Fragment, {
     children: [(0, t.jsx)("img", {
-      src: ey,
+      src: eC,
       alt: "",
       "aria-hidden": true,
       className: k.__invalid_image,
@@ -227,24 +233,24 @@ function D(e) {
     size: "md",
     color: "currentColor"
   });
-  let eS = i.useMemo(() => [{
+  let eT = i.useMemo(() => [{
     text: P.intl.string(P.t["ETE/oC"]),
-    onClick: L,
+    onClick: R,
     variant: "secondary"
   }, {
     text: P.intl.string(P.t["R3BPH+"]),
     variant: "primary",
-    onClick: eh,
-    disabled: ed || em
-  }], [eh, em, ed, L]);
+    onClick: ev,
+    disabled: em || eh
+  }], [ev, eh, em, R]);
   return (0, t.jsxs)(o.Modal, {
     title: P.intl.string(P.t.ncTLSo),
     transitionState: _,
-    onClose: L,
-    actions: eS,
-    actionBarInput: null != H ? (0, t.jsx)(c.Avr, {
+    onClose: R,
+    actions: eT,
+    actionBarInput: null != L ? (0, t.jsx)(c.Avr, {
       text: P.intl.string(P.t.N86XcP),
-      onClick: ev,
+      onClick: ep,
       variant: "critical"
     }) : true,
     children: [(0, t.jsxs)("div", {
@@ -256,7 +262,7 @@ function D(e) {
       }), (0, t.jsx)(c.oil, {
         value: J,
         error: (null != (y = null == J ? true : J.length) ? y : 0) > 0 ? K.title.join(", ") : null,
-        onChange: ep,
+        onChange: eg,
         placeholder: P.intl.string(P.t.oN1Sm2),
         maxLength: p.Z3
       })]
@@ -270,9 +276,9 @@ function D(e) {
         children: [P.intl.string(P.t.jVDc5W), (0, t.jsx)(T.Z, {})]
       }), (0, t.jsx)(u.d, {
         value: V,
-        renderOptionPrefix: eb,
-        options: ex,
-        onChange: eg
+        renderOptionPrefix: ef,
+        options: eb,
+        onChange: ej
       }), (0, t.jsx)(c.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
@@ -301,7 +307,7 @@ function D(e) {
               l = (0, t.jsxs)(t.Fragment, {
                 children: [(0, t.jsx)(g.ZP, {
                   onChange: e => {
-                    eC(e), n()
+                    eN(e), n()
                   },
                   tabIndex: 0
                 }), (0, t.jsx)(c.Text, {
@@ -329,7 +335,7 @@ function D(e) {
                         emoji: i,
                         willClose: a
                       } = e;
-                      if (null != i) ef(null, null == i.id ? {
+                      if (null != i) ey(null, null == i.id ? {
                         id: null,
                         name: null != (n = i.optionallyDiverseSequence) ? n : "",
                         animated: false
@@ -364,13 +370,13 @@ function D(e) {
                 id: "upload",
                 label: l,
                 icon: c.rG2
-              }), null != ey || null != et ? (0, t.jsx)(c.sNh, {
+              }), null != eC || null != et ? (0, t.jsx)(c.sNh, {
                 id: "clear",
                 color: "danger",
                 label: P.intl.string(P.t.ZCLmoR),
                 icon: c.XHJ,
                 action: () => {
-                  ef(null)
+                  ey(null)
                 }
               }) : null]
             })
@@ -379,7 +385,7 @@ function D(e) {
           children: e => (0, t.jsx)("div", w(E({}, e), {
             className: k.iconUpload,
             ref: z,
-            children: eN
+            children: eS
           }))
         })
       })]
@@ -393,9 +399,9 @@ function D(e) {
         children: [P.intl.string(P.t.MIMVLa), (0, t.jsx)(T.Z, {})]
       }), (0, t.jsx)(c.FXm, {
         value: en,
-        onChange: ej,
+        onChange: ex,
         options: null == q ? B : B.map(e => w(E({}, e), {
-          disabled: !M(e.value, q)
+          disabled: !Z(e.value, q)
         }))
       }), null != en && K.actionType.length > 0 ? K.actionType.map(e => (0, t.jsx)(c.Text, {
         variant: "text-xs/normal",

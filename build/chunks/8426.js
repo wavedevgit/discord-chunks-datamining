@@ -1,20 +1,20 @@
 /** Chunk was on 80187 **/
 /** chunk id: 8426, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Di: () => T,
   Hr: () => A,
-  Hz: () => g,
-  Lt: () => D,
-  To: () => m,
-  XG: () => C,
+  Hz: () => C,
+  Lo: () => D,
+  To: () => R,
+  Wp: () => T,
+  XG: () => g,
   _N: () => O,
-  ad: () => p,
   bj: () => P,
   el: () => G,
-  hS: () => h,
-  lq: () => U,
-  mM: () => b,
-  oo: () => R,
+  gi: () => h,
+  hS: () => p,
+  lq: () => m,
+  mM: () => U,
+  oo: () => b,
   q6: () => w,
   r2: () => f,
   vR: () => d
@@ -44,21 +44,21 @@ function d(e, n) {
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_ADD_NEW_MEMBER_ACTION",
     action: e,
-    pendingIconData: n
+    pendingData: n
   })
 }
 
 function T(e, n) {
   i.Z.dispatch({
-    type: "GUILD_SETTINGS_ONBOARDING_UPDATE_NEW_MEMBER_ACTION_PENDING_ICON_DATA",
+    type: "GUILD_SETTINGS_ONBOARDING_UPDATE_NEW_MEMBER_ACTION_PENDING_DATA",
     channelId: e,
-    pendingIconData: n
+    pendingData: n
   })
 }
 
 function D(e) {
   i.Z.dispatch({
-    type: "GUILD_SETTINGS_ONBOARDING_CLEAR_NEW_MEMBER_ACTION_PENDING_ICON_DATA",
+    type: "GUILD_SETTINGS_ONBOARDING_CLEAR_NEW_MEMBER_ACTION_PENDING_DATA",
     channelId: e
   })
 }
@@ -78,38 +78,37 @@ function A(e) {
   })
 }
 
-function h(e) {
+function p(e) {
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_REORDER_NEW_MEMBER_ACTION",
     actions: e
   })
 }
-async function p(e, n, t, r) {
-  if (!r) return Promise.resolve();
+async function h(e, n, t) {
+  let r = {};
+  null != t.emoji ? r.emoji = t.emoji : r.icon = t.icon;
   try {
-    let r = await o.tn.patch({
+    let t = await o.tn.patch({
         url: N.ANM.NEW_MEMBER_ACTION(e, n),
-        body: {
-          icon: t
-        },
+        body: r,
         oldFormErrors: true,
         rejectWithError: false
       }),
-      l = (0, c.cq)(r.body);
+      l = (0, _.cq)(t.body);
     return i.Z.dispatch({
       type: "GUILD_NEW_MEMBER_ACTION_UPDATE_SUCCESS",
       guildId: e,
       action: l
-    }), Promise.resolve(r.body)
+    }), Promise.resolve(t.body)
   } catch (n) {
-    var _;
-    let e = l().flatMap(null != (_ = n.body) ? _ : {}, e => e);
+    var c;
+    let e = l().flatMap(null != (c = n.body) ? c : {}, e => e);
     return a.Z.show({
       title: S.intl.string(S.t["6nCZyG"]),
       body: S.intl.format(S.t.dYCPD2, {
         errorMessage: e.join(", ")
       })
-    }), u.Z.addBreadcrumb({
+    }), E.Z.addBreadcrumb({
       message: "Error updating new member action icon"
     }), Promise.reject()
   }
@@ -122,7 +121,7 @@ function f(e) {
   })
 }
 
-function C(e, n) {
+function g(e, n) {
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_UPDATE_RESOURCE_CHANNEL",
     channelId: e,
@@ -130,20 +129,20 @@ function C(e, n) {
   })
 }
 
-function g(e) {
+function C(e) {
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_DELETE_RESOURCE_CHANNEL",
     resourceChannelId: e
   })
 }
 
-function U(e) {
+function m(e) {
   i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_REORDER_RESOURCE_CHANNEL",
     resourceChannels: e
   })
 }
-async function b(e, n, t) {
+async function U(e, n, t) {
   try {
     let r = await o.tn.put({
         url: N.ANM.RESOURCE_CHANNEL(e, n),
@@ -153,7 +152,7 @@ async function b(e, n, t) {
         oldFormErrors: true,
         rejectWithError: false
       }),
-      l = (0, c.vD)(r.body);
+      l = (0, _.vD)(r.body);
     return i.Z.dispatch({
       type: "GUILD_RESOURCE_CHANNEL_UPDATE_SUCCESS",
       guildId: e,
@@ -171,20 +170,20 @@ async function b(e, n, t) {
   }
 }
 
-function R(e, n) {
+function b(e, n) {
   let t = arguments.length > 2 && true !== arguments[2] && arguments[2];
-  return t || I.Z.hasChanges() ? _.Z.getEnabled(e) && !(0, c.uo)(n) ? (a.Z.show({
+  return t || I.Z.hasChanges() ? c.Z.getEnabled(e) && !(0, _.uo)(n) ? (a.Z.show({
     title: S.intl.string(S.t["6nCZyG"]),
     body: S.intl.string(S.t.JuhUTS)
-  }), u.Z.addBreadcrumb({
+  }), E.Z.addBreadcrumb({
     message: "Error saving home settings"
   }), Promise.reject()) : y(e, n) : Promise.resolve()
 }
 
-function m(e, n) {
+function R(e, n) {
   var t, r;
-  let l = _.Z.getSettings(e);
-  return n && !(0, c.uo)(l) ? void a.Z.show({
+  let l = c.Z.getSettings(e);
+  return n && !(0, _.uo)(l) ? void a.Z.show({
     title: S.intl.string(S.t["6nCZyG"]),
     body: S.intl.string(S.t.JuhUTS)
   }) : (i.Z.dispatch({
@@ -222,32 +221,32 @@ function m(e, n) {
   }), t)))
 }
 async function y(e, n) {
-  var t, r, _, E, u, O, d, T, G;
+  var t, r, c, u, E, O, d, T, G;
   i.Z.dispatch({
     type: "GUILD_HOME_SETTINGS_UPDATE_START"
   });
-  let A = I.Z.getPendingIconData();
+  let A = I.Z.getPendingData();
   try {
     let l = await o.tn.put({
         url: N.ANM.GUILD_HOME_SETTINGS(e),
-        body: (0, c.HH)(e, n),
+        body: (0, _.HH)(e, n),
         oldFormErrors: true,
         rejectWithError: false
       }),
-      a = (0, c.tB)(l.body);
+      a = (0, _.tB)(l.body);
     return i.Z.dispatch({
       type: "GUILD_HOME_SETTINGS_UPDATE_SUCCESS",
       guildId: e,
       homeSettings: a
     }), Object.entries(A).forEach(n => {
       let [t, r] = n;
-      null != r && M(e, t, r).finally(() => {
+      null != r && (null != r.iconData ? M(e, t, r).finally(() => {
         D(t)
-      })
+      }) : D(t))
     }), s.default.track(N.rMx.GUILD_SETTINGS_GUIDE_UPDATED, {
       guild_id: e,
-      welcome_message_author_id: (null != (E = null == a || null == (t = a.welcomeMessage) ? true : t.authorIds) ? E : [])[0],
-      welcome_message_length: null != (u = null == a || null == (_ = a.welcomeMessage) || null == (r = _.message) ? true : r.length) ? u : 0,
+      welcome_message_author_id: (null != (u = null == a || null == (t = a.welcomeMessage) ? true : t.authorIds) ? u : [])[0],
+      welcome_message_length: null != (E = null == a || null == (c = a.welcomeMessage) || null == (r = c.message) ? true : r.length) ? E : 0,
       member_action_channel_ids: (null != (O = null == a ? true : a.newMemberActions) ? O : []).map(e => e.channelId),
       member_action_channel_actions: (null != (d = null == a ? true : a.newMemberActions) ? d : []).map(e => e.actionType),
       resource_channel_ids: (null != (T = null == a ? true : a.resourceChannels) ? T : []).map(e => e.channelId),
@@ -268,14 +267,20 @@ async function y(e, n) {
 async function M(e, n, t) {
   let {
     iconData: r,
-    isUrl: l
-  } = t, o = null != r && l ? await L(e, n, r) : r;
-  await p(e, n, o, true)
+    isUrl: l,
+    emoji: o
+  } = t;
+  if (null != o) return;
+  let i = null != r && l ? await L(r) : r;
+  await h(e, n, {
+    icon: i,
+    emoji: null
+  })
 }
-async function L(e, n, t) {
-  let r = await fetch(t),
-    l = await r.blob();
-  return await (0, E.fD)(l)
+async function L(e) {
+  let n = await fetch(e),
+    t = await n.blob();
+  return await (0, u.fD)(t)
 }
 
 function w(e, n) {

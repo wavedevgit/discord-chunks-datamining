@@ -33,7 +33,7 @@ let O = function(e) {
     onDragStart: T,
     onDragComplete: P,
     onDragReset: w
-  } = e, Z = (0, s.e7)([b.Z], () => b.Z.getChannel(E.channelId)), R = (0, s.e7)([p.Z], () => p.Z.getGuild(N)), D = (0, s.e7)([x.Z], () => x.Z.getPendingIconData()[E.channelId]), {
+  } = e, Z = (0, s.e7)([b.Z], () => b.Z.getChannel(E.channelId)), R = (0, s.e7)([p.Z], () => p.Z.getGuild(N)), D = (0, s.e7)([x.Z], () => x.Z.getPendingData()[E.channelId]), {
     customEmoji: A,
     unicodeEmoji: L
   } = (0, g.Z)(null == (t = E.emoji) ? true : t.id, null == (l = E.emoji) ? true : l.name), k = null == E.emoji || null != A || null != L, G = h.ZP.getNewMemberActionIconURL({

@@ -109,10 +109,10 @@ class A extends(l = Chunk442837.ZP.PersistedStore) {
     let t = null == (n = _.newMemberActions) ? true : n.find(n => n.channelId === e);
     return null == t ? null : t
   }
-  getPendingIconData() {
+  getPendingData() {
     return O
   }
-  getPendingIconDataForChannel(e) {
+  getPendingDataForChannel(e) {
     if (null != e) return O[e]
   }
 }
@@ -165,24 +165,26 @@ let D = new A(Chunk570140.Z, {
     var n;
     let {
       action: t,
-      pendingIconData: l
+      pendingData: l
     } = e;
-    _.newMemberActions = null != (n = _.newMemberActions) ? n : [], _.newMemberActions = [..._.newMemberActions, t], true !== l && (O[t.channelId] = {
-      iconData: l,
-      isUrl: g(l)
-    })
-  },
-  GUILD_SETTINGS_ONBOARDING_UPDATE_NEW_MEMBER_ACTION_PENDING_ICON_DATA: function(e) {
-    let {
-      channelId: n,
-      pendingIconData: t
-    } = e;
-    O[n] = {
-      iconData: t,
-      isUrl: g(t)
+    _.newMemberActions = null != (n = _.newMemberActions) ? n : [], _.newMemberActions = [..._.newMemberActions, t], O[t.channelId] = {
+      iconData: l.icon,
+      isUrl: g(l.icon),
+      emoji: l.emoji
     }
   },
-  GUILD_SETTINGS_ONBOARDING_CLEAR_NEW_MEMBER_ACTION_PENDING_ICON_DATA: function(e) {
+  GUILD_SETTINGS_ONBOARDING_UPDATE_NEW_MEMBER_ACTION_PENDING_DATA: function(e) {
+    let {
+      channelId: n,
+      pendingData: t
+    } = e;
+    O[n] = {
+      iconData: t.icon,
+      isUrl: g(t.icon),
+      emoji: t.emoji
+    }
+  },
+  GUILD_SETTINGS_ONBOARDING_CLEAR_NEW_MEMBER_ACTION_PENDING_DATA: function(e) {
     let {
       channelId: n
     } = e;
