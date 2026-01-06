@@ -11,12 +11,12 @@ var Chunk973772 = require("./973772.js"),
 function a(e) {
   var t, n, a;
   let s, {
-      guildId: c,
-      powerups: u
+      guildId: u,
+      powerups: c
     } = e,
-    d = (0, r.Gv)(c, u),
+    d = (0, r.Gv)(u, c),
     f = d.some(e => e.type !== i.A3.INACTIVE);
-  if (u.length <= 0) return null;
+  if (c.length <= 0) return null;
   let p = d.reduce((e, t) => {
     let {
       sourceEntitlement: n

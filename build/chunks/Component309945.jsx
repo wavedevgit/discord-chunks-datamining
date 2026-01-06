@@ -22,7 +22,7 @@ function m(e) {
     warnings: m
   } = e, {
     spent: g
-  } = (0, u.Z)(t), v = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(t), [t]), x = g - i.useMemo(() => {
+  } = (0, c.Z)(t), v = (0, a.e7)([u.Z], () => u.Z.getAppliedGuildBoostsForGuild(t), [t]), x = g - i.useMemo(() => {
     var e, t, n;
     return null != (n = null == v || null == (t = v.filter) || null == (e = t.call(v, e => !e.ended && null == e.endsAt)) ? true : e.length) ? n : 0
   }, [v]);

@@ -22,9 +22,9 @@ var Chunk473749 = require("./473749.js"),
   Chunk326660 = require("./326660.js"),
   Chunk158638 = require("./158638.js"),
   Chunk19394 = require("./19394.js"),
-  Chunk431971 = require("./431971.js"),
   Chunk10765 = require("./10765.js"),
   Chunk317169 = require("./317169.js"),
+  Chunk839637 = require("./839637.js"),
   Chunk535396 = require("./535396.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js");
@@ -36,10 +36,10 @@ function I(e) {
       indicator: g,
       showUnread: _
     } = function(e, t, n) {
-      let i = (0, x.Z)(e).available,
+      let i = (0, C.Z)(e).available,
         {
           shouldShow: s
-        } = (0, j._)(e, "useGuildPowerupsNotificationIndicator"),
+        } = (0, x.Z)(e, "useGuildPowerupsNotificationIndicator"),
         c = (0, o.OA)(a.z.VANITY_URL_POWERUP_ROLLBACK_NOTIFICATION, e),
         u = s && !c,
         d = (0, l.e7)([p.Z], () => p.Z.getStateForGuild(e));
@@ -72,10 +72,10 @@ function I(e) {
     I = function(e, t) {
       let [n, o] = (0, s.US)(null != t ? [a.z.GUILD_POWERUP_PERKS_COACHMARK] : []), g = n === a.z.GUILD_POWERUP_PERKS_COACHMARK, {
         available: b
-      } = (0, x.Z)(e), m = (0, l.e7)([u.Z], () => {
+      } = (0, C.Z)(e), m = (0, l.e7)([u.Z], () => {
         var t, n;
         return null != (n = null == (t = u.Z.getGuild(e)) ? true : t.features.has(S.GuildFeatures.GAME_SERVERS)) && n
-      }), v = (0, l.e7)([p.Z], () => p.Z.getLowestGameCostForGuild(e)), j = function(e, t) {
+      }), v = (0, l.e7)([p.Z], () => p.Z.getLowestGameCostForGuild(e)), x = function(e, t) {
         let n = (0, O.qI)(e, "GuildPowerupsChannelRow"),
           a = (0, h.BU)(e, "GuildPowerupsChannelRow"),
           o = (0, l.e7)([u.Z], () => {
@@ -99,7 +99,7 @@ function I(e) {
           }
           return 0
         }, [n, e, t, a, o])
-      }(e, t), [_, I] = (0, s.XR)(null != t && !g && j > 0 ? a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK : null, j), P = _ === a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK, N = r.useMemo(() => {
+      }(e, t), [_, I] = (0, s.XR)(null != t && !g && x > 0 ? a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK : null, x), P = _ === a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK, N = r.useMemo(() => {
         if (null == t || g || P) return;
         let n = function(e, t) {
           let n = f.Oe.find(e => {
@@ -130,7 +130,7 @@ function I(e) {
               return null != n && !!(l >= n)
             }) ? [] : r.map(r => {
               let i = t.allPowerups[r];
-              return null == i || n < i.cost || (0, C.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
+              return null == i || n < i.cost || (0, j.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
             })).filter(d.lm);
           if (0 !== o.length) {
             if (1 === o.length && !(0, c.OY)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
@@ -169,11 +169,11 @@ function I(e) {
             markAsDismissed: o
           };
           if (P) {
-            if (j === E.Du.GAME_SERVER_HOSTING) return {
+            if (x === E.Du.GAME_SERVER_HOSTING) return {
               type: y.Jk.GAME_SERVER_HOSTING_AVAILABLE,
               markAsDismissed: I
             };
-            let e = E.os[j],
+            let e = E.os[x],
               n = Object.values(t.allPowerups).filter(t => e.has(t.skuId));
             if (0 === n.length) return;
             return {
@@ -217,7 +217,7 @@ function I(e) {
             }), e
           }
         }
-      }, [t, g, o, N, Z, w, P, I, j])
+      }, [t, g, o, N, Z, w, P, I, x])
     }(e, null != n ? n : true);
   if (null !== n && (null != g || _ || null != I)) return {
     indicator: g,

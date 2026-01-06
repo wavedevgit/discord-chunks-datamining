@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 773149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => C
 }), require("./953529.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -24,7 +24,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk289585 = require("./289585.js"),
   Chunk796571 = require("./796571.js");
 
-function Z(e) {
+function C(e) {
   let {
     guildId: t
   } = e, {
@@ -33,17 +33,17 @@ function Z(e) {
   } = (0, s.cj)([p.Z], () => ({
     state: p.Z.getStateForGuild(t),
     lowestGameServerCost: p.Z.getLowestGameCostForGuild(t)
-  })), Z = (0, m.Z)(t), w = i.useMemo(() => {
+  })), C = (0, m.Z)(t), w = i.useMemo(() => {
     var e;
-    if (0 !== Object.values(null != (e = null == n ? true : n.entitlements) ? e : {}).length) return Z.length > 0 ? {
+    if (0 !== Object.values(null != (e = null == n ? true : n.entitlements) ? e : {}).length) return C.length > 0 ? {
       type: "expiring",
-      expiringAt: Z[0].ends_at
+      expiringAt: C[0].ends_at
     } : {
       type: "active",
       statusText: b.intl.string(v.default.FFLkmx)
     }
-  }, [Z, null == n ? true : n.entitlements]), {
-    textColor: I
+  }, [C, null == n ? true : n.entitlements]), {
+    textColor: E
   } = (0, f.Z)((null == w ? true : w.type) === "active");
   return null == n ? null : (0, r.jsxs)(d.aB, {
     label: b.intl.string(x.default["B3OfL/"]),
@@ -52,20 +52,20 @@ function Z(e) {
     isWarning: (null == w ? true : w.type) === "expiring",
     onClick: () => (0, g.Z)({
       guildId: t,
-      analyticsLocation: u.Z.GUILD_POWERUPS_OVERVIEW
+      analyticsLocation: c.Z.GUILD_POWERUPS_OVERVIEW
     }),
     children: [(0, r.jsxs)("div", {
-      className: _.imageContainer,
+      className: Z.imageContainer,
       children: [(0, r.jsx)("img", {
-        className: o()(j.background, h.image, _.image),
-        src: C.Z,
+        className: o()(j.background, h.image, Z.image),
+        src: _.Z,
         alt: ""
       }), (0, r.jsx)("div", {
-        className: o()(h.image, _.gradient)
+        className: o()(h.image, Z.gradient)
       })]
     }), (0, r.jsx)(d.Q9, {
       title: b.intl.string(x.default["B3OfL/"]),
-      textColor: I,
+      textColor: E,
       footer: (0, r.jsx)(d.uf, {
         cost: null != l ? l : 0,
         costDecorator: "+",
@@ -73,19 +73,19 @@ function Z(e) {
       }),
       children: (0, r.jsx)(a.xvT, {
         className: h.description,
-        color: I,
+        color: E,
         variant: "text-sm/medium",
         children: b.intl.string(x.default.EGkJAG)
       })
     }), (0, r.jsx)(d.N4, {
-      children: (0, r.jsx)(c.Button, {
+      children: (0, r.jsx)(u.Button, {
         variant: "primary",
         fullWidth: true,
         text: Object.values(n.entitlements).length > 0 ? b.intl.string(x.default.PuvU5b) : b.intl.string(x.default.b62EHM),
         onClick: e => {
           e.stopPropagation(), (0, g.Z)({
             guildId: t,
-            analyticsLocation: u.Z.GUILD_POWERUPS_OVERVIEW
+            analyticsLocation: c.Z.GUILD_POWERUPS_OVERVIEW
           })
         }
       })

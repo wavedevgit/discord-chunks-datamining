@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 169010, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  _P: () => u
+  _P: () => c
 }), require("./388685.js"), require("./539854.js");
 var Chunk473749 = require("./473749.js"),
   Chunk494497 = require("./494497.js"),
@@ -15,11 +15,11 @@ let s = Object.entries({
     for (let t of r) e[t] = n;
     return e
   }, {}),
-  c = [Chunk535396.Us.LEVEL, Chunk535396.Us.PERK];
+  u = [Chunk535396.Us.LEVEL, Chunk535396.Us.PERK];
 
-function u(e, t) {
+function c(e, t) {
   let n = (0, l.e7)([o.Z], () => o.Z.getStateForGuild(e));
-  return r.useMemo(() => c.reduce((e, r) => {
+  return r.useMemo(() => u.reduce((e, r) => {
     let l = null == n ? true : n.powerupCatalog[r];
     if (null == l) return e;
     let o = function(e, t, n) {

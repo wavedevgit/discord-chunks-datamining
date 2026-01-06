@@ -20,10 +20,10 @@ function f(e, t) {
       return null != (t = a.Z.getAppliedGuildBoostsForGuild(e)) ? t : []
     }, [e]),
     f = r.useMemo(() => [...n].sort((e, t) => d.default.extractTimestamp(e.id) < d.default.extractTimestamp(t.id) ? 1 : false).slice(0, t), [n, t]),
-    p = (0, i.Wu)([c.ZP], () => {
+    p = (0, i.Wu)([u.ZP], () => {
       let t = new Set;
       return f.forEach(n => {
-        null == c.ZP.getMember(e, n.userId) && t.add(n.userId)
+        null == u.ZP.getMember(e, n.userId) && t.add(n.userId)
       }), Array.from(t)
     }, [e, f]);
   r.useEffect(() => {
@@ -33,9 +33,9 @@ function f(e, t) {
     [e]: p
   } : {}, [e, p]);
   (0, o.$)(m, "GuildPowerupsRecentActivity");
-  let g = (0, i.e7)([u.Z], () => {
+  let g = (0, i.e7)([c.Z], () => {
     var t;
-    return null == (t = u.Z.getGuild(e)) ? true : t.premiumSubscriberCount
+    return null == (t = c.Z.getGuild(e)) ? true : t.premiumSubscriberCount
   });
   return r.useEffect(() => {
     g !== n.length && (0, l.C0)(e)
@@ -48,11 +48,11 @@ function p(e) {
       username: n,
       roleColor: r,
       roleColorStrings: l
-    } = (0, i.cj)([c.ZP], () => {
+    } = (0, i.cj)([u.ZP], () => {
       var t, n, r, i;
-      let l = c.ZP.getMember(e.guildId, e.userId);
+      let l = u.ZP.getMember(e.guildId, e.userId);
       return {
-        username: null != (n = c.ZP.getNick(e.guildId, e.userId)) ? n : null == (t = e.user) ? true : t.username,
+        username: null != (n = u.ZP.getNick(e.guildId, e.userId)) ? n : null == (t = e.user) ? true : t.username,
         roleColor: null != (r = null == l ? true : l.colorString) ? r : null,
         roleColorStrings: null != (i = null == l ? true : l.colorStrings) ? i : null
       }

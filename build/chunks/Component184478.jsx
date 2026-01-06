@@ -25,10 +25,10 @@ var Chunk793030 = require("./793030.js"),
 function j(e) {
   let {
     guildId: t
-  } = e, n = (0, l.e7)([u.Z], () => u.Z.getGuild(t)), {
+  } = e, n = (0, l.e7)([c.Z], () => c.Z.getGuild(t)), {
     available: j,
-    spent: _,
-    total: C
+    spent: Z,
+    total: _
   } = (0, f.Z)(t);
   if (null != n) return (0, r.jsxs)("div", {
     className: h.container,
@@ -51,10 +51,10 @@ function j(e) {
         count: j,
         type: g.br.AVAILABLE
       }), (0, r.jsx)(m.Z, {
-        count: _,
+        count: Z,
         type: g.br.SPENT
       }), (0, r.jsx)(m.Z, {
-        count: C,
+        count: _,
         type: g.br.TOTAL
       })]
     }), (0, r.jsx)(s.Z, {
@@ -66,7 +66,7 @@ function j(e) {
       },
       color: o.Tt.CUSTOM,
       size: o.Ph.LARGE,
-      intent: c.P.NONE,
+      intent: u.P.NONE,
       icon: (0, r.jsx)(a.Ucv, {
         className: h.boostButtonIcon,
         size: "sm",

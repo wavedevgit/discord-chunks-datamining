@@ -21,55 +21,55 @@ function m(e) {
     guildId: g,
     group: v,
     powerups: x
-  } = e, [b, h] = i.useState(false), j = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), _ = (0, f.Z)(v, g), C = !j && b ? null == _ || null == (t = _.image) ? true : t.animatedUrl : null == _ || null == (n = _.image) ? true : n.staticUrl, Z = (0, c.Z)({
+  } = e, [b, h] = i.useState(false), j = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), Z = (0, f.Z)(v, g), _ = !j && b ? null == Z || null == (t = Z.image) ? true : t.animatedUrl : null == Z || null == (n = Z.image) ? true : n.staticUrl, C = (0, u.Z)({
     guildId: g,
     powerups: x
   }), {
     textColor: w
-  } = (0, d.Z)(null != (m = null == Z ? true : Z.isActive) && m);
-  if (null == Z || null == _) return null;
+  } = (0, d.Z)(null != (m = null == C ? true : C.isActive) && m);
+  if (null == C || null == Z) return null;
   let {
-    status: I,
-    cost: E,
+    status: E,
+    cost: I,
     costDecorator: P
-  } = Z;
-  return (0, r.jsxs)(u.aB, {
-    label: _.title,
-    isActive: (null == I ? true : I.type) === "active",
-    isWarning: (null == I ? true : I.type) === "expiring",
-    badge: _.badge,
-    onClick: () => _.openModal(x),
+  } = C;
+  return (0, r.jsxs)(c.aB, {
+    label: Z.title,
+    isActive: (null == E ? true : E.type) === "active",
+    isWarning: (null == E ? true : E.type) === "expiring",
+    badge: Z.badge,
+    onClick: () => Z.openModal(x),
     onMouseOver: () => h(true),
     onMouseLeave: () => h(false),
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: C,
+      src: _,
       className: p.image
-    }), (0, r.jsx)(u.Q9, {
-      title: _.title,
+    }), (0, r.jsx)(c.Q9, {
+      title: Z.title,
       textColor: w,
-      footer: (0, r.jsx)(u.uf, {
-        status: I,
-        cost: E,
+      footer: (0, r.jsx)(c.uf, {
+        status: E,
+        cost: I,
         costDecorator: P
       }),
       children: (0, r.jsx)(a.Text, {
         className: p.description,
         color: w,
         variant: "text-sm/medium",
-        children: _.description
+        children: Z.description
       })
-    }), (0, r.jsx)(u.N4, {
-      children: (null == _ ? true : _.viewCtaTooltip) != null ? (0, r.jsx)(o.u, {
+    }), (0, r.jsx)(c.N4, {
+      children: (null == Z ? true : Z.viewCtaTooltip) != null ? (0, r.jsx)(o.u, {
         asContainer: true,
-        text: _.viewCtaTooltip,
+        text: Z.viewCtaTooltip,
         delay: 100,
         children: (0, r.jsx)(a.Button, {
-          text: _.viewCta,
+          text: Z.viewCta,
           fullWidth: true
         })
       }) : (0, r.jsx)(a.Button, {
-        text: _.viewCta,
+        text: Z.viewCta,
         fullWidth: true
       })
     })]

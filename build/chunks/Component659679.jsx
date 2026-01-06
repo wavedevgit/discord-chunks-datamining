@@ -23,7 +23,7 @@ function p(e) {
     username: p,
     roleColor: m,
     roleColorStrings: g
-  } = (0, s._)(t), v = (0, c.X7)(t.guildId, t.userId, null != g ? g : null);
+  } = (0, s._)(t), v = (0, u.X7)(t.guildId, t.userId, null != g ? g : null);
   return (0, r.jsxs)("div", {
     className: f.systemMessageContainer,
     children: [(0, r.jsx)(o.Ucv, {
@@ -48,7 +48,7 @@ function p(e) {
             colorString: null != m ? m : null,
             colorStrings: v
           })
-        }), d.intl.string(u.default.plwH8d)]
+        }), d.intl.string(c.default.plwH8d)]
       })
     }), (0, r.jsx)(a.Z, {
       timestamp: n,
