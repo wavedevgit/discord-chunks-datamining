@@ -133,7 +133,7 @@ function k(e) {
       children: [(0, r.jsx)(c.iWm, {
         size: "xxs",
         color: "currentColor"
-      }), (0, r.jsx)(m.x3, {
+      }), (0, r.jsx)(m.x, {
         entry: {
           start: ee,
           end: null == Y || null == (e = Y.timestamps) ? true : e.end

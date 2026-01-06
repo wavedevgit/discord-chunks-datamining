@@ -2,7 +2,7 @@
 /** chunk id: 678869, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => j
 }), require("./804061.js"), require("./704826.js"), require("./35282.js"), require("./539854.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -27,36 +27,37 @@ var Chunk54381 = require("./54381.js"),
   Chunk591853 = require("./591853.jsx"),
   Chunk371991 = require("./371991.jsx"),
   Chunk410441 = require("./410441.jsx"),
+  Chunk288469 = require("./288469.js"),
   Chunk981631 = require("./981631.js"),
   Chunk616922 = require("./616922.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk36310 = require("./36310.js"),
   Chunk813849 = require("./813849.js");
 
-function w(e, t) {
-  return N.intl.formatToPlainString(N.t.h2yWWX, {
+function D(e, t) {
+  return P.intl.formatToPlainString(P.t.h2yWWX, {
     username: t.username,
     activity: e
   })
 }
-let D = (e, t, n) => {
+let x = (e, t, n) => {
   let {
     artist: r,
     media: i
-  } = e, a = N.t["6iNxrl"], o = h.ZP.getName(t.guild_id, t.id, n);
-  return N.intl.formatToMarkdownString(a, {
+  } = e, a = P.t["6iNxrl"], o = h.ZP.getName(t.guild_id, t.id, n);
+  return P.intl.formatToMarkdownString(a, {
     artist: r,
     userName: o,
     media: i
   }).replaceAll("*", "")
 };
 
-function x(e) {
+function L(e) {
   let {
     activity: t
   } = e, n = t.timestamps, {
     now: a
-  } = (0, I.tS)(), {
+  } = (0, C.g)(), {
     durationTimestamp: o,
     seekBarStyles: s
   } = i.useMemo(() => {
@@ -79,17 +80,17 @@ function x(e) {
     }
   }, [t, a]);
   return null == s ? null : (0, r.jsxs)("div", {
-    className: P.listeningTimeline,
-    children: [(0, r.jsx)(I.x3, {
+    className: R.listeningTimeline,
+    children: [(0, r.jsx)(I.x, {
       entry: n
     }), (0, r.jsx)("div", {
-      className: P.seekBarContainer,
+      className: R.seekBarContainer,
       children: (0, r.jsx)("div", {
-        className: P.seekBarFill,
+        className: R.seekBarFill,
         style: s
       })
     }), (0, r.jsx)(l.Text, {
-      className: P.timestamp,
+      className: R.timestamp,
       variant: "text-xs/normal",
       tabularNumbers: true,
       color: true,
@@ -98,11 +99,11 @@ function x(e) {
   })
 }
 
-function L(e) {
+function j(e) {
   var t;
   let n, h, I, {
-      channel: P,
-      entry: L,
+      channel: C,
+      entry: R,
       closePopout: j,
       onReaction: M,
       onVoiceChannelPreview: k
@@ -110,7 +111,7 @@ function L(e) {
     {
       largeImage: U
     } = (0, g.rv)({
-      entry: L
+      entry: R
     }),
     {
       activity: G,
@@ -118,35 +119,35 @@ function L(e) {
       artist: F,
       title: B,
       user: V
-    } = (0, v.pi)(L),
+    } = (0, v.pi)(R),
     {
       primaryColor: H,
       secondaryColor: Y
     } = (0, O.Z)(null == U ? true : U.src),
-    W = (0, y.Z)(C.ABu.SPOTIFY),
-    K = (0, o.e7)([u.Z, _.default], () => (null == G ? true : G.type) === C.IIU.LISTENING && null != V ? (0, f.Z)(u.Z, _.default, V, G) : true, [G, V], s.Z),
+    W = (0, y.Z)(A.ABu.SPOTIFY),
+    K = (0, o.e7)([u.Z, _.default], () => (null == G ? true : G.type) === A.IIU.LISTENING && null != V ? (0, f.Z)(u.Z, _.default, V, G) : true, [G, V], s.Z),
     z = i.useCallback(() => {
       var e;
-      if (null == P || null == V) return;
+      if (null == C || null == V) return;
       let t = null == (e = G.timestamps) ? true : e.start,
         n = (0, E.T_)(null != t ? {
           start: t
-        } : L, Date.now());
+        } : R, Date.now());
       return (0, b.CR)({
         user: V,
-        channel: P,
+        channel: C,
         mediaImageSrc: null == U ? true : U.src,
         artist: F,
-        description: D({
+        description: x({
           artist: F,
           media: B
-        }, P, V),
+        }, C, V),
         colors: [H, Y],
         badges: (0, b.jE)({
           timestamp: n
         })
       })
-    }, [G, F, P, L, null == U ? true : U.src, H, Y, B, V]);
+    }, [G, F, C, R, null == U ? true : U.src, H, Y, B, V]);
   if (null == G || null == Z) return null;
   let q = F,
     Q = [];
@@ -165,17 +166,17 @@ function L(e) {
     if (q = (0, r.jsx)(d.Z, {
         artists: F,
         canOpen: null != G.sync_id,
-        linkClassName: R.popoutTextSecondary,
+        linkClassName: w.popoutTextSecondary,
         onOpenSpotifyArtist: e
       }), (null == K ? true : K.syncDisabled) === false) {
       let e = () => {
-        (0, p.Z)(K, A.kG.USER_ACTIVITY_SYNC), j()
+        (0, p.Z)(K, N.kG.USER_ACTIVITY_SYNC), j()
       };
       Q.push((0, r.jsx)(l.Button, {
         variant: "primary",
         size: "md",
         fullWidth: true,
-        text: N.intl.string(N.t.eU3inB),
+        text: P.intl.string(P.t.eU3inB),
         icon: l.iOO,
         onClick: e
       }, "listen-along"))
@@ -183,19 +184,19 @@ function L(e) {
   }
   let X = (0, r.jsx)(S.wG, {
     onClickThumbnail: I,
-    channel: P,
-    entry: L,
+    channel: C,
+    entry: R,
     headerIcons: Z.media.provider === a.p.SPOTIFY ? (0, r.jsx)(T.Z, {
       onClick: n,
-      "aria-label": N.intl.string(N.t.rRffNz),
+      "aria-label": P.intl.string(P.t.rRffNz),
       Icon: m.Z
     }) : null,
-    userDescription: (0, E.kr)(L) ? N.t.Tzx5D2 : N.t.CcVI1T,
+    userDescription: (0, E.kr)(R) ? P.t.Tzx5D2 : P.t.CcVI1T,
     title: B,
     onClickTitle: h,
     subtitle: q,
     badges: null,
-    children: (null == (t = G.timestamps) ? true : t.start) != null && (0, r.jsx)(x, {
+    children: (null == (t = G.timestamps) ? true : t.start) != null && (0, r.jsx)(L, {
       activity: G
     })
   });
@@ -205,10 +206,10 @@ function L(e) {
         onReaction: M,
         onVoiceChannelPreview: k,
         user: V,
-        channel: P,
+        channel: C,
         generateReactionImage: z,
-        reactionImageAltText: w(F, V),
-        entry: L,
+        reactionImageAltText: D(F, V),
+        entry: R,
         buttons: Q
       })
     })]

@@ -71,7 +71,7 @@ function A(e) {
     baseChannelId: A,
     channelViewSource: D = "Split View",
     isResourceChannelView: R
-  } = e, k = (0, l.e7)([y.Z], () => y.Z.getChannel(t)), L = (0, l.e7)([_.Z], () => _.Z.getGuild(null == k ? true : k.getGuildId())), H = (0, Z.ZP)(k), M = (0, l.e7)([C.Z], () => (null == L ? true : L.id) != null && C.Z.isLurking(L.id), [L]), U = (0, h.Z)(t), G = (0, l.e7)([f.Z], () => {
+  } = e, k = (0, l.e7)([y.Z], () => y.Z.getChannel(t)), L = (0, l.e7)([_.Z], () => _.Z.getGuild(null == k ? true : k.getGuildId())), H = (0, w.ZP)(k), M = (0, l.e7)([C.Z], () => (null == L ? true : L.id) != null && C.Z.isLurking(L.id), [L]), U = (0, h.Z)(t), G = (0, l.e7)([f.Z], () => {
     var e;
     return null == (e = f.Z.getResourceForChannel(null == L ? true : L.id, t)) ? true : e.title
   }), W = (0, d.$5)(k), F = r.useRef(false);
@@ -116,7 +116,7 @@ function A(e) {
           })
         },
         handleClick: () => {
-          let e = w.Z.getMessages(k.id);
+          let e = Z.Z.getMessages(k.id);
           if (R) {
             (0, j.uL)(P.Z5c.CHANNEL(k.guild_id, k.id)), (0, p.C3)(k.guild_id, null);
             return

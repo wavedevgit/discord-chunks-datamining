@@ -187,7 +187,7 @@ function U(e) {
     children: [(0, r.jsx)(d, {
       size: "xxs",
       color: l
-    }), (0, r.jsx)(O.ZP, {
+    }), (0, r.jsx)(O.Z, {
       entry: t,
       textColor: c,
       hovered: n,
@@ -234,7 +234,7 @@ function Z(e) {
     children: [(0, r.jsx)(p.RZG, {
       size: "xxs",
       color: l
-    }), (0, r.jsx)(O.ZP, {
+    }), (0, r.jsx)(O.Z, {
       entry: t,
       textColor: c,
       hovered: n,
@@ -391,7 +391,7 @@ function q(e) {
     children: [(0, r.jsx)(p.ARS, {
       size: "xxs",
       color: l
-    }), (0, r.jsx)(O.ZP, {
+    }), (0, r.jsx)(O.Z, {
       entry: t,
       textColor: c,
       hovered: n,

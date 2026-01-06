@@ -2,7 +2,7 @@
 /** chunk id: 45966, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => F
+  Z: () => B
 }), require("./539854.js"), require("./472816.js"), require("./794429.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -204,25 +204,32 @@ function j(e) {
   } = e, r = b[t];
   null != r && (r.mode = n)
 }
-let M = [],
-  k = [],
+
+function M(e) {
+  let {
+    guild: t
+  } = e;
+  delete b[t.id], delete y[t.id], delete O[t.id]
+}
+let k = [],
   U = [],
-  G = [];
-class Z extends(r = Chunk442837.ZP.Store) {
+  G = [],
+  Z = [];
+class F extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk819553.ZP, Chunk160404.Z)
   }
   getOnboardingPromptsForOnboarding(e) {
     var t, n;
-    return null != (n = null == (t = b[e]) ? true : t.onboardingPrompts) ? n : M
+    return null != (n = null == (t = b[e]) ? true : t.onboardingPrompts) ? n : k
   }
   getOnboardingPrompts(e) {
     var t, n;
-    return null != (n = null == (t = b[e]) ? true : t.prompts) ? n : M
+    return null != (n = null == (t = b[e]) ? true : t.prompts) ? n : k
   }
   getOnboardingResponses(e) {
     var t, n, r;
-    return l.Z.isFullServerPreview(e) ? Array.from(null != (n = l.Z.getOnboardingResponses(e)) ? n : k) : null != (r = null == (t = b[e]) ? true : t.responses) ? r : k
+    return l.Z.isFullServerPreview(e) ? Array.from(null != (n = l.Z.getOnboardingResponses(e)) ? n : U) : null != (r = null == (t = b[e]) ? true : t.responses) ? r : U
   }
   getSelectedOptions(e) {
     let t = this.getOnboardingResponses(e);
@@ -230,18 +237,18 @@ class Z extends(r = Chunk442837.ZP.Store) {
   }
   getOnboardingResponsesForPrompt(e, t) {
     let n = b[e];
-    if (null == n) return k;
+    if (null == n) return U;
     let r = n.prompts.find(e => e.id === t);
-    return null == r ? k : a().intersection(r.options.map(e => e.id), this.getOnboardingResponses(e))
+    return null == r ? U : a().intersection(r.options.map(e => e.id), this.getOnboardingResponses(e))
   }
   getEnabledOnboardingPrompts(e) {
     var t, n;
     let r = b[e];
-    return l.Z.isFullServerPreview(e) ? null != (t = null == r ? true : r.prompts) ? t : M : null != r && r.enabled && null != (n = r.prompts) ? n : M
+    return l.Z.isFullServerPreview(e) ? null != (t = null == r ? true : r.prompts) ? t : k : null != r && r.enabled && null != (n = r.prompts) ? n : k
   }
   getDefaultChannelIds(e) {
     var t, n;
-    return null != (n = null == (t = b[e]) ? true : t.defaultChannelIds) ? n : U
+    return null != (n = null == (t = b[e]) ? true : t.defaultChannelIds) ? n : G
   }
   getEnabled(e) {
     var t, n;
@@ -280,12 +287,13 @@ class Z extends(r = Chunk442837.ZP.Store) {
   }
   getConnections(e) {
     var t, n;
-    return null != (n = null == (t = b[e]) ? true : t.connections) ? n : G
+    return null != (n = null == (t = b[e]) ? true : t.connections) ? n : Z
   }
 }
-m(Z, "displayName", "GuildOnboardingPromptsStore");
-let F = new Z(Chunk570140.Z, {
+m(F, "displayName", "GuildOnboardingPromptsStore");
+let B = new F(Chunk570140.Z, {
   CONNECTION_OPEN: I,
+  GUILD_DELETE: M,
   GUILD_ONBOARDING_PROMPTS_FETCH_START: S,
   GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: A,
   GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE: N,

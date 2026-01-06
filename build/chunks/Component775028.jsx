@@ -74,7 +74,7 @@ function L(e) {
     guild: t,
     channel: r,
     onCategoryClick: l
-  } = e, o = (0, w.Mf)(t.id, r.id, r.id), c = (0, w.t4)(t.id, r.id, r.id);
+  } = e, o = (0, Z.Mf)(t.id, r.id, r.id), c = (0, Z.t4)(t.id, r.id, r.id);
   return (0, a.jsxs)("div", {
     className: i()(T.categoryRow, {
       [T.uncategorized]: "null" === r.id
@@ -128,10 +128,10 @@ let H = Chunk473749.memo(function() {
       isFirstChannel: c,
       isLastChannel: f,
       onChannelClick: _,
-      tooltipDirection: Z = "right"
+      tooltipDirection: w = "right"
     } = e, {
       isSubscriptionGated: L
-    } = (0, h.Z)(t.id), U = (0, w.Mf)(l.id, t.id, r.id), G = (0, w.t4)(l.id, t.id, r.id), W = (0, w.EH)(l.id, r.id), F = (0, o.e7)([y.Z], () => y.Z.getActiveThreadCount(l.id, t.id)), q = (0, o.e7)([C.Z], () => C.Z.shouldIndicateNewChannel(l.id, t.id)), z = function(e, t) {
+    } = (0, h.Z)(t.id), U = (0, Z.Mf)(l.id, t.id, r.id), G = (0, Z.t4)(l.id, t.id, r.id), W = (0, Z.EH)(l.id, r.id), F = (0, o.e7)([y.Z], () => y.Z.getActiveThreadCount(l.id, t.id)), q = (0, o.e7)([C.Z], () => C.Z.shouldIndicateNewChannel(l.id, t.id)), z = function(e, t) {
       let n = [];
       return I.TPd.GUILD_THREADS_ONLY.has(e.type) && t >= 1 && n.push((0, a.jsx)(b.Text, {
         variant: "text-xs/normal",
@@ -167,7 +167,7 @@ let H = Chunk473749.memo(function() {
       children: [(0, a.jsx)(u.u, {
         text: W,
         delay: 500,
-        position: Z,
+        position: w,
         children: (0, a.jsxs)(b.P3F, {
           className: i()(T.channelRow, {
             [T.firstChannel]: c,
@@ -272,7 +272,7 @@ function G(e) {
       section: r,
       row: l
     } = e;
-    if (0 === r && false === u) return (0, a.jsx)(Z.Z, {
+    if (0 === r && false === u) return (0, a.jsx)(w.Z, {
       guild: n
     });
     let i = t._categories[r + u],
@@ -286,7 +286,7 @@ function G(e) {
       tooltipDirection: d ? "right" : "top",
       onChannelClick: s
     }, o.channel.id)
-  }, [t, n, u, d, s]), m = (0, Z.q)(n.id), g = (0, N.tn)(n.id, t, 64, m);
+  }, [t, n, u, d, s]), m = (0, w.q)(n.id), g = (0, N.tn)(n.id, t, 64, m);
   return (0, a.jsx)(b._2F, {
     className: l,
     innerClassName: i()(o, T.scrollerInner),

@@ -5,7 +5,7 @@ require.d(exports, {
   BG: () => b,
   DO: () => h,
   pt: () => p
-}), require("./388685.js");
+}), require("./388685.js"), require("./415506.js");
 var Chunk570140 = require("./570140.js"),
   Chunk668781 = require("./668781.js"),
   Chunk881052 = require("./881052.js"),
@@ -36,21 +36,35 @@ async function h(e) {
     n = g.Z.advancedMode,
     [b] = (0, s.d9)(e.id, [...t]),
     p = (0, s.kl)(e.id, t, g.Z.editedOnboardingPrompts, s.V7);
-  if (a.Z.getEnabled(e.id) && (!n && b.length < f.X || n && p.length < f.X)) return void i.Z.show({
-    title: m.intl.string(m.t.iLdiqY),
-    body: m.intl.string(m.t.JOT74c)
-  });
+  if (a.Z.getEnabled(e.id) && (!n && b.length < f.X || n && p.length < f.X)) {
+    if (i.Z.show({
+        title: m.intl.string(m.t.iLdiqY),
+        body: m.intl.string(m.t.JOT74c)
+      }), n) throw Error("Chattable channels with questions requirement not met");
+    return
+  }
   if (d.Z.hasChanges()) {
     r.Z.dispatch({
       type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SUBMIT"
     });
     try {
+      let i = n ? (0, u.GP)(e, {
+          ignoreDefaultPrompt: true
+        }) : null,
+        l = null != i ? i.map(f.dr) : true;
       await (0, u.n_)(e.id, {
-        default_channel_ids: t
+        default_channel_ids: t,
+        prompts: l
       }), r.Z.dispatch({
         type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS",
         guildId: e.id,
         channelIds: t
+      }), null != i && r.Z.dispatch({
+        type: "GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_SUCCESS",
+        guildId: e.id,
+        updates: {
+          prompts: i
+        }
       })
     } catch (n) {
       var h;

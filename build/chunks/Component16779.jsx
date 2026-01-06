@@ -31,7 +31,7 @@ function f(e) {
     children: [(0, r.jsx)(f, {
       size: "xxs",
       color: i.TVs.colors.TEXT_FEEDBACK_POSITIVE
-    }), (0, r.jsx)(s.x3, {
+    }), (0, r.jsx)(s.x, {
       entry: {
         start: u,
         end: null == (n = l.timestamps) ? true : n.end

@@ -28,7 +28,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk453223 = require("./453223.js"),
   Chunk978966 = require("./978966.js");
 
-function Z(e) {
+function w(e) {
   let {
     guild: t
   } = e, n = (0, C.Z)(t);
@@ -67,20 +67,22 @@ function I(e) {
   } = e, l = (0, o.e7)([x.Z], () => x.Z.getGuild(t)), c = (0, C.Z)(l), [u, b] = r.useState(null != n ? n : v.l7.CUSTOMIZE);
   r.useEffect(() => {
     null != n && b(n)
-  }, [n]);
+  }, [n]), r.useEffect(() => {
+    c || u !== v.l7.CUSTOMIZE || b(v.l7.BROWSE)
+  }, [c, u]);
   let p = (0, o.e7)([g.ZP], () => g.ZP.getCurrentSidebarChannelId(O.oC.CHANNEL_BROWSER)),
     y = null != p && u === v.l7.BROWSE,
     I = (0, o.e7)([m.Z], () => m.Z.getNewChannelIds(t).size > 0),
     P = (0, f.fU)(t);
   return null == l ? null : (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsxs)("div", {
-      className: i()(w.chat, {
-        [w.threadSidebarOpen]: y
+      className: i()(Z.chat, {
+        [Z.threadSidebarOpen]: y
       }),
-      children: [(0, a.jsx)(Z, {
+      children: [(0, a.jsx)(w, {
         guild: l
       }), (0, a.jsxs)("div", {
-        className: i()(w.content, _.container),
+        className: i()(Z.content, _.container),
         children: [c && (0, a.jsxs)(s.njP, {
           className: _.tabBar,
           type: "top",

@@ -55,7 +55,7 @@ function m(e) {
       children: [(0, r.jsx)(a.RZG, {
         size: "xxs",
         color: "currentColor"
-      }), (0, r.jsx)(l.x3, {
+      }), (0, r.jsx)(l.x, {
         entry: {
           start: w,
           end: null == y || null == (e = y.timestamps) ? true : e.end

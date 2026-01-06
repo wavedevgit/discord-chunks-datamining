@@ -84,7 +84,7 @@ function P(e) {
   }) : N && (0, y.a)(Z) && Y ? (0, r.jsx)(a.IGR, {
     text: I.intl.string(I.t.dI3q4h),
     color: l.Z.unsafe_rawColors.RED_400.css
-  }) : null != F ? (0, r.jsx)(c.x3, {
+  }) : null != F ? (0, r.jsx)(c.x, {
     textColor: "text-feedback-positive",
     entry: {
       start: F

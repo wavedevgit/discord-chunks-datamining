@@ -37,7 +37,7 @@ function d() {
       }) : module ? "(awaiting push)" : "(unscheduled)"]
     }), (0, Chunk54381.jsxs)(Chunk481060.Text, {
       variant: "text-md/normal",
-      children: ["Last fetch:", " ", null != d ? (0, Chunk54381.jsx)(Chunk371991.x3, {
+      children: ["Last fetch:", " ", null != d ? (0, Chunk54381.jsx)(Chunk371991.x, {
         inline: true,
         entry: {
           start: d.getTime()

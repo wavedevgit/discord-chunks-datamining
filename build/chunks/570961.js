@@ -1,13 +1,14 @@
 /** Chunk was on 58227 **/
 /** chunk id: 570961, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $y: () => x,
+  $y: () => T,
+  GP: () => S,
   Kk: () => p,
   NB: () => I,
-  en: () => j,
+  en: () => v,
   fi: () => O,
-  n_: () => T,
-  rS: () => S,
+  n_: () => _,
+  rS: () => x,
   tS: () => E
 }), require("./415506.js"), require("./388685.js");
 var Chunk544891 = require("./544891.js"),
@@ -75,20 +76,22 @@ function E(e, t) {
       type: "GUILD_SETTINGS_ONBOARDING_PROMPTS_EDIT",
       prompts: t
     }), n) {
-    let n = t.map(n => _(e, t, n));
+    let n = t.map(n => j(e, t, n));
     i.Z.dispatch({
       type: "GUILD_SETTINGS_ONBOARDING_PROMPTS_ERRORS",
       errors: n
     })
   }
 }
-async function S(e, t) {
-  if (!u.Z.hasChanges()) return;
-  let n = u.Z.getChangedPrompts();
-  null != t && t.ignoreDefaultPrompt && 1 === n.length && (0, g.RF)(n[0]) && (n = []);
-  let l = u.Z.editedOnboardingPrompts.map(t => {
-      if (!n.some(e => e.id === t.id)) return t;
-      let l = t.options.map(t => {
+
+function S(e, t) {
+  let n;
+  if (!u.Z.hasChanges()) return null;
+  let l = (n = u.Z.getChangedPrompts(), null != t && t.ignoreDefaultPrompt && 1 === n.length && (0, g.RF)(n[0]) && (n = []), n),
+    s = u.Z.editedOnboardingPrompts,
+    m = s.map(t => {
+      if (!l.some(e => e.id === t.id)) return t;
+      let n = t.options.map(t => {
         let n = null == t.roleIds ? t.roleIds : t.roleIds.filter(t => null != c.Z.getRole(e.id, t)),
           l = null == t.channelIds ? t.channelIds : t.channelIds.filter(e => null != o.Z.getChannel(e));
         return N(h({}, t), {
@@ -101,46 +104,51 @@ async function S(e, t) {
         })
       });
       return N(h({}, t), {
-        options: l,
-        type: l.length >= g.fY ? g.FN.DROPDOWN : g.FN.MULTIPLE_CHOICE
+        options: n,
+        type: n.length >= g.fY ? g.FN.DROPDOWN : g.FN.MULTIPLE_CHOICE
       })
-    }),
-    m = l.filter(e => e.inOnboarding),
-    I = l.filter(e => true !== e.inOnboarding),
-    p = l.map(t => n.some(e => e.id === t.id) ? _(e, l, t) : null);
-  if (p.filter(d.lm).length > 0) throw i.Z.dispatch({
+    });
+  if (0 === m.length) return null;
+  let I = m.filter(e => e.inOnboarding),
+    p = m.filter(e => true !== e.inOnboarding),
+    O = m.map(t => l.some(e => e.id === t.id) ? j(e, m, t) : null);
+  if (O.filter(d.lm).length > 0) throw i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_FAILED",
-    errors: p
+    errors: O
   }), Error("failed to locally validate prompts");
-  if (m.length > g.b3) throw r.Z.show({
+  if (I.length > g.b3) throw r.Z.show({
     title: f.intl.string(f.t.iLdiqY),
     body: f.intl.formatToPlainString(f.t["cTb/rg"], {
       numQuestions: g.b3
     })
   }), i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_FAILED",
-    errors: p
+    errors: O
   }), Error("too many prompts in onboarding");
-  let O = [...m, ...I];
-  i.Z.dispatch({
+  return [...I, ...p]
+}
+async function x(e, t) {
+  if (!u.Z.hasChanges()) return;
+  let n = S(e, t);
+  null == n && (n = []), i.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_PROMPTS_SUBMIT"
   });
   try {
-    await T(e.id, {
-      prompts: O.map(g.dr)
+    await _(e.id, {
+      prompts: n.map(g.dr)
     }), i.Z.dispatch({
       type: "GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_SUCCESS",
       guildId: e.id,
       updates: {
-        prompts: O
+        prompts: n
       }
     })
   } catch (n) {
-    var E;
+    var l;
     let {
       fieldName: e,
       error: t
-    } = null != (E = new s.Hx(n).getAnyErrorMessageAndField()) ? E : {};
+    } = null != (l = new s.Hx(n).getAnyErrorMessageAndField()) ? l : {};
     throw r.Z.show({
       title: f.intl.string(f.t.iLdiqY),
       body: [e, t].filter(d.lm).join(": ")
@@ -149,7 +157,7 @@ async function S(e, t) {
     }), Error("failed to save prompts")
   }
 }
-async function x(e, t) {
+async function T(e, t) {
   i.Z.dispatch({
     type: "GUILD_ONBOARDING_PROMPTS_LOCAL_UPDATE",
     guildId: e,
@@ -158,7 +166,7 @@ async function x(e, t) {
     }
   });
   try {
-    await T(e, {
+    await _(e, {
       enabled: t
     })
   } catch (l) {
@@ -173,7 +181,7 @@ async function x(e, t) {
     })
   }
 }
-async function T(e, t) {
+async function _(e, t) {
   await l.tn.put({
     url: m.ANM.GUILD_ONBOARDING(e),
     body: t,
@@ -181,17 +189,17 @@ async function T(e, t) {
   })
 }
 
-function _(e, t, n) {
+function j(e, t, n) {
   let l = {
       optionErrors: []
     },
     i = false;
   return n.title.length <= 0 && (l.title = f.intl.string(f.t.h8Hg1T), i = true), n.options.length <= 0 && (l.options = f.intl.string(f.t["64tF+W"]), i = true), n.inOnboarding && t.filter(e => e.inOnboarding).length > g.b3 && (l.config = f.intl.formatToPlainString(f.t["cTb/rg"], {
     numQuestions: g.b3
-  }), i = true), l.optionErrors = n.options.map(l => j(e, t, n, l)), (i = i || l.optionErrors.some(e => null != e)) ? l : null
+  }), i = true), l.optionErrors = n.options.map(l => v(e, t, n, l)), (i = i || l.optionErrors.some(e => null != e)) ? l : null
 }
 
-function j(e, t, n, l) {
+function v(e, t, n, l) {
   var i, r, s;
   if (n.singleSelect) {
     let e = new Set(null != (i = l.roleIds) ? i : []);
