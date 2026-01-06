@@ -27,9 +27,9 @@ function b(e) {
     trackClick: n,
     onInviteResolved: r,
     closeModal: b
-  } = e, [I, O] = i.useState(), y = (0, s.e7)([f.Z], () => {
+  } = e, [O, I] = i.useState(), y = (0, s.e7)([f.Z], () => {
     var e, t;
-    return (null == I || null == (e = I.guild) ? true : e.id) != null && f.Z.isMember(null == I || null == (t = I.guild) ? true : t.id)
+    return (null == O || null == (e = O.guild) ? true : e.id) != null && f.Z.isMember(null == O || null == (t = O.guild) ? true : t.id)
   }), P = i.useMemo(() => {
     var e;
     return null == (e = t.websites) ? true : e.find(e => {
@@ -43,16 +43,16 @@ function b(e) {
       let e = async e => {
         let t = e.split("/").pop();
         if (null != t) {
-          if (null != I && I.code.toLowerCase() === t.toLowerCase()) return;
+          if (null != O && O.code.toLowerCase() === t.toLowerCase()) return;
           let e = await (0, m.Z)(t);
-          true !== e.banned && (O(e.invite), null != e.invite && (null == r || r(e.invite)))
+          true !== e.banned && (I(e.invite), null != e.invite && (null == r || r(e.invite)))
         }
       };
       null != P && e(P.url)
-    }, [P, r, I]), null == I || null == I.guild || !I.guild.features.includes(x.GuildFeatures.VERIFIED)) return null;
+    }, [P, r, O]), null == O || null == O.guild || !O.guild.features.includes(x.GuildFeatures.VERIFIED)) return null;
   let w = g.ZP.getGuildIconURL({
-    id: I.guild.id,
-    icon: I.guild.icon,
+    id: O.guild.id,
+    icon: O.guild.icon,
     size: 32
   });
   return (0, a.jsxs)("div", {
@@ -68,7 +68,7 @@ function b(e) {
         className: j.guildIcon,
         src: w,
         alt: v.intl.formatToPlainString(v.t.xm6W9D, {
-          guildName: I.guild.name
+          guildName: O.guild.name
         })
       }), (0, a.jsxs)("div", {
         className: j.inviteInfo,
@@ -76,16 +76,16 @@ function b(e) {
           className: j.guildNameContainer,
           children: [(0, a.jsx)(c.Text, {
             variant: "text-sm/semibold",
-            children: I.guild.name
+            children: O.guild.name
           }), (0, a.jsx)(u.Z, {
-            guild: I.guild,
+            guild: O.guild,
             size: 16
           })]
-        }), null != I.approximate_member_count && (0, a.jsx)(c.Text, {
+        }), null != O.approximate_member_count && (0, a.jsx)(c.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
           children: v.intl.format(v.t.zRl6XR, {
-            count: I.approximate_member_count
+            count: O.approximate_member_count
           })
         })]
       })]
@@ -95,8 +95,8 @@ function b(e) {
       onClick: () => {
         b(), n(p.as.JoinOfficialServer), d.Z.dispatch({
           type: "INVITE_MODAL_OPEN",
-          invite: I,
-          code: I.code,
+          invite: O,
+          code: O.code,
           context: x.IlC.APP
         })
       },
