@@ -227,10 +227,9 @@ let z = Chunk473749.memo(function(e) {
       children: (0, i.jsx)(u.Z, {
         ref: ee,
         onChange: e => {
-          var t, n, i;
+          var t, n;
           t = e.currentTarget.files, null != (n = e.currentTarget.err) && "ETOOLARGE" === n.code ? (0, M.G)(q, []) : (0, M.d)(t, q, K, {
             requireConfirm: true,
-            showLargeMessageDialog: i,
             origin: "file_picker"
           }), A.S.dispatchToLastSubscribed(U.CkL.TEXTAREA_FOCUS), e.currentTarget.value = ""
         },

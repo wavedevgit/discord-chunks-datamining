@@ -120,13 +120,12 @@ class k extends Chunk476326.ZP {
     let {
       item: t,
       channelId: n,
-      showLargeMessageDialog: r,
-      reactNativeFileIndex: i
-    } = e, a = new k(t, n, r, i);
+      reactNativeFileIndex: r
+    } = e, i = new k(t, n, r);
     return Object.entries(e).forEach(e => {
       let [t, n] = e;
-      t.startsWith("_") || (a[t] = n)
-    }), "COMPLETED" !== a.status && (a.status = "NOT_STARTED"), a
+      t.startsWith("_") || (i[t] = n)
+    }), "COMPLETED" !== i.status && (i.status = "NOT_STARTED"), i
   }
   parseRangeHeader(e) {
     let t = e.match(/^bytes=(\d+)-(\d+)(?:\/\d+)?$/);
@@ -534,13 +533,13 @@ class k extends Chunk476326.ZP {
       service_provider: h.Z.getServiceProvider()
     })
   }
-  constructor(e, t, n, r, i) {
-    var a, o, s, l;
-    super(e, n), N(this, "status", "NOT_STARTED"), N(this, "channelId", true), N(this, "responseUrl", true), N(this, "currentSize", true), N(this, "preCompressionSize", true), N(this, "postCompressionSize", true), N(this, "loaded", 0), N(this, "reactNativeFileIndex", true), N(this, "error", true), N(this, "reactNativeFilePrepped", false), N(this, "allowOptimization", true), N(this, "startTime", true), N(this, "uploadAnalytics", new M), N(this, "contentHash", true), N(this, "etag", true), N(this, "uploadAttempts", 0), N(this, "_abortController", true), N(this, "_xhr", true), N(this, "_aborted", false), N(this, "_uploadHttpClient", true), N(this, "_libdiscoreEnabled", true), N(this, "_resumptionEnabled", true), N(this, "createResumeAwareProgressFn", e => t => {
+  constructor(e, t, n, r) {
+    var i, a, o, s;
+    super(e), N(this, "status", "NOT_STARTED"), N(this, "channelId", true), N(this, "responseUrl", true), N(this, "currentSize", true), N(this, "preCompressionSize", true), N(this, "postCompressionSize", true), N(this, "loaded", 0), N(this, "reactNativeFileIndex", true), N(this, "error", true), N(this, "reactNativeFilePrepped", false), N(this, "allowOptimization", true), N(this, "startTime", true), N(this, "uploadAnalytics", new M), N(this, "contentHash", true), N(this, "etag", true), N(this, "uploadAttempts", 0), N(this, "_abortController", true), N(this, "_xhr", true), N(this, "_aborted", false), N(this, "_uploadHttpClient", true), N(this, "_libdiscoreEnabled", true), N(this, "_resumptionEnabled", true), N(this, "createResumeAwareProgressFn", e => t => {
       let n = t.loaded + e,
         r = t.total + e,
         i = n - this.loaded;
       this.emit("progress", n, r, i), this.loaded = n
-    }), this.channelId = t, this.preCompressionSize = null != (s = null == (a = e.file) ? true : a.size) ? s : 0, this.currentSize = null != (l = null == (o = e.file) ? true : o.size) ? l : 0, this.reactNativeFileIndex = r, null != i && (this.allowOptimization = i), e.platform === S.ow.WEB && null != e.compressionMetadata && (this.mimeType = e.compressionMetadata.originalContentType), this._abortController = new AbortController, null != this.origin && (this.uploadAnalytics.origin = "string" == typeof this.origin ? this.origin : S.BS[this.origin]), this._uploadHttpClient = new T.LD, this._libdiscoreEnabled = false, this._resumptionEnabled = false
+    }), this.channelId = t, this.preCompressionSize = null != (o = null == (i = e.file) ? true : i.size) ? o : 0, this.currentSize = null != (s = null == (a = e.file) ? true : a.size) ? s : 0, this.reactNativeFileIndex = n, null != r && (this.allowOptimization = r), e.platform === S.ow.WEB && null != e.compressionMetadata && (this.mimeType = e.compressionMetadata.originalContentType), this._abortController = new AbortController, null != this.origin && (this.uploadAnalytics.origin = "string" == typeof this.origin ? this.origin : S.BS[this.origin]), this._uploadHttpClient = new T.LD, this._libdiscoreEnabled = false, this._resumptionEnabled = false
   }
 }

@@ -40,7 +40,6 @@ let x = function(e) {
       if (P) returnfalse;
       N && null != x && ((0, g.d)(e, x, O, {
         requireConfirm: E,
-        showLargeMessageDialog: false,
         origin: "drag_drop"
       }), m.S.dispatchToLastSubscribed(y.CkL.TEXTAREA_FOCUS))
     },

@@ -51,20 +51,19 @@ let O = e => {
   let {
     files: t,
     channelId: n,
-    showLargeMessageDialog: r,
-    draftType: i,
-    allowOptimization: o
-  } = e, s = [...g(n, i)];
-  if (s.length + t.length > f.dN1 && i !== d.d.SlashCommand && i !== d.d.ApplicationLauncherCommand) return void l.Z.show({
+    draftType: r,
+    allowOptimization: i
+  } = e, o = [...g(n, r)];
+  if (o.length + t.length > f.dN1 && r !== d.d.SlashCommand && r !== d.d.ApplicationLauncherCommand) return void l.Z.show({
     title: p.intl.string(p.t.wOr6hB),
     body: p.intl.formatToPlainString(p.t["qqyp/e"], {
       limit: f.dN1
     })
   });
   a().forEach(t, e => {
-    let t = new c.nH(e, n, r, s.length, o);
-    t.upload(), s.push(t)
-  }), b(n, i, s)
+    let t = new c.nH(e, n, o.length, i);
+    t.upload(), o.push(t)
+  }), b(n, r, o)
 };
 
 function v(e) {
@@ -111,7 +110,7 @@ function T(e) {
     file: r,
     draftType: i,
     allowOptimization: a
-  } = e, o = [...g(t, i)].filter(e => e.id !== n), s = new c.nH(r, t, true, true, a);
+  } = e, o = [...g(t, i)].filter(e => e.id !== n), s = new c.nH(r, t, true, a);
   s.upload(), o.push(s), b(t, i, o)
 }
 
