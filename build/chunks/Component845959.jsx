@@ -1,44 +1,57 @@
 /** Chunk was on 30153 **/
 /** chunk id: 845959, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => d
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk493773 = require("./493773.js"),
+  Chunk626135 = require("./626135.js"),
   Chunk51144 = require("./51144.js"),
   Chunk80721 = require("./80721.js"),
   Chunk282793 = require("./282793.js"),
+  Chunk981631 = require("./981631.js"),
   Chunk353149 = require("./353149.js"),
   Chunk388032 = require("./388032.jsx");
-let b = e => {
+let d = e => {
   var t, r, {
-      subscriptionId: b,
-      member: f,
-      onClose: O
+      subscriptionId: d,
+      member: y,
+      onClose: m
     } = e,
-    y = function(e, t) {
+    g = function(e, t) {
       if (null == e) return {};
-      var r, n, o = function(e, t) {
+      var r, n, i = function(e, t) {
         if (null == e) return {};
-        var r, n, o = {},
-          i = Object.keys(e);
-        for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
-        return o
+        var r, n, i = {},
+          o = Object.keys(e);
+        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+        return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+        var o = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
-      return o
+      return i
     }(e, ["subscriptionId", "member", "onClose"]);
-  let [d, g] = (0, o.useState)(false), [j, m] = (0, o.useState)(false), w = async () => {
-    g(true);
-    let e = await (0, a.Jn)(b, f.id);
-    g(false), e.ok ? O() : m(true)
+  let [j, P] = (0, i.useState)(false), [M, _] = (0, i.useState)(false);
+  (0, l.ZP)(() => {
+    a.default.track(p.rMx.PREMIUM_GROUP_REMOVE_MEMBER_MODAL_VIEWED, {
+      subscription_id: d,
+      member_user_id: y.id
+    })
+  });
+  let E = async () => {
+    a.default.track(p.rMx.PREMIUM_GROUP_REMOVE_MEMBER_CTA_CLICKED, {
+      subscription_id: d,
+      member_user_id: y.id
+    }), P(true);
+    let e = await (0, u.Jn)(d, y.id);
+    P(false), e.ok ? m() : _(true)
   };
-  return (0, n.jsx)(i.Modal, (t = function(e) {
+  return (0, n.jsx)(o.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(r);
@@ -57,23 +70,23 @@ let b = e => {
     return e
   }({
     size: "md",
-    title: p.intl.string(u.default.MJIHXY),
-    subtitle: p.intl.formatToPlainString(u.default.gMyQrH, {
-      memberName: (0, l.XM)(f),
-      premiumGroupProductName: (0, s.sO)(),
-      cooldownMonths: s.T9
+    title: f.intl.string(O.default.MJIHXY),
+    subtitle: f.intl.formatToPlainString(O.default.gMyQrH, {
+      memberName: (0, s.XM)(y),
+      premiumGroupProductName: (0, b.sO)(),
+      cooldownMonths: b.T9
     }),
-    onClose: O,
+    onClose: m,
     actions: [{
-      text: p.intl.string(u.default.dlr8CX),
+      text: f.intl.string(O.default.dlr8CX),
       variant: "critical-primary",
-      onClick: w,
-      loading: d
+      onClick: E,
+      loading: j
     }]
-  }, y), r = r = {
-    children: j && (0, n.jsx)(c.M14, {
+  }, g), r = r = {
+    children: M && (0, n.jsx)(c.M14, {
       type: "critical",
-      children: p.intl.string(p.t["rTU7/z"])
+      children: f.intl.string(f.t["rTU7/z"])
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

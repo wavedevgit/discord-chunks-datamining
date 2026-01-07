@@ -1,14 +1,16 @@
 /** Chunk was on 72114 **/
 /** chunk id: 157312, original params: t,e,r (module,exports,require) **/
 require.d(exports, {
-  default: () => y
+  default: () => P
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk493773 = require("./493773.js"),
   Chunk313789 = require("./313789.js"),
   Chunk518596 = require("./518596.jsx"),
+  Chunk626135 = require("./626135.js"),
   Chunk51144 = require("./51144.js"),
   Chunk80721 = require("./80721.js"),
   Chunk282793 = require("./282793.js"),
@@ -16,7 +18,7 @@ var Chunk54381 = require("./54381.js"),
   Chunk353149 = require("./353149.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(t) {
+function g(t) {
   for (var e = 1; e < arguments.length; e++) {
     var r = null != arguments[e] ? arguments[e] : {},
       n = Object.keys(r);
@@ -34,14 +36,14 @@ function d(t) {
   }
   return t
 }
-let y = t => {
+let P = t => {
   var e, r, {
-      subscriptionId: y,
-      invitedUser: g,
+      subscriptionId: P,
+      invitedUser: _,
       subscriptionGroupMemberId: j,
       onClose: m
     } = t,
-    P = function(t, e) {
+    I = function(t, e) {
       if (null == t) return {};
       var r, n, i = function(t, e) {
         if (null == t) return {};
@@ -56,47 +58,57 @@ let y = t => {
       }
       return i
     }(t, ["subscriptionId", "invitedUser", "subscriptionGroupMemberId", "onClose"]);
-  let [S, v] = (0, i.useState)(false), [w, h] = (0, i.useState)(false), [I, C] = (0, i.useState)(false), k = async () => {
-    C(true);
-    let t = await (0, u.if)(y, g.id, j);
-    if (C(false), t.ok) m();
+  let [S, v] = (0, i.useState)(false), [C, E] = (0, i.useState)(false), [w, h] = (0, i.useState)(false);
+  (0, s.ZP)(() => {
+    u.default.track(O.rMx.PREMIUM_GROUP_CANCEL_INVITE_MODAL_VIEWED, {
+      subscription_id: P,
+      invited_user_id: _.id
+    })
+  });
+  let k = async () => {
+    u.default.track(O.rMx.PREMIUM_GROUP_CANCEL_INVITE_CTA_CLICKED, {
+      subscription_id: P,
+      invited_user_id: _.id
+    }), h(true);
+    let t = await (0, p.if)(P, _.id, j);
+    if (h(false), t.ok) m();
     else {
       var e;
-      (null == (e = t.body) ? true : e.code) === p.YW.BILLING_SUBSCRIPTION_GROUP_INVITE_ALREADY_ACCEPTED ? v(true) : h(true)
+      (null == (e = t.body) ? true : e.code) === b.YW.BILLING_SUBSCRIPTION_GROUP_INVITE_ALREADY_ACCEPTED ? v(true) : E(true)
     }
   };
-  return S ? (0, n.jsx)(o.Modal, d({
+  return S ? (0, n.jsx)(o.Modal, g({
     size: "md",
-    title: f.intl.string(O.default.grjTat),
-    subtitle: f.intl.string(O.default.VgTgGu),
+    title: y.intl.string(f.default.grjTat),
+    subtitle: y.intl.string(f.default.VgTgGu),
     actions: [{
-      text: f.intl.string(O.default["+YO9kw"]),
+      text: y.intl.string(f.default["+YO9kw"]),
       variant: "secondary",
       onClick: () => {
-        (0, s.openUserSettings)(c.n.SUBSCRIPTIONS_PANEL, {
-          section: b.oAB.SUBSCRIPTIONS
+        (0, a.openUserSettings)(c.n.SUBSCRIPTIONS_PANEL, {
+          section: O.oAB.SUBSCRIPTIONS
         }), m()
       }
     }],
     onClose: m
-  }, P)) : (0, n.jsx)(o.Modal, (e = d({
+  }, I)) : (0, n.jsx)(o.Modal, (e = g({
     size: "md",
-    title: f.intl.string(O.default.U439m2),
-    subtitle: f.intl.formatToPlainString(O.default["Sv6+Ox"], {
-      memberName: (0, a.XM)(g),
-      premiumGroupProductName: (0, p.sO)()
+    title: y.intl.string(f.default.U439m2),
+    subtitle: y.intl.formatToPlainString(f.default["Sv6+Ox"], {
+      memberName: (0, d.XM)(_),
+      premiumGroupProductName: (0, b.sO)()
     }),
     onClose: m,
     actions: [{
-      text: f.intl.string(O.default["2blqtw"]),
+      text: y.intl.string(f.default["2blqtw"]),
       variant: "critical-primary",
       onClick: k,
-      loading: I
+      loading: w
     }]
-  }, P), r = r = {
-    children: w && (0, n.jsx)(l.M14, {
+  }, I), r = r = {
+    children: C && (0, n.jsx)(l.M14, {
       type: "critical",
-      children: f.intl.string(f.t["rTU7/z"])
+      children: y.intl.string(y.t["rTU7/z"])
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
     var r = Object.keys(t);

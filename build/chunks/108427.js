@@ -78,7 +78,10 @@ class _ {
       a.default.track(l.rMx.APP_WEB_PERF_STARTUP_METRICS, u({
         load_id: this.loadId,
         url_root_path: r
-      }, t))
+      }, t));
+      try {
+        o.ZP.appFirstRenderAfterReadyPayload()
+      } catch (e) {}
     })
   }
   trackAppUIViewed(e) {
