@@ -141,51 +141,6 @@ function getIntlMessages(code) {
         return {};
     }
 }
-function getEndpoints(code) {
-    try {
-        let endpoints = {};
-        const ast = acorn.parse(code, { ecmaVersion: 'latest' });
-        walk.simple(ast, {
-            CallExpression(node) {
-                if (
-                    node.callee?.object?.name === 'Object' &&
-                    node.callee?.property?.name === 'freeze'
-                ) {
-                    const value = node.arguments[0]?.properties;
-                    const props = value.map((e) => e.key.name);
-                    if (
-                        props.includes('USER') &&
-                        props.includes('GUILD_JOIN') &&
-                        props.includes('LOGIN')
-                    ) {
-                        const endpointsTemp = eval(
-                            `(()=>(${code.slice(node.arguments[0].start, node.arguments[0].end).replaceAll('window.GLOBAL_ENV.WEBAPP_ENDPOINT', '"//canary.discord.com"')}))()`,
-                        );
-                        const params = [];
-                        for (let i = 0; i < 11; i++) params.push(':param');
-                        for (let [key, value] of Object.entries(
-                            endpointsTemp,
-                        )) {
-                            try {
-                                endpoints[key] =
-                                    typeof value === 'function'
-                                        ? value(...params)
-                                        : value;
-                            } catch {
-                                console.log(key, value.toString());
-                            }
-                        }
-                    }
-                }
-            },
-        });
-        return endpoints;
-    } catch (e) {
-        console.log(e);
-        return {};
-    }
-}
-
 // determines chunk type based on code
 function determineType(code, id, languagesChunks, jsxChunks) {
     if (jsxChunks.includes(id)) return ['component', {}];
@@ -207,68 +162,57 @@ function determineType(code, id, languagesChunks, jsxChunks) {
         ];
     }
 
-    if (
-        code.includes('label:') &&
-        code.includes('defaultConfig:') & code.includes('kind:')
-    ) {
-        return ['experiment', getRawExperiment(code)];
-    }
-    if (code.includes('data:image/')) {
-        return [
-            'assets',
-            {
-                assetUrl: getDataUrl(code),
-            },
-        ];
-    }
-    // Constants chunk
-    if (
-        code.includes(
-            'https://creator-support.discord.com/hc/en-us/articles/12653663868823',
-        )
-    ) {
-        return ['constants', { Endpoints: getEndpoints(code) }];
-    }
-    if (
-        code.includes('Store') &&
-        code.includes('"displayName"') &&
-        code.includes('.defineProperty(')
-    ) {
-        const { functions, events } =
-            getStoreClassFunctionsAndDispatchEvents(code);
-        try {
-            return [
-                'store',
-                {
-                    name: getStoreName(code),
-                    functions,
-                    events,
-                },
-            ];
-        } catch {}
-    }
-    if (code.includes('buildNumber:') && code.includes('versionHash:')) {
-        return [
-            'buildInfo',
-            {
-                versionHash: code.match(/versionHash:"(.+?)"/)[1],
-                buildNumber: code.match(/buildNumber:"(\d+)"/)[1],
-            },
-        ];
-    }
-    if (code.includes('createLoader:') && code.includes('en-US')) {
-        console.log('found intl');
-        return ['intl-loader', getDataForIntlLoader(code)];
-    }
-    if (languagesChunks[id]) {
-        return [
-            'intl-messages-definitions',
-            {
-                messages: getIntlMessages(code),
-                language: languagesChunks[id],
-            },
-        ];
-    }
-    return ['unknown', {}];
+  if (
+    code.includes("label:") &&
+    code.includes("defaultConfig:") & code.includes("kind:")
+  ) {
+    return ["experiment", getRawExperiment(code)];
+  }
+  if (code.includes("data:image/")) {
+    return [
+      "assets",
+      {
+        assetUrl: getDataUrl(code),
+      },
+    ];
+  }
+  if (
+    code.includes("Store") &&
+    code.includes('"displayName"') &&
+    code.includes(".defineProperty(")
+  ) {
+    const { functions, events } = getStoreClassFunctionsAndDispatchEvents(code);
+    try {
+      return [
+        "store",
+        {
+          name: getStoreName(code),
+          functions,
+          events,
+        },
+      ];
+    } catch {}
+  }
+  if (code.includes("buildNumber:") && code.includes("versionHash:")) {
+    return [
+      "buildInfo",
+      {
+        versionHash: code.match(/versionHash:"(.+?)"/)[1],
+        buildNumber: code.match(/buildNumber:"(\d+)"/)[1],
+      },
+    ];
+  }
+  if (code.includes("createLoader:") && code.includes("en-US"))
+    return ["intl-loader", getDataForIntlLoader(code)];
+  if (languagesChunks[id]) {
+    return [
+      "intl-messages-definitions",
+      {
+        messages: getIntlMessages(code),
+        language: languagesChunks[id],
+      },
+    ];
+  }
+  return ["unknown", {}];
 }
 export default determineType;
