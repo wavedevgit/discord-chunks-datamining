@@ -12,7 +12,9 @@ class s extends Chunk495852.C {
   create(e) {
     let t = {
       lightUrl: "",
-      darkUrl: ""
+      darkUrl: "",
+      lightStaticUrl: "",
+      darkStaticUrl: ""
     };
     return globalThis.Object.defineProperty(t, a.C, {
       enumerable: false,
@@ -31,6 +33,12 @@ class s extends Chunk495852.C {
         case 2:
           a.darkUrl = e.string();
           break;
+        case 3:
+          a.lightStaticUrl = e.string();
+          break;
+        case 4:
+          a.darkStaticUrl = e.string();
+          break;
         default:
           let o = n.readUnknownField;
           if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -41,7 +49,7 @@ class s extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    "" !== e.lightUrl && t.tag(1, r.TD.LengthDelimited).string(e.lightUrl), "" !== e.darkUrl && t.tag(2, r.TD.LengthDelimited).string(e.darkUrl);
+    "" !== e.lightUrl && t.tag(1, r.TD.LengthDelimited).string(e.lightUrl), "" !== e.darkUrl && t.tag(2, r.TD.LengthDelimited).string(e.darkUrl), "" !== e.lightStaticUrl && t.tag(3, r.TD.LengthDelimited).string(e.lightStaticUrl), "" !== e.darkStaticUrl && t.tag(4, r.TD.LengthDelimited).string(e.darkStaticUrl);
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -54,6 +62,16 @@ class s extends Chunk495852.C {
     }, {
       no: 2,
       name: "dark_url",
+      kind: "scalar",
+      T: 9
+    }, {
+      no: 3,
+      name: "light_static_url",
+      kind: "scalar",
+      T: 9
+    }, {
+      no: 4,
+      name: "dark_static_url",
       kind: "scalar",
       T: 9
     }])

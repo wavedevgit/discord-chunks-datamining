@@ -69,10 +69,10 @@ function S() {
     audioSourceId: E
   }] = (0, p.E_)(), [P, N] = (0, u.Ls)(_.h7.AUDIO_INPUT, {
     location: "StreamSettingsSummary"
-  }), T = P.concat(N), [R, M] = null != (r = (0, v.Z)(a)) ? r : [d, g], A = (0, x.L)(a), L = (0, m.M)(R), U = Z === l.vA.CAMERA, G = null != I, D = null != I ? null == I || null == (e = I.id) ? true : e.startsWith(l.vA.CAMERA) : U, H = a === j.tI.PRESET_AUTO, B = G ? true : a === j.tI.PRESET_VIDEO ? y.intl.string(b.default.MuHUFe) : a === j.tI.PRESET_DOCUMENTS ? y.intl.string(b.default.y0JuYR) : a === j.tI.PRESET_AUTO ? y.intl.string(b.default.m4jtlc) : true, k = (0, o.e7)([f.Z], () => f.Z.getUseSystemScreensharePicker() && (0, h.isLinux)());
+  }), T = P.concat(N), [R, M] = null != (r = (0, v.Z)(a)) ? r : [d, g], A = (0, x.L)(a), L = (0, m.M)(R), U = Z === l.vA.CAMERA, D = null != I, G = null != I ? null == I || null == (e = I.id) ? true : e.startsWith(l.vA.CAMERA) : U, H = a === j.tI.PRESET_AUTO, B = D ? true : a === j.tI.PRESET_VIDEO ? y.intl.string(b.default.MuHUFe) : a === j.tI.PRESET_DOCUMENTS ? y.intl.string(b.default.y0JuYR) : a === j.tI.PRESET_AUTO ? y.intl.string(b.default.m4jtlc) : true, k = (0, o.e7)([f.Z], () => f.Z.getUseSystemScreensharePicker() && (0, h.isLinux)());
   return (0, n.jsxs)("div", {
     className: w.root,
-    children: [G && (0, n.jsx)(C, {
+    children: [D && (0, n.jsx)(C, {
       source: I
     }), (0, n.jsxs)("div", {
       className: w.summary,
@@ -80,12 +80,12 @@ function S() {
         className: w.sourceOrPresetName,
         variant: "text-md/semibold",
         color: "text-strong",
-        children: G ? null != (i = null == I ? true : I.name) ? i : y.intl.string(b.default["hJMA+x"]) : A
+        children: D ? null != (i = null == I ? true : I.name) ? i : y.intl.string(b.default["hJMA+x"]) : A
       }), (0, n.jsxs)(c.Text, {
         className: w.summaryDetail,
         variant: "text-xs/medium",
         color: "text-muted",
-        children: [G && (0, n.jsxs)(n.Fragment, {
+        children: [D && (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsxs)("span", {
             className: w.iconSummaryContainer,
             children: [(0, n.jsx)(c.ewm, {
@@ -111,9 +111,9 @@ function S() {
               color: "currentColor"
             }), y.intl.string(b.default.FzMGWR)]
           })]
-        }), !S && !D && k && (0, n.jsxs)(n.Fragment, {
+        }), !S && !G && k && (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)(O, {}), y.intl.string(b.default["n9/rUq"])]
-        }), D ? (0, n.jsxs)(n.Fragment, {
+        }), G ? (0, n.jsxs)(n.Fragment, {
           children: [(0, n.jsx)(O, {}), (0, n.jsx)("span", {
             children: null == (t = T.find(e => {
               let {

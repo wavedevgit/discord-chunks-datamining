@@ -82,7 +82,7 @@ function I(e) {
     fps: R,
     sourceType: M,
     selectedChannel: A
-  }, L] = (0, f.E_)(), U = !(0, d.$s)(A, "StreamOptionsMenu"), G = (0, x.Z)(), [D, H] = null != (t = (0, g.Z)(v.tI.PRESET_VIDEO)) ? t : [v.LY.RESOLUTION_720, v.ws.FPS_30], [B, k] = null != (r = (0, g.Z)(v.tI.PRESET_DOCUMENTS)) ? r : [v.LY.RESOLUTION_SOURCE, v.ws.FPS_15], F = (0, o.M)({
+  }, L] = (0, f.E_)(), U = !(0, d.$s)(A, "StreamOptionsMenu"), D = (0, x.Z)(), [G, H] = null != (t = (0, g.Z)(v.tI.PRESET_VIDEO)) ? t : [v.LY.RESOLUTION_720, v.ws.FPS_30], [B, k] = null != (r = (0, g.Z)(v.tI.PRESET_DOCUMENTS)) ? r : [v.LY.RESOLUTION_SOURCE, v.ws.FPS_15], F = (0, o.M)({
     deviceType: j.h7.AUDIO_INPUT,
     selectedDeviceId: I,
     analyticsLocations: [l.Z.GO_LIVE_MODAL_SETTINGS_SELECTION],
@@ -126,7 +126,7 @@ function I(e) {
             switch (e) {
               case v.tI.PRESET_VIDEO:
                 return b.intl.format(_.default.G5O1Mz, {
-                  resolution: (0, p.M)(D),
+                  resolution: (0, p.M)(G),
                   frameRate: H
                 });
               case v.tI.PRESET_DOCUMENTS:
@@ -169,7 +169,7 @@ function I(e) {
               label: (0, p.M)(t)
             }) : (0, p.M)(t),
             action: () => (function(e) {
-              if (!(0, u.Z)(N, e, R, c.default.getCurrentUser(), G)) return a(), (0, m.E)({
+              if (!(0, u.Z)(N, e, R, c.default.getCurrentUser(), D)) return a(), (0, m.E)({
                 analyticsLocation: l.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
               });
               L({
@@ -190,7 +190,7 @@ function I(e) {
             label: "".concat(e, "fps")
           }) : "".concat(e, "fps"),
           action: () => (function(e) {
-            if (!(0, u.Z)(N, T, e, c.default.getCurrentUser(), G)) return a(), (0, m.E)({
+            if (!(0, u.Z)(N, T, e, c.default.getCurrentUser(), D)) return a(), (0, m.E)({
               analyticsLocation: l.Z.GO_LIVE_MODAL_SETTINGS_SELECTION
             });
             L({

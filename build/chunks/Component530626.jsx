@@ -132,13 +132,13 @@ function M(e) {
     return t
   }), L = (0, d.e7)([m.Z], () => m.Z.quests), U = (0, C.Z)(L, T, r);
   i.useEffect(() => ((0, p.Ky)(), p.P7), []);
-  let G = i.useMemo(() => Z ? [...r].sort((e, t) => N(t, null == U ? true : U.source.id, w, M) - N(e, null == U ? true : U.source.id, w, M)) : r, [U, Z, r, w, M]);
+  let D = i.useMemo(() => Z ? [...r].sort((e, t) => N(t, null == U ? true : U.source.id, w, M) - N(e, null == U ? true : U.source.id, w, M)) : r, [U, Z, r, w, M]);
   if (g) {
     if (false === S) {
       let e = false;
       if ((0, j.isMac)()) {
-        var D, H;
-        let t = null === f.Z || true === f.Z || null == (H = f.Z.remoteApp) || null == (D = H.getVersion) ? true : D.call(H);
+        var G, H;
+        let t = null === f.Z || true === f.Z || null == (H = f.Z.remoteApp) || null == (G = H.getVersion) ? true : G.call(H);
         e = !_.o || "0.0.0" === t || c().satisfies(t, "0.0.363")
       }
       return (0, n.jsxs)("div", {
@@ -162,7 +162,7 @@ function M(e) {
     })
   }
   let B = [];
-  return (B = o === a.vA.WINDOW ? G : o === a.vA.SCREEN ? l : s, o === a.vA.CAMERA && 0 === B.length) ? (0, n.jsx)(A, {}) : (0, n.jsx)("div", {
+  return (B = o === a.vA.WINDOW ? D : o === a.vA.SCREEN ? l : s, o === a.vA.CAMERA && 0 === B.length) ? (0, n.jsx)(A, {}) : (0, n.jsx)("div", {
     className: P.root,
     children: B.map(e => (0, n.jsx)(R, {
       onClick: t,

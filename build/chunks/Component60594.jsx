@@ -187,7 +187,7 @@ function Y(e) {
             className: z.footerContent,
             children: [(0, n.jsx)(H.Z, {}), (0, n.jsxs)("div", {
               className: z.rightButtonGroup,
-              children: [ei && (0, n.jsx)(G.Z, {
+              children: [ei && (0, n.jsx)(D.Z, {
                 onClose: r
               }), (ea || ec) && (0, n.jsx)(h.Button, {
                 variant: "primary",
@@ -203,7 +203,7 @@ function Y(e) {
             })]
           }), ei && (0, n.jsx)("div", {
             className: z.upsellRibbonContainer,
-            children: (0, n.jsx)(D.Z, {
+            children: (0, n.jsx)(G.Z, {
               onClose: r
             })
           })]
