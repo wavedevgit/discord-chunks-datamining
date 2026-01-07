@@ -212,6 +212,9 @@ async function main() {
             if (data.type === 'component') {
                 names[chunk] = `Component${chunk}`;
             }
+            if (data.type === 'constants') {
+                names[chunks] = `Constants`;
+            }
             if (data.type === 'store') {
                 names[chunk] = data.data.name.replaceAll(' ', '');
             }
