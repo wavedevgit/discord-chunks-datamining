@@ -183,12 +183,12 @@ function en(e) {
   } = e;
   return (0, a.jsxs)("div", {
     className: q.sections,
-    children: [(0, a.jsx)(W.Z, {
+    children: [(0, a.jsx)(U.Z, {
       entries: r,
       viewId: d,
       officialGuildId: null == l || null == (t = l.guild) ? true : t.id,
       onClose: c
-    }), (0, a.jsx)(U.Z, {
+    }), (0, a.jsx)(W.Z, {
       detectedGame: n,
       trackAction: u
     }), (0, a.jsx)(K.Z, {
@@ -237,7 +237,7 @@ function ei(e) {
     onClose: s,
     applicationId: c
   } = e, d = i.useCallback(() => {
-    s(), (0, N.closeUserProfileModal)()
+    s(), (0, C.closeUserProfileModal)()
   }, [s]), {
     analyticsLocations: u
   } = (0, j.ZP)(h.Z.GAME_PROFILE), {
@@ -247,7 +247,7 @@ function ei(e) {
     let {
       applicationId: t,
       analyticsLocations: n
-    } = e, a = (0, O.q)(t), i = (0, v.Z)({
+    } = e, a = (0, I.q)(t), i = (0, v.Z)({
       application: a,
       analyticsLocations: n
     });
@@ -312,10 +312,10 @@ function er(e) {
     trackExternalAction: u
   } = e, {
     clientThemesClassName: f
-  } = (0, I.ZP)(), v = (0, m.e7)([C.default], () => C.default.locale), h = i.useMemo(() => (0, G.fP)(), []), j = (0, m.Wu)([M.Z], () => {
+  } = (0, O.ZP)(), v = (0, m.e7)([N.default], () => N.default.locale), h = i.useMemo(() => (0, G.fP)(), []), j = (0, m.Wu)([M.Z], () => {
     var e;
     return (null != (e = M.Z.getSimilarGames(n)) ? e : []).slice(0, 25)
-  }), [b, E] = i.useState(null), N = (0, L.N)(n), [S, k] = i.useState(null), T = (0, O.q)(n), _ = (0, m.e7)([w.Z], () => w.Z.getGame(n)), Z = null != (t = null == _ ? true : _.name) ? t : null == T ? true : T.name, D = (e, t) => {
+  }), [b, E] = i.useState(null), C = (0, L.N)(n), [S, k] = i.useState(null), T = (0, I.q)(n), _ = (0, m.e7)([w.Z], () => w.Z.getGame(n)), Z = null != (t = null == _ ? true : _.name) ? t : null == T ? true : T.name, D = (e, t) => {
     var a;
     (0, G.UE)({
       gameName: null != Z ? Z : "",
@@ -335,7 +335,7 @@ function er(e) {
       authorId: o,
       profileType: G.j7.FullProfile
     }), (0, y.Jn)()
-  }), (0, O.Z)(j), i.useEffect(() => {
+  }), (0, I.Z)(j), i.useEffect(() => {
     v.startsWith("en") || (null == _ ? true : _.summaryLocalized) != null || p.Z.getDetectableGamesSupplemental([n], {
       forceFetch: true
     })
@@ -353,7 +353,7 @@ function er(e) {
   }, [n, j]), (0, x.ZP)(() => () => {
     var e;
     let t = Date.now(),
-      a = N.map(e => {
+      a = C.map(e => {
         let n = (0, P.kr)(e) ? (0, P.T_)(e, t) : (0, P.GL)(e, v);
         return JSON.stringify({
           item_id: e.id,
@@ -365,7 +365,7 @@ function er(e) {
       viewId: h,
       applicationId: n,
       gameName: null != Z ? Z : "",
-      playedFriendIds: N.map(e => e.author_id),
+      playedFriendIds: C.map(e => e.author_id),
       playedFriendsData: a,
       similarGames: j.filter(R.z6).slice(0, 5),
       officialGuildId: null == S || null == (e = S.guild) ? true : e.id
@@ -381,7 +381,7 @@ function er(e) {
       children: [(0, a.jsx)(et, {
         detectedGame: _,
         application: T,
-        entries: N,
+        entries: C,
         trackAction: D
       }), (0, a.jsx)(g.y5t, {
         children: (0, a.jsxs)("div", {
@@ -389,7 +389,7 @@ function er(e) {
           children: [(0, a.jsx)(en, {
             detectedGame: _,
             application: T,
-            entries: N,
+            entries: C,
             officialGuildInvite: S,
             similarGames: j,
             similarGamesError: b,
@@ -419,7 +419,7 @@ function el(e) {
     transitionState: n
   } = e, {
     clientThemesClassName: i
-  } = (0, I.ZP)(), r = (0, O.q)(t), l = (0, m.e7)([w.Z], () => w.Z.getGame(t));
+  } = (0, O.ZP)(), r = (0, I.q)(t), l = (0, m.e7)([w.Z], () => w.Z.getGame(t));
   return null == r || null == l ? null : (0, a.jsxs)(g.Y0X, {
     "data-migration-pending": true,
     transitionState: n,

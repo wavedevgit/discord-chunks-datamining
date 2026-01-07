@@ -4,25 +4,24 @@
 require.r(exports), require.d(exports, {
   getAvailableLocales: () => Chunk424395.u5,
   getLanguages: () => Chunk424395.Vb,
-  getSystemLocale: () => h,
-  initialLocale: () => E,
+  getSystemLocale: () => m,
+  initialLocale: () => g,
   international: () => Chunk589531.Z,
-  intl: () => b,
-  systemLocale: () => g,
+  intl: () => E,
+  systemLocale: () => h,
   t: () => Chunk253185.k,
-  useSyncMessages: () => y
+  useSyncMessages: () => b
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
   Chunk354012 = require("./354012.js"),
   Chunk159635 = require("./159635.js"),
   s = require.n(Chunk159635),
-  Chunk926973 = require("./926973.js"),
   Chunk253185 = require("./253185.js"),
   Chunk424395 = require("./424395.js"),
   Chunk589531 = require("./589531.js");
 
-function f(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,20 +30,20 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function _(e, t) {
+function p(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -55,19 +54,19 @@ function _(e, t) {
   return n
 }
 
-function m(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function h(e) {
+function m(e) {
   return [Array.isArray(navigator.languages) ? navigator.languages[0] : null, navigator.language, navigator.browserLanguage, navigator.userLanguage, e].find(e => null != e && "" !== e)
 }
-let g = h("en-US"),
-  E = (0, Chunk424395.YI)(g, "en-US"),
-  b = new Chunk354012.IntlManager({
-    initialLocale: E,
+let h = m("en-US"),
+  g = (0, Chunk424395.YI)(h, "en-US"),
+  E = new Chunk354012.IntlManager({
+    initialLocale: g,
     defaultLocale: "en-US"
   }).withFormatters({
     format: (0, Chunk354012.makeReactFormatter)({
@@ -103,7 +102,7 @@ let g = h("en-US"),
             if (null == a) break;
             l.onClick = null != (c = a.onClick) ? c : a, l.onContextMenu = a.onContextMenu
         }
-        return (0, i.createElement)(o, m(p({}, l), {
+        return (0, i.createElement)(o, _(f({}, l), {
           key: t
         }), e)
       }
@@ -111,6 +110,5 @@ let g = h("en-US"),
     formatToPlainString: Chunk354012.stringFormatter,
     formatToMarkdownString: Chunk354012.markdownFormatter,
     formatToParts: Chunk354012.astFormatter
-  });
-(0, Chunk926973.yu)(b);
-let y = e => (0, u.j1)(e, b)
+  }),
+  b = e => (0, c.j1)(e, E)

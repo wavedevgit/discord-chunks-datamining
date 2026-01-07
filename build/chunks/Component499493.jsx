@@ -26,12 +26,12 @@ let j = e => {
     onReaction: r,
     onRequestOpen: j,
     disableActivityProfileLinks: b,
-    customCTA: O,
-    popoutClassname: I,
+    customCTA: I,
+    popoutClassname: O,
     popoutPosition: y = "right"
   } = e, P = i.useRef(null), w = (0, o.e7)([d.Z, c.Z], () => c.Z.getChannel(d.Z.getChannelId())), E = (0, o.e7)([u.default], () => u.default.getUser(t.author_id)), {
-    nick: N,
-    avatar: C
+    nick: C,
+    avatar: N
   } = i.useMemo(() => {
     let e = null == E ? true : E.getAvatarURL(null == w ? true : w.guild_id, 48, false);
     return {
@@ -48,7 +48,7 @@ let j = e => {
         updatePosition: l
       } = e;
       return (0, a.jsx)("div", {
-        className: I,
+        className: O,
         children: (0, a.jsx)(f.J, {
           entry: t,
           closePopout: i,
@@ -99,9 +99,9 @@ let j = e => {
           children: (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)("img", {
               className: v.avatar,
-              src: C,
+              src: N,
               alt: x.intl.formatToPlainString(x.t.IzVXxY, {
-                userName: N
+                userName: C
               })
             }), (0, a.jsx)("div", {
               className: v.playerInfo,
@@ -111,7 +111,7 @@ let j = e => {
                   variant: "text-md/medium",
                   color: "text-strong",
                   lineClamp: 1,
-                  children: N
+                  children: C
                 }), (0, a.jsx)(p.Gk, {
                   location: p.Gt.APP_LAUNCHER,
                   children: g.W.map((e, n) => (0, a.jsx)(e, {
@@ -119,7 +119,7 @@ let j = e => {
                   }, n))
                 })]
               })
-            }), null != O ? O : (0, a.jsx)("div", {
+            }), null != I ? I : (0, a.jsx)("div", {
               className: v.reactions,
               children: (0, a.jsx)(s.n$P, {
                 size: "sm"

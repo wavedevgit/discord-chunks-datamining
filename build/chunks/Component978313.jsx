@@ -22,14 +22,14 @@ function v(e) {
   let {
     detectedGame: t,
     trackAction: n
-  } = e, [r, v] = i.useState((null == t ? true : t.summaryLocalized) != null), [h, j] = i.useState(true), [b, O] = i.useState(false), I = i.useRef(null), {
+  } = e, [r, v] = i.useState((null == t ? true : t.summaryLocalized) != null), [h, j] = i.useState(true), [b, I] = i.useState(false), O = i.useRef(null), {
     width: y,
     height: P
   } = (0, u.Z)();
   return (i.useEffect(() => {
-    let e = I.current;
-    null != e && O(e.scrollHeight - e.clientHeight > 1 || !h)
-  }, [I, y, P, h]), null == t.summary) ? null : (0, a.jsxs)("div", {
+    let e = O.current;
+    null != e && I(e.scrollHeight - e.clientHeight > 1 || !h)
+  }, [O, y, P, h]), null == t.summary) ? null : (0, a.jsxs)("div", {
     className: l()(p.column, p.gapMd),
     children: [null != t.summaryLocalized && (0, a.jsxs)("div", {
       className: l()(p.row, p.gapSm),
@@ -46,7 +46,7 @@ function v(e) {
         })
       })]
     }), (0, a.jsx)(s.xvT, {
-      ref: I,
+      ref: O,
       lineClamp: h ? 8 : true,
       variant: "text-sm/normal",
       children: r ? t.summaryLocalized : t.summary

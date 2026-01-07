@@ -33,7 +33,7 @@ let y = e => {
     asContainer: true,
     text: t.name,
     children: (0, a.jsx)(u.P3F, {
-      className: I.similarGameImageClickable,
+      className: O.similarGameImageClickable,
       onClick: async () => {
         i(p.as.ClickSimilarGame, t.applicationId), (0, u.ZDy)(() => Promise.resolve(e => (0, a.jsx)(j.default, function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -60,7 +60,7 @@ let y = e => {
       children: (0, a.jsx)(h.C, {
         game: t,
         application: r,
-        className: I.similarGameImage,
+        className: O.similarGameImage,
         size: h.Z.SMALL
       })
     })
@@ -83,21 +83,21 @@ function P(e) {
     o.length > 0 && m.Z.getDetectableGamesSupplemental([t, ...o])
   }, [t, o]), f && null == d) ? (0, a.jsxs)("div", {
     children: [(0, a.jsx)("div", {
-      className: l()(I.loadingHeading, O.sectionHeader)
+      className: l()(O.loadingHeading, I.sectionHeader)
     }), (0, a.jsx)("div", {
-      className: l()(O.row, O.gapLg),
+      className: l()(I.row, I.gapLg),
       children: s().range(0, 5).map(e => (0, a.jsx)("div", {
-        className: I.loadingArtwork
+        className: O.loadingArtwork
       }, e))
     })]
   }) : (f || 0 !== p.length) && null == d ? (0, a.jsxs)("div", {
     children: [(0, a.jsx)(u.Heading, {
-      className: O.sectionHeader,
+      className: I.sectionHeader,
       variant: "text-md/semibold",
       color: "text-strong",
       children: b.intl.string(b.t["6rLyQB"])
     }), (0, a.jsx)("div", {
-      className: I.similarGames,
+      className: O.similarGames,
       style: {},
       children: p.map(e => (0, a.jsx)(y, {
         game: e,
