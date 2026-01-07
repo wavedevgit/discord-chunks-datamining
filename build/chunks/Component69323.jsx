@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 69323, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => g
 }), require("./539854.js"), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -17,23 +17,23 @@ var Chunk54381 = require("./54381.js"),
   Chunk556970 = require("./556970.js"),
   Chunk388032 = require("./388032.jsx");
 
-function v(e) {
+function g(e) {
   let {
     powerup: t,
     targetRef: n,
-    isCardVisible: v
-  } = e, x = (0, o.e7)([d.Z], () => d.Z.hasLayers()), b = (0, s.useHasAnyModalOpen)(), h = t.skuId === l.A$ ? {
-    title: g.intl.string(m.default.YWo6VL),
-    body: g.intl.string(m.default.gXVvKc),
+    isCardVisible: g
+  } = e, x = (0, l.e7)([d.Z], () => d.Z.hasLayers()), b = (0, s.useHasAnyModalOpen)(), h = t.skuId === o.A$ ? {
+    title: v.intl.string(m.default.YWo6VL),
+    body: v.intl.string(m.default.gXVvKc),
     dismissibleContentType: a.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
   } : null, j = [];
-  null == h || x || !v || b || j.push(h.dismissibleContentType);
-  let [Z, _] = (0, c.US)(j), C = i.useCallback(() => {
+  null == h || x || !g || b || j.push(h.dismissibleContentType);
+  let [Z, _] = (0, c.US)(j), w = i.useCallback(() => {
     _(p.L.INDIRECT_ACTION)
   }, [_]);
   return ((0, f.Z)({
     targetRef: n,
-    onShouldClose: C,
+    onShouldClose: w,
     enabled: null != Z
   }), null == h || null == Z) ? null : (0, r.jsx)(u.J2, {
     targetElementRef: n,

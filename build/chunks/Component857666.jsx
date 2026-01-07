@@ -22,11 +22,11 @@ var Chunk54381 = require("./54381.js"),
 function x(e, t) {
   var x;
   let b = null != (x = (0, c.Z)(t)) && x,
-    h = (0, o.e7)([u.Z], () => {
+    h = (0, l.e7)([u.Z], () => {
       var e;
       return null == (e = u.Z.getStateForGuild(t)) ? true : e.allPowerups
     }),
-    j = (0, o.e7)([u.Z], () => {
+    j = (0, l.e7)([u.Z], () => {
       var e;
       return null == (e = u.Z.getStateForGuild(t)) ? true : e.unlockedPowerups
     });
@@ -35,21 +35,21 @@ function x(e, t) {
         let {
           guildId: t,
           canUseBoosts: i,
-          allPowerups: o,
+          allPowerups: l,
           unlockedPowerups: u
-        } = e, c = m.intl.string(p.default.KC9HRW), x = m.intl.string(p.default.GJiSmP), b = null == o ? true : o[l.IN], h = (null == u ? true : u[l.IN]) != null, j = m.intl.string(p.default["/egwJA"]), Z = h ? true : m.intl.string(p.default.W6Vwn3), _ = h ? true : m.intl.string(p.default.lvk1Gc), C = h ? m.intl.string(p.default["9CfkLO"]) : m.intl.string(m.t["+7XY31"]), w = h ? "secondary" : "expressive", E = i ? () => {
+        } = e, c = m.intl.string(p.default.KC9HRW), x = m.intl.string(p.default.GJiSmP), b = null == l ? true : l[o.IN], h = (null == u ? true : u[o.IN]) != null, j = m.intl.string(p.default["/egwJA"]), Z = h ? true : m.intl.string(p.default.W6Vwn3), _ = h ? true : m.intl.string(p.default.lvk1Gc), w = h ? m.intl.string(p.default["9CfkLO"]) : m.intl.string(m.t["+7XY31"]), C = h ? "secondary" : "expressive", I = i ? () => {
           h ? s.Z.open(t, f.pNK.TAG, f.jXE.GUILD_POWERUPS_OVERVIEW_CARD) : null != b && (0, d.Z)(t, b), (0, a.pTH)()
         } : true;
         return {
           title: c,
           description: x,
           openModal: function(e) {
-            let l = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
+            let o = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {};
             (0, a.ZDy)(async () => {
               let {
-                default: l
+                default: o
               } = await n.e("64767").then(n.bind(n, 754887));
-              return n => (0, r.jsx)(l, function(e) {
+              return n => (0, r.jsx)(o, function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     r = Object.keys(n);
@@ -72,22 +72,22 @@ function x(e, t) {
                 description: m.intl.string(p.default.BBRFRd),
                 powerups: e,
                 footerInfoText: _,
-                footerAction: i && null != E && null != C ? {
-                  variant: w,
-                  text: C,
-                  icon: "expressive" === w ? a.Ucv : true,
-                  onClick: E
+                footerAction: i && null != I && null != w ? {
+                  variant: C,
+                  text: w,
+                  icon: "expressive" === C ? a.Ucv : true,
+                  onClick: I
                 } : true
               }, n))
             }, {
-              onCloseCallback: null == l ? true : l.onModalClose
+              onCloseCallback: null == o ? true : o.onModalClose
             })
           },
           viewCta: j,
           viewCtaTooltip: Z,
           image: {
-            staticUrl: v.Z,
-            animatedUrl: g.Z
+            staticUrl: g.Z,
+            animatedUrl: v.Z
           }
         }
       }({
@@ -96,12 +96,12 @@ function x(e, t) {
         allPowerups: h,
         unlockedPowerups: j
       }) : true,
-      o = {};
+      l = {};
     for (let t of e) {
       let e = i(t);
-      null != e && (o[t] = e)
+      null != e && (l[t] = e)
     }
-    return o
+    return l
   }, [e, t, b, h, j])
 }
 

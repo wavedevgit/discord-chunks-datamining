@@ -24,16 +24,16 @@ function x(e) {
     powerup: n
   } = e, [x, b] = i.useState(true);
   (0, m.Z)(x);
-  let [h, j] = i.useState(false), Z = (0, s.ZP)(t, n).type !== g.A3.INACTIVE, {
+  let [h, j] = i.useState(false), Z = (0, s.ZP)(t, n).type !== v.A3.INACTIVE, {
     textColor: _
-  } = (0, p.Z)(Z), C = (0, a.g1)(t, "GuildPowerupPerkCard"), w = n.skuId === l.A$;
+  } = (0, p.Z)(Z), w = (0, a.g1)(t, "GuildPowerupPerkCard"), C = n.skuId === o.A$;
   return (0, r.jsxs)(f.Z, {
     onHover: e => j(e),
     guildId: t,
     powerup: n,
-    badge: w && C ? "beta" : true,
+    badge: C && w ? "beta" : true,
     children: [(0, r.jsx)(d.m, {
-      className: v.image,
+      className: g.image,
       powerup: n,
       isHovering: h
     }), (0, r.jsx)(u.Q9, {
@@ -43,8 +43,8 @@ function x(e) {
         guildId: t,
         powerup: n
       }),
-      children: (0, r.jsx)(o.Text, {
-        className: v.description,
+      children: (0, r.jsx)(l.Text, {
+        className: g.description,
         color: _,
         variant: "text-sm/medium",
         children: n.description

@@ -22,11 +22,11 @@ function p(e) {
     timestamp: n,
     username: p,
     roleColor: m,
-    roleColorStrings: g
-  } = (0, s._)(t), v = (0, u.X7)(t.guildId, t.userId, null != g ? g : null);
+    roleColorStrings: v
+  } = (0, s._)(t), g = (0, u.X7)(t.guildId, t.userId, null != v ? v : null);
   return (0, r.jsxs)("div", {
     className: f.systemMessageContainer,
-    children: [(0, r.jsx)(o.Ucv, {
+    children: [(0, r.jsx)(l.Ucv, {
       className: f.icon,
       color: "currentColor",
       size: "sm"
@@ -36,17 +36,17 @@ function p(e) {
         tag: "span",
         variant: "text-md/medium",
         lineClamp: 1,
-        children: [(0, r.jsx)(l.u, {
+        children: [(0, r.jsx)(o.u, {
           text: p,
           shouldShow: true,
           asContainer: true,
           delay: 1e3,
-          children: (0, r.jsx)(o.PUh, {
+          children: (0, r.jsx)(l.PUh, {
             className: f.boostMessageUser,
             variant: "text-md/semibold",
             name: p,
             colorString: null != m ? m : null,
-            colorStrings: v
+            colorStrings: g
           })
         }), d.intl.string(c.default.plwH8d)]
       })

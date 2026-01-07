@@ -18,25 +18,25 @@ var Chunk54381 = require("./54381.js"),
 function m(e) {
   var t, n, m;
   let {
-    guildId: g,
-    group: v,
+    guildId: v,
+    group: g,
     powerups: x
-  } = e, [b, h] = i.useState(false), j = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), Z = (0, f.Z)(v, g), _ = !j && b ? null == Z || null == (t = Z.image) ? true : t.animatedUrl : null == Z || null == (n = Z.image) ? true : n.staticUrl, C = (0, u.Z)({
-    guildId: g,
+  } = e, [b, h] = i.useState(false), j = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), Z = (0, f.Z)(g, v), _ = !j && b ? null == Z || null == (t = Z.image) ? true : t.animatedUrl : null == Z || null == (n = Z.image) ? true : n.staticUrl, w = (0, u.Z)({
+    guildId: v,
     powerups: x
   }), {
-    textColor: w
-  } = (0, d.Z)(null != (m = null == C ? true : C.isActive) && m);
-  if (null == C || null == Z) return null;
+    textColor: C
+  } = (0, d.Z)(null != (m = null == w ? true : w.isActive) && m);
+  if (null == w || null == Z) return null;
   let {
-    status: E,
-    cost: I,
+    status: I,
+    cost: E,
     costDecorator: P
-  } = C;
+  } = w;
   return (0, r.jsxs)(c.aB, {
     label: Z.title,
-    isActive: (null == E ? true : E.type) === "active",
-    isWarning: (null == E ? true : E.type) === "expiring",
+    isActive: (null == I ? true : I.type) === "active",
+    isWarning: (null == I ? true : I.type) === "expiring",
     badge: Z.badge,
     onClick: () => Z.openModal(x),
     onMouseOver: () => h(true),
@@ -47,20 +47,20 @@ function m(e) {
       className: p.image
     }), (0, r.jsx)(c.Q9, {
       title: Z.title,
-      textColor: w,
+      textColor: C,
       footer: (0, r.jsx)(c.uf, {
-        status: E,
-        cost: I,
+        status: I,
+        cost: E,
         costDecorator: P
       }),
       children: (0, r.jsx)(a.Text, {
         className: p.description,
-        color: w,
+        color: C,
         variant: "text-sm/medium",
         children: Z.description
       })
     }), (0, r.jsx)(c.N4, {
-      children: (null == Z ? true : Z.viewCtaTooltip) != null ? (0, r.jsx)(o.u, {
+      children: (null == Z ? true : Z.viewCtaTooltip) != null ? (0, r.jsx)(l.u, {
         asContainer: true,
         text: Z.viewCtaTooltip,
         delay: 100,

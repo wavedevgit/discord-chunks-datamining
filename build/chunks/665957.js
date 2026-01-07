@@ -32,14 +32,14 @@ function f(e, t) {
   let m = r.useMemo(() => p.length > 0 ? {
     [e]: p
   } : {}, [e, p]);
-  (0, o.$)(m, "GuildPowerupsRecentActivity");
-  let g = (0, i.e7)([c.Z], () => {
+  (0, l.$)(m, "GuildPowerupsRecentActivity");
+  let v = (0, i.e7)([c.Z], () => {
     var t;
     return null == (t = c.Z.getGuild(e)) ? true : t.premiumSubscriberCount
   });
   return r.useEffect(() => {
-    g !== n.length && (0, l.C0)(e)
-  }, [e, g, n.length]), f
+    v !== n.length && (0, o.C0)(e)
+  }, [e, v, n.length]), f
 }
 
 function p(e) {
@@ -47,20 +47,20 @@ function p(e) {
     {
       username: n,
       roleColor: r,
-      roleColorStrings: l
+      roleColorStrings: o
     } = (0, i.cj)([u.ZP], () => {
       var t, n, r, i;
-      let l = u.ZP.getMember(e.guildId, e.userId);
+      let o = u.ZP.getMember(e.guildId, e.userId);
       return {
         username: null != (n = u.ZP.getNick(e.guildId, e.userId)) ? n : null == (t = e.user) ? true : t.username,
-        roleColor: null != (r = null == l ? true : l.colorString) ? r : null,
-        roleColorStrings: null != (i = null == l ? true : l.colorStrings) ? i : null
+        roleColor: null != (r = null == o ? true : o.colorString) ? r : null,
+        roleColorStrings: null != (i = null == o ? true : o.colorStrings) ? i : null
       }
     }, [e]);
   return {
     timestamp: t,
     username: n,
     roleColor: r,
-    roleColorStrings: l
+    roleColorStrings: o
   }
 }

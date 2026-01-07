@@ -21,7 +21,7 @@ function c(e) {
     className: u.container,
     children: [(0, r.jsx)("div", {
       className: u.close,
-      children: (0, r.jsx)(l.hU, {
+      children: (0, r.jsx)(o.hU, {
         variant: "icon-only",
         size: "md",
         "aria-label": s.intl.string(s.t.cpT0Cq),
@@ -31,13 +31,13 @@ function c(e) {
         icon: i.Uz9
       })
     }), (0, r.jsx)(i.Mgn, {
-      color: o.Z.colors.TEXT_FEEDBACK_WARNING,
+      color: l.Z.colors.TEXT_FEEDBACK_WARNING,
       className: u.icon
-    }), (0, r.jsx)(l.xvT, {
+    }), (0, r.jsx)(o.xvT, {
       variant: "text-md/semibold",
       color: "text-feedback-warning",
       children: t.title
-    }), (0, r.jsx)(l.xvT, {
+    }), (0, r.jsx)(o.xvT, {
       variant: "text-sm/medium",
       children: t.description
     })]

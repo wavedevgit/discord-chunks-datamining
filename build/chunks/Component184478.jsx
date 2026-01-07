@@ -25,7 +25,7 @@ var Chunk793030 = require("./793030.js"),
 function j(e) {
   let {
     guildId: t
-  } = e, n = (0, l.e7)([c.Z], () => c.Z.getGuild(t)), {
+  } = e, n = (0, o.e7)([c.Z], () => c.Z.getGuild(t)), {
     available: j,
     spent: Z,
     total: _
@@ -42,30 +42,30 @@ function j(e) {
         className: h.learnMore,
         variant: "text-xs/semibold",
         children: b.intl.format(x.default.fXE30d, {
-          helpDeskArticle: d.Z.getArticleURL(v.BhN.GUILD_BOOSTING_FAQ)
+          helpDeskArticle: d.Z.getArticleURL(g.BhN.GUILD_BOOSTING_FAQ)
         })
       })]
     }), (0, r.jsxs)("div", {
       className: h.contentContainer,
       children: [(0, r.jsx)(m.Z, {
         count: j,
-        type: g.br.AVAILABLE
+        type: v.br.AVAILABLE
       }), (0, r.jsx)(m.Z, {
         count: Z,
-        type: g.br.SPENT
+        type: v.br.SPENT
       }), (0, r.jsx)(m.Z, {
         count: _,
-        type: g.br.TOTAL
+        type: v.br.TOTAL
       })]
     }), (0, r.jsx)(s.Z, {
       className: h.boostButton,
       guild: n,
       analyticsLocation: {
-        page: v.ZY5.GUILD_POWERUPS_OVERVIEW,
-        section: v.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
+        page: g.ZY5.GUILD_POWERUPS_OVERVIEW,
+        section: g.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
-      color: o.Tt.CUSTOM,
-      size: o.Ph.LARGE,
+      color: l.Tt.CUSTOM,
+      size: l.Ph.LARGE,
       intent: u.P.NONE,
       icon: (0, r.jsx)(a.Ucv, {
         className: h.boostButtonIcon,

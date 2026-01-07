@@ -18,16 +18,16 @@ let s = Object.entries({
   u = [Chunk535396.Us.LEVEL, Chunk535396.Us.PERK];
 
 function c(e, t) {
-  let n = (0, l.e7)([o.Z], () => o.Z.getStateForGuild(e));
+  let n = (0, o.e7)([l.Z], () => l.Z.getStateForGuild(e));
   return r.useMemo(() => u.reduce((e, r) => {
-    let l = null == n ? true : n.powerupCatalog[r];
-    if (null == l) return e;
-    let o = function(e, t, n) {
+    let o = null == n ? true : n.powerupCatalog[r];
+    if (null == o) return e;
+    let l = function(e, t, n) {
       let r = [];
       n && e === a.Us.PERK && r.push({
         type: "gameServer"
       });
-      let l = t.reduce((e, t) => {
+      let o = t.reduce((e, t) => {
         if (t.type !== a.Us.PERK) return e;
         let n = s[t.skuId];
         return null == n || (null != e[n] || (e[n] = []), e[n].push(t)), e
@@ -42,12 +42,12 @@ function c(e, t) {
         }
         let t = s[e.skuId];
         if (null != t) {
-          let e = l[t];
+          let e = o[t];
           true !== e && (r.push({
             type: "multiPerk",
             group: t,
             powerups: e
-          }), l[t] = true);
+          }), o[t] = true);
           continue
         }
         r.push({
@@ -61,15 +61,15 @@ function c(e, t) {
         if (false !== t && false !== n && n !== t + 1) {
           let t = [...e],
             [r] = t.splice(n, 1),
-            l = t.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === i.IN);
-          return t.splice(l + 1, 0, r), t
+            o = t.findIndex(e => "singlePerk" === e.type && e.powerup.skuId === i.IN);
+          return t.splice(o + 1, 0, r), t
         }
         return e
       }(r)
-    }(r, l, t);
+    }(r, o, t);
     return e.push({
       type: r,
-      listings: o
+      listings: l
     }), e
   }, []), [null == n ? true : n.powerupCatalog, t])
 }

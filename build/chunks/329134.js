@@ -19,12 +19,12 @@ function a(e, t, n) {
       removingAt: e.storeRemovalDate
     } : t.type === i.A3.LEVEL_ACTIVATED ? {
       type: "active",
-      statusText: o.intl.formatToPlainString(l.default.WRRYUT, {
-        perkName: null != (s = null == (a = t.sourcePowerup) ? true : a.title) ? s : o.intl.string(o.t.BfF6ED)
+      statusText: l.intl.formatToPlainString(o.default.WRRYUT, {
+        perkName: null != (s = null == (a = t.sourcePowerup) ? true : a.title) ? s : l.intl.string(l.t.BfF6ED)
       })
     } : t.type === i.A3.POWERUP_ACTIVATED ? {
       type: "active",
-      statusText: o.intl.string(l.default.FFLkmx)
+      statusText: l.intl.string(o.default.FFLkmx)
     } : true
   }, [t, n, e])
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 226278, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g,
+  Z: () => v,
   g: () => m
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
@@ -21,7 +21,7 @@ function m(e) {
     guildId: t,
     powerup: n,
     className: i
-  } = e, l = (0, s.ZP)(t, n), a = l.type !== p.A3.LEVEL_ACTIVATED, d = (0, o.Z)(t, n, "GuildPowerupCardBodyFooter"), f = (0, u.P)(n, l, d);
+  } = e, o = (0, s.ZP)(t, n), a = o.type !== p.A3.LEVEL_ACTIVATED, d = (0, l.Z)(t, n, "GuildPowerupCardBodyFooter"), f = (0, u.P)(n, o, d);
   return (0, r.jsx)(c.uf, {
     status: f,
     cost: a ? n.cost : true,
@@ -29,16 +29,16 @@ function m(e) {
   })
 }
 
-function g(e) {
+function v(e) {
   var t;
   let {
     guildId: n,
     powerup: u,
     badge: m,
-    className: g,
-    onHover: v,
+    className: v,
+    onHover: g,
     children: x
-  } = e, b = (0, a.Z)(n), h = (0, s.ZP)(n, u), j = h.type !== p.A3.INACTIVE, Z = (null == (t = h.sourceEntitlement) ? true : t.ends_at) != null, _ = (0, o.Z)(n, u, "GuildPowerupCard"), C = i.useRef(null), w = (0, f.Z)(n, u), [E, I] = i.useState(false), P = (0, l.O)(I, 1);
+  } = e, b = (0, a.Z)(n), h = (0, s.ZP)(n, u), j = h.type !== p.A3.INACTIVE, Z = (null == (t = h.sourceEntitlement) ? true : t.ends_at) != null, _ = (0, l.Z)(n, u, "GuildPowerupCard"), w = i.useRef(null), C = (0, f.Z)(n, u), [I, E] = i.useState(false), P = (0, o.O)(E, 1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.aB, {
       label: u.title,
@@ -46,18 +46,18 @@ function g(e) {
       isWarning: Z,
       badge: m,
       canRollback: _,
-      onClick: w,
-      onMouseOver: () => null == v ? true : v(true),
-      onMouseLeave: () => null == v ? true : v(false),
-      className: g,
+      onClick: C,
+      onMouseOver: () => null == g ? true : g(true),
+      onMouseLeave: () => null == g ? true : g(false),
+      className: v,
       ref: e => {
-        C.current = e, P.current = e
+        w.current = e, P.current = e
       },
       children: x
     }), !_ && b && (0, r.jsx)(d.Z, {
       powerup: u,
-      targetRef: C,
-      isCardVisible: E
+      targetRef: w,
+      isCardVisible: I
     })]
   })
 }

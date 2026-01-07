@@ -28,7 +28,7 @@ function a(e) {
     expiringAt: p
   } : f && (s = {
     type: "active",
-    statusText: o.intl.string(l.default.FFLkmx)
+    statusText: l.intl.string(o.default.FFLkmx)
   });
   let m = d.reduce((e, t) => {
       let {
@@ -37,29 +37,29 @@ function a(e) {
       } = t;
       return n === i.A3.POWERUP_ACTIVATED ? e + r.cost : e
     }, 0),
-    g = d.reduce((e, t) => {
+    v = d.reduce((e, t) => {
       var n, r;
       let {
         powerup: i
       } = t;
       return e < (null != (n = null == i ? true : i.cost) ? n : 0) ? e : null != (r = null == i ? true : i.cost) ? r : 0
     }, null != (a = null == (n = d[0]) || null == (t = n.powerup) ? true : t.cost) ? a : 0),
-    v = d.reduce((e, t) => {
+    g = d.reduce((e, t) => {
       var n;
       let {
         powerup: r
       } = t;
       return e + (null != (n = null == r ? true : r.cost) ? n : 0)
     }, 0),
-    x = f ? m : g;
+    x = f ? m : v;
   return {
     isActive: f,
     status: s,
     cost: x,
-    costDecorator: !f && v > x ? "+" : true,
+    costDecorator: !f && g > x ? "+" : true,
     expiringAt: p,
     activeCost: m,
-    minCost: g,
-    totalCost: v
+    minCost: v,
+    totalCost: g
   }
 }
