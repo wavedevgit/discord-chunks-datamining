@@ -2,8 +2,8 @@
 /** chunk id: 813370, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => u,
-  g: () => c
+  A: () => d,
+  g: () => u
 }), require("./997841.js");
 var Chunk473749 = require("./473749.js"),
   Chunk95015 = require("./95015.js"),
@@ -20,13 +20,15 @@ function l(e) {
   return r && o
 }
 
-function c(e) {
-  return !!l(e) && (0, o.QK)("canLaunchFrame").enabled
+function c(e, t) {
+  return null != e && !!l(e)
 }
 
 function u(e) {
-  let {
-    enabled: t
-  } = (0, o.u$)("canLaunchFrame");
-  return r.useMemo(() => null != e && l(e) && t, [e, t])
+  return c(e, (0, o.sd)("canLaunchFrame"))
+}
+
+function d(e) {
+  let t = (0, o.WA)("canLaunchFrame");
+  return r.useMemo(() => c(e, t), [e, t])
 }

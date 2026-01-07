@@ -1,1 +1,1 @@
-{"id":"28881","type":"experiment","data":{"kind":"user","id":"2025-06_contextless_frames","label":"Contextless Frames","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Contextless Frames","config":{"enabled":true}}]},"fromModule":{"id":"web.js"}}
+{"id":"28881","type":"unknown","data":{},"fromModule":{"id":"web.js"}}
