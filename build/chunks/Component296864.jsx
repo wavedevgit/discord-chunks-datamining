@@ -33,7 +33,7 @@ function p(e) {
     privacy_level: E
   } = p, w = (0, r.e7)([h.Z], () => h.Z.getChannel(p.channel_id), [p]), _ = (0, r.e7)([x.Z], () => x.Z.getGuild(y), [y]), {
     canManageGuildEvent: T
-  } = (0, o.XJ)(null != w ? w : _), Z = T(p), S = (0, r.e7)([c.Z], () => c.Z.isLurking(y), [y]), A = p.entity_type === j.WX.STAGE_INSTANCE, [I, b] = l.useState(A), [P, {
+  } = (0, o.XJ)(null != w ? w : _), Z = T(p), S = (0, r.e7)([c.Z], () => c.Z.isLurking(y), [y]), I = p.entity_type === j.WX.STAGE_INSTANCE, [b, A] = l.useState(I), [P, {
     loading: G,
     error: L
   }] = (0, v.Z)();
@@ -43,7 +43,7 @@ function p(e) {
       null == N || N(), k(), (0, u.Ku)(false)
     },
     M = async () => {
-      await P(p, I, {
+      await P(p, b, {
         onSuccess: R
       })
     };
@@ -65,11 +65,11 @@ function p(e) {
         })]
       }, n)
     }),
-    actionBarInput: A ? (0, i.jsxs)(a.P3F, {
-      onClick: () => b(!I),
+    actionBarInput: I ? (0, i.jsxs)(a.P3F, {
+      onClick: () => A(!b),
       className: C.notificationToggle,
       children: [(0, i.jsx)(a.FZ5, {
-        checked: I
+        checked: b
       }), (0, i.jsx)(s.Text, {
         color: "text-default",
         variant: "text-sm/normal",

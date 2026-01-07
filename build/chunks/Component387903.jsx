@@ -237,7 +237,7 @@ class $ extends(r = Chunk473749.PureComponent) {
           [B.assetsLargeImageSpotify]: _
         })
       }) : null;
-    if (_) m = (0, i.jsx)(p.Anchor, {
+    if (_) m = (0, i.jsx)(p.eee, {
       onClick: this.handleOpenSpotifyAlbum,
       children: m
     });
@@ -272,7 +272,7 @@ class $ extends(r = Chunk473749.PureComponent) {
             game: e.details
           })
         })]
-      }), (0, i.jsx)(p.Anchor, {
+      }), (0, i.jsx)(p.eee, {
         className: B.twitchBackgroundImage,
         href: e.url,
         children: m
@@ -341,7 +341,7 @@ class $ extends(r = Chunk473749.PureComponent) {
     return (o === Z.IIU.HANG_STATUS ? u = (0, S.O8)(t.id, e) : l && null != n ? u = (0, i.jsx)("span", {
       className: B.activityName,
       children: u
-    }) : !l && (c = a, u = a, (0, j.Z)(e) && null != e.sync_id && null != a ? u = (0, i.jsx)(p.Anchor, {
+    }) : !l && (c = a, u = a, (0, j.Z)(e) && null != e.sync_id && null != a ? u = (0, i.jsx)(p.eee, {
       className: B.bodyLink,
       onClick: this.handleOpenSpotifyTrack,
       children: a
@@ -474,7 +474,7 @@ class $ extends(r = Chunk473749.PureComponent) {
       c = o,
       u = o;
     if (!(0, L.Z)(e) && (c = null == l ? true : l.large_text, u = null == l ? true : l.large_text, (0, j.Z)(e) && null != c)) {
-      let t = (t, n) => null != e.sync_id && null != u ? (0, i.jsx)(p.Anchor, {
+      let t = (t, n) => null != e.sync_id && null != u ? (0, i.jsx)(p.eee, {
         className: B.bodyLink,
         onClick: this.handleOpenSpotifyAlbum,
         children: u

@@ -111,7 +111,7 @@ class v extends(i = Chunk473749.PureComponent) {
         })]
       })
     });
-    null != Chunk120356 ? l = (0, Chunk54381.jsx)(Chunk481060.Anchor, {
+    null != Chunk120356 ? l = (0, Chunk54381.jsx)(Chunk481060.eee, {
       className: Chunk475140.removeButton,
       onClick: this.handleRemove,
       children: Chunk388032.intl.string(Chunk388032.t.N86XcP)

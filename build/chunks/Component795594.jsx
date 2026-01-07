@@ -202,7 +202,7 @@ let eu = e => {
     };
     return null != t.terms_of_service_url || null != t.privacy_policy_url ? (0, r.jsxs)("div", {
       className: et.tosPrivacy,
-      children: [null != t.terms_of_service_url ? (0, r.jsxs)(E.Anchor, {
+      children: [null != t.terms_of_service_url ? (0, r.jsxs)(E.eee, {
         onClick: i,
         tabIndex: n ? 0 : false,
         className: et.tos,
@@ -219,7 +219,7 @@ let eu = e => {
         className: et.privacy,
         children: [null != t.terms_of_service_url ? (0, r.jsx)("div", {
           className: et.divider
-        }) : null, (0, r.jsxs)(E.Anchor, {
+        }) : null, (0, r.jsxs)(E.eee, {
           onClick: a,
           className: et.privacy,
           tabIndex: n ? 0 : false,

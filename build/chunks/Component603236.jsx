@@ -90,7 +90,7 @@ let x = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       }), n || w ? null : (0, l.jsxs)(u.Text, {
         variant: "text-xs/normal",
         className: f.footerText,
-        children: [(0, p.Vg)(P, Z), " ", a ? (0, l.jsx)(u.Anchor, {
+        children: [(0, p.Vg)(P, Z), " ", a ? (0, l.jsx)(u.eee, {
           onClick: () => _(I.RV.SETTINGS),
           children: S.intl.string(S.t["VNe8P/"])
         }) : null]

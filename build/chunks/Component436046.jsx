@@ -24,7 +24,7 @@ function N(e) {
   let {
     onComplete: t,
     onClose: n
-  } = e, [i, N] = o.useState(null), [x, A] = o.useState(null), [T, C] = o.useState(false), g = (0, r.e7)([p.default], () => p.default.getCurrentUser()), j = o.useRef(null);
+  } = e, [i, N] = o.useState(null), [x, T] = o.useState(null), [A, C] = o.useState(false), g = (0, r.e7)([p.default], () => p.default.getCurrentUser()), j = o.useRef(null);
   async function O(e) {
     e.preventDefault(), s()(null != i, "Cannot submit null birthday."), C(true);
     try {
@@ -33,7 +33,7 @@ function N(e) {
       if (null != e.body && null != e.body.date_of_birth) u.wE(_.L0.NEW_USER_FLOW), u.hp(_.L0.NEW_USER_FLOW), n();
       else {
         var a;
-        (null == e || null == (a = e.body) ? true : a.username) != null ? A(h.intl.string(h.t["TGg/2k"])) : A(null == e ? true : e.body.message)
+        (null == e || null == (a = e.body) ? true : a.username) != null ? T(h.intl.string(h.t["TGg/2k"])) : T(null == e ? true : e.body.message)
       }
     }
     C(false)
@@ -90,7 +90,7 @@ function N(e) {
           buttonRef: j,
           type: "submit",
           size: c.zx.Sizes.LARGE,
-          submitting: T,
+          submitting: A,
           disabled: null == i,
           fullWidth: true,
           children: h.intl.string(h.t.PDTjLN)

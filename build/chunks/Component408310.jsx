@@ -32,7 +32,7 @@ let u = e => {
   else if (0 === m.length) {
     let e = null != g ? s.intl.format(s.t.qWFupn, {
       addServerHook: function(e, t) {
-        return (0, r.jsx)(i.Anchor, {
+        return (0, r.jsx)(i.eee, {
           onClick: g,
           children: e
         }, t)

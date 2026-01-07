@@ -84,7 +84,7 @@ let g = 1,
     } = (0, c.ZP)(l.Z.MASKED_LINK), O = i.useCallback(t => (0, u.q)(e, t, y), [y, e]), v = i.useCallback(e => {
       e.button === g && O(e)
     }, [O]), S = o().sanitizeUrl(d);
-    return (0, r.jsx)(s.Anchor, _(f({}, b), {
+    return (0, r.jsx)(s.eee, _(f({}, b), {
       title: a,
       target: "_blank",
       rel: "noreferrer noopener",

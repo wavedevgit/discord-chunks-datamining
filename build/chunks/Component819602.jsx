@@ -75,7 +75,7 @@ function P(e) {
     size: "md",
     color: "currentColor",
     className: o()(A.__invalid_connectedAccountOpenIconContainer, A.connectedAccountHideIcon)
-  }) : null != R && (j = (0, l.jsx)(s.Anchor, {
+  }) : null != R && (j = (0, l.jsx)(s.eee, {
     href: R,
     "aria-label": (null == L ? true : L.name) != null ? "".concat(L.name, ", ").concat(v.name, ", ").concat(N.intl.string(N.t.q5jLJB)) : "".concat(v.name, ", ").concat(N.intl.string(N.t.q5jLJB)),
     onClick: e => {

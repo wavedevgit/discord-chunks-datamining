@@ -1,7 +1,7 @@
 /** Chunk was on 26545 **/
 /** chunk id: 81596, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => h
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -20,11 +20,11 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk616874 = require("./616874.js");
 
-function O(t) {
+function h(t) {
   let {
     user: n,
     entry: i,
-    transitionState: O,
+    transitionState: h,
     onAction: p,
     onClose: I,
     onOpenGameSettings: f
@@ -37,7 +37,7 @@ function O(t) {
           entry: i,
           onOpenGameSettings: f
         });
-        return (0, e.jsx)(d.Anchor, {
+        return (0, e.jsx)(d.eee, {
           onClick: () => {
             null == p || p({
               action: "PRESS_CLEAR_HISTORY_DISCLAIMER"
@@ -67,9 +67,9 @@ function O(t) {
       size: "sm"
     }],
     onClose: I,
-    transitionState: O,
+    transitionState: h,
     children: [null != S ? (0, e.jsxs)("div", {
-      className: h.error,
+      className: O.error,
       children: [(0, e.jsx)(d.k$p, {
         color: d.TVs.colors.STATUS_DANGER
       }), (0, e.jsx)(d.Text, {
@@ -79,7 +79,7 @@ function O(t) {
     }) : null, (0, e.jsx)(_.Z, {
       user: n,
       entry: i,
-      className: h.card,
+      className: O.card,
       hideContextMenu: true
     })]
   })

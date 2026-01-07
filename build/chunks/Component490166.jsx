@@ -17,11 +17,11 @@ function b(e) {
   let {
     guildId: t,
     channel: b,
-    keybind: h,
-    transitionState: y,
+    keybind: y,
+    transitionState: h,
     onClose: k
   } = e, p = a.useCallback(async () => {
-    (0, o.Kw)(o.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL), await k()
+    (0, s.Kw)(s.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL), await k()
   }, [k]), f = a.useCallback(async () => {
     await p(), (0, c.ZDy)(async () => {
       let {
@@ -58,20 +58,20 @@ function b(e) {
   return (0, i.jsxs)(r.Modal, {
     onClose: p,
     actions: j,
-    transitionState: y,
+    transitionState: h,
     title: d.intl.string(d.t.yJeV51),
     children: [(0, i.jsx)(c.Text, {
       variant: "text-md/normal",
       children: d.intl.format(d.t.fq3Swz, {
-        keybind: (0, s.BB)(h.shortcut, true).split(" + "),
+        keybind: (0, o.BB)(y.shortcut, true).split(" + "),
         keybindHook: (e, t) => (0, i.jsx)("span", {
           className: u.keybindHintKeys,
           children: (0, i.jsx)(c.M2$, {
             className: u.keybindShortcut,
-            shortcut: (0, s.BB)(h.shortcut, false)
+            shortcut: (0, o.BB)(y.shortcut, false)
           })
         }, t),
-        openSettingsHook: (e, t) => (0, i.jsx)(c.Anchor, {
+        openSettingsHook: (e, t) => (0, i.jsx)(c.eee, {
           onClick: f,
           children: e
         }, t)

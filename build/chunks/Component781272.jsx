@@ -63,7 +63,7 @@ function d(e) {
         let t = e.context[e.target];
         t && t.onClick ? (i.onClick = t.onClick, i.onContextMenu = t.onContextMenu) : i.onClick = t
       }
-      return null == i.onClick && (i.href = a().sanitizeUrl(e.target)), (0, r.jsx)(o.Anchor, u(l({
+      return null == i.onClick && (i.href = a().sanitizeUrl(e.target)), (0, r.jsx)(o.eee, u(l({
         title: e.title
       }, i), {
         children: t(e.content, n)

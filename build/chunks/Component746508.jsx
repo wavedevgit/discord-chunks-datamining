@@ -217,13 +217,13 @@ function eX() {
       children: (0, Chunk54381.jsxs)(Chunk600164.Z, {
         justify: Chunk600164.Z.Justify.BETWEEN,
         className: Chunk424126.__invalid_footer,
-        children: [(0, Chunk54381.jsx)(Chunk481060.Anchor, {
+        children: [(0, Chunk54381.jsx)(Chunk481060.eee, {
           href: Chunk981631.EYA.KRISP,
           onClick: e => eJ(e),
           children: (0, Chunk54381.jsx)("div", {
             className: Chunk424126.krispLogo
           })
-        }), (0, Chunk54381.jsx)(Chunk481060.Anchor, {
+        }), (0, Chunk54381.jsx)(Chunk481060.eee, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION),
           className: Chunk424126.krispLink,
           onClick: e => eJ(e),

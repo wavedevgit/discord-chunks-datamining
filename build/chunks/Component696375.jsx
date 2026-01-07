@@ -15,7 +15,7 @@ function r(n) {
     text: e,
     onClick: r
   } = n;
-  return (0, i.jsx)(a.Anchor, {
+  return (0, i.jsx)(a.eee, {
     href: t,
     onClick: r,
     className: l.externalLinkWrapper,

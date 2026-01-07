@@ -75,7 +75,7 @@ function g(e, t) {
       channelId: e.id,
       messageId: t.id,
       clickTrap: true,
-      children: e => (0, r.jsx)(a.Anchor, h(_({}, e), {
+      children: e => (0, r.jsx)(a.eee, h(_({}, e), {
         ref: n,
         children: o
       }))

@@ -87,7 +87,7 @@ let h = e => {
         attachment_subtype: null == h ? true : h[1]
       }), null == b || b(), null == O || O(e)
     }, [O, h, b]);
-  return null != g ? (0, r.jsx)(o.Anchor, p(d({
+  return null != g ? (0, r.jsx)(o.eee, p(d({
     href: t,
     onClick: v,
     target: m,
@@ -97,7 +97,7 @@ let h = e => {
     focusProps: E
   }, y), {
     children: g
-  })) : (0, r.jsx)(o.Anchor, p(d({
+  })) : (0, r.jsx)(o.eee, p(d({
     href: t,
     onClick: v,
     target: m,

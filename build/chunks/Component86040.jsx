@@ -34,7 +34,7 @@ let c = e => {
             children: s.intl.string(s.t.Y3fdOp)
           }), (0, r.jsx)("br", {}), (0, r.jsxs)(a.Text, {
             variant: "text-md/normal",
-            children: [s.intl.string(s.t.Paa4v4), "\xa0", n ? s.intl.string(s.t.StGVvC) : (0, r.jsx)(a.Anchor, {
+            children: [s.intl.string(s.t.Paa4v4), "\xa0", n ? s.intl.string(s.t.StGVvC) : (0, r.jsx)(a.eee, {
               onClick: i,
               children: s.intl.string(s.t.Ex7sk9)
             })]

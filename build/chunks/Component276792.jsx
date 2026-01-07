@@ -35,7 +35,7 @@ function h(e) {
     analyticsLocation: y,
     onClose: S
   }), P = "" !== E.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
-    children: ["\xa0", (0, r.jsx)(o.Anchor, {
+    children: ["\xa0", (0, r.jsx)(o.eee, {
       className: g.termsApplyAnchor,
       href: c.Z.getArticleURL(E.helpArticleId),
       children: f.intl.string(f.t["sBp+u0"])

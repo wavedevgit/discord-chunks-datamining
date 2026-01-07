@@ -139,7 +139,7 @@ function S(e) {
   }), {
     content: en,
     footer: ea
-  } = (0, T.Z)({
+  } = (0, A.Z)({
     onBack: () => U(j.F.CHOOSE_TEMPLATE),
     onComplete: () => {
       S()
@@ -170,7 +170,7 @@ function S(e) {
     className: s()(G.modal, G.completed),
     "aria-labelledby": t,
     parentComponent: "NUFModal",
-    children: (0, a.jsx)(A.Z, {
+    children: (0, a.jsx)(T.Z, {
       onComplete: S
     })
   }));
@@ -265,7 +265,7 @@ function S(e) {
           "data-migration-pending": true,
           justify: u.Z.Justify.BETWEEN,
           className: s()(G.footer, G.join),
-          children: (0, a.jsx)(c.Anchor, {
+          children: (0, a.jsx)(c.eee, {
             className: G.joinCTA,
             onClick: () => {
               U(j.F.JOIN_GUILD)

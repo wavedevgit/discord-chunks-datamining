@@ -72,7 +72,7 @@ class d extends Chunk473749.PureComponent {
           variant: "text-sm/normal",
           children: (0, Chunk54381.jsx)(Chunk481060.P3F, {
             onClick: this.handleRetry,
-            children: (0, Chunk54381.jsx)(Chunk481060.Anchor, {
+            children: (0, Chunk54381.jsx)(Chunk481060.eee, {
               children: Chunk388032.intl.string(Chunk388032.t.PZgmxv)
             })
           })

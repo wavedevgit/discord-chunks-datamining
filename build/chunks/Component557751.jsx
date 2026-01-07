@@ -1,5 +1,5 @@
 /** Chunk was on 18367 **/
-/** chunk id: 557751, original params: t,n,r (module,exports,require) **/
+/** chunk id: 557751, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   default: () => s
 });
@@ -12,32 +12,32 @@ var Chunk54381 = require("./54381.js"),
 function s(t) {
   var {
     application: n,
-    onCancel: r,
+    onCancel: e,
     onClose: s,
     onConfirm: c
   } = t, u = function(t, n) {
     if (null == t) return {};
-    var r, e, i = function(t, n) {
+    var e, r, i = function(t, n) {
       if (null == t) return {};
-      var r, e, i = {},
+      var e, r, i = {},
         a = Object.keys(t);
-      for (e = 0; e < a.length; e++) r = a[e], n.indexOf(r) >= 0 || (i[r] = t[r]);
+      for (r = 0; r < a.length; r++) e = a[r], n.indexOf(e) >= 0 || (i[e] = t[e]);
       return i
     }(t, n);
     if (Object.getOwnPropertySymbols) {
       var a = Object.getOwnPropertySymbols(t);
-      for (e = 0; e < a.length; e++) r = a[e], !(n.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(t, r) && (i[r] = t[r])
+      for (r = 0; r < a.length; r++) e = a[r], !(n.indexOf(e) >= 0) && Object.prototype.propertyIsEnumerable.call(t, e) && (i[e] = t[e])
     }
     return i
   }(t, ["application", "onCancel", "onClose", "onConfirm"]);
-  return (0, e.jsx)(i.Modal, {
+  return (0, r.jsx)(i.Modal, {
     transitionState: u.transitionState,
     onClose: s,
     title: l.intl.string(l.t["06YebE"]),
     actions: [{
       text: l.intl.string(l.t["ETE/oC"]),
       onClick: () => {
-        r(), s()
+        e(), s()
       },
       variant: "secondary"
     }, {
@@ -47,15 +47,15 @@ function s(t) {
       },
       variant: "primary"
     }],
-    children: (0, e.jsxs)(a.Kqy, {
-      children: [(0, e.jsxs)(a.Text, {
+    children: (0, r.jsxs)(a.Kqy, {
+      children: [(0, r.jsxs)(a.Text, {
         variant: "text-sm/normal",
         children: [l.intl.format(l.t["s+WDGz"], {
           activityName: n.name
         }), " "]
-      }), (0, e.jsx)(a.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: (0, e.jsx)(a.Anchor, {
+        children: (0, r.jsx)(a.eee, {
           href: o.OF,
           children: l.intl.string(l.t.E0gf5l)
         })

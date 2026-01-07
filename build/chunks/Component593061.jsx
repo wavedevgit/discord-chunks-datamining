@@ -51,10 +51,10 @@ function p(e) {
     E = null == n ? true : n.refundInvoiceLinks;
   return t.hasInvoiceURL && null == n ? (0, r.jsxs)("div", {
     className: d.downloadInvoice,
-    children: [(0, r.jsx)(o.Anchor, {
+    children: [(0, r.jsx)(o.eee, {
       onClick: () => _(false),
       children: u.intl.formatToPlainString(u.t.R0xzCN, {})
-    }), t.hasRefundInvoiceURLs ? (0, r.jsx)(o.Anchor, {
+    }), t.hasRefundInvoiceURLs ? (0, r.jsx)(o.eee, {
       className: d.downloadRefundInvoice,
       onClick: () => _(true),
       children: u.intl.formatToPlainString(u.t["3x6NGw"], {})
@@ -64,10 +64,10 @@ function p(e) {
     })]
   }) : t.hasInvoiceURL && null != n ? (0, r.jsxs)("div", {
     className: d.downloadInvoice,
-    children: [(0, r.jsx)(o.Anchor, {
+    children: [(0, r.jsx)(o.eee, {
       href: g,
       children: u.intl.formatToPlainString(u.t.R0xzCN, {})
-    }), null != E ? E.map((e, t) => (0, r.jsx)(o.Anchor, {
+    }), null != E ? E.map((e, t) => (0, r.jsx)(o.eee, {
       className: d.downloadRefundInvoice,
       href: e,
       children: u.intl.formatToPlainString(u.t["3x6NGw"], {})
@@ -77,7 +77,7 @@ function p(e) {
     })]
   }) : h ? (0, r.jsx)("div", {
     className: d.downloadInvoice,
-    children: (0, r.jsx)(o.Anchor, {
+    children: (0, r.jsx)(o.eee, {
       onClick: () => {
         m(t, t.paymentSource)
       },

@@ -89,9 +89,9 @@ class R extends Chunk473749.PureComponent {
     } = this.props, {
       error: r
     } = this.state, i = null != r ? r.code : null;
-    return i === O.evJ.INVALID_GIFT_SELF_REDEMPTION ? A.intl.string(A.t.wa9h7F) : i === O.evJ.INVALID_GIFT_REDEMPTION_OWNED && (null == n ? true : n.productLine) === O.POd.COLLECTIBLES ? A.intl.string(A.t.mdLtb5) : null != t || i === O.evJ.INVALID_GIFT_REDEMPTION_OWNED ? A.intl.format(A.t.PIdmg3, {
-      libraryLink: O.Z5c.APPLICATION_LIBRARY
-    }) : e.isClaimed || i === O.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED ? A.intl.string(A.t.ilcBeX) : i === O.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? A.intl.string(A.t.ypuSd8) : true
+    return i === T.evJ.INVALID_GIFT_SELF_REDEMPTION ? A.intl.string(A.t.wa9h7F) : i === T.evJ.INVALID_GIFT_REDEMPTION_OWNED && (null == n ? true : n.productLine) === T.POd.COLLECTIBLES ? A.intl.string(A.t.mdLtb5) : null != t || i === T.evJ.INVALID_GIFT_REDEMPTION_OWNED ? A.intl.format(A.t.PIdmg3, {
+      libraryLink: T.Z5c.APPLICATION_LIBRARY
+    }) : e.isClaimed || i === T.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED ? A.intl.string(A.t.ilcBeX) : i === T.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? A.intl.string(A.t.ypuSd8) : true
   }
   renderSpinner(e) {
     return (0, r.jsxs)(g.ZP, {
@@ -269,7 +269,7 @@ class R extends Chunk473749.PureComponent {
       }))
     }), P(this, "handleLogout", () => {
       let e = this.props.match.params.giftCode;
-      u.Z.logout("gift_code", O.Z5c.GIFT_CODE_LOGIN(e))
+      u.Z.logout("gift_code", T.Z5c.GIFT_CODE_LOGIN(e))
     }), P(this, "handleResendVerification", () => {
       u.Z.verifyResend(), this.setState({
         sentVerification: true
@@ -286,7 +286,7 @@ class R extends Chunk473749.PureComponent {
           error: null
         }), await d.Z.redeemGiftCode({
           code: n
-        }), e(O.Z5c.APP)
+        }), e(T.Z5c.APP)
       } catch (e) {
         this.setState({
           error: e
@@ -297,7 +297,7 @@ class R extends Chunk473749.PureComponent {
         transitionTo: e
       } = this.props, t = this.getCode();
       d.Z.resolveGiftCode(t, true, true).then(n => {
-        null != n && null != n.giftCode.promotion && e(O.Z5c.BILLING_PROMOTION_REDEMPTION(t))
+        null != n && null != n.giftCode.promotion && e(T.Z5c.BILLING_PROMOTION_REDEMPTION(t))
       })
     })
   }
@@ -326,7 +326,7 @@ let L = Chunk442837.ZP.connectStores([Chunk82142.Z, Chunk283595.Z, Chunk314897.d
       transitionTo: a
     } = e, l = (0, p.K$)(t);
     return (i.useEffect(() => {
-      null != s && l && a(O.Z5c.APP_WITH_GIFT_CODE(s))
+      null != s && l && a(T.Z5c.APP_WITH_GIFT_CODE(s))
     }, [l, s, a]), l) ? (0, r.jsxs)(g.ZP, {
       children: [(0, r.jsx)(g.Dx, {
         children: A.intl.string(A.t.b3lf1c)

@@ -225,7 +225,7 @@ function V(e) {
         checked: o || l === U.gLR.DISABLED,
         disabled: o,
         description: z.intl.string(z.t["Vw/Xn8"])
-      }), (0, i.jsx)(p.Anchor, {
+      }), (0, i.jsx)(p.eee, {
         href: T.Z.getArticleURL(U.BhN.HIGHLIGHTS),
         children: (0, i.jsx)(p.Text, {
           variant: "text-sm/normal",

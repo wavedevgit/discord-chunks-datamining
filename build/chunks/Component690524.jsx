@@ -188,7 +188,7 @@ let k = {
             }), (0, Chunk54381.jsx)(Chunk481060.izJ, {}), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {
               direction: "vertical",
               gap: 8,
-              children: [(0, Chunk54381.jsx)(Chunk481060.Anchor, {
+              children: [(0, Chunk54381.jsx)(Chunk481060.eee, {
                 href: "https://i.dis.gd/createPromo",
                 children: "How to create promotion"
               }), (0, Chunk54381.jsxs)(Chunk481060.Kqy, {

@@ -20,24 +20,24 @@ var Chunk54381 = require("./54381.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk337016 = require("./337016.js");
 
-function g(e) {
+function h(e) {
   let {
     step: t,
     instructions: r
   } = e;
   return (0, n.jsxs)("div", {
-    className: h.cardRow,
+    className: g.cardRow,
     children: [(0, n.jsx)("div", {
-      className: h.stepNumberContainer,
+      className: g.stepNumberContainer,
       children: (0, n.jsx)(o.Text, {
         variant: "text-sm/semibold",
-        className: h.stepNumber,
+        className: g.stepNumber,
         children: t
       })
     }), (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-strong",
-      className: h.instructions,
+      className: g.instructions,
       children: r
     })]
   })
@@ -62,32 +62,32 @@ function C(e) {
     onClose: C,
     transitionState: r,
     children: (0, n.jsxs)("div", {
-      className: h.card,
+      className: g.card,
       children: [(0, n.jsxs)("div", {
-        className: h.cardText,
+        className: g.cardText,
         children: [(0, n.jsxs)(o.Text, {
           variant: "text-lg/semibold",
           color: "text-strong",
-          className: h.cardRow,
+          className: g.cardRow,
           children: [(0, n.jsx)(l.Z, {
-            className: h.cardHeaderIcon
+            className: g.cardHeaderIcon
           }), b.intl.string(b.t.ZNlYbK)]
-        }), (0, n.jsx)(g, {
+        }), (0, n.jsx)(h, {
           step: 1,
           instructions: b.intl.string(b.t.dDtkl9)
-        }), (0, n.jsx)(g, {
+        }), (0, n.jsx)(h, {
           step: 2,
           instructions: b.intl.string(b.t.IWuXjC)
         }), (0, n.jsx)(o.Text, {
           variant: "text-sm/medium",
-          children: (0, n.jsx)(o.Anchor, {
-            className: h.learnMore,
+          children: (0, n.jsx)(o.eee, {
+            className: g.learnMore,
             href: d.Z.getArticleURL(x.BhN.XBOX_CONNECTION),
             children: b.intl.string(b.t.hvVgAZ)
           })
         })]
       }), (0, n.jsx)(i.ZP, {
-        className: h.qrCode,
+        className: g.qrCode,
         size: 120,
         text: v
       })]

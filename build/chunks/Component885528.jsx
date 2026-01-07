@@ -132,7 +132,7 @@ let w = e => {
       classificationTypeText: t,
       policyExplainerLink: n
     } = e;
-    return (0, i.jsxs)(r.Anchor, {
+    return (0, i.jsxs)(r.eee, {
       href: n,
       className: P.classificationPolicyCard,
       useDefaultUnderlineStyles: false,
@@ -168,7 +168,7 @@ let w = e => {
     variant: "text-md/normal",
     color: "text-muted",
     children: A.intl.format(A.t.IFxUaT, {
-      letUsKnowHook: (t, n) => (0, i.jsx)(r.Anchor, {
+      letUsKnowHook: (t, n) => (0, i.jsx)(r.eee, {
         href: e.isAppealEligible ? true : e.appealLink,
         onClick: e.letUsKnowClick,
         children: t

@@ -81,7 +81,7 @@ let V = () => (0, Chunk54381.jsxs)("div", {
     children: Chunk388032.intl.string(Chunk388032.t.bpbATE)
   }), (0, Chunk54381.jsx)("div", {
     className: Chunk720578.emptyStateCTA,
-    children: (0, Chunk54381.jsx)(Chunk481060.Anchor, {
+    children: (0, Chunk54381.jsx)(Chunk481060.eee, {
       href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUICK_SWITCHER_TUTORIAL),
       children: Chunk388032.intl.string(Chunk388032.t["4iPfEO"])
     })

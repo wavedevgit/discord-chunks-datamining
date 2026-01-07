@@ -29,7 +29,7 @@ function g(e) {
       tag: "span",
       children: e
     })
-  }), [p]), I = i.useCallback(e => (0, l.jsx)(s.Anchor, {
+  }), [p]), I = i.useCallback(e => (0, l.jsx)(s.eee, {
     href: u.EYA.INVITES_HELP,
     target: "_blank",
     children: (0, l.jsx)(s.Text, {

@@ -25,7 +25,7 @@ function p() {
       text: Chunk388032.intl.format(Chunk388032.t["TnH05/"], {
         count: require
       }),
-      children: (0, Chunk54381.jsx)(Chunk481060.Anchor, (e = function(e) {
+      children: (0, Chunk54381.jsx)(Chunk481060.eee, (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

@@ -90,7 +90,7 @@ function I() {
           width: 70,
           height: 40,
           alt: ""
-        }), (0, Chunk54381.jsx)(Chunk481060.Anchor, {
+        }), (0, Chunk54381.jsx)(Chunk481060.eee, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION),
           onClick: S,
           children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)

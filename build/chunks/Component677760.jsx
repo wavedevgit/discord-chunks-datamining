@@ -65,7 +65,7 @@ function C() {
     children: (0, Chunk54381.jsx)(Chunk481060.$jN, {})
   })
 }
-let T = e => {
+let O = e => {
   let t = (null == e ? true : e.state) == null && (null == e ? true : e.channel) == null;
   if (null == e || null == e.state || t) return 0;
   let n = e.state;
@@ -88,7 +88,7 @@ let T = e => {
   }
 };
 
-function O(e) {
+function T(e) {
   let {
     invite: t,
     onAcceptInvite: n
@@ -127,7 +127,7 @@ function A(e) {
       for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e, ["children", "cardChildren", "startAnimHeightPx", "innerStyle"]), [d, h] = i.useState(T(c)), {
+  }(e, ["children", "cardChildren", "startAnimHeightPx", "innerStyle"]), [d, h] = i.useState(O(c)), {
     ref: f,
     height: g
   } = (0, u.ZP)(), m = (0, l.q_F)({
@@ -135,7 +135,7 @@ function A(e) {
     config: s.config.stiff
   });
   return i.useEffect(() => {
-    let e = T(c);
+    let e = O(c);
     e !== d && h(e)
   }, [c, d]), (0, r.jsxs)(s.animated.div, {
     className: N.inviteCard,
@@ -186,7 +186,7 @@ function P(e) {
             invite: t
           }));
         case 2:
-          return (0, r.jsx)(O, S(y({}, e), {
+          return (0, r.jsx)(T, S(y({}, e), {
             invite: t
           }));
         default:

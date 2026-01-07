@@ -34,7 +34,7 @@ function p(e) {
   } = O, S = (0, i.e7)([c.Z], () => c.Z.getChannel(E), [E]), I = (0, i.e7)([u.Z], () => u.Z.getGuild(p), [p]), Z = (0, x.cS)(O), T = (0, i.e7)([d.default], () => null != j.creatorId ? d.default.getUser(j.creatorId) : d.default.getCurrentUser(), [j.creatorId]), w = (0, i.e7)([o.Z], () => o.Z.isLurking(p), [p]), k = (0, s.KS)(S, I);
   return (0, l.jsxs)("div", {
     className: f.content,
-    children: [(0, l.jsx)(h.Z, {
+    children: [(0, l.jsx)(v.Z, {
       className: f.previewCard,
       guild: I,
       channel: S,
@@ -55,12 +55,12 @@ function p(e) {
       className: f.textContainer,
       children: [(0, l.jsx)(a.Heading, {
         variant: "heading-xl/semibold",
-        children: v.intl.string(v.t.yBsFE3)
+        children: h.intl.string(h.t.yBsFE3)
       }), (0, l.jsx)(a.Text, {
         color: "text-subtle",
         variant: "text-md/normal",
         className: f.subheader,
-        children: null != location ? v.intl.string(v.t.KDPFi9) : v.intl.format(v.t.f55NX0, {
+        children: null != location ? h.intl.string(h.t.KDPFi9) : h.intl.format(h.t.f55NX0, {
           channelName: null != (t = null == S ? true : S.name) ? t : "",
           channelHook: () => {
             var e;

@@ -563,7 +563,7 @@ class eS extends(r = Chunk473749.PureComponent) {
         children: !n.isCollectible && this.renderRefundCriteria(ei.intl.string(ei.t.H0RNz4), r, ei.intl.formatToPlainString(ei.t["7dtXa/"], {
           daysSincePurchase: this.daysSincePurchase
         }))
-      }), (0, i.jsx)(h.Anchor, {
+      }), (0, i.jsx)(h.eee, {
         href: ep(t),
         children: ei.intl.string(ei.t.re5nOB)
       })]

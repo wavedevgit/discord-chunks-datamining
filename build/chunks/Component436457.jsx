@@ -25,7 +25,7 @@ function N(e) {
     onComplete: n,
     onConnect: a,
     isSlideReady: o
-  } = e, [N, x] = s.useState(""), [A, T] = s.useState(false), [C, g] = s.useState(null), j = s.useRef(null);
+  } = e, [N, x] = s.useState(""), [T, A] = s.useState(false), [C, g] = s.useState(null), j = s.useRef(null);
   s.useEffect(() => {
     var e;
     o && (null == (e = j.current) || e.focus())
@@ -34,7 +34,7 @@ function N(e) {
     e.preventDefault();
     let t = N.trim();
     if ("" === t) return void g(_.intl.string(_.t.IRq5ah));
-    g(null), T(true);
+    g(null), A(true);
     let a = t.split("/"),
       o = a[a.length - 1];
     c.ZP.resolveInvite(o, "Join Guild", {
@@ -43,7 +43,7 @@ function N(e) {
       let {
         invite: t
       } = e;
-      if (T(false), null == t) return void g(_.intl.string(_.t["GEYI+Z"]));
+      if (A(false), null == t) return void g(_.intl.string(_.t["GEYI+Z"]));
       if (null != t.channel) {
         let e = c.ZP.getInviteContext("Join Guild", t);
         c.ZP.acceptInvite({
@@ -57,11 +57,11 @@ function N(e) {
         })
       }
     }, e => {
-      T(false);
+      A(false);
       let t = new d.yZ(e);
       g((0, b.O)(t.code))
     })
-  }, [N, T, g, n]);
+  }, [N, A, g, n]);
   return {
     content: (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)(l.xBx, {
@@ -117,7 +117,7 @@ function N(e) {
         text: _.intl.string(_.t.VJlc0S),
         onClick: O,
         disabled: 0 === N.length,
-        loading: A
+        loading: T
       }), (0, i.jsx)(r.zx, {
         "data-migration-pending": true,
         className: h.__invalid_skipButton,

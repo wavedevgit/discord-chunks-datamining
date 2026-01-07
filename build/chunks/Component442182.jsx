@@ -199,7 +199,7 @@ function A(e) {
         color: "text-muted",
         children: _.intl.format(_.t.P9pZOW, {
           addMembersHook: function(e, i) {
-            return n ? null : (0, r.jsx)(d.Anchor, {
+            return n ? null : (0, r.jsx)(d.eee, {
               onClick: t,
               children: e
             }, i)

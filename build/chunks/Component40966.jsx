@@ -24,7 +24,7 @@ function u() {
       children: Chunk388032.intl.string(Chunk388032.t.OJmNR9)
     }), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsx)("br", {}), (0, Chunk54381.jsx)("span", {
       children: Chunk388032.intl.format(Chunk388032.t.RCYeBL, {
-        blogHook: (e, t) => (0, r.jsx)(i.Anchor, {
+        blogHook: (e, t) => (0, r.jsx)(i.eee, {
           onClick: c,
           target: "_blank",
           rel: "noreferrer noopener",

@@ -149,7 +149,7 @@ function C(e, t, n) {
       children: null != e && null != e.releaseChannel ? E.intl.formatToPlainString(E.t.bFj63b, {
         releaseChannel: e.releaseChannel
       }) : E.intl.string(E.t.Wj3LW4)
-    }), (0, r.jsx)(c.Anchor, {
+    }), (0, r.jsx)(c.eee, {
       className: b.infoLink,
       href: _.Z.getArticleURL(g.BhN.BUILD_OVERRIDE_EMBED),
       target: "_blank",

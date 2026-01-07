@@ -147,7 +147,7 @@ function R(e) {
       syncDescriptionText: et
     } = r.useMemo(() => {
       let e;
-      e = null != $ ? (0, i.jsx)(f.Anchor, {
+      e = null != $ ? (0, i.jsx)(f.eee, {
         onClick: V,
         children: $.name
       }) : P.intl.string(P.t.PoWNfe);

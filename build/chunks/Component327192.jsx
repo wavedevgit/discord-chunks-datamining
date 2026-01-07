@@ -120,7 +120,7 @@ let H = e => {
           variant: "text-md/semibold",
           color: "text-strong",
           children: a.guild.name
-        }), (0, r.jsx)(f.Anchor, {
+        }), (0, r.jsx)(f.eee, {
           href: null == (n = g.Z.get(a.type)) || null == (t = n.getPlatformUserUrl) ? true : t.call(n, a.account),
           children: (0, r.jsx)(f.Text, {
             variant: "text-xs/normal",

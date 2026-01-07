@@ -40,13 +40,13 @@ function f(e) {
       variant: "text-sm/medium",
       color: "interactive-text-active",
       children: null != a ? u.intl.format(t, {
-        hook: (e, t) => (0, r.jsx)(s.Anchor, {
+        hook: (e, t) => (0, r.jsx)(s.eee, {
           onClick: g,
           children: e
         }, t),
         count: a
       }) : u.intl.format(t, {
-        hook: (e, t) => (0, r.jsx)(s.Anchor, {
+        hook: (e, t) => (0, r.jsx)(s.eee, {
           onClick: g,
           children: e
         }, t)

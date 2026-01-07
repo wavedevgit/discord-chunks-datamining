@@ -50,7 +50,7 @@ function g() {
       compact: true
     }), (0, Chunk54381.jsxs)("div", {
       className: Chunk205904.links,
-      children: [(0, Chunk54381.jsx)(Chunk481060.Anchor, {
+      children: [(0, Chunk54381.jsx)(Chunk481060.eee, {
         href: Chunk981631.EYA.PRIVACY,
         children: (0, Chunk54381.jsx)(Chunk481060.Text, {
           tag: "span",
@@ -62,7 +62,7 @@ function g() {
         className: Chunk205904.bullet,
         "aria-hidden": "true",
         children: "•"
-      }), (0, Chunk54381.jsx)(Chunk481060.Anchor, {
+      }), (0, Chunk54381.jsx)(Chunk481060.eee, {
         href: Chunk981631.EYA.TERMS,
         children: (0, Chunk54381.jsx)(Chunk481060.Text, {
           tag: "span",
@@ -90,7 +90,7 @@ function g() {
         },
         children: (t, n) => {
           var o, a;
-          return (0, r.jsx)(l.Anchor, (o = function(e) {
+          return (0, r.jsx)(l.eee, (o = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);

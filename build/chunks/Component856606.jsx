@@ -460,7 +460,7 @@ function el() {
             marginTop: 20,
             marginBottom: 14
           }
-        }), (0, Chunk54381.jsx)(Chunk481060.Anchor, {
+        }), (0, Chunk54381.jsx)(Chunk481060.eee, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PERMISSIONS_TUTORIAL),
           target: "_blank",
           children: (0, Chunk54381.jsx)(Chunk481060.Text, {

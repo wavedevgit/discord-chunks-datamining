@@ -41,9 +41,9 @@ function Z(e) {
     creator_id: D,
     name: _,
     description: G,
-    entity_type: A,
-    image: M,
-    recurrence_rule: R
+    entity_type: M,
+    image: R,
+    recurrence_rule: A
   } = O, L = (0, f.DK)(O), U = (0, i.e7)([h.ZP], () => h.ZP.isInterestedInEventRecurrence(S, L), [S, L]), J = (0, i.e7)([l.Z], () => l.Z.isLurking(I), [I]), B = (0, i.e7)([c.Z], () => c.Z.getStageInstanceByChannel(T), [T]), z = (0, i.e7)([s.Z], () => s.Z.getGuild(I), [I]), q = (0, i.e7)([o.Z], () => o.Z.getChannel(T), [T]), W = (0, i.e7)([g.default], () => g.default.getUser(D), [D]), {
     speakers: H
   } = (0, j.Z)({
@@ -91,10 +91,10 @@ function Z(e) {
     channel: q,
     creator: W,
     name: _,
-    entityType: A,
+    entityType: M,
     description: null != G ? G : true,
     location: null != (n = (0, v.cS)(O)) ? n : true,
-    imageSource: null != M ? (0, b.Z)(O) : true,
+    imageSource: null != R ? (0, b.Z)(O) : true,
     imageLocation: C.Q.THUMBNAIL,
     isActive: V,
     isUserLurking: J,
@@ -111,7 +111,7 @@ function Z(e) {
     truncate: k,
     isNew: w,
     guildEvent: O,
-    recurrenceRule: (0, x.KV)(R),
+    recurrenceRule: (0, x.KV)(A),
     recurrenceId: L
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(Z)) : (function(e, n) {
     var t = Object.keys(e);

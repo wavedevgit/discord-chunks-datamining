@@ -49,8 +49,8 @@ function O(e) {
     }) : null,
     D = null == k || null == T,
     R = (0, s.Z)(null != k ? k : ""),
-    A = null != (n = null == T ? true : T.maxAge) ? n : b.value,
-    _ = null != (O = null == T ? true : T.maxUses) ? O : y.value;
+    _ = null != (n = null == T ? true : T.maxAge) ? n : b.value,
+    A = null != (O = null == T ? true : T.maxUses) ? O : y.value;
   return (0, l.jsxs)("div", {
     className: j.container,
     children: [(0, l.jsx)(i.P3F, {
@@ -89,7 +89,7 @@ function O(e) {
         onCopy: e => {
           if (D) return;
           (0, m.JG)(e);
-          let t = (0, v.xC)(N.entity_type);
+          let t = (0, h.xC)(N.entity_type);
           x.default.track(f.rMx.COPY_INSTANT_INVITE, {
             server: N.guild_id,
             channel: I,
@@ -103,7 +103,7 @@ function O(e) {
         variant: "text-xs/normal",
         color: "text-default",
         className: j.inviteDetail,
-        children: (0, h.Vg)(A, _)
+        children: (0, v.Vg)(_, A)
       })]
     })]
   })

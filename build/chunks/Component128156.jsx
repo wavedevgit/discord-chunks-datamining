@@ -112,7 +112,7 @@ function w(e) {
     }) : null, F ? (0, r.jsx)(v.Z, {
       heading: P.intl.string(P.t.jzgEoL),
       introText: R ? P.intl.format(P.t["4bk9Ak"], {
-        learnMoreHook: (e, t) => (0, r.jsx)(a.Anchor, {
+        learnMoreHook: (e, t) => (0, r.jsx)(a.eee, {
           href: d.Z.getArticleURL(x.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, t)

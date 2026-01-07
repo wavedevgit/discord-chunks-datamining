@@ -69,7 +69,7 @@ let f = e => {
         }), m || h ? (0, r.jsxs)(a.Text, {
           variant: "text-md/medium",
           style: d({}, p),
-          children: [m && t.body, m && h && " ", h && (0, r.jsx)(a.Anchor, {
+          children: [m && t.body, m && h && " ", h && (0, r.jsx)(a.eee, {
             href: t.helpCenterUrl,
             className: u.learnMoreLink,
             style: d({}, p),

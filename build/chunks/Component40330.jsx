@@ -97,7 +97,7 @@ let h = e => {
         className: p.fileInner,
         children: [(0, r.jsx)("div", {
           className: p.filenameLinkWrapper,
-          children: (0, r.jsx)(c.Anchor, {
+          children: (0, r.jsx)(c.eee, {
             className: p.fileNameLink,
             href: n,
             onClick: s,

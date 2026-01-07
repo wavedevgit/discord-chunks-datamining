@@ -464,7 +464,7 @@ let eW = Chunk473749.memo(function() {
           }),
           noticeType: c.type,
           children: Chunk388032.intl.string(Chunk388032.t.NiTd0e)
-        }), (0, Chunk54381.jsx)(Chunk481060.Anchor, {
+        }), (0, Chunk54381.jsx)(Chunk481060.eee, {
           className: Chunk710930.textLinkSmall,
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SPOTIFY_AUTO_PAUSED),
           target: "_blank",
@@ -943,7 +943,7 @@ let eW = Chunk473749.memo(function() {
           target: "_blank",
           noticeType: c.type,
           children: Chunk388032.intl.string(Chunk388032.t.kvHdFN)
-        }), (0, Chunk54381.jsx)(Chunk481060.Anchor, {
+        }), (0, Chunk54381.jsx)(Chunk481060.eee, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUARANTINE),
           target: "_blank",
           className: Chunk710930.quarantineLearnMoreLink,

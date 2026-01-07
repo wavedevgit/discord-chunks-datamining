@@ -106,7 +106,7 @@ function v(e) {
           variant: "text-xs/normal",
           color: "text-muted",
           children: h.intl.format(h.t.Bk0VOi, {
-            profileLink: (e, t) => (0, r.jsx)(o.Anchor, {
+            profileLink: (e, t) => (0, r.jsx)(o.eee, {
               onClick: _,
               children: e
             }, t)

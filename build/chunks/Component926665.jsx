@@ -31,12 +31,12 @@ function x() {
         return (0, Chunk54381.jsx)("div", {
           className: t()(Chunk86105.message, Chunk86105.details),
           children: Chunk873546.tq ? Chunk388032.intl.format(Chunk388032.t["0EikXi"], {
-            link: () => (0, Chunk54381.jsx)(Chunk481060.Anchor, {
+            link: () => (0, Chunk54381.jsx)(Chunk481060.eee, {
               href: b,
               children: b
             })
           }) : Chunk388032.intl.format(Chunk388032.t.hKHZhO, {
-            link: () => (0, Chunk54381.jsx)(Chunk481060.Anchor, {
+            link: () => (0, Chunk54381.jsx)(Chunk481060.eee, {
               href: b,
               children: b
             })

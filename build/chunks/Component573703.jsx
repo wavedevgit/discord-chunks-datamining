@@ -21,7 +21,7 @@ function u() {
       children: (0, Chunk54381.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: (0, Chunk54381.jsx)(Chunk481060.Anchor, {
+        children: (0, Chunk54381.jsx)(Chunk481060.eee, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.CRUNCHYROLL_CONNECTION),
           children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
         })

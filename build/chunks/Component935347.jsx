@@ -115,7 +115,7 @@ class P extends Chunk473749.PureComponent {
             className: Chunk528195.problemsText,
             children: Chunk388032.intl.string(Chunk388032.t.AG2zPM)
           }), (0, Chunk54381.jsxs)("div", {
-            children: [(0, Chunk54381.jsxs)(Chunk481060.Anchor, {
+            children: [(0, Chunk54381.jsxs)(Chunk481060.eee, {
               className: Chunk528195.twitterLink,
               href: Chunk981631.yXt.TWITTER_SUPPORT,
               target: "_blank",
@@ -124,7 +124,7 @@ class P extends Chunk473749.PureComponent {
                 color: "currentColor",
                 className: Chunk528195.icon
               }), Chunk388032.intl.string(Chunk388032.t.KlyTbj)]
-            }), (0, Chunk54381.jsxs)(Chunk481060.Anchor, {
+            }), (0, Chunk54381.jsxs)(Chunk481060.eee, {
               className: Chunk528195.statusLink,
               href: Chunk981631.yXt.STATUS,
               target: "_blank",

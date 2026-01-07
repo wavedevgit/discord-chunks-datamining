@@ -40,7 +40,7 @@ function y(e) {
     scheduledEndTime: k,
     scheduledStartTime: D,
     recurrenceRule: R
-  } = t, A = (0, u._d)(I), _ = (0, u.K3)(I), G = null != t && (0, g.xt)(t), U = r.useMemo(() => {
+  } = t, _ = (0, u._d)(I), A = (0, u.K3)(I), G = null != t && (0, g.xt)(t), U = r.useMemo(() => {
     let e = (0, m.v1)(t);
     return null != e ? e : {
       startDate: a()(D)
@@ -99,7 +99,7 @@ function y(e) {
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)("div", {
       className: b.blockedUsersContainer,
-      children: null != I && !G && (A > 0 || _ > 0) && (0, l.jsx)(d.mv, {
+      children: null != I && !G && (_ > 0 || A > 0) && (0, l.jsx)(d.mv, {
         channelId: I
       })
     }), (0, l.jsx)("div", {
@@ -120,7 +120,7 @@ function y(e) {
           value: T,
           autoComplete: "off",
           inputRef: F
-        }), (0, l.jsx)(v.Z, {
+        }), (0, l.jsx)(h.Z, {
           className: b.formItem,
           onScheduleChange: e => {
             let {
@@ -170,7 +170,7 @@ function y(e) {
                 if (null == e) return null;
                 if (null != y) {
                   var n;
-                  return null != (n = (0, h.Z)((0, x.Gb)(t, y, i))) ? n : null
+                  return null != (n = (0, v.Z)((0, x.Gb)(t, y, i))) ? n : null
                 }
               },
               onChange: V,

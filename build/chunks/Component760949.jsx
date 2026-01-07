@@ -1,7 +1,7 @@
 /** Chunk was on 44153 **/
-/** chunk id: 760949, original params: t,n,e (module,exports,require) **/
+/** chunk id: 760949, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => p
+  default: () => x
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js"),
   Chunk473749 = require("./473749.js"),
@@ -15,40 +15,40 @@ var Chunk54381 = require("./54381.js"),
   Chunk517319 = require("./517319.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(t) {
+function x(t) {
   let {
-    transitionState: n,
-    onClose: e
-  } = t, [p, x] = a.useState(false), [k, S] = a.useState(null), C = async () => {
-    S(null), x(true);
+    transitionState: e,
+    onClose: n
+  } = t, [x, h] = a.useState(false), [k, S] = a.useState(null), C = async () => {
+    S(null), h(true);
     try {
-      await o.Ex.updateSetting(false), (0, s.uL)(d.Z5c.FRIENDS), (0, u.default)(), e()
+      await o.Ex.updateSetting(false), (0, s.uL)(d.Z5c.FRIENDS), (0, u.default)(), n()
     } catch (t) {
       S(new c.Z(t).getAnyErrorMessage())
     } finally {
-      x(false)
+      h(false)
     }
   }, g = () => {
-    (0, s.uL)(d.Z5c.SETTINGS("family-center")), e()
+    (0, s.uL)(d.Z5c.SETTINGS("family-center")), n()
   };
   return (0, i.jsx)(l.Modal, {
-    transitionState: n,
-    onClose: e,
-    title: h.intl.string(f.default.VGB30H),
-    subtitle: h.intl.format(f.default["CrZZ+p"], {
-      openSettingsHook: (t, n) => (0, i.jsx)(r.Anchor, {
+    transitionState: e,
+    onClose: n,
+    title: p.intl.string(f.default.VGB30H),
+    subtitle: p.intl.format(f.default["CrZZ+p"], {
+      openSettingsHook: (t, e) => (0, i.jsx)(r.eee, {
         onClick: g,
         children: t
-      }, n)
+      }, e)
     }),
     actions: [{
       variant: "secondary",
-      text: h.intl.string(h.t["ETE/oC"]),
-      onClick: e
+      text: p.intl.string(p.t["ETE/oC"]),
+      onClick: n
     }, {
-      text: h.intl.string(f.default.cSb7U0),
+      text: p.intl.string(f.default.cSb7U0),
       onClick: C,
-      loading: p,
+      loading: x,
       variant: "critical-primary"
     }],
     children: (0, i.jsx)("div", {

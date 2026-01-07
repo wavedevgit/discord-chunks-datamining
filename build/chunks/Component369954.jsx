@@ -73,7 +73,7 @@ let O = e => {
           variant: "text-md/medium",
           color: "text-muted",
           children: Chunk388032.intl.format(Chunk517319.default.X9rW0j, {
-            openSettingsHook: (e, t) => (0, r.jsx)(o.Anchor, {
+            openSettingsHook: (e, t) => (0, r.jsx)(o.eee, {
               onClick: n,
               children: e
             }, t)

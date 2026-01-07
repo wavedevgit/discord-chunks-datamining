@@ -73,7 +73,7 @@ function T(e) {
   } = e, a = (0, s.e7)([g.Z], () => g.Z.getGuild(t.guild_id));
   return (l.useEffect(() => {
     null == a && n()
-  }, [a, n]), null == a) ? null : (0, r.jsx)(F, {
+  }, [a, n]), null == a) ? null : (0, r.jsx)(R, {
     transitionState: i,
     guild: a,
     channel: t,
@@ -81,7 +81,7 @@ function T(e) {
   })
 }
 
-function A(e) {
+function F(e) {
   let {
     stageChannelsInGuild: t,
     channel: n,
@@ -110,7 +110,7 @@ function A(e) {
   })
 }
 
-function F(e) {
+function R(e) {
   var t, n;
   let {
     channel: i,
@@ -121,8 +121,8 @@ function F(e) {
     isEvent: h = false
   } = e, {
     loading: T,
-    error: F,
-    onSave: R
+    error: R,
+    onSave: A
   } = (0, N.Z)(i, o), G = l.useMemo(() => O.Z.getStageInstanceByChannel(i.id), [i.id]), [M, B] = l.useState(null != (t = null == G ? true : G.topic) ? t : ""), [z, q] = l.useState(""), [L] = l.useState(h), [U, J] = l.useState({
     startDate: (0, b.ib)()
   }), [V, K] = l.useState(false), W = (0, v.J)(i), Y = (0, v.U)(i), H = null == G && W && !L, [Q, X] = l.useState(H && Y), $ = w.j8.GUILD_ONLY, [ee] = l.useState(null != (n = null == G ? true : G.privacy_level) ? n : $), [et, en] = l.useState(null), er = (0, y._d)(i.id), el = (0, y.K3)(i.id), [ei, ea] = l.useState(false), ec = (0, f.ZP)(i), es = (0, m.q)(s), eo = null != g, eu = es.length > 1;
@@ -135,7 +135,7 @@ function F(e) {
   });
   let ed = e => {
       if (e.preventDefault(), ee === w.j8.PUBLIC && M.length < 20 && !ei) return void ea(true);
-      L || null == R || R({
+      L || null == A || A({
         topic: M,
         privacyLevel: ee,
         sendStartNotification: Q
@@ -158,7 +158,7 @@ function F(e) {
         className: D.form,
         children: [(0, r.jsx)(u.oil, {
           required: true,
-          error: null != F ? F.getAnyErrorMessage() : true,
+          error: null != R ? R.getAnyErrorMessage() : true,
           label: h ? C.intl.string(C.t["0HbEQ6"]) : C.intl.string(C.t["5FPBOB"]),
           onChange: e => B(e),
           helperText: ei ? C.intl.string(C.t.AqTyaR) : true,
@@ -167,7 +167,7 @@ function F(e) {
           value: M,
           autoComplete: "off",
           inputRef: ef
-        }), eo && eu ? (0, r.jsx)(A, {
+        }), eo && eu ? (0, r.jsx)(F, {
           stageChannelsInGuild: es,
           channel: i,
           onSelectChannel: g

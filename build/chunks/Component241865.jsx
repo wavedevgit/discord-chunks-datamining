@@ -320,7 +320,7 @@ class el extends Chunk473749.PureComponent {
     return null != module ? Chunk388032.intl.format(Chunk388032.t.s2ZzZZ, {
       name: (0, Chunk933557.F6)(module, Chunk594174.default, Chunk699516.Z, true)
     }) : exports === Chunk981631.d4z.GUILD_FORUM ? Chunk388032.intl.format(Chunk388032.t.tbVWyR, {
-      forumUpsellHook: (e, t) => (0, i.jsx)(m.Anchor, {
+      forumUpsellHook: (e, t) => (0, i.jsx)(m.eee, {
         onClick: () => (0, m.ZDy)(async () => {
           let {
             default: e

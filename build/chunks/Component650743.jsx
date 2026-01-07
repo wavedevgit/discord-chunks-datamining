@@ -82,7 +82,7 @@ function I(e) {
     D = () => (0, c.Q3)(a.z.SOUNDBOARD_KEYBIND_TIP),
     x = null != P && (0, h.isWindows)() && !w ? y.intl.format(y.t.udMTth, {
       keybind: (0, g.BB)(P.shortcut, true),
-      openSettingsHook: (e, t) => (0, r.jsx)(o.Anchor, {
+      openSettingsHook: (e, t) => (0, r.jsx)(o.eee, {
         onClick: R,
         children: e
       }, t)

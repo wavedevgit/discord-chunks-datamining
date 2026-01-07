@@ -32,7 +32,7 @@ function p(e) {
       })
     })
   };
-  return (0, r.jsx)(s.Anchor, {
+  return (0, r.jsx)(s.eee, {
     onClick: i,
     className: d.detailsButton,
     children: u.intl.string(u.t.QsqdXC)
@@ -43,7 +43,7 @@ function _(e) {
   let {
     learnMoreLink: t
   } = e;
-  return (0, r.jsx)(s.Anchor, {
+  return (0, r.jsx)(s.eee, {
     className: d.detailsButton,
     href: t,
     children: u.intl.string(u.t["8/GdRB"])

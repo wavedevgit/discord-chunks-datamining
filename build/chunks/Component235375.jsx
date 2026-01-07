@@ -108,7 +108,7 @@ let C = e => {
           callToAction: r
         })
       },
-      react: (e, t, n) => (0, r.jsx)(c.Anchor, {
+      react: (e, t, n) => (0, r.jsx)(c.eee, {
         href: l().sanitizeUrl(e.target),
         title: e.title,
         onClick: e.callToAction,

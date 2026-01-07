@@ -147,7 +147,7 @@ function I(e) {
     href: n,
     noticeType: i
   } = e, a = h(e, ["children", "href", "noticeType"]);
-  return (0, r.jsx)(s.Anchor, m(p({}, a), {
+  return (0, r.jsx)(s.eee, m(p({}, a), {
     className: d.button,
     href: n,
     onClick: e => {

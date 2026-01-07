@@ -56,7 +56,7 @@ function x(e) {
         variant: "text-xs/normal",
         color: "text-muted",
         children: p.intl.format(p.t.R8jY9g, {
-          accessLink: (e, t) => (0, r.jsx)(c.Anchor, {
+          accessLink: (e, t) => (0, r.jsx)(c.eee, {
             onClick: y,
             children: e
           }, t)

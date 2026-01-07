@@ -23,11 +23,11 @@ function y(e) {
   let {
     transitionState: n,
     onClose: y
-  } = e, m = (0, o.e7)([u.ZP], () => u.ZP.getKeybindForAction(f.kg4.SOUNDBOARD_HOLD)), [h, j] = i.useState(null != (t = null == m ? true : m.shortcut) ? t : []), x = i.useCallback(() => {
-    if (0 === h.length) return null != m && s.Z.deleteKeybind(m.id), y();
+  } = e, m = (0, o.e7)([u.ZP], () => u.ZP.getKeybindForAction(f.kg4.SOUNDBOARD_HOLD)), [j, h] = i.useState(null != (t = null == m ? true : m.shortcut) ? t : []), x = i.useCallback(() => {
+    if (0 === j.length) return null != m && s.Z.deleteKeybind(m.id), y();
     if (null == m) s.Z.addKeybind({
       action: f.kg4.SOUNDBOARD_HOLD,
-      shortcut: h,
+      shortcut: j,
       enabled: true,
       params: {}
     });
@@ -51,7 +51,7 @@ function y(e) {
         }
         return e
       }({}, m), t = t = {
-        shortcut: h
+        shortcut: j
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -64,7 +64,7 @@ function y(e) {
       }), e))
     }
     y()
-  }, [m, y, h]);
+  }, [m, y, j]);
   i.useEffect(() => (d.Z.disable(), () => {
     d.Z.enable()
   }), []);
@@ -105,11 +105,11 @@ function y(e) {
       color: "text-default",
       children: g.intl.string(g.t["1La4tC"])
     }), (0, r.jsx)(l.Z, {
-      defaultValue: h,
-      onChange: j
-    }), (0, r.jsx)(c.Anchor, {
+      defaultValue: j,
+      onChange: h
+    }), (0, r.jsx)(c.eee, {
       className: O.resetButton,
-      onClick: () => j((0, b.Kd)(p.D_)),
+      onClick: () => h((0, b.Kd)(p.D_)),
       children: g.intl.string(g.t["s7+2rQ"])
     })]
   })

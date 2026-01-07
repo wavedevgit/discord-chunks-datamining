@@ -38,7 +38,7 @@ let f = (0, Chunk509613.k4)(Chunk313789.n.CONTENT_AND_SOCIAL_PERMISSIONS_CATEGOR
         type: Chunk970013.v.INLINE_NOTICE,
         noticeType: "info",
         useText: () => Chunk388032.intl.format(Chunk517319.default.i284fU, {
-          hook: (t, e) => (0, i.jsx)(s.Anchor, {
+          hook: (t, e) => (0, i.jsx)(s.eee, {
             onClick: o,
             children: t
           }, e),

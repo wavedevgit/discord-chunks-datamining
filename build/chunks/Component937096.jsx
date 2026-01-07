@@ -18,7 +18,7 @@ var Chunk481060 = require("./481060.js"),
 
 function h() {
   return (0, Chunk81643.Jm)() ? Chunk388032.intl.format(Chunk388032.t.iWGjcg, {
-    hook: e => (0, a.jsx)(i.Anchor, {
+    hook: e => (0, a.jsx)(i.eee, {
       className: f.anchor,
       onClick: e => {
         e.preventDefault(), e.stopPropagation(), (0, r.Z)(d.Z.getArticleURL(u.BhN.TIGGER_PAWTECT_LEARN_MORE))
@@ -27,7 +27,7 @@ function h() {
       children: e.join("")
     })
   }) : Chunk388032.intl.format(Chunk388032.t.edpbxy, {
-    hook: e => (0, a.jsx)(i.Anchor, {
+    hook: e => (0, a.jsx)(i.eee, {
       className: f.anchor,
       onClick: e => {
         e.preventDefault(), e.stopPropagation(), l.Z.showAgeVerificationGetStartedModal({

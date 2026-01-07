@@ -119,7 +119,7 @@ let v = Chunk473749.forwardRef(function(e, t) {
             legacyUsername: F
           }),
           spacing: 12,
-          children: (0, r.jsx)(u.Anchor, {
+          children: (0, r.jsx)(u.eee, {
             children: (0, r.jsx)("img", {
               className: x.legacyUsernameBadge,
               alt: "",
