@@ -44,7 +44,7 @@ class u {
 }
 
 function d(e) {
-  return e.platform === o.ow.REACT_NATIVE && null != e.uri && (0, a.fr)(e.uri) && (0, i.X6)()
+  return e.platform === o.ow.REACT_NATIVE && null != e.uri && (0, a.fr)(e.uri) && (0, i.un)()
 }
 class f {
   doUpload(e, t) {
@@ -91,6 +91,6 @@ class f {
     })
   }
   constructor() {
-    if (!(0, i.X6)()) throw Error("Libdiscore is not loaded")
+    if (!(0, i.un)()) throw Error("Libdiscore is not loaded")
   }
 }

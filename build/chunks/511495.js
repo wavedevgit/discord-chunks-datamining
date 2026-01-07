@@ -2,8 +2,8 @@
 /** chunk id: 511495, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X: () => p,
-  e: () => f
+  e: () => f,
+  u: () => p
 });
 var Chunk579092 = require("./579092.js"),
   Chunk128813 = require("./128813.js");
@@ -34,10 +34,10 @@ function f() {
   return null == a && (a = (async () => {
     await i.mX();
     let e = i.Qw();
-    e.installLogCallback(s, l, c, u, d), await e.initLibdiscore()
+    e.installLogCallback(s, l, c, u, d), await e.initLibdiscore(), window._libdiscoreInitialized = true
   })()), a
 }
 
 function p() {
-  return true !== window._libdiscoreWasm
+  returntrue === window._libdiscoreInitialized
 }

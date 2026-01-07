@@ -9,7 +9,7 @@ var Chunk668757 = require("./668757.js"),
   Chunk981631 = require("./981631.js");
 class o {
   static isBlockedDomain(e) {
-    let t = (0, r.X6)() ? (0, r.PJ)(e) : null;
+    let t = (0, r.un)() ? (0, r.PJ)(e) : null;
     return "" !== t && null !== t && i.default.track(a.rMx.LINK_SECURITY_CHECK_BLOCKED, {
       blocked_domain: t
     }), t

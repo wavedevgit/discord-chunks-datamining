@@ -22,7 +22,7 @@ function c(e, t, n) {
 let u = null;
 
 function d() {
-  if (!(0, r.X6)()) return;
+  if (!(0, r.un)()) return;
   let e = {};
   for (let t of l.Re) e[t.id] = t.getCurrentConfig();
   null != u && (0, i.Z)(u, e) || ((0, r.Md)().flushToCache(JSON.stringify(e)), u = e)

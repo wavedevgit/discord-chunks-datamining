@@ -150,24 +150,35 @@ class v extends Chunk76238.Z {
 }
 class y extends Chunk836560.EventEmitter {
   handleConnection(e) {
-    let t = new v(e, "json");
+    let t = new v(e, "json"),
+      n = setTimeout(() => {
+        m.warn("Handshake timeout for connection, closing socket");
+        try {
+          e.end(O(h.CLOSE, {
+            code: p.$VG.CLOSE_ABNORMAL,
+            message: "Handshake timeout"
+          }))
+        } catch (e) {}
+        e.destroy()
+      }, 1e4);
     e.on("readable", () => {
       let n = e.read();
       null != n && t.read(r.Buffer.from(n))
-    }), e.on("data", n => {
+    }), e.on("data", i => {
       try {
-        t.read(r.Buffer.from(n))
+        t.read(r.Buffer.from(i))
       } catch (t) {
-        m.error("Socket Error: ".concat(t.message)), e.end(O(h.CLOSE, {
+        clearTimeout(n), m.error("Socket Error: ".concat(t.message)), e.end(O(h.CLOSE, {
           code: p.$VG.CLOSE_UNSUPPORTED,
           message: t.message
         })), e.destroy()
       }
     }), e.once("handshake", () => {
-      let n = t.clientId;
+      clearTimeout(n);
+      let r = t.clientId;
       m.info("Socket Opened: ".concat(t.id)), e.on("error", e => m.error("Socket Error: ".concat(e.message))), e.on("close", () => {
         m.info("Socket Close: ".concat(t.id)), this.emit("disconnect", t)
-      }), (0, d.em)(t, null, n).then(() => {
+      }), (0, d.em)(t, null, r).then(() => {
         e.on("request", e => {
           m.info("Socket Message: ".concat(t.id), (0, c.Z)(e)), this.emit("request", t, e)
         }), this.emit("connect", t)
