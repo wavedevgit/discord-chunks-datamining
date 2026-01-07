@@ -141,78 +141,175 @@ function getIntlMessages(code) {
         return {};
     }
 }
+function getEndpoints(code) {
+    try {
+        let endpoints = {};
+        const ast = acorn.parse(code, { ecmaVersion: 'latest' });
+        walk.simple(ast, {
+            CallExpression(node) {
+                if (
+                    node.callee?.object?.name === 'Object' &&
+                    node.callee?.property?.name === 'freeze'
+                ) {
+                    const value = node.arguments[0]?.properties;
+                    const props = value.map((e) => e.key.name);
+                    if (
+                        props.includes('USER') &&
+                        props.includes('GUILD_JOIN') &&
+                        props.includes('LOGIN')
+                    ) {
+                        const endpointsTemp = eval(
+                            `(()=>(${code.slice(node.arguments[0].start, node.arguments[0].end).replaceAll('window.GLOBAL_ENV.WEBAPP_ENDPOINT', '"//canary.discord.com"')}))()`,
+                        );
+                        const params = [];
+                        for (let i = 0; i < 11; i++) params.push(':param');
+                        for (let [key, value] of Object.entries(
+                            endpointsTemp,
+                        )) {
+                            try {
+                                endpoints[key] =
+                                    typeof value === 'function'
+                                        ? value(...params)
+                                        : value;
+                            } catch {
+                                console.log(key, value.toString());
+                            }
+                        }
+                    }
+                }
+            },
+        });
+        return endpoints;
+    } catch (e) {
+        console.log(e);
+        return {};
+    }
+}
+function getLottieMappings(code) {
+    try {
+        const data = {};
+        const ast = acorn.parse(code, { ecmaVersion: 'latest' });
+        walk.simple(ast, {
+            CallExpression(node) {
+                // find the lottie mappings
+                if (
+                    node.arguments?.[0]?.type === 'ObjectExpression' &&
+                    node.arguments?.[0]?.properties.some(
+                        (prop) =>
+                            prop.key.value ===
+                            'discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Requests_Messages.',
+                    )
+                ) {
+                    for (let prop of node.arguments[0].properties) {
+                        // same function used as same style of code
+                        data.languages[prop.key.value || prop.key.name] =
+                            getChunkIdForLanguage(prop.value);
+                    }
+                }
+            },
+        });
+        return data;
+    } catch (err) {
+        console.log(err);
+        process.exit(0);
+        return { messagesKeys: [], languages: {} };
+    }
+}
 // determines chunk type based on code
-function determineType(code, id, languagesChunks, jsxChunks) {
-    if (jsxChunks.includes(id)) return ['component', {}];
+function determineType(code, id, languagesChunks, jsxChunks, lottieChunks) {
+    // lottie chunks mappings
     if (
-        code.includes('.p + "') ||
+        code.includes(
+            'discord_common/js/packages/tokens/tools/platforms/lottie/',
+        ) &&
+        code.includes('.bind')
+    ) {
+        return ['lottie-assets-mappings', getLottieMappings(code)];
+    }
+    if (jsxChunks.includes(id)) return ['component', {}];
+
+    if (lottieChunks.includes(id))
+        return ['asset', { lottie: getLottieAsset(code) }];
+    // Constants chunk
+    if (
+        code.includes(
+            'https://creator-support.discord.com/hc/en-us/articles/12653663868823',
+        )
+    ) {
+        return ['constants', { Endpoints: getEndpoints(code) }];
+    }
+    if (
+        code.includes('"/assets/') ||
         code.includes('.default = "https://cdn.discordapp.com/assets')
     ) {
         const match = code.match(
-            /(\.p \+ "(?<fileName>.+?)"|\.default = "(?<url>.+?)")/,
+            /("\/assets\/(?<fileName>.+?)"$|\.default = "(?<url>.+?)"$)/gm,
         );
+        if (match)
+            return [
+                'assets',
+                {
+                    assetUrl:
+                        match?.groups?.url ||
+                        'https://canary.discord.com/assets/' +
+                            match?.groups?.fileName,
+                },
+            ];
+    }
+
+    if (
+        code.includes('label:') &&
+        code.includes('defaultConfig:') & code.includes('kind:')
+    ) {
+        return ['experiment', getRawExperiment(code)];
+    }
+    if (code.includes('data:image/')) {
         return [
             'assets',
             {
-                assetUrl:
-                    match.groups.url ||
-                    'https://canary.discord.com/assets/' +
-                        match.groups.fileName,
+                assetUrl: getDataUrl(code),
+            },
+        ];
+    }
+    if (
+        code.includes('Store') &&
+        code.includes('"displayName"') &&
+        code.includes('.defineProperty(')
+    ) {
+        const { functions, events } =
+            getStoreClassFunctionsAndDispatchEvents(code);
+        try {
+            return [
+                'store',
+                {
+                    name: getStoreName(code),
+                    functions,
+                    events,
+                },
+            ];
+        } catch {}
+    }
+    if (code.includes('buildNumber:') && code.includes('versionHash:')) {
+        return [
+            'buildInfo',
+            {
+                versionHash: code.match(/versionHash:"(.+?)"/)[1],
+                buildNumber: code.match(/buildNumber:"(\d+)"/)[1],
             },
         ];
     }
 
-  if (
-    code.includes("label:") &&
-    code.includes("defaultConfig:") & code.includes("kind:")
-  ) {
-    return ["experiment", getRawExperiment(code)];
-  }
-  if (code.includes("data:image/")) {
-    return [
-      "assets",
-      {
-        assetUrl: getDataUrl(code),
-      },
-    ];
-  }
-  if (
-    code.includes("Store") &&
-    code.includes('"displayName"') &&
-    code.includes(".defineProperty(")
-  ) {
-    const { functions, events } = getStoreClassFunctionsAndDispatchEvents(code);
-    try {
-      return [
-        "store",
-        {
-          name: getStoreName(code),
-          functions,
-          events,
-        },
-      ];
-    } catch {}
-  }
-  if (code.includes("buildNumber:") && code.includes("versionHash:")) {
-    return [
-      "buildInfo",
-      {
-        versionHash: code.match(/versionHash:"(.+?)"/)[1],
-        buildNumber: code.match(/buildNumber:"(\d+)"/)[1],
-      },
-    ];
-  }
-  if (code.includes("createLoader:") && code.includes("en-US"))
-    return ["intl-loader", getDataForIntlLoader(code)];
-  if (languagesChunks[id]) {
-    return [
-      "intl-messages-definitions",
-      {
-        messages: getIntlMessages(code),
-        language: languagesChunks[id],
-      },
-    ];
-  }
-  return ["unknown", {}];
+    if (code.includes('createLoader:') && code.includes('en-US'))
+        return ['intl-loader', getDataForIntlLoader(code)];
+    if (languagesChunks[id]) {
+        return [
+            'intl-messages-definitions',
+            {
+                messages: getIntlMessages(code),
+                language: languagesChunks[id],
+            },
+        ];
+    }
+    return ['unknown', {}];
 }
 export default determineType;
