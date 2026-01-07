@@ -190,19 +190,18 @@ function getLottieMappings(code) {
         const data = {};
         const ast = acorn.parse(code, { ecmaVersion: 'latest' });
         walk.simple(ast, {
-            CallExpression(node) {
+            ObjectExpression(node) {
                 // find the lottie mappings
                 if (
-                    node.arguments?.[0]?.type === 'ObjectExpression' &&
-                    node.arguments?.[0]?.properties.some(
+                    node.properties.some(
                         (prop) =>
                             prop.key.value ===
-                            'discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Requests_Messages.',
+                            'discord_common/js/packages/tokens/tools/platforms/lottie/originals/native/Lottie_Requests_Messages.lottie',
                     )
                 ) {
-                    for (let prop of node.arguments[0].properties) {
+                    for (let prop of node.properties) {
                         // same function used as same style of code
-                        data.languages[prop.key.value || prop.key.name] =
+                        data[prop.key.value || prop.key.name] =
                             getChunkIdForLanguage(prop.value);
                     }
                 }
@@ -215,6 +214,7 @@ function getLottieMappings(code) {
         return { messagesKeys: [], languages: {} };
     }
 }
+
 // determines chunk type based on code
 function determineType(code, id, languagesChunks, jsxChunks, lottieChunks) {
     // lottie chunks mappings
@@ -228,8 +228,6 @@ function determineType(code, id, languagesChunks, jsxChunks, lottieChunks) {
     }
     if (jsxChunks.includes(id)) return ['component', {}];
 
-    if (lottieChunks.includes(id))
-        return ['asset', { lottie: getLottieAsset(code) }];
     // Constants chunk
     if (
         code.includes(
@@ -240,10 +238,12 @@ function determineType(code, id, languagesChunks, jsxChunks, lottieChunks) {
     }
     if (
         code.includes('"/assets/') ||
-        code.includes('.default = "https://cdn.discordapp.com/assets')
+        code.includes('.p +') ||
+        code.includes('= "https://cdn.discordapp.com/assets/content/')
     ) {
+        console.log(code);
         const match = code.match(
-            /("\/assets\/(?<fileName>.+?)"$|\.default = "(?<url>.+?)"$)/gm,
+            /(\.p\s\+\s"(?<fileNameP>.+?)"$|"\/assets\/(?<fileName>.+?)"$|\s=\s"(?<url>.+?)"$)/m,
         );
         if (match)
             return [
@@ -252,7 +252,8 @@ function determineType(code, id, languagesChunks, jsxChunks, lottieChunks) {
                     assetUrl:
                         match?.groups?.url ||
                         'https://canary.discord.com/assets/' +
-                            match?.groups?.fileName,
+                            match?.groups?.fileName ||
+                        match?.groups?.fileNameP,
                 },
             ];
     }
