@@ -1,212 +1,274 @@
-import * as acorn from "acorn";
-import * as walk from "acorn-walk";
-import getRawExperiment from "./getRawExperiment.js";
+import * as acorn from 'acorn';
+import * as walk from 'acorn-walk';
+import getRawExperiment from './getRawExperiment.js';
 
 function getStoreClassFunctionsAndDispatchEvents(code) {
-  try {
-    const functions = [];
-    const events = [];
-    let ast;
     try {
-      ast = acorn.parse(code, { ecmaVersion: "latest" });
-    } catch {
-      console.log(code);
+        const functions = [];
+        const events = [];
+        let ast;
+        try {
+            ast = acorn.parse(code, { ecmaVersion: 'latest' });
+        } catch {
+            console.log(code);
+        }
+        walk.simple(ast, {
+            // get functions of the store
+            ClassDeclaration(node) {
+                // check if it's store class
+                if (
+                    node?.superClass?.right?.property?.name?.endsWith?.(
+                        'Store',
+                    ) ||
+                    node?.superClass?.property?.name === 'Z'
+                ) {
+                    for (let defintion of node.body.body) {
+                        functions.push({
+                            name: defintion.key.name,
+                            // handle rest elements and normal arguments
+                            args: [...defintion.value.params].map(
+                                (param) => param?.name || param?.argument?.name,
+                            ),
+                        });
+                    }
+                }
+            },
+            // get events handled  by the store
+            NewExpression(node) {
+                if (node?.arguments?.[1]?.type === 'ObjectExpression') {
+                    for (let prop of node.arguments[1].properties) {
+                        events.push(prop.key.name);
+                    }
+                }
+            },
+        });
+        return { functions, events };
+    } catch (err) {
+        console.log(err);
+        process.exit(0);
+        return { functions: [], events: [] };
     }
-    walk.simple(ast, {
-      // get functions of the store
-      ClassDeclaration(node) {
-        // check if it's store class
-        if (node?.superClass?.right?.property?.name?.endsWith?.("Store") || node?.superClass?.property?.name === "Z") {
-          for (let defintion of node.body.body) {
-            functions.push({
-              name: defintion.key.name,
-              // handle rest elements and normal arguments
-              args: [...defintion.value.params].map(
-                (param) => param?.name || param?.argument?.name
-              ),
-            });
-          }
-        }
-      },
-      // get events handled  by the store
-      NewExpression(node) {
-        if (node?.arguments?.[1]?.type === "ObjectExpression") {
-          for (let prop of node.arguments[1].properties) {
-            events.push(prop.key.name);
-          }
-        }
-      },
-    });
-    return { functions, events };
-  } catch (err) {
-    console.log(err);
-    process.exit(0);
-    return { functions: [], events: [] };
-  }
 }
 function getStoreName(code) {
-  let name = "";
-  const ast = acorn.parse(code, { ecmaVersion: "latest" });
-  walk.simple(ast, {
-    // get functions of the store
-    Literal(node) {
-      // check if it's store class
-      if (node?.value?.includes?.("Store")) {
-        name = node?.value;
-      }
-    },
-  });
-  return name;
+    let name = '';
+    const ast = acorn.parse(code, { ecmaVersion: 'latest' });
+    walk.simple(ast, {
+        // get functions of the store
+        Literal(node) {
+            // check if it's store class
+            if (node?.value?.includes?.('Store')) {
+                name = node?.value;
+            }
+        },
+    });
+    return name;
 }
 function getChunkIdForLanguage(ast) {
-  let chunkId = "";
-  let moduleId = "";
-  walk.simple(ast, {
-    CallExpression(node) {
-      if (node.callee.property.name === "bind") {
-        chunkId = node.arguments[1].value;
-      }
-      if (node.callee.property.name === "e") {
-        moduleId = node.arguments[0].value;
-      }
-    },
-  });
-  return { chunkId, moduleId };
+    let chunkId = '';
+    let moduleId = '';
+    walk.simple(ast, {
+        CallExpression(node) {
+            if (node.callee.property.name === 'bind') {
+                chunkId = node.arguments[1].value;
+            }
+            if (node.callee.property.name === 'e') {
+                moduleId = node.arguments[0].value;
+            }
+        },
+    });
+    return { chunkId, moduleId };
 }
 function getDataForIntlLoader(code) {
-  try {
-    const data = { messagesKeys: [], languages: {} };
-    const ast = acorn.parse(code, { ecmaVersion: "latest" });
-    walk.simple(ast, {
-      CallExpression(node) {
-        // find the messages keys and languages
-        if (
-          node.arguments?.[0]?.type === "ObjectExpression" &&
-          node.arguments?.[0]?.properties.some(
-            (prop) => prop.key.value === "en-US"
-          )
-        ) {
-          for (let prop of node.arguments[0].properties) {
-            data.languages[prop.key.value || prop.key.name] =
-              getChunkIdForLanguage(prop.value);
-          }
-        }
-      },
-    });
-    return data;
-  } catch (err) {
-    console.log(err);
-    process.exit(0);
-    return { messagesKeys: [], languages: {} };
-  }
+    try {
+        const data = { messagesKeys: [], languages: {} };
+        const ast = acorn.parse(code, { ecmaVersion: 'latest' });
+        walk.simple(ast, {
+            CallExpression(node) {
+                // find the messages keys and languages
+                if (
+                    node.arguments?.[0]?.type === 'ObjectExpression' &&
+                    node.arguments?.[0]?.properties.some(
+                        (prop) => prop.key.value === 'en-US',
+                    )
+                ) {
+                    for (let prop of node.arguments[0].properties) {
+                        data.languages[prop.key.value || prop.key.name] =
+                            getChunkIdForLanguage(prop.value);
+                    }
+                }
+            },
+        });
+        return data;
+    } catch (err) {
+        console.log(err);
+        process.exit(0);
+        return { messagesKeys: [], languages: {} };
+    }
 }
 function getDataUrl(code) {
-  try {
-    let dataUrl = "";
-    const ast = acorn.parse(code, { ecmaVersion: "latest" });
-    walk.simple(ast, {
-      Literal(node) {
-        if (node?.value?.startsWith?.("data:image/")) {
-          dataUrl = node.value;
-        }
-      },
-    });
-    return dataUrl;
-  } catch {
-    return "";
-  }
+    try {
+        let dataUrl = '';
+        const ast = acorn.parse(code, { ecmaVersion: 'latest' });
+        walk.simple(ast, {
+            Literal(node) {
+                if (node?.value?.startsWith?.('data:image/')) {
+                    dataUrl = node.value;
+                }
+            },
+        });
+        return dataUrl;
+    } catch {
+        return '';
+    }
 }
 function getIntlMessages(code) {
-  try {
-    let messages = {};
-    const ast = acorn.parse(code, { ecmaVersion: "latest" });
-    walk.simple(ast, {
-      CallExpression(node) {
-        if (
-          node.callee.object.name === "JSON" &&
-          node.callee.property.name === "parse"
-        ) {
-          messages = JSON.parse(node.arguments[0].value);
-        }
-      },
-    });
-    return messages;
-  } catch (e) {
-    console.log(e);
-    return {};
-  }
+    try {
+        let messages = {};
+        const ast = acorn.parse(code, { ecmaVersion: 'latest' });
+        walk.simple(ast, {
+            CallExpression(node) {
+                if (
+                    node.callee.object.name === 'JSON' &&
+                    node.callee.property.name === 'parse'
+                ) {
+                    messages = JSON.parse(node.arguments[0].value);
+                }
+            },
+        });
+        return messages;
+    } catch (e) {
+        console.log(e);
+        return {};
+    }
 }
+function getEndpoints(code) {
+    try {
+        let endpoints = {};
+        const ast = acorn.parse(code, { ecmaVersion: 'latest' });
+        walk.simple(ast, {
+            CallExpression(node) {
+                if (
+                    node.callee?.object?.name === 'Object' &&
+                    node.callee?.property?.name === 'freeze'
+                ) {
+                    const value = node.arguments[0]?.properties;
+                    const props = value.map((e) => e.key.name);
+                    if (
+                        props.includes('USER') &&
+                        props.includes('GUILD_JOIN') &&
+                        props.includes('LOGIN')
+                    ) {
+                        const endpointsTemp = eval(
+                            `(()=>(${code.slice(node.arguments[0].start, node.arguments[0].end).replaceAll('window.GLOBAL_ENV.WEBAPP_ENDPOINT', '"//canary.discord.com"')}))()`,
+                        );
+                        const params = [];
+                        for (let i = 0; i < 11; i++) params.push(':param');
+                        for (let [key, value] of Object.entries(
+                            endpointsTemp,
+                        )) {
+                            try {
+                                endpoints[key] =
+                                    typeof value === 'function'
+                                        ? value(...params)
+                                        : value;
+                            } catch {
+                                console.log(key, value.toString());
+                            }
+                        }
+                    }
+                }
+            },
+        });
+        return endpoints;
+    } catch (e) {
+        console.log(e);
+        return {};
+    }
+}
+
 // determines chunk type based on code
 function determineType(code, id, languagesChunks, jsxChunks) {
-  if (jsxChunks.includes(id)) return ["component", {}];
-  if (
-    code.includes('.p + "') ||
-    code.includes('.default = "https://cdn.discordapp.com/assets')
-  ) {
-    const match = code.match(
-      /(\.p \+ "(?<fileName>.+?)"|\.default = "(?<url>.+?)")/
-    );
-    return [
-      "assets",
-      {
-        assetUrl:
-          match.groups.url ||
-          "https://canary.discord.com/assets/" + match.groups.fileName,
-      },
-    ];
-  }
+    if (jsxChunks.includes(id)) return ['component', {}];
+    if (
+        code.includes('.p + "') ||
+        code.includes('.default = "https://cdn.discordapp.com/assets')
+    ) {
+        const match = code.match(
+            /(\.p \+ "(?<fileName>.+?)"|\.default = "(?<url>.+?)")/,
+        );
+        return [
+            'assets',
+            {
+                assetUrl:
+                    match.groups.url ||
+                    'https://canary.discord.com/assets/' +
+                        match.groups.fileName,
+            },
+        ];
+    }
 
-  if (
-    code.includes("label:") &&
-    code.includes("defaultConfig:") & code.includes("kind:")
-  ) {
-    return ["experiment", getRawExperiment(code)];
-  }
-  if (code.includes("data:image/")) {
-    return [
-      "assets",
-      {
-        assetUrl: getDataUrl(code),
-      },
-    ];
-  }
-  if (
-    code.includes("Store") &&
-    code.includes('"displayName"') &&
-    code.includes(".defineProperty(")
-  ) {
-    const { functions, events } = getStoreClassFunctionsAndDispatchEvents(code);
-    try {
-      return [
-        "store",
-        {
-          name: getStoreName(code),
-          functions,
-          events,
-        },
-      ];
-    } catch {}
-  }
-  if (code.includes("buildNumber:") && code.includes("versionHash:")) {
-    return [
-      "buildInfo",
-      {
-        versionHash: code.match(/versionHash:"(.+?)"/)[1],
-        buildNumber: code.match(/buildNumber:"(\d+)"/)[1],
-      },
-    ];
-  }
-  if (code.includes("createLoader:") && code.includes("en-US"))
-    return ["intl-loader", getDataForIntlLoader(code)];
-  if (languagesChunks[id]) {
-    return [
-      "intl-messages-definitions",
-      {
-        messages: getIntlMessages(code),
-        language: languagesChunks[id],
-      },
-    ];
-  }
-  return ["unknown", {}];
+    if (
+        code.includes('label:') &&
+        code.includes('defaultConfig:') & code.includes('kind:')
+    ) {
+        return ['experiment', getRawExperiment(code)];
+    }
+    if (code.includes('data:image/')) {
+        return [
+            'assets',
+            {
+                assetUrl: getDataUrl(code),
+            },
+        ];
+    }
+    // Constants chunk
+    if (
+        code.includes(
+            'https://creator-support.discord.com/hc/en-us/articles/12653663868823',
+        )
+    ) {
+        return ['constants', { Endpoints: getEndpoints(code) }];
+    }
+    if (
+        code.includes('Store') &&
+        code.includes('"displayName"') &&
+        code.includes('.defineProperty(')
+    ) {
+        const { functions, events } =
+            getStoreClassFunctionsAndDispatchEvents(code);
+        try {
+            return [
+                'store',
+                {
+                    name: getStoreName(code),
+                    functions,
+                    events,
+                },
+            ];
+        } catch {}
+    }
+    if (code.includes('buildNumber:') && code.includes('versionHash:')) {
+        return [
+            'buildInfo',
+            {
+                versionHash: code.match(/versionHash:"(.+?)"/)[1],
+                buildNumber: code.match(/buildNumber:"(\d+)"/)[1],
+            },
+        ];
+    }
+    if (code.includes('createLoader:') && code.includes('en-US')) {
+        console.log('found intl');
+        return ['intl-loader', getDataForIntlLoader(code)];
+    }
+    if (languagesChunks[id]) {
+        return [
+            'intl-messages-definitions',
+            {
+                messages: getIntlMessages(code),
+                language: languagesChunks[id],
+            },
+        ];
+    }
+    return ['unknown', {}];
 }
 export default determineType;
