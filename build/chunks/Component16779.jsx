@@ -2,39 +2,46 @@
 /** chunk id: 16779, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Rg: () => _,
-  Xh: () => p,
-  ho: () => f
+  Rg: () => m,
+  Xh: () => _,
+  ho: () => p
 });
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
 var Chunk481060 = require("./481060.js"),
   Chunk841784 = require("./841784.js"),
+  Chunk201812 = require("./201812.js"),
   Chunk297781 = require("./297781.jsx"),
   Chunk371991 = require("./371991.jsx"),
   Chunk561308 = require("./561308.js"),
   Chunk232174 = require("./232174.js"),
   Chunk981631 = require("./981631.js");
-let d = function(e) {
-  let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return (0, a.Z)(e) ? t ? i.iWm : i.jje : e.type === u.IIU.LISTENING ? i.RZG : e.type === u.IIU.WATCHING ? i.ARS : i.iWm
+let f = function(e) {
+  let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
+    n = arguments.length > 2 && true !== arguments[2] && arguments[2];
+  return t ? i.wGF : (0, a.Z)(e) ? n ? i.iWm : i.jje : e.type === d.IIU.LISTENING ? i.RZG : e.type === d.IIU.WATCHING ? i.ARS : i.iWm
 };
 
-function f(e) {
-  var t, n, a;
+function p(e) {
+  var t, n, a, c, d;
   let {
-    activity: l
-  } = e, u = null != (a = null == (t = l.timestamps) ? true : t.start) ? a : l.created_at;
-  if (null == u || (0, c.Z)(l)) return null;
-  let f = d(l);
-  return (0, r.jsxs)(o.m7, {
-    children: [(0, r.jsx)(f, {
+    activity: p
+  } = e, _ = null != (c = null == (t = p.timestamps) ? true : t.start) ? c : p.created_at, {
+    now: m
+  } = (0, o.t)();
+  if (null == _ || (0, u.Z)(p)) return null;
+  let h = null == (n = p.timestamps) ? true : n.end,
+    g = null != (d = null == (a = p.timestamps) ? true : a.isCountDown) && d,
+    E = f(p, g && null != h && h > m);
+  return (0, r.jsxs)(s.m7, {
+    children: [(0, r.jsx)(E, {
       size: "xxs",
       color: i.TVs.colors.TEXT_FEEDBACK_POSITIVE
-    }), (0, r.jsx)(s.x, {
+    }), (0, r.jsx)(l.x, {
       entry: {
-        start: u,
-        end: null == (n = l.timestamps) ? true : n.end
+        start: _,
+        end: h,
+        isCountDown: g
       },
       textColor: "text-feedback-positive",
       bold: true
@@ -42,24 +49,24 @@ function f(e) {
   })
 }
 
-function p(e) {
+function _(e) {
   let {
     activity: t
   } = e;
   if ((0, a.Z)(t) || null == t.party) return null;
-  let n = (0, l.bT)(t.state, t.party);
-  return null == n ? null : (0, r.jsx)(o.ej, {
+  let n = (0, c.bT)(t.state, t.party);
+  return null == n ? null : (0, r.jsx)(s.ej, {
     Icon: i.BFJ,
     text: n
   })
 }
 
-function _(e) {
+function m(e) {
   var t;
   let {
     activity: n
-  } = e, a = (0, l.ap)(null == (t = n.assets) ? true : t.large_text);
-  return null == a ? null : (0, r.jsx)(o.ej, {
+  } = e, a = (0, c.ap)(null == (t = n.assets) ? true : t.large_text);
+  return null == a ? null : (0, r.jsx)(s.ej, {
     Icon: i.sVe,
     text: a
   })

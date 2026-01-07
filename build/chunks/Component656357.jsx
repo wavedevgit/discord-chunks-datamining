@@ -536,6 +536,7 @@ function Q(e) {
           backgroundColor: tV ? true : "rgba(0, 0, 0, 0.0)",
           preloadedBuffers: tV ? eL : true,
           duration: null != (Q = null == (u = e2.current) ? true : u.duration) ? Q : 1,
+          isFullyVisible: tV && eH,
           maxSeekableTime: tV && eH ? to : true,
           onClick: e => {
             tU(e), eO === L.rq.ENDED && tR(L.rq.PLAYING)

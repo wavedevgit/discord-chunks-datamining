@@ -31,22 +31,22 @@ var Chunk164369 = require("./164369.js"),
   Chunk70956 = require("./70956.js"),
   Chunk709054 = require("./709054.js"),
   Chunk388032 = require("./388032.jsx");
-let d = e => {
-    let {
-      start: t,
-      now: n
-    } = e, r = Math.max(n - t, 0) / l.Z.Millis.SECOND, i = Math.floor(r) % l.Z.Seconds.MINUTE, a = Math.floor(r / l.Z.Seconds.MINUTE) % l.Z.Seconds.MINUTE;
+let d = (e, t) => {
+    let n = Math.max(e - t, 0) / l.Z.Millis.SECOND,
+      r = Math.floor(n) % l.Z.Seconds.MINUTE,
+      i = Math.floor(n / l.Z.Seconds.MINUTE) % l.Z.Seconds.MINUTE;
     return {
-      seconds: i,
-      minutes: a,
-      hours: Math.floor(r / l.Z.Seconds.HOUR),
-      days: Math.floor(r / l.Z.Seconds.DAY)
+      seconds: r,
+      minutes: i,
+      hours: Math.floor(n / l.Z.Seconds.HOUR),
+      days: Math.floor(n / l.Z.Seconds.DAY)
     }
   },
-  f = (e, t) => d({
-    start: "id" in e ? c.default.extractTimestamp(e.id) : e.start,
-    now: "end" in e && null != e.end ? Math.min(e.end, t) : t
-  }),
+  f = (e, t) => {
+    let n = "end" in e ? e.end : true,
+      r = "isCountDown" in e && null != e.isCountDown && e.isCountDown;
+    return r && null != n && n > t ? d(n, t) : d(null == n || r ? t : Math.min(n, t), "id" in e ? c.default.extractTimestamp(e.id) : e.start)
+  },
   p = (e, t) => {
     let {
       seconds: n,
