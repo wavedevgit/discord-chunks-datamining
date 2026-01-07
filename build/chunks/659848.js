@@ -34,7 +34,9 @@ function p(e, t) {
     }).enabled,
     m = (0, r.useRef)(null),
     h = (0, r.useRef)(""),
-    g = (0, r.useRef)(false);
+    g = (0, r.useRef)(false),
+    E = (0, r.useRef)(false),
+    b = (0, r.useRef)(null);
   (0, r.useEffect)(() => {
     if (!_ || null == d || null == t.paymentSourceId) return;
     let e = t.paymentSourceId;
@@ -51,12 +53,15 @@ function p(e, t) {
       }), m.current = d, h.current = e)
     }(m.current !== d || h.current !== e) && r()
   }, [d, n, t.paymentSourceId, _]), (0, r.useEffect)(() => {
+    let e = b.current;
+    b.current = d, null == d && null != e ? (E.current = true, m.current = null, h.current = "", g.current = false) : null != d && (E.current = false)
+  }, [d]), (0, r.useEffect)(() => {
     var n;
     if (null != d) {
-      g.current = false;
+      g.current = false, E.current = false;
       return
     }
-    if (!_ || p || g.current || null == e || !f(t)) return;
+    if (E.current || !_ || p || g.current || null == e || !f(t)) return;
     g.current = true;
     let r = t.paymentGateway === c.gg.VIRTUAL_CURRENCY;
     (0, o.LV)({

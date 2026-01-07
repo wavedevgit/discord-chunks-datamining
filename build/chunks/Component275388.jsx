@@ -2,8 +2,8 @@
 /** chunk id: 275388, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  qA: () => E,
-  r9: () => h
+  qA: () => b,
+  r9: () => g
 });
 var Chunk54381 = require("./54381.js"),
   Chunk772848 = require("./772848.js");
@@ -12,10 +12,11 @@ var Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
   Chunk844718 = require("./844718.js"),
   Chunk762853 = require("./762853.js"),
+  Chunk301167 = require("./301167.js"),
   Chunk887505 = require("./887505.js"),
   Chunk981631 = require("./981631.js");
 
-function d(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,20 +25,20 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function f(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      d(e, t, n[t])
+      f(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,56 +49,60 @@ function p(e, t) {
   return n
 }
 
-function _(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 require("./602091.js");
-let m = "orb-checkout-payment-modal-key",
-  h = () => (0, a.VXO)(m);
+let h = "orb-checkout-payment-modal-key",
+  g = () => (0, a.VXO)(h);
 
-function g() {
+function E() {
   o.Z.wait(() => {
     o.Z.dispatch({
       type: "PAYMENT_MODAL_OPEN"
     })
   })
 }
-let E = e => {
+let b = e => {
     let {
       skuId: t,
       onCheckoutSuccess: n,
       analyticsLocations: r = [],
       analyticsSourceLocation: o,
       onCloseCallback: l,
-      rentalDuration: d
+      rentalDuration: f
     } = e, {
-      enabled: f
+      enabled: p
     } = (0, s.VL)({
       location: "openOrbCheckoutPaymentModal"
-    }), p = (0, i.Z)(), _ = false, h = () => {
-      _ || (0, c._)(u.rMx.PAYMENT_FLOW_CANCELED, {
-        loadId: p,
+    }), _ = (0, i.Z)(), m = false, g = () => {
+      m || (0, u._)(d.rMx.PAYMENT_FLOW_CANCELED, {
+        loadId: _,
         skuId: t,
         analyticsLocations: r,
         analyticsSourceLocation: o
-      }), (0, a.Mr3)(m)
-    }, g = {
-      loadId: p,
+      }), (0, a.Mr3)(h)
+    }, E = {
+      loadId: _,
       skuId: t,
       onCheckoutSuccess: e => {
-        _ || n(e), _ = true
+        m || n(e), m = true
       },
       analyticsLocations: r,
       analyticsSourceLocation: o,
-      onCloseCallback: l,
-      rentalDuration: d,
-      onCloseRequest: h
+      onCloseCallback: () => {
+        (0, c.x)({
+          checkoutSucceeded: m
+        }), null == l || l()
+      },
+      rentalDuration: f,
+      onCloseRequest: g
     };
-    return f ? b(g) : y(g)
+    return p ? y(E) : O(E)
   },
-  b = e => {
+  y = e => {
     let {
       loadId: t,
       skuId: n,
@@ -108,7 +113,7 @@ let E = e => {
       rentalDuration: s,
       onCloseRequest: c
     } = e;
-    return g(), (0, l.wO)().openCheckoutModal({
+    return E(), (0, l.wO)().openCheckoutModal({
       loadId: t,
       skuId: n,
       analyticsLocations: i,
@@ -119,12 +124,12 @@ let E = e => {
       },
       openModalOptions: {
         onCloseCallback: o,
-        modalKey: m,
+        modalKey: h,
         onCloseRequest: c
       }
     })
   },
-  y = e => {
+  O = e => {
     let {
       skuId: t,
       onCheckoutSuccess: i,
@@ -135,11 +140,11 @@ let E = e => {
       onCloseCallback: u,
       rentalDuration: d
     } = e;
-    return g(), (0, a.ZDy)(async () => {
+    return E(), (0, a.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 922987));
-      return n => (0, r.jsx)(e, _(f({
+      return n => (0, r.jsx)(e, m(p({
         skuId: t,
         analyticsLocations: l,
         analyticsSourceLocation: c,
@@ -151,6 +156,6 @@ let E = e => {
     }, {
       onCloseCallback: u,
       onCloseRequest: o,
-      modalKey: m
+      modalKey: h
     })
   }

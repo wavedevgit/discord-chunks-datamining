@@ -2,7 +2,7 @@
 /** chunk id: 333867, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => A
 }), require("./388685.js");
 var Chunk54381 = require("./54381.js");
 require("./473749.js");
@@ -17,10 +17,11 @@ var Chunk772848 = require("./772848.js"),
   Chunk594174 = require("./594174.js"),
   Chunk626135 = require("./626135.js"),
   Chunk409813 = require("./409813.js"),
+  Chunk301167 = require("./301167.js"),
   Chunk608579 = require("./608579.jsx"),
   Chunk981631 = require("./981631.js");
 
-function g(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,20 +30,20 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
 }
 
-function b(e, t) {
+function y(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -53,15 +54,15 @@ function b(e, t) {
   return n
 }
 
-function y(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
+function O(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function O(e, t) {
+function v(e, t) {
   if (null == e) return {};
-  var n, r, i = v(e, t);
+  var n, r, i = S(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -69,48 +70,48 @@ function O(e, t) {
   return i
 }
 
-function v(e, t) {
+function S(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let S = "payment-modal",
-  I = "gift-payment-modal",
-  T = new Set([Chunk409813.h8.REVIEW, Chunk409813.h8.CONFIRM, Chunk409813.h8.GIFT_CUSTOMIZATION]);
+let I = "payment-modal",
+  T = "gift-payment-modal",
+  C = new Set([Chunk409813.h8.REVIEW, Chunk409813.h8.CONFIRM, Chunk409813.h8.GIFT_CUSTOMIZATION]);
 
-function C(e) {
+function A(e) {
   let t, {
       skuId: u,
       analyticsLocations: _,
-      analyticsObject: m,
-      isGift: g = false,
-      giftMessage: b,
-      giftingOrigin: v,
-      giftRecipient: C,
-      onClose: P,
-      onComplete: R,
-      variantsReturnStyle: w
+      analyticsObject: h,
+      isGift: E = false,
+      giftMessage: y,
+      giftingOrigin: S,
+      giftRecipient: A,
+      onClose: R,
+      onComplete: w,
+      variantsReturnStyle: D
     } = e,
-    D = false,
-    x = (0, i.Z)(),
-    L = e => {
+    x = false,
+    L = (0, i.Z)(),
+    j = e => {
       t = e
     },
-    j = g ? I : S,
-    M = f.default.getCurrentUser();
-  if (!(null == M ? true : M.verified)) return void(0, a.ZDy)(async () => {
+    M = E ? T : I,
+    k = f.default.getCurrentUser();
+  if (!(null == k ? true : k.verified)) return void(0, a.ZDy)(async () => {
     let {
       default: e
     } = await Promise.all([n.e("88470"), n.e("20102")]).then(n.bind(n, 444688));
     return t => {
       var {
         onClose: n
-      } = t, i = O(t, ["onClose"]);
-      return (0, r.jsx)(e, y(E({}, i), {
+      } = t, i = v(t, ["onClose"]);
+      return (0, r.jsx)(e, O(b({}, i), {
         onClose: () => {
-          n(), null == P || P(false)
+          n(), null == R || R(false)
         }
       }))
     }
@@ -121,43 +122,45 @@ function C(e) {
     })
   });
   let {
-    enabled: k
+    enabled: U
   } = (0, c.VL)({
     location: "openCollectiblesPaymentModal"
-  }), U = () => {
-    D || p.default.track(h.rMx.PAYMENT_FLOW_CANCELED, {
-      load_id: x,
-      payment_type: h.Zuq[h.GZQ.ONE_TIME],
-      location: m,
-      is_gift: g,
+  }), G = () => {
+    (0, m.x)({
+      checkoutSucceeded: x
+    }), x || p.default.track(g.rMx.PAYMENT_FLOW_CANCELED, {
+      load_id: L,
+      payment_type: g.Zuq[g.GZQ.ONE_TIME],
+      location: h,
+      is_gift: E,
       sku_id: u,
       location_stack: _
-    }), (0, s.fw)(), (0, l.p)(), null == P || P(D), D && (0, d.qg)({
-      variantsReturnStyle: w
+    }), (0, s.fw)(), (0, l.p)(), null == R || R(x), x && (0, d.qg)({
+      variantsReturnStyle: D
     })
-  }, G = () => {
-    null != t && T.has(t) && (0, a.Mr3)(j)
-  }, Z = {
-    loadId: x,
+  }, Z = () => {
+    null != t && C.has(t) && (0, a.Mr3)(M)
+  }, F = {
+    loadId: L,
     skuId: u,
     analyticsLocations: _,
-    onStepChange: L,
-    modalKey: j,
-    isGift: g,
-    giftMessage: b,
-    giftingOrigin: v,
-    giftRecipient: C,
-    onClose: P,
-    onCloseCallback: U,
-    onCloseRequest: G,
+    onStepChange: j,
+    modalKey: M,
+    isGift: E,
+    giftMessage: y,
+    giftingOrigin: S,
+    giftRecipient: A,
+    onClose: R,
+    onCloseCallback: G,
+    onCloseRequest: Z,
     onComplete: () => {
-      D = true, null == R || R()
+      x = true, null == w || w()
     }
   };
-  if (k) return void A(Z);
-  N(Z)
+  if (U) return void N(F);
+  P(F)
 }
-let A = e => {
+let N = e => {
     let {
       loadId: t,
       skuId: n,
@@ -195,7 +198,7 @@ let A = e => {
       }
     })
   },
-  N = e => {
+  P = e => {
     let {
       loadId: t,
       skuId: n,
@@ -209,14 +212,14 @@ let A = e => {
       onClose: f,
       onCloseCallback: p,
       onCloseRequest: _,
-      onComplete: h
+      onComplete: m
     } = e;
     return (0, a.ZDy)(async () => e => {
       var {
         onClose: a,
         returnRef: s
-      } = e, p = O(e, ["onClose", "returnRef"]);
-      return (0, r.jsx)(m.ZP, y(E({}, p), {
+      } = e, p = v(e, ["onClose", "returnRef"]);
+      return (0, r.jsx)(h.ZP, O(b({}, p), {
         loadId: t,
         skuId: n,
         isGift: l,
@@ -227,7 +230,7 @@ let A = e => {
         onClose: e => {
           a(), null == f || f(e)
         },
-        onComplete: h,
+        onComplete: m,
         returnRef: s,
         onStepChange: o
       }))
